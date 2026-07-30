@@ -57,6 +57,40 @@ export interface FullProfile {
   savedQuestions: number[]
 }
 
+export interface DbQuestion {
+  id: number
+  questionUz: string
+  questionRu: string
+  optionsUz: Record<string, string>
+  optionsRu: Record<string, string>
+  correctAnswer: string
+  image: string | null
+  topicId: number | null
+}
+
+export interface DbTopic {
+  id: number
+  nameUz: string
+  nameRu: string
+  slug: string
+}
+
+export interface Question {
+  id: number
+  text: string
+  image: string | null
+  options: { id: string; text: string }[]
+  correct: string
+  topicId: number | null
+}
+
+export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
+  const text    = lang === 'ru' ? q.questionRu : q.questionUz
+  const optMap  = lang === 'ru' ? q.optionsRu  : q.optionsUz
+  const options = Object.entries(optMap).map(([id, text]) => ({ id, text }))
+  return { id: q.id, text, image: q.image, options, correct: q.correctAnswer, topicId: q.topicId }
+}
+
 export const api = {
   init: (data: {
     id: string
@@ -89,4 +123,7 @@ export const api = {
 
   updatePhone: (userId: string, phone: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone }),
+
+  getQuestions: () => request<DbQuestion[]>('GET', '/questions'),
+  getTopics:    () => request<DbTopic[]>('GET', '/topics'),
 }

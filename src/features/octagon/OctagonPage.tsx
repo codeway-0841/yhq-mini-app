@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Sword, X, Loader2 } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
-import { questions }      from '../../shared/data'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { getOctagonSocket, type OctagonMsg } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
 
@@ -60,6 +60,7 @@ function reducer(s: State, a: Action): State {
 export default function OctagonPage() {
   const navigate = useNavigate()
   const { user, settings } = useAppStore()
+  const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
   const [s, dispatch] = useReducer(reducer, INIT)
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)

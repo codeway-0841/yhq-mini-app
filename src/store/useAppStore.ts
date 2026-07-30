@@ -129,11 +129,9 @@ export const useAppStore = create<AppState>()(
             totalAnswered:  data.progress.totalAnswered,
             wrongByTicket:  data.progress.wrongByTicket,
             savedQuestions: data.savedQuestions,
-            initialized:    true,
           })
         } catch (err) {
           console.error('syncFromServer failed:', err)
-          set({ initialized: true })
         }
       },
     }),

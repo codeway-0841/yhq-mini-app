@@ -46,8 +46,26 @@ export const userSettings = pgTable('settings', {
   offlineMode:     boolean('offline_mode').default(false).notNull(),
 })
 
+export const topics = pgTable('topics', {
+  id:     serial('id').primaryKey(),
+  nameUz: text('name_uz').notNull(),
+  nameRu: text('name_ru').notNull(),
+  slug:   text('slug').notNull().unique(),
+})
+
+export const questions = pgTable('questions', {
+  id:            integer('id').primaryKey(),
+  questionUz:    text('question_uz').notNull(),
+  questionRu:    text('question_ru').notNull(),
+  optionsUz:     jsonb('options_uz').$type<Record<string, string>>().notNull(),
+  optionsRu:     jsonb('options_ru').$type<Record<string, string>>().notNull(),
+  correctAnswer: text('correct_answer').notNull(),
+  image:         text('image'),
+  topicId:       integer('topic_id').references(() => topics.id),
+})
+
 export const savedQuestions = pgTable('saved_questions', {
   id:         serial('id').primaryKey(),
   userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
-  questionId: integer('question_id').notNull(),
+  questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
 }, (t) => [unique('uq_saved').on(t.userId, t.questionId)])

@@ -1,24 +1,24 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { questions } from '../../shared/data'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 
-interface TopicMeta { name: string; count: number; ids: number[] }
+interface TopicMeta { id: number; name: string; ids: number[] }
 
 export default function TopicsPage() {
   const navigate = useNavigate()
   const { settings, wrongByTicket } = useAppStore()
   const tt = useT(settings.language)
+  const { questions, topics } = useQuestionsStore()
 
-  const topics = useMemo<TopicMeta[]>(() => {
-    const map = new Map<string, number[]>()
-    for (const q of questions) {
-      if (!map.has(q.topic)) map.set(q.topic, [])
-      map.get(q.topic)!.push(q.id)
-    }
-    return [...map.entries()].map(([name, ids]) => ({ name, count: ids.length, ids }))
-  }, [])
+  const topicMeta = useMemo<TopicMeta[]>(() =>
+    topics.map(t => ({
+      id: t.id,
+      name: settings.language === 'ru' ? t.nameRu : t.nameUz,
+      ids: questions.filter(q => q.topicId === t.id).map(q => q.id),
+    })).filter(t => t.ids.length > 0)
+  , [topics, questions, settings.language])
 
   const wrongCount = useMemo(
     () => Object.values(wrongByTicket).reduce((s, n) => s + n, 0),
@@ -50,11 +50,11 @@ export default function TopicsPage() {
       )}
 
       <div className="flex flex-col gap-2">
-        {topics.map((topic) => (
-          <button key={topic.name} onClick={() => start(topic)}
+        {topicMeta.map((topic) => (
+          <button key={topic.id} onClick={() => start(topic)}
             className="flex items-center justify-between bg-[#161b22] border border-[#30363d] rounded-2xl px-4 py-3.5 active:scale-[0.98] transition-transform">
             <span className="text-sm font-semibold text-left">{topic.name}</span>
-            <span className="text-xs text-[#8b949e] ml-3 flex-shrink-0">{topic.count} ta</span>
+            <span className="text-xs text-[#8b949e] ml-3 flex-shrink-0">{topic.ids.length} ta</span>
           </button>
         ))}
       </div>

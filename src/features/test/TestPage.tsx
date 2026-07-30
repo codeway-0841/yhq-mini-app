@@ -5,7 +5,7 @@ import {
   Volume2, Video, BookOpen, MessageCircle,
   RotateCcw, BarChart2,
 } from 'lucide-react'
-import { questions } from '../../shared/data'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 
@@ -237,6 +237,8 @@ export default function TestPage() {
   const navigate = useNavigate()
   const location = useLocation()
   const { settings, addResult, toggleSaved, savedQuestions } = useAppStore()
+  const questions   = useQuestionsStore((s) => s.questions)
+  const storeTopics = useQuestionsStore((s) => s.topics)
 
   const activeQuestions = useMemo(() => {
     const ids = location.state?.questionIds
@@ -245,7 +247,7 @@ export default function TestPage() {
       return questions.filter((q) => idSet.has(q.id))
     }
     return questions
-  }, [location.state?.questionIds])
+  }, [location.state?.questionIds, questions])
 
   const startIndex = Math.min(
     Math.max(0, (Number(id) || 1) - 1),
@@ -350,6 +352,11 @@ export default function TestPage() {
   const isSaved     = savedQuestions.includes(q.id)
   const isLast      = current === activeQuestions.length - 1
   const allAnswered = answers.every((a) => a !== null && a !== 'unanswered')
+  const topicLabel  = (() => {
+    if (location.state?.title) return location.state.title
+    const topic = storeTopics.find(t => t.id === q.topicId)
+    return topic ? (settings?.language === 'ru' ? topic.nameRu : topic.nameUz) : ''
+  })()
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0d1117]">
@@ -385,7 +392,7 @@ export default function TestPage() {
       <div className="flex-1 overflow-y-auto px-4 pb-4">
         <p className="text-center text-xs text-[#8b949e] mb-2 font-medium">
           {current + 1} / {activeQuestions.length}
-          {location.state?.title ? ` · ${location.state.title}` : ` · ${q.topic}`}
+          {topicLabel ? ` · ${topicLabel}` : ''}
         </p>
         <p className={`text-center font-semibold mb-4 leading-snug ${
           fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-xl' : 'text-base'

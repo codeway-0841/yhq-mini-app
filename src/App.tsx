@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
+import { useQuestionsStore } from './store/useQuestionsStore'
 import { api } from './lib/api'
 import Dashboard       from './features/dashboard/Dashboard'
 import TestPage        from './features/test/TestPage'
@@ -67,6 +68,9 @@ export default function App() {
 
     const tgUser = tg?.initDataUnsafe?.user
 
+    const loadQuestions = (lang: 'uz' | 'ru') =>
+      useQuestionsStore.getState().load(lang)
+
     if (tgUser?.id) {
       api.init({
         id:         String(tgUser.id),
@@ -75,7 +79,7 @@ export default function App() {
         username:   tgUser.username   ?? '',
         photo_url:  tgUser.photo_url  ?? '',
       })
-        .then((data) => {
+        .then(async (data) => {
           useAppStore.setState({
             user:           data.user,
             tariff:         data.user.tariff,
@@ -86,15 +90,22 @@ export default function App() {
             totalAnswered:  data.progress.totalAnswered,
             wrongByTicket:  data.progress.wrongByTicket,
             savedQuestions: data.savedQuestions,
-            initialized:    true,
           })
+          await loadQuestions(data.settings.language)
+          useAppStore.setState({ initialized: true })
         })
-        .catch(() => syncFromServer(String(tgUser.id)))
+        .catch(async () => {
+          await syncFromServer(String(tgUser.id))
+          const lang = useAppStore.getState().settings?.language ?? 'uz'
+          await loadQuestions(lang)
+          useAppStore.setState({ initialized: true })
+        })
     } else {
       useAppStore.setState({
         user:        { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
         initialized: true,
       })
+      loadQuestions('uz')
     }
   }, [syncFromServer])
 

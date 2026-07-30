@@ -9,16 +9,18 @@ import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
 import { attachOctagon }   from './octagon'
-import { questions }       from '../src/data/questions'
-
-const octagonPool = questions.map((q) => ({ id: q.id, correct: q.correct }))
+import { db }              from './db/connection'
+import { questions }       from './schema'
 
 const app    = createApp()
 const server = http.createServer(app)
+const wss    = new WebSocketServer({ server, path: '/ws/octagon' })
 
-const wss = new WebSocketServer({ server, path: '/ws/octagon' })
-attachOctagon(wss, octagonPool)
-
-server.listen(config.server.port, () => {
-  console.log(`Server :${config.server.port} (HTTP + WS)`)
-})
+db.select({ id: questions.id, correct: questions.correctAnswer })
+  .from(questions)
+  .then((pool) => {
+    attachOctagon(wss, pool)
+    server.listen(config.server.port, () => {
+      console.log(`Server :${config.server.port} (HTTP + WS) — ${pool.length} questions loaded`)
+    })
+  })

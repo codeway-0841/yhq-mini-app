@@ -6,9 +6,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { type SRCard, createCard, updateCard, pickNext } from '../lib/spaced-repetition'
-import { questions } from '../data/questions'
-
-const ALL_IDS = questions.map((q) => q.id)
+import { useQuestionsStore } from './useQuestionsStore'
 
 interface AdaptiveState {
   cards:        Record<number, SRCard>  // questionId → SRCard
@@ -31,7 +29,8 @@ export const useAdaptiveStore = create<AdaptiveState>()(
         const cards = new Map(
           Object.entries(get().cards).map(([k, v]) => [Number(k), v])
         )
-        const next = pickNext(cards, ALL_IDS)
+        const allIds = useQuestionsStore.getState().questions.map(q => q.id)
+        const next = pickNext(cards, allIds)
         set({ currentId: next ?? null, sessionCount: 0 })
       },
 
@@ -43,7 +42,8 @@ export const useAdaptiveStore = create<AdaptiveState>()(
         const updated = updateCard(card, quality)
         cards.set(questionId, updated)
 
-        const next = pickNext(cards, ALL_IDS, questionId)
+        const allIds = useQuestionsStore.getState().questions.map(q => q.id)
+        const next = pickNext(cards, allIds, questionId)
 
         // Persist as plain object
         const cardsObj: Record<number, SRCard> = {}

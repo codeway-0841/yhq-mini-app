@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Brain, X } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAppStore }      from '../../shared/store/useAppStore'
-import { questions }        from '../../shared/data'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT }             from '../../shared/i18n'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
 
@@ -44,6 +44,7 @@ function Option({ id, text, state, onSelect, answered }: {
 export default function AdaptivePage() {
   const navigate = useNavigate()
   const { settings, addResult } = useAppStore()
+  const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
 
   const { cards, currentId, sessionCount, startSession, submitAnswer } = useAdaptiveStore()
