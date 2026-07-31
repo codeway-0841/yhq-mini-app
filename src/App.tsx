@@ -60,6 +60,15 @@ function Layout() {
   )
 }
 
+/** Light/Dark tema — settings.theme o'zgarishi bilan body ga qo'llanadi */
+function ThemeEffect() {
+  const theme = useAppStore((s) => s.settings.theme)
+  useEffect(() => {
+    document.body.dataset.theme = theme
+  }, [theme])
+  return null
+}
+
 export default function App() {
   const syncFromServer = useAppStore((s) => s.syncFromServer)
 
@@ -112,6 +121,7 @@ export default function App() {
 
   return (
     <HashRouter>
+      <ThemeEffect />
       <Layout />
     </HashRouter>
   )

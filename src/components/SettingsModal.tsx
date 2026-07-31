@@ -1,15 +1,29 @@
 import { useState, type ReactNode } from 'react'
-import { X } from 'lucide-react'
+import {
+  X, Play, Zap, Shuffle, Type, Moon, Sun, Globe, Flag,
+} from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../lib/telegram'
 import { useT } from '../lib/i18n'
 import Toggle from './Toggle'
 
-function Row({ label, children }: { label: string; children: ReactNode }) {
+type LucideIcon = typeof Play
+
+/** Videodagi dizayn kabi: chapda rangli ikonka-da'ira + label + o'ngda boshqaruv */
+function Row({ icon: Icon, iconColor, label, children }: {
+  icon: LucideIcon
+  iconColor: string
+  label: string
+  children: ReactNode
+}) {
   return (
-    <div className="flex items-center justify-between py-3 border-b border-[#30363d] last:border-0">
-      <span className="text-sm text-[#e6edf3]">{label}</span>
+    <div className="flex items-center gap-3 py-3 border-b border-[#30363d] last:border-0">
+      <div className="w-9 h-9 rounded-full flex items-center justify-center flex-none"
+        style={{ background: `${iconColor}26` }}>
+        <Icon size={17} style={{ color: iconColor }} />
+      </div>
+      <span className="flex-1 text-sm text-[#e6edf3]">{label}</span>
       {children}
     </div>
   )
@@ -59,26 +73,27 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
     <div className="fixed inset-0 z-50 flex items-end">
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
       <div className="relative w-full bg-[#161b22] rounded-t-2xl border-t border-[#30363d] p-5 pb-8 max-h-[85vh] overflow-y-auto">
-        <div className="flex items-center justify-between mb-4">
+        <div className="w-10 h-1 bg-[#30363d] rounded-full mx-auto mb-4" />
+        <div className="flex items-center justify-between mb-3">
           <h2 className="text-base font-bold">{tt('settingsTitle')}</h2>
           <button onClick={onClose} aria-label={tt('settingsTitle')} className="text-[#8b949e] hover:text-white">
             <X size={20} />
           </button>
         </div>
 
-        <Row label={tt('autoNextCorrect')}>
+        <Row icon={Play} iconColor="#22c55e" label={tt('autoNextCorrect')}>
           <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
         </Row>
-        <Row label={tt('autoNextWrong')}>
+        <Row icon={Play} iconColor="#ef4444" label={tt('autoNextWrong')}>
           <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
         </Row>
-        <Row label={tt('noAnimation')}>
+        <Row icon={Zap} iconColor="#8b5cf6" label={tt('noAnimation')}>
           <Toggle label={tt('noAnimation')} checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
         </Row>
-        <Row label={tt('shuffleOptions')}>
+        <Row icon={Shuffle} iconColor="#f59e0b" label={tt('shuffleOptions')}>
           <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
         </Row>
-        <Row label={tt('fontSize')}>
+        <Row icon={Type} iconColor="#a78bfa" label={tt('fontSize')}>
           <ChipGroup
             value={local.fontSize}
             onChange={(v) => set('fontSize', v as ApiSettings['fontSize'])}
@@ -89,7 +104,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             ]}
           />
         </Row>
-        <Row label={tt('fontStyle')}>
+        <Row icon={Type} iconColor="#60a5fa" label={tt('fontStyle')}>
           <ChipGroup
             value={local.fontStyle}
             onChange={(v) => set('fontStyle', v as ApiSettings['fontStyle'])}
@@ -100,7 +115,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             ]}
           />
         </Row>
-        <Row label={tt('langLabel')}>
+        <Row icon={Globe} iconColor="#3b82f6" label={tt('langLabel')}>
           <ChipGroup
             value={local.language}
             onChange={(v) => set('language', v as ApiSettings['language'])}
@@ -110,16 +125,33 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             ]}
           />
         </Row>
+        <Row
+          icon={local.theme === 'dark' ? Moon : Sun}
+          iconColor="#f59e0b"
+          label={tt('themeLabel')}
+        >
+          <ChipGroup
+            value={local.theme}
+            onChange={(v) => set('theme', v as ApiSettings['theme'])}
+            options={[
+              { label: tt('darkTheme'),  value: 'dark'  },
+              { label: tt('lightTheme'), value: 'light' },
+            ]}
+          />
+        </Row>
 
         <button
           onClick={() => openTelegramLink('https://t.me/osonprava_bot')}
-          className="mt-1 text-sm text-[#8b949e] hover:text-white underline underline-offset-2">
-          {tt('reportIssue')}
+          className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
+          <div className="w-9 h-9 rounded-full flex items-center justify-center flex-none bg-[#ef4444]/15">
+            <Flag size={17} className="text-[#ef4444]" />
+          </div>
+          <span className="flex-1 text-sm text-left text-[#e6edf3]">{tt('reportIssue')}</span>
         </button>
 
         <button
           onClick={save}
-          className="mt-5 w-full py-3.5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-base transition-colors"
+          className="mt-3 w-full py-3.5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-base transition-colors"
         >
           {tt('saveBtn')}
         </button>

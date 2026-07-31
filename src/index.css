@@ -25,6 +25,17 @@ html, body, #root {
 /* Safe area for Telegram */
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
 
+/* Light theme — butun sahifa ranglarini avtomatik almashtirish.
+   Filter invert qilinganda body/html fon (#0d1117) ham yorug' bo'ladi.
+   Rasmlar va ikonlar qayta-invert qilinadi (asl ranglarida qoladi). */
+body[data-theme='light'] {
+  filter: invert(93%) hue-rotate(180deg);
+}
+body[data-theme='light'] img,
+body[data-theme='light'] video {
+  filter: invert(100%) hue-rotate(-180deg);
+}
+
 /* Smooth scroll for question strip */
 .scroll-smooth-x {
   scroll-behavior: smooth;

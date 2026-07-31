@@ -7,6 +7,7 @@ import {
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useT } from '../../shared/i18n'
 import { openTelegramLink, shareUrl } from '../../lib/telegram'
 import Toggle from '../../shared/components/Toggle'
 
@@ -140,6 +141,7 @@ export default function Profil() {
     totalCorrect, totalWrong, totalAnswered, streak, syncFromServer,
     displayName, setDisplayName,
   } = useAppStore()
+  const tt = useT(settings.language)
 
   const [copied, setCopied]           = useState(false)
   const [phoneLoading, setPhoneLoading] = useState(false)
@@ -251,12 +253,12 @@ export default function Profil() {
       </div>
       <p className="text-center text-xs text-[#8b949e] mb-4">{totalAnswered} ta savol javoblandi</p>
 
-      <Section title="SIZNING TARIFINGIZ">
+      <Section title={tt('yourTariff').toUpperCase()}>
         <div className="px-4 py-3 flex items-center gap-3 border-b border-[#30363d]">
           <div className="flex-1">
-            <p className="text-sm font-bold">{tariff === 'free' ? 'Matiz — Bepul' : 'Premium'}</p>
+            <p className="text-sm font-bold">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
             <p className="text-xs text-[#8b949e] mt-0.5">
-              {tariff === 'free' ? "Yanada ko'proq imkoniyatlar uchun" : 'Barcha imkoniyatlar'}
+              {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>
           </div>
           {tariff === 'free' && (
@@ -264,7 +266,7 @@ export default function Profil() {
               onClick={() => showToast('Premium tez kunda! Hozircha barcha funksiyalar bepul.')}
               className="flex items-center gap-1.5 bg-[#1f6feb] text-white text-xs font-bold px-3 py-1.5 rounded-xl">
               <Zap size={12} />
-              Kuchaytirish
+              {tt('upgrade')}
             </button>
           )}
         </div>
@@ -276,19 +278,19 @@ export default function Profil() {
           onPress={user?.phone ? undefined : handleAddPhone}
           disabled={phoneLoading || !!user?.phone}
         />
-        <Item icon={Lock} iconBg="bg-purple-600" label="Yopiq guruh"
-          right={<span className="text-xs text-[#8b949e]">Qo'shilish</span>}
+        <Item icon={Lock} iconBg="bg-purple-600" label={tt('closedGroup')}
+          right={<span className="text-xs text-[#8b949e]">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
       </Section>
 
-      <Section title="UMUMIY">
-        <Item icon={Globe} iconBg="bg-blue-500" label="Ilova tili"
+      <Section title={tt('generalSection')}>
+        <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
           right={<span className="text-xs text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={toggleLanguage} />
-        <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label="To'lovlar tarixi"
+        <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
         <Item
-          icon={WifiOff} iconBg="bg-green-500" label="Oflayn rejim"
+          icon={WifiOff} iconBg="bg-green-500" label={tt('offlineMode')}
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
           onPress={() => updateSettings({ offlineMode: !offlineOn })}
         />
@@ -308,20 +310,20 @@ export default function Profil() {
             </div>
           }
         />
-        <Item icon={RotateCcw} iconBg="bg-blue-600" label="Serverdan yangilash"  onPress={handleSync}  right={null} />
-        <Item icon={RotateCcw} iconBg="bg-red-600"  label="Progresni qayta boshlash" danger onPress={handleReset} right={null} />
+        <Item icon={RotateCcw} iconBg="bg-blue-600" label={tt('syncServer')}  onPress={handleSync}  right={null} />
+        <Item icon={RotateCcw} iconBg="bg-red-600"  label={tt('resetProgress')} danger onPress={handleReset} right={null} />
       </Section>
 
-      <Section title="YORDAM">
-        <Item icon={MessageCircle} iconBg="bg-green-500"  label="Biz bilan bog'lanish"
+      <Section title={tt('helpSection')}>
+        <Item icon={MessageCircle} iconBg="bg-green-500"  label={tt('contactUs')}
           onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
-        <Item icon={Radio}         iconBg="bg-blue-500"   label="Telegram kanalimiz"
+        <Item icon={Radio}         iconBg="bg-blue-500"   label={tt('tgChannel')}
           onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
-        <Item icon={Star}          iconBg="bg-orange-400" label="Ilovani baholash"
+        <Item icon={Star}          iconBg="bg-orange-400" label={tt('rateApp')}
           onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
-        <Item icon={Share2}        iconBg="bg-pink-500"   label="Ulashish"
+        <Item icon={Share2}        iconBg="bg-pink-500"   label={tt('shareApp')}
           onPress={() => shareUrl('https://t.me/osonprava_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
-        <Item icon={Download}      iconBg="bg-blue-400"   label="Ilovani o'rnatish"
+        <Item icon={Download}      iconBg="bg-blue-400"   label={tt('installApp')}
           onPress={() => showToast(addToHomeScreen())} />
       </Section>
 

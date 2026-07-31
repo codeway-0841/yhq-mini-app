@@ -1,5 +1,7 @@
 /** Circular pass/fail chart for the results modal. */
-export default function DonutChart({ correct, total }: { correct: number; total: number }) {
+export default function DonutChart({ correct, total, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
+  correct: number; total: number; passedLabel?: string; failedLabel?: string
+}) {
   const r             = 52
   const cx            = 70
   const cy            = 70
@@ -27,7 +29,7 @@ export default function DonutChart({ correct, total }: { correct: number; total:
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <span className="text-4xl font-black text-white">{percent}%</span>
         <span className={`text-sm font-bold mt-0.5 ${passed ? 'text-green-400' : 'text-red-400'}`}>
-          {passed ? "O'tdi ✓" : "O'tmadi ✗"}
+          {passed ? passedLabel : failedLabel}
         </span>
       </div>
     </div>

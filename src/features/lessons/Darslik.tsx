@@ -134,6 +134,8 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
   doneList: number[]
   onOpenLesson: (idx: number) => void
 }) {
+  const { settings } = useAppStore()
+  const ru = settings.language === 'ru'
   const total = mod.lessonCount
   return (
     <div className="rounded-2xl p-4 border border-white/10 relative overflow-hidden"
@@ -188,7 +190,9 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
               <span className={`text-[10px] font-semibold mt-1 text-center max-w-[90px] ${
                 locked ? 'text-[#484f58]' : 'text-[#c9d1d9]'
               }`}>
-                {lessons[mod.id]?.[i] ? lessons[mod.id][i].titleUz.split(' ').slice(0, 2).join(' ') : `${i + 1}-dars`}
+                {lessons[mod.id]?.[i]
+                  ? (ru ? lessons[mod.id][i].titleRu : lessons[mod.id][i].titleUz).split(' ').slice(0, 2).join(' ')
+                  : `${i + 1}-${ru ? 'урок' : 'dars'}`}
               </span>
             </div>
           )

@@ -8,6 +8,7 @@ import {
   AlertTriangle, Bookmark, Hash, Signpost,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
+import { useT } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
@@ -59,8 +60,9 @@ function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
 }
 
 // ── Progress Card ───────────────────────────────────────────────────────────
-function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak }: {
+function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, tt }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
+  tt: (key: 'changeDate' | 'daysWord' | 'correctShort' | 'wrongShort' | 'remainingShort') => string
 }) {
   const total     = totalAnswered || 1
   const percent   = Math.min(100, Math.round((totalCorrect / total) * 100)) || 0
@@ -70,10 +72,10 @@ function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak }: {
     <div className="mx-4 rounded-2xl bg-gradient-to-br from-[#1a7f3c] to-[#0f5a28] p-4 mb-3">
       <div className="flex items-start justify-between mb-2">
         <span className="text-xs text-green-300/60">
-          Sanani o'zgartirish ✏️
+          {tt('changeDate')} ✏️
         </span>
         <div className="flex items-center gap-1 text-orange-400 font-bold text-sm">
-          ⚡ {streak} kun
+          ⚡ {streak} {tt('daysWord')}
         </div>
       </div>
 
@@ -82,13 +84,13 @@ function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak }: {
         <div className="text-right text-sm text-green-200 space-y-0.5">
           <div className="flex items-center gap-1 justify-end">
             <span className="text-green-400">✓</span>
-            <span>{totalCorrect} to'g'ri</span>
+            <span>{totalCorrect} {tt('correctShort')}</span>
           </div>
           <div className="flex items-center gap-1 justify-end">
             <span className="text-red-400">✗</span>
-            <span>{totalWrong} xato</span>
+            <span>{totalWrong} {tt('wrongShort')}</span>
           </div>
-          <div className="text-green-300">{remaining} qolgan</div>
+          <div className="text-green-300">{remaining} {tt('remainingShort')}</div>
         </div>
       </div>
 
@@ -122,7 +124,7 @@ function useCountdown() {
   return `${h}:${m}:${s}`
 }
 
-function PromoBanner() {
+function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
     <div className="mx-4 mb-3 rounded-2xl bg-gradient-to-r from-[#ec4899] to-[#ef4444] p-4 relative overflow-hidden active:scale-[0.98] transition-transform">
@@ -133,7 +135,7 @@ function PromoBanner() {
         </svg>
       </div>
       <p className="text-white text-sm font-bold leading-snug mb-1.5 pr-16">
-        1 oylik Qora Jentra tarifiga 25% chegirma. Faqat bugun!
+        {text}
       </p>
       <p className="text-white text-3xl font-black tracking-wider">{countdown}</p>
     </div>
@@ -192,7 +194,8 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
-  const { user, displayName, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+  const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+  const tt = useT(settings.language)
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -210,10 +213,12 @@ export default function Dashboard() {
     navigate('/test/1', { state: { mode, title } })
   const goSaved = () => {
     if (savedQuestions.length === 0) {
-      showToast("Hali saqlangan savollar yo'q — testda 📌 tugmasini bosing")
+      showToast(settings.language === 'ru'
+        ? "Нет сохранённых вопросов — используйте 📌 в тесте"
+        : "Hali saqlangan savollar yo'q — testda 📌 tugmasini bosing")
       return
     }
-    navigate('/test/1', { state: { questionIds: savedQuestions, title: 'Saqlanganlar' } })
+    navigate('/test/1', { state: { questionIds: savedQuestions, title: tt('saved') } })
   }
 
   return (
@@ -227,16 +232,17 @@ export default function Dashboard() {
         totalWrong={totalWrong}
         totalAnswered={totalAnswered}
         streak={streak}
+        tt={tt}
       />
 
       {/* Barcha testlar + Xatolarni tuzatish */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label="Barcha testlar"     iconColor="#60a5fa" onClick={goTest} />
-        <GridCard icon={AlertTriangle} label="Xatolarni tuzatish" iconColor="#f472b6" badge={totalWrong || null} onClick={goMistakes} />
+        <GridCard icon={ListChecks}    label={tt('allTests')}     iconColor="#60a5fa" onClick={goTest} />
+        <GridCard icon={AlertTriangle} label={tt('fixMistakes')}  iconColor="#f472b6" badge={totalWrong || null} onClick={goMistakes} />
       </div>
 
       {/* Promo banner */}
-      <PromoBanner />
+      <PromoBanner text={tt('promoText')} />
 
       {/* Darslik */}
       <div className="px-4 mb-3">
@@ -245,8 +251,8 @@ export default function Dashboard() {
           className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#0ea5e9] to-[#38bdf8] p-4 w-full active:scale-[0.98] transition-transform"
         >
           <div className="text-left">
-            <p className="text-base font-bold text-white">Darslik</p>
-            <p className="text-xs text-white/70">Noldan imtihondan o'tguncha bo'lgan...</p>
+            <p className="text-base font-bold text-white">{tt('lessons')}</p>
+            <p className="text-xs text-white/70">{tt('darslikDesc')}</p>
           </div>
           <GraduationCap size={32} className="text-white/80 flex-none" />
         </button>
@@ -254,29 +260,29 @@ export default function Dashboard() {
 
       {/* Test yechish + Oktagon */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <FeatureCard icon={Play}  label="Test yechish" subtitle="Sizga mos savollar" bgColor="#22c55e" onClick={goAdaptive} />
-        <FeatureCard icon={Sword} label="Oktagon"      subtitle="Birga bir jang"     bgColor="#374151" onClick={goOctagon} />
+        <FeatureCard icon={Play}  label={tt('adaptive')} subtitle={tt('adaptiveDesc')} bgColor="#22c55e" onClick={goAdaptive} />
+        <FeatureCard icon={Sword} label={tt('octagon')}  subtitle={tt('octagonTitle')} bgColor="#374151" onClick={goOctagon} />
       </div>
 
       {/* Grid cards */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={LayoutGrid} label="Mavzular" iconColor="#818cf8" onClick={goTopics} />
-        <GridCard icon={Ticket}     label="Biletlar" iconColor="#2dd4bf" onClick={() => navigate('/biletlar')} />
+        <GridCard icon={LayoutGrid} label={tt('topics')} iconColor="#818cf8" onClick={goTopics} />
+        <GridCard icon={Ticket}     label={tt('tickets')} iconColor="#2dd4bf" onClick={() => navigate('/biletlar')} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label="50 talik"     iconColor="#60a5fa" onClick={goMode('random50', '50 talik test')} />
-        <GridCard icon={GraduationCap} label="Real imtihon" iconColor="#4ade80" onClick={goMode('exam', 'Real imtihon — 40 savol / 30 daqiqa')} />
+        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#60a5fa" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
+        <GridCard icon={GraduationCap} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={AlertTriangle} label="Chalg'ituvchi" iconColor="#f472b6" onClick={goMode('tricky', "Chalg'ituvchi savollar — 30 ta tasodifiy")} />
-        <GridCard icon={Bookmark}      label="Saqlanganlar"  iconColor="#fbbf24" badge={savedQuestions.length || null} onClick={goSaved} />
+        <GridCard icon={AlertTriangle} label={tt('distracting')} iconColor="#f472b6" onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#fbbf24" badge={savedQuestions.length || null} onClick={goSaved} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4">
-        <GridCard icon={Signpost}      label="Yo'l belgilari"   iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label="Raqamli savollar" iconColor="#a78bfa" onClick={goMode('numeric', 'Raqamli savollar')} />
+        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#a78bfa" onClick={goMode('numeric', tt('numeric'))} />
       </div>
 
       {toast && (

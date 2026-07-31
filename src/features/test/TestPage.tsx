@@ -6,6 +6,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
 import { shareUrl } from '../../lib/telegram'
+import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
@@ -16,6 +17,7 @@ export default function TestPage() {
   const navigate = useNavigate()
   const location = useLocation()
   const { settings, addResult, toggleSaved, savedQuestions } = useAppStore()
+  const tt          = useT(settings.language)
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
@@ -173,7 +175,7 @@ export default function TestPage() {
   }, [answers, isFinished])
 
   if (!q) return (
-    <div className="flex items-center justify-center min-h-screen text-[#8b949e]">Savol topilmadi</div>
+    <div className="flex items-center justify-center min-h-screen text-[#8b949e]">{tt('notFoundQ')}</div>
   )
 
   const isSaved     = savedQuestions.includes(q.id)
@@ -254,18 +256,18 @@ export default function TestPage() {
       <div className="flex gap-3 px-4 py-3 border-t border-[#30363d] bg-[#0d1117]">
         <button onClick={goPrev} disabled={current === 0}
           className="flex-1 py-3 rounded-xl bg-[#21262d] text-[#e6edf3] font-semibold disabled:opacity-40">
-          ← Oldingi
+          ← {tt('prev')}
         </button>
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash} className="flex-1 py-3 rounded-xl bg-green-600 text-white font-semibold">
-            ✓ Yakunlash
+            ✓ {tt('finish')}
           </button>
         ) : (
           <button onClick={selected ? goNext : undefined}
             className={`flex-1 py-3 rounded-xl font-semibold transition-colors ${
               selected ? 'bg-[#1f6feb] text-white' : 'bg-[#21262d] text-[#8b949e] cursor-default'
             }`}>
-            {selected ? "✕ O'rganish" : "O'rganish"}
+            {selected ? `✕ ${tt('study')}` : tt('study')}
           </button>
         )}
       </div>

@@ -2,12 +2,9 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useT } from '../../shared/i18n'
 
 const TICKET_SIZE = 20
-const TABS = [
-  { id: 'all',    label: 'Barchasi' },
-  { id: 'errors', label: 'Xatolar'  },
-]
 
 /** Deterministik (seed'li) aralashtirish — biletlar har doim bir xil bo'lib qoladi */
 function seededShuffle<T>(arr: T[], seed: number): T[] {
@@ -30,7 +27,14 @@ export default function Biletlar() {
   const [tab, setTab] = useState('all')
   const navigate      = useNavigate()
   const wrongByTicket = useAppStore((s) => s.wrongByTicket)
+  const settings      = useAppStore((s) => s.settings)
+  const tt            = useT(settings.language)
   const questions     = useQuestionsStore((s) => s.questions)
+
+  const TABS = [
+    { id: 'all',    label: tt('allTab') },
+    { id: 'errors', label: tt('errorsTab') },
+  ]
 
   const tickets = useMemo(() => {
     if (!questions.length) return []
@@ -39,11 +43,9 @@ export default function Biletlar() {
     const count = Math.floor(shuffled.length / TICKET_SIZE)
     return Array.from({ length: count }, (_, i) => {
       const ids = shuffled.slice(i * TICKET_SIZE, (i + 1) * TICKET_SIZE).map((q) => q.id)
-      return { id: i + 1, title: `${i + 1} - bilet`, questionCount: ids.length, questionIds: ids }
+      return { id: i + 1, title: `${i + 1} - ${tt('ticketWord')}`, questionCount: ids.length, questionIds: ids }
     })
-  }, [questions])
-
-  // wrongByTicket is keyed by QUESTION id — a ticket has errors if any of its questions do
+  }, [questions, tt])
   const filtered = tickets.filter((t) => {
     if (tab === 'errors') return t.questionIds.some((id) => (wrongByTicket[id] ?? 0) > 0)
     return true
@@ -59,9 +61,9 @@ export default function Biletlar() {
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
-        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+        <button onClick={() => navigate(-1)} aria-label={tt('backWord')}
           className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
-        <h1 className="text-xl font-black">Biletlar</h1>
+        <h1 className="text-xl font-black">{tt('tickets')}</h1>
       </div>
 
       <div className="flex gap-2 mb-4 bg-[#161b22] p-1 rounded-xl">
@@ -80,14 +82,14 @@ export default function Biletlar() {
           <button key={ticket.id} onClick={() => handleTicket(ticket)}
             className="relative flex flex-col items-center justify-center rounded-2xl border border-[#30363d] bg-[#161b22] p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden">
             <span className="text-sm font-bold">{ticket.title}</span>
-            <span className="text-[10px] text-[#8b949e] mt-0.5">{ticket.questionCount} ta</span>
+            <span className="text-[10px] text-[#8b949e] mt-0.5">{ticket.questionCount} {tt('question')}</span>
           </button>
         ))}
       </div>
 
       {filtered.length === 0 && (
         <div className="text-center text-[#8b949e] py-16 text-sm">
-          {tab === 'errors' ? "Xato yo'q — yaxshi natija!" : 'Yuklanmoqda...'}
+          {tab === 'errors' ? tt('noErrors') : tt('loadingDots')}
         </div>
       )}
     </div>
