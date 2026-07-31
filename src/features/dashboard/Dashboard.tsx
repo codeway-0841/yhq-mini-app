@@ -1,31 +1,36 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, memo } from 'react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  Trophy, Settings,
-  Play, Sword, LayoutGrid,
-  Ticket, ListChecks, GraduationCap,
-  AlertTriangle, Bookmark, Hash, Signpost,
+  Trophy, Settings, Search,
+  Play, Swords, ListChecks, GraduationCap,
+  Bookmark, Hash, Signpost,
+  Ticket, LayoutGrid, ClipboardCheck, ShieldAlert,
+  Heart,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
-import { useT, t } from '../../shared/i18n'
+import { useT } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
-function Avatar({ name }: { name: string }) {
+const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
   const letter = name?.[0]?.toUpperCase() || 'F'
   return (
-    <div className="relative">
-      <div className="w-9 h-9 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-base">
-        {letter}
-      </div>
-      <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-400 rounded-full border-2 border-[#0d1117]" />
+    <div className="relative flex-shrink-0">
+      {photoUrl ? (
+        <img src={photoUrl} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-[#30363d]" />
+      ) : (
+        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#3b82f6] to-[#6366f1] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
+          {letter}
+        </div>
+      )}
+      <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-[#22c55e] rounded-full border-[2.5px] border-[#0d1117] animate-pulse" />
     </div>
   )
-}
+})
 
 // ── Top Bar ─────────────────────────────────────────────────────────────────
-function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
+const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
   user: ApiUser | null
   displayName: string | null
   onSettings: () => void
@@ -33,78 +38,123 @@ function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
   onLeaderboard: () => void
 }) {
   const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   const name = displayName
-    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : t(lang, 'guestName'))
-  const riderLabel = t(lang, 'riderLabel')
+    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : tt('guestName'))
+  const riderLabel = tt('riderLabel')
+
   return (
-    <div className="flex items-center justify-between px-4 pt-4 pb-2">
-      <button onClick={onProfile} className="flex items-center gap-2.5 active:opacity-70 transition-opacity">
-        <Avatar name={name} />
-        <div className="text-left">
-          <p className="text-sm font-bold leading-tight text-white">{name}</p>
-          <span className="text-[10px] font-bold text-green-400">
-            ⚡ {riderLabel}
+    <div className="flex items-center justify-between px-4 pt-5 pb-3">
+      <button onClick={onProfile} className="flex items-center gap-3 active:opacity-70 transition-opacity min-w-0">
+        <Avatar name={name} photoUrl={user?.photoUrl} />
+        <div className="text-left min-w-0">
+          <p className="text-[15px] font-bold leading-tight text-white truncate">{name}</p>
+          <span className="text-[11px] font-bold text-[#4ade80] tracking-wide flex items-center gap-1">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#4ade80]" />
+            {riderLabel}
           </span>
         </div>
       </button>
-      <div className="flex items-center gap-3.5">
+      <div className="flex items-center gap-4">
         <button onClick={onLeaderboard} aria-label="Reyting"
-          className="text-[#f59e0b] hover:opacity-80 transition-opacity">
-          <Trophy size={20} fill="currentColor" />
+          className="relative text-[#fbbf24] hover:text-[#f59e0b] transition-colors active:scale-90">
+          <Trophy size={22} fill="currentColor" />
+          <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-[9px] font-bold text-white">
+            !
+          </span>
+        </button>
+        <button aria-label="Qidirish"
+          className="text-[#8b949e] hover:text-white transition-colors active:scale-90">
+          <Search size={21} />
         </button>
         <button onClick={onSettings} aria-label="Sozlamalar"
-          className="text-[#8b949e] hover:text-white transition-colors">
-          <Settings size={20} />
+          className="text-[#8b949e] hover:text-white transition-colors active:scale-90">
+          <Settings size={21} />
         </button>
       </div>
     </div>
   )
-}
+})
 
 // ── Progress Card ───────────────────────────────────────────────────────────
-function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, tt }: {
+const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
-  tt: (key: 'changeDate' | 'daysWord' | 'correctShort' | 'wrongShort' | 'remainingShort') => string
+  lang: 'uz' | 'ru'
 }) {
-  const total     = totalAnswered || 1
-  const percent   = Math.min(100, Math.round((totalCorrect / total) * 100)) || 0
-  const remaining = Math.max(0, 20 - totalAnswered)
+  const tt = useT(lang)
+  const total     = 1237 // total questions in database
+  const percent   = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
+  const remaining = Math.max(0, total - totalAnswered)
 
   return (
-    <div className="mx-4 rounded-2xl bg-gradient-to-br from-[#1a7f3c] to-[#0f5a28] p-4 mb-3">
-      <div className="flex items-start justify-between mb-2">
-        <span className="text-xs text-green-300/60">
-          {tt('changeDate')} ✏️
-        </span>
-        <div className="flex items-center gap-1 text-orange-400 font-bold text-sm">
-          ⚡ {streak} {tt('daysWord')}
-        </div>
-      </div>
+    <div className="mx-4 rounded-2xl bg-[#161b22] border border-[#30363d] p-4 mb-3 relative overflow-hidden">
+      {/* Subtle gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a7f3c]/10 to-transparent pointer-events-none" />
 
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-5xl font-black text-white">{percent}%</span>
-        <div className="text-right text-sm text-green-200 space-y-0.5">
-          <div className="flex items-center gap-1 justify-end">
-            <span className="text-green-400">✓</span>
-            <span>{totalCorrect} {tt('correctShort')}</span>
+      <div className="relative z-10">
+        <div className="flex items-start justify-between mb-3">
+          <span className="text-xs text-[#8b949e] flex items-center gap-1.5">
+            {tt('changeDate')} <span className="text-[10px]">✏️</span>
+          </span>
+          <div className="flex items-center gap-1.5 bg-[#1a1f2b] rounded-full px-3 py-1">
+            <span className="text-amber-400 text-sm">⚡</span>
+            <span className="text-amber-400 font-bold text-sm">{streak} {tt('daysWord')}</span>
           </div>
-          <div className="flex items-center gap-1 justify-end">
-            <span className="text-red-400">✗</span>
-            <span>{totalWrong} {tt('wrongShort')}</span>
-          </div>
-          <div className="text-green-300">{remaining} {tt('remainingShort')}</div>
         </div>
-      </div>
 
-      <div className="w-full bg-green-900/50 rounded-full h-2">
-        <div
-          className="bg-green-400 h-2 rounded-full transition-all duration-500"
-          style={{ width: `${percent}%` }}
-        />
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-[52px] font-black text-white leading-none tracking-tight">{percent}%</span>
+          <div className="text-right text-[13px] space-y-1">
+            <div className="flex items-center gap-1.5 justify-end">
+              <span className="text-[#4ade80] font-semibold">✓ {totalCorrect}</span>
+            </div>
+            <div className="flex items-center gap-1.5 justify-end">
+              <span className="text-[#f87171] font-semibold">✗ {totalWrong}</span>
+            </div>
+            <div className="text-[#8b949e] text-xs font-medium">— {remaining}</div>
+          </div>
+        </div>
+
+        {/* Progress bar */}
+        <div className="w-full bg-[#21262d] rounded-full h-[6px] overflow-hidden">
+          <div
+            className="h-full rounded-full transition-all duration-700 ease-out"
+            style={{
+              width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%`,
+              background: 'linear-gradient(90deg, #22c55e, #4ade80)',
+            }}
+          />
+        </div>
       </div>
     </div>
   )
-}
+})
+
+// ── Quick Action Buttons (Barcha testlar / Xatolarni tuzatish) ──────────
+const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, onFixMistakes }: {
+  totalWrong: number; lang: 'uz' | 'ru'; onAllTests: () => void; onFixMistakes: () => void
+}) {
+  const tt = useT(lang)
+  return (
+    <div className="grid grid-cols-2 gap-3 px-4 mb-3">
+      <button onClick={onAllTests}
+        className="flex items-center gap-2.5 rounded-2xl border border-[#30363d] bg-[#161b22] px-3.5 py-3.5 active:scale-[0.97] transition-all hover:border-[#3b82f6]/50 hover:bg-[#1c2333]">
+        <ListChecks size={20} className="text-[#60a5fa] flex-shrink-0" strokeWidth={2} />
+        <span className="text-[13px] font-semibold text-white">{tt('allTests')}</span>
+      </button>
+      <button onClick={onFixMistakes}
+        className="relative flex items-center gap-2.5 rounded-2xl border border-[#30363d] bg-[#161b22] px-3.5 py-3.5 active:scale-[0.97] transition-all hover:border-[#f472b6]/50 hover:bg-[#1c2333]">
+        <Heart size={20} className="text-[#f472b6] flex-shrink-0" strokeWidth={2} />
+        <span className="text-[13px] font-semibold text-white">{tt('fixMistakes')}</span>
+        {totalWrong > 0 && (
+          <span className="absolute -top-2 -right-1 bg-[#ef4444] text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+            {totalWrong}
+          </span>
+        )}
+      </button>
+    </div>
+  )
+})
 
 // ── Promo Countdown ─────────────────────────────────────────────────────────
 function useCountdown() {
@@ -126,26 +176,87 @@ function useCountdown() {
   return `${h}:${m}:${s}`
 }
 
-function PromoBanner({ text }: { text: string }) {
+const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
-    <div className="mx-4 mb-3 rounded-2xl bg-gradient-to-r from-[#ec4899] to-[#ef4444] p-4 relative overflow-hidden active:scale-[0.98] transition-transform">
-      {/* Decorative flame */}
-      <div className="absolute right-3 top-1/2 -translate-y-1/2 opacity-15 text-white">
-        <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+    <div className="mx-4 mb-3 rounded-2xl relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
+      style={{ background: 'linear-gradient(135deg, #ec4899, #f43f5e, #ef4444)' }}>
+      {/* Decorative flame SVG */}
+      <div className="absolute right-2 top-1/2 -translate-y-1/2 opacity-[0.12]">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
           <path d="M12 23a7 7 0 0 1-7-7c0-3 2-5 3.5-7.5S12 3 12 1c0 0 4 3 6.5 7.5S22 13 22 16a7 7 0 0 1-7 7h-3z" />
         </svg>
       </div>
-      <p className="text-white text-sm font-bold leading-snug mb-1.5 pr-16">
-        {text}
-      </p>
-      <p className="text-white text-3xl font-black tracking-wider">{countdown}</p>
+
+      <div className="relative z-10 p-4 flex items-center justify-between">
+        <p className="text-white text-[13px] font-bold leading-snug max-w-[55%]">
+          {text}
+        </p>
+        <span className="text-white text-[28px] font-black tracking-wider tabular-nums"
+          style={{ fontVariantNumeric: 'tabular-nums' }}>
+          {countdown}
+        </span>
+      </div>
     </div>
   )
-}
+})
 
-// ── Horizontal Grid Card ────────────────────────────────────────────────────
-function GridCard({ icon: Icon, label, badge, iconColor = '#8b949e', onClick }: {
+// ── Darslik Banner ──────────────────────────────────────────────────────────
+const DarslikBanner = memo(function DarslikBanner({ lang, onClick }: { lang: 'uz' | 'ru'; onClick: () => void }) {
+  const tt = useT(lang)
+  return (
+    <div className="px-4 mb-3">
+      <button
+        onClick={onClick}
+        className="flex items-center justify-between rounded-2xl w-full active:scale-[0.98] transition-transform relative overflow-hidden"
+        style={{ background: 'linear-gradient(135deg, #0ea5e9, #38bdf8, #7dd3fc)' }}
+      >
+        {/* Subtle shimmer */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer pointer-events-none" />
+        <div className="relative z-10 p-4 text-left">
+          <p className="text-[16px] font-extrabold text-white">{tt('lessons')}</p>
+          <p className="text-[12px] text-white/70 mt-0.5">{tt('darslikDesc')}</p>
+        </div>
+        <div className="relative z-10 pr-4">
+          <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center backdrop-blur-sm">
+            <GraduationCap size={28} className="text-white" strokeWidth={1.8} />
+          </div>
+        </div>
+      </button>
+    </div>
+  )
+})
+
+// ── Feature Card (Test yechish / Oktagon) ───────────────────────────────────
+const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, hoverGlow, onClick }: {
+  icon: React.ElementType
+  label: string
+  subtitle: string
+  bgColor: string
+  hoverGlow: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="flex flex-col items-start gap-2 rounded-2xl p-4 min-h-[130px] active:scale-[0.96] transition-all w-full relative overflow-hidden group"
+      style={{ background: bgColor }}
+    >
+      {/* Hover glow */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+        style={{ background: `radial-gradient(ellipse at center, ${hoverGlow}, transparent 70%)` }} />
+
+      <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-1 backdrop-blur-sm relative z-10">
+        <Icon size={26} className="text-white" strokeWidth={1.8} />
+      </div>
+      <span className="text-[15px] font-bold text-white relative z-10">{label}</span>
+      <span className="text-[11px] text-white/55 relative z-10">{subtitle}</span>
+    </button>
+  )
+})
+
+// ── Grid Card ───────────────────────────────────────────────────────────────
+const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = '#8b949e', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -155,41 +266,21 @@ function GridCard({ icon: Icon, label, badge, iconColor = '#8b949e', onClick }: 
   return (
     <button
       onClick={onClick}
-      className="relative flex items-center gap-3 rounded-2xl border border-[#30363d] bg-[#161b22] px-4 py-3.5 active:scale-[0.96] transition-transform w-full"
+      className="relative flex items-center gap-3 rounded-2xl border border-[#30363d] bg-[#161b22] px-4 py-3.5 active:scale-[0.96] transition-all w-full hover:border-[#484f58] hover:bg-[#1c2128]"
     >
       {badge != null && (
-        <span className="absolute top-2 right-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[20px] text-center">
+        <span className="absolute -top-2 -right-1 bg-[#ef4444] text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
           {badge}
         </span>
       )}
-      <Icon size={22} strokeWidth={1.8} style={{ color: iconColor }} className="flex-none" />
-      <span className="text-sm font-semibold text-white text-left leading-tight">{label}</span>
-    </button>
-  )
-}
-
-// ── Feature Card (Test yechish / Oktagon) ───────────────────────────────────
-function FeatureCard({ icon: Icon, label, subtitle, bgColor, onClick }: {
-  icon: React.ElementType
-  label: string
-  subtitle: string
-  bgColor: string
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex flex-col items-start gap-1.5 rounded-2xl p-4 min-h-[130px] active:scale-[0.96] transition-transform w-full"
-      style={{ background: bgColor }}
-    >
-      <div className="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center mb-1">
-        <Icon size={24} className="text-white" strokeWidth={2} />
+      <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: iconColor + '18' }}>
+        <Icon size={18} strokeWidth={2} style={{ color: iconColor }} />
       </div>
-      <span className="text-base font-bold text-white">{label}</span>
-      <span className="text-xs text-white/60">{subtitle}</span>
+      <span className="text-[13px] font-semibold text-white text-left leading-tight">{label}</span>
     </button>
   )
-}
+})
 
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
@@ -199,21 +290,24 @@ export default function Dashboard() {
   const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
   const tt = useT(settings.language)
 
-  const showToast = (msg: string) => {
+  const showToast = useCallback((msg: string) => {
     setToast(msg)
     setTimeout(() => setToast(null), 3000)
-  }
+  }, [])
 
-  const goTest     = () => navigate('/test/1')
-  const goMistakes = () => navigate('/mavzular')
-  const goTopics   = () => navigate('/mavzular')
-  const goAdaptive = () => navigate('/adaptive')
-  const goOctagon  = () => navigate('/octagon')
-  const goProfile  = () => navigate('/profil')
+  const goTest     = useCallback(() => navigate('/test/1'), [navigate])
+  const goMistakes = useCallback(() => navigate('/mavzular'), [navigate])
+  const goTopics   = useCallback(() => navigate('/mavzular'), [navigate])
+  const goAdaptive = useCallback(() => navigate('/adaptive'), [navigate])
+  const goOctagon  = useCallback(() => navigate('/octagon'), [navigate])
+  const goProfile  = useCallback(() => navigate('/profil'), [navigate])
+  const goDarslik  = useCallback(() => navigate('/darslik'), [navigate])
+
   /** Real test modes — TestPage builds the question set based on `mode` */
-  const goMode = (mode: 'random50' | 'exam' | 'tricky' | 'numeric', title: string) => () =>
-    navigate('/test/1', { state: { mode, title } })
-  const goSaved = () => {
+  const goMode = useCallback((mode: 'random50' | 'exam' | 'tricky' | 'numeric', title: string) => () =>
+    navigate('/test/1', { state: { mode, title } }), [navigate])
+
+  const goSaved = useCallback(() => {
     if (savedQuestions.length === 0) {
       showToast(settings.language === 'ru'
         ? "Нет сохранённых вопросов — используйте 📌 в тесте"
@@ -221,64 +315,71 @@ export default function Dashboard() {
       return
     }
     navigate('/test/1', { state: { questionIds: savedQuestions, title: tt('saved') } })
-  }
+  }, [savedQuestions, settings.language, navigate, tt, showToast])
 
   return (
-    <div className="pb-4">
+    <div className="pb-6 safe-bottom">
+      {/* Top bar */}
       <TopBar user={user} displayName={displayName}
         onSettings={() => setShowSettings(true)} onProfile={goProfile}
         onLeaderboard={() => navigate('/reyting')} />
 
+      {/* Progress card */}
       <ProgressCard
         totalCorrect={totalCorrect}
         totalWrong={totalWrong}
         totalAnswered={totalAnswered}
         streak={streak}
-        tt={tt}
+        lang={settings.language}
       />
 
       {/* Barcha testlar + Xatolarni tuzatish */}
-      <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label={tt('allTests')}     iconColor="#60a5fa" onClick={goTest} />
-        <GridCard icon={AlertTriangle} label={tt('fixMistakes')}  iconColor="#f472b6" badge={totalWrong || null} onClick={goMistakes} />
-      </div>
+      <QuickActions
+        totalWrong={totalWrong}
+        lang={settings.language}
+        onAllTests={goTest}
+        onFixMistakes={goMistakes}
+      />
 
-      {/* Promo banner */}
+      {/* Promo banner with countdown */}
       <PromoBanner text={tt('promoText')} />
 
-      {/* Darslik */}
-      <div className="px-4 mb-3">
-        <button
-          onClick={() => navigate('/darslik')}
-          className="flex items-center justify-between rounded-2xl bg-gradient-to-r from-[#0ea5e9] to-[#38bdf8] p-4 w-full active:scale-[0.98] transition-transform"
-        >
-          <div className="text-left">
-            <p className="text-base font-bold text-white">{tt('lessons')}</p>
-            <p className="text-xs text-white/70">{tt('darslikDesc')}</p>
-          </div>
-          <GraduationCap size={32} className="text-white/80 flex-none" />
-        </button>
-      </div>
+      {/* Darslik banner */}
+      <DarslikBanner lang={settings.language} onClick={goDarslik} />
 
       {/* Test yechish + Oktagon */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <FeatureCard icon={Play}  label={tt('adaptive')} subtitle={tt('adaptiveDesc')} bgColor="#22c55e" onClick={goAdaptive} />
-        <FeatureCard icon={Sword} label={tt('octagon')}  subtitle={tt('octagonTitle')} bgColor="#374151" onClick={goOctagon} />
+        <FeatureCard
+          icon={Play}
+          label={tt('adaptive')}
+          subtitle={tt('adaptiveDesc')}
+          bgColor="linear-gradient(135deg, #16a34a, #22c55e)"
+          hoverGlow="rgba(34, 197, 94, 0.15)"
+          onClick={goAdaptive}
+        />
+        <FeatureCard
+          icon={Swords}
+          label={tt('octagon')}
+          subtitle={tt('octagonTitle')}
+          bgColor="linear-gradient(135deg, #374151, #4b5563)"
+          hoverGlow="rgba(107, 114, 128, 0.15)"
+          onClick={goOctagon}
+        />
       </div>
 
-      {/* Grid cards */}
+      {/* Feature grid — 2 columns */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={LayoutGrid} label={tt('topics')} iconColor="#818cf8" onClick={goTopics} />
-        <GridCard icon={Ticket}     label={tt('tickets')} iconColor="#2dd4bf" onClick={() => navigate('/biletlar')} />
+        <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#818cf8" onClick={goTopics} />
+        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#2dd4bf" onClick={() => navigate('/biletlar')} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
         <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#60a5fa" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-        <GridCard icon={GraduationCap} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
+        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={AlertTriangle} label={tt('distracting')} iconColor="#f472b6" onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#f472b6" onClick={goMode('tricky', tt('distracting'))} />
         <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#fbbf24" badge={savedQuestions.length || null} onClick={goSaved} />
       </div>
 
@@ -287,8 +388,9 @@ export default function Dashboard() {
         <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#a78bfa" onClick={goMode('numeric', tt('numeric'))} />
       </div>
 
+      {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-orange-900/90 border border-orange-500/50 text-orange-100 text-xs font-semibold px-4 py-3 rounded-xl text-center z-40">
+        <div className="fixed bottom-20 left-4 right-4 bg-[#1e1007] border border-[#b45309]/50 text-[#fbbf24] text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-2xl animate-fadeIn">
           ⚠️ {toast}
         </div>
       )}

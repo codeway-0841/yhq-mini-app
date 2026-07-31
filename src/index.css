@@ -46,3 +46,20 @@ body[data-theme='light'] video {
 .font-size-small  { font-size: 14px; }
 .font-size-medium { font-size: 16px; }
 .font-size-large  { font-size: 19px; }
+
+/* Dashboard animations */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out;
+}
