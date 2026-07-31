@@ -136,6 +136,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
 }) {
   const { settings } = useAppStore()
   const ru = settings.language === 'ru'
+  const modTitle = ru ? mod.titleRu : mod.title
   const total = mod.lessonCount
   return (
     <div className="rounded-2xl p-4 border border-white/10 relative overflow-hidden"
@@ -148,7 +149,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60">
               {mod.id}-MODUL · {total} TA DARS
             </p>
-            <p className="text-base font-black" style={{ color: mod.color }}>{mod.title}</p>
+            <p className="text-base font-black" style={{ color: mod.color }}>{modTitle}</p>
           </div>
         </div>
         <div className="text-xs font-black px-2.5 py-1 rounded-full"
@@ -205,15 +206,16 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
 export default function Darslik() {
   const navigate = useNavigate()
   const { settings } = useAppStore()
-  const done = useLessonsStore((s) => s.done)
-  const markDone = useLessonsStore((s) => s.markDone)
+  const userId = useAppStore((s) => s.user?.id) ?? '0'
+  const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
   const questions = useQuestionsStore((s) => s.questions)
   const topics = useQuestionsStore((s) => s.topics)
   const [reader, setReader] = useState<{ mod: Mod; idx: number } | null>(null)
   const [toast, setToast] = useState<string | null>(null)
 
   const ru = settings.language === 'ru'
-  const totalDone = Object.values(done).reduce((s, arr) => s + arr.length, 0)
+  const totalDone = Object.values(doneFor).reduce((s, arr) => s + arr.length, 0)
+  const markDone = useLessonsStore((s) => s.markDone)
 
   const showToast = (msg: string) => { setToast(msg); setTimeout(() => setToast(null), 3000) }
 
@@ -225,14 +227,14 @@ export default function Darslik() {
       showToast(ru ? 'Вопросы по этому модулю скоро' : "Bu modul bo'yicha savollar tez kunda")
       return
     }
-    navigate('/test/1', { state: { questionIds: ids, title: `${mod.title} — mashq` } })
+    navigate('/test/1', { state: { questionIds: ids, title: `${ru ? mod.titleRu : mod.title} — ${ru ? 'практика' : 'mashq'}` } })
   }
 
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <button onClick={() => navigate(-1)} aria-label="Orqaga"
+          <button onClick={() => navigate(-1)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
           <GraduationCap size={22} className="text-[#1f6feb]" />
           <h1 className="text-xl font-black">{ru ? 'Учебник' : 'Darslik'}</h1>
@@ -247,7 +249,7 @@ export default function Darslik() {
           <ModulePath
             key={mod.id}
             mod={mod}
-            doneList={done[mod.id] ?? []}
+            doneList={doneFor[mod.id] ?? []}
             onOpenLesson={(i) => setReader({ mod, idx: i })}
           />
         ))}
@@ -264,7 +266,7 @@ export default function Darslik() {
           mod={reader.mod}
           lessonIdx={reader.idx}
           onClose={() => setReader(null)}
-          onDone={(idx) => markDone(reader.mod.id, idx)}
+          onDone={(idx) => markDone(userId, reader.mod.id, idx)}
           onPractice={() => practiceModule(reader.mod)}
         />
       )}

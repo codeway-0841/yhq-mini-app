@@ -8,7 +8,7 @@ import {
   AlertTriangle, Bookmark, Hash, Signpost,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
-import { useT } from '../../shared/i18n'
+import { useT, t } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
@@ -32,8 +32,10 @@ function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
   onProfile: () => void
   onLeaderboard: () => void
 }) {
+  const lang = useAppStore((s) => s.settings.language)
   const name = displayName
-    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : 'Foydalanuvchi')
+    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : t(lang, 'guestName'))
+  const riderLabel = t(lang, 'riderLabel')
   return (
     <div className="flex items-center justify-between px-4 pt-4 pb-2">
       <button onClick={onProfile} className="flex items-center gap-2.5 active:opacity-70 transition-opacity">
@@ -41,7 +43,7 @@ function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
         <div className="text-left">
           <p className="text-sm font-bold leading-tight text-white">{name}</p>
           <span className="text-[10px] font-bold text-green-400">
-            ⚡ YO'LOVCHI ›
+            ⚡ {riderLabel}
           </span>
         </div>
       </button>

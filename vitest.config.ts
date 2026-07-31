@@ -15,6 +15,7 @@ export default defineConfig({
     setupFiles: ['tests/setup.ts'],
     // Integration tests hit a remote Neon DB — network latency can exceed the default 5 s
     testTimeout: 15_000,
+    hookTimeout: 20_000,
     // Network flakes shouldn't fail the suite outright
     retry: 2,
     coverage: {

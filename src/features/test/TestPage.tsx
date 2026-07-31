@@ -121,7 +121,7 @@ export default function TestPage() {
     const unansweredIdx = answers.map((a, i) => (a === null || a === 'unanswered' ? i : -1)).filter((i) => i >= 0)
     if (unansweredIdx.length > 0) {
       setCurrent(unansweredIdx[0])
-      setToast(`${unansweredIdx.length} ta javob berilmagan savol bor`)
+      setToast(`${unansweredIdx.length} ${tt('unansweredCount')}`)
       setTimeout(() => setToast(null), 3000)
     } else {
       setIsFinished(true)
@@ -160,10 +160,10 @@ export default function TestPage() {
       return
     }
     setConfirmExit(true)
-    setToast("Test natijalari saqlanmaydi. Chiqish uchun yana bosing.")
+    setToast(tt('exitConfirm'))
     if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
     exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 3000)
-  }, [answers, isFinished, confirmExit, navigate])
+  }, [answers, isFinished, confirmExit, navigate, tt])
 
   // Warn when closing/reloading the page mid-test
   useEffect(() => {
@@ -192,7 +192,7 @@ export default function TestPage() {
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d]">
         <button onClick={handleBack}
           className={`text-lg px-1 transition-colors ${confirmExit ? 'text-red-400 font-bold' : 'text-[#8b949e] hover:text-white'}`}>
-          {confirmExit ? 'Chiqishda ishonchingiz komilmi?' : '←'}
+          {confirmExit ? '✕' : '←'}
         </button>
         <div className="flex items-center gap-1 bg-[#161b22] px-3 py-1 rounded-xl border border-[#30363d]">
           <span className="text-[#f59e0b]">⏱</span>
@@ -214,7 +214,7 @@ export default function TestPage() {
           </button>
           <button onClick={() => setShowSettings(true)} className="text-[#8b949e] hover:text-white"><Settings size={20} /></button>
           <button
-            onClick={() => { setToast("Xatolik haqidagi xabar qabul qilindi. Rahmat!"); setTimeout(() => setToast(null), 3000) }}
+            onClick={() => { setToast(tt('flagThanks')); setTimeout(() => setToast(null), 3000) }}
             className="text-[#8b949e] hover:text-white">
             <Flag size={20} />
           </button>

@@ -247,11 +247,11 @@ export default function Profil() {
       </div>
 
       <div className="grid grid-cols-3 gap-2 px-4 mb-4">
-        <StatCard label="To'g'ri"  value={totalCorrect} color="text-green-400"  />
-        <StatCard label="Xato"     value={totalWrong}   color="text-red-400"    />
-        <StatCard label="Streak"   value={streak}       color="text-orange-400" />
+        <StatCard label={tt('correctShort')} value={totalCorrect} color="text-green-400"  />
+        <StatCard label={tt('wrongShort')}   value={totalWrong}   color="text-red-400"    />
+        <StatCard label={tt('streakCol')}    value={streak}       color="text-orange-400" />
       </div>
-      <p className="text-center text-xs text-[#8b949e] mb-4">{totalAnswered} ta savol javoblandi</p>
+      <p className="text-center text-xs text-[#8b949e] mb-4">{totalAnswered} {tt('qAnswered')}</p>
 
       <Section title={tt('yourTariff').toUpperCase()}>
         <div className="px-4 py-3 flex items-center gap-3 border-b border-[#30363d]">

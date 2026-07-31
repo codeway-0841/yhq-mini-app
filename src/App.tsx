@@ -90,6 +90,11 @@ export default function App() {
         photo_url:  tgUser.photo_url  ?? '',
       })
         .then(async (data) => {
+          // Akkaunt almashganda lokal no-server ma'lumotlarni tozalash
+          const prevId = useAppStore.getState().user?.id
+          if (prevId && prevId !== data.user.id) {
+            useAppStore.getState().setDisplayName(null)
+          }
           useAppStore.setState({
             user:           data.user,
             tariff:         data.user.tariff,

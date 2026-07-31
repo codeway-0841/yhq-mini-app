@@ -1,28 +1,47 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
+/**
+ * Darslik progress — HAR BIR foydalanuvchi uchun alohida saqlanadi.
+ * Boshqa akkauntga kirganda o'z progressi ko'rsatiladi.
+ */
 interface LessonsState {
-  /** moduleId → o'qib bo'lingan dars indekslari (0-based) */
-  done: Record<number, number[]>
-  markDone: (moduleId: number, lessonIdx: number) => void
-  isDoneClient: (moduleId: number, lessonIdx: number) => boolean
+  /** userId → moduleId → o'qib bo'lingan dars indekslari (0-based) */
+  byUser: Record<string, Record<number, number[]>>
+  markDone: (userId: string, moduleId: number, lessonIdx: number) => void
+  doneFor:  (userId: string, moduleId: number) => number[]
+  totalDoneFor: (userId: string) => number
 }
 
 export const useLessonsStore = create<LessonsState>()(
   persist(
     (set, get) => ({
-      done: {},
+      byUser: {},
 
-      markDone(moduleId, lessonIdx) {
-        const list = get().done[moduleId] ?? []
+      markDone(userId, moduleId, lessonIdx) {
+        if (!userId) return
+        const userMap   = get().byUser[userId] ?? {}
+        const list      = userMap[moduleId] ?? []
         if (list.includes(lessonIdx)) return
         set((s) => ({
-          done: { ...s.done, [moduleId]: [...list, lessonIdx].sort((a, b) => a - b) },
+          byUser: {
+            ...s.byUser,
+            [userId]: {
+              ...userMap,
+              [moduleId]: [...list, lessonIdx].sort((a, b) => a - b),
+            },
+          },
         }))
       },
 
-      isDoneClient(moduleId, lessonIdx) {
-        return (get().done[moduleId] ?? []).includes(lessonIdx)
+      doneFor(userId, moduleId) {
+        return get().byUser[userId]?.[moduleId] ?? []
+      },
+
+      totalDoneFor(userId) {
+        const map = get().byUser[userId]
+        if (!map) return 0
+        return Object.values(map).reduce((s, arr) => s + arr.length, 0)
       },
     }),
     { name: 'yhq-lessons-store' }

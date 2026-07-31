@@ -1,4 +1,6 @@
 import { Volume2, Video, BookOpen, MessageCircle } from 'lucide-react'
+import { useAppStore } from '../../shared/store/useAppStore'
+import { useT } from '../../shared/i18n'
 
 export type Option = { id: string; text: string }
 
@@ -10,6 +12,8 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   answered: boolean
   fontSize: string
 }) {
+  const tt = useT(useAppStore((s) => s.settings.language))
+
   const base = 'w-full text-left rounded-xl border p-3 transition-all active:scale-[0.98]'
   let style  = 'bg-[#161b22] border-[#30363d] text-[#e6edf3]'
   let icon   = null
@@ -42,12 +46,12 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
       {answered && (state === 'correct' || state === 'wrong') && (
         <div className="flex gap-2 mt-1 px-1">
           {[
-            { icon: Volume2,       label: 'Ovozli'   },
-            { icon: Video,         label: 'Video'    },
-            { icon: BookOpen,      label: 'Qoidasi'  },
-            { icon: MessageCircle, label: 'Muhokama' },
+            { icon: Volume2,       label: tt('voiceLesson') },
+            { icon: Video,         label: tt('videoLesson') },
+            { icon: BookOpen,      label: tt('ruleBook')    },
+            { icon: MessageCircle, label: tt('discuss')     },
           ].map(({ icon: Icon, label }) => (
-            <button key={label} disabled title="Tez kunda"
+            <button key={label} disabled title={tt('comingSoon')}
               className="flex items-center gap-1 text-[11px] text-[#8b949e]/60 bg-[#21262d] px-2 py-1 rounded-lg cursor-not-allowed">
               <Icon size={12} />
               {label}
