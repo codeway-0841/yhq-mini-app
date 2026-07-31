@@ -1,13 +1,14 @@
-import { RotateCcw } from 'lucide-react'
+import { RotateCcw, Share2 } from 'lucide-react'
 import DonutChart from './DonutChart'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
 
-export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion }: {
+export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, onShare }: {
   results: QuestionResult[]
   onRetry: () => void
   onFinish: () => void
   onGoToQuestion: (i: number) => void
+  onShare?: (correct: number, total: number) => void
 }) {
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
@@ -57,6 +58,13 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
             <RotateCcw size={16} />
             Qayta
           </button>
+          {onShare && (
+            <button onClick={() => onShare(correct, total)}
+              className="w-14 py-3.5 rounded-xl bg-[#1f6feb] text-white font-semibold flex items-center justify-center"
+              aria-label="Natijani ulashish">
+              <Share2 size={18} />
+            </button>
+          )}
           <button onClick={onFinish}
             className="flex-[2] py-3.5 rounded-xl bg-green-600 text-white font-bold text-base">
             Yakunlash

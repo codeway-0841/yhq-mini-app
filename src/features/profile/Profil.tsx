@@ -5,7 +5,19 @@ import {
   Radio, Star, Share2, Download, ChevronRight, Check,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { openTelegramLink, shareUrl } from '../../lib/telegram'
 import Toggle from '../../shared/components/Toggle'
+
+/** Telegram "Ilovani o'rnatish" — addToHomeScreen API or fallback message */
+function addToHomeScreen(): string {
+  const tg = (window as { Telegram?: { WebApp?: { addToHomeScreen?: () => void } } }).Telegram?.WebApp
+  if (tg?.addToHomeScreen) {
+    tg.addToHomeScreen()
+    return "Ilovani bosh ekranga qo'shing"
+  }
+  return "Bu Telegram versiyasida qo'llab-quvvatlanmaydi"
+}
 
 declare global {
   interface Window {
@@ -87,6 +99,18 @@ export default function Profil() {
   const [copied, setCopied]           = useState(false)
   const [phoneLoading, setPhoneLoading] = useState(false)
   const [phoneError, setPhoneError]   = useState<string | null>(null)
+  const [toast, setToast]             = useState<string | null>(null)
+
+  const showToast = (msg: string) => {
+    setToast(msg)
+    setTimeout(() => setToast(null), 3000)
+  }
+
+  const toggleLanguage = () => {
+    const next = settings.language === 'uz' ? 'ru' as const : 'uz' as const
+    updateSettings({ language: next })
+    useQuestionsStore.getState().setLang(next)
+  }
 
   const name   = user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : 'Foydalanuvchi'
   const userId = user?.id ?? '—'
@@ -186,6 +210,7 @@ export default function Profil() {
           </div>
           {tariff === 'free' && (
             <button type="button"
+              onClick={() => showToast('Premium tez kunda! Hozircha barcha funksiyalar bepul.')}
               className="flex items-center gap-1.5 bg-[#1f6feb] text-white text-xs font-bold px-3 py-1.5 rounded-xl">
               <Zap size={12} />
               Kuchaytirish
@@ -201,13 +226,16 @@ export default function Profil() {
           disabled={phoneLoading || !!user?.phone}
         />
         <Item icon={Lock} iconBg="bg-purple-600" label="Yopiq guruh"
-          right={<span className="text-xs text-[#8b949e]">Qo'shilish</span>} />
+          right={<span className="text-xs text-[#8b949e]">Qo'shilish</span>}
+          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
       </Section>
 
       <Section title="UMUMIY">
         <Item icon={Globe} iconBg="bg-blue-500" label="Ilova tili"
-          right={<span className="text-xs text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>} />
-        <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label="To'lovlar tarixi" />
+          right={<span className="text-xs text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
+          onPress={toggleLanguage} />
+        <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label="To'lovlar tarixi"
+          onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
         <Item
           icon={WifiOff} iconBg="bg-green-500" label="Oflayn rejim"
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
@@ -234,14 +262,25 @@ export default function Profil() {
       </Section>
 
       <Section title="YORDAM">
-        <Item icon={MessageCircle} iconBg="bg-green-500"  label="Biz bilan bog'lanish" />
-        <Item icon={Radio}         iconBg="bg-blue-500"   label="Telegram kanalimiz" />
-        <Item icon={Star}          iconBg="bg-orange-400" label="Ilovani baholash" />
-        <Item icon={Share2}        iconBg="bg-pink-500"   label="Ulashish" />
-        <Item icon={Download}      iconBg="bg-blue-400"   label="Ilovani o'rnatish" />
+        <Item icon={MessageCircle} iconBg="bg-green-500"  label="Biz bilan bog'lanish"
+          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+        <Item icon={Radio}         iconBg="bg-blue-500"   label="Telegram kanalimiz"
+          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+        <Item icon={Star}          iconBg="bg-orange-400" label="Ilovani baholash"
+          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+        <Item icon={Share2}        iconBg="bg-pink-500"   label="Ulashish"
+          onPress={() => shareUrl('https://t.me/osonprava_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
+        <Item icon={Download}      iconBg="bg-blue-400"   label="Ilovani o'rnatish"
+          onPress={() => showToast(addToHomeScreen())} />
       </Section>
 
-      <p className="text-center text-[10px] text-[#8b949e] mt-2">v1.0.0 · Build 2025.07</p>
+      {toast && (
+        <div className="fixed bottom-20 left-4 right-4 bg-[#1f6feb] text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg">
+          {toast}
+        </div>
+      )}
+
+      <p className="text-center text-[10px] text-[#8b949e] mt-2">v1.1.0 · Build 2026.07</p>
     </div>
   )
 }

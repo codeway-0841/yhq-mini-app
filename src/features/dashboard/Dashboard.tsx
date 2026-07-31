@@ -189,7 +189,13 @@ function FeatureCard({ icon: Icon, label, subtitle, bgColor, onClick }: {
 export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
+  const [toast, setToast] = useState<string | null>(null)
   const { user, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+
+  const showToast = (msg: string) => {
+    setToast(msg)
+    setTimeout(() => setToast(null), 3000)
+  }
 
   const goTest     = () => navigate('/test/1')
   const goMistakes = () => navigate('/mavzular')
@@ -197,8 +203,14 @@ export default function Dashboard() {
   const goAdaptive = () => navigate('/adaptive')
   const goOctagon  = () => navigate('/octagon')
   const goProfile  = () => navigate('/profil')
-  const goSaved    = () => {
-    if (savedQuestions.length === 0) return
+  /** Real test modes — TestPage builds the question set based on `mode` */
+  const goMode = (mode: 'random50' | 'exam' | 'tricky' | 'numeric', title: string) => () =>
+    navigate('/test/1', { state: { mode, title } })
+  const goSaved = () => {
+    if (savedQuestions.length === 0) {
+      showToast("Hali saqlangan savollar yo'q — testda 📌 tugmasini bosing")
+      return
+    }
     navigate('/test/1', { state: { questionIds: savedQuestions, title: 'Saqlanganlar' } })
   }
 
@@ -250,19 +262,25 @@ export default function Dashboard() {
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label="50/100 talik" iconColor="#60a5fa" onClick={goTest} />
-        <GridCard icon={GraduationCap} label="Real imtihon" iconColor="#4ade80" onClick={goTest} />
+        <GridCard icon={ListChecks}    label="50 talik"     iconColor="#60a5fa" onClick={goMode('random50', '50 talik test')} />
+        <GridCard icon={GraduationCap} label="Real imtihon" iconColor="#4ade80" onClick={goMode('exam', 'Real imtihon — 40 savol / 30 daqiqa')} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={AlertTriangle} label="Chalg'ituvchi" iconColor="#f472b6" onClick={goTest} />
+        <GridCard icon={AlertTriangle} label="Chalg'ituvchi" iconColor="#f472b6" onClick={goMode('tricky', "Chalg'ituvchi savollar — 30 ta tasodifiy")} />
         <GridCard icon={Bookmark}      label="Saqlanganlar"  iconColor="#fbbf24" badge={savedQuestions.length || null} onClick={goSaved} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4">
         <GridCard icon={Signpost}      label="Yo'l belgilari"   iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label="Raqamli savollar" iconColor="#a78bfa" onClick={goTest} />
+        <GridCard icon={Hash}          label="Raqamli savollar" iconColor="#a78bfa" onClick={goMode('numeric', 'Raqamli savollar')} />
       </div>
+
+      {toast && (
+        <div className="fixed bottom-20 left-4 right-4 bg-orange-900/90 border border-orange-500/50 text-orange-100 text-xs font-semibold px-4 py-3 rounded-xl text-center z-40">
+          ⚠️ {toast}
+        </div>
+      )}
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
     </div>

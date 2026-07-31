@@ -9,6 +9,37 @@ const bot = new Bot(token)
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
+// ── Self-onboarding: set commands/description/menu button once per cold start ──
+let profileReady: Promise<unknown> | null = null
+function ensureProfile(): Promise<unknown> {
+  profileReady ??= Promise.all([
+    bot.api.setMyCommands([
+      { command: 'start',       description: "Ilovani ochish" },
+      { command: 'stats',       description: "Statistikangiz" },
+      { command: 'daily',       description: "Bugungi savol" },
+      { command: 'random',      description: "Tasodifiy savol" },
+      { command: 'leaderboard', description: "Top-10 reyting" },
+      { command: 'help',        description: "Yordam" },
+      { command: 'about',       description: "Ilova haqida" },
+    ]),
+    bot.api.setMyDescription(
+      "YHQ Test — Yo'l harakati qoidalari bo'yicha imtihonga tayyorlanish.\n\n" +
+      "• Biletlar va mavzular bo'yicha testlar\n" +
+      "• Xatolar ustida ishlash\n" +
+      "• Yo'l belgilari va darslik\n" +
+      "• Oktagon — do'stlar bilan bellashuv\n\n" +
+      "Boshlash uchun /start bosing!"
+    ),
+    bot.api.setChatMenuButton({
+      menu_button: { type: 'web_app', text: 'YHQ Test', web_app: { url: APP_URL } },
+    }),
+  ]).catch((err) => {
+    profileReady = null   // retry next time if it failed
+    console.error('[bot] ensureProfile failed:', err?.message ?? err)
+  })
+  return profileReady
+}
+
 // ── Global error handler — a failing handler must never crash the function ──
 bot.catch((err) => {
   console.error('[bot]', err.message, err.ctx?.update?.update_id)
@@ -16,6 +47,7 @@ bot.catch((err) => {
 
 // ── /start ──────────────────────────────────────────────────────────────────
 bot.command('start', async (ctx) => {
+  void ensureProfile()   // fire-and-forget — don't block the reply
   await ctx.reply(
     "Xush kelibsiz! 🚗\n\nYo'l harakati qoidalari bo'yicha imtihonga tayyorlaning: biletlar, mavzular, yo'l belgilari va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
@@ -28,6 +60,7 @@ bot.command('help', async (ctx) => {
     'Mavjud komandalar:\n\n' +
     '/start — Ilovani ochish\n' +
     '/stats — Statistikangiz\n' +
+    '/daily — Bugungi savol\n' +
     '/random — Tasodifiy savol\n' +
     '/leaderboard — Eng yaxshi 10 talik reyting\n' +
     '/about — Ilova haqida\n\n' +
@@ -84,6 +117,41 @@ bot.command('stats', async (ctx) => {
   } catch (err) {
     console.error('[/stats]', err)
     await ctx.reply("Statistikani yuklab bo'lmadi. Birozdan so'ng qayta urinib ko'ring.")
+  }
+})
+
+// ── /daily — deterministic daily question (same for everyone, changes daily) ──
+bot.command('daily', async (ctx) => {
+  try {
+    const { db }        = await import('../server/db/connection')
+    const { questions } = await import('../server/schema')
+
+    const rows = await db.select().from(questions)
+    if (rows.length === 0) {
+      await ctx.reply('Hozircha savollar mavjud emas.')
+      return
+    }
+
+    // Deterministic pick by day-of-year so the whole community gets the same question
+    const dayOfYear = Math.floor(Date.now() / 86_400_000)
+    const q = rows[dayOfYear % rows.length]
+
+    const options = Object.entries(q.optionsUz as Record<string, string>)
+    const labels  = options.map(([id]) => id)
+    const correctIndex = labels.indexOf(q.correctAnswer)
+
+    await ctx.replyWithPoll(
+      `📅 Bugungi savol (${new Date().toLocaleDateString('uz-UZ')}):\n\n${q.questionUz}`,
+      options.map(([, text]) => text.slice(0, 100)),
+      {
+        type: 'quiz',
+        is_anonymous: true,
+        correct_option_ids: [correctIndex >= 0 ? correctIndex : 0],
+      }
+    )
+  } catch (err) {
+    console.error('[/daily]', err)
+    await ctx.reply("Savolni yuklab bo'lmadi. Birozdan so'ng qayta urinib ko'ring.")
   }
 })
 

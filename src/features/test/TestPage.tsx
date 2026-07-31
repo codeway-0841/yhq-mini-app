@@ -19,14 +19,26 @@ export default function TestPage() {
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
+  const mode = (location.state?.mode as 'random50' | 'exam' | 'tricky' | 'numeric' | undefined) ?? null
+
   const activeQuestions = useMemo(() => {
     const ids = location.state?.questionIds
     if (ids?.length) {
       const idSet = new Set(ids)
       return questions.filter((q) => idSet.has(q.id))
     }
-    return questions
-  }, [location.state?.questionIds, questions])
+    const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
+    switch (mode) {
+      case 'exam':     return shuffled().slice(0, Math.min(40, questions.length))
+      case 'random50': return shuffled().slice(0, Math.min(50, questions.length))
+      case 'tricky':   return shuffled().slice(0, Math.min(30, questions.length))
+      case 'numeric': {
+        const numeric = questions.filter((q) => /\d/.test(q.text))
+        return numeric.length > 0 ? numeric : questions
+      }
+      default:         return questions
+    }
+  }, [location.state?.questionIds, mode, questions])
 
   const startIndex = Math.min(
     Math.max(0, (Number(id) || 1) - 1),
@@ -40,6 +52,8 @@ export default function TestPage() {
   const [showResults, setShowResults]         = useState(false)
   const [isFinished, setIsFinished]           = useState(false)
   const [toast, setToast]                     = useState<string | null>(null)
+  const [zoomed, setZoomed]                   = useState(false)
+  const [confirmExit, setConfirmExit]         = useState(false)
 
   const q         = activeQuestions[current]
   const fontSize  = settings?.fontSize || 'medium'
@@ -52,7 +66,9 @@ export default function TestPage() {
     setShowResults(true)
   }, [])
 
-  const timer = useTimer(handleTimeUp, location.key)
+  // Exam mode: 40 questions / 30 minutes — like the real test
+  const totalSeconds = mode === 'exam' ? 30 * 60 : 25 * 60
+  const timer = useTimer(handleTimeUp, location.key, totalSeconds)
 
   useEffect(() => {
     setCurrent(startIndex)
@@ -124,6 +140,38 @@ export default function TestPage() {
   const handleFinishFromModal = useCallback(() => { setShowResults(false); navigate('/') }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
+  // Share the result — ResultsModal passes its computed stats
+  const handleShareResult = useCallback((correct: number, total: number) => {
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0
+    shareUrl(
+      'https://t.me/osonprava_bot',
+      `YHQ test men natijam: ${percent}% (${correct}/${total}). Siz ham sinab ko'ring!`
+    )
+  }, [])
+
+  // Exit confirm: first tap shows the warning, second tap within 3 s really exits
+  const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const handleBack = useCallback(() => {
+    const answered = answers.filter((a) => a !== null && a !== 'unanswered').length
+    if (isFinished || answered === 0 || confirmExit) {
+      navigate(-1)
+      return
+    }
+    setConfirmExit(true)
+    setToast("Test natijalari saqlanmaydi. Chiqish uchun yana bosing.")
+    if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
+    exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 3000)
+  }, [answers, isFinished, confirmExit, navigate])
+
+  // Warn when closing/reloading the page mid-test
+  useEffect(() => {
+    const answeredCount = answers.filter((a) => a !== null && a !== 'unanswered').length
+    if (answeredCount === 0 || isFinished) return
+    const handler = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = '' }
+    window.addEventListener('beforeunload', handler)
+    return () => window.removeEventListener('beforeunload', handler)
+  }, [answers, isFinished])
+
   if (!q) return (
     <div className="flex items-center justify-center min-h-screen text-[#8b949e]">Savol topilmadi</div>
   )
@@ -140,7 +188,10 @@ export default function TestPage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0d1117]">
       <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d]">
-        <button onClick={() => navigate(-1)} className="text-[#8b949e] hover:text-white text-lg px-1">←</button>
+        <button onClick={handleBack}
+          className={`text-lg px-1 transition-colors ${confirmExit ? 'text-red-400 font-bold' : 'text-[#8b949e] hover:text-white'}`}>
+          {confirmExit ? 'Chiqishda ishonchingiz komilmi?' : '←'}
+        </button>
         <div className="flex items-center gap-1 bg-[#161b22] px-3 py-1 rounded-xl border border-[#30363d]">
           <span className="text-[#f59e0b]">⏱</span>
           <span className="font-mono font-bold text-sm text-white">{timer}</span>
@@ -187,7 +238,8 @@ export default function TestPage() {
           {q.text}
         </p>
         {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-[#30363d]">
+          <div className="rounded-xl overflow-hidden mb-4 border border-[#30363d] cursor-zoom-in"
+            onClick={() => setZoomed(true)}>
             <img src={q.image} alt="savol" className="w-full object-cover max-h-52" />
           </div>
         )}
@@ -220,9 +272,19 @@ export default function TestPage() {
 
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
-          onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
+          onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion}
+          onShare={handleShareResult} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+
+      {/* Full-screen image zoom */}
+      {zoomed && q.image && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-2 cursor-zoom-out"
+          onClick={() => setZoomed(false)}>
+          <img src={q.image} alt="savol" className="max-w-full max-h-full object-contain" />
+          <span className="absolute top-4 right-4 text-white/70 text-2xl px-2">✕</span>
+        </div>
+      )}
     </div>
   )
 }

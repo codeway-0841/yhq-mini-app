@@ -51,6 +51,7 @@
     "db:migrate": "tsx server/migrate.ts",
     "db:studio": "drizzle-kit studio",
     "db:seed": "tsx server/seed.ts",
+    "bot:profile": "tsx server/set-bot-profile.ts",
     "test": "vitest run",
     "test:unit": "vitest run tests/unit",
     "test:integration": "vitest run tests/integration",

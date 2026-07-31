@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 /** Countdown timer formatted as mm:ss. Restarts when `resetKey` changes. */
-export function useTimer(onTimeUp: () => void, resetKey: unknown): string {
-  const [seconds, setSeconds] = useState(25 * 60)
+export function useTimer(onTimeUp: () => void, resetKey: unknown, totalSeconds = 25 * 60): string {
+  const [seconds, setSeconds] = useState(totalSeconds)
   const onTimeUpRef = useRef(onTimeUp)
   const firedRef    = useRef(false)
 
@@ -10,7 +10,7 @@ export function useTimer(onTimeUp: () => void, resetKey: unknown): string {
 
   useEffect(() => {
     firedRef.current = false
-    setSeconds(25 * 60)
+    setSeconds(totalSeconds)
     const id = setInterval(() => {
       setSeconds((s) => {
         if (s <= 1) {
