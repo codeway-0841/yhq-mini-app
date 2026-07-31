@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { X } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../shared/data'
 
@@ -89,12 +90,17 @@ function SignsGrid({ category, onBack, onSignSelect }: {
 export default function Belgilar() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
   const [selectedSign, setSelectedSign]         = useState<Sign | null>(null)
+  const navigate = useNavigate()
 
   return (
     <div className="px-4 pt-4 pb-6">
       {!selectedCategory && (
         <>
-          <h1 className="text-xl font-black mb-4">Yo'l belgilari</h1>
+          <div className="flex items-center gap-2 mb-4">
+            <button onClick={() => navigate(-1)} aria-label="Orqaga"
+              className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+            <h1 className="text-xl font-black">Yo'l belgilari</h1>
+          </div>
           <CategoryGrid onSelect={setSelectedCategory} />
         </>
       )}

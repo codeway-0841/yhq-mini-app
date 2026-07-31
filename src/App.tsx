@@ -1,9 +1,8 @@
 import { useEffect, lazy, Suspense } from 'react'
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { api } from './lib/api'
-import BottomNav  from './components/BottomNav'
 import PageLoader from './components/PageLoader'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
@@ -38,12 +37,9 @@ type TelegramWindow = Window & {
 }
 
 function Layout() {
-  const location = useLocation()
-  const isTest   = location.pathname.startsWith('/test')
-
   return (
     <div className="flex flex-col min-h-screen bg-[#0d1117] text-[#e6edf3]">
-      <div className={`flex-1 overflow-y-auto ${isTest ? '' : 'pb-20'}`}>
+      <div className="flex-1 overflow-y-auto pb-4">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />
@@ -60,7 +56,6 @@ function Layout() {
           </Routes>
         </Suspense>
       </div>
-      {!isTest && <BottomNav />}
     </div>
   )
 }

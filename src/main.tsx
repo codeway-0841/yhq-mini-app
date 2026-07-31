@@ -5,6 +5,12 @@ import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
 import './index.css'
 
+// Telegram WebView dastlabki yuklanishda #tgWebAppData=... hashini qo'shishi mumkin —
+// HashRouter uni noto'g'ri sahifa deb o'qiydi (404 flash). Routerdan oldin tozalaymiz.
+if (window.location.hash.includes('tgWebAppData')) {
+  window.history.replaceState(null, '', window.location.pathname + window.location.search)
+}
+
 const rootEl = document.getElementById('root')
 if (rootEl) {
   ReactDOM.createRoot(rootEl).render(

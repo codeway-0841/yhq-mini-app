@@ -19,6 +19,16 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
         checked ? 'bg-[#1f6feb]' : 'bg-[#30363d]'
       }`}
     >
+      {/* ON / OFF matni */}
+      <span className={`absolute inset-0 flex items-center ${
+        checked ? 'justify-start pl-1.5' : 'justify-end pr-1'
+      }`}>
+        <span className={`font-black uppercase text-white/90 ${
+          size === 'sm' ? 'text-[6px]' : 'text-[7px]'
+        }`}>
+          {checked ? 'ON' : 'OFF'}
+        </span>
+      </span>
       <span
         className={`absolute ${thumb} bg-white rounded-full shadow transition-transform ${
           checked

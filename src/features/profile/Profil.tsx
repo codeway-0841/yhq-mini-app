@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, MessageCircle,
@@ -91,6 +92,7 @@ function StatCard({ label, value, color }: { label: string; value: number; color
 }
 
 export default function Profil() {
+  const navigate = useNavigate()
   const {
     user, settings, updateSettings, updatePhone, resetProgress, tariff,
     totalCorrect, totalWrong, totalAnswered, streak, syncFromServer,
@@ -177,6 +179,10 @@ export default function Profil() {
 
   return (
     <div className="pt-4 pb-8">
+      <div className="px-4">
+        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+      </div>
       <div className="flex flex-col items-center gap-2 mb-6 px-4">
         <Avatar name={name} photoUrl={user?.photoUrl} />
         <p className="text-lg font-bold">{name}</p>

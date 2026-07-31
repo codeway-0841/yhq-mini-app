@@ -9,6 +9,23 @@ const TABS = [
   { id: 'errors', label: 'Xatolar'  },
 ]
 
+/** Deterministik (seed'li) aralashtirish — biletlar har doim bir xil bo'lib qoladi */
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const a = [...arr]
+  let s = seed
+  const rnd = () => {
+    s |= 0; s = (s + 0x6D2B79F5) | 0
+    let t = Math.imul(s ^ (s >>> 15), 1 | s)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 export default function Biletlar() {
   const [tab, setTab] = useState('all')
   const navigate      = useNavigate()
@@ -17,9 +34,11 @@ export default function Biletlar() {
 
   const tickets = useMemo(() => {
     if (!questions.length) return []
-    const count = Math.floor(questions.length / TICKET_SIZE)
+    // 300 savol RANDOM tartibda biletlarga taqsimlanadi (seed bilan barqaror)
+    const shuffled = seededShuffle(questions, 42)
+    const count = Math.floor(shuffled.length / TICKET_SIZE)
     return Array.from({ length: count }, (_, i) => {
-      const ids = questions.slice(i * TICKET_SIZE, (i + 1) * TICKET_SIZE).map((q) => q.id)
+      const ids = shuffled.slice(i * TICKET_SIZE, (i + 1) * TICKET_SIZE).map((q) => q.id)
       return { id: i + 1, title: `${i + 1} - bilet`, questionCount: ids.length, questionIds: ids }
     })
   }, [questions])
@@ -31,14 +50,19 @@ export default function Biletlar() {
   })
 
   const handleTicket = (ticket: typeof tickets[0]) => {
-    navigate(`/test/${ticket.id}`, {
-      state: { questionIds: ticket.questionIds, title: ticket.title, ticketId: ticket.id },
+    // Har doim 1-savoldan boshlanadi (avval /test/:id noto'g'ri savolni ochardi)
+    navigate('/test/1', {
+      state: { questionIds: ticket.questionIds, title: ticket.title },
     })
   }
 
   return (
     <div className="px-4 pt-4 pb-6">
-      <h1 className="text-xl font-black mb-4">Biletlar</h1>
+      <div className="flex items-center gap-2 mb-4">
+        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+        <h1 className="text-xl font-black">Biletlar</h1>
+      </div>
 
       <div className="flex gap-2 mb-4 bg-[#161b22] p-1 rounded-xl">
         {TABS.map((t) => (

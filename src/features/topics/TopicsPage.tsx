@@ -36,8 +36,12 @@ export default function TopicsPage() {
   }
 
   return (
-    <div className="px-4 pt-4 pb-24">
-      <h1 className="text-xl font-black mb-4">{tt('topics')}</h1>
+    <div className="px-4 pt-4 pb-6">
+      <div className="flex items-center gap-2 mb-4">
+        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+        <h1 className="text-xl font-black">{tt('topics')}</h1>
+      </div>
 
       {wrongCount > 0 && (
         <button onClick={startMistakes}

@@ -181,7 +181,11 @@ export default function Darslik() {
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center justify-between mb-4">
-        <h1 className="text-xl font-black">Darslik</h1>
+        <div className="flex items-center gap-2">
+          <button onClick={() => navigate(-1)} aria-label="Orqaga"
+            className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+          <h1 className="text-xl font-black">Darslik</h1>
+        </div>
         <span className="text-sm font-bold text-[#8b949e] bg-[#21262d] px-3 py-1 rounded-full">
           🎓 {totalDone}/{TOTAL_LESSONS}
         </span>

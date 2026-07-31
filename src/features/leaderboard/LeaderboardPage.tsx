@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Trophy } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -42,6 +43,7 @@ function InitialAvatar({ name }: { name: string }) {
 
 export default function LeaderboardPage() {
   const { settings, user } = useAppStore()
+  const navigate = useNavigate()
   const tt = useT(settings.language)
 
   const [entries, setEntries] = useState<Entry[] | null>(null)
@@ -66,6 +68,8 @@ export default function LeaderboardPage() {
   return (
     <div className="pb-24">
       <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-[#30363d]">
+        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
         <Trophy size={20} className="text-yellow-400" />
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>
       </div>
