@@ -3,6 +3,7 @@ import { X } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../lib/telegram'
+import { useT } from '../lib/i18n'
 import Toggle from './Toggle'
 
 function Row({ label, children }: { label: string; children: ReactNode }) {
@@ -41,6 +42,7 @@ function ChipGroup({ options, value, onChange }: {
 export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const { settings, updateSettings } = useAppStore()
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
+  const tt = useT(local.language)
 
   const set = <K extends keyof ApiSettings>(key: K, val: ApiSettings[K]) =>
     setLocal((s) => ({ ...s, [key]: val }))
@@ -58,53 +60,53 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
       <div className="relative w-full bg-[#161b22] rounded-t-2xl border-t border-[#30363d] p-5 pb-8 max-h-[85vh] overflow-y-auto">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-base font-bold">Sozlamalar</h2>
-          <button onClick={onClose} className="text-[#8b949e] hover:text-white">
+          <h2 className="text-base font-bold">{tt('settingsTitle')}</h2>
+          <button onClick={onClose} aria-label={tt('settingsTitle')} className="text-[#8b949e] hover:text-white">
             <X size={20} />
           </button>
         </div>
 
-        <Row label="To'g'ri javobda avtomatik o'tish">
-          <Toggle label="To'g'ri javobda avtomatik o'tish" checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
+        <Row label={tt('autoNextCorrect')}>
+          <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
         </Row>
-        <Row label="Xato javobda avtomatik o'tish">
-          <Toggle label="Xato javobda avtomatik o'tish" checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
+        <Row label={tt('autoNextWrong')}>
+          <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
         </Row>
-        <Row label="Animatsiyasiz o'tish">
-          <Toggle label="Animatsiyasiz o'tish" checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
+        <Row label={tt('noAnimation')}>
+          <Toggle label={tt('noAnimation')} checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
         </Row>
-        <Row label="Variantlarni aralashtirish">
-          <Toggle label="Variantlarni aralashtirish" checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
+        <Row label={tt('shuffleOptions')}>
+          <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
         </Row>
-        <Row label="Shrift o'lchami">
+        <Row label={tt('fontSize')}>
           <ChipGroup
             value={local.fontSize}
             onChange={(v) => set('fontSize', v as ApiSettings['fontSize'])}
             options={[
-              { label: 'Kichik',   value: 'small'  },
-              { label: "O'rtacha", value: 'medium' },
-              { label: 'Katta',    value: 'large'  },
+              { label: tt('fontSmall'),  value: 'small'  },
+              { label: tt('fontMedium'), value: 'medium' },
+              { label: tt('fontLarge'),  value: 'large'  },
             ]}
           />
         </Row>
-        <Row label="Shrift uslubi">
+        <Row label={tt('fontStyle')}>
           <ChipGroup
             value={local.fontStyle}
             onChange={(v) => set('fontStyle', v as ApiSettings['fontStyle'])}
             options={[
-              { label: 'Standart', value: 'default' },
-              { label: 'Serif',    value: 'serif'   },
-              { label: 'Mono',     value: 'mono'    },
+              { label: tt('fontDefault'), value: 'default' },
+              { label: tt('fontSerif'),   value: 'serif'   },
+              { label: tt('fontMono'),    value: 'mono'    },
             ]}
           />
         </Row>
-        <Row label="Ilova tili">
+        <Row label={tt('langLabel')}>
           <ChipGroup
             value={local.language}
             onChange={(v) => set('language', v as ApiSettings['language'])}
             options={[
-              { label: "O'zbekcha", value: 'uz' },
-              { label: 'Русский',   value: 'ru' },
+              { label: tt('uzLang'), value: 'uz' },
+              { label: tt('ruLang'), value: 'ru' },
             ]}
           />
         </Row>
@@ -112,14 +114,14 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
         <button
           onClick={() => openTelegramLink('https://t.me/osonprava_bot')}
           className="mt-1 text-sm text-[#8b949e] hover:text-white underline underline-offset-2">
-          Xatolik haqida xabar berish
+          {tt('reportIssue')}
         </button>
 
         <button
           onClick={save}
           className="mt-5 w-full py-3.5 rounded-xl bg-green-600 hover:bg-green-500 text-white font-bold text-base transition-colors"
         >
-          Saqlash
+          {tt('saveBtn')}
         </button>
       </div>
     </div>

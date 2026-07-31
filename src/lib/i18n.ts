@@ -42,6 +42,14 @@ const UZ = {
   resetProgress: "Progresni qayta boshlash", syncServer: "Serverdan yangilash",
   contactUs: "Biz bilan bog'lanish", tgChannel: "Telegram kanalimiz",
   rateApp: "Ilovani baholash", shareApp: "Ulashish", installApp: "Ilovani o'rnatish",
+  // Settings modal
+  settingsTitle: "Sozlamalar", autoNextCorrect: "To'g'ri javobda avtomatik o'tish",
+  autoNextWrong: "Xato javobda avtomatik o'tish", noAnimation: "Animatsiyasiz o'tish",
+  shuffleOptions: "Variantlarni aralashtirish", fontSize: "Shrift o'lchami",
+  fontStyle: "Shrift uslubi", fontSmall: "Kichik", fontMedium: "O'rtacha",
+  fontLarge: "Katta", fontDefault: "Standart", fontSerif: "Serif", fontMono: "Mono",
+  reportIssue: "Xatolik haqida xabar berish", saveBtn: "Saqlash",
+  uzLang: "O'zbekcha", ruLang: "Русский",
 } as const
 
 type Keys = keyof typeof UZ
@@ -81,6 +89,13 @@ const RU: Record<Keys, string> = {
   resetProgress: "Сбросить прогресс", syncServer: "Обновить с сервера",
   contactUs: "Связаться с нами", tgChannel: "Наш Telegram канал",
   rateApp: "Оценить приложение", shareApp: "Поделиться", installApp: "Установить приложение",
+  settingsTitle: "Настройки", autoNextCorrect: "Автопереход при верном ответе",
+  autoNextWrong: "Автопереход при ошибке", noAnimation: "Без анимации",
+  shuffleOptions: "Перемешивать варианты", fontSize: "Размер шрифта",
+  fontStyle: "Стиль шрифта", fontSmall: "Мелкий", fontMedium: "Средний",
+  fontLarge: "Крупный", fontDefault: "Стандарт", fontSerif: "Serif", fontMono: "Mono",
+  reportIssue: "Сообщить об ошибке", saveBtn: "Сохранить",
+  uzLang: "O'zbekcha", ruLang: "Русский",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
