@@ -12,21 +12,50 @@ const links = [
 
 export default function BottomNav() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-[#161b22] border-t border-[#30363d] safe-bottom z-50">
-      <div className="flex items-center justify-around h-14">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 safe-bottom"
+      style={{
+        background: 'linear-gradient(to top, #0d1117 80%, rgba(13,17,23,0.92))',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+      }}
+    >
+      {/* Top separator line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#30363d] to-transparent" />
+
+      <div className="flex items-end justify-around px-1 pt-1.5 pb-2">
         {links.map(({ to, icon: Icon, label }) => (
           <NavLink
             key={to}
             to={to}
             end={to === '/'}
             className={({ isActive }) =>
-              `flex flex-col items-center gap-0.5 px-2 py-1 text-[10px] font-medium transition-colors ${
-                isActive ? 'text-[#1f6feb]' : 'text-[#8b949e]'
+              `relative flex flex-col items-center gap-0.5 px-2 py-1 text-[10px] font-semibold transition-all duration-200 ${
+                isActive
+                  ? 'text-[#58cc02]'
+                  : 'text-[#6e7681] active:scale-90'
               }`
             }
           >
-            <Icon size={20} strokeWidth={1.8} />
-            <span>{label}</span>
+            {({ isActive }) => (
+              <>
+                {/* Active indicator dot */}
+                {isActive && (
+                  <span
+                    className="absolute -top-1.5 w-1 h-1 rounded-full bg-[#58cc02]"
+                    style={{ boxShadow: '0 0 6px 1px rgba(88,204,2,0.5)' }}
+                  />
+                )}
+                <Icon
+                  size={22}
+                  strokeWidth={isActive ? 2.2 : 1.6}
+                  fill={isActive ? 'currentColor' : 'none'}
+                  style={isActive ? {
+                    filter: 'drop-shadow(0 0 4px rgba(88,204,2,0.4))'
+                  } : undefined}
+                />
+                <span className={isActive ? 'font-bold' : ''}>{label}</span>
+              </>
+            )}
           </NavLink>
         ))}
       </div>
