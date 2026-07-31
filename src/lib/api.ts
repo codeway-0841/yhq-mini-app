@@ -1,12 +1,33 @@
 const BASE = '/api'
 const TIMEOUT_MS = 8000
 
+/** Telegram WebApp initData — sent with every request for server-side verification. */
+function getInitData(): string | undefined {
+  const tg = (window as { Telegram?: { WebApp?: { initData?: string } } }).Telegram?.WebApp
+  return tg?.initData || undefined
+}
+
+/**
+ * Timeout signal compatible with older Telegram WebViews
+ * (AbortSignal.timeout is not available everywhere).
+ */
+function timeoutSignal(ms: number): AbortSignal {
+  const controller = new AbortController()
+  setTimeout(() => controller.abort(), ms)
+  return controller.signal
+}
+
 async function request<T>(method: string, path: string, body?: unknown): Promise<T> {
+  const headers: Record<string, string> = {}
+  if (body) headers['Content-Type'] = 'application/json'
+  const initData = getInitData()
+  if (initData) headers['x-telegram-init-data'] = initData
+
   const res = await fetch(`${BASE}${path}`, {
     method,
-    headers: body ? { 'Content-Type': 'application/json' } : {},
+    headers,
     body: body ? JSON.stringify(body) : undefined,
-    signal: AbortSignal.timeout(TIMEOUT_MS),
+    signal: timeoutSignal(TIMEOUT_MS),
   })
   if (!res.ok) {
     const text = await res.text().catch(() => res.statusText)
@@ -35,6 +56,7 @@ export interface ApiProgress {
   totalWrong: number
   totalAnswered: number
   streak: number
+  /** Wrong-answer counts keyed by question id. */
   wrongByTicket: Record<string, number>
 }
 
@@ -103,8 +125,8 @@ export const api = {
   getProfile: (userId: string) =>
     request<FullProfile>('GET', `/profile/${uid(userId)}`),
 
-  postResult: (userId: string, correct: boolean, ticketId?: number) =>
-    request<{ ok: true }>('POST', `/progress/${uid(userId)}/result`, { correct, ticketId }),
+  postResult: (userId: string, correct: boolean, questionId?: number) =>
+    request<{ ok: true }>('POST', `/progress/${uid(userId)}/result`, { correct, questionId }),
 
   patchProgress: (userId: string, patch: Partial<ApiProgress>) =>
     request<{ ok: true }>('PATCH', `/progress/${uid(userId)}`, patch),

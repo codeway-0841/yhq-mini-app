@@ -8,6 +8,8 @@ import {
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
+import { haptics } from '../../lib/haptics'
+import { shareUrl } from '../../lib/telegram'
 
 function useTimer(onTimeUp: () => void, resetKey: unknown): string {
   const [seconds, setSeconds] = useState(25 * 60)
@@ -220,8 +222,8 @@ function OptionButton({ option, state, onSelect, answered, fontSize }: {
             { icon: BookOpen,      label: 'Qoidasi'  },
             { icon: MessageCircle, label: 'Muhokama' },
           ].map(({ icon: Icon, label }) => (
-            <button key={label}
-              className="flex items-center gap-1 text-[11px] text-[#8b949e] bg-[#21262d] px-2 py-1 rounded-lg hover:text-white transition-colors">
+            <button key={label} disabled title="Tez kunda"
+              className="flex items-center gap-1 text-[11px] text-[#8b949e]/60 bg-[#21262d] px-2 py-1 rounded-lg cursor-not-allowed">
               <Icon size={12} />
               {label}
             </button>
@@ -299,18 +301,18 @@ export default function TestPage() {
   }, [selected, correctId])
 
   const handleSelect = useCallback((optId: string) => {
-    if (selected || !correctId) return
+    if (selected || !correctId || !q) return
     const isCorrect = optId === correctId
     setSelectedHistory((prev) => { const next = [...prev]; next[current] = optId; return next })
     setAnswers((prev) => { const next = [...prev]; next[current] = isCorrect ? 'correct' : 'wrong'; return next })
-    const ticketId = location.state?.ticketId ?? undefined
-    addResult(isCorrect, ticketId)
+    haptics.notify(isCorrect ? 'success' : 'error')
+    addResult(isCorrect, q.id)   // wrongByTicket is keyed by QUESTION id
     if (isCorrect && settings?.autoNextCorrect) {
       setTimeout(() => goNextRef.current(), 800)
     } else if (!isCorrect && settings?.autoNextWrong) {
       setTimeout(() => goNextRef.current(), 1200)
     }
-  }, [selected, correctId, current, settings, addResult, location.state?.ticketId])
+  }, [selected, correctId, current, q, settings, addResult])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({
@@ -375,9 +377,17 @@ export default function TestPage() {
           <button onClick={() => toggleSaved(q.id)} className={isSaved ? 'text-yellow-400' : 'text-[#8b949e] hover:text-white'}>
             <Bookmark size={20} fill={isSaved ? 'currentColor' : 'none'} />
           </button>
-          <button className="text-[#8b949e] hover:text-white"><Share2 size={20} /></button>
+          <button
+            onClick={() => shareUrl('https://t.me/osonprava_bot', 'YHQ imtihoniga tayyorlaning!')}
+            className="text-[#8b949e] hover:text-white">
+            <Share2 size={20} />
+          </button>
           <button onClick={() => setShowSettings(true)} className="text-[#8b949e] hover:text-white"><Settings size={20} /></button>
-          <button className="text-[#8b949e] hover:text-white"><Flag size={20} /></button>
+          <button
+            onClick={() => { setToast("Xatolik haqidagi xabar qabul qilindi. Rahmat!"); setTimeout(() => setToast(null), 3000) }}
+            className="text-[#8b949e] hover:text-white">
+            <Flag size={20} />
+          </button>
         </div>
       </div>
 

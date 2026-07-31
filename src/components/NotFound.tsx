@@ -1,0 +1,18 @@
+import { useNavigate } from 'react-router-dom'
+import { Compass } from 'lucide-react'
+
+export default function NotFound() {
+  const navigate = useNavigate()
+  return (
+    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">
+      <Compass size={56} className="text-[#8b949e] mb-4" />
+      <h1 className="text-3xl font-black mb-1">404</h1>
+      <p className="text-sm text-[#8b949e] mb-6">Bunday sahifa topilmadi</p>
+      <button
+        onClick={() => navigate('/', { replace: true })}
+        className="px-6 py-3 rounded-xl bg-[#1f6feb] text-white font-bold">
+        Bosh sahifaga
+      </button>
+    </div>
+  )
+}

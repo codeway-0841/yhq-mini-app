@@ -45,6 +45,7 @@ export default function AdaptivePage() {
   const navigate = useNavigate()
   const { settings, addResult } = useAppStore()
   const questions = useQuestionsStore((s) => s.questions)
+  const topics    = useQuestionsStore((s) => s.topics)
   const tt = useT(settings.language)
 
   const { cards, currentId, sessionCount, startSession, submitAnswer } = useAdaptiveStore()
@@ -68,7 +69,7 @@ export default function AdaptivePage() {
     setSelectedOption(optionId)
 
     const quality: 0 | 1 = optionId === q.correct ? 1 : 0
-    addResult(quality === 1, undefined)
+    addResult(quality === 1, q.id)
 
     // Delay store advance by 800 ms so the user sees colour feedback
     setTimeout(() => submitAnswer(q.id, quality), 800)
@@ -102,7 +103,12 @@ export default function AdaptivePage() {
 
       <div className="flex-1 overflow-y-auto px-4 pt-4 pb-24">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs text-[#8b949e]">{q.topic}</span>
+          <span className="text-xs text-[#8b949e]">
+            {(() => {
+              const topic = topics.find((t) => t.id === q.topicId)
+              return topic ? (settings.language === 'ru' ? topic.nameRu : topic.nameUz) : ''
+            })()}
+          </span>
           <EFBadge card={card} />
         </div>
         <p className="text-base font-semibold leading-snug mb-5">{q.text}</p>

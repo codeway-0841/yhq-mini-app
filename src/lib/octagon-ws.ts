@@ -13,7 +13,7 @@ export type OctagonMsg =
   | { type: 'error'; message: string }
 
 export type OctagonSend =
-  | { type: 'join_queue';  userId: string; name: string }
+  | { type: 'join_queue';  userId: string; name: string; initData?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
   | { type: 'leave_queue'; userId: string }
 

@@ -12,9 +12,11 @@
 
 import express          from 'express'
 import cors             from 'cors'
-import { config }       from './config'
+import { config }        from './config'
 import { requestLogger } from './middleware/request-logger'
-import { errorHandler } from './middleware/error-handler'
+import { errorHandler }  from './middleware/error-handler'
+import { rateLimit }     from './middleware/rate-limiter'
+import { telegramAuth }  from './middleware/auth'
 
 import usersRouter       from './modules/users/users.router'
 import progressRouter    from './modules/progress/progress.router'
@@ -33,6 +35,20 @@ export function createApp() {
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   }))
   app.use(express.json({ limit: '16kb' }))
+
+  // Health check — must stay above auth/rate-limit so monitors always reach it
+  app.get('/api/health', (_req, res) => {
+    res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })
+  })
+
+  // Global IP-based rate limit (per-endpoint limiters may be stricter)
+  app.use('/api', rateLimit({
+    maxPerMinute: 300,
+    keyFn: (req) => req.ip ?? 'unknown',
+  }))
+
+  // Telegram initData verification (enforced in production, see middleware/auth)
+  app.use('/api', telegramAuth)
 
   // ── Feature routers ──────────────────────────────────────────────────────
   // All public API routes are prefixed with /api.

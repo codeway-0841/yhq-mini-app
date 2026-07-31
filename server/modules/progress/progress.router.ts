@@ -13,8 +13,8 @@ import { progressRepository }   from './progress.repository'
 const router = Router()
 
 const ResultSchema = z.object({
-  correct:  z.boolean(),
-  ticketId: z.number().int().positive().optional(),
+  correct:    z.boolean(),
+  questionId: z.number().int().positive().optional(),
 })
 
 // POST /api/progress/:userId/result
@@ -26,8 +26,8 @@ router.post(
     const uid = parseBigInt(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    const { correct, ticketId } = req.body as z.infer<typeof ResultSchema>
-    const updated = await progressRepository.addResult(uid, correct, ticketId ?? null)
+    const { correct, questionId } = req.body as z.infer<typeof ResultSchema>
+    const updated = await progressRepository.addResult(uid, correct, questionId ?? null)
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
 
     res.json({ ok: true })

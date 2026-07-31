@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  Trophy, Search, Settings,
-  BookOpen, Play, Sword, LayoutGrid,
+  Trophy, Settings,
+  Play, Sword, LayoutGrid,
   Ticket, ListChecks, GraduationCap,
-  AlertTriangle, Bookmark, Hash,
+  AlertTriangle, Bookmark, Hash, Signpost,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -24,8 +24,11 @@ function Avatar({ name }: { name: string }) {
 }
 
 // ── Top Bar ─────────────────────────────────────────────────────────────────
-function TopBar({ user, onSettings, onProfile }: {
-  user: ApiUser | null; onSettings: () => void; onProfile: () => void
+function TopBar({ user, onSettings, onProfile, onLeaderboard }: {
+  user: ApiUser | null
+  onSettings: () => void
+  onProfile: () => void
+  onLeaderboard: () => void
 }) {
   const name = user ? `${user.firstName} ${user.lastName || ''}`.trim() : 'Foydalanuvchi'
   return (
@@ -40,13 +43,12 @@ function TopBar({ user, onSettings, onProfile }: {
         </div>
       </button>
       <div className="flex items-center gap-3.5">
-        <button className="text-[#f59e0b]">
+        <button onClick={onLeaderboard} aria-label="Reyting"
+          className="text-[#f59e0b] hover:opacity-80 transition-opacity">
           <Trophy size={20} fill="currentColor" />
         </button>
-        <button className="text-[#8b949e] hover:text-white transition-colors">
-          <Search size={20} />
-        </button>
-        <button onClick={onSettings} className="text-[#8b949e] hover:text-white transition-colors">
+        <button onClick={onSettings} aria-label="Sozlamalar"
+          className="text-[#8b949e] hover:text-white transition-colors">
           <Settings size={20} />
         </button>
       </div>
@@ -202,7 +204,8 @@ export default function Dashboard() {
 
   return (
     <div className="pb-4">
-      <TopBar user={user} onSettings={() => setShowSettings(true)} onProfile={goProfile} />
+      <TopBar user={user} onSettings={() => setShowSettings(true)} onProfile={goProfile}
+        onLeaderboard={() => navigate('/reyting')} />
 
       <ProgressCard
         totalCorrect={totalCorrect}
@@ -257,7 +260,7 @@ export default function Dashboard() {
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4">
-        <GridCard icon={AlertTriangle} label="Yo'l belgilari"   iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Signpost}      label="Yo'l belgilari"   iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label="Raqamli savollar" iconColor="#a78bfa" onClick={goTest} />
       </div>
 

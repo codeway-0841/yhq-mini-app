@@ -19,7 +19,7 @@ interface AppState {
   setUser:        (user: ApiUser | null) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
-  addResult:      (correct: boolean, ticketId?: number) => void
+  addResult:      (correct: boolean, questionId?: number) => void
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
@@ -75,7 +75,7 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      addResult: (correct, ticketId?) => {
+      addResult: (correct, questionId?) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
         set((s) => ({
@@ -83,11 +83,11 @@ export const useAppStore = create<AppState>()(
           totalWrong:    s.totalWrong    + (correct ? 0 : 1),
           totalAnswered: s.totalAnswered + 1,
           streak:        correct ? s.streak + 1 : 0,
-          wrongByTicket: (!correct && ticketId != null)
-            ? { ...s.wrongByTicket, [ticketId]: (s.wrongByTicket[ticketId] ?? 0) + 1 }
+          wrongByTicket: (!correct && questionId != null)
+            ? { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
             : s.wrongByTicket,
         }))
-        if (userId) api.postResult(userId, correct, ticketId).catch(console.error)
+        if (userId) api.postResult(userId, correct, questionId).catch(console.error)
       },
 
       resetProgress: () => {

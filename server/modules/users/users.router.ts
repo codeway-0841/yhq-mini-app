@@ -7,7 +7,7 @@ import { Router }                                    from 'express'
 import { wrap, AppError }                            from '../../middleware/error-handler'
 import { validate }                                  from '../../middleware/validate'
 import { parseBigInt }                               from '../../utils/parse'
-import { usersService, InitInputSchema, PhoneSchema } from './users.service'
+import { usersService, InitInputSchema, PhoneSchema, toApiUser, toApiProgress, toApiSettings } from './users.service'
 import { progressRepository }                        from '../progress/progress.repository'
 import { settingsRepository }                        from '../settings/settings.repository'
 import { savedRepository }                           from '../saved/saved.repository'
@@ -43,7 +43,12 @@ router.get(
     // prog/sett missing means /init was never called — treat same as user not found
     if (!prog || !sett) throw new AppError(404, 'User profile incomplete — call /init first')
 
-    res.json({ user, progress: prog, settings: sett, savedQuestions: saved })
+    res.json({
+      user:           toApiUser(user),
+      progress:       toApiProgress(prog),
+      settings:       toApiSettings(sett),
+      savedQuestions: saved,
+    })
   }),
 )
 

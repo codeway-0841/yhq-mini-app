@@ -24,8 +24,9 @@ export default function Biletlar() {
     })
   }, [questions])
 
+  // wrongByTicket is keyed by QUESTION id — a ticket has errors if any of its questions do
   const filtered = tickets.filter((t) => {
-    if (tab === 'errors') return (wrongByTicket[t.id] || 0) > 0
+    if (tab === 'errors') return t.questionIds.some((id) => (wrongByTicket[id] ?? 0) > 0)
     return true
   })
 

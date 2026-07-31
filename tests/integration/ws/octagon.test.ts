@@ -49,42 +49,48 @@ afterAll(async () => {
   )
 })
 
+// Buffer every incoming message per connection — matching messages arriving
+// in the same tick would otherwise race with waitForMessage's listener setup.
+const messageLog = new Map<WebSocket, Record<string, unknown>[]>()
+
 function wsConnect(userId: string): WebSocket {
   const ws = new WebSocket(`ws://localhost:${port}?userId=${userId}`)
+  messageLog.set(ws, [])
+  ws.on('message', (raw) => {
+    try { messageLog.get(ws)!.push(JSON.parse(raw.toString())) } catch { /* ignore */ }
+  })
   openClients.push(ws)
   return ws
 }
 
 /**
- * Wait for the next message of a given type.
- * Uses ws.on (not once) because multiple message types arrive interleaved,
- * but removes the listener after resolving/rejecting to prevent leaks.
+ * Wait for a message of a given type from the connection's buffer.
+ * Consumes matched messages so multiple waits can run sequentially.
  */
 function waitForMessage(ws: WebSocket, type: string): Promise<Record<string, unknown>> {
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => {
-      ws.removeListener('message', handler)
+      clearInterval(poller)
       reject(new Error(`Timeout waiting for message type "${type}"`))
     }, 5_000)
 
-    function handler(raw: Buffer | string) {
-      let msg: Record<string, unknown>
-      try { msg = JSON.parse(raw.toString()) } catch { return }
-      if (msg['type'] === type) {
+    const poller = setInterval(() => {
+      const log  = messageLog.get(ws)!
+      const idx  = log.findIndex((m) => m['type'] === type)
+      if (idx >= 0) {
+        const [msg] = log.splice(idx, 1)
         clearTimeout(timeout)
-        ws.removeListener('message', handler)
+        clearInterval(poller)
         resolve(msg)
       }
-    }
-
-    ws.on('message', handler)
+    }, 10)
   })
 }
 
 describe('Octagon matchmaking + first round', () => {
   it('two players get matched and receive a question', async () => {
-    const ws1 = wsConnect('player-1')
-    const ws2 = wsConnect('player-2')
+    const ws1 = wsConnect('111')
+    const ws2 = wsConnect('222')
 
     await Promise.all([
       new Promise<void>((r) => ws1.on('open', r)),
@@ -94,8 +100,9 @@ describe('Octagon matchmaking + first round', () => {
     const matchedP1 = waitForMessage(ws1, 'matched')
     const matchedP2 = waitForMessage(ws2, 'matched')
 
-    ws1.send(JSON.stringify({ type: 'join_queue', userId: 'player-1', name: 'P1' }))
-    ws2.send(JSON.stringify({ type: 'join_queue', userId: 'player-2', name: 'P2' }))
+    // Telegram ids are numeric — non-numeric ids are rejected by the server
+    ws1.send(JSON.stringify({ type: 'join_queue', userId: '111', name: 'P1' }))
+    ws2.send(JSON.stringify({ type: 'join_queue', userId: '222', name: 'P2' }))
 
     const [m1, m2] = await Promise.all([matchedP1, matchedP2])
 

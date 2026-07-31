@@ -105,7 +105,14 @@ export default function OctagonPage() {
     if (!user) return
     dispatch({ type: 'SEARCHING' })
     try {
-      getOctagonSocket(config.wsUrl).send({ type: 'join_queue', userId: user.id, name: user.firstName })
+      const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
+        .Telegram?.WebApp?.initData
+      getOctagonSocket(config.wsUrl).send({
+        type: 'join_queue',
+        userId: user.id,
+        name: user.firstName,
+        ...(initData ? { initData } : {}),
+      })
     } catch {
       dispatch({ type: 'CANCEL' })
       showToast("Ulanishda xato. Qayta urinib ko'ring.")

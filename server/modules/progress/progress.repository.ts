@@ -21,16 +21,16 @@ export const progressRepository = {
    * Returns false if the progress row doesn't exist (caller should 404).
    */
   async addResult(
-    userId:   bigint,
-    correct:  boolean,
-    ticketId: number | null,
+    userId:     bigint,
+    correct:    boolean,
+    questionId: number | null,
   ): Promise<boolean> {
-    const wrongPatch = (!correct && ticketId !== null)
+    const wrongPatch = (!correct && questionId !== null)
       ? {
           wrongByTicket: sqlExpr`jsonb_set(
             wrong_by_ticket,
-            ${`{${ticketId}}`},
-            (COALESCE((wrong_by_ticket->>${String(ticketId)})::int, 0) + 1)::text::jsonb
+            ${`{${questionId}}`},
+            (COALESCE((wrong_by_ticket->>${String(questionId)})::int, 0) + 1)::text::jsonb
           )`,
         }
       : {}

@@ -1,19 +1,23 @@
-import { useEffect } from 'react'
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { useEffect, lazy, Suspense } from 'react'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { api } from './lib/api'
-import Dashboard       from './features/dashboard/Dashboard'
-import TestPage        from './features/test/TestPage'
-import Darslik         from './features/lessons/Darslik'
-import Biletlar        from './features/tickets/Biletlar'
-import Belgilar        from './features/signs/Belgilar'
-import Profil          from './features/profile/Profil'
-import TopicsPage      from './features/topics/TopicsPage'
-import AdaptivePage    from './features/adaptive/AdaptivePage'
-import OctagonPage     from './features/octagon/OctagonPage'
-import LeaderboardPage from './features/leaderboard/LeaderboardPage'
-import BottomNav       from './components/BottomNav'
+import BottomNav  from './components/BottomNav'
+import PageLoader from './components/PageLoader'
+
+// Lazy-loaded pages — each becomes its own chunk (code splitting)
+const Dashboard       = lazy(() => import('./features/dashboard/Dashboard'))
+const TestPage        = lazy(() => import('./features/test/TestPage'))
+const Darslik         = lazy(() => import('./features/lessons/Darslik'))
+const Biletlar        = lazy(() => import('./features/tickets/Biletlar'))
+const Belgilar        = lazy(() => import('./features/signs/Belgilar'))
+const Profil          = lazy(() => import('./features/profile/Profil'))
+const TopicsPage      = lazy(() => import('./features/topics/TopicsPage'))
+const AdaptivePage    = lazy(() => import('./features/adaptive/AdaptivePage'))
+const OctagonPage     = lazy(() => import('./features/octagon/OctagonPage'))
+const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPage'))
+const NotFound        = lazy(() => import('./components/NotFound'))
 
 type TelegramWindow = Window & {
   Telegram?: {
@@ -40,19 +44,21 @@ function Layout() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0d1117] text-[#e6edf3]">
       <div className={`flex-1 overflow-y-auto ${isTest ? '' : 'pb-20'}`}>
-        <Routes>
-          <Route path="/"           element={<Dashboard />} />
-          <Route path="/test/:id"   element={<TestPage />} />
-          <Route path="/darslik"    element={<Darslik />} />
-          <Route path="/biletlar"   element={<Biletlar />} />
-          <Route path="/belgilar"   element={<Belgilar />} />
-          <Route path="/profil"     element={<Profil />} />
-          <Route path="/mavzular"   element={<TopicsPage />} />
-          <Route path="/adaptive"   element={<AdaptivePage />} />
-          <Route path="/octagon"    element={<OctagonPage />} />
-          <Route path="/reyting"    element={<LeaderboardPage />} />
-          <Route path="*"           element={<Navigate to="/" replace />} />
-        </Routes>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/"           element={<Dashboard />} />
+            <Route path="/test/:id"   element={<TestPage />} />
+            <Route path="/darslik"    element={<Darslik />} />
+            <Route path="/biletlar"   element={<Biletlar />} />
+            <Route path="/belgilar"   element={<Belgilar />} />
+            <Route path="/profil"     element={<Profil />} />
+            <Route path="/mavzular"   element={<TopicsPage />} />
+            <Route path="/adaptive"   element={<AdaptivePage />} />
+            <Route path="/octagon"    element={<OctagonPage />} />
+            <Route path="/reyting"    element={<LeaderboardPage />} />
+            <Route path="*"           element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </div>
       {!isTest && <BottomNav />}
     </div>

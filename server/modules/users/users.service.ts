@@ -8,6 +8,50 @@
 
 import { z }                      from 'zod'
 import { usersRepository }        from './users.repository'
+import { users, progress, userSettings } from '../../schema'
+
+type UserRow = typeof users.$inferSelect
+
+/** JSON-safe user shape (bigint id → string) — matches the frontend ApiUser type. */
+export function toApiUser(row: UserRow) {
+  return {
+    id:        String(row.id),
+    firstName: row.firstName,
+    lastName:  row.lastName  ?? '',
+    username:  row.username  ?? '',
+    photoUrl:  row.photoUrl  ?? '',
+    phone:     row.phone     ?? null,
+    tariff:    row.tariff,
+  }
+}
+
+type ProgressRow = typeof progress.$inferSelect
+type SettingsRow = typeof userSettings.$inferSelect
+
+/** Drop the bigint userId — the client already knows who it asked about. */
+export function toApiProgress(row: ProgressRow) {
+  return {
+    totalCorrect:  row.totalCorrect,
+    totalWrong:    row.totalWrong,
+    totalAnswered: row.totalAnswered,
+    streak:        row.streak,
+    wrongByTicket: row.wrongByTicket,
+  }
+}
+
+export function toApiSettings(row: SettingsRow) {
+  return {
+    autoNextCorrect: row.autoNextCorrect,
+    autoNextWrong:   row.autoNextWrong,
+    noAnimation:     row.noAnimation,
+    shuffleOptions:  row.shuffleOptions,
+    fontSize:        row.fontSize,
+    fontStyle:       row.fontStyle,
+    language:        row.language,
+    theme:           row.theme,
+    offlineMode:     row.offlineMode,
+  }
+}
 import { progressRepository }     from '../progress/progress.repository'
 import { settingsRepository }     from '../settings/settings.repository'
 import { savedRepository }        from '../saved/saved.repository'
@@ -61,9 +105,9 @@ export const usersService = {
     ])
 
     return {
-      user,
-      progress:       prog!,
-      settings:       sett!,
+      user:           toApiUser(user),
+      progress:       toApiProgress(prog!),
+      settings:       toApiSettings(sett!),
       savedQuestions: saved,
     }
   },

@@ -20,12 +20,17 @@
 import { WebSocket, WebSocketServer } from 'ws'
 import { IncomingMessage } from 'http'
 import { randomUUID } from 'crypto'
+import { config }         from './config'
+import { verifyInitData } from './utils/telegram'
+import { isAuthEnforced } from './middleware/auth'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
 const ROUNDS        = 10
 const ROUND_TIMEOUT = 15_000  // ms per question
 const QUEUE_TIMEOUT = 60_000  // ms to find opponent before giving up
+const MAX_MATCHES   = 500     // hard cap on concurrent matches — protects memory
+const MAX_NAME_LEN  = 64
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -246,8 +251,33 @@ export function attachOctagon(
       try { msg = JSON.parse(raw.toString()) } catch { return }
 
       if (msg.type === 'join_queue') {
-        userId = String(msg.userId)
-        const name = String(msg.name ?? "Noma'lum")
+        userId = String(msg.userId ?? '')
+        const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
+
+        // User must be authenticated in production — initData carries the signed id
+        if (isAuthEnforced()) {
+          const initData = String(msg.initData ?? '')
+          const verified = initData && config.telegram.botToken
+            ? verifyInitData(initData, config.telegram.botToken)
+            : null
+          if (!verified) {
+            send(ws, { type: 'error', message: 'auth_failed' })
+            ws.close(4001, 'Unauthorized')
+            return
+          }
+          userId = String(verified.id)   // NEVER trust the client-supplied id
+        }
+
+        if (!/^\d+$/.test(userId)) {
+          send(ws, { type: 'error', message: 'invalid_user' })
+          return
+        }
+
+        if (matches.size >= MAX_MATCHES) {
+          send(ws, { type: 'error', message: 'server_full' })
+          return
+        }
+
         joinQueue(ws, userId, name)
         return
       }

@@ -1,6 +1,8 @@
 import { useState, type ReactNode } from 'react'
 import { X } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
+import { useQuestionsStore } from '../store/useQuestionsStore'
+import { openTelegramLink } from '../lib/telegram'
 import Toggle from './Toggle'
 
 function Row({ label, children }: { label: string; children: ReactNode }) {
@@ -45,6 +47,9 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
   const save = () => {
     updateSettings(local)
+    if (local.language !== settings.language) {
+      useQuestionsStore.getState().setLang(local.language)
+    }
     onClose()
   }
 
@@ -60,16 +65,16 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
         </div>
 
         <Row label="To'g'ri javobda avtomatik o'tish">
-          <Toggle checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
+          <Toggle label="To'g'ri javobda avtomatik o'tish" checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
         </Row>
         <Row label="Xato javobda avtomatik o'tish">
-          <Toggle checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
+          <Toggle label="Xato javobda avtomatik o'tish" checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
         </Row>
         <Row label="Animatsiyasiz o'tish">
-          <Toggle checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
+          <Toggle label="Animatsiyasiz o'tish" checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
         </Row>
         <Row label="Variantlarni aralashtirish">
-          <Toggle checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
+          <Toggle label="Variantlarni aralashtirish" checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
         </Row>
         <Row label="Shrift o'lchami">
           <ChipGroup
@@ -104,7 +109,9 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           />
         </Row>
 
-        <button className="mt-1 text-sm text-[#8b949e] hover:text-white underline underline-offset-2">
+        <button
+          onClick={() => openTelegramLink('https://t.me/osonprava_bot')}
+          className="mt-1 text-sm text-[#8b949e] hover:text-white underline underline-offset-2">
           Xatolik haqida xabar berish
         </button>
 
