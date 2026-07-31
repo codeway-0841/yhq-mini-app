@@ -15,8 +15,11 @@ interface AppState {
   savedQuestions: number[]
   tariff:         'free' | 'premium'
   initialized:    boolean
+  /** User-set display name override (Telegram name o'rniga) */
+  displayName:    string | null
 
   setUser:        (user: ApiUser | null) => void
+  setDisplayName: (name: string | null) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
   addResult:      (correct: boolean, questionId?: number) => void
@@ -50,8 +53,10 @@ export const useAppStore = create<AppState>()(
       savedQuestions: [],
       tariff:         'free',
       initialized:    false,
+      displayName:    null,
 
       setUser: (user) => set({ user, tariff: user?.tariff ?? 'free' }),
+      setDisplayName: (name) => set({ displayName: name?.trim() || null }),
 
       updatePhone: async (phone) => {
         const userId = get().user?.id

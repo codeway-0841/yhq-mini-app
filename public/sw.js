@@ -8,7 +8,7 @@
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
-const CACHE = 'yhq-app-v1'
+const CACHE = 'yhq-app-v2'
 
 const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||

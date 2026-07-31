@@ -24,13 +24,15 @@ function Avatar({ name }: { name: string }) {
 }
 
 // ── Top Bar ─────────────────────────────────────────────────────────────────
-function TopBar({ user, onSettings, onProfile, onLeaderboard }: {
+function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
   user: ApiUser | null
+  displayName: string | null
   onSettings: () => void
   onProfile: () => void
   onLeaderboard: () => void
 }) {
-  const name = user ? `${user.firstName} ${user.lastName || ''}`.trim() : 'Foydalanuvchi'
+  const name = displayName
+    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : 'Foydalanuvchi')
   return (
     <div className="flex items-center justify-between px-4 pt-4 pb-2">
       <button onClick={onProfile} className="flex items-center gap-2.5 active:opacity-70 transition-opacity">
@@ -190,7 +192,7 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
-  const { user, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+  const { user, displayName, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -216,7 +218,8 @@ export default function Dashboard() {
 
   return (
     <div className="pb-4">
-      <TopBar user={user} onSettings={() => setShowSettings(true)} onProfile={goProfile}
+      <TopBar user={user} displayName={displayName}
+        onSettings={() => setShowSettings(true)} onProfile={goProfile}
         onLeaderboard={() => navigate('/reyting')} />
 
       <ProgressCard

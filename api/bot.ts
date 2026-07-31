@@ -3,7 +3,11 @@ import { Bot, InlineKeyboard, webhookCallback } from 'grammy'
 const token = process.env['BOT_TOKEN']
 if (!token) throw new Error('BOT_TOKEN is unset')
 
-const APP_URL = process.env['APP_URL'] ?? 'https://yhq-mini-app.vercel.app'
+// Cache-bust har deployda o'zgaradi (?v=<commit-sha>) — Telegram WebView
+// eski versiyani keshlab turishining oldini oladi
+const BASE_URL = process.env['APP_URL'] ?? 'https://yhq-mini-app.vercel.app'
+const BUILD_ID = (process.env['VERCEL_GIT_COMMIT_SHA'] ?? 'v1').slice(0, 8)
+const APP_URL  = `${BASE_URL}?v=${BUILD_ID}`
 
 const bot = new Bot(token)
 

@@ -10,3 +10,7 @@ dist
 .env*
 300_savol_javob_rasmlar/
 api/dist/
+
+# video analysis temp
+video.mp4
+frames/

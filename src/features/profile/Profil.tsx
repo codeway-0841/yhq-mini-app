@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, MessageCircle,
-  Radio, Star, Share2, Download, ChevronRight, Check,
+  Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
@@ -30,17 +30,59 @@ declare global {
   }
 }
 
-interface AvatarProps { name: string; photoUrl?: string; size?: 'sm' | 'lg' }
-function Avatar({ name, photoUrl, size = 'lg' }: AvatarProps) {
+interface AvatarProps { name: string; photoUrl?: string; size?: 'sm' | 'lg'; onEdit?: () => void }
+function Avatar({ name, photoUrl, size = 'lg', onEdit }: AvatarProps) {
   const letter = name?.[0]?.toUpperCase() ?? 'F'
   const cls = size === 'lg' ? 'w-20 h-20 text-3xl' : 'w-10 h-10 text-base'
   return (
-    <div className={`${cls} rounded-full bg-[#1f6feb] flex items-center justify-center text-white font-black relative overflow-hidden`}>
-      {photoUrl ? (
-        <img src={photoUrl} alt={name} className="absolute inset-0 w-full h-full object-cover" />
-      ) : (
-        letter
+    <div className="relative">
+      <div className={`${cls} rounded-full bg-[#1f6feb] flex items-center justify-center text-white font-black relative overflow-hidden`}>
+        {photoUrl ? (
+          <img src={photoUrl} alt={name} className="absolute inset-0 w-full h-full object-cover" />
+        ) : (
+          letter
+        )}
+      </div>
+      {onEdit && (
+        <button onClick={onEdit} aria-label="Ismni o'zgartirish"
+          className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-[#1f6feb] border-2 border-[#0d1117] flex items-center justify-center active:scale-90 transition-transform">
+          <Pencil size={12} className="text-white" />
+        </button>
       )}
+    </div>
+  )
+}
+
+/** Bottom sheet — ismni tahrirlash (lokal saqlanadi) */
+function NameEditSheet({ current, onClose, onSave }: {
+  current: string
+  onClose: () => void
+  onSave: (name: string) => void
+}) {
+  const [name, setName] = useState(current)
+  return (
+    <div className="fixed inset-0 z-50 flex items-end">
+      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+      <div className="relative w-full bg-[#161b22] rounded-t-2xl border-t border-[#30363d] p-5 pb-8">
+        <div className="w-10 h-1 bg-[#30363d] rounded-full mx-auto mb-4" />
+        <p className="text-sm font-bold mb-3 flex items-center justify-center gap-2">
+          <Pencil size={14} className="text-[#1f6feb]" />
+          Ismni o'zgartirish
+        </p>
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          maxLength={32}
+          placeholder="Ismingiz"
+          autoFocus
+          className="w-full bg-[#0d1117] border border-[#1f6feb] rounded-xl px-4 py-3 text-sm text-white outline-none mb-4"
+        />
+        <button
+          onClick={() => { onSave(name); onClose() }}
+          className="w-full py-3.5 rounded-xl bg-green-600 text-white font-bold">
+          Saqlash
+        </button>
+      </div>
     </div>
   )
 }
@@ -96,12 +138,14 @@ export default function Profil() {
   const {
     user, settings, updateSettings, updatePhone, resetProgress, tariff,
     totalCorrect, totalWrong, totalAnswered, streak, syncFromServer,
+    displayName, setDisplayName,
   } = useAppStore()
 
   const [copied, setCopied]           = useState(false)
   const [phoneLoading, setPhoneLoading] = useState(false)
   const [phoneError, setPhoneError]   = useState<string | null>(null)
   const [toast, setToast]             = useState<string | null>(null)
+  const [showNameEdit, setShowNameEdit] = useState(false)
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -114,7 +158,8 @@ export default function Profil() {
     useQuestionsStore.getState().setLang(next)
   }
 
-  const name   = user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : 'Foydalanuvchi'
+  const name   = displayName
+    ?? (user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : 'Foydalanuvchi')
   const userId = user?.id ?? '—'
 
   const copyId = () => {
@@ -184,7 +229,7 @@ export default function Profil() {
           className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
       </div>
       <div className="flex flex-col items-center gap-2 mb-6 px-4">
-        <Avatar name={name} photoUrl={user?.photoUrl} />
+        <Avatar name={name} photoUrl={user?.photoUrl} onEdit={() => setShowNameEdit(true)} />
         <p className="text-lg font-bold">{name}</p>
         {user?.username && (
           <p className="text-xs text-[#8b949e]">@{user.username}</p>
@@ -284,6 +329,14 @@ export default function Profil() {
         <div className="fixed bottom-20 left-4 right-4 bg-[#1f6feb] text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg">
           {toast}
         </div>
+      )}
+
+      {showNameEdit && (
+        <NameEditSheet
+          current={name}
+          onClose={() => setShowNameEdit(false)}
+          onSave={(n) => { setDisplayName(n); showToast('Ism saqlandi ✓') }}
+        />
       )}
 
       <p className="text-center text-[10px] text-[#8b949e] mt-2">v1.1.0 · Build 2026.07</p>
