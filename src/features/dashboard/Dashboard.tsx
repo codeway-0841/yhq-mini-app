@@ -143,13 +143,17 @@ function BannerCard({ icon: Icon, label, color, onClick }: {
 export default function Dashboard() {
   const navigate  = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
-  const { user, totalCorrect, totalWrong, totalAnswered, streak } = useAppStore()
+  const { user, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
 
   const goTest        = () => navigate('/test/1')
   const goMistakes    = () => navigate('/mavzular')
   const goTopics      = () => navigate('/mavzular')
   const goAdaptive    = () => navigate('/adaptive')
   const goOctagon     = () => navigate('/octagon')
+  const goSaved       = () => {
+    if (savedQuestions.length === 0) return
+    navigate('/test/1', { state: { questionIds: savedQuestions, title: 'Saqlanganlar' } })
+  }
 
   return (
     <div className="pb-4">
@@ -186,7 +190,7 @@ export default function Dashboard() {
 
       <div className="grid grid-cols-2 gap-3 px-4">
         <GridCard icon={AlertTriangle} label="Chalg'ituvchi"    color="#2a221a" onClick={goTest} />
-        <GridCard icon={Bookmark}      label="Saqlanganlar"     color="#1c2a3a" onClick={goTest} />
+        <GridCard icon={Bookmark}      label="Saqlanganlar"     color="#1c2a3a" badge={savedQuestions.length || null} onClick={goSaved} />
         <GridCard icon={BookOpen}      label="Yo'l belgilari"   color="#1a1c2a" onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label="Raqamli savollar" color="#1c2a2a" onClick={goTest} />
       </div>
