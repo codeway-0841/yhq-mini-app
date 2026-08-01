@@ -1,3 +1,5 @@
+import '../server/utils/sentry'
+import { Sentry } from '../server/utils/sentry'
 import { Bot, InlineKeyboard, webhookCallback } from 'grammy'
 
 const token = process.env['BOT_TOKEN']
@@ -47,6 +49,7 @@ function ensureProfile(): Promise<unknown> {
 // ── Global error handler — a failing handler must never crash the function ──
 bot.catch((err) => {
   console.error('[bot]', err.message, err.ctx?.update?.update_id)
+  Sentry.captureException(err)
 })
 
 // ── /start ──────────────────────────────────────────────────────────────────

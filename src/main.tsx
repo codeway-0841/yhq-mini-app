@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+import './lib/sentry'   // birinchi bo'lib — barcha xatolarni yig'ishi uchun
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'

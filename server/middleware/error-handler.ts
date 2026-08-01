@@ -4,6 +4,7 @@
  */
 
 import { Request, Response, NextFunction } from 'express'
+import { Sentry } from '../utils/sentry'
 
 export class AppError extends Error {
   constructor(
@@ -28,6 +29,7 @@ export function errorHandler(
 
   // Unexpected error — log full stack, hide internals from client
   console.error('[unhandled error]', err)
+  Sentry.captureException(err)
   res.status(500).json({ error: 'Internal server error' })
 }
 

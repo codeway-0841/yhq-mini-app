@@ -4,6 +4,7 @@
  */
 
 import 'dotenv/config'
+import './utils/sentry'
 import http                from 'http'
 import { WebSocketServer } from 'ws'
 import { config }          from './config'
