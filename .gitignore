@@ -15,3 +15,7 @@ api/dist/
 video.mp4
 frames/
 .webhook-secret.tmp
+
+# debug logs
+vercel-dev.log
+vlogs.log
