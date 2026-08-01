@@ -44,7 +44,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:api": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['api/index.ts','api/bot.ts'],bundle:true,platform:'node',format:'esm',outdir:'api/dist',packages:'external'})\"",
+    "build:api": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/api-entry/index.ts','server/api-entry/bot.ts'],bundle:true,platform:'node',format:'esm',outdir:'api/dist',packages:'external'})\"",
     "vercel-build": "npm run build:api && npm run build",
     "preview": "vite preview",
     "server": "tsx server/index.ts",

@@ -1,5 +1,5 @@
-import '../server/utils/sentry'
-import { Sentry } from '../server/utils/sentry'
+import '../utils/sentry'
+import { Sentry } from '../utils/sentry'
 import { Bot, InlineKeyboard, webhookCallback } from 'grammy'
 
 const token = process.env['BOT_TOKEN']
@@ -98,8 +98,8 @@ bot.command('privacy', async (ctx) => {
 // ── /stats — needs DB ───────────────────────────────────────────────────────
 bot.command('stats', async (ctx) => {
   try {
-    const { db }       = await import('../server/db/connection')
-    const { progress } = await import('../server/schema')
+    const { db }       = await import('../db/connection')
+    const { progress } = await import('../schema')
     const { eq }       = await import('drizzle-orm')
 
     const from = ctx.from
@@ -136,8 +136,8 @@ bot.command('stats', async (ctx) => {
 // ── /daily — deterministic daily question (same for everyone, changes daily) ──
 bot.command('daily', async (ctx) => {
   try {
-    const { db }        = await import('../server/db/connection')
-    const { questions } = await import('../server/schema')
+    const { db }        = await import('../db/connection')
+    const { questions } = await import('../schema')
 
     const rows = await db.select().from(questions)
     if (rows.length === 0) {
@@ -171,8 +171,8 @@ bot.command('daily', async (ctx) => {
 // ── /random — quiz poll with a random question ──────────────────────────────
 bot.command('random', async (ctx) => {
   try {
-    const { db }        = await import('../server/db/connection')
-    const { questions } = await import('../server/schema')
+    const { db }        = await import('../db/connection')
+    const { questions } = await import('../schema')
     const { sql }       = await import('drizzle-orm')
 
     const [q] = await db.select().from(questions).orderBy(sql`random()`).limit(1)
@@ -203,8 +203,8 @@ bot.command('random', async (ctx) => {
 // ── /leaderboard — top 10 by correct answers ────────────────────────────────
 bot.command('leaderboard', async (ctx) => {
   try {
-    const { db }                = await import('../server/db/connection')
-    const { progress, users }   = await import('../server/schema')
+    const { db }                = await import('../db/connection')
+    const { progress, users }   = await import('../schema')
     const { desc, eq }          = await import('drizzle-orm')
 
     const rows = await db
