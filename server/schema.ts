@@ -1,6 +1,6 @@
 import {
   pgTable, pgEnum, serial, bigint, text,
-  integer, boolean, jsonb, timestamp, unique,
+  integer, boolean, jsonb, timestamp, unique, index,
 } from 'drizzle-orm/pg-core'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
@@ -30,7 +30,10 @@ export const progress = pgTable('progress', {
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
-})
+}, (t) => [
+  // Leaderboard queries sort by totalCorrect
+  index('idx_progress_total_correct').on(t.totalCorrect.desc()),
+])
 
 export const userSettings = pgTable('settings', {
   id:              serial('id').primaryKey(),

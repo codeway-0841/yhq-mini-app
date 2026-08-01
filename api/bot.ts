@@ -228,4 +228,21 @@ bot.command('leaderboard', async (ctx) => {
   }
 })
 
-export default webhookCallback(bot, 'https')
+const callback = webhookCallback(bot, 'https')
+
+// ── Webhook secret verification ─────────────────────────────────────────────
+// BOT_WEBHOOK_SECRET sozlangan bo'lsa, faqat Telegram'dan (secret_token bilan)
+// kelgan so'rovlar qabul qilinadi — begonalar bot endpointni ishlatolmaydi.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function handler(req: any, res: any) {
+  const secret = process.env['BOT_WEBHOOK_SECRET']
+  if (secret) {
+    const got = (req?.headers?.['x-telegram-bot-api-secret-token']
+      ?? req?.headers?.['X-Telegram-Bot-Api-Secret-Token']) as string | undefined
+    if (got !== secret) {
+      res.status(401).send('unauthorized')
+      return
+    }
+  }
+  return callback(req, res)
+}

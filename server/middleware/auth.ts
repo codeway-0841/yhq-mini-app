@@ -17,11 +17,26 @@ import { verifyInitData }  from '../utils/telegram'
 /** Routes whose first path segment carries a userId: /:userId/... */
 const USER_SEGMENTS = new Set(['profile', 'progress', 'settings', 'saved', 'users'])
 
+/**
+ * Public read-only content — no per-user data, safe to cache on the CDN.
+ * Questions/topics are identical for every user, so auth is NOT required.
+ * This lets Vercel's CDN serve them from the edge (huge DB-load win).
+ */
+const PUBLIC_GET = new Set(['questions', 'topics'])
+
+function isPublicGet(req: Request): boolean {
+  if (req.method !== 'GET') return false
+  const seg = req.path.split('/').filter(Boolean)[0]
+  return PUBLIC_GET.has(seg)
+}
+
 export function isAuthEnforced(): boolean {
   return Boolean(config.telegram.botToken) && process.env['NODE_ENV'] === 'production'
 }
 
 export function telegramAuth(req: Request, res: Response, next: NextFunction): void {
+  if (isPublicGet(req)) { next(); return }
+
   const header = req.headers['x-telegram-init-data']
   const initData = Array.isArray(header) ? header[0] : header
 
