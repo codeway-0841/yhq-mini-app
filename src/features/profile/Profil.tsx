@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
-  WifiOff, RotateCcw, Moon, Sun, MessageCircle,
+  WifiOff, RotateCcw, Moon, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -31,13 +31,12 @@ declare global {
   }
 }
 
-interface AvatarProps { name: string; photoUrl?: string; size?: 'sm' | 'lg'; onEdit?: () => void }
-function Avatar({ name, photoUrl, size = 'lg', onEdit }: AvatarProps) {
+// ── Avatar ──────────────────────────────────────────────────────────────
+function Avatar({ name, photoUrl, onEdit }: { name: string; photoUrl?: string; onEdit?: () => void }) {
   const letter = name?.[0]?.toUpperCase() ?? 'F'
-  const cls = size === 'lg' ? 'w-20 h-20 text-3xl' : 'w-10 h-10 text-base'
   return (
     <div className="relative">
-      <div className={`${cls} rounded-full bg-[#1f6feb] flex items-center justify-center text-white font-black relative overflow-hidden`}>
+      <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-[#1f6feb] to-[#6366f1] flex items-center justify-center text-white font-black text-4xl relative overflow-hidden ring-[3px] ring-[#1f6feb]/40">
         {photoUrl ? (
           <img src={photoUrl} alt={name} className="absolute inset-0 w-full h-full object-cover" />
         ) : (
@@ -46,7 +45,7 @@ function Avatar({ name, photoUrl, size = 'lg', onEdit }: AvatarProps) {
       </div>
       {onEdit && (
         <button onClick={onEdit} aria-label="Ismni o'zgartirish"
-          className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-[#1f6feb] border-2 border-[#0d1117] flex items-center justify-center active:scale-90 transition-transform">
+          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-[#1f6feb] border-[2.5px] border-[#0d1117] flex items-center justify-center active:scale-90 transition-transform shadow-lg">
           <Pencil size={12} className="text-white" />
         </button>
       )}
@@ -54,7 +53,7 @@ function Avatar({ name, photoUrl, size = 'lg', onEdit }: AvatarProps) {
   )
 }
 
-/** Bottom sheet — ismni tahrirlash (lokal saqlanadi) */
+// ── Bottom sheet — ismni tahrirlash ─────────────────────────────────────
 function NameEditSheet({ current, onClose, onSave }: {
   current: string
   onClose: () => void
@@ -80,7 +79,7 @@ function NameEditSheet({ current, onClose, onSave }: {
         />
         <button
           onClick={() => { onSave(name); onClose() }}
-          className="w-full py-3.5 rounded-xl bg-green-600 text-white font-bold">
+          className="w-full py-3.5 rounded-xl bg-green-600 text-white font-bold active:scale-[0.98] transition-transform">
           Saqlash
         </button>
       </div>
@@ -88,64 +87,59 @@ function NameEditSheet({ current, onClose, onSave }: {
   )
 }
 
+// ── Section wrapper ─────────────────────────────────────────────────────
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-4">
-      <p className="text-[10px] font-bold text-[#8b949e] uppercase tracking-widest px-4 mb-1">{title}</p>
-      <div className="bg-[#161b22] rounded-2xl border border-[#30363d] overflow-hidden">{children}</div>
+      <p className="text-[10px] font-bold text-[#8b949e] uppercase tracking-[0.12em] px-4 mb-1.5">{title}</p>
+      <div className="bg-[#161b22] rounded-2xl border border-[#30363d] overflow-hidden divide-y divide-[#30363d]">
+        {children}
+      </div>
     </div>
   )
 }
 
+// ── List Item ───────────────────────────────────────────────────────────
 interface ItemProps {
   icon: React.ElementType
-  iconBg?: string
+  iconBg: string
   label: string
   right?: React.ReactNode
   onPress?: () => void
-  danger?: boolean
   disabled?: boolean
 }
-function Item({ icon: Icon, iconBg, label, right, onPress, danger, disabled }: ItemProps) {
+function Item({ icon: Icon, iconBg, label, right, onPress, disabled }: ItemProps) {
   return (
     <button
       type="button"
       onClick={disabled ? undefined : onPress}
       disabled={disabled}
-      className={`flex items-center gap-3 w-full px-4 py-3.5 border-b border-[#30363d] last:border-0 transition-colors ${
+      className={`flex items-center gap-3 w-full px-4 py-3.5 transition-colors ${
         disabled ? 'opacity-50 cursor-not-allowed' : 'active:bg-[#21262d]'
-      } ${danger ? 'text-red-400' : 'text-[#e6edf3]'}`}
+      }`}
     >
-      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${iconBg ?? 'bg-[#21262d]'}`}>
-        <Icon size={16} className={danger ? 'text-red-400' : 'text-white'} />
+      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${iconBg}`}>
+        <Icon size={15} className="text-white" />
       </div>
-      <span className="flex-1 text-sm text-left">{label}</span>
-      {right !== undefined ? right : <ChevronRight size={16} className="text-[#8b949e]" />}
+      <span className="flex-1 text-[14px] text-left text-[#e6edf3]">{label}</span>
+      {right !== undefined ? right : <ChevronRight size={16} className="text-[#484f58]" />}
     </button>
   )
 }
 
-function StatCard({ label, value, color }: { label: string; value: number; color: string }) {
-  return (
-    <div className="rounded-2xl bg-[#161b22] border border-[#30363d] p-3 text-center">
-      <p className={`text-2xl font-black ${color}`}>{value}</p>
-      <p className="text-[10px] text-[#8b949e] mt-0.5">{label}</p>
-    </div>
-  )
-}
-
+// ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {
   const navigate = useNavigate()
   const {
     user, settings, updateSettings, updatePhone, resetProgress, tariff,
-    totalCorrect, totalWrong, totalAnswered, streak, syncFromServer,
+    syncFromServer,
     displayName, setDisplayName,
   } = useAppStore()
   const tt = useT(settings.language)
 
   const [copied, setCopied]           = useState(false)
   const [phoneLoading, setPhoneLoading] = useState(false)
-  const [phoneError, setPhoneError]   = useState<string | null>(null)
+  const [, setPhoneError]             = useState<string | null>(null)
   const [toast, setToast]             = useState<string | null>(null)
   const [showNameEdit, setShowNameEdit] = useState(false)
 
@@ -210,129 +204,129 @@ export default function Profil() {
   }
 
   const offlineOn = settings.offlineMode
-  const isDark    = settings.theme === 'dark'
-
-  const phoneLabel = user?.phone
-    ? user.phone
-    : phoneLoading
-      ? 'Yuklanmoqda...'
-      : phoneError ?? "Qo'shish"
-
-  const phoneRight = user?.phone
-    ? <Check size={14} className="text-green-400" />
-    : phoneLoading
-      ? <span className="w-4 h-4 border-2 border-[#8b949e] border-t-transparent rounded-full animate-spin" />
-      : <ChevronRight size={16} className="text-[#8b949e]" />
+  const themeLabel = settings.theme === 'dark' ? tt('darkTheme') : tt('lightTheme')
 
   return (
-    <div className="pt-4 pb-8">
-      <div className="px-4">
+    <div className="pt-4 pb-8 safe-bottom">
+      {/* ← Back */}
+      <div className="px-4 mb-0.5">
         <button onClick={() => navigate(-1)} aria-label="Orqaga"
-          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
-      </div>
-      <div className="flex flex-col items-center gap-2 mb-6 px-4">
-        <Avatar name={name} photoUrl={user?.photoUrl} onEdit={() => setShowNameEdit(true)} />
-        <p className="text-lg font-bold">{name}</p>
-        {user?.username && (
-          <p className="text-xs text-[#8b949e]">@{user.username}</p>
-        )}
-        <button
-          type="button"
-          onClick={copyId}
-          className="flex items-center gap-1.5 text-xs text-[#8b949e] bg-[#21262d] px-3 py-1 rounded-full"
-        >
-          <span>ID: {userId}</span>
-          {copied ? <Check size={12} className="text-green-400" /> : <Copy size={12} />}
+          className="flex items-center gap-1 text-[#8b949e] hover:text-white text-sm active:opacity-70 transition-opacity">
+          <span className="text-lg">←</span>
+          <span>Back</span>
         </button>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 px-4 mb-4">
-        <StatCard label={tt('correctShort')} value={totalCorrect} color="text-green-400"  />
-        <StatCard label={tt('wrongShort')}   value={totalWrong}   color="text-red-400"    />
-        <StatCard label={tt('streakCol')}    value={streak}       color="text-orange-400" />
-      </div>
-      <p className="text-center text-xs text-[#8b949e] mb-4">{totalAnswered} {tt('qAnswered')}</p>
+      {/* Page title */}
+      <p className="text-[18px] font-bold px-4 mb-5 text-white">Profil</p>
 
+      {/* Avatar + Name + ID */}
+      <div className="flex flex-col items-center gap-2.5 mb-7 px-4">
+        <Avatar name={name} photoUrl={user?.photoUrl} onEdit={() => setShowNameEdit(true)} />
+        <p className="text-[18px] font-bold text-white mt-1">{name}</p>
+        <button
+          type="button"
+          onClick={copyId}
+          className="flex items-center gap-1.5 text-[11px] text-[#8b949e] bg-[#21262d] px-3 py-1 rounded-full active:scale-95 transition-transform"
+        >
+          <span>ID: {userId}</span>
+          {copied ? <Check size={11} className="text-green-400" /> : <Copy size={11} />}
+        </button>
+      </div>
+
+      {/* ── SIZNING TARIFINGIZ ── */}
       <Section title={tt('yourTariff').toUpperCase()}>
-        <div className="px-4 py-3 flex items-center gap-3 border-b border-[#30363d]">
-          <div className="flex-1">
-            <p className="text-sm font-bold">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
-            <p className="text-xs text-[#8b949e] mt-0.5">
+        {/* Tariff card */}
+        <div className="px-4 py-3.5 flex items-center gap-3">
+          <div className="w-14 h-14 rounded-xl bg-[#21262d] flex items-center justify-center text-3xl flex-shrink-0">
+            🚗
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-[14px] font-bold text-white">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
+            <p className="text-[11px] text-[#8b949e] mt-0.5 leading-tight">
               {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>
           </div>
           {tariff === 'free' && (
             <button type="button"
               onClick={() => showToast('Premium tez kunda! Hozircha barcha funksiyalar bepul.')}
-              className="flex items-center gap-1.5 bg-[#1f6feb] text-white text-xs font-bold px-3 py-1.5 rounded-xl">
-              <Zap size={12} />
+              className="flex items-center gap-1.5 bg-[#1f6feb] text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform shadow-lg shadow-blue-500/20">
+              <Zap size={13} fill="white" />
               {tt('upgrade')}
             </button>
           )}
         </div>
+
+        {/* Phone */}
         <Item
           icon={Phone}
-          iconBg="bg-green-600"
-          label={phoneLabel}
-          right={phoneRight}
+          iconBg="bg-green-500"
+          label={tt('addPhone')}
+          right={
+            user?.phone
+              ? <span className="text-[12px] text-green-400">{user.phone}</span>
+              : phoneLoading
+                ? <span className="w-4 h-4 border-2 border-[#8b949e] border-t-transparent rounded-full animate-spin" />
+                : <span className="text-[12px] text-[#8b949e]">Qo'shish</span>
+          }
           onPress={user?.phone ? undefined : handleAddPhone}
           disabled={phoneLoading || !!user?.phone}
         />
-        <Item icon={Lock} iconBg="bg-purple-600" label={tt('closedGroup')}
-          right={<span className="text-xs text-[#8b949e]">{tt('joinWord')}</span>}
+
+        {/* Yopiq guruh */}
+        <Item icon={Lock} iconBg="bg-purple-500" label={tt('closedGroup')}
+          right={<span className="text-[12px] text-[#8b949e]">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
       </Section>
 
+      {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
         <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
-          right={<span className="text-xs text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
+          right={<span className="text-[12px] text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={toggleLanguage} />
+
         <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
+
         <Item
           icon={WifiOff} iconBg="bg-green-500" label={tt('offlineMode')}
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
           onPress={() => updateSettings({ offlineMode: !offlineOn })}
         />
-        <Item
-          icon={isDark ? Moon : Sun} iconBg="bg-[#8b949e]" label="Mavzu"
-          right={
-            <div className="flex gap-1">
-              {(['dark', 'light'] as const).map((t) => (
-                <button key={t} type="button"
-                  onClick={(e) => { e.stopPropagation(); updateSettings({ theme: t }) }}
-                  className={`px-2.5 py-0.5 rounded-lg text-xs font-semibold transition-colors ${
-                    settings.theme === t ? 'bg-[#1f6feb] text-white' : 'bg-[#21262d] text-[#8b949e]'
-                  }`}>
-                  {t === 'dark' ? "Qorong'i" : "Yorug'"}
-                </button>
-              ))}
-            </div>
-          }
-        />
-        <Item icon={RotateCcw} iconBg="bg-blue-600" label={tt('syncServer')}  onPress={handleSync}  right={null} />
-        <Item icon={RotateCcw} iconBg="bg-red-600"  label={tt('resetProgress')} danger onPress={handleReset} right={null} />
+
+        <Item icon={RotateCcw} iconBg="bg-red-500" label={tt('resetProgress')}
+          onPress={handleReset} />
+
+        <Item icon={Moon} iconBg="bg-[#8b5cf6]" label={tt('themeLabel')}
+          right={<span className="text-[12px] text-[#8b949e]">{themeLabel}</span>}
+          onPress={() => updateSettings({ theme: settings.theme === 'dark' ? 'light' : 'dark' })} />
+
+        <Item icon={RotateCcw} iconBg="bg-blue-500" label={tt('syncServer')}
+          onPress={handleSync} />
       </Section>
 
+      {/* ── YORDAM ── */}
       <Section title={tt('helpSection')}>
-        <Item icon={MessageCircle} iconBg="bg-green-500"  label={tt('contactUs')}
+        <Item icon={MessageCircle} iconBg="bg-green-500" label={tt('contactUs')}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
-        <Item icon={Radio}         iconBg="bg-blue-500"   label={tt('tgChannel')}
+        <Item icon={Radio}    iconBg="bg-blue-500"   label={tt('tgChannel')}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
-        <Item icon={Star}          iconBg="bg-orange-400" label={tt('rateApp')}
+        <Item icon={Star}     iconBg="bg-amber-500"  label={tt('rateApp')}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
-        <Item icon={Share2}        iconBg="bg-pink-500"   label={tt('shareApp')}
+        <Item icon={Share2}   iconBg="bg-pink-500"   label={tt('shareApp')}
           onPress={() => shareUrl('https://t.me/prava_oson_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
-        <Item icon={Download}      iconBg="bg-blue-400"   label={tt('installApp')}
+        <Item icon={Download} iconBg="bg-blue-400"   label={tt('installApp')}
           onPress={() => showToast(addToHomeScreen())} />
       </Section>
 
+      {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-[#1f6feb] text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg">
+        <div className="fixed bottom-20 left-4 right-4 bg-[#1f6feb] text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
           {toast}
         </div>
       )}
 
+      {/* Name edit sheet */}
       {showNameEdit && (
         <NameEditSheet
           current={name}
@@ -341,7 +335,7 @@ export default function Profil() {
         />
       )}
 
-      <p className="text-center text-[10px] text-[#8b949e] mt-2">v1.1.0 · Build 2026.07</p>
+      <p className="text-center text-[10px] text-[#484f58] mt-3">v1.1.0 · Build 2026.08</p>
     </div>
   )
 }

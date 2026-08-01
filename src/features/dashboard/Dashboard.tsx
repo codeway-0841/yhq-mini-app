@@ -87,42 +87,36 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
   const remaining = Math.max(0, total - totalAnswered)
 
   return (
-    <div className="mx-4 rounded-2xl bg-[#161b22] border border-[#30363d] p-4 mb-3 relative overflow-hidden">
-      {/* Subtle gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a7f3c]/10 to-transparent pointer-events-none" />
+    <div className="mx-4 rounded-2xl p-4 mb-3 relative overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #1a7f3c, #145a2a)' }}>
 
       <div className="relative z-10">
-        <div className="flex items-start justify-between mb-3">
-          <span className="text-xs text-[#8b949e] flex items-center gap-1.5">
+        {/* Top row: Change date + Streak */}
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-[11px] text-green-300/70 flex items-center gap-1">
             {tt('changeDate')} <span className="text-[10px]">✏️</span>
           </span>
-          <div className="flex items-center gap-1.5 bg-[#1a1f2b] rounded-full px-3 py-1">
-            <span className="text-amber-400 text-sm">⚡</span>
-            <span className="text-amber-400 font-bold text-sm">{streak} {tt('daysWord')}</span>
+          <div className="flex items-center gap-1">
+            <span className="text-amber-400 text-xs">⚡</span>
+            <span className="text-amber-400 font-bold text-xs">{streak} {tt('daysWord')}</span>
           </div>
         </div>
 
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-[52px] font-black text-white leading-none tracking-tight">{percent}%</span>
-          <div className="text-right text-[13px] space-y-1">
-            <div className="flex items-center gap-1.5 justify-end">
-              <span className="text-[#4ade80] font-semibold">✓ {totalCorrect}</span>
-            </div>
-            <div className="flex items-center gap-1.5 justify-end">
-              <span className="text-[#f87171] font-semibold">✗ {totalWrong}</span>
-            </div>
-            <div className="text-[#8b949e] text-xs font-medium">— {remaining}</div>
+        {/* Middle row: Percentage + compact stats */}
+        <div className="flex items-center justify-between mb-2.5">
+          <span className="text-[42px] font-black text-white leading-none">{percent}%</span>
+          <div className="flex items-center gap-2 text-[13px]">
+            <span className="text-green-300 font-semibold">✓ {totalCorrect}</span>
+            <span className="text-red-300 font-semibold">✗ {totalWrong}</span>
+            <span className="text-green-200/60 font-medium">— {remaining}</span>
           </div>
         </div>
 
         {/* Progress bar */}
-        <div className="w-full bg-[#21262d] rounded-full h-[6px] overflow-hidden">
+        <div className="w-full bg-green-900/50 rounded-full h-[5px] overflow-hidden">
           <div
-            className="h-full rounded-full transition-all duration-700 ease-out"
-            style={{
-              width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%`,
-              background: 'linear-gradient(90deg, #22c55e, #4ade80)',
-            }}
+            className="h-full rounded-full transition-all duration-700 ease-out bg-green-400"
+            style={{ width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%` }}
           />
         </div>
       </div>
