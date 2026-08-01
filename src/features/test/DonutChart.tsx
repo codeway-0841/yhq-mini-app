@@ -27,8 +27,8 @@ export default function DonutChart({ correct, total, passedLabel = "O'tdi ✓", 
         )}
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-4xl font-black text-white">{percent}%</span>
-        <span className={`text-sm font-bold mt-0.5 ${passed ? 'text-green-400' : 'text-red-400'}`}>
+        <span className={`text-4xl font-black ${passed ? 'text-duo-green' : 'text-duo-red'}`}>{percent}%</span>
+        <span className="text-sm font-bold mt-0.5 text-subtle">
           {passed ? passedLabel : failedLabel}
         </span>
       </div>

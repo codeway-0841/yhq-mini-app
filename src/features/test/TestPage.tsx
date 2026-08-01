@@ -153,15 +153,6 @@ export default function TestPage() {
   const handleFinishFromModal = useCallback(() => { setShowResults(false); navigate('/') }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
-  // Share the result — ResultsModal passes its computed stats
-  const handleShareResult = useCallback((correct: number, total: number) => {
-    const percent = total > 0 ? Math.round((correct / total) * 100) : 0
-    shareUrl(
-      'https://t.me/prava_oson_bot',
-      `YHQ test men natijam: ${percent}% (${correct}/${total}). Siz ham sinab ko'ring!`
-    )
-  }, [])
-
   // Exit confirm: first tap shows the warning, second tap within 3 s really exits
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const handleBack = useCallback(() => {
@@ -325,8 +316,7 @@ export default function TestPage() {
 
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
-          onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion}
-          onShare={handleShareResult} />
+          onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
 
