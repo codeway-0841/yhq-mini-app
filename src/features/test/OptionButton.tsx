@@ -1,7 +1,3 @@
-import { Volume2, Video, BookOpen, MessageCircle } from 'lucide-react'
-import { useAppStore } from '../../shared/store/useAppStore'
-import { useT } from '../../shared/i18n'
-
 export type Option = { id: string; text: string }
 
 /** Single answer option with correct/wrong highlight after answering. */
@@ -12,8 +8,6 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   answered: boolean
   fontSize: string
 }) {
-  const tt = useT(useAppStore((s) => s.settings.language))
-
   const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all'
   let style  = 'btn-3d-ghost font-semibold'
   let chip   = 'bg-elevated border-line text-subtle'
@@ -33,35 +27,16 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
     fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'
 
   return (
-    <div className="mb-2">
-      <button className={`${base} ${style}`} onClick={onSelect} disabled={answered}>
-        <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-2.5">
-            <span className={`flex-none w-8 h-8 rounded-lg border flex items-center justify-center text-xs font-black ${chip}`}>
-              {option.id}
-            </span>
-            <span className={fontClass}>{option.text}</span>
-          </div>
-          {icon}
+    <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2.5">
+          <span className={`flex-none w-8 h-8 rounded-lg border flex items-center justify-center text-xs font-black ${chip}`}>
+            {option.id}
+          </span>
+          <span className={fontClass}>{option.text}</span>
         </div>
-      </button>
-
-      {answered && (state === 'correct' || state === 'wrong') && (
-        <div className="flex gap-2 mt-1 px-1">
-          {[
-            { icon: Volume2,       label: tt('voiceLesson') },
-            { icon: Video,         label: tt('videoLesson') },
-            { icon: BookOpen,      label: tt('ruleBook')    },
-            { icon: MessageCircle, label: tt('discuss')     },
-          ].map(({ icon: Icon, label }) => (
-            <button key={label} disabled title={tt('comingSoon')}
-              className="flex items-center gap-1 text-[11px] text-muted/60 bg-elevated px-2 py-1 rounded-lg cursor-not-allowed">
-              <Icon size={12} />
-              {label}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
+        {icon}
+      </div>
+    </button>
   )
 }

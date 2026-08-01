@@ -27,17 +27,20 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
         <DonutChart correct={correct} total={total} passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5">
-          <div className="rounded-xl bg-green-900/30 border border-green-700/40 p-3 text-center">
-            <p className="text-2xl font-black text-green-400">{correct}</p>
-            <p className="text-[11px] text-green-300/70 mt-0.5">✓ {tt('correct')}</p>
+          <div className="rounded-2xl bg-duo-green p-3 text-center">
+            <p className="text-lg font-black text-white leading-none">✓</p>
+            <p className="text-2xl font-black text-white mt-1">{correct}</p>
+            <p className="text-[11px] font-bold text-white/85 mt-0.5">{tt('correct')}</p>
           </div>
-          <div className="rounded-xl bg-red-900/30 border border-red-700/40 p-3 text-center">
-            <p className="text-2xl font-black text-red-400">{wrong}</p>
-            <p className="text-[11px] text-red-300/70 mt-0.5">✗ {tt('wrong')}</p>
+          <div className="rounded-2xl bg-duo-red-dark p-3 text-center">
+            <p className="text-lg font-black text-white leading-none">✗</p>
+            <p className="text-2xl font-black text-white mt-1">{wrong}</p>
+            <p className="text-[11px] font-bold text-white/85 mt-0.5">{tt('wrong')}</p>
           </div>
-          <div className="rounded-xl bg-elevated border border-line p-3 text-center">
-            <p className="text-2xl font-black text-muted">{unanswered}</p>
-            <p className="text-[11px] text-muted/70 mt-0.5">— {tt('unanswered')}</p>
+          <div className="rounded-2xl bg-elevated border border-line p-3 text-center">
+            <p className="text-lg font-black text-subtle leading-none">—</p>
+            <p className="text-2xl font-black text-fg mt-1">{unanswered}</p>
+            <p className="text-[11px] font-bold text-subtle mt-0.5">{tt('unanswered')}</p>
           </div>
         </div>
 
@@ -57,19 +60,19 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
 
         <div className="flex gap-3">
           <button onClick={onRetry}
-            className="flex-1 py-3.5 rounded-xl bg-elevated text-fg font-semibold flex items-center justify-center gap-2">
+            className="btn-3d-ghost flex-1 py-3 rounded-2xl font-extrabold flex items-center justify-center gap-2">
             <RotateCcw size={16} />
             {tt('retry')}
           </button>
           {onShare && (
             <button onClick={() => onShare(correct, total)}
-              className="w-14 py-3.5 rounded-xl bg-duo-blue text-white font-semibold flex items-center justify-center"
+              className="btn-3d-blue w-14 py-3 rounded-2xl flex items-center justify-center"
               aria-label={tt('shareResult')}>
               <Share2 size={18} />
             </button>
           )}
           <button onClick={onFinish}
-            className="flex-[2] py-3.5 rounded-xl bg-green-600 text-white font-bold text-base">
+            className="btn-3d-green flex-[2] py-3 rounded-2xl font-black text-base">
             {tt('finish')}
           </button>
         </div>

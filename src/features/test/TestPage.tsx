@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
-import { Bookmark, Share2, Flag, Settings, BarChart2 } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Volume2, Video, BookOpen, MessageCircle } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -56,6 +56,7 @@ export default function TestPage() {
   const [toast, setToast]                     = useState<string | null>(null)
   const [zoomed, setZoomed]                   = useState(false)
   const [confirmExit, setConfirmExit]         = useState(false)
+  const [studyOpen, setStudyOpen]             = useState(false)
 
   const q         = activeQuestions[current]
   const fontSize  = settings?.fontSize || 'medium'
@@ -79,14 +80,24 @@ export default function TestPage() {
     setShowResults(false)
     setIsFinished(false)
     setToast(null)
+    setStudyOpen(false)
   }, [location.key, startIndex, activeQuestions.length])
 
-  const goTo   = useCallback((i: number) => { if (i >= 0 && i < activeQuestions.length) setCurrent(i) }, [activeQuestions.length])
+  const goTo   = useCallback((i: number) => {
+    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false) }
+  }, [activeQuestions.length])
   const goNext = useCallback(() => goTo(current + 1), [current, goTo])
   const goPrev = useCallback(() => goTo(current - 1), [current, goTo])
 
   const goNextRef = useRef(goNext)
   useEffect(() => { goNextRef.current = goNext }, [goNext])
+
+  // "O'rganish": ochish — panel ko'rsatadi; yopish (✕) — keyingi savolga o'tadi
+  const handleStudyToggle = useCallback(() => {
+    if (!selected) return
+    if (studyOpen) { setStudyOpen(false); goNextRef.current() }
+    else setStudyOpen(true)
+  }, [selected, studyOpen])
 
   const getOptionState = useCallback((optId: string) => {
     if (!selected) return 'default'
@@ -225,8 +236,8 @@ export default function TestPage() {
             <Settings size={17} />
           </button>
           <button
-            onClick={() => { setToast(tt('flagThanks')); setTimeout(() => setToast(null), 3000) }}
-            aria-label="Xatolik haqida xabar berish"
+            onClick={() => { setIsFinished(true); setShowResults(true) }}
+            aria-label="Testni yakunlash"
             className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
             <Flag size={16} />
           </button>
@@ -261,10 +272,34 @@ export default function TestPage() {
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
-            {q.options.map((opt) => (
-              <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
-                onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
-            ))}
+            <div className="flex gap-2 items-start">
+              <div className="flex-1 min-w-0">
+                {q.options.map((opt) => (
+                  <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
+                    onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
+                ))}
+              </div>
+              {studyOpen && selected && (
+                <div className="flex flex-col gap-2 w-[96px] flex-shrink-0 animate-fadeIn">
+                  <button disabled title={tt('comingSoon')}
+                    className="btn-3d-green flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-[11px] font-extrabold disabled:pointer-events-auto">
+                    <Volume2 size={14} />
+                    {tt('voiceLesson')}
+                  </button>
+                  {[
+                    { icon: Video,         label: tt('videoLesson') },
+                    { icon: BookOpen,      label: tt('ruleBook')    },
+                    { icon: MessageCircle, label: tt('discuss')     },
+                  ].map(({ icon: Icon, label }) => (
+                    <button key={label} disabled title={tt('comingSoon')}
+                      className="btn-3d-ghost flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-[11px] font-extrabold disabled:pointer-events-auto">
+                      <Icon size={14} />
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -279,11 +314,11 @@ export default function TestPage() {
             ✓ {tt('finish')}
           </button>
         ) : (
-          <button onClick={selected ? goNext : undefined}
+          <button onClick={selected ? handleStudyToggle : undefined}
             className={`flex-1 py-3 rounded-2xl font-extrabold transition-colors ${
               selected ? 'btn-3d-blue' : 'bg-elevated text-subtle cursor-default border-2 border-line'
             }`}>
-            {selected ? `✕ ${tt('study')}` : tt('study')}
+            {studyOpen ? `✕ ${tt('study')}` : tt('study')}
           </button>
         )}
       </div>

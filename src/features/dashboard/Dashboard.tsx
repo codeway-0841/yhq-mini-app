@@ -87,7 +87,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
   const remaining = Math.max(0, total - totalAnswered)
 
   return (
-    <div className="mx-4 rounded-3xl p-4 mb-3 relative overflow-hidden"
+    <div className="mx-4 rounded-3xl p-4 mb-2.5 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #2d5742, #14301e)' }}>
       {/* Yuqori qator: sana + streak */}
       <div className="flex items-center justify-between mb-1.5">
@@ -101,7 +101,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
       </div>
       {/* O'rta: % + statistikalar */}
       <div className="flex items-end justify-between mb-2.5">
-        <span className="text-[42px] font-black text-white leading-none">{percent}%</span>
+        <span className="text-[36px] font-black text-white leading-none">{percent}%</span>
         <div className="flex items-center gap-2.5 text-[12px] font-extrabold">
           <span className="text-duo-green">✓ {totalCorrect}</span>
           <span className="text-duo-red">✗ {totalWrong}</span>
@@ -125,16 +125,16 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
 }) {
   const tt = useT(lang)
   return (
-    <div className="grid grid-cols-2 gap-3 px-4 mb-3">
+    <div className="grid grid-cols-2 gap-2.5 px-4 mb-2.5">
       <button onClick={onAllTests}
-        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3 py-3.5">
+        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3 py-2.5">
         <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#1cb0f626' }}>
           <ListChecks size={19} className="text-duo-blue" strokeWidth={2.2} />
         </span>
         <span className="text-[13px] font-extrabold text-fg">{tt('allTests')}</span>
       </button>
       <button onClick={onFixMistakes}
-        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-3.5">
+        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-2.5">
         <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#ff4b4b26' }}>
           <Heart size={19} className="text-duo-red" strokeWidth={2.2} />
         </span>
@@ -149,28 +149,37 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
   )
 })
 
-// ── Feature Card (Darslik / Test yechish / Oktagon) — gorizontal, 3D ───────
-const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, shadowColor, iconColor, onClick }: {
+// ── Feature Card (Darslik / Test yechish / Oktagon) ─────────────────────────
+// wide (Darslik): har doim gorizontal — matn chap, oq doira-ikonka o'ngda.
+// narrow (Test/Oktagon): mobil vertikal (ikonka yuqori-chap), lg gorizontal.
+const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, shadowColor, iconColor, wide, onClick }: {
   icon: React.ElementType
   label: string
   subtitle: string
   bgColor: string
   shadowColor: string
   iconColor: string
+  wide?: boolean
   onClick: () => void
 }) {
   return (
     <button
       onClick={onClick}
-      className="btn-3d flex items-center justify-between gap-2 rounded-3xl p-3.5 min-h-[112px] w-full relative overflow-hidden text-left"
+      className={`btn-3d relative overflow-hidden rounded-3xl w-full ${
+        wide
+          ? 'flex flex-row items-center justify-between gap-3 p-3.5 min-h-[84px] text-left'
+          : 'flex flex-col items-start gap-0.5 p-3 min-h-[128px] text-left lg:flex-row lg:items-center lg:justify-between lg:gap-2 lg:min-h-[112px]'
+      }`}
       style={{ background: bgColor, '--btn-3d-shadow': shadowColor } as React.CSSProperties}
     >
-      <div className="relative z-10 min-w-0">
-        <p className="text-[15px] font-black text-white leading-tight">{label}</p>
-        <p className="text-[10.5px] font-semibold text-white/80 mt-1 leading-snug line-clamp-2">{subtitle}</p>
+      <div className={`w-10 h-10 lg:w-11 lg:h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 relative z-10 ${
+        wide ? 'order-2' : 'lg:order-2 mb-1.5'
+      }`}>
+        <Icon size={21} style={{ color: iconColor }} strokeWidth={2.4} />
       </div>
-      <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 relative z-10">
-        <Icon size={22} style={{ color: iconColor }} strokeWidth={2.4} />
+      <div className={`relative z-10 min-w-0 ${wide ? 'order-1' : 'lg:order-1'}`}>
+        <p className="text-[14px] lg:text-[15px] font-black text-white leading-tight">{label}</p>
+        <p className="text-[10.5px] font-semibold text-white/80 mt-1 leading-snug line-clamp-2">{subtitle}</p>
       </div>
     </button>
   )
@@ -187,16 +196,16 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
   return (
     <button
       onClick={onClick}
-      className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-3.5 w-full"
+      className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-2.5 w-full"
     >
       {badge != null && (
         <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
           {badge}
         </span>
       )}
-      <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+      <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
         style={{ backgroundColor: iconColor + '26' }}>
-        <Icon size={18} strokeWidth={2.2} style={{ color: iconColor }} />
+        <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-extrabold text-fg text-left leading-tight">{label}</span>
     </button>
@@ -308,17 +317,20 @@ export default function Dashboard() {
         onFixMistakes={goMistakes}
       />
 
-      {/* 3 TENG feature: Darslik / Test yechish / Oktagon */}
-      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
-        <FeatureCard
-          icon={GraduationCap}
-          label={tt('lessons')}
-          subtitle={tt('darslikDesc')}
-          bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
-          shadowColor="#1589c0"
-          iconColor="#1cb0f6"
-          onClick={goDarslik}
-        />
+      {/* Feature row: mobil — Darslik keng + Test/Oktagon 2 ustun · lg — 3 teng */}
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-2.5">
+        <div className="col-span-2 lg:col-span-1">
+          <FeatureCard
+            wide
+            icon={GraduationCap}
+            label={tt('lessons')}
+            subtitle={tt('darslikDesc')}
+            bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
+            shadowColor="#1589c0"
+            iconColor="#1cb0f6"
+            onClick={goDarslik}
+          />
+        </div>
         <FeatureCard
           icon={Play}
           label={tt('adaptive')}
@@ -339,20 +351,14 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Feature grid — 3 columns */}
-      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
+      {/* Feature grid — bitta grid: mobil 2 ustun, lg 3 ustun (bo'sh joy yo'q) */}
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-3">
         <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#ce82ff" onClick={goTopics} />
         <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
         <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#58cc02" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-      </div>
-
-      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
         <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
         <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
         <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
-      </div>
-
-      <div className="grid grid-cols-3 gap-3 px-4 mb-4">
         <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#1cb0f6" onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
       </div>
