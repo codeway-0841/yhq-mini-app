@@ -76,7 +76,14 @@ export const useAppStore = create<AppState>()(
         const userId = get().user?.id
         set((s) => ({ settings: { ...s.settings, ...patch } }))
         if (userId) {
-          api.patchSettings(userId, patch).catch(() => set({ settings: prev }))
+          // Mahalliy tanlov UI da darhol qo'llanadi; tarmoq xatosi bo'lsa
+          // SERVERga qaytarilmaydi (rollback "tepada qirish" UX'ni yoq qilardi) —
+          // keyingi ochilishda init/syncing server bilan tekislaydi.
+          api.patchSettings(userId, patch).catch((err) => {
+            console.warn('Settings sync xatosi (mahalliy tanlov saqlandi):', err?.message ?? err)
+            // Faqat validatsiya xatosida (400) eski qiymatga qaytaramiz
+            if (String(err?.message ?? '').includes(' 400')) set({ settings: prev })
+          })
         }
       },
 
