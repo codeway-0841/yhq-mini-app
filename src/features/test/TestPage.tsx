@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Volume2, Video, BookOpen, MessageCircle } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -11,6 +11,14 @@ import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
+
+// Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
+const STUDY_ITEMS = [
+  { key: 'voiceLesson' as const, icon: Play },
+  { key: 'videoLesson' as const, icon: Video },
+  { key: 'ruleBook'    as const, icon: Info },
+  { key: 'discuss'     as const, icon: MessageCircle },
+]
 
 export default function TestPage() {
   const { id }   = useParams()
@@ -87,17 +95,14 @@ export default function TestPage() {
     if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false) }
   }, [activeQuestions.length])
   const goNext = useCallback(() => goTo(current + 1), [current, goTo])
-  const goPrev = useCallback(() => goTo(current - 1), [current, goTo])
 
   const goNextRef = useRef(goNext)
   useEffect(() => { goNextRef.current = goNext }, [goNext])
 
-  // "O'rganish": ochish — panel ko'rsatadi; yopish (✕) — keyingi savolga o'tadi
+  // "O'rganish" — panelni ochadi/yopadi (faqat toggle)
   const handleStudyToggle = useCallback(() => {
-    if (!selected) return
-    if (studyOpen) { setStudyOpen(false); goNextRef.current() }
-    else setStudyOpen(true)
-  }, [selected, studyOpen])
+    setStudyOpen((o) => !o)
+  }, [])
 
   const getOptionState = useCallback((optId: string) => {
     if (!selected) return 'default'
@@ -243,7 +248,7 @@ export default function TestPage() {
 
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
-      <div className="flex-1 overflow-y-auto px-4 pb-4">
+      <div className="flex-1 overflow-y-auto px-4 pb-24">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
           <div className="lg:col-start-1 lg:row-start-1">
             <p className="text-center lg:text-left text-xs text-muted mb-2 font-medium">
@@ -263,53 +268,42 @@ export default function TestPage() {
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
-            <div className="flex gap-2 items-start">
-              <div className="flex-1 min-w-0">
-                {q.options.map((opt) => (
-                  <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
-                    onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
-                ))}
-              </div>
-              {studyOpen && selected && (
-                <div className="flex flex-col gap-2 w-[96px] flex-shrink-0 animate-fadeIn">
-                  <button disabled title={tt('comingSoon')}
-                    className="btn-3d-green flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-[11px] font-extrabold disabled:pointer-events-auto">
-                    <Volume2 size={14} />
-                    {tt('voiceLesson')}
-                  </button>
-                  {[
-                    { icon: Video,         label: tt('videoLesson') },
-                    { icon: BookOpen,      label: tt('ruleBook')    },
-                    { icon: MessageCircle, label: tt('discuss')     },
-                  ].map(({ icon: Icon, label }) => (
-                    <button key={label} disabled title={tt('comingSoon')}
-                      className="btn-3d-ghost flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-[11px] font-extrabold disabled:pointer-events-auto">
-                      <Icon size={14} />
-                      {label}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            {q.options.map((opt) => (
+              <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
+                onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
+            ))}
           </div>
         </div>
       </div>
 
-      <div className="flex gap-3 px-4 py-3 border-t border-line bg-canvas">
-        <button onClick={goPrev} disabled={current === 0}
-          className="btn-3d-ghost flex-1 py-3 rounded-2xl font-extrabold">
-          ← {tt('prev')}
-        </button>
+      {/* Floating study tugma + panel (14_22/14_24 uslubi):
+          yopiqda bitta pill; ochilganda stek tepaga stagger-animatsiya bilan chiqadi,
+          yopilganda pastga qaytib yo'qoladi */}
+      <div className="fixed right-4 bottom-6 z-40 flex flex-col items-end gap-2">
+        {STUDY_ITEMS.map((it, i) => {
+          const Icon = it.icon
+          return (
+            <button key={it.key} disabled title={tt('comingSoon')}
+              className={`btn-3d-ghost flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full text-[12px] font-extrabold transition-all duration-300 ${
+                studyOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3 pointer-events-none'
+              }`}
+              style={{ transitionDelay: studyOpen ? `${i * 45}ms` : `${(STUDY_ITEMS.length - 1 - i) * 45}ms` }}>
+              <Icon size={14} />
+              {tt(it.key)}
+            </button>
+          )
+        })}
         {(isLast || allAnswered) ? (
-          <button onClick={handleYakunlash} className="btn-3d-green flex-1 py-3 rounded-2xl font-extrabold">
+          <button onClick={handleYakunlash}
+            className="btn-3d-green flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
             ✓ {tt('finish')}
           </button>
         ) : (
-          <button onClick={selected ? handleStudyToggle : undefined}
-            className={`flex-1 py-3 rounded-2xl font-extrabold transition-colors ${
-              selected ? 'btn-3d-blue' : 'bg-elevated text-subtle cursor-default border-2 border-line'
-            }`}>
-            {studyOpen ? `✕ ${tt('study')}` : tt('study')}
+          <button onClick={handleStudyToggle}
+            className="btn-3d-ghost flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-extrabold">
+            {studyOpen
+              ? (<><X size={15} />{tt('study')}</>)
+              : (<><GraduationCap size={16} />{tt('study')}</>)}
           </button>
         )}
       </div>
