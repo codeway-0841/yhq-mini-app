@@ -175,7 +175,7 @@ export default function TestPage() {
   }, [answers, isFinished])
 
   if (!q) return (
-    <div className="flex items-center justify-center min-h-screen text-[#8b949e]">{tt('notFoundQ')}</div>
+    <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
   )
 
   const isSaved     = savedQuestions.includes(q.id)
@@ -188,34 +188,34 @@ export default function TestPage() {
   })()
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0d1117]">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d]">
+    <div className="flex flex-col min-h-screen bg-canvas">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
         <button onClick={handleBack}
-          className={`text-lg px-1 transition-colors ${confirmExit ? 'text-red-400 font-bold' : 'text-[#8b949e] hover:text-white'}`}>
+          className={`text-lg px-1 transition-colors ${confirmExit ? 'text-red-400 font-bold' : 'text-muted hover:text-white'}`}>
           {confirmExit ? '✕' : '←'}
         </button>
-        <div className="flex items-center gap-1 bg-[#161b22] px-3 py-1 rounded-xl border border-[#30363d]">
-          <span className="text-[#f59e0b]">⏱</span>
+        <div className="flex items-center gap-1 bg-surface px-3 py-1 rounded-xl border border-line">
+          <span className="text-duo-orange">⏱</span>
           <span className="font-mono font-bold text-sm text-white">{timer}</span>
         </div>
         <div className="flex items-center gap-3">
           {isFinished && (
-            <button onClick={() => setShowResults(true)} className="text-[#1f6feb] hover:text-blue-300">
+            <button onClick={() => setShowResults(true)} className="text-duo-blue hover:text-blue-300">
               <BarChart2 size={20} />
             </button>
           )}
-          <button onClick={() => toggleSaved(q.id)} className={isSaved ? 'text-yellow-400' : 'text-[#8b949e] hover:text-white'}>
+          <button onClick={() => toggleSaved(q.id)} className={isSaved ? 'text-yellow-400' : 'text-muted hover:text-white'}>
             <Bookmark size={20} fill={isSaved ? 'currentColor' : 'none'} />
           </button>
           <button
             onClick={() => shareUrl('https://t.me/prava_oson_bot', 'YHQ imtihoniga tayyorlaning!')}
-            className="text-[#8b949e] hover:text-white">
+            className="text-muted hover:text-white">
             <Share2 size={20} />
           </button>
-          <button onClick={() => setShowSettings(true)} className="text-[#8b949e] hover:text-white"><Settings size={20} /></button>
+          <button onClick={() => setShowSettings(true)} className="text-muted hover:text-white"><Settings size={20} /></button>
           <button
             onClick={() => { setToast(tt('flagThanks')); setTimeout(() => setToast(null), 3000) }}
-            className="text-[#8b949e] hover:text-white">
+            className="text-muted hover:text-white">
             <Flag size={20} />
           </button>
         </div>
@@ -230,7 +230,7 @@ export default function TestPage() {
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
       <div className="flex-1 overflow-y-auto px-4 pb-4">
-        <p className="text-center text-xs text-[#8b949e] mb-2 font-medium">
+        <p className="text-center text-xs text-muted mb-2 font-medium">
           {current + 1} / {activeQuestions.length}
           {topicLabel ? ` · ${topicLabel}` : ''}
         </p>
@@ -240,7 +240,7 @@ export default function TestPage() {
           {q.text}
         </p>
         {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-[#30363d] cursor-zoom-in"
+          <div className="rounded-xl overflow-hidden mb-4 border border-line cursor-zoom-in"
             onClick={() => setZoomed(true)}>
             <img src={q.image} alt="savol" className="w-full object-cover max-h-52" />
           </div>
@@ -253,19 +253,19 @@ export default function TestPage() {
         </div>
       </div>
 
-      <div className="flex gap-3 px-4 py-3 border-t border-[#30363d] bg-[#0d1117]">
+      <div className="flex gap-3 px-4 py-3 border-t border-line bg-canvas">
         <button onClick={goPrev} disabled={current === 0}
-          className="flex-1 py-3 rounded-xl bg-[#21262d] text-[#e6edf3] font-semibold disabled:opacity-40">
+          className="btn-3d-ghost flex-1 py-3 rounded-2xl font-extrabold">
           ← {tt('prev')}
         </button>
         {(isLast || allAnswered) ? (
-          <button onClick={handleYakunlash} className="flex-1 py-3 rounded-xl bg-green-600 text-white font-semibold">
+          <button onClick={handleYakunlash} className="btn-3d-green flex-1 py-3 rounded-2xl font-extrabold">
             ✓ {tt('finish')}
           </button>
         ) : (
           <button onClick={selected ? goNext : undefined}
-            className={`flex-1 py-3 rounded-xl font-semibold transition-colors ${
-              selected ? 'bg-[#1f6feb] text-white' : 'bg-[#21262d] text-[#8b949e] cursor-default'
+            className={`flex-1 py-3 rounded-2xl font-extrabold transition-colors ${
+              selected ? 'btn-3d-blue' : 'bg-elevated text-subtle cursor-default border-2 border-line'
             }`}>
             {selected ? `✕ ${tt('study')}` : tt('study')}
           </button>

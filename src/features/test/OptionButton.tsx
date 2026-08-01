@@ -14,16 +14,16 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
 }) {
   const tt = useT(useAppStore((s) => s.settings.language))
 
-  const base = 'w-full text-left rounded-xl border p-3 transition-all active:scale-[0.98]'
-  let style  = 'bg-[#161b22] border-[#30363d] text-[#e6edf3]'
+  const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all'
+  let style  = 'btn-3d-ghost font-semibold'
   let icon   = null
 
   if (state === 'correct') {
-    style = 'bg-green-900/60 border-green-500 text-white'
-    icon  = <span className="text-green-400 font-bold">✓</span>
+    style = 'bg-duo-green/15 border-duo-green text-fg'
+    icon  = <span className="text-duo-green font-black text-lg">✓</span>
   } else if (state === 'wrong') {
-    style = 'bg-red-900/60 border-red-500 text-white'
-    icon  = <span className="text-red-400 font-bold">✗</span>
+    style = 'bg-duo-red/15 border-duo-red text-fg'
+    icon  = <span className="text-duo-red font-black text-lg">✗</span>
   }
 
   const fontClass =
@@ -52,7 +52,7 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
             { icon: MessageCircle, label: tt('discuss')     },
           ].map(({ icon: Icon, label }) => (
             <button key={label} disabled title={tt('comingSoon')}
-              className="flex items-center gap-1 text-[11px] text-[#8b949e]/60 bg-[#21262d] px-2 py-1 rounded-lg cursor-not-allowed">
+              className="flex items-center gap-1 text-[11px] text-muted/60 bg-elevated px-2 py-1 rounded-lg cursor-not-allowed">
               <Icon size={12} />
               {label}
             </button>

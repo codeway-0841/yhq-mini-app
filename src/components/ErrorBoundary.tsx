@@ -32,30 +32,29 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
       return (
         <div style={{
           minHeight: '100vh',
-          background: '#0d1117',
+          background: 'var(--theme-canvas)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
           padding: '24px',
-          color: '#e6edf3',
-          fontFamily: 'Inter, sans-serif',
+          color: 'var(--theme-fg)',
+          fontFamily: 'Nunito, sans-serif',
         }}>
           <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
-          <h2 style={{ fontSize: 20, fontWeight: 700, marginBottom: 8 }}>Xato yuz berdi</h2>
-          <p style={{ fontSize: 14, color: '#8b949e', textAlign: 'center', marginBottom: 24 }}>
+          <h2 style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>Xato yuz berdi</h2>
+          <p style={{ fontSize: 14, color: 'var(--theme-fg-muted)', textAlign: 'center', marginBottom: 24 }}>
             {this.state.message}
           </p>
           <button
             onClick={() => window.location.reload()}
+            className="btn-3d-blue"
             style={{
-              background: '#1f6feb',
-              color: '#fff',
               border: 'none',
-              borderRadius: 12,
+              borderRadius: 16,
               padding: '12px 28px',
               fontSize: 15,
-              fontWeight: 600,
+              fontWeight: 800,
               cursor: 'pointer',
             }}
           >

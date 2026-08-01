@@ -39,7 +39,7 @@ export default function TopicsPage() {
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => navigate(-1)} aria-label="Orqaga"
-          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+          className="text-muted hover:text-white text-xl px-1">←</button>
         <h1 className="text-xl font-black">{tt('topics')}</h1>
       </div>
 
@@ -56,9 +56,9 @@ export default function TopicsPage() {
       <div className="flex flex-col gap-2">
         {topicMeta.map((topic) => (
           <button key={topic.id} onClick={() => start(topic)}
-            className="flex items-center justify-between bg-[#161b22] border border-[#30363d] rounded-2xl px-4 py-3.5 active:scale-[0.98] transition-transform">
+            className="flex items-center justify-between bg-surface border border-line rounded-2xl px-4 py-3.5 active:scale-[0.98] transition-transform">
             <span className="text-sm font-semibold text-left">{topic.name}</span>
-            <span className="text-xs text-[#8b949e] ml-3 flex-shrink-0">{topic.ids.length} ta</span>
+            <span className="text-xs text-muted ml-3 flex-shrink-0">{topic.ids.length} ta</span>
           </button>
         ))}
       </div>

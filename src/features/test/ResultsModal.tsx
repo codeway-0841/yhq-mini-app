@@ -21,8 +21,8 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
   return (
     <div className="fixed inset-0 z-50 flex items-end">
       <div className="absolute inset-0 bg-black/70" />
-      <div className="relative w-full bg-[#161b22] rounded-t-3xl border-t border-[#30363d] p-5 pb-10 max-h-[88vh] overflow-y-auto">
-        <div className="w-10 h-1 bg-[#30363d] rounded-full mx-auto mb-4" />
+      <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-10 max-h-[88vh] overflow-y-auto">
+        <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
         <DonutChart correct={correct} total={total} passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
@@ -35,9 +35,9 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
             <p className="text-2xl font-black text-red-400">{wrong}</p>
             <p className="text-[11px] text-red-300/70 mt-0.5">✗ {tt('wrong')}</p>
           </div>
-          <div className="rounded-xl bg-[#21262d] border border-[#30363d] p-3 text-center">
-            <p className="text-2xl font-black text-[#8b949e]">{unanswered}</p>
-            <p className="text-[11px] text-[#8b949e]/70 mt-0.5">— {tt('unanswered')}</p>
+          <div className="rounded-xl bg-elevated border border-line p-3 text-center">
+            <p className="text-2xl font-black text-muted">{unanswered}</p>
+            <p className="text-[11px] text-muted/70 mt-0.5">— {tt('unanswered')}</p>
           </div>
         </div>
 
@@ -48,7 +48,7 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
               className={`aspect-square rounded-full flex items-center justify-center text-xs font-bold transition-all active:scale-90 ${
                 r.status === 'correct'   ? 'bg-green-600 text-white' :
                 r.status === 'incorrect' ? 'bg-red-700 text-white'   :
-                                           'bg-[#21262d] text-[#8b949e]'
+                                           'bg-elevated text-muted'
               }`}>
               {i + 1}
             </button>
@@ -57,13 +57,13 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
 
         <div className="flex gap-3">
           <button onClick={onRetry}
-            className="flex-1 py-3.5 rounded-xl bg-[#21262d] text-[#e6edf3] font-semibold flex items-center justify-center gap-2">
+            className="flex-1 py-3.5 rounded-xl bg-elevated text-fg font-semibold flex items-center justify-center gap-2">
             <RotateCcw size={16} />
             {tt('retry')}
           </button>
           {onShare && (
             <button onClick={() => onShare(correct, total)}
-              className="w-14 py-3.5 rounded-xl bg-[#1f6feb] text-white font-semibold flex items-center justify-center"
+              className="w-14 py-3.5 rounded-xl bg-duo-blue text-white font-semibold flex items-center justify-center"
               aria-label={tt('shareResult')}>
               <Share2 size={18} />
             </button>

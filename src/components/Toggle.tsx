@@ -16,7 +16,7 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
       aria-label={label ?? 'Toggle'}
       onClick={() => onChange(!checked)}
       className={`relative ${track} rounded-full transition-colors ${
-        checked ? 'bg-[#1f6feb]' : 'bg-[#30363d]'
+        checked ? 'bg-duo-blue' : 'bg-line'
       }`}
     >
       {/* ON / OFF matni */}

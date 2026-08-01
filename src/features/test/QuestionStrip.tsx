@@ -20,10 +20,10 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
       {Array.from({ length: total }, (_: unknown, i: number) => {
         const ans       = answers[i]
         const isCurrent = i === current
-        let bg = 'bg-[#21262d] border border-[#30363d]'
+        let bg = 'bg-elevated border border-line'
         if (ans === 'correct')    bg = 'bg-green-600 border-green-500'
         else if (ans === 'wrong') bg = 'bg-red-700 border-red-600'
-        const ring = isCurrent ? 'ring-2 ring-[#1f6feb] ring-offset-1 ring-offset-[#0d1117]' : ''
+        const ring = isCurrent ? 'ring-2 ring-duo-blue ring-offset-1 ring-offset-canvas' : ''
         return (
           <button key={i} onClick={() => onSelect(i)}
             className={`flex-none w-8 h-8 rounded-lg text-xs font-bold transition-all ${bg} ${ring}`}>

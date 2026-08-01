@@ -37,7 +37,7 @@ function Avatar({ name, photoUrl, onEdit }: { name: string; photoUrl?: string; o
   const letter = name?.[0]?.toUpperCase() ?? 'F'
   return (
     <div className="relative">
-      <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-[#1f6feb] to-[#6366f1] flex items-center justify-center text-white font-black text-4xl relative overflow-hidden ring-[3px] ring-[#1f6feb]/40">
+      <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-black text-4xl relative overflow-hidden ring-[3px] ring-duo-blue/40">
         {photoUrl ? (
           <img src={photoUrl} alt={name} className="absolute inset-0 w-full h-full object-cover" />
         ) : (
@@ -46,7 +46,7 @@ function Avatar({ name, photoUrl, onEdit }: { name: string; photoUrl?: string; o
       </div>
       {onEdit && (
         <button onClick={onEdit} aria-label="Ismni o'zgartirish"
-          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-[#1f6feb] border-[2.5px] border-[#0d1117] flex items-center justify-center active:scale-90 transition-transform shadow-lg">
+          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-duo-blue border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
           <Pencil size={12} className="text-white" />
         </button>
       )}
@@ -64,10 +64,10 @@ function NameEditSheet({ current, onClose, onSave }: {
   return (
     <div className="fixed inset-0 z-50 flex items-end">
       <div className="absolute inset-0 bg-black/60" onClick={onClose} />
-      <div className="relative w-full bg-[#161b22] rounded-t-2xl border-t border-[#30363d] p-5 pb-8">
-        <div className="w-10 h-1 bg-[#30363d] rounded-full mx-auto mb-4" />
+      <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
+        <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <p className="text-sm font-bold mb-3 flex items-center justify-center gap-2">
-          <Pencil size={14} className="text-[#1f6feb]" />
+          <Pencil size={14} className="text-duo-blue" />
           Ismni o'zgartirish
         </p>
         <input
@@ -76,7 +76,7 @@ function NameEditSheet({ current, onClose, onSave }: {
           maxLength={32}
           placeholder="Ismingiz"
           autoFocus
-          className="w-full bg-[#0d1117] border border-[#1f6feb] rounded-xl px-4 py-3 text-sm text-white outline-none mb-4"
+          className="w-full bg-canvas border border-duo-blue rounded-xl px-4 py-3 text-sm text-white outline-none mb-4"
         />
         <button
           onClick={() => { onSave(name); onClose() }}
@@ -92,8 +92,8 @@ function NameEditSheet({ current, onClose, onSave }: {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="mb-4">
-      <p className="text-[10px] font-bold text-[#8b949e] uppercase tracking-[0.12em] px-4 mb-1.5">{title}</p>
-      <div className="bg-[#161b22] rounded-2xl border border-[#30363d] overflow-hidden divide-y divide-[#30363d]">
+      <p className="text-[10px] font-bold text-muted uppercase tracking-[0.12em] px-4 mb-1.5">{title}</p>
+      <div className="bg-surface rounded-2xl border border-line overflow-hidden divide-y divide-line">
         {children}
       </div>
     </div>
@@ -116,14 +116,14 @@ function Item({ icon: Icon, iconBg, label, right, onPress, disabled }: ItemProps
       onClick={disabled ? undefined : onPress}
       disabled={disabled}
       className={`flex items-center gap-3 w-full px-4 py-3.5 transition-colors ${
-        disabled ? 'opacity-50 cursor-not-allowed' : 'active:bg-[#21262d]'
+        disabled ? 'opacity-50 cursor-not-allowed' : 'active:bg-elevated'
       }`}
     >
       <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${iconBg}`}>
         <Icon size={15} className="text-white" />
       </div>
-      <span className="flex-1 text-[14px] text-left text-[#e6edf3]">{label}</span>
-      {right !== undefined ? right : <ChevronRight size={16} className="text-[#484f58]" />}
+      <span className="flex-1 text-[14px] text-left text-fg">{label}</span>
+      {right !== undefined ? right : <ChevronRight size={16} className="text-lineStrong" />}
     </button>
   )
 }
@@ -218,7 +218,7 @@ export default function Profil() {
       {/* ← Back */}
       <div className="px-4 mb-0.5">
         <button onClick={() => navigate(-1)} aria-label="Orqaga"
-          className="flex items-center gap-1 text-[#8b949e] hover:text-white text-sm active:opacity-70 transition-opacity">
+          className="flex items-center gap-1 text-muted hover:text-white text-sm active:opacity-70 transition-opacity">
           <span className="text-lg">←</span>
           <span>Back</span>
         </button>
@@ -234,7 +234,7 @@ export default function Profil() {
         <button
           type="button"
           onClick={copyId}
-          className="flex items-center gap-1.5 text-[11px] text-[#8b949e] bg-[#21262d] px-3 py-1 rounded-full active:scale-95 transition-transform"
+          className="flex items-center gap-1.5 text-[11px] text-muted bg-elevated px-3 py-1 rounded-full active:scale-95 transition-transform"
         >
           <span>ID: {userId}</span>
           {copied ? <Check size={11} className="text-green-400" /> : <Copy size={11} />}
@@ -245,19 +245,19 @@ export default function Profil() {
       <Section title={tt('yourTariff').toUpperCase()}>
         {/* Tariff card */}
         <div className="px-4 py-3.5 flex items-center gap-3">
-          <div className="w-14 h-14 rounded-xl bg-[#21262d] flex items-center justify-center text-3xl flex-shrink-0">
+          <div className="w-14 h-14 rounded-xl bg-elevated flex items-center justify-center text-3xl flex-shrink-0">
             🚗
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-[14px] font-bold text-white">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
-            <p className="text-[11px] text-[#8b949e] mt-0.5 leading-tight">
+            <p className="text-[11px] text-muted mt-0.5 leading-tight">
               {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>
           </div>
           {tariff === 'free' && (
             <button type="button"
               onClick={() => showToast('Premium tez kunda! Hozircha barcha funksiyalar bepul.')}
-              className="flex items-center gap-1.5 bg-[#1f6feb] text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform shadow-lg shadow-blue-500/20">
+              className="flex items-center gap-1.5 bg-duo-blue text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform shadow-lg shadow-blue-500/20">
               <Zap size={13} fill="white" />
               {tt('upgrade')}
             </button>
@@ -273,8 +273,8 @@ export default function Profil() {
             user?.phone
               ? <span className="text-[12px] text-green-400">{user.phone}</span>
               : phoneLoading
-                ? <span className="w-4 h-4 border-2 border-[#8b949e] border-t-transparent rounded-full animate-spin" />
-                : <span className="text-[12px] text-[#8b949e]">Qo'shish</span>
+                ? <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
+                : <span className="text-[12px] text-muted">Qo'shish</span>
           }
           onPress={user?.phone ? undefined : handleAddPhone}
           disabled={phoneLoading || !!user?.phone}
@@ -282,17 +282,17 @@ export default function Profil() {
 
         {/* Yopiq guruh */}
         <Item icon={Lock} iconBg="bg-purple-500" label={tt('closedGroup')}
-          right={<span className="text-[12px] text-[#8b949e]">{tt('joinWord')}</span>}
+          right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
       </Section>
 
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
         <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
-          right={<span className="text-[12px] text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
+          right={<span className="text-[12px] text-muted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
 
-        <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label={tt('payHistory')}
+        <Item icon={CreditCard} iconBg="bg-duo-purple" label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
 
         <Item
@@ -304,8 +304,8 @@ export default function Profil() {
         <Item icon={RotateCcw} iconBg="bg-red-500" label={tt('resetProgress')}
           onPress={handleReset} />
 
-        <Item icon={Moon} iconBg="bg-[#8b5cf6]" label={tt('themeLabel')}
-          right={<span className="text-[12px] text-[#8b949e]">{themeLabel}</span>}
+        <Item icon={Moon} iconBg="bg-duo-purple" label={tt('themeLabel')}
+          right={<span className="text-[12px] text-muted">{themeLabel}</span>}
           onPress={() => setShowThemePicker(true)} />
 
         <Item icon={RotateCcw} iconBg="bg-blue-500" label={tt('syncServer')}
@@ -328,7 +328,7 @@ export default function Profil() {
 
       {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-[#1f6feb] text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
+        <div className="fixed bottom-20 left-4 right-4 bg-duo-blue text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
           {toast}
         </div>
       )}
@@ -361,19 +361,19 @@ export default function Profil() {
       {showThemePicker && (
         <PickerSheet
           title={tt('themeLabel')}
-          titleIcon={<Sun size={18} className="text-[#8b5cf6]" />}
+          titleIcon={<Sun size={18} className="text-duo-purple" />}
           value={settings.theme}
           options={[
-            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-[#fbbf24]" /> },
-            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-[#a78bfa]" /> },
-            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-[#60a5fa]" /> },
+            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-duo-yellow" /> },
+            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-duo-purple" /> },
+            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-duo-blue" /> },
           ]}
           onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
           onClose={() => setShowThemePicker(false)}
         />
       )}
 
-      <p className="text-center text-[10px] text-[#484f58] mt-3">v1.1.0 · Build 2026.08</p>
+      <p className="text-center text-[10px] text-lineStrong mt-3">v1.1.0 · Build 2026.08</p>
     </div>
   )
 }

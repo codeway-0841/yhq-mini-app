@@ -26,7 +26,7 @@ function Option({ id, text, state, onSelect, answered }: {
   const style =
     state === 'correct' ? 'bg-green-900/60 border-green-500 text-white' :
     state === 'wrong'   ? 'bg-red-900/60   border-red-500   text-white' :
-                          'bg-[#161b22] border-[#30363d] text-[#e6edf3]'
+                          'bg-surface border-line text-fg'
   return (
     <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>
       <div className="flex items-center gap-3">
@@ -77,10 +77,10 @@ export default function AdaptivePage() {
 
   if (!q) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-[#8b949e] px-4">
-        <Brain size={40} className="text-[#1f6feb]" />
+      <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-muted px-4">
+        <Brain size={40} className="text-duo-blue" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
-        <button onClick={() => startSession()} className="bg-[#1f6feb] text-white px-6 py-3 rounded-xl font-bold">
+        <button onClick={() => startSession()} className="bg-duo-blue text-white px-6 py-3 rounded-xl font-bold">
           {tt('adaptive')}
         </button>
       </div>
@@ -91,19 +91,19 @@ export default function AdaptivePage() {
   const answered = selectedOption !== null
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0d1117]">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d]">
-        <button onClick={() => navigate(-1)} className="text-[#8b949e] p-1"><X size={20} /></button>
+    <div className="flex flex-col min-h-screen bg-canvas">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
+        <button onClick={() => navigate(-1)} className="text-muted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
-          <Brain size={16} className="text-[#1f6feb]" />
+          <Brain size={16} className="text-duo-blue" />
           <span className="text-sm font-bold">{tt('adaptiveTitle')}</span>
         </div>
-        <span className="text-xs text-[#8b949e]">{sessionCount} {tt('qAnswered')}</span>
+        <span className="text-xs text-muted">{sessionCount} {tt('qAnswered')}</span>
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 pt-4 pb-24">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs text-[#8b949e]">
+          <span className="text-xs text-muted">
             {(() => {
               const topic = topics.find((t) => t.id === q.topicId)
               return topic ? (settings.language === 'ru' ? topic.nameRu : topic.nameUz) : ''
@@ -113,7 +113,7 @@ export default function AdaptivePage() {
         </div>
         <p className="text-base font-semibold leading-snug mb-5">{q.text}</p>
         {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-[#30363d]">
+          <div className="rounded-xl overflow-hidden mb-4 border border-line">
             <img src={q.image} alt={q.text} className="w-full object-cover max-h-52" />
           </div>
         )}

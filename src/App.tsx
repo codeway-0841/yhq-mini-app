@@ -38,7 +38,7 @@ type TelegramWindow = Window & {
 
 function Layout() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0d1117] text-[#e6edf3]">
+    <div className="flex flex-col min-h-screen bg-canvas text-fg">
       <div className="flex-1 overflow-y-auto pb-4">
         <Suspense fallback={<PageLoader />}>
           <Routes>

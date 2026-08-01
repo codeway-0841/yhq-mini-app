@@ -45,12 +45,12 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
   }
 
   return (
-    <div className="fixed inset-0 z-50 bg-[#0d1117] flex flex-col">
+    <div className="fixed inset-0 z-50 bg-canvas flex flex-col">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#30363d]">
-        <button onClick={onClose} className="text-[#8b949e] hover:text-white text-lg px-1">←</button>
+      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
+        <button onClick={onClose} className="text-muted hover:text-white text-lg px-1">←</button>
         <span className="text-base font-black">{idx + 1}-{ru ? 'урок' : 'dars'}</span>
-        <span className="text-xs font-bold text-[#8b949e] bg-[#21262d] px-2.5 py-1 rounded-lg">
+        <span className="text-xs font-bold text-muted bg-elevated px-2.5 py-1 rounded-lg">
           {idx + 1}/{list.length}
         </span>
       </div>
@@ -80,28 +80,28 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
                 style={{ background: `${mod.color}22`, color: mod.color }}>
                 {i + 1}
               </span>
-              <p className="text-sm leading-relaxed text-[#c9d1d9]">{p}</p>
+              <p className="text-sm leading-relaxed text-muted">{p}</p>
             </div>
           ))}
         </div>
 
         {/* Mavzu bo'yicha mashq kartasi */}
         <button onClick={onPractice}
-          className="w-full rounded-2xl border border-[#30363d] bg-[#161b22] p-4 text-left active:scale-[0.98] transition-transform">
+          className="w-full rounded-2xl border border-line bg-surface p-4 text-left active:scale-[0.98] transition-transform">
           <p className="text-sm font-bold flex items-center gap-2 mb-1">
-            <Dumbbell size={16} className="text-[#8b5cf6]" />
+            <Dumbbell size={16} className="text-duo-purple" />
             {ru ? 'Практика по теме' : "Mavzu bo'yicha mashq"}
           </p>
-          <p className="text-xs text-[#8b949e]">
+          <p className="text-xs text-muted">
             {ru ? 'Тест по вопросам этого модуля' : "Shu modul savollaridan test"}
           </p>
         </button>
       </div>
 
       {/* Pastki tugmalar */}
-      <div className="flex gap-3 px-4 py-3 border-t border-[#30363d]">
+      <div className="flex gap-3 px-4 py-3 border-t border-line">
         <button onClick={() => openTelegramLink('https://t.me/prava_oson_bot')}
-          className="flex-1 py-3.5 rounded-xl bg-[#1f6feb] text-white font-bold flex items-center justify-center gap-2">
+          className="flex-1 py-3.5 rounded-xl bg-duo-blue text-white font-bold flex items-center justify-center gap-2">
           <MessageCircle size={16} />
           {ru ? 'Задать вопрос' : 'Savol berish'}
         </button>
@@ -114,14 +114,14 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         </button>
         {idx < list.length - 1 && (
           <button onClick={() => advance(idx)}
-            className="w-12 py-3.5 rounded-xl bg-[#21262d] text-[#e6edf3] flex items-center justify-center">
+            className="w-12 py-3.5 rounded-xl bg-elevated text-fg flex items-center justify-center">
             <ChevronLeft size={18} className="rotate-180" />
           </button>
         )}
       </div>
 
       {/* progress bar */}
-      <div className="h-1 bg-[#21262d]">
+      <div className="h-1 bg-elevated">
         <div className="h-full transition-all" style={{ width: `${((idx + 1) / list.length) * 100}%`, background: mod.color }} />
       </div>
     </div>
@@ -213,8 +213,8 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
 
         {/* Egri yo'l (SVG) */}
         <svg className="absolute inset-0 mx-auto" width={ROAD_W} height={road.h} fill="none">
-          <path d={road.d} stroke="#30363d" strokeWidth="14" strokeLinecap="round" />
-          <path d={road.d} stroke="#8b949e" strokeWidth="3" strokeDasharray="12 16" strokeLinecap="round" opacity="0.7" />
+          <path d={road.d} stroke="var(--theme-line)" strokeWidth="14" strokeLinecap="round" />
+          <path d={road.d} stroke="var(--theme-fg-muted)" strokeWidth="3" strokeDasharray="12 16" strokeLinecap="round" opacity="0.7" />
         </svg>
 
         {/* Tugunlar */}
@@ -232,24 +232,24 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
                   onClick={() => !locked && onOpenLesson(i)}
                   disabled={locked}
                   className={`rounded-full border-4 flex items-center justify-center transition-all ${active ? 'lesson-glow' : ''} ${
-                    locked ? 'bg-[#21262d] border-[#30363d] w-12 h-12'
+                    locked ? 'bg-elevated border-line w-12 h-12'
                            : done ? 'w-14 h-14' : 'w-14 h-14 active:scale-90'
                   }`}
                   style={{
                     '--glow': `${mod.color}bb`,
-                    borderColor: done || active ? mod.color : '#30363d',
-                    background:  done ? mod.color : locked ? '#21262d' : `${mod.color}cc`,
+                    borderColor: done || active ? mod.color : 'var(--theme-line)',
+                    background:  done ? mod.color : locked ? 'var(--theme-elevated)' : `${mod.color}cc`,
                     boxShadow:   active ? `0 0 18px ${mod.color}88` : done ? `0 0 10px ${mod.color}55` : 'none',
                   } as React.CSSProperties}>
                   {locked
-                    ? <Lock size={16} className="text-[#8b949e]" />
+                    ? <Lock size={16} className="text-muted" />
                     : done
                       ? <Check size={22} className="text-white" />
                       : <Play size={22} className="text-white ml-0.5" fill="currentColor" />
                   }
                 </button>
                 <span className={`text-[10px] font-bold mt-1.5 text-center leading-tight ${
-                  locked ? 'text-[#484f58]' : 'text-[#c9d1d9]'
+                  locked ? 'text-lineStrong' : 'text-muted'
                 }`}>
                   {lessons[mod.id]?.[i]
                     ? (ru ? lessons[mod.id][i].titleRu : lessons[mod.id][i].titleUz).split(' ').slice(0, 2).join(' ')
@@ -296,11 +296,11 @@ export default function Darslik() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => navigate(-1)} aria-label={ru ? 'Назад' : 'Orqaga'}
-            className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
-          <GraduationCap size={22} className="text-[#1f6feb]" />
+            className="text-muted hover:text-white text-xl px-1">←</button>
+          <GraduationCap size={22} className="text-duo-blue" />
           <h1 className="text-xl font-black">{ru ? 'Учебник' : 'Darslik'}</h1>
         </div>
-        <span className="text-sm font-bold text-[#8b949e] bg-[#21262d] px-3 py-1 rounded-full">
+        <span className="text-sm font-bold text-muted bg-elevated px-3 py-1 rounded-full">
           🎓 {totalDone}/{TOTAL_LESSONS}
         </span>
       </div>

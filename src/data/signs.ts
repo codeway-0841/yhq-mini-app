@@ -1,14 +1,14 @@
 // Mock road signs — replace with real images and descriptions later
 
 export const signCategories = Object.freeze([
-  { id: 'ogohlantiruvchi', name: 'Ogohlantiruvchi',              count: 51, color: '#f59e0b', emoji: '⚠️' },
-  { id: 'imtiyoz',         name: 'Imtiyoz',                      count:  9, color: '#3b82f6', emoji: '🔵' },
-  { id: 'taqiqlovchi',     name: 'Taqiqlovchi',                  count: 39, color: '#ef4444', emoji: '🚫' },
-  { id: 'buyuruvchi',      name: 'Buyuruvchi',                   count: 25, color: '#22c55e', emoji: '✅' },
-  { id: 'axborot',         name: 'Axborot-ishora',               count: 88, color: '#8b5cf6', emoji: 'ℹ️' },
-  { id: 'servis',          name: 'Servis',                       count: 18, color: '#06b6d4', emoji: '🏥' },
-  { id: 'qoshimcha',       name: "Qo'shimcha axborot",           count: 61, color: '#f97316', emoji: '📋' },
-  { id: 'transport',       name: "Transport vositalarini taniqlash", count: 14, color: '#84cc16', emoji: '🚗' },
+  { id: 'ogohlantiruvchi', name: 'Ogohlantiruvchi',              count: 51, color: '#ff9600', emoji: '⚠️' },
+  { id: 'imtiyoz',         name: 'Imtiyoz',                      count:  9, color: '#1cb0f6', emoji: '🔵' },
+  { id: 'taqiqlovchi',     name: 'Taqiqlovchi',                  count: 39, color: '#ff4b4b', emoji: '🚫' },
+  { id: 'buyuruvchi',      name: 'Buyuruvchi',                   count: 25, color: '#58cc02', emoji: '✅' },
+  { id: 'axborot',         name: 'Axborot-ishora',               count: 88, color: '#ce82ff', emoji: 'ℹ️' },
+  { id: 'servis',          name: 'Servis',                       count: 18, color: '#1899d6', emoji: '🏥' },
+  { id: 'qoshimcha',       name: "Qo'shimcha axborot",           count: 61, color: '#e59400', emoji: '📋' },
+  { id: 'transport',       name: "Transport vositalarini taniqlash", count: 14, color: '#46a302', emoji: '🚗' },
 ])
 
 export function getSignsByCategory(categoryId: string) {

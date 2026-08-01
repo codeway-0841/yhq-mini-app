@@ -18,13 +18,13 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   return (
     <div className="relative flex-shrink-0">
       {photoUrl ? (
-        <img src={photoUrl} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-[#30363d]" />
+        <img src={photoUrl} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-line" />
       ) : (
-        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#3b82f6] to-[#6366f1] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
+        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
           {letter}
         </div>
       )}
-      <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-[#22c55e] rounded-full border-[2.5px] border-[#0d1117] animate-pulse" />
+      <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-duo-green rounded-full border-[2.5px] border-canvas animate-pulse" />
     </div>
   )
 })
@@ -49,26 +49,26 @@ const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, 
         <Avatar name={name} photoUrl={user?.photoUrl} />
         <div className="text-left min-w-0">
           <p className="text-[15px] font-bold leading-tight text-white truncate">{name}</p>
-          <span className="text-[11px] font-bold text-[#4ade80] tracking-wide flex items-center gap-1">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#4ade80]" />
+          <span className="text-[11px] font-bold text-duo-green tracking-wide flex items-center gap-1">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-duo-green" />
             {riderLabel}
           </span>
         </div>
       </button>
       <div className="flex items-center gap-4">
         <button onClick={onLeaderboard} aria-label="Reyting"
-          className="relative text-[#fbbf24] hover:text-[#f59e0b] transition-colors active:scale-90">
+          className="relative text-duo-yellow hover:text-duo-orange transition-colors active:scale-90">
           <Trophy size={22} fill="currentColor" />
           <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-[9px] font-bold text-white">
             !
           </span>
         </button>
         <button aria-label="Qidirish"
-          className="text-[#8b949e] hover:text-white transition-colors active:scale-90">
+          className="text-muted hover:text-white transition-colors active:scale-90">
           <Search size={21} />
         </button>
         <button onClick={onSettings} aria-label="Sozlamalar"
-          className="text-[#8b949e] hover:text-white transition-colors active:scale-90">
+          className="text-muted hover:text-white transition-colors active:scale-90">
           <Settings size={21} />
         </button>
       </div>
@@ -88,36 +88,36 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
 
   return (
     <div className="mx-4 rounded-2xl p-4 mb-3 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #1a7f3c, #145a2a)' }}>
+      style={{ background: 'linear-gradient(135deg, #58cc02, #46a302)' }}>
 
       <div className="relative z-10">
         {/* Top row: Change date + Streak */}
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] text-green-300/70 flex items-center gap-1">
-            {tt('changeDate')} <span className="text-[10px]">✏️</span>
-          </span>
-          <div className="flex items-center gap-1">
-            <span className="text-amber-400 text-xs">⚡</span>
-            <span className="text-amber-400 font-bold text-xs">{streak} {tt('daysWord')}</span>
-          </div>
+        <span className="text-[11px] text-white/80 flex items-center gap-1">
+          {tt('changeDate')} <span className="text-[10px]">✏️</span>
+        </span>
+        <div className="flex items-center gap-1">
+          <span className="text-white text-xs">⚡</span>
+          <span className="text-white font-bold text-xs">{streak} {tt('daysWord')}</span>
         </div>
+      </div>
 
-        {/* Middle row: Percentage + compact stats */}
-        <div className="flex items-center justify-between mb-2.5">
-          <span className="text-[42px] font-black text-white leading-none">{percent}%</span>
-          <div className="flex items-center gap-2 text-[13px]">
-            <span className="text-green-300 font-semibold">✓ {totalCorrect}</span>
-            <span className="text-red-300 font-semibold">✗ {totalWrong}</span>
-            <span className="text-green-200/60 font-medium">— {remaining}</span>
-          </div>
+      {/* Middle row: Percentage + compact stats */}
+      <div className="flex items-center justify-between mb-2.5">
+        <span className="text-[42px] font-black text-white leading-none">{percent}%</span>
+        <div className="flex items-center gap-2 text-[13px]">
+          <span className="text-white font-semibold">✓ {totalCorrect}</span>
+          <span className="text-white/95 font-semibold">✗ {totalWrong}</span>
+          <span className="text-white/60 font-medium">— {remaining}</span>
         </div>
+      </div>
 
-        {/* Progress bar */}
-        <div className="w-full bg-green-900/50 rounded-full h-[5px] overflow-hidden">
-          <div
-            className="h-full rounded-full transition-all duration-700 ease-out bg-green-400"
-            style={{ width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%` }}
-          />
+      {/* Progress bar */}
+      <div className="w-full bg-black/20 rounded-full h-[5px] overflow-hidden">
+        <div
+          className="h-full rounded-full transition-all duration-700 ease-out bg-white"
+          style={{ width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%` }}
+        />
         </div>
       </div>
     </div>
@@ -132,16 +132,16 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
   return (
     <div className="grid grid-cols-2 gap-3 px-4 mb-3">
       <button onClick={onAllTests}
-        className="flex items-center gap-2.5 rounded-2xl border border-[#30363d] bg-[#161b22] px-3.5 py-3.5 active:scale-[0.97] transition-all hover:border-[#3b82f6]/50 hover:bg-[#1c2333]">
-        <ListChecks size={20} className="text-[#60a5fa] flex-shrink-0" strokeWidth={2} />
-        <span className="text-[13px] font-semibold text-white">{tt('allTests')}</span>
+        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3.5 py-3.5">
+        <ListChecks size={20} className="text-duo-blue flex-shrink-0" strokeWidth={2} />
+        <span className="text-[13px] font-extrabold text-fg">{tt('allTests')}</span>
       </button>
       <button onClick={onFixMistakes}
-        className="relative flex items-center gap-2.5 rounded-2xl border border-[#30363d] bg-[#161b22] px-3.5 py-3.5 active:scale-[0.97] transition-all hover:border-[#f472b6]/50 hover:bg-[#1c2333]">
-        <Heart size={20} className="text-[#f472b6] flex-shrink-0" strokeWidth={2} />
-        <span className="text-[13px] font-semibold text-white">{tt('fixMistakes')}</span>
+        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3.5 py-3.5">
+        <Heart size={20} className="text-duo-red flex-shrink-0" strokeWidth={2} />
+        <span className="text-[13px] font-extrabold text-fg">{tt('fixMistakes')}</span>
         {totalWrong > 0 && (
-          <span className="absolute -top-2 -right-1 bg-[#ef4444] text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+          <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
             {totalWrong}
           </span>
         )}
@@ -174,7 +174,7 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
     <div className="mx-4 mb-3 rounded-2xl relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
-      style={{ background: 'linear-gradient(135deg, #ec4899, #f43f5e, #ef4444)' }}>
+      style={{ background: 'linear-gradient(135deg, #ff4b4b, #d93f3f)' }}>
       {/* Decorative flame SVG */}
       <div className="absolute right-2 top-1/2 -translate-y-1/2 opacity-[0.12]">
         <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
@@ -203,7 +203,7 @@ const DarslikBanner = memo(function DarslikBanner({ lang, onClick }: { lang: 'uz
       <button
         onClick={onClick}
         className="flex items-center justify-between rounded-2xl w-full active:scale-[0.98] transition-transform relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #0ea5e9, #38bdf8, #7dd3fc)' }}
+        style={{ background: 'linear-gradient(135deg, #1cb0f6, #1899d6)' }}
       >
         {/* Subtle shimmer */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer pointer-events-none" />
@@ -250,7 +250,7 @@ const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgC
 })
 
 // ── Grid Card ───────────────────────────────────────────────────────────────
-const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = '#8b949e', onClick }: {
+const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--theme-fg-muted)', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -260,10 +260,10 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
   return (
     <button
       onClick={onClick}
-      className="relative flex items-center gap-3 rounded-2xl border border-[#30363d] bg-[#161b22] px-4 py-3.5 active:scale-[0.96] transition-all w-full hover:border-[#484f58] hover:bg-[#1c2128]"
+      className="btn-3d-ghost relative flex items-center gap-3 rounded-2xl px-4 py-3.5 w-full"
     >
       {badge != null && (
-        <span className="absolute -top-2 -right-1 bg-[#ef4444] text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
           {badge}
         </span>
       )}
@@ -271,7 +271,7 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
         style={{ backgroundColor: iconColor + '18' }}>
         <Icon size={18} strokeWidth={2} style={{ color: iconColor }} />
       </div>
-      <span className="text-[13px] font-semibold text-white text-left leading-tight">{label}</span>
+      <span className="text-[13px] font-extrabold text-fg text-left leading-tight">{label}</span>
     </button>
   )
 })
@@ -347,44 +347,44 @@ export default function Dashboard() {
           icon={Play}
           label={tt('adaptive')}
           subtitle={tt('adaptiveDesc')}
-          bgColor="linear-gradient(135deg, #16a34a, #22c55e)"
-          hoverGlow="rgba(34, 197, 94, 0.15)"
+          bgColor="linear-gradient(135deg, #58cc02, #46a302)"
+          hoverGlow="rgba(88, 204, 2, 0.18)"
           onClick={goAdaptive}
         />
         <FeatureCard
           icon={Swords}
           label={tt('octagon')}
           subtitle={tt('octagonTitle')}
-          bgColor="linear-gradient(135deg, #374151, #4b5563)"
-          hoverGlow="rgba(107, 114, 128, 0.15)"
+          bgColor="linear-gradient(135deg, #ce82ff, #a85ed4)"
+          hoverGlow="rgba(206, 130, 255, 0.18)"
           onClick={goOctagon}
         />
       </div>
 
       {/* Feature grid — 2 columns */}
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#818cf8" onClick={goTopics} />
-        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#2dd4bf" onClick={() => navigate('/biletlar')} />
+        <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#ce82ff" onClick={goTopics} />
+        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#1cb0f6" onClick={() => navigate('/biletlar')} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#60a5fa" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
+        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#1cb0f6" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
+        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#58cc02" onClick={goMode('exam', tt('realExam'))} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#f472b6" onClick={goMode('tricky', tt('distracting'))} />
-        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#fbbf24" badge={savedQuestions.length || null} onClick={goSaved} />
+        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
       </div>
 
       <div className="grid grid-cols-2 gap-3 px-4">
-        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#fbbf24" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#a78bfa" onClick={goMode('numeric', tt('numeric'))} />
+        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#ff9600" onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
       </div>
 
       {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-[#1e1007] border border-[#b45309]/50 text-[#fbbf24] text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-20 left-4 right-4 bg-elevated border-2 border-line text-fg text-xs font-bold px-4 py-3 rounded-2xl text-center z-40 shadow-xl animate-fadeIn">
           ⚠️ {toast}
         </div>
       )}

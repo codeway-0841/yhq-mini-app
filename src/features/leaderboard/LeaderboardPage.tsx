@@ -17,11 +17,11 @@ async function fetchLeaderboard(signal: AbortSignal): Promise<Entry[]> {
 
 function SkeletonRow() {
   return (
-    <div className="flex items-center gap-3 px-4 py-3 border-b border-[#30363d] animate-pulse">
-      <div className="w-6 h-4 bg-[#21262d] rounded" />
-      <div className="w-8 h-8 rounded-full bg-[#21262d]" />
-      <div className="flex-1 h-4 bg-[#21262d] rounded" />
-      <div className="w-10 h-4 bg-[#21262d] rounded" />
+    <div className="flex items-center gap-3 px-4 py-3 border-b border-line animate-pulse">
+      <div className="w-6 h-4 bg-elevated rounded" />
+      <div className="w-8 h-8 rounded-full bg-elevated" />
+      <div className="flex-1 h-4 bg-elevated rounded" />
+      <div className="w-10 h-4 bg-elevated rounded" />
     </div>
   )
 }
@@ -30,12 +30,12 @@ function Medal({ rank }: { rank: number }) {
   if (rank === 1) return <span className="text-lg">🥇</span>
   if (rank === 2) return <span className="text-lg">🥈</span>
   if (rank === 3) return <span className="text-lg">🥉</span>
-  return <span className="text-xs text-[#8b949e] w-6 text-center">{rank}</span>
+  return <span className="text-xs text-muted w-6 text-center">{rank}</span>
 }
 
 function InitialAvatar({ name }: { name: string }) {
   return (
-    <div className="w-8 h-8 rounded-full bg-[#1f6feb] flex items-center justify-center text-white text-xs font-black flex-shrink-0">
+    <div className="w-8 h-8 rounded-full bg-duo-blue flex items-center justify-center text-white text-xs font-black flex-shrink-0">
       {name[0]?.toUpperCase() ?? '?'}
     </div>
   )
@@ -55,15 +55,15 @@ function Podium({ top3 }: { top3: LeaderEntry[] }) {
   const [first, second, third] = [top3[0], top3[1], top3[2]]
   const col = [
     { e: second, medal: '🥈', h: 'h-16', ring: 'ring-[#94a3b8]',  bg: '#94a3b8' },
-    { e: first,  medal: '🥇', h: 'h-24', ring: 'ring-[#fbbf24]',  bg: '#fbbf24' },
-    { e: third,  medal: '🥉', h: 'h-12', ring: 'ring-[#d97706]',  bg: '#d97706' },
+    { e: first,  medal: '🥇', h: 'h-24', ring: 'ring-duo-yellow',  bg: '#fbbf24' },
+    { e: third,  medal: '🥉', h: 'h-12', ring: 'ring-[#ff9600]',  bg: '#ff9600' },
   ]
   return (
     <div className="flex items-end justify-center gap-4 px-4 pt-6 pb-2">
       {col.map(({ e, medal, h, ring, bg }, i) => e && (
         <div key={i} className="flex flex-col items-center gap-1.5 flex-1 max-w-[110px]">
           <span className="text-lg">{medal}</span>
-          <div className={`w-14 h-14 rounded-full bg-[#1f6feb] ring-2 ${ring} flex items-center justify-center text-white text-xl font-black`}>
+          <div className={`w-14 h-14 rounded-full bg-duo-blue ring-2 ${ring} flex items-center justify-center text-white text-xl font-black`}>
             {e.name[0]?.toUpperCase() ?? '?'}
           </div>
           <p className="text-xs font-bold truncate max-w-full">{e.name}</p>
@@ -101,15 +101,15 @@ export default function LeaderboardPage() {
 
   return (
     <div className="pb-24">
-      <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-[#30363d]">
+      <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-line">
         <button onClick={() => navigate(-1)} aria-label="Orqaga"
-          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+          className="text-muted hover:text-white text-xl px-1">←</button>
         <Trophy size={20} className="text-yellow-400" />
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>
       </div>
 
       {error && (
-        <p className="text-center text-[#8b949e] text-sm py-16">{tt('leaderboardError')}</p>
+        <p className="text-center text-muted text-sm py-16">{tt('leaderboardError')}</p>
       )}
 
       {!entries && !error && Array.from({ length: 10 }, (_, i) => <SkeletonRow key={i} />)}
@@ -120,7 +120,7 @@ export default function LeaderboardPage() {
         <div className="mt-2">
           {entries.map((entry) => (
             <div key={entry.userId}
-              className={`flex items-center gap-3 px-4 py-3 border-b border-[#30363d] ${entry.isYou ? 'bg-[#1f6feb]/10' : ''}`}>
+              className={`flex items-center gap-3 px-4 py-3 border-b border-line ${entry.isYou ? 'bg-duo-blue/10' : ''}`}>
               <div className="w-8 flex items-center justify-center flex-shrink-0">
                 <Medal rank={entry.rank} />
               </div>
@@ -129,7 +129,7 @@ export default function LeaderboardPage() {
                 <p className="text-sm font-semibold truncate">
                   {entry.name}
                   {entry.isYou && (
-                    <span className="ml-1.5 text-[10px] text-[#1f6feb] font-bold">{tt('youLabel')}</span>
+                    <span className="ml-1.5 text-[10px] text-duo-blue font-bold">{tt('youLabel')}</span>
                   )}
                 </p>
                 {entry.streak > 0 && (
@@ -143,12 +143,12 @@ export default function LeaderboardPage() {
       )}
 
       {notInTop50 && user && (
-        <div className="mx-4 mt-4 bg-[#161b22] border border-[#30363d] rounded-2xl px-4 py-3">
-          <p className="text-xs text-[#8b949e] mb-2">{tt('yourRank')}</p>
+        <div className="mx-4 mt-4 bg-surface border border-line rounded-2xl px-4 py-3">
+          <p className="text-xs text-muted mb-2">{tt('yourRank')}</p>
           <div className="flex items-center gap-3">
             <InitialAvatar name={user.firstName} />
             <span className="flex-1 text-sm font-semibold">{user.firstName}</span>
-            <span className="text-xs text-[#8b949e]">{tt('notInTop50')}</span>
+            <span className="text-xs text-muted">{tt('notInTop50')}</span>
           </div>
         </div>
       )}

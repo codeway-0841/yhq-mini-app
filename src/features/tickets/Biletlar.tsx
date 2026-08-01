@@ -62,15 +62,15 @@ export default function Biletlar() {
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => navigate(-1)} aria-label={tt('backWord')}
-          className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
+          className="text-muted hover:text-white text-xl px-1">←</button>
         <h1 className="text-xl font-black">{tt('tickets')}</h1>
       </div>
 
-      <div className="flex gap-2 mb-4 bg-[#161b22] p-1 rounded-xl">
+      <div className="flex gap-2 mb-4 bg-surface p-1 rounded-xl">
         {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)}
             className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-colors ${
-              tab === t.id ? 'bg-[#1f6feb] text-white' : 'text-[#8b949e] hover:text-white'
+              tab === t.id ? 'bg-duo-blue text-white' : 'text-muted hover:text-white'
             }`}>
             {t.label}
           </button>
@@ -85,7 +85,7 @@ export default function Biletlar() {
               className={`relative flex flex-col items-center justify-center rounded-2xl border p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden ${
                 wrongCount > 0
                   ? 'border-red-700/60 bg-red-900/15'
-                  : 'border-[#30363d] bg-[#161b22]'
+                  : 'border-line bg-surface'
               }`}>
               {wrongCount > 0 && (
                 <span className="absolute top-1.5 right-1.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">
@@ -93,14 +93,14 @@ export default function Biletlar() {
                 </span>
               )}
               <span className="text-sm font-bold">{ticket.title}</span>
-              <span className="text-[10px] text-[#8b949e] mt-0.5">{ticket.questionCount} {tt('question')}</span>
+              <span className="text-[10px] text-muted mt-0.5">{ticket.questionCount} {tt('question')}</span>
             </button>
           )
         })}
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center text-[#8b949e] py-16 text-sm">
+        <div className="text-center text-muted py-16 text-sm">
           {tab === 'errors' ? tt('noErrors') : tt('loadingDots')}
         </div>
       )}

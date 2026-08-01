@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Tema tokenlari (Oson Prava / Duolingo uslubi) ─────────────────────────────
+   Default: dark (#131f24). body[data-theme='light'] — light.
+   Tailwind klasslar (bg-canvas, text-fg, border-line...) shu o'zgaruvchilarga
+   bog'langan — tema almashganda butun ilova avtomatik yangilanadi. */
+:root {
+  --theme-canvas:      #131f24;
+  --theme-surface:     #131f24;
+  --theme-elevated:    #1e293b;
+  --theme-fg:          #ffffff;
+  --theme-fg-muted:    #cbd5e1;
+  --theme-fg-subtle:   #94a3b8;
+  --theme-line:        #334155;
+  --theme-line-strong: #475569;
+  --theme-shadow:      #334155;
+}
+
+body[data-theme='light'] {
+  --theme-canvas:      #f1f5f9;
+  --theme-surface:     #ffffff;
+  --theme-elevated:    #f8fafc;
+  --theme-fg:          #0f172a;
+  --theme-fg-muted:    #475569;
+  --theme-fg-subtle:   #94a3b8;
+  --theme-line:        #e2e8f0;
+  --theme-line-strong: #cbd5e1;
+  --theme-shadow:      #cbd5e1;
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -11,42 +39,92 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #0d1117;
-  color: #e6edf3;
-  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--theme-canvas);
+  color: var(--theme-fg);
+  font-family: 'Nunito', system-ui, sans-serif;
   overscroll-behavior: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--theme-line); border-radius: 4px; }
 
 /* Safe area for Telegram */
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
 
-/* Light theme — butun sahifa ranglarini avtomatik almashtirish.
-   Filter invert qilinganda body/html fon (#0d1117) ham yorug' bo'ladi.
-   Rasmlar va ikonlar qayta-invert qilinadi (asl ranglarida qoladi). */
-body[data-theme='light'] {
-  filter: invert(93%) hue-rotate(180deg);
+/* ── 3D "chunky" tugmalar (Duolingo uslubi) ──────────────────────────────────
+   Pastki qattiq soya (box-shadow) + bosilganda siqilish.
+   Foydalanish: <button class="btn-3d-green"> yoki custom rang bilan "btn-3d". */
+.btn-3d,
+.btn-3d-green,
+.btn-3d-blue,
+.btn-3d-red,
+.btn-3d-yellow,
+.btn-3d-orange,
+.btn-3d-purple,
+.btn-3d-ghost {
+  --btn-3d-shadow: var(--theme-shadow);
+  box-shadow: 0 4px 0 0 var(--btn-3d-shadow);
+  transition: transform 0.06s ease, box-shadow 0.06s ease, filter 0.15s ease;
+  user-select: none;
+  touch-action: manipulation;
 }
-body[data-theme='light'] img,
-body[data-theme='light'] video {
-  filter: invert(100%) hue-rotate(-180deg);
+.btn-3d:active,
+.btn-3d-green:active,
+.btn-3d-blue:active,
+.btn-3d-red:active,
+.btn-3d-yellow:active,
+.btn-3d-orange:active,
+.btn-3d-purple:active,
+.btn-3d-ghost:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 var(--btn-3d-shadow);
+}
+.btn-3d:disabled,
+.btn-3d-green:disabled,
+.btn-3d-blue:disabled,
+.btn-3d-red:disabled,
+.btn-3d-yellow:disabled,
+.btn-3d-orange:disabled,
+.btn-3d-purple:disabled,
+.btn-3d-ghost:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn-3d-green  { background: #58cc02; --btn-3d-shadow: #46a302; color: #fff; }
+.btn-3d-blue   { background: #1cb0f6; --btn-3d-shadow: #1899d6; color: #fff; }
+.btn-3d-red    { background: #ff4b4b; --btn-3d-shadow: #d93f3f; color: #fff; }
+.btn-3d-yellow { background: #ffc800; --btn-3d-shadow: #e5b400; color: #713f12; }
+.btn-3d-orange { background: #ff9600; --btn-3d-shadow: #e59400; color: #fff; }
+.btn-3d-purple { background: #ce82ff; --btn-3d-shadow: #a85ed4; color: #fff; }
+.btn-3d-ghost  {
+  background: var(--theme-surface);
+  --btn-3d-shadow: var(--theme-shadow);
+  color: var(--theme-fg);
+  border: 2px solid var(--theme-line);
+}
+
+/* Karta — elevated sirt, yumshoq pastki chiziq */
+.card-3d {
+  background: var(--theme-elevated);
+  border: 2px solid var(--theme-line);
+  border-radius: 1.25rem;
 }
 
 /* Darslik active-node glow (modul rangida pulsatsiya) */
 @keyframes lessonGlow {
   0%, 100% { box-shadow: 0 0 0 0 transparent; }
-  50%      { box-shadow: 0 0 20px 5px var(--glow, #fbbf24aa); }
+  50%      { box-shadow: 0 0 20px 5px var(--glow, #ffc800aa); }
 }
 .lesson-glow { animation: lessonGlow 1.6s ease-in-out infinite; }
 
 /* Shimmer — banner ustidan yorug'lik o'tishi */
 @keyframes shimmerSlide {
   0%   { transform: translateX(-120%) skewX(-20deg); }
-  100% { transform: translateX(420%) skewX(-20deg); }
+  100% { transform: translateX(420%)  skewX(-20deg); }
 }
 .shimmer { position: relative; overflow: hidden; }
 .shimmer::after {
@@ -69,17 +147,13 @@ body[data-theme='light'] video {
 
 /* Dashboard animations */
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
+  0%   { transform: translateX(-100%); }
   100% { transform: translateX(200%); }
 }
-.animate-shimmer {
-  animation: shimmer 3s ease-in-out infinite;
-}
+.animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.animate-fadeIn {
-  animation: fadeIn 0.25s ease-out;
-}
+.animate-fadeIn { animation: fadeIn 0.25s ease-out; }
