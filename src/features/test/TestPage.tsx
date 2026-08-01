@@ -146,7 +146,7 @@ export default function TestPage() {
   const handleShareResult = useCallback((correct: number, total: number) => {
     const percent = total > 0 ? Math.round((correct / total) * 100) : 0
     shareUrl(
-      'https://t.me/osonprava_bot',
+      'https://t.me/prava_oson_bot',
       `YHQ test men natijam: ${percent}% (${correct}/${total}). Siz ham sinab ko'ring!`
     )
   }, [])
@@ -208,7 +208,7 @@ export default function TestPage() {
             <Bookmark size={20} fill={isSaved ? 'currentColor' : 'none'} />
           </button>
           <button
-            onClick={() => shareUrl('https://t.me/osonprava_bot', 'YHQ imtihoniga tayyorlaning!')}
+            onClick={() => shareUrl('https://t.me/prava_oson_bot', 'YHQ imtihoniga tayyorlaning!')}
             className="text-[#8b949e] hover:text-white">
             <Share2 size={20} />
           </button>

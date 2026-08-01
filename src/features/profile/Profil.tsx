@@ -280,7 +280,7 @@ export default function Profil() {
         />
         <Item icon={Lock} iconBg="bg-purple-600" label={tt('closedGroup')}
           right={<span className="text-xs text-[#8b949e]">{tt('joinWord')}</span>}
-          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
       </Section>
 
       <Section title={tt('generalSection')}>
@@ -316,13 +316,13 @@ export default function Profil() {
 
       <Section title={tt('helpSection')}>
         <Item icon={MessageCircle} iconBg="bg-green-500"  label={tt('contactUs')}
-          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
         <Item icon={Radio}         iconBg="bg-blue-500"   label={tt('tgChannel')}
-          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
         <Item icon={Star}          iconBg="bg-orange-400" label={tt('rateApp')}
-          onPress={() => openTelegramLink('https://t.me/osonprava_bot')} />
+          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
         <Item icon={Share2}        iconBg="bg-pink-500"   label={tt('shareApp')}
-          onPress={() => shareUrl('https://t.me/osonprava_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
+          onPress={() => shareUrl('https://t.me/prava_oson_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
         <Item icon={Download}      iconBg="bg-blue-400"   label={tt('installApp')}
           onPress={() => showToast(addToHomeScreen())} />
       </Section>

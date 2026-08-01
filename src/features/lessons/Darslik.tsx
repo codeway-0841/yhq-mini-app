@@ -100,7 +100,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
 
       {/* Pastki tugmalar */}
       <div className="flex gap-3 px-4 py-3 border-t border-[#30363d]">
-        <button onClick={() => openTelegramLink('https://t.me/osonprava_bot')}
+        <button onClick={() => openTelegramLink('https://t.me/prava_oson_bot')}
           className="flex-1 py-3.5 rounded-xl bg-[#1f6feb] text-white font-bold flex items-center justify-center gap-2">
           <MessageCircle size={16} />
           {ru ? 'Задать вопрос' : 'Savol berish'}

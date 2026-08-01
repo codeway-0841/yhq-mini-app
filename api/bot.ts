@@ -27,6 +27,7 @@ function ensureProfile(): Promise<unknown> {
       { command: 'leaderboard', description: "Top-10 reyting" },
       { command: 'help',        description: "Yordam" },
       { command: 'about',       description: "Ilova haqida" },
+      { command: 'privacy',     description: "Maxfiylik siyosati" },
     ]),
     bot.api.setMyDescription(
       "YHQ Test — Yo'l harakati qoidalari bo'yicha imtihonga tayyorlanish.\n\n" +
@@ -87,6 +88,11 @@ bot.command('about', async (ctx) => {
     "Omad tilaymiz! 🍀",
     { reply_markup: appKeyboard() }
   )
+})
+
+// ── /privacy — Telegram talab qiladigan maxfiylik sahifasi ──────────────────
+bot.command('privacy', async (ctx) => {
+  await ctx.reply('Maxfiylik siyosati / Privacy Policy:\nhttps://yhq-mini-app.vercel.app/privacy.html')
 })
 
 // ── /stats — needs DB ───────────────────────────────────────────────────────
