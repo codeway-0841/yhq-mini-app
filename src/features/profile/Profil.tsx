@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
-  WifiOff, RotateCcw, Moon, MessageCircle,
+  WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
 import { openTelegramLink, shareUrl } from '../../lib/telegram'
+import PickerSheet from '../../components/PickerSheet'
 import Toggle from '../../shared/components/Toggle'
 
 /** Telegram "Ilovani o'rnatish" — addToHomeScreen API or fallback message */
@@ -142,16 +143,23 @@ export default function Profil() {
   const [, setPhoneError]             = useState<string | null>(null)
   const [toast, setToast]             = useState<string | null>(null)
   const [showNameEdit, setShowNameEdit] = useState(false)
+  const [showLangPicker, setShowLangPicker]   = useState(false)
+  const [showThemePicker, setShowThemePicker] = useState(false)
+
+  const themeLabel = settings.theme === 'dark'
+    ? tt('darkTheme')
+    : settings.theme === 'light'
+      ? tt('lightTheme')
+      : tt('themeSystem')
 
   const showToast = (msg: string) => {
     setToast(msg)
     setTimeout(() => setToast(null), 3000)
   }
 
-  const toggleLanguage = () => {
-    const next = settings.language === 'uz' ? 'ru' as const : 'uz' as const
-    updateSettings({ language: next })
-    useQuestionsStore.getState().setLang(next)
+  const setLanguage = (lang: 'uz' | 'ru') => {
+    updateSettings({ language: lang })
+    useQuestionsStore.getState().setLang(lang)
   }
 
   const name   = displayName
@@ -204,7 +212,6 @@ export default function Profil() {
   }
 
   const offlineOn = settings.offlineMode
-  const themeLabel = settings.theme === 'dark' ? tt('darkTheme') : tt('lightTheme')
 
   return (
     <div className="pt-4 pb-8 safe-bottom">
@@ -283,7 +290,7 @@ export default function Profil() {
       <Section title={tt('generalSection')}>
         <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
           right={<span className="text-[12px] text-[#8b949e]">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
-          onPress={toggleLanguage} />
+          onPress={() => setShowLangPicker(true)} />
 
         <Item icon={CreditCard} iconBg="bg-[#8b5cf6]" label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
@@ -299,7 +306,7 @@ export default function Profil() {
 
         <Item icon={Moon} iconBg="bg-[#8b5cf6]" label={tt('themeLabel')}
           right={<span className="text-[12px] text-[#8b949e]">{themeLabel}</span>}
-          onPress={() => updateSettings({ theme: settings.theme === 'dark' ? 'light' : 'dark' })} />
+          onPress={() => setShowThemePicker(true)} />
 
         <Item icon={RotateCcw} iconBg="bg-blue-500" label={tt('syncServer')}
           onPress={handleSync} />
@@ -332,6 +339,37 @@ export default function Profil() {
           current={name}
           onClose={() => setShowNameEdit(false)}
           onSave={(n) => { setDisplayName(n); showToast('Ism saqlandi ✓') }}
+        />
+      )}
+
+      {/* Ilova tili tanlash — rasmdagidek bottom sheet */}
+      {showLangPicker && (
+        <PickerSheet
+          title={tt('langLabel')}
+          titleIcon={<Globe size={18} />}
+          value={settings.language}
+          options={[
+            { value: 'uz', label: "O'zbekcha" },
+            { value: 'ru', label: 'Русский' },
+          ]}
+          onSelect={(v) => setLanguage(v as 'uz' | 'ru')}
+          onClose={() => setShowLangPicker(false)}
+        />
+      )}
+
+      {/* Mavzu tanlash — rasmdagidek bottom sheet */}
+      {showThemePicker && (
+        <PickerSheet
+          title={tt('themeLabel')}
+          titleIcon={<Sun size={18} className="text-[#8b5cf6]" />}
+          value={settings.theme}
+          options={[
+            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-[#fbbf24]" /> },
+            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-[#a78bfa]" /> },
+            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-[#60a5fa]" /> },
+          ]}
+          onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
+          onClose={() => setShowThemePicker(false)}
         />
       )}
 

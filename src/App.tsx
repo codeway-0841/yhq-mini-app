@@ -60,10 +60,18 @@ function Layout() {
   )
 }
 
-/** Light/Dark tema — settings.theme o'zgarishi bilan body ga qo'llanadi */
+/** Light/Dark tema — settings.theme o'zgarishi bilan body ga qo'llanadi.
+ * 'system' tanlansa, qurilma sozlamasiga ergashiladi (matchMedia). */
 function ThemeEffect() {
   const theme = useAppStore((s) => s.settings.theme)
   useEffect(() => {
+    if (theme === 'system') {
+      const mq = window.matchMedia('(prefers-color-scheme: light)')
+      const apply = () => { document.body.dataset.theme = mq.matches ? 'light' : 'dark' }
+      apply()
+      mq.addEventListener('change', apply)
+      return () => mq.removeEventListener('change', apply)
+    }
     document.body.dataset.theme = theme
   }, [theme])
   return null

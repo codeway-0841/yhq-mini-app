@@ -45,7 +45,7 @@ export const SettingsPatchSchema = z.object({
   fontSize:        z.enum(['small', 'medium', 'large']).optional(),
   fontStyle:       z.enum(['default', 'serif', 'mono']).optional(),
   language:        z.enum(['uz', 'ru']).optional(),
-  theme:           z.enum(['dark', 'light']).optional(),
+  theme:           z.enum(['dark', 'light', 'system']).optional(),
 }).refine(
   (obj) => Object.values(obj).some((v) => v !== undefined),
   { message: 'At least one field required' },

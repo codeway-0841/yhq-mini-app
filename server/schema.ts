@@ -7,7 +7,7 @@ export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
 export const fontSizeEnum = pgEnum('font_size',  ['small', 'medium', 'large'])
 export const fontStyleEnum= pgEnum('font_style', ['default', 'serif', 'mono'])
 export const languageEnum = pgEnum('language',   ['uz', 'ru'])
-export const themeEnum    = pgEnum('theme',       ['dark', 'light'])
+export const themeEnum    = pgEnum('theme',       ['dark', 'light', 'system'])
 
 export const users = pgTable('users', {
   id:        bigint('id', { mode: 'bigint' }).primaryKey(),

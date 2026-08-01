@@ -68,7 +68,7 @@ export interface ApiSettings {
   fontSize: 'small' | 'medium' | 'large'
   fontStyle: 'default' | 'serif' | 'mono'
   language: 'uz' | 'ru'
-  theme: 'dark' | 'light'
+  theme: 'dark' | 'light' | 'system'
   offlineMode: boolean
 }
 
