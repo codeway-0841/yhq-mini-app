@@ -249,7 +249,12 @@ export default async function handler(req: any, res: any) {
     const got = (req?.headers?.['x-telegram-bot-api-secret-token']
       ?? req?.headers?.['X-Telegram-Bot-Api-Secret-Token']) as string | undefined
     if (got !== secret) {
-      res.status(401).send('unauthorized')
+      // Oddiy Node ServerResponse — Express uslubidagi res.status() yo'q!
+      if (typeof res.statusCode === 'number' || res.statusCode === undefined) {
+        res.statusCode = 401
+      }
+      res.setHeader?.('content-type', 'text/plain')
+      res.end?.('unauthorized')
       return
     }
   }
