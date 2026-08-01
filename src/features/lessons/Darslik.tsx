@@ -129,6 +129,40 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
 }
 
 // ── Roadmap yo'lakcha (tobacco Duolingo uslubi) ─────────────────────────────
+// ── Winding road helpers ────────────────────────────────────────────────────
+const ROAD_W = 340
+const ROW_H  = 96
+const NODE_DX = 84
+
+/** Aqlli yo'l bezaklari (seed bilan barqaror) */
+const DECOS = ['🌲', '🚦', '🌳', '🏠', '⚠️', '🌲', '🏢', '🌳']
+function decosFor(modId: number, total: number) {
+  const out: { emoji: string; left: number; top: number }[] = []
+  for (let i = 0; i < total; i++) {
+    const idx = (modId * 7 + i * 3) % DECOS.length
+    const side = i % 2 === 0 ? 0.055 : 0.835   // tugunlar qarama-qarshi tomonda
+    out.push({ emoji: DECOS[idx], left: side, top: 48 + i * ROW_H - 12 })
+  }
+  return out
+}
+
+/** Egri yo'l SVG path d — tugunlar orasida yumshoq egri 400 chiziqlar */
+function roadPath(total: number): { d: string; h: number } {
+  const pt = (i: number): [number, number] => [
+    ROAD_W / 2 + (i % 2 === 0 ? -NODE_DX : NODE_DX),
+    48 + i * ROW_H,
+  ]
+  let d = ''
+  for (let i = 0; i < total; i++) {
+    const [x, y] = pt(i)
+    if (i === 0) { d = `M ${x} ${y}`; continue }
+    const [, py] = pt(i - 1)
+    d += ` Q ${ROAD_W / 2} ${(py + y) / 2}, ${x} ${y}`
+  }
+  return { d, h: 48 + (total - 1) * ROW_H + 70 }
+}
+
+// ── Roadmap yo'lakcha (Duolingo uslubi — winding path) ─────────────────────
 function ModulePath({ mod, doneList, onOpenLesson }: {
   mod: Mod
   doneList: number[]
@@ -138,66 +172,93 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
   const ru = settings.language === 'ru'
   const modTitle = ru ? mod.titleRu : mod.title
   const total = mod.lessonCount
+  const activeIdx = (() => {
+    for (let i = 0; i < total; i++) if (!doneList.includes(i)) return i
+    return -1   // hammasi tugallangan
+  })()
+  const road = roadPath(total)
+
   return (
     <div className="rounded-2xl p-4 border border-white/10 relative overflow-hidden"
-      style={{ background: `${mod.color}14`, borderColor: `${mod.color}33` }}>
+      style={{ background: `linear-gradient(140deg, ${mod.color}26 0%, ${mod.color}0d 60%, transparent 100%)`, borderColor: `${mod.color}44` }}>
       {/* Modul banner */}
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <span className="text-2xl">{mod.icon}</span>
+          <div className="w-11 h-11 rounded-2xl flex items-center justify-center text-2xl"
+            style={{ background: `${mod.color}2e` }}>
+            {mod.icon}
+          </div>
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-widest opacity-60">
-              {mod.id}-MODUL · {total} TA DARS
+            <p className="text-[10px] font-bold uppercase tracking-widest opacity-70">
+              {mod.id}-{ru ? 'МОДУЛЬ' : 'MODUL'} · {total} {ru ? 'УРОКОВ' : 'TA DARS'}
             </p>
             <p className="text-base font-black" style={{ color: mod.color }}>{modTitle}</p>
           </div>
         </div>
         <div className="text-xs font-black px-2.5 py-1 rounded-full"
-          style={{ background: `${mod.color}22`, color: mod.color }}>
+          style={{ background: `${mod.color}2e`, color: mod.color }}>
           {doneList.length}/{total}
         </div>
       </div>
 
-      {/* Zigzag yo'l — dars tugmalari */}
-      <div className="relative flex flex-col items-center gap-1 py-2">
-        {/* Uzun yo'l chizig'i */}
-        <div className="absolute left-1/2 top-2 bottom-6 w-1 -translate-x-1/2 rounded-full opacity-30"
-          style={{ background: `repeating-linear-gradient(to bottom, ${mod.color} 0 10px, transparent 10px 20px)` }} />
+      {/* Winding yo'l */}
+      <div className="relative" style={{ height: road.h }}>
+        {/* Bezaklar */}
+        {decosFor(mod.id, total).map((dc, i) => (
+          <span key={i} className="absolute text-xl opacity-60 select-none"
+            style={{ left: `${dc.left * 100}%`, top: dc.top }}>
+            {dc.emoji}
+          </span>
+        ))}
 
-        {Array.from({ length: total }, (_, i) => {
-          const done   = doneList.includes(i)
-          const locked = i > 0 && !doneList.includes(i - 1)   // oldingi dars o'qilmagan
-          const offset = i % 2 === 0 ? '-translate-x-10' : 'translate-x-10'
-          return (
-            <div key={i} className={`relative z-10 flex flex-col items-center ${offset}`}>
-              <button
-                onClick={() => !locked && onOpenLesson(i)}
-                disabled={locked}
-                className={`w-14 h-14 rounded-full border-4 flex items-center justify-center transition-all ${
-                  locked ? 'bg-[#21262d] border-[#30363d]' : 'active:scale-90'
-                }`}
-                style={{
-                  borderColor: done ? mod.color : locked ? '#30363d' : '#ffffff33',
-                  background:  done ? mod.color : locked ? '#21262d' : `${mod.color}55`,
-                  boxShadow:   done ? `0 0 12px ${mod.color}66` : 'none',
-                }}>
-                {locked
-                  ? <Lock size={18} className="text-[#8b949e]" />
-                  : done
-                    ? <Check size={22} className="text-white" />
-                    : <Play size={22} className="text-white ml-0.5" fill="currentColor" />
-                }
-              </button>
-              <span className={`text-[10px] font-semibold mt-1 text-center max-w-[90px] ${
-                locked ? 'text-[#484f58]' : 'text-[#c9d1d9]'
-              }`}>
-                {lessons[mod.id]?.[i]
-                  ? (ru ? lessons[mod.id][i].titleRu : lessons[mod.id][i].titleUz).split(' ').slice(0, 2).join(' ')
-                  : `${i + 1}-${ru ? 'урок' : 'dars'}`}
-              </span>
-            </div>
-          )
-        })}
+        {/* Egri yo'l (SVG) */}
+        <svg className="absolute inset-0 mx-auto" width={ROAD_W} height={road.h} fill="none">
+          <path d={road.d} stroke="#30363d" strokeWidth="14" strokeLinecap="round" />
+          <path d={road.d} stroke="#8b949e" strokeWidth="3" strokeDasharray="12 16" strokeLinecap="round" opacity="0.7" />
+        </svg>
+
+        {/* Tugunlar */}
+        <div className="absolute inset-x-0 top-0 mx-auto" style={{ width: ROAD_W }}>
+          {Array.from({ length: total }, (_, i) => {
+            const done    = doneList.includes(i)
+            const active  = i === activeIdx
+            const locked  = i > 0 && !doneList.includes(i - 1)
+            const left    = '50%'
+            const tx      = i % 2 === 0 ? -NODE_DX : NODE_DX
+            return (
+              <div key={i} className="absolute flex flex-col items-center"
+                style={{ left, top: 48 + i * ROW_H, transform: `translateX(calc(-50% + ${tx}px)) translateY(-50%)`, width: 110 }}>
+                <button
+                  onClick={() => !locked && onOpenLesson(i)}
+                  disabled={locked}
+                  className={`rounded-full border-4 flex items-center justify-center transition-all ${active ? 'lesson-glow' : ''} ${
+                    locked ? 'bg-[#21262d] border-[#30363d] w-12 h-12'
+                           : done ? 'w-14 h-14' : 'w-14 h-14 active:scale-90'
+                  }`}
+                  style={{
+                    '--glow': `${mod.color}bb`,
+                    borderColor: done || active ? mod.color : '#30363d',
+                    background:  done ? mod.color : locked ? '#21262d' : `${mod.color}cc`,
+                    boxShadow:   active ? `0 0 18px ${mod.color}88` : done ? `0 0 10px ${mod.color}55` : 'none',
+                  } as React.CSSProperties}>
+                  {locked
+                    ? <Lock size={16} className="text-[#8b949e]" />
+                    : done
+                      ? <Check size={22} className="text-white" />
+                      : <Play size={22} className="text-white ml-0.5" fill="currentColor" />
+                  }
+                </button>
+                <span className={`text-[10px] font-bold mt-1.5 text-center leading-tight ${
+                  locked ? 'text-[#484f58]' : 'text-[#c9d1d9]'
+                }`}>
+                  {lessons[mod.id]?.[i]
+                    ? (ru ? lessons[mod.id][i].titleRu : lessons[mod.id][i].titleUz).split(' ').slice(0, 2).join(' ')
+                    : `${i + 1}-${ru ? 'урок' : 'dars'}`}
+                </span>
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )

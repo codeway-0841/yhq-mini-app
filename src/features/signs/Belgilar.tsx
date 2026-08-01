@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { X } from 'lucide-react'
+import { X, Search } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../shared/data'
 
 interface Sign {
@@ -87,9 +87,43 @@ function SignsGrid({ category, onBack, onSignSelect }: {
   )
 }
 
+/** Qidiruv natijalari — barcha kategoriyalarda */
+function SearchGrid({ query, onSignSelect }: { query: string; onSignSelect: (sign: Sign) => void }) {
+  const results = useMemo(() => {
+    const q = query.toLowerCase()
+    return signCategories
+      .flatMap((cat) => getSignsByCategory(cat.id))
+      .filter((s) => s.name.toLowerCase().includes(q) || s.id.toLowerCase().includes(q) || s.shortName.includes(q))
+      .slice(0, 60)
+  }, [query])
+
+  if (results.length === 0) {
+    return <p className="text-center text-sm text-[#8b949e] py-10">Hech narsa topilmadi</p>
+  }
+  return (
+    <div className="grid grid-cols-3 gap-3">
+      {results.map((sign) => (
+        <button key={sign.id} onClick={() => onSignSelect(sign)}
+          className="flex flex-col items-center rounded-2xl border border-[#30363d] bg-[#161b22] p-3 active:scale-95 transition-transform">
+          <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center mb-2">
+            {sign.image
+              ? <img src={sign.image} alt={sign.name} className="w-10 h-10 object-contain" />
+              : <span className="text-2xl">🚧</span>
+            }
+          </div>
+          <span className="text-[10px] text-[#8b949e] text-center leading-tight line-clamp-2">
+            {sign.shortName}
+          </span>
+        </button>
+      ))}
+    </div>
+  )
+}
+
 export default function Belgilar() {
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
   const [selectedSign, setSelectedSign]         = useState<Sign | null>(null)
+  const [query, setQuery]                       = useState('')
   const navigate = useNavigate()
 
   return (
@@ -101,7 +135,27 @@ export default function Belgilar() {
               className="text-[#8b949e] hover:text-white text-xl px-1">←</button>
             <h1 className="text-xl font-black">Yo'l belgilari</h1>
           </div>
-          <CategoryGrid onSelect={setSelectedCategory} />
+
+          {/* Qidiruv */}
+          <div className="flex items-center gap-2 bg-[#161b22] border border-[#30363d] rounded-xl px-3 py-2.5 mb-4">
+            <Search size={16} className="text-[#8b949e] flex-none" />
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Belgi qidirish..."
+              className="flex-1 bg-transparent text-sm text-white outline-none placeholder:text-[#8b949e]"
+            />
+            {query && (
+              <button onClick={() => setQuery('')} className="text-[#8b949e] hover:text-white">
+                <X size={14} />
+              </button>
+            )}
+          </div>
+
+          {query
+            ? <SearchGrid query={query} onSignSelect={setSelectedSign} />
+            : <CategoryGrid onSelect={setSelectedCategory} />
+          }
         </>
       )}
       {selectedCategory && (

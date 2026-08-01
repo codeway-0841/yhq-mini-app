@@ -41,6 +41,40 @@ function InitialAvatar({ name }: { name: string }) {
   )
 }
 
+interface LeaderEntry {
+  rank: number
+  userId: string
+  name: string
+  score: number
+  streak: number
+  isYou: boolean
+}
+
+/** Top-3 podium: oltin/kumush/bronza */
+function Podium({ top3 }: { top3: LeaderEntry[] }) {
+  const [first, second, third] = [top3[0], top3[1], top3[2]]
+  const col = [
+    { e: second, medal: '🥈', h: 'h-16', ring: 'ring-[#94a3b8]',  bg: '#94a3b8' },
+    { e: first,  medal: '🥇', h: 'h-24', ring: 'ring-[#fbbf24]',  bg: '#fbbf24' },
+    { e: third,  medal: '🥉', h: 'h-12', ring: 'ring-[#d97706]',  bg: '#d97706' },
+  ]
+  return (
+    <div className="flex items-end justify-center gap-4 px-4 pt-6 pb-2">
+      {col.map(({ e, medal, h, ring, bg }, i) => e && (
+        <div key={i} className="flex flex-col items-center gap-1.5 flex-1 max-w-[110px]">
+          <span className="text-lg">{medal}</span>
+          <div className={`w-14 h-14 rounded-full bg-[#1f6feb] ring-2 ${ring} flex items-center justify-center text-white text-xl font-black`}>
+            {e.name[0]?.toUpperCase() ?? '?'}
+          </div>
+          <p className="text-xs font-bold truncate max-w-full">{e.name}</p>
+          <p className="text-sm font-black" style={{ color: bg }}>{e.score}</p>
+          <div className={`w-full ${h} rounded-t-xl opacity-30`} style={{ background: bg }} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function LeaderboardPage() {
   const { settings, user } = useAppStore()
   const navigate = useNavigate()
@@ -80,8 +114,10 @@ export default function LeaderboardPage() {
 
       {!entries && !error && Array.from({ length: 10 }, (_, i) => <SkeletonRow key={i} />)}
 
+      {entries && entries.length >= 3 && <Podium top3={entries.slice(0, 3)} />}
+
       {entries && (
-        <div>
+        <div className="mt-2">
           {entries.map((entry) => (
             <div key={entry.userId}
               className={`flex items-center gap-3 px-4 py-3 border-b border-[#30363d] ${entry.isYou ? 'bg-[#1f6feb]/10' : ''}`}>

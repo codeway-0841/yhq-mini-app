@@ -36,6 +36,26 @@ body[data-theme='light'] video {
   filter: invert(100%) hue-rotate(-180deg);
 }
 
+/* Darslik active-node glow (modul rangida pulsatsiya) */
+@keyframes lessonGlow {
+  0%, 100% { box-shadow: 0 0 0 0 transparent; }
+  50%      { box-shadow: 0 0 20px 5px var(--glow, #fbbf24aa); }
+}
+.lesson-glow { animation: lessonGlow 1.6s ease-in-out infinite; }
+
+/* Shimmer — banner ustidan yorug'lik o'tishi */
+@keyframes shimmerSlide {
+  0%   { transform: translateX(-120%) skewX(-20deg); }
+  100% { transform: translateX(420%) skewX(-20deg); }
+}
+.shimmer { position: relative; overflow: hidden; }
+.shimmer::after {
+  content: ''; position: absolute; top: 0; bottom: 0; width: 30%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  animation: shimmerSlide 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
 /* Smooth scroll for question strip */
 .scroll-smooth-x {
   scroll-behavior: smooth;

@@ -78,13 +78,25 @@ export default function Biletlar() {
       </div>
 
       <div className="grid grid-cols-3 gap-2.5">
-        {filtered.map((ticket) => (
-          <button key={ticket.id} onClick={() => handleTicket(ticket)}
-            className="relative flex flex-col items-center justify-center rounded-2xl border border-[#30363d] bg-[#161b22] p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden">
-            <span className="text-sm font-bold">{ticket.title}</span>
-            <span className="text-[10px] text-[#8b949e] mt-0.5">{ticket.questionCount} {tt('question')}</span>
-          </button>
-        ))}
+        {filtered.map((ticket) => {
+          const wrongCount = ticket.questionIds.reduce((s, qid) => s + (wrongByTicket[qid] ?? 0), 0)
+          return (
+            <button key={ticket.id} onClick={() => handleTicket(ticket)}
+              className={`relative flex flex-col items-center justify-center rounded-2xl border p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden ${
+                wrongCount > 0
+                  ? 'border-red-700/60 bg-red-900/15'
+                  : 'border-[#30363d] bg-[#161b22]'
+              }`}>
+              {wrongCount > 0 && (
+                <span className="absolute top-1.5 right-1.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">
+                  {wrongCount}
+                </span>
+              )}
+              <span className="text-sm font-bold">{ticket.title}</span>
+              <span className="text-[10px] text-[#8b949e] mt-0.5">{ticket.questionCount} {tt('question')}</span>
+            </button>
+          )
+        })}
       </div>
 
       {filtered.length === 0 && (
