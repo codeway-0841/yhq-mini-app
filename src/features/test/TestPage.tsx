@@ -189,34 +189,46 @@ export default function TestPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-canvas">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-        <button onClick={handleBack}
-          className={`text-lg px-1 transition-colors ${confirmExit ? 'text-red-400 font-bold' : 'text-muted hover:text-white'}`}>
-          {confirmExit ? '✕' : '←'}
-        </button>
-        <div className="flex items-center gap-1 bg-surface px-3 py-1 rounded-xl border border-line">
-          <span className="text-duo-orange">⏱</span>
-          <span className="font-mono font-bold text-sm text-white">{timer}</span>
-        </div>
-        <div className="flex items-center gap-3">
-          {isFinished && (
-            <button onClick={() => setShowResults(true)} className="text-duo-blue hover:text-blue-300">
-              <BarChart2 size={20} />
-            </button>
-          )}
-          <button onClick={() => toggleSaved(q.id)} className={isSaved ? 'text-yellow-400' : 'text-muted hover:text-white'}>
-            <Bookmark size={20} fill={isSaved ? 'currentColor' : 'none'} />
+      <div className="relative flex items-center justify-between px-4 py-3 border-b border-line">
+        <div className="flex items-center gap-2">
+          <button onClick={handleBack} aria-label="Orqaga"
+            className={`btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center text-lg ${confirmExit ? 'text-duo-red' : ''}`}>
+            {confirmExit ? '✕' : '←'}
+          </button>
+          <button onClick={() => toggleSaved(q.id)}
+            className={`btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold ${isSaved ? 'text-duo-yellow' : ''}`}>
+            <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
+            <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/prava_oson_bot', 'YHQ imtihoniga tayyorlaning!')}
-            className="text-muted hover:text-white">
-            <Share2 size={20} />
+            className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold">
+            <Share2 size={16} />
+            <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
-          <button onClick={() => setShowSettings(true)} className="text-muted hover:text-white"><Settings size={20} /></button>
+        </div>
+
+        <div className="flex items-center gap-1 bg-surface px-3 py-1 rounded-xl border border-line sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+          <span className="text-duo-yellow text-sm">⏱</span>
+          <span className="font-mono font-black text-sm text-fg">{timer}</span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {isFinished && (
+            <button onClick={() => setShowResults(true)} aria-label="Natijalar"
+              className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center text-duo-blue">
+              <BarChart2 size={17} />
+            </button>
+          )}
+          <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
+            className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
+            <Settings size={17} />
+          </button>
           <button
             onClick={() => { setToast(tt('flagThanks')); setTimeout(() => setToast(null), 3000) }}
-            className="text-muted hover:text-white">
-            <Flag size={20} />
+            aria-label="Xatolik haqida xabar berish"
+            className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
+            <Flag size={16} />
           </button>
         </div>
       </div>
@@ -230,26 +242,30 @@ export default function TestPage() {
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
       <div className="flex-1 overflow-y-auto px-4 pb-4">
-        <p className="text-center text-xs text-muted mb-2 font-medium">
-          {current + 1} / {activeQuestions.length}
-          {topicLabel ? ` · ${topicLabel}` : ''}
-        </p>
-        <p className={`text-center font-semibold mb-4 leading-snug ${
-          fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-xl' : 'text-base'
-        }`}>
-          {q.text}
-        </p>
-        {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-line cursor-zoom-in"
-            onClick={() => setZoomed(true)}>
-            <img src={q.image} alt="savol" className="w-full object-cover max-h-52" />
+        <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
+          <div className="lg:col-start-1 lg:row-start-1">
+            <p className="text-center lg:text-left text-xs text-muted mb-2 font-medium">
+              {current + 1} / {activeQuestions.length}
+              {topicLabel ? ` · ${topicLabel}` : ''}
+            </p>
+            <p className={`text-center lg:text-left font-semibold mb-4 leading-snug ${
+              fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-xl' : 'text-base'
+            }`}>
+              {q.text}
+            </p>
           </div>
-        )}
-        <div>
-          {q.options.map((opt) => (
-            <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
-              onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
-          ))}
+          {q.image && (
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in"
+              onClick={() => setZoomed(true)}>
+              <img src={q.image} alt="savol" className="w-full object-cover max-h-52 lg:max-h-80" />
+            </div>
+          )}
+          <div className="lg:col-start-1 lg:row-start-2">
+            {q.options.map((opt) => (
+              <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
+                onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
+            ))}
+          </div>
         </div>
       </div>
 

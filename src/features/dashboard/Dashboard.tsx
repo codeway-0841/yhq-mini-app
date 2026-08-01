@@ -48,7 +48,7 @@ const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, 
       <button onClick={onProfile} className="flex items-center gap-3 active:opacity-70 transition-opacity min-w-0">
         <Avatar name={name} photoUrl={user?.photoUrl} />
         <div className="text-left min-w-0">
-          <p className="text-[15px] font-bold leading-tight text-white truncate">{name}</p>
+          <p className="text-[15px] font-extrabold leading-tight text-fg truncate">{name}</p>
           <span className="text-[11px] font-bold text-duo-green tracking-wide flex items-center gap-1">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-duo-green" />
             {riderLabel}
@@ -64,11 +64,11 @@ const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, 
           </span>
         </button>
         <button aria-label="Qidirish"
-          className="text-muted hover:text-white transition-colors active:scale-90">
+          className="text-muted hover:text-fg transition-colors active:scale-90">
           <Search size={21} />
         </button>
         <button onClick={onSettings} aria-label="Sozlamalar"
-          className="text-muted hover:text-white transition-colors active:scale-90">
+          className="text-muted hover:text-fg transition-colors active:scale-90">
           <Settings size={21} />
         </button>
       </div>
@@ -76,7 +76,7 @@ const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, 
   )
 })
 
-// ── Progress Card ───────────────────────────────────────────────────────────
+// ── Progress Card (Oson Prava uslubi: to'q yashil, minimal) ─────────────────
 const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   lang: 'uz' | 'ru'
@@ -87,44 +87,39 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
   const remaining = Math.max(0, total - totalAnswered)
 
   return (
-    <div className="mx-4 rounded-2xl p-4 mb-3 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #58cc02, #46a302)' }}>
-
-      <div className="relative z-10">
-        {/* Top row: Change date + Streak */}
-        <div className="flex items-center justify-between mb-2">
-        <span className="text-[11px] text-white/80 flex items-center gap-1">
+    <div className="mx-4 rounded-3xl p-4 mb-3 relative overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #2d5742, #14301e)' }}>
+      {/* Yuqori qator: sana + streak */}
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-[12px] font-semibold text-white/80 flex items-center gap-1">
           {tt('changeDate')} <span className="text-[10px]">✏️</span>
         </span>
         <div className="flex items-center gap-1">
-          <span className="text-white text-xs">⚡</span>
-          <span className="text-white font-bold text-xs">{streak} {tt('daysWord')}</span>
+          <span className="text-duo-yellow text-xs">⚡</span>
+          <span className="text-white font-extrabold text-xs">{streak} {tt('daysWord')}</span>
         </div>
       </div>
-
-      {/* Middle row: Percentage + compact stats */}
-      <div className="flex items-center justify-between mb-2.5">
+      {/* O'rta: % + statistikalar */}
+      <div className="flex items-end justify-between mb-2.5">
         <span className="text-[42px] font-black text-white leading-none">{percent}%</span>
-        <div className="flex items-center gap-2 text-[13px]">
-          <span className="text-white font-semibold">✓ {totalCorrect}</span>
-          <span className="text-white/95 font-semibold">✗ {totalWrong}</span>
-          <span className="text-white/60 font-medium">— {remaining}</span>
+        <div className="flex items-center gap-2.5 text-[12px] font-extrabold">
+          <span className="text-duo-green">✓ {totalCorrect}</span>
+          <span className="text-duo-red">✗ {totalWrong}</span>
+          <span className="text-white/60">— {remaining}</span>
         </div>
       </div>
-
       {/* Progress bar */}
-      <div className="w-full bg-black/20 rounded-full h-[5px] overflow-hidden">
+      <div className="w-full bg-black/25 rounded-full h-[6px] overflow-hidden">
         <div
-          className="h-full rounded-full transition-all duration-700 ease-out bg-white"
+          className="h-full rounded-full transition-all duration-700 ease-out bg-duo-green"
           style={{ width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%` }}
         />
-        </div>
       </div>
     </div>
   )
 })
 
-// ── Quick Action Buttons (Barcha testlar / Xatolarni tuzatish) ──────────
+// ── Quick Action Buttons (Barcha testlar / Xatolarni tuzatish) ──────────────
 const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, onFixMistakes }: {
   totalWrong: number; lang: 'uz' | 'ru'; onAllTests: () => void; onFixMistakes: () => void
 }) {
@@ -132,13 +127,17 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
   return (
     <div className="grid grid-cols-2 gap-3 px-4 mb-3">
       <button onClick={onAllTests}
-        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3.5 py-3.5">
-        <ListChecks size={20} className="text-duo-blue flex-shrink-0" strokeWidth={2} />
+        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3 py-3.5">
+        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#1cb0f626' }}>
+          <ListChecks size={19} className="text-duo-blue" strokeWidth={2.2} />
+        </span>
         <span className="text-[13px] font-extrabold text-fg">{tt('allTests')}</span>
       </button>
       <button onClick={onFixMistakes}
-        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3.5 py-3.5">
-        <Heart size={20} className="text-duo-red flex-shrink-0" strokeWidth={2} />
+        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-3.5">
+        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#ff4b4b26' }}>
+          <Heart size={19} className="text-duo-red" strokeWidth={2.2} />
+        </span>
         <span className="text-[13px] font-extrabold text-fg">{tt('fixMistakes')}</span>
         {totalWrong > 0 && (
           <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
@@ -149,6 +148,63 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
     </div>
   )
 })
+
+// ── Feature Card (Darslik / Test yechish / Oktagon) — gorizontal, 3D ───────
+const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, shadowColor, iconColor, onClick }: {
+  icon: React.ElementType
+  label: string
+  subtitle: string
+  bgColor: string
+  shadowColor: string
+  iconColor: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="btn-3d flex items-center justify-between gap-2 rounded-3xl p-3.5 min-h-[112px] w-full relative overflow-hidden text-left"
+      style={{ background: bgColor, '--btn-3d-shadow': shadowColor } as React.CSSProperties}
+    >
+      <div className="relative z-10 min-w-0">
+        <p className="text-[15px] font-black text-white leading-tight">{label}</p>
+        <p className="text-[10.5px] font-semibold text-white/80 mt-1 leading-snug line-clamp-2">{subtitle}</p>
+      </div>
+      <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 relative z-10">
+        <Icon size={22} style={{ color: iconColor }} strokeWidth={2.4} />
+      </div>
+    </button>
+  )
+})
+
+// ── Grid Card ───────────────────────────────────────────────────────────────
+const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--theme-fg-subtle)', onClick }: {
+  icon: React.ElementType
+  label: string
+  badge?: number | null
+  iconColor?: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-3.5 w-full"
+    >
+      {badge != null && (
+        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+          {badge}
+        </span>
+      )}
+      <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: iconColor + '26' }}>
+        <Icon size={18} strokeWidth={2.2} style={{ color: iconColor }} />
+      </div>
+      <span className="text-[12px] font-extrabold text-fg text-left leading-tight">{label}</span>
+    </button>
+  )
+})
+
+// ── Promo banner — VAQTINCHA O'CHIQ. Qayta yoqish: SHOW_PROMO = true ────────
+const SHOW_PROMO = false
 
 // ── Promo Countdown ─────────────────────────────────────────────────────────
 function useCountdown() {
@@ -175,13 +231,11 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   return (
     <div className="mx-4 mb-3 rounded-2xl relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
       style={{ background: 'linear-gradient(135deg, #ff4b4b, #d93f3f)' }}>
-      {/* Decorative flame SVG */}
       <div className="absolute right-2 top-1/2 -translate-y-1/2 opacity-[0.12]">
         <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
           <path d="M12 23a7 7 0 0 1-7-7c0-3 2-5 3.5-7.5S12 3 12 1c0 0 4 3 6.5 7.5S22 13 22 16a7 7 0 0 1-7 7h-3z" />
         </svg>
       </div>
-
       <div className="relative z-10 p-4 flex items-center justify-between">
         <p className="text-white text-[13px] font-bold leading-snug max-w-[55%]">
           {text}
@@ -192,87 +246,6 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
         </span>
       </div>
     </div>
-  )
-})
-
-// ── Darslik Banner ──────────────────────────────────────────────────────────
-const DarslikBanner = memo(function DarslikBanner({ lang, onClick }: { lang: 'uz' | 'ru'; onClick: () => void }) {
-  const tt = useT(lang)
-  return (
-    <div className="px-4 mb-3">
-      <button
-        onClick={onClick}
-        className="flex items-center justify-between rounded-2xl w-full active:scale-[0.98] transition-transform relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #1cb0f6, #1899d6)' }}
-      >
-        {/* Subtle shimmer */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer pointer-events-none" />
-        <div className="relative z-10 p-4 text-left">
-          <p className="text-[16px] font-extrabold text-white">{tt('lessons')}</p>
-          <p className="text-[12px] text-white/70 mt-0.5">{tt('darslikDesc')}</p>
-        </div>
-        <div className="relative z-10 pr-4">
-          <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center backdrop-blur-sm">
-            <GraduationCap size={28} className="text-white" strokeWidth={1.8} />
-          </div>
-        </div>
-      </button>
-    </div>
-  )
-})
-
-// ── Feature Card (Test yechish / Oktagon) ───────────────────────────────────
-const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, hoverGlow, onClick }: {
-  icon: React.ElementType
-  label: string
-  subtitle: string
-  bgColor: string
-  hoverGlow: string
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex flex-col items-start gap-2 rounded-2xl p-4 min-h-[130px] active:scale-[0.96] transition-all w-full relative overflow-hidden group"
-      style={{ background: bgColor }}
-    >
-      {/* Hover glow */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
-        style={{ background: `radial-gradient(ellipse at center, ${hoverGlow}, transparent 70%)` }} />
-
-      <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-1 backdrop-blur-sm relative z-10">
-        <Icon size={26} className="text-white" strokeWidth={1.8} />
-      </div>
-      <span className="text-[15px] font-bold text-white relative z-10">{label}</span>
-      <span className="text-[11px] text-white/55 relative z-10">{subtitle}</span>
-    </button>
-  )
-})
-
-// ── Grid Card ───────────────────────────────────────────────────────────────
-const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--theme-fg-muted)', onClick }: {
-  icon: React.ElementType
-  label: string
-  badge?: number | null
-  iconColor?: string
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="btn-3d-ghost relative flex items-center gap-3 rounded-2xl px-4 py-3.5 w-full"
-    >
-      {badge != null && (
-        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
-          {badge}
-        </span>
-      )}
-      <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '18' }}>
-        <Icon size={18} strokeWidth={2} style={{ color: iconColor }} />
-      </div>
-      <span className="text-[13px] font-extrabold text-fg text-left leading-tight">{label}</span>
-    </button>
   )
 })
 
@@ -318,7 +291,7 @@ export default function Dashboard() {
         onSettings={() => setShowSettings(true)} onProfile={goProfile}
         onLeaderboard={() => navigate('/reyting')} />
 
-      {/* Progress card */}
+      {/* Progress card — to'q yashil, minimal */}
       <ProgressCard
         totalCorrect={totalCorrect}
         totalWrong={totalWrong}
@@ -335,52 +308,57 @@ export default function Dashboard() {
         onFixMistakes={goMistakes}
       />
 
-      {/* Promo banner with countdown */}
-      <PromoBanner text={tt('promoText')} />
-
-      {/* Darslik banner */}
-      <DarslikBanner lang={settings.language} onClick={goDarslik} />
-
-      {/* Test yechish + Oktagon */}
-      <div className="grid grid-cols-2 gap-3 px-4 mb-3">
+      {/* 3 TENG feature: Darslik / Test yechish / Oktagon */}
+      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
+        <FeatureCard
+          icon={GraduationCap}
+          label={tt('lessons')}
+          subtitle={tt('darslikDesc')}
+          bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
+          shadowColor="#1589c0"
+          iconColor="#1cb0f6"
+          onClick={goDarslik}
+        />
         <FeatureCard
           icon={Play}
           label={tt('adaptive')}
           subtitle={tt('adaptiveDesc')}
           bgColor="linear-gradient(135deg, #58cc02, #46a302)"
-          hoverGlow="rgba(88, 204, 2, 0.18)"
+          shadowColor="#3f9202"
+          iconColor="#58cc02"
           onClick={goAdaptive}
         />
         <FeatureCard
           icon={Swords}
           label={tt('octagon')}
           subtitle={tt('octagonTitle')}
-          bgColor="linear-gradient(135deg, #ce82ff, #a85ed4)"
-          hoverGlow="rgba(206, 130, 255, 0.18)"
+          bgColor="linear-gradient(135deg, #94a3b8, #64748b)"
+          shadowColor="#475569"
+          iconColor="#64748b"
           onClick={goOctagon}
         />
       </div>
 
-      {/* Feature grid — 2 columns */}
-      <div className="grid grid-cols-2 gap-3 px-4 mb-3">
+      {/* Feature grid — 3 columns */}
+      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
         <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#ce82ff" onClick={goTopics} />
-        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#1cb0f6" onClick={() => navigate('/biletlar')} />
+        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
+        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#58cc02" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
       </div>
 
-      <div className="grid grid-cols-2 gap-3 px-4 mb-3">
-        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#1cb0f6" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#58cc02" onClick={goMode('exam', tt('realExam'))} />
-      </div>
-
-      <div className="grid grid-cols-2 gap-3 px-4 mb-3">
+      <div className="grid grid-cols-3 gap-3 px-4 mb-3">
+        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
         <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
         <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
       </div>
 
-      <div className="grid grid-cols-2 gap-3 px-4">
-        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#ff9600" onClick={() => navigate('/belgilar')} />
+      <div className="grid grid-cols-3 gap-3 px-4 mb-4">
+        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#1cb0f6" onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
       </div>
+
+      {/* Promo banner — vaqtincha o'chiq (SHOW_PROMO = true qilib qaytariladi) */}
+      {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
 
       {/* Toast */}
       {toast && (
