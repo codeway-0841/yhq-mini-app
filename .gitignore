@@ -19,3 +19,6 @@ frames/
 # debug logs
 vercel-dev.log
 vlogs.log
+
+# terminal crash dumps
+mintty.*.html
