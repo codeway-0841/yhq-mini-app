@@ -20,14 +20,16 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
       {Array.from({ length: total }, (_: unknown, i: number) => {
         const ans       = answers[i]
         const isCurrent = i === current
-        let bg = 'bg-elevated border-2 border-line text-muted'
-        if (ans === 'correct')    bg = 'bg-duo-green border-duo-green text-white'
-        else if (ans === 'wrong') bg = 'bg-duo-red border-duo-red text-white'
-        const ring = isCurrent && ans !== 'correct' && ans !== 'wrong'
-          ? 'border-duo-blue text-fg' : ''
+        // Joriy savol HAR QANDAY holatda ko'k border bilan ajratiladi
+        // (javoblangan: to'liq rang + ko'k border · javobsiz: kulrang + ko'k border)
+        let cls = 'bg-elevated border-2 border-line text-muted'
+        if (ans === 'correct')      cls = 'bg-duo-green text-white' + (isCurrent ? ' border-2 border-duo-blue' : '')
+        else if (ans === 'wrong')   cls = 'bg-duo-red text-white' + (isCurrent ? ' border-2 border-duo-blue' : '')
+        else if (isCurrent)         cls = 'bg-elevated border-2 border-duo-blue text-fg'
         return (
           <button key={i} onClick={() => onSelect(i)}
-            className={`flex-none w-9 h-9 rounded-lg text-[13px] font-black transition-all ${bg} ${ring}`}>
+            aria-current={isCurrent ? 'true' : undefined}
+            className={`flex-none w-9 h-9 rounded-lg text-[13px] font-black transition-all ${cls}`}>
             {i + 1}
           </button>
         )
