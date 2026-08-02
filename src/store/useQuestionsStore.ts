@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { api, dbToQuestion, DbQuestion, DbTopic, Question } from '../lib/api'
+import { useSubjectStore } from './useSubjectStore'
 
 interface QuestionsState {
   questions: Question[]
@@ -9,7 +10,9 @@ interface QuestionsState {
   error:     string | null
   /** Language the currently mapped questions are in. */
   lang:      'uz' | 'ru'
-  load:      (lang: 'uz' | 'ru') => Promise<void>
+  /** Qaysi fan uchun yuklangan (subject almashganda qayta yuklanadi). */
+  subjectId: string
+  load:      (lang: 'uz' | 'ru', subjectId?: string) => Promise<void>
   /** Re-map already-fetched questions to another language — no network call. */
   setLang:   (lang: 'uz' | 'ru') => void
 }
@@ -24,21 +27,18 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   loading:   false,
   error:     null,
   lang:      'uz',
+  subjectId: 'yhq',
 
-  async load(lang) {
-    // Already loaded in this language — nothing to do
-    if (get().loaded && get().lang === lang) return
-    // Raw data present but language changed — just re-map, no network
-    if (get().loaded && rawQuestions.length > 0) {
-      set({ questions: rawQuestions.map((q) => dbToQuestion(q, lang)), lang })
-      return
-    }
+  async load(lang, subjectId) {
+    const sid = subjectId ?? useSubjectStore.getState().subjectId
+    // Shu til + shu fan allaqachon yuklangan
+    if (get().loaded && get().lang === lang && get().subjectId === sid) return
     if (get().loading) return
     set({ loading: true, error: null })
     try {
-      const [raw, topics] = await Promise.all([api.getQuestions(), api.getTopics()])
+      const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
       rawQuestions = raw
-      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang })
+      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
     } catch (e) {
       set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
     } finally {

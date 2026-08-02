@@ -6,11 +6,14 @@ import {
   Play, Swords, ListChecks, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, LayoutGrid, ClipboardCheck, ShieldAlert,
-  Heart,
+  Heart, ChevronDown, Sparkles,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
+import SubjectSheet from '../../components/SubjectSheet'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
@@ -77,12 +80,13 @@ const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, 
 })
 
 // ── Progress Card (Oson Prava uslubi: to'q yashil, minimal) ─────────────────
-const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, lang }: {
+const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, totalPool, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
+  totalPool: number
   lang: 'uz' | 'ru'
 }) {
   const tt = useT(lang)
-  const total     = 1237 // total questions in database
+  const total     = totalPool > 0 ? totalPool : 1237 // serverdan kelgan savollar soni (dinamik)
   const percent   = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
   const remaining = Math.max(0, total - totalAnswered)
 
@@ -258,13 +262,75 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   )
 })
 
+// ── Subject Switcher chip — dashboard yuqorisidagi universal fan tanlagich ──
+const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
+  const subject = useSubjectStore((s) => s.subject)
+  const lang    = useAppStore((s) => s.settings.language)
+  const Icon    = subject.icon
+  return (
+    <div className="px-4 mb-2.5">
+      <button onClick={onOpen}
+        className="btn-3d-ghost w-full flex items-center gap-3 rounded-2xl px-3 py-2.5"
+        aria-label="Fan tanlash">
+        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+          style={{ background: `${subject.color}26`, color: subject.color }}>
+          <Icon size={19} strokeWidth={2.2} />
+        </span>
+        <span className="flex-1 text-left text-[14px] font-extrabold text-fg min-w-0 truncate">
+          {lang === 'ru' ? subject.nameRu : subject.name}
+        </span>
+        <ChevronDown size={18} className="text-subtle flex-shrink-0" />
+      </button>
+    </div>
+  )
+})
+
+// ── Empty State — "tez kunda" fanlar uchun ─────────────────────────────────
+const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch: () => void }) {
+  const subject = useSubjectStore((s) => s.subject)
+  const lang    = useAppStore((s) => s.settings.language)
+  const Icon    = subject.icon
+  return (
+    <div className="mx-4 mt-6 rounded-3xl border-2 border-dashed border-line p-8 flex flex-col items-center text-center">
+      <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4"
+        style={{ background: `${subject.color}26`, color: subject.color }}>
+        <Icon size={32} />
+      </div>
+      <h3 className="text-[17px] font-black text-fg">
+        {lang === 'ru' ? subject.nameRu : subject.name}
+      </h3>
+      <p className="text-[13px] font-semibold text-muted mt-1.5 max-w-[240px]">
+        {lang === 'ru'
+          ? 'Этот предмет скоро будет доступен. Следите за обновлениями!'
+          : "Bu fan tez kunda qo'shiladi. Yangilanishlarni kuzatib boring!"}
+      </p>
+      <button onClick={onSwitch}
+        className="btn-3d-green mt-5 px-6 py-3 rounded-2xl text-[14px] font-extrabold flex items-center gap-2">
+        <Sparkles size={17} />
+        {lang === 'ru' ? 'Выбрать другой предмет' : 'Boshqa fan tanlash'}
+      </button>
+    </div>
+  )
+})
+
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
+  const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
   const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+  const subject  = useSubjectStore((s) => s.subject)
+  const questionsCount = useQuestionsStore((s) => s.questions.length)
   const tt = useT(settings.language)
+
+  // Fan almashtirilganda savollarni shu fanga qarab qayta yuklash (reload yo'q)
+  useEffect(() => {
+    const { load, subjectId } = useQuestionsStore.getState()
+    if (subjectId !== subject.id || !useQuestionsStore.getState().loaded) {
+      void load(settings.language, subject.id)
+    }
+  }, [subject.id, settings.language])
 
   const showToast = useCallback((msg: string) => {
     setToast(msg)
@@ -300,14 +366,34 @@ export default function Dashboard() {
         onSettings={() => setShowSettings(true)} onProfile={goProfile}
         onLeaderboard={() => navigate('/reyting')} />
 
-      {/* Progress card — to'q yashil, minimal */}
-      <ProgressCard
-        totalCorrect={totalCorrect}
-        totalWrong={totalWrong}
-        totalAnswered={totalAnswered}
-        streak={streak}
-        lang={settings.language}
-      />
+      {/* Universal subject switcher */}
+      <SubjectSwitcher onOpen={() => setShowSubjects(true)} />
+
+      {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
+          key=subjectId: fan almashganda smooth fade transition, reload yo'q */}
+      {subject.available ? (
+        <div key={subject.id} className="animate-fadeIn">
+          {/* Demo ma'lumotlar badge — boshqa fanga vaqtincha YHQ bazasi ulangan */}
+          {subject.demoData && (
+            <div className="mx-4 mb-2.5 rounded-2xl border border-duo-yellow/40 bg-duo-yellow/10 px-3.5 py-2.5 flex items-center gap-2">
+              <Sparkles size={15} className="text-duo-yellow flex-shrink-0" />
+              <span className="text-[12px] font-bold text-duo-yellow">
+                {settings.language === 'ru'
+                  ? 'Временные демо-данные — база этого предмета скоро будет подключена'
+                  : "Vaqtinchalik demo ma'lumotlar — bu fanning bazasi tez orada ulanadi"}
+              </span>
+            </div>
+          )}
+
+          {/* Progress card — to'q yashil, minimal */}
+          <ProgressCard
+            totalCorrect={totalCorrect}
+            totalWrong={totalWrong}
+            totalAnswered={totalAnswered}
+            streak={streak}
+            totalPool={questionsCount}
+            lang={settings.language}
+          />
 
       {/* Barcha testlar + Xatolarni tuzatish */}
       <QuickActions
@@ -365,6 +451,10 @@ export default function Dashboard() {
 
       {/* Promo banner — vaqtincha o'chiq (SHOW_PROMO = true qilib qaytariladi) */}
       {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
+        </div>
+      ) : (
+        <SubjectEmpty onSwitch={() => setShowSubjects(true)} />
+      )}
 
       {/* Toast */}
       {toast && (
@@ -374,6 +464,7 @@ export default function Dashboard() {
       )}
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+      {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
     </div>
   )
 }

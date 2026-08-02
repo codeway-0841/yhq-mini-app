@@ -157,3 +157,24 @@ html, body, #root {
   to   { opacity: 1; transform: translateY(0); }
 }
 .animate-fadeIn { animation: fadeIn 0.25s ease-out; }
+
+/* ── Splash / Onboarding animatsiyalari ───────────────────────────────────── */
+@keyframes splashProgress {
+  from { width: 4%; }
+  40%  { width: 55%; }
+  80%  { width: 86%; }
+  to   { width: 96%; }
+}
+.splash-progress { animation: splashProgress 6s ease-out forwards; }
+
+@keyframes splashFloat {
+  0%, 100% { transform: translateY(0) var(--deco-rotate, rotate(0deg)); }
+  50%      { transform: translateY(-8px) var(--deco-rotate, rotate(0deg)); }
+}
+.splash-float { animation: splashFloat 3.4s ease-in-out infinite; }
+
+@keyframes onboardingFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+.onboarding-float { animation: onboardingFloat 3s ease-in-out infinite; }

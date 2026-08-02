@@ -1,9 +1,11 @@
-import { useEffect, lazy, Suspense } from 'react'
+import { useEffect, lazy, Suspense, useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { api } from './lib/api'
 import PageLoader from './components/PageLoader'
+import SplashScreen from './features/onboarding/SplashScreen'
+import Onboarding from './features/onboarding/Onboarding'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 const Dashboard       = lazy(() => import('./features/dashboard/Dashboard'))
@@ -79,6 +81,21 @@ function ThemeEffect() {
 
 export default function App() {
   const syncFromServer = useAppStore((s) => s.syncFromServer)
+  const initialized    = useAppStore((s) => s.initialized)
+  // Onboarding faqat birinchi kirishda ko'rsatiladi
+  const [onboarded, setOnboarded] = useState(() => {
+    try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }
+  })
+
+  // Splash'dan chiqish GARANTIYASI — init 8s dan oshsa majburiy o'tish
+  useEffect(() => {
+    const t = setTimeout(() => {
+      if (!useAppStore.getState().initialized) {
+        useAppStore.setState({ initialized: true })
+      }
+    }, 8000)
+    return () => clearTimeout(t)
+  }, [])
 
   useEffect(() => {
     const tg     = (window as TelegramWindow).Telegram?.WebApp
@@ -98,39 +115,69 @@ export default function App() {
         photo_url:  tgUser.photo_url  ?? '',
       })
         .then(async (data) => {
-          // Akkaunt almashganda lokal no-server ma'lumotlarni tozalash
-          const prevId = useAppStore.getState().user?.id
-          if (prevId && prevId !== data.user.id) {
-            useAppStore.getState().setDisplayName(null)
+          try {
+            // Akkaunt almashganda lokal no-server ma'lumotlarni tozalash
+            const prevId = useAppStore.getState().user?.id
+            if (prevId && prevId !== data.user.id) {
+              useAppStore.getState().setDisplayName(null)
+            }
+            useAppStore.setState({
+              user:           data.user,
+              tariff:         data.user.tariff,
+              settings:       data.settings,
+              streak:         data.progress.streak,
+              totalCorrect:   data.progress.totalCorrect,
+              totalWrong:     data.progress.totalWrong,
+              totalAnswered:  data.progress.totalAnswered,
+              wrongByTicket:  data.progress.wrongByTicket,
+              savedQuestions: data.savedQuestions,
+            })
+            await loadQuestions(data.settings.language).catch(() => {})
+          } finally {
+            // Xato bo'lsa ham splash'dan chiqishi shart
+            useAppStore.setState({ initialized: true })
           }
-          useAppStore.setState({
-            user:           data.user,
-            tariff:         data.user.tariff,
-            settings:       data.settings,
-            streak:         data.progress.streak,
-            totalCorrect:   data.progress.totalCorrect,
-            totalWrong:     data.progress.totalWrong,
-            totalAnswered:  data.progress.totalAnswered,
-            wrongByTicket:  data.progress.wrongByTicket,
-            savedQuestions: data.savedQuestions,
-          })
-          await loadQuestions(data.settings.language)
-          useAppStore.setState({ initialized: true })
         })
         .catch(async () => {
-          await syncFromServer(String(tgUser.id))
-          const lang = useAppStore.getState().settings?.language ?? 'uz'
-          await loadQuestions(lang)
-          useAppStore.setState({ initialized: true })
+          try {
+            await syncFromServer(String(tgUser.id)).catch(() => {})
+            const lang = useAppStore.getState().settings?.language ?? 'uz'
+            await loadQuestions(lang).catch(() => {})
+          } finally {
+            useAppStore.setState({ initialized: true })
+          }
         })
     } else {
       useAppStore.setState({
         user:        { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
         initialized: true,
       })
-      loadQuestions('uz')
+      loadQuestions('uz').catch(() => {})
     }
   }, [syncFromServer])
+
+  const finishOnboarding = () => {
+    try { localStorage.setItem('yhq-onboarded', '1') } catch { /* ignore */ }
+    setOnboarded(true)
+  }
+
+  if (!initialized) {
+    return (
+      <>
+        <ThemeEffect />
+        <SplashScreen />
+      </>
+    )
+  }
+
+  if (!onboarded) {
+    return (
+      <>
+        <ThemeEffect />
+        <Onboarding onDone={finishOnboarding} />
+      </>
+    )
+  }
 
   return (
     <HashRouter>

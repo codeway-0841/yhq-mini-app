@@ -146,6 +146,8 @@ export const api = {
   updatePhone: (userId: string, phone: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone }),
 
-  getQuestions: () => request<DbQuestion[]>('GET', '/questions'),
-  getTopics:    () => request<DbTopic[]>('GET', '/topics'),
+  getQuestions: (subject?: string) =>
+    request<DbQuestion[]>('GET', subject ? `/questions?subject=${encodeURIComponent(subject)}` : '/questions'),
+  getTopics: (subject?: string) =>
+    request<DbTopic[]>('GET', subject ? `/topics?subject=${encodeURIComponent(subject)}` : '/topics'),
 }
