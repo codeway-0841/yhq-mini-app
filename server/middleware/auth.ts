@@ -22,7 +22,7 @@ const USER_SEGMENTS = new Set(['profile', 'progress', 'settings', 'saved', 'user
  * Questions/topics are identical for every user, so auth is NOT required.
  * This lets Vercel's CDN serve them from the edge (huge DB-load win).
  */
-const PUBLIC_GET = new Set(['questions', 'topics'])
+const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard'])
 
 function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
