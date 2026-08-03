@@ -1,10 +1,10 @@
-import { useEffect, useReducer, useCallback, useRef } from 'react'
+import { useEffect, useReducer, useCallback, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Sword, X, Loader2 } from 'lucide-react'
+import { Sword, X, Loader2, WifiOff, RefreshCw } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { getOctagonSocket, type OctagonMsg } from '../../shared/lib/octagon-ws'
+import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
 
 type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
@@ -63,6 +63,7 @@ export default function OctagonPage() {
   const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
   const [s, dispatch] = useReducer(reducer, INIT)
+  const [conn, setConn] = useState<ConnStatus>('connecting')
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = useCallback((msg: string) => {
@@ -87,10 +88,19 @@ export default function OctagonPage() {
     }
   }, [showToast])
 
+  const [attempt, setAttempt] = useState(0)
+
   useEffect(() => {
     const sock = getOctagonSocket(config.wsUrl)
-    return sock.on(handleMsg)
-  }, [handleMsg])
+    const offMsg    = sock.on(handleMsg)
+    const offStatus = sock.onStatus(setConn)
+    return () => { offMsg(); offStatus() }
+  }, [handleMsg, attempt])
+
+  const retryConnect = useCallback(() => {
+    destroyOctagonSocket()
+    setAttempt((a) => a + 1)
+  }, [])
 
   useEffect(() => {
     return () => {
@@ -164,6 +174,24 @@ export default function OctagonPage() {
         </div>
       )}
 
+      {conn === 'reconnecting' && s.phase !== 'idle' && (
+        <div className="mx-4 mt-2 bg-yellow-900/50 border border-yellow-500/40 text-yellow-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+          <Loader2 size={14} className="animate-spin flex-shrink-0" />
+          Aloqa uzildi — qayta ulanmoqda...
+        </div>
+      )}
+
+      {conn === 'failed' && (
+        <div className="mx-4 mt-2 bg-red-900/50 border border-red-500/40 text-red-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+          <WifiOff size={14} className="flex-shrink-0" />
+          Serverga ulanib bo'lmadi
+          <button onClick={retryConnect}
+            className="flex items-center gap-1 underline underline-offset-2 hover:text-white transition-colors">
+            <RefreshCw size={12} /> Qayta urinish
+          </button>
+        </div>
+      )}
+
       <div className="flex-1 flex flex-col items-center justify-center px-4">
         {s.phase === 'idle' && (
           <div className="flex flex-col items-center gap-5 text-center">
@@ -172,7 +200,8 @@ export default function OctagonPage() {
               <h2 className="text-xl font-black mb-1">{tt('octagonTitle')}</h2>
               <p className="text-sm text-muted">Haqiqiy vaqtda raqib bilan bellashuv</p>
             </div>
-            <button onClick={joinQueue} className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base">
+            <button onClick={joinQueue} disabled={conn === 'failed'}
+              className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base disabled:opacity-50 disabled:cursor-not-allowed transition-opacity">
               {tt('findOpponent')}
             </button>
           </div>
@@ -180,11 +209,23 @@ export default function OctagonPage() {
 
         {s.phase === 'searching' && (
           <div className="flex flex-col items-center gap-5 text-center">
-            <Loader2 size={40} className="text-purple-400 animate-spin" />
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-purple-500/30 animate-ping" />
+              <div className="relative w-16 h-16 rounded-full bg-purple-900/60 border border-purple-500/40 flex items-center justify-center">
+                <Sword size={26} className="text-purple-300" />
+              </div>
+            </div>
             <p className="text-base font-bold">{tt('searching')}</p>
-            <p className="text-xs text-muted">Raqib qidirilmoqda...</p>
+            <p className="text-xs text-muted">
+              Raqib qidirilmoqda
+              <span className="inline-flex w-6 justify-start ml-0.5">
+                <span className="animate-bounce" style={{ animationDelay: '0ms' }}>.</span>
+                <span className="animate-bounce" style={{ animationDelay: '150ms' }}>.</span>
+                <span className="animate-bounce" style={{ animationDelay: '300ms' }}>.</span>
+              </span>
+            </p>
             <button onClick={leaveQueue}
-              className="text-sm text-muted border border-line px-5 py-2.5 rounded-xl">
+              className="text-sm text-muted border border-line px-5 py-2.5 rounded-xl hover:text-fg transition-colors">
               {tt('cancel')}
             </button>
           </div>

@@ -19,12 +19,17 @@ export type OctagonSend =
 
 type Listener = (msg: OctagonMsg) => void
 
+/** Connection lifecycle for UI: banner, indicators, retry. */
+export type ConnStatus = 'connecting' | 'open' | 'reconnecting' | 'failed'
+type StatusListener = (s: ConnStatus) => void
+
 const RECONNECT_DELAY_MS = 2000
 const MAX_RECONNECTS     = 5
 
 export class OctagonSocket {
   private ws:              WebSocket | null = null
   private listeners        = new Set<Listener>()
+  private statusListeners  = new Set<StatusListener>()
   private reconnectCount   = 0
   private reconnectTimer:  ReturnType<typeof setTimeout> | null = null
   private closed           = false
@@ -34,6 +39,10 @@ export class OctagonSocket {
     this.url = url
   }
 
+  private emitStatus(s: ConnStatus): void {
+    this.statusListeners.forEach((fn) => fn(s))
+  }
+
   connect(): void {
     if (this.closed) return
     if (
@@ -41,11 +50,13 @@ export class OctagonSocket {
       this.ws?.readyState === WebSocket.CONNECTING
     ) return
 
+    this.emitStatus('connecting')
     const ws = new WebSocket(this.url)
     this.ws  = ws
 
     ws.onopen = () => {
       this.reconnectCount = 0
+      this.emitStatus('open')
     }
 
     ws.onmessage = (e) => {
@@ -67,10 +78,13 @@ export class OctagonSocket {
       if (this.closed) return
       if (this.reconnectCount < MAX_RECONNECTS) {
         this.reconnectCount++
+        this.emitStatus('reconnecting')
         this.reconnectTimer = setTimeout(() => {
           this.reconnectTimer = null
           this.connect()
-        }, RECONNECT_DELAY_MS)
+        }, RECONNECT_DELAY_MS * this.reconnectCount)
+      } else {
+        this.emitStatus('failed')
       }
     }
   }
@@ -90,6 +104,12 @@ export class OctagonSocket {
   on(fn: Listener): () => void {
     this.listeners.add(fn)
     return () => this.listeners.delete(fn)
+  }
+
+  /** Subscribe to connection lifecycle. Returns an unsubscribe function. */
+  onStatus(fn: StatusListener): () => void {
+    this.statusListeners.add(fn)
+    return () => this.statusListeners.delete(fn)
   }
 
   disconnect(): void {
