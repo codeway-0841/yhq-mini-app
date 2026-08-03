@@ -14,6 +14,7 @@ interface State {
   roundCount: number; roundIndex: number; currentQuestionId: number | null
   yourScore: number; oppScore: number
   selected: string | null; ackCorrect: boolean | null; oppAnswered: boolean
+  oppWait: number | null
   result: 'win' | 'lose' | 'draw' | null; toastMsg: string | null
 }
 
@@ -28,6 +29,11 @@ type Action =
   | { type: 'ROUND_RESULT'; yourScore: number; oppScore: number }
   | { type: 'MATCH_END';    yourScore: number; oppScore: number; result: 'win' | 'lose' | 'draw' }
   | { type: 'OPP_DISCONNECTED' }
+  | { type: 'OPP_WAIT';     waitSeconds: number }
+  | { type: 'OPP_BACK' }
+  | { type: 'SYNC';         matchId: string; index: number; questionId: number | null
+      roundCount: number; yourScore: number; oppScore: number
+      opponentName: string; yourAnswer: string | null; oppAnswered: boolean }
   | { type: 'TOAST';        msg: string }
   | { type: 'CLEAR_TOAST' }
 
@@ -35,7 +41,7 @@ const INIT: State = {
   phase: 'idle', matchId: null, opponentName: null,
   roundCount: 0, roundIndex: 0, currentQuestionId: null,
   yourScore: 0, oppScore: 0,
-  selected: null, ackCorrect: null, oppAnswered: false,
+  selected: null, ackCorrect: null, oppAnswered: false, oppWait: null,
   result: null, toastMsg: null,
 }
 
@@ -50,7 +56,13 @@ function reducer(s: State, a: Action): State {
     case 'OPP_ANSWERED':     return { ...s, oppAnswered: true }
     case 'ROUND_RESULT':     return { ...s, yourScore: a.yourScore, oppScore: a.oppScore }
     case 'MATCH_END':        return { ...s, phase: 'match_end', yourScore: a.yourScore, oppScore: a.oppScore, result: a.result }
-    case 'OPP_DISCONNECTED': return { ...s, phase: 'match_end', result: 'win', toastMsg: "Raqib uzildi — g'alaba sizniki!" }
+    case 'OPP_DISCONNECTED': return { ...s, phase: 'match_end', result: 'win', oppWait: null, toastMsg: "Raqib qaytmadi — g'alaba sizniki!" }
+    case 'OPP_WAIT':         return { ...s, oppWait: a.waitSeconds }
+    case 'OPP_BACK':         return { ...s, oppWait: null }
+    case 'SYNC':             return { ...INIT, phase: 'in_round', matchId: a.matchId, opponentName: a.opponentName,
+                                      roundCount: a.roundCount, roundIndex: a.index, currentQuestionId: a.questionId,
+                                      yourScore: a.yourScore, oppScore: a.oppScore,
+                                      selected: a.yourAnswer, oppAnswered: a.oppAnswered }
     case 'TOAST':            return { ...s, toastMsg: a.msg }
     case 'CLEAR_TOAST':      return { ...s, toastMsg: null }
     default: return s
@@ -81,9 +93,16 @@ export default function OctagonPage() {
       case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore }); break
       case 'match_end':        dispatch({ type: 'MATCH_END',    yourScore: msg.yourScore, oppScore: msg.oppScore, result: msg.result }); break
       case 'opp_disconnected': dispatch({ type: 'OPP_DISCONNECTED' }); break
+      case 'opp_waiting':      dispatch({ type: 'OPP_WAIT', waitSeconds: msg.waitSeconds }); break
+      case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast('Raqib qaytdi'); break
+      case 'match_state':
+        dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
+                   roundCount: msg.roundCount, yourScore: msg.yourScore, oppScore: msg.oppScore,
+                   opponentName: msg.opponentName, yourAnswer: msg.yourAnswer, oppAnswered: msg.oppAnswered })
+        break
       case 'error':
         showToast(msg.message)
-        if (msg.message === 'queue_timeout') dispatch({ type: 'CANCEL' })
+        if (msg.message === 'queue_timeout' || msg.message === 'rejoin_failed') dispatch({ type: 'CANCEL' })
         break
     }
   }, [showToast])
@@ -93,26 +112,27 @@ export default function OctagonPage() {
   userRef.current  = user
   const phaseRef = useRef(s.phase)
   phaseRef.current = s.phase
+  const matchIdRef = useRef(s.matchId)
+  matchIdRef.current = s.matchId
 
   useEffect(() => {
     const sock = getOctagonSocket(config.wsUrl)
     const offMsg    = sock.on(handleMsg)
     const offStatus = sock.onStatus((st) => {
       setConn(st)
-      // Server drops the queue entry when the old socket dies — rejoin silently.
       const u = userRef.current
-      if (st === 'open' && phaseRef.current === 'searching' && u) {
-        try {
-          const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
-            .Telegram?.WebApp?.initData
-          sock.send({
-            type: 'join_queue',
-            userId: u.id,
-            name: u.firstName,
-            ...(initData ? { initData } : {}),
-          })
-        } catch { /* next status change retries */ }
-      }
+      if (st !== 'open' || !u) return
+      const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
+        .Telegram?.WebApp?.initData
+      try {
+        // Server drops the queue entry when the old socket dies — rejoin silently.
+        if (phaseRef.current === 'searching') {
+          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
+        } else if ((phaseRef.current === 'in_round' || phaseRef.current === 'matched') && matchIdRef.current) {
+          // Mid-match reconnect within the server grace window — state resyncs.
+          sock.send({ type: 'rejoin', matchId: matchIdRef.current, userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
+        }
+      } catch { /* next status change retries */ }
     })
     return () => { offMsg(); offStatus() }
   }, [handleMsg, attempt])
@@ -198,6 +218,13 @@ export default function OctagonPage() {
         <div className="mx-4 mt-2 bg-yellow-900/50 border border-yellow-500/40 text-yellow-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           Aloqa uzildi — qayta ulanmoqda...
+        </div>
+      )}
+
+      {s.oppWait !== null && s.phase === 'in_round' && (
+        <div className="mx-4 mt-2 bg-yellow-900/50 border border-yellow-500/40 text-yellow-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+          <Loader2 size={14} className="animate-spin flex-shrink-0" />
+          Raqib uzildi — {s.oppWait} soniya kutilmoqda
         </div>
       )}
 

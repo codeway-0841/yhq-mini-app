@@ -9,6 +9,11 @@ export type OctagonMsg =
   | { type: 'opp_answered'; index: number }
   | { type: 'round_result'; index: number; yourScore: number; oppScore: number }
   | { type: 'match_end';    yourScore: number; oppScore: number; result: 'win' | 'lose' | 'draw' }
+  | { type: 'opp_waiting'; waitSeconds: number }
+  | { type: 'opp_reconnected' }
+  | { type: 'match_state'; matchId: string; index: number; questionId: number | null
+      timeLimit: number; roundCount: number; yourScore: number; oppScore: number
+      opponentName: string; yourAnswer: string | null; oppAnswered: boolean }
   | { type: 'opp_disconnected' }
   | { type: 'pong' }
   | { type: 'error'; message: string }
@@ -16,6 +21,7 @@ export type OctagonMsg =
 export type OctagonSend =
   | { type: 'ping' }
   | { type: 'join_queue';  userId: string; name: string; initData?: string }
+  | { type: 'rejoin';      matchId: string; userId: string; name: string; initData?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
   | { type: 'leave_queue'; userId: string }
 

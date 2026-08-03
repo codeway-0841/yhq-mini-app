@@ -8,13 +8,18 @@
  *   opp_answered   { index }
  *   round_result   { index, yourScore, oppScore }
  *   match_end      { yourScore, oppScore, result: 'win'|'lose'|'draw' }
- *   opp_disconnected
+ *   opp_waiting    { waitSeconds }                            ← opponent in reconnect grace window
+ *   opp_reconnected
+ *   opp_disconnected                                          ← grace window expired, opponent wins
+ *   match_state    { matchId, index, questionId|null, ... }   ← state resync after rejoin
  *   error          { message }
  *
  * Protocol (client → server):
- *   join_queue     { userId, name }
+ *   join_queue     { userId, name }   (mid-match join = auto-rejoin)
+ *   rejoin         { matchId, userId, name, initData? }
  *   answer         { matchId, index, optionId }
  *   leave_queue    { userId }
+ *   ping
  */
 
 import { WebSocket, WebSocketServer } from 'ws'
@@ -26,11 +31,12 @@ import { isAuthEnforced } from './middleware/auth'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
-const ROUNDS        = 10
-const ROUND_TIMEOUT = 15_000  // ms per question
-const QUEUE_TIMEOUT = 60_000  // ms to find opponent before giving up
-const MAX_MATCHES   = 500     // hard cap on concurrent matches — protects memory
-const MAX_NAME_LEN  = 64
+const ROUNDS              = 10
+const ROUND_TIMEOUT       = 15_000  // ms per question
+const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
+const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
+const MAX_NAME_LEN        = 64
+const RECONNECT_WINDOW_MS = 12_000  // mid-match disconnect grace before forfeit
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -48,12 +54,13 @@ interface RoundState {
 }
 
 interface Match {
-  id:          string
-  players:     [Player, Player]
-  questionIds: number[]           // server-only; never sent in bulk to clients
-  scores:      Map<string, number>
-  round:       number
-  roundState:  RoundState | null
+  id:              string
+  players:         [Player, Player]
+  questionIds:     number[]           // server-only; never sent in bulk to clients
+  scores:          Map<string, number>
+  round:           number
+  roundState:      RoundState | null
+  disconnectTimer: ReturnType<typeof setTimeout> | null  // reconnect grace window
 }
 
 // ── Module state ───────────────────────────────────────────────────────────
@@ -97,7 +104,7 @@ function startMatch(p1: Player, p2: Player): void {
   const scores      = new Map([[p1.userId, 0], [p2.userId, 0]])
   const match: Match = {
     id: matchId, players: [p1, p2], questionIds,
-    scores, round: 0, roundState: null,
+    scores, round: 0, roundState: null, disconnectTimer: null,
   }
 
   matches.set(matchId, match)
@@ -179,6 +186,49 @@ function cleanupMatch(match: Match): void {
   if (match.roundState && !match.roundState.resolved) {
     clearTimeout(match.roundState.timer)
   }
+  if (match.disconnectTimer) {
+    clearTimeout(match.disconnectTimer)
+    match.disconnectTimer = null
+  }
+}
+
+/**
+ * Reconnect a player into their live match — replace dead socket, cancel the
+ * forfeit timer, resync full state, notify the opponent. Returns false when
+ * there is nothing to rejoin (match already cleaned up).
+ */
+function rejoinMatch(ws: WebSocket, userId: string): boolean {
+  const matchId = playerToMatch.get(userId)
+  if (!matchId) return false
+  const match = matches.get(matchId)
+  if (!match) return false
+  const slot     = match.players.find((p) => p.userId === userId)
+  if (!slot) return false
+  const opponent = match.players.find((p) => p.userId !== userId)
+
+  slot.ws = ws
+  if (match.disconnectTimer) {
+    clearTimeout(match.disconnectTimer)
+    match.disconnectTimer = null
+  }
+
+  const rs = match.roundState
+  const active = rs !== null && !rs.resolved
+  send(ws, {
+    type:         'match_state',
+    matchId:      match.id,
+    index:        match.round,
+    questionId:   active ? match.questionIds[match.round] : null,
+    timeLimit:    ROUND_TIMEOUT,
+    roundCount:   match.questionIds.length,
+    yourScore:    match.scores.get(userId) ?? 0,
+    oppScore:     opponent ? (match.scores.get(opponent.userId) ?? 0) : 0,
+    opponentName: opponent?.name ?? 'Raqib',
+    yourAnswer:   active ? (rs.answers.get(userId) ?? null) : null,
+    oppAnswered:  opponent ? (active ? rs.answers.has(opponent.userId) : false) : false,
+  })
+  if (opponent) send(opponent.ws, { type: 'opp_reconnected' })
+  return true
 }
 
 function handleDisconnect(userId: string): void {
@@ -190,24 +240,35 @@ function handleDisconnect(userId: string): void {
     return
   }
 
-  // Notify opponent and tear down match
   const matchId = playerToMatch.get(userId)
   if (!matchId) return
   const match = matches.get(matchId)
-  if (!match) return
+  if (!match || match.disconnectTimer) return   // already in the grace window
 
+  // Mid-match disconnect: give the player a grace window to come back.
+  // Round timers keep running — a rejoining player loses at most one round.
   const opponent = match.players.find((p) => p.userId !== userId)
-  if (opponent) send(opponent.ws, { type: 'opp_disconnected' })
+  if (opponent) {
+    send(opponent.ws, { type: 'opp_waiting', waitSeconds: RECONNECT_WINDOW_MS / 1000 })
+  }
 
-  cleanupMatch(match)
+  match.disconnectTimer = setTimeout(() => {
+    match.disconnectTimer = null
+    // Never came back — opponent wins by forfeit.
+    const opp = match.players.find((p) => p.userId !== userId)
+    if (opp) send(opp.ws, { type: 'opp_disconnected' })
+    cleanupMatch(match)
+  }, RECONNECT_WINDOW_MS)
 }
 
 // ── Queue join — extracted to handle re-join timer leak ───────────────────
 
 function joinQueue(ws: WebSocket, userId: string, name: string): void {
-  // Already in a match
+  // Coming back to a live match (app relaunch within grace window) — rejoin it
   if (playerToMatch.has(userId)) {
-    send(ws, { type: 'error', message: 'already_in_match' })
+    if (!rejoinMatch(ws, userId)) {
+      send(ws, { type: 'error', message: 'already_in_match' })
+    }
     return
   }
 
@@ -252,6 +313,26 @@ export function attachOctagon(
 
       if (msg.type === 'ping') {
         send(ws, { type: 'pong' })
+        return
+      }
+
+      if (msg.type === 'rejoin') {
+        userId = String(msg.userId ?? '')
+        if (isAuthEnforced()) {
+          const initData = String(msg.initData ?? '')
+          const verified = initData && config.telegram.botToken
+            ? verifyInitData(initData, config.telegram.botToken)
+            : null
+          if (!verified) {
+            send(ws, { type: 'error', message: 'auth_failed' })
+            ws.close(4001, 'Unauthorized')
+            return
+          }
+          userId = String(verified.id)
+        }
+        if (!rejoinMatch(ws, userId)) {
+          send(ws, { type: 'error', message: 'rejoin_failed' })
+        }
         return
       }
 
@@ -320,7 +401,14 @@ export function attachOctagon(
     })
 
     ws.on('close', () => {
-      if (userId) handleDisconnect(userId)
+      if (!userId) return
+      // Stale socket closing after a rejoin replaced it — not a real disconnect
+      const matchId = playerToMatch.get(userId)
+      if (matchId) {
+        const slot = matches.get(matchId)?.players.find((p) => p.userId === userId)
+        if (slot && slot.ws !== ws) return
+      }
+      handleDisconnect(userId)
     })
   })
 }
