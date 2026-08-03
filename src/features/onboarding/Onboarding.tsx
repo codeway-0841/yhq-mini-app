@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {
-  ChevronRight, ChevronLeft, Check, Zap, BookOpen, FlaskConical, Clock3, Rocket,
+  ChevronRight, ChevronLeft, Check, Clock3, Rocket,
 } from 'lucide-react'
 import { SUBJECTS } from '../../config/subjects'
 import { useSubjectStore } from '../../store/useSubjectStore'
@@ -45,19 +45,6 @@ function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
   )
 }
 
-// ── Suzuvchi fan chiplari (welcome ekrani) ─────────────────────────────────
-function FloatChip({ className, style, children, delay = '0s' }: {
-  className?: string; style?: React.CSSProperties
-  children: React.ReactNode; delay?: string
-}) {
-  return (
-    <div className={`absolute w-14 h-14 rounded-2xl flex items-center justify-center onboarding-float ${className ?? ''}`}
-      style={{ animationDelay: delay, ...style }}>
-      {children}
-    </div>
-  )
-}
-
 // ══════════════════════ 1. XUSH KELIBSIZ ════════════════════════════════════
 function WelcomeStep({ onNext }: { onNext: () => void }) {
   return (
@@ -67,31 +54,14 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
         <Sub>Barcha fanlarni bitta ilovada o'rganing va test yeching.</Sub>
       </div>
 
-      {/* Maskot maydoni */}
-      <div className="relative flex-1 flex items-center justify-center my-6">
-        {/* Suzuvchi chiplar */}
-        <FloatChip style={{ background: '#1E5BC6', top: '16%', left: '16%' }} delay="0s">
-          <BookOpen size={26} className="text-white" />
-        </FloatChip>
-        <FloatChip style={{ background: '#e5b400', top: '10%', right: '16%' }} delay="0.4s">
-          <Zap size={26} className="text-white" fill="currentColor" />
-        </FloatChip>
-        <FloatChip style={{ background: '#a85ed4', bottom: '22%', left: '12%' }} delay="0.8s">
-          <span className="text-[26px] font-black text-white">π</span>
-        </FloatChip>
-        <FloatChip style={{ background: '#46a302', bottom: '30%', right: '12%' }} delay="1.2s">
-          <FlaskConical size={26} className="text-white" />
-        </FloatChip>
-
-        {/* Maskot — TODO: user PNG almashtiradi (hozircha placeholder) */}
-        <div className="relative w-56 h-64 rounded-[2rem] flex items-end justify-center overflow-hidden"
-          style={{ background: 'radial-gradient(circle at 50% 35%, #1c3a4a 0%, #0f2433 70%)' }}>
-          <span style={{ fontSize: 120, lineHeight: 1, marginBottom: 8 }}>🧑‍🎓</span>
-          {/* Joylashgan yoshug'i — doira ichida telefon effekti */}
-          <div className="absolute bottom-3 right-3 w-12 h-12 rounded-xl bg-duo-green flex items-center justify-center rotate-6">
-            <Check size={26} className="text-white" strokeWidth={3.2} />
-          </div>
-        </div>
+      {/* Maskot — brend illutsiyasi (fan chiplari ham rasm ichida) */}
+      <div className="relative flex-1 flex items-center justify-center my-4">
+        <img
+          src="/images/onboarding-mascot.webp"
+          alt="IoTest maskoti"
+          className="w-[290px] rounded-[2rem] animate-fadeIn"
+          style={{ boxShadow: '0 24px 48px -16px rgba(88, 204, 2, 0.25)' }}
+        />
       </div>
 
       <BigButton label="Boshlash" onClick={onNext} />
