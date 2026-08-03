@@ -1,4 +1,4 @@
 #!/bin/sh
-npm install
-npm run build
-node dist/server/standalone.js
+npm install --include=dev
+npm run build:server
+node server/dist/standalone.js
