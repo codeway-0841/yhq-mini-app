@@ -4,6 +4,7 @@ import { Sword, X, Loader2, WifiOff, RefreshCw } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
 import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
 
@@ -114,6 +115,9 @@ export default function OctagonPage() {
   phaseRef.current = s.phase
   const matchIdRef = useRef(s.matchId)
   matchIdRef.current = s.matchId
+  const subjectId = useSubjectStore((st) => st.subjectId)
+  const subjectRef = useRef(subjectId)
+  subjectRef.current = subjectId
 
   useEffect(() => {
     const sock = getOctagonSocket(config.wsUrl)
@@ -127,7 +131,7 @@ export default function OctagonPage() {
       try {
         // Server drops the queue entry when the old socket dies — rejoin silently.
         if (phaseRef.current === 'searching') {
-          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
+          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(initData ? { initData } : {}) })
         } else if ((phaseRef.current === 'in_round' || phaseRef.current === 'matched') && matchIdRef.current) {
           // Mid-match reconnect within the server grace window — state resyncs.
           sock.send({ type: 'rejoin', matchId: matchIdRef.current, userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
@@ -161,6 +165,7 @@ export default function OctagonPage() {
         type: 'join_queue',
         userId: user.id,
         name: user.firstName,
+        subjectId: subjectRef.current,
         ...(initData ? { initData } : {}),
       })
     } catch {

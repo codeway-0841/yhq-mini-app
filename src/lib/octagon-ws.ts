@@ -20,7 +20,7 @@ export type OctagonMsg =
 
 export type OctagonSend =
   | { type: 'ping' }
-  | { type: 'join_queue';  userId: string; name: string; initData?: string }
+  | { type: 'join_queue';  userId: string; name: string; subjectId?: string; initData?: string }
   | { type: 'rejoin';      matchId: string; userId: string; name: string; initData?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
   | { type: 'leave_queue'; userId: string }

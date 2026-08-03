@@ -15,7 +15,7 @@
  *   error          { message }
  *
  * Protocol (client → server):
- *   join_queue     { userId, name }   (mid-match join = auto-rejoin)
+ *   join_queue     { userId, name, subjectId? }   (mid-match join = auto-rejoin)
  *   rejoin         { matchId, userId, name, initData? }
  *   answer         { matchId, index, optionId }
  *   leave_queue    { userId }
@@ -28,6 +28,7 @@ import { randomUUID } from 'crypto'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
+import { SUBJECT_IDS, DEFAULT_SUBJECT_ID } from './config/subjects'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -44,6 +45,7 @@ interface Player {
   ws:         WebSocket
   userId:     string
   name:       string
+  subjectId:  string   // faqat bir xil fan tanlagan o'yinchilar juftlashadi
   queueTimer: ReturnType<typeof setTimeout> | null
 }
 
@@ -263,7 +265,7 @@ function handleDisconnect(userId: string): void {
 
 // ── Queue join — extracted to handle re-join timer leak ───────────────────
 
-function joinQueue(ws: WebSocket, userId: string, name: string): void {
+function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: string): void {
   // Coming back to a live match (app relaunch within grace window) — rejoin it
   if (playerToMatch.has(userId)) {
     if (!rejoinMatch(ws, userId)) {
@@ -276,17 +278,17 @@ function joinQueue(ws: WebSocket, userId: string, name: string): void {
   const existing = queue.get(userId)
   if (existing?.queueTimer) clearTimeout(existing.queueTimer)
 
-  // Find a waiting opponent (not self)
-  const waiting = [...queue.values()].find((p) => p.userId !== userId)
+  // Find a waiting opponent (not self) — FAQAT bir xil fan tanlaganlar
+  const waiting = [...queue.values()].find((p) => p.userId !== userId && p.subjectId === subjectId)
   if (waiting) {
     // Remove from queue before startMatch to avoid double-removal races
     queue.delete(waiting.userId)
-    const joiner: Player = { ws, userId, name, queueTimer: null }
+    const joiner: Player = { ws, userId, name, subjectId, queueTimer: null }
     startMatch(waiting, joiner)
     return
   }
 
-  const player: Player = { ws, userId, name, queueTimer: null }
+  const player: Player = { ws, userId, name, subjectId, queueTimer: null }
   player.queueTimer = setTimeout(() => {
     if (queue.get(userId) === player) {
       queue.delete(userId)
@@ -364,7 +366,10 @@ export function attachOctagon(
           return
         }
 
-        joinQueue(ws, userId, name)
+        const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
+          ? String(msg.subjectId)
+          : DEFAULT_SUBJECT_ID
+        joinQueue(ws, userId, name, subjectId)
         return
       }
 
