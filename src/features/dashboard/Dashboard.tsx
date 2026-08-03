@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, memo } from 'react'
+import { useState, useEffect, useCallback, useMemo, memo } from 'react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
@@ -124,8 +124,8 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, tota
 })
 
 // ── Quick Action Buttons (Barcha testlar / Xatolarni tuzatish) ──────────────
-const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, onFixMistakes }: {
-  totalWrong: number; lang: 'uz' | 'ru'; onAllTests: () => void; onFixMistakes: () => void
+const QuickActions = memo(function QuickActions({ mistakesCount, lang, onAllTests, onFixMistakes }: {
+  mistakesCount: number; lang: 'uz' | 'ru'; onAllTests: () => void; onFixMistakes: () => void
 }) {
   const tt = useT(lang)
   return (
@@ -143,9 +143,9 @@ const QuickActions = memo(function QuickActions({ totalWrong, lang, onAllTests, 
           <Heart size={19} className="text-duo-red" strokeWidth={2.2} />
         </span>
         <span className="text-[13px] font-extrabold text-fg">{tt('fixMistakes')}</span>
-        {totalWrong > 0 && (
+        {mistakesCount > 0 && (
           <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
-            {totalWrong}
+            {mistakesCount}
           </span>
         )}
       </button>
@@ -319,10 +319,18 @@ export default function Dashboard() {
   const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
-  const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions } = useAppStore()
+  const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions, wrongByTicket } = useAppStore()
   const subject  = useSubjectStore((s) => s.subject)
   const questionsCount = useQuestionsStore((s) => s.questions.length)
   const tt = useT(settings.language)
+
+  // "Xatolarni tuzatish" badge = hozir yechilmagan xato SAVOLLAR soni.
+  // (wrongByTicket qiymati esa ketma-ket xato urinishlar soni — ro'yxat savollarni sanaydi,
+  //  shuning uchun badge ro'yxat uzunligiga teng bo'lishi kerak: 4 savol = 4, urinishlar 8 emas)
+  const mistakesCount = useMemo(
+    () => Object.values(wrongByTicket).filter((n) => n > 0).length,
+    [wrongByTicket]
+  )
 
   // Fan almashtirilganda savollarni shu fanga qarab qayta yuklash (reload yo'q)
   useEffect(() => {
@@ -397,7 +405,7 @@ export default function Dashboard() {
 
       {/* Barcha testlar + Xatolarni tuzatish */}
       <QuickActions
-        totalWrong={totalWrong}
+        mistakesCount={mistakesCount}
         lang={settings.language}
         onAllTests={goTest}
         onFixMistakes={goMistakes}

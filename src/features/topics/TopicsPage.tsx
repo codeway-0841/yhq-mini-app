@@ -20,8 +20,10 @@ export default function TopicsPage() {
     })).filter(t => t.ids.length > 0)
   , [topics, questions, settings.language])
 
+  // Badge = yechilmagan xato SAVOLLAR soni (ro'yxat uzunligi bilan bir xil bo'lishi kerak),
+  // urinishlar yig'indisi emas — 4 savol 2 martadan xato bo'lsa ro'yxatda 4 ta ko'rinadi.
   const wrongCount = useMemo(
-    () => Object.values(wrongByTicket).reduce((s, n) => s + n, 0),
+    () => Object.values(wrongByTicket).filter((n) => n > 0).length,
     [wrongByTicket]
   )
 

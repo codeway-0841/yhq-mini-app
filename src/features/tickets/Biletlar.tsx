@@ -79,7 +79,8 @@ export default function Biletlar() {
 
       <div className="grid grid-cols-3 gap-2.5">
         {filtered.map((ticket) => {
-          const wrongCount = ticket.questionIds.reduce((s, qid) => s + (wrongByTicket[qid] ?? 0), 0)
+          // Badge = bu biletdagi yechilmagan xato savollar soni (urinishlar yig'indisi emas)
+          const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[qid] ?? 0) > 0).length
           return (
             <button key={ticket.id} onClick={() => handleTicket(ticket)}
               className={`relative flex flex-col items-center justify-center rounded-2xl border p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden ${
