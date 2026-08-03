@@ -150,4 +150,19 @@ export const api = {
     request<DbQuestion[]>('GET', subject ? `/questions?subject=${encodeURIComponent(subject)}` : '/questions'),
   getTopics: (subject?: string) =>
     request<DbTopic[]>('GET', subject ? `/topics?subject=${encodeURIComponent(subject)}` : '/topics'),
+
+  getLeaderboard: (limit: number, userId?: string) =>
+    request<LeaderboardEntry[]>(
+      'GET',
+      `/leaderboard?limit=${limit}${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+}
+
+export interface LeaderboardEntry {
+  rank:   number
+  userId: string
+  name:   string
+  score:  number
+  streak: number
+  isYou:  boolean
 }

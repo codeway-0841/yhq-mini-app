@@ -3,17 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Trophy } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
-
-interface Entry {
-  rank: number; userId: string; name: string
-  score: number; streak: number; isYou: boolean
-}
-
-async function fetchLeaderboard(signal: AbortSignal): Promise<Entry[]> {
-  const res = await fetch('/api/leaderboard?limit=50', { signal })
-  if (!res.ok) throw new Error('leaderboard fetch failed')
-  return res.json() as Promise<Entry[]>
-}
+import { api, type LeaderboardEntry as Entry } from '../../shared/api'
 
 function SkeletonRow() {
   return (
@@ -84,17 +74,12 @@ export default function LeaderboardPage() {
   const [error, setError]     = useState(false)
 
   useEffect(() => {
-    const controller = new AbortController()
-    const timer = setTimeout(() => controller.abort(), 8_000)
-
-    fetchLeaderboard(controller.signal)
+    // api helper initData headerini qo'shadi (production'da auth talab qiladi)
+    // va o'zining 8s timeout'iga ega — alohida AbortController shart emas.
+    api.getLeaderboard(50, user?.id)
       .then(setEntries)
-      .catch((err: unknown) => {
-        if ((err as Error)?.name !== 'AbortError') setError(true)
-      })
-      .finally(() => clearTimeout(timer))
-
-    return () => controller.abort()
+      .catch(() => setError(true))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const notInTop50 = entries !== null && user !== null && !entries.find((e) => e.isYou)

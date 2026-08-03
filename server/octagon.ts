@@ -50,9 +50,10 @@ interface Player {
 }
 
 interface RoundState {
-  answers:  Map<string, string>  // userId → optionId
-  timer:    ReturnType<typeof setTimeout>
-  resolved: boolean
+  answers:   Map<string, string>  // userId → optionId
+  timer:     ReturnType<typeof setTimeout>
+  resolved:  boolean
+  startedAt: number               // rejoin uchun qolgan vaqtni hisoblash
 }
 
 interface Match {
@@ -63,6 +64,7 @@ interface Match {
   round:           number
   roundState:      RoundState | null
   disconnectTimer: ReturnType<typeof setTimeout> | null  // reconnect grace window
+  gapTimer:        ReturnType<typeof setTimeout> | null  // rounds orasidagi 1s pauza
 }
 
 // ── Module state ───────────────────────────────────────────────────────────
@@ -106,7 +108,7 @@ function startMatch(p1: Player, p2: Player): void {
   const scores      = new Map([[p1.userId, 0], [p2.userId, 0]])
   const match: Match = {
     id: matchId, players: [p1, p2], questionIds,
-    scores, round: 0, roundState: null, disconnectTimer: null,
+    scores, round: 0, roundState: null, disconnectTimer: null, gapTimer: null,
   }
 
   matches.set(matchId, match)
@@ -135,7 +137,7 @@ function startRound(match: Match): void {
   const questionId = match.questionIds[index]
   const timer      = setTimeout(() => resolveRound(match, index), ROUND_TIMEOUT)
 
-  match.roundState = { answers: new Map(), timer, resolved: false }
+  match.roundState = { answers: new Map(), timer, resolved: false, startedAt: Date.now() }
 
   for (const p of match.players) {
     send(p.ws, { type: 'question', index, questionId, timeLimit: ROUND_TIMEOUT })
@@ -165,7 +167,13 @@ function resolveRound(match: Match, index: number): void {
   }
 
   match.round++
-  setTimeout(() => startRound(match), 1000)
+  // Orphan guard: match grace-window (yoki boshqa sabab) bilan tozalanib ketishi mumkin —
+  // cleanupMatch match.gapTimer'ni bekor qiladi; bu tekshiruv esa ikki xavfsizlik chizig'i.
+  match.gapTimer = setTimeout(() => {
+    match.gapTimer = null
+    if (!matches.has(match.id)) return
+    startRound(match)
+  }, 1000)
 }
 
 function endMatch(match: Match): void {
@@ -191,6 +199,10 @@ function cleanupMatch(match: Match): void {
   if (match.disconnectTimer) {
     clearTimeout(match.disconnectTimer)
     match.disconnectTimer = null
+  }
+  if (match.gapTimer) {
+    clearTimeout(match.gapTimer)
+    match.gapTimer = null
   }
 }
 
@@ -221,7 +233,8 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
     matchId:      match.id,
     index:        match.round,
     questionId:   active ? match.questionIds[match.round] : null,
-    timeLimit:    ROUND_TIMEOUT,
+    // Qayta kirgan o'yinchi uchun QOLGAN vaqt — to'liq 15s emas
+    timeLimit:    active ? Math.max(0, ROUND_TIMEOUT - (Date.now() - rs.startedAt)) : ROUND_TIMEOUT,
     roundCount:   match.questionIds.length,
     yourScore:    match.scores.get(userId) ?? 0,
     oppScore:     opponent ? (match.scores.get(opponent.userId) ?? 0) : 0,
@@ -233,10 +246,13 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
   return true
 }
 
-function handleDisconnect(userId: string): void {
-  // Remove from queue
+function handleDisconnect(userId: string, deadWs: WebSocket): void {
+  // Remove from queue — faqat o'sha socketga tegishli entryni.
+  // Yangi socketda qayta join_queue bo'lgan bo'lsa, eski socketning close eventi
+  // YANGI entryni o'chirib yubormasligi kerak (aks holda user "searching"da qoladi).
   const queued = queue.get(userId)
   if (queued) {
+    if (queued.ws !== deadWs) return
     if (queued.queueTimer) clearTimeout(queued.queueTimer)
     queue.delete(userId)
     return
@@ -377,6 +393,8 @@ export function attachOctagon(
         const matchId  = String(msg.matchId)
         const match    = matches.get(matchId)
         if (!match || !match.roundState || match.roundState.resolved) return
+        // Protocol integrity: faqat match ishtirokchilari javob bera oladi
+        if (!match.players.some((p) => p.userId === userId)) return
 
         const index = Number(msg.index)
         if (!Number.isInteger(index) || index !== match.round) return
@@ -413,7 +431,7 @@ export function attachOctagon(
         const slot = matches.get(matchId)?.players.find((p) => p.userId === userId)
         if (slot && slot.ws !== ws) return
       }
-      handleDisconnect(userId)
+      handleDisconnect(userId, ws)
     })
   })
 }

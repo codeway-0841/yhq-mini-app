@@ -10,12 +10,25 @@ import { config }         from '../../config'
 
 type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
 
+/** Server raund deadline'igacha bo'lgan qolgan soniyalar (null — raund yo'q). */
+function useCountdown(deadline: number | null): number | null {
+  const [left, setLeft] = useState<number | null>(null)
+  useEffect(() => {
+    if (!deadline) { setLeft(null); return }
+    const tick = () => setLeft(Math.max(0, Math.ceil((deadline - Date.now()) / 1000)))
+    tick()
+    const t = setInterval(tick, 250)
+    return () => clearInterval(t)
+  }, [deadline])
+  return left
+}
+
 interface State {
   phase: Phase; matchId: string | null; opponentName: string | null
   roundCount: number; roundIndex: number; currentQuestionId: number | null
   yourScore: number; oppScore: number
   selected: string | null; ackCorrect: boolean | null; oppAnswered: boolean
-  oppWait: number | null
+  oppWait: number | null; deadline: number | null
   result: 'win' | 'lose' | 'draw' | null; toastMsg: string | null
 }
 
@@ -23,7 +36,7 @@ type Action =
   | { type: 'SEARCHING' }
   | { type: 'CANCEL' }
   | { type: 'MATCHED';      matchId: string; opponentName: string; roundCount: number }
-  | { type: 'START_ROUND';  index: number; questionId: number }
+  | { type: 'START_ROUND';  index: number; questionId: number; timeLimit: number }
   | { type: 'SELECT';       optionId: string }
   | { type: 'ANSWER_ACK';   correct: boolean }
   | { type: 'OPP_ANSWERED' }
@@ -33,6 +46,7 @@ type Action =
   | { type: 'OPP_WAIT';     waitSeconds: number }
   | { type: 'OPP_BACK' }
   | { type: 'SYNC';         matchId: string; index: number; questionId: number | null
+      timeLimit: number
       roundCount: number; yourScore: number; oppScore: number
       opponentName: string; yourAnswer: string | null; oppAnswered: boolean }
   | { type: 'TOAST';        msg: string }
@@ -42,7 +56,7 @@ const INIT: State = {
   phase: 'idle', matchId: null, opponentName: null,
   roundCount: 0, roundIndex: 0, currentQuestionId: null,
   yourScore: 0, oppScore: 0,
-  selected: null, ackCorrect: null, oppAnswered: false, oppWait: null,
+  selected: null, ackCorrect: null, oppAnswered: false, oppWait: null, deadline: null,
   result: null, toastMsg: null,
 }
 
@@ -51,7 +65,7 @@ function reducer(s: State, a: Action): State {
     case 'SEARCHING':        return { ...INIT, phase: 'searching' }
     case 'CANCEL':           return { ...INIT }
     case 'MATCHED':          return { ...s, phase: 'matched', matchId: a.matchId, opponentName: a.opponentName, roundCount: a.roundCount }
-    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, oppAnswered: false }
+    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
     case 'SELECT':           return { ...s, selected: a.optionId }
     case 'ANSWER_ACK':       return { ...s, ackCorrect: a.correct }
     case 'OPP_ANSWERED':     return { ...s, oppAnswered: true }
@@ -63,7 +77,8 @@ function reducer(s: State, a: Action): State {
     case 'SYNC':             return { ...INIT, phase: 'in_round', matchId: a.matchId, opponentName: a.opponentName,
                                       roundCount: a.roundCount, roundIndex: a.index, currentQuestionId: a.questionId,
                                       yourScore: a.yourScore, oppScore: a.oppScore,
-                                      selected: a.yourAnswer, oppAnswered: a.oppAnswered }
+                                      selected: a.yourAnswer, oppAnswered: a.oppAnswered,
+                                      deadline: Date.now() + a.timeLimit }
     case 'TOAST':            return { ...s, toastMsg: a.msg }
     case 'CLEAR_TOAST':      return { ...s, toastMsg: null }
     default: return s
@@ -77,6 +92,7 @@ export default function OctagonPage() {
   const tt = useT(settings.language)
   const [s, dispatch] = useReducer(reducer, INIT)
   const [conn, setConn] = useState<ConnStatus>('connecting')
+  const timeLeft = useCountdown(s.deadline)
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = useCallback((msg: string) => {
@@ -88,7 +104,7 @@ export default function OctagonPage() {
   const handleMsg = useCallback((msg: OctagonMsg) => {
     switch (msg.type) {
       case 'matched':          dispatch({ type: 'MATCHED',      matchId: msg.matchId, opponentName: msg.opponentName, roundCount: msg.roundCount }); break
-      case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId }); break
+      case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit }); break
       case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break
       case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore }); break
@@ -98,12 +114,15 @@ export default function OctagonPage() {
       case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast('Raqib qaytdi'); break
       case 'match_state':
         dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
+                   timeLimit: msg.timeLimit,
                    roundCount: msg.roundCount, yourScore: msg.yourScore, oppScore: msg.oppScore,
                    opponentName: msg.opponentName, yourAnswer: msg.yourAnswer, oppAnswered: msg.oppAnswered })
         break
       case 'error':
         showToast(msg.message)
-        if (msg.message === 'queue_timeout' || msg.message === 'rejoin_failed') dispatch({ type: 'CANCEL' })
+        // 'searching' holatda HAR QANDAY server xatosi navbatni bekor qiladi —
+        // aks holda spinner cheksiz aylanadi (server_full, auth_failed, already_in_match h.k.)
+        if (phaseRef.current === 'searching') dispatch({ type: 'CANCEL' })
         break
     }
   }, [showToast])
@@ -124,6 +143,9 @@ export default function OctagonPage() {
     const offMsg    = sock.on(handleMsg)
     const offStatus = sock.onStatus((st) => {
       setConn(st)
+      // 5 ta urinishdan keyin ham ulanib bo'lmasa — server navbat entrysi allaqachon
+      // o'chirilgan, "searching" spinnerini avtomatik to'xtatamiz.
+      if (st === 'failed' && phaseRef.current === 'searching') dispatch({ type: 'CANCEL' })
       const u = userRef.current
       if (st !== 'open' || !u) return
       const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
@@ -296,6 +318,11 @@ export default function OctagonPage() {
           <div className="w-full max-w-md">
             <p className="text-xs text-muted mb-1 text-center">
               {tt('round')} {s.roundIndex + 1} / {s.roundCount}
+              {timeLeft !== null && (
+                <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-red-400 animate-pulse' : 'text-duo-blue'}`}>
+                  ⏱ {timeLeft}s
+                </span>
+              )}
               {s.oppAnswered && !s.selected && (
                 <span className="ml-2 text-orange-400">• Raqib javob berdi</span>
               )}
