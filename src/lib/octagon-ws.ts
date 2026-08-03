@@ -10,9 +10,11 @@ export type OctagonMsg =
   | { type: 'round_result'; index: number; yourScore: number; oppScore: number }
   | { type: 'match_end';    yourScore: number; oppScore: number; result: 'win' | 'lose' | 'draw' }
   | { type: 'opp_disconnected' }
+  | { type: 'pong' }
   | { type: 'error'; message: string }
 
 export type OctagonSend =
+  | { type: 'ping' }
   | { type: 'join_queue';  userId: string; name: string; initData?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
   | { type: 'leave_queue'; userId: string }
@@ -23,8 +25,10 @@ type Listener = (msg: OctagonMsg) => void
 export type ConnStatus = 'connecting' | 'open' | 'reconnecting' | 'failed'
 type StatusListener = (s: ConnStatus) => void
 
-const RECONNECT_DELAY_MS = 2000
-const MAX_RECONNECTS     = 5
+const RECONNECT_DELAY_MS    = 2000
+const MAX_RECONNECTS        = 5
+const HEARTBEAT_INTERVAL_MS = 3000   // ping every 3s
+const HEARTBEAT_TIMEOUT_MS  = 6000   // one missed pong → dead
 
 export class OctagonSocket {
   private ws:              WebSocket | null = null
@@ -32,6 +36,8 @@ export class OctagonSocket {
   private statusListeners  = new Set<StatusListener>()
   private reconnectCount   = 0
   private reconnectTimer:  ReturnType<typeof setTimeout> | null = null
+  private heartbeatTimer:  ReturnType<typeof setInterval> | null = null
+  private lastMsgAt        = 0
   private closed           = false
   readonly url:            string
 
@@ -41,6 +47,32 @@ export class OctagonSocket {
 
   private emitStatus(s: ConnStatus): void {
     this.statusListeners.forEach((fn) => fn(s))
+  }
+
+  /**
+   * Half-open TCP sockets never fire `onclose` when the network dies silently.
+   * Heartbeat: ping every 3s; no traffic for 6s → force close → reconnect.
+   */
+  private startHeartbeat(): void {
+    this.stopHeartbeat()
+    this.lastMsgAt = Date.now()
+    this.heartbeatTimer = setInterval(() => {
+      const ws = this.ws
+      if (!ws || ws.readyState !== WebSocket.OPEN) return
+      if (Date.now() - this.lastMsgAt >= HEARTBEAT_TIMEOUT_MS) {
+        ws.close()   // dead connection — onclose schedules the reconnect
+        return
+      }
+      try { ws.send(JSON.stringify({ type: 'ping' })) }
+      catch { ws.close() }
+    }, HEARTBEAT_INTERVAL_MS)
+  }
+
+  private stopHeartbeat(): void {
+    if (this.heartbeatTimer !== null) {
+      clearInterval(this.heartbeatTimer)
+      this.heartbeatTimer = null
+    }
   }
 
   connect(): void {
@@ -57,11 +89,14 @@ export class OctagonSocket {
     ws.onopen = () => {
       this.reconnectCount = 0
       this.emitStatus('open')
+      this.startHeartbeat()
     }
 
     ws.onmessage = (e) => {
+      this.lastMsgAt = Date.now()
       let msg: OctagonMsg
       try { msg = JSON.parse(e.data as string) } catch { return }
+      if (msg.type === 'pong') return   // heartbeat traffic — not for the UI
       this.listeners.forEach((fn) => fn(msg))
     }
 
@@ -75,6 +110,7 @@ export class OctagonSocket {
     }
 
     ws.onclose = () => {
+      this.stopHeartbeat()
       if (this.closed) return
       if (this.reconnectCount < MAX_RECONNECTS) {
         this.reconnectCount++
@@ -115,6 +151,7 @@ export class OctagonSocket {
   disconnect(): void {
     this.closed = true
     this.reconnectCount = 0
+    this.stopHeartbeat()
 
     if (this.reconnectTimer !== null) {
       clearTimeout(this.reconnectTimer)

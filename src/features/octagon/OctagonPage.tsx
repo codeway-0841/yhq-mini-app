@@ -89,11 +89,31 @@ export default function OctagonPage() {
   }, [showToast])
 
   const [attempt, setAttempt] = useState(0)
+  const userRef  = useRef(user)
+  userRef.current  = user
+  const phaseRef = useRef(s.phase)
+  phaseRef.current = s.phase
 
   useEffect(() => {
     const sock = getOctagonSocket(config.wsUrl)
     const offMsg    = sock.on(handleMsg)
-    const offStatus = sock.onStatus(setConn)
+    const offStatus = sock.onStatus((st) => {
+      setConn(st)
+      // Server drops the queue entry when the old socket dies — rejoin silently.
+      const u = userRef.current
+      if (st === 'open' && phaseRef.current === 'searching' && u) {
+        try {
+          const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
+            .Telegram?.WebApp?.initData
+          sock.send({
+            type: 'join_queue',
+            userId: u.id,
+            name: u.firstName,
+            ...(initData ? { initData } : {}),
+          })
+        } catch { /* next status change retries */ }
+      }
+    })
     return () => { offMsg(); offStatus() }
   }, [handleMsg, attempt])
 
@@ -249,6 +269,11 @@ export default function OctagonPage() {
               )}
             </p>
             <p className="text-base font-semibold text-center mb-5 leading-snug">{currentQ.text}</p>
+            {currentQ.image && (
+              <div className="rounded-xl overflow-hidden mb-4 border border-line">
+                <img src={currentQ.image} alt="savol" className="w-full object-cover max-h-48" />
+              </div>
+            )}
             {currentQ.options.map((opt) => {
               const answered    = !!s.selected
               const isSelected  = s.selected === opt.id

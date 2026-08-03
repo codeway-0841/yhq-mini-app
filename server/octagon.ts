@@ -250,6 +250,11 @@ export function attachOctagon(
       let msg: Record<string, unknown>
       try { msg = JSON.parse(raw.toString()) } catch { return }
 
+      if (msg.type === 'ping') {
+        send(ws, { type: 'pong' })
+        return
+      }
+
       if (msg.type === 'join_queue') {
         userId = String(msg.userId ?? '')
         const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
