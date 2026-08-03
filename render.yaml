@@ -4,8 +4,9 @@ services:
     env: node
     region: frankfurt
     plan: free
-    buildCommand: npm install --include=dev && npm run build:server
+    buildCommand: npm ci --include=dev && npm run build:server
     startCommand: node server/dist/standalone.js
+    healthCheckPath: /health
     envVars:
       - key: NODE_ENV
         value: production
