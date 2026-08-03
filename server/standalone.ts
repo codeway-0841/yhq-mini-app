@@ -1,33 +1,54 @@
-﻿import { WebSocketServer } from 'ws';
-import { createServer } from 'http';
-// Note: Ensure octagon.ts exists and exports attachOctagon
-// import { attachOctagon } from './octagon'; 
+﻿/**
+ * Standalone server entry (Render) — HTTP + WebSocket, mirrors server/index.ts.
+ * Vercel handles the frontend; this service runs the API + Octagon WS game.
+ */
 
-const PORT = process.env.PORT || 8080;
+import 'dotenv/config'
+import './utils/sentry'
+import http                from 'http'
+import { WebSocketServer } from 'ws'
+import { config }          from './config'
+import { createApp }       from './app'
+import { attachOctagon }   from './octagon'
+import { db }              from './db/connection'
+import { questions }       from './schema'
 
-const server = createServer((req, res) => {
-  if (req.url === '/health') {
-    res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ status: 'ok', uptime: process.uptime() }));
-    return;
-  }
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('WebSocket Server is running.');
-});
+const app    = createApp()
+const server = http.createServer(app)
+const wss    = new WebSocketServer({ server, path: '/ws/octagon' })
 
-const wss = new WebSocketServer({ server, path: '/ws' });
+// Render health check (healthCheckPath)
+app.get('/health', (_req, res) => {
+  res.status(200).json({ status: 'ok', uptime: process.uptime() })
+})
 
-wss.on('connection', (ws, req) => {
-  console.log('🔌 New connection:', req.socket.remoteAddress);
-  ws.on('error', (err) => {
-    console.error('❌ WS Error:', err);
-    ws.close();
-  });
-});
+/** Graceful shutdown — close listeners, finish in-flight requests, exit. */
+function shutdown(signal: string): void {
+  console.log(`\n${signal} received — shutting down gracefully...`)
+  for (const client of wss.clients) client.close(1001, 'Server shutting down')
+  wss.close()
+  server.close(() => {
+    console.log('Server closed')
+    process.exit(0)
+  })
+  // Force exit if connections linger too long
+  setTimeout(() => {
+    console.error('Forced shutdown after timeout')
+    process.exit(1)
+  }, 10_000).unref()
+}
+process.on('SIGTERM', () => shutdown('SIGTERM'))
+process.on('SIGINT',  () => shutdown('SIGINT'))
 
-// TODO: Import and attach your game logic here
-// attachOctagon(wss, server);
-
-server.listen(PORT, () => {
-  console.log(`🚀 WebSocket Server running on port ${PORT}`);
-});
+db.select({ id: questions.id, correct: questions.correctAnswer })
+  .from(questions)
+  .then((pool) => {
+    attachOctagon(wss, pool)
+    server.listen(config.server.port, () => {
+      console.log(`Server :${config.server.port} (HTTP + WS) — ${pool.length} questions loaded`)
+    })
+  })
+  .catch((err) => {
+    console.error('Failed to load questions from DB at startup:', err)
+    process.exit(1)
+  })
