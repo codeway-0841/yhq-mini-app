@@ -25,14 +25,23 @@ export const progressRepository = {
     correct:    boolean,
     questionId: number | null,
   ): Promise<boolean> {
-    const wrongPatch = (!correct && questionId !== null)
-      ? {
-          wrongByTicket: sqlExpr`jsonb_set(
-            wrong_by_ticket,
-            ${`{${questionId}}`},
-            (COALESCE((wrong_by_ticket->>${String(questionId)})::int, 0) + 1)::text::jsonb
-          )`,
-        }
+    // Semantika: wrong_by_ticket — "hozirgi yechilmagan xatolar".
+    //  - xato javob  → hisoblagich +1
+    //  - to'g'ri javob → xato tuzatilgan, kalit jsonb'dan o'chiriladi (`-` operatori)
+    //    Shunda "Xatolarni tuzatish" ro'yxati faqat HAL qilinmagan xatolarni ko'rsatadi,
+    //    va qayta xato qilinsa hisob 1 dan qayta boshlanadi (umrbod yig'ilmasdan).
+    const wrongPatch = (questionId !== null)
+      ? correct
+        ? {
+            wrongByTicket: sqlExpr`wrong_by_ticket - ${String(questionId)}`,
+          }
+        : {
+            wrongByTicket: sqlExpr`jsonb_set(
+              wrong_by_ticket,
+              ${`{${questionId}}`},
+              (COALESCE((wrong_by_ticket->>${String(questionId)})::int, 0) + 1)::text::jsonb
+            )`,
+          }
       : {}
 
     const rows = await db.update(progress).set({

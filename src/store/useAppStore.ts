@@ -95,8 +95,15 @@ export const useAppStore = create<AppState>()(
           totalWrong:    s.totalWrong    + (correct ? 0 : 1),
           totalAnswered: s.totalAnswered + 1,
           streak:        correct ? s.streak + 1 : 0,
-          wrongByTicket: (!correct && questionId != null)
-            ? { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
+          wrongByTicket: questionId != null
+            ? correct
+              ? (() => {
+                  // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
+                  const next = { ...s.wrongByTicket }
+                  delete next[questionId]
+                  return next
+                })()
+              : { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
             : s.wrongByTicket,
         }))
         if (userId) api.postResult(userId, correct, questionId).catch(console.error)
