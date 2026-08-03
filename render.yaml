@@ -1,11 +1,11 @@
-﻿services:
+services:
   - type: web
     name: yhq-websocket-server
     env: node
     region: frankfurt
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: node dist/server/standalone.js
+    buildCommand: npm install
+    startCommand: npx tsx server/standalone.ts
     envVars:
       - key: NODE_ENV
         value: production
