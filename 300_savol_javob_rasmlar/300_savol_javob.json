@@ -1,0 +1,5136 @@
+[
+  {
+    "id": 1,
+    "question_uz": "Yengil avtomobilning tormoz yo‘li tormoz tizimiga ega bo‘lmagan tirkama bilan harakatlanayotganda qanday o‘zgaradi?",
+    "question_ru": "Как изменяется длина тормозного пути легкового автомобиля при движении с прицепом, не имеющим тормозной системы?",
+    "options_uz": {
+      "F1": "Kamayadi, chunki tirkama harakatlanishga qo‘shimcha qarshilik ko‘rsatadi",
+      "F2": "O‘zgarmaydi",
+      "F3": "Ortadi"
+    },
+    "options_ru": {
+      "F1": "Уменьшается, так как прицеп оказывает дополнительное сопротивление движению",
+      "F2": "Не изменяется",
+      "F3": "Увеличивается"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 2,
+    "question_uz": "Qaysi belgi tartibga solinmagan piyodalar o'tish joyiga yaqinlashayotganlik haqida ogohlantiradi?",
+    "question_ru": "Какой знак предупреждает о приближении к нерегулируемому пешеходному переходу?",
+    "options_uz": {
+      "F1": "\"A\" va \"Б\"",
+      "F2": "\"A\"",
+      "F3": "Hammasi"
+    },
+    "options_ru": {
+      "F1": "\"A\" и \"Б\"",
+      "F2": "\"A\"",
+      "F3": "Все"
+    },
+    "correct_answer": "F2",
+    "image": "images/q002.jpg"
+  },
+  {
+    "id": 3,
+    "question_uz": "Old chiroqlar va orqa gabarit chiroqlari ishlamayotgan transport vositasi harakatini davom ettirishi taqiqlanadi?",
+    "question_ru": "Дальнейшее движение транспортного средства при неработающих Фарах и задних габаритных огнях запрещается:",
+    "options_uz": {
+      "F1": "Faqat yetarli ko'rinmaslikda ,",
+      "F2": "Faqat kunning qorong'i vaqtida",
+      "F3": "Barcha javoblarda ko'rsatilgan holatlarda"
+    },
+    "options_ru": {
+      "F1": "Только в условиях недостаточной видимости.",
+      "F2": "Только в темное время суток.",
+      "F3": "В обоих перечисленных случаях."
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 4,
+    "question_uz": "Qatnov qismi yo'l chiziqlari bilan ajratilgan bo'lsa haydovchilar qanday holatlarda qat'iy bo'laklar bo'yicha harakatlanishlari kerak?",
+    "question_ru": "В каких случаях на дорогах, проезжая часть которых разделена линиями разметки, водители обязаны двигаться строго по полосам?",
+    "options_uz": {
+      "F1": "Faqat harakatlanish bo'laklari uzliksiz sidirg'a chiziqlar bilan ajratilgan bo'lsa",
+      "F2": "Faqat harakatlanish serqatnov bo'lganda",
+      "F3": "Barcha holatlarda"
+    },
+    "options_ru": {
+      "F1": "Только если полосы движения обозначены сплошными линиями разметки",
+      "F2": "Только при интенсивном движении",
+      "F3": "Во всех случаях"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 5,
+    "question_uz": "Chorrahdan birinchi bo'lib kesib o'tadi",
+    "question_ru": "Первым проедет перекресток:",
+    "options_uz": {
+      "F1": "Ko'k avtomobil",
+      "F2": "Yashil avtomobil",
+      "F3": "Qizil avtomobil"
+    },
+    "options_ru": {
+      "F1": "Синий автомобиль",
+      "F2": "Зелёный автомобиль",
+      "F3": "Красный автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q005.jpg"
+  },
+  {
+    "id": 6,
+    "question_uz": "Chorrahadan ikkinchi bo'lib qaysi transport vositasi kesib o'tadi?",
+    "question_ru": "Вторым проедет перекресток:",
+    "options_uz": {
+      "F1": "Yashil avtomobil tramvay bilan bir vaqtda",
+      "F2": "Yashil avtomobil",
+      "F3": "Qizil avtomobil"
+    },
+    "options_ru": {
+      "F1": "Зелёный автомобиль вместе с трамваем одновременно",
+      "F2": "Зелёный автомобиль",
+      "F3": "Красный автомобиль"
+    },
+    "correct_answer": "F1",
+    "image": "images/q006.jpg"
+  },
+  {
+    "id": 7,
+    "question_uz": "Ko'rsatilgan belgilardan qaysilarining talabi bevosita o`rnatilgan joyidan kuchga kiradi?",
+    "question_ru": "Требования каких знаков из указанных вступают в силу непосредственно в том месте, где они установлены?",
+    "options_uz": {
+      "F1": "Faqat Б",
+      "F2": "А va Б",
+      "F3": "Hammasi"
+    },
+    "options_ru": {
+      "F1": "Только Б",
+      "F2": "А и Б",
+      "F3": "Всех"
+    },
+    "correct_answer": "F2",
+    "image": "images/q007.jpg"
+  },
+  {
+    "id": 8,
+    "question_uz": "Tartibga solinmagan chorrahada qaysi belgi albatta to'xyashni talab qiladi?",
+    "question_ru": "Какие из указанных знаков требуют обязательной остановки на нерегулируемом перекрестке?",
+    "options_uz": {
+      "F1": "Faqat А",
+      "F2": "Faqat Б",
+      "F3": "Б va В",
+      "F4": "Hammasi"
+    },
+    "options_ru": {
+      "F1": "Только А",
+      "F2": "Только Б",
+      "F3": "Б и В",
+      "F4": "Все"
+    },
+    "correct_answer": "F2",
+    "image": "images/q008.jpg"
+  },
+  {
+    "id": 9,
+    "question_uz": "Asosiy yo`l –",
+    "question_ru": "Главная дорога:",
+    "options_uz": {
+      "F1": "Tuproqli yo'lga nisbatan qattiq qoplamali (asfalt va sement-betonli, tosh va shunga o'xshash qoplamali)",
+      "F2": "Toshli yo'lga nisbatan asfalt qoplamali yo'l",
+      "F3": "Ikki bo'lakli yo'lga nisbatan uch yoki undan ko'p bo'lakli yo'l",
+      "F4": "Barcha javoblar to'g'ri"
+    },
+    "options_ru": {
+      "F1": "Дорога с твердым покрытием по отношению к грунтовой дороге.",
+      "F2": "Дорога с асфальтобетонным покрытием по отношению к дороге, покрытой брусчаткой.",
+      "F3": "Дорога с тремя или более полосами движения по отношению к дороге с двумя полосами.",
+      "F4": "Во всех перечисленных ответах."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 10,
+    "question_uz": "Qaysi transport vositalari yo'nalishli transport vositalari hisoblanadi",
+    "question_ru": "Какие транспортные средства относятся к маршрутным транспортным средствам",
+    "options_uz": {
+      "F1": "Belgilangan yo'nalishi va bekatlari bo'lgan, yo'lovchi tashish uchun mo'ljallangan umum foydalanishdagi transport vositalalari",
+      "F2": "Avtobuslar",
+      "F3": "Yo'lovchilarni tashuvchi istalgan transport vositalari"
+    },
+    "options_ru": {
+      "F1": "Транспортное средство общего пользования, предназначенное для перевозки пассажиров и имеющее установленный маршрут с остановочными пунктами (остановками)",
+      "F2": "Автобусы",
+      "F3": "Любые транспортные средства, перевозящие пассажиров"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 11,
+    "question_uz": "Qo'l oyoq uchlari (tirsakdan past qismi, boldir) sinishida transport shinalari yoki ularni qo'lda yasash uchun vositalar bo'lmasa birinchi tibbiy yordam qanday ko'rsatiladi?",
+    "question_ru": "Как оказывается первая помощь при переломах конечностей, если отсутствуют транспортные шины и подручные средства для их изготовления?",
+    "options_uz": {
+      "F1": "Qo'llarni tana bo'ylab cho'zgan holda tanaga bog'lash, oyoqlarni orasiga yumshoq mato qo'yib bir-biriga bog‘lash",
+      "F2": "Qo'llarni tirsakdan bukib, ro`molga osgan holda tanaga bog'lash, oyoqlarni orasiga albatta yumshoq mato qo'yib bir-biriga bog‘lash",
+      "F3": "Qo'llarni tirsakdan bukib, ro`molga osgan holda tanaga bog'lash, oyoqlarni bir-biriga yaxshilab jipslab tekkazib bog‘lash"
+    },
+    "options_ru": {
+      "F1": "Верхнюю конечность, вытянутую вдоль тела, прибинтовывают к туловищу. Нижние конечности прибинтовывают друг к другу, проложив между ними мягкую ткань",
+      "F2": "Верхнюю конечность, согнутую в локте, подвешивают на косынке и прибинтовывают к туловищу. Нижние конечности прибинтовывают друг к другу, обязательно проложив между ними мягкую ткань",
+      "F3": "Верхнюю конечность, согнутую в локте, подвешивают на косынке и прибинтовывают к туловищу. Нижние конечности плотно прижимают друг к другу и прибинтовывают"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 12,
+    "question_uz": "Qaysi rasmdagi avtomobil haydovchisi yuk tashish qoidasini buzayapti?",
+    "question_ru": "На каком рисунке изображен автомобиль, водитель которого нарушает правила перевозки грузов?",
+    "options_uz": {
+      "F1": "\"Б\"",
+      "F2": "\"A\"",
+      "F3": "\"A\" , \"Б\""
+    },
+    "options_ru": {
+      "F1": "Только на Б",
+      "F2": "Только на А",
+      "F3": "На обоих"
+    },
+    "correct_answer": "F3",
+    "image": "images/q012.jpg"
+  },
+  {
+    "id": 13,
+    "question_uz": "Qaysi holatlarda aholi punktlarida tovushli ishoralardan foydalanish mumkin?",
+    "question_ru": "В каких случаях разрешено применять звуковые сигналы в населенных пунктах?",
+    "options_uz": {
+      "F1": "Faqat zarur bo`lgan hollarda yo'l-transport hodisasining oldini olish uchun",
+      "F2": "Faqat boshqa haydovchilarni quvib o'tish haqida ogohlantirish uchun",
+      "F3": "Barcha javoblarda ko'rsatilgan holatlarda"
+    },
+    "options_ru": {
+      "F1": "Только для предотвращения дорожно-транспортного происшествия",
+      "F2": "Только для предупреждения о намерении произвести обгон",
+      "F3": "В обоих перечисленных случаях"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 14,
+    "question_uz": "Chorrahadan uchinchi bo'lib qaysi avtomobil kesib o'tadi?",
+    "question_ru": "Какой автомобиль проедет перекресток третьим",
+    "options_uz": {
+      "F1": "Yashil avtomobil",
+      "F2": "Qizil avtomobil",
+      "F3": "Ko'k avtomobil"
+    },
+    "options_ru": {
+      "F1": "Зелёный автомобиль",
+      "F2": "Красный автомобиль",
+      "F3": "Синий автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q014.jpg"
+  },
+  {
+    "id": 15,
+    "question_uz": "Chorrahadan birinchi bo'lib qaysi transport vositasi kesib o'tadi?",
+    "question_ru": "Первым проедет перекресток",
+    "options_uz": {
+      "F1": "Yashil avtomobil",
+      "F2": "Ko'k avtomobil",
+      "F3": "Qizil avtomobil"
+    },
+    "options_ru": {
+      "F1": "Зелёный автомобиль",
+      "F2": "Синий автомобиль",
+      "F3": "Красный автомобиль"
+    },
+    "correct_answer": "F1",
+    "image": "images/q015.jpg"
+  },
+  {
+    "id": 16,
+    "question_uz": "Ushbu \"50\" yozuvli yo'l belgisi nimani bildradi?",
+    "question_ru": "Что обозначает эта разметка с надписью \"50\"?",
+    "options_uz": {
+      "F1": "Yo'l yoki marshrut raqamini",
+      "F2": "Yo'lning ushbu qismida tavsiya berilgan tezlikni",
+      "F3": "Yo'lning ushbu qismida ruxsat berilgan eng yuqori tezlikni"
+    },
+    "options_ru": {
+      "F1": "Номер дороги или маршрута.",
+      "F2": "Рекомендуемую скорость движения на данном участке дороги",
+      "F3": "Разрешенную максимальную скорость движения на данном участке дороги"
+    },
+    "correct_answer": "F3",
+    "image": "images/q016.jpg"
+  },
+  {
+    "id": 17,
+    "question_uz": "Ko'rsatilgan belgilardan qaysi biri ruxsat etilgan to'la vazni 3,5 tonnadan oshmaydigan yuk avtomobillariga harakatlanishga ruxsat beradi?",
+    "question_ru": "Какие из указанных знаков разрешают движение грузовым автомобилям с разрешенной максимальной массой не более 3,5 т?",
+    "options_uz": {
+      "F1": "А va В",
+      "F2": "А va Б",
+      "F3": "В"
+    },
+    "options_ru": {
+      "F1": "А и В",
+      "F2": "А и Б",
+      "F3": "В"
+    },
+    "correct_answer": "F1",
+    "image": "images/q017.jpg"
+  },
+  {
+    "id": 18,
+    "question_uz": "Ko'rsatilgan belgilardan qaysi biri texnik tavsifnomasiga yoki holatiga ko'ra tezligi soatiga 40 kilometrdan kam bo'lgan transport vositalarining harakatlanishini taqiqlaydi?",
+    "question_ru": "Какие из указанных знаков запрещают движение транспортных средств, скорость которых по технической характеристике или их состоянию менее 40 км/ч?",
+    "options_uz": {
+      "F1": "Только А",
+      "F2": "Только В",
+      "F3": "А и Б"
+    },
+    "options_ru": {
+      "F1": "Только А",
+      "F2": "Только В",
+      "F3": "А и Б"
+    },
+    "correct_answer": "F1",
+    "image": "images/q018.jpg"
+  },
+  {
+    "id": 19,
+    "question_uz": "Turar joy dahalarida piyodalar yo'lning qaysi qismida harakatlanishilari kerak?",
+    "question_ru": "Где могут двигаться пешеходы в жилой зоне?",
+    "options_uz": {
+      "F1": "Faqat trotuar bo'yicha",
+      "F2": "Qatnov qismi chetida bir qator bo'lib",
+      "F3": "Trotuardan yoki qatnov qismidan"
+    },
+    "options_ru": {
+      "F1": "Только по тротуарам",
+      "F2": "В один ряд по краю проезжей части",
+      "F3": "По тротуарам и по проезжей части"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 20,
+    "question_uz": "Ruxsat etilgan to'la vazni bu - ...",
+    "question_ru": "Что называется разрешенной максимальной массой транспортного средства",
+    "options_uz": {
+      "F1": "Transport vositasining yuki, haydovchi va yo`lovchilari bilan birgalikdagi vazni",
+      "F2": "Aslahalangan transport vositasining ishlab chiqargan korxona tomonidan belgilangan, yuksiz, haydovchisiz va yo’lovchilarsiz eng yuqori vazni (o’lchovi)",
+      "F3": "Aslahalangan transport vositasining ishlab chiqargan korxona tomonidan belgilangan, yuk, haydovchi va yo'lovchilari bilan birgalikdagi eng yuqori vazni (o’lchovi)"
+    },
+    "options_ru": {
+      "F1": "Масса транспортного средства с грузом, водителем и пассажирами",
+      "F2": "Максимальная масса (величина) снаряженного транспортного средства без груза, без водителя и без пассажирами, установленная предприятием- изготовителем",
+      "F3": "Максимальная масса (величина) снаряженного транспортного средства с грузом, водителем и пассажирами, установленная предприятием- изготовителем"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 21,
+    "question_uz": "To'la vazni 3,5 tonnadan oshmaydigan yuk avtomobillarini quyidagilar bilan jihozlanmagan bo'lsa ham foydalanishga ruxsat etiladi:",
+    "question_ru": "Разрешается эксплуатация грузовых автомобилей с разрешенной максимальной массой не более 3.5 тн. при отсутствии:",
+    "options_uz": {
+      "F1": "Tibbiyot qutichasi",
+      "F2": "O't o'chirgich",
+      "F3": "Majburiy to'xtaganini bildiruvchi belgi (yoki miltillovchi qizil chiroq)",
+      "F4": "O'zi yurib ketishidan saqlovchi, g'ildirak diametriga muvofiq (kamida 2ta) tirgak"
+    },
+    "options_ru": {
+      "F1": "Аптечки",
+      "F2": "Огнетушителя",
+      "F3": "Знака аварийной остановки",
+      "F4": "Противооткатного устройства соответствующего диаметру колеса (минимум 2)"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 22,
+    "question_uz": "Qaysi holatlarda jabrlanuvchiga yurak-o'pka reanimatsiyasini boshlash kerak?",
+    "question_ru": "В каких случаях следует начинать сердечно-легочную реанимацию пострадавшего?",
+    "options_uz": {
+      "F1": "Yurak sohasida og'riq sezilganda va nafas olish qiyinlashganda",
+      "F2": "Hushidan ketishda, nafas olish faoliyatidan qat'iy nazar",
+      "F3": "Hushidan ketishda, nafas olish faoliyati va qon aylanishi to'xtaganda"
+    },
+    "options_ru": {
+      "F1": "При наличии болей в области сердца и затрудненного дыхания",
+      "F2": "При отсутствии у пострадавшего сознания, независимо от наличия дыхания",
+      "F3": "При отсутствии у пострадавшего сознания, дыхания и кровообращения"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 23,
+    "question_uz": "Kunning yorug' vaqtida harakatlanayotgan qaysi rasmdagi avtomobil haydovchisi yuk tashish qoidasini buzayapti?",
+    "question_ru": "На каком рисунке изображен автомобиль, водитель которого нарушает правила перевозки грузов при движении в светлое время суток?",
+    "options_uz": {
+      "F1": "Faqat А",
+      "F2": "Har ikki rasmda",
+      "F3": "Hech kim buzmayapti"
+    },
+    "options_ru": {
+      "F1": "Только на А",
+      "F2": "На обоих рисунках",
+      "F3": "Никто не нарушает"
+    },
+    "correct_answer": "F3",
+    "image": "images/q023.jpg"
+  },
+  {
+    "id": 24,
+    "question_uz": "Avtomagistralda to'xtashga ruxsat etiladi:",
+    "question_ru": "Остановка на автомагистрали разрешена:",
+    "options_uz": {
+      "F1": "Faqat qatnov qismini chetini bildiruvchi chiziqdan chetda",
+      "F2": "5.15 yoki 6.11 yo'l belgilari bilan belgilangan maxsus to'xtab turish maydonchalarida",
+      "F3": "Qatnov qismini chetda barcha joyda"
+    },
+    "options_ru": {
+      "F1": "Только правее линии разметки, обозначающей край проезжей части",
+      "F2": "Только на специальных площадках для стоянки, обозначенными знаками 5.15 или 6.11",
+      "F3": "В любых местах за пределами проезжей части"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 25,
+    "question_uz": "Chorrahani ikkinchi bo'lib kesib o'tadi",
+    "question_ru": "Вторым проедет перекресток:",
+    "options_uz": {
+      "F1": "Tramvay",
+      "F2": "Mototsikl",
+      "F3": "Avtomobil"
+    },
+    "options_ru": {
+      "F1": "Трамвай",
+      "F2": "Мотоцикл",
+      "F3": "Автомобиль"
+    },
+    "correct_answer": "F3",
+    "image": "images/q025.jpg"
+  },
+  {
+    "id": 26,
+    "question_uz": "Chorrahadan oxirgi bo'lib qaysi transport vositasi kesib o'tadi",
+    "question_ru": "Последним проедет перекресток",
+    "options_uz": {
+      "F1": "Velosiped",
+      "F2": "Avtobus",
+      "F3": "Avtomobil"
+    },
+    "options_ru": {
+      "F1": "Велосипед",
+      "F2": "Автобус",
+      "F3": "Автомобиль"
+    },
+    "correct_answer": "F3",
+    "image": "images/q026.jpg"
+  },
+  {
+    "id": 27,
+    "question_uz": "Agar piyodalar o'tish joylaridan keyin tirbandlik paydo bo'lsa haydovchi qayerga to'xtashi kerak?",
+    "question_ru": "Где необходимо остановиться водителю, если сразу за пешеходным переходом образовался затор?",
+    "options_uz": {
+      "F1": "Bevosita piyodalar o'tish joyi oldida",
+      "F2": "Piyodalar o'tish joyida, agar piyodalar bo'lmasa",
+      "F3": "Piyodalar o'tish joyiga 5 m yetmasdan"
+    },
+    "options_ru": {
+      "F1": "Непосредственно перед пешеходным переходом",
+      "F2": "На пешеходном переходе, если нет пешеходов",
+      "F3": "Не ближе 5 м до пешеходного перехода"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 28,
+    "question_uz": "Ko'rsatilgan qaysi yo'l belgisi yengil yo'nalishsiz taksilarga yo'lovchilarni tushirish-chiqarish (yuklarni ortish- tushirish) vaqtida ta'sir qilmaydi?",
+    "question_ru": "Какие из этих указанных знаков не действует на легковые немаршрутные такси при посадке — высадке пассажиров (погрузке — выгрузке грузов)?",
+    "options_uz": {
+      "F1": "Faqat \"A\"",
+      "F2": "Faqat \"Б\"",
+      "F3": "Faqat \"Б\" \"C\" \"Д\"",
+      "F4": "Hammasi"
+    },
+    "options_ru": {
+      "F1": "Только \"A\"",
+      "F2": "Только \"Б\"",
+      "F3": "Только \"Б\" \"C\" \"Д\"",
+      "F4": "Все знаки"
+    },
+    "correct_answer": "F4",
+    "image": "images/q028.jpg"
+  },
+  {
+    "id": 29,
+    "question_uz": "Bu qo'shimcha-axborot yo'l belgisi qaysi yo'l belgisi bilan birgalikda qo'llaniladi?",
+    "question_ru": "С каким дорожным знаком применяется эта табличка?",
+    "options_uz": {
+      "F1": "А",
+      "F2": "Б",
+      "F3": "С"
+    },
+    "options_ru": {
+      "F1": "А",
+      "F2": "Б",
+      "F3": "С"
+    },
+    "correct_answer": "F2",
+    "image": "images/q029.jpg"
+  },
+  {
+    "id": 30,
+    "question_uz": "Trotuar va piyodalar yo'lkasi bo'lmaganda bolalar guruhini yo'lda qanday tartibda olib yurish mumkin?",
+    "question_ru": "Как водить группы детей при отсутствии пешеходных дорожек и тротуара",
+    "options_uz": {
+      "F1": "Qatnov qismi chetidan katta yoshdagilar kuzatuvida olib yurishga ruxsat etiladi",
+      "F2": "Yo'l yoqasidan faqat kunduzi va katta yoshdagilar kuzatuvida olib yurishga ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "С края проезжей части в сопровождении взрослых",
+      "F2": "По обочинам, только в светлое время суток и в сопровождении взрослых"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 31,
+    "question_uz": "Harakatlanish bo'lagidagi uchburchak shaklidagi chiziq",
+    "question_ru": "Разметка в виде треугольника на полосе движения:",
+    "options_uz": {
+      "F1": "Yo'lning xavfli qismini bildiradi",
+      "F2": "Yo'l berishingiz kerak bo'lgan joy yaqinlashayotganligi haqida ogohlantiradi",
+      "F3": "To'xtashingiz zarur bo'lgan joyni bildiradi"
+    },
+    "options_ru": {
+      "F1": "Обозначает опасный участок дороги",
+      "F2": "Предупреждает Вас о приближении к месту, где нужно уступить дорогу",
+      "F3": "Указывает место, где Вам необходимо остановиться"
+    },
+    "correct_answer": "F2",
+    "image": "images/q031.jpg"
+  },
+  {
+    "id": 32,
+    "question_uz": "Siz to'g'ri yo'lga harakatlanayotib to'satdan yo'lning qisman katta bo'lmagan sirpanchiq qismiga duch keldingiz. Bunda qanday ehtiyot choralarini ko'rasiz?",
+    "question_ru": "Двигаясь в прямом направлении, Вы внезапно попали на небольшой участок скользкой дороги. Что следует предпринять?",
+    "options_uz": {
+      "F1": "Avtomobilni ohista to'xtatish",
+      "F2": "Rulni burib sirpanchiqdan chiqib ketish",
+      "F3": "Harakat yo'nalishini va tezlikni o'zgartirmasdan ehtiyotkorlik bilan o'tib ketish"
+    },
+    "options_ru": {
+      "F1": "Плавно затормозить",
+      "F2": "Повернуть руль, чтобы съехать с этого участка дороги",
+      "F3": "Проехать не меняя траектории и скорости движения"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 33,
+    "question_uz": "Mexanik transport vositalarini shatakka olishda egiluvchan ulagichga kamidan nechta ogohlantiruvchi qurilma o'rnatiladi?",
+    "question_ru": "Не менее скольких предупредительных устройств должно устанавливаться при буксировке на гибкой сцепке?",
+    "options_uz": {
+      "F1": "Kamida ikkita",
+      "F2": "Kamida uchta",
+      "F3": "Kamida bitta"
+    },
+    "options_ru": {
+      "F1": "Не менее двух",
+      "F2": "Не менее трех",
+      "F3": "Не менее одного"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 34,
+    "question_uz": "Temir yo'l kesishmalari va ularga yaqin joylarda quvib o'tishga tegishli qanday yo'l harakati qoidalari amal qiladi?",
+    "question_ru": "Какие ограничения, относящиеся к обгону, действуют на железнодорожных переездах и вблизи них?",
+    "options_uz": {
+      "F1": "Temir yo'l kesishmalarida va ularga 100 m dan kam masofa qolganda quvib o`tish taqiqlanadi",
+      "F2": "Quvib o`tish faqat temir yo'l kesishmalaridan keyin taqiqlanadi",
+      "F3": "Temir yo'l kesishmalarida va ularga 100 m dan kam masofa qolganda va temir yo`l keshimalaridan keyin 100 metr davomida quvib o’tish taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Обгон запрещен на переезде и ближе чем за 100 м перед ним.",
+      "F2": "Обгон запрещен только на переезде.",
+      "F3": "Обгон запрещен на переезде и на расстоянии 100 м до и после него."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 35,
+    "question_uz": "Sariq avtomobil chorrahani nechanchi bo'lib kesib o'tadi?",
+    "question_ru": "Жёлтый автомобиль проедет перекресток:",
+    "options_uz": {
+      "F1": "Uchinchi bo'lib",
+      "F2": "Ikkinchi bo'lib",
+      "F3": "Oxirgi bo'lib"
+    },
+    "options_ru": {
+      "F1": "Третьим",
+      "F2": "Вторым",
+      "F3": "Последним"
+    },
+    "correct_answer": "F3",
+    "image": "images/q035.jpg"
+  },
+  {
+    "id": 36,
+    "question_uz": "Turar joy dahasidan yo'lga chiqishda yo'l berish zarur:",
+    "question_ru": "При выезде из жилой зоны необходимо уступить Дорогу:",
+    "options_uz": {
+      "F1": "O'ng tomondan yaqinlashib kelayotgan transport vositalariga",
+      "F2": "Chap tomondan yaqinlashib kelayotgan transport vositalariga",
+      "F3": "Ko'k rangli yalt-yalt etuvchi chiroqcha-mayoqcha yoqilgan transport vositalariga",
+      "F4": "Barcha transport vositalariga"
+    },
+    "options_ru": {
+      "F1": "Только транспортным средствам, приближающимся справа",
+      "F2": "Только транспортным средствам, приближающимся слева",
+      "F3": "Только транспортным средствам с включенным синим проблесковым маячком",
+      "F4": "Всем транспортным средствам"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 37,
+    "question_uz": "Svetofor ishoralari imtiyoz belgilari talablariga zid kelgan hollarda:",
+    "question_ru": "В случае, если значение сигналов светофора противоречат требованиям дорожных знаков приоритета:",
+    "options_uz": {
+      "F1": "Haydovchilar svetofor ishoralariga amal qilishlari kerak",
+      "F2": "Haydovchilar imtiyoz belgilariga amal qilishlari kerak"
+    },
+    "options_ru": {
+      "F1": "Водители должны руководствоваться сигналами светофора",
+      "F2": "Водители должны руководствоваться требованиям знаков приоритета"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 38,
+    "question_uz": "Ko'rsatilgan belgilardan qaysi biri faqat shu belgi o'rnatilgan bo'lakka ta'sir qiladi?",
+    "question_ru": "Какой из указанных знаков распространяет свое действие только на ту полосу, над которой он установлен?",
+    "options_uz": {
+      "F1": "Б va В",
+      "F2": "Faqat Б",
+      "F3": "Faqat А"
+    },
+    "options_ru": {
+      "F1": "Б и В",
+      "F2": "Только Б",
+      "F3": "Только А"
+    },
+    "correct_answer": "F3",
+    "image": "images/q038.jpg"
+  },
+  {
+    "id": 39,
+    "question_uz": "Yo'lovchilarga taqiqlanadi:",
+    "question_ru": "Пассажирам запрещается:",
+    "options_uz": {
+      "F1": "Transport vositalari harakatlanayotgan vaqtda haydovchi boshqaishdan chalg'itish va unga xalaqit berish",
+      "F2": "Harakatlanayotgan bortli yuk avtomobillarida tik turish, bortlarda yoki undan yuqori yuk ustida o’tirish",
+      "F3": "Transport vositasi harakatlanayotgan vaqtda uning eshini ochish",
+      "F4": "Barcha ko'rsatilgan javoblar to'g'ri"
+    },
+    "options_ru": {
+      "F1": "Отвлечение внимания и создание препятствий водителю во время движения автомобиля",
+      "F2": "Стоя прямо в движущемся бортовом грузовике, сидя на борту или на грузе над ним",
+      "F3": "Откройте двери автомобиля во время его движения",
+      "F4": "Все показанные ответы верны"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 40,
+    "question_uz": "Harakatlanish tasmasi:",
+    "question_ru": "Полоса движения:",
+    "options_uz": {
+      "F1": "Yo‘lning relssiz transport vositalari harakati uchun mo‘ljallangan qismi",
+      "F2": "Yo‘lning yonma-yon joylashgan qatnov qismlarini ajratuvchi, transport vositalari harakatlanishi yoki to’xtashi uchun mo’jallanmagan, yo’l sathidan baland va (yoki) 1,1 yotiq chizig’i bilan belgilangan qismi",
+      "F3": "Avtomobillarning bir qator bo‘lib harakatlanishi uchun yetarlicha keng bo‘lgan, yo‘l chiziqlari bilan belgilangan yoki belgilanmagan yo’l qatnov qismining har qanday bo’ylama bo’lagi"
+    },
+    "options_ru": {
+      "F1": "Часть дороги, предназначенная для движения безрельсовых транспортных средств",
+      "F2": "Элемент дороги, разделяющий смежные проезжие части и не предназначенный для движения и остановки транспортных средств, расположенный выше уровня дороги и (или) обозначенный дорожной разметкой 1.1",
+      "F3": "Любая из продольных полос проезжей части, обозначенная или необозначенная дорожной разметкой и имеющая ширину, достаточную для движения автомобилей в один ряд"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 41,
+    "question_uz": "M toifadagi transport vositalari bu:",
+    "question_ru": "Автотранспортное средство категории М:",
+    "options_uz": {
+      "F1": "Kamida to'rt g'ildirakka ega bo'lgan va yo'lovchilarni tashish uchun foydalaniladigan mexanik transport vositalari",
+      "F2": "Yuk tashish uchun mo'ljallangan, eng katta vazni 3,5 t dan oshmaydigan avtotransport vositalari",
+      "F3": "Tirkamalar (yarim tirkamalar ham)"
+    },
+    "options_ru": {
+      "F1": "Механические автотранспортные средства, имеющие не менее четырех колес и используемые для перевозки пассажиров",
+      "F2": "Автотранспортные средства, предназначенные для перевозки грузов, максимальная масса которых не превышает 3,5 т",
+      "F3": "Прицепы (включая полуприцепы)"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 42,
+    "question_uz": "Qaysi rasmdagi avtomobil haydovchisi yuk tashish qoidasini buzayapti?",
+    "question_ru": "На каком рисунке изображен автомобиль, водитель которого нарушает правила перевозки ГРУЗОВ?",
+    "options_uz": {
+      "F1": "А",
+      "F2": "Б",
+      "F3": "А va Б"
+    },
+    "options_ru": {
+      "F1": "А",
+      "F2": "Б",
+      "F3": "А и Б"
+    },
+    "correct_answer": "F1",
+    "image": "images/q042.jpg"
+  },
+  {
+    "id": 43,
+    "question_uz": "O'ng tomondagi yondosh hududan foydalanib qayrilib olishning ko'rsatilgan qaysi usuli harakat xavfsizligini ta'minlaydi:",
+    "question_ru": "Способ разворота с использованием прилегающей территории справа. обеспечивающий безопасность движения, показан:",
+    "options_uz": {
+      "F1": "Faqat chap tomondagi suratda",
+      "F2": "Faqat o'ng tomondagi suratda",
+      "F3": "Har ikki suratda"
+    },
+    "options_ru": {
+      "F1": "Только на левом рисунке",
+      "F2": "Только на правом рисунке",
+      "F3": "На обоих рисунках"
+    },
+    "correct_answer": "F1",
+    "image": "images/q043.jpg"
+  },
+  {
+    "id": 44,
+    "question_uz": "Chorrahani oxirgi bo'lib qaysi transport vositasi kesib o'tadi",
+    "question_ru": "Последним проедет перекресток",
+    "options_uz": {
+      "F1": "Ko'k avtomobil",
+      "F2": "Qizil avtomobil",
+      "F3": "Yashil avtomobil"
+    },
+    "options_ru": {
+      "F1": "Синий автомобиль",
+      "F2": "Красный автомобиль",
+      "F3": "Зелёный автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q044.jpg"
+  },
+  {
+    "id": 45,
+    "question_uz": "Balandlika yo'l chetida to'siq mavjud bo'lganda to'xtagan avtomobilni joyidan g'ildirab ketishini oldini olish uchun oldingi g'ildiraklarni burib qo'yish usuli qaysi javobda to'g'ri:",
+    "question_ru": "В случае остановки на подъеме при наличии тротуара можно предотвратить самопроизвольное скатывание автомобиля, повернув его передние колеса в положение:",
+    "options_uz": {
+      "F1": "А ва Г",
+      "F3": "А ва В",
+      "F2": "Б ва В",
+      "F4": "Б ва Г"
+    },
+    "options_ru": {
+      "F1": "А и Г",
+      "F3": "А и В",
+      "F2": "Б и В",
+      "F4": "Б и Г"
+    },
+    "correct_answer": "F3",
+    "image": "images/q045.jpg"
+  },
+  {
+    "id": 46,
+    "question_uz": "Chapga burilayotgan sariq avtomobil haydovchisi qaysi bo'lakni egallashi kerak?",
+    "question_ru": "Жёлтый автомобиль поворачивая налево какую полосу должен занимать?",
+    "options_uz": {
+      "F1": "O'ng bo'lakni",
+      "F2": "Chap bo'lakni",
+      "F3": "O'rta bo'lakni",
+      "F4": "Istalgan bo'lakni"
+    },
+    "options_ru": {
+      "F1": "Правую полосу",
+      "F2": "Левую полосу",
+      "F3": "Среднюю полосу",
+      "F4": "Любую полосу"
+    },
+    "correct_answer": "F4",
+    "image": "images/q046.jpg"
+  },
+  {
+    "id": 47,
+    "question_uz": "Qaysi yo'l belgilari yo'nalishsiz transport vositalariga chapga burilishni taqiqlaydi?",
+    "question_ru": "Какие из указанных знаков запрещают поворот налево?",
+    "options_uz": {
+      "F1": "Faqat \"A\"",
+      "F2": "\"A\" va \"Б\"",
+      "F3": "\"A\" va \"B\"",
+      "F4": "Hammasi"
+    },
+    "options_ru": {
+      "F1": "Только А",
+      "F2": "А и Б",
+      "F3": "А и В",
+      "F4": "Все"
+    },
+    "correct_answer": "F3",
+    "image": "images/q047.jpg"
+  },
+  {
+    "id": 48,
+    "question_uz": "Ushbu yo'l belgisi qanday nomlanadi:",
+    "question_ru": "Как называется этот дорожный знак:",
+    "options_uz": {
+      "F1": "Xavfli yuk tashiyotgan transport vositasining harakati taqiqlangan",
+      "F2": "Katta o'lchamli yuklarni tashish taqiqlangan",
+      "F3": "Yuk avtomobillari bilan quvib o'tish taqiqlangan"
+    },
+    "options_ru": {
+      "F1": "Движение транспортного средства, перевозящего опасные грузы, запрещено",
+      "F2": "Перевозка крупногабаритных грузов запрещена",
+      "F3": "Обгон грузовых автомобилей запрещен"
+    },
+    "correct_answer": "F1",
+    "image": "images/q048.jpg"
+  },
+  {
+    "id": 49,
+    "question_uz": "Yo'lning qatnov qismi-...",
+    "question_ru": "Проезжая часть дороги:",
+    "options_uz": {
+      "F1": "Yo'lning relssiz transport vositalari harakati uchun mo'ljallagan qismi",
+      "F2": "Yo'lning transport vositalari harakati uchun mo'ljallagan qismi",
+      "F3": "Yo'lning avtomobillar harakati uchun mo'ljallagan qismi"
+    },
+    "options_ru": {
+      "F1": "Часть дороги, предназначенная для движения безрельсовых транспортных средств",
+      "F2": "Часть дороги, предназначенная для движения транспортных средств",
+      "F3": "Часть дороги, предназначенная для движения автомобилей"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 50,
+    "question_uz": "Haydovchi yo'lning relssiz transport vositalari harakatlanayotgan bo'laklar sonini belgilaydigan chiziqlar yoki yo'l belgilari bo'lmasa, bo'laklar sonini qanday aniqlash kerak?",
+    "question_ru": "Как водителю определять количество полос движения дороги, если нет разметки или дорожных знаков, указывающей количество полос движения для безрельсовых транспортных средств?",
+    "options_uz": {
+      "F1": "Qantov qismining kengligi, transport vositalari orasidagi zarur yonlama oraliq masofani va ularning gabarit o’lchamlarini hisobga olgan holda o’zi aniqlidi",
+      "F2": "Bunday yo'lni ikki bo'lakli qarama qarshi harakat tashkil qilingan yo'l deb qabul qilish kerak"
+    },
+    "options_ru": {
+      "F1": "Самими водителями, с учётом ширины проезжей части, габаритов транспортных средств и необходимых интервалов между ними",
+      "F2": "Такую дорогу следует рассматривать как двух полосная дорога, на котором организовано двустороннее движение"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 51,
+    "question_uz": "Qaysi javobda orqaga harakatlanish taqiqlangan joylar ko`rsatilgan?",
+    "question_ru": "В каком ответе правильно указан места где запрещается движение задним ходом?",
+    "options_uz": {
+      "F1": "Piyodalarning o'tish joyida",
+      "F2": "Tunnellarda",
+      "F3": "Chorrahalarda",
+      "F4": "Barcha javoblar to'g'ri"
+    },
+    "options_ru": {
+      "F1": "На пешеходных переходах",
+      "F2": "В тоннелях",
+      "F3": "На перекрестках",
+      "F4": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 52,
+    "question_uz": "Shatakka olingan avtobusda odam tashishga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли перевозить людей в буксируемом автобусе?",
+    "options_uz": {
+      "F1": "Ruxsat beriladi",
+      "F2": "Taqiqlanadi",
+      "F3": "Faqat o'tirgan holda tashishga ruxsat beriladi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Запрещается",
+      "F3": "Разрешается только сидячим пассажирам"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 53,
+    "question_uz": "108 km/s tezlikda harakatlanayotgan avtomobil 1 sekundda qancha masofani bosib o`tadi?",
+    "question_ru": "Какое расстояние проедет транспортное средство за одну секунду при скорости движения 108 км/ч?",
+    "options_uz": {
+      "F1": "15 m",
+      "F2": "25 m",
+      "F3": "30 m"
+    },
+    "options_ru": {
+      "F1": "15 м",
+      "F2": "25 м",
+      "F3": "30 м"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 54,
+    "question_uz": "Chap tomondagi yondosh hududdan foydalanib qayrilib olishning ko'rsatilgan qaysi usuli harakat xavfsizligini ta'minlaydi:",
+    "question_ru": "Способ разворота с использованием прилегающей территории слева, обеспечивающий безопасность движения, показан:",
+    "options_uz": {
+      "F1": "Faqat chap tomondagi rasmda",
+      "F2": "Faqat o'ng tomondagi rasmda",
+      "F3": "Ikkisida ham"
+    },
+    "options_ru": {
+      "F1": "Только на левом рисунке",
+      "F2": "Только на правом рисунке",
+      "F3": "На обоих рисунках"
+    },
+    "correct_answer": "F2",
+    "image": "images/q054.jpg"
+  },
+  {
+    "id": 55,
+    "question_uz": "Chorrahadan oxirgi bo'lib qaysi transport vositasi kesib o'tadi:",
+    "question_ru": "Последним проедет перекресток:",
+    "options_uz": {
+      "F1": "Qizil avtomobil",
+      "F2": "Oq avtomobil sariq bilan bir vaqtda",
+      "F3": "Sariq avtomobil"
+    },
+    "options_ru": {
+      "F1": "Красный автомобиль",
+      "F2": "Белый автомобиль одновременно с желтым автомобилем",
+      "F3": "Желтый автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q055.jpg"
+  },
+  {
+    "id": 56,
+    "question_uz": "Yengil avtomobil burilishda ag'darilib ketishga qarshi turg'unroq:",
+    "question_ru": "Более устойчив против опрокидывания на повороте легковой автомобиль:",
+    "options_uz": {
+      "F1": "Yo'lovchisiz va yuksiz",
+      "F2": "Yo'lovchisiz, biroq yuqori yukxonasidagi yuki bilan",
+      "F3": "Yo'lovchilari va yuksiz",
+      "F4": "Yo'lovchi va yuki bilan"
+    },
+    "options_ru": {
+      "F1": "Без пассажиров и груза",
+      "F2": "Без пассажиров, но с грузом на верхнем багажнике",
+      "F3": "С пассажирами, но без груза",
+      "F4": "С пассажирами и грузом"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 57,
+    "question_uz": "Qaysi transport vositasiga harakatlanish taqiqlangan?",
+    "question_ru": "Какому транспортному средству движение запрещено?",
+    "options_uz": {
+      "F1": "Motosiklga",
+      "F2": "Hech kimga taqiqlanmagam",
+      "F3": "Yuk avtomobiliga"
+    },
+    "options_ru": {
+      "F1": "Мотоциклу",
+      "F2": "Никому не запрещено",
+      "F3": "Грузовому автомобилю"
+    },
+    "correct_answer": "F3",
+    "image": "images/q057.jpg"
+  },
+  {
+    "id": 58,
+    "question_uz": "Piyodalar to'xtab turgan avtobus va trolleybusning qaysi tomonidan yo'lni kesib o'tishlari kerak?",
+    "question_ru": "Пешеходы при пересечении дороги с какой стороны обязаны обходить стоящий автобус и троллейбус?",
+    "options_uz": {
+      "F1": "Oldi tomonidan",
+      "F2": "Orqa tomonidan",
+      "F3": "Istalgan tomonidan"
+    },
+    "options_ru": {
+      "F1": "Спереди",
+      "F2": "Сзади",
+      "F3": "С любой стороны"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 59,
+    "question_uz": "Ushbu yo'l belgisi:",
+    "question_ru": "Этот дорожный знак:",
+    "options_uz": {
+      "F1": "Qatnov qismida to'suvchi qurilma borligini bildiradi",
+      "F2": "Temir yo'l kesishmasi oldida to'suvchi qurilma borligini bildiradi",
+      "F3": "Chorraha oldida to'suvchi qurilma borligini bildiradi"
+    },
+    "options_ru": {
+      "F1": "Обозначает что, на проезжей части имеется заградительное устройство",
+      "F2": "Обозначает что, перед железнодорожным переездам заградительное устройство",
+      "F3": "Обозначает что, перед перекрестком заградительное устройство"
+    },
+    "correct_answer": "F2",
+    "image": "images/q059.jpg"
+  },
+  {
+    "id": 60,
+    "question_uz": "Haydovchi o'zidan oldinda harakatlanayotgan transport vositasi bilan qancha oraliq masofa saqlab harakatlanishi kerak?",
+    "question_ru": "Какую дистанцию должен соблюдать водитель до движущегося впереди транспортного средства?",
+    "options_uz": {
+      "F1": "20 m",
+      "F2": "50 m",
+      "F3": "Haydovchi o'zidan oldinda harakatlanayotgan transport vositasi keskin tormoz berganida to'qnashib ketmasligi kafolatini beradigan darajada oraliq masofani saqlash kerak"
+    },
+    "options_ru": {
+      "F1": "20 м",
+      "F2": "50 м",
+      "F3": "Водитель должен соблюдать такую дистанцию до движущегося впереди транспортного средства, которая гарантировала бы избежание столкновения в случае его экстренной остановки"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 61,
+    "question_uz": "Rasmda ko'rsatilgan chorahha-...",
+    "question_ru": "На рисунке изображена:",
+    "options_uz": {
+      "F1": "Tartibga solinmagan, teng ahamiyatga ega bo'lmagan yo'llar kesishgan chorraha",
+      "F2": "Tartibga solinmagan, teng ahamiyatga ega bo'lgan yo'llar kesishgan chorraha",
+      "F3": "Tartibga solingan chorraha"
+    },
+    "options_ru": {
+      "F1": "Нерегулируемый перекресток неравнозначных дорог",
+      "F2": "Нерегулируемый, равнозначный перекресток",
+      "F3": "Регулируемый перекресток"
+    },
+    "correct_answer": "F3",
+    "image": "images/q061.jpg"
+  },
+  {
+    "id": 62,
+    "question_uz": "Avtomobil haydovchisi qayrilib olmoqchi:",
+    "question_ru": "Водитель автомобиля намерен развернуться:",
+    "options_uz": {
+      "F1": "Chorrahaga birinchi bo'lib o'tadi",
+      "F2": "Tramvayga yo'l berib qayrilib oladi"
+    },
+    "options_ru": {
+      "F1": "Проедет перекресток первым",
+      "F2": "Выполняет разворот, уступив дорогу трамваю"
+    },
+    "correct_answer": "F2",
+    "image": "images/q062.jpg"
+  },
+  {
+    "id": 63,
+    "question_uz": "Yo`lning xavfli burilishlarida oldingi uzatmali avtomobilning orqa o`qi yon tomonga sirpanayotganda siz qanday harakat qilasiz?",
+    "question_ru": "На повороте возник занос задней оси переднеприводного автомобиля. Ваши действия?",
+    "options_uz": {
+      "F1": "Gaz berishni kamaytirib rul chambaragi bilan boshqaruvni barqarorlashtirasiz",
+      "F2": "Tormozlab turib rul chambaragini sirpangan tomonga burasiz",
+      "F3": "Gaz pedalini ohista bosib, avtomobilni rul chambaragini to`g`irlab, avtomobil sirpanishdan olib chiqib ketasiz",
+      "F4": "Gaz pedalini ko`proq bosib, avtomobilni rul chambaragini o`zgartirmasdan sirpanishdan olib chiqasiz"
+    },
+    "options_ru": {
+      "F1": "Уменьшите подачу топлива, рулевым колесом стабилизируете движение",
+      "F2": "Притормозите и повернёте рулевое колесо в сторону заноса",
+      "F3": "Слегка увеличите подачу топлива, корректируя направление движения рулевым колесом",
+      "F4": "Значительно увеличите подачу топлива, не меняя положения рулевого колеса"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 64,
+    "question_uz": "Avtomobilning ABS tizimi burilishda sirpanish va yonga siljishni oldini oladimi?",
+    "question_ru": "Исключает ли антиблокировочная тормозная система (ABS возможность возникновения заноса или сноса при прохождении поворота?",
+    "options_uz": {
+      "F1": "Avtomobil faqat sirpanish ehtimolining oldini oladi",
+      "F2": "Avtomobil faqat yonga siljish ehtimolining oldini oladi",
+      "F3": "Avtomobil sirpanish va yonga sirpanishini oldini olmaydi"
+    },
+    "options_ru": {
+      "F1": "Полностью исключает возможность возникновения только заноса",
+      "F2": "Полностью исключает возможность возникновения только сноса",
+      "F3": "Не исключает возможность возникновения сноса или заноса"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 65,
+    "question_uz": "Motosikl haydovchisi qo`lini yuqoriga ko`tarib nima haqida axborot berayapti:",
+    "question_ru": "Поднятая вверх рука водителя мотоцикла является сигналом, информирующим Вас о его намерении:",
+    "options_uz": {
+      "F1": "Harakatni davom ettirish haqida",
+      "F2": "O'ngga burilmoqchi ekanligi haqida",
+      "F3": "To'xtash haqida"
+    },
+    "options_ru": {
+      "F1": "Продолжить движение прямо",
+      "F2": "Повернуть направо",
+      "F3": "Об остановке"
+    },
+    "correct_answer": "F3",
+    "image": "images/q065.jpg"
+  },
+  {
+    "id": 66,
+    "question_uz": "Yo'l to'sig'iga chizilgan tik chiziq nimani bildiradi?",
+    "question_ru": "О чем обозначает Вас вертикальная разметка, нанесенная на ограждение дороги?",
+    "options_uz": {
+      "F1": "Temir yo`l kesishmasiga yaqinlashayotganlik haqida",
+      "F2": "Xavfli chorrahaga yaqinlashayotganlik haqida",
+      "F3": "Yo'lning kichik rauisli burilish, tik nishablik va boshqa xavfli joylarda yo'l to'siqlarining yon yuzalarini bildiradi"
+    },
+    "options_ru": {
+      "F1": "Обозначает приближении к железнодорожному переезду",
+      "F2": "Обозначает приближении к опасному перекрестку",
+      "F3": "Обозначает боковые поверхности ограждений дорог на закруглениях малого радиуса, крутых спусках, других опасных участках"
+    },
+    "correct_answer": "F3",
+    "image": "images/q066.jpg"
+  },
+  {
+    "id": 67,
+    "question_uz": "Qaysi belgilar axborot-ko'rsatkich belgilari?",
+    "question_ru": "Какие знаки являются информационно-указательным?",
+    "options_uz": {
+      "F1": "1 va 2",
+      "F2": "3 va 4",
+      "F3": "2 va 3",
+      "F4": "1 va 4"
+    },
+    "options_ru": {
+      "F1": "1 и 2",
+      "F2": "3 и 4",
+      "F3": "2 и 3",
+      "F4": "1 и 4"
+    },
+    "correct_answer": "F3",
+    "image": "images/q067.jpg"
+  },
+  {
+    "id": 68,
+    "question_uz": "Qaysi yo'l belgilari yo'lning tor qismida haydovchiga ustunlik beradi?",
+    "question_ru": "При наличии каких знаков водитель пользуется преимуществом, если встречный разъезд затруднен препятствием?",
+    "options_uz": {
+      "F1": "Faqat \"B\"",
+      "F2": "\"A\" va \"B\"",
+      "F3": "\"Б\" va \"B\"",
+      "F4": "\"Б\" va \"Г\""
+    },
+    "options_ru": {
+      "F1": "Только В",
+      "F2": "А и В",
+      "F3": "Б и В",
+      "F4": "Б и Г"
+    },
+    "correct_answer": "F4",
+    "image": "images/q068.jpg"
+  },
+  {
+    "id": 69,
+    "question_uz": "Ushbu yo'l belgilari qanday maqsadda qo'llaniladi?",
+    "question_ru": "С какой целью применяется этот дорожный знак?",
+    "options_uz": {
+      "F1": "Majburiy tarzda tezlikni kamaytirish uchun",
+      "F2": "Keskin tormoz berish uchun",
+      "F3": "Ehtiyot choralarini ko'rish uchun"
+    },
+    "options_ru": {
+      "F1": "Для принудительного снижения скорости движения",
+      "F2": "Для резкого торможения",
+      "F3": "Для принятия меры предосторожности"
+    },
+    "correct_answer": "F1",
+    "image": "images/q069.jpg"
+  },
+  {
+    "id": 70,
+    "question_uz": "Qaysi belgi yo'lning kichik radiusli xavfli burilish joyiga yaqinlashayotganlik haqida ogohlantiradi?",
+    "question_ru": "Какой знак предупреждают что впереди имеется закругление дороги малого радиуса?",
+    "options_uz": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3",
+      "F4": "4"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3",
+      "F4": "4"
+    },
+    "correct_answer": "F4",
+    "image": "images/q070.jpg"
+  },
+  {
+    "id": 71,
+    "question_uz": "Rasmda ko'rsatilgan chorhha-...",
+    "question_ru": "На рисунке изображена-...",
+    "options_uz": {
+      "F1": "Tartibga solinmagan, teng ahamiyatga ega bo'lmagan yo'llar kesishadigan chorraha",
+      "F2": "Tartibga solinmagan, teng ahamiyatga ega bo'lgan yo'llar kesishadigan chorraha",
+      "F3": "Tartibga solingan chorraha"
+    },
+    "options_ru": {
+      "F1": "Нерегулируемый, перекресток неравнозначных дорог",
+      "F2": "Нерегулируемый, равнозначный перекресток",
+      "F3": "Регулируемый перекресток"
+    },
+    "correct_answer": "F1",
+    "image": "images/q071.jpg"
+  },
+  {
+    "id": 72,
+    "question_uz": "Aylanma harakatlanish chorrahasida:",
+    "question_ru": "На перекрёстке кругового движения:",
+    "options_uz": {
+      "F1": "Harakatlanayotgan transport vositalari aylanaga kirib kelayotgan transport vositalariga nisbatan ustunlikka (imtiyozga) ega",
+      "F2": "Harakatlanayotgan transport vositalariga nisbatan aylanaga kirib kelayotgan transport vositalari ustunlikka (imtiyozga) ega"
+    },
+    "options_ru": {
+      "F1": "Транспортные средства, движущиеся на перекрестке с круговым движением, имеют приоритет (преимущество) по отношению к транспортным средствам, въезжающим на перекресток",
+      "F2": "Транспортные средства въезжающий на перекресток имеют приоритет (преимущество) по отношению к транспортным средствам движущиеся на перекрестке"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 73,
+    "question_uz": "Ushbu qo'shimcha yo'l belgisi bildiradi :",
+    "question_ru": "Эта табличка означает:",
+    "options_uz": {
+      "F1": "Belgi ta'sir oralig'ida to'xtagan transport vositalari majburiy evakuatsiya qilinishini ko'rsatadi",
+      "F2": "Belgi ta'sir oralig'ida to'xtagan transport vositalarini evakuatsiya qilinish ruxsat etilganligini bildiradi",
+      "F3": "Belgi ta'sir oralig'ida to'xtagan transport vositalarini evakuatsiya qilin taqiqlanganligini bildiradi принудительную эвакуацию автомобилей, в зоне действие знака остановившихся транспортных средств в зоне остановившихся транспортных средств в зоне"
+    },
+    "options_ru": {
+      "F1": "Указывает на остановившихся",
+      "F2": "Разрешает эвакуацию действие знака",
+      "F3": "Запрещает эвакуацию действие знака"
+    },
+    "correct_answer": "F1",
+    "image": "images/q073.jpg"
+  },
+  {
+    "id": 74,
+    "question_uz": "Qaysi belgi ikkinchi darajali yo'l bilan tutashuvni bildiradi?",
+    "question_ru": "Какой знак обозначает примыкание второстепенной дороги?",
+    "options_uz": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3",
+      "F4": "4"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3",
+      "F4": "4"
+    },
+    "correct_answer": "F2",
+    "image": "images/q074.jpg"
+  },
+  {
+    "id": 75,
+    "question_uz": "Agar avtomobilning o`ng g`ildiraklari nam qoplamali yo`l yoqasiga chiqib qolsa, tavsiya etiladi:",
+    "question_ru": "В случае, когда правые колёса автомобиля наезжают на неукреплённую влажную обочину, рекомендуется:",
+    "options_uz": {
+      "F1": "Avtomobilni tormozlash va to`liq to`xtatish",
+      "F2": "Avtomobilni tormozlab, yo`lning qatnov qismiga ohista ravon burish",
+      "F3": "Avtomobilni tormozlamasdan yo`lning qatnov qismiga ohista ravon burish"
+    },
+    "options_ru": {
+      "F1": "Затормозить и полностью остановиться",
+      "F2": "Затормозить и плавно направить автомобиль на проезжую часть",
+      "F3": "Не прибегая к торможению, плавно направить автомобиль на проезжую часть"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 76,
+    "question_uz": "Qaysi rasmda ajratuvchi mintaqa ko'rsatilgan?",
+    "question_ru": "На каком рисунков показано разделительная полоса?",
+    "options_uz": {
+      "F1": "hech qaysi",
+      "F2": "В",
+      "F3": "А va Б"
+    },
+    "options_ru": {
+      "F1": "не в одном",
+      "F2": "В",
+      "F3": "А и Б"
+    },
+    "correct_answer": "F1",
+    "image": "images/q076.jpg"
+  },
+  {
+    "id": 77,
+    "question_uz": "Ushbu qo'shimcha axborot yo'l belgisi:",
+    "question_ru": "Этот дополнительная табличка означает:",
+    "options_uz": {
+      "F1": "Ob'yektgacha bo'lgan masofani bildiradi",
+      "F2": "Belgining ta'sir oralig'ini bildiradi"
+    },
+    "options_ru": {
+      "F1": "Расстояние до объекта",
+      "F2": "Зона действия знака"
+    },
+    "correct_answer": "F1",
+    "image": "images/q077.jpg"
+  },
+  {
+    "id": 78,
+    "question_uz": "Ko'k avtomobil chorahhani kesib o'tadi:",
+    "question_ru": "Синий автомобиль проедет перекресток:",
+    "options_uz": {
+      "F1": "Birinchi bo'lib",
+      "F2": "Ikkinchi bo'lib",
+      "F3": "Oxirgi bo'lib"
+    },
+    "options_ru": {
+      "F1": "Первым",
+      "F2": "Вторым",
+      "F3": "Последнее"
+    },
+    "correct_answer": "F3",
+    "image": "images/q078.jpg"
+  },
+  {
+    "id": 79,
+    "question_uz": "Turar joy dahalarida qanday eng katta tezlikda harakatlanishga ruxsat etiladi:",
+    "question_ru": "С какой максимальной скоростью разрешается движение в жилых зонах:",
+    "options_uz": {
+      "F1": "5 km/s",
+      "F2": "20 km/s",
+      "F3": "30 km/s",
+      "F4": "40 km/s"
+    },
+    "options_ru": {
+      "F1": "5 км/ч",
+      "F2": "20 км/ч",
+      "F3": "30 км/с",
+      "F4": "40 км/ч"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 80,
+    "question_uz": "Yo'nalishli bo'lmagan transport vositalari \"A\" xarfi bilan belgilangan o'ng bo'lakda qaysi holatlarda harakatlanishlari mumkin?",
+    "question_ru": "В каких случаях немаршрутные транспортные средства могут двигаться по правой полосе, обозначенной буквой «А»?",
+    "options_uz": {
+      "F1": "O'nga burilishda",
+      "F2": "Yo'lovchilarni chiqarish va tushirishda",
+      "F3": "Yuqoridagi barcha holatlarda aragda yo'nalishli transport vositalariga xalaqit bermasa"
+    },
+    "options_ru": {
+      "F1": "При повороте направо",
+      "F2": "При посадке и высадке пассажиров",
+      "F3": "Во всех вышеперечисленных случаях, если не мешает движению маршрутных транспортных средств"
+    },
+    "correct_answer": "F3",
+    "image": "images/q080.jpg"
+  },
+  {
+    "id": 81,
+    "question_uz": "Qaysi rasmda ikkita qatnov qismiga ega bo`lgan yo'l ko'rsatilgan?",
+    "question_ru": "На каком рисунке изображена дорога с двумя проезжими частями?",
+    "options_uz": {
+      "F1": "\"A\" rasmda",
+      "F2": "\"Б\" rasmda",
+      "F3": "Hech qaysi rasmda"
+    },
+    "options_ru": {
+      "F1": "На рисунке «А»",
+      "F2": "На рисунке «Б»",
+      "F3": "Ни на одном рисунке"
+    },
+    "correct_answer": "F3",
+    "image": "images/q081.jpg"
+  },
+  {
+    "id": 82,
+    "question_uz": "Ushbu yo'l nechta qatnov qismiga ega?",
+    "question_ru": "Сколько проезжих частей имеет эта дорога?",
+    "options_uz": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F2": "2",
+      "F3": "3"
+    },
+    "correct_answer": "F1",
+    "image": "images/q082.jpg"
+  },
+  {
+    "id": 83,
+    "question_uz": "Bu vaziyatda siz o`ngga burilayotib, Siz:",
+    "question_ru": "Когда вы поворачиваете направо в этой",
+    "options_uz": {
+      "F1": "Faqat transport vositalariga yo'l berasiz",
+      "F2": "Barcha qatnov qismidagi piyodalarga yo'l berasiz",
+      "F3": "Harakat yo;nalishi boyicha va burilayotgan ko'chani kesib o'tayotgan piyodalarga hamda boshqa transport vositalariga yo’l barasiz ситуации, вы: средствам всей проезжей части другим транспортным средствам, движения и при повороте"
+    },
+    "options_ru": {
+      "F1": "Вы уступаете дорогу только транспортным",
+      "F2": "Вы уступите дорогу пешеходам на",
+      "F3": "Вы уступаете дорогу пешеходам и пересекающим улицу в направлении"
+    },
+    "correct_answer": "F3",
+    "image": "images/q083.jpg"
+  },
+  {
+    "id": 84,
+    "question_uz": "Yuk avtomobili haydovchisiga qaysi yo'nalishda harakatlanishga ruxsat beriladi?",
+    "question_ru": "В каких направлениях разрешено движение водителю грузового автомобиля?",
+    "options_uz": {
+      "F1": "To'g'riga va o'ngga",
+      "F2": "O'ngga chapga va orqaga",
+      "F3": "Faqat o'ngga",
+      "F4": "Barcha yo'nalishlarga"
+    },
+    "options_ru": {
+      "F1": "Направо и прямо",
+      "F2": "Направо, налево и назад",
+      "F3": "Только направо",
+      "F4": "На все направления"
+    },
+    "correct_answer": "F1",
+    "image": "images/q084.jpg"
+  },
+  {
+    "id": 85,
+    "question_uz": "Qaysi transport vositalariga harakatlanishga ruxsat berilgan?",
+    "question_ru": "На каких транспортных средствах разрешено движение?",
+    "options_uz": {
+      "F1": "Motosikl va yengil avtomobilga to'g'riga va o'nga",
+      "F2": "Motosiklga o'nga va yengil avtomobilga barcha yo'nalishlarga",
+      "F3": "Yengil avtomobilga to'g'riga va o'nga"
+    },
+    "options_ru": {
+      "F1": "Мотоцикл и легковой автомобиль на прямой и вправо",
+      "F2": "На мотоцикле вправо, на легковом автомобиле во все стороны",
+      "F3": "К легковому автомобилю Прямо и вправо"
+    },
+    "correct_answer": "F3",
+    "image": "images/q085.jpg"
+  },
+  {
+    "id": 86,
+    "question_uz": "N1 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yig'indisiga yo'l qo'yiladi?",
+    "question_ru": "Суммарный люфт в рулевом управлении в регламентированных условиях испытаний автотранспортного средства категория N1 не должен превышать следующих значений:",
+    "options_uz": {
+      "F1": "10 gradus",
+      "F2": "20 gradus",
+      "F3": "25 gradus"
+    },
+    "options_ru": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 87,
+    "question_uz": "Ushbu svetafor qaysi yo'nalishda harakatlanishga ruxsat beradi?",
+    "question_ru": "В каком направлении этот светофор позволяет вам двигаться?",
+    "options_uz": {
+      "F1": "Faqat chapga",
+      "F2": "To'g'riga va chapga",
+      "F3": "To'g'riga va o'ngga",
+      "F4": "Faqat o'ngga"
+    },
+    "options_ru": {
+      "F1": "Только влево",
+      "F2": "Прямо и влево",
+      "F3": "Прямо и вправо",
+      "F4": "Только вправо"
+    },
+    "correct_answer": "F3",
+    "image": "images/q087.jpg"
+  },
+  {
+    "id": 88,
+    "question_uz": "Qaysi brlgi yo'lning ko'rsatilgan yo'nalishida oxiri berk ko'chaligini bildiradi",
+    "question_ru": "Какой знак указывает на закрытую улицу в конце дороги в указанном направлении?",
+    "options_uz": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "correct_answer": "F4",
+    "image": "images/q088.jpg"
+  },
+  {
+    "id": 89,
+    "question_uz": "Miltillovchi sariq ishorali svetofor:",
+    "question_ru": "Мигающий желтый сигнал светофора:",
+    "options_uz": {
+      "F1": "Tartibga solinmagan chorraha yoki piyodalar o'tish joyi borligidan xabardor qiladi",
+      "F2": "Tartibga solingan chorraha borligidan xabardor qiladi",
+      "F3": "Svetafor chirog'i almashuvidan xabardor qiladi ."
+    },
+    "options_ru": {
+      "F1": "Информирует о наличии нерегулируемого перекрестка или пешеходного перехода",
+      "F2": "Информирует о наличии регулируемого перекрестка",
+      "F3": "Сигнал светофора уведомляет вас об изменении цвета ."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 90,
+    "question_uz": "Qaysi belgi ikkinchi darajali yo'l bilan kesishuvni bildiradi?",
+    "question_ru": "Какой знак обозначает пересечение с второстепенной дорогой",
+    "options_uz": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "correct_answer": "F1",
+    "image": "images/q090.jpg"
+  },
+  {
+    "id": 91,
+    "question_uz": "To`xtash qoidasini qaysi transport vositasining haydovchisi buzdi?",
+    "question_ru": "Кто из водителей нарушил правила остановки?",
+    "options_uz": {
+      "F1": "Har ikkala haydovchi ham",
+      "F2": "Faqat ko`k avtomobil haydovchisi",
+      "F3": "Faqat qizil avtomobil haydovchisi"
+    },
+    "options_ru": {
+      "F1": "Оба нарушили",
+      "F2": "Только водитель синего автомобиля",
+      "F3": "Только водитель красного автомобиля"
+    },
+    "correct_answer": "F3",
+    "image": "images/q091.jpg"
+  },
+  {
+    "id": 92,
+    "question_uz": "Ushbu vaziyatda siz o`ngga bo`lakda harakatlanmoqdasiz, sizning bo`lagingizda qayta tizilayotgan transport vositasiga yo`l berishingiz kerakmi?",
+    "question_ru": "Обязаны ли вы двигаясь по правой полосе, уступить дорогу водителю автомобиля, который намерен перестроиться на Вашу полосу?",
+    "options_uz": {
+      "F1": "Kerak emas",
+      "F2": "Kerak"
+    },
+    "options_ru": {
+      "F1": "Не обязаны",
+      "F2": "Обязаны"
+    },
+    "correct_answer": "F1",
+    "image": "images/q092.jpg"
+  },
+  {
+    "id": 93,
+    "question_uz": "Ushbu yo`l belgisi qaysi transport vositalarining harakatlanishini taqiqlanadi?",
+    "question_ru": "Движение каких транспортных",
+    "options_uz": {
+      "F1": "Ruxsat etilgan to`la vazni 3,5 tonnadan ortiq bo`lgan yuk avtomobillarini",
+      "F2": "Xavfli yuk tashiyotgan transport vositalarining harakatlanishini",
+      "F3": "Portlovchi va tez alangalanuvchi yukni tashiyotgan transport vositalarining harakatlanishi средств запрещает этот дорожный знак? с разрешенной максимальной массой более средств с опасными грузами средств с взрывчатыми и грузами"
+    },
+    "options_ru": {
+      "F1": "Грузовых автомобилей 3.5 тонн",
+      "F2": "Движение транспортных",
+      "F3": "Движение транспортных легковоспламеняющимися"
+    },
+    "correct_answer": "F2",
+    "image": "images/q093.jpg"
+  },
+  {
+    "id": 94,
+    "question_uz": "Sanab o`tilgan qaysi hollarda egiluvchan ulagichda shatakka olish taqiqlanadi?",
+    "question_ru": "В каких из перечисленных случаев запрещена буксировка на гибкой сцепке?",
+    "options_uz": {
+      "F1": "Faqat tog`li yo`llarda",
+      "F2": "Faqat sirpanchiq yo`lda",
+      "F3": "Kunning qorong`i vaqtida va yetarlicha ko`rinmaslik sharoitida",
+      "F4": "Barcha sanab o`tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "Только на горных дорогах",
+      "F2": "Только в гололедицу",
+      "F3": "Только в темное время суток и в условиях недостаточной видимости",
+      "F4": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 95,
+    "question_uz": "Qizil avtomobil chorrahani nechanchi bo`lib kesib o`tadi?",
+    "question_ru": "Красный автомобиль проедет перекресток:",
+    "options_uz": {
+      "F1": "Oxirgi bo`lib",
+      "F2": "Ikkinchi bo`lib",
+      "F3": "Birinchi bo`lib"
+    },
+    "options_ru": {
+      "F1": "Последним",
+      "F2": "Вторым",
+      "F3": "Первым"
+    },
+    "correct_answer": "F1",
+    "image": "images/q095.jpg"
+  },
+  {
+    "id": 96,
+    "question_uz": "Ushbu vaziyatda siz:",
+    "question_ru": "В этом случае Вы:",
+    "options_uz": {
+      "F1": "To`xtamasdan harakatni davom ettirishingiz mumkin",
+      "F2": "Belgi oldida to`xtashingiz va svetaforning ruxsat beruvchi ishorasini kutishingiz kerak"
+    },
+    "options_ru": {
+      "F1": "Можете продолжить движение без остановки",
+      "F2": "Должны остановиться перед знаком и ждать разрешающего сигнала светофора"
+    },
+    "correct_answer": "F2",
+    "image": "images/q096.jpg"
+  },
+  {
+    "id": 97,
+    "question_uz": "Bu joyda yo`lovchilarni chiqarish yoki tushirish maqsadida to`xtash mumkinmi?",
+    "question_ru": "Можете ли Вы остановиться в этом месте для посадки или высадки пассажиров?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo`q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F1",
+    "image": "images/q097.jpg"
+  },
+  {
+    "id": 98,
+    "question_uz": "Qanday hollarda sizga 50 km/s dan yuqori tezlikda harakatlanish taqiqlangan?",
+    "question_ru": "В каком случае Вам необходимо двигаться со скоростью до 50 км/ч?",
+    "options_uz": {
+      "F1": "Faqat qatnov qismi nam bo`lsa",
+      "F2": "Har qanday holatda ham"
+    },
+    "options_ru": {
+      "F1": "Только в том случав, когда покрытие на дороге влажное",
+      "F2": "Во всех случаях"
+    },
+    "correct_answer": "F1",
+    "image": "images/q098.jpg"
+  },
+  {
+    "id": 99,
+    "question_uz": "Qaysi belgi to`siqni o`ng yoki chap tomonidan chetlab o`tishga ruxsat etilishini bildiradi?",
+    "question_ru": "Какой знак указывает на то, что разрешается обходить препятствие справа или слева?",
+    "options_uz": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "options_ru": {
+      "F1": "1",
+      "F4": "4",
+      "F2": "2",
+      "F5": "5",
+      "F3": "3"
+    },
+    "correct_answer": "F5",
+    "image": "images/q099.jpg"
+  },
+  {
+    "id": 100,
+    "question_uz": "\"Imtiyoz\" atamasiga tegishli ta`rifni ko`rsating",
+    "question_ru": "В какой Формулировке указан правильный ответ термину \"Преимущество\".",
+    "options_uz": {
+      "F1": "Yo‘l harakati qatnashchilariga nisbatan imtiyozi bo‘lgan boshqa yo‘l harakati qatnashchisining harakat yo‘nalishi yoki tezligini o‘zgartirishga majbur etishi mumkin bo‘lgan hollarda harakatni davom ettirmasligini yoki boshlamasligini, biror-bir manyovr bajarishi mumkin emasligini bildiruvchi talab",
+      "F2": "Mo‘ljallangan yo‘nalishda boshqa yo‘l harakati qatnashchilariga nisbatan oldin harakatlanish huquqi ."
+    },
+    "options_ru": {
+      "F1": "Требование, означающее, что участии к дорожного движения не должен продолжать или начинать движение, осуществлять какой-либо маневр, если это может вынудить других участников движения, имеющих по отношению к нему приоритет, изменить направление движения или скорость",
+      "F2": "Право на первоочередное движение в намеченном направлении по отношению к другим участникам движения ."
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 101,
+    "question_uz": "Shokning belgilari qanday?",
+    "question_ru": "Каковы признаки шока?",
+    "options_uz": {
+      "F1": "Teri va shilliq qavatining oqarishi",
+      "F2": "Kuchli ter ajralishi",
+      "F3": "Og`iz qurishi, chanqoqlik, nafas olishning tezlashuvi",
+      "F4": "Es-hushning noaniqligi, behush holati",
+      "F5": "Yuqoridagi barcha holatlar"
+    },
+    "options_ru": {
+      "F1": "Побледнение кожи и слизистых оболочек",
+      "F2": "Сильное потоотделение",
+      "F3": "Сухость рта, жажда, учащённое дыхание",
+      "F4": "Спутанность сознания, обморочное состояние",
+      "F5": "Во всех случаях вышеуказанных"
+    },
+    "correct_answer": "F5",
+    "image": null
+  },
+  {
+    "id": 102,
+    "question_uz": "Agar avtomobilning o`ng g`ildiraklari nam qoplamali yo`l yoqasiga chiqib qolsa, tavsiya etiladi:",
+    "question_ru": "В случае, когда правые колёса автомобиля наезжают на неукреплённую влажную обочину, рекомендуется:",
+    "options_uz": {
+      "F1": "Avtomobilni tormozlash va to`liq to`xtatish",
+      "F2": "Avtomobilni tormozlab, yo`lning qatnov qismiga ohista ravon burish",
+      "F3": "Avtomobilni tormozlamasdan yo`lning qatnov qismiga ohista ravon burish"
+    },
+    "options_ru": {
+      "F1": "Затормозить и полностью остановиться",
+      "F2": "Затормозить и плавно направить автомобиль на проезжую часть",
+      "F3": "Не прибегая к торможению, плавно направить автомобиль на проезжую часть"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 103,
+    "question_uz": "Yo‘l harakati xavfsizligini ta’minlash - ...",
+    "question_ru": "Обеспечение безопасности дорожного движения —",
+    "options_uz": {
+      "F1": "Yo‘l-transport hodisalarining kelib chiqish sabablarini oldini olishga, ularning og‘ir oqibatlarini kamaytirishga qaratilgan faoliyat",
+      "F2": "Transport vositalari va piyodalarning harakatlanishi uchun qurilgan yoki moslashtirilgan yer bo‘lagi yoxud suniy inshoot yuzasi. Yo‘l avtomobil va shahar elektr transporti yo‘llarini hamda trotuarlarni o‘z ichiga oladi"
+    },
+    "options_ru": {
+      "F1": "Состояние дорожного движения, отражающее степень защищенности его участников от дорожно-транспортных происшествий и их последствий.",
+      "F2": "Совокупность отношений, возникающих в процессе перемещения людей и грузов с помощью транспортных средств или без таковых в пределах дорог"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 104,
+    "question_uz": "Ushbu ko`rsatilgan holatda kim yo`l berishi kerak?",
+    "question_ru": "Кто обязан уступить дорогу в данной ситуации?",
+    "options_uz": {
+      "F1": "Avtomobil haydovchisi",
+      "F2": "Motosikl haydovchisi"
+    },
+    "options_ru": {
+      "F1": "Водитель автомобиля",
+      "F2": "Мотоциклист"
+    },
+    "correct_answer": "F2",
+    "image": "images/q104.jpg"
+  },
+  {
+    "id": 105,
+    "question_uz": "Tik nishablikda dvigatel bilan tormozlashda qiyalikka nisbatan qanday uzatma tanlanadi?",
+    "question_ru": "Как следует выбирать передачу при торможении двигателем с учетом крутизны спуска?",
+    "options_uz": {
+      "F1": "Nishablik qancha qiya bo`lsa uzatma pog`onasi shuncha yuqori tanlanadi",
+      "F2": "Nishablik qancha qiya bo`lsa uzatma pog`onasi shuncha past tanlanadi",
+      "F3": "Pog`onalarni nishablikka aloqasi yo`q"
+    },
+    "options_ru": {
+      "F1": "Чем круче спуск, тем выше передача выбираться",
+      "F2": "Чем круче спуск, тем ниже передача",
+      "F3": "Выбор передачи не зависит от крутизны спуска"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 106,
+    "question_uz": "Qaysi belgi haydovchiga kesib o`tilayotgan yo`lda harakatlanayotgan transport vositalariga yo`l berishi lozimligini bildiradi?",
+    "question_ru": "Какой знак указывает водителю уступить дорогу транспортным средствам, движущимся по пересекаемой дороге?",
+    "options_uz": {
+      "F1": "А",
+      "F4": "Г",
+      "F2": "Б",
+      "F5": "Б va Г",
+      "F3": "В"
+    },
+    "options_ru": {
+      "F1": "А",
+      "F4": "Г",
+      "F2": "Б",
+      "F5": "Б и Г",
+      "F3": "В"
+    },
+    "correct_answer": "F5",
+    "image": "images/q106.jpg"
+  },
+  {
+    "id": 107,
+    "question_uz": "Tumanga qarshi old chiroqlrni qorong`i vaqtda, yo`lning yoritilmagan qismlarida uzoqni yoki yaqinni yorituvchi chiroqlar bilan birga qo`llash mumkinmi?",
+    "question_ru": "Можно ли использоваться противотуманные Фары в темное время суток на неосвещенных участках дорог совместно с ближним или дальним светом Фар?",
+    "options_uz": {
+      "F1": "Mumkin",
+      "F2": "Mumkin emas"
+    },
+    "options_ru": {
+      "F1": "Можно",
+      "F2": "Нельзя"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 108,
+    "question_uz": "Ushbu belgilardan qaysi biri oldinda yo`l qoplamasi istida sun`iy notekislik borligi haqida ogohlantiradi?",
+    "question_ru": "Какой из указанных знаков предупреждает водителя об искусственных неровностях на проезжей части дорог?",
+    "options_uz": {
+      "F1": "А",
+      "F2": "В",
+      "F3": "С",
+      "F4": "А va С"
+    },
+    "options_ru": {
+      "F1": "А",
+      "F2": "В",
+      "F3": "С",
+      "F4": "А и С"
+    },
+    "correct_answer": "F2",
+    "image": "images/q108.jpg"
+  },
+  {
+    "id": 109,
+    "question_uz": "Ajratuvchi mintaqa - ...",
+    "question_ru": "Разделительная полоса -...",
+    "options_uz": {
+      "F1": "Yo‘lning relssiz transport vositalari harakati uchun mo‘ljallangan qismi",
+      "F2": "Avtomobillarning bir qator bo‘lib harakatlanishi uchun yetarlicha keng bo‘lgan, yo‘l chiziqlari bilan belgilangan yoki belgilanmagan yo‘l qatnov qismining har qanday bo‘ylama bo‘lagi",
+      "F3": "Yo‘lning yonma-yon joylashgan qatnov qismlarini ajratuvchi, transport vositalari harakatlanishi yoki to‘xtashi uchun mo‘ljallanmagan, yo‘l sathidan baland va (yoki) 1.1 yotiq chizig‘i bilan belgilangan qismi"
+    },
+    "options_ru": {
+      "F1": "Часть дороги, предназначенная для движения безрельсовых транспортных средств",
+      "F2": "Любая из продольных полос проезжей части, обозначенная или необозначенная дорожной разметкой и имеющая ширину, достаточную для движения автомобилей в один ряд",
+      "F3": "Элемент дороги, разделяющий смежные проезжие части и не предназначенный для движения и остановки транспортных средств, расположенный выше уровня дороги и (или) обозначенный дорожной разметкой"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 110,
+    "question_uz": "Aholi punkti\" atamasi nimani bildiradi?",
+    "question_ru": "Какой значение обозначает термин \"Населенный пункт\"?",
+    "options_uz": {
+      "F1": "Kirish va chiqish yo`llari 5.22 - 5.25 belgilari bilan belgilangan hududni",
+      "F2": "Aholi yashaydigan hududni",
+      "F3": "Shahar, qishloq joylari hududini"
+    },
+    "options_ru": {
+      "F1": "Территория, въезды и выезды с которой обозначены дорожными знаками 5.22 — 5.25",
+      "F2": "Территория, местожительства населения",
+      "F3": "Территория города и поселок"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 111,
+    "question_uz": "Muskul va paylarning ezilishi hamda cho`zilishi alomatlari qanday?",
+    "question_ru": "Каковы признаки сдавливании и растяжении мышечной ткани и сухожилий?",
+    "options_uz": {
+      "F1": "Jarohatlangan joyda og`riq seziladi.",
+      "F2": "Jarohatlangan joyda shish paydo bo`ladi, og`riq seziladi, ba`zan shu joyda mayda kapillyar qon tomirlari yorilib, qon quyilishi natijasida ko‘karish paydo bo‘ladi."
+    },
+    "options_ru": {
+      "F1": "На месте ранения чувствуется боль.",
+      "F2": "На месте ранения появляется шишка, чувствуется боль, иногда на этом месте лопаются мелкие капиллярные сосуды и в результате кровоизлияния образуется синяк"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 112,
+    "question_uz": "Aylanma harakatlanish chorrahasida:",
+    "question_ru": "На перекрёстке кругового движения:",
+    "options_uz": {
+      "F1": "Harakatlanayotgan transport vositalari aylanaga kirib kelayotgan transport vositalariga nisbatan ustunlikka (imtiyozga) ega",
+      "F2": "Harakatlanayotgan transport vositalariga nisbatan aylanaga kirib kelayotgan transport vositalari ustunlikka (imtiyozga) ega"
+    },
+    "options_ru": {
+      "F1": "Транспортные средства, движущиеся на перекрестке с круговым движением, имеют приоритет (преимущество) по отношению к транспортным средствам, въезжающим на перекресток",
+      "F2": "Транспортные средства въезжающий на перекресток имеют приоритет (преимущество) по отношению к транспортным средствам движущиеся на перекрестке"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 113,
+    "question_uz": "Ushbu qo`shimcha axborot yo`l belgisi bildiradi:",
+    "question_ru": "Эта табличка означает:",
+    "options_uz": {
+      "F1": "Barcha turdagi transport vositalarining to`xtab turish uchun yo`lning qatnov qismida, trotuar yoniga qo’yish usulini",
+      "F2": "Yengil avtomobillarning to`xtab turish joyiniавтомобилей",
+      "F3": "Mexanik transport vositalarining to`xtab turish joyini"
+    },
+    "options_ru": {
+      "F1": "Указывает способ постановки транспортного средства на проезжую часть, вдоль тротуара",
+      "F2": "Указывает место стоянки легковых",
+      "F3": "Указывает место стоянки механических транспортных средств"
+    },
+    "correct_answer": "F1",
+    "image": "images/q113.jpg"
+  },
+  {
+    "id": 114,
+    "question_uz": "Chapga burilayotgan haydovchi kesishayotgan yo`lning qatnov qismidan o`tayotgan piyodalarga yo`l berishi kerakmi?",
+    "question_ru": "При повороте налево обязан ли водитель уступить дорогу пешеходам, переходящим проезжую часть пересекаемой ДОРОГИ?",
+    "options_uz": {
+      "F1": "Ha, barcha hollarda o`tkazishi kerak",
+      "F2": "Ha, agarda piyodalar o`tish joyi bo`lsa"
+    },
+    "options_ru": {
+      "F1": "Обязан во всех случаях",
+      "F2": "Обязан, если перекрестке есть пешеходного перехода"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 115,
+    "question_uz": "Ushbu chorrahada avtobus haydovchisi kimga yo`l berishi kerak?",
+    "question_ru": "Кому должен уступить дорогу водитель автобуса на этой перекрестке?",
+    "options_uz": {
+      "F1": "Hech kimga",
+      "F2": "Qizil avtomobilga",
+      "F3": "Ko`k avtomobilga"
+    },
+    "options_ru": {
+      "F1": "Никому",
+      "F2": "Красному автомобилю",
+      "F3": "Синему автомобилю"
+    },
+    "correct_answer": "F3",
+    "image": "images/q115.jpg"
+  },
+  {
+    "id": 116,
+    "question_uz": "M2 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yig`indisiga yo`l qo`yiladi:",
+    "question_ru": "Суммарный люфт в рулевом управлении в регламентированных условиях испытаний автотранспортного средства категория М2 не должен превышать следующих значений:",
+    "options_uz": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "options_ru": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 117,
+    "question_uz": "Agar avtomobilning o`ng g`ildiraklari nam qoplamali yo`l yoqasiga chiqib qolsa, tavsiya etiladi:",
+    "question_ru": "В случае, когда правые колёса автомобиля наезжают на неукреплённую влажную обочину, рекомендуется:",
+    "options_uz": {
+      "F1": "Avtomobilni tormozlash va to`liq to`xtatish",
+      "F2": "Avtomobilni tormozlab, yo`lning qatnov qismiga ohista ravon burish",
+      "F3": "Avtomobilni tormozlamasdan yo`lning qatnov qismiga ohista ravon burish"
+    },
+    "options_ru": {
+      "F1": "Затормозить и полностью остановиться",
+      "F2": "Затормозить и плавно направить автомобиль на проезжую часть",
+      "F3": "Не прибегая к торможению, плавно направить автомобиль на проезжую часть"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 118,
+    "question_uz": "Qaysi rasmda ajratuvchi mintaqa bor bo`lgan yo`l ko`rsatilgan?",
+    "question_ru": "На каком рисунков дорога с разделительной полосой?",
+    "options_uz": {
+      "F1": "Chapda",
+      "F2": "O`ngda",
+      "F3": "Har ikkisida"
+    },
+    "options_ru": {
+      "F1": "На левом",
+      "F2": "На правом",
+      "F3": "Обоих рисунках"
+    },
+    "correct_answer": "F2",
+    "image": "images/q118.jpg"
+  },
+  {
+    "id": 119,
+    "question_uz": "Kunning qorong`i vaqtida harakatlanayotgan transport vositasining haydovchisi tezlikni tanlashda qanday eng asosiy hal qiluvchi omilni e`tiborga olishi kerak?",
+    "question_ru": "Что должно иметь самое решающее значение при выборе водителем скорости движения в тёмное время суток?",
+    "options_uz": {
+      "F1": "Yo`l harakati qoidalari o`rnatilgan tezlik chegaralarini",
+      "F2": "Transport vositasining texnik tavsifnomasida ko`rsatilgan tezlik chegarasini",
+      "F3": "Ko`rinish sharoitini"
+    },
+    "options_ru": {
+      "F1": "Предельные ограничения скорости, установленные Правилами",
+      "F2": "Максимальная конструктивная скорость, установленная технической характеристикой используемого транспортного средства",
+      "F3": "Условия видимости"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 120,
+    "question_uz": "Turar joy dahalarida qanday eng katta tezlikda harakatlanishga ruxsat etiladi:",
+    "question_ru": "С какой максимальной скоростью разрешается движение в жилых зонах:",
+    "options_uz": {
+      "F1": "5 km/s",
+      "F2": "20 km/s",
+      "F3": "30 km/s",
+      "F4": "40 km/s"
+    },
+    "options_ru": {
+      "F1": "5 км/ч",
+      "F2": "20 км/ч",
+      "F3": "30 км/с",
+      "F4": "40 км/ч"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 121,
+    "question_uz": "Bosh miya jarohatlanganda, miya chayqalganda yoki bo`yin qismi jarohatlanganda birinchi yordam ko`rsatish:",
+    "question_ru": "Оказание первой помощи при травме головного мозга сотрясении мозга или травме шейного отдела:",
+    "options_uz": {
+      "F1": "Jarohatlangan odamni qattiq va tekis zambilga solib, bo'yin qismi tagiga qattiq yostiqcha qo'yib, qo‘zg‘atmasdan, mahkam bog‘lab shifoxonaga yuboriladi.",
+      "F2": "Jarohatlangan odamni yonboshlatib yotqizib, bo’yin qismi tagiga qattiq yostiqcha qo'yib, mahkam bog‘lab shifoxonaga yuboriladi.",
+      "F3": "Jarohatlangan odamni tinchlantirish, jarohatlangan joy sohasini sovuq suv, muz qo'yish yo'llari bilan sovitish, og‘riqni susaytirish va qon ketishini kamaytirish"
+    },
+    "options_ru": {
+      "F1": "Пострадавшего надо положить на твёрдые носилки, под область шеи подложить твёрдую подушку, не двигать, крепко связать и отправить в больницу",
+      "F2": "Уложив пострадавшего набок под область шеи подложить твёрдую подушку, крепко связать и отправить в больницу",
+      "F3": "Успокоение пострадавшего, охлаждение области ранения путём наложения холодного компресса, льда, на ослабление боли и уменьшение кровотечения"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 122,
+    "question_uz": "Yo`lning xavfli burilishlarida oldingi uzatmali avtomobilning orqa o`qi yon tomonga sirpanayotganda siz qanday harakat qilasiz?",
+    "question_ru": "На повороте возник занос задней оси переднеприводного автомобиля. Ваши действия?",
+    "options_uz": {
+      "F1": "Gaz berishni kamaytirib rul chambaragi bilan boshqaruvni barqarorlashtirasiz",
+      "F2": "Tormozlab turib rul chambaragini sirpangan tomonga burasiz",
+      "F3": "Gaz pedalini ohista bosib avtomobilni rul chambaragini to‘g‘rilab avtomobilni sirpanishdan olib chiqib ketasiz",
+      "F4": "Gaz pedalini ko‘proq bosib rul chambaragini o‘zgartirmasdan sirpanishdan olib chiqasiz"
+    },
+    "options_ru": {
+      "F1": "Уменьшите подачу топлива, рулевым колесом стабилизируете движение",
+      "F2": "Притормозите и повернёте рулевое колесо в сторону заноса",
+      "F3": "Слегка увеличите подачу топлива, корректируя направление движения рулевым колесом",
+      "F4": "Значительно увеличите подачу топлива, не меняя положения рулевого колеса"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 123,
+    "question_uz": "Ushbu yo`l belgisi nimani bildiradi?",
+    "question_ru": "Что указывает этот дорожный",
+    "options_uz": {
+      "F1": "Xavfli yuktashiyotgan transport vositalari harakatini taqiqlaydi",
+      "F2": "Og‘ir yuk tashiyotgan transport vositalari harakatini taqiqlaydi",
+      "F3": "Portlovchi va tez alangalanadigan yuk tashiyotgan transport vositalari harakatini taqiqlaydi знак? транспортных средств с опасным грузом транспортных средств с тяжёлыми грузами транспортных средств с взрывчатыми и грузами"
+    },
+    "options_ru": {
+      "F1": "Запрещает движение",
+      "F2": "Запрещает движение",
+      "F3": "Запрещает движение легковоспламеняющимися"
+    },
+    "correct_answer": "F1",
+    "image": "images/q123.jpg"
+  },
+  {
+    "id": 124,
+    "question_uz": "Haydovchining o`rtacha reaksiya vaqti deb qabul qilingan:",
+    "question_ru": "Принято считать, что среднее время реакции водителя составляет:",
+    "options_uz": {
+      "F1": "Taxminan 0,2 sekund",
+      "F2": "Taxminan 1 sekund",
+      "F3": "Taxminan 5 sekund"
+    },
+    "options_ru": {
+      "F1": "Примерно 0,2 секунды",
+      "F2": "Примерно 1 секунду",
+      "F3": "Примерно 5 секунды"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 125,
+    "question_uz": "Ushbu chorrahada haydovchi orqaga harakatlanib ko`rsatilgan manyovrni bajarishga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли водителю выполнить указанного маневра в перекрёстке, двигаясь назад?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Запрещается"
+    },
+    "correct_answer": "F2",
+    "image": "images/q125.jpg"
+  },
+  {
+    "id": 126,
+    "question_uz": "Ushbu tik chiziq nimani bildiradi?",
+    "question_ru": "О чем обозначает этот вертикальная разметка?",
+    "options_uz": {
+      "F1": "Temir yo‘l kesishmasiga yaqinlashganlik haqida",
+      "F2": "Xavfli chorrahaga yaqinlashganlik haqida",
+      "F3": "Yo‘lning kichik radiusli burilish, tik nishablik va boshqa xavfli joylarda yo‘l to‘siqlarining yon yuzalarini bildiradi"
+    },
+    "options_ru": {
+      "F1": "Обозначает приближении к железнодорожному переезду",
+      "F2": "Обозначает приближении к опасному перекрестку",
+      "F3": "Обозначает боковые поверхности ограждений дорог на закруглениях малого радиуса, крутых спусках, других опасных участках"
+    },
+    "correct_answer": "F3",
+    "image": "images/q126.jpg"
+  },
+  {
+    "id": 127,
+    "question_uz": "Qaysi yo‘l belgilari yo‘lning tor qismida xaydovchiga ustunlik beradi?",
+    "question_ru": "При наличии каких знаков водитель пользуется преимуществом, если встречный разъезд затруднен препятствием?",
+    "options_uz": {
+      "F1": "Faqat В",
+      "F2": "А va В",
+      "F3": "Faqat Д",
+      "F4": "Faqat С"
+    },
+    "options_ru": {
+      "F1": "Только В",
+      "F2": "А и В",
+      "F3": "Только Д",
+      "F4": "Только С"
+    },
+    "correct_answer": "F3",
+    "image": "images/q127.jpg"
+  },
+  {
+    "id": 128,
+    "question_uz": "Ushbu yo`l belgisi qanday maqsadda qo`llaniladi?",
+    "question_ru": "С какой целью применяется этот дорожный знак?",
+    "options_uz": {
+      "F1": "Majburiy tarzda tezlikni kamaytirish uchun",
+      "F2": "To‘xtamasdan o‘tishni taqiqlaydi",
+      "F3": "Ehtiyot choralarini ko‘rish uchun"
+    },
+    "options_ru": {
+      "F1": "Для принудительного снижения скорости движения",
+      "F2": "Движение без остановки запрещён",
+      "F3": "Для принятия меры предосторожности"
+    },
+    "correct_answer": "F2",
+    "image": "images/q128.jpg"
+  },
+  {
+    "id": 129,
+    "question_uz": "M3 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yig`indisiga yo`l qo`yiladi?",
+    "question_ru": "Суммарный люфт в рулевом управлении в регламентированных условиях испытаний автотранспортного средства категория М3 не должен превышать следующих значений:",
+    "options_uz": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "options_ru": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 130,
+    "question_uz": "Yondosh hudud bu - ...",
+    "question_ru": "Прилегающая территория -...?",
+    "options_uz": {
+      "F1": "Bevosita yo‘lga tutashgan va transport vositalari o‘tib ketishi uchun mo‘ljallanmagan hudud (hovlilar, turar joy dahalari, avtomobil to‘xtab turish joylari, yonilg‘i quyish shoxobchalari, korxona va shunga o‘xshashlar).",
+      "F2": "Yo‘llarning o‘zaro bir sathda kesishadigan, tutashadigan va ayriladigan joyi",
+      "F3": "Yo‘lning relssiz transport vositalari harakati uchun mo‘ljallangan qismi"
+    },
+    "options_ru": {
+      "F1": "Территория, непосредственно прилегающая к дороге и не предназначенная для сквозного движения транспортных средств (дворы, жилые массивы, автостоянки, автозаправочные станции, предприятия и т. п.).",
+      "F2": "Место пересечения, примыкания или разветвления дорог на одном уровне.",
+      "F3": "Часть дороги, предназначенная для движения безрельсовых транспортных средств ."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 131,
+    "question_uz": "Qorin bo‘shlig‘i jarohatlangan odamga ovqat, suv, dori - darmon berish mumkinmi?",
+    "question_ru": "Можно ли давать пострадавшему пишу, воду и лекарства при повреждение брюшной полости?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 132,
+    "question_uz": "Tezlik ortishi bilan haydovchining ko‘rish maydoni qanday o‘zgaradi?",
+    "question_ru": "Как изменяется поле зрения водителя с увеличением скорости движения?",
+    "options_uz": {
+      "F1": "Kengayadi",
+      "F2": "O‘zgarmaydi",
+      "F3": "Torayadi"
+    },
+    "options_ru": {
+      "F1": "Расширяется",
+      "F2": "Не изменяется",
+      "F3": "Сужается"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 133,
+    "question_uz": "Mexanik transport vositasi - bu. . .",
+    "question_ru": "Механическое транспортное средство - это...",
+    "options_uz": {
+      "F1": "Odamlarni, yuklarni tashishga yoki maxsus ishlarni bajarishga mo‘ljallangan qurilma",
+      "F2": "Mexanik transport vositasi tarkibida harakatlanishga mo‘‘jallangan, dvigatel bilan jihozlanmagan transport vositasi. Bu atama yarim tirkama va uzaytiriladigan tirkamalarga ham taaluqlidir",
+      "F3": "Dvigatel bilan harakatga keltiriladigan transport vositasi (mopeddan tashqari). Bu atama barcha traktor va o‘zi yurar moslamalarga ham taalluqlidir"
+    },
+    "options_ru": {
+      "F1": "Устройство, предназначенное для перевозки людей, грузов или для производства специальных работ.",
+      "F2": "Транспортное средство, не оборудованное двигателем и предназначенное для движения в составе с механическим транспортным средством. Термин распространяется также на полуприцепы и прицепы-роспуски.",
+      "F3": "Транспортное средство (кроме мопеда), приводимое в движение двигателем. Термин распространяется на любые тракторы и самоходные механизмы ."
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 134,
+    "question_uz": "Yengil avtomobilga qaysi yo‘nalishlarda harakatlanishga ruxsat etiladi?",
+    "question_ru": "В каких направлениях разрешено продолжить движение на легковой автомобиль?",
+    "options_uz": {
+      "F1": "Faqat to‘g‘riga",
+      "F2": "Faqat o‘ng va chapga",
+      "F3": "Istalgan yo‘nalishda"
+    },
+    "options_ru": {
+      "F1": "Только прямо",
+      "F2": "Только налево или направо.",
+      "F3": "В любых направлениях"
+    },
+    "correct_answer": "F3",
+    "image": "images/q134.jpg"
+  },
+  {
+    "id": 135,
+    "question_uz": "Ushbu holatda ko‘k avtomobil haydovchisi kimga yo‘l berishi lozim?",
+    "question_ru": "Кому следует уступить дорогу синий автомобиль?",
+    "options_uz": {
+      "F1": "Faqat avtobusga",
+      "F2": "Hech kimga",
+      "F3": "Faqat yengil avtomobilga"
+    },
+    "options_ru": {
+      "F1": "Только автобусу",
+      "F2": "Никому",
+      "F3": "Только легковому автомобилю ."
+    },
+    "correct_answer": "F2",
+    "image": "images/q135.jpg"
+  },
+  {
+    "id": 136,
+    "question_uz": "Tormoz yo‘li deb nimaga aytiladi?",
+    "question_ru": "Что подразумевается под тормозным путем?",
+    "options_uz": {
+      "F1": "Haydovchi biron bir havfni aniqlab, avtomobilni to‘liq to‘xtatguncha bosib o‘tgan masofasi",
+      "F2": "Haydovchi tormoz tepkisini bosgandan to avtomobil to‘liq to‘xtaguncha bosib o‘tilgan masofa"
+    },
+    "options_ru": {
+      "F1": "Расстояние, пройденное транспортным средством с момента обнаружения водителем опасности до полной остановки",
+      "F2": "Расстояние, пройденное транспортным средством с момента нажатия на педаль тормоза до полной остановки"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 137,
+    "question_uz": "Ushbu belgilardan qaysi biri «Notekis yo‘q» deb nomlanadi?",
+    "question_ru": "Какой из знаков предупреждает водителя о неровности дороги?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q137.jpg"
+  },
+  {
+    "id": 138,
+    "question_uz": "Aholi punktlaridan tashqarida tirkamali yuk avtomobillari qanday yuqori tezlik bilan harakatlanishi mumkin?",
+    "question_ru": "С какой максимальной скоростью может двигаться грузовые автомобили с прицепом вне населенных пунктах?",
+    "options_uz": {
+      "F1": "80 km/s",
+      "F2": "70 km/s",
+      "F3": "90 km/s",
+      "F4": "60 km/s"
+    },
+    "options_ru": {
+      "F1": "80 км/ч",
+      "F2": "70 км/ч",
+      "F3": "90 км/ч",
+      "F4": "60 км/ч"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 139,
+    "question_uz": "Ushbu belgi nimani bildiradi?",
+    "question_ru": "О чем предупреждает этот знак?",
+    "options_uz": {
+      "F1": "Oldinda tik balandlik borligini",
+      "F2": "Oldinda ko‘tarma ko‘prik borligini",
+      "F3": "Sun’iy yo‘l notekisligini"
+    },
+    "options_ru": {
+      "F1": "Впереди есть крутой подъем",
+      "F2": "Впереди есть разводной мост",
+      "F3": "Искусственная неровность дороги"
+    },
+    "correct_answer": "F3",
+    "image": "images/q139.jpg"
+  },
+  {
+    "id": 140,
+    "question_uz": "Yo‘l harakati qoidalariga ko‘ra yo‘l belgilari nechta guruhga bo‘linadi?",
+    "question_ru": "Сколько групп имеется дорожных знаков по правилам дорожного движения",
+    "options_uz": {
+      "F1": "5 ta",
+      "F2": "6 ta",
+      "F3": "7 ta"
+    },
+    "options_ru": {
+      "F1": "5 та",
+      "F2": "6 та",
+      "F3": "7 та"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 141,
+    "question_uz": "Venoz qon ketish alomatlarini ko‘rsating:",
+    "question_ru": "Признаки венозное кровотечение:",
+    "options_uz": {
+      "F1": "Qon tomirlaridan pushti rangli qon kuchli pulsatsiya bilan otilib chiqadi",
+      "F2": "Qon tomirlaridan to‘q qizil rangdagi qon sizib oqib chiqadi",
+      "F3": "Mayda qon tomirlaridan ichki a’zolarga qonning oqib chiqishi kuzatiladi"
+    },
+    "options_ru": {
+      "F1": "Кровь розового цвета сильной пульсацией бьётся из сосудов",
+      "F2": "Тёмно-красная кровь струится из сосудов",
+      "F3": "Кровотечение во внутренние органы из мелких кровеносных сосудов"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 142,
+    "question_uz": "G‘ildiraklarni yo‘l bilan ilashishi yo‘qolgana (kuchli yomg‘ir, sel yoki suv toshgan yo‘l qismlari) haydovchi:",
+    "question_ru": "В случае потери сцепления колес с дорогой из-за образования «водяного клина» водителю следует:",
+    "options_uz": {
+      "F1": "Tezlikni oshirishi lozim",
+      "F2": "Tormoz tepkisini keskin bosish bilan tezlikni kamaytirish lozim",
+      "F3": "Dvigatel bilan tormozlash orqali tezlikni kamaytirishi lozim"
+    },
+    "options_ru": {
+      "F1": "Увеличить скорость",
+      "F2": "Снизить скорость резким нажатием на педаль тормоза",
+      "F3": "Снизить скорость, применяя торможение двигателем"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 143,
+    "question_uz": "Turar joy dahalaridan chiqishda haydovchilar:",
+    "question_ru": "При выезде из жилых зон водители должны:",
+    "options_uz": {
+      "F1": "Boshqa harakat qatnashchilariga yo‘l berishi kerak",
+      "F2": "Boshqa harakat qatnashchilariga nisbatan imtiyozga ega"
+    },
+    "options_ru": {
+      "F1": "Уступить дорогу другим участникам дорожного движения",
+      "F2": "Имеет приоритет, чем другим участникам дорожного движения"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 144,
+    "question_uz": "Ushbu belgilardan qaysi biri, bir yoki bir nechta bo‘laklarda harakatlanish yo‘nalishi qarama-qarshi tomonga o‘zgarishi mumkin bo‘lgan yo‘l qismining boshlanishini biliradi?",
+    "question_ru": "Какой из этих знаков указывает начало участка дороги, на котором на одной или нескольких полосах направление движения может изменяться на противоположное?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q144.jpg"
+  },
+  {
+    "id": 145,
+    "question_uz": "Chorrahada qaysi avtomobil yo‘l berishi kerak?",
+    "question_ru": "Какой автомобиль должен уступить дорогу на перекрестке?",
+    "options_uz": {
+      "F1": "Ko‘k avtomobil",
+      "F2": "Qizil avtomobil"
+    },
+    "options_ru": {
+      "F1": "Синий автомобиль",
+      "F2": "Красный автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q145.jpg"
+  },
+  {
+    "id": 146,
+    "question_uz": "Tumanga qarshi chiroqlarni qorong‘i vaqtda yo‘lning yoritilmagan qisimlarida uzoqni yorituvchi chiroqlar bilan birga qo‘llash mumkinmi?",
+    "question_ru": "Можно ли использовать противотуманные фары совместно с ближним или дальним светом Фар в темное время суток на неосвещенных участках",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 147,
+    "question_uz": "Yengil avtomobil tirkamasi burilishda qanday trayektoriya bo‘yicha harakatlanadi?",
+    "question_ru": "По какой траектории двигается прицеп легкового автомобиля при прохождении поворота?",
+    "options_uz": {
+      "F1": "Burilish markaziga nisbatan avtomobil trayektoriyasidan tashqarida",
+      "F2": "Avtomobil burilish trayektoriyasi bo‘yicha",
+      "F3": "Burilish markaziga nisbatan avtomobil trayektoriyasidan ichkarida"
+    },
+    "options_ru": {
+      "F1": "Дальше от центра поворота, чем траектория движения автомобиля",
+      "F2": "По траектории движения автомобиля",
+      "F3": "Ближе к центру поворота, чем траектория движения автомобиля"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 148,
+    "question_uz": "Qaysi belgi temir yo‘l kesishmasini to‘suvchi qurilma bilan jihozlanganligi haqida ogohlantiradi?",
+    "question_ru": "Какой знак предупреждает водителя об оборудования заградительным устройством железнодорожного переезда?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»",
+      "F4": "«Д»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»",
+      "F4": "«Д»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q148.jpg"
+  },
+  {
+    "id": 149,
+    "question_uz": "Agar biror bir to‘siq sababli qarama-qarshi yo‘nalishlarda harakatlanish qiyin bo‘lsa kim yo‘l berishi kerak?",
+    "question_ru": "Кто должен уступить дорогу если встречный разъезд затруднен?",
+    "options_uz": {
+      "F1": "To‘siq bo‘lmagan tomondagi haydovchi",
+      "F2": "To‘siq o‘z tomonida bo‘lgan haydovchi"
+    },
+    "options_ru": {
+      "F1": "Водитель, на стороне которого не имеется препятствие",
+      "F2": "Водитель, на стороне которого имеется препятствие"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 150,
+    "question_uz": "«Imtiyoz» atamasiga tegishli tarifni ko‘rsating:",
+    "question_ru": "В какой формулировке указан правильный ответ термину \"Преимущество\"",
+    "options_uz": {
+      "F1": "Yo‘l harakati qatnashchilariga nisbatan imtiyozi bo‘lgan boshqa yo‘l harakati qatnashchisining harakat yo‘nalishi yoki tezligini o‘zgartirishga majbur etishi mumkin bo‘lgan hollarda harakatni davom ettirmasligi yoki boshlamasligi, biror-bir manyovr bajarishi mumkin emasligini bildiruvchi talab.",
+      "F2": "Mo‘ljallangan yo‘nalishda boshqa yo‘l harakati qatnashchilariga nisbatan oldin harakatlanish huquqi."
+    },
+    "options_ru": {
+      "F1": "Требование, означающее, что участник дорожного движения не должен продолжать или начинать движение, осуществлять какой-либо маневр, если это может вынудить других участников движения, имеющих по отношению к нему приоритет, изменить направление движения или скорость",
+      "F2": "Право на первоочередное движение в намеченном направлении по отношению к другим участникам движения."
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 151,
+    "question_uz": "Arterial qon ketish alomatlarini ko‘rsating:",
+    "question_ru": "Признаки артериальное кровотечение:",
+    "options_uz": {
+      "F1": "Qon tomirlaridan pushti rangli qon kuchli pulsatsiya bilan otilib chiqadi",
+      "F2": "Qon tomirlaridan to‘q qizil rangdagi qon sizib oqib chiqadi",
+      "F3": "Mayda qon tomirlaridan ichki a’zolarga qonning oqib chiqishi kuzatiladi"
+    },
+    "options_ru": {
+      "F1": "Кровь розового цвета сильной пульсацией бьётся из сосудов",
+      "F2": "Тёмно-красная кровь струится из сосудов",
+      "F3": "Кровотечение во внутренние органы из мелких кровеносных сосудов"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 152,
+    "question_uz": "Avtomobilni qanday boshqarish usuli yonilg‘i sarfini tejaydi?",
+    "question_ru": "При каком способе вождения будет обеспечен наименьший расход топлива?",
+    "options_uz": {
+      "F1": "Shiddat bilan tezlanish oxista va sekinlashish bilan",
+      "F2": "Ohista (ravon) tezlanish va shiddat bilan sekinlashish bilan",
+      "F3": "Ohista (ravon) tezlanish va ohista sekinlashish bilan"
+    },
+    "options_ru": {
+      "F1": "При резком ускорении и плавном замедлении",
+      "F2": "При плавном ускорении и резком замедлении",
+      "F3": "При плавном ускорении и плавном замедлении"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 153,
+    "question_uz": "Ko‘rsatilgan qaysi belgi yo‘lning o‘ta sirpanchiq bo‘lgan qismini bildiradi?",
+    "question_ru": "Какие знаки предупреждает об участке дороги с повышенной скользкостью проезжей части?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "«А» va «В»",
+      "F3": "Faqat «В»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "«А» и «В»",
+      "F3": "Только «В»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q153.jpg"
+  },
+  {
+    "id": 154,
+    "question_uz": "Chap qo‘lni yonga cho‘zish yoki o‘ng qo‘lni tirsakdan to‘g‘ri burchak ostida bukib, Yuqoriga ko‘tarish ishorasi nimani bildiradi?",
+    "question_ru": "О чем предупреждает сигнал вытянутая в сторону левая рука, либо правая вытянутая в сторону и согнутая в локте под прямым углом вверх?",
+    "options_uz": {
+      "F1": "Chapga burilishni yoki qayrilib olishni",
+      "F2": "O‘ngga burilish yoki qayrilib olishni",
+      "F3": "To‘xtashi"
+    },
+    "options_ru": {
+      "F1": "Левого поворота или разворота",
+      "F2": "Правого поворота или разворота",
+      "F3": "Остановки"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 155,
+    "question_uz": "Ushbu holatda qaysi transport vositasi yo‘l berishi kerak?",
+    "question_ru": "Какой транспортное средство должен уступить дорогу?",
+    "options_uz": {
+      "F1": "Yengil avtomobil",
+      "F2": "Yuk avtomobili"
+    },
+    "options_ru": {
+      "F1": "Легковой автомобиль",
+      "F2": "Грузовой автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q155.jpg"
+  },
+  {
+    "id": 156,
+    "question_uz": "Qaysi belgi svetaforning (tartibga soluvchining) taqiqlovchi ishorasida transport vositalari to‘xtaydigan joyni bildiradi?",
+    "question_ru": "Какой знак указывает место остановки транспортных средств при запрещающем сигнале светофора (регулировщика)?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»",
+      "F4": "«Г»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»",
+      "F4": "«Г»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q156.jpg"
+  },
+  {
+    "id": 157,
+    "question_uz": "Sekinlashish bo‘lagi bo‘lgan yo‘llarda burilmoqchi bo‘lgan haydovchi qachon tezlikni kamaytirishi lozim?",
+    "question_ru": "Когда водитель должен снижать скорость при наличии полосы торможения, намеревающийся повернут?",
+    "options_uz": {
+      "F1": "Sekinlashish bo‘lagiga o‘tguncha",
+      "F2": "Sekinlashish bo‘lagiga o‘tgach"
+    },
+    "options_ru": {
+      "F1": "До перестроения на полосу торможения",
+      "F2": "После перестроения на полосе торможения"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 158,
+    "question_uz": "Qaysi belgi falokatli holatlar uchun kirish yo‘lini bildiradi?",
+    "question_ru": "Какой знак указывает дорогу для выезда в аварийных случаях?",
+    "options_uz": {
+      "F1": "«А» va «Д»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "options_ru": {
+      "F1": "«А» и «Д»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q158.jpg"
+  },
+  {
+    "id": 159,
+    "question_uz": "Qattiq ulagichda shatakka olingan avtobusda yoki trolleybusda odam tashishga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли перевозка людей при буксировке на жёсткой сцепке в буксируемом автобусе или троллейбусе?",
+    "options_uz": {
+      "F1": "Taqiqlanadi",
+      "F2": "Ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "Запрещается",
+      "F2": "Разрешается"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 160,
+    "question_uz": "Quyudagi izoh qaysi atamaga tegishli? Texnik nuqson, tashilayotgan yuk, haydovchi va yo‘lovchining holati, yo‘ldagi biror to‘siq tufayli xavf yuzaga kelganda yoxud ob-havo sharoitiga bog‘liq holda transport vositasi harakatini to‘xtatish.",
+    "question_ru": "На какому термину соответствует этот примечание? Прекращение движения транспортного средства по причине технической неисправности или опасности, создаваемой перевозимым грузом, состоянием водителя, пассажира, препятствием на дороге или метеорологическими условиями.",
+    "options_uz": {
+      "F1": "Yo‘l-transport hodisasi",
+      "F2": "Yo‘l xarakati xavfsizligini ta’minlash",
+      "F3": "Majburiy to‘xtash"
+    },
+    "options_ru": {
+      "F1": "Дорожно-транспортное происшествие",
+      "F2": "Обеспечение безопасности дорожного движения",
+      "F3": "Вынужденная остановка"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 161,
+    "question_uz": "Bosh miya jarohatlanishining quidagi alomatlar bilan xarakterlanadi:",
+    "question_ru": "Травма головного мозга характеризуется следующими основными признаками:",
+    "options_uz": {
+      "F1": "Hushdan ketish bir necha soniyadan bir necha soatgacha bo‘lishi mumkin",
+      "F2": "Qayt qilish bir ikki marta, og‘ir holatlarda ko‘proq bo‘lishi mumkin",
+      "F3": "Amneziya - xotiraning yo‘qolishi/ sodir bo‘lgan jarohatlanish bilan bog‘liq va hayotidagi ba’zi voqealar xotirasidan o‘chadi",
+      "F4": "Yuqoridagi barcha holatlar"
+    },
+    "options_ru": {
+      "F1": "Потеря сознания может длиться от нескольких секунд до нескольких часов",
+      "F2": "Рвота - два-три раза, в тяжёлых случаях больше",
+      "F3": "Амнезия - потеря памяти, связана с полученной травмой и некоторые события жизни стираются из памяти",
+      "F4": "Во всех случаях вышеуказанных"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 162,
+    "question_uz": "Tik nishabliklarda dvigatel bilan tormozlashda qiyalikka nisbatan qanday uzatma tanlanadi?",
+    "question_ru": "Как следует выбирать передачу при торможении двигателем с учетом крутизны спуска?",
+    "options_uz": {
+      "F1": "Nishablik qancha qiya bo‘lsa uzatma pog‘onasi shuncha yuqori tanlanadi",
+      "F2": "Nishablik qancha qiya bo‘lsa uzatma pog‘onasi shuncha past tanlanadi",
+      "F3": "Pog‘onalarni tanlashning nishablikka aloqasi yo‘q"
+    },
+    "options_ru": {
+      "F1": "Чем круче спуск, тем выше передача",
+      "F2": "Чем круче спуск тем ниже передача",
+      "F3": "Выбор передачи не зависит от крутизны спуска"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 163,
+    "question_uz": "Chorrahadan tashqaridagi tartibga solinmagan velosiped yo‘lkasi bilan yo‘l kesishmasida kim yo‘l berishi kerak?",
+    "question_ru": "Кто должен уступить дорогу вне перекрёстков, на нерегулируемом пересечении велосипедной дорожки с дорогой?",
+    "options_uz": {
+      "F1": "Transport vositalari haydovchilari",
+      "F2": "Velosiped yo‘lkasidan harakatlanayotgan velosiped va moped haydovchilari"
+    },
+    "options_ru": {
+      "F1": "Водители транспортных средств",
+      "F2": "Велосипедисты и водители мопеда"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 164,
+    "question_uz": "Hayvonlarni yo‘lda haydab borishga qoidaga ko‘ra ruxsat etiladi:",
+    "question_ru": "Животных по дороге следует перегонять, как правило:",
+    "options_uz": {
+      "F1": "Kunning yorug‘ vaqtida",
+      "F2": "Kunning qorong‘i vaqtida",
+      "F3": "Istalgan vaqtda"
+    },
+    "options_ru": {
+      "F1": "В светлое время суток",
+      "F2": "В темное время суток",
+      "F3": "В любое время"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 165,
+    "question_uz": "Ushbu holatda qaysi transport vositasi yo‘l berishi kerak?",
+    "question_ru": "Какой транспортное средство должен уступить дорогу?",
+    "options_uz": {
+      "F1": "Yengil avtomobil",
+      "F2": "Avtobus"
+    },
+    "options_ru": {
+      "F1": "легковой автомобиле",
+      "F2": "Автобус"
+    },
+    "correct_answer": "F2",
+    "image": "images/q165.jpg"
+  },
+  {
+    "id": 166,
+    "question_uz": "Qaysi belgilar yuk avtomobillarida quvib o‘tish taqiqlangan hududning oxirini bildiradi?",
+    "question_ru": "Какие знаки обозначают конец зоны запрещения обгона грузовыми автомобилями?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «Б»",
+      "F3": "Faqat «А» , «Б»",
+      "F4": "«А», «Б», «В»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«А» , «Б»",
+      "F4": "«А», «Б», «В»"
+    },
+    "correct_answer": "F4",
+    "image": "images/q166.jpg"
+  },
+  {
+    "id": 167,
+    "question_uz": "Svetaforning miltillovchi sariq ishorasi nima haqida ogohlantiradi?",
+    "question_ru": "О чем предупреждает мигающий жёлтый сигнал светофора",
+    "options_uz": {
+      "F1": "Harakatlanishga ruxsat beradi",
+      "F2": "Chorraha tartibga solinmaganligi to‘g‘risida",
+      "F3": "Barcha javoblar to‘g‘ri"
+    },
+    "options_ru": {
+      "F1": "Разрешает движению",
+      "F2": "О нерегулируемом перекрестке",
+      "F3": "Все ответы правильные"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 168,
+    "question_uz": "Transport vositalarini qatnov qimining kengaytirilmagan joylarida qanday tartibda to‘xtash va to‘xtab turishga ruxsat etiladi?",
+    "question_ru": "На каком порядке разрешается ставить транспортные средства не имеющих местное уширение проезжей части?",
+    "options_uz": {
+      "F1": "Burchak ostida",
+      "F2": "Parallel ravishda",
+      "F3": "Istalgan usulda"
+    },
+    "options_ru": {
+      "F1": "Под углом",
+      "F2": "Параллельно",
+      "F3": "Любым способом"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 169,
+    "question_uz": "Qaysi belgi to‘xtash chizig‘i oldida, u bo‘maganda, kesib o‘tiladigan qatnov qismining chetida to‘xtamasdan harakatlanishni taqiqlaydi?",
+    "question_ru": "Какой знак из указанных запрещает движение перед стоп- линией, а при его отсутствии - перед краем пересекаемой проезжей части?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«Б» ва «В»",
+      "F4": "«А» ва «Г»",
+      "F5": "«Г»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«Б» и «В»",
+      "F4": "«А» и «Г»",
+      "F5": "«Г»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q169.jpg"
+  },
+  {
+    "id": 170,
+    "question_uz": "Yo‘l harakati xavfsizligini ta’minlash -",
+    "question_ru": "Обеспечение безопасности дорожного движения —",
+    "options_uz": {
+      "F1": "Yo‘l-transport hodisalarining kelib chiqish sabablarini oldini olishga, ularning og‘ir oqibatlarini kamaytirishga qaratilgan faoliyat",
+      "F2": "Yo‘llarda harakatni boshqarish bo‘yicha huquqiy, tashkiliy- texnikaviy tadbirlar va boshqaruv harakatlari majmui"
+    },
+    "options_ru": {
+      "F1": "Деятельность, направленная на предупреждение причин возникновения дорожно-транспортных происшествий, снижение тяжести их последствий",
+      "F2": "Совокупность отношений, возникающих в процессе перемещения людей и грузов с помощью транспортных средств или без таковых в пределах дорог."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 171,
+    "question_uz": "Shokning belgilari:",
+    "question_ru": "Признаки шока:",
+    "options_uz": {
+      "F1": "Teri va shilliq qavatlarning oqarishi",
+      "F2": "Kuchli ter ajralishi",
+      "F3": "Og‘iz qurishi, chanqoqlik, nafas olishning tezlashuvi",
+      "F4": "Es - hushning noaniqligi, behush holat",
+      "F5": "Yuqoridagi barcha holatlar"
+    },
+    "options_ru": {
+      "F1": "Побледнение кожи и слизистых оболочек",
+      "F2": "Сильное потоотделение",
+      "F3": "Сухость рта, жажда, учащённое дыхание",
+      "F4": "Спутанность сознания, обморочное состояние",
+      "F5": "Во всех случаях вышеуказанных"
+    },
+    "correct_answer": "F5",
+    "image": null
+  },
+  {
+    "id": 172,
+    "question_uz": "Quvib o‘tishga taalluqli belgilarni ko‘rsating?",
+    "question_ru": "Какие знаки из указанных относятся к обгону?",
+    "options_uz": {
+      "F1": "«А» va «В»",
+      "F2": "«В» va «C»",
+      "F3": "«А» va «C»"
+    },
+    "options_ru": {
+      "F1": "«А» и «В»",
+      "F2": "«В» и «C»",
+      "F3": "«А» и «C»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q172.jpg"
+  },
+  {
+    "id": 173,
+    "question_uz": "Avtomobillarning bir qator bo‘lib harakatlanishi uchun yetarlicha keng bo‘lgan, yo‘l chiziqlari bilan belgilangan yoki belgilanmagan yo‘l qatnov qismining har qanday bo‘ylama bo‘lagi nima deb ataladi?",
+    "question_ru": "Как называется любая из продольных полос проезжей части, обозначенная или необозначенная дорожной разметкой и имеющая ширину, достаточную для движения автомобилей в один ряд?",
+    "options_uz": {
+      "F1": "Qatnov qismi",
+      "F2": "Harakatlanish bo‘lagi",
+      "F3": "Yo‘l yoqasi",
+      "F4": "Yondosh hudud"
+    },
+    "options_ru": {
+      "F1": "Проезжая часть",
+      "F2": "Полоса дивижения",
+      "F3": "Обочина",
+      "F4": "Прилегающая территория"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 174,
+    "question_uz": "Qaysi belgi velosiped yo‘lkasini ko‘rsatadi?",
+    "question_ru": "Какой знак указывает велосипедную дорожку?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q174.jpg"
+  },
+  {
+    "id": 175,
+    "question_uz": "Ushbu chorrahada kim yo‘l beradi?",
+    "question_ru": "Кто уступить дорогу на этом перекрестке?",
+    "options_uz": {
+      "F1": "Ko‘k avtomobil",
+      "F2": "Mototsikl va sariq avtomobil"
+    },
+    "options_ru": {
+      "F1": "Синий автомобиль",
+      "F2": "Мотоцикл и желтый автомобиль"
+    },
+    "correct_answer": "F1",
+    "image": "images/q175.jpg"
+  },
+  {
+    "id": 176,
+    "question_uz": "Xavfsiz oraliq masofani ko‘rsating:",
+    "question_ru": "Покажите безопасную дистанцию.",
+    "options_uz": {
+      "F1": "«А» ва «В»",
+      "F2": "«В»",
+      "F3": "«Б»"
+    },
+    "options_ru": {
+      "F1": "«А» и «В»",
+      "F2": "«В»",
+      "F3": "«Б»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q176.jpg"
+  },
+  {
+    "id": 177,
+    "question_uz": "Ushbu belgi qaysi turdagi transport vositalarini to‘xtamasdan o‘tishlarini taqiqlaydi?",
+    "question_ru": "Каких видов транспортных средств запрещает движения без остановки этот знак?",
+    "options_uz": {
+      "F1": "Yuk avtomobillarini",
+      "F2": "Yengil avtomobillarini",
+      "F3": "Barcha turdagi transport vositalarini"
+    },
+    "options_ru": {
+      "F1": "Грузовых автомобилей",
+      "F2": "Легковых автомобилей",
+      "F3": "Всех видов транспортных средств ."
+    },
+    "correct_answer": "F3",
+    "image": "images/q177.jpg"
+  },
+  {
+    "id": 178,
+    "question_uz": "Agar haydovchi keskin tormoz bermasdan harakatini to‘xtata olmasa, svetaforning yashil ishorasidan keyin yongan sariq ishorasida harakatni davom ettirishga ruxsat beriladimi?",
+    "question_ru": "Разрешается ли водителю продолжить движение после переключения зеленого сигнала светофора на желтый, если возможно остановиться перед перекрестком, только применив экстренное торможение?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Запрещается"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 179,
+    "question_uz": "Qaysi belgi «Xavfli yuk tashiyotgan transport vositalarining harakatlanishi taqiqlangan» deb nomlanadi?",
+    "question_ru": "Какой знак запрещает движения транспортных средстве опасным грузом?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«В»",
+      "F3": "«C»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q179.jpg"
+  },
+  {
+    "id": 180,
+    "question_uz": "Chorraha - bu ...",
+    "question_ru": "Перекресток — это...",
+    "options_uz": {
+      "F1": "Bevosita yo‘lga tutashgan va transport vositalari o‘tib ketishi uchun mo‘ljallanmagan hudud (hovlilar, turar joy dahalari, avtomobil to‘xtab turish joylari, yonilg‘i quyish shaxobchalari, korxona va shunga o‘xshashlar)",
+      "F2": "Yo‘lning o‘zaro bir sathda kesishadigan, tutashadigan va ayriladigan joyi",
+      "F3": "Yo‘llarning relissiz transport vositalari harakati uchun mo‘ljallangan qismi"
+    },
+    "options_ru": {
+      "F1": "Территория, непосредственно прилегающая к дороге и не предназначенная для сквозного движения транспортных средств (дворы, жилые массивы, автостоянки, автозаправочные станции, предприятия и т. п.).",
+      "F2": "Место пересечения, примыкания или разветвления дорог на одном уровне.",
+      "F3": "Часть дороги, предназначенная для движения безрельсовых транспортных средств ."
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 181,
+    "question_uz": "Bosh miya jarohatlanishining asosiy alomatlari:",
+    "question_ru": "Травма головного мозга характеризуется следующими основными признаками:",
+    "options_uz": {
+      "F1": "Hushdan ketish bir necha soniyadan bir necha soatgacha bo‘lishi mumkin",
+      "F2": "Qayt qilish bir - ikki marta, og‘ir holatlarda ko‘proq bo‘lishi mumkin",
+      "F3": "Amneziya - xotiraning yo‘qolishi, sodir bo‘lgan jarohatlanish bilan bog‘liq va hayotidan ba’zi voqealar xotirasidan o‘chadi",
+      "F4": "Yuqoridagi barcha holatlar"
+    },
+    "options_ru": {
+      "F1": "Потеря сознания может длиться от нескольких секунд до нескольких часов",
+      "F2": "Рвота - два-три раза, в тяжёлых случаях больше",
+      "F3": "Амнезия - потеря памяти, связана с полученной травмой и некоторые события жизни стираются из памяти",
+      "F4": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 182,
+    "question_uz": "G‘ildiraklarni yo‘l bilan ilashishi yo‘qolganda (kuchli yomg‘ir, sel yoki suv toshgan yo‘l qisimlari) haydovchi:",
+    "question_ru": "В случае потери сцепления колес с дорогой из-за образования «водяного клина» водителю следует:",
+    "options_uz": {
+      "F1": "Tezlikni oshirishi lozim",
+      "F2": "Tormoz tepkisini keskin bosish bilan tezlikni kamaytirishi lozim",
+      "F3": "Dvigatel bilan tormozlash orqali tezlikni kamaytirishi lozim"
+    },
+    "options_ru": {
+      "F1": "Увеличить скорость",
+      "F2": "Снизить скорость резким нажатием на педаль тормоза",
+      "F3": "Снизить скорость, применяя торможение двигателем"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 183,
+    "question_uz": "Piyodalar yo‘lkasi - bu . . .",
+    "question_ru": "Пешеходная дорожка - это...",
+    "options_uz": {
+      "F1": "Yo‘l qatnov qismining piyodalar kesib o‘tishi uchun mo‘ljallangan, 5.16.1, 5.16.2 yo‘l belgilari va 1.14.1-1.14.3 yo‘l chiziqlari bilan ajratilgan bo‘lagi",
+      "F2": "Yo‘lning piyodalar harakatlanishi uchun mo‘ljallangan va transport vositalari harakati taqiqlangan qismi",
+      "F3": "Qatnov qismiga tutashgan yoki undan maysazor, ariq, maxsus to‘siqlar bilan ajratilgan va piyodalarning harakatlanishi uchun mo‘ljallangan yo‘l qismi"
+    },
+    "options_ru": {
+      "F1": "Участок проезжей части дороги, предназначенный для пересечения пешеходами, обозначенный дорожными знаками 5.16.1, 5.16.2 и дорожной разметкой 1.14.1-1.14.3.3.",
+      "F2": "Часть дороги, предназначенная для движения пешеходов, по которой запрещено движение транспортных средств.",
+      "F3": "Часть дороги, примыкающая к проезжей части или отделенная от нее газоном, арыком или специальным сооружением, предназначенная для движения пешеходов."
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 184,
+    "question_uz": "Qaysi belgi yo‘lning tor qisimlarida ro‘paradan kelayotgan transport vositasiga yo‘l berish lozimligini bildiradi?",
+    "question_ru": "Какой знак обязывает уступить дорогу встречным транспортным средствам движущимся через узкий коридор?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«Б» va «В»",
+      "F4": "«А» va «Г»",
+      "F5": "«Г»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«Б» и «В»",
+      "F4": "«А» и «Г»",
+      "F5": "«Г»"
+    },
+    "correct_answer": "F1",
+    "image": "images/q184.jpg"
+  },
+  {
+    "id": 185,
+    "question_uz": "Yo‘lning qiyaliklarida qisqa muddatga to‘xtagan mexanik uzatmali avtomobilni joyidan to‘satdan harakatlanib ketishini oldini olish uchun:",
+    "question_ru": "Для предупреждения скатывания автомобиля с механической трансмиссией при кратковременной остановке на подъеме следует:",
+    "options_uz": {
+      "F1": "To‘xtab turish tormozidan foydalanish lozim",
+      "F2": "Birinchi uzatmani yoki orqa uzatmani ulash lozim",
+      "F3": "Uzatmalar qutisi richagini neytral holatga o‘tkazish lozim"
+    },
+    "options_ru": {
+      "F1": "Привести в действие стояночный тормоз",
+      "F2": "Включить первую передачу или передачу заднего хода",
+      "F3": "Перевести рычаг переключения передач в нейтральное положение"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 186,
+    "question_uz": "To‘xtab turish tormoz tizimi N toifadagi avtotransport vositalarini aslahalangan holatda qanday qiyalikda harakatsiz holatda ushlab tura olmasa foydalanish taqiqlanadi?",
+    "question_ru": "На каком уклоне запрещается эксплуатация автотранспортных средств категории N с полной нагрузкой пои необеспечении неподвижное состояние стояночной тормозной системы?",
+    "options_uz": {
+      "F1": "25 foizdan kam bo‘lgan",
+      "F2": "16 foizdan kam bo‘lgan",
+      "F3": "31 foizdan kam bo‘lgan",
+      "F4": "20 foizdan kam bo‘lgan"
+    },
+    "options_ru": {
+      "F1": "Не менее 25 %",
+      "F2": "Не менее 16 %",
+      "F3": "Не менее 31 %",
+      "F4": "Не менее 20%"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 187,
+    "question_uz": "Ushbu belgilardan qaysi biri haydovchining shu joydagi yashash yoki ishlash joyiga yetib borishiga monelik qilmaydi?",
+    "question_ru": "Какой из указанных знаков не запрещает водителю проехать к месту проживания и работы?",
+    "options_uz": {
+      "F1": "«A»",
+      "F2": "«B»",
+      "F3": "«C»",
+      "F4": "«B» va «C»"
+    },
+    "options_ru": {
+      "F1": "«A»",
+      "F2": "«B»",
+      "F3": "«C»",
+      "F4": "«B» и «C»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q187.jpg"
+  },
+  {
+    "id": 188,
+    "question_uz": "Ko‘rsatilgan yo‘l belgilaridan qaysi biri taqiqlovchi belgilar ilgari kiritgan barcha cheklovlarni bekor qiladi?",
+    "question_ru": "Какие из указанных знаков отменяют все ограничения, введенные ранее запрещающими знаками?",
+    "options_uz": {
+      "F1": "Faqat «В»",
+      "F2": "«А» va «Б»",
+      "F3": "«В» va «Г»",
+      "F4": "Barchasi"
+    },
+    "options_ru": {
+      "F1": "Только «В»",
+      "F2": "«А» и «Б»",
+      "F3": "«В» и «Г»",
+      "F4": "Все"
+    },
+    "correct_answer": "F1",
+    "image": "images/q188.jpg"
+  },
+  {
+    "id": 189,
+    "question_uz": "Qaysi rasmdagi yo‘l ajratuvchi mintaqa ega?",
+    "question_ru": "На каком рисунке изображена дорога с разделительной полосой?",
+    "options_uz": {
+      "F1": "Har ikkisida",
+      "F2": "O‘ng tarafdagisida",
+      "F3": "Chap tarafdagisida"
+    },
+    "options_ru": {
+      "F1": "На обоих",
+      "F2": "Только на правом",
+      "F3": "Только на налевом"
+    },
+    "correct_answer": "F2",
+    "image": "images/q189.jpg"
+  },
+  {
+    "id": 190,
+    "question_uz": "Ushbu ko‘rsatilgan yo‘llar nechtadan qatnov qismiga ega?",
+    "question_ru": "Сколько проезжих частей имеет данные дороги?",
+    "options_uz": {
+      "F1": "Bittadan",
+      "F2": "Ikkitadan",
+      "F3": "To‘rttadan"
+    },
+    "options_ru": {
+      "F1": "По одному",
+      "F2": "По две",
+      "F3": "По четыре"
+    },
+    "correct_answer": "F3",
+    "image": "images/q190.jpg"
+  },
+  {
+    "id": 191,
+    "question_uz": "Yo‘l-transport hodisasi-",
+    "question_ru": "Дорожно-транспортное пооисшествие-",
+    "options_uz": {
+      "F1": "Transport vositasining yo‘lda harakatlanishi jarayonida ro‘y bergan, fuqarolarning halok bo‘lishiga yoki sog‘lig‘iga zarar yetishiga, transport vositalari, inshootlar, yuklarning shikastlanishi yoxud boshqa moddiy zarar yetishiga sabab bo‘lgan hodisa",
+      "F2": "Yo‘l harakati qatnashchilarining yo‘l-transport hodisalari va ularning oqibatlaridan himoyalanganlik darajasini aks ettiruvchi yo‘l harakati holati"
+    },
+    "options_ru": {
+      "F1": "Событие, возникшее в процессе движения по дороге транспортного средства, при котором наступила смерть или причинен вред здоровью граждан, повреждены транспортные средства, сооружения, грузы либо причинен иной материальный ущерб",
+      "F2": "Комплекс правовых, организационно-технических мероприятий и распорядительных действий по управлению движением на дорогах"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 192,
+    "question_uz": "Quyidagi belgilardan qaysi biri haydovchini boshqa xavf-xatarlar to‘g‘risida ogohlantiradi?",
+    "question_ru": "Какой из следующих знаков предупреждает водителя о прочих опасности?",
+    "options_uz": {
+      "F1": "Faqat «A»",
+      "F2": "Faqat «Б»",
+      "F3": "Faqat «В»"
+    },
+    "options_ru": {
+      "F1": "Только «A»",
+      "F2": "Только «Б»",
+      "F3": "Только «В»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q192.jpg"
+  },
+  {
+    "id": 193,
+    "question_uz": "Moped haydovchilariga ruxsat beriladi:",
+    "question_ru": "Водителям мопедов разрешено двигаться:",
+    "options_uz": {
+      "F1": "Faqat yo‘lning chetki o‘ng bo‘lagida o‘ng tomonidan bir qator bo‘lib harakatlanishga",
+      "F2": "Faqat yo‘l yoqasidan harakatlanishga, agar piyodalarga xalaqit bermasa",
+      "F3": "Barcha sanab o‘tilgan hollarga"
+    },
+    "options_ru": {
+      "F1": "Только по правому краю проезжей части в один ряд",
+      "F2": "Только по обочине, если не создают помехи пешеходам",
+      "F3": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 194,
+    "question_uz": "Harakatlanishga ruxsat berilgan:",
+    "question_ru": "Разрешено двигаться:",
+    "options_uz": {
+      "F1": "Qizil, ko‘k, yashil va sariq avtomobilga",
+      "F2": "Qizil va sariq avtomobilga",
+      "F3": "Qizil, sariq va yashil avtomobilga"
+    },
+    "options_ru": {
+      "F1": "Красный ,синий, зеленый и желтую машину",
+      "F2": "Красный и желтую машину",
+      "F3": "Красный, желтый и зеленый автомобиль"
+    },
+    "correct_answer": "F2",
+    "image": "images/q194.jpg"
+  },
+  {
+    "id": 195,
+    "question_uz": "Siz chorrahadan chapga burilishda qaysi transport vositasiga yo‘l berishingiz lozim?",
+    "question_ru": "Вы намерены повернуть налево, какому транспортному средству следует уступить дорогу?",
+    "options_uz": {
+      "F1": "Avtobusga",
+      "F2": "Yengil avtomobilga",
+      "F3": "Hech kimga"
+    },
+    "options_ru": {
+      "F1": "Автобусу",
+      "F2": "Легковому автомобилю",
+      "F3": "Никому"
+    },
+    "correct_answer": "F3",
+    "image": "images/q195.jpg"
+  },
+  {
+    "id": 196,
+    "question_uz": "Svetaforning qizil yoki sariq ishoralari bilan bir vaqtda yongan qo‘shimcha tarmoqning yo‘naltirgichli yashil ishorasi yo‘nalishida harakatlanayotgan transport vositasining haydovchisi kimga yo‘l berishi kerak?",
+    "question_ru": "Кому обязан уступить дорогу водитель транспортного средства при движении в направлении зеленой стрелки, включенной в дополнительной секции одновременно с желтым и красным сигналом светофора?",
+    "options_uz": {
+      "F1": "Boshqa yo‘nalishlarda harakatlanayotgan transport vositalariga yo‘l berishi kerak",
+      "F2": "O‘ngdan kelayotgan transport voistalariga",
+      "F3": "Qarama-qarshi yo‘nalishda to‘g‘riga yoki o‘ngga harakatlanayotgan transport vositalariga"
+    },
+    "options_ru": {
+      "F1": "Транспортным средствам, движущимся с других направлений.",
+      "F2": "Транспортным средствам, приближающимся справа",
+      "F3": "Транспортным средствам, движущимся со встречного направления прямо и направо"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 197,
+    "question_uz": "Avtomobilni qanday boshqarish usuli yonilg‘i sarfini tejaydi?",
+    "question_ru": "При каком способе вождения будет обеспечен наименьший расход топлива?",
+    "options_uz": {
+      "F1": "Shiddat bilan tezlanish va ohista (ravon) sekinlashish bilan",
+      "F2": "Ohista (ravon) tezlanish va shiddat bilan sekinlashish bilan",
+      "F3": "Ohista (ravon) tezlanish va ohista sekinlashish bilan"
+    },
+    "options_ru": {
+      "F1": "При резком ускорении и плавном замедлении",
+      "F2": "При плавном ускорении и резком замедлении",
+      "F3": "При плавном ускорении и плавном замедлении"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 198,
+    "question_uz": "Ushbu yotiq chiziq nimani bildiradi?",
+    "question_ru": "Что обозначает эта горизонтальная разметка?",
+    "options_uz": {
+      "F1": "Velosiped yo‘lkasini",
+      "F2": "Sun’iy yo‘l notekisligini",
+      "F3": "Yo‘nalishli taksilar to‘xtaydigan joyni"
+    },
+    "options_ru": {
+      "F1": "Велосипедную дорожку",
+      "F2": "Искусственную неровности дороги.",
+      "F3": "Места стоянки маршрутных такси ."
+    },
+    "correct_answer": "F2",
+    "image": "images/q198.jpg"
+  },
+  {
+    "id": 199,
+    "question_uz": "Ushbu belgi . . .",
+    "question_ru": "Этот дорожный знак...",
+    "options_uz": {
+      "F1": "Oldinda harakatlanish serqatnovligi haqida ogohlantiradi",
+      "F2": "Oldinda transport vositalarining tirbandligi haqida ogohlantiradi",
+      "F3": "Oldinda transport vositalari orasida xafiz oraliqni ta’minlash lozimligi haqida ogohlantiradi"
+    },
+    "options_ru": {
+      "F1": "Предупреждает о высоком интенсивности движения в переди.",
+      "F2": "Предупреждает о заторе транспортных средств в переди.",
+      "F3": "О создании безопасной дистанции между транспортными средствами ."
+    },
+    "correct_answer": "F2",
+    "image": "images/q199.jpg"
+  },
+  {
+    "id": 200,
+    "question_uz": "Piyodalar o‘tish joyi - bu ...",
+    "question_ru": "Пешеходный переход - это ...",
+    "options_uz": {
+      "F1": "Yo‘l qatnov qismining piyodalar kesib o‘tishi uchun mo‘ljallangan, 5.16.1, 5.16.2 yo‘l belgilari va 1.14.1-1.14.3 yo‘l chiziqlari bilan ajratilgan bo‘lagi",
+      "F2": "Yo‘lning piyodalar harkatlanishi uchun mo‘ljallangan va transport vositalari harakati taqiqlangan qismi",
+      "F3": "Qatnov qismiga tutashgan yoki undan maysazor, ariq, maxsus to‘siqlar bilan ajratilgan va piyodalarning harakatlanishi uchun mo‘ljallangan yo‘l qismi"
+    },
+    "options_ru": {
+      "F1": "Участок проезжей части дороги, предназначенный для пересечения пешеходами, обозначенный дорожными знаками 5.16.1, 5.16.2 и дорожной разметкой 1.14.1-1.14.3.",
+      "F2": "Часть дороги, примыкающая к проезжей части или отделенная от нее газоном, арыком или специальным сооружением, предназначенная для движения пешеходов.",
+      "F3": "Часть дороги, предназначенная для движения пешеходов, по которой запрещено движение транспортных средств."
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 201,
+    "question_uz": "To‘xtab turish qoidasini kim buzdi?",
+    "question_ru": "Кто нарушил правило стоянки?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «Б»",
+      "F3": "«А» va «Б»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "«А» и «Б»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q201.jpg"
+  },
+  {
+    "id": 202,
+    "question_uz": "Aholi punktlariga tegishli yo‘l harakati qoidalari qayerdan boshlanadi?",
+    "question_ru": "Где начинают действовать правила, относящиеся к населённым пунктам?",
+    "options_uz": {
+      "F1": "Aholi punkti nomini ko‘rsatuvchi oq rangli 5.22 belgisidan boshlab",
+      "F2": "Aholi punkiti nomoni ko‘rsatuvchi oq 5.22 yoki 5.24 havorang rangli belgidan boshlab",
+      "F3": "Yo‘l yuzidagi qurilma va inshootlardan boshlab"
+    },
+    "options_ru": {
+      "F1": "Только с места установки дорожного знака с названием населённого пункта на белом фоне 5.22",
+      "F2": "С места установки дорожного знака с названием населённого пункта на белом 5.22 или синем фоне 5.24",
+      "F3": "В начале застроенной территории, непосредственно прилегающей к дороге"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 203,
+    "question_uz": "Burilish ko‘rsatkichi bilan berilayotgan ogohlantiruvchi ishora qachon to‘xtatilishi kerak?",
+    "question_ru": "Когда должна быть прекращена подача сигнала указателями поворота?",
+    "options_uz": {
+      "F1": "Manyovr bajarishdan oldin",
+      "F2": "Manyovr bajargandan so‘ng darhol",
+      "F3": "Manyovr bajarayotganda"
+    },
+    "options_ru": {
+      "F1": "Непосредственно перед началом маневра",
+      "F2": "Сразу же после завершения маневра",
+      "F3": "В процессе выполнения маневра"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 204,
+    "question_uz": "Qaysi yo‘l belgilari qayrilib olishga ruxsat beradi?",
+    "question_ru": "Какие знаки разрешают выполнить разворот?",
+    "options_uz": {
+      "F1": "Faqat «Б»",
+      "F2": "Faqat «Б» va «Г»",
+      "F3": "Faqat «А», «Б» va «В»",
+      "F4": "Barchasi"
+    },
+    "options_ru": {
+      "F1": "Только «Б»",
+      "F2": "Только «Б» va «Г»",
+      "F3": "Только «А», «Б» va «В»",
+      "F4": "Все"
+    },
+    "correct_answer": "F4",
+    "image": "images/q204.jpg"
+  },
+  {
+    "id": 205,
+    "question_uz": "Ushbu yo‘l belgisi ta’sir oralig‘ida sizga odam tushirish (chiqarish)ga yoki yuk ortish (tushurish)ga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли Вам осуществить посадку (высадку) пассажиров либо загрузку (разгрузку) транспортного средства в зоне действия этого знака?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F1",
+    "image": "images/q205.jpg"
+  },
+  {
+    "id": 206,
+    "question_uz": "Yengil avtomobilda qaysi yo‘nalishlarda harakatlanishga ruxsat etiladi?",
+    "question_ru": "В каких направлениях Вам разрешено продолжить движение на легковом автомобиле?",
+    "options_uz": {
+      "F1": "Faqat to‘g‘riga",
+      "F2": "Faqat o‘ngga va chapga",
+      "F3": "Istalgan yo‘nalishda"
+    },
+    "options_ru": {
+      "F1": "Только прямо",
+      "F2": "Только налево или направо",
+      "F3": "В любых"
+    },
+    "correct_answer": "F3",
+    "image": "images/q206.jpg"
+  },
+  {
+    "id": 207,
+    "question_uz": "Quruq ob-obhavo sharoitida asfalt-beton qoplamali yo‘lda harakatlanayotgan haydovchi yomg‘ir tomchilab qolganda nima qilishi kerak?",
+    "question_ru": "Как следует поступить водителю, если во время движения по сухой дороге с асфальтобетонным покрытием начал капать дождь?",
+    "options_uz": {
+      "F1": "Tezlikni kamaytirish va extiyot bo‘lishi kerak",
+      "F2": "Tezlikni o‘zgartirmasdan harakatni davom ettirish",
+      "F3": "Yomg‘ir tezlashib ketmasdan tezroq harakat qilishi"
+    },
+    "options_ru": {
+      "F1": "Уменьшить скорость и быть особенно осторожным",
+      "F2": "Не изменяя скорости, продолжить движение",
+      "F3": "Увеличить скорость и попытаться проехать как можно большее расстояние, пока не начался сильный дождь"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 208,
+    "question_uz": "Yoqilg‘i bilan ta’minlash tepkisini keskin tezlikni oshirish uchun bosayotganda, avtomobil sirpanishni boshlasa haydovchi qanday harakat qilishi kerak?",
+    "question_ru": "Как водитель должен воздействовать на педаль управления подачи топлива при возникновении заноса, вызванного резким ускорением движения?",
+    "options_uz": {
+      "F1": "Tepkini yanada kuchliroq bosish",
+      "F2": "Tepkiga ta’sir etuvchi kuchni o‘zgartirmaslik",
+      "F3": "Tepkiga ta’sir etuvchi kuchni kamaytirish"
+    },
+    "options_ru": {
+      "F1": "Усилить нажатие на педаль",
+      "F2": "Не менять силу нажатия на педаль",
+      "F3": "Уменьшить нажатие на педаль"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 209,
+    "question_uz": "Tormoz tizimi ishlamaydigan avtomobilning vazni sizning avtomobilingiz vaznini yarmidan ortiq bo‘lsa, uni shatakka olishingizga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли Вам буксировать автомобиль с недействующей тормозной системой, если Фактическая масса этого автомобиля превышает половину фактической массы Вашего автомобиля?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi",
+      "F3": "Faqat 30km/soat tezlikda ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Запрещается",
+      "F3": "Разрешается только при скорости буксировки не более 30 км/ч"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 210,
+    "question_uz": "Yo‘nalishli transport vositasi bekatidan tashqarida yo‘l chetidan qo‘zg‘alayotgan yo‘nalishli transport vositasiga yo‘l berishingiz kerakmi?",
+    "question_ru": "Обязаны ли Вы уступить дорогу маршрутному транспортному средству, отъезжающему от тротуара, где нет обозначенного места остановки?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": "images/q210.jpg"
+  },
+  {
+    "id": 211,
+    "question_uz": "Piyodalar to‘xtab turgan avtobus va trolleybusning qaysi tomonidan yo‘lni kesib o‘tishlari kerak?",
+    "question_ru": "С какой стороны автобуса и троллейбуса пешеходы должны переходить дорогу?",
+    "options_uz": {
+      "F1": "Oldi tomonidan",
+      "F2": "Orqa tomonidan",
+      "F3": "Istalgan tomonidan"
+    },
+    "options_ru": {
+      "F1": "Спереди автобуса и троллейбуса",
+      "F2": "Сзади автобуса и троллейбуса",
+      "F3": "Без разницы"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 212,
+    "question_uz": "Sizga ko‘rsatilgan joyda yengil avtomobilda to‘xtashga ruxsat etiladimi?",
+    "question_ru": "Разрешено ли остановиться легковому автомобилю в указанном месте?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": "images/q212.jpg"
+  },
+  {
+    "id": 213,
+    "question_uz": "Yonlama oraliq masofani tanlashda tezlikning dahli bormi?",
+    "question_ru": "Зависит ли выбор бокового интервала от скорости движения?",
+    "options_uz": {
+      "F1": "Yonlama oraliq masofani tanlashni tezlikka aloqasi yo‘q",
+      "F2": "Tezlik oshganda yonlama oraliq masofani oshirish kerak"
+    },
+    "options_ru": {
+      "F1": "Выбор бокового интервала от скорости движения не зависит",
+      "F2": "При увеличении скорости движения боковой интервал необходимо увеличить"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 214,
+    "question_uz": "Ushbu vaziyatda quvib o‘tishdan so‘ng siz o‘rta bo‘lakda qolishingiz mumkinmi?",
+    "question_ru": "Можете ли Вы продолжить движение по средней полосе после обгона?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": "images/q214.jpg"
+  },
+  {
+    "id": 215,
+    "question_uz": "Cheklangan ko‘rinish sharoitida orqaga harakatlanishda harakat xavfsizligini ta’minlash uchun:",
+    "question_ru": "Для обеспечения безопасности при движении задним ходом в местах, где видимость ограничена, необходимо:",
+    "options_uz": {
+      "F1": "Tovushli signal berishi",
+      "F2": "Falokat yorug‘lik ishoralarini yoqish",
+      "F3": "Boshqa shaxslar yordamidan foydalanish"
+    },
+    "options_ru": {
+      "F1": "Подать звуковой сигнал",
+      "F2": "Включить аварийную сигнализацию",
+      "F3": "Прибегнуть к помощи других лиц"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 216,
+    "question_uz": "Ushbu holatda siz bajarishingiz lozim:",
+    "question_ru": "В данной ситуации Вы должны:",
+    "options_uz": {
+      "F1": "Belgi oldida to‘xtash",
+      "F2": "To‘xtash chizig‘i oldida to‘xtash",
+      "F3": "Boshqa transport vositalari bo‘lmasa, horrahadan to‘xtamasdan o‘tib ketish"
+    },
+    "options_ru": {
+      "F1": "Остановиться у знака",
+      "F2": "Остановиться у стоп-линии",
+      "F3": "При отсутствии других транспортных средств проехать перекресток без остановки"
+    },
+    "correct_answer": "F2",
+    "image": "images/q216.jpg"
+  },
+  {
+    "id": 217,
+    "question_uz": "Kunning yorug‘ vaqtida aholi punktlaridan tashqarida quvib o‘tilayotgan transport vositasi haydovchisining e’tiborini qanday jalb qilasiz?",
+    "question_ru": "Как Вы можете в светлое время суток привлечь внимание водителя обгоняемого автомобиля при движении вне населенного пункта?",
+    "options_uz": {
+      "F1": "Faqat tovushli ishoralarni qo‘llab",
+      "F2": "Faqat chiroqlarni yoqib-o‘chirish bilan",
+      "F3": "Sanab o‘tilgan barcha usul bilan va ularni birgalikda qo‘llash bilan"
+    },
+    "options_ru": {
+      "F1": "Только звуковым сигналом",
+      "F2": "Только кратковременным переключением фар с ближнего света на дальний",
+      "F3": "Любым из перечисленных способов, включая совместную подачу этих сигналов"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 218,
+    "question_uz": "Yo‘lning qanday qismida harakatlanganda kuchli yonlama shamol xavfi ortadi?",
+    "question_ru": "При движении по какому участку дороги действие сильного бокового ветра наиболее опасно?",
+    "options_uz": {
+      "F1": "Ochiq joyda harakatlanganda",
+      "F2": "Yo‘lning yopiq qismida harakatlanganda",
+      "F3": "Yo‘lning yopiq qismidan ochiq qismiga chiqishda"
+    },
+    "options_ru": {
+      "F1": "По открытому",
+      "F2": "По закрытому деревьями",
+      "F3": "При выезде с закрытого участка на открытый"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 219,
+    "question_uz": "Uzoq davom etadigan keng ravon yo‘lda avtomobilni yuqori tezlikda boshqarganda haydovchiga tezlik qanday qabul qilinadi?",
+    "question_ru": "Как воспринимается водителем скорость своего автомобиля пои длительном движении по ровной и широкой дороге на большой скорости?",
+    "options_uz": {
+      "F1": "Aslidagidan sekin harakatlanayotganga o‘xshaydi",
+      "F2": "Aslidagidan tez harakatlanayotganga o‘xshaydi",
+      "F3": "Tezlikni qabul qilish o‘zgarmaydi"
+    },
+    "options_ru": {
+      "F1": "Кажется меньше чем в действительности",
+      "F2": "Кажется больше, чем в действительности",
+      "F3": "Восприятие скорости не меняется"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 220,
+    "question_uz": "Nosoz transport vositasini shatakka olgan yengil avtomobil salonida odam tashishga ruxsat etiladimi?",
+    "question_ru": "Разрешена ли перевозка людей в салоне легкового автомобиля, буксирующего неисправное транспортное средство?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Разрешена",
+      "F2": "Запрещена"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 221,
+    "question_uz": "Ushbu holatda sizga temir yo‘l kesishmasiga chiqishga ruxsat etiladimi?",
+    "question_ru": "Разрешено ли Вам въехать на железнодорожный переезд?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Ha, yaqinlashib kelayotgan poyezd yo‘q bo‘lsa",
+      "F3": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Да, если отсутствует приближающийся поезд",
+      "F3": "Нет"
+    },
+    "correct_answer": "F3",
+    "image": "images/q221.jpg"
+  },
+  {
+    "id": 222,
+    "question_uz": "Ko‘k avtomobil chapga burilmoqchi. Kimga yo‘l berishi kerak?",
+    "question_ru": "Синяя машина собирается повернуть налево, кому она должна уступить дорогу?",
+    "options_uz": {
+      "F1": "Faqat avtobusga",
+      "F2": "Faqat yuk avtomobiliga",
+      "F3": "Har ikki transport vositasiga"
+    },
+    "options_ru": {
+      "F1": "Только автобусу",
+      "F2": "Только грузовому автомобилю",
+      "F3": "Обоим транспортным средствам"
+    },
+    "correct_answer": "F3",
+    "image": "images/q222.jpg"
+  },
+  {
+    "id": 223,
+    "question_uz": "Yengil avtomobilning orqa oynasiga parda yoki chiypardalar o‘rnatish mumkinmi?",
+    "question_ru": "Разрешается ли устанавливать шторки или жалюзи на заднем стекле легкового автомобиля?",
+    "options_uz": {
+      "F1": "Taqiqlanadi",
+      "F2": "Ruxsat etiladi, agarda ikki tomonda orqani ko‘rsatuvchi ko‘zgusi bo‘lsa"
+    },
+    "options_ru": {
+      "F1": "Запрещается",
+      "F2": "Разрешается, но только при наличии с обеих сторон зеркал заднего вида"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 224,
+    "question_uz": "Chorrahaning ko‘rsatilgan joyida sizga to‘xtashga ruxsat etiladimi?",
+    "question_ru": "Разрешена ли Вам остановка в указанном месте на перекрестке?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi",
+      "F3": "Ruxsat etiladi, agarda sizning transport vositangiz bilan sidirg‘a chiziq orasidagi masofa 3 metrdan ortiq bo‘lsa"
+    },
+    "options_ru": {
+      "F1": "Разрешена",
+      "F2": "Запрещена",
+      "F3": "Разрешена, если расстояние от Вашего транспортного средства до линии разметки не менее 3 м"
+    },
+    "correct_answer": "F2",
+    "image": "images/q224.jpg"
+  },
+  {
+    "id": 225,
+    "question_uz": "Siz ro‘paradan yaqinlashayotgan yuk avtomobiliga yo‘l berishingiz kerakmi?",
+    "question_ru": "Должны ли Вы уступить дорогу встречному грузовому автомобилю?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": "images/q225.jpg"
+  },
+  {
+    "id": 226,
+    "question_uz": "Transport vositasi qiyalikda joyidan qo‘zg‘alishda to‘xtab turish tormoz dastagini qay vaqtda tushirishni boshlash kerak?",
+    "question_ru": "В какой момент следует начинать отпускать стояночный тормоз при заезде на подъем?",
+    "options_uz": {
+      "F1": "Harakatni boshlashdan avval",
+      "F2": "Harakatni boshlagandan so‘ng",
+      "F3": "harakatni boshlash bilan bir vaqtda"
+    },
+    "options_ru": {
+      "F1": "До начала движения",
+      "F2": "После начала движения",
+      "F3": "Одновременно с началом движения"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 227,
+    "question_uz": "90 km/soat tezlikda harakatlanayotgan transport vositasi 1sekundda qancha masofani bosib o‘tadi?",
+    "question_ru": "Какое расстояние проедет транспортное средство за одну секунду при скорости движения 90 км/ч?",
+    "options_uz": {
+      "F1": "15 m",
+      "F2": "25 m",
+      "F3": "35 m"
+    },
+    "options_ru": {
+      "F1": "15 м",
+      "F2": "25 м",
+      "F3": "35 м"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 228,
+    "question_uz": "Avtomobilning ABS tizimi burilishda sirpanish va yonga siljishni oldini oladimi?",
+    "question_ru": "Предотвращает ли система АВS автомобиля боковое скольжение и скольжение при повороте?",
+    "options_uz": {
+      "F1": "Avtomobilni faqat sirpanish ehtimolining oldini oladi",
+      "F2": "Avtomobilni faqat yonga siljish ehtimolining oldini oladi",
+      "F3": "Avtomobilni sirpanish va yonga siljish ehtimolining oldini olmaydi"
+    },
+    "options_ru": {
+      "F1": "Предотвращает только скольжение автомобиля",
+      "F2": "Предотвращает скольжение автомобиля только в сторону",
+      "F3": "Не препятствует боковому скольжению и скольжению автомобиля в сторону"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 229,
+    "question_uz": "Ko‘rsatilgan qaysi joyda siz avtomobilni qoidaga binoan to‘xtatishingiz mumkin?",
+    "question_ru": "В каком из указанных мест Вы можете произвести остановку?",
+    "options_uz": {
+      "F1": "Фақат «А»",
+      "F2": "Фақат «Б»",
+      "F3": "Фақат «Б» ва «В»",
+      "F4": "Ҳеч қайсисида"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "Только «Б» и «В»",
+      "F4": "Ни в каком"
+    },
+    "correct_answer": "F2",
+    "image": "images/q229.jpg"
+  },
+  {
+    "id": 230,
+    "question_uz": "Shatakka olingan avtomobilni falokat yorug‘lik ishoralari nosoz bo‘lganda transport vositasi qanday belgilanishi kerak?",
+    "question_ru": "Как следует обозначить буксируемый автомобиль при отсутствии или неисправности аварийной сигнализации?",
+    "options_uz": {
+      "F1": "Gabarit chiroqlarini yoqish",
+      "F2": "Orqa tumanga qarshi chiroqlarini yoqish",
+      "F3": "Shatakka olingan transport vositasi orqa tomoniga falokat sababli to‘xtash belgisini o‘rnatish"
+    },
+    "options_ru": {
+      "F1": "Включить габаритные огни",
+      "F2": "Включить задние противотуманные фары",
+      "F3": "Установить на задней части буксируемого автомобиля знак аварийной остановки"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 231,
+    "question_uz": "Ko‘rsatilgan yo‘l belgilaridan qaysi biri ruxsat etilgan to‘la vazni 3,5 tonnadan kam bo‘lgan yuk avtomobiliga o‘ngga harakatlanishni buyuradi?",
+    "question_ru": "Какие знаки обязывают водителя грузового автомобиля, с разрешенной максимальной массой до 3.5 т., повернуть направо?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «Б»",
+      "F3": "«А» va «Б»",
+      "F4": "«Б» va «В»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "«А» и «Б»",
+      "F4": "«Б» и «В»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q231.jpg"
+  },
+  {
+    "id": 232,
+    "question_uz": "Sanab o‘tilgan qaysi hollarda haydovchi orqadagi vaziyatni e’tiborga olishi kerak?",
+    "question_ru": "В каком из перечисленных случаев водителю следует оценивать обстановку сзади:",
+    "options_uz": {
+      "F1": "Faqat keskin tormoz berishda",
+      "F2": "Faqat nam qoplama yoki yaxmalakli yo‘llarda tormoz berganda",
+      "F3": "Har qanday tormozlashda"
+    },
+    "options_ru": {
+      "F1": "Только при резком торможении",
+      "F2": "Только при торможении на дороге с мокрым или скользким покрытием.",
+      "F3": "При любом торможении"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 233,
+    "question_uz": "Tuman sharoitida, agar ko‘rinish masofasi 300 metrdan kam bo‘lsa kunduzgi chiroqlarni yoqish yetarlimi?",
+    "question_ru": "Достаточно ли включения дневных ходовых огней для обозначения транспортного средства при движении в тумане, когда видимость дороги менее 300 м?",
+    "options_uz": {
+      "F1": "Yetarli",
+      "F2": "Yetarli emas"
+    },
+    "options_ru": {
+      "F1": "Достаточно",
+      "F2": "Недостаточно"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 234,
+    "question_uz": "«Quvib o‘tish» atamasi nimani bildiradi?",
+    "question_ru": "Что означает термин \"обгон\"?",
+    "options_uz": {
+      "F1": "Bir va bir nechta transport vositalaridan o‘zib ketish",
+      "F2": "Egallab turgan bo‘lakdan qarama-qarshi harakat bo‘lagiga chiqib bir yoki bir nechta transport vositalaridan o‘zib ketish va dastlab egallab turgan bo‘lagiga qaytish",
+      "F3": "Egallagan harakatlanish bo‘lagidan chiqib, oldinda harakatlanayotgan transport vositasidan o‘zib ketish"
+    },
+    "options_ru": {
+      "F1": "Опережение одного или нескольких транспортных средств.",
+      "F2": "Опережение одного или нескольких транспортных средств, связанное с выездом на полосу (сторону проезжей части), предназначенную для встречного движения, и последующим возвращением на ранее занимаемую полосу (сторону проезжей части)",
+      "F3": "Опережение движущегося впереди транспортного средства, связанное с выездом из занимаемой полосы"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 235,
+    "question_uz": "Kunning qorong‘i vaqtida va bulutli ob-havoda ro‘paradan kelayotgan avtomobil tezligi qanday tuyuladi?",
+    "question_ru": "В тёмное время суток и в пасмурную погоду скорость встречного автомобиля воспринимается:",
+    "options_uz": {
+      "F1": "Aslidagidan kam tezlikda tuyuladi",
+      "F2": "Aslidagidan katta tezlikda tuyuladi",
+      "F3": "Tezlikni qabul qilish o‘zgarmaydi"
+    },
+    "options_ru": {
+      "F1": "Ниже, чем в действительности",
+      "F2": "Выше, чем в действительности",
+      "F3": "Восприятие скорости не меняется"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 236,
+    "question_uz": "Tormoz tizimiga ega bo‘lmagan tirkama bilan harakatlanayotganda yengil avtomobilni tormoz yo‘li qanday o‘zgaradi?",
+    "question_ru": "Как изменяется длина тормозного пути легкового автомобиля при движении с прицепом, не имеющим тормозной системы?",
+    "options_uz": {
+      "F1": "Tirkama qo‘shimcha qarshilikka ega bo‘lgani uchun tormoz yo‘li kamayadi",
+      "F2": "Tormoz yo‘li uzayadi",
+      "F3": "Tormoz yo‘li o‘zgarmaydi"
+    },
+    "options_ru": {
+      "F1": "Тормозной путь уменьшается, так как прицеп оказывает дополнительное сопротивление движению",
+      "F2": "Тормозной путь увеличивается",
+      "F3": "Тормозной путь не изменяется"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 237,
+    "question_uz": "Yo‘lning keskin burilishida yuzaga keladigan sirpanishning oldini olish uchun haydovchi nima qilishi kerak?",
+    "question_ru": "Что следует сделать водителю, чтобы предотвратить возникновение заноса при проезде крутого поворота?",
+    "options_uz": {
+      "F1": "Burilishdan oldin tezlikni kamaytirib, avtomobilni erkin harakatlanishi uchun ilashma tepkisini bosishi",
+      "F2": "Burilishdan oldin tezlikni kamaytirish, kerak bo‘lsa uzatmalar pog‘onasini pasaytirish, burilishdan o‘tayotganda tezlikni oshirmaslik va avtomobilni keskin tormozlamaslik",
+      "F3": "Sanab o‘tilgan har ikki usulni qo‘llashga ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "Перед поворотом снизить скорость и выжать педаль сцепления, чтобы дать возможность автомобилю двигаться накатом на повороте",
+      "F2": "Перед поворотом снизить скорость, при необходимости включить пониженную передачу, а при проезде поворота не увеличивать резко скорость и не тормозить",
+      "F3": "Допускается любое из перечисленных действий"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 238,
+    "question_uz": "Qattiq yoki egiluvchan ulagichda shatakka olingan yuk avtomobilining kabinasida odam tashishga ruxsat etiladimi?",
+    "question_ru": "При буксировке на жесткой или гибкой сцепки, разрешается ли перевозить людей в кузове буксирующего грузового автомобиля?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Разрешено",
+      "F2": "Запрещено"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 239,
+    "question_uz": "Chorrahaga kirishda siz:",
+    "question_ru": "При въезде на перекресток Вы :",
+    "options_uz": {
+      "F1": "Mototsiklga yo‘l berishingiz kerak",
+      "F2": "Har ikkisiga ham yo‘l berishingiz kerak",
+      "F3": "Birinchi o‘tish huquqiga egasiz"
+    },
+    "options_ru": {
+      "F1": "Должны уступить дорогу только мотоциклу",
+      "F2": "Должны уступить дорогу обоим транспортным средствам",
+      "F3": "Имеете преимущественное право на движение"
+    },
+    "correct_answer": "F2",
+    "image": "images/q239.jpg"
+  },
+  {
+    "id": 240,
+    "question_uz": "Qaysi yo‘l belgisi barcha transport vositalarining harakatini istisnosiz taqiqlaydi?",
+    "question_ru": "Какой знак запрещает дальнейшее движение всех без исключения транспортных средств?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q240.jpg"
+  },
+  {
+    "id": 241,
+    "question_uz": "Sanab o‘tilgan qaysi transport vositalarini o‘t o‘chirgichsiz tasarruf etishga ruxsat etiladi?",
+    "question_ru": "Какие из перечисленных транспортных средств разрешается эксплуатировать без огнетушителя?",
+    "options_uz": {
+      "F1": "Avtomobillarni",
+      "F2": "Avtobuslarni",
+      "F3": "Barcha mototsikllarni",
+      "F4": "Faqat yon kajavasiz mototsikllarni"
+    },
+    "options_ru": {
+      "F1": "Автомобили",
+      "F2": "Автобусы",
+      "F3": "Все мотоциклы",
+      "F4": "Только мотоциклы без бокового прицепа."
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 242,
+    "question_uz": "Kunning yorug‘ vaqtida aholi punktlaridan tashqarida siz quvib o‘tayotgan transport vositasi haydovchisining e’tiborini qanday jalb qilasiz?",
+    "question_ru": "Как Вы можете в светлое время суток привлечь внимание водителя обгоняемого автомобиля при движении вне населенного пункта?",
+    "options_uz": {
+      "F1": "Faqat tovush ishorasi bilan",
+      "F2": "Faqat yorug‘lik faralar qisqa-qisqa yoqib o‘chirish bilan",
+      "F3": "Sanab o‘tilgan barcha usullar bilan va ularni birga qo‘llash bilan"
+    },
+    "options_ru": {
+      "F1": "Только звуковым сигналом",
+      "F2": "Только кратковременным переключением фар с ближнего света на дальний",
+      "F3": "Любым из перечисленных способов, включая совместную подачу этих сигналов"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 243,
+    "question_uz": "Qaysi qo‘shimcha axborot belgilari birga qo‘llanilganda belgilarning ta’sir oralig‘ini ko‘rsatadi?",
+    "question_ru": "Какие знаки дополнительной информации указывают протяженность зоны действия знаков, с которыми они применяются?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «Б»",
+      "F3": "«Б» va «В»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "«Б» и «В»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q243.jpg"
+  },
+  {
+    "id": 244,
+    "question_uz": "Birinchi uzatmada uzoq tezlanishda yurish yoqilg‘i sarfiga qanday ta’sir etadi?",
+    "question_ru": "Как влияет длительный разгон транспортного средства с включенной первой передачей на расход топлива?",
+    "options_uz": {
+      "F1": "Yoqilg‘i sarfi ortadi",
+      "F2": "Yoqilg‘i sarfi kamayadi",
+      "F3": "Yoqilg‘i sarfi o‘zgarmaydi"
+    },
+    "options_ru": {
+      "F1": "Расход топлива увеличивается",
+      "F2": "Расход топлива уменьшается",
+      "F3": "Расход топлива не изменяется"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 245,
+    "question_uz": "Qaysi yo‘l belgisi piyodalar yo‘lkasini bildiradi?",
+    "question_ru": "Какой из знаков обозначает пешеходную дорожку?",
+    "options_uz": {
+      "F1": "Faqat «Б»",
+      "F2": "Faqat «Б» va «В»",
+      "F3": "Barcha belgilar"
+    },
+    "options_ru": {
+      "F1": "Только «Б»",
+      "F2": "Только «Б» и «В»",
+      "F3": "Все знаки"
+    },
+    "correct_answer": "F1",
+    "image": "images/q245.jpg"
+  },
+  {
+    "id": 246,
+    "question_uz": "Qaysi holatda siz majburiy to‘xtashni amalga oshirasiz?",
+    "question_ru": "В каком случае Вы совершите вынужденную остановку?",
+    "options_uz": {
+      "F1": "Piyodalar o‘tish joyi oldida piyodalarga yo‘l berish uchun to‘xtab",
+      "F2": "Texnik nozozlik tufayli yo‘lning harakat qismida",
+      "F3": "Har ikki sanab o‘tilgan holda"
+    },
+    "options_ru": {
+      "F1": "Остановившись непосредственно перед пешеходным переходом, чтобы уступить дорогу пешеходу.",
+      "F2": "Остановившись на проезжей части из-за технической неисправности автомобиля",
+      "F3": "В обоих перечисленных случаях."
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 247,
+    "question_uz": "Qaysi belgilarda qarama-qarshi harakatlanishda o‘tib ketsh qiyin bo‘lsa, siz yo‘l berishingiz kerak?",
+    "question_ru": "Какие знаки требует, что Вы должны уступить дорогу, если встречный разъезд затруднен?",
+    "options_uz": {
+      "F1": "Faqat «В»",
+      "F2": "«А» va «В»",
+      "F3": "«Б» va «В»",
+      "F4": "«Б» va «Г»"
+    },
+    "options_ru": {
+      "F1": "Только «В»",
+      "F2": "«А» и «В»",
+      "F3": "«Б» и «В»",
+      "F4": "«Б» и «Г»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q247.jpg"
+  },
+  {
+    "id": 248,
+    "question_uz": "Qaysi hollarda sizga harakatni davom ettirish taqiqlanadi, hatto ta’mirlash ustaxonasiga ham, agarda faralar va orqa gabarit chiroqlar nosoz bo‘lsa ?",
+    "question_ru": "В каких случаях Вам запрещается дальнейшее движение даже до места ремонта или стоянки с не горящими (из-за неисправности) фарами и задними габаритными огнями?",
+    "options_uz": {
+      "F1": "Faqat yetarlicha ko‘rinmaslik sharoitida",
+      "F2": "Kunning qorong‘i vaqtida",
+      "F3": "Har ikkala sanab o‘tilgan holatda"
+    },
+    "options_ru": {
+      "F1": "Только в условиях недостаточной видимости.",
+      "F2": "Только в темное время суток",
+      "F3": "В обоих перечисленных случаях"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 249,
+    "question_uz": "Qanday hollarda yo‘lning burilish qismlarida yengil avtomobil ag‘darilishga qarshi turg‘unroq?",
+    "question_ru": "В каком случае легковой автомобиль более устойчив против опрокидывания на повороте?",
+    "options_uz": {
+      "F1": "Yuksiz va yo‘lovchilarsiz",
+      "F2": "Yo‘lovchilar bilan yuksiz",
+      "F3": "Yo‘lovchilarsiz, yuqori yukxonasida yuki bilan"
+    },
+    "options_ru": {
+      "F1": "Без груза и пассажиров",
+      "F2": "С пассажирами, но без груза",
+      "F3": "Без пассажиров, но с грузом на верхнем багажнике"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 250,
+    "question_uz": "Kunning qorong‘u vaqtida aholi punktlarida yo‘ning yoritilgan qismida siz qanday tashqi yoritish chiroqlaridan foydalanishingiz kerak?",
+    "question_ru": "Какие внешние световые приборы Вы должны использовать при движении в темное время суток на освещенных участках дорог населенного пункта?",
+    "options_uz": {
+      "F1": "Gabarit chiroqlardan",
+      "F2": "Yaqinni yorituvchi chiroqlardan",
+      "F3": "Yaqinni yoki uzoqni yorituvchi chiroqlardan"
+    },
+    "options_ru": {
+      "F1": "Габаритные огни",
+      "F2": "Фары ближнего света",
+      "F3": "Фары ближнего или дальнего света"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 251,
+    "question_uz": "Qaysi transport vositasining haydovchisi qoidani buzib burilmoqda?",
+    "question_ru": "Кто из водителей, совершающих поворот, нарушает правила?",
+    "options_uz": {
+      "F1": "Faqat yengil avtomobil haydovchisi",
+      "F2": "Faqat mototsikl haydovchisi",
+      "F3": "Ikkisi ham buzmoqda"
+    },
+    "options_ru": {
+      "F1": "Только водитель легкового автомобиля",
+      "F2": "Только мотоциклист",
+      "F3": "Оба нарушают"
+    },
+    "correct_answer": "F3",
+    "image": "images/q251.jpg"
+  },
+  {
+    "id": 252,
+    "question_uz": "Ushbu yo‘lda sizga yo‘l belgisidan keyin qaysi bo‘laklarda harakatlanishga ruxsat beriladi?",
+    "question_ru": "По какой полосе вам разрешено ездить после дорожного знака?",
+    "options_uz": {
+      "F1": "Istalgan bo‘lakdan",
+      "F2": "O‘ng bo‘lakdan",
+      "F3": "Faqat chap bo‘lakdan"
+    },
+    "options_ru": {
+      "F1": "По любой полосе",
+      "F2": "По правой полосе",
+      "F3": "Только по левой полосе"
+    },
+    "correct_answer": "F2",
+    "image": "images/q252.jpg"
+  },
+  {
+    "id": 253,
+    "question_uz": "Qaysi yo‘l belgilari chapga burilishni taqiqlaydi?",
+    "question_ru": "Какие знаки запрещают поворот налево?",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «А» va «Б»",
+      "F3": "Faqat «А» va «Г»",
+      "F4": "Barchasi"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «А» ва «Б»",
+      "F3": "Только «А» ва «Г»",
+      "F4": "Все"
+    },
+    "correct_answer": "F3",
+    "image": "images/q253.jpg"
+  },
+  {
+    "id": 254,
+    "question_uz": "Yo‘l transport hodisasiga dahldor haydovchilar birinchi navbatda nima qilishlari kerak?",
+    "question_ru": "Что обязаны сделать в первую очередь водители, причастные к дорожно-транспортному происшествию?",
+    "options_uz": {
+      "F1": "Yo‘lning harakat qismini bo‘shatishlari kerak",
+      "F2": "Transport vositasini darhol to‘xtatishi, avariya ishoralarini yoqishi va avariya sababli to‘xtash belgisini o‘rnatishi",
+      "F3": "Sodir etilgan hodisa xaqida YHXXga xabar berishi kerak"
+    },
+    "options_ru": {
+      "F1": "Освободить проезжую часть",
+      "F2": "Немедленно остановиться, включить аварийную сигнализацию и выставить знак аварийной остановки",
+      "F3": "Сообщить о случившемся в СБДД"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 255,
+    "question_uz": "Piyodalar turar joy dahasida qayerda harakatlanishlari mumkin?",
+    "question_ru": "Где могут двигаться пешеходы в жилой зоне?",
+    "options_uz": {
+      "F1": "Faqat tratuarda",
+      "F2": "Faqat qatnov qismidan",
+      "F3": "Tratuarda, hamda qatnov qismida"
+    },
+    "options_ru": {
+      "F1": "Только по тротуарам",
+      "F2": "По тротуарам и в один ряд по краю проезжей части",
+      "F3": "По тротуарам и по проезжей части"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 256,
+    "question_uz": "Quvib o‘tishni bajarayotganda chapga burilishni ko‘rsatuvchi chiroqni qachon o‘chirishingiz kerak?",
+    "question_ru": "Когда Вы обязаны выключить левые указатели поворота, выполняя обгон?",
+    "options_uz": {
+      "F1": "Manyovrni tugallagach, darhol",
+      "F2": "Quvib o‘tilayotgan transport vositasidan o‘zib ketgandan so‘ng istalgan vaqtda",
+      "F3": "O‘z ixtiyoringizga havola"
+    },
+    "options_ru": {
+      "F1": "Сразу после завершения маневра",
+      "F2": "После опережения обгоняемого транспортного средства",
+      "F3": "По своему усмотрению"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 257,
+    "question_uz": "Chorrahadagi uzuq-uzuq chiziqlar nimani bildiradi?",
+    "question_ru": "Что обозначают прерывистые линии разметки на перекрестке?",
+    "options_uz": {
+      "F1": "Majburiy harakatni",
+      "F2": "Chorrahada harakatlanish bo‘lagini chegarasini"
+    },
+    "options_ru": {
+      "F1": "Обязательное направление движения на перекрестке",
+      "F2": "Границы полос движения в пределах перекрестка"
+    },
+    "correct_answer": "F2",
+    "image": "images/q257.jpg"
+  },
+  {
+    "id": 258,
+    "question_uz": "Qanday alomatlar charchash belgilari hisoblanadi?",
+    "question_ru": "Каковы типичные признаки наступившего утомления водителя?",
+    "options_uz": {
+      "F1": "Uyquchanlik, bo‘shashish, diqqatning susayishi",
+      "F2": "Zo‘riqish, asabiylashish",
+      "F3": "Bosh aylanishi, ko‘zlarga qum kirgan kabi achishish, terlash alomati"
+    },
+    "options_ru": {
+      "F1": "Сонливость, вялость, притупление внимания",
+      "F2": "Возбуждённость, раздражительность",
+      "F3": "Головокружение, резь в глазах, повышенная потливость"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 259,
+    "question_uz": "Siz yengil avtomobildan qaysi jihozlar mavjud bo‘lmaganda foydalanishingiz mumkin?",
+    "question_ru": "Вы имеете право эксплуатировать легковой автомобиль при отсутствии:",
+    "options_uz": {
+      "F1": "Tibbiy quticha",
+      "F2": "O‘t o‘chirgich",
+      "F3": "Falokat to‘xtash belgisi",
+      "F4": "G‘ildirab ketishga qarshi moslama"
+    },
+    "options_ru": {
+      "F1": "Аптечки",
+      "F2": "Огнетушителя",
+      "F3": "Знака аварийной остановки",
+      "F4": "Противооткатных упоров"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 260,
+    "question_uz": "Kunning yorug‘ vaqtida quyidagi hollarda yaqinni yorituvchi chiroqlar yoqilishi kerak:",
+    "question_ru": "В светлое время суток ближний свет фар должен быть включен в следующих случаях:",
+    "options_uz": {
+      "F1": "Yo‘lovchilarni tashiyotgan avtobus va yo‘nalishli transport vositalarida",
+      "F2": "Xavfli, katta o‘lchamli va og‘ir vaznli yuklarni tashishda",
+      "F3": "Mototsikl va mopedlarda",
+      "F4": "Barcha sanab o‘tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "При движении в составе организованной транспортной колонны",
+      "F2": "При перевозке опасных, крупногабаритных и тяжеловесных грузов",
+      "F3": "На мотоциклах и мопедах",
+      "F4": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 261,
+    "question_uz": "Qaysi yo‘nalishda harakatlanishni davom ettirishingiz mumkin?",
+    "question_ru": "В каких направлениях Вам можно продолжить движение?",
+    "options_uz": {
+      "F1": "Faqat chapga",
+      "F2": "Chapga va orqaga qayrilib olishga",
+      "F3": "O‘ngga, chapga va orqaga qayrilib olishga"
+    },
+    "options_ru": {
+      "F1": "Только направо",
+      "F2": "Налево и в обратном направлении",
+      "F3": "Направо, налево и в обратном направлении"
+    },
+    "correct_answer": "F3",
+    "image": "images/q261.jpg"
+  },
+  {
+    "id": 262,
+    "question_uz": "72 km/soat tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib o‘tadi?",
+    "question_ru": "Какое расстояние проедет транспортное средство за одну секунду при скорости движения 72 км/ч?",
+    "options_uz": {
+      "F1": "15 m",
+      "F2": "20 m",
+      "F3": "25 m"
+    },
+    "options_ru": {
+      "F1": "15 м",
+      "F2": "20 м",
+      "F3": "25 м"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 263,
+    "question_uz": "Qaysi hollarda transport vositasidan foydalanish taqiqlanadi?",
+    "question_ru": "В каком случае запрещается эксплуатация транспортного средства?",
+    "options_uz": {
+      "F1": "Yonilg‘i darajasini ko‘rsatish qurilmasi ishlamaydi",
+      "F2": "O‘t oldirish tizimi nosoz",
+      "F3": "Dvigatel qiyinchilik bilan ishga tushadi",
+      "F4": "Tovush signallari ishlamaydi"
+    },
+    "options_ru": {
+      "F1": "Не работает указатель уровня топлива",
+      "F2": "Нарушена система зажигания",
+      "F3": "Затруднен пуск двигателя",
+      "F4": "Не работает звуковой сигнал"
+    },
+    "correct_answer": "F4",
+    "image": null
+  },
+  {
+    "id": 264,
+    "question_uz": "Kunning yorug‘ vaqtida aholi punktlarida quvib o‘tilayotgan transport vositasi haydovchisining e’tiborini jalb qilish uchun mumkin:",
+    "question_ru": "Привлечь внимание водителя обгоняемого автомобиля при движении в населенном пункте в светлое время суток можно:",
+    "options_uz": {
+      "F1": "Tovush signalidan foydalanish",
+      "F2": "Faqat yaqinni yorituvchi chiroqni uzoqni yorituvchi chiroqqa qisqa muddat orasida o‘tkazish bilan ishora berish",
+      "F3": "Faqat birgalikda yorug‘lik ishoralari bilan birga tovush signallarini qo‘llash",
+      "F4": "Sanab o‘tilganlarning barchasidan foydalanish"
+    },
+    "options_ru": {
+      "F1": "Только звуковым сигналом",
+      "F2": "Только кратковременным переключением фар ближнего света на дальний",
+      "F3": "Только совместной подачей звукового и светового сигнала",
+      "F4": "Любые из перечисленных способов"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 265,
+    "question_uz": "Svetafor ishoralari qaysi guruh yo‘l belgilarini bekor qiladi (miltillovchi sariq ishoradan tashqari)?",
+    "question_ru": "Значения каких дорожных знаков отменяются сигналами светофора?",
+    "options_uz": {
+      "F1": "Imtiyoz belgilari",
+      "F2": "Taqiqlovchi belgilar",
+      "F3": "Buyuruvchi belgilar",
+      "F4": "Barcha sanab o‘tilganlari"
+    },
+    "options_ru": {
+      "F1": "Знаков приоритета",
+      "F2": "Запрещающих знаков",
+      "F3": "Предписывающих знаков",
+      "F4": "Всех перечисленных"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 266,
+    "question_uz": "Ushbu yo‘l chizig‘i sizga qanday manyovr bajarishni taqiqlaydi?",
+    "question_ru": "Какой маневр Вам запрещается выполнить при наличии данной линии разметки?",
+    "options_uz": {
+      "F1": "Quvib o‘tishni",
+      "F2": "Aylanib o‘tishni",
+      "F3": "Qayralib olishni",
+      "F4": "Sanab o‘tilgan barcha manevrlarga ruxsat beriladi"
+    },
+    "options_ru": {
+      "F1": "Обгон",
+      "F2": "Объезд",
+      "F3": "Разворот",
+      "F4": "Разрешает все перечисленные маневры"
+    },
+    "correct_answer": "F4",
+    "image": "images/q266.jpg"
+  },
+  {
+    "id": 267,
+    "question_uz": "Ushbu belgi axborot beradi:",
+    "question_ru": "Этот знак указывает, что:",
+    "options_uz": {
+      "F1": "Siz o‘ngga yoki chapga burilishingiz kerakligini ko‘rsatadi",
+      "F2": "Reversiv harakatlanish yo‘liga chiqish haqida",
+      "F3": "Chorrahadan o‘ngga va chapga bir tomonlama harakat tashkil qilingan"
+    },
+    "options_ru": {
+      "F1": "Вы должны повернуть направо или налево",
+      "F2": "На пересекаемой дороге организовано реверсивное движение",
+      "F3": "Вправо и влево от перекрестка организовано одностороннее движение"
+    },
+    "correct_answer": "F2",
+    "image": "images/q267.jpg"
+  },
+  {
+    "id": 268,
+    "question_uz": "M3 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yig‘indisiga yo‘l qo‘yiladi :",
+    "question_ru": "Суммарный люфт в рулевом управлении в регламентированных условиях испытаний автотранспортного средства категории М3 не должен превышать следующих значений:",
+    "options_uz": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "options_ru": {
+      "F1": "10°",
+      "F2": "20°",
+      "F3": "25°"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 269,
+    "question_uz": "Sizga ruxsat etilgan to‘la vazni 3,5 tonnadan ortiq yuk avtomobilida harakatlanish:",
+    "question_ru": "Вам разрешено продолжить движение на грузовом автомобиле с разрешенной максимальной массой более 3,5 т:",
+    "options_uz": {
+      "F1": "Faqat to‘g‘riga",
+      "F2": "To‘g‘riga va o‘ngga",
+      "F3": "Barcha yo‘nalishlarda"
+    },
+    "options_ru": {
+      "F1": "Только прямо",
+      "F2": "Прямо и направо",
+      "F3": "Во всех направлениях"
+    },
+    "correct_answer": "F1",
+    "image": "images/q269.jpg"
+  },
+  {
+    "id": 270,
+    "question_uz": "108 km/s tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib o‘tadi?",
+    "question_ru": "Какое расстояние проедет транспортное средство за одну секунду при скорости движения 108 км/ч?",
+    "options_uz": {
+      "F1": "15 m",
+      "F2": "25 m",
+      "F3": "30 m"
+    },
+    "options_ru": {
+      "F1": "15 м",
+      "F2": "25 м",
+      "F3": "30 м"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 271,
+    "question_uz": "Ko‘rsatilgan qaysi belgi reversiv harakat boshlanishi haqida axborot beradi?",
+    "question_ru": "Какой из указанных знаков информирует о начале дороги с реверсивным движением?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "correct_answer": "F3",
+    "image": "images/q271.jpg"
+  },
+  {
+    "id": 272,
+    "question_uz": "Shatakka olib harakatlanishingiz mumkin:",
+    "question_ru": "Продолжить буксировку можно:",
+    "options_uz": {
+      "F1": "Faqat «A» yo‘nalishi bo‘yicha",
+      "F2": "Faqat «B» yo‘nalish bo‘yicha",
+      "F3": "Ko‘rsatilgan barcha yo‘nalish bo‘yicha"
+    },
+    "options_ru": {
+      "F1": "Только в направлении А",
+      "F2": "Только в направлении Б",
+      "F3": "В любом из указанных направлений"
+    },
+    "correct_answer": "F1",
+    "image": "images/q272.jpg"
+  },
+  {
+    "id": 273,
+    "question_uz": "Ushbu yo‘l belgisi chorrahaga yaqinlashayotganlik to‘g‘risida ogohlantiradi, bunda Siz:",
+    "question_ru": "Этот знак предупреждает о приближении к перекрестку, на котором Вы:",
+    "options_uz": {
+      "F1": "Birinchi bo‘lib o‘tish huquqiga egasiz",
+      "F2": "Kesib o‘tayotgan yo‘ldagi transport vositalariga yo‘l berishingiz kerak",
+      "F3": "Faqatgina o‘ng tomondan yaqinlashib kelayotgan transport vositalariga yo‘l berishingiz kerak"
+    },
+    "options_ru": {
+      "F1": "Имеете право преимущественного проезда",
+      "F2": "Должны уступить дорогу всем транспортным средствам, движущимся по пересекаемой дороге",
+      "F3": "Должны уступить дорогу только транспортным средствам, приближающимся справа"
+    },
+    "correct_answer": "F3",
+    "image": "images/q273.jpg"
+  },
+  {
+    "id": 274,
+    "question_uz": "Haydovchiga transport vositasini boshqarish vaqtida telefondan foydalanishga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли водителю пользоваться телефоном во время движения?",
+    "options_uz": {
+      "F1": "Ruxsat etiladi",
+      "F2": "Qo‘lni ishlatmasdan texnik vosilalardan foydalanish gaplashishga ruxsat etiladi",
+      "F3": "20 km/s tezlikda harakatlanayotganda ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Разрешается только при использовании технического устройства, позволяющего вести переговоры без использования рук",
+      "F3": "Разрешается только при движении со скоростью менее 20 км/ч"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 275,
+    "question_uz": "Agar avtomobil antiblokirovkali (ABS) tormoz tizimi bilan jihozlangan bo‘lsa keskin tormoz berishni qanday amalga oshirish kerak?",
+    "question_ru": "Как правильно произвести экстренное торможение, если автомобиль оборудован ABS антиблокировочной тормозной системой?",
+    "options_uz": {
+      "F1": "Tormoz tepkisini uzub-uzub bosish yo‘li bilan",
+      "F2": "Tormoz tepkisini oxirigacha bosish va avtomobilni to‘liq to‘xtaguncha tepkini qo‘yib yubormaslik",
+      "F3": "To‘xtab turish tormozi tizimini qo‘llash yo‘li bilan"
+    },
+    "options_ru": {
+      "F1": "Путем прерывистого нажатия на педаль тормоза",
+      "F2": "Путем нажатия на педаль тормоза до упора и удерживания ее до полной остановки",
+      "F3": "Путем использования стояночной тормозной системы"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 276,
+    "question_uz": "Tumanga qarshi chiroqlar va orqa tumanga qarshi chiroqlar birga yoqilishi mumkin?",
+    "question_ru": "Противотуманные фары и задние противотуманные фонари могут быть включены одновременно:",
+    "options_uz": {
+      "F1": "Cheklangan ko‘rinish sharoitida",
+      "F2": "Yetarlicha ko‘rinmaslik sharoitida"
+    },
+    "options_ru": {
+      "F1": "В условиях ограниченной видимости",
+      "F2": "В условиях недостаточной видимости"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 277,
+    "question_uz": "Yo‘l harakati qoidalari bo‘yicha «yonlama oraliq masofa»ni ko‘rsating:",
+    "question_ru": "Укажите расстояние, под которым в Правилах понимается «боковой интервал»:",
+    "options_uz": {
+      "F1": "Faqat «А»",
+      "F2": "Faqat «Б»",
+      "F3": "Faqat «В»",
+      "F4": "«А» va «В»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "Только «В»",
+      "F4": "«А» и «В»"
+    },
+    "correct_answer": "F4",
+    "image": "images/q277.jpg"
+  },
+  {
+    "id": 278,
+    "question_uz": "Ushbu ko‘rsatilgan vaziyatda sizga hovliga orqa bilan kirib qayrilib olishga ruxsat beriladimi?",
+    "question_ru": "Разрешается ли Вам выполнить разворот с заездом во двор задним ходом?",
+    "options_uz": {
+      "F1": "Har qanday hollarda ruxsat beriladi",
+      "F2": "Ruxsat beriladi agarda bunda harakatning boshqa ishtirokchilariga halaqit berilmasa",
+      "F3": "Taqiqlanadi"
+    },
+    "options_ru": {
+      "F1": "Разрешается",
+      "F2": "Разрешается, если при этом не будут созданы помехи другим участникам движения",
+      "F3": "Запрещается"
+    },
+    "correct_answer": "F2",
+    "image": "images/q278.jpg"
+  },
+  {
+    "id": 279,
+    "question_uz": "Haydovchi chapga burilishda qaysi yo‘nalish bo‘yicha qoidani buzmoqda?",
+    "question_ru": "По какой траектории водитель автомобиля нарушил правила при повороте налево:",
+    "options_uz": {
+      "F1": "Faqat «A» yo‘nalishi bo‘yicha",
+      "F2": "Faqat «B» yo‘nalishi bo‘yicha",
+      "F3": "Ko‘rsatilgan barcha yo‘nalish bo‘yicha"
+    },
+    "options_ru": {
+      "F1": "Только по траектории А",
+      "F2": "Только по траектории Б",
+      "F3": "По любой траектории из указанных"
+    },
+    "correct_answer": "F3",
+    "image": "images/q279.jpg"
+  },
+  {
+    "id": 280,
+    "question_uz": "Ko‘rsatilgan belgilardan qaysi biri yo‘lning ko‘rinish masofasi cheklangan joylarda majburan to‘xtagan transport vositalarini belgilash uchun qo‘llaniladi?",
+    "question_ru": "Какой знак используется для обозначения транспортного средства при вынужденной остановке на местах, где с учетом условий видимости, оно не может быть своевременно замечено другими водителями?",
+    "options_uz": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "options_ru": {
+      "F1": "«А»",
+      "F2": "«Б»",
+      "F3": "«В»"
+    },
+    "correct_answer": "F1",
+    "image": "images/q280.jpg"
+  },
+  {
+    "id": 281,
+    "question_uz": "Chorrahaga kirganingizda tartibga soluvchi qo‘lini yuqoriga ko‘tardi, sizga harakatlanishga ruxsat etiladimi?",
+    "question_ru": "Разрешается ли Вам продолжить движение, если регулировщик поднял руку вверх после того, как Вы въехали на перекресток?",
+    "options_uz": {
+      "F1": "Ruxsat etilmaydi",
+      "F2": "Ruxsat etiladi, agarda siz o‘ngga buriladigan bo‘lsangiz",
+      "F3": "Ruxsat etiladi"
+    },
+    "options_ru": {
+      "F1": "Не разрешается",
+      "F2": "Разрешается, только если Вы поворачиваете направо",
+      "F3": "Разрешается"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 282,
+    "question_uz": "Ko‘rsatilgan qaysi belgilar sizga yashash manzilingizga avtomobilda o‘tishga ruxsat beradi?",
+    "question_ru": "Какие знаки разрешают Вам проезд на автомобиле к месту проживания?",
+    "options_uz": {
+      "F1": "Faqat «A»",
+      "F2": "Faqat «B»",
+      "F3": "Faqat «A» va «B»",
+      "F4": "Barchasi"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "Только «А» и «B»",
+      "F4": "Все"
+    },
+    "correct_answer": "F3",
+    "image": "images/q282.jpg"
+  },
+  {
+    "id": 283,
+    "question_uz": "Qanday hollarda aholi punktlarida tovush moslamalaridan foydalanishga ruxsat etiladi?",
+    "question_ru": "В каких случаях разрешено применять звуковые сигналы в населённых пунктах?",
+    "options_uz": {
+      "F1": "Quvib o‘tishda ogohlantirish uchun",
+      "F2": "Yo‘l-transport hodisasining oldini olish uchun",
+      "F3": "Har ikkala sanab o‘tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "Только для предупреждения о намерении произвести обгон",
+      "F2": "Только для предотвращения дорожно-транспортного происшествия",
+      "F3": "В обоих перечисленных случаях"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 284,
+    "question_uz": "Yuk avtomobili haydovchisi to‘xtab turish qoidasini buzdimi?",
+    "question_ru": "Нарушил ли водитель грузового автомобиля правила парковки?",
+    "options_uz": {
+      "F1": "Buzdi",
+      "F2": "Buzmadi, agar uning ruxsat etilgan to‘liq vazni 3,5 tonnadan oshmasa",
+      "F3": "Xato qilmadi"
+    },
+    "options_ru": {
+      "F1": "Нарушил",
+      "F2": "Нарушил, если разрешенная максимальная масса автомобиля более 3,5 т",
+      "F3": "Не нарушил"
+    },
+    "correct_answer": "F1",
+    "image": "images/q284.jpg"
+  },
+  {
+    "id": 285,
+    "question_uz": "Ko‘rsatilgan yo‘l belgilaridan qaysi biri faqat yo‘l qoplamasi nam bo‘lganda ta’sir etadi?",
+    "question_ru": "Какие знаки распространяют свое действие только на период времени, когда покрытие проезжей части влажное?",
+    "options_uz": {
+      "F1": "Faqat «A»",
+      "F2": "Faqat «A» va «Б»",
+      "F3": "Barchasi"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «А» и «Б»",
+      "F3": "Все"
+    },
+    "correct_answer": "F1",
+    "image": "images/q285.jpg"
+  },
+  {
+    "id": 286,
+    "question_uz": "Yo‘lning sirpanchiq qismida rul chambaragini keskin burganda hosil bo‘ladigan sirpanishning oldini olish uchun haydovchi qanday ehtiyot choralarini ko‘rishi kerak?",
+    "question_ru": "Что следует предпринять водителю для предотвращения опасных последствий заноса автомобиля при резком повороте рулевого колеса на скользкой дороге?",
+    "options_uz": {
+      "F1": "Rul chambaragini zudlik bilan sirpanayotgan tomonga burish va tezda avtomobilni harakat yo‘nalishini to‘g‘irlab olish",
+      "F2": "Ilashmani uzish",
+      "F3": "Tormoz tepkisini bosish"
+    },
+    "options_ru": {
+      "F1": "Быстро, но плавно повернуть рулевое колесо в сторону заноса, затем опережающим воздействием на рулевое колесо выровнять траекторию движения автомобиля.",
+      "F2": "Выключить сцепление",
+      "F3": "Нажать на педаль тормоза"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 287,
+    "question_uz": "Sanab o‘tilgan qaysi holatda transport vositasidan foydalanishga ruxsat etiladi?",
+    "question_ru": "В каком случае разрешается эксплуатация транспортного средства?",
+    "options_uz": {
+      "F1": "Tashqi yoritgich asboblari ifloslangan bo‘lsa",
+      "F2": "Yorituvchi chiroq nurining yo‘nalishi buzilgan bo‘lsa",
+      "F3": "Old qismida - oq yoki sariq rangli tumanga qarshi faralar o‘rnatilgan bo‘lsa"
+    },
+    "options_ru": {
+      "F1": "Загрязнены внешние световые приборы",
+      "F2": "Нарушена регулировка фар",
+      "F3": "Спереди - установлены белые или желтые противотуманные фары"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 288,
+    "question_uz": "Transport vositalari qattiq ulagichda shatakka olinganda shatakka olgan va shatakka olingan transport vositalari orasidagi masofa qancha bo‘lishi kerak?",
+    "question_ru": "Какое расстояние должно быть обеспечено между буксирующим и буксируемым транспортными средствами при буксировке на жесткой сцепке?",
+    "options_uz": {
+      "F1": "4 metrdan oshmasligi",
+      "F2": "4 metrdan 6 metrgacha",
+      "F3": "Qoidalarda belgilanmagan"
+    },
+    "options_ru": {
+      "F1": "Не более 4 м",
+      "F2": "От 4 до 6 м",
+      "F3": "Правилами не регламентируется"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 289,
+    "question_uz": "Turar joy dahalarida qanday harakatlar taqiqlangan?",
+    "question_ru": "Какие действия запрещены в жилой зоне?",
+    "options_uz": {
+      "F1": "Faqat o‘quv mashg‘ulotlarini bajarish",
+      "F2": "Faqat dvigatel ishlab turganda to‘xtab turish",
+      "F3": "Barcha sanab o‘tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "Только учебная езда",
+      "F2": "Только стоянка с работающим двигателем",
+      "F3": "Все вышеперечисленные действия"
+    },
+    "correct_answer": "F3",
+    "image": null
+  },
+  {
+    "id": 290,
+    "question_uz": "Qaysi haydovchi to‘xtab turish qoidasini buzdi?",
+    "question_ru": "Кто из водителей нарушил правила стоянки?",
+    "options_uz": {
+      "F1": "Mototsikl haydovchisi",
+      "F2": "Trotuarda to‘xtab turgan avtomobil haydovchisi",
+      "F3": "Hech kim buzmadi"
+    },
+    "options_ru": {
+      "F1": "Только водитель мотоцикла",
+      "F2": "Только водитель автомобиля стоящий на тротуаре",
+      "F3": "Никто не нарушил"
+    },
+    "correct_answer": "F2",
+    "image": "images/q290.jpg"
+  },
+  {
+    "id": 291,
+    "question_uz": "Yo‘lda «TO‘XTASh», yozuvi ko‘rinishidagi yo‘l chizig‘i nimani bildiradi?",
+    "question_ru": "Что означает разметка в виде надписи «СТОП» на проезжей части?",
+    "options_uz": {
+      "F1": "Tartibga solingan chorrahada to‘xtash chizig‘iga yaqinlashayotganligi xaqida ogohlantiradi",
+      "F2": "To‘xtash chizig‘i va «To‘xtamasdan harakatlanish taqiqlanadi» yo‘l belgisi o‘rnatilgan yo‘l qismiga yaqinlashayotganligini bildiradi",
+      "F3": "«Yo‘l bering» yo‘l belgisiga yaqinlashayotganligini bildiradi"
+    },
+    "options_ru": {
+      "F1": "Предупреждает о приближении к стоп-линии перед регулируемым перекрестком",
+      "F2": "Предупреждает о приближении к стоп-линии и знаку «Движение без остановки запрещено»",
+      "F3": "Предупреждает о приближении к знаку «Уступите дорогу»"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 292,
+    "question_uz": "Ushbu yo‘l nechta harakatlanish bo‘lagiga ega?",
+    "question_ru": "Сколько полос движений имеет данная дорога?",
+    "options_uz": {
+      "F1": "Bitta harakatlanish bo‘lagiga",
+      "F2": "Ikkita harakatlanish bo‘lagiga",
+      "F3": "Uchta harakatlanish bo‘lagiga"
+    },
+    "options_ru": {
+      "F1": "Одну полосу для движения",
+      "F2": "Две полосы для движения",
+      "F3": "Три полосы для движения"
+    },
+    "correct_answer": "F2",
+    "image": "images/q292.jpg"
+  },
+  {
+    "id": 293,
+    "question_uz": "Ushbu belgilardan qaysi biri bir tomonlama xarakat tashkil qilingan yo‘lning boshida o‘pnatiladi?",
+    "question_ru": "Какие из этих знаков устанавливают в начале дороги с односторонним движением?",
+    "options_uz": {
+      "F1": "Faqat «A»",
+      "F2": "Faqat «Б»",
+      "F3": "«Б» va «Г»",
+      "F4": "«Б» yoki «В»"
+    },
+    "options_ru": {
+      "F1": "Только «А»",
+      "F2": "Только «Б»",
+      "F3": "«Б» и «Г»",
+      "F4": "«Б» или «В»"
+    },
+    "correct_answer": "F2",
+    "image": "images/q293.jpg"
+  },
+  {
+    "id": 294,
+    "question_uz": "Sanab o‘tilgan qaysi hollarda egiluvchan ulagichda shatakka olish taqiqlanadi?",
+    "question_ru": "В каких из перечисленных случаев запрещена буксировка на гибкой сцепке?",
+    "options_uz": {
+      "F1": "Faqat tog‘li yo‘llarda",
+      "F2": "Yo‘l yaxmalak, sirpanchiq bo‘lgan hollarda",
+      "F3": "Kunning qorong‘i vaqtida va yetarli ko‘rinmaslik sharoitida",
+      "F4": "Barcha sanab o‘tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "Только на горных дорогах",
+      "F2": "Только в гололедицу",
+      "F3": "Только в темное время суток и в условиях недостаточной видимости",
+      "F4": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F2",
+    "image": null
+  },
+  {
+    "id": 295,
+    "question_uz": "Ushbu ko‘rsatilgan holatda mototsikl haydovchisi sizga yo‘l berishi kerakmi?",
+    "question_ru": "Обязан ли мотоциклист уступить Вам дорогу в данной ситуации?",
+    "options_uz": {
+      "F1": "Yo‘q",
+      "F2": "Ha"
+    },
+    "options_ru": {
+      "F1": "Нет",
+      "F2": "Да"
+    },
+    "correct_answer": "F2",
+    "image": "images/q295.jpg"
+  },
+  {
+    "id": 296,
+    "question_uz": "Qaysi hollarda yo‘lning harakatlanish bo‘lagini ajratuvchi uzuq-uzuq chiziqni bosib o‘tish mumkin?",
+    "question_ru": "В каких случаях Вы можете наезжать на прерывистые линии разметки, разделяющие проезжую часть на полосы движения?",
+    "options_uz": {
+      "F1": "Faqat qayta tizilishda",
+      "F2": "Yo‘lda boshqa transport vositalari bo‘lmasa",
+      "F3": "Barcha sanab o‘tilgan hollarda"
+    },
+    "options_ru": {
+      "F1": "Только при перестроении",
+      "F2": "Только если на дороге нет других транспортных средств",
+      "F3": "Во всех перечисленных случаях"
+    },
+    "correct_answer": "F1",
+    "image": null
+  },
+  {
+    "id": 297,
+    "question_uz": "Siz chorrahadan chapga burilmoqchisiz. Ushbu vaziyatda kimga yo‘l berasiz?",
+    "question_ru": "Вы намерены повернуть налево. Кому следует уступить дорогу?",
+    "options_uz": {
+      "F1": "Faqat avtobusga",
+      "F2": "Faqat qizil avtomobilga",
+      "F3": "Hech kimga"
+    },
+    "options_ru": {
+      "F1": "Только автобусу",
+      "F2": "Только легковому автомобилю",
+      "F3": "Никому"
+    },
+    "correct_answer": "F3",
+    "image": "images/q297.jpg"
+  },
+  {
+    "id": 298,
+    "question_uz": "Siz chorrahadan to‘g‘riga o‘tmoqchisiz. Ushbu vaziyatda Sizning harakatingiz?",
+    "question_ru": "Вы намерены проехать перекресток в прямом направлении. Ваши действия?",
+    "options_uz": {
+      "F1": "Chorrahaga birinchi kirgan qizil avtomobilga yo‘l berish",
+      "F2": "Qizil avtomobil yo‘l berayotganiga ishonch xosil qilib chorrahadan birinchi o‘tish"
+    },
+    "options_ru": {
+      "F1": "Уступите дорогу легковому автомобилю, поскольку он первым въехал на перекресток",
+      "F2": "Убедитесь, что легковой автомобиль уступает дорогу, и проедете перекресток первым"
+    },
+    "correct_answer": "F2",
+    "image": "images/q298.jpg"
+  },
+  {
+    "id": 299,
+    "question_uz": "Ushbu joyda avtomobilni to‘xtab turish uchun qo‘yishga ruxsat etiladimi?",
+    "question_ru": "Разрешено ли водителю ставить автомо-биль на стоянку в указанном месте?",
+    "options_uz": {
+      "F1": "Ha",
+      "F2": "Yo‘q"
+    },
+    "options_ru": {
+      "F1": "Да",
+      "F2": "Нет"
+    },
+    "correct_answer": "F2",
+    "image": "images/q299.jpg"
+  },
+  {
+    "id": 300,
+    "question_uz": "Svetaforning yashil miltillovchi ishorasi nimani bildiradi?",
+    "question_ru": "Что означает мигание зеленого сигнала светофора?",
+    "options_uz": {
+      "F1": "Svetafor nosozligini",
+      "F2": "Harakatga ruxsat beradi va tez orada taqiqlovchi ishora yonishi to‘g‘risida axborot beradi",
+      "F3": "Harakatni davom ettirishni taqiqlaydi"
+    },
+    "options_ru": {
+      "F1": "Предупреждает о неисправности светофора",
+      "F2": "Разрешает движение и информирует о том, что вскоре будет включен запрещающий сигнал",
+      "F3": "Запрещает дальнейшее движение"
+    },
+    "correct_answer": "F2",
+    "image": null
+  }
+]
