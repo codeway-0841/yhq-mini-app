@@ -419,7 +419,8 @@ const DailyCard = memo(function DailyCard() {
   const questions = useQuestionsStore((s) => s.questions)
   const userId    = useAppStore((s) => s.user?.id)
   const doneKey   = useDailyStore((s) => s.doneKey)
-  const streak    = useDailyStore((s) => s.dailyStreak)
+  // Har fanning o'z streaki — boshqa fanga o'tganda shu fanga tegishli seriya ko'rinadi
+  const streak    = useDailyStore((s) => s.streaks[subject.id] ?? 0)
   const navigate  = useNavigate()
   const today     = todayStr()
 

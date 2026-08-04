@@ -1,15 +1,18 @@
 /**
- * Daily Challenge repository — `daily_records` + progress.dailyStreak.
+ * Daily Challenge repository — `daily_records` + `daily_streaks` (fan bo'yicha).
  *
- * Streak semantikasi:
+ * Streak semantikasi (har fan uchun MUSTAQIL):
  *  - lastDailyDate == bugun    → o'zgarishsiz (bir kunda qayta complete)
  *  - lastDailyDate == kecha    → streak + 1 (seriya davom etdi)
  *  - aks holda (uzilish/ilk)   → streak = 1
+ *
+ * Bir fandan boshqasiga o'tilsa, streak o'sha fanga tegishli qoladi:
+ * (user_id, subject_id) juftligi bo'yicha alohida saqlanadi.
  */
 
-import { and, eq }               from 'drizzle-orm'
-import { db }                    from '../../db/connection'
-import { dailyRecords, progress } from '../../schema'
+import { and, eq }                 from 'drizzle-orm'
+import { db }                      from '../../db/connection'
+import { dailyRecords, dailyStreaks } from '../../schema'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
 export function prevDate(date: string): string {
@@ -32,8 +35,19 @@ export interface DailyRecordRow {
   correct: number
 }
 
+/** Shu (user, subject) uchun streak qatorini o'qiydi */
+async function readStreak(userId: bigint, subjectId: string) {
+  const [row] = await db.select({
+    streak:        dailyStreaks.streak,
+    lastDailyDate: dailyStreaks.lastDailyDate,
+  }).from(dailyStreaks).where(
+    and(eq(dailyStreaks.userId, userId), eq(dailyStreaks.subjectId, subjectId)),
+  )
+  return row ?? null
+}
+
 export const dailyRepository = {
-  /** Bugungi yozuv (yo'q bo'lsa null) + joriy dailyStreak */
+  /** Bugungi yozuv (yo'q bo'lsa null) + SHU FANGA tegishli dailyStreak */
   async getToday(userId: bigint, date: string, subjectId: string): Promise<{
     record: DailyRecordRow | null
     dailyStreak: number
@@ -51,19 +65,18 @@ export const dailyRepository = {
       ),
     )
 
-    const [prog] = await db.select({ dailyStreak: progress.dailyStreak })
-      .from(progress).where(eq(progress.userId, userId))
+    const row = await readStreak(userId, subjectId)
 
-    return { record: record ?? null, dailyStreak: prog?.dailyStreak ?? 0 }
+    return { record: record ?? null, dailyStreak: row?.streak ?? 0 }
   },
 
   /**
    * Kunlik topshiriq yakuni. Idempotent: bir xil (user,date,subject) juftligini
    * qayta yuborsa natijalar yangilanadi, streak esa faqat sana o'zgarsa hisoblanadi.
-   * Yangilangan dailyStreak qaytaradi.
+   * Yangilangan (shu fanga tegishli) dailyStreak qaytaradi.
    *
    * Eslatma: neon-http driver tranzaksiyani qo'llamaydi — ketma-ket 3 so'rov
-   * (upsert → read → update). Bir foydalanuvchi bir vaqtda 2 qurilmadan
+   * (upsert → read → upsert). Bir foydalanuvchi bir vaqtda 2 qurilmadan
    * complete qilishi ehtimoli past, streak drifti esa eng yomon holatda ±1.
    */
   async complete(
@@ -80,20 +93,16 @@ export const dailyRepository = {
         set:    { answered, correct, completedAt: new Date() },
       })
 
-    // 2) Streak — progress qatorini o'qib, JS'da yangi qiymat aniqlanadi
-    const [prog] = await db.select({
-      dailyStreak:   progress.dailyStreak,
-      lastDailyDate: progress.lastDailyDate,
-    }).from(progress).where(eq(progress.userId, userId))
+    // 2) Streak — shu fanning qatorini o'qib, JS'da yangi qiymat aniqlanadi
+    const cur = await readStreak(userId, subjectId)
+    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0)
 
-    const cur = prog ?? { dailyStreak: 0, lastDailyDate: null as string | null }
-    const nextStreak = calcNextStreak(cur.lastDailyDate, date, cur.dailyStreak)
-
-    await db.update(progress).set({
-      dailyStreak:   nextStreak,
-      lastDailyDate: date,
-      updatedAt:     new Date(),
-    }).where(eq(progress.userId, userId))
+    await db.insert(dailyStreaks).values({
+      userId, subjectId, streak: nextStreak, lastDailyDate: date,
+    }).onConflictDoUpdate({
+      target: [dailyStreaks.userId, dailyStreaks.subjectId],
+      set:    { streak: nextStreak, lastDailyDate: date, updatedAt: new Date() },
+    })
 
     return { dailyStreak: nextStreak }
   },

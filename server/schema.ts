@@ -29,9 +29,9 @@ export const progress = pgTable('progress', {
   totalAnswered: integer('total_answered').default(0).notNull(),
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
-  /** Kunlik topshiriq seriyasi (ketma-ket bajarilgan KUNLAR soni) */
+  /** @deprecated Streak endi `daily_streaks` jadvalida (fan bo'yicha). Ustun eski migratsiyalar bilan moslik uchun saqlanadi. */
   dailyStreak:   integer('daily_streak').default(0).notNull(),
-  /** Oxirgi kunlik topshiriq bajarilgan sana — 'YYYY-MM-DD' (client local) */
+  /** @deprecated `daily_streaks.last_daily_date` ishlatiladi */
   lastDailyDate: text('last_daily_date'),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
@@ -89,8 +89,26 @@ export const analyticsEvents = pgTable('analytics_events', {  id:        serial(
 ])
 
 /**
+ * Kunlik topshiriq seriyasi — HAR BIR FAN UCHUN ALOHIDA.
+ * (user_id, subject_id) juftligi bo'yicha bitta qator: o'sha fanning
+ * ketma-ket bajarilgan kunlari soni va oxirgi bajarilgan sana.
+ */
+export const dailyStreaks = pgTable('daily_streaks', {
+  id:            serial('id').primaryKey(),
+  userId:        bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  subjectId:     text('subject_id').notNull(),
+  /** Shu fan bo'yicha ketma-ket bajarilgan kunlar soni */
+  streak:        integer('streak').default(0).notNull(),
+  /** Shu fan bo'yicha oxirgi kunlik topshiriq sanasi — 'YYYY-MM-DD' (client local) */
+  lastDailyDate: text('last_daily_date'),
+  updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  unique('uq_daily_streak').on(t.userId, t.subjectId),
+])
+
+/**
  * Kunlik topshiriq yozuvlari — har kun + fan uchun bitta qator.
- * dailyStreak hisoblash `progress` jadvalida (lastDailyDate asosida),
+ * dailyStreak hisoblash `daily_streaks` jadvalida (lastDailyDate asosida),
  * bu jadval esa tarix/kunlik statistika uchun.
  */
 export const dailyRecords = pgTable('daily_records', {
