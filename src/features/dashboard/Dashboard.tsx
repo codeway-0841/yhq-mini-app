@@ -238,7 +238,7 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
           <img src={CONTINUE_BG_URL} alt="" aria-hidden
             onError={() => setBgOk(false)}
             style={{ mixBlendMode: 'screen' }}
-            className="absolute -right-2 -bottom-2 h-[110%] object-contain pointer-events-none select-none" />
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[140%] object-contain pointer-events-none select-none" />
         )}
         <div className="relative">
           {/* Sarlavha */}
@@ -359,19 +359,33 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
 })
 
 // ── Subject Switcher — mock dizayn: navy karta + fan ikoni + testlar soni ──
+// Fan rasmlari: `public/fan-{subjectId}.png` (masalan, fan-matematika.png) —
+// fayl mavjud bo'lsa o'ng tomonda ko'rinadi, bo'lmasa watermark ikon qoladi.
 const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
   const subject = useSubjectStore((s) => s.subject)
   const lang    = useAppStore((s) => s.settings.language)
   const count   = useQuestionsStore((s) => s.questions.length)
   const tt      = useT(lang)
   const Icon    = subject.icon
+  const [imgOk, setImgOk] = useState(true)
+  useEffect(() => setImgOk(true), [subject.id]) // fan almashganda qayta urinib ko'rish
+  const imgUrl = `/fan-${subject.id}.png`
   return (
     <div className="px-4 mb-2.5">
       <div className="card-neon relative overflow-hidden p-4">
-        {/* Dekorativ watermark ikon — o'ng burchak (mock'dagi 3D illyustratsiya o'rnida) */}
-        <Icon size={110} strokeWidth={1.2} aria-hidden
-          className="absolute -right-4 -bottom-6 opacity-[0.08] pointer-events-none"
-          style={{ color: subject.color }} />
+        {/* O'ng taraf: fan rasmi (masalan, Matematika Σ) */}
+        {imgOk && (
+          <img src={imgUrl} alt="" aria-hidden
+            onError={() => setImgOk(false)}
+            style={{ mixBlendMode: 'screen' }}
+            className="absolute -right-3 top-1/2 -translate-y-1/2 h-[130%] object-contain pointer-events-none select-none" />
+        )}
+        {/* Rasm bo'lmasa: dekorativ watermark ikon */}
+        {!imgOk && (
+          <Icon size={110} strokeWidth={1.2} aria-hidden
+            className="absolute -right-4 -bottom-6 opacity-[0.08] pointer-events-none"
+            style={{ color: subject.color }} />
+        )}
         <div className="relative flex items-center gap-3.5">
           <span className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
             style={{ background: `${subject.color}1a`, border: `1px solid ${subject.color}55`, boxShadow: `0 0 20px ${subject.color}55` }}>
