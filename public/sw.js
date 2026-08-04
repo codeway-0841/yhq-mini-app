@@ -8,7 +8,7 @@
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
-const CACHE = 'yhq-app-v2'
+const CACHE = 'yhq-app-v3'
 
 const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||
@@ -17,8 +17,6 @@ const isStaticAsset = (path) =>
 
 const isQuestionData = (path) =>
   path.startsWith('/api/questions') || path.startsWith('/api/topics')
-
-const CACHE = 'yhq-app-v3'
 
 // Vercel `/` va `/index.html` ni `Cache-Control: no-store` bilan beradi —
 // Cache API no-store javobni SAQLASHNI RAD ETADI (TypeError → shell hech qachon

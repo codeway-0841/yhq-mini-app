@@ -216,9 +216,9 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
 })
 
 // ── Davom etayotgan mavzu kartasi (mock dizayn: navy karta + yashil CTA) ────
-// Background PNG: faylni `public/continue-mavzu.png` ga tashlasangiz kifoya —
+// Background rasm: faylni `public/continue-mavzu.webp` ga tashlasangiz kifoya —
 // karta unga avtomatik ulanadi (fayl bo'lmasa hech narsa buzilmaydi).
-const CONTINUE_BG_URL = '/continue-mavzu.png'
+const CONTINUE_BG_URL = '/continue-mavzu.webp'
 
 const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progressPct, allDone, lang, onContinue }: {
   modTitle: string
@@ -359,7 +359,7 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
 })
 
 // ── Subject Switcher — mock dizayn: navy karta + fan ikoni + testlar soni ──
-// Fan rasmlari: `public/fan-{subjectId}.png` (masalan, fan-matematika.png) —
+// Fan rasmlari: `public/fan-{subjectId}.webp` (masalan, fan-matematika.webp) —
 // fayl mavjud bo'lsa o'ng tomonda ko'rinadi, bo'lmasa watermark ikon qoladi.
 const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
   const subject = useSubjectStore((s) => s.subject)
@@ -369,7 +369,7 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
   const Icon    = subject.icon
   const [imgOk, setImgOk] = useState(true)
   useEffect(() => setImgOk(true), [subject.id]) // fan almashganda qayta urinib ko'rish
-  const imgUrl = `/fan-${subject.id}.png`
+  const imgUrl = `/fan-${subject.id}.webp`
   return (
     <div className="px-4 mb-2.5">
       <div className="card-neon relative overflow-hidden p-4">
