@@ -5,8 +5,8 @@ import {
   Settings,
   Play, Swords, ListChecks, GraduationCap,
   Bookmark, Hash, Signpost,
-  Ticket, LayoutGrid, ClipboardCheck, ShieldAlert,
-  Heart, ChevronDown, Sparkles,
+  Ticket, ClipboardCheck, ShieldAlert,
+  ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
@@ -131,72 +131,6 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   )
 })
 
-// ── Quick Action Buttons (Barcha testlar / Xatolarni tuzatish) ──────────────
-const QuickActions = memo(function QuickActions({ mistakesCount, lang, onAllTests, onFixMistakes }: {
-  mistakesCount: number; lang: 'uz' | 'ru'; onAllTests: () => void; onFixMistakes: () => void
-}) {
-  const tt = useT(lang)
-  return (
-    <div className="grid grid-cols-2 gap-2.5 px-4 mb-2.5">
-      <button onClick={onAllTests}
-        className="btn-3d-ghost flex items-center gap-2.5 rounded-2xl px-3 py-2.5">
-        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#1cb0f626' }}>
-          <ListChecks size={19} className="text-duo-blue" strokeWidth={2.2} />
-        </span>
-        <span className="text-[13px] font-extrabold text-fg">{tt('allTests')}</span>
-      </button>
-      <button onClick={onFixMistakes}
-        className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-2.5">
-        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: '#ff4b4b26' }}>
-          <Heart size={19} className="text-duo-red" strokeWidth={2.2} />
-        </span>
-        <span className="text-[13px] font-extrabold text-fg">{tt('fixMistakes')}</span>
-        {mistakesCount > 0 && (
-          <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold min-w-[20px] h-5 px-1.5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
-            {mistakesCount}
-          </span>
-        )}
-      </button>
-    </div>
-  )
-})
-
-// ── Feature Card (Darslik / Test yechish / Oktagon) ─────────────────────────
-// wide (Darslik): har doim gorizontal — matn chap, oq doira-ikonka o'ngda.
-// narrow (Test/Oktagon): mobil vertikal (ikonka yuqori-chap), lg gorizontal.
-const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgColor, shadowColor, iconColor, wide, onClick }: {
-  icon: React.ElementType
-  label: string
-  subtitle: string
-  bgColor: string
-  shadowColor: string
-  iconColor: string
-  wide?: boolean
-  onClick: () => void
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`btn-3d relative overflow-hidden rounded-3xl w-full ${
-        wide
-          ? 'flex flex-row items-center justify-between gap-3 p-3.5 min-h-[84px] text-left'
-          : 'flex flex-col items-start gap-0.5 p-3 min-h-[128px] text-left lg:flex-row lg:items-center lg:justify-between lg:gap-2 lg:min-h-[112px]'
-      }`}
-      style={{ background: bgColor, '--btn-3d-shadow': shadowColor } as React.CSSProperties}
-    >
-      <div className={`w-10 h-10 lg:w-11 lg:h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 relative z-10 ${
-        wide ? 'order-2' : 'lg:order-2 mb-1.5'
-      }`}>
-        <Icon size={21} style={{ color: iconColor }} strokeWidth={2.4} />
-      </div>
-      <div className={`relative z-10 min-w-0 ${wide ? 'order-1' : 'lg:order-1'}`}>
-        <p className="text-[14px] lg:text-[15px] font-black text-white leading-tight">{label}</p>
-        <p className="text-xs font-semibold text-white/85 mt-1 leading-snug line-clamp-2">{subtitle}</p>
-      </div>
-    </button>
-  )
-})
-
 // ── Grid Card ───────────────────────────────────────────────────────────────
 const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--theme-fg-subtle)', onClick }: {
   icon: React.ElementType
@@ -220,6 +154,38 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-extrabold text-fg text-left leading-tight">{label}</span>
+    </button>
+  )
+})
+
+// ── Mock Grid Card (v1.1: glow icon + label + subtitle, mock usilobi) ───────
+const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor, badge, comingSoon, onClick }: {
+  icon: React.ElementType
+  label: string
+  subtitle: string
+  iconColor: string
+  badge?: number | null
+  comingSoon?: boolean
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`card-neon relative flex flex-col items-start gap-2 p-3 min-h-[96px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
+    >
+      {badge != null && (
+        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+          {badge}
+        </span>
+      )}
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: iconColor + '26', boxShadow: `0 0 18px ${iconColor}66`, border: `1px solid ${iconColor}55` }}>
+        <Icon size={19} strokeWidth={2.2} style={{ color: iconColor }} />
+      </div>
+      <div className="text-left">
+        <p className="text-[13px] font-black text-fg leading-tight">{label}</p>
+        <p className={`text-[10.5px] font-semibold mt-0.5 ${comingSoon ? 'text-neon-violet' : 'text-subtle'}`}>{subtitle}</p>
+      </div>
     </button>
   )
 })
@@ -499,59 +465,36 @@ export default function Dashboard() {
         onSeeAll={goTopics}
       />
 
-      {/* Barcha testlar + Xatolarni tuzatish */}
-      <QuickActions
-        mistakesCount={mistakesCount}
-        lang={settings.language}
-        onAllTests={goTest}
-        onFixMistakes={goMistakes}
-      />
-
-      {/* Feature row: HERO = Adaptive (asosiy harakat), ostida Darslik + Oktagon.
-          Mobil: hero to'liq kenglik; lg: hero + 2 kichik (1.6fr 1fr 1fr) */}
-      <div className="grid grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr] gap-2.5 px-4 mb-2.5">
-        <div className="col-span-2 lg:col-span-1">
-          <FeatureCard
-            wide
-            icon={Play}
-            label={tt('adaptive')}
-            subtitle={tt('adaptiveDesc')}
-            bgColor="linear-gradient(135deg, #58cc02, #46a302)"
-            shadowColor="#3f9202"
-            iconColor="#58cc02"
-            onClick={goAdaptive}
-          />
-        </div>
-        <FeatureCard
-          icon={GraduationCap}
-          label={tt('lessons')}
-          subtitle={tt('darslikDesc')}
-          bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
-          shadowColor="#1589c0"
-          iconColor="#1cb0f6"
-          onClick={goDarslik}
-        />
-        <FeatureCard
-          icon={Swords}
-          label={tt('octagon')}
-          subtitle={tt('octagonTitle')}
-          bgColor="linear-gradient(135deg, #a78bfa, #8b5cf6)"
-          shadowColor="#7c3aed"
-          iconColor="#a78bfa"
-          onClick={goOctagon}
-        />
+      {/* v1.1 MOCK GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
+      <div className="grid grid-cols-3 gap-2.5 px-4 mb-3">
+        <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
+          subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
+          iconColor="#58cc02" onClick={goTest} />
+        <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
+          iconColor="#38bdf8" onClick={goTopics} />
+        <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
+          iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
+        <MockGridCard icon={HeartCrack} label={tt('fixMistakes')} subtitle={tt('mistakesDesc')}
+          iconColor="#ff4b4b" badge={mistakesCount || null} onClick={goMistakes} />
+        <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
+          iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
+        <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
+          iconColor="#38bdf8" onClick={goOctagon} />
       </div>
 
-      {/* Feature grid — bitta grid: mobil 2 ustun, lg 3 ustun (bo'sh joy yo'q) */}
+      {/* Rejimlar (funksiyalar saqlangan) */}
+      <div className="px-4 mb-1.5">
+        <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em]">{tt('modesTitle')}</p>
+      </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-3">
-        <GridCard icon={LayoutGrid}    label={tt('topics')}   iconColor="#ce82ff" onClick={goTopics} />
-        <GridCard icon={Ticket}        label={tt('tickets')}  iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
-        <GridCard icon={ListChecks}    label={tt('fifty')}    iconColor="#58cc02" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-        <GridCard icon={ClipboardCheck} label={tt('realExam')} iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
+        <GridCard icon={ListChecks}    label={tt('fifty')}       iconColor="#58cc02" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
+        <GridCard icon={ClipboardCheck} label={tt('realExam')}    iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
         <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={GraduationCap} label={tt('lessons')}     iconColor="#1cb0f6" onClick={goDarslik} />
         <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
-        <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#1cb0f6" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
+        <GridCard icon={Signpost}      label={tt('roadSigns')}   iconColor="#38bdf8" onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Hash}          label={tt('numeric')}     iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
+        <GridCard icon={Play}          label={tt('adaptive')}    iconColor="#a78bfa" onClick={goAdaptive} />
       </div>
 
       {/* Reyting top-3 preview (v1.1) */}

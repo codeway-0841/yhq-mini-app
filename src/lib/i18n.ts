@@ -15,6 +15,11 @@ const UZ = {
   greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
   continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
   streakConsec: "Ketma-ket", dailyTask: "Kunlik mashq", dailyTaskDesc: "10 ta maxsus savolni yeching",
+  // v1.1 Mock grid
+  testlarTitle: "Testlar", aiTutor: "AI Tutor", comingSoonD: "Tez orada",
+  allTopicsDesc: "Barcha mavzular", mistakesDesc: "Xato ustida ishlash",
+  officialTickets: "Rasmiy biletlar", duelTitle: "Duel", duelDesc: "Do'st bilan duel",
+  modesTitle: "Rejimlar",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -96,6 +101,11 @@ const RU: Record<Keys, string> = {
   greeting: "Привет", level: "Уровень", overallProgress: "Общий прогресс",
   continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
   streakConsec: "Подряд", dailyTask: "Ежедневная тренировка", dailyTaskDesc: "Решите 10 специальных вопросов",
+  // v1.1 Mock grid
+  testlarTitle: "Тесты", aiTutor: "AI Tutor", comingSoonD: "Скоро",
+  allTopicsDesc: "Все темы", mistakesDesc: "Работа с ошибками",
+  officialTickets: "Официальные билеты", duelTitle: "Дуэль", duelDesc: "Дуэль с другом",
+  modesTitle: "Режимы",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",
