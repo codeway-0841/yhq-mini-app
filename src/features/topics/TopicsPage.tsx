@@ -41,6 +41,83 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 /** Bitta dars qatori holati (Darslik qoidasi: oldingi dars tugallanmagan — keyingisi quful) */
 type LessonState = 'done' | 'active' | 'locked'
 
+/** ── Per-lesson test algoritmi ───────────────────────────────────────────────
+ * Muammo: modul testi (masalan "Chorrahalar" moduli) ichida maxsus dars
+ * (masalan "Tramvay ustuvorligi") uchun ALLOHIDA test kerak.
+ *
+ * Yechim (3 bosqich):
+ *   1. Modul DB mavzularining savollar pool'ini olamiz
+ *   2. THESHOLD: kalit so'zlar (dars sarlavhasidan + qo'lda aliaslar berilgan
+ *      sevimli darslarga) orqali FILTR — "tramvay", "ustuvorlik" kabi
+ *   3. FILTER 10'ta savolga yetmasa → qolganini modul poolidan to'ldiramiz
+ *      (boshqa modul savollari ARALASHMAYDI — dars-bobliq saqlanadi)
+ *
+ * Aliaslar: faqat kam-question asosiy darslar uchun aniq kalitlar; qolgan darslar
+ * sarlavha so'zlaridan avtomatik kalitlar olinadi. */
+
+/** Qo'lda aliaslar — buhimtsiz maxsus darslar uchun "${modId}:${darsIdx}" */
+const LESSON_ALIAS: Record<string, { uz: string[]; ru: string[] }> = {
+  '2:3': { uz: ['tramvay', 'ustuvorlik'], ru: ['трамвай', 'приоритет'] },
+  '5:0': { uz: ['maxsus signal', 'militsiya', 'pojar'], ru: ['спецсигнал', 'милиц'] },
+  '5:2': { uz: ['temir yo\'l', 'shlagbaum', 'rovod'], ru: ['железнодорож', 'шлагбаум'] },
+  '5:4': { uz: ['sirpanchiq', 'muzlama', 'qor'], ru: ['скользк', 'гололед', 'снег'] },
+  '5:5': { uz: ['yomg\'ir', 'tuman', 'chiroq', 'fara'], ru: ['дождь', 'туман', 'фар'] },
+  '6:0': { uz: ['aholi punkti', '50 km', 'shaharda'], ru: ['населенн', 'город'] },
+  '7:1': { uz: ['bolalar', 'maktab', 'o\'rganuvchi'], ru: ['детей', 'школ', 'учащ'] },
+}
+
+/** Sarlavhadan keywords: uzun so'zlarni olamiz (stopword'siz) */
+function titleKeywords(text: string): string[] {
+  return text
+    .toLowerCase()
+    .replace(/[()-]/g, ' ')
+    .split(/\s+/)
+    .filter((w) => w.length >= 5)
+    .slice(0, 4)
+}
+
+/** Kengaytirilgan keyword set (title + alias, lang bo'yicha) */
+function lessonKeywords(modId: number, idx: number, lesson: { titleUz: string; titleRu: string }, lang: 'uz' | 'ru'): string[] {
+  const key = `${modId}:${idx}`
+  const alias = LESSON_ALIAS[key]?.[lang] ?? []
+  const title = lang === 'ru' ? lesson.titleRu : lesson.titleUz
+  return [...new Set([...titleKeywords(title), ...alias])]
+}
+
+/** Darsga mos savollar tanlash — kalit so'z match + fallback (modul pooli) */
+function questionsForLesson(modId: number, idx: number, pool: { id: number; text: string }[], lesson: { titleUz: string; titleRu: string }, lang: 'uz' | 'ru'): number[] {
+  const kws = lessonKeywords(modId, idx, lesson, lang)
+  const matched = kws.length === 0
+    ? []
+    : pool.filter((q) => {
+        const txt = q.text.toLowerCase()
+        return kws.some((k) => txt.includes(k))
+      })
+
+  const target = 10
+  const chosen: { id: number; text: string }[] = []
+  const seen = new Set<number>()
+
+  // Avval kalit-mos savollar (deterministik: tartibsiz ID boyicha, lekin stabil)
+  const sortedMatched = [...matched].sort((a, b) => a.id - b.id)
+  for (const q of sortedMatched) {
+    if (chosen.length >= target) break
+    chosen.push(q)
+    seen.add(q.id)
+  }
+
+  // Agar yetishmasa — modul poolidan to'ldir (BOSHQA modul SAVOLLARI KIRMAYDI)
+  const rest = pool.filter((q) => !seen.has(q.id))
+  const restShuffled = seededShuffle(rest, modId * 7919 + idx * 31)
+  for (const q of restShuffled) {
+    if (chosen.length >= target) break
+    chosen.push(q)
+  }
+
+  return chosen.slice(0, target).map((q) => q.id)
+}
+
+
 function ModuleCard({ mod, lessonsList, doneIdx, lang, open, onToggle, onLesson }: {
   mod: typeof modules[number]
   lessonsList: { titleUz: string; titleRu: string }[]
@@ -148,16 +225,22 @@ export default function TopicsPage() {
     navigate('/test/1', { state: { questionIds: ids, title: tt('fixMistakes') } })
   }
 
-  /** Dars → MAVZU TESTI: shu modulning mavzu savollaridan deterministik 10 ta.
-      Seed = modId*1000 + darsIdx — har dars uchun savollar TURLICHA, ammo stabil. */
+  /** Dars → MAVZU TESTI: dars-bobliq — kalit so'z match + modul pooli fallback */
   const startLesson = (modId: number, idx: number) => {
     const slugs    = MODULE_TOPICS[modId] ?? []
     const topicIds = storeTopics.filter((t) => slugs.includes(t.slug)).map((t) => t.id)
     const pool     = questions.filter((q) => q.topicId != null && topicIds.includes(q.topicId))
-    if (pool.length === 0) return   // bo'sh modul — hozircha test yo'q
-    const sample = seededShuffle(pool, modId * 1000 + idx * 73).slice(0, Math.min(10, pool.length))
+    const lesson   = lessonsData[modId]?.[idx]
+    if (pool.length === 0 || !lesson) return
+
+    // Darsning haqiqiy sarlavhasi — test nomi shunda bo'lsin
+    const lessonTitle = lang === 'ru' ? lesson.titleRu : lesson.titleUz
+
+    const ids = questionsForLesson(modId, idx, pool, lesson, lang)
+    if (ids.length === 0) return
+
     navigate('/test/1', {
-      state: { questionIds: sample.map((q) => q.id), title: `${idx + 1}-dars — ${tt('topicTest')}` },
+      state: { questionIds: ids, title: `${idx + 1}-dars: ${lessonTitle}` },
     })
   }
 
