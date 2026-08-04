@@ -9,6 +9,35 @@ import { lessons as lessonsData } from '../../data/lessons'
 import { goBack } from '../../lib/navigation'
 import { HeartCrack, Lock, Play, Check } from 'lucide-react'
 
+/** Darslik moduli → DB mavzu slug'lari (darsga mos SAVOLLAR topish uchun) */
+const MODULE_TOPICS: Record<number, string[]> = {
+  1: ['yol-belgilari', 'yol-chiziqlari'],
+  2: ['chorrahalar'],
+  3: ['toxtatish-va-turish'],
+  4: ['manyovr', 'quvib-otish', 'signallar'],
+  5: ['temir-yol', 'yuk-tashish', 'yolovchi-tashish', 'shatakka-olish', 'avtomagistral', 'sirpanchiq-yol'],
+  6: ['tezlik'],
+  7: ['piyodalar'],
+  8: ['birinchi-tibbiy-yordam', 'texnik-holat', 'yoritish', 'haydovchi-majburiyatlari'],
+}
+
+/** Deterministik shuffle — har dars uchun savollar TURLICHA, lekin har qayta kirishda bir xil */
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const a = [...arr]
+  let s = seed
+  const rnd = () => {
+    s |= 0; s = (s + 0x6D2B79F5) | 0
+    let t = Math.imul(s ^ (s >>> 15), 1 | s)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1))
+    ;[a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 /** Bitta dars qatori holati (Darslik qoidasi: oldingi dars tugallanmagan — keyingisi quful) */
 type LessonState = 'done' | 'active' | 'locked'
 
@@ -101,7 +130,7 @@ export default function TopicsPage() {
   const navigate = useNavigate()
   const { settings, wrongByTicket, user } = useAppStore()
   const tt = useT(settings.language)
-  const { questions } = useQuestionsStore()
+  const { questions, topics: storeTopics } = useQuestionsStore()
   const lang = settings.language
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
@@ -119,9 +148,17 @@ export default function TopicsPage() {
     navigate('/test/1', { state: { questionIds: ids, title: tt('fixMistakes') } })
   }
 
-  /** Darsga o'tish — Darslik sahifasida shu dars avtomatik ochiladi */
+  /** Dars → MAVZU TESTI: shu modulning mavzu savollaridan deterministik 10 ta.
+      Seed = modId*1000 + darsIdx — har dars uchun savollar TURLICHA, ammo stabil. */
   const startLesson = (modId: number, idx: number) => {
-    navigate('/darslik', { state: { moduleId: modId, lessonIdx: idx } })
+    const slugs    = MODULE_TOPICS[modId] ?? []
+    const topicIds = storeTopics.filter((t) => slugs.includes(t.slug)).map((t) => t.id)
+    const pool     = questions.filter((q) => q.topicId != null && topicIds.includes(q.topicId))
+    if (pool.length === 0) return   // bo'sh modul — hozircha test yo'q
+    const sample = seededShuffle(pool, modId * 1000 + idx * 73).slice(0, Math.min(10, pool.length))
+    navigate('/test/1', {
+      state: { questionIds: sample.map((q) => q.id), title: `${idx + 1}-dars — ${tt('topicTest')}` },
+    })
   }
 
   return (
