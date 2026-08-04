@@ -386,25 +386,19 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
             className="absolute -right-4 -bottom-6 opacity-[0.08] pointer-events-none"
             style={{ color: subject.color }} />
         )}
-        <div className="relative flex items-center gap-3.5">
-          <span className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
-            style={{ background: `${subject.color}1a`, border: `1px solid ${subject.color}55`, boxShadow: `0 0 20px ${subject.color}55` }}>
-            <Icon size={26} strokeWidth={2.2} style={{ color: subject.color }} />
-          </span>
-          <div className="flex-1 min-w-0">
-            <p className="text-[20px] font-black text-fg leading-tight truncate">
-              {lang === 'ru' ? subject.nameRu : subject.name}
-            </p>
-            <p className="text-[12px] font-semibold text-subtle mt-0.5">
-              {count > 0 ? count.toLocaleString('en-US') : '…'} {tt('testsWord')}
-            </p>
-            <button onClick={onOpen}
-              className="mt-2.5 flex items-center gap-1 rounded-full border border-line bg-elevated px-3.5 py-1.5 text-[12px] font-bold text-fg active:scale-95 transition-transform"
-              aria-label={tt('switchSubject')}>
-              {tt('switchSubject')}
-              <ChevronDown size={14} className="-rotate-90 text-subtle" />
-            </button>
-          </div>
+        <div className="relative">
+          <p className="text-[20px] font-black text-fg leading-tight truncate pr-24">
+            {lang === 'ru' ? subject.nameRu : subject.name}
+          </p>
+          <p className="text-[12px] font-semibold text-subtle mt-0.5">
+            {count > 0 ? count.toLocaleString('en-US') : '…'} {tt('testsWord')}
+          </p>
+          <button onClick={onOpen}
+            className="mt-2.5 flex items-center gap-1 rounded-full border border-line bg-elevated px-3.5 py-1.5 text-[12px] font-bold text-fg active:scale-95 transition-transform"
+            aria-label={tt('switchSubject')}>
+            {tt('switchSubject')}
+            <ChevronDown size={14} className="-rotate-90 text-subtle" />
+          </button>
         </div>
       </div>
     </div>
