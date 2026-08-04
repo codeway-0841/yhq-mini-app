@@ -111,28 +111,28 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
           </svg>
         )}
       </div>
-      {/* Pastki: streak / XP / Liga — RAQAM+label chapda, ICON o'ngda */}
+      {/* Pastki: streak / XP / Liga — ICON chapda (mock'dagi kabi), RAQAM o'ngda */}
       <div className="flex items-center justify-around mt-3.5 pt-3">
         <div className="flex items-center gap-1.5">
+          <span className="text-base">🔥</span>
           <div className="text-left">
             <p className="text-sm font-black text-fg leading-none">{streak}</p>
             <p className="text-[10px] text-subtle">{tt('streakConsec')}</p>
           </div>
-          <span className="text-base">🔥</span>
         </div>
         <div className="flex items-center gap-1.5">
+          <span className="text-base">⭐</span>
           <div className="text-left">
             <p className="text-sm font-black text-fg leading-none">{xp}</p>
             <p className="text-[10px] text-subtle">XP</p>
           </div>
-          <span className="text-base">⭐</span>
         </div>
         <div className="flex items-center gap-1.5">
+          <span className="text-base">🏆</span>
           <div className="text-left">
             <p className="text-sm font-black text-fg leading-none">{league}</p>
             <p className="text-[10px] text-subtle">{tt('league')}</p>
           </div>
-          <span className="text-base">🏆</span>
         </div>
       </div>
     </div>
@@ -520,7 +520,7 @@ export default function Dashboard() {
           iconColor="#38bdf8" onClick={goTopics} />
         <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
           iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-        <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakesDesc')}
+        <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
           iconColor="#ff4b4b" badge={mistakesCount || null} onClick={goMistakes} />
         <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
           iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
