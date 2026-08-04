@@ -377,7 +377,6 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
         {imgOk && (
           <img src={imgUrl} alt="" aria-hidden
             onError={() => setImgOk(false)}
-            style={{ mixBlendMode: 'screen' }}
             className="absolute -right-3 top-1/2 -translate-y-1/2 h-[130%] object-contain pointer-events-none select-none" />
         )}
         {/* Rasm bo'lmasa: dekorativ watermark ikon */}
