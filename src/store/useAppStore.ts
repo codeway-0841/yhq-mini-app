@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { api, type ApiUser, type ApiProgress, type ApiSettings } from '@/lib/api'
+import { useSubjectStore } from './useSubjectStore'
+import { todayStr } from './useDailyStore'
 
 export type { ApiUser, ApiProgress, ApiSettings }
 
@@ -95,6 +97,8 @@ export const useAppStore = create<AppState>()(
       addResult: (correct, questionId?) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
+        // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
+        const wasWrong = correct && questionId != null && (get().wrongByTicket[questionId] ?? 0) > 0
         set((s) => ({
           totalCorrect:  s.totalCorrect  + (correct ? 1 : 0),
           totalWrong:    s.totalWrong    + (correct ? 0 : 1),
@@ -111,7 +115,15 @@ export const useAppStore = create<AppState>()(
               : { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
             : s.wrongByTicket,
         }))
-        if (userId && userId !== '0') api.postResult(userId, correct, questionId).catch(console.error)
+        if (userId && userId !== '0') {
+          api.postResult(userId, correct, questionId).catch(console.error)
+          if (wasWrong) {
+            api.addDailyFix(userId, {
+              date:      todayStr(),
+              subjectId: useSubjectStore.getState().subjectId,
+            }).catch(console.error)
+          }
+        }
       },
 
       resetProgress: () => {

@@ -5,12 +5,13 @@
  *  - lastDailyDate == bugun    → o'zgarishsiz (bir kunda qayta complete)
  *  - lastDailyDate == kecha    → streak + 1 (seriya davom etdi)
  *  - aks holda (uzilish/ilk)   → streak = 1
+ *  - O'qishda: oxirgi sana kechadan ham eski bo'lsa → 0 (kun o'tkazilgan)
  *
  * Bir fandan boshqasiga o'tilsa, streak o'sha fanga tegishli qoladi:
  * (user_id, subject_id) juftligi bo'yicha alohida saqlanadi.
  */
 
-import { and, eq }                 from 'drizzle-orm'
+import { and, asc, eq, sql } from 'drizzle-orm'
 import { db }                      from '../../db/connection'
 import { dailyRecords, dailyStreaks } from '../../schema'
 
@@ -28,11 +29,36 @@ export function calcNextStreak(lastDailyDate: string | null, date: string, curre
   return 1                                                    // uzilishdan keyin qayta boshlash
 }
 
+/**
+ * O'qishdagi streak: bir kun o'tkazib yuborilsa 0 ko'rsatadi (bazani yozmaydi —
+ * keyingi complete'da calcNextStreak o'zi 1 dan qayta boshlaydi).
+ */
+export function effectiveStreak(lastDailyDate: string | null, today: string, current: number): number {
+  if (!lastDailyDate) return 0
+  if (lastDailyDate < prevDate(today)) return 0  // kamida 1 kun o'tkazilgan
+  return current
+}
+
+/** Sanalar ro'yxatidagi eng uzun ketma-ket kunlar seriyasi (saralangan, unikal) */
+export function calcBestStreak(dates: string[]): number {
+  let best = 0, run = 0, prev = ''
+  for (const d of dates) {
+    run = (prev && prevDate(d) === prev) ? run + 1 : 1
+    if (run > best) best = run
+    prev = d
+  }
+  return best
+}
+
 export interface DailyRecordRow {
   date: string
   subjectId: string
   answered: number
   correct: number
+}
+
+export interface DailyHistoryRow extends DailyRecordRow {
+  fixed: number
 }
 
 /** Shu (user, subject) uchun streak qatorini o'qiydi */
@@ -67,7 +93,54 @@ export const dailyRepository = {
 
     const row = await readStreak(userId, subjectId)
 
-    return { record: record ?? null, dailyStreak: row?.streak ?? 0 }
+    return {
+      record:      record ?? null,
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0),
+    }
+  },
+
+  /**
+   * Shu fanga tegishli barcha kunlik yozuvlar (sana bo'yicha o'suvchi) +
+   * joriy streak (kun o'tkazilsa 0) + eng yaxshi (rekord) seriya.
+   * "Intizom" sahifasi uchun.
+   */
+  async getHistory(userId: bigint, date: string, subjectId: string): Promise<{
+    rows: DailyHistoryRow[]
+    dailyStreak: number
+    bestStreak: number
+  }> {
+    const rows = await db.select({
+      date:      dailyRecords.date,
+      subjectId: dailyRecords.subjectId,
+      answered:  dailyRecords.answered,
+      correct:   dailyRecords.correct,
+      fixed:     dailyRecords.fixed,
+    }).from(dailyRecords)
+      .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
+      .orderBy(asc(dailyRecords.date))
+
+    const row = await readStreak(userId, subjectId)
+    const activeDates = rows.filter((r) => r.answered > 0).map((r) => r.date)
+
+    return {
+      rows,
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0),
+      bestStreak:  calcBestStreak(activeDates),
+    }
+  },
+
+  /**
+   * Xato savol tuzatildi deb belgilash — shu kunning yozuviga fixed+1.
+   * Kunlik test bajarilmagan kun ham yozuv yaratiladi (answered=0 bo'ladi,
+   * kalendar faolligi va streak'ga ta'sir qilmaydi).
+   */
+  async addFixed(userId: bigint, date: string, subjectId: string): Promise<void> {
+    await db.insert(dailyRecords)
+      .values({ userId, date, subjectId, answered: 0, correct: 0, fixed: 1 })
+      .onConflictDoUpdate({
+        target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
+        set:    { fixed: sql`${dailyRecords.fixed} + 1` },
+      })
   },
 
   /**
@@ -86,7 +159,7 @@ export const dailyRepository = {
     answered:  number,
     correct:   number,
   ): Promise<{ dailyStreak: number }> {
-    // 1) Yozuv upsert
+    // 1) Yozuv upsert (fixed sonini saqlab qolish — addFixed yozgan bo'lishi mumkin)
     await db.insert(dailyRecords).values({ userId, date, subjectId, answered, correct })
       .onConflictDoUpdate({
         target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],

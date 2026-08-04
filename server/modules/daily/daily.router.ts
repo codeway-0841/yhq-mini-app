@@ -2,7 +2,9 @@
  * Daily Challenge router.
  *
  * GET  /api/daily/:userId?date=YYYY-MM-DD&subject=yhq  → bugungi holat + streak
+ * GET  /api/daily/:userId/history?date=...&subject=yhq → barcha kunlar + joriy/best streak
  * POST /api/daily/:userId/complete                     → {date, subjectId, answered, correct}
+ * POST /api/daily/:userId/fix                          → xato tuzatildi (+1), {date, subjectId}
  */
 
 import { Router }             from 'express'
@@ -35,6 +37,24 @@ router.get(
   }),
 )
 
+// GET /api/daily/:userId/history — shu fanga tegishli barcha kunlik yozuvlar +
+// joriy streak (kun o'tkazilsa 0) + eng yaxshi seriya ("Intizom" sahifasi)
+router.get(
+  '/daily/:userId/history',
+  wrap(async (req, res) => {
+    const uid = parseBigInt(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const date    = typeof req.query['date'] === 'string' ? req.query['date'] : ''
+    const subject = typeof req.query['subject'] === 'string' ? req.query['subject'] : ''
+    if (!DATE_RE.test(date))    throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
+    if (!subject || subject.length > 32) throw new AppError(400, 'Invalid subject')
+
+    const data = await dailyRepository.getHistory(uid, date, subject)
+    res.json(data)
+  }),
+)
+
 const CompleteSchema = z.object({
   date:      z.string().regex(DATE_RE),
   subjectId: z.string().min(1).max(32),
@@ -58,6 +78,30 @@ router.post(
     const { dailyStreak } = await dailyRepository.complete(uid, date, subjectId, answered, correct)
 
     res.json({ ok: true, dailyStreak })
+  }),
+)
+
+const FixSchema = z.object({
+  date:      z.string().regex(DATE_RE),
+  subjectId: z.string().min(1).max(32),
+  count:     z.number().int().min(1).max(100).default(1),
+})
+
+// POST /api/daily/:userId/fix — eski xato to'g'rilandi, shu kunga fixed qo'shish
+router.post(
+  '/daily/:userId/fix',
+  rateLimit({ maxPerMinute: 120 }),
+  validate({ body: FixSchema }),
+  wrap(async (req, res) => {
+    const uid = parseBigInt(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    await progressRepository.ensureExists(uid)
+
+    const { date, subjectId } = req.body as z.infer<typeof FixSchema>
+    await dailyRepository.addFixed(uid, date, subjectId)
+
+    res.json({ ok: true })
   }),
 )
 

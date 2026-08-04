@@ -4,7 +4,7 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { prevDate, calcNextStreak } from '../../../server/modules/daily/daily.repository'
+import { prevDate, calcNextStreak, effectiveStreak, calcBestStreak } from '../../../server/modules/daily/daily.repository'
 import { seededShuffle, hashSeed } from '../../../src/lib/seeded'
 
 describe('prevDate', () => {
@@ -40,6 +40,37 @@ describe('calcNextStreak', () => {
   })
   it('kechagi kun — oy chegarasida ham to\'g\'ri', () => {
     expect(calcNextStreak('2026-07-31', '2026-08-01', 3)).toBe(4)
+  })
+})
+
+describe('effectiveStreak', () => {
+  it('bugun bajarilgan — seriya ko\'rinadi', () => {
+    expect(effectiveStreak('2026-08-04', '2026-08-04', 5)).toBe(5)
+  })
+  it('kecha bajarilgan — hali davomiy (buzulmagan)', () => {
+    expect(effectiveStreak('2026-08-03', '2026-08-04', 5)).toBe(5)
+  })
+  it('bir kun o\'tkazilgan — 0 ga tushadi', () => {
+    expect(effectiveStreak('2026-08-02', '2026-08-04', 12)).toBe(0)
+  })
+  it('umuman bajarilmagan — 0', () => {
+    expect(effectiveStreak(null, '2026-08-04', 0)).toBe(0)
+  })
+})
+
+describe('calcBestStreak', () => {
+  it('bo\'sh ro\'yxat — 0', () => {
+    expect(calcBestStreak([])).toBe(0)
+  })
+  it('uzilishli seriyalardagi eng uzun tanlanadi', () => {
+    expect(calcBestStreak([
+      '2026-07-01', '2026-07-02',            // 2
+      '2026-07-05', '2026-07-06', '2026-07-07', '2026-07-08', // 4 ← rekord
+      '2026-07-10',
+    ])).toBe(4)
+  })
+  it('oy chegarasi bo\'ylab ham ketma-ketlik saqlanadi', () => {
+    expect(calcBestStreak(['2026-07-30', '2026-07-31', '2026-08-01'])).toBe(3)
   })
 })
 

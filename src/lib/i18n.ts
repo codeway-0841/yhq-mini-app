@@ -105,6 +105,23 @@ const UZ = {
   mistakesEmptyTitle: "Xatolar yo'q! 🎉",
   mistakesEmptyDesc: "Barcha savollar to'g'ri yechilgan. Ajoyib natija!",
   timesWord: "marta", unansweredWord: "ta hal qilinmagan xato",
+  // Intizom (streak) sahifasi
+  intizomTitle: "Intizom", intizomBest: "Eng yaxshi",
+  intizomStreakGood: "Zo'r! Davom eting — seriyangiz o'smoqda",
+  intizomStreakStart: "Bugun boshlang — seriya shu yerdan!",
+  solvedWord: "YECHILDI", wrongUpper: "XATO", fixedUpper: "TUZATILDI",
+  howItWorks: "Qanday ishlaydi?",
+  intizomDesc: "Intizom — har kunlik mashq odati. Mana shu oddiy qoidalar:",
+  hw1Title: "Har kuni mashq qiling",
+  hw1Desc: "Kuniga kamida 1 ta kunlik test yeching — intizomingiz +1 kunga oshadi.",
+  hw2Title: "Faollik xaritasi",
+  hw2Desc: "Qancha ko'p savol yechsangiz, o'sha kun shuncha to'q yashil bo'ladi.",
+  hw3Title: "Bosqichlar",
+  hw3Desc: "7, 14, 30 va undan ortiq kun — har bir bosqichda sizni yutuq kutadi.",
+  hw4Title: "Uzmang!",
+  hw4Desc: "Bir kun o'tkazib yuborsangiz, intizom 0 ga tushadi. Har kuni davom eting!",
+  monthsList: "Yanvar|Fevral|Mart|Aprel|May|Iyun|Iyul|Avgust|Sentabr|Oktabr|Noyabr|Dekabr",
+  weekdaysList: "Du|Se|Cho|Pa|Ju|Sha|Ya",
 } as const
 
 type Keys = keyof typeof UZ
@@ -203,6 +220,23 @@ const RU: Record<Keys, string> = {
   mistakesEmptyTitle: "Ошибок нет! 🎉",
   mistakesEmptyDesc: "Все вопросы решены верно. Отличный результат!",
   timesWord: "раз", unansweredWord: "неисправленных ошибок",
+  // Страница «Дисциплина» (серия)
+  intizomTitle: "Дисциплина", intizomBest: "Лучший результат",
+  intizomStreakGood: "Отлично! Продолжайте — ваша серия растёт",
+  intizomStreakStart: "Начните сегодня — серия начнётся отсюда!",
+  solvedWord: "РЕШЕНО", wrongUpper: "ОШИБКИ", fixedUpper: "ИСПРАВЛЕНО",
+  howItWorks: "Как это работает?",
+  intizomDesc: "Дисциплина — привычка ежедневной практики. Вот простые правила:",
+  hw1Title: "Занимайтесь каждый день",
+  hw1Desc: "Решайте хотя бы 1 ежедневный тест в день — ваша серия вырастет на +1 день.",
+  hw2Title: "Карта активности",
+  hw2Desc: "Чем больше вопросов решено, тем темнее зелёный цвет этого дня.",
+  hw3Title: "Этапы",
+  hw3Desc: "7, 14, 30 и более дней — на каждом этапе вас ждёт награда.",
+  hw4Title: "Не прерывайтесь!",
+  hw4Desc: "Пропустите один день — серия упадёт до 0. Занимайтесь каждый день!",
+  monthsList: "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь",
+  weekdaysList: "Пн|Вт|Ср|Чт|Пт|Сб|Вс",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

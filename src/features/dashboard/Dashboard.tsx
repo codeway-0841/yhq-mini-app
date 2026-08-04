@@ -83,6 +83,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   lang: 'uz' | 'ru'
 }) {
   const tt = useT(lang)
+  const navigate = useNavigate()
   const total    = totalPool > 0 ? totalPool : 0
   const accuracy = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
   const xp       = totalCorrect * 10
@@ -135,13 +136,15 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
       </div>
       {/* Pastki statistika: Seriya / XP / Reyting */}
       <div className="flex items-center justify-around mt-3.5 pt-3 border-t border-white/15">
-        <div className="flex items-center gap-1.5">
+        {/* Streak — bosilsa "Intizom" sahifasi ochiladi */}
+        <button onClick={() => navigate('/streak')} aria-label={tt('intizomTitle')}
+          className="flex items-center gap-1.5 active:scale-90 transition-transform">
           <span className="text-base">🔥</span>
           <div className="text-left">
             <p className="text-sm font-black text-white leading-none">{streak} {tt('daysWord')}</p>
             <p className="text-[10px] font-semibold text-white/70">{tt('streakDays')}</p>
           </div>
-        </div>
+        </button>
         <div className="flex items-center gap-1.5">
           <span className="text-base">⭐</span>
           <div className="text-left">
@@ -510,8 +513,10 @@ export default function Dashboard() {
   const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
-  const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, streak, savedQuestions, wrongByTicket } = useAppStore()
+  const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, savedQuestions, wrongByTicket } = useAppStore()
   const subject  = useSubjectStore((s) => s.subject)
+  // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
+  const dailyStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
   const questionsCount = useQuestionsStore((s) => s.questions.length)
   const tt = useT(settings.language)
 
@@ -616,7 +621,7 @@ export default function Dashboard() {
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
             totalAnswered={totalAnswered}
-            streak={streak}
+            streak={dailyStreak}
             totalPool={questionsCount}
             lang={settings.language}
           />

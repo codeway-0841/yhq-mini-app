@@ -163,11 +163,31 @@ export const api = {
 
   completeDaily: (userId: string, data: { date: string; subjectId: string; answered: number; correct: number }) =>
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/complete`, data),
+
+  getDailyHistory: (userId: string, date: string, subject: string) =>
+    request<DailyHistory>('GET', `/daily/${uid(userId)}/history?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
+
+  addDailyFix: (userId: string, data: { date: string; subjectId: string }) =>
+    request<{ ok: true }>('POST', `/daily/${uid(userId)}/fix`, data),
 }
 
 export interface DailyState {
   record: { date: string; subjectId: string; answered: number; correct: number } | null
   dailyStreak: number
+}
+
+export interface DailyHistoryRow {
+  date:      string
+  subjectId: string
+  answered:  number
+  correct:   number
+  fixed:     number
+}
+
+export interface DailyHistory {
+  rows:        DailyHistoryRow[]
+  dailyStreak: number
+  bestStreak:  number
 }
 
 export interface LeaderboardEntry {

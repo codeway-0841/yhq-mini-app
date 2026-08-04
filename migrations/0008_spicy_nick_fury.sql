@@ -1,0 +1,1 @@
+ALTER TABLE "daily_records" ADD COLUMN "fixed" integer DEFAULT 0 NOT NULL;

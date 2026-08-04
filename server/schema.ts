@@ -119,6 +119,8 @@ export const dailyRecords = pgTable('daily_records', {
   subjectId:   text('subject_id').notNull(),
   answered:    integer('answered').default(0).notNull(),
   correct:     integer('correct').default(0).notNull(),
+  /** Shu kunda tuzatilgan eski xatolar soni (Intizom sahifasidagi "TUZATILDI") */
+  fixed:       integer('fixed').default(0).notNull(),
   completedAt: timestamp('completed_at').defaultNow().notNull(),
 }, (t) => [
   unique('uq_daily_record').on(t.userId, t.date, t.subjectId),
