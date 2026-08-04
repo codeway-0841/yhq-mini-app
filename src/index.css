@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Tema tokenlari (Oson Prava / Duolingo uslubi) ─────────────────────────────
-   Default: dark (#131f24). body[data-theme='light'] — light.
+/* ── Tema tokenlari (v1.1 "Neon Navy" + Duolingo uslubi) ─────────────────────
+   Default: dark (#070f1d — chuqur navy, neon glow aksentlar bilan).
+   body[data-theme='light'] — light.
    Tailwind klasslar (bg-canvas, text-fg, border-line...) shu o'zgaruvchilarga
-   bog'langan — tema almashganda butun ilova avtomatik yangilanadi. */
+   bog'langan — tema almashganda butun ilova avtomatik yangilanadi.
+   NEON_* ranglar temadan mustaqil aksentlar (glow effektlar uchun). */
 :root {
-  --theme-canvas:      #131f24;
-  --theme-surface:     #131f24;
-  --theme-elevated:    #1e293b;
-  --theme-fg:          #ffffff;
-  --theme-fg-muted:    #cbd5e1;
-  --theme-fg-subtle:   #a6b4c6;   /* #94a3b8 → kontrast ko'tarildi (qorong'u fonda o'qiganda) */
-  --theme-line:        #334155;
-  --theme-line-strong: #475569;
-  --theme-shadow:      #334155;
+  --theme-canvas:      #070f1d;
+  --theme-surface:     #0b1626;
+  --theme-elevated:    #12203a;
+  --theme-fg:          #f2f7ff;
+  --theme-fg-muted:    #c3d0e6;
+  --theme-fg-subtle:   #8fa6c9;
+  --theme-line:        #1c2d4a;
+  --theme-line-strong: #2b4170;
+  --theme-shadow:      #0a1a33;
+
+  /* ── Neon aksentlar (v1.1 mock'dan) ── */
+  --neon-green:   #58cc02;
+  --neon-blue:    #38bdf8;
+  --neon-purple:  #8b5cf6;
+  --neon-violet:  #a78bfa;
+  --neon-red:     #ff4b4b;
+  --neon-yellow:  #ffc800;
+  --neon-glow-purple: rgba(139, 92, 246, 0.45);
+  --neon-glow-green:  rgba(88, 204, 2, 0.40);
+  --neon-glow-blue:   rgba(56, 189, 248, 0.40);
 }
 
 body[data-theme='light'] {
@@ -62,6 +75,61 @@ html, body, #root {
 }
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
+
+/* ══ v1.1 — Neon Navy komponent utilitilari ═════════════════════════════════ */
+
+/* Asosiy neon karta: chuqur fon + ingichka neon kontur + uzun glow */
+.card-neon {
+  background: linear-gradient(180deg, #0d1b30 0%, #0b1626 100%);
+  border: 1px solid var(--theme-line);
+  border-radius: 1.5rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 0 0 1px rgba(56, 189, 248, 0.06),
+    0 18px 40px rgba(2, 8, 23, 0.55);
+}
+
+/* Glow soya: neon accent rakurslar (ring chart, ikon konteynerlar, CTA) */
+.glow-purple { box-shadow: 0 0 22px 0 var(--neon-glow-purple); }
+.glow-green  { box-shadow: 0 0 22px 0 var(--neon-glow-green); }
+.glow-blue   { box-shadow: 0 0 22px 0 var(--neon-glow-blue); }
+
+/* Neon CTA tugma (mock'dagi "Boshlash"): gradient + pastki qattiq soya + glow */
+.btn-neon {
+  background: linear-gradient(180deg, #6ee70b 0%, #58cc02 55%, #46a302 100%);
+  color: #0b2003;
+  font-weight: 900;
+  border-radius: 1rem;
+  box-shadow:
+    0 4px 0 0 #3f9202,
+    0 0 20px 0 rgba(88, 204, 2, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 0.06s ease, box-shadow 0.06s ease, filter 0.15s ease;
+  user-select: none;
+  touch-action: manipulation;
+}
+.btn-neon:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 20px 0 rgba(88, 204, 2, 0.35), inset 0 1px 0 rgba(255,255,255,0.35);
+}
+
+/* Neon progress chizig'i (rount bar / sarfi): yorug' capsula + glow */
+.progress-neon {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(30, 58, 95, 0.55);
+  overflow: hidden;
+}
+.progress-neon > .fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #58cc02, #8ae234);
+  box-shadow: 0 0 10px rgba(88, 204, 2, 0.55);
+  transition: width 240ms ease-out;
+}
+
+/* Ring chart glow (circular progress) */
+.ring-glow { filter: drop-shadow(0 0 10px var(--neon-glow-purple)); }
 
 /* ── 3D "chunky" tugmalar (Duolingo uslubi) ──────────────────────────────────
    Pastki qattiq soya (box-shadow) + bosilganda siqilish.

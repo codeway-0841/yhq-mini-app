@@ -28,6 +28,16 @@ export default {
           gray:   { DEFAULT: '#afaeb3', dark: '#64748b' },
         },
 
+        // v1.1 Neon Navy aksentlar (temadan mustaqil — glow uchun JS string ranglar)
+        neon: {
+          green:  '#58cc02',
+          blue:   '#38bdf8',
+          purple: '#8b5cf6',
+          violet: '#a78bfa',
+          red:    '#ff4b4b',
+          yellow: '#ffc800',
+        },
+
         // Eski nomlar (backward-compat) — yangi kodda ishlatmang
         bg:      'var(--theme-canvas)',
         border:  'var(--theme-line)',
