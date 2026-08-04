@@ -1,4 +1,4 @@
-import { eq } from 'drizzle-orm'
+import { asc, eq } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { questions, topics } from '../../schema'
 
@@ -16,13 +16,16 @@ async function cached<T>(key: string, fn: () => Promise<T>): Promise<T> {
 }
 
 export const questionsRepository = {
+  // ORDER BY id — deterministik tartib SHART: Biletlar seededShuffle massiv
+  // tartibiga bog'liq; tartibsiz SELECT reseed'dan keyin bilet tarkibini buzardi.
   findAll() {
-    return cached('questions:all', () => db.select().from(questions))
+    return cached('questions:all', () =>
+      db.select().from(questions).orderBy(asc(questions.id)))
   },
 
   findByTopic(topicId: number) {
     return cached(`questions:topic:${topicId}`, () =>
-      db.select().from(questions).where(eq(questions.topicId, topicId)))
+      db.select().from(questions).where(eq(questions.topicId, topicId)).orderBy(asc(questions.id)))
   },
 
   findTopics() {

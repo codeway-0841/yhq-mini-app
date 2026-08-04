@@ -9,9 +9,7 @@ import http                from 'http'
 import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
-import { attachOctagon }   from './octagon'
-import { db }              from './db/connection'
-import { questions }       from './schema'
+import { attachOctagon, loadOctagonPools } from './octagon'
 
 const app    = createApp()
 const server = http.createServer(app)
@@ -35,12 +33,12 @@ function shutdown(signal: string): void {
 process.on('SIGTERM', () => shutdown('SIGTERM'))
 process.on('SIGINT',  () => shutdown('SIGINT'))
 
-db.select({ id: questions.id, correct: questions.correctAnswer })
-  .from(questions)
-  .then((pool) => {
-    attachOctagon(wss, pool)
+loadOctagonPools()
+  .then((pools) => {
+    attachOctagon(wss, pools)
+    const total = [...pools.values()].reduce((s, p) => s + p.length, 0)
     server.listen(config.server.port, () => {
-      console.log(`Server :${config.server.port} (HTTP + WS) — ${pool.length} questions loaded`)
+      console.log(`Server :${config.server.port} (HTTP + WS) — ${total} questions (${pools.size} banks)`)
     })
   })
   .catch((err) => {

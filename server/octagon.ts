@@ -28,7 +28,8 @@ import { randomUUID } from 'crypto'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
-import { SUBJECT_IDS, DEFAULT_SUBJECT_ID } from './config/subjects'
+import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
+import { getProvider } from './providers'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -38,6 +39,12 @@ const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
 const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
 const MAX_NAME_LEN        = 64
 const RECONNECT_WINDOW_MS = 12_000  // mid-match disconnect grace before forfeit
+
+// ── Per-subject question pools ─────────────────────────────────────────────
+// dataSourceId → pool. Pairing subjectId bo'yicha, savollar esa usha fanning
+// dataSource bankasidan olinadi (SubjectRegistry → provider).
+export type QuestionPoolItem = { id: number; correct: string }
+export type OctagonPools = Map<string, QuestionPoolItem[]>
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -59,6 +66,7 @@ interface RoundState {
 interface Match {
   id:              string
   players:         [Player, Player]
+  pool:            QuestionPoolItem[] // shu match fanining savol havzasi
   questionIds:     number[]           // server-only; never sent in bulk to clients
   scores:          Map<string, number>
   round:           number
@@ -69,11 +77,19 @@ interface Match {
 
 // ── Module state ───────────────────────────────────────────────────────────
 
-let QUESTION_POOL: Array<{ id: number; correct: string }> = []
+let QUESTION_POOLS: OctagonPools = new Map()
 
 const queue:         Map<string, Player> = new Map()  // userId → Player
 const matches:       Map<string, Match>  = new Map()  // matchId → Match
 const playerToMatch: Map<string, string> = new Map()  // userId → matchId
+
+/** subjectId → savol havzasi (dataSourceId orqali); fallback — birinchi mavjud pool. */
+function poolForSubject(subjectId: string): QuestionPoolItem[] {
+  const entry = resolveSubject(subjectId)
+  return QUESTION_POOLS.get(entry.dataSourceId)
+    ?? QUESTION_POOLS.values().next().value
+    ?? []
+}
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -81,18 +97,18 @@ function send(ws: WebSocket, msg: object): void {
   if (ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify(msg))
 }
 
-function pickQuestions(n: number): number[] {
-  const pool = [...QUESTION_POOL]
+function pickQuestions(n: number, pool: QuestionPoolItem[]): number[] {
+  const copy = [...pool]
   const out: number[] = []
-  for (let i = 0; i < n && pool.length; i++) {
-    const idx = Math.floor(Math.random() * pool.length)
-    out.push(pool.splice(idx, 1)[0].id)
+  for (let i = 0; i < n && copy.length; i++) {
+    const idx = Math.floor(Math.random() * copy.length)
+    out.push(copy.splice(idx, 1)[0].id)
   }
   return out
 }
 
-function correctFor(questionId: number): string {
-  return QUESTION_POOL.find((q) => q.id === questionId)?.correct ?? ''
+function correctFor(questionId: number, pool: QuestionPoolItem[]): string {
+  return pool.find((q) => q.id === questionId)?.correct ?? ''
 }
 
 // ── Match lifecycle ────────────────────────────────────────────────────────
@@ -104,10 +120,12 @@ function startMatch(p1: Player, p2: Player): void {
   queue.delete(p2.userId)
 
   const matchId     = randomUUID()
-  const questionIds = pickQuestions(ROUNDS)
+  // Ikkala o'yinchi bir xil subjectId (matchmaking filtri) — p1'dan olamiz
+  const pool        = poolForSubject(p1.subjectId)
+  const questionIds = pickQuestions(ROUNDS, pool)
   const scores      = new Map([[p1.userId, 0], [p2.userId, 0]])
   const match: Match = {
-    id: matchId, players: [p1, p2], questionIds,
+    id: matchId, players: [p1, p2], pool, questionIds,
     scores, round: 0, roundState: null, disconnectTimer: null, gapTimer: null,
   }
 
@@ -150,7 +168,7 @@ function resolveRound(match: Match, index: number): void {
   rs.resolved = true
   clearTimeout(rs.timer)
 
-  const correct = correctFor(match.questionIds[index])
+  const correct = correctFor(match.questionIds[index], match.pool)
 
   for (const p of match.players) {
     const isCorrect = rs.answers.get(p.userId) === correct
@@ -316,11 +334,25 @@ function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: strin
 
 // ── WebSocket server ───────────────────────────────────────────────────────
 
+/**
+ * Startup loader — har bir dataSourceId uchun savol havzasini provider orqali yuklaydi.
+ * (Bugun barcha fanlar bitta bankaga bog'langan — 1 unique provider, 1 query.
+ *  Haqiqiy fan bazalari kelganda avtomatik per-subject ishlaydi.)
+ */
+export async function loadOctagonPools(): Promise<OctagonPools> {
+  const pools: OctagonPools = new Map()
+  for (const dsId of new Set(SUBJECT_REGISTRY.map((s) => s.dataSourceId))) {
+    const rows = await getProvider(dsId).getAllQuestions()
+    pools.set(dsId, rows.map((r) => ({ id: r.id, correct: r.correctAnswer })))
+  }
+  return pools
+}
+
 export function attachOctagon(
   wss: WebSocketServer,
-  questionPool: Array<{ id: number; correct: string }>,
+  pools: OctagonPools,
 ): void {
-  QUESTION_POOL = questionPool
+  QUESTION_POOLS = pools
 
   wss.on('connection', (ws: WebSocket, _req: IncomingMessage) => {
     let userId: string | null = null
@@ -405,7 +437,7 @@ export function attachOctagon(
 
         rs.answers.set(userId, optionId)
 
-        const correct   = correctFor(match.questionIds[index])
+        const correct   = correctFor(match.questionIds[index], match.pool)
         send(ws, { type: 'answer_ack', index, correct: optionId === correct })
 
         const opponent = match.players.find((p) => p.userId !== userId)

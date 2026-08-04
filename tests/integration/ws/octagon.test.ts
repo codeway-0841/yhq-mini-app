@@ -34,7 +34,8 @@ beforeAll(async () => {
   const app = createApp()
   server = http.createServer(app)
   const wss = new WebSocketServer({ server })
-  attachOctagon(wss, TEST_QUESTION_POOL)
+  // attachOctagon endi dataSourceId → pool map qabul qiladi
+  attachOctagon(wss, new Map([['traffic_rules_db', TEST_QUESTION_POOL]]))
   await new Promise<void>((resolve) => server.listen(0, resolve))
   port = (server.address() as { port: number }).port
 })
