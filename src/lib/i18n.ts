@@ -11,6 +11,10 @@ const UZ = {
   distracting: "Chalg'ituvchi", saved: "Saqlanganlar",
   roadSigns: "Yo'l belgilari", numeric: "Raqamli savollar",
   adaptive: "Test yechish",
+  // v1.1 Dashboard (Neon)
+  greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
+  continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
+  streakConsec: "Ketma-ket", dailyTask: "Kunlik mashq", dailyTaskDesc: "10 ta maxsus savolni yeching",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -88,6 +92,10 @@ const RU: Record<Keys, string> = {
   distracting: "Каверзные", saved: "Сохранённые",
   roadSigns: "Дорожные знаки", numeric: "Числовые вопросы",
   adaptive: "Тест решение",
+  // v1.1 Dashboard (Neon)
+  greeting: "Привет", level: "Уровень", overallProgress: "Общий прогресс",
+  continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
+  streakConsec: "Подряд", dailyTask: "Ежедневная тренировка", dailyTaskDesc: "Решите 10 специальных вопросов",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",

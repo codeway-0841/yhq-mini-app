@@ -2,13 +2,14 @@ import { useState, useEffect, useCallback, useMemo, memo } from 'react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  Trophy, Settings, Search,
+  Settings,
   Play, Swords, ListChecks, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, LayoutGrid, ClipboardCheck, ShieldAlert,
   Heart, ChevronDown, Sparkles,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
+import { api } from '../../shared/api'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
@@ -32,92 +33,99 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   )
 })
 
-// ── Top Bar ─────────────────────────────────────────────────────────────────
-const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, onLeaderboard }: {
+// ── Top Bar / Greeting Header (v1.1 Neon Navy) ─────────────────────────────
+// "Salom, {ism} 👋" + Level badge. O'lik Search tugmasi olib tashlandi.
+const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onProfile }: {
   user: ApiUser | null
   displayName: string | null
+  level: number
   onSettings: () => void
   onProfile: () => void
-  onLeaderboard: () => void
 }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
-  const name = displayName
-    ?? (user ? `${user.firstName} ${user.lastName || ''}`.trim() : tt('guestName'))
-  const riderLabel = tt('riderLabel')
+  const name = displayName ?? user?.firstName ?? tt('guestName')
 
   return (
-    <div className="flex items-center justify-between px-4 pt-5 pb-3">
+    <div className="flex items-center justify-between px-4 pt-5 pb-3.5">
       <button onClick={onProfile} className="flex items-center gap-3 active:opacity-70 transition-opacity min-w-0">
         <Avatar name={name} photoUrl={user?.photoUrl} />
         <div className="text-left min-w-0">
-          <p className="text-[15px] font-extrabold leading-tight text-fg truncate">{name}</p>
-          <span className="text-[11px] font-bold text-duo-green tracking-wide flex items-center gap-1">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-duo-green" />
-            {riderLabel}
-          </span>
+          <p className="text-[12px] font-semibold text-subtle">{tt('greeting')},</p>
+          <p className="text-[18px] font-black leading-tight text-fg truncate">{name} 👋</p>
         </div>
       </button>
-      <div className="flex items-center gap-4">
-        <button onClick={onLeaderboard} aria-label="Reyting"
-          className="relative text-duo-yellow hover:text-duo-orange transition-colors active:scale-90">
-          <Trophy size={22} fill="currentColor" />
-          <span className="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-[9px] font-bold text-white">
-            !
-          </span>
-        </button>
-        <button aria-label="Qidirish"
-          className="text-muted hover:text-fg transition-colors active:scale-90">
-          <Search size={21} />
-        </button>
+      <div className="flex items-center gap-3">
+        <span className="glow-purple flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neon-purple/40 bg-neon-purple/10 text-neon-violet text-[11px] font-black">
+          🔮 {tt('level')} {level}
+        </span>
         <button onClick={onSettings} aria-label="Sozlamalar"
-          className="text-muted hover:text-fg transition-colors active:scale-90">
-          <Settings size={21} />
+          className="w-10 h-10 rounded-2xl card-neon flex items-center justify-center text-subtle hover:text-fg transition-colors active:scale-90">
+          <Settings size={18} />
         </button>
       </div>
     </div>
   )
 })
 
-// ── Progress Card (Oson Prava uslubi: to'q yashil, minimal) ─────────────────
-const ProgressCard = memo(function ProgressCard({ totalCorrect, totalWrong, totalAnswered, streak, totalPool, lang }: {
+// ── Progress Card (v1.1 Neon Navy: ring chart + neon chiziq + stat qator) ───
+const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
   lang: 'uz' | 'ru'
 }) {
   const tt = useT(lang)
-  const total     = totalPool > 0 ? totalPool : 1237 // serverdan kelgan savollar soni (dinamik)
-  const percent   = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
-  const remaining = Math.max(0, total - totalAnswered)
+  const total    = totalPool > 0 ? totalPool : 0
+  const accuracy = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
+  const coverage = total > 0 ? Math.min(100, Math.round((totalAnswered / total) * 100)) : 0
+  const xp       = totalCorrect * 10
+  const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
+
+  // Ring chart geometriyasi (SVG)
+  const R = 34, C = 2 * Math.PI * R
+  const ringOffset = C * (1 - coverage / 100)
 
   return (
-    <div className="mx-4 rounded-3xl p-4 mb-2.5 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #2d5742, #14301e)' }}>
-      {/* Yuqori qator: sana + streak */}
-      <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[12px] font-semibold text-white/80 flex items-center gap-1">
-          {tt('changeDate')} <span className="text-[10px]">✏️</span>
-        </span>
-        <div className="flex items-center gap-1">
-          <span className="text-duo-yellow text-xs">⚡</span>
-          <span className="text-white font-extrabold text-xs">{streak} {tt('daysWord')}</span>
+    <div className="card-neon mx-4 p-4 mb-3 relative overflow-hidden">
+      <div className="flex items-center justify-between gap-3">
+        {/* Chap: card + progress */}
+        <div className="flex-1 min-w-0">
+          <p className="text-[12px] font-bold text-subtle mb-1">{tt('overallProgress')}</p>
+          <p className="text-[34px] font-black text-fg leading-none mb-1">{accuracy}%</p>
+          <p className="text-[11px] text-subtle mb-2.5">{totalAnswered} / {total || '…'} {tt('question').toLowerCase()}</p>
+          <div className="progress-neon">
+            <div className="fill" style={{ width: `${Math.max(coverage, totalAnswered > 0 ? 3 : 0)}%` }} />
+          </div>
         </div>
+        {/* O'ng: neon ring chart */}
+        {total > 0 && (
+          <svg width="92" height="92" viewBox="0 0 92 92" className="flex-shrink-0 ring-glow">
+            <circle cx="46" cy="46" r={R} fill="none" stroke="#1c2d4a" strokeWidth="8" />
+            <circle cx="46" cy="46" r={R} fill="none" stroke="#8b5cf6" strokeWidth="8"
+              strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
+              transform="rotate(-90 46 46)"
+              style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
+            <text x="46" y="51" textAnchor="middle" fill="#f2f7ff" fontSize="16" fontWeight="900">{coverage}%</text>
+          </svg>
+        )}
       </div>
-      {/* O'rta: % + statistikalar */}
-      <div className="flex items-end justify-between mb-2.5">
-        <span className="text-[36px] font-black text-white leading-none">{percent}%</span>
-        <div className="flex items-center gap-2.5 text-[12px] font-extrabold">
-          <span className="text-duo-green">✓ {totalCorrect}</span>
-          <span className="text-duo-red">✗ {totalWrong}</span>
-          <span className="text-white/60">— {remaining}</span>
+      {/* Pastki: streak / XP / Liga */}
+      <div className="flex items-center justify-around mt-3.5 pt-3 border-t border-line/60">
+        <div className="flex flex-col items-center">
+          <span className="text-base">🔥</span>
+          <span className="text-sm font-black text-fg">{streak}</span>
+          <span className="text-[10px] text-subtle">{tt('streakConsec')}</span>
         </div>
-      </div>
-      {/* Progress bar */}
-      <div className="w-full bg-black/25 rounded-full h-[6px] overflow-hidden">
-        <div
-          className="h-full rounded-full transition-all duration-700 ease-out bg-duo-green"
-          style={{ width: `${Math.max(1, Math.round((totalAnswered / total) * 100))}%` }}
-        />
+        <div className="flex flex-col items-center">
+          <span className="text-base">⭐</span>
+          <span className="text-sm font-black text-fg">{xp}</span>
+          <span className="text-[10px] text-subtle">XP</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <span className="text-base">🏆</span>
+          <span className="text-sm font-black text-fg">{league}</span>
+          <span className="text-[10px] text-subtle">{tt('league')}</span>
+        </div>
       </div>
     </div>
   )
@@ -207,12 +215,90 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
           {badge}
         </span>
       )}
-      <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '26' }}>
+      <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: iconColor + '26', boxShadow: `0 0 16px ${iconColor}59` }}>
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-extrabold text-fg text-left leading-tight">{label}</span>
     </button>
+  )
+})
+
+// ── Continue Card (v1.1: "Davom etish" — joriy fan + progress + play) ───────
+const ContinueCard = memo(function ContinueCard({ subjectName, subjectIcon: SubjectIcon, answeredPercent, lang, onContinue, onSeeAll }: {
+  subjectName: string; subjectIcon: React.ElementType; answeredPercent: number
+  lang: 'uz' | 'ru'; onContinue: () => void; onSeeAll: () => void
+}) {
+  const tt = useT(lang)
+  return (
+    <div className="px-4 mb-3">
+      <div className="flex items-center justify-between mb-2">
+        <h3 className="text-[15px] font-black text-fg">{tt('continueLearn')}</h3>
+        <button onClick={onSeeAll} className="text-[12px] font-bold text-neon-green flex items-center gap-0.5 active:opacity-70">
+          {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
+        </button>
+      </div>
+      <button onClick={onContinue} className="card-neon w-full flex items-center gap-3 p-3.5 active:scale-[0.99] transition-transform">
+        <div className="glow-green w-12 h-12 rounded-2xl bg-gradient-to-br from-neon-purple/25 to-neon-blue/15 border border-neon-purple/30 flex items-center justify-center">
+          <SubjectIcon size={24} className="text-neon-violet" strokeWidth={2.2} />
+        </div>
+        <div className="flex-1 min-w-0 text-left">
+          <p className="text-[14px] font-black text-fg truncate">{subjectName}</p>
+          <div className="progress-neon mt-2">
+            <div className="fill" style={{ width: `${Math.max(answeredPercent, 2)}%` }} />
+          </div>
+        </div>
+        <div className="glow-green w-10 h-10 rounded-full bg-neon-green flex items-center justify-center flex-shrink-0">
+          <Play size={16} fill="#0b2003" color="#0b2003" />
+        </div>
+      </button>
+    </div>
+  )
+})
+
+// ── Leaderboard Preview (v1.1: top-3 + "Barchasi ›") ────────────────────────
+const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userId }: {
+  lang: 'uz' | 'ru'; onSeeAll: () => void; userId: string | undefined
+}) {
+  const tt = useT(lang)
+  const [entries, setEntries] = useState<{ rank: number; name: string; score: number; isYou: boolean }[]>([])
+
+  useEffect(() => {
+    let alive = true
+    api.getLeaderboard(3, userId)
+      .then((r) => { if (alive) setEntries(r.slice(0, 3).map((e) => ({ rank: e.rank, name: e.name, score: e.score, isYou: e.isYou }))) })
+      .catch(() => {})
+    return () => { alive = false }
+  }, [userId])
+
+  if (entries.length === 0) return null
+
+  return (
+    <div className="px-4 mb-3">
+      <div className="flex items-center justify-between mb-2">
+        <h3 className="text-[15px] font-black text-fg">{tt('leaderboard')}</h3>
+        <button onClick={onSeeAll} className="text-[12px] font-bold text-neon-green flex items-center gap-0.5 active:opacity-70">
+          {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
+        </button>
+      </div>
+      <div className="card-neon divide-y divide-line/60">
+        {entries.map((e) => (
+          <div key={e.rank}
+            className={`flex items-center gap-3 px-3.5 py-2.5 ${e.isYou ? 'bg-neon-green/5' : ''}`}>
+            <span className="w-5 text-center text-sm">
+              {e.rank === 1 ? '🥇' : e.rank === 2 ? '🥈' : '🥉'}
+            </span>
+            <div className="w-7 h-7 rounded-full bg-duo-blue/20 border border-duo-blue/30 flex items-center justify-center text-[11px] font-black text-duo-blue">
+              {e.name[0]?.toUpperCase() ?? '?'}
+            </div>
+            <span className={`flex-1 min-w-0 truncate text-[13px] font-bold ${e.isYou ? 'text-neon-green' : 'text-fg'}`}>
+              {e.isYou ? `${e.name} (${lang === 'ru' ? 'Вы' : 'Siz'})` : e.name}
+            </span>
+            <span className="text-[13px] font-black text-duo-green">{e.score}</span>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 })
 
@@ -369,10 +455,10 @@ export default function Dashboard() {
 
   return (
     <div className="pb-6 safe-bottom">
-      {/* Top bar */}
+      {/* Top bar / Greeting Header (v1.1) */}
       <TopBar user={user} displayName={displayName}
-        onSettings={() => setShowSettings(true)} onProfile={goProfile}
-        onLeaderboard={() => navigate('/reyting')} />
+        level={Math.floor(totalCorrect / 50) + 1}
+        onSettings={() => setShowSettings(true)} onProfile={goProfile} />
 
       {/* Universal subject switcher */}
       <SubjectSwitcher onOpen={() => setShowSubjects(true)} />
@@ -393,7 +479,7 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* Progress card — to'q yashil, minimal */}
+          {/* Progress card (v1.1 neon ring) */}
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
@@ -402,6 +488,16 @@ export default function Dashboard() {
             totalPool={questionsCount}
             lang={settings.language}
           />
+
+      {/* Davom etish — joriy fan bilan davom (v1.1) */}
+      <ContinueCard
+        subjectName={settings.language === 'ru' ? subject.nameRu : subject.name}
+        subjectIcon={subject.icon}
+        answeredPercent={questionsCount > 0 ? Math.min(100, Math.round((totalAnswered / questionsCount) * 100)) : 0}
+        lang={settings.language}
+        onContinue={goTest}
+        onSeeAll={goTopics}
+      />
 
       {/* Barcha testlar + Xatolarni tuzatish */}
       <QuickActions
@@ -457,6 +553,13 @@ export default function Dashboard() {
         <GridCard icon={Signpost}      label={tt('roadSigns')} iconColor="#1cb0f6" onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label={tt('numeric')}   iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
       </div>
+
+      {/* Reyting top-3 preview (v1.1) */}
+      <LeaguePreview
+        lang={settings.language}
+        userId={user?.id}
+        onSeeAll={() => navigate('/reyting')}
+      />
 
       {/* Promo banner — vaqtincha o'chiq (SHOW_PROMO = true qilib qaytariladi) */}
       {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
