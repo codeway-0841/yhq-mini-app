@@ -6,7 +6,7 @@
  * available: false → "Tez kunda" holatida ko'rsatiladi (locked).
  * available: true bo'lishi uchun fan ma'lumotlari (API/questions) tayyor bo'lishi kerak.
  */
-import { Car, Zap, FlaskConical, Globe, BookOpen, type LucideIcon, type LucideProps } from 'lucide-react'
+import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, type LucideIcon, type LucideProps } from 'lucide-react'
 
 export interface SubjectConfig {
   id: string
@@ -100,6 +100,17 @@ export const SUBJECTS: SubjectConfig[] = [
     icon: BookOpen,
     color: '#ff4b4b',
     colorDark: '#d93f3f',
+    dataSourceId: 'traffic_rules_db',
+    demoData: true,
+    available: true,
+  },
+  {
+    id: 'biologiya',
+    name: 'Biologiya',
+    nameRu: 'Биология',
+    icon: Dna,
+    color: '#00cd9c',
+    colorDark: '#00a87e',
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
