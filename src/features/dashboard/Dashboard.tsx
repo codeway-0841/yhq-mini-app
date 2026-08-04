@@ -238,7 +238,7 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
           <img src={CONTINUE_BG_URL} alt="" aria-hidden
             onError={() => setBgOk(false)}
             style={{ mixBlendMode: 'screen' }}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[140%] object-contain pointer-events-none select-none" />
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-full max-w-full object-contain pointer-events-none select-none" />
         )}
         <div className="relative">
           {/* Sarlavha */}
@@ -373,11 +373,11 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
   return (
     <div className="px-4 mb-2.5">
       <div className="card-neon relative overflow-hidden p-4">
-        {/* O'ng taraf: fan rasmi (masalan, Matematika Σ) */}
+        {/* O'ng taraf: fan rasmi (masalan, Matematika Σ) — karta ichida to'liq sig'adi */}
         {imgOk && (
           <img src={imgUrl} alt="" aria-hidden
             onError={() => setImgOk(false)}
-            className="absolute -right-3 top-1/2 -translate-y-1/2 h-[130%] object-contain pointer-events-none select-none" />
+            className="absolute right-1 top-1/2 -translate-y-1/2 h-[92%] max-w-[45%] object-contain pointer-events-none select-none" />
         )}
         {/* Rasm bo'lmasa: dekorativ watermark ikon */}
         {!imgOk && (
