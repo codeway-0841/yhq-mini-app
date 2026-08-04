@@ -21,8 +21,8 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
 
   return (
     <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[88vh] overflow-y-auto">
+      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" />
+      <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
         <DonutChart correct={correct} total={total} threshold={threshold} passedLabel={tt('passed')} failedLabel={tt('failed')} />
@@ -66,7 +66,7 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="btn-3d-green flex-[2] py-3.5 rounded-2xl font-black text-base">
+            className="btn-neon flex-[2] py-3.5 rounded-2xl font-black text-base">
             {tt('finish')}
           </button>
         </div>

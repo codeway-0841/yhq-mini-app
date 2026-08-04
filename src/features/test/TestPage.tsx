@@ -216,8 +216,8 @@ export default function TestPage() {
           </button>
         </div>
 
-        <div className="flex items-center gap-1 bg-surface px-3 py-1 rounded-xl border border-line sm:absolute sm:left-1/2 sm:-translate-x-1/2">
-          <span className="text-duo-yellow text-sm">⏱</span>
+        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(56,189,248,0.20)]">
+          <span className="text-neon-yellow text-sm">⏱</span>
           <span className="font-mono font-black text-sm text-fg">{timer}</span>
         </div>
 
@@ -296,7 +296,7 @@ export default function TestPage() {
         })}
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash}
-            className="btn-3d-green flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
+            className="btn-neon flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
             ✓ {tt('finish')}
           </button>
         ) : (

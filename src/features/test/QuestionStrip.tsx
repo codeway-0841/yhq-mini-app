@@ -23,9 +23,9 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
         // Joriy savol HAR QANDAY holatda ko'k border bilan ajratiladi
         // (javoblangan: to'liq rang + ko'k border · javobsiz: kulrang + ko'k border)
         let cls = 'bg-elevated border-2 border-line text-muted'
-        if (ans === 'correct')      cls = 'bg-duo-green text-white' + (isCurrent ? ' border-2 border-duo-blue' : '')
-        else if (ans === 'wrong')   cls = 'bg-duo-red text-white' + (isCurrent ? ' border-2 border-duo-blue' : '')
-        else if (isCurrent)         cls = 'bg-elevated border-2 border-duo-blue text-fg'
+        if (ans === 'correct')      cls = 'bg-duo-green text-white' + (isCurrent ? ' border-2 border-neon-blue shadow-[0_0_10px_rgba(56,189,248,0.5)]' : '')
+        else if (ans === 'wrong')   cls = 'bg-duo-red text-white' + (isCurrent ? ' border-2 border-neon-blue shadow-[0_0_10px_rgba(56,189,248,0.5)]' : '')
+        else if (isCurrent)         cls = 'bg-elevated border-2 border-neon-blue text-fg shadow-[0_0_10px_rgba(56,189,248,0.5)]'
         return (
           <button key={i} onClick={() => onSelect(i)}
             aria-current={isCurrent ? 'true' : undefined}
