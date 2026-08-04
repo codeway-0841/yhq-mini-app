@@ -10,6 +10,7 @@ import Onboarding from './features/onboarding/Onboarding'
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 const Dashboard       = lazy(() => import('./features/dashboard/Dashboard'))
 const TestPage        = lazy(() => import('./features/test/TestPage'))
+const TestlarPage     = lazy(() => import('./features/testlar/TestlarPage'))
 const Darslik         = lazy(() => import('./features/lessons/Darslik'))
 const Biletlar        = lazy(() => import('./features/tickets/Biletlar'))
 const Belgilar        = lazy(() => import('./features/signs/Belgilar'))
@@ -47,6 +48,7 @@ function Layout() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />
+            <Route path="/testlar"    element={<TestlarPage />} />
             <Route path="/test/:id"   element={<TestPage />} />
             <Route path="/darslik"    element={<Darslik />} />
             <Route path="/biletlar"   element={<Biletlar />} />

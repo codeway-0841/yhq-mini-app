@@ -171,7 +171,7 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
   return (
     <button
       onClick={onClick}
-      className={`card-neon relative flex flex-col items-start gap-2 p-3 min-h-[96px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
+      className={`card-neon relative flex flex-col items-center justify-center text-center gap-2 p-3 min-h-[96px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
     >
       {badge != null && (
         <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
@@ -182,7 +182,7 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
         style={{ backgroundColor: iconColor + '26', boxShadow: `0 0 18px ${iconColor}66`, border: `1px solid ${iconColor}55` }}>
         <Icon size={19} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
-      <div className="text-left">
+      <div className="text-center">
         <p className="text-[13px] font-black text-fg leading-tight">{label}</p>
         <p className={`text-[10.5px] font-semibold mt-0.5 ${comingSoon ? 'text-neon-violet' : 'text-subtle'}`}>{subtitle}</p>
       </div>
@@ -469,7 +469,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-3 gap-2.5 px-4 mb-3">
         <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
           subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
-          iconColor="#58cc02" onClick={goTest} />
+          iconColor="#58cc02" onClick={() => navigate('/testlar')} />
         <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
           iconColor="#38bdf8" onClick={goTopics} />
         <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}

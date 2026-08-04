@@ -30,7 +30,7 @@ export default function TestPage() {
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
-  const mode = (location.state?.mode as 'random50' | 'exam' | 'tricky' | 'numeric' | undefined) ?? null
+  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'tricky' | 'numeric' | undefined) ?? null
 
   const activeQuestions = useMemo(() => {
     const ids = location.state?.questionIds
@@ -40,8 +40,10 @@ export default function TestPage() {
     }
     const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
     switch (mode) {
-      case 'exam':     return shuffled().slice(0, Math.min(40, questions.length))
-      case 'random50': return shuffled().slice(0, Math.min(50, questions.length))
+      case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
+      case 'random50':  return shuffled().slice(0, Math.min(50, questions.length))
+      case 'random100': return shuffled().slice(0, Math.min(100, questions.length))
+      case 'random20':  return shuffled().slice(0, Math.min(20, questions.length))
       case 'tricky':   return shuffled().slice(0, Math.min(30, questions.length))
       case 'numeric': {
         const numeric = questions.filter((q) => /\d/.test(q.text))
@@ -79,7 +81,10 @@ export default function TestPage() {
   }, [])
 
   // Exam mode: 40 questions / 30 minutes — like the real test
-  const totalSeconds = mode === 'exam' ? 30 * 60 : 25 * 60
+  const totalSeconds =
+    mode === 'exam'        ? 30 * 60 :
+    mode === 'random100'   ? 120 * 60 :
+    mode === 'random20'    ? 30 * 60 : 25 * 60
   const timer = useTimer(handleTimeUp, location.key, totalSeconds)
 
   useEffect(() => {
