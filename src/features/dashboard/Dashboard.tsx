@@ -237,6 +237,7 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
         {bgOk && (
           <img src={CONTINUE_BG_URL} alt="" aria-hidden
             onError={() => setBgOk(false)}
+            style={{ mixBlendMode: 'screen' }}
             className="absolute -right-2 -bottom-2 h-[110%] object-contain pointer-events-none select-none" />
         )}
         <div className="relative">
