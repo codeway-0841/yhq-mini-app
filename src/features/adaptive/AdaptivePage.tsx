@@ -89,7 +89,7 @@ export default function AdaptivePage() {
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-muted px-4">
         <Brain size={40} className="text-duo-blue" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
-        <button onClick={() => startSession()} className="bg-duo-blue text-white px-6 py-3 rounded-xl font-bold">
+        <button onClick={() => startSession()} className="btn-neon px-8 py-3.5 rounded-2xl text-base">
           {tt('adaptive')}
         </button>
       </div>

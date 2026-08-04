@@ -294,7 +294,7 @@ export default function OctagonPage() {
               <p className="text-sm text-muted">Haqiqiy vaqtda raqib bilan bellashuv</p>
             </div>
             <button onClick={joinQueue} disabled={conn === 'failed'}
-              className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base disabled:opacity-50 disabled:cursor-not-allowed transition-opacity">
+              className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] disabled:opacity-50 disabled:cursor-not-allowed transition-all">
               {tt('findOpponent')}
             </button>
           </div>
@@ -416,7 +416,7 @@ export default function OctagonPage() {
                 className="flex-1 py-3 rounded-xl bg-elevated text-sm font-semibold">
                 Chiqish
               </button>
-              <button onClick={joinQueue} className="flex-[2] py-3 rounded-xl bg-purple-600 text-white font-bold">
+              <button onClick={joinQueue} className="flex-[2] py-3 rounded-xl bg-purple-600 text-white font-bold shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] transition-all">
                 Qayta o'ynash
               </button>
             </div>

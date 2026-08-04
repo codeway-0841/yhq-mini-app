@@ -56,8 +56,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
-      <div className="relative w-full bg-surface rounded-t-3xl border-t border-line max-h-[85vh] flex flex-col">
+      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
         <div className="p-5 pb-0">
           <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">

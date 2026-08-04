@@ -38,7 +38,7 @@ function Sub({ children }: { children: React.ReactNode }) {
 function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
     <button onClick={onClick}
-      className="btn-3d-green w-full py-4 rounded-2xl font-black text-[16px] flex items-center justify-center gap-2">
+      className="btn-neon w-full py-4 rounded-2xl font-black text-[16px] flex items-center justify-center gap-2">
       {label}
       <ChevronRight size={20} strokeWidth={3} />
     </button>

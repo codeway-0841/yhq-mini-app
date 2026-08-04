@@ -2,7 +2,7 @@
 export default function SplashScreen() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0a1520 0%, #0d1a2b 100%)' }}>
+      style={{ background: 'linear-gradient(180deg, #070f1d 0%, #0a1626 100%)' }}>
 
       {/* Brend kartochkasi — qalqon logo + atrof-dekor bilan */}
       <div className="relative animate-fadeIn">

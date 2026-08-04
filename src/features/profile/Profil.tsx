@@ -94,7 +94,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <div className="mb-4">
       <p className="text-[10px] font-bold text-muted uppercase tracking-[0.12em] px-4 mb-1.5">{title}</p>
-      <div className="bg-surface rounded-2xl border border-line overflow-hidden divide-y divide-line">
+      <div className="card-neon mx-4 overflow-hidden divide-y divide-line/60">
         {children}
       </div>
     </div>
