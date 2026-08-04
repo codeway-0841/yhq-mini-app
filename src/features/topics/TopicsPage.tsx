@@ -6,52 +6,27 @@ import { useLessonsStore } from '../../store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../data/modules'
 import { lessons as lessonsData } from '../../data/lessons'
+import lessonMap from '../../data/lessonMap.yhq.json'
 import { goBack } from '../../lib/navigation'
 import { HeartCrack, Lock, Play, Check } from 'lucide-react'
 
-/** ── Dars-bobliq test qoidasi ──────────────────────────────────────────────
- *  YANGI ALGORITM (foydalanuvchi talabiga binoan):
+/** ── Dars-bobliq test (v1.1: CURATED mapping — runtime keyword emas!) ──────
  *
- *  1. **Bank-WIDE keyword match**: darsning kalit so'zlari (title + maxsus aliaslar)
- *     bilan BUTUN savollar bazasidan qidiriladi — tramvay question "umumiy" topic'da
- *     bo'lsa ham uchraydi (modul topic id chegarasi olingan endi EMAS).
- *  2. **FILL/KOPAYTIRISH YO'Q**: testda faqat REAL kalit-mos savollar bo'ladi
- *     (faqat shunga doir test — chala "so'xta" test emas!).
- *  3. **HIDE qoidasi**: agar dars uchun kamida MIN_VISIBLE=3 ta real mos savol
- *     topilmasa — shu dars Mavzular ro'yxatida CHIQARILMAYDI (boshqa darslar ham
- *     xuddi shu qoida bilan filtrlanadi — "so'xta" test sahifasi yo'q).
- */
+ *  Runtime da savollarni keyword bilan taxmin qilmaymiz — buning o'rniga
+ *  `src/data/lessonMap.yhq.json` ichida manual curate qilingan DARS → questionIds
+ *  jadvalini o'qiymiz. Bu:
+ *   ✓ deterministik: bir xil darsda bir xil test har doim
+ *   ✓ haqiqiy: har savol manual review qilingan (tramvay kabi maxsuslar manual
+ *     kiritilgan)
+ *   ✓ multi-fan: kelajakda `lessonMap.fizika.json` qo'shilganda hech qanday
+ *     runtime o'zgarish kerak emas — faqat JSON fayl!
+ *
+ *  Format: { "modulID:darsIdx": [savolID, savolID, ...] }
+ *
+ *  HIDE qoidasi saqlanadi — manual mapping bo'lmasa (yashirin) yoki 3'tan kam
+ *  boʻlsa, yashirin ("so'xta" kichik testlar ko'rsatilmaydi). */
 
 const MIN_VISIBLE = 3   // kam savol — test deb ko'rinmaslik (kam bo'lsa dars yashirin)
-const MAX_VISIBLE = 12  // eng ko'pi shuncha savol — dars testi ixcham
-
-/** Qo'lda aliaslar — buhimtsiz maxsus darslar uchun "${modId}:${darsIdx}" */
-const LESSON_ALIAS: Record<string, { uz: string[]; ru: string[] }> = {
-  '2:3': { uz: ['tramvay', 'ustuvorlik'], ru: ['трамвай', 'приоритет'] },
-  '5:0': { uz: ['maxsus signal', 'militsiya', 'pojar'], ru: ['спецсигнал', 'милиц'] },
-  '5:2': { uz: ["temir yo'l", 'shlagbaum'], ru: ['железнодорож', 'шлагбаум'] },
-  '5:4': { uz: ['sirpanchiq', 'muzlama', 'qor'], ru: ['скользк', 'гололед', 'снег'] },
-  '5:5': { uz: ["yomg'ir", 'tuman', 'fara'], ru: ['дождь', 'туман', 'фар'] },
-  '6:0': { uz: ['aholi punkti', 'shaharda'], ru: ['населенн', 'город'] },
-  '7:1': { uz: ['bolalar', 'maktab'], ru: ['детей', 'школ', 'учащ'] },
-}
-
-/** Sarlavhadan keywords: uzun so'zlarni olamiz (stopword'siz) */
-function titleKeywords(text: string): string[] {
-  return text
-    .toLowerCase()
-    .replace(/[()—–-]/g, ' ')
-    .split(/\s+/)
-    .filter((w) => w.length >= 5)
-    .slice(0, 5)
-}
-
-/** Kengaytirilgan keyword set (title + alias, lang bo'yicha) */
-function lessonKeywords(modId: number, idx: number, lesson: { titleUz: string; titleRu: string }, lang: 'uz' | 'ru'): string[] {
-  const alias = LESSON_ALIAS[`${modId}:${idx}`]?.[lang] ?? []
-  const title = lang === 'ru' ? lesson.titleRu : lesson.titleUz
-  return [...new Set([...titleKeywords(title), ...alias])]
-}
 
 interface LessonMeta { idx: number; title: string; ids: number[] }
 
@@ -160,33 +135,21 @@ export default function TopicsPage() {
     [wrongByTicket]
   )
 
-  /** Har modul uchun VISIBLE darslar: faqat kamida 3 ta real kalit-mos savoli borlar */
+  /** Har modul uchun VISIBLE darslar: FAQAT curated mapping'da borlar (3+ savol) */
   const visibleByMod = useMemo(() => {
     const perMod: Record<number, LessonMeta[]> = {}
+    const map = (lessonMap as Record<string, number[]>)
     for (const mod of modules) {
       const list = lessonsData[mod.id] ?? []
-      const rows = list.map((lesson, idx) => {
-        const kws = lessonKeywords(mod.id, idx, lesson, lang)
-        const ids = kws.length === 0
-          ? []
-          : questions
-              .filter((q) => {
-                const t = q.text.toLowerCase()
-                return kws.some((k) => t.includes(k))
-              })
-              .sort((a, b) => a.id - b.id)
-              .slice(0, MAX_VISIBLE)
-              .map((q) => q.id)
-        return {
-          idx,
-          title: lang === 'ru' ? lesson.titleRu : lesson.titleUz,
-          ids,
-        }
-      })
+      const rows = list.map((lesson, idx) => ({
+        idx,
+        title: lang === 'ru' ? lesson.titleRu : lesson.titleUz,
+        ids: map[`${mod.id}:${idx}`] ?? [],
+      }))
       perMod[mod.id] = rows.filter((r) => r.ids.length >= MIN_VISIBLE)
     }
     return perMod
-  }, [questions, lang])
+  }, [lang])
 
   const startLesson = (l: LessonMeta) => {
     navigate('/test/1', {
