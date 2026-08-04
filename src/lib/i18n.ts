@@ -24,6 +24,7 @@ const UZ = {
   t20: "20 talik tezkor test", t50Test: "50 talik test", t100: "100 talik test",
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
   diffHard: "Qiyin", minWord: "daqiqa",
+  mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -114,6 +115,7 @@ const RU: Record<Keys, string> = {
   t20: "Быстрый тест 20", t50Test: "Тест 50", t100: "Тест 100",
   examDesc: "Симулятор реального экзамена", diffEasy: "Легко", diffMid: "Средне",
   diffHard: "Сложно", minWord: "минут",
+  mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",

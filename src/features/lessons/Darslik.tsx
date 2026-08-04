@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap } from 'lucide-react'
 import { modules } from '../../shared/data'
@@ -267,12 +267,21 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
 
 export default function Darslik() {
   const navigate = useNavigate()
+  const location = useLocation()
   const { settings } = useAppStore()
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
   const questions = useQuestionsStore((s) => s.questions)
   const topics = useQuestionsStore((s) => s.topics)
-  const [reader, setReader] = useState<{ mod: Mod; idx: number } | null>(null)
+  // "Davom etish" kartasidan kelish — aniq darsni ochish
+  const [reader, setReader] = useState<{ mod: Mod; idx: number } | null>(() => {
+    const st = location.state as { moduleId?: number; lessonIdx?: number } | null
+    if (st?.moduleId != null && st?.lessonIdx != null) {
+      const mod = modules.find((m) => m.id === st.moduleId)
+      if (mod) return { mod, idx: Math.min(Math.max(0, st.lessonIdx), mod.lessonCount - 1) }
+    }
+    return null
+  })
   const [toast, setToast] = useState<string | null>(null)
 
   const ru = settings.language === 'ru'

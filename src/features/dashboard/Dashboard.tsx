@@ -3,13 +3,15 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Settings,
-  Play, Swords, ListChecks, GraduationCap,
+  Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
-  Ticket, ClipboardCheck, ShieldAlert,
+  Ticket, ShieldAlert,
   ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
+import { modules } from '../../data/modules'
+import { useLessonsStore } from '../../store/useLessonsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
@@ -109,22 +111,28 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
           </svg>
         )}
       </div>
-      {/* Pastki: streak / XP / Liga */}
-      <div className="flex items-center justify-around mt-3.5 pt-3 border-t border-line/60">
-        <div className="flex flex-col items-center">
+      {/* Pastki: streak / XP / Liga — RAQAM+label chapda, ICON o'ngda */}
+      <div className="flex items-center justify-around mt-3.5 pt-3">
+        <div className="flex items-center gap-1.5">
+          <div className="text-left">
+            <p className="text-sm font-black text-fg leading-none">{streak}</p>
+            <p className="text-[10px] text-subtle">{tt('streakConsec')}</p>
+          </div>
           <span className="text-base">🔥</span>
-          <span className="text-sm font-black text-fg">{streak}</span>
-          <span className="text-[10px] text-subtle">{tt('streakConsec')}</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex items-center gap-1.5">
+          <div className="text-left">
+            <p className="text-sm font-black text-fg leading-none">{xp}</p>
+            <p className="text-[10px] text-subtle">XP</p>
+          </div>
           <span className="text-base">⭐</span>
-          <span className="text-sm font-black text-fg">{xp}</span>
-          <span className="text-[10px] text-subtle">XP</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex items-center gap-1.5">
+          <div className="text-left">
+            <p className="text-sm font-black text-fg leading-none">{league}</p>
+            <p className="text-[10px] text-subtle">{tt('league')}</p>
+          </div>
           <span className="text-base">🏆</span>
-          <span className="text-sm font-black text-fg">{league}</span>
-          <span className="text-[10px] text-subtle">{tt('league')}</span>
         </div>
       </div>
     </div>
@@ -190,28 +198,36 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
   )
 })
 
-// ── Continue Card (v1.1: "Davom etish" — joriy fan + progress + play) ───────
-const ContinueCard = memo(function ContinueCard({ subjectName, subjectIcon: SubjectIcon, answeredPercent, lang, onContinue, onSeeAll }: {
-  subjectName: string; subjectIcon: React.ElementType; answeredPercent: number
+// ── Continue Card (v1.1: "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha) ──
+const ContinueCard = memo(function ContinueCard({ modTitle, modIcon, modColor, lessonLabel, progressPct, allDone, lang, onContinue, onSeeAll }: {
+  modTitle: string; modIcon: string; modColor: string
+  lessonLabel: string;         // masalan: "3/7 дars"
+  progressPct: number          // shu modul'dagi tayyorlik foizi
+  allDone: boolean
   lang: 'uz' | 'ru'; onContinue: () => void; onSeeAll: () => void
 }) {
   const tt = useT(lang)
   return (
     <div className="px-4 mb-3">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-[15px] font-black text-fg">{tt('continueLearn')}</h3>
+        <h3 className="text-[15px] font-black text-fg flex items-center gap-1.5">
+          {tt('continueLearn')}
+          <GraduationCap size={16} className="text-duo-blue" />
+        </h3>
         <button onClick={onSeeAll} className="text-[12px] font-bold text-neon-green flex items-center gap-0.5 active:opacity-70">
           {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
         </button>
       </div>
       <button onClick={onContinue} className="card-neon w-full flex items-center gap-3 p-3.5 active:scale-[0.99] transition-transform">
-        <div className="glow-green w-12 h-12 rounded-2xl bg-gradient-to-br from-neon-purple/25 to-neon-blue/15 border border-neon-purple/30 flex items-center justify-center">
-          <SubjectIcon size={24} className="text-neon-violet" strokeWidth={2.2} />
+        <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0"
+          style={{ background: `${modColor}26`, border: `1px solid ${modColor}55`, boxShadow: `0 0 18px ${modColor}66` }}>
+          {modIcon}
         </div>
         <div className="flex-1 min-w-0 text-left">
-          <p className="text-[14px] font-black text-fg truncate">{subjectName}</p>
+          <p className="text-[14px] font-black text-fg truncate">{modTitle}</p>
+          <p className="text-[11px] text-subtle">{allDone ? tt('allDoneWord') : lessonLabel}</p>
           <div className="progress-neon mt-2">
-            <div className="fill" style={{ width: `${Math.max(answeredPercent, 2)}%` }} />
+            <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
           </div>
         </div>
         <div className="glow-green w-10 h-10 rounded-full bg-neon-green flex items-center justify-center flex-shrink-0">
@@ -376,6 +392,34 @@ export default function Dashboard() {
   const questionsCount = useQuestionsStore((s) => s.questions.length)
   const tt = useT(settings.language)
 
+  // "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha darslik ma'lumoti
+  const continueInfo = useMemo(() => {
+    const userId  = user?.id ?? '0'
+    const doneMap = useLessonsStore.getState().byUser[userId] ?? {}
+    for (const mod of modules) {
+      const done = doneMap[mod.id] ?? []
+      for (let i = 0; i < mod.lessonCount; i++) {
+        if (!done.includes(i)) {
+          return {
+            mod,
+            pct: Math.round((done.length / mod.lessonCount) * 100),
+            lessonLabel: `${tt('lessonWord')} ${i + 1}/${mod.lessonCount}`,
+            allDone: false,
+            go: () => navigate('/darslik', { state: { moduleId: mod.id, lessonIdx: i } }),
+          }
+        }
+      }
+    }
+    const last = modules[modules.length - 1]
+    return {
+      mod: last,
+      pct: 100,
+      lessonLabel: `${tt('lessonWord')} ${last.lessonCount}/${last.lessonCount}`,
+      allDone: true,
+      go: () => navigate('/darslik'),
+    }
+  }, [user?.id, settings.language, navigate, tt])
+
   // "Xatolarni tuzatish" badge = hozir yechilmagan xato SAVOLLAR soni.
   // (wrongByTicket qiymati esa ketma-ket xato urinishlar soni — ro'yxat savollarni sanaydi,
   //  shuning uchun badge ro'yxat uzunligiga teng bo'lishi kerak: 4 savol = 4, urinishlar 8 emas)
@@ -397,7 +441,6 @@ export default function Dashboard() {
     setTimeout(() => setToast(null), 3000)
   }, [])
 
-  const goTest     = useCallback(() => navigate('/test/1'), [navigate])
   const goMistakes = useCallback(() => navigate('/mavzular'), [navigate])
   const goTopics   = useCallback(() => navigate('/mavzular'), [navigate])
   const goAdaptive = useCallback(() => navigate('/adaptive'), [navigate])
@@ -406,7 +449,7 @@ export default function Dashboard() {
   const goDarslik  = useCallback(() => navigate('/darslik'), [navigate])
 
   /** Real test modes — TestPage builds the question set based on `mode` */
-  const goMode = useCallback((mode: 'random50' | 'exam' | 'tricky' | 'numeric', title: string) => () =>
+  const goMode = useCallback((mode: 'tricky' | 'numeric', title: string) => () =>
     navigate('/test/1', { state: { mode, title } }), [navigate])
 
   const goSaved = useCallback(() => {
@@ -455,14 +498,17 @@ export default function Dashboard() {
             lang={settings.language}
           />
 
-      {/* Davom etish — joriy fan bilan davom (v1.1) */}
+      {/* Davom etish — QAYSI darsda qolgan bo'lsa o'sha darslik (v1.1) */}
       <ContinueCard
-        subjectName={settings.language === 'ru' ? subject.nameRu : subject.name}
-        subjectIcon={subject.icon}
-        answeredPercent={questionsCount > 0 ? Math.min(100, Math.round((totalAnswered / questionsCount) * 100)) : 0}
+        modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
+        modIcon={continueInfo.mod.icon}
+        modColor={continueInfo.mod.color}
+        lessonLabel={continueInfo.lessonLabel}
+        progressPct={continueInfo.pct}
+        allDone={continueInfo.allDone}
         lang={settings.language}
-        onContinue={goTest}
-        onSeeAll={goTopics}
+        onContinue={continueInfo.go}
+        onSeeAll={goDarslik}
       />
 
       {/* v1.1 MOCK GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
@@ -474,7 +520,7 @@ export default function Dashboard() {
           iconColor="#38bdf8" onClick={goTopics} />
         <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
           iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-        <MockGridCard icon={HeartCrack} label={tt('fixMistakes')} subtitle={tt('mistakesDesc')}
+        <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakesDesc')}
           iconColor="#ff4b4b" badge={mistakesCount || null} onClick={goMistakes} />
         <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
           iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
@@ -487,8 +533,6 @@ export default function Dashboard() {
         <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em]">{tt('modesTitle')}</p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-3">
-        <GridCard icon={ListChecks}    label={tt('fifty')}       iconColor="#58cc02" onClick={goMode('random50', `${tt('fifty')} ${tt('question')}`)} />
-        <GridCard icon={ClipboardCheck} label={tt('realExam')}    iconColor="#4ade80" onClick={goMode('exam', tt('realExam'))} />
         <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
         <GridCard icon={GraduationCap} label={tt('lessons')}     iconColor="#1cb0f6" onClick={goDarslik} />
         <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
