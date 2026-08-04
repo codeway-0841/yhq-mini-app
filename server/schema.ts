@@ -121,6 +121,8 @@ export const dailyRecords = pgTable('daily_records', {
   correct:     integer('correct').default(0).notNull(),
   /** Shu kunda tuzatilgan eski xatolar soni (Intizom sahifasidagi "TUZATILDI") */
   fixed:       integer('fixed').default(0).notNull(),
+  /** Kunlik 5 talik topshiriq yakunlandimi (Dashboard'dagi "Tayyor" belgisi) */
+  challengeDone: boolean('challenge_done').default(false).notNull(),
   completedAt: timestamp('completed_at').defaultNow().notNull(),
 }, (t) => [
   unique('uq_daily_record').on(t.userId, t.date, t.subjectId),

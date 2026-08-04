@@ -5,6 +5,8 @@ import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap 
 import { modules } from '../../shared/data'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../data/lessons'
 import { useLessonsStore } from '../../store/useLessonsStore'
+import { useDailyStore, todayStr } from '../../store/useDailyStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../lib/telegram'
@@ -337,7 +339,13 @@ export default function Darslik() {
           mod={reader.mod}
           lessonIdx={reader.idx}
           onClose={() => setReader(null)}
-          onDone={(idx) => markDone(userId, reader.mod.id, idx)}
+          onDone={(idx) => {
+            markDone(userId, reader.mod.id, idx)
+            // Dars bilan shug'ullanish ham kunlik faollik — streak yoziladi (kunda 1 marta)
+            void useDailyStore.getState().touchActivity(
+              userId, todayStr(), useSubjectStore.getState().subjectId,
+            )
+          }}
           onPractice={() => practiceModule(reader.mod)}
         />
       )}

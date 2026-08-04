@@ -7,7 +7,6 @@ import {
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
   ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown,
-  Flame, Check,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
@@ -19,8 +18,7 @@ import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../components/SubjectSheet'
-import { useDailyStore, todayStr, doneKeyOf } from '../../store/useDailyStore'
-import { seededShuffle, hashSeed } from '../../lib/seeded'
+import { useDailyStore, todayStr } from '../../store/useDailyStore'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
@@ -412,73 +410,6 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
   )
 })
 
-// ── Kunlik topshiriq kartasi — deterministik kunlik set + kunlar seriyasi ──
-// Savollar: seededShuffle(questions, hashSeed(sana+subjectId)) → har kuni yangi,
-// bir kun ichida hamma uchun bir xil (tekshirib bo'ladi, serverga saqlanmaydi).
-const DailyCard = memo(function DailyCard() {
-  const subject   = useSubjectStore((s) => s.subject)
-  const lang      = useAppStore((s) => s.settings.language)
-  const tt        = useT(lang)
-  const questions = useQuestionsStore((s) => s.questions)
-  const userId    = useAppStore((s) => s.user?.id)
-  const doneKey   = useDailyStore((s) => s.doneKey)
-  // Har fanning o'z streaki — boshqa fanga o'tganda shu fanga tegishli seriya ko'rinadi
-  const streak    = useDailyStore((s) => s.streaks[subject.id] ?? 0)
-  const navigate  = useNavigate()
-  const today     = todayStr()
-
-  // Serverdan bugungi holatni tortish (kun yoki fan o'zgarsa qayta)
-  useEffect(() => {
-    if (userId) void useDailyStore.getState().sync(userId, today, subject.id)
-  }, [userId, today, subject.id])
-
-  const done = doneKey === doneKeyOf(today, subject.id)
-
-  const start = () => {
-    if (done || questions.length === 0) return
-    const set = seededShuffle(questions, hashSeed(`${today}|${subject.id}`))
-      .slice(0, Math.min(subject.dailyCount, questions.length))
-    track('daily_start', { subject: subject.id })
-    navigate('/test/1', {
-      state: {
-        questionIds: set.map((q) => q.id),
-        mode: 'daily',
-        dailyDate: today,
-        title: tt('dailyTask'),
-      },
-    })
-  }
-
-  return (
-    <div className="px-4 mb-3">
-      <button onClick={start} disabled={done}
-        className="card-neon w-full p-3.5 flex items-center gap-3 text-left active:scale-[0.98] transition-transform disabled:active:scale-100">
-        <div className="glow-yellow w-10 h-10 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
-          <Flame size={19} className="text-duo-yellow" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-[13px] font-black text-fg">{tt('dailyTask')}</p>
-          <p className="text-[11px] text-subtle">
-            {done
-              ? tt('dailyDone')
-              : `${Math.min(subject.dailyCount, questions.length)} ${tt('question').toLowerCase()} · 🔥 ${streak} ${tt('daysWord')}`}
-          </p>
-        </div>
-        {done ? (
-          <span className="flex items-center gap-1 text-duo-green text-[12px] font-black flex-shrink-0">
-            <Check size={14} strokeWidth={3} />
-            {tt('doneWord')}
-          </span>
-        ) : (
-          <span className="btn-neon px-3.5 py-1.5 rounded-xl text-[12px] flex-shrink-0">
-            {tt('startWord')}
-          </span>
-        )}
-      </button>
-    </div>
-  )
-})
-
 // ── Empty State — "tez kunda" fanlar uchun ─────────────────────────────────
 const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch: () => void }) {
   const subject = useSubjectStore((s) => s.subject)
@@ -518,6 +449,12 @@ export default function Dashboard() {
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
   const dailyStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
   const questionsCount = useQuestionsStore((s) => s.questions.length)
+
+  // Serverdan bugungi holatni tortish (kun yoki fan o'zgarsa qayta)
+  const userId = user?.id
+  useEffect(() => {
+    if (userId) void useDailyStore.getState().sync(userId, todayStr(), subject.id)
+  }, [userId, subject.id])
   const tt = useT(settings.language)
 
   // "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha darslik ma'lumoti
@@ -626,8 +563,8 @@ export default function Dashboard() {
             lang={settings.language}
           />
 
-      {/* Kunlik topshiriq — deterministik 20-30 talik set + kunlar seriyasi */}
-      <DailyCard />
+      {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
+         (kamida 1 savol yoki dars) yoziladi: ProgressCard🔥 → /streak */}
 
       {/* Premium fake-door (1 haftalik sinov: premium_click KPI o'lchanadi) */}
       <div className="mx-4 mb-3 card-neon p-3.5 flex items-center gap-3">

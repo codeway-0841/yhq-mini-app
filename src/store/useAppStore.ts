@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { api, type ApiUser, type ApiProgress, type ApiSettings } from '@/lib/api'
 import { useSubjectStore } from './useSubjectStore'
-import { todayStr } from './useDailyStore'
+import { useDailyStore, todayStr } from './useDailyStore'
 
 export type { ApiUser, ApiProgress, ApiSettings }
 
@@ -117,6 +117,9 @@ export const useAppStore = create<AppState>()(
         }))
         if (userId && userId !== '0') {
           api.postResult(userId, correct, questionId).catch(console.error)
+          // Kunlik faollik + kunlik JAMI savol hisobi (heat map uchun) — har javob
+          void useDailyStore.getState().touchActivity(userId, todayStr(), useSubjectStore.getState().subjectId,
+            { answered: 1, correct: correct ? 1 : 0 })
           if (wasWrong) {
             api.addDailyFix(userId, {
               date:      todayStr(),

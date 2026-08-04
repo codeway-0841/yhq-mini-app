@@ -1,0 +1,1 @@
+ALTER TABLE "daily_records" ADD COLUMN "challenge_done" boolean DEFAULT false NOT NULL;

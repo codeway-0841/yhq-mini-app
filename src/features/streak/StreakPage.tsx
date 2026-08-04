@@ -151,7 +151,9 @@ export default function StreakPage() {
           {cells.map((date, i) => {
             if (!date) return <span key={`e${i}`} />
             const future = date > today
-            const level  = future ? 0 : heatLevel(byDate.get(date)?.answered ?? 0)
+            // Har qanday faollik (test, xato tuzatish, dars) — kamida 1-daraja yashil
+            const rec    = byDate.get(date)
+            const level  = future || !rec ? 0 : Math.max(1, heatLevel(rec.answered))
             const isSel  = date === selected
             const isNow  = date === today
             return (

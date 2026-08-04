@@ -5,6 +5,7 @@
  * GET  /api/daily/:userId/history?date=...&subject=yhq → barcha kunlar + joriy/best streak
  * POST /api/daily/:userId/complete                     → {date, subjectId, answered, correct}
  * POST /api/daily/:userId/fix                          → xato tuzatildi (+1), {date, subjectId}
+ * POST /api/daily/:userId/activity                     → kunlik faollik (1 savol yoki dars) → streak
  */
 
 import { Router }             from 'express'
@@ -102,6 +103,34 @@ router.post(
     await dailyRepository.addFixed(uid, date, subjectId)
 
     res.json({ ok: true })
+  }),
+)
+
+const ActivitySchema = z.object({
+  date:      z.string().regex(DATE_RE),
+  subjectId: z.string().min(1).max(32),
+  /** Shu chaqiruvdagi savol delta'lari (0 = sof faollik, masalan dars) */
+  answered:  z.number().int().min(0).max(100).default(0),
+  correct:   z.number().int().min(0).max(100).default(0),
+})
+
+// POST /api/daily/:userId/activity
+// Kunlik faollik: kamida 1 savol YOKI dars — streak shu bilan yoziladi.
+// Har javob answered/correct delta sifatida qo'shiladi (kunlik JAMI — heat map).
+router.post(
+  '/daily/:userId/activity',
+  rateLimit({ maxPerMinute: 300 }),
+  validate({ body: ActivitySchema }),
+  wrap(async (req, res) => {
+    const uid = parseBigInt(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    await progressRepository.ensureExists(uid)
+
+    const { date, subjectId, answered, correct } = req.body as z.infer<typeof ActivitySchema>
+    const { dailyStreak } = await dailyRepository.touchActivity(uid, date, subjectId, answered, correct)
+
+    res.json({ ok: true, dailyStreak })
   }),
 )
 

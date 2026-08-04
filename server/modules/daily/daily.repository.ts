@@ -55,6 +55,7 @@ export interface DailyRecordRow {
   subjectId: string
   answered: number
   correct: number
+  challengeDone: boolean
 }
 
 export interface DailyHistoryRow extends DailyRecordRow {
@@ -83,6 +84,7 @@ export const dailyRepository = {
       subjectId: dailyRecords.subjectId,
       answered:  dailyRecords.answered,
       correct:   dailyRecords.correct,
+      challengeDone: dailyRecords.challengeDone,
     }).from(dailyRecords).where(
       and(
         eq(dailyRecords.userId, userId),
@@ -100,9 +102,51 @@ export const dailyRepository = {
   },
 
   /**
+   * Kunlik FAOLLIK belgisi — kamida 1 savol yechsa YOKI dars bilan shug'ullansa.
+   * Yangi o'rganuvchilar uchun streak sharti shu: katta test yakunlash shart emas.
+   * Har javobda `answered`/`correct` inkrementlanadi — shu kunni kalendar
+   * xaritasida qancha ko'p yechilsa, shuncha to'q rang beradi.
+   *
+   * Streak idempotent: bir xil kun qayta kelsa o'zgarmaydi (kun ko'chsa +1).
+   */
+  async touchActivity(
+    userId:    bigint,
+    date:      string,
+    subjectId: string,
+    answeredDelta = 0,
+    correctDelta  = 0,
+  ): Promise<{ dailyStreak: number }> {
+    // 1) Faollik yozuvi + kunlik jami hisoblagichni inkrementlash
+    await db.insert(dailyRecords)
+      .values({ userId, date, subjectId, answered: answeredDelta, correct: correctDelta, fixed: 0 })
+      .onConflictDoUpdate({
+        target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
+        set: {
+          answered: sql`${dailyRecords.answered} + ${answeredDelta}`,
+          correct:  sql`${dailyRecords.correct} + ${correctDelta}`,
+        },
+      })
+
+    // 2) Streak yangilash (bugun allaqachon belgilangan bo'lsa — o'zgarishsiz)
+    const cur = await readStreak(userId, subjectId)
+    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0)
+
+    await db.insert(dailyStreaks).values({
+      userId, subjectId, streak: nextStreak, lastDailyDate: date,
+    }).onConflictDoUpdate({
+      target: [dailyStreaks.userId, dailyStreaks.subjectId],
+      set:    { streak: nextStreak, lastDailyDate: date, updatedAt: new Date() },
+    })
+
+    return { dailyStreak: nextStreak }
+  },
+
+  /**
    * Shu fanga tegishli barcha kunlik yozuvlar (sana bo'yicha o'suvchi) +
    * joriy streak (kun o'tkazilsa 0) + eng yaxshi (rekord) seriya.
    * "Intizom" sahifasi uchun.
+   *
+   * HAR BIR qator — o'sha kun faollik bo'lgani (test, xato tuzatish yoki dars).
    */
   async getHistory(userId: bigint, date: string, subjectId: string): Promise<{
     rows: DailyHistoryRow[]
@@ -115,12 +159,14 @@ export const dailyRepository = {
       answered:  dailyRecords.answered,
       correct:   dailyRecords.correct,
       fixed:     dailyRecords.fixed,
+      challengeDone: dailyRecords.challengeDone,
     }).from(dailyRecords)
       .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
       .orderBy(asc(dailyRecords.date))
 
     const row = await readStreak(userId, subjectId)
-    const activeDates = rows.filter((r) => r.answered > 0).map((r) => r.date)
+    // Yozuv mavjud = o'sha kun faollik (1+ savol yoki dars) — bestStreak shu bo'yicha
+    const activeDates = rows.map((r) => r.date)
 
     return {
       rows,
@@ -156,14 +202,16 @@ export const dailyRepository = {
     userId:    bigint,
     date:      string,
     subjectId: string,
-    answered:  number,
-    correct:   number,
+    _answered: number,
+    _correct:  number,
   ): Promise<{ dailyStreak: number }> {
-    // 1) Yozuv upsert (fixed sonini saqlab qolish — addFixed yozgan bo'lishi mumkin)
-    await db.insert(dailyRecords).values({ userId, date, subjectId, answered, correct })
+    // 1) Kunlik topshiriq yakunlandi belgisi. answered/correct BU YERDA YOZILMAYDI:
+    // ularga har savol touchActivity orqali qo'shiladi (kunlik JAMI hisob), aks holda
+    // test yakuni kunlik jami bilan 2 marta sanalib qolardi.
+    await db.insert(dailyRecords).values({ userId, date, subjectId, challengeDone: true })
       .onConflictDoUpdate({
         target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
-        set:    { answered, correct, completedAt: new Date() },
+        set:    { challengeDone: true, completedAt: new Date() },
       })
 
     // 2) Streak — shu fanning qatorini o'qib, JS'da yangi qiymat aniqlanadi

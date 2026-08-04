@@ -169,10 +169,13 @@ export const api = {
 
   addDailyFix: (userId: string, data: { date: string; subjectId: string }) =>
     request<{ ok: true }>('POST', `/daily/${uid(userId)}/fix`, data),
+
+  touchDailyActivity: (userId: string, data: { date: string; subjectId: string; answered?: number; correct?: number }) =>
+    request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 }
 
 export interface DailyState {
-  record: { date: string; subjectId: string; answered: number; correct: number } | null
+  record: { date: string; subjectId: string; answered: number; correct: number; challengeDone: boolean } | null
   dailyStreak: number
 }
 

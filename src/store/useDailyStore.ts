@@ -29,11 +29,19 @@ interface DailyState {
   doneKey: string | null
   /** Fan bo'yicha kunlik seriyalar — `streaks[subjectId]` */
   streaks: Record<string, number>
+  /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` (kunda 1 marta yuborish uchun) */
+  activityKey: string | null
 
   /** Serverdan bugungi holatni tortadi (xato bo'lsa sokin o'tkazadi) */
   sync:     (userId: string, date: string, subjectId: string) => Promise<void>
   /** Test yakuni — serverga yuboradi + lokalni yangilaydi */
   complete: (userId: string, date: string, subjectId: string, answered: number, correct: number) => Promise<void>
+  /**
+   * Kunlik faollik — kamida 1 savol yoki dars. Streak shu bilan yoziladi.
+   * `delta` bersa (har javob) HAR SAFAR yuboriladi (kunlik JAMI → heat map);
+   * berilmasa (sof faollik, masalan dars) kunda 1 marta dedupe qilinadi.
+   */
+  touchActivity: (userId: string, date: string, subjectId: string, delta?: { answered: number; correct: number }) => Promise<void>
 }
 
 export const useDailyStore = create<DailyState>()(
@@ -41,6 +49,7 @@ export const useDailyStore = create<DailyState>()(
     (set) => ({
       doneKey: null,
       streaks: {},
+      activityKey: null,
 
       sync: async (userId, date, subjectId) => {
         if (!userId || userId === '0') return // ghost user — faqat lokal
@@ -48,7 +57,7 @@ export const useDailyStore = create<DailyState>()(
           const data = await api.getDaily(userId, date, subjectId)
           set((s) => ({
             streaks: { ...s.streaks, [subjectId]: data.dailyStreak },
-            doneKey: data.record ? doneKeyOf(date, subjectId) : null,
+            doneKey: data.record?.challengeDone ? doneKeyOf(date, subjectId) : null,
           }))
         } catch { /* offline — eski lokal holatda qolamiz */ }
       },
@@ -64,6 +73,24 @@ export const useDailyStore = create<DailyState>()(
           console.warn('daily complete sync xatosi (lokal saqlandi):', err)
         }
       },
+
+      touchActivity: async (userId, date, subjectId, delta) => {
+        if (!userId || userId === '0') return
+        const key = doneKeyOf(date, subjectId)
+        // Sof faollik (dars) kunda 1 marta; savol delta'lari esa har safar
+        if (!delta?.answered && useDailyStore.getState().activityKey === key) return
+        try {
+          const res = await api.touchDailyActivity(userId, {
+            date, subjectId,
+            answered: delta?.answered ?? 0,
+            correct:  delta?.correct ?? 0,
+          })
+          set((s) => ({
+            activityKey: key,
+            streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
+          }))
+        } catch { /* offline — keyingi urinishda belgilanadi */ }
+      },
     }),
     {
       name:    'yhq-daily',
@@ -77,7 +104,7 @@ export const useDailyStore = create<DailyState>()(
           const subjectId = s.doneKey.split('|')[1]
           if (subjectId && !streaks[subjectId]) streaks[subjectId] = s.dailyStreak
         }
-        return { doneKey: s.doneKey ?? null, streaks }
+        return { doneKey: s.doneKey ?? null, streaks, activityKey: null }
       },
     },
   ),
