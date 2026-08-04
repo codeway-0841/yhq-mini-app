@@ -15,6 +15,10 @@ const UZ = {
   greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
   continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
   streakConsec: "Ketma-ket", dailyTask: "Kunlik mashq", dailyTaskDesc: "10 ta maxsus savolni yeching",
+  // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
+  todayProgress: "Bugungi progress", switchSubject: "Fanlarni almashtirish",
+  testsWord: "ta test", currentTopic: "Davom etayotgan mavzu",
+  streakDays: "Seriya", totalXp: "Jami tajriba", ratingWord: "Reyting",
   // v1.1 Mock grid
   testlarTitle: "Testlar", aiTutor: "AI Tutor", comingSoonD: "Tez orada",
   allTopicsDesc: "Barcha mavzular", mistakesDesc: "Xato ustida ishlash",
@@ -109,6 +113,10 @@ const RU: Record<Keys, string> = {
   greeting: "Привет", level: "Уровень", overallProgress: "Общий прогресс",
   continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
   streakConsec: "Подряд", dailyTask: "Ежедневная тренировка", dailyTaskDesc: "Решите 10 специальных вопросов",
+  // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
+  todayProgress: "Прогресс сегодня", switchSubject: "Сменить предмет",
+  testsWord: "тестов", currentTopic: "Текущая тема",
+  streakDays: "Серия", totalXp: "Всего опыта", ratingWord: "Рейтинг",
   // v1.1 Mock grid
   testlarTitle: "Тесты", aiTutor: "AI Tutor", comingSoonD: "Скоро",
   allTopicsDesc: "Все темы", mistakesDesc: "Работа с ошибками",

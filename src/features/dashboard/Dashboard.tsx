@@ -71,7 +71,7 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
   )
 })
 
-// ── Progress Card (v1.1 Neon Navy: ring chart + neon chiziq + stat qator) ───
+// ── Bugungi progress karta (mock dizayn: yashil gradient + segment chiziq + ring) ──
 const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
@@ -80,59 +80,75 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   const tt = useT(lang)
   const total    = totalPool > 0 ? totalPool : 0
   const accuracy = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
-  const coverage = total > 0 ? Math.min(100, Math.round((totalAnswered / total) * 100)) : 0
   const xp       = totalCorrect * 10
   const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
   // Ring chart geometriyasi (SVG)
   const R = 34, C = 2 * Math.PI * R
-  const ringOffset = C * (1 - coverage / 100)
+  const ringOffset = C * (1 - accuracy / 100)
+
+  // Segmentli chiziq (mock'dagi nuqtali progress)
+  const SEGMENTS = 10
+  const filledSegs = Math.round((accuracy / 100) * SEGMENTS)
 
   return (
-    <div className="card-neon mx-4 p-4 mb-3 relative overflow-hidden">
+    <div className="mx-4 mb-3 rounded-3xl p-4 relative overflow-hidden border border-duo-green/50"
+      style={{
+        background: 'linear-gradient(135deg, #46a302 0%, #58cc02 45%, #2f8f05 100%)',
+        boxShadow: '0 0 30px rgba(88, 204, 2, 0.30), 0 18px 40px rgba(2, 8, 23, 0.45), inset 0 1px 0 rgba(255,255,255,0.20)',
+      }}>
       <div className="flex items-center justify-between gap-3">
-        {/* Chap: card + progress */}
+        {/* Chap: foiz + segment chiziq */}
         <div className="flex-1 min-w-0">
-          <p className="text-[12px] font-bold text-subtle mb-1">{tt('overallProgress')}</p>
-          <p className="text-[34px] font-black text-fg leading-none mb-1">{accuracy}%</p>
-          <p className="text-[11px] text-subtle mb-2.5">{totalAnswered} / {total || '…'} {tt('question').toLowerCase()}</p>
-          <div className="progress-neon">
-            <div className="fill" style={{ width: `${Math.max(coverage, totalAnswered > 0 ? 3 : 0)}%` }} />
+          <p className="text-[12px] font-bold text-white/75 mb-1">{tt('todayProgress')}</p>
+          <p className="text-[34px] font-black text-white leading-none drop-shadow-sm">{accuracy}%</p>
+          <p className="text-[11px] font-semibold text-white/70 mt-1 mb-2.5">
+            {totalAnswered} / {total || '…'} {tt('question').toLowerCase()}
+          </p>
+          <div className="flex gap-1">
+            {Array.from({ length: SEGMENTS }).map((_, i) => (
+              <span key={i} className="h-2 flex-1 rounded-full"
+                style={{
+                  background: i < filledSegs ? '#b6ff4f' : 'rgba(10, 48, 0, 0.30)',
+                  boxShadow: i < filledSegs ? '0 0 8px rgba(182, 255, 79, 0.6)' : undefined,
+                }} />
+            ))}
           </div>
         </div>
-        {/* O'ng: neon ring chart */}
+        {/* O'ng: ring chart */}
         {total > 0 && (
-          <svg width="92" height="92" viewBox="0 0 92 92" className="flex-shrink-0 ring-glow">
-            <circle cx="46" cy="46" r={R} fill="none" stroke="#1c2d4a" strokeWidth="8" />
-            <circle cx="46" cy="46" r={R} fill="none" stroke="#8b5cf6" strokeWidth="8"
+          <svg width="92" height="92" viewBox="0 0 92 92" className="flex-shrink-0"
+            style={{ filter: 'drop-shadow(0 0 10px rgba(182, 255, 79, 0.5))' }}>
+            <circle cx="46" cy="46" r={R} fill="none" stroke="rgba(10, 48, 0, 0.30)" strokeWidth="8" />
+            <circle cx="46" cy="46" r={R} fill="none" stroke="#b6ff4f" strokeWidth="8"
               strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
               transform="rotate(-90 46 46)"
               style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
-            <text x="46" y="51" textAnchor="middle" fill="#f2f7ff" fontSize="16" fontWeight="900">{coverage}%</text>
+            <text x="46" y="51" textAnchor="middle" fill="#ffffff" fontSize="16" fontWeight="900">{accuracy}%</text>
           </svg>
         )}
       </div>
-      {/* Pastki: streak / XP / Liga — ICON chapda (mock'dagi kabi), RAQAM o'ngda */}
-      <div className="flex items-center justify-around mt-3.5 pt-3">
+      {/* Pastki statistika: Seriya / XP / Reyting */}
+      <div className="flex items-center justify-around mt-3.5 pt-3 border-t border-white/15">
         <div className="flex items-center gap-1.5">
           <span className="text-base">🔥</span>
           <div className="text-left">
-            <p className="text-sm font-black text-fg leading-none">{streak}</p>
-            <p className="text-[10px] text-subtle">{tt('streakConsec')}</p>
+            <p className="text-sm font-black text-white leading-none">{streak} {tt('daysWord')}</p>
+            <p className="text-[10px] font-semibold text-white/70">{tt('streakDays')}</p>
           </div>
         </div>
         <div className="flex items-center gap-1.5">
           <span className="text-base">⭐</span>
           <div className="text-left">
-            <p className="text-sm font-black text-fg leading-none">{xp}</p>
-            <p className="text-[10px] text-subtle">XP</p>
+            <p className="text-sm font-black text-white leading-none">{xp} XP</p>
+            <p className="text-[10px] font-semibold text-white/70">{tt('totalXp')}</p>
           </div>
         </div>
         <div className="flex items-center gap-1.5">
           <span className="text-base">🏆</span>
           <div className="text-left">
-            <p className="text-sm font-black text-fg leading-none">{league}</p>
-            <p className="text-[10px] text-subtle">{tt('league')}</p>
+            <p className="text-sm font-black text-white leading-none">{league}</p>
+            <p className="text-[10px] font-semibold text-white/70">{tt('ratingWord')}</p>
           </div>
         </div>
       </div>
@@ -199,41 +215,39 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
   )
 })
 
-// ── Continue Card (v1.1: "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha) ──
-const ContinueCard = memo(function ContinueCard({ modTitle, modIcon, modColor, lessonLabel, progressPct, allDone, lang, onContinue, onSeeAll }: {
+// ── Davom etayotgan mavzu kartasi (mock dizayn: navy karta + yashil CTA) ────
+const ContinueCard = memo(function ContinueCard({ modTitle, modIcon, modColor, lessonLabel, progressPct, allDone, lang, onContinue }: {
   modTitle: string; modIcon: string; modColor: string
-  lessonLabel: string;         // masalan: "3/7 дars"
+  lessonLabel: string;         // masalan: "3/7 dars"
   progressPct: number          // shu modul'dagi tayyorlik foizi
   allDone: boolean
-  lang: 'uz' | 'ru'; onContinue: () => void; onSeeAll: () => void
+  lang: 'uz' | 'ru'; onContinue: () => void
 }) {
   const tt = useT(lang)
   return (
     <div className="px-4 mb-3">
-      <div className="flex items-center justify-between mb-2">
-        <h3 className="text-[15px] font-black text-fg flex items-center gap-1.5">
-          {tt('continueLearn')}
-          <GraduationCap size={16} className="text-duo-blue" />
-        </h3>
-        <button onClick={onSeeAll} className="text-[12px] font-bold text-neon-green flex items-center gap-0.5 active:opacity-70">
-          {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
-        </button>
-      </div>
-      <button onClick={onContinue} className="card-neon w-full flex items-center gap-3 p-3.5 active:scale-[0.99] transition-transform">
-        <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0"
-          style={{ background: `${modColor}26`, border: `1px solid ${modColor}55`, boxShadow: `0 0 18px ${modColor}66` }}>
-          {modIcon}
-        </div>
-        <div className="flex-1 min-w-0 text-left">
-          <p className="text-[14px] font-black text-fg truncate">{modTitle}</p>
-          <p className="text-[11px] text-subtle">{allDone ? tt('allDoneWord') : lessonLabel}</p>
-          <div className="progress-neon mt-2">
+      <button onClick={onContinue}
+        className="card-neon w-full relative overflow-hidden flex items-center gap-3 p-4 active:scale-[0.99] transition-transform text-left">
+        <div className="flex-1 min-w-0">
+          <p className="text-[12px] font-semibold text-subtle">{tt('currentTopic')}</p>
+          <p className="text-[18px] font-black text-fg truncate mt-0.5">{modTitle}</p>
+          <p className="text-[11px] font-semibold text-subtle mt-1.5">
+            {allDone ? tt('allDoneWord') : lessonLabel}
+          </p>
+          <div className="progress-neon mt-1.5 max-w-[180px]">
             <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
           </div>
         </div>
-        <div className="glow-green w-10 h-10 rounded-full bg-neon-green flex items-center justify-center flex-shrink-0">
-          <Play size={16} fill="#0b2003" color="#0b2003" />
+        {/* O'rtada glowing modul ikoni (mock'dagi 3D illyustratsiya o'rnida) */}
+        <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0"
+          style={{ background: `${modColor}1f`, border: `1px solid ${modColor}55`, boxShadow: `0 0 22px ${modColor}80` }}>
+          {modIcon}
         </div>
+        {/* Yashil "Davom etish" CTA */}
+        <span className="btn-neon flex items-center gap-1.5 px-4 py-3 rounded-2xl text-[13px] flex-shrink-0">
+          {tt('continueLearn')}
+          <ChevronDown size={14} className="-rotate-90" />
+        </span>
       </button>
     </div>
   )
@@ -331,25 +345,41 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   )
 })
 
-// ── Subject Switcher chip — dashboard yuqorisidagi universal fan tanlagich ──
+// ── Subject Switcher — mock dizayn: navy karta + fan ikoni + testlar soni ──
 const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
   const subject = useSubjectStore((s) => s.subject)
   const lang    = useAppStore((s) => s.settings.language)
+  const count   = useQuestionsStore((s) => s.questions.length)
+  const tt      = useT(lang)
   const Icon    = subject.icon
   return (
     <div className="px-4 mb-2.5">
-      <button onClick={onOpen}
-        className="btn-3d-ghost w-full flex items-center gap-3 rounded-2xl px-3 py-2.5"
-        aria-label="Fan tanlash">
-        <span className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{ background: `${subject.color}26`, color: subject.color }}>
-          <Icon size={19} strokeWidth={2.2} />
-        </span>
-        <span className="flex-1 text-left text-[14px] font-extrabold text-fg min-w-0 truncate">
-          {lang === 'ru' ? subject.nameRu : subject.name}
-        </span>
-        <ChevronDown size={18} className="text-subtle flex-shrink-0" />
-      </button>
+      <div className="card-neon relative overflow-hidden p-4">
+        {/* Dekorativ watermark ikon — o'ng burchak (mock'dagi 3D illyustratsiya o'rnida) */}
+        <Icon size={110} strokeWidth={1.2} aria-hidden
+          className="absolute -right-4 -bottom-6 opacity-[0.08] pointer-events-none"
+          style={{ color: subject.color }} />
+        <div className="relative flex items-center gap-3.5">
+          <span className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+            style={{ background: `${subject.color}1a`, border: `1px solid ${subject.color}55`, boxShadow: `0 0 20px ${subject.color}55` }}>
+            <Icon size={26} strokeWidth={2.2} style={{ color: subject.color }} />
+          </span>
+          <div className="flex-1 min-w-0">
+            <p className="text-[20px] font-black text-fg leading-tight truncate">
+              {lang === 'ru' ? subject.nameRu : subject.name}
+            </p>
+            <p className="text-[12px] font-semibold text-subtle mt-0.5">
+              {count > 0 ? count.toLocaleString('en-US') : '…'} {tt('testsWord')}
+            </p>
+            <button onClick={onOpen}
+              className="mt-2.5 flex items-center gap-1 rounded-full border border-line bg-elevated px-3.5 py-1.5 text-[12px] font-bold text-fg active:scale-95 transition-transform"
+              aria-label={tt('switchSubject')}>
+              {tt('switchSubject')}
+              <ChevronDown size={14} className="-rotate-90 text-subtle" />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   )
 })
@@ -514,7 +544,7 @@ export default function Dashboard() {
         </button>
       </div>
 
-      {/* Davom etish — QAYSI darsda qolgan bo'lsa o'sha darslik (v1.1) */}
+      {/* Davom etayotgan mavzu — QAYSI darsda qolgan bo'lsa o'sha darslik */}
       <ContinueCard
         modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
         modIcon={continueInfo.mod.icon}
@@ -524,7 +554,6 @@ export default function Dashboard() {
         allDone={continueInfo.allDone}
         lang={settings.language}
         onContinue={continueInfo.go}
-        onSeeAll={goDarslik}
       />
 
       {/* v1.1 MOCK GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
