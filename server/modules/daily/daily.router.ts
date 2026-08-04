@@ -3,7 +3,6 @@
  *
  * GET  /api/daily/:userId?date=YYYY-MM-DD&subject=yhq  → bugungi holat + streak
  * GET  /api/daily/:userId/history?date=...&subject=yhq → barcha kunlar + joriy/best streak
- * POST /api/daily/:userId/complete                     → {date, subjectId, answered, correct}
  * POST /api/daily/:userId/fix                          → xato tuzatildi (+1), {date, subjectId}
  * POST /api/daily/:userId/activity                     → kunlik faollik (1 savol yoki dars) → streak
  */
@@ -53,32 +52,6 @@ router.get(
 
     const data = await dailyRepository.getHistory(uid, date, subject)
     res.json(data)
-  }),
-)
-
-const CompleteSchema = z.object({
-  date:      z.string().regex(DATE_RE),
-  subjectId: z.string().min(1).max(32),
-  answered:  z.number().int().min(1).max(100),
-  correct:   z.number().int().min(0).max(100),
-})
-
-// POST /api/daily/:userId/complete
-router.post(
-  '/daily/:userId/complete',
-  rateLimit({ maxPerMinute: 30 }),
-  validate({ body: CompleteSchema }),
-  wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
-    if (!uid) throw new AppError(400, 'Invalid userId')
-
-    // Progress qatori bo'lmasa (init o'tmagan holat) yaratamiz — FK xatosini oldini oladi
-    await progressRepository.ensureExists(uid)
-
-    const { date, subjectId, answered, correct } = req.body as z.infer<typeof CompleteSchema>
-    const { dailyStreak } = await dailyRepository.complete(uid, date, subjectId, answered, correct)
-
-    res.json({ ok: true, dailyStreak })
   }),
 )
 

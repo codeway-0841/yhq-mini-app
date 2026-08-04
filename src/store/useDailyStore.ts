@@ -1,11 +1,11 @@
 /**
- * Kunlik topshiriq (Daily Challenge) — client store.
+ * Kunlik faollik (Intizom streak) — client store.
  *
  * Server — haqiqat manbai (multi-device), bu store esa uning tezkor
- * lokal oynasi (UI flash'siz + offline fallback). doneKey formati:
- * `${date}|${subjectId}` — bir kunda har fan uchun alohida topshiriq.
- * Streaklar ham FAN BO'YICHA saqlanadi: `streaks[subjectId]` — fan
+ * lokal oynasi (UI flash'siz + offline fallback).
+ * Streaklar FAN BO'YICHA saqlanadi: `streaks[subjectId]` — fan
  * almashtirilganda har fan o'z seriyasini ko'rsatadi.
+ * Streak sharti: kuniga kamida 1 savol YOKI 1 dars (`touchActivity`).
  */
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
@@ -25,17 +25,13 @@ export function doneKeyOf(date: string, subjectId: string): string {
 }
 
 interface DailyState {
-  /** Bugun bajarilgan fan: `${date}|${subjectId}` (bajarilmagan bo'lsa null) */
-  doneKey: string | null
   /** Fan bo'yicha kunlik seriyalar — `streaks[subjectId]` */
   streaks: Record<string, number>
   /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` (kunda 1 marta yuborish uchun) */
   activityKey: string | null
 
   /** Serverdan bugungi holatni tortadi (xato bo'lsa sokin o'tkazadi) */
-  sync:     (userId: string, date: string, subjectId: string) => Promise<void>
-  /** Test yakuni — serverga yuboradi + lokalni yangilaydi */
-  complete: (userId: string, date: string, subjectId: string, answered: number, correct: number) => Promise<void>
+  sync: (userId: string, date: string, subjectId: string) => Promise<void>
   /**
    * Kunlik faollik — kamida 1 savol yoki dars. Streak shu bilan yoziladi.
    * `delta` bersa (har javob) HAR SAFAR yuboriladi (kunlik JAMI → heat map);
@@ -47,7 +43,6 @@ interface DailyState {
 export const useDailyStore = create<DailyState>()(
   persist(
     (set) => ({
-      doneKey: null,
       streaks: {},
       activityKey: null,
 
@@ -55,23 +50,8 @@ export const useDailyStore = create<DailyState>()(
         if (!userId || userId === '0') return // ghost user — faqat lokal
         try {
           const data = await api.getDaily(userId, date, subjectId)
-          set((s) => ({
-            streaks: { ...s.streaks, [subjectId]: data.dailyStreak },
-            doneKey: data.record?.challengeDone ? doneKeyOf(date, subjectId) : null,
-          }))
+          set((s) => ({ streaks: { ...s.streaks, [subjectId]: data.dailyStreak } }))
         } catch { /* offline — eski lokal holatda qolamiz */ }
-      },
-
-      complete: async (userId, date, subjectId, answered, correct) => {
-        // Optimistik lokal belgilash (server xatosi kunda ham UI buzilmasin)
-        set({ doneKey: doneKeyOf(date, subjectId) })
-        if (!userId || userId === '0') return
-        try {
-          const res = await api.completeDaily(userId, { date, subjectId, answered, correct })
-          set((s) => ({ streaks: { ...s.streaks, [subjectId]: res.dailyStreak } }))
-        } catch (err) {
-          console.warn('daily complete sync xatosi (lokal saqlandi):', err)
-        }
       },
 
       touchActivity: async (userId, date, subjectId, delta) => {
@@ -94,8 +74,9 @@ export const useDailyStore = create<DailyState>()(
     }),
     {
       name:    'yhq-daily',
-      version: 2,
-      // v1 → v2: bitta `dailyStreak` → fan bo'yicha `streaks` xaritasi
+      version: 3,
+      // v1/v2 → v3: doneKey o'chirildi (kunlik topshiriq endi yo'q);
+      // faqat fan bo'yicha streaklar saqlanadi.
       migrate: (state: unknown) => {
         const s = (state ?? {}) as { doneKey?: string | null; dailyStreak?: number; streaks?: Record<string, number> }
         const streaks = s.streaks ?? {}
@@ -104,7 +85,7 @@ export const useDailyStore = create<DailyState>()(
           const subjectId = s.doneKey.split('|')[1]
           if (subjectId && !streaks[subjectId]) streaks[subjectId] = s.dailyStreak
         }
-        return { doneKey: s.doneKey ?? null, streaks, activityKey: null }
+        return { streaks, activityKey: null }
       },
     },
   ),

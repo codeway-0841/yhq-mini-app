@@ -4,8 +4,6 @@ import { goBack } from '../../lib/navigation'
 import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore, todayStr } from '../../store/useDailyStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
 import { shareUrl } from '../../lib/telegram'
@@ -32,7 +30,7 @@ export default function TestPage() {
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
-  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'tricky' | 'numeric' | 'daily' | undefined) ?? null
+  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'tricky' | 'numeric' | undefined) ?? null
 
   const activeQuestions = useMemo(() => {
     const ids = location.state?.questionIds
@@ -169,20 +167,6 @@ export default function TestPage() {
   // Exit confirm: first tap shows the warning, second tap within 3 s really exits
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  // ── Kunlik topshiriq yakuni — serverga FAQAT 1 marta yuboriladi ─────────
-  const dailyCompletedRef = useRef(false)
-  useEffect(() => { dailyCompletedRef.current = false }, [location.key])
-  useEffect(() => {
-    if (mode !== 'daily' || !isFinished || dailyCompletedRef.current) return
-    dailyCompletedRef.current = true
-    const answered = answers.filter((a) => a === 'correct' || a === 'wrong').length
-    if (answered === 0) return   // hech narsa yechilmagan — topshiriq bajarilmagan
-    const correct = answers.filter((a) => a === 'correct').length
-    const date      = (location.state?.dailyDate as string | undefined) ?? todayStr()
-    const subjectId = useSubjectStore.getState().subjectId
-    const userId    = useAppStore.getState().user?.id ?? '0'
-    useDailyStore.getState().complete(userId, date, subjectId, answered, correct)
-  }, [mode, isFinished, answers, location.state])
   const handleBack = useCallback(() => {
     const answered = answers.filter((a) => a !== null && a !== 'unanswered').length
     if (isFinished || answered === 0 || confirmExit) {

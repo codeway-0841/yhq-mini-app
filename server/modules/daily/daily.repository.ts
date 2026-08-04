@@ -2,7 +2,7 @@
  * Daily Challenge repository — `daily_records` + `daily_streaks` (fan bo'yicha).
  *
  * Streak semantikasi (har fan uchun MUSTAQIL):
- *  - lastDailyDate == bugun    → o'zgarishsiz (bir kunda qayta complete)
+ *  - lastDailyDate == bugun    → o'zgarishsiz (bir kunda qayta faollik)
  *  - lastDailyDate == kecha    → streak + 1 (seriya davom etdi)
  *  - aks holda (uzilish/ilk)   → streak = 1
  *  - O'qishda: oxirgi sana kechadan ham eski bo'lsa → 0 (kun o'tkazilgan)
@@ -31,7 +31,7 @@ export function calcNextStreak(lastDailyDate: string | null, date: string, curre
 
 /**
  * O'qishdagi streak: bir kun o'tkazib yuborilsa 0 ko'rsatadi (bazani yozmaydi —
- * keyingi complete'da calcNextStreak o'zi 1 dan qayta boshlaydi).
+ * keyingi faollikda calcNextStreak o'zi 1 dan qayta boshlaydi).
  */
 export function effectiveStreak(lastDailyDate: string | null, today: string, current: number): number {
   if (!lastDailyDate) return 0
@@ -187,44 +187,5 @@ export const dailyRepository = {
         target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
         set:    { fixed: sql`${dailyRecords.fixed} + 1` },
       })
-  },
-
-  /**
-   * Kunlik topshiriq yakuni. Idempotent: bir xil (user,date,subject) juftligini
-   * qayta yuborsa natijalar yangilanadi, streak esa faqat sana o'zgarsa hisoblanadi.
-   * Yangilangan (shu fanga tegishli) dailyStreak qaytaradi.
-   *
-   * Eslatma: neon-http driver tranzaksiyani qo'llamaydi — ketma-ket 3 so'rov
-   * (upsert → read → upsert). Bir foydalanuvchi bir vaqtda 2 qurilmadan
-   * complete qilishi ehtimoli past, streak drifti esa eng yomon holatda ±1.
-   */
-  async complete(
-    userId:    bigint,
-    date:      string,
-    subjectId: string,
-    _answered: number,
-    _correct:  number,
-  ): Promise<{ dailyStreak: number }> {
-    // 1) Kunlik topshiriq yakunlandi belgisi. answered/correct BU YERDA YOZILMAYDI:
-    // ularga har savol touchActivity orqali qo'shiladi (kunlik JAMI hisob), aks holda
-    // test yakuni kunlik jami bilan 2 marta sanalib qolardi.
-    await db.insert(dailyRecords).values({ userId, date, subjectId, challengeDone: true })
-      .onConflictDoUpdate({
-        target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
-        set:    { challengeDone: true, completedAt: new Date() },
-      })
-
-    // 2) Streak — shu fanning qatorini o'qib, JS'da yangi qiymat aniqlanadi
-    const cur = await readStreak(userId, subjectId)
-    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0)
-
-    await db.insert(dailyStreaks).values({
-      userId, subjectId, streak: nextStreak, lastDailyDate: date,
-    }).onConflictDoUpdate({
-      target: [dailyStreaks.userId, dailyStreaks.subjectId],
-      set:    { streak: nextStreak, lastDailyDate: date, updatedAt: new Date() },
-    })
-
-    return { dailyStreak: nextStreak }
   },
 }

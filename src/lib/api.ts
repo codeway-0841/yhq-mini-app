@@ -161,9 +161,6 @@ export const api = {
   getDaily: (userId: string, date: string, subject: string) =>
     request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
 
-  completeDaily: (userId: string, data: { date: string; subjectId: string; answered: number; correct: number }) =>
-    request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/complete`, data),
-
   getDailyHistory: (userId: string, date: string, subject: string) =>
     request<DailyHistory>('GET', `/daily/${uid(userId)}/history?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
 
