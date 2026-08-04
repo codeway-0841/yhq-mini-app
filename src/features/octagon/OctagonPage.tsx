@@ -8,6 +8,7 @@ import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
+import { track }          from '../../lib/analytics'
 
 type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
 
@@ -198,6 +199,7 @@ export default function OctagonPage() {
 
   const joinQueue = useCallback(() => {
     if (!user) return
+    track('duel_start', { subject: subjectRef.current })
     dispatch({ type: 'SEARCHING' })
     try {
       const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })

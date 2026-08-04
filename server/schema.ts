@@ -72,3 +72,15 @@ export const savedQuestions = pgTable('saved_questions', {
   userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
   questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
 }, (t) => [unique('uq_saved').on(t.userId, t.questionId)])
+
+/** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
+export const analyticsEvents = pgTable('analytics_events', {
+  id:        serial('id').primaryKey(),
+  userId:    bigint('user_id', { mode: 'bigint' }).references(() => users.id, { onDelete: 'set null' }),
+  event:     text('event').notNull(),
+  props:     jsonb('props').$type<Record<string, unknown>>().default({}).notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_events_user_time').on(t.userId, t.createdAt),
+  index('idx_events_name_time').on(t.event, t.createdAt),
+])

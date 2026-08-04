@@ -7,6 +7,7 @@
 
 import { useNavigate } from 'react-router-dom'
 import { Zap, ClipboardCheck } from 'lucide-react'
+import { track } from '../../lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../lib/navigation'
@@ -50,8 +51,10 @@ export default function TestlarPage() {
       titleKey: 'realExam', meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' },
   ]
 
-  const start = (m: ModeCard) =>
+  const start = (m: ModeCard) => {
+    track('test_start', { mode: m.id })
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
+  }
 
   return (
     <div className="px-4 pt-4 pb-8 min-h-screen">

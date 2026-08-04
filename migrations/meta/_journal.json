@@ -36,6 +36,13 @@
       "when": 1785804972970,
       "tag": "0004_theme_system_and_indexes",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1785826970165,
+      "tag": "0005_analytics_events",
+      "breakpoints": true
     }
   ]
 }

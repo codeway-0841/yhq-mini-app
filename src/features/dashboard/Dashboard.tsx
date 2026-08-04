@@ -6,12 +6,13 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack,
+  ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
 import { modules } from '../../data/modules'
 import { useLessonsStore } from '../../store/useLessonsStore'
+import { track } from '../../lib/analytics'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
@@ -497,6 +498,21 @@ export default function Dashboard() {
             totalPool={questionsCount}
             lang={settings.language}
           />
+
+      {/* Premium fake-door (1 haftalik sinov: premium_click KPI o'lchanadi) */}
+      <div className="mx-4 mb-3 card-neon p-3.5 flex items-center gap-3">
+        <div className="glow-purple w-10 h-10 rounded-xl bg-neon-purple/15 border border-neon-purple/40 flex items-center justify-center flex-shrink-0">
+          <Crown size={19} className="text-neon-violet" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[13px] font-black text-fg">Premium ✨</p>
+          <p className="text-[11px] text-subtle">{tt('premiumTagline')}</p>
+        </div>
+        <button onClick={() => { track('premium_click'); showToast(tt('comingSoonD')) }}
+          className="btn-neon px-4 py-2 rounded-xl text-[12px]">
+          {tt('tryWord')}
+        </button>
+      </div>
 
       {/* Davom etish — QAYSI darsda qolgan bo'lsa o'sha darslik (v1.1) */}
       <ContinueCard

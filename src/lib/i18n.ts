@@ -26,6 +26,8 @@ const UZ = {
   diffHard: "Qiyin", minWord: "daqiqa",
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   mistakeFixDesc: "Xato tuzatish",
+  premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
+  tryWord: "Sinash",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -118,6 +120,8 @@ const RU: Record<Keys, string> = {
   diffHard: "Сложно", minWord: "минут",
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   mistakeFixDesc: "Исправь ошибки",
+  premiumTagline: "Без рекламы + безлимитная практика + аналитика",
+  tryWord: "Пробовать",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",

@@ -2,7 +2,9 @@ import { useEffect, lazy, Suspense, useState } from 'react'
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
+import { useSubjectStore } from './store/useSubjectStore'
 import { api } from './lib/api'
+import { track } from './lib/analytics'
 import PageLoader from './components/PageLoader'
 import SplashScreen from './features/onboarding/SplashScreen'
 import Onboarding from './features/onboarding/Onboarding'
@@ -110,6 +112,17 @@ export default function App() {
     const tg     = (window as TelegramWindow).Telegram?.WebApp
     if (tg) { tg.ready(); tg.expand() }
 
+    track('app_open')
+
+    // Fan almashuvi — multi-fan platformaning asosiy KPI signali
+    let prevSubj = useSubjectStore.getState().subjectId
+    const unsubSubject = useSubjectStore.subscribe((s) => {
+      if (s.subjectId !== prevSubj) {
+        prevSubj = s.subjectId
+        track('subject_switch', { id: s.subjectId })
+      }
+    })
+
     const tgUser = tg?.initDataUnsafe?.user
 
     const loadQuestions = (lang: 'uz' | 'ru') =>
@@ -173,6 +186,7 @@ export default function App() {
       })
       loadQuestions('uz').catch(() => {})
     }
+    return () => unsubSubject()
   }, [syncFromServer])
 
   const finishOnboarding = () => {
