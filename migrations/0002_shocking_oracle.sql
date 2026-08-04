@@ -8,5 +8,5 @@ CREATE TABLE "questions" (
 	"image" text
 );
 --> statement-breakpoint
-ALTER TABLE "users" ADD COLUMN "phone" text;--> statement-breakpoint
+ALTER TABLE "users" ADD COLUMN IF NOT EXISTS "phone" text;--> statement-breakpoint
 ALTER TABLE "saved_questions" ADD CONSTRAINT "saved_questions_question_id_questions_id_fk" FOREIGN KEY ("question_id") REFERENCES "public"."questions"("id") ON DELETE cascade ON UPDATE no action;

@@ -1,0 +1,2 @@
+ALTER TYPE "public"."theme" ADD VALUE IF NOT EXISTS 'system';--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "idx_progress_total_correct" ON "progress" USING btree ("total_correct" DESC NULLS LAST);

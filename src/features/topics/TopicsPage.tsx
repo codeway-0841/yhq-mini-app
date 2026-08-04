@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -40,7 +41,7 @@ export default function TopicsPage() {
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
-        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="text-muted hover:text-white text-xl px-1">←</button>
         <h1 className="text-xl font-black">{tt('topics')}</h1>
       </div>

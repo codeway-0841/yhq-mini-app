@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { Trophy } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -87,7 +88,7 @@ export default function LeaderboardPage() {
   return (
     <div className="pb-24">
       <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-line">
-        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="text-muted hover:text-white text-xl px-1">←</button>
         <Trophy size={20} className="text-yellow-400" />
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>

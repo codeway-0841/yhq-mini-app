@@ -1,6 +1,8 @@
-/** Circular pass/fail chart for the results modal. */
-export default function DonutChart({ correct, total, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
-  correct: number; total: number; passedLabel?: string; failedLabel?: string
+/** Circular pass/fail chart for the results modal.
+ *  threshold — o'tish foizi (default 90 = haqiqiy imtihon mezoni).
+ *  Qisqa testlar uchun TestPage mode'ga qarab boshqacha berishi mumkin. */
+export default function DonutChart({ correct, total, threshold = 90, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
+  correct: number; total: number; threshold?: number; passedLabel?: string; failedLabel?: string
 }) {
   const r             = 52
   const cx            = 70
@@ -9,7 +11,7 @@ export default function DonutChart({ correct, total, passedLabel = "O'tdi ✓", 
   const percent       = total > 0 ? Math.round((correct / total) * 100) : 0
   const correctArc    = total > 0 ? (correct / total) * circumference : 0
   const wrongArc      = circumference - correctArc
-  const passed        = percent >= 90
+  const passed        = percent >= threshold
 
   return (
     <div className="relative w-40 h-40 mx-auto my-4">

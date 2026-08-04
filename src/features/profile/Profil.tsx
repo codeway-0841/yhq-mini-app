@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
@@ -217,7 +218,7 @@ export default function Profil() {
     <div className="pt-4 pb-8 safe-bottom">
       {/* ← Back */}
       <div className="px-4 mb-0.5">
-        <button onClick={() => navigate(-1)} aria-label="Orqaga"
+        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="flex items-center gap-1 text-muted hover:text-white text-sm active:opacity-70 transition-opacity">
           <span className="text-lg">←</span>
           <span>Back</span>

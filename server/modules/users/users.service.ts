@@ -60,7 +60,8 @@ import { AppError }               from '../../middleware/error-handler'
 // ── Zod schemas (also exported for router-level validation) ────────────────
 
 export const InitInputSchema = z.object({
-  id:         z.string().min(1),
+  // Telegram user id'lari faqat musbat raqamlar va int8 sig'adi
+  id:         z.string().regex(/^\d{1,19}$/, 'user id must be a positive integer string'),
   first_name: z.string().min(1),
   last_name:  z.string().optional().default(''),
   username:   z.string().optional().default(''),

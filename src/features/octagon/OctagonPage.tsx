@@ -1,5 +1,6 @@
 import { useEffect, useReducer, useCallback, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { Sword, X, Loader2, WifiOff, RefreshCw } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
@@ -221,7 +222,7 @@ export default function OctagonPage() {
   return (
     <div className="flex flex-col min-h-screen bg-canvas">
       <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-        <button onClick={() => navigate(-1)} className="text-muted p-1"><X size={20} /></button>
+        <button onClick={() => goBack(navigate)} className="text-muted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
           <Sword size={16} className="text-purple-400" />
           <span className="text-sm font-bold">{tt('octagonTitle')}</span>

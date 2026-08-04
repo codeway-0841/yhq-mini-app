@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -163,7 +164,7 @@ export default function TestPage() {
   const handleBack = useCallback(() => {
     const answered = answers.filter((a) => a !== null && a !== 'unanswered').length
     if (isFinished || answered === 0 || confirmExit) {
-      navigate(-1)
+      goBack(navigate)
       return
     }
     setConfirmExit(true)
@@ -310,6 +311,7 @@ export default function TestPage() {
 
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
+          threshold={mode === 'exam' ? 90 : 80}
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}

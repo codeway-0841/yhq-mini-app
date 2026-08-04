@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap } from 'lucide-react'
 import { modules } from '../../shared/data'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../data/lessons'
@@ -295,7 +296,7 @@ export default function Darslik() {
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <button onClick={() => navigate(-1)} aria-label={ru ? 'Назад' : 'Orqaga'}
+          <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="text-muted hover:text-white text-xl px-1">←</button>
           <GraduationCap size={22} className="text-duo-blue" />
           <h1 className="text-xl font-black">{ru ? 'Учебник' : 'Darslik'}</h1>

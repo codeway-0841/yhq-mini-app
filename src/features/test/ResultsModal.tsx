@@ -5,11 +5,13 @@ import DonutChart from './DonutChart'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
 
-export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion }: {
+export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, threshold = 90 }: {
   results: QuestionResult[]
   onRetry: () => void
   onFinish: () => void
   onGoToQuestion: (i: number) => void
+  /** o'tish foizi — exam rejimida 90 (haqiqiy imtihon), qolganida 80 */
+  threshold?: number
 }) {
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
@@ -23,7 +25,7 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
       <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[88vh] overflow-y-auto">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
-        <DonutChart correct={correct} total={total} passedLabel={tt('passed')} failedLabel={tt('failed')} />
+        <DonutChart correct={correct} total={total} threshold={threshold} passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5">
           <div className="rounded-2xl p-3 text-center border" style={{ background: '#1d3a24', borderColor: '#3f920255' }}>

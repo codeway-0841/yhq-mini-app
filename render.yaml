@@ -14,5 +14,4 @@ services:
         value: 8080
       - key: DATABASE_URL
         sync: false
-      - key: REDIS_URL
-        sync: false
+      # BOT_TOKEN app Environment'da qo'lda (mavjud) — render.yaml'ga yozilmaydi (secret)

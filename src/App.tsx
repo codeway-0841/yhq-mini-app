@@ -148,9 +148,19 @@ export default function App() {
           }
         })
     } else {
+      // GHOST USER HIMOYASI: Telegram WEBAPP'siz ochilganda (brauzer) oldingi
+      // haqiqiy foydalanuvchining statistikasi/saqlanganlari ko'rinmasligi kerak.
       useAppStore.setState({
-        user:        { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
-        initialized: true,
+        user:           { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
+        tariff:         'free',
+        displayName:    null,
+        streak:         0,
+        totalCorrect:   0,
+        totalWrong:     0,
+        totalAnswered:  0,
+        wrongByTicket:  {},
+        savedQuestions: [],
+        initialized:    true,
       })
       loadQuestions('uz').catch(() => {})
     }

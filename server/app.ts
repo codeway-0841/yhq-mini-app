@@ -37,6 +37,17 @@ export function createApp() {
   }))
   app.use(express.json({ limit: '16kb' }))
 
+  // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
+  // Bo'lmasa rate limiter barcha foydalanuvchini bitta bucket'ga soladi.
+  app.set('trust proxy', 1)
+
+  // Minimal xavfsizlik header'lari (helmet kerak emas — API JSON-only)
+  app.use((_req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff')
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin')
+    next()
+  })
+
   // Health check — must stay above auth/rate-limit so monitors always reach it
   app.get('/api/health', (_req, res) => {
     res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
@@ -61,7 +62,7 @@ export default function Biletlar() {
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
-        <button onClick={() => navigate(-1)} aria-label={tt('backWord')}
+        <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="text-muted hover:text-white text-xl px-1">←</button>
         <h1 className="text-xl font-black">{tt('tickets')}</h1>
       </div>

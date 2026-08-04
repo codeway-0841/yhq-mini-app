@@ -18,10 +18,23 @@ const isStaticAsset = (path) =>
 const isQuestionData = (path) =>
   path.startsWith('/api/questions') || path.startsWith('/api/topics')
 
+const CACHE = 'yhq-app-v3'
+
+// Vercel `/` va `/index.html` ni `Cache-Control: no-store` bilan beradi —
+// Cache API no-store javobni SAQLASHNI RAD ETADI (TypeError → shell hech qachon
+// cache'lanmardi → offline'da ilova umuman ochilmardi). Header'larni tozalaymiz.
+function storable(request, response) {
+  if (!response.ok) return null
+  const headers = new Headers(response.headers)
+  headers.delete('cache-control')
+  return new Response(response.body, { status: response.status, headers })
+}
+
 async function putInCache(request, response) {
-  if (!response.ok) return
+  const clean = storable(request, response)
+  if (!clean) return
   const cache = await caches.open(CACHE)
-  await cache.put(request, response.clone())
+  await cache.put(request, clean)
 }
 
 self.addEventListener('install', () => self.skipWaiting())
@@ -58,7 +71,7 @@ self.addEventListener('fetch', (event) => {
   if (isStaticAsset(url.pathname)) {
     event.respondWith(
       caches.match(request).then(
-        (hit) => hit ?? fetch(request).then((res) => { putInCache(request, res); return res })
+        (hit) => hit ?? fetch(request).then((res) => { putInCache(request, res.clone()); return res })
       )
     )
     return
@@ -68,7 +81,7 @@ self.addEventListener('fetch', (event) => {
   if (isQuestionData(url.pathname)) {
     event.respondWith(
       fetch(request)
-        .then((res) => { putInCache(request, res); return res })
+        .then((res) => { putInCache(request, res.clone()); return res })
         .catch(() => caches.match(request))
     )
     return

@@ -44,11 +44,13 @@ export function verifyInitData(initData: string, botToken: string): InitDataUser
   const b = Buffer.from(hash,     'utf8')
   if (a.length !== b.length || !timingSafeEqual(a, b)) return null
 
-  // Reject stale data (replay protection) when auth_date is present
+  // Replay protection: auth_date MAJBURIY (bo'lmasa imzo umrbod yashaydi).
+  // Math.abs EMAS — kelajakdagi vaqt ham faqat kichik skew (60s) ruxsat etiladi.
   const authDate = Number(params.get('auth_date') ?? 0)
-  if (authDate > 0 && Math.abs(Date.now() / 1000 - authDate) > MAX_AGE_SECONDS) {
-    return null
-  }
+  const nowSec = Date.now() / 1000
+  if (!Number.isFinite(authDate) || authDate <= 0) return null
+  if (nowSec - authDate > MAX_AGE_SECONDS) return null       // eski (replay)
+  if (authDate - nowSec > 60) return null                    // kelajakdagi vaqt
 
   const rawUser = params.get('user')
   if (!rawUser) return null

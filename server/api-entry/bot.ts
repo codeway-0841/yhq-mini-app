@@ -138,16 +138,24 @@ bot.command('daily', async (ctx) => {
   try {
     const { db }        = await import('../db/connection')
     const { questions } = await import('../schema')
+    const { sql }       = await import('drizzle-orm')
 
-    const rows = await db.select().from(questions)
-    if (rows.length === 0) {
+    // Deterministic pick by day-of-year — BUTUN jadvalni tortmasdan COUNT + OFFSET/LIMIT 1
+    // (eski kod: SELECT * har bir /daily uchun — katta egress + latency)
+    const [{ count }] = await db.select({ count: sql<number>`count(*)::int` }).from(questions)
+    if (!count) {
       await ctx.reply('Hozircha savollar mavjud emas.')
       return
     }
-
-    // Deterministic pick by day-of-year so the whole community gets the same question
     const dayOfYear = Math.floor(Date.now() / 86_400_000)
-    const q = rows[dayOfYear % rows.length]
+    const [q] = await db.select().from(questions)
+      .orderBy(questions.id)
+      .limit(1)
+      .offset(dayOfYear % count)
+    if (!q) {
+      await ctx.reply('Hozircha savollar mavjud emas.')
+      return
+    }
 
     const options = Object.entries(q.optionsUz as Record<string, string>)
     const labels  = options.map(([id]) => id)
@@ -240,23 +248,36 @@ bot.command('leaderboard', async (ctx) => {
 const callback = webhookCallback(bot, 'https')
 
 // ── Webhook secret verification ─────────────────────────────────────────────
-// BOT_WEBHOOK_SECRET sozlangan bo'lsa, faqat Telegram'dan (secret_token bilan)
-// kelgan so'rovlar qabul qilinadi — begonalar bot endpointni ishlatolmaydi.
+// PRODUCTION'da BOT_WEBHOOK_SECRET MAJBURIY — bo'lmasa istalgan odam soxta
+// Telegram update'larini yuborib bot'ni spamer/polly sifatida ishlatadi.
+// Header solishtirish timingSafeEqual bilan (timing attack himoyasi).
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function handler(req: any, res: any) {
   const secret = process.env['BOT_WEBHOOK_SECRET']
-  if (secret) {
-    const got = (req?.headers?.['x-telegram-bot-api-secret-token']
-      ?? req?.headers?.['X-Telegram-Bot-Api-Secret-Token']) as string | undefined
-    if (got !== secret) {
-      // Oddiy Node ServerResponse — Express uslubidagi res.status() yo'q!
-      if (typeof res.statusCode === 'number' || res.statusCode === undefined) {
-        res.statusCode = 401
-      }
+  if (!secret) {
+    if (process.env['NODE_ENV'] === 'production') {
+      res.statusCode = 500
       res.setHeader?.('content-type', 'text/plain')
-      res.end?.('unauthorized')
+      res.end?.('webhook secret not configured')
       return
     }
+    return callback(req, res)   // dev — secret'siz ishlaydi
+  }
+
+  const got = (req?.headers?.['x-telegram-bot-api-secret-token']
+    ?? req?.headers?.['X-Telegram-Bot-Api-Secret-Token']) as string | undefined
+
+  const { timingSafeEqual } = await import('crypto')
+  const a = Buffer.from(got ?? '')
+  const b = Buffer.from(secret)
+  const ok = a.length === b.length && timingSafeEqual(a, b)
+
+  if (!ok) {
+    // Oddiy Node ServerResponse — Express uslubidagi res.status() yo'q!
+    res.statusCode = 401
+    res.setHeader?.('content-type', 'text/plain')
+    res.end?.('unauthorized')
+    return
   }
   return callback(req, res)
 }

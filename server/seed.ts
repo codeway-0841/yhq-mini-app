@@ -183,10 +183,25 @@ const slugToId = Object.fromEntries(allTopics.map(t => [t.slug, t.id]))
 // Stats
 const topicCounts: Record<string, number> = {}
 
-const rows = raw.map(q => {
+// ── Sanitetsiya: noto'g'ri savollar (to'g'ri javob variantlar orasida yo'q,
+//    yoki UZ/RU variant kalitlari mos kelmasa) seed'ga KIRITILMAYDI ──
+//    Bunday savollar ilovada JAVOBSIZ bo'lib qolardi (xatoni tuzatib ham bo'lmas).
+const invalid: number[] = []
+const rows = raw.flatMap(q => {
+  const uzKeys = Object.keys(q.options_uz ?? {})
+  const ruKeys = Object.keys(q.options_ru ?? {})
+  const bad =
+    uzKeys.length === 0 ||
+    !uzKeys.includes(q.correct_answer) ||
+    uzKeys.length !== ruKeys.length ||
+    !uzKeys.every((k) => ruKeys.includes(k))
+  if (bad) {
+    invalid.push(q.id)
+    return []                                        // SKIP — DB'ga kiritilmaydi
+  }
   const slug = detectTopicSlug(q)
   topicCounts[slug] = (topicCounts[slug] ?? 0) + 1
-  return {
+  return [{
     id:            q.id,
     questionUz:    q.question_uz,
     questionRu:    q.question_ru,
@@ -195,8 +210,12 @@ const rows = raw.map(q => {
     correctAnswer: q.correct_answer,
     image:         q.image ?? null,
     topicId:       slugToId[slug] ?? null,
-  }
+  }]
 })
+
+if (invalid.length > 0) {
+  console.warn(`⚠️  ${invalid.length} ta buzilgan savol O'TKAZIB YUBORILDI: ${invalid.join(', ')}`)
+}
 
 if (rows.length > 0) await db.insert(questions).values(rows).onConflictDoNothing()
 

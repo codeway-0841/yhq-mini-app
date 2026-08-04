@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { X, Search } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../shared/data'
 
@@ -131,7 +132,7 @@ export default function Belgilar() {
       {!selectedCategory && (
         <>
           <div className="flex items-center gap-2 mb-4">
-            <button onClick={() => navigate(-1)} aria-label="Orqaga"
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga"
               className="text-muted hover:text-white text-xl px-1">←</button>
             <h1 className="text-xl font-black">Yo'l belgilari</h1>
           </div>

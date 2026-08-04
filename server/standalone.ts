@@ -5,6 +5,9 @@
 
 import 'dotenv/config'
 import './utils/sentry'
+import { assertProdConfig } from './config'
+
+assertProdConfig()   // production'da BOT_TOKEN'siz boot QILMAYDI (auth fail-open himoyasi)
 import http                from 'http'
 import { WebSocketServer } from 'ws'
 import { config }          from './config'
@@ -13,7 +16,7 @@ import { attachOctagon, loadOctagonPools } from './octagon'
 
 const app    = createApp()
 const server = http.createServer(app)
-const wss    = new WebSocketServer({ server, path: '/ws/octagon' })
+const wss    = new WebSocketServer({ server, path: '/ws/octagon', maxPayload: 16 * 1024 })
 
 // Render health check (healthCheckPath)
 app.get('/health', (_req, res) => {

@@ -37,7 +37,7 @@ const DEFAULT_SETTINGS: ApiSettings = {
   fontStyle:       'default',
   language:        'uz',
   theme:           'dark',
-  offlineMode:     false,
+  offlineMode:     true,   // eski default (false) noto'g'ri edi — SW avval hamma uchun ishlardi
 }
 
 export const useAppStore = create<AppState>()(
@@ -75,7 +75,7 @@ export const useAppStore = create<AppState>()(
         const prev   = get().settings
         const userId = get().user?.id
         set((s) => ({ settings: { ...s.settings, ...patch } }))
-        if (userId) {
+        if (userId && userId !== '0') {
           // Mahalliy tanlov UI da darhol qo'llanadi; tarmoq xatosi bo'lsa
           // SERVERga qaytarilmaydi (rollback "tepada qirish" UX'ni yoq qilardi) —
           // keyingi ochilishda init/syncing server bilan tekislaydi.
@@ -106,13 +106,13 @@ export const useAppStore = create<AppState>()(
               : { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
             : s.wrongByTicket,
         }))
-        if (userId) api.postResult(userId, correct, questionId).catch(console.error)
+        if (userId && userId !== '0') api.postResult(userId, correct, questionId).catch(console.error)
       },
 
       resetProgress: () => {
         const userId = get().user?.id
         set({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, streak: 0, wrongByTicket: {} })
-        if (userId) api.resetProgress(userId).catch(console.error)
+        if (userId && userId !== '0') api.resetProgress(userId).catch(console.error)
       },
 
       toggleSaved: (questionId) => {
@@ -127,7 +127,7 @@ export const useAppStore = create<AppState>()(
               : [...s.savedQuestions, questionId],
           }
         })
-        if (userId) {
+        if (userId && userId !== '0') {
           (wasSaved
             ? api.removeSaved(userId, questionId)
             : api.addSaved(userId, questionId)
@@ -154,6 +154,33 @@ export const useAppStore = create<AppState>()(
         }
       },
     }),
-    { name: 'yhq-app-store' }
+    {
+      name: 'yhq-app-store',
+      version: 1,
+      // Eski versiya (0) → yangi: settings'ni DEFAULT bilan birlashtirish
+      // (yangi kalitlar qo'shilganda undefined bo'lib qolmasligi uchun)
+      migrate: (persisted: unknown) => {
+        const p = (persisted ?? {}) as Record<string, unknown> & { settings?: Record<string, unknown> }
+        // v0: offlineMode eski toggle HECH NIMA QILMASDI — foydalanuvchi aslida
+        // uni o'chirmagan (SW baribir ishlardi), shuning uchun true'ga ko'taramiz.
+        return {
+          ...p,
+          settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}), offlineMode: true },
+        } as never
+      },
+      // initialized va user PERSIST QILINMAYDI — har reload'da serverdan yangi
+      // holat keladi; aks holda eski (stale) stats bir soniyaga "flash" bo'lardi.
+      partialize: (s) => ({
+        settings:       s.settings,
+        streak:         s.streak,
+        totalCorrect:   s.totalCorrect,
+        totalWrong:     s.totalWrong,
+        totalAnswered:  s.totalAnswered,
+        wrongByTicket:  s.wrongByTicket,
+        savedQuestions: s.savedQuestions,
+        displayName:    s.displayName,
+        tariff:         s.tariff,
+      }),
+    }
   )
 )

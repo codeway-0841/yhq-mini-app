@@ -1,9 +1,11 @@
 import { useEffect, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../lib/navigation'
 import { Brain, X } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAppStore }      from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
 
@@ -48,12 +50,18 @@ export default function AdaptivePage() {
   const topics    = useQuestionsStore((s) => s.topics)
   const tt = useT(settings.language)
 
-  const { cards, currentId, sessionCount, startSession, submitAnswer } = useAdaptiveStore()
+  const { currentId, sessionCount, startSession, recordAnswer, advanceNext } = useAdaptiveStore()
+  const subjectId = useSubjectStore((s) => s.subjectId)
 
   // Only start a session when the page first mounts with no active question
   useEffect(() => {
     if (currentId === null) startSession()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // SR karta — subject bo'yicha lookup (hook early-return'dan OLDIN bo'lishi shart!)
+  const card = useAdaptiveStore((s) =>
+    s.currentId !== null ? s.cardsBySubject[subjectId]?.[s.currentId] : undefined
+  ) as SRCard | undefined
 
   const q = questions.find((q) => q.id === currentId)
 
@@ -70,10 +78,11 @@ export default function AdaptivePage() {
 
     const quality: 0 | 1 = optionId === q.correct ? 1 : 0
     addResult(quality === 1, q.id)
+    recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
 
-    // Delay store advance by 800 ms so the user sees colour feedback
-    setTimeout(() => submitAnswer(q.id, quality), 800)
-  }, [q, selectedOption, addResult, submitAnswer])
+    // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol
+    setTimeout(() => advanceNext(), 800)
+  }, [q, selectedOption, addResult, recordAnswer, advanceNext])
 
   if (!q) {
     return (
@@ -87,13 +96,12 @@ export default function AdaptivePage() {
     )
   }
 
-  const card     = cards[q.id] as SRCard | undefined
   const answered = selectedOption !== null
 
   return (
     <div className="flex flex-col min-h-screen bg-canvas">
       <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-        <button onClick={() => navigate(-1)} className="text-muted p-1"><X size={20} /></button>
+        <button onClick={() => goBack(navigate)} className="text-muted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
           <Brain size={16} className="text-duo-blue" />
           <span className="text-sm font-bold">{tt('adaptiveTitle')}</span>

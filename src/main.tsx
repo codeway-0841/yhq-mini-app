@@ -23,11 +23,25 @@ if (rootEl) {
   )
 }
 
-// Offline support — cache app shell, images and questions for reuse without network
+// Offline support — cache app shell, images and questions for reuse without network.
+// Faqat "Oflayn rejim" yoqilgan bo'lsa ro'yxatga olinadi (Settings toggle endi haqiqiy ishlaydi).
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').catch(() => {
-      /* SW unsupported (some Telegram WebViews) — the app still works online */
+    import('./store/useAppStore').then(({ useAppStore }) => {
+      const applySw = (enabled: boolean) => {
+        if (enabled) {
+          navigator.serviceWorker.register('/sw.js').catch(() => { /* some WebViews */ })
+        } else {
+          navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()))
+          caches?.keys?.().then((ks) => ks.forEach((k) => caches.delete(k)))
+        }
+      }
+      applySw(useAppStore.getState().settings.offlineMode)
+      let prev = useAppStore.getState().settings.offlineMode
+      useAppStore.subscribe((s) => {
+        const cur = s.settings.offlineMode
+        if (cur !== prev) { prev = cur; applySw(cur) }
+      })
     })
   })
 }
