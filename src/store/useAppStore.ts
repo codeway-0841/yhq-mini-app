@@ -17,9 +17,12 @@ interface AppState {
   initialized:    boolean
   /** User-set display name override (Telegram name o'rniga) */
   displayName:    string | null
+  /** Foydalanuvchi yuklagan maxsus avatar (256px WebP data URL, lokal) */
+  customAvatar:   string | null
 
   setUser:        (user: ApiUser | null) => void
   setDisplayName: (name: string | null) => void
+  setCustomAvatar: (avatar: string | null) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
   addResult:      (correct: boolean, questionId?: number) => void
@@ -54,9 +57,11 @@ export const useAppStore = create<AppState>()(
       tariff:         'free',
       initialized:    false,
       displayName:    null,
+      customAvatar:   null,
 
       setUser: (user) => set({ user, tariff: user?.tariff ?? 'free' }),
       setDisplayName: (name) => set({ displayName: name?.trim() || null }),
+      setCustomAvatar: (avatar) => set({ customAvatar: avatar || null }),
 
       updatePhone: async (phone) => {
         const userId = get().user?.id
@@ -179,6 +184,7 @@ export const useAppStore = create<AppState>()(
         wrongByTicket:  s.wrongByTicket,
         savedQuestions: s.savedQuestions,
         displayName:    s.displayName,
+        customAvatar:   s.customAvatar,
         tariff:         s.tariff,
       }),
     }

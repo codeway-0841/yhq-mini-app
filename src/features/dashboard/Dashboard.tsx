@@ -21,11 +21,13 @@ import SubjectSheet from '../../components/SubjectSheet'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
+  const customAvatar = useAppStore((s) => s.customAvatar)
+  const src = customAvatar ?? photoUrl
   const letter = name?.[0]?.toUpperCase() || 'F'
   return (
     <div className="relative flex-shrink-0">
-      {photoUrl ? (
-        <img src={photoUrl} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-line" />
+      {src ? (
+        <img src={src} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-line" />
       ) : (
         <div className="w-11 h-11 rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
           {letter}

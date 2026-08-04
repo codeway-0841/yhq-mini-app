@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
+  Camera, ImagePlus, Trash2, X,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
@@ -34,23 +35,99 @@ declare global {
 }
 
 // ── Avatar ──────────────────────────────────────────────────────────────
-function Avatar({ name, photoUrl, onEdit }: { name: string; photoUrl?: string; onEdit?: () => void }) {
+/** Galereyadagi rasmni 256px kvadrat WebP data URL'ga siqadi (localStorage uchun yengil). */
+function compressAvatar(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file)
+    const img = new Image()
+    img.onload = () => {
+      URL.revokeObjectURL(url)
+      const SIZE = 256
+      const side = Math.min(img.width, img.height)
+      if (!side) return reject(new Error('bad image'))
+      const canvas = document.createElement('canvas')
+      canvas.width = SIZE
+      canvas.height = SIZE
+      const ctx = canvas.getContext('2d')
+      if (!ctx) return reject(new Error('no canvas'))
+      // Markazdan kvadrat crop
+      ctx.drawImage(img, (img.width - side) / 2, (img.height - side) / 2, side, side, 0, 0, SIZE, SIZE)
+      try { resolve(canvas.toDataURL('image/webp', 0.82)) }
+      catch { reject(new Error('encode failed')) }
+    }
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('load failed')) }
+    img.src = url
+  })
+}
+
+function Avatar({ name, photoUrl, onEditName, onEditPhoto }: {
+  name: string; photoUrl?: string; onEditName?: () => void; onEditPhoto?: () => void
+}) {
+  const customAvatar = useAppStore((s) => s.customAvatar)
+  const src = customAvatar ?? photoUrl
   const letter = name?.[0]?.toUpperCase() ?? 'F'
   return (
     <div className="relative">
       <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-black text-4xl relative overflow-hidden ring-[3px] ring-duo-blue/40">
-        {photoUrl ? (
-          <img src={photoUrl} alt={name} className="absolute inset-0 w-full h-full object-cover" />
+        {src ? (
+          <img src={src} alt={name} className="absolute inset-0 w-full h-full object-cover" />
         ) : (
           letter
         )}
       </div>
-      {onEdit && (
-        <button onClick={onEdit} aria-label="Ismni o'zgartirish"
-          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-duo-blue border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
+      {onEditName && (
+        <button onClick={onEditName} aria-label="Ismni o'zgartirish"
+          className="absolute top-0 right-0 w-7 h-7 rounded-full bg-duo-blue border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
           <Pencil size={12} className="text-white" />
         </button>
       )}
+      {onEditPhoto && (
+        <button onClick={onEditPhoto} aria-label="Rasmni o'zgartirish"
+          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-duo-green border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
+          <Camera size={12} className="text-white" />
+        </button>
+      )}
+    </div>
+  )
+}
+
+// ── Bottom sheet — profil rasmini tahrirlash ────────────────────────────
+function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
+  hasCustom: boolean
+  busy: boolean
+  onClose: () => void
+  onPick: () => void
+  onRemove: () => void
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-end">
+      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+      <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
+        <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+        <p className="text-sm font-bold mb-4 flex items-center justify-center gap-2">
+          <Camera size={14} className="text-duo-green" />
+          Profil rasmi
+        </p>
+        <div className="flex flex-col gap-2.5">
+          <button onClick={onPick} disabled={busy}
+            className="w-full py-3.5 rounded-xl bg-duo-green text-white font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
+            <ImagePlus size={16} />
+            {busy ? 'Yuklanmoqda…' : 'Galereyadan tanlash'}
+          </button>
+          {hasCustom && (
+            <button onClick={onRemove} disabled={busy}
+              className="w-full py-3.5 rounded-xl bg-elevated border border-line text-duo-red font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
+              <Trash2 size={16} />
+              Rasmni o'chirish
+            </button>
+          )}
+          <button onClick={onClose}
+            className="w-full py-3 rounded-xl text-muted font-bold flex items-center justify-center gap-2 active:opacity-70">
+            <X size={16} />
+            Bekor qilish
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
@@ -136,6 +213,7 @@ export default function Profil() {
     user, settings, updateSettings, updatePhone, resetProgress, tariff,
     syncFromServer,
     displayName, setDisplayName,
+    customAvatar, setCustomAvatar,
   } = useAppStore()
   const tt = useT(settings.language)
 
@@ -144,6 +222,9 @@ export default function Profil() {
   const [, setPhoneError]             = useState<string | null>(null)
   const [toast, setToast]             = useState<string | null>(null)
   const [showNameEdit, setShowNameEdit] = useState(false)
+  const [showPhotoEdit, setShowPhotoEdit] = useState(false)
+  const [avatarBusy, setAvatarBusy]   = useState(false)
+  const fileRef                       = useRef<HTMLInputElement>(null)
   const [showLangPicker, setShowLangPicker]   = useState(false)
   const [showThemePicker, setShowThemePicker] = useState(false)
 
@@ -175,6 +256,26 @@ export default function Profil() {
 
   const handleReset = () => {
     if (window.confirm("Barcha progress o'chadi. Davom etasizmi?")) resetProgress()
+  }
+
+  // Galereyadan tanlangan rasmni siqib, lokal store'ga saqlaydi (server yuborilmaydi —
+  // Telegram WebView'da maxsus avatar endpoint'i yo'q; data URL localStorage'da saqlanadi).
+  const handleAvatarFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    e.target.value = '' // bir xil faylni qayta tanlash ham ishlashi uchun
+    if (!file) return
+    setAvatarBusy(true)
+    try {
+      const dataUrl = await compressAvatar(file)
+      if (dataUrl.length > 500_000) throw new Error('too big')
+      setCustomAvatar(dataUrl)
+      setShowPhotoEdit(false)
+      showToast('Rasm saqlandi ✓')
+    } catch {
+      showToast("Rasm yuklab bo'lmadi. Boshqa rasm tanlang.")
+    } finally {
+      setAvatarBusy(false)
+    }
   }
 
   const handleSync = () => {
@@ -230,7 +331,9 @@ export default function Profil() {
 
       {/* Avatar + Name + ID */}
       <div className="flex flex-col items-center gap-2.5 mb-7 px-4">
-        <Avatar name={name} photoUrl={user?.photoUrl} onEdit={() => setShowNameEdit(true)} />
+        <Avatar name={name} photoUrl={user?.photoUrl}
+          onEditName={() => setShowNameEdit(true)}
+          onEditPhoto={() => setShowPhotoEdit(true)} />
         <p className="text-[18px] font-bold text-white mt-1">{name}</p>
         <button
           type="button"
@@ -340,6 +443,20 @@ export default function Profil() {
           current={name}
           onClose={() => setShowNameEdit(false)}
           onSave={(n) => { setDisplayName(n); showToast('Ism saqlandi ✓') }}
+        />
+      )}
+
+      {/* Rasm tanlash — yashirin file input */}
+      <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarFile} />
+
+      {/* Photo edit sheet */}
+      {showPhotoEdit && (
+        <PhotoEditSheet
+          hasCustom={!!customAvatar}
+          busy={avatarBusy}
+          onClose={() => setShowPhotoEdit(false)}
+          onPick={() => fileRef.current?.click()}
+          onRemove={() => { setCustomAvatar(null); setShowPhotoEdit(false); showToast("Rasm o'chirildi") }}
         />
       )}
 
