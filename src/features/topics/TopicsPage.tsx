@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../store/useLessonsStore'
 import { useT } from '../../shared/i18n'
@@ -123,7 +122,6 @@ export default function TopicsPage() {
   const navigate = useNavigate()
   const { settings, wrongByTicket, user } = useAppStore()
   const tt = useT(settings.language)
-  const { questions } = useQuestionsStore()
   const lang = settings.language
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
@@ -158,9 +156,8 @@ export default function TopicsPage() {
   }
 
   const startMistakes = () => {
-    const ids = questions.filter((q) => (wrongByTicket[q.id] ?? 0) > 0).map((q) => q.id)
-    if (ids.length === 0) return
-    navigate('/test/1', { state: { questionIds: ids, title: tt('fixMistakes') } })
+    if (totalWrong === 0) return
+    navigate('/xatolar')
   }
 
   return (

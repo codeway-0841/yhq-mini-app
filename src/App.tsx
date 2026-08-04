@@ -21,6 +21,7 @@ const TopicsPage      = lazy(() => import('./features/topics/TopicsPage'))
 const AdaptivePage    = lazy(() => import('./features/adaptive/AdaptivePage'))
 const OctagonPage     = lazy(() => import('./features/octagon/OctagonPage'))
 const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPage'))
+const XatolarPage     = lazy(() => import('./features/mistakes/XatolarPage'))
 const NotFound        = lazy(() => import('./components/NotFound'))
 
 type TelegramWindow = Window & {
@@ -60,6 +61,7 @@ function Layout() {
             <Route path="/adaptive"   element={<AdaptivePage />} />
             <Route path="/octagon"    element={<OctagonPage />} />
             <Route path="/reyting"    element={<LeaderboardPage />} />
+            <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
         </Suspense>

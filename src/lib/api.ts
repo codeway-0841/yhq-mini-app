@@ -156,6 +156,18 @@ export const api = {
       'GET',
       `/leaderboard?limit=${limit}${userId ? `&userId=${uid(userId)}` : ''}`
     ),
+
+  // ── Daily Challenge ────────────────────────────────────────────────────
+  getDaily: (userId: string, date: string, subject: string) =>
+    request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
+
+  completeDaily: (userId: string, data: { date: string; subjectId: string; answered: number; correct: number }) =>
+    request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/complete`, data),
+}
+
+export interface DailyState {
+  record: { date: string; subjectId: string; answered: number; correct: number } | null
+  dailyStreak: number
 }
 
 export interface LeaderboardEntry {

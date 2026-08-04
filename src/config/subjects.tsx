@@ -23,6 +23,8 @@ export interface SubjectConfig {
       "Vaqtinchalik demo ma'lumotlar" badge'i chiqadi */
   demoData: boolean
   available: boolean
+  /** Kunlik topshiriqdagi savollar soni (O'zbekiston imtihon normasi) */
+  dailyCount: number
 }
 
 /** π belgisi — lucide'da yo'qligi uchun maxsus ikonka */
@@ -48,6 +50,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: false,
     available: true,
+    dailyCount: 20,
   },
   {
     id: 'fizika',
@@ -59,6 +62,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
   {
     id: 'matematika',
@@ -70,6 +74,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
   {
     id: 'kimyo',
@@ -81,6 +86,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
   {
     id: 'ingliz',
@@ -92,6 +98,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
   {
     id: 'tarix',
@@ -103,6 +110,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
   {
     id: 'biologiya',
@@ -114,6 +122,7 @@ export const SUBJECTS: SubjectConfig[] = [
     dataSourceId: 'traffic_rules_db',
     demoData: true,
     available: true,
+    dailyCount: 30,
   },
 ]
 

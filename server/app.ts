@@ -26,6 +26,7 @@ import leaderboardRouter from './modules/leaderboard/leaderboard.router'
 import questionsRouter   from './modules/questions/questions.router'
 import dashboardRouter   from './modules/dashboard/dashboard.router'
 import analyticsRouter   from './modules/analytics/analytics.router'
+import dailyRouter       from './modules/daily/daily.router'
 
 export function createApp() {
   const app = express()
@@ -74,6 +75,7 @@ export function createApp() {
   app.use('/api', questionsRouter)
   app.use('/api', dashboardRouter)
   app.use('/api', analyticsRouter)
+  app.use('/api', dailyRouter)
 
   // 404 catch-all for unmatched /api routes
   app.use('/api', (_req, res) => {

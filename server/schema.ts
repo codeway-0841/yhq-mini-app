@@ -29,6 +29,10 @@ export const progress = pgTable('progress', {
   totalAnswered: integer('total_answered').default(0).notNull(),
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
+  /** Kunlik topshiriq seriyasi (ketma-ket bajarilgan KUNLAR soni) */
+  dailyStreak:   integer('daily_streak').default(0).notNull(),
+  /** Oxirgi kunlik topshiriq bajarilgan sana — 'YYYY-MM-DD' (client local) */
+  lastDailyDate: text('last_daily_date'),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   // Leaderboard queries sort by totalCorrect
@@ -74,8 +78,7 @@ export const savedQuestions = pgTable('saved_questions', {
 }, (t) => [unique('uq_saved').on(t.userId, t.questionId)])
 
 /** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
-export const analyticsEvents = pgTable('analytics_events', {
-  id:        serial('id').primaryKey(),
+export const analyticsEvents = pgTable('analytics_events', {  id:        serial('id').primaryKey(),
   userId:    bigint('user_id', { mode: 'bigint' }).references(() => users.id, { onDelete: 'set null' }),
   event:     text('event').notNull(),
   props:     jsonb('props').$type<Record<string, unknown>>().default({}).notNull(),
@@ -83,4 +86,23 @@ export const analyticsEvents = pgTable('analytics_events', {
 }, (t) => [
   index('idx_events_user_time').on(t.userId, t.createdAt),
   index('idx_events_name_time').on(t.event, t.createdAt),
+])
+
+/**
+ * Kunlik topshiriq yozuvlari — har kun + fan uchun bitta qator.
+ * dailyStreak hisoblash `progress` jadvalida (lastDailyDate asosida),
+ * bu jadval esa tarix/kunlik statistika uchun.
+ */
+export const dailyRecords = pgTable('daily_records', {
+  id:          serial('id').primaryKey(),
+  userId:      bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  /** 'YYYY-MM-DD' — client local sanasi (Telegram user o'z vaqt zonasi) */
+  date:        text('date').notNull(),
+  subjectId:   text('subject_id').notNull(),
+  answered:    integer('answered').default(0).notNull(),
+  correct:     integer('correct').default(0).notNull(),
+  completedAt: timestamp('completed_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_daily_record').on(t.userId, t.date, t.subjectId),
+  index('idx_daily_user_date').on(t.userId, t.date),
 ])

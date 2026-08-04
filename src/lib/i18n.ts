@@ -96,6 +96,15 @@ const UZ = {
   fontLarge: "Katta", fontDefault: "Standart", fontSerif: "Serif", fontMono: "Mono",
   reportIssue: "Xatolik haqida xabar berish", saveBtn: "Saqlash",
   uzLang: "O'zbekcha", ruLang: "Русский",
+  // Daily Challenge
+  startWord: "Boshlash", doneWord: "Tayyor", dailyDone: "Bugungi topshiriq bajarildi ✓",
+  // Xatolarim sahifasi
+  mistakesTitle: "Xatolarim", practiceAll: "Barchasini mashq qilish",
+  practiceWord: "Mashq", byTopicsWord: "Mavzular kesimida",
+  topMistakes: "Eng ko'p xato qilinadigan savollar",
+  mistakesEmptyTitle: "Xatolar yo'q! 🎉",
+  mistakesEmptyDesc: "Barcha savollar to'g'ri yechilgan. Ajoyib natija!",
+  timesWord: "marta", unansweredWord: "ta hal qilinmagan xato",
 } as const
 
 type Keys = keyof typeof UZ
@@ -185,6 +194,15 @@ const RU: Record<Keys, string> = {
   fontLarge: "Крупный", fontDefault: "Стандарт", fontSerif: "Serif", fontMono: "Mono",
   reportIssue: "Сообщить об ошибке", saveBtn: "Сохранить",
   uzLang: "O'zbekcha", ruLang: "Русский",
+  // Daily Challenge
+  startWord: "Начать", doneWord: "Готово", dailyDone: "Задание на сегодня выполнено ✓",
+  // Страница «Мои ошибки»
+  mistakesTitle: "Мои ошибки", practiceAll: "Повторить все",
+  practiceWord: "Повторить", byTopicsWord: "По темам",
+  topMistakes: "Самые сложные вопросы",
+  mistakesEmptyTitle: "Ошибок нет! 🎉",
+  mistakesEmptyDesc: "Все вопросы решены верно. Отличный результат!",
+  timesWord: "раз", unansweredWord: "неисправленных ошибок",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
