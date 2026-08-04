@@ -216,38 +216,50 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
 })
 
 // ── Davom etayotgan mavzu kartasi (mock dizayn: navy karta + yashil CTA) ────
-const ContinueCard = memo(function ContinueCard({ modTitle, modIcon, modColor, lessonLabel, progressPct, allDone, lang, onContinue }: {
-  modTitle: string; modIcon: string; modColor: string
+// Background PNG: faylni `public/continue-mavzu.png` ga tashlasangiz kifoya —
+// karta unga avtomatik ulanadi (fayl bo'lmasa hech narsa buzilmaydi).
+const CONTINUE_BG_URL = '/continue-mavzu.png'
+
+const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progressPct, allDone, lang, onContinue }: {
+  modTitle: string
   lessonLabel: string;         // masalan: "3/7 dars"
   progressPct: number          // shu modul'dagi tayyorlik foizi
   allDone: boolean
   lang: 'uz' | 'ru'; onContinue: () => void
 }) {
   const tt = useT(lang)
+  const [bgOk, setBgOk] = useState(true)
   return (
     <div className="px-4 mb-3">
       <button onClick={onContinue}
-        className="card-neon w-full relative overflow-hidden flex items-center gap-3 p-4 active:scale-[0.99] transition-transform text-left">
-        <div className="flex-1 min-w-0">
+        className="card-neon w-full relative overflow-hidden p-4 text-left active:scale-[0.99] transition-transform">
+        {/* Background PNG (o'ng tomonda) — fayl yo'q bo'lsa yashirinadi */}
+        {bgOk && (
+          <img src={CONTINUE_BG_URL} alt="" aria-hidden
+            onError={() => setBgOk(false)}
+            className="absolute -right-2 -bottom-2 h-[110%] object-contain pointer-events-none select-none" />
+        )}
+        <div className="relative">
+          {/* Sarlavha */}
           <p className="text-[12px] font-semibold text-subtle">{tt('currentTopic')}</p>
-          <p className="text-[18px] font-black text-fg truncate mt-0.5">{modTitle}</p>
+          {/* Mavzu nomi — to'liq qatorda, kesilmaydi */}
+          <p className="text-[18px] font-black text-fg whitespace-normal break-words leading-snug mt-0.5 pr-16">
+            {modTitle}
+          </p>
           <p className="text-[11px] font-semibold text-subtle mt-1.5">
             {allDone ? tt('allDoneWord') : lessonLabel}
           </p>
-          <div className="progress-neon mt-1.5 max-w-[180px]">
-            <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
+          {/* Progress bar + "Davom etish" — bir qatorda, taglari tekis */}
+          <div className="flex items-end gap-3 mt-2">
+            <div className="progress-neon flex-1 mb-[13px]">
+              <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
+            </div>
+            <span className="btn-neon flex items-center gap-1.5 px-4 py-3 rounded-2xl text-[13px] flex-shrink-0">
+              {tt('continueLearn')}
+              <ChevronDown size={14} className="-rotate-90" />
+            </span>
           </div>
         </div>
-        {/* O'rtada glowing modul ikoni (mock'dagi 3D illyustratsiya o'rnida) */}
-        <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl flex-shrink-0"
-          style={{ background: `${modColor}1f`, border: `1px solid ${modColor}55`, boxShadow: `0 0 22px ${modColor}80` }}>
-          {modIcon}
-        </div>
-        {/* Yashil "Davom etish" CTA */}
-        <span className="btn-neon flex items-center gap-1.5 px-4 py-3 rounded-2xl text-[13px] flex-shrink-0">
-          {tt('continueLearn')}
-          <ChevronDown size={14} className="-rotate-90" />
-        </span>
       </button>
     </div>
   )
@@ -547,8 +559,6 @@ export default function Dashboard() {
       {/* Davom etayotgan mavzu — QAYSI darsda qolgan bo'lsa o'sha darslik */}
       <ContinueCard
         modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
-        modIcon={continueInfo.mod.icon}
-        modColor={continueInfo.mod.color}
         lessonLabel={continueInfo.lessonLabel}
         progressPct={continueInfo.pct}
         allDone={continueInfo.allDone}
