@@ -183,7 +183,7 @@ const FeatureCard = memo(function FeatureCard({ icon: Icon, label, subtitle, bgC
       </div>
       <div className={`relative z-10 min-w-0 ${wide ? 'order-1' : 'lg:order-1'}`}>
         <p className="text-[14px] lg:text-[15px] font-black text-white leading-tight">{label}</p>
-        <p className="text-[10.5px] font-semibold text-white/80 mt-1 leading-snug line-clamp-2">{subtitle}</p>
+        <p className="text-xs font-semibold text-white/85 mt-1 leading-snug line-clamp-2">{subtitle}</p>
       </div>
     </button>
   )
@@ -411,36 +411,37 @@ export default function Dashboard() {
         onFixMistakes={goMistakes}
       />
 
-      {/* Feature row: mobil — Darslik keng + Test/Oktagon 2 ustun · lg — 3 teng */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-2.5">
+      {/* Feature row: HERO = Adaptive (asosiy harakat), ostida Darslik + Oktagon.
+          Mobil: hero to'liq kenglik; lg: hero + 2 kichik (1.6fr 1fr 1fr) */}
+      <div className="grid grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr] gap-2.5 px-4 mb-2.5">
         <div className="col-span-2 lg:col-span-1">
           <FeatureCard
             wide
-            icon={GraduationCap}
-            label={tt('lessons')}
-            subtitle={tt('darslikDesc')}
-            bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
-            shadowColor="#1589c0"
-            iconColor="#1cb0f6"
-            onClick={goDarslik}
+            icon={Play}
+            label={tt('adaptive')}
+            subtitle={tt('adaptiveDesc')}
+            bgColor="linear-gradient(135deg, #58cc02, #46a302)"
+            shadowColor="#3f9202"
+            iconColor="#58cc02"
+            onClick={goAdaptive}
           />
         </div>
         <FeatureCard
-          icon={Play}
-          label={tt('adaptive')}
-          subtitle={tt('adaptiveDesc')}
-          bgColor="linear-gradient(135deg, #58cc02, #46a302)"
-          shadowColor="#3f9202"
-          iconColor="#58cc02"
-          onClick={goAdaptive}
+          icon={GraduationCap}
+          label={tt('lessons')}
+          subtitle={tt('darslikDesc')}
+          bgColor="linear-gradient(135deg, #1cb0f6, #1899d6)"
+          shadowColor="#1589c0"
+          iconColor="#1cb0f6"
+          onClick={goDarslik}
         />
         <FeatureCard
           icon={Swords}
           label={tt('octagon')}
           subtitle={tt('octagonTitle')}
-          bgColor="linear-gradient(135deg, #94a3b8, #64748b)"
-          shadowColor="#475569"
-          iconColor="#64748b"
+          bgColor="linear-gradient(135deg, #a78bfa, #8b5cf6)"
+          shadowColor="#7c3aed"
+          iconColor="#a78bfa"
           onClick={goOctagon}
         />
       </div>

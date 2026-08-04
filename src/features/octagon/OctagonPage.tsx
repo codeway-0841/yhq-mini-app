@@ -24,6 +24,23 @@ function useCountdown(deadline: number | null): number | null {
   return left
 }
 
+/** Silliq (60fps) raund progress 0..1 — progress bar uchun. */
+function useRoundProgress(deadline: number | null): number {
+  const [pct, setPct] = useState(1)
+  useEffect(() => {
+    if (!deadline) { setPct(1); return }
+    const total = deadline - Date.now() || 1
+    let raf = 0
+    const step = () => {
+      setPct(Math.max(0, Math.min(1, (deadline - Date.now()) / total)))
+      if (Date.now() < deadline) raf = requestAnimationFrame(step)
+    }
+    raf = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(raf)
+  }, [deadline])
+  return pct
+}
+
 interface State {
   phase: Phase; matchId: string | null; opponentName: string | null
   roundCount: number; roundIndex: number; currentQuestionId: number | null
@@ -94,6 +111,7 @@ export default function OctagonPage() {
   const [s, dispatch] = useReducer(reducer, INIT)
   const [conn, setConn] = useState<ConnStatus>('connecting')
   const timeLeft = useCountdown(s.deadline)
+  const roundPct = useRoundProgress(s.deadline)
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = useCallback((msg: string) => {
@@ -317,6 +335,17 @@ export default function OctagonPage() {
 
         {s.phase === 'in_round' && currentQ && (
           <div className="w-full max-w-md">
+            {s.deadline && (
+              <div className="w-full h-1.5 bg-line rounded-full overflow-hidden mb-2.5">
+                <div
+                  className="h-full rounded-full transition-colors duration-300"
+                  style={{
+                    width: `${roundPct * 100}%`,
+                    background: roundPct > 0.5 ? '#58cc02' : roundPct > 0.25 ? '#ffc800' : '#ff4b4b',
+                  }}
+                />
+              </div>
+            )}
             <p className="text-xs text-muted mb-1 text-center">
               {tt('round')} {s.roundIndex + 1} / {s.roundCount}
               {timeLeft !== null && (

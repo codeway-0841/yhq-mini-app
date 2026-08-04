@@ -12,7 +12,7 @@
   --theme-elevated:    #1e293b;
   --theme-fg:          #ffffff;
   --theme-fg-muted:    #cbd5e1;
-  --theme-fg-subtle:   #94a3b8;
+  --theme-fg-subtle:   #a6b4c6;   /* #94a3b8 → kontrast ko'tarildi (qorong'u fonda o'qiganda) */
   --theme-line:        #334155;
   --theme-line-strong: #475569;
   --theme-shadow:      #334155;
@@ -24,7 +24,7 @@ body[data-theme='light'] {
   --theme-elevated:    #f8fafc;
   --theme-fg:          #0f172a;
   --theme-fg-muted:    #475569;
-  --theme-fg-subtle:   #94a3b8;
+  --theme-fg-subtle:   #64748b;   /* light fonda #94a3b8 juda ochiq edi → kontrast kuchaytirildi */
   --theme-line:        #e2e8f0;
   --theme-line-strong: #cbd5e1;
   --theme-shadow:      #cbd5e1;
@@ -53,6 +53,15 @@ html, body, #root {
 
 /* Safe area for Telegram */
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
+
+/* Route transition — sahifalar orasida yumshoq 160ms fade+slide */
+.route-page { animation: routeIn 160ms ease-out both; }
+@keyframes routeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+/* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
+body[data-no-animation='true'] .route-page { animation: none; }
 
 /* ── 3D "chunky" tugmalar (Duolingo uslubi) ──────────────────────────────────
    Pastki qattiq soya (box-shadow) + bosilganda siqilish.

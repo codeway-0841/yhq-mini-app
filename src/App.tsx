@@ -1,5 +1,5 @@
 import { useEffect, lazy, Suspense, useState } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { api } from './lib/api'
@@ -39,9 +39,11 @@ type TelegramWindow = Window & {
 }
 
 function Layout() {
+  const location = useLocation()
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
-      <div className="flex-1 overflow-y-auto pb-4">
+      {/* key=pathname → sahifa almashganda yo'mshoq transition + scroll reset */}
+      <div key={location.pathname} className="route-page flex-1 overflow-y-auto pb-4">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />
@@ -65,7 +67,8 @@ function Layout() {
 /** Light/Dark tema — settings.theme o'zgarishi bilan body ga qo'llanadi.
  * 'system' tanlansa, qurilma sozlamasiga ergashiladi (matchMedia). */
 function ThemeEffect() {
-  const theme = useAppStore((s) => s.settings.theme)
+  const theme       = useAppStore((s) => s.settings.theme)
+  const noAnimation = useAppStore((s) => s.settings.noAnimation)
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
@@ -76,6 +79,10 @@ function ThemeEffect() {
     }
     document.body.dataset.theme = theme
   }, [theme])
+  useEffect(() => {
+    // noAnimation setting — route transitionlar ham o'chadi (index.css)
+    document.body.dataset.noAnimation = String(noAnimation)
+  }, [noAnimation])
   return null
 }
 
