@@ -1,5 +1,5 @@
 import { useEffect, lazy, Suspense, useState } from 'react'
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { useSubjectStore } from './store/useSubjectStore'
@@ -37,6 +37,7 @@ type TelegramWindow = Window & {
         offClick(cb: () => void): void
       }
       initDataUnsafe?: {
+        start_param?: string
         user?: {
           id: number
           first_name: string
@@ -51,12 +52,22 @@ type TelegramWindow = Window & {
 
 function Layout() {
   const location = useLocation()
+  const navigate = useNavigate()
   const atHome = location.pathname === '/'
 
   // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location.pathname])
+
+  // Duel invite-link: t.me/bot?startapp=duel-xxxx orqali kirsa → Octagon'ga
+  useEffect(() => {
+    const sp = (window as TelegramWindow).Telegram?.WebApp?.initDataUnsafe?.start_param
+    if (sp?.startsWith('duel-')) {
+      navigate('/octagon', { state: { duelCode: sp } })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Telegram BackButton — ilova ICHIDAGI orqaga navigatsiya.
   // U boshqarilmasa, "Back" bosilganda Mini App yopilib ketadi.

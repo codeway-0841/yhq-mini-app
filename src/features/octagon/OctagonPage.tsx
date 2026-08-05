@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useCallback, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Sword, X, Loader2, WifiOff, RefreshCw } from 'lucide-react'
+import { Sword, X, Loader2, WifiOff, RefreshCw, UserPlus, Share2 } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
@@ -9,6 +9,7 @@ import { useSubjectStore } from '../../store/useSubjectStore'
 import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
 import { track }          from '../../lib/analytics'
+import { shareUrl }       from '../../lib/telegram'
 
 type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
 
@@ -106,6 +107,7 @@ function reducer(s: State, a: Action): State {
 
 export default function OctagonPage() {
   const navigate = useNavigate()
+  const location = useLocation()
   const { user, settings } = useAppStore()
   const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
@@ -173,7 +175,7 @@ export default function OctagonPage() {
       try {
         // Server drops the queue entry when the old socket dies — rejoin silently.
         if (phaseRef.current === 'searching') {
-          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(initData ? { initData } : {}) })
+          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(duelCodeRef.current ? { duelCode: duelCodeRef.current } : {}), ...(initData ? { initData } : {}) })
         } else if ((phaseRef.current === 'in_round' || phaseRef.current === 'matched') && matchIdRef.current) {
           // Mid-match reconnect within the server grace window — state resyncs.
           sock.send({ type: 'rejoin', matchId: matchIdRef.current, userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
@@ -197,9 +199,16 @@ export default function OctagonPage() {
     }
   }, [s.phase, user?.id])
 
-  const joinQueue = useCallback(() => {
+  const [duelCode, setDuelCode] = useState<string | null>(
+    (location.state as { duelCode?: string } | null)?.duelCode ?? null
+  )
+  const duelCodeRef = useRef(duelCode)
+  duelCodeRef.current = duelCode
+
+  const joinQueue = useCallback((withDuel?: string) => {
     if (!user) return
-    track('duel_start', { subject: subjectRef.current })
+    if (withDuel) setDuelCode(withDuel)
+    track('duel_start', { subject: subjectRef.current, duel: Boolean(withDuel || duelCodeRef.current) })
     dispatch({ type: 'SEARCHING' })
     try {
       const initData = (window as { Telegram?: { WebApp?: { initData?: string } } })
@@ -209,6 +218,7 @@ export default function OctagonPage() {
         userId: user.id,
         name: user.firstName,
         subjectId: subjectRef.current,
+        ...((withDuel ?? duelCodeRef.current) ? { duelCode: withDuel ?? duelCodeRef.current! } : {}),
         ...(initData ? { initData } : {}),
       })
     } catch {
@@ -216,6 +226,21 @@ export default function OctagonPage() {
       showToast("Ulanishda xato. Qayta urinib ko'ring.")
     }
   }, [user, showToast])
+
+  /** Do'st uchun duel link yaratish */
+  const startDuel = useCallback(() => {
+    const code = `duel-${Math.random().toString(36).slice(2, 10)}`
+    joinQueue(code)
+  }, [joinQueue])
+
+  /** Invite link (Telegram startapp param) */
+  const duelLink = duelCode ? `https://t.me/prava_oson_bot?startapp=${duelCode}` : null
+
+  /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
+  useEffect(() => {
+    if (duelCode && user && s.phase === 'idle' && conn === 'open') joinQueue(duelCode)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [duelCode, user, s.phase, conn])
 
   const leaveQueue = useCallback(() => {
     if (user) {
@@ -295,9 +320,15 @@ export default function OctagonPage() {
               <h2 className="text-xl font-black mb-1">{tt('octagonTitle')}</h2>
               <p className="text-sm text-muted">Haqiqiy vaqtda raqib bilan bellashuv</p>
             </div>
-            <button onClick={joinQueue} disabled={conn === 'failed'}
+            <button onClick={() => joinQueue()} disabled={conn === 'failed'}
               className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] disabled:opacity-50 disabled:cursor-not-allowed transition-all">
               {tt('findOpponent')}
+            </button>
+            {/* Do'st bilan duel — invite link orqali */}
+            <button onClick={startDuel} disabled={conn === 'failed'}
+              className="flex items-center gap-2 border border-purple-500/50 text-purple-300 font-bold px-6 py-3 rounded-xl text-sm active:scale-95 transition-all disabled:opacity-50">
+              <UserPlus size={16} />
+              {tt('duelWithFriend')}
             </button>
           </div>
         )}
@@ -319,7 +350,21 @@ export default function OctagonPage() {
                 <span className="animate-bounce" style={{ animationDelay: '300ms' }}>.</span>
               </span>
             </p>
-            <button onClick={leaveQueue}
+            {/* Duel kutilmoqda — do'stga link ulashish */}
+            {duelCode && duelLink && (
+              <div className="card-neon p-4 flex flex-col items-center gap-2.5 max-w-xs">
+                <p className="text-[11px] text-subtle font-semibold text-center">
+                  {tt('duelInviteHint')}
+                </p>
+                <button onClick={() => shareUrl(duelLink, tt('duelInviteText'))}
+                  className="flex items-center gap-2 bg-duo-blue text-white font-bold px-5 py-2.5 rounded-xl text-[13px] active:scale-95 transition-transform">
+                  <Share2 size={15} />
+                  {tt('duelShareBtn')}
+                </button>
+                <p className="text-[10px] text-muted font-mono break-all text-center px-2">{duelLink}</p>
+              </div>
+            )}
+            <button onClick={() => { setDuelCode(null); leaveQueue() }}
               className="text-sm text-muted border border-line px-5 py-2.5 rounded-xl hover:text-fg transition-colors">
               {tt('cancel')}
             </button>
@@ -419,7 +464,7 @@ export default function OctagonPage() {
                 className="flex-1 py-3 rounded-xl bg-elevated text-sm font-semibold">
                 Chiqish
               </button>
-              <button onClick={joinQueue} className="flex-[2] py-3 rounded-xl bg-purple-600 text-white font-bold shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] transition-all">
+              <button onClick={() => joinQueue()} className="flex-[2] py-3 rounded-xl bg-purple-600 text-white font-bold shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] transition-all">
                 Qayta o'ynash
               </button>
             </div>

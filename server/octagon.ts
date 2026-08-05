@@ -37,9 +37,13 @@ import { progressRepository } from './modules/progress/progress.repository'
 const ROUNDS              = 10
 const ROUND_TIMEOUT       = 15_000  // ms per question
 const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
+const DUEL_TIMEOUT        = 5 * 60_000  // do'st linkni ochishi uchun uzoqroq — 5 daqiqa
 const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
 const MAX_NAME_LEN        = 64
 const RECONNECT_WINDOW_MS = 12_000  // mid-match disconnect grace before forfeit
+
+/** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
+const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
 
 // ── Per-subject question pools ─────────────────────────────────────────────
 // dataSourceId → pool. Pairing subjectId bo'yicha, savollar esa usha fanning
@@ -284,6 +288,9 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
     return
   }
 
+  // Duel kutilishi — o'sha socketniki bo'lsa o'chiramiz
+  leaveDuelByUser(userId, deadWs)
+
   const matchId = playerToMatch.get(userId)
   if (!matchId) return
   const match = matches.get(matchId)
@@ -312,6 +319,46 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
 }
 
 // ── Queue join — extracted to handle re-join timer leak ───────────────────
+
+/**
+ * Duel (do'stlar o'rtasida) — kutilayotgan yaratuvchilar: code → kutuvchi o'yinchi.
+ * Do'st shu kod bilan join_queue qilganda juftlashadi; savollar YARATUVCHIning
+ * fanidan olinadi (ikkinchi o'yinchida boshqa fan tanlangan bo'lishi mumkin).
+ */
+interface PendingDuel { player: Player; timer: ReturnType<typeof setTimeout> }
+const duels = new Map<string, PendingDuel>()
+
+function leaveDuelByUser(userId: string, deadWs?: WebSocket): void {
+  for (const [code, d] of duels) {
+    if (d.player.userId === userId && (!deadWs || d.player.ws === deadWs)) {
+      clearTimeout(d.timer)
+      duels.delete(code)
+    }
+  }
+}
+
+function joinDuel(ws: WebSocket, userId: string, name: string, code: string, fallbackSubjectId: string): void {
+  const existing = duels.get(code)
+  if (existing && existing.player.userId !== userId) {
+    // Do'st keldi — juftlaymiz (YARATUVCHIning fan savollarida)
+    clearTimeout(existing.timer)
+    duels.delete(code)
+    const joiner: Player = { ws, userId, name, subjectId: existing.player.subjectId, queueTimer: null }
+    startMatch(existing.player, joiner)
+    return
+  }
+  // Yaratuvchi kutilmoqda (yoki reconnect — yangi socket bilan yangilanadi)
+  leaveDuelByUser(userId)
+  const player: Player = { ws, userId, name, subjectId: fallbackSubjectId, queueTimer: null }
+  const timer = setTimeout(() => {
+    const cur = duels.get(code)
+    if (cur && cur.player.userId === userId) {
+      duels.delete(code)
+      send(ws, { type: 'error', message: 'duel_timeout' })
+    }
+  }, DUEL_TIMEOUT)
+  duels.set(code, { player, timer })
+}
 
 function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: string): void {
   // Coming back to a live match (app relaunch within grace window) — rejoin it
@@ -431,7 +478,12 @@ export function attachOctagon(
         const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
           ? String(msg.subjectId)
           : DEFAULT_SUBJECT_ID
-        joinQueue(ws, userId, name, subjectId)
+        // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
+        const duelCode = typeof msg.duelCode === 'string' && DUEL_CODE_RE.test(msg.duelCode)
+          ? msg.duelCode
+          : null
+        if (duelCode) joinDuel(ws, userId, name, duelCode, subjectId)
+        else joinQueue(ws, userId, name, subjectId)
         return
       }
 
@@ -465,6 +517,7 @@ export function attachOctagon(
         const queued = queue.get(userId)
         if (queued?.queueTimer) clearTimeout(queued.queueTimer)
         queue.delete(userId)
+        leaveDuelByUser(userId)
         return
       }
     })
