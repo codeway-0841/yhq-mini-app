@@ -285,11 +285,13 @@ export default function TestPage() {
             </p>
           </div>
           {q.image && (
-            /* Rasm ham doim bir xil o'lchamda: fixed height + object-contain —
-               har xil o'lchamdagi rasmlar kesilmaydi/layout siljimaydi */
-            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in h-44 lg:h-72 flex items-center justify-center bg-elevated"
+            /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
+               kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
+               rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in flex items-center justify-center bg-elevated"
               onClick={() => setZoomed(true)}>
-              <img src={q.image} alt="savol" loading="lazy" className="w-full h-full object-contain p-2" />
+              <img src={q.image} alt="savol" loading="lazy"
+                className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain" />
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
