@@ -30,7 +30,7 @@ export default function TestPage() {
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
-  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'tricky' | 'numeric' | undefined) ?? null
+  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'mock' | 'tricky' | 'numeric' | undefined) ?? null
 
   const activeQuestions = useMemo(() => {
     const ids = location.state?.questionIds
@@ -41,6 +41,7 @@ export default function TestPage() {
     const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
     switch (mode) {
       case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
+      case 'mock':      return shuffled().slice(0, Math.min(20, questions.length)) // Mock imtihon — bilet formatida
       case 'random50':  return shuffled().slice(0, Math.min(50, questions.length))
       case 'random100': return shuffled().slice(0, Math.min(100, questions.length))
       case 'random20':  return shuffled().slice(0, Math.min(20, questions.length))
@@ -83,6 +84,7 @@ export default function TestPage() {
   // Exam mode: 40 questions / 30 minutes — like the real test
   const totalSeconds =
     mode === 'exam'        ? 30 * 60 :
+    mode === 'mock'        ? 25 * 60 :
     mode === 'random100'   ? 120 * 60 :
     mode === 'random20'    ? 30 * 60 : 25 * 60
   const timer = useTimer(handleTimeUp, location.key, totalSeconds)
@@ -138,6 +140,14 @@ export default function TestPage() {
     })),
     [activeQuestions, answers]
   )
+
+  // Mock imtihon: 2+ xato — "yiqildingiz" (darhol yakunlanadi, bilet qoidasi)
+  const wrongCount = answers.filter((a) => a === 'wrong').length
+  useEffect(() => {
+    if (mode !== 'mock' || isFinished || wrongCount < 2) return
+    setIsFinished(true)
+    setShowResults(true)
+  }, [mode, wrongCount, isFinished])
 
   const handleYakunlash = useCallback(() => {
     const unansweredIdx = answers.map((a, i) => (a === null || a === 'unanswered' ? i : -1)).filter((i) => i >= 0)
@@ -226,6 +236,15 @@ export default function TestPage() {
           <span className="text-neon-yellow text-sm">⏱</span>
           <span className="font-mono font-black text-sm text-fg">{timer}</span>
         </div>
+
+        {/* Mock imtihon: xatolar hisoblagichi (2 ta = yiqildingiz) */}
+        {mode === 'mock' && (
+          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl border ${
+            wrongCount > 0 ? 'border-duo-red/60 bg-duo-red/10 text-duo-red' : 'border-line text-subtle'
+          }`}>
+            <span className="text-[12px] font-black">✗ {wrongCount}/2</span>
+          </div>
+        )}
 
         <div className="flex items-center gap-2">
           {isFinished && (
@@ -317,7 +336,7 @@ export default function TestPage() {
 
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
-          threshold={mode === 'exam' ? 90 : 80}
+          threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}

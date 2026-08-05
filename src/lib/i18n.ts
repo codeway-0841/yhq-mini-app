@@ -27,6 +27,7 @@ const UZ = {
   // Testlar sahifasi (mode chooser)
   t20: "20 talik tezkor test", t50Test: "50 talik test", t100: "100 talik test",
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
+  mockExam: "Mock imtihon", mockFailInfo: "2 xato = yiqildingiz",
   diffHard: "Qiyin", minWord: "daqiqa",
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   mistakeFixDesc: "Xato tuzatish",
@@ -151,6 +152,7 @@ const RU: Record<Keys, string> = {
   // Testlar sahifasi (mode chooser)
   t20: "Быстрый тест 20", t50Test: "Тест 50", t100: "Тест 100",
   examDesc: "Симулятор реального экзамена", diffEasy: "Легко", diffMid: "Средне",
+  mockExam: "Пробный экзамен", mockFailInfo: "2 ошибки = не сдано",
   diffHard: "Сложно", minWord: "минут",
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   mistakeFixDesc: "Исправь ошибки",
