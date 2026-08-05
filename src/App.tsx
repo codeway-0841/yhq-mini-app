@@ -53,6 +53,11 @@ function Layout() {
   const location = useLocation()
   const atHome = location.pathname === '/'
 
+  // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   // Telegram BackButton — ilova ICHIDAGI orqaga navigatsiya.
   // U boshqarilmasa, "Back" bosilganda Mini App yopilib ketadi.
   // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
