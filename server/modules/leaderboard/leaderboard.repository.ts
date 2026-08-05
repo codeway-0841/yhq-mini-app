@@ -90,8 +90,11 @@ export const leaderboardRepository = {
       .from(users)
       .leftJoin(progress, eq(progress.userId, users.id))
       .leftJoin(dailyRecords, eq(dailyRecords.userId, users.id))
-      .groupBy(users.id, users.firstName, users.lastName, progress.league)
-      .orderBy(desc(sql`score`), desc(sql`COALESCE(${progress.totalCorrect}, 0)`))
+      .groupBy(users.id, users.firstName, users.lastName, progress.league, progress.totalCorrect)
+      .orderBy(
+        desc(sql`COALESCE(SUM(CASE WHEN ${dailyRecords.date} >= ${weekStart} THEN ${dailyRecords.correct} ELSE 0 END), 0)`),
+        desc(sql`COALESCE(${progress.totalCorrect}, 0)`),
+      )
       .limit(safeLimit)
 
     let myLeague: string | null = null
