@@ -157,6 +157,12 @@ export const api = {
       `/leaderboard?limit=${limit}${userId ? `&userId=${uid(userId)}` : ''}`
     ),
 
+  getLeagueWeekly: (limit: number, userId?: string) =>
+    request<LeagueWeekly>(
+      'GET',
+      `/leaderboard?limit=${limit}&mode=weekly${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+
   // ── Daily Challenge ────────────────────────────────────────────────────
   getDaily: (userId: string, date: string, subject: string) =>
     request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
@@ -201,6 +207,21 @@ export interface AchievementStats {
   totalFixed:    number
   subjectAccuracy: { subjectId: string; answered: number; accuracy: number }[]
   allPassed80:   boolean
+}
+
+export interface WeeklyEntry {
+  rank:   number
+  userId: string
+  name:   string
+  score:  number
+  league: string
+  isYou:  boolean
+}
+
+export interface LeagueWeekly {
+  entries:   WeeklyEntry[]
+  myLeague:  string | null
+  weekStart: string
 }
 
 export interface LeaderboardEntry {

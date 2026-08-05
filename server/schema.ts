@@ -35,6 +35,8 @@ export const progress = pgTable('progress', {
   lastDailyDate: text('last_daily_date'),
   /** Oktagon (PvP) g'alabalar soni — WS server match yakunida yozadi (Yutuqlar) */
   octagonWins:  integer('octagon_wins').default(0).notNull(),
+  /** Haftalik liga darajasi — cron har dushanba 30% otiradi/tushiradi */
+  league:       text('league').default('bronze').notNull(),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   // Leaderboard queries sort by totalCorrect

@@ -3,4 +3,5 @@ export {
   api,
   type ApiUser, type ApiProgress, type ApiSettings, type FullProfile,
   type LeaderboardEntry,
+  type LeagueWeekly, type WeeklyEntry,
 } from '../../lib/api'

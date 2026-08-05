@@ -1,0 +1,1 @@
+ALTER TABLE "progress" ADD COLUMN "league" text DEFAULT 'bronze' NOT NULL;

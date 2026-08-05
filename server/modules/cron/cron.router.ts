@@ -14,10 +14,11 @@
 
 import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
-import { gte, eq } from 'drizzle-orm'
+import { gte, eq, and, lt, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords } from '../../schema'
+import { dailyRecords, progress } from '../../schema'
 import { config } from '../../config'
+import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 
 const router = Router()
 
@@ -86,6 +87,76 @@ router.all('/cron/daily-reminder', async (req, res) => {
   }
 
   res.json({ ok: true, date: today, targets: targets.length, sent, blocked, failed })
+})
+
+/**
+ * Vercel Cron — haftalik LIGA rollover (har dushanba 00:15 UTC).
+ * O'tgan hafta ball asosida: har ligada TOP 30% → bir daraja YUQORIga,
+ * PASTKI 30% va umuman nofaollar → bir daraja PASTGA.
+ * Duolingo uslubi: bronze → silver → gold → platinum.
+ */
+router.all('/cron/league-rollover', async (req, res) => {
+  const secret = process.env['CRON_SECRET']
+  if (secret && req.headers.authorization !== `Bearer ${secret}`) {
+    res.status(401).json({ error: 'unauthorized' })
+    return
+  }
+
+  const wThis = weekStartTashkent()    // joriy hafta boshi (yangi liga davri)
+  const wPrev = weekStartTashkent(1)   // natija olingan hafta boshi
+
+  const rows = await db.select({
+    userId: progress.userId,
+    league: progress.league,
+    score:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)`,
+  }).from(progress)
+    .leftJoin(dailyRecords, and(
+      eq(dailyRecords.userId, progress.userId),
+      gte(dailyRecords.date, wPrev),
+      lt(dailyRecords.date, wThis),
+    ))
+    .groupBy(progress.userId, progress.league)
+
+  const lvl = (l: string) => Math.max(0, LEAGUE_ORDER.indexOf(l as typeof LEAGUE_ORDER[number]))
+  const up   = (l: string) => LEAGUE_ORDER[Math.min(LEAGUE_ORDER.length - 1, lvl(l) + 1)]
+  const down = (l: string) => LEAGUE_ORDER[Math.max(0, lvl(l) - 1)]
+
+  let promoted = 0, demoted = 0
+  const updates: Promise<unknown>[] = []
+
+  for (const league of LEAGUE_ORDER) {
+    const inLeague = rows.filter((r) => (r.league || 'bronze') === league)
+    const active   = inLeague.filter((r) => Number(r.score) > 0)
+      .sort((a, b) => Number(b.score) - Number(a.score))
+
+    const n        = active.length
+    const promoteN = n >= 2 ? Math.max(1, Math.round(n * 0.3)) : 0
+    const demoteN  = n >= 3 ? Math.max(1, Math.round(n * 0.3)) : 0
+
+    active.forEach((r, i) => {
+      if (i < promoteN && lvl(r.league) < LEAGUE_ORDER.length - 1) {
+        promoted++
+        updates.push(db.update(progress).set({ league: up(r.league), updatedAt: new Date() })
+          .where(eq(progress.userId, r.userId)))
+      } else if (i >= n - demoteN && lvl(r.league) > 0) {
+        demoted++
+        updates.push(db.update(progress).set({ league: down(r.league), updatedAt: new Date() })
+          .where(eq(progress.userId, r.userId)))
+      }
+    })
+
+    // Umuman nofaol (0 ball) — bilanliga Bronze'dan yuqori bo'lsa tushadi
+    for (const r of inLeague.filter((x) => Number(x.score) === 0)) {
+      if (lvl(r.league) > 0) {
+        demoted++
+        updates.push(db.update(progress).set({ league: down(r.league), updatedAt: new Date() })
+          .where(eq(progress.userId, r.userId)))
+      }
+    }
+  }
+
+  await Promise.all(updates)
+  res.json({ ok: true, prevWeekStart: wPrev, users: rows.length, promoted, demoted })
 })
 
 export default router

@@ -1,10 +1,25 @@
-import { useEffect, useState } from 'react'
+/**
+ * Leaderboard — ikki rejim:
+ *  1) HAFTALIK LIGA (asosiy): joriy hafta yig'ilgan to'g'ri javoblar bo'yicha
+ *     reyting + liga tizimi (Bronze→Silver→Gold→Platina). Har dushanba cron
+ *     o'tgan hafta natijasiga ko'ra top 30% — yuqoriga, pastki 30% — pastga suradi.
+ *     Ro'yxatda: yuqori 30% = YASHIL (otish zonasi), pastki 30% = QIZIL (tushish).
+ *  2) UMUMIY: barcha vaqtlar bo'yicha reyting (eski holat).
+ */
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Trophy } from 'lucide-react'
+import { Trophy, Shield } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
-import { api, type LeaderboardEntry as Entry } from '../../shared/api'
+import { api, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
+
+const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
+  bronze:   { color: '#cd7f32', titleKey: 'leagueBronze' },
+  silver:   { color: '#94a3b8', titleKey: 'leagueSilver' },
+  gold:     { color: '#ffc800', titleKey: 'leagueGold' },
+  platinum: { color: '#38bdf8', titleKey: 'leaguePlat' },
+}
 
 function SkeletonRow() {
   return (
@@ -71,19 +86,29 @@ export default function LeaderboardPage() {
   const navigate = useNavigate()
   const tt = useT(settings.language)
 
+  const [tab, setTab]         = useState<'weekly' | 'all'>('weekly')
   const [entries, setEntries] = useState<Entry[] | null>(null)
+  const [weekly, setWeekly]   = useState<LeagueWeekly | null>(null)
   const [error, setError]     = useState(false)
 
   useEffect(() => {
     // api helper initData headerini qo'shadi (production'da auth talab qiladi)
     // va o'zining 8s timeout'iga ega — alohida AbortController shart emas.
-    api.getLeaderboard(50, user?.id)
-      .then(setEntries)
-      .catch(() => setError(true))
+    api.getLeagueWeekly(50, user?.id).then(setWeekly).catch(() => setError(true))
+    api.getLeaderboard(50, user?.id).then(setEntries).catch(() => setError(true))
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const notInTop50 = entries !== null && user !== null && !entries.find((e) => e.isYou)
+
+  // Liga zonalar: top 30% — otish, pastki 30% — tushish (dushanba cron ham shanaqa)
+  const wEntries = weekly?.entries ?? []
+  const n = wEntries.length
+  const promoteN = useMemo(() => (n >= 2 ? Math.max(1, Math.round(n * 0.3)) : 0), [n])
+  const demoteN  = useMemo(() => (n >= 3 ? Math.max(1, Math.round(n * 0.3)) : 0), [n])
+
+  const myLeague  = weekly?.myLeague ?? 'bronze'
+  const leagueCfg = LEAGUES[myLeague] ?? LEAGUES['bronze']
 
   return (
     <div className="pb-24">
@@ -94,49 +119,131 @@ export default function LeaderboardPage() {
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>
       </div>
 
+      {/* Tablar: Liga / Umumiy */}
+      <div className="flex gap-2 px-4 pt-3">
+        {(['weekly', 'all'] as const).map((t) => (
+          <button key={t} onClick={() => setTab(t)}
+            className={`px-4 py-1.5 rounded-xl text-[13px] font-black transition-all ${
+              tab === t ? 'bg-duo-blue text-white' : 'bg-elevated text-subtle'
+            }`}>
+            {t === 'weekly' ? tt('leagueTab') : tt('allTimeTab')}
+          </button>
+        ))}
+      </div>
+
       {error && (
         <p className="text-center text-muted text-sm py-16">{tt('leaderboardError')}</p>
       )}
 
-      {!entries && !error && Array.from({ length: 10 }, (_, i) => <SkeletonRow key={i} />)}
-
-      {entries && entries.length >= 3 && <Podium top3={entries.slice(0, 3)} />}
-
-      {entries && (
-        <div className="mt-2">
-          {entries.map((entry) => (
-            <div key={entry.userId}
-              className={`flex items-center gap-3 px-4 py-3 border-b border-line ${entry.isYou ? 'bg-duo-blue/10' : ''}`}>
-              <div className="w-8 flex items-center justify-center flex-shrink-0">
-                <Medal rank={entry.rank} />
+      {/* ══ LIGA rejimi ══ */}
+      {tab === 'weekly' && !error && (
+        <>
+          {!weekly && Array.from({ length: 10 }, (_, i) => <SkeletonRow key={i} />)}
+          {weekly && (
+            <>
+              {/* Mening ligam */}
+              <div className="mx-4 mt-3 card-neon flex items-center gap-3 px-4 py-3"
+                style={{ borderColor: `${leagueCfg.color}66` }}>
+                <Shield size={26} style={{ color: leagueCfg.color }} fill={leagueCfg.color} fillOpacity={0.3} />
+                <div className="flex-1">
+                  <p className="text-[13px] font-black" style={{ color: leagueCfg.color }}>
+                    {tt(leagueCfg.titleKey)} {tt('leagueTab').toLowerCase()}si
+                  </p>
+                  <p className="text-[10.5px] text-subtle font-semibold">{tt('leagueWeekInfo')}</p>
+                </div>
               </div>
-              <InitialAvatar name={entry.name} />
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold truncate">
-                  {entry.name}
-                  {entry.isYou && (
-                    <span className="ml-1.5 text-[10px] text-duo-blue font-bold">{tt('youLabel')}</span>
-                  )}
-                </p>
-                {entry.streak > 0 && (
-                  <p className="text-[11px] text-orange-400">🔥 {entry.streak} {tt('streakCol')}</p>
-                )}
+
+              {/* Zone chiziqlari bilan reyting */}
+              <div className="mt-2">
+                {wEntries.map((entry, i) => {
+                  const lg  = LEAGUES[entry.league] ?? LEAGUES['bronze']
+                  const isPromote = promoteN > 0 && i < promoteN
+                  const isDemote  = demoteN > 0 && i >= n - demoteN
+                  return (
+                    <div key={entry.userId}
+                      className={`flex items-center gap-3 px-4 py-3 border-b border-line ${
+                        isPromote ? 'bg-duo-green/10 border-l-2 border-l-duo-green' :
+                        isDemote  ? 'bg-duo-red/10 border-l-2 border-l-duo-red' :
+                        entry.isYou ? 'bg-duo-blue/10' : ''
+                      }`}>
+                      <div className="w-8 flex items-center justify-center flex-shrink-0">
+                        <Medal rank={entry.rank} />
+                      </div>
+                      <InitialAvatar name={entry.name} />
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-semibold truncate">
+                          {entry.name}
+                          {entry.isYou && (
+                            <span className="ml-1.5 text-[10px] text-duo-blue font-bold">{tt('youLabel')}</span>
+                          )}
+                        </p>
+                        <p className="text-[10px] font-bold" style={{ color: lg.color }}>
+                          {tt(lg.titleKey)}
+                        </p>
+                      </div>
+                      <span className="text-sm font-bold text-green-400">{entry.score}</span>
+                    </div>
+                  )
+                })}
               </div>
-              <span className="text-sm font-bold text-green-400">{entry.score}</span>
-            </div>
-          ))}
-        </div>
+
+              {/* Zone tushuntirish */}
+              <div className="mx-4 mt-4 flex items-center gap-3 text-[10px] font-semibold text-subtle">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-sm bg-duo-green" />
+                  {tt('promoteZone')}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-sm bg-duo-red" />
+                  {tt('demoteZone')}
+                </span>
+              </div>
+            </>
+          )}
+        </>
       )}
 
-      {notInTop50 && user && (
-        <div className="mx-4 mt-4 bg-surface border border-line rounded-2xl px-4 py-3">
-          <p className="text-xs text-muted mb-2">{tt('yourRank')}</p>
-          <div className="flex items-center gap-3">
-            <InitialAvatar name={user.firstName} />
-            <span className="flex-1 text-sm font-semibold">{user.firstName}</span>
-            <span className="text-xs text-muted">{tt('notInTop50')}</span>
-          </div>
-        </div>
+      {/* ══ UMUMIY rejim (eski all-time) ══ */}
+      {tab === 'all' && !error && (
+        <>
+          {!entries && Array.from({ length: 10 }, (_, i) => <SkeletonRow key={i} />)}
+          {entries && entries.length >= 3 && <Podium top3={entries.slice(0, 3)} />}
+          {entries && (
+            <div className="mt-2">
+              {entries.map((entry) => (
+                <div key={entry.userId}
+                  className={`flex items-center gap-3 px-4 py-3 border-b border-line ${entry.isYou ? 'bg-duo-blue/10' : ''}`}>
+                  <div className="w-8 flex items-center justify-center flex-shrink-0">
+                    <Medal rank={entry.rank} />
+                  </div>
+                  <InitialAvatar name={entry.name} />
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold truncate">
+                      {entry.name}
+                      {entry.isYou && (
+                        <span className="ml-1.5 text-[10px] text-duo-blue font-bold">{tt('youLabel')}</span>
+                      )}
+                    </p>
+                    {entry.streak > 0 && (
+                      <p className="text-[11px] text-orange-400">🔥 {entry.streak} {tt('streakCol')}</p>
+                    )}
+                  </div>
+                  <span className="text-sm font-bold text-green-400">{entry.score}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          {notInTop50 && user && (
+            <div className="mx-4 mt-4 bg-surface border border-line rounded-2xl px-4 py-3">
+              <p className="text-xs text-muted mb-2">{tt('yourRank')}</p>
+              <div className="flex items-center gap-3">
+                <InitialAvatar name={user.firstName} />
+                <span className="flex-1 text-sm font-semibold">{user.firstName}</span>
+                <span className="text-xs text-muted">{tt('notInTop50')}</span>
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   )
