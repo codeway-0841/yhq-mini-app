@@ -30,6 +30,12 @@ type TelegramWindow = Window & {
     WebApp?: {
       ready(): void
       expand(): void
+      BackButton?: {
+        show(): void
+        hide(): void
+        onClick(cb: () => void): void
+        offClick(cb: () => void): void
+      }
       initDataUnsafe?: {
         user?: {
           id: number
@@ -45,6 +51,21 @@ type TelegramWindow = Window & {
 
 function Layout() {
   const location = useLocation()
+  const atHome = location.pathname === '/'
+
+  // Telegram BackButton — ilova ICHIDAGI orqaga navigatsiya.
+  // U boshqarilmasa, "Back" bosilganda Mini App yopilib ketadi.
+  // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
+  useEffect(() => {
+    const bb = (window as TelegramWindow).Telegram?.WebApp?.BackButton
+    if (!bb) return
+    if (atHome) return bb.hide()
+    const handler = () => window.history.back()
+    bb.show()
+    bb.onClick(handler)
+    return () => { bb.offClick(handler) }
+  }, [atHome])
+
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
       {/* key=pathname → sahifa almashganda yo'mshoq transition + scroll reset */}
