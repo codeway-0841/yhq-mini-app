@@ -40,7 +40,7 @@ const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
 const DUEL_TIMEOUT        = 5 * 60_000  // do'st linkni ochishi uchun uzoqroq — 5 daqiqa
 const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
 const MAX_NAME_LEN        = 64
-const RECONNECT_WINDOW_MS = 12_000  // mid-match disconnect grace before forfeit
+const RECONNECT_WINDOW_MS = 60_000  // raqib qaytish kutilishi (raqibga vaqt — 60s)
 
 /** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
 const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
@@ -66,6 +66,9 @@ interface RoundState {
   timer:     ReturnType<typeof setTimeout>
   resolved:  boolean
   startedAt: number               // rejoin uchun qolgan vaqtni hisoblash
+  /** Raqib uzilganda raund PAUSE: qolgan vaqt saqlanadi, taymer to'xtatiladi */
+  paused:    boolean
+  remainingMs: number
 }
 
 interface Match {
@@ -160,7 +163,7 @@ function startRound(match: Match): void {
   const questionId = match.questionIds[index]
   const timer      = setTimeout(() => resolveRound(match, index), ROUND_TIMEOUT)
 
-  match.roundState = { answers: new Map(), timer, resolved: false, startedAt: Date.now() }
+  match.roundState = { answers: new Map(), timer, resolved: false, startedAt: Date.now(), paused: false, remainingMs: ROUND_TIMEOUT }
 
   for (const p of match.players) {
     send(p.ws, { type: 'question', index, questionId, timeLimit: ROUND_TIMEOUT })
@@ -256,7 +259,14 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
     match.disconnectTimer = null
   }
 
+  // RESUME: raund pauza'da bo'lgan bo'lsa — qolgan vaqtidan davom ettiriladi
   const rs = match.roundState
+  if (rs && !rs.resolved && rs.paused) {
+    rs.startedAt = Date.now() - (ROUND_TIMEOUT - rs.remainingMs)
+    rs.timer     = setTimeout(() => resolveRound(match, match.round), rs.remainingMs)
+    rs.paused    = false
+  }
+
   const active = rs !== null && !rs.resolved
   send(ws, {
     type:         'match_state',
@@ -301,6 +311,14 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
   const opponent = match.players.find((p) => p.userId !== userId)
   if (opponent) {
     send(opponent.ws, { type: 'opp_waiting', waitSeconds: RECONNECT_WINDOW_MS / 1000 })
+  }
+
+  // PAUSE: o'yin to'xtatiladi — raqib qaytsa shu joyidan davom etadi
+  const rs0 = match.roundState
+  if (rs0 && !rs0.resolved && !rs0.paused) {
+    rs0.remainingMs = Math.max(0, ROUND_TIMEOUT - (Date.now() - rs0.startedAt))
+    clearTimeout(rs0.timer)
+    rs0.paused = true
   }
 
   match.disconnectTimer = setTimeout(() => {
