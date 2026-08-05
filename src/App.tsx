@@ -154,6 +154,9 @@ export default function App() {
       useQuestionsStore.getState().load(lang)
 
     if (tgUser?.id) {
+      // TEZKOR OCHILISH: savollar serverini init bilan PARALLEL yuklaymiz.
+      // Cache'dagi (persist) til — odatda serverdagi bilan bir xil (load ichida dedupe bor).
+      const qPromise = loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
       api.init({
         id:         String(tgUser.id),
         first_name: tgUser.first_name,
@@ -179,7 +182,10 @@ export default function App() {
               wrongByTicket:  data.progress.wrongByTicket,
               savedQuestions: data.savedQuestions,
             })
-            await loadQuestions(data.settings.language).catch(() => {})
+            // Parallel yuklash tugagach — til serverdagi sozlamalar bilan farq
+            // qilsa, XOTIRADAN remap qilamiz (qayta tarmoq so'rovisiz).
+            await qPromise
+            useQuestionsStore.getState().setLang(data.settings.language)
           } finally {
             // Xato bo'lsa ham splash'dan chiqishi shart
             useAppStore.setState({ initialized: true })
