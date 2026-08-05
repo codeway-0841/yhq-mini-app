@@ -1,5 +1,5 @@
 import { useEffect, useReducer, useCallback, useRef, useState } from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, useParams } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { Sword, X, Loader2, WifiOff, RefreshCw, UserPlus, Share2 } from 'lucide-react'
 import { useAppStore }    from '../../shared/store/useAppStore'
@@ -199,8 +199,9 @@ export default function OctagonPage() {
     }
   }, [s.phase, user?.id])
 
+  const routeDuelCode = useParams().duelCode
   const [duelCode, setDuelCode] = useState<string | null>(
-    (location.state as { duelCode?: string } | null)?.duelCode ?? null
+    routeDuelCode ?? (location.state as { duelCode?: string } | null)?.duelCode ?? null
   )
   const duelCodeRef = useRef(duelCode)
   duelCodeRef.current = duelCode
@@ -233,8 +234,9 @@ export default function OctagonPage() {
     joinQueue(code)
   }, [joinQueue])
 
-  /** Invite link (Telegram startapp param) */
-  const duelLink = duelCode ? `https://t.me/prava_oson_bot?startapp=${duelCode}` : null
+  /** Invite link — bot /start deep-link (startapp'dan farqli har doim ishlaydi):
+      bot duel tugmasi bilan ilova URL'ga o'tkazadi (`#/octagon/duel-xxxx`) */
+  const duelLink = duelCode ? `https://t.me/prava_oson_bot?start=${duelCode}` : null
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {

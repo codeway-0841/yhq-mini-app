@@ -97,7 +97,7 @@ function Layout() {
             <Route path="/profil"     element={<Profil />} />
             <Route path="/mavzular"   element={<TopicsPage />} />
             <Route path="/adaptive"   element={<AdaptivePage />} />
-            <Route path="/octagon"    element={<OctagonPage />} />
+            <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
             <Route path="/reyting"    element={<LeaderboardPage />} />
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />

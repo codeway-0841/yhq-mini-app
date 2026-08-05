@@ -56,6 +56,17 @@ bot.catch((err) => {
 // ── /start ──────────────────────────────────────────────────────────────────
 bot.command('start', async (ctx) => {
   void ensureProfile()   // fire-and-forget — don't block the reply
+
+  // Duel invite deep-link: t.me/bot?start=duel-xxxx → ilovadagi duel sahifasiga o'tkazuvchi tugma
+  const param = ctx.match
+  if (param && /^duel-[a-z0-9]{6,16}$/.test(param)) {
+    await ctx.reply(
+      '🤺 Duelga taklif qilindingiz! Quyidagi tugmani bosib raqibingizga qo\'shiling:',
+      { reply_markup: new InlineKeyboard().webApp("⚔️ Duelga qo'shilish", `${BASE_URL}#/octagon/${param}`) },
+    )
+    return
+  }
+
   await ctx.reply(
     "Xush kelibsiz! 🚗\n\nYo'l harakati qoidalari bo'yicha imtihonga tayyorlaning: biletlar, mavzular, yo'l belgilari va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
