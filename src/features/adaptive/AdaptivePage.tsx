@@ -121,8 +121,8 @@ export default function AdaptivePage() {
         </div>
         <p className="text-base font-semibold leading-snug mb-5">{q.text}</p>
         {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-line">
-            <img src={q.image} alt={q.text} className="w-full object-cover max-h-52" />
+          <div className="rounded-xl overflow-hidden mb-4 border border-line h-44 flex items-center justify-center bg-elevated">
+            <img src={q.image} alt={q.text} loading="lazy" className="w-full h-full object-contain p-2" />
           </div>
         )}
         {q.options.map((opt) => {

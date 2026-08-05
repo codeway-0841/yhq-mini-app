@@ -361,8 +361,8 @@ export default function OctagonPage() {
             </p>
             <p className="text-base font-semibold text-center mb-5 leading-snug">{currentQ.text}</p>
             {currentQ.image && (
-              <div className="rounded-xl overflow-hidden mb-4 border border-line">
-                <img src={currentQ.image} alt="savol" className="w-full object-cover max-h-48" />
+              <div className="rounded-xl overflow-hidden mb-4 border border-line h-40 flex items-center justify-center bg-elevated">
+                <img src={currentQ.image} alt="savol" loading="lazy" className="w-full h-full object-contain p-2" />
               </div>
             )}
             {currentQ.options.map((opt) => {
