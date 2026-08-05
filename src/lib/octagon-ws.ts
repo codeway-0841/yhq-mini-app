@@ -45,6 +45,8 @@ export class OctagonSocket {
   private heartbeatTimer:  ReturnType<typeof setInterval> | null = null
   private lastMsgAt        = 0
   private closed           = false
+  /** Joriy holat — yangi listener DARHOL uni oladi (socket allaqachon open bo'lsa ham) */
+  private currentStatus: ConnStatus = 'connecting'
   readonly url:            string
 
   constructor(url: string) {
@@ -52,6 +54,7 @@ export class OctagonSocket {
   }
 
   private emitStatus(s: ConnStatus): void {
+    this.currentStatus = s
     this.statusListeners.forEach((fn) => fn(s))
   }
 
@@ -148,9 +151,10 @@ export class OctagonSocket {
     return () => this.listeners.delete(fn)
   }
 
-  /** Subscribe to connection lifecycle. Returns an unsubscribe function. */
+  /** Subscribe to connection lifecycle — JORIY holat darhol chaqiriladi. Returns an unsubscribe function. */
   onStatus(fn: StatusListener): () => void {
     this.statusListeners.add(fn)
+    fn(this.currentStatus)
     return () => this.statusListeners.delete(fn)
   }
 
