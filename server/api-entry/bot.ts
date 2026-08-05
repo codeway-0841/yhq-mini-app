@@ -62,7 +62,9 @@ bot.command('start', async (ctx) => {
   if (param && /^duel-[a-z0-9]{6,16}$/.test(param)) {
     await ctx.reply(
       '🤺 Duelga taklif qilindingiz! Quyidagi tugmani bosib raqibingizga qo\'shiling:',
-      { reply_markup: new InlineKeyboard().webApp("⚔️ Duelga qo'shilish", `${BASE_URL}#/octagon/${param}`) },
+      // QUERY param — hash emas! Telegram hash'li web_app URL'da eski
+      // sessiyani (Dashboard'da qolgan) ochadi; query esa ilovani QAYTA YUKLAYDI.
+      { reply_markup: new InlineKeyboard().webApp("⚔️ Duelga qo'shilish", `${BASE_URL}?duel=${param}`) },
     )
     return
   }

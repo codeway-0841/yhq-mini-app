@@ -60,12 +60,15 @@ function Layout() {
     window.scrollTo(0, 0)
   }, [location.pathname])
 
-  // Duel invite-link: t.me/bot?startapp=duel-xxxx orqali kirsa → Octagon'ga
+  // Duel invite-link (ikki manba):
+  //  1) startapp deep-link: ?startapp=duel-xxxx → start_param
+  //  2) bot tugmasidan: URL'dagi ?duel=duel-xxxx query param
   useEffect(() => {
     const sp = (window as TelegramWindow).Telegram?.WebApp?.initDataUnsafe?.start_param
-    if (sp?.startsWith('duel-')) {
-      navigate('/octagon', { state: { duelCode: sp } })
-    }
+    const fromTg = sp?.startsWith('duel-') ? sp : undefined
+    const fromQuery = new URLSearchParams(window.location.search).get('duel') ?? undefined
+    const code = fromTg ?? (fromQuery?.startsWith('duel-') ? fromQuery : undefined)
+    if (code) navigate(`/octagon/${code}`)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
