@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { Zap, ClipboardCheck } from 'lucide-react'
 import { track } from '../../lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../lib/navigation'
 
@@ -28,6 +29,7 @@ interface ModeCard {
 export default function TestlarPage() {
   const navigate = useNavigate()
   const { settings, totalCorrect, totalAnswered } = useAppStore()
+  const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
 
   const accuracy = totalAnswered > 0
@@ -49,8 +51,11 @@ export default function TestlarPage() {
       titleKey: 't20',     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' },
     { id: 'exam',      iconBox: 'cap',                 accent: '#38bdf8',
       titleKey: 'realExam', meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' },
-    { id: 'mock',      iconBox: 'cap',                 accent: '#ff4b4b',
-      titleKey: 'mockExam', meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' },
+    // Mock imtihon FAQAT YHQ uchun (rasmiy bilet formati) — boshqa fanlarda ko'rinmaydi
+    ...(subjectId === 'yhq'
+      ? [{ id: 'mock',  iconBox: 'cap' as const,        accent: '#ff4b4b',
+           titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const }]
+      : []),
   ]
 
   const start = (m: ModeCard) => {
