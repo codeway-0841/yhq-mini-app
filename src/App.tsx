@@ -59,7 +59,7 @@ function Layout() {
   useEffect(() => {
     const bb = (window as TelegramWindow).Telegram?.WebApp?.BackButton
     if (!bb) return
-    if (atHome) return bb.hide()
+    if (atHome) { bb.hide(); return } // Eslatma: `return bb.hide()` YOZILMAYDI — hide() object qaytaradi, React crash bo'ladi
     const handler = () => window.history.back()
     bb.show()
     bb.onClick(handler)
