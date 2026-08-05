@@ -234,9 +234,9 @@ export default function OctagonPage() {
     joinQueue(code)
   }, [joinQueue])
 
-  /** Invite link — bot /start deep-link (startapp'dan farqli har doim ishlaydi):
-      bot duel tugmasi bilan ilova URL'ga o'tkazadi (`#/octagon/duel-xxxx`) */
-  const duelLink = duelCode ? `https://t.me/prava_oson_bot?start=${duelCode}` : null
+  /** Invite link — Telegram startapp deep-link: ilova botdan MUSTAQIL va toza
+      ochiladi (start_param=duel-xxxx → App.tsx /octagon'ga o'tkazadi) */
+  const duelLink = duelCode ? `https://t.me/prava_oson_bot/app?startapp=${duelCode}` : null
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {
