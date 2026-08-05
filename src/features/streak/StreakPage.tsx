@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom'
 import { Zap, Trophy, CalendarCheck2, HeartCrack } from 'lucide-react'
 import { goBack } from '../../lib/navigation'
 import { api, type DailyHistory } from '../../lib/api'
-import { todayStr } from '../../store/useDailyStore'
+import { useDailyStore, todayStr } from '../../store/useDailyStore'
 import { useAppStore } from '../../store/useAppStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -45,6 +45,8 @@ export default function StreakPage() {
   const [history, setHistory]     = useState<DailyHistory | null>(null)
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
   const [selected, setSelected]   = useState(today)                            // 'YYYY-MM-DD'
+  // Server javobi kelgunicha — lokal (cache) streak darhol ko'rinadi, 0 emas
+  const cachedStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
 
   const subjectId = subject.id
   useEffect(() => {
@@ -84,7 +86,7 @@ export default function StreakPage() {
   }
 
   const sel    = byDate.get(selected) ?? { answered: 0, correct: 0, fixed: 0 }
-  const streak = history?.dailyStreak ?? 0
+  const streak = history?.dailyStreak ?? cachedStreak
   const months = tt('monthsList').split('|')
   const weeks  = tt('weekdaysList').split('|')
 
@@ -118,19 +120,30 @@ export default function StreakPage() {
         </div>
       </div>
 
-      {/* Tanlangan kun statistikasi */}
-      <div className="grid grid-cols-3 gap-2.5 mb-4">
-        {[
-          { v: sel.answered,              label: tt('solvedWord'), color: 'text-duo-green' },
-          { v: sel.answered - sel.correct, label: tt('wrongUpper'), color: 'text-duo-red' },
-          { v: sel.fixed,                  label: tt('fixedUpper'), color: 'text-duo-blue' },
-        ].map((c) => (
-          <div key={c.label} className="card-neon p-3 text-center">
-            <p className={`text-[24px] font-black leading-none ${c.color}`}>{c.v}</p>
-            <p className="text-[10px] font-bold text-subtle mt-1.5 tracking-wide">{c.label}</p>
-          </div>
-        ))}
-      </div>
+      {/* Tanlangan kun statistikasi — server javobini kutishda skeleton (0'lar flash bo'lmasin) */}
+      {history ? (
+        <div className="grid grid-cols-3 gap-2.5 mb-4">
+          {[
+            { v: sel.answered,              label: tt('solvedWord'), color: 'text-duo-green' },
+            { v: sel.answered - sel.correct, label: tt('wrongUpper'), color: 'text-duo-red' },
+            { v: sel.fixed,                  label: tt('fixedUpper'), color: 'text-duo-blue' },
+          ].map((c) => (
+            <div key={c.label} className="card-neon p-3 text-center">
+              <p className={`text-[24px] font-black leading-none ${c.color}`}>{c.v}</p>
+              <p className="text-[10px] font-bold text-subtle mt-1.5 tracking-wide">{c.label}</p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-3 gap-2.5 mb-4">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="card-neon p-3 text-center animate-pulse">
+              <div className="h-6 w-8 mx-auto rounded-md bg-elevated" />
+              <div className="h-2.5 w-14 mx-auto rounded bg-elevated mt-2" />
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Kalendar */}
       <div className="card-neon p-4 mb-4">
@@ -148,7 +161,11 @@ export default function StreakPage() {
           {weeks.map((w) => (
             <p key={w} className="text-[10px] font-bold text-subtle uppercase py-1">{w}</p>
           ))}
-          {cells.map((date, i) => {
+          {/* Yuklanish skeleti — yashil kataklar "0 holati"da miltillamasin */}
+          {!history && cells.map((date, i) =>
+            date ? <span key={`sk${date}`} className="aspect-square rounded-xl bg-elevated animate-pulse" />
+                 : <span key={`e${i}`} />)}
+          {history && cells.map((date, i) => {
             if (!date) return <span key={`e${i}`} />
             const future = date > today
             // Har qanday faollik (test, xato tuzatish, dars) — kamida 1-daraja yashil
@@ -169,6 +186,7 @@ export default function StreakPage() {
           })}
         </div>
       </div>
+
 
       {/* Qanday ishlaydi? */}
       <div className="card-neon p-4">
