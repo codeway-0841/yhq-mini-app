@@ -68,13 +68,9 @@ export default function Biletlar() {
           const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[qid] ?? 0) > 0).length
           return (
             <button key={ticket.id} onClick={() => handleTicket(ticket)}
-              className={`relative flex flex-col items-center justify-center rounded-2xl border p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden ${
-                wrongCount > 0
-                  ? 'border-red-700/60 bg-red-900/15'
-                  : 'border-line bg-surface'
-              }`}>
+              className="relative flex flex-col items-center justify-center rounded-2xl border border-line bg-surface p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden">
               {wrongCount > 0 && (
-                <span className="absolute top-1.5 right-1.5 bg-red-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">
+                <span className="absolute top-1.5 right-1.5 bg-elevated text-subtle border border-line text-[9px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">
                   {wrongCount}
                 </span>
               )}
