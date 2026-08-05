@@ -419,12 +419,10 @@ export default function OctagonPage() {
               const showCorrect = answered && s.ackCorrect !== null && opt.id === currentQ.correct
               const style =
                 !answered      ? 'bg-surface border-line text-fg' :
-                // Server ack kutilmoqda (to'g'ri/xato noma'lum) — neytral binovshi, QIZIL EMAS!
-                isSelected && s.ackCorrect === null ? 'bg-purple-900/40 border-purple-500 text-white animate-pulse' :
                 showCorrect    ? 'bg-green-900/40 border-green-600 text-white' :
-                isSelected && s.ackCorrect  ? 'bg-green-900/60 border-green-500 text-white' :
-                isSelected && !s.ackCorrect ? 'bg-red-900/60   border-red-500   text-white' :
-                                              'bg-surface border-line text-muted'
+                isSelected && opt.id === currentQ.correct ? 'bg-green-900/60 border-green-500 text-white' :
+                isSelected    ? 'bg-red-900/60   border-red-500   text-white' :
+                                'bg-surface border-line text-muted'
               return (
                 <button key={opt.id} disabled={answered} onClick={() => sendAnswer(opt.id)}
                   className={`w-full text-left rounded-xl border p-3.5 mb-2 transition-all active:scale-[0.98] ${style}`}>
