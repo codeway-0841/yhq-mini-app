@@ -123,6 +123,13 @@ const UZ = {
   hw4Desc: "Bir kun o'tkazib yuborsangiz, intizom 0 ga tushadi. Har kuni davom eting!",
   monthsList: "Yanvar|Fevral|Mart|Aprel|May|Iyun|Iyul|Avgust|Sentabr|Oktabr|Noyabr|Dekabr",
   weekdaysList: "Du|Se|Cho|Pa|Ju|Sha|Ya",
+  // Yutuqlar (Achievements)
+  achTitle: "Yutuqlar",
+  achStreak7: "7 kunlik seriya", achStreak14: "14 kunlik seriya", achStreak30: "30 kunlik seriya",
+  achCorrect100: "100 ta to'g'ri javob", achCorrect500: "500 ta to'g'ri javob", achCorrect1000: "1000 ta to'g'ri javob",
+  achAnswered500: "500 ta savol yechilgan",
+  achFixed10: "10 ta xato tuzatilgan", achFixed50: "50 ta xato tuzatilgan",
+  achOctagon10: "Oktagon'da 10 g'alaba", achAllSubj80: "Barcha fanlardan 80%+",
 } as const
 
 type Keys = keyof typeof UZ
@@ -239,6 +246,13 @@ const RU: Record<Keys, string> = {
   hw4Desc: "Пропустите один день — серия упадёт до 0. Занимайтесь каждый день!",
   monthsList: "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь",
   weekdaysList: "Пн|Вт|Ср|Чт|Пт|Сб|Вс",
+  // Достижения
+  achTitle: "Достижения",
+  achStreak7: "Серия 7 дней", achStreak14: "Серия 14 дней", achStreak30: "Серия 30 дней",
+  achCorrect100: "100 правильных ответов", achCorrect500: "500 правильных ответов", achCorrect1000: "1000 правильных ответов",
+  achAnswered500: "Решено 500 вопросов",
+  achFixed10: "Исправлено 10 ошибок", achFixed50: "Исправлено 50 ошибок",
+  achOctagon10: "10 побед в Октагоне", achAllSubj80: "80%+ по всем предметам",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

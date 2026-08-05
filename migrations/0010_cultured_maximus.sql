@@ -1,0 +1,1 @@
+ALTER TABLE "progress" ADD COLUMN "octagon_wins" integer DEFAULT 0 NOT NULL;

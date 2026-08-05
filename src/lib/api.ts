@@ -167,6 +167,9 @@ export const api = {
   addDailyFix: (userId: string, data: { date: string; subjectId: string }) =>
     request<{ ok: true }>('POST', `/daily/${uid(userId)}/fix`, data),
 
+  getAchievements: (userId: string) =>
+    request<{ stats: AchievementStats }>('GET', `/achievements/${uid(userId)}`),
+
   touchDailyActivity: (userId: string, data: { date: string; subjectId: string; answered?: number; correct?: number }) =>
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 }
@@ -188,6 +191,16 @@ export interface DailyHistory {
   rows:        DailyHistoryRow[]
   dailyStreak: number
   bestStreak:  number
+}
+
+export interface AchievementStats {
+  totalCorrect:  number
+  totalAnswered: number
+  octagonWins:   number
+  bestStreak:    number
+  totalFixed:    number
+  subjectAccuracy: { subjectId: string; answered: number; accuracy: number }[]
+  allPassed80:   boolean
 }
 
 export interface LeaderboardEntry {

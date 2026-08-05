@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import {
@@ -9,7 +9,9 @@ import {
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { useT } from '../../shared/i18n'
+import { useT, type Lang } from '../../shared/i18n'
+import { api, type AchievementStats } from '../../lib/api'
+import { ACHIEVEMENTS, isUnlocked } from '../../config/achievements'
 import { openTelegramLink, shareUrl } from '../../lib/telegram'
 import PickerSheet from '../../components/PickerSheet'
 import Toggle from '../../shared/components/Toggle'
@@ -163,6 +165,66 @@ function NameEditSheet({ current, onClose, onSave }: {
         </button>
       </div>
     </div>
+  )
+}
+
+// ── Yutuqlar (Achievements) — server metrikalari asosida badge'lar ──────
+function AchievementsSection({ lang, tt, userId }: {
+  lang: Lang
+  tt: ReturnType<typeof useT>
+  userId?: string
+}) {
+  const [stats, setStats] = useState<AchievementStats | null>(null)
+
+  useEffect(() => {
+    if (!userId || userId === '0') return
+    api.getAchievements(userId).then((d) => setStats(d.stats)).catch(() => {})
+  }, [userId, lang])
+
+  if (!stats) return null
+  const unlockedCount = ACHIEVEMENTS.filter((a) => isUnlocked(a, stats)).length
+
+  return (
+    <Section title={tt('achTitle').toUpperCase()}>
+      <div className="px-4 py-2 flex items-center gap-2 border-b border-line/50">
+        <span className="text-[11px] font-bold text-muted">
+          {unlockedCount} / {ACHIEVEMENTS.length}
+        </span>
+        <div className="flex-1 h-1.5 rounded-full bg-elevated overflow-hidden">
+          <div className="h-full rounded-full bg-duo-yellow transition-all"
+            style={{ width: `${(unlockedCount / ACHIEVEMENTS.length) * 100}%` }} />
+        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-2 p-3">
+        {ACHIEVEMENTS.map((a) => {
+          const unlocked = isUnlocked(a, stats)
+          const cur      = Math.min(a.get(stats), a.target)
+          const Icon     = a.icon
+          return (
+            <div key={a.id}
+              className={`flex items-center gap-2.5 rounded-xl border p-2.5 ${
+                unlocked ? 'border-line' : 'border-line/40 opacity-45'
+              }`}
+              style={unlocked
+                ? { background: `linear-gradient(135deg, ${a.color}22, ${a.color}0d)`, borderColor: `${a.color}55` }
+                : undefined}>
+              <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0"
+                style={unlocked
+                  ? { background: `${a.color}26`, color: a.color }
+                  : { background: 'var(--theme-elevated)', color: 'var(--theme-fg-muted)' }}>
+                <Icon size={17} />
+              </div>
+              <div className="min-w-0">
+                <p className="text-[11px] font-bold text-fg leading-tight">{tt(a.titleKey)}</p>
+                <p className="text-[10px] text-muted mt-0.5 font-semibold">
+                  {a.target > 1 ? `${cur}/${a.target}` : unlocked ? '✓' : `${cur}/${a.target}`}
+                </p>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </Section>
   )
 }
 
@@ -389,6 +451,9 @@ export default function Profil() {
           right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
       </Section>
+
+      {/* ── YUTUQLAR (server metrikalari asosidagi badge'lar) ── */}
+      <AchievementsSection lang={settings.language} tt={tt} userId={user?.id} />
 
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>

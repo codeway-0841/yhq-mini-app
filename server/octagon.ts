@@ -30,6 +30,7 @@ import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
 import { getProvider } from './providers'
+import { progressRepository } from './modules/progress/progress.repository'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -205,6 +206,13 @@ function endMatch(match: Match): void {
   send(p1.ws, { type: 'match_end', yourScore: s1, oppScore: s2, result: result(s1, s2) })
   send(p2.ws, { type: 'match_end', yourScore: s2, oppScore: s1, result: result(s2, s1) })
 
+  // G'alilgan — Yutuqlar uchun DB'ga yozamiz (fire-and-forget; draw da yo'q)
+  const winnerId = s1 > s2 ? p1.userId : s1 < s2 ? p2.userId : null
+  if (winnerId && /^\d+$/.test(winnerId) && winnerId !== '0') {
+    void progressRepository.addOctagonWin(BigInt(winnerId))
+      .catch((err) => console.error('[octagon] addOctagonWin failed:', err?.message ?? err))
+  }
+
   cleanupMatch(match)
 }
 
@@ -290,9 +298,15 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
 
   match.disconnectTimer = setTimeout(() => {
     match.disconnectTimer = null
-    // Never came back — opponent wins by forfeit.
+    // Never came back — opponent wins by forfeit (Yutuqlar uchun ham hisoblanadi).
     const opp = match.players.find((p) => p.userId !== userId)
-    if (opp) send(opp.ws, { type: 'opp_disconnected' })
+    if (opp) {
+      send(opp.ws, { type: 'opp_disconnected' })
+      if (/^\d+$/.test(opp.userId) && opp.userId !== '0') {
+        void progressRepository.addOctagonWin(BigInt(opp.userId))
+          .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
+      }
+    }
     cleanupMatch(match)
   }, RECONNECT_WINDOW_MS)
 }

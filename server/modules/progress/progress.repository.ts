@@ -58,6 +58,14 @@ export const progressRepository = {
     return rows.length > 0
   },
 
+  /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */
+  async addOctagonWin(userId: bigint): Promise<void> {
+    await db.update(progress).set({
+      octagonWins: sqlExpr`octagon_wins + 1`,
+      updatedAt:   new Date(),
+    }).where(eq(progress.userId, userId))
+  },
+
   async reset(userId: bigint): Promise<void> {
     await db.update(progress).set({
       totalCorrect:  0,
