@@ -419,6 +419,8 @@ export default function OctagonPage() {
               const showCorrect = answered && s.ackCorrect !== null && opt.id === currentQ.correct
               const style =
                 !answered      ? 'bg-surface border-line text-fg' :
+                // Server ack kutilmoqda (to'g'ri/xato noma'lum) — neytral binovshi, QIZIL EMAS!
+                isSelected && s.ackCorrect === null ? 'bg-purple-900/40 border-purple-500 text-white animate-pulse' :
                 showCorrect    ? 'bg-green-900/40 border-green-600 text-white' :
                 isSelected && s.ackCorrect  ? 'bg-green-900/60 border-green-500 text-white' :
                 isSelected && !s.ackCorrect ? 'bg-red-900/60   border-red-500   text-white' :
