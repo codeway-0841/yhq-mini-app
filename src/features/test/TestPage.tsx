@@ -52,7 +52,7 @@ export default function TestPage() {
       }
       default:         return questions
     }
-  }, [location.state?.questionIds, mode, questions])
+  }, [location.state?.questionIds, mode, questions, location.key])
 
   const startIndex = Math.min(
     Math.max(0, (Number(id) || 1) - 1),
@@ -161,15 +161,12 @@ export default function TestPage() {
     }
   }, [answers])
 
+  // "Qayta" — shu rejimni 1-savoldan qayta boshlaydi (yangi aralashtirish:
+  // location.key o'zgarishi activeQuestions memo'sini ham yangilaydi)
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
-    const currentQId = q?.id
-    let pick
-    do {
-      pick = activeQuestions[Math.floor(Math.random() * activeQuestions.length)]
-    } while (pick.id === currentQId && activeQuestions.length > 1)
-    navigate(`/test/${pick.id}`, { replace: true, state: location.state })
-  }, [q, navigate, activeQuestions, location.state])
+    navigate('/test/1', { replace: true, state: location.state })
+  }, [navigate, activeQuestions.length, location.state])
 
   const handleFinishFromModal = useCallback(() => { setShowResults(false); navigate('/') }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
