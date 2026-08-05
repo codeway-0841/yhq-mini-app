@@ -188,9 +188,12 @@ export const useAppStore = create<AppState>()(
           settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}), offlineMode: true },
         } as never
       },
-      // initialized va user PERSIST QILINMAYDI — har reload'da serverdan yangi
-      // holat keladi; aks holda eski (stale) stats bir soniyaga "flash" bo'lardi.
+      // user endi PERSIST QILINADI — ilova 2+ marta ochilganda splash'SIZ
+      // issiq start bo'ladi (cache bilan darhol UI, init fonda yangilanadi).
+      // Akkaunt almashsa: init yangi user keltiradi, state almashadi
+      // (qisqa flash yechimi — tezlik uchun qabul qilinadigan trade-off).
       partialize: (s) => ({
+        user:           s.user,
         settings:       s.settings,
         streak:         s.streak,
         totalCorrect:   s.totalCorrect,

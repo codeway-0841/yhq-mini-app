@@ -159,6 +159,11 @@ export default function App() {
       useQuestionsStore.getState().load(lang)
 
     if (tgUser?.id) {
+      // ISSIQ START: cache'da user bo'lsa — splash'SIZ darhol UI.
+      // init fonda ketadi va yangi ma'lumotlar bilan state'ni yangilaydi.
+      if (useAppStore.getState().user) {
+        useAppStore.setState({ initialized: true })
+      }
       // TEZKOR OCHILISH: savollar serverini init bilan PARALLEL yuklaymiz.
       // Cache'dagi (persist) til — odatda serverdagi bilan bir xil (load ichida dedupe bor).
       const qPromise = loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
