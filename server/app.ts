@@ -27,6 +27,7 @@ import questionsRouter   from './modules/questions/questions.router'
 import dashboardRouter   from './modules/dashboard/dashboard.router'
 import analyticsRouter   from './modules/analytics/analytics.router'
 import dailyRouter       from './modules/daily/daily.router'
+import cronRouter        from './modules/cron/cron.router'
 
 export function createApp() {
   const app = express()
@@ -60,6 +61,9 @@ export function createApp() {
     maxPerMinute: 300,
     keyFn: (req) => req.ip ?? 'unknown',
   }))
+
+  // Vercel Cron — telegramAuth'dan OLDIN (Telegram initData yo'q); CRON_SECRET himoyali
+  app.use('/api', cronRouter)
 
   // Telegram initData verification (enforced in production, see middleware/auth)
   app.use('/api', telegramAuth)
