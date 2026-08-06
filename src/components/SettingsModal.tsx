@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
 import {
   X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check,
 } from 'lucide-react'
@@ -6,7 +6,7 @@ import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../lib/telegram'
 import { useT } from '../lib/i18n'
-import { ACCENT_THEMES, getAccentTheme } from '../config/themes'
+import { ACCENT_THEMES, getAccentTheme, resolveAccent } from '../config/themes'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 
@@ -40,6 +40,29 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
   const [picker, setPicker] = useState<PickerKey>(null)
   const tt = useT(local.language)
+
+  // 3 soniyalik SINOV (preview) — lock'langan premium temani sotib olmasdan ko'rish
+  const [preview, setPreview] = useState<string | null>(null)
+  const previewTimer = useRef<number | undefined>(undefined)
+
+  const stopPreview = () => {
+    window.clearTimeout(previewTimer.current)
+    document.body.dataset.accent = resolveAccent(useAppStore.getState().accent, useAppStore.getState().tariff === 'premium')
+    setPreview(null)
+  }
+
+  const startPreview = (themeId: string) => {
+    window.clearTimeout(previewTimer.current)
+    document.body.dataset.accent = themeId
+    setPreview(themeId)
+    previewTimer.current = window.setTimeout(stopPreview, 3000)
+  }
+
+  // Modal yopilganda yarim preview qolib ketmasligi uchun
+  useEffect(() => () => {
+    window.clearTimeout(previewTimer.current)
+    document.body.dataset.accent = resolveAccent(useAppStore.getState().accent, useAppStore.getState().tariff === 'premium')
+  }, [])
 
   const set = <K extends keyof ApiSettings>(key: K, val: ApiSettings[K]) =>
     setLocal((s) => ({ ...s, [key]: val }))
@@ -195,7 +218,19 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
               <Palette size={18} className="text-muted" />
               {tt('accentThemeLabel')}
             </p>
-            <p className="text-center text-[11px] text-muted mb-5 flex-none">{tt('accentThemeDesc')}</p>
+            <p className="text-center text-[11px] text-muted mb-3 flex-none">{tt('accentThemeDesc')}</p>
+            {/* SINOV rejimi banneri + Premium upsell */}
+            {preview && (
+              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-xl px-3.5 py-2 animate-fadeIn"
+                style={{ background: 'rgba(250, 204, 21, 0.10)', border: '1px solid rgba(250, 204, 21, 0.3)' }}>
+                <span className="text-[11px] font-bold text-duo-yellow">⏱ {tt('themePreviewing')}</span>
+                <button
+                  onClick={() => { stopPreview(); setPicker(null); onClose(); openTelegramLink('https://t.me/kiwi_uz_bot?start=premium') }}
+                  className="text-[11px] font-black text-duo-yellow underline underline-offset-2 active:opacity-70">
+                  {tt('themeGetPremium')}
+                </button>
+              </div>
+            )}
             {/* Scrollable ro'yxat — 10+ tema sig'adi, tepasi kesilmaydi */}
             <div className="flex flex-col gap-3 overflow-y-auto -mx-1 px-1 pb-1">
               {ACCENT_THEMES.map((theme) => {
@@ -206,16 +241,17 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                     key={theme.id}
                     onClick={() => {
                       if (locked) {
-                        setPicker(null)
-                        onClose()
-                        openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
+                        // 3 soniyalik SINOV — temani ko'rsatamiz, keyin avtomatik qaytadi
+                        startPreview(theme.id)
                         return
                       }
+                      stopPreview()
                       setAccent(theme.id)
                       setPicker(null)
                     }}
                     className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
-                      selected ? 'border-duo-green bg-duo-green/15' : 'border-line bg-canvas'
+                      selected ? 'border-duo-green bg-duo-green/15' :
+                      preview === theme.id ? 'border-duo-yellow bg-duo-yellow/10' : 'border-line bg-canvas'
                     }`}
                   >
                     {/* Mini atmosfera preview: fon + karta + aksent */}
@@ -236,7 +272,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       </p>
                       {locked && (
                         <p className="text-[11px] text-duo-yellow font-semibold mt-0.5 flex items-center gap-1">
-                          <Crown size={11} fill="currentColor" /> {tt('premiumThemesHint')}
+                          <Crown size={11} fill="currentColor" />
+                          {preview === theme.id ? tt('themePreviewing') : tt('premiumThemesHint')}
                         </p>
                       )}
                     </div>

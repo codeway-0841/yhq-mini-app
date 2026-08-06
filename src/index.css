@@ -319,6 +319,8 @@ body[data-theme='light'] {
 
 /* 🌌 Aurora — neon yashil + chuqur ko'k-yashil atmosfera (AI: cyan) */
 body[data-accent='aurora'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #00ffa3; --p-on-primary: #032118; --p-glow: rgba(0, 255, 163, 0.35); --p-primary-rgb: 0 255 163;
   --p-purple: #22d3ee; --p-purple-rgb: 34 211 238;
   --p-canvas: #061019; --p-surface: #0a1a26; --p-card: #0d2231; --p-line: #16364a;
@@ -327,6 +329,8 @@ body[data-accent='aurora'] {
 
 /* 🍇 Amethyst — binafsha AI atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
 body[data-accent='violet'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(168, 85, 247, 0.35); --p-primary-rgb: 168 85 247;
   --p-canvas: #120b1c; --p-surface: #1a1128; --p-card: #221536; --p-line: #33224d;
   --theme-canvas: #120b1c; --theme-surface: #1a1128; --theme-elevated: #221536; --theme-line: #33224d;
@@ -334,6 +338,8 @@ body[data-accent='violet'] {
 
 /* 🌊 Ocean — deep blue (glow'siz, toza; AI: indigo) */
 body[data-accent='ocean'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #38bdf8; --p-on-primary: #062033; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 56 189 248;
   --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
   --p-canvas: #071120; --p-surface: #0a1a2e; --p-card: #0e2138; --p-line: #1a3350;
@@ -342,6 +348,8 @@ body[data-accent='ocean'] {
 
 /* 🌲 Forest — emerald + tabiiy chuqur yashil (AI: teal) */
 body[data-accent='forest'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #34d399; --p-on-primary: #03251a; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 52 211 153;
   --p-purple: #2dd4bf; --p-purple-rgb: 45 212 191;
   --p-canvas: #08130d; --p-surface: #0c1d14; --p-card: #10281c; --p-line: #1a3d2c;
@@ -350,6 +358,8 @@ body[data-accent='forest'] {
 
 /* 🌅 Sunset — orange + iliq atmosfera (yumshoq glow; AI: pink) */
 body[data-accent='sunset'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #fb923c; --p-on-primary: #2a1200; --p-glow: rgba(251, 146, 60, 0.28); --p-primary-rgb: 251 146 60;
   --p-purple: #f472b6; --p-purple-rgb: 244 114 182;
   --p-canvas: #160f08; --p-surface: #201509; --p-card: #291b0d; --p-line: #3d2a14;
@@ -368,6 +378,8 @@ body[data-accent='sakura'] {
 
 /* 🌑 Obsidian — premium sof qora (glow'siz, oq-kumush aksent; AI: sof kulrang) */
 body[data-accent='obsidian'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #e4e4e7; --p-on-primary: #09090b; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 228 228 231;
   --p-purple: #a1a1aa; --p-purple-rgb: 161 161 170;
   --p-canvas: #050506; --p-surface: #0c0c0e; --p-card: #131316; --p-line: #26262b;
@@ -377,6 +389,8 @@ body[data-accent='obsidian'] {
 
 /* 🥇 Gold Elite — qora + oltin (id "gold" saqlangan — eski tanlovlar uchun) */
 body[data-accent='gold'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.22); --p-primary-rgb: 250 204 21;
   --p-canvas: #0b0903; --p-surface: #151003; --p-card: #1c1604; --p-line: #2e2610;
   --theme-canvas: #0b0903; --theme-surface: #151003; --theme-elevated: #1c1604; --theme-line: #2e2610;
