@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap } from 'lucide-react'
 import { modules } from '../../shared/data'
+import { MODULE_TOPICS } from '../../data/modules'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../data/lessons'
 import { useLessonsStore } from '../../store/useLessonsStore'
 import { useDailyStore, todayStr } from '../../store/useDailyStore'
@@ -12,18 +13,6 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../lib/telegram'
 
 type Mod = typeof modules[number]
-
-/** moduleId → tegishli savol mavzulari (topics slugs) — "Mashq qilish" uchun */
-const MODULE_TOPICS: Record<number, string[]> = {
-  1: ['yol-belgilari', 'yol-chiziqlari'],
-  2: ['chorrahalar'],
-  3: ['toxtatish-va-turish'],
-  4: ['manyovr', 'quvib-otish', 'signallar'],
-  5: ['temir-yol', 'yuk-tashish', 'yolovchi-tashish', 'shatakka-olish', 'avtomagistral', 'sirpanchiq-yol'],
-  6: ['tezlik'],
-  7: ['piyodalar'],
-  8: ['birinchi-tibbiy-yordam', 'texnik-holat', 'yoritish', 'haydovchi-majburiyatlari'],
-}
 
 // ── Lesson screen (telefon ilovasidagi dizayn kabi) ─────────────────────────
 function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {

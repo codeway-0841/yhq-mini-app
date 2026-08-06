@@ -12,6 +12,8 @@ import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
+import { MODULE_TOPICS } from '../../data/modules'
+import { lessons } from '../../data/lessons'
 
 // Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
 const STUDY_ITEMS = [
@@ -74,6 +76,20 @@ export default function TestPage() {
   const fontSize  = settings?.fontSize || 'medium'
   const selected  = selectedHistory[current] ?? null
   const correctId = q?.correct ?? null
+  const [showExplain, setShowExplain] = useState(false)
+
+  /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
+      Mavzu → slug → MODULE_TOPICS orqali modul. */
+  const explanation = useMemo(() => {
+    if (!q?.topicId) return null
+    const topic = storeTopics.find((t) => t.id === q.topicId)
+    if (!topic) return null
+    const entry = Object.entries(MODULE_TOPICS).find(([, slugs]) => slugs.includes(topic.slug))
+    if (!entry) return null
+    const modId = Number(entry[0])
+    const lesson = lessons[modId]?.[0]
+    return lesson ? { modId, lesson } : null
+  }, [q?.topicId, storeTopics])
 
   const handleTimeUp = useCallback(() => {
     setAnswers((prev) => prev.map((a) => a ?? 'unanswered'))
@@ -100,7 +116,7 @@ export default function TestPage() {
   }, [location.key, startIndex, activeQuestions.length])
 
   const goTo   = useCallback((i: number) => {
-    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false) }
+    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false); setShowExplain(false) }
   }, [activeQuestions.length])
   const goNext = useCallback(() => goTo(current + 1), [current, goTo])
 
@@ -283,6 +299,14 @@ export default function TestPage() {
             }`}>
               {q.text}
             </p>
+            {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
+            {selected && explanation && (
+              <button onClick={() => setShowExplain(true)}
+                className="mx-auto lg:mx-0 flex items-center gap-1.5 bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[12px] font-bold px-3.5 py-2 rounded-xl mb-4 active:scale-95 transition-transform">
+                <Info size={14} />
+                {tt('whyThis')}
+              </button>
+            )}
           </div>
           {q.image && (
             /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
@@ -341,6 +365,38 @@ export default function TestPage() {
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+
+      {/* "Nega shunday?" — modda izohi (bottom sheet) */}
+      {showExplain && explanation && (
+        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowExplain(false)}>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
+                <Info size={17} className="text-duo-yellow" />
+              </div>
+              <p className="text-[15px] font-black text-fg">
+                {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
+              </p>
+            </div>
+            {(settings?.language === 'ru' ? explanation.lesson.bodyRu : explanation.lesson.bodyUz)
+              .slice(0, 3).map((p, i) => (
+                <p key={i} className="text-[13px] text-muted leading-relaxed mb-2">{p}</p>
+              ))}
+            <button
+              onClick={() => {
+                setShowExplain(false)
+                navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
+              }}
+              className="btn-neon w-full mt-2 py-3 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2">
+              <GraduationCap size={16} />
+              {tt('openModule')}
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Full-screen image zoom */}
       {zoomed && q.image && (

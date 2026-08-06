@@ -10,6 +10,19 @@ export const modules = [
   { id: 8, title: 'Xavfsizlik va yakuniy',     titleRu: 'Безопасность и итог',     lessonCount: 6,  color: '#46a302', icon: '🛡️' },
 ]
 
+/** moduleId → tegishli savol mavzulari (topics slug'lari).
+ *  Darslik "Mashq" va TestPage "Nega shunday?" izohi uchun UMUMIY manba. */
+export const MODULE_TOPICS: Record<number, string[]> = {
+  1: ['yol-belgilari', 'yol-chiziqlari'],
+  2: ['chorrahalar'],
+  3: ['toxtatish-va-turish'],
+  4: ['manyovr', 'quvib-otish', 'signallar'],
+  5: ['temir-yol', 'yuk-tashish', 'yolovchi-tashish', 'shatakka-olish', 'avtomagistral', 'sirpanchiq-yol'],
+  6: ['tezlik'],
+  7: ['piyodalar'],
+  8: ['birinchi-tibbiy-yordam', 'texnik-holat', 'yoritish', 'haydovchi-majburiyatlari'],
+}
+
 export const finalStages = [
   { id: 'inner',  title: 'Ichki imtihon',       locked: false },
   { id: 'real',   title: 'Haqiqiy imtihon',      locked: true  },
