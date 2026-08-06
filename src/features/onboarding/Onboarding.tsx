@@ -58,7 +58,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
       <div className="relative flex-1 flex items-center justify-center my-4">
         <img
           src="/images/onboarding-mascot.webp"
-          alt="IoTest maskoti"
+          alt="KIWI maskoti"
           className="w-[290px] rounded-[2rem] animate-fadeIn"
           style={{ boxShadow: '0 24px 48px -16px rgba(88, 204, 2, 0.25)' }}
         />

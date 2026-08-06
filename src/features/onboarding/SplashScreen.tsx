@@ -1,4 +1,4 @@
-// IoTest — Splash ekran (brend rasm + progress bar)
+// KIWI — Splash ekran (brend rasm + progress bar)
 export default function SplashScreen() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
@@ -10,7 +10,7 @@ export default function SplashScreen() {
           style={{ background: '#1cb0f6' }} />
         <img
           src="/images/splash-brand.webp"
-          alt="IoTest — Interactive Online Testing Platform"
+          alt="KIWI"
           className="relative w-[260px] rounded-3xl shadow-2xl"
           style={{ boxShadow: '0 24px 60px -12px rgba(28, 176, 246, 0.35)' }}
         />

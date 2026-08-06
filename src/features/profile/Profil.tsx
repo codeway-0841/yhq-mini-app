@@ -443,7 +443,7 @@ export default function Profil() {
           </div>
           {tariff === 'free' && (
             <button type="button"
-              onClick={() => openTelegramLink('https://t.me/prava_oson_bot?start=premium')}
+              onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
               className="flex items-center gap-1.5 bg-duo-blue text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform shadow-lg shadow-blue-500/20">
               <Zap size={13} fill="white" />
               {tt('upgrade')} · ⭐250
@@ -470,7 +470,7 @@ export default function Profil() {
         {/* Yopiq guruh */}
         <Item icon={Lock} iconBg="bg-purple-500" label={tt('closedGroup')}
           right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
-          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
+          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
       </Section>
 
       {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}
@@ -485,7 +485,7 @@ export default function Profil() {
         <button type="button"
           onClick={() => {
             if (!user) return
-            shareUrl(`https://t.me/prava_oson_bot?start=ref_${user.id}`, tt('refShareText'))
+            shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${user.id}`, tt('refShareText'))
           }}
           className="flex items-center gap-1.5 bg-duo-green text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
           <Share2 size={13} />
@@ -537,13 +537,13 @@ export default function Profil() {
       {/* ── YORDAM ── */}
       <Section title={tt('helpSection')}>
         <Item icon={MessageCircle} iconBg="bg-green-500" label={tt('contactUs')}
-          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
+          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
         <Item icon={Radio}    iconBg="bg-blue-500"   label={tt('tgChannel')}
-          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
+          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
         <Item icon={Star}     iconBg="bg-amber-500"  label={tt('rateApp')}
-          onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
+          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
         <Item icon={Share2}   iconBg="bg-pink-500"   label={tt('shareApp')}
-          onPress={() => shareUrl('https://t.me/prava_oson_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
+          onPress={() => shareUrl('https://t.me/kiwi_uz_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
         <Item icon={Download} iconBg="bg-blue-400"   label={tt('installApp')}
           onPress={() => showToast(addToHomeScreen())} />
       </Section>

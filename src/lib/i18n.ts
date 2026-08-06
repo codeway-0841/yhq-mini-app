@@ -146,7 +146,7 @@ const UZ = {
   aiQuotaMsg: "AI Tutor hozir juda band (limit tugagan). Bir necha daqiqadan keyin qayta urinib ko'ring.",
   refTitle: "Do'stni taklif qiling", refBtn: "Taklif qilish",
   refDesc: "Do'stingiz link orqali birinchi marta kirsa — sizga +3 kun Premium!",
-  refShareText: "YHQ Test — imtihonga birga tayyorlanamiz! Mening linkim orqali kiring:",
+  refShareText: "KIWI — imtihonga birga tayyorlanamiz! Mening linkim orqali kiring:",
   // Haftalik liga
   leagueTab: "Liga", allTimeTab: "Umumiy",
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
@@ -291,7 +291,7 @@ const RU: Record<Keys, string> = {
   aiQuotaMsg: "ИИ сейчас перегружен (исчерпан лимит). Попробуйте через несколько минут.",
   refTitle: "Пригласите друга", refBtn: "Пригласить",
   refDesc: "Друг впервые войдёт по вашей ссылке — вам +3 дня Premium!",
-  refShareText: "YHQ Test — готовимся к экзамену вместе! Входите по моей ссылке:",
+  refShareText: "KIWI — готовимся к экзамену вместе! Входите по моей ссылке:",
   // Недельная лига
   leagueTab: "Лига", allTimeTab: "Всё время",
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",

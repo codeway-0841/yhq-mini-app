@@ -304,7 +304,7 @@ export default function TestPage() {
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
-            onClick={() => shareUrl('https://t.me/prava_oson_bot', 'YHQ imtihoniga tayyorlaning!')}
+            onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
             className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
@@ -490,7 +490,7 @@ export default function TestPage() {
               <button
                 onClick={() => {
                   setShowAiUpsell(false)
-                  openTelegramLink('https://t.me/prava_oson_bot?start=premium')
+                  openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
                 }}
                 className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2 mb-2">
                 <Crown size={16} fill="currentColor" />

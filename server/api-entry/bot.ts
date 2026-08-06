@@ -19,14 +19,14 @@ const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP
 // ── Premium — Telegram Stars to'lovi ────────────────────────────────────────
 const PREMIUM_PRICE_STARS = 250   // ~5$ (komissiyasiz — Telegram Stars cheklov emas)
 const PREMIUM_DESC =
-  "YHQ Premium — bir martalik sotib olish:\n" +
+  "KIWI Premium — bir martalik sotib olish:\n" +
   "• Barcha funksiyalarga cheksiz kirish\n" +
   "• Xatolar bo'yicha batafsil tahlil\n" +
   "• Reklama'siz toza tajriba"
 
 async function sendPremiumInvoice(ctx: Context) {
   await ctx.replyWithInvoice(
-    '⭐ YHQ Premium',
+    '⭐ KIWI Premium',
     PREMIUM_DESC,
     `premium_${ctx.from?.id}`,
     'XTR',
@@ -49,7 +49,7 @@ function ensureProfile(): Promise<unknown> {
       { command: 'privacy',     description: "Maxfiylik siyosati" },
     ]),
     bot.api.setMyDescription(
-      "YHQ Test — Yo'l harakati qoidalari bo'yicha imtihonga tayyorlanish.\n\n" +
+      "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
       "• Biletlar va mavzular bo'yicha testlar\n" +
       "• Xatolar ustida ishlash\n" +
       "• Yo'l belgilari va darslik\n" +
@@ -57,7 +57,7 @@ function ensureProfile(): Promise<unknown> {
       "Boshlash uchun /start bosing!"
     ),
     bot.api.setChatMenuButton({
-      menu_button: { type: 'web_app', text: 'YHQ Test', web_app: { url: APP_URL } },
+      menu_button: { type: 'web_app', text: 'KIWI', web_app: { url: APP_URL } },
     }),
   ]).catch((err) => {
     profileReady = null   // retry next time if it failed
@@ -86,7 +86,7 @@ bot.command('start', async (ctx) => {
   if (param && /^ref_\d{1,19}$/.test(param)) {
     const refId = param.slice(4)
     await ctx.reply(
-      "🚗 Do'stingiz sizni YHQ Test'ga taklif qilганi uchun mukofot beriladi!\n\n" +
+      "🚗 Do'stingiz sizni KIWI'ga taklif qilганi uchun mukofot beriladi!\n\n" +
       "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
       { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
     )
@@ -128,7 +128,7 @@ bot.on('message:successful_payment', async (ctx) => {
     )
   } catch (err) {
     console.error('[bot] premium activation failed:', err)
-    await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @prava_oson_bot'ga yozing — tezda yechamiz.")
+    await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @kiwi_uz_bot'ga yozing — tezda yechamiz.")
   }
 })
 
@@ -150,7 +150,7 @@ bot.command('help', async (ctx) => {
 // ── /about ──────────────────────────────────────────────────────────────────
 bot.command('about', async (ctx) => {
   await ctx.reply(
-    "ℹ️ YHQ Test — Yo'l harakati qoidalari bo'yicha imtihonga tayyorgarlik ilovasi.\n\n" +
+    "ℹ️ KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
     "• Biletlar va mavzular bo'yicha testlar\n" +
     "• Xatolar ustida ishlash rejimi\n" +
     "• Yo'l belgilari bo'limi\n" +

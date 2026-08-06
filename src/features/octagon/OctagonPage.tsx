@@ -236,7 +236,7 @@ export default function OctagonPage() {
 
   /** Invite link — bot /start deep-link: bot "⚔️ Duelga qo'shilish" tugmasi
       bilan ilovaga o'tkazadi (`#/octagon/duel-xxxx`). Webhook ulangan davrda ishlaydi. */
-  const duelLink = duelCode ? `https://t.me/prava_oson_bot?start=${duelCode}` : null
+  const duelLink = duelCode ? `https://t.me/kiwi_uz_bot?start=${duelCode}` : null
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {

@@ -109,7 +109,7 @@ export default function XatolarPage() {
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <button onClick={() => openTelegramLink('https://t.me/prava_oson_bot?start=premium')}
+            <button onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
               className="card-neon w-full p-4 mb-4 flex items-center gap-3 text-left active:scale-[0.98] transition-transform">
               <div className="w-11 h-11 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
                 <Sparkles size={20} className="text-duo-yellow" />

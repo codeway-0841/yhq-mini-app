@@ -105,7 +105,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           </button>
 
           <button
-            onClick={() => openTelegramLink('https://t.me/prava_oson_bot')}
+            onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
             className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
             <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none" style={{ background: '#ff4b4b26' }}>
               <Flag size={17} className="text-duo-red" />

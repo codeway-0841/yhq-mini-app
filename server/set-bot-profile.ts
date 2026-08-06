@@ -28,7 +28,7 @@ await bot.api.setMyCommands([
 ])
 
 await bot.api.setMyDescription(
-  "YHQ Test — Yo'l harakati qoidalari bo'yicha imtihonga tayyorlanish.\n\n" +
+  "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
   "• Biletlar va mavzular bo'yicha testlar\n" +
   "• Xatolar ustida ishlash\n" +
   "• Yo'l belgilari va darslik\n" +
@@ -37,12 +37,12 @@ await bot.api.setMyDescription(
 )
 
 await bot.api.setMyShortDescription(
-  "YHQ imtihoniga tayyorlaning: testlar, biletlar, yo'l belgilari 🚗"
+  "Barcha fanlar uchun zamonaviy ta'lim platformasi 🎓"
 )
 
 // Persistent menu button (bottom-left of the chat) opening the Mini App
 await bot.api.setChatMenuButton({
-  menu_button: { type: 'web_app', text: 'YHQ Test', web_app: { url: APP_URL } },
+  menu_button: { type: 'web_app', text: 'KIWI', web_app: { url: APP_URL } },
 })
 
 console.log('✅ Bot profile set: commands, description, menu button →', APP_URL)
