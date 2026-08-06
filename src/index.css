@@ -304,6 +304,8 @@ body[data-theme='light'] {
 body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(59, 130, 246, 0.42); }
 body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(139, 92, 246, 0.42); }
 body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.36); }
+/* Payme uslubi — rasmiy brend rangi #00c0c9 (payme.uz tile-color) */
+body[data-accent='payme']  { --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 192, 201, 0.40); }
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
 .glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }

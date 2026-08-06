@@ -26,6 +26,7 @@ export const ACCENT_THEMES: AccentTheme[] = [
   { id: 'ocean',  label: { uz: 'Okean',           ru: 'Океан'           }, color: '#3b82f6', premium: true  },
   { id: 'violet', label: { uz: 'Binafsha',        ru: 'Фиолетовый'      }, color: '#8b5cf6', premium: true  },
   { id: 'gold',   label: { uz: 'Oltin',           ru: 'Золотой'         }, color: '#facc15', premium: true  },
+  { id: 'payme',  label: { uz: 'Payme',           ru: 'Payme'           }, color: '#00c0c9', premium: true  },
 ]
 
 export function getAccentTheme(id: string): AccentTheme {
