@@ -40,6 +40,7 @@ npm test               # barcha testlar
 npm run build          # frontend build
 npm run build:server   # backend bundle (esbuild)
 npm run db:seed:explanations  # statik savol tushuntirishlari seed (idempotent)
+npx tsx server/set-admin.ts   # admin huquqi: ro'yxat | <id> [true|false]
 npx tsc -p tsconfig.json --noEmit        # frontend typecheck
 npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 ```
