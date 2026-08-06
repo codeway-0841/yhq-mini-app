@@ -48,10 +48,10 @@ export default function AdminPage() {
     if (q) {
       return questions.filter((x) =>
         String(x.id).includes(q) || x.text.toLowerCase().includes(q),
-      ).slice(0, 50)
+      )
     }
-    // Qidiruvsiz: OXIRGI qo'shilgan savollar birinchi (admin'da eng keraklisi)
-    return [...questions].reverse().slice(0, 20)
+    // Qidiruvsiz — hammasi, yangilari tepada
+    return [...questions].reverse()
   }, [questions, search])
 
   const topic = useCallback((topicId: number | null) => {
