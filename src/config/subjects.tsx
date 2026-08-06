@@ -1,15 +1,23 @@
 /**
- * Fanlar (subjects) — MARKAZIY KONFIGURATSIYA.
- * Yangi fan qo'shish uchun faqat shu ro'yxatga 1 element qo'shish kifoya:
- * Onboarding, Dashboard, Switcher — hammasi avtomatik ishlaydi.
+ * Fanlar (subjects) — MARKAZIY KONFIGURATSIYA (frontend UI qatlami).
+ * Asosiy ma'lumotlar (id, name, dataSourceId, available, demoData)
+ * `shared/subjects.ts` dan olinadi — backend bilan yagona manba.
+ * Bu fayl FAQAT UI xususiyatlarini (ikonka, rang) qo'shadi.
+ *
+ * Yangi fan qo'shish uchun `shared/subjects.ts` ga 1 element + shu fayldagi
+ * UI_MAP ga 1 yozuv kifoya: Onboarding, Dashboard, Switcher avtomatik ishlaydi.
  *
  * available: false → "Tez kunda" holatida ko'rsatiladi (locked).
- * available: true bo'lishi uchun fan ma'lumotlari (API/questions) tayyor bo'lishi kerak.
  */
 import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, type LucideIcon, type LucideProps } from 'lucide-react'
+import { forwardRef } from 'react'
+import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId } from '../../shared/subjects'
+
+export { DEFAULT_SUBJECT_ID }
+export type { SubjectId }
 
 export interface SubjectConfig {
-  id: string
+  id: SubjectId
   name: string
   nameRu: string
   icon: LucideIcon
@@ -17,7 +25,7 @@ export interface SubjectConfig {
   color: string
   /** 3D-soya / gradient pastki rang */
   colorDark: string
-  /** Backend'dagi baza manbasi (server/config/subjects.ts bilan bir xil) */
+  /** Backend'dagi baza manbasi (shared/subjects.ts — backend bilan bir xil) */
   dataSourceId: string
   /** true — fan hozircha boshqa (YHQ) bazasidan ishlayapti; UI'da
       "Vaqtinchalik demo ma'lumotlar" badge'i chiqadi */
@@ -26,8 +34,6 @@ export interface SubjectConfig {
 }
 
 /** π belgisi — lucide'da yo'qligi uchun maxsus ikonka */
-import { forwardRef } from 'react'
-
 const PiGlyph: LucideIcon = forwardRef<SVGSVGElement, LucideProps>(
   ({ size = 24, ...rest }, ref) => (
     <svg ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" {...rest}>
@@ -37,87 +43,32 @@ const PiGlyph: LucideIcon = forwardRef<SVGSVGElement, LucideProps>(
 )
 PiGlyph.displayName = 'PiGlyph'
 
-export const SUBJECTS: SubjectConfig[] = [
-  {
-    id: 'yhq',
-    name: "Yo'l harakati qoidalari",
-    nameRu: 'Правила дорожного движения',
-    icon: Car,
-    color: '#58cc02',
-    colorDark: '#46a302',
-    dataSourceId: 'traffic_rules_db',
-    demoData: false,
-    available: true,
-  },
-  {
-    id: 'fizika',
-    name: 'Fizika',
-    nameRu: 'Физика',
-    icon: Zap,
-    color: '#ffc800',
-    colorDark: '#e5b400',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-  {
-    id: 'matematika',
-    name: 'Matematika',
-    nameRu: 'Математика',
-    icon: PiGlyph,
-    color: '#ce82ff',
-    colorDark: '#a85ed4',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-  {
-    id: 'kimyo',
-    name: 'Kimyo',
-    nameRu: 'Химия',
-    icon: FlaskConical,
-    color: '#1cb0f6',
-    colorDark: '#1899d6',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-  {
-    id: 'ingliz',
-    name: 'Ingliz tili',
-    nameRu: 'Английский язык',
-    icon: Globe,
-    color: '#ff9600',
-    colorDark: '#e59400',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-  {
-    id: 'tarix',
-    name: 'Tarix',
-    nameRu: 'История',
-    icon: BookOpen,
-    color: '#ff4b4b',
-    colorDark: '#d93f3f',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-  {
-    id: 'biologiya',
-    name: 'Biologiya',
-    nameRu: 'Биология',
-    icon: Dna,
-    color: '#00cd9c',
-    colorDark: '#00a87e',
-    dataSourceId: 'traffic_rules_db',
-    demoData: true,
-    available: true,
-  },
-]
+/** UI xususiyatlari — shared/subjects.ts dagi `id` bo'yicha ulanadi.
+    Record<SubjectId, ...> — fan qo'shilib UI_MAP unutilsa COMPILE-TIME xato */
+const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: string }> = {
+  yhq:        { icon: Car,          color: '#58cc02', colorDark: '#46a302' },
+  fizika:     { icon: Zap,          color: '#ffc800', colorDark: '#e5b400' },
+  matematika: { icon: PiGlyph,      color: '#ce82ff', colorDark: '#a85ed4' },
+  kimyo:      { icon: FlaskConical, color: '#1cb0f6', colorDark: '#1899d6' },
+  ingliz:     { icon: Globe,        color: '#ff9600', colorDark: '#e59400' },
+  tarix:      { icon: BookOpen,     color: '#ff4b4b', colorDark: '#d93f3f' },
+  biologiya:  { icon: Dna,          color: '#00cd9c', colorDark: '#00a87e' },
+}
 
-export const DEFAULT_SUBJECT_ID = 'yhq'
+export const SUBJECTS: SubjectConfig[] = SUBJECT_BASES.map((s) => {
+  const ui = UI_MAP[s.id] // Record<SubjectId,...> — compile-time'da kafolatlangan
+  return {
+    id: s.id,
+    name: s.name,
+    nameRu: s.nameRu,
+    icon: ui.icon,
+    color: ui.color,
+    colorDark: ui.colorDark,
+    dataSourceId: s.dataSourceId,
+    demoData: s.demoData,
+    available: s.available,
+  }
+})
 
 export function getSubject(id: string): SubjectConfig {
   return SUBJECTS.find((s) => s.id === id) ?? SUBJECTS[0]
