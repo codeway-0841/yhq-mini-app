@@ -26,11 +26,15 @@ describe('config/themes — data integrity', () => {
     expect(def!.premium).toBe(false)
   })
 
-  it('barcha temalarda toʻgʻri hex rang va i18n label', () => {
+  it('barcha temalarda toʻgʻri hex ranglar (aksent + bg + card) va i18n label', () => {
     for (const t of ACCENT_THEMES) {
       expect(t.color).toMatch(/^#[0-9a-f]{6}$/i)
+      expect(t.bg).toMatch(/^#[0-9a-f]{6}$/i)
+      expect(t.card).toMatch(/^#[0-9a-f]{6}$/i)
       expect(t.label.uz.trim()).not.toBe('')
       expect(t.label.ru.trim()).not.toBe('')
+      // Sifati: total temalar 8-10 ta (30 ta oddiy tema EMAS)
+      expect(ACCENT_THEMES.length).toBeLessThanOrEqual(10)
     }
   })
 

@@ -217,8 +217,18 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       selected ? 'border-duo-green bg-duo-green/15' : 'border-line bg-canvas'
                     }`}
                   >
-                    <span className="w-10 h-10 rounded-full flex-none border-2 border-white/10"
-                      style={{ background: theme.color }} />
+                    {/* Mini atmosfera preview: fon + karta + aksent */}
+                    <div className="relative w-14 h-11 rounded-xl overflow-hidden flex-none border border-line"
+                      style={{ background: theme.bg }}>
+                      <div className="absolute left-1.5 right-1.5 top-1.5 h-4 rounded-[5px]"
+                        style={{ background: theme.card, border: `1px solid ${theme.color}40` }} />
+                      <span className="absolute bottom-1.5 left-1.5 w-6 h-1.5 rounded-full"
+                        style={{ background: theme.color, boxShadow: theme.glow ? `0 0 6px ${theme.color}` : undefined }} />
+                      {theme.glow && (
+                        <span className="absolute bottom-1.5 right-1.5 w-2 h-2 rounded-full"
+                          style={{ background: theme.color, boxShadow: `0 0 6px ${theme.color}` }} />
+                      )}
+                    </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-bold text-fg">
                         {theme.label[local.language]}
