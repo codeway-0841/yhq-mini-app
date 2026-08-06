@@ -276,7 +276,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
   /* Aksent (data-accent bilan almashadi) */
   --p-primary:     #5be300;
   --p-on-primary:  #0a1a00;
-  --p-glow:        rgba(91, 227, 0, 0.25);
+  --p-glow:        rgba(91, 227, 0, 0.38);
 
   /* Semantik + qo'shimcha aksentlar (temadan mustaqil) */
   --p-success:     #22c55e;
@@ -301,9 +301,13 @@ body[data-theme='light'] {
 }
 
 /* ── Premium aksent temalari (Premium obunachilar uchun) ─────────────────── */
-body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(59, 130, 246, 0.30); }
-body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(139, 92, 246, 0.30); }
-body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.26); }
+body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(59, 130, 246, 0.42); }
+body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(139, 92, 246, 0.42); }
+body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.36); }
+
+/* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
+.glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }
+.neon-text-glow { text-shadow: 0 0 18px var(--p-glow); }
 
 /* ── Shrift: SF Pro / Inter (premium ekranlar) ───────────────────────────── */
 .font-display {
@@ -337,8 +341,9 @@ body[data-theme='light'] .card-premium {
   color: var(--p-on-primary);
   font-weight: 600;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.25),
-    0 10px 24px var(--p-glow);
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 10px 28px var(--p-glow),
+    0 0 18px var(--p-glow);
   transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
   user-select: none;
   touch-action: manipulation;
@@ -346,7 +351,7 @@ body[data-theme='light'] .card-premium {
 .btn-premium:active {
   transform: scale(0.97);
   filter: brightness(0.94);
-  box-shadow: 0 3px 10px var(--p-glow);
+  box-shadow: 0 3px 12px var(--p-glow);
 }
 .btn-premium:disabled { opacity: 0.45; pointer-events: none; }
 

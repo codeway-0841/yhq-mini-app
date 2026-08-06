@@ -62,9 +62,13 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
         </div>
       </button>
       <div className="flex items-center gap-2.5">
-        {/* Level — AI purple glass pill */}
+        {/* Level — AI purple glass pill (neon glow) */}
         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold text-ppurple"
-          style={{ background: 'rgba(139, 92, 246, 0.12)', border: '1px solid rgba(139, 92, 246, 0.30)' }}>
+          style={{
+            background: 'rgba(139, 92, 246, 0.12)',
+            border: '1px solid rgba(139, 92, 246, 0.30)',
+            boxShadow: '0 0 18px rgba(139, 92, 246, 0.35)',
+          }}>
           ✦ {tt('level')} {level}
         </span>
         <button onClick={onSettings} aria-label="Sozlamalar"
@@ -94,7 +98,8 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   const ringOffset = C * (1 - accuracy / 100)
 
   return (
-    <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden">
+    <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden"
+      style={{ boxShadow: '0 0 44px -12px var(--p-glow), inset 0 1px 0 rgba(255,255,255,0.03), 0 10px 28px rgba(2,6,16,0.30)' }}>
       <div className="flex items-center justify-between gap-4">
         {/* Chap: foiz + ma'lumot */}
         <div className="flex-1 min-w-0">
@@ -106,7 +111,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
         </div>
         {/* O'ng: ring chart (aksent rang) */}
         <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0"
-          style={{ filter: 'drop-shadow(0 0 8px var(--p-glow))' }}>
+          style={{ filter: 'drop-shadow(0 0 12px var(--p-glow))' }}>
           <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-line)" strokeWidth="8" />
           <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-primary)" strokeWidth="8"
             strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
@@ -165,7 +170,7 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
         </span>
       )}
       <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E` }}>
+        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E`, boxShadow: `0 0 16px ${iconColor}33` }}>
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-semibold text-pfg text-left leading-tight">{label}</span>
@@ -195,7 +200,7 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
         </span>
       )}
       <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E` }}>
+        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E`, boxShadow: `0 0 18px ${iconColor}40` }}>
         <Icon size={20} strokeWidth={2} style={{ color: iconColor }} />
       </div>
       <div className="text-center">
@@ -551,7 +556,11 @@ export default function Dashboard() {
       {/* Premium banner (oltin aksent) — premium_click KPI o'lchanadi */}
       <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
         <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-          style={{ background: 'rgba(250, 204, 21, 0.12)', border: '1px solid rgba(250, 204, 21, 0.30)' }}>
+          style={{
+            background: 'rgba(250, 204, 21, 0.12)',
+            border: '1px solid rgba(250, 204, 21, 0.30)',
+            boxShadow: '0 0 20px rgba(250, 204, 21, 0.28)',
+          }}>
           <Crown size={19} className="text-pgold" />
         </div>
         <div className="flex-1 min-w-0">
