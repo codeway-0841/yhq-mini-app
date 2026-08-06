@@ -62,12 +62,12 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
         </div>
       </button>
       <div className="flex items-center gap-2.5">
-        {/* Level — AI purple glass pill (neon glow) */}
+        {/* Level — AI purple glass pill (tema AI rangi bilan almashadi) */}
         <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold text-ppurple"
           style={{
-            background: 'rgba(139, 92, 246, 0.12)',
-            border: '1px solid rgba(139, 92, 246, 0.30)',
-            boxShadow: '0 0 18px rgba(139, 92, 246, 0.35)',
+            background: 'rgb(var(--p-purple-rgb) / 0.12)',
+            border: '1px solid rgb(var(--p-purple-rgb) / 0.30)',
+            boxShadow: '0 0 18px rgb(var(--p-purple-rgb) / 0.30)',
           }}>
           ✦ {tt('level')} {level}
         </span>
@@ -559,8 +559,8 @@ export default function Dashboard() {
       {/* Premium banner (oltin = Premium semantikasi) — premium_click KPI o'lchanadi */}
       <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
         <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-          style={{ background: 'rgba(250, 204, 21, 0.12)', border: '1px solid rgba(250, 204, 21, 0.30)' }}>
-          <Crown size={19} className="text-pgold" />
+          style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
+          <Crown size={19} className="text-pprimary" />
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-[13px] font-bold text-pfg">Premium</p>

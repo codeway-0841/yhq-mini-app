@@ -56,13 +56,13 @@
       html[data-theme='light'] #app-loader { color: #0f172a; background: #f1f5f9; }
       #app-loader-title { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
       #app-loader-brand { font-weight: 900; }
-      #app-loader-brand em { font-style: normal; color: #5be300; }
+      #app-loader-brand em { font-style: normal; color: var(--p-primary, #5be300); }
       #app-loader-spinner {
         width: 36px; height: 36px; border-radius: 50%;
-        border: 3px solid #334155; border-top-color: #5be300;
+        border: 3px solid #334155; border-top-color: var(--p-primary, #5be300);
         animation: app-spin 0.8s linear infinite;
       }
-      html[data-theme='light'] #app-loader-spinner { border-color: #cbd5e1; border-top-color: #5be300; }
+      html[data-theme='light'] #app-loader-spinner { border-color: #cbd5e1; border-top-color: var(--p-primary, #5be300); }
       @keyframes app-spin { to { transform: rotate(360deg); } }
     </style>
   </head>

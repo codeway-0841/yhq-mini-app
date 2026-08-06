@@ -289,7 +289,8 @@ body[data-no-animation='true'] .route-page { animation: none; }
   --p-success:     #22c55e;
   --p-warning:     #f59e0b;
   --p-danger:      #ef4444;
-  --p-purple:      #8b5cf6;
+  --p-purple:      #8b5cf6;   /* AI/Premium — ba'zi temalar override qiladi */
+  --p-purple-rgb:  139 92 246;
   --p-blue:        #3b82f6;
   --p-gold:        #facc15;
 }
@@ -316,9 +317,10 @@ body[data-theme='light'] {
    Bu bloklar body[data-theme='light'] dan KEYIN keladi → atmosfera
    light mode'da HAM to'liq qo'llanadi. src/config/themes.ts bilan sinxron! */
 
-/* 🌌 Aurora — neon yashil + chuqur ko'k-yashil atmosfera */
+/* 🌌 Aurora — neon yashil + chuqur ko'k-yashil atmosfera (AI: cyan) */
 body[data-accent='aurora'] {
   --p-primary: #00ffa3; --p-on-primary: #032118; --p-glow: rgba(0, 255, 163, 0.35); --p-primary-rgb: 0 255 163;
+  --p-purple: #22d3ee; --p-purple-rgb: 34 211 238;
   --p-canvas: #061019; --p-surface: #0a1a26; --p-card: #0d2231; --p-line: #16364a;
   --theme-canvas: #061019; --theme-surface: #0a1a26; --theme-elevated: #0d2231; --theme-line: #16364a;
 }
@@ -330,23 +332,26 @@ body[data-accent='violet'] {
   --theme-canvas: #120b1c; --theme-surface: #1a1128; --theme-elevated: #221536; --theme-line: #33224d;
 }
 
-/* 🌊 Ocean — deep blue (glow'siz, toza) */
+/* 🌊 Ocean — deep blue (glow'siz, toza; AI: indigo) */
 body[data-accent='ocean'] {
   --p-primary: #38bdf8; --p-on-primary: #062033; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 56 189 248;
+  --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
   --p-canvas: #071120; --p-surface: #0a1a2e; --p-card: #0e2138; --p-line: #1a3350;
   --theme-canvas: #071120; --theme-surface: #0a1a2e; --theme-elevated: #0e2138; --theme-line: #1a3350;
 }
 
-/* 🌲 Forest — emerald + tabiiy chuqur yashil */
+/* 🌲 Forest — emerald + tabiiy chuqur yashil (AI: teal) */
 body[data-accent='forest'] {
   --p-primary: #34d399; --p-on-primary: #03251a; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 52 211 153;
+  --p-purple: #2dd4bf; --p-purple-rgb: 45 212 191;
   --p-canvas: #08130d; --p-surface: #0c1d14; --p-card: #10281c; --p-line: #1a3d2c;
   --theme-canvas: #08130d; --theme-surface: #0c1d14; --theme-elevated: #10281c; --theme-line: #1a3d2c;
 }
 
-/* 🌅 Sunset — orange + iliq atmosfera (yumshoq glow) */
+/* 🌅 Sunset — orange + iliq atmosfera (yumshoq glow; AI: pink) */
 body[data-accent='sunset'] {
   --p-primary: #fb923c; --p-on-primary: #2a1200; --p-glow: rgba(251, 146, 60, 0.28); --p-primary-rgb: 251 146 60;
+  --p-purple: #f472b6; --p-purple-rgb: 244 114 182;
   --p-canvas: #160f08; --p-surface: #201509; --p-card: #291b0d; --p-line: #3d2a14;
   --theme-canvas: #160f08; --theme-surface: #201509; --theme-elevated: #291b0d; --theme-line: #3d2a14;
 }
@@ -361,9 +366,10 @@ body[data-accent='sakura'] {
   --theme-line: #f3d0de; --theme-line-strong: #e0aec2; --theme-shadow: #e8c3d2;
 }
 
-/* 🌑 Obsidian — premium sof qora (glow'siz, oq-kumush aksent) */
+/* 🌑 Obsidian — premium sof qora (glow'siz, oq-kumush aksent; AI: sof kulrang) */
 body[data-accent='obsidian'] {
   --p-primary: #e4e4e7; --p-on-primary: #09090b; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 228 228 231;
+  --p-purple: #a1a1aa; --p-purple-rgb: 161 161 170;
   --p-canvas: #050506; --p-surface: #0c0c0e; --p-card: #131316; --p-line: #26262b;
   --theme-canvas: #050506; --theme-surface: #0c0c0e; --theme-elevated: #131316;
   --theme-line: #26262b; --theme-line-strong: #3a3a41; --theme-shadow: #000000;
