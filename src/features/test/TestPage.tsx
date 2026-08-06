@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -14,6 +14,8 @@ import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
 import { MODULE_TOPICS } from '../../data/modules'
 import { lessons } from '../../data/lessons'
+import { explainQuestion, TutorError } from '../../lib/tutor'
+import { openTelegramLink } from '../../lib/telegram'
 
 // Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
 const STUDY_ITEMS = [
@@ -78,6 +80,47 @@ export default function TestPage() {
   const correctId = q?.correct ?? null
   const [showExplain, setShowExplain] = useState(false)
 
+  // ── AI Tutor (Premium) — xato savolni streaming tushuntirish ──
+  const { tariff } = useAppStore()
+  const userId  = useAppStore((s) => s.user?.id)
+  const isPremium = tariff === 'premium'
+  const [showAi, setShowAi]         = useState(false)
+  const [aiText, setAiText]         = useState('')
+  const [aiBusy, setAiBusy]         = useState(false)
+  const aiCacheRef = useRef(new Map<number, string>())
+
+  /** Joriy savol AI tushuntirishi — cache bilan (re-open bepul). */
+  const startAiExplain = useCallback(async () => {
+    if (!q || !userId) return
+    const cached = aiCacheRef.current.get(q.id)
+    if (cached) { setAiText(cached); return }
+    setAiBusy(true)
+    setAiText('')
+    try {
+      let acc = ''
+      for await (const chunk of explainQuestion(userId, q.id, settings?.language ?? 'uz')) {
+        acc += chunk
+        setAiText(acc)
+      }
+      aiCacheRef.current.set(q.id, acc)
+    } catch (err) {
+      if (err instanceof TutorError && err.kind === 'premium_required') {
+        setShowAi(false)
+        openTelegramLink('https://t.me/prava_oson_bot?start=premium')
+        return
+      }
+      setAiText(tt('aiUnavailable'))
+    } finally {
+      setAiBusy(false)
+    }
+  }, [q, userId, settings?.language, tt])
+
+  const openAi = useCallback(() => {
+    if (!isPremium) { openTelegramLink('https://t.me/prava_oson_bot?start=premium'); return }
+    setShowAi(true)
+    void startAiExplain()
+  }, [isPremium, startAiExplain])
+
   /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
       Mavzu → slug → MODULE_TOPICS orqali modul. */
   const explanation = useMemo(() => {
@@ -116,7 +159,7 @@ export default function TestPage() {
   }, [location.key, startIndex, activeQuestions.length])
 
   const goTo   = useCallback((i: number) => {
-    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false); setShowExplain(false) }
+    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false); setShowExplain(false); setShowAi(false) }
   }, [activeQuestions.length])
   const goNext = useCallback(() => goTo(current + 1), [current, goTo])
 
@@ -299,14 +342,24 @@ export default function TestPage() {
             }`}>
               {q.text}
             </p>
-            {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
-            {selected && explanation && (
-              <button onClick={() => setShowExplain(true)}
-                className="mx-auto lg:mx-0 flex items-center gap-1.5 bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[12px] font-bold px-3.5 py-2 rounded-xl mb-4 active:scale-95 transition-transform">
-                <Info size={14} />
-                {tt('whyThis')}
-              </button>
-            )}
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
+              {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
+              {selected && explanation && (
+                <button onClick={() => setShowExplain(true)}
+                  className="flex items-center gap-1.5 bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
+                  <Info size={14} />
+                  {tt('whyThis')}
+                </button>
+              )}
+              {/* AI Tutor — XATO javobda (Premium) */}
+              {selected && selected !== correctId && (
+                <button onClick={openAi}
+                  className="flex items-center gap-1.5 bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
+                  ✨ {tt('askAiExplain')}
+                  {!isPremium && <Crown size={13} fill="currentColor" />}
+                </button>
+              )}
+            </div>
           </div>
           {q.image && (
             /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
@@ -394,6 +447,31 @@ export default function TestPage() {
               <GraduationCap size={16} />
               {tt('openModule')}
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* AI Tutor sheeti — streaming matn (premium) */}
+      {showAi && (
+        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowAi(false)}>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
+              <div className="w-9 h-9 rounded-xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center flex-shrink-0">
+                <GraduationCap size={17} className="text-duo-purple" />
+              </div>
+              <p className="text-[15px] font-black text-fg">AI Tutor</p>
+              {aiBusy && <Loader2 size={15} className="text-duo-purple animate-spin ml-auto" />}
+            </div>
+            <div className="overflow-y-auto min-h-[80px]">
+              {aiText ? (
+                <p className="text-[13.5px] text-fg leading-relaxed whitespace-pre-wrap">{aiText}</p>
+              ) : (
+                <p className="text-[13px] text-muted">{tt('aiThinking')}</p>
+              )}
+            </div>
           </div>
         </div>
       )}
