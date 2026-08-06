@@ -44,12 +44,14 @@ export default function AdminPage() {
 
   // Savollar store'dan (cache). doimiy filter
   const filtered = useMemo(() => {
-    if (!search.trim()) return questions.slice(0, 20) // dastlabki 20 ta
-    const q = search.toLowerCase()
-    return questions.filter((x) =>
-      String(x.id).includes(q) ||
-      x.text.toLowerCase().includes(q),
-    ).slice(0, 50)
+    const q = search.trim().toLowerCase()
+    if (q) {
+      return questions.filter((x) =>
+        String(x.id).includes(q) || x.text.toLowerCase().includes(q),
+      ).slice(0, 50)
+    }
+    // Qidiruvsiz: OXIRGI qo'shilgan savollar birinchi (admin'da eng keraklisi)
+    return [...questions].reverse().slice(0, 20)
   }, [questions, search])
 
   const topic = useCallback((topicId: number | null) => {

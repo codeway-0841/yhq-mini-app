@@ -55,8 +55,21 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
 
   async reload() {
     const { lang, subjectId } = get()
-    set({ loaded: false }) // load() ichidagi early-return'ni chetlab o'tish
-    await get().load(lang, subjectId)
+    // load() dan FARQLI: cache-bust bilan — admin CRUD'dan keyingi stale
+    // CDN/browser javobini chetlab o'tish uchun
+    set({ loading: true, error: null })
+    try {
+      const [raw, topics] = await Promise.all([
+        api.getQuestions(subjectId, true),
+        api.getTopics(subjectId, true),
+      ])
+      rawQuestions = raw
+      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId })
+    } catch (e) {
+      set({ error: e instanceof Error ? e.message : 'Failed to reload questions' })
+    } finally {
+      set({ loading: false })
+    }
   },
 
   setLang(lang) {

@@ -149,10 +149,21 @@ export const api = {
   updatePhone: (userId: string, phone: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone }),
 
-  getQuestions: (subject?: string) =>
-    request<DbQuestion[]>('GET', subject ? `/questions?subject=${encodeURIComponent(subject)}` : '/questions'),
-  getTopics: (subject?: string) =>
-    request<DbTopic[]>('GET', subject ? `/topics?subject=${encodeURIComponent(subject)}` : '/topics'),
+  getQuestions: (subject?: string, fresh = false) => {
+    const params = new URLSearchParams()
+    if (subject) params.set('subject', subject)
+    // Admin CRUD'dan keyin: browser (1h) + Vercel CDN (24h) cache'ni chetlab o'tish
+    if (fresh) params.set('_t', String(Date.now()))
+    const qs = params.toString()
+    return request<DbQuestion[]>('GET', `/questions${qs ? `?${qs}` : ''}`)
+  },
+  getTopics: (subject?: string, fresh = false) => {
+    const params = new URLSearchParams()
+    if (subject) params.set('subject', subject)
+    if (fresh) params.set('_t', String(Date.now()))
+    const qs = params.toString()
+    return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`)
+  },
 
   getLeaderboard: (limit: number, userId?: string) =>
     request<LeaderboardEntry[]>(
