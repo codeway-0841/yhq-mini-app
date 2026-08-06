@@ -77,6 +77,19 @@ export const questions = pgTable('questions', {
   topicId:       integer('topic_id').references(() => topics.id),
 })
 
+/**
+ * Savolga oid STATIK tushuntirishlar — free foydalanuvchilar uchun
+ * (AI Tutor premium-only). Bo'sh bo'lsa endpoint darslik darsidan
+ * derive qilingan fallback matn qaytaradi; admin keyin per-question
+ * aniq tushuntirish yozishi mumkin.
+ */
+export const questionExplanations = pgTable('question_explanations', {
+  questionId:    integer('question_id').primaryKey().references(() => questions.id, { onDelete: 'cascade' }),
+  explanationUz: text('explanation_uz').notNull(),
+  explanationRu: text('explanation_ru').notNull(),
+  updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+})
+
 export const savedQuestions = pgTable('saved_questions', {
   id:         serial('id').primaryKey(),
   userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),

@@ -14,7 +14,7 @@ import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
 import { MODULE_TOPICS } from '../../data/modules'
 import { lessons } from '../../data/lessons'
-import { explainQuestion, TutorError } from '../../lib/tutor'
+import { explainQuestion, fetchStaticExplanation, TutorError } from '../../lib/tutor'
 import { openTelegramLink } from '../../lib/telegram'
 
 // Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
@@ -122,12 +122,26 @@ export default function TestPage() {
 
   const [showAiUpsell, setShowAiUpsell] = useState(false)
 
-  const openAi = useCallback(() => {
-    // Premium yo'q bo'lsa — botga YUBORILMAYDI; ilova ichida upsell modal ochiladi
-    if (!isPremium) { setShowAiUpsell(true); return }
+  // ── Statik tushuntirish (FREE) — AI Tutor olmaganlarga muqobil ──
+  const [staticText, setStaticText] = useState<string | null>(null)
+  const [showStatic, setShowStatic] = useState(false)
+
+  const openAi = useCallback(async () => {
+    // Premium yo'q bo'lsa — avval statik tushuntirish beramiz (bo'lsa),
+    // bo'lmasa upsell modal. Botga YUBORILMAYDI; ilova ichida ochiladi.
+    if (!isPremium) {
+      if (q) {
+        try {
+          const text = await fetchStaticExplanation(q.id, settings?.language ?? 'uz')
+          if (text) { setStaticText(text); setShowStatic(true); return }
+        } catch { /* tarmoq xatosi — upsell'ga tushamiz */ }
+      }
+      setShowAiUpsell(true)
+      return
+    }
     setShowAi(true)
     void startAiExplain()
-  }, [isPremium, startAiExplain])
+  }, [isPremium, q, settings?.language, startAiExplain])
 
   /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
       Mavzu → slug → MODULE_TOPICS orqali modul. */
@@ -512,6 +526,33 @@ export default function TestPage() {
                 <p className="text-[13px] text-muted">{tt('aiThinking')}</p>
               )}
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Statik tushuntirish sheeti — FREE foydalanuvchilarga (AI o'rniga) */}
+      {showStatic && staticText && (
+        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowStatic(false)}>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
+              <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
+                <Info size={17} className="text-duo-yellow" />
+              </div>
+              <p className="text-[15px] font-black text-fg">{tt('staticExplainTitle')}</p>
+            </div>
+            <div className="overflow-y-auto min-h-[60px]">
+              <p className="text-[13.5px] text-fg leading-relaxed whitespace-pre-wrap">{staticText}</p>
+            </div>
+            {/* Soft upsell — agressiv modal emas, qiziqtirgich */}
+            <button
+              onClick={() => { setShowStatic(false); setShowAiUpsell(true) }}
+              className="mt-4 w-full py-2.5 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12.5px] font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0">
+              <Crown size={14} fill="currentColor" />
+              {tt('staticExplainAiHint')}
+            </button>
           </div>
         </div>
       )}

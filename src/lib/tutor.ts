@@ -10,6 +10,26 @@ function getInitData(): string | undefined {
   return tg?.initData || undefined
 }
 
+/**
+ * FREE foydalanuvchilar uchun statik tushuntirish (AI Tutor premium-only o'rniga).
+ * 404 → null (ushbu savolga izoh yozilmagan).
+ */
+export async function fetchStaticExplanation(
+  questionId: number,
+  lang: 'uz' | 'ru',
+): Promise<string | null> {
+  try {
+    const res = await fetch(`/api/questions/${questionId}/explanation?lang=${lang}`)
+    if (res.status === 404) return null
+    if (!res.ok) throw new TutorError('network', `HTTP ${res.status}`)
+    const data = (await res.json()) as { text?: string }
+    return data.text ?? null
+  } catch (err) {
+    if (err instanceof TutorError) throw err
+    throw new TutorError('network', 'Tarmoq xatosi')
+  }
+}
+
 /** Xatolik turlari — UI'da holatga qarab xabar ko'rsatish uchun */
 export type TutorErrorKind = 'premium_required' | 'unavailable' | 'quota' | 'network'
 export class TutorError extends Error {

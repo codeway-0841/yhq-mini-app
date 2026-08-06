@@ -39,6 +39,7 @@ npm run server:dev     # backend dev (tsx watch)
 npm test               # barcha testlar
 npm run build          # frontend build
 npm run build:server   # backend bundle (esbuild)
+npm run db:seed:explanations  # statik savol tushuntirishlari seed (idempotent)
 npx tsc -p tsconfig.json --noEmit        # frontend typecheck
 npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 ```
@@ -51,3 +52,4 @@ npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 4. **Xatoliklar:** router handler'larini `wrap()` bilan o'rang, `AppError` tashlang — `try/catch` yozmang.
 5. **DB o'zgarish:** `server/schema.ts` tahrirlang → `npm run db:generate` → migration faylini commit qiling.
 6. **Testlar:** yangi feature/bugfix uchun `tests/` ga test qo'shing. Consistency testlar (masalan `tests/unit/config/subjects.test.ts`) konfig desync'larini ushlaydi.
+7. **Env var:** barcha `process.env` FAQAT `server/config/index.ts` dagi zod schema orqali o'qiladi. Yangi env kerak bo'lsa — avval schema'ga qo'shing, keyin `config` orqali oling.

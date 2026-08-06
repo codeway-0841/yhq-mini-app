@@ -3,14 +3,13 @@
  * SENTRY_DSN sozlanmagan bo'lsa, to'liq no-op.
  */
 import * as Sentry from '@sentry/node'
+import { config } from '../config'
 
-const dsn = process.env['SENTRY_DSN']
-
-if (dsn) {
+if (config.sentry.dsn) {
   Sentry.init({
-    dsn,
-    environment: process.env['NODE_ENV'] === 'production' ? 'production' : 'development',
-    release: process.env['VERCEL_GIT_COMMIT_SHA']?.slice(0, 8),
+    dsn: config.sentry.dsn,
+    environment: config.isProd ? 'production' : 'development',
+    release: config.deploy.buildId,
     // Har 10-transaksiyadan 1 tasini kuzatish (serverless uchun yetarli)
     tracesSampleRate: 0.1,
   })

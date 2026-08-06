@@ -58,9 +58,11 @@ export function createApp() {
     res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })
   })
 
-  // Global IP-based rate limit (per-endpoint limiters may be stricter)
+  // Global IP-based rate limit (per-endpoint limiters may be stricter).
+  // 120/min per-IP: oddiy foydalanuvchi uchun kafolatli (sahifa yuklash
+  // + progress sync ~10-20 req/min), lekin polling/spam hujumlarga yetarli devor.
   app.use('/api', rateLimit({
-    maxPerMinute: 300,
+    maxPerMinute: 120,
     keyFn: (req) => req.ip ?? 'unknown',
   }))
 

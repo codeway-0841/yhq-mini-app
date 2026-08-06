@@ -31,7 +31,7 @@ function isPublicGet(req: Request): boolean {
 }
 
 export function isAuthEnforced(): boolean {
-  return Boolean(config.telegram.botToken) && process.env['NODE_ENV'] === 'production'
+  return Boolean(config.telegram.botToken) && config.isProd
 }
 
 export function telegramAuth(req: Request, res: Response, next: NextFunction): void {

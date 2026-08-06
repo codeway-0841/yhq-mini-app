@@ -18,6 +18,7 @@ import { rateLimit }        from '../../middleware/rate-limiter'
 import { parseBigInt }      from '../../utils/parse'
 import { db }   from '../../db/connection'
 import { questions, users } from '../../schema'
+import { config } from '../../config'
 
 const router = Router()
 
@@ -61,7 +62,7 @@ router.post(
   rateLimit({ maxPerMinute: 10 }),
   validate({ body: BodySchema }),
   wrap(async (req, res) => {
-    const key = process.env['GEMINI_API_KEY']
+    const key = config.ai.geminiApiKey
     if (!key) throw new AppError(503, 'AI Tutor vaqtincha o\'chiq (GEMINI_API_KEY yo\'q)')
 
     const { questionId, lang, userId, answeredCorrect } = req.body as z.infer<typeof BodySchema>

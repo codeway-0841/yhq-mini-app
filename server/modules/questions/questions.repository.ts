@@ -1,6 +1,6 @@
 import { asc, eq } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { questions, topics } from '../../schema'
+import { questions, topics, questionExplanations } from '../../schema'
 
 // In-memory TTL cache — questions/topics change rarely (manual seed only),
 // so there's no need to hit the DB on every request.
@@ -30,5 +30,16 @@ export const questionsRepository = {
 
   findTopics() {
     return cached('topics:all', () => db.select().from(topics))
+  },
+
+  /** Statik tushuntirish (free foydalanuvchilar uchun AI Tutor o'rniga) — yo'q bo'lsa null */
+  findExplanation(questionId: number): Promise<{ explanationUz: string; explanationRu: string } | null> {
+    return cached(`explanation:${questionId}`, async () => {
+      const [row] = await db
+        .select({ explanationUz: questionExplanations.explanationUz, explanationRu: questionExplanations.explanationRu })
+        .from(questionExplanations)
+        .where(eq(questionExplanations.questionId, questionId))
+      return row ?? null
+    })
   },
 }

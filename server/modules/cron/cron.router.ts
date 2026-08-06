@@ -22,9 +22,7 @@ import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repo
 
 const router = Router()
 
-const BASE_URL = process.env['APP_URL'] ?? 'https://yhq-mini-app.vercel.app'
-const BUILD_ID = (process.env['VERCEL_GIT_COMMIT_SHA'] ?? 'v1').slice(0, 8)
-const APP_URL  = `${BASE_URL}?v=${BUILD_ID}`
+const APP_URL = `${config.deploy.appUrl}?v=${config.deploy.buildId}`
 
 /** 'YYYY-MM-DD' — Asia/Tashkent (foydalanuvchi vaqt zonasi) */
 function tashkentDate(daysAgo = 0): string {
@@ -33,7 +31,7 @@ function tashkentDate(daysAgo = 0): string {
 }
 
 router.all('/cron/daily-reminder', async (req, res) => {
-  const secret = process.env['CRON_SECRET']
+  const secret = config.cron.secret
   if (secret && req.headers.authorization !== `Bearer ${secret}`) {
     res.status(401).json({ error: 'unauthorized' })
     return
@@ -96,7 +94,7 @@ router.all('/cron/daily-reminder', async (req, res) => {
  * Duolingo uslubi: bronze → silver → gold → platinum.
  */
 router.all('/cron/league-rollover', async (req, res) => {
-  const secret = process.env['CRON_SECRET']
+  const secret = config.cron.secret
   if (secret && req.headers.authorization !== `Bearer ${secret}`) {
     res.status(401).json({ error: 'unauthorized' })
     return

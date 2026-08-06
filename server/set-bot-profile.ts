@@ -8,11 +8,12 @@
 
 import 'dotenv/config'
 import { Bot } from 'grammy'
+import { config } from './config'
 
-const token = process.env['BOT_TOKEN']
+const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
 
-const APP_URL = process.env['APP_URL'] ?? 'https://yhq-mini-app.vercel.app'
+const APP_URL = config.deploy.appUrl
 
 const bot = new Bot(token)
 

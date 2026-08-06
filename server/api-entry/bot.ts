@@ -2,15 +2,15 @@ import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
 import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
+import { config } from '../config'
 
-const token = process.env['BOT_TOKEN']
+const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
 
 // Cache-bust har deployda o'zgaradi (?v=<commit-sha>) — Telegram WebView
 // eski versiyani keshlab turishining oldini oladi
-const BASE_URL = process.env['APP_URL'] ?? 'https://yhq-mini-app.vercel.app'
-const BUILD_ID = (process.env['VERCEL_GIT_COMMIT_SHA'] ?? 'v1').slice(0, 8)
-const APP_URL  = `${BASE_URL}?v=${BUILD_ID}`
+const BASE_URL = config.deploy.appUrl
+const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
 
@@ -323,9 +323,9 @@ const callback = webhookCallback(bot, 'https')
 // Header solishtirish timingSafeEqual bilan (timing attack himoyasi).
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function handler(req: any, res: any) {
-  const secret = process.env['BOT_WEBHOOK_SECRET']
+  const secret = config.telegram.webhookSecret
   if (!secret) {
-    if (process.env['NODE_ENV'] === 'production') {
+    if (config.isProd) {
       res.statusCode = 500
       res.setHeader?.('content-type', 'text/plain')
       res.end?.('webhook secret not configured')
