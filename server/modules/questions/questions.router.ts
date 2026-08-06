@@ -17,10 +17,12 @@ const QuestionsQuery = z.object({
 })
 
 /**
- * Public content — CDN edge cache (24 h) + browser cache (1 h).
- * Kontent faqat qo'lda yangilanadi (seed), shuning uchun kunlik cache ok.
+ * Public content — CDN edge cache (10 min) + browser cache (5 min).
+ * Admin CRUD mavjud bo'lgani uchun 24 soatlik cache endi ZIYO: tahrirlangan
+ * savol foydalanuvchilarga bir kungacha eski holatda ko'rinardi.
+ * stale-while-revalidate=1h: muddat o'tgach ham eski javob, orqada yangilanadi.
  */
-const CONTENT_CACHE = 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=3600'
+const CONTENT_CACHE = 'public, max-age=300, s-maxage=600, stale-while-revalidate=3600'
 
 /**
  * GET /api/questions?topicId=1&subject=fizika
