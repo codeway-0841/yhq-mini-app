@@ -22,9 +22,11 @@ import { questions, users } from '../../schema'
 const router = Router()
 
 const BodySchema = z.object({
-  questionId: z.number().int().min(1),
-  lang:       z.enum(['uz', 'ru']).default('uz'),
-  userId:     z.string().regex(/^\d{1,19}$/),
+  questionId:     z.number().int().min(1),
+  lang:           z.enum(['uz', 'ru']).default('uz'),
+  userId:         z.string().regex(/^\d{1,19}$/),
+  /** To'g'ri javob berilganmi — prompt o'shanga qarab tanlanadi */
+  answeredCorrect: z.boolean().default(false),
 })
 
 /** Effective premium (lifetime tariff YOKI referal muddati tugamagan) */
@@ -34,15 +36,23 @@ async function isPremium(uid: bigint): Promise<boolean> {
   return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
 }
 
-function buildPrompt(q: typeof questions.$inferSelect, lang: 'uz' | 'ru'): string {
+function buildPrompt(q: typeof questions.$inferSelect, lang: 'uz' | 'ru', answeredCorrect: boolean): string {
   const opts    = lang === 'ru' ? q.optionsRu : q.optionsUz
   const qText   = lang === 'ru' ? q.questionRu : q.questionUz
   const correct = q.correctAnswer
   const options = Object.entries(opts).map(([k, v]) => `${k}) ${v}`).join('\n')
+  const ctx     = `Вопрос/Savol: ${qText}\n\nВарианты:\n${options}\n\nTo'g'ri javob: ${correct}`
 
-  return lang === 'ru'
-    ? `Ты — терпеливый и дружелюбный преподаватель ПДД (пдд Узбекистана). Ученик ответил неправильно и не понял ПОЧЕМУ.\n\nВопрос: ${qText}\n\nВарианты:\n${options}\n\nПравильный ответ: ${correct}\n\nОбъясни ученику тщательно, простым языком, как будто сидишь с ним рядом:\n1. Что требует правило (цитируй суть ПДД).\n2. Почему именно "${correct}" — правильный ответ.\n3. Кратко по каждому НЕПРАВИЛЬНОМУ варианту — что в нём ловушка.\n4. Один совет, как это запомнить на будущее.\n\nОбычный живой разговорный тон, 200–300 слов. Без заголовков и маркеров — обычный текст с абзацами.`
-    : `Siz — sabrli va do'stona O'zbekiston YHQ ustozi. O'quvchi noto'g'ri javob berdi va NEGA xatoni tushunmadi.\n\nSavol: ${qText}\n\nVariantlar:\n${options}\n\nTo'g'ri javob: ${correct}\n\nO'quvchiga yonida o'tirib qo'yıb tushuntirganday batafsil, sodda tilda tushuntiring:\n1. Qoida nimani talab qiladi (YHQ mohiyatini aytib bering).\n2. Nega aynen "${correct}" javobi to'g'ri.\n3. Har bir NOTO'G'RI variant haqida qisqacha — undagi tuzo-qur trap qanday.\n4. Keyingi safar eslab qolish uchun 1 ta maslahat.\n\nOdatiy jonli suhbatdosh ohangi, 200–300 so'z. Sarlavhasiz, markirovkasiz — oddiy paragraflar.`
+  if (lang === 'ru') {
+    if (!answeredCorrect) {
+      return `Ты — терпеливый и дружелюбный преподаватель ПДД (пдд Узбекистана). Ученик ответил неправильно и не понял ПОЧЕМУ.\n\n${ctx}\n\nОбъясни ученику тщательно, простым языком, как будто сидишь с ним рядом:\n1. Что требует правило (цитируй суть ПДД).\n2. Почему именно "${correct}" — правильный ответ.\n3. Кратко по каждому НЕПРАВИЛЬНОМУ варианту — что в нём ловушка.\n4. Один совет, как это запомнить на будущее.\n\nОбычный живой разговорный тон, 200–300 слов. Без заголовков и маркеров — обычный текст с абзацами.`
+    }
+    return `Ты — дружелюбный преподаватель ПДД. Ученик ответил ПРАВИЛЬНО — коротко похвали и закрепи правило.\n\n${ctx}\n\n1. Кратко похвали (1 предложение).\n2. Объясни суть правила подробно (что требует ПДД, почему "${correct}" верен).\n3. Кратко по другим вариантам — почему они неверны.\n4. Совет, как запомнить.\n\nЖивой разговорный тон, 200–300 слов. Обычные абзацы без маркеров.`
+  }
+  if (!answeredCorrect) {
+    return `Siz — sabrli va do'stona O'zbekiston YHQ ustozi. O'quvchi noto'g'ri javob berdi va NEGA xatoni tushunmadi.\n\n${ctx}\n\nO'quvchiga yonida o'tirib qo'yıb tushuntirganday batafsil, sodda tilda tushuntiring:\n1. Qoida nimani talab qiladi (YHQ mohiyatini aytib bering).\n2. Nega aynen "${correct}" javobi to'g'ri.\n3. Har bir NOTO'G'RI variant haqida qisqacha — undagi tuzo-qur trap qanday.\n4. Keyingi safar eslab qolish uchun 1 ta maslahat.\n\nOdatiy jonli suhbatdosh ohangi, 200–300 so'z. Sarlavhasiz, markirovkasiz — oddiy paragraflar.`
+  }
+  return `Siz — do'stona O'zbekiston YHQ ustozi. O'quvchi javobni TO'G'RI berdi — qisqacha tabriklang va qoidani mustahkam lab qo'ying.\n\n${ctx}\n\n1. Qisqacha tabrik (1 jum).\n2. Qoidani batafsil tushuntiring (nima talab qiladi, nega "${correct}" to'g'ri).\n3. Boshqa variantlar nega noto'g'ri — qisqacha.\n4. Eslab qolish uchun maslahat.\n\nJonli suhbatdosh ohangi, 200–300 so'z. Sarlavha va markirovkasiz oddiy paragraflar.`
 }
 
 // POST /api/tutor/explain
@@ -54,7 +64,7 @@ router.post(
     const key = process.env['GEMINI_API_KEY']
     if (!key) throw new AppError(503, 'AI Tutor vaqtincha o\'chiq (GEMINI_API_KEY yo\'q)')
 
-    const { questionId, lang, userId } = req.body as z.infer<typeof BodySchema>
+    const { questionId, lang, userId, answeredCorrect } = req.body as z.infer<typeof BodySchema>
     const uid = parseBigInt(userId)
     if (!uid) throw new AppError(400, 'Invalid userId')
 
@@ -71,7 +81,7 @@ router.post(
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang) }] }],
+          contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang, answeredCorrect) }] }],
           // flash-latest reasoning-model — fikrlash ham token yeydi; 3000 yetarli
           generationConfig: { maxOutputTokens: 3000, temperature: 0.6 },
         }),

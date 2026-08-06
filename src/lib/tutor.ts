@@ -25,6 +25,7 @@ export async function* explainQuestion(
   userId: string,
   questionId: number,
   lang: 'uz' | 'ru',
+  answeredCorrect = false,
 ): AsyncGenerator<string, void, void> {
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
   const initData = getInitData()
@@ -33,7 +34,7 @@ export async function* explainQuestion(
   const res = await fetch('/api/tutor/explain', {
     method: 'POST',
     headers,
-    body: JSON.stringify({ questionId, lang, userId }),
+    body: JSON.stringify({ questionId, lang, userId, answeredCorrect }),
   })
 
   if (!res.ok) {

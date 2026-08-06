@@ -20,7 +20,7 @@ export const MODULE_TOPICS: Record<number, string[]> = {
   5: ['temir-yol', 'yuk-tashish', 'yolovchi-tashish', 'shatakka-olish', 'avtomagistral', 'sirpanchiq-yol'],
   6: ['tezlik'],
   7: ['piyodalar'],
-  8: ['birinchi-tibbiy-yordam', 'texnik-holat', 'yoritish', 'haydovchi-majburiyatlari'],
+  8: ['birinchi-tibbiy-yordam', 'texnik-holat', 'yoritish', 'haydovchi-majburiyatlari', 'umumiy'],
 }
 
 export const finalStages = [

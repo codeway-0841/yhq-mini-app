@@ -89,20 +89,23 @@ export default function TestPage() {
   const [aiBusy, setAiBusy]         = useState(false)
   const aiCacheRef = useRef(new Map<number, string>())
 
-  /** Joriy savol AI tushuntirishi — cache bilan (re-open bepul). */
+  /** Joriy savol AI tushuntirishi — cache bilan (re-open bepul).
+      To'g'ri/xato javobga qarab prompt tanlanadi. */
   const startAiExplain = useCallback(async () => {
-    if (!q || !userId) return
-    const cached = aiCacheRef.current.get(q.id)
+    if (!q || !userId || !selected) return
+    const answeredCorrect = selected === correctId
+    const cacheKey = q.id * 10 + (answeredCorrect ? 1 : 0)
+    const cached = aiCacheRef.current.get(cacheKey)
     if (cached) { setAiText(cached); return }
     setAiBusy(true)
     setAiText('')
     try {
       let acc = ''
-      for await (const chunk of explainQuestion(userId, q.id, settings?.language ?? 'uz')) {
+      for await (const chunk of explainQuestion(userId, q.id, settings?.language ?? 'uz', answeredCorrect)) {
         acc += chunk
         setAiText(acc)
       }
-      aiCacheRef.current.set(q.id, acc)
+      aiCacheRef.current.set(cacheKey, acc)
     } catch (err) {
       if (err instanceof TutorError && err.kind === 'premium_required') {
         setShowAi(false)
@@ -115,7 +118,7 @@ export default function TestPage() {
     } finally {
       setAiBusy(false)
     }
-  }, [q, userId, settings?.language, tt])
+  }, [q, userId, selected, correctId, settings?.language, tt])
 
   const [showAiUpsell, setShowAiUpsell] = useState(false)
 
@@ -356,8 +359,8 @@ export default function TestPage() {
                   {tt('whyThis')}
                 </button>
               )}
-              {/* AI Tutor — XATO javobda (Premium) */}
-              {selected && selected !== correctId && (
+              {/* AI Tutor — HAMMA javobdan keyin (Premium) */}
+              {selected && (
                 <button onClick={openAi}
                   className="flex items-center gap-1.5 bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
                   ✨ {tt('askAiExplain')}
