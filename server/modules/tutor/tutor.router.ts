@@ -41,8 +41,8 @@ function buildPrompt(q: typeof questions.$inferSelect, lang: 'uz' | 'ru'): strin
   const options = Object.entries(opts).map(([k, v]) => `${k}) ${v}`).join('\n')
 
   return lang === 'ru'
-    ? `Ты — дружелюбный преподаватель ПДД. Ученик выбрал неправильный ответ.\n\nВопрос: ${qText}\n\nВарианты:\n${options}\n\nПравильный ответ: ${correct}\n\nОбъясни ученику коротко и простыми словами (до 120 слов): почему ответ "${correct}" правильный и какая ошибка у ученика могла быть. Без воды — только суть правила.`
-    : `Siz — yo'l harakati qoidalari bo'yicha do'stona ustoz. O'quvchi noto'g'ri javobni tanladi.\n\nSavol: ${qText}\n\nVariantlar:\n${options}\n\nTo'g'ri javob: ${correct}\n\nO'quvchiga qisqa va oddiy tilda (120 so'zdan kam) tushuntiring: nega "${correct}" javobi to'g'ri va o'quvchi qanday xato qihgan bo'lishi mumkin — faqat qoidaning mohiyati.`
+    ? `Ты — терпеливый и дружелюбный преподаватель ПДД (пдд Узбекистана). Ученик ответил неправильно и не понял ПОЧЕМУ.\n\nВопрос: ${qText}\n\nВарианты:\n${options}\n\nПравильный ответ: ${correct}\n\nОбъясни ученику тщательно, простым языком, как будто сидишь с ним рядом:\n1. Что требует правило (цитируй суть ПДД).\n2. Почему именно "${correct}" — правильный ответ.\n3. Кратко по каждому НЕПРАВИЛЬНОМУ варианту — что в нём ловушка.\n4. Один совет, как это запомнить на будущее.\n\nОбычный живой разговорный тон, 200–300 слов. Без заголовков и маркеров — обычный текст с абзацами.`
+    : `Siz — sabrli va do'stona O'zbekiston YHQ ustozi. O'quvchi noto'g'ri javob berdi va NEGA xatoni tushunmadi.\n\nSavol: ${qText}\n\nVariantlar:\n${options}\n\nTo'g'ri javob: ${correct}\n\nO'quvchiga yonida o'tirib qo'yıb tushuntirganday batafsil, sodda tilda tushuntiring:\n1. Qoida nimani talab qiladi (YHQ mohiyatini aytib bering).\n2. Nega aynen "${correct}" javobi to'g'ri.\n3. Har bir NOTO'G'RI variant haqida qisqacha — undagi tuzo-qur trap qanday.\n4. Keyingi safar eslab qolish uchun 1 ta maslahat.\n\nOdatiy jonli suhbatdosh ohangi, 200–300 so'z. Sarlavhasiz, markirovkasiz — oddiy paragraflar.`
 }
 
 // POST /api/tutor/explain
@@ -72,7 +72,8 @@ router.post(
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang) }] }],
-          generationConfig: { maxOutputTokens: 400, temperature: 0.4 },
+          // flash-latest reasoning-model — fikrlash ham token yeydi; 3000 yetarli
+          generationConfig: { maxOutputTokens: 3000, temperature: 0.6 },
         }),
       },
     )
