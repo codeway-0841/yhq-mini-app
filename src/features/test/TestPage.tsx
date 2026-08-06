@@ -106,7 +106,7 @@ export default function TestPage() {
     } catch (err) {
       if (err instanceof TutorError && err.kind === 'premium_required') {
         setShowAi(false)
-        openTelegramLink('https://t.me/prava_oson_bot?start=premium')
+        setShowAiUpsell(true)
         return
       }
       setAiText(err instanceof TutorError && err.kind === 'quota'
@@ -117,8 +117,11 @@ export default function TestPage() {
     }
   }, [q, userId, settings?.language, tt])
 
+  const [showAiUpsell, setShowAiUpsell] = useState(false)
+
   const openAi = useCallback(() => {
-    if (!isPremium) { openTelegramLink('https://t.me/prava_oson_bot?start=premium'); return }
+    // Premium yo'q bo'lsa — botga YUBORILMAYDI; ilova ichida upsell modal ochiladi
+    if (!isPremium) { setShowAiUpsell(true); return }
     setShowAi(true)
     void startAiExplain()
   }, [isPremium, startAiExplain])
@@ -449,6 +452,37 @@ export default function TestPage() {
               <GraduationCap size={16} />
               {tt('openModule')}
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* AI Tutor PREMIUM upsell modali — premium yo'q foydalanuvchi uchun */}
+      {showAiUpsell && (
+        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowAiUpsell(false)}>
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
+            onClick={(e) => e.stopPropagation()}>
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+            <div className="flex flex-col items-center text-center">
+              <div className="w-14 h-14 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center mb-3">
+                <Crown size={26} className="text-duo-yellow" fill="currentColor" />
+              </div>
+              <p className="text-[17px] font-black text-fg">{tt('premiumNeedTitle')}</p>
+              <p className="text-[13px] text-muted mt-1.5 mb-4 leading-snug">{tt('premiumNeedDesc')}</p>
+              <button
+                onClick={() => {
+                  setShowAiUpsell(false)
+                  openTelegramLink('https://t.me/prava_oson_bot?start=premium')
+                }}
+                className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2 mb-2">
+                <Crown size={16} fill="currentColor" />
+                {tt('buyPremium')}
+              </button>
+              <button onClick={() => setShowAiUpsell(false)}
+                className="w-full py-3 rounded-2xl bg-elevated text-[13px] font-bold text-muted active:scale-[0.98] transition-transform">
+                {tt('cancel')}
+              </button>
+            </div>
           </div>
         </div>
       )}
