@@ -403,15 +403,47 @@ body[data-theme='dark'][data-accent='payme'] {
 
 /* ── LIGHT rejim + premium tema: atmosfera o'rniga FAQAT aksent rang ─────────
    (light fon saqlanadi; aksent kontrast uchun biroz to'qlashtirilgan) */
-body[data-theme='light'][data-accent='aurora']   { --p-primary: #00d389; --p-on-primary: #032118; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 211 137; }
-body[data-theme='light'][data-accent='violet']   { --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 168 85 247; }
-body[data-theme='light'][data-accent='ocean']    { --p-primary: #0ea5e9; --p-on-primary: #062033; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 14 165 233; }
-body[data-theme='light'][data-accent='forest']   { --p-primary: #10b981; --p-on-primary: #04291c; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 16 185 129; }
-body[data-theme='light'][data-accent='sunset']   { --p-primary: #f97316; --p-on-primary: #2a1200; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 249 115 22; }
+body[data-theme='light'][data-accent='aurora'] {
+  --p-primary: #00d389; --p-on-primary: #032118; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 211 137;
+  --p-canvas: #e6fcf3; --p-surface: #d3f7e8; --p-card: #ffffff; --p-line: #b8ecd6;
+  --theme-canvas: #e6fcf3; --theme-surface: #d3f7e8; --theme-elevated: #ffffff; --theme-line: #b8ecd6;
+}
+body[data-theme='light'][data-accent='violet'] {
+  --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 168 85 247;
+  --p-canvas: #f6efff; --p-surface: #efe3ff; --p-card: #ffffff; --p-line: #dcc8f7;
+  --theme-canvas: #f6efff; --theme-surface: #efe3ff; --theme-elevated: #ffffff; --theme-line: #dcc8f7;
+}
+body[data-theme='light'][data-accent='ocean'] {
+  --p-primary: #0ea5e9; --p-on-primary: #062033; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 14 165 233;
+  --p-canvas: #eaf6fe; --p-surface: #d9effd; --p-card: #ffffff; --p-line: #bde0f5;
+  --theme-canvas: #eaf6fe; --theme-surface: #d9effd; --theme-elevated: #ffffff; --theme-line: #bde0f5;
+}
+body[data-theme='light'][data-accent='forest'] {
+  --p-primary: #10b981; --p-on-primary: #04291c; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 16 185 129;
+  --p-canvas: #e9f7f0; --p-surface: #d7f0e3; --p-card: #ffffff; --p-line: #b8e2cd;
+  --theme-canvas: #e9f7f0; --theme-surface: #d7f0e3; --theme-elevated: #ffffff; --theme-line: #b8e2cd;
+}
+body[data-theme='light'][data-accent='sunset'] {
+  --p-primary: #f97316; --p-on-primary: #2a1200; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 249 115 22;
+  --p-canvas: #fdf1e7; --p-surface: #fce4cc; --p-card: #ffffff; --p-line: #f5d0a8;
+  --theme-canvas: #fdf1e7; --theme-surface: #fce4cc; --theme-elevated: #ffffff; --theme-line: #f5d0a8;
+}
 body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
-body[data-theme='light'][data-accent='obsidian'] { --p-primary: #27272a; --p-on-primary: #fafafa; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 39 39 42; }
-body[data-theme='light'][data-accent='gold']     { --p-primary: #eab308; --p-on-primary: #241a00; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 234 179 8; }
-body[data-theme='light'][data-accent='payme']    { --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 192 201; }
+body[data-theme='light'][data-accent='obsidian'] {
+  --p-primary: #27272a; --p-on-primary: #fafafa; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 39 39 42;
+  --p-canvas: #f4f4f5; --p-surface: #e9e9ec; --p-card: #ffffff; --p-line: #dcdce0;
+  --theme-canvas: #f4f4f5; --theme-surface: #e9e9ec; --theme-elevated: #ffffff; --theme-line: #dcdce0;
+}
+body[data-theme='light'][data-accent='gold'] {
+  --p-primary: #eab308; --p-on-primary: #241a00; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 234 179 8;
+  --p-canvas: #fdfaee; --p-surface: #fbf3d5; --p-card: #ffffff; --p-line: #f0e3ac;
+  --theme-canvas: #fdfaee; --theme-surface: #fbf3d5; --theme-elevated: #ffffff; --theme-line: #f0e3ac;
+}
+body[data-theme='light'][data-accent='payme'] {
+  --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 192 201;
+  --p-canvas: #e6fafb; --p-surface: #d4f4f6; --p-card: #ffffff; --p-line: #b3e8eb;
+  --theme-canvas: #e6fafb; --theme-surface: #d4f4f6; --theme-elevated: #ffffff; --theme-line: #b3e8eb;
+}
 
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
