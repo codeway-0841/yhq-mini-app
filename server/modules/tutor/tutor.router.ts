@@ -64,7 +64,9 @@ router.post(
     if (!q) throw new AppError(404, 'Question not found')
 
     const apiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse&key=${key}`,
+      // Model alias: `gemini-2.0-flash` kunlik kvotasi tugab qolishi mumkin —
+      // `flash-latest` har doim oxirgi flash modelga ishora qiladi
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse&key=${key}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
