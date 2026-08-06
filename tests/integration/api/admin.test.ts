@@ -116,6 +116,16 @@ describe('PUT /api/admin/questions/:id — tahrirlash', () => {
       .send({ ...VALID_QUESTION, userId: ADMIN_ID })
     expect(res.status).toBe(404)
   })
+
+  it('relative image path qabul qiladi (images/q001.jpg — seed formati)', async () => {
+    // Regression: zod .url() relative path'larni rad etardi — 146 ta rasmli
+    // savolni tahrirlab bo'lmas edi
+    const create = await request(app).post('/api/admin/questions')
+      .send({ ...VALID_QUESTION, image: 'images/q071.jpg', userId: ADMIN_ID })
+    expect(create.status).toBe(201)
+    const [row] = await db.select().from(questions).where(eq(questions.id, create.body.id))
+    expect(row.image).toBe('images/q071.jpg')
+  })
 })
 
 describe('DELETE /api/admin/questions/:id', () => {

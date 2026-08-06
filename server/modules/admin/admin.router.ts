@@ -37,7 +37,8 @@ const QuestionUpsert = z.object({
   optionsUz: OptionsSchema,
   optionsRu: OptionsSchema,
   correctAnswer: z.string().regex(/^[A-Z]\d+$/, { message: 'F1, F2, ... format' }),
-  image: z.string().url().nullable().optional(),
+  // Relative path (images/q071.jpg) ham, to'liq URL ham — seed formati relative
+  image: z.string().max(500).nullable().optional(),
   topicId: z.number().int().positive().nullable().optional(),
 }).refine((q) => {
   // Uzbek/Rus variant kalitlari bir xil bo'lishi shart
