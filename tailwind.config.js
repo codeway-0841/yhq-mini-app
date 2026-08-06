@@ -17,25 +17,26 @@ export default {
         lineStrong: 'var(--theme-line-strong)',
         shadow:     'var(--theme-shadow)',
 
-        // Duolingo palitasi (Oson Prava uslubi)
+        // v2 Premium palitasi (eski duo.* nomlar saqlangan — barcha sahifalar avtomatik yangilanadi;
+        // duo-green = AKSENT: premium temalar (Payme/Okean/...) bilan birga o'zgaradi)
         duo: {
-          green:  { DEFAULT: '#58cc02', dark: '#46a302' },
-          blue:   { DEFAULT: '#1cb0f6', dark: '#1899d6' },
-          red:    { DEFAULT: '#ff4b4b', dark: '#d93f3f' },
-          yellow: { DEFAULT: '#ffc800', dark: '#e5b400' },
-          orange: { DEFAULT: '#ff9600', dark: '#e59400' },
-          purple: { DEFAULT: '#ce82ff', dark: '#a85ed4' },
-          gray:   { DEFAULT: '#afaeb3', dark: '#64748b' },
+          green:  { DEFAULT: 'rgb(var(--p-primary-rgb) / <alpha-value>)', dark: 'color-mix(in srgb, var(--p-primary) 72%, #000)' },
+          blue:   { DEFAULT: '#3b82f6', dark: '#1d4ed8' },
+          red:    { DEFAULT: '#ef4444', dark: '#b91c1c' },
+          yellow: { DEFAULT: '#facc15', dark: '#ca8a04' },
+          orange: { DEFAULT: '#f59e0b', dark: '#b45309' },
+          purple: { DEFAULT: '#8b5cf6', dark: '#6d28d9' },
+          gray:   { DEFAULT: '#94a3b8', dark: '#64748b' },
         },
 
-        // v1.1 Neon Navy aksentlar (temadan mustaqil — glow uchun JS string ranglar)
+        // Neon aksentlar (glow uchun; green = aksent)
         neon: {
-          green:  '#58cc02',
-          blue:   '#38bdf8',
+          green:  'rgb(var(--p-primary-rgb) / <alpha-value>)',
+          blue:   '#3b82f6',
           purple: '#8b5cf6',
           violet: '#a78bfa',
-          red:    '#ff4b4b',
-          yellow: '#ffc800',
+          red:    '#ef4444',
+          yellow: '#facc15',
         },
 
         // Eski nomlar (backward-compat) — yangi kodda ishlatmang
@@ -62,7 +63,7 @@ export default {
         pgold:      'var(--p-gold)',
       },
       fontFamily: {
-        sans: ['Nunito', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
         display: ['Inter', 'SF Pro Display', '-apple-system', 'system-ui', 'sans-serif'],
       },
       borderRadius: {

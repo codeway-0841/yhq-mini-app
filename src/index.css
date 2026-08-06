@@ -9,32 +9,36 @@
    bog'langan — tema almashganda butun ilova avtomatik yangilanadi.
    NEON_* ranglar temadan mustaqil aksentlar (glow effektlar uchun). */
 :root {
-  --theme-canvas:      #070f1d;
-  --theme-surface:     #0b1626;
-  --theme-elevated:    #12203a;
-  --theme-fg:          #f2f7ff;
-  --theme-fg-muted:    #c3d0e6;
-  --theme-fg-subtle:   #8fa6c9;
-  --theme-line:        #1c2d4a;
-  --theme-line-strong: #2b4170;
-  --theme-shadow:      #0a1a33;
+  /* v2 — eski tokenlar premium palitraga MOSLASHTIRILDI.
+     Butun app shu o'zgaruvchilarga bog'langan → bir joydan yangilanadi. */
+  --theme-canvas:      #090e18;
+  --theme-surface:     #101827;
+  --theme-elevated:    #162132;
+  --theme-fg:          #ffffff;
+  --theme-fg-muted:    #94a3b8;
+  --theme-fg-subtle:   #64748b;
+  --theme-line:        #22314a;
+  --theme-line-strong: #2e4266;
+  --theme-shadow:      #0a1524;
 
-  /* ── Neon aksentlar (v1.1 mock'dan) ── */
-  --neon-green:   #58cc02;
-  --neon-blue:    #38bdf8;
+  /* ── Neon aksentlar — v2 palitra; yashil = aksent (premium temalar bilan almashadi) ── */
+  --neon-green:   var(--p-primary, #5be300);
+  /* RGB triplet — Tailwind opacity modifier (bg-duo-green/15 ...) uchun */
+  --p-primary-rgb: 91 227 0;
+  --neon-blue:    #3b82f6;
   --neon-purple:  #8b5cf6;
   --neon-violet:  #a78bfa;
-  --neon-red:     #ff4b4b;
-  --neon-yellow:  #ffc800;
+  --neon-red:     #ef4444;
+  --neon-yellow:  #facc15;
   --neon-glow-purple: rgba(139, 92, 246, 0.45);
-  --neon-glow-green:  rgba(88, 204, 2, 0.40);
-  --neon-glow-blue:   rgba(56, 189, 248, 0.40);
+  --neon-glow-green:  var(--p-glow, rgba(91, 227, 0, 0.38));
+  --neon-glow-blue:   rgba(59, 130, 246, 0.40);
 }
 
 body[data-theme='light'] {
-  --theme-canvas:      #f1f5f9;
+  --theme-canvas:      #f8fafc;
   --theme-surface:     #ffffff;
-  --theme-elevated:    #f8fafc;
+  --theme-elevated:    #f1f5f9;
   --theme-fg:          #0f172a;
   --theme-fg-muted:    #475569;
   --theme-fg-subtle:   #64748b;   /* light fonda #94a3b8 juda ochiq edi → kontrast kuchaytirildi */
@@ -54,7 +58,7 @@ html, body, #root {
   padding: 0;
   background: var(--theme-canvas);
   color: var(--theme-fg);
-  font-family: 'Nunito', system-ui, sans-serif;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   overscroll-behavior: none;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -78,15 +82,14 @@ body[data-no-animation='true'] .route-page { animation: none; }
 
 /* ══ v1.1 — Neon Navy komponent utilitilari ═════════════════════════════════ */
 
-/* Asosiy neon karta: chuqur fon + ingichka neon kontur + uzun glow */
+/* Asosiy karta (v2): elevated fon + ingichka kontur + yumshoq soya */
 .card-neon {
-  background: linear-gradient(180deg, #0d1b30 0%, #0b1626 100%);
+  background: var(--theme-elevated);
   border: 1px solid var(--theme-line);
   border-radius: 1.5rem;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 0 0 1px rgba(56, 189, 248, 0.06),
-    0 18px 40px rgba(2, 8, 23, 0.55);
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 10px 28px rgba(2, 6, 16, 0.30);
 }
 
 /* Glow soya: neon accent rakurslar (ring chart, ikon konteynerlar, CTA) */
@@ -94,23 +97,24 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .glow-green  { box-shadow: 0 0 22px 0 var(--neon-glow-green); }
 .glow-blue   { box-shadow: 0 0 22px 0 var(--neon-glow-blue); }
 
-/* Neon CTA tugma (mock'dagi "Boshlash"): gradient + pastki qattiq soya + glow */
+/* Neon CTA tugma (v2): tekis aksent + yumshoq glow (qattiq 3D soya yo'q) */
 .btn-neon {
-  background: linear-gradient(180deg, #6ee70b 0%, #58cc02 55%, #46a302 100%);
-  color: #0b2003;
-  font-weight: 900;
+  background: var(--neon-green);
+  color: var(--p-on-primary, #0a1a00);
+  font-weight: 800;
   border-radius: 1rem;
   box-shadow:
-    0 4px 0 0 #3f9202,
-    0 0 20px 0 rgba(88, 204, 2, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
-  transition: transform 0.06s ease, box-shadow 0.06s ease, filter 0.15s ease;
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 8px 22px rgba(2, 6, 16, 0.32),
+    0 0 16px var(--neon-glow-green);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
   user-select: none;
   touch-action: manipulation;
 }
 .btn-neon:active {
-  transform: translateY(4px);
-  box-shadow: 0 0 20px 0 rgba(88, 204, 2, 0.35), inset 0 1px 0 rgba(255,255,255,0.35);
+  transform: scale(0.97);
+  filter: brightness(0.94);
+  box-shadow: 0 3px 12px rgba(2, 6, 16, 0.28);
 }
 
 /* Neon progress chizig'i (rount bar / sarfi): yorug' capsula + glow */
@@ -123,15 +127,15 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .progress-neon > .fill {
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #58cc02, #8ae234);
-  box-shadow: 0 0 10px rgba(88, 204, 2, 0.55);
+  background: var(--neon-green);
+  box-shadow: 0 0 10px var(--neon-glow-green);
   transition: width 240ms ease-out;
 }
 
 /* Ring chart glow (circular progress) */
 .ring-glow { filter: drop-shadow(0 0 10px var(--neon-glow-purple)); }
 
-/* ── 3D "chunky" tugmalar (Duolingo uslubi) ──────────────────────────────────
+/* ── 3D tugmalar (v2: yumshatilgan — og'ir Duolingo soya 50% ga kamaytirildi) ──
    Pastki qattiq soya (box-shadow) + bosilganda siqilish.
    Foydalanish: <button class="btn-3d-green"> yoki custom rang bilan "btn-3d". */
 .btn-3d,
@@ -143,8 +147,8 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .btn-3d-purple,
 .btn-3d-ghost {
   --btn-3d-shadow: var(--theme-shadow);
-  box-shadow: 0 4px 0 0 var(--btn-3d-shadow);
-  transition: transform 0.06s ease, box-shadow 0.06s ease, filter 0.15s ease;
+  box-shadow: 0 2px 0 0 var(--btn-3d-shadow);
+  transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s ease;
   user-select: none;
   touch-action: manipulation;
 }
@@ -156,7 +160,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .btn-3d-orange:active,
 .btn-3d-purple:active,
 .btn-3d-ghost:active {
-  transform: translateY(4px);
+  transform: translateY(2px) scale(0.99);
   box-shadow: 0 0 0 0 var(--btn-3d-shadow);
 }
 .btn-3d:disabled,
@@ -171,23 +175,23 @@ body[data-no-animation='true'] .route-page { animation: none; }
   pointer-events: none;
 }
 
-.btn-3d-green  { background: #58cc02; --btn-3d-shadow: #46a302; color: #fff; }
-.btn-3d-blue   { background: #1cb0f6; --btn-3d-shadow: #1899d6; color: #fff; }
-.btn-3d-red    { background: #ff4b4b; --btn-3d-shadow: #d93f3f; color: #fff; }
-.btn-3d-yellow { background: #ffc800; --btn-3d-shadow: #e5b400; color: #713f12; }
-.btn-3d-orange { background: #ff9600; --btn-3d-shadow: #e59400; color: #fff; }
-.btn-3d-purple { background: #ce82ff; --btn-3d-shadow: #a85ed4; color: #fff; }
+.btn-3d-green  { background: var(--neon-green); --btn-3d-shadow: color-mix(in srgb, var(--neon-green) 72%, #000); color: var(--p-on-primary, #0a1a00); }
+.btn-3d-blue   { background: #3b82f6; --btn-3d-shadow: #1d4ed8; color: #fff; }
+.btn-3d-red    { background: #ef4444; --btn-3d-shadow: #b91c1c; color: #fff; }
+.btn-3d-yellow { background: #facc15; --btn-3d-shadow: #ca8a04; color: #241a00; }
+.btn-3d-orange { background: #f59e0b; --btn-3d-shadow: #b45309; color: #fff; }
+.btn-3d-purple { background: #8b5cf6; --btn-3d-shadow: #6d28d9; color: #fff; }
 .btn-3d-ghost  {
   background: var(--theme-surface);
   --btn-3d-shadow: var(--theme-shadow);
   color: var(--theme-fg);
-  border: 2px solid var(--theme-line);
+  border: 1px solid var(--theme-line);
 }
 
-/* Karta — elevated sirt, yumshoq pastki chiziq */
+/* Karta — elevated sirt, ingichka chiziq */
 .card-3d {
   background: var(--theme-elevated);
-  border: 2px solid var(--theme-line);
+  border: 1px solid var(--theme-line);
   border-radius: 1.25rem;
 }
 
@@ -301,11 +305,13 @@ body[data-theme='light'] {
 }
 
 /* ── Premium aksent temalari (Premium obunachilar uchun) ─────────────────── */
-body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(59, 130, 246, 0.42); }
-body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(139, 92, 246, 0.42); }
-body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.36); }
+/* ── Premium aksent temalari (Premium obunachilar uchun) ───────────────────
+   NEON GLOW FAQAT KIWI TEMASIDA — qolgan temalarda glow o'chiq (toza minimal). */
+body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 59 130 246; }
+body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 139 92 246; }
+body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 250 204 21; }
 /* Payme uslubi — rasmiy brend rangi #00c0c9 (payme.uz tile-color) */
-body[data-accent='payme']  { --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 192, 201, 0.40); }
+body[data-accent='payme']  { --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 0 192 201; }
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
 .glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }
@@ -344,7 +350,7 @@ body[data-theme='light'] .card-premium {
   font-weight: 600;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    0 10px 28px var(--p-glow),
+    0 10px 26px rgba(2, 6, 16, 0.32),
     0 0 18px var(--p-glow);
   transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
   user-select: none;
@@ -353,7 +359,7 @@ body[data-theme='light'] .card-premium {
 .btn-premium:active {
   transform: scale(0.97);
   filter: brightness(0.94);
-  box-shadow: 0 3px 12px var(--p-glow);
+  box-shadow: 0 3px 12px rgba(2, 6, 16, 0.28);
 }
 .btn-premium:disabled { opacity: 0.45; pointer-events: none; }
 
