@@ -235,7 +235,8 @@ export default function TestPage() {
     navigate('/test/1', { replace: true, state: location.state })
   }, [navigate, activeQuestions.length, location.state])
 
-  const handleFinishFromModal = useCallback(() => { setShowResults(false); navigate('/') }, [navigate])
+  // "Yakunlash" — dashboardga emas, test boshlangan sahifaga qaytaradi
+  const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
   // Exit confirm: first tap shows the warning, second tap within 3 s really exits
