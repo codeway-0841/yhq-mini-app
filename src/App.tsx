@@ -6,6 +6,7 @@ import { useSubjectStore } from './store/useSubjectStore'
 import { api } from './lib/api'
 import { track } from './lib/analytics'
 import PageLoader from './components/PageLoader'
+import { resolveAccent } from './config/themes'
 import SplashScreen from './features/onboarding/SplashScreen'
 import Onboarding from './features/onboarding/Onboarding'
 
@@ -119,6 +120,8 @@ function Layout() {
 function ThemeEffect() {
   const theme       = useAppStore((s) => s.settings.theme)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
+  const accent      = useAppStore((s) => s.accent)
+  const tariff      = useAppStore((s) => s.tariff)
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
@@ -129,6 +132,10 @@ function ThemeEffect() {
     }
     document.body.dataset.theme = theme
   }, [theme])
+  // Aksent temasi — Premium-only temalar free foydalanuvchida default'ga tushadi
+  useEffect(() => {
+    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium')
+  }, [accent, tariff])
   useEffect(() => {
     // noAnimation setting — route transitionlar ham o'chadi (index.css)
     document.body.dataset.noAnimation = String(noAnimation)

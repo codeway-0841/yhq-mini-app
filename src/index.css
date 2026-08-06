@@ -255,3 +255,192 @@ body[data-no-animation='true'] .route-page { animation: none; }
   50%      { transform: translateY(-10px); }
 }
 .onboarding-float { animation: onboardingFloat 3s ease-in-out infinite; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   v2 — KIWI PREMIUM DIZAYN TIZIMI
+   ─────────────────────────────────────────────────────────────────────────
+   Modern minimal · Apple HIG / Linear / Stripe uslubi.
+   Eski (--theme-*) tokenlarga TEGILMAYDI — yangi ekranlar faqat --p-* ishlatadi.
+   Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
+   kiwi (default, bepul) | ocean | violet | gold (premium). */
+:root {
+  --p-canvas:      #090e18;
+  --p-surface:     #101827;
+  --p-card:        #162132;
+  --p-line:        #22314a;
+
+  --p-fg:          #ffffff;
+  --p-muted:       #94a3b8;
+  --p-subtle:      #64748b;
+
+  /* Aksent (data-accent bilan almashadi) */
+  --p-primary:     #5be300;
+  --p-on-primary:  #0a1a00;
+  --p-glow:        rgba(91, 227, 0, 0.25);
+
+  /* Semantik + qo'shimcha aksentlar (temadan mustaqil) */
+  --p-success:     #22c55e;
+  --p-warning:     #f59e0b;
+  --p-danger:      #ef4444;
+  --p-purple:      #8b5cf6;
+  --p-blue:        #3b82f6;
+  --p-gold:        #facc15;
+}
+
+body[data-theme='light'] {
+  --p-canvas:      #f8fafc;
+  --p-surface:     #f1f5f9;
+  --p-card:        #ffffff;
+  --p-line:        #e2e8f0;
+
+  --p-fg:          #0f172a;
+  --p-muted:       #475569;
+  --p-subtle:      #94a3b8;
+
+  --p-glow:        rgba(91, 227, 0, 0.16);
+}
+
+/* ── Premium aksent temalari (Premium obunachilar uchun) ─────────────────── */
+body[data-accent='ocean']  { --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: rgba(59, 130, 246, 0.30); }
+body[data-accent='violet'] { --p-primary: #8b5cf6; --p-on-primary: #ffffff; --p-glow: rgba(139, 92, 246, 0.30); }
+body[data-accent='gold']   { --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.26); }
+
+/* ── Shrift: SF Pro / Inter (premium ekranlar) ───────────────────────────── */
+.font-display {
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* ── Premium karta: katta radius, juda ingichka border, yumshoq soya ─────── */
+.card-premium {
+  background: var(--p-card);
+  border: 1px solid var(--p-line);
+  border-radius: 24px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 10px 28px rgba(2, 6, 16, 0.30);
+}
+body[data-theme='light'] .card-premium {
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+/* ── KIWI tugma tizimi (Duolingo 3D EMAS — tekis, yumshoq glow) ──────────── */
+.btn-premium {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 58px;
+  padding: 0 24px;
+  border-radius: 18px;
+  background: var(--p-primary);
+  color: var(--p-on-primary);
+  font-weight: 600;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 10px 24px var(--p-glow);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  user-select: none;
+  touch-action: manipulation;
+}
+.btn-premium:active {
+  transform: scale(0.97);
+  filter: brightness(0.94);
+  box-shadow: 0 3px 10px var(--p-glow);
+}
+.btn-premium:disabled { opacity: 0.45; pointer-events: none; }
+
+/* Kichik CTA (kartalar ichida) */
+.btn-premium-sm {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+/* Secondary: to'q karta + ingichka border */
+.btn-premium-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: var(--p-card);
+  border: 1px solid var(--p-line);
+  color: var(--p-fg);
+  font-weight: 600;
+  transition: transform 0.12s ease, border-color 0.2s ease, background 0.2s ease;
+  user-select: none;
+  touch-action: manipulation;
+}
+.btn-premium-secondary:active { transform: scale(0.97); }
+
+/* Outline: shaffof + border */
+.btn-premium-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  padding: 0 22px;
+  border-radius: 16px;
+  background: transparent;
+  border: 1.5px solid var(--p-line);
+  color: var(--p-fg);
+  font-weight: 600;
+  transition: transform 0.12s ease, border-color 0.2s ease;
+}
+.btn-premium-outline:active { transform: scale(0.97); border-color: var(--p-fg); }
+
+/* AI tugma: purple glass */
+.btn-premium-ai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: rgba(139, 92, 246, 0.14);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: var(--p-purple);
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  transition: transform 0.12s ease, background 0.2s ease;
+}
+.btn-premium-ai:active { transform: scale(0.97); }
+
+/* Premium oltin CTA (obuna) */
+.btn-premium-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fde047 0%, #facc15 50%, #eab308 100%);
+  color: #241a00;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(250, 204, 21, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: transform 0.12s ease, filter 0.2s ease;
+}
+.btn-premium-gold:active { transform: scale(0.97); filter: brightness(0.96); }
+
+/* ── Progress chizig'i (premium) ─────────────────────────────────────────── */
+.progress-premium {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--p-line);
+  overflow: hidden;
+}
+body[data-theme='light'] .progress-premium { background: #e8eef5; }
+.progress-premium > .fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--p-primary);
+  transition: width 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Mikro-harakat: sahifa ichki kirish (spring'ga yaqin) ────────────────── */
+@keyframes premiumIn {
+  from { opacity: 0; transform: translateY(14px) scale(0.99); }
+  to   { opacity: 1; transform: none; }
+}
+.animate-premiumIn { animation: premiumIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+body[data-no-animation='true'] .animate-premiumIn { animation: none; }

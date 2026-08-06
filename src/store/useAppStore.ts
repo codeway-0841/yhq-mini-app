@@ -21,10 +21,14 @@ interface AppState {
   displayName:    string | null
   /** Foydalanuvchi yuklagan maxsus avatar (256px WebP data URL, lokal) */
   customAvatar:   string | null
+  /** Aksent temasi id (src/config/themes.ts). Lokal pref — serverga yuborilmaydi.
+   *  Premium temalar faqat App.tsx dagi resolveAccent orqali qo'llanadi. */
+  accent:         string
 
   setUser:        (user: ApiUser | null) => void
   setDisplayName: (name: string | null) => void
   setCustomAvatar: (avatar: string | null) => void
+  setAccent:      (accent: string) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
   addResult:      (correct: boolean, questionId?: number) => void
@@ -60,10 +64,12 @@ export const useAppStore = create<AppState>()(
       initialized:    false,
       displayName:    null,
       customAvatar:   null,
+      accent:         'kiwi',
 
       setUser: (user) => set({ user, tariff: user?.tariff ?? 'free' }),
       setDisplayName: (name) => set({ displayName: name?.trim() || null }),
       setCustomAvatar: (avatar) => set({ customAvatar: avatar || null }),
+      setAccent: (accent) => set({ accent }),
 
       updatePhone: async (phone) => {
         const userId = get().user?.id
@@ -204,6 +210,7 @@ export const useAppStore = create<AppState>()(
         displayName:    s.displayName,
         customAvatar:   s.customAvatar,
         tariff:         s.tariff,
+        accent:         s.accent,
       }),
     }
   )

@@ -7,6 +7,7 @@ import {
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
   ChevronDown, Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown,
+  Flame, Star, Trophy,
 } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
@@ -28,19 +29,18 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   return (
     <div className="relative flex-shrink-0">
       {src ? (
-        <img src={src} alt={name} className="w-11 h-11 rounded-full object-cover border-2 border-line" />
+        <img src={src} alt={name} className="w-11 h-11 rounded-full object-cover border border-pline" />
       ) : (
-        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
+        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-pblue to-ppurple flex items-center justify-center text-white font-bold text-lg">
           {letter}
         </div>
       )}
-      <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-duo-green rounded-full border-[2.5px] border-canvas animate-pulse" />
+      <span className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-psuccess rounded-full border-[2.5px] border-pcanvas" />
     </div>
   )
 })
 
-// ── Top Bar / Greeting Header (v1.1 Neon Navy) ─────────────────────────────
-// "Salom, {ism} 👋" + Level badge. O'lik Search tugmasi olib tashlandi.
+// ── Top Bar / Greeting Header (v2 KIWI Premium) ─────────────────────────────
 const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onProfile }: {
   user: ApiUser | null
   displayName: string | null
@@ -53,20 +53,22 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
   const name = displayName ?? user?.firstName ?? tt('guestName')
 
   return (
-    <div className="flex items-center justify-between px-4 pt-5 pb-3.5">
+    <div className="flex items-center justify-between px-5 pt-6 pb-4">
       <button onClick={onProfile} className="flex items-center gap-3 active:opacity-70 transition-opacity min-w-0">
         <Avatar name={name} photoUrl={user?.photoUrl} />
         <div className="text-left min-w-0">
-          <p className="text-[12px] font-semibold text-subtle">{tt('greeting')},</p>
-          <p className="text-[18px] font-black leading-tight text-fg truncate">{name} 👋</p>
+          <p className="text-[12px] font-medium text-psubtle">{tt('greeting')},</p>
+          <p className="text-[19px] font-bold leading-tight text-pfg tracking-tight truncate">{name}</p>
         </div>
       </button>
-      <div className="flex items-center gap-3">
-        <span className="glow-purple flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neon-purple/40 bg-neon-purple/10 text-neon-violet text-[11px] font-black">
-          🔮 {tt('level')} {level}
+      <div className="flex items-center gap-2.5">
+        {/* Level — AI purple glass pill */}
+        <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold text-ppurple"
+          style={{ background: 'rgba(139, 92, 246, 0.12)', border: '1px solid rgba(139, 92, 246, 0.30)' }}>
+          ✦ {tt('level')} {level}
         </span>
         <button onClick={onSettings} aria-label="Sozlamalar"
-          className="w-10 h-10 rounded-2xl card-neon flex items-center justify-center text-subtle hover:text-fg transition-colors active:scale-90">
+          className="w-11 h-11 rounded-2xl card-premium flex items-center justify-center text-pmuted hover:text-pfg transition-colors active:scale-95">
           <Settings size={18} />
         </button>
       </div>
@@ -74,7 +76,7 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
   )
 })
 
-// ── Bugungi progress karta (mock dizayn: yashil gradient + segment chiziq + ring) ──
+// ── Hero: bugungi progress (ring + minimal statistika) ──────────────────────
 const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
@@ -88,73 +90,54 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
   // Ring chart geometriyasi (SVG)
-  const R = 34, C = 2 * Math.PI * R
+  const R = 36, C = 2 * Math.PI * R
   const ringOffset = C * (1 - accuracy / 100)
 
-  // Segmentli chiziq (mock'dagi nuqtali progress)
-  const SEGMENTS = 10
-  const filledSegs = Math.round((accuracy / 100) * SEGMENTS)
-
   return (
-    <div className="mx-4 mb-3 rounded-3xl p-4 relative overflow-hidden border border-duo-green/50"
-      style={{
-        background: 'linear-gradient(135deg, #46a302 0%, #58cc02 45%, #2f8f05 100%)',
-        boxShadow: '0 0 30px rgba(88, 204, 2, 0.30), 0 18px 40px rgba(2, 8, 23, 0.45), inset 0 1px 0 rgba(255,255,255,0.20)',
-      }}>
-      <div className="flex items-center justify-between gap-3">
-        {/* Chap: foiz + segment chiziq */}
+    <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden">
+      <div className="flex items-center justify-between gap-4">
+        {/* Chap: foiz + ma'lumot */}
         <div className="flex-1 min-w-0">
-          <p className="text-[12px] font-bold text-white/75 mb-1">{tt('todayProgress')}</p>
-          <p className="text-[34px] font-black text-white leading-none drop-shadow-sm">{accuracy}%</p>
-          <p className="text-[11px] font-semibold text-white/70 mt-1 mb-2.5">
+          <p className="text-[12px] font-medium text-psubtle mb-1.5">{tt('todayProgress')}</p>
+          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">{accuracy}%</p>
+          <p className="text-[12px] font-medium text-pmuted mt-2">
             {totalAnswered} / {total || '…'} {tt('question').toLowerCase()}
           </p>
-          <div className="flex gap-1">
-            {Array.from({ length: SEGMENTS }).map((_, i) => (
-              <span key={i} className="h-2 flex-1 rounded-full"
-                style={{
-                  background: i < filledSegs ? '#b6ff4f' : 'rgba(10, 48, 0, 0.30)',
-                  boxShadow: i < filledSegs ? '0 0 8px rgba(182, 255, 79, 0.6)' : undefined,
-                }} />
-            ))}
-          </div>
         </div>
-        {/* O'ng: ring chart */}
-        {total > 0 && (
-          <svg width="92" height="92" viewBox="0 0 92 92" className="flex-shrink-0"
-            style={{ filter: 'drop-shadow(0 0 10px rgba(182, 255, 79, 0.5))' }}>
-            <circle cx="46" cy="46" r={R} fill="none" stroke="rgba(10, 48, 0, 0.30)" strokeWidth="8" />
-            <circle cx="46" cy="46" r={R} fill="none" stroke="#b6ff4f" strokeWidth="8"
-              strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
-              transform="rotate(-90 46 46)"
-              style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
-            <text x="46" y="51" textAnchor="middle" fill="#ffffff" fontSize="16" fontWeight="900">{accuracy}%</text>
-          </svg>
-        )}
+        {/* O'ng: ring chart (aksent rang) */}
+        <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0"
+          style={{ filter: 'drop-shadow(0 0 8px var(--p-glow))' }}>
+          <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-line)" strokeWidth="8" />
+          <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-primary)" strokeWidth="8"
+            strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
+            transform="rotate(-90 48 48)"
+            style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
+          <text x="48" y="53" textAnchor="middle" fill="var(--p-fg)" fontSize="17" fontWeight="700">{accuracy}%</text>
+        </svg>
       </div>
       {/* Pastki statistika: Seriya / XP / Reyting */}
-      <div className="flex items-center justify-around mt-3.5 pt-3 border-t border-white/15">
+      <div className="flex items-center justify-around mt-5 pt-4 border-t border-pline">
         {/* Streak — bosilsa "Intizom" sahifasi ochiladi */}
         <button onClick={() => navigate('/streak')} aria-label={tt('intizomTitle')}
-          className="flex items-center gap-1.5 active:scale-90 transition-transform">
-          <span className="text-base">🔥</span>
+          className="flex items-center gap-2 active:scale-95 transition-transform">
+          <Flame size={16} className="text-pwarning" fill="currentColor" />
           <div className="text-left">
-            <p className="text-sm font-black text-white leading-none">{streak} {tt('daysWord')}</p>
-            <p className="text-[10px] font-semibold text-white/70">{tt('streakDays')}</p>
+            <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{streak} {tt('daysWord')}</p>
+            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('streakDays')}</p>
           </div>
         </button>
-        <div className="flex items-center gap-1.5">
-          <span className="text-base">⭐</span>
+        <div className="flex items-center gap-2">
+          <Star size={16} className="text-pgold" fill="currentColor" />
           <div className="text-left">
-            <p className="text-sm font-black text-white leading-none">{xp} XP</p>
-            <p className="text-[10px] font-semibold text-white/70">{tt('totalXp')}</p>
+            <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{xp} XP</p>
+            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('totalXp')}</p>
           </div>
         </div>
-        <div className="flex items-center gap-1.5">
-          <span className="text-base">🏆</span>
+        <div className="flex items-center gap-2">
+          <Trophy size={16} className="text-pblue" />
           <div className="text-left">
-            <p className="text-sm font-black text-white leading-none">{league}</p>
-            <p className="text-[10px] font-semibold text-white/70">{tt('ratingWord')}</p>
+            <p className="text-[13px] font-semibold text-pfg leading-none">{league}</p>
+            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('ratingWord')}</p>
           </div>
         </div>
       </div>
@@ -162,8 +145,8 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   )
 })
 
-// ── Grid Card ───────────────────────────────────────────────────────────────
-const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--theme-fg-subtle)', onClick }: {
+// ── Grid Card (rejimlar) ────────────────────────────────────────────────────
+const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-muted)', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -173,23 +156,24 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
   return (
     <button
       onClick={onClick}
-      className="btn-3d-ghost relative flex items-center gap-2.5 rounded-2xl px-3 py-2.5 w-full"
+      className="btn-premium-secondary relative flex items-center gap-2.5 rounded-2xl px-3.5 py-3 w-full"
     >
       {badge != null && (
-        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+        <span className="absolute -top-2 -right-1 text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg"
+          style={{ background: 'var(--p-danger)' }}>
           {badge}
         </span>
       )}
       <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '26', boxShadow: `0 0 16px ${iconColor}59` }}>
+        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E` }}>
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
-      <span className="text-[12px] font-extrabold text-fg text-left leading-tight">{label}</span>
+      <span className="text-[12px] font-semibold text-pfg text-left leading-tight">{label}</span>
     </button>
   )
 })
 
-// ── Mock Grid Card (v1.1: glow icon + label + subtitle, mock usilobi) ───────
+// ── Asosiy grid kartasi (Testlar / Mavzular / AI Tutor ...) ────────────────
 const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor, badge, comingSoon, onClick }: {
   icon: React.ElementType
   label: string
@@ -202,26 +186,27 @@ const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, i
   return (
     <button
       onClick={onClick}
-      className={`card-neon relative flex flex-col items-center justify-center text-center gap-2 p-3 min-h-[96px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
+      className={`card-premium relative flex flex-col items-center justify-center text-center gap-2.5 p-3.5 min-h-[104px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
     >
       {badge != null && (
-        <span className="absolute -top-2 -right-1 bg-duo-red text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg shadow-red-500/30">
+        <span className="absolute -top-2 -right-1 text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg"
+          style={{ background: 'var(--p-danger)' }}>
           {badge}
         </span>
       )}
-      <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '26', boxShadow: `0 0 18px ${iconColor}66`, border: `1px solid ${iconColor}55` }}>
-        <Icon size={19} strokeWidth={2.2} style={{ color: iconColor }} />
+      <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E` }}>
+        <Icon size={20} strokeWidth={2} style={{ color: iconColor }} />
       </div>
       <div className="text-center">
-        <p className="text-[13px] font-black text-fg leading-tight">{label}</p>
-        <p className={`text-[10.5px] font-semibold mt-0.5 ${comingSoon ? 'text-neon-violet' : 'text-subtle'}`}>{subtitle}</p>
+        <p className="text-[13px] font-semibold text-pfg leading-tight">{label}</p>
+        <p className={`text-[10.5px] font-medium mt-0.5 ${comingSoon ? 'text-ppurple' : 'text-psubtle'}`}>{subtitle}</p>
       </div>
     </button>
   )
 })
 
-// ── Davom etayotgan mavzu kartasi (mock dizayn: navy karta + yashil CTA) ────
+// ── Davom etayotgan mavzu kartasi ───────────────────────────────────────────
 // Background rasm: faylni `public/continue-mavzu.webp` ga tashlasangiz kifoya —
 // karta unga avtomatik ulanadi (fayl bo'lmasa hech narsa buzilmaydi).
 const CONTINUE_BG_URL = '/continue-mavzu.webp'
@@ -236,9 +221,9 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
   const tt = useT(lang)
   const [bgOk, setBgOk] = useState(true)
   return (
-    <div className="px-4 mb-3">
+    <div className="px-5 mb-4">
       <button onClick={onContinue}
-        className="card-neon w-full relative overflow-hidden p-4 text-left active:scale-[0.99] transition-transform">
+        className="card-premium w-full relative overflow-hidden p-5 text-left active:scale-[0.98] transition-transform">
         {/* Background PNG (o'ng tomonda) — fayl yo'q bo'lsa yashirinadi */}
         {bgOk && (
           <img src={CONTINUE_BG_URL} alt="" aria-hidden
@@ -248,22 +233,22 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
         )}
         <div className="relative">
           {/* Sarlavha */}
-          <p className="text-[12px] font-semibold text-subtle">{tt('currentTopic')}</p>
+          <p className="text-[12px] font-medium text-psubtle">{tt('currentTopic')}</p>
           {/* Mavzu nomi — to'liq qatorda, kesilmaydi */}
-          <p className="text-[18px] font-black text-fg whitespace-normal break-words leading-snug mt-0.5 pr-16">
+          <p className="text-[18px] font-bold text-pfg tracking-tight whitespace-normal break-words leading-snug mt-1 pr-16">
             {modTitle}
           </p>
-          <p className="text-[11px] font-semibold text-subtle mt-1.5">
+          <p className="text-[12px] font-medium text-pmuted mt-1.5">
             {allDone ? tt('allDoneWord') : lessonLabel}
           </p>
-          {/* Progress bar + "Davom etish" — bir qatorda, taglari tekis */}
-          <div className="flex items-end gap-3 mt-2">
-            <div className="progress-neon flex-1 mb-[13px]">
+          {/* Progress bar + "Davom etish" — bir qatorda */}
+          <div className="flex items-center gap-3 mt-3.5">
+            <div className="progress-premium flex-1">
               <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
             </div>
-            <span className="btn-neon flex items-center gap-1.5 px-4 py-3 rounded-2xl text-[13px] flex-shrink-0">
+            <span className="btn-premium btn-premium-sm flex-shrink-0">
               {tt('continueLearn')}
-              <ChevronDown size={14} className="-rotate-90" />
+              <ChevronDown size={15} className="-rotate-90" />
             </span>
           </div>
         </div>
@@ -272,7 +257,7 @@ const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, progres
   )
 })
 
-// ── Leaderboard Preview (v1.1: top-3 + "Barchasi ›") ────────────────────────
+// ── Leaderboard Preview ─────────────────────────────────────────────────────
 const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userId }: {
   lang: 'uz' | 'ru'; onSeeAll: () => void; userId: string | undefined
 }) {
@@ -290,27 +275,28 @@ const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userId }: {
   if (entries.length === 0) return null
 
   return (
-    <div className="px-4 mb-3">
-      <div className="flex items-center justify-between mb-2">
-        <h3 className="text-[15px] font-black text-fg">{tt('leaderboard')}</h3>
-        <button onClick={onSeeAll} className="text-[12px] font-bold text-neon-green flex items-center gap-0.5 active:opacity-70">
+    <div className="px-5 mb-4">
+      <div className="flex items-center justify-between mb-2.5">
+        <h3 className="text-[15px] font-bold text-pfg tracking-tight">{tt('leaderboard')}</h3>
+        <button onClick={onSeeAll} className="text-[12px] font-semibold text-pprimary flex items-center gap-0.5 active:opacity-70">
           {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
         </button>
       </div>
-      <div className="card-neon divide-y divide-line/60">
+      <div className="card-premium divide-y divide-pline">
         {entries.map((e) => (
           <div key={e.rank}
-            className={`flex items-center gap-3 px-3.5 py-2.5 ${e.isYou ? 'bg-neon-green/5' : ''}`}>
+            className={`flex items-center gap-3 px-4 py-3 ${e.isYou ? 'bg-[color-mix(in_srgb,var(--p-primary)_6%,transparent)]' : ''}`}>
             <span className="w-5 text-center text-sm">
               {e.rank === 1 ? '🥇' : e.rank === 2 ? '🥈' : '🥉'}
             </span>
-            <div className="w-7 h-7 rounded-full bg-duo-blue/20 border border-duo-blue/30 flex items-center justify-center text-[11px] font-black text-duo-blue">
+            <div className="w-8 h-8 rounded-full flex items-center justify-center text-[11px] font-bold text-pblue"
+              style={{ background: 'rgba(59, 130, 246, 0.12)', border: '1px solid rgba(59, 130, 246, 0.25)' }}>
               {e.name[0]?.toUpperCase() ?? '?'}
             </div>
-            <span className={`flex-1 min-w-0 truncate text-[13px] font-bold ${e.isYou ? 'text-neon-green' : 'text-fg'}`}>
+            <span className={`flex-1 min-w-0 truncate text-[13px] font-semibold ${e.isYou ? 'text-pprimary' : 'text-pfg'}`}>
               {e.isYou ? `${e.name} (${lang === 'ru' ? 'Вы' : 'Siz'})` : e.name}
             </span>
-            <span className="text-[13px] font-black text-duo-green">{e.score}</span>
+            <span className="text-[13px] font-bold text-pfg tabular-nums">{e.score}</span>
           </div>
         ))}
       </div>
@@ -344,18 +330,13 @@ function useCountdown() {
 const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
-    <div className="mx-4 mb-3 rounded-2xl relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
-      style={{ background: 'linear-gradient(135deg, #ff4b4b, #d93f3f)' }}>
-      <div className="absolute right-2 top-1/2 -translate-y-1/2 opacity-[0.12]">
-        <svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-          <path d="M12 23a7 7 0 0 1-7-7c0-3 2-5 3.5-7.5S12 3 12 1c0 0 4 3 6.5 7.5S22 13 22 16a7 7 0 0 1-7 7h-3z" />
-        </svg>
-      </div>
+    <div className="mx-5 mb-4 card-premium rounded-[24px] relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
+      style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
       <div className="relative z-10 p-4 flex items-center justify-between">
-        <p className="text-white text-[13px] font-bold leading-snug max-w-[55%]">
+        <p className="text-pfg text-[13px] font-semibold leading-snug max-w-[55%]">
           {text}
         </p>
-        <span className="text-white text-[28px] font-black tracking-wider tabular-nums"
+        <span className="text-pdanger text-[28px] font-bold tracking-wider tabular-nums"
           style={{ fontVariantNumeric: 'tabular-nums' }}>
           {countdown}
         </span>
@@ -364,7 +345,7 @@ const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   )
 })
 
-// ── Subject Switcher — mock dizayn: navy karta + fan ikoni + testlar soni ──
+// ── Subject Switcher — fan nomi + testlar soni + almashtirish ──────────────
 // Fan rasmlari: `public/fan-{subjectId}.webp` (masalan, fan-matematika.webp) —
 // fayl mavjud bo'lsa o'ng tomonda ko'rinadi, bo'lmasa watermark ikon qoladi.
 const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
@@ -377,8 +358,8 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
   useEffect(() => setImgOk(true), [subject.id]) // fan almashganda qayta urinib ko'rish
   const imgUrl = `/fan-${subject.id}.webp`
   return (
-    <div className="px-4 mb-2.5">
-      <div className="card-neon relative overflow-hidden p-4">
+    <div className="px-5 mb-3">
+      <div className="card-premium relative overflow-hidden p-5">
         {/* O'ng taraf: fan rasmi (masalan, Matematika Σ) — karta ichida to'liq sig'adi */}
         {imgOk && (
           <img src={imgUrl} alt="" aria-hidden
@@ -387,22 +368,22 @@ const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () =
         )}
         {/* Rasm bo'lmasa: dekorativ watermark ikon */}
         {!imgOk && (
-          <Icon size={110} strokeWidth={1.2} aria-hidden
-            className="absolute -right-4 -bottom-6 opacity-[0.08] pointer-events-none"
+          <Icon size={110} strokeWidth={1} aria-hidden
+            className="absolute -right-4 -bottom-6 opacity-[0.07] pointer-events-none"
             style={{ color: subject.color }} />
         )}
         <div className="relative">
-          <p className="text-[20px] font-black text-fg leading-tight truncate pr-24">
+          <p className="text-[21px] font-bold text-pfg tracking-tight leading-tight truncate pr-24">
             {lang === 'ru' ? subject.nameRu : subject.name}
           </p>
-          <p className="text-[12px] font-semibold text-subtle mt-0.5">
+          <p className="text-[12px] font-medium text-psubtle mt-1">
             {count > 0 ? count.toLocaleString('en-US') : '…'} {tt('testsWord')}
           </p>
           <button onClick={onOpen}
-            className="mt-2.5 flex items-center gap-1 rounded-full border border-line bg-elevated px-3.5 py-1.5 text-[12px] font-bold text-fg active:scale-95 transition-transform"
+            className="btn-premium-secondary mt-3.5 rounded-full px-4 py-2 text-[12px]"
             aria-label={tt('switchSubject')}>
             {tt('switchSubject')}
-            <ChevronDown size={14} className="-rotate-90 text-subtle" />
+            <ChevronDown size={14} className="-rotate-90 text-psubtle" />
           </button>
         </div>
       </div>
@@ -416,22 +397,22 @@ const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch: () => 
   const lang    = useAppStore((s) => s.settings.language)
   const Icon    = subject.icon
   return (
-    <div className="mx-4 mt-6 rounded-3xl border-2 border-dashed border-line p-8 flex flex-col items-center text-center">
+    <div className="mx-5 mt-6 rounded-[28px] border border-dashed border-pline p-8 flex flex-col items-center text-center">
       <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4"
-        style={{ background: `${subject.color}26`, color: subject.color }}>
+        style={{ background: `${subject.color}1A`, border: `1px solid ${subject.color}2E`, color: subject.color }}>
         <Icon size={32} />
       </div>
-      <h3 className="text-[17px] font-black text-fg">
+      <h3 className="text-[17px] font-bold text-pfg tracking-tight">
         {lang === 'ru' ? subject.nameRu : subject.name}
       </h3>
-      <p className="text-[13px] font-semibold text-muted mt-1.5 max-w-[240px]">
+      <p className="text-[13px] font-medium text-psubtle mt-1.5 max-w-[240px]">
         {lang === 'ru'
           ? 'Этот предмет скоро будет доступен. Следите за обновлениями!'
           : "Bu fan tez kunda qo'shiladi. Yangilanishlarni kuzatib boring!"}
       </p>
       <button onClick={onSwitch}
-        className="btn-3d-green mt-5 px-6 py-3 rounded-2xl text-[14px] font-extrabold flex items-center gap-2">
-        <Sparkles size={17} />
+        className="btn-premium btn-premium-sm mt-5">
+        <Sparkles size={16} />
         {lang === 'ru' ? 'Выбрать другой предмет' : 'Boshqa fan tanlash'}
       </button>
     </div>
@@ -528,8 +509,8 @@ export default function Dashboard() {
   }, [savedQuestions, settings.language, navigate, tt, showToast])
 
   return (
-    <div className="pb-6 safe-bottom">
-      {/* Top bar / Greeting Header (v1.1) */}
+    <div className="font-display min-h-screen bg-pcanvas pb-6 safe-bottom">
+      {/* Top bar / Greeting Header */}
       <TopBar user={user} displayName={displayName}
         level={Math.floor(totalCorrect / 50) + 1}
         onSettings={() => setShowSettings(true)} onProfile={goProfile} />
@@ -540,12 +521,13 @@ export default function Dashboard() {
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
           key=subjectId: fan almashganda smooth fade transition, reload yo'q */}
       {subject.available ? (
-        <div key={subject.id} className="animate-fadeIn">
+        <div key={subject.id} className="animate-premiumIn">
           {/* Demo ma'lumotlar badge — boshqa fanga vaqtincha YHQ bazasi ulangan */}
           {subject.demoData && (
-            <div className="mx-4 mb-2.5 rounded-2xl border border-duo-yellow/40 bg-duo-yellow/10 px-3.5 py-2.5 flex items-center gap-2">
-              <Sparkles size={15} className="text-duo-yellow flex-shrink-0" />
-              <span className="text-[12px] font-bold text-duo-yellow">
+            <div className="mx-5 mb-3 rounded-2xl px-4 py-3 flex items-center gap-2"
+              style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
+              <Sparkles size={15} className="text-pwarning flex-shrink-0" />
+              <span className="text-[12px] font-semibold text-pwarning">
                 {settings.language === 'ru'
                   ? 'Временные демо-данные — база этого предмета скоро будет подключена'
                   : "Vaqtinchalik demo ma'lumotlar — bu fanning bazasi tez orada ulanadi"}
@@ -553,7 +535,7 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* Progress card (v1.1 neon ring) */}
+          {/* Hero: bugungi progress (ring chart) */}
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
@@ -564,19 +546,20 @@ export default function Dashboard() {
           />
 
       {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
-         (kamida 1 savol yoki dars) yoziladi: ProgressCard🔥 → /streak */}
+         (kamida 1 savol yoki dars) yoziladi: ProgressCard → /streak */}
 
-      {/* Premium fake-door (1 haftalik sinov: premium_click KPI o'lchanadi) */}
-      <div className="mx-4 mb-3 card-neon p-3.5 flex items-center gap-3">
-        <div className="glow-purple w-10 h-10 rounded-xl bg-neon-purple/15 border border-neon-purple/40 flex items-center justify-center flex-shrink-0">
-          <Crown size={19} className="text-neon-violet" />
+      {/* Premium banner (oltin aksent) — premium_click KPI o'lchanadi */}
+      <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
+        <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+          style={{ background: 'rgba(250, 204, 21, 0.12)', border: '1px solid rgba(250, 204, 21, 0.30)' }}>
+          <Crown size={19} className="text-pgold" />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-[13px] font-black text-fg">Premium ✨</p>
-          <p className="text-[11px] text-subtle">{tt('premiumTagline')}</p>
+          <p className="text-[13px] font-bold text-pfg">Premium</p>
+          <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
         </div>
         <button onClick={() => { track('premium_click'); showToast(tt('comingSoonD')) }}
-          className="btn-neon px-4 py-2 rounded-xl text-[12px]">
+          className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
           {tt('tryWord')}
         </button>
       </div>
@@ -591,37 +574,37 @@ export default function Dashboard() {
         onContinue={continueInfo.go}
       />
 
-      {/* v1.1 MOCK GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
-      <div className="grid grid-cols-3 gap-2.5 px-4 mb-3">
+      {/* ASOSIY GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
+      <div className="grid grid-cols-3 gap-3 px-5 mb-4">
         <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
           subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
-          iconColor="#58cc02" onClick={() => navigate('/testlar')} />
+          iconColor="#5be300" onClick={() => navigate('/testlar')} />
         <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
-          iconColor="#38bdf8" onClick={goTopics} />
+          iconColor="#3b82f6" onClick={goTopics} />
         <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
           iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
         <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
-          iconColor="#ff4b4b" badge={mistakesCount || null} onClick={goMistakes} />
+          iconColor="#ef4444" badge={mistakesCount || null} onClick={goMistakes} />
         <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
-          iconColor="#ffc800" onClick={() => navigate('/biletlar')} />
+          iconColor="#facc15" onClick={() => navigate('/biletlar')} />
         <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
-          iconColor="#38bdf8" onClick={goOctagon} />
+          iconColor="#3b82f6" onClick={goOctagon} />
       </div>
 
       {/* Rejimlar (funksiyalar saqlangan) */}
-      <div className="px-4 mb-1.5">
-        <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em]">{tt('modesTitle')}</p>
+      <div className="px-5 mb-2">
+        <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 px-4 mb-3">
-        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ff4b4b" onClick={goMode('tricky', tt('distracting'))} />
-        <GridCard icon={GraduationCap} label={tt('lessons')}     iconColor="#1cb0f6" onClick={goDarslik} />
-        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#ffc800" badge={savedQuestions.length || null} onClick={goSaved} />
-        <GridCard icon={Signpost}      label={tt('roadSigns')}   iconColor="#38bdf8" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label={tt('numeric')}     iconColor="#ce82ff" onClick={goMode('numeric', tt('numeric'))} />
-        <GridCard icon={Play}          label={tt('adaptive')}    iconColor="#a78bfa" onClick={goAdaptive} />
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
+        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ef4444" onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={GraduationCap} label={tt('lessons')}     iconColor="#3b82f6" onClick={goDarslik} />
+        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#facc15" badge={savedQuestions.length || null} onClick={goSaved} />
+        <GridCard icon={Signpost}      label={tt('roadSigns')}   iconColor="#3b82f6" onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Hash}          label={tt('numeric')}     iconColor="#8b5cf6" onClick={goMode('numeric', tt('numeric'))} />
+        <GridCard icon={Play}          label={tt('adaptive')}    iconColor="#22c55e" onClick={goAdaptive} />
       </div>
 
-      {/* Reyting top-3 preview (v1.1) */}
+      {/* Reyting top-3 preview */}
       <LeaguePreview
         lang={settings.language}
         userId={user?.id}
@@ -637,8 +620,8 @@ export default function Dashboard() {
 
       {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-elevated border-2 border-line text-fg text-xs font-bold px-4 py-3 rounded-2xl text-center z-40 shadow-xl animate-fadeIn">
-          ⚠️ {toast}
+        <div className="fixed bottom-20 left-5 right-5 card-premium text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-40 animate-premiumIn">
+          {toast}
         </div>
       )}
 

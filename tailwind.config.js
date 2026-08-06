@@ -42,9 +42,28 @@ export default {
         bg:      'var(--theme-canvas)',
         border:  'var(--theme-line)',
         accent:  '#1cb0f6',
+
+        // v2 KIWI Premium tokenlari (--p-* CSS o'zgaruvchilariga bog'langan;
+        // aksent body[data-accent] orqali almashadi — opacity modifier ISHLAMAYDI)
+        pcanvas:    'var(--p-canvas)',
+        psurface:   'var(--p-surface)',
+        pcard:      'var(--p-card)',
+        pline:      'var(--p-line)',
+        pfg:        'var(--p-fg)',
+        pmuted:     'var(--p-muted)',
+        psubtle:    'var(--p-subtle)',
+        pprimary:   'var(--p-primary)',
+        ponprimary: 'var(--p-on-primary)',
+        psuccess:   'var(--p-success)',
+        pwarning:   'var(--p-warning)',
+        pdanger:    'var(--p-danger)',
+        ppurple:    'var(--p-purple)',
+        pblue:      'var(--p-blue)',
+        pgold:      'var(--p-gold)',
       },
       fontFamily: {
         sans: ['Nunito', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'SF Pro Display', '-apple-system', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         '2xl': '1.5rem',

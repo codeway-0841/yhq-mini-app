@@ -1,0 +1,72 @@
+/**
+ * Accent themes consistency — src/config/themes.ts ↔ src/index.css sinxronligi.
+ *
+ * Premium aksent temalar free foydalanuvchiga "yopishib qolmasligi" kerak:
+ * resolveAccent free user'ni har doim DEFAULT_ACCENT'ga qaytaradi.
+ */
+import { describe, it, expect } from 'vitest'
+import { readFileSync } from 'node:fs'
+import { resolve } from 'node:path'
+import {
+  ACCENT_THEMES,
+  DEFAULT_ACCENT,
+  getAccentTheme,
+  resolveAccent,
+} from '../../../src/config/themes'
+
+describe('config/themes — data integrity', () => {
+  it("barcha id'lar unikal", () => {
+    const ids = ACCENT_THEMES.map((t) => t.id)
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
+  it('DEFAULT_ACCENT roʻyxatda mavjud va premium EMAS', () => {
+    const def = ACCENT_THEMES.find((t) => t.id === DEFAULT_ACCENT)
+    expect(def).toBeDefined()
+    expect(def!.premium).toBe(false)
+  })
+
+  it('barcha temalarda toʻgʻri hex rang va i18n label', () => {
+    for (const t of ACCENT_THEMES) {
+      expect(t.color).toMatch(/^#[0-9a-f]{6}$/i)
+      expect(t.label.uz.trim()).not.toBe('')
+      expect(t.label.ru.trim()).not.toBe('')
+    }
+  })
+
+  it('har bir tema uchun index.css da data-accent bloki bor (default kiwi bundan mustasno)', () => {
+    const css = readFileSync(resolve(__dirname, '../../../src/index.css'), 'utf8')
+    for (const t of ACCENT_THEMES) {
+      if (t.id === DEFAULT_ACCENT) continue
+      expect(css).toContain(`body[data-accent='${t.id}']`)
+    }
+  })
+})
+
+describe('resolveAccent — premium gating', () => {
+  it('free foydalanuvchi default temani oladi', () => {
+    expect(resolveAccent(DEFAULT_ACCENT, false)).toBe(DEFAULT_ACCENT)
+    expect(resolveAccent(DEFAULT_ACCENT, true)).toBe(DEFAULT_ACCENT)
+  })
+
+  it('premium obunachi premium temani tanlay oladi', () => {
+    for (const t of ACCENT_THEMES.filter((x) => x.premium)) {
+      expect(resolveAccent(t.id, true)).toBe(t.id)
+    }
+  })
+
+  it('free foydalanuvchi premium tema tanlasa — defaultGA QAYTADI', () => {
+    for (const t of ACCENT_THEMES.filter((x) => x.premium)) {
+      expect(resolveAccent(t.id, false)).toBe(DEFAULT_ACCENT)
+    }
+  })
+
+  it("noma'lum id — birinchi (default) temaga fallback", () => {
+    expect(resolveAccent('nonexistent', true)).toBe(ACCENT_THEMES[0].id)
+    expect(resolveAccent('', false)).toBe(ACCENT_THEMES[0].id)
+  })
+
+  it('getAccentTheme nomaʼlum idʼda birinchi temani qaytaradi', () => {
+    expect(getAccentTheme('???').id).toBe(ACCENT_THEMES[0].id)
+  })
+})

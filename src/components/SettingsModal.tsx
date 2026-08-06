@@ -1,16 +1,17 @@
 import { useState, type ReactNode } from 'react'
 import {
-  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight,
+  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../lib/telegram'
 import { useT } from '../lib/i18n'
+import { ACCENT_THEMES, getAccentTheme } from '../config/themes'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 
 type LucideIcon = typeof Play
-type PickerKey = 'fontSize' | 'fontStyle' | 'language' | null
+type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv */
 function Row({ icon: Icon, iconColor, label, children }: {
@@ -33,6 +34,9 @@ function Row({ icon: Icon, iconColor, label, children }: {
 
 export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const { settings, updateSettings } = useAppStore()
+  const accent     = useAppStore((s) => s.accent)
+  const setAccent  = useAppStore((s) => s.setAccent)
+  const isPremium  = useAppStore((s) => s.tariff === 'premium')
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
   const [picker, setPicker] = useState<PickerKey>(null)
   const tt = useT(local.language)
@@ -104,6 +108,19 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             </Row>
           </button>
 
+          {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
+          <button className="w-full text-left" onClick={() => setPicker('accent')}>
+            <Row icon={Palette} iconColor="#5be300" label={tt('accentThemeLabel')}>
+              <span className={valueBtn}>
+                <span className="w-4 h-4 rounded-full border border-line"
+                  style={{ background: getAccentTheme(accent).color }} />
+                {getAccentTheme(accent).label[local.language]}
+                {!isPremium && <Crown size={12} className="text-pgold" />}
+                <ChevronRight size={14} />
+              </span>
+            </Row>
+          </button>
+
           <button
             onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
             className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
@@ -166,6 +183,59 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             { value: 'ru', label: tt('ruLang') },
           ]}
         />
+      )}
+
+      {/* Aksent temasi sheet'i — premium temalar 🔒 */}
+      {picker === 'accent' && (
+        <div className="fixed inset-0 z-50 flex items-end">
+          <div className="absolute inset-0 bg-black/60" onClick={() => setPicker(null)} />
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
+            <p className="flex items-center justify-center gap-2 text-base font-black mb-1">
+              <Palette size={18} className="text-neon-green" />
+              {tt('accentThemeLabel')}
+            </p>
+            <p className="text-center text-[11px] text-muted mb-5">{tt('accentThemeDesc')}</p>
+            <div className="flex flex-col gap-3">
+              {ACCENT_THEMES.map((theme) => {
+                const selected = theme.id === accent
+                const locked   = theme.premium && !isPremium
+                return (
+                  <button
+                    key={theme.id}
+                    onClick={() => {
+                      if (locked) {
+                        setPicker(null)
+                        onClose()
+                        openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
+                        return
+                      }
+                      setAccent(theme.id)
+                      setPicker(null)
+                    }}
+                    className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+                      selected ? 'border-duo-green bg-duo-green/15' : 'border-line bg-canvas'
+                    }`}
+                  >
+                    <span className="w-10 h-10 rounded-full flex-none border-2 border-white/10"
+                      style={{ background: theme.color }} />
+                    <div className="flex-1 min-w-0">
+                      <p className={`text-sm font-bold ${selected ? 'text-white' : 'text-fg'}`}>
+                        {theme.label[local.language]}
+                      </p>
+                      {locked && (
+                        <p className="text-[11px] text-duo-yellow font-semibold mt-0.5 flex items-center gap-1">
+                          <Crown size={11} fill="currentColor" /> {tt('premiumThemesHint')}
+                        </p>
+                      )}
+                    </div>
+                    {selected && <Check size={18} className="text-duo-green flex-none" />}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        </div>
       )}
     </div>
   )
