@@ -30,13 +30,15 @@ export default function AdminPage() {
   const findRaw = useCallback((id: number): DbQuestion | null =>
     getRawQuestions().find((r) => r.id === id) ?? null, [])
 
-  // Kirishni tekshirish + store yuklash (Admin mustaqil ochilsa store bo'sh bo'ladi)
+  // Kirishni tekshirish + store'ni QAT'IY yangilash.
+  // load() deyish mumkin emas — u "allaqachon yuklangan" bo'lsa early-return
+  // qiladi va CRUD'dan keyingi yangi savollar (masalan #301) ko'rinmay qoladi!
   useEffect(() => {
     if (!user?.isAdmin) {
       navigate('/profil', { replace: true })
       return
     }
-    void useQuestionsStore.getState().load(lang)
+    void useQuestionsStore.getState().reload()
     void api.getQuestionsMeta()
       .then(setMeta)
       .catch(() => setMeta({ total: 0, withTopic: 0 }))
