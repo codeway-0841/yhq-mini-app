@@ -285,7 +285,8 @@ const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userId }: {
     <div className="px-5 mb-4">
       <div className="flex items-center justify-between mb-2.5">
         <h3 className="text-[15px] font-bold text-pfg tracking-tight">{tt('leaderboard')}</h3>
-        <button onClick={onSeeAll} className="text-[12px] font-semibold text-pprimary flex items-center gap-0.5 active:opacity-70">
+        <button onClick={onSeeAll} className="text-[12px] font-semibold flex items-center gap-0.5 active:opacity-70"
+          style={{ color: 'var(--p-link)' }}>
           {tt('seeAll')} <ChevronDown size={14} className="-rotate-90" />
         </button>
       </div>
@@ -555,22 +556,18 @@ export default function Dashboard() {
       {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
          (kamida 1 savol yoki dars) yoziladi: ProgressCard → /streak */}
 
-      {/* Premium banner (binafsha = AI/Premium/Magic) — premium_click KPI o'lchanadi */}
+      {/* Premium banner (oltin = Premium semantikasi) — premium_click KPI o'lchanadi */}
       <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
         <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-          style={{
-            background: 'rgba(139, 92, 246, 0.12)',
-            border: '1px solid rgba(139, 92, 246, 0.30)',
-            boxShadow: '0 0 20px rgba(139, 92, 246, 0.30)',
-          }}>
-          <Crown size={19} className="text-ppurple" />
+          style={{ background: 'rgba(250, 204, 21, 0.12)', border: '1px solid rgba(250, 204, 21, 0.30)' }}>
+          <Crown size={19} className="text-pgold" />
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-[13px] font-bold text-pfg">Premium</p>
           <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
         </div>
         <button onClick={() => { track('premium_click'); showToast(tt('comingSoonD')) }}
-          className="btn-premium-ai px-4 py-2.5 rounded-xl text-[12px]">
+          className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
           {tt('tryWord')}
         </button>
       </div>

@@ -9,17 +9,17 @@
    bog'langan — tema almashganda butun ilova avtomatik yangilanadi.
    NEON_* ranglar temadan mustaqil aksentlar (glow effektlar uchun). */
 :root {
-  /* v2 — eski tokenlar premium palitraga MOSLASHTIRILDI.
-     Butun app shu o'zgaruvchilarga bog'langan → bir joydan yangilanadi. */
-  --theme-canvas:      #090e18;
-  --theme-surface:     #101827;
-  --theme-elevated:    #162132;
-  --theme-fg:          #ffffff;
-  --theme-fg-muted:    #94a3b8;
-  --theme-fg-subtle:   #64748b;
-  --theme-line:        #22314a;
-  --theme-line-strong: #2e4266;
-  --theme-shadow:      #0a1524;
+  /* v2.2 — semantik matn darajalari + Apple/Linear surface'lar.
+     fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary (darhaqiqat semantic). */
+  --theme-canvas:      #0b1120;
+  --theme-surface:     #1e293b;
+  --theme-elevated:    #111827;
+  --theme-fg:          #f8fafc;
+  --theme-fg-muted:    #cbd5e1;
+  --theme-fg-subtle:   #94a3b8;
+  --theme-line:        rgba(255, 255, 255, 0.08);
+  --theme-line-strong: rgba(255, 255, 255, 0.16);
+  --theme-shadow:      #000000;
 
   /* ── Neon aksentlar — v2 palitra; yashil = aksent (premium temalar bilan almashadi) ── */
   --neon-green:   var(--p-primary, #5be300);
@@ -37,11 +37,11 @@
 
 body[data-theme='light'] {
   --theme-canvas:      #f8fafc;
-  --theme-surface:     #ffffff;
-  --theme-elevated:    #f1f5f9;
+  --theme-surface:     #f1f5f9;
+  --theme-elevated:    #ffffff;
   --theme-fg:          #0f172a;
   --theme-fg-muted:    #475569;
-  --theme-fg-subtle:   #64748b;   /* light fonda #94a3b8 juda ochiq edi → kontrast kuchaytirildi */
+  --theme-fg-subtle:   #64748b;
   --theme-line:        #e2e8f0;
   --theme-line-strong: #cbd5e1;
   --theme-shadow:      #cbd5e1;
@@ -97,25 +97,24 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .glow-green  { box-shadow: 0 0 22px 0 var(--neon-glow-green); }
 .glow-blue   { box-shadow: 0 0 22px 0 var(--neon-glow-blue); }
 
-/* Neon CTA tugma (v2): tekis aksent + yumshoq glow (qattiq 3D soya yo'q) */
+/* Neon CTA tugma (v2.2): gradient aksent + yumshoq soya (qattiq 3D soya yo'q) */
 .btn-neon {
-  background: var(--neon-green);
+  background: linear-gradient(135deg, var(--neon-green), color-mix(in srgb, var(--neon-green) 80%, #000));
   color: var(--p-on-primary, #0a1a00);
   font-weight: 800;
   border-radius: 1rem;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    0 8px 22px rgba(2, 6, 16, 0.32),
-    0 0 16px var(--neon-glow-green);
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 10px 30px rgb(var(--p-primary-rgb, 91 227 0) / 0.22);
   transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease,
               background-color 0.3s ease;
   user-select: none;
   touch-action: manipulation;
 }
+.btn-neon:hover { filter: brightness(1.08); }
 .btn-neon:active {
   transform: scale(0.97);
-  filter: brightness(0.94);
-  box-shadow: 0 3px 12px rgba(2, 6, 16, 0.28);
+  filter: brightness(0.90);
 }
 
 /* Neon progress chizig'i (rount bar / sarfi): yorug' capsula + glow */
@@ -269,14 +268,17 @@ body[data-no-animation='true'] .route-page { animation: none; }
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  --p-canvas:      #090e18;
-  --p-surface:     #101827;
-  --p-card:        #162132;
-  --p-line:        #22314a;
+  /* v2.2 semantik surface + matn (Apple/Linear/Stripe darajasi) */
+  --p-canvas:      #0b1120;
+  --p-card:        #111827;
+  --p-surface:     #1e293b;
+  --p-line:        rgba(255, 255, 255, 0.08);
 
-  --p-fg:          #ffffff;
-  --p-muted:       #94a3b8;
-  --p-subtle:      #64748b;
+  --p-fg:          #f8fafc;   /* Primary text */
+  --p-muted:       #cbd5e1;   /* Secondary text */
+  --p-subtle:      #94a3b8;   /* Tertiary text */
+  --p-disabled:    #64748b;   /* Disabled text */
+  --p-link:        #a78bfa;   /* Link (to'q rejim) */
 
   /* Aksent (data-accent bilan almashadi) */
   --p-primary:     #5be300;
@@ -294,13 +296,15 @@ body[data-no-animation='true'] .route-page { animation: none; }
 
 body[data-theme='light'] {
   --p-canvas:      #f8fafc;
-  --p-surface:     #f1f5f9;
   --p-card:        #ffffff;
+  --p-surface:     #f1f5f9;
   --p-line:        #e2e8f0;
 
   --p-fg:          #0f172a;
   --p-muted:       #475569;
-  --p-subtle:      #94a3b8;
+  --p-subtle:      #64748b;
+  --p-disabled:    #94a3b8;
+  --p-link:        #4f46e5;
 
   --p-glow:        rgba(91, 227, 0, 0.16);
 }
@@ -408,23 +412,23 @@ body[data-theme='light'] .card-premium {
   gap: 8px;
   height: 58px;
   padding: 0 24px;
-  border-radius: 18px;
-  background: var(--p-primary);
+  border-radius: 16px;
+  /* Gradient primary (aksent → 20% to'qlashtirilgan): temaga ergashadi */
+  background: linear-gradient(135deg, var(--p-primary), color-mix(in srgb, var(--p-primary) 80%, #000));
   color: var(--p-on-primary);
   font-weight: 600;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    0 10px 26px rgba(2, 6, 16, 0.32),
-    0 0 18px var(--p-glow);
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 10px 30px rgb(var(--p-primary-rgb) / 0.22);
   transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease,
               background-color 0.3s ease;
   user-select: none;
   touch-action: manipulation;
 }
+.btn-premium:hover { filter: brightness(1.08); }
 .btn-premium:active {
   transform: scale(0.97);
-  filter: brightness(0.94);
-  box-shadow: 0 3px 12px rgba(2, 6, 16, 0.28);
+  filter: brightness(0.90);
 }
 .btn-premium:disabled { opacity: 0.45; pointer-events: none; }
 
