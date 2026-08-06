@@ -189,14 +189,15 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
       {picker === 'accent' && (
         <div className="fixed inset-0 z-50 flex items-end">
           <div className="absolute inset-0 bg-black/60" onClick={() => setPicker(null)} />
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
-            <p className="flex items-center justify-center gap-2 text-base font-black mb-1">
+          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[82vh] flex flex-col">
+            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5 flex-none" />
+            <p className="flex items-center justify-center gap-2 text-base font-black mb-1 flex-none">
               <Palette size={18} className="text-muted" />
               {tt('accentThemeLabel')}
             </p>
-            <p className="text-center text-[11px] text-muted mb-5">{tt('accentThemeDesc')}</p>
-            <div className="flex flex-col gap-3">
+            <p className="text-center text-[11px] text-muted mb-5 flex-none">{tt('accentThemeDesc')}</p>
+            {/* Scrollable ro'yxat — 10+ tema sig'adi, tepasi kesilmaydi */}
+            <div className="flex flex-col gap-3 overflow-y-auto -mx-1 px-1 pb-1">
               {ACCENT_THEMES.map((theme) => {
                 const selected = theme.id === accent
                 const locked   = theme.premium && !isPremium
