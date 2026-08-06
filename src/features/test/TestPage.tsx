@@ -109,7 +109,9 @@ export default function TestPage() {
         openTelegramLink('https://t.me/prava_oson_bot?start=premium')
         return
       }
-      setAiText(tt('aiUnavailable'))
+      setAiText(err instanceof TutorError && err.kind === 'quota'
+        ? tt('aiQuotaMsg')
+        : tt('aiUnavailable'))
     } finally {
       setAiBusy(false)
     }

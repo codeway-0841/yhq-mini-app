@@ -77,7 +77,8 @@ router.post(
     if (!apiRes.ok || !apiRes.body) {
       const text = await apiRes.text().catch(() => '')
       console.error('[tutor] Gemini error:', apiRes.status, text.slice(0, 300))
-      throw new AppError(502, 'AI xizmati vaqtincha ishlamayapti')
+      if (apiRes.status === 429) throw new AppError(503, 'quota')
+      throw new AppError(502, 'unavailable')
     }
 
     // SSE passthrough — Gemini JSON chunk'laridan faqat matn qismini ajratamiz

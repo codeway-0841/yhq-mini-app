@@ -11,7 +11,7 @@ function getInitData(): string | undefined {
 }
 
 /** Xatolik turlari — UI'da holatga qarab xabar ko'rsatish uchun */
-export type TutorErrorKind = 'premium_required' | 'unavailable' | 'network'
+export type TutorErrorKind = 'premium_required' | 'unavailable' | 'quota' | 'network'
 export class TutorError extends Error {
   kind: TutorErrorKind
   constructor(kind: TutorErrorKind, message: string) {
@@ -38,7 +38,8 @@ export async function* explainQuestion(
 
   if (!res.ok) {
     if (res.status === 403) throw new TutorError('premium_required', 'Premium kerak')
-    if (res.status === 503 || res.status === 502) throw new TutorError('unavailable', 'AI vaqtincha ishlamayapti')
+    if (res.status === 503) throw new TutorError('quota', 'AI hozir band')
+    if (res.status === 502) throw new TutorError('unavailable', 'AI vaqtincha ishlamayapti')
     throw new TutorError('network', `HTTP ${res.status}`)
   }
   if (!res.body) throw new TutorError('network', 'Stream yo\'q')
