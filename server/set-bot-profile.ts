@@ -31,7 +31,6 @@ await bot.api.setMyDescription(
   "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
   "• Biletlar va mavzular bo'yicha testlar\n" +
   "• Xatolar ustida ishlash\n" +
-  "• Yo'l belgilari va darslik\n" +
   "• Oktagon — do'stlar bilan bellashuv\n\n" +
   "Boshlash uchun /start bosing!"
 )

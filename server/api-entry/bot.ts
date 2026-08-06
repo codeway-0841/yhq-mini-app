@@ -52,7 +52,6 @@ function ensureProfile(): Promise<unknown> {
       "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
       "• Biletlar va mavzular bo'yicha testlar\n" +
       "• Xatolar ustida ishlash\n" +
-      "• Yo'l belgilari va darslik\n" +
       "• Oktagon — do'stlar bilan bellashuv\n\n" +
       "Boshlash uchun /start bosing!"
     ),
@@ -153,7 +152,6 @@ bot.command('about', async (ctx) => {
     "ℹ️ KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
     "• Biletlar va mavzular bo'yicha testlar\n" +
     "• Xatolar ustida ishlash rejimi\n" +
-    "• Yo'l belgilari bo'limi\n" +
     "• Oktagon — real vaqtli bellashuvlar\n\n" +
     "Omad tilaymiz! 🍀",
     { reply_markup: appKeyboard() }
