@@ -1,6 +1,7 @@
 import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
-import { Bot, InlineKeyboard, webhookCallback } from 'grammy'
+import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
+import { usersRepository } from '../modules/users/users.repository'
 
 const token = process.env['BOT_TOKEN']
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -14,6 +15,24 @@ const APP_URL  = `${BASE_URL}?v=${BUILD_ID}`
 const bot = new Bot(token)
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
+
+// ── Premium — Telegram Stars to'lovi ────────────────────────────────────────
+const PREMIUM_PRICE_STARS = 250   // ~5$ (komissiyasiz — Telegram Stars cheklov emas)
+const PREMIUM_DESC =
+  "YHQ Premium — bir martalik sotib olish:\n" +
+  "• Barcha funksiyalarga cheksiz kirish\n" +
+  "• Xatolar bo'yicha batafsil tahlil\n" +
+  "• Reklama'siz toza tajriba"
+
+async function sendPremiumInvoice(ctx: Context) {
+  await ctx.replyWithInvoice(
+    '⭐ YHQ Premium',
+    PREMIUM_DESC,
+    `premium_${ctx.from?.id}`,
+    'XTR',
+    [{ label: 'Premium', amount: PREMIUM_PRICE_STARS }],
+  )
+}
 
 // ── Self-onboarding: set commands/description/menu button once per cold start ──
 let profileReady: Promise<unknown> | null = null
@@ -59,6 +78,10 @@ bot.command('start', async (ctx) => {
 
   // Duel invite deep-link: t.me/bot?start=duel-xxxx → ilovadagi duel sahifasiga o'tkazuvchi tugma
   const param = ctx.match
+  if (param === 'premium') {
+    await sendPremiumInvoice(ctx)
+    return
+  }
   if (param && /^duel-[a-z0-9]{6,16}$/.test(param)) {
     await ctx.reply(
       '🤺 Duelga taklif qilindingiz! Quyidagi tugmani bosib raqibingizga qo\'shiling:',
@@ -73,6 +96,30 @@ bot.command('start', async (ctx) => {
     "Xush kelibsiz! 🚗\n\nYo'l harakati qoidalari bo'yicha imtihonga tayyorlaning: biletlar, mavzular, yo'l belgilari va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
   )
+})
+
+// ── /premium — Stars to'lov oqimi ───────────────────────────────────────────
+bot.command('premium', async (ctx) => { await sendPremiumInvoice(ctx) })
+
+// Telegram to'lov checkout'ini tasdiqlash (majburiy — aks holda invoice o'tmaydi)
+bot.on('pre_checkout_query', async (ctx) => {
+  await ctx.answerPreCheckoutQuery(true)
+})
+
+// To'lov muvaffaqiyatli → PREMIUM faollashtiriladi
+bot.on('message:successful_payment', async (ctx) => {
+  const uid = ctx.from?.id
+  if (!uid) return
+  try {
+    await usersRepository.setTariff(BigInt(uid), 'premium')
+    await ctx.reply(
+      "🎉 Tabriklaymiz — Premium faollashtirildi!\n\n" +
+      "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
+    )
+  } catch (err) {
+    console.error('[bot] premium activation failed:', err)
+    await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @prava_oson_bot'ga yozing — tezda yechamiz.")
+  }
 })
 
 // ── /help ───────────────────────────────────────────────────────────────────

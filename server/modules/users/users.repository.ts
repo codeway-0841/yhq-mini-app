@@ -53,4 +53,9 @@ export const usersRepository = {
       .returning({ id: users.id })
     return rows.length > 0
   },
+
+  /** Tarifni yangilash — Premium sotib olinganda (bot payment handler). */
+  async setTariff(id: bigint, tariff: 'free' | 'premium'): Promise<void> {
+    await db.update(users).set({ tariff, updatedAt: new Date() }).where(eq(users.id, id))
+  },
 }

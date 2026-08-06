@@ -15,10 +15,13 @@ import { HeartCrack, Play, ChevronRight, Flame } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
+import { openTelegramLink } from '../../lib/telegram'
+import { Sparkles } from 'lucide-react'
 
 export default function XatolarPage() {
   const navigate = useNavigate()
-  const { settings, wrongByTicket } = useAppStore()
+  const { settings, wrongByTicket, tariff } = useAppStore()
+  const isPremium = tariff === 'premium'
   const tt = useT(settings.language)
   const { questions, topics } = useQuestionsStore()
   const lang = settings.language
@@ -104,8 +107,23 @@ export default function XatolarPage() {
             </button>
           </div>
 
-          {/* Mavzular kesimi */}
-          {byTopic.length > 0 && (
+          {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
+          {!isPremium && (
+            <button onClick={() => openTelegramLink('https://t.me/prava_oson_bot?start=premium')}
+              className="card-neon w-full p-4 mb-4 flex items-center gap-3 text-left active:scale-[0.98] transition-transform">
+              <div className="w-11 h-11 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
+                <Sparkles size={20} className="text-duo-yellow" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-[14px] font-black text-fg">{tt('premiumMistakesTitle')}</p>
+                <p className="text-[11px] text-subtle mt-1 leading-snug">{tt('premiumMistakesDesc')}</p>
+              </div>
+              <span className="bg-duo-yellow text-black text-[11px] font-black px-3 py-1.5 rounded-xl flex-shrink-0">
+                ⭐250
+              </span>
+            </button>
+          )}
+          {isPremium && byTopic.length > 0 && (
             <>
               <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
               <div className="card-neon overflow-hidden mb-4">
@@ -125,7 +143,7 @@ export default function XatolarPage() {
           )}
 
           {/* Top-10 eng qiyin savollar */}
-          {topHard.length > 0 && (
+          {isPremium && topHard.length > 0 && (
             <>
               <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em] mb-1.5 flex items-center gap-1.5">
                 <Flame size={11} className="text-duo-yellow" />

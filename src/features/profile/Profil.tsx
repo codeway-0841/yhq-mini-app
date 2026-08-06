@@ -443,10 +443,10 @@ export default function Profil() {
           </div>
           {tariff === 'free' && (
             <button type="button"
-              onClick={() => showToast('Premium tez kunda! Hozircha barcha funksiyalar bepul.')}
+              onClick={() => openTelegramLink('https://t.me/prava_oson_bot?start=premium')}
               className="flex items-center gap-1.5 bg-duo-blue text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform shadow-lg shadow-blue-500/20">
               <Zap size={13} fill="white" />
-              {tt('upgrade')}
+              {tt('upgrade')} · ⭐250
             </button>
           )}
         </div>

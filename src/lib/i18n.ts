@@ -133,6 +133,8 @@ const UZ = {
   achAnswered500: "500 ta savol yechilgan",
   achFixed10: "10 ta xato tuzatilgan", achFixed50: "50 ta xato tuzatilgan",
   achOctagon10: "Oktagon'da 10 g'alaba", achAllSubj80: "Barcha fanlardan 80%+",
+  premiumMistakesTitle: "Xatolar tahlili — Premium", 
+  premiumMistakesDesc: "Mavzular kesimida xatolar va eng qiyin savollar tahlili. Premium bilan ochiladi.",
   // Haftalik liga
   leagueTab: "Liga", allTimeTab: "Umumiy",
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
@@ -264,6 +266,8 @@ const RU: Record<Keys, string> = {
   achAnswered500: "Решено 500 вопросов",
   achFixed10: "Исправлено 10 ошибок", achFixed50: "Исправлено 50 ошибок",
   achOctagon10: "10 побед в Октагоне", achAllSubj80: "80%+ по всем предметам",
+  premiumMistakesTitle: "Анализ ошибок — Premium",
+  premiumMistakesDesc: "Разбор ошибок по темам и самые сложные вопросы. Доступно с Premium.",
   // Недельная лига
   leagueTab: "Лига", allTimeTab: "Всё время",
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",
