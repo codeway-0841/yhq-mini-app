@@ -103,7 +103,7 @@ bot.command('start', async (ctx) => {
   }
 
   await ctx.reply(
-    "Xush kelibsiz! 🚗\n\nYo'l harakati qoidalari bo'yicha imtihonga tayyorlaning: biletlar, mavzular, yo'l belgilari va real vaqtli o'yinlar — hammasi bitta ilovada.",
+    "Xush kelibsiz! 🎓\n\nKIWI — barcha fanlar uchun zamonaviy ta'lim platformasi: testlar, biletlar, yo'l belgilari va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
   )
 })
