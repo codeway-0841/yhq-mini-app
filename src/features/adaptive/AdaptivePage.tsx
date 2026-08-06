@@ -26,8 +26,8 @@ function Option({ id, text, state, onSelect, answered }: {
 }) {
   const base  = 'w-full text-left rounded-xl border p-3.5 transition-all active:scale-[0.98]'
   const style =
-    state === 'correct' ? 'bg-green-900/60 border-green-500 text-white' :
-    state === 'wrong'   ? 'bg-red-900/60   border-red-500   text-white' :
+    state === 'correct' ? 'bg-green-500/15 border-green-500 text-fg' :
+    state === 'wrong'   ? 'bg-red-500/15   border-red-500   text-fg' :
                           'bg-surface border-line text-fg'
   return (
     <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>

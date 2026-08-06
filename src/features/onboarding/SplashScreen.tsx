@@ -20,7 +20,7 @@ export default function SplashScreen() {
       <div className="absolute bottom-24 w-48">
         <div className="w-full h-[6px] rounded-full overflow-hidden" style={{ background: '#1e2c40' }}>
           <div className="h-full rounded-full splash-progress"
-            style={{ background: 'linear-gradient(90deg, #58cc02, #46a302)' }} />
+            style={{ background: 'linear-gradient(90deg, var(--p-primary), color-mix(in srgb, var(--p-primary) 72%, #000))' }} />
         </div>
         <p className="text-center text-[11px] font-semibold mt-3" style={{ color: '#5f7189' }}>
           Yuklanmoqda...

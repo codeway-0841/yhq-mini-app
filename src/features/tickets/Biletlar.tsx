@@ -47,7 +47,7 @@ export default function Biletlar() {
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="text-muted hover:text-white text-xl px-1">←</button>
+          className="text-muted hover:text-fg text-xl px-1">←</button>
         <h1 className="text-xl font-black">{tt('tickets')}</h1>
       </div>
 
@@ -55,7 +55,7 @@ export default function Biletlar() {
         {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)}
             className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-colors ${
-              tab === t.id ? 'bg-duo-blue text-white' : 'text-muted hover:text-white'
+              tab === t.id ? 'bg-duo-blue text-white' : 'text-muted hover:text-fg'
             }`}>
             {t.label}
           </button>

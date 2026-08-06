@@ -20,7 +20,7 @@ function SignModal({ sign, onClose }: { sign: Sign; onClose: () => void }) {
       <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-base font-bold">Belgi haqida</h2>
-          <button onClick={onClose} className="text-muted hover:text-white"><X size={20} /></button>
+          <button onClick={onClose} className="text-muted hover:text-fg"><X size={20} /></button>
         </div>
         <div className="w-32 h-32 mx-auto rounded-2xl bg-white flex items-center justify-center mb-4">
           {sign.image
@@ -64,7 +64,7 @@ function SignsGrid({ category, onBack, onSignSelect }: {
   return (
     <>
       <div className="flex items-center gap-3 mb-4">
-        <button onClick={onBack} className="text-muted hover:text-white text-lg px-1">←</button>
+        <button onClick={onBack} className="text-muted hover:text-fg text-lg px-1">←</button>
         <h2 className="text-base font-bold">{category.name}</h2>
         <span className="text-xs text-muted ml-auto">{category.count} ta</span>
       </div>
@@ -133,7 +133,7 @@ export default function Belgilar() {
         <>
           <div className="flex items-center gap-2 mb-4">
             <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-              className="text-muted hover:text-white text-xl px-1">←</button>
+              className="text-muted hover:text-fg text-xl px-1">←</button>
             <h1 className="text-xl font-black">Yo'l belgilari</h1>
           </div>
 
@@ -144,10 +144,10 @@ export default function Belgilar() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Belgi qidirish..."
-              className="flex-1 bg-transparent text-sm text-white outline-none placeholder:text-muted"
+              className="flex-1 bg-transparent text-sm text-fg outline-none placeholder:text-muted"
             />
             {query && (
-              <button onClick={() => setQuery('')} className="text-muted hover:text-white">
+              <button onClick={() => setQuery('')} className="text-muted hover:text-fg">
                 <X size={14} />
               </button>
             )}

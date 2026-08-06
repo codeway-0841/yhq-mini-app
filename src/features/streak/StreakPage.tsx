@@ -177,7 +177,7 @@ export default function StreakPage() {
               <button key={date} disabled={future}
                 onClick={() => setSelected(date)}
                 className={`aspect-square rounded-xl flex items-center justify-center text-[13px] font-bold transition-all ${
-                  isSel ? 'ring-2 ring-duo-green text-white scale-105' : level > 0 ? 'text-white' : 'text-subtle'
+                  isSel ? 'ring-2 ring-duo-green text-fg scale-105' : level > 0 ? 'text-white' : 'text-subtle'
                 } ${isNow && !isSel ? 'ring-1 ring-duo-blue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
                 style={{ background: heatBg(level) }}>
                 {Number(date.slice(8))}

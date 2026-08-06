@@ -308,7 +308,7 @@ export default function OctagonPage() {
           <WifiOff size={14} className="flex-shrink-0" />
           Serverga ulanib bo'lmadi
           <button onClick={retryConnect}
-            className="flex items-center gap-1 underline underline-offset-2 hover:text-white transition-colors">
+            className="flex items-center gap-1 underline underline-offset-2 hover:text-fg transition-colors">
             <RefreshCw size={12} /> Qayta urinish
           </button>
         </div>
@@ -390,7 +390,7 @@ export default function OctagonPage() {
                   className="h-full rounded-full transition-colors duration-300"
                   style={{
                     width: `${roundPct * 100}%`,
-                    background: roundPct > 0.5 ? '#58cc02' : roundPct > 0.25 ? '#ffc800' : '#ff4b4b',
+                    background: roundPct > 0.5 ? 'var(--p-primary)' : roundPct > 0.25 ? '#f59e0b' : '#ef4444',
                   }}
                 />
               </div>
@@ -419,9 +419,9 @@ export default function OctagonPage() {
               const showCorrect = answered && s.ackCorrect !== null && opt.id === currentQ.correct
               const style =
                 !answered      ? 'bg-surface border-line text-fg' :
-                showCorrect    ? 'bg-green-900/40 border-green-600 text-white' :
-                isSelected && opt.id === currentQ.correct ? 'bg-green-900/60 border-green-500 text-white' :
-                isSelected    ? 'bg-red-900/60   border-red-500   text-white' :
+                showCorrect    ? 'bg-green-500/15 border-green-500 text-fg' :
+                isSelected && opt.id === currentQ.correct ? 'bg-green-500/20 border-green-500 text-fg' :
+                isSelected    ? 'bg-red-500/15   border-red-500   text-fg' :
                                 'bg-surface border-line text-muted'
               return (
                 <button key={opt.id} disabled={answered} onClick={() => sendAnswer(opt.id)}

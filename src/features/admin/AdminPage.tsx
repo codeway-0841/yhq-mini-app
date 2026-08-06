@@ -85,7 +85,7 @@ export default function AdminPage() {
         <h1 className="font-black text-fg">Admin savollar</h1>
         <button
           onClick={() => setCreating(true)}
-          className="bg-duo-green text-white py-2 px-3 rounded-xl text-[12px] font-bold flex items-center gap-1.5 active:scale-95 transition-transform"
+          className="bg-duo-green text-ponprimary py-2 px-3 rounded-xl text-[12px] font-bold flex items-center gap-1.5 active:scale-95 transition-transform"
         >
           <Plus size={14} /> Yangi
         </button>
@@ -313,7 +313,7 @@ function QuestionForm({
           </div>
 
           <button type="submit" disabled={busy}
-            className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] text-white disabled:opacity-50">
+            className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] disabled:opacity-50">
             {busy ? <Loader2 size={16} className="animate-spin inline" /> : 'Saqlash'}
           </button>
         </form>

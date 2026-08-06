@@ -16,14 +16,14 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
 
   if (state === 'correct') {
     style = 'bg-duo-green/15 border-duo-green text-fg'
-    chip  = 'bg-duo-green border-duo-green text-white'
+    chip  = 'bg-duo-green border-duo-green text-ponprimary'
     icon  = <span className="text-duo-green font-black text-lg">✓</span>
-    glow  = '0 0 20px rgba(88, 204, 2, 0.35)'
+    glow  = '0 0 20px var(--p-glow)'
   } else if (state === 'wrong') {
     style = 'bg-duo-red/15 border-duo-red text-duo-red'
     chip  = 'bg-duo-red border-duo-red text-white'
     icon  = <span className="text-duo-red font-black text-lg">✗</span>
-    glow  = '0 0 20px rgba(255, 75, 75, 0.30)'
+    glow  = '0 0 20px rgba(239, 68, 68, 0.30)'
   }
 
   const fontClass =

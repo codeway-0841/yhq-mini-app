@@ -50,7 +50,7 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
                   </div>
                 )}
                 <div className="flex-1 min-w-0">
-                  <p className={`text-sm font-bold ${selected ? 'text-white' : 'text-fg'}`}>
+                  <p className="text-sm font-bold text-fg">
                     {opt.label}
                   </p>
                   {opt.desc && (

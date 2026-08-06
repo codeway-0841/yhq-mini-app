@@ -20,7 +20,7 @@ interface ModeCard {
   id: string
   iconBox: 'zap' | 'cap' | 'num'
   numText?: string
-  accent: string
+  danger?: boolean
   titleKey: TKey
   meta: string
   diff: Diff
@@ -37,23 +37,23 @@ export default function TestlarPage() {
     : 0
 
   const DIFF: Record<Diff, { label: string; color: string }> = {
-    easy: { label: tt('diffEasy'), color: '#58cc02' },
-    mid:  { label: tt('diffMid'),  color: '#ffc800' },
-    hard: { label: tt('diffHard'), color: '#ff4b4b' },
+    easy: { label: tt('diffEasy'), color: '#22c55e' },
+    mid:  { label: tt('diffMid'),  color: '#f59e0b' },
+    hard: { label: tt('diffHard'), color: '#ef4444' },
   }
 
   const cards: ModeCard[] = [
-    { id: 'random50',  iconBox: 'num', numText: '50',  accent: '#58cc02',
+    { id: 'random50',  iconBox: 'num', numText: '50',
       titleKey: 't50Test', meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' },
-    { id: 'random100', iconBox: 'num', numText: '100', accent: '#a855f7',
+    { id: 'random100', iconBox: 'num', numText: '100',
       titleKey: 't100',    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' },
-    { id: 'random20',  iconBox: 'zap',                 accent: '#ff9600',
+    { id: 'random20',  iconBox: 'zap',
       titleKey: 't20',     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' },
-    { id: 'exam',      iconBox: 'cap',                 accent: '#38bdf8',
+    { id: 'exam',      iconBox: 'cap',
       titleKey: 'realExam', meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' },
     // Mock imtihon FAQAT YHQ uchun (rasmiy bilet formati) — boshqa fanlarda ko'rinmaydi
     ...(subjectId === 'yhq'
-      ? [{ id: 'mock',  iconBox: 'cap' as const,        accent: '#ff4b4b',
+      ? [{ id: 'mock',  iconBox: 'cap' as const,        danger: true,
            titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const }]
       : []),
   ]
@@ -74,23 +74,24 @@ export default function TestlarPage() {
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
           const d = DIFF[m.diff]
+          // Rang intizomi (v2.1): neytral kulrang default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
+          const boxColor = m.danger ? '#ef4444' : '#94a3b8'
+          const ringColor = m.danger ? '#ef4444' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R
           const off = C * (1 - accuracy / 100)
           return (
             <button key={m.id} onClick={() => start(m)}
               className="card-neon w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
-              {/* Glow icon box */}
+              {/* Icon box — neytral (yoki danger uchun qizil) */}
               <div className="relative flex-shrink-0">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg, ${m.accent}33, ${m.accent}14)`,
-                           border: `1.5px solid ${m.accent}66`,
-                           boxShadow: `0 0 22px ${m.accent}59` }}>
+                  style={{ background: `${boxColor}14`, border: `1.5px solid ${boxColor}40` }}>
                   {m.iconBox === 'num' && (
-                    <span className="text-[17px] font-black" style={{ color: m.accent }}>{m.numText}</span>
+                    <span className="text-[17px] font-black" style={{ color: boxColor }}>{m.numText}</span>
                   )}
-                  {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: m.accent }} />}
-                  {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: m.accent }} />}
+                  {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: boxColor }} />}
+                  {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
                 </div>
               </div>
 
@@ -105,14 +106,14 @@ export default function TestlarPage() {
                 </span>
               </div>
 
-              {/* Ring */}
+              {/* Ring — progress = aksent rang (tema bilan almashadi) */}
               <svg width="62" height="62" viewBox="0 0 62 62" className="flex-shrink-0">
-                <circle cx="31" cy="31" r={R} fill="none" stroke="#1c2d4a" strokeWidth="5" />
-                <circle cx="31" cy="31" r={R} fill="none" stroke={m.accent} strokeWidth="5"
+                <circle cx="31" cy="31" r={R} fill="none" stroke="var(--p-line)" strokeWidth="5" />
+                <circle cx="31" cy="31" r={R} fill="none" stroke={ringColor} strokeWidth="5"
                   strokeLinecap="round" strokeDasharray={C} strokeDashoffset={off}
                   transform="rotate(-90 31 31)"
-                  style={{ filter: `drop-shadow(0 0 5px ${m.accent}88)` }} />
-                <text x="31" y="35" textAnchor="middle" fill="#f2f7ff" fontSize="12" fontWeight="900">
+                  style={{ filter: 'drop-shadow(0 0 5px var(--p-glow))' }} />
+                <text x="31" y="35" textAnchor="middle" fill="var(--p-fg)" fontSize="12" fontWeight="900">
                   {accuracy}%
                 </text>
               </svg>

@@ -74,43 +74,43 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
         {/* Kontent — scrollable */}
         <div className="flex-1 overflow-y-auto px-5">
-          <Row icon={Play} iconColor="#58cc02" label={tt('autoNextCorrect')}>
+          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextCorrect')}>
             <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
           </Row>
-          <Row icon={Play} iconColor="#ff4b4b" label={tt('autoNextWrong')}>
+          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextWrong')}>
             <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
           </Row>
-          <Row icon={Zap} iconColor="#ce82ff" label={tt('noAnimation')}>
+          <Row icon={Zap} iconColor="#94a3b8" label={tt('noAnimation')}>
             <Toggle label={tt('noAnimation')} checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
           </Row>
-          <Row icon={Shuffle} iconColor="#ff9600" label={tt('shuffleOptions')}>
+          <Row icon={Shuffle} iconColor="#94a3b8" label={tt('shuffleOptions')}>
             <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
           </Row>
 
           {/* Shrift o'lchami — picker */}
           <button className="w-full text-left" onClick={() => setPicker('fontSize')}>
-            <Row icon={Type} iconColor="#ce82ff" label={tt('fontSize')}>
+            <Row icon={Type} iconColor="#94a3b8" label={tt('fontSize')}>
               <span className={valueBtn}>{fontSizeLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Shrift uslubi — picker */}
           <button className="w-full text-left" onClick={() => setPicker('fontStyle')}>
-            <Row icon={Type} iconColor="#1cb0f6" label={tt('fontStyle')}>
+            <Row icon={Type} iconColor="#94a3b8" label={tt('fontStyle')}>
               <span className={valueBtn}>{fontStyleLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Ilova tili — picker */}
           <button className="w-full text-left" onClick={() => setPicker('language')}>
-            <Row icon={Globe} iconColor="#1cb0f6" label={tt('langLabel')}>
+            <Row icon={Globe} iconColor="#94a3b8" label={tt('langLabel')}>
               <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
           <button className="w-full text-left" onClick={() => setPicker('accent')}>
-            <Row icon={Palette} iconColor="#5be300" label={tt('accentThemeLabel')}>
+            <Row icon={Palette} iconColor="#94a3b8" label={tt('accentThemeLabel')}>
               <span className={valueBtn}>
                 <span className="w-4 h-4 rounded-full border border-line"
                   style={{ background: getAccentTheme(accent).color }} />
@@ -192,7 +192,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
             <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
             <p className="flex items-center justify-center gap-2 text-base font-black mb-1">
-              <Palette size={18} className="text-neon-green" />
+              <Palette size={18} className="text-muted" />
               {tt('accentThemeLabel')}
             </p>
             <p className="text-center text-[11px] text-muted mb-5">{tt('accentThemeDesc')}</p>
@@ -220,7 +220,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                     <span className="w-10 h-10 rounded-full flex-none border-2 border-white/10"
                       style={{ background: theme.color }} />
                     <div className="flex-1 min-w-0">
-                      <p className={`text-sm font-bold ${selected ? 'text-white' : 'text-fg'}`}>
+                      <p className="text-sm font-bold text-fg">
                         {theme.label[local.language]}
                       </p>
                       {locked && (

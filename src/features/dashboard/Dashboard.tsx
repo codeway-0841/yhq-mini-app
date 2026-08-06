@@ -139,7 +139,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <Trophy size={16} className="text-pblue" />
+          <Trophy size={16} className="text-psubtle" />
           <div className="text-left">
             <p className="text-[13px] font-semibold text-pfg leading-none">{league}</p>
             <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('ratingWord')}</p>
@@ -151,7 +151,9 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
 })
 
 // ── Grid Card (rejimlar) ────────────────────────────────────────────────────
-const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-muted)', onClick }: {
+/* Rang intizomi (v2.1): default ikonlar NEYTRAL kulrang — faqat AI/Premium binafsha,
+   badge'lar esa semantik (qizil = xato soni). */
+const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = '#94a3b8', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -179,11 +181,11 @@ const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 
 })
 
 // ── Asosiy grid kartasi (Testlar / Mavzular / AI Tutor ...) ────────────────
-const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor, badge, comingSoon, onClick }: {
+const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = '#94a3b8', badge, comingSoon, onClick }: {
   icon: React.ElementType
   label: string
   subtitle: string
-  iconColor: string
+  iconColor?: string
   badge?: number | null
   comingSoon?: boolean
   onClick: () => void
@@ -553,22 +555,22 @@ export default function Dashboard() {
       {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
          (kamida 1 savol yoki dars) yoziladi: ProgressCard → /streak */}
 
-      {/* Premium banner (oltin aksent) — premium_click KPI o'lchanadi */}
+      {/* Premium banner (binafsha = AI/Premium/Magic) — premium_click KPI o'lchanadi */}
       <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
         <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
           style={{
-            background: 'rgba(250, 204, 21, 0.12)',
-            border: '1px solid rgba(250, 204, 21, 0.30)',
-            boxShadow: '0 0 20px rgba(250, 204, 21, 0.28)',
+            background: 'rgba(139, 92, 246, 0.12)',
+            border: '1px solid rgba(139, 92, 246, 0.30)',
+            boxShadow: '0 0 20px rgba(139, 92, 246, 0.30)',
           }}>
-          <Crown size={19} className="text-pgold" />
+          <Crown size={19} className="text-ppurple" />
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-[13px] font-bold text-pfg">Premium</p>
           <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
         </div>
         <button onClick={() => { track('premium_click'); showToast(tt('comingSoonD')) }}
-          className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
+          className="btn-premium-ai px-4 py-2.5 rounded-xl text-[12px]">
           {tt('tryWord')}
         </button>
       </div>
@@ -587,17 +589,17 @@ export default function Dashboard() {
       <div className="grid grid-cols-3 gap-3 px-5 mb-4">
         <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
           subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
-          iconColor="#5be300" onClick={() => navigate('/testlar')} />
+          onClick={() => navigate('/testlar')} />
         <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
-          iconColor="#3b82f6" onClick={goTopics} />
+          onClick={goTopics} />
         <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
           iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
         <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
-          iconColor="#ef4444" badge={mistakesCount || null} onClick={goMistakes} />
+          badge={mistakesCount || null} onClick={goMistakes} />
         <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
-          iconColor="#facc15" onClick={() => navigate('/biletlar')} />
+          onClick={() => navigate('/biletlar')} />
         <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
-          iconColor="#3b82f6" onClick={goOctagon} />
+          onClick={goOctagon} />
       </div>
 
       {/* Rejimlar (funksiyalar saqlangan) */}
@@ -605,12 +607,12 @@ export default function Dashboard() {
         <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
-        <GridCard icon={ShieldAlert}   label={tt('distracting')} iconColor="#ef4444" onClick={goMode('tricky', tt('distracting'))} />
-        <GridCard icon={GraduationCap} label={tt('lessons')}     iconColor="#3b82f6" onClick={goDarslik} />
-        <GridCard icon={Bookmark}      label={tt('saved')}       iconColor="#facc15" badge={savedQuestions.length || null} onClick={goSaved} />
-        <GridCard icon={Signpost}      label={tt('roadSigns')}   iconColor="#3b82f6" onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label={tt('numeric')}     iconColor="#8b5cf6" onClick={goMode('numeric', tt('numeric'))} />
-        <GridCard icon={Play}          label={tt('adaptive')}    iconColor="#22c55e" onClick={goAdaptive} />
+        <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
+        <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
+        <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedQuestions.length || null} onClick={goSaved} />
+        <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
+        <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
+        <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />
       </div>
 
       {/* Reyting top-3 preview */}

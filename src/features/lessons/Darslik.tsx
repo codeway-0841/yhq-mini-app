@@ -40,7 +40,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
     <div className="fixed inset-0 z-50 bg-canvas flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-        <button onClick={onClose} className="text-muted hover:text-white text-lg px-1">←</button>
+        <button onClick={onClose} className="text-muted hover:text-fg text-lg px-1">←</button>
         <span className="text-base font-black">{idx + 1}-{ru ? 'урок' : 'dars'}</span>
         <span className="text-xs font-bold text-muted bg-elevated px-2.5 py-1 rounded-lg">
           {idx + 1}/{list.length}
@@ -98,7 +98,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
           {ru ? 'Задать вопрос' : 'Savol berish'}
         </button>
         <button onClick={() => advance(idx)}
-          className="flex-[1.4] py-3.5 rounded-xl text-white font-bold flex items-center justify-center gap-2 bg-green-600">
+          className="flex-[1.4] py-3.5 rounded-xl text-ponprimary font-bold flex items-center justify-center gap-2 bg-duo-green">
           <Check size={16} />
           {idx < list.length - 1
             ? (ru ? 'Прочитано — дальше' : "O'qib bo'ldim — keyingi")
@@ -297,7 +297,7 @@ export default function Darslik() {
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
-            className="text-muted hover:text-white text-xl px-1">←</button>
+            className="text-muted hover:text-fg text-xl px-1">←</button>
           <GraduationCap size={22} className="text-duo-blue" />
           <h1 className="text-xl font-black">{ru ? 'Учебник' : 'Darslik'}</h1>
         </div>

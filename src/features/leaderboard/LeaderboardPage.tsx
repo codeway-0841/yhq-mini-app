@@ -114,7 +114,7 @@ export default function LeaderboardPage() {
     <div className="pb-24">
       <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-line">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="text-muted hover:text-white text-xl px-1">←</button>
+          className="text-muted hover:text-fg text-xl px-1">←</button>
         <Trophy size={20} className="text-yellow-400" />
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>
       </div>

@@ -112,7 +112,7 @@ function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
         </p>
         <div className="flex flex-col gap-2.5">
           <button onClick={onPick} disabled={busy}
-            className="w-full py-3.5 rounded-xl bg-duo-green text-white font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
+            className="w-full py-3.5 rounded-xl bg-duo-green text-ponprimary font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
             <ImagePlus size={16} />
             {busy ? 'Yuklanmoqda…' : 'Galereyadan tanlash'}
           </button>
@@ -156,11 +156,11 @@ function NameEditSheet({ current, onClose, onSave }: {
           maxLength={32}
           placeholder="Ismingiz"
           autoFocus
-          className="w-full bg-canvas border border-duo-blue rounded-xl px-4 py-3 text-sm text-white outline-none mb-4"
+          className="w-full bg-canvas border border-duo-blue rounded-xl px-4 py-3 text-sm text-fg outline-none mb-4"
         />
         <button
           onClick={() => { onSave(name); onClose() }}
-          className="w-full py-3.5 rounded-xl bg-green-600 text-white font-bold active:scale-[0.98] transition-transform">
+          className="w-full py-3.5 rounded-xl bg-duo-green text-ponprimary font-bold active:scale-[0.98] transition-transform">
           Saqlash
         </button>
       </div>
@@ -403,21 +403,21 @@ export default function Profil() {
       {/* ← Back */}
       <div className="px-4 mb-0.5">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="flex items-center gap-1 text-muted hover:text-white text-sm active:opacity-70 transition-opacity">
+          className="flex items-center gap-1 text-muted hover:text-fg text-sm active:opacity-70 transition-opacity">
           <span className="text-lg">←</span>
           <span>Back</span>
         </button>
       </div>
 
       {/* Page title */}
-      <p className="text-[18px] font-bold px-4 mb-5 text-white">Profil</p>
+      <p className="text-[18px] font-bold px-4 mb-5 text-fg">Profil</p>
 
       {/* Avatar + Name + ID */}
       <div className="flex flex-col items-center gap-2.5 mb-7 px-4">
         <Avatar name={name} photoUrl={user?.photoUrl}
           onEditName={() => setShowNameEdit(true)}
           onEditPhoto={() => setShowPhotoEdit(true)} />
-        <p className="text-[18px] font-bold text-white mt-1">{name}</p>
+        <p className="text-[18px] font-bold text-fg mt-1">{name}</p>
         <button
           type="button"
           onClick={copyId}
@@ -436,7 +436,7 @@ export default function Profil() {
             🚗
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-bold text-white">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
+            <p className="text-[14px] font-bold text-fg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
             <p className="text-[11px] text-muted mt-0.5 leading-tight">
               {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>

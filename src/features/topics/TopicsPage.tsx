@@ -86,14 +86,14 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
                 {/* Chap icon — holat bo'yicha */}
                 <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0"
                   style={st === 'done'
-                    ? { background: '#58cc0226', border: '1.5px solid #58cc02' }
+                    ? { background: 'rgb(var(--p-primary-rgb) / 0.15)', border: '1.5px solid var(--p-primary)' }
                     : st === 'active'
-                      ? { background: '#38bdf826', border: '1.5px solid #38bdf866', boxShadow: '0 0 14px rgba(56,189,248,0.4)' }
+                      ? { background: '#3b82f626', border: '1.5px solid #3b82f666', boxShadow: '0 0 14px rgba(59,130,246,0.4)' }
                       : { background: 'var(--theme-elevated)', border: '1.5px solid var(--theme-line)' }}>
                   {st === 'done'
-                    ? <Check size={16} className="text-duo-green drop-shadow-[0_0_6px_rgba(88,204,2,0.7)]" />
+                    ? <Check size={16} className="text-duo-green drop-shadow-[0_0_6px_var(--p-glow)]" />
                     : st === 'active'
-                      ? <Play size={14} className="text-neon-blue" fill="#38bdf8" />
+                      ? <Play size={14} className="text-neon-blue" fill="currentColor" />
                       : <Lock size={13} className="text-muted" />}
                 </div>
                 <div className="flex-1 min-w-0">

@@ -28,15 +28,15 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
         <DonutChart correct={correct} total={total} threshold={threshold} passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5">
-          <div className="rounded-2xl p-3 text-center border" style={{ background: '#1d3a24', borderColor: '#3f920255' }}>
+          <div className="rounded-2xl p-3 text-center border" style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', borderColor: 'rgb(var(--p-primary-rgb) / 0.30)' }}>
             <p className="text-base font-black text-duo-green leading-none">✓</p>
-            <p className="text-3xl font-black text-white mt-1">{correct}</p>
-            <p className="text-[11px] font-bold text-white/70 mt-1">{tt('correct')}</p>
+            <p className="text-3xl font-black text-fg mt-1">{correct}</p>
+            <p className="text-[11px] font-bold text-muted mt-1">{tt('correct')}</p>
           </div>
-          <div className="rounded-2xl p-3 text-center border" style={{ background: '#3a1d1d', borderColor: '#d93f3f55' }}>
+          <div className="rounded-2xl p-3 text-center border" style={{ background: 'rgba(239, 68, 68, 0.10)', borderColor: 'rgba(239, 68, 68, 0.30)' }}>
             <p className="text-base font-black text-duo-red leading-none">✗</p>
-            <p className="text-3xl font-black text-white mt-1">{wrong}</p>
-            <p className="text-[11px] font-bold text-white/70 mt-1">{tt('wrong')}</p>
+            <p className="text-3xl font-black text-fg mt-1">{wrong}</p>
+            <p className="text-[11px] font-bold text-muted mt-1">{tt('wrong')}</p>
           </div>
           <div className="rounded-2xl bg-elevated border border-line p-3 text-center">
             <p className="text-base font-black text-subtle leading-none">—</p>
@@ -50,7 +50,7 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
           {results.map((r, i) => (
             <button key={r.questionId} onClick={() => onGoToQuestion(i)}
               className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-all active:scale-90 ${
-                r.status === 'correct'   ? 'bg-duo-green text-white' :
+                r.status === 'correct'   ? 'bg-duo-green text-ponprimary' :
                 r.status === 'incorrect' ? 'bg-duo-red text-white'   :
                                            'bg-elevated text-muted'
               }`}>
