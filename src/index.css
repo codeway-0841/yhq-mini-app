@@ -318,7 +318,7 @@ body[data-theme='light'] {
    light mode'da HAM to'liq qo'llanadi. src/config/themes.ts bilan sinxron! */
 
 /* 🌌 Aurora — neon yashil + chuqur ko'k-yashil atmosfera (AI: cyan) */
-body[data-accent='aurora'] {
+body[data-theme='dark'][data-accent='aurora'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #00ffa3; --p-on-primary: #032118; --p-glow: rgba(0, 255, 163, 0.35); --p-primary-rgb: 0 255 163;
@@ -328,7 +328,7 @@ body[data-accent='aurora'] {
 }
 
 /* 🍇 Amethyst — binafsha AI atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
-body[data-accent='violet'] {
+body[data-theme='dark'][data-accent='violet'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(168, 85, 247, 0.35); --p-primary-rgb: 168 85 247;
@@ -337,7 +337,7 @@ body[data-accent='violet'] {
 }
 
 /* 🌊 Ocean — deep blue (glow'siz, toza; AI: indigo) */
-body[data-accent='ocean'] {
+body[data-theme='dark'][data-accent='ocean'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #38bdf8; --p-on-primary: #062033; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 56 189 248;
@@ -347,7 +347,7 @@ body[data-accent='ocean'] {
 }
 
 /* 🌲 Forest — emerald + tabiiy chuqur yashil (AI: teal) */
-body[data-accent='forest'] {
+body[data-theme='dark'][data-accent='forest'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #34d399; --p-on-primary: #03251a; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 52 211 153;
@@ -357,7 +357,7 @@ body[data-accent='forest'] {
 }
 
 /* 🌅 Sunset — orange + iliq atmosfera (yumshoq glow; AI: pink) */
-body[data-accent='sunset'] {
+body[data-theme='dark'][data-accent='sunset'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #fb923c; --p-on-primary: #2a1200; --p-glow: rgba(251, 146, 60, 0.28); --p-primary-rgb: 251 146 60;
@@ -377,7 +377,7 @@ body[data-accent='sakura'] {
 }
 
 /* 🌑 Obsidian — premium sof qora (glow'siz, oq-kumush aksent; AI: sof kulrang) */
-body[data-accent='obsidian'] {
+body[data-theme='dark'][data-accent='obsidian'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #e4e4e7; --p-on-primary: #09090b; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 228 228 231;
@@ -388,7 +388,7 @@ body[data-accent='obsidian'] {
 }
 
 /* 🥇 Gold Elite — qora + oltin (id "gold" saqlangan — eski tanlovlar uchun) */
-body[data-accent='gold'] {
+body[data-theme='dark'][data-accent='gold'] {
   --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
   --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
   --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.22); --p-primary-rgb: 250 204 21;
@@ -397,9 +397,22 @@ body[data-accent='gold'] {
 }
 
 /* 🩵 Payme — rasmiy brend rangi #00c0c9 (payme.uz tile-color, glow'siz) */
-body[data-accent='payme'] {
+body[data-theme='dark'][data-accent='payme'] {
   --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 0 192 201;
 }
+
+/* ── LIGHT rejim + premium tema: atmosfera o'rniga FAQAT aksent rang ─────────
+   (light fon saqlanadi; aksent kontrast uchun biroz to'qlashtirilgan) */
+body[data-theme='light'][data-accent='aurora']   { --p-primary: #00d389; --p-on-primary: #032118; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 211 137; }
+body[data-theme='light'][data-accent='violet']   { --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 168 85 247; }
+body[data-theme='light'][data-accent='ocean']    { --p-primary: #0ea5e9; --p-on-primary: #062033; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 14 165 233; }
+body[data-theme='light'][data-accent='forest']   { --p-primary: #10b981; --p-on-primary: #04291c; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 16 185 129; }
+body[data-theme='light'][data-accent='sunset']   { --p-primary: #f97316; --p-on-primary: #2a1200; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 249 115 22; }
+body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
+body[data-theme='light'][data-accent='obsidian'] { --p-primary: #27272a; --p-on-primary: #fafafa; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 39 39 42; }
+body[data-theme='light'][data-accent='gold']     { --p-primary: #eab308; --p-on-primary: #241a00; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 234 179 8; }
+body[data-theme='light'][data-accent='payme']    { --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 192 201; }
+
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
 .glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }

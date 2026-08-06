@@ -42,7 +42,7 @@ describe('config/themes — data integrity', () => {
     const css = readFileSync(resolve(__dirname, '../../../src/index.css'), 'utf8')
     for (const t of ACCENT_THEMES) {
       if (t.id === DEFAULT_ACCENT) continue
-      expect(css).toContain(`body[data-accent='${t.id}']`)
+      expect(css).toContain(`data-accent='${t.id}']`)
     }
   })
 })
