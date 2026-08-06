@@ -19,7 +19,8 @@ const Belgilar        = lazy(() => import('./features/signs/Belgilar'))
 const Profil          = lazy(() => import('./features/profile/Profil'))
 const TopicsPage      = lazy(() => import('./features/topics/TopicsPage'))
 const AdaptivePage    = lazy(() => import('./features/adaptive/AdaptivePage'))
-const OctagonPage     = lazy(() => import('./features/octagon/OctagonPage'))
+const OctagonPage    = lazy(() => import('./features/octagon/OctagonPage'))
+const AdminPage      = lazy(() => import('./features/admin/AdminPage'))
 const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPage'))
 const XatolarPage     = lazy(() => import('./features/mistakes/XatolarPage'))
 const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
@@ -104,6 +105,7 @@ function Layout() {
             <Route path="/reyting"    element={<LeaderboardPage />} />
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />
+            <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
         </Suspense>

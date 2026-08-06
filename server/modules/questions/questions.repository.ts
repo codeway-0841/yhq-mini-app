@@ -32,6 +32,12 @@ export const questionsRepository = {
     return cached('topics:all', () => db.select().from(topics))
   },
 
+  /** Admin CRUD'dan keyin cache'ni tozalash — aks holda 5 daqiqagacha
+      eski savollar qaytadi (TTL 300s) */
+  invalidateCache() {
+    cache.clear()
+  },
+
   /** Statik tushuntirish (free foydalanuvchilar uchun AI Tutor o'rniga) — yo'q bo'lsa null */
   findExplanation(questionId: number): Promise<{ explanationUz: string; explanationRu: string } | null> {
     return cached(`explanation:${questionId}`, async () => {

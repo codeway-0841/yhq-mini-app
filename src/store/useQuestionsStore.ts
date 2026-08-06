@@ -13,12 +13,19 @@ interface QuestionsState {
   /** Qaysi fan uchun yuklangan (subject almashganda qayta yuklanadi). */
   subjectId: string
   load:      (lang: 'uz' | 'ru', subjectId?: string) => Promise<void>
+  /** Admin CRUD'dan keyin cache'dan qat'iatan qayta yuklash (force) */
+  reload:    () => Promise<void>
   /** Re-map already-fetched questions to another language — no network call. */
   setLang:   (lang: 'uz' | 'ru') => void
 }
 
 // Raw DB questions are kept here so language switches don't need a re-fetch.
 let rawQuestions: DbQuestion[] = []
+
+/** Admin panel uchun raw (til-mapping'siz) savollar. load() dan keyin to'la. */
+export function getRawQuestions(): DbQuestion[] {
+  return rawQuestions
+}
 
 export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   questions: [],
@@ -44,6 +51,12 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     } finally {
       set({ loading: false })
     }
+  },
+
+  async reload() {
+    const { lang, subjectId } = get()
+    set({ loaded: false }) // load() ichidagi early-return'ni chetlab o'tish
+    await get().load(lang, subjectId)
   },
 
   setLang(lang) {

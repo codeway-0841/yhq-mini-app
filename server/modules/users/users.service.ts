@@ -25,6 +25,7 @@ export function toApiUser(row: UserRow) {
     photoUrl:  row.photoUrl  ?? '',
     phone:     row.phone     ?? null,
     tariff:    isPremium ? 'premium' as const : 'free' as const,
+    isAdmin:   row.isAdmin,
   }
 }
 

@@ -30,6 +30,7 @@ import dailyRouter       from './modules/daily/daily.router'
 import cronRouter        from './modules/cron/cron.router'
 import achievementsRouter from './modules/achievements/achievements.router'
 import tutorRouter        from './modules/tutor/tutor.router'
+import adminRouter        from './modules/admin/admin.router'
 
 export function createApp() {
   const app = express()
@@ -86,6 +87,7 @@ export function createApp() {
   app.use('/api', dailyRouter)
   app.use('/api', achievementsRouter)
   app.use('/api', tutorRouter)
+  app.use('/api', adminRouter)
 
   // 404 catch-all for unmatched /api routes
   app.use('/api', (_req, res) => {

@@ -19,6 +19,8 @@ export const users = pgTable('users', {
   tariff:    tariffEnum('tariff').default('free').notNull(),
   /** Referal mukofoti: shu san'gacha premium (tariff='premium' umrbod ham bor) */
   premiumUntil: timestamp('premium_until'),
+  /** Admin panel ruxsati (savol CRUD). Faqat qo'lda DB orqali beriladi. */
+  isAdmin:    boolean('is_admin').default(false).notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 })

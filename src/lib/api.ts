@@ -49,6 +49,8 @@ export interface ApiUser {
   photoUrl: string | undefined
   phone: string | undefined
   tariff: 'free' | 'premium'
+  /** Admin panel (savol CRUD) huquqi */
+  isAdmin?: boolean
 }
 
 export interface ApiProgress {
@@ -179,6 +181,16 @@ export const api = {
 
   touchDailyActivity: (userId: string, data: { date: string; subjectId: string; answered?: number; correct?: number }) =>
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
+
+  // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
+  createQuestion: (data: Omit<DbQuestion, 'id'> & { id?: number }) =>
+    request<{ id: number; created: true }>('POST', '/admin/questions', data),
+  updateQuestion: (id: number, data: Omit<DbQuestion, 'id'>) =>
+    request<{ id: number; updated: true }>('PUT', `/admin/questions/${id}`, data),
+  deleteQuestion: (id: number) =>
+    request<void>('DELETE', `/admin/questions/${id}`),
+  getQuestionsMeta: () =>
+    request<{ total: number; withTopic: number }>('GET', '/admin/questions/meta'),
 }
 
 export interface DailyState {

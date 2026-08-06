@@ -496,6 +496,18 @@ export default function Profil() {
       {/* ── YUTUQLAR (server metrikalari asosidagi badge'lar) ── */}
       <AchievementsSection lang={settings.language} tt={tt} userId={user?.id} />
 
+      {/* ── ADMIN (faqat is_admin foydalanuvchilariga ko'rinadi) ── */}
+      {user?.isAdmin && (
+        <Section title="ADMIN">
+          <Item
+            icon={Pencil} iconBg="bg-duo-purple"
+            label="Savollar boshqaruvi"
+            right={<ChevronRight size={16} className="text-muted" />}
+            onPress={() => navigate('/admin')}
+          />
+        </Section>
+      )}
+
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
         <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
