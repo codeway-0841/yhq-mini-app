@@ -135,6 +135,9 @@ const UZ = {
   achOctagon10: "Oktagon'da 10 g'alaba", achAllSubj80: "Barcha fanlardan 80%+",
   premiumMistakesTitle: "Xatolar tahlili — Premium", 
   premiumMistakesDesc: "Mavzular kesimida xatolar va eng qiyin savollar tahlili. Premium bilan ochiladi.",
+  refTitle: "Do'stni taklif qiling", refBtn: "Taklif qilish",
+  refDesc: "Do'stingiz link orqali birinchi marta kirsa — sizga +3 kun Premium!",
+  refShareText: "YHQ Test — imtihonga birga tayyorlanamiz! Mening linkim orqali kiring:",
   // Haftalik liga
   leagueTab: "Liga", allTimeTab: "Umumiy",
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
@@ -268,6 +271,9 @@ const RU: Record<Keys, string> = {
   achOctagon10: "10 побед в Октагоне", achAllSubj80: "80%+ по всем предметам",
   premiumMistakesTitle: "Анализ ошибок — Premium",
   premiumMistakesDesc: "Разбор ошибок по темам и самые сложные вопросы. Доступно с Premium.",
+  refTitle: "Пригласите друга", refBtn: "Пригласить",
+  refDesc: "Друг впервые войдёт по вашей ссылке — вам +3 дня Premium!",
+  refShareText: "YHQ Test — готовимся к экзамену вместе! Входите по моей ссылке:",
   // Недельная лига
   leagueTab: "Лига", allTimeTab: "Всё время",
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",

@@ -17,6 +17,8 @@ export const users = pgTable('users', {
   photoUrl:  text('photo_url').default(''),
   phone:     text('phone'),
   tariff:    tariffEnum('tariff').default('free').notNull(),
+  /** Referal mukofoti: shu san'gacha premium (tariff='premium' umrbod ham bor) */
+  premiumUntil: timestamp('premium_until'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 })
@@ -80,6 +82,14 @@ export const savedQuestions = pgTable('saved_questions', {
   userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
   questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
 }, (t) => [unique('uq_saved').on(t.userId, t.questionId)])
+
+/** Referal qaydlari — referee faqat bir marta hisoblanadi (anti-farm). */
+export const referrals = pgTable('referrals', {
+  id:         serial('id').primaryKey(),
+  referrerId: bigint('referrer_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  refereeId:  bigint('referee_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [unique('uq_referral_referee').on(t.refereeId)])
 
 /** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
 export const analyticsEvents = pgTable('analytics_events', {  id:        serial('id').primaryKey(),

@@ -178,6 +178,12 @@ export default function App() {
       if (useAppStore.getState().user) {
         useAppStore.setState({ initialized: true })
       }
+
+      // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link)
+      const refQ = new URLSearchParams(window.location.search).get('ref')
+      const startParam =
+        tg?.initDataUnsafe?.start_param ??
+        (refQ && /^\d{1,19}$/.test(refQ) ? `ref_${refQ}` : undefined)
       // TEZKOR OCHILISH: savollar serverini init bilan PARALLEL yuklaymiz.
       // Cache'dagi (persist) til — odatda serverdagi bilan bir xil (load ichida dedupe bor).
       const qPromise = loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
@@ -187,6 +193,7 @@ export default function App() {
         last_name:  tgUser.last_name  ?? '',
         username:   tgUser.username   ?? '',
         photo_url:  tgUser.photo_url  ?? '',
+        ...(startParam ? { start_param: startParam } : {}),
       })
         .then(async (data) => {
           try {

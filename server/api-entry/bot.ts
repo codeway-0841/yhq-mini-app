@@ -82,6 +82,16 @@ bot.command('start', async (ctx) => {
     await sendPremiumInvoice(ctx)
     return
   }
+  // Referal link: t.me/bot?start=ref_<id> → ilovaga ?ref= orqali o'tkazamiz
+  if (param && /^ref_\d{1,19}$/.test(param)) {
+    const refId = param.slice(4)
+    await ctx.reply(
+      "🚗 Do'stingiz sizni YHQ Test'ga taklif qilганi uchun mukofot beriladi!\n\n" +
+      "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
+      { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
+    )
+    return
+  }
   if (param && /^duel-[a-z0-9]{6,16}$/.test(param)) {
     await ctx.reply(
       '🤺 Duelga taklif qilindingiz! Quyidagi tugmani bosib raqibingizga qo\'shiling:',

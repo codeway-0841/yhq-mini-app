@@ -7,13 +7,16 @@
  */
 
 import { z }                      from 'zod'
-import { usersRepository }        from './users.repository'
+import { usersRepository, referralsRepository } from './users.repository'
 import { users, progress, userSettings } from '../../schema'
 
 type UserRow = typeof users.$inferSelect
 
 /** JSON-safe user shape (bigint id → string) — matches the frontend ApiUser type. */
 export function toApiUser(row: UserRow) {
+  // Effective premium: lifetime tarif YOKI referal mukofot muddati tugamagan
+  const isPremium = row.tariff === 'premium'
+    || (row.premiumUntil != null && row.premiumUntil > new Date())
   return {
     id:        String(row.id),
     firstName: row.firstName,
@@ -21,7 +24,7 @@ export function toApiUser(row: UserRow) {
     username:  row.username  ?? '',
     photoUrl:  row.photoUrl  ?? '',
     phone:     row.phone     ?? null,
-    tariff:    row.tariff,
+    tariff:    isPremium ? 'premium' as const : 'free' as const,
   }
 }
 
@@ -65,7 +68,9 @@ export const InitInputSchema = z.object({
   first_name: z.string().min(1),
   last_name:  z.string().optional().default(''),
   username:   z.string().optional().default(''),
-  photo_url:  z.string().optional().default(''),
+  photo_url: z.string().optional().default(''),
+  /** Telegram start_param — masalan `ref_<userId>` (referal) yoki `duel-xxx` */
+  start_param: z.string().max(64).optional(),
 })
 export type InitInput = z.infer<typeof InitInputSchema>
 
@@ -84,6 +89,7 @@ export const usersService = {
    */
   async init(raw: InitInput) {
     const uid = BigInt(raw.id)
+    const existing = await usersRepository.findById(uid)   // yangi foydalanuvchimi?
 
     const user = await usersRepository.upsert({
       id:        uid,
@@ -104,6 +110,17 @@ export const usersService = {
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
     ])
+
+    // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
+    // Referrerga +3 kun premium (mukofot bir martalik — referrals jadvali UNIQUE).
+    const refMatch = /^ref_(\d{1,19})$/.exec(raw.start_param ?? '')
+    if (refMatch && !existing) {
+      const referrerId = BigInt(refMatch[1])
+      if (referrerId !== uid && await usersRepository.findById(referrerId)) {
+        const created = await referralsRepository.tryCreate(referrerId, uid)
+        if (created) await usersRepository.extendPremium(referrerId, 3)
+      }
+    }
 
     return {
       user:           toApiUser(user),

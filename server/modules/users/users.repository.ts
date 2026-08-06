@@ -3,9 +3,9 @@
  * No business logic here; only SQL/Drizzle calls.
  */
 
-import { eq }    from 'drizzle-orm'
+import { eq, sql as sqlExpr } from 'drizzle-orm'
 import { db }    from '../../db/connection'
-import { users } from '../../schema'
+import { users, referrals } from '../../schema'
 
 export interface CreateOrUpdateUserInput {
   id:        bigint
@@ -13,6 +13,15 @@ export interface CreateOrUpdateUserInput {
   lastName:  string | null
   username:  string | null
   photoUrl:  string | null
+}
+
+export const referralsRepository = {
+  /** Referal qayd qiling (referee bir marta) — yangi qo'shilsa true */
+  async tryCreate(referrerId: bigint, refereeId: bigint): Promise<boolean> {
+    const rows = await db.insert(referrals).values({ referrerId, refereeId })
+      .onConflictDoNothing({ target: referrals.refereeId }).returning()
+    return rows.length > 0
+  },
 }
 
 export const usersRepository = {
@@ -57,5 +66,13 @@ export const usersRepository = {
   /** Tarifni yangilash — Premium sotib olinganda (bot payment handler). */
   async setTariff(id: bigint, tariff: 'free' | 'premium'): Promise<void> {
     await db.update(users).set({ tariff, updatedAt: new Date() }).where(eq(users.id, id))
+  },
+
+  /** Referal mukofoti: +N kun premium (mavjud muddat ustiga yig'iladi). */
+  async extendPremium(id: bigint, days: number): Promise<void> {
+    await db.update(users).set({
+      premiumUntil: sqlExpr`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
+      updatedAt:    new Date(),
+    }).where(eq(users.id, id))
   },
 }

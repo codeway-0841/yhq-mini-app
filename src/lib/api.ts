@@ -120,6 +120,7 @@ export const api = {
     last_name?: string
     username?: string
     photo_url?: string
+    start_param?: string
   }) => request<FullProfile>('POST', '/init', data),
 
   getProfile: (userId: string) =>

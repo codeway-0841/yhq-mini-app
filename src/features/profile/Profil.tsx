@@ -473,6 +473,26 @@ export default function Profil() {
           onPress={() => openTelegramLink('https://t.me/prava_oson_bot')} />
       </Section>
 
+      {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}
+      <div className="card-neon mx-4 mt-4 mb-1 flex items-center gap-3 px-4 py-3">
+        <div className="w-11 h-11 rounded-xl bg-duo-green/15 border border-duo-green/40 flex items-center justify-center flex-shrink-0">
+          <Share2 size={19} className="text-duo-green" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[13px] font-black text-fg">{tt('refTitle')}</p>
+          <p className="text-[10.5px] text-muted mt-0.5 leading-snug">{tt('refDesc')}</p>
+        </div>
+        <button type="button"
+          onClick={() => {
+            if (!user) return
+            shareUrl(`https://t.me/prava_oson_bot?start=ref_${user.id}`, tt('refShareText'))
+          }}
+          className="flex items-center gap-1.5 bg-duo-green text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
+          <Share2 size={13} />
+          {tt('refBtn')}
+        </button>
+      </div>
+
       {/* ── YUTUQLAR (server metrikalari asosidagi badge'lar) ── */}
       <AchievementsSection lang={settings.language} tt={tt} userId={user?.id} />
 
