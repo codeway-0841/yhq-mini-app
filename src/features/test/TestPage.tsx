@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2 } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
 import { playSound } from '../../lib/sounds'
+import { speak, stopSpeaking } from '../../lib/speech'
 import { shareUrl } from '../../lib/telegram'
 import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
@@ -262,6 +263,9 @@ export default function TestPage() {
   const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
+  // Savol almashganda / sahifadan chiqilganda ovoz to'xtatiladi (TTS)
+  useEffect(() => { stopSpeaking() }, [current])
+
   // Exit confirm: first tap shows the warning, second tap within 3 s really exits
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   // 🔥 Ketma-ket to'g'ri javoblar hisoblagichi (combo ovozi uchun)
@@ -367,10 +371,24 @@ export default function TestPage() {
       <div className="flex-1 overflow-y-auto px-4 pb-24">
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
           <div className="lg:col-start-1 lg:row-start-1">
-            <p className="text-center lg:text-left text-xs text-muted mb-2 font-medium">
-              {current + 1} / {activeQuestions.length}
-              {topicLabel ? ` · ${topicLabel}` : ''}
-            </p>
+            <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
+              <p className="text-xs text-muted font-medium">
+                {current + 1} / {activeQuestions.length}
+                {topicLabel ? ` · ${topicLabel}` : ''}
+              </p>
+              {/* 🔊 Ovozli o'qish (TTS) */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  speak(q.text, settings?.language ?? 'uz')
+                  playSound('click')
+                }}
+                aria-label={settings?.language === 'ru' ? 'Озвучить вопрос' : "Savolni o'qib berish"}
+                className="w-6 h-6 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg active:scale-90 transition-all"
+              >
+                <Volume2 size={12} />
+              </button>
+            </div>
             <p className={`text-center lg:text-left font-semibold mb-4 leading-snug ${
               fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-xl' : 'text-base'
             }`}>
