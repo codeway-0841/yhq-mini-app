@@ -566,7 +566,7 @@ export default function Dashboard() {
           <p className="text-[13px] font-bold text-pfg">Premium</p>
           <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
         </div>
-        <button onClick={() => { track('premium_click'); showToast(tt('comingSoonD')) }}
+        <button onClick={() => { track('premium_click'); navigate('/premium') }}
           className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
           {tt('tryWord')}
         </button>
