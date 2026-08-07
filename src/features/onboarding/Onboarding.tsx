@@ -60,7 +60,6 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
           src="/images/splash-brand.webp"
           alt="KIWI"
           className="w-[290px] rounded-[2rem] animate-fadeIn"
-          style={{ boxShadow: '0 20px 50px -16px rgba(0, 0, 0, 0.55)' }}
         />
       </div>
 
