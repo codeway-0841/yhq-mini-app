@@ -326,9 +326,9 @@ export default function OctagonPage() {
               className="btn-neon font-bold px-8 py-3.5 rounded-xl text-base disabled:opacity-50 disabled:cursor-not-allowed">
               {tt('findOpponent')}
             </button>
-            {/* Do'st bilan duel — invite link orqali */}
+            {/* Do'st bilan duel — invite link orqali (secondary) */}
             <button onClick={startDuel} disabled={conn === 'failed'}
-              className="flex items-center gap-2 border border-purple-500/50 text-purple-300 font-bold px-6 py-3 rounded-xl text-sm active:scale-95 transition-all disabled:opacity-50">
+              className="flex items-center gap-2 border border-line text-fg font-bold px-6 py-3 rounded-xl text-sm active:scale-95 transition-all disabled:opacity-50">
               <UserPlus size={16} />
               {tt('duelWithFriend')}
             </button>

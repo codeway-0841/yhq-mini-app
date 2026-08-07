@@ -18,12 +18,12 @@ import { useAppStore } from '../../store/useAppStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 
-/** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) */
+/** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
   switch (level) {
-    case 3:  return '#3d9603'
-    case 2:  return 'rgba(88, 204, 2, 0.55)'
-    case 1:  return 'rgba(88, 204, 2, 0.28)'
+    case 3:  return 'color-mix(in srgb, var(--p-primary) 88%, #000)'
+    case 2:  return 'rgb(var(--p-primary-rgb) / 0.55)'
+    case 1:  return 'rgb(var(--p-primary-rgb) / 0.28)'
     default: return 'var(--theme-elevated, rgba(148,163,184,0.08))'
   }
 }
@@ -177,7 +177,7 @@ export default function StreakPage() {
               <button key={date} disabled={future}
                 onClick={() => setSelected(date)}
                 className={`aspect-square rounded-xl flex items-center justify-center text-[13px] font-bold transition-all ${
-                  isSel ? 'ring-2 ring-duo-green text-fg scale-105' : level > 0 ? 'text-white' : 'text-subtle'
+                  level > 0 ? 'text-ponprimary' : 'text-subtle'} ${isSel ? 'ring-2 ring-duo-green scale-105' : ''
                 } ${isNow && !isSel ? 'ring-1 ring-duo-blue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
                 style={{ background: heatBg(level) }}>
                 {Number(date.slice(8))}
