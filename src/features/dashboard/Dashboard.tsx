@@ -113,25 +113,21 @@ const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, t
 })
 
 // ── Hero: bugungi progress (ring + minimal statistika) ──────────────────────
-const DAILY_GOAL = 20   // kunlik maqsad: 20 savol
-
-const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, dailyAnswered, streak, lang, onStreakPreview }: {
-  totalCorrect: number; totalWrong: number; totalAnswered: number; dailyAnswered: number; streak: number
+const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang, onStreakPreview }: {
+  totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
+  totalPool: number
   lang: 'uz' | 'ru'
   onStreakPreview?: () => void
 }) {
   const tt = useT(lang)
   const navigate = useNavigate()
+  const total    = totalPool > 0 ? totalPool : 0
   const accuracy = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
   const xp       = totalCorrect * 10
   const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
-  // Kunlik maqsad halqasi: bugun nechta savol yechildi (X/20)
-  const goalPct  = Math.min(100, Math.round((dailyAnswered / DAILY_GOAL) * 100))
-  const goalDone = dailyAnswered >= DAILY_GOAL
-
-  // Count-up animatsiya — sahifa ochilganda halqa "o'sib" chiqadi
-  const shown    = useCountUp(goalPct, 900)
+  // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
+  const shown    = useCountUp(accuracy, 900)
 
   // Ring chart geometriyasi (SVG)
   const R = 36, C = 2 * Math.PI * R
@@ -141,22 +137,15 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, d
     <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden"
       style={{ boxShadow: '0 0 44px -12px var(--p-glow), inset 0 1px 0 rgba(255,255,255,0.03), 0 10px 28px rgba(2,6,16,0.30)' }}>
       <div className="flex items-center justify-between gap-4">
-        {/* Chap: kunlik maqsad */}
+        {/* Chap: foiz + ma'lumot */}
         <div className="flex-1 min-w-0">
-          <p className="text-[12px] font-medium text-psubtle mb-1.5">
-            {lang === 'ru' ? 'Дневная цель' : 'Kunlik maqsad'}
-          </p>
-          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">
-            {dailyAnswered}<span className="text-[16px] text-psubtle font-semibold">/{DAILY_GOAL}</span>
-            {goalDone && <span className="ml-1.5">✓</span>}
-          </p>
+          <p className="text-[12px] font-medium text-psubtle mb-1.5">{tt('todayProgress')}</p>
+          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">{shown}%</p>
           <p className="text-[12px] font-medium text-pmuted mt-2">
-            {goalDone
-              ? (lang === 'ru' ? 'Цель выполнена 🎉' : 'Maqsad bajarildi 🎉')
-              : `${lang === 'ru' ? 'вопросов сегодня' : 'savol bugun'} · ${lang === 'ru' ? 'точность' : 'aniqlik'} ${accuracy}%`}
+            {totalAnswered} / {total || '…'} {tt('question').toLowerCase()}
           </p>
         </div>
-        {/* O'ng: maqsad halqasi (aksent rang) */}
+        {/* O'ng: ring chart (aksent rang) */}
         <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0"
           style={{ filter: 'drop-shadow(0 0 12px var(--p-glow))' }}>
           <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-line)" strokeWidth="8" />
@@ -544,21 +533,6 @@ export default function Dashboard() {
   const subject  = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
   const dailyStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
-  const todayAnswered = useDailyStore((s) => s.todayAnswered)
-  const [goalToast, setGoalToast] = useState(false)
-
-  // 🎯 Kunlik maqsad (20 savol) bajarilganda — 1 marta confetti + ovoz
-  useEffect(() => {
-    if (todayAnswered < DAILY_GOAL) return
-    try {
-      const key = `yhq-goal-${todayStr()}`
-      if (localStorage.getItem(key)) return
-      localStorage.setItem(key, '1')
-      setGoalToast(true)
-      playSound('win')
-      setTimeout(() => setGoalToast(false), 3500)
-    } catch { /* jim */ }
-  }, [todayAnswered])
   const questionsCount = useQuestionsStore((s) => s.questions.length)
 
   // Serverdan bugungi holatni tortish (kun yoki fan o'zgarsa qayta)
@@ -723,8 +697,8 @@ export default function Dashboard() {
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
             totalAnswered={totalAnswered}
-            dailyAnswered={todayAnswered}
             streak={dailyStreak}
+            totalPool={questionsCount}
             lang={settings.language}
             onStreakPreview={() => setMilestone(Math.max(dailyStreak, 7))}
           />
@@ -807,17 +781,6 @@ export default function Dashboard() {
         <div className="fixed bottom-20 left-5 right-5 card-premium text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-40 animate-premiumIn">
           {toast}
         </div>
-      )}
-
-      {/* 🎯 Kunlik maqsad bajarilganda */}
-      {goalToast && (
-        <>
-          <Confetti count={30} />
-          <div className="fixed bottom-20 left-5 right-5 card-premium text-pfg text-xs font-bold px-4 py-3 rounded-2xl text-center z-40 animate-premiumIn"
-            style={{ borderColor: 'rgb(var(--p-primary-rgb) / 0.5)' }}>
-            🎯 {settings.language === 'ru' ? "Дневная цель выполнена — 20 вопросов!" : "Kunlik maqsad bajarildi — 20 savol!"}
-          </div>
-        </>
       )}
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}

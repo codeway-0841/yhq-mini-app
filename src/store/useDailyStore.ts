@@ -29,8 +29,6 @@ interface DailyState {
   streaks: Record<string, number>
   /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` (kunda 1 marta yuborish uchun) */
   activityKey: string | null
-  /** Bugun HAMMA fanlarda JAMI javoblangan savollar (kunlik maqsad ringi uchun) */
-  todayAnswered: number
 
   /** Serverdan bugungi holatni tortadi (xato bo'lsa sokin o'tkazadi) */
   sync: (userId: string, date: string, subjectId: string) => Promise<void>
@@ -47,17 +45,12 @@ export const useDailyStore = create<DailyState>()(
     (set) => ({
       streaks: {},
       activityKey: null,
-      todayAnswered: 0,
 
       sync: async (userId, date, subjectId) => {
         if (!userId || userId === '0') return // ghost user — faqat lokal
         try {
           const data = await api.getDaily(userId, date, subjectId)
-          set((s) => ({
-            streaks: { ...s.streaks, [subjectId]: data.dailyStreak },
-            // Server bugungi JAMI savollar sonini qaytaradi (record.answered)
-            todayAnswered: data.record?.answered ?? 0,
-          }))
+          set((s) => ({ streaks: { ...s.streaks, [subjectId]: data.dailyStreak } }))
         } catch { /* offline — eski lokal holatda qolamiz */ }
       },
 
@@ -75,7 +68,6 @@ export const useDailyStore = create<DailyState>()(
           set((s) => ({
             activityKey: key,
             streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
-            todayAnswered: s.todayAnswered + (delta?.answered ?? 0),
           }))
         } catch { /* offline — keyingi urinishda belgilanadi */ }
       },
