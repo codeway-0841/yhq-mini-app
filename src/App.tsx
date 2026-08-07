@@ -28,6 +28,7 @@ const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
 const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
 const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
+const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
 const NotFound        = lazy(() => import('./components/NotFound'))
 
 type TelegramWindow = Window & {
@@ -112,6 +113,7 @@ function Layout() {
             <Route path="/premium"    element={<PremiumPage />} />
             <Route path="/statistika" element={<StatistikaPage />} />
             <Route path="/speed"      element={<SpeedPage />} />
+            <Route path="/flashcards" element={<FlashcardsPage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>

@@ -605,6 +605,30 @@ body[data-theme='light'] .progress-premium { background: #e8eef5; }
 }
 body[data-no-animation='true'] .confetti-piece { display: none; }
 
+/* ── Flashcard flip (3D aylanish) — faqat CSS ───────────────────────────── */
+.flip-card {
+  perspective: 1200px;
+}
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.45s cubic-bezier(0.34, 1.3, 0.64, 1);
+}
+.flip-inner.flipped {
+  transform: rotateY(180deg);
+}
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back {
+  transform: rotateY(180deg);
+}
+
 /* ── Mikro-harakat: sahifa ichki kirish (spring'ga yaqin) ────────────────── */
 @keyframes premiumIn {
   from { opacity: 0; transform: translateY(14px) scale(0.99); }
