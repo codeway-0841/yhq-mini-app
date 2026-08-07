@@ -191,13 +191,21 @@ export default function OctagonPage() {
     setAttempt((a) => a + 1)
   }, [])
 
-  // Render free tier uxlashidan oldin "pre-warm": sahifa ochilganda
-  // WS serverni uyg'otamiz (/health ping) — "aloqa uzildi" xatosi kamayadi
+  // Render free tier "uxlashi"ga qarshi keep-alive: sahifa ochiq turganida
+  // har 4 daqiqada /health ping — server uxlashga ulgurmaydi (bepl keep-alive).
   useEffect(() => {
+    let ping: (() => void) | null = null
     try {
       const httpBase = config.wsUrl.replace(/^wss:/, 'https:').replace(/^ws:/, 'http:')
-      void fetch(new URL('/health', httpBase).toString()).catch(() => {})
+      ping = () => void fetch(new URL('/health', httpBase).toString()).catch(() => {})
     } catch { /* jim */ }
+    if (!ping) return
+    ping() // darhol uyg'otish
+    const id = setInterval(() => {
+      // faqat sahifa ko'rinayotganda (fonda battery tejash)
+      if (document.visibilityState === 'visible') ping()
+    }, 4 * 60 * 1000)
+    return () => clearInterval(id)
   }, [])
 
   useEffect(() => {
