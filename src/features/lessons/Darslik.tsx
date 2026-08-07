@@ -49,7 +49,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
 
       <div className="flex-1 overflow-y-auto px-4 py-4 pb-6">
         {/* Video karta (video kelguncha — nomli karta) */}
-        <div className="rounded-2xl bg-white aspect-video flex items-center justify-center relative overflow-hidden mb-4">
+        <div className="rounded-2xl bg-surface border border-line aspect-video flex items-center justify-center relative overflow-hidden mb-4">
           <p className="text-2xl font-black px-6 text-center" style={{ color: mod.color }}>
             {ru ? lesson.titleRu : lesson.titleUz}
           </p>
@@ -112,9 +112,9 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         )}
       </div>
 
-      {/* progress bar */}
+      {/* progress bar — o'qish progressi (aksent) */}
       <div className="h-1 bg-elevated">
-        <div className="h-full transition-all" style={{ width: `${((idx + 1) / list.length) * 100}%`, background: mod.color }} />
+        <div className="h-full transition-all" style={{ width: `${((idx + 1) / list.length) * 100}%`, background: 'var(--p-primary)' }} />
       </div>
     </div>
   )
@@ -298,7 +298,7 @@ export default function Darslik() {
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="text-muted hover:text-fg text-xl px-1">←</button>
-          <GraduationCap size={22} className="text-duo-blue" />
+          <GraduationCap size={22} className="text-ppurple" />
           <h1 className="text-xl font-black">{ru ? 'Учебник' : 'Darslik'}</h1>
         </div>
         <span className="text-sm font-bold text-muted bg-elevated px-3 py-1 rounded-full">

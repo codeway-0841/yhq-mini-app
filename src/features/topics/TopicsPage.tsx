@@ -64,7 +64,7 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
           <div className="text-right">
             <p className="text-[11px] font-black text-fg leading-none">{done}/{total}</p>
             <div className="w-20 h-1.5 rounded-full bg-line mt-1 overflow-hidden">
-              <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: mod.color, boxShadow: `0 0 6px ${mod.color}` }} />
+              <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
             </div>
           </div>
           <span className={`text-subtle transition-transform ${open ? 'rotate-180' : ''}`}>⌄</span>
@@ -104,7 +104,7 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
                 </div>
                 <div className="flex-shrink-0">
                   {st === 'done'
-                    ? <Check size={17} className="text-duo-green drop-shadow-[0_0_6px_rgba(88,204,2,0.6)]" />
+                    ? <Check size={17} className="text-duo-green drop-shadow-[0_0_6px_var(--p-glow)]" />
                     : st === 'locked'
                       ? <Lock size={14} className="text-muted" />
                       : null}
@@ -170,12 +170,12 @@ export default function TopicsPage() {
 
       {totalWrong > 0 && (
         <button onClick={startMistakes}
-          className="flex items-center justify-between w-full bg-red-900/30 border border-red-700/40 rounded-2xl px-4 py-3.5 mb-4 active:scale-[0.98] transition-transform">
-          <span className="flex items-center gap-2.5 text-sm font-bold text-red-300">
-            <HeartCrack size={18} />
+          className="flex items-center justify-between w-full bg-duo-red/10 border border-duo-red/30 rounded-2xl px-4 py-3.5 mb-4 active:scale-[0.98] transition-transform">
+          <span className="flex items-center gap-2.5 text-sm font-bold text-fg">
+            <HeartCrack size={18} className="text-duo-red" />
             {tt('fixMistakes')}
           </span>
-          <span className="bg-red-600 text-white text-xs font-bold px-2.5 py-0.5 rounded-full">
+          <span className="bg-duo-red text-white text-xs font-bold px-2.5 py-0.5 rounded-full">
             {totalWrong}
           </span>
         </button>
