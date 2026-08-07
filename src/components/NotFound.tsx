@@ -13,7 +13,7 @@ export default function NotFound() {
       <p className="text-sm text-muted mb-6">{tt('notFoundText')}</p>
       <button
         onClick={() => navigate('/', { replace: true })}
-        className="px-6 py-3 rounded-xl bg-duo-blue text-white font-bold">
+        className="px-6 py-3 rounded-xl bg-duo-green text-ponprimary font-bold">
         {tt('homeBtn')}
       </button>
     </div>

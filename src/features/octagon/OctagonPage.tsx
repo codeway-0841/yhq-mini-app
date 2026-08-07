@@ -323,7 +323,7 @@ export default function OctagonPage() {
               <p className="text-sm text-muted">Haqiqiy vaqtda raqib bilan bellashuv</p>
             </div>
             <button onClick={() => joinQueue()} disabled={conn === 'failed'}
-              className="bg-purple-600 text-white font-bold px-8 py-3.5 rounded-xl text-base shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] disabled:opacity-50 disabled:cursor-not-allowed transition-all">
+              className="btn-neon font-bold px-8 py-3.5 rounded-xl text-base disabled:opacity-50 disabled:cursor-not-allowed">
               {tt('findOpponent')}
             </button>
             {/* Do'st bilan duel — invite link orqali */}
@@ -359,7 +359,7 @@ export default function OctagonPage() {
                   {tt('duelInviteHint')}
                 </p>
                 <button onClick={() => shareUrl(duelLink, tt('duelInviteText'))}
-                  className="flex items-center gap-2 bg-duo-blue text-white font-bold px-5 py-2.5 rounded-xl text-[13px] active:scale-95 transition-transform">
+                   className="flex items-center gap-2 bg-duo-green text-ponprimary font-bold px-5 py-2.5 rounded-xl text-[13px] active:scale-95 transition-transform">
                   <Share2 size={15} />
                   {tt('duelShareBtn')}
                 </button>
@@ -466,7 +466,7 @@ export default function OctagonPage() {
                 className="flex-1 py-3 rounded-xl bg-elevated text-sm font-semibold">
                 Chiqish
               </button>
-              <button onClick={() => joinQueue()} className="flex-[2] py-3 rounded-xl bg-purple-600 text-white font-bold shadow-[0_4px_0_0_#7c3aed,0_0_22px_rgba(139,92,246,0.45)] active:translate-y-1 active:shadow-[0_0_22px_rgba(139,92,246,0.45)] transition-all">
+              <button onClick={() => joinQueue()} className="btn-neon flex-[2] py-3 rounded-xl font-bold">
                 Qayta o'ynash
               </button>
             </div>

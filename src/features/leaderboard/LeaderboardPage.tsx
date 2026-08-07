@@ -124,7 +124,7 @@ export default function LeaderboardPage() {
         {(['weekly', 'all'] as const).map((t) => (
           <button key={t} onClick={() => setTab(t)}
             className={`px-4 py-1.5 rounded-xl text-[13px] font-black transition-all ${
-              tab === t ? 'bg-duo-blue text-white' : 'bg-elevated text-subtle'
+              tab === t ? 'bg-duo-green text-ponprimary' : 'bg-elevated text-subtle'
             }`}>
             {t === 'weekly' ? tt('leagueTab') : tt('allTimeTab')}
           </button>
