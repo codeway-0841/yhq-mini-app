@@ -6,14 +6,18 @@
  *  - CTA → Telegram bot (to'lov Telegram Stars orqali)
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
-import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft } from 'lucide-react'
+import { useState } from 'react'
+import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft, Gift, Loader2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { api } from '../../lib/api'
 import { openTelegramLink } from '../../lib/telegram'
 import { ACCENT_THEMES } from '../../config/themes'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PlanKey } from '../../../shared/premium-plans'
+import { playSound } from '../../lib/sounds'
 import { track } from '../../lib/analytics'
+import Confetti from '../../components/Confetti'
 
 const BENEFITS = [
   { icon: Sparkles,  color: '#facc15', uz: 'Reklamasiz tajriba',          ru: 'Без рекламы' },
@@ -30,13 +34,44 @@ export default function PremiumPage() {
 
   const premiumThemes = ACCENT_THEMES.filter((t) => t.premium)
 
+  const [trialBusy, setTrialBusy]   = useState(false)
+  const [trialDone, setTrialDone]   = useState(false)
+  const [trialError, setTrialError] = useState<string | null>(null)
+  const userId = useAppStore((s) => s.user?.id)
+  const syncFromServer = useAppStore((s) => s.syncFromServer)
+
   const buy = (plan: PlanKey) => {
     track('premium_click', { plan })
     openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${plan}`)
   }
 
+  // 3 kunlik BEPUL trial — backend faqat 1 marta beradi
+  const startTrial = async () => {
+    if (!userId || trialBusy) return
+    setTrialBusy(true)
+    setTrialError(null)
+    try {
+      const r = await api.startTrial(userId)
+      if (r.granted) {
+        track('premium_trial_start')
+        playSound('win')
+        setTrialDone(true)
+        await syncFromServer(userId)  // tariff darhol yangilanadi
+      } else {
+        setTrialError(lang === 'ru'
+          ? 'Пробный период уже был использован'
+          : "Sinov muddati allaqachon ishlatilgan")
+      }
+    } catch {
+      setTrialError(lang === 'ru' ? 'Ошибка. Попробуйте ещё раз' : 'Xatolik. Qayta urinib ko\'ring')
+    } finally {
+      setTrialBusy(false)
+    }
+  }
+
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
+      {trialDone && <Confetti count={36} />}
       {/* Header */}
       <div className="flex items-center gap-2 px-5 pt-5 pb-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
@@ -112,6 +147,32 @@ export default function PremiumPage() {
           </div>
         ))}
       </div>
+
+      {/* 🎁 3 kunlik BEPUL trial — 1 marta */}
+      {!isPremium && !trialDone && (
+        <div className="mx-5 mt-4">
+          <button onClick={startTrial} disabled={trialBusy}
+            className="btn-neon w-full h-[58px] rounded-[18px] text-[15px] font-bold flex items-center justify-center gap-2 disabled:opacity-60">
+            {trialBusy ? <Loader2 size={19} className="animate-spin" /> : <Gift size={19} />}
+            {lang === 'ru' ? '🎁 3 дня Premium — бесплатно' : '🎁 3 kun Premium — BEPUL'}
+          </button>
+          {trialError && (
+            <p className="text-center text-[11.5px] text-pwarning font-medium mt-2">{trialError}</p>
+          )}
+          <p className="text-center text-[10.5px] text-psubtle mt-1.5">
+            {lang === 'ru' ? 'Один раз · без оплаты · отмена не нужна' : "Faqat 1 marta · to'lovsiz · bekor qilish shart emas"}
+          </p>
+        </div>
+      )}
+      {trialDone && (
+        <div className="mx-5 mt-4 card-premium p-4 text-center"
+          style={{ borderColor: 'rgba(34,197,94,0.4)' }}>
+          <p className="text-[14px] font-bold text-psuccess">🎉 {lang === 'ru' ? 'Пробный период активирован!' : 'Sinov muddati faollashdi!'}</p>
+          <p className="text-[11.5px] text-pmuted mt-1">
+            {lang === 'ru' ? '3 дня полного доступа ко всем функциям' : "3 kun davomida barcha funksiyalardan to'liq foydalaning"}
+          </p>
+        </div>
+      )}
 
       {/* Tarif rejalari */}
       {!isPremium && (

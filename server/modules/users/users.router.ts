@@ -65,4 +65,16 @@ router.patch(
   }),
 )
 
+// POST /api/users/:userId/trial — 3 kunlik bepul Premium trial (FAQAT 1 marta)
+router.post(
+  '/users/:userId/trial',
+  wrap(async (req, res) => {
+    const uid = parseBigInt(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const result = await usersService.startTrial(uid)
+    res.json(result)
+  }),
+)
+
 export default router

@@ -14,9 +14,9 @@
 
 import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
-import { gte, eq, and, lt, sql } from 'drizzle-orm'
+import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords, progress } from '../../schema'
+import { dailyRecords, progress, dailyStreaks } from '../../schema'
 import { config } from '../../config'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 
@@ -60,19 +60,39 @@ router.all('/cron/daily-reminder', async (req, res) => {
   const done = new Set(activeToday.map((r) => r.userId))
   const targets = [...new Set(recent.map((r) => r.userId))].filter((uid) => !done.has(uid))
 
+  // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
+  const streakRows = targets.length > 0
+    ? await db.select({ userId: dailyStreaks.userId, streak: sql<number>`MAX(${dailyStreaks.streak})` })
+        .from(dailyStreaks)
+        .where(inArray(dailyStreaks.userId, targets))
+        .groupBy(dailyStreaks.userId)
+    : []
+  const streakOf = new Map(streakRows.map((r) => [String(r.userId), Number(r.streak)]))
+
   const bot = new Bot(token)
   const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
-  const text =
-    `🔥 Kunlik seriyangizni yo'qotmang!\n\n` +
-    `Bugun hali mashq qilmadingiz — 2 daqiqalik test seriyangizni davom ettiradi. ` +
-    `1 kun o'tkazilsa intizom 0 ga tushadi!`
+  const textFor = (uid: bigint) => {
+    const s = streakOf.get(String(uid)) ?? 0
+    if (s > 0) {
+      return (
+        `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +
+        `Bugun hali mashq qilmadingiz — 2 daqiqalik test seriyangizni saqlab qoladi. ` +
+        `1 kun o'tkazilsa intizom 0 ga tushadi!`
+      )
+    }
+    return (
+      `🔥 Bugungi mashqni qolmang!\n\n` +
+      `2 daqiqalik kichik test — katta natijaga birinchi qadam. ` +
+      `Har kuni 1 savol = intizom seriyasi!`
+    )
+  }
 
   let sent = 0, blocked = 0, failed = 0
-  // Telegram limiti (~30 msg/s) uchun 20 talik batch'lar
+  // Telegram limiti (~30 msg/s) uchun 20 talik batch'lar (har userga personalized matn)
   for (let i = 0; i < targets.length; i += 20) {
     const batch = targets.slice(i, i + 20)
     const results = await Promise.allSettled(
-      batch.map((uid) => bot.api.sendMessage(Number(uid), text, { reply_markup: keyboard() })),
+      batch.map((uid) => bot.api.sendMessage(Number(uid), textFor(uid), { reply_markup: keyboard() })),
     )
     for (const r of results) {
       if (r.status === 'fulfilled') sent++

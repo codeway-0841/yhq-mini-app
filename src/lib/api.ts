@@ -149,6 +149,10 @@ export const api = {
   updatePhone: (userId: string, phone: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone }),
 
+  /** 3 kunlik bepul Premium trial (FAQAT 1 marta — backend tekshiradi) */
+  startTrial: (userId: string) =>
+    request<{ granted: boolean; reason?: 'already_used'; days: number }>('POST', `/users/${uid(userId)}/trial`, {}),
+
   getQuestions: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)

@@ -494,6 +494,33 @@ const MilestoneScene = memo(function MilestoneScene({ streak, lang, onClose }: {
   )
 })
 
+// ── Level-Up sahna — yangi darajaga yetganda ────────────────────────────────
+const LevelUpScene = memo(function LevelUpScene({ level, lang, onClose }: {
+  level: number; lang: 'uz' | 'ru'; onClose: () => void
+}) {
+  useEffect(() => { playSound('win') }, [])
+  return (
+    <div className="fixed inset-0 z-[70] flex items-center justify-center p-6">
+      <Confetti count={40} />
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative card-premium rounded-[28px] p-8 text-center max-w-[300px] w-full animate-premiumIn"
+        style={{ borderColor: 'rgb(var(--p-purple-rgb) / 0.40)', boxShadow: '0 0 60px -12px rgb(var(--p-purple-rgb) / 0.40)' }}>
+        <div className="text-6xl mb-3" style={{ filter: 'drop-shadow(0 0 16px rgb(var(--p-purple-rgb) / 0.7))' }}>🏆</div>
+        <p className="text-[13px] font-semibold text-ppurple uppercase tracking-[0.14em] mb-1">
+          {lang === 'ru' ? 'НОВЫЙ УРОВЕНЬ' : 'YANGI LEVEL'}
+        </p>
+        <p className="text-[42px] font-bold text-pfg leading-none tabular-nums">{level}</p>
+        <p className="text-[15px] font-semibold text-pmuted mt-1.5 mb-6">
+          {lang === 'ru' ? 'Так держать! Продолжайте в том же духе 🚀' : 'Barakalla! Xuddi shunday davom eting 🚀'}
+        </p>
+        <button onClick={onClose} className="btn-premium w-full h-[52px] rounded-2xl text-[14px]">
+          {lang === 'ru' ? 'Вперёд!' : 'Oldinga!'}
+        </button>
+      </div>
+    </div>
+  )
+})
+
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
@@ -501,6 +528,7 @@ export default function Dashboard() {
   const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
   const [milestone, setMilestone] = useState<number | null>(null)
+  const [levelUp, setLevelUp]     = useState<number | null>(null)
   const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, savedQuestions, wrongByTicket } = useAppStore()
   const subject  = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
@@ -512,6 +540,25 @@ export default function Dashboard() {
   useEffect(() => {
     if (userId) void useDailyStore.getState().sync(userId, todayStr(), subject.id)
   }, [userId, subject.id])
+
+  // ⬆️ Level-Up — yangi darajaga YETGANDA (oldin mavjud level'dan yuqori) nishonlash
+  const level = Math.floor(totalCorrect / 50) + 1
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('yhq-level-seen')
+      if (raw === null) {
+        // Birinchi ishga tushirish — mavjud foydalanuvchiga "tasodifiy" sahna chiqarmaslik
+        localStorage.setItem('yhq-level-seen', String(level))
+        return
+      }
+      const seen = Number(raw)
+      if (level > seen) {
+        localStorage.setItem('yhq-level-seen', String(level))
+        const t = setTimeout(() => setLevelUp(level), 700)
+        return () => clearTimeout(t)
+      }
+    } catch { /* jim */ }
+  }, [level])
 
   // Streak MILESTONE — birinchi marta yetganda to'liq ekranli nishonlash
   useEffect(() => {
@@ -740,6 +787,9 @@ export default function Dashboard() {
       {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
       {milestone !== null && (
         <MilestoneScene streak={milestone} lang={settings.language} onClose={() => setMilestone(null)} />
+      )}
+      {levelUp !== null && (
+        <LevelUpScene level={levelUp} lang={settings.language} onClose={() => setLevelUp(null)} />
       )}
     </div>
   )
