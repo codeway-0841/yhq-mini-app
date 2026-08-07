@@ -58,6 +58,28 @@ describe('effectiveStreak', () => {
   })
 })
 
+describe('🧊 Streak Freeze (premium 1 kunlik himoya)', () => {
+  it('effectiveStreak: aynan 1 kunlik uzilishda premium seriyasI SAQLANADI', () => {
+    expect(effectiveStreak('2026-08-02', '2026-08-04', 12, true)).toBe(12)
+  })
+  it('effectiveStreak: 2+ kunlik uzilishda premium HAM reset bo\'ladi', () => {
+    expect(effectiveStreak('2026-08-01', '2026-08-04', 12, true)).toBe(0)
+    expect(effectiveStreak('2026-01-01', '2026-08-04', 30, true)).toBe(0)
+  })
+  it('effectiveStreak: freeze FAQAT premium uchun (free = reset)', () => {
+    expect(effectiveStreak('2026-08-02', '2026-08-04', 12, false)).toBe(0)
+  })
+  it("calcNextStreak: freeze'da 1 kunlik uzilishdan keyin seriya DAVOM ETADI (+1)", () => {
+    expect(calcNextStreak('2026-08-02', '2026-08-04', 12, true)).toBe(13)
+  })
+  it("calcNextStreak: freeze'siz o'sha holat — 1 dan qayta", () => {
+    expect(calcNextStreak('2026-08-02', '2026-08-04', 12, false)).toBe(1)
+  })
+  it('calcNextStreak: 2+ kunlik uzilishda premium HAM 1 dan qayta', () => {
+    expect(calcNextStreak('2026-08-01', '2026-08-04', 12, true)).toBe(1)
+  })
+})
+
 describe('calcBestStreak', () => {
   it('bo\'sh ro\'yxat — 0', () => {
     expect(calcBestStreak([])).toBe(0)

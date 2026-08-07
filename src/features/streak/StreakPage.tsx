@@ -38,6 +38,7 @@ export default function StreakPage() {
   const navigate  = useNavigate()
   const lang      = useAppStore((s) => s.settings.language)
   const userId    = useAppStore((s) => s.user?.id)
+  const isPremium = useAppStore((s) => s.tariff === 'premium')
   const subject   = useSubjectStore((s) => s.subject)
   const tt        = useT(lang)
 
@@ -118,6 +119,16 @@ export default function StreakPage() {
             {tt('intizomBest')}: {history?.bestStreak ?? 0} {tt('daysWord')}
           </span>
         </div>
+        {/* 🧊 Streak Freeze — Premium himoya (1 kunlik chegara) */}
+        {isPremium && (
+          <div className="mt-2 flex items-center gap-1.5 rounded-full px-3.5 py-1.5"
+            style={{ background: 'rgba(59, 130, 246, 0.10)', border: '1px solid rgba(59, 130, 246, 0.3)' }}>
+            <span className="text-[12px]">🧊</span>
+            <span className="text-[11.5px] font-bold" style={{ color: '#3b82f6' }}>
+              {lang === 'ru' ? 'Заморозка серии активна (1 день)' : 'Streak Freeze faol (1 kun himoya)'}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Tanlangan kun statistikasi — server javobini kutishda skeleton (0'lar flash bo'lmasin) */}

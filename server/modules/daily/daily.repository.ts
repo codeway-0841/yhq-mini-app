@@ -13,7 +13,7 @@
 
 import { and, asc, eq, sql } from 'drizzle-orm'
 import { db }                      from '../../db/connection'
-import { dailyRecords, dailyStreaks } from '../../schema'
+import { dailyRecords, dailyStreaks, users } from '../../schema'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
 export function prevDate(date: string): string {
@@ -22,20 +22,42 @@ export function prevDate(date: string): string {
   return d.toISOString().slice(0, 10)
 }
 
-/** Yangi dailyStreak qiymati (sofun funksiya — unit test uchun ajratilgan) */
-export function calcNextStreak(lastDailyDate: string | null, date: string, current: number): number {
+/** Premium himoya (🧊 STREAK FREEZE): 1 kunlik uzilish kechiriladi —
+ *  seriya 0 GA TUSHMAYDI, faqat "muzlatilgan" holatda turadi.
+ *  2+ kunlik uzilish esa har qanday holatda ham reset. */
+export function isFrozenDay(lastDailyDate: string, today: string): boolean {
+  return lastDailyDate === prevDate(prevDate(today))
+}
+
+/** Effective premium: umrbod tarif YOKI muddati tugamagan obuna (trial/ref ham) */
+async function isPremiumUser(userId: bigint): Promise<boolean> {
+  const [row] = await db.select({ tariff: users.tariff, premiumUntil: users.premiumUntil })
+    .from(users).where(eq(users.id, userId))
+  return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
+}
+
+/** Yangi dailyStreak qiymati (sofun funksiya — unit test uchun ajratilgan)
+ *  `frozen` = user premium (1 kunlik chegara faol). */
+export function calcNextStreak(lastDailyDate: string | null, date: string, current: number, frozen = false): number {
   if (lastDailyDate === date)             return current      // shu kun allaqachon hisoblangan
   if (lastDailyDate === prevDate(date))   return current + 1  // seriya davomiy
+  // 🧊 Freeze: premium user 1 kun o'tkazsa ham seriya davom etadi (+1)
+  if (frozen && lastDailyDate && isFrozenDay(lastDailyDate, date)) return current + 1
   return 1                                                    // uzilishdan keyin qayta boshlash
 }
 
 /**
  * O'qishdagi streak: bir kun o'tkazib yuborilsa 0 ko'rsatadi (bazani yozmaydi —
  * keyingi faollikda calcNextStreak o'zi 1 dan qayta boshlaydi).
+ * `frozen` = premium: aynan 1 kunlik uzilishda reset YO'Q (sovuqlangan seriya turadi).
  */
-export function effectiveStreak(lastDailyDate: string | null, today: string, current: number): number {
+export function effectiveStreak(lastDailyDate: string | null, today: string, current: number, frozen = false): number {
   if (!lastDailyDate) return 0
-  if (lastDailyDate < prevDate(today)) return 0  // kamida 1 kun o'tkazilgan
+  if (lastDailyDate < prevDate(today)) {
+    // 🧊 Freeze: aynan 1 kun o'tkazilgan — Seriya saqlanadi (faqat premium)
+    if (frozen && lastDailyDate === prevDate(prevDate(today))) return current
+    return 0
+  }
   return current
 }
 
@@ -93,11 +115,11 @@ export const dailyRepository = {
       ),
     )
 
-    const row = await readStreak(userId, subjectId)
+    const [row, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
 
     return {
       record:      record ?? null,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0),
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, frozen),
     }
   },
 
@@ -127,9 +149,10 @@ export const dailyRepository = {
         },
       })
 
-    // 2) Streak yangilash (bugun allaqachon belgilangan bo'lsa — o'zgarishsiz)
-    const cur = await readStreak(userId, subjectId)
-    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0)
+    // 2) Streak yangilash (bugun allaqachon belgilangan bo'lsa — o'zgarishsiz;
+    //    🧊 premium freeze: 1 kunlik uzilishda seriya saqlanadi)
+    const [cur, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
+    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0, frozen)
 
     await db.insert(dailyStreaks).values({
       userId, subjectId, streak: nextStreak, lastDailyDate: date,
@@ -164,13 +187,13 @@ export const dailyRepository = {
       .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
       .orderBy(asc(dailyRecords.date))
 
-    const row = await readStreak(userId, subjectId)
+    const [row, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
     // Yozuv mavjud = o'sha kun faollik (1+ savol yoki dars) — bestStreak shu bo'yicha
     const activeDates = rows.map((r) => r.date)
 
     return {
       rows,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0),
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, frozen),
       bestStreak:  calcBestStreak(activeDates),
     }
   },
