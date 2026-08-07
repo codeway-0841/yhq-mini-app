@@ -19,6 +19,10 @@ import { parseBigInt }      from '../../utils/parse'
 import { db }   from '../../db/connection'
 import { questions, users } from '../../schema'
 import { config } from '../../config'
+import { tashkentDate } from '../../utils/date'
+import {
+  tutorUsageRepository, TUTOR_DAILY_USER_LIMIT, TUTOR_DAILY_GLOBAL_LIMIT, TUTOR_GLOBAL_USER_ID,
+} from './tutor.repository'
 
 const router = Router()
 
@@ -73,6 +77,14 @@ router.post(
     if (!uid) throw new AppError(401, 'telegram_user_not_identified')
 
     if (!(await isPremium(uid))) throw new AppError(403, 'premium_required')
+
+    // COST CONTROL: Gemini har chaqiruvda pul — premium bo'lsa ham kunlik
+    // user limiti va global byudjet shifti tekshiriladi (atomik upsert).
+    const date = tashkentDate()
+    if (!(await tutorUsageRepository.tryConsume(TUTOR_GLOBAL_USER_ID, date, TUTOR_DAILY_GLOBAL_LIMIT))
+      || !(await tutorUsageRepository.tryConsume(uid, date, TUTOR_DAILY_USER_LIMIT))) {
+      throw new AppError(429, 'daily_limit')
+    }
 
     const [q] = await db.select().from(questions).where(eq(questions.id, questionId))
     if (!q) throw new AppError(404, 'Question not found')

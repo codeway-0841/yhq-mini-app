@@ -39,8 +39,10 @@ export const progressRepository = {
     subjectId:  string
   }): Promise<{ updated: boolean; dailyStreak: number | null }> {
     const { userId, correct, questionId, date, subjectId } = input
-    const qKey = questionId !== null ? String(questionId) : null
-    const qPath = questionId !== null ? `{${questionId}}` : null
+    // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
+    // fanlar orasida xato qaydlari chalkashmaydi.
+    const qKey = questionId !== null ? `${subjectId}:${questionId}` : null
+    const qPath = questionId !== null ? `{${subjectId}:${questionId}}` : null
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
@@ -72,7 +74,7 @@ export const progressRepository = {
         RETURNING id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
-        // ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
+        -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
         INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
         SELECT ${userId}, ${date}, ${subjectId}, 1, ${correctDelta}, 0
         WHERE EXISTS (SELECT 1 FROM prog)

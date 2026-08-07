@@ -47,6 +47,10 @@ describe('server-authoritative progress', () => {
       .expect(200)
     expect(wrong.body.correct).toBe(false)
 
+    // Multi-fan identity: xato composite kalitda ('yhq:<id>') yoziladi
+    const [progWrong] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(progWrong.wrongByTicket[`yhq:${question.id}`]).toBe(1)
+
     const correct = await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', correct: false })
@@ -57,7 +61,9 @@ describe('server-authoritative progress', () => {
     expect(prog.totalAnswered).toBe(2)
     expect(prog.totalCorrect).toBe(1)
     expect(prog.totalWrong).toBe(1)
-    expect(prog.wrongByTicket[String(question.id)]).toBeUndefined()
+    // To'g'ri javobdan keyin kompozit kalit o'chirilgan
+    expect(prog.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
+    expect(prog.wrongByTicket[String(question.id)]).toBeUndefined() // tekis kalit ishlatilmaydi
 
     const [daily] = await db.select().from(dailyRecords).where(and(
       eq(dailyRecords.userId, PROGRESS_ID),
@@ -66,6 +72,20 @@ describe('server-authoritative progress', () => {
     ))
     expect(daily.answered).toBe(2)
     expect(daily.correct).toBe(1)
+  })
+
+  it('fanlar orasida xatolar izolyatsiya qilingan (bir xil questionId, turli subject)', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
+
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'fizika' })
+      .expect(200)
+
+    const [prog] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(prog.wrongByTicket[`fizika:${question.id}`]).toBe(1)
+    expect(prog.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
   })
 })
 

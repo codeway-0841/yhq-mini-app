@@ -45,6 +45,30 @@ const RECONNECT_WINDOW_MS = 60_000  // raqib qaytish kutilishi (raqibga vaqt —
 /** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
 const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
 
+// ── Connection hardening limitlari ─────────────────────────────────────────
+// Testlarda qisqartirilgan qiymatlar bilan attach qilinadi.
+
+export interface OctagonLimits {
+  /** Auth'siz (join_queue/rejoin qilmagan) socket shu muddatda terminate bo'ladi */
+  authDeadlineMs:  number
+  /** Server ping intervali; 2 davr javob (pong/message) bo'lmasa — terminate */
+  heartbeatMs:     number
+  /** Bitta connection uchun message oynasi hajmi */
+  msgWindowMs:     number
+  /** Oyna ichidagi max xabarlar soni (oshqanda 1008 rate_limited) */
+  maxMsgsPerWindow: number
+  /** Bir foydalanuvchiga parallel socketlar soni */
+  maxConnsPerUser: number
+}
+
+export const DEFAULT_OCTAGON_LIMITS: OctagonLimits = {
+  authDeadlineMs:   10_000,
+  heartbeatMs:      30_000,
+  msgWindowMs:      10_000,
+  maxMsgsPerWindow: 50,
+  maxConnsPerUser:  3,
+}
+
 // ── Per-subject question pools ─────────────────────────────────────────────
 // dataSourceId → pool. Pairing subjectId bo'yicha, savollar esa usha fanning
 // dataSource bankasidan olinadi (SubjectRegistry → provider).
@@ -430,13 +454,101 @@ export async function loadOctagonPools(): Promise<OctagonPools> {
 export function attachOctagon(
   wss: WebSocketServer,
   pools: OctagonPools,
+  limits: Partial<OctagonLimits> = {},
 ): void {
   QUESTION_POOLS = pools
+  const L: OctagonLimits = { ...DEFAULT_OCTAGON_LIMITS, ...limits }
 
-  wss.on('connection', (ws: WebSocket, _req: IncomingMessage) => {
-    let userId: string | null = null
+  // ── Per-connection state + per-user connection cap ──────────────────────
+  interface ConnState {
+    authed:    boolean
+    userId:    string | null
+    isAlive:   boolean
+    msgWindowStart: number
+    msgCount:  number
+  }
+  const states = new WeakMap<WebSocket, ConnState>()
+  const connsByUser = new Map<string, Set<WebSocket>>()
+
+  function trackConn(userId: string, ws: WebSocket): boolean {
+    let set = connsByUser.get(userId)
+    if (!set) { set = new Set(); connsByUser.set(userId, set) }
+    if (!set.has(ws) && set.size >= L.maxConnsPerUser) return false
+    set.add(ws)
+    return true
+  }
+  function untrackConn(ws: WebSocket): void {
+    for (const [uid, set] of connsByUser) {
+      if (set.delete(ws) && set.size === 0) connsByUser.delete(uid)
+    }
+  }
+
+  // ── Heartbeat: 2 davrda hech qanday jonlilik belgisi (pong/message)
+  // yo'q socket'lar terminate qilinadi (xotira oqimlari himoyasi) ───────────
+  const heartbeat = setInterval(() => {
+    for (const client of wss.clients) {
+      const st = states.get(client)
+      if (st && !st.isAlive) { client.terminate(); continue }
+      if (st) st.isAlive = false
+      client.ping()
+    }
+  }, L.heartbeatMs)
+  wss.on('close', () => clearInterval(heartbeat))
+
+  wss.on('connection', (ws: WebSocket, req: IncomingMessage) => {
+    // Origin allowlist — FAQAT prod'da va ALLOWED_ORIGIN ANIQ berilganda
+    // (env yo'q bo'lsa deny-all bo'lib qolmasligi uchun explicit flag).
+    if (config.isProd && config.server.allowedOriginExplicit) {
+      const origin = req.headers.origin
+      if (origin !== config.server.allowedOrigin) {
+        ws.close(1008, 'origin_not_allowed')
+        return
+      }
+    }
+
+    const state: ConnState = {
+      authed: false, userId: null, isAlive: true,
+      msgWindowStart: Date.now(), msgCount: 0,
+    }
+    states.set(ws, state)
+
+    // Auth deadline — hech qachon join_queue/rejoin qilmagan socketlar
+    // resurslarni cheksiz ushlab turmasligi kerak.
+    const authTimer = setTimeout(() => {
+      if (!state.authed) ws.terminate()
+    }, L.authDeadlineMs)
+
+    ws.on('pong', () => { state.isAlive = true })
+
+    /** Auth muvaffaqiyatidan keyin chaqiriladi — connection'ni user'ga bog'laydi.
+     *  Per-user cap oshsa false (socket yopiladi). */
+    const markAuthed = (uid: string): boolean => {
+      state.userId = uid
+      if (!trackConn(uid, ws)) {
+        send(ws, { type: 'error', message: 'too_many_connections' })
+        ws.close(1008, 'too_many_connections')
+        return false
+      }
+      if (!state.authed) {
+        state.authed = true
+        clearTimeout(authTimer)
+      }
+      return true
+    }
 
     ws.on('message', (raw) => {
+      state.isAlive = true
+
+      // Per-connection message rate limit
+      const now = Date.now()
+      if (now - state.msgWindowStart >= L.msgWindowMs) {
+        state.msgWindowStart = now
+        state.msgCount = 0
+      }
+      if (++state.msgCount > L.maxMsgsPerWindow) {
+        ws.close(1008, 'rate_limited')
+        return
+      }
       let msg: Record<string, unknown>
       try { msg = JSON.parse(raw.toString()) } catch { return }
 
@@ -446,7 +558,7 @@ export function attachOctagon(
       }
 
       if (msg.type === 'rejoin') {
-        userId = String(msg.userId ?? '')
+        let uid = String(msg.userId ?? '')
         if (isAuthEnforced()) {
           const initData = String(msg.initData ?? '')
           const verified = initData && config.telegram.botToken
@@ -457,16 +569,17 @@ export function attachOctagon(
             ws.close(4001, 'Unauthorized')
             return
           }
-          userId = String(verified.id)
+          uid = String(verified.id)
         }
-        if (!rejoinMatch(ws, userId)) {
+        if (!markAuthed(uid)) return
+        if (!rejoinMatch(ws, uid)) {
           send(ws, { type: 'error', message: 'rejoin_failed' })
         }
         return
       }
 
       if (msg.type === 'join_queue') {
-        userId = String(msg.userId ?? '')
+        let uid = String(msg.userId ?? '')
         const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
 
         // User must be authenticated in production — initData carries the signed id
@@ -480,10 +593,10 @@ export function attachOctagon(
             ws.close(4001, 'Unauthorized')
             return
           }
-          userId = String(verified.id)   // NEVER trust the client-supplied id
+          uid = String(verified.id)   // NEVER trust the client-supplied id
         }
 
-        if (!/^\d+$/.test(userId)) {
+        if (!/^\d+$/.test(uid)) {
           send(ws, { type: 'error', message: 'invalid_user' })
           return
         }
@@ -493,6 +606,8 @@ export function attachOctagon(
           return
         }
 
+        if (!markAuthed(uid)) return
+
         const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
           ? String(msg.subjectId)
           : DEFAULT_SUBJECT_ID
@@ -500,12 +615,13 @@ export function attachOctagon(
         const duelCode = typeof msg.duelCode === 'string' && DUEL_CODE_RE.test(msg.duelCode)
           ? msg.duelCode
           : null
-        if (duelCode) joinDuel(ws, userId, name, duelCode, subjectId)
-        else joinQueue(ws, userId, name, subjectId)
+        if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
+        else joinQueue(ws, uid, name, subjectId)
         return
       }
 
-      if (msg.type === 'answer' && userId) {
+      if (msg.type === 'answer' && state.userId) {
+        const userId = state.userId
         const matchId  = String(msg.matchId)
         const match    = matches.get(matchId)
         if (!match || !match.roundState || match.roundState.resolved) return
@@ -531,7 +647,8 @@ export function attachOctagon(
         return
       }
 
-      if (msg.type === 'leave_queue' && userId) {
+      if (msg.type === 'leave_queue' && state.userId) {
+        const userId = state.userId
         const queued = queue.get(userId)
         if (queued?.queueTimer) clearTimeout(queued.queueTimer)
         queue.delete(userId)
@@ -541,6 +658,9 @@ export function attachOctagon(
     })
 
     ws.on('close', () => {
+      clearTimeout(authTimer)
+      untrackConn(ws)
+      const userId = state.userId
       if (!userId) return
       // Stale socket closing after a rejoin replaced it — not a real disconnect
       const matchId = playerToMatch.get(userId)

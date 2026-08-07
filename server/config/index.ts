@@ -64,6 +64,9 @@ export const config = {
   server: {
     port:           Number(env.PORT ?? '3001'),
     allowedOrigin:  env.ALLOWED_ORIGIN ?? 'http://localhost:5173',
+    /** ALLOWED_ORIGIN ANIQ berilganmi? WS origin himoyasi FAQAT shunda
+     *  fail-closed — aks holda default qiymat hamma connection'ni yopardi. */
+    allowedOriginExplicit: Boolean(env.ALLOWED_ORIGIN),
   },
 
   // Used to verify Telegram initData (HMAC-SHA256 with bot token).

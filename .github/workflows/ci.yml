@@ -39,3 +39,44 @@ jobs:
         run: npm run build:api
       - name: Server build (esbuild)
         run: npm run build:server
+
+  # Integration testlar — real PostgreSQL (GitHub service container).
+  # check-test-db.ts guard: TEST_DATABASE_URL ≠ DATABASE_URL bo'lishi shart.
+  integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      # Guard talabiga ko'ra ikki URL turli DB'larga ishora qilishi SHART;
+      # ish faqat TEST_DATABASE_URL (yhq_test) ustida bajariladi.
+      DATABASE_URL: postgresql://test:test@localhost:5432/yhq_prod_guard_only
+      TEST_DATABASE_URL: postgresql://test:test@localhost:5432/yhq_test
+      NODE_ENV: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --include=dev
+      - name: Create test databases
+        run: |
+          PGPASSWORD=test psql -h localhost -U test -d postgres -c "CREATE DATABASE yhq_test;"
+          PGPASSWORD=test psql -h localhost -U test -d postgres -c "CREATE DATABASE yhq_prod_guard_only;"
+      - name: Apply migrations to test DB
+        run: npm run db:migrate
+      - name: Seed minimal test content (idempotent)
+        run: npx tsx tests/integration/seed-db.ts
+      - name: Integration tests (API + WS)
+        run: npm run test:integration

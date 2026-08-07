@@ -128,7 +128,10 @@ export const savedQuestions = pgTable('saved_questions', {
   id:         serial('id').primaryKey(),
   userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
   questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
-}, (t) => [unique('uq_saved').on(t.userId, t.questionId)])
+  /** Multi-fan identity: bir xil questionId turli fanlarda alohida bookmark.
+   *  Eski qatorlar migratsiyada 'yhq' bilan to'ldirilgan (traffic_rules_db). */
+  subjectId:  text('subject_id').default('yhq').notNull(),
+}, (t) => [unique('uq_saved').on(t.userId, t.subjectId, t.questionId)])
 
 /** Referal qaydlari — referee faqat bir marta hisoblanadi (anti-farm). */
 export const referrals = pgTable('referrals', {
@@ -165,6 +168,22 @@ export const jobRuns = pgTable('job_runs', {
   details:    jsonb('details').$type<Record<string, unknown>>().default({}).notNull(),
 }, (t) => [
   unique('uq_job_run_period').on(t.jobName, t.periodKey),
+])
+
+/**
+ * AI Tutor kunlik foydalanish kvotasi — Gemini API cost control.
+ * user_id = 0 qatori GLOBAL kunlik byudjetni bildiradi (FK yo'q — shu sababli
+ * references ham yo'q); qolgan qatorlar haqiqiy user kvotasi.
+ */
+export const tutorUsage = pgTable('tutor_usage', {
+  userId: bigint('user_id', { mode: 'bigint' }).notNull(),
+  /** 'YYYY-MM-DD' — Asia/Tashkent (tashkentDate utili bilan bir xil) */
+  date:   text('date').notNull(),
+  count:  integer('count').default(0).notNull(),
+}, (t) => [
+  unique('uq_tutor_usage').on(t.userId, t.date),
+  check('chk_tutor_usage_nonnegative', sql`${t.count} >= 0`),
+  check('chk_tutor_usage_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 
 export const dailyStreaks = pgTable('daily_streaks', {
