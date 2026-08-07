@@ -1,6 +1,8 @@
 import { useEffect, useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
+import { haptics } from '../../lib/haptics'
+import { playSound } from '../../lib/sounds'
 import { Brain, X } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAppStore }      from '../../shared/store/useAppStore'
@@ -13,9 +15,9 @@ function EFBadge({ card }: { card: SRCard | undefined }) {
   if (!card) return null
   const ef    = card.ef
   const label = ef >= 2.2 ? 'Oson' : ef >= 1.7 ? "O'rta" : 'Qiyin'
-  const cls   = ef >= 2.2 ? 'bg-green-900/40 text-green-400'
-              : ef >= 1.7 ? 'bg-yellow-900/40 text-yellow-400'
-              :              'bg-red-900/40 text-red-400'
+  const cls   = ef >= 2.2 ? 'bg-green-500/12 text-psuccess'
+              : ef >= 1.7 ? 'bg-yellow-500/12 text-pwarning'
+              :              'bg-red-500/12 text-pdanger'
   return <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${cls}`}>{label}</span>
 }
 
@@ -77,6 +79,8 @@ export default function AdaptivePage() {
     setSelectedOption(optionId)
 
     const quality: 0 | 1 = optionId === q.correct ? 1 : 0
+    haptics.notify(quality === 1 ? 'success' : 'error')
+    playSound(quality === 1 ? 'success' : 'error')
     addResult(quality === 1, q.id)
     recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
 
@@ -87,7 +91,7 @@ export default function AdaptivePage() {
   if (!q) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-muted px-4">
-        <Brain size={40} className="text-duo-blue" />
+        <Brain size={40} className="text-ppurple" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
         <button onClick={() => startSession()} className="btn-neon px-8 py-3.5 rounded-2xl text-base">
           {tt('adaptive')}
@@ -103,7 +107,7 @@ export default function AdaptivePage() {
       <div className="flex items-center justify-between px-4 py-3 border-b border-line">
         <button onClick={() => goBack(navigate)} className="text-muted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
-          <Brain size={16} className="text-duo-blue" />
+          <Brain size={16} className="text-ppurple" />
           <span className="text-sm font-bold">{tt('adaptiveTitle')}</span>
         </div>
         <span className="text-xs text-muted">{sessionCount} {tt('qAnswered')}</span>
