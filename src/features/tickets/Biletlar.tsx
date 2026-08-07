@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
+import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
 import { seededShuffle } from '../../lib/seeded'
 
@@ -15,6 +17,7 @@ export default function Biletlar() {
   const settings      = useAppStore((s) => s.settings)
   const tt            = useT(settings.language)
   const questions     = useQuestionsStore((s) => s.questions)
+  const subjectId     = useSubjectStore((s) => s.subjectId)
 
   const TABS = [
     { id: 'all',    label: tt('allTab') },
@@ -32,7 +35,7 @@ export default function Biletlar() {
     })
   }, [questions, tt])
   const filtered = tickets.filter((t) => {
-    if (tab === 'errors') return t.questionIds.some((id) => (wrongByTicket[id] ?? 0) > 0)
+    if (tab === 'errors') return t.questionIds.some((id) => (wrongByTicket[questionKey(subjectId, id)] ?? 0) > 0)
     return true
   })
 
@@ -65,7 +68,7 @@ export default function Biletlar() {
       <div className="grid grid-cols-3 gap-2.5">
         {filtered.map((ticket) => {
           // Badge = bu biletdagi yechilmagan xato savollar soni (urinishlar yig'indisi emas)
-          const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[qid] ?? 0) > 0).length
+          const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[questionKey(subjectId, qid)] ?? 0) > 0).length
           return (
             <button key={ticket.id} onClick={() => handleTicket(ticket)}
               className="relative flex flex-col items-center justify-center rounded-2xl border border-line bg-surface p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden">

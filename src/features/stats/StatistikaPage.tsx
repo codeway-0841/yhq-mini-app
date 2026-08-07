@@ -12,6 +12,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useDailyStore, todayStr } from '../../store/useDailyStore'
+import { parseQuestionKey } from '../../../shared/subjects'
 
 const WEEK_UZ = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya']
 const WEEK_RU = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
@@ -52,17 +53,20 @@ export default function StatistikaPage() {
   const weekTotal   = week.reduce((s, r) => s + r.answered, 0)
   const weekLabels  = lang === 'ru' ? WEEK_RU : WEEK_UZ
 
-  // Zaif mavzular — xato savollar mavzular kesimida (top 3)
+  // Zaif mavzular — xato savollar mavzular kesimida (top 3, FAQAT joriy fan)
   const { questions, topics } = useQuestionsStore()
   const weakTopics = useMemo(() => {
     const qById = new Map(questions.map((q) => [q.id, q]))
     const byTopic = new Map<number, number[]>()
-    for (const [qid, cnt] of Object.entries(wrongByTicket)) {
+    for (const [key, cnt] of Object.entries(wrongByTicket)) {
       if (cnt <= 0) continue
-      const q = qById.get(Number(qid))
+      // Composite kalit '<subjectId>:<qid>' — boshqa fanlar xatolari kirmaydi
+      const parsed = parseQuestionKey(key)
+      if (!parsed || parsed.subjectId !== subject.id) continue
+      const q = qById.get(parsed.questionId)
       if (!q?.topicId) continue
       const arr = byTopic.get(q.topicId) ?? []
-      arr.push(Number(qid))
+      arr.push(parsed.questionId)
       byTopic.set(q.topicId, arr)
     }
     return [...byTopic.entries()]

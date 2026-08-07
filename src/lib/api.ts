@@ -1,7 +1,29 @@
 import { config } from '../config'
+import { FullProfileSchema } from '../../shared/contracts/profile'
 
 const BASE = config.apiBaseUrl
 const TIMEOUT_MS = 8000
+
+/**
+ * Typed API error — caller'lar status bo'yicha qaror qabul qiladi
+ * (outbox: 4xx fatal / 429+5xx retryable; UI: 401/403 holatlari).
+ */
+export class ApiError extends Error {
+  /** HTTP status kodi (0 — server javobi formati buzilgan, -1 — tarmoq/timeout) */
+  status: number
+  /** Server qaytargan xato kodi (masalan 'premium_required') */
+  code?: string
+  /** Vaqtincha: qayta urinish mantiqan befoyda emas (429, 5xx, network) */
+  retryable: boolean
+
+  constructor(status: number, message: string, code?: string) {
+    super(message)
+    this.name = 'ApiError'
+    this.status = status
+    this.code = code
+    this.retryable = status <= 0 || status === 408 || status === 429 || status >= 500
+  }
+}
 
 /** Telegram WebApp initData — sent with every request for server-side verification. */
 function getInitData(): string | undefined {
@@ -33,7 +55,10 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
   })
   if (!res.ok) {
     const text = await res.text().catch(() => res.statusText)
-    throw new Error(`${method} ${path} → ${res.status}: ${text}`)
+    // Server { error: '<code>' } JSON qaytarsa — typed code sifatida chiqaramiz
+    let code: string | undefined
+    try { code = (JSON.parse(text) as { error?: unknown }).error as string | undefined } catch { /* text javob */ }
+    throw new ApiError(res.status, `${method} ${path} → ${res.status}: ${text}`, typeof code === 'string' ? code : undefined)
   }
   if (res.status === 204) return undefined as T
   return res.json() as Promise<T>
@@ -41,6 +66,15 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
 
 function uid(userId: string) {
   return encodeURIComponent(userId)
+}
+
+/** /init va /profile javobini shared contract bilan tekshiradi (drift himoyasi). */
+function parseProfile(raw: unknown): FullProfile {
+  const parsed = FullProfileSchema.safeParse(raw)
+  if (!parsed.success) {
+    throw new ApiError(0, `profile contract buzilgan: ${parsed.error.issues[0]?.message ?? 'unknown'}`, 'bad_response')
+  }
+  return parsed.data as FullProfile
 }
 
 export interface ApiUser {
@@ -80,7 +114,8 @@ export interface FullProfile {
   user: ApiUser
   progress: ApiProgress
   settings: ApiSettings
-  savedQuestions: number[]
+  /** Composite kalitlar: `${subjectId}:${questionId}` ('yhq:123') — multi-fan identity */
+  savedQuestions: string[]
 }
 
 export interface DbQuestion {
@@ -125,10 +160,12 @@ export const api = {
     username?: string
     photo_url?: string
     start_param?: string
-  }) => request<FullProfile>('POST', '/init', data),
+  // Warm-start asosiy manbai — contract DRIFT bo'lsa jimgina buzilmasin:
+  }): Promise<FullProfile> =>
+    request<unknown>('POST', '/init', data).then(parseProfile),
 
-  getProfile: (userId: string) =>
-    request<FullProfile>('GET', `/profile/${uid(userId)}`),
+  getProfile: (userId: string): Promise<FullProfile> =>
+    request<unknown>('GET', `/profile/${uid(userId)}`).then(parseProfile),
 
   postResult: (userId: string, data: {
     questionId: number
@@ -144,11 +181,14 @@ export const api = {
   patchSettings: (userId: string, patch: Partial<ApiSettings>) =>
     request<{ ok: true }>('PATCH', `/settings/${uid(userId)}`, patch),
 
-  addSaved: (userId: string, questionId: number) =>
-    request<{ ok: true }>('POST', `/saved/${uid(userId)}`, { questionId }),
+  addSaved: (userId: string, questionId: number, subjectId: string) =>
+    request<{ ok: true }>('POST', `/saved/${uid(userId)}`, { questionId, subjectId }),
 
-  removeSaved: (userId: string, questionId: number) =>
-    request<{ ok: true }>('DELETE', `/saved/${uid(userId)}/${encodeURIComponent(questionId)}`),
+  removeSaved: (userId: string, questionId: number, subjectId: string) =>
+    request<{ ok: true }>(
+      'DELETE',
+      `/saved/${uid(userId)}/${encodeURIComponent(questionId)}?subject=${encodeURIComponent(subjectId)}`,
+    ),
 
   resetProgress: (userId: string) =>
     request<{ ok: true }>('DELETE', `/progress/${uid(userId)}`),

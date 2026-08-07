@@ -612,12 +612,19 @@ export default function Dashboard() {
     }
   }, [user?.id, settings.language, navigate, tt])
 
-  // "Xatolarni tuzatish" badge = hozir yechilmagan xato SAVOLLAR soni.
+  // "Xatolarni tuzatish" badge = hozir yechilmagan xato SAVOLLAR soni (joriy fan).
   // (wrongByTicket qiymati esa ketma-ket xato urinishlar soni — ro'yxat savollarni sanaydi,
   //  shuning uchun badge ro'yxat uzunligiga teng bo'lishi kerak: 4 savol = 4, urinishlar 8 emas)
+  // Kalitlar composite: '<subjectId>:<qid>' — faqat joriy fanga oid xatolar sanaladi.
   const mistakesCount = useMemo(
-    () => Object.values(wrongByTicket).filter((n) => n > 0).length,
-    [wrongByTicket]
+    () => Object.entries(wrongByTicket).filter(([k, n]) => n > 0 && k.startsWith(`${subject.id}:`)).length,
+    [wrongByTicket, subject.id]
+  )
+
+  // Saved badge — faqat joriy fanga oid bookmarklar soni
+  const savedCountForSubject = useMemo(
+    () => savedQuestions.filter((k) => k.startsWith(`${subject.id}:`)).length,
+    [savedQuestions, subject.id]
   )
 
   // Fan almashtirilganda savollarni shu fanga qarab qayta yuklash (reload yo'q)
@@ -645,14 +652,20 @@ export default function Dashboard() {
     navigate('/test/1', { state: { mode, title } }), [navigate])
 
   const goSaved = useCallback(() => {
-    if (savedQuestions.length === 0) {
+    // Composite kalitlardan FAQAT joriy fanga oid savol id'larini ajratamiz
+    const prefix = `${subject.id}:`
+    const ids = savedQuestions
+      .filter((k) => k.startsWith(prefix))
+      .map((k) => Number(k.slice(prefix.length)))
+      .filter((n) => Number.isInteger(n) && n > 0)
+    if (ids.length === 0) {
       showToast(settings.language === 'ru'
         ? "Нет сохранённых вопросов — используйте 📌 в тесте"
         : "Hali saqlangan savollar yo'q — testda 📌 tugmasini bosing")
       return
     }
-    navigate('/test/1', { state: { questionIds: savedQuestions, title: tt('saved') } })
-  }, [savedQuestions, settings.language, navigate, tt, showToast])
+    navigate('/test/1', { state: { questionIds: ids, title: tt('saved') } })
+  }, [savedQuestions, subject.id, settings.language, navigate, tt, showToast])
 
   return (
     <div className="font-display min-h-screen bg-pcanvas pb-6 safe-bottom">
@@ -756,7 +769,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
         <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
         <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
-        <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedQuestions.length || null} onClick={goSaved} />
+        <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
         <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
         <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
         <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />

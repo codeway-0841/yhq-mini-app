@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
 import { useLessonsStore } from '../../store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../data/modules'
@@ -125,12 +126,14 @@ export default function TopicsPage() {
   const lang = settings.language
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
+  const subjectId   = useSubjectStore((s) => s.subjectId)
 
   const [openId, setOpenId] = useState<number>(1)   // birinchi modul default ochiq
 
+  // Composite kalitlar '<subjectId>:<qid>' — faqat joriy fan xatolari
   const totalWrong = useMemo(
-    () => Object.values(wrongByTicket).filter((n) => n > 0).length,
-    [wrongByTicket]
+    () => Object.entries(wrongByTicket).filter(([k, n]) => n > 0 && k.startsWith(`${subjectId}:`)).length,
+    [wrongByTicket, subjectId]
   )
 
   /** Har modul uchun VISIBLE darslar: FAQAT curated mapping'da borlar (3+ savol) */

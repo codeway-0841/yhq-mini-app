@@ -44,3 +44,26 @@ export const SUBJECT_BASES = [
 export type SubjectId = (typeof SUBJECT_BASES)[number]['id']
 
 export const DEFAULT_SUBJECT_ID: SubjectId = 'yhq'
+
+/**
+ * Fan-bog'langan savol kaliti — multi-fan identity (P1-3).
+ *
+ * Savol id'lari har bir fan bankasida MUSTAQIL raqamlanadi; global ishlatish
+ * bookmark/xato qaydlarini fanlar orasida chalkashtirardi (hozir demo fanlar
+ * bitta bazani ulashgani uchun ham bu muammo real).
+ *
+ * Format: `${subjectId}:${questionId}` — masalan 'yhq:123', 'fizika:123'.
+ * `wrongByTicket` kalitlari va `savedQuestions` elementlari SHU formatda.
+ */
+export function questionKey(subjectId: string, questionId: number): string {
+  return `${subjectId}:${questionId}`
+}
+
+/** Composite kalitni parse qiladi; format noto'g'ri bo'lsa null. */
+export function parseQuestionKey(key: string): { subjectId: string; questionId: number } | null {
+  const i = key.indexOf(':')
+  if (i <= 0) return null
+  const questionId = Number(key.slice(i + 1))
+  if (!Number.isInteger(questionId) || questionId < 1) return null
+  return { subjectId: key.slice(0, i), questionId }
+}

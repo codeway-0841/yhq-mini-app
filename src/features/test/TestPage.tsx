@@ -4,6 +4,7 @@ import { goBack } from '../../lib/navigation'
 import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
+import { questionKey } from '../../../shared/subjects'
 import { useTestSessionStore } from '../../store/useTestSessionStore'
 import { makeSessionKey, isResumable, remainingSeconds, clampIndex } from './test-session'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -132,7 +133,9 @@ export default function TestPage() {
       }
       setAiText(err instanceof TutorError && err.kind === 'quota'
         ? tt('aiQuotaMsg')
-        : tt('aiUnavailable'))
+        : err instanceof TutorError && err.kind === 'daily_limit'
+          ? tt('aiDailyLimit')
+          : tt('aiUnavailable'))
     } finally {
       setAiBusy(false)
     }
@@ -375,7 +378,7 @@ export default function TestPage() {
     <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
   )
 
-  const isSaved     = savedQuestions.includes(q.id)
+  const isSaved     = savedQuestions.includes(questionKey(subjectId, q.id))
   const isLast      = current === activeQuestions.length - 1
   const allAnswered = answers.every((a) => a !== null && a !== 'unanswered')
   const topicLabel  = (() => {

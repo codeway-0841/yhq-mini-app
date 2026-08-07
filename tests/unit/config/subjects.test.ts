@@ -6,7 +6,7 @@
  * yhq'ga fallback qilardi. Endi ixcham manba `shared/subjects.ts`.
  */
 import { describe, it, expect } from 'vitest'
-import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId } from '../../../shared/subjects'
+import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, questionKey, parseQuestionKey, type SubjectId } from '../../../shared/subjects'
 import {
   SUBJECT_REGISTRY,
   SUBJECT_IDS,
@@ -98,5 +98,28 @@ describe('frontend SUBJECTS — shared bilan sinxron', () => {
 
   it("getSubject noma'lum id'da default'ga tushadi", () => {
     expect(getSubject('mavjud-emas').id).toBe(DEFAULT_SUBJECT_ID)
+  })
+})
+
+describe('questionKey / parseQuestionKey — multi-fan identity', () => {
+  it('composite kalit formati "<subjectId>:<questionId>"', () => {
+    expect(questionKey('yhq', 123)).toBe('yhq:123')
+    expect(questionKey('fizika', 123)).toBe('fizika:123')
+    // Bir xil questionId turli fanlarda chalkashmaydi
+    expect(questionKey('yhq', 1)).not.toBe(questionKey('fizika', 1))
+  })
+
+  it('parseQuestionKey round-trip ishlaydi', () => {
+    expect(parseQuestionKey('yhq:123')).toEqual({ subjectId: 'yhq', questionId: 123 })
+    expect(parseQuestionKey('ingliz:7')).toEqual({ subjectId: 'ingliz', questionId: 7 })
+  })
+
+  it("noto'g'ri formatda null qaytaradi", () => {
+    expect(parseQuestionKey('')).toBeNull()
+    expect(parseQuestionKey(':123')).toBeNull()
+    expect(parseQuestionKey('yhq:')).toBeNull()
+    expect(parseQuestionKey('yhq:abc')).toBeNull()
+    expect(parseQuestionKey('yhq:0')).toBeNull()
+    expect(parseQuestionKey('yhq:-5')).toBeNull()
   })
 })

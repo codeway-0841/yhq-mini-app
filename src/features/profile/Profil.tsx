@@ -1,16 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, useSyncExternalStore } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  Camera, ImagePlus, Trash2, X, BarChart2,
+  Camera, ImagePlus, Trash2, X, BarChart2, CloudUpload,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useT, type Lang } from '../../shared/i18n'
 import { api, type AchievementStats } from '../../lib/api'
+import { flushOutbox, getOutboxCount, onOutboxChange } from '../../lib/outbox'
 import { ACHIEVEMENTS, isUnlocked } from '../../config/achievements'
 import { openTelegramLink, shareUrl } from '../../lib/telegram'
 import PickerSheet from '../../components/PickerSheet'
@@ -302,6 +303,10 @@ export default function Profil() {
   } = useAppStore()
   const tt = useT(settings.language)
 
+  // Offline Sync Center: serverga yetmagan mutation'lar soni (0 bo'lsa yashirin)
+  const syncUserId = user?.id ?? ''
+  const syncPending = useSyncExternalStore(onOutboxChange, () => getOutboxCount(syncUserId))
+
   const [copied, setCopied]           = useState(false)
   const [phoneLoading, setPhoneLoading] = useState(false)
   const [, setPhoneError]             = useState<string | null>(null)
@@ -534,6 +539,15 @@ export default function Profil() {
         <Item icon={Moon} label={tt('themeLabel')}
           right={<span className="text-[12px] text-muted">{themeLabel}</span>}
           onPress={() => setShowThemePicker(true)} />
+
+        {syncPending > 0 && (
+          <Item
+            icon={CloudUpload} iconColor="#f59e0b"
+            label={`${tt('syncPending')}: ${syncPending}`}
+            right={<span className="text-[11px] text-muted">{tt('syncPendingDesc')}</span>}
+            onPress={() => { if (user?.id) void flushOutbox(user.id) }}
+          />
+        )}
 
         <Item icon={RotateCcw} label={tt('syncServer')}
           onPress={handleSync} />

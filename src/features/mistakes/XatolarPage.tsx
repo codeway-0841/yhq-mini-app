@@ -14,6 +14,8 @@ import { goBack } from '../../lib/navigation'
 import { HeartCrack, Play, ChevronRight, Flame } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
+import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
 import { openTelegramLink } from '../../lib/telegram'
 import { Sparkles } from 'lucide-react'
@@ -24,12 +26,13 @@ export default function XatolarPage() {
   const isPremium = tariff === 'premium'
   const tt = useT(settings.language)
   const { questions, topics } = useQuestionsStore()
+  const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
 
-  /** Joriy fan ichidagi hal qilinmagan xato savollar */
+  /** Joriy fan ichidagi hal qilinmagan xato savollar (composite kalit: '<fan>:<qid>') */
   const wrongQuestions = useMemo(
-    () => questions.filter((q) => (wrongByTicket[q.id] ?? 0) > 0),
-    [questions, wrongByTicket],
+    () => questions.filter((q) => (wrongByTicket[questionKey(subjectId, q.id)] ?? 0) > 0),
+    [questions, wrongByTicket, subjectId],
   )
   const total = wrongQuestions.length
 
@@ -62,10 +65,10 @@ export default function XatolarPage() {
   /** Top-10 eng ko'p xato qilingan savollar (xato urinishlari soni badge) */
   const topHard = useMemo(() =>
     wrongQuestions
-      .map((q) => ({ q, count: wrongByTicket[q.id] ?? 0 }))
+      .map((q) => ({ q, count: wrongByTicket[questionKey(subjectId, q.id)] ?? 0 }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10),
-    [wrongQuestions, wrongByTicket],
+    [wrongQuestions, wrongByTicket, subjectId],
   )
 
   return (

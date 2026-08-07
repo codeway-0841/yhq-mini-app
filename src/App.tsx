@@ -3,10 +3,9 @@ import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-route
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { useSubjectStore } from './store/useSubjectStore'
-import { useDailyStore } from './store/useDailyStore'
-import { useAdaptiveStore } from './store/useAdaptiveStore'
-import { useTestSessionStore } from './store/useTestSessionStore'
+import { ensureAccountOwner, resetAccountState } from './store/account'
 import { api } from './lib/api'
+import { flushOutbox } from './lib/outbox'
 import { track } from './lib/analytics'
 import PageLoader from './components/PageLoader'
 import { resolveAccent } from './config/themes'
@@ -194,16 +193,13 @@ export default function App() {
 
     if (tgUser?.id) {
       const verifiedId = String(tgUser.id)
-      const cachedId = useAppStore.getState().user?.id
 
-      // Warm start faqat ayni Telegram akkauntining cache'i bo'lsa xavfsiz.
-      // Account almashganda PII, progress va adaptive state atomik tozalanadi.
-      if (cachedId && cachedId !== verifiedId) {
-        useAppStore.getState().resetAccount()
-        useDailyStore.getState().resetAccount()
-        useAdaptiveStore.getState().resetAll()
-        useTestSessionStore.getState().clear()
-      } else if (cachedId === verifiedId) {
+      // Warm start FAQAT ayni Telegram akkauntining cache'i bo'lsa xavfsiz.
+      // Account mismatch'da PII, progress va adaptive state atomik tozalanadi
+      // (ro'yxat — src/store/account.ts; yangi account-scoped store shu yerga
+      // qo'shilishi shart, bu yerda takrorlanmaydi).
+      const isOwner = ensureAccountOwner(verifiedId)
+      if (isOwner && useAppStore.getState().user?.id) {
         useAppStore.setState({ initialized: true })
       }
 
@@ -240,6 +236,8 @@ export default function App() {
             // qilsa, XOTIRADAN remap qilamiz (qayta tarmoq so'rovisiz).
             await qPromise
             useQuestionsStore.getState().setLang(data.settings.language)
+            // Offline davrda yig'ilgan mutation'larni serverga yetkazamiz
+            void flushOutbox(verifiedId)
           } finally {
             // Xato bo'lsa ham splash'dan chiqishi shart
             useAppStore.setState({ initialized: true })
@@ -256,10 +254,7 @@ export default function App() {
         })
     } else {
       // GHOST USER HIMOYASI: brauzer preview haqiqiy akkaunt cache'ini ko'rmaydi.
-      useAppStore.getState().resetAccount()
-      useDailyStore.getState().resetAccount()
-      useAdaptiveStore.getState().resetAll()
-      useTestSessionStore.getState().clear()
+      resetAccountState()
       useAppStore.setState({
         user:           { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
         tariff:         'free',
@@ -274,7 +269,17 @@ export default function App() {
       })
       loadQuestions('uz').catch(() => {})
     }
-    return () => unsubSubject()
+    // Internet qaytganda outbox navbatini darhol yuborish
+    const onOnline = () => {
+      const id = useAppStore.getState().user?.id
+      if (id && id !== '0') void flushOutbox(id)
+    }
+    window.addEventListener('online', onOnline)
+
+    return () => {
+      window.removeEventListener('online', onOnline)
+      unsubSubject()
+    }
   }, [syncFromServer])
 
   const finishOnboarding = () => {

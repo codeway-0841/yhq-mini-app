@@ -1,8 +1,16 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { api, type ApiUser, type ApiProgress, type ApiSettings } from '@/lib/api'
+import { enqueueOutbox, setResultSyncHandler } from '@/lib/outbox'
+import { questionKey, DEFAULT_SUBJECT_ID } from '../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
 import { useDailyStore, todayStr } from './useDailyStore'
+
+// Outbox'dan replay bo'lgan javob daily streak'ni ham yangilasin
+// (offline javob qayta yuborilganda seriya UI'da to'g'ri ko'rinsin).
+setResultSyncHandler((date, subjectId, streak) => {
+  useDailyStore.getState().applyServerResult(date, subjectId, streak)
+})
 
 export type { ApiUser, ApiProgress, ApiSettings }
 
@@ -14,7 +22,8 @@ interface AppState {
   totalWrong:     number
   totalAnswered:  number
   wrongByTicket:  Record<string, number>
-  savedQuestions: number[]
+  /** Composite kalitlar: `${subjectId}:${questionId}` ('yhq:123') — multi-fan identity */
+  savedQuestions: string[]
   tariff:         'free' | 'premium'
   initialized:    boolean
   /** User-set display name override (Telegram name o'rniga) */
@@ -116,36 +125,43 @@ export const useAppStore = create<AppState>()(
       addResult: (correct, questionId, selectedAnswer) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
+        const subjectId = useSubjectStore.getState().subjectId
+        // Multi-fan identity: xato qaydlari fan bo'yicha composite kalitda
+        const wKey = questionId != null ? questionKey(subjectId, questionId) : null
         // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
-        const wasWrong = correct && questionId != null && (get().wrongByTicket[questionId] ?? 0) > 0
+        const wasWrong = correct && wKey !== null && (get().wrongByTicket[wKey] ?? 0) > 0
         set((s) => ({
           totalCorrect:  s.totalCorrect  + (correct ? 1 : 0),
           totalWrong:    s.totalWrong    + (correct ? 0 : 1),
           totalAnswered: s.totalAnswered + 1,
           streak:        correct ? s.streak + 1 : 0,
-          wrongByTicket: questionId != null
+          wrongByTicket: wKey !== null
             ? correct
               ? (() => {
                   // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
                   const next = { ...s.wrongByTicket }
-                  delete next[questionId]
+                  delete next[wKey]
                   return next
                 })()
-              : { ...s.wrongByTicket, [questionId]: (s.wrongByTicket[questionId] ?? 0) + 1 }
+              : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 }
             : s.wrongByTicket,
         }))
         if (userId && userId !== '0') {
           const date = todayStr()
-          const subjectId = useSubjectStore.getState().subjectId
           api.postResult(userId, { questionId, selectedAnswer, subjectId })
             .then((result) => {
               useDailyStore.getState().applyServerResult(date, subjectId, result.dailyStreak)
             })
-            .catch(console.error)
+            .catch((err) => {
+              // OFFLINE SYNC CENTER: javob outbox'ga yoziladi — internet
+              // qaytganda flushOutbox serverga yetkazadi (progress yo'qolmaydi).
+              console.warn('postResult muvaffaqiyatsiz — outbox\'ga yozildi:', err?.message ?? err)
+              enqueueOutbox(userId, 'result', { questionId, selectedAnswer, subjectId, date })
+            })
           if (wasWrong) {
-            api.addDailyFix(userId, {
-              subjectId: useSubjectStore.getState().subjectId,
-            }).catch(console.error)
+            api.addDailyFix(userId, { subjectId }).catch(() => {
+              enqueueOutbox(userId, 'daily-fix', { subjectId })
+            })
           }
         }
       },
@@ -157,22 +173,24 @@ export const useAppStore = create<AppState>()(
       },
 
       toggleSaved: (questionId) => {
-        let wasSaved = false
-        let userId: string | undefined
-        set((s) => {
-          wasSaved = s.savedQuestions.includes(questionId)
-          userId   = s.user?.id
-          return {
-            savedQuestions: wasSaved
-              ? s.savedQuestions.filter((id) => id !== questionId)
-              : [...s.savedQuestions, questionId],
-          }
-        })
+        // Read BEFORE set() — side-effect'lar set() ichida bo'lmasligi kerak
+        const userId    = get().user?.id
+        const subjectId = useSubjectStore.getState().subjectId
+        const key       = questionKey(subjectId, questionId)
+        const wasSaved  = get().savedQuestions.includes(key)
+        set((s) => ({
+          savedQuestions: wasSaved
+            ? s.savedQuestions.filter((k) => k !== key)
+            : [...s.savedQuestions, key],
+        }))
         if (userId && userId !== '0') {
           (wasSaved
-            ? api.removeSaved(userId, questionId)
-            : api.addSaved(userId, questionId)
-          ).catch(console.error)
+            ? api.removeSaved(userId, questionId, subjectId)
+            : api.addSaved(userId, questionId, subjectId)
+          ).catch(() => {
+            // Bookmark offline — outbox'ga; qaytganda serverga yetkaziladi
+            enqueueOutbox(userId, wasSaved ? 'saved-remove' : 'saved-add', { questionId, subjectId })
+          })
         }
       },
 
@@ -212,16 +230,31 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'yhq-app-store',
-      version: 1,
-      // Eski versiya (0) → yangi: settings'ni DEFAULT bilan birlashtirish
+      version: 2,
+      // v0 → v1: settings'ni DEFAULT bilan birlashtirish
       // (yangi kalitlar qo'shilganda undefined bo'lib qolmasligi uchun)
+      // v1 → v2: multi-fan identity — wrongByTicket/savedQuestions kalitlari
+      // composite formatga ('<subjectId>:<qid>') o'tadi; eski tekis kalitlar
+      // ('123') default fanga (yhq) tegishli deb qabul qilinadi.
       migrate: (persisted: unknown) => {
-        const p = (persisted ?? {}) as Record<string, unknown> & { settings?: Record<string, unknown> }
+        const p = (persisted ?? {}) as Record<string, unknown> & {
+          settings?: Record<string, unknown>
+          wrongByTicket?: Record<string, number>
+          savedQuestions?: Array<number | string>
+        }
+        const wrong: Record<string, number> = {}
+        for (const [k, v] of Object.entries(p.wrongByTicket ?? {})) {
+          wrong[k.includes(':') ? k : `${DEFAULT_SUBJECT_ID}:${k}`] = v
+        }
+        const saved = (p.savedQuestions ?? []).map((x) =>
+          typeof x === 'number' ? `${DEFAULT_SUBJECT_ID}:${x}` : x)
         // v0: offlineMode eski toggle HECH NIMA QILMASDI — foydalanuvchi aslida
         // uni o'chirmagan (SW baribir ishlardi), shuning uchun true'ga ko'taramiz.
         return {
           ...p,
           settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}), offlineMode: true },
+          wrongByTicket: wrong,
+          savedQuestions: saved,
         } as never
       },
       // user endi PERSIST QILINADI — ilova 2+ marta ochilganda splash'SIZ
