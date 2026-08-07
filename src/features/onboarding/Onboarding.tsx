@@ -3,7 +3,6 @@ import {
   ChevronRight, ChevronLeft, Check, Clock3, Rocket,
 } from 'lucide-react'
 import { SUBJECTS } from '../../config/subjects'
-import { ACCENT_THEMES } from '../../config/themes'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useAppStore } from '../../store/useAppStore'
 
@@ -63,21 +62,6 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
           className="w-[290px] rounded-[2rem] animate-fadeIn"
           style={{ boxShadow: '0 24px 48px -16px rgba(88, 204, 2, 0.25)' }}
         />
-      </div>
-
-      {/* Premium temalar namoyishi — mini atmosfera chip'lari */}
-      <div className="flex items-center justify-center gap-2.5 mb-5">
-        {ACCENT_THEMES.filter((t) => t.premium).slice(0, 4).map((t) => (
-          <div key={t.id} className="w-12 h-8 rounded-lg overflow-hidden relative border border-white/15"
-            style={{ background: t.bg }}>
-            <div className="absolute left-1 right-1 top-1 h-2.5 rounded-[3px]"
-              style={{ background: t.card, border: `1px solid ${t.color}4d` }} />
-            <span className="absolute bottom-1 left-1 w-4 h-1 rounded-full" style={{ background: t.color }} />
-          </div>
-        ))}
-        <span className="text-[10px] font-extrabold uppercase tracking-wide text-white/50 ml-1">
-          +{ACCENT_THEMES.filter((t) => t.premium).length} tema
-        </span>
       </div>
 
       <BigButton label="Boshlash" onClick={onNext} />
