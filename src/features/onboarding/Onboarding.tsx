@@ -57,7 +57,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
       {/* Brend illutsiyasi — splash bilan bir xil (glow'siz, toza) */}
       <div className="relative flex-1 flex items-center justify-center my-4">
         <img
-          src="/images/splash-brand.webp"
+          src="/images/splash-brand.png"
           alt="KIWI"
           className="w-[290px] rounded-[2rem] animate-fadeIn"
         />

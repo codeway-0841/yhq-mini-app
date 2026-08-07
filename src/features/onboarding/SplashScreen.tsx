@@ -8,7 +8,7 @@ export default function SplashScreen() {
       {/* Brend kartochkasi — yumshoq kirish; soya/glow YO'Q (toza) */}
       <div className="relative animate-premiumIn">
         <img
-          src="/images/splash-brand.webp"
+          src="/images/splash-brand.png"
           alt="KIWI"
           className="relative w-[260px] rounded-3xl"
         />
