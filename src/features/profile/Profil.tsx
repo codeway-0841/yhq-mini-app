@@ -611,7 +611,7 @@ export default function Profil() {
         />
       )}
 
-      <p className="text-center text-[10px] text-lineStrong mt-3">v1.1.0 · Build 2026.08</p>
+      <p className="text-center text-[10px] text-lineStrong mt-3">KIWI · build {__APP_VERSION__}</p>
     </div>
   )
 }

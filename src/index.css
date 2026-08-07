@@ -593,6 +593,18 @@ body[data-theme='light'] .progress-premium { background: #e8eef5; }
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* ── Confetti — test o'tilganda nishonlash (faqat CSS, lib yo'q) ─────────── */
+@keyframes confettiFall {
+  0%   { transform: translateY(-8vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0.9; }
+}
+.confetti-piece {
+  position: absolute;
+  top: -5vh;
+  animation: confettiFall linear forwards;
+}
+body[data-no-animation='true'] .confetti-piece { display: none; }
+
 /* ── Mikro-harakat: sahifa ichki kirish (spring'ga yaqin) ────────────────── */
 @keyframes premiumIn {
   from { opacity: 0; transform: translateY(14px) scale(0.99); }
