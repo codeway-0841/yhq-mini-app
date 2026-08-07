@@ -1,6 +1,9 @@
 /** Circular pass/fail chart for the results modal.
  *  threshold — o'tish foizi (default 90 = haqiqiy imtihon mezoni).
- *  Qisqa testlar uchun TestPage mode'ga qarab boshqacha berishi mumkin. */
+ *  Qisqa testlar uchun TestPage mode'ga qarab boshqacha berishi mumkin.
+ *  v2.1: animatsiyali arc + count-up foiz (premium reward tuyg'usi). */
+import { useEffect, useState } from 'react'
+
 export default function DonutChart({ correct, total, threshold = 90, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
   correct: number; total: number; threshold?: number; passedLabel?: string; failedLabel?: string
 }) {
@@ -13,23 +16,47 @@ export default function DonutChart({ correct, total, threshold = 90, passedLabel
   const wrongArc      = circumference - correctArc
   const passed        = percent >= threshold
 
+  // Animatsiya: arc bo'sh holatdan to'ldiriladi + foiz 0 dan count-up
+  const [fill, setFill] = useState(0)
+  useEffect(() => {
+    const reduce = typeof document !== 'undefined'
+      && (document.body.dataset.noAnimation === 'true'
+        || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches)
+    if (reduce) { setFill(1); return }
+    let raf = 0
+    const t0 = performance.now()
+    const DURATION = 900
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - t0) / DURATION)
+      // easeOutCubic — yumshoq "reward" sezishi
+      setFill(1 - Math.pow(1 - p, 3))
+      if (p < 1) raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [])
+
+  const shownPct  = Math.round(percent * fill)
+  const shownArc  = correctArc * fill
+  const shownWrong = wrongArc * fill
+
   return (
     <div className="relative w-40 h-40 mx-auto my-4">
       <svg viewBox="0 0 140 140" className="w-full h-full -rotate-90">
         <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--theme-line)" strokeWidth="14" />
-        {wrongArc > 0 && (
+        {shownWrong > 0 && (
           <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ef4444" strokeWidth="14"
-            strokeDasharray={`${wrongArc} ${circumference}`}
-            strokeDashoffset={-correctArc} />
+            strokeDasharray={`${shownWrong} ${circumference}`}
+            strokeDashoffset={-shownArc} />
         )}
-        {correctArc > 0 && (
+        {shownArc > 0 && (
           <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--p-primary)" strokeWidth="14"
-            strokeDasharray={`${correctArc} ${circumference}`}
+            strokeDasharray={`${shownArc} ${circumference}`}
             strokeDashoffset={0} />
         )}
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className={`text-4xl font-black ${passed ? 'text-duo-green' : 'text-duo-red'}`}>{percent}%</span>
+        <span className={`text-4xl font-black tabular-nums ${passed ? 'text-duo-green' : 'text-duo-red'}`}>{shownPct}%</span>
         <span className="text-sm font-bold mt-0.5 text-subtle">
           {passed ? passedLabel : failedLabel}
         </span>
