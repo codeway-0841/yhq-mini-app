@@ -35,7 +35,8 @@ export function weekStartTashkent(weekOffset = 0): string {
   return d.toISOString().slice(0, 10)
 }
 
-export const LEAGUE_ORDER = ['bronze', 'silver', 'gold', 'platinum'] as const
+// Yagonal manba server/schema.ts'da (progress.league CHECK constraint bilan sinxron)
+export { LEAGUE_ORDER } from '../../schema'
 
 export const leaderboardRepository = {
   async topN(limit: number, callerUserId: bigint | null): Promise<LeaderboardEntry[]> {

@@ -9,7 +9,6 @@ import { validate }             from '../../middleware/validate'
 import { parseBigInt }          from '../../utils/parse'
 import { rateLimit }            from '../../middleware/rate-limiter'
 import { progressRepository }   from './progress.repository'
-import { dailyRepository }      from '../daily/daily.repository'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
@@ -40,13 +39,11 @@ router.post(
     if (!question) throw new AppError(404, 'Question not found')
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
-    const updated = await progressRepository.addResult(uid, correct, questionId)
+    // Progress counterlari + daily record + streak BITTA atomik SQL statement'da.
+    const { updated, dailyStreak } = await progressRepository.recordAnswer({
+      userId: uid, correct, questionId, date, subjectId,
+    })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
-
-    // Daily heatmap ham faqat server tekshirgan natijadan hisoblanadi.
-    const { dailyStreak } = await dailyRepository.touchActivity(
-      uid, date, subjectId, 1, correct ? 1 : 0,
-    )
 
     res.json({ ok: true, correct, dailyStreak })
   }),

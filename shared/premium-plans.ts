@@ -6,8 +6,8 @@
  * tests/unit/config/premium-plans.test.ts).
  *
  * Semantika:
- *  - muddatli tarif (month/year) → DB `users.premium_until = now + days`
- *    (extendPremium — eksa muddati ustiga yig'iladi)
+ *  - muddatli tarif (month/year) → DB `users.premium_until = max(now, premium_until) + days`
+ *    (payment.repository.complete CTE — eski muddat ustiga yig'iladi)
  *  - lifetime → DB `users.tariff = 'premium'` (muddat cheksiz)
  */
 

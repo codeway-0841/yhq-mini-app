@@ -3,9 +3,9 @@
  * No business logic here; only SQL/Drizzle calls.
  */
 
-import { and, eq, isNull, sql as sqlExpr } from 'drizzle-orm'
+import { and, eq, isNull, sql } from 'drizzle-orm'
 import { db }    from '../../db/connection'
-import { users, referrals } from '../../schema'
+import { users } from '../../schema'
 
 export interface CreateOrUpdateUserInput {
   id:        bigint
@@ -16,15 +16,69 @@ export interface CreateOrUpdateUserInput {
 }
 
 export const referralsRepository = {
-  /** Referal qayd qiling (referee bir marta) — yangi qo'shilsa true */
-  async tryCreate(referrerId: bigint, refereeId: bigint): Promise<boolean> {
-    const rows = await db.insert(referrals).values({ referrerId, refereeId })
-      .onConflictDoNothing({ target: referrals.refereeId }).returning()
-    return rows.length > 0
+  /**
+   * Referal qaydi + referrer mukofoti (+N kun premium) BITTA SQL statement'da.
+   * referee UNIQUE constraint ikkala rajotda ham bir marta hisoblanishini
+   * kafolatlaydi; insert muvaffaqiyatli bo'lgan taqdirdagina UPDATE ishlaydi.
+   */
+  async tryCreateWithReward(referrerId: bigint, refereeId: bigint, days: number): Promise<boolean> {
+    const result = await db.execute(sql<{ rewarded: number }>`
+      WITH inserted AS (
+        INSERT INTO referrals (referrer_id, referee_id)
+        VALUES (${referrerId}, ${refereeId})
+        ON CONFLICT (referee_id) DO NOTHING
+        RETURNING referrer_id
+      ), rewarded AS (
+        UPDATE users SET
+          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
+          updated_at = now()
+        WHERE id = ${referrerId} AND EXISTS (SELECT 1 FROM inserted)
+        RETURNING id
+      )
+      SELECT COUNT(*)::int AS rewarded FROM rewarded
+    `)
+    return Number(result.rows[0]?.rewarded) > 0
   },
 }
 
 export const usersRepository = {
+  /**
+   * Upsert user + progress + settings BITTA SQL statement'da (CTE).
+   * Alohida INSERT'larda bitta qadam muvaffaqiyatsiz bo'lsa user yarim
+   * holatda qolardi; endi butun init atomik (va idempotent) bajariladi.
+   * Return qilmaydi — qator zarur bo'lsa keyin `findById` bilan o'qing.
+   */
+  async initAtomic(input: CreateOrUpdateUserInput): Promise<void> {
+    await db.execute(sql`
+      WITH upserted AS (
+        INSERT INTO users (id, first_name, last_name, username, photo_url)
+        VALUES (
+          ${input.id},
+          ${input.firstName},
+          ${input.lastName  ?? ''},
+          ${input.username  ?? ''},
+          ${input.photoUrl  ?? ''}
+        )
+        ON CONFLICT (id) DO UPDATE SET
+          first_name = EXCLUDED.first_name,
+          last_name  = EXCLUDED.last_name,
+          username   = EXCLUDED.username,
+          photo_url  = EXCLUDED.photo_url,
+          updated_at = now()
+        RETURNING id
+      ), prog AS (
+        INSERT INTO progress (user_id)
+        SELECT id FROM upserted
+        ON CONFLICT DO NOTHING
+      ), sett AS (
+        INSERT INTO settings (user_id)
+        SELECT id FROM upserted
+        ON CONFLICT DO NOTHING
+      )
+      SELECT (SELECT COUNT(*) FROM upserted) AS upserted_count
+    `)
+  },
+
   /** Upsert user and return the persisted row. */
   async upsert(input: CreateOrUpdateUserInput) {
     const [row] = await db.insert(users).values({
@@ -72,7 +126,7 @@ export const usersRepository = {
   async tryGrantTrial(id: bigint, days: number): Promise<boolean> {
     const rows = await db.update(users).set({
       trialGrantedAt: new Date(),
-      premiumUntil: sqlExpr`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
+      premiumUntil: sql`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
       updatedAt: new Date(),
     }).where(and(
       eq(users.id, id),
@@ -80,13 +134,5 @@ export const usersRepository = {
       isNull(users.trialGrantedAt),
     )).returning({ id: users.id })
     return rows.length > 0
-  },
-
-  /** Referal mukofoti: +N kun premium (mavjud muddat ustiga yig'iladi). */
-  async extendPremium(id: bigint, days: number): Promise<void> {
-    await db.update(users).set({
-      premiumUntil: sqlExpr`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
-      updatedAt:    new Date(),
-    }).where(eq(users.id, id))
   },
 }

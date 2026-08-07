@@ -92,7 +92,8 @@ export const usersService = {
     const uid = BigInt(raw.id)
     const existing = await usersRepository.findById(uid)   // yangi foydalanuvchimi?
 
-    const user = await usersRepository.upsert({
+    // user + progress + settings BITTA atomik SQL statement'da (yarim holat yo'q)
+    await usersRepository.initAtomic({
       id:        uid,
       firstName: raw.first_name,
       lastName:  raw.last_name  ?? null,
@@ -100,33 +101,28 @@ export const usersService = {
       photoUrl:  raw.photo_url  ?? null,
     })
 
-    // These are no-ops when rows already exist
-    await Promise.all([
-      progressRepository.ensureExists(uid),
-      settingsRepository.ensureExists(uid),
-    ])
-
-    const [prog, sett, saved] = await Promise.all([
+    const [user, prog, sett, saved] = await Promise.all([
+      usersRepository.findById(uid),
       progressRepository.findByUserId(uid),
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
     ])
 
     // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
-    // Referrerga +3 kun premium (mukofot bir martalik — referrals jadvali UNIQUE).
+    // Qayd + mukofot bitta atomik statement'da (referrals UNIQUE — bir martalik).
     const refMatch = /^ref_(\d{1,19})$/.exec(raw.start_param ?? '')
     if (refMatch && !existing) {
       const referrerId = BigInt(refMatch[1])
       if (referrerId !== uid && await usersRepository.findById(referrerId)) {
-        const created = await referralsRepository.tryCreate(referrerId, uid)
-        if (created) await usersRepository.extendPremium(referrerId, 3)
+        await referralsRepository.tryCreateWithReward(referrerId, uid, REFERRAL_REWARD_DAYS)
       }
     }
 
+    if (!user || !prog || !sett) throw new AppError(500, 'init_incomplete')
     return {
       user:           toApiUser(user),
-      progress:       toApiProgress(prog!),
-      settings:       toApiSettings(sett!),
+      progress:       toApiProgress(prog),
+      settings:       toApiSettings(sett),
       savedQuestions: saved,
     }
   },
@@ -148,3 +144,5 @@ export const usersService = {
 }
 
 export const TRIAL_DAYS = 3
+/** Referrerga beriladigan mukofot (kun) — referee faqat 1 marta hisoblanadi */
+export const REFERRAL_REWARD_DAYS = 3

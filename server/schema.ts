@@ -1,6 +1,7 @@
+import { sql } from 'drizzle-orm'
 import {
   pgTable, pgEnum, serial, bigint, text,
-  integer, boolean, jsonb, timestamp, unique, index,
+  integer, boolean, jsonb, timestamp, unique, index, check,
 } from 'drizzle-orm/pg-core'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
@@ -8,6 +9,10 @@ export const fontSizeEnum = pgEnum('font_size',  ['small', 'medium', 'large'])
 export const fontStyleEnum= pgEnum('font_style', ['default', 'serif', 'mono'])
 export const languageEnum = pgEnum('language',   ['uz', 'ru'])
 export const themeEnum    = pgEnum('theme',       ['dark', 'light', 'system'])
+
+/** Liga tartibi — YAGONA MANBA. `progress.league` CHECK constraint ham shunga bog'langan. */
+export const LEAGUE_ORDER = ['bronze', 'silver', 'gold', 'platinum'] as const
+export type League = typeof LEAGUE_ORDER[number]
 
 export const users = pgTable('users', {
   id:        bigint('id', { mode: 'bigint' }).primaryKey(),
@@ -64,6 +69,14 @@ export const progress = pgTable('progress', {
 }, (t) => [
   // Leaderboard queries sort by totalCorrect
   index('idx_progress_total_correct').on(t.totalCorrect.desc()),
+  // Data integrity: counterlar manfiy bo'la olmaydi va summa idempotent hisoblanishi shart
+  check('chk_progress_nonnegative', sql`
+    ${t.totalCorrect} >= 0 AND ${t.totalWrong} >= 0 AND ${t.totalAnswered} >= 0
+    AND ${t.streak} >= 0 AND ${t.octagonWins} >= 0
+  `),
+  check('chk_progress_sum', sql`${t.totalAnswered} = ${t.totalCorrect} + ${t.totalWrong}`),
+  // Registrydan tashqari liga qiymati yozilmasligi kerak (LEAGUE_ORDER bilan sinxron)
+  check('chk_progress_league', sql`${t.league} IN ('bronze', 'silver', 'gold', 'platinum')`),
 ])
 
 export const userSettings = pgTable('settings', {
@@ -165,6 +178,8 @@ export const dailyStreaks = pgTable('daily_streaks', {
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   unique('uq_daily_streak').on(t.userId, t.subjectId),
+  check('chk_daily_streak_nonnegative', sql`${t.streak} >= 0`),
+  check('chk_daily_streak_date_fmt', sql`${t.lastDailyDate} IS NULL OR ${t.lastDailyDate} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 
 /**
@@ -188,4 +203,9 @@ export const dailyRecords = pgTable('daily_records', {
 }, (t) => [
   unique('uq_daily_record').on(t.userId, t.date, t.subjectId),
   index('idx_daily_user_date').on(t.userId, t.date),
+  // Data integrity: answered/correct/fixed manfiy bo'lmasligi va correct answered'dan
+  // oshmasligi shart (bug yoki xato requestdan shubhali statistika paydo bo'lmasin).
+  check('chk_daily_record_nonnegative', sql`${t.answered} >= 0 AND ${t.fixed} >= 0`),
+  check('chk_daily_record_correct_le', sql`${t.correct} BETWEEN 0 AND ${t.answered}`),
+  check('chk_daily_record_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
