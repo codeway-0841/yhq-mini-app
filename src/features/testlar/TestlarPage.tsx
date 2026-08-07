@@ -43,6 +43,8 @@ export default function TestlarPage() {
   }
 
   const cards: ModeCard[] = [
+    { id: 'speed',     iconBox: 'zap',
+      titleKey: 'speedTitle', meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' },
     { id: 'random50',  iconBox: 'num', numText: '50',
       titleKey: 't50Test', meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' },
     { id: 'random100', iconBox: 'num', numText: '100',
@@ -60,6 +62,7 @@ export default function TestlarPage() {
 
   const start = (m: ModeCard) => {
     track('test_start', { mode: m.id })
+    if (m.id === 'speed') { navigate('/speed'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }
 
