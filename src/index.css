@@ -99,7 +99,8 @@ body[data-no-animation='true'] .route-page { animation: none; }
 
 /* Neon CTA tugma (v2.2): gradient aksent + yumshoq soya (qattiq 3D soya yo'q) */
 .btn-neon {
-  background: linear-gradient(135deg, var(--neon-green), color-mix(in srgb, var(--neon-green) 80%, #000));
+  background: var(--p-primary, #5be300); /* fallback — color-mix'siz eski webview */
+  background: linear-gradient(135deg, var(--p-primary, #5be300), color-mix(in srgb, var(--p-primary, #5be300) 80%, #000));
   color: var(--p-on-primary, #0a1a00);
   font-weight: 800;
   border-radius: 1rem;
@@ -127,8 +128,8 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .progress-neon > .fill {
   height: 100%;
   border-radius: 999px;
-  background: var(--neon-green);
-  box-shadow: 0 0 10px var(--neon-glow-green);
+  background: var(--p-primary, #5be300);
+  box-shadow: 0 0 10px var(--p-glow, transparent);
   transition: width 240ms ease-out;
 }
 
@@ -175,7 +176,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
   pointer-events: none;
 }
 
-.btn-3d-green  { background: var(--neon-green); --btn-3d-shadow: color-mix(in srgb, var(--neon-green) 72%, #000); color: var(--p-on-primary, #0a1a00); }
+.btn-3d-green  { background: var(--p-primary, #5be300); --btn-3d-shadow: color-mix(in srgb, var(--p-primary, #5be300) 72%, #000); color: var(--p-on-primary, #0a1a00); }
 .btn-3d-blue   { background: #3b82f6; --btn-3d-shadow: #1d4ed8; color: #fff; }
 .btn-3d-red    { background: #ef4444; --btn-3d-shadow: #b91c1c; color: #fff; }
 .btn-3d-yellow { background: #facc15; --btn-3d-shadow: #ca8a04; color: #241a00; }
