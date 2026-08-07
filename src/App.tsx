@@ -5,6 +5,7 @@ import { useQuestionsStore } from './store/useQuestionsStore'
 import { useSubjectStore } from './store/useSubjectStore'
 import { useDailyStore } from './store/useDailyStore'
 import { useAdaptiveStore } from './store/useAdaptiveStore'
+import { useTestSessionStore } from './store/useTestSessionStore'
 import { api } from './lib/api'
 import { track } from './lib/analytics'
 import PageLoader from './components/PageLoader'
@@ -201,6 +202,7 @@ export default function App() {
         useAppStore.getState().resetAccount()
         useDailyStore.getState().resetAccount()
         useAdaptiveStore.getState().resetAll()
+        useTestSessionStore.getState().clear()
       } else if (cachedId === verifiedId) {
         useAppStore.setState({ initialized: true })
       }
@@ -257,6 +259,7 @@ export default function App() {
       useAppStore.getState().resetAccount()
       useDailyStore.getState().resetAccount()
       useAdaptiveStore.getState().resetAll()
+      useTestSessionStore.getState().clear()
       useAppStore.setState({
         user:           { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
         tariff:         'free',

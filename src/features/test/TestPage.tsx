@@ -3,6 +3,9 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { useSubjectStore } from '../../store/useSubjectStore'
+import { useTestSessionStore } from '../../store/useTestSessionStore'
+import { makeSessionKey, isResumable, remainingSeconds, clampIndex } from './test-session'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
@@ -38,7 +41,20 @@ export default function TestPage() {
 
   const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'mock' | 'tricky' | 'numeric' | undefined) ?? null
 
+  // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
+  const subjectId  = useSubjectStore((s) => s.subjectId)
+  const stateTitle = location.state?.title as string | undefined
+  const sessionKey = makeSessionKey(mode, location.state?.questionIds as number[] | undefined)
+
   const activeQuestions = useMemo(() => {
+    // RESUME: saqlangan sessiya savollarining ASL tartibi qayta yig'iladi
+    // (yangi shuffle EMAS — javoblar indeks bo'yicha bog'langan)
+    const snap = useTestSessionStore.getState().session
+    if (isResumable(snap, sessionKey, subjectId) && snap.questionIds.length) {
+      const byId = new Map(questions.map((x) => [x.id, x]))
+      const restored = snap.questionIds.map((qid) => byId.get(qid)).filter((x) => !!x)
+      if (restored.length) return restored as typeof questions
+    }
     const ids = location.state?.questionIds
     if (ids?.length) {
       const idSet = new Set(ids)
@@ -58,7 +74,7 @@ export default function TestPage() {
       }
       default:         return questions
     }
-  }, [location.state?.questionIds, mode, questions, location.key])
+  }, [location.state?.questionIds, mode, questions, location.key, sessionKey, subjectId])
 
   const startIndex = Math.min(
     Math.max(0, (Number(id) || 1) - 1),
@@ -170,17 +186,61 @@ export default function TestPage() {
     mode === 'mock'        ? 25 * 60 :
     mode === 'random100'   ? 120 * 60 :
     mode === 'random20'    ? 30 * 60 : 25 * 60
-  const timer = useTimer(handleTimeUp, location.key, totalSeconds)
+  // Resume: timer wall-clock — sessiya boshlanganidan o'tgan vaqt ayiriladi
+  // (reload orqali imtihon vaqtini "yangilash" imkonsiz)
+  const initialSeconds = useMemo(() => {
+    const snap = useTestSessionStore.getState().session
+    return isResumable(snap, sessionKey, subjectId)
+      ? remainingSeconds(snap.startedAt, totalSeconds)
+      : totalSeconds
+    // eslint-disable-next-line react-hooks/exhaustive-deps — location.key: yangi urinishda qayta hisoblash
+  }, [location.key, sessionKey, subjectId, totalSeconds])
+  const timer = useTimer(handleTimeUp, location.key, initialSeconds)
+
+  // Sessiya boshlangan vaqt — yangi sessiyada hozirgi vaqt, resume'da asl qiymat
+  const startedAtRef = useRef<number | null>(null)
 
   useEffect(() => {
-    setCurrent(startIndex)
-    setAnswers(Array(activeQuestions.length).fill(null))
-    setSelectedHistory(Array(activeQuestions.length).fill(null))
+    const snap = useTestSessionStore.getState().session
+    const r = isResumable(snap, sessionKey, subjectId) ? snap : null
+    const len = activeQuestions.length
+    setCurrent(r ? clampIndex(r.current, len) : startIndex)
+    setAnswers(r && r.answers.length === len ? [...r.answers] : Array(len).fill(null))
+    setSelectedHistory(r && r.selected.length === len ? [...r.selected] : Array(len).fill(null))
     setShowResults(false)
     setIsFinished(false)
     setToast(null)
     setStudyOpen(false)
-  }, [location.key, startIndex, activeQuestions.length])
+    startedAtRef.current = null
+    if (r && len > 0 && r.answers.some((a) => a !== null)) {
+      setToast(tt('sessionResumed'))
+      setTimeout(() => setToast(null), 3000)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps — tt startIndex/len o'zgarishlarida yetarli
+  }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
+
+  // Snapshot'ni persist'ga yozish: har javob/navigatsiya/yakunlashda.
+  // Reload yoki WebView restart bo'lsa shu nuqtadan davom etiladi.
+  useEffect(() => {
+    if (!activeQuestions.length) return
+    const store = useTestSessionStore.getState()
+    const existing = store.session
+    if (startedAtRef.current == null) {
+      startedAtRef.current = isResumable(existing, sessionKey, subjectId) ? existing.startedAt : Date.now()
+    }
+    store.save({
+      key:             sessionKey,
+      subjectId,
+      mode,
+      title:           stateTitle,
+      questionIds:     activeQuestions.map((x) => x.id),
+      current,
+      answers,
+      selected:        selectedHistory,
+      startedAt:       startedAtRef.current,
+      finished:        isFinished,
+    })
+  }, [activeQuestions, current, answers, selectedHistory, isFinished, sessionKey, subjectId, mode, stateTitle])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const cancelAutoNext = useCallback(() => {
@@ -273,6 +333,8 @@ export default function TestPage() {
   // location.key o'zgarishi activeQuestions memo'sini ham yangilaydi)
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
+    // Yangi urinish: eski sessiyani tozalash — aks holda key === match bo'lib RESUME bo'lardi
+    useTestSessionStore.getState().clear()
     navigate('/test/1', { replace: true, state: location.state })
   }, [navigate, activeQuestions.length, location.state])
 

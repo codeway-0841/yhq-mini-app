@@ -38,6 +38,18 @@ interface AppState {
   resetAccount:   () => void
 }
 
+/**
+ * Persist (localStorage) uchun user obyektidan PII'ni ajratadi.
+ * Telefon raqam faqat xotirada/about:init server javobida yashiradi —
+ * localStorage'da uzoq muddat yotgan PII shared qurilmada xavf.
+ * Warm-start UI uchun firstName/username/photoUrl yetarli.
+ */
+export function stripUserPii(user: ApiUser | null): ApiUser | null {
+  if (!user) return null
+  const { phone: _phone, ...rest } = user
+  return { ...rest, phone: undefined }
+}
+
 const DEFAULT_SETTINGS: ApiSettings = {
   autoNextCorrect: true,
   autoNextWrong:   false,
@@ -217,7 +229,8 @@ export const useAppStore = create<AppState>()(
       // Akkaunt almashsa: init yangi user keltiradi, state almashadi
       // (qisqa flash yechimi — tezlik uchun qabul qilinadigan trade-off).
       partialize: (s) => ({
-        user:           s.user,
+        // PII (telefon) disk'ga yozilmaydi — faqat xotirada yashiradi
+        user:           stripUserPii(s.user),
         settings:       s.settings,
         streak:         s.streak,
         totalCorrect:   s.totalCorrect,
