@@ -282,12 +282,12 @@ export default function OctagonPage() {
       <div className="flex items-center justify-between px-4 py-3 border-b border-line">
         <button onClick={() => goBack(navigate)} className="text-muted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
-          <Sword size={16} className="text-purple-400" />
+          <Sword size={16} className="text-muted" />
           <span className="text-sm font-bold">{tt('octagonTitle')}</span>
         </div>
         {s.phase === 'in_round' ? (
           <div className="flex gap-1 text-xs text-muted">
-            <span className="text-green-400 font-bold">{s.yourScore}</span>
+            <span className="text-pprimary font-bold">{s.yourScore}</span>
             <span>:</span>
             <span className="text-red-400 font-bold">{s.oppScore}</span>
           </div>
@@ -295,27 +295,27 @@ export default function OctagonPage() {
       </div>
 
       {s.toastMsg && (
-        <div className="mx-4 mt-2 bg-orange-900/60 border border-orange-500/50 text-orange-200 text-xs font-semibold px-3 py-2 rounded-xl text-center">
+        <div className="mx-4 mt-2 bg-orange-500/10 border border-orange-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl text-center">
           {s.toastMsg}
         </div>
       )}
 
       {conn === 'reconnecting' && s.phase !== 'idle' && (
-        <div className="mx-4 mt-2 bg-yellow-900/50 border border-yellow-500/40 text-yellow-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-yellow-500/10 border border-yellow-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           Aloqa uzildi — qayta ulanmoqda...
         </div>
       )}
 
       {s.oppWait !== null && s.phase === 'in_round' && (
-        <div className="mx-4 mt-2 bg-yellow-900/50 border border-yellow-500/40 text-yellow-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-yellow-500/10 border border-yellow-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           Raqib uzildi — {s.oppWait} soniya kutilmoqda
         </div>
       )}
 
       {conn === 'failed' && (
-        <div className="mx-4 mt-2 bg-red-900/50 border border-red-500/40 text-red-200 text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-red-500/10 border border-red-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
           <WifiOff size={14} className="flex-shrink-0" />
           Serverga ulanib bo'lmadi
           <button onClick={retryConnect}
@@ -328,7 +328,7 @@ export default function OctagonPage() {
       <div className="flex-1 flex flex-col items-center justify-center px-4">
         {s.phase === 'idle' && (
           <div className="flex flex-col items-center gap-5 text-center">
-            <Sword size={56} className="text-purple-400 opacity-80" />
+            <Sword size={56} className="text-subtle opacity-80" />
             <div>
               <h2 className="text-xl font-black mb-1">{tt('octagonTitle')}</h2>
               <p className="text-sm text-muted">Haqiqiy vaqtda raqib bilan bellashuv</p>
@@ -349,9 +349,9 @@ export default function OctagonPage() {
         {s.phase === 'searching' && (
           <div className="flex flex-col items-center gap-5 text-center">
             <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-purple-500/30 animate-ping" />
-              <div className="relative w-16 h-16 rounded-full bg-purple-900/60 border border-purple-500/40 flex items-center justify-center">
-                <Sword size={26} className="text-purple-300" />
+              <div className="absolute inset-0 rounded-full bg-duo-green/25 animate-ping" />
+              <div className="relative w-16 h-16 rounded-full bg-duo-green/10 border border-duo-green/40 flex items-center justify-center">
+                <Sword size={26} className="text-pprimary" />
               </div>
             </div>
             <p className="text-base font-bold">{tt('searching')}</p>
@@ -386,9 +386,9 @@ export default function OctagonPage() {
 
         {s.phase === 'matched' && (
           <div className="flex flex-col items-center gap-4 text-center">
-            <Sword size={36} className="text-purple-400" />
+            <Sword size={36} className="text-pprimary" />
             <p className="text-lg font-black">VS</p>
-            <p className="text-base font-bold text-purple-300">{s.opponentName}</p>
+            <p className="text-base font-bold text-pprimary">{s.opponentName}</p>
             <p className="text-xs text-muted animate-pulse">Tayyor bo'ling...</p>
           </div>
         )}
@@ -450,7 +450,7 @@ export default function OctagonPage() {
         )}
 
         {s.phase === 'in_round' && !currentQ && (
-          <Loader2 size={28} className="text-purple-400 animate-spin" />
+          <Loader2 size={28} className="text-pprimary animate-spin" />
         )}
 
         {s.phase === 'match_end' && (
@@ -463,7 +463,7 @@ export default function OctagonPage() {
             </h2>
             <div className="flex gap-6 font-bold">
               <div className="text-center">
-                <p className="text-green-400 text-3xl">{s.yourScore}</p>
+                <p className="text-pprimary text-3xl">{s.yourScore}</p>
                 <p className="text-xs text-muted mt-1">Siz</p>
               </div>
               <div className="text-line text-3xl self-center">:</div>
