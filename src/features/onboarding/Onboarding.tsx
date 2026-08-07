@@ -54,13 +54,13 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
         <Sub>Barcha fanlarni bitta ilovada o'rganing va test yeching.</Sub>
       </div>
 
-      {/* Maskot — brend illutsiyasi (fan chiplari ham rasm ichida) */}
+      {/* Brend illutsiyasi — splash bilan bir xil (glow'siz, toza) */}
       <div className="relative flex-1 flex items-center justify-center my-4">
         <img
-          src="/images/onboarding-mascot.webp"
-          alt="KIWI maskoti"
+          src="/images/splash-brand.webp"
+          alt="KIWI"
           className="w-[290px] rounded-[2rem] animate-fadeIn"
-          style={{ boxShadow: '0 24px 48px -16px rgba(88, 204, 2, 0.25)' }}
+          style={{ boxShadow: '0 20px 50px -16px rgba(0, 0, 0, 0.55)' }}
         />
       </div>
 
