@@ -311,7 +311,7 @@ export default function TestPage() {
           </button>
         </div>
 
-        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(56,189,248,0.20)]">
+        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(59,130,246,0.20)]">
           <span className="text-neon-yellow text-sm">⏱</span>
           <span className="font-mono font-black text-sm text-fg">{timer}</span>
         </div>
@@ -346,7 +346,7 @@ export default function TestPage() {
       </div>
 
       {toast && (
-        <div className="mx-4 mt-2 bg-orange-900/60 border border-orange-500/50 text-orange-200 text-xs font-semibold px-3 py-2 rounded-xl text-center">
+        <div className="mx-4 mt-2 bg-orange-500/10 border border-orange-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl text-center">
           ⚠️ {toast}
         </div>
       )}

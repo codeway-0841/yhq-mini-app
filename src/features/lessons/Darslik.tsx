@@ -318,7 +318,7 @@ export default function Darslik() {
       </div>
 
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-orange-900/90 border border-orange-500/50 text-orange-100 text-xs font-semibold px-4 py-3 rounded-xl text-center z-40">
+        <div className="fixed bottom-20 left-4 right-4 bg-orange-500/10 border border-orange-500/40 text-fg text-xs font-semibold px-4 py-3 rounded-xl text-center z-40">
           ⚠️ {toast}
         </div>
       )}
