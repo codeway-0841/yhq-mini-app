@@ -1,7 +1,8 @@
 import { useEffect } from 'react'
-import { RotateCcw } from 'lucide-react'
+import { RotateCcw, Share2 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
+import { shareUrl } from '../../lib/telegram'
 import { playSound } from '../../lib/sounds'
 import Confetti from '../../components/Confetti'
 import DonutChart from './DonutChart'
@@ -79,6 +80,27 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
             {tt('finish')}
           </button>
         </div>
+
+        {/* 🖼 Natijani ulashish — matn + referal link (virusli o'sish) */}
+        <button
+          onClick={() => {
+            const uid  = useAppStore.getState().user?.id
+            const lang = useAppStore.getState().settings.language
+            const streak = useAppStore.getState().streak
+            const emoji = passed ? '🏆' : '💪'
+            const text = lang === 'ru'
+              ? `${emoji} Мой результат в KIWI: ${percent}% (правильно ${correct}/${total})` +
+                (streak > 1 ? `\n🔥 Серия: ${streak} дн. подряд!` : '') +
+                `\nПопробуй и ты:`
+              : `${emoji} KIWI'dagi natijam: ${percent}% (to'g'ri ${correct}/${total})` +
+                (streak > 1 ? `\n🔥 Seriya: ${streak} kun ketma-ket!` : '') +
+                `\nSan ham sinab ko'r:`
+            shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
+          }}
+          className="btn-3d-ghost w-full mt-3 py-3 rounded-2xl font-bold text-[13px] flex items-center justify-center gap-2 text-duo-blue">
+          <Share2 size={15} />
+          {tt('shareResult')}
+        </button>
       </div>
     </div>
   )
