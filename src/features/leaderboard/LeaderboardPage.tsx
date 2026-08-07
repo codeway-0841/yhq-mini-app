@@ -17,8 +17,8 @@ import { api, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../sh
 const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
   bronze:   { color: '#cd7f32', titleKey: 'leagueBronze' },
   silver:   { color: '#94a3b8', titleKey: 'leagueSilver' },
-  gold:     { color: '#ffc800', titleKey: 'leagueGold' },
-  platinum: { color: '#38bdf8', titleKey: 'leaguePlat' },
+  gold:     { color: '#facc15', titleKey: 'leagueGold' },
+  platinum: { color: '#3b82f6', titleKey: 'leaguePlat' },
 }
 
 function SkeletonRow() {
@@ -41,7 +41,7 @@ function Medal({ rank }: { rank: number }) {
 
 function InitialAvatar({ name }: { name: string }) {
   return (
-    <div className="w-8 h-8 rounded-full bg-duo-blue flex items-center justify-center text-white text-xs font-black flex-shrink-0">
+    <div className="w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted text-xs font-black flex-shrink-0">
       {name[0]?.toUpperCase() ?? '?'}
     </div>
   )
@@ -69,7 +69,7 @@ function Podium({ top3 }: { top3: LeaderEntry[] }) {
       {col.map(({ e, medal, h, ring, bg }, i) => e && (
         <div key={i} className="flex flex-col items-center gap-1.5 flex-1 max-w-[110px]">
           <span className="text-lg">{medal}</span>
-          <div className={`w-14 h-14 rounded-full bg-duo-blue ring-2 ${ring} flex items-center justify-center text-white text-xl font-black`}>
+          <div className={`w-14 h-14 rounded-full bg-elevated ring-2 ${ring} flex items-center justify-center text-fg text-xl font-black`}>
             {e.name[0]?.toUpperCase() ?? '?'}
           </div>
           <p className="text-xs font-bold truncate max-w-full">{e.name}</p>
@@ -164,7 +164,7 @@ export default function LeaderboardPage() {
                       className={`flex items-center gap-3 px-4 py-3 border-b border-line ${
                         isPromote ? 'bg-duo-green/10 border-l-2 border-l-duo-green' :
                         isDemote  ? 'bg-duo-red/10 border-l-2 border-l-duo-red' :
-                        entry.isYou ? 'bg-duo-blue/10' : ''
+                        entry.isYou ? 'bg-duo-green/10' : ''
                       }`}>
                       <div className="w-8 flex items-center justify-center flex-shrink-0">
                         <Medal rank={entry.rank} />
@@ -181,7 +181,7 @@ export default function LeaderboardPage() {
                           {tt(lg.titleKey)}
                         </p>
                       </div>
-                      <span className="text-sm font-bold text-green-400">{entry.score}</span>
+                      <span className="text-sm font-bold text-pprimary">{entry.score}</span>
                     </div>
                   )
                 })}
@@ -212,7 +212,7 @@ export default function LeaderboardPage() {
             <div className="mt-2">
               {entries.map((entry) => (
                 <div key={entry.userId}
-                  className={`flex items-center gap-3 px-4 py-3 border-b border-line ${entry.isYou ? 'bg-duo-blue/10' : ''}`}>
+                  className={`flex items-center gap-3 px-4 py-3 border-b border-line ${entry.isYou ? 'bg-duo-green/10' : ''}`}>
                   <div className="w-8 flex items-center justify-center flex-shrink-0">
                     <Medal rank={entry.rank} />
                   </div>
@@ -228,7 +228,7 @@ export default function LeaderboardPage() {
                       <p className="text-[11px] text-orange-400">🔥 {entry.streak} {tt('streakCol')}</p>
                     )}
                   </div>
-                  <span className="text-sm font-bold text-green-400">{entry.score}</span>
+                  <span className="text-sm font-bold text-pprimary">{entry.score}</span>
                 </div>
               ))}
             </div>
