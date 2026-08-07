@@ -191,6 +191,15 @@ export default function OctagonPage() {
     setAttempt((a) => a + 1)
   }, [])
 
+  // Render free tier uxlashidan oldin "pre-warm": sahifa ochilganda
+  // WS serverni uyg'otamiz (/health ping) — "aloqa uzildi" xatosi kamayadi
+  useEffect(() => {
+    try {
+      const httpBase = config.wsUrl.replace(/^wss:/, 'https:').replace(/^ws:/, 'http:')
+      void fetch(new URL('/health', httpBase).toString()).catch(() => {})
+    } catch { /* jim */ }
+  }, [])
+
   useEffect(() => {
     return () => {
       if (s.phase === 'searching' && user?.id) {
