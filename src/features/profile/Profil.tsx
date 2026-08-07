@@ -262,15 +262,16 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 // ── List Item ───────────────────────────────────────────────────────────
+// Rang intizomi: ikonkalar NEYTRAL, faqat semantik ma'nolilar rangli (danger=qizil)
 interface ItemProps {
   icon: React.ElementType
-  iconBg: string
+  iconColor?: string
   label: string
   right?: React.ReactNode
   onPress?: () => void
   disabled?: boolean
 }
-function Item({ icon: Icon, iconBg, label, right, onPress, disabled }: ItemProps) {
+function Item({ icon: Icon, iconColor = '#94a3b8', label, right, onPress, disabled }: ItemProps) {
   return (
     <button
       type="button"
@@ -280,8 +281,9 @@ function Item({ icon: Icon, iconBg, label, right, onPress, disabled }: ItemProps
         disabled ? 'opacity-50 cursor-not-allowed' : 'active:bg-elevated'
       }`}
     >
-      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${iconBg}`}>
-        <Icon size={15} className="text-white" />
+      <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+        style={{ background: `${iconColor}1A`, border: `1px solid ${iconColor}2E` }}>
+        <Icon size={15} style={{ color: iconColor }} />
       </div>
       <span className="flex-1 text-[14px] text-left text-fg">{label}</span>
       {right !== undefined ? right : <ChevronRight size={16} className="text-lineStrong" />}
@@ -454,7 +456,7 @@ export default function Profil() {
         {/* Phone */}
         <Item
           icon={Phone}
-          iconBg="bg-green-500"
+         
           label={tt('addPhone')}
           right={
             user?.phone
@@ -468,7 +470,7 @@ export default function Profil() {
         />
 
         {/* Yopiq guruh */}
-        <Item icon={Lock} iconBg="bg-purple-500" label={tt('closedGroup')}
+        <Item icon={Lock} label={tt('closedGroup')}
           right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
       </Section>
@@ -487,7 +489,7 @@ export default function Profil() {
             if (!user) return
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${user.id}`, tt('refShareText'))
           }}
-          className="flex items-center gap-1.5 bg-duo-green text-white text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
+          className="flex items-center gap-1.5 bg-duo-green text-ponprimary text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
           <Share2 size={13} />
           {tt('refBtn')}
         </button>
@@ -500,7 +502,7 @@ export default function Profil() {
       {user?.isAdmin && (
         <Section title="ADMIN">
           <Item
-            icon={Pencil} iconBg="bg-duo-purple"
+            icon={Pencil}
             label="Savollar boshqaruvi"
             right={<ChevronRight size={16} className="text-muted" />}
             onPress={() => navigate('/admin')}
@@ -510,47 +512,47 @@ export default function Profil() {
 
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
-        <Item icon={Globe} iconBg="bg-blue-500" label={tt('langLabel')}
+        <Item icon={Globe} label={tt('langLabel')}
           right={<span className="text-[12px] text-muted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
 
-        <Item icon={CreditCard} iconBg="bg-duo-purple" label={tt('payHistory')}
+        <Item icon={CreditCard} label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
 
         <Item
-          icon={WifiOff} iconBg="bg-green-500" label={tt('offlineMode')}
+          icon={WifiOff} label={tt('offlineMode')}
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
           onPress={() => updateSettings({ offlineMode: !offlineOn })}
         />
 
-        <Item icon={RotateCcw} iconBg="bg-red-500" label={tt('resetProgress')}
+        <Item icon={RotateCcw} iconColor="#ef4444" label={tt('resetProgress')}
           onPress={handleReset} />
 
-        <Item icon={Moon} iconBg="bg-duo-purple" label={tt('themeLabel')}
+        <Item icon={Moon} label={tt('themeLabel')}
           right={<span className="text-[12px] text-muted">{themeLabel}</span>}
           onPress={() => setShowThemePicker(true)} />
 
-        <Item icon={RotateCcw} iconBg="bg-blue-500" label={tt('syncServer')}
+        <Item icon={RotateCcw} label={tt('syncServer')}
           onPress={handleSync} />
       </Section>
 
       {/* ── YORDAM ── */}
       <Section title={tt('helpSection')}>
-        <Item icon={MessageCircle} iconBg="bg-green-500" label={tt('contactUs')}
+        <Item icon={MessageCircle} label={tt('contactUs')}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
-        <Item icon={Radio}    iconBg="bg-blue-500"   label={tt('tgChannel')}
+        <Item icon={Radio}      label={tt('tgChannel')}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
-        <Item icon={Star}     iconBg="bg-amber-500"  label={tt('rateApp')}
+        <Item icon={Star}      label={tt('rateApp')}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
-        <Item icon={Share2}   iconBg="bg-pink-500"   label={tt('shareApp')}
+        <Item icon={Share2}     label={tt('shareApp')}
           onPress={() => shareUrl('https://t.me/kiwi_uz_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
-        <Item icon={Download} iconBg="bg-blue-400"   label={tt('installApp')}
+        <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(addToHomeScreen())} />
       </Section>
 
       {/* Toast */}
       {toast && (
-        <div className="fixed bottom-20 left-4 right-4 bg-duo-blue text-white text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
+        <div className="fixed bottom-20 left-4 right-4 card-neon text-fg text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
           {toast}
         </div>
       )}
