@@ -83,11 +83,40 @@ const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onPr
   )
 })
 
+// ── Streak tugmasi (long-press = milestone demo preview) ────────────────────
+const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, tt, ariaLabel }: {
+  streak: number; onOpen: () => void; onLongPress?: () => void
+  tt: (k: Parameters<ReturnType<typeof useT>>[0]) => string
+  ariaLabel: string
+}) {
+  const timer = React.useRef<ReturnType<typeof setTimeout> | null>(null)
+  const fired = React.useRef(false)
+  const cancel = () => { if (timer.current) { clearTimeout(timer.current); timer.current = null } }
+  return (
+    <button aria-label={ariaLabel}
+      onClick={() => { if (!fired.current) onOpen(); fired.current = false }}
+      onPointerDown={() => {
+        fired.current = false
+        cancel()
+        if (onLongPress) timer.current = setTimeout(() => { fired.current = true; onLongPress() }, 700)
+      }}
+      onPointerUp={cancel} onPointerLeave={cancel}
+      className="flex items-center gap-2 active:scale-95 transition-transform">
+      <Flame size={16} className="text-pwarning" fill="currentColor" />
+      <div className="text-left">
+        <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{streak} {tt('daysWord')}</p>
+        <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('streakDays')}</p>
+      </div>
+    </button>
+  )
+})
+
 // ── Hero: bugungi progress (ring + minimal statistika) ──────────────────────
-const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang }: {
+const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang, onStreakPreview }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
   lang: 'uz' | 'ru'
+  onStreakPreview?: () => void
 }) {
   const tt = useT(lang)
   const navigate = useNavigate()
@@ -128,15 +157,9 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
       </div>
       {/* Pastki statistika: Seriya / XP / Reyting */}
       <div className="flex items-center justify-around mt-5 pt-4 border-t border-pline">
-        {/* Streak — bosilsa "Intizom" sahifasi ochiladi */}
-        <button onClick={() => navigate('/streak')} aria-label={tt('intizomTitle')}
-          className="flex items-center gap-2 active:scale-95 transition-transform">
-          <Flame size={16} className="text-pwarning" fill="currentColor" />
-          <div className="text-left">
-            <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{streak} {tt('daysWord')}</p>
-            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('streakDays')}</p>
-          </div>
-        </button>
+        {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
+        <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
+          tt={tt} ariaLabel={tt('intizomTitle')} />
         <div className="flex items-center gap-2">
           <Star size={16} className="text-pgold" fill="currentColor" />
           <div className="text-left">
@@ -606,6 +629,7 @@ export default function Dashboard() {
             streak={dailyStreak}
             totalPool={questionsCount}
             lang={settings.language}
+            onStreakPreview={() => setMilestone(Math.max(dailyStreak, 7))}
           />
 
       {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
