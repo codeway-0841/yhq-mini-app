@@ -26,6 +26,7 @@ const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPag
 const XatolarPage     = lazy(() => import('./features/mistakes/XatolarPage'))
 const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
 const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
+const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const NotFound        = lazy(() => import('./components/NotFound'))
 
 type TelegramWindow = Window & {
@@ -108,6 +109,7 @@ function Layout() {
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />
             <Route path="/premium"    element={<PremiumPage />} />
+            <Route path="/statistika" element={<StatistikaPage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>

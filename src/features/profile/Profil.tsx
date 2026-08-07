@@ -5,7 +5,7 @@ import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  Camera, ImagePlus, Trash2, X,
+  Camera, ImagePlus, Trash2, X, BarChart2,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
@@ -515,6 +515,9 @@ export default function Profil() {
         <Item icon={Globe} label={tt('langLabel')}
           right={<span className="text-[12px] text-muted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
+
+        <Item icon={BarChart2} label={settings.language === 'ru' ? 'Статистика' : 'Statistika'}
+          onPress={() => navigate('/statistika')} />
 
         <Item icon={CreditCard} label={tt('payHistory')}
           onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
