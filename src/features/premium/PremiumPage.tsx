@@ -12,6 +12,7 @@ import { goBack } from '../../lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../lib/telegram'
 import { ACCENT_THEMES } from '../../config/themes'
+import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PlanKey } from '../../../shared/premium-plans'
 import { track } from '../../lib/analytics'
 
 const BENEFITS = [
@@ -29,9 +30,9 @@ export default function PremiumPage() {
 
   const premiumThemes = ACCENT_THEMES.filter((t) => t.premium)
 
-  const buy = () => {
-    track('premium_click')
-    openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
+  const buy = (plan: PlanKey) => {
+    track('premium_click', { plan })
+    openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${plan}`)
   }
 
   return (
@@ -112,19 +113,47 @@ export default function PremiumPage() {
         ))}
       </div>
 
-      {/* CTA */}
+      {/* Tarif rejalari */}
       {!isPremium && (
-        <div className="mx-5 mt-6">
-          <button onClick={buy} className="btn-premium-gold w-full h-[58px] rounded-[18px] text-[15px]">
-            <Crown size={18} fill="currentColor" />
-            {lang === 'ru' ? 'Получить Premium' : 'Premium olish'}
-          </button>
-          <p className="text-center text-[11px] text-psubtle mt-3">
+        <>
+          <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
+            {lang === 'ru' ? 'Выберите тариф' : 'Tarifni tanlang'}
+          </p>
+          <div className="mx-5 flex flex-col gap-3">
+            {PREMIUM_PLANS.map((plan) => {
+              const highlight = plan.key === HIGHLIGHT_PLAN
+              return (
+                <button key={plan.key} onClick={() => buy(plan.key)}
+                  className="card-premium relative w-full p-4 text-left active:scale-[0.98] transition-transform"
+                  style={highlight ? { borderColor: 'var(--p-gold)', borderWidth: 1.5, boxShadow: '0 0 30px -8px rgba(250,204,21,0.35)' } : undefined}>
+                  {highlight && (
+                    <span className="absolute -top-2.5 left-4 bg-gradient-to-r from-[#fde047] to-[#eab308] text-[#241a00] text-[9.5px] font-black uppercase tracking-wide px-2.5 py-1 rounded-full">
+                      ★ {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
+                    </span>
+                  )}
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <p className="text-[15px] font-bold text-pfg">
+                        {lang === 'ru' ? plan.titleRu : plan.titleUz}
+                      </p>
+                      <p className="text-[11.5px] text-psubtle mt-0.5">
+                        {lang === 'ru' ? plan.periodRu : plan.periodUz}
+                      </p>
+                    </div>
+                    <span className="btn-premium-gold px-4 py-2 rounded-xl text-[13px] flex-shrink-0">
+                      ⭐ {plan.stars}
+                    </span>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+          <p className="text-center text-[11px] text-psubtle mt-3 px-5">
             {lang === 'ru'
               ? "Оплата через Telegram Stars — безопасно и мгновенно"
               : "To'lov Telegram Stars orqali — xavfsiz va bir zumda"}
           </p>
-        </div>
+        </>
       )}
     </div>
   )

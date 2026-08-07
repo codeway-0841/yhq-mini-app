@@ -2,6 +2,7 @@ import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
 import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
+import { PREMIUM_PLANS, getPlan, parseStartParam, parsePaymentPayload, type PlanKey } from '../../shared/premium-plans'
 import { config } from '../config'
 
 const token = config.telegram.botToken
@@ -16,21 +17,37 @@ const bot = new Bot(token)
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
-// ── Premium — Telegram Stars to'lovi ────────────────────────────────────────
-const PREMIUM_PRICE_STARS = 250   // ~5$ (komissiyasiz — Telegram Stars cheklov emas)
+// ── Premium — Telegram Stars to'lovi (tarif rejalari — shared/premium-plans) ─
 const PREMIUM_DESC =
-  "KIWI Premium — bir martalik sotib olish:\n" +
+  "KIWI Premium obunasi:\n" +
   "• Barcha funksiyalarga cheksiz kirish\n" +
-  "• Xatolar bo'yicha batafsil tahlil\n" +
+  "• Eksklyuziv temalar (9 ta atmosfera)\n" +
+  "• AI Tutor va xatolar tahlili\n" +
   "• Reklama'siz toza tajriba"
 
-async function sendPremiumInvoice(ctx: Context) {
+/** Bitta tarif uchun Stars invoice yuborish. Payload: premium_<plan>_<uid>. */
+async function sendPremiumInvoice(ctx: Context, planKey: PlanKey) {
+  const plan = getPlan(planKey)
+  if (!plan) return
   await ctx.replyWithInvoice(
-    '⭐ KIWI Premium',
+    `⭐ KIWI Premium — ${plan.titleUz}`,
     PREMIUM_DESC,
-    `premium_${ctx.from?.id}`,
+    `premium_${plan.key}_${ctx.from?.id}`,
     'XTR',
-    [{ label: 'Premium', amount: PREMIUM_PRICE_STARS }],
+    [{ label: `Premium · ${plan.periodUz}`, amount: plan.stars }],
+  )
+}
+
+/** Tarif tanlash menusi (3 inline tugma) */
+async function sendPremiumChooser(ctx: Context) {
+  const kb = new InlineKeyboard()
+  for (const p of PREMIUM_PLANS) {
+    kb.text(`⭐ ${p.titleUz} — ${p.stars} Stars`, `buy_${p.key}`).row()
+  }
+  await ctx.reply(
+    "👑 KIWI Premium — o'z tarifingizni tanlang:\n\n" +
+    PREMIUM_PLANS.map((p) => `• ${p.titleUz} — ${p.periodUz} — ${p.stars}⭐`).join('\n'),
+    { reply_markup: kb }
   )
 }
 
@@ -77,8 +94,14 @@ bot.command('start', async (ctx) => {
 
   // Duel invite deep-link: t.me/bot?start=duel-xxxx → ilovadagi duel sahifasiga o'tkazuvchi tugma
   const param = ctx.match
-  if (param === 'premium') {
-    await sendPremiumInvoice(ctx)
+  // Premium: 'premium' → tarif tanlash; 'premium_<plan>' → aniq invoice
+  const planParam = param ? parseStartParam(param) : null
+  if (planParam === 'chooser') {
+    await sendPremiumChooser(ctx)
+    return
+  }
+  if (planParam) {
+    await sendPremiumInvoice(ctx, planParam)
     return
   }
   // Referal link: t.me/bot?start=ref_<id> → ilovaga ?ref= orqali o'tkazamiz
@@ -108,23 +131,42 @@ bot.command('start', async (ctx) => {
 })
 
 // ── /premium — Stars to'lov oqimi ───────────────────────────────────────────
-bot.command('premium', async (ctx) => { await sendPremiumInvoice(ctx) })
+bot.command('premium', async (ctx) => { await sendPremiumChooser(ctx) })
+
+// Tarif tanlansa (inline tugma) → aniq shu tarif invoice'i
+bot.callbackQuery(/^buy_(month|year|lifetime)$/, async (ctx) => {
+  const planKey = ctx.match[1] as PlanKey
+  await ctx.answerCallbackQuery()
+  await sendPremiumInvoice(ctx, planKey)
+})
 
 // Telegram to'lov checkout'ini tasdiqlash (majburiy — aks holda invoice o'tmaydi)
 bot.on('pre_checkout_query', async (ctx) => {
   await ctx.answerPreCheckoutQuery(true)
 })
 
-// To'lov muvaffaqiyatli → PREMIUM faollashtiriladi
+// To'lov muvaffaqiyatli → PREMIUM faollashtiriladi (tarif muddatiga qarab)
 bot.on('message:successful_payment', async (ctx) => {
   const uid = ctx.from?.id
+  const payload = ctx.message?.successful_payment?.invoice_payload ?? ''
   if (!uid) return
+  const parsed = parsePaymentPayload(payload)
   try {
-    await usersRepository.setTariff(BigInt(uid), 'premium')
-    await ctx.reply(
-      "🎉 Tabriklaymiz — Premium faollashtirildi!\n\n" +
-      "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
-    )
+    if (parsed?.plan.days) {
+      // Muddatli tarif: mavjud premium muddati USTIGA yig'iladi
+      await usersRepository.extendPremium(BigInt(uid), parsed.plan.days)
+      await ctx.reply(
+        `🎉 Tabriklaymiz — Premium ${parsed.plan.periodUz}ga faollashtirildi!\n\n` +
+        "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
+      )
+    } else {
+      // Umrbod (yoki eski payload format)
+      await usersRepository.setTariff(BigInt(uid), 'premium')
+      await ctx.reply(
+        "🎉 Tabriklaymiz — UMRBOD Premium faollashtirildi!\n\n" +
+        "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
+      )
+    }
   } catch (err) {
     console.error('[bot] premium activation failed:', err)
     await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @kiwi_uz_bot'ga yozing — tezda yechamiz.")
