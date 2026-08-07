@@ -449,6 +449,7 @@ body[data-theme='light'][data-accent='payme'] {
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
 .glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }
+.glow-accent-sm { box-shadow: 0 0 10px rgb(var(--p-primary-rgb) / 0.45); }
 .neon-text-glow { text-shadow: 0 0 18px var(--p-glow); }
 
 /* ── Shrift: SF Pro / Inter (premium ekranlar) ───────────────────────────── */

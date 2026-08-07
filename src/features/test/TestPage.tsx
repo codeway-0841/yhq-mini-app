@@ -328,7 +328,7 @@ export default function TestPage() {
         <div className="flex items-center gap-2">
           {isFinished && (
             <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center text-duo-blue">
+              className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
               <BarChart2 size={17} />
             </button>
           )}

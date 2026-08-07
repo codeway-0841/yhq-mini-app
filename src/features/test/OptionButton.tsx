@@ -9,7 +9,7 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   fontSize: string
 }) {
   const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all'
-  let style  = 'btn-3d-ghost font-semibold border-transparent hover:border-neon-blue/40'
+  let style  = 'btn-3d-ghost font-semibold border-transparent hover:border-duo-green/50'
   let chip   = 'bg-elevated border-line text-subtle'
   let icon   = null
   let glow: string | undefined
