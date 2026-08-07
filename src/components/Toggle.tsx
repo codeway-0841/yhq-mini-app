@@ -1,5 +1,7 @@
 // iOS-uslub toggle — knob pozitsiyasi style orqali (brauzerdan mustaqil).
 // ON: yashil track + knob o'ngda · OFF: kulrang track + knob chapda.
+import { playSound } from '../lib/sounds'
+
 export default function Toggle({ checked, onChange = () => {}, size = 'md', label }: {
   checked: boolean
   onChange?: (checked: boolean) => void
@@ -18,7 +20,7 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
       role="switch"
       aria-checked={!!checked}
       aria-label={label ?? 'Toggle'}
-      onClick={() => onChange(!checked)}
+      onClick={() => { playSound('toggle'); onChange(!checked) }}
       className={`relative flex-none ${trackCls} rounded-full transition-colors duration-200 ${
         checked ? 'bg-duo-green' : 'bg-elevated border border-line'
       }`}

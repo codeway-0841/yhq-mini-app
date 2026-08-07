@@ -67,7 +67,7 @@ function tone(freq: number, at: number, dur: number, type: OscillatorType, peak:
   osc.stop(at + dur + 0.02)
 }
 
-export type SoundKind = 'click' | 'success' | 'error' | 'chime' | 'win'
+export type SoundKind = 'click' | 'success' | 'error' | 'chime' | 'win' | 'combo' | 'match' | 'toggle'
 
 /** Master ovoz funksiyasi — barcha UI portlari shu orqali o'ynaydi */
 export function playSound(kind: SoundKind) {
@@ -104,5 +104,29 @@ export function playSound(kind: SoundKind) {
       tone(base * 1.5, t + 0.2, 0.14, 'sine', 0.055)
       tone(base * 2, t + 0.3, 0.26, 'sine', 0.05)
       break
+    case 'combo':
+      // 🔥 3+ to'g'ri javob ketma-ketligi — ko'tariladigan to'lqin
+      tone(base * 1.25, t, 0.10, 'sine', 0.06)
+      tone(base * 1.5, t + 0.07, 0.10, 'sine', 0.06)
+      tone(base * 2, t + 0.14, 0.18, 'sine', 0.06)
+      break
+    case 'match':
+      // ⚔ Raqib topildi — "game start" ikki zarb
+      tone(base, t, 0.10, 'triangle', 0.06)
+      tone(base * 2, t + 0.1, 0.16, 'triangle', 0.055)
+      break
+    case 'toggle':
+      // Sozlamalar switch — juda qisqa tick
+      tone(base * 1.5, t, 0.05, 'sine', 0.04)
+      break
   }
+}
+
+/* ── Global: asosiy CTA tugmalar bosilganda yumshoq "tap" ──────────────────
+   Event delegation — har sahifaga alohida yozish shart emas. */
+if (typeof document !== 'undefined') {
+  document.addEventListener('pointerdown', (e) => {
+    const el = (e.target as HTMLElement | null)?.closest?.('.btn-neon, .btn-premium')
+    if (el && !(el as HTMLButtonElement).disabled) playSound('click')
+  })
 }

@@ -207,7 +207,14 @@ export default function TestPage() {
     setSelectedHistory((prev) => { const next = [...prev]; next[current] = optId; return next })
     setAnswers((prev) => { const next = [...prev]; next[current] = isCorrect ? 'correct' : 'wrong'; return next })
     haptics.notify(isCorrect ? 'success' : 'error')
-    playSound(isCorrect ? 'success' : 'error')
+    if (isCorrect) {
+      correctStreakRef.current += 1
+      // 🔥 combo: har 3 ta ketma-ket to'g'ri javobda ko'tariladigan ovoz
+      playSound(correctStreakRef.current % 3 === 0 ? 'combo' : 'success')
+    } else {
+      correctStreakRef.current = 0
+      playSound('error')
+    }
     addResult(isCorrect, q.id)   // wrongByTicket is keyed by QUESTION id
     if (isCorrect && settings?.autoNextCorrect) {
       setTimeout(() => goNextRef.current(), 800)
@@ -257,6 +264,8 @@ export default function TestPage() {
 
   // Exit confirm: first tap shows the warning, second tap within 3 s really exits
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  // 🔥 Ketma-ket to'g'ri javoblar hisoblagichi (combo ovozi uchun)
+  const correctStreakRef = useRef(0)
 
   const handleBack = useCallback(() => {
     const answered = answers.filter((a) => a !== null && a !== 'unanswered').length

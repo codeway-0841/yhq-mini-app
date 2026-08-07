@@ -9,6 +9,7 @@ import { useSubjectStore } from '../../store/useSubjectStore'
 import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../shared/lib/octagon-ws'
 import { config }         from '../../config'
 import { track }          from '../../lib/analytics'
+import { playSound }      from '../../lib/sounds'
 import { shareUrl }       from '../../lib/telegram'
 
 type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
@@ -198,6 +199,16 @@ export default function OctagonPage() {
       }
     }
   }, [s.phase, user?.id])
+
+  // Ovoz effektlari: raqib topilganda + g'alaba/mag'lubiyat
+  const prevPhaseRef = useRef(s.phase)
+  useEffect(() => {
+    if (s.phase !== prevPhaseRef.current) {
+      if (s.phase === 'matched') playSound('match')
+      if (s.phase === 'match_end' && s.result) playSound(s.result === 'win' ? 'win' : s.result === 'lose' ? 'error' : 'click')
+      prevPhaseRef.current = s.phase
+    }
+  }, [s.phase, s.result])
 
   const routeDuelCode = useParams().duelCode
   const [duelCode, setDuelCode] = useState<string | null>(
