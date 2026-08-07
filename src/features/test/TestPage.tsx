@@ -6,6 +6,7 @@ import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
+import { playSound } from '../../lib/sounds'
 import { shareUrl } from '../../lib/telegram'
 import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
@@ -206,6 +207,7 @@ export default function TestPage() {
     setSelectedHistory((prev) => { const next = [...prev]; next[current] = optId; return next })
     setAnswers((prev) => { const next = [...prev]; next[current] = isCorrect ? 'correct' : 'wrong'; return next })
     haptics.notify(isCorrect ? 'success' : 'error')
+    playSound(isCorrect ? 'success' : 'error')
     addResult(isCorrect, q.id)   // wrongByTicket is keyed by QUESTION id
     if (isCorrect && settings?.autoNextCorrect) {
       setTimeout(() => goNextRef.current(), 800)

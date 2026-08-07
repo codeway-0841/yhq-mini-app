@@ -5,6 +5,7 @@ import {
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../lib/telegram'
+import { playSound } from '../lib/sounds'
 import { useT } from '../lib/i18n'
 import { ACCENT_THEMES, getAccentTheme, resolveAccent } from '../config/themes'
 import Toggle from './Toggle'
@@ -247,6 +248,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       }
                       stopPreview()
                       setAccent(theme.id)
+                      playSound('chime') // tema unlock — tema-mos chime
                       setPicker(null)
                     }}
                     className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${

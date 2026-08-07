@@ -1,6 +1,8 @@
+import { useEffect } from 'react'
 import { RotateCcw } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
+import { playSound } from '../../lib/sounds'
 import DonutChart from './DonutChart'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
@@ -18,6 +20,9 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
   const correct    = results.filter((r) => r.status === 'correct').length
   const wrong      = results.filter((r) => r.status === 'incorrect').length
   const unanswered = results.filter((r) => r.status === 'unanswered').length
+
+  // Natija ochildi — qisqa g'alaba fanfarasi (tema-mos chastota)
+  useEffect(() => { playSound('win') }, [])
 
   return (
     <div className="fixed inset-0 z-50 flex items-end">
