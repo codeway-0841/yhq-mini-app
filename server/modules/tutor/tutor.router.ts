@@ -77,21 +77,40 @@ router.post(
     const [q] = await db.select().from(questions).where(eq(questions.id, questionId))
     if (!q) throw new AppError(404, 'Question not found')
 
-    const apiRes = await fetch(
-      // Model alias: `gemini-2.0-flash` kunlik kvotasi tugab qolishi mumkin —
-      // `flash-latest` har doim oxirgi flash modelga ishora qiladi
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse&key=${key}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang, answeredCorrect) }] }],
-          // flash-latest reasoning-model — fikrlash ham token yeydi; 3000 yetarli
-          generationConfig: { maxOutputTokens: 3000, temperature: 0.6 },
-        }),
-      },
-    )
+    // Upstream Gemini request: 45s timeout + client uzilganda abort.
+    // Aks holda ochiq qolgan stream server resurslarini cheksiz egallaydi
+    // va AI kvotasi bekor requestlarga sarflanadi.
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 45_000)
+    res.on('close', () => controller.abort())
+
+    let apiRes: Response
+    try {
+      apiRes = await fetch(
+        // Model alias: `gemini-2.0-flash` kunlik kvotasi tugab qolishi mumkin —
+        // `flash-latest` har doim oxirgi flash modelga ishora qiladi
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse&key=${key}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          signal: controller.signal,
+          body: JSON.stringify({
+            contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang, answeredCorrect) }] }],
+            // flash-latest reasoning-model — fikrlash ham token yeydi; 3000 yetarli
+            generationConfig: { maxOutputTokens: 3000, temperature: 0.6 },
+          }),
+        },
+      )
+    } catch (err) {
+      clearTimeout(timeout)
+      if (controller.signal.aborted) {
+        if (res.destroyed) return // client o'zi uzilgan — javob kerak emas
+        throw new AppError(504, 'ai_timeout')
+      }
+      throw err
+    }
     if (!apiRes.ok || !apiRes.body) {
+      clearTimeout(timeout)
       const text = await apiRes.text().catch(() => '')
       console.error('[tutor] Gemini error:', apiRes.status, text.slice(0, 300))
       if (apiRes.status === 429) throw new AppError(503, 'quota')
@@ -111,7 +130,7 @@ router.post(
     try {
       for (;;) {
         const { done, value } = await reader.read()
-        if (done) break
+        if (done || controller.signal.aborted) break
         buffer += decoder.decode(value, { stream: true })
         const parts = buffer.split('\n')
         buffer = parts.pop() ?? ''
@@ -127,9 +146,18 @@ router.post(
           } catch { /* noto'liq JSON — keyingi chunk'da to'g'rilanadi */ }
         }
       }
+    } catch (err) {
+      // 45s timeout yoki client uzilishi abort qilganda reader.read()
+      // AbortError tashlaydi — bu kutilgan holat, stream'ni toza yopamiz.
+      if (!controller.signal.aborted) throw err
     } finally {
-      res.write('data: [DONE]\n\n')
-      res.end()
+      clearTimeout(timeout)
+      // Client uzilgan bo'lsa (socket destroyed) yozishga urunmaymiz;
+      // timeout holatida esa ochiq stream'ni toza yopamiz.
+      if (!res.writableEnded && !res.destroyed) {
+        res.write('data: [DONE]\n\n')
+        res.end()
+      }
     }
   }),
 )
