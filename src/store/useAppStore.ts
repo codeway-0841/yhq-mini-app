@@ -31,10 +31,11 @@ interface AppState {
   setAccent:      (accent: string) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
-  addResult:      (correct: boolean, questionId?: number) => void
+  addResult:      (correct: boolean, questionId: number, selectedAnswer: string | null) => void
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
+  resetAccount:   () => void
 }
 
 const DEFAULT_SETTINGS: ApiSettings = {
@@ -100,7 +101,7 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      addResult: (correct, questionId?) => {
+      addResult: (correct, questionId, selectedAnswer) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
         // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
@@ -122,13 +123,15 @@ export const useAppStore = create<AppState>()(
             : s.wrongByTicket,
         }))
         if (userId && userId !== '0') {
-          api.postResult(userId, correct, questionId).catch(console.error)
-          // Kunlik faollik + kunlik JAMI savol hisobi (heat map uchun) — har javob
-          void useDailyStore.getState().touchActivity(userId, todayStr(), useSubjectStore.getState().subjectId,
-            { answered: 1, correct: correct ? 1 : 0 })
+          const date = todayStr()
+          const subjectId = useSubjectStore.getState().subjectId
+          api.postResult(userId, { questionId, selectedAnswer, subjectId })
+            .then((result) => {
+              useDailyStore.getState().applyServerResult(date, subjectId, result.dailyStreak)
+            })
+            .catch(console.error)
           if (wasWrong) {
             api.addDailyFix(userId, {
-              date:      todayStr(),
               subjectId: useSubjectStore.getState().subjectId,
             }).catch(console.error)
           }
@@ -160,6 +163,21 @@ export const useAppStore = create<AppState>()(
           ).catch(console.error)
         }
       },
+
+      resetAccount: () => set({
+        user: null,
+        settings: { ...DEFAULT_SETTINGS },
+        streak: 0,
+        totalCorrect: 0,
+        totalWrong: 0,
+        totalAnswered: 0,
+        wrongByTicket: {},
+        savedQuestions: [],
+        tariff: 'free',
+        initialized: false,
+        displayName: null,
+        customAvatar: null,
+      }),
 
       syncFromServer: async (userId) => {
         try {

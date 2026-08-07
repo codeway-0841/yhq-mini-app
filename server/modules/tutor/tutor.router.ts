@@ -25,7 +25,6 @@ const router = Router()
 const BodySchema = z.object({
   questionId:     z.number().int().min(1),
   lang:           z.enum(['uz', 'ru']).default('uz'),
-  userId:         z.string().regex(/^\d{1,19}$/),
   /** To'g'ri javob berilganmi — prompt o'shanga qarab tanlanadi */
   answeredCorrect: z.boolean().default(false),
 })
@@ -59,15 +58,19 @@ function buildPrompt(q: typeof questions.$inferSelect, lang: 'uz' | 'ru', answer
 // POST /api/tutor/explain
 router.post(
   '/tutor/explain',
-  rateLimit({ maxPerMinute: 10 }),
+  rateLimit({
+    maxPerMinute: 10,
+    keyFn: (request) => (request as { telegramUserId?: string }).telegramUserId ?? request.ip,
+  }),
   validate({ body: BodySchema }),
   wrap(async (req, res) => {
     const key = config.ai.geminiApiKey
     if (!key) throw new AppError(503, 'AI Tutor vaqtincha o\'chiq (GEMINI_API_KEY yo\'q)')
 
-    const { questionId, lang, userId, answeredCorrect } = req.body as z.infer<typeof BodySchema>
-    const uid = parseBigInt(userId)
-    if (!uid) throw new AppError(400, 'Invalid userId')
+    const { questionId, lang, answeredCorrect } = req.body as z.infer<typeof BodySchema>
+    const verifiedId = (req as { telegramUserId?: string }).telegramUserId
+    const uid = verifiedId ? parseBigInt(verifiedId) : null
+    if (!uid) throw new AppError(401, 'telegram_user_not_identified')
 
     if (!(await isPremium(uid))) throw new AppError(403, 'premium_required')
 

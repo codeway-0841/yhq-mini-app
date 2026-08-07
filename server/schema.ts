@@ -19,11 +19,30 @@ export const users = pgTable('users', {
   tariff:    tariffEnum('tariff').default('free').notNull(),
   /** Referal mukofoti: shu san'gacha premium (tariff='premium' umrbod ham bor) */
   premiumUntil: timestamp('premium_until'),
+  /** Bepul trial bir marta berilgan vaqt — premiumUntil'dan alohida idempotency flag. */
+  trialGrantedAt: timestamp('trial_granted_at'),
   /** Admin panel ruxsati (savol CRUD). Faqat qo'lda DB orqali beriladi. */
   isAdmin:    boolean('is_admin').default(false).notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 })
+
+/** Telegram Stars to'lovlari — charge ID ledger va idempotency manbai. */
+export const payments = pgTable('payments', {
+  id:                       serial('id').primaryKey(),
+  telegramPaymentChargeId:  text('telegram_payment_charge_id').notNull().unique(),
+  providerPaymentChargeId:  text('provider_payment_charge_id').notNull(),
+  userId:                   bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'restrict' }),
+  plan:                     text('plan').notNull(),
+  amount:                   integer('amount').notNull(),
+  currency:                 text('currency').notNull(),
+  payload:                  text('payload').notNull(),
+  status:                   text('status').default('completed').notNull(),
+  rawUpdate:                jsonb('raw_update').$type<Record<string, unknown>>().default({}).notNull(),
+  createdAt:                timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_payments_user_created').on(t.userId, t.createdAt),
+])
 
 export const progress = pgTable('progress', {
   id:            serial('id').primaryKey(),
@@ -122,6 +141,19 @@ export const analyticsEvents = pgTable('analytics_events', {  id:        serial(
  * (user_id, subject_id) juftligi bo'yicha bitta qator: o'sha fanning
  * ketma-ket bajarilgan kunlari soni va oxirgi bajarilgan sana.
  */
+/** Cron period ledger — bir job bir davrda faqat bir marta bajariladi. */
+export const jobRuns = pgTable('job_runs', {
+  id:         serial('id').primaryKey(),
+  jobName:    text('job_name').notNull(),
+  periodKey:  text('period_key').notNull(),
+  status:     text('status').default('running').notNull(),
+  startedAt:  timestamp('started_at').defaultNow().notNull(),
+  finishedAt: timestamp('finished_at'),
+  details:    jsonb('details').$type<Record<string, unknown>>().default({}).notNull(),
+}, (t) => [
+  unique('uq_job_run_period').on(t.jobName, t.periodKey),
+])
+
 export const dailyStreaks = pgTable('daily_streaks', {
   id:            serial('id').primaryKey(),
   userId:        bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),

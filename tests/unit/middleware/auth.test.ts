@@ -67,10 +67,14 @@ describe('telegramAuth — production (auth MAJBURIY)', () => {
     expect(res.statusCode).toBe(401)
   })
 
-  it('ANTI-SPOOF: /progress/:userId boshqa foydalanuvchiniki → 403', () => {
+  it.each([
+    '/progress/999/result',
+    '/daily/999/activity',
+    '/achievements/999',
+  ])('ANTI-SPOOF: %s boshqa foydalanuvchiniki → 403', (path) => {
     mockedVerify.mockReturnValue({ id: 111 } as never)
     const res = mockRes(); const next = vi.fn()
-    telegramAuth(mockReq('/progress/999/result', 'POST', {}, 'sig'), res, next as NextFunction)
+    telegramAuth(mockReq(path, 'POST', {}, 'sig'), res, next as NextFunction)
     expect(res.statusCode).toBe(403)
     expect(next).not.toHaveBeenCalled()
   })
@@ -105,5 +109,13 @@ describe('telegramAuth — dev rejim (auth o\'chiq)', () => {
     const next = vi.fn()
     telegramAuth(mockReq('/progress/111/result', 'POST'), mockRes(), next as NextFunction)
     expect(next).toHaveBeenCalledOnce()
+  })
+
+  it('NODE_ENV yo\'q bo\'lsa fail-closed ishlaydi', () => {
+    delete process.env['NODE_ENV']
+    const res = mockRes(); const next = vi.fn()
+    telegramAuth(mockReq('/progress/111/result', 'POST'), res, next as NextFunction)
+    expect(res.statusCode).toBe(401)
+    expect(next).not.toHaveBeenCalled()
   })
 })

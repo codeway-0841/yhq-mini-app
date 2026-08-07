@@ -2,8 +2,11 @@ import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
 import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
-import { PREMIUM_PLANS, getPlan, parseStartParam, parsePaymentPayload, type PlanKey } from '../../shared/premium-plans'
+
+import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../shared/premium-plans'
 import { config } from '../config'
+import { paymentRepository } from '../modules/payments/payment.repository'
+import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -140,35 +143,81 @@ bot.callbackQuery(/^buy_(month|year|lifetime)$/, async (ctx) => {
   await sendPremiumInvoice(ctx, planKey)
 })
 
-// Telegram to'lov checkout'ini tasdiqlash (majburiy — aks holda invoice o'tmaydi)
+// Checkout faqat payload, payer, summa va currency shared tarifga mos bo'lsa tasdiqlanadi.
 bot.on('pre_checkout_query', async (ctx) => {
+  const query = ctx.preCheckoutQuery
+  const validation = validatePremiumPayment({
+    payerId: String(ctx.from.id),
+    payload: query.invoice_payload,
+    currency: query.currency,
+    totalAmount: query.total_amount,
+  })
+  if (!validation.ok) {
+    await ctx.answerPreCheckoutQuery(false, { error_message: paymentErrorMessage(validation.reason) })
+    return
+  }
   await ctx.answerPreCheckoutQuery(true)
 })
 
-// To'lov muvaffaqiyatli → PREMIUM faollashtiriladi (tarif muddatiga qarab)
+// To'lov muvaffaqiyatli → ledger va entitlement bitta atomik SQL statementda yoziladi.
 bot.on('message:successful_payment', async (ctx) => {
   const uid = ctx.from?.id
-  const payload = ctx.message?.successful_payment?.invoice_payload ?? ''
-  if (!uid) return
-  const parsed = parsePaymentPayload(payload)
+  const payment = ctx.message?.successful_payment
+  if (!uid || !payment) return
+
+  const validation = validatePremiumPayment({
+    payerId: String(uid),
+    payload: payment.invoice_payload,
+    currency: payment.currency,
+    totalAmount: payment.total_amount,
+  })
+  if (!validation.ok) {
+    Sentry.captureMessage('Invalid successful Telegram payment', {
+      level: 'error',
+      extra: { reason: validation.reason, telegramUserId: String(uid) },
+    })
+    await ctx.reply("To'lov qabul qilindi, lekin invoice tekshiruvidan o'tmadi. @kiwi_uz_bot'ga yozing.")
+    return
+  }
+
   try {
-    if (parsed?.plan.days) {
-      // Muddatli tarif: mavjud premium muddati USTIGA yig'iladi
-      await usersRepository.extendPremium(BigInt(uid), parsed.plan.days)
-      await ctx.reply(
-        `🎉 Tabriklaymiz — Premium ${parsed.plan.periodUz}ga faollashtirildi!\n\n` +
-        "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
-      )
-    } else {
-      // Umrbod (yoki eski payload format)
-      await usersRepository.setTariff(BigInt(uid), 'premium')
-      await ctx.reply(
-        "🎉 Tabriklaymiz — UMRBOD Premium faollashtirildi!\n\n" +
-        "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start"
-      )
+    // Bot invoice Mini App birinchi ochilishidan oldin ham to'lanishi mumkin.
+    // Upsert payment ledger FK uchun user qatorini idempotent tayyorlaydi.
+    await usersRepository.upsert({
+      id: validation.userId,
+      firstName: ctx.from.first_name,
+      lastName: ctx.from.last_name ?? null,
+      username: ctx.from.username ?? null,
+      photoUrl: null,
+    })
+
+    const result = await paymentRepository.complete({
+      telegramChargeId: payment.telegram_payment_charge_id,
+      providerChargeId: payment.provider_payment_charge_id,
+      userId: validation.userId,
+      plan: validation.plan.key,
+      days: validation.plan.days,
+      amount: payment.total_amount,
+      currency: payment.currency,
+      payload: payment.invoice_payload,
+      rawUpdate: ctx.update as unknown as Record<string, unknown>,
+    })
+
+    if (result === 'user_not_found') {
+      throw new Error(`Payment payer is not initialized: ${uid}`)
     }
+    if (result === 'duplicate') {
+      await ctx.reply("✅ Bu to'lov avval faollashtirilgan. Premium holatingiz saqlangan.")
+      return
+    }
+
+    await ctx.reply(
+      `🎉 Tabriklaymiz — Premium ${validation.plan.periodUz}ga faollashtirildi!\n\n` +
+      "Endi barcha funksiyalardan cheksiz foydalaning. Ilova: /start",
+    )
   } catch (err) {
     console.error('[bot] premium activation failed:', err)
+    Sentry.captureException(err)
     await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @kiwi_uz_bot'ga yozing — tezda yechamiz.")
   }
 })

@@ -12,7 +12,7 @@ export default defineConfig({
   // './assets' relative yo'l buzuq URL'ga olib borardi (blank page).
   base: '/',
   resolve: {
-    alias: { '@': path.resolve(__dirname, './src') },
+    alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
   server: {
     proxy: {

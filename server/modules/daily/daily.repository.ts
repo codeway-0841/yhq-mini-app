@@ -138,30 +138,48 @@ export const dailyRepository = {
     answeredDelta = 0,
     correctDelta  = 0,
   ): Promise<{ dailyStreak: number }> {
-    // 1) Faollik yozuvi + kunlik jami hisoblagichni inkrementlash
-    await db.insert(dailyRecords)
-      .values({ userId, date, subjectId, answered: answeredDelta, correct: correctDelta, fixed: 0 })
-      .onConflictDoUpdate({
-        target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
-        set: {
-          answered: sql`${dailyRecords.answered} + ${answeredDelta}`,
-          correct:  sql`${dailyRecords.correct} + ${correctDelta}`,
-        },
-      })
+    // Record counters va streak bitta PostgreSQL statement ichida atomik yangilanadi.
+    // ON CONFLICT mavjud row qiymatidan hisoblaydi: parallel request lost-update
+    // qilmaydi, eski/out-of-order sana esa last_daily_date'ni orqaga qaytarmaydi.
+    const result = await db.execute(sql<{ daily_streak: number }>`
+      WITH entitlement AS (
+        SELECT (
+          tariff = 'premium'
+          OR (premium_until IS NOT NULL AND premium_until > now())
+        ) AS premium
+        FROM users
+        WHERE id = ${userId}
+      ), record_upsert AS (
+        INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
+        VALUES (${userId}, ${date}, ${subjectId}, ${answeredDelta}, ${correctDelta}, 0)
+        ON CONFLICT (user_id, date, subject_id) DO UPDATE SET
+          answered = daily_records.answered + EXCLUDED.answered,
+          correct = daily_records.correct + EXCLUDED.correct
+        RETURNING id
+      ), streak_upsert AS (
+        INSERT INTO daily_streaks (user_id, subject_id, streak, last_daily_date, updated_at)
+        VALUES (${userId}, ${subjectId}, 1, ${date}, now())
+        ON CONFLICT (user_id, subject_id) DO UPDATE SET
+          streak = CASE
+            WHEN daily_streaks.last_daily_date >= EXCLUDED.last_daily_date
+              THEN daily_streaks.streak
+            WHEN daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 1, 'YYYY-MM-DD')
+              THEN daily_streaks.streak + 1
+            WHEN COALESCE((SELECT premium FROM entitlement), false)
+              AND daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 2, 'YYYY-MM-DD')
+              THEN daily_streaks.streak + 1
+            ELSE 1
+          END,
+          last_daily_date = GREATEST(daily_streaks.last_daily_date, EXCLUDED.last_daily_date),
+          updated_at = now()
+        RETURNING streak
+      )
+      SELECT streak AS daily_streak FROM streak_upsert
+    `)
 
-    // 2) Streak yangilash (bugun allaqachon belgilangan bo'lsa — o'zgarishsiz;
-    //    🧊 premium freeze: 1 kunlik uzilishda seriya saqlanadi)
-    const [cur, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
-    const nextStreak = calcNextStreak(cur?.lastDailyDate ?? null, date, cur?.streak ?? 0, frozen)
-
-    await db.insert(dailyStreaks).values({
-      userId, subjectId, streak: nextStreak, lastDailyDate: date,
-    }).onConflictDoUpdate({
-      target: [dailyStreaks.userId, dailyStreaks.subjectId],
-      set:    { streak: nextStreak, lastDailyDate: date, updatedAt: new Date() },
-    })
-
-    return { dailyStreak: nextStreak }
+    const value = Number(result.rows[0]?.daily_streak)
+    if (!Number.isFinite(value)) throw new Error('Daily streak upsert returned no value')
+    return { dailyStreak: value }
   },
 
   /**

@@ -20,8 +20,11 @@ import { db } from '../../db/connection'
 import { progress, dailyRecords, dailyStreaks } from '../../schema'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
 import { progressRepository } from '../progress/progress.repository'
+import { requireSelf } from '../../middleware/auth'
 
 const router = Router()
+
+router.use('/achievements/:userId', requireSelf)
 
 /** "Barcha fanlardan 80%+" sharti uchun minimum savollar soni (fan bo'yicha) */
 const MIN_ANSWERED_PER_SUBJECT = 20

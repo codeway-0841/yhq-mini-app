@@ -1,4 +1,6 @@
-const BASE = '/api'
+import { config } from '../config'
+
+const BASE = config.apiBaseUrl
 const TIMEOUT_MS = 8000
 
 /** Telegram WebApp initData — sent with every request for server-side verification. */
@@ -128,8 +130,13 @@ export const api = {
   getProfile: (userId: string) =>
     request<FullProfile>('GET', `/profile/${uid(userId)}`),
 
-  postResult: (userId: string, correct: boolean, questionId?: number) =>
-    request<{ ok: true }>('POST', `/progress/${uid(userId)}/result`, { correct, questionId }),
+  postResult: (userId: string, data: {
+    questionId: number
+    selectedAnswer: string | null
+    subjectId: string
+  }) => request<{ ok: true; correct: boolean; dailyStreak: number }>(
+    'POST', `/progress/${uid(userId)}/result`, data,
+  ),
 
   patchProgress: (userId: string, patch: Partial<ApiProgress>) =>
     request<{ ok: true }>('PATCH', `/progress/${uid(userId)}`, patch),
@@ -188,13 +195,13 @@ export const api = {
   getDailyHistory: (userId: string, date: string, subject: string) =>
     request<DailyHistory>('GET', `/daily/${uid(userId)}/history?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
 
-  addDailyFix: (userId: string, data: { date: string; subjectId: string }) =>
+  addDailyFix: (userId: string, data: { subjectId: string }) =>
     request<{ ok: true }>('POST', `/daily/${uid(userId)}/fix`, data),
 
   getAchievements: (userId: string) =>
     request<{ stats: AchievementStats }>('GET', `/achievements/${uid(userId)}`),
 
-  touchDailyActivity: (userId: string, data: { date: string; subjectId: string; answered?: number; correct?: number }) =>
+  touchDailyActivity: (userId: string, data: { subjectId: string }) =>
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──

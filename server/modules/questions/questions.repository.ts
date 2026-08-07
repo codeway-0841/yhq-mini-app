@@ -23,6 +23,13 @@ export const questionsRepository = {
       db.select().from(questions).orderBy(asc(questions.id)))
   },
 
+  findById(questionId: number) {
+    return cached(`questions:id:${questionId}`, async () => {
+      const [row] = await db.select().from(questions).where(eq(questions.id, questionId))
+      return row ?? null
+    })
+  },
+
   findByTopic(topicId: number) {
     return cached(`questions:topic:${topicId}`, () =>
       db.select().from(questions).where(eq(questions.topicId, topicId)).orderBy(asc(questions.id)))

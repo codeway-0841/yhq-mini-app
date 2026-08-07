@@ -53,9 +53,9 @@ export default function SpeedPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft, finished, answered])
 
-  const advance = useCallback((isCorrect: boolean) => {
+  const advance = useCallback((isCorrect: boolean, selectedAnswer: string | null) => {
     setAnswers((a) => [...a, isCorrect ? 'correct' : 'wrong'])
-    addResult(isCorrect, q.id)
+    addResult(isCorrect, q.id, selectedAnswer)
     setSelected(null)
     if (idx + 1 >= qs.length) {
       setFinished(true)
@@ -70,7 +70,7 @@ export default function SpeedPage() {
     setSelected('__timeout__')
     playSound('error')
     haptics.notify('error')
-    setTimeout(() => advance(false), 700)
+    setTimeout(() => advance(false, null), 700)
   }, [advance])
 
   const handleSelect = useCallback((optId: string) => {
@@ -79,7 +79,7 @@ export default function SpeedPage() {
     const isCorrect = optId === q.correct
     haptics.notify(isCorrect ? 'success' : 'error')
     playSound(isCorrect ? 'success' : 'error')
-    setTimeout(() => advance(isCorrect), 800)
+    setTimeout(() => advance(isCorrect, optId), 800)
   }, [answered, q, advance])
 
   useEffect(() => { useSubjectStore.getState() }, [subjectId])

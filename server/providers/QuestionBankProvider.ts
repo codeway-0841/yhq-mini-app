@@ -13,6 +13,7 @@ export type QuestionRow = typeof questions.$inferSelect
 export interface QuestionBankProvider {
   readonly sourceId: string
   getAllQuestions(): Promise<QuestionRow[]>
+  getQuestionById(questionId: number): Promise<QuestionRow | null>
   getQuestionsByTopic(topicId: number): Promise<QuestionRow[]>
   getTopics(): Promise<TopicRow[]>
   getStats(): Promise<{ totalQuestions: number; totalTopics: number }>

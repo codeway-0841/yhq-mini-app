@@ -21,6 +21,7 @@ interface QuestionsState {
 
 // Raw DB questions are kept here so language switches don't need a re-fetch.
 let rawQuestions: DbQuestion[] = []
+let loadVersion = 0
 
 /** Admin panel uchun raw (til-mapping'siz) savollar. load() dan keyin to'la. */
 export function getRawQuestions(): DbQuestion[] {
@@ -40,16 +41,19 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     const sid = subjectId ?? useSubjectStore.getState().subjectId
     // Shu til + shu fan allaqachon yuklangan
     if (get().loaded && get().lang === lang && get().subjectId === sid) return
-    if (get().loading) return
+    const version = ++loadVersion
     set({ loading: true, error: null })
     try {
       const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
+      if (version !== loadVersion) return
       rawQuestions = raw
       set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
     } catch (e) {
-      set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+      if (version === loadVersion) {
+        set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+      }
     } finally {
-      set({ loading: false })
+      if (version === loadVersion) set({ loading: false })
     }
   },
 

@@ -81,7 +81,7 @@ export default function AdaptivePage() {
     const quality: 0 | 1 = optionId === q.correct ? 1 : 0
     haptics.notify(quality === 1 ? 'success' : 'error')
     playSound(quality === 1 ? 'success' : 'error')
-    addResult(quality === 1, q.id)
+    addResult(quality === 1, q.id, optionId)
     recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
 
     // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol

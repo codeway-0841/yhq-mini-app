@@ -1,3 +1,5 @@
+import { config } from '../config'
+
 /**
  * KPI tracking (1 haftalik sinov) — fire-and-forget, HECH QACHON block/throw qilmaydi.
  * Faqat prod (+ haqiqiy Telegram user) uchun meaningful; dev'da no-op bo'lishi mumkin.
@@ -9,7 +11,7 @@ export function track(event: string, props: Record<string, unknown> = {}): void 
     const initData = tg?.initData
     // Telegram'siz (brauzer) — KPI uchun keraksiz o'lchov; saqaramizmi? hozircha skip
     if (!initData) return
-    void fetch('/api/analytics', {
+    void fetch(`${config.apiBaseUrl}/analytics`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

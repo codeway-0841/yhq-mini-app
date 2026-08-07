@@ -1,3 +1,5 @@
+import { config } from '../config'
+
 /**
  * AI Tutor — client. POST /api/tutor/explain (premium-only) — SSE streaming.
  *
@@ -19,7 +21,7 @@ export async function fetchStaticExplanation(
   lang: 'uz' | 'ru',
 ): Promise<string | null> {
   try {
-    const res = await fetch(`/api/questions/${questionId}/explanation?lang=${lang}`)
+    const res = await fetch(`${config.apiBaseUrl}/questions/${questionId}/explanation?lang=${lang}`)
     if (res.status === 404) return null
     if (!res.ok) throw new TutorError('network', `HTTP ${res.status}`)
     const data = (await res.json()) as { text?: string }
@@ -42,7 +44,6 @@ export class TutorError extends Error {
 
 /** SSE stream'dan matn qismlarini o'qiydigan generator */
 export async function* explainQuestion(
-  userId: string,
   questionId: number,
   lang: 'uz' | 'ru',
   answeredCorrect = false,
@@ -51,10 +52,10 @@ export async function* explainQuestion(
   const initData = getInitData()
   if (initData) headers['x-telegram-init-data'] = initData
 
-  const res = await fetch('/api/tutor/explain', {
+  const res = await fetch(`${config.apiBaseUrl}/tutor/explain`, {
     method: 'POST',
     headers,
-    body: JSON.stringify({ questionId, lang, userId, answeredCorrect }),
+    body: JSON.stringify({ questionId, lang, answeredCorrect }),
   })
 
   if (!res.ok) {

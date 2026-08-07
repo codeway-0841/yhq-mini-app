@@ -137,17 +137,13 @@ export const usersService = {
     if (!updated) throw new AppError(404, 'User not found')
   },
 
-  /** 3 kunlik BEPUL trial — FAQAT 1 marta (premiumUntil hech qachon o'rnatilmagan
-   *  bo'lishi shart). Qo'lda DB flag KERAK EMAS: premiumUntil bir marta o'rnatilgach
-   *  qayta null bo'lmaydi — takroriy trial tabiiy bloklansadi. */
+  /** 3 kunlik BEPUL trial — conditional UPDATE parallel requestlarda ham bir marta. */
   async startTrial(userId: bigint): Promise<{ granted: boolean; reason?: 'already_used'; days: number }> {
-    const user = await usersRepository.findById(userId)
-    if (!user) throw new AppError(404, 'User not found')
-    if (user.tariff === 'premium' || user.premiumUntil != null) {
-      return { granted: false, reason: 'already_used', days: 0 }
+    if (await usersRepository.tryGrantTrial(userId, TRIAL_DAYS)) {
+      return { granted: true, days: TRIAL_DAYS }
     }
-    await usersRepository.extendPremium(userId, TRIAL_DAYS)
-    return { granted: true, days: TRIAL_DAYS }
+    if (!(await usersRepository.findById(userId))) throw new AppError(404, 'User not found')
+    return { granted: false, reason: 'already_used', days: 0 }
   },
 }
 

@@ -74,6 +74,8 @@ export const useAdaptiveStore = create<AdaptiveState>()(
     {
       name: 'yhq-adaptive-store',
       version: 1,
+      // Session pointer vaqtinchalik; faqat uzoq muddatli SR kartalar persist bo'ladi.
+      partialize: (s) => ({ cardsBySubject: s.cardsBySubject }) as AdaptiveState,
       // v0: tekis { cards, currentId, sessionCount } — barchasi YHQ (bitta real fan)
       // ga tegishli deb qabul qilinadi va ko'chiriladi.
       migrate: (persisted: unknown) => {

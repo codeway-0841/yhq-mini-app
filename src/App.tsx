@@ -3,6 +3,8 @@ import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-route
 import { useAppStore } from './store/useAppStore'
 import { useQuestionsStore } from './store/useQuestionsStore'
 import { useSubjectStore } from './store/useSubjectStore'
+import { useDailyStore } from './store/useDailyStore'
+import { useAdaptiveStore } from './store/useAdaptiveStore'
 import { api } from './lib/api'
 import { track } from './lib/analytics'
 import PageLoader from './components/PageLoader'
@@ -190,9 +192,16 @@ export default function App() {
       useQuestionsStore.getState().load(lang)
 
     if (tgUser?.id) {
-      // ISSIQ START: cache'da user bo'lsa — splash'SIZ darhol UI.
-      // init fonda ketadi va yangi ma'lumotlar bilan state'ni yangilaydi.
-      if (useAppStore.getState().user) {
+      const verifiedId = String(tgUser.id)
+      const cachedId = useAppStore.getState().user?.id
+
+      // Warm start faqat ayni Telegram akkauntining cache'i bo'lsa xavfsiz.
+      // Account almashganda PII, progress va adaptive state atomik tozalanadi.
+      if (cachedId && cachedId !== verifiedId) {
+        useAppStore.getState().resetAccount()
+        useDailyStore.getState().resetAccount()
+        useAdaptiveStore.getState().resetAll()
+      } else if (cachedId === verifiedId) {
         useAppStore.setState({ initialized: true })
       }
 
@@ -214,11 +223,6 @@ export default function App() {
       })
         .then(async (data) => {
           try {
-            // Akkaunt almashganda lokal no-server ma'lumotlarni tozalash
-            const prevId = useAppStore.getState().user?.id
-            if (prevId && prevId !== data.user.id) {
-              useAppStore.getState().setDisplayName(null)
-            }
             useAppStore.setState({
               user:           data.user,
               tariff:         data.user.tariff,
@@ -249,8 +253,10 @@ export default function App() {
           }
         })
     } else {
-      // GHOST USER HIMOYASI: Telegram WEBAPP'siz ochilganda (brauzer) oldingi
-      // haqiqiy foydalanuvchining statistikasi/saqlanganlari ko'rinmasligi kerak.
+      // GHOST USER HIMOYASI: brauzer preview haqiqiy akkaunt cache'ini ko'rmaydi.
+      useAppStore.getState().resetAccount()
+      useDailyStore.getState().resetAccount()
+      useAdaptiveStore.getState().resetAll()
       useAppStore.setState({
         user:           { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
         tariff:         'free',

@@ -103,7 +103,7 @@ export default function TestPage() {
     setAiText('')
     try {
       let acc = ''
-      for await (const chunk of explainQuestion(userId, q.id, settings?.language ?? 'uz', answeredCorrect)) {
+      for await (const chunk of explainQuestion(q.id, settings?.language ?? 'uz', answeredCorrect)) {
         acc += chunk
         setAiText(acc)
       }
@@ -182,13 +182,24 @@ export default function TestPage() {
     setStudyOpen(false)
   }, [location.key, startIndex, activeQuestions.length])
 
-  const goTo   = useCallback((i: number) => {
-    if (i >= 0 && i < activeQuestions.length) { setCurrent(i); setStudyOpen(false); setShowExplain(false); setShowAi(false) }
-  }, [activeQuestions.length])
-  const goNext = useCallback(() => goTo(current + 1), [current, goTo])
+  const autoNextTimerRef = useRef<number | null>(null)
+  const cancelAutoNext = useCallback(() => {
+    if (autoNextTimerRef.current !== null) {
+      window.clearTimeout(autoNextTimerRef.current)
+      autoNextTimerRef.current = null
+    }
+  }, [])
+  useEffect(() => cancelAutoNext, [current, cancelAutoNext])
 
-  const goNextRef = useRef(goNext)
-  useEffect(() => { goNextRef.current = goNext }, [goNext])
+  const goTo = useCallback((i: number) => {
+    cancelAutoNext()
+    if (i >= 0 && i < activeQuestions.length) {
+      setCurrent(i)
+      setStudyOpen(false)
+      setShowExplain(false)
+      setShowAi(false)
+    }
+  }, [activeQuestions.length, cancelAutoNext])
 
   // "O'rganish" — panelni ochadi/yopadi (faqat toggle)
   const handleStudyToggle = useCallback(() => {
@@ -216,13 +227,19 @@ export default function TestPage() {
       correctStreakRef.current = 0
       playSound('error')
     }
-    addResult(isCorrect, q.id)   // wrongByTicket is keyed by QUESTION id
-    if (isCorrect && settings?.autoNextCorrect) {
-      setTimeout(() => goNextRef.current(), 800)
-    } else if (!isCorrect && settings?.autoNextWrong) {
-      setTimeout(() => goNextRef.current(), 1200)
+    addResult(isCorrect, q.id, optId)   // server selected variantni o'zi tekshiradi
+    const delay = isCorrect
+      ? (settings?.autoNextCorrect ? 800 : null)
+      : (settings?.autoNextWrong ? 1200 : null)
+    if (delay !== null) {
+      cancelAutoNext()
+      const answeredIndex = current
+      autoNextTimerRef.current = window.setTimeout(() => {
+        autoNextTimerRef.current = null
+        goTo(answeredIndex + 1)
+      }, delay)
     }
-  }, [selected, correctId, current, q, settings, addResult])
+  }, [selected, correctId, current, q, settings, addResult, cancelAutoNext, goTo])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({

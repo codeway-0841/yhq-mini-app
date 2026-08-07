@@ -3,7 +3,7 @@
  * No business logic here; only SQL/Drizzle calls.
  */
 
-import { eq, sql as sqlExpr } from 'drizzle-orm'
+import { and, eq, isNull, sql as sqlExpr } from 'drizzle-orm'
 import { db }    from '../../db/connection'
 import { users, referrals } from '../../schema'
 
@@ -46,7 +46,7 @@ export const usersRepository = {
     return row!
   },
 
-  async findById(id: bigint) {
+  async findById(id: bigint): Promise<typeof users.$inferSelect | null> {
     const [user] = await db.select().from(users).where(eq(users.id, id))
     return user ?? null
   },
@@ -66,6 +66,20 @@ export const usersRepository = {
   /** Tarifni yangilash — Premium sotib olinganda (bot payment handler). */
   async setTariff(id: bigint, tariff: 'free' | 'premium'): Promise<void> {
     await db.update(users).set({ tariff, updatedAt: new Date() }).where(eq(users.id, id))
+  },
+
+  /** Trialni faqat bir marta va race-safe conditional update bilan beradi. */
+  async tryGrantTrial(id: bigint, days: number): Promise<boolean> {
+    const rows = await db.update(users).set({
+      trialGrantedAt: new Date(),
+      premiumUntil: sqlExpr`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
+      updatedAt: new Date(),
+    }).where(and(
+      eq(users.id, id),
+      eq(users.tariff, 'free'),
+      isNull(users.trialGrantedAt),
+    )).returning({ id: users.id })
+    return rows.length > 0
   },
 
   /** Referal mukofoti: +N kun premium (mavjud muddat ustiga yig'iladi). */

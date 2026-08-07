@@ -23,9 +23,12 @@ export function rateLimit(opts: Options = {}) {
   const max = Math.max(1, Math.floor(opts.maxPerMinute ?? 60))
   const refillIntervalMs = 60_000 / max
 
-  const keyFn = opts.keyFn ?? ((req: Request): string | undefined =>
-    req.params['userId'] as string | undefined
-  )
+  const keyFn = opts.keyFn ?? ((req: Request): string | undefined => {
+    const paramId = req.params['userId']
+    return (req as { telegramUserId?: string }).telegramUserId
+      ?? (typeof paramId === 'string' ? paramId : paramId?.[0])
+      ?? req.ip
+  })
 
   // Each limiter instance owns its own Map — no shared-state collisions
   const buckets = new Map<string, Bucket>()

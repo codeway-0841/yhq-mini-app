@@ -11,7 +11,8 @@ const envSchema = z.object({
   NODE_ENV: z.enum(['development', 'production', 'test']).optional(),
 
   /** Neon PostgreSQL — majburiy */
-  DATABASE_URL: z.string().min(1, 'DATABASE_URL is required'),
+  DATABASE_URL:      z.string().min(1, 'DATABASE_URL is required'),
+  TEST_DATABASE_URL: z.string().min(1).optional(),
 
   /** Server */
   PORT:           z.string().regex(/^\d+$/).optional(),
@@ -47,11 +48,17 @@ export function assertProdConfig(): void {
 export const config = {
   // NODE_ENV dinamik getter — testlar runtime'da o'zgartirishi mumkin
   // (boshqa barcha maydonlar startup snapshot'idir).
-  get env(): string { return process.env['NODE_ENV'] ?? 'development' },
-  get isProd(): boolean { return process.env['NODE_ENV'] === 'production' },
+  // Noma'lum muhit xavfsizlik nuqtai nazaridan production hisoblanadi.
+  // Bu hosted platformada NODE_ENV tasodifan yo'qolsa auth fail-open bo'lishini to'xtatadi.
+  get env(): string { return process.env['NODE_ENV'] ?? 'production' },
+  get isProd(): boolean { return (process.env['NODE_ENV'] ?? 'production') === 'production' },
 
   db: {
-    url: env.DATABASE_URL,
+    // Integration test explicit test bazani olsa o'shanga ulanadi; production URL
+    // fallbacki faqat unit test importlari uchun, integration script alohida guard qiladi.
+    url: env.NODE_ENV === 'test' && env.TEST_DATABASE_URL ? env.TEST_DATABASE_URL : env.DATABASE_URL,
+    productionUrl: env.DATABASE_URL,
+    testUrl: env.TEST_DATABASE_URL,
   },
 
   server: {

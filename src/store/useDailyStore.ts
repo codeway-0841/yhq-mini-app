@@ -37,7 +37,9 @@ interface DailyState {
    * `delta` bersa (har javob) HAR SAFAR yuboriladi (kunlik JAMI → heat map);
    * berilmasa (sof faollik, masalan dars) kunda 1 marta dedupe qilinadi.
    */
-  touchActivity: (userId: string, date: string, subjectId: string, delta?: { answered: number; correct: number }) => Promise<void>
+  touchActivity: (userId: string, date: string, subjectId: string) => Promise<void>
+  applyServerResult: (date: string, subjectId: string, dailyStreak: number) => void
+  resetAccount: () => void
 }
 
 export const useDailyStore = create<DailyState>()(
@@ -54,22 +56,27 @@ export const useDailyStore = create<DailyState>()(
         } catch { /* offline — eski lokal holatda qolamiz */ }
       },
 
-      touchActivity: async (userId, date, subjectId, delta) => {
+      touchActivity: async (userId, date, subjectId) => {
         if (!userId || userId === '0') return
         const key = doneKeyOf(date, subjectId)
-        // Sof faollik (dars) kunda 1 marta; savol delta'lari esa har safar
-        if (!delta?.answered && useDailyStore.getState().activityKey === key) return
+        if (useDailyStore.getState().activityKey === key) return
         try {
-          const res = await api.touchDailyActivity(userId, {
-            date, subjectId,
-            answered: delta?.answered ?? 0,
-            correct:  delta?.correct ?? 0,
-          })
+          const res = await api.touchDailyActivity(userId, { subjectId })
           set((s) => ({
             activityKey: key,
             streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
           }))
         } catch { /* offline — keyingi urinishda belgilanadi */ }
+      },
+
+      resetAccount: () => set({ streaks: {}, activityKey: null }),
+
+      applyServerResult: (date, subjectId, dailyStreak) => {
+        const key = doneKeyOf(date, subjectId)
+        set((s) => ({
+          activityKey: key,
+          streaks: { ...s.streaks, [subjectId]: dailyStreak },
+        }))
       },
     }),
     {

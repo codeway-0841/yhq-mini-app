@@ -18,9 +18,13 @@ import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { dailyRecords, progress, dailyStreaks } from '../../schema'
 import { config } from '../../config'
+import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
+import { cronRepository } from './cron.repository'
 
 const router = Router()
+
+router.use('/cron', requireCronSecret)
 
 const APP_URL = `${config.deploy.appUrl}?v=${config.deploy.buildId}`
 
@@ -30,12 +34,8 @@ function tashkentDate(daysAgo = 0): string {
   return d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tashkent' })
 }
 
-router.all('/cron/daily-reminder', async (req, res) => {
-  const secret = config.cron.secret
-  if (secret && req.headers.authorization !== `Bearer ${secret}`) {
-    res.status(401).json({ error: 'unauthorized' })
-    return
-  }
+// Vercel Cron scheduled requests use GET; secret middleware is the trust boundary.
+router.get('/cron/daily-reminder', async (_req, res) => {
   const token = config.telegram.botToken
   if (!token) {
     res.status(500).json({ error: 'BOT_TOKEN not set' })
@@ -43,6 +43,11 @@ router.all('/cron/daily-reminder', async (req, res) => {
   }
 
   const today  = tashkentDate()
+  const acquired = await cronRepository.tryStart('daily-reminder', today)
+  if (!acquired) {
+    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
+    return
+  }
   const cutoff = tashkentDate(14)
 
   // So'nggi 14 kunda faol foydalanuvchilar
@@ -104,7 +109,9 @@ router.all('/cron/daily-reminder', async (req, res) => {
     }
   }
 
-  res.json({ ok: true, date: today, targets: targets.length, sent, blocked, failed })
+  const result = { date: today, targets: targets.length, sent, blocked, failed }
+  await cronRepository.complete('daily-reminder', today, result)
+  res.json({ ok: true, ...result })
 })
 
 /**
@@ -113,15 +120,14 @@ router.all('/cron/daily-reminder', async (req, res) => {
  * PASTKI 30% va umuman nofaollar → bir daraja PASTGA.
  * Duolingo uslubi: bronze → silver → gold → platinum.
  */
-router.all('/cron/league-rollover', async (req, res) => {
-  const secret = config.cron.secret
-  if (secret && req.headers.authorization !== `Bearer ${secret}`) {
-    res.status(401).json({ error: 'unauthorized' })
-    return
-  }
-
+router.get('/cron/league-rollover', async (_req, res) => {
   const wThis = weekStartTashkent()    // joriy hafta boshi (yangi liga davri)
   const wPrev = weekStartTashkent(1)   // natija olingan hafta boshi
+  const acquired = await cronRepository.tryStart('league-rollover', wPrev)
+  if (!acquired) {
+    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', prevWeekStart: wPrev })
+    return
+  }
 
   const rows = await db.select({
     userId: progress.userId,
@@ -174,7 +180,9 @@ router.all('/cron/league-rollover', async (req, res) => {
   }
 
   await Promise.all(updates)
-  res.json({ ok: true, prevWeekStart: wPrev, users: rows.length, promoted, demoted })
+  const result = { prevWeekStart: wPrev, users: rows.length, promoted, demoted }
+  await cronRepository.complete('league-rollover', wPrev, result)
+  res.json({ ok: true, ...result })
 })
 
 export default router

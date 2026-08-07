@@ -15,7 +15,9 @@ import { config }          from '../config'
 import { verifyInitData }  from '../utils/telegram'
 
 /** Routes whose first path segment carries a userId: /:userId/... */
-const USER_SEGMENTS = new Set(['profile', 'progress', 'settings', 'saved', 'users'])
+const USER_SEGMENTS = new Set([
+  'profile', 'progress', 'settings', 'saved', 'users', 'daily', 'achievements',
+])
 
 /**
  * Public read-only content — no per-user data, safe to cache on the CDN.
@@ -31,7 +33,9 @@ function isPublicGet(req: Request): boolean {
 }
 
 export function isAuthEnforced(): boolean {
-  return Boolean(config.telegram.botToken) && config.isProd
+  // Production auth BOT_TOKEN mavjudligiga bog'liq bo'lmasligi kerak: token noto'g'ri
+  // sozlansa request ochilib qolmaydi, balki quyida 503 bilan fail-closed bo'ladi.
+  return config.isProd
 }
 
 export function telegramAuth(req: Request, res: Response, next: NextFunction): void {
@@ -50,12 +54,17 @@ export function telegramAuth(req: Request, res: Response, next: NextFunction): v
     return
   }
 
+  if (!config.telegram.botToken) {
+    res.status(503).json({ error: 'Authentication service is not configured' })
+    return
+  }
+
   if (!initData) {
     res.status(401).json({ error: 'Missing Telegram initData' })
     return
   }
 
-  const user = verifyInitData(initData, config.telegram.botToken!)
+  const user = verifyInitData(initData, config.telegram.botToken)
   if (!user) {
     res.status(401).json({ error: 'Invalid Telegram initData signature' })
     return
@@ -81,5 +90,25 @@ export function telegramAuth(req: Request, res: Response, next: NextFunction): v
     }
   }
 
+  next()
+}
+
+/**
+ * Route-level ownership guard. User-scoped routerlar buni explicit qo'llaydi;
+ * global path tekshiruvi esa defense-in-depth bo'lib qoladi.
+ */
+export function requireSelf(req: Request, res: Response, next: NextFunction): void {
+  if (!isAuthEnforced()) { next(); return }
+
+  const verifiedId = (req as { telegramUserId?: string }).telegramUserId
+  const requestedId = req.params['userId']
+  if (!verifiedId) {
+    res.status(401).json({ error: 'Telegram user is not authenticated' })
+    return
+  }
+  if (!requestedId || requestedId !== verifiedId) {
+    res.status(403).json({ error: 'Forbidden — cannot access another user’s data' })
+    return
+  }
   next()
 }

@@ -16,6 +16,10 @@ export class DefaultQuestionBankProvider implements QuestionBankProvider {
     return questionsRepository.findAll()
   }
 
+  getQuestionById(questionId: number): Promise<QuestionRow | null> {
+    return questionsRepository.findById(questionId)
+  }
+
   getQuestionsByTopic(topicId: number): Promise<QuestionRow[]> {
     return questionsRepository.findByTopic(topicId)
   }

@@ -13,12 +13,17 @@ import { wrap, AppError }     from '../../middleware/error-handler'
 import { validate }           from '../../middleware/validate'
 import { parseBigInt }        from '../../utils/parse'
 import { rateLimit }          from '../../middleware/rate-limiter'
+import { requireSelf }        from '../../middleware/auth'
+import { isCalendarDate, tashkentDate } from '../../utils/date'
 import { progressRepository } from '../progress/progress.repository'
 import { dailyRepository }    from './daily.repository'
+import { SUBJECT_IDS }        from '../../config/subjects'
 
 const router = Router()
 
-const DATE_RE = /^\d{4}-\d{2}-\d{2}$/
+// Har bir daily endpoint faqat initData bilan tasdiqlangan egasiga tegishli.
+router.use('/daily/:userId', requireSelf)
+
 
 // GET /api/daily/:userId — bugungi kunlik holat (record yo'q bo'lsa null) + streak
 router.get(
@@ -29,8 +34,8 @@ router.get(
 
     const date    = typeof req.query['date'] === 'string' ? req.query['date'] : ''
     const subject = typeof req.query['subject'] === 'string' ? req.query['subject'] : ''
-    if (!DATE_RE.test(date))    throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
-    if (!subject || subject.length > 32) throw new AppError(400, 'Invalid subject')
+    if (!isCalendarDate(date)) throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
+    if (!SUBJECT_IDS.includes(subject)) throw new AppError(400, 'Invalid subject')
 
     const data = await dailyRepository.getToday(uid, date, subject)
     res.json(data)
@@ -47,8 +52,8 @@ router.get(
 
     const date    = typeof req.query['date'] === 'string' ? req.query['date'] : ''
     const subject = typeof req.query['subject'] === 'string' ? req.query['subject'] : ''
-    if (!DATE_RE.test(date))    throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
-    if (!subject || subject.length > 32) throw new AppError(400, 'Invalid subject')
+    if (!isCalendarDate(date)) throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
+    if (!SUBJECT_IDS.includes(subject)) throw new AppError(400, 'Invalid subject')
 
     const data = await dailyRepository.getHistory(uid, date, subject)
     res.json(data)
@@ -56,9 +61,7 @@ router.get(
 )
 
 const FixSchema = z.object({
-  date:      z.string().regex(DATE_RE),
-  subjectId: z.string().min(1).max(32),
-  count:     z.number().int().min(1).max(100).default(1),
+  subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
 })
 
 // POST /api/daily/:userId/fix — eski xato to'g'rilandi, shu kunga fixed qo'shish
@@ -72,24 +75,20 @@ router.post(
 
     await progressRepository.ensureExists(uid)
 
-    const { date, subjectId } = req.body as z.infer<typeof FixSchema>
-    await dailyRepository.addFixed(uid, date, subjectId)
+    const { subjectId } = req.body as z.infer<typeof FixSchema>
+    await dailyRepository.addFixed(uid, tashkentDate(), subjectId)
 
     res.json({ ok: true })
   }),
 )
 
 const ActivitySchema = z.object({
-  date:      z.string().regex(DATE_RE),
-  subjectId: z.string().min(1).max(32),
-  /** Shu chaqiruvdagi savol delta'lari (0 = sof faollik, masalan dars) */
-  answered:  z.number().int().min(0).max(100).default(0),
-  correct:   z.number().int().min(0).max(100).default(0),
+  subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
 })
 
 // POST /api/daily/:userId/activity
-// Kunlik faollik: kamida 1 savol YOKI dars — streak shu bilan yoziladi.
-// Har javob answered/correct delta sifatida qo'shiladi (kunlik JAMI — heat map).
+// Kunlik sof faollik (masalan dars) — savol natijalari progress routerda
+// server tekshirgan javob asosida hisoblanadi.
 router.post(
   '/daily/:userId/activity',
   rateLimit({ maxPerMinute: 300 }),
@@ -100,8 +99,8 @@ router.post(
 
     await progressRepository.ensureExists(uid)
 
-    const { date, subjectId, answered, correct } = req.body as z.infer<typeof ActivitySchema>
-    const { dailyStreak } = await dailyRepository.touchActivity(uid, date, subjectId, answered, correct)
+    const { subjectId } = req.body as z.infer<typeof ActivitySchema>
+    const { dailyStreak } = await dailyRepository.touchActivity(uid, tashkentDate(), subjectId, 0, 0)
 
     res.json({ ok: true, dailyStreak })
   }),
