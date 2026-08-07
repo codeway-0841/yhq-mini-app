@@ -161,7 +161,7 @@ export default function StatistikaPage() {
                   {ids.length}
                 </span>
                 <span className="text-[11px] font-bold text-psubtle flex-shrink-0">
-                  {lang === 'ru' ? 'Машқ' : 'Repeat'} ›
+                  {lang === 'ru' ? 'Повторить' : 'Takrorlash'} ›
                 </span>
               </button>
             ))}
