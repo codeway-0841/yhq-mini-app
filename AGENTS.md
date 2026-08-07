@@ -54,3 +54,26 @@ npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 5. **DB o'zgarish:** `server/schema.ts` tahrirlang → `npm run db:generate` → migration faylini commit qiling.
 6. **Testlar:** yangi feature/bugfix uchun `tests/` ga test qo'shing. Consistency testlar (masalan `tests/unit/config/subjects.test.ts`) konfig desync'larini ushlaydi.
 7. **Env var:** barcha `process.env` FAQAT `server/config/index.ts` dagi zod schema orqali o'qiladi. Yangi env kerak bo'lsa — avval schema'ga qo'shing, keyin `config` orqali oling.
+
+## Dizayn tizimi (v2 "KIWI Premium")
+
+```
+src/index.css          # Tokenlar: --p-* (yangi) + --theme-* (legacy alias, ikkalasi sinxron)
+tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/pline/pfg/pmuted/psubtle/pprimary/ponprimary/pgold/ppurple/pblue/psuccess/pwarning/pdanger + duo.* (alias)
+src/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
+shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda)
+src/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
+src/components/Confetti.tsx  # Nishonlash confetti; src/hooks/useCountUp.ts — count-up animatsiya
+```
+
+- **Dark/light:** `body[data-theme]` (App.tsx `ThemeEffect`). **Aksent:** `body[data-accent]`.
+- **Utilitilar:** `.btn-premium(+ -sm/-secondary/-outline/-ai/-gold)` · `.btn-neon` (legacy CTA) · `.card-premium`/`.card-neon` · `.progress-premium` · `.glow-accent-sm` · `.animate-premiumIn`.
+- **Shrift:** Inter (`font-display`), Nunito faqat fallback.
+
+## Dizayn qoidalari (v2)
+
+8. **Rang intizomi:** ikonkalar NEYTRAL (`#94a3b8`). Aksent faqat: CTA, progress, active holat. Binafsha = AI/Premium. Semantik (success/warning/danger/gold) FAQAT ma'noli joylarda. Har joyni ranglamang!
+9. **Yangi tema:** FAQAT `src/config/themes.ts` ga 1 element + `src/index.css` ga 2 blok (`[data-theme='dark'][data-accent='<id>']` atmosfera + `[data-theme='light'][data-accent='<id>']` variant). `tests/unit/config/themes.test.ts` sinxronni tekshiradi. Boshqa joyga TEGMANG.
+10. **Premium gating:** tema tanlovini `resolveAccent(id, isPremium)` orqali qo'llang — free user HECH QACHON premium tema olib qolmasligi shart.
+11. **i18n:** yangi kalitlar FAQAT `src/lib/i18n.ts` ga — ham UZ, ham RU obyektiga (bittasi qolib ketsa tarjima tushib qoladi).
+12. **UI ovoz:** yangi tovush `src/lib/sounds.ts` dagi `playSound` kind'iga qo'shiladi; juda past volume (premium ASMR), AudioContext faqat user-gesture'dan keyin.
