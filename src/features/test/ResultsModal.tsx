@@ -1,39 +1,12 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect } from 'react'
 import { RotateCcw } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { playSound } from '../../lib/sounds'
+import Confetti from '../../components/Confetti'
 import DonutChart from './DonutChart'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
-
-/* ── Confetti — test o'tilganda 2.5s nishonlash (faqat CSS animatsiya) ───── */
-const CONFETTI_COLORS = ['var(--p-primary)', '#facc15', '#3b82f6', '#8b5cf6']
-function Confetti() {
-  const pieces = useMemo(() => Array.from({ length: 30 }, (_, i) => ({
-    left:  4 + Math.random() * 92,
-    delay: Math.random() * 0.5,
-    dur:   1.9 + Math.random() * 1.2,
-    size:  6 + Math.random() * 6,
-    color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-    round: Math.random() > 0.5,
-  })), [])
-  return (
-    <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden" aria-hidden>
-      {pieces.map((p, i) => (
-        <span key={i} className="confetti-piece" style={{
-          left: `${p.left}%`,
-          animationDelay: `${p.delay}s`,
-          animationDuration: `${p.dur}s`,
-          width: p.size,
-          height: p.size * 0.6,
-          background: p.color,
-          borderRadius: p.round ? '50%' : '2px',
-        }} />
-      ))}
-    </div>
-  )
-}
 
 export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, threshold = 90 }: {
   results: QuestionResult[]

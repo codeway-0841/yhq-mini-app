@@ -20,6 +20,9 @@ import { useT } from '../../shared/i18n'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../components/SubjectSheet'
 import { useDailyStore, todayStr } from '../../store/useDailyStore'
+import { useCountUp } from '../../hooks/useCountUp'
+import Confetti from '../../components/Confetti'
+import { playSound } from '../../lib/sounds'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
@@ -93,9 +96,12 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
   const xp       = totalCorrect * 10
   const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
+  // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
+  const shown    = useCountUp(accuracy, 900)
+
   // Ring chart geometriyasi (SVG)
   const R = 36, C = 2 * Math.PI * R
-  const ringOffset = C * (1 - accuracy / 100)
+  const ringOffset = C * (1 - shown / 100)
 
   return (
     <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden"
@@ -104,7 +110,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
         {/* Chap: foiz + ma'lumot */}
         <div className="flex-1 min-w-0">
           <p className="text-[12px] font-medium text-psubtle mb-1.5">{tt('todayProgress')}</p>
-          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">{accuracy}%</p>
+          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">{shown}%</p>
           <p className="text-[12px] font-medium text-pmuted mt-2">
             {totalAnswered} / {total || '…'} {tt('question').toLowerCase()}
           </p>
@@ -117,7 +123,7 @@ const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, s
             strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
             transform="rotate(-90 48 48)"
             style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
-          <text x="48" y="53" textAnchor="middle" fill="var(--p-fg)" fontSize="17" fontWeight="700">{accuracy}%</text>
+          <text x="48" y="53" textAnchor="middle" fill="var(--p-fg)" fontSize="17" fontWeight="700">{shown}%</text>
         </svg>
       </div>
       {/* Pastki statistika: Seriya / XP / Reyting */}
@@ -427,12 +433,50 @@ const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch: () => 
   )
 })
 
+// ══ Streak MILESTONE sahna — 7/14/30/60/100 kunga yetganda to'liq ekran ═════
+const MILESTONES = [7, 14, 30, 60, 100] as const
+
+function milestoneSeen(subjectId: string): number[] {
+  try { return JSON.parse(localStorage.getItem(`yhq-milestones-${subjectId}`) ?? '[]') } catch { return [] }
+}
+function milestoneMark(subjectId: string, m: number): void {
+  const seen = milestoneSeen(subjectId)
+  if (!seen.includes(m)) localStorage.setItem(`yhq-milestones-${subjectId}`, JSON.stringify([...seen, m]))
+}
+
+const MilestoneScene = memo(function MilestoneScene({ streak, lang, onClose }: {
+  streak: number; lang: 'uz' | 'ru'; onClose: () => void
+}) {
+  useEffect(() => { playSound('win') }, [])
+  return (
+    <div className="fixed inset-0 z-[70] flex items-center justify-center p-6">
+      <Confetti count={40} />
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative card-premium rounded-[28px] p-8 text-center max-w-[300px] w-full animate-premiumIn"
+        style={{ borderColor: 'rgba(245, 158, 11, 0.40)', boxShadow: '0 0 60px -12px rgba(245, 158, 11, 0.40)' }}>
+        <div className="text-6xl mb-3" style={{ filter: 'drop-shadow(0 0 16px rgba(245,158,11,0.7))' }}>🔥</div>
+        <p className="text-[13px] font-semibold text-pwarning uppercase tracking-[0.14em] mb-1">
+          {lang === 'ru' ? 'НОВЫЙ РЕКОРД' : 'YANGI YUTUQ'}
+        </p>
+        <p className="text-[42px] font-bold text-pfg leading-none tabular-nums">{streak}</p>
+        <p className="text-[15px] font-semibold text-pmuted mt-1.5 mb-6">
+          {lang === 'ru' ? 'дней подряд! Невероятная дисциплина 💪' : 'kun ketma-ket! Ajoyib intizom 💪'}
+        </p>
+        <button onClick={onClose} className="btn-premium w-full h-[52px] rounded-2xl text-[14px]">
+          {lang === 'ru' ? 'Продолжить' : 'Davom etish'}
+        </button>
+      </div>
+    </div>
+  )
+})
+
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
+  const [milestone, setMilestone] = useState<number | null>(null)
   const { user, displayName, settings, totalCorrect, totalWrong, totalAnswered, savedQuestions, wrongByTicket } = useAppStore()
   const subject  = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
@@ -444,6 +488,17 @@ export default function Dashboard() {
   useEffect(() => {
     if (userId) void useDailyStore.getState().sync(userId, todayStr(), subject.id)
   }, [userId, subject.id])
+
+  // Streak MILESTONE — birinchi marta yetganda to'liq ekranli nishonlash
+  useEffect(() => {
+    const hit = MILESTONES.find((m) => m === dailyStreak)
+    if (hit && !milestoneSeen(subject.id).includes(hit)) {
+      milestoneMark(subject.id, hit)
+      // sahifa to'liq ochilgach ko'rsatamiz (premium kirish hissi)
+      const t = setTimeout(() => setMilestone(hit), 600)
+      return () => clearTimeout(t)
+    }
+  }, [dailyStreak, subject.id])
   const tt = useT(settings.language)
 
   // "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha darslik ma'lumoti
@@ -635,6 +690,9 @@ export default function Dashboard() {
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
       {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
+      {milestone !== null && (
+        <MilestoneScene streak={milestone} lang={settings.language} onClose={() => setMilestone(null)} />
+      )}
     </div>
   )
 }
