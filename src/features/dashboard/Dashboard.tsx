@@ -21,6 +21,7 @@ import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../components/SubjectSheet'
 import { useDailyStore, todayStr } from '../../store/useDailyStore'
 import { useCountUp } from '../../hooks/useCountUp'
+import { usePullToRefresh } from '../../hooks/usePullToRefresh'
 import Confetti from '../../components/Confetti'
 import { playSound } from '../../lib/sounds'
 
@@ -522,6 +523,18 @@ export default function Dashboard() {
       return () => clearTimeout(t)
     }
   }, [dailyStreak, subject.id])
+
+  // Pull-to-refresh — pastga tortganda barcha ma'lumotlar yangilanadi
+  const ptr = usePullToRefresh(async () => {
+    const uid = user?.id
+    if (uid) {
+      await Promise.allSettled([
+        useDailyStore.getState().sync(uid, todayStr(), subject.id),
+        useAppStore.getState().syncFromServer(uid),
+      ])
+    }
+    await useQuestionsStore.getState().load(settings.language, subject.id)
+  })
   const tt = useT(settings.language)
 
   // "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha darslik ma'lumoti
@@ -596,6 +609,17 @@ export default function Dashboard() {
 
   return (
     <div className="font-display min-h-screen bg-pcanvas pb-6 safe-bottom">
+      {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
+      {ptr.state !== 'idle' && (
+        <div className="fixed top-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-full card-premium flex items-center justify-center transition-transform"
+            style={{ transform: `scale(${Math.min(1, ptr.dist / ptr.threshold)})` }}>
+            <span className="block w-5 h-5 rounded-full border-2 border-pline animate-spin"
+              style={{ borderTopColor: 'var(--p-primary)' }} />
+          </div>
+        </div>
+      )}
+
       {/* Top bar / Greeting Header */}
       <TopBar user={user} displayName={displayName}
         level={Math.floor(totalCorrect / 50) + 1}
