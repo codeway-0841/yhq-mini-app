@@ -308,25 +308,35 @@ export default function TestPage() {
 
   const handleSelect = useCallback((optId: string) => {
     if (selected || submitting || !q) return
+    const questionId = q.id
     const answeredIndex = current
     setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = optId; return next })
     setSubmitting(true)
 
     // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
     void (async () => {
-      const outcome = await submitAnswer(q.id, optId)
+      const outcome = await submitAnswer(questionId, optId)
       setSubmitting(false)
+
+      // Find current index after async — activeQuestions may have changed
+      const idx = activeQuestions.findIndex(x => x.id === questionId)
+      if (idx === -1) {
+        setToast(tt('notFoundQ'))
+        setTimeout(() => setToast(null), 2500)
+        return
+      }
+
       if (!outcome) {
         // Offline — javob outbox'ga yozildi; internet qaytganda server
         // tekshirib counterlarni yangilaydi. Indigo "pending" holat qoladi.
-        setAnswers((prev) => { const next = [...prev]; next[answeredIndex] = 'pending'; return next })
+        setAnswers((prev) => { const next = [...prev]; next[idx] = 'pending'; return next })
         setToast(tt('offlineQueued'))
         setTimeout(() => setToast(null), 2500)
         return
       }
       const isCorrect = outcome.correct
-      setAnswers((prev) => { const next = [...prev]; next[answeredIndex] = isCorrect ? 'correct' : 'wrong'; return next })
-      setCorrectOpts((prev) => { const next = [...prev]; next[answeredIndex] = outcome.correctAnswer; return next })
+      setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
+      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = outcome.correctAnswer; return next })
       haptics.notify(isCorrect ? 'success' : 'error')
       if (isCorrect) {
         correctStreakRef.current += 1
@@ -343,11 +353,11 @@ export default function TestPage() {
         cancelAutoNext()
         autoNextTimerRef.current = window.setTimeout(() => {
           autoNextTimerRef.current = null
-          goTo(answeredIndex + 1)
+          goTo(idx + 1)
         }, delay)
       }
     })()
-  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt])
+  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({

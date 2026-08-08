@@ -158,24 +158,46 @@ function isFatalClientError(err: unknown): boolean {
 /** Mutation'ni navbatga qo'shadi va fonda flush'ni ishga tushiradi. */
 export function enqueueOutbox(userId: string, type: OutboxType, payload: Record<string, unknown>): void {
   if (!userId || userId === '0') return
-  const entries = load(userId)
-  entries.push({ id: newId(), type, payload, attempts: 0, createdAt: Date.now() })
-  persist(userId, entries)
-  notify()
-  void flushOutbox(userId)
+  void atomicUpdate(userId, entries => [
+    ...entries,
+    { id: newId(), type, payload, attempts: 0, createdAt: Date.now() }
+  ]).then(() => {
+    notify()
+    void flushOutbox(userId)
+  }).catch(err => {
+    console.error('[outbox] enqueue failed:', err)
+  })
 }
 
 const flushing = new Set<string>()
 
-/** Yozuvni navbatdan o'chiradi — FRESH load asosida (flush in-flight paytida
- *  qo'shilgan yangi yozuvlar ustidan yozib yuborilmasligi uchun). */
-function removeEntry(userId: string, id: string): void {
-  persist(userId, load(userId).filter((e) => e.id !== id))
+const locks = new Map<string, Promise<void>>()
+
+function atomicUpdate(userId: string, fn: (entries: OutboxEntry[]) => OutboxEntry[]): Promise<void> {
+  const key = `outbox:${userId}`
+
+  const existing = locks.get(key) ?? Promise.resolve()
+
+  const operation = existing.then(() => {
+    const entries = load(userId)
+    const updated = fn(entries)
+    persist(userId, updated)
+  })
+
+  locks.set(key, operation)
+  operation.finally(() => {
+    if (locks.get(key) === operation) locks.delete(key)
+  })
+
+  return operation
 }
 
-/** Yozuvning attempts/lastError'ini yangilaydi — FRESH load asosida. */
-function updateEntry(userId: string, id: string, patch: Partial<OutboxEntry>): void {
-  persist(userId, load(userId).map((e) => (e.id === id ? { ...e, ...patch } : e)))
+async function removeEntry(userId: string, id: string): Promise<void> {
+  await atomicUpdate(userId, entries => entries.filter(e => e.id !== id))
+}
+
+async function updateEntry(userId: string, id: string, patch: Partial<OutboxEntry>): Promise<void> {
+  await atomicUpdate(userId, entries => entries.map(e => (e.id === id ? { ...e, ...patch } : e)))
 }
 
 /** Navbatdagi yozuqlarni KETMA-KET serverga yuboradi (tartib saqlanadi). */
@@ -189,19 +211,19 @@ export async function flushOutbox(userId: string): Promise<void> {
       if (!head) break
       try {
         await execute(userId, head)
-        removeEntry(userId, head.id)
+        await removeEntry(userId, head.id)
         notify()
       } catch (err) {
         const msg = String((err as Error)?.message ?? err)
         if (isFatalClientError(err) || head.attempts + 1 >= MAX_ATTEMPTS) {
           // Server rad etdi yoki zombi — navbat qotib qolmasligi uchun tashlaymiz
           console.warn('[outbox] yozuv tashlab yuborildi:', head.type, msg.slice(0, 200))
-          removeEntry(userId, head.id)
+          await removeEntry(userId, head.id)
           notify()
           continue
         }
         // Tarmoq xatosi — saqlab qolamiz, keyingi flush'da davom etadi
-        updateEntry(userId, head.id, { attempts: head.attempts + 1, lastError: msg.slice(0, 200) })
+        await updateEntry(userId, head.id, { attempts: head.attempts + 1, lastError: msg.slice(0, 200) })
         notify()
         break
       }

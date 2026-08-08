@@ -208,9 +208,6 @@ export default function App() {
       const startParam =
         tg?.initDataUnsafe?.start_param ??
         (refQ && /^\d{1,19}$/.test(refQ) ? `ref_${refQ}` : undefined)
-      // TEZKOR OCHILISH: savollar serverini init bilan PARALLEL yuklaymiz.
-      // Cache'dagi (persist) til — odatda serverdagi bilan bir xil (load ichida dedupe bor).
-      const qPromise = loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
       api.init({
         id:         String(tgUser.id),
         first_name: tgUser.first_name,
@@ -232,11 +229,7 @@ export default function App() {
               wrongByTicket:  data.progress.wrongByTicket,
               savedQuestions: data.savedQuestions,
             })
-            // Parallel yuklash tugagach — til serverdagi sozlamalar bilan farq
-            // qilsa, XOTIRADAN remap qilamiz (qayta tarmoq so'rovisiz).
-            await qPromise
-            useQuestionsStore.getState().setLang(data.settings.language)
-            // Offline davrda yig'ilgan mutation'larni serverga yetkazamiz
+            await loadQuestions(data.settings.language).catch(() => {})
             void flushOutbox(verifiedId)
           } finally {
             // Xato bo'lsa ham splash'dan chiqishi shart
