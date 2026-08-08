@@ -3,7 +3,7 @@
  */
 
 import { eq, sql } from 'drizzle-orm'
-import { db }                  from '../../db/connection'
+import { db, executeRows }     from '../../db/connection'
 import { progress }            from '../../schema'
 
 export const progressRepository = {
@@ -51,7 +51,7 @@ export const progressRepository = {
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
-    const result = await db.execute(sql<{ proceed: boolean; prog_updated: number; daily_streak: number }>`
+    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -123,7 +123,7 @@ export const progressRepository = {
         (SELECT streak::int FROM streak_upsert) AS daily_streak
     `)
 
-    const row = result.rows[0]
+    const row = rows[0]
     const proceed = row?.proceed !== false
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:

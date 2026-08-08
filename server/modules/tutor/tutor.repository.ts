@@ -11,7 +11,7 @@
  */
 
 import { sql }  from 'drizzle-orm'
-import { db }   from '../../db/connection'
+import { executeRows } from '../../db/connection'
 
 /** Har bir premium user uchun kunlik tushuntirish limiti */
 export const TUTOR_DAILY_USER_LIMIT = 20
@@ -26,12 +26,12 @@ export const tutorUsageRepository = {
    * limitdan oshgan bo'lsa false (count baribir oshadi — abuse ko'rinadi).
    */
   async tryConsume(userId: bigint, date: string, limit: number): Promise<boolean> {
-    const result = await db.execute(sql<{ count: number }>`
+    const rows = await executeRows<{ count: number }>(sql`
       INSERT INTO tutor_usage (user_id, date, count)
       VALUES (${userId}, ${date}, 1)
       ON CONFLICT (user_id, date) DO UPDATE SET count = tutor_usage.count + 1
       RETURNING count
     `)
-    return Number(result.rows[0]?.count) <= limit
+    return Number(rows[0]?.count) <= limit
   },
 }

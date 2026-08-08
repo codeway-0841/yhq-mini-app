@@ -12,7 +12,7 @@
  */
 
 import { and, asc, eq, sql } from 'drizzle-orm'
-import { db }                      from '../../db/connection'
+import { db, executeRows }         from '../../db/connection'
 import { dailyRecords, dailyStreaks, users } from '../../schema'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
@@ -141,7 +141,7 @@ export const dailyRepository = {
     // Record counters va streak bitta PostgreSQL statement ichida atomik yangilanadi.
     // ON CONFLICT mavjud row qiymatidan hisoblaydi: parallel request lost-update
     // qilmaydi, eski/out-of-order sana esa last_daily_date'ni orqaga qaytarmaydi.
-    const result = await db.execute(sql<{ daily_streak: number }>`
+    const rows = await executeRows<{ daily_streak: number }>(sql`
       WITH entitlement AS (
         SELECT (
           tariff = 'premium'
@@ -177,7 +177,7 @@ export const dailyRepository = {
       SELECT streak AS daily_streak FROM streak_upsert
     `)
 
-    const value = Number(result.rows[0]?.daily_streak)
+    const value = Number(rows[0]?.daily_streak)
     if (!Number.isFinite(value)) throw new Error('Daily streak upsert returned no value')
     return { dailyStreak: value }
   },

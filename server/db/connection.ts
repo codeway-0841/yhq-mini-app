@@ -12,6 +12,7 @@ import { neon } from '@neondatabase/serverless'
 import { drizzle as drizzleNeon, type NeonHttpDatabase } from 'drizzle-orm/neon-http'
 import postgres from 'postgres'
 import { drizzle as drizzlePg } from 'drizzle-orm/postgres-js'
+import type { SQL } from 'drizzle-orm'
 import * as schema from '../schema'
 import { config } from '../config'
 
@@ -29,3 +30,14 @@ const instance = isNeon
 export const db = instance as unknown as NeonHttpDatabase<typeof schema>
 
 export type DB = typeof db
+
+/**
+ * Raw SQL execute — DRIVERLARDAN MUSTAQIL natija shakli.
+ * neon-http `{ rows: T[] }` qaytaradi, postgres-js esa to'g'ridan-to'g'ri
+ * `T[]` massiv — shu helper QAYSI driver bo'lmasin massiv qaytaradi.
+ * Raw `db.execute(sql\`...\`)` chaqiruvlari FAQAT shu orqali bo'lsin.
+ */
+export async function executeRows<T = Record<string, unknown>>(query: SQL): Promise<T[]> {
+  const res = await (instance as { execute: (q: SQL) => Promise<unknown> }).execute(query) as { rows?: T[] } | T[]
+  return Array.isArray(res) ? res : (res.rows ?? [])
+}

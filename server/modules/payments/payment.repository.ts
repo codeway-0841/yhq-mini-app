@@ -1,6 +1,6 @@
 import { sql } from 'drizzle-orm'
 import type { PlanKey } from '../../../shared/premium-plans'
-import { db } from '../../db/connection'
+import { executeRows } from '../../db/connection'
 
 export interface CompletePaymentInput {
   telegramChargeId: string
@@ -22,11 +22,11 @@ export const paymentRepository = {
    * Charge ID takror kelsa `inserted` bo'sh qoladi va premium qayta berilmaydi.
    */
   async complete(input: CompletePaymentInput): Promise<CompletePaymentResult> {
-    const result = await db.execute(sql<{
+    const rows = await executeRows<{
       user_exists: boolean
       inserted: boolean
       activated: boolean
-    }>`
+    }>(sql`
       WITH target_user AS (
         SELECT id FROM users WHERE id = ${input.userId}
       ), inserted AS (
@@ -77,7 +77,7 @@ export const paymentRepository = {
         EXISTS (SELECT 1 FROM activated) AS activated
     `)
 
-    const row = result.rows[0]
+    const row = rows[0]
     if (!row?.user_exists) return 'user_not_found'
     if (!row.inserted) return 'duplicate'
     if (!row.activated) throw new Error('Payment ledger inserted without entitlement activation')

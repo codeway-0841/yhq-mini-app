@@ -12,14 +12,12 @@ import 'dotenv/config'
 process.env.NODE_ENV = 'test'
 
 const { db }  = await import('../../server/db/connection')
-const { questions, topics } = await import('../../server/schema')
+const { questions, topics, questionExplanations } = await import('../../server/schema')
 
 const existing = await db.select({ id: questions.id }).from(questions).limit(1)
 if (existing.length > 0) {
-  console.log(`[seed-test] questions allaqachon bor (${existing.length}+) — o'tkazildi`)
-  process.exit(0)
-}
-
+  console.log(`[seed-test] questions allaqachon bor (${existing.length}+) — faqat explanation tekshiriladi`)
+} else {
 const [topic] = await db.insert(topics).values({
   nameUz: 'Test mavzu', nameRu: 'Тестовая тема', slug: 'test-topic',
 }).onConflictDoNothing().returning()
@@ -33,4 +31,21 @@ await db.insert(questions).values([
 ]).onConflictDoNothing()
 
 console.log('[seed-test] 3 ta test savoli kiritildi (topic: test-topic)')
+}
+
+// explanations testlari `limit 1` bilan (tartibsiz) savol o'qiydi —
+// 3 savolning HAMMASIGA explanation (bittasi tushib qolsa 404 qilardi).
+// FAQAT bazada mavjud test savollariga (FK restrict — real kontentli
+// bazada 900001-3 bo'lmasligi mumkin).
+const present = new Set((await db.select({ id: questions.id }).from(questions)).map((r) => r.id))
+const explRows = [900001, 900002, 900003]
+  .filter((id) => present.has(id))
+  .map((id) => ({
+    questionId: id,
+    explanationUz: `Test tushuntirishi ${id} (UZ)`,
+    explanationRu: `Тестовое объяснение ${id} (RU)`,
+  }))
+if (explRows.length > 0) {
+  await db.insert(questionExplanations).values(explRows).onConflictDoNothing()
+}
 process.exit(0)

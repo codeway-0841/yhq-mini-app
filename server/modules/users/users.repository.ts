@@ -4,7 +4,7 @@
  */
 
 import { and, eq, isNull, sql } from 'drizzle-orm'
-import { db }    from '../../db/connection'
+import { db, executeRows } from '../../db/connection'
 import { users } from '../../schema'
 
 export interface CreateOrUpdateUserInput {
@@ -22,7 +22,7 @@ export const referralsRepository = {
    * kafolatlaydi; insert muvaffaqiyatli bo'lgan taqdirdagina UPDATE ishlaydi.
    */
   async tryCreateWithReward(referrerId: bigint, refereeId: bigint, days: number): Promise<boolean> {
-    const result = await db.execute(sql<{ rewarded: number }>`
+    const rows = await executeRows<{ rewarded: number }>(sql`
       WITH inserted AS (
         INSERT INTO referrals (referrer_id, referee_id)
         VALUES (${referrerId}, ${refereeId})
@@ -37,7 +37,7 @@ export const referralsRepository = {
       )
       SELECT COUNT(*)::int AS rewarded FROM rewarded
     `)
-    return Number(result.rows[0]?.rewarded) > 0
+    return Number(rows[0]?.rewarded) > 0
   },
 }
 
