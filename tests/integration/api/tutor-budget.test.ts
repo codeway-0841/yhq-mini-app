@@ -11,7 +11,8 @@ import { db } from '../../../server/db/connection'
 import { tutorUsage, users } from '../../../server/schema'
 import { tutorUsageRepository, TUTOR_GLOBAL_USER_ID } from '../../../server/modules/tutor/tutor.repository'
 
-const USER_ID = 998877660010n
+// user_id TEXT (0023+) — string id shart (text = bigint operatori Postgres'ta yo'q)
+const USER_ID = '998877660010'
 const DATE = '2026-08-07'
 
 async function cleanup() {

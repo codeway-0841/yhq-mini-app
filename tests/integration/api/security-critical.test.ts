@@ -8,9 +8,10 @@ import { paymentRepository } from '../../../server/modules/payments/payment.repo
 import { tashkentDate } from '../../../server/utils/date'
 
 const app = createApp()
-const PROGRESS_ID = 998877660001n
-const TRIAL_ID = 998877660002n
-const PAYMENT_ID = 998877660003n
+// user_id TEXT (0023+) — string id'lar shart (Postgres'ta text = bigint operatori yo'q)
+const PROGRESS_ID = '998877660001'
+const TRIAL_ID = '998877660002'
+const PAYMENT_ID = '998877660003'
 const IDS = [PROGRESS_ID, TRIAL_ID, PAYMENT_ID]
 
 async function cleanup() {
