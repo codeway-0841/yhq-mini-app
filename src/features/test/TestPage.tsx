@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, MessageCircle, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
 import { resolveExamMode } from '../../../shared/exam-presets'
 import { buildTopicBreakdown } from './topic-diagnosis'
 import { useTestSessionStore } from '../../store/useTestSessionStore'
-import { makeSessionKey, isResumable, remainingSeconds, clampIndex } from './test-session'
+import { isResumable, remainingSeconds, clampIndex } from './test-session'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { haptics } from '../../lib/haptics'
@@ -20,10 +20,10 @@ import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
+import AiTutorModal from './components/AiTutorModal'
 import { MODULE_TOPICS } from '../../data/modules'
 import { lessons } from '../../data/lessons'
-import { explainQuestion, fetchStaticExplanation, TutorError } from '../../lib/tutor'
-import { openTelegramLink } from '../../lib/telegram'
+import { useTestSession } from './hooks/useTestSession'
 
 // Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
 const STUDY_ITEMS = [
@@ -49,55 +49,39 @@ export default function TestPage() {
   // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
   const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
-  const sessionKey = makeSessionKey(mode, location.state?.questionIds as number[] | undefined)
 
-  const activeQuestions = useMemo(() => {
-    // RESUME: saqlangan sessiya savollarining ASL tartibi qayta yig'iladi
-    // (yangi shuffle EMAS — javoblar indeks bo'yicha bog'langan)
-    const snap = useTestSessionStore.getState().session
-    if (isResumable(snap, sessionKey, subjectId) && snap.questionIds.length) {
-      const byId = new Map(questions.map((x) => [x.id, x]))
-      const restored = snap.questionIds.map((qid) => byId.get(qid)).filter((x) => !!x)
-      if (restored.length) return restored as typeof questions
-    }
-    const ids = location.state?.questionIds
-    if (ids?.length) {
-      const idSet = new Set(ids)
-      return questions.filter((q) => idSet.has(q.id))
-    }
-    const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
-    // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
-    if (examPreset) return shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
-    switch (mode) {
-      case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
-      case 'mock':      return shuffled().slice(0, Math.min(20, questions.length)) // Mock imtihon — bilet formatida
-      case 'random50':  return shuffled().slice(0, Math.min(50, questions.length))
-      case 'random100': return shuffled().slice(0, Math.min(100, questions.length))
-      case 'random20':  return shuffled().slice(0, Math.min(20, questions.length))
-      case 'tricky':   return shuffled().slice(0, Math.min(30, questions.length))
-      case 'numeric': {
-        const numeric = questions.filter((q) => /\d/.test(q.text))
-        return numeric.length > 0 ? numeric : questions
-      }
-      default:         return questions
-    }
-  }, [location.state?.questionIds, mode, questions, location.key, sessionKey, subjectId])
+  // State initialization (needed before calling the hook)
+  const [current, setCurrent]                 = useState(0)
+  const [answers, setAnswers]                 = useState<(string | null)[]>([])
+  const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>([])
+  /** Server reveal qilgan to'g'ri variant id'lari (javobgacha null) */
+  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>([])
+  /** Server tekshiruvi kutilayotgan javob (double-submit himoyasi) */
+  const [submitting, setSubmitting]           = useState(false)
+  const [showSettings, setShowSettings]       = useState(false)
+  const [showResults, setShowResults]         = useState(false)
+  const [isFinished, setIsFinished]           = useState(false)
+
+  // ── useTestSession hook — manages activeQuestions and session persistence ──
+  const { activeQuestions, sessionKey } = useTestSession({
+    mode,
+    questionIds: location.state?.questionIds as number[] | undefined,
+    questions,
+    subjectId,
+    stateTitle,
+    answers,
+    current,
+    isFinished,
+    locationKey: location.key,
+    selectedHistory,
+    correctOpts,
+  })
 
   const startIndex = Math.min(
     Math.max(0, (Number(id) || 1) - 1),
     Math.max(0, activeQuestions.length - 1)
   )
 
-  const [current, setCurrent]                 = useState(startIndex)
-  const [answers, setAnswers]                 = useState(() => Array(activeQuestions.length).fill(null))
-  const [selectedHistory, setSelectedHistory] = useState(() => Array(activeQuestions.length).fill(null))
-  /** Server reveal qilgan to'g'ri variant id'lari (javobgacha null) */
-  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
-  /** Server tekshiruvi kutilayotgan javob (double-submit himoyasi) */
-  const [submitting, setSubmitting]           = useState(false)
-  const [showSettings, setShowSettings]       = useState(false)
-  const [showResults, setShowResults]         = useState(false)
-  const [isFinished, setIsFinished]           = useState(false)
   const [toast, setToast]                     = useState<string | null>(null)
   const [zoomed, setZoomed]                   = useState(false)
   const [confirmExit, setConfirmExit]         = useState(false)
