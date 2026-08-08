@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm'
 import {
-  pgTable, pgEnum, serial, bigint, text,
-  integer, boolean, jsonb, timestamp, unique, index, check,
+  pgTable, pgEnum, serial, text,
+  integer, boolean, jsonb, timestamp, unique, index, check, primaryKey,
 } from 'drizzle-orm/pg-core'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
@@ -15,7 +15,10 @@ export const LEAGUE_ORDER = ['bronze', 'silver', 'gold', 'platinum'] as const
 export type League = typeof LEAGUE_ORDER[number]
 
 export const users = pgTable('users', {
-  id:        bigint('id', { mode: 'bigint' }).primaryKey(),
+  /** Canonical user id (text): Telegram userlar uchun Telegram id raqam-string
+   *  ('12345...'), telefon+parol akkauntlari uchun 'p_<digits>' ('p_998901234567').
+   *  Provider akkaunt → user xaritasi `auth_identities` jadvalida (multi-provider auth). */
+  id:        text('id').primaryKey(),
   firstName: text('first_name').notNull(),
   lastName:  text('last_name').default(''),
   username:  text('username').default(''),
@@ -33,6 +36,59 @@ export const users = pgTable('users', {
 })
 
 /**
+ * Auth identity'lar — canonical user (users.id) ↔ provider akkaunt xaritasi
+ * (multi-provider auth). PK (provider, provider_uid): bitta Telegram akkaunt /
+ * telefon raqam faqat BITTA user'ga tegishli bo'ladi. Mavjud Telegram userlar
+ * migratsiyada ('telegram', id, id) bilan seed qilingan.
+ * `password_hash` FAQAT provider='phone' uchun (scrypt "salt:hash" hex).
+ * Linking: bitta user'ga bir necha identity (masalan telegram + phone) ulansa
+ * bo'ladi — ikkala qator bir xil user_id'ga ishora qiladi.
+ */
+export const authIdentities = pgTable('auth_identities', {
+  provider:     text('provider').notNull(),
+  providerUid:  text('provider_uid').notNull(),
+  userId:       text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  passwordHash: text('password_hash'),
+  createdAt:    timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.provider, t.providerUid] }),
+  index('idx_auth_identities_user').on(t.userId),
+  check('chk_auth_identities_provider', sql`${t.provider} IN ('telegram','phone')`),
+])
+
+/**
+ * Login sessiyalari — opaque token (64-hex) serverda saqlanadi (JWT EMAS).
+ * `Authorization: Bearer <token>` middleware/auth.ts orqali resolve qilinadi;
+ * revoke = qatorni DELETE qilish. expires_at o'tgan sessiyalar bekor.
+ */
+export const sessions = pgTable('sessions', {
+  token:     text('token').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  /** Sessiya qaysi provider login'i orqali yaratilgan ('telegram' | 'phone') */
+  provider:  text('provider').notNull(),
+  expiresAt: timestamp('expires_at').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_sessions_user').on(t.userId),
+  index('idx_sessions_expires').on(t.expiresAt),
+  check('chk_sessions_provider', sql`${t.provider} IN ('telegram','phone')`),
+])
+
+/**
+ * Telegram ulash kodlari — telefon+parol sessiyali foydalanuvchi APK/brauzerdan
+ * `t.me/<bot>?start=link_<code>` deep-link ochadi; bot kodni BIR MARTA ishlatib
+ * (atomik DELETE...RETURNING) Telegram identity'sini shu user'ga ulaydi.
+ */
+export const linkCodes = pgTable('link_codes', {
+  code:      text('code').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  expiresAt: timestamp('expires_at').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_link_codes_user').on(t.userId),
+])
+
+/**
  * Test javobi idempotency token'lari — offline outbox replay'da
  * (so'rov serverga yetib borgan, javob yo'qolgan) counterlar ikki marta
  * oshmasligi uchun. Client har mantiqiy javob uchun 1 token yaratadi;
@@ -40,7 +96,7 @@ export const users = pgTable('users', {
  */
 export const answerTokens = pgTable('answer_tokens', {
   token:     text('token').primaryKey(),
-  userId:    bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
   index('idx_answer_tokens_created').on(t.createdAt),
@@ -51,7 +107,7 @@ export const payments = pgTable('payments', {
   id:                       serial('id').primaryKey(),
   telegramPaymentChargeId:  text('telegram_payment_charge_id').notNull().unique(),
   providerPaymentChargeId:  text('provider_payment_charge_id').notNull(),
-  userId:                   bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'restrict' }),
+  userId:                   text('user_id').notNull().references(() => users.id, { onDelete: 'restrict' }),
   plan:                     text('plan').notNull(),
   amount:                   integer('amount').notNull(),
   currency:                 text('currency').notNull(),
@@ -65,7 +121,7 @@ export const payments = pgTable('payments', {
 
 export const progress = pgTable('progress', {
   id:            serial('id').primaryKey(),
-  userId:        bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
+  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
   totalCorrect:  integer('total_correct').default(0).notNull(),
   totalWrong:    integer('total_wrong').default(0).notNull(),
   totalAnswered: integer('total_answered').default(0).notNull(),
@@ -95,7 +151,7 @@ export const progress = pgTable('progress', {
 
 export const userSettings = pgTable('settings', {
   id:              serial('id').primaryKey(),
-  userId:          bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
+  userId:          text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
   autoNextCorrect: boolean('auto_next_correct').default(true).notNull(),
   autoNextWrong:   boolean('auto_next_wrong').default(false).notNull(),
   noAnimation:     boolean('no_animation').default(false).notNull(),
@@ -166,7 +222,7 @@ export const questionExplanations = pgTable('question_explanations', {
 
 export const savedQuestions = pgTable('saved_questions', {
   id:         serial('id').primaryKey(),
-  userId:     bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
   /** Multi-fan identity: bir xil questionId turli fanlarda alohida bookmark.
    *  Eski qatorlar migratsiyada 'yhq' bilan to'ldirilgan (traffic_rules_db). */
@@ -176,14 +232,14 @@ export const savedQuestions = pgTable('saved_questions', {
 /** Referal qaydlari — referee faqat bir marta hisoblanadi (anti-farm). */
 export const referrals = pgTable('referrals', {
   id:         serial('id').primaryKey(),
-  referrerId: bigint('referrer_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
-  refereeId:  bigint('referee_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  referrerId: text('referrer_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  refereeId:  text('referee_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   createdAt:  timestamp('created_at').defaultNow().notNull(),
 }, (t) => [unique('uq_referral_referee').on(t.refereeId)])
 
 /** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
 export const analyticsEvents = pgTable('analytics_events', {  id:        serial('id').primaryKey(),
-  userId:    bigint('user_id', { mode: 'bigint' }).references(() => users.id, { onDelete: 'set null' }),
+  userId:    text('user_id').references(() => users.id, { onDelete: 'set null' }),
   event:     text('event').notNull(),
   props:     jsonb('props').$type<Record<string, unknown>>().default({}).notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
@@ -212,11 +268,11 @@ export const jobRuns = pgTable('job_runs', {
 
 /**
  * AI Tutor kunlik foydalanish kvotasi — Gemini API cost control.
- * user_id = 0 qatori GLOBAL kunlik byudjetni bildiradi (FK yo'q — shu sababli
- * references ham yo'q); qolgan qatorlar haqiqiy user kvotasi.
+ * user_id = '0' qatori GLOBAL kunlik byudjetni bildiradi (FK yo'q — shu
+ * sababli references ham yo'q); qolgan qatorlar haqiqiy user kvotasi.
  */
 export const tutorUsage = pgTable('tutor_usage', {
-  userId: bigint('user_id', { mode: 'bigint' }).notNull(),
+  userId: text('user_id').notNull(),
   /** 'YYYY-MM-DD' — Asia/Tashkent (tashkentDate utili bilan bir xil) */
   date:   text('date').notNull(),
   count:  integer('count').default(0).notNull(),
@@ -228,7 +284,7 @@ export const tutorUsage = pgTable('tutor_usage', {
 
 export const dailyStreaks = pgTable('daily_streaks', {
   id:            serial('id').primaryKey(),
-  userId:        bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   subjectId:     text('subject_id').notNull(),
   /** Shu fan bo'yicha ketma-ket bajarilgan kunlar soni */
   streak:        integer('streak').default(0).notNull(),
@@ -248,7 +304,7 @@ export const dailyStreaks = pgTable('daily_streaks', {
  */
 export const dailyRecords = pgTable('daily_records', {
   id:          serial('id').primaryKey(),
-  userId:      bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:      text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
   /** 'YYYY-MM-DD' — client local sanasi (Telegram user o'z vaqt zonasi) */
   date:        text('date').notNull(),
   subjectId:   text('subject_id').notNull(),

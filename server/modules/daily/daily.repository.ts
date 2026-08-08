@@ -30,7 +30,7 @@ export function isFrozenDay(lastDailyDate: string, today: string): boolean {
 }
 
 /** Effective premium: umrbod tarif YOKI muddati tugamagan obuna (trial/ref ham) */
-async function isPremiumUser(userId: bigint): Promise<boolean> {
+async function isPremiumUser(userId: string): Promise<boolean> {
   const [row] = await db.select({ tariff: users.tariff, premiumUntil: users.premiumUntil })
     .from(users).where(eq(users.id, userId))
   return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
@@ -85,7 +85,7 @@ export interface DailyHistoryRow extends DailyRecordRow {
 }
 
 /** Shu (user, subject) uchun streak qatorini o'qiydi */
-async function readStreak(userId: bigint, subjectId: string) {
+async function readStreak(userId: string, subjectId: string) {
   const [row] = await db.select({
     streak:        dailyStreaks.streak,
     lastDailyDate: dailyStreaks.lastDailyDate,
@@ -97,7 +97,7 @@ async function readStreak(userId: bigint, subjectId: string) {
 
 export const dailyRepository = {
   /** Bugungi yozuv (yo'q bo'lsa null) + SHU FANGA tegishli dailyStreak */
-  async getToday(userId: bigint, date: string, subjectId: string): Promise<{
+  async getToday(userId: string, date: string, subjectId: string): Promise<{
     record: DailyRecordRow | null
     dailyStreak: number
   }> {
@@ -132,7 +132,7 @@ export const dailyRepository = {
    * Streak idempotent: bir xil kun qayta kelsa o'zgarmaydi (kun ko'chsa +1).
    */
   async touchActivity(
-    userId:    bigint,
+    userId:    string,
     date:      string,
     subjectId: string,
     answeredDelta = 0,
@@ -189,7 +189,7 @@ export const dailyRepository = {
    *
    * HAR BIR qator — o'sha kun faollik bo'lgani (test, xato tuzatish yoki dars).
    */
-  async getHistory(userId: bigint, date: string, subjectId: string): Promise<{
+  async getHistory(userId: string, date: string, subjectId: string): Promise<{
     rows: DailyHistoryRow[]
     dailyStreak: number
     bestStreak: number
@@ -221,7 +221,7 @@ export const dailyRepository = {
    * Kunlik test bajarilmagan kun ham yozuv yaratiladi (answered=0 bo'ladi,
    * kalendar faolligi va streak'ga ta'sir qilmaydi).
    */
-  async addFixed(userId: bigint, date: string, subjectId: string): Promise<void> {
+  async addFixed(userId: string, date: string, subjectId: string): Promise<void> {
     await db.insert(dailyRecords)
       .values({ userId, date, subjectId, answered: 0, correct: 0, fixed: 1 })
       .onConflictDoUpdate({

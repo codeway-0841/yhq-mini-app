@@ -18,8 +18,8 @@ const ADMIN_ID = '987654321000'
 const NONADMIN_ID = '987654321001'
 
 async function cleanup() {
-  const adminUid = BigInt(ADMIN_ID)
-  const plainUid = BigInt(NONADMIN_ID)
+  const adminUid = ADMIN_ID
+  const plainUid = NONADMIN_ID
   await db.delete(users).where(eq(users.id, adminUid))
   await db.delete(users).where(eq(users.id, plainUid))
   // Test savollarni ham tozalash (ixtiyoriy nomlar bo'yicha)
@@ -39,8 +39,8 @@ async function cleanup() {
 beforeAll(async () => {
   // 2 user: admin (is_admin=true), oddiy user (is_admin=false)
   await db.insert(users).values([
-    { id: BigInt(ADMIN_ID), firstName: 'Test', lastName: 'Admin', username: 't_admin', photoUrl: '', isAdmin: true },
-    { id: BigInt(NONADMIN_ID), firstName: 'Test', lastName: 'User', username: 't_user', photoUrl: '', isAdmin: false },
+    { id: ADMIN_ID, firstName: 'Test', lastName: 'Admin', username: 't_admin', photoUrl: '', isAdmin: true },
+    { id: NONADMIN_ID, firstName: 'Test', lastName: 'User', username: 't_user', photoUrl: '', isAdmin: false },
   ]).onConflictDoNothing()
 })
 

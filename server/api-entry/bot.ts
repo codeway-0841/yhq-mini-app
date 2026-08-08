@@ -263,7 +263,7 @@ bot.command('stats', async (ctx) => {
 
     const from = ctx.from
     if (!from) return
-    const userId = BigInt(from.id)
+    const userId = String(from.id)   // canonical TEXT user id
     const [row]  = await db.select().from(progress).where(eq(progress.userId, userId))
 
     if (!row) {

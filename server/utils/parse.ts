@@ -3,15 +3,19 @@
  * Pure functions — no side effects, easy to unit test.
  */
 
-/** Parse a string/number into a positive BigInt. Returns null on failure. */
-export function parseBigInt(val: unknown): bigint | null {
+/**
+ * Canonical user id (text): Telegram userlar Telegram id'sining raqam-string
+ * shaklida ('12345...'), telefon+parol akkauntlari 'p_<digits>' formatida.
+ * Multi-provider auth (users.id TEXT bo'lganidan keyin) barcha user-scoped
+ * route'lar shu parserdan o'tadi — noto'g'ri format 400 beradi.
+ */
+const USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15})$/
+
+/** Parse a route param/query into a canonical user id string. Returns null on failure. */
+export function parseUserId(val: unknown): string | null {
   if (val == null) return null
-  try {
-    const n = BigInt(String(val).trim())
-    return n > 0n ? n : null
-  } catch {
-    return null
-  }
+  const s = String(val).trim()
+  return USER_ID_RE.test(s) ? s : null
 }
 
 /** Parse ?limit query param. Returns a clamped integer within [1, max]. */

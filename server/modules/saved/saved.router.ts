@@ -6,7 +6,7 @@ import { Router }          from 'express'
 import { z }               from 'zod'
 import { wrap, AppError }  from '../../middleware/error-handler'
 import { validate }        from '../../middleware/validate'
-import { parseBigInt }     from '../../utils/parse'
+import { parseUserId }     from '../../utils/parse'
 import { savedRepository } from './saved.repository'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID } from '../../config/subjects'
 
@@ -25,7 +25,7 @@ const DeleteQuerySchema = z.object({ subject: SubjectSchema })
 router.get(
   '/saved/:userId',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
     res.json(await savedRepository.findByUserId(uid))
   }),
@@ -36,7 +36,7 @@ router.post(
   '/saved/:userId',
   validate({ body: AddBodySchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
     const { questionId, subjectId } = req.body as z.infer<typeof AddBodySchema>
     await savedRepository.add(uid, questionId, subjectId)
@@ -49,7 +49,7 @@ router.delete(
   '/saved/:userId/:questionId',
   validate({ params: DeleteParamSchema, query: DeleteQuerySchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
     await savedRepository.remove(uid, Number(req.params['questionId']), String(req.query['subject'] ?? DEFAULT_SUBJECT_ID))
     res.json({ ok: true })

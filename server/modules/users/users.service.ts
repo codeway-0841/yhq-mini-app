@@ -12,13 +12,13 @@ import { users, progress, userSettings } from '../../schema'
 
 type UserRow = typeof users.$inferSelect
 
-/** JSON-safe user shape (bigint id → string) — matches the frontend ApiUser type. */
+/** JSON-safe user shape (canonical TEXT id) — matches the frontend ApiUser type. */
 export function toApiUser(row: UserRow) {
   // Effective premium: lifetime tarif YOKI referal mukofot muddati tugamagan
   const isPremium = row.tariff === 'premium'
     || (row.premiumUntil != null && row.premiumUntil > new Date())
   return {
-    id:        String(row.id),
+    id:        row.id,
     firstName: row.firstName,
     lastName:  row.lastName  ?? '',
     username:  row.username  ?? '',
@@ -32,7 +32,7 @@ export function toApiUser(row: UserRow) {
 type ProgressRow = typeof progress.$inferSelect
 type SettingsRow = typeof userSettings.$inferSelect
 
-/** Drop the bigint userId — the client already knows who it asked about. */
+/** Drop the userId — the client already knows who it asked about. */
 export function toApiProgress(row: ProgressRow) {
   return {
     totalCorrect:  row.totalCorrect,
@@ -89,7 +89,7 @@ export const usersService = {
    * Creates progress + settings rows if they don't exist yet.
    */
   async init(raw: InitInput) {
-    const uid = BigInt(raw.id)
+    const uid = raw.id   // canonical TEXT id (Telegram raqam-string)
     const existing = await usersRepository.findById(uid)   // yangi foydalanuvchimi?
 
     // user + progress + settings BITTA atomik SQL statement'da (yarim holat yo'q)
@@ -112,7 +112,7 @@ export const usersService = {
     // Qayd + mukofot bitta atomik statement'da (referrals UNIQUE — bir martalik).
     const refMatch = /^ref_(\d{1,19})$/.exec(raw.start_param ?? '')
     if (refMatch && !existing) {
-      const referrerId = BigInt(refMatch[1])
+      const referrerId = refMatch[1]   // referallar Telegram-only (raqam-string id)
       if (referrerId !== uid && await usersRepository.findById(referrerId)) {
         await referralsRepository.tryCreateWithReward(referrerId, uid, REFERRAL_REWARD_DAYS)
       }
@@ -128,13 +128,13 @@ export const usersService = {
   },
 
   /** Update phone number after Telegram requestContact validation. */
-  async updatePhone(userId: bigint, phone: string): Promise<void> {
+  async updatePhone(userId: string, phone: string): Promise<void> {
     const updated = await usersRepository.updatePhone(userId, phone)
     if (!updated) throw new AppError(404, 'User not found')
   },
 
   /** 3 kunlik BEPUL trial — conditional UPDATE parallel requestlarda ham bir marta. */
-  async startTrial(userId: bigint): Promise<{ granted: boolean; reason?: 'already_used'; days: number }> {
+  async startTrial(userId: string): Promise<{ granted: boolean; reason?: 'already_used'; days: number }> {
     if (await usersRepository.tryGrantTrial(userId, TRIAL_DAYS)) {
       return { granted: true, days: TRIAL_DAYS }
     }

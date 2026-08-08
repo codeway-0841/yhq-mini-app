@@ -27,16 +27,15 @@ export async function requireAdmin(req: Request, res: Response, next: NextFuncti
       res.status(401).json({ error: 'telegram_user_not_identified' })
       return
     }
-    const bigintId = BigInt(uid)
-    const [user] = await db.select({ isAdmin: users.isAdmin }).from(users).where(eq(users.id, bigintId))
+    const [user] = await db.select({ isAdmin: users.isAdmin }).from(users).where(eq(users.id, uid))
     if (!user || !user.isAdmin) {
       res.status(403).json({ error: 'admin_required' })
       return
     }
     next()
   } catch {
-    // BigInt cast xatosi yoki DB xatosi — 5xx emas, aniq 403 (xavfsizlik nuqtai
-    // nazardan anonlik parolle aslida bu ichki xato bo'lsa ham)
+    // DB xatosi — 5xx emas, aniq 403 (xavfsizlik nuqtai nazardan anonlik
+    // parolle aslida bu ichki xato bo'lsa ham)
     res.status(403).json({ error: 'admin_required' })
   }
 }

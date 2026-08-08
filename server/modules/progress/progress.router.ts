@@ -6,7 +6,7 @@ import { Router }               from 'express'
 import { z }                    from 'zod'
 import { wrap, AppError }       from '../../middleware/error-handler'
 import { validate }             from '../../middleware/validate'
-import { parseBigInt }          from '../../utils/parse'
+import { parseUserId }          from '../../utils/parse'
 import { rateLimit }            from '../../middleware/rate-limiter'
 import { progressRepository }   from './progress.repository'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
@@ -30,7 +30,7 @@ router.post(
   rateLimit({ maxPerMinute: 120 }),
   validate({ body: ResultSchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const { questionId, selectedAnswer, subjectId, clientToken } = req.body as z.infer<typeof ResultSchema>
@@ -62,7 +62,7 @@ router.post(
 router.delete(
   '/progress/:userId',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     await progressRepository.reset(uid)

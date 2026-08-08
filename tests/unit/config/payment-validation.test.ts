@@ -11,7 +11,7 @@ describe('validatePremiumPayment', () => {
     })
     expect(result.ok).toBe(true)
     if (result.ok) {
-      expect(result.userId).toBe(12345n)
+      expect(result.userId).toBe('12345')   // canonical TEXT user id (bigint EMAS)
       expect(result.plan.key).toBe('month')
     }
   })

@@ -39,7 +39,7 @@ export function weekStartTashkent(weekOffset = 0): string {
 export { LEAGUE_ORDER } from '../../schema'
 
 export const leaderboardRepository = {
-  async topN(limit: number, callerUserId: bigint | null): Promise<LeaderboardEntry[]> {
+  async topN(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
     // Clamp here as well — defense in depth in case router validation is bypassed
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
 
@@ -63,16 +63,16 @@ export const leaderboardRepository = {
 
     return rows.map((r, i) => ({
       rank:   i + 1,
-      userId: String(r.userId),
+      userId: r.userId,
       name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
       score:  r.totalCorrect,
       streak: r.streak,
-      isYou:  callerUserId !== null && String(r.userId) === String(callerUserId),
+      isYou:  callerUserId !== null && r.userId === callerUserId,
     }))
   },
 
   /** Haftalik LIGA reytingi — score = joriy haftadagi to'g'ri javoblar summasi. */
-  async weeklyTop(limit: number, callerUserId: bigint | null): Promise<{
+  async weeklyTop(limit: number, callerUserId: string | null): Promise<{
     entries: WeeklyEntry[]
     myLeague: string | null
     weekStart: string
@@ -110,11 +110,11 @@ export const leaderboardRepository = {
       myLeague,
       entries: rows.map((r, i) => ({
         rank:   i + 1,
-        userId: String(r.userId),
+        userId: r.userId,
         name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
         score:  Number(r.score),
         league: r.league,
-        isYou:  callerUserId !== null && String(r.userId) === String(callerUserId),
+        isYou:  callerUserId !== null && r.userId === callerUserId,
       })),
     }
   },

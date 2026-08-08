@@ -5,7 +5,7 @@ import { executeRows } from '../../db/connection'
 export interface CompletePaymentInput {
   telegramChargeId: string
   providerChargeId: string
-  userId: bigint
+  userId: string
   plan: PlanKey
   days: number | null
   amount: number

@@ -6,7 +6,7 @@
 import { Router }                                    from 'express'
 import { wrap, AppError }                            from '../../middleware/error-handler'
 import { validate }                                  from '../../middleware/validate'
-import { parseBigInt }                               from '../../utils/parse'
+import { parseUserId }                               from '../../utils/parse'
 import { usersService, InitInputSchema, PhoneSchema, toApiUser, toApiProgress, toApiSettings } from './users.service'
 import { progressRepository }                        from '../progress/progress.repository'
 import { settingsRepository }                        from '../settings/settings.repository'
@@ -29,7 +29,7 @@ router.post(
 router.get(
   '/profile/:userId',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const [user, prog, sett, saved] = await Promise.all([
@@ -57,7 +57,7 @@ router.patch(
   '/users/:userId/phone',
   validate({ body: PhoneSchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     await usersService.updatePhone(uid, (req.body as { phone: string }).phone)
@@ -69,7 +69,7 @@ router.patch(
 router.post(
   '/users/:userId/trial',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const result = await usersService.startTrial(uid)

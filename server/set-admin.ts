@@ -1,8 +1,8 @@
 /**
  * Admin huquqini boshqarish:
  *   npx tsx server/set-admin.ts                 — foydalanuvchilar ro'yxati
- *   npx tsx server/set-admin.ts <telegram_id>   — true qilish
- *   npx tsx server/set-admin.ts <telegram_id> false — o'chirish
+ *   npx tsx server/set-admin.ts <user_id>       — true qilish (TG raqam id yoki 'p_<digits>')
+ *   npx tsx server/set-admin.ts <user_id> false — o'chirish
  */
 import 'dotenv/config'
 import { db } from './db/connection'
@@ -22,11 +22,11 @@ if (!idArg) {
   for (const r of rows) {
     console.log(`  ${String(r.id).padEnd(12)} ${(r.firstName || '').padEnd(15)} @${(r.username || '-').padEnd(18)} admin=${r.isAdmin} tariff=${r.tariff}`)
   }
-  console.log("\nFoydalanish: npx tsx server/set-admin.ts <telegram_id> [true|false]")
+  console.log("\nFoydalanish: npx tsx server/set-admin.ts <user_id> [true|false]")
   process.exit(0)
 }
 
-const uid = BigInt(idArg)
+const uid = idArg   // canonical TEXT id (Telegram raqam-string yoki 'p_<digits>')
 const flag = flagArg !== 'false'   // default true
 
 const [updated] = await db

@@ -8,7 +8,7 @@ export interface PremiumPaymentInput {
 }
 
 export type PaymentValidation =
-  | { ok: true; userId: bigint; plan: PremiumPlan }
+  | { ok: true; userId: string; plan: PremiumPlan }
   | { ok: false; reason: 'invalid_payload' | 'payer_mismatch' | 'invalid_currency' | 'invalid_amount' }
 
 /** Telegram invoice qiymatlarini shared tarif konfiguratsiyasiga qarshi tekshiradi. */
@@ -21,11 +21,9 @@ export function validatePremiumPayment(input: PremiumPaymentInput): PaymentValid
     return { ok: false, reason: 'invalid_amount' }
   }
 
-  try {
-    return { ok: true, userId: BigInt(parsed.userId), plan: parsed.plan }
-  } catch {
-    return { ok: false, reason: 'invalid_payload' }
-  }
+  // userId endi canonical TEXT id (Telegram raqam-string yoki 'p_<digits>')
+  if (!/^(?:\d{1,20}|p_\d{9,15})$/.test(parsed.userId)) return { ok: false, reason: 'invalid_payload' }
+  return { ok: true, userId: parsed.userId, plan: parsed.plan }
 }
 
 export function paymentErrorMessage(reason: Exclude<PaymentValidation, { ok: true }>['reason']): string {

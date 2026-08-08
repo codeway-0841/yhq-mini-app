@@ -10,7 +10,7 @@ import { validate } from '../../middleware/validate'
 import { rateLimit } from '../../middleware/rate-limiter'
 import { db } from '../../db/connection'
 import { analyticsEvents } from '../../schema'
-import { parseBigInt } from '../../utils/parse'
+import { parseUserId } from '../../utils/parse'
 
 const router = Router()
 
@@ -27,7 +27,7 @@ router.post(
   wrap(async (req, res) => {
     const { event, props } = req.body as z.infer<typeof EventSchema>
     const telegramId = (req as { telegramUserId?: string }).telegramUserId
-    const uid = telegramId ? parseBigInt(telegramId) : null
+    const uid = telegramId ? parseUserId(telegramId) : null
     await db.insert(analyticsEvents).values({ userId: uid ?? null, event, props })
     res.status(204).end()
   }),

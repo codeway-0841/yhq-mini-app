@@ -11,7 +11,7 @@ import { Router }             from 'express'
 import { z }                  from 'zod'
 import { wrap, AppError }     from '../../middleware/error-handler'
 import { validate }           from '../../middleware/validate'
-import { parseBigInt }        from '../../utils/parse'
+import { parseUserId }        from '../../utils/parse'
 import { rateLimit }          from '../../middleware/rate-limiter'
 import { requireSelf }        from '../../middleware/auth'
 import { isCalendarDate, tashkentDate } from '../../utils/date'
@@ -29,7 +29,7 @@ router.use('/daily/:userId', requireSelf)
 router.get(
   '/daily/:userId',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const date    = typeof req.query['date'] === 'string' ? req.query['date'] : ''
@@ -47,7 +47,7 @@ router.get(
 router.get(
   '/daily/:userId/history',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const date    = typeof req.query['date'] === 'string' ? req.query['date'] : ''
@@ -70,7 +70,7 @@ router.post(
   rateLimit({ maxPerMinute: 120 }),
   validate({ body: FixSchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     await progressRepository.ensureExists(uid)
@@ -94,7 +94,7 @@ router.post(
   rateLimit({ maxPerMinute: 300 }),
   validate({ body: ActivitySchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     await progressRepository.ensureExists(uid)

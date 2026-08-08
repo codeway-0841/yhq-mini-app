@@ -15,7 +15,7 @@ import { eq } from 'drizzle-orm'
 import { wrap, AppError }   from '../../middleware/error-handler'
 import { validate }         from '../../middleware/validate'
 import { rateLimit }        from '../../middleware/rate-limiter'
-import { parseBigInt }      from '../../utils/parse'
+import { parseUserId }      from '../../utils/parse'
 import { db }   from '../../db/connection'
 import { questions, users } from '../../schema'
 import { config } from '../../config'
@@ -34,7 +34,7 @@ const BodySchema = z.object({
 })
 
 /** Effective premium (lifetime tariff YOKI referal muddati tugamagan) */
-async function isPremium(uid: bigint): Promise<boolean> {
+async function isPremium(uid: string): Promise<boolean> {
   const [row] = await db.select({ tariff: users.tariff, premiumUntil: users.premiumUntil })
     .from(users).where(eq(users.id, uid))
   return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
@@ -73,7 +73,7 @@ router.post(
 
     const { questionId, lang, answeredCorrect } = req.body as z.infer<typeof BodySchema>
     const verifiedId = (req as { telegramUserId?: string }).telegramUserId
-    const uid = verifiedId ? parseBigInt(verifiedId) : null
+    const uid = verifiedId ? parseUserId(verifiedId) : null
     if (!uid) throw new AppError(401, 'telegram_user_not_identified')
 
     if (!(await isPremium(uid))) throw new AppError(403, 'premium_required')

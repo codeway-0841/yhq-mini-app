@@ -4,7 +4,7 @@
 
 import { Router }                     from 'express'
 import { wrap }                       from '../../middleware/error-handler'
-import { parseBigInt, parseLimit }    from '../../utils/parse'
+import { parseUserId, parseLimit }    from '../../utils/parse'
 import { leaderboardRepository }      from './leaderboard.repository'
 
 const router = Router()
@@ -15,7 +15,7 @@ router.get(
   '/leaderboard',
   wrap(async (req, res) => {
     const limit      = parseLimit(req.query['limit'], 50, 100)
-    const callerUid  = parseBigInt(String(req.query['userId'] ?? ''))
+    const callerUid  = parseUserId(String(req.query['userId'] ?? ''))
     if (req.query['mode'] === 'weekly') {
       res.json(await leaderboardRepository.weeklyTop(limit, callerUid))
       return

@@ -18,14 +18,14 @@ export const TUTOR_DAILY_USER_LIMIT = 20
 /** Butun ilova bo'yicha kunlik Gemini chaqiruvlari shiftı (cost cap) */
 export const TUTOR_DAILY_GLOBAL_LIMIT = 500
 /** Global byudjet qatorining maxsus user_id'si (haqiqiy user emas) */
-export const TUTOR_GLOBAL_USER_ID = 0n
+export const TUTOR_GLOBAL_USER_ID = '0'
 
 export const tutorUsageRepository = {
   /**
    * Bir kvota sarflashga urinadi: limit ICHIDA bo'lsa true (count ++),
    * limitdan oshgan bo'lsa false (count baribir oshadi — abuse ko'rinadi).
    */
-  async tryConsume(userId: bigint, date: string, limit: number): Promise<boolean> {
+  async tryConsume(userId: string, date: string, limit: number): Promise<boolean> {
     const rows = await executeRows<{ count: number }>(sql`
       INSERT INTO tutor_usage (user_id, date, count)
       VALUES (${userId}, ${date}, 1)

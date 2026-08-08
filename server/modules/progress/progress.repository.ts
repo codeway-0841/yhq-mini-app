@@ -7,11 +7,11 @@ import { db, executeRows }     from '../../db/connection'
 import { progress }            from '../../schema'
 
 export const progressRepository = {
-  async ensureExists(userId: bigint): Promise<void> {
+  async ensureExists(userId: string): Promise<void> {
     await db.insert(progress).values({ userId }).onConflictDoNothing()
   },
 
-  async findByUserId(userId: bigint) {
+  async findByUserId(userId: string) {
     const [row] = await db.select().from(progress).where(eq(progress.userId, userId))
     return row ?? null
   },
@@ -35,7 +35,7 @@ export const progressRepository = {
    * yozilmadi, lekin bu IDEMPOTENT muvaffaqiyat (router 200 + eski natija).
    */
   async recordAnswer(input: {
-    userId:       bigint
+    userId:       string
     correct:      boolean
     questionId:   number | null
     date:         string
@@ -140,14 +140,14 @@ export const progressRepository = {
   },
 
   /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */
-  async addOctagonWin(userId: bigint): Promise<void> {
+  async addOctagonWin(userId: string): Promise<void> {
     await db.update(progress).set({
       octagonWins: sql`octagon_wins + 1`,
       updatedAt:   new Date(),
     }).where(eq(progress.userId, userId))
   },
 
-  async reset(userId: bigint): Promise<void> {
+  async reset(userId: string): Promise<void> {
     await db.update(progress).set({
       totalCorrect:  0,
       totalWrong:    0,

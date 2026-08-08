@@ -10,11 +10,11 @@ import { userSettings } from '../../schema'
 type SettingsPatch = Omit<Partial<typeof userSettings.$inferInsert>, 'id' | 'userId'>
 
 export const settingsRepository = {
-  async ensureExists(userId: bigint): Promise<void> {
+  async ensureExists(userId: string): Promise<void> {
     await db.insert(userSettings).values({ userId }).onConflictDoNothing()
   },
 
-  async findByUserId(userId: bigint) {
+  async findByUserId(userId: string) {
     const [row] = await db.select().from(userSettings).where(eq(userSettings.userId, userId))
     return row ?? null
   },
@@ -23,7 +23,7 @@ export const settingsRepository = {
    * Patch settings. Returns false if the row doesn't exist.
    * No-ops (empty patch) are skipped before hitting the DB.
    */
-  async patch(userId: bigint, patch: SettingsPatch): Promise<boolean> {
+  async patch(userId: string, patch: SettingsPatch): Promise<boolean> {
     const fields = Object.entries(patch).filter(([, v]) => v !== undefined)
     if (fields.length === 0) return true  // nothing to do — not an error
 

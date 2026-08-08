@@ -27,7 +27,7 @@ const SEED_USER = {
 }
 
 async function cleanup() {
-  const uid = BigInt(SEED_ID)
+  const uid = SEED_ID
   await db.delete(progress).where(eq(progress.userId, uid))
   await db.delete(userSettings).where(eq(userSettings.userId, uid))
   await db.delete(users).where(eq(users.id, uid))

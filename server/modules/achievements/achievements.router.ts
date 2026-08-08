@@ -15,7 +15,7 @@
 import { Router } from 'express'
 import { eq, sql } from 'drizzle-orm'
 import { wrap, AppError } from '../../middleware/error-handler'
-import { parseBigInt } from '../../utils/parse'
+import { parseUserId } from '../../utils/parse'
 import { db } from '../../db/connection'
 import { progress, dailyRecords, dailyStreaks } from '../../schema'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
@@ -32,7 +32,7 @@ const MIN_ANSWERED_PER_SUBJECT = 20
 router.get(
   '/achievements/:userId',
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     await progressRepository.ensureExists(uid)

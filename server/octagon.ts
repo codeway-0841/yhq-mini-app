@@ -241,8 +241,8 @@ function endMatch(match: Match): void {
 
   // G'alilgan — Yutuqlar uchun DB'ga yozamiz (fire-and-forget; draw da yo'q)
   const winnerId = s1 > s2 ? p1.userId : s1 < s2 ? p2.userId : null
-  if (winnerId && /^\d+$/.test(winnerId) && winnerId !== '0') {
-    void progressRepository.addOctagonWin(BigInt(winnerId))
+  if (winnerId && winnerId !== '0') {
+    void progressRepository.addOctagonWin(winnerId)
       .catch((err) => console.error('[octagon] addOctagonWin failed:', err?.message ?? err))
   }
 
@@ -357,8 +357,8 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
     const opp = match.players.find((p) => p.userId !== userId)
     if (opp) {
       send(opp.ws, { type: 'opp_disconnected' })
-      if (/^\d+$/.test(opp.userId) && opp.userId !== '0') {
-        void progressRepository.addOctagonWin(BigInt(opp.userId))
+      if (opp.userId !== '0') {
+        void progressRepository.addOctagonWin(opp.userId)
           .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
       }
     }

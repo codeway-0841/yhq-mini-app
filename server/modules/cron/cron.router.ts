@@ -63,7 +63,10 @@ router.get('/cron/daily-reminder', async (_req, res) => {
     .where(eq(dailyRecords.date, today))
 
   const done = new Set(activeToday.map((r) => r.userId))
-  const targets = [...new Set(recent.map((r) => r.userId))].filter((uid) => !done.has(uid))
+  // FAQAT Telegram-linked userlar (raqam-string id) — telefon+parol akkauntlarida
+  // ('p_<digits>') TG chat yo'q, ularga SMS yog'och emas: xabar yuborib bo'lmaydi.
+  const targets = [...new Set(recent.map((r) => r.userId))]
+    .filter((uid) => !done.has(uid) && /^\d+$/.test(uid))
 
   // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
   const streakRows = targets.length > 0
@@ -72,12 +75,12 @@ router.get('/cron/daily-reminder', async (_req, res) => {
         .where(inArray(dailyStreaks.userId, targets))
         .groupBy(dailyStreaks.userId)
     : []
-  const streakOf = new Map(streakRows.map((r) => [String(r.userId), Number(r.streak)]))
+  const streakOf = new Map(streakRows.map((r) => [r.userId, Number(r.streak)]))
 
   const bot = new Bot(token)
   const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
-  const textFor = (uid: bigint) => {
-    const s = streakOf.get(String(uid)) ?? 0
+  const textFor = (uid: string) => {
+    const s = streakOf.get(uid) ?? 0
     if (s > 0) {
       return (
         `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +

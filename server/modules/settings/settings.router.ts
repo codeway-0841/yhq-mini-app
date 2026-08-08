@@ -5,7 +5,7 @@
 import { Router }                              from 'express'
 import { wrap, AppError }                      from '../../middleware/error-handler'
 import { validate }                            from '../../middleware/validate'
-import { parseBigInt }                         from '../../utils/parse'
+import { parseUserId }                         from '../../utils/parse'
 import { settingsRepository, SettingsPatchSchema } from './settings.repository'
 
 const router = Router()
@@ -15,7 +15,7 @@ router.patch(
   '/settings/:userId',
   validate({ body: SettingsPatchSchema }),
   wrap(async (req, res) => {
-    const uid = parseBigInt(req.params['userId'])
+    const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
     const updated = await settingsRepository.patch(uid, req.body)

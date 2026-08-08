@@ -8,7 +8,7 @@ import { db, executeRows } from '../../db/connection'
 import { users } from '../../schema'
 
 export interface CreateOrUpdateUserInput {
-  id:        bigint
+  id:        string
   firstName: string
   lastName:  string | null
   username:  string | null
@@ -21,7 +21,7 @@ export const referralsRepository = {
    * referee UNIQUE constraint ikkala rajotda ham bir marta hisoblanishini
    * kafolatlaydi; insert muvaffaqiyatli bo'lgan taqdirdagina UPDATE ishlaydi.
    */
-  async tryCreateWithReward(referrerId: bigint, refereeId: bigint, days: number): Promise<boolean> {
+  async tryCreateWithReward(referrerId: string, refereeId: string, days: number): Promise<boolean> {
     const rows = await executeRows<{ rewarded: number }>(sql`
       WITH inserted AS (
         INSERT INTO referrals (referrer_id, referee_id)
@@ -100,7 +100,7 @@ export const usersRepository = {
     return row!
   },
 
-  async findById(id: bigint): Promise<typeof users.$inferSelect | null> {
+  async findById(id: string): Promise<typeof users.$inferSelect | null> {
     const [user] = await db.select().from(users).where(eq(users.id, id))
     return user ?? null
   },
@@ -109,7 +109,7 @@ export const usersRepository = {
    * Update phone. Returns true when a row was actually updated.
    * Uses .returning() because neon-http driver does not populate rowCount.
    */
-  async updatePhone(id: bigint, phone: string): Promise<boolean> {
+  async updatePhone(id: string, phone: string): Promise<boolean> {
     const rows = await db.update(users)
       .set({ phone, updatedAt: new Date() })
       .where(eq(users.id, id))
@@ -118,12 +118,12 @@ export const usersRepository = {
   },
 
   /** Tarifni yangilash — Premium sotib olinganda (bot payment handler). */
-  async setTariff(id: bigint, tariff: 'free' | 'premium'): Promise<void> {
+  async setTariff(id: string, tariff: 'free' | 'premium'): Promise<void> {
     await db.update(users).set({ tariff, updatedAt: new Date() }).where(eq(users.id, id))
   },
 
   /** Trialni faqat bir marta va race-safe conditional update bilan beradi. */
-  async tryGrantTrial(id: bigint, days: number): Promise<boolean> {
+  async tryGrantTrial(id: string, days: number): Promise<boolean> {
     const rows = await db.update(users).set({
       trialGrantedAt: new Date(),
       premiumUntil: sql`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days})`,
