@@ -5,15 +5,16 @@
 export type OctagonMsg =
   | { type: 'matched';      matchId: string; opponentName: string; roundCount: number }
   | { type: 'question';     index: number; questionId: number; timeLimit: number }
-  | { type: 'answer_ack';   index: number; correct: boolean }
+  | { type: 'answer_ack';   index: number; correct: boolean; correctOptionId: string }
   | { type: 'opp_answered'; index: number }
-  | { type: 'round_result'; index: number; yourScore: number; oppScore: number }
+  | { type: 'round_result'; index: number; yourScore: number; oppScore: number; correctOptionId: string }
   | { type: 'match_end';    yourScore: number; oppScore: number; result: 'win' | 'lose' | 'draw' }
   | { type: 'opp_waiting'; waitSeconds: number }
   | { type: 'opp_reconnected' }
   | { type: 'match_state'; matchId: string; index: number; questionId: number | null
       timeLimit: number; roundCount: number; yourScore: number; oppScore: number
-      opponentName: string; yourAnswer: string | null; oppAnswered: boolean }
+      opponentName: string; yourAnswer: string | null; oppAnswered: boolean
+      correctOptionId: string | null }
   | { type: 'opp_disconnected' }
   | { type: 'pong' }
   | { type: 'error'; message: string }

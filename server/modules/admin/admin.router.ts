@@ -117,6 +117,14 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
   res.status(204).send()
 }))
 
+// ── GET /api/admin/questions — TO'LIQ qatorlar (correctAnswer bilan).
+// Public GET /questions javobni endi qaytarmaydi (scoring trust boundary),
+// shuning uchun admin panel alohida himoyalangan endpoint'dan oladi. ──
+router.get('/admin/questions', wrap(async (_req, res) => {
+  res.set('Cache-Control', 'no-store')   // javob kalitlari CDN/browser'da qolmasin
+  res.json(await questionsRepository.findAll())
+}))
+
 // ── GET /api/admin/questions/meta — statistika (kelajak Dashboard uchun) ──
 router.get('/admin/questions/meta', wrap(async (_req, res) => {
   const [stats] = await db

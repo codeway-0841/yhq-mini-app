@@ -19,14 +19,10 @@ interface QuestionsState {
   setLang:   (lang: 'uz' | 'ru') => void
 }
 
-// Raw DB questions are kept here so language switches don't need a re-fetch.
+// Raw (til-mapping'siz) PUBLIC savollar — language switch'da re-fetch'siz
+// qayta map qilish uchun. correctAnswer bu yerda YO'Q (server strip qiladi).
 let rawQuestions: DbQuestion[] = []
 let loadVersion = 0
-
-/** Admin panel uchun raw (til-mapping'siz) savollar. load() dan keyin to'la. */
-export function getRawQuestions(): DbQuestion[] {
-  return rawQuestions
-}
 
 export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   questions: [],

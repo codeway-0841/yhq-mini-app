@@ -19,6 +19,9 @@ const ResultSchema = z.object({
   questionId:     z.number().int().positive(),
   selectedAnswer: z.string().min(1).max(32).nullable(),
   subjectId:      z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
+  /** Offline outbox idempotency: har mantiqiy javob uchun 1 UUID.
+   *  Replay shu token bilan keladi — counterlar FAQAT 1 marta yoziladi. */
+  clientToken:    z.string().min(8).max(64).optional(),
 })
 
 // POST /api/progress/:userId/result
@@ -30,7 +33,7 @@ router.post(
     const uid = parseBigInt(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    const { questionId, selectedAnswer, subjectId } = req.body as z.infer<typeof ResultSchema>
+    const { questionId, selectedAnswer, subjectId, clientToken } = req.body as z.infer<typeof ResultSchema>
     const date = tashkentDate()
     const subject = resolveSubject(subjectId)
     if (!subject.isActive) throw new AppError(400, 'Subject is not active')
@@ -40,12 +43,18 @@ router.post(
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
     // Progress counterlari + daily record + streak BITTA atomik SQL statement'da.
-    const { updated, dailyStreak } = await progressRepository.recordAnswer({
-      userId: uid, correct, questionId, date, subjectId,
+    const { updated, dailyStreak, duplicate } = await progressRepository.recordAnswer({
+      userId: uid, correct, questionId, date, subjectId, clientToken,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
 
-    res.json({ ok: true, correct, dailyStreak })
+    // POST-ANSWER REVEAL: correctAnswer endi public /questions'da yo'q —
+    // client feedback uchun FAQAT javob bergandan keyin shu yerda oladi.
+    // (Reveal "bepul" emas: har reveal attempt sifatida hisobga olingan.)
+    res.json({
+      ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak,
+      ...(duplicate ? { duplicate: true } : {}),
+    })
   }),
 )
 

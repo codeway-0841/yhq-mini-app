@@ -4,9 +4,9 @@
  * Protocol (server → client):
  *   matched        { matchId, opponentName, roundCount }      ← no questionIds upfront
  *   question       { index, questionId, timeLimit }           ← reveals one at a time
- *   answer_ack     { index, correct }
+ *   answer_ack     { index, correct, correctOptionId }   ← post-answer reveal
  *   opp_answered   { index }
- *   round_result   { index, yourScore, oppScore }
+ *   round_result   { index, yourScore, oppScore, correctOptionId }
  *   match_end      { yourScore, oppScore, result: 'win'|'lose'|'draw' }
  *   opp_waiting    { waitSeconds }                            ← opponent in reconnect grace window
  *   opp_reconnected
@@ -213,6 +213,8 @@ function resolveRound(match: Match, index: number): void {
       type: 'round_result', index,
       yourScore: match.scores.get(p.userId)  ?? 0,
       oppScore:  match.scores.get(opp.userId) ?? 0,
+      // Round yopildi — javob endi siroq emas, ikkala o'yinchiga ham ochiladi
+      correctOptionId: correct,
     })
   }
 
@@ -305,6 +307,10 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
     opponentName: opponent?.name ?? 'Raqib',
     yourAnswer:   active ? (rs.answers.get(userId) ?? null) : null,
     oppAnswered:  opponent ? (active ? rs.answers.has(opponent.userId) : false) : false,
+    // Qayta kirganda javob berib qo'yilgan bo'lsa — highlight uchun reveal
+    correctOptionId: active && rs.answers.get(userId) != null
+      ? correctFor(match.questionIds[match.round], match.pool)
+      : null,
   })
   if (opponent) send(opponent.ws, { type: 'opp_reconnected' })
   return true
@@ -638,7 +644,9 @@ export function attachOctagon(
         rs.answers.set(userId, optionId)
 
         const correct   = correctFor(match.questionIds[index], match.pool)
-        send(ws, { type: 'answer_ack', index, correct: optionId === correct })
+        // Ack + post-answer reveal: client to'g'ri javob kalitini lokal
+        // savollar to'plamidan emas, FAQAT shu server ack'dan oladi.
+        send(ws, { type: 'answer_ack', index, correct: optionId === correct, correctOptionId: correct })
 
         const opponent = match.players.find((p) => p.userId !== userId)
         if (opponent) send(opponent.ws, { type: 'opp_answered', index })

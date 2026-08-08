@@ -49,6 +49,8 @@ interface State {
   roundCount: number; roundIndex: number; currentQuestionId: number | null
   yourScore: number; oppScore: number
   selected: string | null; ackCorrect: boolean | null; oppAnswered: boolean
+  /** Server reveal — javob kaliti local savollarda ENDI YO'Q, ack'dan olinadi */
+  ackCorrectOptionId: string | null
   oppWait: number | null; deadline: number | null
   result: 'win' | 'lose' | 'draw' | null; toastMsg: string | null
 }
@@ -59,9 +61,9 @@ type Action =
   | { type: 'MATCHED';      matchId: string; opponentName: string; roundCount: number }
   | { type: 'START_ROUND';  index: number; questionId: number; timeLimit: number }
   | { type: 'SELECT';       optionId: string }
-  | { type: 'ANSWER_ACK';   correct: boolean }
+  | { type: 'ANSWER_ACK';   correct: boolean; correctOptionId: string }
   | { type: 'OPP_ANSWERED' }
-  | { type: 'ROUND_RESULT'; yourScore: number; oppScore: number }
+  | { type: 'ROUND_RESULT'; yourScore: number; oppScore: number; correctOptionId: string }
   | { type: 'MATCH_END';    yourScore: number; oppScore: number; result: 'win' | 'lose' | 'draw' }
   | { type: 'OPP_DISCONNECTED' }
   | { type: 'OPP_WAIT';     waitSeconds: number }
@@ -69,7 +71,8 @@ type Action =
   | { type: 'SYNC';         matchId: string; index: number; questionId: number | null
       timeLimit: number
       roundCount: number; yourScore: number; oppScore: number
-      opponentName: string; yourAnswer: string | null; oppAnswered: boolean }
+      opponentName: string; yourAnswer: string | null; oppAnswered: boolean
+      correctOptionId: string | null }
   | { type: 'TOAST';        msg: string }
   | { type: 'CLEAR_TOAST' }
 
@@ -77,7 +80,8 @@ const INIT: State = {
   phase: 'idle', matchId: null, opponentName: null,
   roundCount: 0, roundIndex: 0, currentQuestionId: null,
   yourScore: 0, oppScore: 0,
-  selected: null, ackCorrect: null, oppAnswered: false, oppWait: null, deadline: null,
+  selected: null, ackCorrect: null, ackCorrectOptionId: null,
+  oppAnswered: false, oppWait: null, deadline: null,
   result: null, toastMsg: null,
 }
 
@@ -86,11 +90,11 @@ function reducer(s: State, a: Action): State {
     case 'SEARCHING':        return { ...INIT, phase: 'searching' }
     case 'CANCEL':           return { ...INIT }
     case 'MATCHED':          return { ...s, phase: 'matched', matchId: a.matchId, opponentName: a.opponentName, roundCount: a.roundCount }
-    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
+    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, ackCorrectOptionId: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
     case 'SELECT':           return { ...s, selected: a.optionId }
-    case 'ANSWER_ACK':       return { ...s, ackCorrect: a.correct }
+    case 'ANSWER_ACK':       return { ...s, ackCorrect: a.correct, ackCorrectOptionId: a.correctOptionId }
     case 'OPP_ANSWERED':     return { ...s, oppAnswered: true }
-    case 'ROUND_RESULT':     return { ...s, yourScore: a.yourScore, oppScore: a.oppScore }
+    case 'ROUND_RESULT':     return { ...s, yourScore: a.yourScore, oppScore: a.oppScore, ackCorrectOptionId: a.correctOptionId }
     case 'MATCH_END':        return { ...s, phase: 'match_end', yourScore: a.yourScore, oppScore: a.oppScore, result: a.result }
     case 'OPP_DISCONNECTED': return { ...s, phase: 'match_end', result: 'win', oppWait: null, toastMsg: "Raqib qaytmadi — g'alaba sizniki!" }
     case 'OPP_WAIT':         return { ...s, oppWait: a.waitSeconds }
@@ -99,6 +103,7 @@ function reducer(s: State, a: Action): State {
                                       roundCount: a.roundCount, roundIndex: a.index, currentQuestionId: a.questionId,
                                       yourScore: a.yourScore, oppScore: a.oppScore,
                                       selected: a.yourAnswer, oppAnswered: a.oppAnswered,
+                                      ackCorrectOptionId: a.correctOptionId,
                                       deadline: Date.now() + a.timeLimit }
     case 'TOAST':            return { ...s, toastMsg: a.msg }
     case 'CLEAR_TOAST':      return { ...s, toastMsg: null }
@@ -128,9 +133,9 @@ export default function OctagonPage() {
     switch (msg.type) {
       case 'matched':          dispatch({ type: 'MATCHED',      matchId: msg.matchId, opponentName: msg.opponentName, roundCount: msg.roundCount }); break
       case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit }); break
-      case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct }); break
+      case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct, correctOptionId: msg.correctOptionId }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break
-      case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore }); break
+      case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore, correctOptionId: msg.correctOptionId }); break
       case 'match_end':        dispatch({ type: 'MATCH_END',    yourScore: msg.yourScore, oppScore: msg.oppScore, result: msg.result }); break
       case 'opp_disconnected': dispatch({ type: 'OPP_DISCONNECTED' }); break
       case 'opp_waiting':      dispatch({ type: 'OPP_WAIT', waitSeconds: msg.waitSeconds }); break
@@ -139,7 +144,8 @@ export default function OctagonPage() {
         dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
                    timeLimit: msg.timeLimit,
                    roundCount: msg.roundCount, yourScore: msg.yourScore, oppScore: msg.oppScore,
-                   opponentName: msg.opponentName, yourAnswer: msg.yourAnswer, oppAnswered: msg.oppAnswered })
+                   opponentName: msg.opponentName, yourAnswer: msg.yourAnswer, oppAnswered: msg.oppAnswered,
+                   correctOptionId: msg.correctOptionId })
         break
       case 'error':
         showToast(msg.message)
@@ -444,11 +450,14 @@ export default function OctagonPage() {
             {currentQ.options.map((opt) => {
               const answered    = !!s.selected
               const isSelected  = s.selected === opt.id
-              const showCorrect = answered && s.ackCorrect !== null && opt.id === currentQ.correct
+              // To'g'ri variant FAQAT server ack/reveal'dan (lokal kalit yo'q)
+              const showCorrect = answered && s.ackCorrectOptionId !== null && opt.id === s.ackCorrectOptionId
               const style =
                 !answered      ? 'bg-surface border-line text-fg' :
                 showCorrect    ? 'bg-green-500/15 border-green-500 text-fg' :
-                isSelected && opt.id === currentQ.correct ? 'bg-green-500/20 border-green-500 text-fg' :
+                isSelected && s.ackCorrect === true ? 'bg-green-500/20 border-green-500 text-fg' :
+                // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
+                isSelected && s.ackCorrect === null ? 'bg-duo-blue/10 border-duo-blue/60 text-fg' :
                 isSelected    ? 'bg-red-500/15   border-red-500   text-fg' :
                                 'bg-surface border-line text-muted'
               return (

@@ -73,14 +73,41 @@ describe('outbox — muvaffaqiyatli sync', () => {
   it('result replay server javobidagi streak\'ni handler\'ga yetkazadi', async () => {
     const handler = vi.fn()
     setResultSyncHandler(handler)
-    vi.mocked(api.postResult).mockResolvedValue({ ok: true, correct: true, dailyStreak: 3 })
+    vi.mocked(api.postResult).mockResolvedValue({ ok: true, correct: true, correctAnswer: 'F2', dailyStreak: 3 })
 
     enqueueOutbox('u1', 'result', { questionId: 7, selectedAnswer: 'F2', subjectId: 'yhq', date: '2026-08-07' })
     await settle()
 
     expect(api.postResult).toHaveBeenCalledWith('u1', { questionId: 7, selectedAnswer: 'F2', subjectId: 'yhq' })
-    expect(handler).toHaveBeenCalledWith('2026-08-07', 'yhq', 3)
+    expect(handler).toHaveBeenCalledWith(expect.objectContaining({
+      date: '2026-08-07', subjectId: 'yhq', questionId: 7,
+      correct: true, dailyStreak: 3, duplicate: false,
+    }))
     expect(getOutboxCount('u1')).toBe(0)
+  })
+
+  it('result replay clientToken\'ni O\'ZGARTIRMASDAN serverga yetkazadi (idempotency)', async () => {
+    vi.mocked(api.postResult).mockResolvedValue({ ok: true, correct: false, correctAnswer: 'F1', dailyStreak: 1 })
+
+    enqueueOutbox('u1', 'result', {
+      questionId: 7, selectedAnswer: 'F3', subjectId: 'yhq', date: '2026-08-07', clientToken: 'tok-abc-123',
+    })
+    await settle()
+
+    expect(api.postResult).toHaveBeenCalledWith('u1', {
+      questionId: 7, selectedAnswer: 'F3', subjectId: 'yhq', clientToken: 'tok-abc-123',
+    })
+  })
+
+  it('duplicate server javobida handler duplicate=true bilan chaqiriladi (skip signal)', async () => {
+    const handler = vi.fn()
+    setResultSyncHandler(handler)
+    vi.mocked(api.postResult).mockResolvedValue({ ok: true, correct: true, correctAnswer: 'F2', dailyStreak: null, duplicate: true })
+
+    enqueueOutbox('u1', 'result', { questionId: 7, selectedAnswer: 'F2', subjectId: 'yhq', date: '2026-08-07', clientToken: 'tok-dup' })
+    await settle()
+
+    expect(handler).toHaveBeenCalledWith(expect.objectContaining({ duplicate: true, dailyStreak: null }))
   })
 
   it('bir nechta yozuv KETMA-KETLIKda yuboriladi', async () => {

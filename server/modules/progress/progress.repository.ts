@@ -18,9 +18,10 @@ export const progressRepository = {
 
   /**
    * Test javobini yozish — BITTA atomik SQL statement'da (CTE):
-   *  1) progress counterlari (total/streak/wrongByTicket) — race-safe inkrement;
-   *  2) shu kuning daily_records qatori (+1 javob);
-   *  3) daily_streaks seriyasi (premium "freeze" logikasi bilan).
+   *  1) idempotency token (clientToken) — replay counterlarni qayta yozmaydi;
+   *  2) progress counterlari (total/streak/wrongByTicket) — race-safe inkrement;
+   *  3) shu kuning daily_records qatori (+1 javob);
+   *  4) daily_streaks seriyasi (premium "freeze" logikasi bilan).
    * Streka/streak SQL semantikasi daily.repository.touchActivity bilan bir xil —
    * o'zgarish kiritilsa ikkalasini ham yangilash shart.
    *
@@ -30,15 +31,19 @@ export const progressRepository = {
    *
    * `updated=false` bo'lsa progress qatori (va user) yo'q — daily yozuvlar
    * ham yozilmaydi va router 404 qaytaradi (eski behavior bilan bir xil).
+   * `duplicate=true` — shu clientToken allaqachon qabul qilingan: hech narsa
+   * yozilmadi, lekin bu IDEMPOTENT muvaffaqiyat (router 200 + eski natija).
    */
   async recordAnswer(input: {
-    userId:     bigint
-    correct:    boolean
-    questionId: number | null
-    date:       string
-    subjectId:  string
-  }): Promise<{ updated: boolean; dailyStreak: number | null }> {
-    const { userId, correct, questionId, date, subjectId } = input
+    userId:       bigint
+    correct:      boolean
+    questionId:   number | null
+    date:         string
+    subjectId:    string
+    clientToken?: string
+  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean }> {
+    const { userId, correct, questionId, date, subjectId, clientToken } = input
+    const token = clientToken ?? null
     // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
     // fanlar orasida xato qaydlari chalkashmaydi.
     const qKey = questionId !== null ? `${subjectId}:${questionId}` : null
@@ -46,8 +51,19 @@ export const progressRepository = {
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
-    const result = await db.execute(sql<{ prog_updated: number; daily_streak: number }>`
-      WITH entitlement AS (
+    const result = await db.execute(sql<{ proceed: boolean; prog_updated: number; daily_streak: number }>`
+      WITH tok AS (
+        -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
+        -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
+        INSERT INTO answer_tokens (token, user_id)
+        SELECT ${token}::text, ${userId}
+        WHERE ${token}::text IS NOT NULL
+          AND EXISTS (SELECT 1 FROM users WHERE id = ${userId})
+        ON CONFLICT (token) DO NOTHING
+        RETURNING token
+      ), gate AS (
+        SELECT (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok)) AS proceed
+      ), entitlement AS (
         SELECT (
           tariff = 'premium'
           OR (premium_until IS NOT NULL AND premium_until > now())
@@ -70,7 +86,7 @@ export const progressRepository = {
             )
           END,
           updated_at = now()
-        WHERE user_id = ${userId}
+        WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
         RETURNING id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
@@ -102,17 +118,25 @@ export const progressRepository = {
         RETURNING streak
       )
       SELECT
+        (SELECT proceed FROM gate) AS proceed,
         (SELECT COUNT(*)::int FROM prog) AS prog_updated,
         (SELECT streak::int FROM streak_upsert) AS daily_streak
     `)
 
     const row = result.rows[0]
+    const proceed = row?.proceed !== false
+    if (!proceed) {
+      // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
+      const existing = await this.findByUserId(userId)
+      if (!existing) return { updated: false, dailyStreak: null, duplicate: false }
+      return { updated: true, dailyStreak: null, duplicate: true }
+    }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
     // updated=false → daily_yozuvlar yozilmagan, streak NULL qoladi — router 404 qaytaradi.
     const dailyStreak = streakRaw == null ? null : Number(streakRaw)
     if (updated && !Number.isFinite(dailyStreak)) throw new Error('recordAnswer returned no streak value')
-    return { updated, dailyStreak }
+    return { updated, dailyStreak, duplicate: false }
   },
 
   /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */

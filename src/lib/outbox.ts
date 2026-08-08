@@ -14,9 +14,9 @@
  *    befoyda, cheksiz loop'ga olib kelardi);
  *  - MAX_ATTEMPTS dan oshsa → tashlab yuboriladi (zombi yozuv himoyasi).
  *
- * Cheklov: so'rov serverga yetib borgan, lekin javob yo'qolgan holatda
- * replay qo'shni hisobini ikki marta oshirishi mumkin (haqiqiy idempotency
- * uchun server tarafda idempotency-key kerak — keyingi qadam).
+ * Cheklov YEOLINDI: 'result' yozuvlari endi server-side idempotency token
+ * bilan — so'rov yetib borib javob yo'qolsa ham replay counterlarni ikki
+ * marta oshirmaydi (answer_tokens jadvali, ON CONFLICT DO NOTHING).
  */
 
 import { api, ApiError } from './api'
@@ -82,13 +82,23 @@ function newId(): string {
   try { return crypto.randomUUID() } catch { /* eski WebView */ }
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`
 }
+export { newId }
 
 // ── Executor'lar — har bir outbox turi uchun API chaqirig'i ────────────────
 
-/** 'result' yozuvi replay bo'lganda daily streak'ni lokal store'ga qo'llash
- *  (useAppStore ro'yxatdan o'tkazadi — lib → store to'g'ridan-to'g'ri
- *  bog'liqlik bo'lmasligi uchun). */
-let resultSyncHandler: ((date: string, subjectId: string, dailyStreak: number) => void) | null = null
+/** 'result' replay muvaffaqiyatida lokal store yangilanishi uchun.
+ *  duplicate=true bo'lsa (server token'ni avval qabul qilgan) — SKIP:
+ *  counterlar allaqachon o'sha javob uchun yozilgan. */
+export interface ResultSyncInfo {
+  date:           string
+  subjectId:      string
+  questionId:     number
+  selectedAnswer: string | null
+  correct:        boolean
+  dailyStreak:    number | null
+  duplicate:      boolean
+}
+let resultSyncHandler: ((info: ResultSyncInfo) => void) | null = null
 export function setResultSyncHandler(fn: typeof resultSyncHandler): void {
   resultSyncHandler = fn
 }
@@ -101,8 +111,19 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         questionId:     p.questionId as number,
         selectedAnswer: (p.selectedAnswer as string | null) ?? null,
         subjectId:      p.subjectId as string,
+        // Replay XUDDI SHU token bilan — server counterlarni bir martadan
+        // ortiq yozmaydi (eski tokensiz yozuvlar: token'siz, bitta shot).
+        ...(p.clientToken ? { clientToken: p.clientToken as string } : {}),
       })
-      resultSyncHandler?.(p.date as string, p.subjectId as string, res.dailyStreak)
+      resultSyncHandler?.({
+        date:           p.date as string,
+        subjectId:      p.subjectId as string,
+        questionId:     p.questionId as number,
+        selectedAnswer: (p.selectedAnswer as string | null) ?? null,
+        correct:        res.correct,
+        dailyStreak:    res.dailyStreak,
+        duplicate:      !!res.duplicate,
+      })
       return
     }
     case 'saved-add':

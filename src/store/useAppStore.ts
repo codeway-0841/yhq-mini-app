@@ -1,18 +1,21 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { api, type ApiUser, type ApiProgress, type ApiSettings } from '@/lib/api'
-import { enqueueOutbox, setResultSyncHandler } from '@/lib/outbox'
+import { enqueueOutbox, setResultSyncHandler, newId } from '@/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
 import { useDailyStore, todayStr } from './useDailyStore'
 
-// Outbox'dan replay bo'lgan javob daily streak'ni ham yangilasin
-// (offline javob qayta yuborilganda seriya UI'da to'g'ri ko'rinsin).
-setResultSyncHandler((date, subjectId, streak) => {
-  useDailyStore.getState().applyServerResult(date, subjectId, streak)
-})
-
 export type { ApiUser, ApiProgress, ApiSettings }
+
+/** submitAnswer natijasi — null bo'lsa OFFLINE (outbox'ga yozildi, keyin hisoblanadi) */
+export interface SubmitOutcome {
+  correct:       boolean
+  /** Post-answer reveal — feedback highlight uchun */
+  correctAnswer: string
+  /** Server bu javobni avval qabul qilgan (idempotent replay) — counterlar tegmang */
+  duplicate:     boolean
+}
 
 interface AppState {
   user:           ApiUser | null
@@ -40,7 +43,12 @@ interface AppState {
   setAccent:      (accent: string) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string) => Promise<void>
-  addResult:      (correct: boolean, questionId: number, selectedAnswer: string | null) => void
+  /**
+   * Javobni SERVER'ga yuboradi va tekshiruv natijasini qaytaradi.
+   * correctAnswer client'da yo'q (public /questions javobsiz) — feedback
+   * FAQAT shu natijaga tayanadi. null = offline (outbox'ga yozildi).
+   */
+  submitAnswer:   (questionId: number, selectedAnswer: string | null) => Promise<SubmitOutcome | null>
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
@@ -73,7 +81,49 @@ const DEFAULT_SETTINGS: ApiSettings = {
 
 export const useAppStore = create<AppState>()(
   persist(
-    (set, get) => ({
+    (set, get) => {
+      /** Server tasdiqlagan javobni lokal counterlarga qo'llash
+       *  (submitAnswer muvaffaqiyati VA outbox replay'da — bir xil yo'l). */
+      const applyAnswer = (input: { questionId: number; correct: boolean; subjectId: string; date: string; dailyStreak: number | null }) => {
+        const { questionId, correct, subjectId, date, dailyStreak } = input
+        // Multi-fan identity: xato qaydlari fan bo'yicha composite kalitda
+        const wKey = questionKey(subjectId, questionId)
+        // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
+        const wasWrong = correct && (get().wrongByTicket[wKey] ?? 0) > 0
+        set((s) => ({
+          totalCorrect:  s.totalCorrect  + (correct ? 1 : 0),
+          totalWrong:    s.totalWrong    + (correct ? 0 : 1),
+          totalAnswered: s.totalAnswered + 1,
+          streak:        correct ? s.streak + 1 : 0,
+          wrongByTicket: correct
+            ? (() => {
+                // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
+                const next = { ...s.wrongByTicket }
+                delete next[wKey]
+                return next
+              })()
+            : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 },
+        }))
+        if (dailyStreak !== null) useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak)
+        const userId = get().user?.id
+        if (wasWrong && userId && userId !== '0') {
+          api.addDailyFix(userId, { subjectId }).catch(() => {
+            enqueueOutbox(userId, 'daily-fix', { subjectId })
+          })
+        }
+      }
+
+      // Outbox'dan replay bo'lgan javob lokal counterlarni ham yangilasin
+      // (offline javob qayta yuborilganda UI server bilan tekislansin).
+      setResultSyncHandler((info) => {
+        if (info.duplicate) return   // server allaqachon hisoblagan
+        applyAnswer({
+          questionId: info.questionId, correct: info.correct,
+          subjectId: info.subjectId, date: info.date, dailyStreak: info.dailyStreak,
+        })
+      })
+
+      return {
       user:           null,
       settings:       { ...DEFAULT_SETTINGS },
       streak:         0,
@@ -122,47 +172,25 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      addResult: (correct, questionId, selectedAnswer) => {
+      submitAnswer: async (questionId, selectedAnswer) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
         const subjectId = useSubjectStore.getState().subjectId
-        // Multi-fan identity: xato qaydlari fan bo'yicha composite kalitda
-        const wKey = questionId != null ? questionKey(subjectId, questionId) : null
-        // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
-        const wasWrong = correct && wKey !== null && (get().wrongByTicket[wKey] ?? 0) > 0
-        set((s) => ({
-          totalCorrect:  s.totalCorrect  + (correct ? 1 : 0),
-          totalWrong:    s.totalWrong    + (correct ? 0 : 1),
-          totalAnswered: s.totalAnswered + 1,
-          streak:        correct ? s.streak + 1 : 0,
-          wrongByTicket: wKey !== null
-            ? correct
-              ? (() => {
-                  // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
-                  const next = { ...s.wrongByTicket }
-                  delete next[wKey]
-                  return next
-                })()
-              : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 }
-            : s.wrongByTicket,
-        }))
-        if (userId && userId !== '0') {
-          const date = todayStr()
-          api.postResult(userId, { questionId, selectedAnswer, subjectId })
-            .then((result) => {
-              useDailyStore.getState().applyServerResult(date, subjectId, result.dailyStreak)
-            })
-            .catch((err) => {
-              // OFFLINE SYNC CENTER: javob outbox'ga yoziladi — internet
-              // qaytganda flushOutbox serverga yetkazadi (progress yo'qolmaydi).
-              console.warn('postResult muvaffaqiyatsiz — outbox\'ga yozildi:', err?.message ?? err)
-              enqueueOutbox(userId, 'result', { questionId, selectedAnswer, subjectId, date })
-            })
-          if (wasWrong) {
-            api.addDailyFix(userId, { subjectId }).catch(() => {
-              enqueueOutbox(userId, 'daily-fix', { subjectId })
-            })
-          }
+        if (!userId || userId === '0') return null   // anonim — tekshirish imkonsiz
+
+        // Idempotency kaliti JAVOBGA bog'lanadi — outbox replay shu bilan.
+        const clientToken = newId()
+        try {
+          const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken })
+          if (!res.duplicate) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
+          return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate }
+        } catch (err) {
+          // OFFLINE SYNC CENTER: javob outbox'ga yoziladi — internet
+          // qaytganda flushOutbox serverga yetkazadi (progress yo'qolmaydi,
+          // clientToken tufayli ikki marta ham yozilmaydi).
+          console.warn('postResult muvaffaqiyatsiz — outbox\'ga yozildi:', (err as Error)?.message ?? err)
+          enqueueOutbox(userId, 'result', { questionId, selectedAnswer, subjectId, date: todayStr(), clientToken })
+          return null
         }
       },
 
@@ -227,7 +255,8 @@ export const useAppStore = create<AppState>()(
           console.error('syncFromServer failed:', err)
         }
       },
-    }),
+      }
+    },
     {
       name: 'yhq-app-store',
       version: 2,

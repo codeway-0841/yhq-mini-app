@@ -54,7 +54,8 @@ npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 5. **DB o'zgarish:** `server/schema.ts` tahrirlang → `npm run db:generate` → migration faylini commit qiling.
 6. **Testlar:** yangi feature/bugfix uchun `tests/` ga test qo'shing. Consistency testlar (masalan `tests/unit/config/subjects.test.ts`) konfig desync'larini ushlaydi.
 7. **Env var:** barcha `process.env` FAQAT `server/config/index.ts` dagi zod schema orqali o'qiladi. Yangi env kerak bo'lsa — avval schema'ga qo'shing, keyin `config` orqali oling.
-8. **Kutubxona docs (Context7):** library/framework savollari va kod yozishdan OLDIN hujjatlarni Context7'dan oling — training data'ga tayanmang. Global opencode config'da `context7` MCP server sozlangan (`~/.config/opencode/opencode.jsonc`) — MCP tool'lari mavjud bo'lsa shularni ishlating:
+8. **Scoring trust boundary:** `GET /questions` HECH QACHON `correctAnswer` qaytarmaydi — client'da javob kaliti yo'q. Feedback FAQAT `POST /progress/:userId/result` javobidan (post-answer reveal) yoki Octagon `answer_ack` (`correctOptionId`) dan olinadi. To'liq qator kerak bo'lsa — `GET /api/admin/questions` (admin-only). `/result` idempotent: `clientToken` (`answer_tokens` jadvali) bilan.
+9. **Kutubxona docs (Context7):** library/framework savollari va kod yozishdan OLDIN hujjatlarni Context7'dan oling — training data'ga tayanmang. Global opencode config'da `context7` MCP server sozlangan (`~/.config/opencode/opencode.jsonc`) — MCP tool'lari mavjud bo'lsa shularni ishlating:
    - `resolve-library-id` (libraryName + query) → rasmiy/eng yuqori trustScore'li `/owner/repo` ID'ni tanlang
    - `query-docs` (libraryId + bitta mavzu query)
    - MCP mavjud bo'lmasa HTTP API fallback: search `https://context7.com/api/v1/search?query=<lib>`, docs `https://context7.com/<owner>/<repo>/llms.txt?topic=<mavzu>&tokens=<n>`

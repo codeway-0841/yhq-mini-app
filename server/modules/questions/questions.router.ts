@@ -25,6 +25,18 @@ const QuestionsQuery = z.object({
 const CONTENT_CACHE = 'public, max-age=300, s-maxage=600, stale-while-revalidate=3600'
 
 /**
+ * Public savol payload'i TO'G'RI JAVOBSIZ — correctAnswer faqat serverda
+ * qoladi (scoring trust boundary). Aks holda client javob kalitini o'qib
+ * /result'ga "to'g'ri" variantni yuborib leaderboard'ni aldashi mumkin edi.
+ * Feedback endi POST /progress/:userId/result javobidan olinadi
+ * (post-answer reveal: foydalanuvchi allaqachon javob bergan).
+ * Admin'ga to'liq qatorlar alohida GET /api/admin/questions orqali.
+ */
+function toPublic<T extends { correctAnswer: string }>(rows: T[]): Array<Omit<T, 'correctAnswer'>> {
+  return rows.map(({ correctAnswer: _hidden, ...rest }) => rest)
+}
+
+/**
  * GET /api/questions?topicId=1&subject=fizika
  *
  * subject → SubjectRegistry → dataSourceId → QuestionBankProvider.
@@ -47,7 +59,7 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
 
   res.set('Cache-Control', CONTENT_CACHE)
   res.set('X-Data-Source', entry.dataSourceId)
-  res.json(rows)
+  res.json(toPublic(rows))
 }))
 
 // GET /api/topics?subject=fizika

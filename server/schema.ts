@@ -32,6 +32,20 @@ export const users = pgTable('users', {
   updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 })
 
+/**
+ * Test javobi idempotency token'lari — offline outbox replay'da
+ * (so'rov serverga yetib borgan, javob yo'qolgan) counterlar ikki marta
+ * oshmasligi uchun. Client har mantiqiy javob uchun 1 token yaratadi;
+ * replay XUDDI SHU token bilan keladi → ON CONFLICT DO NOTHING → duplicate.
+ */
+export const answerTokens = pgTable('answer_tokens', {
+  token:     text('token').primaryKey(),
+  userId:    bigint('user_id', { mode: 'bigint' }).notNull().references(() => users.id, { onDelete: 'cascade' }),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_answer_tokens_created').on(t.createdAt),
+])
+
 /** Telegram Stars to'lovlari — charge ID ledger va idempotency manbai. */
 export const payments = pgTable('payments', {
   id:                       serial('id').primaryKey(),

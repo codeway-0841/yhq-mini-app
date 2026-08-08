@@ -20,10 +20,13 @@ export interface TestSessionSnapshot {
   /** Savollarning YAKUNIY tartibi (bir marta shuffle qilingan) */
   questionIds:     number[]
   current:         number
-  /** 'correct' | 'wrong' | 'unanswered' | null */
+  /** 'correct' | 'wrong' | 'unanswered' | 'pending' | null */
   answers:         (string | null)[]
   /** Tanlangan variant id'lari (UI'da qayta ko'rsatish uchun) */
   selected:        (string | null)[]
+  /** Server'dan reveal qilingan TO'G'RI variant id'lari (javobgacha null).
+   *  Reload'da xato javoblar uchun "to'g'ri javob highlight" qayta ko'rinadi. */
+  correctOptions?: (string | null)[]
   startedAt:       number
   finished:        boolean
 }

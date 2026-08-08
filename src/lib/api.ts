@@ -118,15 +118,24 @@ export interface FullProfile {
   savedQuestions: string[]
 }
 
+/**
+ * Public savol qatori — TO'G'RI JAVOBSIZ (scoring trust boundary).
+ * correctAnswer faqat serverda: POST /result javob bergandan keyin
+ * post-answer reveal orqali qaytaradi yoki /admin/questions (admin-only).
+ */
 export interface DbQuestion {
   id: number
   questionUz: string
   questionRu: string
   optionsUz: Record<string, string>
   optionsRu: Record<string, string>
-  correctAnswer: string
   image: string | null
   topicId: number | null
+}
+
+/** Admin CRUD uchun to'liq qator (faqat /admin/questions qaytaradi). */
+export interface AdminDbQuestion extends DbQuestion {
+  correctAnswer: string
 }
 
 export interface DbTopic {
@@ -141,7 +150,6 @@ export interface Question {
   text: string
   image: string | null
   options: { id: string; text: string }[]
-  correct: string
   topicId: number | null
 }
 
@@ -149,7 +157,7 @@ export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
   const text    = lang === 'ru' ? q.questionRu : q.questionUz
   const optMap  = lang === 'ru' ? q.optionsRu  : q.optionsUz
   const options = Object.entries(optMap).map(([id, text]) => ({ id, text }))
-  return { id: q.id, text, image: q.image, options, correct: q.correctAnswer, topicId: q.topicId }
+  return { id: q.id, text, image: q.image, options, topicId: q.topicId }
 }
 
 export const api = {
@@ -171,7 +179,9 @@ export const api = {
     questionId: number
     selectedAnswer: string | null
     subjectId: string
-  }) => request<{ ok: true; correct: boolean; dailyStreak: number }>(
+    /** Outbox idempotency kaliti — replay counterlarni qayta yozmaydi */
+    clientToken?: string
+  }) => request<ResultResponse>(
     'POST', `/progress/${uid(userId)}/result`, data,
   ),
 
@@ -245,9 +255,12 @@ export const api = {
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
-  createQuestion: (data: Omit<DbQuestion, 'id'> & { id?: number }) =>
+  /** TO'LIQ qatorlar (correctAnswer bilan) — public /questions endi javobsiz */
+  getAdminQuestions: () =>
+    request<AdminDbQuestion[]>('GET', '/admin/questions'),
+  createQuestion: (data: Omit<AdminDbQuestion, 'id'> & { id?: number }) =>
     request<{ id: number; created: true }>('POST', '/admin/questions', data),
-  updateQuestion: (id: number, data: Omit<DbQuestion, 'id'>) =>
+  updateQuestion: (id: number, data: Omit<AdminDbQuestion, 'id'>) =>
     request<{ id: number; updated: true }>('PUT', `/admin/questions/${id}`, data),
   deleteQuestion: (id: number) =>
     request<void>('DELETE', `/admin/questions/${id}`),
@@ -255,8 +268,19 @@ export const api = {
     request<{ total: number; withTopic: number }>('GET', '/admin/questions/meta'),
 }
 
-export interface DailyState {
-  record: { date: string; subjectId: string; answered: number; correct: number; challengeDone: boolean } | null
+/** POST /result javobi — SERVER tekshiruvi (client endi to'g'ri javobni bilmaydi). */
+export interface ResultResponse {
+  ok: true
+  correct: boolean
+  /** Post-answer reveal — javob bergandan keyingina ochiladi */
+  correctAnswer: string
+  /** Idempotent duplicate bo'lsa null (counterlar qayta yozilmagan) */
+  dailyStreak: number | null
+  /** Shu clientToken allaqachon qabul qilingan */
+  duplicate?: boolean
+}
+
+export interface DailyState {  record: { date: string; subjectId: string; answered: number; correct: number; challengeDone: boolean } | null
   dailyStreak: number
 }
 

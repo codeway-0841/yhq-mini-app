@@ -47,7 +47,7 @@ function Option({ id, text, state, onSelect, answered }: {
 
 export default function AdaptivePage() {
   const navigate = useNavigate()
-  const { settings, addResult } = useAppStore()
+  const { settings, submitAnswer } = useAppStore()
   const questions = useQuestionsStore((s) => s.questions)
   const topics    = useQuestionsStore((s) => s.topics)
   const tt = useT(settings.language)
@@ -70,23 +70,33 @@ export default function AdaptivePage() {
   // Track which option was selected so we can show correct/wrong feedback
   // before the store advances to the next question.
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
+  /** Server reveal — javob kaliti client'da yo'q, faqat server ochadi */
+  const [revealed, setRevealed] = useState<string | null>(null)
 
   // Reset local selection state whenever the store moves to a new question
-  useEffect(() => { setSelectedOption(null) }, [currentId])
+  useEffect(() => { setSelectedOption(null); setRevealed(null) }, [currentId])
 
   const handleSelect = useCallback((optionId: string) => {
     if (!q || selectedOption !== null) return  // guard double-click
     setSelectedOption(optionId)
 
-    const quality: 0 | 1 = optionId === q.correct ? 1 : 0
-    haptics.notify(quality === 1 ? 'success' : 'error')
-    playSound(quality === 1 ? 'success' : 'error')
-    addResult(quality === 1, q.id, optionId)
-    recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
+    void (async () => {
+      // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi.
+      const outcome = await submitAnswer(q.id, optionId)
+      // Offline'da (outcome=null) quality "xato" deb konservativ yoziladi —
+      // server flush paytida haqiqiy natija progress'ga tushadi.
+      const quality: 0 | 1 = outcome?.correct ? 1 : 0
+      if (outcome) {
+        setRevealed(outcome.correctAnswer)
+        haptics.notify(outcome.correct ? 'success' : 'error')
+        playSound(outcome.correct ? 'success' : 'error')
+      }
+      recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
 
-    // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol
-    setTimeout(() => advanceNext(), 800)
-  }, [q, selectedOption, addResult, recordAnswer, advanceNext])
+      // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol
+      setTimeout(() => advanceNext(), 800)
+    })()
+  }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext])
 
   if (!q) {
     return (
@@ -132,9 +142,10 @@ export default function AdaptivePage() {
         )}
         {q.options.map((opt) => {
           const state: 'correct' | 'wrong' | 'default' =
-            !answered          ? 'default' :
-            opt.id === q.correct ? 'correct' :
-            opt.id === selectedOption ? 'wrong' : 'default'
+            !answered            ? 'default' :
+            revealed && opt.id === revealed ? 'correct' :
+            revealed && opt.id === selectedOption ? 'wrong' :
+            'default'
           return (
             <Option key={opt.id} id={opt.id} text={opt.text}
               state={state} onSelect={() => handleSelect(opt.id)} answered={answered} />

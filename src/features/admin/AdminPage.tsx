@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { Plus, Pencil, Trash2, Search, X, Loader2, AlertTriangle } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore, getRawQuestions } from '../../store/useQuestionsStore'
-import { api, type DbQuestion, type DbTopic, type Question } from '../../lib/api'
+import { useQuestionsStore } from '../../store/useQuestionsStore'
+import { api, type AdminDbQuestion, type DbTopic } from '../../lib/api'
 
 
 /** Faqat isAdmin foydalanuvchilariga ko'rinadigan sahifa.
@@ -16,45 +16,46 @@ export default function AdminPage() {
   const settings  = useAppStore((s) => s.settings)
   const lang      = settings?.language ?? 'uz'
 
-  const questions = useQuestionsStore((s) => s.questions)
-  const topics    = useQuestionsStore((s) => s.topics)
+  // Public store endi javobSIZ (correctAnswer strip qilingan) — admin
+  // to'liq qatorlarni himoyalangan /admin/questions'dan oladi.
+  const [rows, setRows]           = useState<AdminDbQuestion[]>([])
+  const topics                    = useQuestionsStore((s) => s.topics)
 
   const [meta, setMeta]           = useState<{ total: number; withTopic: number } | null>(null)
   const [search, setSearch]       = useState('')
-  const [editing, setEditing]     = useState<DbQuestion | null>(null)
+  const [editing, setEditing]     = useState<AdminDbQuestion | null>(null)
   const [creating, setCreating]   = useState(false)
   const [busy, setBusy]           = useState(false)
-  const [deleteConfirm, setConfirm] = useState<Question | null>(null)
+  const [deleteConfirm, setConfirm] = useState<AdminDbQuestion | null>(null)
 
-  /** Tahrirlash uchun RAW (DbQuestion) topish — store'dagi mapping lang'da emas */
-  const findRaw = useCallback((id: number): DbQuestion | null =>
-    getRawQuestions().find((r) => r.id === id) ?? null, [])
+  const loadAll = useCallback(async () => {
+    const [qs, m] = await Promise.all([api.getAdminQuestions(), api.getQuestionsMeta()])
+    setRows(qs)
+    setMeta(m)
+  }, [])
 
-  // Kirishni tekshirish + store'ni QAT'IY yangilash.
-  // load() deyish mumkin emas — u "allaqachon yuklangan" bo'lsa early-return
-  // qiladi va CRUD'dan keyingi yangi savollar (masalan #301) ko'rinmay qoladi!
+  // Kirishni tekshirish + ro'yxatni yuklash.
   useEffect(() => {
     if (!user?.isAdmin) {
       navigate('/profil', { replace: true })
       return
     }
-    void useQuestionsStore.getState().reload()
-    void api.getQuestionsMeta()
-      .then(setMeta)
-      .catch(() => setMeta({ total: 0, withTopic: 0 }))
-  }, [user?.isAdmin, navigate, lang])
+    loadAll().catch(() => setMeta({ total: 0, withTopic: 0 }))
+  }, [user?.isAdmin, navigate, lang, loadAll])
 
-  // Savollar store'dan (cache). doimiy filter
+  // Savollar admin ro'yxatidan. doimiy filter
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
     if (q) {
-      return questions.filter((x) =>
-        String(x.id).includes(q) || x.text.toLowerCase().includes(q),
+      return rows.filter((x) =>
+        String(x.id).includes(q) ||
+        x.questionUz.toLowerCase().includes(q) ||
+        x.questionRu.toLowerCase().includes(q),
       )
     }
     // Qidiruvsiz — hammasi, yangilari tepada
-    return [...questions].reverse()
-  }, [questions, search])
+    return [...rows].reverse()
+  }, [rows, search])
 
   const topic = useCallback((topicId: number | null) => {
     if (topicId == null) return '——'
@@ -65,14 +66,13 @@ export default function AdminPage() {
   const refresh = useCallback(async () => {
     setBusy(true)
     try {
-      const m = await api.getQuestionsMeta()
-      setMeta(m)
-      // Store'ni qayta yuklash — savollar DB'da o'zgardi
+      await loadAll()
+      // Public store cache'ini ham yangilash — savollar DB'da o'zgardi
       await useQuestionsStore.getState().reload()
     } finally {
       setBusy(false)
     }
-  }, [])
+  }, [loadAll])
 
   if (!user?.isAdmin) return null
 
@@ -114,14 +114,14 @@ export default function AdminPage() {
             <div className="flex gap-3 items-start justify-between">
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] text-muted font-bold uppercase tracking-wide mb-1">#{q.id} · {topic(q.topicId)}</p>
-                <p className="text-[13px] text-fg font-medium line-clamp-2 mb-1">{(q as { text: string }).text}</p>
+                <p className="text-[13px] text-fg font-medium line-clamp-2 mb-1">{lang === 'ru' ? q.questionRu : q.questionUz}</p>
                 <p className="text-[12px] text-muted">
-                  T.J: <b className="text-duo-green">{(q as { correct: string }).correct}</b>
+                  T.J: <b className="text-duo-green">{q.correctAnswer}</b>
                 </p>
               </div>
               <div className="flex flex-col gap-1.5 flex-shrink-0">
                 <button
-                  onClick={() => { const raw = findRaw(q.id); if (raw) setEditing(raw) }}
+                  onClick={() => setEditing(q)}
                   className="p-2 bg-elevated rounded-lg active:scale-90 transition-transform"
                   title="Tahrirlash"
                 >
@@ -215,11 +215,11 @@ function QuestionForm({
   onCancel,
   onSubmit,
 }: {
-  initial?: DbQuestion & { text?: string }
+  initial?: AdminDbQuestion
   topics: DbTopic[]
   lang: 'uz' | 'ru'
   onCancel: () => void
-  onSubmit: (data: Omit<DbQuestion, 'id'>) => Promise<void>
+  onSubmit: (data: Omit<AdminDbQuestion, 'id'>) => Promise<void>
 }) {
   const [form, setForm] = useState({
     questionUz: initial?.questionUz ?? '',

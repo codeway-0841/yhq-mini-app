@@ -25,6 +25,8 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
         let cls = 'bg-elevated border-2 border-line text-muted'
         if (ans === 'correct')      cls = 'bg-duo-green text-ponprimary' + (isCurrent ? ' border-2 border-duo-green glow-accent-sm' : '')
         else if (ans === 'wrong')   cls = 'bg-duo-red text-white' + (isCurrent ? ' border-2 border-duo-green glow-accent-sm' : '')
+        // pending: offline — server tasdig'ini kutmoqda (outbox'da navbatda)
+        else if (ans === 'pending') cls = 'bg-elevated border-2 border-duo-blue text-duo-blue'
         else if (isCurrent)         cls = 'bg-elevated border-2 border-duo-green text-fg glow-accent-sm'
         return (
           <button key={i} onClick={() => onSelect(i)}

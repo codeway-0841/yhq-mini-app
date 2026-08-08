@@ -20,7 +20,7 @@ const QUESTIONS  = 20
 
 export default function SpeedPage() {
   const navigate = useNavigate()
-  const { settings, addResult } = useAppStore()
+  const { settings, submitAnswer } = useAppStore()
   const questions = useQuestionsStore((s) => s.questions)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
@@ -38,6 +38,9 @@ export default function SpeedPage() {
   const [idx, setIdx]           = useState(0)
   const [answers, setAnswers]   = useState<('correct' | 'wrong')[]>([])
   const [selected, setSelected] = useState<string | null>(null)
+  /** Server reveal: javobdan keyingina to'g'ri variant ko'rinadi */
+  const [revealed, setRevealed] = useState<string | null>(null)
+  const [busy, setBusy]         = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
   const [finished, setFinished] = useState(false)
 
@@ -53,34 +56,51 @@ export default function SpeedPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft, finished, answered])
 
-  const advance = useCallback((isCorrect: boolean, selectedAnswer: string | null) => {
+  const advance = useCallback((isCorrect: boolean) => {
     setAnswers((a) => [...a, isCorrect ? 'correct' : 'wrong'])
-    addResult(isCorrect, q.id, selectedAnswer)
     setSelected(null)
+    setRevealed(null)
     if (idx + 1 >= qs.length) {
       setFinished(true)
     } else {
       setIdx((i) => i + 1)
       setTimeLeft(TIME_LIMIT)
     }
-  }, [idx, qs.length, q, addResult])
+  }, [idx, qs.length])
 
   // Vaqt tugadi — javob berilmagan = xato, 700ms "to'g'ri javobni ko'rsat", keyin keyingi
   const handleTimeout = useCallback(() => {
+    if (busy) return
+    setBusy(true)
     setSelected('__timeout__')
-    playSound('error')
-    haptics.notify('error')
-    setTimeout(() => advance(false, null), 700)
-  }, [advance])
+    void (async () => {
+      // selectedAnswer=null → server xato deb yozadi va reveal qaytaradi
+      const outcome = q ? await submitAnswer(q.id, null) : null
+      setBusy(false)
+      if (outcome) setRevealed(outcome.correctAnswer)
+      playSound('error')
+      haptics.notify('error')
+      setTimeout(() => advance(false), 700)
+    })()
+  }, [advance, busy, q, submitAnswer])
 
   const handleSelect = useCallback((optId: string) => {
-    if (answered || !q) return
-    setSelected(optId)
-    const isCorrect = optId === q.correct
-    haptics.notify(isCorrect ? 'success' : 'error')
-    playSound(isCorrect ? 'success' : 'error')
-    setTimeout(() => advance(isCorrect, optId), 800)
-  }, [answered, q, advance])
+    if (answered || busy || !q) return
+    setSelected(optId)   // timer to'xtaydi + tugmalar bloklanadi
+    setBusy(true)
+    void (async () => {
+      // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (kalit client'da yo'q)
+      const outcome = await submitAnswer(q.id, optId)
+      setBusy(false)
+      if (outcome) {
+        setRevealed(outcome.correctAnswer)
+        haptics.notify(outcome.correct ? 'success' : 'error')
+        playSound(outcome.correct ? 'success' : 'error')
+      }
+      // Offline: reveal yo'q — faqat tanlangan variant belgilanib qoladi
+      setTimeout(() => advance(outcome?.correct ?? false), outcome ? 800 : 400)
+    })()
+  }, [answered, busy, q, submitAnswer, advance])
 
   useEffect(() => { useSubjectStore.getState() }, [subjectId])
 
@@ -150,10 +170,11 @@ export default function SpeedPage() {
           </div>
         )}
         {q.options.map((opt) => {
-          const isRight  = opt.id === q.correct
+          const isRight  = revealed !== null && opt.id === revealed
           const isChoice = selected === opt.id
-          const showResult = answered
+          const showResult = answered && !busy
           const style =
+            !showResult && isChoice ? 'bg-duo-blue/10 border-duo-blue/60 border-2 text-pfg animate-pulse' :
             !showResult            ? 'bg-surface border-pline text-pfg hover:border-duo-green/50 active:scale-[0.98]' :
             isRight                ? 'bg-duo-green/15 border-duo-green text-pfg' :
             isChoice               ? 'bg-duo-red/15 border-duo-red text-duo-red' :
@@ -167,7 +188,7 @@ export default function SpeedPage() {
                 </span>
                 <span className="text-sm">{opt.text}</span>
                 {showResult && isRight && <span className="ml-auto text-duo-green font-black">✓</span>}
-                {showResult && isChoice && !isRight && <span className="ml-auto font-black">✗</span>}
+                {showResult && isChoice && revealed !== null && !isRight && <span className="ml-auto font-black">✗</span>}
               </div>
             </button>
           )

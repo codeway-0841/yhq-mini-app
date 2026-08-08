@@ -3,7 +3,7 @@ export type Option = { id: string; text: string }
 /** Single answer option with correct/wrong neon glow highlight after answering (v1.1). */
 export default function OptionButton({ option, state, onSelect, answered, fontSize }: {
   option: Option
-  state: 'correct' | 'wrong' | 'default'
+  state: 'correct' | 'wrong' | 'pending' | 'default'
   onSelect: () => void
   answered: boolean
   fontSize: string
@@ -24,6 +24,10 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
     chip  = 'bg-duo-red border-duo-red text-white'
     icon  = <span className="text-duo-red font-black text-lg">✗</span>
     glow  = '0 0 20px rgba(239, 68, 68, 0.30)'
+  } else if (state === 'pending') {
+    // Server javobi kutilmoqda (yoki offline — keyin tasdiqlanadi)
+    style = 'bg-duo-blue/10 border-duo-blue/60 text-fg animate-pulse'
+    chip  = 'bg-duo-blue/20 border-duo-blue text-duo-blue'
   }
 
   const fontClass =

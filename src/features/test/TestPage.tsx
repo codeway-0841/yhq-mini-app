@@ -35,7 +35,7 @@ export default function TestPage() {
   const { id }   = useParams()
   const navigate = useNavigate()
   const location = useLocation()
-  const { settings, addResult, toggleSaved, savedQuestions } = useAppStore()
+  const { settings, submitAnswer, toggleSaved, savedQuestions } = useAppStore()
   const tt          = useT(settings.language)
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
@@ -85,6 +85,10 @@ export default function TestPage() {
   const [current, setCurrent]                 = useState(startIndex)
   const [answers, setAnswers]                 = useState(() => Array(activeQuestions.length).fill(null))
   const [selectedHistory, setSelectedHistory] = useState(() => Array(activeQuestions.length).fill(null))
+  /** Server reveal qilgan to'g'ri variant id'lari (javobgacha null) */
+  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
+  /** Server tekshiruvi kutilayotgan javob (double-submit himoyasi) */
+  const [submitting, setSubmitting]           = useState(false)
   const [showSettings, setShowSettings]       = useState(false)
   const [showResults, setShowResults]         = useState(false)
   const [isFinished, setIsFinished]           = useState(false)
@@ -96,7 +100,10 @@ export default function TestPage() {
   const q         = activeQuestions[current]
   const fontSize  = settings?.fontSize || 'medium'
   const selected  = selectedHistory[current] ?? null
-  const correctId = q?.correct ?? null
+  const answeredStatus = answers[current]
+  // To'g'ri javob endi client'da saqlanMAYDI — faqat server javob bergach
+  // (post-answer reveal) shu massivga yoziladi.
+  const revealedId = correctOpts[current] ?? null
   const [showExplain, setShowExplain] = useState(false)
 
   // ── AI Tutor (Premium) — xato savolni streaming tushuntirish ──
@@ -112,7 +119,7 @@ export default function TestPage() {
       To'g'ri/xato javobga qarab prompt tanlanadi. */
   const startAiExplain = useCallback(async () => {
     if (!q || !userId || !selected) return
-    const answeredCorrect = selected === correctId
+    const answeredCorrect = answers[current] === 'correct'
     const cacheKey = q.id * 10 + (answeredCorrect ? 1 : 0)
     const cached = aiCacheRef.current.get(cacheKey)
     if (cached) { setAiText(cached); return }
@@ -139,7 +146,7 @@ export default function TestPage() {
     } finally {
       setAiBusy(false)
     }
-  }, [q, userId, selected, correctId, settings?.language, tt])
+  }, [q, userId, selected, answers, current, settings?.language, tt])
 
   const [showAiUpsell, setShowAiUpsell] = useState(false)
 
@@ -210,6 +217,8 @@ export default function TestPage() {
     setCurrent(r ? clampIndex(r.current, len) : startIndex)
     setAnswers(r && r.answers.length === len ? [...r.answers] : Array(len).fill(null))
     setSelectedHistory(r && r.selected.length === len ? [...r.selected] : Array(len).fill(null))
+    setCorrectOpts(r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null))
+    setSubmitting(false)
     setShowResults(false)
     setIsFinished(false)
     setToast(null)
@@ -240,10 +249,11 @@ export default function TestPage() {
       current,
       answers,
       selected:        selectedHistory,
+      correctOptions:  correctOpts,
       startedAt:       startedAtRef.current,
       finished:        isFinished,
     })
-  }, [activeQuestions, current, answers, selectedHistory, isFinished, sessionKey, subjectId, mode, stateTitle])
+  }, [activeQuestions, current, answers, selectedHistory, correctOpts, isFinished, sessionKey, subjectId, mode, stateTitle])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const cancelAutoNext = useCallback(() => {
@@ -271,38 +281,64 @@ export default function TestPage() {
 
   const getOptionState = useCallback((optId: string) => {
     if (!selected) return 'default'
-    if (optId === correctId) return 'correct'
-    if (optId === selected && selected !== correctId) return 'wrong'
+    // REVEAL faqat server'dan: javobgacha hech qaysi variant "to'g'ri" ko'rinmaydi
+    if (revealedId) {
+      if (optId === revealedId) return 'correct'
+      if (optId === selected && selected !== revealedId) return 'wrong'
+      return 'default'
+    }
+    // Reveal yo'q: yoki server javobi kutilmoqda, yoki offline (pending),
+    // yoki eski (reveal'siz) sessiya — o'z tanlovini status bo'yicha bo'yaymiz.
+    if (optId === selected) {
+      if (answeredStatus === 'correct') return 'correct'
+      if (answeredStatus === 'wrong')   return 'wrong'
+      return 'pending'   // submit kutilmoqda yoki offline navbatda
+    }
     return 'default'
-  }, [selected, correctId])
+  }, [selected, revealedId, answeredStatus])
 
   const handleSelect = useCallback((optId: string) => {
-    if (selected || !correctId || !q) return
-    const isCorrect = optId === correctId
-    setSelectedHistory((prev) => { const next = [...prev]; next[current] = optId; return next })
-    setAnswers((prev) => { const next = [...prev]; next[current] = isCorrect ? 'correct' : 'wrong'; return next })
-    haptics.notify(isCorrect ? 'success' : 'error')
-    if (isCorrect) {
-      correctStreakRef.current += 1
-      // 🔥 combo: har 3 ta ketma-ket to'g'ri javobda ko'tariladigan ovoz
-      playSound(correctStreakRef.current % 3 === 0 ? 'combo' : 'success')
-    } else {
-      correctStreakRef.current = 0
-      playSound('error')
-    }
-    addResult(isCorrect, q.id, optId)   // server selected variantni o'zi tekshiradi
-    const delay = isCorrect
-      ? (settings?.autoNextCorrect ? 800 : null)
-      : (settings?.autoNextWrong ? 1200 : null)
-    if (delay !== null) {
-      cancelAutoNext()
-      const answeredIndex = current
-      autoNextTimerRef.current = window.setTimeout(() => {
-        autoNextTimerRef.current = null
-        goTo(answeredIndex + 1)
-      }, delay)
-    }
-  }, [selected, correctId, current, q, settings, addResult, cancelAutoNext, goTo])
+    if (selected || submitting || !q) return
+    const answeredIndex = current
+    setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = optId; return next })
+    setSubmitting(true)
+
+    // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
+    void (async () => {
+      const outcome = await submitAnswer(q.id, optId)
+      setSubmitting(false)
+      if (!outcome) {
+        // Offline — javob outbox'ga yozildi; internet qaytganda server
+        // tekshirib counterlarni yangilaydi. Indigo "pending" holat qoladi.
+        setAnswers((prev) => { const next = [...prev]; next[answeredIndex] = 'pending'; return next })
+        setToast(tt('offlineQueued'))
+        setTimeout(() => setToast(null), 2500)
+        return
+      }
+      const isCorrect = outcome.correct
+      setAnswers((prev) => { const next = [...prev]; next[answeredIndex] = isCorrect ? 'correct' : 'wrong'; return next })
+      setCorrectOpts((prev) => { const next = [...prev]; next[answeredIndex] = outcome.correctAnswer; return next })
+      haptics.notify(isCorrect ? 'success' : 'error')
+      if (isCorrect) {
+        correctStreakRef.current += 1
+        // 🔥 combo: har 3 ta ketma-ket to'g'ri javobda ko'tariladigan ovoz
+        playSound(correctStreakRef.current % 3 === 0 ? 'combo' : 'success')
+      } else {
+        correctStreakRef.current = 0
+        playSound('error')
+      }
+      const delay = isCorrect
+        ? (settings?.autoNextCorrect ? 800 : null)
+        : (settings?.autoNextWrong ? 1200 : null)
+      if (delay !== null) {
+        cancelAutoNext()
+        autoNextTimerRef.current = window.setTimeout(() => {
+          autoNextTimerRef.current = null
+          goTo(answeredIndex + 1)
+        }, delay)
+      }
+    })()
+  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({

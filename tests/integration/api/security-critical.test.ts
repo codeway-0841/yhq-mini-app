@@ -3,7 +3,7 @@ import request from 'supertest'
 import { and, eq } from 'drizzle-orm'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { dailyRecords, payments, progress, questions, users } from '../../../server/schema'
+import { answerTokens, dailyRecords, payments, progress, questions, users } from '../../../server/schema'
 import { paymentRepository } from '../../../server/modules/payments/payment.repository'
 import { tashkentDate } from '../../../server/utils/date'
 
@@ -15,6 +15,7 @@ const IDS = [PROGRESS_ID, TRIAL_ID, PAYMENT_ID]
 
 async function cleanup() {
   for (const id of IDS) {
+    await db.delete(answerTokens).where(eq(answerTokens.userId, id))
     await db.delete(payments).where(eq(payments.userId, id))
     await db.delete(users).where(eq(users.id, id))
   }
@@ -74,6 +75,65 @@ describe('server-authoritative progress', () => {
     expect(daily.correct).toBe(1)
   })
 
+  it('javob bilan birga correctAnswer POST-ANSWER REVEAL qilinadi (feedback uchun)', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const res = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq' })
+      .expect(200)
+    expect(res.body.ok).toBe(true)
+    expect(res.body.correct).toBe(true)
+    expect(res.body.correctAnswer).toBe(question.correctAnswer)
+    expect(typeof res.body.dailyStreak).toBe('number')
+    expect(res.body.duplicate).toBeUndefined()
+  })
+
+  it('clientToken idempotency: replay counterlarni ikki marta oshirmaydi', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const [before] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    const token = `integration-token-${Date.now()}-uniq`
+
+    const first = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
+      .expect(200)
+    expect(first.body.duplicate).toBeUndefined()
+
+    // XUDDI SHU token bilan replay (javob yo'qolgan outbox scenariysi)
+    const replay = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
+      .expect(200)
+    expect(replay.body.duplicate).toBe(true)
+    expect(replay.body.dailyStreak).toBeNull()
+    // Reveal ham idempotent: client eski javobni qayta ko'rsata oladi
+    expect(replay.body.correctAnswer).toBe(question.correctAnswer)
+
+    const [after] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(after.totalAnswered).toBe(before.totalAnswered + 1)   // FAQAT 1 marta
+    expect(after.totalCorrect).toBe(before.totalCorrect + 1)
+
+    const tokens = await db.select().from(answerTokens).where(eq(answerTokens.token, token))
+    expect(tokens).toHaveLength(1)
+  })
+
+  it('clientToken boshqa user tokenini qayta ishlatolmaydi (user-scoped)', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const token = `integration-cross-${Date.now()}-uniq`
+    // PROGRESS_ID token yaratadi
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
+      .expect(200)
+    // TRIAL_ID XUDDI SHU token bilan kelsa — token PK bo'lgani uchun
+    // ON CONFLICT DO NOTHING → duplicate (u EMAS, lekin token band)
+    const res = await request(app)
+      .post(`/api/progress/${TRIAL_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
+      .expect(200)
+    expect(res.body.duplicate).toBe(true)
+  })
+
   it('fanlar orasida xatolar izolyatsiya qilingan (bir xil questionId, turli subject)', async () => {
     const [question] = await db.select().from(questions).limit(1)
     const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
@@ -86,6 +146,26 @@ describe('server-authoritative progress', () => {
     const [prog] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     expect(prog.wrongByTicket[`fizika:${question.id}`]).toBe(1)
     expect(prog.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
+  })
+})
+
+describe('public questions payload — correctAnswer yashiringan', () => {
+  it('GET /api/questions correctAnswer QAYTARMAYDI (scoring trust boundary)', async () => {
+    const res = await request(app).get('/api/questions').expect(200)
+    expect(res.body.length).toBeGreaterThan(0)
+    for (const row of res.body.slice(0, 10)) {
+      expect(row.correctAnswer).toBeUndefined()
+      expect(row.questionUz).toBeDefined()
+      expect(row.optionsUz).toBeDefined()
+    }
+  })
+
+  it('topicId filtrli ham correctAnswer QAYTARMAYDI', async () => {
+    const [q] = await db.select().from(questions).limit(1)
+    if (!q.topicId) return
+    const res = await request(app).get(`/api/questions?topicId=${q.topicId}`).expect(200)
+    expect(res.body.length).toBeGreaterThan(0)
+    expect(res.body[0].correctAnswer).toBeUndefined()
   })
 })
 
