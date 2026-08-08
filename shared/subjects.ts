@@ -20,6 +20,12 @@ export interface SubjectBase {
   dataSourceId: string
   available: boolean
   demoData: boolean
+  /**
+   * Rasmiy imtihon simulyatori preset'lari (shared/exam-presets.ts id'lari).
+   * YHQ'ning o'z formati ('mock' rejimi) alohida — bu ro'yxat bo'sh.
+   * Desync — tests/unit/config/exam-presets.test.ts ushlaydi.
+   */
+  examPresets: readonly string[]
 }
 
 /**
@@ -28,13 +34,13 @@ export interface SubjectBase {
  *   - Ro'yxat o'zgarmas (readonly) — runtime'da tasodifiy mutatsiya imkonsiz
  */
 export const SUBJECT_BASES = [
-  { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true, demoData: false },
-  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'traffic_rules_db', available: true, demoData: true },
-  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'traffic_rules_db', available: true, demoData: true },
-  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'traffic_rules_db', available: true, demoData: true },
-  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'traffic_rules_db', available: true, demoData: true },
-  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'traffic_rules_db', available: true, demoData: true },
-  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'traffic_rules_db', available: true, demoData: true },
+  { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true, demoData: false, examPresets: [] },
+  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
 ] as const satisfies readonly SubjectBase[]
 
 /**

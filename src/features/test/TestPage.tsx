@@ -5,6 +5,8 @@ import { Bookmark, Share2, Flag, Settings, BarChart2, Play, Video, Info, Message
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
+import { resolveExamMode } from '../../../shared/exam-presets'
+import { buildTopicBreakdown } from './topic-diagnosis'
 import { useTestSessionStore } from '../../store/useTestSessionStore'
 import { makeSessionKey, isResumable, remainingSeconds, clampIndex } from './test-session'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -40,7 +42,9 @@ export default function TestPage() {
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
 
-  const mode = (location.state?.mode as 'random50' | 'random100' | 'random20' | 'exam' | 'mock' | 'tricky' | 'numeric' | undefined) ?? null
+  const mode = (location.state?.mode as string | undefined) ?? null
+  /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
+  const examPreset = resolveExamMode(mode)
 
   // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
   const subjectId  = useSubjectStore((s) => s.subjectId)
@@ -62,6 +66,8 @@ export default function TestPage() {
       return questions.filter((q) => idSet.has(q.id))
     }
     const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
+    // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
+    if (examPreset) return shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
     switch (mode) {
       case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
       case 'mock':      return shuffled().slice(0, Math.min(20, questions.length)) // Mock imtihon — bilet formatida
@@ -190,8 +196,11 @@ export default function TestPage() {
     setShowResults(true)
   }, [])
 
-  // Exam mode: 40 questions / 30 minutes — like the real test
+  // Exam mode: 40 questions / 30 minutes — like the real test.
+  // Rasmiy preset: muddat shared/exam-presets'dan (45sav/180daq, 50sav/120daq).
+  // Pause YO'Q — timer wall-clock (useTimer), background'da ham yuradi.
   const totalSeconds =
+    examPreset            ? examPreset.durationMinutes * 60 :
     mode === 'exam'        ? 30 * 60 :
     mode === 'mock'        ? 25 * 60 :
     mode === 'random100'   ? 120 * 60 :
@@ -346,6 +355,21 @@ export default function TestPage() {
       status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as QuestionResult['status'],
     })),
     [activeQuestions, answers]
+  )
+
+  /** Rasmiy imtihon yakuni — mavzular kesimida diagnostika (eng zaif birinchi) */
+  const topicBreakdown = useMemo(() =>
+    buildTopicBreakdown(
+      activeQuestions.map((q, i) => ({
+        topicId: q.topicId,
+        status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as 'correct' | 'incorrect' | 'unanswered',
+      })),
+      storeTopics,
+      settings.language,
+      tt('topicGeneral'),
+    ),
+    // eslint-disable-next-line react-hooks/exhaustive-deps — tt til o'zgarishi bilan yangilanadi
+    [activeQuestions, answers, storeTopics, settings.language],
   )
 
   // Mock imtihon: 2+ xato — "yiqildingiz" (darhol yakunlanadi, bilet qoidasi)
@@ -585,6 +609,8 @@ export default function TestPage() {
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
           threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
+          hideVerdict={!!examPreset}
+          topicBreakdown={examPreset ? topicBreakdown : undefined}
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}

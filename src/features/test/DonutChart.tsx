@@ -4,8 +4,11 @@
  *  v2.1: animatsiyali arc + count-up foiz (premium reward tuyg'usi). */
 import { useEffect, useState } from 'react'
 
-export default function DonutChart({ correct, total, threshold = 90, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
-  correct: number; total: number; threshold?: number; passedLabel?: string; failedLabel?: string
+export default function DonutChart({ correct, total, threshold = 90, hideVerdict = false, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
+  correct: number; total: number; threshold?: number
+  /** Rasmiy preset rejimda mezon yo'q — foiz neytral rangda, verdict ko'rinmaydi */
+  hideVerdict?: boolean
+  passedLabel?: string; failedLabel?: string
 }) {
   const r             = 52
   const cx            = 70
@@ -56,10 +59,14 @@ export default function DonutChart({ correct, total, threshold = 90, passedLabel
         )}
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className={`text-4xl font-black tabular-nums ${passed ? 'text-duo-green' : 'text-duo-red'}`}>{shownPct}%</span>
-        <span className="text-sm font-bold mt-0.5 text-subtle">
-          {passed ? passedLabel : failedLabel}
-        </span>
+        <span className={`text-4xl font-black tabular-nums ${
+          hideVerdict ? 'text-fg' : passed ? 'text-duo-green' : 'text-duo-red'
+        }`}>{shownPct}%</span>
+        {!hideVerdict && (
+          <span className="text-sm font-bold mt-0.5 text-subtle">
+            {passed ? passedLabel : failedLabel}
+          </span>
+        )}
       </div>
     </div>
   )

@@ -6,16 +6,21 @@ import { shareUrl } from '../../lib/telegram'
 import { playSound } from '../../lib/sounds'
 import Confetti from '../../components/Confetti'
 import DonutChart from './DonutChart'
+import type { TopicBreakdownItem } from './topic-diagnosis'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
 
-export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, threshold = 90 }: {
+export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, threshold = 90, hideVerdict = false, topicBreakdown }: {
   results: QuestionResult[]
   onRetry: () => void
   onFinish: () => void
   onGoToQuestion: (i: number) => void
   /** o'tish foizi — exam rejimida 90 (haqiqiy imtihon), qolganida 80 */
   threshold?: number
+  /** Rasmiy preset (milliy-sertifikat/attestatsiya): o'tdi/o'tmadi mezonsiz — faqat natija */
+  hideVerdict?: boolean
+  /** Yakunda mavzular kesimida diagnostika (rasmiy imtihon presetlarida) */
+  topicBreakdown?: TopicBreakdownItem[]
 }) {
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
@@ -30,12 +35,13 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
 
   return (
     <div className="fixed inset-0 z-50 flex items-end">
-      {passed && <Confetti />}
+      {passed && !hideVerdict && <Confetti />}
       <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" />
       <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
-        <DonutChart correct={correct} total={total} threshold={threshold} passedLabel={tt('passed')} failedLabel={tt('failed')} />
+        <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict}
+          passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5">
           <div className="rounded-2xl p-3 text-center border" style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', borderColor: 'rgb(var(--p-primary-rgb) / 0.30)' }}>
@@ -54,6 +60,33 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
             <p className="text-[11px] font-bold text-subtle mt-1">{tt('unanswered')}</p>
           </div>
         </div>
+
+        {/* Mavzular kesimida diagnostika — rasmiy imtihon presetlarida.
+            Eng zaif mavzu yuqorida: nima takrorlash kerak darhol ko'rinadi. */}
+        {topicBreakdown && topicBreakdown.length > 0 && (
+          <div className="mb-5">
+            <p className="text-sm font-bold mb-2">{tt('topicBreakdownTitle')}</p>
+            <div className="flex flex-col gap-2">
+              {topicBreakdown.map((t) => {
+                const color = t.pct >= 70 ? 'var(--p-success)' : t.pct >= 40 ? 'var(--p-warning)' : 'var(--p-danger)'
+                return (
+                  <div key={t.topicId ?? -1}>
+                    <div className="flex items-baseline justify-between gap-2 mb-1">
+                      <p className="text-[12.5px] font-bold text-fg truncate">{t.name}</p>
+                      <p className="text-[11px] font-bold text-muted flex-shrink-0 tabular-nums">
+                        {t.correct}/{t.total} · {t.pct}%
+                      </p>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-elevated overflow-hidden">
+                      <div className="h-full rounded-full transition-all duration-700"
+                        style={{ width: `${t.pct}%`, background: color }} />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        )}
 
         <p className="text-sm font-bold mb-3">{tt('question')}</p>
         <div className="grid grid-cols-8 gap-1.5 mb-6">

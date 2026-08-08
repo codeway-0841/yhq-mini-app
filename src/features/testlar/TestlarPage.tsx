@@ -12,6 +12,8 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../lib/navigation'
+import { SUBJECT_BASES } from '../../../shared/subjects'
+import { getExamPreset } from '../../../shared/exam-presets'
 
 type Diff = 'easy' | 'mid' | 'hard'
 type TKey = Parameters<ReturnType<typeof useT>>[0]
@@ -42,6 +44,22 @@ export default function TestlarPage() {
     hard: { label: tt('diffHard'), color: '#ef4444' },
   }
 
+  // Rasmiy imtihon simulyatori — fan konfigidan (shared/subjects.ts examPresets).
+  // YHQ: o'z 'mock' + 'exam' formatlari bor (quyida); qolgan fanlar: preset kartalari.
+  const subjectBase = SUBJECT_BASES.find((s) => s.id === subjectId)
+  const examPresetCards: ModeCard[] = (subjectBase?.examPresets ?? []).flatMap((pid) => {
+    const p = getExamPreset(pid)
+    if (!p) return []
+    const titleKey = pid === 'milliy-sertifikat' ? 'examPresetMilliy' : 'examPresetAttestatsiya'
+    // 120 daqiqa → "2 soat", 180 → "3 soat" (soatga karrali muddatlar)
+    const timeMeta = p.durationMinutes % 60 === 0
+      ? `${p.durationMinutes / 60} ${tt('hourWord')}`
+      : `${p.durationMinutes} ${tt('minWord')}`
+    return [{ id: `exam:${p.id}`, iconBox: 'cap' as const, numText: String(p.questionCount),
+      titleKey: titleKey as TKey,
+      meta: `${p.questionCount} ${tt('question').toLowerCase()} · ${timeMeta}`, diff: 'hard' as const }]
+  })
+
   const cards: ModeCard[] = [
     { id: 'speed',     iconBox: 'zap',
       titleKey: 'speedTitle', meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' },
@@ -51,8 +69,11 @@ export default function TestlarPage() {
       titleKey: 't100',    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' },
     { id: 'random20',  iconBox: 'zap',
       titleKey: 't20',     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' },
-    { id: 'exam',      iconBox: 'cap',
-      titleKey: 'realExam', meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' },
+    // YHQ: mavjud generic realExam; qolgan fanlar: rasmiy preset kartalari (config'dan)
+    ...(subjectId === 'yhq'
+      ? [{ id: 'exam',  iconBox: 'cap' as const,
+           titleKey: 'realExam' as const, meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' as const }]
+      : examPresetCards),
     // Mock imtihon FAQAT YHQ uchun (rasmiy bilet formati) — boshqa fanlarda ko'rinmaydi
     ...(subjectId === 'yhq'
       ? [{ id: 'mock',  iconBox: 'cap' as const,        danger: true,

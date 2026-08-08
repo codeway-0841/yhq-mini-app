@@ -29,6 +29,9 @@ const UZ = {
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
   mockExam: "Mock imtihon", mockFailInfo: "2 xato = yiqildingiz",
   diffHard: "Qiyin", minWord: "daqiqa", speedTitle: "Speed Round ⚡", speedSec: "soniya",
+  // Rasmiy imtihon simulyatori preset'lari (shared/exam-presets)
+  examPresetMilliy: "Milliy sertifikat", examPresetAttestatsiya: "Attestatsiya",
+  hourWord: "soat", topicGeneral: "Umumiy", topicBreakdownTitle: "Mavzular kesimida",
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   mistakeFixDesc: "Xato tuzatish",
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
@@ -191,6 +194,9 @@ const RU: Record<Keys, string> = {
   examDesc: "Симулятор реального экзамена", diffEasy: "Легко", diffMid: "Средне",
   mockExam: "Пробный экзамен", mockFailInfo: "2 ошибки = не сдано",
   diffHard: "Сложно", minWord: "минут", speedTitle: "Speed Round ⚡", speedSec: "сек",
+  // Режимы официального экзамена (shared/exam-presets)
+  examPresetMilliy: "Национальный сертификат", examPresetAttestatsiya: "Аттестация",
+  hourWord: "часа", topicGeneral: "Общие", topicBreakdownTitle: "По темам",
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   mistakeFixDesc: "Исправь ошибки",
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
