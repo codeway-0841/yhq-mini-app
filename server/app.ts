@@ -41,7 +41,7 @@ export function createApp() {
   // ── Global middleware ────────────────────────────────────────────────────
   app.use(requestLogger)
   app.use(cors({
-    origin:  config.server.allowedOrigin,
+    origin:  config.server.allowedOrigins,
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   }))
   app.use(express.json({ limit: '16kb' }))

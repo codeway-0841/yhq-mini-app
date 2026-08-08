@@ -25,8 +25,11 @@ src/
     i18n/          #     Tarjimalar (index.ts) — useT / t
     hooks/         #     useCountUp, usePullToRefresh
     config/        #     subjects.tsx (UI_MAP), themes.ts, achievements.ts, index.ts (runtime env)
-  platform/        #   window.Telegram YAGONA kirish nuqtasi (telegram.ts, haptics.ts) — Capacitor port shu yerdan
+  platform/        #   window.Telegram + Capacitor YAGONA kirish nuqtasi:
+                   #     telegram.ts (WebApp), haptics.ts, native.ts (APK: yagona back, splash)
   content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs + lessonMap.yhq.json
+capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle)
+android/           #   Generate qilingan native loyiha — APK build uchun Android SDK kerak (gradlew)
 server/
   config/
     subjects.ts    #   SubjectRegistry — shared'dan derive, ESKI soddalashtirmang
@@ -52,13 +55,18 @@ npm run db:seed:explanations  # statik savol tushuntirishlari seed (idempotent)
 npx tsx server/set-admin.ts   # admin huquqi: ro'yxat | <id> [true|false]
 npx tsc -p tsconfig.json --noEmit        # frontend typecheck
 npx tsc -p tsconfig.server.json --noEmit # backend typecheck
+npx cap sync android       # dist → android/ web asset yangilash (build DAN KEYIN)
+cd android && gradlew assembleDebug  # Debug APK → app/build/outputs/apk/debug/ (Android SDK + Java 17-21; JBR 25'da Gradle 8.14 xato)
 ```
+
+APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
+(`VITE_API_BASE_URL`, `VITE_WS_URL` — na'muna `.env.example`da).
 
 ## Qoidalar
 
 1. **Yangi fan qo'shish:** `shared/subjects.ts` ga 1 element + `src/shared/config/subjects.tsx` dagi `UI_MAP` ga 1 yozuv. Boshqa joyga TEGMANG.
 1a. **Frontend qatlam chegaralari:** `src/shared/` va `src/platform/` HECH QACHON `features/` yoki `content/`ga import qilmaydi (yuqoriga qaram = inverted dep); `content/` sof statik ma'lumot (kod import qilmaydi); feature → BOSHQA feature FAQAT maqsad feature'ning `index.ts` barrel'i orqali. Buzilishni `tests/unit/config/import-boundaries.test.ts` ushlaydi.
-1b. **Telegram/WebView API:** `window.Telegram` ga FAQAT `src/platform/` dan murojaat. Yangi Telegram API kerak bo'lsa — avval `src/platform/telegram.ts` (yoki `haptics.ts`) ga xavfsiz wrapper qo'shing (brauzer fallback bilan). Kelajakdagi Capacitor/Android port shu qatlam orqali qilinadi.
+1b. **Telegram/WebView API:** `window.Telegram` ga FAQAT `src/platform/` dan murojaat. Yangi Telegram API kerak bo'lsa — avval `src/platform/telegram.ts` (yoki `haptics.ts`) ga xavfsiz wrapper qo'shing (brauzer fallback bilan). Capacitor/Android (APK) plug-in'lari — FAQAT `native.ts` orqali (brauzerda no-op).
 2. **Yangi fan BAZASI:** provider yozing (`server/providers/`), PROVIDERS map'ga qo'shing, `shared/subjects.ts` da `dataSourceId` ni almashtiring + migratsiyada `question_banks` ga yangi qator (`INSERT ... ON CONFLICT DO NOTHING`, id = dataSourceId). Savolning canonical identity'si: `(bank_id, external_id)` — har qanday insert `externalId` ni aniq berishi SHART (`uq_question_external`).
 3. **API validation:** barcha yangi endpoint'da zod schema (`server/middleware/validate.ts` pattern'i).
 3a. **Imtihon preset'lari:** `shared/exam-presets.ts` — YAGONA MANBA (savol soni/muddat), fanga bog'lash — `shared/subjects.ts` dagi `examPresets`. Desync'ni `tests/unit/config/exam-presets.test.ts` ushlaydi.

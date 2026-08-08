@@ -33,7 +33,8 @@ const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
 
-import { getStartParam, getTelegramUser, readyAndExpand, bindBackButton } from './platform/telegram'
+import { getStartParam, getTelegramUser, readyAndExpand } from './platform/telegram'
+import { bindAppBackButton, hideSplashScreen } from './platform/native'
 
 function Layout() {
   const location = useLocation()
@@ -57,10 +58,9 @@ function Layout() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Telegram BackButton — ilova ICHIDAGI orqaga navigatsiya.
-  // U boshqarilmasa, "Back" bosilganda Mini App yopilib ketadi.
+  // Platforma "orqaga" tugmasi — Telegram'da TG BackButton, APK'da hardware back.
   // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
-  useEffect(() => bindBackButton(!atHome, () => window.history.back()), [atHome])
+  useEffect(() => bindAppBackButton(!atHome, () => window.history.back()), [atHome])
 
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
@@ -125,6 +125,12 @@ function ThemeEffect() {
 export default function App() {
   const syncFromServer = useAppStore((s) => s.syncFromServer)
   const initialized    = useAppStore((s) => s.initialized)
+
+  // APK native splash — ilova o'z initini (initialized=true) bitkazgach yashiriladi.
+  // Web/Telegram'da no-op. Ilgarigi JSX splash'dan native splash'ga uzluksiz o'tish.
+  useEffect(() => {
+    if (initialized) hideSplashScreen()
+  }, [initialized])
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {
     try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }

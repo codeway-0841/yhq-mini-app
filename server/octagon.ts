@@ -506,7 +506,7 @@ export function attachOctagon(
     // (env yo'q bo'lsa deny-all bo'lib qolmasligi uchun explicit flag).
     if (config.isProd && config.server.allowedOriginExplicit) {
       const origin = req.headers.origin
-      if (origin !== config.server.allowedOrigin) {
+      if (!origin || !config.server.allowedOrigins.includes(origin)) {
         ws.close(1008, 'origin_not_allowed')
         return
       }
