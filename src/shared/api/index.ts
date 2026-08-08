@@ -1,6 +1,9 @@
 import { config } from '../config'
 import { getInitData } from '../../platform/telegram'
-import { FullProfileSchema } from '../../../shared/contracts/profile'
+import { getSessionToken, notifySessionExpired } from '../lib/session'
+import {
+  FullProfileSchema, AuthSessionSchema, AuthResponseSchema, LinkResponseSchema,
+} from '../../../shared/contracts/profile'
 
 const BASE = config.apiBaseUrl
 const TIMEOUT_MS = 8000
@@ -39,8 +42,16 @@ function timeoutSignal(ms: number): AbortSignal {
 async function request<T>(method: string, path: string, body?: unknown): Promise<T> {
   const headers: Record<string, string> = {}
   if (body) headers['Content-Type'] = 'application/json'
+  // Auth credential TANLOVI: initData (Mini App) USTUVOR — ikkalovidan FAQAT biri
+  // yuboriladi (server dual-auth). initData yo'q bo'lsa Bearer session token.
+  let sentBearer = false
   const initData = getInitData()
-  if (initData) headers['x-telegram-init-data'] = initData
+  if (initData) {
+    headers['x-telegram-init-data'] = initData
+  } else {
+    const token = getSessionToken()
+    if (token) { headers['Authorization'] = `Bearer ${token}`; sentBearer = true }
+  }
 
   const res = await fetch(`${BASE}${path}`, {
     method,
@@ -49,6 +60,9 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
     signal: timeoutSignal(TIMEOUT_MS),
   })
   if (!res.ok) {
+    // Bearer bilan yuborilgan so'rov 401 qaytardi → sessiya eskirgan/revoke:
+    // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').
+    if (sentBearer && res.status === 401) notifySessionExpired()
     const text = await res.text().catch(() => res.statusText)
     // Server { error: '<code>' } JSON qaytarsa — typed code sifatida chiqaramiz
     let code: string | undefined
@@ -71,6 +85,21 @@ function parseProfile(raw: unknown): FullProfile {
   }
   return parsed.data as FullProfile
 }
+
+/** Auth javoblarini tekshirishda umumiy yordamchi (contract drift himoyasi). */
+function parseWith<T>(schema: { safeParse: (raw: unknown) => { success: boolean; data?: unknown; error?: { issues: { message: string }[] } } }, label: string) {
+  return (raw: unknown): T => {
+    const parsed = schema.safeParse(raw)
+    if (!parsed.success) {
+      throw new ApiError(0, `${label} contract buzilgan: ${parsed.error?.issues[0]?.message ?? 'unknown'}`, 'bad_response')
+    }
+    return parsed.data as T
+  }
+}
+
+const parseAuthSession  = parseWith<AuthSession>(AuthSessionSchema,  'auth session')
+const parseAuthResponse = parseWith<AuthResponse>(AuthResponseSchema, 'auth response')
+const parseLinkResponse = parseWith<LinkResponse>(LinkResponseSchema, 'link response')
 
 export interface ApiUser {
   id: string
@@ -111,6 +140,33 @@ export interface FullProfile {
   settings: ApiSettings
   /** Composite kalitlar: `${subjectId}:${questionId}` ('yhq:123') — multi-fan identity */
   savedQuestions: string[]
+}
+
+/** GET /auth/me javobi — FullProfile + ulangan login usullari ro'yxati. */
+export interface AuthSession extends FullProfile {
+  providers: ('telegram' | 'phone')[]
+}
+
+/** Login/register javobi — sessiya + to'liq profil (warm hydrate uchun). */
+export interface AuthResponse extends AuthSession {
+  /** Opaque Bearer token — localStorage'da (shared/lib/session) saqlanadi */
+  sessionToken: string
+}
+
+/** POST /auth/phone/link javobi — 'adopted' bo'lsa user.id o'zgargan bo'lishi mumkin. */
+export interface LinkResponse extends AuthResponse {
+  status: 'attached' | 'adopted'
+}
+
+/** Telegram Login Widget callback maydonlari (initData'dan FARQLI format). */
+export interface TelegramWidgetFields {
+  id: number | string
+  first_name: string
+  last_name?: string
+  username?: string
+  photo_url?: string
+  auth_date: number | string
+  hash: string
 }
 
 /**
@@ -156,6 +212,32 @@ export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
 }
 
 export const api = {
+  // ── Auth (multi-provider: telefon+parol / TG Login Widget) ───────────────
+  registerPhone: (data: { phone: string; password: string; firstName: string }) =>
+    request<unknown>('POST', '/auth/phone/register', data).then(parseAuthResponse),
+
+  loginPhone: (data: { phone: string; password: string }) =>
+    request<unknown>('POST', '/auth/phone/login', data).then(parseAuthResponse),
+
+  loginTelegramWidget: (fields: TelegramWidgetFields) =>
+    request<unknown>('POST', '/auth/telegram', fields).then(parseAuthResponse),
+
+  /** Bearer sessiya bilan warm start — profile + providers. */
+  getAuthMe: () =>
+    request<unknown>('GET', '/auth/me').then(parseAuthSession),
+
+  /** Offline'da ham lokal reset bo'lishi uchun xato yutuvchi. */
+  logout: () =>
+    request<{ ok: true }>('POST', '/auth/logout', {}).catch(() => ({ ok: true as const })),
+
+  /** Joriy akkauntga telefon raqam ulash (parol = proof of ownership). */
+  linkPhone: (data: { phone: string; password: string; firstName?: string }) =>
+    request<unknown>('POST', '/auth/phone/link', data).then(parseLinkResponse),
+
+  /** Telefon sessiyasidan Telegram'ga ulash uchun bot deep-link kodi (10 daq). */
+  createTelegramLinkCode: () =>
+    request<{ code: string; url: string | null; expiresInMinutes: number }>('POST', '/auth/tg-link-code', {}),
+
   init: (data: {
     id: string
     first_name: string

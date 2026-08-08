@@ -10,9 +10,18 @@ import { config }         from '../../../shared/config'
 import { track }          from '../../../shared/lib/analytics'
 import { playSound }      from '../../../shared/lib/sounds'
 import { getInitData }    from '../../../platform/telegram'
+import { getSessionToken } from '../../../shared/lib/session'
 import { duelReducer, DUEL_INIT } from '../duel-reducer'
 
 interface DuelUser { id: string; firstName: string }
+
+/** WS auth credential: initData (Mini App) USTUVOR, bo'lmasa Bearer sessiya tokeni. */
+function wsAuthFields(): { initData?: string; sessionToken?: string } {
+  const initData = getInitData()
+  if (initData) return { initData }
+  const sessionToken = getSessionToken()
+  return sessionToken ? { sessionToken } : {}
+}
 
 export function useDuelConnection(user: DuelUser | null | undefined) {
   const location = useLocation()
@@ -74,14 +83,14 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       if (st === 'failed' && phaseRef.current === 'searching') dispatch({ type: 'CANCEL' })
       const u = userRef.current
       if (st !== 'open' || !u) return
-      const initData = getInitData()
+      const auth = wsAuthFields()
       try {
         // Server drops the queue entry when the old socket dies — rejoin silently.
         if (phaseRef.current === 'searching') {
-          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(duelCodeRef.current ? { duelCode: duelCodeRef.current } : {}), ...(initData ? { initData } : {}) })
+          sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(duelCodeRef.current ? { duelCode: duelCodeRef.current } : {}), ...auth })
         } else if ((phaseRef.current === 'in_round' || phaseRef.current === 'matched') && matchIdRef.current) {
           // Mid-match reconnect within the server grace window — state resyncs.
-          sock.send({ type: 'rejoin', matchId: matchIdRef.current, userId: u.id, name: u.firstName, ...(initData ? { initData } : {}) })
+          sock.send({ type: 'rejoin', matchId: matchIdRef.current, userId: u.id, name: u.firstName, ...auth })
         }
       } catch { /* next status change retries */ }
     })
@@ -142,14 +151,13 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     track('duel_start', { subject: subjectRef.current, duel: Boolean(withDuel || duelCodeRef.current) })
     dispatch({ type: 'SEARCHING' })
     try {
-      const initData = getInitData()
       getOctagonSocket(config.wsUrl).send({
         type: 'join_queue',
         userId: user.id,
         name: user.firstName,
         subjectId: subjectRef.current,
         ...((withDuel ?? duelCodeRef.current) ? { duelCode: withDuel ?? duelCodeRef.current! } : {}),
-        ...(initData ? { initData } : {}),
+        ...wsAuthFields(),
       })
     } catch {
       dispatch({ type: 'CANCEL' })

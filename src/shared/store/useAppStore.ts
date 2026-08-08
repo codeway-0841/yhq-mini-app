@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { api, type ApiUser, type ApiProgress, type ApiSettings } from '@/shared/api'
+import { api, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
 import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
@@ -52,6 +52,12 @@ interface AppState {
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
+  /**
+   * Serverdan kelgan TO'LIQ profilni (init / /auth/me / login / link javobi)
+   * store'ga bir setState'da qo'llaydi — TG init va auth yo'llari BIR XIL
+   * mapping'ni ishlatadi (desync xavfi yo'q).
+   */
+  hydrateFromProfile: (data: FullProfile) => void
   resetAccount:   () => void
 }
 
@@ -221,6 +227,18 @@ export const useAppStore = create<AppState>()(
           })
         }
       },
+
+      hydrateFromProfile: (data) => set({
+        user:           data.user,
+        tariff:         data.user.tariff,
+        settings:       data.settings,
+        streak:         data.progress.streak,
+        totalCorrect:   data.progress.totalCorrect,
+        totalWrong:     data.progress.totalWrong,
+        totalAnswered:  data.progress.totalAnswered,
+        wrongByTicket:  data.progress.wrongByTicket,
+        savedQuestions: data.savedQuestions,
+      }),
 
       resetAccount: () => set({
         user: null,

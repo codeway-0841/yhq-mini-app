@@ -3,10 +3,13 @@ import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-route
 import { useAppStore } from './shared/store/useAppStore'
 import { useQuestionsStore } from './shared/store/useQuestionsStore'
 import { useSubjectStore } from './shared/store/useSubjectStore'
-import { ensureAccountOwner, resetAccountState } from './shared/store/account'
+import { ensureAccountOwner, resetAccountToLoggedOut } from './shared/store/account'
 import { api } from './shared/api'
 import { flushOutbox } from './shared/lib/outbox'
 import { track } from './shared/lib/analytics'
+import {
+  getSessionToken, SESSION_EXPIRED_EVENT, SESSION_CHANGED_EVENT,
+} from './shared/lib/session'
 import PageLoader from './shared/components/PageLoader'
 import { resolveAccent } from './shared/config/themes'
 import SplashScreen from './features/onboarding/SplashScreen'
@@ -32,6 +35,8 @@ const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
+// Auth (telefon+parol / TG Login Widget) — faqat initData'siz muhitda ko'rinadi
+const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
 
 import { getStartParam, getTelegramUser, readyAndExpand } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen } from './platform/native'
@@ -125,6 +130,23 @@ function ThemeEffect() {
 export default function App() {
   const syncFromServer = useAppStore((s) => s.syncFromServer)
   const initialized    = useAppStore((s) => s.initialized)
+  const user           = useAppStore((s) => s.user)
+  // Telegram Mini App muhiti butun sessiya davomida o'zgarmaydi — bir marta tekshiramiz
+  const [isTelegram]   = useState(() => Boolean(getTelegramUser()?.id))
+  // Bearer sessiya holati — set/clear event'lari orqali kuzatiladi (LoginPage render qarori)
+  const [hasSession, setHasSession] = useState(() => Boolean(getSessionToken()))
+
+  // Session expire (401) → akkaunt reset + LoginPage; token set/clear → isAuthed yangilanadi
+  useEffect(() => {
+    const onExpired = () => { setHasSession(false); resetAccountToLoggedOut() }
+    const onChanged = () => setHasSession(Boolean(getSessionToken()))
+    window.addEventListener(SESSION_EXPIRED_EVENT, onExpired)
+    window.addEventListener(SESSION_CHANGED_EVENT, onChanged)
+    return () => {
+      window.removeEventListener(SESSION_EXPIRED_EVENT, onExpired)
+      window.removeEventListener(SESSION_CHANGED_EVENT, onChanged)
+    }
+  }, [])
 
   // APK native splash — ilova o'z initini (initialized=true) bitkazgach yashiriladi.
   // Web/Telegram'da no-op. Ilgarigi JSX splash'dan native splash'ga uzluksiz o'tish.
@@ -192,17 +214,8 @@ export default function App() {
       })
         .then(async (data) => {
           try {
-            useAppStore.setState({
-              user:           data.user,
-              tariff:         data.user.tariff,
-              settings:       data.settings,
-              streak:         data.progress.streak,
-              totalCorrect:   data.progress.totalCorrect,
-              totalWrong:     data.progress.totalWrong,
-              totalAnswered:  data.progress.totalAnswered,
-              wrongByTicket:  data.progress.wrongByTicket,
-              savedQuestions: data.savedQuestions,
-            })
+            // Mapping auth (Bearer) yo'li bilan BIR XIL — hydrateFromProfile
+            useAppStore.getState().hydrateFromProfile(data)
             await loadQuestions(data.settings.language).catch(() => {})
             void flushOutbox(verifiedId)
           } finally {
@@ -220,21 +233,40 @@ export default function App() {
           }
         })
     } else {
-      // GHOST USER HIMOYASI: brauzer preview haqiqiy akkaunt cache'ini ko'rmaydi.
-      resetAccountState()
-      useAppStore.setState({
-        user:           { id: '0', firstName: 'Foydalanuvchi', lastName: '', username: '', photoUrl: '', phone: undefined, tariff: 'free' },
-        tariff:         'free',
-        displayName:    null,
-        streak:         0,
-        totalCorrect:   0,
-        totalWrong:     0,
-        totalAnswered:  0,
-        wrongByTicket:  {},
-        savedQuestions: [],
-        initialized:    true,
-      })
-      loadQuestions('uz').catch(() => {})
+      // MEHMON REJIM YO'Q: initData'siz muhitda (APK/brauzer) Bearer sessiya tekshiriladi.
+      const sessionToken = getSessionToken()
+      if (!sessionToken) {
+        // Sessiya yo'q — toza login holati (oldingi akkaunt cache'i ko'rinmaydi)
+        resetAccountToLoggedOut()
+        // Savollar public endpoint — LoginPage bilan parallel yuklanadi
+        loadQuestions('uz').catch(() => {})
+      } else {
+        // Optimistik warm start: token + cache birga yoziladi (localStorage),
+        // shuning uchun cache'dagi user shu sessiyaga tegishli deb ishonamiz.
+        if (useAppStore.getState().user?.id) {
+          useAppStore.setState({ initialized: true })
+        }
+        api.getAuthMe()
+          .then(async (data) => {
+            try {
+              // Adopt-merge (p_ → telegram raqam id) almashinuvini ushlaymiz
+              ensureAccountOwner(data.user.id)
+              useAppStore.getState().hydrateFromProfile(data)
+              await loadQuestions(data.settings.language).catch(() => {})
+              void flushOutbox(data.user.id)
+            } finally {
+              useAppStore.setState({ initialized: true })
+            }
+          })
+          .catch(() => {
+            // 401: request() qatlami allaqachon session-expired event'ini tarqatdi
+            // (akkaunt reset + LoginPage). Network xato: offline fallback —
+            // cache'dagi profil bilan davom (outbox pattern bilan uyg'un).
+          })
+          .finally(() => {
+            useAppStore.setState({ initialized: true })
+          })
+      }
     }
     // Internet qaytganda outbox navbatini darhol yuborish
     const onOnline = () => {
@@ -259,6 +291,20 @@ export default function App() {
       <>
         <ThemeEffect />
         <SplashScreen />
+      </>
+    )
+  }
+
+  // Auth gate: Mini App (initData) YOKI Bearer sessiya YOKI hydrate bo'lgan cache user.
+  // Uchtalasi ham yo'q bo'lsa — LoginPage (mehmon rejim yo'q).
+  const isAuthed = isTelegram || hasSession || Boolean(user?.id)
+  if (!isAuthed) {
+    return (
+      <>
+        <ThemeEffect />
+        <Suspense fallback={<PageLoader />}>
+          <LoginPage />
+        </Suspense>
       </>
     )
   }

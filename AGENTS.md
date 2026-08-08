@@ -20,7 +20,8 @@ src/
   shared/          #   CANONICAL frontend shared qatlami (eski src/components|store|lib|hooks|config)
     components/    #     Toggle, SettingsModal, ErrorBoundary, PickerSheet, SubjectSheet, Confetti, ...
     store/         #     Zustand store'lar (persist middleware) — account.ts = YAGONA reset ro'yxati
-    lib/           #     analytics, outbox, sentry, sounds, navigation, spaced-repetition, test-session, ...
+    lib/           #     analytics, outbox, sentry, sounds, navigation, spaced-repetition, test-session,
+                   #     session (Bearer token store — 'yhq-session' localStorage + expired/changed event'lar), ...
     api/           #     HTTP client (index.ts) — har so'rovga initData header
     i18n/          #     Tarjimalar (index.ts) — useT / t
     hooks/         #     useCountUp, usePullToRefresh
@@ -62,7 +63,7 @@ cd android && gradlew assembleDebug  # Debug APK → app/build/outputs/apk/debug
 ```
 
 APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
-(`VITE_API_BASE_URL`, `VITE_WS_URL` — na'muna `.env.example`da).
+(`VITE_API_BASE_URL`, `VITE_WS_URL`, `VITE_BOT_USERNAME` — na'muna `.env.example`da).
 
 ## Qoidalar
 
@@ -77,7 +78,7 @@ APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
 6. **Testlar:** yangi feature/bugfix uchun `tests/` ga test qo'shing. Consistency testlar (masalan `tests/unit/config/subjects.test.ts`) konfig desync'larini ushlaydi.
 7. **Env var:** barcha `process.env` FAQAT `server/config/index.ts` dagi zod schema orqali o'qiladi. Yangi env kerak bo'lsa — avval schema'ga qo'shing, keyin `config` orqali oling.
 8. **Scoring trust boundary:** `GET /questions` HECH QACHON `correctAnswer` qaytarmaydi — client'da javob kaliti yo'q. Feedback FAQAT `POST /progress/:userId/result` javobidan (post-answer reveal) yoki Octagon `answer_ack` (`correctOptionId`) dan olinadi. To'liq qator kerak bo'lsa — `GET /api/admin/questions` (admin-only). `/result` idempotent: `clientToken` (`answer_tokens` jadvali) bilan.
-8a. **Auth (multi-provider):** login = Telegram Mini App initData YOKI telefon+parol YOKI TG Login Widget; sessiya = opaque token `sessions` jadvalida (JWT EMAS) → `Authorization: Bearer`. Canonical user id = TEXT (TG raqam-string yoki `p_<digits>`); INVARIANT: `('telegram', T)` identity doim `user_id = T` — initData middleware'si DB lookup'siz shunga tayanadi, shuning uchun har qanday TG merge yakuniy id sifatida TG raqam id'ni SAQLAYDI (PK RENAME, FK'lar `ON UPDATE CASCADE`). Parollar `crypto.scrypt` (utils/password). Account linking: bo'sh tomon absorb/rename qilinadi, IKKALA tomoni to'liq akkaunt merge'iga 409 (v2). Mehmon (auth'siz) rejim YO'Q. PII minimal; auth endpoint'lar qattiq rate-limit'langan.
+8a. **Auth (multi-provider):** login = Telegram Mini App initData YOKI telefon+parol YOKI TG Login Widget; sessiya = opaque token `sessions` jadvalida (JWT EMAS) → `Authorization: Bearer`. Canonical user id = TEXT (TG raqam-string yoki `p_<digits>`); INVARIANT: `('telegram', T)` identity doim `user_id = T` — initData middleware'si DB lookup'siz shunga tayanadi, shuning uchun har qanday TG merge yakuniy id sifatida TG raqam id'ni SAQLAYDI (PK RENAME, FK'lar `ON UPDATE CASCADE`). Parollar `crypto.scrypt` (utils/password). Account linking: bo'sh tomon absorb/rename qilinadi, IKKALA tomoni to'liq akkaunt merge'iga 409 (v2). Mehmon (auth'siz) rejim YO'Q. PII minimal; auth endpoint'lar qattiq rate-limit'langan. CLIENT: token — `src/shared/lib/session.ts` (`yhq-session` localStorage; 401 → `yhq:session-expired` event → `resetAccountToLoggedOut`); LoginPage — `src/features/auth/` (App.tsx boot gate: initData YOKI Bearer YOKI cache); linking UI — Profil `LinkAccountSection`; hydrate = `useAppStore.hydrateFromProfile` (TG init va auth yo'llari BIR XIL). Parolni almashtirish/"unutdim" oqimi — v2.
 9. **Kutubxona docs (Context7):** library/framework savollari va kod yozishdan OLDIN hujjatlarni Context7'dan oling — training data'ga tayanmang. Global opencode config'da `context7` MCP server sozlangan (`~/.config/opencode/opencode.jsonc`) — MCP tool'lari mavjud bo'lsa shularni ishlating:
    - `resolve-library-id` (libraryName + query) → rasmiy/eng yuqori trustScore'li `/owner/repo` ID'ni tanlang
    - `query-docs` (libraryId + bitta mavzu query)

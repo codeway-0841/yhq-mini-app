@@ -57,14 +57,24 @@ export const AuthSessionSchema = FullProfileSchema.extend({
   providers: z.array(z.enum(['telegram', 'phone'])),
 })
 
-/** POST /api/auth/(phone/register|phone/login|telegram|phone/link) javobi. */
+/** POST /api/auth/(phone/register|phone/login|telegram) javobi. */
 export const AuthResponseSchema = AuthSessionSchema.extend({
   /** Opaque Bearer token — localStorage'da saqlanadi, 401 da o'chiriladi */
   sessionToken: z.string().min(32),
 })
 
+/**
+ * POST /api/auth/phone/link javobi — AuthResponse + link natijasi:
+ * 'attached' (yangi identity no-op/bo'shga) yoki 'adopted' (adopt-merge:
+ * yakuniy user id o'zgarishi mumkin — client ensureAccountOwner chaqirishi shart).
+ */
+export const LinkResponseSchema = AuthResponseSchema.extend({
+  status: z.enum(['attached', 'adopted']),
+})
+
 export type AuthSessionContract  = z.infer<typeof AuthSessionSchema>
 export type AuthResponseContract = z.infer<typeof AuthResponseSchema>
+export type LinkResponseContract = z.infer<typeof LinkResponseSchema>
 
 export type ApiUserContract     = z.infer<typeof ApiUserSchema>
 export type ApiProgressContract = z.infer<typeof ApiProgressSchema>

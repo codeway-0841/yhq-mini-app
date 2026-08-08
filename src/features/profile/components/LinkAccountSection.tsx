@@ -1,0 +1,244 @@
+import { useCallback, useEffect, useState } from 'react'
+import { Check, Copy, LogOut, Phone, Send } from 'lucide-react'
+import { api, ApiError } from '../../../shared/api'
+import {
+  clearSessionToken, getSessionToken, setSessionToken,
+} from '../../../shared/lib/session'
+import { ensureAccountOwner, resetAccountToLoggedOut } from '../../../shared/store/account'
+import { useAppStore } from '../../../shared/store/useAppStore'
+import { getTelegramUser, openTelegramLink } from '../../../platform/telegram'
+import { useT } from '../../../shared/i18n'
+import { Section, Item } from './Section'
+import { authErrorKey, usePhoneInput } from '../../auth'
+
+type Provider = 'telegram' | 'phone'
+
+interface TgLinkCode { code: string; url: string | null; expiresInMinutes: number }
+
+/**
+ * "Hisobni bog'lash" bo'limi — provider'lar ro'yxati (/auth/me, mount'da 1 marta)
+ * va ikki yo'nalishli ulash:
+ *  - TG user → telefon qo'shish (parol o'rnatish/tasdiqlash → linkPhone);
+ *  - Telefon user → Telegram ulash (bot deep-link kodi, 10 daqiqa).
+ * Logout — FAQAT sessiya (Bearer) bilan kirganlarda (Mini App'da ko'rinmaydi).
+ */
+export function LinkAccountSection() {
+  const tt = useT(useAppStore((s) => s.settings.language))
+  const user = useAppStore((s) => s.user)
+  // Mini App'da "Chiqish" ko'rinmaydi (initData yo'li sessiyasiz)
+  const isTelegram = Boolean(getTelegramUser()?.id)
+  const hasSession = Boolean(getSessionToken())
+
+  const [providers, setProviders] = useState<Provider[] | null>(null)
+  const [busy, setBusy]     = useState(false)
+  const [error, setError]   = useState<string | null>(null)
+  const [okMsg, setOkMsg]   = useState<string | null>(null)
+
+  const refresh = useCallback(() => {
+    api.getAuthMe().then((d) => setProviders(d.providers)).catch(() => {})
+  }, [])
+  useEffect(() => { refresh() }, [refresh])
+
+  // ── Telefon qo'shish formasi (TG user) ────────────────────────────────────
+  const phone = usePhoneInput()
+  const [password, setPassword] = useState('')
+  const [phoneOpen, setPhoneOpen] = useState(false)
+
+  const submitPhoneLink = async () => {
+    if (busy || !phone.isValid || password.length < 8) return
+    setBusy(true)
+    setError(null)
+    setOkMsg(null)
+    try {
+      // Server har safar YANGI token qaytaradi; 'adopted' bo'lsa user.id
+      // o'zgarishi mumkin (p_… → telegram raqam id) — ensureAccountOwner SHART
+      const data = await api.linkPhone({ phone: phone.value, password })
+      setSessionToken(data.sessionToken)
+      ensureAccountOwner(data.user.id)
+      useAppStore.getState().hydrateFromProfile(data)
+      setProviders(data.providers)
+      setOkMsg(tt('authPhoneSetOk'))
+      setPhoneOpen(false)
+      setPassword('')
+    } catch (e) {
+      setError(
+        e instanceof ApiError && e.code === 'accounts_merge_required'
+          ? tt('authMergeConflict')
+          : tt(authErrorKey(e)),
+      )
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  // ── Telegram ulash kodi (telefon sessiyasi) ───────────────────────────────
+  const [tgLink, setTgLink] = useState<TgLinkCode | null>(null)
+  const [copied, setCopied] = useState(false)
+
+  const startTgLink = async () => {
+    if (busy) return
+    setBusy(true)
+    setError(null)
+    try {
+      const res = await api.createTelegramLinkCode()
+      setTgLink(res)
+      // url bor bo'lsa darhol botga o'tamiz; yo'q bo'lsa kod + qo'lda yo'riqnoma
+      if (res.url) openTelegramLink(res.url)
+    } catch {
+      setError(tt('authGenericError'))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  const copyCode = () => {
+    if (!tgLink) return
+    navigator.clipboard.writeText(tgLink.url ?? tgLink.code).catch(() => {})
+    setCopied(true)
+    setTimeout(() => setCopied(false), 1500)
+  }
+
+  // Bot'da tasdiqlab qaytganda (fokus qaytganda) — providers + profil yangilanadi
+  // (adopt-merge id almashinuvi bo'lsa hydrateFromProfile ushlab qoladi).
+  useEffect(() => {
+    if (!tgLink) return
+    const onFocus = () => {
+      api.getAuthMe()
+        .then((d) => {
+          ensureAccountOwner(d.user.id)
+          useAppStore.getState().hydrateFromProfile(d)
+          setProviders(d.providers)
+          if (d.providers.includes('telegram')) {
+            setTgLink(null)
+            setOkMsg(tt('authTgLinkedOk'))
+          }
+        })
+        .catch(() => {})
+    }
+    window.addEventListener('focus', onFocus)
+    return () => window.removeEventListener('focus', onFocus)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tgLink])
+
+  const handleLogout = () => {
+    if (!window.confirm(tt('authLogoutConfirm'))) return
+    void api.logout()           // catch yutuvchi — offline'da ham lokal reset ishlaydi
+    clearSessionToken()
+    resetAccountToLoggedOut()
+  }
+
+  if (!user) return null
+
+  const loadingRow = (
+    <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
+  )
+  const linkedRow = <span className="text-[12px] text-green-400">{tt('authLinked')}</span>
+
+  return (
+    <Section title={tt('authLinkAccount')}>
+      {/* ── Telegram provider ── */}
+      <Item
+        icon={Send}
+        label="Telegram"
+        right={
+          providers === null
+            ? loadingRow
+            : providers.includes('telegram')
+              ? linkedRow
+              : <span className="text-[12px] text-muted">{tt('authLinkTelegram')}</span>
+        }
+        onPress={providers?.includes('telegram') ? undefined : startTgLink}
+        disabled={busy || providers === null || providers.includes('telegram')}
+      />
+
+      {/* ── Telefon provider ── */}
+      <Item
+        icon={Phone}
+        label={tt('authPhone')}
+        right={
+          providers === null
+            ? loadingRow
+            : providers.includes('phone')
+              ? <span className="text-[12px] text-green-400">{user.phone ?? tt('authLinked')}</span>
+              : <span className="text-[12px] text-muted">{phoneOpen ? '–' : tt('authLinkPhone')}</span>
+        }
+        onPress={providers?.includes('phone') ? undefined : () => setPhoneOpen((o) => !o)}
+        disabled={busy || providers === null || providers.includes('phone')}
+      />
+
+      {/* Telefon ulash formasi (telefon provider hali bog'lanmagan) */}
+      {phoneOpen && providers !== null && !providers.includes('phone') && (
+        <div className="px-4 pb-3.5 flex flex-col gap-2 border-t border-line pt-3">
+          <div className="w-full bg-canvas border border-line rounded-xl px-3.5 flex items-center gap-2">
+            <span className="text-muted text-sm font-bold select-none">+998</span>
+            <input
+              value={phone.digits}
+              onChange={(e) => phone.setDigits(e.target.value)}
+              inputMode="numeric"
+              autoComplete="tel-national"
+              placeholder="90 123 45 67"
+              maxLength={11}
+              disabled={busy}
+              className="flex-1 min-w-0 bg-transparent outline-none py-3 text-sm text-fg placeholder:text-muted tracking-widest"
+            />
+          </div>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="new-password"
+            maxLength={72}
+            placeholder={`${tt('authPassword')} · ${tt('authPasswordHint')}`}
+            disabled={busy}
+            className="w-full bg-canvas border border-line rounded-xl px-3.5 py-3 text-sm text-fg placeholder:text-muted outline-none"
+          />
+          <button
+            type="button"
+            onClick={() => void submitPhoneLink()}
+            disabled={busy || !phone.isValid || password.length < 8}
+            className="btn-premium w-full py-2.5 rounded-xl text-[13px] font-bold flex items-center justify-center gap-2"
+          >
+            {busy && (
+              <span className="w-3.5 h-3.5 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />
+            )}
+            {tt('authLinkPhone')}
+          </button>
+        </div>
+      )}
+
+      {/* TG ulash kodi — bot'dan tasdiqlanadi */}
+      {tgLink && (
+        <div className="px-4 pb-3.5 border-t border-line pt-3 flex flex-col gap-2">
+          <p className="text-[11.5px] text-muted leading-snug">{tt('authLinkCodeHint')}</p>
+          <div className="flex items-center gap-2">
+            <code className="flex-1 bg-canvas border border-line rounded-lg px-2.5 py-2 text-[12px] text-fg truncate">
+              {tgLink.url ?? tgLink.code}
+            </code>
+            <button
+              type="button"
+              onClick={copyCode}
+              className="w-9 h-9 rounded-lg bg-elevated border border-line flex items-center justify-center active:scale-95 transition-transform"
+            >
+              {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} className="text-muted" />}
+            </button>
+          </div>
+          <p className="text-[10.5px] text-muted">{tt('authCodeExpires')}</p>
+        </div>
+      )}
+
+      {/* Xato / muvaffaqiyat xabarlari */}
+      {error && <p className="px-4 pb-3 text-[12px] font-semibold text-duo-red">{error}</p>}
+      {okMsg && <p className="px-4 pb-3 text-[12px] font-semibold text-green-400">{okMsg}</p>}
+
+      {/* ── Logout (faqat Bearer sessiya bilan kirganlarda) ── */}
+      {!isTelegram && hasSession && (
+        <Item
+          icon={LogOut}
+          iconColor="#ef4444"
+          label={tt('authLogout')}
+          onPress={handleLogout}
+        />
+      )}
+    </Section>
+  )
+}

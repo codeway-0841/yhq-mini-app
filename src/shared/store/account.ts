@@ -61,3 +61,14 @@ export function ensureAccountOwner(verifiedId: string): boolean {
   resetAccountState()
   return false
 }
+
+/**
+ * Logout / session-expire: account state tozalanadi va ilova DARHOL
+ * login ekraniga tayyor turadi (resetAccount initialized:false qiladi,
+ * lekin boot'dan TASHQARI UI-triggered reset'da Splash'da qotib qolmasligi
+ * uchun initialized qayta true o'rnatiladi).
+ */
+export function resetAccountToLoggedOut(): void {
+  resetAccountState()
+  useAppStore.setState({ initialized: true })
+}

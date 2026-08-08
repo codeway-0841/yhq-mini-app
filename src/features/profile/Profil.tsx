@@ -18,6 +18,7 @@ import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
 import { AchievementsSection } from './components/AchievementsSection'
+import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 
@@ -178,6 +179,9 @@ export default function Profil() {
           {tt('refBtn')}
         </button>
       </div>
+
+      {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
+      <LinkAccountSection />
 
       {/* ── YUTUQLAR (server metrikalari asosidagi badge'lar) ── */}
       <AchievementsSection lang={settings.language} tt={tt} userId={user?.id} />
