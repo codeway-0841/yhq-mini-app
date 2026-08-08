@@ -2,9 +2,9 @@ import { useState } from 'react'
 import {
   ChevronRight, ChevronLeft, Check, Clock3, Rocket,
 } from 'lucide-react'
-import { SUBJECTS } from '../../config/subjects'
-import { useSubjectStore } from '../../store/useSubjectStore'
-import { useAppStore } from '../../store/useAppStore'
+import { SUBJECTS } from '../../shared/config/subjects'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { useAppStore } from '../../shared/store/useAppStore'
 
 // ── Qadam indikatorlari ─────────────────────────────────────────────────────
 function Dots({ active }: { active: number }) {

@@ -12,7 +12,7 @@ import {
   DEFAULT_ACCENT,
   getAccentTheme,
   resolveAccent,
-} from '../../../src/config/themes'
+} from '../../../src/shared/config/themes'
 
 describe('config/themes — data integrity', () => {
   it("barcha id'lar unikal", () => {

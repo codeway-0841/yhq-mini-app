@@ -9,15 +9,15 @@
 import { useState } from 'react'
 import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft, Gift, Loader2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { api } from '../../lib/api'
-import { openTelegramLink } from '../../lib/telegram'
-import { ACCENT_THEMES } from '../../config/themes'
+import { api } from '../../shared/api'
+import { openTelegramLink } from '../../platform/telegram'
+import { ACCENT_THEMES } from '../../shared/config/themes'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PlanKey } from '../../../shared/premium-plans'
-import { playSound } from '../../lib/sounds'
-import { track } from '../../lib/analytics'
-import Confetti from '../../components/Confetti'
+import { playSound } from '../../shared/lib/sounds'
+import { track } from '../../shared/lib/analytics'
+import Confetti from '../../shared/components/Confetti'
 
 const BENEFITS = [
   { icon: Sparkles,  color: '#facc15', uz: 'Reklamasiz tajriba',          ru: 'Без рекламы' },

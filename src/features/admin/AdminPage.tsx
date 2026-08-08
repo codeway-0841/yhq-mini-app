@@ -1,10 +1,10 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { Plus, Pencil, Trash2, Search, X, Loader2, AlertTriangle } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { api, type AdminDbQuestion, type DbTopic } from '../../lib/api'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { api, type AdminDbQuestion, type DbTopic } from '../../shared/api'
 
 
 /** Faqat isAdmin foydalanuvchilariga ko'rinadigan sahifa.

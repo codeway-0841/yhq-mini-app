@@ -1,9 +1,9 @@
 /// <reference types="vite/client" />
-import './lib/sentry'   // birinchi bo'lib — barcha xatolarni yig'ishi uchun
+import './shared/lib/sentry'   // birinchi bo'lib — barcha xatolarni yig'ishi uchun
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import ErrorBoundary from './components/ErrorBoundary'
+import ErrorBoundary from './shared/components/ErrorBoundary'
 import './index.css'
 
 // Telegram WebView dastlabki yuklanishda #tgWebAppData=... hashini qo'shishi mumkin —
@@ -27,7 +27,7 @@ if (rootEl) {
 // Faqat "Oflayn rejim" yoqilgan bo'lsa ro'yxatga olinadi (Settings toggle endi haqiqiy ishlaydi).
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    import('./store/useAppStore').then(({ useAppStore }) => {
+    import('./shared/store/useAppStore').then(({ useAppStore }) => {
       const applySw = (enabled: boolean) => {
         if (enabled) {
           navigator.serviceWorker.register('/sw.js').catch(() => { /* some WebViews */ })

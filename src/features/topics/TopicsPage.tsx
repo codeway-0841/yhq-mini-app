@@ -1,19 +1,19 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
-import { useLessonsStore } from '../../store/useLessonsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
-import { modules } from '../../data/modules'
-import { lessons as lessonsData } from '../../data/lessons'
-import lessonMap from '../../data/lessonMap.yhq.json'
-import { goBack } from '../../lib/navigation'
+import { modules } from '../../content/modules'
+import { lessons as lessonsData } from '../../content/lessons'
+import lessonMap from '../../content/lessonMap.yhq.json'
+import { goBack } from '../../shared/lib/navigation'
 import { HeartCrack, Lock, Play, Check } from 'lucide-react'
 
 /** ── Dars-bobliq test (v1.1: CURATED mapping — runtime keyword emas!) ──────
  *
  *  Runtime da savollarni keyword bilan taxmin qilmaymiz — buning o'rniga
- *  `src/data/lessonMap.yhq.json` ichida manual curate qilingan DARS → questionIds
+ *  `src/content/lessonMap.yhq.json` ichida manual curate qilingan DARS → questionIds
  *  jadvalini o'qiymiz. Bu:
  *   ✓ deterministik: bir xil darsda bir xil test har doim
  *   ✓ haqiqiy: har savol manual review qilingan (tramvay kabi maxsuslar manual

@@ -11,11 +11,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Zap, Trophy, CalendarCheck2, HeartCrack } from 'lucide-react'
-import { goBack } from '../../lib/navigation'
-import { api, type DailyHistory } from '../../lib/api'
-import { useDailyStore, todayStr } from '../../store/useDailyStore'
-import { useAppStore } from '../../store/useAppStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
+import { goBack } from '../../shared/lib/navigation'
+import { api, type DailyHistory } from '../../shared/api'
+import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { useAppStore } from '../../shared/store/useAppStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */

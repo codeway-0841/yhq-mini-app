@@ -14,11 +14,19 @@ Telegram WebApp: Yo'l harakati qoidalari (+ kelajakda boshqa fanlar) uchun o'quv
 shared/            # Frontend ↔ backend UMUMIY kod (import ikkala tomondan)
   subjects.ts      #   Fanlar konfigi — YAGONA MANBA. Yangi fan FAQAT shu yerga!
 src/
-  features/        # Feature-based modullar (dashboard, octagon, lessons, ...)
-  config/
-    subjects.tsx   #   UI qatlami: ikonka/rang (shared/subjects.ts dagi id bo'yicha UI_MAP)
-  store/           # Zustand store'lar (persist middleware)
-  lib/             # api.ts (fetch wrapper), i18n, tutor SSE client
+  App.tsx          #   Router + providers (composition root)
+  features/<f>/    #   Feature modullar: Page + components/ + hooks/;
+                   #   boshqa feature'ga eksport KERAK bo'lsa — index.ts barrel (public API)
+  shared/          #   CANONICAL frontend shared qatlami (eski src/components|store|lib|hooks|config)
+    components/    #     Toggle, SettingsModal, ErrorBoundary, PickerSheet, SubjectSheet, Confetti, ...
+    store/         #     Zustand store'lar (persist middleware) — account.ts = YAGONA reset ro'yxati
+    lib/           #     analytics, outbox, sentry, sounds, navigation, spaced-repetition, test-session, ...
+    api/           #     HTTP client (index.ts) — har so'rovga initData header
+    i18n/          #     Tarjimalar (index.ts) — useT / t
+    hooks/         #     useCountUp, usePullToRefresh
+    config/        #     subjects.tsx (UI_MAP), themes.ts, achievements.ts, index.ts (runtime env)
+  platform/        #   window.Telegram YAGONA kirish nuqtasi (telegram.ts, haptics.ts) — Capacitor port shu yerdan
+  content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs + lessonMap.yhq.json
 server/
   config/
     subjects.ts    #   SubjectRegistry — shared'dan derive, ESKI soddalashtirmang
@@ -28,7 +36,7 @@ server/
                    #   readiness (/api/ready — DB ping), request-logger (JSON + X-Request-Id)
   octagon.ts       #   PvP duel (WebSocket, reconnect grace window)
 tests/
-  unit/            #   middleware, lib, utils, config
+  unit/            #   middleware, lib, utils, config, platform + import-boundaries (qatlam qoidalari)
   integration/     #   API + WebSocket (real Neon DB kerak — .env da DATABASE_URL)
 ```
 
@@ -48,7 +56,9 @@ npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 
 ## Qoidalar
 
-1. **Yangi fan qo'shish:** `shared/subjects.ts` ga 1 element + `src/config/subjects.tsx` dagi `UI_MAP` ga 1 yozuv. Boshqa joyga TEGMANG.
+1. **Yangi fan qo'shish:** `shared/subjects.ts` ga 1 element + `src/shared/config/subjects.tsx` dagi `UI_MAP` ga 1 yozuv. Boshqa joyga TEGMANG.
+1a. **Frontend qatlam chegaralari:** `src/shared/` va `src/platform/` HECH QACHON `features/` yoki `content/`ga import qilmaydi (yuqoriga qaram = inverted dep); `content/` sof statik ma'lumot (kod import qilmaydi); feature → BOSHQA feature FAQAT maqsad feature'ning `index.ts` barrel'i orqali. Buzilishni `tests/unit/config/import-boundaries.test.ts` ushlaydi.
+1b. **Telegram/WebView API:** `window.Telegram` ga FAQAT `src/platform/` dan murojaat. Yangi Telegram API kerak bo'lsa — avval `src/platform/telegram.ts` (yoki `haptics.ts`) ga xavfsiz wrapper qo'shing (brauzer fallback bilan). Kelajakdagi Capacitor/Android port shu qatlam orqali qilinadi.
 2. **Yangi fan BAZASI:** provider yozing (`server/providers/`), PROVIDERS map'ga qo'shing, `shared/subjects.ts` da `dataSourceId` ni almashtiring + migratsiyada `question_banks` ga yangi qator (`INSERT ... ON CONFLICT DO NOTHING`, id = dataSourceId). Savolning canonical identity'si: `(bank_id, external_id)` — har qanday insert `externalId` ni aniq berishi SHART (`uq_question_external`).
 3. **API validation:** barcha yangi endpoint'da zod schema (`server/middleware/validate.ts` pattern'i).
 3a. **Imtihon preset'lari:** `shared/exam-presets.ts` — YAGONA MANBA (savol soni/muddat), fanga bog'lash — `shared/subjects.ts` dagi `examPresets`. Desync'ni `tests/unit/config/exam-presets.test.ts` ushlaydi.
@@ -68,10 +78,10 @@ npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 ```
 src/index.css          # Tokenlar: --p-* (yangi) + --theme-* (legacy alias, ikkalasi sinxron)
 tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/pline/pfg/pmuted/psubtle/pprimary/ponprimary/pgold/ppurple/pblue/psuccess/pwarning/pdanger + duo.* (alias)
-src/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
+src/shared/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
 shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda)
-src/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
-src/components/Confetti.tsx  # Nishonlash confetti; src/hooks/useCountUp.ts — count-up animatsiya
+src/shared/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
+src/shared/components/Confetti.tsx  # Nishonlash confetti; src/shared/hooks/useCountUp.ts — count-up animatsiya
 ```
 
 - **Dark/light:** `body[data-theme]` (App.tsx `ThemeEffect`). **Aksent:** `body[data-accent]`.
@@ -81,7 +91,7 @@ src/components/Confetti.tsx  # Nishonlash confetti; src/hooks/useCountUp.ts — 
 ## Dizayn qoidalari (v2)
 
 8. **Rang intizomi:** ikonkalar NEYTRAL (`#94a3b8`). Aksent faqat: CTA, progress, active holat. Binafsha = AI/Premium. Semantik (success/warning/danger/gold) FAQAT ma'noli joylarda. Har joyni ranglamang!
-9. **Yangi tema:** FAQAT `src/config/themes.ts` ga 1 element + `src/index.css` ga 2 blok (`[data-theme='dark'][data-accent='<id>']` atmosfera + `[data-theme='light'][data-accent='<id>']` variant). `tests/unit/config/themes.test.ts` sinxronni tekshiradi. Boshqa joyga TEGMANG.
+9. **Yangi tema:** FAQAT `src/shared/config/themes.ts` ga 1 element + `src/index.css` ga 2 blok (`[data-theme='dark'][data-accent='<id>']` atmosfera + `[data-theme='light'][data-accent='<id>']` variant). `tests/unit/config/themes.test.ts` sinxronni tekshiradi. Boshqa joyga TEGMANG.
 10. **Premium gating:** tema tanlovini `resolveAccent(id, isPremium)` orqali qo'llang — free user HECH QACHON premium tema olib qolmasligi shart.
-11. **i18n:** yangi kalitlar FAQAT `src/lib/i18n.ts` ga — ham UZ, ham RU obyektiga (bittasi qolib ketsa tarjima tushib qoladi).
-12. **UI ovoz:** yangi tovush `src/lib/sounds.ts` dagi `playSound` kind'iga qo'shiladi; juda past volume (premium ASMR), AudioContext faqat user-gesture'dan keyin.
+11. **i18n:** yangi kalitlar FAQAT `src/shared/i18n/index.ts` ga — ham UZ, ham RU obyektiga (bittasi qolib ketsa tarjima tushib qoladi).
+12. **UI ovoz:** yangi tovush `src/shared/lib/sounds.ts` dagi `playSound` kind'iga qo'shiladi; juda past volume (premium ASMR), AudioContext faqat user-gesture'dan keyin.

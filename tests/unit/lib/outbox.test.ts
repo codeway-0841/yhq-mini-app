@@ -10,8 +10,8 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 // api modulini mock qilamiz — haqiqiy tarmoq chaqirig'i bo'lmasligi shart.
 // Partial mock: ApiError CLASS'ning haqiqiy identitetini saqlaymiz
 // (outbox instanceof tekshiruvi shunga bog'liq).
-vi.mock('../../../src/lib/api', async (importOriginal) => {
-  const actual = await importOriginal<typeof import('../../../src/lib/api')>()
+vi.mock('../../../src/shared/api', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../../../src/shared/api')>()
   return {
     ...actual,
     api: {
@@ -23,10 +23,10 @@ vi.mock('../../../src/lib/api', async (importOriginal) => {
   }
 })
 
-import { api } from '../../../src/lib/api'
+import { api } from '../../../src/shared/api'
 import {
   enqueueOutbox, flushOutbox, getOutboxEntries, getOutboxCount, setResultSyncHandler,
-} from '../../../src/lib/outbox'
+} from '../../../src/shared/lib/outbox'
 
 const memory = new Map<string, string>()
 const localStorageStub = {

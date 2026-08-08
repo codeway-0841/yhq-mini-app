@@ -6,14 +6,14 @@
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { X, Zap } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
-import { haptics } from '../../lib/haptics'
-import { playSound } from '../../lib/sounds'
-import ResultsModal, { type QuestionResult } from '../test/ResultsModal'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { haptics } from '../../platform/haptics'
+import { playSound } from '../../shared/lib/sounds'
+import { ResultsModal, type QuestionResult } from '../test'
 
 const TIME_LIMIT = 10   // soniya / savol
 const QUESTIONS  = 20

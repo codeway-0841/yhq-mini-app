@@ -5,13 +5,13 @@
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { BarChart2, Flame, Star, Target, TrendingUp, HeartCrack, ChevronLeft } from 'lucide-react'
-import { api, type DailyHistoryRow } from '../../lib/api'
+import { api, type DailyHistoryRow } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
-import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { useDailyStore, todayStr } from '../../store/useDailyStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { parseQuestionKey } from '../../../shared/subjects'
 
 const WEEK_UZ = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya']

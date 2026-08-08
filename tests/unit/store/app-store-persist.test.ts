@@ -6,8 +6,8 @@
  */
 
 import { describe, it, expect } from 'vitest'
-import { stripUserPii } from '../../../src/store/useAppStore'
-import type { ApiUser } from '../../../src/lib/api'
+import { stripUserPii } from '../../../src/shared/store/useAppStore'
+import type { ApiUser } from '../../../src/shared/api'
 
 const fullUser: ApiUser = {
   id:        '123456789',

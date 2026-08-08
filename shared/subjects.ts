@@ -2,7 +2,7 @@
  * Fanlar (subjects) — YAGONA MA'LUMOT MANBAI (frontend + backend umumiy).
  *
  * Yangi fan qo'shish uchun FAQAT shu ro'yxatga 1 element qo'shish kifoya:
- *   - Frontend (`src/config/subjects.tsx`) icon/color qatlamini shu yerdaq
+ *   - Frontend (`src/shared/config/subjects.tsx`) icon/color qatlamini shu yerdaq
  *     `id` bo'yicha ulaydi;
  *   - Backend (`server/config/subjects.ts`) registry'ni shu yerdan quradi.
  *

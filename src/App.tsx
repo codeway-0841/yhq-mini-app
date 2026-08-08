@@ -1,14 +1,14 @@
 import { useEffect, lazy, Suspense, useState } from 'react'
 import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom'
-import { useAppStore } from './store/useAppStore'
-import { useQuestionsStore } from './store/useQuestionsStore'
-import { useSubjectStore } from './store/useSubjectStore'
-import { ensureAccountOwner, resetAccountState } from './store/account'
-import { api } from './lib/api'
-import { flushOutbox } from './lib/outbox'
-import { track } from './lib/analytics'
-import PageLoader from './components/PageLoader'
-import { resolveAccent } from './config/themes'
+import { useAppStore } from './shared/store/useAppStore'
+import { useQuestionsStore } from './shared/store/useQuestionsStore'
+import { useSubjectStore } from './shared/store/useSubjectStore'
+import { ensureAccountOwner, resetAccountState } from './shared/store/account'
+import { api } from './shared/api'
+import { flushOutbox } from './shared/lib/outbox'
+import { track } from './shared/lib/analytics'
+import PageLoader from './shared/components/PageLoader'
+import { resolveAccent } from './shared/config/themes'
 import SplashScreen from './features/onboarding/SplashScreen'
 import Onboarding from './features/onboarding/Onboarding'
 
@@ -31,32 +31,9 @@ const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
 const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
-const NotFound        = lazy(() => import('./components/NotFound'))
+const NotFound        = lazy(() => import('./shared/components/NotFound'))
 
-type TelegramWindow = Window & {
-  Telegram?: {
-    WebApp?: {
-      ready(): void
-      expand(): void
-      BackButton?: {
-        show(): void
-        hide(): void
-        onClick(cb: () => void): void
-        offClick(cb: () => void): void
-      }
-      initDataUnsafe?: {
-        start_param?: string
-        user?: {
-          id: number
-          first_name: string
-          last_name?: string
-          username?: string
-          photo_url?: string
-        }
-      }
-    }
-  }
-}
+import { getStartParam, getTelegramUser, readyAndExpand, bindBackButton } from './platform/telegram'
 
 function Layout() {
   const location = useLocation()
@@ -72,7 +49,7 @@ function Layout() {
   //  1) startapp deep-link: ?startapp=duel-xxxx → start_param
   //  2) bot tugmasidan: URL'dagi ?duel=duel-xxxx query param
   useEffect(() => {
-    const sp = (window as TelegramWindow).Telegram?.WebApp?.initDataUnsafe?.start_param
+    const sp = getStartParam()
     const fromTg = sp?.startsWith('duel-') ? sp : undefined
     const fromQuery = new URLSearchParams(window.location.search).get('duel') ?? undefined
     const code = fromTg ?? (fromQuery?.startsWith('duel-') ? fromQuery : undefined)
@@ -83,15 +60,7 @@ function Layout() {
   // Telegram BackButton — ilova ICHIDAGI orqaga navigatsiya.
   // U boshqarilmasa, "Back" bosilganda Mini App yopilib ketadi.
   // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
-  useEffect(() => {
-    const bb = (window as TelegramWindow).Telegram?.WebApp?.BackButton
-    if (!bb) return
-    if (atHome) { bb.hide(); return } // Eslatma: `return bb.hide()` YOZILMAYDI — hide() object qaytaradi, React crash bo'ladi
-    const handler = () => window.history.back()
-    bb.show()
-    bb.onClick(handler)
-    return () => { bb.offClick(handler) }
-  }, [atHome])
+  useEffect(() => bindBackButton(!atHome, () => window.history.back()), [atHome])
 
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
@@ -172,8 +141,7 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    const tg     = (window as TelegramWindow).Telegram?.WebApp
-    if (tg) { tg.ready(); tg.expand() }
+    readyAndExpand()
 
     track('app_open')
 
@@ -186,7 +154,7 @@ export default function App() {
       }
     })
 
-    const tgUser = tg?.initDataUnsafe?.user
+    const tgUser = getTelegramUser()
 
     const loadQuestions = (lang: 'uz' | 'ru') =>
       useQuestionsStore.getState().load(lang)
@@ -206,7 +174,7 @@ export default function App() {
       // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link)
       const refQ = new URLSearchParams(window.location.search).get('ref')
       const startParam =
-        tg?.initDataUnsafe?.start_param ??
+        getStartParam() ??
         (refQ && /^\d{1,19}$/.test(refQ) ? `ref_${refQ}` : undefined)
       api.init({
         id:         String(tgUser.id),

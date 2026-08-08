@@ -1,8 +1,8 @@
 import { useMemo, useEffect, useRef } from 'react'
-import { useTestSessionStore } from '../../../store/useTestSessionStore'
-import { makeSessionKey, isResumable } from '../test-session'
+import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
+import { makeSessionKey, isResumable } from '../../../shared/lib/test-session'
 import { resolveExamMode } from '../../../../shared/exam-presets'
-import type { Question } from '../../../types'
+import type { Question } from '../../../shared/api'
 
 interface UseTestSessionParams {
   mode: string | null

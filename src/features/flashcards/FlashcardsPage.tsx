@@ -7,12 +7,12 @@
  */
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { ChevronLeft, RotateCcw, Check, X, Layers } from 'lucide-react'
-import { signCategories, getSignsByCategory } from '../../shared/data'
+import { signCategories, getSignsByCategory } from '../../content/signs'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { playSound } from '../../lib/sounds'
-import { haptics } from '../../lib/haptics'
+import { playSound } from '../../shared/lib/sounds'
+import { haptics } from '../../platform/haptics'
 
 interface Sign {
   id: string; name: string; shortName: string

@@ -6,7 +6,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   createCard, updateCard, pickNext,
-} from '../../../src/lib/spaced-repetition'
+} from '../../../src/shared/lib/spaced-repetition'
 
 describe('createCard', () => {
   it('creates a card with default EF 2.5 and dueAt 0', () => {

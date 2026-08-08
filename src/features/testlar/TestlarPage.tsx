@@ -7,11 +7,11 @@
 
 import { useNavigate } from 'react-router-dom'
 import { Zap, ClipboardCheck } from 'lucide-react'
-import { track } from '../../lib/analytics'
+import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
 

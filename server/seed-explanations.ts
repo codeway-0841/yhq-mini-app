@@ -14,8 +14,8 @@
 import 'dotenv/config'
 import { db } from './db/connection'
 import { questions, topics, questionExplanations } from './schema'
-import { MODULE_TOPICS } from '../src/data/modules'
-import { lessons } from '../src/data/lessons'
+import { MODULE_TOPICS } from '../src/content/modules'
+import { lessons } from '../src/content/lessons'
 
 // slug → modId (teskari map)
 const SLUG_TO_MODULE: Record<string, number> = {}

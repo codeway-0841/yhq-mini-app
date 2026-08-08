@@ -6,12 +6,12 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { ensureAccountOwner, resetAccountState, ACCOUNT_STORAGE_KEYS } from '../../../src/store/account'
-import { useAppStore }         from '../../../src/store/useAppStore'
-import { useDailyStore }       from '../../../src/store/useDailyStore'
-import { useAdaptiveStore }    from '../../../src/store/useAdaptiveStore'
-import { useTestSessionStore } from '../../../src/store/useTestSessionStore'
-import type { ApiUser } from '../../../src/lib/api'
+import { ensureAccountOwner, resetAccountState, ACCOUNT_STORAGE_KEYS } from '../../../src/shared/store/account'
+import { useAppStore }         from '../../../src/shared/store/useAppStore'
+import { useDailyStore }       from '../../../src/shared/store/useDailyStore'
+import { useAdaptiveStore }    from '../../../src/shared/store/useAdaptiveStore'
+import { useTestSessionStore } from '../../../src/shared/store/useTestSessionStore'
+import type { ApiUser } from '../../../src/shared/api'
 
 const userA: ApiUser = {
   id:        '111',

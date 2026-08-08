@@ -10,14 +10,14 @@
  */
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { HeartCrack, Play, ChevronRight, Flame } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore } from '../../store/useQuestionsStore'
-import { useSubjectStore } from '../../store/useSubjectStore'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
-import { openTelegramLink } from '../../lib/telegram'
+import { openTelegramLink } from '../../platform/telegram'
 import { Sparkles } from 'lucide-react'
 
 export default function XatolarPage() {

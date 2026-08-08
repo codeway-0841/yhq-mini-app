@@ -17,7 +17,7 @@ import {
   SUBJECTS,
   getSubject,
   DEFAULT_SUBJECT_ID as CLIENT_DEFAULT,
-} from '../../../src/config/subjects'
+} from '../../../src/shared/config/subjects'
 
 describe('shared/subjects — data integrity', () => {
   it("barcha id'lar unikal", () => {

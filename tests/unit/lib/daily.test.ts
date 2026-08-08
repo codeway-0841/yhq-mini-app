@@ -5,7 +5,7 @@
 
 import { describe, it, expect } from 'vitest'
 import { prevDate, calcNextStreak, effectiveStreak, calcBestStreak } from '../../../server/modules/daily/daily.repository'
-import { seededShuffle, hashSeed } from '../../../src/lib/seeded'
+import { seededShuffle, hashSeed } from '../../../src/shared/lib/seeded'
 
 describe('prevDate', () => {
   it('oddiy kun', () => {

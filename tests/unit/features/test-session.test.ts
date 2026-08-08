@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { makeSessionKey, isResumable, clampIndex, remainingSeconds, type TestSessionSnapshot } from '../../../src/features/test/test-session'
+import { makeSessionKey, isResumable, clampIndex, remainingSeconds, type TestSessionSnapshot } from '../../../src/shared/lib/test-session'
 
 describe('test-session utils', () => {
   describe('makeSessionKey', () => {

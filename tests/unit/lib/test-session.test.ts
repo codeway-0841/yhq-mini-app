@@ -7,7 +7,7 @@ import { describe, it, expect } from 'vitest'
 import {
   makeSessionKey, isResumable, remainingSeconds, clampIndex,
   type TestSessionSnapshot,
-} from '../../../src/features/test/test-session'
+} from '../../../src/shared/lib/test-session'
 
 const snap = (over: Partial<TestSessionSnapshot> = {}): TestSessionSnapshot => ({
   key:         'mode:exam',

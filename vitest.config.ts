@@ -20,7 +20,7 @@ export default defineConfig({
     retry: 2,
     coverage: {
       provider: 'v8',
-      include: ['src/lib/**', 'server/middleware/**', 'server/modules/**'],
+      include: ['src/shared/**', 'src/platform/**', 'server/middleware/**', 'server/modules/**'],
       exclude: ['**/*.test.ts'],
     },
   },

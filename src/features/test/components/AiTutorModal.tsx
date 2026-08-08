@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Crown, Loader2, GraduationCap, Info, Volume2 } from 'lucide-react'
-import { explainQuestion, fetchStaticExplanation, TutorError } from '../../../lib/tutor'
-import { openTelegramLink } from '../../../lib/telegram'
-import { speak } from '../../../lib/speech'
-import { playSound } from '../../../lib/sounds'
+import { explainQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
+import { openTelegramLink } from '../../../platform/telegram'
+import { speak } from '../../../shared/lib/speech'
+import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 

@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../lib/navigation'
+import { goBack } from '../../shared/lib/navigation'
 import { X, Search } from 'lucide-react'
-import { signCategories, getSignsByCategory } from '../../shared/data'
+import { signCategories, getSignsByCategory } from '../../content/signs'
 
 interface Sign {
   id: string; name: string; shortName: string
