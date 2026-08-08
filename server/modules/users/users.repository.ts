@@ -47,6 +47,8 @@ export const usersRepository = {
    * Alohida INSERT'larda bitta qadam muvaffaqiyatsiz bo'lsa user yarim
    * holatda qolardi; endi butun init atomik (va idempotent) bajariladi.
    * Return qilmaydi — qator zarur bo'lsa keyin `findById` bilan o'qing.
+   * (Telegram identity saqlash users.service.init'da — shu jadval provider'dan
+   * xabardor bo'lmasligi uchun: telefon userlar TG identity OLMAYDI.)
    */
   async initAtomic(input: CreateOrUpdateUserInput): Promise<void> {
     await db.execute(sql`

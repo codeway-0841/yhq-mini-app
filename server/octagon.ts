@@ -31,6 +31,7 @@ import { isAuthEnforced } from './middleware/auth'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
 import { getProvider } from './providers'
 import { progressRepository } from './modules/progress/progress.repository'
+import { authRepository } from './modules/auth/auth.repository'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -44,6 +45,28 @@ const RECONNECT_WINDOW_MS = 60_000  // raqib qaytish kutilishi (raqibga vaqt —
 
 /** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
 const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
+
+/** Canonical user id (Telegram raqam-string YOKI telefon akkaunt 'p_<digits>') */
+const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15})$/
+
+/**
+ * WS auth: client userId'siga HECH QACHON ishonilmaydi — faqat initData
+ * (Mini App) imzosi YOKI sessionToken (telefon+parol / TG widget sessiyasi,
+ * DB resolve) orqali aniqlangan id. Production'da ikkalasi ham yo'q bo'lsa null.
+ */
+async function resolveWsUserId(msg: Record<string, unknown>): Promise<string | null> {
+  const initData = String(msg.initData ?? '')
+  if (initData && config.telegram.botToken) {
+    const verified = verifyInitData(initData, config.telegram.botToken)
+    return verified ? String(verified.id) : null
+  }
+  const token = String(msg.sessionToken ?? '')
+  if (token) {
+    const session = await authRepository.resolveSession(token).catch(() => null)
+    return session?.userId ?? null
+  }
+  return null
+}
 
 // ── Connection hardening limitlari ─────────────────────────────────────────
 // Testlarda qisqartirilgan qiymatlar bilan attach qilinadi.
@@ -564,65 +587,64 @@ export function attachOctagon(
       }
 
       if (msg.type === 'rejoin') {
-        let uid = String(msg.userId ?? '')
-        if (isAuthEnforced()) {
-          const initData = String(msg.initData ?? '')
-          const verified = initData && config.telegram.botToken
-            ? verifyInitData(initData, config.telegram.botToken)
-            : null
-          if (!verified) {
-            send(ws, { type: 'error', message: 'auth_failed' })
-            ws.close(4001, 'Unauthorized')
-            return
+        void (async () => {
+          let uid = String(msg.userId ?? '')
+          if (isAuthEnforced()) {
+            const resolved = await resolveWsUserId(msg)
+            if (!resolved) {
+              send(ws, { type: 'error', message: 'auth_failed' })
+              ws.close(4001, 'Unauthorized')
+              return
+            }
+            uid = resolved
           }
-          uid = String(verified.id)
-        }
-        if (!markAuthed(uid)) return
-        if (!rejoinMatch(ws, uid)) {
-          send(ws, { type: 'error', message: 'rejoin_failed' })
-        }
+          if (!markAuthed(uid)) return
+          if (!rejoinMatch(ws, uid)) {
+            send(ws, { type: 'error', message: 'rejoin_failed' })
+          }
+        })()
         return
       }
 
       if (msg.type === 'join_queue') {
-        let uid = String(msg.userId ?? '')
-        const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
+        void (async () => {
+          let uid = String(msg.userId ?? '')
+          const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
 
-        // User must be authenticated in production — initData carries the signed id
-        if (isAuthEnforced()) {
-          const initData = String(msg.initData ?? '')
-          const verified = initData && config.telegram.botToken
-            ? verifyInitData(initData, config.telegram.botToken)
-            : null
-          if (!verified) {
-            send(ws, { type: 'error', message: 'auth_failed' })
-            ws.close(4001, 'Unauthorized')
+          // User must be authenticated in production — initData YOKI sessionToken
+          if (isAuthEnforced()) {
+            const resolved = await resolveWsUserId(msg)
+            if (!resolved) {
+              send(ws, { type: 'error', message: 'auth_failed' })
+              ws.close(4001, 'Unauthorized')
+              return
+            }
+            uid = resolved   // NEVER trust the client-supplied id
+          }
+
+          if (!WS_USER_ID_RE.test(uid)) {
+            send(ws, { type: 'error', message: 'invalid_user' })
             return
           }
-          uid = String(verified.id)   // NEVER trust the client-supplied id
-        }
 
-        if (!/^\d+$/.test(uid)) {
-          send(ws, { type: 'error', message: 'invalid_user' })
+          if (matches.size >= MAX_MATCHES) {
+            send(ws, { type: 'error', message: 'server_full' })
+            return
+          }
+
+          if (!markAuthed(uid)) return
+
+          const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
+            ? String(msg.subjectId)
+            : DEFAULT_SUBJECT_ID
+          // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
+          const duelCode = typeof msg.duelCode === 'string' && DUEL_CODE_RE.test(msg.duelCode)
+            ? msg.duelCode
+            : null
+          if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
+          else joinQueue(ws, uid, name, subjectId)
           return
-        }
-
-        if (matches.size >= MAX_MATCHES) {
-          send(ws, { type: 'error', message: 'server_full' })
-          return
-        }
-
-        if (!markAuthed(uid)) return
-
-        const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
-          ? String(msg.subjectId)
-          : DEFAULT_SUBJECT_ID
-        // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
-        const duelCode = typeof msg.duelCode === 'string' && DUEL_CODE_RE.test(msg.duelCode)
-          ? msg.duelCode
-          : null
-        if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
-        else joinQueue(ws, uid, name, subjectId)
+        })()
         return
       }
 

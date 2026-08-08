@@ -47,7 +47,7 @@ export const users = pgTable('users', {
 export const authIdentities = pgTable('auth_identities', {
   provider:     text('provider').notNull(),
   providerUid:  text('provider_uid').notNull(),
-  userId:       text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:       text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   passwordHash: text('password_hash'),
   createdAt:    timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
@@ -63,7 +63,7 @@ export const authIdentities = pgTable('auth_identities', {
  */
 export const sessions = pgTable('sessions', {
   token:     text('token').primaryKey(),
-  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   /** Sessiya qaysi provider login'i orqali yaratilgan ('telegram' | 'phone') */
   provider:  text('provider').notNull(),
   expiresAt: timestamp('expires_at').notNull(),
@@ -81,7 +81,7 @@ export const sessions = pgTable('sessions', {
  */
 export const linkCodes = pgTable('link_codes', {
   code:      text('code').primaryKey(),
-  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   expiresAt: timestamp('expires_at').notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
@@ -96,7 +96,7 @@ export const linkCodes = pgTable('link_codes', {
  */
 export const answerTokens = pgTable('answer_tokens', {
   token:     text('token').primaryKey(),
-  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
   index('idx_answer_tokens_created').on(t.createdAt),
@@ -107,7 +107,7 @@ export const payments = pgTable('payments', {
   id:                       serial('id').primaryKey(),
   telegramPaymentChargeId:  text('telegram_payment_charge_id').notNull().unique(),
   providerPaymentChargeId:  text('provider_payment_charge_id').notNull(),
-  userId:                   text('user_id').notNull().references(() => users.id, { onDelete: 'restrict' }),
+  userId:                   text('user_id').notNull().references(() => users.id, { onDelete: 'restrict', onUpdate: 'cascade' }),
   plan:                     text('plan').notNull(),
   amount:                   integer('amount').notNull(),
   currency:                 text('currency').notNull(),
@@ -121,7 +121,7 @@ export const payments = pgTable('payments', {
 
 export const progress = pgTable('progress', {
   id:            serial('id').primaryKey(),
-  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
+  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }).unique(),
   totalCorrect:  integer('total_correct').default(0).notNull(),
   totalWrong:    integer('total_wrong').default(0).notNull(),
   totalAnswered: integer('total_answered').default(0).notNull(),
@@ -151,7 +151,7 @@ export const progress = pgTable('progress', {
 
 export const userSettings = pgTable('settings', {
   id:              serial('id').primaryKey(),
-  userId:          text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }).unique(),
+  userId:          text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }).unique(),
   autoNextCorrect: boolean('auto_next_correct').default(true).notNull(),
   autoNextWrong:   boolean('auto_next_wrong').default(false).notNull(),
   noAnimation:     boolean('no_animation').default(false).notNull(),
@@ -222,7 +222,7 @@ export const questionExplanations = pgTable('question_explanations', {
 
 export const savedQuestions = pgTable('saved_questions', {
   id:         serial('id').primaryKey(),
-  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
   /** Multi-fan identity: bir xil questionId turli fanlarda alohida bookmark.
    *  Eski qatorlar migratsiyada 'yhq' bilan to'ldirilgan (traffic_rules_db). */
@@ -232,14 +232,14 @@ export const savedQuestions = pgTable('saved_questions', {
 /** Referal qaydlari — referee faqat bir marta hisoblanadi (anti-farm). */
 export const referrals = pgTable('referrals', {
   id:         serial('id').primaryKey(),
-  referrerId: text('referrer_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
-  refereeId:  text('referee_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  referrerId: text('referrer_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  refereeId:  text('referee_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   createdAt:  timestamp('created_at').defaultNow().notNull(),
 }, (t) => [unique('uq_referral_referee').on(t.refereeId)])
 
 /** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
 export const analyticsEvents = pgTable('analytics_events', {  id:        serial('id').primaryKey(),
-  userId:    text('user_id').references(() => users.id, { onDelete: 'set null' }),
+  userId:    text('user_id').references(() => users.id, { onDelete: 'set null', onUpdate: 'cascade' }),
   event:     text('event').notNull(),
   props:     jsonb('props').$type<Record<string, unknown>>().default({}).notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
@@ -284,7 +284,7 @@ export const tutorUsage = pgTable('tutor_usage', {
 
 export const dailyStreaks = pgTable('daily_streaks', {
   id:            serial('id').primaryKey(),
-  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   subjectId:     text('subject_id').notNull(),
   /** Shu fan bo'yicha ketma-ket bajarilgan kunlar soni */
   streak:        integer('streak').default(0).notNull(),
@@ -304,7 +304,7 @@ export const dailyStreaks = pgTable('daily_streaks', {
  */
 export const dailyRecords = pgTable('daily_records', {
   id:          serial('id').primaryKey(),
-  userId:      text('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  userId:      text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   /** 'YYYY-MM-DD' — client local sanasi (Telegram user o'z vaqt zonasi) */
   date:        text('date').notNull(),
   subjectId:   text('subject_id').notNull(),

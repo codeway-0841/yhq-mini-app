@@ -64,7 +64,7 @@ router.post(
   '/tutor/explain',
   rateLimit({
     maxPerMinute: 10,
-    keyFn: (request) => (request as { telegramUserId?: string }).telegramUserId ?? request.ip,
+    keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
   }),
   validate({ body: BodySchema }),
   wrap(async (req, res) => {
@@ -72,9 +72,9 @@ router.post(
     if (!key) throw new AppError(503, 'AI Tutor vaqtincha o\'chiq (GEMINI_API_KEY yo\'q)')
 
     const { questionId, lang, answeredCorrect } = req.body as z.infer<typeof BodySchema>
-    const verifiedId = (req as { telegramUserId?: string }).telegramUserId
+    const verifiedId = (req as { userId?: string }).userId
     const uid = verifiedId ? parseUserId(verifiedId) : null
-    if (!uid) throw new AppError(401, 'telegram_user_not_identified')
+    if (!uid) throw new AppError(401, 'user_not_identified')
 
     if (!(await isPremium(uid))) throw new AppError(403, 'premium_required')
 

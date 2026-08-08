@@ -1,9 +1,9 @@
 /**
  * Admin authorization middleware — `telegramAuth`dan KEYIN ishlaydi.
  *
- * telegramAuth'dan o'tib kelgan `req.telegramUserId` users jadvalidagi
+ * telegramAuth'dan o'tib kelgan `req.userId` users jadvalidagi
  * `is_admin` bilan tekshiriladi:
- *   - 401: initData yo'q/noto'g'ri (dev'da telegramUserId ham yo'q)
+ *   - 401: credentials yo'q/noto'g'ri (dev'da req.userId ham yo'q)
  *   - 403: foydalanuvchi mavjud, lekin admin emas
  *   - 200: admin → next()
  *
@@ -21,7 +21,7 @@ export async function requireAdmin(req: Request, res: Response, next: NextFuncti
     // Production: faqat telegramAuth tomonidan tasdiqlangan id.
     // Dev/test (auth o'chiq): body yoki query'dagi userId — xuddi boshqa
     // router'lardagi pattern (masalan tutor.router userId query/body oladi).
-    const uid = (req as { telegramUserId?: string }).telegramUserId
+    const uid = (req as { userId?: string }).userId
       ?? (isAuthEnforced() ? undefined : (req.body as { userId?: unknown })?.userId ?? req.query['userId'])
     if (typeof uid !== 'string' || uid.length === 0) {
       res.status(401).json({ error: 'telegram_user_not_identified' })

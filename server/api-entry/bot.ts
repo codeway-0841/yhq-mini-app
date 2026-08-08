@@ -107,6 +107,21 @@ bot.command('start', async (ctx) => {
     await sendPremiumInvoice(ctx, planParam)
     return
   }
+  // Account linking: t.me/bot?start=link_<code> — APK/brauzer (telefon sessiya)
+  // yaratgan bir martalik kodni konsumatsiya qilib TG identity'ni shu hisobga ulaydi
+  if (param && /^link_[A-Za-z0-9_-]{10,16}$/.test(param)) {
+    if (ctx.from) {
+      try {
+        const { authService } = await import('../modules/auth/auth.service')
+        const result = await authService.linkTelegramByCode(param.slice(5), { id: ctx.from.id })
+        await ctx.reply(result.message)
+      } catch (err) {
+        console.error('[bot] link handler error:', err)
+        await ctx.reply("❌ Ichki xatolik — keyinroq urinib ko'ring.")
+      }
+    }
+    return
+  }
   // Referal link: t.me/bot?start=ref_<id> → ilovaga ?ref= orqali o'tkazamiz
   if (param && /^ref_\d{1,19}$/.test(param)) {
     const refId = param.slice(4)

@@ -1,7 +1,7 @@
 /**
- * Analytics router — KPI event qabul qilish (1 haftalik sinov).
- * userId faqat VERIFIED telegram id'dan olinadi (auth middleware o'rnatadi) —
- * client-supplied userId ishonchilmaydi.
+ * Analytics router — KPI event qabul qilish.
+ * userId faqat VERIFIED id'dan olinadi (auth middleware o'rnatadi —
+ * initData YOKI Bearer session) — client-supplied userId ishonchilmaydi.
  */
 import { Router } from 'express'
 import { z } from 'zod'
@@ -26,8 +26,8 @@ router.post(
   validate({ body: EventSchema }),
   wrap(async (req, res) => {
     const { event, props } = req.body as z.infer<typeof EventSchema>
-    const telegramId = (req as { telegramUserId?: string }).telegramUserId
-    const uid = telegramId ? parseUserId(telegramId) : null
+    const authUserId = (req as { userId?: string }).userId
+    const uid = authUserId ? parseUserId(authUserId) : null
     await db.insert(analyticsEvents).values({ userId: uid ?? null, event, props })
     res.status(204).end()
   }),

@@ -1,18 +1,27 @@
 /**
- * Telegram authentication middleware.
+ * Authentication middleware — MULTI-PROVIDER:
+ *   1) `x-telegram-init-data` header (Telegram Mini App, HMAC-SHA256) — ustuvor;
+ *   2) `Authorization: Bearer <sessionToken>` (telefon+parol / TG Login Widget
+ *      login'da yaratilgan opaque token — `sessions` jadvalidan resolve).
  *
- * Verifies the `x-telegram-init-data` header (HMAC-SHA256, signed by Telegram).
- * When verified, the embedded Telegram user id becomes the ONLY trusted id —
- * the client can no longer spoof `userId` params/body.
+ * Tekshiruv O'TGAN user id `req.userId`'ga yoziladi (canonical TEXT id:
+ * Telegram raqam-string yoki 'p_<digits>') — client endi `userId` param/body'ni
+ * soxtalashira olmaydi. Bearer sessiya ishlatilganda `req.sessionToken` ham
+ * saqlanadi (logout/revoke uchun).
+ *
+ * INVARIANT: Telegram identity HAR DOIM user_id = provider_uid — shu sababli
+ * initData yo'li DB lookup TALAB QILMAYDI (link/adopt-merge shu qoidaga tayanadi).
  *
  * Enforcement policy:
- *   - Production + BOT_TOKEN set       → required (401 without/invalid)
- *   - Dev / BOT_TOKEN missing          → skipped (open) so local dev still works
+ *   - Production      → credentials MAJBURIY (401 without/invalid; fail-closed)
+ *   - Dev / test      → ixtiyoriy: valid credential bo'lsa resolve qilinadi,
+ *                       bo'lmasa request o'tadi (route'lar o'zi tekshiradi)
  */
 
 import { Request, Response, NextFunction } from 'express'
 import { config }          from '../config'
 import { verifyInitData }  from '../utils/telegram'
+import { authRepository }  from '../modules/auth/auth.repository'
 
 /** Routes whose first path segment carries a userId: /:userId/... */
 const USER_SEGMENTS = new Set([
@@ -26,10 +35,23 @@ const USER_SEGMENTS = new Set([
  */
 const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard'])
 
+/**
+ * Auth LOGIN endpoint'lari — credentials'siz KIRISH uchun public:
+ *   POST /auth/phone/register · /auth/phone/login · /auth/telegram
+ * (qolgan /auth/* — me/logout/link/tg-link-code — requireAuth ostida).
+ */
+const PUBLIC_AUTH_POST = new Set(['auth/phone/register', 'auth/phone/login', 'auth/telegram'])
+
 function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
   const seg = req.path.split('/').filter(Boolean)[0]
   return PUBLIC_GET.has(seg)
+}
+
+function isPublicAuthPost(req: Request): boolean {
+  if (req.method !== 'POST') return false
+  const seg = req.path.split('/').filter(Boolean)
+  return PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
 }
 
 export function isAuthEnforced(): boolean {
@@ -38,59 +60,102 @@ export function isAuthEnforced(): boolean {
   return config.isProd
 }
 
-export function telegramAuth(req: Request, res: Response, next: NextFunction): void {
-  if (isPublicGet(req)) { next(); return }
-
+function getInitData(req: Request): string | undefined {
   const header = req.headers['x-telegram-init-data']
-  const initData = Array.isArray(header) ? header[0] : header
+  return Array.isArray(header) ? header[0] : header
+}
 
-  // Verification is optional outside production — validate when present though
-  if (!isAuthEnforced()) {
-    if (initData && config.telegram.botToken) {
-      const user = verifyInitData(initData, config.telegram.botToken)
-      if (user) (req as { telegramUserId?: string }).telegramUserId = String(user.id)
-    }
-    next()
-    return
-  }
+function getBearerToken(req: Request): string | undefined {
+  const header = req.headers['authorization']
+  const value = Array.isArray(header) ? header[0] : header
+  if (!value?.startsWith('Bearer ')) return undefined
+  const token = value.slice(7).trim()
+  return token.length > 0 ? token : undefined
+}
 
-  if (!config.telegram.botToken) {
-    res.status(503).json({ error: 'Authentication service is not configured' })
-    return
-  }
-
-  if (!initData) {
-    res.status(401).json({ error: 'Missing Telegram initData' })
-    return
-  }
-
+/** initData imzosi to'g'ri bo'lsa canonical Telegram user id, aks holda null. */
+function verifyTelegram(initData: string): string | null {
+  if (!config.telegram.botToken) return null
   const user = verifyInitData(initData, config.telegram.botToken)
-  if (!user) {
-    res.status(401).json({ error: 'Invalid Telegram initData signature' })
-    return
-  }
+  return user ? String(user.id) : null
+}
 
-  const verifiedId = String(user.id)
-  ;(req as { telegramUserId?: string }).telegramUserId = verifiedId
+async function resolveBearer(token: string, req: Request): Promise<boolean> {
+  const session = await authRepository.resolveSession(token)
+  if (!session) return false
+  ;(req as { userId?: string }).userId = session.userId
+  ;(req as { sessionToken?: string }).sessionToken = token
+  return true
+}
 
-  // Anti-spoofing: the :userId in the URL must match the verified Telegram id.
-  // req.path here is relative to the /api mount point.
-  const seg = req.path.split('/').filter(Boolean)
-  if (seg.length >= 2 && USER_SEGMENTS.has(seg[0]) && seg[1] !== verifiedId) {
-    res.status(403).json({ error: 'Forbidden — cannot access another user\u2019s data' })
-    return
-  }
+export async function telegramAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
+  try {
+    if (isPublicGet(req) || isPublicAuthPost(req)) { next(); return }
 
-  // /init: the id in the body must match the verified Telegram id
-  if (seg.length === 1 && seg[0] === 'init' && req.method === 'POST') {
-    const bodyId = (req.body as { id?: unknown })?.id
-    if (bodyId != null && String(bodyId) !== verifiedId) {
-      res.status(403).json({ error: 'Forbidden — id mismatch' })
+    const initData = getInitData(req)
+    const bearer   = getBearerToken(req)
+
+    // Verification is optional outside production — validate when present though
+    if (!isAuthEnforced()) {
+      if (initData) {
+        const id = verifyTelegram(initData)
+        if (id) (req as { userId?: string }).userId = id
+      } else if (bearer) {
+        await resolveBearer(bearer, req)
+      }
+      next()
       return
     }
-  }
 
-  next()
+    if (initData) {
+      if (!config.telegram.botToken) {
+        res.status(503).json({ error: 'Authentication service is not configured' })
+        return
+      }
+      const verifiedId = verifyTelegram(initData)
+      if (!verifiedId) {
+        res.status(401).json({ error: 'Invalid Telegram initData signature' })
+        return
+      }
+      ;(req as { userId?: string }).userId = verifiedId
+    } else if (bearer) {
+      if (!(await resolveBearer(bearer, req))) {
+        res.status(401).json({ error: 'invalid_session' })
+        return
+      }
+      // !session bo'lsa resolveBearer ayrildi — userId endi mavjud
+    } else {
+      res.status(401).json({ error: 'Missing credentials (initData or Bearer token)' })
+      return
+    }
+
+    const verifiedId = (req as { userId?: string }).userId
+    if (!verifiedId) {   // prognoz imkonsiz — lekin fail-closed
+      res.status(401).json({ error: 'Authentication failed' })
+      return
+    }
+
+    // Anti-spoofing: the :userId in the URL must match the verified id.
+    // req.path here is relative to the /api mount point.
+    const seg = req.path.split('/').filter(Boolean)
+    if (seg.length >= 2 && USER_SEGMENTS.has(seg[0]) && seg[1] !== verifiedId) {
+      res.status(403).json({ error: 'Forbidden — cannot access another user’s data' })
+      return
+    }
+
+    // /init: the id in the body must match the verified Telegram id
+    if (seg.length === 1 && seg[0] === 'init' && req.method === 'POST') {
+      const bodyId = (req.body as { id?: unknown })?.id
+      if (bodyId != null && String(bodyId) !== verifiedId) {
+        res.status(403).json({ error: 'Forbidden — id mismatch' })
+        return
+      }
+    }
+
+    next()
+  } catch (err) {
+    next(err)
+  }
 }
 
 /**
@@ -100,14 +165,27 @@ export function telegramAuth(req: Request, res: Response, next: NextFunction): v
 export function requireSelf(req: Request, res: Response, next: NextFunction): void {
   if (!isAuthEnforced()) { next(); return }
 
-  const verifiedId = (req as { telegramUserId?: string }).telegramUserId
+  const verifiedId = (req as { userId?: string }).userId
   const requestedId = req.params['userId']
   if (!verifiedId) {
-    res.status(401).json({ error: 'Telegram user is not authenticated' })
+    res.status(401).json({ error: 'User is not authenticated' })
     return
   }
   if (!requestedId || requestedId !== verifiedId) {
     res.status(403).json({ error: 'Forbidden — cannot access another user’s data' })
+    return
+  }
+  next()
+}
+
+/**
+ * Endpoint ichida auth MAJBURIY (dev'da ham) — masalan /api/auth/me.
+ * Global telegramAuth resolve qilgan req.userId'ga tayanadi.
+ */
+export function requireAuth(req: Request, res: Response, next: NextFunction): void {
+  const userId = (req as { userId?: string }).userId
+  if (!userId) {
+    res.status(401).json({ error: 'Authentication required' })
     return
   }
   next()

@@ -23,6 +23,8 @@ const envSchema = z.object({
    *  shuning uchun shu yerda optional. */
   BOT_TOKEN:           z.string().optional(),
   BOT_WEBHOOK_SECRET:  z.string().optional(),
+  /** Bot username (@ belgisisiz) — Telegram ulash deep-link `t.me/<bot>?start=link_<code>` uchun */
+  BOT_USERNAME:        z.string().regex(/^[A-Za-z0-9_]{3,32}$/).optional(),
 
   /** Deploy */
   APP_URL:                z.string().url().optional(),
@@ -32,6 +34,10 @@ const envSchema = z.object({
   GEMINI_API_KEY: z.string().optional(),
   CRON_SECRET:    z.string().optional(),
   SENTRY_DSN:     z.string().optional(),
+
+  /** Auth sessiyalari — telefon+parol / TG Login Widget login'da yaratiladigan
+   *  opaque token TTL (kun). Default 30. */
+  SESSION_TTL_DAYS: z.string().regex(/^\d+$/).optional(),
 })
 
 // Startup'da parse — format xatolar (masalan bo'sh DATABASE_URL) darhol ko'rinadi
@@ -83,6 +89,7 @@ export const config = {
   telegram: {
     botToken:       env.BOT_TOKEN,
     webhookSecret:  env.BOT_WEBHOOK_SECRET,
+    botUsername:    env.BOT_USERNAME,
   },
 
   /** Deploy URL + har deployda o'zgaradigan cache-bust build id (?v=<sha>) */
@@ -99,6 +106,11 @@ export const config = {
   /** Vercel Cron himoyasi — yo'q bo'lsa cron endpoint himoyasiz (faqat dev'da OK) */
   cron: {
     secret: env.CRON_SECRET,
+  },
+
+  /** Multi-provider auth — session sozlamalari */
+  auth: {
+    sessionTtlDays: Math.max(1, Number(env.SESSION_TTL_DAYS ?? '30')),
   },
 
   sentry: {

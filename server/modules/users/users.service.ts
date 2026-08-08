@@ -59,6 +59,7 @@ export function toApiSettings(row: SettingsRow) {
 import { progressRepository }     from '../progress/progress.repository'
 import { settingsRepository }     from '../settings/settings.repository'
 import { savedRepository }        from '../saved/saved.repository'
+import { authRepository }         from '../auth/auth.repository'
 import { AppError }               from '../../middleware/error-handler'
 
 // ── Zod schemas (also exported for router-level validation) ────────────────
@@ -100,6 +101,9 @@ export const usersService = {
       username:  raw.username   ?? null,
       photoUrl:  raw.photo_url  ?? null,
     })
+    // INVARIANT: TG identity user_id = provider_uid (multi-provider auth;
+    // idempotent — middleware initData resolve'si DB'siz shunga tayanadi)
+    await authRepository.ensureIdentity('telegram', uid, uid)
 
     const [user, prog, sett, saved] = await Promise.all([
       usersRepository.findById(uid),

@@ -21,6 +21,7 @@ import { telegramAuth }  from './middleware/auth'
 import { createReadinessHandler } from './middleware/readiness'
 import { executeRows }   from './db/connection'
 
+import authRouter        from './modules/auth/auth.router'
 import usersRouter       from './modules/users/users.router'
 import progressRouter    from './modules/progress/progress.router'
 import settingsRouter    from './modules/settings/settings.router'
@@ -83,6 +84,7 @@ export function createApp() {
   // ── Feature routers ──────────────────────────────────────────────────────
   // All public API routes are prefixed with /api.
   // Each router only knows its own sub-path (e.g. /init, /profile/:id).
+  app.use('/api', authRouter)
   app.use('/api', usersRouter)
   app.use('/api', progressRouter)
   app.use('/api', settingsRouter)

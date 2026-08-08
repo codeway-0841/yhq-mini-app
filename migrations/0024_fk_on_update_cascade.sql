@@ -1,0 +1,18 @@
+-- Custom migration: FK'lar users(id) bo'yicha ON UPDATE CASCADE.
+-- Sabab: account linking'dagi "adopt-merge" (bo'sh tomonni qo'llash) qoidasi
+-- users.id PK RENAME orqali atomik bajariladi (UPDATE users SET id=...) —
+-- bog'langan BARCHA jadvallar shu PK bilan birga yangilanishi shart.
+--> statement-breakpoint
+ALTER TABLE "answer_tokens"    DROP CONSTRAINT "answer_tokens_user_id_users_id_fk",    ADD CONSTRAINT "answer_tokens_user_id_users_id_fk"    FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "payments"         DROP CONSTRAINT "payments_user_id_users_id_fk",         ADD CONSTRAINT "payments_user_id_users_id_fk"         FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE restrict  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "progress"         DROP CONSTRAINT "progress_user_id_users_id_fk",         ADD CONSTRAINT "progress_user_id_users_id_fk"         FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "settings"         DROP CONSTRAINT "settings_user_id_users_id_fk",         ADD CONSTRAINT "settings_user_id_users_id_fk"         FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "saved_questions"  DROP CONSTRAINT "saved_questions_user_id_users_id_fk",  ADD CONSTRAINT "saved_questions_user_id_users_id_fk"  FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "referrals"        DROP CONSTRAINT "referrals_referrer_id_users_id_fk",    ADD CONSTRAINT "referrals_referrer_id_users_id_fk"    FOREIGN KEY ("referrer_id") REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "referrals"        DROP CONSTRAINT "referrals_referee_id_users_id_fk",     ADD CONSTRAINT "referrals_referee_id_users_id_fk"     FOREIGN KEY ("referee_id")  REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "analytics_events" DROP CONSTRAINT "analytics_events_user_id_users_id_fk", ADD CONSTRAINT "analytics_events_user_id_users_id_fk" FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE set null  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "daily_streaks"    DROP CONSTRAINT "daily_streaks_user_id_users_id_fk",    ADD CONSTRAINT "daily_streaks_user_id_users_id_fk"    FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "daily_records"    DROP CONSTRAINT "daily_records_user_id_users_id_fk",    ADD CONSTRAINT "daily_records_user_id_users_id_fk"    FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "auth_identities"  DROP CONSTRAINT "auth_identities_user_id_users_id_fk",  ADD CONSTRAINT "auth_identities_user_id_users_id_fk"  FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "sessions"         DROP CONSTRAINT "sessions_user_id_users_id_fk",         ADD CONSTRAINT "sessions_user_id_users_id_fk"         FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;--> statement-breakpoint
+ALTER TABLE "link_codes"       DROP CONSTRAINT "link_codes_user_id_users_id_fk",       ADD CONSTRAINT "link_codes_user_id_users_id_fk"       FOREIGN KEY ("user_id")     REFERENCES "public"."users"("id") ON DELETE cascade  ON UPDATE cascade;

@@ -49,6 +49,23 @@ export const FullProfileSchema = z.object({
   savedQuestions: z.array(z.string()),
 })
 
+/**
+ * Auth sessiya profili — GET /api/auth/me javobi (FullProfile + ulangan provider'lar).
+ * "providers" — Hozirgi akkauntga ulangan login usullari (Profil "Hisobni bog'lash").
+ */
+export const AuthSessionSchema = FullProfileSchema.extend({
+  providers: z.array(z.enum(['telegram', 'phone'])),
+})
+
+/** POST /api/auth/(phone/register|phone/login|telegram|phone/link) javobi. */
+export const AuthResponseSchema = AuthSessionSchema.extend({
+  /** Opaque Bearer token — localStorage'da saqlanadi, 401 da o'chiriladi */
+  sessionToken: z.string().min(32),
+})
+
+export type AuthSessionContract  = z.infer<typeof AuthSessionSchema>
+export type AuthResponseContract = z.infer<typeof AuthResponseSchema>
+
 export type ApiUserContract     = z.infer<typeof ApiUserSchema>
 export type ApiProgressContract = z.infer<typeof ApiProgressSchema>
 export type ApiSettingsContract = z.infer<typeof ApiSettingsSchema>

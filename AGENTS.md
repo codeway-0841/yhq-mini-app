@@ -34,8 +34,10 @@ server/
   config/
     subjects.ts    #   SubjectRegistry — shared'dan derive, ESKI soddalashtirmang
   modules/<m>/     #   <m>.router.ts + <m>.repository.ts (repository pattern)
+  modules/auth/    #   multi-provider auth: sessiyalar, identity'lar, link/adopt-merge
   providers/       #   QuestionBankProvider — fan bazalari (strategy + registry)
-  middleware/      #   auth, cron-auth, validate (zod), rate-limiter, error-handler,
+  middleware/      #   auth (DUAL: initData YOKI Bearer session → req.userId), cron-auth,
+                   #   validate (zod), rate-limiter, error-handler,
                    #   readiness (/api/ready — DB ping), request-logger (JSON + X-Request-Id)
   octagon.ts       #   PvP duel (WebSocket, reconnect grace window)
 tests/
@@ -75,6 +77,7 @@ APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
 6. **Testlar:** yangi feature/bugfix uchun `tests/` ga test qo'shing. Consistency testlar (masalan `tests/unit/config/subjects.test.ts`) konfig desync'larini ushlaydi.
 7. **Env var:** barcha `process.env` FAQAT `server/config/index.ts` dagi zod schema orqali o'qiladi. Yangi env kerak bo'lsa — avval schema'ga qo'shing, keyin `config` orqali oling.
 8. **Scoring trust boundary:** `GET /questions` HECH QACHON `correctAnswer` qaytarmaydi — client'da javob kaliti yo'q. Feedback FAQAT `POST /progress/:userId/result` javobidan (post-answer reveal) yoki Octagon `answer_ack` (`correctOptionId`) dan olinadi. To'liq qator kerak bo'lsa — `GET /api/admin/questions` (admin-only). `/result` idempotent: `clientToken` (`answer_tokens` jadvali) bilan.
+8a. **Auth (multi-provider):** login = Telegram Mini App initData YOKI telefon+parol YOKI TG Login Widget; sessiya = opaque token `sessions` jadvalida (JWT EMAS) → `Authorization: Bearer`. Canonical user id = TEXT (TG raqam-string yoki `p_<digits>`); INVARIANT: `('telegram', T)` identity doim `user_id = T` — initData middleware'si DB lookup'siz shunga tayanadi, shuning uchun har qanday TG merge yakuniy id sifatida TG raqam id'ni SAQLAYDI (PK RENAME, FK'lar `ON UPDATE CASCADE`). Parollar `crypto.scrypt` (utils/password). Account linking: bo'sh tomon absorb/rename qilinadi, IKKALA tomoni to'liq akkaunt merge'iga 409 (v2). Mehmon (auth'siz) rejim YO'Q. PII minimal; auth endpoint'lar qattiq rate-limit'langan.
 9. **Kutubxona docs (Context7):** library/framework savollari va kod yozishdan OLDIN hujjatlarni Context7'dan oling — training data'ga tayanmang. Global opencode config'da `context7` MCP server sozlangan (`~/.config/opencode/opencode.jsonc`) — MCP tool'lari mavjud bo'lsa shularni ishlating:
    - `resolve-library-id` (libraryName + query) → rasmiy/eng yuqori trustScore'li `/owner/repo` ID'ni tanlang
    - `query-docs` (libraryId + bitta mavzu query)
