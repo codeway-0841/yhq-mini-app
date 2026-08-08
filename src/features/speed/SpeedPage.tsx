@@ -4,7 +4,7 @@
  * Halqa timer: aksent → sariq (≤5s) → qizil (≤3s).
  * Natija — umumiy ResultsModal'da (animatsiyali DonutChart bilan).
  */
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
 import { X, Zap } from 'lucide-react'
@@ -43,6 +43,7 @@ export default function SpeedPage() {
   const [busy, setBusy]         = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
   const [finished, setFinished] = useState(false)
+  const advanceTimerRef = useRef<number | null>(null)
 
   const q = qs[idx]
   const answered = selected !== null
@@ -55,6 +56,10 @@ export default function SpeedPage() {
     return () => clearTimeout(id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft, finished, answered])
+
+  useEffect(() => () => {
+    if (advanceTimerRef.current !== null) clearTimeout(advanceTimerRef.current)
+  }, [])
 
   const advance = useCallback((isCorrect: boolean) => {
     setAnswers((a) => [...a, isCorrect ? 'correct' : 'wrong'])
@@ -80,7 +85,7 @@ export default function SpeedPage() {
       if (outcome) setRevealed(outcome.correctAnswer)
       playSound('error')
       haptics.notify('error')
-      setTimeout(() => advance(false), 700)
+      advanceTimerRef.current = window.setTimeout(() => advance(false), 700)
     })()
   }, [advance, busy, q, submitAnswer])
 
@@ -98,7 +103,7 @@ export default function SpeedPage() {
         playSound(outcome.correct ? 'success' : 'error')
       }
       // Offline: reveal yo'q — faqat tanlangan variant belgilanib qoladi
-      setTimeout(() => advance(outcome?.correct ?? false), outcome ? 800 : 400)
+      advanceTimerRef.current = window.setTimeout(() => advance(outcome?.correct ?? false), outcome ? 800 : 400)
     })()
   }, [answered, busy, q, submitAnswer, advance])
 

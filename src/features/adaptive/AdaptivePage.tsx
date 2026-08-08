@@ -57,7 +57,7 @@ export default function AdaptivePage() {
 
   // Only start a session when the page first mounts with no active question
   useEffect(() => {
-    if (currentId === null) startSession()
+    if (currentId === null && sessionCount === 0) startSession()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   // SR karta — subject bo'yicha lookup (hook early-return'dan OLDIN bo'lishi shart!)

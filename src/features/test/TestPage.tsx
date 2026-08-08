@@ -434,6 +434,10 @@ export default function TestPage() {
     return () => window.removeEventListener('beforeunload', handler)
   }, [answers, isFinished])
 
+  useEffect(() => () => {
+    if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
+  }, [])
+
   if (!q) return (
     <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
   )
