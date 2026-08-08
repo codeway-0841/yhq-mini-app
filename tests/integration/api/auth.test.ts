@@ -8,13 +8,15 @@
 
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import request from 'supertest'
-import { createHash, createHmac } from 'crypto'
+import { createHash, createHmac, randomBytes } from 'crypto'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
 import { users, progress, linkCodes } from '../../../server/schema'
 import { eq, inArray } from 'drizzle-orm'
 import { config } from '../../../server/config'
 import { authService } from '../../../server/modules/auth/auth.service'
+import { authRepository } from '../../../server/modules/auth/auth.repository'
+import { usersRepository } from '../../../server/modules/users/users.repository'
 
 const app = createApp()
 const BOT_TOKEN = config.telegram.botToken
@@ -42,6 +44,22 @@ function widgetFields(tgId: string) {
   const dcs = Object.entries(fields).sort(([a], [b]) => (a < b ? -1 : 1)).map(([k, v]) => `${k}=${v}`).join('\n')
   const secret = createHash('sha256').update(BOT_TOKEN!).digest()
   return { ...fields, hash: createHmac('sha256', secret).update(dcs).digest('hex') }
+}
+
+/**
+ * TG user + sessiyani WIDGET'SIZ yaratadi — linking testlari BOT_TOKEN'dan
+ * MUSTAQIL (CI env'da token yo'q). Invariant saqlanadi: ('telegram', T).user_id = T.
+ * Qaytaradi: yaroqli Bearer sessionToken.
+ */
+async function createTgUserWithSession(tgId: string): Promise<string> {
+  await usersRepository.initAtomic({ id: tgId, firstName: 'Link', lastName: '', username: '', photoUrl: '' })
+  await authRepository.ensureIdentity('telegram', tgId, tgId)
+  const token = randomBytes(32).toString('hex')
+  await authRepository.createSession({
+    token, userId: tgId, provider: 'telegram',
+    expiresAt: new Date(Date.now() + 3_600_000),
+  })
+  return token
 }
 
 /** user'ga progress data yozish (adopt-merge "bo'sh emas" holati uchun) */
@@ -123,9 +141,8 @@ describe('POST /api/auth/telegram (Login Widget)', () => {
 
 describe('Account linking — /api/auth/phone/link (adopt-merge)', () => {
   it('TG shell (bo\'sh) + telefon akkaunt (data bor) → RENAME: data ko\'chadi, TG id saqlanadi', async () => {
-    // TG shell: avvalgi widget testida yaratilgan (bo'sh)
-    const tgLogin = await request(app).post('/api/auth/telegram').send(widgetFields(TG_A))
-    const tgToken = tgLogin.body.sessionToken
+    // TG shell (bo'sh) — widget'siz (BOT_TOKEN CI'da yo'q)
+    const tgToken = await createTgUserWithSession(TG_A)
 
     // Telefon akkauntiga data beramiz
     await giveProgress('p_998900000010', 5)
@@ -154,19 +171,19 @@ describe('Account linking — /api/auth/phone/link (adopt-merge)', () => {
   })
 
   it('noto\'g\'ri parol bilan link → 401 (account takeover himoyasi)', async () => {
-    const tgLogin = await request(app).post('/api/auth/telegram').send(widgetFields(TG_C))
+    const tgToken = await createTgUserWithSession(TG_C)
     const res = await request(app).post('/api/auth/phone/link')
-      .set('Authorization', `Bearer ${tgLogin.body.sessionToken}`)
+      .set('Authorization', `Bearer ${tgToken}`)
       .send({ phone: PHONE_B, password: 'boshqa_parol_1' })
     expect(res.status).toBe(401)
   })
 
   it('IKKALA akkauntda ham data → 409 accounts_merge_required', async () => {
-    const tgLogin = await request(app).post('/api/auth/telegram').send(widgetFields(TG_C))
+    const tgToken = await createTgUserWithSession(TG_C)
     await giveProgress(TG_C, 3)
     // TG_A endi datali (oldingi adopt'da 5 javob ko'chgan)
     const res = await request(app).post('/api/auth/phone/link')
-      .set('Authorization', `Bearer ${tgLogin.body.sessionToken}`)
+      .set('Authorization', `Bearer ${tgToken}`)
       .send({ phone: PHONE_B, password: PASS })
     expect(res.status).toBe(409)
   })
