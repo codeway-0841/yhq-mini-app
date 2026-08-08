@@ -203,6 +203,7 @@ const rows = raw.flatMap(q => {
   topicCounts[slug] = (topicCounts[slug] ?? 0) + 1
   return [{
     id:            q.id,
+    externalId:    String(q.id),   // canonical identity: (bank_id, external_id)
     questionUz:    q.question_uz,
     questionRu:    q.question_ru,
     optionsUz:     q.options_uz,

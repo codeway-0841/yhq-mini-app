@@ -64,6 +64,7 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
 
   await db.insert(questions).values({
     id:            newId,
+    externalId:    String(newId),  // canonical identity: (bank_id, external_id)
     questionUz:    body.questionUz,
     questionRu:    body.questionRu,
     optionsUz:     body.optionsUz,

@@ -25,9 +25,9 @@ const [topic] = await db.insert(topics).values({
 const topicId = topic?.id ?? (await db.select({ id: topics.id }).from(topics).limit(1))[0].id
 
 await db.insert(questions).values([
-  { id: 900001, questionUz: 'Test savoli 1?', questionRu: 'Тестовый вопрос 1?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F1', topicId },
-  { id: 900002, questionUz: 'Test savoli 2?', questionRu: 'Тестовый вопрос 2?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F2', topicId },
-  { id: 900003, questionUz: 'Test savoli 3?', questionRu: 'Тестовый вопрос 3?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F1', topicId },
+  { id: 900001, externalId: '900001', questionUz: 'Test savoli 1?', questionRu: 'Тестовый вопрос 1?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F1', topicId },
+  { id: 900002, externalId: '900002', questionUz: 'Test savoli 2?', questionRu: 'Тестовый вопрос 2?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F2', topicId },
+  { id: 900003, externalId: '900003', questionUz: 'Test savoli 3?', questionRu: 'Тестовый вопрос 3?', optionsUz: { F1: 'A', F2: 'B' }, optionsRu: { F1: 'А', F2: 'Б' }, correctAnswer: 'F1', topicId },
 ]).onConflictDoNothing()
 
 console.log('[seed-test] 3 ta test savoli kiritildi (topic: test-topic)')

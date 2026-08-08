@@ -107,15 +107,38 @@ export const userSettings = pgTable('settings', {
   offlineMode:     boolean('offline_mode').default(false).notNull(),
 })
 
+/**
+ * Savol bankalari — canonical question identity poydevori (multi-fan).
+ *
+ * Banka id = `shared/subjects.ts` dagi `dataSourceId` (provider id) — YAGONA
+ * MANBA o'sha fayl; jadvalga qator yangi fan bazasi migratsiyasida qo'shiladi.
+ * Savolning GLOBAL identifikatori: (bank_id, external_id) juftligi;
+ * `questions.id` esa faqat qulay surrogate key (frontend/WS numeric id'da qoladi).
+ */
+export const questionBanks = pgTable('question_banks', {
+  id:        text('id').primaryKey(),
+  name:      text('name').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+})
+
 export const topics = pgTable('topics', {
   id:     serial('id').primaryKey(),
   nameUz: text('name_uz').notNull(),
   nameRu: text('name_ru').notNull(),
   slug:   text('slug').notNull().unique(),
+  /** Topic qaysi bankaga tegishli — turli bankalar topic'lari chalkashmasligi uchun */
+  bankId: text('bank_id').default('traffic_rules_db').notNull()
+    .references(() => questionBanks.id, { onDelete: 'restrict' }),
 })
 
 export const questions = pgTable('questions', {
   id:            integer('id').primaryKey(),
+  /** Savol qaysi bankaga tegishli (provider/dataSource id) */
+  bankId:        text('bank_id').default('traffic_rules_db').notNull()
+    .references(() => questionBanks.id, { onDelete: 'restrict' }),
+  /** Banka ICHIDAGI barqaror id — banka o'z raqamlash tizimiga ega bo'lishi mumkin.
+   *  Canonical identity: (bank_id, external_id) — UNIQUE. YHQ'da id::text. */
+  externalId:    text('external_id').notNull(),
   questionUz:    text('question_uz').notNull(),
   questionRu:    text('question_ru').notNull(),
   optionsUz:     jsonb('options_uz').$type<Record<string, string>>().notNull(),
@@ -123,7 +146,10 @@ export const questions = pgTable('questions', {
   correctAnswer: text('correct_answer').notNull(),
   image:         text('image'),
   topicId:       integer('topic_id').references(() => topics.id),
-})
+}, (t) => [
+  unique('uq_question_external').on(t.bankId, t.externalId),
+  index('idx_questions_bank_topic').on(t.bankId, t.topicId),
+])
 
 /**
  * Savolga oid STATIK tushuntirishlar — free foydalanuvchilar uchun
