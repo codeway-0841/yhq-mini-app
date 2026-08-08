@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Crown, Loader2, Volume2 } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2 } from 'lucide-react'
 import { useQuestionsStore } from '../../store/useQuestionsStore'
 import { useSubjectStore } from '../../store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
@@ -21,17 +21,10 @@ import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
 import AiTutorModal from './components/AiTutorModal'
+import StudyPanel from './components/StudyPanel'
 import { MODULE_TOPICS } from '../../data/modules'
 import { lessons } from '../../data/lessons'
 import { useTestSession } from './hooks/useTestSession'
-
-// Study panel elementlari (Ovozli/Video/Qoidasi/Muhokama)
-const STUDY_ITEMS = [
-  { key: 'voiceLesson' as const, icon: Play },
-  { key: 'videoLesson' as const, icon: Video },
-  { key: 'ruleBook'    as const, icon: Info },
-  { key: 'discuss'     as const, icon: MessageCircle },
-]
 
 export default function TestPage() {
   const { id }   = useParams()
@@ -96,70 +89,8 @@ export default function TestPage() {
   const revealedId = correctOpts[current] ?? null
   const [showExplain, setShowExplain] = useState(false)
 
-  // ── AI Tutor (Premium) — xato savolni streaming tushuntirish ──
-  const { tariff } = useAppStore()
-  const userId  = useAppStore((s) => s.user?.id)
-  const isPremium = tariff === 'premium'
-  const [showAi, setShowAi]         = useState(false)
-  const [aiText, setAiText]         = useState('')
-  const [aiBusy, setAiBusy]         = useState(false)
-  const aiCacheRef = useRef(new Map<number, string>())
-
-  /** Joriy savol AI tushuntirishi — cache bilan (re-open bepul).
-      To'g'ri/xato javobga qarab prompt tanlanadi. */
-  const startAiExplain = useCallback(async () => {
-    if (!q || !userId || !selected) return
-    const answeredCorrect = answers[current] === 'correct'
-    const cacheKey = q.id * 10 + (answeredCorrect ? 1 : 0)
-    const cached = aiCacheRef.current.get(cacheKey)
-    if (cached) { setAiText(cached); return }
-    setAiBusy(true)
-    setAiText('')
-    try {
-      let acc = ''
-      for await (const chunk of explainQuestion(q.id, settings?.language ?? 'uz', answeredCorrect)) {
-        acc += chunk
-        setAiText(acc)
-      }
-      aiCacheRef.current.set(cacheKey, acc)
-    } catch (err) {
-      if (err instanceof TutorError && err.kind === 'premium_required') {
-        setShowAi(false)
-        setShowAiUpsell(true)
-        return
-      }
-      setAiText(err instanceof TutorError && err.kind === 'quota'
-        ? tt('aiQuotaMsg')
-        : err instanceof TutorError && err.kind === 'daily_limit'
-          ? tt('aiDailyLimit')
-          : tt('aiUnavailable'))
-    } finally {
-      setAiBusy(false)
-    }
-  }, [q, userId, selected, answers, current, settings?.language, tt])
-
-  const [showAiUpsell, setShowAiUpsell] = useState(false)
-
-  // ── Statik tushuntirish (FREE) — AI Tutor olmaganlarga muqobil ──
-  const [staticText, setStaticText] = useState<string | null>(null)
-  const [showStatic, setShowStatic] = useState(false)
-
-  const openAi = useCallback(async () => {
-    // Premium yo'q bo'lsa — avval statik tushuntirish beramiz (bo'lsa),
-    // bo'lmasa upsell modal. Botga YUBORILMAYDI; ilova ichida ochiladi.
-    if (!isPremium) {
-      if (q) {
-        try {
-          const text = await fetchStaticExplanation(q.id, settings?.language ?? 'uz')
-          if (text) { setStaticText(text); setShowStatic(true); return }
-        } catch { /* tarmoq xatosi — upsell'ga tushamiz */ }
-      }
-      setShowAiUpsell(true)
-      return
-    }
-    setShowAi(true)
-    void startAiExplain()
-  }, [isPremium, q, settings?.language, startAiExplain])
+  // ── AI Tutor modal state ──
+  const [showAiTutor, setShowAiTutor] = useState(false)
 
   /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
       Mavzu → slug → MODULE_TOPICS orqali modul. */
@@ -263,7 +194,7 @@ export default function TestPage() {
       setCurrent(i)
       setStudyOpen(false)
       setShowExplain(false)
-      setShowAi(false)
+      setShowAiTutor(false)
     }
   }, [activeQuestions.length, cancelAutoNext])
 
@@ -543,12 +474,11 @@ export default function TestPage() {
                   {tt('whyThis')}
                 </button>
               )}
-              {/* AI Tutor — HAMMA javobdan keyin (Premium) */}
+              {/* AI Tutor — HAMMA javobdan keyin */}
               {selected && (
-                <button onClick={openAi}
+                <button onClick={() => setShowAiTutor(true)}
                   className="flex items-center gap-1.5 bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
                   ✨ {tt('askAiExplain')}
-                  {!isPremium && <Crown size={13} fill="currentColor" />}
                 </button>
               )}
             </div>
@@ -572,23 +502,11 @@ export default function TestPage() {
         </div>
       </div>
 
-      {/* Floating study tugma + panel (14_22/14_24 uslubi):
-          yopiqda bitta pill; ochilganda stek tepaga stagger-animatsiya bilan chiqadi,
-          yopilganda pastga qaytib yo'qoladi */}
-      <div className="fixed right-4 bottom-6 z-40 flex flex-col items-end gap-2">
-        {STUDY_ITEMS.map((it, i) => {
-          const Icon = it.icon
-          return (
-            <button key={it.key} disabled title={tt('comingSoon')}
-              className={`btn-3d-ghost flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full text-[12px] font-extrabold transition-all duration-300 ${
-                studyOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-3 invisible pointer-events-none'
-              }`}
-              style={{ transitionDelay: studyOpen ? `${i * 45}ms` : `${(STUDY_ITEMS.length - 1 - i) * 45}ms` }}>
-              <Icon size={14} />
-              {tt(it.key)}
-            </button>
-          )
-        })}
+      {/* Floating study panel */}
+      <StudyPanel language={settings.language} isOpen={studyOpen} />
+
+      {/* Yakunlash / O'rganish tugma */}
+      <div className="fixed right-4 bottom-6 z-40">
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash}
             className="btn-neon flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
@@ -645,87 +563,15 @@ export default function TestPage() {
         </div>
       )}
 
-      {/* AI Tutor PREMIUM upsell modali — premium yo'q foydalanuvchi uchun */}
-      {showAiUpsell && (
-        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowAiUpsell(false)}>
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
-            onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-            <div className="flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center mb-3">
-                <Crown size={26} className="text-duo-yellow" fill="currentColor" />
-              </div>
-              <p className="text-[17px] font-black text-fg">{tt('premiumNeedTitle')}</p>
-              <p className="text-[13px] text-muted mt-1.5 mb-4 leading-snug">{tt('premiumNeedDesc')}</p>
-              <button
-                onClick={() => {
-                  setShowAiUpsell(false)
-                  openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
-                }}
-                className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2 mb-2">
-                <Crown size={16} fill="currentColor" />
-                {tt('buyPremium')}
-              </button>
-              <button onClick={() => setShowAiUpsell(false)}
-                className="w-full py-3 rounded-2xl bg-elevated text-[13px] font-bold text-muted active:scale-[0.98] transition-transform">
-                {tt('cancel')}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* AI Tutor sheeti — streaming matn (premium) */}
-      {showAi && (
-        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowAi(false)}>
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
-            onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-              <div className="w-9 h-9 rounded-xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center flex-shrink-0">
-                <GraduationCap size={17} className="text-duo-purple" />
-              </div>
-              <p className="text-[15px] font-black text-fg">AI Tutor</p>
-              {aiBusy && <Loader2 size={15} className="text-duo-purple animate-spin ml-auto" />}
-            </div>
-            <div className="overflow-y-auto min-h-[80px]">
-              {aiText ? (
-                <p className="text-[13.5px] text-fg leading-relaxed whitespace-pre-wrap">{aiText}</p>
-              ) : (
-                <p className="text-[13px] text-muted">{tt('aiThinking')}</p>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Statik tushuntirish sheeti — FREE foydalanuvchilarga (AI o'rniga) */}
-      {showStatic && staticText && (
-        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowStatic(false)}>
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
-            onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-              <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
-                <Info size={17} className="text-duo-yellow" />
-              </div>
-              <p className="text-[15px] font-black text-fg">{tt('staticExplainTitle')}</p>
-            </div>
-            <div className="overflow-y-auto min-h-[60px]">
-              <p className="text-[13.5px] text-fg leading-relaxed whitespace-pre-wrap">{staticText}</p>
-            </div>
-            {/* Soft upsell — agressiv modal emas, qiziqtirgich */}
-            <button
-              onClick={() => { setShowStatic(false); setShowAiUpsell(true) }}
-              className="mt-4 w-full py-2.5 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12.5px] font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0">
-              <Crown size={14} fill="currentColor" />
-              {tt('staticExplainAiHint')}
-            </button>
-          </div>
-        </div>
+      {/* AI Tutor modal */}
+      {showAiTutor && q && selected && (
+        <AiTutorModal
+          questionId={q.id}
+          selectedOptionId={selected}
+          isCorrect={answers[current] === 'correct'}
+          onClose={() => setShowAiTutor(false)}
+          language={settings.language}
+        />
       )}
 
       {/* Full-screen image zoom */}
