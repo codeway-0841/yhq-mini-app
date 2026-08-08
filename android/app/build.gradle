@@ -22,6 +22,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    // APK chiqish fayl nomi: kiwi-debug.apk / kiwi-release.apk
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "kiwi-${variant.buildType.name}.apk"
+        }
+    }
 }
 
 repositories {
