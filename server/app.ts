@@ -12,11 +12,14 @@
 
 import express          from 'express'
 import cors             from 'cors'
+import { sql }           from 'drizzle-orm'
 import { config }        from './config'
 import { requestLogger } from './middleware/request-logger'
 import { errorHandler }  from './middleware/error-handler'
 import { rateLimit }     from './middleware/rate-limiter'
 import { telegramAuth }  from './middleware/auth'
+import { createReadinessHandler } from './middleware/readiness'
+import { executeRows }   from './db/connection'
 
 import usersRouter       from './modules/users/users.router'
 import progressRouter    from './modules/progress/progress.router'
@@ -58,6 +61,10 @@ export function createApp() {
   app.get('/api/health', (_req, res) => {
     res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })
   })
+
+  // Readiness — LIVENESS'dan farqli: DB ping majburiy. Deploy/monitoring
+  // faqat ready nodeni tanlashi kerak (DB uzilib ketsa node trafikdan chiqadi).
+  app.get('/api/ready', createReadinessHandler(() => executeRows(sql`SELECT 1`)))
 
   // Global IP-based rate limit (per-endpoint limiters may be stricter).
   // 120/min per-IP: oddiy foydalanuvchi uchun kafolatli (sahifa yuklash

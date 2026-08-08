@@ -24,7 +24,8 @@ server/
     subjects.ts    #   SubjectRegistry — shared'dan derive, ESKI soddalashtirmang
   modules/<m>/     #   <m>.router.ts + <m>.repository.ts (repository pattern)
   providers/       #   QuestionBankProvider — fan bazalari (strategy + registry)
-  middleware/      #   auth, validate (zod), rate-limiter, error-handler
+  middleware/      #   auth, cron-auth, validate (zod), rate-limiter, error-handler,
+                   #   readiness (/api/ready — DB ping), request-logger (JSON + X-Request-Id)
   octagon.ts       #   PvP duel (WebSocket, reconnect grace window)
 tests/
   unit/            #   middleware, lib, utils, config
