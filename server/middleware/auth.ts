@@ -19,6 +19,7 @@
  */
 
 import { Request, Response, NextFunction } from 'express'
+import { posix } from 'node:path'
 import { config }          from '../config'
 import { verifyInitData }  from '../utils/telegram'
 import { authRepository }  from '../modules/auth/auth.repository'
@@ -27,6 +28,31 @@ import { authRepository }  from '../modules/auth/auth.repository'
 const USER_SEGMENTS = new Set([
   'profile', 'progress', 'settings', 'saved', 'users', 'daily', 'achievements',
 ])
+
+/**
+ * Normalize path to prevent traversal attacks:
+ * - Express decodes req.path once, but attacker can double/triple-encode
+ * - Iteratively decode until stable (handles any encoding depth)
+ * - posix.normalize() resolves '..' segments
+ * - Reject paths that escape root or contain null bytes
+ */
+function normalizePath(path: string): string | null {
+  let decoded = path
+  // Decode iteratively until stable (max 5 iterations to prevent infinite loop)
+  for (let i = 0; i < 5; i++) {
+    const prev = decoded
+    try {
+      decoded = decodeURIComponent(decoded)
+    } catch {
+      return null // malformed URL encoding
+    }
+    if (decoded === prev) break // stable, no more encoding
+  }
+  const normalized = posix.normalize(decoded)
+  // Reject if normalized path escapes root or contains null bytes
+  if (normalized.startsWith('..') || normalized.includes('\0')) return null
+  return normalized
+}
 
 /**
  * Public read-only content — no per-user data, safe to cache on the CDN.
@@ -44,13 +70,17 @@ const PUBLIC_AUTH_POST = new Set(['auth/phone/register', 'auth/phone/login', 'au
 
 function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
-  const seg = req.path.split('/').filter(Boolean)[0]
+  const normalized = normalizePath(req.path)
+  if (!normalized) return false
+  const seg = normalized.split('/').filter(Boolean)[0]
   return PUBLIC_GET.has(seg)
 }
 
 function isPublicAuthPost(req: Request): boolean {
   if (req.method !== 'POST') return false
-  const seg = req.path.split('/').filter(Boolean)
+  const normalized = normalizePath(req.path)
+  if (!normalized) return false
+  const seg = normalized.split('/').filter(Boolean)
   return PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
 }
 
@@ -137,9 +167,15 @@ export async function telegramAuth(req: Request, res: Response, next: NextFuncti
 
     // Anti-spoofing: the :userId in the URL must match the verified id.
     // req.path here is relative to the /api mount point.
-    const seg = req.path.split('/').filter(Boolean)
+    // SECURITY: normalize to prevent path traversal (.. segments, double-encoding)
+    const normalized = normalizePath(req.path)
+    if (!normalized) {
+      res.status(400).json({ error: ‘Invalid path’ })
+      return
+    }
+    const seg = normalized.split(‘/’).filter(Boolean)
     if (seg.length >= 2 && USER_SEGMENTS.has(seg[0]) && seg[1] !== verifiedId) {
-      res.status(403).json({ error: 'Forbidden — cannot access another user’s data' })
+      res.status(403).json({ error: ‘Forbidden — cannot access another user’s data’ })
       return
     }
 
