@@ -170,12 +170,12 @@ export async function telegramAuth(req: Request, res: Response, next: NextFuncti
     // SECURITY: normalize to prevent path traversal (.. segments, double-encoding)
     const normalized = normalizePath(req.path)
     if (!normalized) {
-      res.status(400).json({ error: ‘Invalid path’ })
+      res.status(400).json({ error: 'Invalid path' })
       return
     }
-    const seg = normalized.split(‘/’).filter(Boolean)
+    const seg = normalized.split('/').filter(Boolean)
     if (seg.length >= 2 && USER_SEGMENTS.has(seg[0]) && seg[1] !== verifiedId) {
-      res.status(403).json({ error: ‘Forbidden — cannot access another user’s data’ })
+      res.status(403).json({ error: 'Forbidden — cannot access another user’s data' })
       return
     }
 
