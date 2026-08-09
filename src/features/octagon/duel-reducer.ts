@@ -65,6 +65,7 @@ export function duelReducer(s: DuelState, a: DuelAction): DuelState {
                                       yourScore: a.yourScore, oppScore: a.oppScore,
                                       selected: a.yourAnswer, oppAnswered: a.oppAnswered,
                                       ackCorrectOptionId: a.correctOptionId,
+                                      oppWait: s.oppWait,  // Preserve disconnect timer across rejoin
                                       deadline: Date.now() + a.timeLimit }
     case 'TOAST':            return { ...s, toastMsg: a.msg }
     case 'CLEAR_TOAST':      return { ...s, toastMsg: null }
