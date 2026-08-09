@@ -20,6 +20,7 @@ import { rateLimit }     from './middleware/rate-limiter'
 import { telegramAuth }  from './middleware/auth'
 import { createReadinessHandler } from './middleware/readiness'
 import { executeRows }   from './db/connection'
+import { questionsRepository } from './modules/questions/questions.repository'
 
 import authRouter        from './modules/auth/auth.router'
 import usersRouter       from './modules/users/users.router'
@@ -63,9 +64,13 @@ export function createApp() {
     res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })
   })
 
-  // Readiness — LIVENESS'dan farqli: DB ping majburiy. Deploy/monitoring
-  // faqat ready nodeni tanlashi kerak (DB uzilib ketsa node trafikdan chiqadi).
-  app.get('/api/ready', createReadinessHandler(() => executeRows(sql`SELECT 1`)))
+  // Readiness — LIVENESS'dan farqli: DB ping + question pool loaded check.
+  // Deploy/monitoring faqat ready nodeni tanlashi kerak (DB/pool yo'q bo'lsa 503).
+  app.get('/api/ready', createReadinessHandler(async () => {
+    await executeRows(sql`SELECT 1`)  // DB connectivity
+    const poolReady = await questionsRepository.isPoolReady()
+    if (!poolReady) throw new Error('Question pool not loaded')
+  }))
 
   // Global IP-based rate limit (per-endpoint limiters may be stricter).
   // 120/min per-IP: oddiy foydalanuvchi uchun kafolatli (sahifa yuklash

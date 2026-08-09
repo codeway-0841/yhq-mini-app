@@ -23,6 +23,17 @@ export const questionsRepository = {
       db.select().from(questions).orderBy(asc(questions.id)))
   },
 
+  /** Readiness check — question pool loaded va non-empty */
+  async isPoolReady(): Promise<boolean> {
+    try {
+      const pool = await questionsRepository.findAll()
+      return pool.length > 0
+    } catch (err) {
+      console.error('[questions] Pool readiness check failed:', err)
+      return false
+    }
+  },
+
   findById(questionId: number) {
     return cached(`questions:id:${questionId}`, async () => {
       const [row] = await db.select().from(questions).where(eq(questions.id, questionId))

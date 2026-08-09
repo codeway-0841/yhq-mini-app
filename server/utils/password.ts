@@ -20,12 +20,20 @@ export function hashPassword(password: string): string {
 /** Parol saqlangan hash'ga mos keladimi (timing-safe). Format buzilgan bo'lsa false. */
 export function verifyPassword(password: string, stored: string): boolean {
   const sep = stored.indexOf(':')
-  if (sep <= 0) return false
-  const salt = stored.slice(0, sep)
-  const expectedHex = stored.slice(sep + 1)
-  if (!/^[0-9a-f]+$/.test(salt) || !/^[0-9a-f]+$/.test(expectedHex)) return false
-  const expected = Buffer.from(expectedHex, 'hex')
-  const computed = scryptSync(password, salt, KEYLEN)
-  if (computed.length !== expected.length) return false
+  const salt = sep > 0 ? stored.slice(0, sep) : ''
+  const expectedHex = sep > 0 ? stored.slice(sep + 1) : ''
+  // Malformed hashes ALWAYS run scrypt to hide format validation timing.
+  // Use constant dummy salt (not randomBytes) so timing is deterministic.
+  const DUMMY_SALT = '0'.repeat(32)
+  const saltValid = /^[0-9a-f]{32}$/.test(salt)
+  const saltHex = saltValid ? salt : DUMMY_SALT
+  // Hash must be exactly 128 hex chars (64 bytes from scrypt KEYLEN)
+  const expectedValid = /^[0-9a-f]{128}$/.test(expectedHex)
+  const expected = expectedValid ? Buffer.from(expectedHex, 'hex') : Buffer.alloc(KEYLEN)
+
+  const computed = scryptSync(password, saltHex, KEYLEN)
+
+  // Only compare after scrypt completes, so timing reveals nothing about format
+  if (sep <= 0 || !saltValid || !expectedValid || computed.length !== expected.length) return false
   return timingSafeEqual(computed, expected)
 }
