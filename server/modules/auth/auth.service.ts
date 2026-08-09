@@ -120,15 +120,22 @@ async function respondWithNewSession(userId: string, provider: AuthProvider) {
 
 interface AccountStats { id: string; answered: number; hasPayments: boolean }
 
-/** Bo'shlik tekshiruvi — total_answered=0 VA payment'siz (link merge qarori uchun). */
+/** Bo'shlik tekshiruvi — total_answered=0 VA payment'siz (link merge qarori uchun).
+ *  Transaction context: SELECT FOR UPDATE row-level lock (partial TOCTOU protection).
+ *  Locks users rows; progress can't be locked (LEFT JOIN nullable side errors).
+ *  Small race window exists (progress change between check and merge), but merge
+ *  functions (adoptPhoneIntoTelegram/absorbEmptyAccount) re-validate + fail safely.
+ *  Sorted ids prevent deadlock. */
 async function accountStats(ids: [string, string], txOrDb?: DB): Promise<Map<string, AccountStats>> {
+  const sorted = [...ids].sort()  // Deadlock prevention: consistent lock order
   const rows = await executeRows<{ id: string; answered: number; has_pay: boolean }>(sql`
     SELECT u.id,
            COALESCE(p.total_answered, 0)::int AS answered,
            EXISTS (SELECT 1 FROM payments pay WHERE pay.user_id = u.id) AS has_pay
     FROM users u
     LEFT JOIN progress p ON p.user_id = u.id
-    WHERE u.id IN (${ids[0]}, ${ids[1]})
+    WHERE u.id IN (${sorted[0]}, ${sorted[1]})
+    FOR UPDATE OF u
   `, txOrDb)
   return new Map(rows.map((r) => [r.id, { id: r.id, answered: Number(r.answered), hasPayments: r.has_pay }]))
 }
