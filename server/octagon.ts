@@ -201,15 +201,26 @@ function startMatch(p1: Player, p2: Player): void {
 }
 
 function startRound(match: Match): void {
+  // Defensive: don't start new round if one already active (prevents state corruption on rapid calls)
+  if (match.roundState && !match.roundState.resolved) {
+    console.warn('[octagon] startRound blocked - round already active', { matchId: match.id, round: match.round })
+    return
+  }
+
+  // Check end condition BEFORE scheduling timer to prevent leak on rapid cleanup
   if (match.round >= match.questionIds.length) {
     endMatch(match)
     return
   }
 
+  // Paranoid cleanup: clear orphaned timer (edge case: resolved=true but timer exists from reconnect flow)
+  if (match.roundState?.timer) {
+    clearTimeout(match.roundState.timer)
+  }
+
   const index      = match.round
   const questionId = match.questionIds[index]
-  const timer      = setTimeout(() => resolveRound(match, index), ROUND_TIMEOUT)
-
+  const timer = setTimeout(() => resolveRound(match, index), ROUND_TIMEOUT)
   match.roundState = { answers: new Map(), timer, resolved: false, startedAt: Date.now(), paused: false, remainingMs: ROUND_TIMEOUT }
 
   for (const p of match.players) {

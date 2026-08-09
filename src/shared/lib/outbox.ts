@@ -192,6 +192,22 @@ function atomicUpdate(userId: string, fn: (entries: OutboxEntry[]) => OutboxEntr
   return operation
 }
 
+function atomicRead<T>(userId: string, fn: (entries: OutboxEntry[]) => T): Promise<T> {
+  const key = `outbox:${userId}`
+  const existing = locks.get(key) ?? Promise.resolve()
+
+  const operation = existing.then(() => fn(load(userId)))
+  const lockPromise = operation.then(() => {})
+
+  // Register in locks to serialize with concurrent writes
+  locks.set(key, lockPromise)
+  lockPromise.finally(() => {
+    if (locks.get(key) === lockPromise) locks.delete(key)
+  })
+
+  return operation
+}
+
 async function removeEntry(userId: string, id: string): Promise<void> {
   await atomicUpdate(userId, entries => entries.filter(e => e.id !== id))
 }
@@ -207,8 +223,10 @@ export async function flushOutbox(userId: string): Promise<void> {
   flushing.add(userId)
   try {
     for (;;) {
-      const head = load(userId)[0]
+      // Read head via atomicRead to serialize with enqueue (prevent stale read race)
+      const head = await atomicRead(userId, entries => entries[0])
       if (!head) break
+
       try {
         await execute(userId, head)
         await removeEntry(userId, head.id)
