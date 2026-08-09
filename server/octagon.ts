@@ -454,9 +454,14 @@ function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: strin
     return
   }
 
-  // Re-joining while already queued — cancel old timer first
+  // Re-joining while already queued — cancel old timer + close old socket (tab duplication)
   const existing = queue.get(userId)
-  if (existing?.queueTimer) clearTimeout(existing.queueTimer)
+  if (existing) {
+    if (existing.queueTimer) clearTimeout(existing.queueTimer)
+    if (existing.ws !== ws && existing.ws.readyState === WebSocket.OPEN) {
+      existing.ws.close(1000, 'replaced_by_new_tab')
+    }
+  }
 
   // Find a waiting opponent (not self) — FAQAT bir xil fan tanlaganlar
   const waiting = [...queue.values()].find((p) => p.userId !== userId && p.subjectId === subjectId)

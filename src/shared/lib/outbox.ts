@@ -142,7 +142,8 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
   }
 }
 
-/** 4xx — server so'rovni qat'iy rad etgan: qayta yuborish befoyda. */
+/** 4xx — server so'rovni qat'iy rad etgan: qayta yuborish befoyda.
+ *  Retryable 4xx: only 408 (timeout), 429 (rate limit). */
 function isFatalClientError(err: unknown): boolean {
   if (err instanceof ApiError) {
     return err.status >= 400 && err.status < 500 && err.status !== 408 && err.status !== 429
