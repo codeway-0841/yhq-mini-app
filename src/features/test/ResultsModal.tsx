@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { RotateCcw, Share2 } from 'lucide-react'
+import { RotateCcw, Share2, X } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { shareUrl } from '../../platform/telegram'
@@ -36,8 +36,11 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
   return (
     <div className="fixed inset-0 z-50 flex items-end">
       {passed && !hideVerdict && <Confetti />}
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" />
-      <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto">
+      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onFinish} />
+      <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+        <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg transition-colors">
+          <X size={16} />
+        </button>
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict}
@@ -92,6 +95,7 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
         <div className="grid grid-cols-8 gap-1.5 mb-6">
           {results.map((r, i) => (
             <button key={r.questionId} onClick={() => onGoToQuestion(i)}
+              aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : tt('unanswered')}`}
               className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-bold transition-all active:scale-90 ${
                 r.status === 'correct'   ? 'bg-duo-green text-ponprimary' :
                 r.status === 'incorrect' ? 'bg-duo-red text-white'   :
@@ -104,8 +108,9 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
 
         <div className="flex gap-3">
           <button onClick={onRetry}
+            aria-label={tt('retry')}
             className="btn-3d-ghost flex-1 py-3.5 rounded-2xl font-extrabold flex items-center justify-center gap-2">
-            <RotateCcw size={16} />
+            <RotateCcw size={16} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}

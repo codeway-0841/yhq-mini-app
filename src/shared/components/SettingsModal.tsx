@@ -65,6 +65,18 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
     document.body.dataset.accent = resolveAccent(useAppStore.getState().accent, useAppStore.getState().tariff === 'premium')
   }, [])
 
+  // Escape tugmasi bilan yopish
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        if (picker) setPicker(null)
+        else onClose()
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [picker, onClose])
+
   const set = <K extends keyof ApiSettings>(key: K, val: ApiSettings[K]) =>
     setLocal((s) => ({ ...s, [key]: val }))
 
@@ -98,43 +110,43 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
         {/* Kontent — scrollable */}
         <div className="flex-1 overflow-y-auto px-5">
-          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextCorrect')}>
+          <Row icon={Play} iconColor="#3b82f6" label={tt('autoNextCorrect')}>
             <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
           </Row>
-          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextWrong')}>
+          <Row icon={Play} iconColor="#3b82f6" label={tt('autoNextWrong')}>
             <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
           </Row>
-          <Row icon={Zap} iconColor="#94a3b8" label={tt('noAnimation')}>
+          <Row icon={Zap} iconColor="#f59e0b" label={tt('noAnimation')}>
             <Toggle label={tt('noAnimation')} checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
           </Row>
-          <Row icon={Shuffle} iconColor="#94a3b8" label={tt('shuffleOptions')}>
+          <Row icon={Shuffle} iconColor="#8b5cf6" label={tt('shuffleOptions')}>
             <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
           </Row>
 
           {/* Shrift o'lchami — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('fontSize')}>
-            <Row icon={Type} iconColor="#94a3b8" label={tt('fontSize')}>
+          <button className="w-full text-left" onClick={() => setPicker('fontSize')} aria-label={`${tt('fontSize')}: ${fontSizeLabel}`}>
+            <Row icon={Type} iconColor="#22c55e" label={tt('fontSize')}>
               <span className={valueBtn}>{fontSizeLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Shrift uslubi — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('fontStyle')}>
-            <Row icon={Type} iconColor="#94a3b8" label={tt('fontStyle')}>
+          <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
+            <Row icon={Type} iconColor="#22c55e" label={tt('fontStyle')}>
               <span className={valueBtn}>{fontStyleLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Ilova tili — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('language')}>
-            <Row icon={Globe} iconColor="#94a3b8" label={tt('langLabel')}>
+          <button className="w-full text-left" onClick={() => setPicker('language')} aria-label={`${tt('langLabel')}: ${languageLabel}`}>
+            <Row icon={Globe} iconColor="#3b82f6" label={tt('langLabel')}>
               <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
-          <button className="w-full text-left" onClick={() => setPicker('accent')}>
-            <Row icon={Palette} iconColor="#94a3b8" label={tt('accentThemeLabel')}>
+          <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
+            <Row icon={Palette} iconColor="#ec4899" label={tt('accentThemeLabel')}>
               <span className={valueBtn}>
                 <span className="w-4 h-4 rounded-full border border-line"
                   style={{ background: getAccentTheme(accent).color }} />

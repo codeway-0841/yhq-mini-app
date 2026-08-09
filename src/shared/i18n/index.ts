@@ -182,6 +182,11 @@ const UZ = {
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
   leagueWeekInfo: "Dushanba kuni top 30% yuqoriga, pastki 30% pastga suriladi",
   promoteZone: "Peshlaga yuqori liga", demoteZone: "Pastga tushish zonasi",
+  // UI/UX a11y labels
+  cancelExit: "Bekor qilish", removeSaved: "Saqlanganlardan olib tashlash",
+  timeRemaining: "Qolgan vaqt", of: "dan", zoomImage: "Rasmni kattalashtirish",
+  closeResults: "Natijalarni yopish", closeStudy: "O'rganishni yopish",
+  closeZoom: "Rasmni yopish",
 } as const
 
 type Keys = keyof typeof UZ
@@ -357,6 +362,11 @@ const RU: Record<Keys, string> = {
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",
   leagueWeekInfo: "В понедельник топ 30% поднимаются, последние 30% падают",
   promoteZone: "Зона повышения", demoteZone: "Зона понижения",
+  // UI/UX a11y labels
+  cancelExit: "Отмена", removeSaved: "Удалить из сохранённых",
+  timeRemaining: "Осталось времени", of: "из", zoomImage: "Увеличить изображение",
+  closeResults: "Закрыть результаты", closeStudy: "Закрыть изучение",
+  closeZoom: "Закрыть изображение",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

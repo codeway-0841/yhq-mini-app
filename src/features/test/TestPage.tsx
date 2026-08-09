@@ -347,7 +347,7 @@ export default function TestPage() {
     setConfirmExit(true)
     setToast(tt('exitConfirm'))
     if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
-    exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 3000)
+    exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 8000)
   }, [answers, isFinished, confirmExit, navigate, tt])
 
   // Warn when closing/reloading the page mid-test
@@ -380,26 +380,28 @@ export default function TestPage() {
     <div className="flex flex-col min-h-screen bg-canvas">
       <div className="relative flex items-center justify-between px-4 py-3 border-b border-line">
         <div className="flex items-center gap-2">
-          <button onClick={handleBack} aria-label="Orqaga"
+          <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
             className={`btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center text-lg ${confirmExit ? 'text-duo-red' : ''}`}>
             {confirmExit ? '✕' : '←'}
           </button>
           <button onClick={() => toggleSaved(q.id)}
+            aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
             className={`btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold ${isSaved ? 'text-duo-yellow' : ''}`}>
             <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
+            aria-label={tt('shareApp')}
             className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
         </div>
 
-        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(59,130,246,0.20)]">
-          <span className="text-neon-yellow text-sm">⏱</span>
-          <span className="font-mono font-black text-sm text-fg">{timer}</span>
+        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl min-w-[75px] sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(59,130,246,0.20)]" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+          <span className="text-neon-yellow text-sm flex-shrink-0" aria-hidden="true">⏱</span>
+          <span className="font-mono font-black text-sm text-fg whitespace-nowrap">{timer}</span>
         </div>
 
         {/* Mock imtihon: xatolar hisoblagichi (2 ta = yiqildingiz) */}
@@ -443,7 +445,7 @@ export default function TestPage() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
           <div className="lg:col-start-1 lg:row-start-1">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-              <p className="text-xs text-muted font-medium">
+              <p className="text-xs text-muted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
                 {current + 1} / {activeQuestions.length}
                 {topicLabel ? ` · ${topicLabel}` : ''}
               </p>
@@ -469,16 +471,18 @@ export default function TestPage() {
               {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
               {selected && explanation && (
                 <button onClick={() => setShowExplain(true)}
+                  aria-label={tt('whyThis')}
                   className="flex items-center gap-1.5 bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
-                  <Info size={14} />
+                  <Info size={14} aria-hidden="true" />
                   {tt('whyThis')}
                 </button>
               )}
               {/* AI Tutor — HAMMA javobdan keyin */}
               {selected && (
                 <button onClick={() => setShowAiTutor(true)}
+                  aria-label={tt('askAiExplain')}
                   className="flex items-center gap-1.5 bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
-                  ✨ {tt('askAiExplain')}
+                  <span aria-hidden="true">✨</span> {tt('askAiExplain')}
                 </button>
               )}
             </div>
@@ -488,9 +492,13 @@ export default function TestPage() {
                kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
                rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
             <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in flex items-center justify-center bg-elevated"
-              onClick={() => setZoomed(true)}>
-              <img src={q.image} alt="savol" loading="lazy"
-                className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain" />
+              onClick={() => setZoomed(true)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
+              aria-label={tt('zoomImage')}>
+              <img src={q.image} alt={`${tt('question')} ${current + 1}`} loading="lazy"
+                className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
@@ -509,15 +517,17 @@ export default function TestPage() {
       <div className="fixed right-4 bottom-6 z-40">
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash}
+            aria-label={tt('finish')}
             className="btn-neon flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
-            ✓ {tt('finish')}
+            <span aria-hidden="true">✓</span> {tt('finish')}
           </button>
         ) : (
           <button onClick={handleStudyToggle}
+            aria-label={studyOpen ? tt('closeStudy') : tt('study')}
             className="btn-3d-ghost flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-extrabold">
             {studyOpen
-              ? (<><X size={15} />{tt('study')}</>)
-              : (<><GraduationCap size={16} />{tt('study')}</>)}
+              ? (<><X size={15} aria-hidden="true" />{tt('study')}</>)
+              : (<><GraduationCap size={16} aria-hidden="true" />{tt('study')}</>)}
           </button>
         )}
       </div>
@@ -577,9 +587,13 @@ export default function TestPage() {
       {/* Full-screen image zoom */}
       {zoomed && q.image && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-2 cursor-zoom-out"
-          onClick={() => setZoomed(false)}>
-          <img src={q.image} alt="savol" className="max-w-full max-h-full object-contain" />
-          <span className="absolute top-4 right-4 text-white/70 text-2xl px-2">✕</span>
+          onClick={() => setZoomed(false)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') setZoomed(false) }}
+          aria-label={tt('closeZoom')}>
+          <img src={q.image} alt={`${tt('question')} ${current + 1}`} className="max-w-full max-h-full object-contain" />
+          <span className="absolute top-4 right-4 text-white/70 text-2xl px-2" aria-hidden="true">✕</span>
         </div>
       )}
     </div>
