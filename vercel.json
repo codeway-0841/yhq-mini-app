@@ -12,8 +12,8 @@
     }
   ],
   "functions": {
-    "api/dist/index.js": { "maxDuration": 30 },
-    "api/dist/bot.js":   { "maxDuration": 10 }
+    "api/index.js": { "maxDuration": 30 },
+    "api/bot.js":   { "maxDuration": 10 }
   },
   "headers": [
     {
@@ -38,8 +38,8 @@
     }
   ],
   "rewrites": [
-    { "source": "/api/bot", "destination": "/api/dist/bot" },
-    { "source": "/api/(.*)", "destination": "/api/dist/index" },
+    { "source": "/api/bot", "destination": "/api/bot" },
+    { "source": "/api/(.*)", "destination": "/api/index" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
