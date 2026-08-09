@@ -16,7 +16,7 @@ import { z } from 'zod'
 import { randomBytes } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
-import { executeRows } from '../../db/connection'
+import { executeRows, transaction, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { usersRepository } from '../users/users.repository'
@@ -121,7 +121,7 @@ async function respondWithNewSession(userId: string, provider: AuthProvider) {
 interface AccountStats { id: string; answered: number; hasPayments: boolean }
 
 /** Bo'shlik tekshiruvi — total_answered=0 VA payment'siz (link merge qarori uchun). */
-async function accountStats(ids: [string, string]): Promise<Map<string, AccountStats>> {
+async function accountStats(ids: [string, string], txOrDb?: DB): Promise<Map<string, AccountStats>> {
   const rows = await executeRows<{ id: string; answered: number; has_pay: boolean }>(sql`
     SELECT u.id,
            COALESCE(p.total_answered, 0)::int AS answered,
@@ -129,7 +129,7 @@ async function accountStats(ids: [string, string]): Promise<Map<string, AccountS
     FROM users u
     LEFT JOIN progress p ON p.user_id = u.id
     WHERE u.id IN (${ids[0]}, ${ids[1]})
-  `)
+  `, txOrDb)
   return new Map(rows.map((r) => [r.id, { id: r.id, answered: Number(r.answered), hasPayments: r.has_pay }]))
 }
 
@@ -144,25 +144,35 @@ const isEmptyAccount = (s: AccountStats | undefined) => !!s && s.answered === 0 
  * statement OXIRIDA ishlaydi — delete-cascade va re-INSERT BIR statement'da
  * bo'lsa, yangi qator ham cascade'ga tushib ketardi (Pg CTE + RI trigger tuzog'i).
  */
-async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string): Promise<boolean> {
-  const rows = await executeRows<{ del: number; ren: number }>(sql`
-    WITH del AS (
-      DELETE FROM users
-      WHERE id = ${tgId}
-        AND COALESCE((SELECT total_answered FROM progress WHERE user_id = ${tgId}), 0) = 0
-        AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${tgId})
-        AND id <> ${phoneUserId}
-      RETURNING id
-    ), ren AS (
-      UPDATE users SET id = ${tgId}
-      WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
-      RETURNING id
-    )
-    SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
-  `)
-  const ok = Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
-  if (ok) await authRepository.ensureIdentity('telegram', tgId, tgId)
-  return ok
+async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?: DB): Promise<boolean> {
+  const runInTx = async (tx: DB) => {
+    const rows = await executeRows<{ del: number; ren: number }>(sql`
+      WITH del AS (
+        DELETE FROM users
+        WHERE id = ${tgId}
+          AND COALESCE((SELECT total_answered FROM progress WHERE user_id = ${tgId}), 0) = 0
+          AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${tgId})
+          AND id <> ${phoneUserId}
+        RETURNING id
+      ), ren AS (
+        UPDATE users SET id = ${tgId}
+        WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
+        RETURNING id
+      )
+      SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
+    `, tx)
+    const ok = Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
+    if (ok) {
+      // ensureIdentity must run in same transaction for atomicity
+      await executeRows(sql`
+        INSERT INTO auth_identities (provider, provider_uid, user_id)
+        VALUES ('telegram', ${tgId}, ${tgId})
+        ON CONFLICT (provider, provider_uid) DO NOTHING
+      `, tx)
+    }
+    return ok
+  }
+  return txOrDb ? runInTx(txOrDb) : transaction(runInTx)
 }
 
 /**
@@ -170,32 +180,35 @@ async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string): Promis
  * link_cod'lari `cur` ga ko'chirilib o'chiriladi. BITTA atomik SQL statement.
  * (`other` bo'sh EMAS bo'lsa guard ishlamaydi → chaqiruvchi 409.)
  */
-async function absorbEmptyAccount(cur: string, other: string): Promise<boolean> {
-  const emptyGuard = sql`
-    COALESCE((SELECT total_answered FROM progress WHERE user_id = ${other}), 0) = 0
-    AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${other})
-  `
-  const rows = await executeRows<{ idn: number; del: number }>(sql`
-    WITH idn AS (
-      UPDATE auth_identities SET user_id = ${cur}
-      WHERE user_id = ${other} AND ${emptyGuard}
-      RETURNING provider
-    ), ses AS (
-      UPDATE sessions SET user_id = ${cur}
-      WHERE user_id = ${other} AND EXISTS (SELECT 1 FROM idn)
-      RETURNING token
-    ), lc AS (
-      UPDATE link_codes SET user_id = ${cur}
-      WHERE user_id = ${other} AND EXISTS (SELECT 1 FROM idn)
-      RETURNING code
-    ), del AS (
-      DELETE FROM users
-      WHERE id = ${other} AND EXISTS (SELECT 1 FROM idn)
-      RETURNING id
-    )
-    SELECT (SELECT COUNT(*)::int FROM idn) AS idn, (SELECT COUNT(*)::int FROM del) AS del
-  `)
-  return Number(rows[0]?.idn) > 0 && Number(rows[0]?.del) > 0
+async function absorbEmptyAccount(cur: string, other: string, txOrDb?: DB): Promise<boolean> {
+  const runInTx = async (tx: DB) => {
+    const emptyGuard = sql`
+      COALESCE((SELECT total_answered FROM progress WHERE user_id = ${other}), 0) = 0
+      AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${other})
+    `
+    const rows = await executeRows<{ idn: number; del: number }>(sql`
+      WITH idn AS (
+        UPDATE auth_identities SET user_id = ${cur}
+        WHERE user_id = ${other} AND ${emptyGuard}
+        RETURNING provider
+      ), ses AS (
+        UPDATE sessions SET user_id = ${cur}
+        WHERE user_id = ${other} AND EXISTS (SELECT 1 FROM idn)
+        RETURNING token
+      ), lc AS (
+        UPDATE link_codes SET user_id = ${cur}
+        WHERE user_id = ${other} AND EXISTS (SELECT 1 FROM idn)
+        RETURNING code
+      ), del AS (
+        DELETE FROM users
+        WHERE id = ${other} AND EXISTS (SELECT 1 FROM idn)
+        RETURNING id
+      )
+      SELECT (SELECT COUNT(*)::int FROM idn) AS idn, (SELECT COUNT(*)::int FROM del) AS del
+    `, tx)
+    return Number(rows[0]?.idn) > 0 && Number(rows[0]?.del) > 0
+  }
+  return txOrDb ? runInTx(txOrDb) : transaction(runInTx)
 }
 
 // ── Service ──────────────────────────────────────────────────────────────────
@@ -316,30 +329,32 @@ export const authService = {
       throw new AppError(401, 'invalid_credentials')
     }
 
-    const stats = await accountStats([currentUserId, otherId])
-    const curEmpty   = isEmptyAccount(stats.get(currentUserId))
-    const otherEmpty = isEmptyAccount(stats.get(otherId))
+    await transaction(async (tx) => {
+      const stats = await accountStats([currentUserId, otherId], tx)
+      const curEmpty   = isEmptyAccount(stats.get(currentUserId))
+      const otherEmpty = isEmptyAccount(stats.get(otherId))
 
-    if (!curEmpty && !otherEmpty) throw new AppError(409, 'accounts_merge_required')
+      if (!curEmpty && !otherEmpty) throw new AppError(409, 'accounts_merge_required')
 
-    if (TG_ID_RE.test(currentUserId)) {
-      if (!curEmpty && otherEmpty) {
-        // TG akkaunt (data) telefon akkauntini (bo'sh) yutadi
-        const ok = await absorbEmptyAccount(currentUserId, otherId)
-        if (!ok) throw new AppError(409, 'accounts_merge_required')
+      if (TG_ID_RE.test(currentUserId)) {
+        if (!curEmpty && otherEmpty) {
+          // TG akkaunt (data) telefon akkauntini (bo'sh) yutadi
+          const ok = await absorbEmptyAccount(currentUserId, otherId, tx)
+          if (!ok) throw new AppError(409, 'accounts_merge_required')
+        } else {
+          // Telefon akkaunti (data) bo'sh TG shell'ga ko'chadi — TG id saqlanadi
+          const ok = await adoptPhoneIntoTelegram(currentUserId, otherId, tx)
+          if (!ok) throw new AppError(409, 'accounts_merge_required')
+        }
       } else {
-        // Telefon akkaunti (data) bo'sh TG shell'ga ko'chadi — TG id saqlanadi
-        const ok = await adoptPhoneIntoTelegram(currentUserId, otherId)
+        // Ikkalasi ham telefon akkaunti (kam uchraydigan holat) — bo'sh tomon yutuladi
+        if (!otherEmpty) throw new AppError(409, 'accounts_merge_required')
+        const ok = await absorbEmptyAccount(currentUserId, otherId, tx)
         if (!ok) throw new AppError(409, 'accounts_merge_required')
-        await usersRepository.updatePhone(currentUserId, input.phone).catch(() => false)
       }
-      return { status: 'adopted' as const, ...(await respondWithNewSession(currentUserId, 'phone')) }
-    }
-
-    // Ikkalasi ham telefon akkaunti (kam uchraydigan holat) — bo'sh tomon yutuladi
-    if (!otherEmpty) throw new AppError(409, 'accounts_merge_required')
-    const ok = await absorbEmptyAccount(currentUserId, otherId)
-    if (!ok) throw new AppError(409, 'accounts_merge_required')
+    })
+    // Denormalized phone field + session after transaction commits (retriable, idempotent)
+    await usersRepository.updatePhone(currentUserId, input.phone).catch(() => false)
     return { status: 'adopted' as const, ...(await respondWithNewSession(currentUserId, 'phone')) }
   },
 
@@ -365,55 +380,57 @@ export const authService = {
    * Qaytaradi { status, message } — message UZ tilida bot reply sifatida yuboriladi.
    */
   async linkTelegramByCode(code: string, tg: { id: number }): Promise<{ status: 'linked' | 'conflict' | 'invalid'; message: string }> {
-    const userId = await authRepository.consumeLinkCode(code)
-    if (!userId) {
-      return { status: 'invalid', message: '❌ Kod eskirgan yoki allaqachon ishlatilgan — APK/brauzerdan yangi kod oling.' }
-    }
-
-    const tgId = String(tg.id)
-    if (userId === tgId) {
-      return { status: 'linked', message: '✅ Bu Telegram akkaunt allaqachon shu hisobga ulangan.' }
-    }
-
-    // Telefon akkauntiga TG identity qo'shiladi — yakuniy id HAR DOIM TG raqam
-    const tgExisting = await usersRepository.findById(tgId)
-    const otherId = userId   // ko'rsatkich egasi (odatda 'p_...' telefon akkaunti)
-
-    if (!tgExisting) {
-      // TG user birorta marta Mini App ochmagan — oddiy PK RENAME (data p_ → tg)
-      const rows = await executeRows<{ ren: number }>(sql`
-        WITH ren AS (
-          UPDATE users SET id = ${tgId} WHERE id = ${otherId} RETURNING id
-        ), tgi AS (
-          INSERT INTO auth_identities (provider, provider_uid, user_id)
-          SELECT 'telegram', ${tgId}, ${tgId} WHERE EXISTS (SELECT 1 FROM ren)
-          ON CONFLICT (provider, provider_uid) DO NOTHING
-          RETURNING provider
-        )
-        SELECT COUNT(*)::int AS ren FROM ren
-      `)
-      if (Number(rows[0]?.ren) === 0) return { status: 'invalid', message: '❌ Ichki xatolik — akkaunt topilmadi.' }
-      return { status: 'linked', message: LINK_OK_MSG }
-    }
-
-    const stats = await accountStats([tgId, otherId])
-    const tgEmpty    = isEmptyAccount(stats.get(tgId))
-    const otherEmpty = isEmptyAccount(stats.get(otherId))
-
-    if (!tgEmpty && !otherEmpty) {
-      return {
-        status: 'conflict',
-        message: '⚠️ Bu Telegram akkauntda allaqachon alohida hisob bor — ikkala hisobda ham ma\'lumot bo\'lgani uchun ulash hozircha qo\'llab-quvvatlanmaydi. Iltimos, support bilan bog\'laning.',
+    return transaction(async (tx) => {
+      const userId = await authRepository.consumeLinkCode(code, tx)
+      if (!userId) {
+        return { status: 'invalid', message: '❌ Kod eskirgan yoki allaqachon ishlatilgan — APK/brauzerdan yangi kod oling.' }
       }
-    }
-    if (tgEmpty) {
-      const ok = await adoptPhoneIntoTelegram(tgId, otherId)
-      if (!ok) return { status: 'conflict', message: '⚠️ Ulash vaqtida xatolik — keyinroq urinib ko\'ring.' }
-    } else {
-      const ok = await absorbEmptyAccount(tgId, otherId)
-      if (!ok) return { status: 'conflict', message: '⚠️ Ulash vaqtida xatolik — keyinroq urinib ko\'ring.' }
-    }
-    return { status: 'linked', message: LINK_OK_MSG }
+
+      const tgId = String(tg.id)
+      if (userId === tgId) {
+        return { status: 'linked', message: '✅ Bu Telegram akkaunt allaqachon shu hisobga ulangan.' }
+      }
+
+      // Telefon akkauntiga TG identity qo'shiladi — yakuniy id HAR DOIM TG raqam
+      const tgExisting = await usersRepository.findById(tgId, tx)
+      const otherId = userId   // ko'rsatkich egasi (odatda 'p_...' telefon akkaunti)
+
+      if (!tgExisting) {
+        // TG user birorta marta Mini App ochmagan — oddiy PK RENAME (data p_ → tg)
+        const rows = await executeRows<{ ren: number }>(sql`
+          WITH ren AS (
+            UPDATE users SET id = ${tgId} WHERE id = ${otherId} RETURNING id
+          ), tgi AS (
+            INSERT INTO auth_identities (provider, provider_uid, user_id)
+            SELECT 'telegram', ${tgId}, ${tgId} WHERE EXISTS (SELECT 1 FROM ren)
+            ON CONFLICT (provider, provider_uid) DO NOTHING
+            RETURNING provider
+          )
+          SELECT COUNT(*)::int AS ren FROM ren
+        `, tx)
+        if (Number(rows[0]?.ren) === 0) return { status: 'invalid', message: '❌ Ichki xatolik — akkaunt topilmadi.' }
+        return { status: 'linked', message: LINK_OK_MSG }
+      }
+
+      const stats = await accountStats([tgId, otherId], tx)
+      const tgEmpty    = isEmptyAccount(stats.get(tgId))
+      const otherEmpty = isEmptyAccount(stats.get(otherId))
+
+      if (!tgEmpty && !otherEmpty) {
+        return {
+          status: 'conflict',
+          message: '⚠️ Bu Telegram akkauntda allaqachon alohida hisob bor — ikkala hisobda ham ma\'lumot bo\'lgani uchun ulash hozircha qo\'llab-quvvatlanmaydi. Iltimos, support bilan bog\'laning.',
+        }
+      }
+      if (tgEmpty) {
+        const ok = await adoptPhoneIntoTelegram(tgId, otherId, tx)
+        if (!ok) return { status: 'conflict', message: '⚠️ Ulash vaqtida xatolik — keyinroq urinib ko\'ring.' }
+      } else {
+        const ok = await absorbEmptyAccount(tgId, otherId, tx)
+        if (!ok) return { status: 'conflict', message: '⚠️ Ulash vaqtida xatolik — keyinroq urinib ko\'ring.' }
+      }
+      return { status: 'linked', message: LINK_OK_MSG }
+    })
   },
 
   // ── Session lifecycle ────────────────────────────────────────────────────

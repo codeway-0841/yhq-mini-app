@@ -4,7 +4,7 @@
  */
 
 import { and, eq, isNull, sql } from 'drizzle-orm'
-import { db, executeRows } from '../../db/connection'
+import { db, executeRows, type DB } from '../../db/connection'
 import { users } from '../../schema'
 
 export interface CreateOrUpdateUserInput {
@@ -102,8 +102,8 @@ export const usersRepository = {
     return row!
   },
 
-  async findById(id: string): Promise<typeof users.$inferSelect | null> {
-    const [user] = await db.select().from(users).where(eq(users.id, id))
+  async findById(id: string, txOrDb: DB = db): Promise<typeof users.$inferSelect | null> {
+    const [user] = await txOrDb.select().from(users).where(eq(users.id, id))
     return user ?? null
   },
 

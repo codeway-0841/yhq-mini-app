@@ -4,7 +4,7 @@
  */
 
 import { and, eq, sql } from 'drizzle-orm'
-import { db, executeRows } from '../../db/connection'
+import { db, executeRows, type DB } from '../../db/connection'
 import { authIdentities, sessions, linkCodes } from '../../schema'
 
 export type AuthProvider = 'telegram' | 'phone'
@@ -77,11 +77,12 @@ export const authRepository = {
   /**
    * ATOMIK single-use: DELETE ... RETURNING — ikki parallel iste'molning bittasi
    * muvaffaqiyatli bo'ladi; eskirgan kod null qaytaradi.
+   * @param txOrDb - Optional transaction for multi-step atomic operations
    */
-  async consumeLinkCode(code: string): Promise<string | null> {
+  async consumeLinkCode(code: string, txOrDb?: DB): Promise<string | null> {
     const rows = await executeRows<{ user_id: string }>(sql`
       DELETE FROM link_codes WHERE code = ${code} AND expires_at > now() RETURNING user_id
-    `)
+    `, txOrDb)
     return rows[0]?.user_id ?? null
   },
 }

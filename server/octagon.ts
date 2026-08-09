@@ -375,6 +375,9 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
   }
 
   match.disconnectTimer = setTimeout(() => {
+    // Guard: check match still exists and player still disconnected (rejoin clears timer)
+    if (!matches.has(matchId)) return  // match already cleaned up
+    if (match.disconnectTimer === null) return  // rejoined, timer was cleared
     match.disconnectTimer = null
     // Never came back — opponent wins by forfeit (Yutuqlar uchun ham hisoblanadi).
     const opp = match.players.find((p) => p.userId !== userId)
