@@ -71,10 +71,15 @@ const PUBLIC_AUTH_POST = new Set([
   'auth/phone/register',
   'auth/phone/login',
   'auth/telegram',
+  'auth/telegram-login',
   'auth/otp/request',
   'auth/otp/verify/login',
   'auth/otp/verify/register',
 ])
+
+const PUBLIC_AUTH_GET_PREFIXES = [
+  'auth/telegram-login',
+]
 
 function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
@@ -92,6 +97,14 @@ function isPublicAuthPost(req: Request): boolean {
   // auth/otp/verify/login → 4 segment, auth/phone/login → 3 segment
   const path = seg.slice(0, 4).join('/')
   return PUBLIC_AUTH_POST.has(path) || PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
+}
+
+function isPublicAuthGet(req: Request): boolean {
+  if (req.method !== 'GET') return false
+  const normalized = normalizePath(req.path)
+  if (!normalized) return false
+  const path = normalized.split('/').filter(Boolean).join('/')
+  return PUBLIC_AUTH_GET_PREFIXES.some((prefix) => path.startsWith(prefix))
 }
 
 export function isAuthEnforced(): boolean {
@@ -130,7 +143,7 @@ async function resolveBearer(token: string, req: Request): Promise<boolean> {
 
 export async function telegramAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    if (isPublicGet(req) || isPublicAuthPost(req)) { next(); return }
+    if (isPublicGet(req) || isPublicAuthPost(req) || isPublicAuthGet(req)) { next(); return }
 
     const initData = getInitData(req)
     const bearer   = getBearerToken(req)
