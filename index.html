@@ -19,7 +19,7 @@
     <script>
       // Dev mock: inject fake Telegram user when not in real TG Mini App
       ;(function() {
-        var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
         if (isLocal && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
           var backButtonCallbacks = []
           var mainButtonCallbacks = []
