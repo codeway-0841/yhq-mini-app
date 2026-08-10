@@ -13,8 +13,9 @@ import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
 import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
-import ForgotPasswordModal from './components/ForgotPasswordModal'
 import SocialLoginButtons from './components/SocialLoginButtons'
+import EmailAuthForm from './components/EmailAuthForm'
+import ForgotPasswordForm from './components/ForgotPasswordForm'
 
 /**
  * LoginPage — mehmon rejim YO'Q: initData'siz (APK/brauzer) foydalanuvchi
@@ -25,6 +26,7 @@ export default function LoginPage() {
   const language = useAppStore((s) => s.settings.language)
   const tt = useT(language)
 
+  const [method, setMethod] = useState<'phone' | 'email' | 'forgot'>('phone')
   const [mode, setMode] = useState<'login' | 'register'>('login')
   const [step, setStep] = useState<'form' | 'otp'>('form')
   const [password, setPassword] = useState('')
@@ -32,7 +34,6 @@ export default function LoginPage() {
   const [otpCode, setOtpCode] = useState('')
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [showForgotPassword, setShowForgotPassword] = useState(false)
   const [googleLoading, setGoogleLoading] = useState(false)
   const [appleLoading, setAppleLoading] = useState(false)
   const phone = usePhoneInput()
@@ -166,7 +167,7 @@ export default function LoginPage() {
               <button
                 key={m}
                 type="button"
-                onClick={() => { setMode(m); setStep('form'); setError(null) }}
+                onClick={() => { setMode(m); setStep('form'); setMethod(method === 'forgot' ? 'phone' : method); setError(null) }}
                 className={`py-2 rounded-lg text-[13px] font-bold transition-colors ${
                   mode === m ? 'bg-duo-green text-ponprimary' : 'text-muted'
                 }`}
@@ -176,8 +177,55 @@ export default function LoginPage() {
             ))}
           </div>
 
-          {/* Form: Telefon + Parol (+ Ism register'da) */}
-          {step === 'form' && (
+          {/* Method switcher: Phone | Email */}
+          {method !== 'forgot' && step === 'form' && (
+            <div className="flex gap-2 mb-4">
+              {(['phone', 'email'] as const).map((m) => (
+                <button
+                  key={m}
+                  type="button"
+                  onClick={() => { setMethod(m); setError(null) }}
+                  className={`flex-1 py-1.5 rounded-lg text-[12px] font-bold transition-colors ${
+                    method === m ? 'bg-elevated border border-duo-green text-duo-green' : 'text-muted border border-line'
+                  }`}
+                >
+                  {m === 'phone' ? tt('authPhone') : 'Email'}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Forgot Password Form */}
+          {method === 'forgot' && (
+            <ForgotPasswordForm
+              language={language}
+              onBack={() => setMethod('phone')}
+            />
+          )}
+
+          {/* Email Auth Form */}
+          {method === 'email' && step === 'form' && (
+            <>
+              <EmailAuthForm
+                mode={mode}
+                language={language}
+                onSuccess={applyAuth}
+                onToggleMode={() => setMode(mode === 'login' ? 'register' : 'login')}
+              />
+              {mode === 'login' && (
+                <button
+                  type="button"
+                  onClick={() => setMethod('forgot')}
+                  className="text-[12px] text-duo-green hover:underline mt-2 w-full text-center"
+                >
+                  {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
+                </button>
+              )}
+            </>
+          )}
+
+          {/* Phone Form */}
+          {method === 'phone' && step === 'form' && (
             <form onSubmit={submitForm} className="flex flex-col gap-3" noValidate>
               <label htmlFor="phone" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
                 {tt('authPhone')}
@@ -229,11 +277,11 @@ export default function LoginPage() {
               {mode === 'login' && (
                 <button
                   type="button"
-                  onClick={() => setShowForgotPassword(true)}
+                  onClick={() => setMethod('forgot')}
                   className="text-[12px] text-duo-green hover:underline -mt-2"
                   disabled={busy}
                 >
-                  Parolingizni unutdingizmi?
+                  {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
                 </button>
               )}
 
@@ -252,7 +300,8 @@ export default function LoginPage() {
             </form>
           )}
 
-          {step === 'otp' && (
+          {/* OTP step (phone only) */}
+          {method === 'phone' && step === 'otp' && (
             <form onSubmit={verifyOTP} className="flex flex-col gap-4" noValidate>
               <div className="text-center">
                 <p className="text-[13px] text-muted mb-1">
@@ -293,9 +342,8 @@ export default function LoginPage() {
             </form>
           )}
 
-
           {/* Social Login + Telegram Widget */}
-          {(showWidget || step === 'form') && (
+          {method !== 'forgot' && step === 'form' && (
             <>
               <div className="flex items-center gap-3 my-4">
                 <span className="flex-1 h-px bg-line" />
@@ -303,19 +351,15 @@ export default function LoginPage() {
                 <span className="flex-1 h-px bg-line" />
               </div>
 
-              {/* Social Logins (Google + Apple) */}
-              {step === 'form' && (
-                <SocialLoginButtons
-                  onGoogleClick={handleGoogleLogin}
-                  onAppleClick={handleAppleLogin}
-                  disabled={busy}
-                  googleLoading={googleLoading}
-                  appleLoading={appleLoading}
-                />
-              )}
+              <SocialLoginButtons
+                onGoogleClick={handleGoogleLogin}
+                onAppleClick={handleAppleLogin}
+                disabled={busy}
+                googleLoading={googleLoading}
+                appleLoading={appleLoading}
+              />
 
-              {/* Telegram Login Widget (only outside Mini App) */}
-              {showWidget && step === 'form' && (
+              {showWidget && (
                 <div ref={widgetRef} className="flex justify-center min-h-[40px] mt-3" />
               )}
             </>
@@ -323,14 +367,6 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Forgot Password Modal */}
-      <ForgotPasswordModal
-        isOpen={showForgotPassword}
-        onClose={() => setShowForgotPassword(false)}
-        onSuccess={() => {
-          // TODO: Show success message, optionally auto-login
-        }}
-      />
     </div>
   )
 }

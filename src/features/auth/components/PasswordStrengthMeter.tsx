@@ -48,7 +48,7 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
 
   // Penalties
   if (/(.)\1{2,}/.test(password)) {
-    score = Math.max(2, score - 1)
+    score = Math.max(2, score - 1) as PasswordStrength['score']
     feedback.push(language === 'ru' ? 'Избегайте повторов' : 'Takrorlanuvchi belgilar')
   }
 

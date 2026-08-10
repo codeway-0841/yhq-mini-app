@@ -222,6 +222,28 @@ export const api = {
   verifyOTPRegister: (data: { phone: string; code: string; password: string; firstName: string }) =>
     request<unknown>('POST', '/auth/otp/verify/register', data).then(parseAuthResponse),
 
+  // ── Auth — Email ──────────────────────────────────────────────────────────
+  registerWithEmail: (data: { email: string; password: string; firstName: string }) =>
+    request<unknown>('POST', '/auth/email/register', data).then(parseAuthResponse),
+
+  loginWithEmail: (data: { email: string; password: string }) =>
+    request<unknown>('POST', '/auth/email/login', data).then(parseAuthResponse),
+
+  verifyEmail: (token: string) =>
+    request<{ ok: true }>('POST', '/auth/verify-email', { token }),
+
+  resendEmailVerification: (email: string) =>
+    request<{ ok: true }>('POST', '/auth/resend-verification', { email }),
+
+  requestPasswordReset: (email: string) =>
+    request<{ ok: true }>('POST', '/auth/forgot-password', { email }),
+
+  resetPassword: (token: string, newPassword: string) =>
+    request<{ ok: true }>('POST', '/auth/reset-password', { token, newPassword }),
+
+  changePassword: (currentPassword: string, newPassword: string) =>
+    request<{ ok: true }>('POST', '/auth/change-password', { currentPassword, newPassword }),
+
   // ── Auth — Legacy phone + password ────────────────────────────────────────
   registerPhone: (data: { phone: string; password: string; firstName: string }) =>
     request<unknown>('POST', '/auth/phone/register', data).then(parseAuthResponse),

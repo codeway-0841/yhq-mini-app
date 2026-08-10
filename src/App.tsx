@@ -37,6 +37,8 @@ const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
 // Auth (telefon+parol / TG Login Widget) — faqat initData'siz muhitda ko'rinadi
 const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
+const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage'))
+const ResetPasswordPage = lazy(() => import('./features/auth/pages/ResetPasswordPage'))
 
 import { getStartParam, getTelegramUser, readyAndExpand } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen } from './platform/native'
@@ -291,6 +293,40 @@ export default function App() {
       <>
         <ThemeEffect />
         <SplashScreen />
+      </>
+    )
+  }
+
+  // Email verification/reset pages — accessible without auth (user clicks link from email).
+  // Links arrive as /#/verify-email?token=xxx or /#/reset-password?token=xxx
+  const hash = window.location.hash
+  if (hash.startsWith('#/verify-email')) {
+    return (
+      <>
+        <ThemeEffect />
+        <HashRouter>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/verify-email" element={<VerifyEmailPage />} />
+              <Route path="*" element={<VerifyEmailPage />} />
+            </Routes>
+          </Suspense>
+        </HashRouter>
+      </>
+    )
+  }
+  if (hash.startsWith('#/reset-password')) {
+    return (
+      <>
+        <ThemeEffect />
+        <HashRouter>
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/reset-password" element={<ResetPasswordPage />} />
+              <Route path="*" element={<ResetPasswordPage />} />
+            </Routes>
+          </Suspense>
+        </HashRouter>
       </>
     )
   }
