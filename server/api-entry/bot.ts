@@ -1,6 +1,6 @@
 import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
-import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
+import { Bot, Context, InlineKeyboard, Keyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
 
 import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../shared/premium-plans'
@@ -17,6 +17,9 @@ const BASE_URL = config.deploy.appUrl
 const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
+
+// In-memory: TG user_id → login code (5 min TTL, cleaned on use)
+const loginPendingCodes = new Map<number, string>()
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
@@ -107,6 +110,24 @@ bot.command('start', async (ctx) => {
     await sendPremiumInvoice(ctx, planParam)
     return
   }
+  // Telegram Login: t.me/bot?start=login_<code> — brauzerdan kirish uchun
+  // Bot contact (raqam) so'raydi, phone kelganda session yaratadi
+  if (param && /^login_[A-Za-z0-9_-]{10,16}$/.test(param)) {
+    if (ctx.from) {
+      const kb = new Keyboard()
+        .requestContact("📱 Raqamni ulashish")
+        .resized()
+        .oneTime()
+      loginPendingCodes.set(ctx.from.id, param.slice(6))
+      await ctx.reply(
+        "📱 Ilovaga kirish uchun telefon raqamingizni ulashing.\n\n" +
+        "Quyidagi tugmani bosing — raqamingiz xavfsiz tarzda tekshiriladi:",
+        { reply_markup: kb },
+      )
+    }
+    return
+  }
+
   // Account linking: t.me/bot?start=link_<code> — APK/brauzer (telefon sessiya)
   // yaratgan bir martalik kodni konsumatsiya qilib TG identity'ni shu hisobga ulaydi
   if (param && /^link_[A-Za-z0-9_-]{10,16}$/.test(param)) {
@@ -146,6 +167,37 @@ bot.command('start', async (ctx) => {
     "Xush kelibsiz! 🎓\n\nKIWI — barcha fanlar uchun zamonaviy ta'lim platformasi: testlar, biletlar va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
   )
+})
+
+// ── Contact handler — Telegram Login flow (raqam ulashilganda) ──────────────
+bot.on('message:contact', async (ctx) => {
+  const from = ctx.from
+  if (!from) return
+  const code = loginPendingCodes.get(from.id)
+  if (!code) return  // login flow'da emas — ignore
+
+  loginPendingCodes.delete(from.id)
+
+  const contact = ctx.message.contact
+  if (contact.user_id !== from.id) {
+    await ctx.reply("❌ Faqat o'zingizning raqamingizni ulashishingiz mumkin.", { reply_markup: { remove_keyboard: true } })
+    return
+  }
+
+  const phone = contact.phone_number
+  try {
+    const { authService } = await import('../modules/auth/auth.service')
+    const result = await authService.completeTelegramLoginByPhone(code, phone, {
+      id: from.id,
+      first_name: from.first_name,
+      last_name: from.last_name,
+      username: from.username,
+    })
+    await ctx.reply(result.message, { reply_markup: { remove_keyboard: true } })
+  } catch (err) {
+    console.error('[bot] telegram-login contact handler error:', err)
+    await ctx.reply("❌ Xatolik yuz berdi — qayta urinib ko'ring.", { reply_markup: { remove_keyboard: true } })
+  }
 })
 
 // ── /premium — Stars to'lov oqimi ───────────────────────────────────────────

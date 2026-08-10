@@ -254,6 +254,19 @@ export const api = {
   loginTelegramWidget: (fields: TelegramWidgetFields) =>
     request<unknown>('POST', '/auth/telegram', fields).then(parseAuthResponse),
 
+  createTelegramLogin: () =>
+    request<{ code: string; url: string | null; expiresInSeconds: number }>('POST', '/auth/telegram-login', {}),
+
+  checkTelegramLogin: async (code: string) => {
+    const res = await request<unknown>('GET', `/auth/telegram-login/${code}`)
+    const r = res as { status: string; sessionToken?: string }
+    if (r.status === 'completed' && r.sessionToken) {
+      const parsed = parseAuthResponse(res)
+      return { ...parsed, status: 'completed' as const, sessionToken: r.sessionToken }
+    }
+    return { status: r.status as 'pending' | 'expired' }
+  },
+
   /** Bearer sessiya bilan warm start — profile + providers. */
   getAuthMe: () =>
     request<unknown>('GET', '/auth/me').then(parseAuthSession),

@@ -121,6 +121,26 @@ router.post(
   }),
 )
 
+// POST /api/auth/telegram-login — "Telegram orqali kirish" (public, kod yaratish)
+router.post(
+  '/auth/telegram-login',
+  rateLimit(AUTH_LIMIT),
+  wrap(async (_req, res) => {
+    res.json(await authService.createTelegramLoginCode())
+  }),
+)
+
+// GET /api/auth/telegram-login/:code — polling (session tayyor bo'lganda qaytaradi)
+router.get(
+  '/auth/telegram-login/:code',
+  rateLimit({ maxPerMinute: 30 }),
+  wrap(async (req, res) => {
+    const code = req.params.code
+    if (!code || code.length > 20) throw new AppError(400, 'invalid_code')
+    res.json(await authService.checkTelegramLoginCode(code))
+  }),
+)
+
 // GET /api/auth/me — session warm start (client splash'dan keyin old profile)
 router.get(
   '/auth/me',

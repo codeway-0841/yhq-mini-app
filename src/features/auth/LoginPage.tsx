@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { api, type AuthResponse, type TelegramWidgetFields } from '../../shared/api'
+import { api, type AuthResponse } from '../../shared/api'
 import { config } from '../../shared/config'
 import { setSessionToken } from '../../shared/lib/session'
 import { track } from '../../shared/lib/analytics'
@@ -13,7 +13,6 @@ import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
 import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
-import SocialLoginButtons from './components/SocialLoginButtons'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 
@@ -34,12 +33,12 @@ export default function LoginPage() {
   const [otpCode, setOtpCode] = useState('')
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [googleLoading, setGoogleLoading] = useState(false)
-  const [appleLoading, setAppleLoading] = useState(false)
   const phone = usePhoneInput()
 
-  const showWidget = !getTelegramUser() && Boolean(config.botUsername)
-  const widgetRef = useRef<HTMLDivElement>(null)
+  const showTelegramLogin = !getTelegramUser() && Boolean(config.botUsername)
+  const [telegramLoginUrl, setTelegramLoginUrl] = useState<string | null>(null)
+  const [telegramLoginCode, setTelegramLoginCode] = useState<string | null>(null)
+  const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   /** Login/register/link muvaffaqiyatining YAGONA hydrate yo'li (App boot bilan bir xil). */
   const applyAuth = (data: AuthResponse) => {
@@ -98,56 +97,47 @@ export default function LoginPage() {
     }
   }
 
-  const handleGoogleLogin = () => {
-    setGoogleLoading(true)
-    setError("Google login backend'da hali tayyor emas")
-    setTimeout(() => setGoogleLoading(false), 1000)
-    // TODO: Implement Google OAuth flow
-    // window.location.href = '/api/auth/google'
-  }
 
-  const handleAppleLogin = () => {
-    setAppleLoading(true)
-    setError("Apple login backend'da hali tayyor emas")
-    setTimeout(() => setAppleLoading(false), 1000)
-    // TODO: Implement Apple OAuth flow
-    // window.location.href = '/api/auth/apple'
-  }
-
-
-  // ── Telegram Login Widget (faqat TG WebApp tashqarisida + BOT_USERNAME sozlanganida)
+  // Telegram Login polling — bot session yaratganda avtomatik kirish
   useEffect(() => {
-    if (!showWidget || !widgetRef.current) return
-    const w = window as unknown as { onTelegramAuth?: (user: unknown) => void }
-    w.onTelegramAuth = (raw) => {
-      void (async () => {
-        setBusy(true)
-        setError(null)
-        try {
-          const data = await api.loginTelegramWidget(raw as TelegramWidgetFields)
-          track('login', { provider: 'telegram_widget' })
-          applyAuth(data)
-        } catch (err) {
-          setError(tt(authErrorKey(err)))
-          setBusy(false)
+    if (!telegramLoginCode) return
+    pollRef.current = setInterval(async () => {
+      try {
+        const res = await api.checkTelegramLogin(telegramLoginCode)
+        if (res.status === 'completed' && res.sessionToken) {
+          if (pollRef.current) clearInterval(pollRef.current)
+          track('login', { provider: 'telegram_bot' })
+          applyAuth(res)
+        } else if (res.status === 'expired') {
+          if (pollRef.current) clearInterval(pollRef.current)
+          setTelegramLoginCode(null)
+          setTelegramLoginUrl(null)
+          setError('Kod eskirdi — qayta urinib ko\'ring')
         }
-      })()
-    }
-    const script = document.createElement('script')
-    script.src = 'https://telegram.org/js/telegram-widget.js?22'
-    script.async = true
-    script.setAttribute('data-telegram-login', config.botUsername!)
-    script.setAttribute('data-size', 'large')
-    script.setAttribute('data-onauth', 'onTelegramAuth(user)')
-    script.setAttribute('data-request-access', 'write')
-    const container = widgetRef.current
-    container.appendChild(script)
-    return () => {
-      delete w.onTelegramAuth
-      container.innerHTML = ''
-    }
+      } catch { /* ignore polling errors */ }
+    }, 2000)
+    return () => { if (pollRef.current) clearInterval(pollRef.current) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showWidget])
+  }, [telegramLoginCode])
+
+  const startTelegramLogin = async () => {
+    setBusy(true)
+    setError(null)
+    try {
+      const res = await api.createTelegramLogin()
+      if (res.url) {
+        setTelegramLoginUrl(res.url)
+        setTelegramLoginCode(res.code)
+        window.open(res.url, '_blank')
+      } else {
+        setError('Telegram login sozlanmagan')
+      }
+    } catch (err) {
+      setError(tt(authErrorKey(err)))
+    } finally {
+      setBusy(false)
+    }
+  }
 
   const inputCls =
     'w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg ' +
@@ -342,25 +332,41 @@ export default function LoginPage() {
             </form>
           )}
 
-          {/* Social Login + Telegram Widget */}
-          {method !== 'forgot' && step === 'form' && (
+          {/* Telegram Login */}
+          {method !== 'forgot' && step === 'form' && showTelegramLogin && (
             <>
               <div className="flex items-center gap-3 my-4">
                 <span className="flex-1 h-px bg-line" />
                 <span className="text-[11px] font-bold text-muted uppercase">{tt('authOr')}</span>
                 <span className="flex-1 h-px bg-line" />
               </div>
-
-              <SocialLoginButtons
-                onGoogleClick={handleGoogleLogin}
-                onAppleClick={handleAppleLogin}
-                disabled={busy}
-                googleLoading={googleLoading}
-                appleLoading={appleLoading}
-              />
-
-              {showWidget && (
-                <div ref={widgetRef} className="flex justify-center min-h-[40px] mt-3" />
+              {telegramLoginCode ? (
+                <div className="flex flex-col items-center gap-2 py-3">
+                  <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
+                  <p className="text-[12px] text-muted text-center">
+                    Telegram botda raqamingizni ulashing...
+                  </p>
+                  <a
+                    href={telegramLoginUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[12px] text-[#0088cc] hover:underline"
+                  >
+                    Botni ochish
+                  </a>
+                </div>
+              ) : (
+                <button
+                  type="button"
+                  onClick={startTelegramLogin}
+                  disabled={busy}
+                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-[#0088cc] rounded-xl hover:bg-[#0077b5] transition-all disabled:opacity-50"
+                >
+                  <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                  </svg>
+                  <span className="text-[15px] font-semibold text-white">Telegram orqali kirish</span>
+                </button>
               )}
             </>
           )}
