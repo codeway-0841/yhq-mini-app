@@ -11,6 +11,10 @@ import { flushOutbox } from '../../shared/lib/outbox'
 import { useT } from '../../shared/i18n'
 import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
+import PasswordInput from './components/PasswordInput'
+import OTPInput from './components/OTPInput'
+import ForgotPasswordModal from './components/ForgotPasswordModal'
+import SocialLoginButtons from './components/SocialLoginButtons'
 
 /**
  * LoginPage — mehmon rejim YO'Q: initData'siz (APK/brauzer) foydalanuvchi
@@ -28,6 +32,9 @@ export default function LoginPage() {
   const [otpCode, setOtpCode] = useState('')
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [showForgotPassword, setShowForgotPassword] = useState(false)
+  const [googleLoading, setGoogleLoading] = useState(false)
+  const [appleLoading, setAppleLoading] = useState(false)
   const phone = usePhoneInput()
 
   const showWidget = !getTelegramUser() && Boolean(config.botUsername)
@@ -88,6 +95,22 @@ export default function LoginPage() {
       setError(tt(authErrorKey(err)))
       setBusy(false)
     }
+  }
+
+  const handleGoogleLogin = () => {
+    setGoogleLoading(true)
+    setError("Google login backend'da hali tayyor emas")
+    setTimeout(() => setGoogleLoading(false), 1000)
+    // TODO: Implement Google OAuth flow
+    // window.location.href = '/api/auth/google'
+  }
+
+  const handleAppleLogin = () => {
+    setAppleLoading(true)
+    setError("Apple login backend'da hali tayyor emas")
+    setTimeout(() => setAppleLoading(false), 1000)
+    // TODO: Implement Apple OAuth flow
+    // window.location.href = '/api/auth/apple'
   }
 
 
@@ -189,24 +212,30 @@ export default function LoginPage() {
                     className={inputCls}
                   />
 
-                  <label htmlFor="password" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
-                    {tt('authPassword')}
-                  </label>
-                  <input
+                  <PasswordInput
                     id="password"
-                    type="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={setPassword}
+                    label={tt('authPassword')}
                     autoComplete="new-password"
-                    maxLength={72}
                     disabled={busy}
-                    className={inputCls}
+                    showStrengthMeter
                   />
-                  <p className="text-[11px] text-muted -mt-1.5">{tt('authPasswordHint')}</p>
                 </>
               )}
 
               {error && <p className="text-[12px] font-semibold text-duo-red">{error}</p>}
+
+              {mode === 'login' && (
+                <button
+                  type="button"
+                  onClick={() => setShowForgotPassword(true)}
+                  className="text-[12px] text-duo-green hover:underline -mt-2"
+                  disabled={busy}
+                >
+                  Parolingizni unutdingizmi?
+                </button>
+              )}
 
               <button
                 type="submit"
@@ -224,36 +253,40 @@ export default function LoginPage() {
           )}
 
           {step === 'otp' && (
-            <form onSubmit={verifyOTP} className="flex flex-col gap-3" noValidate>
-              <p className="text-[13px] text-muted">
-                <strong className="text-fg">{phone.value}</strong> raqamiga SMS kod yuborildi
-              </p>
-              <label htmlFor="otp-code" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
-                6 raqamli kod
-              </label>
-              <input
-                id="otp-code"
+            <form onSubmit={verifyOTP} className="flex flex-col gap-4" noValidate>
+              <div className="text-center">
+                <p className="text-[13px] text-muted mb-1">
+                  SMS kod yuborildi
+                </p>
+                <p className="text-[15px] font-bold text-fg">{phone.value}</p>
+              </div>
+
+              <OTPInput
                 value={otpCode}
-                onChange={(e) => setOtpCode(e.target.value.replace(/\D/g, ''))}
-                inputMode="numeric"
-                maxLength={6}
+                onChange={setOtpCode}
                 disabled={busy}
-                className={inputCls}
-                placeholder="123456"
+                error={!!error}
               />
-              {error && <p className="text-[12px] font-semibold text-duo-red">{error}</p>}
+
+              {error && (
+                <p className="text-[12px] font-semibold text-duo-red text-center animate-fadeIn">
+                  {error}
+                </p>
+              )}
+
               <button
                 type="submit"
                 disabled={otpCode.length !== 6 || busy}
-                className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] mt-1 flex items-center justify-center gap-2"
+                className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] flex items-center justify-center gap-2"
               >
                 {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
               </button>
+
               <button
                 type="button"
                 onClick={() => { setStep('form'); setOtpCode(''); setError(null) }}
-                className="text-[13px] text-muted hover:text-fg transition-colors"
+                className="text-[13px] text-muted hover:text-fg transition-colors text-center"
               >
                 ← Orqaga
               </button>
@@ -261,19 +294,43 @@ export default function LoginPage() {
           )}
 
 
-          {/* Telegram Login Widget — faqat brauzer/APK'da (Mini App'da initData yo'li bor) */}
-          {showWidget && (
+          {/* Social Login + Telegram Widget */}
+          {(showWidget || step === 'form') && (
             <>
               <div className="flex items-center gap-3 my-4">
                 <span className="flex-1 h-px bg-line" />
                 <span className="text-[11px] font-bold text-muted uppercase">{tt('authOr')}</span>
                 <span className="flex-1 h-px bg-line" />
               </div>
-              <div ref={widgetRef} className="flex justify-center min-h-[40px]" />
+
+              {/* Social Logins (Google + Apple) */}
+              {step === 'form' && (
+                <SocialLoginButtons
+                  onGoogleClick={handleGoogleLogin}
+                  onAppleClick={handleAppleLogin}
+                  disabled={busy}
+                  googleLoading={googleLoading}
+                  appleLoading={appleLoading}
+                />
+              )}
+
+              {/* Telegram Login Widget (only outside Mini App) */}
+              {showWidget && step === 'form' && (
+                <div ref={widgetRef} className="flex justify-center min-h-[40px] mt-3" />
+              )}
             </>
           )}
         </div>
       </div>
+
+      {/* Forgot Password Modal */}
+      <ForgotPasswordModal
+        isOpen={showForgotPassword}
+        onClose={() => setShowForgotPassword(false)}
+        onSuccess={() => {
+          // TODO: Show success message, optionally auto-login
+        }}
+      />
     </div>
   )
 }

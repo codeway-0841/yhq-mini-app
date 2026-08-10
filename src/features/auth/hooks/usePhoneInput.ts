@@ -12,6 +12,10 @@ export function usePhoneInput() {
     setDigitsState(toE164(raw).slice(4)) // "+998" prefikssiz qism (9 raqamga clamp'langan)
   }, [])
 
+  const reset = useCallback(() => {
+    setDigitsState('')
+  }, [])
+
   const value = `+998${digits}`
-  return { value, digits, setDigits, isValid: isValidPhone(value) }
+  return { value, digits, setDigits, reset, isValid: isValidPhone(value) }
 }

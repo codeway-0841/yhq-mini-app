@@ -17,6 +17,84 @@
     <title>KIWI</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
+      // Dev mock: inject fake Telegram user when not in real TG Mini App
+      ;(function() {
+        var isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        if (isLocal && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
+          var backButtonCallbacks = []
+          var mainButtonCallbacks = []
+
+          window.Telegram = window.Telegram || {}
+          window.Telegram.WebApp = {
+            ready: function() { console.log('[DEV] Telegram.WebApp.ready()') },
+            expand: function() { console.log('[DEV] Telegram.WebApp.expand()') },
+            close: function() { console.log('[DEV] Telegram.WebApp.close()') },
+            openLink: function(url) { window.open(url, '_blank') },
+            openTelegramLink: function(url) { console.log('[DEV] openTelegramLink:', url) },
+            shareURL: function(url, text) { console.log('[DEV] shareURL:', url, text) },
+            version: '6.0',
+            platform: 'web',
+            colorScheme: 'dark',
+            themeParams: {},
+            initData: 'query_id=DEV&user=%7B%22id%22%3A999999999%2C%22first_name%22%3A%22Dev%22%2C%22last_name%22%3A%22User%22%2C%22username%22%3A%22devuser%22%7D&auth_date=1723000000&hash=dev',
+            initDataUnsafe: {
+              user: {
+                id: 999999999,
+                first_name: 'Dev',
+                last_name: 'User',
+                username: 'devuser'
+              }
+            },
+            BackButton: {
+              isVisible: false,
+              show: function() { this.isVisible = true; console.log('[DEV] BackButton.show()') },
+              hide: function() { this.isVisible = false; console.log('[DEV] BackButton.hide()') },
+              onClick: function(cb) { if (typeof cb === 'function') backButtonCallbacks.push(cb) },
+              offClick: function(cb) {
+                var idx = backButtonCallbacks.indexOf(cb)
+                if (idx !== -1) backButtonCallbacks.splice(idx, 1)
+              }
+            },
+            MainButton: {
+              isVisible: false,
+              isActive: true,
+              text: '',
+              color: '#5be300',
+              textColor: '#ffffff',
+              show: function() { this.isVisible = true; console.log('[DEV] MainButton.show()') },
+              hide: function() { this.isVisible = false; console.log('[DEV] MainButton.hide()') },
+              enable: function() { this.isActive = true },
+              disable: function() { this.isActive = false },
+              showProgress: function() { console.log('[DEV] MainButton.showProgress()') },
+              hideProgress: function() { console.log('[DEV] MainButton.hideProgress()') },
+              setText: function(text) { this.text = text },
+              onClick: function(cb) { if (typeof cb === 'function') mainButtonCallbacks.push(cb) },
+              offClick: function(cb) {
+                var idx = mainButtonCallbacks.indexOf(cb)
+                if (idx !== -1) mainButtonCallbacks.splice(idx, 1)
+              }
+            },
+            onEvent: function() {},
+            offEvent: function() {}
+          }
+
+          // Dev keyboard shortcuts: Esc = BackButton, Ctrl+Enter = MainButton
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && window.Telegram.WebApp.BackButton.isVisible) {
+              console.log('[DEV] BackButton triggered (Esc)')
+              backButtonCallbacks.forEach(function(cb) { cb() })
+            }
+            if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && window.Telegram.WebApp.MainButton.isVisible && window.Telegram.WebApp.MainButton.isActive) {
+              console.log('[DEV] MainButton triggered (Ctrl+Enter)')
+              mainButtonCallbacks.forEach(function(cb) { cb() })
+            }
+          })
+
+          console.log('[DEV] Mock Telegram user injected (id: 999999999). Shortcuts: Esc=Back, Ctrl+Enter=Main')
+        }
+      })()
+    </script>
+    <script>
       ;(function () {
         try {
           var raw = localStorage.getItem('yhq-app-store')
