@@ -32,7 +32,10 @@ export function toE164(raw: string): string {
 /** UI i18n kalitlari (auth bo'limi) — LoginPage xato mapping'i */
 export type AuthErrorKey =
   | 'authPhoneTaken'
+  | 'authEmailTaken'
+  | 'authWeakPassword'
   | 'authInvalidCreds'
+  | 'authInvalidEmail'
   | 'authInvalidWidget'
   | 'authRateLimited'
   | 'authGenericError'
@@ -42,7 +45,10 @@ export function authErrorKey(err: unknown): AuthErrorKey {
   if (err instanceof ApiError) {
     if (err.status === 429) return 'authRateLimited'
     if (err.code === 'phone_taken') return 'authPhoneTaken'
+    if (err.code === 'email_taken') return 'authEmailTaken'
+    if (err.code === 'weak_password') return 'authWeakPassword'
     if (err.code === 'invalid_credentials') return 'authInvalidCreds'
+    if (err.code === 'invalid_email') return 'authInvalidEmail'
     if (err.code === 'invalid_widget_signature') return 'authInvalidWidget'
   }
   return 'authGenericError'

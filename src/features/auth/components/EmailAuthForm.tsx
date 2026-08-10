@@ -10,7 +10,7 @@ interface EmailAuthFormProps {
   mode: 'login' | 'register'
   language: 'uz' | 'ru'
   onSuccess: (data: AuthResponse) => void
-  onToggleMode: () => void
+  onToggleMode?: () => void
 }
 
 export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode }: EmailAuthFormProps) {
@@ -122,14 +122,16 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
         {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
       </button>
 
-      <button
-        type="button"
-        onClick={onToggleMode}
-        className="text-[13px] text-muted hover:text-fg transition-colors text-center"
-        disabled={busy}
-      >
-        {mode === 'login' ? tt('authNoAccount') : tt('authHaveAccount')}
-      </button>
+      {onToggleMode && (
+        <button
+          type="button"
+          onClick={onToggleMode}
+          className="text-[13px] text-muted hover:text-fg transition-colors text-center"
+          disabled={busy}
+        >
+          {mode === 'login' ? tt('authNoAccount') : tt('authHaveAccount')}
+        </button>
+      )}
     </form>
   )
 }
