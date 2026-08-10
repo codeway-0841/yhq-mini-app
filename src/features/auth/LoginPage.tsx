@@ -6,7 +6,8 @@ import { track } from '../../shared/lib/analytics'
 import { ensureAccountOwner } from '../../shared/store/account'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { getTelegramUser } from '../../platform/telegram'
+import { getTelegramUser, getTelegramWebApp } from '../../platform/telegram'
+import { isNativeApp } from '../../platform/native'
 import { flushOutbox } from '../../shared/lib/outbox'
 import { useT } from '../../shared/i18n'
 import { authErrorKey } from './validation'
@@ -143,12 +144,28 @@ export default function LoginPage() {
     'w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg ' +
     'placeholder:text-muted outline-none focus:border-duo-green transition-colors'
 
+  const isWeb = !getTelegramWebApp() && !isNativeApp()
+
   return (
     <div className="min-h-screen bg-canvas flex flex-col items-center justify-center px-6 py-10">
       <div className="w-full max-w-[380px] animate-premiumIn">
-        <img src="/images/splash-brand.png" alt="KIWI" className="w-36 rounded-[1.75rem] mx-auto" />
-        <h1 className="text-[22px] font-black text-fg text-center mt-5">{tt('authWelcome')}</h1>
-        <p className="text-[13px] text-muted text-center mt-1 mb-6">{tt('authTagline')}</p>
+        {isWeb ? (
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <img src="/images/splash-brand.png" alt="KIWI" className="w-14 rounded-xl" />
+              <div>
+                <h1 className="text-[18px] font-black text-fg leading-tight">{tt('authWelcome')}</h1>
+                <p className="text-[12px] text-muted">{tt('authTagline')}</p>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <img src="/images/splash-brand.png" alt="KIWI" className="w-36 rounded-[1.75rem] mx-auto" />
+            <h1 className="text-[22px] font-black text-fg text-center mt-5">{tt('authWelcome')}</h1>
+            <p className="text-[13px] text-muted text-center mt-1 mb-6">{tt('authTagline')}</p>
+          </>
+        )}
 
         <div className="card-premium p-4">
           {/* Segment: Kirish | Ro'yxatdan o'tish */}
