@@ -2,9 +2,12 @@
  * Auth router — multi-provider login va account linking endpoint'lari.
  *
  * PUBLIC (middleware'da alohida ruxsat — credentials YO'Q holda chaqiriladi):
- *   POST /api/auth/phone/register   {phone, password, firstName}
- *   POST /api/auth/phone/login      {phone, password}
- *   POST /api/auth/telegram         {id, first_name, ..., auth_date, hash}  (Login Widget)
+ *   POST /api/auth/otp/request           {phone}                → {sent: true}
+ *   POST /api/auth/otp/verify/login      {phone, code}          → AuthResponse
+ *   POST /api/auth/otp/verify/register   {phone, code, password, firstName} → AuthResponse
+ *   POST /api/auth/phone/register        {phone, password, firstName}  (legacy)
+ *   POST /api/auth/phone/login           {phone, password}             (legacy)
+ *   POST /api/auth/telegram              {id, first_name, ..., hash}   (Login Widget)
  * HIMOYALI (requireAuth — Bearer session YOKI initData):
  *   POST /api/auth/phone/link       {phone, password}   (Profil "Hisobni bog'lash")
  *   POST /api/auth/tg-link-code     → {code, url}       (APK → bot deep-link)
@@ -22,12 +25,47 @@ import { requireAuth } from '../../middleware/auth'
 import {
   authService,
   PhoneRegisterSchema, PhoneLoginSchema, PhoneLinkSchema, TgWidgetLoginSchema,
+  RequestOTPSchema, VerifyOTPLoginSchema, VerifyOTPRegisterSchema,
 } from './auth.service'
 
 const router = Router()
 
 /** Login urinishlari — IP bo'yicha 10/min (parol brute-force himoyasi) */
 const AUTH_LIMIT = { maxPerMinute: 10 }
+
+// ── SMS OTP flow ────────────────────────────────────────────────────────────
+
+// POST /api/auth/otp/request — SMS kod yuborish
+router.post(
+  '/auth/otp/request',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: RequestOTPSchema }),
+  wrap(async (req, res) => {
+    res.json(await authService.requestOTP(req.body))
+  }),
+)
+
+// POST /api/auth/otp/verify/login — OTP bilan kirish (mavjud akkaunt)
+router.post(
+  '/auth/otp/verify/login',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: VerifyOTPLoginSchema }),
+  wrap(async (req, res) => {
+    res.json(await authService.verifyOTPLogin(req.body))
+  }),
+)
+
+// POST /api/auth/otp/verify/register — OTP bilan ro'yxatdan o'tish
+router.post(
+  '/auth/otp/verify/register',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: VerifyOTPRegisterSchema }),
+  wrap(async (req, res) => {
+    res.status(201).json(await authService.verifyOTPRegister(req.body))
+  }),
+)
+
+// ── Legacy telefon + parol flow ─────────────────────────────────────────────
 
 // POST /api/auth/phone/register
 router.post(

@@ -176,6 +176,13 @@
       "when": 1786215680486,
       "tag": "0024_fk_on_update_cascade",
       "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1786357231072,
+      "tag": "0025_add_otp_codes",
+      "breakpoints": true
     }
   ]
 }

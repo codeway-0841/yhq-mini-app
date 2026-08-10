@@ -14,6 +14,7 @@ export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconC
   return (
     <button
       onClick={onClick}
+      aria-label={label}
       className="btn-premium-secondary relative flex items-center gap-2.5 rounded-2xl px-3.5 py-3 w-full"
     >
       {badge != null && (
@@ -44,6 +45,7 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
   return (
     <button
       onClick={onClick}
+      aria-label={`${label}${comingSoon ? ' (tez orada)' : ''}`}
       className={`card-premium relative flex flex-col items-center justify-center text-center gap-2.5 p-3.5 min-h-[104px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
     >
       {badge != null && (

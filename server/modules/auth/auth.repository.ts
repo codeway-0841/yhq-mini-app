@@ -5,7 +5,7 @@
 
 import { and, eq, sql } from 'drizzle-orm'
 import { db, executeRows, type DB } from '../../db/connection'
-import { authIdentities, sessions, linkCodes } from '../../schema'
+import { authIdentities, sessions, linkCodes, otpCodes } from '../../schema'
 
 export type AuthProvider = 'telegram' | 'phone'
 
@@ -84,5 +84,31 @@ export const authRepository = {
       DELETE FROM link_codes WHERE code = ${code} AND expires_at > now() RETURNING user_id
     `, txOrDb)
     return rows[0]?.user_id ?? null
+  },
+
+  /** OTP kod yaratish (hash saqlanadi, plain text SMS'da). Conflict'da eskisini replace qiladi. */
+  async createOTP(phone: string, codeHash: string, expiresAt: Date, txOrDb?: DB): Promise<void> {
+    await (txOrDb ?? db).insert(otpCodes).values({ phone, codeHash, expiresAt })
+      .onConflictDoUpdate({ target: otpCodes.phone, set: { codeHash, expiresAt } })
+  },
+
+  /**
+   * OTP kodini tekshirish va konsumatsiya — ATOMIK single-use.
+   * @returns true = kod to'g'ri va amal qiladi; false = noto'g'ri / eskirgan
+   */
+  async consumeOTP(phone: string, codeHash: string, txOrDb?: DB): Promise<boolean> {
+    const rows = await executeRows<{ phone: string }>(sql`
+      DELETE FROM otp_codes WHERE phone = ${phone} AND code_hash = ${codeHash} AND expires_at > now()
+      RETURNING phone
+    `, txOrDb)
+    return rows.length > 0
+  },
+
+  /** Eskirgan OTP kodlarni tozalash (cron / opportunistic) */
+  async cleanExpiredOTP(txOrDb?: DB): Promise<number> {
+    const rows = await executeRows<{ cnt: number }>(sql`
+      DELETE FROM otp_codes WHERE expires_at <= now() RETURNING 1 AS cnt
+    `, txOrDb)
+    return rows.length
   },
 }

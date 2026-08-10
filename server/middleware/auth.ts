@@ -64,9 +64,17 @@ const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard'])
 /**
  * Auth LOGIN endpoint'lari — credentials'siz KIRISH uchun public:
  *   POST /auth/phone/register · /auth/phone/login · /auth/telegram
+ *   POST /auth/otp/request · /auth/otp/verify/login · /auth/otp/verify/register
  * (qolgan /auth/* — me/logout/link/tg-link-code — requireAuth ostida).
  */
-const PUBLIC_AUTH_POST = new Set(['auth/phone/register', 'auth/phone/login', 'auth/telegram'])
+const PUBLIC_AUTH_POST = new Set([
+  'auth/phone/register',
+  'auth/phone/login',
+  'auth/telegram',
+  'auth/otp/request',
+  'auth/otp/verify/login',
+  'auth/otp/verify/register',
+])
 
 function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
@@ -81,7 +89,9 @@ function isPublicAuthPost(req: Request): boolean {
   const normalized = normalizePath(req.path)
   if (!normalized) return false
   const seg = normalized.split('/').filter(Boolean)
-  return PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
+  // auth/otp/verify/login → 4 segment, auth/phone/login → 3 segment
+  const path = seg.slice(0, 4).join('/')
+  return PUBLIC_AUTH_POST.has(path) || PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
 }
 
 export function isAuthEnforced(): boolean {

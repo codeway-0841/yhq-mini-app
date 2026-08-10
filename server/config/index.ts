@@ -35,9 +35,23 @@ const envSchema = z.object({
   CRON_SECRET:    z.string().optional(),
   SENTRY_DSN:     z.string().optional(),
 
+  /** SMS OTP — Eskiz.uz (O'zbekiston SMS gateway) */
+  ESKIZ_EMAIL:    z.string().email().optional(),
+  ESKIZ_PASSWORD: z.string().optional(),
+  SMS_ENABLED:    z.enum(['true', 'false']).optional().default('false'),
+  SMS_CALLBACK_URL: z.string().url().optional(),
+
   /** Auth sessiyalari — telefon+parol / TG Login Widget login'da yaratiladigan
    *  opaque token TTL (kun). Default 30. */
   SESSION_TTL_DAYS: z.string().regex(/^\d+$/).optional(),
+}).refine((data) => {
+  // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
+  if (data.SMS_ENABLED === 'true') {
+    return Boolean(data.ESKIZ_EMAIL && data.ESKIZ_PASSWORD)
+  }
+  return true
+}, {
+  message: 'ESKIZ_EMAIL and ESKIZ_PASSWORD are required when SMS_ENABLED=true',
 })
 
 // Startup'da parse — format xatolar (masalan bo'sh DATABASE_URL) darhol ko'rinadi
@@ -111,6 +125,14 @@ export const config = {
   /** Multi-provider auth — session sozlamalari */
   auth: {
     sessionTtlDays: Math.max(1, Number(env.SESSION_TTL_DAYS ?? '30')),
+  },
+
+  /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */
+  sms: {
+    enabled:        env.SMS_ENABLED === 'true',
+    eskizEmail:     env.ESKIZ_EMAIL,
+    eskizPassword:  env.ESKIZ_PASSWORD,
+    callbackUrl:    env.SMS_CALLBACK_URL,
   },
 
   sentry: {

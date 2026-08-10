@@ -89,6 +89,21 @@ export const linkCodes = pgTable('link_codes', {
 ])
 
 /**
+ * SMS OTP kodlar — register/login SMS verification uchun.
+ * Bitta telefon uchun faqat BITTA aktiv kod (yangi kod eskisini replace qiladi).
+ * Kod 5 daqiqa amal qiladi, BIR MARTA ishlatiladi (atomik DELETE...RETURNING).
+ * codeHash = SHA-256 hash (plain text DB'da saqlanmaydi, faqat SMS'da yuboriladi).
+ */
+export const otpCodes = pgTable('otp_codes', {
+  phone:     text('phone').primaryKey(),
+  codeHash:  text('code_hash').notNull(),
+  expiresAt: timestamp('expires_at').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_otp_codes_expires').on(t.expiresAt),
+])
+
+/**
  * Test javobi idempotency token'lari — offline outbox replay'da
  * (so'rov serverga yetib borgan, javob yo'qolgan) counterlar ikki marta
  * oshmasligi uchun. Client har mantiqiy javob uchun 1 token yaratadi;

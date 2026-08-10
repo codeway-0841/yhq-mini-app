@@ -26,6 +26,7 @@ import { savedRepository } from '../saved/saved.repository'
 import { toApiUser, toApiProgress, toApiSettings } from '../users/users.service'
 import { hashPassword, verifyPassword } from '../../utils/password'
 import { verifyLoginWidget } from '../../utils/telegram'
+import { sendOTP, generateOTP, hashOTP } from '../../utils/sms'
 
 // ── Zod schemas (router validate uchun eksport) ─────────────────────────────
 
@@ -57,6 +58,28 @@ export const PhoneLinkSchema = z.object({
   firstName: z.string().trim().min(1).max(64).optional(),
 })
 export type PhoneLinkInput = z.infer<typeof PhoneLinkSchema>
+
+/** OTP so'rash (SMS yuborish) */
+export const RequestOTPSchema = z.object({
+  phone: PhoneE164Schema,
+})
+export type RequestOTPInput = z.infer<typeof RequestOTPSchema>
+
+/** OTP tekshirish + login */
+export const VerifyOTPLoginSchema = z.object({
+  phone: PhoneE164Schema,
+  code:  z.string().regex(/^\d{6}$/, '6 raqamli kod kiriting'),
+})
+export type VerifyOTPLoginInput = z.infer<typeof VerifyOTPLoginSchema>
+
+/** OTP tekshirish + register */
+export const VerifyOTPRegisterSchema = z.object({
+  phone:     PhoneE164Schema,
+  code:      z.string().regex(/^\d{6}$/, '6 raqamli kod kiriting'),
+  password:  PasswordSchema,
+  firstName: z.string().trim().min(1, 'Ism kiritilishi shart').max(64),
+})
+export type VerifyOTPRegisterInput = z.infer<typeof VerifyOTPRegisterSchema>
 
 /** Telegram Login Widget callback maydonlari (initData'dan FARQLI format). */
 export const TgWidgetLoginSchema = z.object({
@@ -235,6 +258,80 @@ export interface LinkResponse extends AuthResponse {
 }
 
 export const authService = {
+  // ── SMS OTP flow ─────────────────────────────────────────────────────────
+
+  /**
+   * OTP so'rash — 6 raqamli kod generatsiya + SMS yuborish.
+   * Rate limit: router qatlami (10/min per IP).
+   * SMS-first pattern: foydalanuvchiga kod yetmaydigan holat yo'q.
+   */
+  async requestOTP(input: RequestOTPInput): Promise<{ sent: boolean }> {
+    const code = generateOTP()
+    const codeHash = hashOTP(code)
+    const expiresAt = new Date(Date.now() + 5 * 60_000) // 5 daqiqa
+
+    // SMS yuborish OLDIN — fail-fast, kod yetmasa DB'ga ham saqlanmaydi
+    await sendOTP(input.phone, code)
+
+    // SMS muvaffaqiyatli — DB'ga saqlash (conflict'da replace)
+    await authRepository.createOTP(input.phone, codeHash, expiresAt)
+
+    // Opportunistic cleanup
+    void authRepository.cleanExpiredOTP().catch((e) => console.warn('[OTP cleanup]', e))
+
+    return { sent: true }
+  },
+
+  /**
+   * OTP tekshirish — login (mavjud akkaunt).
+   */
+  async verifyOTPLogin(input: VerifyOTPLoginInput): Promise<AuthResponse> {
+    const codeHash = hashOTP(input.code)
+    const valid = await authRepository.consumeOTP(input.phone, codeHash)
+    if (!valid) throw new AppError(401, 'invalid_otp')
+
+    const identity = await authRepository.findIdentity('phone', input.phone)
+    if (!identity) throw new AppError(404, 'account_not_found')
+
+    return respondWithNewSession(identity.userId, 'phone')
+  },
+
+  /**
+   * OTP tekshirish + register — yangi akkaunt.
+   * Race window minimal (OTP consume atomik, identity check + create qisqa).
+   */
+  async verifyOTPRegister(input: VerifyOTPRegisterInput): Promise<AuthResponse> {
+    const codeHash = hashOTP(input.code)
+    const valid = await authRepository.consumeOTP(input.phone, codeHash)
+    if (!valid) throw new AppError(401, 'invalid_otp')
+
+    const userId = phoneUserId(input.phone)
+
+    // Pre-check — race window
+    const existing = await authRepository.findIdentity('phone', input.phone)
+    if (existing) throw new AppError(409, 'phone_taken')
+
+    // User create (atomik, conflict ignored)
+    await usersRepository.initAtomic({
+      id: userId,
+      firstName: input.firstName.trim(),
+      lastName: '',
+      username: '',
+      photoUrl: '',
+    })
+
+    // Identity create (ON CONFLICT DO NOTHING → created=false)
+    const created = await authRepository.createIdentity(
+      'phone', input.phone, userId, hashPassword(input.password),
+    )
+    if (!created) {
+      // Race: boshqa request o'zib ketdi — user orphaned lekin zararmas
+      throw new AppError(409, 'phone_taken')
+    }
+
+    return respondWithNewSession(userId, 'phone')
+  },
+
   // ── Telefon + parol ──────────────────────────────────────────────────────
 
   /** Ro'yxatdan o'tish — yangi 'p_<digits>' akkaunt + parol + sessiya. */

@@ -212,7 +212,17 @@ export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
 }
 
 export const api = {
-  // ── Auth (multi-provider: telefon+parol / TG Login Widget) ───────────────
+  // ── Auth — SMS OTP ────────────────────────────────────────────────────────
+  requestOTP: (data: { phone: string }) =>
+    request<{ sent: boolean }>('POST', '/auth/otp/request', data),
+
+  verifyOTPLogin: (data: { phone: string; code: string }) =>
+    request<unknown>('POST', '/auth/otp/verify/login', data).then(parseAuthResponse),
+
+  verifyOTPRegister: (data: { phone: string; code: string; password: string; firstName: string }) =>
+    request<unknown>('POST', '/auth/otp/verify/register', data).then(parseAuthResponse),
+
+  // ── Auth — Legacy phone + password ────────────────────────────────────────
   registerPhone: (data: { phone: string; password: string; firstName: string }) =>
     request<unknown>('POST', '/auth/phone/register', data).then(parseAuthResponse),
 

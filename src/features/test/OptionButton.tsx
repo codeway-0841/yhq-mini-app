@@ -34,7 +34,7 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
     fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'
 
   return (
-    <button className={`${base} ${style} mb-2`} style={glow ? { boxShadow: glow } : undefined}
+    <button className={`${base} ${style} mb-2 disabled:cursor-not-allowed`} style={glow ? { boxShadow: glow } : undefined}
       onClick={onSelect} disabled={answered}>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2.5">
