@@ -18,7 +18,7 @@
  */
 
 import { Router } from 'express'
-import { wrap } from '../../middleware/error-handler'
+import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 import { rateLimit } from '../../middleware/rate-limiter'
 import { requireAuth } from '../../middleware/auth'
@@ -26,7 +26,9 @@ import {
   authService,
   PhoneRegisterSchema, PhoneLoginSchema, PhoneLinkSchema, TgWidgetLoginSchema,
   RequestOTPSchema, VerifyOTPLoginSchema, VerifyOTPRegisterSchema,
+  EmailSchema, PasswordSchema,
 } from './auth.service'
+import { z } from 'zod'
 
 const router = Router()
 
@@ -137,6 +139,137 @@ router.post(
     const token = (req as { sessionToken?: string }).sessionToken
     if (token) await authService.logout(token)
     res.json({ ok: true })
+  }),
+)
+
+// ── Email + Password Auth ───────────────────────────────────────────────────
+
+const EmailRegisterSchema = z.object({
+  email: EmailSchema,
+  password: PasswordSchema,
+  firstName: z.string().trim().min(1).max(64),
+})
+
+const EmailLoginSchema = z.object({
+  email: EmailSchema,
+  password: z.string().min(1).max(72),
+})
+
+// POST /api/auth/email/register
+router.post(
+  '/auth/email/register',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: EmailRegisterSchema }),
+  wrap(async (req, res) => {
+    res.status(201).json(await authService.registerWithEmail(req.body, req))
+  }),
+)
+
+// POST /api/auth/email/login
+router.post(
+  '/auth/email/login',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: EmailLoginSchema }),
+  wrap(async (req, res) => {
+    res.json(await authService.loginWithEmail(req.body, req))
+  }),
+)
+
+// GET /api/auth/verify-email?token=<token>
+router.get(
+  '/auth/verify-email',
+  rateLimit(AUTH_LIMIT),  // Prevent token brute-force
+  wrap(async (req, res) => {
+    const token = req.query.token as string
+    if (!token) throw new AppError(400, 'token_required')
+    res.json(await authService.verifyEmail(token))
+  }),
+)
+
+// POST /api/auth/resend-verification
+router.post(
+  '/auth/resend-verification',
+  requireAuth,
+  rateLimit({ maxPerMinute: 3 }),  // Stricter rate limit
+  wrap(async (req, res) => {
+    res.json(await authService.resendEmailVerification((req as { userId?: string }).userId!))
+  }),
+)
+
+// ── Password Reset ──────────────────────────────────────────────────────────
+
+const RequestPasswordResetSchema = z.object({
+  email: EmailSchema,
+})
+
+const ResetPasswordSchema = z.object({
+  token: z.string().length(64),
+  password: PasswordSchema,
+})
+
+const ChangePasswordSchema = z.object({
+  currentPassword: z.string().min(1).max(72),
+  newPassword: PasswordSchema,
+})
+
+// POST /api/auth/forgot-password
+router.post(
+  '/auth/forgot-password',
+  rateLimit({ maxPerMinute: 3 }),
+  validate({ body: RequestPasswordResetSchema }),
+  wrap(async (req, res) => {
+    res.json(await authService.requestPasswordReset(req.body.email))
+  }),
+)
+
+// POST /api/auth/reset-password
+router.post(
+  '/auth/reset-password',
+  rateLimit(AUTH_LIMIT),
+  validate({ body: ResetPasswordSchema }),
+  wrap(async (req, res) => {
+    res.json(await authService.resetPassword(req.body.token, req.body.password, req))
+  }),
+)
+
+// POST /api/auth/change-password
+router.post(
+  '/auth/change-password',
+  requireAuth,
+  rateLimit(AUTH_LIMIT),
+  validate({ body: ChangePasswordSchema }),
+  wrap(async (req, res) => {
+    const userId = (req as { userId?: string }).userId!
+    res.json(await authService.changePassword(
+      userId,
+      req.body.currentPassword,
+      req.body.newPassword,
+      req,
+    ))
+  }),
+)
+
+// ── OAuth (Google + Apple) ──────────────────────────────────────────────────
+
+// GET /api/auth/google/callback
+router.get(
+  '/auth/google/callback',
+  rateLimit(AUTH_LIMIT),
+  wrap(async (req, res) => {
+    const code = req.query.code as string
+    if (!code) throw new AppError(400, 'code_required')
+    res.json(await authService.handleGoogleOAuth(code, req))
+  }),
+)
+
+// POST /api/auth/apple/callback
+router.post(
+  '/auth/apple/callback',
+  rateLimit(AUTH_LIMIT),
+  wrap(async (req, res) => {
+    const code = req.body.code as string
+    if (!code) throw new AppError(400, 'code_required')
+    res.json(await authService.handleAppleOAuth(code, req))
   }),
 )
 

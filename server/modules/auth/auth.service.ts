@@ -27,6 +27,10 @@ import { toApiUser, toApiProgress, toApiSettings } from '../users/users.service'
 import { hashPassword, verifyPassword } from '../../utils/password'
 import { verifyLoginWidget } from '../../utils/telegram'
 import { sendOTP, generateOTP, hashOTP } from '../../utils/sms'
+import { sendEmail, emailVerificationTemplate, passwordResetTemplate, isValidEmail } from '../../utils/email'
+import { validatePassword, DEFAULT_PASSWORD_POLICY } from '../../utils/password-validation'
+import type { Request } from 'express'
+import { getDeviceInfo, getClientIp } from '../../utils/device-fingerprint'
 
 // ── Zod schemas (router validate uchun eksport) ─────────────────────────────
 
@@ -36,6 +40,8 @@ export const PhoneE164Schema = z.string().regex(/^\+998\d{9}$/, "Telefon raqam +
 export const PasswordSchema = z.string()
   .min(8, 'Parol kamida 8 belgidan iborat bo\'lsin')
   .max(72, 'Parol juda uzun')
+
+export const EmailSchema = z.string().email('Email noto\'g\'ri formatda')
 
 export const PhoneRegisterSchema = z.object({
   phone:     PhoneE164Schema,
@@ -98,6 +104,11 @@ export type TgWidgetLoginInput = z.infer<typeof TgWidgetLoginSchema>
 /** Telefon +998XXXXXXXXX → canonical user id 'p_998XXXXXXXXX' */
 export function phoneUserId(phone: string): string {
   return `p_${phone.replace(/\D/g, '')}`
+}
+
+/** Email → canonical user id 'e_<uuid>' */
+function emailUserId(): string {
+  return `e_${randomBytes(16).toString('hex')}`
 }
 
 const TG_ID_RE = /^\d{1,19}$/
@@ -414,7 +425,7 @@ export const authService = {
         // parallel link urinishi — boshqa user o'zib ketdi; pastda proof yo'li bilan davom
         return this.linkPhone(currentUserId, input)
       }
-      await authRepository.setPasswordHash(input.phone, hashPassword(input.password))
+      await authRepository.setPasswordHash('phone', input.phone, hashPassword(input.password))
       await usersRepository.updatePhone(currentUserId, input.phone).catch(() => false)
       return { status: 'attached' as const, ...(await respondWithNewSession(currentUserId, 'phone')) }
     }
@@ -546,6 +557,367 @@ export const authService = {
 
   async logout(token: string): Promise<void> {
     await authRepository.deleteSession(token)
+  },
+
+  // ── Email + Password ────────────────────────────────────────────────────
+
+  /** Email registration - creates unverified account, sends verification email */
+  async registerWithEmail(input: { email: string; password: string; firstName: string }, req?: Request) {
+    if (!isValidEmail(input.email)) {
+      throw new AppError(400, 'invalid_email')
+    }
+
+    // Password strength validation
+    const strength = validatePassword(input.password, DEFAULT_PASSWORD_POLICY)
+    if (!strength.isValid) {
+      throw new AppError(400, 'weak_password', strength.feedback.join('; '))
+    }
+
+    // Check if email already taken
+    const existing = await authRepository.findIdentity('email', input.email.toLowerCase())
+    if (existing) {
+      throw new AppError(409, 'email_taken')
+    }
+
+    const userId = emailUserId()
+    const passwordHash = hashPassword(input.password)
+
+    // Create user + identity atomically in transaction (prevents orphan users on race)
+    await transaction(async (tx) => {
+      await usersRepository.initAtomic({
+        id: userId,
+        firstName: input.firstName.trim(),
+        lastName: '',
+        username: '',
+        photoUrl: '',
+      }, tx)
+
+      const created = await authRepository.createIdentity('email', input.email.toLowerCase(), userId, passwordHash)
+      if (!created) {
+        throw new AppError(409, 'email_taken')  // Race: rollback user creation
+      }
+
+      // Update email field in users table
+      await executeRows(sql`UPDATE users SET email = ${input.email.toLowerCase()} WHERE id = ${userId}`, tx)
+    })
+
+    // Send verification email
+    const token = randomBytes(32).toString('hex')
+    const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000)  // 24 hours
+    await authRepository.createEmailVerificationToken(userId, input.email.toLowerCase(), token, expiresAt)
+
+    const verificationLink = `${config.deploy.appUrl}/verify-email?token=${token}`
+    await sendEmail({
+      to: input.email,
+      subject: 'Email tasdiqlang — KIWI',
+      html: emailVerificationTemplate(verificationLink, input.firstName, 'uz'),
+    }).catch(err => {
+      console.error('[Email verification send failed]', err)
+      // Don't fail registration if email send fails
+    })
+
+    // Create audit log
+    if (req) {
+      await authRepository.createAuditLog({
+        userId,
+        action: 'account_created',
+        resourceType: 'user',
+        resourceId: userId,
+        ipAddress: getClientIp(req),
+        userAgent: req.headers['user-agent'],
+      })
+    }
+
+    // Return session (allow login before verification)
+    return respondWithNewSession(userId, 'email')
+  },
+
+  /** Email login - allows unverified accounts but tracks verification status */
+  async loginWithEmail(input: { email: string; password: string }, req?: Request) {
+    const identity = await authRepository.findIdentity('email', input.email.toLowerCase())
+
+    // Track failed login attempt (works even if identity not found for security audit)
+    const logFailure = async (userId: string | null, reason: string) => {
+      if (!req) return
+
+      // Create anonymous audit trail even for non-existent accounts
+      await authRepository.createAuditLog({
+        userId: userId ?? undefined,
+        action: 'login_failed',
+        resourceType: 'auth',
+        changes: { provider: 'email', reason, email: input.email.toLowerCase() },
+        ipAddress: getClientIp(req),
+        userAgent: req.headers['user-agent'],
+      })
+
+      if (userId) {
+        await authRepository.createLoginHistory({
+          userId,
+          provider: 'email',
+          ipAddress: getClientIp(req),
+          userAgent: req.headers['user-agent'],
+          success: false,
+          failureReason: reason,
+        })
+      }
+    }
+
+    if (!identity?.passwordHash) {
+      await logFailure(identity?.userId ?? null, 'invalid_credentials')
+      throw new AppError(401, 'invalid_credentials')
+    }
+
+    // Check account lock
+    const locked = await authRepository.isAccountLocked(identity.userId)
+    if (locked) {
+      await logFailure(identity.userId, 'account_locked')
+      throw new AppError(403, 'account_locked')
+    }
+
+    // Verify password
+    if (!verifyPassword(input.password, identity.passwordHash)) {
+      await logFailure(identity.userId, 'invalid_password')
+
+      // Increment failed attempts
+      const attempts = await authRepository.incrementFailedLoginAttempts(identity.userId)
+
+      // Lock account after 5 failed attempts (15 minutes)
+      if (attempts >= 5) {
+        const lockUntil = new Date(Date.now() + 15 * 60 * 1000)
+        await authRepository.lockAccount(identity.userId, lockUntil)
+
+        await authRepository.createAuditLog({
+          userId: identity.userId,
+          action: 'account_locked',
+          resourceType: 'user',
+          resourceId: identity.userId,
+          changes: { reason: 'failed_login_attempts', attempts },
+          ipAddress: req ? getClientIp(req) : undefined,
+          userAgent: req?.headers['user-agent'],
+        })
+
+        throw new AppError(403, 'account_locked')
+      }
+
+      throw new AppError(401, 'invalid_credentials')
+    }
+
+    // Success - reset failed attempts
+    await authRepository.resetFailedLoginAttempts(identity.userId)
+    await authRepository.updateLastLogin(identity.userId)
+
+    // Track device and log success
+    if (req) {
+      const deviceInfo = getDeviceInfo(req)
+      await authRepository.upsertDevice({
+        id: deviceInfo.id,
+        userId: identity.userId,
+        deviceName: deviceInfo.deviceName,
+        deviceType: deviceInfo.deviceType,
+        os: deviceInfo.os,
+        browser: deviceInfo.browser,
+        ipAddress: getClientIp(req),
+        userAgent: req.headers['user-agent'],
+        fingerprint: deviceInfo.fingerprint,
+      })
+
+      await authRepository.createLoginHistory({
+        userId: identity.userId,
+        provider: 'email',
+        deviceId: deviceInfo.id,
+        ipAddress: getClientIp(req),
+        userAgent: req.headers['user-agent'],
+        success: true,
+      })
+    }
+
+    return respondWithNewSession(identity.userId, 'email')
+  },
+
+  /** Verify email address - marks account as verified */
+  async verifyEmail(token: string) {
+    const result = await authRepository.consumeEmailVerificationToken(token)
+    if (!result) {
+      throw new AppError(400, 'invalid_token')
+    }
+
+    await authRepository.markEmailVerified(result.userId)
+
+    await authRepository.createAuditLog({
+      userId: result.userId,
+      action: 'email_verified',
+      resourceType: 'user',
+      resourceId: result.userId,
+      changes: { email: result.email },
+    })
+
+    return { verified: true, userId: result.userId }
+  },
+
+  /** Resend email verification */
+  async resendEmailVerification(userId: string) {
+    const user = await usersRepository.findById(userId)
+    if (!user?.email) {
+      throw new AppError(404, 'email_not_found')
+    }
+    if (user.emailVerifiedAt) {
+      throw new AppError(400, 'already_verified')
+    }
+
+    const token = randomBytes(32).toString('hex')
+    const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000)
+    await authRepository.createEmailVerificationToken(userId, user.email, token, expiresAt)
+
+    const verificationLink = `${config.deploy.appUrl}/verify-email?token=${token}`
+    await sendEmail({
+      to: user.email,
+      subject: 'Email tasdiqlang — KIWI',
+      html: emailVerificationTemplate(verificationLink, user.firstName, 'uz'),
+    })
+
+    return { sent: true }
+  },
+
+  // ── Password Reset ──────────────────────────────────────────────────────
+
+  /** Request password reset - sends reset email */
+  async requestPasswordReset(email: string) {
+    const identity = await authRepository.findIdentity('email', email.toLowerCase())
+    if (!identity) {
+      // Don't reveal if email exists (security best practice)
+      return { sent: true }
+    }
+
+    const user = await usersRepository.findById(identity.userId)
+    if (!user) {
+      return { sent: true }
+    }
+
+    const token = randomBytes(32).toString('hex')
+    const expiresAt = new Date(Date.now() + 60 * 60 * 1000)  // 1 hour
+    await authRepository.createPasswordResetToken(identity.userId, token, expiresAt)
+
+    const resetLink = `${config.deploy.appUrl}/reset-password?token=${token}`
+    await sendEmail({
+      to: email,
+      subject: 'Parolni tiklash — KIWI',
+      html: passwordResetTemplate(resetLink, user.firstName, 'uz'),
+    }).catch(err => {
+      console.error('[Password reset email send failed]', err)
+    })
+
+    return { sent: true }
+  },
+
+  /** Reset password with token */
+  async resetPassword(token: string, newPassword: string, req?: Request) {
+    // Validate password strength
+    const strength = validatePassword(newPassword, DEFAULT_PASSWORD_POLICY)
+    if (!strength.isValid) {
+      throw new AppError(400, 'weak_password', strength.feedback.join('; '))
+    }
+
+    const userId = await authRepository.consumePasswordResetToken(token)
+    if (!userId) {
+      throw new AppError(400, 'invalid_token')
+    }
+
+    // Get email identity for this user
+    const rows = await executeRows<{ provider_uid: string }>(sql`
+      SELECT provider_uid FROM auth_identities
+      WHERE user_id = ${userId} AND provider = 'email'
+      LIMIT 1
+    `)
+    if (!rows[0]) {
+      throw new AppError(404, 'identity_not_found')
+    }
+
+    const passwordHash = hashPassword(newPassword)
+    await authRepository.setPasswordHash('email', rows[0].provider_uid, passwordHash)
+    await authRepository.updatePasswordChangeTimestamp(userId)
+
+    // Audit log
+    await authRepository.createAuditLog({
+      userId,
+      action: 'password_changed',
+      resourceType: 'user',
+      resourceId: userId,
+      changes: { method: 'reset_token' },
+      ipAddress: req ? getClientIp(req) : undefined,
+      userAgent: req?.headers['user-agent'],
+    })
+
+    return { reset: true }
+  },
+
+  /** Change password (authenticated user) */
+  async changePassword(userId: string, currentPassword: string, newPassword: string, req?: Request) {
+    // Get identity
+    const rows = await executeRows<{ provider_uid: string; password_hash: string }>(sql`
+      SELECT provider_uid, password_hash FROM auth_identities
+      WHERE user_id = ${userId} AND provider IN ('email', 'phone')
+      LIMIT 1
+    `)
+    if (!rows[0]?.password_hash) {
+      throw new AppError(404, 'no_password_set')
+    }
+
+    // Verify current password
+    if (!verifyPassword(currentPassword, rows[0].password_hash)) {
+      throw new AppError(401, 'invalid_current_password')
+    }
+
+    // Validate new password strength
+    const strength = validatePassword(newPassword, DEFAULT_PASSWORD_POLICY)
+    if (!strength.isValid) {
+      throw new AppError(400, 'weak_password', strength.feedback.join('; '))
+    }
+
+    // Check not same as current
+    if (verifyPassword(newPassword, rows[0].password_hash)) {
+      throw new AppError(400, 'password_same_as_current')
+    }
+
+    const passwordHash = hashPassword(newPassword)
+    // Determine provider from identity (phone has +998 prefix, email has @)
+    const provider = rows[0].provider_uid.includes('@') ? 'email' : 'phone'
+    await authRepository.setPasswordHash(provider, rows[0].provider_uid, passwordHash)
+    await authRepository.updatePasswordChangeTimestamp(userId)
+
+    // Audit log
+    await authRepository.createAuditLog({
+      userId,
+      action: 'password_changed',
+      resourceType: 'user',
+      resourceId: userId,
+      changes: { method: 'user_initiated' },
+      ipAddress: req ? getClientIp(req) : undefined,
+      userAgent: req?.headers['user-agent'],
+    })
+
+    return { changed: true }
+  },
+
+  // ── OAuth (Google + Apple) ──────────────────────────────────────────────
+
+  /** Google OAuth callback - stub for implementation */
+  async handleGoogleOAuth(code: string, req?: Request) {
+    // TODO: Implement Google OAuth flow
+    // 1. Exchange code for tokens
+    // 2. Get user info from Google API
+    // 3. Create or link account
+    // 4. Return session
+    throw new AppError(501, 'google_oauth_not_implemented')
+  },
+
+  /** Apple OAuth callback - stub for implementation */
+  async handleAppleOAuth(code: string, req?: Request) {
+    // TODO: Implement Apple Sign In flow
+    // 1. Validate JWT from Apple
+    // 2. Extract user info
+    // 3. Create or link account
+    // 4. Return session
+    throw new AppError(501, 'apple_oauth_not_implemented')
   },
 }
 

@@ -1,0 +1,135 @@
+import { useState } from 'react'
+import { api, type AuthResponse } from '../../../shared/api'
+import { track } from '../../../shared/lib/analytics'
+import { authErrorKey } from '../validation'
+import { useT } from '../../../shared/i18n'
+import PasswordInput from './PasswordInput'
+import PasswordStrengthMeter from './PasswordStrengthMeter'
+
+interface EmailAuthFormProps {
+  mode: 'login' | 'register'
+  language: 'uz' | 'ru'
+  onSuccess: (data: AuthResponse) => void
+  onToggleMode: () => void
+}
+
+export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode }: EmailAuthFormProps) {
+  const tt = useT(language)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [firstName, setFirstName] = useState('')
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+
+  const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email.trim() || !password.trim()) return
+    if (!isValidEmail(email)) {
+      setError(tt('authInvalidEmail'))
+      return
+    }
+    if (mode === 'register' && !firstName.trim()) return
+
+    setBusy(true)
+    setError(null)
+    try {
+      let data: AuthResponse
+      if (mode === 'register') {
+        data = await api.registerWithEmail({ email: email.toLowerCase(), password, firstName: firstName.trim() })
+        track('register', { provider: 'email' })
+      } else {
+        data = await api.loginWithEmail({ email: email.toLowerCase(), password })
+        track('login', { provider: 'email' })
+      }
+      onSuccess(data)
+    } catch (err) {
+      setError(tt(authErrorKey(err)))
+      setBusy(false)
+    }
+  }
+
+  const inputCls =
+    'w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg ' +
+    'placeholder:text-muted outline-none focus:border-duo-green transition-colors'
+
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3" noValidate>
+      <label htmlFor="email" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+        {tt('authEmail')}
+      </label>
+      <input
+        id="email"
+        type="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        autoComplete={mode === 'register' ? 'email' : 'username'}
+        placeholder="example@email.com"
+        disabled={busy}
+        className={inputCls}
+      />
+
+      {mode === 'register' && (
+        <>
+          <label htmlFor="firstName" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+            {tt('authFirstName')}
+          </label>
+          <input
+            id="firstName"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            autoComplete="given-name"
+            maxLength={64}
+            disabled={busy}
+            className={inputCls}
+            placeholder={tt('authFirstNamePlaceholder')}
+          />
+        </>
+      )}
+
+      <PasswordInput
+        id="password"
+        value={password}
+        onChange={setPassword}
+        label={tt('authPassword')}
+        autoComplete={mode === 'register' ? 'new-password' : 'current-password'}
+        disabled={busy}
+        showStrengthMeter={mode === 'register'}
+      />
+
+      {mode === 'register' && password.length > 0 && (
+        <PasswordStrengthMeter password={password} language={language} />
+      )}
+
+      {error && (
+        <p className="text-[12px] font-semibold text-duo-red animate-fadeIn">
+          {error}
+        </p>
+      )}
+
+      <button
+        type="submit"
+        disabled={
+          !email.trim() ||
+          !password.trim() ||
+          (mode === 'register' && !firstName.trim()) ||
+          busy
+        }
+        className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] mt-1 flex items-center justify-center gap-2"
+      >
+        {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
+        {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
+      </button>
+
+      <button
+        type="button"
+        onClick={onToggleMode}
+        className="text-[13px] text-muted hover:text-fg transition-colors text-center"
+        disabled={busy}
+      >
+        {mode === 'login' ? tt('authNoAccount') : tt('authHaveAccount')}
+      </button>
+    </form>
+  )
+}

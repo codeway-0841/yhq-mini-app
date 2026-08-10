@@ -41,6 +41,11 @@ const envSchema = z.object({
   SMS_ENABLED:    z.enum(['true', 'false']).optional().default('false'),
   SMS_CALLBACK_URL: z.string().url().optional(),
 
+  /** Email — Resend API for transactional emails */
+  RESEND_API_KEY:  z.string().optional(),
+  EMAIL_FROM:      z.string().email().optional(),
+  APP_DOMAIN:      z.string().optional(),
+
   /** Auth sessiyalari — telefon+parol / TG Login Widget login'da yaratiladigan
    *  opaque token TTL (kun). Default 30. */
   SESSION_TTL_DAYS: z.string().regex(/^\d+$/).optional(),
@@ -134,6 +139,15 @@ export const config = {
     eskizPassword:  env.ESKIZ_PASSWORD,
     callbackUrl:    env.SMS_CALLBACK_URL,
   },
+
+  /** Email — Resend for verification/password reset */
+  email: {
+    resendApiKey: env.RESEND_API_KEY,
+    fromAddress:  env.EMAIL_FROM ?? 'noreply@kiwi.uz',
+  },
+
+  /** App domain for email link validation */
+  appDomain: env.APP_DOMAIN ?? 'kiwi.uz',
 
   sentry: {
     dsn: env.SENTRY_DSN,
