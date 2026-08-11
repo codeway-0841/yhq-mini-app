@@ -16,6 +16,7 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
+import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
 import { GridCard, MockGridCard } from './components/GridCards'
 import { ContinueCard } from './components/ContinueCard'
@@ -118,8 +119,8 @@ export default function Dashboard() {
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
           key=subjectId: fan almashganda smooth fade transition, reload yo'q */}
       {subject.available ? (
-        <div key={subject.id} className="animate-premiumIn">
-          {/* Demo ma'lumotlar badge — boshqa fanga vaqtincha YHQ bazasi ulangan */}
+        <div key={subject.id} className="animate-premiumIn space-y-0">
+          {/* Demo ma'lumotlar badge */}
           {subject.demoData && (
             <div className="mx-5 mb-3 rounded-2xl px-4 py-3 flex items-center gap-2"
               style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
@@ -132,7 +133,15 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* Hero: bugungi progress (ring chart) */}
+          {/* 1. Carousel — swipeable hero banners */}
+          <Carousel
+            lang={settings.language}
+            continueSubject={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
+            progressPct={continueInfo.pct}
+            onContinue={continueInfo.go}
+          />
+
+          {/* 2. Today's Progress */}
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
@@ -143,74 +152,71 @@ export default function Dashboard() {
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
 
-      {/* Kunlik topshiriq kartasi olindi — streak endi HAR QANDAY faollikdan
-         (kamida 1 savol yoki dars) yoziladi: ProgressCard → /streak */}
+          {/* 3. Continue Learning */}
+          <ContinueCard
+            modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
+            lessonLabel={continueInfo.lessonLabel}
+            progressPct={continueInfo.pct}
+            allDone={continueInfo.allDone}
+            lang={settings.language}
+            onContinue={continueInfo.go}
+          />
 
-      {/* Premium banner (oltin = Premium semantikasi) — premium_click KPI o'lchanadi */}
-      <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
-        <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-          style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
-          <Crown size={19} className="text-pprimary" />
-        </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-[13px] font-bold text-pfg">Premium</p>
-          <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
-        </div>
-        <button onClick={() => { track('premium_click'); navigate('/premium') }}
-          className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
-          {tt('tryWord')}
-        </button>
-      </div>
+          {/* 4. Quick Actions (main grid) */}
+          <div className="grid grid-cols-3 gap-3 px-5 mb-4">
+            <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
+              subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
+              onClick={() => navigate('/testlar')} />
+            <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
+              onClick={goTopics} />
+            <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
+              iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
+            <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
+              badge={mistakesCount || null} onClick={goMistakes} />
+            <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
+              onClick={() => navigate('/biletlar')} />
+            <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
+              onClick={goOctagon} />
+          </div>
 
-      {/* Davom etayotgan mavzu — QAYSI darsda qolgan bo'lsa o'sha darslik */}
-      <ContinueCard
-        modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
-        lessonLabel={continueInfo.lessonLabel}
-        progressPct={continueInfo.pct}
-        allDone={continueInfo.allDone}
-        lang={settings.language}
-        onContinue={continueInfo.go}
-      />
+          {/* 5. Modes */}
+          <div className="px-5 mb-2">
+            <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
+            <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
+            <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
+            <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
+            <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
+            <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
+            <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />
+          </div>
 
-      {/* ASOSIY GRID (Testlar / Mavzular / AI Tutor · Xatolar / Biletlar / Duel) */}
-      <div className="grid grid-cols-3 gap-3 px-5 mb-4">
-        <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
-          subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
-          onClick={() => navigate('/testlar')} />
-        <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
-          onClick={goTopics} />
-        <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
-          iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-        <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
-          badge={mistakesCount || null} onClick={goMistakes} />
-        <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
-          onClick={() => navigate('/biletlar')} />
-        <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
-          onClick={goOctagon} />
-      </div>
+          {/* 6. Leaderboard */}
+          <LeaguePreview
+            lang={settings.language}
+            userId={user?.id}
+            onSeeAll={() => navigate('/reyting')}
+          />
 
-      {/* Rejimlar (funksiyalar saqlangan) */}
-      <div className="px-5 mb-2">
-        <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
-      </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
-        <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
-        <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
-        <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
-        <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
-        <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
-        <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />
-      </div>
+          {/* 7. Premium Banner */}
+          <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
+            <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+              style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
+              <Crown size={19} className="text-pprimary" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] font-bold text-pfg">Premium</p>
+              <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
+            </div>
+            <button onClick={() => { track('premium_click'); navigate('/premium') }}
+              className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
+              {tt('tryWord')}
+            </button>
+          </div>
 
-      {/* Reyting top-3 preview */}
-      <LeaguePreview
-        lang={settings.language}
-        userId={user?.id}
-        onSeeAll={() => navigate('/reyting')}
-      />
-
-      {/* Promo banner — vaqtincha o'chiq (SHOW_PROMO = true qilib qaytariladi) */}
-      {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
+          {/* Promo banner */}
+          {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
         </div>
       ) : (
         <SubjectEmpty onSwitch={() => setShowSubjects(true)} />
