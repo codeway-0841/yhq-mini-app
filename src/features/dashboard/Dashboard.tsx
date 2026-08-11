@@ -140,14 +140,8 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* 1. Carousel — swipeable hero banners */}
-          <Carousel
-            lang={settings.language}
-            continueSubject={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
-            progressPct={continueInfo.pct}
-            lessonLabel={continueInfo.lessonLabel}
-            onContinue={continueInfo.go}
-          />
+          {/* 1. Carousel — fanlar kartalari (scroll-snap) */}
+          <Carousel lang={settings.language} onContinue={continueInfo.go} />
 
           {/* 2. Today's Progress */}
           <ProgressCard
