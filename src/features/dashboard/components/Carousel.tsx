@@ -24,7 +24,7 @@ interface SlideConfig {
 const SLIDE_CONFIGS: SlideConfig[] = [
   {
     title: (lang) => lang === 'ru' ? 'Продолжить обучение' : 'Darsni davom ettiring',
-    subtitle: (lang, props) => props.lessonLabel ?? '',
+    subtitle: (_lang, props) => props.lessonLabel ?? '',
     gradient: 'linear-gradient(135deg, #1a3a2a 0%, #0d1f17 50%, #162b20 100%)',
     progress: true,
     useOnContinue: true,
@@ -55,16 +55,13 @@ const SLIDE_CONFIGS: SlideConfig[] = [
   },
 ]
 
-const CarouselSlide = memo(function CarouselSlide({ config, lang, continueSubject, progressPct = 0, lessonLabel, onContinue }: SlideProps & { config: SlideConfig }) {
-  const navigate = useNavigate()
-  const handleClick = config.useOnContinue ? onContinue : config.route ? () => navigate(config.route!) : undefined
-
+const CarouselSlide = memo(function CarouselSlide({ config, lang, continueSubject, progressPct = 0, lessonLabel }: Omit<SlideProps, 'onContinue'> & { config: SlideConfig }) {
   const title = config.useOnContinue && continueSubject
     ? (lang === 'ru' ? 'Продолжить: ' : '') + continueSubject + (lang === 'uz' ? ' darsini davom ettiring' : '')
     : config.title(lang)
 
   return (
-    <button onClick={handleClick} className="w-full h-full relative overflow-hidden flex items-center text-left">
+    <div className="w-full h-full relative overflow-hidden flex items-center text-left cursor-pointer" role="button" tabIndex={-1}>
       <div className="absolute inset-0" style={{ background: config.gradient }} />
       <div className="absolute inset-0 opacity-20"
         style={{ background: 'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 60%)' }} />
@@ -89,7 +86,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, continueSubjec
           <ChevronRight size={18} className="text-white" />
         </div>
       </div>
-    </button>
+    </div>
   )
 })
 
@@ -101,9 +98,10 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
   lessonLabel?: string
   onContinue?: () => void
 }) {
+  const navigate = useNavigate()
   const slides = SLIDE_CONFIGS.map((config, i) => (
     <CarouselSlide key={i} config={config} lang={lang} continueSubject={continueSubject}
-      progressPct={progressPct} lessonLabel={lessonLabel} onContinue={onContinue} />
+      progressPct={progressPct} lessonLabel={lessonLabel} />
   ))
 
   const count = slides.length
@@ -132,6 +130,12 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
     resetAuto()
     return () => { if (autoRef.current) clearInterval(autoRef.current) }
   }, [resetAuto])
+
+  const handleSlideTap = useCallback(() => {
+    const config = SLIDE_CONFIGS[current]
+    if (config.useOnContinue) onContinue?.()
+    else if (config.route) navigate(config.route)
+  }, [current, onContinue, navigate])
 
   const onPointerDown = useCallback((e: React.PointerEvent) => {
     isDragging.current = true
@@ -171,13 +175,14 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
     if (Math.abs(deltaX.current) > 10) didSwipe.current = true
     if (deltaX.current < -threshold) goTo(current + 1)
     else if (deltaX.current > threshold) goTo(current - 1)
+    else if (!didSwipe.current) handleSlideTap()
     if (trackRef.current) {
       trackRef.current.style.transition = noAnim.current ? 'none' : 'transform 320ms cubic-bezier(0.25, 1, 0.5, 1)'
       trackRef.current.style.transform = ''
     }
     deltaX.current = 0
     resetAuto()
-  }, [current, goTo, resetAuto])
+  }, [current, goTo, resetAuto, handleSlideTap])
 
   return (
     <div className="px-5 mb-4">
@@ -186,8 +191,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
-        onClickCapture={(e) => { if (didSwipe.current) { e.stopPropagation(); e.preventDefault() } }}>
+        onPointerCancel={onPointerUp}>
         <div ref={trackRef}
           className="flex"
           style={{
@@ -200,12 +204,13 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
             </div>
           ))}
         </div>
-        {/* Pagination dots */}
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5">
-          {slides.map((_, i) => (
-            <button key={i} onClick={() => { goTo(i); resetAuto() }}
+        {/* Pagination dots — stopPropagation prevents triggering parent drag/tap */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10"
+          onPointerDown={(e) => e.stopPropagation()}>
+          {SLIDE_CONFIGS.map((_, i) => (
+            <button key={i} type="button" onClick={() => { goTo(i); resetAuto() }}
               aria-label={`Slide ${i + 1}`}
-              className="transition-all duration-300"
+              className="transition-all duration-300 cursor-pointer"
               style={{
                 width: i === current ? 16 : 6,
                 height: 6,
