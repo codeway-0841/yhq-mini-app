@@ -1,25 +1,67 @@
 import { memo, useRef, useState, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ChevronRight } from 'lucide-react'
+import { ChevronRight, Zap, Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
 import { type Lang, useT } from '../../../shared/i18n'
-import { SUBJECTS } from '../../../shared/config/subjects'
-import { useAppStore } from '../../../shared/store/useAppStore'
-import { useSubjectStore } from '../../../shared/store/useSubjectStore'
-import { useLessonsStore } from '../../../shared/store/useLessonsStore'
-import { modules } from '../../../content/modules'
 
-// ── Subject slide ───────────────────────────────────────────────────────────
-const SubjectSlide = memo(function SubjectSlide({ subjectId, lang, done, total, active, onOpen }: {
-  subjectId: string
+// ── Slide config — har slayd o'z route/action'iga o'tadi ────────────────────
+interface SlideConfig {
+  icon: LucideIcon
+  color: string
+  colorDark: string
+  title: (lang: Lang) => string
+  subtitle: (lang: Lang) => string
+  route?: string
+  /** true — darsni davom ettirish (progress bar + onContinue) */
+  useOnContinue?: boolean
+}
+
+const SLIDES: SlideConfig[] = [
+  {
+    icon: GraduationCap,
+    color: '#58cc02', colorDark: '#46a302',
+    title: (l) => l === 'ru' ? 'Продолжить обучение' : 'Darsni davom ettiring',
+    subtitle: (l) => l === 'ru' ? 'С того места, где остановились' : "To'xtagan joyingizdan",
+    useOnContinue: true,
+  },
+  {
+    icon: Zap,
+    color: '#ff9600', colorDark: '#e59400',
+    title: (l) => l === 'ru' ? 'Ежедневный вызов' : 'Kunlik mashq',
+    subtitle: (l) => l === 'ru' ? '10 вопросов · +50 XP' : '10 ta savol · +50 XP',
+    route: '/adaptive',
+  },
+  {
+    icon: Crown,
+    color: '#ce82ff', colorDark: '#a85ed4',
+    title: (l) => l === 'ru' ? 'Попробуйте Premium' : 'Premium sinab ko\'ring',
+    subtitle: (l) => l === 'ru' ? 'Без рекламы · Полный доступ' : 'Reklamasiz · To\'liq kirish',
+    route: '/premium',
+  },
+  {
+    icon: Swords,
+    color: '#1cb0f6', colorDark: '#1899d6',
+    title: (l) => l === 'ru' ? 'Дуэль с друзьями' : 'Do\'stlar bilan duel',
+    subtitle: (l) => l === 'ru' ? 'Кто ответит быстрее?' : 'Kim tezroq javob beradi?',
+    route: '/octagon',
+  },
+  {
+    icon: Trophy,
+    color: '#ff4b4b', colorDark: '#d93f3f',
+    title: (l) => l === 'ru' ? 'Еженедельная лига' : 'Haftalik liga',
+    subtitle: (l) => l === 'ru' ? 'Поднимайтесь в рейтинге' : 'Reytingda ko\'taring',
+    route: '/reyting',
+  },
+]
+
+// ── Slide card ──────────────────────────────────────────────────────────────
+const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 0, lessonLabel, onOpen }: {
+  config: SlideConfig
   lang: Lang
-  done: number
-  total: number
-  active: boolean
+  progressPct?: number
+  lessonLabel?: string
   onOpen: () => void
 }) {
-  const s = SUBJECTS.find((x) => x.id === subjectId) ?? SUBJECTS[0]
-  const Icon = s.icon
-  const pct = total > 0 ? Math.round((done / total) * 100) : 0
+  const Icon = config.icon
   const tt = useT(lang)
 
   return (
@@ -27,34 +69,30 @@ const SubjectSlide = memo(function SubjectSlide({ subjectId, lang, done, total, 
       role="button" tabIndex={0} onClick={onOpen}
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen() } }}>
       {/* Ghost icon — top-right dekor */}
-      <Icon size={22} className="absolute top-3.5 right-3.5 opacity-25" style={{ color: s.color }} aria-hidden />
+      <Icon size={22} className="absolute top-3.5 right-3.5 opacity-25" style={{ color: config.color }} aria-hidden />
 
       <div className="flex items-center gap-3.5">
         {/* Icon tile */}
         <div className="w-12 h-12 rounded-[16px] flex items-center justify-center flex-shrink-0"
-          style={{ background: `linear-gradient(145deg, ${s.color}, ${s.colorDark})`, boxShadow: `0 4px 12px ${s.color}40` }}>
+          style={{ background: `linear-gradient(145deg, ${config.color}, ${config.colorDark})`, boxShadow: `0 4px 12px ${config.color}40` }}>
           <Icon size={22} className="text-white" />
         </div>
 
-        {/* Title + progress */}
-        <div className="flex-1 min-w-0">
-          <p className="text-[15px] font-bold text-pfg leading-tight truncate">
-            {lang === 'ru' ? s.nameRu : s.name}
-          </p>
-          {s.demoData ? (
-            <p className="text-[11px] font-medium text-psubtle mt-0.5">
-              {lang === 'ru' ? 'Демо-режим · база скоро' : 'Demo rejim · baza tez orada'}
-            </p>
+        {/* Title + subtitle/progress */}
+        <div className="flex-1 min-w-0 pr-1">
+          <p className="text-[15px] font-bold text-pfg leading-tight truncate">{config.title(lang)}</p>
+          {config.useOnContinue ? (
+            <>
+              <p className="text-[11px] font-medium text-psubtle mt-0.5 tabular-nums">
+                {lessonLabel ?? config.subtitle(lang)}
+              </p>
+              <div className="h-1.5 rounded-full bg-pline overflow-hidden mt-2">
+                <div className="h-full rounded-full transition-all duration-500"
+                  style={{ width: `${Math.max(progressPct, 3)}%`, background: config.color }} />
+              </div>
+            </>
           ) : (
-            <p className="text-[11px] font-medium text-psubtle mt-0.5 tabular-nums">
-              {done} / {total} {tt('lessonWord')}
-            </p>
-          )}
-          {!s.demoData && (
-            <div className="h-1.5 rounded-full bg-pline overflow-hidden mt-2">
-              <div className="h-full rounded-full transition-all duration-500"
-                style={{ width: `${Math.max(pct, 2)}%`, background: s.color }} />
-            </div>
+            <p className="text-[11px] font-medium text-psubtle mt-0.5 truncate">{config.subtitle(lang)}</p>
           )}
         </div>
 
@@ -62,52 +100,36 @@ const SubjectSlide = memo(function SubjectSlide({ subjectId, lang, done, total, 
         <button type="button"
           className="btn-premium btn-premium-sm flex items-center gap-1 flex-shrink-0"
           onClick={(e) => { e.stopPropagation(); onOpen() }}>
-          {tt('continueLearn')}
+          {config.useOnContinue ? tt('continueLearn') : tt('startWord')}
           <ChevronRight size={14} />
         </button>
       </div>
-
-      {active && (
-        <span className="absolute bottom-3.5 left-4 text-[10px] font-semibold text-psubtle tabular-nums">
-          {lang === 'ru' ? 'Текущий предмет' : 'Joriy fan'}
-        </span>
-      )}
     </div>
   )
 })
 
 // ── Main Carousel — native scroll-snap (JS gesture-math YO'Q) ───────────────
-export const Carousel = memo(function Carousel({ lang, onContinue }: {
+export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel, onContinue }: {
   lang: Lang
+  progressPct?: number
+  lessonLabel?: string
   onContinue?: () => void
 }) {
   const navigate = useNavigate()
-  const userId   = useAppStore((s) => s.user?.id)
-  const subject  = useSubjectStore((s) => s.subject)
-  const setSubject = useSubjectStore((s) => s.setSubject)
-  const byUser   = useLessonsStore((s) => s.byUser)
-
-  const slides = SUBJECTS.filter((s) => s.available)
   const trackRef = useRef<HTMLDivElement>(null)
   const [current, setCurrent] = useState(0)
 
-  // Dars progressi — hozircha kontent FAQAT yhq uchun; demolar 0 ko'rsatadi
-  const doneMap = byUser[userId ?? '0'] ?? {}
-  const lessonsTotal = modules.reduce((n, m) => n + m.lessonCount, 0)
-  const lessonsDone  = modules.reduce((n, m) => n + (doneMap[m.id]?.length ?? 0), 0)
-
-  const openSubject = useCallback((id: string) => {
-    if (id !== subject.id) setSubject(id)
-    if (id === 'yhq') (id === subject.id ? onContinue?.() : navigate('/darslik'))
-    else navigate('/testlar')
-  }, [subject.id, setSubject, navigate, onContinue])
+  const openSlide = useCallback((config: SlideConfig) => {
+    if (config.useOnContinue) onContinue?.()
+    else if (config.route) navigate(config.route)
+  }, [navigate, onContinue])
 
   const onScroll = useCallback(() => {
     const el = trackRef.current
     if (!el || el.children.length === 0) return
     const slideW = (el.children[0] as HTMLElement).offsetWidth + 12 // gap-3
-    setCurrent(Math.min(slides.length - 1, Math.max(0, Math.round(el.scrollLeft / slideW))))
-  }, [slides.length])
+    setCurrent(Math.min(SLIDES.length - 1, Math.max(0, Math.round(el.scrollLeft / slideW))))
+  }, [])
 
   const goTo = useCallback((i: number) => {
     const el = trackRef.current
@@ -121,19 +143,17 @@ export const Carousel = memo(function Carousel({ lang, onContinue }: {
       <div ref={trackRef} onScroll={onScroll}
         className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 [&::-webkit-scrollbar]:hidden"
         style={{ scrollbarWidth: 'none' }}>
-        {slides.map((s) => (
-          <div key={s.id} className="w-full flex-shrink-0 snap-center min-h-[120px]">
-            <SubjectSlide subjectId={s.id} lang={lang}
-              done={s.id === 'yhq' ? lessonsDone : 0}
-              total={s.id === 'yhq' ? lessonsTotal : 0}
-              active={s.id === subject.id}
-              onOpen={() => openSubject(s.id)} />
+        {SLIDES.map((config, i) => (
+          <div key={i} className="w-full flex-shrink-0 snap-center min-h-[104px]">
+            <CarouselSlide config={config} lang={lang}
+              progressPct={progressPct} lessonLabel={lessonLabel}
+              onOpen={() => openSlide(config)} />
           </div>
         ))}
       </div>
       {/* Pagination dots */}
       <div className="flex items-center justify-center gap-1.5 mt-2.5">
-        {slides.map((_, i) => (
+        {SLIDES.map((_, i) => (
           <button key={i} type="button" onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}
             className="transition-all duration-300 cursor-pointer"
