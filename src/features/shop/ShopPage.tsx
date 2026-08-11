@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useCallback } from 'react'
 import { Clock, HelpCircle } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { StatsBar } from './components/StatsBar'
@@ -10,42 +10,46 @@ import { MerchGrid } from './components/MerchGrid'
 import { BadgeRow } from './components/BadgeRow'
 import { TokenPackages } from './components/TokenPackages'
 import { VipBanner } from './components/VipBanner'
-import {
-  MOCK_TASKS, MOCK_AVATARS, MOCK_MERCH, MOCK_BADGES, MOCK_PACKAGES,
-} from './data'
+import { useShop } from './useShop'
+import { MOCK_PACKAGES } from './data'
+import type { AvatarCategory, MerchCategory } from './data'
+import PageLoader from '../../shared/components/PageLoader'
 
 export default function ShopPage() {
   const lang = useAppStore((s) => s.settings.language)
   const isPremium = useAppStore((s) => s.tariff === 'premium')
   const totalCorrect = useAppStore((s) => s.totalCorrect)
 
-  const [balance, setBalance] = useState(12450)
-  const [ownedAvatars, setOwnedAvatars] = useState(15)
-  const [ownedBadges, setOwnedBadges] = useState(8)
+  const shop = useShop()
 
-  const handlePurchaseAvatar = useCallback((id: string) => {
-    const item = MOCK_AVATARS.find((a) => a.id === id)
-    if (!item || balance < item.price) return
-    setBalance((b) => b - item.price)
-    setOwnedAvatars((c) => c + 1)
-  }, [balance])
+  const ownedAvatars = [...shop.purchases].filter((id) =>
+    shop.avatars.some((a) => a.id === id)
+  ).length
+  const ownedBadges = [...shop.purchases].filter((id) =>
+    shop.badges.some((b) => b.id === id)
+  ).length
 
-  const handlePurchaseMerch = useCallback((id: string) => {
-    const item = MOCK_MERCH.find((m) => m.id === id)
-    if (!item || balance < item.price) return
-    setBalance((b) => b - item.price)
-  }, [balance])
+  const taskProgressMap = new Map(shop.taskProgress.map((p) => [p.taskId, p]))
 
-  const handlePurchaseBadge = useCallback((id: string) => {
-    const item = MOCK_BADGES.find((b) => b.id === id)
-    if (!item || balance < item.price) return
-    setBalance((b) => b - item.price)
-    setOwnedBadges((c) => c + 1)
-  }, [balance])
+  const mappedTasks = shop.tasks.map((t) => {
+    const tp = taskProgressMap.get(t.id)
+    return {
+      id: t.id, titleUz: t.titleUz, titleRu: t.titleRu,
+      reward: t.reward, total: t.total,
+      progress: tp?.progress ?? 0,
+      completed: tp?.completed ?? false,
+    }
+  })
+
+  const handlePurchase = useCallback((id: string) => {
+    shop.purchase(id)
+  }, [shop.purchase])
 
   const handleDailyClaim = useCallback(() => {
-    setBalance((b) => b + 3000)
-  }, [])
+    shop.claimDaily()
+  }, [shop.claimDaily])
+
+  if (shop.loading) return <PageLoader />
 
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
@@ -88,7 +92,7 @@ export default function ShopPage() {
       {/* Stats + Daily Reward */}
       <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto] gap-3 px-4">
         <StatsBar
-          tokens={balance}
+          tokens={shop.balance}
           badges={ownedBadges}
           avatars={ownedAvatars}
           lang={lang}
@@ -101,19 +105,27 @@ export default function ShopPage() {
 
       {/* Token Tasks + Level Progress */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-        <TokenTasks tasks={MOCK_TASKS} lang={lang} />
+        <TokenTasks tasks={mappedTasks} lang={lang} />
         <LevelProgress totalCorrect={totalCorrect} lang={lang} />
       </div>
 
       {/* Avatar Shop */}
-      <AvatarGrid avatars={MOCK_AVATARS} lang={lang} balance={balance} onPurchase={handlePurchaseAvatar} />
+      <AvatarGrid avatars={shop.avatars.map((a) => ({
+        id: a.id, name: a.nameUz, nameRu: a.nameRu, image: a.image,
+        price: a.price, category: a.category as AvatarCategory,
+      }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
 
       {/* Merch Shop */}
-      <MerchGrid items={MOCK_MERCH} lang={lang} balance={balance} onPurchase={handlePurchaseMerch} />
+      <MerchGrid items={shop.merch.map((m) => ({
+        id: m.id, name: m.nameUz, nameRu: m.nameRu, image: m.image,
+        price: m.price, category: m.category as MerchCategory,
+      }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
 
       {/* Badges */}
       <div id="badges-section">
-        <BadgeRow badges={MOCK_BADGES} lang={lang} balance={balance} onPurchase={handlePurchaseBadge} />
+        <BadgeRow badges={shop.badges.map((b) => ({
+          id: b.id, name: b.nameUz, nameRu: b.nameRu, icon: b.image, price: b.price,
+        }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
       </div>
 
       {/* Token Packages */}
