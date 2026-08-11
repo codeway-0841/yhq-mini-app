@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Coins } from 'lucide-react'
+import { Coins, ChevronDown, RefreshCw } from 'lucide-react'
 import type { ShopAvatar, AvatarCategory } from '../data'
 import { AVATAR_CATEGORIES } from '../data'
 import { CategoryFilter } from './CategoryFilter'
@@ -24,17 +24,28 @@ interface Props {
 export function AvatarGrid({ avatars, lang, balance, onPurchase }: Props) {
   const [category, setCategory] = useState<AvatarCategory>('all')
   const [selected, setSelected] = useState<ShopAvatar | null>(null)
+  const [sortOpen, setSortOpen] = useState(false)
 
   const filtered = category === 'all'
     ? avatars
     : avatars.filter((a) => a.category === category)
 
   return (
-    <div className="mt-6">
+    <div className="mt-6" id="avatars-section">
       <div className="flex items-center justify-between px-4 mb-3">
         <h3 className="text-[15px] font-bold text-pfg">
           {lang === 'ru' ? 'Магазин аватаров' : "Avatarlar do'koni"}
         </h3>
+        <button
+          type="button"
+          onClick={() => setSortOpen(!sortOpen)}
+          aria-expanded={sortOpen}
+          aria-label={lang === 'ru' ? 'Сортировка' : 'Saralash'}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-pline bg-pcard text-pfg text-[11px] font-semibold transition-all active:scale-95 hover:bg-pline/10"
+        >
+          <span>{lang === 'ru' ? 'По популярности' : "Mashhurlik bo'yicha"}</span>
+          <ChevronDown size={12} className={`transition-transform ${sortOpen ? 'rotate-180' : ''}`} />
+        </button>
       </div>
 
       <CategoryFilter
@@ -65,6 +76,21 @@ export function AvatarGrid({ avatars, lang, balance, onPurchase }: Props) {
             </div>
           </button>
         ))}
+      </div>
+
+      <div className="px-4 mt-4">
+        <button
+          type="button"
+          onClick={() => {
+            // Placeholder for pagination - would load more avatars from backend
+            console.log('Load more avatars clicked')
+          }}
+          aria-label={lang === 'ru' ? 'Загрузить ещё аватары' : "Yana ko'proq avatarlar yuklash"}
+          className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-pline bg-pcard text-pfg text-[12px] font-semibold transition-all active:scale-95 hover:bg-pline/10"
+        >
+          <RefreshCw size={14} />
+          <span>{lang === 'ru' ? 'Загрузить ещё аватары' : "Yana ko'proq avatarlar yuklash"}</span>
+        </button>
       </div>
 
       {selected && (

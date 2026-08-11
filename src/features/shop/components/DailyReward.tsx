@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Gift } from 'lucide-react'
+import { Gift, Coins } from 'lucide-react'
 
 interface Props {
   lang: 'uz' | 'ru'
@@ -56,58 +56,66 @@ export function DailyReward({ lang, nextRewardTokens, onClaim }: Props) {
   }, [claimed, onClaim])
 
   return (
-    <div className="mx-4 mt-4 rounded-2xl p-4 relative overflow-hidden"
+    <div className="rounded-2xl p-4 relative overflow-hidden min-h-[120px] sm:w-[280px] flex flex-col justify-between"
       style={{
         background: 'linear-gradient(135deg, rgba(250,204,21,0.08) 0%, var(--p-card) 50%)',
-        border: '1px solid rgba(250,204,21,0.2)',
+        border: '1px solid rgba(250,204,21,0.25)',
       }}>
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-[13px] font-bold text-pfg">
-            {lang === 'ru' ? 'Ежедневный подарок' : 'Kunlik sovg\'a'}
-          </p>
-          <p className="text-[11px] text-pmuted mt-0.5">
+      <div className="flex items-start justify-between gap-3 mb-3">
+        <div className="flex-1">
+          <h3 className="text-[13px] font-bold text-pfg">
+            {lang === 'ru' ? 'Ежедневный подарок' : "Kunlik sovg'a"}
+          </h3>
+          <p className="text-[10.5px] text-pmuted mt-0.5 leading-snug">
             {lang === 'ru' ? 'Заходите каждый день и получайте токены!' : 'Har kuni kirib token oling!'}
           </p>
         </div>
-        <Gift size={28} className="text-pgold flex-shrink-0" />
+        <Gift size={24} className="text-pgold flex-shrink-0" />
       </div>
 
-      <div className="flex items-center justify-between mt-3">
-        <div className="flex items-center gap-1.5">
-          <span className="text-[11px] text-psubtle">
-            {lang === 'ru' ? 'Следующий:' : 'Keyingi:'}
-          </span>
-          <div className="flex gap-1">
-            <span className="bg-pcanvas px-2 py-1 rounded-lg text-[13px] font-bold text-pfg tabular-nums">
+      <div className="space-y-3">
+        <div>
+          <p className="text-[10px] text-psubtle mb-1.5">
+            {lang === 'ru' ? 'Следующий подарок:' : "Keyingi sovg'a:"}
+          </p>
+          <div className="flex items-center gap-1">
+            <span className="bg-pcanvas px-2.5 py-1.5 rounded-lg text-[16px] font-bold text-pfg tabular-nums min-w-[40px] text-center">
               {String(h).padStart(2, '0')}
             </span>
-            <span className="text-psubtle self-center">:</span>
-            <span className="bg-pcanvas px-2 py-1 rounded-lg text-[13px] font-bold text-pfg tabular-nums">
+            <span className="text-psubtle text-[14px] font-bold">:</span>
+            <span className="bg-pcanvas px-2.5 py-1.5 rounded-lg text-[16px] font-bold text-pfg tabular-nums min-w-[40px] text-center">
               {String(m).padStart(2, '0')}
             </span>
-            <span className="text-psubtle self-center">:</span>
-            <span className="bg-pcanvas px-2 py-1 rounded-lg text-[13px] font-bold text-pfg tabular-nums">
+            <span className="text-psubtle text-[14px] font-bold">:</span>
+            <span className="bg-pcanvas px-2.5 py-1.5 rounded-lg text-[16px] font-bold text-pfg tabular-nums min-w-[40px] text-center">
               {String(s).padStart(2, '0')}
             </span>
           </div>
         </div>
 
         <button
+          type="button"
           onClick={handleClaim}
           disabled={claimed}
-          className="btn-neon px-4 py-2 rounded-xl text-[12px] font-bold disabled:opacity-40"
+          aria-label={claimed ? (lang === 'ru' ? 'Уже получено' : 'Olingan') : (lang === 'ru' ? 'Получить подарок' : "Sovg'ani olish")}
+          className="btn-neon w-full py-2.5 rounded-xl text-[12px] font-bold disabled:opacity-40 disabled:cursor-not-allowed transition-all"
         >
           {claimed
-            ? (lang === 'ru' ? 'Получено' : 'Olingan')
-            : (lang === 'ru' ? 'Получить' : 'Olish')
+            ? (lang === 'ru' ? 'Получено ✓' : 'Olingan ✓')
+            : (lang === 'ru' ? 'Получить подарок' : "Sovg'ani olish")
           }
         </button>
-      </div>
 
-      <p className="text-[10.5px] text-pgold font-semibold mt-2">
-        {lang === 'ru' ? `Награда: ${nextRewardTokens} токенов` : `Mukofot: ${nextRewardTokens} token`}
-      </p>
+        <div className="pt-2 border-t border-pline/50">
+          <p className="text-[9.5px] text-pmuted mb-1">
+            {lang === 'ru' ? 'Награда следующего уровня' : 'Keyingi daraja mukofoti'}
+          </p>
+          <div className="flex items-center gap-1">
+            <Coins size={14} className="text-pgold" />
+            <span className="text-[14px] font-black text-pgold">{nextRewardTokens.toLocaleString()} token</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

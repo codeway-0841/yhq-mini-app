@@ -1,7 +1,5 @@
 import { useState, useCallback } from 'react'
-import { ChevronLeft, Coins } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../shared/lib/navigation'
+import { Clock, HelpCircle } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { StatsBar } from './components/StatsBar'
 import { DailyReward } from './components/DailyReward'
@@ -17,7 +15,6 @@ import {
 } from './data'
 
 export default function ShopPage() {
-  const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const isPremium = useAppStore((s) => s.tariff === 'premium')
   const totalCorrect = useAppStore((s) => s.totalCorrect)
@@ -53,33 +50,60 @@ export default function ShopPage() {
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
       {/* Header */}
-      <div className="flex items-center justify-between px-4 pt-5 pb-3">
-        <div className="flex items-center gap-2">
-          <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-            className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
-            <ChevronLeft size={24} />
-          </button>
-          <h1 className="text-[17px] font-bold tracking-tight">
-            {lang === 'ru' ? 'Магазин токенов' : "Tokenlar do'koni"}
-          </h1>
-        </div>
-        <div className="flex items-center gap-1.5 bg-pcard border border-pline rounded-full px-3 py-1.5">
-          <Coins size={14} className="text-pgold" />
-          <span className="text-[13px] font-bold text-pfg tabular-nums">{balance.toLocaleString()}</span>
+      <div className="px-4 pt-5 pb-4">
+        <div className="flex items-start justify-between gap-3 mb-2">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-[20px] font-bold tracking-tight leading-tight">
+              {lang === 'ru' ? 'Магазин токенов' : "Tokenlar do'koni"}
+            </h1>
+            <p className="text-[12px] text-pmuted mt-1 leading-snug">
+              {lang === 'ru'
+                ? 'Выполняйте задания, копите токены и получайте подарки!'
+                : "Topshiriqlarni bajaring, tokenlar to'plang va sovg'alarni oling!"}
+            </p>
+          </div>
+          <div className="flex items-center gap-2 flex-shrink-0">
+            <button
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-pprimary/40 bg-pprimary/5 text-pprimary text-[11px] font-semibold transition-all active:scale-95"
+              onClick={() => {/* TODO: Token history */}}
+            >
+              <Clock size={13} />
+              <span className="hidden xs:inline">
+                {lang === 'ru' ? 'История' : 'Tarixi'}
+              </span>
+            </button>
+            <button
+              className="flex items-center gap-1 px-3 py-1.5 rounded-xl border border-pline bg-pcard text-pfg text-[11px] font-semibold transition-all active:scale-95"
+              onClick={() => {/* TODO: How it works */}}
+            >
+              <HelpCircle size={13} />
+              <span className="hidden xs:inline">
+                {lang === 'ru' ? 'Как работает?' : 'Qanday ishlaydi?'}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Stats */}
-      <StatsBar tokens={balance} badges={ownedBadges} avatars={ownedAvatars} lang={lang} />
+      {/* Stats + Daily Reward */}
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto] gap-3 px-4">
+        <StatsBar
+          tokens={balance}
+          badges={ownedBadges}
+          avatars={ownedAvatars}
+          lang={lang}
+          onGetMoreTokens={() => document.getElementById('token-packages')?.scrollIntoView({ behavior: 'smooth' })}
+          onViewBadges={() => document.getElementById('badges-section')?.scrollIntoView({ behavior: 'smooth' })}
+          onViewAvatars={() => document.getElementById('avatars-section')?.scrollIntoView({ behavior: 'smooth' })}
+        />
+        <DailyReward lang={lang} nextRewardTokens={3000} onClaim={handleDailyClaim} />
+      </div>
 
-      {/* Daily Reward */}
-      <DailyReward lang={lang} nextRewardTokens={3000} onClaim={handleDailyClaim} />
-
-      {/* Token Tasks */}
-      <TokenTasks tasks={MOCK_TASKS} lang={lang} />
-
-      {/* Level Progress */}
-      <LevelProgress totalCorrect={totalCorrect} lang={lang} />
+      {/* Token Tasks + Level Progress */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+        <TokenTasks tasks={MOCK_TASKS} lang={lang} />
+        <LevelProgress totalCorrect={totalCorrect} lang={lang} />
+      </div>
 
       {/* Avatar Shop */}
       <AvatarGrid avatars={MOCK_AVATARS} lang={lang} balance={balance} onPurchase={handlePurchaseAvatar} />
@@ -88,10 +112,14 @@ export default function ShopPage() {
       <MerchGrid items={MOCK_MERCH} lang={lang} balance={balance} onPurchase={handlePurchaseMerch} />
 
       {/* Badges */}
-      <BadgeRow badges={MOCK_BADGES} lang={lang} balance={balance} onPurchase={handlePurchaseBadge} />
+      <div id="badges-section">
+        <BadgeRow badges={MOCK_BADGES} lang={lang} balance={balance} onPurchase={handlePurchaseBadge} />
+      </div>
 
       {/* Token Packages */}
-      <TokenPackages packages={MOCK_PACKAGES} lang={lang} />
+      <div id="token-packages">
+        <TokenPackages packages={MOCK_PACKAGES} lang={lang} />
+      </div>
 
       {/* VIP Banner */}
       <VipBanner lang={lang} isPremium={isPremium} />

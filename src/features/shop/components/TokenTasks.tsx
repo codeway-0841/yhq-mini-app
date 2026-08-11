@@ -1,4 +1,4 @@
-import { Check, Coins } from 'lucide-react'
+import { Check } from 'lucide-react'
 import type { TokenTask } from '../data'
 
 interface Props {
@@ -8,32 +8,35 @@ interface Props {
 
 export function TokenTasks({ tasks, lang }: Props) {
   return (
-    <div className="mx-4 mt-5">
+    <div className="px-4">
       <h3 className="text-[14px] font-bold text-pfg mb-3">
         {lang === 'ru' ? 'Как получить токены?' : 'Tokenlar qanday olinadi?'}
       </h3>
-      <div className="rounded-2xl overflow-hidden border border-pline divide-y divide-pline">
-        {tasks.map((task) => (
-          <div key={task.id} className="flex items-center gap-3 px-4 py-3 bg-pcard">
-            <div className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 ${
-              task.completed
-                ? 'bg-psuccess/20 border border-psuccess/40'
-                : 'bg-pcanvas border border-pline'
-            }`}>
-              {task.completed
-                ? <Check size={14} className="text-psuccess" />
-                : <span className="text-[10px] text-psubtle font-bold">{task.progress}/{task.total}</span>
-              }
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-[12.5px] font-semibold text-pfg truncate">
-                {lang === 'ru' ? task.titleRu : task.titleUz}
-              </p>
-            </div>
-            <div className="flex items-center gap-1 flex-shrink-0">
-              <Coins size={12} className="text-pgold" />
-              <span className="text-[12px] font-bold text-pgold">+{task.reward}</span>
-            </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
+        {tasks.map((task, i) => (
+          <div
+            key={task.id}
+            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center text-center gap-2 min-h-[110px] opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards] hover:border-pprimary/30 transition-all"
+            style={{ animationDelay: `${i * 60}ms` }}
+          >
+            <p className="text-[11.5px] font-semibold text-pfg leading-tight flex-1 line-clamp-2">
+              {lang === 'ru' ? task.titleRu : task.titleUz}
+            </p>
+
+            {task.completed ? (
+              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-psuccess/15 border border-psuccess/30">
+                <Check size={18} className="text-psuccess" />
+              </div>
+            ) : (
+              <>
+                <div className="text-[14px] font-black text-pgold">
+                  +{task.reward}
+                </div>
+                <div className="text-[10px] text-psubtle font-medium">
+                  {task.progress}/{task.total}
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>

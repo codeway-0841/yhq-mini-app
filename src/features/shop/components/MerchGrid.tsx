@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Coins } from 'lucide-react'
+import { Coins, Star } from 'lucide-react'
 import type { ShopMerch, MerchCategory } from '../data'
 import { MERCH_CATEGORIES } from '../data'
 import { CategoryFilter } from './CategoryFilter'
@@ -15,10 +15,14 @@ interface Props {
 export function MerchGrid({ items, lang, balance, onPurchase }: Props) {
   const [category, setCategory] = useState<MerchCategory>('all')
   const [selected, setSelected] = useState<ShopMerch | null>(null)
+  const [showNewOnly, setShowNewOnly] = useState(false)
 
   const filtered = category === 'all'
     ? items
     : items.filter((m) => m.category === category)
+
+  // Show first 3 items as "new" when filter is active (mock implementation)
+  const displayed = showNewOnly ? filtered.slice(0, 3) : filtered
 
   return (
     <div className="mt-6">
@@ -26,6 +30,20 @@ export function MerchGrid({ items, lang, balance, onPurchase }: Props) {
         <h3 className="text-[15px] font-bold text-pfg">
           {lang === 'ru' ? 'Мерч-магазин' : "Merch do'kon"}
         </h3>
+        <button
+          type="button"
+          onClick={() => setShowNewOnly(!showNewOnly)}
+          aria-label={lang === 'ru' ? 'Показать новые товары' : 'Yangi mahsulotlarni ko\'rish'}
+          aria-pressed={showNewOnly}
+          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-[11px] font-semibold transition-all active:scale-95 ${
+            showNewOnly
+              ? 'border-pgold bg-pgold/15 text-pgold'
+              : 'border-pgold/40 bg-pgold/5 text-pgold hover:bg-pgold/10'
+          }`}
+        >
+          <Star size={12} className={showNewOnly ? 'fill-pgold' : ''} />
+          <span>{lang === 'ru' ? 'Новинки' : 'Yangi mahsulotlar'}</span>
+        </button>
       </div>
 
       <CategoryFilter
@@ -36,7 +54,7 @@ export function MerchGrid({ items, lang, balance, onPurchase }: Props) {
       />
 
       <div className="flex gap-3 overflow-x-auto px-4 mt-3 pb-2 scroll-smooth-x">
-        {filtered.map((item, i) => (
+        {displayed.map((item, i) => (
           <button
             key={item.id}
             onClick={() => setSelected(item)}
