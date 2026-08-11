@@ -22,7 +22,7 @@ export default function AiTutorModal({
   onClose,
   language,
 }: AiTutorModalProps) {
-  const { tariff } = useAppStore()
+  const tariff = useAppStore((s) => s.tariff)
   const userId = useAppStore((s) => s.user?.id)
   const isPremium = tariff === 'premium'
   const tt = useT(language)

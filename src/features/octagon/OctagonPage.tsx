@@ -12,7 +12,9 @@ import { useOctagonClock }  from './hooks/useOctagonClock'
 import { useDuelConnection } from './hooks/useDuelConnection'
 
 export default function OctagonPage() {
-  const { user, settings } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const user     = useAppStore((s) => s.user)
+  const settings = useAppStore((s) => s.settings)
   const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
 

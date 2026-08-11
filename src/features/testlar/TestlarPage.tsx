@@ -30,7 +30,10 @@ interface ModeCard {
 
 export default function TestlarPage() {
   const navigate = useNavigate()
-  const { settings, totalCorrect, totalAnswered } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings      = useAppStore((s) => s.settings)
+  const totalCorrect  = useAppStore((s) => s.totalCorrect)
+  const totalAnswered = useAppStore((s) => s.totalAnswered)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
 

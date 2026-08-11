@@ -22,7 +22,10 @@ import { Sparkles } from 'lucide-react'
 
 export default function XatolarPage() {
   const navigate = useNavigate()
-  const { settings, wrongByTicket, tariff } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings      = useAppStore((s) => s.settings)
+  const wrongByTicket = useAppStore((s) => s.wrongByTicket)
+  const tariff        = useAppStore((s) => s.tariff)
   const isPremium = tariff === 'premium'
   const tt = useT(settings.language)
   const { questions, topics } = useQuestionsStore()

@@ -121,7 +121,10 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
 
 export default function TopicsPage() {
   const navigate = useNavigate()
-  const { settings, wrongByTicket, user } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings      = useAppStore((s) => s.settings)
+  const wrongByTicket = useAppStore((s) => s.wrongByTicket)
+  const user          = useAppStore((s) => s.user)
   const tt = useT(settings.language)
   const lang = settings.language
   const uid = user?.id ?? '0'

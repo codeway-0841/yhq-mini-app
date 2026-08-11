@@ -8,8 +8,11 @@
  * (kalit userId bilan namespace'langan).
  *
  * Retry siyosati:
- *  - tarmoq xatosi / 5xx / 429  → navbatda qoladi, keyingi flush'da qayta
- *    uriniladi (ketma-ketlik saqlanadi);
+ *  - tarmoq xatosi / offline → navbatda qoladi, ATTEMPTS SARFLANMAYDI
+ *    (serverga yetib bormagan urinish "real" emas — 100-savol offline testda
+ *    har enqueue-initsiyalangan flush attempts yeb javoblarni yo'qotardi);
+ *  - server JAVOB BERGAN retryable (5xx / 408 / 429) → attempts +1, keyingi
+ *    flush'da qayta uriniladi (ketma-ketlik saqlanadi);
  *  - 4xx (server qat'iy rad etdi) → yozuv TASHLAB YUBORILADI (qayta yuborish
  *    befoyda, cheksiz loop'ga olib kelardi);
  *  - MAX_ATTEMPTS dan oshsa → tashlab yuboriladi (zombi yozuv himoyasi).
@@ -222,6 +225,9 @@ async function updateEntry(userId: string, id: string, patch: Partial<OutboxEntr
 export async function flushOutbox(userId: string): Promise<void> {
   if (!userId || userId === '0' || flushing.has(userId)) return
   if (typeof localStorage === 'undefined') return
+  // Offline'da umuman fetch urunmaslik — abort-timeout (8s) kutilmasin,
+  // yozuvlar navbatda butun turadi ('online' eventida davom etadi).
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) return
   flushing.add(userId)
   try {
     for (;;) {
@@ -235,15 +241,29 @@ export async function flushOutbox(userId: string): Promise<void> {
         notify()
       } catch (err) {
         const msg = String((err as Error)?.message ?? err)
-        if (isFatalClientError(err) || head.attempts + 1 >= MAX_ATTEMPTS) {
-          // Server rad etdi yoki zombi — navbat qotib qolmasligi uchun tashlaymiz
-          console.warn('[outbox] yozuv tashlab yuborildi:', head.type, msg.slice(0, 200))
+        if (isFatalClientError(err)) {
+          // 4xx — server qat'iy rad etdi: navbat qotib qolmasligi uchun tashlaymiz
+          console.warn('[outbox] yozuv tashlab yuborildi (4xx):', head.type, msg.slice(0, 200))
           await removeEntry(userId, head.id)
           notify()
           continue
         }
-        // Tarmoq xatosi — saqlab qolamiz, keyingi flush'da davom etadi
-        await updateEntry(userId, head.id, { attempts: head.attempts + 1, lastError: msg.slice(0, 200) })
+        if (err instanceof ApiError) {
+          // Server JAVOB BERDI (5xx/408/429, retryable) — bu real urinish,
+          // attempts shu yerda va FAQAT shu yerda sarflanadi (zombi himoyasi)
+          if (head.attempts + 1 >= MAX_ATTEMPTS) {
+            console.warn('[outbox] yozuv tashlab yuborildi (max attempts):', head.type, msg.slice(0, 200))
+            await removeEntry(userId, head.id)
+            notify()
+            continue
+          }
+          await updateEntry(userId, head.id, { attempts: head.attempts + 1, lastError: msg.slice(0, 200) })
+          notify()
+          break
+        }
+        // Tarmoq/timeout — serverga yetib bormagan: attempts TEGILMAYDI,
+        // faqat diagnostika uchun lastError yangilanadi
+        await updateEntry(userId, head.id, { lastError: msg.slice(0, 200) })
         notify()
         break
       }

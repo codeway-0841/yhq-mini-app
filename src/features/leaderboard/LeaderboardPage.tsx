@@ -82,7 +82,9 @@ function Podium({ top3 }: { top3: LeaderEntry[] }) {
 }
 
 export default function LeaderboardPage() {
-  const { settings, user } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings = useAppStore((s) => s.settings)
+  const user     = useAppStore((s) => s.user)
   const navigate = useNavigate()
   const tt = useT(settings.language)
 

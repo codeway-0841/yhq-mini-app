@@ -3,12 +3,13 @@
 > Senior audit natijalari (2026-08-11). Bu fayl keyingi sessiyada davom etish uchun.
 > Buyruq: "TODO.md ni o'qib davom et" + istalganda "caveman ishlatib tur".
 
-## ⚠️ BIRINCHI: commit qilinmagan ish
+## ⚠️ BIRINCHI: migratsiya + commit qilinmagan ish
 
-Batch 1+2 (CRITICAL + HIGH fix'lar) workdir'da, COMMIT QILINMAGAN:
-`git status` → server/*, src/shared/* (api, outbox, useAppStore), tests/*, migrations/*, AGENTS.md, .gitignore (graphify-out).
 Deploydan OLDIN prod DB'ni migrate qilish SHART:
-`DATABASE_URL="$PROD_URL" npx tsx server/migrate.ts` (0028 phone-normalize + 0029 otp attempts).
+`DATABASE_URL="$PROD_URL" npx tsx server/migrate.ts` (0028 phone-normalize + 0029 otp attempts + **0030 session token hash** — user'lar logout bo'lmasligi uchun 0030 mavjud sessiyalarni joyida hash'laydi).
+
+Batch 3 (M10/L6 + frontend HIGH) workdir'da, COMMIT QILINMAGAN:
+`git status` → server/{config,utils,modules/auth}, migrations/0030*, src/** (outbox, useAppStore, TestPage, SpeedPage, AdaptivePage, useDuelConnection, 14 komponent selector), tests/**, i18n, .env.example, AGENTS.md, TODO.md.
 
 ## ✅ Tugatilgan (kontekst)
 
@@ -19,8 +20,9 @@ Deploydan OLDIN prod DB'ni migrate qilish SHART:
 - **C4** Neon'da driver-level `transactionHttp()` (adopt-merge atomik); drizzle neon-http tx YO'Q — multi-step flow'lar BITTA CTE bo'lishi shart
 - **C5** `telegram_login_codes` schema + snapshot 0027/0028 ratifikatsiya (`db:generate` endi ishlaydi)
 - **H1** OTP `crypto.randomInt` · **H2** session revoke (reset: hammasi; change: joriydan tashqari) · **H3** `/result` duplicate'da correctAnswer/correct = null · **M8/M3** telefon login lockout + OTP attempts lockout (0029) · **M6** SMS 60s cooldown · **M7** reset email 3/soat (silent skip)
-- **Journal tuzatildi:** 0027 bogus `when` 1786450000000 sababli keyingi migratsiyalar skip bo'lardi — zanjir tartiblangan (0028=...460000000, 0029=...470000000)
-- Test DB migrate qilingan; integration 63/63, unit 149/149 o'tadi
+- **Journal tuzatildi:** 0027 bogus `when` 1786450000000 sababli keyingi migratsiyalar skip bo'lardi — zanjir tartiblangan (0028=...460000000, 0029=...470000000, 0030=...480000000)
+- Test DB migrate qilingan (0030 ham); integration 64/64, unit 160/160 o'tadi
+- **Batch 3 (2026-08-11, 2-sessiya):** M10 (session token sha256 → 0030) + L6 (`OTP_PEPPER` HMAC) + Frontend HIGH 5/5 + `.env.example` to'ldirildi (OTP_PEPPER/GEMINI_API_KEY/CRON_SECRET/TEST_DATABASE_URL)
 - Muhit: headroom 0.34.0 (proxy :8787, Task Scheduler), graphify 0.9.39 (skill + `graphify-out/` qurilgan), ponytail OpenCode plugin, context7 ikkala config'da
 
 ## 🔴 Qolgan HIGH
@@ -31,17 +33,17 @@ Hozir bir savolga cheksiz javob → total_correct/streak/daily_records (liga bal
 Variantlar: 1) kunlik kredit `(user,date,subject,question)` — kuniga 1 marta hisob; 2) faqat `daily_records` dedup (liga himoyasi), wrong_by_ticket erkin; 3) hozircha rate-limit+monitoring.
 Joy: `progress.repository.ts` recordAnswer CTE + ehtimol yangi jadval (migratsiya) + security-critical.test.
 
-### Session token hashing (M10)
+### ~~Session token hashing (M10)~~ ✅ TUGADI (Batch 3)
 
-`sessions.token` DB'da PLAINTEXT. Fix: DB'da `sha256(token)` saqlash, resolve'da hash bo'yicha qidirish. Migratsiya + `auth.repository.createSession/resolveSession` + login oqimlari (`issueSession` xom token qaytaradi, DB'ga hash yoziladi). L6 bilan birga: OTP hash'ga server pepper (HMAC) — config'ga `OTP_PEPPER` (rule 7: avval zod schema `server/config/index.ts`).
+`utils/token-hash.ts` (sha256) — hashing `auth.repository` 4 metodida (caller'lar xom token beradi); migratsiya 0030 mavjud sessiyalarni joyida hash'laydi (pgcrypto). L6: `OTP_PEPPER` config'da (zod), `hashOTP` HMAC-SHA256 yoki pepper'siz fallback. Test: unit `token-hash.test.ts` (4), integration auth.test M10 assertion. Eslatma: `telegram_login_codes.session_token` xom qoladi (≤5daq tranzit, single-use) — hujjatlashtirilgan.
 
-### Frontend HIGH (frontend partiyasi)
+### ~~Frontend HIGH (frontend partiyasi)~~ ✅ TUGADI (Batch 3)
 
-1. **Outbox offline data-loss** — `src/shared/lib/outbox.ts:160-245`: flush'da `navigator.onLine === false` bo'lsa attempts bump QILMASLIK (yoki attempts faqat server javobida). Aks holda 100-savol offline testda ~76 javob yo'qoladi (MAX 25).
-2. **TestPage dublikat session-save** — `TestPage.tsx:160-180` ichidagi effect `useTestSession.ts:73-93` bilan bir xil ishni qiladi → sahifadagini O'CHIRISH.
-3. **Whole-store obuna** — 15 komponent `useAppStore()` selectorsiz (TestPage:33, Dashboard:37, Profil:33, TestlarPage:33, TopicsPage:124, StatistikaPage:28, XatolarPage:25, LeaderboardPage:85, Darslik, OctagonPage:15, AdaptivePage:50, SettingsModal:37, AiTutorModal:25...) → selector'li obuna.
-4. **Fatal 4xx "offline" yutiladi** — `useAppStore.ts:193-199` catch: `ApiError.retryable === false` bo'lsa enqueue EMAS, xato toast + rollback.
-5. **Octagon WS heartbeat o'chmaydi** — `octagon-ws.ts:69` interval (3s) sahifadan chiqqach ham yuradi → OctagonPage unmount'da `destroyOctagonSocket()` (phase idle/match_end).
+1. ✅ **Outbox offline data-loss** — attempts FAQAT server javobida (ApiError) sarflanadi; tarmoq/offline bepul + `navigator.onLine===false` flush'ni umuman o'tkazib yuboradi ('online' eventida davom). Test: `tests/unit/lib/outbox.test.ts` (4).
+2. ✅ **TestPage dublikat session-save** — sahifadagi effect o'chirildi, save FAQAT `useTestSession.ts`da.
+3. ✅ **Whole-store obuna** — 15 joy (13 fayl) `useAppStore((s)=>s.x)` selector'larga o'tkazildi.
+4. ✅ **Fatal 4xx "offline" yutiladi** — `submitAnswer` `{ fatal: true, code }` qaytaradi (outbox'siz); TestPage: xato toast (`submitFailed`, UZ+RU) + tanlov rollback; Speed/Adaptive: reveal'siz o'tish. Test: `tests/unit/store/submit-fatal.test.ts` (3).
+5. ✅ **Octagon WS heartbeat** — `useDuelConnection` unmount'da `destroyOctagonSocket()` (faqat phase idle/match_end; searching'da leave_queue'dan KEYIN).
 
 ## 🟠 MEDIUM (tanlangan, tartib bilan)
 
@@ -64,8 +66,8 @@ Joy: `progress.repository.ts` recordAnswer CTE + ehtimol yangi jadval (migratsiy
 - Outbox getOutboxCount har render'da JSON.parse (Profil:38) — kesh
 
 **Qurulma/gigiyena:**
-- `.env.example`: GEMINI_API_KEY, CRON_SECRET, TEST_DATABASE_URL qo'shish; `.env`'dagi REDIS_URL o'lik
-- `.gitignore`: `*.png` test skrinshotlari + `.playwright-mcp/` (root'da 6 png untracked)
+- ~~`.env.example`: GEMINI_API_KEY, CRON_SECRET, TEST_DATABASE_URL qo'shish~~ ✅ (Batch 3, OTP_PEPPER bilan birga); `.env`'dagi REDIS_URL o'lik
+- ~~`.gitignore`: `*.png` test skrinshotlari + `.playwright-mcp/`~~ ✅ (Batch 3)
 - `themes.test.ts`: dark+light bloklarni ALOHIDA assert; `migrations/meta/0001_snapshot.json` yo'q
 - Bo'sh test papkalari: tests/unit/lib|middleware|utils (middleware/ endi to'ldi)
 - Dead code: ForgotPasswordModal.tsx (faylni o'chirish), SpeedPage.tsx:110 no-op effect, OAuth stub'lar (yoki implement)

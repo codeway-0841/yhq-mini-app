@@ -28,3 +28,7 @@ mintty.*.html
 graphify-out/
 
 .opencode/
+
+# Test ad-hoc skrinshotlar (Playwright/MCP sessiyalar — rootga tushadi)
+.playwright-mcp/
+*.png

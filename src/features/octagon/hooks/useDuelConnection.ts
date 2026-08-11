@@ -128,6 +128,19 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     }
   }, [s.phase, user?.id])
 
+  // Sahifadan chiqish (unmount): o'yin tugagan/bo'sh holatda socket'ni butunlay
+  // yopamiz — aks holda heartbeat (3s interval) + reconnect loop sahifa
+  // yopilgach ham yurardi. O'yin DAVOMIDA chiqilsa — jonli qoladi (qayta
+  // kirganda rejoin/grace oyna ishlaydi). Diqqat: bu effect leave_queue
+  // effectidan KEYIN deklaratsiya qilingan — cleanup shu tartibda ishlaydi.
+  useEffect(() => {
+    return () => {
+      const phase = phaseRef.current
+      if (phase === 'idle' || phase === 'match_end') destroyOctagonSocket()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // Ovoz effektlari: raqib topilganda + g'alaba/mag'lubiyat
   const prevPhaseRef = useRef(s.phase)
   useEffect(() => {

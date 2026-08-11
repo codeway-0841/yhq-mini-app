@@ -25,12 +25,17 @@ import { usePhoneContact } from './hooks/usePhoneContact'
 // ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {
   const navigate = useNavigate()
-  const {
-    user, settings, updateSettings, resetProgress, tariff,
-    syncFromServer,
-    displayName, setDisplayName,
-    customAvatar, setCustomAvatar,
-  } = useAppStore()
+  // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+  const user           = useAppStore((s) => s.user)
+  const settings       = useAppStore((s) => s.settings)
+  const updateSettings = useAppStore((s) => s.updateSettings)
+  const resetProgress  = useAppStore((s) => s.resetProgress)
+  const tariff         = useAppStore((s) => s.tariff)
+  const syncFromServer = useAppStore((s) => s.syncFromServer)
+  const displayName    = useAppStore((s) => s.displayName)
+  const setDisplayName = useAppStore((s) => s.setDisplayName)
+  const customAvatar   = useAppStore((s) => s.customAvatar)
+  const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
   const tt = useT(settings.language)
 
   // Offline Sync Center: serverga yetmagan mutation'lar soni (0 bo'lsa yashirin)

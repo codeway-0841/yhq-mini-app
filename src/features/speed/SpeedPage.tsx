@@ -20,7 +20,9 @@ const QUESTIONS  = 20
 
 export default function SpeedPage() {
   const navigate = useNavigate()
-  const { settings, submitAnswer } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings = useAppStore((s) => s.settings)
+  const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
@@ -80,9 +82,10 @@ export default function SpeedPage() {
     setSelected('__timeout__')
     void (async () => {
       // selectedAnswer=null → server xato deb yozadi va reveal qaytaradi
+      // (fatal rad etuvida reveal yo'q — jimgina keyingisiga o'tamiz)
       const outcome = q ? await submitAnswer(q.id, null) : null
       setBusy(false)
-      if (outcome) setRevealed(outcome.correctAnswer)
+      if (outcome && !('fatal' in outcome)) setRevealed(outcome.correctAnswer)
       playSound('error')
       haptics.notify('error')
       advanceTimerRef.current = window.setTimeout(() => advance(false), 700)
@@ -97,13 +100,15 @@ export default function SpeedPage() {
       // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (kalit client'da yo'q)
       const outcome = await submitAnswer(q.id, optId)
       setBusy(false)
-      if (outcome) {
-        setRevealed(outcome.correctAnswer)
-        haptics.notify(outcome.correct ? 'success' : 'error')
-        playSound(outcome.correct ? 'success' : 'error')
+      // Fatal (4xx) — javob saqlanmadi; reveal yo'q (offline kabi qisqa o'tamiz)
+      const scored = outcome && !('fatal' in outcome) ? outcome : null
+      if (scored) {
+        setRevealed(scored.correctAnswer)
+        haptics.notify(scored.correct ? 'success' : 'error')
+        playSound(scored.correct ? 'success' : 'error')
       }
-      // Offline: reveal yo'q — faqat tanlangan variant belgilanib qoladi
-      advanceTimerRef.current = window.setTimeout(() => advance(outcome?.correct ?? false), outcome ? 800 : 400)
+      // Offline/fatal: reveal yo'q — faqat tanlangan variant belgilanib qoladi
+      advanceTimerRef.current = window.setTimeout(() => advance(scored?.correct ?? false), scored ? 800 : 400)
     })()
   }, [answered, busy, q, submitAnswer, advance])
 

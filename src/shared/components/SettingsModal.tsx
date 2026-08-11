@@ -34,7 +34,9 @@ function Row({ icon: Icon, iconColor, label, children }: {
 }
 
 export default function SettingsModal({ onClose }: { onClose: () => void }) {
-  const { settings, updateSettings } = useAppStore()
+  // Selector'li obuna — whole-store EMAS
+  const settings = useAppStore((s) => s.settings)
+  const updateSettings = useAppStore((s) => s.updateSettings)
   const accent     = useAppStore((s) => s.accent)
   const setAccent  = useAppStore((s) => s.setAccent)
   const isPremium  = useAppStore((s) => s.tariff === 'premium')

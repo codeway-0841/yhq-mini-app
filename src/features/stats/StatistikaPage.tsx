@@ -25,7 +25,13 @@ function dateAgo(n: number): string {
 
 export default function StatistikaPage() {
   const navigate = useNavigate()
-  const { settings, totalCorrect, totalWrong, totalAnswered, wrongByTicket, user } = useAppStore()
+  // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+  const settings      = useAppStore((s) => s.settings)
+  const totalCorrect  = useAppStore((s) => s.totalCorrect)
+  const totalWrong    = useAppStore((s) => s.totalWrong)
+  const totalAnswered = useAppStore((s) => s.totalAnswered)
+  const wrongByTicket = useAppStore((s) => s.wrongByTicket)
+  const user          = useAppStore((s) => s.user)
   const subject  = useSubjectStore((s) => s.subject)
   const lang     = settings.language
   const userId   = user?.id

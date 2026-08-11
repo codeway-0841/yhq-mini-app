@@ -30,7 +30,11 @@ export default function TestPage() {
   const { id }   = useParams()
   const navigate = useNavigate()
   const location = useLocation()
-  const { settings, submitAnswer, toggleSaved, savedQuestions } = useAppStore()
+  // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+  const settings       = useAppStore((s) => s.settings)
+  const submitAnswer   = useAppStore((s) => s.submitAnswer)
+  const toggleSaved    = useAppStore((s) => s.toggleSaved)
+  const savedQuestions = useAppStore((s) => s.savedQuestions)
   const tt          = useT(settings.language)
   const questions   = useQuestionsStore((s) => s.questions)
   const storeTopics = useQuestionsStore((s) => s.topics)
@@ -131,9 +135,8 @@ export default function TestPage() {
   }, [location.key, sessionKey, subjectId, totalSeconds])
   const timer = useTimer(handleTimeUp, location.key, initialSeconds)
 
-  // Sessiya boshlangan vaqt — yangi sessiyada hozirgi vaqt, resume'da asl qiymat
-  const startedAtRef = useRef<number | null>(null)
-
+  // Sessiya snapshot'ini persist'ga yozish — FAQAT hooks/useTestSession.ts'da
+  // (bu yerda dublikat effect bo'lgan — ikki manba, ikki startedAtRef: o'chirildi)
   useEffect(() => {
     const snap = useTestSessionStore.getState().session
     const r = isResumable(snap, sessionKey, subjectId) ? snap : null
@@ -147,37 +150,12 @@ export default function TestPage() {
     setIsFinished(false)
     setToast(null)
     setStudyOpen(false)
-    startedAtRef.current = null
     if (r && len > 0 && r.answers.some((a) => a !== null)) {
       setToast(tt('sessionResumed'))
       setTimeout(() => setToast(null), 3000)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps — tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
-
-  // Snapshot'ni persist'ga yozish: har javob/navigatsiya/yakunlashda.
-  // Reload yoki WebView restart bo'lsa shu nuqtadan davom etiladi.
-  useEffect(() => {
-    if (!activeQuestions.length) return
-    const store = useTestSessionStore.getState()
-    const existing = store.session
-    if (startedAtRef.current == null) {
-      startedAtRef.current = isResumable(existing, sessionKey, subjectId) ? existing.startedAt : Date.now()
-    }
-    store.save({
-      key:             sessionKey,
-      subjectId,
-      mode,
-      title:           stateTitle,
-      questionIds:     activeQuestions.map((x) => x.id),
-      current,
-      answers,
-      selected:        selectedHistory,
-      correctOptions:  correctOpts,
-      startedAt:       startedAtRef.current,
-      finished:        isFinished,
-    })
-  }, [activeQuestions, current, answers, selectedHistory, correctOpts, isFinished, sessionKey, subjectId, mode, stateTitle])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const cancelAutoNext = useCallback(() => {
@@ -232,6 +210,15 @@ export default function TestPage() {
     void (async () => {
       const outcome = await submitAnswer(questionId, optId)
       setSubmitting(false)
+
+      // Fatal (4xx) — server QAT'IY rad etdi: javob SAQLANMADI (outbox'siz).
+      // "Offline"ga yutmaymiz: tanlovni rollback (qayta urinish mumkin) + xato toast.
+      if (outcome && 'fatal' in outcome) {
+        setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = null; return next })
+        setToast(tt('submitFailed'))
+        setTimeout(() => setToast(null), 3000)
+        return
+      }
 
       // Find current index after async — activeQuestions may have changed
       const idx = activeQuestions.findIndex(x => x.id === questionId)

@@ -23,7 +23,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
   onPractice: () => void
 }) {
   const [idx, setIdx] = useState(lessonIdx)
-  const { settings } = useAppStore()
+  const settings = useAppStore((s) => s.settings)
   const list = lessons[mod.id] ?? []
   const lesson: Lesson | undefined = list[idx]
   const ru = settings.language === 'ru'
@@ -160,7 +160,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
   doneList: number[]
   onOpenLesson: (idx: number) => void
 }) {
-  const { settings } = useAppStore()
+  const settings = useAppStore((s) => s.settings)
   const ru = settings.language === 'ru'
   const modTitle = ru ? mod.titleRu : mod.title
   const total = mod.lessonCount
@@ -259,7 +259,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
 export default function Darslik() {
   const navigate = useNavigate()
   const location = useLocation()
-  const { settings } = useAppStore()
+  const settings = useAppStore((s) => s.settings)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
   const questions = useQuestionsStore((s) => s.questions)

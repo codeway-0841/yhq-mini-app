@@ -47,7 +47,9 @@ function Option({ id, text, state, onSelect, answered }: {
 
 export default function AdaptivePage() {
   const navigate = useNavigate()
-  const { settings, submitAnswer } = useAppStore()
+  // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+  const settings = useAppStore((s) => s.settings)
+  const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
   const topics    = useQuestionsStore((s) => s.topics)
   const tt = useT(settings.language)
@@ -83,13 +85,16 @@ export default function AdaptivePage() {
     void (async () => {
       // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi.
       const outcome = await submitAnswer(q.id, optionId)
+      // Fatal (4xx) — server rad etdi, javob saqlanmadi; reveal yo'q
+      // (xato-feedback TestPage'da; adaptive oqimi davom etadi).
+      const scored = outcome && !('fatal' in outcome) ? outcome : null
       // Offline'da (outcome=null) quality "xato" deb konservativ yoziladi —
       // server flush paytida haqiqiy natija progress'ga tushadi.
-      const quality: 0 | 1 = outcome?.correct ? 1 : 0
-      if (outcome) {
-        setRevealed(outcome.correctAnswer)
-        haptics.notify(outcome.correct ? 'success' : 'error')
-        playSound(outcome.correct ? 'success' : 'error')
+      const quality: 0 | 1 = scored?.correct ? 1 : 0
+      if (scored) {
+        setRevealed(scored.correctAnswer)
+        haptics.notify(scored.correct ? 'success' : 'error')
+        playSound(scored.correct ? 'success' : 'error')
       }
       recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
 

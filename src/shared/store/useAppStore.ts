@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { api, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
+import { api, ApiError, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
 import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
@@ -17,6 +17,15 @@ export interface SubmitOutcome {
   /** Server bu javobni avval qabul qilgan (idempotent replay) — counterlar tegmang */
   duplicate:     boolean
 }
+
+/** Fatal: server javobni QAT'IY rad etdi (retryable bo'lmagan 4xx) —
+ *  outbox'ga YOZILMADI (flush birinchi urunishda tashlab yuborardi) va javob
+ *  saqlanMADI. UI "offline queued" deb YOLG'ON ko'rsatmasligi shart — xato
+ *  toast + tanlov rollback (qayta urinish mumkin). */
+export interface SubmitFatal { fatal: true; code?: string }
+
+/** null = OFFLINE (outbox'da); SubmitFatal = rad etildi; SubmitOutcome = server baholadi */
+export type SubmitResult = SubmitOutcome | SubmitFatal | null
 
 interface AppState {
   user:           ApiUser | null
@@ -47,9 +56,10 @@ interface AppState {
   /**
    * Javobni SERVER'ga yuboradi va tekshiruv natijasini qaytaradi.
    * correctAnswer client'da yo'q (public /questions javobsiz) — feedback
-   * FAQAT shu natijaga tayanadi. null = offline (outbox'ga yozildi).
+   * FAQAT shu natijaga tayanadi. null = offline (outbox'ga yozildi);
+   * { fatal } = server QAT'IY rad etdi (4xx) — outbox'siz, javob yo'qoldi.
    */
-  submitAnswer:   (questionId: number, selectedAnswer: string | null) => Promise<SubmitOutcome | null>
+  submitAnswer:   (questionId: number, selectedAnswer: string | null) => Promise<SubmitResult>
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
@@ -193,6 +203,13 @@ export const useAppStore = create<AppState>()(
           if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
           return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate }
         } catch (err) {
+          // FATAL 4xx — server qat'iy rad etdi (validatsiya/auth/noto'g'ri so'rov):
+          // outbox'ga yozish BEFOYDA (flush ilk urunishda tashlab yuborardi) va
+          // "offline"ga yutish javobni jimgina YO'QOTARDI. Caller xato ko'rsatadi.
+          if (err instanceof ApiError && !err.retryable) {
+            console.warn('postResult rad etildi (fatal, outbox\'siz):', err.message)
+            return { fatal: true, code: err.code }
+          }
           // OFFLINE SYNC CENTER: javob outbox'ga yoziladi — internet
           // qaytganda flushOutbox serverga yetkazadi (progress yo'qolmaydi,
           // clientToken tufayli ikki marta ham yozilmaydi).
