@@ -6,6 +6,7 @@ import { speak } from '../../../shared/lib/speech'
 import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 interface AiTutorModalProps {
   questionId: number
@@ -145,8 +146,7 @@ export default function AiTutorModal({
   // Upsell modal
   if (showUpsell) {
     return (
-      <div className="fixed inset-0 z-50 flex items-end" onClick={handleClose}>
-        <div className="absolute inset-0 bg-black/60" />
+      <DialogOverlay onClose={handleClose} labelId="upsell-title">
         <div
           className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
           onClick={(e) => e.stopPropagation()}
@@ -156,7 +156,7 @@ export default function AiTutorModal({
             <div className="w-14 h-14 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center mb-3">
               <Crown size={26} className="text-duo-yellow" fill="currentColor" />
             </div>
-            <p className="text-[17px] font-black text-fg">{tt('premiumNeedTitle')}</p>
+            <p id="upsell-title" className="text-[17px] font-black text-fg">{tt('premiumNeedTitle')}</p>
             <p className="text-[13px] text-muted mt-1.5 mb-4 leading-snug">
               {tt('premiumNeedDesc')}
             </p>
@@ -178,15 +178,14 @@ export default function AiTutorModal({
             </button>
           </div>
         </div>
-      </div>
+      </DialogOverlay>
     )
   }
 
   // Statik tushuntirish modal (FREE)
   if (showStatic && staticText) {
     return (
-      <div className="fixed inset-0 z-50 flex items-end" onClick={handleClose}>
-        <div className="absolute inset-0 bg-black/60" />
+      <DialogOverlay onClose={handleClose} labelId="static-title">
         <div
           className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
           onClick={(e) => e.stopPropagation()}
@@ -196,7 +195,7 @@ export default function AiTutorModal({
             <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
               <Info size={17} className="text-duo-yellow" />
             </div>
-            <p className="text-[15px] font-black text-fg">{tt('staticExplainTitle')}</p>
+            <p id="static-title" className="text-[15px] font-black text-fg">{tt('staticExplainTitle')}</p>
             <button
               onClick={(e) => {
                 e.stopPropagation()
@@ -225,15 +224,14 @@ export default function AiTutorModal({
             {tt('staticExplainAiHint')}
           </button>
         </div>
-      </div>
+      </DialogOverlay>
     )
   }
 
   // AI streaming modal (PREMIUM)
   if (showAi) {
     return (
-      <div className="fixed inset-0 z-50 flex items-end" onClick={handleClose}>
-        <div className="absolute inset-0 bg-black/60" />
+      <DialogOverlay onClose={handleClose} labelId="ai-title">
         <div
           className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8 max-h-[75vh] flex flex-col"
           onClick={(e) => e.stopPropagation()}
@@ -243,7 +241,7 @@ export default function AiTutorModal({
             <div className="w-9 h-9 rounded-xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center flex-shrink-0">
               <GraduationCap size={17} className="text-duo-purple" />
             </div>
-            <p className="text-[15px] font-black text-fg">AI Tutor</p>
+            <p id="ai-title" className="text-[15px] font-black text-fg">AI Tutor</p>
             {aiBusy && <Loader2 size={15} className="text-duo-purple animate-spin ml-auto" />}
             {!aiBusy && aiText && (
               <button
@@ -266,7 +264,7 @@ export default function AiTutorModal({
             )}
           </div>
         </div>
-      </div>
+      </DialogOverlay>
     )
   }
 

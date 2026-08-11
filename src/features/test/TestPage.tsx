@@ -11,6 +11,7 @@ import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
 import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test-session'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
+import DialogOverlay from '../../shared/components/DialogOverlay'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
@@ -536,8 +537,7 @@ export default function TestPage() {
 
       {/* "Nega shunday?" — modda izohi (bottom sheet) */}
       {showExplain && explanation && (
-        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setShowExplain(false)}>
-          <div className="absolute inset-0 bg-black/60" />
+        <DialogOverlay onClose={() => setShowExplain(false)} labelId="explain-title">
           <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
             onClick={(e) => e.stopPropagation()}>
             <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
@@ -545,7 +545,7 @@ export default function TestPage() {
               <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
                 <Info size={17} className="text-duo-yellow" />
               </div>
-              <p className="text-[15px] font-black text-fg">
+              <p id="explain-title" className="text-[15px] font-black text-fg">
                 {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
               </p>
             </div>
@@ -563,7 +563,7 @@ export default function TestPage() {
               {tt('openModule')}
             </button>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* AI Tutor modal */}
@@ -581,10 +581,11 @@ export default function TestPage() {
       {zoomed && q.image && (
         <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-2 cursor-zoom-out"
           onClick={() => setZoomed(false)}
-          role="button"
+          role="dialog"
+          aria-modal="true"
+          aria-label={tt('closeZoom')}
           tabIndex={0}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') setZoomed(false) }}
-          aria-label={tt('closeZoom')}>
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') setZoomed(false) }}>
           <img src={q.image} alt={`${tt('question')} ${current + 1}`} className="max-w-full max-h-full object-contain" />
           <span className="absolute top-4 right-4 text-white/70 text-2xl px-2" aria-hidden="true">✕</span>
         </div>
