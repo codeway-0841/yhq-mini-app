@@ -37,6 +37,10 @@ const UZ = {
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
   shopTitle: "Tokenlar do'koni", shopTagline: "Token yig'ing, avatar va merj oling",
   tryWord: "Sinash",
+  // Shpargalkalar (formulalar)
+  cheatsheets: "Shpargalkalar", cheatsheetsDesc: "Barcha fanlar uchun formulalar to'plami",
+  searchFormula: "Qidirish...", favFormulas: "Sevimli formulalarim",
+  formulasWord: "formula", notFoundF: "Hech narsa topilmadi",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -239,6 +243,10 @@ const RU: Record<Keys, string> = {
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
   shopTitle: "Магазин токенов", shopTagline: "Собирайте токены, получайте аватары и мержи",
   tryWord: "Пробовать",
+  // Шпаргалки (формулы)
+  cheatsheets: "Шпаргалки", cheatsheetsDesc: "Формулы по всем предметам",
+  searchFormula: "Поиск...", favFormulas: "Избранные формулы",
+  formulasWord: "формул", notFoundF: "Ничего не найдено",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",

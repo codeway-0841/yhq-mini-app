@@ -28,7 +28,7 @@ src/
     config/        #     subjects.tsx (UI_MAP), themes.ts, achievements.ts, index.ts (runtime env)
   platform/        #   window.Telegram + Capacitor YAGONA kirish nuqtasi:
                    #     telegram.ts (WebApp), haptics.ts, native.ts (APK: yagona back, splash)
-  content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs + lessonMap.yhq.json
+  content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs, formulas + lessonMap.yhq.json
 capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle)
 android/           #   Generate qilingan native loyiha — APK build uchun Android SDK kerak (gradlew)
 server/

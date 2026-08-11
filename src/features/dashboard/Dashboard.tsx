@@ -4,7 +4,7 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, Coins,
+  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, Coins, NotebookText,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -197,6 +197,7 @@ export default function Dashboard() {
             <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
             <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
             <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />
+            <GridCard icon={NotebookText}  label={tt('cheatsheets')} onClick={() => navigate('/shpargalkalar')} />
           </div>
 
           {/* 6. Leaderboard */}
