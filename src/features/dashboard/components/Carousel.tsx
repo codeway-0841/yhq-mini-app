@@ -190,6 +190,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
   const isDragging = useRef(false)
   const isHorizontal = useRef<boolean | null>(null)
   const autoRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const noAnim = useRef(typeof document !== 'undefined' && document.body.dataset.noAnimation === 'true')
 
   const goTo = useCallback((idx: number) => {
     setCurrent(((idx % count) + count) % count)
@@ -197,6 +198,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
 
   const resetAuto = useCallback(() => {
     if (autoRef.current) clearInterval(autoRef.current)
+    if (noAnim.current) return
     autoRef.current = setInterval(() => setCurrent((c) => (c + 1) % count), 5000)
   }, [count])
 
@@ -242,7 +244,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
     if (deltaX.current < -threshold) goTo(current + 1)
     else if (deltaX.current > threshold) goTo(current - 1)
     if (trackRef.current) {
-      trackRef.current.style.transition = 'transform 320ms cubic-bezier(0.25, 1, 0.5, 1)'
+      trackRef.current.style.transition = noAnim.current ? 'none' : 'transform 320ms cubic-bezier(0.25, 1, 0.5, 1)'
       trackRef.current.style.transform = ''
     }
     deltaX.current = 0
@@ -261,7 +263,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
           className="flex"
           style={{
             transform: `translateX(-${current * 100}%)`,
-            transition: 'transform 320ms cubic-bezier(0.25, 1, 0.5, 1)',
+            transition: noAnim.current ? 'none' : 'transform 320ms cubic-bezier(0.25, 1, 0.5, 1)',
           }}>
           {slides.map((slide, i) => (
             <div key={i} className="w-full flex-shrink-0 min-h-[148px]">

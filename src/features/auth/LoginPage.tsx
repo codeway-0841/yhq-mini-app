@@ -14,7 +14,8 @@ import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
 import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
-import EmailAuthForm from './components/EmailAuthForm'
+// EmailAuthForm disabled — uncomment when email auth ready
+// import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 
 /**

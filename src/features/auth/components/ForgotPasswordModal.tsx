@@ -22,7 +22,7 @@ type Step = 'phone' | 'otp' | 'new-password'
  * Current issue: using verifyOTPLogin creates session (security risk - OTP reuse).
  * Proper flow needs separate OTP verification that doesn't grant login session.
  */
-export default function ForgotPasswordModal({ isOpen, onClose, onSuccess }: ForgotPasswordModalProps) {
+export default function ForgotPasswordModal({ isOpen, onClose, onSuccess: _onSuccess }: ForgotPasswordModalProps) {
   const [step, setStep] = useState<Step>('phone')
   const [otpCode, setOtpCode] = useState('')
   const [password, setPassword] = useState('')
