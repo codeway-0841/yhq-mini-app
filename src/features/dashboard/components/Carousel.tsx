@@ -189,6 +189,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
   const deltaX = useRef(0)
   const isDragging = useRef(false)
   const isHorizontal = useRef<boolean | null>(null)
+  const didSwipe = useRef(false)
   const autoRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const noAnim = useRef(typeof document !== 'undefined' && document.body.dataset.noAnimation === 'true')
 
@@ -210,6 +211,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
   const onPointerDown = useCallback((e: React.PointerEvent) => {
     isDragging.current = true
     isHorizontal.current = null
+    didSwipe.current = false
     startX.current = e.clientX
     startY.current = e.clientY
     deltaX.current = 0
@@ -241,6 +243,7 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
     if (!isDragging.current) return
     isDragging.current = false
     const threshold = 50
+    if (Math.abs(deltaX.current) > 10) didSwipe.current = true
     if (deltaX.current < -threshold) goTo(current + 1)
     else if (deltaX.current > threshold) goTo(current - 1)
     if (trackRef.current) {
@@ -258,7 +261,8 @@ export const Carousel = memo(function Carousel({ lang, continueSubject, progress
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}>
+        onPointerCancel={onPointerUp}
+        onClickCapture={(e) => { if (didSwipe.current) { e.stopPropagation(); e.preventDefault() } }}>
         <div ref={trackRef}
           className="flex"
           style={{
