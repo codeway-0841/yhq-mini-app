@@ -8,8 +8,8 @@ import { shopRepository } from './shop.repository'
 
 const router = Router()
 
+// router.use prefix-match qiladi — /shop/:userId/balance kabi subpath'lar ham shundan o'tadi
 router.use('/shop/:userId', requireSelf)
-router.use('/shop/:userId/*', requireSelf)
 
 const ItemTypeSchema = z.enum(['avatar', 'merch', 'badge'])
 
