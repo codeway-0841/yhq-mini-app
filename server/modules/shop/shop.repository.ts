@@ -3,6 +3,7 @@ import { db } from '../../db/connection'
 import {
   shopItems, tokenBalances, tokenTransactions,
   userPurchases, dailyRewards, tokenTasks, userTaskProgress,
+  progress,
 } from '../../schema'
 import { AppError } from '../../middleware/error-handler'
 import { tashkentDate } from '../../utils/date'
@@ -173,5 +174,42 @@ export const shopRepository = {
       .where(eq(tokenTransactions.userId, userId))
       .orderBy(desc(tokenTransactions.createdAt))
       .limit(limit)
+  },
+
+  async getUserTotalCorrect(userId: string): Promise<number | null> {
+    const [row] = await db.select({ totalCorrect: progress.totalCorrect })
+      .from(progress).where(eq(progress.userId, userId))
+    return row?.totalCorrect ?? null
+  },
+
+  async findTask(taskId: string): Promise<{ reward: number; total: number } | null> {
+    const [task] = await db.select({ reward: tokenTasks.reward, total: tokenTasks.total })
+      .from(tokenTasks).where(and(eq(tokenTasks.id, taskId), eq(tokenTasks.isActive, true)))
+    return task ?? null
+  },
+
+  async incrementTaskProgress(userId: string, taskId: string, delta: number, total: number): Promise<{ progress: number; completed: boolean } | null> {
+    await db.insert(userTaskProgress)
+      .values({ userId, taskId, progress: 0, completed: false })
+      .onConflictDoNothing()
+
+    const [updated] = await db.update(userTaskProgress)
+      .set({
+        progress: sql`LEAST(${userTaskProgress.progress} + ${delta}, ${total})`,
+        completed: sql`LEAST(${userTaskProgress.progress} + ${delta}, ${total}) >= ${total}`,
+        claimedAt: sql`CASE WHEN LEAST(${userTaskProgress.progress} + ${delta}, ${total}) >= ${total} THEN now() ELSE ${userTaskProgress.claimedAt} END`,
+        updatedAt: sql`now()`,
+      })
+      .where(and(
+        eq(userTaskProgress.userId, userId),
+        eq(userTaskProgress.taskId, taskId),
+        eq(userTaskProgress.completed, false),
+      ))
+      .returning({
+        progress: userTaskProgress.progress,
+        completed: userTaskProgress.completed,
+      })
+
+    return updated ?? null
   },
 }

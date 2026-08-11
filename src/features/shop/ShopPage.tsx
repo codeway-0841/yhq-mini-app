@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Clock, HelpCircle, AlertCircle, X } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { TokenHistory } from './components/TokenHistory'
 import { StatsBar } from './components/StatsBar'
 import { DailyReward } from './components/DailyReward'
 import { TokenTasks } from './components/TokenTasks'
@@ -53,7 +54,10 @@ export default function ShopPage() {
 
   const shop = useShop()
   const [dismissedError, setDismissedError] = useState(false)
+  const [showHistory, setShowHistory] = useState(false)
   const dismissError = useCallback(() => setDismissedError(true), [])
+  const openHistory = useCallback(() => setShowHistory(true), [])
+  const closeHistory = useCallback(() => setShowHistory(false), [])
 
   useEffect(() => { setDismissedError(false) }, [shop.error])
 
@@ -85,6 +89,7 @@ export default function ShopPage() {
   }, [shop.claimDaily])
 
   if (shop.loading) return <PageLoader />
+  if (showHistory) return <TokenHistory onClose={closeHistory} />
 
   const hasItems = shop.avatars.length > 0 || shop.merch.length > 0 || shop.badges.length > 0
 
@@ -110,7 +115,7 @@ export default function ShopPage() {
           <div className="flex items-center gap-2 flex-shrink-0">
             <button
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-pprimary/40 bg-pprimary/5 text-pprimary text-[11px] font-semibold transition-all active:scale-95"
-              onClick={() => {/* TODO: Token history */}}
+              onClick={openHistory}
             >
               <Clock size={13} />
               <span className="hidden xs:inline">
@@ -154,10 +159,11 @@ export default function ShopPage() {
         <>
           {/* Avatar Shop */}
           <div id="avatars-section">
-          <AvatarGrid avatars={shop.avatars.map((a) => ({
-            id: a.id, name: a.nameUz, nameRu: a.nameRu, image: a.image,
-            price: a.price, category: a.category as AvatarCategory,
-          }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
+            <AvatarGrid avatars={shop.avatars.map((a) => ({
+              id: a.id, name: a.nameUz, nameRu: a.nameRu, image: a.image,
+              price: a.price, category: a.category as AvatarCategory,
+            }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
+          </div>
 
           {/* Merch Shop */}
           <MerchGrid items={shop.merch.map((m) => ({
