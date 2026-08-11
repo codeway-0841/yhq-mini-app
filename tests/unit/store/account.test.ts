@@ -78,6 +78,7 @@ describe('resetAccountState', () => {
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-daily')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-adaptive-store')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-test-session')
+    expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-session')   // Bearer sessiya ham reset'da o'chadi (MF-3)
   })
 
   it('localStorage yo\'q muhitda (node) xatosiz ishlaydi', () => {

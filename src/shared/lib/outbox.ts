@@ -41,10 +41,21 @@ function storageKey(userId: string): string {
   return `yhq-outbox:${userId}`
 }
 
+// JSON.parse har RENDER'da chaqirilmasligi uchun o'zgarishsiz xom satr keshlanadi
+// (useSyncExternalStore snapshot'i tez bo'lishi kerak — Profil her renderida
+//  parse qilgani baker's dozen savoddagi flush keyingi repaint'larini sekinlashtirardi).
+const loadCache: { userId: string; raw: string | null; entries: OutboxEntry[] } = {
+  userId: '', raw: null, entries: [],
+}
 function load(userId: string): OutboxEntry[] {
   try {
     const raw = localStorage.getItem(storageKey(userId))
-    return raw ? (JSON.parse(raw) as OutboxEntry[]) : []
+    if (loadCache.userId === userId && loadCache.raw === raw) return loadCache.entries
+    const entries = raw ? (JSON.parse(raw) as OutboxEntry[]) : []
+    loadCache.userId = userId
+    loadCache.raw = raw
+    loadCache.entries = entries
+    return entries
   } catch {
     return []
   }

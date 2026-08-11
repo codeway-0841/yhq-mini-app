@@ -114,7 +114,7 @@ export default function LoginPage() {
           if (pollRef.current) clearInterval(pollRef.current)
           setTelegramLoginCode(null)
           setTelegramLoginUrl(null)
-          setError('Kod eskirdi — qayta urinib ko\'ring')
+          setError(tt('authCodeExpired'))
         }
       } catch { /* ignore polling errors */ }
     }, 2000)
@@ -132,7 +132,7 @@ export default function LoginPage() {
         setTelegramLoginCode(res.code)
         window.open(res.url, '_blank')
       } else {
-        setError('Telegram login sozlanmagan')
+        setError(tt('authTelegramNotConfigured'))
       }
     } catch (err) {
       setError(tt(authErrorKey(err)))
@@ -312,7 +312,7 @@ export default function LoginPage() {
             <form onSubmit={verifyOTP} className="flex flex-col gap-4" noValidate>
               <div className="text-center">
                 <p className="text-[13px] text-muted mb-1">
-                  SMS kod yuborildi
+                  {tt('authSmsCodeSent')}
                 </p>
                 <p className="text-[15px] font-bold text-fg">{phone.value}</p>
               </div>
@@ -344,7 +344,7 @@ export default function LoginPage() {
                 onClick={() => { setStep('form'); setOtpCode(''); setError(null) }}
                 className="text-[13px] text-muted hover:text-fg transition-colors text-center"
               >
-                ← Orqaga
+                {tt('authBack')}
               </button>
             </form>
           )}
@@ -361,7 +361,7 @@ export default function LoginPage() {
                 <div className="flex flex-col items-center gap-2 py-3">
                   <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
                   <p className="text-[12px] text-muted text-center">
-                    Telegram botda raqamingizni ulashing...
+                    {tt('authTgSharePhone')}
                   </p>
                   <a
                     href={telegramLoginUrl!}
@@ -382,7 +382,7 @@ export default function LoginPage() {
                   <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                   </svg>
-                  <span className="text-[15px] font-semibold text-white">Telegram orqali kirish</span>
+                  <span className="text-[15px] font-semibold text-white">{tt('authTelegramLogin')}</span>
                 </button>
               )}
             </>

@@ -38,11 +38,25 @@ describe('config/themes — data integrity', () => {
     }
   })
 
-  it('har bir tema uchun index.css da data-accent bloki bor (default kiwi bundan mustasno)', () => {
+  it("har bir tema uchun DARK variant bloki bor (light-only 'sakura': shartsiz canonical blok hisoblanadi)", () => {
     const css = readFileSync(resolve(__dirname, '../../../src/index.css'), 'utf8')
     for (const t of ACCENT_THEMES) {
       if (t.id === DEFAULT_ACCENT) continue
-      expect(css).toContain(`data-accent='${t.id}']`)
+      // DARK: aniq variant YOKI shartsiz canonical blok (faqat 'sakura' — light-only dizayn)
+      const hasDark    = css.includes(`[data-theme='dark'][data-accent='${t.id}']`)
+      const hasUncond  = new RegExp(`body\\[data-accent='${t.id}'\\]\\s*\\{`).test(css)
+      expect({ id: t.id, ok: hasDark || hasUncond }).toEqual({ id: t.id, ok: true })
+    }
+  })
+
+  it("har bir tema uchun LIGHT variant bloki bor (dark-only tema: umumiy '[data-theme='dark']'dan meros — lekin sakura/obsidian alohida)", () => {
+    const css = readFileSync(resolve(__dirname, '../../../src/index.css'), 'utf8')
+    for (const t of ACCENT_THEMES) {
+      if (t.id === DEFAULT_ACCENT) continue
+      // LIGHT: aniq variant YOKI shartsiz canonical blok (sakura)
+      const hasLight  = css.includes(`[data-theme='light'][data-accent='${t.id}']`)
+      const hasUncond = new RegExp(`body\\[data-accent='${t.id}'\\]\\s*\\{`).test(css)
+      expect({ id: t.id, ok: hasLight || hasUncond }).toEqual({ id: t.id, ok: true })
     }
   })
 })

@@ -10,7 +10,6 @@ import { goBack } from '../../shared/lib/navigation'
 import { X, Zap } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { ResultsModal, type QuestionResult } from '../test'
@@ -24,7 +23,6 @@ export default function SpeedPage() {
   const settings = useAppStore((s) => s.settings)
   const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
-  const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
 
   // 20 ta tasodifiy savol (sahifa ochilganda 1 marta tanlanadi)
@@ -111,8 +109,6 @@ export default function SpeedPage() {
       advanceTimerRef.current = window.setTimeout(() => advance(scored?.correct ?? false), scored ? 800 : 400)
     })()
   }, [answered, busy, q, submitAnswer, advance])
-
-  useEffect(() => { useSubjectStore.getState() }, [subjectId])
 
   if (!q) {
     return <div className="flex items-center justify-center min-h-screen text-pmuted">Yuklanmoqda...</div>
