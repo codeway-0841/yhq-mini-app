@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { X, Coins, Check, ShoppingBag } from 'lucide-react'
 import Confetti from '../../../shared/components/Confetti'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { playSound } from '../../../shared/lib/sounds'
 
 interface Props {
@@ -32,9 +33,8 @@ export function PurchaseModal({ name, image, price, balance, lang, type, onClose
   }[type]
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <DialogOverlay onClose={onClose} labelId="purchase-title" position="center">
       {purchased && <Confetti count={28} />}
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onClose} />
       <div className="relative w-full max-w-[320px] rounded-3xl bg-pcard border border-pline p-6 animate-premiumIn">
         <button onClick={onClose} className="absolute top-4 right-4 text-psubtle hover:text-pfg transition-colors">
           <X size={20} />
@@ -112,6 +112,6 @@ export function PurchaseModal({ name, image, price, balance, lang, type, onClose
           </div>
         )}
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

@@ -97,13 +97,13 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const valueBtn = 'flex items-center gap-1 text-[13px] font-bold text-muted active:text-fg transition-colors'
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
+    <div className="fixed inset-0 z-50 flex items-end" role="dialog" aria-modal="true" aria-labelledby="settings-title">
       <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onClose} />
       <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
         <div className="p-5 pb-0">
           <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">
-            <h2 className="text-base font-black text-fg">{tt('settingsTitle')}</h2>
+            <h2 id="settings-title" className="text-base font-black text-fg">{tt('settingsTitle')}</h2>
             <button onClick={onClose} aria-label={tt('settingsTitle')} className="text-muted hover:text-fg">
               <X size={20} />
             </button>

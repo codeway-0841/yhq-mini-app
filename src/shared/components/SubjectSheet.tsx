@@ -2,8 +2,8 @@ import { Check } from 'lucide-react'
 import { SUBJECTS } from '../config/subjects'
 import { useSubjectStore } from '../store/useSubjectStore'
 import { useAppStore } from '../store/useAppStore'
+import DialogOverlay from './DialogOverlay'
 
-/** Premium fan tanlash bottom-sheet'i (Subject Switcher). */
 export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   const { subjectId, setSubject } = useSubjectStore()
   const lang = useAppStore((s) => s.settings.language)
@@ -15,11 +15,10 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+    <DialogOverlay onClose={onClose} labelId="subject-title">
       <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[80vh] overflow-y-auto">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
-        <p className="text-center text-base font-black mb-5 text-fg">
+        <p id="subject-title" className="text-center text-base font-black mb-5 text-fg">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
         <div className="flex flex-col gap-2.5">
@@ -56,6 +55,6 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
           })}
         </div>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

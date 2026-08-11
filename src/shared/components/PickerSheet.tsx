@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Check } from 'lucide-react'
+import DialogOverlay from './DialogOverlay'
 
 export interface PickerOption {
   value:   string
@@ -8,10 +9,6 @@ export interface PickerOption {
   icon?:   ReactNode
 }
 
-/**
- * Umumiy bottom-sheet tanlash oynasi (rasmdagidek: sarlavha + variantlar,
- * tanlangan qator yashil border + checkmark bilan).
- */
 export default function PickerSheet({ title, titleIcon, options, value, onSelect, onClose }: {
   title:    string
   titleIcon: ReactNode
@@ -21,12 +18,11 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
   onClose:  () => void
 }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+    <DialogOverlay onClose={onClose} labelId="picker-title">
       <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
 
-        <p className="flex items-center justify-center gap-2 text-base font-black mb-5">
+        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-black mb-5">
           <span className="text-duo-blue">{titleIcon}</span>
           {title}
         </p>
@@ -63,6 +59,6 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
           })}
         </div>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }
