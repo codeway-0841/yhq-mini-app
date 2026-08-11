@@ -124,7 +124,8 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         subjectId:      p.subjectId as string,
         questionId:     p.questionId as number,
         selectedAnswer: (p.selectedAnswer as string | null) ?? null,
-        correct:        res.correct,
+        // duplicate replay'da correct null — counterlar tegilmagan (handler o'zi bilib oladi)
+        correct:        res.correct ?? false,
         dailyStreak:    res.dailyStreak,
         duplicate:      !!res.duplicate,
       })

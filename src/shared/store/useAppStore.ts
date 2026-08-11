@@ -10,9 +10,10 @@ export type { ApiUser, ApiProgress, ApiSettings }
 
 /** submitAnswer natijasi — null bo'lsa OFFLINE (outbox'ga yozildi, keyin hisoblanadi) */
 export interface SubmitOutcome {
-  correct:       boolean
-  /** Post-answer reveal — feedback highlight uchun */
-  correctAnswer: string
+  /** duplicate'da null — server counterlarni qayta yozmagan, natija noma'lum */
+  correct:       boolean | null
+  /** Post-answer reveal — FAQAT yangi javobda; duplicate replay'da null */
+  correctAnswer: string | null
   /** Server bu javobni avval qabul qilgan (idempotent replay) — counterlar tegmang */
   duplicate:     boolean
 }
@@ -188,7 +189,8 @@ export const useAppStore = create<AppState>()(
         const clientToken = newId()
         try {
           const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken })
-          if (!res.duplicate) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
+          // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
+          if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
           return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate }
         } catch (err) {
           // OFFLINE SYNC CENTER: javob outbox'ga yoziladi — internet

@@ -393,9 +393,10 @@ export const api = {
 /** POST /result javobi — SERVER tekshiruvi (client endi to'g'ri javobni bilmaydi). */
 export interface ResultResponse {
   ok: true
-  correct: boolean
-  /** Post-answer reveal — javob bergandan keyingina ochiladi */
-  correctAnswer: string
+  /** duplicate'da null — faqat yangi (hisoblangan) javobda boolean */
+  correct: boolean | null
+  /** Post-answer reveal — FAQAT yangi javobda; duplicate replay'da null */
+  correctAnswer: string | null
   /** Idempotent duplicate bo'lsa null (counterlar qayta yozilmagan) */
   dailyStreak: number | null
   /** Shu clientToken allaqachon qabul qilingan */

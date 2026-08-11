@@ -249,9 +249,15 @@ export default function TestPage() {
         setTimeout(() => setToast(null), 2500)
         return
       }
-      const isCorrect = outcome.correct
+      if (outcome.duplicate || outcome.correct === null || outcome.correctAnswer === null) {
+        // Idempotent replay — counterlar qayta yozilmagan va reveal qaytarilmaydi;
+        // holatni o'zgartirmaymiz (no-op).
+        return
+      }
+      const isCorrect: boolean = outcome.correct
+      const revealed: string = outcome.correctAnswer
       setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
-      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = outcome.correctAnswer; return next })
+      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = revealed; return next })
       haptics.notify(isCorrect ? 'success' : 'error')
       if (isCorrect) {
         correctStreakRef.current += 1
