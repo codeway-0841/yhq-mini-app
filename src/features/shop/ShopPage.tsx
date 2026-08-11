@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react'
 import { ChevronLeft, Coins } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
@@ -21,9 +22,33 @@ export default function ShopPage() {
   const isPremium = useAppStore((s) => s.tariff === 'premium')
   const totalCorrect = useAppStore((s) => s.totalCorrect)
 
-  const mockTokens = 12450
-  const mockBadges = 8
-  const mockAvatars = 15
+  const [balance, setBalance] = useState(12450)
+  const [ownedAvatars, setOwnedAvatars] = useState(15)
+  const [ownedBadges, setOwnedBadges] = useState(8)
+
+  const handlePurchaseAvatar = useCallback((id: string) => {
+    const item = MOCK_AVATARS.find((a) => a.id === id)
+    if (!item || balance < item.price) return
+    setBalance((b) => b - item.price)
+    setOwnedAvatars((c) => c + 1)
+  }, [balance])
+
+  const handlePurchaseMerch = useCallback((id: string) => {
+    const item = MOCK_MERCH.find((m) => m.id === id)
+    if (!item || balance < item.price) return
+    setBalance((b) => b - item.price)
+  }, [balance])
+
+  const handlePurchaseBadge = useCallback((id: string) => {
+    const item = MOCK_BADGES.find((b) => b.id === id)
+    if (!item || balance < item.price) return
+    setBalance((b) => b - item.price)
+    setOwnedBadges((c) => c + 1)
+  }, [balance])
+
+  const handleDailyClaim = useCallback(() => {
+    setBalance((b) => b + 3000)
+  }, [])
 
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
@@ -40,15 +65,15 @@ export default function ShopPage() {
         </div>
         <div className="flex items-center gap-1.5 bg-pcard border border-pline rounded-full px-3 py-1.5">
           <Coins size={14} className="text-pgold" />
-          <span className="text-[13px] font-bold text-pfg">{mockTokens.toLocaleString()}</span>
+          <span className="text-[13px] font-bold text-pfg tabular-nums">{balance.toLocaleString()}</span>
         </div>
       </div>
 
       {/* Stats */}
-      <StatsBar tokens={mockTokens} badges={mockBadges} avatars={mockAvatars} lang={lang} />
+      <StatsBar tokens={balance} badges={ownedBadges} avatars={ownedAvatars} lang={lang} />
 
       {/* Daily Reward */}
-      <DailyReward lang={lang} nextRewardTokens={3000} />
+      <DailyReward lang={lang} nextRewardTokens={3000} onClaim={handleDailyClaim} />
 
       {/* Token Tasks */}
       <TokenTasks tasks={MOCK_TASKS} lang={lang} />
@@ -57,13 +82,13 @@ export default function ShopPage() {
       <LevelProgress totalCorrect={totalCorrect} lang={lang} />
 
       {/* Avatar Shop */}
-      <AvatarGrid avatars={MOCK_AVATARS} lang={lang} />
+      <AvatarGrid avatars={MOCK_AVATARS} lang={lang} balance={balance} onPurchase={handlePurchaseAvatar} />
 
       {/* Merch Shop */}
-      <MerchGrid items={MOCK_MERCH} lang={lang} />
+      <MerchGrid items={MOCK_MERCH} lang={lang} balance={balance} onPurchase={handlePurchaseMerch} />
 
       {/* Badges */}
-      <BadgeRow badges={MOCK_BADGES} lang={lang} />
+      <BadgeRow badges={MOCK_BADGES} lang={lang} balance={balance} onPurchase={handlePurchaseBadge} />
 
       {/* Token Packages */}
       <TokenPackages packages={MOCK_PACKAGES} lang={lang} />
