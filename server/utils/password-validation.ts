@@ -43,7 +43,8 @@ const COMMON_WEAK_PASSWORDS = new Set([
  */
 export function validatePassword(password: string, policy: PasswordPolicy = DEFAULT_PASSWORD_POLICY): PasswordStrength {
   const feedback: string[] = []
-  let score: PasswordStrength['score'] = 0
+  // `number` sifatida hisoblanadi — return'da tor union tipga cast qilinadi
+  let score = 0
 
   // Length check
   if (password.length < policy.minLength) {
@@ -93,31 +94,31 @@ export function validatePassword(password: string, policy: PasswordPolicy = DEFA
   // Penalize common weak passwords
   const lowerPassword = password.toLowerCase()
   if (COMMON_WEAK_PASSWORDS.has(lowerPassword)) {
-    score = Math.max(1, score - 2) as PasswordStrength['score']
+    score = Math.max(1, score - 2)
     feedback.push('Bu parol juda keng tarqalgan — xavfsizroq variant tanlang')
   }
 
   // Penalize sequential patterns
   if (/(.)\1{2,}/.test(password)) {  // aaa, 111, etc
-    score = Math.max(2, score - 1) as PasswordStrength['score']
+    score = Math.max(2, score - 1)
     feedback.push('Takrorlanuvchi belgilar kamroq bo\'lsin')
   }
   if (/(?:abc|bcd|cde|def|efg|fgh|ghi|hij|ijk|jkl|klm|lmn|mno|nop|opq|pqr|qrs|rst|stu|tuv|uvw|vwx|wxy|xyz)/i.test(password)) {
-    score = Math.max(2, score - 1) as PasswordStrength['score']
+    score = Math.max(2, score - 1)
     feedback.push('Ketma-ket belgilar kamroq bo\'lsin')
   }
   if (/(?:012|123|234|345|456|567|678|789|890)/.test(password)) {
-    score = Math.max(2, score - 1) as PasswordStrength['score']
+    score = Math.max(2, score - 1)
     feedback.push('Ketma-ket raqamlar kamroq bo\'lsin')
   }
 
   // Reverse sequence detection (same penalties as forward sequences)
   if (/(?:zyx|yxw|xwv|wvu|vut|uts|tsr|srq|rqp|qpo|pon|onm|nml|mlk|lkj|kji|jih|ihg|hgf|gfe|fed|edc|dcb|cba)/i.test(password)) {
-    score = Math.max(2, score - 1) as PasswordStrength['score']
+    score = Math.max(2, score - 1)
     feedback.push('Teskari ketma-ket belgilar kamroq bo\'lsin')
   }
   if (/(?:987|876|765|654|543|432|321|210)/.test(password)) {
-    score = Math.max(2, score - 1) as PasswordStrength['score']
+    score = Math.max(2, score - 1)
     feedback.push('Teskari ketma-ket raqamlar kamroq bo\'lsin')
   }
 
@@ -137,7 +138,9 @@ export function validatePassword(password: string, policy: PasswordPolicy = DEFA
   }
 
   return {
-    score,
+    // Diapazon kafolatlangan: baza 2 +2 (uzunlik) +1 (complexity) = maks 5;
+    // jarimalar Math.max(2, ...) bilan pastdan chegaralangan.
+    score: Math.min(5, Math.max(0, score)) as PasswordStrength['score'],
     feedback,
     isValid: meetsMinScore,  // Valid = meets minimum score, regardless of penalty feedback
   }

@@ -51,10 +51,13 @@ router.post(
     // POST-ANSWER REVEAL: correctAnswer endi public /questions'da yo'q —
     // client feedback uchun FAQAT javob bergandan keyin shu yerda oladi.
     // (Reveal "bepul" emas: har reveal attempt sifatida hisobga olingan.)
-    res.json({
-      ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak,
-      ...(duplicate ? { duplicate: true } : {}),
-    })
+    if (duplicate) {
+      // Replay: counterlar yozilmadi — reveal HAM qaytarilmaydi. Aks holda bitta
+      // clientToken'ni aylantirib stat hisoblamasdan kalit yig'ish mumkin edi.
+      res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
+      return
+    }
+    res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
   }),
 )
 

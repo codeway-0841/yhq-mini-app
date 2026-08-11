@@ -8,7 +8,7 @@ import { db, executeRows, type DB } from '../../db/connection'
 import {
   authIdentities, sessions, linkCodes, otpCodes,
   emailVerificationTokens, passwordResetTokens,
-  userDevices, loginHistory, auditLogs, users,
+  userDevices, loginHistory, auditLogs,
 } from '../../schema'
 
 export type AuthProvider = 'telegram' | 'phone' | 'email' | 'google' | 'apple'
@@ -28,9 +28,12 @@ export const authRepository = {
   /**
    * Register/link'da identity + parol birga: ON CONFLICT DO NOTHING + RETURNING
    * orqali "yaratildimi?" aniqlanadi (false → raqam allaqachon band, 409).
+   * @param txOrDb — tashqi transaction ichida chaqirilganda (register flow)
    */
-  async createIdentity(provider: AuthProvider, providerUid: string, userId: string, passwordHash: string | null): Promise<boolean> {
-    const rows = await db.insert(authIdentities)
+  async createIdentity(
+    provider: AuthProvider, providerUid: string, userId: string, passwordHash: string | null, txOrDb?: DB,
+  ): Promise<boolean> {
+    const rows = await (txOrDb ?? db).insert(authIdentities)
       .values({ provider, providerUid, userId, passwordHash })
       .onConflictDoNothing()
       .returning({ provider: authIdentities.provider })
@@ -74,6 +77,17 @@ export const authRepository = {
     await db.delete(sessions).where(eq(sessions.token, token))
   },
 
+  /**
+   * User'ning BARCHA sessiyalarini revoke qilish (parol almashtirilganda/tiklanganda) —
+   * o'g'irlangan token 30 kunlik TTL tugaguncha yashab qolmasligi uchun.
+   * @param exceptToken — joriy sessiyani saqlab qolish (change-password oqimi).
+   */
+  async deleteUserSessions(userId: string, exceptToken?: string): Promise<void> {
+    await db.delete(sessions).where(exceptToken
+      ? and(eq(sessions.userId, userId), sql`${sessions.token} <> ${exceptToken}`)
+      : eq(sessions.userId, userId))
+  },
+
   async createLinkCode(input: { code: string; userId: string; expiresAt: Date }): Promise<void> {
     await db.insert(linkCodes).values(input)
   },
@@ -92,8 +106,40 @@ export const authRepository = {
 
   /** OTP kod yaratish (hash saqlanadi, plain text SMS'da). Conflict'da eskisini replace qiladi. */
   async createOTP(phone: string, codeHash: string, expiresAt: Date, txOrDb?: DB): Promise<void> {
+    // created_at HAM yangilanadi — resend cooldown (so'nggi yuborilgan vaqt) shunga tayanadi
     await (txOrDb ?? db).insert(otpCodes).values({ phone, codeHash, expiresAt })
-      .onConflictDoUpdate({ target: otpCodes.phone, set: { codeHash, expiresAt } })
+      .onConflictDoUpdate({ target: otpCodes.phone, set: { codeHash, expiresAt, attempts: 0, createdAt: new Date() } })
+  },
+
+  /**
+   * OTP holati — so'nggi kod qachon yuborilgan (resend cooldown tekshiruvi).
+   * `created_at` yangi kod yozilganda yangilanadi (upsert).
+   */
+  async getOTPState(phone: string): Promise<{ attempts: number; createdAt: Date } | null> {
+    const [row] = await db.select({ attempts: otpCodes.attempts, createdAt: otpCodes.createdAt })
+      .from(otpCodes).where(eq(otpCodes.phone, phone))
+    return row ?? null
+  },
+
+  /**
+   * Noto'g'ri OTP verify urinishini ATOMIK sanash (+1) va joriy qiymatni qaytarish.
+   * Race-safe: UPDATE ... RETURNING — parallel urinishlar ham aniq sanaladi.
+   */
+  async incrementOTPAttempts(phone: string): Promise<number> {
+    const rows = await executeRows<{ attempts: number }>(sql`
+      UPDATE otp_codes SET attempts = attempts + 1
+      WHERE phone = ${phone} AND expires_at > now()
+      RETURNING attempts
+    `)
+    return Number(rows[0]?.attempts ?? 0)
+  },
+
+  /**
+   * OTP lockout — urinish limiti oshganda kodni butunlay o'chirish (yangi kod so'rash shart).
+   * O'chirish atomic-consume'dan xavfsiz: faqt verify yo'lida chaqiriladi.
+   */
+  async deleteOTP(phone: string): Promise<void> {
+    await db.delete(otpCodes).where(eq(otpCodes.phone, phone))
   },
 
   /**
@@ -143,6 +189,16 @@ export const authRepository = {
 
   async createPasswordResetToken(userId: string, token: string, expiresAt: Date, txOrDb?: DB): Promise<void> {
     await (txOrDb ?? db).insert(passwordResetTokens).values({ token, userId, expiresAt })
+  },
+
+  /** So'nggi `withinMinutes` ichida user uchun yaratilgan reset token'lar soni (per-email flood himoyasi). */
+  async countRecentPasswordResetTokens(userId: string, withinMinutes: number): Promise<number> {
+    const mins = Math.max(1, Math.min(1440, Math.floor(withinMinutes)))
+    const rows = await executeRows<{ cnt: number }>(sql`
+      SELECT COUNT(*)::int AS cnt FROM password_reset_tokens
+      WHERE user_id = ${userId} AND created_at > now() - (${mins} || ' minutes')::interval
+    `)
+    return Number(rows[0]?.cnt ?? 0)
   },
 
   /** Validate + mark used (NOT deleted — audit trail) */

@@ -135,7 +135,8 @@ router.get(
   '/auth/telegram-login/:code',
   rateLimit({ maxPerMinute: 30 }),
   wrap(async (req, res) => {
-    const code = req.params.code
+    // Express 5 params typing: string | string[] — wildcard bo'lmagan routeda string
+    const code = String(req.params.code ?? '')
     if (!code || code.length > 20) throw new AppError(400, 'invalid_code')
     res.json(await authService.checkTelegramLoginCode(code))
   }),

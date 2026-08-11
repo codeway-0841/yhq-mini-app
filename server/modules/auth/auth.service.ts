@@ -16,7 +16,7 @@ import { z } from 'zod'
 import { randomBytes } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
-import { executeRows, transaction, type DB } from '../../db/connection'
+import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { usersRepository } from '../users/users.repository'
@@ -27,6 +27,7 @@ import { toApiUser, toApiProgress, toApiSettings } from '../users/users.service'
 import { hashPassword, verifyPassword } from '../../utils/password'
 import { verifyLoginWidget } from '../../utils/telegram'
 import { sendOTP, generateOTP, hashOTP } from '../../utils/sms'
+import { normalizePhone } from '../../utils/phone'
 import { sendEmail, emailVerificationTemplate, passwordResetTemplate, isValidEmail } from '../../utils/email'
 import { validatePassword, DEFAULT_PASSWORD_POLICY } from '../../utils/password-validation'
 import type { Request } from 'express'
@@ -103,7 +104,7 @@ export type TgWidgetLoginInput = z.infer<typeof TgWidgetLoginSchema>
 
 /** Telefon +998XXXXXXXXX → canonical user id 'p_998XXXXXXXXX' */
 export function phoneUserId(phone: string): string {
-  return `p_${phone.replace(/\D/g, '')}`
+  return `p_${normalizePhone(phone).slice(1)}`
 }
 
 /** Email → canonical user id 'e_<uuid>' */
@@ -112,6 +113,13 @@ function emailUserId(): string {
 }
 
 const TG_ID_RE = /^\d{1,19}$/
+
+// ── Abuse himoyasi konstantalari ────────────────────────────────────────────
+const OTP_MAX_ATTEMPTS = 5            // shu urinishdan keyin kod o'chadi (yangi kod shart)
+const OTP_RESEND_COOLDOWN_MS = 60_000 // bir raqamga qayta SMS yuborish oralig'i
+const PHONE_LOGIN_MAX_ATTEMPTS = 5    // telefon login parol lockout (email'dagi kabi)
+const PHONE_LOGIN_LOCK_MS = 15 * 60_000
+const RESET_MAX_PER_HOUR = 3          // password-reset email flood chegarasi
 
 function newSessionToken(): string {
   return randomBytes(32).toString('hex')   // 64-hex opaque
@@ -125,6 +133,22 @@ async function issueSession(userId: string, provider: AuthProvider): Promise<str
   const token = newSessionToken()
   await authRepository.createSession({ token, userId, provider, expiresAt: sessionExpiry() })
   return token
+}
+
+/**
+ * OTP verify + brute-force lockout: noto'g'ri har urinish ATOMIK sanaladi;
+ * limitga yetganda kod butunlay o'chadi (faqat yangi SMS kod yordam beradi).
+ * consumeOTP faqat TO'G'RI kodda o'chiradi — hisoblagich bu yo'lda to'liq.
+ */
+async function consumeOTPWithLockout(phone: string, code: string): Promise<void> {
+  const valid = await authRepository.consumeOTP(phone, hashOTP(code))
+  if (valid) return
+  const attempts = await authRepository.incrementOTPAttempts(phone)
+  if (attempts >= OTP_MAX_ATTEMPTS) {
+    await authRepository.deleteOTP(phone)
+    throw new AppError(429, 'otp_locked: Juda ko\'p noto\'g\'ri urinish — yangi kod so\'rang')
+  }
+  throw new AppError(401, 'invalid_otp')
 }
 
 /** To'liq profile + ulangan provider'lar (login/me/link javoblarining umumiy tanasi). */
@@ -184,8 +208,40 @@ const isEmptyAccount = (s: AccountStats | undefined) => !!s && s.answered === 0 
  * TG identity ALOHIDA statement'da tiklanadi: Postgres FK cascade trigger'lari
  * statement OXIRIDA ishlaydi — delete-cascade va re-INSERT BIR statement'da
  * bo'lsa, yangi qator ham cascade'ga tushib ketardi (Pg CTE + RI trigger tuzog'i).
+ *
+ * NEON: drizzle neon-http `db.transaction()` yo'q — shu 2 statement driver-level
+ * `transactionHttp` (bitta HTTP non-interactive tx) orqali atomik yuboriladi.
+ * INSERT shartsiz yuboriladi: rename sodir bo'lmasa shell foydalanuvchi saqlanib
+ * qoladi va `ON CONFLICT DO NOTHING` insert'ni no-op qiladi.
  */
 async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?: DB): Promise<boolean> {
+  if (!txOrDb && neonRaw) {
+    const results = await transactionHttp((q) => [
+      q`
+        WITH del AS (
+          DELETE FROM users
+          WHERE id = ${tgId}
+            AND COALESCE((SELECT total_answered FROM progress WHERE user_id = ${tgId}), 0) = 0
+            AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${tgId})
+            AND id <> ${phoneUserId}
+          RETURNING id
+        ), ren AS (
+          UPDATE users SET id = ${tgId}
+          WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
+          RETURNING id
+        )
+        SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
+      `,
+      q`
+        INSERT INTO auth_identities (provider, provider_uid, user_id)
+        VALUES ('telegram', ${tgId}, ${tgId})
+        ON CONFLICT (provider, provider_uid) DO NOTHING
+      `,
+    ])
+    const first = (results[0] ?? []) as Array<{ del: number | string; ren: number | string }>
+    return Number(first[0]?.del) > 0 && Number(first[0]?.ren) > 0
+  }
+
   const runInTx = async (tx: DB) => {
     const rows = await executeRows<{ del: number; ren: number }>(sql`
       WITH del AS (
@@ -273,10 +329,17 @@ export const authService = {
 
   /**
    * OTP so'rash — 6 raqamli kod generatsiya + SMS yuborish.
-   * Rate limit: router qatlami (10/min per IP).
+   * Rate limit: router qatlami (10/min per IP) + per-telefon resend cooldown
+   * (IP aylanuvchi SMS-flood himoyasi — Eskiz har SMS uchun pul yechadi).
    * SMS-first pattern: foydalanuvchiga kod yetmaydigan holat yo'q.
    */
   async requestOTP(input: RequestOTPInput): Promise<{ sent: boolean }> {
+    // Per-telefon cooldown — mavjud kod hali "issiq" bo'lsa yangisini yubormaymiz
+    const state = await authRepository.getOTPState(input.phone)
+    if (state && Date.now() - state.createdAt.getTime() < OTP_RESEND_COOLDOWN_MS) {
+      throw new AppError(429, 'otp_cooldown: Kod allaqachon yuborilgan — bir daqiqadan keyin qayta so\'rang')
+    }
+
     const code = generateOTP()
     const codeHash = hashOTP(code)
     const expiresAt = new Date(Date.now() + 5 * 60_000) // 5 daqiqa
@@ -284,7 +347,7 @@ export const authService = {
     // SMS yuborish OLDIN — fail-fast, kod yetmasa DB'ga ham saqlanmaydi
     await sendOTP(input.phone, code)
 
-    // SMS muvaffaqiyatli — DB'ga saqlash (conflict'da replace)
+    // SMS muvaffaqiyatli — DB'ga saqlash (conflict'da replace, attempts reset)
     await authRepository.createOTP(input.phone, codeHash, expiresAt)
 
     // Opportunistic cleanup
@@ -297,9 +360,7 @@ export const authService = {
    * OTP tekshirish — login (mavjud akkaunt).
    */
   async verifyOTPLogin(input: VerifyOTPLoginInput): Promise<AuthResponse> {
-    const codeHash = hashOTP(input.code)
-    const valid = await authRepository.consumeOTP(input.phone, codeHash)
-    if (!valid) throw new AppError(401, 'invalid_otp')
+    await consumeOTPWithLockout(input.phone, input.code)
 
     const identity = await authRepository.findIdentity('phone', input.phone)
     if (!identity) throw new AppError(404, 'account_not_found')
@@ -312,9 +373,7 @@ export const authService = {
    * Race window minimal (OTP consume atomik, identity check + create qisqa).
    */
   async verifyOTPRegister(input: VerifyOTPRegisterInput): Promise<AuthResponse> {
-    const codeHash = hashOTP(input.code)
-    const valid = await authRepository.consumeOTP(input.phone, codeHash)
-    if (!valid) throw new AppError(401, 'invalid_otp')
+    await consumeOTPWithLockout(input.phone, input.code)
 
     const userId = phoneUserId(input.phone)
 
@@ -361,12 +420,28 @@ export const authService = {
     return respondWithNewSession(userId, 'phone')
   },
 
-  /** Kirish — parol tekshiruvidan keyin yangi sessiya. */
+  /** Kirish — parol tekshiruvidan keyin yangi sessiya. Lockout email login'dagi kabi. */
   async loginWithPhone(input: PhoneLoginInput) {
     const identity = await authRepository.findIdentity('phone', input.phone)
-    if (!identity?.passwordHash || !verifyPassword(input.password, identity.passwordHash)) {
+    if (!identity?.passwordHash) {
       throw new AppError(401, 'invalid_credentials')
     }
+
+    // Account lockout (brute-force himoyasi — IP limit yetarli emas, botnet aylanadi)
+    if (await authRepository.isAccountLocked(identity.userId)) {
+      throw new AppError(403, 'account_locked')
+    }
+
+    if (!verifyPassword(input.password, identity.passwordHash)) {
+      const attempts = await authRepository.incrementFailedLoginAttempts(identity.userId)
+      if (attempts >= PHONE_LOGIN_MAX_ATTEMPTS) {
+        await authRepository.lockAccount(identity.userId, new Date(Date.now() + PHONE_LOGIN_LOCK_MS))
+        throw new AppError(403, 'account_locked')
+      }
+      throw new AppError(401, 'invalid_credentials')
+    }
+
+    await authRepository.resetFailedLoginAttempts(identity.userId)
     return respondWithNewSession(identity.userId, 'phone')
   },
 
@@ -592,9 +667,9 @@ export const authService = {
         photoUrl: '',
       }, tx)
 
-      const created = await authRepository.createIdentity('email', input.email.toLowerCase(), userId, passwordHash)
+      const created = await authRepository.createIdentity('email', input.email.toLowerCase(), userId, passwordHash, tx)
       if (!created) {
-        throw new AppError(409, 'email_taken')  // Race: rollback user creation
+        throw new AppError(409, 'email_taken')  // Race: tx rollback user'ni ham qaytaradi
       }
 
       // Update email field in users table
@@ -793,6 +868,14 @@ export const authService = {
       return { sent: true }
     }
 
+    // Per-email flood himoyasi: soatiga N tadan oshsa — jimgina SKIP
+    // (429 emas: enumeration himoyasini buzmaslik uchun javob bir xil qoladi)
+    const recent = await authRepository.countRecentPasswordResetTokens(identity.userId, 60)
+    if (recent >= RESET_MAX_PER_HOUR) {
+      console.warn(`[auth] password reset rate-limited for user ${identity.userId}`)
+      return { sent: true }
+    }
+
     const token = randomBytes(32).toString('hex')
     const expiresAt = new Date(Date.now() + 60 * 60 * 1000)  // 1 hour
     await authRepository.createPasswordResetToken(identity.userId, token, expiresAt)
@@ -835,6 +918,8 @@ export const authService = {
     const passwordHash = hashPassword(newPassword)
     await authRepository.setPasswordHash('email', rows[0].provider_uid, passwordHash)
     await authRepository.updatePasswordChangeTimestamp(userId)
+    // Eski (ehtimol o'g'irlangan) sessiyalar TTL tugaguncha yashamasligi kerak
+    await authRepository.deleteUserSessions(userId)
 
     // Audit log
     await authRepository.createAuditLog({
@@ -883,6 +968,8 @@ export const authService = {
     const provider = rows[0].provider_uid.includes('@') ? 'email' : 'phone'
     await authRepository.setPasswordHash(provider, rows[0].provider_uid, passwordHash)
     await authRepository.updatePasswordChangeTimestamp(userId)
+    // Boshqa qurilmalardagi (ehtimol o'g'irlangan) sessiyalarni yopamiz; joriy qoladi
+    await authRepository.deleteUserSessions(userId, (req as { sessionToken?: string } | undefined)?.sessionToken)
 
     // Audit log
     await authRepository.createAuditLog({
@@ -946,7 +1033,9 @@ export const authService = {
       return { ok: false, message: '❌ Kod eskirgan yoki allaqachon ishlatilgan.' }
     }
 
-    const canonical = phone.replace(/\D/g, '')
+    // Canonical E.164 ('+998...') — bot contact `+` siz yuboradi, qolgan
+    // barcha oqimlar esa `+998...` saqlaydi (normalizePhone — yagona manba).
+    const canonical = normalizePhone(phone)
     const identity = await authRepository.findIdentity('phone', canonical)
 
     let userId: string
@@ -976,7 +1065,7 @@ export const authService = {
   // ── OAuth (Google + Apple) ──────────────────────────────────────────────
 
   /** Google OAuth callback - stub for implementation */
-  async handleGoogleOAuth(code: string, req?: Request) {
+  async handleGoogleOAuth(_code: string, _req?: Request) {
     // TODO: Implement Google OAuth flow
     // 1. Exchange code for tokens
     // 2. Get user info from Google API
@@ -986,7 +1075,7 @@ export const authService = {
   },
 
   /** Apple OAuth callback - stub for implementation */
-  async handleAppleOAuth(code: string, req?: Request) {
+  async handleAppleOAuth(_code: string, _req?: Request) {
     // TODO: Implement Apple Sign In flow
     // 1. Validate JWT from Apple
     // 2. Extract user info

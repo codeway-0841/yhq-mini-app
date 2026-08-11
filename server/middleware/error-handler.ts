@@ -10,6 +10,8 @@ export class AppError extends Error {
   constructor(
     public readonly statusCode: number,
     message: string,
+    /** Qo'shimcha kontekst (masalan, parol feedback'i) — client'ga qaytariladi. */
+    public readonly details?: string,
   ) {
     super(message)
     this.name = 'AppError'
@@ -23,7 +25,7 @@ export function errorHandler(
   _next: NextFunction,
 ): void {
   if (err instanceof AppError) {
-    res.status(err.statusCode).json({ error: err.message })
+    res.status(err.statusCode).json(err.details ? { error: err.message, details: err.details } : { error: err.message })
     return
   }
 

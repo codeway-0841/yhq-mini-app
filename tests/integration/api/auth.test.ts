@@ -11,7 +11,7 @@ import request from 'supertest'
 import { createHash, createHmac, randomBytes } from 'crypto'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { users, progress, linkCodes } from '../../../server/schema'
+import { users, progress, linkCodes, otpCodes } from '../../../server/schema'
 import { eq, inArray } from 'drizzle-orm'
 import { config } from '../../../server/config'
 import { authService } from '../../../server/modules/auth/auth.service'
@@ -28,9 +28,12 @@ const TG_BOT = '999444555669'   // Mini App ochmagan TG (bot-link rename)
 const PHONE_B = '+998900000010'
 const PHONE_D = '+998900000011'
 const PHONE_E = '+998900000012'
+const PHONE_G = '+998900000013'   // session-revoke testi
+const PHONE_H = '+998900000014'   // login lockout testi
+const PHONE_OTP = '+998900000015' // OTP cooldown/lockout testi (user yaratilmaydi)
 const PASS    = 'testparol8'
 
-const CLEAN_IDS = [TG_A, TG_C, TG_BOT, 'p_998900000010', 'p_998900000011', 'p_998900000012']
+const CLEAN_IDS = [TG_A, TG_C, TG_BOT, 'p_998900000010', 'p_998900000011', 'p_998900000012', 'p_998900000013', 'p_998900000014']
 
 async function cleanup() {
   await db.delete(users).where(inArray(users.id, CLEAN_IDS))
@@ -236,5 +239,90 @@ describe('Account linking — tg-link-code (bot oqimi)', () => {
     const code = await authService.createTelegramLinkCode(login.body.user.id)
     const result = await authService.linkTelegramByCode(code.code, { id: Number(TG_C) })
     expect(result.status).toBe('conflict')
+  })
+})
+
+describe('Abuse himoyalari — session revoke, lockout, OTP cooldown', () => {
+  it('change-password: boshqa sessiyalar revoke, joriy sessiya saqlanadi', async () => {
+    await db.delete(users).where(eq(users.id, 'p_998900000013'))  // retry-safe pre-clean
+    const reg = await request(app).post('/api/auth/phone/register')
+      .send({ phone: PHONE_G, password: PASS, firstName: 'Gulnoza' })
+    expect(reg.status).toBe(201)
+    const token1 = reg.body.sessionToken
+
+    const login2 = await request(app).post('/api/auth/phone/login')
+      .send({ phone: PHONE_G, password: PASS })
+    expect(login2.status).toBe(200)
+    const token2 = login2.body.sessionToken
+
+    // change-password kuch-siyosati talab qiladi (default policy: special belgi shart)
+    const changed = await request(app).post('/api/auth/change-password')
+      .set('Authorization', `Bearer ${token1}`)
+      .send({ currentPassword: PASS, newPassword: 'Yangi!Parol86' })
+    expect(changed.status).toBe(200)
+
+    // Joriy sessiya saqlanadi
+    const me1 = await request(app).get('/api/auth/me').set('Authorization', `Bearer ${token1}`)
+    expect(me1.status).toBe(200)
+    // Ikkinchi (ehtimol o'g'irlangan) sessiya yopilgan
+    const me2 = await request(app).get('/api/auth/me').set('Authorization', `Bearer ${token2}`)
+    expect(me2.status).toBe(401)
+    // Yangi parol bilan kirish ishlaydi
+    const relogin = await request(app).post('/api/auth/phone/login')
+      .send({ phone: PHONE_G, password: 'Yangi!Parol86' })
+    expect(relogin.status).toBe(200)
+  })
+
+  it('telefon login lockout: 5 noto\'g\'ri parol → account_locked (403)', async () => {
+    await db.delete(users).where(eq(users.id, 'p_998900000014'))  // retry-safe pre-clean
+    const reg = await request(app).post('/api/auth/phone/register')
+      .send({ phone: PHONE_H, password: PASS, firstName: 'Husnora' })
+    expect(reg.status).toBe(201)
+
+    // 1-4 urinish: 401
+    for (let i = 0; i < 4; i++) {
+      const res = await request(app).post('/api/auth/phone/login')
+        .send({ phone: PHONE_H, password: 'xato_parol_999' })
+      expect(res.status).toBe(401)
+    }
+    // 5-urinish: bloklanadi
+    const fifth = await request(app).post('/api/auth/phone/login')
+      .send({ phone: PHONE_H, password: 'xato_parol_999' })
+    expect(fifth.status).toBe(403)
+    expect(fifth.body.error).toContain('account_locked')
+
+    // TO'G'RI parol ham bloklangan (lockout davomida)
+    const blocked = await request(app).post('/api/auth/phone/login')
+      .send({ phone: PHONE_H, password: PASS })
+    expect(blocked.status).toBe(403)
+    await authRepository.resetFailedLoginAttempts('p_998900000014')
+  })
+
+  it('OTP resend cooldown: 60s ichida qayta so\'rov → 429', async () => {
+    await db.delete(otpCodes).where(eq(otpCodes.phone, PHONE_OTP))  // retry-safe pre-clean
+    // OTP qatorini to'g'ridan-to'g'ri yaratamiz (SMS yuborishsiz)
+    await authRepository.createOTP(PHONE_OTP, 'test-hash', new Date(Date.now() + 5 * 60_000))
+    await expect(authService.requestOTP({ phone: PHONE_OTP }))
+      .rejects.toThrow(/otp_cooldown/)
+  })
+
+  it('OTP brute-force lockout: 5 noto\'g\'ri kod → otp_locked + kod o\'chadi', async () => {
+    await db.delete(otpCodes).where(eq(otpCodes.phone, PHONE_OTP))  // retry-safe pre-clean
+    const { hashOTP } = await import('../../../server/utils/sms')
+    await authRepository.createOTP(PHONE_OTP, hashOTP('123456'), new Date(Date.now() + 5 * 60_000))
+
+    // 1-4 urinish: invalid_otp
+    for (let i = 0; i < 4; i++) {
+      await expect(authService.verifyOTPLogin({ phone: PHONE_OTP, code: '999999' }))
+        .rejects.toThrow(/invalid_otp/)
+    }
+    // 5-urinish: kod butunlay o'chadi
+    await expect(authService.verifyOTPLogin({ phone: PHONE_OTP, code: '999999' }))
+      .rejects.toThrow(/otp_locked/)
+    expect(await authRepository.getOTPState(PHONE_OTP)).toBeNull()
+
+    // To'g'ri kod ham endi ishlamaydi (kod o'chirilgan)
+    await expect(authService.verifyOTPLogin({ phone: PHONE_OTP, code: '123456' }))
+      .rejects.toThrow(/invalid_otp/)
   })
 })

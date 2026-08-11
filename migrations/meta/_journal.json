@@ -197,6 +197,20 @@
       "when": 1786450000000,
       "tag": "0027_telegram_login_codes",
       "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "7",
+      "when": 1786460000000,
+      "tag": "0028_normalize_phone_provider_uid",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "7",
+      "when": 1786470000000,
+      "tag": "0029_adorable_azazel",
+      "breakpoints": true
     }
   ]
 }

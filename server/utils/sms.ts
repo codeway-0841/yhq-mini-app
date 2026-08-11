@@ -4,7 +4,7 @@
  * ENV: ESKIZ_EMAIL, ESKIZ_PASSWORD
  */
 
-import { createHash } from 'crypto'
+import { createHash, randomInt } from 'crypto'
 import { config } from '../config'
 
 interface EskizAuthResponse {
@@ -88,10 +88,12 @@ export async function sendOTP(phone: string, code: string): Promise<boolean> {
 }
 
 /**
- * Random 6 raqamli OTP kod generatsiya
+ * Random 6 raqamli OTP kod generatsiya.
+ * CSPRNG (crypto.randomInt) — Math.random() bashorat qilinadigan xorshift128+,
+ * login kodi uchin-kod bo'lgani uchun zaif PRNG mumkin emas.
  */
 export function generateOTP(): string {
-  return Math.floor(100000 + Math.random() * 900000).toString()
+  return randomInt(100000, 1000000).toString()
 }
 
 /**

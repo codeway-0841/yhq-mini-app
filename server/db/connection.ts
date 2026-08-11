@@ -8,7 +8,12 @@
  *    PostgreSQL bilan ishlamaydi (CI integration job locale'da qotardi).
  */
 
-import { neon } from '@neondatabase/serverless'
+import {
+  neon,
+  type NeonQueryFunction,
+  type NeonQueryFunctionInTransaction,
+  type NeonQueryInTransaction,
+} from '@neondatabase/serverless'
 import { drizzle as drizzleNeon, type NeonHttpDatabase } from 'drizzle-orm/neon-http'
 import postgres from 'postgres'
 import { drizzle as drizzlePg } from 'drizzle-orm/postgres-js'
@@ -24,6 +29,13 @@ const isNeon = isNeonUrl(config.db.url)
 // Store raw clients for transaction support
 const postgresClient = isNeon ? null : postgres(config.db.url)
 const neonClient = isNeon ? neon(config.db.url) : null
+
+/**
+ * Raw Neon HTTP driver — FAQAT `transactionHttp` kabi maxsus yo'llar uchun.
+ * drizzle neon-http `db.transaction()` ni qo'llab-quvvatLAMAYDI (driver HTTP
+ * stateless); oddiy so'rovlar uchun `db`/`executeRows` ishlating.
+ */
+export const neonRaw: NeonQueryFunction<false, false> | null = neonClient ?? null
 
 const instance = isNeon
   ? drizzleNeon(neonClient!, { schema })
@@ -52,19 +64,39 @@ export async function executeRows<T = Record<string, unknown>>(query: SQL, txOrD
  * Run callback in explicit transaction (isolated connection).
  *
  * DRIVER BEHAVIOR:
- * - postgres-js: Uses client.begin() → dedicated connection with ACID guarantees
- * - neon-http: Stateless HTTP driver → transactions NOT supported.
- *   Each query is independent HTTP request. For neon, callback runs WITHOUT
- *   transaction isolation. Use CTEs for atomic multi-step operations.
- *
- * Use for: adopt-merge, link-code consume (where postgres-js needs isolation)
+ * - postgres-js: `client.begin()` → dedicated connection, haqiqiy ACID tx.
+ * - neon-http: drizzle neon-http `db.transaction()` QO'LLAB-QUVVATLAMAYDI
+ *   (stateless HTTP). Callback umumiy `db` ustida IZOLYATSIYASIZ yuradi —
+ *   shu sababli barcha multi-step oqimlar BITTA atomik CTE bo'lishi SHART
+ *   (guard'lar SQL ichida). 2+ statement'ga ajralib ketadigan atomik
+ *   bloklar uchun `transactionHttp()` dan foydalaning.
  */
 export async function transaction<T>(callback: (tx: DB) => Promise<T>): Promise<T> {
   if (!isNeon && postgresClient) {
-    // postgres-js: native transaction with dedicated connection
-    return postgresClient.begin((tx) => callback(drizzlePg(tx, { schema }) as DB))
+    // postgres-js: native transaction with dedicated connection.
+    // begin() callback'iga TransactionSql keladi (drizzle Sql'dan farqli) —
+    // tip darajasida cast, runtime'da drizzlePg TransactionSql bilan ishlaydi.
+    return postgresClient.begin((tx) =>
+      callback(drizzlePg(tx as unknown as postgres.Sql, { schema }) as unknown as DB),
+    ) as unknown as Promise<T>
   }
-  // neon-http: no transaction support, run callback with shared db
-  // Caller must use CTEs for atomicity
+  // neon-http: izolyatsiya yo'q — chaqiruvchi CTE atomikligiga tayanadi
   return callback(db)
+}
+
+/**
+ * Bir nechta RAW SQL so'rovni Neon HTTP driveri orqali BITTA non-interactive
+ * tranzaksiyada yuboradi (`BEGIN ... COMMIT` — bitta HTTP roundtrip).
+ *
+ * NIMA UCHUN: drizzle neon-http `db.transaction()` throw qiladi, lekin ayrim
+ * oqimlar (masalan, adopt-merge'dagi delete+rename va keyingi identity INSERT)
+ * Pg CTE + RI trigger tuzog'i tufayli BITTA statement'ga sig'maydi — faqat
+ * shunday holatda ishlating. postgres-js/CI muhitida `transaction()` yetarli.
+ */
+export async function transactionHttp(
+  build: (sql: NeonQueryFunctionInTransaction<false, false>) => NeonQueryInTransaction[],
+): Promise<unknown[][]> {
+  if (!neonClient) throw new Error('transactionHttp: faqat Neon driver mavjud')
+  const results = await neonClient.transaction(build)
+  return results as unknown as unknown[][]
 }

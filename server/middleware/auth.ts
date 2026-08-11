@@ -65,7 +65,12 @@ const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard'])
  * Auth LOGIN endpoint'lari — credentials'siz KIRISH uchun public:
  *   POST /auth/phone/register · /auth/phone/login · /auth/telegram
  *   POST /auth/otp/request · /auth/otp/verify/login · /auth/otp/verify/register
- * (qolgan /auth/* — me/logout/link/tg-link-code — requireAuth ostida).
+ *   POST /auth/email/register · /auth/email/login
+ *   POST /auth/forgot-password · /auth/reset-password (token'li, credentials'siz)
+ * (qolgan /auth/* — me/logout/link/tg-link-code/change-password —
+ *  requireAuth ostida; OAuth callback'lar 501-stub, ataylab public EMAS).
+ * DIQQAT: bu ro'yxat auth.router.ts bilan qo'lda sinxron saqlanadi —
+ * desync'ni tests/unit/middleware/auth-public-routes.test.ts ushlaydi.
  */
 const PUBLIC_AUTH_POST = new Set([
   'auth/phone/register',
@@ -75,13 +80,20 @@ const PUBLIC_AUTH_POST = new Set([
   'auth/otp/request',
   'auth/otp/verify/login',
   'auth/otp/verify/register',
+  'auth/email/register',
+  'auth/email/login',
+  'auth/forgot-password',
+  'auth/reset-password',
 ])
 
 const PUBLIC_AUTH_GET_PREFIXES = [
   'auth/telegram-login',
+  // Email'dagi link istalgan brauzerdan ochiladi (headers'siz) — public
+  'auth/verify-email',
 ]
 
-function isPublicGet(req: Request): boolean {
+// `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
+export function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
   const normalized = normalizePath(req.path)
   if (!normalized) return false
@@ -89,7 +101,8 @@ function isPublicGet(req: Request): boolean {
   return PUBLIC_GET.has(seg)
 }
 
-function isPublicAuthPost(req: Request): boolean {
+// `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
+export function isPublicAuthPost(req: Request): boolean {
   if (req.method !== 'POST') return false
   const normalized = normalizePath(req.path)
   if (!normalized) return false
@@ -99,7 +112,8 @@ function isPublicAuthPost(req: Request): boolean {
   return PUBLIC_AUTH_POST.has(path) || PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
 }
 
-function isPublicAuthGet(req: Request): boolean {
+// `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
+export function isPublicAuthGet(req: Request): boolean {
   if (req.method !== 'GET') return false
   const normalized = normalizePath(req.path)
   if (!normalized) return false

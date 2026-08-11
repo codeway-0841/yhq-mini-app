@@ -32,10 +32,16 @@ export function isValidEmail(email: string): boolean {
 function validateAppUrl(url: string): string {
   try {
     const parsed = new URL(url)
+    // deploy.appUrl host'ini ham ruxsat etish SHART — linklar aynan shu
+    // bazadan quriladi (`config.deploy.appUrl/verify-email?...`); faqat
+    // APP_DOMAIN'ga qarasak boshqa host'dagi deploy'da template throw qilar edi.
+    let deployHost: string | null = null
+    try { deployHost = new URL(config.deploy.appUrl).hostname } catch { /* config allaqachon tekshirgan */ }
     const allowedHosts = [
       'localhost',
       '127.0.0.1',
       config.appDomain || 'kiwi.uz',
+      ...(deployHost ? [deployHost] : []),
     ]
     if (!allowedHosts.some(host => parsed.hostname === host || parsed.hostname.endsWith(`.${host}`))) {
       throw new Error(`URL host not allowed: ${parsed.hostname}`)

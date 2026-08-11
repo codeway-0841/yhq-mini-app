@@ -107,8 +107,10 @@ describe('server-authoritative progress', () => {
       .expect(200)
     expect(replay.body.duplicate).toBe(true)
     expect(replay.body.dailyStreak).toBeNull()
-    // Reveal ham idempotent: client eski javobni qayta ko'rsata oladi
-    expect(replay.body.correctAnswer).toBe(question.correctAnswer)
+    // DUPLICATE REVEAL YO'Q (scoring himoyasi): replay kalitni qayta ochmaydi —
+    // aks holda bitta token aylanuvchib bepul answer-key yig'ish mumkin edi.
+    expect(replay.body.correctAnswer).toBeNull()
+    expect(replay.body.correct).toBeNull()
 
     const [after] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     expect(after.totalAnswered).toBe(before.totalAnswered + 1)   // FAQAT 1 marta
@@ -116,6 +118,29 @@ describe('server-authoritative progress', () => {
 
     const tokens = await db.select().from(answerTokens).where(eq(answerTokens.token, token))
     expect(tokens).toHaveLength(1)
+  })
+
+  it('answer-key farming: bir token bilan qayta-qayta hisobsiz reveal olib bo\'lmaydi', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const token = `farming-token-${Date.now()}-uniq`
+
+    const first = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: null, subjectId: 'yhq', clientToken: token })
+      .expect(200)
+    expect(first.body.correctAnswer).toBe(question.correctAnswer)  // birinchi — haqiqiy reveal
+
+    // Har bir KEYINGI replay hech narsa ochmaydi (kalit yig'ish imkonsiz)
+    for (let i = 0; i < 3; i++) {
+      const replay = await request(app)
+        .post(`/api/progress/${PROGRESS_ID}/result`)
+        .send({ questionId: question.id, selectedAnswer: null, subjectId: 'yhq', clientToken: token })
+        .expect(200)
+      expect(replay.body.duplicate).toBe(true)
+      expect(replay.body.correctAnswer).toBeNull()
+      expect(replay.body.correct).toBeNull()
+      expect(replay.body.dailyStreak).toBeNull()
+    }
   })
 
   it('clientToken boshqa user tokenini qayta ishlatolmaydi (user-scoped)', async () => {

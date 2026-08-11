@@ -218,15 +218,34 @@ export const linkCodes = pgTable('link_codes', {
  * Bitta telefon uchun faqat BITTA aktiv kod (yangi kod eskisini replace qiladi).
  * Kod 5 daqiqa amal qiladi, BIR MARTA ishlatiladi (atomik DELETE...RETURNING).
  * codeHash = SHA-256 hash (plain text DB'da saqlanmaydi, faqat SMS'da yuboriladi).
+ * attempts — noto'g'ri verify urinishlari hisoblagichi (brute-force lockout:
+ * 5 ta urinishdan keyin kod o'lik, yangi kod so'rash kerak).
  */
 export const otpCodes = pgTable('otp_codes', {
   phone:     text('phone').primaryKey(),
   codeHash:  text('code_hash').notNull(),
+  attempts:  integer('attempts').default(0).notNull(),
   expiresAt: timestamp('expires_at').notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
   index('idx_otp_codes_expires').on(t.expiresAt),
 ])
+
+/**
+ * Telegram LOGIN kodlari (web):
+ * Brauzerda "Telegram orqali kirish" → bot deep-link (`login_<code>`);
+ * client `/auth/telegram-login/:code` ni poll qiladi. Bot contact oqimi
+ * telefon orqali user'ni topib `session_token` yozadi; kod topilgach
+ * iste'mol qilinadi (DELETE). `session_token` NULL = hali pending.
+ * (DIQQAT: kod phone user emas, balki har qanday login sessiyasiga xizmat
+ * qiladi — shu sababli users FK'siz, mustaqil jadval.)
+ */
+export const telegramLoginCodes = pgTable('telegram_login_codes', {
+  code:         text('code').primaryKey(),
+  sessionToken: text('session_token'),
+  expiresAt:    timestamp('expires_at').notNull(),
+  createdAt:    timestamp('created_at').defaultNow().notNull(),
+})
 
 /**
  * Test javobi idempotency token'lari — offline outbox replay'da

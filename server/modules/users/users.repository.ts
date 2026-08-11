@@ -49,9 +49,10 @@ export const usersRepository = {
    * Return qilmaydi — qator zarur bo'lsa keyin `findById` bilan o'qing.
    * (Telegram identity saqlash users.service.init'da — shu jadval provider'dan
    * xabardor bo'lmasligi uchun: telefon userlar TG identity OLMAYDI.)
+   * @param txOrDb — tashqi transaction ichida chaqirilganda (register flow)
    */
-  async initAtomic(input: CreateOrUpdateUserInput): Promise<void> {
-    await db.execute(sql`
+  async initAtomic(input: CreateOrUpdateUserInput, txOrDb: DB = db): Promise<void> {
+    await executeRows(sql`
       WITH upserted AS (
         INSERT INTO users (id, first_name, last_name, username, photo_url)
         VALUES (
@@ -78,7 +79,7 @@ export const usersRepository = {
         ON CONFLICT DO NOTHING
       )
       SELECT (SELECT COUNT(*) FROM upserted) AS upserted_count
-    `)
+    `, txOrDb)
   },
 
   /** Upsert user and return the persisted row. */
