@@ -11,7 +11,7 @@ import request from 'supertest'
 import { createHash, createHmac, randomBytes } from 'crypto'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { users, progress, linkCodes, otpCodes } from '../../../server/schema'
+import { users, progress, linkCodes, otpCodes, sessions } from '../../../server/schema'
 import { eq, inArray } from 'drizzle-orm'
 import { config } from '../../../server/config'
 import { authService } from '../../../server/modules/auth/auth.service'
@@ -119,6 +119,22 @@ describe('POST /api/auth/phone/register + login', () => {
 
     const meAfter = await request(app).get('/api/auth/me').set('Authorization', `Bearer ${token}`)
     expect(meAfter.status).toBe(401)
+  })
+
+  it("M10: sessions jadvalida XOM token emas, sha256 hash saqlanadi", async () => {
+    const login = await request(app).post('/api/auth/phone/login').send({ phone: PHONE_B, password: PASS })
+    expect(login.status).toBe(200)
+    const raw = login.body.sessionToken as string
+
+    const rows = await db.select({ token: sessions.token }).from(sessions)
+      .where(eq(sessions.userId, 'p_998900000010'))
+    const stored = rows.map((r) => r.token)
+    expect(stored).toContain(createHash('sha256').update(raw).digest('hex'))
+    expect(stored).not.toContain(raw)
+    // Bearer resolve hash'langan satr orqali hamon ishlaydi (regression himoyasi)
+    const me = await request(app).get('/api/auth/me').set('Authorization', `Bearer ${raw}`)
+    expect(me.status).toBe(200)
+    await authRepository.deleteSession(raw)
   })
 
   it('auth header\'siz /auth/me → 401', async () => {

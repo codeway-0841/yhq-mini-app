@@ -129,6 +129,7 @@ function sessionExpiry(): Date {
   return new Date(Date.now() + config.auth.sessionTtlDays * 86_400_000)
 }
 
+/** Xom token FAQAT shu yerda yaratilib client'ga qaytariladi; DB'ga hash yoziladi (repository'da). */
 async function issueSession(userId: string, provider: AuthProvider): Promise<string> {
   const token = newSessionToken()
   await authRepository.createSession({ token, userId, provider, expiresAt: sessionExpiry() })

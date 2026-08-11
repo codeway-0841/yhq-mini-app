@@ -4,7 +4,7 @@
  * ENV: ESKIZ_EMAIL, ESKIZ_PASSWORD
  */
 
-import { createHash, randomInt } from 'crypto'
+import { createHash, createHmac, randomInt } from 'crypto'
 import { config } from '../config'
 
 interface EskizAuthResponse {
@@ -99,7 +99,13 @@ export function generateOTP(): string {
 /**
  * OTP kodni hash qilish — DB'da plain text saqlanmaydi.
  * Verification: hash(userInput) === stored hash.
+ * L6: `OTP_PEPPER` sozlansa HMAC-SHA256 (server pepper) — DB dump'da
+ * 6 xonali kod 1M urinishda brute-force bo'lmasligi uchun. Pepper'siz
+ * (dev) plain sha256 fallback saqlanadi.
  */
 export function hashOTP(code: string): string {
-  return createHash('sha256').update(code).digest('hex')
+  const pepper = config.auth.otpPepper
+  return pepper
+    ? createHmac('sha256', pepper).update(code).digest('hex')
+    : createHash('sha256').update(code).digest('hex')
 }

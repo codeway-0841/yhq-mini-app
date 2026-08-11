@@ -10,6 +10,7 @@ import {
   emailVerificationTokens, passwordResetTokens,
   userDevices, loginHistory, auditLogs,
 } from '../../schema'
+import { hashSessionToken } from '../../utils/token-hash'
 
 export type AuthProvider = 'telegram' | 'phone' | 'email' | 'google' | 'apple'
 
@@ -54,8 +55,12 @@ export const authRepository = {
       .where(and(eq(authIdentities.provider, provider), eq(authIdentities.providerUid, providerUid)))
   },
 
+  /**
+   * DIQQAT (M10): sessiya metodlari XOM token qabul qiladi, lekin DB'da FAQAT
+   * sha256(token) saqlanadi/qidiriladi — hashing shu qatlamda, invariant kafolatli.
+   */
   async createSession(input: { token: string; userId: string; provider: AuthProvider; expiresAt: Date }): Promise<void> {
-    await db.insert(sessions).values(input)
+    await db.insert(sessions).values({ ...input, token: hashSessionToken(input.token) })
   },
 
   /**
@@ -63,10 +68,11 @@ export const authRepository = {
    * (sessiya jadvali o'sib ketmasligi uchun opportunistik tozalash).
    */
   async resolveSession(token: string): Promise<{ userId: string; provider: AuthProvider } | null> {
-    const [row] = await db.select().from(sessions).where(eq(sessions.token, token))
+    const tokenHash = hashSessionToken(token)
+    const [row] = await db.select().from(sessions).where(eq(sessions.token, tokenHash))
     if (!row) return null
     if (row.expiresAt <= new Date()) {
-      await db.delete(sessions).where(eq(sessions.token, token))
+      await db.delete(sessions).where(eq(sessions.token, tokenHash))
       return null
     }
     return { userId: row.userId, provider: row.provider as AuthProvider }
@@ -74,17 +80,17 @@ export const authRepository = {
 
   /** Logout / revoke. */
   async deleteSession(token: string): Promise<void> {
-    await db.delete(sessions).where(eq(sessions.token, token))
+    await db.delete(sessions).where(eq(sessions.token, hashSessionToken(token)))
   },
 
   /**
    * User'ning BARCHA sessiyalarini revoke qilish (parol almashtirilganda/tiklanganda) —
    * o'g'irlangan token 30 kunlik TTL tugaguncha yashab qolmasligi uchun.
-   * @param exceptToken — joriy sessiyani saqlab qolish (change-password oqimi).
+   * @param exceptToken — joriy sessiyani saqlab qolish (XOM token; hash ichkarida).
    */
   async deleteUserSessions(userId: string, exceptToken?: string): Promise<void> {
     await db.delete(sessions).where(exceptToken
-      ? and(eq(sessions.userId, userId), sql`${sessions.token} <> ${exceptToken}`)
+      ? and(eq(sessions.userId, userId), sql`${sessions.token} <> ${hashSessionToken(exceptToken)}`)
       : eq(sessions.userId, userId))
   },
 

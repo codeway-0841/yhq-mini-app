@@ -91,7 +91,9 @@ export const userDevices = pgTable('user_devices', {
 ])
 
 /**
- * Login sessiyalari — opaque token (64-hex) serverda saqlanadi (JWT EMAS).
+ * Login sessiyalari — opaque token (64-hex) JWT EMAS, DB'da esa FAQAT
+ * sha256 hash'i saqlanadi (M10; xom token faqat client'da + Telegram deep-link
+ * oqimining ≤5 daqiqalik tranzit kodida). Hashlash auth.repository'da.
  * `Authorization: Bearer <token>` middleware/auth.ts orqali resolve qilinadi;
  * revoke = qatorni DELETE qilish. expires_at o'tgan sessiyalar bekor.
  * Multi-provider support: telegram, phone, email, google, apple.
@@ -217,7 +219,8 @@ export const linkCodes = pgTable('link_codes', {
  * SMS OTP kodlar — register/login SMS verification uchun.
  * Bitta telefon uchun faqat BITTA aktiv kod (yangi kod eskisini replace qiladi).
  * Kod 5 daqiqa amal qiladi, BIR MARTA ishlatiladi (atomik DELETE...RETURNING).
- * codeHash = SHA-256 hash (plain text DB'da saqlanmaydi, faqat SMS'da yuboriladi).
+ * codeHash = HMAC-SHA256(OTP_PEPPER) yoki pepper'siz SHA-256 (plain text
+ * DB'da saqlanmaydi, faqat SMS'da yuboriladi).
  * attempts — noto'g'ri verify urinishlari hisoblagichi (brute-force lockout:
  * 5 ta urinishdan keyin kod o'lik, yangi kod so'rash kerak).
  */
@@ -239,6 +242,8 @@ export const otpCodes = pgTable('otp_codes', {
  * iste'mol qilinadi (DELETE). `session_token` NULL = hali pending.
  * (DIQQAT: kod phone user emas, balki har qanday login sessiyasiga xizmat
  * qiladi — shu sababli users FK'siz, mustaqil jadval.)
+ * `session_token` bu yerda XOM (client raw token olishi shart) — lekin
+ * tranzit: 5 daqiqa TTL + single-use DELETE, sessions'dagidek 30 kun emas.
  */
 export const telegramLoginCodes = pgTable('telegram_login_codes', {
   code:         text('code').primaryKey(),

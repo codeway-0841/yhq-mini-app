@@ -49,6 +49,10 @@ const envSchema = z.object({
   /** Auth sessiyalari — telefon+parol / TG Login Widget login'da yaratiladigan
    *  opaque token TTL (kun). Default 30. */
   SESSION_TTL_DAYS: z.string().regex(/^\d+$/).optional(),
+
+  /** OTP hash server pepper — HMAC-SHA256 kalit (DB dump'da OTP brute-force
+   *  himoyasi). Yo'q bo'lsa plain sha256 fallback (dev uchun; prod'da o'rnating). */
+  OTP_PEPPER: z.string().min(16).optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -130,6 +134,7 @@ export const config = {
   /** Multi-provider auth — session sozlamalari */
   auth: {
     sessionTtlDays: Math.max(1, Number(env.SESSION_TTL_DAYS ?? '30')),
+    otpPepper: env.OTP_PEPPER,
   },
 
   /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */
