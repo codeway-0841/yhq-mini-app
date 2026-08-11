@@ -4,7 +4,7 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown,
+  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, Coins,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -220,6 +220,22 @@ export default function Dashboard() {
             <button onClick={() => { track('premium_click'); navigate('/premium') }}
               className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
               {tt('tryWord')}
+            </button>
+          </div>
+
+          {/* 8. Token Shop Banner */}
+          <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
+            <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+              style={{ background: 'rgba(250,204,21,0.12)', border: '1px solid rgba(250,204,21,0.30)' }}>
+              <Coins size={19} className="text-pgold" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[13px] font-bold text-pfg">{tt('shopTitle')}</p>
+              <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('shopTagline')}</p>
+            </div>
+            <button onClick={() => navigate('/shop')}
+              className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
+              {tt('seeAll')}
             </button>
           </div>
 

@@ -35,6 +35,7 @@ const UZ = {
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   mistakeFixDesc: "Xato tuzatish",
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
+  shopTitle: "Tokenlar do'koni", shopTagline: "Token yig'ing, avatar va merj oling",
   tryWord: "Sinash",
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
@@ -236,6 +237,7 @@ const RU: Record<Keys, string> = {
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   mistakeFixDesc: "Исправь ошибки",
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
+  shopTitle: "Магазин токенов", shopTagline: "Собирайте токены, получайте аватары и мержи",
   tryWord: "Пробовать",
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
