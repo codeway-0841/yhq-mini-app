@@ -23,3 +23,8 @@ vlogs.log
 
 # terminal crash dumps
 mintty.*.html
+
+# Graphify local index artifact (rebuilt via: graphify update .)
+graphify-out/
+
+.opencode/
