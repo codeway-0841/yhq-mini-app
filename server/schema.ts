@@ -527,3 +527,94 @@ export const dailyRecords = pgTable('daily_records', {
   check('chk_daily_record_correct_le', sql`${t.correct} BETWEEN 0 AND ${t.answered}`),
   check('chk_daily_record_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
+
+// ─── Token Shop ────────────────────────────────────────────────────────────
+
+export const shopItems = pgTable('shop_items', {
+  id:          text('id').primaryKey(),
+  type:        text('type').notNull(), // 'avatar' | 'merch' | 'badge'
+  nameUz:      text('name_uz').notNull(),
+  nameRu:      text('name_ru').notNull(),
+  image:       text('image').notNull(),
+  price:       integer('price').notNull(),
+  category:    text('category').default('all').notNull(),
+  sortOrder:   integer('sort_order').default(0).notNull(),
+  isActive:    boolean('is_active').default(true).notNull(),
+  createdAt:   timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_shop_items_type').on(t.type),
+  index('idx_shop_items_type_category').on(t.type, t.category),
+  check('chk_shop_items_type', sql`${t.type} IN ('avatar', 'merch', 'badge')`),
+  check('chk_shop_items_price_positive', sql`${t.price} > 0`),
+])
+
+export const tokenBalances = pgTable('token_balances', {
+  userId:    text('user_id').primaryKey().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  balance:   integer('balance').default(0).notNull(),
+  totalEarned: integer('total_earned').default(0).notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  check('chk_token_balance_nonneg', sql`${t.balance} >= 0`),
+  check('chk_token_total_earned_nonneg', sql`${t.totalEarned} >= 0`),
+])
+
+export const tokenTransactions = pgTable('token_transactions', {
+  id:         serial('id').primaryKey(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  amount:     integer('amount').notNull(), // positive = earn, negative = spend
+  type:       text('type').notNull(), // 'task' | 'daily' | 'purchase' | 'level_up' | 'refund' | 'package'
+  refId:      text('ref_id'), // e.g. task id, item id
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_token_tx_user_created').on(t.userId, t.createdAt.desc()),
+  index('idx_token_tx_type').on(t.type),
+  check('chk_token_tx_type', sql`${t.type} IN ('task', 'daily', 'purchase', 'level_up', 'refund', 'package')`),
+])
+
+export const userPurchases = pgTable('user_purchases', {
+  id:         serial('id').primaryKey(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  itemId:     text('item_id').notNull().references(() => shopItems.id, { onDelete: 'restrict' }),
+  price:      integer('price').notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_user_purchase').on(t.userId, t.itemId),
+  index('idx_user_purchases_user').on(t.userId),
+])
+
+export const dailyRewards = pgTable('daily_rewards', {
+  userId:       text('user_id').primaryKey().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  lastClaimDate: text('last_claim_date'), // 'YYYY-MM-DD'
+  streak:       integer('streak').default(0).notNull(),
+  updatedAt:    timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  check('chk_daily_rewards_streak_nonneg', sql`${t.streak} >= 0`),
+  check('chk_daily_rewards_date_fmt', sql`${t.lastClaimDate} IS NULL OR ${t.lastClaimDate} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
+])
+
+export const tokenTasks = pgTable('token_tasks', {
+  id:          text('id').primaryKey(),
+  titleUz:     text('title_uz').notNull(),
+  titleRu:     text('title_ru').notNull(),
+  reward:      integer('reward').notNull(),
+  total:       integer('total').notNull(),
+  isActive:    boolean('is_active').default(true).notNull(),
+  sortOrder:   integer('sort_order').default(0).notNull(),
+}, (t) => [
+  check('chk_token_tasks_reward_positive', sql`${t.reward} > 0`),
+  check('chk_token_tasks_total_positive', sql`${t.total} > 0`),
+])
+
+export const userTaskProgress = pgTable('user_task_progress', {
+  id:       serial('id').primaryKey(),
+  userId:   text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  taskId:   text('task_id').notNull().references(() => tokenTasks.id, { onDelete: 'cascade' }),
+  progress: integer('progress').default(0).notNull(),
+  completed: boolean('completed').default(false).notNull(),
+  claimedAt: timestamp('claimed_at'),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  unique('uq_user_task').on(t.userId, t.taskId),
+  index('idx_user_task_progress_user').on(t.userId),
+  check('chk_user_task_progress_nonneg', sql`${t.progress} >= 0`),
+])
