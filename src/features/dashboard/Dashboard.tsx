@@ -145,6 +145,7 @@ export default function Dashboard() {
             lang={settings.language}
             continueSubject={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
             progressPct={continueInfo.pct}
+            lessonLabel={continueInfo.lessonLabel}
             onContinue={continueInfo.go}
           />
 
