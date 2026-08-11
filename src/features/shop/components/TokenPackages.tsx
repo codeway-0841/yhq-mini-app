@@ -1,4 +1,3 @@
-import { Coins } from 'lucide-react'
 import type { TokenPackage } from '../data'
 
 interface Props {
@@ -17,14 +16,14 @@ export function TokenPackages({ packages, lang }: Props) {
         {packages.map((pkg) => (
           <button
             key={pkg.id}
-            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center gap-2 relative active:scale-95 transition-transform"
+            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center gap-1.5 relative active:scale-95 transition-transform"
           >
             {pkg.discount && (
               <span className="absolute -top-1.5 -right-1 bg-pdanger text-white text-[8px] font-bold px-1.5 py-0.5 rounded-full">
                 -{pkg.discount}%
               </span>
             )}
-            <Coins size={22} className="text-pgold" />
+            <img src={pkg.image} alt="" loading="lazy" draggable={false} className="h-12 object-contain" />
             <p className="text-[13px] font-black text-pfg">{pkg.amount.toLocaleString()}</p>
             <p className="text-[9.5px] text-psubtle">
               {pkg.price.toLocaleString()} {lang === 'ru' ? "сум" : "so'm"}

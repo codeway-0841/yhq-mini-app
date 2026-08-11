@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Coins } from 'lucide-react'
 import type { ShopBadge } from '../data'
 import { PurchaseModal } from './PurchaseModal'
+import { ShopImg } from './ShopImg'
 
 interface Props {
   badges: ShopBadge[]
@@ -34,9 +35,8 @@ export function BadgeRow({ badges, lang, balance, onPurchase }: Props) {
             className="flex-none w-[90px] flex flex-col items-center gap-1.5 active:scale-95 transition-transform opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards]"
             style={{ animationDelay: `${i * 60}ms` }}
           >
-            <div className="w-14 h-14 rounded-2xl bg-pcard border border-pline flex items-center justify-center text-[26px]">
-              {badge.icon}
-            </div>
+            <ShopImg image={badge.icon} alt={lang === 'ru' ? badge.nameRu : badge.name}
+              className="w-14 h-14 object-contain text-[26px]" />
             <p className="text-[10px] font-medium text-pmuted text-center leading-tight w-full truncate">
               {lang === 'ru' ? badge.nameRu : badge.name}
             </p>

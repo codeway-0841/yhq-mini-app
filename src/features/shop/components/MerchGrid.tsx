@@ -4,6 +4,7 @@ import type { ShopMerch, MerchCategory } from '../data'
 import { MERCH_CATEGORIES } from '../data'
 import { CategoryFilter } from './CategoryFilter'
 import { PurchaseModal } from './PurchaseModal'
+import { ShopImg } from './ShopImg'
 
 interface Props {
   items: ShopMerch[]
@@ -53,22 +54,20 @@ export function MerchGrid({ items, lang, balance, onPurchase }: Props) {
         lang={lang}
       />
 
-      <div className="flex gap-3 overflow-x-auto px-4 mt-3 pb-2 scroll-smooth-x">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 px-4 mt-3">
         {displayed.map((item, i) => (
           <button
             key={item.id}
             onClick={() => setSelected(item)}
-            className="flex-none w-[130px] rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center gap-2 active:scale-95 transition-transform opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards]"
+            className="rounded-2xl p-2 bg-pcard border border-pline flex flex-col items-center gap-1.5 active:scale-95 transition-transform opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards]"
             style={{ animationDelay: `${i * 70}ms` }}
           >
-            <div className="w-16 h-16 rounded-xl flex items-center justify-center text-[32px]"
-              style={{ background: 'linear-gradient(135deg, rgba(91,227,0,0.08), rgba(59,130,246,0.08))' }}>
-              {item.image}
-            </div>
+            <ShopImg image={item.image} alt={lang === 'ru' ? item.nameRu : item.name}
+              className="w-full aspect-square rounded-xl object-cover text-[32px]" />
             <p className="text-[11px] font-semibold text-pfg text-center truncate w-full">
               {lang === 'ru' ? item.nameRu : item.name}
             </p>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 px-2 py-0.5 rounded-md bg-pprimary/10">
               <Coins size={11} className="text-pgold" />
               <span className="text-[11px] font-bold text-pgold">{item.price.toLocaleString()}</span>
             </div>

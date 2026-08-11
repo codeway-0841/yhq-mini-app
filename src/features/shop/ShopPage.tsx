@@ -136,7 +136,7 @@ export default function ShopPage() {
       </div>
 
       {/* Stats + Daily Reward */}
-      <div className="grid grid-cols-1 sm:grid-cols-[1fr,auto] gap-3 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 px-4">
         <StatsBar
           tokens={shop.balance}
           badges={ownedBadges}
@@ -146,11 +146,11 @@ export default function ShopPage() {
           onViewBadges={() => document.getElementById('badges-section')?.scrollIntoView({ behavior: 'smooth' })}
           onViewAvatars={() => document.getElementById('avatars-section')?.scrollIntoView({ behavior: 'smooth' })}
         />
-        <DailyReward lang={lang} nextRewardTokens={3000} onClaim={handleDailyClaim} />
+        <DailyReward lang={lang} onClaim={handleDailyClaim} />
       </div>
 
       {/* Token Tasks + Level Progress */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-4 mt-4 items-start">
         <TokenTasks tasks={mappedTasks} lang={lang} />
         <LevelProgress totalCorrect={totalCorrect} lang={lang} />
       </div>

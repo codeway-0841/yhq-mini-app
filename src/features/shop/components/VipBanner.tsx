@@ -1,4 +1,4 @@
-import { Crown, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 interface Props {
@@ -57,7 +57,8 @@ export function VipBanner({ lang, isPremium }: Props) {
             </button>
           )}
         </div>
-        <Crown size={48} className="text-pgold opacity-40 flex-shrink-0" />
+        <img src="/shop/ui/vip.png" alt="" loading="lazy" draggable={false}
+          className="w-24 h-24 object-contain flex-shrink-0 pointer-events-none" />
       </div>
     </div>
   )

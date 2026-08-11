@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react'
+import { Check, Coins } from 'lucide-react'
 import type { TokenTask } from '../data'
 
 interface Props {
@@ -16,7 +16,7 @@ export function TokenTasks({ tasks, lang }: Props) {
         {tasks.map((task, i) => (
           <div
             key={task.id}
-            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center text-center gap-2 min-h-[110px] opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards] hover:border-pprimary/30 transition-all"
+            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col gap-2 min-h-[110px] opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards] hover:border-pprimary/30 transition-all"
             style={{ animationDelay: `${i * 60}ms` }}
           >
             <p className="text-[11.5px] font-semibold text-pfg leading-tight flex-1 line-clamp-2">
@@ -24,15 +24,16 @@ export function TokenTasks({ tasks, lang }: Props) {
             </p>
 
             {task.completed ? (
-              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-psuccess/15 border border-psuccess/30">
+              <div className="self-start flex items-center justify-center w-9 h-9 rounded-xl bg-psuccess/15 border border-psuccess/30">
                 <Check size={18} className="text-psuccess" />
               </div>
             ) : (
               <>
-                <div className="text-[14px] font-black text-pgold">
-                  +{task.reward}
+                <div className="flex items-center gap-1">
+                  <Coins size={13} className="text-pgold" />
+                  <span className="text-[14px] font-black text-pgold">+{task.reward}</span>
                 </div>
-                <div className="text-[10px] text-psubtle font-medium">
+                <div className="rounded-lg bg-pcanvas py-1 text-center text-[10px] text-psubtle font-medium">
                   {task.progress}/{task.total}
                 </div>
               </>

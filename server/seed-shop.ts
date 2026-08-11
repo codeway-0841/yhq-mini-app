@@ -1,42 +1,43 @@
 import 'dotenv/config'
+import { sql } from 'drizzle-orm'
 import { db } from './db/connection'
 import { shopItems, tokenTasks } from './schema'
 
 const AVATARS = [
-  { id: 'cosmonaut', type: 'avatar', nameUz: 'Kosmonavt', nameRu: 'Космонавт', image: '🧑‍🚀', price: 1500, category: 'boy', sortOrder: 1 },
-  { id: 'panda', type: 'avatar', nameUz: 'Panda Gamer', nameRu: 'Панда Геймер', image: '🐼', price: 1200, category: 'animals', sortOrder: 2 },
-  { id: 'ninja', type: 'avatar', nameUz: 'Ninja', nameRu: 'Ниндзя', image: '🥷', price: 1800, category: 'boy', sortOrder: 3 },
-  { id: 'minimal-boy', type: 'avatar', nameUz: 'Minimal Boy', nameRu: 'Минимал', image: '👦', price: 800, category: 'minimal', sortOrder: 4 },
-  { id: 'cyberpunk', type: 'avatar', nameUz: 'Cyberpunk', nameRu: 'Киберпанк', image: '🤖', price: 2000, category: 'premium', sortOrder: 5 },
-  { id: 'sun', type: 'avatar', nameUz: 'Quyosh', nameRu: 'Солнце', image: '☀️', price: 1000, category: 'funny', sortOrder: 6 },
-  { id: 'lion', type: 'avatar', nameUz: 'Sher', nameRu: 'Лев', image: '🦁', price: 1600, category: 'animals', sortOrder: 7 },
-  { id: 'robot', type: 'avatar', nameUz: 'Ovozli Robot', nameRu: 'Робот', image: '🤖', price: 1300, category: 'retro', sortOrder: 8 },
-  { id: 'football', type: 'avatar', nameUz: 'Futbolchi', nameRu: 'Футболист', image: '⚽', price: 900, category: 'funny', sortOrder: 9 },
-  { id: 'samurai', type: 'avatar', nameUz: 'Samuray', nameRu: 'Самурай', image: '⚔️', price: 1700, category: 'anime', sortOrder: 10 },
-  { id: 'penguin', type: 'avatar', nameUz: 'Pingvin', nameRu: 'Пингвин', image: '🐧', price: 1100, category: 'animals', sortOrder: 11 },
-  { id: 'elf', type: 'avatar', nameUz: 'Yashil Yigit', nameRu: 'Зелёный', image: '🧝', price: 950, category: 'anime', sortOrder: 12 },
+  { id: 'cosmonaut', type: 'avatar', nameUz: 'Kosmonavt', nameRu: 'Космонавт', image: '/shop/avatars/cosmonaut.png', price: 1500, category: 'boy', sortOrder: 1 },
+  { id: 'panda', type: 'avatar', nameUz: 'Panda Gamer', nameRu: 'Панда Геймер', image: '/shop/avatars/panda.png', price: 1200, category: 'animals', sortOrder: 2 },
+  { id: 'ninja', type: 'avatar', nameUz: 'Ninja', nameRu: 'Ниндзя', image: '/shop/avatars/ninja.png', price: 1800, category: 'boy', sortOrder: 3 },
+  { id: 'minimal-boy', type: 'avatar', nameUz: 'Minimal Boy', nameRu: 'Минимал', image: '/shop/avatars/minimal-boy.png', price: 800, category: 'minimal', sortOrder: 4 },
+  { id: 'cyberpunk', type: 'avatar', nameUz: 'Cyberpunk', nameRu: 'Киберпанк', image: '/shop/avatars/cyberpunk.png', price: 2000, category: 'premium', sortOrder: 5 },
+  { id: 'sun', type: 'avatar', nameUz: 'Quyosh', nameRu: 'Солнце', image: '/shop/avatars/sun.png', price: 1000, category: 'funny', sortOrder: 6 },
+  { id: 'lion', type: 'avatar', nameUz: 'Sher', nameRu: 'Лев', image: '/shop/avatars/lion.png', price: 1600, category: 'animals', sortOrder: 7 },
+  { id: 'robot', type: 'avatar', nameUz: 'Ovozli Robot', nameRu: 'Робот', image: '/shop/avatars/robot.png', price: 1300, category: 'retro', sortOrder: 8 },
+  { id: 'football', type: 'avatar', nameUz: 'Qiz bola', nameRu: 'Девочка', image: '/shop/avatars/football.png', price: 900, category: 'funny', sortOrder: 9 },
+  { id: 'samurai', type: 'avatar', nameUz: 'Samuray', nameRu: 'Самурай', image: '/shop/avatars/samurai.png', price: 1700, category: 'anime', sortOrder: 10 },
+  { id: 'penguin', type: 'avatar', nameUz: 'Pingvin', nameRu: 'Пингвин', image: '/shop/avatars/penguin.png', price: 1100, category: 'animals', sortOrder: 11 },
+  { id: 'elf', type: 'avatar', nameUz: 'Yashil Yigit', nameRu: 'Зелёный', image: '/shop/avatars/elf.png', price: 950, category: 'anime', sortOrder: 12 },
 ]
 
 const MERCH = [
-  { id: 'hoodie', type: 'merch', nameUz: 'KIWI Hoodie', nameRu: 'KIWI Худи', image: '🧥', price: 150000, category: 'clothing', sortOrder: 1 },
-  { id: 'tshirt', type: 'merch', nameUz: 'KIWI Futbolka', nameRu: 'KIWI Футболка', image: '👕', price: 80000, category: 'clothing', sortOrder: 2 },
-  { id: 'cap', type: 'merch', nameUz: 'KIWI Kepka', nameRu: 'KIWI Кепка', image: '🧢', price: 60000, category: 'accessories', sortOrder: 3 },
-  { id: 'bag', type: 'merch', nameUz: 'KIWI Sumka', nameRu: 'KIWI Сумка', image: '👜', price: 180000, category: 'bags', sortOrder: 4 },
-  { id: 'thermos', type: 'merch', nameUz: 'KIWI Termos', nameRu: 'KIWI Термос', image: '🫗', price: 70000, category: 'dishes', sortOrder: 5 },
-  { id: 'stickers', type: 'merch', nameUz: 'KIWI Sticker Pack', nameRu: 'KIWI Стикеры', image: '🎨', price: 25000, category: 'stickers', sortOrder: 6 },
+  { id: 'hoodie', type: 'merch', nameUz: 'KIWI Hoodie', nameRu: 'KIWI Худи', image: '/shop/merch/hoodie.png', price: 150000, category: 'clothing', sortOrder: 1 },
+  { id: 'tshirt', type: 'merch', nameUz: 'KIWI Futbolka', nameRu: 'KIWI Футболка', image: '/shop/merch/tshirt.png', price: 80000, category: 'clothing', sortOrder: 2 },
+  { id: 'cap', type: 'merch', nameUz: 'KIWI Kepka', nameRu: 'KIWI Кепка', image: '/shop/merch/cap.png', price: 60000, category: 'accessories', sortOrder: 3 },
+  { id: 'bag', type: 'merch', nameUz: 'KIWI Sumka', nameRu: 'KIWI Сумка', image: '/shop/merch/bag.png', price: 180000, category: 'bags', sortOrder: 4 },
+  { id: 'thermos', type: 'merch', nameUz: 'KIWI Termos', nameRu: 'KIWI Термос', image: '/shop/merch/thermos.png', price: 70000, category: 'dishes', sortOrder: 5 },
+  { id: 'stickers', type: 'merch', nameUz: 'KIWI Sticker Pack', nameRu: 'KIWI Стикеры', image: '/shop/merch/stickers.png', price: 25000, category: 'stickers', sortOrder: 6 },
 ]
 
 const BADGES = [
-  { id: 'top1', type: 'badge', nameUz: 'Top 1%', nameRu: 'Топ 1%', image: '🏆', price: 10000, category: 'all', sortOrder: 1 },
-  { id: 'strong', type: 'badge', nameUz: 'Katta bilimdon', nameRu: 'Знаток', image: '⭐', price: 2500, category: 'all', sortOrder: 2 },
-  { id: 'fast', type: 'badge', nameUz: 'Tezkor', nameRu: 'Быстрый', image: '⚡', price: 2000, category: 'all', sortOrder: 3 },
-  { id: 'perfect', type: 'badge', nameUz: 'Mukammal', nameRu: 'Идеальный', image: '🌟', price: 2500, category: 'all', sortOrder: 4 },
-  { id: 'champion', type: 'badge', nameUz: 'Chempion', nameRu: 'Чемпион', image: '🥇', price: 3500, category: 'all', sortOrder: 5 },
-  { id: 'math', type: 'badge', nameUz: 'Matematika ustasi', nameRu: 'Мастер математики', image: '🔢', price: 2000, category: 'all', sortOrder: 6 },
-  { id: 'physics', type: 'badge', nameUz: 'Fizika dahosi', nameRu: 'Гений физики', image: '🔬', price: 1800, category: 'all', sortOrder: 7 },
-  { id: 'history', type: 'badge', nameUz: 'Tarix bilimdon', nameRu: 'Историк', image: '📜', price: 1800, category: 'all', sortOrder: 8 },
-  { id: 'biology', type: 'badge', nameUz: 'Biologiya eksperti', nameRu: 'Биолог', image: '🧬', price: 1800, category: 'all', sortOrder: 9 },
-  { id: 'chemistry', type: 'badge', nameUz: 'Kimyo sehrgari', nameRu: 'Химик', image: '🧪', price: 1800, category: 'all', sortOrder: 10 },
+  { id: 'top1', type: 'badge', nameUz: 'Top 1%', nameRu: 'Топ 1%', image: '/shop/badges/top1.png', price: 10000, category: 'all', sortOrder: 1 },
+  { id: 'strong', type: 'badge', nameUz: 'Katta bilimdon', nameRu: 'Знаток', image: '/shop/badges/strong.png', price: 2500, category: 'all', sortOrder: 2 },
+  { id: 'fast', type: 'badge', nameUz: 'Tezkor', nameRu: 'Быстрый', image: '/shop/badges/fast.png', price: 2000, category: 'all', sortOrder: 3 },
+  { id: 'perfect', type: 'badge', nameUz: 'Mukammal', nameRu: 'Идеальный', image: '/shop/badges/perfect.png', price: 2500, category: 'all', sortOrder: 4 },
+  { id: 'champion', type: 'badge', nameUz: 'Chempion', nameRu: 'Чемпион', image: '/shop/badges/champion.png', price: 3500, category: 'all', sortOrder: 5 },
+  { id: 'math', type: 'badge', nameUz: 'Matematika ustasi', nameRu: 'Мастер математики', image: '/shop/badges/math.png', price: 2000, category: 'all', sortOrder: 6 },
+  { id: 'physics', type: 'badge', nameUz: 'Fizika dahosi', nameRu: 'Гений физики', image: '/shop/badges/physics.png', price: 1800, category: 'all', sortOrder: 7 },
+  { id: 'history', type: 'badge', nameUz: 'Tarix bilimdoni', nameRu: 'Историк', image: '/shop/badges/history.png', price: 1800, category: 'all', sortOrder: 8 },
+  { id: 'biology', type: 'badge', nameUz: 'Biologiya eksperti', nameRu: 'Биолог', image: '/shop/badges/biology.png', price: 1800, category: 'all', sortOrder: 9 },
+  { id: 'chemistry', type: 'badge', nameUz: 'Kimyo sehrgari', nameRu: 'Химик', image: '/shop/badges/chemistry.png', price: 1800, category: 'all', sortOrder: 10 },
 ]
 
 const TASKS = [
@@ -51,8 +52,15 @@ async function seed() {
   console.log('Seeding shop items...')
 
   const allItems = [...AVATARS, ...MERCH, ...BADGES]
-  await db.insert(shopItems).values(allItems).onConflictDoNothing()
-  console.log(`  shop_items: ${allItems.length} rows (onConflictDoNothing)`)
+  await db.insert(shopItems).values(allItems).onConflictDoUpdate({
+    target: shopItems.id,
+    set: {
+      image: sql`excluded.image`,
+      nameUz: sql`excluded.name_uz`,
+      nameRu: sql`excluded.name_ru`,
+    },
+  })
+  console.log(`  shop_items: ${allItems.length} rows (upsert image/name)`)
 
   await db.insert(tokenTasks).values(TASKS).onConflictDoNothing()
   console.log(`  token_tasks: ${TASKS.length} rows (onConflictDoNothing)`)

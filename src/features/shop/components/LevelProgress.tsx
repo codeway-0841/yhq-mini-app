@@ -1,4 +1,3 @@
-import { Coins, Award } from 'lucide-react'
 import { LEVEL_REWARDS } from '../data'
 
 interface Props {
@@ -15,20 +14,20 @@ export function LevelProgress({ totalCorrect, lang }: Props) {
 
   return (
     <div className="px-4">
-      <div className="rounded-2xl p-4 bg-pcard border border-pline">
-        <div className="flex items-center justify-between mb-3">
+      <div className="rounded-2xl p-4 bg-pcard border border-pline h-full">
+        <div className="flex items-start justify-between mb-1">
           <h3 className="text-[13px] font-bold text-pfg">
             {lang === 'ru' ? 'Ваш уровень' : 'Darajangiz'}
           </h3>
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-pprimary/10 border border-pprimary/30">
-            <Award size={14} className="text-pprimary" />
-            <span className="text-[12px] font-bold text-pprimary">
-              {lang === 'ru' ? `Уровень ${level}` : `Daraja ${level}`}
-            </span>
-          </div>
+          <img src="/shop/ui/medal.png" alt="" loading="lazy" draggable={false}
+            className="w-12 h-12 object-contain -mt-1 pointer-events-none" />
         </div>
 
-        <div className="w-full h-3 rounded-full bg-pcanvas overflow-hidden mb-2.5">
+        <p className="text-[15px] font-bold text-pfg mb-2">
+          {lang === 'ru' ? `Уровень ${level}` : `Daraja ${level}`}
+        </p>
+
+        <div className="w-full h-2.5 rounded-full bg-pcanvas overflow-hidden mb-1.5">
           <div
             className="h-full rounded-full transition-all duration-500"
             style={{
@@ -37,19 +36,18 @@ export function LevelProgress({ totalCorrect, lang }: Props) {
             }}
           />
         </div>
+        <p className="text-[11px] text-psubtle font-medium mb-3">
+          {pointsInLevel.toLocaleString()} / {pointsNeeded.toLocaleString()}
+        </p>
 
-        <div className="flex items-center justify-between">
-          <span className="text-[11px] text-psubtle font-medium">
-            {pointsInLevel.toLocaleString()} / {pointsNeeded.toLocaleString()}
+        <div className="pt-2.5 border-t border-pline/50 flex items-center justify-between gap-2">
+          <span className="text-[10px] text-pmuted">
+            {lang === 'ru' ? 'Награда след. уровня' : 'Keyingi daraja mukofoti'}
           </span>
-          <div className="flex flex-col items-end gap-0.5">
-            <span className="text-[9.5px] text-pmuted">
-              {lang === 'ru' ? 'Награда след. уровня' : 'Keyingi daraja mukofoti'}
-            </span>
-            <div className="flex items-center gap-1">
-              <Coins size={12} className="text-pgold" />
-              <span className="text-[12px] font-bold text-pgold">{nextReward.toLocaleString()} token</span>
-            </div>
+          <div className="flex items-center gap-1.5">
+            <img src="/shop/ui/coins-sm.png" alt="" loading="lazy" draggable={false}
+              className="w-6 h-6 object-contain pointer-events-none" />
+            <span className="text-[13px] font-black text-pgold">{nextReward.toLocaleString()} token</span>
           </div>
         </div>
       </div>

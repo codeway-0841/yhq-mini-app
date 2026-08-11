@@ -1,4 +1,4 @@
-import { Coins, Award, Image, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 interface Props {
   tokens: number
@@ -10,84 +10,72 @@ interface Props {
   onViewAvatars?: () => void
 }
 
+interface CardCfg {
+  labelUz: string
+  labelRu: string
+  value: string
+  image: string
+  btnUz: string
+  btnRu: string
+  bg: string
+  border: string
+  onClick?: () => void
+  ariaUz: string
+  ariaRu: string
+}
+
 export function StatsBar({ tokens, badges, avatars, lang, onGetMoreTokens, onViewBadges, onViewAvatars }: Props) {
+  const cards: CardCfg[] = [
+    {
+      labelUz: 'Mening tokenlarim', labelRu: 'Мои токены',
+      value: tokens.toLocaleString(), image: '/shop/ui/coins.png',
+      btnUz: "Ko'proq olish", btnRu: 'Получить больше',
+      bg: 'linear-gradient(135deg, rgba(91,227,0,0.22) 0%, rgba(91,227,0,0.06) 60%), var(--p-card)',
+      border: '1px solid rgba(91,227,0,0.35)',
+      onClick: onGetMoreTokens,
+      ariaUz: "Ko'proq token olish", ariaRu: 'Получить больше токенов',
+    },
+    {
+      labelUz: 'Mening merjlarim', labelRu: 'Мои мерджи',
+      value: String(badges), image: '/shop/ui/boy.png',
+      btnUz: "Ko'rish", btnRu: 'Смотреть',
+      bg: 'linear-gradient(135deg, rgba(139,92,246,0.22) 0%, rgba(139,92,246,0.06) 60%), var(--p-card)',
+      border: '1px solid rgba(139,92,246,0.35)',
+      onClick: onViewBadges,
+      ariaUz: "Merjlarni ko'rish", ariaRu: 'Смотреть награды',
+    },
+    {
+      labelUz: 'Mening avatarlarim', labelRu: 'Мои аватары',
+      value: String(avatars), image: '/shop/ui/panda.png',
+      btnUz: "Ko'rish", btnRu: 'Смотреть',
+      bg: 'var(--p-card)',
+      border: '1px solid var(--p-line)',
+      onClick: onViewAvatars,
+      ariaUz: "Avatarlarni ko'rish", ariaRu: 'Смотреть аватары',
+    },
+  ]
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-      <div className="rounded-2xl p-4 relative overflow-hidden min-h-[120px] flex flex-col"
-        style={{
-          background: 'linear-gradient(135deg, rgba(91,227,0,0.12) 0%, var(--p-card) 60%)',
-          border: '1px solid rgba(91,227,0,0.3)',
-        }}>
-        <div className="flex-1">
+    <>
+      {cards.map((c, i) => (
+        <div key={i} className="rounded-2xl p-4 relative overflow-hidden min-h-[130px] flex flex-col"
+          style={{ background: c.bg, border: c.border }}>
           <p className="text-[11px] text-pmuted font-medium">
-            {lang === 'ru' ? 'Мои токены' : 'Mening tokenlarim'}
+            {lang === 'ru' ? c.labelRu : c.labelUz}
           </p>
-          <p className="text-[24px] font-black text-pfg mt-1.5 mb-3">{tokens.toLocaleString()}</p>
+          <p className="text-[26px] font-black text-pfg mt-1">{c.value}</p>
+          <button
+            type="button"
+            onClick={c.onClick}
+            aria-label={lang === 'ru' ? c.ariaRu : c.ariaUz}
+            className="mt-auto self-start flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-black/40 border border-white/10 text-pfg text-[11px] font-semibold transition-all active:scale-95 hover:bg-black/60 focus:outline-none focus:ring-2 focus:ring-pprimary/50">
+            <span>{lang === 'ru' ? c.btnRu : c.btnUz}</span>
+            <ArrowRight size={12} />
+          </button>
+          <img src={c.image} alt="" loading="lazy" draggable={false}
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-16 h-16 object-contain pointer-events-none" />
         </div>
-        <button
-          type="button"
-          onClick={onGetMoreTokens}
-          aria-label={lang === 'ru' ? 'Получить больше токенов' : "Ko'proq token olish"}
-          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-pprimary/40 bg-transparent text-pprimary text-[11px] font-semibold transition-all active:scale-95 hover:bg-pprimary/5 focus:outline-none focus:ring-2 focus:ring-pprimary/50 w-full">
-          <span>{lang === 'ru' ? 'Получить больше' : "Ko'proq olish"}</span>
-          <ArrowRight size={12} />
-        </button>
-        <div className="absolute top-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center"
-          style={{ background: 'rgba(250,204,21,0.15)' }}>
-          <Coins size={24} className="text-pgold" />
-        </div>
-      </div>
-
-      <div className="rounded-2xl p-4 relative overflow-hidden min-h-[120px] flex flex-col"
-        style={{
-          background: 'linear-gradient(135deg, rgba(139,92,246,0.12) 0%, var(--p-card) 60%)',
-          border: '1px solid rgba(139,92,246,0.3)',
-        }}>
-        <div className="flex-1">
-          <p className="text-[11px] text-pmuted font-medium">
-            {lang === 'ru' ? 'Мои награды' : 'Mening mukofotlarim'}
-          </p>
-          <p className="text-[24px] font-black text-pfg mt-1.5 mb-3">{badges}</p>
-        </div>
-        <button
-          type="button"
-          onClick={onViewBadges}
-          aria-label={lang === 'ru' ? 'Смотреть награды' : "Mukofotlarni ko'rish"}
-          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-ppurple/40 bg-transparent text-ppurple text-[11px] font-semibold transition-all active:scale-95 hover:bg-ppurple/5 focus:outline-none focus:ring-2 focus:ring-ppurple/50 w-full">
-          <span>{lang === 'ru' ? 'Смотреть' : "Ko'rish"}</span>
-          <ArrowRight size={12} />
-        </button>
-        <div className="absolute top-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center"
-          style={{ background: 'rgba(139,92,246,0.15)' }}>
-          <Award size={22} className="text-ppurple" />
-        </div>
-      </div>
-
-      <div className="rounded-2xl p-4 relative overflow-hidden min-h-[120px] flex flex-col"
-        style={{
-          background: 'linear-gradient(135deg, rgba(59,130,246,0.12) 0%, var(--p-card) 60%)',
-          border: '1px solid rgba(59,130,246,0.3)',
-        }}>
-        <div className="flex-1">
-          <p className="text-[11px] text-pmuted font-medium">
-            {lang === 'ru' ? 'Мои аватары' : 'Mening avatarlarim'}
-          </p>
-          <p className="text-[24px] font-black text-pfg mt-1.5 mb-3">{avatars}</p>
-        </div>
-        <button
-          type="button"
-          onClick={onViewAvatars}
-          aria-label={lang === 'ru' ? 'Смотреть аватары' : "Avatarlarni ko'rish"}
-          className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-pblue/40 bg-transparent text-pblue text-[11px] font-semibold transition-all active:scale-95 hover:bg-pblue/5 focus:outline-none focus:ring-2 focus:ring-pblue/50 w-full">
-          <span>{lang === 'ru' ? 'Смотреть' : "Ko'rish"}</span>
-          <ArrowRight size={12} />
-        </button>
-        <div className="absolute top-3 right-3 w-10 h-10 rounded-lg flex items-center justify-center"
-          style={{ background: 'rgba(59,130,246,0.15)' }}>
-          <Image size={22} className="text-pblue" />
-        </div>
-      </div>
-    </div>
+      ))}
+    </>
   )
 }

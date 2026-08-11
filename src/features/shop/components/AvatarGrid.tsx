@@ -4,15 +4,7 @@ import type { ShopAvatar, AvatarCategory } from '../data'
 import { AVATAR_CATEGORIES } from '../data'
 import { CategoryFilter } from './CategoryFilter'
 import { PurchaseModal } from './PurchaseModal'
-
-const GRADIENTS = [
-  'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
-  'linear-gradient(135deg, #0f2027 0%, #203a43 100%)',
-  'linear-gradient(135deg, #1a0533 0%, #2d1b69 100%)',
-  'linear-gradient(135deg, #1b2838 0%, #1e3a5f 100%)',
-  'linear-gradient(135deg, #0d1f0d 0%, #1a3a1a 100%)',
-  'linear-gradient(135deg, #2d1b00 0%, #1a1200 100%)',
-]
+import { ShopImg } from './ShopImg'
 
 interface Props {
   avatars: ShopAvatar[]
@@ -55,18 +47,16 @@ export function AvatarGrid({ avatars, lang, balance, onPurchase }: Props) {
         lang={lang}
       />
 
-      <div className="grid grid-cols-3 gap-2.5 px-4 mt-3">
+      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-2.5 px-4 mt-3">
         {filtered.map((avatar, i) => (
           <button
             key={avatar.id}
             onClick={() => setSelected(avatar)}
-            className="rounded-2xl p-3 bg-pcard border border-pline flex flex-col items-center gap-2 active:scale-95 transition-transform opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards]"
+            className="rounded-2xl p-2 bg-pcard border border-pline flex flex-col items-center gap-1.5 active:scale-95 transition-transform opacity-0 animate-[fadeSlideUp_0.3s_ease_forwards]"
             style={{ animationDelay: `${i * 50}ms` }}
           >
-            <div className="w-14 h-14 rounded-xl flex items-center justify-center text-[28px] border border-white/5"
-              style={{ background: GRADIENTS[i % GRADIENTS.length] }}>
-              {avatar.image}
-            </div>
+            <ShopImg image={avatar.image} alt={lang === 'ru' ? avatar.nameRu : avatar.name}
+              className="w-full aspect-square rounded-xl object-cover border border-white/5 text-[28px]" />
             <p className="text-[11px] font-semibold text-pfg text-center truncate w-full">
               {lang === 'ru' ? avatar.nameRu : avatar.name}
             </p>

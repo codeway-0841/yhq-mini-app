@@ -3,6 +3,7 @@ import { X, Coins, Check, ShoppingBag } from 'lucide-react'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { playSound } from '../../../shared/lib/sounds'
+import { ShopImg } from './ShopImg'
 
 interface Props {
   name: string
@@ -43,12 +44,12 @@ export function PurchaseModal({ name, image, price, balance, lang, type, onClose
         {!purchased ? (
           <>
             {/* Preview */}
-            <div className="w-24 h-24 mx-auto rounded-2xl flex items-center justify-center text-[48px] mb-4"
+            <div className="w-24 h-24 mx-auto rounded-2xl flex items-center justify-center overflow-hidden mb-4"
               style={{
                 background: 'linear-gradient(135deg, rgba(139,92,246,0.15), rgba(59,130,246,0.15))',
                 border: '1px solid rgba(139,92,246,0.25)',
               }}>
-              {image}
+              <ShopImg image={image} alt={name} className="w-full h-full object-cover text-[48px] flex items-center justify-center" />
             </div>
 
             <h3 className="text-[16px] font-bold text-pfg text-center">{name}</h3>

@@ -42,6 +42,7 @@ export interface TokenPackage {
   id: string
   amount: number
   price: number
+  image: string
   discount?: number
 }
 
@@ -113,10 +114,10 @@ export const MOCK_BADGES: ShopBadge[] = [
 ]
 
 export const MOCK_PACKAGES: TokenPackage[] = [
-  { id: 'p1', amount: 1000, price: 10000 },
-  { id: 'p2', amount: 2500, price: 20000, discount: 10 },
-  { id: 'p3', amount: 5500, price: 40000, discount: 15 },
-  { id: 'p4', amount: 12000, price: 80000, discount: 20 },
+  { id: 'p1', amount: 1000, price: 10000, image: '/shop/ui/pkg1.png' },
+  { id: 'p2', amount: 2500, price: 20000, image: '/shop/ui/pkg2.png', discount: 10 },
+  { id: 'p3', amount: 5500, price: 40000, image: '/shop/ui/pkg3.png', discount: 15 },
+  { id: 'p4', amount: 12000, price: 80000, image: '/shop/ui/pkg4.png', discount: 20 },
 ]
 
 export const LEVEL_REWARDS = [

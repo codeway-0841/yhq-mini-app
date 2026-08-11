@@ -1,9 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Gift, Coins } from 'lucide-react'
 
 interface Props {
   lang: 'uz' | 'ru'
-  nextRewardTokens: number
   onClaim?: () => void | Promise<void>
 }
 
@@ -44,7 +42,7 @@ function markClaimed(): void {
   } catch { /* ignore */ }
 }
 
-export function DailyReward({ lang, nextRewardTokens, onClaim }: Props) {
+export function DailyReward({ lang, onClaim }: Props) {
   const { h, m, s } = useCountdown()
   const [claimed, setClaimed] = useState(isClaimedToday)
 
@@ -56,11 +54,7 @@ export function DailyReward({ lang, nextRewardTokens, onClaim }: Props) {
   }, [claimed, onClaim])
 
   return (
-    <div className="rounded-2xl p-4 relative overflow-hidden min-h-[120px] sm:w-[280px] flex flex-col justify-between"
-      style={{
-        background: 'linear-gradient(135deg, rgba(250,204,21,0.08) 0%, var(--p-card) 50%)',
-        border: '1px solid rgba(250,204,21,0.25)',
-      }}>
+    <div className="rounded-2xl p-4 relative overflow-hidden min-h-[130px] flex flex-col justify-between bg-pcard border border-pline">
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex-1">
           <h3 className="text-[13px] font-bold text-pfg">
@@ -70,7 +64,8 @@ export function DailyReward({ lang, nextRewardTokens, onClaim }: Props) {
             {lang === 'ru' ? 'Заходите каждый день и получайте токены!' : 'Har kuni kirib token oling!'}
           </p>
         </div>
-        <Gift size={24} className="text-pgold flex-shrink-0" />
+        <img src="/shop/ui/gift.png" alt="" loading="lazy" draggable={false}
+          className="w-12 h-12 object-contain flex-shrink-0 pointer-events-none" />
       </div>
 
       <div className="space-y-3">
@@ -105,16 +100,6 @@ export function DailyReward({ lang, nextRewardTokens, onClaim }: Props) {
             : (lang === 'ru' ? 'Получить подарок' : "Sovg'ani olish")
           }
         </button>
-
-        <div className="pt-2 border-t border-pline/50">
-          <p className="text-[9.5px] text-pmuted mb-1">
-            {lang === 'ru' ? 'Награда следующего уровня' : 'Keyingi daraja mukofoti'}
-          </p>
-          <div className="flex items-center gap-1">
-            <Coins size={14} className="text-pgold" />
-            <span className="text-[14px] font-black text-pgold">{nextRewardTokens.toLocaleString()} token</span>
-          </div>
-        </div>
       </div>
     </div>
   )
