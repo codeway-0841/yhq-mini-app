@@ -1,0 +1,1 @@
+CREATE INDEX "idx_daily_date" ON "daily_records" USING btree ("date");

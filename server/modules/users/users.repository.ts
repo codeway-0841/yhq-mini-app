@@ -21,18 +21,30 @@ export const referralsRepository = {
    * referee UNIQUE constraint ikkala rajotda ham bir marta hisoblanishini
    * kafolatlaydi; insert muvaffaqiyatli bo'lgan taqdirdagina UPDATE ishlaydi.
    */
-  async tryCreateWithReward(referrerId: string, refereeId: string, days: number): Promise<boolean> {
+  /**
+   * Referrerga reward CAP: referrer allaqachon `maxRewarded` ta mukofotlangan
+   * referallarga ega bo'lsa, yangi referee QAYD ETILADI lekin reward YO'Q
+   * (cheksiz referral-farming'ga qarshi — MB-5). Parallel ikki yangi referee
+   * ±1-2 oshib o'tishi mumkin (lock'siz count) — farming himoyasi BUZILMAYDI.
+   */
+  async tryCreateWithReward(referrerId: string, refereeId: string, days: number, maxRewarded: number): Promise<boolean> {
     const rows = await executeRows<{ rewarded: number }>(sql`
       WITH inserted AS (
         INSERT INTO referrals (referrer_id, referee_id)
         VALUES (${referrerId}, ${refereeId})
         ON CONFLICT (referee_id) DO NOTHING
         RETURNING referrer_id
+      ), existing AS (
+        -- DIQQAT: data-modifying CTE'lar snapshot'da ko'rinmaydi — bu ALDAQACHON
+        -- mavjud referallar soni (joriy insert HISOBGA olinmaydi) → n+1-chi reward = cap ichida
+        SELECT COUNT(*)::int AS n FROM referrals WHERE referrer_id = ${referrerId}
       ), rewarded AS (
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
           updated_at = now()
-        WHERE id = ${referrerId} AND EXISTS (SELECT 1 FROM inserted)
+        WHERE id = ${referrerId}
+          AND EXISTS (SELECT 1 FROM inserted)
+          AND (SELECT n FROM existing) < ${maxRewarded}::int
         RETURNING id
       )
       SELECT COUNT(*)::int AS rewarded FROM rewarded

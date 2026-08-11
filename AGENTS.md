@@ -38,7 +38,8 @@ server/
   modules/auth/    #   multi-provider auth: sessiyalar, identity'lar, link/adopt-merge
   providers/       #   QuestionBankProvider — fan bazalari (strategy + registry)
   middleware/      #   auth (DUAL: initData YOKI Bearer session → req.userId), cron-auth,
-                   #   validate (zod), rate-limiter, error-handler,
+                   #   validate (zod), rate-limiter (in-memory) + db-rate-limiter
+                   #   (auth endpoint'lar: prod'da Neon counter — multi-instance), error-handler,
                    #   readiness (/api/ready — DB ping), request-logger (JSON + X-Request-Id)
   octagon.ts       #   PvP duel (WebSocket, reconnect grace window)
 tests/

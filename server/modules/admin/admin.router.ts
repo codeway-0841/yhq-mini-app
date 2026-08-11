@@ -15,6 +15,7 @@ import { validate } from '../../middleware/validate'
 import { rateLimit } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
+import { reloadOctagonPools } from '../../octagon'
 import { db } from '../../db/connection'
 import { questions, questionExplanations, savedQuestions } from '../../schema'
 import { eq } from 'drizzle-orm'
@@ -55,26 +56,41 @@ type UpsertBody = z.infer<typeof QuestionUpsert>
 router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (req, res) => {
   const body = req.body as UpsertBody
 
-  // id yo'q bo'lsa — max(id)+1 (seed bilan bir xil strategiya)
-  let newId = body.id
-  if (newId == null) {
-    const [row] = await db.select({ maxId: sql<number>`COALESCE(MAX(${questions.id}), 0)` }).from(questions)
-    newId = row.maxId + 1
+  // id yo'q bo'lsa — max(id)+1 (seed bilan bir xil strategiya). Parallel admin
+  // so'rovlar bir xil max+1 hisoblab 23505 (PK/uq conflict) olishi mumkin —
+  // shunda id QAYTA hisoblanib qayta uriniladi (INSERT...RETURNING).
+  let newId: number | undefined = body.id
+  let insertedId: number | null = null
+  for (let attempt = 0; attempt < 3 && insertedId == null; attempt++) {
+    if (newId == null) {
+      const [row] = await db.select({ maxId: sql<number>`COALESCE(MAX(${questions.id}), 0)` }).from(questions)
+      newId = row.maxId + 1
+    }
+    try {
+      const [r] = await db.insert(questions).values({
+        id:            newId,
+        externalId:    String(newId),  // canonical identity: (bank_id, external_id)
+        questionUz:    body.questionUz,
+        questionRu:    body.questionRu,
+        optionsUz:     body.optionsUz,
+        optionsRu:     body.optionsRu,
+        correctAnswer: body.correctAnswer,
+        image:         body.image ?? null,
+        topicId:       body.topicId ?? null,
+      }).returning({ id: questions.id })
+      insertedId = r.id
+    } catch (err) {
+      // 23505 = unique_violation — faqat avto-id oqimida qayta hisoblanadi;
+      // aniq berilgan id konflikti (yoki boshqa xato) to'g'ridan-to'g'ri yuqoriga
+      if (body.id != null || (err as { code?: string })?.code !== '23505' || attempt === 2) throw err
+      newId = undefined
+    }
   }
-
-  await db.insert(questions).values({
-    id:            newId,
-    externalId:    String(newId),  // canonical identity: (bank_id, external_id)
-    questionUz:    body.questionUz,
-    questionRu:    body.questionRu,
-    optionsUz:     body.optionsUz,
-    optionsRu:     body.optionsRu,
-    correctAnswer: body.correctAnswer,
-    image:         body.image ?? null,
-    topicId:       body.topicId ?? null,
-  })
   questionsRepository.invalidateCache()
-  res.status(201).json({ id: newId, created: true })
+  // Octagon PvP pool staleness himoyasi (o'zgargan/o'chgan savol eski ko'rinishda qolmasin);
+  // xatolik savol saqlanishini BEKOR QILMAYDI — savol allaqachon bazada
+  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  res.status(201).json({ id: insertedId, created: true })
 }))
 
 // ── PUT /api/admin/questions/:id — tahrirlash ──
@@ -99,6 +115,7 @@ router.put('/admin/questions/:id', validate({ body: QuestionUpsert }), wrap(asyn
 
   if (updated.length === 0) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
+  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.json({ id, updated: true })
 }))
 
@@ -115,6 +132,7 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
 
   if (deleted.length === 0) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
+  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.status(204).send()
 }))
 

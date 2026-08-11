@@ -12,8 +12,9 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import request from 'supertest'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { users, progress, userSettings } from '../../../server/schema'
-import { eq } from 'drizzle-orm'
+import { users, progress, userSettings, referrals } from '../../../server/schema'
+import { eq, inArray, sql } from 'drizzle-orm'
+import { referralsRepository } from '../../../server/modules/users/users.repository'
 
 const app = createApp()
 
@@ -97,5 +98,68 @@ describe('GET /api/health', () => {
   it('returns ok without auth or DB user', async () => {
     const res = await request(app).get('/api/health').expect(200)
     expect(res.body.status).toBe('ok')
+  })
+})
+
+/**
+ * MB-5: referal mukofoti — atomik qayd + reward, bir martalik, referrer CAP.
+ */
+describe('Referal tizimi (MB-5)', () => {
+  const REFERRER = '999000111200'
+  const REF_IDS = ['999000111201', '999000111202', '999000111203']
+  const ALL = [REFERRER, ...REF_IDS]
+
+  beforeAll(async () => {
+    await db.delete(users).where(inArray(users.id, ALL))   // cascade: referrals ham
+    await request(app).post('/api/init').send({
+      id: REFERRER, first_name: 'Referrer', last_name: '', username: 'r_test', photo_url: '',
+    }).expect(200)
+  })
+  afterAll(async () => {
+    await db.delete(users).where(inArray(users.id, ALL))
+  })
+
+  it('yangi user ref_<id> bilan kirsa — referrer premium oladi (atomik)', async () => {
+    const res = await request(app).post('/api/init').send({
+      id: REF_IDS[0], first_name: 'Ref1', last_name: '', username: 'ref1', photo_url: '',
+      start_param: `ref_${REFERRER}`,
+    }).expect(200)
+    expect(res.body.user.id).toBe(REF_IDS[0])
+
+    const [r] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REFERRER))
+    expect(r?.premiumUntil).not.toBeNull()
+    expect(r!.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
+    const [cnt] = await db.select({ n: sql`COUNT(*)::int` })
+      .from(referrals).where(eq(referrals.referrerId, REFERRER))
+    expect(Number(cnt.n)).toBe(1)
+  })
+
+  it('mavjud user qayta init — referral takrorlanmaydi (faqat yangi user)', async () => {
+    await request(app).post('/api/init').send({
+      id: REF_IDS[0], first_name: 'Ref1', last_name: '', username: 'ref1', photo_url: '',
+      start_param: `ref_${REFERRER}`,
+    }).expect(200)
+    const [cnt] = await db.select({ n: sql`COUNT(*)::int` })
+      .from(referrals).where(eq(referrals.referrerId, REFERRER))
+    expect(Number(cnt.n)).toBe(1)
+  })
+
+  it('ikki martalik referee qayd + reward; referrer CAP — maxRewarded dan keyin reward YO\'Q', async () => {
+    // cap=2 bilan to'g'ridan-to'g'ri repo darajasida (prod konstantasi 50)
+    await request(app).post('/api/init').send({ id: REF_IDS[1], first_name: 'R2', last_name: '', username: 'r2', photo_url: '' }).expect(200)
+    await request(app).post('/api/init').send({ id: REF_IDS[2], first_name: 'R3', last_name: '', username: 'r3', photo_url: '' }).expect(200)
+
+    // 1-chi (yuqoridagi API orqali bo'lgan) + 2-chi: ikkalasi reward
+    const second = await referralsRepository.tryCreateWithReward(REFERRER, REF_IDS[1], 3, 2)
+    expect(second).toBe(true)
+    // Dublikat referee: UNIQUE conflict → qayta reward YO'Q
+    const dup = await referralsRepository.tryCreateWithReward(REFERRER, REF_IDS[1], 3, 2)
+    expect(dup).toBe(false)
+    // 3-chi referee: cap (2) oshdi → QAYD ETILADI lekin reward YO'Q
+    const third = await referralsRepository.tryCreateWithReward(REFERRER, REF_IDS[2], 3, 2)
+    expect(third).toBe(false)
+    const [cnt] = await db.select({ n: sql`COUNT(*)::int` })
+      .from(referrals).where(eq(referrals.referrerId, REFERRER))
+    expect(Number(cnt.n)).toBe(3)   // qayd bor, reward yo'q
   })
 })

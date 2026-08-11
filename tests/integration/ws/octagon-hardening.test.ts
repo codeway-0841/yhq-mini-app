@@ -126,3 +126,81 @@ describe('WS hardening', () => {
     ws2.terminate()
   })
 })
+
+/**
+ * Pauza byudjeti (griefing cap) — eski bug: connect-disconnect churn bilan
+ * o'yin CHEKSIZ pauza'da ushlab turilardi (har uzilish to'liq yangi grace
+ * oynasi ochardi). Endi o'yinchi boshiga jami pauza byudjeti bor: sarflangan
+ * grace vaqti ayiriladi, tugagach grace YO'Q — darhol forfeit.
+ */
+describe('Pauza byudjeti (disconnect-grace griefing cap)', () => {
+  const LIMITS: Partial<OctagonLimits> = {
+    authDeadlineMs: 5_000, heartbeatMs: 60_000,
+    msgWindowMs: 10_000, maxMsgsPerWindow: 50, maxConnsPerUser: 3,
+    reconnectWindowMs: 1_200, pauseBudgetMs: 2_000,
+  }
+
+  const logs = new Map<WebSocket, Record<string, unknown>[]>()
+  const buffer = (ws: WebSocket): void => {
+    logs.set(ws, [])
+    ws.on('message', (raw) => {
+      try { logs.get(ws)!.push(JSON.parse(raw.toString())) } catch { /* ignore */ }
+    })
+  }
+  function waitMsg(ws: WebSocket, type: string, timeoutMs = 8_000): Promise<Record<string, unknown>> {
+    return new Promise((resolve, reject) => {
+      const t = setTimeout(() => { clearInterval(p); reject(new Error(`"${type}" kutilmadi`)) }, timeoutMs)
+      const p = setInterval(() => {
+        const log = logs.get(ws)!
+        const idx = log.findIndex((m) => m['type'] === type)
+        if (idx >= 0) { clearInterval(p); clearTimeout(t); resolve(log.splice(idx, 1)[0]!) }
+      }, 20)
+    })
+  }
+
+  it('byudjet sarflangach — keyingi uzilish grace\'i QISCALIB forfeit tezlashadi', async () => {
+    const ts = await withServer({
+      authDeadlineMs: 5_000, heartbeatMs: 60_000,
+      msgWindowMs: 10_000, maxMsgsPerWindow: 50, maxConnsPerUser: 3,
+      reconnectWindowMs: 1_200, pauseBudgetMs: 1_700,
+    })
+    const a = await connect(ts); buffer(a); ts.clients.push(a)
+    const b = await connect(ts); buffer(b); ts.clients.push(b)
+    a.send(JSON.stringify({ type: 'join_queue', userId: '990010', name: 'Griefer' }))
+    b.send(JSON.stringify({ type: 'join_queue', userId: '990011', name: 'Victim' }))
+    await Promise.all([waitMsg(a, 'matched'), waitMsg(b, 'matched')])
+
+    // 1-chi uzilish: to'liq grace 1.2s (byudjet 1.7s dan kichik). 800ms'da qaytamiz
+    // → byudjet ~900ms qoladi (< 1.2s oyna).
+    a.terminate()
+    const wait1 = await waitMsg(b, 'opp_waiting')
+    expect(Number(wait1['waitSeconds'])).toBeGreaterThanOrEqual(1)
+    await new Promise((r) => setTimeout(r, 800))
+
+    const a2 = await connect(ts); buffer(a2); ts.clients.push(a2)
+    a2.send(JSON.stringify({ type: 'rejoin', matchId: 'x', userId: '990010', name: 'Griefer' }))
+    await waitMsg(a2, 'match_state')   // qayta kirdi — byudjet sarflandi
+
+    // 2-chi uzilish: qolgan byudjet (~900ms) < to'liq oyna (1.2s) — forfeit
+    // TO'LIQ oynadan ERTA kelishi shart (byudget'siz bo'lsa ~1.2s kutilardi).
+    const t0 = Date.now()
+    a2.terminate()
+    await waitMsg(b, 'opp_waiting')
+    await waitMsg(b, 'opp_disconnected')   // g'alaba rasmiylashdi
+    const elapsed = Date.now() - t0
+    expect(elapsed).toBeLessThan(1_150)    // to'liq 1200ms oynadan tezroq — byudjet ishladi
+    expect(elapsed).toBeGreaterThan(600)   // jinoyatchilik yo'qligini: pauza berildi
+  })
+
+  it('byudjet butunlay 0 bo\'lsa — grace umuman YO\'Q (darhol forfeit)', async () => {
+    const ts = await withServer({ ...LIMITS, pauseBudgetMs: 1 })
+    const a = await connect(ts); buffer(a); ts.clients.push(a)
+    const b = await connect(ts); buffer(b); ts.clients.push(b)
+    a.send(JSON.stringify({ type: 'join_queue', userId: '990012', name: 'Griefer2' }))
+    b.send(JSON.stringify({ type: 'join_queue', userId: '990013', name: 'Victim2' }))
+    await Promise.all([waitMsg(a, 'matched'), waitMsg(b, 'matched')])
+
+    a.terminate()   // byudjet 1ms ⇒ window = min(1200, 1) ≈ 0 → deyarli darhol forfeit
+    await waitMsg(b, 'opp_disconnected')
+  })
+})

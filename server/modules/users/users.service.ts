@@ -114,11 +114,16 @@ export const usersService = {
 
     // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
     // Qayd + mukofot bitta atomik statement'da (referrals UNIQUE — bir martalik).
+    // Reward xatosi ASOSIY init oqimini sindirmasligi kerak (mukofot ixtiyoriy).
     const refMatch = /^ref_(\d{1,19})$/.exec(raw.start_param ?? '')
     if (refMatch && !existing) {
-      const referrerId = refMatch[1]   // referallar Telegram-only (raqam-string id)
-      if (referrerId !== uid && await usersRepository.findById(referrerId)) {
-        await referralsRepository.tryCreateWithReward(referrerId, uid, REFERRAL_REWARD_DAYS)
+      try {
+        const referrerId = refMatch[1]   // referallar Telegram-only (raqam-string id)
+        if (referrerId !== uid && await usersRepository.findById(referrerId)) {
+          await referralsRepository.tryCreateWithReward(referrerId, uid, REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED)
+        }
+      } catch (err) {
+        console.error('[referral] reward xatosi (init davom etadi):', err)
       }
     }
 
@@ -150,3 +155,5 @@ export const usersService = {
 export const TRIAL_DAYS = 3
 /** Referrerga beriladigan mukofot (kun) — referee faqat 1 marta hisoblanadi */
 export const REFERRAL_REWARD_DAYS = 3
+/** Bitta referrer mukofot olishi mumkin bo'lgan MAKSIMAL referallar soni (farming himoyasi) */
+export const REFERRAL_MAX_REWARDED = 50

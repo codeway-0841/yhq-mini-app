@@ -19,7 +19,6 @@ import { parseUserId } from '../../utils/parse'
 import { db } from '../../db/connection'
 import { progress, dailyRecords, dailyStreaks } from '../../schema'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
-import { progressRepository } from '../progress/progress.repository'
 import { requireSelf } from '../../middleware/auth'
 
 const router = Router()
@@ -35,8 +34,8 @@ router.get(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    await progressRepository.ensureExists(uid)
-
+    // READ-ONLY: progressRepository.ensureExists yozuvi (INSERT) GET handler'dan
+    // o'chirildi — qator yo'q bo'lsa statistikalar 0 bilan qaytadi (pastda ?? 0).
     const [prog] = await db.select({
       totalCorrect:  progress.totalCorrect,
       totalAnswered: progress.totalAnswered,

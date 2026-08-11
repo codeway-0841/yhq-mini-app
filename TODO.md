@@ -3,13 +3,13 @@
 > Senior audit natijalari (2026-08-11). Bu fayl keyingi sessiyada davom etish uchun.
 > Buyruq: "TODO.md ni o'qib davom et" + istalganda "caveman ishlatib tur".
 
-## ⚠️ BIRINCHI: migratsiya + commit qilinmagan ish
+## ⚠️ Holat: deploy uchun tayyor
 
-Deploydan OLDIN prod DB'ni migrate qilish SHART:
-`DATABASE_URL="$PROD_URL" npx tsx server/migrate.ts` (0028 phone-normalize + 0029 otp attempts + **0030 session token hash** — user'lar logout bo'lmasligi uchun 0030 mavjud sessiyalarni joyida hash'laydi).
+Batch 3 commit+push EDILDI (3b2bca0 + c76f9fa). PROD DB 0028→0033 migrate qilingan
+(0031 idx_daily_date, 0032 league_rollover_log, 0033 rate_limits). 0028 residue (1 ta
+dublikat phone identity, bir xil user'dagi) ham tozalandi — endi 0 taalan qoldiq.
 
-Batch 3 (M10/L6 + frontend HIGH) workdir'da, COMMIT QILINMAGAN:
-`git status` → server/{config,utils,modules/auth}, migrations/0030*, src/** (outbox, useAppStore, TestPage, SpeedPage, AdaptivePage, useDuelConnection, 14 komponent selector), tests/**, i18n, .env.example, AGENTS.md, TODO.md.
+Medium batch workdir'da, COMMIT QILINMAGAN (davomiylik sessiyasi — quyida bajarilganlar).
 
 ## ✅ Tugatilgan (kontekst)
 
@@ -23,6 +23,7 @@ Batch 3 (M10/L6 + frontend HIGH) workdir'da, COMMIT QILINMAGAN:
 - **Journal tuzatildi:** 0027 bogus `when` 1786450000000 sababli keyingi migratsiyalar skip bo'lardi — zanjir tartiblangan (0028=...460000000, 0029=...470000000, 0030=...480000000)
 - Test DB migrate qilingan (0030 ham); integration 64/64, unit 160/160 o'tadi
 - **Batch 3 (2026-08-11, 2-sessiya):** M10 (session token sha256 → 0030) + L6 (`OTP_PEPPER` HMAC) + Frontend HIGH 5/5 + `.env.example` to'ldirildi (OTP_PEPPER/GEMINI_API_KEY/CRON_SECRET/TEST_DATABASE_URL)
+- **Medium batch (2026-08-11, 2-sessiya davomi):** backend MEDIUM 7/8 + frontend/config 4/6 + gigiyena 4/5. Migratsiyalar 0031 (idx_daily_date), 0032 (league_rollover_log), 0033 (rate_limits) — PROD+TEST migrate qilingan. Yangi testlar: cron 3, users/referal 3, ws pauza-byudjet 2, db-rate-limiter 3. Integration: 75/75, unit: 161/161.
 - Muhit: headroom 0.34.0 (proxy :8787, Task Scheduler), graphify 0.9.39 (skill + `graphify-out/` qurilgan), ponytail OpenCode plugin, context7 ikkala config'da
 
 ## 🔴 Qolgan HIGH
@@ -48,31 +49,32 @@ Joy: `progress.repository.ts` recordAnswer CTE + ehtimol yangi jadval (migratsiy
 ## 🟠 MEDIUM (tanlangan, tartib bilan)
 
 **Backend:**
-- Admin savol qo'shish `max(id)+1` race → `INSERT ... RETURNING` yoki serial (admin.router.ts:58)
-- `weeklyTop` umumiy scan → filtered join + `CREATE INDEX ON daily_records(date)` (leaderboard.repository.ts:83) — migratsiya bilan
-- `achievements` GET write qiladi (ensureExists) → read-only (achievements.router.ts:38)
-- `league-rollover` retry-safe emas → rollover journal/period guard (cron.router.ts)
-- Octagon: disconnect-grace griefing → o'yinchi boshiga pauza byudjeti/cap; admin CRUD'da `reloadOctagonPools()` (pool staleness)
-- Rate limiter multi-instance'da samarasiz → DB/Upstash counter (auth endpoint'lar birinchi)
-- Referal mukofotiga referrer CAP (users.service.ts:117) + initReferral catch
+- ✅ Admin savol qo'shish `max(id)+1` race → `INSERT ... RETURNING` + 23505 qayta urinish (Medium sessiya)
+- ✅ `weeklyTop` umumiy scan → filtered subquery join + `CREATE INDEX idx_daily_date` (0031, prod+test'da)
+- ✅ `achievements` GET write (`ensureExists`) O'CHIRILDI → read-only (progress yo'q bo'lsa `?? 0`)
+- ✅ `league-rollover` retry-safe: REJA jurnali `league_rollover_log` (0032, prod+test'da) + `league = from` guard + catch'da complete YO'Q (stale-lease retry) — kaskad bo'lmaydi. Test: 3 integration (`cron.test.ts`)
+- ✅ Octagon: pauza byudjeti o'yinchi boshi (OctagonLimits.pauseBudgetMs=90s; churn'da grace qisqarib forfeit, test 2 ta) + admin CRUD'da `reloadOctagonPools()`
+- ✅ Rate limiter multi-instance: `db-rate-limiter.ts` — auth router'ning BARCHA limiter'lari prod'da Neon atomik counter (`rate_limits` 0033), test/dev'da in-memory fallback; cron cleanup tozalaydi. Test: `db-rate-limiter.test.ts` (3). Qolgan limiter'lar (admin/analytics) hali in-memory — zarurat kam.
+- ✅ Referal mukofotiga referrer CAP=50 (`REFERRAL_MAX_REWARDED`, CTE'da count gate) + initReferral try/catch (init sindilmaydi). Test: users.test +3
 - Link/adopt FOR UPDATE Neon'da soxta edi — qisman yengillashtirildi (C4), qolgani CTE-guard'larda
 
 **Frontend/config:**
 - SettingsModal ikonkalar hardcoded rangda (qoida №8: neytral #94a3b8); ~59 joyda hardcoded hex (Onboarding, RoundScreen, LeaderboardPage...) → token'lar
-- Hardcoded matnlar → i18n: LoginPage.tsx:117,315,347,364,385 (`authTelegramLogin` kaliti BOR ishlatilmayapti!), Profil.tsx:70,93-101, useDuelConnection:48,164,205
+- ✅ LoginPage i18n (6 matn: `authTelegramLogin` + yangi authCodeExpired/authTelegramNotConfigured/authSmsCodeSent/authBack/authTgSharePhone, UZ+RU). Qolgan: Profil.tsx:70,93-101, useDuelConnection:48,164,205
 - Modal a11y: `role="dialog" aria-modal`, Escape, focus-trap — umumiy Sheet komponent
-- `yhq-session` `ACCOUNT_STORAGE_KEYS` ro'yxatiga (account.ts:25) yoki 401 && !initData → session-expired
+- ✅ `yhq-session` `ACCOUNT_STORAGE_KEYS` ro'yxatida (reset'da eski session ham o'chadi; event'siz — xavfsizlik tahlili bilan, MF-3)
 - `App.tsx:75` key={pathname} remount — faqat CSS transition qoldiring
-- Outbox getOutboxCount har render'da JSON.parse (Profil:38) — kesh
+- ✅ Outbox load() raw-string keshi — getOutboxCount har render'da JSON.parse QILMAYDI (MF-2)
 
 **Qurulma/gigiyena:**
 - ~~`.env.example`: GEMINI_API_KEY, CRON_SECRET, TEST_DATABASE_URL qo'shish~~ ✅ (Batch 3, OTP_PEPPER bilan birga); `.env`'dagi REDIS_URL o'lik
 - ~~`.gitignore`: `*.png` test skrinshotlari + `.playwright-mcp/`~~ ✅ (Batch 3)
-- `themes.test.ts`: dark+light bloklarni ALOHIDA assert; `migrations/meta/0001_snapshot.json` yo'q
-- Bo'sh test papkalari: tests/unit/lib|middleware|utils (middleware/ endi to'ldi)
-- Dead code: ForgotPasswordModal.tsx (faylni o'chirish), SpeedPage.tsx:110 no-op effect, OAuth stub'lar (yoki implement)
+- ✅ `themes.test.ts`: DARK va LIGHT bloklar ALOHIDA assert (sakura light-only = shartsiz canonical blok istisnosi hujjatlangan)
+- `migrations/meta/0001_snapshot.json` yo'q — MA'LUMOT: hand-made 0001 ni drizzle restore qilib bo'lmaydi; mid-chain snapshot hech qayerda o'qilmaydi (generate=tip, migrate=journal+sql). Soxta qo'lda yasash YO'Q — known-gap sifatida shu yerda hujjatlashtirilgan. AMALDA ZARARISIZ.
+- tests/unit/lib/ endi to'ldi (outbox.test.ts); bo'sh: —
+- Dead code: ~~ForgotPasswordModal.tsx (o'chirildi)~~, ~~SpeedPage.tsx:110 no-op effect (o'chirildi)~~; OAuth stub'lar (yoki implement — v2 stall)
 
-**Test qamrovi:** `daily`, `cron`, `achievements`, `analytics`, `dashboard`, `saved`, `settings` modullari testsiz → daily service fake-clock unit + cron endpoint 401/503 integration minimal.
+**Test qamrovi (qolgan):** `daily`, `achievements`, `analytics`, `dashboard`, `saved`, `settings` modullari testsiz → daily service fake-clock unit. ~~cron 401 minimal~~ ✅ (`cron.test.ts`: rollover + auth guard).
 
 ## 🔵 Tooling qoldig'i (ixtiyoriy)
 

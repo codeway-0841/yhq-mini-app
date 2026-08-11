@@ -16,7 +16,7 @@ import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
 import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords, progress, dailyStreaks, answerTokens } from '../../schema'
+import { dailyRecords, progress, dailyStreaks, answerTokens, leagueRolloverLog, rateLimits } from '../../schema'
 import { config } from '../../config'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
@@ -138,93 +138,113 @@ router.get('/cron/league-rollover', async (_req, res) => {
     return
   }
 
+  const lvl = (l: string) => {
+    const idx = LEAGUE_ORDER.indexOf(l as typeof LEAGUE_ORDER[number])
+    return Math.max(0, idx)  // Safety: invalid leagues default to 0 (bronze)
+  }
+  const up   = (l: string) => LEAGUE_ORDER[Math.min(LEAGUE_ORDER.length - 1, lvl(l) + 1)]
+  const down = (l: string) => LEAGUE_ORDER[Math.max(0, lvl(l) - 1)]
+
   try {
-    const rows = await db.select({
-      userId: progress.userId,
-      league: progress.league,
-      score:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)`,
-    }).from(progress)
-      .leftJoin(dailyRecords, and(
-        eq(dailyRecords.userId, progress.userId),
-        gte(dailyRecords.date, wPrev),
-        lt(dailyRecords.date, wThis),
-      ))
-      .groupBy(progress.userId, progress.league)
+    // 1) REJA — bu davr uchun allaqachon jurnalga yozilganmi? Crash'dan keyingi
+    // davom REJALASHTIRISHNI SKIP qiladi (aolda jarayon qayta-promote/demote
+    // kaskadiga olib kelardi: qayta ishga tushish JORIY liga'dan qayta hisoblardi).
+    let plan = await db.select({
+      userId:     leagueRolloverLog.userId,
+      fromLeague: leagueRolloverLog.fromLeague,
+      toLeague:   leagueRolloverLog.toLeague,
+    }).from(leagueRolloverLog).where(eq(leagueRolloverLog.periodKey, wPrev))
 
-    // Normalize invalid leagues to bronze and log data quality issues
-    const validLeagues = new Set(LEAGUE_ORDER)
-    const normalized = rows.map(r => {
-      const league = r.league || 'bronze'
-      if (!validLeagues.has(league as typeof LEAGUE_ORDER[number])) {
-        console.warn(`[league-rollover] Invalid league "${league}" for user ${r.userId}, normalizing to bronze`)
-        return { ...r, league: 'bronze' as const }
-      }
-      return { ...r, league: league as typeof LEAGUE_ORDER[number] }
-    })
+    let evaluated = 0
+    if (plan.length === 0) {
+      const rows = await db.select({
+        userId: progress.userId,
+        league: progress.league,
+        score:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)`,
+      }).from(progress)
+        .leftJoin(dailyRecords, and(
+          eq(dailyRecords.userId, progress.userId),
+          gte(dailyRecords.date, wPrev),
+          lt(dailyRecords.date, wThis),
+        ))
+        .groupBy(progress.userId, progress.league)
 
-    const lvl = (l: string) => {
-      const idx = LEAGUE_ORDER.indexOf(l as typeof LEAGUE_ORDER[number])
-      return Math.max(0, idx)  // Safety: invalid leagues default to 0 (bronze)
-    }
-    const up   = (l: string) => LEAGUE_ORDER[Math.min(LEAGUE_ORDER.length - 1, lvl(l) + 1)]
-    const down = (l: string) => LEAGUE_ORDER[Math.max(0, lvl(l) - 1)]
-
-    let promoted = 0, demoted = 0
-    const updates: Promise<unknown>[] = []
-
-    for (const league of LEAGUE_ORDER) {
-      const inLeague = normalized.filter((r) => r.league === league)
-      const active   = inLeague.filter((r) => Number(r.score) > 0)
-        .sort((a, b) => Number(b.score) - Number(a.score))
-
-      const n        = active.length
-      const promoteN = n >= 2 ? Math.max(1, Math.round(n * 0.3)) : 0
-      const demoteN  = n >= 3 ? Math.max(1, Math.round(n * 0.3)) : 0
-
-      active.forEach((r, i) => {
-        const currentLevel = lvl(r.league)
-        // Check promotion boundary first
-        if (i < promoteN && currentLevel < LEAGUE_ORDER.length - 1) {
-          const targetLeague = up(r.league)
-          if (targetLeague !== r.league) {
-            promoted++
-            updates.push(db.update(progress).set({ league: targetLeague, updatedAt: new Date() })
-              .where(eq(progress.userId, r.userId)))
-          }
+      // Normalize invalid leagues to bronze and log data quality issues
+      const validLeagues = new Set(LEAGUE_ORDER)
+      const normalized = rows.map(r => {
+        const league = r.league || 'bronze'
+        if (!validLeagues.has(league as typeof LEAGUE_ORDER[number])) {
+          console.warn(`[league-rollover] Invalid league "${league}" for user ${r.userId}, normalizing to bronze`)
+          return { ...r, league: 'bronze' as const }
         }
-        // Check demotion boundary
-        else if (i >= n - demoteN && currentLevel > 0) {
-          const targetLeague = down(r.league)
-          if (targetLeague !== r.league) {
-            demoted++
-            updates.push(db.update(progress).set({ league: targetLeague, updatedAt: new Date() })
-              .where(eq(progress.userId, r.userId)))
-          }
-        }
+        return { ...r, league: league as typeof LEAGUE_ORDER[number] }
       })
+      evaluated = normalized.length
 
-      // Umuman nofaol (0 ball) — bilanliga Bronze'dan yuqori bo'lsa tushadi
-      for (const r of inLeague.filter((x) => Number(x.score) === 0)) {
-        const currentLevel = lvl(r.league)
-        if (currentLevel > 0) {
-          const targetLeague = down(r.league)
-          if (targetLeague !== r.league) {
-            demoted++
-            updates.push(db.update(progress).set({ league: targetLeague, updatedAt: new Date() })
-              .where(eq(progress.userId, r.userId)))
+      const computed: Array<{ userId: string; fromLeague: string; toLeague: string }> = []
+      for (const league of LEAGUE_ORDER) {
+        const inLeague = normalized.filter((r) => r.league === league)
+        const active   = inLeague.filter((r) => Number(r.score) > 0)
+          .sort((a, b) => Number(b.score) - Number(a.score))
+
+        const n        = active.length
+        const promoteN = n >= 2 ? Math.max(1, Math.round(n * 0.3)) : 0
+        const demoteN  = n >= 3 ? Math.max(1, Math.round(n * 0.3)) : 0
+
+        active.forEach((r, i) => {
+          const currentLevel = lvl(r.league)
+          // Check promotion boundary first
+          if (i < promoteN && currentLevel < LEAGUE_ORDER.length - 1) {
+            const targetLeague = up(r.league)
+            if (targetLeague !== r.league) computed.push({ userId: r.userId, fromLeague: r.league, toLeague: targetLeague })
+          }
+          // Check demotion boundary
+          else if (i >= n - demoteN && currentLevel > 0) {
+            const targetLeague = down(r.league)
+            if (targetLeague !== r.league) computed.push({ userId: r.userId, fromLeague: r.league, toLeague: targetLeague })
+          }
+        })
+
+        // Umuman nofaol (0 ball) — liga Bronze'dan yuqori bo'lsa tushadi
+        for (const r of inLeague.filter((x) => Number(x.score) === 0)) {
+          const currentLevel = lvl(r.league)
+          if (currentLevel > 0) {
+            const targetLeague = down(r.league)
+            if (targetLeague !== r.league) computed.push({ userId: r.userId, fromLeague: r.league, toLeague: targetLeague })
           }
         }
       }
+
+      // Rejani BITTA atomik statement'da saqlaymiz — keyingi APPLY bosqichi
+      // crash'ga tushsa, qayta ishga tushirish SHU rejadan davom etadi.
+      if (computed.length > 0) {
+        await db.insert(leagueRolloverLog)
+          .values(computed.map((c) => ({ userId: c.userId, periodKey: wPrev, fromLeague: c.fromLeague, toLeague: c.toLeague })))
+          .onConflictDoNothing()
+        plan = computed
+      }
     }
 
-    await Promise.all(updates)
-    const result = { prevWeekStart: wPrev, users: normalized.length, promoted, demoted }
+    // 2) APPLY — har UPDATE JORIY liga plan'dagi `from`ga teng bo'lgandagina yuradi
+    // (guard): bajarilganlari idempotent skip; parallel CRON/apply ikki marta yozmaydi.
+    const applied = await Promise.all(plan.map((p) =>
+      db.update(progress)
+        .set({ league: p.toLeague, updatedAt: new Date() })
+        .where(and(eq(progress.userId, p.userId), eq(progress.league, p.fromLeague)))
+        .returning({ id: progress.userId })
+    ))
+    const appliedCount = applied.reduce((sum, rows) => sum + rows.length, 0)
+
+    const promoted = plan.filter((p) => lvl(p.toLeague) > lvl(p.fromLeague)).length
+    const demoted  = plan.filter((p) => lvl(p.toLeague) < lvl(p.fromLeague)).length
+    const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted }
     await cronRepository.complete('league-rollover', wPrev, result)
     res.json({ ok: true, ...result })
   } catch (err) {
-    await cronRepository.complete('league-rollover', wPrev, { error: String(err) }).catch((completeErr) => {
-      console.error('[league-rollover] Failed to mark job complete:', completeErr)
-    })
+    // RETRY-SAFE: davr 'completed'ga BELGILANMAYDI — jobRuns 'running' qoladi,
+    // stale-lease (1 soat) o'tgach keyingi trigger reja jurnalidan davom etadi.
+    // (Eski xatti-harakat: catch'da complete → qisman liga holati bir haftaga qotardi.)
+    console.error('[league-rollover] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
@@ -248,8 +268,13 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
     const result = await db.delete(answerTokens).where(lt(answerTokens.createdAt, cutoff))
     const deleted = result.rowCount ?? 0
 
-    await cronRepository.complete('cleanup-answer-tokens', today, { deleted })
-    res.json({ ok: true, deleted, cutoff: cutoff.toISOString() })
+    // rate_limits counter'lari: oynasi 1 soat+ eskirganlar (multi-instance limiter)
+    const rlCutoff = new Date(Date.now() - 3_600_000)
+    const rlResult = await db.delete(rateLimits).where(lt(rateLimits.windowStart, rlCutoff))
+    const rateLimitsDeleted = rlResult.rowCount ?? 0
+
+    await cronRepository.complete('cleanup-answer-tokens', today, { deleted, rateLimitsDeleted })
+    res.json({ ok: true, deleted, rateLimitsDeleted, cutoff: cutoff.toISOString() })
   } catch (err) {
     await cronRepository.complete('cleanup-answer-tokens', today, { error: String(err) }).catch(() => {})
     res.status(500).json({ ok: false, error: String(err) })

@@ -20,7 +20,8 @@
 import { Router } from 'express'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
-import { rateLimit } from '../../middleware/rate-limiter'
+// Multi-instance umumiy limiter: prod'da DB counter (Neon), test/dev'da in-memory
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { requireAuth } from '../../middleware/auth'
 import {
   authService,
@@ -32,8 +33,9 @@ import { z } from 'zod'
 
 const router = Router()
 
-/** Login urinishlari — IP bo'yicha 10/min (parol brute-force himoyasi) */
-const AUTH_LIMIT = { maxPerMinute: 10 }
+/** Login urinishlari — IP bo'yicha 10/min (parol brute-force himoyasi).
+ *  bucket: prod DB counter namespace (route method+path avtomatik ajratiladi). */
+const AUTH_LIMIT = { maxPerMinute: 10, bucket: 'auth' }
 
 // ── SMS OTP flow ────────────────────────────────────────────────────────────
 
@@ -133,7 +135,7 @@ router.post(
 // GET /api/auth/telegram-login/:code — polling (session tayyor bo'lganda qaytaradi)
 router.get(
   '/auth/telegram-login/:code',
-  rateLimit({ maxPerMinute: 30 }),
+  rateLimit({ maxPerMinute: 30, bucket: 'auth' }),
   wrap(async (req, res) => {
     // Express 5 params typing: string | string[] — wildcard bo'lmagan routeda string
     const code = String(req.params.code ?? '')
@@ -211,7 +213,7 @@ router.get(
 router.post(
   '/auth/resend-verification',
   requireAuth,
-  rateLimit({ maxPerMinute: 3 }),  // Stricter rate limit
+  rateLimit({ maxPerMinute: 3, bucket: 'auth' }),  // Stricter rate limit
   wrap(async (req, res) => {
     res.json(await authService.resendEmailVerification((req as { userId?: string }).userId!))
   }),
@@ -236,7 +238,7 @@ const ChangePasswordSchema = z.object({
 // POST /api/auth/forgot-password
 router.post(
   '/auth/forgot-password',
-  rateLimit({ maxPerMinute: 3 }),
+  rateLimit({ maxPerMinute: 3, bucket: 'auth' }),
   validate({ body: RequestPasswordResetSchema }),
   wrap(async (req, res) => {
     res.json(await authService.requestPasswordReset(req.body.email))

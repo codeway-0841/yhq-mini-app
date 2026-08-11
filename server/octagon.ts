@@ -41,7 +41,8 @@ const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
 const DUEL_TIMEOUT        = 5 * 60_000  // do'st linkni ochishi uchun uzoqroq — 5 daqiqa
 const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
 const MAX_NAME_LEN        = 64
-const RECONNECT_WINDOW_MS = 60_000  // raqib qaytish kutilishi (raqibga vaqt — 60s)
+// Reconnect grace oynasi + pauza byudjeti endi OctagonLimits'da (test-shrinkable):
+// DEFAULT_OCTAGON_LIMITS.reconnectWindowMs / pauseBudgetMs.
 
 /** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
 const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
@@ -82,6 +83,12 @@ export interface OctagonLimits {
   maxMsgsPerWindow: number
   /** Bir foydalanuvchiga parallel socketlar soni */
   maxConnsPerUser: number
+  /** Bir uzilish uchun grace oynasi (raqib shu kutadi — keyin forfeit) */
+  reconnectWindowMs: number
+  /** O'YINCHI BOSHI match'dagi jami pauza byudjeti (griefing himoyasi):
+   *  connect-disconnect churn bilan o'yinni cheksiz to'xtatib bo'lmasligi
+   *  uchun sarflangan grace vaqti yig'iladi; tugagach grace YO'Q — forfeit. */
+  pauseBudgetMs:   number
 }
 
 export const DEFAULT_OCTAGON_LIMITS: OctagonLimits = {
@@ -90,6 +97,8 @@ export const DEFAULT_OCTAGON_LIMITS: OctagonLimits = {
   msgWindowMs:      10_000,
   maxMsgsPerWindow: 50,
   maxConnsPerUser:  3,
+  reconnectWindowMs: 60_000,   // egy uzilish uchun raqib kutilishi (60s)
+  pauseBudgetMs:    90_000,    // match boshina JAMI pauza (~1.5 grace) — keyin forfeit
 }
 
 // ── Per-subject question pools ─────────────────────────────────────────────
@@ -127,12 +136,19 @@ interface Match {
   round:           number
   roundState:      RoundState | null
   disconnectTimer: ReturnType<typeof setTimeout> | null  // reconnect grace window
+  /** Joriy grace boshlangan vaqt — rejoin'da budget'dan ayirish uchun */
+  disconnectStartedAt: number | null
+  /** userId → qolgan pauza byudjeti (ms). Tugagan o'yinchi grace OLMAYDI (forfeit) */
+  pauseBudget:     Map<string, number>
   gapTimer:        ReturnType<typeof setTimeout> | null  // rounds orasidagi 1s pauza
 }
 
 // ── Module state ───────────────────────────────────────────────────────────
 
 let QUESTION_POOLS: OctagonPools = new Map()
+
+/** attachOctagon'da sozlangan AMALDAGI limitlar (testlar kichraytiradi) */
+let ACTIVE_LIMITS: OctagonLimits = DEFAULT_OCTAGON_LIMITS
 
 const queue:         Map<string, Player> = new Map()  // userId → Player
 const matches:       Map<string, Match>  = new Map()  // matchId → Match
@@ -181,7 +197,13 @@ function startMatch(p1: Player, p2: Player): void {
   const scores      = new Map([[p1.userId, 0], [p2.userId, 0]])
   const match: Match = {
     id: matchId, players: [p1, p2], pool, questionIds,
-    scores, round: 0, roundState: null, disconnectTimer: null, gapTimer: null,
+    scores, round: 0, roundState: null, disconnectTimer: null,
+    disconnectStartedAt: null,
+    pauseBudget: new Map([
+      [p1.userId, ACTIVE_LIMITS.pauseBudgetMs],
+      [p2.userId, ACTIVE_LIMITS.pauseBudgetMs],
+    ]),
+    gapTimer: null,
   }
 
   matches.set(matchId, match)
@@ -299,6 +321,20 @@ function cleanupMatch(match: Match): void {
   }
 }
 
+/** Grace oynasi tugadi (yoki pauza byudjeti qolmagani uchun grace berilmadi) —
+ *  diskonekt qilgan o'yinchi taslim; raqib +1 g'alaba (yutuq hisobi bilan). */
+function forfeitDisconnected(match: Match, userId: string): void {
+  const opp = match.players.find((p) => p.userId !== userId)
+  if (opp) {
+    send(opp.ws, { type: 'opp_disconnected' })
+    if (opp.userId !== '0') {
+      void progressRepository.addOctagonWin(opp.userId)
+        .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
+    }
+  }
+  cleanupMatch(match)
+}
+
 /**
  * Reconnect a player into their live match — replace dead socket, cancel the
  * forfeit timer, resync full state, notify the opponent. Returns false when
@@ -317,6 +353,13 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
   if (match.disconnectTimer) {
     clearTimeout(match.disconnectTimer)
     match.disconnectTimer = null
+  }
+  // Pauza byudjeti: sarflangan grace vaqtini ayiramiz (griefing cap) —
+  // qaytkan o'yinchi "yangi" to'liq oynani OLMAYDI.
+  if (match.disconnectStartedAt != null) {
+    const consumed = Date.now() - match.disconnectStartedAt
+    match.pauseBudget.set(userId, Math.max(0, (match.pauseBudget.get(userId) ?? 0) - consumed))
+    match.disconnectStartedAt = null
   }
 
   // RESUME: raund pauza'da bo'lgan bo'lsa — qolgan vaqtidan davom ettiriladi
@@ -370,11 +413,22 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
   const match = matches.get(matchId)
   if (!match || match.disconnectTimer) return   // already in the grace window
 
+  // PAUSE BYUDGETI (griefing himoyasi): connect-disconnect churn bilan o'yinni
+  // cheksiz to'xtatish mumkin edi — endi har o'yinchi match boshiga cheklangan
+  // pauza vaqtiga ega; byudjet tugagan → GRACE YO'Q, darhol forfeit.
+  const L = ACTIVE_LIMITS
+  const budgetLeft = match.pauseBudget.get(userId) ?? 0
+  if (budgetLeft <= 0) {
+    forfeitDisconnected(match, userId)
+    return
+  }
+  const windowMs = Math.min(L.reconnectWindowMs, budgetLeft)
+
   // Mid-match disconnect: give the player a grace window to come back.
-  // Round timers keep running — a rejoining player loses at most one round.
+  // Round PAUSED while waiting — rejoin shu joyidan davom etadi.
   const opponent = match.players.find((p) => p.userId !== userId)
   if (opponent) {
-    send(opponent.ws, { type: 'opp_waiting', waitSeconds: RECONNECT_WINDOW_MS / 1000 })
+    send(opponent.ws, { type: 'opp_waiting', waitSeconds: Math.ceil(windowMs / 1000) })
   }
 
   // PAUSE: o'yin to'xtatiladi — raqib qaytsa shu joyidan davom etadi
@@ -385,22 +439,16 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
     rs0.paused = true
   }
 
+  match.disconnectStartedAt = Date.now()
   match.disconnectTimer = setTimeout(() => {
     // Guard: check match still exists and player still disconnected (rejoin clears timer)
     if (!matches.has(matchId)) return  // match already cleaned up
     if (match.disconnectTimer === null) return  // rejoined, timer was cleared
     match.disconnectTimer = null
+    match.disconnectStartedAt = null
     // Never came back — opponent wins by forfeit (Yutuqlar uchun ham hisoblanadi).
-    const opp = match.players.find((p) => p.userId !== userId)
-    if (opp) {
-      send(opp.ws, { type: 'opp_disconnected' })
-      if (opp.userId !== '0') {
-        void progressRepository.addOctagonWin(opp.userId)
-          .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
-      }
-    }
-    cleanupMatch(match)
-  }, RECONNECT_WINDOW_MS)
+    forfeitDisconnected(match, userId)
+  }, windowMs)
 }
 
 // ── Queue join — extracted to handle re-join timer leak ───────────────────
@@ -499,6 +547,15 @@ export async function loadOctagonPools(): Promise<OctagonPools> {
   return pools
 }
 
+/**
+ * Admin savol CRUD'dan keyin in-memory pool'ni yangilash (staleness himoyasi):
+ * o'zgargan correctAnswer/o'chirilgan savol eski ko'rinishda qolmasligi uchun.
+ * attachOctagon'dan OLDIN chaqirilsa ham xavfsiz (KEYINGI attach qayta yozadi).
+ */
+export async function reloadOctagonPools(): Promise<void> {
+  QUESTION_POOLS = await loadOctagonPools()
+}
+
 export function attachOctagon(
   wss: WebSocketServer,
   pools: OctagonPools,
@@ -506,6 +563,7 @@ export function attachOctagon(
 ): void {
   QUESTION_POOLS = pools
   const L: OctagonLimits = { ...DEFAULT_OCTAGON_LIMITS, ...limits }
+  ACTIVE_LIMITS = L
 
   // ── Per-connection state + per-user connection cap ──────────────────────
   interface ConnState {

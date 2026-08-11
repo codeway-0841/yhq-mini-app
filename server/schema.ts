@@ -431,6 +431,43 @@ export const jobRuns = pgTable('job_runs', {
 ])
 
 /**
+ * DB-backed rate limit counter'lari — multi-instance (Vercel/Render replicalar)
+ * uchun UMUMIY oyna (in-memory Map har instance'da alohida edi — hujumchi
+ * replica soni × limit olardi). Fixed 60s oyna: bucket = '<limiter>:<route>:<ip>'.
+ * Eskirgan qatorlar kunlik cron tozalashi bilan o'chadi (window_start < 1 soat).
+ */
+export const rateLimits = pgTable('rate_limits', {
+  bucket:      text('bucket').primaryKey(),
+  count:       integer('count').notNull(),
+  windowStart: timestamp('window_start').notNull(),
+  createdAt:   timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_rate_limits_window').on(t.windowStart),
+])
+
+/**
+ * League rollover REJASI jurnali — cron rollover'ni retry-safe qiladi.
+ * Reja (user → from/to liga) avval BITTA atomik INSERT bilan shu yerga yoziladi;
+ * UPDATE'lar `progress.league = from_league` guard bilan bajariladi. Crash'dan
+ * keyingi qayta ishga tushirish rejalashtirishni SKIP qiladi (jurnal o'sha
+ * davrning aniq rejasini saqlaydi) — qayta-promote/demote bo'lmaydi.
+ * Xato bo'lsa jobRuns 'running' qoladi → stale-lease (1 soat) qayta urinishga
+ * ruxsat beradi; muvaffaqiyatda 'completed' (qayta o'ynamaydi).
+ */
+export const leagueRolloverLog = pgTable('league_rollover_log', {
+  id:         serial('id').primaryKey(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** Hafta boshi ('YYYY-MM-DD') — jobRuns.periodKey bilan bir xil */
+  periodKey:  text('period_key').notNull(),
+  fromLeague: text('from_league').notNull(),
+  toLeague:   text('to_league').notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_rollover_user_period').on(t.userId, t.periodKey),
+  index('idx_rollover_period').on(t.periodKey),
+])
+
+/**
  * AI Tutor kunlik foydalanish kvotasi — Gemini API cost control.
  * user_id = '0' qatori GLOBAL kunlik byudjetni bildiradi (FK yo'q — shu
  * sababli references ham yo'q); qolgan qatorlar haqiqiy user kvotasi.
@@ -482,6 +519,8 @@ export const dailyRecords = pgTable('daily_records', {
 }, (t) => [
   unique('uq_daily_record').on(t.userId, t.date, t.subjectId),
   index('idx_daily_user_date').on(t.userId, t.date),
+  // Leaderboard weeklyTop: date >= weekStart filtri + user_id bo'yicha agregatsiya
+  index('idx_daily_date').on(t.date),
   // Data integrity: answered/correct/fixed manfiy bo'lmasligi va correct answered'dan
   // oshmasligi shart (bug yoki xato requestdan shubhali statistika paydo bo'lmasin).
   check('chk_daily_record_nonnegative', sql`${t.answered} >= 0 AND ${t.fixed} >= 0`),

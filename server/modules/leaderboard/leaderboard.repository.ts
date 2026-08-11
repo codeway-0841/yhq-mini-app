@@ -80,20 +80,32 @@ export const leaderboardRepository = {
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
     const weekStart = weekStartTashkent()
 
+    // Filtered join: avval SO'NGGI hafta qatorlari agregatsiyalanadi (idx_daily_date),
+    // keyin users'ga biriktiriladi. Eski variant users × BUTUN daily_records cross
+    // product + CASE-filtr edi — jadval o'shganda to'liq scan'ga aylanardi.
+    const weeklyScores = db
+      .select({
+        userId: dailyRecords.userId,
+        score:  sql<number>`SUM(${dailyRecords.correct})`.as('score'),
+      })
+      .from(dailyRecords)
+      .where(sql`${dailyRecords.date} >= ${weekStart}`)
+      .groupBy(dailyRecords.userId)
+      .as('weekly_scores')
+
     const rows = await db
       .select({
         userId:    users.id,
         firstName: users.firstName,
         lastName:  users.lastName,
         league:    sql<string>`COALESCE(${progress.league}, 'bronze')`,
-        score:     sql<number>`COALESCE(SUM(CASE WHEN ${dailyRecords.date} >= ${weekStart} THEN ${dailyRecords.correct} ELSE 0 END), 0)`,
+        score:     sql<number>`COALESCE(${weeklyScores.score}, 0)`,
       })
       .from(users)
       .leftJoin(progress, eq(progress.userId, users.id))
-      .leftJoin(dailyRecords, eq(dailyRecords.userId, users.id))
-      .groupBy(users.id, users.firstName, users.lastName, progress.league, progress.totalCorrect)
+      .leftJoin(weeklyScores, eq(weeklyScores.userId, users.id))
       .orderBy(
-        desc(sql`COALESCE(SUM(CASE WHEN ${dailyRecords.date} >= ${weekStart} THEN ${dailyRecords.correct} ELSE 0 END), 0)`),
+        desc(sql`COALESCE(${weeklyScores.score}, 0)`),
         desc(sql`COALESCE(${progress.totalCorrect}, 0)`),
       )
       .limit(safeLimit)
