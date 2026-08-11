@@ -1,5 +1,5 @@
-import { useCallback } from 'react'
-import { Clock, HelpCircle } from 'lucide-react'
+import { useCallback, useEffect, useState } from 'react'
+import { Clock, HelpCircle, AlertCircle, X } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { StatsBar } from './components/StatsBar'
 import { DailyReward } from './components/DailyReward'
@@ -15,12 +15,47 @@ import { MOCK_PACKAGES } from './data'
 import type { AvatarCategory, MerchCategory } from './data'
 import PageLoader from '../../shared/components/PageLoader'
 
+function ErrorToast({ message, onDismiss }: { message: string; onDismiss: () => void }) {
+  useEffect(() => {
+    const t = setTimeout(onDismiss, 5000)
+    return () => clearTimeout(t)
+  }, [onDismiss])
+
+  return (
+    <div className="fixed top-4 left-4 right-4 z-50 flex items-center gap-2 px-4 py-3 rounded-xl bg-red-500/90 text-white text-[13px] font-medium shadow-lg animate-in slide-in-from-top">
+      <AlertCircle size={16} className="flex-shrink-0" />
+      <span className="flex-1 min-w-0 truncate">{message}</span>
+      <button onClick={onDismiss} className="flex-shrink-0 p-0.5 rounded hover:bg-white/20">
+        <X size={14} />
+      </button>
+    </div>
+  )
+}
+
+function EmptyState({ lang }: { lang: string }) {
+  return (
+    <div className="flex flex-col items-center justify-center py-12 px-6 text-center">
+      <div className="text-4xl mb-3">🏪</div>
+      <p className="text-[14px] font-semibold text-pfg">
+        {lang === 'ru' ? 'Скоро здесь появятся товары!' : "Tez kunda mahsulotlar paydo bo'ladi!"}
+      </p>
+      <p className="text-[12px] text-pmuted mt-1">
+        {lang === 'ru' ? 'Пока выполняйте задания и копите токены' : "Hozircha topshiriqlarni bajaring va tokenlar to'plang"}
+      </p>
+    </div>
+  )
+}
+
 export default function ShopPage() {
   const lang = useAppStore((s) => s.settings.language)
   const isPremium = useAppStore((s) => s.tariff === 'premium')
   const totalCorrect = useAppStore((s) => s.totalCorrect)
 
   const shop = useShop()
+  const [dismissedError, setDismissedError] = useState(false)
+  const dismissError = useCallback(() => setDismissedError(true), [])
+
+  useEffect(() => { setDismissedError(false) }, [shop.error])
 
   const ownedAvatars = [...shop.purchases].filter((id) =>
     shop.avatars.some((a) => a.id === id)
@@ -51,8 +86,14 @@ export default function ShopPage() {
 
   if (shop.loading) return <PageLoader />
 
+  const hasItems = shop.avatars.length > 0 || shop.merch.length > 0 || shop.badges.length > 0
+
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
+      {shop.error && !dismissedError && (
+        <ErrorToast message={shop.error} onDismiss={dismissError} />
+      )}
+
       {/* Header */}
       <div className="px-4 pt-5 pb-4">
         <div className="flex items-start justify-between gap-3 mb-2">
@@ -109,24 +150,31 @@ export default function ShopPage() {
         <LevelProgress totalCorrect={totalCorrect} lang={lang} />
       </div>
 
-      {/* Avatar Shop */}
-      <AvatarGrid avatars={shop.avatars.map((a) => ({
-        id: a.id, name: a.nameUz, nameRu: a.nameRu, image: a.image,
-        price: a.price, category: a.category as AvatarCategory,
-      }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
+      {hasItems ? (
+        <>
+          {/* Avatar Shop */}
+          <div id="avatars-section">
+          <AvatarGrid avatars={shop.avatars.map((a) => ({
+            id: a.id, name: a.nameUz, nameRu: a.nameRu, image: a.image,
+            price: a.price, category: a.category as AvatarCategory,
+          }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
 
-      {/* Merch Shop */}
-      <MerchGrid items={shop.merch.map((m) => ({
-        id: m.id, name: m.nameUz, nameRu: m.nameRu, image: m.image,
-        price: m.price, category: m.category as MerchCategory,
-      }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
+          {/* Merch Shop */}
+          <MerchGrid items={shop.merch.map((m) => ({
+            id: m.id, name: m.nameUz, nameRu: m.nameRu, image: m.image,
+            price: m.price, category: m.category as MerchCategory,
+          }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
 
-      {/* Badges */}
-      <div id="badges-section">
-        <BadgeRow badges={shop.badges.map((b) => ({
-          id: b.id, name: b.nameUz, nameRu: b.nameRu, icon: b.image, price: b.price,
-        }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
-      </div>
+          {/* Badges */}
+          <div id="badges-section">
+            <BadgeRow badges={shop.badges.map((b) => ({
+              id: b.id, name: b.nameUz, nameRu: b.nameRu, icon: b.image, price: b.price,
+            }))} lang={lang} balance={shop.balance} onPurchase={handlePurchase} />
+          </div>
+        </>
+      ) : (
+        <EmptyState lang={lang} />
+      )}
 
       {/* Token Packages */}
       <div id="token-packages">

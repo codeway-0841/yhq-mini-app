@@ -9,6 +9,7 @@ import { validate }             from '../../middleware/validate'
 import { parseUserId }          from '../../utils/parse'
 import { rateLimit }            from '../../middleware/rate-limiter'
 import { progressRepository }   from './progress.repository'
+import { tokenService }         from '../shop/token.service'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
@@ -52,12 +53,19 @@ router.post(
     // client feedback uchun FAQAT javob bergandan keyin shu yerda oladi.
     // (Reveal "bepul" emas: har reveal attempt sifatida hisobga olingan.)
     if (duplicate) {
-      // Replay: counterlar yozilmadi — reveal HAM qaytarilmaydi. Aks holda bitta
-      // clientToken'ni aylantirib stat hisoblamasdan kalit yig'ish mumkin edi.
       res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
       return
     }
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
+
+    // Token reward — detached from request lifecycle, must not affect response
+    if (correct) {
+      setImmediate(() => {
+        tokenService.onCorrectAnswer(uid).catch((err) => {
+          console.error('[token] onCorrectAnswer failed:', uid, err)
+        })
+      })
+    }
   }),
 )
 

@@ -131,6 +131,15 @@ export const shopRepository = {
     if (!claimed) throw new AppError(400, 'Already claimed today')
 
     const newBalance = await this.addTokens(userId, tokens, 'daily', `daily_${today}`)
+
+    // Lazy-import to avoid circular dependency
+    const { tokenService } = await import('./token.service')
+    setImmediate(() => {
+      tokenService.onDailyLogin(userId).catch((err) => {
+        console.error('[token] onDailyLogin failed:', userId, err)
+      })
+    })
+
     return { tokens, streak: newStreak, newBalance }
   },
 
