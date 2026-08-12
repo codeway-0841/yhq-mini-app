@@ -159,7 +159,7 @@ export default function Dashboard() {
           />
 
           {/* 4. Quick Actions (main grid) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 px-5 mb-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 px-5 mb-6">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
