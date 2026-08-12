@@ -139,7 +139,7 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
   }, [])
 
   return (
-    <div className="mb-4">
+    <div className="mb-6">
       <div ref={trackRef} onScroll={onScroll}
         className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 [&::-webkit-scrollbar]:hidden"
         style={{ scrollbarWidth: 'none' }}>
@@ -152,7 +152,7 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
         ))}
       </div>
       {/* Pagination dots */}
-      <div className="flex items-center justify-center gap-1.5 mt-2.5">
+      <div className="flex items-center justify-center gap-1.5 mt-3">
         {SLIDES.map((_, i) => (
           <button key={i} type="button" onClick={() => goTo(i)}
             aria-label={`Slide ${i + 1}`}

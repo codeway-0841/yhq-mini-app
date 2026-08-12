@@ -159,7 +159,7 @@ export default function Dashboard() {
           />
 
           {/* 4. Quick Actions (main grid) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 px-5 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-7">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
@@ -176,10 +176,10 @@ export default function Dashboard() {
           </div>
 
           {/* 5. Modes */}
-          <div className="px-5 mb-2">
+          <div className="px-5 mb-2.5">
             <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 px-5 mb-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-7">
             <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
             <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
             <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
