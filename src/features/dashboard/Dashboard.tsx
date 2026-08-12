@@ -19,7 +19,6 @@ import { TopBar } from './components/TopBar'
 import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
 import { GridCard, MockGridCard } from './components/GridCards'
-import { ContinueCard } from './components/ContinueCard'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectSwitcher, SubjectEmpty } from './components/SubjectSwitcher'
@@ -157,16 +156,6 @@ export default function Dashboard() {
             totalPool={questionsCount}
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
-          />
-
-          {/* 3. Continue Learning */}
-          <ContinueCard
-            modTitle={settings.language === 'ru' ? continueInfo.mod.titleRu : continueInfo.mod.title}
-            lessonLabel={continueInfo.lessonLabel}
-            progressPct={continueInfo.pct}
-            allDone={continueInfo.allDone}
-            lang={settings.language}
-            onContinue={continueInfo.go}
           />
 
           {/* 4. Quick Actions (main grid) */}
