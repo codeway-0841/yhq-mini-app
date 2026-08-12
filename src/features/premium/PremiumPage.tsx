@@ -20,11 +20,11 @@ import { track } from '../../shared/lib/analytics'
 import Confetti from '../../shared/components/Confetti'
 
 const BENEFITS = [
-  { icon: Sparkles,  color: '#facc15', uz: 'Reklamasiz tajriba',          ru: 'Без рекламы' },
-  { icon: Bot,       color: '#8b5cf6', uz: 'AI Tutor — chuqur tushuntirishlar', ru: 'ИИ-тьютор — подробные объяснения' },
-  { icon: Palette,   color: '#5be300', uz: `${ACCENT_THEMES.filter((t) => t.premium).length} ta eksklyuziv tema`, ru: `${ACCENT_THEMES.filter((t) => t.premium).length} эксклюзивных тем` },
-  { icon: HeartCrack, color: '#ef4444', uz: "Xatolar bo'yicha chuqur tahlil", ru: 'Глубокий анализ ошибок' },
-  { icon: Zap,       color: '#3b82f6', uz: 'Cheksiz mashq rejimlari',     ru: 'Безлимитные режимы практики' },
+  { icon: Sparkles,   color: 'var(--p-gold)',    uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
+  { icon: Bot,        color: 'var(--p-purple)',  uz: 'AI Tutor — chuqur tushuntirishlar', ru: 'ИИ-тьютор — подробные объяснения' },
+  { icon: Palette,    color: 'var(--p-primary)', uz: `${ACCENT_THEMES.filter((t) => t.premium).length} ta eksklyuziv tema`, ru: `${ACCENT_THEMES.filter((t) => t.premium).length} эксклюзивных тем` },
+  { icon: HeartCrack, color: 'var(--p-danger)',  uz: "Xatolar bo'yicha chuqur tahlil",       ru: 'Глубокий анализ ошибок' },
+  { icon: Zap,        color: 'var(--p-blue)',    uz: 'Cheksiz mashq rejimlari',            ru: 'Безлимитные режимы практики' },
 ]
 
 export default function PremiumPage() {

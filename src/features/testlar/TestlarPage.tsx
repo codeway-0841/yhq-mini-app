@@ -42,9 +42,9 @@ export default function TestlarPage() {
     : 0
 
   const DIFF: Record<Diff, { label: string; color: string }> = {
-    easy: { label: tt('diffEasy'), color: '#22c55e' },
-    mid:  { label: tt('diffMid'),  color: '#f59e0b' },
-    hard: { label: tt('diffHard'), color: '#ef4444' },
+    easy: { label: tt('diffEasy'), color: 'var(--p-success)' },
+    mid:  { label: tt('diffMid'),  color: 'var(--p-warning)' },
+    hard: { label: tt('diffHard'), color: 'var(--p-danger)' },
   }
 
   // Rasmiy imtihon simulyatori — fan konfigidan (shared/subjects.ts examPresets).
@@ -102,8 +102,8 @@ export default function TestlarPage() {
         {cards.map((m) => {
           const d = DIFF[m.diff]
           // Rang intizomi (v2.1): neytral kulrang default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
-          const boxColor = m.danger ? '#ef4444' : '#94a3b8'
-          const ringColor = m.danger ? '#ef4444' : 'var(--p-primary)'
+          const boxColor = m.danger ? 'var(--p-danger)' : '#94a3b8'
+          const ringColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R
           const off = C * (1 - accuracy / 100)

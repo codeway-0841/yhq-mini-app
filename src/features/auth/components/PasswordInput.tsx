@@ -15,14 +15,14 @@ interface PasswordInputProps {
 
 function getPasswordStrength(password: string): { level: 0 | 1 | 2 | 3 | 4; label: string; barColor: string; textColor: string } {
   if (password.length === 0) return { level: 0, label: '', barColor: '', textColor: '' }
-  if (password.length < 8) return { level: 1, label: 'Zaif', barColor: 'bg-red-500', textColor: 'text-red-600' }
+  if (password.length < 8) return { level: 1, label: 'Zaif', barColor: 'bg-pdanger', textColor: 'text-pdanger' }
 
   const hasNumber = /\d/.test(password)
   const hasSymbol = /[!@#$%^&*(),.?":{}|<>]/.test(password)
 
-  if (password.length >= 8 && !hasNumber) return { level: 2, label: "O'rtacha", barColor: 'bg-yellow-500', textColor: 'text-yellow-600' }
-  if (password.length >= 8 && hasNumber && !hasSymbol) return { level: 3, label: 'Kuchli', barColor: 'bg-green-500', textColor: 'text-green-600' }
-  return { level: 4, label: 'Juda kuchli', barColor: 'bg-blue-500', textColor: 'text-blue-600' }
+  if (password.length >= 8 && !hasNumber) return { level: 2, label: "O'rtacha", barColor: 'bg-pwarning', textColor: 'text-pwarning' }
+  if (password.length >= 8 && hasNumber && !hasSymbol) return { level: 3, label: 'Kuchli', barColor: 'bg-psuccess', textColor: 'text-psuccess' }
+  return { level: 4, label: 'Juda kuchli', barColor: 'bg-pblue', textColor: 'text-pblue' }
 }
 
 export default function PasswordInput({
@@ -103,11 +103,11 @@ export default function PasswordInput({
 
           {/* Requirements Checklist */}
           <div className="flex flex-col gap-1 text-[11px]">
-            <div className={`flex items-center gap-1.5 ${hasMinLength ? 'text-green-600' : 'text-muted'}`}>
+            <div className={`flex items-center gap-1.5 ${hasMinLength ? 'text-psuccess' : 'text-muted'}`}>
               <span>{hasMinLength ? '✓' : '○'}</span>
               <span>Kamida 8 belgi</span>
             </div>
-            <div className={`flex items-center gap-1.5 ${hasNumber ? 'text-green-600' : 'text-muted'}`}>
+            <div className={`flex items-center gap-1.5 ${hasNumber ? 'text-psuccess' : 'text-muted'}`}>
               <span>{hasNumber ? '✓' : '○'}</span>
               <span>Kamida 1 raqam</span>
             </div>

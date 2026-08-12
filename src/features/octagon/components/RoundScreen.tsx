@@ -28,7 +28,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
             className="h-full rounded-full transition-colors duration-300"
             style={{
               width: `${roundPct * 100}%`,
-              background: roundPct > 0.5 ? 'var(--p-primary)' : roundPct > 0.25 ? '#f59e0b' : '#ef4444',
+              background: roundPct > 0.5 ? 'var(--p-primary)' : roundPct > 0.25 ? 'var(--p-warning)' : 'var(--p-danger)',
             }}
           />
         </div>
@@ -36,12 +36,12 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
       <p className="text-xs text-muted mb-1 text-center">
         {tt('round')} {roundIndex + 1} / {roundCount}
         {timeLeft !== null && (
-          <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-red-400 animate-pulse' : 'text-duo-blue'}`}>
+          <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-pdanger animate-pulse' : 'text-duo-blue'}`}>
             ⏱ {timeLeft}s
           </span>
         )}
         {oppAnswered && !selected && (
-          <span className="ml-2 text-orange-400">• Raqib javob berdi</span>
+          <span className="ml-2 text-pwarning">• Raqib javob berdi</span>
         )}
       </p>
       <p className="text-base font-semibold text-center mb-5 leading-snug">{q.text}</p>
@@ -58,11 +58,11 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
         const showCorrect = answered && ackCorrectOptionId !== null && opt.id === ackCorrectOptionId
         const style =
           !answered      ? 'bg-surface border-line text-fg' :
-          showCorrect    ? 'bg-green-500/15 border-green-500 text-fg' :
-          isSelected && ackCorrect === true ? 'bg-green-500/20 border-green-500 text-fg' :
+          showCorrect    ? 'bg-psuccess/15 border-psuccess text-fg' :
+          isSelected && ackCorrect === true ? 'bg-psuccess/20 border-psuccess text-fg' :
           // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
           isSelected && ackCorrect === null ? 'bg-duo-blue/10 border-duo-blue/60 text-fg' :
-          isSelected    ? 'bg-red-500/15   border-red-500   text-fg' :
+          isSelected    ? 'bg-pdanger/15   border-pdanger   text-fg' :
                           'bg-surface border-line text-muted'
         return (
           <button key={opt.id} disabled={answered} onClick={() => onAnswer(opt.id)}

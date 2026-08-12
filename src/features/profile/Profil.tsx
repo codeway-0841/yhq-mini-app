@@ -117,7 +117,7 @@ export default function Profil() {
           className="flex items-center gap-1.5 text-[11px] text-muted bg-elevated px-3 py-1 rounded-full active:scale-95 transition-transform"
         >
           <span>ID: {userId}</span>
-          {copied ? <Check size={11} className="text-green-400" /> : <Copy size={11} />}
+          {copied ? <Check size={11} className="text-psuccess" /> : <Copy size={11} />}
         </button>
       </div>
 
@@ -150,7 +150,7 @@ export default function Profil() {
           label={tt('addPhone')}
           right={
             user?.phone
-              ? <span className="text-[12px] text-green-400">{user.phone}</span>
+              ? <span className="text-[12px] text-psuccess">{user.phone}</span>
               : phoneLoading
                 ? <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
                 : <span className="text-[12px] text-muted">Qo'shish</span>

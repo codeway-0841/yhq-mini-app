@@ -132,7 +132,7 @@ export function LinkAccountSection() {
   const loadingRow = (
     <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
   )
-  const linkedRow = <span className="text-[12px] text-green-400">{tt('authLinked')}</span>
+  const linkedRow = <span className="text-[12px] text-psuccess">{tt('authLinked')}</span>
 
   return (
     <Section title={tt('authLinkAccount')}>
@@ -159,7 +159,7 @@ export function LinkAccountSection() {
           providers === null
             ? loadingRow
             : providers.includes('phone')
-              ? <span className="text-[12px] text-green-400">{user.phone ?? tt('authLinked')}</span>
+              ? <span className="text-[12px] text-psuccess">{user.phone ?? tt('authLinked')}</span>
               : <span className="text-[12px] text-muted">{phoneOpen ? '–' : tt('authLinkPhone')}</span>
         }
         onPress={providers?.includes('phone') ? undefined : () => setPhoneOpen((o) => !o)}
@@ -219,7 +219,7 @@ export function LinkAccountSection() {
               onClick={copyCode}
               className="w-9 h-9 rounded-lg bg-elevated border border-line flex items-center justify-center active:scale-95 transition-transform"
             >
-              {copied ? <Check size={14} className="text-green-400" /> : <Copy size={14} className="text-muted" />}
+              {copied ? <Check size={14} className="text-psuccess" /> : <Copy size={14} className="text-muted" />}
             </button>
           </div>
           <p className="text-[10.5px] text-muted">{tt('authCodeExpires')}</p>
@@ -228,7 +228,7 @@ export function LinkAccountSection() {
 
       {/* Xato / muvaffaqiyat xabarlari */}
       {error && <p className="px-4 pb-3 text-[12px] font-semibold text-duo-red">{error}</p>}
-      {okMsg && <p className="px-4 pb-3 text-[12px] font-semibold text-green-400">{okMsg}</p>}
+      {okMsg && <p className="px-4 pb-3 text-[12px] font-semibold text-psuccess">{okMsg}</p>}
 
       {/* ── Logout (faqat Bearer sessiya bilan kirganlarda) ── */}
       {!isTelegram && hasSession && (

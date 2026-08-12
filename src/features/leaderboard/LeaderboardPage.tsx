@@ -117,7 +117,7 @@ export default function LeaderboardPage() {
       <div className="flex items-center gap-2 px-4 pt-4 pb-3 border-b border-line">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="text-muted hover:text-fg text-xl px-1">←</button>
-        <Trophy size={20} className="text-yellow-400" />
+        <Trophy size={20} className="text-pgold" />
         <h1 className="text-lg font-black">{tt('leaderboard')}</h1>
       </div>
 
@@ -227,7 +227,7 @@ export default function LeaderboardPage() {
                       )}
                     </p>
                     {entry.streak > 0 && (
-                      <p className="text-[11px] text-orange-400">🔥 {entry.streak} {tt('streakCol')}</p>
+                      <p className="text-[11px] text-pwarning">🔥 {entry.streak} {tt('streakCol')}</p>
                     )}
                   </div>
                   <span className="text-sm font-bold text-pprimary">{entry.score}</span>

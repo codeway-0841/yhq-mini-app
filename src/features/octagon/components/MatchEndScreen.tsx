@@ -22,7 +22,7 @@ export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, 
         </div>
         <div className="text-line text-3xl self-center">:</div>
         <div className="text-center">
-          <p className="text-red-400 text-3xl">{oppScore}</p>
+          <p className="text-pdanger text-3xl">{oppScore}</p>
           <p className="text-xs text-muted mt-1">{opponentName}</p>
         </div>
       </div>

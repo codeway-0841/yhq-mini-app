@@ -4,12 +4,12 @@ import { api, type TokenTransaction } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 
 const TYPE_META: Record<string, { icon: LucideIcon; label: { uz: string; ru: string }; color: string }> = {
-  task:     { icon: Star,         label: { uz: 'Topshiriq', ru: 'Задание' },     color: 'text-yellow-500' },
-  daily:    { icon: Gift,         label: { uz: 'Kundalik', ru: 'Ежедневное' },   color: 'text-green-500' },
-  purchase: { icon: ShoppingBag,  label: { uz: 'Xarid', ru: 'Покупка' },         color: 'text-red-400' },
-  level_up: { icon: TrendingUp,   label: { uz: 'Level up', ru: 'Уровень' },      color: 'text-blue-500' },
-  refund:   { icon: RotateCcw,    label: { uz: 'Qaytarish', ru: 'Возврат' },     color: 'text-orange-400' },
-  package:  { icon: Package,      label: { uz: 'Paket', ru: 'Пакет' },           color: 'text-purple-500' },
+  task:     { icon: Star,         label: { uz: 'Topshiriq', ru: 'Задание' },     color: 'text-pgold' },
+  daily:    { icon: Gift,         label: { uz: 'Kundalik', ru: 'Ежедневное' },   color: 'text-psuccess' },
+  purchase: { icon: ShoppingBag,  label: { uz: 'Xarid', ru: 'Покупка' },         color: 'text-pdanger' },
+  level_up: { icon: TrendingUp,   label: { uz: 'Level up', ru: 'Уровень' },      color: 'text-pblue' },
+  refund:   { icon: RotateCcw,    label: { uz: 'Qaytarish', ru: 'Возврат' },     color: 'text-pwarning' },
+  package:  { icon: Package,      label: { uz: 'Paket', ru: 'Пакет' },           color: 'text-ppurple' },
 }
 
 function formatDate(iso: string, lang: string): string {
@@ -65,7 +65,7 @@ export function TokenHistory({ onClose }: Props) {
             <div className="w-6 h-6 border-2 border-pprimary border-t-transparent rounded-full animate-spin" />
           </div>
         ) : error ? (
-          <div className="text-center py-12 text-red-400 text-[13px]">{error}</div>
+          <div className="text-center py-12 text-pdanger text-[13px]">{error}</div>
         ) : history.length === 0 ? (
           <div className="text-center py-12 text-pmuted text-[13px]">
             {lang === 'ru' ? 'Пока нет операций' : "Hozircha amallar yo'q"}
@@ -87,7 +87,7 @@ export function TokenHistory({ onClose }: Props) {
                     </p>
                     <p className="text-[11px] text-pmuted">{formatDate(tx.createdAt, lang)}</p>
                   </div>
-                  <span className={`text-[14px] font-bold ${positive ? 'text-green-500' : 'text-red-400'}`}>
+                  <span className={`text-[14px] font-bold ${positive ? 'text-psuccess' : 'text-pdanger'}`}>
                     {positive ? '+' : ''}{tx.amount.toLocaleString()}
                   </span>
                 </div>

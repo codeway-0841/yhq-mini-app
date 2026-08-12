@@ -15,9 +15,9 @@ function EFBadge({ card }: { card: SRCard | undefined }) {
   if (!card) return null
   const ef    = card.ef
   const label = ef >= 2.2 ? 'Oson' : ef >= 1.7 ? "O'rta" : 'Qiyin'
-  const cls   = ef >= 2.2 ? 'bg-green-500/12 text-psuccess'
-              : ef >= 1.7 ? 'bg-yellow-500/12 text-pwarning'
-              :              'bg-red-500/12 text-pdanger'
+  const cls   = ef >= 2.2 ? 'bg-psuccess/12 text-psuccess'
+              : ef >= 1.7 ? 'bg-pwarning/12 text-pwarning'
+              :              'bg-pdanger/12 text-pdanger'
   return <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${cls}`}>{label}</span>
 }
 
@@ -28,8 +28,8 @@ function Option({ id, text, state, onSelect, answered }: {
 }) {
   const base  = 'w-full text-left rounded-xl border p-3.5 transition-all active:scale-[0.98]'
   const style =
-    state === 'correct' ? 'bg-green-500/15 border-green-500 text-fg' :
-    state === 'wrong'   ? 'bg-red-500/15   border-red-500   text-fg' :
+    state === 'correct' ? 'bg-psuccess/15 border-psuccess text-fg' :
+    state === 'wrong'   ? 'bg-pdanger/15   border-pdanger   text-fg' :
                           'bg-surface border-line text-fg'
   return (
     <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>
@@ -38,8 +38,8 @@ function Option({ id, text, state, onSelect, answered }: {
           {id}
         </span>
         <span className="text-sm">{text}</span>
-        {state === 'correct' && <span className="ml-auto text-green-400 font-bold">✓</span>}
-        {state === 'wrong'   && <span className="ml-auto text-red-400   font-bold">✗</span>}
+        {state === 'correct' && <span className="ml-auto text-psuccess font-bold">✓</span>}
+        {state === 'wrong'   && <span className="ml-auto text-pdanger   font-bold">✗</span>}
       </div>
     </button>
   )

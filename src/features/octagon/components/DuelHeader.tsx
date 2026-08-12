@@ -21,7 +21,7 @@ export function DuelHeader({ title, inRound, yourScore, oppScore }: {
         <div className="flex gap-1 text-xs text-muted">
           <span className="text-pprimary font-bold">{yourScore}</span>
           <span>:</span>
-          <span className="text-red-400 font-bold">{oppScore}</span>
+          <span className="text-pdanger font-bold">{oppScore}</span>
         </div>
       ) : <div className="w-8" />}
     </div>
