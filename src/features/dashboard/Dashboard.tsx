@@ -16,7 +16,7 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
-import { Carousel } from './components/Carousel'
+// import { Carousel } from './components/Carousel' // vaqtincha yashirilgan
 import { ProgressCard } from './components/ProgressCard'
 import { GridCard, MockGridCard } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
@@ -24,7 +24,7 @@ import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectSwitcher, SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
+import { useDashboardSync, /* useContinueInfo, */ useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Main Dashboard ──────────────────────────────────────────────────────────
@@ -66,7 +66,7 @@ export default function Dashboard() {
   })
   const tt = useT(settings.language)
 
-  const continueInfo = useContinueInfo(user?.id, settings.language, tt)
+  // const continueInfo = useContinueInfo(user?.id, settings.language, tt) // Carousel bilan birga yashirilgan
   const { mistakesCount, savedCountForSubject } = useSubjectBadges(subject.id)
 
   const showToast = useCallback((msg: string) => {
@@ -139,13 +139,14 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* 1. Carousel — navigatsiya bannerlari (scroll-snap) */}
+          {/* 1. Carousel — vaqtincha yashirilgan
           <Carousel
             lang={settings.language}
             progressPct={continueInfo.pct}
             lessonLabel={continueInfo.lessonLabel}
             onContinue={continueInfo.go}
           />
+          */}
 
           {/* 2. Today's Progress */}
           <ProgressCard
