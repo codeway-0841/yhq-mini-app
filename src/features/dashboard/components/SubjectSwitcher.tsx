@@ -19,12 +19,12 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
   const imgUrl = `/fan-${subject.id}.webp`
   return (
     <div className="px-5 mb-3">
-      <div className="card-premium relative overflow-hidden p-5">
-        {/* O'ng taraf: fan rasmi (masalan, Matematika Σ) — karta ichida to'liq sig'adi */}
+      <div className="card-premium relative overflow-hidden p-5 pr-[118px] sm:pr-[132px]">
+        {/* O'ng taraf: fan rasmi — karta ichida sig'adi, matnni bosmaydi */}
         {imgOk && (
           <img src={imgUrl} alt="" aria-hidden
             onError={() => setImgOk(false)}
-            className="absolute right-1 top-1/2 -translate-y-1/2 h-[92%] max-w-[45%] object-contain pointer-events-none select-none" />
+            className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 h-[78%] max-h-[84px] max-w-[34%] object-contain object-right pointer-events-none select-none" />
         )}
         {/* Rasm bo'lmasa: dekorativ watermark ikon */}
         {!imgOk && (
@@ -32,8 +32,8 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
             className="absolute -right-4 -bottom-6 opacity-[0.07] pointer-events-none"
             style={{ color: subject.color }} />
         )}
-        <div className="relative">
-          <p className="text-[21px] font-bold text-pfg tracking-tight leading-tight truncate pr-24">
+        <div className="relative min-w-0">
+          <p className="text-[18px] sm:text-[20px] font-bold text-pfg tracking-tight leading-[1.15] line-clamp-2 break-words">
             {lang === 'ru' ? subject.nameRu : subject.name}
           </p>
           <p className="text-[12px] font-medium text-psubtle mt-1">

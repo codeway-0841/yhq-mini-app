@@ -180,7 +180,7 @@ export default function Dashboard() {
           <div className="px-5 mb-2.5">
             <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-7">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-10">
             <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
             <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
             <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
@@ -190,15 +190,17 @@ export default function Dashboard() {
             <GridCard icon={NotebookText}  label={tt('cheatsheets')} onClick={() => navigate('/shpargalkalar')} />
           </div>
 
-          {/* 6. Leaderboard */}
-          <LeaguePreview
-            lang={settings.language}
-            userId={user?.id}
-            onSeeAll={() => navigate('/reyting')}
-          />
+          {/* 6. Leaderboard — Reyting bo'lmasa ham Shpargalka↔Premium oralig'i ochiq qoladi */}
+          <div className="min-h-[12px]">
+            <LeaguePreview
+              lang={settings.language}
+              userId={user?.id}
+              onSeeAll={() => navigate('/reyting')}
+            />
+          </div>
 
-          {/* 7. Premium Banner */}
-          <div className="mx-5 mb-4 card-premium p-4 flex items-center gap-3.5">
+          {/* 7. Premium Banner — Shpargalkadan aniq ajralib turadi */}
+          <div className="mx-5 mt-8 mb-4 card-premium p-4 flex items-center gap-3.5">
             <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
               <Crown size={19} className="text-pprimary" />
