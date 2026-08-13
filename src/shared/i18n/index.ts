@@ -35,7 +35,6 @@ const UZ = {
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
   mistakeFixDesc: "Xato tuzatish",
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
-  shopTitle: "Tokenlar do'koni", shopTagline: "Token yig'ing, avatar va merj oling",
   tryWord: "Sinash",
   // Shpargalkalar (formulalar)
   cheatsheets: "Shpargalkalar", cheatsheetsDesc: "Barcha fanlar uchun formulalar to'plami",
@@ -241,7 +240,6 @@ const RU: Record<Keys, string> = {
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",
   mistakeFixDesc: "Исправь ошибки",
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
-  shopTitle: "Магазин токенов", shopTagline: "Собирайте токены, получайте аватары и мержи",
   tryWord: "Пробовать",
   // Шпаргалки (формулы)
   cheatsheets: "Шпаргалки", cheatsheetsDesc: "Формулы по всем предметам",

@@ -34,7 +34,6 @@ const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
 const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
-const ShopPage        = lazy(() => import('./features/shop/ShopPage'))
 const FormulasPage    = lazy(() => import('./features/formulas/FormulasPage'))
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
 // Auth (telefon+parol / TG Login Widget) — faqat initData'siz muhitda ko'rinadi
@@ -94,7 +93,6 @@ function Layout() {
             <Route path="/statistika" element={<StatistikaPage />} />
             <Route path="/speed"      element={<SpeedPage />} />
             <Route path="/flashcards" element={<FlashcardsPage />} />
-            <Route path="/shop"       element={<ShopPage />} />
             <Route path="/shpargalkalar" element={<FormulasPage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />

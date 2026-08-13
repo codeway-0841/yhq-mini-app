@@ -388,25 +388,6 @@ export const api = {
     request<void>('DELETE', `/admin/questions/${id}`),
   getQuestionsMeta: () =>
     request<{ total: number; withTopic: number }>('GET', '/admin/questions/meta'),
-
-  // ── Token Shop ──────────────────────────────────────────────────────────
-  getShopOverview: (userId: string) =>
-    request<ShopOverview>('GET', `/shop/${uid(userId)}/overview`),
-
-  getShopItems: (type: 'avatar' | 'merch' | 'badge', category?: string) => {
-    const params = new URLSearchParams({ type })
-    if (category && category !== 'all') params.set('category', category)
-    return request<{ items: ShopItem[] }>('GET', `/shop/items?${params.toString()}`)
-  },
-
-  purchaseShopItem: (userId: string, itemId: string) =>
-    request<{ newBalance: number }>('POST', `/shop/${uid(userId)}/purchase`, { itemId }),
-
-  claimDailyReward: (userId: string) =>
-    request<{ tokens: number; streak: number; newBalance: number }>('POST', `/shop/${uid(userId)}/daily-claim`),
-
-  getShopHistory: (userId: string) =>
-    request<{ history: TokenTransaction[] }>('GET', `/shop/${uid(userId)}/history`),
 }
 
 /** POST /result javobi — SERVER tekshiruvi (client endi to'g'ri javobni bilmaydi). */
@@ -474,50 +455,4 @@ export interface LeaderboardEntry {
   isYou:  boolean
 }
 
-export interface ShopItem {
-  id: string
-  type: 'avatar' | 'merch' | 'badge'
-  nameUz: string
-  nameRu: string
-  image: string
-  price: number
-  category: string
-  sortOrder: number
-}
 
-export interface TokenTransaction {
-  id: number
-  userId: string
-  amount: number
-  type: 'task' | 'daily' | 'purchase' | 'level_up' | 'refund' | 'package'
-  refId: string | null
-  createdAt: string
-}
-
-export interface ShopTaskProgress {
-  taskId: string
-  progress: number
-  completed: boolean
-}
-
-export interface ShopDailyStatus {
-  claimed: boolean
-  streak: number
-  lastClaimDate: string | null
-}
-
-export interface ShopTask {
-  id: string
-  titleUz: string
-  titleRu: string
-  reward: number
-  total: number
-}
-
-export interface ShopOverview {
-  balance: number
-  purchases: string[]
-  dailyStatus: ShopDailyStatus
-  tasks: ShopTask[]
-  taskProgress: ShopTaskProgress[]
-}

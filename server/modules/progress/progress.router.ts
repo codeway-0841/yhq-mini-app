@@ -9,7 +9,6 @@ import { validate }             from '../../middleware/validate'
 import { parseUserId }          from '../../utils/parse'
 import { rateLimit }            from '../../middleware/rate-limiter'
 import { progressRepository }   from './progress.repository'
-import { tokenService }         from '../shop/token.service'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
@@ -57,15 +56,6 @@ router.post(
       return
     }
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
-
-    // Token reward — detached from request lifecycle, must not affect response
-    if (correct) {
-      setImmediate(() => {
-        tokenService.onCorrectAnswer(uid).catch((err) => {
-          console.error('[token] onCorrectAnswer failed:', uid, err)
-        })
-      })
-    }
   }),
 )
 
