@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Play, Swords, GraduationCap,
@@ -18,7 +18,7 @@ import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
 // import { Carousel } from './components/Carousel' // vaqtincha yashirilgan
 import { ProgressCard } from './components/ProgressCard'
-import { GridCard, MockGridCard } from './components/GridCards'
+import { ServiceCard, MockGridCard } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectSwitcher, SubjectEmpty } from './components/SubjectSwitcher'
@@ -26,6 +26,78 @@ import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { useCelebrations } from './hooks/useCelebrations'
 import { useDashboardSync, /* useContinueInfo, */ useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
+
+// ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
+function RejimlarCarousel({ title, items }: {
+  title: string
+  items: { icon: React.ElementType; label: string; onClick: () => void }[]
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+  const paused = useRef(false)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    let timer: ReturnType<typeof setInterval> | null = null
+    let resumeTimer: ReturnType<typeof setTimeout> | null = null
+    const step = () => {
+      if (paused.current || !el) return
+      const max = el.scrollWidth - el.clientWidth
+      if (max <= 0) return
+      const next = el.scrollLeft + 112 // ~1 kvadrat karta + gap
+      if (next >= max - 4) {
+        el.scrollTo({ left: 0, behavior: 'smooth' })
+      } else {
+        el.scrollBy({ left: 112, behavior: 'smooth' })
+      }
+    }
+    timer = setInterval(step, 2800)
+    const pause = () => {
+      paused.current = true
+      if (resumeTimer) clearTimeout(resumeTimer)
+      resumeTimer = setTimeout(() => { paused.current = false }, 3500)
+    }
+    const onEnter = () => { paused.current = true; if (resumeTimer) clearTimeout(resumeTimer) }
+    const onLeave = () => { paused.current = false }
+    const onScroll = () => pause() // qo'lda surilganda auto pauza
+    el.addEventListener('mouseenter', onEnter)
+    el.addEventListener('mouseleave', onLeave)
+    el.addEventListener('touchstart', pause, { passive: true })
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      if (timer) clearInterval(timer)
+      if (resumeTimer) clearTimeout(resumeTimer)
+      el.removeEventListener('mouseenter', onEnter)
+      el.removeEventListener('mouseleave', onLeave)
+      el.removeEventListener('touchstart', pause)
+      el.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+  const onYana = () => {
+    ref.current?.scrollBy({ left: 224, behavior: 'smooth' })
+  }
+
+  return (
+    <div className="pt-4 mt-2">
+      <div className="flex items-center justify-between px-5 mb-3">
+        <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
+        <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70" style={{ color: '#7EDFF1' }}>
+          Yana
+        </button>
+      </div>
+      <div
+        ref={ref}
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-5 px-5 pb-3 mb-2 touch-pan-x select-none"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' as const, WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' }}
+      >
+        {items.map((it) => (
+          <ServiceCard key={it.label} icon={it.icon} label={it.label} onClick={it.onClick} />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
@@ -67,7 +139,7 @@ export default function Dashboard() {
   const tt = useT(settings.language)
 
   // const continueInfo = useContinueInfo(user?.id, settings.language, tt) // Carousel bilan birga yashirilgan
-  const { mistakesCount, savedCountForSubject } = useSubjectBadges(subject.id)
+  const { mistakesCount } = useSubjectBadges(subject.id)
 
   const showToast = useCallback((msg: string) => {
     setToast(msg)
@@ -160,7 +232,7 @@ export default function Dashboard() {
           />
 
           {/* 4. Quick Actions (main grid) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-7">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-8">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
@@ -176,22 +248,22 @@ export default function Dashboard() {
               onClick={goOctagon} />
           </div>
 
-          {/* 5. Modes */}
-          <div className="px-5 mb-2.5">
-            <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('modesTitle')}</p>
-          </div>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-10">
-            <GridCard icon={ShieldAlert}   label={tt('distracting')} onClick={goMode('tricky', tt('distracting'))} />
-            <GridCard icon={GraduationCap} label={tt('lessons')}     onClick={goDarslik} />
-            <GridCard icon={Bookmark}      label={tt('saved')}       badge={savedCountForSubject || null} onClick={goSaved} />
-            <GridCard icon={Signpost}      label={tt('roadSigns')}   onClick={() => navigate('/belgilar')} />
-            <GridCard icon={Hash}          label={tt('numeric')}     onClick={goMode('numeric', tt('numeric'))} />
-            <GridCard icon={Play}          label={tt('adaptive')}    onClick={goAdaptive} />
-            <GridCard icon={NotebookText}  label={tt('cheatsheets')} onClick={() => navigate('/shpargalkalar')} />
-          </div>
+          {/* 5. Modes — auto carousel */}
+          <RejimlarCarousel
+            title={tt('modesTitle')}
+            items={[
+              { icon: ShieldAlert,  label: tt('distracting'), onClick: goMode('tricky', tt('distracting')) },
+              { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
+              { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
+              { icon: Signpost,      label: tt('roadSigns'),   onClick: () => navigate('/belgilar') },
+              { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
+              { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
+              { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
+            ]}
+          />
 
-          {/* 6. Leaderboard — Reyting bo'lmasa ham Shpargalka↔Premium oralig'i ochiq qoladi */}
-          <div className="min-h-[12px]">
+          {/* 6. Leaderboard — Rejimlar bilan orasi ochiq */}
+          <div className="mt-6 min-h-[12px]">
             <LeaguePreview
               lang={settings.language}
               userId={user?.id}
