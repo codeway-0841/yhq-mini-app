@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import {
-  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check,
+  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, GraduationCap,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
+import { useSubjectStore } from '../store/useSubjectStore'
+import { SUBJECTS } from '../config/subjects'
 import { openTelegramLink } from '../../platform/telegram'
 import { playSound } from '../lib/sounds'
 import { useT } from '../i18n'
@@ -12,7 +14,7 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 
 type LucideIcon = typeof Play
-type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | null
+type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'subject' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv */
 function Row({ icon: Icon, iconColor, label, children }: {
@@ -40,6 +42,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const accent     = useAppStore((s) => s.accent)
   const setAccent  = useAppStore((s) => s.setAccent)
   const isPremium  = useAppStore((s) => s.tariff === 'premium')
+  const subject    = useSubjectStore((s) => s.subject)
+  const setSubject = useSubjectStore((s) => s.setSubject)
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
   const [picker, setPicker] = useState<PickerKey>(null)
   const tt = useT(local.language)
@@ -146,6 +150,13 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             </Row>
           </button>
 
+          {/* Fan tanlash — Settings ichida */}
+          <button className="w-full text-left" onClick={() => setPicker('subject')} aria-label={`${tt('subjectSelect')}: ${subject.name}`}>
+            <Row icon={GraduationCap} iconColor={subject.color} label={tt('subjectSelect')}>
+              <span className={valueBtn}>{subject.name} <ChevronRight size={14} /></span>
+            </Row>
+          </button>
+
           {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
           <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
             <Row icon={Palette} iconColor="#94a3b8" label={tt('accentThemeLabel')}>
@@ -220,6 +231,17 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             { value: 'uz', label: tt('uzLang') },
             { value: 'ru', label: tt('ruLang') },
           ]}
+        />
+      )}
+
+      {picker === 'subject' && (
+        <PickerSheet
+          title={tt('subjectSelect')}
+          titleIcon={<GraduationCap size={18} />}
+          value={subject.id}
+          onClose={() => setPicker(null)}
+          onSelect={(v) => { setSubject(v); setPicker(null) }}
+          options={SUBJECTS.map((s) => ({ value: s.id, label: local.language === 'ru' ? s.nameRu : s.name }))}
         />
       )}
 

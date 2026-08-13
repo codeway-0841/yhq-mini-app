@@ -16,15 +16,15 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
-// import { Carousel } from './components/Carousel' // vaqtincha yashirilgan
+import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
 import { ServiceCard, MockGridCard } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
-import { SubjectSwitcher, SubjectEmpty } from './components/SubjectSwitcher'
+import { SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, /* useContinueInfo, */ useSubjectBadges } from './hooks/useDashboardData'
+import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
@@ -138,7 +138,7 @@ export default function Dashboard() {
   })
   const tt = useT(settings.language)
 
-  // const continueInfo = useContinueInfo(user?.id, settings.language, tt) // Carousel bilan birga yashirilgan
+  const continueInfo = useContinueInfo(user?.id, settings.language, tt)
   const { mistakesCount } = useSubjectBadges(subject.id)
 
   const showToast = useCallback((msg: string) => {
@@ -191,9 +191,6 @@ export default function Dashboard() {
         level={level}
         onSettings={() => setShowSettings(true)} onProfile={goProfile} />
 
-      {/* Universal subject switcher */}
-      <SubjectSwitcher onOpen={() => setShowSubjects(true)} />
-
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
           key=subjectId: fan almashganda smooth fade transition, reload yo'q */}
       {subject.available ? (
@@ -211,14 +208,13 @@ export default function Dashboard() {
             </div>
           )}
 
-          {/* 1. Carousel — vaqtincha yashirilgan
+          {/* 1. Carousel */}
           <Carousel
             lang={settings.language}
             progressPct={continueInfo.pct}
             lessonLabel={continueInfo.lessonLabel}
             onContinue={continueInfo.go}
           />
-          */}
 
           {/* 2. Today's Progress */}
           <ProgressCard

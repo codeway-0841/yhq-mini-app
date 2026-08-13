@@ -22,6 +22,7 @@ const UZ = {
   // v1.1 Mock grid
   testlarTitle: "Testlar", aiTutor: "AI Tutor", comingSoonD: "Tez orada",
   allTopicsDesc: "Darsga doir", mistakesDesc: "Xato ustida ishlash",
+  subjectSelect: "Fan tanlash",
   officialTickets: "Rasmiy biletlar", duelTitle: "Duel", duelDesc: "Do'st bilan duel",
   modesTitle: "Rejimlar",
   // Testlar sahifasi (mode chooser)
@@ -227,6 +228,7 @@ const RU: Record<Keys, string> = {
   // v1.1 Mock grid
   testlarTitle: "Тесты", aiTutor: "AI Tutor", comingSoonD: "Скоро",
   allTopicsDesc: "К урокам", mistakesDesc: "Работа с ошибками",
+  subjectSelect: "Выбрать предмет",
   officialTickets: "Официальные билеты", duelTitle: "Дуэль", duelDesc: "Дуэль с другом",
   modesTitle: "Режимы",
   // Testlar sahifasi (mode chooser)
