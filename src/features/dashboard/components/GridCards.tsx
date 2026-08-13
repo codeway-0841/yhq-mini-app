@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import React from 'react'
 
-// ── Grid Card (rejimlar) ────────────────────────────────────────────────────
+// ── Grid Card (rejimlar — eski vertikal) ───────────────────────────────────────
 /* Rang intizomi (v2.1): default ikonlar NEYTRAL kulrang — faqat AI/Premium binafsha,
    badge'lar esa semantik (qizil = xato soni). */
 export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = '#94a3b8', onClick }: {
@@ -28,6 +28,31 @@ export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconC
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-semibold text-pfg text-left leading-tight">{label}</span>
+    </button>
+  )
+})
+
+// ── Service Carousel Card — kvadrat, kichkina (auto-scroll uchun) ───────────────
+export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClick }: {
+  icon: React.ElementType
+  label: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={label}
+      className="relative flex flex-col items-center justify-center gap-2.5 rounded-[16px] shrink-0 snap-start w-[100px] h-[100px] sm:w-[108px] sm:h-[108px] p-2.5 active:scale-[0.97] transition-transform"
+      style={{
+        background: 'var(--p-card)',
+        border: '1px solid var(--p-line)',
+        boxShadow: '0 6px 16px rgba(2,6,16,0.18), inset 0 1px 0 rgba(255,255,255,0.03)',
+      }}
+    >
+      <Icon size={26} strokeWidth={1.8} className="text-[#CBD5E1]" style={{ color: 'var(--p-subtle)' }} />
+      <span className="text-[11px] font-medium text-pfg text-center leading-[1.25] line-clamp-2 min-h-[28px] flex items-center justify-center px-0.5">
+        {label}
+      </span>
     </button>
   )
 })
