@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useCallback } from 'react'
+import { memo, useRef, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ChevronRight, Zap, Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
 import { type Lang, useT } from '../../../shared/i18n'
@@ -117,53 +117,61 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
 }) {
   const navigate = useNavigate()
   const trackRef = useRef<HTMLDivElement>(null)
-  const [current, setCurrent] = useState(0)
+  const paused = useRef(false)
 
   const openSlide = useCallback((config: SlideConfig) => {
     if (config.useOnContinue) onContinue?.()
     else if (config.route) navigate(config.route)
   }, [navigate, onContinue])
 
-  const onScroll = useCallback(() => {
+  // Avto — 3.5s da 1 slayd, qo'lda surilganda 4s pauza
+  useEffect(() => {
     const el = trackRef.current
-    if (!el || el.children.length === 0) return
-    const slideW = (el.children[0] as HTMLElement).offsetWidth + 12 // gap-3
-    setCurrent(Math.min(SLIDES.length - 1, Math.max(0, Math.round(el.scrollLeft / slideW))))
-  }, [])
-
-  const goTo = useCallback((i: number) => {
-    const el = trackRef.current
-    if (!el || !el.children[i]) return
-    const slideW = (el.children[i] as HTMLElement).offsetWidth + 12
-    el.scrollTo({ left: i * slideW, behavior: 'smooth' })
+    if (!el) return
+    let timer: ReturnType<typeof setInterval> | null = null
+    let resumeTimer: ReturnType<typeof setTimeout> | null = null
+    const step = () => {
+      if (paused.current || !el) return
+      const slideW = (el.children[0] as HTMLElement)?.offsetWidth + 12 || el.clientWidth
+      const max = el.scrollWidth - el.clientWidth
+      if (max <= 0) return
+      if (el.scrollLeft >= max - 4) el.scrollTo({ left: 0, behavior: 'smooth' })
+      else el.scrollBy({ left: slideW, behavior: 'smooth' })
+    }
+    timer = setInterval(step, 3500)
+    const pause = () => {
+      paused.current = true
+      if (resumeTimer) clearTimeout(resumeTimer)
+      resumeTimer = setTimeout(() => { paused.current = false }, 4000)
+    }
+    const onEnter = () => { paused.current = true; if (resumeTimer) clearTimeout(resumeTimer) }
+    const onLeave = () => { paused.current = false }
+    const onScroll = () => pause()
+    el.addEventListener('mouseenter', onEnter)
+    el.addEventListener('mouseleave', onLeave)
+    el.addEventListener('touchstart', pause, { passive: true })
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      if (timer) clearInterval(timer)
+      if (resumeTimer) clearTimeout(resumeTimer)
+      el.removeEventListener('mouseenter', onEnter)
+      el.removeEventListener('mouseleave', onLeave)
+      el.removeEventListener('touchstart', pause)
+      el.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
     <div className="mb-6">
-      <div ref={trackRef} onScroll={onScroll}
-        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 [&::-webkit-scrollbar]:hidden"
-        style={{ scrollbarWidth: 'none' }}>
+      <div ref={trackRef}
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 touch-pan-x select-none [&::-webkit-scrollbar]:hidden"
+        style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' as const }}>
         {SLIDES.map((config, i) => (
           <div key={i} className="w-full flex-shrink-0 snap-center min-h-[104px]">
             <CarouselSlide config={config} lang={lang}
               progressPct={progressPct} lessonLabel={lessonLabel}
               onOpen={() => openSlide(config)} />
           </div>
-        ))}
-      </div>
-      {/* Pagination dots */}
-      <div className="flex items-center justify-center gap-1.5 mt-3">
-        {SLIDES.map((_, i) => (
-          <button key={i} type="button" onClick={() => goTo(i)}
-            aria-label={`Slide ${i + 1}`}
-            className="transition-all duration-300 cursor-pointer"
-            style={{
-              width: i === current ? 16 : 6,
-              height: 6,
-              borderRadius: 3,
-              background: i === current ? 'var(--p-primary)' : 'var(--p-line)',
-              boxShadow: i === current ? '0 0 8px var(--p-glow)' : 'none',
-            }} />
         ))}
       </div>
     </div>

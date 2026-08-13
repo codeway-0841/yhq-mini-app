@@ -226,9 +226,10 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
+          <div className="h-6" aria-hidden />
 
-          {/* 4. Quick Actions (main grid) — 6ta → 3 ustun */}
-          <div className="grid grid-cols-3 gap-3 sm:gap-3.5 px-5 mb-8">
+          {/* 4. Quick Actions (main grid) — 6ta */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-3.5 px-5 mb-8">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
@@ -245,21 +246,23 @@ export default function Dashboard() {
           </div>
 
           {/* 5. Modes — auto carousel */}
-          <RejimlarCarousel
-            title={tt('modesTitle')}
-            items={[
-              { icon: ShieldAlert,  label: tt('distracting'), onClick: goMode('tricky', tt('distracting')) },
-              { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
-              { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
-              { icon: Signpost,      label: tt('roadSigns'),   onClick: () => navigate('/belgilar') },
-              { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
-              { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
-              { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
-            ]}
-          />
+          <div className="mb-6">
+            <RejimlarCarousel
+              title={tt('modesTitle')}
+              items={[
+                { icon: ShieldAlert,  label: tt('distracting'), onClick: goMode('tricky', tt('distracting')) },
+                { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
+                { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
+                { icon: Signpost,      label: tt('roadSigns'),   onClick: () => navigate('/belgilar') },
+                { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
+                { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
+                { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
+              ]}
+            />
+          </div>
 
-          {/* 6. Leaderboard — Rejimlar bilan orasi ochiq */}
-          <div className="mt-6 min-h-[12px]">
+          {/* 6. Leaderboard */}
+          <div className="mt-4 min-h-[12px]">
             <LeaguePreview
               lang={settings.language}
               userId={user?.id}
@@ -267,7 +270,7 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* 7. Premium Banner — Shpargalkadan aniq ajralib turadi */}
+          {/* 7. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
           <div className="mx-5 mt-8 mb-4 card-premium p-4 flex items-center gap-3.5">
             <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
