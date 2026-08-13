@@ -21,7 +21,7 @@ const UZ = {
   streakDays: "Seriya", totalXp: "Jami tajriba", ratingWord: "Reyting",
   // v1.1 Mock grid
   testlarTitle: "Testlar", aiTutor: "AI Tutor", comingSoonD: "Tez orada",
-  allTopicsDesc: "Barcha mavzular", mistakesDesc: "Xato ustida ishlash",
+  allTopicsDesc: "Darsga doir", mistakesDesc: "Xato ustida ishlash",
   officialTickets: "Rasmiy biletlar", duelTitle: "Duel", duelDesc: "Do'st bilan duel",
   modesTitle: "Rejimlar",
   // Testlar sahifasi (mode chooser)
@@ -226,7 +226,7 @@ const RU: Record<Keys, string> = {
   streakDays: "Серия", totalXp: "Всего опыта", ratingWord: "Рейтинг",
   // v1.1 Mock grid
   testlarTitle: "Тесты", aiTutor: "AI Tutor", comingSoonD: "Скоро",
-  allTopicsDesc: "Все темы", mistakesDesc: "Работа с ошибками",
+  allTopicsDesc: "К урокам", mistakesDesc: "Работа с ошибками",
   officialTickets: "Официальные билеты", duelTitle: "Дуэль", duelDesc: "Дуэль с другом",
   modesTitle: "Режимы",
   // Testlar sahifasi (mode chooser)

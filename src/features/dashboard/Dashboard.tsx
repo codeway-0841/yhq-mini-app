@@ -231,8 +231,8 @@ export default function Dashboard() {
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
 
-          {/* 4. Quick Actions (main grid) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4 px-5 mb-8">
+          {/* 4. Quick Actions (main grid) — 6ta → 3 ustun */}
+          <div className="grid grid-cols-3 gap-3 sm:gap-3.5 px-5 mb-8">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
