@@ -35,6 +35,7 @@ export interface SubjectBase {
  */
 export const SUBJECT_BASES = [
   { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true, demoData: false, examPresets: [] },
+  { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
   { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
   { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
   { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },

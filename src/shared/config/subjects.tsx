@@ -9,7 +9,7 @@
  *
  * available: false → "Tez kunda" holatida ko'rsatiladi (locked).
  */
-import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, type LucideIcon, type LucideProps } from 'lucide-react'
+import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, Languages, type LucideIcon, type LucideProps } from 'lucide-react'
 import { forwardRef } from 'react'
 import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId } from '../../../shared/subjects'
 
@@ -47,6 +47,7 @@ PiGlyph.displayName = 'PiGlyph'
     Record<SubjectId, ...> — fan qo'shilib UI_MAP unutilsa COMPILE-TIME xato */
 const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: string }> = {
   yhq:        { icon: Car,          color: '#58cc02', colorDark: '#46a302' },
+  rustili:    { icon: Languages,    color: '#0088cc', colorDark: '#006699' },
   fizika:     { icon: Zap,          color: '#ffc800', colorDark: '#e5b400' },
   matematika: { icon: PiGlyph,      color: '#ce82ff', colorDark: '#a85ed4' },
   kimyo:      { icon: FlaskConical, color: '#1cb0f6', colorDark: '#1899d6' },

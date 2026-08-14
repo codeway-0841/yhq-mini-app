@@ -37,9 +37,9 @@ describe('shared/subjects — data integrity', () => {
     }
   })
 
-  it("demoData: false faqat DEFAULT fan uchun (hozircha)", () => {
+  it("demoData: false real bazaga ega fanlar uchun (yhq, rustili)", () => {
     const nonDemo = SUBJECT_BASES.filter((s) => !s.demoData)
-    expect(nonDemo.map((s) => s.id)).toEqual([DEFAULT_SUBJECT_ID])
+    expect(nonDemo.map((s) => s.id)).toEqual([DEFAULT_SUBJECT_ID, 'rustili'])
   })
 })
 

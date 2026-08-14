@@ -9,7 +9,7 @@
  * Multi-provider auth (users.id TEXT bo'lganidan keyin) barcha user-scoped
  * route'lar shu parserdan o'tadi — noto'g'ri format 400 beradi.
  */
-const USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15})$/
+const USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
 
 /** Parse a route param/query into a canonical user id string. Returns null on failure. */
 export function parseUserId(val: unknown): string | null {

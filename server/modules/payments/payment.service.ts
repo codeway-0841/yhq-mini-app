@@ -21,8 +21,8 @@ export function validatePremiumPayment(input: PremiumPaymentInput): PaymentValid
     return { ok: false, reason: 'invalid_amount' }
   }
 
-  // userId endi canonical TEXT id (Telegram raqam-string yoki 'p_<digits>')
-  if (!/^(?:\d{1,20}|p_\d{9,15})$/.test(parsed.userId)) return { ok: false, reason: 'invalid_payload' }
+  // userId endi canonical TEXT id (Telegram raqam-string, 'p_<digits>' yoki 'e_<hex>')
+  if (!/^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/.test(parsed.userId)) return { ok: false, reason: 'invalid_payload' }
   return { ok: true, userId: parsed.userId, plan: parsed.plan }
 }
 

@@ -47,8 +47,8 @@ const MAX_NAME_LEN        = 64
 /** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
 const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
 
-/** Canonical user id (Telegram raqam-string YOKI telefon akkaunt 'p_<digits>') */
-const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15})$/
+/** Canonical user id (Telegram raqam-string, telefon akkaunt 'p_<digits>' yoki email 'e_<hex>') */
+const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
 
 /**
  * WS auth: client userId'siga HECH QACHON ishonilmaydi — faqat initData
