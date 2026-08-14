@@ -35,11 +35,12 @@ type SettingsRow = typeof userSettings.$inferSelect
 /** Drop the userId — the client already knows who it asked about. */
 export function toApiProgress(row: ProgressRow) {
   return {
-    totalCorrect:  row.totalCorrect,
-    totalWrong:    row.totalWrong,
-    totalAnswered: row.totalAnswered,
-    streak:        row.streak,
-    wrongByTicket: row.wrongByTicket,
+    totalCorrect:    row.totalCorrect,
+    totalWrong:      row.totalWrong,
+    totalAnswered:   row.totalAnswered,
+    streak:          row.streak,
+    wrongByTicket:   row.wrongByTicket,
+    solvedQuestions: row.solvedQuestions ?? [],
   }
 }
 

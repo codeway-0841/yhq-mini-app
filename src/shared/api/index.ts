@@ -120,6 +120,7 @@ export interface ApiProgress {
   streak: number
   /** Wrong-answer counts keyed by question id. */
   wrongByTicket: Record<string, number>
+  solvedQuestions?: string[]
 }
 
 export interface ApiSettings {

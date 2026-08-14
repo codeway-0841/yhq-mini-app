@@ -85,6 +85,11 @@ export const progressRepository = {
               (COALESCE((wrong_by_ticket->>${qKey}::text)::int, 0) + 1)::text::jsonb
             )
           END,
+          solved_questions = CASE
+            WHEN ${qKey}::text IS NULL THEN solved_questions
+            WHEN solved_questions @> jsonb_build_array(${qKey}::text) THEN solved_questions
+            ELSE solved_questions || jsonb_build_array(${qKey}::text)
+          END,
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
         RETURNING id
@@ -149,12 +154,13 @@ export const progressRepository = {
 
   async reset(userId: string): Promise<void> {
     await db.update(progress).set({
-      totalCorrect:  0,
-      totalWrong:    0,
-      totalAnswered: 0,
-      streak:        0,
-      wrongByTicket: {},
-      updatedAt:     new Date(),
+      totalCorrect:    0,
+      totalWrong:      0,
+      totalAnswered:   0,
+      streak:          0,
+      wrongByTicket:   {},
+      solvedQuestions: [],
+      updatedAt:       new Date(),
     }).where(eq(progress.userId, userId))
   },
 }

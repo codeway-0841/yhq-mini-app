@@ -1,0 +1,1 @@
+ALTER TABLE "progress" ADD COLUMN "solved_questions" jsonb DEFAULT '[]'::jsonb NOT NULL;

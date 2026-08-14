@@ -27,6 +27,7 @@ export const ApiProgressSchema = z.object({
   streak:        z.number(),
   /** Composite kalitlar: '<subjectId>:<questionId>' */
   wrongByTicket: z.record(z.string(), z.number()),
+  solvedQuestions: z.array(z.string()).optional(),
 })
 
 export const ApiSettingsSchema = z.object({

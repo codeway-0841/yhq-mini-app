@@ -255,17 +255,18 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      hydrateFromProfile: (data) => set({
-        user:           data.user,
-        tariff:         data.user.tariff,
-        settings:       data.settings,
-        streak:         data.progress.streak,
-        totalCorrect:   data.progress.totalCorrect,
-        totalWrong:     data.progress.totalWrong,
-        totalAnswered:  data.progress.totalAnswered,
-        wrongByTicket:  data.progress.wrongByTicket,
-        savedQuestions: data.savedQuestions,
-      }),
+      hydrateFromProfile: (data) => set((s) => ({
+        user:            data.user,
+        tariff:          data.user.tariff,
+        settings:        data.settings,
+        streak:          data.progress.streak,
+        totalCorrect:    data.progress.totalCorrect,
+        totalWrong:      data.progress.totalWrong,
+        totalAnswered:   data.progress.totalAnswered,
+        wrongByTicket:   data.progress.wrongByTicket,
+        solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
+        savedQuestions:  data.savedQuestions,
+      })),
 
       resetAccount: () => set({
         user: null,
@@ -286,17 +287,18 @@ export const useAppStore = create<AppState>()(
       syncFromServer: async (userId) => {
         try {
           const data = await api.getProfile(userId)
-          set({
-            user:           data.user,
-            tariff:         data.user.tariff,
-            settings:       data.settings,
-            streak:         data.progress.streak,
-            totalCorrect:   data.progress.totalCorrect,
-            totalWrong:     data.progress.totalWrong,
-            totalAnswered:  data.progress.totalAnswered,
-            wrongByTicket:  data.progress.wrongByTicket,
-            savedQuestions: data.savedQuestions,
-          })
+          set((s) => ({
+            user:            data.user,
+            tariff:          data.user.tariff,
+            settings:        data.settings,
+            streak:          data.progress.streak,
+            totalCorrect:    data.progress.totalCorrect,
+            totalWrong:      data.progress.totalWrong,
+            totalAnswered:   data.progress.totalAnswered,
+            wrongByTicket:   data.progress.wrongByTicket,
+            solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
+            savedQuestions:  data.savedQuestions,
+          }))
         } catch (err) {
           console.error('syncFromServer failed:', err)
         }
