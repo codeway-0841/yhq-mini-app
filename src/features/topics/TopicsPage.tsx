@@ -99,7 +99,7 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-[13px] font-bold text-fg truncate">
-                    {l.idx + 1}-dars. {l.title}
+                    {lang === 'ru' ? `Урок ${l.idx + 1}. ${l.title}` : `${l.idx + 1}-dars. ${l.title}`}
                   </p>
                   <p className="text-[10px] text-subtle">{l.ids.length} {lang === 'ru' ? 'вопросов' : 'savol'}</p>
                 </div>
@@ -156,8 +156,9 @@ export default function TopicsPage() {
   }, [lang])
 
   const startLesson = (l: LessonMeta) => {
+    const lessonTitle = lang === 'ru' ? `Урок ${l.idx + 1}: ${l.title}` : `${l.idx + 1}-dars: ${l.title}`
     navigate('/test/1', {
-      state: { questionIds: l.ids, title: `${l.idx + 1}-dars: ${l.title}` },
+      state: { questionIds: l.ids, title: lessonTitle },
     })
   }
 

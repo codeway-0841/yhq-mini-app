@@ -20,7 +20,7 @@ export default function ResetPasswordPage() {
   const trimmedPassword = useMemo(() => password.trim(), [password])
   const trimmedConfirmPassword = useMemo(() => confirmPassword.trim(), [confirmPassword])
 
-  const token = searchParams.get('token')
+  const token = searchParams.get('token') ?? (typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('token') : null)
 
   if (!token) {
     return (

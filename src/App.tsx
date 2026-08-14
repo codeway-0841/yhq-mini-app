@@ -300,9 +300,18 @@ export default function App() {
   }
 
   // Email verification/reset pages — accessible without auth (user clicks link from email).
-  // Links arrive as /#/verify-email?token=xxx or /#/reset-password?token=xxx
+  // Links arrive as /#/verify-email?token=xxx or /verify-email?token=xxx
   const hash = window.location.hash
-  if (hash.startsWith('#/verify-email')) {
+  const pathname = window.location.pathname
+  const search = window.location.search
+
+  if (pathname.startsWith('/verify-email') || hash.startsWith('#/verify-email')) {
+    if (pathname.startsWith('/verify-email') && !hash.startsWith('#/verify-email')) {
+      const token = new URLSearchParams(search).get('token')
+      if (token && !hash.includes('token=')) {
+        window.location.hash = `#/verify-email?token=${encodeURIComponent(token)}`
+      }
+    }
     return (
       <>
         <ThemeEffect />
@@ -317,7 +326,13 @@ export default function App() {
       </>
     )
   }
-  if (hash.startsWith('#/reset-password')) {
+  if (pathname.startsWith('/reset-password') || hash.startsWith('#/reset-password')) {
+    if (pathname.startsWith('/reset-password') && !hash.startsWith('#/reset-password')) {
+      const token = new URLSearchParams(search).get('token')
+      if (token && !hash.includes('token=')) {
+        window.location.hash = `#/reset-password?token=${encodeURIComponent(token)}`
+      }
+    }
     return (
       <>
         <ThemeEffect />

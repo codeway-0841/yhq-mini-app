@@ -93,7 +93,7 @@ export default function TestlarPage() {
   return (
     <div className="px-4 pt-4 pb-8 min-h-screen">
       <div className="flex items-center gap-2 mb-5">
-        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
+        <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="text-subtle hover:text-fg text-xl px-1 transition-colors">←</button>
         <h1 className="text-xl font-black">{tt('testlarTitle')}</h1>
       </div>

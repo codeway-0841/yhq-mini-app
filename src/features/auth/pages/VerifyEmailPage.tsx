@@ -12,7 +12,7 @@ export default function VerifyEmailPage() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    const token = searchParams.get('token')
+    const token = searchParams.get('token') ?? (typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('token') : null)
     if (!token) {
       setStatus('error')
       setError(language === 'ru' ? 'Токен отсутствует' : 'Token topilmadi')

@@ -82,7 +82,10 @@ export default function Profil() {
   }
 
   const handleReset = () => {
-    if (window.confirm("Barcha progress o'chadi. Davom etasizmi?")) resetProgress()
+    const msg = settings.language === 'ru'
+      ? 'Весь прогресс будет сброшен. Продолжить?'
+      : "Barcha progress o'chadi. Davom etasizmi?"
+    if (window.confirm(msg)) resetProgress()
   }
 
   const handleSync = () => {
@@ -95,15 +98,15 @@ export default function Profil() {
     <div className="pt-4 pb-8 safe-bottom">
       {/* ← Back */}
       <div className="px-4 mb-0.5">
-        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
+        <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="flex items-center gap-1 text-muted hover:text-fg text-sm active:opacity-70 transition-opacity">
           <span className="text-lg">←</span>
-          <span>Back</span>
+          <span>{tt('backWord')}</span>
         </button>
       </div>
 
       {/* Page title */}
-      <p className="text-[18px] font-bold px-4 mb-5 text-fg">Profil</p>
+      <p className="text-[18px] font-bold px-4 mb-5 text-fg">{tt('profile')}</p>
 
       {/* Avatar + Name + ID */}
       <div className="flex flex-col items-center gap-2.5 mb-7 px-4">

@@ -28,9 +28,10 @@ import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/use
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
-function RejimlarCarousel({ title, items }: {
+function RejimlarCarousel({ title, items, lang }: {
   title: string
   items: { icon: React.ElementType; label: string; onClick: () => void }[]
+  lang: 'uz' | 'ru'
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const paused = useRef(false)
@@ -82,8 +83,8 @@ function RejimlarCarousel({ title, items }: {
     <div className="pt-4 mt-2">
       <div className="flex items-center justify-between px-5 mb-3">
         <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
-        <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70" style={{ color: '#7EDFF1' }}>
-          Yana
+        <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
+          {lang === 'ru' ? 'Ещё' : 'Yana'}
         </button>
       </div>
       <div
@@ -249,6 +250,7 @@ export default function Dashboard() {
           <div className="mb-6">
             <RejimlarCarousel
               title={tt('modesTitle')}
+              lang={settings.language}
               items={[
                 { icon: ShieldAlert,  label: tt('distracting'), onClick: goMode('tricky', tt('distracting')) },
                 { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
@@ -271,7 +273,7 @@ export default function Dashboard() {
           </div>
 
           {/* 7. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
-          <div className="mx-5 mt-8 mb-4 card-premium p-4 flex items-center gap-3.5">
+          <div className="mx-5 mt-12 mb-4 card-premium p-4 flex items-center gap-3.5">
             <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
               <Crown size={19} className="text-pprimary" />

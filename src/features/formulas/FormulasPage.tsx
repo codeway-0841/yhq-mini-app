@@ -86,8 +86,11 @@ export default function FormulasPage() {
     if (searching) {
       const q = query.trim().toLowerCase()
       return ALL.filter((x) =>
-        x.title.toLowerCase().includes(q) || x.formula.toLowerCase().includes(q) ||
-        x.topicName.toLowerCase().includes(q))
+        x.title.toLowerCase().includes(q) ||
+        x.formula.toLowerCase().includes(q) ||
+        x.topicName.toLowerCase().includes(q) ||
+        x.topicNameRu.toLowerCase().includes(q)
+      )
     }
     return ALL.filter((x) => x.subjectId === subject.subjectId &&
       (topicId === null || subject.topics.find((t) => t.id === topicId)?.formulas.some((fx) => fx.id === x.id)))

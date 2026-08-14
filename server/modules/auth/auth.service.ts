@@ -682,7 +682,7 @@ export const authService = {
     const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000)  // 24 hours
     await authRepository.createEmailVerificationToken(userId, input.email.toLowerCase(), token, expiresAt)
 
-    const verificationLink = `${config.deploy.appUrl}/verify-email?token=${token}`
+    const verificationLink = `${config.deploy.appUrl}/#/verify-email?token=${token}`
     await sendEmail({
       to: input.email,
       subject: 'Email tasdiqlang — KIWI',
@@ -844,7 +844,7 @@ export const authService = {
     const expiresAt = new Date(Date.now() + 24 * 60 * 60 * 1000)
     await authRepository.createEmailVerificationToken(userId, user.email, token, expiresAt)
 
-    const verificationLink = `${config.deploy.appUrl}/verify-email?token=${token}`
+    const verificationLink = `${config.deploy.appUrl}/#/verify-email?token=${token}`
     await sendEmail({
       to: user.email,
       subject: 'Email tasdiqlang — KIWI',
@@ -881,7 +881,7 @@ export const authService = {
     const expiresAt = new Date(Date.now() + 60 * 60 * 1000)  // 1 hour
     await authRepository.createPasswordResetToken(identity.userId, token, expiresAt)
 
-    const resetLink = `${config.deploy.appUrl}/reset-password?token=${token}`
+    const resetLink = `${config.deploy.appUrl}/#/reset-password?token=${token}`
     await sendEmail({
       to: email,
       subject: 'Parolni tiklash — KIWI',
