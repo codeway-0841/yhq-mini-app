@@ -32,7 +32,7 @@ const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, t
   )
 })
 
-// ── Hero: bugungi progress (ring + minimal statistika) ──────────────────────
+// ── Hero: umumiy progress (ring + test bazasi foizi) ─────────────────────────
 export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang, onStreakPreview }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
@@ -41,13 +41,15 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
 }) {
   const tt = useT(lang)
   const navigate = useNavigate()
-  const total    = totalPool > 0 ? totalPool : 0
-  const accuracy = totalAnswered > 0 ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100)) : 0
-  const xp       = totalCorrect * 10
-  const league   = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
+  const total = totalPool > 0 ? totalPool : 0
+
+  // Baza bo'yicha yechilgan testlar foizi: 10 ta / 1000 ta = 1%, 1000 ta / 1000 ta = 100%
+  const progressPct = total > 0 ? Math.min(100, Math.round((totalAnswered / total) * 100)) : 0
+  const xp = totalCorrect * 10
+  const league = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
   // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
-  const shown    = useCountUp(accuracy, 900)
+  const shown = useCountUp(progressPct, 900)
 
   // Ring chart geometriyasi (SVG)
   const R = 36, C = 2 * Math.PI * R
