@@ -191,7 +191,7 @@ export default function App() {
     const tgUser = getTelegramUser()
 
     const loadQuestions = (lang: 'uz' | 'ru') =>
-      useQuestionsStore.getState().load(lang)
+      useQuestionsStore.getState().load(lang, useSubjectStore.getState().subjectId)
 
     if (tgUser?.id) {
       const verifiedId = String(tgUser.id)

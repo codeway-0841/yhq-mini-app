@@ -31,10 +31,10 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   loading:   false,
   error:     null,
   lang:      'uz',
-  subjectId: 'yhq',
+  subjectId: useSubjectStore.getState().subjectId || 'yhq',
 
   async load(lang, subjectId) {
-    const sid = subjectId ?? useSubjectStore.getState().subjectId
+    const sid = subjectId ?? useSubjectStore.getState().subjectId ?? get().subjectId
     // Shu til + shu fan allaqachon yuklangan
     if (get().loaded && get().lang === lang && get().subjectId === sid) return
     const version = ++loadVersion

@@ -231,7 +231,7 @@ export default function Dashboard() {
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-5">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
-              subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
+              subtitle={`${questionsCount > 0 ? `${questionsCount}+ ` : ''}${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
             <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
               onClick={goTopics} />
