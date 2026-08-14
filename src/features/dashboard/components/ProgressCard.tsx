@@ -54,7 +54,7 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const ringOffset = C * (1 - shown / 100)
 
   return (
-    <div className="mx-5 mb-3.5 card-premium rounded-[28px] p-5 relative overflow-hidden"
+    <div className="mx-5 card-premium rounded-[28px] p-5 relative overflow-hidden"
       style={{ boxShadow: '0 0 44px -12px var(--p-glow), inset 0 1px 0 rgba(255,255,255,0.03), 0 10px 28px rgba(2,6,16,0.30)' }}>
       <div className="flex items-center justify-between gap-4">
         {/* Chap: foiz + ma'lumot */}

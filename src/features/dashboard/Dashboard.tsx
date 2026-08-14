@@ -227,9 +227,10 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
+          <div className="h-6" aria-hidden="true" />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-6">
+          <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-8">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
