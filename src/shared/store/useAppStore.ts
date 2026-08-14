@@ -37,6 +37,8 @@ interface AppState {
   wrongByTicket:  Record<string, number>
   /** Composite kalitlar: `${subjectId}:${questionId}` ('yhq:123') — multi-fan identity */
   savedQuestions: string[]
+  /** Composite kalitlar: `${subjectId}:${questionId}` — unique yechilgan savollar to'plami */
+  solvedQuestions: string[]
   tariff:         'free' | 'premium'
   initialized:    boolean
   /** User-set display name override (Telegram name o'rniga) */
@@ -107,20 +109,25 @@ export const useAppStore = create<AppState>()(
         const wKey = questionKey(subjectId, questionId)
         // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
         const wasWrong = correct && (get().wrongByTicket[wKey] ?? 0) > 0
-        set((s) => ({
-          totalCorrect:  s.totalCorrect  + (correct ? 1 : 0),
-          totalWrong:    s.totalWrong    + (correct ? 0 : 1),
-          totalAnswered: s.totalAnswered + 1,
-          streak:        correct ? s.streak + 1 : 0,
-          wrongByTicket: correct
-            ? (() => {
-                // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
-                const next = { ...s.wrongByTicket }
-                delete next[wKey]
-                return next
-              })()
-            : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 },
-        }))
+        set((s) => {
+          const solved = s.solvedQuestions ?? []
+          const nextSolved = solved.includes(wKey) ? solved : [...solved, wKey]
+          return {
+            totalCorrect:    s.totalCorrect  + (correct ? 1 : 0),
+            totalWrong:      s.totalWrong    + (correct ? 0 : 1),
+            totalAnswered:   s.totalAnswered + 1,
+            solvedQuestions: nextSolved,
+            streak:          correct ? s.streak + 1 : 0,
+            wrongByTicket: correct
+              ? (() => {
+                  // Xato tuzatildi — ro'yxatdan o'chir ("Xatolarni tuzatish"dan yo'qoladi)
+                  const next = { ...s.wrongByTicket }
+                  delete next[wKey]
+                  return next
+                })()
+              : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 },
+          }
+        })
         if (dailyStreak !== null) useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak)
         const userId = get().user?.id
         if (wasWrong && userId && userId !== '0') {
@@ -148,8 +155,9 @@ export const useAppStore = create<AppState>()(
       totalWrong:     0,
       totalAnswered:  0,
       wrongByTicket:  {},
-      savedQuestions: [],
-      tariff:         'free',
+      savedQuestions:  [],
+      solvedQuestions: [],
+      tariff:          'free',
       initialized:    false,
       displayName:    null,
       customAvatar:   null,
@@ -221,7 +229,7 @@ export const useAppStore = create<AppState>()(
 
       resetProgress: () => {
         const userId = get().user?.id
-        set({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, streak: 0, wrongByTicket: {} })
+        set({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, streak: 0, wrongByTicket: {}, solvedQuestions: [] })
         if (userId && userId !== '0') api.resetProgress(userId).catch(console.error)
       },
 
@@ -268,6 +276,7 @@ export const useAppStore = create<AppState>()(
         totalAnswered: 0,
         wrongByTicket: {},
         savedQuestions: [],
+        solvedQuestions: [],
         tariff: 'free',
         initialized: false,
         displayName: null,

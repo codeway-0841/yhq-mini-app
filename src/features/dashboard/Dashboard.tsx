@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   Play, Swords, GraduationCap,
@@ -28,72 +28,57 @@ import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/use
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
-function RejimlarCarousel({ title, items, lang }: {
+function RejimlarCarousel({
+  title,
+  items,
+  lang,
+}: {
   title: string
-  items: { icon: React.ElementType; label: string; onClick: () => void }[]
   lang: 'uz' | 'ru'
+  items: { icon: React.ElementType; label: string; onClick: () => void }[]
 }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const paused = useRef(false)
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const isHovered = useRef(false)
 
+  // Sekin avto-aylanish (foydalanuvchi ushlab tursa to'xtaydi)
   useEffect(() => {
-    const el = ref.current
+    const el = scrollRef.current
     if (!el) return
-    let timer: ReturnType<typeof setInterval> | null = null
-    let resumeTimer: ReturnType<typeof setTimeout> | null = null
+    let animId: number
     const step = () => {
-      if (paused.current || !el) return
-      const max = el.scrollWidth - el.clientWidth
-      if (max <= 0) return
-      const next = el.scrollLeft + 112 // ~1 kvadrat karta + gap
-      if (next >= max - 4) {
-        el.scrollTo({ left: 0, behavior: 'smooth' })
-      } else {
-        el.scrollBy({ left: 112, behavior: 'smooth' })
+      if (!isHovered.current && el) {
+        el.scrollLeft += 0.4
+        if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 1) {
+          el.scrollLeft = 0
+        }
       }
+      animId = requestAnimationFrame(step)
     }
-    timer = setInterval(step, 2800)
-    const pause = () => {
-      paused.current = true
-      if (resumeTimer) clearTimeout(resumeTimer)
-      resumeTimer = setTimeout(() => { paused.current = false }, 3500)
-    }
-    const onEnter = () => { paused.current = true; if (resumeTimer) clearTimeout(resumeTimer) }
-    const onLeave = () => { paused.current = false }
-    const onScroll = () => pause() // qo'lda surilganda auto pauza
-    el.addEventListener('mouseenter', onEnter)
-    el.addEventListener('mouseleave', onLeave)
-    el.addEventListener('touchstart', pause, { passive: true })
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      if (timer) clearInterval(timer)
-      if (resumeTimer) clearTimeout(resumeTimer)
-      el.removeEventListener('mouseenter', onEnter)
-      el.removeEventListener('mouseleave', onLeave)
-      el.removeEventListener('touchstart', pause)
-      el.removeEventListener('scroll', onScroll)
-    }
+    animId = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(animId)
   }, [])
-
-  const onYana = () => {
-    ref.current?.scrollBy({ left: 224, behavior: 'smooth' })
-  }
 
   return (
     <div>
       <div className="flex items-center justify-between px-5 mb-2.5">
-        <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
-        <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
-          {lang === 'ru' ? 'Ещё' : 'Yana'}
-        </button>
+        <h3 className="text-xs font-bold text-psubtle uppercase tracking-wider">{title}</h3>
+        <span className="text-[11px] font-medium text-pmuted">
+          {lang === 'ru' ? 'Свайп →' : 'Surish →'}
+        </span>
       </div>
       <div
-        ref={ref}
-        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-5 px-5 pb-3 mb-2 touch-pan-x select-none"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' as const, WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' }}
+        ref={scrollRef}
+        onMouseEnter={() => { isHovered.current = true }}
+        onMouseLeave={() => { isHovered.current = false }}
+        onTouchStart={() => { isHovered.current = true }}
+        onTouchEnd={() => { isHovered.current = false }}
+        className="flex gap-2.5 overflow-x-auto px-5 scrollbar-none pb-1"
+        style={{ scrollBehavior: 'auto' }}
       >
-        {items.map((it) => (
-          <ServiceCard key={it.label} icon={it.icon} label={it.label} onClick={it.onClick} />
+        {items.map((item, idx) => (
+          <div key={idx} className="flex-shrink-0 w-[84px]">
+            <ServiceCard icon={item.icon} label={item.label} onClick={item.onClick} />
+          </div>
         ))}
       </div>
     </div>
@@ -107,17 +92,25 @@ export default function Dashboard() {
   const [showSubjects, setShowSubjects] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
-  const user           = useAppStore((s) => s.user)
-  const displayName    = useAppStore((s) => s.displayName)
-  const settings       = useAppStore((s) => s.settings)
-  const totalCorrect   = useAppStore((s) => s.totalCorrect)
-  const totalWrong     = useAppStore((s) => s.totalWrong)
-  const totalAnswered  = useAppStore((s) => s.totalAnswered)
-  const savedQuestions = useAppStore((s) => s.savedQuestions)
-  const subject  = useSubjectStore((s) => s.subject)
+  const user            = useAppStore((s) => s.user)
+  const displayName     = useAppStore((s) => s.displayName)
+  const settings        = useAppStore((s) => s.settings)
+  const totalCorrect    = useAppStore((s) => s.totalCorrect)
+  const totalWrong      = useAppStore((s) => s.totalWrong)
+  const totalAnswered   = useAppStore((s) => s.totalAnswered)
+  const savedQuestions  = useAppStore((s) => s.savedQuestions)
+  const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
+  const subject         = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
-  const dailyStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
-  const questionsCount = useQuestionsStore((s) => s.questions.length)
+  const dailyStreak     = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+  const questionsCount  = useQuestionsStore((s) => s.questions.length)
+
+  // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
+  const uniqueSolvedCount = useMemo(() => {
+    const prefix = `${subject.id}:`
+    const count = solvedQuestions.filter((k) => k.startsWith(prefix)).length
+    return count > 0 ? count : (totalAnswered > 0 && totalAnswered <= questionsCount ? totalAnswered : 0)
+  }, [solvedQuestions, subject.id, totalAnswered, questionsCount])
 
   useDashboardSync(user?.id, subject.id, settings.language)
 
@@ -221,7 +214,7 @@ export default function Dashboard() {
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
-            totalAnswered={totalAnswered}
+            totalAnswered={uniqueSolvedCount}
             streak={dailyStreak}
             totalPool={questionsCount}
             lang={settings.language}
