@@ -323,6 +323,7 @@ export const useAppStore = create<AppState>()(
         }
         const saved = (p.savedQuestions ?? []).map((x) =>
           typeof x === 'number' ? `${DEFAULT_SUBJECT_ID}:${x}` : x)
+        const solved = Array.isArray(p.solvedQuestions) ? p.solvedQuestions : []
         // v0: offlineMode eski toggle HECH NIMA QILMASDI — foydalanuvchi aslida
         // uni o'chirmagan (SW baribir ishlardi), shuning uchun true'ga ko'taramiz.
         return {
@@ -330,6 +331,7 @@ export const useAppStore = create<AppState>()(
           settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}), offlineMode: true },
           wrongByTicket: wrong,
           savedQuestions: saved,
+          solvedQuestions: solved,
         } as never
       },
       // user endi PERSIST QILINADI — ilova 2+ marta ochilganda splash'SIZ
@@ -346,6 +348,7 @@ export const useAppStore = create<AppState>()(
         totalAnswered:  s.totalAnswered,
         wrongByTicket:  s.wrongByTicket,
         savedQuestions: s.savedQuestions,
+        solvedQuestions: s.solvedQuestions ?? [],
         displayName:    s.displayName,
         customAvatar:   s.customAvatar,
         tariff:         s.tariff,

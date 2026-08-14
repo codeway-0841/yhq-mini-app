@@ -112,7 +112,6 @@ export default function Dashboard() {
   const settings        = useAppStore((s) => s.settings)
   const totalCorrect    = useAppStore((s) => s.totalCorrect)
   const totalWrong      = useAppStore((s) => s.totalWrong)
-  const totalAnswered   = useAppStore((s) => s.totalAnswered)
   const savedQuestions  = useAppStore((s) => s.savedQuestions)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
   const subject         = useSubjectStore((s) => s.subject)
@@ -123,9 +122,8 @@ export default function Dashboard() {
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {
     const prefix = `${subject.id}:`
-    const count = solvedQuestions.filter((k) => k.startsWith(prefix)).length
-    return count > 0 ? count : (totalAnswered > 0 && totalAnswered <= questionsCount ? totalAnswered : 0)
-  }, [solvedQuestions, subject.id, totalAnswered, questionsCount])
+    return solvedQuestions.filter((k) => k.startsWith(prefix)).length
+  }, [solvedQuestions, subject.id])
 
   useDashboardSync(user?.id, subject.id, settings.language)
 
