@@ -80,8 +80,8 @@ function RejimlarCarousel({ title, items, lang }: {
   }
 
   return (
-    <div className="pt-4 mt-2">
-      <div className="flex items-center justify-between px-5 mb-3">
+    <div>
+      <div className="flex items-center justify-between px-5 mb-2.5">
         <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
         <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
           {lang === 'ru' ? 'Ещё' : 'Yana'}
@@ -195,7 +195,7 @@ export default function Dashboard() {
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
           key=subjectId: fan almashganda smooth fade transition, reload yo'q */}
       {subject.available ? (
-        <div key={subject.id} className="animate-premiumIn space-y-0">
+        <div key={subject.id} className="animate-premiumIn">
           {/* Demo ma'lumotlar badge */}
           {subject.demoData && (
             <div className="mx-5 mb-3 rounded-2xl px-4 py-3 flex items-center gap-2"
@@ -227,10 +227,9 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
-          <div className="h-6" aria-hidden="true" />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-8">
+          <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-5">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount || '300'}+ ${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
@@ -247,7 +246,7 @@ export default function Dashboard() {
           </div>
 
           {/* 5. Modes — auto carousel */}
-          <div className="mb-6">
+          <div className="mb-5">
             <RejimlarCarousel
               title={tt('modesTitle')}
               lang={settings.language}

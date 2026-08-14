@@ -24,13 +24,13 @@ export interface ItemProps {
   disabled?: boolean
 }
 export function Item({ icon: Icon, iconColor = '#94a3b8', label, right, onPress, disabled }: ItemProps) {
+  const Comp = onPress ? 'button' : 'div'
   return (
-    <button
-      type="button"
+    <Comp
+      type={onPress ? 'button' : undefined}
       onClick={disabled ? undefined : onPress}
-      disabled={disabled}
       className={`flex items-center gap-3 w-full px-4 py-3.5 transition-colors ${
-        disabled ? 'opacity-50 cursor-not-allowed' : 'active:bg-elevated'
+        disabled ? 'opacity-50 cursor-not-allowed' : onPress ? 'active:bg-elevated cursor-pointer' : ''
       }`}
     >
       <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
@@ -39,6 +39,6 @@ export function Item({ icon: Icon, iconColor = '#94a3b8', label, right, onPress,
       </div>
       <span className="flex-1 text-[14px] text-left text-fg">{label}</span>
       {right !== undefined ? right : <ChevronRight size={16} className="text-lineStrong" />}
-    </button>
+    </Comp>
   )
 }

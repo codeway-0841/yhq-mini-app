@@ -54,8 +54,7 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const ringOffset = C * (1 - shown / 100)
 
   return (
-    <div className="mx-5 card-premium rounded-[28px] p-5 relative overflow-hidden"
-      style={{ boxShadow: '0 0 44px -12px var(--p-glow), inset 0 1px 0 rgba(255,255,255,0.03), 0 10px 28px rgba(2,6,16,0.30)' }}>
+    <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden">
       <div className="flex items-center justify-between gap-4">
         {/* Chap: foiz + ma'lumot */}
         <div className="flex-1 min-w-0">
@@ -66,8 +65,7 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
           </p>
         </div>
         {/* O'ng: ring chart (aksent rang) */}
-        <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0"
-          style={{ filter: 'drop-shadow(0 0 12px var(--p-glow))' }}>
+        <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0">
           <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-line)" strokeWidth="8" />
           <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-primary)" strokeWidth="8"
             strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}

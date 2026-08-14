@@ -162,7 +162,7 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
   }, [])
 
   return (
-    <div className="mb-5">
+    <div className="mb-3.5">
       <div ref={trackRef}
         className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 touch-pan-x select-none [&::-webkit-scrollbar]:hidden"
         style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' as const }}>
