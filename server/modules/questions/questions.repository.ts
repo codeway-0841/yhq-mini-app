@@ -1,4 +1,4 @@
-import { asc, eq } from 'drizzle-orm'
+import { and, asc, eq } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { questions, topics, questionExplanations } from '../../schema'
 
@@ -18,15 +18,20 @@ async function cached<T>(key: string, fn: () => Promise<T>): Promise<T> {
 export const questionsRepository = {
   // ORDER BY id — deterministik tartib SHART: Biletlar seededShuffle massiv
   // tartibiga bog'liq; tartibsiz SELECT reseed'dan keyin bilet tarkibini buzardi.
-  findAll() {
-    return cached('questions:all', () =>
-      db.select().from(questions).orderBy(asc(questions.id)))
+  findAll(bankId = 'traffic_rules_db') {
+    return cached(`questions:all:${bankId}`, () =>
+      db
+        .select()
+        .from(questions)
+        .where(eq(questions.bankId, bankId))
+        .orderBy(asc(questions.id)),
+    )
   },
 
   /** Readiness check — question pool loaded va non-empty */
   async isPoolReady(): Promise<boolean> {
     try {
-      const pool = await questionsRepository.findAll()
+      const pool = await questionsRepository.findAll('traffic_rules_db')
       return pool.length > 0
     } catch (err) {
       console.error('[questions] Pool readiness check failed:', err)
@@ -34,20 +39,30 @@ export const questionsRepository = {
     }
   },
 
-  findById(questionId: number) {
-    return cached(`questions:id:${questionId}`, async () => {
-      const [row] = await db.select().from(questions).where(eq(questions.id, questionId))
+  findById(questionId: number, bankId = 'traffic_rules_db') {
+    return cached(`questions:id:${bankId}:${questionId}`, async () => {
+      const [row] = await db
+        .select()
+        .from(questions)
+        .where(and(eq(questions.id, questionId), eq(questions.bankId, bankId)))
       return row ?? null
     })
   },
 
-  findByTopic(topicId: number) {
-    return cached(`questions:topic:${topicId}`, () =>
-      db.select().from(questions).where(eq(questions.topicId, topicId)).orderBy(asc(questions.id)))
+  findByTopic(topicId: number, bankId = 'traffic_rules_db') {
+    return cached(`questions:topic:${bankId}:${topicId}`, () =>
+      db
+        .select()
+        .from(questions)
+        .where(and(eq(questions.topicId, topicId), eq(questions.bankId, bankId)))
+        .orderBy(asc(questions.id)),
+    )
   },
 
-  findTopics() {
-    return cached('topics:all', () => db.select().from(topics))
+  findTopics(bankId = 'traffic_rules_db') {
+    return cached(`topics:all:${bankId}`, () =>
+      db.select().from(topics).where(eq(topics.bankId, bankId)),
+    )
   },
 
   /** Admin CRUD'dan keyin cache'ni tozalash — aks holda 5 daqiqagacha

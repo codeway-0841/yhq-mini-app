@@ -183,6 +183,8 @@ export default function App() {
       if (s.subjectId !== prevSubj) {
         prevSubj = s.subjectId
         track('subject_switch', { id: s.subjectId })
+        const lang = useAppStore.getState().settings?.language ?? 'uz'
+        void useQuestionsStore.getState().load(lang, s.subjectId)
       }
     })
 
