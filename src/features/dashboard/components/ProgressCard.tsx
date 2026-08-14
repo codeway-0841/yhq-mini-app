@@ -43,8 +43,10 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const navigate = useNavigate()
   const total = totalPool > 0 ? totalPool : 0
 
-  // Baza bo'yicha yechilgan testlar foizi: 10 ta / 1000 ta = 1%, 1000 ta / 1000 ta = 100%
-  const progressPct = total > 0 ? Math.min(100, Math.round((totalAnswered / total) * 100)) : 0
+  // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000 ta / 1000 ta = 100%
+  const progressPct = total > 0
+    ? (totalAnswered === 0 ? 0 : Math.min(100, Math.max(1, Math.round((totalAnswered / total) * 100))))
+    : 0
   const xp = totalCorrect * 10
   const league = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
