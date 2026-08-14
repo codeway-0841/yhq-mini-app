@@ -71,7 +71,7 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
     <button
       onClick={onClick}
       aria-label={`${label}${comingSoon ? ' (tez orada)' : ''}`}
-      className={`card-premium relative flex flex-col items-center justify-center text-center gap-2.5 p-3.5 min-h-[104px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
+      className={`card-premium relative flex flex-col items-center justify-center text-center gap-2 p-2.5 sm:p-3.5 min-h-[96px] sm:min-h-[104px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
     >
       {badge != null && (
         <span className="absolute -top-2 -right-1 text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg"
@@ -79,13 +79,13 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
           {badge}
         </span>
       )}
-      <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] sm:rounded-[14px] flex items-center justify-center flex-shrink-0"
         style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E`, boxShadow: `0 0 18px ${iconColor}40` }}>
-        <Icon size={20} strokeWidth={2} style={{ color: iconColor }} />
+        <Icon size={19} strokeWidth={2} style={{ color: iconColor }} />
       </div>
-      <div className="text-center">
-        <p className="text-[13px] font-semibold text-pfg leading-tight">{label}</p>
-        <p className={`text-[10.5px] font-medium mt-0.5 ${comingSoon ? 'text-ppurple' : 'text-psubtle'}`}>{subtitle}</p>
+      <div className="text-center w-full min-w-0 px-0.5">
+        <p className="text-[12px] sm:text-[13px] font-semibold text-pfg leading-tight truncate">{label}</p>
+        <p className={`text-[10px] sm:text-[10.5px] font-medium mt-0.5 truncate ${comingSoon ? 'text-ppurple' : 'text-psubtle'}`}>{subtitle}</p>
       </div>
     </button>
   )
