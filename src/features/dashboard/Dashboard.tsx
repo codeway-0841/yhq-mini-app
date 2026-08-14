@@ -28,57 +28,72 @@ import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/use
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
-function RejimlarCarousel({
-  title,
-  items,
-  lang,
-}: {
+function RejimlarCarousel({ title, items, lang }: {
   title: string
-  lang: 'uz' | 'ru'
   items: { icon: React.ElementType; label: string; onClick: () => void }[]
+  lang: 'uz' | 'ru'
 }) {
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const isHovered = useRef(false)
+  const ref = useRef<HTMLDivElement>(null)
+  const paused = useRef(false)
 
-  // Sekin avto-aylanish (foydalanuvchi ushlab tursa to'xtaydi)
   useEffect(() => {
-    const el = scrollRef.current
+    const el = ref.current
     if (!el) return
-    let animId: number
+    let timer: ReturnType<typeof setInterval> | null = null
+    let resumeTimer: ReturnType<typeof setTimeout> | null = null
     const step = () => {
-      if (!isHovered.current && el) {
-        el.scrollLeft += 0.4
-        if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 1) {
-          el.scrollLeft = 0
-        }
+      if (paused.current || !el) return
+      const max = el.scrollWidth - el.clientWidth
+      if (max <= 0) return
+      const next = el.scrollLeft + 112 // ~1 kvadrat karta + gap
+      if (next >= max - 4) {
+        el.scrollTo({ left: 0, behavior: 'smooth' })
+      } else {
+        el.scrollBy({ left: 112, behavior: 'smooth' })
       }
-      animId = requestAnimationFrame(step)
     }
-    animId = requestAnimationFrame(step)
-    return () => cancelAnimationFrame(animId)
+    timer = setInterval(step, 2800)
+    const pause = () => {
+      paused.current = true
+      if (resumeTimer) clearTimeout(resumeTimer)
+      resumeTimer = setTimeout(() => { paused.current = false }, 3500)
+    }
+    const onEnter = () => { paused.current = true; if (resumeTimer) clearTimeout(resumeTimer) }
+    const onLeave = () => { paused.current = false }
+    const onScroll = () => pause() // qo'lda surilganda auto pauza
+    el.addEventListener('mouseenter', onEnter)
+    el.addEventListener('mouseleave', onLeave)
+    el.addEventListener('touchstart', pause, { passive: true })
+    el.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      if (timer) clearInterval(timer)
+      if (resumeTimer) clearTimeout(resumeTimer)
+      el.removeEventListener('mouseenter', onEnter)
+      el.removeEventListener('mouseleave', onLeave)
+      el.removeEventListener('touchstart', pause)
+      el.removeEventListener('scroll', onScroll)
+    }
   }, [])
+
+  const onYana = () => {
+    ref.current?.scrollBy({ left: 224, behavior: 'smooth' })
+  }
 
   return (
     <div>
       <div className="flex items-center justify-between px-5 mb-2.5">
-        <h3 className="text-xs font-bold text-psubtle uppercase tracking-wider">{title}</h3>
-        <span className="text-[11px] font-medium text-pmuted">
-          {lang === 'ru' ? 'Свайп →' : 'Surish →'}
-        </span>
+        <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
+        <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
+          {lang === 'ru' ? 'Ещё' : 'Yana'}
+        </button>
       </div>
       <div
-        ref={scrollRef}
-        onMouseEnter={() => { isHovered.current = true }}
-        onMouseLeave={() => { isHovered.current = false }}
-        onTouchStart={() => { isHovered.current = true }}
-        onTouchEnd={() => { isHovered.current = false }}
-        className="flex gap-2.5 overflow-x-auto px-5 scrollbar-none pb-1"
-        style={{ scrollBehavior: 'auto' }}
+        ref={ref}
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-5 px-5 pb-3 mb-2 touch-pan-x select-none"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' as const, WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' }}
       >
-        {items.map((item, idx) => (
-          <div key={idx} className="flex-shrink-0 w-[84px]">
-            <ServiceCard icon={item.icon} label={item.label} onClick={item.onClick} />
-          </div>
+        {items.map((it) => (
+          <ServiceCard key={it.label} icon={it.icon} label={it.label} onClick={it.onClick} />
         ))}
       </div>
     </div>
