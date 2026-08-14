@@ -61,6 +61,9 @@ async function seedRussian() {
     topicSlug: string
   }> = JSON.parse(fs.readFileSync(jsonPath, 'utf8'))
 
+  // Delete any existing questions for russian_db to guarantee clean update
+  await db.delete(questions).where(eq(questions.bankId, 'russian_db'))
+
   // Insert in batches of 100
   let inserted = 0
   for (let i = 0; i < rawQuestions.length; i += 100) {
@@ -82,11 +85,11 @@ async function seedRussian() {
       }
     })
 
-    await db.insert(questions).values(batch).onConflictDoNothing()
+    await db.insert(questions).values(batch)
     inserted += batch.length
   }
 
-  console.log(`✅ Rus tili fani uchun ${inserted} ta savol muvaffaqiyatli yuklandi!`)
+  console.log(`✅ Rus tili fani uchun ${inserted} ta savol to'liq matn va variantlari bilan muvaffaqiyatli yuklandi!`)
 }
 
 seedRussian()
