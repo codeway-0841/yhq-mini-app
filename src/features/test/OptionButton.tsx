@@ -8,8 +8,8 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   answered: boolean
   fontSize: string
 }) {
-  const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all'
-  let style  = 'btn-3d-ghost font-semibold border-transparent hover:border-duo-green/50'
+  const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all focus:outline-none'
+  let style  = 'btn-3d-ghost font-semibold border-transparent hover:border-pline/60 hover:bg-elevated/60 active:border-pline'
   let chip   = 'bg-elevated border-line text-subtle'
   let icon   = null
   let glow: string | undefined
@@ -34,8 +34,13 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
     fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-lg' : 'text-base'
 
   return (
-    <button className={`${base} ${style} mb-2 disabled:cursor-not-allowed`} style={glow ? { boxShadow: glow } : undefined}
-      onClick={onSelect} disabled={answered}>
+    <button
+      type="button"
+      className={`${base} ${style} mb-2 disabled:cursor-not-allowed`}
+      style={glow ? { boxShadow: glow } : undefined}
+      onClick={onSelect}
+      disabled={answered}
+    >
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2.5">
           <span className={`flex-none w-8 h-8 rounded-lg border flex items-center justify-center text-xs font-black ${chip}`}>

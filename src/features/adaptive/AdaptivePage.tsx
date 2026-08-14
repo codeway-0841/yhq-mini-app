@@ -152,7 +152,7 @@ export default function AdaptivePage() {
             revealed && opt.id === selectedOption ? 'wrong' :
             'default'
           return (
-            <Option key={opt.id} id={opt.id} text={opt.text}
+            <Option key={`${q.id}_${opt.id}`} id={opt.id} text={opt.text}
               state={state} onSelect={() => handleSelect(opt.id)} answered={answered} />
           )
         })}

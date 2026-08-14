@@ -65,8 +65,8 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           isSelected    ? 'bg-pdanger/15   border-pdanger   text-fg' :
                           'bg-surface border-line text-muted'
         return (
-          <button key={opt.id} disabled={answered} onClick={() => onAnswer(opt.id)}
-            className={`w-full text-left rounded-xl border p-3.5 mb-2 transition-all active:scale-[0.98] ${style}`}>
+          <button key={`${q.id}_${opt.id}`} type="button" disabled={answered} onClick={() => onAnswer(opt.id)}
+            className={`w-full text-left rounded-xl border p-3.5 mb-2 transition-all focus:outline-none active:scale-[0.98] ${style}`}>
             <div className="flex items-center gap-3">
               <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-bold opacity-60 flex-shrink-0">
                 {opt.id}

@@ -169,6 +169,9 @@ export default function TestPage() {
 
   const goTo = useCallback((i: number) => {
     cancelAutoNext()
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
     if (i >= 0 && i < activeQuestions.length) {
       setCurrent(i)
       setStudyOpen(false)
@@ -497,7 +500,7 @@ export default function TestPage() {
           )}
           <div className="lg:col-start-1 lg:row-start-2">
             {q.options.map((opt) => (
-              <OptionButton key={opt.id} option={opt} state={getOptionState(opt.id)}
+              <OptionButton key={`${q.id}_${opt.id}`} option={opt} state={getOptionState(opt.id)}
                 onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
             ))}
           </div>

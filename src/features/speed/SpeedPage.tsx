@@ -181,13 +181,13 @@ export default function SpeedPage() {
           const showResult = answered && !busy
           const style =
             !showResult && isChoice ? 'bg-duo-blue/10 border-duo-blue/60 border-2 text-pfg animate-pulse' :
-            !showResult            ? 'bg-surface border-pline text-pfg hover:border-duo-green/50 active:scale-[0.98]' :
+            !showResult            ? 'bg-surface border-pline text-pfg hover:border-pline/80 hover:bg-elevated/60 active:scale-[0.98]' :
             isRight                ? 'bg-duo-green/15 border-duo-green text-pfg' :
             isChoice               ? 'bg-duo-red/15 border-duo-red text-duo-red' :
                                      'bg-surface border-pline text-pmuted'
           return (
-            <button key={opt.id} onClick={() => handleSelect(opt.id)} disabled={answered}
-              className={`w-full text-left rounded-xl border-2 p-3.5 mb-2 transition-all ${style}`}>
+            <button key={`${q.id}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}
+              className={`w-full text-left rounded-xl border-2 p-3.5 mb-2 transition-all focus:outline-none ${style}`}>
               <div className="flex items-center gap-3">
                 <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-bold opacity-60 flex-shrink-0">
                   {opt.id}
