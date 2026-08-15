@@ -404,6 +404,20 @@ export const api = {
     request<{ total: number; withTopic: number }>('GET', `/admin/questions/meta${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
   getAdminTopics: (subjectId?: string) =>
     request<DbTopic[]>('GET', `/admin/topics${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
+  bulkImportQuestions: (data: {
+    subjectId?: string
+    bankId?: string
+    items: Array<{
+      questionUz: string
+      questionRu: string
+      optionsUz: Record<string, string>
+      optionsRu: Record<string, string>
+      correctAnswer: string
+      image?: string | null
+      topicId?: number | null
+    }>
+  }) =>
+    request<{ success: boolean; count: number }>('POST', '/admin/questions/bulk-import', data),
 
   // ── Promo codes ───────────────────────────────────────────────────────────
   redeemPromo: (code: string) =>

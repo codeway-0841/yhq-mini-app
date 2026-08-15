@@ -6,7 +6,18 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 👑 Kengaytirilgan Admin Panel (Admin Control Center)
+### 1. 📥 Savollarni Ommaviy Yuklash (Bulk Questions Import via CSV / Text / JSON)
+* **Xususiyat:** Har qanday fanga (YHQ, Rus tili, Matematika, Fizika, Kimyo, Ingliz tili, Tarix, Biologiya) yuzlab savollarni bir vaqtda tez va xatosiz yuklash imkoniyati.
+* **3 Ta Yuklash Usuli:**
+  * **📄 CSV / Excel Fayl:** Excel yoki Google Sheets'dan eksport qilingan `.csv` faylni yuklash.
+  * **📝 Matn (AI / Word):** ChatGPT yoki Word'dan olingan testlarni (`1. Savol... A)... B)... To'g'ri: A`) to'g'ridan-to'g'ri nusxalab tashlash (Smart Parser).
+  * **💻 JSON Kod:** JSON formatidagi savollar massivini joylash.
+* **Qulayliklar:** Bir bosishda namunaviy `.csv` va `.json` shablonlarini yuklab olish (Download Template), savollarni yuklashdan oldin xatoliklarni tekshirish (Pre-validation Preview) va xavfsiz batch insert.
+* **Fayllar:** `src/features/admin/components/BulkImportModal.tsx`, `src/features/admin/components/AdminQuestionsTab.tsx`, `server/modules/admin/admin.router.ts`, `src/shared/api/index.ts`, `tests/unit/modules/bulk-import.test.ts`.
+
+---
+
+### 2. 👑 Kengaytirilgan Admin Panel (Admin Control Center)
 * **4 ta Asosiy Bo'lim (Tabs):**
   * **🎟 Promokodlar:** Yangi promokod yaratish (nomi, 7k/15k/30k/90k/365k muddat, limit, tugash sanasi), barcha promokodlar ro'yxati, to'xtatish/faollashtirish (Pause/Resume), o'chirish va Telegram link nusxalash.
   * **❓ Savollar (Fanlar bo'yicha mustaqil):** Barcha fanlar (🚗 YHQ, 🇷🇺 Rus tili, ⚡ Fizika, π Matematika, 🧪 Kimyo, 🇬🇧 Ingliz tili, 📖 Tarix, 🧬 Biologiya) bo'yicha alohida tanlagich (Chips), har bir fanning o'z savollari soni va mavzulari statistikasi, tanlangan fanga yangi savol qo'shish, qidirish, tahrirlash va o'chirish.

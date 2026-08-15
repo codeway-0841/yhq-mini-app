@@ -1,8 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
-import { Plus, Pencil, Trash2, Search, X, Loader2, AlertTriangle, RotateCw } from 'lucide-react'
+import { Plus, Pencil, Trash2, Search, X, Loader2, AlertTriangle, RotateCw, Upload } from 'lucide-react'
 import { api, type AdminDbQuestion, type DbTopic } from '../../../shared/api'
 import { SUBJECT_BASES, type SubjectId } from '../../../../shared/subjects'
 import { haptics } from '../../../platform/haptics'
+import BulkImportModal from './BulkImportModal'
 
 interface AdminQuestionsTabProps {
   lang: 'uz' | 'ru'
@@ -16,9 +17,16 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
   const [search, setSearch] = useState('')
   const [editing, setEditing] = useState<AdminDbQuestion | null>(null)
   const [creating, setCreating] = useState(false)
+  const [bulkImporting, setBulkImporting] = useState(false)
+  const [toast, setToast] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [loading, setLoading] = useState(true)
   const [deleteConfirm, setConfirm] = useState<AdminDbQuestion | null>(null)
+
+  const showToast = (msg: string) => {
+    setToast(msg)
+    setTimeout(() => setToast(null), 3500)
+  }
 
   const currentSubjectObj = useMemo(() => {
     return SUBJECT_BASES.find((s) => s.id === selectedSubject) ?? SUBJECT_BASES[0]
@@ -88,7 +96,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
             {lang === 'ru' ? currentSubjectObj.nameRu : currentSubjectObj.name} ({meta?.total ?? rows.length} ta savol)
           </p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           <button
             onClick={refresh}
             disabled={busy}
@@ -98,11 +106,19 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
             <RotateCw size={14} className={busy ? 'animate-spin text-duo-purple' : ''} />
           </button>
           <button
-            onClick={() => setCreating(true)}
-            className="btn-premium flex items-center gap-1.5 px-3.5 py-2.5 rounded-2xl text-xs font-black"
+            onClick={() => setBulkImporting(true)}
+            className="px-3 py-2.5 rounded-2xl bg-surface border border-line text-xs font-black text-fg hover:border-duo-purple active:scale-95 transition-all flex items-center gap-1"
+            title="Ommaviy yuklash"
           >
-            <Plus size={15} />
-            Yangi savol
+            <Upload size={14} className="text-duo-purple" />
+            <span>Ommaviy</span>
+          </button>
+          <button
+            onClick={() => setCreating(true)}
+            className="btn-premium flex items-center gap-1 px-3 py-2.5 rounded-2xl text-xs font-black"
+          >
+            <Plus size={14} />
+            <span>Yangi</span>
           </button>
         </div>
       </div>
@@ -288,6 +304,27 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               </button>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Bulk Import Modal */}
+      {bulkImporting && (
+        <BulkImportModal
+          subjectId={selectedSubject}
+          subjectName={currentSubjectObj.name}
+          subjectIcon={currentSubjectObj.icon}
+          onClose={() => setBulkImporting(false)}
+          onSuccess={(count) => {
+            showToast(`${count} ta savol muvaffaqiyatli yuklandi!`)
+            refresh()
+          }}
+        />
+      )}
+
+      {/* Toast Alert */}
+      {toast && (
+        <div className="fixed bottom-6 left-4 right-4 card-neon text-fg text-xs font-bold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
+          {toast}
         </div>
       )}
     </div>

@@ -108,6 +108,59 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
   res.status(201).json({ id: insertedId, created: true })
 }))
 
+// ── POST /api/admin/questions/bulk-import — ommaviy savollar yuklash ──
+const BulkImportSchema = z.object({
+  subjectId: z.string().optional(),
+  bankId: z.string().optional(),
+  items: z.array(z.object({
+    questionUz: z.string().min(2).max(2000),
+    questionRu: z.string().min(2).max(2000),
+    optionsUz: OptionsSchema,
+    optionsRu: OptionsSchema,
+    correctAnswer: z.string().regex(/^[A-Z]\d+$/),
+    image: z.string().max(500).nullable().optional(),
+    topicId: z.number().int().positive().nullable().optional(),
+  })).min(1).max(500),
+})
+
+router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema }), wrap(async (req, res) => {
+  const { subjectId, bankId: explicitBankId, items } = req.body as z.infer<typeof BulkImportSchema>
+  const bankId = resolveBankId(explicitBankId || subjectId)
+
+  await db.insert(questionBanks).values({ id: bankId, name: bankId }).onConflictDoNothing()
+
+  const [row] = await db.select({ maxId: sql<number>`COALESCE(MAX(${questions.id}), 0)` }).from(questions)
+  let currentMaxId = row.maxId
+
+  const recordsToInsert = items.map((it) => {
+    currentMaxId += 1
+    return {
+      id: currentMaxId,
+      bankId,
+      externalId: String(currentMaxId),
+      questionUz: it.questionUz,
+      questionRu: it.questionRu,
+      optionsUz: it.optionsUz,
+      optionsRu: it.optionsRu,
+      correctAnswer: it.correctAnswer,
+      image: it.image ?? null,
+      topicId: it.topicId ?? null,
+    }
+  })
+
+  // Insert in chunks of 100 for safety
+  const CHUNK_SIZE = 100
+  for (let i = 0; i < recordsToInsert.length; i += CHUNK_SIZE) {
+    const chunk = recordsToInsert.slice(i, i + CHUNK_SIZE)
+    await db.insert(questions).values(chunk)
+  }
+
+  questionsRepository.invalidateCache()
+  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+
+  res.status(201).json({ success: true, count: recordsToInsert.length })
+}))
+
 // ── PUT /api/admin/questions/:id — tahrirlash ──
 router.put('/admin/questions/:id', validate({ body: QuestionUpsert }), wrap(async (req, res) => {
   const id = Number(req.params.id)
