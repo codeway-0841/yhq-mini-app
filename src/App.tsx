@@ -206,6 +206,20 @@ export default function App() {
       const isOwner = ensureAccountOwner(verifiedId)
       if (isOwner && useAppStore.getState().user?.id) {
         useAppStore.setState({ initialized: true })
+      } else {
+        // Optimistik dastlabki Telegram user — tarmoq kechikishida ham ism va rasm DARHOL ko'rinadi
+        useAppStore.setState({
+          user: {
+            id: verifiedId,
+            firstName: tgUser.first_name || 'Foydalanuvchi',
+            lastName: tgUser.last_name ?? '',
+            username: tgUser.username ?? '',
+            photoUrl: tgUser.photo_url ?? '',
+            phone: null,
+            tariff: 'free',
+            isAdmin: false,
+          },
+        })
       }
 
       // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link)
