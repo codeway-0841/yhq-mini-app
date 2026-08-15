@@ -16,6 +16,9 @@ interface AiTutorModalProps {
   language: 'uz' | 'ru'
 }
 
+// Session-level AI explanation cache (re-opening modal for same question is free)
+const aiExplanationCache = new Map<number, string>()
+
 export default function AiTutorModal({
   questionId,
   selectedOptionId,
@@ -34,7 +37,6 @@ export default function AiTutorModal({
   const [aiText, setAiText] = useState('')
   const [staticText, setStaticText] = useState<string | null>(null)
   const [aiBusy, setAiBusy] = useState(false)
-  const aiCacheRef = useRef(new Map<number, string>())
   const abortControllerRef = useRef<AbortController | null>(null)
 
   /** AI tushuntirish — cache bilan (re-open bepul) */
@@ -51,7 +53,7 @@ export default function AiTutorModal({
 
     // Cache key: questionId shifted left to avoid collisions, then add correctness bit
     const cacheKey = (questionId << 1) | (isCorrect ? 1 : 0)
-    const cached = aiCacheRef.current.get(cacheKey)
+    const cached = aiExplanationCache.get(cacheKey)
     if (cached) {
       setAiText(cached)
       return
@@ -68,7 +70,7 @@ export default function AiTutorModal({
         setAiText(acc)
       }
       if (!abortController.signal.aborted) {
-        aiCacheRef.current.set(cacheKey, acc)
+        aiExplanationCache.set(cacheKey, acc)
       }
     } catch (err) {
       if (abortController.signal.aborted) return

@@ -33,12 +33,6 @@ export class ApiError extends Error {
  * Timeout signal compatible with older Telegram WebViews
  * (AbortSignal.timeout is not available everywhere).
  */
-function timeoutSignal(ms: number): AbortSignal {
-  const controller = new AbortController()
-  setTimeout(() => controller.abort(), ms)
-  return controller.signal
-}
-
 async function request<T>(method: string, path: string, body?: unknown): Promise<T> {
   const headers: Record<string, string> = {}
   if (body) headers['Content-Type'] = 'application/json'
@@ -53,12 +47,19 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
     if (token) { headers['Authorization'] = `Bearer ${token}`; sentBearer = true }
   }
 
-  const res = await fetch(`${BASE}${path}`, {
-    method,
-    headers,
-    body: body ? JSON.stringify(body) : undefined,
-    signal: timeoutSignal(TIMEOUT_MS),
-  })
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
+  let res: Response
+  try {
+    res = await fetch(`${BASE}${path}`, {
+      method,
+      headers,
+      body: body ? JSON.stringify(body) : undefined,
+      signal: controller.signal,
+    })
+  } finally {
+    clearTimeout(timer)
+  }
   if (!res.ok) {
     // Bearer bilan yuborilgan so'rov 401 qaytardi → sessiya eskirgan/revoke:
     // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').

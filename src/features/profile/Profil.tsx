@@ -221,7 +221,6 @@ export default function Profil() {
         <Item
           icon={WifiOff} label={tt('offlineMode')}
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
-          onPress={() => updateSettings({ offlineMode: !offlineOn })}
         />
 
         <Item icon={RotateCcw} iconColor="#ef4444" label={tt('resetProgress')}

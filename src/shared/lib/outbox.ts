@@ -194,7 +194,7 @@ function atomicUpdate(userId: string, fn: (entries: OutboxEntry[]) => OutboxEntr
 
   const existing = locks.get(key) ?? Promise.resolve()
 
-  const operation = existing.then(() => {
+  const operation = existing.catch(() => {}).then(() => {
     const entries = load(userId)
     const updated = fn(entries)
     persist(userId, updated)
@@ -212,8 +212,8 @@ function atomicRead<T>(userId: string, fn: (entries: OutboxEntry[]) => T): Promi
   const key = `outbox:${userId}`
   const existing = locks.get(key) ?? Promise.resolve()
 
-  const operation = existing.then(() => fn(load(userId)))
-  const lockPromise = operation.then(() => {})
+  const operation = existing.catch(() => {}).then(() => fn(load(userId)))
+  const lockPromise = operation.then(() => {}, () => {})
 
   // Register in locks to serialize with concurrent writes
   locks.set(key, lockPromise)
@@ -238,7 +238,11 @@ export async function flushOutbox(userId: string): Promise<void> {
   if (typeof localStorage === 'undefined') return
   // Offline'da umuman fetch urunmaslik — abort-timeout (8s) kutilmasin,
   // yozuvlar navbatda butun turadi ('online' eventida davom etadi).
-  if (typeof navigator !== 'undefined' && navigator.onLine === false) return
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+    const lock = locks.get(`outbox:${userId}`)
+    if (lock) await lock
+    return
+  }
   flushing.add(userId)
   try {
     for (;;) {

@@ -72,7 +72,13 @@ export const progressRepository = {
         WHERE id = ${userId}
       ), prog AS (
         UPDATE progress SET
-          total_correct  = total_correct + ${correctDelta},
+          total_correct  = CASE
+            WHEN ${correct} AND ${qKey}::text IS NOT NULL AND solved_questions @> jsonb_build_array(${qKey}::text)
+              THEN total_correct
+            WHEN ${correct}
+              THEN total_correct + 1
+            ELSE total_correct
+          END,
           total_wrong    = total_wrong + ${wrongDelta},
           total_answered = total_answered + 1,
           streak         = CASE WHEN ${correct} THEN streak + 1 ELSE 0 END,

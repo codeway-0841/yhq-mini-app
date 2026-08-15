@@ -25,7 +25,8 @@ export function rateLimit(opts: Options = {}) {
 
   const keyFn = opts.keyFn ?? ((req: Request): string | undefined => {
     const paramId = req.params['userId']
-    return (req as { telegramUserId?: string }).telegramUserId
+    return (req as { userId?: string }).userId
+      ?? (req as { telegramUserId?: string }).telegramUserId
       ?? (typeof paramId === 'string' ? paramId : paramId?.[0])
       ?? req.ip
   })

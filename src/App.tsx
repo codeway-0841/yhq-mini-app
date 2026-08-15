@@ -292,6 +292,24 @@ export default function App() {
     setOnboarded(true)
   }
 
+  // Email verification/reset URLs normalization (hash routing redirection in useEffect)
+  useEffect(() => {
+    const p = window.location.pathname
+    const h = window.location.hash
+    const s = window.location.search
+    if (p.startsWith('/verify-email') && !h.startsWith('#/verify-email')) {
+      const token = new URLSearchParams(s).get('token')
+      if (token && !h.includes('token=')) {
+        window.location.hash = `#/verify-email?token=${encodeURIComponent(token)}`
+      }
+    } else if (p.startsWith('/reset-password') && !h.startsWith('#/reset-password')) {
+      const token = new URLSearchParams(s).get('token')
+      if (token && !h.includes('token=')) {
+        window.location.hash = `#/reset-password?token=${encodeURIComponent(token)}`
+      }
+    }
+  }, [])
+
   if (!initialized) {
     return (
       <>
@@ -305,15 +323,8 @@ export default function App() {
   // Links arrive as /#/verify-email?token=xxx or /verify-email?token=xxx
   const hash = window.location.hash
   const pathname = window.location.pathname
-  const search = window.location.search
 
   if (pathname.startsWith('/verify-email') || hash.startsWith('#/verify-email')) {
-    if (pathname.startsWith('/verify-email') && !hash.startsWith('#/verify-email')) {
-      const token = new URLSearchParams(search).get('token')
-      if (token && !hash.includes('token=')) {
-        window.location.hash = `#/verify-email?token=${encodeURIComponent(token)}`
-      }
-    }
     return (
       <>
         <ThemeEffect />
@@ -329,12 +340,6 @@ export default function App() {
     )
   }
   if (pathname.startsWith('/reset-password') || hash.startsWith('#/reset-password')) {
-    if (pathname.startsWith('/reset-password') && !hash.startsWith('#/reset-password')) {
-      const token = new URLSearchParams(search).get('token')
-      if (token && !hash.includes('token=')) {
-        window.location.hash = `#/reset-password?token=${encodeURIComponent(token)}`
-      }
-    }
     return (
       <>
         <ThemeEffect />

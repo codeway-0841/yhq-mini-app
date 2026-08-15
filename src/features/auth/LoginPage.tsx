@@ -14,8 +14,7 @@ import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
 import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
-// EmailAuthForm disabled — uncomment when email auth ready
-// import EmailAuthForm from './components/EmailAuthForm'
+import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 
 /**
@@ -185,14 +184,14 @@ export default function LoginPage() {
             ))}
           </div>
 
-          {/* Method switcher: Phone | Email — email disabled for now
+          {/* Method switcher: Phone | Email */}
           {method !== 'forgot' && step === 'form' && (
             <div className="flex gap-2 mb-4">
               {(['phone', 'email'] as const).map((m) => (
                 <button
                   key={m}
                   type="button"
-                  onClick={() => { setMethod(m); setError(null); if (m === 'email') setMode('login') }}
+                  onClick={() => { setMethod(m); setError(null); }}
                   className={`flex-1 py-1.5 rounded-lg text-[12px] font-bold transition-colors ${
                     method === m ? 'bg-elevated border border-duo-green text-duo-green' : 'text-muted border border-line'
                   }`}
@@ -202,7 +201,6 @@ export default function LoginPage() {
               ))}
             </div>
           )}
-          */}
 
           {/* Forgot Password Form */}
           {method === 'forgot' && (
@@ -212,24 +210,25 @@ export default function LoginPage() {
             />
           )}
 
-          {/* Email Auth Form — disabled for now, uncomment when ready
+          {/* Email Auth Form */}
           {method === 'email' && step === 'form' && (
             <>
               <EmailAuthForm
-                mode="login"
+                mode={mode}
                 language={language}
                 onSuccess={applyAuth}
               />
-              <button
-                type="button"
-                onClick={() => setMethod('forgot')}
-                className="text-[12px] text-duo-green hover:underline mt-2 w-full text-center"
-              >
-                {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
-              </button>
+              {mode === 'login' && (
+                <button
+                  type="button"
+                  onClick={() => setMethod('forgot')}
+                  className="text-[12px] text-duo-green hover:underline mt-2 w-full text-center"
+                >
+                  {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
+                </button>
+              )}
             </>
           )}
-          */}
 
           {/* Phone Form */}
           {method === 'phone' && step === 'form' && (

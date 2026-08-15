@@ -25,6 +25,7 @@ import AiTutorModal from './components/AiTutorModal'
 import StudyPanel from './components/StudyPanel'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
+import lessonMap from '../../content/lessonMap.yhq.json'
 import { useTestSession } from './hooks/useTestSession'
 
 export default function TestPage() {
@@ -98,7 +99,7 @@ export default function TestPage() {
   const [showAiTutor, setShowAiTutor] = useState(false)
 
   /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
-      Mavzu → slug → MODULE_TOPICS orqali modul. */
+      Mavzu → slug → MODULE_TOPICS orqali modul + lessonMap orqali aniq dars. */
   const explanation = useMemo(() => {
     if (!q?.topicId) return null
     const topic = storeTopics.find((t) => t.id === q.topicId)
@@ -106,9 +107,18 @@ export default function TestPage() {
     const entry = Object.entries(MODULE_TOPICS).find(([, slugs]) => slugs.includes(topic.slug))
     if (!entry) return null
     const modId = Number(entry[0])
-    const lesson = lessons[modId]?.[0]
+    const map = lessonMap as Record<string, number[]>
+    let targetLessonIdx = 0
+    for (const [key, qids] of Object.entries(map)) {
+      if (key.startsWith(`${modId}:`) && qids.includes(q.id)) {
+        const parts = key.split(':')
+        targetLessonIdx = Number(parts[1] ?? 0)
+        break
+      }
+    }
+    const lesson = lessons[modId]?.[targetLessonIdx] ?? lessons[modId]?.[0]
     return lesson ? { modId, lesson } : null
-  }, [q?.topicId, storeTopics])
+  }, [q?.id, q?.topicId, storeTopics])
 
   const handleTimeUp = useCallback(() => {
     setAnswers((prev) => prev.map((a) => a ?? 'unanswered'))

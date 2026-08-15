@@ -1,5 +1,6 @@
 import { config } from '../config'
 import { getInitData } from '../../platform/telegram'
+import { getSessionToken } from './session'
 
 /**
  * AI Tutor — client. POST /api/tutor/explain (premium-only) — SSE streaming.
@@ -46,7 +47,12 @@ export async function* explainQuestion(
 ): AsyncGenerator<string, void, void> {
   const headers: Record<string, string> = { 'Content-Type': 'application/json' }
   const initData = getInitData()
-  if (initData) headers['x-telegram-init-data'] = initData
+  if (initData) {
+    headers['x-telegram-init-data'] = initData
+  } else {
+    const token = getSessionToken()
+    if (token) headers['Authorization'] = `Bearer ${token}`
+  }
 
   const res = await fetch(`${config.apiBaseUrl}/tutor/explain`, {
     method: 'POST',
