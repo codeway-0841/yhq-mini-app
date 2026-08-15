@@ -6,7 +6,15 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🛡️ Rasmiy Imtihonlar uchun "Anti-Cheat" (Shpargalka Himoyasi)
+### 1. 📊 Imtihondan Keyingi Chuqur Tahlil & Xatolar Ustida Ishlash (Exam Review)
+* **Xususiyat:** Imtihon yakunlangach, natijalar oynasiga **"Xatolarni tahlil qilish"** (Exam Review) tugmasi qo'shildi.
+* **Tahlil Modali:** Barcha savollar yoki faqat xatolar filtri, foydalanuvchining xato javobi (✗ Qizil), to'g'ri javob (✓ Yashil), mavzu nomi, qoida izohi ("Nega shunday?") va to'g'ridan-to'g'ri darslikka o'tish tugmasi.
+* **Diagnostika:** Barcha imtihon turlarida (YHQ 40 talik, Milliy sertifikat, Attestatsiya, Mock) mavzular kesimidagi tahlil progress barlari bilan to'liq ochildi.
+* **Fayllar:** `src/features/test/components/ExamReviewModal.tsx`, `src/features/test/ResultsModal.tsx`, `src/features/test/TestPage.tsx`, `tests/unit/features/exam-review.test.ts`.
+
+---
+
+### 2. 🛡️ Rasmiy Imtihonlar uchun "Anti-Cheat" (Shpargalka Himoyasi)
 * **Qamrov:** Faqat rasmiy imtihon rejimlarida (`exam` — 40 talik YHQ, `exam:milliy-sertifikat` — 45 talik, `exam:attestatsiya` — 50 talik).
 * **Faollikni aniqlash:** Brauzer tabidan chiqish (`visibilitychange`), ilovani yashirish (`blur`) yoki fonda qoldirish holatlarini sezadi.
 * **3 Bosqichli Ogohlantirish & Jazo:**

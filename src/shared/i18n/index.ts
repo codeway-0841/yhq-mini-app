@@ -218,6 +218,15 @@ const UZ = {
   antiCheatUnderstood: "Tushundim, davom etish",
   antiCheatDisqualifiedTitle: "Imtihon to'xtatildi (Anti-Cheat)",
   antiCheatDisqualifiedDesc: "Imtihon paytida 3 marta boshqa oynaga o'tish holati aniqlangani sababli imtihon muddatidan oldin to'xtatildi.",
+  // Exam Review
+  examReviewBtn: "Xatolarni tahlil qilish",
+  examReviewTitle: "Imtihon tahlili",
+  yourAnswer: "Sizning javobingiz",
+  correctAnswerLabel: "To'g'ri javob",
+  noMistakesCongrats: "Tabriklaymiz! Birorta ham xato qilmadingiz!",
+  filterOnlyMistakes: "Faqat xatolar",
+  filterAllQuestions: "Barcha savollar",
+  ruleExplanation: "Qoida izohi",
 } as const
 
 type Keys = keyof typeof UZ
@@ -429,6 +438,15 @@ const RU: Record<Keys, string> = {
   antiCheatUnderstood: "Понятно, продолжить",
   antiCheatDisqualifiedTitle: "Экзамен прерван (Anti-Cheat)",
   antiCheatDisqualifiedDesc: "Экзамен был досрочно завершён из-за 3 переключений на другие вкладки/приложения.",
+  // Exam Review
+  examReviewBtn: "Разбор ошибок",
+  examReviewTitle: "Разбор экзамена",
+  yourAnswer: "Ваш ответ",
+  correctAnswerLabel: "Правильный ответ",
+  noMistakesCongrats: "Поздравляем! Ни одной ошибки!",
+  filterOnlyMistakes: "Только ошибки",
+  filterAllQuestions: "Все вопросы",
+  ruleExplanation: "Объяснение правила",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

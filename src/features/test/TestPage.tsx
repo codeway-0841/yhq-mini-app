@@ -23,6 +23,7 @@ import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
 import AiTutorModal from './components/AiTutorModal'
 import AntiCheatModal from './components/AntiCheatModal'
+import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
 import StudyPanel from './components/StudyPanel'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
@@ -68,6 +69,9 @@ export default function TestPage() {
   const [cheatViolations, setCheatViolations]         = useState(0)
   const [activeStrike, setActiveStrike]               = useState<number | null>(null)
   const [disqualifiedByCheat, setDisqualifiedByCheat] = useState(false)
+
+  // ── Exam Review State ──
+  const [showReview, setShowReview] = useState(false)
 
   // ── useTestSession hook — manages activeQuestions and session persistence ──
   const { activeQuestions, sessionKey } = useTestSession({
@@ -351,6 +355,21 @@ export default function TestPage() {
     [activeQuestions, answers]
   )
 
+  const buildReviewItems = useCallback((): ExamReviewItem[] =>
+    activeQuestions.map((q, i) => {
+      const topic = storeTopics.find((t) => t.id === q.topicId)
+      return {
+        question: q,
+        index: i,
+        status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as ExamReviewItem['status'],
+        selectedOptionId: selectedHistory[i] ?? null,
+        correctOptionId: correctOpts[i] ?? null,
+        topicName: topic ? (settings.language === 'ru' ? topic.nameRu : topic.nameUz) : undefined,
+      }
+    }),
+    [activeQuestions, answers, selectedHistory, correctOpts, storeTopics, settings.language],
+  )
+
   /** Rasmiy imtihon yakuni — mavzular kesimida diagnostika (eng zaif birinchi) */
   const topicBreakdown = useMemo(() =>
     buildTopicBreakdown(
@@ -605,11 +624,21 @@ export default function TestPage() {
         <ResultsModal results={buildResults()} onRetry={handleRetry}
           threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
           hideVerdict={!!examPreset}
-          topicBreakdown={examPreset ? topicBreakdown : undefined}
+          topicBreakdown={(isOfficialExam || !!examPreset || mode === 'exam' || mode === 'mock') ? topicBreakdown : undefined}
           disqualifiedByCheat={disqualifiedByCheat}
+          onOpenReview={() => setShowReview(true)}
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+
+      {/* Imtihon tahlili modali */}
+      {showReview && (
+        <ExamReviewModal
+          items={buildReviewItems()}
+          language={settings.language}
+          onClose={() => setShowReview(false)}
+        />
+      )}
 
       {/* Anti-Cheat ogohlantirish modali */}
       {activeStrike !== null && (

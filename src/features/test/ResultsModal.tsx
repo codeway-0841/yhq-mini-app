@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { RotateCcw, Share2, X } from 'lucide-react'
+import { RotateCcw, Share2, X, BookOpen } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { shareUrl } from '../../platform/telegram'
@@ -15,6 +15,7 @@ export default function ResultsModal({
   onRetry,
   onFinish,
   onGoToQuestion,
+  onOpenReview,
   threshold = 90,
   hideVerdict = false,
   topicBreakdown,
@@ -24,6 +25,7 @@ export default function ResultsModal({
   onRetry: () => void
   onFinish: () => void
   onGoToQuestion: (i: number) => void
+  onOpenReview?: () => void
   /** o'tish foizi — exam rejimida 90 (haqiqiy imtihon), qolganida 80 */
   threshold?: number
   /** Rasmiy preset (milliy-sertifikat/attestatsiya): o'tdi/o'tmadi mezonsiz — faqat natija */
@@ -130,6 +132,17 @@ export default function ResultsModal({
             </button>
           ))}
         </div>
+
+        {onOpenReview && (
+          <button
+            type="button"
+            onClick={onOpenReview}
+            className="btn-premium w-full mb-3 py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg"
+          >
+            <BookOpen size={16} />
+            {tt('examReviewBtn')}
+          </button>
+        )}
 
         <div className="flex gap-3">
           <button onClick={onRetry}
