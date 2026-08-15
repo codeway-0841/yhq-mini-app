@@ -80,7 +80,7 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), 75_000)
 
-  const modelsToTry = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-flash-latest']
+  const modelsToTry = ['gemini-flash-latest', 'gemini-1.5-flash-latest', 'gemini-2.0-flash-exp', 'gemini-pro-latest']
   let apiRes: Response | null = null
   let lastErrorText = ''
 
