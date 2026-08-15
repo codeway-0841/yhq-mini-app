@@ -32,3 +32,5 @@ graphify-out/
 # Test ad-hoc skrinshotlar (Playwright/MCP sessiyalar — rootga tushadi)
 .playwright-mcp/
 *.png
+.idea/
+.jdks/

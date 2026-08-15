@@ -27,6 +27,7 @@ export interface TestSessionSnapshot {
   /** Server'dan reveal qilingan TO'G'RI variant id'lari (javobgacha null).
    *  Reload'da xato javoblar uchun "to'g'ri javob highlight" qayta ko'rinadi. */
   correctOptions?: (string | null)[]
+  cheatViolations?: number
   startedAt:       number
   finished:        boolean
 }

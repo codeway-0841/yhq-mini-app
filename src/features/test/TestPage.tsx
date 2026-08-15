@@ -22,6 +22,7 @@ import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import ResultsModal, { type QuestionResult } from './ResultsModal'
 import AiTutorModal from './components/AiTutorModal'
+import AntiCheatModal from './components/AntiCheatModal'
 import StudyPanel from './components/StudyPanel'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
@@ -44,6 +45,8 @@ export default function TestPage() {
   const mode = (location.state?.mode as string | undefined) ?? null
   /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
   const examPreset = resolveExamMode(mode)
+  /** Rasmiy imtihon (YHQ 40 talik yoki milliy-sertifikat/attestatsiya) */
+  const isOfficialExam = Boolean(examPreset) || mode === 'exam'
 
   // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
   const subjectId  = useSubjectStore((s) => s.subjectId)
@@ -61,6 +64,11 @@ export default function TestPage() {
   const [showResults, setShowResults]         = useState(false)
   const [isFinished, setIsFinished]           = useState(false)
 
+  // ── Anti-Cheat State ──
+  const [cheatViolations, setCheatViolations]         = useState(0)
+  const [activeStrike, setActiveStrike]               = useState<number | null>(null)
+  const [disqualifiedByCheat, setDisqualifiedByCheat] = useState(false)
+
   // ── useTestSession hook — manages activeQuestions and session persistence ──
   const { activeQuestions, sessionKey } = useTestSession({
     mode,
@@ -74,6 +82,7 @@ export default function TestPage() {
     locationKey: location.key,
     selectedHistory,
     correctOpts,
+    cheatViolations,
   })
 
   const startIndex = Math.min(
@@ -156,6 +165,9 @@ export default function TestPage() {
     setAnswers(r && r.answers.length === len ? [...r.answers] : Array(len).fill(null))
     setSelectedHistory(r && r.selected.length === len ? [...r.selected] : Array(len).fill(null))
     setCorrectOpts(r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null))
+    setCheatViolations(r?.cheatViolations ?? 0)
+    setActiveStrike(null)
+    setDisqualifiedByCheat(false)
     setSubmitting(false)
     setShowResults(false)
     setIsFinished(false)
@@ -167,6 +179,60 @@ export default function TestPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps — tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
+
+  // ── Anti-Cheat: Rasmiy imtihonda tab switch / blur / background aniqlash ──
+  const wasHiddenRef = useRef(false)
+  useEffect(() => {
+    if (!isOfficialExam || isFinished) return
+
+    const handleLeave = () => {
+      if (!isFinished) {
+        wasHiddenRef.current = true
+      }
+    }
+
+    const handleReturn = () => {
+      if (wasHiddenRef.current && !isFinished) {
+        wasHiddenRef.current = false
+        setCheatViolations((prev) => {
+          const next = prev + 1
+          if (next >= 3) {
+            // 3-ogohlantirish: imtihon darhol to'xtatiladi
+            playSound('error')
+            haptics.notify('error')
+            setDisqualifiedByCheat(true)
+            setAnswers((a) => a.map((val) => val ?? 'unanswered'))
+            setIsFinished(true)
+            setShowResults(true)
+          } else {
+            // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
+            playSound('error')
+            haptics.notify('warning')
+            setActiveStrike(next)
+          }
+          return next
+        })
+      }
+    }
+
+    const onVisibilityChange = () => {
+      if (document.hidden) handleLeave()
+      else handleReturn()
+    }
+
+    const onBlur = () => handleLeave()
+    const onFocus = () => handleReturn()
+
+    document.addEventListener('visibilitychange', onVisibilityChange)
+    window.addEventListener('blur', onBlur)
+    window.addEventListener('focus', onFocus)
+
+    return () => {
+      document.removeEventListener('visibilitychange', onVisibilityChange)
+      window.removeEventListener('blur', onBlur)
+      window.removeEventListener('focus', onFocus)
+    }
+  }, [isOfficialExam, isFinished])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const cancelAutoNext = useCallback(() => {
@@ -540,9 +606,19 @@ export default function TestPage() {
           threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
           hideVerdict={!!examPreset}
           topicBreakdown={examPreset ? topicBreakdown : undefined}
+          disqualifiedByCheat={disqualifiedByCheat}
           onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
       )}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+
+      {/* Anti-Cheat ogohlantirish modali */}
+      {activeStrike !== null && (
+        <AntiCheatModal
+          strike={activeStrike}
+          language={settings?.language ?? 'uz'}
+          onDismiss={() => setActiveStrike(null)}
+        />
+      )}
 
       {/* "Nega shunday?" — modda izohi (bottom sheet) */}
       {showExplain && explanation && (

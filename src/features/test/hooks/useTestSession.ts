@@ -16,6 +16,7 @@ interface UseTestSessionParams {
   locationKey: string
   selectedHistory: (string | null)[]
   correctOpts: (string | null)[]
+  cheatViolations?: number
 }
 
 export function useTestSession(params: UseTestSessionParams) {
@@ -31,6 +32,7 @@ export function useTestSession(params: UseTestSessionParams) {
     locationKey,
     selectedHistory,
     correctOpts,
+    cheatViolations,
   } = params
 
   const examPreset = resolveExamMode(mode)
@@ -87,10 +89,11 @@ export function useTestSession(params: UseTestSessionParams) {
       answers,
       selected:        selectedHistory,
       correctOptions:  correctOpts,
+      cheatViolations,
       startedAt:       startedAtRef.current,
       finished:        isFinished,
     })
-  }, [activeQuestions, current, answers, selectedHistory, correctOpts, isFinished, sessionKey, subjectId, mode, stateTitle])
+  }, [activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
 
   return {
     activeQuestions,

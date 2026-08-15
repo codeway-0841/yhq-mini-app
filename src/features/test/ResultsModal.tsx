@@ -10,7 +10,16 @@ import type { TopicBreakdownItem } from './topic-diagnosis'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
 
-export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestion, threshold = 90, hideVerdict = false, topicBreakdown }: {
+export default function ResultsModal({
+  results,
+  onRetry,
+  onFinish,
+  onGoToQuestion,
+  threshold = 90,
+  hideVerdict = false,
+  topicBreakdown,
+  disqualifiedByCheat = false,
+}: {
   results: QuestionResult[]
   onRetry: () => void
   onFinish: () => void
@@ -21,6 +30,8 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
   hideVerdict?: boolean
   /** Yakunda mavzular kesimida diagnostika (rasmiy imtihon presetlarida) */
   topicBreakdown?: TopicBreakdownItem[]
+  /** Anti-Cheat qoidabuzarlik tufayli to'xtatilganmi */
+  disqualifiedByCheat?: boolean
 }) {
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
@@ -28,14 +39,16 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
   const wrong      = results.filter((r) => r.status === 'incorrect').length
   const unanswered = results.filter((r) => r.status === 'unanswered').length
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
-  const passed     = percent >= threshold
+  const passed     = percent >= threshold && !disqualifiedByCheat
 
-  // Natija ochildi — qisqa g'alaba fanfarasi (tema-mos chastota)
-  useEffect(() => { playSound('win') }, [])
+  // Natija ochildi — qisqa g'alaba fanfarasi yoki xato tovush
+  useEffect(() => {
+    playSound(disqualifiedByCheat ? 'error' : 'win')
+  }, [disqualifiedByCheat])
 
   return (
     <div className="fixed inset-0 z-50 flex items-end">
-      {passed && !hideVerdict && <Confetti />}
+      {passed && !hideVerdict && !disqualifiedByCheat && <Confetti />}
       <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onFinish} />
       <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
         <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg transition-colors">
@@ -43,7 +56,19 @@ export default function ResultsModal({ results, onRetry, onFinish, onGoToQuestio
         </button>
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
         <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
-        <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict}
+
+        {disqualifiedByCheat && (
+          <div className="mb-4 bg-duo-red/15 border-2 border-duo-red/60 rounded-2xl p-4 text-center">
+            <p className="text-sm font-black text-duo-red mb-1">
+              {tt('antiCheatDisqualifiedTitle')}
+            </p>
+            <p className="text-xs text-subtle">
+              {tt('antiCheatDisqualifiedDesc')}
+            </p>
+          </div>
+        )}
+
+        <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5">

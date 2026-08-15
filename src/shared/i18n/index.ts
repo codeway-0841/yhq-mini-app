@@ -209,7 +209,15 @@ const UZ = {
   dailyReminderDesc: "Har kuni test yechish va seriyani saqlash eslatmasi",
   dailyReminderTime: "Eslatma vaqti",
   notifStreakTitle: "🔥 Seriyangizni yo'qotmang!",
-  notifStreakBody: "Bugun 5 ta savol yechib, intizom seriyangizni saqlab qoling!",
+  // Anti-Cheat
+  antiCheatWarningTitle: "⚠️ Imtihon qoidabuzarligi!",
+  antiCheatWarningDesc: "Rasmiy imtihon paytida boshqa ilovaga yoki tabga o'tish taqiqlanadi.",
+  antiCheatStrikeCount: "Ogohlantirish",
+  antiCheatStrikeHint1: "Agar yana 2 marta ilovadan chiqsangiz, imtihon avtomatik to'xtatiladi!",
+  antiCheatStrikeHint2: "Oxirgi ogohlantirish! Yana 1 marta chiqilsa, imtihon darhol bekor qilinadi!",
+  antiCheatUnderstood: "Tushundim, davom etish",
+  antiCheatDisqualifiedTitle: "Imtihon to'xtatildi (Anti-Cheat)",
+  antiCheatDisqualifiedDesc: "Imtihon paytida 3 marta boshqa oynaga o'tish holati aniqlangani sababli imtihon muddatidan oldin to'xtatildi.",
 } as const
 
 type Keys = keyof typeof UZ
@@ -412,7 +420,15 @@ const RU: Record<Keys, string> = {
   dailyReminderDesc: "Напоминание о тренировках и сохранении серии",
   dailyReminderTime: "Время напоминания",
   notifStreakTitle: "🔥 Не потеряйте вашу серию!",
-  notifStreakBody: "Решите сегодня 5 вопросов и сохраните ударный режим!",
+  // Anti-Cheat
+  antiCheatWarningTitle: "⚠️ Нарушение правил экзамена!",
+  antiCheatWarningDesc: "Во время официального экзамена запрещено переключаться на другие приложения или вкладки.",
+  antiCheatStrikeCount: "Предупреждение",
+  antiCheatStrikeHint1: "Если вы переключитесь ещё 2 раза, экзамен будет автоматически завершён!",
+  antiCheatStrikeHint2: "Последнее предупреждение! При повторном выходе экзамен будет аннулирован!",
+  antiCheatUnderstood: "Понятно, продолжить",
+  antiCheatDisqualifiedTitle: "Экзамен прерван (Anti-Cheat)",
+  antiCheatDisqualifiedDesc: "Экзамен был досрочно завершён из-за 3 переключений на другие вкладки/приложения.",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
