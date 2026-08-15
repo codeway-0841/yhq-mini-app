@@ -460,6 +460,7 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
  */
 interface PendingDuel { player: Player; timer: ReturnType<typeof setTimeout> }
 const duels = new Map<string, PendingDuel>()
+const lastReactionTime = new Map<string, number>()
 
 function leaveDuelByUser(userId: string, deadWs?: WebSocket): void {
   for (const [code, d] of duels) {
@@ -750,6 +751,34 @@ export function attachOctagon(
         if (opponent) send(opponent.ws, { type: 'opp_answered', index })
 
         if (rs.answers.size === 2) resolveRound(match, index)
+        return
+      }
+
+      if (msg.type === 'reaction' && state.userId) {
+        const userId = state.userId
+        const matchId = String(msg.matchId)
+        const match = matches.get(matchId)
+        if (!match || !match.players.some((p) => p.userId === userId)) return
+
+        // Anti-spam rate-limit: 1 reaksiya / 1.2 soniya
+        const now = Date.now()
+        const lastTime = lastReactionTime.get(userId) ?? 0
+        if (now - lastTime < 1200) return
+        lastReactionTime.set(userId, now)
+
+        const kind = msg.kind === 'phrase' || msg.kind === 'prop' ? msg.kind : 'emoji'
+        const content = String(msg.content ?? '').slice(0, 120)
+        if (!content) return
+
+        // Ikkala o'yinchiga ham yuboramiz
+        for (const p of match.players) {
+          send(p.ws, {
+            type: 'reaction',
+            senderId: userId,
+            kind,
+            content,
+          })
+        }
         return
       }
 

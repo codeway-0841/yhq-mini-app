@@ -13,6 +13,8 @@ import { getInitData }    from '../../../platform/telegram'
 import { getSessionToken } from '../../../shared/lib/session'
 import { duelReducer, DUEL_INIT } from '../duel-reducer'
 
+import { ActiveReaction } from '../components/FloatingReactionsOverlay'
+
 interface DuelUser { id: string; firstName: string }
 
 /** WS auth credential: initData (Mini App) USTUVOR, bo'lmasa Bearer sessiya tokeni. */
@@ -28,6 +30,16 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   const [s, dispatch] = useReducer(duelReducer, DUEL_INIT)
   const [conn, setConn] = useState<ConnStatus>('connecting')
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // Live Emotes & Taunts state
+  const [floatingReactions, setFloatingReactions] = useState<ActiveReaction[]>([])
+  const [opponentPhrase, setOpponentPhrase] = useState<string | null>(null)
+  const [yourPhrase, setYourPhrase] = useState<string | null>(null)
+  const [isMuted, setIsMuted] = useState(false)
+  const isMutedRef = useRef(isMuted)
+  isMutedRef.current = isMuted
+  const oppPhraseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const yourPhraseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = useCallback((msg: string) => {
     dispatch({ type: 'TOAST', msg })
@@ -46,6 +58,40 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       case 'opp_disconnected': dispatch({ type: 'OPP_DISCONNECTED' }); break
       case 'opp_waiting':      dispatch({ type: 'OPP_WAIT', waitSeconds: msg.waitSeconds }); break
       case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast('Raqib qaytdi'); break
+      case 'reaction': {
+        const isYou = msg.senderId === userRef.current?.id
+        if (msg.kind === 'phrase') {
+          if (isYou) {
+            setYourPhrase(msg.content)
+            if (yourPhraseTimer.current) clearTimeout(yourPhraseTimer.current)
+            yourPhraseTimer.current = setTimeout(() => setYourPhrase(null), 3000)
+          } else {
+            setOpponentPhrase(msg.content)
+            if (oppPhraseTimer.current) clearTimeout(oppPhraseTimer.current)
+            oppPhraseTimer.current = setTimeout(() => setOpponentPhrase(null), 3000)
+            if (!isMutedRef.current) playSound('emote_whoosh')
+          }
+        } else {
+          const id = `reac-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`
+          const xPos = isYou ? 65 + Math.random() * 20 : 15 + Math.random() * 20
+          const newReac: ActiveReaction = {
+            id,
+            senderId: msg.senderId,
+            isYou,
+            kind: msg.kind,
+            content: msg.content,
+            xPos,
+          }
+          setFloatingReactions((prev) => [...prev, newReac])
+          setTimeout(() => {
+            setFloatingReactions((prev) => prev.filter((r) => r.id !== id))
+          }, 2200)
+          if (!isMutedRef.current && !isYou) {
+            playSound(msg.kind === 'prop' ? 'emote_splash' : 'emote_pop')
+          }
+        }
+        break
+      }
       case 'match_state':
         dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
                    timeLimit: msg.timeLimit,
@@ -219,8 +265,23 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     }
   }, [s.matchId, s.selected, s.roundIndex, showToast])
 
+  const sendReaction = useCallback((kind: 'emoji' | 'phrase' | 'prop', content: string) => {
+    if (!s.matchId) return
+    try {
+      getOctagonSocket(config.wsUrl).send({
+        type: 'reaction',
+        matchId: s.matchId,
+        kind,
+        content,
+      })
+    } catch { /* socket error */ }
+  }, [s.matchId])
+
+  const toggleMute = useCallback(() => setIsMuted((m) => !m), [])
+
   return {
     state: s, conn, duelCode, duelLink,
-    joinQueue, startDuel, cancelSearch, leaveQueue, sendAnswer, retryConnect, exitToIdle,
+    floatingReactions, opponentPhrase, yourPhrase, isMuted,
+    joinQueue, startDuel, cancelSearch, leaveQueue, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle,
   }
 }

@@ -266,6 +266,37 @@ body[data-no-animation='true'] .route-page { animation: none; }
 }
 .onboarding-float { animation: onboardingFloat 3s ease-in-out infinite; }
 
+/* ── Octagon Live Emotes Animation ── */
+@keyframes flyUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-40px) scale(1.2);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-220px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-320px) scale(0.8);
+  }
+}
+.animate-flyUp {
+  animation: flyUp 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-6deg); }
+  50% { transform: rotate(6deg); }
+}
+.animate-wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
    ─────────────────────────────────────────────────────────────────────────
