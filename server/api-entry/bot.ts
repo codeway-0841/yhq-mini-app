@@ -1,14 +1,12 @@
 import '../utils/sentry'
 import { Sentry } from '../utils/sentry'
-import { Bot, Context, InlineKeyboard, Keyboard, webhookCallback } from 'grammy'
+import { Bot, Context, InlineKeyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
 
 import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../shared/premium-plans'
 import { config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
-import { executeRows } from '../db/connection'
-import { sql } from 'drizzle-orm'
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -19,22 +17,6 @@ const BASE_URL = config.deploy.appUrl
 const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
-
-// DB-backed pending: Vercel webhook har chaqiriq alohida isolate — in-memory Map
-// keyingi request'ga yetib bormaydi (serverless). Shu sababli pending code'ni
-// DB'da saqlaymiz (telegram_login_pending) — 5daq TTL, contact kelganda consume.
-async function setPendingLoginCode(tgUserId: number, code: string): Promise<void> {
-  const expiresAt = new Date(Date.now() + 5 * 60_000)
-  await executeRows(sql`CREATE TABLE IF NOT EXISTS telegram_login_pending (tg_user_id TEXT PRIMARY KEY, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now())`)
-  await executeRows(sql`INSERT INTO telegram_login_pending (tg_user_id, code, expires_at) VALUES (${String(tgUserId)}, ${code}, ${expiresAt}) ON CONFLICT (tg_user_id) DO UPDATE SET code = EXCLUDED.code, expires_at = EXCLUDED.expires_at, created_at = now()`)
-}
-async function consumePendingLoginCode(tgUserId: number): Promise<string | null> {
-  await executeRows(sql`CREATE TABLE IF NOT EXISTS telegram_login_pending (tg_user_id TEXT PRIMARY KEY, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now())`)
-  // Expired qatorlar avtomatik tozalanadi (RETURNING bo'lmaydi -> null)
-  await executeRows(sql`DELETE FROM telegram_login_pending WHERE expires_at <= now()`)
-  const rows = await executeRows<{ code: string }>(sql`DELETE FROM telegram_login_pending WHERE tg_user_id = ${String(tgUserId)} RETURNING code`)
-  return rows[0]?.code ?? null
-}
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
@@ -189,34 +171,7 @@ bot.command('start', async (ctx) => {
   )
 })
 
-// ── Contact handler — Telegram Login flow (raqam ulashilganda) ──────────────
-bot.on('message:contact', async (ctx) => {
-  const from = ctx.from
-  if (!from) return
-  const code = await consumePendingLoginCode(from.id)
-  if (!code) return  // login flow'da emas yoki kod eskirdi — ignore
 
-  const contact = ctx.message.contact
-  if (contact.user_id !== from.id) {
-    await ctx.reply("❌ Faqat o'zingizning raqamingizni ulashishingiz mumkin.", { reply_markup: { remove_keyboard: true } })
-    return
-  }
-
-  const phone = contact.phone_number
-  try {
-    const { authService } = await import('../modules/auth/auth.service')
-    const result = await authService.completeTelegramLoginByPhone(code, phone, {
-      id: from.id,
-      first_name: from.first_name,
-      last_name: from.last_name,
-      username: from.username,
-    })
-    await ctx.reply(result.message, { reply_markup: { remove_keyboard: true } })
-  } catch (err) {
-    console.error('[bot] telegram-login contact handler error:', err)
-    await ctx.reply("❌ Xatolik yuz berdi — qayta urinib ko'ring.", { reply_markup: { remove_keyboard: true } })
-  }
-})
 
 // ── /premium — Stars to'lov oqimi ───────────────────────────────────────────
 bot.command('premium', async (ctx) => { await sendPremiumChooser(ctx) })
