@@ -134,6 +134,8 @@ export interface ApiSettings {
   language: 'uz' | 'ru'
   theme: 'dark' | 'light' | 'system'
   offlineMode: boolean
+  dailyReminder?: boolean
+  dailyReminderTime?: string
 }
 
 export interface FullProfile {

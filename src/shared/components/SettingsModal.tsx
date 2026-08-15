@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import {
-  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, GraduationCap,
+  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, GraduationCap, Bell, Clock,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { useSubjectStore } from '../store/useSubjectStore'
 import { SUBJECTS } from '../config/subjects'
 import { openTelegramLink } from '../../platform/telegram'
+import { requestNotificationPermission } from '../../platform/native'
 import { playSound } from '../lib/sounds'
 import { useT } from '../i18n'
 import { ACCENT_THEMES, getAccentTheme, resolveAccent } from '../config/themes'
@@ -14,7 +15,7 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 
 type LucideIcon = typeof Play
-type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'subject' | null
+type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'subject' | 'reminderTime' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv */
 function Row({ icon: Icon, iconColor, label, children }: {
@@ -170,6 +171,24 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             </Row>
           </button>
 
+          {/* Kunlik eslatma — switch */}
+          <Row icon={Bell} iconColor="#94a3b8" label={tt('dailyReminder')}>
+            <Toggle checked={local.dailyReminder !== false}
+              onChange={(c) => {
+                set('dailyReminder', c)
+                if (c) void requestNotificationPermission()
+              }} />
+          </Row>
+
+          {/* Eslatma vaqti — faqat eslatma yoqiq bo'lsa */}
+          {local.dailyReminder !== false && (
+            <button className="w-full text-left" onClick={() => setPicker('reminderTime')} aria-label={`${tt('dailyReminderTime')}: ${local.dailyReminderTime || '20:00'}`}>
+              <Row icon={Clock} iconColor="#94a3b8" label={tt('dailyReminderTime')}>
+                <span className={valueBtn}>{local.dailyReminderTime || '20:00'} <ChevronRight size={14} /></span>
+              </Row>
+            </button>
+          )}
+
           <button
             onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
             className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
@@ -322,6 +341,23 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             </div>
           </div>
         </div>
+      )}
+
+      {picker === 'reminderTime' && (
+        <PickerSheet
+          title={tt('dailyReminderTime')}
+          titleIcon={<Clock size={18} />}
+          value={local.dailyReminderTime || '20:00'}
+          onClose={() => setPicker(null)}
+          onSelect={(v) => set('dailyReminderTime', v)}
+          options={[
+            { value: '08:00', label: '08:00 (Ertalab / Утро)' },
+            { value: '12:00', label: '12:00 (Tushda / Обед)' },
+            { value: '18:00', label: '18:00 (Kechki payt / Вечер)' },
+            { value: '20:00', label: '20:00 (Kechqurun / Поздно вечером)' },
+            { value: '21:30', label: '21:30 (Uxlashdan oldin / Перед сном)' },
+          ]}
+        />
       )}
     </div>
   )

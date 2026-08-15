@@ -31,15 +31,17 @@ export const ApiProgressSchema = z.object({
 })
 
 export const ApiSettingsSchema = z.object({
-  autoNextCorrect: z.boolean(),
-  autoNextWrong:   z.boolean(),
-  noAnimation:     z.boolean(),
-  shuffleOptions:  z.boolean(),
-  fontSize:        z.enum(['small', 'medium', 'large']),
-  fontStyle:       z.enum(['default', 'serif', 'mono']),
-  language:        z.enum(['uz', 'ru']),
-  theme:           z.enum(['dark', 'light', 'system']),
-  offlineMode:     z.boolean(),
+  autoNextCorrect:   z.boolean(),
+  autoNextWrong:     z.boolean(),
+  noAnimation:       z.boolean(),
+  shuffleOptions:    z.boolean(),
+  fontSize:          z.enum(['small', 'medium', 'large']),
+  fontStyle:         z.enum(['default', 'serif', 'mono']),
+  language:          z.enum(['uz', 'ru']),
+  theme:             z.enum(['dark', 'light', 'system']),
+  offlineMode:       z.boolean(),
+  dailyReminder:     z.boolean().optional().default(true),
+  dailyReminderTime: z.string().optional().default('20:00'),
 })
 
 export const FullProfileSchema = z.object({

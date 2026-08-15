@@ -47,3 +47,114 @@ export function hideSplashScreen(): void {
   if (!isNativeApp()) return
   SplashScreen.hide().catch(() => {})
 }
+
+const STREAK_NOTIF_ID = 1001
+const NOTIF_CHANNEL_ID = 'daily_streak'
+
+/**
+ * Bildirishnoma ruxsatini so'rash (APK'da Capacitor, Web'da Notification API).
+ */
+export async function requestNotificationPermission(): Promise<boolean> {
+  if (isNativeApp()) {
+    try {
+      const { LocalNotifications } = await import('@capacitor/local-notifications')
+      const status = await LocalNotifications.checkPermissions()
+      if (status.display === 'granted') return true
+      const req = await LocalNotifications.requestPermissions()
+      return req.display === 'granted'
+    } catch {
+      return false
+    }
+  }
+
+  if (typeof window !== 'undefined' && 'Notification' in window) {
+    try {
+      if (Notification.permission === 'granted') return true
+      if (Notification.permission !== 'denied') {
+        const perm = await Notification.requestPermission()
+        return perm === 'granted'
+      }
+    } catch {
+      return false
+    }
+  }
+  return false
+}
+
+/**
+ * Kunlik streak intizom eslatmasini rejalashtirish (har kuni belgilangan soat/daqiqada).
+ * @param time 'HH:mm' formatida (masalan, '20:00')
+ * @param lang 'uz' | 'ru'
+ */
+export async function scheduleDailyStreakReminder(time: string, lang: 'uz' | 'ru' = 'uz'): Promise<boolean> {
+  const [hStr, mStr] = time.split(':')
+  const hour = Number(hStr)
+  const minute = Number(mStr)
+  if (Number.isNaN(hour) || Number.isNaN(minute) || hour < 0 || hour > 23 || minute < 0 || minute > 59) {
+    return false
+  }
+
+  const title = lang === 'ru' ? '🔥 Не потеряйте вашу серию!' : "🔥 Seriyangizni yo'qotmang!"
+  const body = lang === 'ru'
+    ? 'Решите сегодня 5 вопросов и сохраните ударный режим!'
+    : "Bugun 5 ta savol yechib, intizom seriyangizni saqlab qoling!"
+
+  if (isNativeApp()) {
+    try {
+      const { LocalNotifications } = await import('@capacitor/local-notifications')
+      const granted = await requestNotificationPermission()
+      if (!granted) return false
+
+      // Android Notification Channel (Importance High + ovoz)
+      await LocalNotifications.createChannel({
+        id: NOTIF_CHANNEL_ID,
+        name: lang === 'ru' ? 'Ежедневные напоминания' : 'Kunlik eslatmalar',
+        description: lang === 'ru' ? 'Напоминания о тренировке и серии' : 'Kunlik test va streak eslatmalari',
+        importance: 4,
+        visibility: 1,
+        vibration: true,
+      }).catch(() => {})
+
+      // Avvalgi rejalashtirilgan eslatmani tozalaymiz
+      await LocalNotifications.cancel({ notifications: [{ id: STREAK_NOTIF_ID }] }).catch(() => {})
+
+      // Har kuni takrorlanuvchi eslatma
+      await LocalNotifications.schedule({
+        notifications: [
+          {
+            id: STREAK_NOTIF_ID,
+            title,
+            body,
+            channelId: NOTIF_CHANNEL_ID,
+            schedule: {
+              on: {
+                hour,
+                minute,
+              },
+              repeats: true,
+              allowWhileIdle: true,
+            },
+          },
+        ],
+      })
+      return true
+    } catch (e) {
+      console.warn('scheduleDailyStreakReminder error:', e)
+      return false
+    }
+  }
+
+  return false
+}
+
+/**
+ * Rejalashtirilgan kunlik eslatmani bekor qilish.
+ */
+export async function cancelDailyStreakReminder(): Promise<void> {
+  if (isNativeApp()) {
+    try {
+      const { LocalNotifications } = await import('@capacitor/local-notifications')
+      await LocalNotifications.cancel({ notifications: [{ id: STREAK_NOTIF_ID }] }).catch(() => {})
+    } catch {}
+  }
+}

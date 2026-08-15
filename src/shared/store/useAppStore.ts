@@ -5,6 +5,7 @@ import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
 import { useDailyStore, todayStr } from './useDailyStore'
+import { scheduleDailyStreakReminder, cancelDailyStreakReminder } from '../../platform/native'
 
 export type { ApiUser, ApiProgress, ApiSettings }
 
@@ -87,15 +88,17 @@ export function stripUserPii(user: ApiUser | null): ApiUser | null {
 }
 
 const DEFAULT_SETTINGS: ApiSettings = {
-  autoNextCorrect: true,
-  autoNextWrong:   false,
-  noAnimation:     false,
-  shuffleOptions:  false,
-  fontSize:        'medium',
-  fontStyle:       'default',
-  language:        'uz',
-  theme:           'dark',
-  offlineMode:     true,   // eski default (false) noto'g'ri edi — SW avval hamma uchun ishlardi
+  autoNextCorrect:   true,
+  autoNextWrong:     false,
+  noAnimation:       false,
+  shuffleOptions:    false,
+  fontSize:          'medium',
+  fontStyle:         'default',
+  language:          'uz',
+  theme:             'dark',
+  offlineMode:       true,   // eski default (false) noto'g'ri edi — SW avval hamma uchun ishlardi
+  dailyReminder:     true,
+  dailyReminderTime: '20:00',
 }
 
 export const useAppStore = create<AppState>()(
@@ -184,7 +187,17 @@ export const useAppStore = create<AppState>()(
       updateSettings: (patch) => {
         const prev   = get().settings
         const userId = get().user?.id
-        set((s) => ({ settings: { ...s.settings, ...patch } }))
+        const next   = { ...prev, ...patch }
+        set({ settings: next })
+
+        if (patch.dailyReminder !== undefined || patch.dailyReminderTime !== undefined || patch.language !== undefined) {
+          if (next.dailyReminder !== false) {
+            void scheduleDailyStreakReminder(next.dailyReminderTime || '20:00', next.language)
+          } else {
+            void cancelDailyStreakReminder()
+          }
+        }
+
         if (userId && userId !== '0') {
           // Mahalliy tanlov UI da darhol qo'llanadi; tarmoq xatosi bo'lsa
           // SERVERga qaytarilmaydi (rollback "tepada qirish" UX'ni yoq qilardi) —
@@ -255,18 +268,23 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      hydrateFromProfile: (data) => set((s) => ({
-        user:            data.user,
-        tariff:          data.user.tariff,
-        settings:        data.settings,
-        streak:          data.progress.streak,
-        totalCorrect:    data.progress.totalCorrect,
-        totalWrong:      data.progress.totalWrong,
-        totalAnswered:   data.progress.totalAnswered,
-        wrongByTicket:   data.progress.wrongByTicket,
-        solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
-        savedQuestions:  data.savedQuestions,
-      })),
+      hydrateFromProfile: (data) => {
+        if (data.settings.dailyReminder !== false) {
+          void scheduleDailyStreakReminder(data.settings.dailyReminderTime || '20:00', data.settings.language)
+        }
+        set((s) => ({
+          user:            data.user,
+          tariff:          data.user.tariff,
+          settings:        data.settings,
+          streak:          data.progress.streak,
+          totalCorrect:    data.progress.totalCorrect,
+          totalWrong:      data.progress.totalWrong,
+          totalAnswered:   data.progress.totalAnswered,
+          wrongByTicket:   data.progress.wrongByTicket,
+          solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
+          savedQuestions:  data.savedQuestions,
+        }))
+      },
 
       resetAccount: () => set({
         user: null,

@@ -8,6 +8,7 @@
   "dependencies": {
     "@capacitor/app": "^8.1.1",
     "@capacitor/core": "^8.5.0",
+    "@capacitor/local-notifications": "^8.3.0",
     "@capacitor/splash-screen": "^8.0.2",
     "@neondatabase/serverless": "^1.1.0",
     "@sentry/node": "^10.69.0",

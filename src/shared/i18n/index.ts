@@ -204,6 +204,12 @@ const UZ = {
   timeRemaining: "Qolgan vaqt", of: "dan", zoomImage: "Rasmni kattalashtirish",
   closeResults: "Natijalarni yopish", closeStudy: "O'rganishni yopish",
   closeZoom: "Rasmni yopish",
+  // Local Notifications
+  dailyReminder: "Kunlik eslatma",
+  dailyReminderDesc: "Har kuni test yechish va seriyani saqlash eslatmasi",
+  dailyReminderTime: "Eslatma vaqti",
+  notifStreakTitle: "🔥 Seriyangizni yo'qotmang!",
+  notifStreakBody: "Bugun 5 ta savol yechib, intizom seriyangizni saqlab qoling!",
 } as const
 
 type Keys = keyof typeof UZ
@@ -401,6 +407,12 @@ const RU: Record<Keys, string> = {
   timeRemaining: "Осталось времени", of: "из", zoomImage: "Увеличить изображение",
   closeResults: "Закрыть результаты", closeStudy: "Закрыть изучение",
   closeZoom: "Закрыть изображение",
+  // Local Notifications
+  dailyReminder: "Ежедневное напоминание",
+  dailyReminderDesc: "Напоминание о тренировках и сохранении серии",
+  dailyReminderTime: "Время напоминания",
+  notifStreakTitle: "🔥 Не потеряйте вашу серию!",
+  notifStreakBody: "Решите сегодня 5 вопросов и сохраните ударный режим!",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
