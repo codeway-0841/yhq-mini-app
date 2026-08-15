@@ -471,15 +471,20 @@ function leaveDuelByUser(userId: string, deadWs?: WebSocket): void {
   }
 }
 
-function joinDuel(ws: WebSocket, userId: string, name: string, code: string, fallbackSubjectId: string): void {
+function joinDuel(ws: WebSocket, userId: string, name: string, rawCode: string, fallbackSubjectId: string): void {
+  const code = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
   const existing = duels.get(code)
-  if (existing && existing.player.userId !== userId) {
-    // Do'st keldi — juftlaymiz (YARATUVCHIning fan savollarida)
-    clearTimeout(existing.timer)
-    duels.delete(code)
-    const joiner: Player = { ws, userId, name, subjectId: existing.player.subjectId, queueTimer: null }
-    startMatch(existing.player, joiner)
-    return
+  if (existing) {
+    const isDifferentPlayer = existing.player.userId !== userId || (!isAuthEnforced() && existing.player.ws !== ws)
+    if (isDifferentPlayer) {
+      // Do'st keldi — juftlaymiz (YARATUVCHIning fan savollarida)
+      clearTimeout(existing.timer)
+      duels.delete(code)
+      const joinerUid = existing.player.userId === userId ? `${userId}_2` : userId
+      const joiner: Player = { ws, userId: joinerUid, name, subjectId: existing.player.subjectId, queueTimer: null }
+      startMatch(existing.player, joiner)
+      return
+    }
   }
   // Yaratuvchi kutilmoqda (yoki reconnect — yangi socket bilan yangilanadi)
   leaveDuelByUser(userId)
@@ -717,7 +722,8 @@ export function attachOctagon(
             : DEFAULT_SUBJECT_ID
           // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
           const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
-          const duelCode = rawCode && DUEL_CODE_RE.test(rawCode) ? rawCode : null
+          const cleanCode = rawCode.replace(/^(?:duel|room)-/, '')
+          const duelCode = cleanCode && (DUEL_CODE_RE.test(cleanCode) || DUEL_CODE_RE.test(rawCode)) ? cleanCode : null
           if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
           else joinQueue(ws, uid, name, subjectId)
           return
