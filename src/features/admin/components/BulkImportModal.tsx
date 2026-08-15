@@ -10,23 +10,18 @@ import {
   AlertCircle,
   Loader2,
   Trash2,
+  Pencil,
+  Check,
 } from 'lucide-react'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
-
-export interface ParsedQuestion {
-  id_temp: string
-  questionUz: string
-  questionRu: string
-  optionsUz: Record<string, string>
-  optionsRu: Record<string, string>
-  correctAnswer: string
-  image?: string | null
-  topicId?: number | null
-  isValid: boolean
-  errorReason?: string
-}
+import {
+  parseCSVQuestions,
+  parseJSONQuestions,
+  parseSmartTextQuestions,
+  type ParsedQuestion,
+} from '../lib/universalQuestionParser'
 
 interface BulkImportModalProps {
   subjectId: string
@@ -37,6 +32,7 @@ interface BulkImportModalProps {
 }
 
 type ImportTab = 'csv' | 'text' | 'json'
+type FilterTab = 'all' | 'valid' | 'invalid'
 
 export default function BulkImportModal({
   subjectId,
@@ -46,245 +42,16 @@ export default function BulkImportModal({
   onSuccess,
 }: BulkImportModalProps) {
   const [activeTab, setActiveTab] = useState<ImportTab>('csv')
+  const [filterTab, setFilterTab] = useState<FilterTab>('all')
   const [parsedList, setParsedList] = useState<ParsedQuestion[]>([])
+  const [csvText, setCsvText] = useState('')
   const [textInput, setTextInput] = useState('')
   const [jsonInput, setJsonInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [importing, setImporting] = useState(false)
   const [fileName, setFileName] = useState<string | null>(null)
+  const [editingItem, setEditingItem] = useState<ParsedQuestion | null>(null)
   const fileInputRef = useRef<HTMLInputElement | null>(null)
-
-  // ── CSV Parser ───────────────────────────────────────────────────────────
-  const parseCSV = (content: string): ParsedQuestion[] => {
-    const lines = content.split(/\r?\n/).filter((l) => l.trim().length > 0)
-    if (lines.length <= 1) return []
-
-    // Helper to parse CSV row accounting for quotes
-    const parseRow = (line: string): string[] => {
-      const result: string[] = []
-      let curr = ''
-      let inQuotes = false
-
-      for (let i = 0; i < line.length; i++) {
-        const char = line[i]
-        if (char === '"') {
-          inQuotes = !inQuotes
-        } else if ((char === ',' || char === ';') && !inQuotes) {
-          result.push(curr.trim())
-          curr = ''
-        } else {
-          curr += char
-        }
-      }
-      result.push(curr.trim())
-      return result
-    }
-
-    const rows = lines.slice(1).map(parseRow)
-    const result: ParsedQuestion[] = []
-
-    rows.forEach((cols, idx) => {
-      if (cols.length < 5) return
-
-      // Expected columns:
-      // 0: questionUz, 1: questionRu,
-      // 2: optA_uz, 3: optA_ru, 4: optB_uz, 5: optB_ru,
-      // 6: optC_uz, 7: optC_ru, 8: optD_uz, 9: optD_ru,
-      // 10: correctAnswer (A, B, C, D or F1, F2...), 11: image
-      const qUz = cols[0] || ''
-      const qRu = cols[1] || qUz
-      const optAUz = cols[2] || ''
-      const optARu = cols[3] || optAUz
-      const optBUz = cols[4] || ''
-      const optBRu = cols[5] || optBUz
-      const optCUz = cols[6] || ''
-      const optCRu = cols[7] || optCUz
-      const optDUz = cols[8] || ''
-      const optDRu = cols[9] || optDUz
-
-      let rawAns = (cols[10] || 'A').toUpperCase().trim()
-      if (rawAns === 'A' || rawAns === '1') rawAns = 'F1'
-      else if (rawAns === 'B' || rawAns === '2') rawAns = 'F2'
-      else if (rawAns === 'C' || rawAns === '3') rawAns = 'F3'
-      else if (rawAns === 'D' || rawAns === '4') rawAns = 'F4'
-
-      const optionsUz: Record<string, string> = { F1: optAUz, F2: optBUz }
-      const optionsRu: Record<string, string> = { F1: optARu, F2: optBRu }
-      if (optCUz) {
-        optionsUz.F3 = optCUz
-        optionsRu.F3 = optCRu
-      }
-      if (optDUz) {
-        optionsUz.F4 = optDUz
-        optionsRu.F4 = optDRu
-      }
-
-      const img = cols[11] || null
-
-      let isValid = true
-      let errorReason = ''
-
-      if (!qUz || qUz.length < 3) {
-        isValid = false
-        errorReason = "Savol matni juda qisqa"
-      } else if (!optAUz || !optBUz) {
-        isValid = false
-        errorReason = "Kamida 2 ta variant bo'lishi shart"
-      } else if (!optionsUz[rawAns]) {
-        isValid = false
-        errorReason = `To'g'ri javob "${rawAns}" variantlar ichida yo'q`
-      }
-
-      result.push({
-        id_temp: `csv_${idx + 1}`,
-        questionUz: qUz,
-        questionRu: qRu,
-        optionsUz,
-        optionsRu,
-        correctAnswer: rawAns,
-        image: img,
-        isValid,
-        errorReason,
-      })
-    })
-
-    return result
-  }
-
-  // ── Smart Text / AI Paste Parser ───────────────────────────────────────────
-  const parseSmartText = (text: string): ParsedQuestion[] => {
-    const blocks = text.split(/\n\s*\n/).filter((b) => b.trim().length > 0)
-    const result: ParsedQuestion[] = []
-
-    blocks.forEach((block, idx) => {
-      const lines = block
-        .split('\n')
-        .map((l) => l.trim())
-        .filter(Boolean)
-      if (lines.length < 3) return
-
-      let questionUz = ''
-      let questionRu = ''
-      const optionsUz: Record<string, string> = {}
-      const optionsRu: Record<string, string> = {}
-      let correctAnswer = 'F1'
-
-      lines.forEach((line) => {
-        // Check for question line: 1. or 1)
-        const qMatch = line.match(/^(\d+[\.\)]|\#\d+)\s*(.+)/)
-        if (qMatch && !questionUz) {
-          questionUz = qMatch[2].trim()
-          return
-        }
-
-        // Check for Option: A), B), C), D) or A., B., C., D.
-        const optMatch = line.match(/^([A-Da-dFf\d])[\)\.:\-]\s*(.+)/)
-        if (optMatch) {
-          let letter = optMatch[1].toUpperCase()
-          if (letter === 'A' || letter === '1') letter = 'F1'
-          else if (letter === 'B' || letter === '2') letter = 'F2'
-          else if (letter === 'C' || letter === '3') letter = 'F3'
-          else if (letter === 'D' || letter === '4') letter = 'F4'
-
-          const optText = optMatch[2].trim()
-          optionsUz[letter] = optText
-          optionsRu[letter] = optText
-          return
-        }
-
-        // Check for Correct Answer: To'g'ri: A or Javob: B or Correct: C
-        const ansMatch = line.match(/(?:to'?g'?ri|javob|ответ|correct|ans)\s*[:=-]?\s*([A-Da-dFf\d])/i)
-        if (ansMatch) {
-          let letter = ansMatch[1].toUpperCase()
-          if (letter === 'A' || letter === '1') letter = 'F1'
-          else if (letter === 'B' || letter === '2') letter = 'F2'
-          else if (letter === 'C' || letter === '3') letter = 'F3'
-          else if (letter === 'D' || letter === '4') letter = 'F4'
-          correctAnswer = letter
-          return
-        }
-
-        // If line is not option and not answer and question is not set, set as question
-        if (!questionUz) {
-          questionUz = line
-        }
-      })
-
-      questionRu = questionUz
-
-      let isValid = true
-      let errorReason = ''
-
-      if (!questionUz || questionUz.length < 3) {
-        isValid = false
-        errorReason = "Savol matni topilmadi"
-      } else if (Object.keys(optionsUz).length < 2) {
-        isValid = false
-        errorReason = "Kamida 2 ta variant (A, B) kerak"
-      } else if (!optionsUz[correctAnswer]) {
-        isValid = false
-        errorReason = `To'g'ri javob "${correctAnswer}" variantlar ichida yo'q`
-      }
-
-      result.push({
-        id_temp: `text_${idx + 1}`,
-        questionUz,
-        questionRu,
-        optionsUz,
-        optionsRu,
-        correctAnswer,
-        isValid,
-        errorReason,
-      })
-    })
-
-    return result
-  }
-
-  // ── JSON Parser ───────────────────────────────────────────────────────────
-  const parseJSON = (raw: string): ParsedQuestion[] => {
-    try {
-      const data = JSON.parse(raw)
-      if (!Array.isArray(data)) return []
-
-      return data.map((item, idx) => {
-        const qUz = String(item.questionUz || item.question || '').trim()
-        const qRu = String(item.questionRu || qUz).trim()
-        const optionsUz = item.optionsUz || item.options || {}
-        const optionsRu = item.optionsRu || optionsUz
-        const ans = String(item.correctAnswer || item.answer || 'F1').trim()
-
-        let isValid = true
-        let errorReason = ''
-
-        if (!qUz || qUz.length < 3) {
-          isValid = false
-          errorReason = "Savol matni yo'q"
-        } else if (Object.keys(optionsUz).length < 2) {
-          isValid = false
-          errorReason = "Kamida 2 ta variant kerak"
-        } else if (!optionsUz[ans]) {
-          isValid = false
-          errorReason = `To'g'ri javob "${ans}" variantlarda yo'q`
-        }
-
-        return {
-          id_temp: `json_${idx + 1}`,
-          questionUz: qUz,
-          questionRu: qRu,
-          optionsUz,
-          optionsRu,
-          correctAnswer: ans,
-          image: item.image || null,
-          topicId: item.topicId || null,
-          isValid,
-          errorReason,
-        }
-      })
-    } catch {
-      return []
-    }
-  }
 
   // ── File Upload Handler ───────────────────────────────────────────────────
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -296,11 +63,15 @@ export default function BulkImportModal({
 
     const reader = new FileReader()
     reader.onload = (evt) => {
-      const text = String(evt.target?.result || '')
+      const content = String(evt.target?.result || '')
       if (file.name.endsWith('.json')) {
-        setParsedList(parseJSON(text))
+        setJsonInput(content)
+        setParsedList(parseJSONQuestions(content))
+        setActiveTab('json')
       } else {
-        setParsedList(parseCSV(text))
+        setCsvText(content)
+        setParsedList(parseCSVQuestions(content))
+        setActiveTab('csv')
       }
       setLoading(false)
       haptics.impact('medium')
@@ -312,20 +83,20 @@ export default function BulkImportModal({
     reader.readAsText(file)
   }
 
-  // ── Download Sample Templates ─────────────────────────────────────────────
+  // ── Template Downloads ───────────────────────────────────────────────────
   const downloadTemplate = (type: 'csv' | 'json') => {
     haptics.impact('light')
     if (type === 'csv') {
       const csvContent =
-        'questionUz,questionRu,optionA_uz,optionA_ru,optionB_uz,optionB_ru,optionC_uz,optionC_ru,optionD_uz,optionD_ru,correctAnswer,image\n' +
-        '"Ushbu belgi nimani bildiradi?","Что означает этот знак?","To\'xtash taqiqlangan","Остановка запрещена","To\'xtab turish taqiqlangan","Стоянка запрещена","Harakatlanish taqiqlangan","Движение запрещено","Boshqa yo\'l","Другая дорога","F1",""\n' +
-        '"Ikkinchi savol matni...","Текст второго вопроса...","Variant A","Вариант A","Variant B","Вариант B","Variant C","Вариант C","Variant D","Вариант D","F2",""'
+        'Savol matni (UZ),Savol matni (RU),Variant A,Variant B,Variant C,Variant D,To\'g\'ri javob,Rasm URL\n' +
+        '"Ushbu belgi nimani bildiradi?","Что означает этот знак?","To\'xtash taqiqlangan","To\'xtab turish taqiqlangan","Harakatlanish taqiqlangan","Boshqa yo\'l","A",""\n' +
+        '"Ikkinchi savol matni...","Текст второго вопроса...","Variant 1","Variant 2","Variant 3","Variant 4","B",""'
 
       const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `savollar_shablon_${subjectId}.csv`
+      a.download = `shablon_${subjectId}.csv`
       a.click()
       URL.revokeObjectURL(url)
     } else {
@@ -334,20 +105,19 @@ export default function BulkImportModal({
           {
             questionUz: 'Ushbu belgi nimani bildiradi?',
             questionRu: 'Что означает этот знак?',
-            optionsUz: {
-              F1: "To'xtash taqiqlangan",
-              F2: "To'xtab turish taqiqlangan",
-              F3: 'Harakatlanish taqiqlangan',
-              F4: "Boshqa yo'l",
-            },
-            optionsRu: {
-              F1: 'Остановка запрещена',
-              F2: 'Стоянка запрещена',
-              F3: 'Движение запрещено',
-              F4: 'Другая дорога',
-            },
-            correctAnswer: 'F1',
+            options: ['To\'xtash taqiqlangan', 'To\'xtab turish taqiqlangan', 'Harakatlanish taqiqlangan', 'Boshqa yo\'l'],
+            answer: 'A',
             image: null,
+          },
+          {
+            questionUz: 'Ikkinchi savol matni...',
+            options: {
+              F1: 'Variant A',
+              F2: 'Variant B',
+              F3: 'Variant C',
+              F4: 'Variant D',
+            },
+            correctAnswer: 'F2',
           },
         ],
         null,
@@ -358,17 +128,60 @@ export default function BulkImportModal({
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
-      a.download = `savollar_shablon_${subjectId}.json`
+      a.download = `shablon_${subjectId}.json`
       a.click()
       URL.revokeObjectURL(url)
     }
   }
 
-  // ── Import Execution ──────────────────────────────────────────────────────
+  // ── In-Place Quick Edit ───────────────────────────────────────────────────
+  const updateQuestionAnswer = (id_temp: string, newAns: string) => {
+    setParsedList((prev) =>
+      prev.map((q) => {
+        if (q.id_temp !== id_temp) return q
+        const isValid = Boolean(q.questionUz && Object.keys(q.optionsUz).length >= 2 && q.optionsUz[newAns])
+        return {
+          ...q,
+          correctAnswer: newAns,
+          isValid,
+          errorReason: isValid ? undefined : q.errorReason,
+        }
+      })
+    )
+    haptics.impact('light')
+  }
+
+  const deleteParsedItem = (id_temp: string) => {
+    setParsedList((prev) => prev.filter((q) => q.id_temp !== id_temp))
+    haptics.impact('light')
+  }
+
+  const saveEditedItem = (updated: ParsedQuestion) => {
+    const isValid = Boolean(
+      updated.questionUz.trim().length >= 2 &&
+        Object.keys(updated.optionsUz).length >= 2 &&
+        updated.optionsUz[updated.correctAnswer]
+    )
+    setParsedList((prev) =>
+      prev.map((q) =>
+        q.id_temp === updated.id_temp
+          ? {
+              ...updated,
+              isValid,
+              errorReason: isValid ? undefined : "Kamida 2 ta variant va to'g'ri javob kerak",
+            }
+          : q
+      )
+    )
+    setEditingItem(null)
+    haptics.notify('success')
+  }
+
+  // ── Import Submission ─────────────────────────────────────────────────────
   const handleImport = async () => {
     const validItems = parsedList.filter((q) => q.isValid)
     if (validItems.length === 0) {
-      alert("Yuklash uchun yaroqli savollar topilmadi")
+      alert("Yuklash uchun yaroqli savollar mavjud emas")
       return
     }
 
@@ -401,15 +214,21 @@ export default function BulkImportModal({
   const validCount = parsedList.filter((q) => q.isValid).length
   const invalidCount = parsedList.length - validCount
 
+  const displayList = parsedList.filter((q) => {
+    if (filterTab === 'valid') return q.isValid
+    if (filterTab === 'invalid') return !q.isValid
+    return true
+  })
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
       <div className="relative w-full max-w-lg rounded-3xl bg-surface border border-line p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
-        {/* Top Header */}
+        {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-line">
           <div>
             <h2 className="text-base font-black text-fg flex items-center gap-2">
               <Upload size={18} className="text-duo-purple" />
-              Ommaviy Savollar Yuklash
+              Mukammal Savollar Importi
             </h2>
             <p className="text-xs text-muted flex items-center gap-1.5 mt-0.5">
               <span>{subjectIcon}</span>
@@ -424,11 +243,11 @@ export default function BulkImportModal({
           </button>
         </div>
 
-        {/* Templates Download Bar */}
-        <div className="flex items-center justify-between p-2.5 my-3 bg-elevated rounded-2xl border border-line text-xs">
+        {/* Download Template Bar */}
+        <div className="flex items-center justify-between p-2.5 my-2.5 bg-elevated rounded-2xl border border-line text-xs">
           <span className="font-bold text-muted text-[11px] flex items-center gap-1.5">
             <Download size={14} className="text-duo-green" />
-            Namunaviy shablonlar:
+            Shablonlar:
           </span>
           <div className="flex items-center gap-2">
             <button
@@ -446,41 +265,35 @@ export default function BulkImportModal({
           </div>
         </div>
 
-        {/* Tab Selection */}
+        {/* Tab Selector */}
         <div className="grid grid-cols-3 gap-1 p-1 bg-elevated rounded-2xl border border-line mb-3">
           <button
             type="button"
             onClick={() => setActiveTab('csv')}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
-              activeTab === 'csv'
-                ? 'bg-duo-purple text-ponprimary shadow-md'
-                : 'text-muted hover:text-fg'
+              activeTab === 'csv' ? 'bg-duo-purple text-ponprimary shadow-md' : 'text-muted hover:text-fg'
             }`}
           >
             <FileSpreadsheet size={14} />
-            Fayl (CSV)
+            Excel / CSV
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('text')}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
-              activeTab === 'text'
-                ? 'bg-duo-purple text-ponprimary shadow-md'
-                : 'text-muted hover:text-fg'
+              activeTab === 'text' ? 'bg-duo-purple text-ponprimary shadow-md' : 'text-muted hover:text-fg'
             }`}
           >
             <FileText size={14} />
-            Matn (AI)
+            Matn / AI
           </button>
 
           <button
             type="button"
             onClick={() => setActiveTab('json')}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
-              activeTab === 'json'
-                ? 'bg-duo-purple text-ponprimary shadow-md'
-                : 'text-muted hover:text-fg'
+              activeTab === 'json' ? 'bg-duo-purple text-ponprimary shadow-md' : 'text-muted hover:text-fg'
             }`}
           >
             <FileCode size={14} />
@@ -488,29 +301,45 @@ export default function BulkImportModal({
           </button>
         </div>
 
-        {/* Input Area by Tab */}
+        {/* Tab Inputs */}
         <div className="overflow-y-auto flex-1 space-y-3 pr-1">
           {activeTab === 'csv' && (
-            <div className="space-y-3">
+            <div className="space-y-2">
               <input
                 ref={fileInputRef}
                 type="file"
-                accept=".csv,.txt,.json"
+                accept=".csv,.tsv,.txt,.json"
                 onChange={handleFileUpload}
                 className="hidden"
               />
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-line hover:border-duo-purple/60 rounded-3xl p-6 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
+                className="border-2 border-dashed border-line hover:border-duo-purple/60 rounded-3xl p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
               >
-                <FileSpreadsheet size={32} className="mx-auto text-duo-purple mb-2" />
+                <FileSpreadsheet size={28} className="mx-auto text-duo-purple mb-1.5" />
                 <p className="text-xs font-bold text-fg">
-                  {fileName ? fileName : 'CSV yoki JSON faylni tanlang'}
+                  {fileName ? fileName : 'CSV, TSV yoki Excel faylni yuklang'}
                 </p>
-                <p className="text-[11px] text-muted mt-1">
-                  Excel (.csv) yoki JSON formatidagi fayllar qabul qilinadi
+                <p className="text-[10px] text-muted mt-0.5">
+                  Vergul (,), nuqta-vergul (;) yoki Tab bilan ajratilgan fayllar to'liq qo'llab-quvvatlanadi
                 </p>
               </div>
+
+              <details className="text-[11px] text-muted">
+                <summary className="cursor-pointer font-bold hover:text-fg">
+                  Yoki CSV matnini to'g'ridan-to'g'ri tashlash
+                </summary>
+                <textarea
+                  value={csvText}
+                  onChange={(e) => {
+                    setCsvText(e.target.value)
+                    setParsedList(parseCSVQuestions(e.target.value))
+                  }}
+                  rows={4}
+                  placeholder={`Savol,Variant A,Variant B,Variant C,To'g'ri\n"1-savol","A","B","C","A"`}
+                  className="w-full mt-1.5 bg-card border border-line rounded-2xl p-2.5 text-xs text-fg font-mono focus:outline-none focus:border-duo-purple transition-all"
+                />
+              </details>
             </div>
           )}
 
@@ -520,14 +349,14 @@ export default function BulkImportModal({
                 value={textInput}
                 onChange={(e) => {
                   setTextInput(e.target.value)
-                  setParsedList(parseSmartText(e.target.value))
+                  setParsedList(parseSmartTextQuestions(e.target.value))
                 }}
                 rows={6}
-                placeholder={`1. Savol matni?\nA) Variant 1\nB) Variant 2\nC) Variant 3\nTo'g'ri: A\n\n2. Keyingi savol...`}
+                placeholder={`1. Avtomobilning maksimal tezligi qancha?\nA) 70 km/soat\nB) 90 km/soat\nC) 110 km/soat\nTo'g'ri: B\n\n2. Keyingi savol matni...\nA) Variant 1\nB) Variant 2\nJavob: A`}
                 className="w-full bg-card border border-line rounded-2xl p-3 text-xs text-fg font-mono focus:outline-none focus:border-duo-purple transition-all"
               />
               <p className="text-[10px] text-muted">
-                💡 Maslahat: ChatGPT yoki Clodedan olingan testlarni to'g'ridan-to'g'ri tashlashingiz mumkin.
+                💡 ChatGPT, Word yoki test to'plamlaridan nusxalangan matnlarni to'g'ridan-to'g'ri qo'yishingiz mumkin.
               </p>
             </div>
           )}
@@ -538,79 +367,143 @@ export default function BulkImportModal({
                 value={jsonInput}
                 onChange={(e) => {
                   setJsonInput(e.target.value)
-                  setParsedList(parseJSON(e.target.value))
+                  setParsedList(parseJSONQuestions(e.target.value))
                 }}
                 rows={6}
-                placeholder={`[\n  {\n    "questionUz": "Savol?",\n    "optionsUz": { "F1": "A", "F2": "B" },\n    "correctAnswer": "F1"\n  }\n]`}
+                placeholder={`[\n  {\n    "question": "Savol matni?",\n    "options": ["Variant A", "Variant B", "Variant C"],\n    "answer": "A"\n  }\n]`}
                 className="w-full bg-card border border-line rounded-2xl p-3 text-xs text-fg font-mono focus:outline-none focus:border-duo-purple transition-all"
               />
             </div>
           )}
 
-          {/* Parsed Summary & Preview */}
+          {/* Parsed Summary & Filter Badges */}
           {loading ? (
             <div className="py-8 text-center text-muted">
               <Loader2 size={24} className="animate-spin mx-auto mb-2 text-duo-purple" />
-              <p className="text-xs">Fayl tahlil qilinmoqda...</p>
+              <p className="text-xs font-semibold">Tahlil qilinmoqda...</p>
             </div>
           ) : parsedList.length > 0 ? (
-            <div className="space-y-2 pt-2 border-t border-line">
-              <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-fg">
-                  Tahlil natijasi: {parsedList.length} ta savol
-                </span>
-                <div className="flex items-center gap-2 text-[11px] font-bold">
-                  <span className="text-duo-green flex items-center gap-1">
-                    <CheckCircle2 size={13} /> {validCount} ta to'g'ri
-                  </span>
-                  {invalidCount > 0 && (
-                    <span className="text-duo-red flex items-center gap-1">
-                      <AlertCircle size={13} /> {invalidCount} ta xato
-                    </span>
-                  )}
+            <div className="space-y-2.5 pt-2 border-t border-line">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-1.5">
                   <button
-                    onClick={() => {
-                      setParsedList([])
-                      setFileName(null)
-                      setTextInput('')
-                      setJsonInput('')
-                    }}
-                    className="p-1 text-muted hover:text-duo-red ml-1"
-                    title="Tozalash"
-                  >
-                    <Trash2 size={13} />
-                  </button>
-                </div>
-              </div>
-
-              {/* List of parsed questions */}
-              <div className="max-h-48 overflow-y-auto space-y-1.5 pr-1">
-                {parsedList.map((q, idx) => (
-                  <div
-                    key={q.id_temp}
-                    className={`p-2.5 rounded-2xl border text-xs ${
-                      q.isValid
-                        ? 'bg-card border-line'
-                        : 'bg-duo-red/10 border-duo-red/30'
+                    type="button"
+                    onClick={() => setFilterTab('all')}
+                    className={`px-2.5 py-1 rounded-xl text-[11px] font-black transition-all ${
+                      filterTab === 'all'
+                        ? 'bg-fg text-bg'
+                        : 'bg-elevated border border-line text-muted hover:text-fg'
                     }`}
                   >
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <p className="font-bold text-fg truncate">
+                    Barchasi ({parsedList.length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setFilterTab('valid')}
+                    className={`px-2.5 py-1 rounded-xl text-[11px] font-black flex items-center gap-1 transition-all ${
+                      filterTab === 'valid'
+                        ? 'bg-duo-green text-ponprimary'
+                        : 'bg-duo-green/10 border border-duo-green/30 text-duo-green'
+                    }`}
+                  >
+                    <CheckCircle2 size={12} /> {validCount}
+                  </button>
+                  {invalidCount > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => setFilterTab('invalid')}
+                      className={`px-2.5 py-1 rounded-xl text-[11px] font-black flex items-center gap-1 transition-all ${
+                        filterTab === 'invalid'
+                          ? 'bg-duo-red text-white'
+                          : 'bg-duo-red/10 border border-duo-red/30 text-duo-red'
+                      }`}
+                    >
+                      <AlertCircle size={12} /> {invalidCount} xato
+                    </button>
+                  )}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setParsedList([])
+                    setFileName(null)
+                    setTextInput('')
+                    setJsonInput('')
+                    setCsvText('')
+                  }}
+                  className="p-1 text-muted hover:text-duo-red"
+                  title="Tozalash"
+                >
+                  <Trash2 size={14} />
+                </button>
+              </div>
+
+              {/* Parsed Interactive Questions List */}
+              <div className="max-h-56 overflow-y-auto space-y-2 pr-1">
+                {displayList.map((q, idx) => (
+                  <div
+                    key={q.id_temp}
+                    className={`p-3 rounded-2xl border text-xs transition-all ${
+                      q.isValid ? 'bg-card border-line' : 'bg-duo-red/10 border-duo-red/30'
+                    }`}
+                  >
+                    <div className="flex items-start justify-between gap-2 mb-1.5">
+                      <p className="font-bold text-fg line-clamp-2">
                         #{idx + 1}. {q.questionUz}
                       </p>
-                      {q.isValid ? (
-                        <span className="text-[10px] text-duo-green font-black bg-duo-green/15 px-2 py-0.5 rounded-md flex-shrink-0">
-                          To'g'ri: {q.correctAnswer}
-                        </span>
-                      ) : (
-                        <span className="text-[10px] text-duo-red font-black bg-duo-red/20 px-2 py-0.5 rounded-md flex-shrink-0">
-                          {q.errorReason}
-                        </span>
-                      )}
+                      <div className="flex items-center gap-1 flex-shrink-0">
+                        <button
+                          onClick={() => setEditingItem(q)}
+                          className="p-1 text-muted hover:text-duo-blue"
+                          title="Tahrirlash"
+                        >
+                          <Pencil size={13} />
+                        </button>
+                        <button
+                          onClick={() => deleteParsedItem(q.id_temp)}
+                          className="p-1 text-muted hover:text-duo-red"
+                          title="O'chirish"
+                        >
+                          <Trash2 size={13} />
+                        </button>
+                      </div>
                     </div>
-                    <div className="text-[11px] text-muted truncate">
-                      Variantlar: {Object.entries(q.optionsUz).map(([k, v]) => `${k}) ${v}`).join(' · ')}
+
+                    {/* Options list with click-to-change correct answer */}
+                    <div className="grid grid-cols-2 gap-1.5 mt-2">
+                      {Object.entries(q.optionsUz).map(([optKey, optVal]) => {
+                        const isCorrect = q.correctAnswer === optKey
+                        return (
+                          <button
+                            key={optKey}
+                            type="button"
+                            onClick={() => updateQuestionAnswer(q.id_temp, optKey)}
+                            className={`p-1.5 rounded-xl border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
+                              isCorrect
+                                ? 'bg-duo-green/20 border-duo-green/50 text-fg font-black'
+                                : 'bg-surface/60 border-line/60 text-muted hover:text-fg'
+                            }`}
+                            title="To'g'ri javob qilish uchun bosing"
+                          >
+                            <span
+                              className={`w-4 h-4 rounded-md flex items-center justify-center text-[9px] font-black ${
+                                isCorrect ? 'bg-duo-green text-ponprimary' : 'bg-elevated'
+                              }`}
+                            >
+                              {optKey}
+                            </span>
+                            <span className="truncate">{optVal}</span>
+                          </button>
+                        )
+                      })}
                     </div>
+
+                    {!q.isValid && (
+                      <p className="text-[10px] text-duo-red font-bold mt-1.5 flex items-center gap-1">
+                        <AlertCircle size={11} /> {q.errorReason}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -618,7 +511,7 @@ export default function BulkImportModal({
           ) : null}
         </div>
 
-        {/* Footer Actions */}
+        {/* Footer */}
         <div className="pt-3 border-t border-line mt-2 flex items-center justify-between gap-3">
           <button
             type="button"
@@ -644,6 +537,79 @@ export default function BulkImportModal({
           </button>
         </div>
       </div>
+
+      {/* In-Modal Single Question Edit Popup */}
+      {editingItem && (
+        <div className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+          <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 space-y-3 shadow-2xl">
+            <div className="flex items-center justify-between">
+              <h3 className="text-sm font-black text-fg">Savolni tahrirlash</h3>
+              <button onClick={() => setEditingItem(null)} className="p-1 text-muted">
+                <X size={16} />
+              </button>
+            </div>
+
+            <div>
+              <label className="text-[11px] text-muted font-bold block mb-1">Savol matni</label>
+              <textarea
+                value={editingItem.questionUz}
+                onChange={(e) =>
+                  setEditingItem({
+                    ...editingItem,
+                    questionUz: e.target.value,
+                    questionRu: e.target.value,
+                  })
+                }
+                rows={3}
+                className="w-full bg-elevated border border-line rounded-xl p-2 text-xs text-fg"
+              />
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-[11px] text-muted font-bold block">Variantlar</label>
+              {['F1', 'F2', 'F3', 'F4'].map((key) => (
+                <div key={key} className="flex items-center gap-2">
+                  <span className="text-[11px] font-mono font-bold text-muted w-5">{key}</span>
+                  <input
+                    type="text"
+                    value={editingItem.optionsUz[key] || ''}
+                    onChange={(e) => {
+                      const newOpts = { ...editingItem.optionsUz, [key]: e.target.value }
+                      if (!e.target.value.trim()) delete newOpts[key]
+                      setEditingItem({
+                        ...editingItem,
+                        optionsUz: newOpts,
+                        optionsRu: newOpts,
+                      })
+                    }}
+                    placeholder={`Variant ${key}`}
+                    className="flex-1 bg-elevated border border-line rounded-xl px-2.5 py-1.5 text-xs text-fg"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setEditingItem({ ...editingItem, correctAnswer: key })}
+                    className={`p-1.5 rounded-xl border text-[10px] font-bold ${
+                      editingItem.correctAnswer === key
+                        ? 'bg-duo-green text-ponprimary border-duo-green'
+                        : 'bg-surface border-line text-muted'
+                    }`}
+                    title="To'g'ri javob qilish"
+                  >
+                    <Check size={12} />
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            <button
+              onClick={() => saveEditedItem(editingItem)}
+              className="btn-premium w-full py-2.5 rounded-xl text-xs font-black"
+            >
+              Saqlash
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
