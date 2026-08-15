@@ -6,7 +6,19 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🏆 Haftalik Turnir & Avtomatik Sovg'alar (Weekly Tournament Prize Automation)
+### 1. ⚔️ Oktagon: Do'st bilan Bellashuv — Maxsus Xona & PIN Kod (Custom Room PvP)
+* **Xususiyat:** O'quvchilar endi faqat tasodifiy raqiblar bilan emas, o'z do'stlari bilan 6 xonali PIN-kod yoki Telegram havolasi orqali to'g'ridan-to'g'ri maxsus duel xonasida bellashishlari mumkin.
+* **Imkoniyatlar:**
+  * 🎮 **Xona Yaratish (`CustomRoomModal`):** Bitta bosishda 6 xonali tasodifiy PIN-kod (masalan, `749 210`) bilan maxsus xona ochish.
+  * 📋 **PIN Kodni Nusxalash:** Do'stiga PIN-kodni nusxalab yuborish.
+  * ✈️ **Telegram Direct Invite:** Bitta tugma bilan do'stiga to'g'ridan-to'g'ri `https://t.me/kiwi_uz_bot?start=duel-749210` havolasini yuborish.
+  * 🔑 **Kodni Kiritish & Xonaga Qo'shilish:** Do'sti aytgan 6 xonali PIN-kodni kiritib, bir zumda duelga ulanish.
+  * 🔄 **WebSocket Moslashuvi:** `server/octagon.ts` da `DUEL_CODE_RE` kengaytirildi va PIN-kodlar bo'yicha aniq juftlashish tizimi yo'lga qo'yildi.
+* **Fayllar:** `server/octagon.ts`, `src/features/octagon/components/CustomRoomModal.tsx`, `src/features/octagon/components/IdleScreen.tsx`, `src/features/octagon/components/SearchingScreen.tsx`, `src/features/octagon/OctagonPage.tsx`.
+
+---
+
+### 2. 🏆 Haftalik Turnir & Avtomatik Sovg'alar (Weekly Tournament Prize Automation)
 * **Xususiyat:** Har dushanba haftalik ligada eng yuqori ball to'plagan 1-, 2-, 3-o'rin sohiblariga avtomatik ravishda bepul **Premium** obuna sovg'a qilish, g'oliblarni ro'yxatga olish va Telegram bot orqali maxsus bayramona tabriknoma yuborish tizimi.
 * **Sovrinlar Tizimi:**
   * 🥇 **1-O'rin (Chempion):** `30 kunlik Bepul Premium` (yoki `premiumUntil` +30 kun).
