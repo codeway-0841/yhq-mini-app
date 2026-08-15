@@ -25,6 +25,7 @@ import {
   sendLeagueResultsNotification,
   sendPremiumExpiringReminder,
 } from '../notifications/retention.service'
+import { distributeWeeklyPrizes } from '../leaderboard/tournament-prize.service'
 
 const router = Router()
 
@@ -215,6 +216,11 @@ router.get('/cron/league-rollover', async (_req, res) => {
     const demoted  = plan.filter((p) => lvl(p.toLeague) < lvl(p.fromLeague)).length
     const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted }
     await cronRepository.complete('league-rollover', wPrev, result)
+
+    // Haftalik turnir g'oliblariga avtomatik Premium sovg'alarini berish va tabriknoma jo'natish
+    distributeWeeklyPrizes(wPrev)
+      .then((res) => console.log(`[league-rollover] Tournament prizes distributed for ${wPrev}: ${res.winners.length} winners`))
+      .catch((e) => console.error('[league-rollover] tournament prizes error:', e))
 
     // Notify users about league changes in background (non-blocking)
     if (plan.length > 0) {

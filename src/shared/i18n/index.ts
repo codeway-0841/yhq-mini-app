@@ -194,11 +194,18 @@ const UZ = {
   refTitle: "Do'stni taklif qiling", refBtn: "Taklif qilish",
   refDesc: "Do'stingiz link orqali birinchi marta kirsa — sizga +3 kun Premium!",
   refShareText: "KIWI — imtihonga birga tayyorlanamiz! Mening linkim orqali kiring:",
-  // Haftalik liga
   leagueTab: "Liga", allTimeTab: "Umumiy",
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
   leagueWeekInfo: "Dushanba kuni top 30% yuqoriga, pastki 30% pastga suriladi",
   promoteZone: "Peshlaga yuqori liga", demoteZone: "Pastga tushish zonasi",
+  // Haftalik turnir sovrinlari
+  tournamentPrizesTitle: "Haftalik Turnir Sovrinlari",
+  tournamentPrizesDesc: "Har dushanba ligada eng yuqori o'rinlarni egallang va Bepul Premium yuting!",
+  tournamentRank1: "30 kun Bepul Premium",
+  tournamentRank2: "14 kun Bepul Premium",
+  tournamentRank3: "7 kun Bepul Premium",
+  pastWinnersTitle: "O'tgan hafta chempionlari",
+  noWinnersYet: "Hozircha g'oliblar mavjud emas",
   // UI/UX a11y labels
   cancelExit: "Bekor qilish", removeSaved: "Saqlanganlardan olib tashlash",
   timeRemaining: "Qolgan vaqt", of: "dan", zoomImage: "Rasmni kattalashtirish",
@@ -427,11 +434,18 @@ const RU: Record<Keys, string> = {
   refTitle: "Пригласите друга", refBtn: "Пригласить",
   refDesc: "Друг впервые войдёт по вашей ссылке — вам +3 дня Premium!",
   refShareText: "KIWI — готовимся к экзамену вместе! Входите по моей ссылке:",
-  // Недельная лига
   leagueTab: "Лига", allTimeTab: "Всё время",
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",
   leagueWeekInfo: "В понедельник топ 30% поднимаются, последние 30% падают",
   promoteZone: "Зона повышения", demoteZone: "Зона понижения",
+  // Призы еженедельного турнира
+  tournamentPrizesTitle: "Призы еженедельного турнира",
+  tournamentPrizesDesc: "Занимайте призовые места каждый понедельник и выигрывайте бесплатный Premium!",
+  tournamentRank1: "30 дней Премиум бесплатно",
+  tournamentRank2: "14 дней Премиум бесплатно",
+  tournamentRank3: "7 дней Премиум бесплатно",
+  pastWinnersTitle: "Победители прошлой недели",
+  noWinnersYet: "Победителей пока нет",
   // UI/UX a11y labels
   cancelExit: "Отмена", removeSaved: "Удалить из сохранённых",
   timeRemaining: "Осталось времени", of: "из", zoomImage: "Увеличить изображение",

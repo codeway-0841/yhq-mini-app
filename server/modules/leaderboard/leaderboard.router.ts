@@ -7,7 +7,18 @@ import { wrap }                       from '../../middleware/error-handler'
 import { parseUserId, parseLimit }    from '../../utils/parse'
 import { leaderboardRepository }      from './leaderboard.repository'
 
+import { getLatestTournamentWinners } from './tournament-prize.service'
+
 const router = Router()
+
+// GET /api/leaderboard/tournament-winners → oxirgi haftalik turnir g'oliblari
+router.get(
+  '/leaderboard/tournament-winners',
+  wrap(async (_req, res) => {
+    const winners = await getLatestTournamentWinners()
+    res.json({ ok: true, winners })
+  }),
+)
 
 // GET /api/leaderboard?limit=50&userId=<caller>          → umumiy (all-time) reyting
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=weekly → haftalik liga reytingi

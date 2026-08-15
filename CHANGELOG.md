@@ -6,7 +6,22 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. ✨ AI Savol Generatori & Matn Studiyasi (Admin AI Question Studio)
+### 1. 🏆 Haftalik Turnir & Avtomatik Sovg'alar (Weekly Tournament Prize Automation)
+* **Xususiyat:** Har dushanba haftalik ligada eng yuqori ball to'plagan 1-, 2-, 3-o'rin sohiblariga avtomatik ravishda bepul **Premium** obuna sovg'a qilish, g'oliblarni ro'yxatga olish va Telegram bot orqali maxsus bayramona tabriknoma yuborish tizimi.
+* **Sovrinlar Tizimi:**
+  * 🥇 **1-O'rin (Chempion):** `30 kunlik Bepul Premium` (yoki `premiumUntil` +30 kun).
+  * 🥈 **2-O'rin (Vitse-chempion):** `14 kunlik Bepul Premium` (`premiumUntil` +14 kun).
+  * 🥉 **3-O'rin (Bronza sovrindor):** `7 kunlik Bepul Premium` (`premiumUntil` +7 kun).
+* **Avtomatlashtirish & Idempotency:**
+  * 🔄 `/cron/league-rollover` har dushanba liga o'tishlari bilan birga avtomatik `distributeWeeklyPrizes(wPrev)` ni chaqiradi.
+  * 🛡️ Agar foydalanuvchida allaqachon aktiv Premium bo'lsa, yangi muddat uning joriy tugash sanasiga qo'shib uzaytiriladi.
+  * 🤖 G'oliblarga bot orqali bayramona tabriknoma va WebApp orqali reytingni ko'rish tugmasi jo'natiladi.
+  * 📱 `LeaderboardPage.tsx` sahifasida "🏆 Haftalik Turnir Sovrinlari" banneri joylashtirildi.
+* **Fayllar:** `server/schema.ts` (`tournament_prizes`), `server/modules/leaderboard/tournament-prize.service.ts`, `server/modules/cron/cron.router.ts`, `server/modules/leaderboard/leaderboard.router.ts`, `src/features/leaderboard/LeaderboardPage.tsx`.
+
+---
+
+### 2. ✨ AI Savol Generatori & Matn Studiyasi (Admin AI Question Studio)
 * **Xususiyat:** Admin o'zi yozgan matn, qoidalar to'plami yoki ixtiyoriy darslik mavzusi asosida Google Gemini AI yordamida 4 ta variantli professional test savollarini tushuntirishi bilan bir zumda shakllantirish va tahrirlash studiyasi.
 * **Imkoniyatlar:**
   * 📝 **Matn yozish / Darslik konspekti:** Admin o'zi yozgan qoidalar yoki matnni kiritadi, AI aynan shu manba asosida savollar tuzadi.
