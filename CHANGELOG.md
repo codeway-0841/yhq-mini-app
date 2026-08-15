@@ -6,7 +6,19 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 💳 Click.uz To'lov Tizimi Integratsiyasi (O'zbek so'mida Premium Obuna)
+### 1. ✨ AI Savol Generatori & Matn Studiyasi (Admin AI Question Studio)
+* **Xususiyat:** Admin o'zi yozgan matn, qoidalar to'plami yoki ixtiyoriy darslik mavzusi asosida Google Gemini AI yordamida 4 ta variantli professional test savollarini tushuntirishi bilan bir zumda shakllantirish va tahrirlash studiyasi.
+* **Imkoniyatlar:**
+  * 📝 **Matn yozish / Darslik konspekti:** Admin o'zi yozgan qoidalar yoki matnni kiritadi, AI aynan shu manba asosida savollar tuzadi.
+  * 💡 **Mavzu bo'yicha generatsiya:** Shunchaki bitta mavzu nomini kiritish (masalan, *"Chorrahada burilish qoidalari"*, *"Nyuton qonunlari"* va hokazo).
+  * 🎛️ **Moslashuvchan sozlamalar:** 8 ta fan tanlash, savollar soni (3, 5, 10, 15, 20 ta), qiyinchilik darajasi (Oson, O'rtacha, Qiyin, Aralash) va 2 tilda (O'zbek / Rus) parallel generatsiya.
+  * ✏️ **Interaktiv Studiya & Tahrirlash:** Har bir savolni ekranda bevosita tahrirlash, to'g'ri javobni almashtirish, tushuntirishni to'g'rilash, rasm biriktirish (Canvas auto-compression) va yangi savollar qo'shish.
+  * 💾 **Bir Zumda Bazaga Saqlash:** Barcha tasdiqlangan savollarni bitta bosishda to'g'ridan-to'g'ri fan bazasiga qo'shish (`POST /api/admin/questions/bulk-import`).
+* **Fayllar:** `server/modules/admin/ai-question-generator.service.ts`, `server/modules/admin/admin.router.ts`, `src/features/admin/components/AdminAiStudioTab.tsx`, `src/features/admin/AdminPage.tsx`.
+
+---
+
+### 2. 💳 Click.uz To'lov Tizimi Integratsiyasi (O'zbek so'mida Premium Obuna)
 * **Xususiyat:** Foydalanuvchilar o'zbek so'mida (Uzcard / Humo plastik kartalari, Click ilovasi yoki veb orqali) 1 oylik, 1 yillik yoki umrbod Premium obunani bir zumda sotib olishlari mumkin.
 * **Narxlar (SSOT `shared/premium-plans.ts`):**
   * 📅 **Oylik (30 kun):** `29 000 so'm` (yoki ⭐ 99 Stars)

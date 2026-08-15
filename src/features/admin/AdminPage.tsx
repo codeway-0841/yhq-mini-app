@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send } from 'lucide-react'
+import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send, Sparkles } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import AdminPromoTab from './components/AdminPromoTab'
 import AdminQuestionsTab from './components/AdminQuestionsTab'
+import AdminAiStudioTab from './components/AdminAiStudioTab'
 import AdminUsersTab from './components/AdminUsersTab'
 import AdminBroadcastTab from './components/AdminBroadcastTab'
 import AdminStatsTab from './components/AdminStatsTab'
 
-type AdminTab = 'promos' | 'questions' | 'users' | 'broadcast' | 'stats'
+type AdminTab = 'promos' | 'questions' | 'studio' | 'users' | 'broadcast' | 'stats'
 
 export default function AdminPage() {
   const navigate = useNavigate()
@@ -29,6 +30,7 @@ export default function AdminPage() {
   const tabs: { id: AdminTab; label: string; icon: typeof Ticket }[] = [
     { id: 'promos',    label: 'Promokod',   icon: Ticket },
     { id: 'questions', label: 'Savollar',   icon: HelpCircle },
+    { id: 'studio',    label: 'AI Studiya', icon: Sparkles },
     { id: 'users',     label: 'O\'quvchilar', icon: Users },
     { id: 'broadcast', label: 'E\'lonlar',   icon: Send },
     { id: 'stats',     label: 'Statistika', icon: BarChart3 },
@@ -61,7 +63,7 @@ export default function AdminPage() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="grid grid-cols-5 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
+        <div className="grid grid-cols-6 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -88,6 +90,7 @@ export default function AdminPage() {
       <div className="max-w-md mx-auto">
         {activeTab === 'promos' && <AdminPromoTab />}
         {activeTab === 'questions' && <AdminQuestionsTab lang={lang} />}
+        {activeTab === 'studio' && <AdminAiStudioTab />}
         {activeTab === 'users' && <AdminUsersTab />}
         {activeTab === 'broadcast' && <AdminBroadcastTab lang={lang} currentUserId={user.id} />}
         {activeTab === 'stats' && <AdminStatsTab />}

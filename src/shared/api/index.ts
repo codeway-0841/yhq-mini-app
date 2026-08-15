@@ -410,14 +410,14 @@ export const api = {
     items: Array<{
       questionUz: string
       questionRu: string
-      optionsUz: Record<string, string>
-      optionsRu: Record<string, string>
+      optionsUz: Record<string, string> | Array<{ id: string; text: string }>
+      optionsRu: Record<string, string> | Array<{ id: string; text: string }>
       correctAnswer: string
       image?: string | null
       topicId?: number | null
     }>
   }) =>
-    request<{ success: boolean; count: number }>('POST', '/admin/questions/bulk-import', data),
+    request<{ ok?: boolean; success?: boolean; count: number }>('POST', '/admin/questions/bulk-import', data),
 
   // ── Promo codes ───────────────────────────────────────────────────────────
   redeemPromo: (code: string) =>
@@ -471,6 +471,27 @@ export const api = {
       durationMs: number
     }>('POST', '/admin/broadcast', data),
 
+  generateAiQuestions: (data: {
+    mode: 'custom_text' | 'topic'
+    subjectId: string
+    subjectName?: string
+    promptText: string
+    count?: number
+    difficulty?: 'easy' | 'medium' | 'hard' | 'mixed'
+    language?: 'uz' | 'ru' | 'both'
+  }) =>
+    request<{
+      ok: boolean
+      count: number
+      questions: Array<{
+        questionUz: string
+        questionRu: string
+        optionsUz: Array<{ id: string; text: string }>
+        optionsRu: Array<{ id: string; text: string }>
+        correctAnswer: string
+        explanation?: string
+      }>
+    }>('POST', '/admin/ai/generate-questions', data),
   // ── Payments & Orders (Click.uz) ──────────────────────────────────────────
   createPaymentOrder: (data: { plan: string; provider?: 'click'; returnUrl?: string }) =>
     request<{
