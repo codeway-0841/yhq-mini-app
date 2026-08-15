@@ -10,28 +10,32 @@ import { questionsRepository } from '../modules/questions/questions.repository'
  *   class PhysicsQuestionBankProvider implements QuestionBankProvider { ... }
  */
 export class DefaultQuestionBankProvider implements QuestionBankProvider {
-  readonly sourceId = 'traffic_rules_db'
+  readonly sourceId: string
+
+  constructor(sourceId = 'traffic_rules_db') {
+    this.sourceId = sourceId
+  }
 
   getAllQuestions(): Promise<QuestionRow[]> {
-    return questionsRepository.findAll()
+    return questionsRepository.findAll(this.sourceId)
   }
 
   getQuestionById(questionId: number): Promise<QuestionRow | null> {
-    return questionsRepository.findById(questionId)
+    return questionsRepository.findById(questionId, this.sourceId)
   }
 
   getQuestionsByTopic(topicId: number): Promise<QuestionRow[]> {
-    return questionsRepository.findByTopic(topicId)
+    return questionsRepository.findByTopic(topicId, this.sourceId)
   }
 
   getTopics(): Promise<TopicRow[]> {
-    return questionsRepository.findTopics()
+    return questionsRepository.findTopics(this.sourceId)
   }
 
   async getStats(): Promise<{ totalQuestions: number; totalTopics: number }> {
     const [qs, ts] = await Promise.all([
-      questionsRepository.findAll(),
-      questionsRepository.findTopics(),
+      questionsRepository.findAll(this.sourceId),
+      questionsRepository.findTopics(this.sourceId),
     ])
     return { totalQuestions: qs.length, totalTopics: ts.length }
   }

@@ -45,4 +45,22 @@ describe('Admin Panel Module & API Logic', () => {
     expect(promoCodes.maxUses).toBeDefined()
     expect(promoCodes.usedCount).toBeDefined()
   })
+
+  it('correctly maps subjects to independent question banks', async () => {
+    const { SUBJECT_BASES } = await import('../../../shared/subjects')
+    const { SUBJECT_REGISTRY } = await import('../../../server/config/subjects')
+
+    const subjectToBank = new Map(SUBJECT_BASES.map((s) => [s.id, s.dataSourceId]))
+    expect(subjectToBank.get('yhq')).toBe('traffic_rules_db')
+    expect(subjectToBank.get('rustili')).toBe('russian_db')
+    expect(subjectToBank.get('fizika')).toBe('physics_db')
+    expect(subjectToBank.get('matematika')).toBe('math_db')
+    expect(subjectToBank.get('kimyo')).toBe('chemistry_db')
+    expect(subjectToBank.get('ingliz')).toBe('english_db')
+    expect(subjectToBank.get('tarix')).toBe('history_db')
+    expect(subjectToBank.get('biologiya')).toBe('biology_db')
+
+    // Ensure all 8 subjects are registered in server registry
+    expect(SUBJECT_REGISTRY.length).toBe(8)
+  })
 })

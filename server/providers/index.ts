@@ -7,10 +7,13 @@ import { RussianQuestionBankProvider } from './russian.provider'
  * YANGI BAZA QO'SHGANDA: yangi provider'ni shu map'ga qo'shing.
  */
 const PROVIDERS: Record<string, QuestionBankProvider> = {
-  traffic_rules_db: new DefaultQuestionBankProvider(),
+  traffic_rules_db: new DefaultQuestionBankProvider('traffic_rules_db'),
   russian_db:       new RussianQuestionBankProvider(),
 }
 
 export function getProvider(dataSourceId: string): QuestionBankProvider {
-  return PROVIDERS[dataSourceId] ?? PROVIDERS['traffic_rules_db']
+  if (!PROVIDERS[dataSourceId]) {
+    PROVIDERS[dataSourceId] = new DefaultQuestionBankProvider(dataSourceId)
+  }
+  return PROVIDERS[dataSourceId]
 }

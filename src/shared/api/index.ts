@@ -392,16 +392,18 @@ export const api = {
 
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
   /** TO'LIQ qatorlar (correctAnswer bilan) — public /questions endi javobsiz */
-  getAdminQuestions: () =>
-    request<AdminDbQuestion[]>('GET', '/admin/questions'),
-  createQuestion: (data: Omit<AdminDbQuestion, 'id'> & { id?: number }) =>
+  getAdminQuestions: (subjectId?: string) =>
+    request<AdminDbQuestion[]>('GET', `/admin/questions${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
+  createQuestion: (data: Omit<AdminDbQuestion, 'id'> & { id?: number; subjectId?: string; bankId?: string }) =>
     request<{ id: number; created: true }>('POST', '/admin/questions', data),
   updateQuestion: (id: number, data: Omit<AdminDbQuestion, 'id'>) =>
     request<{ id: number; updated: true }>('PUT', `/admin/questions/${id}`, data),
   deleteQuestion: (id: number) =>
     request<void>('DELETE', `/admin/questions/${id}`),
-  getQuestionsMeta: () =>
-    request<{ total: number; withTopic: number }>('GET', '/admin/questions/meta'),
+  getQuestionsMeta: (subjectId?: string) =>
+    request<{ total: number; withTopic: number }>('GET', `/admin/questions/meta${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
+  getAdminTopics: (subjectId?: string) =>
+    request<DbTopic[]>('GET', `/admin/topics${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
 
   // ── Promo codes ───────────────────────────────────────────────────────────
   redeemPromo: (code: string) =>

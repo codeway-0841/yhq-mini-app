@@ -17,11 +17,19 @@ import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
 import { reloadOctagonPools } from '../../octagon'
 import { db, executeRows } from '../../db/connection'
-import { questions, questionExplanations, savedQuestions } from '../../schema'
-import { eq } from 'drizzle-orm'
-import { sql } from 'drizzle-orm'
+import { questions, questionExplanations, savedQuestions, topics, questionBanks } from '../../schema'
+import { SUBJECT_REGISTRY } from '../../config/subjects'
+import { eq, asc, sql } from 'drizzle-orm'
 
 const router = Router()
+
+function resolveBankId(subjectOrBank: string | undefined): string {
+  if (!subjectOrBank) return 'traffic_rules_db'
+  const matchDataSource = SUBJECT_REGISTRY.find((s) => s.dataSourceId === subjectOrBank)
+  if (matchDataSource) return subjectOrBank
+  const matchSubject = SUBJECT_REGISTRY.find((s) => s.id === subjectOrBank)
+  return matchSubject ? matchSubject.dataSourceId : 'traffic_rules_db'
+}
 
 // ── Rate limiting: admin operatsiyalar uchun juda past (abuse himoyasi) ──
 router.use('/admin', rateLimit({ maxPerMinute: 20, keyFn: (req) => req.ip ?? 'unknown' }))
@@ -33,6 +41,8 @@ const OptionsSchema = z
 
 const QuestionUpsert = z.object({
   id: z.number().int().positive().optional(),        // yangi savol — id avto (max+1)
+  subjectId: z.string().optional(),
+  bankId: z.string().optional(),
   questionUz: z.string().min(3).max(2000),
   questionRu: z.string().min(3).max(2000),
   optionsUz: OptionsSchema,
@@ -55,6 +65,10 @@ type UpsertBody = z.infer<typeof QuestionUpsert>
 // ── POST /api/admin/questions — yangi savol yaratish ──
 router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (req, res) => {
   const body = req.body as UpsertBody
+  const bankId = resolveBankId(body.bankId || body.subjectId)
+
+  // Ensure bank exists in DB
+  await db.insert(questionBanks).values({ id: bankId, name: bankId }).onConflictDoNothing()
 
   // id yo'q bo'lsa — max(id)+1 (seed bilan bir xil strategiya). Parallel admin
   // so'rovlar bir xil max+1 hisoblab 23505 (PK/uq conflict) olishi mumkin —
@@ -69,6 +83,7 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
     try {
       const [r] = await db.insert(questions).values({
         id:            newId,
+        bankId:        bankId,
         externalId:    String(newId),  // canonical identity: (bank_id, external_id)
         questionUz:    body.questionUz,
         questionRu:    body.questionRu,
@@ -136,20 +151,49 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
   res.status(204).send()
 }))
 
-// ── GET /api/admin/questions — TO'LIQ qatorlar (correctAnswer bilan).
-// Public GET /questions javobni endi qaytarmaydi (scoring trust boundary),
-// shuning uchun admin panel alohida himoyalangan endpoint'dan oladi. ──
-router.get('/admin/questions', wrap(async (_req, res) => {
+// ── GET /api/admin/questions — TO'LIQ qatorlar (correctAnswer bilan) fan bo'yicha ──
+router.get('/admin/questions', wrap(async (req, res) => {
+  const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
+  const bankId = resolveBankId(subjectParam)
   res.set('Cache-Control', 'no-store')   // javob kalitlari CDN/browser'da qolmasin
-  res.json(await questionsRepository.findAll())
+
+  const rows = await db
+    .select()
+    .from(questions)
+    .where(eq(questions.bankId, bankId))
+    .orderBy(asc(questions.id))
+
+  res.json(rows)
 }))
 
-// ── GET /api/admin/questions/meta — statistika (kelajak Dashboard uchun) ──
-router.get('/admin/questions/meta', wrap(async (_req, res) => {
+// ── GET /api/admin/questions/meta — fan bo'yicha savol statistikasi ──
+router.get('/admin/questions/meta', wrap(async (req, res) => {
+  const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
+  const bankId = resolveBankId(subjectParam)
+
   const [stats] = await db
-    .select({ total: sql<number>`COUNT(*)::int`, withTopic: sql<number>`COUNT(${questions.topicId})::int` })
+    .select({
+      total: sql<number>`COUNT(*)::int`,
+      withTopic: sql<number>`COUNT(${questions.topicId})::int`,
+    })
     .from(questions)
-  res.json(stats)
+    .where(eq(questions.bankId, bankId))
+
+  res.json(stats ?? { total: 0, withTopic: 0 })
+}))
+
+// ── GET /api/admin/topics — fan bo'yicha mavzular ──
+router.get('/admin/topics', wrap(async (req, res) => {
+  const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
+  const bankId = resolveBankId(subjectParam)
+
+  const topicRows = await db
+    .select()
+    .from(topics)
+    .where(eq(topics.bankId, bankId))
+    .orderBy(asc(topics.id))
+
+  res.json(topicRows)
 }))
 
 // ── GET /api/admin/stats — Jonli tizim statistikasi ──

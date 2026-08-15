@@ -37,9 +37,9 @@ describe('shared/subjects — data integrity', () => {
     }
   })
 
-  it("demoData: false real bazaga ega fanlar uchun (yhq, rustili)", () => {
-    const nonDemo = SUBJECT_BASES.filter((s) => !s.demoData)
-    expect(nonDemo.map((s) => s.id)).toEqual([DEFAULT_SUBJECT_ID, 'rustili'])
+  it("barcha fanlar mustaqil dataSourceId ga ega", () => {
+    const dataSourceIds = SUBJECT_BASES.map((s) => s.dataSourceId)
+    expect(new Set(dataSourceIds).size).toBe(dataSourceIds.length)
   })
 })
 

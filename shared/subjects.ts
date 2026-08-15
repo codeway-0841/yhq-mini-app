@@ -36,12 +36,12 @@ export interface SubjectBase {
 export const SUBJECT_BASES = [
   { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true, demoData: false, examPresets: [] },
   { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'traffic_rules_db', available: true, demoData: true, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'math_db',          available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'chemistry_db',     available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'english_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'history_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'biology_db',       available: true, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
 ] as const satisfies readonly SubjectBase[]
 
 /**
