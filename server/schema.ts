@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm'
 import {
   pgTable, pgEnum, serial, text,
-  integer, boolean, jsonb, timestamp, unique, index, check, primaryKey,
+  integer, boolean, jsonb, timestamp, unique, index, check, primaryKey, real,
 } from 'drizzle-orm/pg-core'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
@@ -393,6 +393,25 @@ export const savedQuestions = pgTable('saved_questions', {
    *  Eski qatorlar migratsiyada 'yhq' bilan to'ldirilgan (traffic_rules_db). */
   subjectId:  text('subject_id').default('yhq').notNull(),
 }, (t) => [unique('uq_saved').on(t.userId, t.subjectId, t.questionId)])
+
+/**
+ * Spaced Repetition (SM-2) kartalari — moslashuvchan test rejimi (Adaptive).
+ * Har bir foydalanuvchi va fan bo'yicha savol xotira parametrlari (EF, interval, reps, dueAt).
+ */
+export const cardProgress = pgTable('card_progress', {
+  id:         serial('id').primaryKey(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  subjectId:  text('subject_id').default('yhq').notNull(),
+  questionId: integer('question_id').notNull().references(() => questions.id, { onDelete: 'cascade' }),
+  ef:         real('ef').default(2.5).notNull(),
+  interval:   integer('interval').default(1).notNull(),
+  reps:       integer('reps').default(0).notNull(),
+  dueAt:      timestamp('due_at').notNull(),
+  updatedAt:  timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  unique('uq_card_progress').on(t.userId, t.subjectId, t.questionId),
+  index('idx_card_user_subject').on(t.userId, t.subjectId),
+])
 
 /** Referal qaydlari — referee faqat bir marta hisoblanadi (anti-farm). */
 export const referrals = pgTable('referrals', {

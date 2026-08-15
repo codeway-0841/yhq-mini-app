@@ -169,4 +169,54 @@ export const progressRepository = {
       updatedAt:       new Date(),
     }).where(eq(progress.userId, userId))
   },
+
+  /** Moslashuvchan rejim (Spaced Repetition) kartalarini yuklash */
+  async getCards(userId: string, subjectId: string) {
+    const { cardProgress } = await import('../../schema')
+    const { and } = await import('drizzle-orm')
+    return db
+      .select({
+        questionId: cardProgress.questionId,
+        ef:         cardProgress.ef,
+        interval:   cardProgress.interval,
+        reps:       cardProgress.reps,
+        dueAt:      cardProgress.dueAt,
+      })
+      .from(cardProgress)
+      .where(and(eq(cardProgress.userId, userId), eq(cardProgress.subjectId, subjectId)))
+  },
+
+  /** Moslashuvchan rejim kartasini yangilash (upsert) */
+  async upsertCard(input: {
+    userId:     string
+    subjectId:  string
+    questionId: number
+    ef:         number
+    interval:   number
+    reps:       number
+    dueAt:      Date
+  }): Promise<void> {
+    const { cardProgress } = await import('../../schema')
+    await db
+      .insert(cardProgress)
+      .values({
+        userId:     input.userId,
+        subjectId:  input.subjectId,
+        questionId: input.questionId,
+        ef:         input.ef,
+        interval:   input.interval,
+        reps:       input.reps,
+        dueAt:      input.dueAt,
+      })
+      .onConflictDoUpdate({
+        target: [cardProgress.userId, cardProgress.subjectId, cardProgress.questionId],
+        set: {
+          ef:        input.ef,
+          interval:  input.interval,
+          reps:      input.reps,
+          dueAt:     input.dueAt,
+          updatedAt: new Date(),
+        },
+      })
+  },
 }

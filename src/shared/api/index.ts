@@ -378,6 +378,16 @@ export const api = {
   touchDailyActivity: (userId: string, data: { subjectId: string }) =>
     request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 
+  // ── Spaced Repetition (Adaptive Mode) Cards ────────────────────────────
+  getCards: (userId: string, subjectId: string) =>
+    request<{ ok: true; cards: Record<number, { questionId: number; ef: number; interval: number; reps: number; dueAt: number }> }>(
+      'GET',
+      `/progress/${uid(userId)}/cards?subjectId=${encodeURIComponent(subjectId)}`
+    ),
+
+  reviewCard: (userId: string, data: { subjectId: string; questionId: number; ef: number; interval: number; reps: number; dueAt: number }) =>
+    request<{ ok: true }>('POST', `/progress/${uid(userId)}/cards/review`, data),
+
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
   /** TO'LIQ qatorlar (correctAnswer bilan) — public /questions endi javobsiz */
   getAdminQuestions: () =>

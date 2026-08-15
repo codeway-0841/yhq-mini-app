@@ -71,4 +71,64 @@ router.delete(
   }),
 )
 
+const ReviewCardSchema = z.object({
+  subjectId:  z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
+  questionId: z.number().int().positive(),
+  ef:         z.number().min(1.3).max(3.0),
+  interval:   z.number().int().min(0).max(3650),
+  reps:       z.number().int().min(0).max(1000),
+  dueAt:      z.number().int().positive(), // unix ms timestamp
+})
+
+// GET /api/progress/:userId/cards
+router.get(
+  '/progress/:userId/cards',
+  validate({
+    query: z.object({
+      subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject').optional(),
+    }),
+  }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+    const subjectId = (req.query['subjectId'] as string) || 'yhq'
+
+    const rows = await progressRepository.getCards(uid, subjectId)
+    const cards: Record<number, { questionId: number; ef: number; interval: number; reps: number; dueAt: number }> = {}
+    for (const r of rows) {
+      cards[r.questionId] = {
+        questionId: r.questionId,
+        ef:         r.ef,
+        interval:   r.interval,
+        reps:       r.reps,
+        dueAt:      r.dueAt.getTime(),
+      }
+    }
+    res.json({ ok: true, cards })
+  }),
+)
+
+// POST /api/progress/:userId/cards/review
+router.post(
+  '/progress/:userId/cards/review',
+  rateLimit({ maxPerMinute: 120 }),
+  validate({ body: ReviewCardSchema }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const body = req.body as z.infer<typeof ReviewCardSchema>
+    await progressRepository.upsertCard({
+      userId:     uid,
+      subjectId:  body.subjectId,
+      questionId: body.questionId,
+      ef:         body.ef,
+      interval:   body.interval,
+      reps:       body.reps,
+      dueAt:      new Date(body.dueAt),
+    })
+    res.json({ ok: true })
+  }),
+)
+
 export default router

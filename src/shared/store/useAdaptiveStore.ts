@@ -11,6 +11,8 @@ import { persist } from 'zustand/middleware'
 import { type SRCard, createCard, updateCard, pickNext } from '../lib/spaced-repetition'
 import { useQuestionsStore } from './useQuestionsStore'
 import { useSubjectStore } from './useSubjectStore'
+import { api } from '../api'
+import { enqueueOutbox } from '../lib/outbox'
 
 interface AdaptiveState {
   /** subjectId → (questionId → SRCard). */
@@ -18,11 +20,12 @@ interface AdaptiveState {
   currentId:      number | null
   sessionCount:   number                  // answered this session
 
-  startSession:    () => void
+  startSession:        () => void
   /** Karta darhol yangilanadi (UI 800ms feedback'dan keyin advanceNext qiladi) */
-  recordAnswer:    (questionId: number, quality: 0 | 1) => void
-  advanceNext:     () => void
-  resetAll:        () => void
+  recordAnswer:        (questionId: number, quality: 0 | 1, userId?: string) => void
+  advanceNext:         () => void
+  syncCardsFromServer: (userId: string, subjectId?: string) => Promise<void>
+  resetAll:            () => void
 }
 
 /** Persist formatiga o'girish helper */
@@ -50,15 +53,48 @@ export const useAdaptiveStore = create<AdaptiveState>()(
         set({ currentId: next ?? null, sessionCount: 0 })
       },
 
-      recordAnswer: (questionId, quality) => {
+      recordAnswer: (questionId, quality, userId) => {
         const subjectId = useSubjectStore.getState().subjectId
         const cards     = mapOf(get().cardsBySubject[subjectId] ?? {})
         const card      = cards.get(questionId) ?? createCard(questionId)
-        cards.set(questionId, updateCard(card, quality))
+        const updated   = updateCard(card, quality)
+        cards.set(questionId, updated)
         set((s) => ({
           cardsBySubject: { ...s.cardsBySubject, [subjectId]: objOf(cards) },
           sessionCount:   s.sessionCount + 1,
         }))
+
+        if (userId && userId !== '0') {
+          enqueueOutbox(userId, 'card-review', {
+            subjectId,
+            questionId,
+            ef:       updated.ef,
+            interval: updated.interval,
+            reps:     updated.reps,
+            dueAt:    updated.dueAt,
+          })
+        }
+      },
+
+      syncCardsFromServer: async (userId, subjectId) => {
+        if (!userId || userId === '0') return
+        const subj = subjectId ?? useSubjectStore.getState().subjectId
+        try {
+          const res = await api.getCards(userId, subj)
+          if (res?.cards) {
+            set((s) => ({
+              cardsBySubject: {
+                ...s.cardsBySubject,
+                [subj]: {
+                  ...(s.cardsBySubject[subj] ?? {}),
+                  ...res.cards,
+                },
+              },
+            }))
+          }
+        } catch {
+          // Offline yoki tarmoq xatosi — lokal saqlangan holat bilan davom etiladi
+        }
       },
 
       advanceNext: () => {

@@ -24,7 +24,7 @@
 
 import { api, ApiError } from '../api'
 
-export type OutboxType = 'result' | 'saved-add' | 'saved-remove' | 'daily-fix'
+export type OutboxType = 'result' | 'saved-add' | 'saved-remove' | 'daily-fix' | 'card-review'
 
 export interface OutboxEntry {
   id:         string
@@ -153,6 +153,16 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
       return
     case 'daily-fix':
       await api.addDailyFix(userId, { subjectId: p.subjectId as string })
+      return
+    case 'card-review':
+      await api.reviewCard(userId, {
+        subjectId:  (p.subjectId as string) ?? 'yhq',
+        questionId: p.questionId as number,
+        ef:         p.ef as number,
+        interval:   p.interval as number,
+        reps:       p.reps as number,
+        dueAt:      p.dueAt as number,
+      })
       return
   }
 }

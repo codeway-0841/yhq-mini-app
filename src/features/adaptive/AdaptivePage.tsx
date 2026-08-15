@@ -48,6 +48,7 @@ function Option({ id, text, state, onSelect, answered }: {
 export default function AdaptivePage() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+  const user     = useAppStore((s) => s.user)
   const settings = useAppStore((s) => s.settings)
   const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
@@ -57,10 +58,11 @@ export default function AdaptivePage() {
   const { currentId, sessionCount, startSession, recordAnswer, advanceNext } = useAdaptiveStore()
   const subjectId = useSubjectStore((s) => s.subjectId)
 
-  // Only start a session when the page first mounts with no active question
+  // Mount paytida bulutdan kartalarni sinxronlash va sessiyani boshlash
   useEffect(() => {
+    if (user?.id) void useAdaptiveStore.getState().syncCardsFromServer(user.id, subjectId)
     if (currentId === null && sessionCount === 0) startSession()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [user?.id, subjectId]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // SR karta — subject bo'yicha lookup (hook early-return'dan OLDIN bo'lishi shart!)
   const card = useAdaptiveStore((s) =>
@@ -96,12 +98,12 @@ export default function AdaptivePage() {
         haptics.notify(scored.correct ? 'success' : 'error')
         playSound(scored.correct ? 'success' : 'error')
       }
-      recordAnswer(q.id, quality)   // karta DARHOL — 800ms'lik oyna ichida chiqib ketsa ham saqlanadi
+      recordAnswer(q.id, quality, user?.id)   // karta DARHOL + outbox bulut sinxroni
 
       // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol
       setTimeout(() => advanceNext(), 800)
     })()
-  }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext])
+  }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext, user?.id])
 
   if (!q) {
     return (
