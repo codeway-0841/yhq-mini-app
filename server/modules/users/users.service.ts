@@ -68,10 +68,10 @@ import { AppError }               from '../../middleware/error-handler'
 export const InitInputSchema = z.object({
   // Telegram user id'lari faqat musbat raqamlar va int8 sig'adi
   id:         z.string().regex(/^\d{1,19}$/, 'user id must be a positive integer string'),
-  first_name: z.string().min(1),
+  first_name: z.string().optional().default('Foydalanuvchi'),
   last_name:  z.string().optional().default(''),
   username:   z.string().optional().default(''),
-  photo_url: z.string().optional().default(''),
+  photo_url:  z.string().optional().default(''),
   /** Telegram start_param — masalan `ref_<userId>` (referal) yoki `duel-xxx` */
   start_param: z.string().max(64).optional(),
 })

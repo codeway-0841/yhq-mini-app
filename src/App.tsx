@@ -229,7 +229,7 @@ export default function App() {
         (refQ && /^\d{1,19}$/.test(refQ) ? `ref_${refQ}` : undefined)
       api.init({
         id:         String(tgUser.id),
-        first_name: tgUser.first_name,
+        first_name: tgUser.first_name || 'Foydalanuvchi',
         last_name:  tgUser.last_name  ?? '',
         username:   tgUser.username   ?? '',
         photo_url:  tgUser.photo_url  ?? '',
