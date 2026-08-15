@@ -5,17 +5,18 @@ const BroadcastSchema = z.object({
   target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
   text: z.string().min(2).max(4000),
   imageUrl: z.string().url().max(1000).nullable().optional(),
+  imageData: z.string().max(10_000_000).nullable().optional(),
   buttonText: z.string().max(64).nullable().optional(),
   buttonUrl: z.string().max(1000).nullable().optional(),
   testTelegramId: z.union([z.string(), z.number()]).nullable().optional(),
 })
 
 describe('Admin Broadcast Module', () => {
-  it('validates a valid broadcast announcement payload', () => {
+  it('validates a valid broadcast announcement payload with uploaded image data', () => {
     const valid = {
       target: 'all' as const,
       text: '🔥 Yangi aksiya boshlandi!\n\nBarcha imtihonlarni bepul yeching!',
-      imageUrl: 'https://example.com/banner.png',
+      imageData: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD...',
       buttonText: '🚀 Ilovani ochish',
       buttonUrl: 'https://t.me/kiwi_app_bot/start',
     }

@@ -2,7 +2,7 @@
  * Broadcast service — send announcements and notifications via Telegram bot.
  */
 
-import { Bot, InlineKeyboard } from 'grammy'
+import { Bot, InlineKeyboard, InputFile } from 'grammy'
 import { eq, gte } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { users, authIdentities, dailyRecords } from '../../schema'
@@ -14,6 +14,7 @@ export interface BroadcastPayload {
   target: BroadcastTarget
   text: string
   imageUrl?: string | null
+  imageData?: string | null
   buttonText?: string | null
   buttonUrl?: string | null
   testTelegramId?: string | number | null
@@ -155,6 +156,19 @@ export async function executeBroadcast(payload: BroadcastPayload): Promise<Broad
   }
 
   const keyboard = buildKeyboard()
+
+  // Prepare photo: support base64 data url or external URL
+  let photoSource: string | InputFile | null = null
+  if (payload.imageData && payload.imageData.startsWith('data:')) {
+    const match = payload.imageData.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/)
+    if (match && match[2]) {
+      const buffer = Buffer.from(match[2], 'base64')
+      photoSource = new InputFile(buffer, 'broadcast.jpg')
+    }
+  } else if (payload.imageUrl && payload.imageUrl.startsWith('http')) {
+    photoSource = payload.imageUrl
+  }
+
   let sent = 0
   let blocked = 0
   let failed = 0
@@ -165,11 +179,15 @@ export async function executeBroadcast(payload: BroadcastPayload): Promise<Broad
     const chunk = targetIds.slice(i, i + chunkSize)
     const promises = chunk.map(async (chatId) => {
       try {
-        if (payload.imageUrl && payload.imageUrl.startsWith('http')) {
-          await bot.api.sendPhoto(chatId, payload.imageUrl, {
+        if (photoSource) {
+          const res = await bot.api.sendPhoto(chatId, photoSource, {
             caption: payload.text,
             reply_markup: keyboard,
           })
+          // Telegram file_id optimization: cache file_id for subsequent sends!
+          if (res?.photo && res.photo.length > 0) {
+            photoSource = res.photo[res.photo.length - 1].file_id
+          }
         } else {
           await bot.api.sendMessage(chatId, payload.text, {
             reply_markup: keyboard,

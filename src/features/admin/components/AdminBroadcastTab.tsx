@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import {
   Send,
   Image as ImageIcon,
@@ -12,6 +12,9 @@ import {
   Flame,
   Gift,
   Zap,
+  Upload,
+  Trash2,
+  RotateCw,
 } from 'lucide-react'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
@@ -90,6 +93,9 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
   const [target, setTarget] = useState<BroadcastTarget>('all')
   const [text, setText] = useState('')
   const [imageUrl, setImageUrl] = useState('')
+  const [imageData, setImageData] = useState<string | null>(null)
+  const [imageFileName, setImageFileName] = useState<string | null>(null)
+  const [imageMode, setImageMode] = useState<'upload' | 'url'>('upload')
   const [buttonText, setButtonText] = useState('📱 Ilovani ochish')
   const [buttonUrl, setButtonUrl] = useState('')
   const [testTgId, setTestTgId] = useState(currentUserId && /^\d+$/.test(currentUserId) ? currentUserId : '')
@@ -105,6 +111,59 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
     failed: number
     durationMs: number
   } | null>(null)
+
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
+
+  // ── Image File Processing & Canvas Compression ───────────────────────────
+  const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    setImageFileName(file.name)
+    const reader = new FileReader()
+    reader.onload = (evt) => {
+      const rawDataUrl = String(evt.target?.result || '')
+      const img = new Image()
+      img.onload = () => {
+        // Resize image to max 1280px to optimize size
+        const maxDim = 1280
+        let width = img.width
+        let height = img.height
+        if (width > maxDim || height > maxDim) {
+          if (width > height) {
+            height = Math.round((height * maxDim) / width)
+            width = maxDim
+          } else {
+            width = Math.round((width * maxDim) / height)
+            height = maxDim
+          }
+        }
+
+        const canvas = document.createElement('canvas')
+        canvas.width = width
+        canvas.height = height
+        const ctx = canvas.getContext('2d')
+        if (ctx) {
+          ctx.drawImage(img, 0, 0, width, height)
+          const compressed = canvas.toDataURL('image/jpeg', 0.85)
+          setImageData(compressed)
+        } else {
+          setImageData(rawDataUrl)
+        }
+        haptics.impact('light')
+      }
+      img.src = rawDataUrl
+    }
+    reader.readAsDataURL(file)
+  }
+
+  const removeImage = () => {
+    setImageData(null)
+    setImageFileName(null)
+    setImageUrl('')
+    if (fileInputRef.current) fileInputRef.current.value = ''
+    haptics.impact('light')
+  }
 
   // ── Load Target Count on selection ─────────────────────────────────────────
   const loadCount = useCallback(async (selectedTarget: BroadcastTarget) => {
@@ -150,7 +209,8 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       const res = await api.sendBroadcast({
         target,
         text: text.trim(),
-        imageUrl: imageUrl.trim() || null,
+        imageUrl: imageMode === 'url' ? imageUrl.trim() || null : null,
+        imageData: imageMode === 'upload' ? imageData : null,
         buttonText: buttonText.trim() || null,
         buttonUrl: buttonUrl.trim() || null,
         testTelegramId: testTgId.trim(),
@@ -183,7 +243,8 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       const res = await api.sendBroadcast({
         target,
         text: text.trim(),
-        imageUrl: imageUrl.trim() || null,
+        imageUrl: imageMode === 'url' ? imageUrl.trim() || null : null,
+        imageData: imageMode === 'upload' ? imageData : null,
         buttonText: buttonText.trim() || null,
         buttonUrl: buttonUrl.trim() || null,
       })
@@ -313,18 +374,102 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
             </div>
           </div>
 
-          <div>
-            <label className="text-xs font-bold text-fg flex items-center gap-1.5 mb-1">
-              <ImageIcon size={14} className="text-duo-blue" />
-              <span>Rasm URL (ixtiyoriy)</span>
-            </label>
-            <input
-              type="url"
-              value={imageUrl}
-              onChange={(e) => setImageUrl(e.target.value)}
-              placeholder="https://example.com/banner.jpg"
-              className="w-full bg-card border border-line rounded-xl px-3 py-2 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
-            />
+          {/* Image Upload / URL Section */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="text-xs font-bold text-fg flex items-center gap-1.5">
+                <ImageIcon size={14} className="text-duo-blue" />
+                <span>Rasm (ixtiyoriy)</span>
+              </label>
+              <div className="flex items-center gap-1 bg-elevated p-0.5 rounded-xl border border-line text-[10px] font-bold">
+                <button
+                  type="button"
+                  onClick={() => setImageMode('upload')}
+                  className={`px-2 py-0.5 rounded-lg transition-all ${
+                    imageMode === 'upload' ? 'bg-duo-purple text-ponprimary shadow-xs' : 'text-muted hover:text-fg'
+                  }`}
+                >
+                  Fayl yuklash
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setImageMode('url')}
+                  className={`px-2 py-0.5 rounded-lg transition-all ${
+                    imageMode === 'url' ? 'bg-duo-purple text-ponprimary shadow-xs' : 'text-muted hover:text-fg'
+                  }`}
+                >
+                  URL manzil
+                </button>
+              </div>
+            </div>
+
+            {imageMode === 'upload' ? (
+              <div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageSelect}
+                  className="hidden"
+                />
+
+                {imageData ? (
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-surface border border-duo-purple/40">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <img
+                        src={imageData}
+                        alt="Selected preview"
+                        className="w-12 h-12 rounded-xl object-cover border border-line flex-shrink-0"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-fg truncate">
+                          {imageFileName || 'Tanlangan rasm'}
+                        </p>
+                        <span className="text-[10px] text-duo-green font-bold flex items-center gap-1 mt-0.5">
+                          <CheckCircle2 size={11} /> Tayyor
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 flex-shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => fileInputRef.current?.click()}
+                        className="p-2 rounded-xl bg-elevated border border-line text-muted hover:text-fg active:scale-95 transition-all"
+                        title="Boshqa rasm tanlash"
+                      >
+                        <RotateCw size={13} />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={removeImage}
+                        className="p-2 rounded-xl bg-duo-red/10 border border-duo-red/30 text-duo-red hover:bg-duo-red/20 active:scale-95 transition-all"
+                        title="O'chirish"
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div
+                    onClick={() => fileInputRef.current?.click()}
+                    className="border-2 border-dashed border-line hover:border-duo-purple/60 rounded-2xl p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                  >
+                    <Upload size={20} className="text-duo-purple" />
+                    <p className="text-xs font-bold text-fg">Rasmni yuklash uchun bosing</p>
+                    <p className="text-[10px] text-muted">JPG, PNG yoki WEBP formatlari</p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <input
+                type="url"
+                value={imageUrl}
+                onChange={(e) => setImageUrl(e.target.value)}
+                placeholder="https://example.com/banner.jpg"
+                className="w-full bg-card border border-line rounded-xl px-3 py-2 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
+              />
+            )}
           </div>
 
           <div className="grid grid-cols-2 gap-2">
@@ -392,11 +537,11 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
           <div className="rounded-3xl bg-[#0f172a] border border-line p-4 shadow-xl">
             {/* Telegram Chat Message Bubble */}
             <div className="max-w-[320px] mx-auto bg-[#1e293b] rounded-2xl overflow-hidden border border-white/5 shadow-md">
-              {/* Optional Photo */}
-              {imageUrl ? (
+              {/* Optional Photo (uploaded file or URL) */}
+              {imageData || imageUrl ? (
                 <div className="w-full h-36 bg-black/40 relative overflow-hidden flex items-center justify-center">
                   <img
-                    src={imageUrl}
+                    src={imageData || imageUrl}
                     alt="Banner preview"
                     className="w-full h-full object-cover"
                     onError={(e) => {

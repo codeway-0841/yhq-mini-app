@@ -47,7 +47,7 @@ export function createApp() {
     origin:  config.server.allowedOrigins,
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   }))
-  app.use(express.json({ limit: '16kb' }))
+  app.use(express.json({ limit: '10mb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
   // Bo'lmasa rate limiter barcha foydalanuvchini bitta bucket'ga soladi.

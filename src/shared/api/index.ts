@@ -457,6 +457,7 @@ export const api = {
     target: 'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today'
     text: string
     imageUrl?: string | null
+    imageData?: string | null
     buttonText?: string | null
     buttonUrl?: string | null
     testTelegramId?: string | number | null

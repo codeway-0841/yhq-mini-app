@@ -397,6 +397,7 @@ const BroadcastSchema = z.object({
   target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
   text: z.string().min(2).max(4000),
   imageUrl: z.string().url().max(1000).nullable().optional(),
+  imageData: z.string().max(10_000_000).nullable().optional(),
   buttonText: z.string().max(64).nullable().optional(),
   buttonUrl: z.string().max(1000).nullable().optional(),
   testTelegramId: z.union([z.string(), z.number()]).nullable().optional(),
