@@ -48,8 +48,8 @@ const QuestionUpsert = z.object({
   optionsUz: OptionsSchema,
   optionsRu: OptionsSchema,
   correctAnswer: z.string().regex(/^[A-Z]\d+$/, { message: 'F1, F2, ... format' }),
-  // Relative path (images/q071.jpg) ham, to'liq URL ham — seed formati relative
-  image: z.string().max(500).nullable().optional(),
+  // Relative path (images/q071.jpg), to'liq URL yoki base64 data URL
+  image: z.string().max(10_000_000).nullable().optional(),
   topicId: z.number().int().positive().nullable().optional(),
 }).refine((q) => {
   // Uzbek/Rus variant kalitlari bir xil bo'lishi shart
@@ -118,7 +118,7 @@ const BulkImportSchema = z.object({
     optionsUz: OptionsSchema,
     optionsRu: OptionsSchema,
     correctAnswer: z.string().regex(/^[A-Z]\d+$/),
-    image: z.string().max(500).nullable().optional(),
+    image: z.string().max(10_000_000).nullable().optional(),
     topicId: z.number().int().positive().nullable().optional(),
   })).min(1).max(500),
 })

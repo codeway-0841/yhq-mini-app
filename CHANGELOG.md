@@ -6,7 +6,18 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 📢 Telegram Bot Ommaviy Xabarnoma (Broadcast / E'lonlar)
+### 1. 🖼️ Admin Savollar uchun Rasm Faylini To'g'ridan-To'g'ri Yuklash (Question Image File Upload)
+* **Xususiyat:** Yangi savol yaratish va tahrirlashda tashqi URL qidirib o'tirmasdan, to'g'ridan-to'g'ri telefon galereyasidan yoki kompyuterdan rasm yuklash (JPG, PNG, WEBP).
+* **Qulayliklar:**
+  * 📁 Faylni tanlash (Drag & drop yoki bosish).
+  * ⚡ Avtomatik siqish (Canvas auto-compression — 1280px).
+  * 🖼️ Jonli miniatyura (Thumbnail), rasmni almashtirish (🔄) va o'chirish (🗑️) tugmalari.
+  * 🔄 Fayl yuklash va URL manzil kiritish rejimlari o'rtasida bitta tugma bilan almashish.
+* **Fayllar:** `src/features/admin/components/AdminQuestionsTab.tsx`, `server/modules/admin/admin.router.ts`.
+
+---
+
+### 2. 📢 Telegram Bot Ommaviy Xabarnoma (Broadcast / E'lonlar)
 * **Xususiyat:** Admin panel orqali barcha Telegram bot obunachilariga chiroyli formatlangan e'lonlar, aksiyalar, eslatmalar va yangiliklar yuborish tizimi.
 * **🎯 Aniq Auditoriyani Tanlash (Targeting):**
   * 👥 Barcha foydalanuvchilar

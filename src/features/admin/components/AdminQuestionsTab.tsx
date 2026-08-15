@@ -1,5 +1,17 @@
-import { useState, useEffect, useCallback, useMemo } from 'react'
-import { Plus, Pencil, Trash2, Search, X, Loader2, AlertTriangle, RotateCw, Upload } from 'lucide-react'
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
+import {
+  Plus,
+  Pencil,
+  Trash2,
+  Search,
+  X,
+  Loader2,
+  AlertTriangle,
+  RotateCw,
+  Upload,
+  Image as ImageIcon,
+  CheckCircle2,
+} from 'lucide-react'
 import { api, type AdminDbQuestion, type DbTopic } from '../../../shared/api'
 import { SUBJECT_BASES, type SubjectId } from '../../../../shared/subjects'
 import { haptics } from '../../../platform/haptics'
@@ -355,7 +367,60 @@ function QuestionForm({
     image: initial?.image ?? '',
     topicId: initial?.topicId ?? null as number | null,
   })
+  const [imageMode, setImageMode] = useState<'upload' | 'url'>(
+    initial?.image && initial.image.startsWith('http') ? 'url' : 'upload'
+  )
+  const [imageFileName, setImageFileName] = useState<string | null>(null)
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
   const [busy, setBusy] = useState(false)
+
+  const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    setImageFileName(file.name)
+    const reader = new FileReader()
+    reader.onload = (evt) => {
+      const rawDataUrl = String(evt.target?.result || '')
+      const img = new Image()
+      img.onload = () => {
+        const maxDim = 1280
+        let width = img.width
+        let height = img.height
+        if (width > maxDim || height > maxDim) {
+          if (width > height) {
+            height = Math.round((height * maxDim) / width)
+            width = maxDim
+          } else {
+            width = Math.round((width * maxDim) / height)
+            height = maxDim
+          }
+        }
+
+        const canvas = document.createElement('canvas')
+        canvas.width = width
+        canvas.height = height
+        const ctx = canvas.getContext('2d')
+        if (ctx) {
+          ctx.drawImage(img, 0, 0, width, height)
+          const compressed = canvas.toDataURL('image/jpeg', 0.85)
+          setForm((prev) => ({ ...prev, image: compressed }))
+        } else {
+          setForm((prev) => ({ ...prev, image: rawDataUrl }))
+        }
+        haptics.impact('light')
+      }
+      img.src = rawDataUrl
+    }
+    reader.readAsDataURL(file)
+  }
+
+  const removeImage = () => {
+    setForm((prev) => ({ ...prev, image: '' }))
+    setImageFileName(null)
+    if (fileInputRef.current) fileInputRef.current.value = ''
+    haptics.impact('light')
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -441,10 +506,103 @@ function QuestionForm({
               </select>
             </div>
           </div>
-          <div>
-            <label className="text-[11px] font-bold text-muted uppercase">Rasm URL (ixtiyoriy)</label>
-            <input value={form.image} onChange={(e) => setForm({ ...form, image: e.target.value })}
-              placeholder="https://..." className="w-full bg-elevated rounded-xl p-2.5 text-[13px] text-fg border border-line focus:border-duo-purple outline-none" />
+
+          {/* Question Image Section */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between">
+              <label className="text-[11px] font-bold text-muted uppercase flex items-center gap-1">
+                <ImageIcon size={13} className="text-duo-blue" />
+                <span>Savol rasmi (ixtiyoriy)</span>
+              </label>
+              <div className="flex items-center gap-1 bg-elevated p-0.5 rounded-lg border border-line text-[10px] font-bold">
+                <button
+                  type="button"
+                  onClick={() => setImageMode('upload')}
+                  className={`px-2 py-0.5 rounded-md transition-all ${
+                    imageMode === 'upload' ? 'bg-duo-purple text-ponprimary' : 'text-muted hover:text-fg'
+                  }`}
+                >
+                  Fayl
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setImageMode('url')}
+                  className={`px-2 py-0.5 rounded-md transition-all ${
+                    imageMode === 'url' ? 'bg-duo-purple text-ponprimary' : 'text-muted hover:text-fg'
+                  }`}
+                >
+                  URL
+                </button>
+              </div>
+            </div>
+
+            {imageMode === 'upload' ? (
+              <div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageSelect}
+                  className="hidden"
+                />
+
+                {form.image ? (
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-elevated border border-duo-purple/40">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <img
+                        src={form.image}
+                        alt="Question preview"
+                        className="w-12 h-12 rounded-xl object-cover border border-line flex-shrink-0"
+                      />
+                      <div className="min-w-0">
+                        <p className="text-xs font-bold text-fg truncate">
+                          {imageFileName || 'Tanlangan rasm'}
+                        </p>
+                        <span className="text-[10px] text-duo-green font-bold flex items-center gap-1 mt-0.5">
+                          <CheckCircle2 size={11} /> Tayyor
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 flex-shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => fileInputRef.current?.click()}
+                        className="p-2 rounded-xl bg-surface border border-line text-muted hover:text-fg active:scale-95 transition-all"
+                        title="Boshqa rasm tanlash"
+                      >
+                        <RotateCw size={13} />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={removeImage}
+                        className="p-2 rounded-xl bg-duo-red/10 border border-duo-red/30 text-duo-red hover:bg-duo-red/20 active:scale-95 transition-all"
+                        title="O'chirish"
+                      >
+                        <Trash2 size={13} />
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div
+                    onClick={() => fileInputRef.current?.click()}
+                    className="border-2 border-dashed border-line hover:border-duo-purple/60 rounded-2xl p-3.5 text-center cursor-pointer bg-elevated transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                  >
+                    <Upload size={18} className="text-duo-purple" />
+                    <p className="text-xs font-bold text-fg">Rasmni yuklash uchun bosing</p>
+                    <p className="text-[10px] text-muted">JPG, PNG yoki WEBP</p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <input
+                type="text"
+                value={form.image}
+                onChange={(e) => setForm({ ...form, image: e.target.value })}
+                placeholder="https://... yoki images/q001.jpg"
+                className="w-full bg-elevated rounded-xl p-2.5 text-[13px] text-fg border border-line focus:border-duo-purple outline-none"
+              />
+            )}
           </div>
 
           <button type="submit" disabled={busy}
