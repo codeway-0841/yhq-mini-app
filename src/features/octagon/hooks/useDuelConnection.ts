@@ -204,8 +204,17 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   const duelCodeRef = useRef(duelCode)
   duelCodeRef.current = duelCode
 
+  useEffect(() => {
+    if (routeDuelCode) {
+      const clean = routeDuelCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
+      setDuelCode(clean)
+      duelCodeRef.current = clean
+    }
+  }, [routeDuelCode])
+
   const joinQueue = useCallback((withDuel?: string) => {
-    if (!user) return
+    const u = userRef.current
+    if (!u) return
     const code = withDuel !== undefined
       ? (withDuel ? withDuel.trim().toLowerCase().replace(/^(?:duel|room)-/, '') : null)
       : duelCodeRef.current
@@ -216,8 +225,8 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     try {
       getOctagonSocket(config.wsUrl).send({
         type: 'join_queue',
-        userId: user.id,
-        name: user.firstName,
+        userId: u.id,
+        name: u.firstName,
         subjectId: subjectRef.current,
         ...(code ? { duelCode: code } : {}),
         ...wsAuthFields(),
@@ -226,7 +235,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       dispatch({ type: 'CANCEL' })
       showToast("Ulanishda xato. Qayta urinib ko'ring.")
     }
-  }, [user, showToast])
+  }, [showToast])
 
   /** Do'st uchun duel link yaratish */
   const startDuel = useCallback(() => {
@@ -240,9 +249,10 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {
-    if (duelCode && user && s.phase === 'idle' && conn === 'open') joinQueue(duelCode)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [duelCode, user, s.phase, conn])
+    if (duelCode && user && s.phase === 'idle') {
+      joinQueue(duelCode)
+    }
+  }, [duelCode, user, s.phase, joinQueue])
 
   const leaveQueue = useCallback(() => {
     if (user) {
