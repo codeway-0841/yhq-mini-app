@@ -16,7 +16,7 @@ import { rateLimit } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
 import { reloadOctagonPools } from '../../octagon'
-import { db } from '../../db/connection'
+import { db, executeRows } from '../../db/connection'
 import { questions, questionExplanations, savedQuestions } from '../../schema'
 import { eq } from 'drizzle-orm'
 import { sql } from 'drizzle-orm'
@@ -151,5 +151,147 @@ router.get('/admin/questions/meta', wrap(async (_req, res) => {
     .from(questions)
   res.json(stats)
 }))
+
+// ── GET /api/admin/stats — Jonli tizim statistikasi ──
+router.get('/admin/stats', wrap(async (_req, res) => {
+  const [userStats] = await executeRows<{ totalUsers: number; premiumUsers: number }>(sql`
+    SELECT
+      COUNT(*)::int AS "totalUsers",
+      COUNT(*) FILTER (WHERE tariff = 'premium' OR (premium_until IS NOT NULL AND premium_until > now()))::int AS "premiumUsers"
+    FROM users
+  `)
+
+  const [questionStats] = await executeRows<{ totalQuestions: number }>(sql`
+    SELECT COUNT(*)::int AS "totalQuestions" FROM questions
+  `)
+
+  const [progressStats] = await executeRows<{ totalAnswered: number }>(sql`
+    SELECT COALESCE(SUM(answered), 0)::int AS "totalAnswered" FROM progress
+  `)
+
+  const [promoStats] = await executeRows<{ totalPromoCodes: number }>(sql`
+    SELECT COUNT(*)::int AS "totalPromoCodes" FROM promo_codes
+  `)
+
+  const [dailyStats] = await executeRows<{ todayActiveUsers: number }>(sql`
+    SELECT COUNT(DISTINCT user_id)::int AS "todayActiveUsers"
+    FROM daily_records
+    WHERE date = to_char(now(), 'YYYY-MM-DD')
+  `)
+
+  res.json({
+    totalUsers: userStats?.totalUsers ?? 0,
+    premiumUsers: userStats?.premiumUsers ?? 0,
+    todayActiveUsers: dailyStats?.todayActiveUsers ?? 0,
+    totalQuestions: questionStats?.totalQuestions ?? 0,
+    totalAnswered: progressStats?.totalAnswered ?? 0,
+    totalPromoCodes: promoStats?.totalPromoCodes ?? 0,
+  })
+}))
+
+// ── GET /api/admin/users — Foydalanuvchilar qidiruvi ──
+router.get('/admin/users', wrap(async (req, res) => {
+  const q = String(req.query['query'] ?? '').trim()
+  let usersList
+
+  if (q) {
+    usersList = await executeRows(sql`
+      SELECT
+        u.id,
+        u.first_name AS "firstName",
+        u.last_name AS "lastName",
+        u.username,
+        u.photo_url AS "photoUrl",
+        u.phone,
+        u.tariff,
+        u.premium_until AS "premiumUntil",
+        u.is_admin AS "isAdmin",
+        u.created_at AS "createdAt",
+        COALESCE(p.answered, 0)::int AS answered,
+        COALESCE(p.correct, 0)::int AS correct,
+        p.league
+      FROM users u
+      LEFT JOIN progress p ON p.user_id = u.id AND p.subject_id = 'yhq'
+      WHERE
+        u.id ILIKE ${'%' + q + '%'} OR
+        u.first_name ILIKE ${'%' + q + '%'} OR
+        u.last_name ILIKE ${'%' + q + '%'} OR
+        u.username ILIKE ${'%' + q + '%'} OR
+        u.phone ILIKE ${'%' + q + '%'}
+      ORDER BY u.created_at DESC
+      LIMIT 50
+    `)
+  } else {
+    usersList = await executeRows(sql`
+      SELECT
+        u.id,
+        u.first_name AS "firstName",
+        u.last_name AS "lastName",
+        u.username,
+        u.photo_url AS "photoUrl",
+        u.phone,
+        u.tariff,
+        u.premium_until AS "premiumUntil",
+        u.is_admin AS "isAdmin",
+        u.created_at AS "createdAt",
+        COALESCE(p.answered, 0)::int AS answered,
+        COALESCE(p.correct, 0)::int AS correct,
+        p.league
+      FROM users u
+      LEFT JOIN progress p ON p.user_id = u.id AND p.subject_id = 'yhq'
+      ORDER BY u.created_at DESC
+      LIMIT 30
+    `)
+  }
+
+  res.json({ users: usersList })
+}))
+
+// ── POST /api/admin/users/:userId/grant-premium — Qo'lda Premium berish ──
+const GrantPremiumSchema = z.object({
+  tariff: z.enum(['free', 'premium']),
+  days: z.number().int().positive().nullable().optional(),
+})
+
+router.post(
+  '/admin/users/:userId/grant-premium',
+  validate({ body: GrantPremiumSchema }),
+  wrap(async (req, res) => {
+    const userId = String(req.params['userId'])
+    const { tariff, days } = req.body as z.infer<typeof GrantPremiumSchema>
+
+    if (tariff === 'free') {
+      await executeRows(sql`
+        UPDATE users
+        SET tariff = 'free', premium_until = NULL, updated_at = now()
+        WHERE id = ${userId}
+      `)
+    } else if (days && days > 0) {
+      await executeRows(sql`
+        UPDATE users
+        SET
+          tariff = 'premium',
+          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
+          updated_at = now()
+        WHERE id = ${userId}
+      `)
+    } else {
+      // Lifetime premium
+      await executeRows(sql`
+        UPDATE users
+        SET tariff = 'premium', premium_until = NULL, updated_at = now()
+        WHERE id = ${userId}
+      `)
+    }
+
+    const updated = await executeRows(sql`
+      SELECT id, first_name AS "firstName", tariff, premium_until AS "premiumUntil"
+      FROM users
+      WHERE id = ${userId}
+    `)
+
+    res.json({ ok: true, user: updated[0] })
+  }),
+)
 
 export default router

@@ -141,4 +141,23 @@ export const promoRepository = {
     `)
     return rows[0]
   },
+
+  async toggleActive(id: number, isActive: boolean): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE promo_codes
+      SET is_active = ${isActive}
+      WHERE id = ${id}
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  async deleteCode(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      DELETE FROM promo_codes
+      WHERE id = ${id}
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
 }

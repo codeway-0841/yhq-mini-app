@@ -6,7 +6,17 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🎟️ Promokodlar Tizimi (Promo Code System)
+### 1. 👑 Kengaytirilgan Admin Panel (Admin Control Center)
+* **4 ta Asosiy Bo'lim (Tabs):**
+  * **🎟 Promokodlar:** Yangi promokod yaratish (nomi, 7k/15k/30k/90k/365k muddat, limit, tugash sanasi), barcha promokodlar ro'yxati, to'xtatish/faollashtirish (Pause/Resume), o'chirish va Telegram link nusxalash.
+  * **❓ Savollar:** Savollar soni, mavzular statistikasi, ID yoki matn bo'yicha qidirish, yangi savol qo'shish, tahrirlash va o'chirish.
+  * **👥 Foydalanuvchilar:** Foydalanuvchilarni ID, ism, username yoki telefon orqali qidirish, natijalarini ko'rish va to'g'ridan-to'g'ri Premium (1 hafta, 1 oy, 3 oy, 1 yil, Umrbod) berish yoki bekor qilish.
+  * **📊 Jonli Statistika:** Jami foydalanuvchilar, faol Premium obunachilar, bugungi faol o'quvchilar (DAU), jami yechilgan savollar va promokodlar soni.
+* **Fayllar:** `src/features/admin/AdminPage.tsx`, `src/features/admin/components/AdminPromoTab.tsx`, `src/features/admin/components/AdminUsersTab.tsx`, `src/features/admin/components/AdminStatsTab.tsx`, `src/features/admin/components/AdminQuestionsTab.tsx`, `server/modules/admin/admin.router.ts`, `server/modules/promo/promo.router.ts`, `tests/unit/modules/admin-panel.test.ts`.
+
+---
+
+### 2. 🎟️ Promokodlar Tizimi (Promo Code System)
 * **Xususiyat:** Avtomaktablar, aksiyalar va hamkorlar uchun foydalanuvchilarga bepul Premium obuna va bonuslar taqdim etuvchi xavfsiz Promokodlar tizimi.
 * **Xavfsizlik & Cheklovlar:** 1 kishi 1 marta ishlatish cheklovi (`promo_code_redemptions`), amal qilish muddati (`expires_at`), umumiy son limiti (`max_uses`), 1 daqiqada 5 ta urinishdan ortiq kiritishni bloklovchi anti-spam (Rate Limiter).
 * **Mavjud muddatga qo'shilish:** Agar foydalanuvchida allaqachon faol Premium bo'lsa, yangi kunlar mavjud muddat ustiga qo'shiladi.

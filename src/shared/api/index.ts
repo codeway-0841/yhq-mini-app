@@ -412,6 +412,65 @@ export const api = {
       premiumUntil: string | null
       tariff: 'free' | 'premium'
     }>('POST', '/promo/redeem', { code }),
+
+  // ── Admin Promo Codes ─────────────────────────────────────────────────────
+  getAdminPromoCodes: () =>
+    request<{ codes: AdminPromoCode[] }>('GET', '/admin/promo-codes'),
+  createAdminPromoCode: (data: { code: string; type?: string; value: number; maxUses?: number | null; expiresAt?: string | null }) =>
+    request<AdminPromoCode>('POST', '/admin/promo-codes', data),
+  toggleAdminPromoCode: (id: number, isActive: boolean) =>
+    request<{ ok: boolean; id: number; isActive: boolean }>('PATCH', `/admin/promo-codes/${id}/toggle`, { isActive }),
+  deleteAdminPromoCode: (id: number) =>
+    request<{ ok: boolean; id: number }>('DELETE', `/admin/promo-codes/${id}`),
+
+  // ── Admin Stats & Users ───────────────────────────────────────────────────
+  getAdminStats: () =>
+    request<AdminStats>('GET', '/admin/stats'),
+  searchAdminUsers: (query?: string) =>
+    request<{ users: AdminUserItem[] }>('GET', `/admin/users${query ? `?query=${encodeURIComponent(query)}` : ''}`),
+  grantAdminUserPremium: (userId: string, data: { tariff: 'free' | 'premium'; days?: number | null }) =>
+    request<{ ok: boolean; user: { id: string; firstName: string; tariff: 'free' | 'premium'; premiumUntil: string | null } }>(
+      'POST',
+      `/admin/users/${userId}/grant-premium`,
+      data,
+    ),
+}
+
+export interface AdminPromoCode {
+  id: number
+  code: string
+  type: string
+  value: number
+  maxUses: number | null
+  usedCount: number
+  expiresAt: string | null
+  isActive: boolean
+  createdAt: string
+}
+
+export interface AdminStats {
+  totalUsers: number
+  premiumUsers: number
+  todayActiveUsers: number
+  totalQuestions: number
+  totalAnswered: number
+  totalPromoCodes: number
+}
+
+export interface AdminUserItem {
+  id: string
+  firstName: string
+  lastName: string | null
+  username: string | null
+  photoUrl: string | null
+  phone: string | null
+  tariff: 'free' | 'premium'
+  premiumUntil: string | null
+  isAdmin: boolean
+  createdAt: string
+  answered: number
+  correct: number
+  league: string | null
 }
 
 /** POST /result javobi — SERVER tekshiruvi (client endi to'g'ri javobni bilmaydi). */

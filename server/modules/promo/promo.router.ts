@@ -112,4 +112,30 @@ router.post(
   }),
 )
 
+// PATCH /api/admin/promo-codes/:id/toggle
+router.patch(
+  '/admin/promo-codes/:id/toggle',
+  requireAdmin,
+  validate({ body: z.object({ isActive: z.boolean() }) }),
+  wrap(async (req, res) => {
+    const id = Number(req.params['id'])
+    const { isActive } = req.body as { isActive: boolean }
+    const success = await promoRepository.toggleActive(id, isActive)
+    if (!success) throw new AppError(404, 'Promokod topilmadi')
+    res.json({ ok: true, id, isActive })
+  }),
+)
+
+// DELETE /api/admin/promo-codes/:id
+router.delete(
+  '/admin/promo-codes/:id',
+  requireAdmin,
+  wrap(async (req, res) => {
+    const id = Number(req.params['id'])
+    const success = await promoRepository.deleteCode(id)
+    if (!success) throw new AppError(404, 'Promokod topilmadi')
+    res.json({ ok: true, id })
+  }),
+)
+
 export default router
