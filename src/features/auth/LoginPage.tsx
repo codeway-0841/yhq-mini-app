@@ -357,19 +357,33 @@ export default function LoginPage() {
                 <span className="flex-1 h-px bg-line" />
               </div>
               {telegramLoginCode ? (
-                <div className="flex flex-col items-center gap-2 py-3">
-                  <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
-                  <p className="text-[12px] text-muted text-center">
+                <div className="flex flex-col items-center gap-2.5 py-3">
+                  <span className="w-6 h-6 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
+                  <p className="text-[12px] text-muted text-center max-w-[260px]">
                     {tt('authTgSharePhone')}
                   </p>
-                  <a
-                    href={telegramLoginUrl!}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[12px] text-[#0088cc] hover:underline"
-                  >
-                    Botni ochish
-                  </a>
+                  <div className="flex items-center gap-4 mt-1">
+                    <a
+                      href={telegramLoginUrl!}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[13px] font-bold text-[#0088cc] hover:underline"
+                    >
+                      {language === 'ru' ? 'Открыть бота' : 'Botni ochish'}
+                    </a>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (pollRef.current) clearInterval(pollRef.current)
+                        setTelegramLoginCode(null)
+                        setTelegramLoginUrl(null)
+                        setError(null)
+                      }}
+                      className="text-[13px] text-muted hover:text-fg transition-colors"
+                    >
+                      {tt('authBack')}
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <button

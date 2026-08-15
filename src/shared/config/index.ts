@@ -13,5 +13,5 @@ export const config = {
   apiBaseUrl: API_BASE || '/api',
   wsUrl: deriveWsUrl(),
   /** @ belgisisiz bot username — TG Login Widget + "Telegram ulash" deep-link uchun */
-  botUsername: BOT_USERNAME || undefined,
+  botUsername: BOT_USERNAME ? BOT_USERNAME.replace(/^@/, '') : undefined,
 } as const

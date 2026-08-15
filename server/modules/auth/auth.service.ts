@@ -557,7 +557,8 @@ export const authService = {
     const code = randomBytes(8).toString('base64url')        // 11 belgi, URL-safe
     const expiresAt = new Date(Date.now() + 10 * 60_000)
     await authRepository.createLinkCode({ code, userId, expiresAt })
-    const botUsername = config.telegram.botUsername
+    const rawBotUsername = config.telegram.botUsername
+    const botUsername = rawBotUsername ? rawBotUsername.replace(/^@/, '') : null
     return {
       code,
       url: botUsername ? `https://t.me/${botUsername}?start=link_${code}` : null,
@@ -986,11 +987,11 @@ export const authService = {
     return { changed: true }
   },
 
-  // ── Telegram Login via Bot (deep-link + contact sharing) ────────────────
+  // ── Telegram Login via Bot (deep-link) ──────────────────────────────────
 
   /**
    * Frontend "Telegram orqali kirish" tugmasi — kod yaratib, bot deep-link qaytaradi.
-   * User bot'ga o'tadi, contact ulashadi, bot phone orqali user topadi va session yaratadi.
+   * User bot'ga o'tadi (/start login_<code>), bot darhol sessiya yaratadi.
    */
   async createTelegramLoginCode() {
     const code = randomBytes(8).toString('base64url')
@@ -998,7 +999,8 @@ export const authService = {
     await executeRows(sql`
       INSERT INTO telegram_login_codes (code, expires_at) VALUES (${code}, ${expiresAt})
     `)
-    const botUsername = config.telegram.botUsername
+    const rawBotUsername = config.telegram.botUsername
+    const botUsername = rawBotUsername ? rawBotUsername.replace(/^@/, '') : null
     return {
       code,
       url: botUsername ? `https://t.me/${botUsername}?start=login_${code}` : null,
@@ -1007,12 +1009,13 @@ export const authService = {
   },
 
   async checkTelegramLoginCode(code: string) {
-    const rows = await executeRows<{ session_token: string | null; expires_at: Date }>(sql`
-      SELECT session_token, expires_at FROM telegram_login_codes WHERE code = ${code}
+    const rows = await executeRows<{ session_token: string | null; is_expired: boolean }>(sql`
+      SELECT session_token, (expires_at <= now()) AS is_expired FROM telegram_login_codes WHERE code = ${code}
     `)
-    if (!rows[0]) return { status: 'expired' as const }
-    if (rows[0].expires_at <= new Date()) {
-      await executeRows(sql`DELETE FROM telegram_login_codes WHERE code = ${code}`)
+    if (!rows[0] || rows[0].is_expired) {
+      if (rows[0]?.is_expired) {
+        await executeRows(sql`DELETE FROM telegram_login_codes WHERE code = ${code}`)
+      }
       return { status: 'expired' as const }
     }
     const sessionToken = rows[0].session_token
@@ -1026,11 +1029,66 @@ export const authService = {
     return { status: 'pending' as const }
   },
 
-  async completeTelegramLoginByPhone(code: string, phone: string, tg: { id: number; first_name?: string; last_name?: string; username?: string }) {
-    const rows = await executeRows<{ session_token: string | null; expires_at: Date }>(sql`
-      SELECT session_token, expires_at FROM telegram_login_codes WHERE code = ${code}
+  /**
+   * Bot: `/start login_<code>` — to'g'ridan-to'g'ri Telegram akkaunt orqali kirish.
+   * Foydalanuvchi bot'da Start bosishi bilan sessiya yaratiladi va brauzer darhol kiradi.
+   */
+  async completeTelegramLogin(
+    code: string,
+    tg: { id: number; first_name?: string; last_name?: string; username?: string; photo_url?: string }
+  ) {
+    const rows = await executeRows<{ session_token: string | null; is_expired: boolean }>(sql`
+      SELECT session_token, (expires_at <= now()) AS is_expired FROM telegram_login_codes WHERE code = ${code}
     `)
-    if (!rows[0] || rows[0].expires_at <= new Date() || rows[0].session_token !== null) {
+    if (!rows[0]) {
+      return { ok: false, message: '❌ Kirish kodi topilmadi yoki allaqachon ishlatilgan.' }
+    }
+    if (rows[0].is_expired) {
+      await executeRows(sql`DELETE FROM telegram_login_codes WHERE code = ${code}`)
+      return { ok: false, message: '❌ Kod eskirgan — saytdan qayta urinib ko\'ring.' }
+    }
+    if (rows[0].session_token !== null) {
+      return { ok: false, message: '❌ Ushbu kod allaqachon ishlatilgan.' }
+    }
+
+    const tgId = String(tg.id)
+    const identity = await authRepository.findIdentity('telegram', tgId)
+    let userId = tgId
+    if (identity) {
+      userId = identity.userId
+    }
+
+    await usersRepository.initAtomic({
+      id: userId,
+      firstName: tg.first_name ?? '',
+      lastName: tg.last_name ?? '',
+      username: tg.username ?? '',
+      photoUrl: tg.photo_url ?? '',
+    })
+
+    if (!identity) {
+      await authRepository.ensureIdentity('telegram', tgId, tgId)
+    }
+
+    const sessionToken = await issueSession(userId, 'telegram')
+    await executeRows(sql`
+      UPDATE telegram_login_codes SET session_token = ${sessionToken} WHERE code = ${code}
+    `)
+
+    return {
+      ok: true,
+      message: '✅ Saytga muvaffaqiyatli kirdingiz!\n\nBrauzerga qaytishingiz mumkin — tizimga kirish avtomatik amalga oshirildi.',
+    }
+  },
+
+  async completeTelegramLoginByPhone(code: string, phone: string, tg: { id: number; first_name?: string; last_name?: string; username?: string }) {
+    const rows = await executeRows<{ session_token: string | null; is_expired: boolean }>(sql`
+      SELECT session_token, (expires_at <= now()) AS is_expired FROM telegram_login_codes WHERE code = ${code}
+    `)
+    if (!rows[0] || rows[0].is_expired || rows[0].session_token !== null) {
+      if (rows[0]?.is_expired) {
+        await executeRows(sql`DELETE FROM telegram_login_codes WHERE code = ${code}`)
+      }
       return { ok: false, message: '❌ Kod eskirgan yoki allaqachon ishlatilgan.' }
     }
 

@@ -7,6 +7,8 @@ import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../sha
 import { config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
+import { executeRows } from '../db/connection'
+import { sql } from 'drizzle-orm'
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -18,8 +20,21 @@ const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
 
-// In-memory: TG user_id → login code (5 min TTL, cleaned on use)
-const loginPendingCodes = new Map<number, string>()
+// DB-backed pending: Vercel webhook har chaqiriq alohida isolate — in-memory Map
+// keyingi request'ga yetib bormaydi (serverless). Shu sababli pending code'ni
+// DB'da saqlaymiz (telegram_login_pending) — 5daq TTL, contact kelganda consume.
+async function setPendingLoginCode(tgUserId: number, code: string): Promise<void> {
+  const expiresAt = new Date(Date.now() + 5 * 60_000)
+  await executeRows(sql`CREATE TABLE IF NOT EXISTS telegram_login_pending (tg_user_id TEXT PRIMARY KEY, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now())`)
+  await executeRows(sql`INSERT INTO telegram_login_pending (tg_user_id, code, expires_at) VALUES (${String(tgUserId)}, ${code}, ${expiresAt}) ON CONFLICT (tg_user_id) DO UPDATE SET code = EXCLUDED.code, expires_at = EXCLUDED.expires_at, created_at = now()`)
+}
+async function consumePendingLoginCode(tgUserId: number): Promise<string | null> {
+  await executeRows(sql`CREATE TABLE IF NOT EXISTS telegram_login_pending (tg_user_id TEXT PRIMARY KEY, code TEXT NOT NULL, expires_at TIMESTAMPTZ NOT NULL, created_at TIMESTAMPTZ NOT NULL DEFAULT now())`)
+  // Expired qatorlar avtomatik tozalanadi (RETURNING bo'lmaydi -> null)
+  await executeRows(sql`DELETE FROM telegram_login_pending WHERE expires_at <= now()`)
+  const rows = await executeRows<{ code: string }>(sql`DELETE FROM telegram_login_pending WHERE tg_user_id = ${String(tgUserId)} RETURNING code`)
+  return rows[0]?.code ?? null
+}
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
@@ -111,19 +126,22 @@ bot.command('start', async (ctx) => {
     return
   }
   // Telegram Login: t.me/bot?start=login_<code> — brauzerdan kirish uchun
-  // Bot contact (raqam) so'raydi, phone kelganda session yaratadi
-  if (param && /^login_[A-Za-z0-9_-]{10,16}$/.test(param)) {
+  // Bot user'ning Telegram profilini tasdiqlab darhol sessiya yaratadi
+  if (param && /^login_[A-Za-z0-9_-]{6,32}$/.test(param)) {
     if (ctx.from) {
-      const kb = new Keyboard()
-        .requestContact("📱 Raqamni ulashish")
-        .resized()
-        .oneTime()
-      loginPendingCodes.set(ctx.from.id, param.slice(6))
-      await ctx.reply(
-        "📱 Ilovaga kirish uchun telefon raqamingizni ulashing.\n\n" +
-        "Quyidagi tugmani bosing — raqamingiz xavfsiz tarzda tekshiriladi:",
-        { reply_markup: kb },
-      )
+      try {
+        const { authService } = await import('../modules/auth/auth.service')
+        const result = await authService.completeTelegramLogin(param.slice(6), {
+          id: ctx.from.id,
+          first_name: ctx.from.first_name,
+          last_name: ctx.from.last_name,
+          username: ctx.from.username,
+        })
+        await ctx.reply(result.message, { reply_markup: appKeyboard() })
+      } catch (err) {
+        console.error('[bot] login handler error:', err)
+        await ctx.reply("❌ Ichki xatolik — keyinroq urinib ko'ring.")
+      }
     }
     return
   }
@@ -175,10 +193,8 @@ bot.command('start', async (ctx) => {
 bot.on('message:contact', async (ctx) => {
   const from = ctx.from
   if (!from) return
-  const code = loginPendingCodes.get(from.id)
-  if (!code) return  // login flow'da emas — ignore
-
-  loginPendingCodes.delete(from.id)
+  const code = await consumePendingLoginCode(from.id)
+  if (!code) return  // login flow'da emas yoki kod eskirdi — ignore
 
   const contact = ctx.message.contact
   if (contact.user_id !== from.id) {

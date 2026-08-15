@@ -253,6 +253,20 @@ export const telegramLoginCodes = pgTable('telegram_login_codes', {
 })
 
 /**
+ * Telegram Login pending map — Vercel webhook serverless: har request isolate,
+ * in-memory Map keyingi request'ga yetib bormaydi (server/api-entry/bot.ts:22).
+ * Shu sababli `login_<code>` kelganda code'ni shu jadvalda SAQLAYMIZ,
+ * `message:contact` kelganda atomik DELETE...RETURNING bilan consume qilamiz.
+ * 5daq TTL, expired qatorlar contact'da tozalanadi.
+ */
+export const telegramLoginPending = pgTable('telegram_login_pending', {
+  tgUserId:  text('tg_user_id').primaryKey(),
+  code:      text('code').notNull(),
+  expiresAt: timestamp('expires_at').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+})
+
+/**
  * Test javobi idempotency token'lari — offline outbox replay'da
  * (so'rov serverga yetib borgan, javob yo'qolgan) counterlar ikki marta
  * oshmasligi uchun. Client har mantiqiy javob uchun 1 token yaratadi;
