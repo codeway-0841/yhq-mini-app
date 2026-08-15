@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback } from 'react'
-import { Search, Crown, User, Shield, Loader2, X } from 'lucide-react'
+import { useState, useEffect, useCallback, useRef } from 'react'
+import { Search, Crown, User, Shield, Loader2, X, RotateCw, AlertCircle } from 'lucide-react'
 import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -8,9 +8,12 @@ export default function AdminUsersTab() {
   const [users, setUsers] = useState<AdminUserItem[]>([])
   const [search, setSearch] = useState('')
   const [loading, setLoading] = useState(true)
+  const [refreshing, setRefreshing] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [selectedUser, setSelectedUser] = useState<AdminUserItem | null>(null)
   const [grantBusy, setGrantBusy] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
+  const searchTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -18,20 +21,34 @@ export default function AdminUsersTab() {
   }
 
   const loadUsers = useCallback(async (q = '') => {
-    setLoading(true)
+    setError(null)
     try {
       const res = await api.searchAdminUsers(q)
-      setUsers(res.users)
-    } catch {
-      showToast("Foydalanuvchilarni yuklashda xatolik")
+      setUsers(res?.users ?? [])
+    } catch (err: any) {
+      setError(err?.message || "Foydalanuvchilarni yuklab bo'lmadi")
     } finally {
       setLoading(false)
+      setRefreshing(false)
     }
   }, [])
 
+  // Debounced search
   useEffect(() => {
-    loadUsers(search)
+    if (searchTimerRef.current) clearTimeout(searchTimerRef.current)
+    searchTimerRef.current = setTimeout(() => {
+      loadUsers(search)
+    }, 300)
+    return () => {
+      if (searchTimerRef.current) clearTimeout(searchTimerRef.current)
+    }
   }, [loadUsers, search])
+
+  const handleRefresh = () => {
+    setRefreshing(true)
+    haptics.impact('light')
+    loadUsers(search)
+  }
 
   const handleGrant = async (tariff: 'free' | 'premium', days: number | null) => {
     if (!selectedUser) return
@@ -59,7 +76,22 @@ export default function AdminUsersTab() {
 
   return (
     <div className="p-4 space-y-4">
-      {/* Search Header */}
+      {/* Header & Search */}
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-base font-black text-fg">Foydalanuvchilar</h2>
+          <p className="text-xs text-muted">Jami {users.length} ta ko'rsatilmoqda</p>
+        </div>
+        <button
+          onClick={handleRefresh}
+          disabled={refreshing}
+          className="p-2.5 rounded-2xl bg-surface border border-line text-muted hover:text-fg active:scale-95 transition-transform"
+          title="Yangilash"
+        >
+          <RotateCw size={15} className={refreshing ? 'animate-spin text-duo-purple' : ''} />
+        </button>
+      </div>
+
       <div>
         <div className="relative">
           <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
@@ -73,17 +105,33 @@ export default function AdminUsersTab() {
         </div>
       </div>
 
+      {/* Error state */}
+      {error && (
+        <div className="card-premium p-6 text-center border-duo-red/30 bg-duo-red/5">
+          <AlertCircle size={28} className="mx-auto text-duo-red mb-2" />
+          <p className="text-xs font-bold text-fg mb-1">{error}</p>
+          <button
+            onClick={() => loadUsers(search)}
+            className="mt-3 btn-premium px-4 py-1.5 rounded-xl text-xs font-bold"
+          >
+            Qayta urinish
+          </button>
+        </div>
+      )}
+
       {/* Users List */}
       {loading ? (
         <div className="flex flex-col items-center justify-center py-12 text-muted">
-          <Loader2 size={24} className="animate-spin mb-2" />
-          <p className="text-xs">Qidirilmoqda...</p>
+          <Loader2 size={24} className="animate-spin mb-2 text-duo-purple" />
+          <p className="text-xs">Foydalanuvchilar yuklanmoqda...</p>
         </div>
-      ) : users.length === 0 ? (
+      ) : users.length === 0 && !error ? (
         <div className="card-premium p-8 text-center">
           <User size={36} className="mx-auto text-muted/50 mb-2" />
           <p className="text-sm font-bold text-fg">Foydalanuvchi topilmadi</p>
-          <p className="text-xs text-subtle mt-1">Boshqa kalit so'z bilan qidiring</p>
+          <p className="text-xs text-subtle mt-1">
+            {search ? "Boshqa kalit so'z bilan qidiring" : "Bazaga hali foydalanuvchilar yozilmagan"}
+          </p>
         </div>
       ) : (
         <div className="space-y-3">
@@ -107,7 +155,7 @@ export default function AdminUsersTab() {
                           </span>
                         )}
                       </div>
-                      <span className="text-[11px] text-muted truncate block">
+                      <span className="text-[11px] text-muted truncate block font-mono">
                         {u.username ? `@${u.username}` : `ID: ${u.id}`}
                       </span>
                     </div>

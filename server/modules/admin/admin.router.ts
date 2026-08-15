@@ -166,7 +166,7 @@ router.get('/admin/stats', wrap(async (_req, res) => {
   `)
 
   const [progressStats] = await executeRows<{ totalAnswered: number }>(sql`
-    SELECT COALESCE(SUM(answered), 0)::int AS "totalAnswered" FROM progress
+    SELECT COALESCE(SUM(total_answered), 0)::int AS "totalAnswered" FROM progress
   `)
 
   const [promoStats] = await executeRows<{ totalPromoCodes: number }>(sql`
@@ -207,17 +207,17 @@ router.get('/admin/users', wrap(async (req, res) => {
         u.premium_until AS "premiumUntil",
         u.is_admin AS "isAdmin",
         u.created_at AS "createdAt",
-        COALESCE(p.answered, 0)::int AS answered,
-        COALESCE(p.correct, 0)::int AS correct,
-        p.league
+        COALESCE(p.total_answered, 0)::int AS answered,
+        COALESCE(p.total_correct, 0)::int AS correct,
+        COALESCE(p.league, 'bronze') AS league
       FROM users u
-      LEFT JOIN progress p ON p.user_id = u.id AND p.subject_id = 'yhq'
+      LEFT JOIN progress p ON p.user_id = u.id
       WHERE
         u.id ILIKE ${'%' + q + '%'} OR
-        u.first_name ILIKE ${'%' + q + '%'} OR
-        u.last_name ILIKE ${'%' + q + '%'} OR
-        u.username ILIKE ${'%' + q + '%'} OR
-        u.phone ILIKE ${'%' + q + '%'}
+        COALESCE(u.first_name, '') ILIKE ${'%' + q + '%'} OR
+        COALESCE(u.last_name, '') ILIKE ${'%' + q + '%'} OR
+        COALESCE(u.username, '') ILIKE ${'%' + q + '%'} OR
+        COALESCE(u.phone, '') ILIKE ${'%' + q + '%'}
       ORDER BY u.created_at DESC
       LIMIT 50
     `)
@@ -234,13 +234,13 @@ router.get('/admin/users', wrap(async (req, res) => {
         u.premium_until AS "premiumUntil",
         u.is_admin AS "isAdmin",
         u.created_at AS "createdAt",
-        COALESCE(p.answered, 0)::int AS answered,
-        COALESCE(p.correct, 0)::int AS correct,
-        p.league
+        COALESCE(p.total_answered, 0)::int AS answered,
+        COALESCE(p.total_correct, 0)::int AS correct,
+        COALESCE(p.league, 'bronze') AS league
       FROM users u
-      LEFT JOIN progress p ON p.user_id = u.id AND p.subject_id = 'yhq'
+      LEFT JOIN progress p ON p.user_id = u.id
       ORDER BY u.created_at DESC
-      LIMIT 30
+      LIMIT 50
     `)
   }
 
