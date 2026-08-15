@@ -153,9 +153,11 @@ bot.command('start', async (ctx) => {
     )
     return
   }
-  if (param && /^duel-[a-z0-9]{6,16}$/.test(param)) {
+  if (param && (/^duel-[a-z0-9]{4,16}$/.test(param) || /^\d{4,8}$/.test(param))) {
+    const pin = param.replace(/^duel-/, '')
+    const formattedPin = pin.length === 6 ? `${pin.slice(0, 3)} ${pin.slice(3)}` : pin
     await ctx.reply(
-      '🤺 Duelga taklif qilindingiz! Quyidagi tugmani bosib raqibingizga qo\'shiling:',
+      `🤺 Siz duelga taklif qilindingiz!\n\n📌 Xona PIN-kodi: ${formattedPin}\n\nQuyidagi tugmani bosib do'stingiz bilan bellashuvni boshlang:`,
       // QUERY param — hash emas! Telegram hash'li web_app URL'da eski
       // sessiyani (Dashboard'da qolgan) ochadi; query esa ilovani QAYTA YUKLAYDI.
       { reply_markup: new InlineKeyboard().webApp("⚔️ Duelga qo'shilish", `${BASE_URL}?duel=${param}`) },

@@ -42,6 +42,8 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
     playSound('click')
     const shareText = `Kel, bilimlar jangida bellashamiz! 🤺\n\n📌 Xona PIN-kodi: ${createdPin}\n\nQuyidagi havola orqali kiring:`
     shareUrl(inviteLink, shareText)
+    onStartRoom(createdPin)
+    onClose()
   }
 
   const handleStartCreated = () => {

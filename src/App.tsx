@@ -55,14 +55,17 @@ function Layout() {
   }, [location.pathname])
 
   // Duel invite-link (ikki manba):
-  //  1) startapp deep-link: ?startapp=duel-xxxx → start_param
-  //  2) bot tugmasidan: URL'dagi ?duel=duel-xxxx query param
+  //  1) startapp deep-link: ?startapp=duel-xxxx yoki 6-digit PIN → start_param
+  //  2) bot tugmasidan: URL'dagi ?duel=xxxx query param
   useEffect(() => {
     const sp = getStartParam()
-    const fromTg = sp?.startsWith('duel-') ? sp : undefined
+    const fromTg = sp && (sp.startsWith('duel-') || /^\d{4,8}$/.test(sp)) ? sp : undefined
     const fromQuery = new URLSearchParams(window.location.search).get('duel') ?? undefined
-    const code = fromTg ?? (fromQuery?.startsWith('duel-') ? fromQuery : undefined)
-    if (code) navigate(`/octagon/${code}`)
+    const rawCode = fromTg ?? fromQuery
+    if (rawCode) {
+      const cleanCode = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
+      navigate(`/octagon/${cleanCode}`)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
