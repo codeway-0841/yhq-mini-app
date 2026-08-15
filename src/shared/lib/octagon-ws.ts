@@ -50,6 +50,7 @@ export class OctagonSocket {
   private closed           = false
   /** Joriy holat — yangi listener DARHOL uni oladi (socket allaqachon open bo'lsa ham) */
   private currentStatus: ConnStatus = 'connecting'
+  private sendQueue: OctagonSend[] = []
   readonly url:            string
 
   constructor(url: string) {
@@ -87,6 +88,17 @@ export class OctagonSocket {
     }
   }
 
+  private flushQueue(): void {
+    if (!this.ws || this.ws.readyState !== WebSocket.OPEN) return
+    while (this.sendQueue.length > 0) {
+      const msg = this.sendQueue.shift()
+      if (msg) {
+        try { this.ws.send(JSON.stringify(msg)) }
+        catch { /* ignored */ }
+      }
+    }
+  }
+
   connect(): void {
     if (this.closed) return
     if (
@@ -102,6 +114,7 @@ export class OctagonSocket {
       this.reconnectCount = 0
       this.emitStatus('open')
       this.startHeartbeat()
+      this.flushQueue()
     }
 
     ws.onmessage = (e) => {
@@ -115,7 +128,6 @@ export class OctagonSocket {
     ws.onerror = () => {
       // onerror fires before onclose in most environments;
       // actual reconnect logic lives in onclose to avoid double-scheduling.
-      // Emit an error event so the UI can surface a toast if needed.
       this.listeners.forEach((fn) =>
         fn({ type: 'error', message: 'WebSocket connection error' })
       )
@@ -139,13 +151,18 @@ export class OctagonSocket {
 
   /**
    * Send a message.
-   * Throws if the socket is not OPEN so callers can handle it (e.g. show a toast).
+   * If socket is still connecting, messages are buffered and flushed upon onopen.
    */
   send(msg: OctagonSend): void {
-    if (this.ws?.readyState !== WebSocket.OPEN) {
-      throw new Error('OctagonSocket: not connected — cannot send message')
+    if (this.ws?.readyState === WebSocket.OPEN) {
+      this.ws.send(JSON.stringify(msg))
+      return
     }
-    this.ws.send(JSON.stringify(msg))
+    // Ulanish jarayonida — navbatga qo'shib, onopen bo'lgach jo'natamiz
+    this.sendQueue.push(msg)
+    if (!this.ws || this.ws.readyState === WebSocket.CLOSED || this.ws.readyState === WebSocket.CLOSING) {
+      this.connect()
+    }
   }
 
   /** Returns an unsubscribe function. */
@@ -164,6 +181,7 @@ export class OctagonSocket {
   disconnect(): void {
     this.closed = true
     this.reconnectCount = 0
+    this.sendQueue = []
     this.stopHeartbeat()
 
     if (this.reconnectTimer !== null) {
