@@ -21,6 +21,7 @@ import { config } from '../../config'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 import { cronRepository } from './cron.repository'
+import { distributeWeeklyPrizes } from '../leaderboard/tournament-prize.service'
 
 const router = Router()
 
@@ -239,6 +240,10 @@ router.get('/cron/league-rollover', async (_req, res) => {
     const demoted  = plan.filter((p) => lvl(p.toLeague) < lvl(p.fromLeague)).length
     const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted }
     await cronRepository.complete('league-rollover', wPrev, result)
+    // Haftalik turnir g'oliblariga avtomatik Premium sovg'alarini berish va tabriknoma jo'natish
+    distributeWeeklyPrizes(wPrev)
+      .then((res) => console.log(`[league-rollover] Tournament prizes distributed for ${wPrev}: ${res.winners.length} winners`))
+      .catch((e) => console.error('[league-rollover] tournament prizes error:', e))
     res.json({ ok: true, ...result })
   } catch (err) {
     // RETRY-SAFE: davr 'completed'ga BELGILANMAYDI — jobRuns 'running' qoladi,

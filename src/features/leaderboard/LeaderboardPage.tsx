@@ -9,7 +9,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Trophy, Shield } from 'lucide-react'
+import { Trophy, Shield, Gift } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { api, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
@@ -152,6 +152,42 @@ export default function LeaderboardPage() {
                     {tt(leagueCfg.titleKey)} {tt('leagueTab').toLowerCase()}si
                   </p>
                   <p className="text-[10.5px] text-subtle font-semibold">{tt('leagueWeekInfo')}</p>
+                </div>
+              </div>
+
+              {/* Haftalik Turnir Sovrinlari */}
+              <div className="mx-4 mt-3 rounded-2xl bg-surface border border-duo-purple/30 p-3.5 shadow-sm space-y-2.5">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-duo-purple/15 flex items-center justify-center text-duo-purple flex-shrink-0">
+                    <Gift size={18} />
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-black text-fg flex items-center gap-1.5">
+                      {tt('tournamentPrizesTitle')}
+                      <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-duo-purple/20 text-duo-purple">
+                        Dushanba
+                      </span>
+                    </h3>
+                    <p className="text-[10.5px] text-muted leading-tight mt-0.5">{tt('tournamentPrizesDesc')}</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-2">
+                  <div className="rounded-xl bg-card border border-duo-yellow/30 p-2 text-center flex flex-col items-center">
+                    <span className="text-base">🥇</span>
+                    <span className="text-[10px] font-black text-pgold mt-0.5">1-O'rin</span>
+                    <span className="text-[9px] font-bold text-muted mt-0.5 leading-tight">{tt('tournamentRank1')}</span>
+                  </div>
+                  <div className="rounded-xl bg-card border border-line p-2 text-center flex flex-col items-center">
+                    <span className="text-base">🥈</span>
+                    <span className="text-[10px] font-black text-slate-300 mt-0.5">2-O'rin</span>
+                    <span className="text-[9px] font-bold text-muted mt-0.5 leading-tight">{tt('tournamentRank2')}</span>
+                  </div>
+                  <div className="rounded-xl bg-card border border-line p-2 text-center flex flex-col items-center">
+                    <span className="text-base">🥉</span>
+                    <span className="text-[10px] font-black text-amber-600 mt-0.5">3-O'rin</span>
+                    <span className="text-[9px] font-bold text-muted mt-0.5 leading-tight">{tt('tournamentRank3')}</span>
+                  </div>
                 </div>
               </div>
 

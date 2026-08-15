@@ -598,5 +598,23 @@ export const promoCodeRedemptions = pgTable('promo_code_redemptions', {
   index('idx_promo_redemptions_user').on(t.userId),
 ])
 
+/**
+ * Haftalik turnir g'oliblari va mukofotlari — har dushanba cron orqali avtomatik taqsimlanadi.
+ */
+export const tournamentPrizes = pgTable('tournament_prizes', {
+  id:         serial('id').primaryKey(),
+  periodKey:  text('period_key').notNull(), // masalan '2026-08-10' (o'tgan hafta dushanbasi)
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  rank:       integer('rank').notNull(), // 1, 2, 3
+  score:      integer('score').default(0).notNull(),
+  league:     text('league').default('bronze').notNull(),
+  prizeDays:  integer('prize_days').notNull(), // 30, 14, 7
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_tournament_prize_period_rank').on(t.periodKey, t.rank),
+  index('idx_tournament_prizes_user').on(t.userId),
+  index('idx_tournament_prizes_period').on(t.periodKey),
+])
+
 
 

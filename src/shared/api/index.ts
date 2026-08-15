@@ -373,6 +373,20 @@ export const api = {
       `/leaderboard?limit=${limit}&mode=weekly${userId ? `&userId=${uid(userId)}` : ''}`
     ),
 
+  getTournamentWinners: () =>
+    request<{
+      ok: boolean
+      winners: Array<{
+        periodKey: string
+        rank: number
+        userId: string
+        name: string
+        score: number
+        league: string
+        prizeDays: number
+      }>
+    }>('GET', '/leaderboard/tournament-winners'),
+
   // ── Daily Challenge ────────────────────────────────────────────────────
   getDaily: (userId: string, date: string, subject: string) =>
     request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
