@@ -6,7 +6,21 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 📥 Savollarni Ommaviy Yuklash (Bulk Questions Import via CSV / Text / JSON)
+### 1. 📢 Telegram Bot Ommaviy Xabarnoma (Broadcast / E'lonlar)
+* **Xususiyat:** Admin panel orqali barcha Telegram bot obunachilariga chiroyli formatlangan e'lonlar, aksiyalar, eslatmalar va yangiliklar yuborish tizimi.
+* **🎯 Aniq Auditoriyani Tanlash (Targeting):**
+  * 👥 Barcha foydalanuvchilar
+  * 🆓 Faqat Bepul (Free) foydalanuvchilar (Aksiya va Premium taklif qilish uchun)
+  * 👑 Faqat Premium foydalanuvchilar
+  * 😴 Nofaol o'quvchilar (7+ kundan beri kirmaganlar — Retention)
+  * ⚡ Bugun faol bo'lgan o'quvchilar
+* **📱 Jonli Telegram Mockup (Preview):** Xabar yuborilishidan oldin Telegram'da qanday ko'rinishi (Rasm, Matn, Emojilar, Inline WebApp CTA tugmasi) real vaqtda ko'rinib turadi.
+* **🧪 Xavfsizlik & Sinov:** Avval faqat o'ziga test xabar yuborib ko'rish imkoniyati, tasdiqlash modali va Telegram Bot API limitlariga mos (25 msg/s) uzluksiz batch yuborish.
+* **Fayllar:** `src/features/admin/components/AdminBroadcastTab.tsx`, `server/modules/admin/broadcast.service.ts`, `server/modules/admin/admin.router.ts`, `src/features/admin/AdminPage.tsx`, `src/shared/api/index.ts`, `tests/unit/modules/broadcast.test.ts`.
+
+---
+
+### 2. 📥 Savollarni Ommaviy Yuklash (Bulk Questions Import via CSV / Text / JSON)
 * **Xususiyat:** Har qanday fanga (YHQ, Rus tili, Matematika, Fizika, Kimyo, Ingliz tili, Tarix, Biologiya) yuzlab savollarni bir vaqtda tez va xatosiz yuklash imkoniyati.
 * **3 Ta Yuklash Usuli:**
   * **📄 CSV / Excel Fayl:** Excel yoki Google Sheets'dan eksport qilingan `.csv` faylni yuklash.

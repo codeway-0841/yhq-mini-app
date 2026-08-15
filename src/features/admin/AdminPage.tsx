@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck } from 'lucide-react'
+import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import AdminPromoTab from './components/AdminPromoTab'
 import AdminQuestionsTab from './components/AdminQuestionsTab'
 import AdminUsersTab from './components/AdminUsersTab'
+import AdminBroadcastTab from './components/AdminBroadcastTab'
 import AdminStatsTab from './components/AdminStatsTab'
 
-type AdminTab = 'promos' | 'questions' | 'users' | 'stats'
+type AdminTab = 'promos' | 'questions' | 'users' | 'broadcast' | 'stats'
 
 export default function AdminPage() {
   const navigate = useNavigate()
@@ -26,10 +27,11 @@ export default function AdminPage() {
   if (!user?.isAdmin) return null
 
   const tabs: { id: AdminTab; label: string; icon: typeof Ticket }[] = [
-    { id: 'promos',    label: 'Promokodlar',     icon: Ticket },
-    { id: 'questions', label: 'Savollar',        icon: HelpCircle },
-    { id: 'users',     label: 'Foydalanuvchilar', icon: Users },
-    { id: 'stats',     label: 'Statistika',      icon: BarChart3 },
+    { id: 'promos',    label: 'Promokod',   icon: Ticket },
+    { id: 'questions', label: 'Savollar',   icon: HelpCircle },
+    { id: 'users',     label: 'O\'quvchilar', icon: Users },
+    { id: 'broadcast', label: 'E\'lonlar',   icon: Send },
+    { id: 'stats',     label: 'Statistika', icon: BarChart3 },
   ]
 
   return (
@@ -59,7 +61,7 @@ export default function AdminPage() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="grid grid-cols-4 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
+        <div className="grid grid-cols-5 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -68,13 +70,13 @@ export default function AdminPage() {
                 key={tab.id}
                 type="button"
                 onClick={() => setActiveTab(tab.id)}
-                className={`py-2 px-1 rounded-xl text-[11px] font-black flex flex-col items-center gap-1 transition-all ${
+                className={`py-2 px-0.5 rounded-xl text-[10px] font-black flex flex-col items-center gap-1 transition-all ${
                   isActive
                     ? 'bg-duo-purple text-ponprimary shadow-md scale-[1.02]'
                     : 'text-muted hover:text-fg'
                 }`}
               >
-                <Icon size={16} />
+                <Icon size={15} />
                 <span className="truncate max-w-full">{tab.label}</span>
               </button>
             )
@@ -87,6 +89,7 @@ export default function AdminPage() {
         {activeTab === 'promos' && <AdminPromoTab />}
         {activeTab === 'questions' && <AdminQuestionsTab lang={lang} />}
         {activeTab === 'users' && <AdminUsersTab />}
+        {activeTab === 'broadcast' && <AdminBroadcastTab lang={lang} currentUserId={user.id} />}
         {activeTab === 'stats' && <AdminStatsTab />}
       </div>
     </div>

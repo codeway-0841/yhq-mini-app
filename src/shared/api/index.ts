@@ -450,6 +450,25 @@ export const api = {
       `/admin/users/${userId}/grant-premium`,
       data,
     ),
+  // ── Admin Broadcast (Ommaviy xabarnoma) ──────────────────────────────────
+  getBroadcastPreviewCount: (target: 'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today') =>
+    request<{ target: string; count: number }>('POST', '/admin/broadcast/preview-count', { target }),
+  sendBroadcast: (data: {
+    target: 'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today'
+    text: string
+    imageUrl?: string | null
+    buttonText?: string | null
+    buttonUrl?: string | null
+    testTelegramId?: string | number | null
+  }) =>
+    request<{
+      ok: boolean
+      total: number
+      sent: number
+      blocked: number
+      failed: number
+      durationMs: number
+    }>('POST', '/admin/broadcast', data),
 }
 
 export interface AdminPromoCode {

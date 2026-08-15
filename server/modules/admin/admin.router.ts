@@ -391,4 +391,41 @@ router.post(
   }),
 )
 
+// ── BROADCAST (OMMAVIY XABARNOMA) ENDPOINTS ──
+
+const BroadcastSchema = z.object({
+  target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
+  text: z.string().min(2).max(4000),
+  imageUrl: z.string().url().max(1000).nullable().optional(),
+  buttonText: z.string().max(64).nullable().optional(),
+  buttonUrl: z.string().max(1000).nullable().optional(),
+  testTelegramId: z.union([z.string(), z.number()]).nullable().optional(),
+})
+
+const BroadcastPreviewSchema = z.object({
+  target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
+})
+
+router.post(
+  '/admin/broadcast/preview-count',
+  validate({ body: BroadcastPreviewSchema }),
+  wrap(async (req, res) => {
+    const { target } = req.body as z.infer<typeof BroadcastPreviewSchema>
+    const { getTargetTelegramIds } = await import('./broadcast.service')
+    const targets = await getTargetTelegramIds(target)
+    res.json({ target, count: targets.length })
+  }),
+)
+
+router.post(
+  '/admin/broadcast',
+  validate({ body: BroadcastSchema }),
+  wrap(async (req, res) => {
+    const body = req.body as z.infer<typeof BroadcastSchema>
+    const { executeBroadcast } = await import('./broadcast.service')
+    const result = await executeBroadcast(body)
+    res.json({ ok: true, ...result })
+  }),
+)
+
 export default router
