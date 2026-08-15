@@ -122,8 +122,12 @@ export default function Dashboard() {
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {
     const prefix = `${subject.id}:`
-    return solvedQuestions.filter((k) => k.startsWith(prefix)).length
-  }, [solvedQuestions, subject.id])
+    const count = solvedQuestions.filter((k) => k.startsWith(prefix) || (!k.includes(':') && subject.id === 'yhq')).length
+    if (count === 0 && subject.id === 'yhq' && totalCorrect > 0) {
+      return Math.min(questionsCount || totalCorrect, totalCorrect)
+    }
+    return count
+  }, [solvedQuestions, subject.id, totalCorrect, questionsCount])
 
   useDashboardSync(user?.id, subject.id, settings.language)
 
@@ -227,7 +231,7 @@ export default function Dashboard() {
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
-            totalAnswered={uniqueSolvedCount}
+            totalAnswered={uniqueSolvedCount > 0 ? uniqueSolvedCount : (totalAnswered > 0 ? totalAnswered : totalCorrect)}
             streak={dailyStreak}
             totalPool={questionsCount}
             lang={settings.language}
