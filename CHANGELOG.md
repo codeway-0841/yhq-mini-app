@@ -6,7 +6,19 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🔔 Aqlli Telegram Bot Eslatmalari (Smart Retention Push Notifications)
+### 1. ✨ AI Savol Generatori & Matn Studiyasi (Admin AI Question Studio)
+* **Xususiyat:** Admin o'zi yozgan matn, qoidalar to'plami yoki ixtiyoriy darslik mavzusi asosida Google Gemini AI yordamida 4 ta variantli professional test savollarini tushuntirishi bilan bir zumda shakllantirish va tahrirlash studiyasi.
+* **Imkoniyatlar:**
+  * 📝 **Matn yozish / Darslik konspekti:** Admin o'zi yozgan qoidalar yoki matnni kiritadi, AI aynan shu manba asosida savollar tuzadi.
+  * 💡 **Mavzu bo'yicha generatsiya:** Shunchaki bitta mavzu nomini kiritish (masalan, *"Chorrahada burilish qoidalari"*, *"Nyuton qonunlari"* va hokazo).
+  * 🎛️ **Moslashuvchan sozlamalar:** 8 ta fan tanlash, savollar soni (3, 5, 10, 15, 20 ta), qiyinchilik darajasi (Oson, O'rtacha, Qiyin, Aralash) va 2 tilda (O'zbek / Rus) parallel generatsiya.
+  * ✏️ **Interaktiv Studiya & Tahrirlash:** Har bir savolni ekranda bevosita tahrirlash, to'g'ri javobni almashtirish, tushuntirishni to'g'rilash, rasm biriktirish (Canvas auto-compression) va yangi savollar qo'shish.
+  * 💾 **Bir Zumda Bazaga Saqlash:** Barcha tasdiqlangan savollarni bitta bosishda to'g'ridan-to'g'ri fan bazasiga qo'shish (`POST /api/admin/questions/bulk-import`).
+* **Fayllar:** `server/modules/admin/ai-question-generator.service.ts`, `server/modules/admin/admin.router.ts`, `src/features/admin/components/AdminAiStudioTab.tsx`, `src/features/admin/AdminPage.tsx`.
+
+---
+
+### 2. 🔔 Aqlli Telegram Bot Eslatmalari (Smart Retention Push Notifications)
 * **Xususiyat:** O'quvchilarni ilovaga qaytarish, o'rganish intizomi (Streak) uzilib qolishini oldini olish, haftalik liga natijalarini e'lon qilish va Premium tugashini eslatuvchi to'liq avtomatik push-eslatmalar tizimi.
 * **Avtomatik Eslatmalar Turlari:**
   * 🔥 **Streak Himoyasi & Kunlik Mashq (`/cron/daily-reminder`):** Bugun mashq qilmagan o'quvchiga uning shaxsiy streak kunini (`🔥 Ali, 5 kunlik seriyangiz xavf ostida!`) ko'rsatib, 2 daqiqalik testga chaqirish.

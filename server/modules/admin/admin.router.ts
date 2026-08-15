@@ -451,4 +451,16 @@ router.post(
   }),
 )
 
+// ── AI QUESTION STUDIO & TEXT GENERATOR ──
+
+router.post(
+  '/admin/ai/generate-questions',
+  wrap(async (req, res) => {
+    const { GenerateQuestionsInputSchema, generateAiQuestions } = await import('./ai-question-generator.service')
+    const parsed = GenerateQuestionsInputSchema.parse(req.body)
+    const questions = await generateAiQuestions(parsed)
+    res.json({ ok: true, count: questions.length, questions })
+  }),
+)
+
 export default router
