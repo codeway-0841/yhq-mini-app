@@ -53,6 +53,12 @@ const envSchema = z.object({
   /** OTP hash server pepper — HMAC-SHA256 kalit (DB dump'da OTP brute-force
    *  himoyasi). Yo'q bo'lsa plain sha256 fallback (dev uchun; prod'da o'rnating). */
   OTP_PEPPER: z.string().min(16).optional(),
+
+  /** Click Payment Gateway */
+  CLICK_SERVICE_ID:       z.string().optional(),
+  CLICK_MERCHANT_ID:      z.string().optional(),
+  CLICK_SECRET_KEY:       z.string().optional(),
+  CLICK_MERCHANT_USER_ID: z.string().optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -153,6 +159,14 @@ export const config = {
 
   /** App domain for email link validation */
   appDomain: env.APP_DOMAIN ?? 'kiwi.uz',
+
+  /** Click Payment Gateway */
+  click: {
+    serviceId:      env.CLICK_SERVICE_ID ?? '',
+    merchantId:     env.CLICK_MERCHANT_ID ?? '',
+    secretKey:      env.CLICK_SECRET_KEY ?? '',
+    merchantUserId: env.CLICK_MERCHANT_USER_ID ?? '',
+  },
 
   sentry: {
     dsn: env.SENTRY_DSN,

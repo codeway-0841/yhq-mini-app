@@ -283,6 +283,23 @@ export const payments = pgTable('payments', {
   index('idx_payments_user_created').on(t.userId, t.createdAt),
 ])
 
+export const paymentOrders = pgTable('payment_orders', {
+  id:              serial('id').primaryKey(),
+  orderId:         text('order_id').notNull().unique(),
+  userId:          text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  plan:            text('plan').notNull(), // 'month' | 'year' | 'lifetime'
+  amountUzs:       integer('amount_uzs').notNull(),
+  provider:        text('provider').notNull(), // 'click' | 'payme'
+  status:          text('status').default('pending').notNull(), // 'pending' | 'completed' | 'cancelled' | 'failed'
+  providerTransId: text('provider_trans_id'), // Click transaction ID
+  rawDetails:      jsonb('raw_details').$type<Record<string, unknown>>().default({}).notNull(),
+  createdAt:       timestamp('created_at').defaultNow().notNull(),
+  updatedAt:       timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  index('idx_payment_orders_user').on(t.userId, t.createdAt),
+  index('idx_payment_orders_order_id').on(t.orderId),
+])
+
 export const progress = pgTable('progress', {
   id:            serial('id').primaryKey(),
   userId:        text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }).unique(),

@@ -470,6 +470,28 @@ export const api = {
       failed: number
       durationMs: number
     }>('POST', '/admin/broadcast', data),
+
+  // ── Payments & Orders (Click.uz) ──────────────────────────────────────────
+  createPaymentOrder: (data: { plan: string; provider?: 'click'; returnUrl?: string }) =>
+    request<{
+      ok: boolean
+      orderId: string
+      amountUzs: number
+      plan: string
+      provider: string
+      paymentUrl: string
+    }>('POST', '/payments/create-order', data),
+
+  checkPaymentOrder: (orderId: string) =>
+    request<{
+      ok: boolean
+      orderId: string
+      status: 'pending' | 'completed' | 'cancelled' | 'failed'
+      plan: string
+      amountUzs: number
+      provider: string
+      updatedAt: string
+    }>('GET', `/payments/check-order/${encodeURIComponent(orderId)}`),
 }
 
 export interface AdminPromoCode {

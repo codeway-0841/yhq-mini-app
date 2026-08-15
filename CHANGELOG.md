@@ -6,7 +6,25 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🔍 Test Yechishda Interaktiv Rasm Kattalashtirish (Interactive Image Pinch & Zoom)
+### 1. 💳 Click.uz To'lov Tizimi Integratsiyasi (O'zbek so'mida Premium Obuna)
+* **Xususiyat:** Foydalanuvchilar o'zbek so'mida (Uzcard / Humo plastik kartalari, Click ilovasi yoki veb orqali) 1 oylik, 1 yillik yoki umrbod Premium obunani bir zumda sotib olishlari mumkin.
+* **Narxlar (SSOT `shared/premium-plans.ts`):**
+  * 📅 **Oylik (30 kun):** `29 000 so'm` (yoki ⭐ 99 Stars)
+  * 🌟 **Yillik (365 kun — Eng mashhur):** `79 000 so'm` (yoki ⭐ 250 Stars)
+  * 👑 **Umrbod (Cheksiz):** `149 000 so'm` (yoki ⭐ 500 Stars)
+* **Backend & Xavfsizlik:**
+  * 🧾 `payment_orders` jadvali (unikal buyurtma raqamlari, holat va xavfsiz hisob-kitob).
+  * 🔐 Click MD5 imzo (Signature) tekshiruvi (Prepare action 0 va Complete action 1).
+  * ⚡ CTE tranzaksiya orqali to'lov tasdiqlanishi bilan avtomatik entitlement aktivatsiya qilish.
+  * 📡 `POST /api/payments/click` webhook va `POST /api/payments/create-order`, `GET /api/payments/check-order/:orderId` endpointlari.
+* **Frontend & UI:**
+  * 📱 `PaymentMethodModal.tsx` — Click yoki Telegram Stars to'lov usulini tanlash.
+  * 🔄 Jonli to'lov tekshiruvi (Polling), to'lov tasdiqlangach avtomatik **Confetti**, **Yutuq tovushi** va profilni bir zumda Premium qilish.
+* **Fayllar:** `server/modules/payments/click.service.ts`, `server/modules/payments/payment.router.ts`, `server/schema.ts`, `shared/premium-plans.ts`, `src/features/premium/components/PaymentMethodModal.tsx`, `src/features/premium/PremiumPage.tsx`.
+
+---
+
+### 2. 🔍 Test Yechishda Interaktiv Rasm Kattalashtirish (Interactive Image Pinch & Zoom)
 * **Xususiyat:** Test yechish vaqtida yoki imtihon tahlilida savol rasmlarini to'liq ekranda 4x gacha kattalashtirib, batafsil ko'rish imkoniyati.
 * **Qulayliklar:**
   * 🔍 **Ko'rgazmali indikator:** Test savolidagi rasm ustida "🔍 Kattalashtirish" tugmasi.

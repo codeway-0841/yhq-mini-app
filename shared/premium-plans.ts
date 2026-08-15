@@ -17,6 +17,8 @@ export interface PremiumPlan {
   key:      PlanKey
   /** Telegram Stars narxi */
   stars:    number
+  /** O'zbek so'midagi narx (UZS) */
+  priceUzs: number
   /** Necha kun davom etadi (null = umrbod) */
   days:     number | null
   titleUz:  string
@@ -26,9 +28,9 @@ export interface PremiumPlan {
 }
 
 export const PREMIUM_PLANS: PremiumPlan[] = [
-  { key: 'month',    stars: 99,  days: 30,  titleUz: 'Oylik',   titleRu: 'Месяц', periodUz: '30 kun',    periodRu: '30 дней'  },
-  { key: 'year',     stars: 250, days: 365, titleUz: 'Yillik',  titleRu: 'Год',   periodUz: '12 oy',     periodRu: '12 месяцев' },
-  { key: 'lifetime', stars: 500, days: null, titleUz: 'Umrbod', titleRu: 'Навсегда', periodUz: 'umrbod', periodRu: 'навсегда' },
+  { key: 'month',    stars: 99,  priceUzs: 29_000,  days: 30,  titleUz: 'Oylik',   titleRu: 'Месяц', periodUz: '30 kun',    periodRu: '30 дней'  },
+  { key: 'year',     stars: 250, priceUzs: 79_000,  days: 365, titleUz: 'Yillik',  titleRu: 'Год',   periodUz: '12 oy',     periodRu: '12 месяцев' },
+  { key: 'lifetime', stars: 500, priceUzs: 149_000, days: null, titleUz: 'Umrbod', titleRu: 'Навсегда', periodUz: 'umrbod', periodRu: 'навсегда' },
 ]
 
 /** Ommaviy ko'rsatish uchun — "Eng mashhur" badge qo'yiladigan tarif */
@@ -36,6 +38,12 @@ export const HIGHLIGHT_PLAN: PlanKey = 'year'
 
 export function getPlan(key: string): PremiumPlan | null {
   return PREMIUM_PLANS.find((p) => p.key === key) ?? null
+}
+
+/** So'm narxini chiroyli formatlash: 29000 -> "29 000 so'm" */
+export function formatUzs(amount: number, lang: 'uz' | 'ru' = 'uz'): string {
+  const formatted = amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+  return lang === 'ru' ? `${formatted} сум` : `${formatted} so'm`
 }
 
 /** Telegram /start param → plan kaliti: 'premium' (umumiy), 'premium_month', ... */

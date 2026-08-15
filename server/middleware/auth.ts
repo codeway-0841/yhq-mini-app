@@ -92,6 +92,13 @@ const PUBLIC_AUTH_GET_PREFIXES = [
   'auth/verify-email',
 ]
 
+/** Payment provider webhooks — credentials'siz keladi (imzo bilan himoyalangan) */
+const PUBLIC_PAYMENT_POST = new Set([
+  'payments/click',
+  'payments/click/prepare',
+  'payments/click/complete',
+])
+
 // `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
 export function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
@@ -119,6 +126,14 @@ export function isPublicAuthGet(req: Request): boolean {
   if (!normalized) return false
   const path = normalized.split('/').filter(Boolean).join('/')
   return PUBLIC_AUTH_GET_PREFIXES.some((prefix) => path.startsWith(prefix))
+}
+
+export function isPublicPaymentPost(req: Request): boolean {
+  if (req.method !== 'POST') return false
+  const normalized = normalizePath(req.path)
+  if (!normalized) return false
+  const path = normalized.split('/').filter(Boolean).join('/')
+  return PUBLIC_PAYMENT_POST.has(path)
 }
 
 export function isAuthEnforced(): boolean {
@@ -157,7 +172,7 @@ async function resolveBearer(token: string, req: Request): Promise<boolean> {
 
 export async function telegramAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    if (isPublicGet(req) || isPublicAuthPost(req) || isPublicAuthGet(req)) { next(); return }
+    if (isPublicGet(req) || isPublicAuthPost(req) || isPublicAuthGet(req) || isPublicPaymentPost(req)) { next(); return }
 
     const initData = getInitData(req)
     const bearer   = getBearerToken(req)

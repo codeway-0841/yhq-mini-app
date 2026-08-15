@@ -12,13 +12,13 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
-import { openTelegramLink } from '../../platform/telegram'
 import { ACCENT_THEMES } from '../../shared/config/themes'
-import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PlanKey } from '../../../shared/premium-plans'
+import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PremiumPlan, formatUzs } from '../../../shared/premium-plans'
 import { playSound } from '../../shared/lib/sounds'
 import { track } from '../../shared/lib/analytics'
 import Confetti from '../../shared/components/Confetti'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
+import PaymentMethodModal from './components/PaymentMethodModal'
 
 const BENEFITS = [
   { icon: Sparkles,   color: 'var(--p-gold)',    uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
@@ -39,13 +39,9 @@ export default function PremiumPage() {
   const [trialDone, setTrialDone]   = useState(false)
   const [trialError, setTrialError] = useState<string | null>(null)
   const [showPromoModal, setShowPromoModal] = useState(false)
+  const [selectedPlanForPayment, setSelectedPlanForPayment] = useState<PremiumPlan | null>(null)
   const userId = useAppStore((s) => s.user?.id)
   const syncFromServer = useAppStore((s) => s.syncFromServer)
-
-  const buy = (plan: PlanKey) => {
-    track('premium_click', { plan })
-    openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${plan}`)
-  }
 
   // 3 kunlik BEPUL trial — backend faqat 1 marta beradi
   const startTrial = async () => {
@@ -186,7 +182,7 @@ export default function PremiumPage() {
             {PREMIUM_PLANS.map((plan) => {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (
-                <button key={plan.key} onClick={() => buy(plan.key)}
+                <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
                   className="card-premium relative w-full p-4 text-left active:scale-[0.98] transition-transform"
                   style={highlight ? { borderColor: 'var(--p-gold)', borderWidth: 1.5, boxShadow: '0 0 30px -8px rgba(250,204,21,0.35)' } : undefined}>
                   {highlight && (
@@ -203,9 +199,14 @@ export default function PremiumPage() {
                         {lang === 'ru' ? plan.periodRu : plan.periodUz}
                       </p>
                     </div>
-                    <span className="btn-premium-gold px-4 py-2 rounded-xl text-[13px] flex-shrink-0">
-                      ⭐ {plan.stars}
-                    </span>
+                    <div className="text-right flex-shrink-0">
+                      <span className="btn-premium-gold px-3.5 py-1.5 rounded-xl text-[13px] inline-block font-black">
+                        {formatUzs(plan.priceUzs, lang)}
+                      </span>
+                      <span className="text-[10px] text-pmuted block mt-0.5">
+                        ⭐ {plan.stars} Stars
+                      </span>
+                    </div>
                   </div>
                 </button>
               )
@@ -213,8 +214,8 @@ export default function PremiumPage() {
           </div>
           <p className="text-center text-[11px] text-psubtle mt-3 px-5">
             {lang === 'ru'
-              ? "Оплата через Telegram Stars — безопасно и мгновенно"
-              : "To'lov Telegram Stars orqali — xavfsiz va bir zumda"}
+              ? "Оплата через Click (Uzcard / Humo) или Telegram Stars"
+              : "To'lov Click (Uzcard / Humo) yoki Telegram Stars orqali"}
           </p>
 
           <div className="text-center mt-4">
@@ -228,6 +229,15 @@ export default function PremiumPage() {
             </button>
           </div>
         </>
+      )}
+
+      {/* To'lov usulini tanlash modali */}
+      {selectedPlanForPayment && (
+        <PaymentMethodModal
+          plan={selectedPlanForPayment}
+          language={lang}
+          onClose={() => setSelectedPlanForPayment(null)}
+        />
       )}
 
       {/* Promokod kiritish modali */}

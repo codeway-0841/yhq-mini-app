@@ -21,11 +21,17 @@ describe('shared/premium-plans — data integrity', () => {
     expect(PREMIUM_PLANS.some((p) => p.key === HIGHLIGHT_PLAN)).toBe(true)
   })
 
-  it('narxlar musbat va oylik < yillik < umrbod tartibida', () => {
-    const price = (k: string) => getPlan(k)!.stars
-    for (const p of PREMIUM_PLANS) expect(p.stars).toBeGreaterThan(0)
-    expect(price('month')).toBeLessThan(price('year'))
-    expect(price('year')).toBeLessThan(price('lifetime'))
+  it('narxlar musbat va oylik < yillik < umrbod tartibida (Stars & UZS)', () => {
+    const starsPrice = (k: string) => getPlan(k)!.stars
+    const uzsPrice = (k: string) => getPlan(k)!.priceUzs
+    for (const p of PREMIUM_PLANS) {
+      expect(p.stars).toBeGreaterThan(0)
+      expect(p.priceUzs).toBeGreaterThan(0)
+    }
+    expect(starsPrice('month')).toBeLessThan(starsPrice('year'))
+    expect(starsPrice('year')).toBeLessThan(starsPrice('lifetime'))
+    expect(uzsPrice('month')).toBeLessThan(uzsPrice('year'))
+    expect(uzsPrice('year')).toBeLessThan(uzsPrice('lifetime'))
   })
 
   it("faqat lifetime'da days = null", () => {
