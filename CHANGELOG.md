@@ -6,7 +6,18 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. ⚔️ Oktagon: Do'st bilan Bellashuv — Maxsus Xona & PIN Kod (Custom Room PvP)
+### 1. 🎭 Oktagon: Jonli Smayliklar, Tezkor Frazalar va Interaktiv Reaksiyalar (Interactive Live Emotes & Taunts)
+* **Xususiyat:** PvP bellashuvlarida o'yinchilar o'rtasida real vaqtda jonli animatsiyali emojilar, qiziqarli tezkor frazalar va ASMR audio effektlar (Clash Royale / Brawl Stars uslubida) tizimi.
+* **Imkoniyatlar:**
+  * 🎭 **Jonli Uchuvchi Emotelar (`FloatingReactionsOverlay`):** 🔥, 😂, 😱, 😎, 👏, ⚡, 🥶, 🍿, 🥊, 🍅 — bosilganda ekranda 60fps suzib chiqib, yulduzchalar bilan havoga ko'tariladi.
+  * ⚡ **Tezkor Duel Frazalari (Speech Bubbles):** *"Qani, yetib ol!"*, *"100% to'g'ri bildim!"*, *"Tezroq o'yla!"*, *"Zo'r jang bo'lyapti!"*, *"Chalg'itma meni!"*, *"Menga bu oson!"*. Raqib avatari tepasida porloq gap pufakchasi paydo bo'ladi.
+  * 🔊 **ASMR Web Audio Effektlari:** `emote_pop`, `emote_whoosh`, `emote_splash` tovushlari.
+  * 🛡️ **Anti-Spam & Fair Play:** 1.2 soniyalik server/klient recharge cooldown va bir bosishda ovozni o'chirish (`VolumeX` mute) tugmasi.
+* **Fayllar:** `server/octagon.ts`, `src/features/octagon/components/DuelReactionPicker.tsx`, `src/features/octagon/components/FloatingReactionsOverlay.tsx`, `src/features/octagon/hooks/useDuelConnection.ts`, `src/shared/lib/sounds.ts`, `src/shared/lib/octagon-ws.ts`, `src/index.css`.
+
+---
+
+### 2. ⚔️ Oktagon: Do'st bilan Bellashuv — Maxsus Xona & PIN Kod (Custom Room PvP)
 * **Xususiyat:** O'quvchilar endi faqat tasodifiy raqiblar bilan emas, o'z do'stlari bilan 6 xonali PIN-kod yoki Telegram havolasi orqali to'g'ridan-to'g'ri maxsus duel xonasida bellashishlari mumkin.
 * **Imkoniyatlar:**
   * 🎮 **Xona Yaratish (`CustomRoomModal`):** Bitta bosishda 6 xonali tasodifiy PIN-kod (masalan, `749 210`) bilan maxsus xona ochish.

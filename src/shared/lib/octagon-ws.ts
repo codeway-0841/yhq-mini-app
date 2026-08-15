@@ -15,6 +15,7 @@ export type OctagonMsg =
       timeLimit: number; roundCount: number; yourScore: number; oppScore: number
       opponentName: string; yourAnswer: string | null; oppAnswered: boolean
       correctOptionId: string | null }
+  | { type: 'reaction'; senderId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
   | { type: 'opp_disconnected' }
   | { type: 'pong' }
   | { type: 'error'; message: string }
@@ -24,6 +25,7 @@ export type OctagonSend =
   | { type: 'join_queue';  userId: string; name: string; subjectId?: string; duelCode?: string; initData?: string; sessionToken?: string }
   | { type: 'rejoin';      matchId: string; userId: string; name: string; initData?: string; sessionToken?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
+  | { type: 'reaction';    matchId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
   | { type: 'leave_queue'; userId: string }
 
 type Listener = (msg: OctagonMsg) => void

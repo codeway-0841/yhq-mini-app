@@ -67,7 +67,7 @@ function tone(freq: number, at: number, dur: number, type: OscillatorType, peak:
   osc.stop(at + dur + 0.02)
 }
 
-export type SoundKind = 'click' | 'success' | 'error' | 'chime' | 'win' | 'combo' | 'match' | 'toggle'
+export type SoundKind = 'click' | 'success' | 'error' | 'chime' | 'win' | 'combo' | 'match' | 'toggle' | 'emote_pop' | 'emote_whoosh' | 'emote_splash'
 
 /** Master ovoz funksiyasi — barcha UI portlari shu orqali o'ynaydi */
 export function playSound(kind: SoundKind) {
@@ -118,6 +118,21 @@ export function playSound(kind: SoundKind) {
     case 'toggle':
       // Sozlamalar switch — juda qisqa tick
       tone(base * 1.5, t, 0.05, 'sine', 0.04)
+      break
+    case 'emote_pop':
+      // 🎭 Jonli smaylik — ASMR pufakcha tovushi
+      tone(base * 1.8, t, 0.06, 'sine', 0.06)
+      tone(base * 2.4, t + 0.03, 0.08, 'sine', 0.05)
+      break
+    case 'emote_whoosh':
+      // ⚡ Tezkor fraza — uchuvchi tovush
+      tone(base * 1.2, t, 0.08, 'triangle', 0.05)
+      tone(base * 1.6, t + 0.05, 0.12, 'sine', 0.05)
+      break
+    case 'emote_splash':
+      // 🍅 Pomidor / Muz — splash tovushi
+      tone(base * 0.9, t, 0.06, 'triangle', 0.06)
+      tone(base * 1.4, t + 0.04, 0.09, 'sine', 0.05)
       break
   }
 }

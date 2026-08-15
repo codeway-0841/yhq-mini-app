@@ -10,6 +10,8 @@ import { MatchedScreen }    from './components/MatchedScreen'
 import { RoundScreen }      from './components/RoundScreen'
 import { MatchEndScreen }   from './components/MatchEndScreen'
 import { CustomRoomModal }  from './components/CustomRoomModal'
+import { FloatingReactionsOverlay } from './components/FloatingReactionsOverlay'
+import { DuelReactionPicker } from './components/DuelReactionPicker'
 import { useOctagonClock }  from './hooks/useOctagonClock'
 import { useDuelConnection } from './hooks/useDuelConnection'
 
@@ -23,7 +25,8 @@ export default function OctagonPage() {
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
 
   const { state: s, conn, duelCode, duelLink,
-          joinQueue, cancelSearch, sendAnswer, retryConnect, exitToIdle } =
+          floatingReactions, opponentPhrase, yourPhrase, isMuted,
+          joinQueue, cancelSearch, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle } =
     useDuelConnection(user)
   const { timeLeft, roundPct } = useOctagonClock(s.deadline)
 
@@ -31,13 +34,24 @@ export default function OctagonPage() {
     ? questions.find((q) => q.id === s.currentQuestionId) ?? null
     : null
 
+  const isLiveMatch = s.phase === 'in_round' || s.phase === 'matched' || s.phase === 'match_end'
+
   return (
-    <div className="flex flex-col min-h-screen bg-canvas">
+    <div className="flex flex-col min-h-screen bg-canvas relative pb-6">
       <DuelHeader title={tt('octagonTitle')} inRound={s.phase === 'in_round'}
         yourScore={s.yourScore} oppScore={s.oppScore} />
 
       <DuelBanners toastMsg={s.toastMsg} conn={conn} phase={s.phase}
         oppWait={s.oppWait} onRetry={retryConnect} />
+
+      {/* Floating live reactions and taunts overlay */}
+      {isLiveMatch && (
+        <FloatingReactionsOverlay
+          reactions={floatingReactions}
+          opponentPhrase={opponentPhrase}
+          yourPhrase={yourPhrase}
+        />
+      )}
 
       <div className="flex-1 flex flex-col items-center justify-center px-4">
         {s.phase === 'idle' && (
@@ -66,6 +80,18 @@ export default function OctagonPage() {
             onExit={exitToIdle} onRematch={() => joinQueue()} />
         )}
       </div>
+
+      {/* Floating Reaction Picker in live match */}
+      {isLiveMatch && (
+        <div className="fixed bottom-5 left-5 z-40">
+          <DuelReactionPicker
+            language={settings.language}
+            isMuted={isMuted}
+            onToggleMute={toggleMute}
+            onSendReaction={sendReaction}
+          />
+        </div>
+      )}
 
       {isRoomModalOpen && (
         <CustomRoomModal
