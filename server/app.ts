@@ -45,7 +45,7 @@ export function createApp() {
   app.use(requestLogger)
   app.use(cors({
     origin:  config.server.allowedOrigins,
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   }))
   app.use(express.json({ limit: '10mb' }))
 

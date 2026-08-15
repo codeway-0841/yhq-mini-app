@@ -161,8 +161,8 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
   res.status(201).json({ success: true, count: recordsToInsert.length })
 }))
 
-// ── PUT /api/admin/questions/:id — tahrirlash ──
-router.put('/admin/questions/:id', validate({ body: QuestionUpsert }), wrap(async (req, res) => {
+// ── PUT / PATCH /api/admin/questions/:id — tahrirlash ──
+const handleQuestionUpdate = wrap(async (req, res) => {
   const id = Number(req.params.id)
   if (!Number.isInteger(id) || id <= 0) throw new AppError(400, "Noto'g'ri id")
   const body = req.body as UpsertBody
@@ -185,7 +185,10 @@ router.put('/admin/questions/:id', validate({ body: QuestionUpsert }), wrap(asyn
   questionsRepository.invalidateCache()
   await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.json({ id, updated: true })
-}))
+})
+
+router.put('/admin/questions/:id', validate({ body: QuestionUpsert }), handleQuestionUpdate)
+router.patch('/admin/questions/:id', validate({ body: QuestionUpsert }), handleQuestionUpdate)
 
 // ── DELETE /api/admin/questions/:id ──
 router.delete('/admin/questions/:id', wrap(async (req, res) => {

@@ -30,6 +30,14 @@ import { lessons } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
 import { useTestSession } from './hooks/useTestSession'
 
+function formatImageSrc(src?: string | null): string | undefined {
+  if (!src) return undefined
+  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('/')) {
+    return src
+  }
+  return `/${src}`
+}
+
 export default function TestPage() {
   const { id }   = useParams()
   const navigate = useNavigate()
@@ -585,7 +593,7 @@ export default function TestPage() {
               tabIndex={0}
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
               aria-label={tt('zoomImage')}>
-              <img src={q.image} alt={`${tt('question')} ${current + 1}`} loading="lazy"
+              <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="lazy"
                 className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
             </div>
           )}
@@ -699,8 +707,8 @@ export default function TestPage() {
           aria-modal="true"
           aria-label={tt('closeZoom')}
           tabIndex={0}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') setZoomed(false) }}>
-          <img src={q.image} alt={`${tt('question')} ${current + 1}`} className="max-w-full max-h-full object-contain" />
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(false) }}>
+          <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} className="max-w-full max-h-full object-contain" />
           <span className="absolute top-4 right-4 text-white/70 text-2xl px-2" aria-hidden="true">✕</span>
         </div>
       )}

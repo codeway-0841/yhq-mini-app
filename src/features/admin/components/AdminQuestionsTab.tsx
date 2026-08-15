@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import { api, type AdminDbQuestion, type DbTopic } from '../../../shared/api'
 import { SUBJECT_BASES, type SubjectId } from '../../../../shared/subjects'
+import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
 
@@ -211,6 +212,22 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                   <p className="text-[11px] text-muted">
                     To'g'ri javob: <b className="text-duo-green font-black">{q.correctAnswer}</b>
                   </p>
+                  {q.image && (
+                    <div className="mt-2 flex items-center gap-2">
+                      <img
+                        src={q.image}
+                        alt="Savol rasmi"
+                        className="w-12 h-12 object-cover rounded-xl border border-line bg-elevated"
+                        onError={(e) => {
+                          ;(e.target as HTMLElement).style.display = 'none'
+                        }}
+                      />
+                      <span className="text-[11px] font-bold text-duo-purple flex items-center gap-1">
+                        <ImageIcon size={12} />
+                        <span>Rasm biriktirilgan</span>
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="flex flex-col gap-1.5 flex-shrink-0">
                   <button
@@ -268,6 +285,9 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               setCreating(false)
               setEditing(null)
               await refresh()
+              // Synchronize client-side test questions store immediately!
+              await useQuestionsStore.getState().reload().catch(() => {})
+              showToast(editing ? "Savol muvaffaqiyatli yangilandi!" : "Yangi savol muvaffaqiyatli saqlandi!")
             } catch (e) {
               alert(e instanceof Error ? e.message : 'Xato')
             } finally {
@@ -302,6 +322,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                     await api.deleteQuestion(deleteConfirm.id)
                     setConfirm(null)
                     await refresh()
+                    await useQuestionsStore.getState().reload().catch(() => {})
                   } finally { setBusy(false) }
                 }}
                 className="btn-neon bg-duo-red w-full py-3.5 rounded-2xl font-black text-[14px] text-white mb-2 disabled:opacity-50"
@@ -326,9 +347,10 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           subjectName={currentSubjectObj.name}
           subjectIcon={currentSubjectObj.icon}
           onClose={() => setBulkImporting(false)}
-          onSuccess={(count) => {
+          onSuccess={async (count) => {
             showToast(`${count} ta savol muvaffaqiyatli yuklandi!`)
-            refresh()
+            await refresh()
+            await useQuestionsStore.getState().reload().catch(() => {})
           }}
         />
       )}
