@@ -6,7 +6,19 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 🖼️ Admin Savollar uchun Rasm Faylini To'g'ridan-To'g'ri Yuklash (Question Image File Upload)
+### 1. 🔍 Test Yechishda Interaktiv Rasm Kattalashtirish (Interactive Image Pinch & Zoom)
+* **Xususiyat:** Test yechish vaqtida yoki imtihon tahlilida savol rasmlarini to'liq ekranda 4x gacha kattalashtirib, batafsil ko'rish imkoniyati.
+* **Qulayliklar:**
+  * 🔍 **Ko'rgazmali indikator:** Test savolidagi rasm ustida "🔍 Kattalashtirish" tugmasi.
+  * 📱 **Pinch-to-zoom & Double-tap:** Ikki barmoq bilan cho'zish (Pinch) yoki 2 marta tez bosish (Double-tap) orqali kattalashtirish/kichraytirish.
+  * 🖐️ **Surish (Pan Dragging):** Kattalashtirilgan vaqtda rasmni barmoq yoki sichqoncha bilan erkin surib har bir detalni ko'rish.
+  * 🎛️ **Boshqaruv Paneli:** Zoom darajasi ko'rsatkichi (`150%`, `200%`, `400%`), `+` / `-` tugmalari va `100%` (Asliga qaytarish) tugmasi.
+  * 🖥️ **Sichqoncha g'ildiragi (Wheel Zoom):** Kompyuterda g'ildirakcha yordamida tezkor zoom.
+* **Fayllar:** `src/shared/components/ImageZoomModal.tsx`, `src/features/test/TestPage.tsx`, `src/features/test/components/ExamReviewModal.tsx`.
+
+---
+
+### 2. 🖼️ Admin Savollar uchun Rasm Faylini To'g'ridan-To'g'ri Yuklash (Question Image File Upload)
 * **Xususiyat:** Yangi savol yaratish va tahrirlashda tashqi URL qidirib o'tirmasdan, to'g'ridan-to'g'ri telefon galereyasidan yoki kompyuterdan rasm yuklash (JPG, PNG, WEBP).
 * **Qulayliklar:**
   * 📁 Faylni tanlash (Drag & drop yoki bosish).

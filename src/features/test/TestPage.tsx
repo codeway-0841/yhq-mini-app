@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2 } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn } from 'lucide-react'
+import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
@@ -587,14 +588,21 @@ export default function TestPage() {
             /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
                kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
                rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
-            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in flex items-center justify-center bg-elevated"
-              onClick={() => setZoomed(true)}
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in flex items-center justify-center bg-elevated relative group active:scale-[0.99] transition-transform"
+              onClick={() => {
+                setZoomed(true)
+                haptics.impact('light')
+              }}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="lazy"
                 className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
+              <div className="absolute top-2.5 right-2.5 bg-black/70 backdrop-blur-md text-white border border-white/20 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 shadow-lg pointer-events-none group-hover:bg-black/85 transition-all">
+                <ZoomIn size={11} className="text-duo-purple" />
+                <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
+              </div>
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
@@ -699,18 +707,13 @@ export default function TestPage() {
         />
       )}
 
-      {/* Full-screen image zoom */}
+      {/* Interactive pinch & pan image zoom modal */}
       {zoomed && q.image && (
-        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-2 cursor-zoom-out"
-          onClick={() => setZoomed(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-label={tt('closeZoom')}
-          tabIndex={0}
-          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(false) }}>
-          <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} className="max-w-full max-h-full object-contain" />
-          <span className="absolute top-4 right-4 text-white/70 text-2xl px-2" aria-hidden="true">✕</span>
-        </div>
+        <ImageZoomModal
+          src={formatImageSrc(q.image)!}
+          alt={`${tt('question')} ${current + 1}`}
+          onClose={() => setZoomed(false)}
+        />
       )}
     </div>
   )

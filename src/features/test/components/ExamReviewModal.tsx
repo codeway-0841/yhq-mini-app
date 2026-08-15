@@ -1,11 +1,20 @@
 import { useState } from 'react'
-import { X, CheckCircle2, XCircle, HelpCircle, BookOpen, GraduationCap, Check } from 'lucide-react'
+import { X, CheckCircle2, XCircle, HelpCircle, BookOpen, GraduationCap, Check, ZoomIn } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
 import type { Lang } from '../../../shared/i18n'
 import type { Question } from '../../../shared/api'
 import { lessons } from '../../../content/lessons'
 import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
+import ImageZoomModal from '../../../shared/components/ImageZoomModal'
+
+function formatImageSrc(src?: string | null): string | undefined {
+  if (!src) return undefined
+  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('/')) {
+    return src
+  }
+  return `/${src}`
+}
 
 export interface ExamReviewItem {
   question: Question
@@ -25,6 +34,7 @@ interface ExamReviewModalProps {
 export default function ExamReviewModal({ items, language, onClose }: ExamReviewModalProps) {
   const tt = useT(language)
   const navigate = useNavigate()
+  const [zoomedImage, setZoomedImage] = useState<string | null>(null)
 
   const wrongCount = items.filter((it) => it.status === 'incorrect' || it.status === 'unanswered').length
   const [filter, setFilter] = useState<'mistakes' | 'all'>(wrongCount > 0 ? 'mistakes' : 'all')
@@ -146,8 +156,15 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
                   {/* Image if available */}
                   {q.image && (
-                    <div className="mb-3 rounded-xl overflow-hidden border border-line bg-black/40 flex justify-center">
-                      <img src={q.image} alt={`Question ${item.index + 1}`} className="max-h-48 object-contain" />
+                    <div
+                      onClick={() => setZoomedImage(formatImageSrc(q.image) || null)}
+                      className="mb-3 rounded-xl overflow-hidden border border-line bg-black/40 flex justify-center relative group cursor-zoom-in active:scale-[0.99] transition-transform"
+                    >
+                      <img src={formatImageSrc(q.image)} alt={`Question ${item.index + 1}`} className="max-h-48 object-contain" />
+                      <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+                        <ZoomIn size={10} className="text-duo-purple" />
+                        <span>Kattalashtirish</span>
+                      </div>
                     </div>
                   )}
 
@@ -230,6 +247,15 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           </button>
         </div>
       </div>
+
+      {/* Fullscreen image zoom */}
+      {zoomedImage && (
+        <ImageZoomModal
+          src={zoomedImage}
+          alt="Savol rasmi"
+          onClose={() => setZoomedImage(null)}
+        />
+      )}
     </div>
   )
 }
