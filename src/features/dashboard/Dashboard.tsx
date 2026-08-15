@@ -112,6 +112,7 @@ export default function Dashboard() {
   const settings        = useAppStore((s) => s.settings)
   const totalCorrect    = useAppStore((s) => s.totalCorrect)
   const totalWrong      = useAppStore((s) => s.totalWrong)
+  const totalAnswered   = useAppStore((s) => s.totalAnswered)
   const savedQuestions  = useAppStore((s) => s.savedQuestions)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
   const subject         = useSubjectStore((s) => s.subject)

@@ -215,7 +215,7 @@ export default function App() {
             lastName: tgUser.last_name ?? '',
             username: tgUser.username ?? '',
             photoUrl: tgUser.photo_url ?? '',
-            phone: null,
+            phone: undefined,
             tariff: 'free',
             isAdmin: false,
           },
