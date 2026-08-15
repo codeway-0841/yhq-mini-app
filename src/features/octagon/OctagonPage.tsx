@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -8,6 +9,7 @@ import { SearchingScreen }  from './components/SearchingScreen'
 import { MatchedScreen }    from './components/MatchedScreen'
 import { RoundScreen }      from './components/RoundScreen'
 import { MatchEndScreen }   from './components/MatchEndScreen'
+import { CustomRoomModal }  from './components/CustomRoomModal'
 import { useOctagonClock }  from './hooks/useOctagonClock'
 import { useDuelConnection } from './hooks/useDuelConnection'
 
@@ -18,8 +20,10 @@ export default function OctagonPage() {
   const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
 
+  const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
+
   const { state: s, conn, duelCode, duelLink,
-          joinQueue, startDuel, cancelSearch, sendAnswer, retryConnect, exitToIdle } =
+          joinQueue, cancelSearch, sendAnswer, retryConnect, exitToIdle } =
     useDuelConnection(user)
   const { timeLeft, roundPct } = useOctagonClock(s.deadline)
 
@@ -38,7 +42,7 @@ export default function OctagonPage() {
       <div className="flex-1 flex flex-col items-center justify-center px-4">
         {s.phase === 'idle' && (
           <IdleScreen tt={tt} connFailed={conn === 'failed'}
-            onFind={() => joinQueue()} onDuelWithFriend={startDuel} />
+            onFind={() => joinQueue()} onDuelWithFriend={() => setIsRoomModalOpen(true)} />
         )}
 
         {s.phase === 'searching' && (
@@ -62,6 +66,15 @@ export default function OctagonPage() {
             onExit={exitToIdle} onRematch={() => joinQueue()} />
         )}
       </div>
+
+      {isRoomModalOpen && (
+        <CustomRoomModal
+          tt={tt}
+          onClose={() => setIsRoomModalOpen(false)}
+          onStartRoom={(pin) => joinQueue(pin)}
+          onJoinRoom={(pin) => joinQueue(pin)}
+        />
+      )}
     </div>
   )
 }

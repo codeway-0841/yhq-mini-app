@@ -44,8 +44,8 @@ const MAX_NAME_LEN        = 64
 // Reconnect grace oynasi + pauza byudjeti endi OctagonLimits'da (test-shrinkable):
 // DEFAULT_OCTAGON_LIMITS.reconnectWindowMs / pauseBudgetMs.
 
-/** Duel kod validatsiyasi: `duel-xxxxxx` faqat xavfsiz belgilar */
-const DUEL_CODE_RE = /^duel-[a-z0-9]{6,16}$/
+/** Duel / Xona PIN kod validatsiyasi: `duel-xxxxxx`, `room-xxxxxx`, 4-8 xonali PIN yoki xavfsiz belgilar */
+const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{4,16}|room-[a-z0-9]{4,16}|\d{4,8}|[a-z0-9]{4,12})$/i
 
 /** Canonical user id (Telegram raqam-string, telefon akkaunt 'p_<digits>' yoki email 'e_<hex>') */
 const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
@@ -715,9 +715,8 @@ export function attachOctagon(
             ? String(msg.subjectId)
             : DEFAULT_SUBJECT_ID
           // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
-          const duelCode = typeof msg.duelCode === 'string' && DUEL_CODE_RE.test(msg.duelCode)
-            ? msg.duelCode
-            : null
+          const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
+          const duelCode = rawCode && DUEL_CODE_RE.test(rawCode) ? rawCode : null
           if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
           else joinQueue(ws, uid, name, subjectId)
           return
