@@ -6,7 +6,22 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 💳 Click.uz To'lov Tizimi Integratsiyasi (O'zbek so'mida Premium Obuna)
+### 1. 🔔 Aqlli Telegram Bot Eslatmalari (Smart Retention Push Notifications)
+* **Xususiyat:** O'quvchilarni ilovaga qaytarish, o'rganish intizomi (Streak) uzilib qolishini oldini olish, haftalik liga natijalarini e'lon qilish va Premium tugashini eslatuvchi to'liq avtomatik push-eslatmalar tizimi.
+* **Avtomatik Eslatmalar Turlari:**
+  * 🔥 **Streak Himoyasi & Kunlik Mashq (`/cron/daily-reminder`):** Bugun mashq qilmagan o'quvchiga uning shaxsiy streak kunini (`🔥 Ali, 5 kunlik seriyangiz xavf ostida!`) ko'rsatib, 2 daqiqalik testga chaqirish.
+  * 👋 **Nofaollikni Qaytarish (`/cron/inactivity-reminder`):** 2-3 kun kirmagan o'quvchilarga do'stona motivatsion xabar va WebApp tugmasi.
+  * 🏆 **Haftalik Turnir & Liga Natijalari (`/cron/league-rollover`):** Dushanba kuni yuqori ligaga ko'tarilganlarni tabriklash (`🥇 Oltin ligasiga ko'tarildingiz!`) va yangi turnirga chorlash.
+  * 👑 **Premium Tugashi Ogohlantirishi (`/cron/premium-expiring`):** Premium muddati ertaga tugaydiganlarga eslatma va yangilash tugmasi.
+* **Sozlamalar & Nazorat:**
+  * ⚙️ **Foydalanuvchi Sozlamalari:** `SettingsModal.tsx` da "🔔 Telegram xabarnomalari" tugmasi orqali o'quvchi eslatmalarni yoqib/o'chirib qo'yishi mumkin (`notificationsEnabled`).
+  * 🛠️ **Admin Jonli Sinov:** Admin panel `AdminBroadcastTab.tsx` dan bir marta bosishda Streak, Inactivity, Liga va Premium namunalarini o'zining Telegramiga yuborib ko'rish imkoniyati.
+  * 🛡️ **Telegram Limit Himoyasi:** 20 talik xavfsiz batching, 50ms kechikish va bloklangan botlarni toza filtrlash.
+* **Fayllar:** `server/modules/notifications/retention.service.ts`, `server/modules/cron/cron.router.ts`, `server/modules/admin/admin.router.ts`, `src/shared/components/SettingsModal.tsx`, `src/features/admin/components/AdminBroadcastTab.tsx`.
+
+---
+
+### 2. 💳 Click.uz To'lov Tizimi Integratsiyasi (O'zbek so'mida Premium Obuna)
 * **Xususiyat:** Foydalanuvchilar o'zbek so'mida (Uzcard / Humo plastik kartalari, Click ilovasi yoki veb orqali) 1 oylik, 1 yillik yoki umrbod Premium obunani bir zumda sotib olishlari mumkin.
 * **Narxlar (SSOT `shared/premium-plans.ts`):**
   * 📅 **Oylik (30 kun):** `29 000 so'm` (yoki ⭐ 99 Stars)

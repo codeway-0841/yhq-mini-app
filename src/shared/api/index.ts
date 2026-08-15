@@ -134,6 +134,7 @@ export interface ApiSettings {
   language: 'uz' | 'ru'
   theme: 'dark' | 'light' | 'system'
   offlineMode: boolean
+  notificationsEnabled?: boolean
   dailyReminder?: boolean
   dailyReminderTime?: string
 }
@@ -470,6 +471,9 @@ export const api = {
       failed: number
       durationMs: number
     }>('POST', '/admin/broadcast', data),
+
+  sendRetentionTest: (data: { type: 'streak' | 'inactivity' | 'league' | 'premium_expiring'; targetTelegramId?: string }) =>
+    request<{ ok: boolean; message: string }>('POST', '/admin/retention/test', data),
 
   // ── Payments & Orders (Click.uz) ──────────────────────────────────────────
   createPaymentOrder: (data: { plan: string; provider?: 'click'; returnUrl?: string }) =>

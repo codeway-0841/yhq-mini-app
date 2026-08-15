@@ -208,6 +208,7 @@ const UZ = {
   dailyReminder: "Kunlik eslatma",
   dailyReminderDesc: "Har kuni test yechish va seriyani saqlash eslatmasi",
   dailyReminderTime: "Eslatma vaqti",
+  telegramNotifications: "Telegram xabarnomalari",
   notifStreakTitle: "🔥 Seriyangizni yo'qotmang!",
   // Anti-Cheat
   antiCheatWarningTitle: "⚠️ Imtihon qoidabuzarligi!",
@@ -440,6 +441,7 @@ const RU: Record<Keys, string> = {
   dailyReminder: "Ежедневное напоминание",
   dailyReminderDesc: "Напоминание о тренировках и сохранении серии",
   dailyReminderTime: "Время напоминания",
+  telegramNotifications: "Telegram уведомления",
   notifStreakTitle: "🔥 Не потеряйте вашу серию!",
   // Anti-Cheat
   antiCheatWarningTitle: "⚠️ Нарушение правил экзамена!",

@@ -343,6 +343,7 @@ export const userSettings = pgTable('settings', {
   language:        languageEnum('language').default('uz').notNull(),
   theme:           themeEnum('theme').default('dark').notNull(),
   offlineMode:     boolean('offline_mode').default(false).notNull(),
+  notificationsEnabled: boolean('notifications_enabled').default(true).notNull(),
 })
 
 /**

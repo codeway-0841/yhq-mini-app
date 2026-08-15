@@ -42,6 +42,7 @@ export const SettingsPatchSchema = z.object({
   noAnimation:     z.boolean().optional(),
   shuffleOptions:  z.boolean().optional(),
   offlineMode:     z.boolean().optional(),
+  notificationsEnabled: z.boolean().optional(),
   fontSize:        z.enum(['small', 'medium', 'large']).optional(),
   fontStyle:       z.enum(['default', 'serif', 'mono']).optional(),
   language:        z.enum(['uz', 'ru']).optional(),

@@ -180,6 +180,12 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
               }} />
           </Row>
 
+          {/* Telegram bot xabarnomalari (Streak & Turnir eslatmalari) */}
+          <Row icon={Bell} iconColor="var(--p-primary)" label={tt('telegramNotifications')}>
+            <Toggle checked={local.notificationsEnabled !== false}
+              onChange={(c) => set('notificationsEnabled', c)} />
+          </Row>
+
           {/* Eslatma vaqti — faqat eslatma yoqiq bo'lsa */}
           {local.dailyReminder !== false && (
             <button className="w-full text-left" onClick={() => setPicker('reminderTime')} aria-label={`${tt('dailyReminderTime')}: ${local.dailyReminderTime || '20:00'}`}>

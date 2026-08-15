@@ -13,20 +13,22 @@
  */
 
 import { Router } from 'express'
-import { Bot, InlineKeyboard } from 'grammy'
-import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
+import { lt, gte, eq, and, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords, progress, dailyStreaks, answerTokens, leagueRolloverLog, rateLimits } from '../../schema'
-import { config } from '../../config'
+import { progress, dailyRecords, answerTokens, leagueRolloverLog, rateLimits } from '../../schema'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 import { cronRepository } from './cron.repository'
+import {
+  sendStreakReminder,
+  sendInactivityReactivation,
+  sendLeagueResultsNotification,
+  sendPremiumExpiringReminder,
+} from '../notifications/retention.service'
 
 const router = Router()
 
 router.use('/cron', requireCronSecret)
-
-const APP_URL = `${config.deploy.appUrl}?v=${config.deploy.buildId}`
 
 /** 'YYYY-MM-DD' — Asia/Tashkent (foydalanuvchi vaqt zonasi) */
 function tashkentDate(daysAgo = 0): string {
@@ -34,15 +36,11 @@ function tashkentDate(daysAgo = 0): string {
   return d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tashkent' })
 }
 
-// Vercel Cron scheduled requests use GET; secret middleware is the trust boundary.
+/**
+ * 1. Vercel Cron — kunlik Streak & Mashq eslatmasi (har kuni soat 19:00 Toshkent = 14:00 UTC).
+ */
 router.get('/cron/daily-reminder', async (_req, res) => {
-  const token = config.telegram.botToken
-  if (!token) {
-    res.status(500).json({ error: 'BOT_TOKEN not set' })
-    return
-  }
-
-  const today  = tashkentDate()
+  const today = tashkentDate()
   const acquired = await cronRepository.tryStart('daily-reminder', today)
   if (!acquired) {
     res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
@@ -50,75 +48,53 @@ router.get('/cron/daily-reminder', async (_req, res) => {
   }
 
   try {
-    const cutoff = tashkentDate(14)
-
-    // So'nggi 14 kunda faol foydalanuvchilar
-    const recent = await db
-      .selectDistinct({ userId: dailyRecords.userId })
-      .from(dailyRecords)
-      .where(gte(dailyRecords.date, cutoff))
-
-    // Bugun allaqachon faol — ularga eslatma kerak emas
-    const activeToday = await db
-      .selectDistinct({ userId: dailyRecords.userId })
-      .from(dailyRecords)
-      .where(eq(dailyRecords.date, today))
-
-    const done = new Set(activeToday.map((r) => r.userId))
-    // FAQAT Telegram-linked userlar (raqam-string id) — telefon+parol akkauntlarida
-    // ('p_<digits>') TG chat yo'q, ularga SMS yog'och emas: xabar yuborib bo'lmaydi.
-    const targets = [...new Set(recent.map((r) => r.userId))]
-      .filter((uid) => !done.has(uid) && /^\d+$/.test(uid))
-
-    // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
-    const streakRows = targets.length > 0
-      ? await db.select({ userId: dailyStreaks.userId, streak: sql<number>`MAX(${dailyStreaks.streak})` })
-          .from(dailyStreaks)
-          .where(inArray(dailyStreaks.userId, targets))
-          .groupBy(dailyStreaks.userId)
-      : []
-    const streakOf = new Map(streakRows.map((r) => [r.userId, Number(r.streak)]))
-
-    const bot = new Bot(token)
-    const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
-    const textFor = (uid: string) => {
-      const s = streakOf.get(uid) ?? 0
-      if (s > 0) {
-        return (
-          `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +
-          `Bugun hali mashq qilmadingiz — 2 daqiqalik test seriyangizni saqlab qoladi. ` +
-          `1 kun o'tkazilsa intizom 0 ga tushadi!`
-        )
-      }
-      return (
-        `🔥 Bugungi mashqni qolmang!\n\n` +
-        `2 daqiqalik kichik test — katta natijaga birinchi qadam. ` +
-        `Har kuni 1 savol = intizom seriyasi!`
-      )
-    }
-
-    let sent = 0, blocked = 0, failed = 0
-    // Telegram limiti (~30 msg/s) uchun 20 talik batch'lar (har userga personalized matn)
-    for (let i = 0; i < targets.length; i += 20) {
-      const batch = targets.slice(i, i + 20)
-      const results = await Promise.allSettled(
-        batch.map((uid) => bot.api.sendMessage(Number(uid), textFor(uid), { reply_markup: keyboard() })),
-      )
-      for (const r of results) {
-        if (r.status === 'fulfilled') sent++
-        else {
-          const desc = String(r.reason?.description ?? r.reason)
-          if (desc.includes('bot was blocked') || desc.includes('chat not found')) blocked++
-          else failed++
-        }
-      }
-    }
-
-    const result = { date: today, targets: targets.length, sent, blocked, failed }
-    await cronRepository.complete('daily-reminder', today, result)
-    res.json({ ok: true, ...result })
+    const result = await sendStreakReminder()
+    await cronRepository.complete('daily-reminder', today, result as unknown as Record<string, unknown>)
+    res.json({ ok: true, ...result, date: today })
   } catch (err) {
     await cronRepository.complete('daily-reminder', today, { error: String(err) }).catch(() => {})
+    res.status(500).json({ ok: false, error: String(err) })
+  }
+})
+
+/**
+ * 2. Vercel Cron — nofaol o'quvchilarni qaytarish (har kuni soat 12:00 Toshkent = 07:00 UTC).
+ */
+router.get('/cron/inactivity-reminder', async (_req, res) => {
+  const today = tashkentDate()
+  const acquired = await cronRepository.tryStart('inactivity-reminder', today)
+  if (!acquired) {
+    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
+    return
+  }
+
+  try {
+    const result = await sendInactivityReactivation()
+    await cronRepository.complete('inactivity-reminder', today, result as unknown as Record<string, unknown>)
+    res.json({ ok: true, ...result, date: today })
+  } catch (err) {
+    await cronRepository.complete('inactivity-reminder', today, { error: String(err) }).catch(() => {})
+    res.status(500).json({ ok: false, error: String(err) })
+  }
+})
+
+/**
+ * 3. Vercel Cron — obuna tugashini eslatish (har kuni soat 10:00 Toshkent = 05:00 UTC).
+ */
+router.get('/cron/premium-expiring', async (_req, res) => {
+  const today = tashkentDate()
+  const acquired = await cronRepository.tryStart('premium-expiring', today)
+  if (!acquired) {
+    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
+    return
+  }
+
+  try {
+    const result = await sendPremiumExpiringReminder()
+    await cronRepository.complete('premium-expiring', today, result as unknown as Record<string, unknown>)
+    res.json({ ok: true, ...result, date: today })
+  } catch (err) {
+    await cronRepository.complete('premium-expiring', today, { error: String(err) }).catch(() => {})
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
@@ -239,6 +215,12 @@ router.get('/cron/league-rollover', async (_req, res) => {
     const demoted  = plan.filter((p) => lvl(p.toLeague) < lvl(p.fromLeague)).length
     const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted }
     await cronRepository.complete('league-rollover', wPrev, result)
+
+    // Notify users about league changes in background (non-blocking)
+    if (plan.length > 0) {
+      sendLeagueResultsNotification(plan).catch((e) => console.error('[league-rollover] notification error:', e))
+    }
+
     res.json({ ok: true, ...result })
   } catch (err) {
     // RETRY-SAFE: davr 'completed'ga BELGILANMAYDI — jobRuns 'running' qoladi,

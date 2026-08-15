@@ -97,6 +97,7 @@ const DEFAULT_SETTINGS: ApiSettings = {
   language:          'uz',
   theme:             'dark',
   offlineMode:       true,   // eski default (false) noto'g'ri edi — SW avval hamma uchun ishlardi
+  notificationsEnabled: true,
   dailyReminder:     true,
   dailyReminderTime: '20:00',
 }

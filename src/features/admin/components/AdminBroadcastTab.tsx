@@ -263,6 +263,31 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
     }
   }
 
+  const [retentionLoading, setRetentionLoading] = useState<string | null>(null)
+  const [retentionSuccess, setRetentionSuccess] = useState<string | null>(null)
+
+  const handleTestRetention = async (type: 'streak' | 'inactivity' | 'league' | 'premium_expiring') => {
+    if (!currentUserId || !/^\d+$/.test(currentUserId)) {
+      alert("Test eslatma yuborish uchun profilingiz Telegram orqali ulangan bo'lishi kerak")
+      return
+    }
+    setRetentionLoading(type)
+    setRetentionSuccess(null)
+    try {
+      const res = await api.sendRetentionTest({ type, targetTelegramId: currentUserId })
+      if (res.ok) {
+        playSound('win')
+        haptics.notify('success')
+        setRetentionSuccess("Namunaviy xabarnoma Telegramingizga yuborildi!")
+        setTimeout(() => setRetentionSuccess(null), 4000)
+      }
+    } catch (err: any) {
+      alert(err?.message || 'Xatolik yuz berdi')
+    } finally {
+      setRetentionLoading(null)
+    }
+  }
+
   return (
     <div className="p-4 space-y-5">
       {confetti && <Confetti />}
@@ -626,6 +651,74 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
           </>
         )}
       </button>
+
+      {/* ── RETENTION SMART NOTIFICATIONS MANAGEMENT & TEST ── */}
+      <div className="rounded-2xl bg-surface border border-line p-4 space-y-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-duo-yellow/15 border border-duo-yellow/30 flex items-center justify-center text-duo-yellow">
+              <Zap size={16} />
+            </div>
+            <div>
+              <h3 className="text-xs font-black text-fg">Aqlli Eslatmalar (Avtomatik Cron)</h3>
+              <p className="text-[11px] text-muted">O'quvchilarni ilovaga qaytaruvchi avtomatik bot xabarnomalari</p>
+            </div>
+          </div>
+        </div>
+
+        {retentionSuccess && (
+          <div className="p-3 rounded-xl bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-bold flex items-center gap-2">
+            <CheckCircle2 size={16} />
+            <span>{retentionSuccess}</span>
+          </div>
+        )}
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+          <button
+            type="button"
+            disabled={retentionLoading !== null}
+            onClick={() => handleTestRetention('streak')}
+            className="p-3 rounded-xl bg-card border border-line hover:border-duo-purple/40 active:scale-95 transition-all text-left group disabled:opacity-50"
+          >
+            <span className="text-base block mb-1">🔥</span>
+            <span className="text-xs font-bold text-fg block group-hover:text-duo-purple">Streak Eslatma</span>
+            <span className="text-[10px] text-muted block mt-0.5">Test xabarini ko'rish</span>
+          </button>
+
+          <button
+            type="button"
+            disabled={retentionLoading !== null}
+            onClick={() => handleTestRetention('inactivity')}
+            className="p-3 rounded-xl bg-card border border-line hover:border-duo-purple/40 active:scale-95 transition-all text-left group disabled:opacity-50"
+          >
+            <span className="text-base block mb-1">👋</span>
+            <span className="text-xs font-bold text-fg block group-hover:text-duo-purple">Qaytarish (Inactivity)</span>
+            <span className="text-[10px] text-muted block mt-0.5">Test xabarini ko'rish</span>
+          </button>
+
+          <button
+            type="button"
+            disabled={retentionLoading !== null}
+            onClick={() => handleTestRetention('league')}
+            className="p-3 rounded-xl bg-card border border-line hover:border-duo-purple/40 active:scale-95 transition-all text-left group disabled:opacity-50"
+          >
+            <span className="text-base block mb-1">🏆</span>
+            <span className="text-xs font-bold text-fg block group-hover:text-duo-purple">Liga Natijasi</span>
+            <span className="text-[10px] text-muted block mt-0.5">Test xabarini ko'rish</span>
+          </button>
+
+          <button
+            type="button"
+            disabled={retentionLoading !== null}
+            onClick={() => handleTestRetention('premium_expiring')}
+            className="p-3 rounded-xl bg-card border border-line hover:border-duo-purple/40 active:scale-95 transition-all text-left group disabled:opacity-50"
+          >
+            <span className="text-base block mb-1">👑</span>
+            <span className="text-xs font-bold text-fg block group-hover:text-duo-purple">Premium Tugashi</span>
+            <span className="text-[10px] text-muted block mt-0.5">Test xabarini ko'rish</span>
+          </button>
+        </div>
+      </div>
 
       {/* Confirmation Modal */}
       {confirmOpen && (

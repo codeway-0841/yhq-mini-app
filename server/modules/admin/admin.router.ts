@@ -432,4 +432,23 @@ router.post(
   }),
 )
 
+// ── RETENTION PUSH NOTIFICATIONS ADMIN ENDPOINTS ──
+
+const RetentionTestSchema = z.object({
+  type: z.enum(['streak', 'inactivity', 'league', 'premium_expiring']),
+  targetTelegramId: z.string().optional(),
+})
+
+router.post(
+  '/admin/retention/test',
+  validate({ body: RetentionTestSchema }),
+  wrap(async (req: any, res) => {
+    const { type, targetTelegramId } = req.body as z.infer<typeof RetentionTestSchema>
+    const adminUserId = targetTelegramId || req.userId
+    const { sendTestNotificationToAdmin } = await import('../notifications/retention.service')
+    const result = await sendTestNotificationToAdmin(adminUserId, type)
+    res.json(result)
+  }),
+)
+
 export default router
