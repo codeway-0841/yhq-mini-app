@@ -73,7 +73,7 @@ export const progressRepository = {
       ), prog AS (
         UPDATE progress SET
           total_correct  = CASE
-            WHEN ${correct} AND ${qKey}::text IS NOT NULL AND solved_questions @> jsonb_build_array(${qKey}::text)
+            WHEN ${correct} AND ${qKey}::text IS NOT NULL AND COALESCE(solved_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text)
               THEN total_correct
             WHEN ${correct}
               THEN total_correct + 1
@@ -83,18 +83,18 @@ export const progressRepository = {
           total_answered = total_answered + 1,
           streak         = CASE WHEN ${correct} THEN streak + 1 ELSE 0 END,
           wrong_by_ticket = CASE
-            WHEN ${qKey}::text IS NULL THEN wrong_by_ticket
-            WHEN ${correct} THEN wrong_by_ticket - ${qKey}::text
+            WHEN ${qKey}::text IS NULL THEN COALESCE(wrong_by_ticket, '{}'::jsonb)
+            WHEN ${correct} THEN COALESCE(wrong_by_ticket, '{}'::jsonb) - ${qKey}::text
             ELSE jsonb_set(
-              wrong_by_ticket,
+              COALESCE(wrong_by_ticket, '{}'::jsonb),
               ${qPath}::text[],
-              (COALESCE((wrong_by_ticket->>${qKey}::text)::int, 0) + 1)::text::jsonb
+              (COALESCE((COALESCE(wrong_by_ticket, '{}'::jsonb)->>${qKey}::text)::int, 0) + 1)::text::jsonb
             )
           END,
           solved_questions = CASE
-            WHEN ${qKey}::text IS NULL THEN solved_questions
-            WHEN solved_questions @> jsonb_build_array(${qKey}::text) THEN solved_questions
-            ELSE solved_questions || jsonb_build_array(${qKey}::text)
+            WHEN ${qKey}::text IS NULL THEN COALESCE(solved_questions, '[]'::jsonb)
+            WHEN COALESCE(solved_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text) THEN COALESCE(solved_questions, '[]'::jsonb)
+            ELSE COALESCE(solved_questions, '[]'::jsonb) || jsonb_build_array(${qKey}::text)
           END,
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
@@ -124,7 +124,7 @@ export const progressRepository = {
               THEN daily_streaks.streak + 1
             ELSE 1
           END,
-          last_daily_date = GREATEST(daily_streaks.last_daily_date, EXCLUDED.last_daily_date),
+          last_daily_date = GREATEST(COALESCE(daily_streaks.last_daily_date, EXCLUDED.last_daily_date), EXCLUDED.last_daily_date),
           updated_at = now()
         RETURNING streak
       )
@@ -144,9 +144,7 @@ export const progressRepository = {
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
-    // updated=false → daily_yozuvlar yozilmagan, streak NULL qoladi — router 404 qaytaradi.
-    const dailyStreak = streakRaw == null ? null : Number(streakRaw)
-    if (updated && !Number.isFinite(dailyStreak)) throw new Error('recordAnswer returned no streak value')
+    const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : (updated ? 1 : null)
     return { updated, dailyStreak, duplicate: false }
   },
 
