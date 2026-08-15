@@ -33,7 +33,7 @@ export class ApiError extends Error {
  * Timeout signal compatible with older Telegram WebViews
  * (AbortSignal.timeout is not available everywhere).
  */
-async function request<T>(method: string, path: string, body?: unknown): Promise<T> {
+async function request<T>(method: string, path: string, body?: unknown, timeoutMs = TIMEOUT_MS): Promise<T> {
   const headers: Record<string, string> = {}
   if (body) headers['Content-Type'] = 'application/json'
   // Auth credential TANLOVI: initData (Mini App) USTUVOR — ikkalovidan FAQAT biri
@@ -48,7 +48,7 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
   }
 
   const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
+  const timer = setTimeout(() => controller.abort(), timeoutMs)
   let res: Response
   try {
     res = await fetch(`${BASE}${path}`, {
@@ -57,6 +57,15 @@ async function request<T>(method: string, path: string, body?: unknown): Promise
       body: body ? JSON.stringify(body) : undefined,
       signal: controller.signal,
     })
+  } catch (err: any) {
+    if (controller.signal.aborted) {
+      throw new ApiError(
+        408,
+        `So'rov vaqti tugadi (${Math.round(timeoutMs / 1000)} soniya). Iltimos, qayta urinib ko'ring.`,
+        'timeout'
+      )
+    }
+    throw err
   } finally {
     clearTimeout(timer)
   }
@@ -417,7 +426,7 @@ export const api = {
       topicId?: number | null
     }>
   }) =>
-    request<{ ok?: boolean; success?: boolean; count: number }>('POST', '/admin/questions/bulk-import', data),
+    request<{ ok?: boolean; success?: boolean; count: number }>('POST', '/admin/questions/bulk-import', data, 90_000),
 
   // ── Promo codes ───────────────────────────────────────────────────────────
   redeemPromo: (code: string) =>
@@ -469,7 +478,7 @@ export const api = {
       blocked: number
       failed: number
       durationMs: number
-    }>('POST', '/admin/broadcast', data),
+    }>('POST', '/admin/broadcast', data, 90_000),
 
   generateAiQuestions: (data: {
     mode: 'custom_text' | 'topic'
@@ -491,7 +500,7 @@ export const api = {
         correctAnswer: string
         explanation?: string
       }>
-    }>('POST', '/admin/ai/generate-questions', data),
+    }>('POST', '/admin/ai/generate-questions', data, 90_000),
   // ── Payments & Orders (Click.uz) ──────────────────────────────────────────
   createPaymentOrder: (data: { plan: string; provider?: 'click'; returnUrl?: string }) =>
     request<{
