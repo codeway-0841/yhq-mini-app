@@ -49,10 +49,9 @@ router.post(
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
 
     // POST-ANSWER REVEAL: correctAnswer endi public /questions'da yo'q —
-    // client feedback uchun FAQAT javob bergandan keyin shu yerda oladi.
-    // (Reveal "bepul" emas: har reveal attempt sifatida hisobga olingan.)
+    // client feedback uchun javob bergandan keyin shu yerda oladi.
     if (duplicate) {
-      res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
+      res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak: null, duplicate: true })
       return
     }
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })

@@ -242,7 +242,7 @@ export default function TestPage() {
         return
       }
 
-      if (!outcome) {
+      if (!outcome || outcome.correct === null || outcome.correctAnswer === null) {
         // Offline — javob outbox'ga yozildi; internet qaytganda server
         // tekshirib counterlarni yangilaydi. Indigo "pending" holat qoladi.
         setAnswers((prev) => { const next = [...prev]; next[idx] = 'pending'; return next })
@@ -250,11 +250,7 @@ export default function TestPage() {
         setTimeout(() => setToast(null), 2500)
         return
       }
-      if (outcome.duplicate || outcome.correct === null || outcome.correctAnswer === null) {
-        // Idempotent replay — counterlar qayta yozilmagan va reveal qaytarilmaydi;
-        // holatni o'zgartirmaymiz (no-op).
-        return
-      }
+
       const isCorrect: boolean = outcome.correct
       const revealed: string = outcome.correctAnswer
       setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
