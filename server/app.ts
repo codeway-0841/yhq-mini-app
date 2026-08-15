@@ -36,6 +36,7 @@ import cronRouter        from './modules/cron/cron.router'
 import achievementsRouter from './modules/achievements/achievements.router'
 import tutorRouter        from './modules/tutor/tutor.router'
 import adminRouter        from './modules/admin/admin.router'
+import promoRouter        from './modules/promo/promo.router'
 
 export function createApp() {
   const app = express()
@@ -102,6 +103,7 @@ export function createApp() {
   app.use('/api', achievementsRouter)
   app.use('/api', tutorRouter)
   app.use('/api', adminRouter)
+  app.use('/api', promoRouter)
 
   // 404 catch-all for unmatched /api routes
   app.use('/api', (_req, res) => {

@@ -5,7 +5,7 @@ import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload,
+  BarChart2, CloudUpload, Ticket,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -17,6 +17,7 @@ import Toggle from '../../shared/components/Toggle'
 import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
+import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { AchievementsSection } from './components/AchievementsSection'
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
@@ -48,6 +49,7 @@ export default function Profil() {
   const [showPhotoEdit, setShowPhotoEdit] = useState(false)
   const [showLangPicker, setShowLangPicker]   = useState(false)
   const [showThemePicker, setShowThemePicker] = useState(false)
+  const [showPromoModal, setShowPromoModal]   = useState(false)
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -212,6 +214,14 @@ export default function Profil() {
           right={<span className="text-[12px] text-muted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
 
+        <Item
+          icon={Ticket}
+          iconColor="#a855f7"
+          label={tt('promoCodeTitle')}
+          right={<ChevronRight size={16} className="text-muted" />}
+          onPress={() => setShowPromoModal(true)}
+        />
+
         <Item icon={BarChart2} label={settings.language === 'ru' ? 'Статистика' : 'Statistika'}
           onPress={() => navigate('/statistika')} />
 
@@ -317,6 +327,14 @@ export default function Profil() {
           ]}
           onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
           onClose={() => setShowThemePicker(false)}
+        />
+      )}
+
+      {/* Promokod kiritish modali */}
+      {showPromoModal && (
+        <PromoCodeModal
+          language={settings.language}
+          onClose={() => setShowPromoModal(false)}
         />
       )}
 

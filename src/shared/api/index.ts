@@ -402,6 +402,16 @@ export const api = {
     request<void>('DELETE', `/admin/questions/${id}`),
   getQuestionsMeta: () =>
     request<{ total: number; withTopic: number }>('GET', '/admin/questions/meta'),
+
+  // ── Promo codes ───────────────────────────────────────────────────────────
+  redeemPromo: (code: string) =>
+    request<{
+      success: boolean
+      type: string
+      value: number
+      premiumUntil: string | null
+      tariff: 'free' | 'premium'
+    }>('POST', '/promo/redeem', { code }),
 }
 
 /** POST /result javobi — SERVER tekshiruvi (client endi to'g'ri javobni bilmaydi). */

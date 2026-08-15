@@ -227,6 +227,18 @@ const UZ = {
   filterOnlyMistakes: "Faqat xatolar",
   filterAllQuestions: "Barcha savollar",
   ruleExplanation: "Qoida izohi",
+  // Promo codes
+  promoCode: "Promokod",
+  promoCodeTitle: "Promokod faollashtirish",
+  promoCodeDesc: "Avtomaktab yoki aksiya promokodini kiriting va bepul Premium oling",
+  promoCodePlaceholder: "Masalan: AVTO2026",
+  promoCodeActivateBtn: "Faollashtirish",
+  promoCodeSuccessTitle: "Tabriklaymiz! Premium faollashdi!",
+  promoCodeHavePromo: "Promokodingiz bormi?",
+  promoCodeInvalid: "Promokod topilmadi yoki xato kiritildi",
+  promoCodeAlreadyUsed: "Siz bu promokodni avval ishlatgansiz",
+  promoCodeExpired: "Promokodning amal qilish muddati tugagan",
+  promoCodeLimitReached: "Promokoddan foydalanish limiti tugagan",
 } as const
 
 type Keys = keyof typeof UZ
@@ -447,6 +459,18 @@ const RU: Record<Keys, string> = {
   filterOnlyMistakes: "Только ошибки",
   filterAllQuestions: "Все вопросы",
   ruleExplanation: "Объяснение правила",
+  // Promo codes
+  promoCode: "Промокод",
+  promoCodeTitle: "Активация промокода",
+  promoCodeDesc: "Введите промокод автошколы или акции и получите бесплатный Премиум",
+  promoCodePlaceholder: "Например: AVTO2026",
+  promoCodeActivateBtn: "Активировать",
+  promoCodeSuccessTitle: "Поздравляем! Премиум активирован!",
+  promoCodeHavePromo: "У вас есть промокод?",
+  promoCodeInvalid: "Промокод не найден или введен неверно",
+  promoCodeAlreadyUsed: "Вы уже использовали этот промокод",
+  promoCodeExpired: "Срок действия промокода истек",
+  promoCodeLimitReached: "Лимит использований промокода исчерпан",
 }
 
 const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

@@ -548,4 +548,38 @@ export const dailyRecords = pgTable('daily_records', {
   check('chk_daily_record_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 
+/**
+ * Promokodlar — avtomaktablar, aksiyalar va hamkorlar uchun.
+ * type='premium_days' (masalan value=30 -> 30 kunlik Premium).
+ */
+export const promoCodes = pgTable('promo_codes', {
+  id: serial('id').primaryKey(),
+  code: text('code').notNull(),
+  type: text('type').notNull().default('premium_days'),
+  value: integer('value').notNull(),
+  maxUses: integer('max_uses'),
+  usedCount: integer('used_count').default(0).notNull(),
+  expiresAt: timestamp('expires_at'),
+  isActive: boolean('is_active').default(true).notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_promo_code').on(t.code),
+  check('chk_promo_value_positive', sql`${t.value} > 0`),
+  check('chk_promo_used_count_nonnegative', sql`${t.usedCount} >= 0`),
+])
+
+/**
+ * Promokod ishlatilganlik yozuvlari — 1 kishi 1 marta ishlatishi uchun.
+ */
+export const promoCodeRedemptions = pgTable('promo_code_redemptions', {
+  id: serial('id').primaryKey(),
+  promoCodeId: integer('promo_code_id').notNull().references(() => promoCodes.id, { onDelete: 'cascade' }),
+  userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  redeemedAt: timestamp('redeemed_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_promo_redemption').on(t.promoCodeId, t.userId),
+  index('idx_promo_redemptions_user').on(t.userId),
+])
+
+
 

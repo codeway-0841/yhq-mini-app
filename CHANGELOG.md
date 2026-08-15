@@ -6,7 +6,16 @@ Loyiha bo'yicha amalga oshirilgan barcha yangiliklar, tuzatishlar va yangi funks
 
 ## 🚀 So'nggi Yangilanishlar (2026-08-15)
 
-### 1. 📊 Imtihondan Keyingi Chuqur Tahlil & Xatolar Ustida Ishlash (Exam Review)
+### 1. 🎟️ Promokodlar Tizimi (Promo Code System)
+* **Xususiyat:** Avtomaktablar, aksiyalar va hamkorlar uchun foydalanuvchilarga bepul Premium obuna va bonuslar taqdim etuvchi xavfsiz Promokodlar tizimi.
+* **Xavfsizlik & Cheklovlar:** 1 kishi 1 marta ishlatish cheklovi (`promo_code_redemptions`), amal qilish muddati (`expires_at`), umumiy son limiti (`max_uses`), 1 daqiqada 5 ta urinishdan ortiq kiritishni bloklovchi anti-spam (Rate Limiter).
+* **Mavjud muddatga qo'shilish:** Agar foydalanuvchida allaqachon faol Premium bo'lsa, yangi kunlar mavjud muddat ustiga qo'shiladi.
+* **Interfeys:** Profil va Premium sahifalarida "🎟 Promokod faollashtirish" oynasi (`PromoCodeModal.tsx`), Confetti salyuti va darhol hisobni Premium qilish.
+* **Fayllar:** `server/schema.ts`, `server/modules/promo/promo.router.ts`, `server/modules/promo/promo.repository.ts`, `src/shared/components/PromoCodeModal.tsx`, `src/features/profile/Profil.tsx`, `src/features/premium/PremiumPage.tsx`, `tests/unit/modules/promo.test.ts`.
+
+---
+
+### 2. 📊 Imtihondan Keyingi Chuqur Tahlil & Xatolar Ustida Ishlash (Exam Review)
 * **Xususiyat:** Imtihon yakunlangach, natijalar oynasiga **"Xatolarni tahlil qilish"** (Exam Review) tugmasi qo'shildi.
 * **Tahlil Modali:** Barcha savollar yoki faqat xatolar filtri, foydalanuvchining xato javobi (✗ Qizil), to'g'ri javob (✓ Yashil), mavzu nomi, qoida izohi ("Nega shunday?") va to'g'ridan-to'g'ri darslikka o'tish tugmasi.
 * **Diagnostika:** Barcha imtihon turlarida (YHQ 40 talik, Milliy sertifikat, Attestatsiya, Mock) mavzular kesimidagi tahlil progress barlari bilan to'liq ochildi.

@@ -7,7 +7,7 @@
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft, Gift, Loader2 } from 'lucide-react'
+import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft, Gift, Loader2, Ticket } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -18,6 +18,7 @@ import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PlanKey } from '../../../shared/pre
 import { playSound } from '../../shared/lib/sounds'
 import { track } from '../../shared/lib/analytics'
 import Confetti from '../../shared/components/Confetti'
+import PromoCodeModal from '../../shared/components/PromoCodeModal'
 
 const BENEFITS = [
   { icon: Sparkles,   color: 'var(--p-gold)',    uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
@@ -37,6 +38,7 @@ export default function PremiumPage() {
   const [trialBusy, setTrialBusy]   = useState(false)
   const [trialDone, setTrialDone]   = useState(false)
   const [trialError, setTrialError] = useState<string | null>(null)
+  const [showPromoModal, setShowPromoModal] = useState(false)
   const userId = useAppStore((s) => s.user?.id)
   const syncFromServer = useAppStore((s) => s.syncFromServer)
 
@@ -214,7 +216,26 @@ export default function PremiumPage() {
               ? "Оплата через Telegram Stars — безопасно и мгновенно"
               : "To'lov Telegram Stars orqali — xavfsiz va bir zumda"}
           </p>
+
+          <div className="text-center mt-4">
+            <button
+              type="button"
+              onClick={() => setShowPromoModal(true)}
+              className="text-xs font-bold text-duo-purple hover:underline inline-flex items-center gap-1.5 active:opacity-70 transition-opacity"
+            >
+              <Ticket size={14} />
+              {lang === 'ru' ? 'У вас есть промокод?' : 'Promokodingiz bormi?'}
+            </button>
+          </div>
         </>
+      )}
+
+      {/* Promokod kiritish modali */}
+      {showPromoModal && (
+        <PromoCodeModal
+          language={lang}
+          onClose={() => setShowPromoModal(false)}
+        />
       )}
     </div>
   )
