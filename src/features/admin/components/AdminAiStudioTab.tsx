@@ -127,7 +127,11 @@ export default function AdminAiStudioTab() {
         setTimeout(() => setSuccessMessage(null), 5000)
       }
     } catch (err: any) {
-      alert(err?.message || 'AI savol generatsiyasida xatolik yuz berdi')
+      let msg = err?.message || 'AI savol generatsiyasida xatolik yuz berdi'
+      if (msg.includes('503') || msg.includes('GEMINI_API_KEY')) {
+        msg = "AI xizmati uchun GEMINI_API_KEY sozlanmagan. Iltimos, server .env faylida GEMINI_API_KEY kalitini kiriting."
+      }
+      alert(msg)
     } finally {
       setLoading(false)
     }

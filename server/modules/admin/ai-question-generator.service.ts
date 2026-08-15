@@ -78,44 +78,56 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
     : `Quyidagi mavzu bo'yicha ${input.count} ta test savolini tuzing: "${input.promptText}" (Fan: ${subjectTitle})`
 
   const controller = new AbortController()
-  const timeout = setTimeout(() => controller.abort(), 60_000)
+  const timeout = setTimeout(() => controller.abort(), 75_000)
 
-  let apiRes: Response
-  try {
-    apiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${key}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        signal: controller.signal,
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: systemInstruction }] },
-          contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
-          generationConfig: {
-            responseMimeType: 'application/json',
-            maxOutputTokens: 8192,
-            temperature: 0.4,
-          },
-        }),
+  const modelsToTry = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-flash-latest']
+  let apiRes: Response | null = null
+  let lastErrorText = ''
+
+  for (const model of modelsToTry) {
+    try {
+      const response = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          signal: controller.signal,
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: systemInstruction }] },
+            contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+            generationConfig: {
+              responseMimeType: 'application/json',
+              maxOutputTokens: 8192,
+              temperature: 0.4,
+            },
+          }),
+        }
+      )
+
+      if (response.ok) {
+        apiRes = response
+        break
+      } else {
+        lastErrorText = await response.text().catch(() => '')
+        console.warn(`[ai-question-generator] Model ${model} failed (${response.status}):`, lastErrorText.slice(0, 200))
+        if (response.status === 429) {
+          throw new AppError(429, "Gemini API kunlik kvotasi yetarli emas. Birozdan so'ng qayta urinib ko'ring.")
+        }
       }
-    )
-  } catch (err: any) {
-    clearTimeout(timeout)
-    if (controller.signal.aborted) {
-      throw new AppError(504, "AI generatsiya vaqti tugadi (Timeout). Iltimos, savollar sonini kamaytirib qayta urinib ko'ring.")
+    } catch (err: any) {
+      if (err instanceof AppError) throw err
+      if (controller.signal.aborted) {
+        clearTimeout(timeout)
+        throw new AppError(504, "AI generatsiya vaqti tugadi (Timeout). Iltimos, savollar sonini kamaytirib qayta urinib ko'ring.")
+      }
+      console.warn(`[ai-question-generator] Model ${model} error:`, err?.message || err)
     }
-    throw new AppError(502, `AI bilan bog'lanishda xatolik: ${err?.message || err}`)
-  } finally {
-    clearTimeout(timeout)
   }
 
-  if (!apiRes.ok) {
-    const errorText = await apiRes.text().catch(() => '')
-    console.error('[ai-question-generator] Gemini API error:', apiRes.status, errorText.slice(0, 300))
-    if (apiRes.status === 429) {
-      throw new AppError(429, "Gemini API kunlik kvotasi yetarli emas. Birozdan so'ng qayta urinib ko'ring.")
-    }
-    throw new AppError(502, `AI xatoligi: ${apiRes.statusText || 'Noma\'lum xatolik'}`)
+  clearTimeout(timeout)
+
+  if (!apiRes) {
+    throw new AppError(502, `AI xizmatiga ulanib bo'lmadi: ${lastErrorText.slice(0, 200) || 'API xatoligi'}`)
   }
 
   const data: any = await apiRes.json()
