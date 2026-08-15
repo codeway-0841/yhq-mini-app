@@ -198,16 +198,20 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   }, [s.phase, s.result])
 
   const routeDuelCode = useParams().duelCode
-  const [duelCode, setDuelCode] = useState<string | null>(
-    routeDuelCode ?? (location.state as { duelCode?: string } | null)?.duelCode ?? null
-  )
+  const rawInitDuel = routeDuelCode ?? (location.state as { duelCode?: string } | null)?.duelCode ?? null
+  const initDuelCode = rawInitDuel ? rawInitDuel.trim().toLowerCase().replace(/^(?:duel|room)-/, '') : null
+  const [duelCode, setDuelCode] = useState<string | null>(initDuelCode)
   const duelCodeRef = useRef(duelCode)
   duelCodeRef.current = duelCode
 
   const joinQueue = useCallback((withDuel?: string) => {
     if (!user) return
-    if (withDuel) setDuelCode(withDuel)
-    track('duel_start', { subject: subjectRef.current, duel: Boolean(withDuel || duelCodeRef.current) })
+    const code = withDuel !== undefined
+      ? (withDuel ? withDuel.trim().toLowerCase().replace(/^(?:duel|room)-/, '') : null)
+      : duelCodeRef.current
+    setDuelCode(code)
+    duelCodeRef.current = code
+    track('duel_start', { subject: subjectRef.current, duel: Boolean(code) })
     dispatch({ type: 'SEARCHING' })
     try {
       getOctagonSocket(config.wsUrl).send({
@@ -215,7 +219,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
         userId: user.id,
         name: user.firstName,
         subjectId: subjectRef.current,
-        ...((withDuel ?? duelCodeRef.current) ? { duelCode: withDuel ?? duelCodeRef.current! } : {}),
+        ...(code ? { duelCode: code } : {}),
         ...wsAuthFields(),
       })
     } catch {
@@ -226,13 +230,13 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
 
   /** Do'st uchun duel link yaratish */
   const startDuel = useCallback(() => {
-    const code = `duel-${Math.random().toString(36).slice(2, 10)}`
+    const code = Math.floor(100000 + Math.random() * 900000).toString()
     joinQueue(code)
   }, [joinQueue])
 
   /** Invite link — bot /start deep-link: bot "⚔️ Duelga qo'shilish" tugmasi
       bilan ilovaga o'tkazadi (`#/octagon/duel-xxxx`). Webhook ulangan davrda ishlaydi. */
-  const duelLink = duelCode ? `https://t.me/kiwi_uz_bot?start=${duelCode}` : null
+  const duelLink = duelCode ? `https://t.me/kiwi_uz_bot?start=duel-${duelCode}` : null
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {
