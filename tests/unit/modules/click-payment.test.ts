@@ -1,13 +1,18 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import {
   generateClickSignature,
   buildClickPaymentUrl,
+  handleClickPrepare,
+  handleClickComplete,
   CLICK_ERRORS,
 } from '../../../server/modules/payments/click.service'
+import { db } from '../../../server/db/connection'
+import { config } from '../../../server/config'
 import { formatUzs, PREMIUM_PLANS, getPlan } from '../../../shared/premium-plans'
 
 describe('Click Payment Gateway — Unit Tests', () => {
   const sampleSecretKey = 'test_click_secret_key_12345'
+  let originalSecret: string
 
   describe('generateClickSignature', () => {
     it('action 0 (Prepare) imzosini to\'g\'ri MD5 formatda generatsiya qiladi', () => {
@@ -72,6 +77,67 @@ describe('Click Payment Gateway — Unit Tests', () => {
       expect(formatUzs(29000, 'uz')).toBe("29 000 so'm")
       expect(formatUzs(79000, 'ru')).toBe('79 000 сум')
       expect(formatUzs(149000, 'uz')).toBe("149 000 so'm")
+    })
+  })
+
+  describe('Webhook signature — fail-closed (audit fix)', () => {
+    const basePrepare = {
+      click_trans_id: '1001',
+      service_id: '32876',
+      merchant_trans_id: 'ord_12345',
+      amount: '29000',
+      action: 0 as const,
+      error: 0,
+      sign_time: '2026-08-15 12:00:00',
+    }
+
+    beforeEach(() => {
+      // Signature'dan keyingi DB lookup'gacha yetib bormasligi uchun spy:
+      // agar yetiborsa ham bo'sh natija → ORDER_NOT_FOUND (SIGN_CHECK_FAILED emas).
+      vi.spyOn(db, 'select').mockReturnValue({
+        from: vi.fn().mockReturnValue({ where: vi.fn().mockResolvedValue([]) }),
+      } as any)
+      originalSecret = config.click.secretKey
+    })
+    afterEach(() => {
+      vi.restoreAllMocks()
+      // config startup snapshot'i — test valuesini qaytaramiz
+      ;(config.click as { secretKey: string }).secretKey = originalSecret
+    })
+
+    it("secret sozlanmagan bo'lsa prepare FAIL-CLOSED — to'lov o'tmaydi", async () => {
+      ;(config.click as { secretKey: string }).secretKey = ''
+      const res = await handleClickPrepare({ ...basePrepare, sign_string: 'deadbeef' })
+      expect(res.error).toBe(CLICK_ERRORS.SIGN_CHECK_FAILED)
+      expect(db.select).not.toHaveBeenCalled()
+    })
+
+    it("secret sozlanmagan bo'lsa complete FAIL-CLOSED — premium berilmaydi", async () => {
+      ;(config.click as { secretKey: string }).secretKey = ''
+      const res = await handleClickComplete({
+        ...basePrepare, action: 1 as const, merchant_prepare_id: 42, sign_string: 'deadbeef',
+      })
+      expect(res.error).toBe(CLICK_ERRORS.SIGN_CHECK_FAILED)
+      expect(db.select).not.toHaveBeenCalled()
+    })
+
+    it("noto'g'ri imzo rad etiladi (timing-safe compare ishlaydi)", async () => {
+      ;(config.click as { secretKey: string }).secretKey = sampleSecretKey
+      const res = await handleClickPrepare({ ...basePrepare, sign_string: '0'.repeat(32) })
+      expect(res.error).toBe(CLICK_ERRORS.SIGN_CHECK_FAILED)
+      expect(db.select).not.toHaveBeenCalled()
+    })
+
+    it("to'g'ri imzo signature bosqichidan o'tadi (ORDER_NOT_FOUND — DB lookup yetib bordi)", async () => {
+      ;(config.click as { secretKey: string }).secretKey = sampleSecretKey
+      const sign = generateClickSignature({
+        click_trans_id: '1001', service_id: '32876', secret_key: sampleSecretKey,
+        merchant_trans_id: 'ord_12345', amount: '29000', action: 0,
+        sign_time: '2026-08-15 12:00:00',
+      })
+      const res = await handleClickPrepare({ ...basePrepare, sign_string: sign })
+      expect(res.error).toBe(CLICK_ERRORS.ORDER_NOT_FOUND)
+      expect(db.select).toHaveBeenCalled()
     })
   })
 

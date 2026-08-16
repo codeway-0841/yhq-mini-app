@@ -61,6 +61,21 @@ function md5(str: string): string {
   return crypto.createHash('md5').update(str).digest('hex')
 }
 
+/** Timing-safe hex compare (past uzunligi tufayli timing signal minimal, lekin baribir). */
+function safeEqualHex(a: string, b: string): boolean {
+  const left = Buffer.from(a.toLowerCase(), 'utf8')
+  const right = Buffer.from(b.toLowerCase(), 'utf8')
+  if (left.length !== right.length) return false
+  return crypto.timingSafeEqual(left, right)
+}
+
+/** Imzo tekshiruvi — FAQAT secret sozlanganda o'tadi. Secret YO'Q bo'lsa
+ *  webhook FAIL-CLOSED: hech qanday to'lov tasdiqlanmaydi (bepul premium himoyasi). */
+function verifyClickSignature(expectedSign: string, providedSign: unknown): boolean {
+  if (typeof providedSign !== 'string' || providedSign.length === 0) return false
+  return safeEqualHex(expectedSign, String(providedSign))
+}
+
 /**
  * Generate MD5 signature according to Click specification
  */
@@ -106,25 +121,33 @@ export async function handleClickPrepare(input: ClickPrepareInput): Promise<Clic
   const clickTransId = input.click_trans_id
   const merchantTransId = String(input.merchant_trans_id || '').trim()
 
-  // 1. Signature validation (if secretKey is configured)
-  if (secretKey) {
-    const expectedSign = generateClickSignature({
-      click_trans_id: input.click_trans_id,
-      service_id: input.service_id,
-      secret_key: secretKey,
+  // 1. Signature validation — MAJBURIY (fail-closed): secret sozlanmagan bo'lsa
+  //    ham soxta so'rov o'tmaydi. Secret'siz muhit faqat dev (mock/test'lar
+  //    service'ni to'g'ridan-to'g'ri chaqiradi, webhook esa hech qachon).
+  if (!secretKey) {
+    return {
+      click_trans_id: clickTransId,
       merchant_trans_id: merchantTransId,
-      amount: input.amount,
-      action: 0,
-      sign_time: input.sign_time,
-    })
+      error: CLICK_ERRORS.SIGN_CHECK_FAILED,
+      error_note: 'SIGN CHECK FAILED',
+    }
+  }
+  const expectedSign = generateClickSignature({
+    click_trans_id: input.click_trans_id,
+    service_id: input.service_id,
+    secret_key: secretKey,
+    merchant_trans_id: merchantTransId,
+    amount: input.amount,
+    action: 0,
+    sign_time: input.sign_time,
+  })
 
-    if (String(input.sign_string).toLowerCase() !== expectedSign.toLowerCase()) {
-      return {
-        click_trans_id: clickTransId,
-        merchant_trans_id: merchantTransId,
-        error: CLICK_ERRORS.SIGN_CHECK_FAILED,
-        error_note: 'SIGN CHECK FAILED',
-      }
+  if (!verifyClickSignature(expectedSign, input.sign_string)) {
+    return {
+      click_trans_id: clickTransId,
+      merchant_trans_id: merchantTransId,
+      error: CLICK_ERRORS.SIGN_CHECK_FAILED,
+      error_note: 'SIGN CHECK FAILED',
     }
   }
 
@@ -184,26 +207,32 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
   const merchantTransId = String(input.merchant_trans_id || '').trim()
   const prepareId = Number(input.merchant_prepare_id)
 
-  // 1. Signature validation
-  if (secretKey) {
-    const expectedSign = generateClickSignature({
-      click_trans_id: input.click_trans_id,
-      service_id: input.service_id,
-      secret_key: secretKey,
+  // 1. Signature validation — MAJBURIY (fail-closed), prepare bilan bir xil.
+  if (!secretKey) {
+    return {
+      click_trans_id: clickTransId,
       merchant_trans_id: merchantTransId,
-      merchant_prepare_id: prepareId,
-      amount: input.amount,
-      action: 1,
-      sign_time: input.sign_time,
-    })
+      error: CLICK_ERRORS.SIGN_CHECK_FAILED,
+      error_note: 'SIGN CHECK FAILED',
+    }
+  }
+  const expectedSign = generateClickSignature({
+    click_trans_id: input.click_trans_id,
+    service_id: input.service_id,
+    secret_key: secretKey,
+    merchant_trans_id: merchantTransId,
+    merchant_prepare_id: prepareId,
+    amount: input.amount,
+    action: 1,
+    sign_time: input.sign_time,
+  })
 
-    if (String(input.sign_string).toLowerCase() !== expectedSign.toLowerCase()) {
-      return {
-        click_trans_id: clickTransId,
-        merchant_trans_id: merchantTransId,
-        error: CLICK_ERRORS.SIGN_CHECK_FAILED,
-        error_note: 'SIGN CHECK FAILED',
-      }
+  if (!verifyClickSignature(expectedSign, input.sign_string)) {
+    return {
+      click_trans_id: clickTransId,
+      merchant_trans_id: merchantTransId,
+      error: CLICK_ERRORS.SIGN_CHECK_FAILED,
+      error_note: 'SIGN CHECK FAILED',
     }
   }
 

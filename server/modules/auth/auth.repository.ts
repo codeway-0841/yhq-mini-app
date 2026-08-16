@@ -353,6 +353,11 @@ export const authRepository = {
   },
 
   async lockAccount(userId: string, lockUntil: Date, txOrDb?: DB): Promise<void> {
+    // Lock paytida mavjud sessiyalar HAM revoke qilinadi — aks holda bloklangan
+    // akkauntning eski Bearer tokeni TTL tugaguncha (30 kun) yaroqli qoladi.
+    await executeRows(sql`
+      DELETE FROM sessions WHERE user_id = ${userId}
+    `, txOrDb)
     await executeRows(sql`
       UPDATE users
       SET locked_until = ${lockUntil.toISOString()}::timestamptz

@@ -14,15 +14,13 @@ import { Request, Response, NextFunction } from 'express'
 import { db } from '../db/connection'
 import { users } from '../schema'
 import { eq } from 'drizzle-orm'
-import { isAuthEnforced } from './auth'
 
 export async function requireAdmin(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    // Production: faqat telegramAuth tomonidan tasdiqlangan id.
-    // Dev/test (auth o'chiq): body yoki query'dagi userId — xuddi boshqa
-    // router'lardagi pattern (masalan tutor.router userId query/body oladi).
+    // FAQAT auth middleware tomonidan tasdiqlangan req.userId — body/query'dan
+    // olish (eski dev fallback) olib tashlandi: NODE_ENV=development qoldirilgan
+    // prod host butun admin API'ni credential'siz ochib qoldirardi.
     const uid = (req as { userId?: string }).userId
-      ?? (isAuthEnforced() ? undefined : (req.body as { userId?: unknown })?.userId ?? req.query['userId'])
     if (typeof uid !== 'string' || uid.length === 0) {
       res.status(401).json({ error: 'telegram_user_not_identified' })
       return

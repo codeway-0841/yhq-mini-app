@@ -77,6 +77,9 @@ describe('server-authoritative progress', () => {
   })
 
   it('javob bilan birga correctAnswer POST-ANSWER REVEAL qilinadi (feedback uchun)', async () => {
+    // Anti-farm gate: oldingi test birinchi savolni TO'G'RI yechgan —
+    // yangi (yechilmagan) savol uchun progressni reset qilamiz.
+    await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
     const [question] = await db.select().from(questions).limit(1)
     const res = await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
@@ -90,6 +93,8 @@ describe('server-authoritative progress', () => {
   })
 
   it('clientToken idempotency: replay counterlarni ikki marta oshirmaydi', async () => {
+    // Anti-farm gate: birinchi savol oldingi testlarda TO'G'RI yechilgan — reset.
+    await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
     const [question] = await db.select().from(questions).limit(1)
     const [before] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     const token = `integration-token-${Date.now()}-uniq`
@@ -262,5 +267,45 @@ describe('payment idempotency', () => {
     expect(afterSecond.premiumUntil?.getTime()).toBe(afterFirst.premiumUntil?.getTime())
     const rows = await db.select().from(payments).where(eq(payments.userId, PAYMENT_ID))
     expect(rows).toHaveLength(1)
+  })
+})
+
+describe('progress anti-farm: post-answer reveal replay (audit fix)', () => {
+  it('yechilgan savolga yangi clientToken bilan qayta TO\'G\'RI javob counterlarni oshirmaydi', async () => {
+    // Farm senaryysi: xato javob → reveal'dan correctAnswer'ni ol → boshqa token bilan
+    // qayta to\'g\'ri javob ber. Allaqachon yechilgan savol → idempotent "duplicate".
+    await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
+
+    const [question] = await db.select().from(questions).limit(1)
+    const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
+
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'yhq', clientToken: `farm-wrong-${Date.now()}` })
+      .expect(200)
+
+    const correct = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: `farm-correct-${Date.now()}` })
+      .expect(200)
+    expect(correct.body.correct).toBe(true)
+    expect(correct.body.correctAnswer).toBe(question.correctAnswer)
+
+    const [afterFirst] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(afterFirst.totalCorrect).toBe(1)
+    expect(afterFirst.totalAnswered).toBe(2)
+
+    // FARM URINISHI: yangi token, to\'g\'ri javob — yozilmaydi
+    const replay = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: `farm-replay-${Date.now()}` })
+      .expect(200)
+    expect(replay.body.duplicate).toBe(true)
+    expect(replay.body.correctAnswer).toBeNull()
+
+    const [afterReplay] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(afterReplay.totalCorrect).toBe(1)      // oshmadi
+    expect(afterReplay.totalAnswered).toBe(2)     // oshmadi
+    expect(afterReplay.streak).toBe(1)            // oshmadi
   })
 })

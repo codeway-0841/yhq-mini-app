@@ -22,9 +22,9 @@ describe('Promo API Endpoints', () => {
     expect(res.body).toEqual({ error: 'telegram_user_not_identified' })
   })
 
-  it('GET /api/admin/promo-codes (oddiy foydalanuvchi so‘rovi) -> 403 (admin_required)', async () => {
+  it("GET /api/admin/promo-codes (query'dagi soxta userId) -> 401 (dev-fallback o'chirilgan)", async () => {
     const res = await request(app).get('/api/admin/promo-codes?userId=regular_user_999')
-    expect(res.status).toBe(403)
-    expect(res.body).toEqual({ error: 'admin_required' })
+    expect(res.status).toBe(401)
+    expect(res.body).toEqual({ error: 'telegram_user_not_identified' })
   })
 })

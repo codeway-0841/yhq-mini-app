@@ -309,6 +309,10 @@ export const progress = pgTable('progress', {
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
   solvedQuestions: jsonb('solved_questions').$type<string[]>().default([]).notNull(),
+  /** FAQAT to'g'ri javob berilgan savollar (`${subjectId}:${questionId}`) —
+   *  solved_questions "har qanday javob"ni, bu esa anti-farm replay gate'ini
+   *  (takroriy to'g'ri javob counter yozmaydi) ta'minlaydi. */
+  correctQuestions: jsonb('correct_questions').$type<string[]>().default([]).notNull(),
   /** @deprecated Streak endi `daily_streaks` jadvalida (fan bo'yicha). Ustun eski migratsiyalar bilan moslik uchun saqlanadi. */
   dailyStreak:   integer('daily_streak').default(0).notNull(),
   /** @deprecated `daily_streaks.last_daily_date` ishlatiladi */

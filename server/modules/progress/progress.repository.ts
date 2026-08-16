@@ -62,7 +62,26 @@ export const progressRepository = {
         ON CONFLICT (token) DO NOTHING
         RETURNING token
       ), gate AS (
-        SELECT (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok)) AS proceed
+        SELECT (
+          -- 1) clientToken replay YOKI token yo'q — o'tadi;
+          (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok))
+          -- 2) ANTI-FARM: ilgari TO'G'RI javob berilgan savolga takroriy
+          --    to'g'ri javob counterlarga YOZILMAYDI (post-answer reveal'dan
+          --    keyin bir xil savolni qayta "to'g'ri"lab total_correct/streak
+          --    ko'paytirish mumkin edi — endi idempotent "duplicate").
+          --    Xato javoblar yozilishda qoladi (takroriy mashq real o'rganish).
+          --    Eslatma: solved_questions "har qanday javob"ni bildiradi,
+          --    gate FAQAT correct_questions'ga tayanadi.
+          AND NOT (
+            ${correct}
+            AND ${qKey}::text IS NOT NULL
+            AND EXISTS (
+              SELECT 1 FROM progress
+              WHERE user_id = ${userId}
+                AND COALESCE(correct_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text)
+            )
+          )
+        ) AS proceed
       ), entitlement AS (
         SELECT (
           tariff = 'premium'
@@ -89,6 +108,11 @@ export const progressRepository = {
             WHEN ${qKey}::text IS NULL THEN COALESCE(solved_questions, '[]'::jsonb)
             WHEN COALESCE(solved_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text) THEN COALESCE(solved_questions, '[]'::jsonb)
             ELSE COALESCE(solved_questions, '[]'::jsonb) || jsonb_build_array(${qKey}::text)
+          END,
+          correct_questions = CASE
+            WHEN NOT ${correct} OR ${qKey}::text IS NULL THEN COALESCE(correct_questions, '[]'::jsonb)
+            WHEN COALESCE(correct_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text) THEN COALESCE(correct_questions, '[]'::jsonb)
+            ELSE COALESCE(correct_questions, '[]'::jsonb) || jsonb_build_array(${qKey}::text)
           END,
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
@@ -158,6 +182,7 @@ export const progressRepository = {
       streak:          0,
       wrongByTicket:   {},
       solvedQuestions: [],
+      correctQuestions: [],
       updatedAt:       new Date(),
     }).where(eq(progress.userId, userId))
   },

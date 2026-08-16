@@ -72,11 +72,23 @@ const envSchema = z.object({
 // Startup'da parse — format xatolar (masalan bo'sh DATABASE_URL) darhol ko'rinadi
 const env = envSchema.parse(process.env)
 
-/** Production app boot xavfsizligi: BOT_TOKEN'siz server ishga tushMASLIGI kerak
- *  (aks holda BUTUN API + WS authsiz qoladi — fail-open xavfi). */
+/** Production app boot xavfsizligi: xavfsizlikka ta'sir qiluvchi secret'lar
+ *  YO'Q bo'lsa server ishga tushMASLIGI kerak (fail-open himoyasi):
+ *  - BOT_TOKEN — butun API + WS authsiz qoladi;
+ *  - CRON_SECRET — cron endpoint'lar himoyasiz (broadcast/cleanup'ni kimdir chaqiradi);
+ *  - OTP_PEPPER — pepper'siz OTP hash DB dump'da brute-force qilinadi (1M qiymat);
+ *  - CLICK_SECRET_KEY — Click webhook imzosi sozlanmasa to'lovlar fail-closed
+ *    rad etiladi (xizmat ko'rmaydi), shuning uchun Click sozlangan bo'lsa majburiy. */
 export function assertProdConfig(): void {
-  if (env.NODE_ENV === 'production' && !config.telegram.botToken) {
-    throw new Error('FATAL: BOT_TOKEN environment variable is required in production')
+  if (env.NODE_ENV === 'production') {
+    const missing: string[] = []
+    if (!config.telegram.botToken) missing.push('BOT_TOKEN')
+    if (!config.cron.secret) missing.push('CRON_SECRET')
+    if (!config.auth.otpPepper) missing.push('OTP_PEPPER')
+    if ((env.CLICK_SERVICE_ID || env.CLICK_MERCHANT_ID) && !env.CLICK_SECRET_KEY) missing.push('CLICK_SECRET_KEY')
+    if (missing.length > 0) {
+      throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
+    }
   }
 }
 
