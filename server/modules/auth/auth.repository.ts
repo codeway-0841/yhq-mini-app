@@ -355,7 +355,7 @@ export const authRepository = {
   async lockAccount(userId: string, lockUntil: Date, txOrDb?: DB): Promise<void> {
     await executeRows(sql`
       UPDATE users
-      SET locked_until = ${lockUntil}
+      SET locked_until = ${lockUntil.toISOString()}::timestamptz
       WHERE id = ${userId}
     `, txOrDb)
   },
