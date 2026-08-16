@@ -1,0 +1,232 @@
+import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { authService, phoneUserId } from '../../../server/modules/auth/auth.service'
+import { authRepository } from '../../../server/modules/auth/auth.repository'
+import { usersRepository } from '../../../server/modules/users/users.repository'
+import { progressRepository } from '../../../server/modules/progress/progress.repository'
+import { settingsRepository } from '../../../server/modules/settings/settings.repository'
+import { savedRepository } from '../../../server/modules/saved/saved.repository'
+import { hashPassword } from '../../../server/utils/password'
+import { AppError } from '../../../server/middleware/error-handler'
+
+describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () => {
+  beforeEach(() => {
+    vi.restoreAllMocks()
+  })
+
+  describe('phoneUserId helper', () => {
+    it('normalizes +998 phone number to canonical p_<digits> user ID', () => {
+      expect(phoneUserId('+998901234567')).toBe('p_998901234567')
+      expect(phoneUserId('998901234567')).toBe('p_998901234567')
+      expect(phoneUserId('+998 90 123 45 67')).toBe('p_998901234567')
+    })
+  })
+
+  describe('registerWithPhone', () => {
+    it('successfully registers new user with phone + password', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
+      vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(true)
+      vi.spyOn(authRepository, 'createSession').mockResolvedValue(undefined as any)
+      vi.spyOn(usersRepository, 'findById').mockResolvedValue({
+        id: 'p_998901234567',
+        firstName: 'Test',
+        lastName: '',
+        username: '',
+        photoUrl: '',
+        phone: '+998901234567',
+        tariff: 'free',
+        isAdmin: false,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      } as any)
+      vi.spyOn(progressRepository, 'findByUserId').mockResolvedValue({
+        userId: 'p_998901234567',
+        totalCorrect: 0,
+        totalWrong: 0,
+        totalAnswered: 0,
+        streak: 0,
+        wrongByTicket: {},
+        solvedQuestions: [],
+      } as any)
+      vi.spyOn(settingsRepository, 'findByUserId').mockResolvedValue({
+        userId: 'p_998901234567',
+        autoNextCorrect: true,
+        autoNextWrong: false,
+        noAnimation: false,
+        shuffleOptions: false,
+        fontSize: 'medium',
+        fontStyle: 'default',
+        language: 'uz',
+        theme: 'dark',
+        offlineMode: false,
+      } as any)
+      vi.spyOn(savedRepository, 'findByUserId').mockResolvedValue([])
+      vi.spyOn(authRepository, 'listUserProviders').mockResolvedValue(['phone'])
+
+      const result = await authService.registerWithPhone({
+        phone: '+998901234567',
+        password: 'Password123!',
+        firstName: 'Test User',
+      })
+
+      expect(result.sessionToken).toHaveLength(64)
+      expect(result.user.id).toBe('p_998901234567')
+      expect(result.providers).toEqual(['phone'])
+    })
+
+    it('throws 409 phone_taken if phone identity already exists', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: 'hash',
+        createdAt: new Date(),
+      })
+
+      await expect(
+        authService.registerWithPhone({
+          phone: '+998901234567',
+          password: 'Password123!',
+          firstName: 'Duplicate User',
+        }),
+      ).rejects.toThrowError(new AppError(409, 'phone_taken'))
+    })
+
+    it('throws 409 phone_taken if createIdentity returns false', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
+      vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(false)
+
+      await expect(
+        authService.registerWithPhone({
+          phone: '+998901234567',
+          password: 'Password123!',
+          firstName: 'Test User',
+        }),
+      ).rejects.toThrowError(new AppError(409, 'phone_taken'))
+    })
+  })
+
+  describe('loginWithPhone', () => {
+    it('successfully logs in with valid phone and password', async () => {
+      const password = 'SecretPassword123!'
+      const hash = hashPassword(password)
+
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: hash,
+        createdAt: new Date(),
+      })
+      vi.spyOn(authRepository, 'isAccountLocked').mockResolvedValue(false)
+      vi.spyOn(authRepository, 'resetFailedLoginAttempts').mockResolvedValue(undefined as any)
+      vi.spyOn(authRepository, 'createSession').mockResolvedValue(undefined as any)
+      vi.spyOn(usersRepository, 'findById').mockResolvedValue({
+        id: 'p_998901234567',
+        firstName: 'Test',
+        lastName: '',
+        username: '',
+        photoUrl: '',
+        tariff: 'free',
+      } as any)
+      vi.spyOn(progressRepository, 'findByUserId').mockResolvedValue({
+        userId: 'p_998901234567',
+        totalCorrect: 10,
+        totalWrong: 1,
+        totalAnswered: 11,
+        streak: 2,
+        wrongByTicket: {},
+      } as any)
+      vi.spyOn(settingsRepository, 'findByUserId').mockResolvedValue({
+        userId: 'p_998901234567',
+        autoNextCorrect: true,
+        autoNextWrong: false,
+        noAnimation: false,
+        shuffleOptions: false,
+        fontSize: 'medium',
+        fontStyle: 'default',
+        language: 'uz',
+        theme: 'dark',
+        offlineMode: false,
+      } as any)
+      vi.spyOn(savedRepository, 'findByUserId').mockResolvedValue([])
+      vi.spyOn(authRepository, 'listUserProviders').mockResolvedValue(['phone'])
+
+      const result = await authService.loginWithPhone({
+        phone: '+998901234567',
+        password,
+      })
+
+      expect(result.sessionToken).toHaveLength(64)
+      expect(result.user.id).toBe('p_998901234567')
+    })
+
+    it('throws 401 invalid_credentials if user not found', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+
+      await expect(
+        authService.loginWithPhone({
+          phone: '+998901234567',
+          password: 'anyPassword',
+        }),
+      ).rejects.toThrowError(new AppError(401, 'invalid_credentials'))
+    })
+
+    it('throws 403 account_locked if account is currently locked', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: hashPassword('pass'),
+        createdAt: new Date(),
+      })
+      vi.spyOn(authRepository, 'isAccountLocked').mockResolvedValue(true)
+
+      await expect(
+        authService.loginWithPhone({
+          phone: '+998901234567',
+          password: 'pass',
+        }),
+      ).rejects.toThrowError(new AppError(403, 'account_locked'))
+    })
+
+    it('increments failed attempts and locks account on 5th failed password', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: hashPassword('realPassword'),
+        createdAt: new Date(),
+      })
+      vi.spyOn(authRepository, 'isAccountLocked').mockResolvedValue(false)
+      vi.spyOn(authRepository, 'incrementFailedLoginAttempts').mockResolvedValue(5)
+      const lockSpy = vi.spyOn(authRepository, 'lockAccount').mockResolvedValue(undefined as any)
+
+      await expect(
+        authService.loginWithPhone({
+          phone: '+998901234567',
+          password: 'wrongPassword',
+        }),
+      ).rejects.toThrowError(new AppError(403, 'account_locked'))
+
+      expect(lockSpy).toHaveBeenCalledWith('p_998901234567', expect.any(Date))
+    })
+  })
+
+  describe('Telegram Login Widget', () => {
+    it('throws 401 invalid_widget_signature for corrupted HMAC signature', async () => {
+      await expect(
+        authService.loginWithTelegramWidget({
+          id: 123456789,
+          first_name: 'Test',
+          last_name: '',
+          username: 'test',
+          photo_url: '',
+          auth_date: Math.floor(Date.now() / 1000),
+          hash: '0'.repeat(64),
+        }),
+      ).rejects.toThrowError(new AppError(401, 'invalid_widget_signature'))
+    })
+  })
+})

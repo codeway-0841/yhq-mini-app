@@ -10,9 +10,9 @@ export default defineConfig({
   },
   test: {
     globals: false,
-    environment: 'node',
-    include: ['tests/**/*.test.ts'],
-    setupFiles: ['tests/setup.ts'],
+    environment: 'jsdom',
+    include: ['tests/**/*.test.{ts,tsx}'],
+    setupFiles: ['tests/setup.ts', 'tests/unit/setup.ts'],
     // Integration tests hit a remote Neon DB — network latency can exceed the default 5 s
     testTimeout: 15_000,
     hookTimeout: 20_000,
@@ -20,8 +20,18 @@ export default defineConfig({
     retry: 2,
     coverage: {
       provider: 'v8',
-      include: ['src/shared/**', 'src/platform/**', 'server/middleware/**', 'server/modules/**'],
-      exclude: ['**/*.test.ts'],
+      reporter: ['text', 'json', 'html'],
+      include: [
+        'src/shared/**',
+        'src/platform/**',
+        'src/features/**',
+        'shared/**',
+        'server/modules/**',
+        'server/middleware/**',
+        'server/providers/**',
+        'server/utils/**',
+      ],
+      exclude: ['**/*.test.{ts,tsx}', '**/*.d.ts'],
     },
   },
 })

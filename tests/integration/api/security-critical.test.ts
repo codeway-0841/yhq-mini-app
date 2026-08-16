@@ -1,9 +1,9 @@
-import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest'
 import request from 'supertest'
 import { and, eq } from 'drizzle-orm'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { answerTokens, dailyRecords, payments, progress, questions, users } from '../../../server/schema'
+import { answerTokens, dailyRecords, payments, progress, questions, questionBanks, topics, users } from '../../../server/schema'
 import { paymentRepository } from '../../../server/modules/payments/payment.repository'
 import { tashkentDate } from '../../../server/utils/date'
 
@@ -107,13 +107,12 @@ describe('server-authoritative progress', () => {
       .expect(200)
     expect(replay.body.duplicate).toBe(true)
     expect(replay.body.dailyStreak).toBeNull()
-    // DUPLICATE REVEAL YO'Q (scoring himoyasi): replay kalitni qayta ochmaydi —
-    // aks holda bitta token aylanuvchib bepul answer-key yig'ish mumkin edi.
+    // DUPLICATE REVEAL YO'Q (scoring himoyasi): replay kalitni qayta ochmaydi
     expect(replay.body.correctAnswer).toBeNull()
     expect(replay.body.correct).toBeNull()
 
     const [after] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
-    expect(after.totalAnswered).toBe(before.totalAnswered + 1)   // FAQAT 1 marta
+    expect(after.totalAnswered).toBe(before.totalAnswered + 1)
     expect(after.totalCorrect).toBe(before.totalCorrect + 1)
 
     const tokens = await db.select().from(answerTokens).where(eq(answerTokens.token, token))
@@ -128,9 +127,9 @@ describe('server-authoritative progress', () => {
       .post(`/api/progress/${PROGRESS_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: null, subjectId: 'yhq', clientToken: token })
       .expect(200)
-    expect(first.body.correctAnswer).toBe(question.correctAnswer)  // birinchi — haqiqiy reveal
+    expect(first.body.correctAnswer).toBe(question.correctAnswer)
 
-    // Har bir KEYINGI replay hech narsa ochmaydi (kalit yig'ish imkonsiz)
+    // Har bir KEYINGI replay hech narsa ochmaydi
     for (let i = 0; i < 3; i++) {
       const replay = await request(app)
         .post(`/api/progress/${PROGRESS_ID}/result`)
@@ -151,8 +150,7 @@ describe('server-authoritative progress', () => {
       .post(`/api/progress/${PROGRESS_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
       .expect(200)
-    // TRIAL_ID XUDDI SHU token bilan kelsa — token PK bo'lgani uchun
-    // ON CONFLICT DO NOTHING → duplicate (u EMAS, lekin token band)
+    // TRIAL_ID XUDDI SHU token bilan kelsa — duplicate
     const res = await request(app)
       .post(`/api/progress/${TRIAL_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: token })
@@ -161,17 +159,33 @@ describe('server-authoritative progress', () => {
   })
 
   it('fanlar orasida xatolar izolyatsiya qilingan (bir xil questionId, turli subject)', async () => {
-    const [question] = await db.select().from(questions).limit(1)
-    const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
+    // Fizika banki va savolini bazaga kiritish (physics_db dataSourceId bilan)
+    await db.insert(questionBanks).values({ id: 'physics_db', name: 'Fizika' }).onConflictDoNothing()
+    const [t] = await db.insert(topics).values({
+      nameUz: 'Fizika mavzu', nameRu: 'Тема по физике', bankId: 'physics_db', slug: 'fizika-mavzu-uniq',
+    }).onConflictDoNothing().returning()
+    const tId = t?.id ?? (await db.select({ id: topics.id }).from(topics).where(eq(topics.bankId, 'physics_db')))[0]?.id ?? null
+
+    await db.insert(questions).values({
+      id: 999111,
+      bankId: 'physics_db',
+      externalId: 'physics_999111',
+      questionUz: 'Fizika savol?',
+      questionRu: 'Физика вопрос?',
+      optionsUz: { a: '1', b: '2' },
+      optionsRu: { a: '1', b: '2' },
+      correctAnswer: 'a',
+      topicId: tId,
+    }).onConflictDoNothing()
 
     await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
-      .send({ questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'fizika' })
+      .send({ questionId: 999111, selectedAnswer: 'b', subjectId: 'fizika' })
       .expect(200)
 
     const [prog] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
-    expect(prog.wrongByTicket[`fizika:${question.id}`]).toBe(1)
-    expect(prog.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
+    expect(prog.wrongByTicket[`fizika:999111`]).toBe(1)
+    expect(prog.wrongByTicket[`yhq:999111`]).toBeUndefined()
   })
 })
 
@@ -196,6 +210,13 @@ describe('public questions payload — correctAnswer yashiringan', () => {
 })
 
 describe('trial race protection', () => {
+  beforeEach(async () => {
+    await db.delete(users).where(eq(users.id, TRIAL_ID))
+    await request(app).post('/api/init').send({
+      id: String(TRIAL_ID), first_name: 'Trial', last_name: 'Test', username: 'trial_test',
+    }).expect(200)
+  })
+
   it('parallel requestlardan faqat bittasiga trial beradi', async () => {
     const responses = await Promise.all(Array.from({ length: 8 }, () =>
       request(app).post(`/api/users/${TRIAL_ID}/trial`).send({}),
@@ -206,10 +227,19 @@ describe('trial race protection', () => {
 })
 
 describe('payment idempotency', () => {
+  beforeEach(async () => {
+    await db.delete(payments).where(eq(payments.userId, PAYMENT_ID))
+    await db.delete(users).where(eq(users.id, PAYMENT_ID))
+    await db.insert(users).values({
+      id: PAYMENT_ID, firstName: 'Payment', lastName: 'Test', username: 'payment_test', photoUrl: '',
+    }).onConflictDoNothing()
+  })
+
   it('bir charge ID uchun premiumni faqat bir marta uzaytiradi', async () => {
+    const chargeId = `charge_${Date.now()}_test`
     const input = {
-      telegramChargeId: 'integration-charge-998877660003',
-      providerChargeId: 'provider-charge-998877660003',
+      telegramChargeId: chargeId,
+      providerChargeId: `prov_${chargeId}`,
       userId: PAYMENT_ID,
       plan: 'month' as const,
       days: 30,
@@ -220,13 +250,15 @@ describe('payment idempotency', () => {
     }
 
     await expect(paymentRepository.complete(input)).resolves.toBe('activated')
-    const [afterFirst] = await db.select({ premiumUntil: users.premiumUntil })
+    const [afterFirst] = await db.select({ premiumUntil: users.premiumUntil, tariff: users.tariff })
       .from(users).where(eq(users.id, PAYMENT_ID))
-    await expect(paymentRepository.complete(input)).resolves.toBe('duplicate')
-    const [afterSecond] = await db.select({ premiumUntil: users.premiumUntil })
-      .from(users).where(eq(users.id, PAYMENT_ID))
+    expect(afterFirst.tariff).toBe('premium')
+    expect(afterFirst.premiumUntil).toBeTruthy()
 
-    expect(afterFirst.premiumUntil).not.toBeNull()
+    // Ikkinchi marta — replay / Telegram retry
+    await expect(paymentRepository.complete(input)).resolves.toBe('duplicate')
+    const [afterSecond] = await db.select({ premiumUntil: users.premiumUntil, tariff: users.tariff })
+      .from(users).where(eq(users.id, PAYMENT_ID))
     expect(afterSecond.premiumUntil?.getTime()).toBe(afterFirst.premiumUntil?.getTime())
     const rows = await db.select().from(payments).where(eq(payments.userId, PAYMENT_ID))
     expect(rows).toHaveLength(1)

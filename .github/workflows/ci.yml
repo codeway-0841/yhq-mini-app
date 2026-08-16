@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [master]
+    branches: [master, main, develop]
   pull_request:
 
 permissions:
@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      # Unit imports config, lekin DB'ga ulanmaydi.
       DATABASE_URL: postgresql://unit:unit@localhost:5432/unit
       NODE_ENV: test
     steps:
@@ -32,7 +31,9 @@ jobs:
       - name: Typecheck (server)
         run: npx tsc --noEmit -p tsconfig.server.json
       - name: Unit tests
-        run: npm run test:unit
+        run: npm run test:unit -- --coverage
+      - name: API tests
+        run: npm run test:api
       - name: Frontend build
         run: npm run build
       - name: Vercel API build
@@ -40,8 +41,29 @@ jobs:
       - name: Server build (esbuild)
         run: npm run build:server
 
-  # Integration testlar — real PostgreSQL (GitHub service container).
-  # check-test-db.ts guard: TEST_DATABASE_URL ≠ DATABASE_URL bo'lishi shart.
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --include=dev
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+      - name: Run Playwright E2E tests
+        run: npm run test:e2e
+        env:
+          CI: true
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
   integration:
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -58,8 +80,6 @@ jobs:
           --health-timeout 5s
           --health-retries 10
     env:
-      # Guard talabiga ko'ra ikki URL turli DB'larga ishora qilishi SHART;
-      # ish faqat TEST_DATABASE_URL (yhq_test) ustida bajariladi.
       DATABASE_URL: postgresql://test:test@localhost:5432/yhq_prod_guard_only
       TEST_DATABASE_URL: postgresql://test:test@localhost:5432/yhq_test
       NODE_ENV: test

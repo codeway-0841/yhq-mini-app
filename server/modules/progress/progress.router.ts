@@ -51,7 +51,7 @@ router.post(
     // POST-ANSWER REVEAL: correctAnswer endi public /questions'da yo'q —
     // client feedback uchun javob bergandan keyin shu yerda oladi.
     if (duplicate) {
-      res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak: null, duplicate: true })
+      res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
       return
     }
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
