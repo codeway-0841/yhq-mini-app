@@ -1,10 +1,33 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import request from 'supertest'
 import { createApp } from '../../server/app'
+import * as providers from '../../server/providers'
 
 const app = createApp()
 
 describe('Questions API Endpoints & Trust Boundary', () => {
+  beforeEach(() => {
+    vi.restoreAllMocks()
+    vi.spyOn(providers, 'getProvider').mockReturnValue({
+      getAllQuestions: vi.fn().mockResolvedValue([
+        {
+          id: 1,
+          questionUz: 'Savol 1',
+          questionRu: 'Вопрос 1',
+          optionsUz: { a: '1', b: '2' },
+          optionsRu: { a: '1', b: '2' },
+          correctAnswer: 'a',
+          topicId: 1,
+        },
+      ]),
+      getQuestionsByTopic: vi.fn().mockResolvedValue([]),
+      getTopics: vi.fn().mockResolvedValue([
+        { id: 1, nameUz: 'Mavzu 1', nameRu: 'Тема 1', slug: 'mavzu-1', count: 10 },
+      ]),
+      getQuestionById: vi.fn().mockResolvedValue(null),
+    } as any)
+  })
+
   it('GET /api/questions returns question array without correctAnswer exposed', async () => {
     const res = await request(app).get('/api/questions?subject=yhq')
     expect(res.status).toBe(200)

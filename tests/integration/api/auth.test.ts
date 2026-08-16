@@ -292,23 +292,27 @@ describe('Abuse himoyalari — session revoke, lockout, OTP cooldown', () => {
   it('telefon login lockout: 5 noto\'g\'ri parol → account_locked (403)', async () => {
     await db.delete(users).where(eq(users.id, 'p_998900000014'))  // retry-safe pre-clean
     const reg = await request(app).post('/api/auth/phone/register')
+      .set('X-Forwarded-For', '192.168.100.99')
       .send({ phone: PHONE_H, password: PASS, firstName: 'Husnora' })
     expect(reg.status).toBe(201)
 
     // 1-4 urinish: 401
     for (let i = 0; i < 4; i++) {
       const res = await request(app).post('/api/auth/phone/login')
+        .set('X-Forwarded-For', `192.168.100.${10 + i}`)
         .send({ phone: PHONE_H, password: 'xato_parol_999' })
       expect(res.status).toBe(401)
     }
     // 5-urinish: bloklanadi
     const fifth = await request(app).post('/api/auth/phone/login')
+      .set('X-Forwarded-For', '192.168.100.20')
       .send({ phone: PHONE_H, password: 'xato_parol_999' })
     expect(fifth.status).toBe(403)
     expect(fifth.body.error).toContain('account_locked')
 
     // TO'G'RI parol ham bloklangan (lockout davomida)
     const blocked = await request(app).post('/api/auth/phone/login')
+      .set('X-Forwarded-For', '192.168.100.21')
       .send({ phone: PHONE_H, password: PASS })
     expect(blocked.status).toBe(403)
     await authRepository.resetFailedLoginAttempts('p_998900000014')
