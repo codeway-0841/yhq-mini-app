@@ -4,6 +4,7 @@
  */
 
 import { Router }                                    from 'express'
+import { z }                                         from 'zod'
 import { wrap, AppError }                            from '../../middleware/error-handler'
 import { validate }                                  from '../../middleware/validate'
 import { parseUserId }                               from '../../utils/parse'
@@ -80,6 +81,22 @@ router.get(
       rewardDays: REFERRAL_REWARD_DAYS,
       cap:        REFERRAL_MAX_REWARDED,
     })
+  }),
+)
+
+// PATCH /api/users/:userId/sms-consent — SMS marketing roziligi (opt-in/out).
+// Telefon ulash ≠ rozilik: user O'ZI yoqadi/o'chiradi; kampaniyalar FAQAT
+// sms_opt_in=TRUE userlarga ketadi.
+router.patch(
+  '/users/:userId/sms-consent',
+  validate({ body: z.object({ optIn: z.boolean() }) }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const ok = await usersRepository.setSmsOptIn(uid, (req.body as { optIn: boolean }).optIn)
+    if (!ok) throw new AppError(404, 'User not found')
+    res.json({ ok: true })
   }),
 )
 

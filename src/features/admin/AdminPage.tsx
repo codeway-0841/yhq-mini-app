@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send, Sparkles } from 'lucide-react'
+import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send, Sparkles, MessageSquare } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import AdminPromoTab from './components/AdminPromoTab'
 import AdminQuestionsTab from './components/AdminQuestionsTab'
@@ -9,8 +9,9 @@ import AdminAiStudioTab from './components/AdminAiStudioTab'
 import AdminUsersTab from './components/AdminUsersTab'
 import AdminBroadcastTab from './components/AdminBroadcastTab'
 import AdminStatsTab from './components/AdminStatsTab'
+import AdminSmsTab from './components/AdminSmsTab'
 
-type AdminTab = 'promos' | 'questions' | 'studio' | 'users' | 'broadcast' | 'stats'
+type AdminTab = 'promos' | 'questions' | 'studio' | 'users' | 'broadcast' | 'sms' | 'stats'
 
 export default function AdminPage() {
   const navigate = useNavigate()
@@ -33,6 +34,7 @@ export default function AdminPage() {
     { id: 'studio',    label: 'AI Studiya', icon: Sparkles },
     { id: 'users',     label: 'O\'quvchilar', icon: Users },
     { id: 'broadcast', label: 'E\'lonlar',   icon: Send },
+    { id: 'sms',       label: 'SMS',        icon: MessageSquare },
     { id: 'stats',     label: 'Statistika', icon: BarChart3 },
   ]
 
@@ -63,7 +65,7 @@ export default function AdminPage() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="grid grid-cols-6 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
+        <div className="grid grid-cols-7 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -93,6 +95,7 @@ export default function AdminPage() {
         {activeTab === 'studio' && <AdminAiStudioTab />}
         {activeTab === 'users' && <AdminUsersTab />}
         {activeTab === 'broadcast' && <AdminBroadcastTab lang={lang} currentUserId={user.id} />}
+        {activeTab === 'sms' && <AdminSmsTab />}
         {activeTab === 'stats' && <AdminStatsTab />}
       </div>
     </div>

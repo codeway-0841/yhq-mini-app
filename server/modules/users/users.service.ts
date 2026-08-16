@@ -28,6 +28,8 @@ export function toApiUser(row: UserRow) {
     phone:     row.phone     ?? null,
     tariff:    isPremium ? 'premium' as const : 'free' as const,
     isAdmin:   row.isAdmin,
+    /** SMS marketing roziligi (opt-in) — Profil toggle holati */
+    smsOptIn:  row.smsOptIn,
   }
 }
 

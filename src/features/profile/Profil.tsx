@@ -173,6 +173,28 @@ export default function Profil() {
           disabled={phoneLoading || !!user?.phone}
         />
 
+        {/* SMS marketing roziligi — FAQAT telefon ulangan bo'lsa ko'rinadi */}
+        {user?.phone && (
+          <Item
+            icon={MessageCircle}
+            label={tt('smsOptInLabel')}
+            right={
+              <Toggle
+                checked={!!user.smsOptIn}
+                onChange={(next) => {
+                  const id = user?.id
+                  if (!id) return
+                  // Optimistik yangilash; xatoda qaytamiz
+                  useAppStore.setState({ user: { ...user, smsOptIn: next } })
+                  api.setSmsConsent(id, next).catch(() => {
+                    useAppStore.setState({ user: { ...user, smsOptIn: !next } })
+                  })
+                }}
+              />
+            }
+          />
+        )}
+
         {/* Yopiq guruh */}
         <Item icon={Lock} label={tt('closedGroup')}
           right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}

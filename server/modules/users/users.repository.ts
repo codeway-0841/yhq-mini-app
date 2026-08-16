@@ -106,6 +106,27 @@ export const referralsRepository = {
 }
 
 export const usersRepository = {
+  /** SMS marketing consent (opt-in/out) — audit timestamp bilan. */
+  async setSmsOptIn(userId: string, optIn: boolean): Promise<boolean> {
+    const rows = await executeRows<{ id: string }>(sql`
+      UPDATE users SET
+        sms_opt_in = ${optIn},
+        sms_opted_in_at = CASE WHEN ${optIn} THEN now() ELSE NULL END,
+        updated_at = now()
+      WHERE id = ${userId}
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  /** SMS marketing uchun opt-in auditoriya soni (admin preview) */
+  async countSmsOptIn(): Promise<number> {
+    const rows = await executeRows<{ n: number }>(sql`
+      SELECT COUNT(*)::int AS n FROM users WHERE sms_opt_in AND phone IS NOT NULL
+    `)
+    return Number(rows[0]?.n ?? 0)
+  },
+
   /**
    * Upsert user + progress + settings BITTA SQL statement'da (CTE).
    * Alohida INSERT'larda bitta qadam muvaffaqiyatsiz bo'lsa user yarim

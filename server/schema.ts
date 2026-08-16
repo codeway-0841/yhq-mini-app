@@ -27,6 +27,10 @@ export const users = pgTable('users', {
   phone:     text('phone'),
   email:     text('email'),
   emailVerifiedAt: timestamp('email_verified_at'),
+  /** SMS marketing CONSENT (opt-in) — telefon ulash ≠ rozilik; user O'ZI yoqadi.
+   *  Audit uchun timestamp bilan (kim, qachon rozilik berdi). */
+  smsOptIn:      boolean('sms_opt_in').default(false).notNull(),
+  smsOptedInAt:  timestamp('sms_opted_in_at'),
   tariff:    tariffEnum('tariff').default('free').notNull(),
   /** Referal mukofoti: shu san'gacha premium (tariff='premium' umrbod ham bor) */
   premiumUntil: timestamp('premium_until'),
@@ -626,3 +630,40 @@ export const tournamentPrizes = pgTable('tournament_prizes', {
 
 
 
+
+/**
+ * SMS marketing kampaniyalari — FAQAT sms_opt_in=TRUE userlarga
+ * (verified telefonlar, Eskiz.uz orqali). Chunk'li dispatch: har
+ * /admin/sms/campaigns/:id/send chaqiruvi bitta batch yuboradi
+ * (Vercel serverless timeout'ga mos) — admin UI remaining=0 bo'lguncha
+ * davom ettiradi.
+ */
+export const smsCampaigns = pgTable('sms_campaigns', {
+  id:           serial('id').primaryKey(),
+  title:        text('title').notNull(),
+  message:      text('message').notNull(),
+  /** draft → sending (recipientlar yaratilgan, chunk'lar ketmoqda) → sent */
+  status:       text('status').$type<'draft' | 'sending' | 'sent'>().default('draft').notNull(),
+  targetCount:  integer('target_count').default(0).notNull(),
+  sentCount:    integer('sent_count').default(0).notNull(),
+  failedCount:  integer('failed_count').default(0).notNull(),
+  createdAt:    timestamp('created_at').defaultNow().notNull(),
+  finishedAt:   timestamp('finished_at'),
+})
+
+/** Kampaniya qabul qiluvchilari — audience snapshot (birinchi dispatch'da
+ *  freeze qilinadi: keyin opt-out qilganlar ham shu kampaniyaga tushmaydi,
+ *  histoya uchun saqlanadi). Phone snapshot — user keyin raqam almasatsa ham. */
+export const smsCampaignRecipients = pgTable('sms_campaign_recipients', {
+  id:         serial('id').primaryKey(),
+  campaignId: integer('campaign_id').notNull().references(() => smsCampaigns.id, { onDelete: 'cascade' }),
+  /** FK yo'q: user o'chirilsa ham yetkazib berish tarixi saqlanadi */
+  userId:     text('user_id').notNull(),
+  phone:      text('phone').notNull(),
+  status:     text('status').$type<'pending' | 'sent' | 'failed'>().default('pending').notNull(),
+  error:      text('error'),
+  sentAt:     timestamp('sent_at'),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_sms_recipients_campaign').on(t.campaignId, t.status),
+])

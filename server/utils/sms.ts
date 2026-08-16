@@ -48,6 +48,39 @@ async function getEskizToken(): Promise<string> {
 }
 
 /**
+ * Ixtiyoriy matnli SMS — FAQAT foydalanuvchi ROZILIK bergAN (sms_opt_in)
+ * marketing kampaniyalari uchun. OTP emas.
+ * @param phone E.164: +998901234567
+ */
+export async function sendSmsMessage(phone: string, message: string): Promise<void> {
+  if (!config.sms.enabled) {
+    if (config.env === 'development') {
+      console.warn(`[SMS DEV] ${phone} → ${message.slice(0, 60)}...`)
+      return
+    }
+    throw new Error('SMS_ENABLED=false in production (set ESKIZ_EMAIL + ESKIZ_PASSWORD)')
+  }
+  const token = await getEskizToken()
+  const response = await fetch('https://notify.eskiz.uz/api/message/sms/send', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      mobile_phone: phone.replace(/^\+/, ''),
+      message,
+      from: '4546',
+      callback_url: config.sms.callbackUrl || '',
+    }),
+  })
+  if (!response.ok) {
+    cachedToken = null
+    throw new Error(`SMS send failed: ${response.status}`)
+  }
+}
+
+/**
  * SMS yuborish — OTP kodi telefon raqamga.
  * @param phone E.164 format: +998901234567
  * @param code 6 raqamli kod

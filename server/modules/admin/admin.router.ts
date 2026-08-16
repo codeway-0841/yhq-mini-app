@@ -444,4 +444,54 @@ router.post(
   }),
 )
 
+// ── SMS MARKETING (FAQAT sms_opt_in userlar) ──
+
+const SmsCampaignSchema = z.object({
+  title:   z.string().min(3).max(80),
+  message: z.string().min(10).max(300),
+})
+
+// Auditoriya soni (compose preview)
+router.get('/admin/sms/audience', wrap(async (_req, res) => {
+  const { smsCampaignService } = await import('./sms-campaign.service')
+  res.json({ optedIn: await smsCampaignService.audienceCount() })
+}))
+
+// Yangi draft kampaniya
+router.post('/admin/sms/campaigns', validate({ body: SmsCampaignSchema }), wrap(async (req, res) => {
+  const { smsCampaignService } = await import('./sms-campaign.service')
+  const { title, message } = req.body as z.infer<typeof SmsCampaignSchema>
+  try {
+    const campaign = await smsCampaignService.create(title, message)
+    res.status(201).json({ ok: true, campaign })
+  } catch (err) {
+    const msg = String((err as Error)?.message ?? err)
+    if (msg === 'message_too_short' || msg === 'message_too_long') {
+      throw new AppError(400, msg)
+    }
+    throw err
+  }
+}))
+
+// Kampaniyalar ro'yxati (+ statistika)
+router.get('/admin/sms/campaigns', wrap(async (_req, res) => {
+  const { smsCampaignService } = await import('./sms-campaign.service')
+  res.json({ campaigns: await smsCampaignService.list() })
+}))
+
+// Bitta chunk yuborish — admin UI remaining=0 bo'lguncha takrorlaydi
+router.post('/admin/sms/campaigns/:id/send', rateLimit({ maxPerMinute: 12 }), wrap(async (req, res) => {
+  const { smsCampaignService } = await import('./sms-campaign.service')
+  const id = Number(req.params['id'])
+  if (!Number.isInteger(id) || id <= 0) throw new AppError(400, 'Invalid campaign id')
+  try {
+    res.json({ ok: true, ...(await smsCampaignService.dispatchChunk(id)) })
+  } catch (err) {
+    const msg = String((err as Error)?.message ?? err)
+    if (msg === 'not_found') throw new AppError(404, 'Campaign not found')
+    if (msg === 'already_sent') throw new AppError(409, 'Campaign already fully sent')
+    throw err
+  }
+}))
+
 export default router

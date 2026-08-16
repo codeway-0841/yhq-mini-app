@@ -120,6 +120,8 @@ export interface ApiUser {
   tariff: 'free' | 'premium'
   /** Admin panel (savol CRUD) huquqi */
   isAdmin?: boolean
+  /** SMS marketing roziligi (opt-in) — faqat user o'zi yoqadi */
+  smsOptIn?: boolean
 }
 
 export interface ApiProgress {
@@ -471,6 +473,26 @@ export const api = {
   deleteAdminPromoCode: (id: number) =>
     request<{ ok: boolean; id: number }>('DELETE', `/admin/promo-codes/${id}`),
 
+  // ── SMS marketing (opt-in) ─────────────────────────────────────────────────
+  setSmsConsent: (userId: string, optIn: boolean) =>
+    request<{ ok: true }>('PATCH', `/users/${uid(userId)}/sms-consent`, { optIn }),
+
+  getSmsAudience: () =>
+    request<{ optedIn: number }>('GET', '/admin/sms/audience'),
+  createSmsCampaign: (data: { title: string; message: string }) =>
+    request<{ ok: true; campaign: AdminSmsCampaign }>('POST', '/admin/sms/campaigns', data),
+  getSmsCampaigns: () =>
+    request<{ campaigns: AdminSmsCampaign[] }>('GET', '/admin/sms/campaigns'),
+  sendSmsCampaignChunk: (id: number) =>
+    request<{
+      ok: true
+      status: AdminSmsCampaign['status']
+      batchSent: number
+      batchFailed: number
+      remaining: number
+      campaign: AdminSmsCampaign
+    }>('POST', `/admin/sms/campaigns/${id}/send`, {}),
+
   // ── Admin Stats & Users ───────────────────────────────────────────────────
   getAdminStats: () =>
     request<AdminStats>('GET', '/admin/stats'),
@@ -557,6 +579,18 @@ export interface AdminPromoCode {
   expiresAt: string | null
   isActive: boolean
   createdAt: string
+}
+
+export interface AdminSmsCampaign {
+  id: number
+  title: string
+  message: string
+  status: 'draft' | 'sending' | 'sent'
+  targetCount: number
+  sentCount: number
+  failedCount: number
+  createdAt: string
+  finishedAt: string | null
 }
 
 export interface AdminStats {
