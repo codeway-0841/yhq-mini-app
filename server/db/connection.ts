@@ -72,13 +72,8 @@ export async function executeRows<T = Record<string, unknown>>(query: SQL, txOrD
  *   bloklar uchun `transactionHttp()` dan foydalaning.
  */
 export async function transaction<T>(callback: (tx: DB) => Promise<T>): Promise<T> {
-  if (!isNeon && postgresClient) {
-    // postgres-js: native transaction with dedicated connection.
-    // begin() callback'iga TransactionSql keladi (drizzle Sql'dan farqli) —
-    // tip darajasida cast, runtime'da drizzlePg TransactionSql bilan ishlaydi.
-    return postgresClient.begin((tx) =>
-      callback(drizzlePg(tx as unknown as postgres.Sql, { schema }) as unknown as DB),
-    ) as unknown as Promise<T>
+  if (!isNeon && instance && typeof (instance as any).transaction === 'function') {
+    return (instance as any).transaction(callback)
   }
   // neon-http: izolyatsiya yo'q — chaqiruvchi CTE atomikligiga tayanadi
   return callback(db)

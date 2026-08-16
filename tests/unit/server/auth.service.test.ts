@@ -7,6 +7,7 @@ import { settingsRepository } from '../../../server/modules/settings/settings.re
 import { savedRepository } from '../../../server/modules/saved/saved.repository'
 import { hashPassword } from '../../../server/utils/password'
 import { AppError } from '../../../server/middleware/error-handler'
+import { config } from '../../../server/config'
 
 describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () => {
   beforeEach(() => {
@@ -216,17 +217,23 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
 
   describe('Telegram Login Widget', () => {
     it('throws 401 invalid_widget_signature for corrupted HMAC signature', async () => {
-      await expect(
-        authService.loginWithTelegramWidget({
-          id: 123456789,
-          first_name: 'Test',
-          last_name: '',
-          username: 'test',
-          photo_url: '',
-          auth_date: Math.floor(Date.now() / 1000),
-          hash: '0'.repeat(64),
-        }),
-      ).rejects.toThrowError(new AppError(401, 'invalid_widget_signature'))
+      const origToken = config.telegram.botToken
+      ;(config.telegram as any).botToken = 'mock-bot-token:12345'
+      try {
+        await expect(
+          authService.loginWithTelegramWidget({
+            id: 123456789,
+            first_name: 'Test',
+            last_name: '',
+            username: 'test',
+            photo_url: '',
+            auth_date: Math.floor(Date.now() / 1000),
+            hash: '0'.repeat(64),
+          }),
+        ).rejects.toThrowError(new AppError(401, 'invalid_widget_signature'))
+      } finally {
+        ;(config.telegram as any).botToken = origToken
+      }
     })
   })
 })
