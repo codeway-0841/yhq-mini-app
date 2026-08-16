@@ -73,7 +73,7 @@ export default function ResultsModal({
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
-        <div className="grid grid-cols-3 gap-2 mb-5">
+        <div className="grid grid-cols-3 gap-2 mb-5 animate-scorePop">
           <div className="rounded-2xl p-3 text-center border" style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', borderColor: 'rgb(var(--p-primary-rgb) / 0.30)' }}>
             <p className="text-base font-black text-duo-green leading-none">✓</p>
             <p className="text-3xl font-black text-fg mt-1">{correct}</p>

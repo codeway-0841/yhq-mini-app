@@ -49,8 +49,10 @@ export default function TestPage() {
   const toggleSaved    = useAppStore((s) => s.toggleSaved)
   const savedQuestions = useAppStore((s) => s.savedQuestions)
   const tt          = useT(settings.language)
-  const questions   = useQuestionsStore((s) => s.questions)
-  const storeTopics = useQuestionsStore((s) => s.topics)
+  const questions        = useQuestionsStore((s) => s.questions)
+  const storeTopics      = useQuestionsStore((s) => s.topics)
+  const questionsLoading = useQuestionsStore((s) => s.loading)
+  const questionsLoaded  = useQuestionsStore((s) => s.loaded)
 
   const mode = (location.state?.mode as string | undefined) ?? null
   /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
@@ -61,6 +63,12 @@ export default function TestPage() {
   // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
   const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
+
+  useEffect(() => {
+    if (!questionsLoaded && !questionsLoading) {
+      void useQuestionsStore.getState().load(settings?.language || 'uz', subjectId)
+    }
+  }, [questionsLoaded, questionsLoading, settings?.language, subjectId])
 
   // State initialization (needed before calling the hook)
   const [current, setCurrent]                 = useState(0)
@@ -460,9 +468,19 @@ export default function TestPage() {
     if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
   }, [])
 
-  if (!q) return (
-    <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
-  )
+  if (!q) {
+    if (questionsLoading || !questionsLoaded) {
+      return (
+        <div className="flex flex-col items-center justify-center min-h-screen text-muted gap-3">
+          <div className="w-8 h-8 rounded-full border-2 border-duo-green border-t-transparent animate-spin" />
+          <p className="text-sm font-semibold">{tt('loadingDots')}</p>
+        </div>
+      )
+    }
+    return (
+      <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
+    )
+  }
 
   const isSaved     = savedQuestions.includes(questionKey(subjectId, q.id))
   const isLast      = current === activeQuestions.length - 1

@@ -45,8 +45,10 @@ export function createApp() {
   // ── Global middleware ────────────────────────────────────────────────────
   app.use(requestLogger)
   app.use(cors({
-    origin:  config.server.allowedOrigins,
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    origin:         config.server.allowedOrigins,
+    methods:        ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-telegram-init-data', 'X-Request-Id'],
+    credentials:    true,
   }))
   app.use(express.json({ limit: '10mb' }))
 

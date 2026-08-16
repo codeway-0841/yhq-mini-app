@@ -71,11 +71,11 @@ html, body, #root {
 /* Safe area for Telegram */
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
 
-/* Route transition — sahifalar orasida yumshoq 160ms fade+slide */
+/* Route transition — sahifalar orasida silliq fade */
 .route-page { animation: routeIn 160ms ease-out both; }
 @keyframes routeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: none; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
@@ -235,14 +235,14 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
-.animate-fadeIn { animation: fadeIn 0.25s ease-out; }
+.animate-fadeIn { animation: fadeIn 0.2s ease-out; }
 
 @keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(16px) scale(0.95); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ── Splash / Onboarding animatsiyalari ───────────────────────────────────── */
@@ -802,14 +802,37 @@ body[data-no-animation='true'] .confetti-piece { display: none; }
   transform: rotateY(180deg);
 }
 
-/* ── Mikro-harakat: sahifa ichki kirish (spring'ga yaqin) ────────────────── */
+/* ── Mikro-harakat: sahifa va modul ichki kirish (silliq fade) ─────────── */
 @keyframes premiumIn {
-  from { opacity: 0; transform: translateY(14px) scale(0.99); }
-  to   { opacity: 1; transform: none; }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
-.animate-premiumIn { animation: premiumIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.animate-premiumIn { animation: premiumIn 0.2s ease-out both; }
 body[data-no-animation='true'] .animate-premiumIn { animation: none; }
 
+/* ── Test & Result Pop micro-interactions ───────────────────────────────── */
+@keyframes correctPop {
+  0%   { transform: scale(0.97); }
+  50%  { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+.animate-correctPop {
+  animation: correctPop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes scorePop {
+  0%   { transform: scale(0.8); opacity: 0; }
+  60%  { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-scorePop {
+  animation: scorePop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+body[data-no-animation='true'] .animate-correctPop,
+body[data-no-animation='true'] .animate-scorePop {
+  animation: none;
+}
 
 /* ── Auth animations ──────────────────────────────────────────────────── */
 @keyframes shake {
@@ -820,13 +843,4 @@ body[data-no-animation='true'] .animate-premiumIn { animation: none; }
 
 .animate-shake {
   animation: shake 0.4s ease-in-out 3;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-out;
 }

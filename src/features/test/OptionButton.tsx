@@ -15,7 +15,7 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   let glow: string | undefined
 
   if (state === 'correct') {
-    style = 'bg-duo-green/15 border-duo-green text-fg'
+    style = 'bg-duo-green/15 border-duo-green text-fg animate-correctPop'
     chip  = 'bg-duo-green border-duo-green text-ponprimary'
     icon  = <span className="text-duo-green font-black text-lg">✓</span>
     glow  = '0 0 20px var(--p-glow)'

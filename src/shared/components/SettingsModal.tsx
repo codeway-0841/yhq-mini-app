@@ -124,7 +124,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
           </Row>
           <Row icon={Zap} iconColor="#94a3b8" label={tt('noAnimation')}>
-            <Toggle label={tt('noAnimation')} checked={local.noAnimation} onChange={(v) => set('noAnimation', v)} />
+            <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
           </Row>
           <Row icon={Shuffle} iconColor="#94a3b8" label={tt('shuffleOptions')}>
             <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />

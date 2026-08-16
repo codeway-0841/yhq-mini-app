@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -16,8 +16,16 @@ export default function Biletlar() {
   const wrongByTicket = useAppStore((s) => s.wrongByTicket)
   const settings      = useAppStore((s) => s.settings)
   const tt            = useT(settings.language)
-  const questions     = useQuestionsStore((s) => s.questions)
-  const subjectId     = useSubjectStore((s) => s.subjectId)
+  const questions        = useQuestionsStore((s) => s.questions)
+  const questionsLoading = useQuestionsStore((s) => s.loading)
+  const questionsLoaded  = useQuestionsStore((s) => s.loaded)
+  const subjectId        = useSubjectStore((s) => s.subjectId)
+
+  useEffect(() => {
+    if (!questionsLoaded && !questionsLoading) {
+      void useQuestionsStore.getState().load(settings.language, subjectId)
+    }
+  }, [questionsLoaded, questionsLoading, settings.language, subjectId])
 
   const TABS = [
     { id: 'all',    label: tt('allTab') },

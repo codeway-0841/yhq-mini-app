@@ -5,7 +5,6 @@ import {
   FullProfileSchema, AuthSessionSchema, AuthResponseSchema, LinkResponseSchema,
 } from '../../../shared/contracts/profile'
 
-const BASE = config.apiBaseUrl
 const TIMEOUT_MS = 8000
 
 /**
@@ -51,7 +50,7 @@ async function request<T>(method: string, path: string, body?: unknown, timeoutM
   const timer = setTimeout(() => controller.abort(), timeoutMs)
   let res: Response
   try {
-    res = await fetch(`${BASE}${path}`, {
+    res = await fetch(`${config.apiBaseUrl}${path}`, {
       method,
       headers,
       body: body ? JSON.stringify(body) : undefined,

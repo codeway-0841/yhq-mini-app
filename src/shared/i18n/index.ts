@@ -155,7 +155,7 @@ const UZ = {
   authPhoneSetOk: "Telefon raqam ulandi ✓", authTgLinkedOk: "Telegram ulandi ✓",
   // Settings modal
   settingsTitle: "Sozlamalar", autoNextCorrect: "To'g'ri javobda avtomatik o'tish",
-  autoNextWrong: "Xato javobda avtomatik o'tish", noAnimation: "Animatsiyasiz o'tish",
+  autoNextWrong: "Xato javobda avtomatik o'tish", noAnimation: "Animatsiyalar",
   shuffleOptions: "Variantlarni aralashtirish", fontSize: "Shrift o'lchami",
   fontStyle: "Shrift uslubi", fontSmall: "Kichik", fontMedium: "O'rtacha",
   fontLarge: "Katta", fontDefault: "Standart", fontSerif: "Serif", fontMono: "Mono",
@@ -409,7 +409,7 @@ const RU: Record<Keys, string> = {
   authLogout: "Выйти из аккаунта", authLogoutConfirm: "Выйти из аккаунта?",
   authPhoneSetOk: "Номер телефона привязан ✓", authTgLinkedOk: "Telegram привязан ✓",
   settingsTitle: "Настройки", autoNextCorrect: "Автопереход при верном ответе",
-  autoNextWrong: "Автопереход при ошибке", noAnimation: "Без анимации",
+  autoNextWrong: "Автопереход при ошибке", noAnimation: "Анимации",
   shuffleOptions: "Перемешивать варианты", fontSize: "Размер шрифта",
   fontStyle: "Стиль шрифта", fontSmall: "Мелкий", fontMedium: "Средний",
   fontLarge: "Крупный", fontDefault: "Стандарт", fontSerif: "Serif", fontMono: "Mono",
