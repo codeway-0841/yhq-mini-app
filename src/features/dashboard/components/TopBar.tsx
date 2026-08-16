@@ -13,9 +13,9 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   return (
     <div className="relative flex-shrink-0">
       {src ? (
-        <img src={src} alt={name} className="w-11 h-11 rounded-full object-cover border border-pline" />
+        <img src={src} alt={name} className="w-11 h-11 rounded-full object-cover border border-pline dashboard-avatar-ring" />
       ) : (
-        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-pblue to-ppurple flex items-center justify-center text-white font-bold text-lg">
+        <div className="w-11 h-11 rounded-full bg-gradient-to-br from-pblue to-ppurple flex items-center justify-center text-white font-bold text-lg dashboard-avatar-ring">
           {letter}
         </div>
       )}
@@ -44,14 +44,14 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
         <button onClick={onProfile} className="flex items-center gap-3 active:opacity-70 transition-opacity min-w-0">
           <Avatar name={name} photoUrl={user?.photoUrl} />
           <div className="text-left min-w-0">
-            <p className="text-[12px] font-medium text-psubtle">{tt('greeting')},</p>
-            <p className="text-[19px] font-bold leading-tight text-pfg tracking-tight truncate">{name}</p>
+            <p className="text-[12px] font-medium text-psubtle dashboard-topbar-subtle">{tt('greeting')},</p>
+            <p className="text-[19px] font-bold leading-tight text-pfg dashboard-topbar-title tracking-tight truncate">{name}</p>
           </div>
         </button>
         <div className="flex items-center gap-2">
           {/* Fan pill — TopBar kompakt (Dashboard kartasi o'rniga) */}
           <button onClick={() => setShowSubjects(true)}
-            className="flex items-center gap-1.5 pl-2 pr-2.5 py-1.5 rounded-full text-[11px] font-semibold active:scale-95 transition-transform"
+            className="dashboard-topbar-btn flex items-center gap-1.5 pl-2 pr-2.5 py-1.5 rounded-full text-[11px] font-semibold active:scale-95 transition-transform"
             style={{
               background: `${subject.color}18`,
               border: `1px solid ${subject.color}40`,
@@ -63,7 +63,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
             <ChevronDown size={11} className="opacity-70" />
           </button>
           {/* Level */}
-          <span className="flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[11px] font-semibold text-ppurple"
+          <span className="dashboard-topbar-level flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[11px] font-semibold text-ppurple"
             style={{
               background: 'rgb(var(--p-purple-rgb) / 0.12)',
               border: '1px solid rgb(var(--p-purple-rgb) / 0.30)',
@@ -71,7 +71,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
             ✦ {level}
           </span>
           <button onClick={onSettings} aria-label="Sozlamalar"
-            className="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl card-premium flex items-center justify-center text-pmuted hover:text-pfg transition-colors active:scale-95">
+            className="dashboard-topbar-settings w-9 h-9 sm:w-11 sm:h-11 rounded-2xl card-premium flex items-center justify-center text-pmuted hover:text-pfg transition-colors active:scale-95">
             <Settings size={18} />
           </button>
         </div>

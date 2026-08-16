@@ -507,6 +507,143 @@ body[data-theme='light'] .card-premium {
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
 }
 
+/* ── Dashboard Light Theme Gradients (Har bir tema uchun) ─────────────────
+   Tepasi temaning jonli aksent rangidagi gradient, pastga qarab toza oq / light canvas'da eriydi. */
+
+/* Default (Kiwi) */
+body[data-theme='light'] .dashboard-page,
+body[data-theme='light'][data-accent='kiwi'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #16a34a 0%, #22c55e 35%, #4ade80 65%, transparent 100%),
+    linear-gradient(180deg, #16a34a 0px, #22c55e 100px, #4ade80 190px, #86efac 280px, #dcfce7 360px, #f0fdf4 430px, #f8fafc 500px, #f8fafc 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌌 Aurora */
+body[data-theme='light'][data-accent='aurora'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #059669 0%, #00d389 35%, #34d399 65%, transparent 100%),
+    linear-gradient(180deg, #059669 0px, #00d389 100px, #34d399 190px, #6ee7b7 280px, #cbf5e4 360px, #eefcf6 430px, #e6fcf3 500px, #e6fcf3 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🍇 Amethyst (Violet) */
+body[data-theme='light'][data-accent='violet'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #6d28d9 0%, #a855f7 35%, #c084fc 65%, transparent 100%),
+    linear-gradient(180deg, #6d28d9 0px, #9333ea 100px, #a855f7 190px, #c084fc 280px, #e9d5ff 360px, #f5edff 430px, #f6efff 500px, #f6efff 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌊 Ocean */
+body[data-theme='light'][data-accent='ocean'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #0369a1 0%, #0ea5e9 35%, #38bdf8 65%, transparent 100%),
+    linear-gradient(180deg, #0369a1 0px, #0284c7 100px, #0ea5e9 190px, #38bdf8 280px, #bae6fd 360px, #e0f2fe 430px, #eaf6fe 500px, #eaf6fe 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌲 Forest */
+body[data-theme='light'][data-accent='forest'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #065f46 0%, #10b981 35%, #34d399 65%, transparent 100%),
+    linear-gradient(180deg, #065f46 0px, #047857 100px, #10b981 190px, #34d399 280px, #a7f3d0 360px, #d1fae5 430px, #e9f7f0 500px, #e9f7f0 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌅 Sunset */
+body[data-theme='light'][data-accent='sunset'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #c2410c 0%, #f97316 35%, #fb923c 65%, transparent 100%),
+    linear-gradient(180deg, #c2410c 0px, #ea580c 100px, #f97316 190px, #fb923c 280px, #fed7aa 360px, #ffedd5 430px, #fdf1e7 500px, #fdf1e7 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌸 Sakura */
+body[data-theme='light'][data-accent='sakura'] .dashboard-page,
+body[data-accent='sakura'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #be185d 0%, #ec4899 35%, #f472b6 65%, transparent 100%),
+    linear-gradient(180deg, #be185d 0px, #db2777 100px, #ec4899 190px, #f472b6 280px, #fbcfe8 360px, #fdf2f8 430px, #fff1f5 500px, #fff1f5 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🌑 Obsidian */
+body[data-theme='light'][data-accent='obsidian'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #09090b 0%, #18181b 35%, #27272a 65%, transparent 100%),
+    linear-gradient(180deg, #09090b 0px, #18181b 100px, #27272a 190px, #52525b 280px, #a1a1aa 360px, #e4e4e7 430px, #f4f4f5 500px, #f4f4f5 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🥇 Gold Elite */
+body[data-theme='light'][data-accent='gold'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #92400e 0%, #d97706 35%, #eab308 65%, transparent 100%),
+    linear-gradient(180deg, #92400e 0px, #b45309 100px, #d97706 190px, #eab308 280px, #fde047 360px, #fef9c3 430px, #fdfaee 500px, #fdfaee 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🩵 Payme */
+body[data-theme='light'][data-accent='payme'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #00767c 0%, #00c0c9 35%, #38dbe3 65%, transparent 100%),
+    linear-gradient(180deg, #00767c 0px, #008f96 100px, #00c0c9 190px, #38dbe3 280px, #a5f3f7 360px, #cffafe 430px, #e6fafb 500px, #e6fafb 100%);
+  background-repeat: no-repeat;
+}
+
+/* Light dashboard topbar kontrast va frosted glass */
+body[data-theme='light'] .dashboard-page .dashboard-topbar-subtle {
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+body[data-theme='light'] .dashboard-page .dashboard-topbar-title {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+body[data-theme='light'] .dashboard-page .dashboard-topbar-btn {
+  background: rgba(255, 255, 255, 0.22) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+body[data-theme='light'] .dashboard-page .dashboard-topbar-level {
+  background: rgba(255, 255, 255, 0.22) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.38) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+body[data-theme='light'] .dashboard-page .dashboard-topbar-settings {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+body[data-theme='light'] .dashboard-page .dashboard-topbar-settings:hover {
+  background: rgba(255, 255, 255, 0.32);
+  color: #ffffff;
+}
+body[data-theme='light'] .dashboard-page .dashboard-avatar-ring {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* ── KIWI tugma tizimi (Duolingo 3D EMAS — tekis, yumshoq glow) ──────────── */
 .btn-premium {
   display: inline-flex;
