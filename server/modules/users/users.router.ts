@@ -8,6 +8,8 @@ import { wrap, AppError }                            from '../../middleware/erro
 import { validate }                                  from '../../middleware/validate'
 import { parseUserId }                               from '../../utils/parse'
 import { usersService, InitInputSchema, PhoneSchema, toApiUser, toApiProgress, toApiSettings } from './users.service'
+import { referralsRepository }                       from './users.repository'
+import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
 import { progressRepository }                        from '../progress/progress.repository'
 import { settingsRepository }                        from '../settings/settings.repository'
 import { savedRepository }                           from '../saved/saved.repository'
@@ -62,6 +64,22 @@ router.patch(
 
     await usersService.updatePhone(uid, (req.body as { phone: string }).phone)
     res.json({ ok: true })
+  }),
+)
+
+// GET /api/referrals/:userId — referal statistikasi (Profil kartasi)
+router.get(
+  '/referrals/:userId',
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const stats = await referralsRepository.getStats(uid)
+    res.json({
+      ...stats,
+      rewardDays: REFERRAL_REWARD_DAYS,
+      cap:        REFERRAL_MAX_REWARDED,
+    })
   }),
 )
 

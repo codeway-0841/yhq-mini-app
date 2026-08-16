@@ -1,4 +1,4 @@
-import { useState, useSyncExternalStore } from 'react'
+import { useState, useEffect, useSyncExternalStore } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import {
@@ -9,6 +9,7 @@ import {
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { api } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
@@ -38,6 +39,14 @@ export default function Profil() {
   const customAvatar   = useAppStore((s) => s.customAvatar)
   const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
   const tt = useT(settings.language)
+
+  // ── Referal statistikasi (Profil kartasidagi "N do'st · +M kun" qatori) ──
+  const [refStats, setRefStats] = useState<{ invited: number; rewarded: number; pending: number; rewardDays: number } | null>(null)
+  useEffect(() => {
+    const uid = user?.id
+    if (!uid || uid === '0') return
+    api.getReferrals(uid).then(setRefStats).catch(() => {})
+  }, [user?.id])
 
   // Offline Sync Center: serverga yetmagan mutation'lar soni (0 bo'lsa yashirin)
   const syncUserId = user?.id ?? ''
@@ -178,6 +187,12 @@ export default function Profil() {
         <div className="flex-1 min-w-0">
           <p className="text-[13px] font-black text-fg">{tt('refTitle')}</p>
           <p className="text-[10.5px] text-muted mt-0.5 leading-snug">{tt('refDesc')}</p>
+          {refStats && refStats.invited > 0 && (
+            <p className="text-[10.5px] text-duo-green font-bold mt-1 leading-snug">
+              {refStats.rewarded} {tt('refStatFriends')} · +{refStats.rewarded * refStats.rewardDays} {tt('refStatDays')}
+              {refStats.pending > 0 ? ` · ${refStats.pending} ${tt('refStatPending')}` : ''}
+            </p>
+          )}
         </div>
         <button type="button"
           onClick={() => {

@@ -8,6 +8,8 @@
 
 import { z }                      from 'zod'
 import { usersRepository, referralsRepository } from './users.repository'
+import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
+import { parseUserId }            from '../../utils/parse'
 import { users, progress, userSettings } from '../../schema'
 
 type UserRow = typeof users.$inferSelect
@@ -114,17 +116,21 @@ export const usersService = {
     ])
 
     // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
-    // Qayd + mukofot bitta atomik statement'da (referrals UNIQUE — bir martalik).
+    // Referee WELCOME sovg'asini (+3 kun) DARHOL oladi (yangi o'quvchi test
+    // yechishga majbur emas); referrer mukofoti referee 10 ta har xil savol
+    // yechganda beriladi (progress.repository CTE — anti-farming).
+    // Referrer ID'si HAR QANDAY canonical shaklda bo'lishi mumkin (TG raqam,
+    // p_<digits>, e_<hex>) — telefon akkauntli userlarning havolasi ham sanaladi.
     // Reward xatosi ASOSIY init oqimini sindirmasligi kerak (mukofot ixtiyoriy).
-    const refMatch = /^ref_(\d{1,19})$/.exec(raw.start_param ?? '')
+    const refMatch = /^ref_(.+)$/.exec(raw.start_param ?? '')
     if (refMatch && !existing) {
       try {
-        const referrerId = refMatch[1]   // referallar Telegram-only (raqam-string id)
-        if (referrerId !== uid && await usersRepository.findById(referrerId)) {
-          await referralsRepository.tryCreateWithReward(referrerId, uid, REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED)
+        const referrerId = parseUserId(refMatch[1])
+        if (referrerId && referrerId !== uid && await usersRepository.findById(referrerId)) {
+          await referralsRepository.createPending(referrerId, uid)
         }
       } catch (err) {
-        console.error('[referral] reward xatosi (init davom etadi):', err)
+        console.error('[referral] qayd xatosi (init davom etadi):', err)
       }
     }
 
@@ -137,10 +143,18 @@ export const usersService = {
     }
   },
 
-  /** Update phone number after Telegram requestContact validation. */
+  /** Update phone number after Telegram requestContact validation.
+   *  Telefon ulash REFERAL trigger'i: referee raqam ulasa — referrerga
+   *  mukofot (marketing: verified raqam + anti-fraud: real kontakt). */
   async updatePhone(userId: string, phone: string): Promise<void> {
     const updated = await usersRepository.updatePhone(userId, phone)
     if (!updated) throw new AppError(404, 'User not found')
+    try {
+      await referralsRepository.rewardIfPhoneLinked(userId)
+    } catch (err) {
+      // Mukofot ixtiyoriy — asosiy phone oqimini sindirmaydi
+      console.error('[referral] phone-link reward xatosi (updatePhone davom etadi):', err)
+    }
   },
 
   /** 3 kunlik BEPUL trial — conditional UPDATE parallel requestlarda ham bir marta. */
@@ -154,7 +168,5 @@ export const usersService = {
 }
 
 export const TRIAL_DAYS = 3
-/** Referrerga beriladigan mukofot (kun) — referee faqat 1 marta hisoblanadi */
-export const REFERRAL_REWARD_DAYS = 3
-/** Bitta referrer mukofot olishi mumkin bo'lgan MAKSIMAL referallar soni (farming himoyasi) */
-export const REFERRAL_MAX_REWARDED = 50
+/** Referal konstantalari — YAGONA MANBA `referral.constants.ts` (re-export) */
+export { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED }

@@ -319,6 +319,16 @@ export const api = {
     'POST', `/progress/${uid(userId)}/result`, data,
   ),
 
+  /** Referal statistikasi (Profil kartasi) */
+  getReferrals: (userId: string): Promise<{
+    invited: number
+    rewarded: number
+    pending: number
+    rewardDays: number
+    cap: number
+    eligibilityAnswers: number
+  }> => request('GET', `/referrals/${uid(userId)}`),
+
   patchProgress: (userId: string, patch: Partial<ApiProgress>) =>
     request<{ ok: true }>('PATCH', `/progress/${uid(userId)}`, patch),
 

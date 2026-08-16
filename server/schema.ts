@@ -439,6 +439,10 @@ export const referrals = pgTable('referrals', {
   id:         serial('id').primaryKey(),
   referrerId: text('referrer_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
   refereeId:  text('referee_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** pending = qayd etildi, mukofot referee ELIGIBILITY Answers yechmaguncha kutmoqda;
+   *  rewarded = mukofot ikkala tomonga berildi (progress CTE atomik yozadi). */
+  status:     text('status').$type<'pending' | 'rewarded'>().default('pending').notNull(),
+  rewardedAt: timestamp('rewarded_at'),
   createdAt:  timestamp('created_at').defaultNow().notNull(),
 }, (t) => [unique('uq_referral_referee').on(t.refereeId)])
 

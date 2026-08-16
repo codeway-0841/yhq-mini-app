@@ -208,11 +208,13 @@ export default function App() {
         useAppStore.setState({ initialized: true })
       }
 
-      // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link)
+      // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link).
+      // Canonical id HAR QANDAY shaklda (TG raqam, p_<digits>, e_<hex>) — telefon
+      // akkauntli userlarning havolasi ham sanaladi.
       const refQ = new URLSearchParams(window.location.search).get('ref')
       const startParam =
         getStartParam() ??
-        (refQ && /^\d{1,19}$/.test(refQ) ? `ref_${refQ}` : undefined)
+        (refQ && /^[A-Za-z0-9_]{2,40}$/.test(refQ) ? `ref_${refQ}` : undefined)
       api.init({
         id:         String(tgUser.id),
         first_name: tgUser.first_name,

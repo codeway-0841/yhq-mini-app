@@ -6,6 +6,7 @@
 import { and, eq, isNull, sql } from 'drizzle-orm'
 import { db, executeRows, type DB } from '../../db/connection'
 import { users } from '../../schema'
+import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
 
 export interface CreateOrUpdateUserInput {
   id:        string
@@ -17,37 +18,88 @@ export interface CreateOrUpdateUserInput {
 
 export const referralsRepository = {
   /**
-   * Referal qaydi + referrer mukofoti (+N kun premium) BITTA SQL statement'da.
-   * referee UNIQUE constraint ikkala rajotda ham bir marta hisoblanishini
-   * kafolatlaydi; insert muvaffaqiyatli bo'lgan taqdirdagina UPDATE ishlaydi.
+   * Yangi referal QAYDI + referee'ning WELCOME sovg'asi (+N kun premium) —
+   * BITTA atomik statement'da. Referee yangi o'quvchi: sovg'asini darhol oladi,
+   * test yechishga MAJBUR EMAS (darslarni Premium bilan o'rganadi).
+   *
+   * Referrer mukofoti alohida: referee REFERRAL_ELIGIBILITY_ANSWERS ta HAR XIL
+   * savol yechganda progress.repository'dagi CTE beradi (fake-akkaunt
+   * farming'i uchun real aktivlik talab qilinadi).
+   * referee UNIQUE — bir user faqat bir marta referal bo'la oladi.
+   * @returns qayd yaratildimi (false = bu referee allaqachon bor)
    */
-  /**
-   * Referrerga reward CAP: referrer allaqachon `maxRewarded` ta mukofotlangan
-   * referallarga ega bo'lsa, yangi referee QAYD ETILADI lekin reward YO'Q
-   * (cheksiz referral-farming'ga qarshi — MB-5). Parallel ikki yangi referee
-   * ±1-2 oshib o'tishi mumkin (lock'siz count) — farming himoyasi BUZILMAYDI.
-   */
-  async tryCreateWithReward(referrerId: string, refereeId: string, days: number, maxRewarded: number): Promise<boolean> {
-    const rows = await executeRows<{ rewarded: number }>(sql`
+  async createPending(referrerId: string, refereeId: string): Promise<boolean> {
+    const rows = await executeRows<{ created: boolean }>(sql`
       WITH inserted AS (
         INSERT INTO referrals (referrer_id, referee_id)
         VALUES (${referrerId}, ${refereeId})
         ON CONFLICT (referee_id) DO NOTHING
-        RETURNING referrer_id
-      ), existing AS (
-        -- DIQQAT: data-modifying CTE'lar snapshot'da ko'rinmaydi — bu ALDAQACHON
-        -- mavjud referallar soni (joriy insert HISOBGA olinmaydi) → n+1-chi reward = cap ichida
-        SELECT COUNT(*)::int AS n FROM referrals WHERE referrer_id = ${referrerId}
-      ), rewarded AS (
+        RETURNING id
+      ), welcome AS (
         UPDATE users SET
-          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
+          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${REFERRAL_REWARD_DAYS}::int),
           updated_at = now()
-        WHERE id = ${referrerId}
+        WHERE id = ${refereeId}
           AND EXISTS (SELECT 1 FROM inserted)
-          AND (SELECT n FROM existing) < ${maxRewarded}::int
         RETURNING id
       )
-      SELECT COUNT(*)::int AS rewarded FROM rewarded
+      SELECT EXISTS (SELECT 1 FROM inserted) AS created
+    `)
+    return rows[0]?.created === true
+  },
+
+  /** Referal statistikasi (Profil kartasi uchun). */
+  async getStats(userId: string): Promise<{
+    invited: number
+    rewarded: number
+    pending: number
+  }> {
+    const rows = await executeRows<{ invited: number; rewarded: number }>(sql`
+      SELECT
+        COUNT(*)::int                                                   AS invited,
+        COUNT(*) FILTER (WHERE status = 'rewarded')::int                AS rewarded
+      FROM referrals
+      WHERE referrer_id = ${userId}
+    `)
+    const invited  = Number(rows[0]?.invited ?? 0)
+    const rewarded = Number(rows[0]?.rewarded ?? 0)
+    return { invited, rewarded, pending: invited - rewarded }
+  },
+
+  /**
+   * Referee TELEFONINI ULADI — referrer mukofoti (+N kun) BITTA atomik
+   * statement'da: pending → rewarded + referrer premium (CAP ichida).
+   *
+   * Telefon ulash = marketing kanali (verified raqam) VA oqimning yagona
+   * users.phone yozish nuqtasi shu (auth linkPhone alohida — identity'lar
+   * jadvaliga yozadi, users.phone'ga emas).
+   * Cap count snapshot'da (joriy grant hisobga kirmaydi) — ±1 xato qabul
+   * qilinadi, farming himoyasi buzilmaydi (haqiqiy gate — har referee
+   * yangi TG akkaunt talab qiladi).
+   * @returns mukofot berildimi (false = pending referal yo'q / cap to'lgan)
+   */
+  async rewardIfPhoneLinked(refereeId: string): Promise<boolean> {
+    const rows = await executeRows<{ rewarded: number }>(sql`
+      WITH pend AS (
+        SELECT id, referrer_id FROM referrals
+        WHERE referee_id = ${refereeId} AND status = 'pending'
+        LIMIT 1
+      ), upd AS (
+        UPDATE referrals r SET status = 'rewarded', rewarded_at = now()
+        FROM pend WHERE r.id = pend.id
+        RETURNING r.referrer_id
+      ), rew AS (
+        UPDATE users SET
+          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${REFERRAL_REWARD_DAYS}::int),
+          updated_at = now()
+        WHERE id IN (
+          SELECT u.referrer_id FROM upd u
+          WHERE (SELECT COUNT(*) FROM referrals x
+                 WHERE x.referrer_id = u.referrer_id AND x.status = 'rewarded') < ${REFERRAL_MAX_REWARDED}::int
+        )
+        RETURNING id
+      )
+      SELECT COUNT(*)::int AS rewarded FROM rew
     `)
     return Number(rows[0]?.rewarded) > 0
   },
