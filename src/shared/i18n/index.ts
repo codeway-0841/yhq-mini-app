@@ -517,7 +517,9 @@ const RU: Record<Keys, string> = {
   promoCodeLimitReached: "Лимит использований промокода исчерпан",
 }
 
-const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
+export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }
+export { UZ, RU }
+export type { Keys }
 
 export function t(lang: Lang, key: Keys): string {
   return LANGS[lang]?.[key] ?? UZ[key]

@@ -98,7 +98,7 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
       lastName: users.lastName,
       tariff: users.tariff,
       premiumUntil: users.premiumUntil,
-      notificationsEnabled: userSettings.notificationsEnabled,
+      notificationsEnabled: sql<boolean>`true`,
       league: sql<string>`COALESCE(${progress.league}, 'bronze')`,
       score: sql<number>`COALESCE(${weeklyScores.score}, 0)`,
     })
