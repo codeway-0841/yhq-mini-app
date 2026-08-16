@@ -258,8 +258,9 @@ export const api = {
   changePassword: (currentPassword: string, newPassword: string) =>
     request<{ ok: true }>('POST', '/auth/change-password', { currentPassword, newPassword }),
 
-  // ── Auth — Legacy phone + password ────────────────────────────────────────
-  registerPhone: (data: { phone: string; password: string; firstName: string }) =>
+  // ── Auth — phone + password (OTP tasdiqlash bilan) ────────────────────────
+  /** Register: SMS kod bilan tasdiqlangandan keyin (raqam egasi isboti). */
+  registerPhone: (data: { phone: string; password: string; firstName: string; otp: string }) =>
     request<unknown>('POST', '/auth/phone/register', data).then(parseAuthResponse),
 
   loginPhone: (data: { phone: string; password: string }) =>
@@ -290,7 +291,7 @@ export const api = {
     request<{ ok: true }>('POST', '/auth/logout', {}).catch(() => ({ ok: true as const })),
 
   /** Joriy akkauntga telefon raqam ulash (parol = proof of ownership). */
-  linkPhone: (data: { phone: string; password: string; firstName?: string }) =>
+  linkPhone: (data: { phone: string; password: string; firstName?: string; otp?: string }) =>
     request<unknown>('POST', '/auth/phone/link', data).then(parseLinkResponse),
 
   /** Telefon sessiyasidan Telegram'ga ulash uchun bot deep-link kodi (10 daq). */

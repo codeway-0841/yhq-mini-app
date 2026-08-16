@@ -7,3 +7,5 @@
  */
 export { authErrorKey, isValidPhone, isValidPassword, toE164 } from './validation'
 export { usePhoneInput } from './hooks/usePhoneInput'
+// Profil (LinkAccountSection) adaptiv OTP bosqichi uchun — barrel orqali (qoida 1a)
+export { default as OTPInput } from './components/OTPInput'

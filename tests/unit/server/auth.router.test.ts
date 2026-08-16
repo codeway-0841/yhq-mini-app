@@ -83,6 +83,7 @@ describe('server/modules/auth/auth.router.ts - Router Layer Tests', () => {
           phone: '+998901234567',
           password: 'Password123!',
           firstName: 'Vali',
+          otp: '123456',
         })
         .expect(201)
 

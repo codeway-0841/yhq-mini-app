@@ -23,8 +23,9 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
   })
 
   describe('registerWithPhone', () => {
-    it('successfully registers new user with phone + password', async () => {
+    it('successfully registers new user with phone + password (OTP tasdiqlangach)', async () => {
       vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(authRepository, 'consumeOTP').mockResolvedValue(true)
       vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
       vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(true)
       vi.spyOn(authRepository, 'createSession').mockResolvedValue(undefined as any)
@@ -68,6 +69,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
         phone: '+998901234567',
         password: 'Password123!',
         firstName: 'Test User',
+        otp: '123456',
       })
 
       expect(result.sessionToken).toHaveLength(64)
@@ -95,6 +97,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
 
     it('throws 409 phone_taken if createIdentity returns false', async () => {
       vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(authRepository, 'consumeOTP').mockResolvedValue(true)
       vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
       vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(false)
 
@@ -103,6 +106,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
           phone: '+998901234567',
           password: 'Password123!',
           firstName: 'Test User',
+          otp: '123456',
         }),
       ).rejects.toThrowError(new AppError(409, 'phone_taken'))
     })

@@ -48,6 +48,10 @@ export const PhoneRegisterSchema = z.object({
   phone:     PhoneE164Schema,
   password:  PasswordSchema,
   firstName: z.string().trim().min(1, 'Ism kiritilishi shart').max(64),
+  /** RAQAM EGALLIK ISBOTI — register FAQAT SMS kod tasdiqlangandan keyin.
+   *  Aks holda kimdir boshqa kishining raqamini parol bilan "egallab" (squatting)
+   *  haqiqiy egasini 409 phone_taken'ga uchratishi mumkin edi. */
+  otp:       z.string().regex(/^\d{6}$/, '6 raqamli kod kiriting'),
 })
 export type PhoneRegisterInput = z.infer<typeof PhoneRegisterSchema>
 
@@ -57,12 +61,15 @@ export const PhoneLoginSchema = z.object({
 })
 export type PhoneLoginInput = z.infer<typeof PhoneLoginSchema>
 
-/** Profil'dan telefon ulash — yangi identity bo'lsa parol O'RNATILADI,
- *  mavjud bo'lsa parol TASDIQLANADI (proof of ownership). */
+/** Profil'dan telefon ulash — raqam YANGI (band emas) bo'lsa OTP ISBOTI SHART
+ *  (raqam egasi ekanini tasdiqlash); band raqamda parol proof'i mavjud semantika. */
 export const PhoneLinkSchema = z.object({
   phone:     PhoneE164Schema,
   password:  PasswordSchema,
   firstName: z.string().trim().min(1).max(64).optional(),
+  /** Raqam hali band emas bo'lsa MAJBURIY (server 400 otp_required qaytaradi);
+   *  band raqamga link'da (parol proof) talab qilinmaydi. */
+  otp:       z.string().regex(/^\d{6}$/).optional(),
 })
 export type PhoneLinkInput = z.infer<typeof PhoneLinkSchema>
 
@@ -405,10 +412,13 @@ export const authService = {
 
   // ── Telefon + parol ──────────────────────────────────────────────────────
 
-  /** Ro'yxatdan o'tish — yangi 'p_<digits>' akkaunt + parol + sessiya. */
+  /** Ro'yxatdan o'tish — yangi 'p_<digits>' akkaunt + parol + sessiya.
+   *  OTP MAJBURIY: SMS kod tasdiqlangach (raqam egasi isboti) akkaunt ochiladi. */
   async registerWithPhone(input: PhoneRegisterInput) {
     const existing = await authRepository.findIdentity('phone', input.phone)
     if (existing) throw new AppError(409, 'phone_taken')
+
+    await consumeOTPWithLockout(input.phone, input.otp)
 
     const userId = phoneUserId(input.phone)
     await usersRepository.initAtomic({
@@ -493,8 +503,13 @@ export const authService = {
   async linkPhone(currentUserId: string, input: PhoneLinkInput): Promise<LinkResponse> {
     const identity = await authRepository.findIdentity('phone', input.phone)
 
-    // 1) Raqam hali band emas — joriy userga yangi login usuli qo'shiladi
+    // 1) Raqam hali band emas — OTP ISBOTI SHART (raqam egasi ekanini tasdiqlash;
+    //    aks holda kimdir boshqa kishining raqamini "egallab" olishi mumkin).
+    //    Client adaptiv: otp'siz kelib 400 otp_required oladi → kod so'raydi →
+    //    otp bilan qaytadi. Band raqam yo'llarida (2/3) parol proof'i yetarli.
     if (!identity) {
+      if (!input.otp) throw new AppError(400, 'otp_required: Bu raqam yangi — SMS kod bilan tasdiqlang')
+      await consumeOTPWithLockout(input.phone, input.otp)
       await authRepository.ensureIdentity('phone', input.phone, currentUserId)
       const recheck = await authRepository.findIdentity('phone', input.phone)
       if (recheck?.userId !== currentUserId) {

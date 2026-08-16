@@ -71,15 +71,23 @@ async function giveProgress(userId: string, answered: number) {
     .where(eq(progress.userId, userId))
 }
 
+/** OTP seed (SMS yuborishsiz) — register/link raqam tasdiqlashini talab qiladi */
+async function seedOtp(phone: string, code = '123456') {
+  const { hashOTP } = await import('../../../server/utils/sms')
+  await db.delete(otpCodes).where(eq(otpCodes.phone, phone))
+  await authRepository.createOTP(phone, hashOTP(code), new Date(Date.now() + 5 * 60_000))
+}
+
 const itIfBot = BOT_TOKEN ? it : it.skip
 
 beforeAll(cleanup)
 afterAll(cleanup)
 
 describe('POST /api/auth/phone/register + login', () => {
-  it('register → 201 + sessionToken + profile (p_ id)', async () => {
+  it('register (OTP bilan) → 201 + sessionToken + profile (p_ id)', async () => {
+    await seedOtp(PHONE_B)
     const res = await request(app).post('/api/auth/phone/register')
-      .send({ phone: PHONE_B, password: PASS, firstName: 'Botir' })
+      .send({ phone: PHONE_B, password: PASS, firstName: 'Botir', otp: '123456' })
     expect(res.status).toBe(201)
     expect(res.body.sessionToken).toMatch(/^[0-9a-f]{64}$/)
     expect(res.body.user.id).toBe('p_998900000010')
@@ -88,14 +96,15 @@ describe('POST /api/auth/phone/register + login', () => {
   })
 
   it('register takroran → 409 phone_taken', async () => {
+    await seedOtp(PHONE_B)
     const res = await request(app).post('/api/auth/phone/register')
-      .send({ phone: PHONE_B, password: PASS, firstName: 'Dublikat' })
+      .send({ phone: PHONE_B, password: PASS, firstName: 'Dublikat', otp: '123456' })
     expect(res.status).toBe(409)
   })
 
   it("noto'g'ri telefon → 400", async () => {
     const res = await request(app).post('/api/auth/phone/register')
-      .send({ phone: '+999000000', password: PASS, firstName: 'X' })
+      .send({ phone: '+999000000', password: PASS, firstName: 'X', otp: '123456' })
     expect(res.status).toBe(400)
   })
 
@@ -211,8 +220,9 @@ describe('Account linking — /api/auth/phone/link (adopt-merge)', () => {
 describe('Account linking — tg-link-code (bot oqimi)', () => {
   it('telefon user kod yaratadi → bot ulaydi (TG hech Mini App ochmagan) → sinxron', async () => {
     // yangi telefon user
+    await seedOtp(PHONE_E)
     const reg = await request(app).post('/api/auth/phone/register')
-      .send({ phone: PHONE_E, password: PASS, firstName: 'Elyor' })
+      .send({ phone: PHONE_E, password: PASS, firstName: 'Elyor', otp: '123456' })
     const token = reg.body.sessionToken
     await giveProgress('p_998900000012', 7)
 
@@ -238,8 +248,9 @@ describe('Account linking — tg-link-code (bot oqimi)', () => {
   })
 
   it('eskirgan kod → invalid', async () => {
+    await seedOtp(PHONE_D)
     const reg = await request(app).post('/api/auth/phone/register')
-      .send({ phone: PHONE_D, password: PASS, firstName: 'Dilbar' })
+      .send({ phone: PHONE_D, password: PASS, firstName: 'Dilbar', otp: '123456' })
     const code = await authService.createTelegramLinkCode(reg.body.user.id)
     // kodni o'tmishga o'tkazamiz (expired)
     await db.update(linkCodes).set({ expiresAt: new Date(Date.now() - 1000) })
@@ -261,8 +272,9 @@ describe('Account linking — tg-link-code (bot oqimi)', () => {
 describe('Abuse himoyalari — session revoke, lockout, OTP cooldown', () => {
   it('change-password: boshqa sessiyalar revoke, joriy sessiya saqlanadi', async () => {
     await db.delete(users).where(eq(users.id, 'p_998900000013'))  // retry-safe pre-clean
+    await seedOtp(PHONE_G)
     const reg = await request(app).post('/api/auth/phone/register')
-      .send({ phone: PHONE_G, password: PASS, firstName: 'Gulnoza' })
+      .send({ phone: PHONE_G, password: PASS, firstName: 'Gulnoza', otp: '123456' })
     expect(reg.status).toBe(201)
     const token1 = reg.body.sessionToken
 
@@ -291,9 +303,10 @@ describe('Abuse himoyalari — session revoke, lockout, OTP cooldown', () => {
 
   it('telefon login lockout: 5 noto\'g\'ri parol → account_locked (403)', async () => {
     await db.delete(users).where(eq(users.id, 'p_998900000014'))  // retry-safe pre-clean
+    await seedOtp(PHONE_H)
     const reg = await request(app).post('/api/auth/phone/register')
       .set('X-Forwarded-For', '192.168.100.99')
-      .send({ phone: PHONE_H, password: PASS, firstName: 'Husnora' })
+      .send({ phone: PHONE_H, password: PASS, firstName: 'Husnora', otp: '123456' })
     expect(reg.status).toBe(201)
 
     // 1-4 urinish: 401
@@ -344,5 +357,87 @@ describe('Abuse himoyalari — session revoke, lockout, OTP cooldown', () => {
     // To'g'ri kod ham endi ishlamaydi (kod o'chirilgan)
     await expect(authService.verifyOTPLogin({ phone: PHONE_OTP, code: '123456' }))
       .rejects.toThrow(/invalid_otp/)
+  })
+})
+
+// ── OTP tasdiqlash: register/link (raqam egasi isboti — squatting himoyasi) ──
+describe('Telefon OTP tasdiqlash (register + link)', () => {
+  const PHONE_REG = '+998900000015'   // register testi (yangi raqam)
+  const PHONE_LNK = '+998900000016'   // link (yangi raqam) testi
+  const TG_LINK   = '999444555680'    // link qiluvchi TG user
+  const REG_ID    = 'p_998900000015'
+  const LNK_ID    = 'p_998900000016'
+  const ALL2      = [TG_LINK, REG_ID, LNK_ID]
+
+  beforeAll(async () => {
+    await db.delete(users).where(inArray(users.id, ALL2))
+  })
+  afterAll(async () => {
+    await db.delete(users).where(inArray(users.id, ALL2))
+  })
+
+  it("register OTP'siz → 400 (validatsiya: otp majburiy)", async () => {
+    const res = await request(app).post('/api/auth/phone/register')
+      .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test' })
+    expect(res.status).toBe(400)
+  })
+
+  it("register noto'g'ri kod bilan → 401 invalid_otp", async () => {
+    await seedOtp(PHONE_REG)
+    const res = await request(app).post('/api/auth/phone/register')
+      .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test', otp: '999999' })
+    expect(res.status).toBe(401)
+    expect(res.body.error).toContain('invalid_otp')
+  })
+
+  it("register to'g'ri kod bilan → sessiya + parol identity yaratiladi", async () => {
+    await seedOtp(PHONE_REG, '123456')
+    const res = await request(app).post('/api/auth/phone/register')
+      .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test', otp: '123456' })
+      .expect(201)
+    expect(res.body.sessionToken).toBeTruthy()
+    expect(res.body.user.id).toBe(REG_ID)
+
+    // OTP bir martalik — qayta ishlatib bo'lmaydi
+    const replay = await request(app).post('/api/auth/phone/register')
+      .send({ phone: '+998900000017', password: 'parol12345', firstName: 'X', otp: '123456' })
+    expect(replay.status).toBeLessThan(500)
+    expect(replay.status).toBe(401)
+
+    // Parol bilan endi kirsa bo'ladi (SMS'siz login)
+    const login = await request(app).post('/api/auth/phone/login')
+      .send({ phone: PHONE_REG, password: 'parol12345' })
+      .expect(200)
+    expect(login.body.sessionToken).toBeTruthy()
+  })
+
+  it("link YANGI raqamga OTP'siz → 400 otp_required", async () => {
+    const token = await createTgUserWithSession(TG_LINK)
+    const res = await request(app).post('/api/auth/phone/link')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ phone: PHONE_LNK, password: 'parol12345' })
+    expect(res.status).toBe(400)
+    expect(res.body.error).toContain('otp_required')
+  })
+
+  it("link YANGI raqamga to'g'ri OTP bilan → attached (raqam egasi isbotlandi)", async () => {
+    await seedOtp(PHONE_LNK, '654321')
+    const token = await createTgUserWithSession(TG_LINK)
+    const res = await request(app).post('/api/auth/phone/link')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ phone: PHONE_LNK, password: 'parol12345', otp: '654321' })
+      .expect(200)
+    expect(res.body.status).toBe('attached')
+    expect(res.body.providers).toContain('phone')
+  })
+
+  it("link BAND raqamga parol proof bilan OTP'siz → ishlaydi (semantika saqlanadi)", async () => {
+    // TG_LINK endi PHONE_LNK identity'ga ega — branch 2 (o'z raqami): parol yetarli
+    const token = await createTgUserWithSession(TG_LINK)
+    const res = await request(app).post('/api/auth/phone/link')
+      .set('Authorization', `Bearer ${token}`)
+      .send({ phone: PHONE_LNK, password: 'parol12345' })
+      .expect(200)
+    expect(res.body.status).toBe('attached')
   })
 })

@@ -9,7 +9,7 @@ import { useAppStore } from '../../../shared/store/useAppStore'
 import { getTelegramUser, openTelegramLink } from '../../../platform/telegram'
 import { useT } from '../../../shared/i18n'
 import { Section, Item } from './Section'
-import { authErrorKey, usePhoneInput } from '../../auth'
+import { authErrorKey, usePhoneInput, OTPInput } from '../../auth'
 
 type Provider = 'telegram' | 'phone'
 
@@ -43,6 +43,9 @@ export function LinkAccountSection() {
   const phone = usePhoneInput()
   const [password, setPassword] = useState('')
   const [phoneOpen, setPhoneOpen] = useState(false)
+  /** Adaptiv OTP: server "otp_required" deganda (raqam YANGI) kod bosqichi ochiladi */
+  const [otpStep, setOtpStep] = useState(false)
+  const [otpCode, setOtpCode] = useState('')
 
   const submitPhoneLink = async () => {
     if (busy || !phone.isValid || password.length < 8) return
@@ -52,15 +55,30 @@ export function LinkAccountSection() {
     try {
       // Server har safar YANGI token qaytaradi; 'adopted' bo'lsa user.id
       // o'zgarishi mumkin (p_… → telegram raqam id) — ensureAccountOwner SHART
-      const data = await api.linkPhone({ phone: phone.value, password })
+      const data = await api.linkPhone({ phone: phone.value, password, ...(otpStep ? { otp: otpCode } : {}) })
       setSessionToken(data.sessionToken)
       ensureAccountOwner(data.user.id)
       useAppStore.getState().hydrateFromProfile(data)
       setProviders(data.providers)
       setOkMsg(tt('authPhoneSetOk'))
       setPhoneOpen(false)
+      setOtpStep(false)
+      setOtpCode('')
       setPassword('')
     } catch (e) {
+      if (e instanceof ApiError && e.code === 'otp_required') {
+        // Raqam yangi — SMS kod bilan tasdiqlash kerak
+        try {
+          await api.requestOTP({ phone: phone.value })
+          setOtpStep(true)
+          setOtpCode('')
+          setError(null)
+          return
+        } catch {
+          setError(tt('authRateLimited'))
+          return
+        }
+      }
       setError(
         e instanceof ApiError && e.code === 'accounts_merge_required'
           ? tt('authMergeConflict')
@@ -192,16 +210,24 @@ export function LinkAccountSection() {
             disabled={busy}
             className="w-full bg-canvas border border-line rounded-xl px-3.5 py-3 text-sm text-fg placeholder:text-muted outline-none"
           />
+          {otpStep && (
+            <>
+              <p className="text-[11.5px] text-muted leading-snug">
+                {tt('authSmsCodeSent')} <span className="font-bold text-fg">{phone.value}</span>
+              </p>
+              <OTPInput value={otpCode} onChange={setOtpCode} disabled={busy} error={!!error} />
+            </>
+          )}
           <button
             type="button"
             onClick={() => void submitPhoneLink()}
-            disabled={busy || !phone.isValid || password.length < 8}
+            disabled={busy || !phone.isValid || password.length < 8 || (otpStep && otpCode.length !== 6)}
             className="btn-premium w-full py-2.5 rounded-xl text-[13px] font-bold flex items-center justify-center gap-2"
           >
             {busy && (
               <span className="w-3.5 h-3.5 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />
             )}
-            {tt('authLinkPhone')}
+            {otpStep ? tt('authLinkPhoneConfirm') : tt('authLinkPhone')}
           </button>
         </div>
       )}
