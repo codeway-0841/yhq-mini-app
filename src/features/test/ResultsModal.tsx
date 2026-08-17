@@ -1,11 +1,12 @@
-import { useEffect } from 'react'
-import { RotateCcw, Share2, X, BookOpen } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { RotateCcw, Share2, X, BookOpen, Award } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { shareUrl } from '../../platform/telegram'
 import { playSound } from '../../shared/lib/sounds'
 import Confetti from '../../shared/components/Confetti'
 import DonutChart from './DonutChart'
+import CertificateModal from './CertificateModal'
 import type { TopicBreakdownItem } from './topic-diagnosis'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
@@ -35,6 +36,7 @@ export default function ResultsModal({
   /** Anti-Cheat qoidabuzarlik tufayli to'xtatilganmi */
   disqualifiedByCheat?: boolean
 }) {
+  const [showCertificate, setShowCertificate] = useState(false)
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
@@ -133,6 +135,18 @@ export default function ResultsModal({
           ))}
         </div>
 
+        {/* 🏆 Sertifikat tugmasi (imtihon topshirilganda yoki yuqori natijada) */}
+        {passed && !disqualifiedByCheat && (
+          <button
+            type="button"
+            onClick={() => setShowCertificate(true)}
+            className="btn-premium w-full mb-3 py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
+          >
+            <Award size={18} className="text-black" />
+            {tt('viewCertificate')}
+          </button>
+        )}
+
         {onOpenReview && (
           <button
             type="button"
@@ -177,6 +191,15 @@ export default function ResultsModal({
           <Share2 size={15} />
           {tt('shareResult')}
         </button>
+
+        {showCertificate && (
+          <CertificateModal
+            score={correct}
+            total={total}
+            percent={percent}
+            onClose={() => setShowCertificate(false)}
+          />
+        )}
       </div>
     </div>
   )

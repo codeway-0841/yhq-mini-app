@@ -245,11 +245,11 @@
 - [x] **37. Premium muddati UX** (C-1 fix'dan keyin mazmunli): "obuna N kunda
   tugaydi" ogohlantirish + yangilash deep-link — `PremiumPage.tsx`,
   `users.service.ts` mapping, bot eslatmasi. Eng tez ROI.
-- [ ] **38. Marathon rejimi** — top tavsiya; anti-farm poydevori (item 9)
-  bajarilgach yanada xavfsiz. Yangi rejim `shared/exam-presets` + Testlar
-  katalogi + progress hisobi.
-- [ ] **39. Sertifikat** — imtihondan keyin shareable (canvas → PNG →
-  Telegram share); `ResultsModal.tsx` + yangi route.
+- [x] **38. Marathon rejimi** — top tavsiya; anti-farm poydevori (item 9)
+  bajarilgach yanada xavfsiz. Yangi rejim `TestlarPage` katalogi + `useTestSession`
+  barcha savollar to'xtovsiz rejimida.
+- [x] **39. Sertifikat** — imtihondan keyin shareable (canvas → PNG →
+  Telegram share); `ResultsModal.tsx` + `CertificateModal.tsx` + `certificate-canvas.ts`.
 - [ ] **40. Coins / Battle Pass** — iqtisodiyot: `user_coins` jadval, kunlik
   vazifalar mukofotlari, do'kon item'lari (tema/avatarka).
 - [ ] **41. Octagon kubogi** — mavsumiy PvP turnir jadvali (octagon_wins

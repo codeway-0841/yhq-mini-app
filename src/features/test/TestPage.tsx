@@ -161,6 +161,7 @@ export default function TestPage() {
   // Pause YO'Q — timer wall-clock (useTimer), background'da ham yuradi.
   const totalSeconds =
     examPreset            ? examPreset.durationMinutes * 60 :
+    mode === 'marathon'    ? 300 * 60 :
     mode === 'exam'        ? 30 * 60 :
     mode === 'mock'        ? 25 * 60 :
     mode === 'random100'   ? 120 * 60 :

@@ -57,6 +57,7 @@ export function useTestSession(params: UseTestSessionParams) {
     // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
     if (examPreset) return shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
     switch (mode) {
+      case 'marathon':  return shuffled()
       case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
       case 'mock':      return shuffled().slice(0, Math.min(20, questions.length)) // Mock imtihon — bilet formatida
       case 'random50':  return shuffled().slice(0, Math.min(50, questions.length))

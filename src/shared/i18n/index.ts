@@ -264,6 +264,15 @@ const UZ = {
   promoCodeAlreadyUsed: "Siz bu promokodni avval ishlatgansiz",
   promoCodeExpired: "Promokodning amal qilish muddati tugagan",
   promoCodeLimitReached: "Promokoddan foydalanish limiti tugagan",
+  // Certificate & Marathon (Items 39, 48, 38)
+  certOfficialTitle: "Rasmiy bilim sertifikati",
+  viewCertificate: "🏆 Sertifikatni ko'rish",
+  downloadCertificate: "Rasmni yuklab olish",
+  shareCertificate: "Telegram'da ulashish",
+  marathonTitle: "Marafon",
+  marathonDesc: "To'xtovsiz test — xatogacha yoki barcha savollar",
+  copy: "Nusxalash",
+  copied: "Nusxalandi!",
 } as const
 
 type Keys = keyof typeof UZ
@@ -521,6 +530,15 @@ const RU: Record<Keys, string> = {
   promoCodeAlreadyUsed: "Вы уже использовали этот промокод",
   promoCodeExpired: "Срок действия промокода истек",
   promoCodeLimitReached: "Лимит использований промокода исчерпан",
+  // Certificate & Marathon (Items 39, 48, 38)
+  certOfficialTitle: "Сертификат знаний",
+  viewCertificate: "🏆 Посмотреть сертификат",
+  downloadCertificate: "Скачать сертификат",
+  shareCertificate: "Поделиться в Telegram",
+  marathonTitle: "Марафон",
+  marathonDesc: "Нон-стоп тест — до ошибки или все вопросы",
+  copy: "Копировать",
+  copied: "Скопировано!",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

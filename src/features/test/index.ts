@@ -5,3 +5,4 @@
  */
 export { default as ResultsModal } from './ResultsModal'
 export type { QuestionResult } from './ResultsModal'
+export { default as CertificateModal } from './CertificateModal'

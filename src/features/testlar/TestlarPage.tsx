@@ -72,6 +72,8 @@ export default function TestlarPage() {
       titleKey: 't100',    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' },
     { id: 'random20',  iconBox: 'zap',
       titleKey: 't20',     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' },
+    { id: 'marathon',  iconBox: 'zap',
+      titleKey: 'marathonTitle', meta: tt('marathonDesc'), diff: 'hard' },
     // YHQ: mavjud generic realExam; qolgan fanlar: rasmiy preset kartalari (config'dan)
     ...(subjectId === 'yhq'
       ? [{ id: 'exam',  iconBox: 'cap' as const,
