@@ -3,7 +3,7 @@
  *
  * Rules:
  *  - init() creates user + progress + settings rows atomically (idempotent).
- *  - updatePhone() validates E.164 format before hitting the DB.
+ *  - updatePhone() validates E.164 format + SMS OTP egalik isboti (H-2 audit).
  */
 
 import { z }                      from 'zod'
@@ -65,6 +65,7 @@ import { progressRepository }     from '../progress/progress.repository'
 import { settingsRepository }     from '../settings/settings.repository'
 import { savedRepository }        from '../saved/saved.repository'
 import { authRepository }         from '../auth/auth.repository'
+import { consumeOTPWithLockout }  from '../auth/otp'
 import { AppError }               from '../../middleware/error-handler'
 
 // ── Zod schemas (also exported for router-level validation) ────────────────
@@ -85,6 +86,9 @@ export const PhoneSchema = z.object({
   phone: z
     .string()
     .regex(/^\+[1-9][0-9]{7,14}$/, 'Phone must be E.164 format, e.g. +998901234567'),
+  /** H-2 (audit): users.phone endi FAQAT SMS OTP egalik isbotidan keyin yoziladi —
+   *  begona raqam → pulli SMS / soxta referal mukofoti zanjiri yopiq. Kod 6 raqamli. */
+  otp: z.string().regex(/^\d{6}$/, 'OTP 6 raqamli kod bo\'lishi kerak'),
 })
 
 // ── Service ────────────────────────────────────────────────────────────────
@@ -145,10 +149,12 @@ export const usersService = {
     }
   },
 
-  /** Update phone number after Telegram requestContact validation.
+  /** Update phone number — FAQAT SMS OTP egalik isbotidan keyin (H-2 audit).
+   *  Avval kod konsumatsiya qilinadi (lockout bilan) — soxta raqam YOZILMAYDI.
    *  Telefon ulash REFERAL trigger'i: referee raqam ulasa — referrerga
-   *  mukofot (marketing: verified raqam + anti-fraud: real kontakt). */
-  async updatePhone(userId: string, phone: string): Promise<void> {
+   *  mukofot (marketing: endi HAQIQATAN verified raqam + anti-fraud). */
+  async updatePhone(userId: string, phone: string, otp: string): Promise<void> {
+    await consumeOTPWithLockout(phone, otp)   // 401 invalid_otp / 429 otp_locked
     const updated = await usersRepository.updatePhone(userId, phone)
     if (!updated) throw new AppError(404, 'User not found')
     try {

@@ -7,6 +7,7 @@ import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../sha
 import { config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
+import { parseReferralParam } from '../utils/parse'
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -154,14 +155,21 @@ bot.command('start', async (ctx) => {
     }
     return
   }
-  // Referal link: t.me/bot?start=ref_<id> → ilovaga ?ref= orqali o'tkazamiz
-  if (param && /^ref_\d{1,19}$/.test(param)) {
-    const refId = param.slice(4)
-    await ctx.reply(
-      "🚗 Do'stingiz sizni KIWI'ga taklif qilgani uchun mukofot beriladi!\n\n" +
-      "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
-      { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
-    )
+  // Referal link: t.me/bot?start=ref_<id> → ilovaga ?ref= orqali o'tkazamiz.
+  // ID canonical SHAQLda bo'lishi shart (TG raqam, p_<digits>, e_<hex>) —
+  // eskirgan /^ref_\d+$/ telefon-userlarning (p_...) havolasini jimgina
+  // tashlab yuborardi; parseReferralParam = server'dagi YAGONA canonical manba.
+  const refId = parseReferralParam(param)
+  if (param?.startsWith('ref_')) {
+    if (!refId) {
+      console.warn(`[bot] ref start_param noto'g'ri id shaklida: ${param}`)
+    } else {
+      await ctx.reply(
+        "🚗 Do'stingiz sizni KIWI'ga taklif qilgani uchun mukofot beriladi!\n\n" +
+        "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
+        { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
+      )
+    }
     return
   }
   if (param && (/^duel-[a-z0-9]{4,16}$/.test(param) || /^\d{4,8}$/.test(param))) {

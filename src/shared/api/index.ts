@@ -366,8 +366,10 @@ export const api = {
   resetProgress: (userId: string) =>
     request<{ ok: true }>('DELETE', `/progress/${uid(userId)}`),
 
-  updatePhone: (userId: string, phone: string) =>
-    request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone }),
+  /** H-2 (audit): server endi phone'ni FAQAT SMS OTP isbotidan keyin yozadi.
+   *  Oqim: requestOTP({phone}) → SMS kod → updatePhone(userId, phone, otp). */
+  updatePhone: (userId: string, phone: string, otp: string) =>
+    request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone, otp }),
 
   /** 3 kunlik bepul Premium trial (FAQAT 1 marta — backend tekshiradi) */
   startTrial: (userId: string) =>

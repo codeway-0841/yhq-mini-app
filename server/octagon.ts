@@ -50,6 +50,35 @@ const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{6,16}|room-[a-z0-9]{6,16}|\d{6,8}|[a-z0-
 /** Canonical user id (Telegram raqam-string, telefon akkaunt 'p_<digits>' yoki email 'e_<hex>') */
 const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
 
+// ── M-9 (audit): duel-join brute-force limiti ──────────────────────────────
+// Noma'lum kod bilan joinDuel "kutilayotgan" duel yaratadi — hujumchi bitta
+// akkauntdan minglab kodni suratga tushirishi mumkin edi. Per-user oyna:
+// 60s ichida 8 ta JOIN urinishi — legit o'yinchi 1-2 urinish bilan yetarli.
+const JOIN_ATTEMPT_WINDOW_MS = 60_000
+const JOIN_ATTEMPT_MAX = 8
+const joinAttempts = new Map<string, { windowStart: number; count: number }>()
+
+function joinAttemptAllowed(userId: string): boolean {
+  const now = Date.now()
+  const rec = joinAttempts.get(userId)
+  if (!rec || now - rec.windowStart >= JOIN_ATTEMPT_WINDOW_MS) {
+    joinAttempts.set(userId, { windowStart: now, count: 1 })
+    return true
+  }
+  if (rec.count >= JOIN_ATTEMPT_MAX) return false
+  rec.count++
+  return true
+}
+
+// Stale yozuvlarni davriy tozalash (WS instance uzoq yashashi mumkin)
+setInterval(() => {
+  const cutoff = Date.now() - JOIN_ATTEMPT_WINDOW_MS
+  for (const [uid, rec] of joinAttempts) {
+    if (rec.windowStart < cutoff) joinAttempts.delete(uid)
+  }
+}, JOIN_ATTEMPT_WINDOW_MS).unref?.()
+
+
 /**
  * WS auth: client userId'siga HECH QACHON ishonilmaydi — faqat initData
  * (Mini App) imzosi YOKI sessionToken (telefon+parol / TG widget sessiyasi,
@@ -472,6 +501,11 @@ function leaveDuelByUser(userId: string, deadWs?: WebSocket): void {
 }
 
 function joinDuel(ws: WebSocket, userId: string, name: string, rawCode: string, fallbackSubjectId: string): void {
+  // M-9: brute-force kod suratga tushirish limiti (60s'da 8 urinish)
+  if (!joinAttemptAllowed(userId)) {
+    send(ws, { type: 'error', message: 'duel_join_rate_limited' })
+    return
+  }
   const code = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
   const existing = duels.get(code)
   if (existing) {

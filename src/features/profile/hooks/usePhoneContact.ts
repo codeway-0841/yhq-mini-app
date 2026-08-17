@@ -1,15 +1,28 @@
 import { useState } from 'react'
 import { useAppStore } from '../../../shared/store/useAppStore'
+import { api, ApiError } from '../../../shared/api'
 import { requestContact } from '../../../platform/telegram'
+import type { Keys } from '../../../shared/i18n'
 
-/** Telegram kontakt-ruhsati orqali telefon raqamni qo'shish oqimi. */
+/**
+ * Telegram kontakt-ruhsati → SMS OTP isboti → telefon ulash oqimi (H-2 audit).
+ * Server phone'ni FAQAT kod tasdiqlangach yozadi — begona raqam ulab bo'lmaydi.
+ * Bosqichlar: idle → otp (kod kutilmoqda) → done.
+ * `phoneError` har doim i18n KALIT saqlaydi (caller tt() bilan ko'rsatadi).
+ */
 export function usePhoneContact() {
   const updatePhone = useAppStore((s) => s.updatePhone)
   const [phoneLoading, setPhoneLoading] = useState(false)
-  // Eslatma: phoneError qiymati hozircha UI'da ko'rsatilmaydi — faqat
-  // timing logikasi (3s timeout) saqlanadi, keyingi iteratsiyada toast'ga ulanadi.
-  const [, setPhoneError] = useState<string | null>(null)
+  /** null = boshlang'ich holat; string = OTP kutilayotgan raqam */
+  const [otpPhone, setOtpPhone] = useState<string | null>(null)
+  const [phoneError, setPhoneError] = useState<Keys | null>(null)
 
+  const flashError = (key: Keys) => {
+    setPhoneError(key)
+    setTimeout(() => setPhoneError(null), 3000)
+  }
+
+  // 1-qadam: Telegram'dan raqam olish + SMS OTP yuborish
   const handleAddPhone = () => {
     setPhoneLoading(true)
     setPhoneError(null)
@@ -17,28 +30,35 @@ export function usePhoneContact() {
     const supported = requestContact((ok, data) => {
       if (!ok || !data?.contact?.phone_number) {
         setPhoneLoading(false)
-        setPhoneError('Ruxsat berilmadi')
-        setTimeout(() => setPhoneError(null), 3000)
+        flashError('phoneContactDenied')
         return
       }
 
       let phone = data.contact.phone_number.trim()
       if (!phone.startsWith('+')) phone = '+' + phone
 
-      updatePhone(phone)
-        .catch(() => setPhoneError("Saqlashda xato. Qayta urinib ko'ring."))
-        .finally(() => {
-          setPhoneLoading(false)
-          setTimeout(() => setPhoneError(null), 3000)
+      api.requestOTP({ phone })
+        .then(() => setOtpPhone(phone))
+        .catch((err) => {
+          flashError(err instanceof ApiError && err.status === 429 ? 'authRateLimited' : 'authGenericError')
         })
+        .finally(() => setPhoneLoading(false))
     })
 
     if (!supported) {
       setPhoneLoading(false)
-      setPhoneError('Telegram orqali kirish kerak')
-      setTimeout(() => setPhoneError(null), 3000)
+      flashError('phoneNeedTelegram')
     }
   }
 
-  return { phoneLoading, handleAddPhone }
+  // 2-qadam: SMS kodni serverga yuborish (egalik isboti bilan yozadi)
+  const submitPhoneOtp = async (code: string): Promise<void> => {
+    if (!otpPhone) return
+    await updatePhone(otpPhone, code)   // optimistik; server xatoda rollback qiladi
+    setOtpPhone(null)
+  }
+
+  const cancelPhoneOtp = () => setOtpPhone(null)
+
+  return { phoneLoading, otpPhone, phoneError, handleAddPhone, submitPhoneOtp, cancelPhoneOtp }
 }

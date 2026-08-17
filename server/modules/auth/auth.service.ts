@@ -19,6 +19,7 @@ import { AppError } from '../../middleware/error-handler'
 import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
+import { consumeOTPWithLockout } from './otp'
 import { usersRepository } from '../users/users.repository'
 import { progressRepository } from '../progress/progress.repository'
 import { settingsRepository } from '../settings/settings.repository'
@@ -122,7 +123,8 @@ function emailUserId(): string {
 const TG_ID_RE = /^\d{1,19}$/
 
 // ── Abuse himoyasi konstantalari ────────────────────────────────────────────
-export const OTP_MAX_ATTEMPTS = 5            // shu urinishdan keyin kod o'chadi (yangi kod shart)
+// OTP consume+lockout umumiy qatlami: ./otp (users.service ham ishlatadi — H-2)
+export { OTP_MAX_ATTEMPTS } from './otp'
 export const OTP_RESEND_COOLDOWN_MS = 60_000 // bir raqamga qayta SMS yuborish oralig'i
 export const PHONE_LOGIN_MAX_ATTEMPTS = 5    // telefon login parol lockout (email'dagi kabi)
 const PHONE_LOGIN_LOCK_MS = 15 * 60_000
@@ -143,21 +145,7 @@ async function issueSession(userId: string, provider: AuthProvider): Promise<str
   return token
 }
 
-/**
- * OTP verify + brute-force lockout: noto'g'ri har urinish ATOMIK sanaladi;
- * limitga yetganda kod butunlay o'chadi (faqat yangi SMS kod yordam beradi).
- * consumeOTP faqat TO'G'RI kodda o'chiradi — hisoblagich bu yo'lda to'liq.
- */
-async function consumeOTPWithLockout(phone: string, code: string): Promise<void> {
-  const valid = await authRepository.consumeOTP(phone, hashOTP(code))
-  if (valid) return
-  const attempts = await authRepository.incrementOTPAttempts(phone)
-  if (attempts >= OTP_MAX_ATTEMPTS) {
-    await authRepository.deleteOTP(phone)
-    throw new AppError(429, 'otp_locked: Juda ko\'p noto\'g\'ri urinish — yangi kod so\'rang')
-  }
-  throw new AppError(401, 'invalid_otp')
-}
+// consumeOTPWithLockout + OTP_MAX_ATTEMPTS → ./otp (umumiy qatlam, cycle'siz)
 
 /** To'liq profile + ulangan provider'lar (login/me/link javoblarining umumiy tanasi). */
 async function buildAuthSession(userId: string) {

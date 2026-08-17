@@ -55,7 +55,8 @@ router.get(
   }),
 )
 
-// PATCH /api/users/:userId/phone
+// PATCH /api/users/:userId/phone — OTP (SMS kod) MAJBURIY (H-2 audit).
+// Client oqimi: POST /auth/otp/request {phone} → kod SMS'da → PATCH {phone, otp}.
 router.patch(
   '/users/:userId/phone',
   validate({ body: PhoneSchema }),
@@ -63,7 +64,8 @@ router.patch(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    await usersService.updatePhone(uid, (req.body as { phone: string }).phone)
+    const { phone, otp } = req.body as z.infer<typeof PhoneSchema>
+    await usersService.updatePhone(uid, phone, otp)
     res.json({ ok: true })
   }),
 )

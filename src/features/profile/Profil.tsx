@@ -24,6 +24,7 @@ import { AchievementsSection } from './components/AchievementsSection'
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
+import { OTPInput } from '../auth'
 
 // ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {
@@ -71,7 +72,28 @@ export default function Profil() {
     showToast,
     closeSheet: () => setShowPhotoEdit(false),
   })
-  const { phoneLoading, handleAddPhone } = usePhoneContact()
+  const {
+    phoneLoading, otpPhone, phoneError,
+    handleAddPhone, submitPhoneOtp, cancelPhoneOtp,
+  } = usePhoneContact()
+  // OTP bosqichi (SMS egalik isboti) lokal holati
+  const [otpCode, setOtpCode] = useState('')
+  const [otpBusy, setOtpBusy] = useState(false)
+  const [otpErrorKey, setOtpErrorKey] = useState<Parameters<typeof tt>[0] | null>(null)
+
+  const onSubmitPhoneOtp = async (code: string) => {
+    setOtpBusy(true)
+    setOtpErrorKey(null)
+    try {
+      await submitPhoneOtp(code)
+      setOtpCode('')
+    } catch (err: any) {    // 401 → noto'g'ri kod; 429 → lockout
+      setOtpErrorKey(err?.status === 401 ? 'authInvalidOtp' : err?.status === 429 ? 'authRateLimited' : 'authGenericError')
+      setOtpCode('')
+    } finally {
+      setOtpBusy(false)
+    }
+  }
 
   const themeLabel = settings.theme === 'dark'
     ? tt('darkTheme')
@@ -171,9 +193,47 @@ export default function Profil() {
                 ? <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
                 : <span className="text-[12px] text-muted">Qo'shish</span>
           }
-          onPress={user?.phone ? undefined : handleAddPhone}
-          disabled={phoneLoading || !!user?.phone}
+          onPress={user?.phone || otpPhone ? undefined : handleAddPhone}
+          disabled={phoneLoading || !!user?.phone || !!otpPhone}
         />
+
+        {/* SMS OTP bosqichi (H-2: egalik isbotisiz telefon yozilmaydi) */}
+        {phoneError && <p className="px-4 pb-1 text-[12px] text-pdanger">{tt(phoneError)}</p>}
+        {otpPhone && !user?.phone && (
+          <div className="px-4 pb-3 animate-premiumIn">
+            <p className="text-[12px] text-muted mb-2">
+              {tt('authSmsCodeSent')}: <span className="font-semibold text-pfg">{otpPhone}</span>
+            </p>
+            <div className="flex items-center gap-3">
+              <OTPInput
+                value={otpCode}
+                onChange={setOtpCode}
+                onComplete={onSubmitPhoneOtp}
+                disabled={otpBusy}
+                error={!!otpErrorKey}
+              />
+            </div>
+            <div className="flex items-center gap-3 mt-2">
+              <button
+                type="button"
+                className="btn-premium -sm"
+                disabled={otpBusy || otpCode.length !== 6}
+                onClick={() => onSubmitPhoneOtp(otpCode)}
+              >
+                {otpBusy ? '…' : tt('authLinkPhoneConfirm')}
+              </button>
+              <button
+                type="button"
+                className="text-[12px] text-muted"
+                disabled={otpBusy}
+                onClick={() => { cancelPhoneOtp(); setOtpCode(''); setOtpErrorKey(null) }}
+              >
+                ✕
+              </button>
+              {otpErrorKey && <span className="text-[12px] text-pdanger">{tt(otpErrorKey)}</span>}
+            </div>
+          </div>
+        )}
 
         {/* SMS marketing roziligi — FAQAT telefon ulangan bo'lsa ko'rinadi */}
         {user?.phone && (

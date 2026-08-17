@@ -210,7 +210,7 @@ The audit ran in the morning; remediation happened in two parallel sessions the 
 |---|---|
 | `2379ce9` | **Referral v3** (`feat(referral): split reward with phone-link trigger (MB-5 v3)`): welcome gift (+3 days) granted atomically at `/init` via `createPending` CTE; referrer reward on phone link (`rewardIfPhoneLinked`); `ref_<id>` regex accepts all canonical id shapes (`p_`, `e_`); referral stats endpoint + Profil card; migration 0038 with legacy-row backfill; i18n UZ/RU |
 | `b697ed0` | **SMS opt-in marketing campaigns** (`feat(sms)`): schema (migration 0039: `sms_campaigns`, `sms_campaign_recipients`), chunked dispatch (30/batch) with audience snapshot freeze, `AdminSmsTab` UI, `/users/:userId/sms-consent` opt-in/out, integration tests |
-| `d9ab3ad` | **H-2 FIXED** (`fix(auth): require SMS OTP proof for phone register and new-number linking`): `users.phone` is no longer writable with a bare format-valid string — possession is proven via the existing OTP flow first. This closes the SMS-harassment pathway *and* makes the referral phone-link gate real |
+| `d9ab3ad` | **H-2 (partial at this commit — see §7.3 correction)** (`fix(auth): require SMS OTP proof for phone register and new-number linking`): OTP proof added to `/auth/phone/register` and `/auth/phone/link`. ⚠️ Re-verification showed the exact endpoint cited in H-2 — `PATCH /users/:userId/phone` — **still accepted any format-valid phone**; the final fix (OTP gate on that route) landed as an uncommitted follow-up the same day |
 | `daba88b` | Audit reports committed (EN + UZ) |
 
 ### 7.3 Findings status after remediation
@@ -218,20 +218,20 @@ The audit ran in the morning; remediation happened in two parallel sessions the 
 | Finding | Status | Where fixed |
 |---|---|---|
 | **C-1** permanent premium for timed purchases | ✅ **FIXED** (all 4 grant paths + tests) | `34462cd` |
-| **H-1** tournament prizes | 🟡 **PARTIAL** — lost-update half fixed (GREATEST in SQL); *open:* fire-and-forget after `complete()` (`cron.router.ts:242-246`), ledger-first ordering, own `jobRuns` lease | `34462cd` |
-| **H-2** unauthenticated phone → paid SMS | ✅ **FIXED** (OTP possession proof) | `d9ab3ad` |
+| **H-1** tournament prizes | ✅ **FIXED** — GREATEST in SQL (lost-update half) + `f7125d9`: prizes `await`ed before `complete()`, chunked idempotent apply with `league_rollover_log` durable plan | `34462cd`, `f7125d9` |
+| **H-2** unauthenticated phone → paid SMS | ✅ **FIXED — *same-day re-verification corrected this claim*:** `d9ab3ad` hard­ened only `/auth/phone/register` + `/auth/phone/link`; the exact endpoint cited in this report (`PATCH /users/:userId/phone`) **remained possession-proof-free** and the exploit chain was reproduced against the test DB. **Final fix (uncommitted follow-up):** `PATCH /users/:userId/phone` now requires `{phone, otp}` — `consumeOTPWithLockout` (extracted to `server/modules/auth/otp.ts`, shared cycle-free by auth.service + users.service) runs BEFORE any `users.phone` write; client flow: requestContact → `POST /auth/otp/request` → Profil OTPInput → PATCH. Runtime proof: victim-phone write 401, referral reward withheld, `otp_locked` after 5 wrong codes; integration suite 98/98 | `d9ab3ad` + follow-up |
 | **H-3** ball farming | 🔴 **OPEN** (product decision — daily-credit unique-key recommended) | — |
-| **M-1** Click validation gaps | 🟡 **PARTIAL** — NaN, cancelled, atomic claim/replay, urlencoded done; *open:* full zod schema for webhook body | `34462cd` |
-| **M-2** referral phone-link double-reward race | 🔴 **OPEN** — one line: `AND r.status = 'pending'` in `rewardIfPhoneLinked` UPDATE (`users.repository.ts:89`) | — |
+| **M-1** Click validation gaps | ✅ **FIXED** — NaN, cancelled, atomic claim/replay, urlencoded (`34462cd`) + full `ClickWebhookSchema` zod (`f7125d9`) | `34462cd`, `f7125d9` |
+| **M-2** referral phone-link double-reward race | ✅ **FIXED** — `AND r.status = 'pending'` in the UPDATE WHERE (`users.repository.ts:89`); runtime race proof: 8 concurrent calls → exactly 1 reward | `f7125d9` |
 | **M-3** referrals IDOR | ✅ **FIXED** (`USER_SEGMENTS`) | `34462cd` |
-| **M-4** SMS chunk dispatch race | 🔴 **OPEN** — claim rows with `FOR UPDATE SKIP LOCKED` | — |
+| **M-4** SMS chunk dispatch race | ✅ **FIXED** — atomic claim via `FOR UPDATE SKIP LOCKED` + single-statement snapshot freeze (`f7125d9`); runtime race proof: 2 concurrent dispatches → zero overlap. *Residual (minor):* rows claimed then crashed stay `'sending'` (≤1 batch) — no reaper yet | `f7125d9` |
 | **M-5** broadcast full-table load + 30 s truncation | 🔴 **OPEN** — extract shared chunked-dispatch primitive (do together with M-4) | — |
-| **M-6** daily-reminder completes on error | 🔴 **OPEN** — 2 lines, copy league-rollover stale-lease pattern (`cron.router.ts:124`) | — |
-| **M-7** league rollover fan-out + tiebreaker | 🔴 **OPEN** | — |
+| **M-6** daily-reminder completes on error | ✅ **FIXED** — catch no longer calls `complete()`; stale-lease retry (`f7125d9`) | `f7125d9` |
+| **M-7** league rollover fan-out + tiebreaker | ✅ **FIXED** — durable plan in `league_rollover_log` (ON CONFLICT), chunked (50) guarded idempotent apply, `userId` tiebreaker (`f7125d9`) | `f7125d9` |
 | **M-8** TG-login code phishing | 🔴 **OPEN** — in-bot confirmation tap | — |
-| **M-9** duel PIN enumeration | 🔴 **OPEN** — ≥6 chars + failed-join rate limit | — |
-| **M-10** analytics unbounded jsonb | 🔴 **OPEN** — cap size + retention cron | — |
-| **M-11** OTP cooldown check-then-act | 🔴 **OPEN** | — |
+| **M-9** duel PIN enumeration | ✅ **FIXED** — ≥6 chars (`DUEL_CODE_RE`) + per-user failed-join rate limit (8 attempts / 60 s → `duel_join_rate_limited`) in `server/octagon.ts`; referral `?start=ref_<id>` **bot-side** canonical-id fix landed (was App.tsx-only in `2379ce9` — `p_`/`e_` links were silently dropped at the bot layer) | follow-up |
+| **M-10** analytics unbounded jsonb | ✅ **FIXED** — `props` capped at 4 KB (zod refine) + retention cron (analytics events, telegram_login_codes, link_codes cleanup) | `f7125d9` |
+| **M-11** OTP cooldown check-then-act | ✅ **FIXED** — `createOTPWithCooldown` atomic upsert (ON CONFLICT … WHERE cooldown elapsed); runtime race proof: 8 concurrent → exactly 1 allowed | `f7125d9` |
 | **M-12** limiter fail-open | ✅ **FIXED** (now fail-closed, see P1-2) | `34462cd` |
 | **M-13** Bearer in localStorage | 🔴 **OPEN** (v2 architecture: httpOnly cookie) | — |
 | P3 quick items (gitignore, CI phantom-DB, retry split) | ✅ **FIXED** | `34462cd` |

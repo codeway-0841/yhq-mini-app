@@ -223,7 +223,7 @@ Bu stack uchun muhandislik intizomi haqiqatan kam uchraydigan darajada: deyarli 
 |---|---|
 | `2379ce9` | **Referal v3:** ro'yxatdan o'tishda welcome sovg'a (`createPending` CTE), referrer mukofoti telefon ulaganda; barcha canonical id shakllari; statistika endpoint + Profil kartasi; 0038 backfill; i18n |
 | `b697ed0` | **SMS opt-in kampaniyalar:** 0039 schema, chunked dispatch (30/batch), AdminSmsTab, sms-consent endpoint, testlar |
-| `d9ab3ad` | **H-2 FIXED:** telefon register/yangi raqam ulash uchun **SMS OTP egalilik isboti** majburiy — SMS-bezovqachilik yo'li va referal gate haqiqiy bo'ldi |
+| `d9ab3ad` | **H-2 (shu commit'da FAQAT QISMAN — §7.3'ga qarang)** (`fix(auth)`): OTP isboti `/auth/phone/register` va `/auth/phone/link`ga qo'shildi. ⚠️ Qayta-verifikatsiya ko'rsatdiki, hisobot sitat qilgan ASL endpoint — `PATCH /users/:userId/phone` — **hali ham bevosita raqam yozardi**; yakuniy fix (shu route'da OTP gate) shu kun commit'siz follow-up sifatida qo'shildi: `{phone, otp}`, `consumeOTPWithLockout` (`server/modules/auth/otp.ts`) yozuvdan OLDIN; runtime-da exploit-blok isbotlandi (begona raqam 401, mukofot yo'q, 5 xato → `otp_locked`) |
 | `daba88b` | Audit hisobotlari commit qilindi (EN + UZ) |
 
 ### 7.3 Verifikatsiya (push'dan oldin)
@@ -232,9 +232,11 @@ tsc ×2 ✓ · unit **384/384** ✓ · api **17/17** ✓ · integration (real Ne
 
 ### 7.4 Topilmalar holati (qisqacha)
 
-- ✅ FIXED: **C-1, H-2, M-3, M-12**, P3-tez item'lar
-- 🟡 PARTIAL: **H-1** (fire-and-forget qoldi), **M-1** (to'liq zod sxemasi qoldi)
-- 🔴 OPEN: **H-3** (farming qarori), **M-2** (bir qator!), **M-4, M-5, M-6** (2 qator), **M-7…M-11, M-13**, LOW item'lar
+- ✅ FIXED: **C-1, M-3, M-12**, P3-tez item'lar
+- ✅ FIXED (qayta-verifikatsiyadan KEYINGI yakuniy fix): **H-2** — `d9ab3ad` faqat auth register/link'ni mustahkamlagan edi; hisobot sitat qilgan `PATCH /users/:userId/phone` {phone, otp} OTP-gate bilan yakuniy yopildi (follow-up), **M-9** — ≥6 xonali kod + per-user failed-join limit (8/60s), **referal bot-qatlami** — `p_`/`e_` id'lar endi bot link'ida ham qabul qilinadi (`parseReferralParam`)
+- ✅ FIXED (`f7125d9`): **M-1** (to'liq zod), **M-2** (`AND status='pending'` — race runtime'da isbotlangan: 8 parallel → 1 mukofot), **M-4** (SKIP LOCKED — 2 parallel dispatch: nol overlap), **M-6** (error'da complete yo'q), **M-7** (durable plan + chunked + tiebreaker), **M-10** (4KB + retention cron), **M-11** (atomik cooldown — 8 parallel → 1 kirish)
+- 🟡 PARTIAL: **H-1** (asosiy qismlar `f7125d9`'da: await + durable plan — own `jobRuns` lease qoldi)
+- 🔴 OPEN: **H-3** (farming qarori), **M-5** (broadcast umumiy primitive), **M-8, M-13**, LOW item'lar
 
 ### 7.5 Yangilangan baho: **B− (~70%) → B+ (~78%)**
 

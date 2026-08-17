@@ -287,3 +287,6 @@
 - ✅ C-1, H-2, M-3, M-12, P1-1…P1-5, H-1 (GREATEST qismi), P3 gigiyena — `34462cd`, `d9ab3ad` (2026-08-17)
 - ✅ Referal v3, SMS kampaniyalar — `2379ce9`, `b697ed0`
 - ✅ Audit hujjatlari + remediation log — `daba88b`, `566c22c`
+- ✅ **H-2 ASL fix** (qayta-verifikatsiya d9ab3ad YARIM ekanini ko'rsatdi): `PATCH /users/:userId/phone` endi `{phone, otp}` talab qiladi — `consumeOTPWithLockout` `users.phone` yozuvidan OLDIN (server/modules/auth/otp.ts — umumiy qatlam, cycle'siz); client: Telegram requestContact → `requestOTP` → Profil OTPInput bosqichi; brute-force lockout (5 urinish → otp_locked) saqlanibdi; runtime exploit-proof: begona raqam YOZILMAYDI, referal mukofot soxta raqamga tushmaydi. Integration: +4 test (`users.test.ts`)
+- ✅ **Referal `?start=ref_<id>` bot fix'ning TUGALLANGANI**: `parseReferralParam` (`server/utils/parse.ts`) — canonical id (TG raqam/`p_`/`e_`) BOT qatlamida ham qabul qilinadi (2379ce9 faqat App.tsx'ni tuzatgan edi, bot `${BASE_URL}?ref=` havolasini yaratmay qo'yardi)
+- ✅ **M-9 tugallangan**: 6+ xonali kod YETARLI EMAS edi — `joinDuel` per-user brute-force limiti (60s/8 urinish → `duel_join_rate_limited`) `server/octagon.ts`

@@ -55,7 +55,7 @@ interface AppState {
   setCustomAvatar: (avatar: string | null) => void
   setAccent:      (accent: string) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
-  updatePhone:    (phone: string) => Promise<void>
+  updatePhone:    (phone: string, otp: string) => Promise<void>
   /**
    * Javobni SERVER'ga yuboradi va tekshiruv natijasini qaytaradi.
    * correctAnswer client'da yo'q (public /questions javobsiz) — feedback
@@ -171,13 +171,13 @@ export const useAppStore = create<AppState>()(
       setCustomAvatar: (avatar) => set({ customAvatar: avatar || null }),
       setAccent: (accent) => set({ accent }),
 
-      updatePhone: async (phone) => {
+      updatePhone: async (phone, otp) => {
         const userId = get().user?.id
         if (!userId) return
         const originalPhone = get().user?.phone
         set((s) => s.user ? { user: { ...s.user, phone } } : {})
         try {
-          await api.updatePhone(userId, phone)
+          await api.updatePhone(userId, phone, otp)
         } catch (err) {
           set((s) => s.user ? { user: { ...s.user, phone: originalPhone } } : {})
           throw err

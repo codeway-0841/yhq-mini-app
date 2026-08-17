@@ -12,10 +12,19 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import request from 'supertest'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
-import { users, progress, userSettings, referrals, questions } from '../../../server/schema'
+import { users, progress, userSettings, referrals, questions, otpCodes } from '../../../server/schema'
 import { eq, inArray, sql } from 'drizzle-orm'
+import { authRepository } from '../../../server/modules/auth/auth.repository'
+import { hashOTP } from '../../../server/utils/sms'
 
 const app = createApp()
+
+/** PATCH /users/:id/phone H-2'dan beri OTP talab qiladi — test'da SMS'siz kod yozamiz */
+async function seedOTP(phone: string, code = '123456') {
+  await db.delete(otpCodes).where(eq(otpCodes.phone, phone))
+  await authRepository.createOTP(phone, hashOTP(code), new Date(Date.now() + 5 * 60_000))
+  return code
+}
 
 const SEED_ID = '999888777666'
 const SEED_USER = {
@@ -74,19 +83,49 @@ describe('PATCH /api/users/:userId/phone', () => {
 
   afterAll(cleanup)
 
-  it('updates phone successfully', async () => {
-    const res = await request(app)
+  it('H-2: OTP QO\'YILMAGAN so\'rov rad etiladi (400) — begona raqam yozib bo\'lmaydi', async () => {
+    await request(app)
       .patch(`/api/users/${SEED_ID}/phone`)
       .send({ phone: '+998901234567' })
+      .expect(400)
+    const [u] = await db.select({ phone: users.phone }).from(users).where(eq(users.id, SEED_ID))
+    expect(u?.phone).toBeNull()
+  })
+
+  it('H-2: NOTO\'G\'RI OTP rad etiladi (401) — phone o\'zgarmaydi', async () => {
+    await seedOTP('+998901234567', '123456')
+    await request(app)
+      .patch(`/api/users/${SEED_ID}/phone`)
+      .send({ phone: '+998901234567', otp: '999999' })
+      .expect(401)
+    const [u] = await db.select({ phone: users.phone }).from(users).where(eq(users.id, SEED_ID))
+    expect(u?.phone).toBeNull()
+  })
+
+  it('updates phone successfully (to\'g\'ri OTP bilan)', async () => {
+    const otp = await seedOTP('+998901234567')
+    const res = await request(app)
+      .patch(`/api/users/${SEED_ID}/phone`)
+      .send({ phone: '+998901234567', otp })
       .expect(200)
 
     expect(res.body.ok).toBe(true)
   })
 
+  it('OTP bir martalik — ikkinchi PATCH shu kod bilan ishlamaydi', async () => {
+    // Oldingi test kodni konsumatsiya qilgan; qayta yuborish 401 bo'lishi kerak
+    await request(app)
+      .patch(`/api/users/${SEED_ID}/phone`)
+      .send({ phone: '+998909999999', otp: '123456' })
+      .expect(401)
+    const [u] = await db.select({ phone: users.phone }).from(users).where(eq(users.id, SEED_ID))
+    expect(u?.phone).toBe('+998901234567')
+  })
+
   it('rejects invalid phone format', async () => {
     const res = await request(app)
       .patch(`/api/users/${SEED_ID}/phone`)
-      .send({ phone: '998901234567' })   // missing leading +
+      .send({ phone: '998901234567', otp: '123456' })   // missing leading +
       .expect(400)
 
     expect(res.body.error).toBe('Validation failed')
@@ -193,9 +232,10 @@ describe('Referal tizimi (MB-5, v3 — split mukofot + telefon trigger)', () => 
     const [referee0] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REF_IDS[0]))
     const refereeWelcomeUntil = referee0!.premiumUntil!.getTime()
 
+    const otp1 = await seedOTP('+998901234567')
     await request(app)
       .patch(`/api/users/${REF_IDS[0]}/phone`)
-      .send({ phone: '+998901234567' })
+      .send({ phone: '+998901234567', otp: otp1 })
       .expect(200)
 
     let [r] = await db.select().from(referrals).where(eq(referrals.refereeId, REF_IDS[0]))
@@ -214,9 +254,10 @@ describe('Referal tizimi (MB-5, v3 — split mukofot + telefon trigger)', () => 
     const referrerAfter = referrer!.premiumUntil!.getTime()
 
     // Raqamni almashtirish — qayta mukofot YO'Q (status rewarded)
+    const otp2 = await seedOTP('+998909876543')
     await request(app)
       .patch(`/api/users/${REF_IDS[0]}/phone`)
-      .send({ phone: '+998909876543' })
+      .send({ phone: '+998909876543', otp: otp2 })
       .expect(200)
     ;[r] = await db.select().from(referrals).where(eq(referrals.refereeId, REF_IDS[0]))
     expect(r?.status).toBe('rewarded')

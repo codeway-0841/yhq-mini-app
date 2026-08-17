@@ -18,6 +18,18 @@ export function parseUserId(val: unknown): string | null {
   return USER_ID_RE.test(s) ? s : null
 }
 
+/**
+ * Telegram /start param'idan referal ID ajratish: `ref_<canonicalId>`.
+ * HAR QANDAY canonical shakl (TG raqam, p_<digits>, e_<hex>) qabul qilinadi —
+ * eskirgan `/^ref_\d+$/` telefon-user (p_...) havolalarini jimgina tashlab
+ * yuborardi (2379ce9 da'vosi shu fix bilan to'liqroq bo'ldi).
+ */
+export function parseReferralParam(param: unknown): string | null {
+  if (typeof param !== 'string') return null
+  const m = /^ref_(.+)$/.exec(param.trim())
+  return m ? parseUserId(m[1]) : null
+}
+
 /** Parse ?limit query param. Returns a clamped integer within [1, max]. */
 export function parseLimit(val: unknown, defaultVal: number, max: number): number {
   const n = Number(val ?? defaultVal)

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { parseUserId, parseLimit } from '../../../server/utils/parse'
+import { parseUserId, parseLimit, parseReferralParam } from '../../../server/utils/parse'
 
 describe('parseUserId utility', () => {
   it('Telegram numeric string ID larni qabul qiladi', () => {
@@ -28,6 +28,26 @@ describe('parseUserId utility', () => {
     expect(parseUserId('e_short')).toBeNull()
     expect(parseUserId('p_short')).toBeNull()
     expect(parseUserId("123; DROP TABLE users;--")).toBeNull()
+  })
+})
+
+describe('parseReferralParam (bot ?start=ref_<id>)', () => {
+  it('TG raqam id qabul qiladi', () => {
+    expect(parseReferralParam('ref_123456789')).toBe('123456789')
+  })
+
+  it('p_ (telefon) va e_ (email) referrer id QABUL QILADI (audit: eskisi tashlab yuborardi)', () => {
+    expect(parseReferralParam('ref_p_998901234567')).toBe('p_998901234567')
+    expect(parseReferralParam('ref_e_0123456789abcdef0123456789abcdef')).toBe('e_0123456789abcdef0123456789abcdef')
+  })
+
+  it('noto\'g\'ri ref param\'larni rad etadi', () => {
+    expect(parseReferralParam('ref_user_123')).toBeNull()
+    expect(parseReferralParam('ref_')).toBeNull()
+    expect(parseReferralParam('duel-abc123')).toBeNull()
+    expect(parseReferralParam(null)).toBeNull()
+    expect(parseReferralParam(undefined)).toBeNull()
+    expect(parseReferralParam('ref_p_short')).toBeNull()
   })
 })
 
