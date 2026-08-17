@@ -15,9 +15,20 @@ interface CertificateModalProps {
   onClose: () => void
 }
 
+function dataUrlToBlob(dataUrl: string): Blob {
+  const parts = dataUrl.split(',')
+  const mime = parts[0].match(/:(.*?);/)?.[1] || 'image/png'
+  const bstr = atob(parts[1])
+  let n = bstr.length
+  const u8arr = new Uint8Array(n)
+  while (n--) {
+    u8arr[n] = bstr.charCodeAt(n)
+  }
+  return new Blob([u8arr], { type: mime })
+}
+
 export default function CertificateModal({ score, total, percent, onClose }: CertificateModalProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
   const [downloading, setDownloading] = useState(false)
 
@@ -52,11 +63,6 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
       certId,
       lang,
     })
-    try {
-      setPreviewUrl(canvasRef.current.toDataURL('image/png'))
-    } catch {
-      // fallback
-    }
   }, [fullName, subjectName, score, total, percent, formattedDate, certId, lang])
 
   const handleDownload = async () => {
@@ -64,18 +70,15 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
     haptics.impact('light')
     setDownloading(true)
 
-    canvasRef.current.toBlob(async (blob) => {
-      if (!blob) {
-        setDownloading(false)
-        return
-      }
-
+    try {
+      const dataUrl = canvasRef.current.toDataURL('image/png')
       const fileName = `kiwi-certificate-${certId}.png`
+      const blob = dataUrlToBlob(dataUrl)
+      const file = new File([blob], fileName, { type: 'image/png' })
 
       // 1. Mobile Web Share API with File (iOS "Save Image" / Android "Save to Device")
-      try {
-        const file = new File([blob], fileName, { type: 'image/png' })
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
           await navigator.share({
             files: [file],
             title: tt('certOfficialTitle'),
@@ -83,32 +86,31 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           })
           setDownloading(false)
           return
-        }
-      } catch (shareErr) {
-        if ((shareErr as Error).name === 'AbortError') {
-          setDownloading(false)
-          return
+        } catch (shareErr) {
+          if ((shareErr as Error).name === 'AbortError') {
+            setDownloading(false)
+            return
+          }
         }
       }
 
-      // 2. Standard Browser / PC Download via Blob URL
-      try {
-        const blobUrl = URL.createObjectURL(blob)
-        const link = document.createElement('a')
-        link.download = fileName
-        link.href = blobUrl
-        link.style.display = 'none'
-        document.body.appendChild(link)
-        link.click()
-        setTimeout(() => {
-          document.body.removeChild(link)
-          URL.revokeObjectURL(blobUrl)
-          setDownloading(false)
-        }, 1000)
-      } catch {
-        setDownloading(false)
-      }
-    }, 'image/png')
+      // 2. Standard Browser / PC Download via Blob URL & Data URL fallback
+      const blobUrl = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.download = fileName
+      link.href = blobUrl
+      link.style.display = 'none'
+      document.body.appendChild(link)
+      link.click()
+      setTimeout(() => {
+        document.body.removeChild(link)
+        URL.revokeObjectURL(blobUrl)
+      }, 1000)
+    } catch (err) {
+      console.warn('[Certificate download fallback]', err)
+    } finally {
+      setDownloading(false)
+    }
   }
 
   const handleShare = () => {
@@ -150,23 +152,13 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <h3 className="text-base font-black text-fg">{tt('certOfficialTitle')}</h3>
         </div>
 
-        {/* Hidden Canvas for High-Res Rendering */}
-        <canvas ref={canvasRef} className="hidden" />
-
-        {/* Certificate Image Preview (Mobile Friendly & Long-pressable) */}
+        {/* Direct High-Resolution Canvas Display */}
         <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-line mb-3 bg-black/40">
-          {previewUrl ? (
-            <img
-              src={previewUrl}
-              alt="KIWI Certificate"
-              className="w-full h-auto block object-contain select-none"
-              style={{ aspectRatio: '1200/850' }}
-            />
-          ) : (
-            <div className="w-full aspect-[1200/850] flex items-center justify-center text-muted text-xs">
-              Yuklanmoqda...
-            </div>
-          )}
+          <canvas
+            ref={canvasRef}
+            className="w-full h-auto block object-contain select-none"
+            style={{ aspectRatio: '1200/850' }}
+          />
         </div>
 
         {/* Certificate Metadata Pill */}
