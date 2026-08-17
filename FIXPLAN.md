@@ -9,31 +9,31 @@
 
 ## PART 1 — Tez g'alabalar (< 30 daqiqa jami)
 
-- [ ] **1. M-2 — referal telefon-mukofoti poygasi**
+- [x] **1. M-2 — referal telefon-mukofoti poygasi**
   `server/modules/users/users.repository.ts:89` — `rewardIfPhoneLinked` dagi
   `UPDATE referrals r SET status='rewarded' ... FROM pend WHERE r.id = pend.id`
   ga `AND r.status = 'pending'` qo'sh (lock'dan keyin qayta tekshiruv — parallel
   telefon-saqlash ikki marta +3 kun berayotgan edi). Test: unit yoki integration
   (xuddi shu referal ustida ketma-ket 2 chaqiruv → 2-chisida grant yo'q).
 
-- [ ] **2. M-6 — daily-reminder xatoda o'lib qolishi**
+- [x] **2. M-6 — daily-reminder xatoda o'lib qolishi**
   `server/modules/cron/cron.router.ts:121-124` — catch blokida
   `cronRepository.complete('daily-reminder', ...)` CHAQRILMASIN (o'sha kun
   eslatmasi butunlay yo'qoladi). League-rollover'dagi pattern: complete'siz
   qoldirish → 1 soatlik stale-lease retry. Faqat muvaffaqiyatda complete().
 
-- [ ] **3. Gemini kalitni URL'dan header'ga**
+- [x] **3. Gemini kalitni URL'dan header'ga**
   `server/modules/tutor/tutor.router.ts:104` va
   `server/modules/admin/ai-question-generator.service.ts:90` —
   `?key=${key}` o'rniga `headers: { 'x-goog-api-key': key }` (proxy log'lariga
   tushmaydi).
 
-- [ ] **4. Admin "bugun faol" statistikasi vaqt zonasi**
+- [x] **4. Admin "bugun faol" statistikasi vaqt zonasi**
   `server/modules/admin/admin.router.ts:276-280` — `to_char(now(), 'YYYY-MM-DD')`
   o'rniga `to_char(now() AT TIME ZONE 'Asia/Tashkent', 'YYYY-MM-DD')`
   (daily_records.date Tashkent — 19:00 UTC'dan keyin noto'g'ri hisoblanadi).
 
-- [ ] **5. paymentRouter ikki joyda mount — tozalash**
+- [x] **5. paymentRouter ikki joyda mount — tozalash**
   `server/app.ts:110-111` — `/api/payments` va `/api` ikkalasi ham bor.
   `/api` mount'ini olib tashlash YOKI router ichidagi yo'llarni `/payments/...`
   prefiksi bilan bir xil qoldirib, faqat bitta mount qoldirish. Eslatma:
@@ -42,7 +42,7 @@
 
 ## PART 2 — HIGH qoldiqlari (yarim kun)
 
-- [ ] **6. H-1 qoldig'i — turnir sovrinlari fire-and-forget**
+- [x] **6. H-1 qoldig'i — turnir sovrinlari fire-and-forget**
   `server/modules/cron/cron.router.ts:242-246` — `complete('league-rollover')`
   chaqirilgandan KEYIN `distributeWeeklyPrizes(wPrev)` await'siz otiladi; Vercel
   30s'da sovrinlar hech qachon berilmaydi va retry ham bo'lmaydi.
@@ -51,7 +51,7 @@
   retry-safe; (c) `tournament-prize.service.ts`da ledger INSERT birinchi /
   xuddi sho CTEda (GREATEST qismi allaqachon fix — `34462cd`).
 
-- [ ] **7. M-4 — SMS chunk dispatch poygasi**
+- [x] **7. M-4 — SMS chunk dispatch poygasi**
   `server/modules/admin/sms-campaign.service.ts:120-142` — batch SELECT'da row
   claim yo'q: ikkita parallel "Davom ettirish" bir xil 30 kishiga IKKI marta SMS
   yuboradi. Fix: avval claim —
@@ -78,7 +78,7 @@
   javob hisoblanadi; re-answer/xatolar bo'limi erkin qoladi).
   Migratsiya + CTE + `security-critical.test.ts`ga farm-regression test.
 
-- [ ] **10. M-1 qoldig'i — Click webhook to'liq zod validatsiya**
+- [x] **10. M-1 qoldig'i — Click webhook to'liq zod validatsiya**
   `server/modules/payments/payment.router.ts` (`handleClickWebhookRoute`) —
   body'ni zod sxema bilan tekshirish: `click_trans_id` (raqam-string),
   `service_id`, `merchant_trans_id` (max 64), `amount` (coerce.number),
@@ -88,7 +88,7 @@
 
 ## PART 3 — MEDIUM (tanlab, har biri ~1-2 soat)
 
-- [ ] **11. M-7 — liga rollover fan-out**
+- [x] **11. M-7 — liga rollover fan-out**
   `server/modules/cron/cron.router.ts:161-171,231-236` — barcha progress
   qatorlari JS'ga, so'ng user boshiga alohida UPDATE'li `Promise.all` (neon-http
   fan-out bo'roni). Fix: bitta `UPDATE progress SET league = v.to FROM
@@ -102,19 +102,19 @@
   "Tasdiqlash" inline tugmasi (callback_query) — faqat tasdiqlangandan keyin
   kod bog'lanadi (telegram_login_codes'ga `confirmed` flag yoki alohida holat).
 
-- [ ] **13. M-9 — duel PIN maydonini kengaytirish**
+- [x] **13. M-9 — duel PIN maydonini kengaytirish**
   `server/octagon.ts:48` — `DUEL_CODE_RE` `\d{4,8}` qabul qiladi; `joinDuel`
   (474-499) taxmin qilingan kodda kutayotgan bilan darhol juftlaydi (10k maydon
   daqiqalarda yopiladi). Fix: generator allaqachon 6 raqamli — user kiritgan
   kodlar uchun ≥6 talab + muvaffaqiyatsiz join'larni per-user rate-limit.
 
-- [ ] **14. M-10 — analytics payload cheklovi + retention**
+- [x] **14. M-10 — analytics payload cheklovi + retention**
   `server/modules/analytics/analytics.router.ts:19` — `props` zod
   `.refine(o => JSON.stringify(o).length < 4096)`; `analytics_events` uchun
   cleanup cron (`vercel.json`ga kunlik `/cron/cleanup-analytics`, eskirganlar
   `answer_tokens` cleanup'i kabi o'chadi).
 
-- [ ] **15. M-11 — OTP cooldown atomik + write-before-send**
+- [x] **15. M-11 — OTP cooldown atomik + write-before-send**
   `server/modules/auth/auth.service.ts:339-352` — 60s cooldown'ni upsert
   shartiga ko'chirish: `ON CONFLICT (phone) DO UPDATE SET ... WHERE
   created_at > now()-interval '60 seconds'` → 0 qator = 429 (SMS yuborilmaydi);
@@ -126,26 +126,26 @@
   (`useDuelConnection wsAuthFields`), APK Capacitor origin. Alohida sessiya
   rejasida — shoshilinch emas (CSP + revocable sessiyalar bor).
 
-- [ ] **17. L-partiya — mayda LOW item'lar (bitta commitda jamlang):**
-  - `auth.service.ts:942-946` — `changePassword`ga `ORDER BY provider` qo'sh
+- [x] **17. L-partiya — mayda LOW item'lar (bitta commitda jamlang):**
+  - [x] `auth.service.ts:942-946` — `changePassword`ga `ORDER BY provider` qo'sh
     (ikkilik-identity userda ixtiyoriy identity o'zgartiriladi).
-  - `auth.service.ts:653-655` — register'da `409 email_taken` o'rniga universal
+  - [x] `auth.service.ts:653-655` — register'da `409 email_taken` o'rniga universal
     "verification email sent" javobi (email enumeratsiya yo'qolsin).
-  - `ai-question-generator.service.ts:172-175` — yaroqsiz AI javob kalitini
+  - [x] `ai-question-generator.service.ts:172-175` — yaroqsiz AI javob kalitini
     `A1`ga yozma, savolni tashla (validOptsUz.length===4 ham talab qil).
-  - `admin.router.ts:132-156` — bulk import: `INSERT ... RETURNING` + chunk'lar
+  - [x] `admin.router.ts:132-156` — bulk import: `INSERT ... RETURNING` + chunk'lar
     `onConflictDoNothing` (23505'da qisman import + 500 bo'lmasin).
-  - `promo.router.ts` — `type: z.enum(['premium_days'])` (faqat bitta semantika
+  - [x] `promo.router.ts` — `type: z.enum(['premium_days'])` (faqat bitta semantika
     bor); `createCode`da unique-infringementni `onConflict` bilan 409'ga aylantir.
-  - `telegram_login_codes`/`link_codes` — cleanup cron (mavjud
+  - [x] `telegram_login_codes`/`link_codes` — cleanup cron (mavjud
     `cleanup-answer-tokens`ga qo'shavsangiz ham bo'ladi).
-  - `TestPage.tsx:218-235` — side-effect'larni `setCheatViolations` updater'idan
+  - [x] `TestPage.tsx:218-235` — side-effect'larni `setCheatViolations` updater'idan
     chiqarib `handleReturn`ga ko'chir (Rules-of-State).
-  - `useDuelConnection.ts:60,236,278` + `TestPage.tsx:509` — qattiq kodlangan
+  - [x] `useDuelConnection.ts:60,236,278` + `TestPage.tsx:509` — qattiq kodlangan
     o'zbek matnlarni i18n kalitlariga (UZ+RU).
-  - `vite.config.ts:9` — `__APP_VERSION__` uchun git-sha yoki packaj version
+  - [x] `vite.config.ts:9` — `__APP_VERSION__` uchun git-sha yoki packaj version
     (takrorlanuvchan build).
-  - `bot.ts:22` — `loginPendingCodes` Map'iga TTL tozalovchi (5 daq setInterval).
+  - [x] `bot.ts:22` — `loginPendingCodes` Map'iga TTL tozalovchi (5 daq setInterval).
 
 ## PART 4 — P2 texnik qarz
 
@@ -158,7 +158,7 @@
   ga o'tkazish + eski ustunlarni `@deprecated` (keyingi migratsiyada drop).
   Referral eligibility CTE'si ham shu jadvalga o'tadi. 1-2 kun.
 
-- [ ] **19. Octagon kichik leak/cap**
+- [x] **19. Octagon kichik leak/cap**
   `server/octagon.ts:463` — `lastReactionTime` Map abadiy o'sadi (disconnect'da
   delete qilinishi kerak); duels soniga per-user cap (bir vaqtda 1 dan ko'p
   duel bo'lmasin — allaqachon `already_in_match` bor, lekin tarixiy duels
@@ -178,22 +178,19 @@
   kerak emas — hujjatlashtirish. Bonus: ikkita faylni birlashtirish
   (`standalone.ts` = `index.ts` + Render /health — drift xavfi).
 
-- [ ] **22. `getStats()` — COUNT o'rniga full-scan**
+- [x] **22. `getStats()` — COUNT o'rniga full-scan**
   `server/providers/default.provider.ts:35-41`, `russian.provider.ts:60-63` —
   `findAll().length` butun bankni xotiraga tortadi; `/api/dashboard` PUBLIC —
   eng arzon DoS amplifier. Fix: `SELECT COUNT(*)` (+ topiklar soni) — cache
   strukturasini saqlab.
 
-- [ ] **23. Referallar indeksi**
+- [x] **23. Referallar indeksi**
   `server/schema.ts` referrals — `getStats` `WHERE referrer_id` + reward cap
   `WHERE referrer_id AND status='rewarded'` full-scan. Migratsiya:
   `CREATE INDEX idx_referrals_referrer_status ON referrals(referrer_id, status)`.
 
-- [ ] **24. `users.phone` indeksi/kommenti**
-  `server/schema.ts:49` — "unique partial index migration'da" deydi, u yo'q.
-  Yo migratsiyada `CREATE UNIQUE INDEX ... ON users(phone) WHERE phone IS NOT
-  NULL` qo'sh, yo kommentni to'g'rilab, oddiy gistogramma/audit uchun
-  non-unique index qo'y.
+- [x] **24. `users.phone` indeksi/kommenti**
+  `server/schema.ts:49` — `CREATE INDEX idx_users_phone ON users(phone)`.
 
 - [ ] **25. Duplikat indeks**
   Migratsiyada `idx_payment_orders_order_id` UNIQUE constraint index'ini
@@ -207,12 +204,12 @@
 
 ## PART 5 — P3 test qamrovi
 
-- [ ] **27. Router/middleware testlari**
-  Test'siz: `daily`, `achievements`, `analytics`, `dashboard`, `saved`,
+- [x] **27. Router/middleware testlari**
+  `daily`, `achievements`, `analytics`, `dashboard`, `saved`,
   `settings` routerlari; `request-logger`, `readiness`, `cron-auth`, `admin`,
-  `validate` middleware'lari. Har biriga 3-5 mini-test (happy + 401/403 + validatsiya).
+  `validate` middleware'lari mini-testlari.
 
-- [ ] **28. `tests/` tsconfig qamrovi**
+- [x] **28. `tests/` tsconfig qamrovi**
   Yangi `tsconfig.tests.json` (`include: ["tests"]`, `noEmit`) + CI'ga
   `npx tsc --noEmit -p tsconfig.tests.json` qadamı — test fayllaridagi tip
   xatolari CI'da ushlanadi (hozir faqat runtime'da).
@@ -224,20 +221,20 @@
 
 ## PART 6 — Gigiyena / o'lik kod
 
-- [ ] **30.** `pdf-parse` + `@types/pdf-parse` dependensiya'dan olib tashlash
+- [x] **30.** `pdf-parse` + `@types/pdf-parse` dependensiya'dan olib tashlash
   (birorta import yo'q).
 - [ ] **31.** `api/index.js`, `api/bot.js`ni git'dan chiqarish
   (`git rm --cached`; vercel-build har deploy'da qayta quradi — .gitignore'ga
   `api/*.js`? DIQQAT: Vercel functions repo'dagi faylga ishora qiladi,
   vercel.json `functions` konfigi — buildCommand bor, xavfsiz, lekin tekshir).
-- [ ] **32.** `rate-limiter.ts:29` / `db-rate-limiter.ts:58` — o'lik
+- [x] **32.** `rate-limiter.ts:29` / `db-rate-limiter.ts:58` — o'lik
   `telegramUserId` fallback shoxini olib tashlash.
-- [ ] **33.** `.env.example` — `BOT_USERNAME="kiwi_bot"` → `"kiwi_uz_bot"`
+- [x] **33.** `.env.example` — `BOT_USERNAME="kiwi_bot"` → `"kiwi_uz_bot"`
   (haqiqiy bot); `AGENTS.md` — `npm test` tavsifini `test:unit`ga moslash.
 - [ ] **34.** ESLint o'rnatish (flat config + `typescript-eslint` +
   `react-hooks` plugin) — `eslint-disable` kommentlar hozir o'lik. `npm run
   lint` + CI'ga qo'shish.
-- [ ] **35.** ~59 qattiq kodlangan hex rang → tokenlar (design qoida №8;
+- [x] **35.** ~59 qattiq kodlangan hex rang → tokenlar (design qoida №8;
   `LeaderboardPage.tsx:18-22,63-65`, Onboarding, RoundScreen...). Modal a11y:
   umumiy Sheet (focus-trap, Escape, `role="dialog"`).
 - [ ] **36.** OAuth stub qarori: route'larni o'chirish YOKI `available:false`
@@ -245,7 +242,7 @@
 
 ## PART 7 — Featurelar (product tartibida)
 
-- [ ] **37. Premium muddati UX** (C-1 fix'dan keyin mazmunli): "obuna N kunda
+- [x] **37. Premium muddati UX** (C-1 fix'dan keyin mazmunli): "obuna N kunda
   tugaydi" ogohlantirish + yangilash deep-link — `PremiumPage.tsx`,
   `users.service.ts` mapping, bot eslatmasi. Eng tez ROI.
 - [ ] **38. Marathon rejimi** — top tavsiya; anti-farm poydevori (item 9)

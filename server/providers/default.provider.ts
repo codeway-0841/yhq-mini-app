@@ -33,10 +33,10 @@ export class DefaultQuestionBankProvider implements QuestionBankProvider {
   }
 
   async getStats(): Promise<{ totalQuestions: number; totalTopics: number }> {
-    const [qs, ts] = await Promise.all([
-      questionsRepository.findAll(this.sourceId),
+    const [qCount, ts] = await Promise.all([
+      questionsRepository.countByBank(this.sourceId),
       questionsRepository.findTopics(this.sourceId),
     ])
-    return { totalQuestions: qs.length, totalTopics: ts.length }
+    return { totalQuestions: qCount, totalTopics: ts.length }
   }
 }

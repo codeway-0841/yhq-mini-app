@@ -85,11 +85,8 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
 
     it('returns uzbek explanation text on success', async () => {
       vi.spyOn(questionsRepository, 'findExplanation').mockResolvedValue({
-        questionId: 10,
         explanationUz: 'Bu qoidaga muvofiq...',
         explanationRu: 'Согласно правилам...',
-        createdAt: new Date(),
-        updatedAt: new Date(),
       })
 
       const res = await request(app).get('/api/questions/10/explanation?lang=uz').expect(200)
@@ -99,11 +96,8 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
 
     it('returns russian explanation text when requested', async () => {
       vi.spyOn(questionsRepository, 'findExplanation').mockResolvedValue({
-        questionId: 10,
         explanationUz: 'Bu qoidaga muvofiq...',
         explanationRu: 'Согласно правилам...',
-        createdAt: new Date(),
-        updatedAt: new Date(),
       })
 
       const res = await request(app).get('/api/questions/10/explanation?lang=ru').expect(200)

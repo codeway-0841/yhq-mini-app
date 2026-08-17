@@ -86,7 +86,7 @@ export const referralsRepository = {
         LIMIT 1
       ), upd AS (
         UPDATE referrals r SET status = 'rewarded', rewarded_at = now()
-        FROM pend WHERE r.id = pend.id
+        FROM pend WHERE r.id = pend.id AND r.status = 'pending'
         RETURNING r.referrer_id
       ), rew AS (
         UPDATE users SET

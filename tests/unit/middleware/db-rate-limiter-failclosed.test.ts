@@ -21,11 +21,11 @@ import { dbRateLimit } from '../../../server/middleware/db-rate-limiter'
 const mockedExecute = vi.mocked(executeRows)
 
 function call() {
-  const req = { method: 'POST', path: '/api/x', ip: '10.0.0.1', params: {} } as never
+  const req = { method: 'POST', path: '/api/x', ip: '10.0.0.1', params: {} } as any
   const res = {
     status: vi.fn().mockReturnThis(),
     json: vi.fn(),
-  } as never
+  } as any
   const next = vi.fn()
   return { middleware: dbRateLimit({ maxPerMinute: 5, bucket: 'test-failclosed' }), req, res, next }
 }

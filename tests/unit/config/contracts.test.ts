@@ -10,7 +10,7 @@ import { FullProfileSchema } from '../../../shared/contracts/profile'
 const VALID_PROFILE = {
   user: {
     id: '123', firstName: 'Anvar', lastName: 'Karimov', username: 'anvar_k',
-    photoUrl: '', phone: null, tariff: 'free',
+    photoUrl: '', phone: null, tariff: 'free', isAdmin: true,
   },
   progress: {
     totalCorrect: 10, totalWrong: 2, totalAnswered: 12, streak: 3,

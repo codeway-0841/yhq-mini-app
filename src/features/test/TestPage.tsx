@@ -217,20 +217,22 @@ export default function TestPage() {
         wasHiddenRef.current = false
         setCheatViolations((prev) => {
           const next = prev + 1
-          if (next >= 3) {
-            // 3-ogohlantirish: imtihon darhol to'xtatiladi
-            playSound('error')
-            haptics.notify('error')
-            setDisqualifiedByCheat(true)
-            setAnswers((a) => a.map((val) => val ?? 'unanswered'))
-            setIsFinished(true)
-            setShowResults(true)
-          } else {
-            // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
-            playSound('error')
-            haptics.notify('warning')
-            setActiveStrike(next)
-          }
+          setTimeout(() => {
+            if (next >= 3) {
+              // 3-ogohlantirish: imtihon darhol to'xtatiladi
+              playSound('error')
+              haptics.notify('error')
+              setDisqualifiedByCheat(true)
+              setAnswers((a) => a.map((val) => val ?? 'unanswered'))
+              setIsFinished(true)
+              setShowResults(true)
+            } else {
+              // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
+              playSound('error')
+              haptics.notify('warning')
+              setActiveStrike(next)
+            }
+          }, 0)
           return next
         })
       }

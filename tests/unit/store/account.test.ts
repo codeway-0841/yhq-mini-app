@@ -19,6 +19,7 @@ const userA: ApiUser = {
   lastName:  'Karimov',
   username:  'anvar_k',
   photoUrl:  '',
+  phone:     undefined,
   tariff:    'premium',
   isAdmin:   false,
 }

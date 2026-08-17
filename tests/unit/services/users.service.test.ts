@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 import { TRIAL_DAYS, usersService } from '../../../server/modules/users/users.service'
 
-const USER_ID = 123n
+const USER_ID = '123'
 
 afterEach(() => vi.restoreAllMocks())
 

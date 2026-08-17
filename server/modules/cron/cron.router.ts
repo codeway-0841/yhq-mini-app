@@ -16,7 +16,7 @@ import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
 import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords, progress, dailyStreaks, answerTokens, leagueRolloverLog, rateLimits } from '../../schema'
+import { dailyRecords, progress, dailyStreaks, answerTokens, leagueRolloverLog, rateLimits, analyticsEvents, telegramLoginCodes, linkCodes } from '../../schema'
 import { config } from '../../config'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
@@ -119,7 +119,7 @@ router.get('/cron/daily-reminder', async (_req, res) => {
     await cronRepository.complete('daily-reminder', today, result)
     res.json({ ok: true, ...result })
   } catch (err) {
-    await cronRepository.complete('daily-reminder', today, { error: String(err) }).catch(() => {})
+    console.error('[daily-reminder] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
@@ -186,7 +186,7 @@ router.get('/cron/league-rollover', async (_req, res) => {
       for (const league of LEAGUE_ORDER) {
         const inLeague = normalized.filter((r) => r.league === league)
         const active   = inLeague.filter((r) => Number(r.score) > 0)
-          .sort((a, b) => Number(b.score) - Number(a.score))
+          .sort((a, b) => (Number(b.score) - Number(a.score)) || a.userId.localeCompare(b.userId))
 
         const n        = active.length
         const promoteN = n >= 2 ? Math.max(1, Math.round(n * 0.3)) : 0
@@ -227,23 +227,33 @@ router.get('/cron/league-rollover', async (_req, res) => {
     }
 
     // 2) APPLY — har UPDATE JORIY liga plan'dagi `from`ga teng bo'lgandagina yuradi
-    // (guard): bajarilganlari idempotent skip; parallel CRON/apply ikki marta yozmaydi.
-    const applied = await Promise.all(plan.map((p) =>
-      db.update(progress)
-        .set({ league: p.toLeague, updatedAt: new Date() })
-        .where(and(eq(progress.userId, p.userId), eq(progress.league, p.fromLeague)))
-        .returning({ id: progress.userId })
-    ))
-    const appliedCount = applied.reduce((sum, rows) => sum + rows.length, 0)
+    // (guard): bajarilganlari idempotent skip; chunked (50/batch) fan-out bo'ronini oldini oladi (M-7)
+    let appliedCount = 0
+    const CHUNK_SIZE = 50
+    for (let i = 0; i < plan.length; i += CHUNK_SIZE) {
+      const chunk = plan.slice(i, i + CHUNK_SIZE)
+      const applied = await Promise.all(chunk.map((p) =>
+        db.update(progress)
+          .set({ league: p.toLeague, updatedAt: new Date() })
+          .where(and(eq(progress.userId, p.userId), eq(progress.league, p.fromLeague)))
+          .returning({ id: progress.userId })
+      ))
+      appliedCount += applied.reduce((sum, rows) => sum + rows.length, 0)
+    }
 
     const promoted = plan.filter((p) => lvl(p.toLeague) > lvl(p.fromLeague)).length
     const demoted  = plan.filter((p) => lvl(p.toLeague) < lvl(p.fromLeague)).length
-    const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted }
+    // Haftalik turnir g'oliblariga avtomatik Premium sovg'alarini berish va tabriknoma jo'natish (H-1: await before complete)
+    let prizeResult: any = { winners: [] }
+    try {
+      prizeResult = await distributeWeeklyPrizes(wPrev)
+      console.log(`[league-rollover] Tournament prizes distributed for ${wPrev}: ${prizeResult.winners.length} winners`)
+    } catch (e) {
+      console.error('[league-rollover] tournament prizes error:', e)
+    }
+
+    const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted, prizesAwarded: prizeResult.winners?.length ?? 0 }
     await cronRepository.complete('league-rollover', wPrev, result)
-    // Haftalik turnir g'oliblariga avtomatik Premium sovg'alarini berish va tabriknoma jo'natish
-    distributeWeeklyPrizes(wPrev)
-      .then((res) => console.log(`[league-rollover] Tournament prizes distributed for ${wPrev}: ${res.winners.length} winners`))
-      .catch((e) => console.error('[league-rollover] tournament prizes error:', e))
     res.json({ ok: true, ...result })
   } catch (err) {
     // RETRY-SAFE: davr 'completed'ga BELGILANMAYDI — jobRuns 'running' qoladi,
@@ -278,8 +288,35 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
     const rlResult = await db.delete(rateLimits).where(lt(rateLimits.windowStart, rlCutoff))
     const rateLimitsDeleted = rlResult.rowCount ?? 0
 
-    await cronRepository.complete('cleanup-answer-tokens', today, { deleted, rateLimitsDeleted })
-    res.json({ ok: true, deleted, rateLimitsDeleted, cutoff: cutoff.toISOString() })
+    // analytics_events: 30 kundan eski yozuvlar (M-10 retention)
+    const analyticsCutoff = new Date(Date.now() - 30 * 86_400_000)
+    const analyticsResult = await db.delete(analyticsEvents).where(lt(analyticsEvents.createdAt, analyticsCutoff))
+    const analyticsDeleted = analyticsResult.rowCount ?? 0
+
+    // telegram_login_codes va link_codes: 24 soatdan eski eskirgan kodlar (L-10 cleanup)
+    const codesCutoff = new Date(Date.now() - 86_400_000)
+    const tgCodesResult = await db.delete(telegramLoginCodes).where(lt(telegramLoginCodes.createdAt, codesCutoff))
+    const tgCodesDeleted = tgCodesResult.rowCount ?? 0
+
+    const linkCodesResult = await db.delete(linkCodes).where(lt(linkCodes.createdAt, codesCutoff))
+    const linkCodesDeleted = linkCodesResult.rowCount ?? 0
+
+    await cronRepository.complete('cleanup-answer-tokens', today, {
+      deleted,
+      rateLimitsDeleted,
+      analyticsDeleted,
+      tgCodesDeleted,
+      linkCodesDeleted,
+    })
+    res.json({
+      ok: true,
+      deleted,
+      rateLimitsDeleted,
+      analyticsDeleted,
+      tgCodesDeleted,
+      linkCodesDeleted,
+      cutoff: cutoff.toISOString(),
+    })
   } catch (err) {
     await cronRepository.complete('cleanup-answer-tokens', today, { error: String(err) }).catch(() => {})
     res.status(500).json({ ok: false, error: String(err) })

@@ -122,9 +122,9 @@ function emailUserId(): string {
 const TG_ID_RE = /^\d{1,19}$/
 
 // ── Abuse himoyasi konstantalari ────────────────────────────────────────────
-const OTP_MAX_ATTEMPTS = 5            // shu urinishdan keyin kod o'chadi (yangi kod shart)
-const OTP_RESEND_COOLDOWN_MS = 60_000 // bir raqamga qayta SMS yuborish oralig'i
-const PHONE_LOGIN_MAX_ATTEMPTS = 5    // telefon login parol lockout (email'dagi kabi)
+export const OTP_MAX_ATTEMPTS = 5            // shu urinishdan keyin kod o'chadi (yangi kod shart)
+export const OTP_RESEND_COOLDOWN_MS = 60_000 // bir raqamga qayta SMS yuborish oralig'i
+export const PHONE_LOGIN_MAX_ATTEMPTS = 5    // telefon login parol lockout (email'dagi kabi)
 const PHONE_LOGIN_LOCK_MS = 15 * 60_000
 const RESET_MAX_PER_HOUR = 3          // password-reset email flood chegarasi
 
@@ -342,21 +342,23 @@ export const authService = {
    * SMS-first pattern: foydalanuvchiga kod yetmaydigan holat yo'q.
    */
   async requestOTP(input: RequestOTPInput): Promise<{ sent: boolean }> {
-    // Per-telefon cooldown — mavjud kod hali "issiq" bo'lsa yangisini yubormaymiz
-    const state = await authRepository.getOTPState(input.phone)
-    if (state && Date.now() - state.createdAt.getTime() < OTP_RESEND_COOLDOWN_MS) {
-      throw new AppError(429, 'otp_cooldown: Kod allaqachon yuborilgan — bir daqiqadan keyin qayta so\'rang')
-    }
-
     const code = generateOTP()
     const codeHash = hashOTP(code)
     const expiresAt = new Date(Date.now() + 5 * 60_000) // 5 daqiqa
 
-    // SMS yuborish OLDIN — fail-fast, kod yetmasa DB'ga ham saqlanmaydi
-    await sendOTP(input.phone, code)
+    // 1. Atomik cooldown bilan DB'da joy olish (M-11: parallel poyga va ortiqcha SMS'ni to'sadi)
+    const acquired = await authRepository.createOTPWithCooldown(input.phone, codeHash, expiresAt)
+    if (!acquired) {
+      throw new AppError(429, 'otp_cooldown: Kod allaqachon yuborilgan — bir daqiqadan keyin qayta so\'rang')
+    }
 
-    // SMS muvaffaqiyatli — DB'ga saqlash (conflict'da replace, attempts reset)
-    await authRepository.createOTP(input.phone, codeHash, expiresAt)
+    // 2. SMS yuborish (muvaffaqiyatsiz bo'lsa DB'dagi OTP'ni tozalaymiz — tezkor retry uchun)
+    try {
+      await sendOTP(input.phone, code)
+    } catch (err) {
+      await authRepository.deleteOTP(input.phone).catch(() => {})
+      throw err
+    }
 
     // Opportunistic cleanup
     void authRepository.cleanExpiredOTP().catch((e) => console.warn('[OTP cleanup]', e))
@@ -956,7 +958,8 @@ export const authService = {
     // Get identity
     const rows = await executeRows<{ provider_uid: string; password_hash: string }>(sql`
       SELECT provider_uid, password_hash FROM auth_identities
-      WHERE user_id = ${userId} AND provider IN ('email', 'phone')
+      WHERE user_id = ${userId} AND provider IN ('email', 'phone') AND password_hash IS NOT NULL
+      ORDER BY CASE WHEN provider = 'phone' THEN 1 ELSE 2 END, id ASC
       LIMIT 1
     `)
     if (!rows[0]?.password_hash) {

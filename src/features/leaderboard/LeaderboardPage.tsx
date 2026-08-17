@@ -15,10 +15,10 @@ import { useT } from '../../shared/i18n'
 import { api, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
 
 const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
-  bronze:   { color: '#cd7f32', titleKey: 'leagueBronze' },
-  silver:   { color: '#94a3b8', titleKey: 'leagueSilver' },
-  gold:     { color: '#facc15', titleKey: 'leagueGold' },
-  platinum: { color: '#3b82f6', titleKey: 'leaguePlat' },
+  bronze:   { color: 'var(--p-warning)', titleKey: 'leagueBronze' },
+  silver:   { color: 'var(--p-muted)',   titleKey: 'leagueSilver' },
+  gold:     { color: 'var(--p-gold)',    titleKey: 'leagueGold' },
+  platinum: { color: 'var(--p-blue)',    titleKey: 'leaguePlat' },
 }
 
 function SkeletonRow() {
@@ -60,9 +60,9 @@ interface LeaderEntry {
 function Podium({ top3 }: { top3: LeaderEntry[] }) {
   const [first, second, third] = [top3[0], top3[1], top3[2]]
   const col = [
-    { e: second, medal: '🥈', h: 'h-16', ring: 'ring-[#94a3b8]',  bg: '#94a3b8' },
-    { e: first,  medal: '🥇', h: 'h-24', ring: 'ring-duo-yellow',  bg: '#fbbf24' },
-    { e: third,  medal: '🥉', h: 'h-12', ring: 'ring-[#ff9600]',  bg: '#ff9600' },
+    { e: second, medal: '🥈', h: 'h-16', ring: 'ring-pmuted',   bg: 'var(--p-muted)' },
+    { e: first,  medal: '🥇', h: 'h-24', ring: 'ring-pgold',   bg: 'var(--p-gold)' },
+    { e: third,  medal: '🥉', h: 'h-12', ring: 'ring-pwarning', bg: 'var(--p-warning)' },
   ]
   return (
     <div className="flex items-end justify-center gap-4 px-4 pt-6 pb-2">

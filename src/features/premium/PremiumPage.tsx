@@ -40,7 +40,8 @@ export default function PremiumPage() {
   const [trialError, setTrialError] = useState<string | null>(null)
   const [showPromoModal, setShowPromoModal] = useState(false)
   const [selectedPlanForPayment, setSelectedPlanForPayment] = useState<PremiumPlan | null>(null)
-  const userId = useAppStore((s) => s.user?.id)
+  const user = useAppStore((s) => s.user)
+  const userId = user?.id
   const syncFromServer = useAppStore((s) => s.syncFromServer)
 
   // 3 kunlik BEPUL trial — backend faqat 1 marta beradi
@@ -100,10 +101,25 @@ export default function PremiumPage() {
             : 'Barcha imkoniyatlar — bitta obunada, cheksiz'}
         </p>
         {isPremium && (
-          <span className="inline-flex items-center gap-1.5 mt-4 px-3 py-1.5 rounded-full text-[11px] font-bold"
-            style={{ background: 'rgba(34,197,94,0.15)', border: '1px solid rgba(34,197,94,0.4)', color: '#22c55e' }}>
-            <Check size={13} /> {lang === 'ru' ? 'Подписка активна' : 'Obuna faol'}
-          </span>
+          <div className="mt-4 flex flex-col items-center gap-1">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold"
+              style={{ background: 'rgba(34,197,94,0.15)', border: '1px solid rgba(34,197,94,0.4)', color: '#22c55e' }}>
+              <Check size={13} /> {lang === 'ru' ? 'Подписка активна' : 'Obuna faol'}
+            </span>
+            {user?.premiumUntil ? (
+              <span className="text-[11.5px] text-pmuted font-medium">
+                {(() => {
+                  const days = Math.max(0, Math.ceil((new Date(user.premiumUntil).getTime() - Date.now()) / (24 * 60 * 60 * 1000)))
+                  if (days === 0) return lang === 'ru' ? 'Заканчивается сегодня' : 'Bugun tugaydi'
+                  return lang === 'ru' ? `Осталось ${days} дн.` : `${days} kun qoldi`
+                })()}
+              </span>
+            ) : (
+              <span className="text-[11.5px] text-pgold font-medium">
+                {lang === 'ru' ? 'Навсегда' : 'Umrbod faol'}
+              </span>
+            )}
+          </div>
         )}
       </div>
 

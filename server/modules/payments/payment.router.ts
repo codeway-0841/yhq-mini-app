@@ -119,24 +119,49 @@ paymentRouter.get(
   })
 )
 
+const ClickWebhookSchema = z.object({
+  click_trans_id: z.union([z.string(), z.number()]),
+  service_id: z.union([z.string(), z.number()]),
+  click_paydoc_id: z.union([z.string(), z.number()]).optional(),
+  merchant_trans_id: z.string().min(1).max(64),
+  merchant_prepare_id: z.union([z.string(), z.number()]).optional(),
+  amount: z.union([z.string(), z.number()]),
+  action: z.union([z.literal(0), z.literal(1), z.literal('0'), z.literal('1')]),
+  error: z.union([z.string(), z.number()]),
+  error_note: z.string().optional(),
+  sign_time: z.string().min(1),
+  sign_string: z.string().min(1),
+})
+
 /**
  * 3. Click Webhook Handler
  * Supports unified POST /click as well as POST /click/prepare and POST /click/complete.
  */
 async function handleClickWebhookRoute(req: any, res: any) {
-  const body = req.body || {}
-  const action = Number(body.action)
+  const parseResult = ClickWebhookSchema.safeParse(req.body)
+  if (!parseResult.success) {
+    const raw = req.body || {}
+    return res.json({
+      click_trans_id: raw.click_trans_id ?? 0,
+      merchant_trans_id: raw.merchant_trans_id ?? '',
+      error: -3,
+      error_note: 'Invalid request payload',
+    })
+  }
+
+  const payload = parseResult.data
+  const action = Number(payload.action)
 
   if (action === 0) {
-    const result = await handleClickPrepare(body as ClickPrepareInput)
+    const result = await handleClickPrepare(payload as ClickPrepareInput)
     return res.json(result)
   } else if (action === 1) {
-    const result = await handleClickComplete(body as ClickCompleteInput)
+    const result = await handleClickComplete(payload as ClickCompleteInput)
     return res.json(result)
   } else {
     return res.json({
-      click_trans_id: body.click_trans_id,
-      merchant_trans_id: body.merchant_trans_id,
+      click_trans_id: payload.click_trans_id,
+      merchant_trans_id: payload.merchant_trans_id,
       error: -3,
       error_note: 'Action not found',
     })

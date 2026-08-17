@@ -48,6 +48,7 @@ export const users = pgTable('users', {
 }, (t) => [
   // Note: Unique constraint created in migration (unique partial index not supported by Drizzle)
   check('chk_users_failed_attempts_nonnegative', sql`${t.failedLoginAttempts} >= 0`),
+  index('idx_users_phone').on(t.phone),
 ])
 
 /**
@@ -448,7 +449,10 @@ export const referrals = pgTable('referrals', {
   status:     text('status').$type<'pending' | 'rewarded'>().default('pending').notNull(),
   rewardedAt: timestamp('rewarded_at'),
   createdAt:  timestamp('created_at').defaultNow().notNull(),
-}, (t) => [unique('uq_referral_referee').on(t.refereeId)])
+}, (t) => [
+  unique('uq_referral_referee').on(t.refereeId),
+  index('idx_referrals_referrer_status').on(t.referrerId, t.status),
+])
 
 /** KPI eventlar (1 haftalik sinov) — activation/retention/premium_click o'lchash */
 export const analyticsEvents = pgTable('analytics_events', {  id:        serial('id').primaryKey(),
@@ -660,7 +664,7 @@ export const smsCampaignRecipients = pgTable('sms_campaign_recipients', {
   /** FK yo'q: user o'chirilsa ham yetkazib berish tarixi saqlanadi */
   userId:     text('user_id').notNull(),
   phone:      text('phone').notNull(),
-  status:     text('status').$type<'pending' | 'sent' | 'failed'>().default('pending').notNull(),
+  status:     text('status').$type<'pending' | 'sending' | 'sent' | 'failed'>().default('pending').notNull(),
   error:      text('error'),
   sentAt:     timestamp('sent_at'),
   createdAt:  timestamp('created_at').defaultNow().notNull(),

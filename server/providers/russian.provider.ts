@@ -2,6 +2,7 @@ import type { QuestionBankProvider, QuestionRow, TopicRow } from './QuestionBank
 import { db } from '../db/connection'
 import { questions, topics } from '../schema'
 import { eq, asc, and } from 'drizzle-orm'
+import { questionsRepository } from '../modules/questions/questions.repository'
 
 // In-memory cache for Russian language questions
 const TTL_MS = 5 * 60_000
@@ -58,8 +59,11 @@ export class RussianQuestionBankProvider implements QuestionBankProvider {
   }
 
   async getStats(): Promise<{ totalQuestions: number; totalTopics: number }> {
-    const [qs, ts] = await Promise.all([this.getAllQuestions(), this.getTopics()])
-    return { totalQuestions: qs.length, totalTopics: ts.length }
+    const [qCount, ts] = await Promise.all([
+      questionsRepository.countByBank(this.sourceId),
+      this.getTopics(),
+    ])
+    return { totalQuestions: qCount, totalTopics: ts.length }
   }
 
   invalidateCache(): void {

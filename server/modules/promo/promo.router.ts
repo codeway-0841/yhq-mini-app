@@ -15,7 +15,7 @@ const RedeemBodySchema = z.object({
 
 const CreatePromoBodySchema = z.object({
   code: z.string().trim().min(3).max(30),
-  type: z.string().default('premium_days'),
+  type: z.enum(['premium_days']).default('premium_days'),
   value: z.number().int().positive(),
   maxUses: z.number().int().positive().nullable().optional(),
   expiresAt: z.string().datetime().nullable().optional(),

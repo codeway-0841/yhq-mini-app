@@ -18,8 +18,16 @@ const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
 
-// In-memory: TG user_id → login code (5 min TTL, cleaned on use)
-const loginPendingCodes = new Map<number, string>()
+// In-memory: TG user_id → login code (5 min TTL)
+const loginPendingCodes = new Map<number, { code: string; expiresAt: number }>()
+
+const loginCodeCleanupTimer = setInterval(() => {
+  const now = Date.now()
+  for (const [uid, entry] of loginPendingCodes) {
+    if (now > entry.expiresAt) loginPendingCodes.delete(uid)
+  }
+}, 5 * 60_000)
+loginCodeCleanupTimer.unref?.()
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
@@ -118,7 +126,10 @@ bot.command('start', async (ctx) => {
         .requestContact("📱 Raqamni ulashish")
         .resized()
         .oneTime()
-      loginPendingCodes.set(ctx.from.id, param.slice(6))
+      loginPendingCodes.set(ctx.from.id, {
+        code: param.slice(6),
+        expiresAt: Date.now() + 5 * 60_000,
+      })
       await ctx.reply(
         "📱 Ilovaga kirish uchun telefon raqamingizni ulashing.\n\n" +
         "Quyidagi tugmani bosing — raqamingiz xavfsiz tarzda tekshiriladi:",
@@ -147,7 +158,7 @@ bot.command('start', async (ctx) => {
   if (param && /^ref_\d{1,19}$/.test(param)) {
     const refId = param.slice(4)
     await ctx.reply(
-      "🚗 Do'stingiz sizni KIWI'ga taklif qilганi uchun mukofot beriladi!\n\n" +
+      "🚗 Do'stingiz sizni KIWI'ga taklif qilgani uchun mukofot beriladi!\n\n" +
       "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
       { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
     )
@@ -175,9 +186,13 @@ bot.command('start', async (ctx) => {
 bot.on('message:contact', async (ctx) => {
   const from = ctx.from
   if (!from) return
-  const code = loginPendingCodes.get(from.id)
-  if (!code) return  // login flow'da emas — ignore
+  const pending = loginPendingCodes.get(from.id)
+  if (!pending || Date.now() > pending.expiresAt) {
+    if (pending) loginPendingCodes.delete(from.id)
+    return // login flow'da emas yoki muddati tugagan — ignore
+  }
 
+  const code = pending.code
   loginPendingCodes.delete(from.id)
 
   const contact = ctx.message.contact

@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   // Build versiyasi — Profil tagida ko'rinadi (cache tekshiruvi uchun)
   define: {
-    __APP_VERSION__: JSON.stringify(new Date().toISOString().slice(0, 16).replace('T', ' ')),
+    __APP_VERSION__: JSON.stringify(process.env.VITE_APP_VERSION || process.env.npm_package_version || '2.0.0'),
   },
   // '/' SHART: SPA deep-link reload'da (vercel.json rewrite → /index.html)
   // './assets' relative yo'l buzuq URL'ga olib borardi (blank page).

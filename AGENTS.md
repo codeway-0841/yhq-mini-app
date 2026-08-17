@@ -52,7 +52,7 @@ tests/
 ```bash
 npm run dev            # frontend dev (vite)
 npm run server:dev     # backend dev (tsx watch)
-npm test               # barcha testlar
+npm test               # unit va api testlar (vitest run)
 npm run test:integration  # integration (real DB) — DAN OLDIN test DB'ni migrate qiling:
                           # DATABASE_URL="$TEST_DATABASE_URL" npx tsx server/migrate.ts
                           # (aks holda "eskirgan" schema'da 500/404 bilan tushadi — state ham kir bo'ladi)

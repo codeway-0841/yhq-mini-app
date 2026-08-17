@@ -24,7 +24,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
 
   describe('registerWithPhone', () => {
     it('successfully registers new user with phone + password (OTP tasdiqlangach)', async () => {
-      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null as any)
       vi.spyOn(authRepository, 'consumeOTP').mockResolvedValue(true)
       vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
       vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(true)
@@ -91,12 +91,13 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
           phone: '+998901234567',
           password: 'Password123!',
           firstName: 'Duplicate User',
+          otp: '123456',
         }),
       ).rejects.toThrowError(new AppError(409, 'phone_taken'))
     })
 
     it('throws 409 phone_taken if createIdentity returns false', async () => {
-      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null as any)
       vi.spyOn(authRepository, 'consumeOTP').mockResolvedValue(true)
       vi.spyOn(usersRepository, 'initAtomic').mockResolvedValue(undefined as any)
       vi.spyOn(authRepository, 'createIdentity').mockResolvedValue(false)
@@ -168,7 +169,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
     })
 
     it('throws 401 invalid_credentials if user not found', async () => {
-      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null)
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue(null as any)
 
       await expect(
         authService.loginWithPhone({

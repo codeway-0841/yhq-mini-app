@@ -108,7 +108,6 @@ export function createApp() {
   app.use('/api', adminRouter)
   app.use('/api', promoRouter)
   app.use('/api/payments', paymentRouter)
-  app.use('/api', paymentRouter)
 
   // 404 catch-all for unmatched /api routes
   app.use('/api', (_req, res) => {

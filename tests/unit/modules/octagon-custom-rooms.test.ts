@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 
-const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{4,16}|room-[a-z0-9]{4,16}|\d{4,8}|[a-z0-9]{4,12})$/i
+const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{6,16}|room-[a-z0-9]{6,16}|\d{6,8}|[a-z0-9]{6,12})$/i
 
 describe('Octagon Custom Rooms & PIN Code PvP — Unit Tests', () => {
   describe('Room Code & PIN Validation Regex', () => {
@@ -10,8 +10,9 @@ describe('Octagon Custom Rooms & PIN Code PvP — Unit Tests', () => {
       expect(DUEL_CODE_RE.test('999999')).toBe(true)
     })
 
-    it('4-8 xonali raqamli PIN kodlarni qabul qiladi', () => {
-      expect(DUEL_CODE_RE.test('1234')).toBe(true)
+    it('6-8 xonali raqamli PIN kodlarni qabul qiladi, 4 xonalini rad etadi', () => {
+      expect(DUEL_CODE_RE.test('1234')).toBe(false)
+      expect(DUEL_CODE_RE.test('123456')).toBe(true)
       expect(DUEL_CODE_RE.test('12345678')).toBe(true)
     })
 

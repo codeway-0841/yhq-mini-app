@@ -118,6 +118,25 @@ export const authRepository = {
   },
 
   /**
+   * OTP kod yaratish — ATOMIK 60 soniyali cooldown bilan (M-11: parallel poyga va ortiqcha SMS'ni to'sadi).
+   * @returns boolean — true: kod yozildi; false: cooldown faol (parallel so'rov yoki 60s ichida).
+   */
+  async createOTPWithCooldown(phone: string, codeHash: string, expiresAt: Date, txOrDb?: DB): Promise<boolean> {
+    const rows = await executeRows<{ phone: string }>(sql`
+      INSERT INTO otp_codes (phone, code_hash, expires_at, created_at, attempts)
+      VALUES (${phone}, ${codeHash}, ${expiresAt}, now(), 0)
+      ON CONFLICT (phone) DO UPDATE
+      SET code_hash = EXCLUDED.code_hash,
+          expires_at = EXCLUDED.expires_at,
+          created_at = now(),
+          attempts = 0
+      WHERE otp_codes.created_at <= now() - interval '60 seconds'
+      RETURNING phone
+    `, txOrDb)
+    return rows.length > 0
+  },
+
+  /**
    * OTP holati — so'nggi kod qachon yuborilgan (resend cooldown tekshiruvi).
    * `created_at` yangi kod yozilganda yangilanadi (upsert).
    */

@@ -87,10 +87,13 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
   for (const model of modelsToTry) {
     try {
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${key}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': key,
+          },
           signal: controller.signal,
           body: JSON.stringify({
             systemInstruction: { parts: [{ text: systemInstruction }] },
@@ -116,34 +119,30 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
       }
     } catch (err: any) {
       if (err instanceof AppError) throw err
-      if (controller.signal.aborted) {
-        clearTimeout(timeout)
-        throw new AppError(504, "AI generatsiya vaqti tugadi (Timeout). Iltimos, savollar sonini kamaytirib qayta urinib ko'ring.")
-      }
-      console.warn(`[ai-question-generator] Model ${model} error:`, err?.message || err)
+      console.warn(`[ai-question-generator] Request error for ${model}:`, err?.message || err)
     }
   }
 
   clearTimeout(timeout)
 
   if (!apiRes) {
-    throw new AppError(502, `AI xizmatiga ulanib bo'lmadi: ${lastErrorText.slice(0, 200) || 'API xatoligi'}`)
+    throw new AppError(500, `AI xizmati bilan bog'lanib bo'lmadi: ${lastErrorText.slice(0, 100)}`)
   }
 
-  const data: any = await apiRes.json()
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text || ''
+  const rawJson = await apiRes.json()
+  const textContent = rawJson.candidates?.[0]?.content?.parts?.[0]?.text
 
-  if (!rawText) {
-    throw new AppError(500, "AI dan javob olinmadi")
+  if (!textContent) {
+    throw new AppError(500, "AI dan bo'sh javob qaytdi")
   }
 
-  let parsedQuestions: any
+  let parsedQuestions: any[] = []
   try {
-    const cleanJson = rawText.trim().replace(/^```json\s*/i, '').replace(/\s*```$/i, '')
-    parsedQuestions = JSON.parse(cleanJson)
-  } catch (err) {
-    console.error('[ai-question-generator] JSON parse error:', rawText.slice(0, 500))
-    throw new AppError(500, "AI noto'g'ri formatda javob qaytardi. Iltimos, qayta urinib ko'ring.")
+    const parsed = JSON.parse(textContent)
+    parsedQuestions = Array.isArray(parsed) ? parsed : (parsed.questions || [])
+  } catch (e) {
+    console.error('[ai-question-generator] JSON parse error:', textContent.slice(0, 300))
+    throw new AppError(500, "AI javobini JSON formatida o'qib bo'lmadi")
   }
 
   if (!Array.isArray(parsedQuestions)) {
@@ -158,7 +157,7 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
     const optsUz = Array.isArray(q.optionsUz) ? q.optionsUz : []
     const optsRu = Array.isArray(q.optionsRu) ? q.optionsRu : []
 
-    // Ensure 4 options format
+    // Ensure options format
     const validOptsUz = optsUz.map((opt: any, idx: number) => ({
       id: opt.id || `A${idx + 1}`,
       text: String(opt.text || `Variant ${idx + 1}`).trim(),
@@ -169,9 +168,12 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
       text: String(opt.text || `Вариант ${idx + 1}`).trim(),
     }))
 
-    let correct = String(q.correctAnswer || 'A1').trim()
+    // Must have at least 2 options and valid correctAnswer
+    if (validOptsUz.length < 2) continue
+
+    const correct = String(q.correctAnswer || '').trim()
     if (!validOptsUz.some((o: any) => o.id === correct)) {
-      correct = validOptsUz[0]?.id || 'A1'
+      continue // Skip invalid question rather than defaulting to arbitrary A1
     }
 
     sanitized.push({

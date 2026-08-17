@@ -58,7 +58,6 @@ export function dbRateLimit(opts: DbRateLimitOptions) {
   const keyFn = opts.keyFn ?? ((req: Request): string | undefined => {
     const paramId = req.params['userId']
     return (req as { userId?: string }).userId
-      ?? (req as { telegramUserId?: string }).telegramUserId
       ?? (typeof paramId === 'string' ? paramId : paramId?.[0])
       ?? req.ip
   })

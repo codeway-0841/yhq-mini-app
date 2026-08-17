@@ -103,10 +103,13 @@ router.post(
       apiRes = await fetch(
         // Model alias: `gemini-2.0-flash` kunlik kvotasi tugab qolishi mumkin —
         // `flash-latest` har doim oxirgi flash modelga ishora qiladi
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse&key=${key}`,
+        'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:streamGenerateContent?alt=sse',
         {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': key,
+          },
           signal: controller.signal,
           body: JSON.stringify({
             contents: [{ role: 'user', parts: [{ text: buildPrompt(q, lang, answeredCorrect) }] }],

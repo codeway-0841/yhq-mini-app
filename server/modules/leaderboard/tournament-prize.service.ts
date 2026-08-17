@@ -5,7 +5,7 @@
 
 import { and, desc, eq, gte, lt, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
-import { dailyRecords, progress, tournamentPrizes, users, userSettings } from '../../schema'
+import { dailyRecords, progress, tournamentPrizes, users } from '../../schema'
 import { config } from '../../config'
 
 export const TOURNAMENT_PRIZES: Record<number, number> = {
@@ -105,7 +105,6 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
     .from(users)
     .innerJoin(weeklyScores, eq(weeklyScores.userId, users.id))
     .leftJoin(progress, eq(progress.userId, users.id))
-    .leftJoin(userSettings, eq(userSettings.userId, users.id))
     .where(sql`${weeklyScores.score} > 0`)
     .orderBy(
       desc(sql`COALESCE(${weeklyScores.score}, 0)`),
@@ -124,10 +123,28 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
     const rank = i + 1
     const prizeDays = TOURNAMENT_PRIZES[rank] || 7
 
-    // Foydalanuvchiga Premium berish.
+    // 1. Mukofot yozuvini kiritish (ledger-first — H-1: tranzaksiyasiz ham idempotent)
+    const inserted = await db
+      .insert(tournamentPrizes)
+      .values({
+        periodKey,
+        userId: row.userId,
+        rank,
+        score: Number(row.score),
+        league: row.league,
+        prizeDays,
+      })
+      .onConflictDoNothing()
+      .returning({ id: tournamentPrizes.id })
+
+    if (inserted.length === 0) {
+      // Allaqachon kiritilgan — o'tkazib yuboramiz
+      continue
+    }
+
+    // 2. Foydalanuvchiga Premium berish.
     // C-1: muddatli sovrin tariff'ga TEGMAYDI (premium_until yetarli).
-    // H-1 (qisman): GREATEST SQLda — SELECT va UPDATE orasida boshqa
-    // to'lov/promo muddatni uzatsa, eskisi ko'r-ko'rona o'chirilmaydi.
+    // H-1: GREATEST SQLda — to'lov/promo muddatni uzatsa, eskisi ko'r-ko'rona o'chirilmaydi.
     const [granted] = await db
       .update(users)
       .set({
@@ -136,16 +153,6 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
       })
       .where(eq(users.id, row.userId))
       .returning({ premiumUntil: users.premiumUntil })
-
-    // Mukofot yozuvini kiritish
-    await db.insert(tournamentPrizes).values({
-      periodKey,
-      userId: row.userId,
-      rank,
-      score: Number(row.score),
-      league: row.league,
-      prizeDays,
-    }).onConflictDoNothing()
 
     // Telegram Bot orqali maxsus bayramona tabriknoma jo'natish
     let notified = false

@@ -16,7 +16,10 @@ const router = Router()
 
 const EventSchema = z.object({
   event: z.string().min(1).max(64).regex(/^[a-z_]+$/, 'snake_case event'),
-  props: z.record(z.string(), z.unknown()).optional().default({}),
+  props: z.record(z.string(), z.unknown()).optional().default({}).refine(
+    (p) => JSON.stringify(p).length <= 4096,
+    { message: 'props payload too large (max 4KB)' }
+  ),
 })
 
 // POST /api/analytics — rate limited, prod'da auth (dev'da ochiq)

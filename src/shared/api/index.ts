@@ -130,6 +130,7 @@ export interface ApiUser {
   photoUrl: string | undefined
   phone: string | undefined
   tariff: 'free' | 'premium'
+  premiumUntil?: string | null
   /** Admin panel (savol CRUD) huquqi */
   isAdmin?: boolean
   /** SMS marketing roziligi (opt-in) — faqat user o'zi yoqadi */

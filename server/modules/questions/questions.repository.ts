@@ -1,4 +1,4 @@
-import { and, asc, eq } from 'drizzle-orm'
+import { and, asc, eq, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { questions, topics, questionExplanations } from '../../schema'
 
@@ -26,6 +26,16 @@ export const questionsRepository = {
         .where(eq(questions.bankId, bankId))
         .orderBy(asc(questions.id)),
     )
+  },
+
+  countByBank(bankId = 'traffic_rules_db'): Promise<number> {
+    return cached(`questions:count:${bankId}`, async () => {
+      const [row] = await db
+        .select({ count: sql<number>`COUNT(*)::int` })
+        .from(questions)
+        .where(eq(questions.bankId, bankId))
+      return Number(row?.count ?? 0)
+    })
   },
 
   /** Readiness check — question pool loaded va non-empty */

@@ -276,7 +276,7 @@ router.get('/admin/stats', wrap(async (_req, res) => {
   const [dailyStats] = await executeRows<{ todayActiveUsers: number }>(sql`
     SELECT COUNT(DISTINCT user_id)::int AS "todayActiveUsers"
     FROM daily_records
-    WHERE date = to_char(now(), 'YYYY-MM-DD')
+    WHERE date = to_char(now() AT TIME ZONE 'Asia/Tashkent', 'YYYY-MM-DD')
   `)
 
   res.json({

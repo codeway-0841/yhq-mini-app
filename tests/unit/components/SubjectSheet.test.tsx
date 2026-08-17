@@ -9,14 +9,15 @@ describe('SubjectSheet component', () => {
     useSubjectStore.setState({ subjectId: 'yhq' })
     useAppStore.setState({
       settings: {
+        autoNextCorrect: true,
+        autoNextWrong: false,
+        noAnimation: false,
+        shuffleOptions: false,
+        fontSize: 'medium',
+        fontStyle: 'default',
         language: 'uz',
         theme: 'dark',
-        sound: true,
-        vibration: true,
-        autoNext: true,
-        fontSize: 'md',
-        noAnimation: false,
-        lowDataMode: false,
+        offlineMode: false,
       },
     })
   })

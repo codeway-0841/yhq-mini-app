@@ -116,12 +116,20 @@ export const smsCampaignService = {
       }
     }
 
-    // Chunk: pending recipientlar (jo'natish tartibida)
+    // Chunk: pending recipientlarni atomik claim qilamiz (M-4: SKIP LOCKED poygaga qarshi)
     const batch = await executeRows<{ id: number; phone: string }>(sql`
-      SELECT id, phone FROM sms_campaign_recipients
-      WHERE campaign_id = ${campaignId} AND status = 'pending'
-      ORDER BY id
-      LIMIT ${SMS_BATCH_SIZE}
+      WITH claimed AS (
+        SELECT id FROM sms_campaign_recipients
+        WHERE campaign_id = ${campaignId} AND status = 'pending'
+        ORDER BY id
+        LIMIT ${SMS_BATCH_SIZE}
+        FOR UPDATE SKIP LOCKED
+      )
+      UPDATE sms_campaign_recipients r
+      SET status = 'sending'
+      FROM claimed
+      WHERE r.id = claimed.id
+      RETURNING r.id, r.phone
     `)
 
     let batchSent = 0
@@ -141,13 +149,13 @@ export const smsCampaignService = {
       }
     }
 
-    // Counterlar + yakunlash (pending=0 bo'lsa status=sent)
+    // Counterlar + yakunlash (pending yoki sending = 0 bo'lsa status=sent)
     const [updated] = await executeRows<SmsCampaignRow>(sql`
       WITH counts AS (
         SELECT
           COUNT(*) FILTER (WHERE status = 'sent')::int   AS sent,
           COUNT(*) FILTER (WHERE status = 'failed')::int AS failed,
-          COUNT(*) FILTER (WHERE status = 'pending')::int AS pending
+          COUNT(*) FILTER (WHERE status IN ('pending', 'sending'))::int AS pending
         FROM sms_campaign_recipients
         WHERE campaign_id = ${campaignId}
       )
