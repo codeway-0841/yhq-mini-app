@@ -1,6 +1,8 @@
 # YHQ Mini App (KIWI) — To'liq Kod Auditi Hisoboti (o'zbek tilida)
 
 > Sana: 2026-08-17 · Audit holati: ishchi daraxt (commit qilinmagan o'zgarishlar bilan)
+>
+> **📢 Auditdan keyingi yangilanish (xuddi shu kuni):** Kritik va bir qancha Yuqori/O'rtacha topilmalar **shu kunning sessiyalarida tuzatildi** — topilma-bo'yicha holat, commit hash'lari, verifikatsiya natijalari va yangilangan baho **§7 Remediation Log**da (batafsil jadval inglizcha hisobotda: `AUDIT_REPORT_EN_2026-08-17.md`). 1–6-bo'limlar tarixiy audit snapshot'i.
 
 **Qamrov:** 642 ta kuzatiladigan fayl, ~57 000 qator TypeScript — frontend (`src/`), backend (`server/`, `api/`), umumiy qatlam (`shared/`), 39 ta migratsiya, 67 ta test fayli, CI/CD konfiglari. Tekshirish usuli: asosiy fayllar (backend core, auth, to'lovlar atrofi, frontend yadrosi, konfiglar, schema va davom etayotgan referal ishi) — fayl-ma-fayl shaxsiy o'qish + barcha 17 ta backend moduli, `octagon.ts` va `bot.ts` — alohida chuqur sub-audit orqali.
 
@@ -194,3 +196,52 @@ Bu stack uchun muhandislik intizomi haqiqatan kam uchraydigan darajada: deyarli 
 3. Umumiy chunked-dispatch primitive'ini ajratib, broadcast'ni unga ko'chiring (M-5) — butun sinf timeout/poyga bug'larini yo'q qiladi.
 4. To'lovlar/promo/referal mukofot yo'llari uchun repository-daraja testlarini to'ldiring (qator boshiga eng qimmatli qamrov) va `tests/`ni tsconfig'ga qo'shing — CI tip xatolarini ushlashi uchun.
 5. Gigiyena: `pdf-parse`ni olib tashlash, `api/*.js`ni git'dan chiqarish, `index.ts`/`standalone.ts`ni birlashtirish, `.env.example`dagi bot-username nomuvofiqligini tuzatish va H-4 farming siyosatini tanlash (kunlik kredit unique-key — tavsiya, TODO.md variant 1'ga mos).
+
+---
+
+## 7. REMEDIATION LOG — audit'dan keyin bajarilgan barcha ishlar (2026-08-17, xuddi shu kuni)
+
+> Batafsil topilma-holat jadvali, commit tarkibi va test ro'yxati inglizcha hisobotda
+> (`AUDIT_REPORT_EN_2026-08-17.md` §7). Bu yerda qisqa mazmun.
+
+### 7.1 P1 xavfsizlik paketi (audit sessiyasi) — commit `34462cd` (30 fayl, +693/−85)
+
+- **P1-1:** `/questions`, `/topics`, `/progress/result`, `/cards/review`, `/promo/redeem`, `/tutor/explain`, `/payments/create-order` — hammasi `dbRateLimit`ga o'tdi (Vercel'da in-memory no-op edi; endi prod'da Neon DB counter).
+- **P1-2:** DB xatosida limiter endi **fail-closed**: 503 + Sentry (avval fail-open — outage'da butun himoya o'chardi).
+- **P1-3:** Telegram login kodi `X-Login-Code` **header**ga ko'chdi (URL path/log'dan chiqdi); eski `:code` route keshlangan bundle'lar uchun qoldi; logger normalize qiladi.
+- **P1-4:** initData oynasi **24 soat → 1 soat** (`INITDATA_MAX_AGE_SECONDS` env); klient 401'da 60s guard bilan 1 marta reload qilib yangi initData oladi.
+- **P1-5:** Click: NaN summa rad, cancelled qayta ochilmaydi, **atomik claim** (parallel/replay Complete bitta grant), grant xatosida pending'ga rollback, `user_not_found` → −5, urlencoded qo'shildi.
+- **C-1 (KRITIK):** muddatli grantlar endi `tariff`ga tegmaydi — `tariff='premium'` faqat umrbod sentinel (4 grant yo'lida: to'lov, promo, turnir, admin). "Oylik puliga umrbod premium" teshigi yopildi.
+- **H-1 (qisman):** turnir `premium_until` endi SQLda `GREATEST` bilan (lost-update yopildi).
+- **M-3:** `USER_SEGMENTS`ga `'referrals'` — IDOR yopildi.
+- **P3:** `walkthrough.md` gitignore; CI phantom-DB → `db.invalid` (tez yiqilish); vitest retry: unit/api 0, integration alohida configda 2.
+- **Testlar:** 10 ta yangi/yangilangan (telegram oynasi ×8, fail-closed ×2, Click ×5, promo/security-critical stored-tariff assertlari).
+
+### 7.2 Parallel sessiya ishlari (shu kuni, P1'dan oldin)
+
+| Commit | Ish |
+|---|---|
+| `2379ce9` | **Referal v3:** ro'yxatdan o'tishda welcome sovg'a (`createPending` CTE), referrer mukofoti telefon ulaganda; barcha canonical id shakllari; statistika endpoint + Profil kartasi; 0038 backfill; i18n |
+| `b697ed0` | **SMS opt-in kampaniyalar:** 0039 schema, chunked dispatch (30/batch), AdminSmsTab, sms-consent endpoint, testlar |
+| `d9ab3ad` | **H-2 FIXED:** telefon register/yangi raqam ulash uchun **SMS OTP egalilik isboti** majburiy — SMS-bezovqachilik yo'li va referal gate haqiqiy bo'ldi |
+| `daba88b` | Audit hisobotlari commit qilindi (EN + UZ) |
+
+### 7.3 Verifikatsiya (push'dan oldin)
+
+tsc ×2 ✓ · unit **384/384** ✓ · api **17/17** ✓ · integration (real Neon) **95/95** ✓ (referal v3 + SMS kampaniya + C-1 stored-`'free'` assertlari bilan) · vite build ✓ · push: `d9ab3ad..daba88b master -> master`.
+
+### 7.4 Topilmalar holati (qisqacha)
+
+- ✅ FIXED: **C-1, H-2, M-3, M-12**, P3-tez item'lar
+- 🟡 PARTIAL: **H-1** (fire-and-forget qoldi), **M-1** (to'liq zod sxemasi qoldi)
+- 🔴 OPEN: **H-3** (farming qarori), **M-2** (bir qator!), **M-4, M-5, M-6** (2 qator), **M-7…M-11, M-13**, LOW item'lar
+
+### 7.5 Yangilangan baho: **B− (~70%) → B+ (~78%)**
+
+Daromad-kritik C-1 va H-2 yopildi, IDOR yopildi, serverless'da rate-limit perimetri haqiqiy bo'ldi, login kodi log'dan chiqdi, Click replay/poyga-hardened, referal+SMS to'liq testlar bilan land qilindi. A-darajadan ushlab turuvchilar: H-1 qoldig'i, M-2/M-4 bir-qatorlik poygalar, farming qarori, ~18% test qamrovi, jsonb scalability qarzi.
+
+### 7.6 Keyingi sessiya tartibi (tavsiya)
+
+1. M-2 (bir qator, 15 daqiqa) → 2. M-6 (2 qator) → 3. H-1 qoldig'i → 4. M-4+M-5 (umumiy chunked-dispatch primitive) → 5. H-3 farming qarori → 6. P2: jsonb→jadval, Octagon leak, repository pattern → 7. P3: 8 router + middleware testlari → 8. Featurelar: Marathon rejimi, sertifikat, Coins/Battle Pass.
+
+> **Deploy eslatmasi:** P1 migratsiya talab qilmaydi; `INITDATA_MAX_AGE_SECONDS` ixtiyoriy (default 1 soat). Uzoq Telegram sessiyalari oyna tugagach bitta avto-reload ko'radi — kutilgan, loop-guard'li xatti-harakat.

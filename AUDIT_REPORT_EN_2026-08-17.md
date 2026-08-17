@@ -1,6 +1,8 @@
 # YHQ Mini App (KIWI) — Full Codebase Audit Report
 
 > Date: 2026-08-17 · Audited state: working tree (including uncommitted changes)
+>
+> **📢 Post-audit update (same day):** the Critical finding and several High/Medium findings were **remediated in the same-day sessions** — see **§7 Remediation Log** at the bottom for per-finding status (fixed / partially fixed / open), commit hashes, verification results and the updated health grade. Sections 1–6 below are the historical audit snapshot.
 
 **Scope:** 642 tracked files, ~57,000 lines of TypeScript across frontend (`src/`), backend (`server/`, `api/`), shared layer (`shared/`), 39 migrations, 67 test files, CI/CD configs. Method: direct file-by-file review of the core paths (backend core, auth, payments-adjacent code, frontend core, configs, schema, the in-flight referral work) plus a dedicated deep sub-audit of all 17 backend modules, `octagon.ts`, and `bot.ts`.
 
@@ -159,7 +161,7 @@ Ranked by user expectation vs. effort:
 
 ## 6. SUMMARY REPORT
 
-### Overall health: **B− (~70%)** — architecture A−, business-logic correctness B−, in-flight work unstable
+### Overall health: **B− (~70%)** — architecture A−, business-logic correctness B−, in-flight work unstable *(audit-time snapshot — after same-day remediation: **B+ (~78%)**, see §7.5)*
 
 The engineering discipline here is genuinely rare for this stack: atomic CTEs for nearly every state change, fail-closed security boundaries, type-enforced i18n/config consistency, a real CI matrix with integration DB and e2e, and honest documentation of known limitations. The prior audit's Criticals were competently fixed (verified: outbox chaining, timeout cleanup, account reset, App.tsx side-effects, admin fallback removal, Click fail-closed). What keeps it out of A-range: one **revenue-critical entitlement bug**, several JS-side read-modify-write blocks that bypass the otherwise-disciplined CTE pattern, an unauthenticated-phone→paid-SMS pathway, and a working tree that currently mixes two half-finished features.
 
@@ -178,3 +180,88 @@ The engineering discipline here is genuinely rare for this stack: atomic CTEs fo
 3. Extract the shared chunked-dispatch primitive and retrofit broadcast to it (M-5) — this retires a whole class of timeout/race bugs.
 4. Backfill repository-level tests for the payments/promo/referral reward paths (highest-value coverage per line) and add `tests/` to a tsconfig so type errors are caught in CI.
 5. Hygiene pass: drop `pdf-parse`, untrack `api/*.js`, merge `index.ts`/`standalone.ts`, fix the `.env.example` bot-username mismatch, and decide the H-4 farming policy (daily credit unique-key is the recommendation, matching TODO.md variant 1).
+
+---
+
+## 7. REMEDIATION LOG — all work completed after the audit (2026-08-17, same day)
+
+The audit ran in the morning; remediation happened in two parallel sessions the same day and was pushed as `d9ab3ad..daba88b master -> master`. Everything below is verified by the full local gate before push.
+
+### 7.1 P1 security package (audit session) — commit `34462cd`
+
+`fix(security): P1 audit package — shared db rate limits, fail-closed limiter, initData window, click replay hardening` (30 files, +693/−85)
+
+| Item | What was done | Where |
+|---|---|---|
+| **P1-1** | Migrated to `dbRateLimit` (Neon DB counter in prod, in-memory in test/dev): `/questions` + `/topics` (bucket `content`, 60/min per IP), `/progress/:userId/result` + `/cards/review` (`progress`, 120/min), `/promo/redeem` (`promo`, 5/min), `/tutor/explain` (`tutor`, 10/min), plus `/payments/create-order` (`pay-order`, 10/min) | `questions/progress/promo/tutor/payments` routers |
+| **P1-2** | DB-rate-limiter now **fails closed** on DB error: 503 `rate_limiter_unavailable` + Sentry capture (was fail-open — the whole rate-limit wall switched off during a DB outage) | `server/middleware/db-rate-limiter.ts` |
+| **P1-3** | Telegram login code moved out of the URL path: new `GET /auth/telegram-login` reading the `X-Login-Code` **header** (client migrated); legacy `:code` route kept for cached bundles; request-logger normalizes `/auth/telegram-login/:code` → `:code` | `auth.router.ts`, `request-logger.ts`, `src/shared/api/index.ts` |
+| **P1-4** | initData replay window **24 h → 1 h** (default; configurable via `INITDATA_MAX_AGE_SECONDS`, documented in `.env.example`). Client recovery: on initData-401 the Mini App reloads **once** (60 s sessionStorage guard) to obtain fresh `auth_date` — no reload loop | `config/index.ts`, `utils/telegram.ts`, `platform/telegram.ts` (`requestFreshInitData`), `api/index.ts` |
+| **P1-5** | Click webhook hardening: `NaN`/missing amount rejected (Prepare **and** Complete — Complete previously had no amount check at all); `cancelled` orders rejected in both steps; **atomic claim** (`pending→completed` conditional UPDATE) so parallel completes with different `click_trans_id`s can grant premium only once, while a same-trans-id replay returns idempotent SUCCESS without re-granting; grant failure rolls the order back to `pending` so Click retries can heal; `user_not_found` mapped to `-5`; `express.urlencoded` body support added to webhook routes | `click.service.ts`, `payment.router.ts` |
+| **C-1 (CRITICAL)** | Timed grants no longer write `tariff='premium'`: payment repository, promo repository, tournament prizes, admin grant. `tariff='premium'` is now strictly the **lifetime sentinel**; entitlement = `premium_until > now()`. The month-plan-buys-lifetime-premium hole is closed | `payment.repository.ts`, `promo.repository.ts`, `tournament-prize.service.ts`, `admin.router.ts` |
+| **H-1 (partial)** | Tournament `premium_until` now computed with `GREATEST(...)` **in SQL** (JS snapshot overwrite removed) — the lost-update half of H-1 | `tournament-prize.service.ts` |
+| **M-3** | `'referrals'` added to `USER_SEGMENTS` — `GET /api/referrals/:userId` IDOR closed | `middleware/auth.ts` |
+| **P3 hygiene** | `walkthrough.md` gitignored; CI check-job `DATABASE_URL` points at `db.invalid` (accidental connection fails fast instead of hanging on localhost); vitest retry split — unit/api **0** (flaky must fail loudly), integration keeps **2** via new `vitest.integration.config.ts` | `.gitignore`, `ci.yml`, `vitest*.config.ts`, `package.json` |
+| **Tests added/updated** | New: `tests/unit/utils/telegram.test.ts` (8 — window boundaries, future-skew, tampered hash, widget scheme), `tests/unit/middleware/db-rate-limiter-failclosed.test.ts` (2). Updated: `payment-security.test.ts` (+5 Click cases: replay idempotency, foreign trans-id, happy claim, NaN, cancelled), `promo.router.test.ts` + `security-critical.test.ts` (stored-tariff-`'free'` assertions for timed grants) | `tests/` |
+
+### 7.2 Parallel-session feature work (same day, before the P1 commit)
+
+| Commit | What |
+|---|---|
+| `2379ce9` | **Referral v3** (`feat(referral): split reward with phone-link trigger (MB-5 v3)`): welcome gift (+3 days) granted atomically at `/init` via `createPending` CTE; referrer reward on phone link (`rewardIfPhoneLinked`); `ref_<id>` regex accepts all canonical id shapes (`p_`, `e_`); referral stats endpoint + Profil card; migration 0038 with legacy-row backfill; i18n UZ/RU |
+| `b697ed0` | **SMS opt-in marketing campaigns** (`feat(sms)`): schema (migration 0039: `sms_campaigns`, `sms_campaign_recipients`), chunked dispatch (30/batch) with audience snapshot freeze, `AdminSmsTab` UI, `/users/:userId/sms-consent` opt-in/out, integration tests |
+| `d9ab3ad` | **H-2 FIXED** (`fix(auth): require SMS OTP proof for phone register and new-number linking`): `users.phone` is no longer writable with a bare format-valid string — possession is proven via the existing OTP flow first. This closes the SMS-harassment pathway *and* makes the referral phone-link gate real |
+| `daba88b` | Audit reports committed (EN + UZ) |
+
+### 7.3 Findings status after remediation
+
+| Finding | Status | Where fixed |
+|---|---|---|
+| **C-1** permanent premium for timed purchases | ✅ **FIXED** (all 4 grant paths + tests) | `34462cd` |
+| **H-1** tournament prizes | 🟡 **PARTIAL** — lost-update half fixed (GREATEST in SQL); *open:* fire-and-forget after `complete()` (`cron.router.ts:242-246`), ledger-first ordering, own `jobRuns` lease | `34462cd` |
+| **H-2** unauthenticated phone → paid SMS | ✅ **FIXED** (OTP possession proof) | `d9ab3ad` |
+| **H-3** ball farming | 🔴 **OPEN** (product decision — daily-credit unique-key recommended) | — |
+| **M-1** Click validation gaps | 🟡 **PARTIAL** — NaN, cancelled, atomic claim/replay, urlencoded done; *open:* full zod schema for webhook body | `34462cd` |
+| **M-2** referral phone-link double-reward race | 🔴 **OPEN** — one line: `AND r.status = 'pending'` in `rewardIfPhoneLinked` UPDATE (`users.repository.ts:89`) | — |
+| **M-3** referrals IDOR | ✅ **FIXED** (`USER_SEGMENTS`) | `34462cd` |
+| **M-4** SMS chunk dispatch race | 🔴 **OPEN** — claim rows with `FOR UPDATE SKIP LOCKED` | — |
+| **M-5** broadcast full-table load + 30 s truncation | 🔴 **OPEN** — extract shared chunked-dispatch primitive (do together with M-4) | — |
+| **M-6** daily-reminder completes on error | 🔴 **OPEN** — 2 lines, copy league-rollover stale-lease pattern (`cron.router.ts:124`) | — |
+| **M-7** league rollover fan-out + tiebreaker | 🔴 **OPEN** | — |
+| **M-8** TG-login code phishing | 🔴 **OPEN** — in-bot confirmation tap | — |
+| **M-9** duel PIN enumeration | 🔴 **OPEN** — ≥6 chars + failed-join rate limit | — |
+| **M-10** analytics unbounded jsonb | 🔴 **OPEN** — cap size + retention cron | — |
+| **M-11** OTP cooldown check-then-act | 🔴 **OPEN** | — |
+| **M-12** limiter fail-open | ✅ **FIXED** (now fail-closed, see P1-2) | `34462cd` |
+| **M-13** Bearer in localStorage | 🔴 **OPEN** (v2 architecture: httpOnly cookie) | — |
+| P3 quick items (gitignore, CI phantom-DB, retry split) | ✅ **FIXED** | `34462cd` |
+| Low items (L1–L15) | 🔴 mostly **OPEN** (cheap, batchable) | — |
+
+### 7.4 Verification gate (run before push)
+
+- Typecheck: client ✓, server ✓
+- Unit: **384/384** ✓ (62 files)
+- API: **17/17** ✓
+- Integration (real Neon, migrated): **95/95** ✓ — includes referral v3 suite, SMS campaign suite, and the updated C-1 assertion (month purchase → stored `tariff='free'` + `premium_until` set)
+- Vite production build ✓
+- Pushed: `d9ab3ad..daba88b master -> master` (GitHub Actions `check`/`e2e`/`integration` run on the pushed head)
+
+### 7.5 Updated health: **B− (~70%) → B+ (~78%)**
+
+What moved the grade: the revenue-critical entitlement bug (C-1) and the phone-possession hole (H-2) are closed; the IDOR is closed; the rate-limit perimeter is now real on serverless (DB-backed, fail-closed) across all hot endpoints; login codes no longer leak into logs/URLs; the Click webhook is replay- and race-hardened; the referral and SMS features landed with coherent tests.
+
+What still holds it back from A: H-1's fire-and-forget remainder, two known one-line concurrency races (M-2, M-4) not yet applied, the unresolved farming policy (H-3), ~18% measured test coverage, and the jsonb scalability debt (P2).
+
+### 7.6 Remaining work (priority order for the next session)
+
+1. **M-2** — one line (`AND r.status='pending'`) + test → 15 min
+2. **M-6** — daily-reminder `complete()` on error → 2 lines
+3. **H-1 remainder** — await prizes before `complete()`, ledger-first, own `jobRuns` lease
+4. **M-4 + M-5** — extract one shared chunked-campaign-dispatch primitive (claim rows via `FOR UPDATE SKIP LOCKED`), retrofit Telegram broadcast to it
+5. **H-3** — farming policy decision + daily-credit unique key (migration + CTE guard + tests)
+6. **P2 debt** — `solved_questions`/`correct_questions` jsonb → normalized table (biggest scalability item); Octagon `lastReactionTime` leak + duel caps; repository-pattern violations in 5 routers; admin delete transaction; graceful-shutdown gaps
+7. **P3 tests** — 8 routers + middlewares without direct tests; repository coverage (payments/promo/referral paths first)
+8. **Features** — Marathon mode (foundation now stronger post-anti-farm work), shareable certificates, Coins/Battle Pass, Octagon cup, group leaderboards, AI explanation backfill, cheat detection
+9. **Low batch** — Gemini key → `x-goog-api-key` header, admin stats Tashkent timezone, email enumeration, `telegram_login_codes` cleanup cron, ~59 hardcoded hex colors, modal a11y, OAuth stubs, merge `index.ts`/`standalone.ts`, drop `pdf-parse`, untrack `api/*.js`
+
+> **Deploy note:** no migration required by the P1 package; `INITDATA_MAX_AGE_SECONDS` is optional (default 1 h). Long Telegram sessions will see a single auto-reload after the window expires — expected behavior, loop-guarded.
