@@ -36,8 +36,9 @@ router.post(
     const userId = req.userId!
     const { imageBase64, certId, subjectName, score, total, percent } = req.body
 
-    const token = config.bot.token
+    const token = config.telegram.botToken
     if (!token) {
+      console.warn('[Certificate] Telegram botToken is not configured in config.telegram')
       return res.json({ success: true, sentToTelegram: false, message: 'bot_not_configured' })
     }
 
