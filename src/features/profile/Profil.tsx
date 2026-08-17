@@ -5,7 +5,7 @@ import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket,
+  BarChart2, CloudUpload, Ticket, Award,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -19,6 +19,7 @@ import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
+import { CertificateModal } from '../test'
 import { AchievementsSection } from './components/AchievementsSection'
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
@@ -59,6 +60,7 @@ export default function Profil() {
   const [showLangPicker, setShowLangPicker]   = useState(false)
   const [showThemePicker, setShowThemePicker] = useState(false)
   const [showPromoModal, setShowPromoModal]   = useState(false)
+  const [showCertModal, setShowCertModal]     = useState(false)
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -252,6 +254,14 @@ export default function Profil() {
           onPress={() => setShowLangPicker(true)} />
 
         <Item
+          icon={Award}
+          iconColor="#f59e0b"
+          label={tt('certOfficialTitle')}
+          right={<ChevronRight size={16} className="text-muted" />}
+          onPress={() => setShowCertModal(true)}
+        />
+
+        <Item
           icon={Ticket}
           iconColor="#a855f7"
           label={tt('promoCodeTitle')}
@@ -372,6 +382,16 @@ export default function Profil() {
         <PromoCodeModal
           language={settings.language}
           onClose={() => setShowPromoModal(false)}
+        />
+      )}
+
+      {/* Rasmiy Sertifikat modali */}
+      {showCertModal && (
+        <CertificateModal
+          score={38}
+          total={40}
+          percent={95}
+          onClose={() => setShowCertModal(false)}
         />
       )}
 
