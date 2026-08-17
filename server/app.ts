@@ -37,6 +37,7 @@ import achievementsRouter from './modules/achievements/achievements.router'
 import tutorRouter        from './modules/tutor/tutor.router'
 import adminRouter        from './modules/admin/admin.router'
 import promoRouter        from './modules/promo/promo.router'
+import certificateRouter  from './modules/certificate/certificate.router'
 import { paymentRouter }  from './modules/payments/payment.router'
 
 export function createApp() {
@@ -107,6 +108,7 @@ export function createApp() {
   app.use('/api', tutorRouter)
   app.use('/api', adminRouter)
   app.use('/api', promoRouter)
+  app.use('/api', certificateRouter)
   app.use('/api/payments', paymentRouter)
 
   // 404 catch-all for unmatched /api routes

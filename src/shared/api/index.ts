@@ -373,6 +373,16 @@ export const api = {
   startTrial: (userId: string) =>
     request<{ granted: boolean; reason?: 'already_used'; days: number }>('POST', `/users/${uid(userId)}/trial`, {}),
 
+  /** Telegram bot orqali sertifikat jo'natish (100% ishonchli bot delivery) */
+  sendCertificate: (payload: {
+    imageBase64: string
+    certId: string
+    subjectName: string
+    score?: number
+    total?: number
+    percent?: number
+  }) => request<{ success: boolean; sentToTelegram: boolean; message?: string }>('POST', '/certificate/send', payload),
+
   getQuestions: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)

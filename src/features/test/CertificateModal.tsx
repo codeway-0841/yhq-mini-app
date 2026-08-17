@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { Download, Share2, Copy, Check, X, Award } from 'lucide-react'
+import { Download, Share2, Copy, Check, X, Award, Send, ExternalLink } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
-import { shareUrl } from '../../platform/telegram'
+import { shareUrl, openTelegramLink } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
+import { playSound } from '../../shared/lib/sounds'
+import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { drawCertificate } from './certificate-canvas'
 
@@ -30,6 +32,8 @@ function dataUrlToBlob(dataUrl: string): Blob {
 export default function CertificateModal({ score, total, percent, onClose }: CertificateModalProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const [copied, setCopied] = useState(false)
+  const [sendingBot, setSendingBot] = useState(false)
+  const [botSentSuccess, setBotSentSuccess] = useState(false)
   const [downloading, setDownloading] = useState(false)
 
   const user = useAppStore((s) => s.user)
@@ -65,6 +69,40 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
     })
   }, [fullName, subjectName, score, total, percent, formattedDate, certId, lang])
 
+  /** 1. Telegram Bot orqali to'g'ridan-to'g'ri jo'natish (100% kafolatlangan Telegram usuli) */
+  const handleSendToTelegramBot = async () => {
+    if (!canvasRef.current || sendingBot) return
+    haptics.impact('medium')
+    setSendingBot(true)
+
+    try {
+      const dataUrl = canvasRef.current.toDataURL('image/png')
+      const res = await api.sendCertificate({
+        imageBase64: dataUrl,
+        certId,
+        subjectName,
+        score,
+        total,
+        percent,
+      })
+
+      if (res.sentToTelegram) {
+        playSound('win')
+        haptics.notify('success')
+        setBotSentSuccess(true)
+      } else {
+        // Fallback: brauzer orqali yuklash
+        handleDownload()
+      }
+    } catch (err) {
+      console.warn('[Send to bot failed, triggering download fallback]', err)
+      handleDownload()
+    } finally {
+      setSendingBot(false)
+    }
+  }
+
+  /** 2. Qurilmaga saqlash (Web Share / Blob download) */
   const handleDownload = async () => {
     if (!canvasRef.current) return
     haptics.impact('light')
@@ -76,7 +114,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
       const blob = dataUrlToBlob(dataUrl)
       const file = new File([blob], fileName, { type: 'image/png' })
 
-      // 1. Mobile Web Share API with File (iOS "Save Image" / Android "Save to Device")
+      // Web Share API
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         try {
           await navigator.share({
@@ -94,7 +132,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         }
       }
 
-      // 2. Standard Browser / PC Download via Blob URL & Data URL fallback
+      // Standart Blob URL
       const blobUrl = URL.createObjectURL(blob)
       const link = document.createElement('a')
       link.download = fileName
@@ -173,22 +211,50 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           </button>
         </div>
 
+        {/* Bot Sent Success Alert */}
+        {botSentSuccess && (
+          <div className="w-full bg-duo-green/15 border border-duo-green/40 rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn">
+            <p className="text-xs font-black text-duo-green mb-1">
+              {tt('certSentSuccess')}
+            </p>
+            <button
+              onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
+              className="mt-1 text-[11.5px] font-bold text-fg underline flex items-center gap-1 hover:text-duo-green"
+            >
+              <span>{lang === 'ru' ? 'Открыть чат с ботом' : 'Bot chatini ochish'}</span>
+              <ExternalLink size={12} />
+            </button>
+          </div>
+        )}
+
         {/* Action Buttons */}
         <div className="w-full flex flex-col gap-2 mb-2">
+          {/* Primary CTA: Telegram Botga jo'natish (Rasmni saqlash) */}
+          <button
+            onClick={handleSendToTelegramBot}
+            disabled={sendingBot}
+            className="btn-premium w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
+          >
+            <Send size={18} className="text-black" />
+            {sendingBot ? tt('certSending') : tt('sendToTelegram')}
+          </button>
+
+          {/* Secondary CTA: Qurilmaga to'g'ridan-to'g'ri yuklash */}
           <button
             onClick={handleDownload}
             disabled={downloading}
-            className="btn-premium w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg"
+            className="btn-3d-ghost w-full py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-2"
           >
-            <Download size={18} />
+            <Download size={16} />
             {downloading ? 'Yuklanmoqda...' : tt('downloadCertificate')}
           </button>
 
+          {/* Share CTA */}
           <button
             onClick={handleShare}
-            className="btn-3d-ghost w-full py-3 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 text-duo-blue"
+            className="btn-3d-ghost w-full py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-2 text-duo-blue"
           >
-            <Share2 size={16} />
+            <Share2 size={15} />
             {tt('shareCertificate')}
           </button>
         </div>
@@ -196,8 +262,8 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         {/* Mobile helper hint */}
         <p className="text-[11px] text-muted text-center leading-snug px-2">
           {lang === 'ru'
-            ? '💡 Совет: Вы также можете зажать сертификат пальцем и сохранить его в галерею.'
-            : '💡 Maslahat: Sertifikat ustiga barmog‘ingizni bosib turib ham galereyaga saqlab olishingiz mumkin.'}
+            ? '💡 Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
+            : '💡 Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
         </p>
       </div>
     </div>
