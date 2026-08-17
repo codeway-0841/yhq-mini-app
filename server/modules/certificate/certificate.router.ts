@@ -33,13 +33,18 @@ router.post(
   rateLimit({ maxPerMinute: 6 }),
   validate({ body: SendCertificateSchema }),
   wrap(async (req, res) => {
-    const userId = req.userId!
-    const { imageBase64, certId, subjectName, score, total, percent } = req.body
+    const userId = (req as { userId?: string }).userId
+    if (!userId || userId === '0') {
+      throw new AppError(401, 'Avval tizimga kiring', 'AUTH_REQUIRED')
+    }
+
+    const { imageBase64, certId, subjectName, score, total, percent } = req.body as z.infer<typeof SendCertificateSchema>
 
     const token = config.telegram.botToken
     if (!token) {
       console.warn('[Certificate] Telegram botToken is not configured in config.telegram')
-      return res.json({ success: true, sentToTelegram: false, message: 'bot_not_configured' })
+      res.json({ success: true, sentToTelegram: false, message: 'bot_not_configured' })
+      return
     }
 
     // 1. Foydalanuvchining Telegram ID sini aniqlaymiz
@@ -59,7 +64,8 @@ router.post(
     }
 
     if (!tgId) {
-      return res.json({ success: true, sentToTelegram: false, message: 'no_telegram_linked' })
+      res.json({ success: true, sentToTelegram: false, message: 'no_telegram_linked' })
+      return
     }
 
     // 2. Base64 to Buffer
@@ -85,7 +91,7 @@ router.post(
         parse_mode: 'Markdown',
       })
 
-      return res.json({ success: true, sentToTelegram: true })
+      res.json({ success: true, sentToTelegram: true })
     } catch (err: unknown) {
       console.error('[Certificate bot send error]', err)
       throw new AppError(500, 'certificate_delivery_failed')
