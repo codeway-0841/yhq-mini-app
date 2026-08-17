@@ -17,7 +17,9 @@ interface CertificateModalProps {
 
 export default function CertificateModal({ score, total, percent, onClose }: CertificateModalProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
+  const [downloading, setDownloading] = useState(false)
 
   const user = useAppStore((s) => s.user)
   const lang = useAppStore((s) => s.settings.language)
@@ -50,16 +52,63 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
       certId,
       lang,
     })
+    try {
+      setPreviewUrl(canvasRef.current.toDataURL('image/png'))
+    } catch {
+      // fallback
+    }
   }, [fullName, subjectName, score, total, percent, formattedDate, certId, lang])
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
     if (!canvasRef.current) return
     haptics.impact('light')
-    const dataUrl = canvasRef.current.toDataURL('image/png')
-    const link = document.createElement('a')
-    link.download = `kiwi-certificate-${certId}.png`
-    link.href = dataUrl
-    link.click()
+    setDownloading(true)
+
+    canvasRef.current.toBlob(async (blob) => {
+      if (!blob) {
+        setDownloading(false)
+        return
+      }
+
+      const fileName = `kiwi-certificate-${certId}.png`
+
+      // 1. Mobile Web Share API with File (iOS "Save Image" / Android "Save to Device")
+      try {
+        const file = new File([blob], fileName, { type: 'image/png' })
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({
+            files: [file],
+            title: tt('certOfficialTitle'),
+            text: `KIWI · ${subjectName} (${certId})`,
+          })
+          setDownloading(false)
+          return
+        }
+      } catch (shareErr) {
+        if ((shareErr as Error).name === 'AbortError') {
+          setDownloading(false)
+          return
+        }
+      }
+
+      // 2. Standard Browser / PC Download via Blob URL
+      try {
+        const blobUrl = URL.createObjectURL(blob)
+        const link = document.createElement('a')
+        link.download = fileName
+        link.href = blobUrl
+        link.style.display = 'none'
+        document.body.appendChild(link)
+        link.click()
+        setTimeout(() => {
+          document.body.removeChild(link)
+          URL.revokeObjectURL(blobUrl)
+          setDownloading(false)
+        }, 1000)
+      } catch {
+        setDownloading(false)
+      }
+    }, 'image/png')
   }
 
   const handleShare = () => {
@@ -101,17 +150,27 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <h3 className="text-base font-black text-fg">{tt('certOfficialTitle')}</h3>
         </div>
 
-        {/* Canvas Certificate Preview */}
-        <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-line mb-4 bg-black/40">
-          <canvas
-            ref={canvasRef}
-            className="w-full h-auto block object-contain"
-            style={{ aspectRatio: '1200/850' }}
-          />
+        {/* Hidden Canvas for High-Res Rendering */}
+        <canvas ref={canvasRef} className="hidden" />
+
+        {/* Certificate Image Preview (Mobile Friendly & Long-pressable) */}
+        <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-line mb-3 bg-black/40">
+          {previewUrl ? (
+            <img
+              src={previewUrl}
+              alt="KIWI Certificate"
+              className="w-full h-auto block object-contain select-none"
+              style={{ aspectRatio: '1200/850' }}
+            />
+          ) : (
+            <div className="w-full aspect-[1200/850] flex items-center justify-center text-muted text-xs">
+              Yuklanmoqda...
+            </div>
+          )}
         </div>
 
         {/* Certificate Metadata Pill */}
-        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-elevated border border-line mb-4 text-xs font-bold text-muted">
+        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-elevated border border-line mb-3 text-xs font-bold text-muted">
           <span className="truncate">ID: <span className="font-mono text-fg">{certId}</span></span>
           <button
             onClick={handleCopyId}
@@ -123,13 +182,14 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         </div>
 
         {/* Action Buttons */}
-        <div className="w-full flex flex-col gap-2.5">
+        <div className="w-full flex flex-col gap-2 mb-2">
           <button
             onClick={handleDownload}
+            disabled={downloading}
             className="btn-premium w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg"
           >
             <Download size={18} />
-            {tt('downloadCertificate')}
+            {downloading ? 'Yuklanmoqda...' : tt('downloadCertificate')}
           </button>
 
           <button
@@ -140,6 +200,13 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
             {tt('shareCertificate')}
           </button>
         </div>
+
+        {/* Mobile helper hint */}
+        <p className="text-[11px] text-muted text-center leading-snug px-2">
+          {lang === 'ru'
+            ? '💡 Совет: Вы также можете зажать сертификат пальцем и сохранить его в галерею.'
+            : '💡 Maslahat: Sertifikat ustiga barmog‘ingizni bosib turib ham galereyaga saqlab olishingiz mumkin.'}
+        </p>
       </div>
     </div>
   )
