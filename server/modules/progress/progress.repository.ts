@@ -6,6 +6,15 @@ import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress }            from '../../schema'
 
+/**
+ * H-3 (audit, TODO H4 variant 1 — kunlik kredit): bitta user kuniga shu
+ * miqdordan ortiq javob BALL-counterlariga YOZILMAYDI (answered/correct/
+ * streak/daily_records — League score manbai). Farming qiymati kuniga cheklangan
+ * (haftada ×7), legit o'quvchi (marathon ham) 1000/javob'ga kamdan-kam yetadi.
+ * Jimgina cap: javob "duplicate" no-op sifatida qaytariladi (xato YO'Q).
+ */
+export const DAILY_ANSWER_CREDIT = 1000
+
 export const progressRepository = {
   async ensureExists(userId: string): Promise<void> {
     await db.insert(progress).values({ userId }).onConflictDoNothing()
@@ -61,6 +70,15 @@ export const progressRepository = {
           AND EXISTS (SELECT 1 FROM users WHERE id = ${userId})
         ON CONFLICT (token) DO NOTHING
         RETURNING token
+      ), credit AS (
+        -- H-3: kunlik javob krediti tugaganda keyingi yozuvlar jimgina no-op
+        -- (bola ball farming'ni kunlik qiymatga qattiqlaydi; daily_records
+        -- shu statement'dan OLDINGI holatda o'qiladi — snapshot izolyatsiyasi).
+        SELECT (
+          COALESCE(SUM(answered), 0) < ${DAILY_ANSWER_CREDIT}::int
+        ) AS ok
+        FROM daily_records
+        WHERE user_id = ${userId} AND date = ${date}
       ), gate AS (
         SELECT (
           -- 1) clientToken replay YOKI token yo'q — o'tadi;
@@ -81,6 +99,8 @@ export const progressRepository = {
                 AND COALESCE(correct_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text)
             )
           )
+          -- 3) H-3: kunlik kredit (DAILY_ANSWER_CREDIT) — farming kunlik chegarasi
+          AND (SELECT ok FROM credit)
         ) AS proceed
       ), entitlement AS (
         SELECT (

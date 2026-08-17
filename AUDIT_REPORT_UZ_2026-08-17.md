@@ -235,8 +235,10 @@ tsc ×2 ✓ · unit **384/384** ✓ · api **17/17** ✓ · integration (real Ne
 - ✅ FIXED: **C-1, M-3, M-12**, P3-tez item'lar
 - ✅ FIXED (qayta-verifikatsiyadan KEYINGI yakuniy fix): **H-2** — `d9ab3ad` faqat auth register/link'ni mustahkamlagan edi; hisobot sitat qilgan `PATCH /users/:userId/phone` {phone, otp} OTP-gate bilan yakuniy yopildi (follow-up), **M-9** — ≥6 xonali kod + per-user failed-join limit (8/60s), **referal bot-qatlami** — `p_`/`e_` id'lar endi bot link'ida ham qabul qilinadi (`parseReferralParam`)
 - ✅ FIXED (`f7125d9`): **M-1** (to'liq zod), **M-2** (`AND status='pending'` — race runtime'da isbotlangan: 8 parallel → 1 mukofot), **M-4** (SKIP LOCKED — 2 parallel dispatch: nol overlap), **M-6** (error'da complete yo'q), **M-7** (durable plan + chunked + tiebreaker), **M-10** (4KB + retention cron), **M-11** (atomik cooldown — 8 parallel → 1 kirish)
+- ✅ FIXED (ikkinchi follow-up paketi): **H-3** — kunlik javob krediti (`DAILY_ANSWER_CREDIT = 1000`, progress.repository — cap'dan keyin jimgina no-op, integration test bilan), **M-5** — broadcast endi chunked-kampaniya (`tg-broadcast.service.ts`, migration 0042: sof-SQL snapshot INSERT…SELECT — JS'ga JADVAL YUKLANMAYDI, 25/chunk SKIP LOCKED, sent/blocked/failed, timeout/crash'dan keyin resume; admin UI progress bar bilan), **M-8** — TG-login kodi uchun in-bot tasdiqlash tugmasi (contact sessiyani FAQAT `tglogin_ok` da bog'laydi), **M-4 residual** — `claimed_at` (migration 0041) + 10 daqiqadan eski `'sending'` qatorlarni qayta claim
 - 🟡 PARTIAL: **H-1** (asosiy qismlar `f7125d9`'da: await + durable plan — own `jobRuns` lease qoldi)
-- 🔴 OPEN: **H-3** (farming qarori), **M-5** (broadcast umumiy primitive), **M-8, M-13**, LOW item'lar
+- 🟡 LOW batch: Gemini kaliti `x-goog-api-key` headerga (2 joy), admin statistika Asia/Tashkent, `pdf-parse` o'chirilgan, `api/*.js` untrack+gitignore, `standalone.ts`→`index.ts` birlashtirilgan (`/health` alias app.ts'da, render.yaml yangilangan), `loginPendingCodes` TTL, `__APP_VERSION__` reproducible, analytics/login/link kodlarga cron cleanup, TestPage L11 updater side-effect'siz. *Ochiq:* email enumeration, ~59 hardcoded rang, modal a11y, i18n qoldiqlar, OAuth stub'lar, xlsx/PDF import, App.tsx remount
+- 🔴 OPEN: **M-13** (httpOnly cookie — v2 arxitektura)
 
 ### 7.5 Yangilangan baho: **B− (~70%) → B+ (~78%)**
 

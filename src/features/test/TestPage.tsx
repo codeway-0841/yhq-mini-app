@@ -84,6 +84,8 @@ export default function TestPage() {
 
   // ── Anti-Cheat State ──
   const [cheatViolations, setCheatViolations]         = useState(0)
+  /** Strike effektlari uchun: FAQAT o'SISHda ishga tushsin (restore/reset'da yo'q) */
+  const prevViolationsRef = useRef(0)
   const [activeStrike, setActiveStrike]               = useState<number | null>(null)
   const [disqualifiedByCheat, setDisqualifiedByCheat] = useState(false)
 
@@ -188,6 +190,7 @@ export default function TestPage() {
     setSelectedHistory(r && r.selected.length === len ? [...r.selected] : Array(len).fill(null))
     setCorrectOpts(r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null))
     setCheatViolations(r?.cheatViolations ?? 0)
+    prevViolationsRef.current = r?.cheatViolations ?? 0   // restore — strike effekti YO'Q
     setActiveStrike(null)
     setDisqualifiedByCheat(false)
     setSubmitting(false)
@@ -216,26 +219,10 @@ export default function TestPage() {
     const handleReturn = () => {
       if (wasHiddenRef.current && !isFinished) {
         wasHiddenRef.current = false
-        setCheatViolations((prev) => {
-          const next = prev + 1
-          setTimeout(() => {
-            if (next >= 3) {
-              // 3-ogohlantirish: imtihon darhol to'xtatiladi
-              playSound('error')
-              haptics.notify('error')
-              setDisqualifiedByCheat(true)
-              setAnswers((a) => a.map((val) => val ?? 'unanswered'))
-              setIsFinished(true)
-              setShowResults(true)
-            } else {
-              // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
-              playSound('error')
-              haptics.notify('warning')
-              setActiveStrike(next)
-            }
-          }, 0)
-          return next
-        })
+        // L11 (audit): updater SOF — side-effect (tovush/setState) ichida YO'Q.
+        // Ta'sirlar alohida effect'da cheatViolations o'zgarishiga bog'langan
+        // (StrictMode'da updater double-fire tovush/toastni ikki marta o'ynatardi).
+        setCheatViolations((prev) => prev + 1)
       }
     }
 
@@ -257,6 +244,28 @@ export default function TestPage() {
       window.removeEventListener('focus', onFocus)
     }
   }, [isOfficialExam, isFinished])
+
+  // Strike effektlari — cheatViolations FAQAT o'shganda bir marta (L11; restore'da
+  // prevViolationsRef sync'langanligi sabab effekt otalmaydi; StrictMode-safe).
+  useEffect(() => {
+    const prev = prevViolationsRef.current
+    prevViolationsRef.current = cheatViolations
+    if (cheatViolations <= prev || cheatViolations === 0) return
+    if (cheatViolations >= 3) {
+      // 3-ogohlantirish: imtihon darhol to'xtatiladi
+      playSound('error')
+      haptics.notify('error')
+      setDisqualifiedByCheat(true)
+      setAnswers((a) => a.map((val) => val ?? 'unanswered'))
+      setIsFinished(true)
+      setShowResults(true)
+    } else {
+      // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
+      playSound('error')
+      haptics.notify('warning')
+      setActiveStrike(cheatViolations)
+    }
+  }, [cheatViolations])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const cancelAutoNext = useCallback(() => {

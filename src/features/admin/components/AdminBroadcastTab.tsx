@@ -230,36 +230,61 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
     }
   }
 
-  // ── Send Broadcast to Audience ─────────────────────────────────────────────
+  // ── Send Broadcast to Audience — CHUNKED kampaniya (M-5: resumable) ──────
+  const [bulkProgress, setBulkProgress] = useState<{ sent: number; blocked: number; failed: number; total: number } | null>(null)
+
   const handleSendAll = async () => {
     if (!text.trim()) {
       alert('Xabar matnini kiriting')
       return
     }
+    // Rasm-fayl (base64) kampaniya DB'siga sig'maydi — bulk uchun URL rejimi
+    if (imageMode === 'upload' && imageData) {
+      alert("Chunk'li bulk yuborish rasmni URL rejimida talab qiladi — rasmni URL sifatida bering yoki faqat matn yuboring.")
+      return
+    }
 
     setSending(true)
     setConfirmOpen(false)
+    setBulkProgress({ sent: 0, blocked: 0, failed: 0, total: targetCount ?? 0 })
     try {
-      const res = await api.sendBroadcast({
-        target,
-        text: text.trim(),
+      const { broadcast } = await api.createTgBroadcast({
+        segment: target,
+        message: text.trim(),
         imageUrl: imageMode === 'url' ? imageUrl.trim() || null : null,
-        imageData: imageMode === 'upload' ? imageData : null,
         buttonText: buttonText.trim() || null,
         buttonUrl: buttonUrl.trim() || null,
       })
 
-      setResult(res)
-      if (res.sent > 0) {
-        playSound('win')
-        haptics.notify('success')
-        setConfetti(true)
-        setTimeout(() => setConfetti(false), 5000)
+      // Chunk'lar bilan yuborish — remaining=0 bo'lguncha (Vercel timeout'da
+      // qayta bosib davom ettiriladi: kampaniya DB'da 'sending' qoladi)
+      let done = false
+      while (!done) {
+        const chunk = await api.sendTgBroadcastChunk(broadcast.id)
+        const b = chunk.broadcast
+        setBulkProgress({ sent: b.sentCount, blocked: b.blockedCount, failed: b.failedCount, total: Math.max(b.targetCount, 1) })
+        if (chunk.status === 'sent' || chunk.remaining <= 0) {
+          done = true
+          setResult({
+            total: b.targetCount,
+            sent: b.sentCount,
+            blocked: b.blockedCount,
+            failed: b.failedCount,
+            durationMs: 0,
+          })
+          if (b.sentCount > 0) {
+            playSound('win')
+            haptics.notify('success')
+            setConfetti(true)
+            setTimeout(() => setConfetti(false), 5000)
+          }
+        }
       }
     } catch (err: any) {
-      alert(err?.message || 'Ommaviy xabar yuborishda xatolik yuz berdi')
+      alert(`Yuborish xatosi: ${err?.message ?? err}\nKampaniya "sending" qoldi — admin panelda qayta yuborish tugmasi orqali davom ettiring.`)
     } finally {
       setSending(false)
+      setBulkProgress(null)
     }
   }
 
@@ -603,6 +628,24 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               <span className="text-[10px] text-muted block">Vaqt</span>
               <span className="font-black text-fg">{(result.durationMs / 1000).toFixed(1)}s</span>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Live progress (chunked kampaniya) */}
+      {bulkProgress && (
+        <div className="card-neon p-3 space-y-2">
+          <div className="h-1.5 bg-elevated rounded-full overflow-hidden">
+            <div
+              className="h-full bg-duo-purple rounded-full transition-all"
+              style={{ width: `${Math.round(((bulkProgress.sent + bulkProgress.blocked + bulkProgress.failed) / Math.max(bulkProgress.total, 1)) * 100)}%` }}
+            />
+          </div>
+          <div className="flex justify-between text-[11px] font-bold text-muted">
+            <span>✅ {bulkProgress.sent}</span>
+            <span>🚫 {bulkProgress.blocked}</span>
+            <span>❌ {bulkProgress.failed}</span>
+            <span>{bulkProgress.sent + bulkProgress.blocked + bulkProgress.failed}/{bulkProgress.total}</span>
           </div>
         </div>
       )}

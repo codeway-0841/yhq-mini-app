@@ -313,3 +313,71 @@ describe('progress anti-farm: post-answer reveal replay (audit fix)', () => {
     expect(afterReplay.streak).toBe(1)            // oshmadi
   })
 })
+
+const H3_ID = '998877660004'
+
+describe('H-3 anti-farm: kunlik javob krediti (DAILY_ANSWER_CREDIT)', () => {
+  beforeAll(async () => {
+    await db.delete(answerTokens).where(eq(answerTokens.userId, H3_ID))
+    await db.delete(users).where(eq(users.id, H3_ID))
+    await request(app).post('/api/init').send({
+      id: H3_ID, first_name: 'Farm', last_name: 'Cap', username: 'farm_cap_test',
+    }).expect(200)
+  })
+  afterAll(async () => {
+    await db.delete(answerTokens).where(eq(answerTokens.userId, H3_ID))
+    await db.delete(dailyRecords).where(eq(dailyRecords.userId, H3_ID))
+    await db.delete(users).where(eq(users.id, H3_ID))
+  })
+
+  it('kunlik kredit to\'lgandan KEYINGI javoblar jimgina no-op (counterlar o\'smaydi)', async () => {
+    const { DAILY_ANSWER_CREDIT } = await import('../../../server/modules/progress/progress.repository')
+    const today = tashkentDate()
+    // Bugungi kredit to'ldi (farming seansi tasvirlanadi)
+    await db.insert(dailyRecords).values({
+      userId: H3_ID, date: today, subjectId: 'yhq',
+      answered: DAILY_ANSWER_CREDIT, correct: DAILY_ANSWER_CREDIT, fixed: 0,
+    }).onConflictDoNothing()
+
+    const [progBefore] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
+    const [question] = await db.select().from(questions).limit(1)
+
+    const res = await request(app)
+      .post(`/api/progress/${H3_ID}/result`)
+      .send({
+        questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq',
+        clientToken: `h3-capped-${Date.now()}`,
+      })
+      .expect(200)
+    expect(res.body.duplicate).toBe(true)   // jimgina cap — xato YO'Q
+
+    const [progAfter] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
+    expect(progAfter.totalAnswered).toBe(progBefore.totalAnswered)   // o'smadi
+    expect(progAfter.totalCorrect).toBe(progBefore.totalCorrect)     // o'smadi
+    const [daily] = await db.select().from(dailyRecords)
+      .where(and(eq(dailyRecords.userId, H3_ID), eq(dailyRecords.date, today)))
+    expect(daily.answered).toBe(DAILY_ANSWER_CREDIT)                 // o'smadi
+  })
+
+  it('kredit to\'lmaganda javob oddiy yoziladi (regressiya yo\'q)', async () => {
+    // Kredit qatorini kamaytiramiz
+    const today = tashkentDate()
+    await db.update(dailyRecords).set({ answered: 5, correct: 5 })
+      .where(and(eq(dailyRecords.userId, H3_ID), eq(dailyRecords.date, today)))
+
+    const [progBefore] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
+    const [question] = await db.select().from(questions).limit(1)
+    const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
+    const res = await request(app)
+      .post(`/api/progress/${H3_ID}/result`)
+      .send({
+        questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'yhq',
+        clientToken: `h3-ok-${Date.now()}`,
+      })
+      .expect(200)
+    expect(Boolean(res.body.duplicate)).toBe(false)   // duplicate kaliti success javobida bo'lmasligi mumkin
+
+    const [progAfter] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
+    expect(progAfter.totalAnswered).toBe(progBefore.totalAnswered + 1)
+  })
+})

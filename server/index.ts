@@ -1,6 +1,7 @@
 /**
  * Server entry point — binds HTTP + WebSocket, nothing else.
  * Business logic lives in app.ts and modules/.
+ * Yagona entry: standalone.ts birlashtirildi (Render `/health` app.ts'da alias).
  */
 
 import 'dotenv/config'

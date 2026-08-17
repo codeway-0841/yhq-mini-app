@@ -116,17 +116,22 @@ export const smsCampaignService = {
       }
     }
 
-    // Chunk: pending recipientlarni atomik claim qilamiz (M-4: SKIP LOCKED poygaga qarshi)
+    // Chunk: pending recipientlarni atomik claim qilamiz (M-4: SKIP LOCKED poygaga qarshi).
+    // Stale-reclaim: 'sending'da 10+ daqiqa QOTGAN qatorlar (crash'da qolgan)
+    // qayta claim qilinadi — kampaniya "sending" holatida turib qolmaydi.
     const batch = await executeRows<{ id: number; phone: string }>(sql`
       WITH claimed AS (
         SELECT id FROM sms_campaign_recipients
-        WHERE campaign_id = ${campaignId} AND status = 'pending'
+        WHERE campaign_id = ${campaignId} AND (
+          status = 'pending'
+          OR (status = 'sending' AND (claimed_at IS NULL OR claimed_at < now() - interval '10 minutes'))
+        )
         ORDER BY id
         LIMIT ${SMS_BATCH_SIZE}
         FOR UPDATE SKIP LOCKED
       )
       UPDATE sms_campaign_recipients r
-      SET status = 'sending'
+      SET status = 'sending', claimed_at = now()
       FROM claimed
       WHERE r.id = claimed.id
       RETURNING r.id, r.phone

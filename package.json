@@ -60,7 +60,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:api": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/api-entry/index.ts','server/api-entry/bot.ts'],bundle:true,platform:'node',format:'esm',outdir:'api/dist',packages:'external'})\"",
-    "build:server": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/standalone.ts'],bundle:true,platform:'node',format:'esm',outdir:'server/dist',packages:'external'})\"",
+    "build:server": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/index.ts'],bundle:true,platform:'node',format:'esm',outdir:'server/dist',packages:'external'})\"",
     "vercel-build": "npm run db:migrate && npm run build:api && npm run build",
     "preview": "vite preview",
     "server": "tsx server/index.ts",

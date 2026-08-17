@@ -65,9 +65,12 @@ export function createApp() {
   })
 
   // Health check — must stay above auth/rate-limit so monitors always reach it
-  app.get('/api/health', (_req, res) => {
+  // `/health` alias: Render healthCheckPath ham shu handler umumiy (bitta entry — standalone.ts birlashtirildi).
+  const healthHandler = (_req: express.Request, res: express.Response) => {
     res.json({ status: 'ok', uptime: Math.floor(process.uptime()) })
-  })
+  }
+  app.get('/api/health', healthHandler)
+  app.get('/health', healthHandler)
 
   // Readiness — LIVENESS'dan farqli: DB ping + question pool loaded check.
   // Deploy/monitoring faqat ready nodeni tanlashi kerak (DB/pool yo'q bo'lsa 503).

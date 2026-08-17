@@ -554,6 +554,22 @@ export const api = {
       durationMs: number
     }>('POST', '/admin/broadcast', data, 90_000),
 
+  // ── Admin TG Broadcast — CHUNKED kampaniya (M-5, resumable) ────────────
+  createTgBroadcast: (data: {
+    segment: 'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today'
+    message: string
+    imageUrl?: string | null
+    buttonText?: string | null
+    buttonUrl?: string | null
+  }) =>
+    request<{ ok: boolean; broadcast: AdminTgBroadcast }>('POST', '/admin/tg-broadcasts', data),
+  getTgBroadcasts: () =>
+    request<{ broadcasts: AdminTgBroadcast[] }>('GET', '/admin/tg-broadcasts'),
+  sendTgBroadcastChunk: (id: number) =>
+    request<{ ok: boolean; status: string; batchSent: number; batchBlocked: number; batchFailed: number; remaining: number; broadcast: AdminTgBroadcast }>(
+      'POST', `/admin/tg-broadcasts/${id}/dispatch`, {}, 60_000,
+    ),
+
   generateAiQuestions: (data: {
     mode: 'custom_text' | 'topic'
     subjectId: string
@@ -617,6 +633,22 @@ export interface AdminSmsCampaign {
   status: 'draft' | 'sending' | 'sent'
   targetCount: number
   sentCount: number
+  failedCount: number
+  createdAt: string
+  finishedAt: string | null
+}
+
+export interface AdminTgBroadcast {
+  id: number
+  segment: string
+  message: string
+  imageUrl: string | null
+  buttonText: string | null
+  buttonUrl: string | null
+  status: 'draft' | 'sending' | 'sent'
+  targetCount: number
+  sentCount: number
+  blockedCount: number
   failedCount: number
   createdAt: string
   finishedAt: string | null

@@ -11,6 +11,9 @@ dist
 300_savol_javob_rasmlar/*
 !300_savol_javob_rasmlar/300_savol_javob.json
 api/dist/
+# Bundled serverless artifacts — Vercel rebuilds each deploy (audit hygiene: stale-bundle git bloat)
+api/index.js
+api/bot.js
 
 # video analysis temp
 video.mp4

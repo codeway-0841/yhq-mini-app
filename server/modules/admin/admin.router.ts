@@ -432,6 +432,44 @@ router.post(
   }),
 )
 
+// ── TG BROADCAST kampaniyalari (M-5: chunked, resumable) ──
+
+const TgBroadcastCreateSchema = z.object({
+  segment: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
+  message: z.string().min(3).max(4096),
+  imageUrl: z.string().url().nullable().optional(),
+  buttonText: z.string().max(40).nullable().optional(),
+  buttonUrl: z.string().max(300).nullable().optional(),
+})
+
+router.post(
+  '/admin/tg-broadcasts',
+  validate({ body: TgBroadcastCreateSchema }),
+  wrap(async (req, res) => {
+    const body = req.body as z.infer<typeof TgBroadcastCreateSchema>
+    const { tgBroadcastService } = await import('./tg-broadcast.service')
+    const broadcast = await tgBroadcastService.create(body)
+    res.json({ ok: true, broadcast })
+  }),
+)
+
+router.get(
+  '/admin/tg-broadcasts',
+  wrap(async (_req, res) => {
+    const { tgBroadcastService } = await import('./tg-broadcast.service')
+    res.json({ broadcasts: await tgBroadcastService.list() })
+  }),
+)
+
+router.post(
+  '/admin/tg-broadcasts/:id/dispatch',
+  wrap(async (req, res) => {
+    const { tgBroadcastService } = await import('./tg-broadcast.service')
+    const result = await tgBroadcastService.dispatchChunk(Number(req.params['id']))
+    res.json({ ok: true, ...result })
+  }),
+)
+
 // ── AI QUESTION STUDIO & TEXT GENERATOR ──
 
 router.post(

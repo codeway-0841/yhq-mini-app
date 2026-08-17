@@ -1,0 +1,1 @@
+ALTER TABLE "sms_campaign_recipients" ADD COLUMN "claimed_at" timestamp;

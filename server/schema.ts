@@ -665,9 +665,47 @@ export const smsCampaignRecipients = pgTable('sms_campaign_recipients', {
   userId:     text('user_id').notNull(),
   phone:      text('phone').notNull(),
   status:     text('status').$type<'pending' | 'sending' | 'sent' | 'failed'>().default('pending').notNull(),
+  /** Claim qilingan vaqt — crash'da 'sending'da QOTGAN qatorlarni stale-reclaim
+   *  qilish uchun (M-4 residual): claimed_at < now()-10min qayta pending hisoblanadi */
+  claimedAt:  timestamp('claimed_at'),
   error:      text('error'),
   sentAt:     timestamp('sent_at'),
   createdAt:  timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
   index('idx_sms_recipients_campaign').on(t.campaignId, t.status),
+])
+
+// ── Telegram BROADCAST kampaniyalari (M-5: chunked, resumable — broadcast.service
+//    eski full-table-load + 30s truncation muammosini yopadi) ────────────────
+export const tgBroadcasts = pgTable('tg_broadcasts', {
+  id:         serial('id').primaryKey(),
+  segment:    text('segment').notNull().$type<'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today'>(),
+  message:    text('message').notNull(),
+  imageUrl:   text('image_url'),
+  buttonText: text('button_text'),
+  buttonUrl:  text('button_url'),
+  /** Telegram file_id keshi — birinchi muvaffaqiyatli yuborishdan keyin rasm URL o'rniga ishlatiladi */
+  photoFileId: text('photo_file_id'),
+  status:     text('status').$type<'draft' | 'sending' | 'sent'>().default('draft').notNull(),
+  targetCount:  integer('target_count').default(0).notNull(),
+  sentCount:    integer('sent_count').default(0).notNull(),
+  blockedCount: integer('blocked_count').default(0).notNull(),
+  failedCount:  integer('failed_count').default(0).notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+  finishedAt: timestamp('finished_at'),
+})
+
+export const tgBroadcastRecipients = pgTable('tg_broadcast_recipients', {
+  id:          serial('id').primaryKey(),
+  broadcastId: integer('broadcast_id').notNull().references(() => tgBroadcasts.id, { onDelete: 'cascade' }),
+  /** Telegram numeric chat id — string (JS number precision chegarasidan xavfsiz) */
+  tgId:        text('tg_id').notNull(),
+  status:      text('status').$type<'pending' | 'sending' | 'sent' | 'blocked' | 'failed'>().default('pending').notNull(),
+  /** Crash'da 'sending'da qotganlarni stale-reclaim qilish uchun (sms-campaign kabi) */
+  claimedAt:   timestamp('claimed_at'),
+  error:       text('error'),
+  sentAt:      timestamp('sent_at'),
+  createdAt:   timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_tg_recipients_broadcast').on(t.broadcastId, t.status),
 ])

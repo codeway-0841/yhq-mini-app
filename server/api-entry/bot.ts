@@ -19,8 +19,16 @@ const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
 
-// In-memory: TG user_id → login code (5 min TTL)
-const loginPendingCodes = new Map<number, { code: string; expiresAt: number }>()
+// In-memory: TG user_id → login code (5 min TTL).
+// M-8 (audit): contact KELGANDA DARHOL sessiya bog'lanmaydi — avval in-bot
+// TASDIQLASH tugmasi talab qilinadi (phishing: hujumchi yaratgan kodga qurbon
+// kontakt ulashsa, qurbon "Brauzerdan kirishni tasdiqlaysizmi?" ni ko'radi).
+const loginPendingCodes = new Map<number, {
+  code: string
+  phone?: string
+  tgUser?: { id: number; first_name?: string; last_name?: string; username?: string }
+  expiresAt: number
+}>()
 
 const loginCodeCleanupTimer = setInterval(() => {
   const now = Date.now()
@@ -191,6 +199,8 @@ bot.command('start', async (ctx) => {
 })
 
 // ── Contact handler — Telegram Login flow (raqam ulashilganda) ──────────────
+// M-8: contact'ni QABUL qilganda sessiya HALI bog'lanmaydi — faqat tasdiqlash
+// tugmasi yuboriladi; sessiya FAQAT 'tglogin_ok' callback'da yaratiladi.
 bot.on('message:contact', async (ctx) => {
   const from = ctx.from
   if (!from) return
@@ -200,28 +210,55 @@ bot.on('message:contact', async (ctx) => {
     return // login flow'da emas yoki muddati tugagan — ignore
   }
 
-  const code = pending.code
-  loginPendingCodes.delete(from.id)
-
   const contact = ctx.message.contact
   if (contact.user_id !== from.id) {
     await ctx.reply("❌ Faqat o'zingizning raqamingizni ulashishingiz mumkin.", { reply_markup: { remove_keyboard: true } })
+    loginPendingCodes.delete(from.id)
     return
   }
 
-  const phone = contact.phone_number
+  // Kontakt saqlanadi — sessiya faqat aniq tasdiqlashdan keyin (M-8 anti-phishing)
+  loginPendingCodes.set(from.id, {
+    ...pending,
+    phone: contact.phone_number,
+    tgUser: { id: from.id, first_name: from.first_name, last_name: from.last_name, username: from.username },
+  })
+  const kb = new InlineKeyboard()
+    .text('✅ Ha, bu men — kirishni tasdiqlash', 'tglogin_ok').row()
+    .text('❌ Bekor qilish', 'tglogin_no')
+  await ctx.reply(
+    "🖥 *Brauzerdan KIWI hisobingizga kirish so'raldi\\.*\n\n" +
+    `📱 Raqam: \`${contact.phone_number}\`\n\n` +
+    "Agar bu SIZ bo'lmasangiz — *Bekor qilish*ni bosing\\.",
+    { parse_mode: 'MarkdownV2', reply_markup: kb },
+  )
+})
+
+// ── Login tasdiqlash (M-8): FAQAT shu yerda sessiya yaratiladi ──────────────
+bot.callbackQuery(/^tglogin_(ok|no)$/, async (ctx) => {
+  const from = ctx.from
+  const pending = from ? loginPendingCodes.get(from.id) : undefined
+  await ctx.answerCallbackQuery()
+  if (!from || !pending || Date.now() > pending.expiresAt || !pending.phone || !pending.tgUser) {
+    if (pending) loginPendingCodes.delete(from.id)
+    try { await ctx.editMessageText('⏳ Sessiya kodi eskurgan — kirish oqimini qaytadan boshlang.') } catch { /* edit xatosi jimgina */ }
+    return
+  }
+  loginPendingCodes.delete(from.id)
+  try { await ctx.deleteMessage() } catch { /* eski xabar o'chmasa ham OK */ }
+
+  if (ctx.match[1] === 'no') {
+    await ctx.reply('❌ Bekor qilindi — brauzer sessiyasi OCHILMADI. Agar bu urinish sizniki bo\'lmasa, hech qayerga yozilmang.')
+    return
+  }
+
   try {
     const { authService } = await import('../modules/auth/auth.service')
-    const result = await authService.completeTelegramLoginByPhone(code, phone, {
-      id: from.id,
-      first_name: from.first_name,
-      last_name: from.last_name,
-      username: from.username,
-    })
-    await ctx.reply(result.message, { reply_markup: { remove_keyboard: true } })
+    const result = await authService.completeTelegramLoginByPhone(pending.code, pending.phone, pending.tgUser)
+    await ctx.reply(result.message)
   } catch (err) {
-    console.error('[bot] telegram-login contact handler error:', err)
-    await ctx.reply("❌ Xatolik yuz berdi — qayta urinib ko'ring.", { reply_markup: { remove_keyboard: true } })
+    console.error('[bot] telegram-login confirm error:', err)
+    await ctx.reply("❌ Xatolik yuz berdi — qayta urinib ko'ring.")
   }
 })
 
