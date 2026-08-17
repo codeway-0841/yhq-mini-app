@@ -76,7 +76,7 @@ function Layout() {
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
       {/* key=pathname → sahifa almashganda yo'mshoq transition + scroll reset */}
-      <div key={location.pathname} className="route-page flex-1 overflow-y-auto pb-4">
+      <div key={location.pathname} className="route-page flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />

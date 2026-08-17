@@ -22,9 +22,11 @@ function Dots({ active }: { active: number }) {
 // ── Umumiy ekran o'rashi ────────────────────────────────────────────────────
 function Screen({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col px-6 pt-14 pb-6"
+    <div className="min-h-screen flex flex-col"
       style={{ background: 'linear-gradient(180deg, #0a1520 0%, #0d1a2b 100%)' }}>
-      {children}
+      <div className="flex flex-col flex-1 px-6 pt-14 pb-6 max-w-md mx-auto w-full">
+        {children}
+      </div>
     </div>
   )
 }

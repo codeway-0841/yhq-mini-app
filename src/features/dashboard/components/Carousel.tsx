@@ -171,7 +171,7 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
         className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 touch-pan-x select-none [&::-webkit-scrollbar]:hidden"
         style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' as const }}>
         {SLIDES.map((config, i) => (
-          <div key={i} className="w-full flex-shrink-0 snap-center">
+          <div key={i} className="w-full flex-shrink-0 snap-center sm:w-80">
             <CarouselSlide config={config} lang={lang}
               progressPct={progressPct} lessonLabel={lessonLabel}
               onOpen={() => openSlide(config)} />
