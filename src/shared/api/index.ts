@@ -1,5 +1,5 @@
 import { config } from '../config'
-import { getInitData } from '../../platform/telegram'
+import { getInitData, requestFreshInitData } from '../../platform/telegram'
 import { getSessionToken, notifySessionExpired } from '../lib/session'
 import {
   FullProfileSchema, AuthSessionSchema, AuthResponseSchema, LinkResponseSchema,
@@ -32,15 +32,23 @@ export class ApiError extends Error {
  * Timeout signal compatible with older Telegram WebViews
  * (AbortSignal.timeout is not available everywhere).
  */
-async function request<T>(method: string, path: string, body?: unknown, timeoutMs = TIMEOUT_MS): Promise<T> {
-  const headers: Record<string, string> = {}
+async function request<T>(
+  method: string,
+  path: string,
+  body?: unknown,
+  timeoutMs = TIMEOUT_MS,
+  extraHeaders?: Record<string, string>,
+): Promise<T> {
+  const headers: Record<string, string> = { ...extraHeaders }
   if (body) headers['Content-Type'] = 'application/json'
   // Auth credential TANLOVI: initData (Mini App) USTUVOR — ikkalovidan FAQAT biri
   // yuboriladi (server dual-auth). initData yo'q bo'lsa Bearer session token.
   let sentBearer = false
+  let sentInitData = false
   const initData = getInitData()
   if (initData) {
     headers['x-telegram-init-data'] = initData
+    sentInitData = true
   } else {
     const token = getSessionToken()
     if (token) { headers['Authorization'] = `Bearer ${token}`; sentBearer = true }
@@ -72,6 +80,10 @@ async function request<T>(method: string, path: string, body?: unknown, timeoutM
     // Bearer bilan yuborilgan so'rov 401 qaytardi → sessiya eskirgan/revoke:
     // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').
     if (sentBearer && res.status === 401) notifySessionExpired()
+    // initData bilan yuborilgan so'rov 401 → auth_date eskirgan (server replay
+    // oynasi qisqartirildi). Mini App'ni BIR marta qayta yuklab Telegram'dan
+    // yangi initData olamiz (loop guard — P1-4 klient recovery).
+    if (sentInitData && res.status === 401) requestFreshInitData()
     const text = await res.text().catch(() => res.statusText)
     // Server { error: '<code>' } JSON qaytarsa — typed code sifatida chiqaramiz
     let code: string | undefined
@@ -273,7 +285,10 @@ export const api = {
     request<{ code: string; url: string | null; expiresInSeconds: number }>('POST', '/auth/telegram-login', {}),
 
   checkTelegramLogin: async (code: string) => {
-    const res = await request<unknown>('GET', `/auth/telegram-login/${code}`)
+    // Kod HEADER'da yuboriladi — URL path'da yurmaydi (log'ga/proxy'ga tushmaydi)
+    const res = await request<unknown>('GET', '/auth/telegram-login', undefined, undefined, {
+      'X-Login-Code': code,
+    })
     const r = res as { status: string; sessionToken?: string }
     if (r.status === 'completed' && r.sessionToken) {
       const parsed = parseAuthResponse(res)

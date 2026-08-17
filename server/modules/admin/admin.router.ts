@@ -367,10 +367,10 @@ router.post(
         WHERE id = ${userId}
       `)
     } else if (days && days > 0) {
+      // C-1: muddatli admin grant ham tariff'ga tegmaydi — premium_until yetarli
       await executeRows(sql`
         UPDATE users
         SET
-          tariff = 'premium',
           premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
           updated_at = now()
         WHERE id = ${userId}

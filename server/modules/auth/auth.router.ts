@@ -132,7 +132,22 @@ router.post(
   }),
 )
 
-// GET /api/auth/telegram-login/:code — polling (session tayyor bo'lganda qaytaradi)
+// GET /api/auth/telegram-login — polling (kod X-Login-Code HEADER'da).
+// Header varianti AFZAL: kod URL path'da yurmaydi → request-log'larga,
+// brauzer tarixiga va proxy access-log'lariga tushmaydi (P1-3).
+router.get(
+  '/auth/telegram-login',
+  rateLimit({ maxPerMinute: 30, bucket: 'auth' }),
+  wrap(async (req, res) => {
+    const header = req.headers['x-login-code']
+    const code = String((Array.isArray(header) ? header[0] : header) ?? '').trim()
+    if (!code || code.length > 20) throw new AppError(400, 'invalid_code')
+    res.json(await authService.checkTelegramLoginCode(code))
+  }),
+)
+
+// GET /api/auth/telegram-login/:code — ESKI polling shakli (keshlangan bundle'lar
+// uchun qoladi; yangi klientlar yuqoridagi header variantini ishlatadi).
 router.get(
   '/auth/telegram-login/:code',
   rateLimit({ maxPerMinute: 30, bucket: 'auth' }),

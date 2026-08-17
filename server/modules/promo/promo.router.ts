@@ -2,7 +2,8 @@ import { Router } from 'express'
 import { z } from 'zod'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
-import { rateLimit } from '../../middleware/rate-limiter'
+// Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { promoRepository } from './promo.repository'
 
@@ -20,9 +21,11 @@ const CreatePromoBodySchema = z.object({
   expiresAt: z.string().datetime().nullable().optional(),
 })
 
-// ── Rate limit: 1 daqiqada 5 ta urinish (brute-force taxmin qilishdan himoya) ──
+// ── Rate limit: 1 daqiqada 5 ta urinish (brute-force kod taxminidan himoya).
+// Prod'da DB counter — N replica = N×5/min brute-force byudjeti bo'lmasin. ──
 const redeemLimiter = rateLimit({
   maxPerMinute: 5,
+  bucket: 'promo',
   keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
 })
 

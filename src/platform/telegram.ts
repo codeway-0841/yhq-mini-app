@@ -115,3 +115,19 @@ export function shareUrl(url: string, text?: string): void {
   }
   navigator.clipboard?.writeText(url).catch(() => {})
 }
+
+/**
+ * initData 401 (auth_date eskirgan — server replay oynasi qisqartirilganda
+ * sodir bo'ladi) — Mini App'ni QAYTA YUKLAYDI: Telegram iframe qayta ochilganda
+ * yangi initData (yangi auth_date + hash) beradi. Loop himoyasi: 60 sekund
+ * ichida faqat 1 marta (sessionStorage timestamp).
+ */
+const INITDATA_RELOAD_GUARD = 'yhq:initdata-reload-at'
+export function requestFreshInitData(): void {
+  try {
+    const last = Number(sessionStorage.getItem(INITDATA_RELOAD_GUARD) ?? 0)
+    if (Number.isFinite(last) && Date.now() - last < 60_000) return
+    sessionStorage.setItem(INITDATA_RELOAD_GUARD, String(Date.now()))
+  } catch { /* private mode — himoyasiz davom (reload loop xavfi past) */ }
+  window.location.reload()
+}

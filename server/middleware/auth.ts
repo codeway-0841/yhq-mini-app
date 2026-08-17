@@ -27,6 +27,9 @@ import { authRepository }  from '../modules/auth/auth.repository'
 /** Routes whose first path segment carries a userId: /:userId/... */
 const USER_SEGMENTS = new Set([
   'profile', 'progress', 'settings', 'saved', 'users', 'daily', 'achievements',
+  // M-3 (audit): GET /referrals/:userId statistikasi ham user-scoped —
+  // global anti-spoofing tekshiruvidan o'tishi shart (IDOR edi).
+  'referrals',
 ])
 
 /**

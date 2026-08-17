@@ -7,7 +7,8 @@ import { z }                    from 'zod'
 import { wrap, AppError }       from '../../middleware/error-handler'
 import { validate }             from '../../middleware/validate'
 import { parseUserId }          from '../../utils/parse'
-import { rateLimit }            from '../../middleware/rate-limiter'
+// Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { progressRepository }   from './progress.repository'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
@@ -27,7 +28,7 @@ const ResultSchema = z.object({
 // POST /api/progress/:userId/result
 router.post(
   '/progress/:userId/result',
-  rateLimit({ maxPerMinute: 120 }),
+  rateLimit({ maxPerMinute: 120, bucket: 'progress' }),
   validate({ body: ResultSchema }),
   wrap(async (req, res) => {
     const uid = parseUserId(req.params['userId'])
@@ -110,7 +111,7 @@ router.get(
 // POST /api/progress/:userId/cards/review
 router.post(
   '/progress/:userId/cards/review',
-  rateLimit({ maxPerMinute: 120 }),
+  rateLimit({ maxPerMinute: 120, bucket: 'progress' }),
   validate({ body: ReviewCardSchema }),
   wrap(async (req, res) => {
     const uid = parseUserId(req.params['userId'])

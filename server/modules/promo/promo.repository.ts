@@ -74,7 +74,8 @@ export const promoRepository = {
       ), updated_user AS (
         UPDATE users
         SET
-          tariff = 'premium',
+          /* C-1: muddatli grant tariff'ga TEGMAYDI — premium_until yetarli.
+           * (oldingi 'tariff = premium' +3 kunlik promoni umrbod qilib qo'yardi) */
           premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
           updated_at = now()
         WHERE id = ${userId}

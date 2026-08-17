@@ -11,14 +11,17 @@
  *  - NODE_ENV != production → in-memory rateLimit (test determinizmi;
  *    integration suite bir IP'dan yuzlab urish qiladi — DB counter flaky 429
  *    berardi). Prod semantikasi faqat production'da.
- *  - DB xatosi → fail-OPEN + console.error (auth endpoint DB'siz baribir
- *    ishlamaydi — limiter tufayli qo'shimcha outage bermaslik).
+ *  - DB xatosi → FAIL-CLOSED 503 (audit P1-2): fail-open'da DB outage paytida
+ *    butun rate-limit devirasi o'chib qolardi (auth brute-force oynasi ochiladi).
+ *    Bu middleware bilan himoyalangan endpoint'lar baribir DB'siz ishlamaydi —
+ *    503 ochiqrog'i va Sentry'ga tushadi.
  */
 
 import type { Request, Response, NextFunction } from 'express'
 import { sql } from 'drizzle-orm'
 import { executeRows } from '../db/connection'
 import { config } from '../config'
+import { Sentry } from '../utils/sentry'
 import { rateLimit } from './rate-limiter'
 
 interface DbRateLimitOptions {
@@ -78,8 +81,9 @@ export function dbRateLimit(opts: DbRateLimitOptions) {
       }
       next()
     } catch (err) {
-      console.error('[rate-limit] DB counter xatosi (fail-open):', err)
-      next()
+      console.error('[rate-limit] DB counter xatosi (fail-closed):', err)
+      Sentry.captureException(err)
+      res.status(503).json({ error: 'rate_limiter_unavailable' })
     }
   }
 }

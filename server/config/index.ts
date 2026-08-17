@@ -50,6 +50,11 @@ const envSchema = z.object({
    *  opaque token TTL (kun). Default 30. */
   SESSION_TTL_DAYS: z.string().regex(/^\d+$/).optional(),
 
+  /** initData auth_date MAKSIMAL yoshi (sekund) — replay oynasi.
+   *  Default 1 soat (avval 24 soat edi — audit P1-4). Klient 401'da Mini App'ni
+   *  bir marta qayta yuklab yangi initData oladi (loop guard'li). */
+  INITDATA_MAX_AGE_SECONDS: z.string().regex(/^\d+$/).optional(),
+
   /** OTP hash server pepper — HMAC-SHA256 kalit (DB dump'da OTP brute-force
    *  himoyasi). Yo'q bo'lsa plain sha256 fallback (dev uchun; prod'da o'rnating). */
   OTP_PEPPER: z.string().min(16).optional(),
@@ -153,6 +158,8 @@ export const config = {
   auth: {
     sessionTtlDays: Math.max(1, Number(env.SESSION_TTL_DAYS ?? '30')),
     otpPepper: env.OTP_PEPPER,
+    /** initData auth_date replay oynasi (sekund) — default 1 soat */
+    initDataMaxAgeSeconds: Math.max(60, Number(env.INITDATA_MAX_AGE_SECONDS ?? '3600')),
   },
 
   /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */

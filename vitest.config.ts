@@ -16,8 +16,9 @@ export default defineConfig({
     // Integration tests hit a remote Neon DB — network latency can exceed the default 5 s
     testTimeout: 15_000,
     hookTimeout: 20_000,
-    // Network flakes shouldn't fail the suite outright
-    retry: 2,
+    // retry: 0 (unit/api) — flaky testlar MASKALANMASIN, CI'da ochiq yiqilsin.
+    // Integration uchun network-flake retry'lari: vitest.integration.config.ts
+    // (npm run test:integration shu configni ishlatadi).
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],

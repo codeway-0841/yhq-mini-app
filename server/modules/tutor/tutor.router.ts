@@ -14,7 +14,8 @@ import { z }  from 'zod'
 import { eq } from 'drizzle-orm'
 import { wrap, AppError }   from '../../middleware/error-handler'
 import { validate }         from '../../middleware/validate'
-import { rateLimit }        from '../../middleware/rate-limiter'
+// Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { parseUserId }      from '../../utils/parse'
 import { db }   from '../../db/connection'
 import { questions, users } from '../../schema'
@@ -64,6 +65,7 @@ router.post(
   '/tutor/explain',
   rateLimit({
     maxPerMinute: 10,
+    bucket: 'tutor',
     keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
   }),
   validate({ body: BodySchema }),

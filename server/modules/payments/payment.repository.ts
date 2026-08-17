@@ -57,7 +57,14 @@ export const paymentRepository = {
       ), activated AS (
         UPDATE users
         SET
-          tariff = 'premium'::tariff,
+          /* C-1 (audit CRITICAL): tariff='premium' FAQAT umrbod (days IS NULL)
+           * sentineli. Muddatli (month/year) grantlar tariff'ga TEGMAYDI —
+           * entitlement premium_until > now() orqali; aks holda eng arzon oylik
+           * xarid umrbod premium berib qo'yardi (hech narsa tariff'ni qaytarmasdi). */
+          tariff = CASE
+            WHEN ${input.days}::integer IS NULL THEN 'premium'::tariff
+            ELSE users.tariff
+          END,
           premium_until = CASE
             WHEN ${input.days}::integer IS NULL THEN users.premium_until
             ELSE GREATEST(COALESCE(users.premium_until, now()), now())

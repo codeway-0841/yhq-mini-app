@@ -4,7 +4,7 @@
  */
 
 import crypto from 'crypto'
-import { eq } from 'drizzle-orm'
+import { eq, and } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { paymentRepository } from './payment.repository'
@@ -166,9 +166,10 @@ export async function handleClickPrepare(input: ClickPrepareInput): Promise<Clic
     }
   }
 
-  // 3. Amount validation
+  // 3. Amount validation — NaN ham rad etiladi (audit P1-5: Number(undefined)
+  //    NaN berardi va Math.abs(NaN - x) > 0.01 FALSE → tekshiruv jimgina o'tardi).
   const reqAmount = Number(input.amount)
-  if (Math.abs(reqAmount - order.amountUzs) > 0.01) {
+  if (!Number.isFinite(reqAmount) || Math.abs(reqAmount - order.amountUzs) > 0.01) {
     return {
       click_trans_id: clickTransId,
       merchant_trans_id: merchantTransId,
@@ -177,7 +178,16 @@ export async function handleClickPrepare(input: ClickPrepareInput): Promise<Clic
     }
   }
 
-  // 4. Status validation
+  // 4. Status validation — bekor qilingan buyurtma qayta ochilmaydi
+  if (order.status === 'cancelled') {
+    return {
+      click_trans_id: clickTransId,
+      merchant_trans_id: merchantTransId,
+      merchant_prepare_id: order.id,
+      error: CLICK_ERRORS.TRANSACTION_CANCELLED,
+      error_note: 'Transaction cancelled',
+    }
+  }
   if (order.status === 'completed') {
     return {
       click_trans_id: clickTransId,
@@ -251,7 +261,18 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
     }
   }
 
-  // 3. If Click reported error (< 0) -> mark cancelled
+  // 3. Amount validation (Complete'da ham — Prepare'dagi bilan bir xil himoya)
+  const reqAmount = Number(input.amount)
+  if (!Number.isFinite(reqAmount) || Math.abs(reqAmount - order.amountUzs) > 0.01) {
+    return {
+      click_trans_id: clickTransId,
+      merchant_trans_id: merchantTransId,
+      error: CLICK_ERRORS.INCORRECT_AMOUNT,
+      error_note: 'Incorrect amount',
+    }
+  }
+
+  // 4. If Click reported error (< 0) -> mark cancelled
   if (Number(input.error) < 0) {
     await db
       .update(paymentOrders)
@@ -261,6 +282,7 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
         rawDetails: input as unknown as Record<string, unknown>,
       })
       .where(eq(paymentOrders.id, order.id))
+      .returning({ id: paymentOrders.id })
 
     return {
       click_trans_id: clickTransId,
@@ -270,48 +292,98 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
     }
   }
 
-  // 4. If already completed
-  if (order.status === 'completed') {
+  // 5. Bekor qilingan buyurtma qayta tasdiqlanmaydi (audit P1-5: oldin
+  //    cancelled → keyingi muvaffaqiyatli Complete qayta aktivatsiya qilardi)
+  if (order.status === 'cancelled') {
     return {
       click_trans_id: clickTransId,
       merchant_trans_id: merchantTransId,
-      merchant_confirm_id: order.id,
-      error: CLICK_ERRORS.SUCCESS,
-      error_note: 'Success',
+      error: CLICK_ERRORS.TRANSACTION_CANCELLED,
+      error_note: 'Transaction cancelled',
     }
   }
 
-  // 5. Activate Premium entitlement
-  const plan = getPlan(order.plan)
-  if (plan) {
-    const chargeId = `click_${clickTransId}`
-    await paymentRepository.complete({
-      telegramChargeId: chargeId,
-      providerChargeId: String(clickTransId),
-      userId: order.userId,
-      plan: plan.key as PlanKey,
-      days: plan.days,
-      amount: order.amountUzs,
-      currency: 'UZS',
-      payload: `click_order_${order.orderId}`,
-      rawUpdate: input as unknown as Record<string, unknown>,
-    })
-  }
-
-  // 6. Update order status to completed
-  await db
+  // 6. ATOMIK CLAIM (audit P1-5 replay/replay-race himoyasi): faqat bitta
+  //    Complete o'tadi — pending→completed conditional UPDATE. Parallel ikkita
+  //    turli click_trans_id'li Complete'dan faqat biri yutadi (qolganlari
+  //    ALREADY_PAID, premium IKKI marta berilmaydi); XUDDI SHU trans_id'ning
+  //    retry/replay'i idempotent SUCCESS qaytaradi (qayta grant Yo'Q).
+  const [claimed] = await db
     .update(paymentOrders)
     .set({
       status: 'completed',
       providerTransId: String(clickTransId),
       rawDetails: input as unknown as Record<string, unknown>,
     })
-    .where(eq(paymentOrders.id, order.id))
+    .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, 'pending')))
+    .returning()
+
+  if (!claimed) {
+    const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
+    if (fresh && fresh.providerTransId === String(clickTransId)) {
+      // Xuddi shu tranzaksiyaning replay'i — allaqachon muvaffaqiyatli o'tgan
+      return {
+        click_trans_id: clickTransId,
+        merchant_trans_id: merchantTransId,
+        merchant_confirm_id: fresh.id,
+        error: CLICK_ERRORS.SUCCESS,
+        error_note: 'Already confirmed',
+      }
+    }
+    return {
+      click_trans_id: clickTransId,
+      merchant_trans_id: merchantTransId,
+      merchant_confirm_id: order.id,
+      error: CLICK_ERRORS.ALREADY_PAID,
+      error_note: 'Already paid',
+    }
+  }
+
+  // 7. Activate Premium entitlement (ledger CTE charge-id bo'yicha idempotent).
+  //    Grant xatosida buyurtmani qayta 'pending'ga qaytaramiz — Click retry'i
+  //    davom eta olsin (pull olingan, premium berilmagan holat qolmasin).
+  const plan = getPlan(order.plan)
+  if (plan) {
+    const chargeId = `click_${clickTransId}`
+    try {
+      const result = await paymentRepository.complete({
+        telegramChargeId: chargeId,
+        providerChargeId: String(clickTransId),
+        userId: order.userId,
+        plan: plan.key as PlanKey,
+        days: plan.days,
+        amount: order.amountUzs,
+        currency: 'UZS',
+        payload: `click_order_${order.orderId}`,
+        rawUpdate: input as unknown as Record<string, unknown>,
+      })
+      if (result === 'user_not_found') {
+        // User o'chirilgan — ledger CTE ham hech narsa yozmaydi (target_user
+        // bo'sh). Buyurtmani cancelled qilib Click'ga xato qaytaramiz.
+        await db.update(paymentOrders).set({ status: 'cancelled' })
+          .where(eq(paymentOrders.id, order.id))
+          .returning({ id: paymentOrders.id })
+        return {
+          click_trans_id: clickTransId,
+          merchant_trans_id: merchantTransId,
+          error: CLICK_ERRORS.ORDER_NOT_FOUND,
+          error_note: 'User not found',
+        }
+      }
+    } catch (err) {
+      await db
+        .update(paymentOrders)
+        .set({ status: 'pending', providerTransId: null, rawDetails: {} })
+        .where(eq(paymentOrders.id, order.id))
+        .returning({ id: paymentOrders.id })
+      throw err
+    }
+  }
 
   return {
     click_trans_id: clickTransId,
     merchant_trans_id: merchantTransId,
-    merchant_confirm_id: order.id,
+    merchant_confirm_id: claimed.id,
     error: CLICK_ERRORS.SUCCESS,
     error_note: 'Success',
   }

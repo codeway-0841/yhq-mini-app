@@ -16,9 +16,13 @@ const SAFE_REQ_ID = /^[A-Za-z0-9_-]{8,64}$/
 
 const SKIP_PATHS = new Set(['/api/health', '/api/ready'])
 
-/** Telegram id'lar (5+ xonali raqamlar) — PII; log'da ko'rinmasligi kerak */
+/** Telegram id'lar (5+ xonali raqamlar) — PII; log'da ko'rinmasligi kerak.
+ *  Telegram login kodlari ham sekret-ga o'xshash (session bearer tranziti) —
+ *  eski path-based polling shakli uchun normalizatsiya (P1-3). */
 export function normalizePath(path: string): string {
-  return path.replace(/\d{5,}/g, ':id')
+  return path
+    .replace(/\d{5,}/g, ':id')
+    .replace(/\/auth\/telegram-login\/[A-Za-z0-9_-]+/g, '/auth/telegram-login/:code')
 }
 
 export function resolveRequestId(header: string | string[] | undefined): string {

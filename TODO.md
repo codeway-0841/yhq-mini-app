@@ -3,6 +3,37 @@
 > Senior audit natijalari (2026-08-11). Bu fayl keyingi sessiyada davom etish uchun.
 > Buyruq: "TODO.md ni o'qib davom et" + istalganda "caveman ishlatib tur".
 
+## ✅ P1 Xavfsizlik paketi (2026-08-17, audit sessiyasi) — TUGADI
+
+- **P1-1 DB-limiter migratsiyasi:** `/questions`, `/topics` (bucket `content`, 60/min IP),
+  `/progress/:userId/result` + `/cards/review` (`progress`, 120/min), `/promo/redeem`
+  (`promo`, 5/min), `/tutor/explain` (`tutor`, 10/min), `+/payments/create-order`
+  (`pay-order`, 10/min) — hammasi `dbRateLimit`ga o'tdi (Vercel'da in-memory no-op edi).
+- **P1-2 fail-closed:** `db-rate-limiter.ts` DB xatosida endi 503
+  `rate_limiter_unavailable` + Sentry (fail-open emas). Test: unit failclosed (2).
+- **P1-3 login code log'dan chiqdi:** yangi `GET /auth/telegram-login` (kod
+  `X-Login-Code` header'da, klient o'tdi); eski `:code` route keshlangan bundle'lar
+  uchun qoldi; request-logger `/auth/telegram-login/:code`ni normalize qiladi.
+- **P1-4 initData oynasi:** 24 soat → 1 soat (default; `INITDATA_MAX_AGE_SECONDS`
+  env). Klient recovery: initData-401 → Mini App 60s guard bilan 1 marta reload
+  (`platform/telegram.ts requestFreshInitData`). Test: unit telegram (8).
+- **P1-5 Click mustahkamlash:** Prepare/Complete'da NaN amount rad (+test), cancelled
+  buyurtma qayta ochilmaydi (+test), ATOMIK claim (pending→completed conditional
+  UPDATE) — parallel/replay Complete premiumni ikki marta berolmaydi; xuddi shu
+  click_trans_id replay'i idempotent SUCCESS; grant xatosida order pending'ga
+  rollback (Click retry davom etadi); `user_not_found` → -5. Webhook route'ga
+  `express.urlencoded` ham qo'shildi (form-encoded integratsiya uchun).
+- **C-1 (CRITICAL, bonus):** muddatli grantlar endi `tariff`ga TEGMAYDI —
+  payment.repo / promo.repo / tournament-prize / admin grant. `tariff='premium'`
+  faqat umrbod sentinel. Integration test yangilandi (oylik → stored 'free' +
+  premium_until). Tournament'da premium_until endi GREATEST SQLda (H-1 qisman).
+- **M-3:** `USER_SEGMENTS`ga `'referrals'` qo'shildi (GET /referrals/:userId IDOR yopildi).
+- **P3 gigiyena:** `walkthrough.md` gitignore'da; CI check job DATABASE_URL endi
+  `db.invalid`ga ishora qiladi (tasodifiy ulanish tez yiqiladi, localhost'da osilmaydi);
+  vitest retry: unit/api 0 (flaky ochiq), integration alohida configda 2.
+- **Verifikatsiya:** tsc ikkalasi ✓, unit 384/384 ✓, api 17/17 ✓, integration 95/95 ✓
+  (real Neon), vite build ✓.
+
 ## ⚠️ Holat: deploy uchun tayyor
 
 Batch 3 commit+push EDILDI (3b2bca0 + c76f9fa). PROD DB 0028→0033 migrate qilingan

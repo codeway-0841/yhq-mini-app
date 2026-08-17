@@ -4,12 +4,15 @@ import { wrap }   from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
 import { getProvider } from '../../providers'
 import { questionsRepository } from './questions.repository'
-import { rateLimit } from '../../middleware/rate-limiter'
+// Multi-instance umumiy limiter: prod'da DB counter (Neon), test/dev'da in-memory.
+// Vercel serverless'da har so'rov yangi instansiya bo'lishi mumkin — in-memory
+// bucket o'sha instansiya bilan birga yo'qoladi (no-op); DB counter umumiy.
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 
 const router = Router()
 
 /** Kontent endpointlari og'ir (to'liq savollar to'plami) — IP bo'yicha 60/min */
-const contentLimit = rateLimit({ maxPerMinute: 60, keyFn: (req) => req.ip ?? 'unknown' })
+const contentLimit = rateLimit({ maxPerMinute: 60, bucket: 'content', keyFn: (req) => req.ip ?? 'unknown' })
 
 const QuestionsQuery = z.object({
   topicId: z.string().regex(/^\d+$/).optional(),

@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import express from 'express'
 import crypto from 'crypto'
 import { z } from 'zod'
 import { eq, and } from 'drizzle-orm'
@@ -6,6 +7,8 @@ import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { requireAuth } from '../../middleware/auth'
 import { validate } from '../../middleware/validate'
+// Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { getPlan, type PlanKey } from '../../../shared/premium-plans'
 import {
@@ -17,6 +20,14 @@ import {
 } from './click.service'
 
 export const paymentRouter = Router()
+
+/** Buyurtma yaratish — 10/min (payment_orders jadvalining maqsadsiz o'sishini
+ *  cheklash; Vercel'da in-memory limiter no-op — DB counter ishlaydi). */
+const orderLimiter = rateLimit({ maxPerMinute: 10, bucket: 'pay-order' })
+
+/** Click webhook body'si ba'zi integratsiyalarda form-urlencoded keladi —
+ *  express.json faqat JSON'ni parse qiladi. Ikkala format qabul qilinadi. */
+const clickBodyParser = express.urlencoded({ extended: false })
 
 const CreateOrderSchema = z.object({
   plan: z.enum(['month', 'year', 'lifetime']),
@@ -31,6 +42,7 @@ const CreateOrderSchema = z.object({
 paymentRouter.post(
   '/create-order',
   requireAuth,
+  orderLimiter,
   validate({ body: CreateOrderSchema }),
   wrap(async (req: any, res) => {
     const { plan: planKey, provider, returnUrl } = req.body
@@ -131,6 +143,6 @@ async function handleClickWebhookRoute(req: any, res: any) {
   }
 }
 
-paymentRouter.post('/click', wrap(handleClickWebhookRoute))
-paymentRouter.post('/click/prepare', wrap(handleClickWebhookRoute))
-paymentRouter.post('/click/complete', wrap(handleClickWebhookRoute))
+paymentRouter.post('/click', clickBodyParser, wrap(handleClickWebhookRoute))
+paymentRouter.post('/click/prepare', clickBodyParser, wrap(handleClickWebhookRoute))
+paymentRouter.post('/click/complete', clickBodyParser, wrap(handleClickWebhookRoute))

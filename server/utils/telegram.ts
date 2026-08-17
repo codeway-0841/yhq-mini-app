@@ -4,6 +4,7 @@
  */
 
 import { createHmac, createHash, timingSafeEqual } from 'crypto'
+import { config } from '../config'
 
 export interface InitDataUser {
   id:          number
@@ -13,8 +14,14 @@ export interface InitDataUser {
   photo_url?:  string
 }
 
-/** Max accepted initData age (24 h) — guards against replayed captures. */
-const MAX_AGE_SECONDS = 86_400
+/**
+ * Max accepted initData age — replay oynasi (audit P1-4: 24 soatdan qisqartirildi).
+ * Qiymat `INITDATA_MAX_AGE_SECONDS` env orqali sozlanadi, default 1 soat.
+ * Klient tomonda 401 → Mini App bir marta qayta yuklanadi (yangi auth_date).
+ */
+function maxAgeSeconds(): number {
+  return config.auth.initDataMaxAgeSeconds
+}
 
 /**
  * Verify Telegram initData signature.
@@ -49,7 +56,7 @@ export function verifyInitData(initData: string, botToken: string): InitDataUser
   const authDate = Number(params.get('auth_date') ?? 0)
   const nowSec = Date.now() / 1000
   if (!Number.isFinite(authDate) || authDate <= 0) return null
-  if (nowSec - authDate > MAX_AGE_SECONDS) return null       // eski (replay)
+  if (nowSec - authDate > maxAgeSeconds()) return null        // eski (replay)
   if (authDate - nowSec > 60) return null                    // kelajakdagi vaqt
 
   const rawUser = params.get('user')
@@ -105,7 +112,7 @@ export function verifyLoginWidget(fields: Record<string, string>, botToken: stri
   const authDate = Number(fields['auth_date'] ?? 0)
   const nowSec = Date.now() / 1000
   if (!Number.isFinite(authDate) || authDate <= 0) return null
-  if (nowSec - authDate > MAX_AGE_SECONDS) return null       // eski (replay)
+  if (nowSec - authDate > maxAgeSeconds()) return null        // eski (replay)
   if (authDate - nowSec > 60) return null                    // kelajakdagi vaqt
 
   const id = Number(fields['id'] ?? 0)

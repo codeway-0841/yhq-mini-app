@@ -17,7 +17,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      DATABASE_URL: postgresql://unit:unit@localhost:5432/unit
+      # Unit testlar DB'ga ULANMAYDI (config faqat import uchun parse qiladi).
+      # db.invalid hosti: biror test tasodifan ulanmoqchi bo'lsa — localhost'dagi
+      # 30s connect-timeout'ga ilinib qolmasdan, DARHOL tez xato bilan yiqiladi
+      # (avvalgi phantom-localhost DB sessiya osilgan tuydi).
+      DATABASE_URL: postgresql://unit:unit@db.invalid:5432/unit
       NODE_ENV: test
     steps:
       - uses: actions/checkout@v4

@@ -21,7 +21,7 @@ export interface TournamentWinnerResult {
   score: number
   league: string
   prizeDays: number
-  newPremiumUntil: Date
+  newPremiumUntil: Date | null
   telegramNotified: boolean
 }
 
@@ -124,22 +124,18 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
     const rank = i + 1
     const prizeDays = TOURNAMENT_PRIZES[rank] || 7
 
-    // Yangi Premium muddati: joriy muddatga qo'shiladi yoki bugundan boshlanadi
-    const currentUntil = row.premiumUntil ? new Date(row.premiumUntil) : null
-    const baseTime = currentUntil && currentUntil.getTime() > Date.now()
-      ? currentUntil.getTime()
-      : Date.now()
-    const newUntil = new Date(baseTime + prizeDays * 86_400_000)
-
-    // Foydalanuvchiga Premium berish
-    await db
+    // Foydalanuvchiga Premium berish.
+    // C-1: muddatli sovrin tariff'ga TEGMAYDI (premium_until yetarli).
+    // H-1 (qisman): GREATEST SQLda — SELECT va UPDATE orasida boshqa
+    // to'lov/promo muddatni uzatsa, eskisi ko'r-ko'rona o'chirilmaydi.
+    const [granted] = await db
       .update(users)
       .set({
-        tariff: 'premium',
-        premiumUntil: newUntil,
+        premiumUntil: sql`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${prizeDays}::int)`,
         updatedAt: new Date(),
       })
       .where(eq(users.id, row.userId))
+      .returning({ premiumUntil: users.premiumUntil })
 
     // Mukofot yozuvini kiritish
     await db.insert(tournamentPrizes).values({
@@ -172,7 +168,7 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
       score: Number(row.score),
       league: row.league,
       prizeDays,
-      newPremiumUntil: newUntil,
+      newPremiumUntil: granted?.premiumUntil ?? null,
       telegramNotified: notified,
     })
   }

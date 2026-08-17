@@ -151,10 +151,12 @@ describe('server/modules/promo/promo.router.ts - Real Router Tests', () => {
         createdAt: now,
       })
       vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(false)
+      // C-1: muddatli grant SAQLANGAN tariff'ni o'zgartirmaydi ('free' qoladi,
+      // premium_until orqali effective). Router javobi stored qiymatni aks ettiradi.
       vi.spyOn(promoRepository, 'redeem').mockResolvedValue({
         success: true,
         premiumUntil: new Date(Date.now() + 7 * 86400000),
-        tariff: 'premium',
+        tariff: 'free',
       })
 
       const res = await request(app)
@@ -166,7 +168,9 @@ describe('server/modules/promo/promo.router.ts - Real Router Tests', () => {
 
       expect(res.body.success).toBe(true)
       expect(res.body.value).toBe(7)
-      expect(res.body.tariff).toBe('premium')
+      // Stored tariff 'free' — effective premium premiumUntil orqali (C-1)
+      expect(res.body.tariff).toBe('free')
+      expect(res.body.premiumUntil).toBeTruthy()
     })
   })
 })

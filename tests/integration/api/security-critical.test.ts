@@ -257,8 +257,12 @@ describe('payment idempotency', () => {
     await expect(paymentRepository.complete(input)).resolves.toBe('activated')
     const [afterFirst] = await db.select({ premiumUntil: users.premiumUntil, tariff: users.tariff })
       .from(users).where(eq(users.id, PAYMENT_ID))
-    expect(afterFirst.tariff).toBe('premium')
+    // C-1 (audit CRITICAL): muddatli (days=30) xarid SAQLANGAN tariff'ni
+    // 'premium'ga o'tirirmaydi — entitlement premium_until > now() orqali.
+    // Umrbod xaridgina tariff='premium' sentinel bo'ladi.
+    expect(afterFirst.tariff).toBe('free')
     expect(afterFirst.premiumUntil).toBeTruthy()
+    expect(afterFirst.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
 
     // Ikkinchi marta — replay / Telegram retry
     await expect(paymentRepository.complete(input)).resolves.toBe('duplicate')
