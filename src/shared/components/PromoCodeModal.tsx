@@ -36,7 +36,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
       // Store'da darhol premium qilish
       useAppStore.setState((s) => ({
         tariff: 'premium',
-        user: s.user ? { ...s.user, tariff: 'premium', premiumUntil: res.premiumUntil ? new Date(res.premiumUntil) : undefined } : s.user,
+        user: s.user ? { ...s.user, tariff: 'premium', premiumUntil: res.premiumUntil ?? undefined } : s.user,
       }))
 
       setSuccessData({ value: res.value, premiumUntil: res.premiumUntil })

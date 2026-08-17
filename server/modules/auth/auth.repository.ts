@@ -124,7 +124,7 @@ export const authRepository = {
   async createOTPWithCooldown(phone: string, codeHash: string, expiresAt: Date, txOrDb?: DB): Promise<boolean> {
     const rows = await executeRows<{ phone: string }>(sql`
       INSERT INTO otp_codes (phone, code_hash, expires_at, created_at, attempts)
-      VALUES (${phone}, ${codeHash}, ${expiresAt}, now(), 0)
+      VALUES (${phone}, ${codeHash}, ${expiresAt.toISOString()}::timestamp, now(), 0)
       ON CONFLICT (phone) DO UPDATE
       SET code_hash = EXCLUDED.code_hash,
           expires_at = EXCLUDED.expires_at,
