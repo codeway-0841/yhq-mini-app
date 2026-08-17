@@ -959,7 +959,7 @@ export const authService = {
     const rows = await executeRows<{ provider_uid: string; password_hash: string }>(sql`
       SELECT provider_uid, password_hash FROM auth_identities
       WHERE user_id = ${userId} AND provider IN ('email', 'phone') AND password_hash IS NOT NULL
-      ORDER BY CASE WHEN provider = 'phone' THEN 1 ELSE 2 END, id ASC
+      ORDER BY CASE WHEN provider = 'phone' THEN 1 ELSE 2 END, provider_uid ASC
       LIMIT 1
     `)
     if (!rows[0]?.password_hash) {

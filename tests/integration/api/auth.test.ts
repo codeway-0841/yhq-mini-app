@@ -378,6 +378,7 @@ describe('Telefon OTP tasdiqlash (register + link)', () => {
 
   it("register OTP'siz → 400 (validatsiya: otp majburiy)", async () => {
     const res = await request(app).post('/api/auth/phone/register')
+      .set('X-Forwarded-For', '192.168.100.15')
       .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test' })
     expect(res.status).toBe(400)
   })
@@ -385,6 +386,7 @@ describe('Telefon OTP tasdiqlash (register + link)', () => {
   it("register noto'g'ri kod bilan → 401 invalid_otp", async () => {
     await seedOtp(PHONE_REG)
     const res = await request(app).post('/api/auth/phone/register')
+      .set('X-Forwarded-For', '192.168.100.15')
       .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test', otp: '999999' })
     expect(res.status).toBe(401)
     expect(res.body.error).toContain('invalid_otp')
@@ -393,6 +395,7 @@ describe('Telefon OTP tasdiqlash (register + link)', () => {
   it("register to'g'ri kod bilan → sessiya + parol identity yaratiladi", async () => {
     await seedOtp(PHONE_REG, '123456')
     const res = await request(app).post('/api/auth/phone/register')
+      .set('X-Forwarded-For', '192.168.100.15')
       .send({ phone: PHONE_REG, password: 'parol12345', firstName: 'Test', otp: '123456' })
       .expect(201)
     expect(res.body.sessionToken).toBeTruthy()
@@ -400,12 +403,14 @@ describe('Telefon OTP tasdiqlash (register + link)', () => {
 
     // OTP bir martalik — qayta ishlatib bo'lmaydi
     const replay = await request(app).post('/api/auth/phone/register')
+      .set('X-Forwarded-For', '192.168.100.15')
       .send({ phone: '+998900000017', password: 'parol12345', firstName: 'X', otp: '123456' })
     expect(replay.status).toBeLessThan(500)
     expect(replay.status).toBe(401)
 
     // Parol bilan endi kirsa bo'ladi (SMS'siz login)
     const login = await request(app).post('/api/auth/phone/login')
+      .set('X-Forwarded-For', '192.168.100.15')
       .send({ phone: PHONE_REG, password: 'parol12345' })
       .expect(200)
     expect(login.body.sessionToken).toBeTruthy()
