@@ -15,11 +15,9 @@ import { validate } from '../../middleware/validate'
 import { rateLimit } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
+import { adminRepository } from './admin.repository'
 import { reloadOctagonPools } from '../../octagon'
-import { db, executeRows } from '../../db/connection'
-import { questions, questionExplanations, savedQuestions, topics, questionBanks } from '../../schema'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
-import { eq, asc, sql } from 'drizzle-orm'
 
 const router = Router()
 
@@ -68,7 +66,7 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
   const bankId = resolveBankId(body.bankId || body.subjectId)
 
   // Ensure bank exists in DB
-  await db.insert(questionBanks).values({ id: bankId, name: bankId }).onConflictDoNothing()
+  await adminRepository.ensureBank(bankId)
 
   // id yo'q bo'lsa — max(id)+1 (seed bilan bir xil strategiya). Parallel admin
   // so'rovlar bir xil max+1 hisoblab 23505 (PK/uq conflict) olishi mumkin —
@@ -77,27 +75,24 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
   let insertedId: number | null = null
   for (let attempt = 0; attempt < 3 && insertedId == null; attempt++) {
     if (newId == null) {
-      const [row] = await db.select({ maxId: sql<number>`COALESCE(MAX(${questions.id}), 0)` }).from(questions)
-      newId = row.maxId + 1
+      newId = await adminRepository.nextQuestionId()
     }
-    try {
-      const [r] = await db.insert(questions).values({
-        id:            newId,
-        bankId:        bankId,
-        externalId:    String(newId),  // canonical identity: (bank_id, external_id)
-        questionUz:    body.questionUz,
-        questionRu:    body.questionRu,
-        optionsUz:     body.optionsUz,
-        optionsRu:     body.optionsRu,
-        correctAnswer: body.correctAnswer,
-        image:         body.image ?? null,
-        topicId:       body.topicId ?? null,
-      }).returning({ id: questions.id })
-      insertedId = r.id
-    } catch (err) {
-      // 23505 = unique_violation — faqat avto-id oqimida qayta hisoblanadi;
-      // aniq berilgan id konflikti (yoki boshqa xato) to'g'ridan-to'g'ri yuqoriga
-      if (body.id != null || (err as { code?: string })?.code !== '23505' || attempt === 2) throw err
+    insertedId = await adminRepository.insertQuestion({
+      id:            newId,
+      bankId:        bankId,
+      externalId:    String(newId),  // canonical identity: (bank_id, external_id)
+      questionUz:    body.questionUz,
+      questionRu:    body.questionRu,
+      optionsUz:     body.optionsUz,
+      optionsRu:     body.optionsRu,
+      correctAnswer: body.correctAnswer,
+      image:         body.image ?? null,
+      topicId:       body.topicId ?? null,
+    })
+    if (insertedId == null) {
+      // 23505 unique_violation — faqat avto-id oqimida qayta hisoblanadi
+      if (body.id != null) throw new AppError(409, 'Bu id bilan savol allaqachon mavjud')
+      if (attempt === 2) throw new AppError(500, 'Savol id ajratib bo\'lmadi (concurrency)')
       newId = undefined
     }
   }
@@ -127,10 +122,9 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
   const { subjectId, bankId: explicitBankId, items } = req.body as z.infer<typeof BulkImportSchema>
   const bankId = resolveBankId(explicitBankId || subjectId)
 
-  await db.insert(questionBanks).values({ id: bankId, name: bankId }).onConflictDoNothing()
+  await adminRepository.ensureBank(bankId)
 
-  const [row] = await db.select({ maxId: sql<number>`COALESCE(MAX(${questions.id}), 0)` }).from(questions)
-  let currentMaxId = row.maxId
+  let currentMaxId = await adminRepository.nextQuestionId() - 1
 
   const recordsToInsert = items.map((it) => {
     currentMaxId += 1
@@ -148,12 +142,7 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
     }
   })
 
-  // Insert in chunks of 100 for safety
-  const CHUNK_SIZE = 100
-  for (let i = 0; i < recordsToInsert.length; i += CHUNK_SIZE) {
-    const chunk = recordsToInsert.slice(i, i + CHUNK_SIZE)
-    await db.insert(questions).values(chunk)
-  }
+  await adminRepository.bulkInsertQuestions(recordsToInsert)
 
   questionsRepository.invalidateCache()
   await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
@@ -167,21 +156,17 @@ const handleQuestionUpdate = wrap(async (req, res) => {
   if (!Number.isInteger(id) || id <= 0) throw new AppError(400, "Noto'g'ri id")
   const body = req.body as UpsertBody
 
-  const updated = await db
-    .update(questions)
-    .set({
-      questionUz:    body.questionUz,
-      questionRu:    body.questionRu,
-      optionsUz:     body.optionsUz,
-      optionsRu:     body.optionsRu,
-      correctAnswer: body.correctAnswer,
-      image:         body.image ?? null,
-      topicId:       body.topicId ?? null,
-    })
-    .where(eq(questions.id, id))
-    .returning({ id: questions.id })
+  const updated = await adminRepository.updateQuestion(id, {
+    questionUz:    body.questionUz,
+    questionRu:    body.questionRu,
+    optionsUz:     body.optionsUz,
+    optionsRu:     body.optionsRu,
+    correctAnswer: body.correctAnswer,
+    image:         body.image ?? null,
+    topicId:       body.topicId ?? null,
+  })
 
-  if (updated.length === 0) throw new AppError(404, 'Savol topilmadi')
+  if (!updated) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
   await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.json({ id, updated: true })
@@ -195,13 +180,10 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
   const id = Number(req.params.id)
   if (!Number.isInteger(id) || id <= 0) throw new AppError(400, "Noto'g'ri id")
 
-  // Bog'liq yozuvlarni ham o'chir (saved_questions FK cascade emasdi schemada —
-  // xavfsizlik uchun avval manual tekshirish)
-  await db.delete(savedQuestions).where(eq(savedQuestions.questionId, id))
-  await db.delete(questionExplanations).where(eq(questionExplanations.questionId, id))
-  const deleted = await db.delete(questions).where(eq(questions.id, id)).returning({ id: questions.id })
+  // Bog'liq yozuvlar BITTA CTE'da (audit: 3 alohida DELETE crash'da yarim holat qoldirardi)
+  const deleted = await adminRepository.deleteQuestionCascade(id)
 
-  if (deleted.length === 0) throw new AppError(404, 'Savol topilmadi')
+  if (!deleted) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
   await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.status(204).send()
@@ -213,11 +195,7 @@ router.get('/admin/questions', wrap(async (req, res) => {
   const bankId = resolveBankId(subjectParam)
   res.set('Cache-Control', 'no-store')   // javob kalitlari CDN/browser'da qolmasin
 
-  const rows = await db
-    .select()
-    .from(questions)
-    .where(eq(questions.bankId, bankId))
-    .orderBy(asc(questions.id))
+  const rows = await adminRepository.listQuestionsByBank(bankId)
 
   res.json(rows)
 }))
@@ -227,15 +205,9 @@ router.get('/admin/questions/meta', wrap(async (req, res) => {
   const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
   const bankId = resolveBankId(subjectParam)
 
-  const [stats] = await db
-    .select({
-      total: sql<number>`COUNT(*)::int`,
-      withTopic: sql<number>`COUNT(${questions.topicId})::int`,
-    })
-    .from(questions)
-    .where(eq(questions.bankId, bankId))
+  const stats = await adminRepository.questionBankMeta(bankId)
 
-  res.json(stats ?? { total: 0, withTopic: 0 })
+  res.json(stats)
 }))
 
 // ── GET /api/admin/topics — fan bo'yicha mavzular ──
@@ -243,106 +215,20 @@ router.get('/admin/topics', wrap(async (req, res) => {
   const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
   const bankId = resolveBankId(subjectParam)
 
-  const topicRows = await db
-    .select()
-    .from(topics)
-    .where(eq(topics.bankId, bankId))
-    .orderBy(asc(topics.id))
+  const topicRows = await adminRepository.listTopicsByBank(bankId)
 
   res.json(topicRows)
 }))
 
 // ── GET /api/admin/stats — Jonli tizim statistikasi ──
 router.get('/admin/stats', wrap(async (_req, res) => {
-  const [userStats] = await executeRows<{ totalUsers: number; premiumUsers: number }>(sql`
-    SELECT
-      COUNT(*)::int AS "totalUsers",
-      COUNT(*) FILTER (WHERE tariff = 'premium' OR (premium_until IS NOT NULL AND premium_until > now()))::int AS "premiumUsers"
-    FROM users
-  `)
-
-  const [questionStats] = await executeRows<{ totalQuestions: number }>(sql`
-    SELECT COUNT(*)::int AS "totalQuestions" FROM questions
-  `)
-
-  const [progressStats] = await executeRows<{ totalAnswered: number }>(sql`
-    SELECT COALESCE(SUM(total_answered), 0)::int AS "totalAnswered" FROM progress
-  `)
-
-  const [promoStats] = await executeRows<{ totalPromoCodes: number }>(sql`
-    SELECT COUNT(*)::int AS "totalPromoCodes" FROM promo_codes
-  `)
-
-  const [dailyStats] = await executeRows<{ todayActiveUsers: number }>(sql`
-    SELECT COUNT(DISTINCT user_id)::int AS "todayActiveUsers"
-    FROM daily_records
-    WHERE date = to_char(now() AT TIME ZONE 'Asia/Tashkent', 'YYYY-MM-DD')
-  `)
-
-  res.json({
-    totalUsers: userStats?.totalUsers ?? 0,
-    premiumUsers: userStats?.premiumUsers ?? 0,
-    todayActiveUsers: dailyStats?.todayActiveUsers ?? 0,
-    totalQuestions: questionStats?.totalQuestions ?? 0,
-    totalAnswered: progressStats?.totalAnswered ?? 0,
-    totalPromoCodes: promoStats?.totalPromoCodes ?? 0,
-  })
+  res.json(await adminRepository.getStats())
 }))
 
 // ── GET /api/admin/users — Foydalanuvchilar qidiruvi ──
 router.get('/admin/users', wrap(async (req, res) => {
   const q = String(req.query['query'] ?? '').trim()
-  let usersList
-
-  if (q) {
-    usersList = await executeRows(sql`
-      SELECT
-        u.id,
-        u.first_name AS "firstName",
-        u.last_name AS "lastName",
-        u.username,
-        u.photo_url AS "photoUrl",
-        u.phone,
-        u.tariff,
-        u.premium_until AS "premiumUntil",
-        u.is_admin AS "isAdmin",
-        u.created_at AS "createdAt",
-        COALESCE(p.total_answered, 0)::int AS answered,
-        COALESCE(p.total_correct, 0)::int AS correct,
-        COALESCE(p.league, 'bronze') AS league
-      FROM users u
-      LEFT JOIN progress p ON p.user_id = u.id
-      WHERE
-        u.id ILIKE ${'%' + q + '%'} OR
-        COALESCE(u.first_name, '') ILIKE ${'%' + q + '%'} OR
-        COALESCE(u.last_name, '') ILIKE ${'%' + q + '%'} OR
-        COALESCE(u.username, '') ILIKE ${'%' + q + '%'} OR
-        COALESCE(u.phone, '') ILIKE ${'%' + q + '%'}
-      ORDER BY u.created_at DESC
-      LIMIT 50
-    `)
-  } else {
-    usersList = await executeRows(sql`
-      SELECT
-        u.id,
-        u.first_name AS "firstName",
-        u.last_name AS "lastName",
-        u.username,
-        u.photo_url AS "photoUrl",
-        u.phone,
-        u.tariff,
-        u.premium_until AS "premiumUntil",
-        u.is_admin AS "isAdmin",
-        u.created_at AS "createdAt",
-        COALESCE(p.total_answered, 0)::int AS answered,
-        COALESCE(p.total_correct, 0)::int AS correct,
-        COALESCE(p.league, 'bronze') AS league
-      FROM users u
-      LEFT JOIN progress p ON p.user_id = u.id
-      ORDER BY u.created_at DESC
-      LIMIT 50
-    `)
-  }
+  const usersList = await adminRepository.searchUsers(q)
 
   res.json({ users: usersList })
 }))
@@ -360,37 +246,9 @@ router.post(
     const userId = String(req.params['userId'])
     const { tariff, days } = req.body as z.infer<typeof GrantPremiumSchema>
 
-    if (tariff === 'free') {
-      await executeRows(sql`
-        UPDATE users
-        SET tariff = 'free', premium_until = NULL, updated_at = now()
-        WHERE id = ${userId}
-      `)
-    } else if (days && days > 0) {
-      // C-1: muddatli admin grant ham tariff'ga tegmaydi — premium_until yetarli
-      await executeRows(sql`
-        UPDATE users
-        SET
-          premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${days}::int),
-          updated_at = now()
-        WHERE id = ${userId}
-      `)
-    } else {
-      // Lifetime premium
-      await executeRows(sql`
-        UPDATE users
-        SET tariff = 'premium', premium_until = NULL, updated_at = now()
-        WHERE id = ${userId}
-      `)
-    }
-
-    const updated = await executeRows(sql`
-      SELECT id, first_name AS "firstName", tariff, premium_until AS "premiumUntil"
-      FROM users
-      WHERE id = ${userId}
-    `)
-
-    res.json({ ok: true, user: updated[0] })
+    await adminRepository.grantPremium(userId, tariff, days ?? null)
+    const updated = await adminRepository.getUserForGrant(userId)
+    res.json({ ok: true, user: updated })
   }),
 )
 

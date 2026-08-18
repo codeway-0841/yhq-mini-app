@@ -14,9 +14,6 @@
 
 import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
-import { gte, eq, and, lt, sql, inArray } from 'drizzle-orm'
-import { db } from '../../db/connection'
-import { dailyRecords, progress, dailyStreaks, answerTokens, leagueRolloverLog, rateLimits, analyticsEvents, telegramLoginCodes, linkCodes } from '../../schema'
 import { config } from '../../config'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
@@ -54,31 +51,18 @@ router.get('/cron/daily-reminder', async (_req, res) => {
     const cutoff = tashkentDate(14)
 
     // So'nggi 14 kunda faol foydalanuvchilar
-    const recent = await db
-      .selectDistinct({ userId: dailyRecords.userId })
-      .from(dailyRecords)
-      .where(gte(dailyRecords.date, cutoff))
+    const recent = await cronRepository.listRecentActiveUserIds(cutoff)
 
     // Bugun allaqachon faol — ularga eslatma kerak emas
-    const activeToday = await db
-      .selectDistinct({ userId: dailyRecords.userId })
-      .from(dailyRecords)
-      .where(eq(dailyRecords.date, today))
+    const done = await cronRepository.listActiveOnDate(today)
 
-    const done = new Set(activeToday.map((r) => r.userId))
     // FAQAT Telegram-linked userlar (raqam-string id) — telefon+parol akkauntlarida
     // ('p_<digits>') TG chat yo'q, ularga SMS yog'och emas: xabar yuborib bo'lmaydi.
-    const targets = [...new Set(recent.map((r) => r.userId))]
+    const targets = [...new Set(recent)]
       .filter((uid) => !done.has(uid) && /^\d+$/.test(uid))
 
     // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
-    const streakRows = targets.length > 0
-      ? await db.select({ userId: dailyStreaks.userId, streak: sql<number>`MAX(${dailyStreaks.streak})` })
-          .from(dailyStreaks)
-          .where(inArray(dailyStreaks.userId, targets))
-          .groupBy(dailyStreaks.userId)
-      : []
-    const streakOf = new Map(streakRows.map((r) => [r.userId, Number(r.streak)]))
+    const streakOf = await cronRepository.topStreaksForUsers(targets)
 
     const bot = new Bot(token)
     const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
@@ -150,25 +134,11 @@ router.get('/cron/league-rollover', async (_req, res) => {
     // 1) REJA — bu davr uchun allaqachon jurnalga yozilganmi? Crash'dan keyingi
     // davom REJALASHTIRISHNI SKIP qiladi (aolda jarayon qayta-promote/demote
     // kaskadiga olib kelardi: qayta ishga tushish JORIY liga'dan qayta hisoblardi).
-    let plan = await db.select({
-      userId:     leagueRolloverLog.userId,
-      fromLeague: leagueRolloverLog.fromLeague,
-      toLeague:   leagueRolloverLog.toLeague,
-    }).from(leagueRolloverLog).where(eq(leagueRolloverLog.periodKey, wPrev))
+    let plan = await cronRepository.loadRolloverPlan(wPrev)
 
     let evaluated = 0
     if (plan.length === 0) {
-      const rows = await db.select({
-        userId: progress.userId,
-        league: progress.league,
-        score:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)`,
-      }).from(progress)
-        .leftJoin(dailyRecords, and(
-          eq(dailyRecords.userId, progress.userId),
-          gte(dailyRecords.date, wPrev),
-          lt(dailyRecords.date, wThis),
-        ))
-        .groupBy(progress.userId, progress.league)
+      const rows = await cronRepository.leagueWeekScores(wPrev, wThis)
 
       // Normalize invalid leagues to bronze and log data quality issues
       const validLeagues = new Set(LEAGUE_ORDER)
@@ -219,9 +189,7 @@ router.get('/cron/league-rollover', async (_req, res) => {
       // Rejani BITTA atomik statement'da saqlaymiz — keyingi APPLY bosqichi
       // crash'ga tushsa, qayta ishga tushirish SHU rejadan davom etadi.
       if (computed.length > 0) {
-        await db.insert(leagueRolloverLog)
-          .values(computed.map((c) => ({ userId: c.userId, periodKey: wPrev, fromLeague: c.fromLeague, toLeague: c.toLeague })))
-          .onConflictDoNothing()
+        await cronRepository.persistRolloverPlan(computed, wPrev)
         plan = computed
       }
     }
@@ -233,12 +201,9 @@ router.get('/cron/league-rollover', async (_req, res) => {
     for (let i = 0; i < plan.length; i += CHUNK_SIZE) {
       const chunk = plan.slice(i, i + CHUNK_SIZE)
       const applied = await Promise.all(chunk.map((p) =>
-        db.update(progress)
-          .set({ league: p.toLeague, updatedAt: new Date() })
-          .where(and(eq(progress.userId, p.userId), eq(progress.league, p.fromLeague)))
-          .returning({ id: progress.userId })
+        cronRepository.applyLeagueChange(p.userId, p.fromLeague, p.toLeague)
       ))
-      appliedCount += applied.reduce((sum, rows) => sum + rows.length, 0)
+      appliedCount += applied.reduce((sum, n) => sum + n, 0)
     }
 
     const promoted = plan.filter((p) => lvl(p.toLeague) > lvl(p.fromLeague)).length
@@ -279,44 +244,16 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
   }
 
   try {
-    const cutoff = new Date(Date.now() - 7 * 86_400_000)
-    const result = await db.delete(answerTokens).where(lt(answerTokens.createdAt, cutoff))
-    const deleted = result.rowCount ?? 0
-
-    // rate_limits counter'lari: oynasi 1 soat+ eskirganlar (multi-instance limiter)
-    const rlCutoff = new Date(Date.now() - 3_600_000)
-    const rlResult = await db.delete(rateLimits).where(lt(rateLimits.windowStart, rlCutoff))
-    const rateLimitsDeleted = rlResult.rowCount ?? 0
-
-    // analytics_events: 30 kundan eski yozuvlar (M-10 retention)
-    const analyticsCutoff = new Date(Date.now() - 30 * 86_400_000)
-    const analyticsResult = await db.delete(analyticsEvents).where(lt(analyticsEvents.createdAt, analyticsCutoff))
-    const analyticsDeleted = analyticsResult.rowCount ?? 0
-
-    // telegram_login_codes va link_codes: 24 soatdan eski eskirgan kodlar (L-10 cleanup)
-    const codesCutoff = new Date(Date.now() - 86_400_000)
-    const tgCodesResult = await db.delete(telegramLoginCodes).where(lt(telegramLoginCodes.createdAt, codesCutoff))
-    const tgCodesDeleted = tgCodesResult.rowCount ?? 0
-
-    const linkCodesResult = await db.delete(linkCodes).where(lt(linkCodes.createdAt, codesCutoff))
-    const linkCodesDeleted = linkCodesResult.rowCount ?? 0
+    const result = await cronRepository.cleanupExpired()
 
     await cronRepository.complete('cleanup-answer-tokens', today, {
-      deleted,
-      rateLimitsDeleted,
-      analyticsDeleted,
-      tgCodesDeleted,
-      linkCodesDeleted,
+      deleted: result.deleted,
+      rateLimitsDeleted: result.rateLimitsDeleted,
+      analyticsDeleted: result.analyticsDeleted,
+      tgCodesDeleted: result.tgCodesDeleted,
+      linkCodesDeleted: result.linkCodesDeleted,
     })
-    res.json({
-      ok: true,
-      deleted,
-      rateLimitsDeleted,
-      analyticsDeleted,
-      tgCodesDeleted,
-      linkCodesDeleted,
-      cutoff: cutoff.toISOString(),
-    })
+    res.json({ ok: true, ...result })
   } catch (err) {
     await cronRepository.complete('cleanup-answer-tokens', today, { error: String(err) }).catch(() => {})
     res.status(500).json({ ok: false, error: String(err) })

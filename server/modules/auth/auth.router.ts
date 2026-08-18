@@ -287,16 +287,16 @@ router.post(
   }),
 )
 
-// ── OAuth (Google + Apple) ──────────────────────────────────────────────────
+// ── OAuth (Google + Apple) — v2 stub (FIXPLAN #36 qarori): route'lar SAQLANADI
+// (client'da kelajakda tugmalar ulanadi), hozir ANIq `available: false` — 501
+// generic holat o'rniga kuzatuvchan javob; implementatsiya auth.service'da TODO.
 
 // GET /api/auth/google/callback
 router.get(
   '/auth/google/callback',
   rateLimit(AUTH_LIMIT),
-  wrap(async (req, res) => {
-    const code = req.query.code as string
-    if (!code) throw new AppError(400, 'code_required')
-    res.json(await authService.handleGoogleOAuth(code, req))
+  wrap(async (_req, res) => {
+    res.status(501).json({ available: false, provider: 'google', error: 'oauth_not_implemented', message: 'Google kirish v2 relizda ochiladi' })
   }),
 )
 
@@ -304,10 +304,8 @@ router.get(
 router.post(
   '/auth/apple/callback',
   rateLimit(AUTH_LIMIT),
-  wrap(async (req, res) => {
-    const code = req.body.code as string
-    if (!code) throw new AppError(400, 'code_required')
-    res.json(await authService.handleAppleOAuth(code, req))
+  wrap(async (_req, res) => {
+    res.status(501).json({ available: false, provider: 'apple', error: 'oauth_not_implemented', message: 'Apple kirish v2 relizda ochiladi' })
   }),
 )
 

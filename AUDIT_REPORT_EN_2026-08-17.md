@@ -179,7 +179,24 @@ The engineering discipline here is genuinely rare for this stack: atomic CTEs fo
 2. Land the referral v3 + SMS campaign work as separate commits with their tests green, including the three one-line race/IDOR fixes above.
 3. Extract the shared chunked-dispatch primitive and retrofit broadcast to it (M-5) — this retires a whole class of timeout/race bugs.
 4. Backfill repository-level tests for the payments/promo/referral reward paths (highest-value coverage per line) and add `tests/` to a tsconfig so type errors are caught in CI.
-5. Hygiene pass: drop `pdf-parse`, untrack `api/*.js`, merge `index.ts`/`standalone.ts`, fix the `.env.example` bot-username mismatch, and decide the H-4 farming policy (daily credit unique-key is the recommendation, matching TODO.md variant 1).
+5. Hygiene pass: ~~drop `pdf-parse`~~, ~~untrack `api/*.js`~~, ~~merge `index.ts`/`standalone.ts`~~, fix the `.env.example` bot-username mismatch, and decide the ~~H-4 farming policy~~ (done: `DAILY_ANSWER_CREDIT=1000`). *New from later pass:* ESLint flat config is now installed with CI enforcement; `App.tsx` no longer remounts on navigation.
+
+---
+
+## 8. POST-AUDIT TECHNICAL-DEBT PACKAGE (third remediation, same branch)
+
+| Item | What was done | Where |
+|---|---|---|
+| **P2 jsonb scalability** | `progress.solved_questions`/`correct_questions` (quadratic full-array rewrite per answer) → new `progress_questions` table (PK `(user_id, subject_id, question_id)`, `correct` flag). `recordAnswer` CTE: `q_write` O(1) upsert; anti-farm replay gate now index-backed `EXISTS`; `listSolvedKeys` feeds `toApiProgress` (client contract unchanged — init, profile, buildAuthSession, reset all migrated); migrations 0043 (table) + 0044 (backfill, idempotent — verified on real DB, 3-row case with correct flags) | `schema.ts`, `progress.repository.ts`, `users.service.ts`, `auth.service.ts`, `users.router.ts` |
+| **Repository pattern** | new `admin.repository.ts` (question CRUD w/ auto-id retry, delete as single CTE, stats, user search, premium grant), `analytics.repository.ts`; cron router SQL moved into `cron.repository.ts` (reminder targets, league plan persistence/scores, cleanup); routers now orchestration-only | `server/modules/{admin,analytics,cron}` |
+| **Graceful shutdown** | `server/utils/shutdown.ts` interval registry (bot login sweep, Octagon join-sweep, heartbeat); documented close order + Neon HTTP no-op | `utils/shutdown.ts`, `index.ts`, `bot.ts`, `octagon.ts` |
+| **Duplicate index** | migration 0045 drops `idx_payment_orders_order_id` (UNIQUE constraint already covers it) | `migrations/0045_*` |
+| **App.tsx remount** | removed `key={location.pathname}` (full remount + state loss per navigation); scroll reset + CSS transition now restarted via `pageRef` class toggle | `src/App.tsx` |
+| **ESLint** | flat config + `typescript-eslint` + `react-hooks` (rules-of-hooks error, exhaustive-deps warn); fixed a REAL hooks violation (`ResetPasswordPage` effect after early return) + 3 broken disable comments; `lint` script + CI step | `eslint.config.js`, `ci.yml` |
+| **OAuth stubs** | Google/Apple callbacks now return explicit `501 {available:false}` instead of falling through | `auth.router.ts` |
+| **Repo coverage** | `tests/integration/api/repo-coverage.test.ts` — 9 tests: referral reward 8-race, referee uniqueness, stats, ghost-user payment, promo expiry, session hash-is-sha256 assertion, OTP 8-race + single-use, trial 8-race | `tests/integration/api/` |
+
+Gate (this package): tsc ×2 ✓, unit 414/414 ✓, integration **115/115** ✓ (13 files), lint **0 errors**, vite build ✓, bundled server boot `/health` 200 + `/api/ready` ready ✓.
 
 ---
 
@@ -259,7 +276,7 @@ What still holds it back from A: H-1's fire-and-forget remainder, two known one-
 3. **H-1 remainder** — await prizes before `complete()`, ledger-first, own `jobRuns` lease
 4. **M-4 + M-5** — extract one shared chunked-campaign-dispatch primitive (claim rows via `FOR UPDATE SKIP LOCKED`), retrofit Telegram broadcast to it
 5. **H-3** — farming policy decision + daily-credit unique key (migration + CTE guard + tests)
-6. **P2 debt** — `solved_questions`/`correct_questions` jsonb → normalized table (biggest scalability item); Octagon `lastReactionTime` leak + duel caps; repository-pattern violations in 5 routers; admin delete transaction; graceful-shutdown gaps
+6. **P2 debt** — ✅ **jsonb → normalized table DONE** (`progress_questions`, migrations 0043/0044, O(1) upsert, index-backed anti-farm gate; backfill verified idempotent on real db); ✅ repository-pattern restored (admin/analytics/cron repositories; admin delete now single CTE); ✅ graceful-shutdown registry; ✅ duel join caps (M-9); ⋯ *open:* Octagon `lastReactionTime` leak, duel caps beyond join limit
 7. **P3 tests** — 8 routers + middlewares without direct tests; repository coverage (payments/promo/referral paths first)
 8. **Features** — Marathon mode (foundation now stronger post-anti-farm work), shareable certificates, Coins/Battle Pass, Octagon cup, group leaderboards, AI explanation backfill, cheat detection
 9. **Low batch** — Gemini key → `x-goog-api-key` header, admin stats Tashkent timezone, email enumeration, `telegram_login_codes` cleanup cron, ~59 hardcoded hex colors, modal a11y, OAuth stubs, merge `index.ts`/`standalone.ts`, drop `pdf-parse`, untrack `api/*.js`

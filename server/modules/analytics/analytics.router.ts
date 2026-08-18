@@ -8,8 +8,7 @@ import { z } from 'zod'
 import { wrap } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 import { rateLimit } from '../../middleware/rate-limiter'
-import { db } from '../../db/connection'
-import { analyticsEvents } from '../../schema'
+import { analyticsRepository } from './analytics.repository'
 import { parseUserId } from '../../utils/parse'
 
 const router = Router()
@@ -31,7 +30,7 @@ router.post(
     const { event, props } = req.body as z.infer<typeof EventSchema>
     const authUserId = (req as { userId?: string }).userId
     const uid = authUserId ? parseUserId(authUserId) : null
-    await db.insert(analyticsEvents).values({ userId: uid ?? null, event, props })
+    await analyticsRepository.insertEvent(uid ?? null, event, props)
     res.status(204).end()
   }),
 )

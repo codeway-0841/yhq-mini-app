@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense, useState } from 'react'
+import { useEffect, lazy, Suspense, useRef, useState } from 'react'
 import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom'
 import { useAppStore } from './shared/store/useAppStore'
 import { useQuestionsStore } from './shared/store/useQuestionsStore'
@@ -73,10 +73,22 @@ function Layout() {
   // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
   useEffect(() => bindAppBackButton(!atHome, () => window.history.back()), [atHome])
 
+  // Sahifa o'tishida scroll reset + transition — key={pathname} EMAS (audit L11b):
+  // key har navigatsiyada BUTUN sahifani REMOUNT qilardi (komponent state'lari
+  // yo'qolardi); animation endi class restart bilan (remount'siz, perf saqlanadi).
+  const pageRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const el = pageRef.current
+    if (!el) return
+    el.scrollTop = 0
+    el.classList.remove('route-page')
+    void el.offsetWidth            // reflow — CSS animatsiyani qayta boshlaydi
+    el.classList.add('route-page')
+  }, [location.pathname])
+
   return (
     <div className="flex flex-col min-h-screen bg-canvas text-fg">
-      {/* key=pathname → sahifa almashganda yo'mshoq transition + scroll reset */}
-      <div key={location.pathname} className="route-page flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
+      <div ref={pageRef} className="route-page flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />

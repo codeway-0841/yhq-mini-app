@@ -175,7 +175,7 @@ export default function TestPage() {
     return isResumable(snap, sessionKey, subjectId)
       ? remainingSeconds(snap.startedAt, totalSeconds)
       : totalSeconds
-    // eslint-disable-next-line react-hooks/exhaustive-deps — location.key: yangi urinishda qayta hisoblash
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- location.key: yangi urinishda qayta hisoblash
   }, [location.key, sessionKey, subjectId, totalSeconds])
   const timer = useTimer(handleTimeUp, location.key, initialSeconds)
 
@@ -202,7 +202,7 @@ export default function TestPage() {
       setToast(tt('sessionResumed'))
       setTimeout(() => setToast(null), 3000)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps — tt startIndex/len o'zgarishlarida yetarli
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
 
   // ── Anti-Cheat: Rasmiy imtihonda tab switch / blur / background aniqlash ──
@@ -410,7 +410,7 @@ export default function TestPage() {
       settings.language,
       tt('topicGeneral'),
     ),
-    // eslint-disable-next-line react-hooks/exhaustive-deps — tt til o'zgarishi bilan yangilanadi
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- tt til o'zgarishi bilan yangilanadi
     [activeQuestions, answers, storeTopics, settings.language],
   )
 

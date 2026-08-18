@@ -35,11 +35,12 @@ router.get(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    const [user, prog, sett, saved] = await Promise.all([
+    const [user, prog, sett, saved, solvedKeys] = await Promise.all([
       usersRepository.findById(uid),
       progressRepository.findByUserId(uid),
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
+      progressRepository.listSolvedKeys(uid),   // P2: jsonb o'rniga jadval
     ])
 
     if (!user) throw new AppError(404, 'User not found')
@@ -48,7 +49,7 @@ router.get(
 
     res.json({
       user:           toApiUser(user),
-      progress:       toApiProgress(prog),
+      progress:       toApiProgress(prog, solvedKeys),
       settings:       toApiSettings(sett),
       savedQuestions: saved,
     })

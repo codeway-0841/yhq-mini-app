@@ -22,6 +22,15 @@ export default function ResetPasswordPage() {
 
   const token = searchParams.get('token') ?? (typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('token') : null)
 
+  // Auto-redirect on success — EARLY RETURN'lardan OLDIN deklaratsiya qilinishi shart
+  // (react-hooks/rules-of-hooks: hook'lar har render'da bir xil tartibda bo'lishi kerak)
+  useEffect(() => {
+    if (success) {
+      const timeoutId = setTimeout(() => navigate('/'), 3000)
+      return () => clearTimeout(timeoutId)
+    }
+  }, [success, navigate])
+
   if (!token) {
     return (
       <div className="min-h-screen bg-canvas flex items-center justify-center px-6">
@@ -67,14 +76,6 @@ export default function ResetPasswordPage() {
       setBusy(false)
     }
   }
-
-  // Auto-redirect on success
-  useEffect(() => {
-    if (success) {
-      const timeoutId = setTimeout(() => navigate('/'), 3000)
-      return () => clearTimeout(timeoutId)
-    }
-  }, [success, navigate])
 
   if (success) {
     return (

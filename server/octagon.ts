@@ -32,6 +32,7 @@ import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } fro
 import { getProvider } from './providers'
 import { progressRepository } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
+import { registerInterval } from './utils/shutdown'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -71,12 +72,14 @@ function joinAttemptAllowed(userId: string): boolean {
 }
 
 // Stale yozuvlarni davriy tozalash (WS instance uzoq yashashi mumkin)
-setInterval(() => {
+const joinAttemptsSweepTimer = setInterval(() => {
   const cutoff = Date.now() - JOIN_ATTEMPT_WINDOW_MS
   for (const [uid, rec] of joinAttempts) {
     if (rec.windowStart < cutoff) joinAttempts.delete(uid)
   }
-}, JOIN_ATTEMPT_WINDOW_MS).unref?.()
+}, JOIN_ATTEMPT_WINDOW_MS)
+joinAttemptsSweepTimer.unref?.()
+registerInterval(joinAttemptsSweepTimer)   // graceful shutdown (FIXPLAN #21)
 
 
 /**
@@ -639,6 +642,7 @@ export function attachOctagon(
       client.ping()
     }
   }, L.heartbeatMs)
+  registerInterval(heartbeat)   // wss 'close' ham tozalaydi; shutdown registry esa Node process'dan chiqishda sog'lom optimum
   wss.on('close', () => clearInterval(heartbeat))
 
   wss.on('connection', (ws: WebSocket, req: IncomingMessage) => {

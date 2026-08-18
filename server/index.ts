@@ -14,16 +14,23 @@ import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
 import { attachOctagon, loadOctagonPools } from './octagon'
+import { stopAllIntervals } from './utils/shutdown'
 
 const app    = createApp()
 const server = http.createServer(app)
 const wss    = new WebSocketServer({ server, path: '/ws/octagon', maxPayload: 16 * 1024 })
 
-/** Graceful shutdown — close listeners, finish in-flight requests, exit. */
+/** Graceful shutdown — close listeners, finish in-flight requests, exit.
+ *  (FIXPLAN #21): (a) modul interval'lari (join-sweep, bot login-cleanup,
+ *  heartbeat) `stopAllIntervals` bilan to'xtatiladi; (b) WS clients → wss →
+ *  http server CLOSE TARTIBI socket'lar "Server shutting down" sababin olishi
+ *  uchun shunday; (c) Neon HTTP pool'siz per-request driver — DB close KERAK
+ *  EMAS (db/connection.ts hujjati). */
 function shutdown(signal: string): void {
   console.log(`\n${signal} received — shutting down gracefully...`)
+  stopAllIntervals()                                    // (a) modul timmerlari
   for (const client of wss.clients) client.close(1001, 'Server shutting down')
-  wss.close()
+  wss.close()                                           // → heartbeat clear ('close' handler)
   server.close(() => {
     console.log('Server closed')
     process.exit(0)

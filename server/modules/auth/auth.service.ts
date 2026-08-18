@@ -149,17 +149,18 @@ async function issueSession(userId: string, provider: AuthProvider): Promise<str
 
 /** To'liq profile + ulangan provider'lar (login/me/link javoblarining umumiy tanasi). */
 async function buildAuthSession(userId: string) {
-  const [user, prog, sett, saved, providers] = await Promise.all([
+  const [user, prog, sett, saved, providers, solvedKeys] = await Promise.all([
     usersRepository.findById(userId),
     progressRepository.findByUserId(userId),
     settingsRepository.findByUserId(userId),
     savedRepository.findByUserId(userId),
     authRepository.listUserProviders(userId),
+    progressRepository.listSolvedKeys(userId),   // P2: jsonb o'rniga jadval
   ])
   if (!user || !prog || !sett) throw new AppError(500, 'auth_profile_incomplete')
   return {
     user:           toApiUser(user),
-    progress:       toApiProgress(prog),
+    progress:       toApiProgress(prog, solvedKeys),
     settings:       toApiSettings(sett),
     savedQuestions: saved,
     providers,

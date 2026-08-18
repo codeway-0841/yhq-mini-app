@@ -84,19 +84,18 @@ export const progressRepository = {
           -- 1) clientToken replay YOKI token yo'q — o'tadi;
           (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok))
           -- 2) ANTI-FARM: ilgari TO'G'RI javob berilgan savolga takroriy
-          --    to'g'ri javob counterlarga YOZILMAYDI (post-answer reveal'dan
-          --    keyin bir xil savolni qayta "to'g'ri"lab total_correct/streak
-          --    ko'paytirish mumkin edi — endi idempotent "duplicate").
-          --    Xato javoblar yozilishda qoladi (takroriy mashq real o'rganish).
-          --    Eslatma: solved_questions "har qanday javob"ni bildiradi,
-          --    gate FAQAT correct_questions'ga tayanadi.
+          --    to'g'ri javob counterlarga YOZILMAYDI. P2 (audit): gate endi
+          --    progress_questions jadvaliga tayanadi (jsonb correct_questions
+          --    o'rniga O(1) index EXISTS — quadratic rewrite yo'q).
           AND NOT (
             ${correct}
-            AND ${qKey}::text IS NOT NULL
+            AND ${questionId}::int IS NOT NULL
             AND EXISTS (
-              SELECT 1 FROM progress
-              WHERE user_id = ${userId}
-                AND COALESCE(correct_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text)
+              SELECT 1 FROM progress_questions pq
+              WHERE pq.user_id = ${userId}
+                AND pq.subject_id = ${subjectId}
+                AND pq.question_id = ${questionId}::int
+                AND pq.correct
             )
           )
           -- 3) H-3: kunlik kredit (DAILY_ANSWER_CREDIT) — farming kunlik chegarasi
@@ -124,19 +123,22 @@ export const progressRepository = {
               (COALESCE((COALESCE(wrong_by_ticket, '{}'::jsonb)->>${qKey}::text)::int, 0) + 1)::text::jsonb
             )
           END,
-          solved_questions = CASE
-            WHEN ${qKey}::text IS NULL THEN COALESCE(solved_questions, '[]'::jsonb)
-            WHEN COALESCE(solved_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text) THEN COALESCE(solved_questions, '[]'::jsonb)
-            ELSE COALESCE(solved_questions, '[]'::jsonb) || jsonb_build_array(${qKey}::text)
-          END,
-          correct_questions = CASE
-            WHEN NOT ${correct} OR ${qKey}::text IS NULL THEN COALESCE(correct_questions, '[]'::jsonb)
-            WHEN COALESCE(correct_questions, '[]'::jsonb) @> jsonb_build_array(${qKey}::text) THEN COALESCE(correct_questions, '[]'::jsonb)
-            ELSE COALESCE(correct_questions, '[]'::jsonb) || jsonb_build_array(${qKey}::text)
-          END,
+          -- P2: solved/correct jsonb massivlar endi YOZILMAYDI — q_write CTE
+          -- progress_questions jadvaliga O(1) upsert qiladi.
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
         RETURNING id
+      ), q_write AS (
+        -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
+        -- correct bir marta true bo'lsa orqaga qaytmaydi (anti-farm gate manbai).
+        INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at)
+        SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now()
+        WHERE ${questionId}::int IS NOT NULL
+          AND EXISTS (SELECT 1 FROM prog)
+        ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
+          SET correct = progress_questions.correct OR EXCLUDED.correct,
+              answered_at = now()
+        RETURNING user_id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
         -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
@@ -194,7 +196,19 @@ export const progressRepository = {
     }).where(eq(progress.userId, userId))
   },
 
+  /** Profil API uchun yechilgan savollar ro'yxati (`${subjectId}:${questionId}` format — client kontrakti o'zgarmaydi) */
+  async listSolvedKeys(userId: string): Promise<string[]> {
+    const rows = await executeRows<{ k: string }>(sql`
+      SELECT subject_id || ':' || question_id AS k
+      FROM progress_questions
+      WHERE user_id = ${userId}
+    `)
+    return rows.map((r) => r.k)
+  },
+
   async reset(userId: string): Promise<void> {
+    // P2: progress_questions jadvali ham tozalanadi (jsonb ustunlar bilan birga)
+    await executeRows(sql`DELETE FROM progress_questions WHERE user_id = ${userId}`)
     await db.update(progress).set({
       totalCorrect:    0,
       totalWrong:      0,

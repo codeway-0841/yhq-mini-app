@@ -36,15 +36,17 @@ export function toApiUser(row: UserRow) {
 type ProgressRow = typeof progress.$inferSelect
 type SettingsRow = typeof userSettings.$inferSelect
 
-/** Drop the userId — the client already knows who it asked about. */
-export function toApiProgress(row: ProgressRow) {
+/** Drop the userId — the client already knows who it asked about.
+ *  P2: `solvedQuestions` endi `progress_questions` jadvalidan keladi (jsonb emas) —
+ *  caller `progressRepository.listSolvedKeys()` natijasini uzatadi (client kontrakti o'zgarmaydi). */
+export function toApiProgress(row: ProgressRow, solvedKeys: string[] = []) {
   return {
     totalCorrect:    row.totalCorrect,
     totalWrong:      row.totalWrong,
     totalAnswered:   row.totalAnswered,
     streak:          row.streak,
     wrongByTicket:   row.wrongByTicket,
-    solvedQuestions: row.solvedQuestions ?? [],
+    solvedQuestions: solvedKeys,
   }
 }
 
@@ -114,11 +116,12 @@ export const usersService = {
     // idempotent — middleware initData resolve'si DB'siz shunga tayanadi)
     await authRepository.ensureIdentity('telegram', uid, uid)
 
-    const [user, prog, sett, saved] = await Promise.all([
+    const [user, prog, sett, saved, solvedKeys] = await Promise.all([
       usersRepository.findById(uid),
       progressRepository.findByUserId(uid),
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
+      progressRepository.listSolvedKeys(uid),   // P2: jsonb o'rniga jadval
     ])
 
     // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
@@ -143,7 +146,7 @@ export const usersService = {
     if (!user || !prog || !sett) throw new AppError(500, 'init_incomplete')
     return {
       user:           toApiUser(user),
-      progress:       toApiProgress(prog),
+      progress:       toApiProgress(prog, solvedKeys),
       settings:       toApiSettings(sett),
       savedQuestions: saved,
     }

@@ -302,7 +302,7 @@ export const paymentOrders = pgTable('payment_orders', {
   updatedAt:       timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   index('idx_payment_orders_user').on(t.userId, t.createdAt),
-  index('idx_payment_orders_order_id').on(t.orderId),
+  // orderId UNIQUE → uning o'z implicit index'i bor (duplikat idx o'chirildi, migration 0045)
 ])
 
 export const progress = pgTable('progress', {
@@ -313,10 +313,11 @@ export const progress = pgTable('progress', {
   totalAnswered: integer('total_answered').default(0).notNull(),
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
+  /** @deprecated P2 (audit): jsonb massivlar quadratic rewrite edi — endi
+   *  `progress_questions` jadvalida (O(1) upsert). Ustunlar eski data uchun
+   *  saqlanadi, endi YOZILMAYDI (backfill: migration 0043). */
   solvedQuestions: jsonb('solved_questions').$type<string[]>().default([]).notNull(),
-  /** FAQAT to'g'ri javob berilgan savollar (`${subjectId}:${questionId}`) —
-   *  solved_questions "har qanday javob"ni, bu esa anti-farm replay gate'ini
-   *  (takroriy to'g'ri javob counter yozmaydi) ta'minlaydi. */
+  /** @deprecated `progress_questions.correct = true` ishlatiladi (anti-farm gate) */
   correctQuestions: jsonb('correct_questions').$type<string[]>().default([]).notNull(),
   /** @deprecated Streak endi `daily_streaks` jadvalida (fan bo'yicha). Ustun eski migratsiyalar bilan moslik uchun saqlanadi. */
   dailyStreak:   integer('daily_streak').default(0).notNull(),
@@ -338,6 +339,21 @@ export const progress = pgTable('progress', {
   check('chk_progress_sum', sql`${t.totalAnswered} = ${t.totalCorrect} + ${t.totalWrong}`),
   // Registrydan tashqari liga qiymati yozilmasligi kerak (LEAGUE_ORDER bilan sinxron)
   check('chk_progress_league', sql`${t.league} IN ('bronze', 'silver', 'gold', 'platinum')`),
+])
+
+// P2 (audit): jsonb massivlar (solved/correct_questions) quadratic rewrite
+// edi — har javobda BUTUN massiv qayta yozilardi. Normalizatsiya: har javob
+// O(1) upsert; anti-farm gate index orqali EXISTS.
+export const progressQuestions = pgTable('progress_questions', {
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  subjectId:  text('subject_id').notNull(),
+  questionId: integer('question_id').notNull(),
+  /** Qachonlardir TO'G'RI yechilganmi (anti-farm gate: replay to'g'ri javob ball yozmaydi). Bir marta true bo'lsa orqaga qaytmaydi. */
+  correct:    boolean('correct').default(false).notNull(),
+  answeredAt: timestamp('answered_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.userId, t.subjectId, t.questionId] }),
+  index('idx_progress_questions_user').on(t.userId, t.subjectId),
 ])
 
 export const userSettings = pgTable('settings', {

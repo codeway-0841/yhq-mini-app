@@ -1,0 +1,1 @@
+DROP INDEX "idx_payment_orders_order_id";

@@ -8,6 +8,7 @@ import { config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
 import { parseReferralParam } from '../utils/parse'
+import { registerInterval } from '../utils/shutdown'
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')
@@ -37,6 +38,7 @@ const loginCodeCleanupTimer = setInterval(() => {
   }
 }, 5 * 60_000)
 loginCodeCleanupTimer.unref?.()
+registerInterval(loginCodeCleanupTimer)   // graceful shutdown (FIXPLAN #21)
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 

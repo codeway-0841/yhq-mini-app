@@ -60,7 +60,7 @@
   LOCKED) RETURNING *` → so'ng yuborish → `sent`/`failed`.
   (status enum'ga 'sending' qo'shish kerak — schema + migratsiya).
 
-- [ ] **8. M-5 — broadcast'ni umumiy primitive'ga ko'chirish**
+- [x] **8. M-5 — broadcast'ni umumiy primitive'ga ko'chirish**
   `server/modules/admin/broadcast.service.ts:62-74,178-221` — butun users
   jadvali xotiraga olinadi, 25/soniya sleep'lar, 30s'da jimgina qisman
   yuboriladi (~500-700 ta), davom ettirish yo'q. Fix: M-4'dagi claim-chunk
@@ -69,7 +69,7 @@
   `jobRuns`-asosli offset). Bonus: `notificationsEnabled` sozlamasiga hurmat
   (`tournament-prize.service.ts:101`da `sql\`true\`` hardcoded — olib tashlash).
 
-- [ ] **9. H-3 / H4 — ball farming product qarori**
+- [x] **9. H-3 / H4 — ball farming product qarori**
   `server/modules/progress/progress.repository.ts` — yangi UNIkal savollarga
   cheksiz javob `total_correct`/`daily_records`/liga ballini oshiradi.
   Tavsiya (TODO.md variant 1): kunlik kredit — yangi jadval
@@ -95,7 +95,7 @@
   (VALUES ...) v WHERE id = v.id AND league = v.from` yoki 200-li chunk'lar.
   `sort((a,b)=>score-score)`ga `userId` tiebreaker (recovery'da turli natija).
 
-- [ ] **12. M-8 — TG login kod phishing'ga qarshi tasdiq**
+- [x] **12. M-8 — TG login kod phishing'ga qarshi tasdiq**
   `server/api-entry/bot.ts:115-129` + `auth.service.ts:1009-1027` — hujumchi
   `login_<code>` yaratib qurbonga yuboradi; qurbon kontakt ulasa, hujumchi
   brauzeri sessiya tokenini oladi. Fix: bot kontakt so'rashdan OLDIN
@@ -149,7 +149,7 @@
 
 ## PART 4 — P2 texnik qarz
 
-- [ ] **18. jsonb → jadval (ENG KATTA scalability item)**
+- [x] **18. jsonb → jadval (ENG KATTA scalability item)**
   `progress.solved_questions` / `correct_questions` — har javobda butun massiv
   qayta yoziladi; minglab elementda kvadratik. Fix: yangi jadval
   `solved_questions (user_id, subject_id, question_id, is_correct, first_at)`
@@ -164,14 +164,14 @@
   duel bo'lmasin — allaqachon `already_in_match` bor, lekin tarixiy duels
   konteksti tozalanishini tekshir).
 
-- [ ] **20. Repository pattern restavratsiyasi**
+- [x] **20. Repository pattern restavratsiyasi**
   5 routerda SQL to'g'ridan routerda (aniq ro'yxat: `admin.router.ts` bir necha
   `executeRows`, `cron.router.ts`, `leaderboard.router.ts`, `daily.router.ts`,
   `analytics.router.ts` — grep `executeRows|db\.` router fayllarida). Har birini
   mos `.repository.ts`ga ko'chirish. Admin DELETE (questions) — tranzaksiya yoki
   bitta CTE.
 
-- [ ] **21. Graceful shutdown gaplari**
+- [x] **21. Graceful shutdown gaplari**
   `server/index.ts`/`standalone.ts` — shutdown'da: (a) ichki interval/taymerlar
   (provider cache, octagon heartbeat) to'xtatilishi; (b) `server.close`dan
   keyin `wss` clients'ga close yuborish tartibi; (c) Neon HTTP uchun nima qilish
@@ -192,11 +192,11 @@
 - [x] **24. `users.phone` indeksi/kommenti**
   `server/schema.ts:49` — `CREATE INDEX idx_users_phone ON users(phone)`.
 
-- [ ] **25. Duplikat indeks**
+- [x] **25. Duplikat indeks**
   Migratsiyada `idx_payment_orders_order_id` UNIQUE constraint index'ini
   takrorlaydi (0037:41) — keyingi migratsiyada drop.
 
-- [ ] **26. App.tsx remount + content/ lazy**
+- [x] **26. App.tsx remount + content/ lazy**
   `src/App.tsx:79` — `key={location.pathname}` butun sahifani har navigatsiyada
   remount qiladi; faqat CSS transition uchun klass yechimi. `src/content/`
   (888KB statik JSON) asosiy bundle'da — fan ochilganda `import()` bilan
@@ -214,7 +214,7 @@
   `npx tsc --noEmit -p tsconfig.tests.json` qadamı — test fayllaridagi tip
   xatolari CI'da ushlanadi (hozir faqat runtime'da).
 
-- [ ] **29. Repository qamrovi (eng qimmatli yo'llar)**
+- [x] **29. Repository qamrovi (eng qimmatli yo'llar)**
   `payment.repository` (complete CTE holatlari), `promo.repository` (redeem
   poyga/cap), `users.repository` (rewardIfPhoneLinked/createPending) —
   integration testlar allaqachon bor, unit-darajada CTE oqimlarini yopish.
@@ -223,7 +223,7 @@
 
 - [x] **30.** `pdf-parse` + `@types/pdf-parse` dependensiya'dan olib tashlash
   (birorta import yo'q).
-- [ ] **31.** `api/index.js`, `api/bot.js`ni git'dan chiqarish
+- [x] **31.** `api/index.js`, `api/bot.js`ni git'dan chiqarish
   (`git rm --cached`; vercel-build har deploy'da qayta quradi — .gitignore'ga
   `api/*.js`? DIQQAT: Vercel functions repo'dagi faylga ishora qiladi,
   vercel.json `functions` konfigi — buildCommand bor, xavfsiz, lekin tekshir).
@@ -231,13 +231,13 @@
   `telegramUserId` fallback shoxini olib tashlash.
 - [x] **33.** `.env.example` — `BOT_USERNAME="kiwi_bot"` → `"kiwi_uz_bot"`
   (haqiqiy bot); `AGENTS.md` — `npm test` tavsifini `test:unit`ga moslash.
-- [ ] **34.** ESLint o'rnatish (flat config + `typescript-eslint` +
+- [x] **34.** ESLint o'rnatish (flat config + `typescript-eslint` +
   `react-hooks` plugin) — `eslint-disable` kommentlar hozir o'lik. `npm run
   lint` + CI'ga qo'shish.
 - [x] **35.** ~59 qattiq kodlangan hex rang → tokenlar (design qoida №8;
   `LeaderboardPage.tsx:18-22,63-65`, Onboarding, RoundScreen...). Modal a11y:
   umumiy Sheet (focus-trap, Escape, `role="dialog"`).
-- [ ] **36.** OAuth stub qarori: route'larni o'chirish YOKI `available:false`
+- [x] **36.** OAuth stub qarori: route'larni o'chirish YOKI `available:false`
   flag bilan frontend'da yashirish (auth.service.ts:1070,1080 hali 501).
 
 ## PART 7 — Featurelar (product tartibida)
@@ -292,3 +292,5 @@
 - ✅ **M-9 tugallangan**: 6+ xonali kod YETARLI EMAS edi — `joinDuel` per-user brute-force limiti (60s/8 urinish → `duel_join_rate_limited`) `server/octagon.ts`
 - ✅ **IKKINCHI PAKET (qolgan ishlar)**: **H-3** — kunlik javob krediti `DAILY_ANSWER_CREDIT = 1000` (progress.repository CTE'da credit gate; cap'dan keyin jimgina duplicate no-op; `security-critical.test.ts` +2 test). **M-5** — broadcast endi chunked-kampaniya: `tg-broadcast.service.ts` + `tg_broadcasts`/`tg_broadcast_recipients` jadvallari (migration 0042), audience snapshot SOF SQL INSERT…SELECT (users jadvali JS'ga UMUMAN yuklanmaydi), 25/chunk SKIP LOCKED claim, photo file_id kesh, crash/timeout'dan keyin DB-dan RESUME; admin UI — progress bar'li chunk loop (upload-resimi bulk'da URL rejimini talab qiladi); `server/utils/tg-send.ts` (testlar shu modulni mock qiladi). **M-8** — TG-login kodi phishing'ga qarshi in-bot tasdiqlash: contact ulanganda sessiya BOG'LANMAYDI — "Brauzerdan kirish so'raldi, bu sizmisiz?" ✅/❌ tugmalari; faqat `tglogin_ok` callback sessiya yaratadi. **M-4 residual** — `claimed_at` ustuni (migratsiya 0041) + 10 daqiqadan eski `'sending'` qatorlarni qayta claim (sms + tg-broadcast'da). **LOW batch**: Gemini kaliti `x-goog-api-key` header (tutor + ai-question-generator), admin today-active `Asia/Tashkent`, `pdf-parse` o'chirilgan, `api/*.js` untrack+gitignore, `standalone.ts`/`index.ts` birlashtirildi (`/health` alias app.ts'da; render.yaml → `server/dist/index.js`), `loginPendingCodes` TTL sweep, `__APP_VERSION__` = env/package (reproducible build), TestPage cheat-strike effektlar updater'dan alohida effect'ga ko'chirildi (L11, StrictMode double-fire yo'q).
 - **Verifikatsiya:** tsc ×2 ✓, unit **414/414** ✓, integration **106/106** ✓ (real Neon: tg-broadcast race/snapshot/stale, H-3 credit cap), vite build ✓, `server/dist/index.js` boot + `/health` + `/api/ready` 200 ✓
+- ✅ **TEXNIK QARZ partiyasi (FIXPLAN #18-36)**: **P2 (18)** — `solved_questions`/`correct_questions` jsonb massivlar (har javobda QUADRATIC rewrite) → `progress_questions` jadvali (migratsiya 0043 + backfill 0044 — ikkalasi real DB'da isbotlangan, idempotent): PK (user, subject, question), `correct` flag anti-farm gate'ga index-EXISTS orqali xizmat qiladi; recordAnswer CTE `q_write` O(1) upsert; `toApiProgress(prog, solvedKeys)` client kontrakti o'zgarmagan (init/profile/buildAuthSession/reset — hammasi jadvalga o'tdi). **Repo pattern (20)** — yangi `admin.repository.ts` (savol CRUD, max-id, stats, users qidiruv, grant), `analytics.repository.ts`; `cron.repository` ga reminder/league/cleanup so'rovlari ko'chirildi; admin DELETE endi BITTA CTE (saved+explanations+question atomik). **Shutdown (21)** — `utils/shutdown.ts` interval registry (bot login cleanup, octagon join-sweep, heartbeat); index.ts shutdown tartibi + Neon HTTP no-op hujjati. **Dup index (25)** — migratsiya 0045 (`DROP INDEX idx_payment_orders_order_id` — UNIQUE constraint'ning o'z index'i bor). **App.tsx (26)** — `key={pathname}` REMOUNT holati o'chirildi: scroll reset + CSS animation restart `pageRef` orqali (sahifa component state'lari endi saqlanadi); content/ allaqachon route-split lazy chunk'larda (56K lessons Darslik chunk'ida, asosiy bundle'dan tashqarida). **ESLint (34)** — flat config + `typescript-eslint` + `react-hooks` (faqat rules-of-hooks error + exhaustive-deps warn; yangi compiler-era qoidalar OFF — mavjud kod bilan); ResetPasswordPage'dagi HAQIQIY hooks violation tuzatildi (early return'dan keyingi useEffect); 3 ta busted eslint-disable comment (`—` vs `--`); CI `check` job'iga Lint qadami qo'shildi. **OAuth (36)** — stub endpoint'lar endi `{available:false}` 501 (default 500 o'rniga aniq status). **Coverage (29)** — yangi `tests/integration/api/repo-coverage.test.ts` (9 test: referrals race/unique/stats, payment ghost-user, promo expiry, session hash assertion (DB'da sha256), OTP 8-race+single-use, trial 8-race) — avval faqat tinglovda bo'lgan race isbotlari endi repo'da doimiy test
+- **Verifikatsiya (qarz partiyasi):** tsc ×2 ✓, unit **414/414** ✓, integration **115/115** ✓ (12 fayl: repo-coverage +9), lint **0 error** ✓, vite build ✓, server boot + /health + /api/ready ✓
