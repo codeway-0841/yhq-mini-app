@@ -50,6 +50,9 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
         wrongByTicket: {},
         solvedQuestions: [],
       } as any)
+      // P2: buildAuthSession endi listSolvedKeys ham chaqiradi — mock'siz real DB'ga
+      // urinadi (CI'da DATABASE_URL=db.invalid → test yiqilardi)
+      vi.spyOn(progressRepository, 'listSolvedKeys').mockResolvedValue([])
       vi.spyOn(settingsRepository, 'findByUserId').mockResolvedValue({
         userId: 'p_998901234567',
         autoNextCorrect: true,
@@ -144,6 +147,7 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
         streak: 2,
         wrongByTicket: {},
       } as any)
+      vi.spyOn(progressRepository, 'listSolvedKeys').mockResolvedValue(['yhq:1', 'yhq:5'])
       vi.spyOn(settingsRepository, 'findByUserId').mockResolvedValue({
         userId: 'p_998901234567',
         autoNextCorrect: true,
