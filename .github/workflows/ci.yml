@@ -57,8 +57,20 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci --include=dev
-      - name: Install Playwright Browsers
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: pw-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      # Full install (system deps) FAQAT cache miss'da — ubuntu runner image'da
+      # lib'lar bor, har run'da apt'ga yopishish mirror sekinligida 15min timeout qiladi
+      - name: Install Playwright Browsers (full — cache miss)
+        if: steps.pw-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps chromium
+      - name: Install Playwright Browsers (cached)
+        if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: npx playwright install chromium
       - name: Run Playwright E2E tests
         run: npm run test:e2e
         env:
