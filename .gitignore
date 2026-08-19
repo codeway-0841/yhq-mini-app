@@ -10,10 +10,10 @@ dist
 .env*
 300_savol_javob_rasmlar/*
 !300_savol_javob_rasmlar/300_savol_javob.json
+# Bundled serverless artifacts — Vercel rebuilds each deploy via build:api (audit hygiene: stale-bundle git bloat)
+# NOTE: api/index.js va api/bot.js stub'lari TRACKED bo'lishi SHART — Vercel CLI 59+
+# vercel.json dagi `functions` pattern'larni buildCommand'dan OLDIN tekshiradi.
 api/dist/
-# Bundled serverless artifacts — Vercel rebuilds each deploy (audit hygiene: stale-bundle git bloat)
-api/index.js
-api/bot.js
 
 # video analysis temp
 video.mp4
