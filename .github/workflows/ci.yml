@@ -65,8 +65,15 @@ jobs:
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
       # Full install (system deps) FAQAT cache miss'da — ubuntu runner image'da
       # lib'lar bor, har run'da apt'ga yopishish mirror sekinligida 15min timeout qiladi
+      - name: Apt timeouts (o'lik mirror'da ilinib qolmaslik uchun)
+        if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: |
+          echo 'Acquire::http::Timeout "15";' | sudo tee /etc/apt/apt.conf.d/99ci-timeouts
+          echo 'Acquire::https::Timeout "15";' | sudo tee -a /etc/apt/apt.conf.d/99ci-timeouts
+          echo 'Acquire::Retries "3";' | sudo tee -a /etc/apt/apt.conf.d/99ci-timeouts
       - name: Install Playwright Browsers (full — cache miss)
         if: steps.pw-cache.outputs.cache-hit != 'true'
+        timeout-minutes: 10
         run: npx playwright install --with-deps chromium
       - name: Install Playwright Browsers (cached)
         if: steps.pw-cache.outputs.cache-hit == 'true'
