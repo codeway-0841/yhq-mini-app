@@ -72,6 +72,11 @@ export function createApp() {
   app.get('/api/health', healthHandler)
   app.get('/health', healthHandler)
 
+  // `/` root — uptime monitor/ping servislar (Render keep-alive dah) shu yerga uradi.
+  // SPA bu server'da serve QILINMAYDI (Vercel'da), shuning uchun route'siz 404 warn
+  // log'larni to'ldirardi; 200 'ok' — ping'lar xotirjam, log toza.
+  app.get('/', healthHandler)
+
   // Readiness — LIVENESS'dan farqli: DB ping + question pool loaded check.
   // Deploy/monitoring faqat ready nodeni tanlashi kerak (DB/pool yo'q bo'lsa 503).
   app.get('/api/ready', createReadinessHandler(async () => {

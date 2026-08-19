@@ -13,6 +13,12 @@ describe('API Health & Routing Endpoints', () => {
     expect(typeof res.body.uptime).toBe('number')
   })
 
+  it('GET / returns 200 OK (ping/monitor servislar uchun — SPA bu serverda emas)', async () => {
+    const res = await request(app).get('/')
+    expect(res.status).toBe(200)
+    expect(res.body).toHaveProperty('status', 'ok')
+  })
+
   it('GET /api/nonexistent-route returns 404 with error message', async () => {
     const res = await request(app).get('/api/nonexistent-endpoint-xyz')
     expect(res.status).toBe(404)
