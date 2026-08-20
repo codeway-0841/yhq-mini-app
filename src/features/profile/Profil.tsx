@@ -107,7 +107,7 @@ export default function Profil() {
   }
 
   const name   = displayName
-    ?? (user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : 'Foydalanuvchi')
+    ?? (user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : tt('guestName'))
   const userId = user?.id ?? '—'
 
   const copyId = () => {
@@ -117,10 +117,7 @@ export default function Profil() {
   }
 
   const handleReset = () => {
-    const msg = settings.language === 'ru'
-      ? 'Весь прогресс будет сброшен. Продолжить?'
-      : "Barcha progress o'chadi. Davom etasizmi?"
-    if (window.confirm(msg)) resetProgress()
+    if (window.confirm(tt('resetProgressConfirm'))) resetProgress()
   }
 
   const handleSync = () => {
@@ -191,7 +188,7 @@ export default function Profil() {
               ? <span className="text-[12px] text-psuccess">{user.phone}</span>
               : phoneLoading
                 ? <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
-                : <span className="text-[12px] text-muted">Qo'shish</span>
+                : <span className="text-[12px] text-muted">{tt('profileAddPhoneCta')}</span>
           }
           onPress={user?.phone || otpPhone ? undefined : handleAddPhone}
           disabled={phoneLoading || !!user?.phone || !!otpPhone}
@@ -333,7 +330,7 @@ export default function Profil() {
           onPress={() => navigate('/statistika')} />
 
         <Item icon={CreditCard} label={tt('payHistory')}
-          onPress={() => showToast("To'lovlar hali yo'q — barcha funksiyalar bepul")} />
+          onPress={() => showToast(tt('payHistoryEmpty'))} />
 
         <Item
           icon={WifiOff} label={tt('offlineMode')}
@@ -369,11 +366,11 @@ export default function Profil() {
         <Item icon={Star}      label={tt('rateApp')}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
         <Item icon={Share2}     label={tt('shareApp')}
-          onPress={() => shareUrl('https://t.me/kiwi_uz_bot', "YHQ imtihoniga tayyorlaning — ajoyib ilova! 🚗")} />
+          onPress={() => shareUrl('https://t.me/kiwi_uz_bot', tt('shareAppText'))} />
         <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(promptAddToHomeScreen()
-            ? "Ilovani bosh ekranga qo'shing"
-            : "Bu Telegram versiyasida qo'llab-quvvatlanmaydi")} />
+            ? tt('installAppPrompt')
+            : tt('installAppUnsupported'))} />
       </Section>
 
       {/* Toast */}
@@ -388,7 +385,7 @@ export default function Profil() {
         <NameEditSheet
           current={name}
           onClose={() => setShowNameEdit(false)}
-          onSave={(n) => { setDisplayName(n); showToast('Ism saqlandi ✓') }}
+          onSave={(n) => { setDisplayName(n); showToast(tt('profileNameSaved')) }}
         />
       )}
 
@@ -402,7 +399,7 @@ export default function Profil() {
           busy={avatarBusy}
           onClose={() => setShowPhotoEdit(false)}
           onPick={() => fileRef.current?.click()}
-          onRemove={() => { setCustomAvatar(null); setShowPhotoEdit(false); showToast("Rasm o'chirildi") }}
+          onRemove={() => { setCustomAvatar(null); setShowPhotoEdit(false); showToast(tt('avatarRemovedToast')) }}
         />
       )}
 

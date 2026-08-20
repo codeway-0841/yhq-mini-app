@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { useAppStore } from '../../../shared/store/useAppStore'
+import { t } from '../../../shared/i18n'
 
 /** Galereyadagi rasmni 256px kvadrat WebP data URL'ga siqadi (localStorage uchun yengil). */
 function compressAvatar(file: File): Promise<string> {
@@ -35,6 +36,7 @@ export function useAvatarUpload({ showToast, closeSheet }: {
   showToast: (msg: string) => void
   closeSheet: () => void
 }) {
+  const lang = useAppStore((s) => s.settings.language)
   const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
   const [avatarBusy, setAvatarBusy] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
@@ -49,9 +51,9 @@ export function useAvatarUpload({ showToast, closeSheet }: {
       if (dataUrl.length > 500_000) throw new Error('too big')
       setCustomAvatar(dataUrl)
       closeSheet()
-      showToast('Rasm saqlandi ✓')
+      showToast(t(lang, 'avatarSavedToast'))
     } catch {
-      showToast("Rasm yuklab bo'lmadi. Boshqa rasm tanlang.")
+      showToast(t(lang, 'avatarUploadFailed'))
     } finally {
       setAvatarBusy(false)
     }

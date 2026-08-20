@@ -5,6 +5,8 @@
 import { useEffect, useReducer, useCallback, useRef, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
+import { useAppStore } from '../../../shared/store/useAppStore'
+import { t } from '../../../shared/i18n'
 import { getOctagonSocket, destroyOctagonSocket, type OctagonMsg, type ConnStatus } from '../../../shared/lib/octagon-ws'
 import { config }         from '../../../shared/config'
 import { track }          from '../../../shared/lib/analytics'
@@ -27,6 +29,7 @@ function wsAuthFields(): { initData?: string; sessionToken?: string } {
 
 export function useDuelConnection(user: DuelUser | null | undefined) {
   const location = useLocation()
+  const lang = useAppStore((s) => s.settings.language)
   const [s, dispatch] = useReducer(duelReducer, DUEL_INIT)
   const [conn, setConn] = useState<ConnStatus>('connecting')
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -57,7 +60,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       case 'match_end':        dispatch({ type: 'MATCH_END',    yourScore: msg.yourScore, oppScore: msg.oppScore, result: msg.result }); break
       case 'opp_disconnected': dispatch({ type: 'OPP_DISCONNECTED' }); break
       case 'opp_waiting':      dispatch({ type: 'OPP_WAIT', waitSeconds: msg.waitSeconds }); break
-      case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast('Raqib qaytdi'); break
+      case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast(t(lang, 'duelOpponentBack')); break
       case 'reaction': {
         const isYou = msg.senderId === userRef.current?.id
         if (msg.kind === 'phrase') {
@@ -106,7 +109,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
         if (phaseRef.current === 'searching') dispatch({ type: 'CANCEL' })
         break
     }
-  }, [showToast])
+  }, [showToast, lang])
 
   const [attempt, setAttempt] = useState(0)
   const userRef  = useRef(user)
@@ -233,9 +236,9 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       })
     } catch {
       dispatch({ type: 'CANCEL' })
-      showToast("Ulanishda xato. Qayta urinib ko'ring.")
+      showToast(t(lang, 'duelConnectError'))
     }
-  }, [showToast])
+  }, [showToast, lang])
 
   /** Do'st uchun duel link yaratish */
   const startDuel = useCallback(() => {
@@ -275,9 +278,9 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     try {
       getOctagonSocket(config.wsUrl).send({ type: 'answer', matchId: s.matchId, index: s.roundIndex, optionId })
     } catch {
-      showToast("Javob yuborilmadi. Aloqa yo'q.")
+      showToast(t(lang, 'duelAnswerFailed'))
     }
-  }, [s.matchId, s.selected, s.roundIndex, showToast])
+  }, [s.matchId, s.selected, s.roundIndex, showToast, lang])
 
   const sendReaction = useCallback((kind: 'emoji' | 'phrase' | 'prop', content: string) => {
     if (!s.matchId) return
