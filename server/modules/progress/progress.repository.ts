@@ -5,6 +5,7 @@
 import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress }            from '../../schema'
+import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
 /**
  * H-3 (audit, TODO H4 variant 1 — kunlik kredit): bitta user kuniga shu
@@ -55,7 +56,7 @@ export const progressRepository = {
     date:         string
     subjectId:    string
     clientToken?: string
-  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate' }> {
+  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
     const token = clientToken ?? null
     // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
@@ -65,7 +66,7 @@ export const progressRepository = {
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
-    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean }>(sql`
+    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -144,6 +145,25 @@ export const progressRepository = {
           SET correct = progress_questions.correct OR EXCLUDED.correct,
               answered_at = now()
         RETURNING user_id
+      ), coin_award AS (
+        -- FIXPLAN #40: coin MINT — FAQAT gate'dan o'tgan TO'G'RI javob uchun
+        -- (EXISTS prog: anti-farm gate, kunlik kredit va token replay'ning
+        -- BARCHASI coin'ni ham to'xtatadi — farming qiymati ball bilan birga
+        -- cheklangan). Consumable idempotency: 'answer'+clientToken ref —
+        -- replay'da prog yo'q → qayta mint yo'q (ledger ikki marta yozilmaydi).
+        INSERT INTO user_coins (user_id, balance, updated_at)
+        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}::int, now()
+        WHERE ${correct} AND EXISTS (SELECT 1 FROM prog)
+        ON CONFLICT (user_id) DO UPDATE SET
+          balance = user_coins.balance + ${COINS_PER_CORRECT_ANSWER}::int,
+          updated_at = now()
+        RETURNING balance
+      ), coin_ledger AS (
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', ${token}
+        WHERE ${correct} AND ${token}::text IS NOT NULL AND EXISTS (SELECT 1 FROM coin_award)
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
         -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
@@ -177,7 +197,8 @@ export const progressRepository = {
         (SELECT proceed FROM gate) AS proceed,
         (SELECT COUNT(*)::int FROM prog) AS prog_updated,
         (SELECT streak::int FROM streak_upsert) AS daily_streak,
-        EXISTS (SELECT 1 FROM tok) AS token_inserted
+        EXISTS (SELECT 1 FROM tok) AS token_inserted,
+        (SELECT balance::int FROM coin_award) AS coin_balance
     `)
 
     const row = rows[0]
@@ -185,16 +206,17 @@ export const progressRepository = {
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
       const existing = await this.findByUserId(userId)
-      if (!existing) return { updated: false, dailyStreak: null, duplicate: false }
+      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null }
       // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
       // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.
       const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
-      return { updated: true, dailyStreak: null, duplicate: true, reason }
+      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null }
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
     const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : (updated ? 1 : null)
-    return { updated, dailyStreak, duplicate: false }
+    const coinBalance = row?.coin_balance != null ? Number(row.coin_balance) : null
+    return { updated, dailyStreak, duplicate: false, coinBalance }
   },
 
   /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */

@@ -18,6 +18,11 @@ export const ApiUserSchema = z.object({
   phone:     z.string().nullable().optional(),
   tariff:    z.enum(['free', 'premium']),
   isAdmin:   z.boolean().optional(),
+  smsOptIn:  z.boolean().optional(),
+  // #40: coin iqtisodiyoti (do'kon) — server SSOT, client faqat ko'rsatadi
+  coins:      z.number().optional(),
+  ownedItems: z.array(z.string()).optional(),
+  avatarFrame: z.string().nullable().optional(),
 })
 
 export const ApiProgressSchema = z.object({

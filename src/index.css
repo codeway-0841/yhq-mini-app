@@ -326,6 +326,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
   --p-success:     #22c55e;
   --p-success-rgb: 34 197 94;
   --p-warning:     #f59e0b;
+  --p-warning-rgb: 245 158 11;
   --p-danger:      #ef4444;
   --p-purple:      #8b5cf6;   /* AI/Premium — ba'zi temalar override qiladi */
   --p-purple-rgb:  139 92 246;
@@ -442,6 +443,36 @@ body[data-theme='dark'][data-accent='payme'] {
   --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 0 192 201;
 }
 
+/* 🔴 Crimson — COIN-EKSKLYUZIV: chuqur qizil neon (do'kon temasi, #40) */
+body[data-theme='dark'][data-accent='crimson'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
+  --p-primary: #fb3748; --p-on-primary: #ffffff; --p-glow: rgba(251, 55, 72, 0.32); --p-primary-rgb: 251 55 72;
+  --p-purple: #fb7185; --p-purple-rgb: 251 113 133;
+  --p-canvas: #170a0e; --p-surface: #220f15; --p-card: #2a1119; --p-line: #421c27;
+  --theme-canvas: #170a0e; --theme-surface: #220f15; --theme-elevated: #2a1119; --theme-line: #421c27;
+}
+
+/* 👑 Royal — COIN-EKSKLYUZIV: chuqur indigo shohona (do'kon temasi, #40) */
+body[data-theme='dark'][data-accent='royal'] {
+  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
+  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
+  --p-primary: #818cf8; --p-on-primary: #12123a; --p-glow: rgba(129, 140, 248, 0.32); --p-primary-rgb: 129 140 248;
+  --p-purple: #c084fc; --p-purple-rgb: 192 132 252;
+  --p-canvas: #0a0a18; --p-surface: #111126; --p-card: #181a35; --p-line: #282b52;
+  --theme-canvas: #0a0a18; --theme-surface: #111126; --theme-elevated: #181a35; --theme-line: #282b52;
+}
+
+/* 🧊 Arctic — COIN-EKSKLYUZIV YORUG' atmosfera (sakura kabi light-only dizayn) */
+body[data-accent='arctic'] {
+  --p-primary: #0ea5e9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 14 165 233;
+  --p-canvas: #f0f9ff; --p-surface: #e0f2fe; --p-card: #ffffff; --p-line: #c2e4f6;
+  --p-fg: #0c2536; --p-muted: #3f627a; --p-subtle: #7b9db4;
+  --theme-canvas: #f0f9ff; --theme-surface: #ffffff; --theme-elevated: #e0f2fe;
+  --theme-fg: #0c2536; --theme-fg-muted: #3f627a; --theme-fg-subtle: #7b9db4;
+  --theme-line: #c2e4f6; --theme-line-strong: #9bd2ee; --theme-shadow: #c8e3f2;
+}
+
 /* ── LIGHT rejim + premium tema: atmosfera o'rniga FAQAT aksent rang ─────────
    (light fon saqlanadi; aksent kontrast uchun biroz to'qlashtirilgan) */
 body[data-theme='light'][data-accent='aurora'] {
@@ -485,6 +516,17 @@ body[data-theme='light'][data-accent='payme'] {
   --p-canvas: #e6fafb; --p-surface: #d4f4f6; --p-card: #ffffff; --p-line: #b3e8eb;
   --theme-canvas: #e6fafb; --theme-surface: #d4f4f6; --theme-elevated: #ffffff; --theme-line: #b3e8eb;
 }
+body[data-theme='light'][data-accent='crimson'] {
+  --p-primary: #e11d48; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 225 29 72;
+  --p-canvas: #fff1f2; --p-surface: #ffe4e6; --p-card: #ffffff; --p-line: #f6c6ce;
+  --theme-canvas: #fff1f2; --theme-surface: #ffe4e6; --theme-elevated: #ffffff; --theme-line: #f6c6ce;
+}
+body[data-theme='light'][data-accent='royal'] {
+  --p-primary: #6366f1; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 99 102 241;
+  --p-canvas: #eef0ff; --p-surface: #dfe3ff; --p-card: #ffffff; --p-line: #c2c8f8;
+  --theme-canvas: #eef0ff; --theme-surface: #dfe3ff; --theme-elevated: #ffffff; --theme-line: #c2c8f8;
+}
+body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shartsiz blok yetarli (sakura kabi) */ }
 
 
 /* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
@@ -604,6 +646,83 @@ body[data-theme='light'][data-accent='payme'] .dashboard-page {
     radial-gradient(130% 420px at 50% 0px, #00767c 0%, #00c0c9 35%, #38dbe3 65%, transparent 100%),
     linear-gradient(180deg, #00767c 0px, #008f96 100px, #00c0c9 190px, #38dbe3 280px, #a5f3f7 360px, #cffafe 430px, #e6fafb 500px, #e6fafb 100%);
   background-repeat: no-repeat;
+}
+
+/* 🔴 Crimson (coin) */
+body[data-theme='light'][data-accent='crimson'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #9f1239 0%, #e11d48 35%, #fb7185 65%, transparent 100%),
+    linear-gradient(180deg, #9f1239 0px, #be123c 100px, #e11d48 190px, #fb7185 280px, #fecdd3 360px, #fff1f2 430px, #fff1f2 500px, #fff1f2 100%);
+  background-repeat: no-repeat;
+}
+
+/* 👑 Royal (coin) */
+body[data-theme='light'][data-accent='royal'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #4338ca 0%, #6366f1 35%, #818cf8 65%, transparent 100%),
+    linear-gradient(180deg, #4338ca 0px, #4f46e5 100px, #6366f1 190px, #818cf8 280px, #c7d2fe 360px, #e0e7ff 430px, #eef0ff 500px, #eef0ff 100%);
+  background-repeat: no-repeat;
+}
+
+/* 🧊 Arctic (coin, light-only — sakura kabi) */
+body[data-theme='light'][data-accent='arctic'] .dashboard-page,
+body[data-accent='arctic'] .dashboard-page {
+  background-color: var(--p-canvas);
+  background-image:
+    radial-gradient(130% 420px at 50% 0px, #0369a1 0%, #0ea5e9 35%, #38bdf8 65%, transparent 100%),
+    linear-gradient(180deg, #0369a1 0px, #0284c7 100px, #0ea5e9 190px, #38bdf8 280px, #bae6fd 360px, #e0f2fe 430px, #f0f9ff 500px, #f0f9ff 100%);
+  background-repeat: no-repeat;
+}
+
+/* ── AVATAR RAMKALARI (do'kon kosmetikasi, #40) ──────────────────────────────
+   CSS-only (rasm assetsiz): wrapper'ga gradient fon + padding, ichki element
+   rounded-full. avatar-frames.ts config bilan sinxron (test tekshiradi). */
+
+/* 🪙 #40: to'g'ri javob uchun tanga pop animatsiyasi (TestPage) — auto-hide 1.2s
+   (noAnimation setting'ga ergashadi: butun sahnani o'chirish index.css'da global) */
+.coin-pop {
+  position: fixed;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+  pointer-events: none;
+  animation: coinPopFloat 1.2s ease-out forwards;
+}
+@keyframes coinPopFloat {
+  0%   { opacity: 0; transform: translate(-50%, 10px) scale(0.7); }
+  20%  { opacity: 1; transform: translate(-50%, 0) scale(1.1); }
+  70%  { opacity: 1; transform: translate(-50%, -14px) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -26px) scale(0.9); }
+}.avatar-frame {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 9999px;
+  flex: none;
+  line-height: 0;           /* inline-flex'da pastki glitch bo'lmasin */
+}
+/* Neon — JORIY aksent temasiga moslashuvchan (var(--p-primary)) */
+.avatar-frame-neon {
+  background: conic-gradient(from 180deg, var(--p-primary), transparent 30%, var(--p-primary) 60%, transparent 85%, var(--p-primary));
+  box-shadow: 0 0 14px rgb(var(--p-primary-rgb) / 0.45);
+}
+.avatar-frame-arctic {
+  background: linear-gradient(135deg, #7dd3fc, #0ea5e9 45%, #e0f2fe 70%, #0284c7);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.45);
+}
+.avatar-frame-royal {
+  background: linear-gradient(135deg, #c7d2fe, #6366f1 45%, #a5b4fc 70%, #4338ca);
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.45);
+}
+.avatar-frame-gold {
+  background: linear-gradient(135deg, #fde68a, #f59e0b 40%, #fef3c7 60%, #b45309);
+  box-shadow: 0 0 14px rgba(250, 204, 21, 0.45);
+}
+.avatar-frame-fire {
+  background: conic-gradient(from 0deg, #f97316, #ef4444 25%, #fbbf24 50%, #ef4444 75%, #f97316);
+  box-shadow: 0 0 14px rgba(249, 115, 22, 0.5);
 }
 
 /* Light dashboard topbar kontrast va frosted glass */

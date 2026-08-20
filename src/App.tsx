@@ -31,6 +31,7 @@ const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPag
 const XatolarPage     = lazy(() => import('./features/mistakes/XatolarPage'))
 const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
 const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
+const ShopPage        = lazy(() => import('./features/shop/ShopPage'))
 const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
@@ -106,6 +107,7 @@ function Layout() {
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />
             <Route path="/premium"    element={<PremiumPage />} />
+            <Route path="/shop"       element={<ShopPage />} />
             <Route path="/statistika" element={<StatistikaPage />} />
             <Route path="/speed"      element={<SpeedPage />} />
             <Route path="/flashcards" element={<FlashcardsPage />} />
@@ -127,6 +129,7 @@ function ThemeEffect() {
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const accent      = useAppStore((s) => s.accent)
   const tariff      = useAppStore((s) => s.tariff)
+  const ownedItems  = useAppStore((s) => s.ownedItems)
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
@@ -137,10 +140,10 @@ function ThemeEffect() {
     }
     document.body.dataset.theme = theme
   }, [theme])
-  // Aksent temasi — Premium-only temalar free foydalanuvchida default'ga tushadi
+  // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
   useEffect(() => {
-    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium')
-  }, [accent, tariff])
+    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium', new Set(ownedItems))
+  }, [accent, tariff, ownedItems])
   useEffect(() => {
     // noAnimation setting — route transitionlar ham o'chadi (index.css)
     document.body.dataset.noAnimation = String(noAnimation)

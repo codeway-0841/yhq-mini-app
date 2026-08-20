@@ -268,8 +268,41 @@
   barcha savollar to'xtovsiz rejimida.
 - [x] **39. Sertifikat** — imtihondan keyin shareable (canvas → PNG →
   Telegram share); `ResultsModal.tsx` + `CertificateModal.tsx` + `certificate-canvas.ts`.
-- [ ] **40. Coins / Battle Pass** — iqtisodiyot: `user_coins` jadval, kunlik
+- [x] **40. Coins / Battle Pass** — iqtisodiyot: `user_coins` jadval, kunlik
   vazifalar mukofotlari, do'kon item'lari (tema/avatarka).
+  **TUGALLANDI (2026-08-20 sessiya, 3 fazali):** migratsiya 0046 (`user_coins` balans +
+  `coin_transactions` ledger UNIQUE(user,reason,ref) + `user_items` egalik + `users.avatar_frame`)
+  va 0047 (`merch_orders`). **F1 core+digital do'kon:** mint FAQAT recordAnswer CTE'ning
+  `coin_award`'idan (+1/to'g'ri javob; anti-farm gate/kredit/replay coin'ni ham to'xtatadi —
+  farming qiymati ball bilan bir chegarada), purchase ATOMIK CTE (dup-guard purchaseId +
+  owned-guard + `balance>=price` shartli debit + ledger + grant: durable→user_items,
+  premium-days→GREATEST premium_until [C-1]), `equipFrame` guarded, per-endpoint
+  `dbRateLimit` bucket'lar (`coins:purchase|equip|claim|merch`). Config SSOT'lar:
+  `shared/shop-items.ts` (12 tema + 1-kun premium + 5 ramka), `shared/avatar-frames.ts`
+  (CSS-only ramkalar), 3 YANGI coin-eksklyuziv tema (crimson/royal/arctic — premium:false,
+  FAQAT egalik bilan ochiladi, `resolveAccent(id,isPremium,owned)` kengaytma) + CSS bloklar
+  + `--p-warning-rgb` token. Client: store (coins/ownedItems/avatarFrame + hydrate/partialize/
+  reset), ShopPage (temalar/premium/ramkalar/tarix), TopBar coin chip, Profil Do'kon qatori,
+  SettingsModal narx-teglari, TestPage 🪙+1 coin-pop animatsiyasi, Avatar ramka render
+  (TopBar+Profil). **F2 kunlik vazifalar:** `shared/daily-tasks.ts` (20 javob/10c · 15
+  to'g'ri/15c · 5 tuzatish/10c) → GET /coins/tasks (server aggregate) + POST claim-task
+  (SQL qayta-o'lchash + `taskId:<date>` UNIQUE → 1/kun) + Dashboard'da DailyTasksCard.
+  **F3 merch (real tovarlar):** `shared/merch-items.ts` (nakleyka 2'500/sumka 3'500/kiyim
+  5'000 — "≈1/1.5/2 oylik o'yin" formulasiga ko'ra; `COINS_MONTH_OF_PLAY=2400` baza);
+  `buyMerch` atomik CTE (stock guard COUNT < stock + 1-per-user + debit + order + ledger);
+  admin cancel → ATOMIK `merch_refund` (price_paid snapshot, qayta cancel 409);
+  ShopPage MerchSection + buyurtma modali (ism/telefon/izoh, phone prefill);
+  AdminOrdersTab (new→contacted→delivered | cancelled+refund). **Dizayn-qoida nosiligi:
+  iqtisod — 1c/javob; ~80c/kun faol o'yinchi.**
+  *Verifikatsiya:* tsc×2 ✓, unit 464/464 ✓ (shop-items/avatar-frames/daily-tasks/merch-items
+  consistency + resolveAccent coin gating + session-lifecycle yangilangan invariant),
+  integration 139/139 ✓ (coins.test 13: mint qoidalari — to'g'ri+1/xato0/replay0/gate0,
+  parallel purchase race → 1 debit, purchaseId idempotency, insufficient/owned guard,
+  premium-days premium_until+tariff free [C-1], equip 403→200, task claim atomik 1/kun,
+  merch stock/1-per-user/refund/re-cancel 409/re-buy), lint 0 error ✓, vite build ✓,
+  test DB 0046+0047 migrate ✓. *Izoh:* unary minus `-<param>` neon-http'da "operator is not
+  unique" beradi — debit delta JS'da negate qilinadi.
+
 - [ ] **41. Octagon kubogi** — mavsumiy PvP turnir jadvali (octagon_wins
   ustunida mavsumiy agregat + `tournament_prizes`ga o'xshash taqsimot).
 - [ ] **42. Guruh reytinglari** — sinf/maktab jamoalari (invite kod bilan

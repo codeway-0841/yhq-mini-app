@@ -12,6 +12,7 @@ import {
   DEFAULT_ACCENT,
   ACCENT_THEMES,
 } from '../../../src/shared/config/themes'
+import { SHOP_ITEMS } from '../../../shared/shop-items'
 
 describe('Session Lifecycle & Theme Gating Invariants', () => {
   const store = new Map<string, string>()
@@ -98,9 +99,13 @@ describe('Session Lifecycle & Theme Gating Invariants', () => {
       }
     })
 
-    it('always permits non-premium accents regardless of tariff status', () => {
-      const freeAccents = ACCENT_THEMES.filter((t) => !t.premium)
-      expect(freeAccents.length).toBeGreaterThan(0)
+    it('always permits TRULY-free accents (premium:false VA shop\'da yoq — faqat default) regardless of tariff status', () => {
+      // #40: premium:false temalarning bir qismi endi COIN-EKSKLYUZIV (crimson/royal/
+      // arctic) — ular egaliksiz yopiq; "har doim ochiq" invariant FAQAT shop'da
+      // YO'Q non-premium temalarga (hozir faqat DEFAULT kiwi) tegishli.
+      const coinGated = new Set<string>(SHOP_ITEMS.filter((i) => i.kind === 'accent-theme').map((i) => i.id))
+      const freeAccents = ACCENT_THEMES.filter((t) => !t.premium && !coinGated.has(t.id))
+      expect(freeAccents).toEqual([expect.objectContaining({ id: DEFAULT_ACCENT })])
 
       for (const theme of freeAccents) {
         expect(resolveAccent(theme.id, false)).toBe(theme.id)

@@ -23,6 +23,7 @@ import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
+import { DailyTasksCard } from '../shop'
 import { useCelebrations } from './hooks/useCelebrations'
 import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
@@ -242,6 +243,9 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
+
+          {/* 2b. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
+          <DailyTasksCard />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-5">

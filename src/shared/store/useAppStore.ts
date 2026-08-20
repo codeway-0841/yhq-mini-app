@@ -17,6 +17,8 @@ export interface SubmitOutcome {
   correctAnswer: string | null
   /** Server bu javobni avval qabul qilgan (idempotent replay) — counterlar tegmang */
   duplicate:     boolean
+  /** #40: shu javob server'da mint qilgan tangalar (0/1) — UI toast uchun */
+  coinsEarned:   number
 }
 
 /** Fatal: server javobni QAT'IY rad etdi (retryable bo'lmagan 4xx) —
@@ -47,13 +49,23 @@ interface AppState {
   /** Foydalanuvchi yuklagan maxsus avatar (256px WebP data URL, lokal) */
   customAvatar:   string | null
   /** Aksent temasi id (src/config/themes.ts). Lokal pref — serverga yuborilmaydi.
-   *  Premium temalar faqat App.tsx dagi resolveAccent orqali qo'llanadi. */
+   *  Premium/coin temalar faqat App.tsx dagi resolveAccent (egalik bilan) orqali qo'llanadi. */
   accent:         string
+  /** #40: coin balansi — SERVER SSOT cache (client hech qachon o'zi mint qilmaydi) */
+  coins:          number
+  /** #40: do'konda sotib olingan buyumlar id'lari (shared/shop-items) */
+  ownedItems:     string[]
+  /** #40: joriy avatar ramkasi (avatar-frames config id) yoki null */
+  avatarFrame:    string | null
 
   setUser:        (user: ApiUser | null) => void
   setDisplayName: (name: string | null) => void
   setCustomAvatar: (avatar: string | null) => void
   setAccent:      (accent: string) => void
+  /** #40: server javobidan coin holatini qo'llash (result mint / purchase / profile) */
+  setCoins:       (coins: number) => void
+  addOwnedItem:   (itemId: string) => void
+  setAvatarFrame: (frame: string | null) => void
   updateSettings: (patch: Partial<ApiSettings>) => void
   updatePhone:    (phone: string, otp: string) => Promise<void>
   /**
@@ -165,11 +177,18 @@ export const useAppStore = create<AppState>()(
       displayName:    null,
       customAvatar:   null,
       accent:         'kiwi',
+      coins:          0,
+      ownedItems:     [],
+      avatarFrame:    null,
 
       setUser: (user) => set({ user, tariff: user?.tariff ?? 'free' }),
       setDisplayName: (name) => set({ displayName: name?.trim() || null }),
       setCustomAvatar: (avatar) => set({ customAvatar: avatar || null }),
       setAccent: (accent) => set({ accent }),
+      setCoins: (coins) => set({ coins: Math.max(0, Math.floor(coins)) }),
+      addOwnedItem: (itemId) => set((s) =>
+        s.ownedItems.includes(itemId) ? {} : { ownedItems: [...s.ownedItems, itemId] }),
+      setAvatarFrame: (frame) => set({ avatarFrame: frame }),
 
       updatePhone: async (phone, otp) => {
         const userId = get().user?.id
@@ -222,7 +241,11 @@ export const useAppStore = create<AppState>()(
           const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken })
           // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
           if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
-          return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate }
+          // #40: mint bo'lgan tanga — server balansi bilan sinxron (client o'zi mint qilmaydi)
+          if (!res.duplicate && (res.coinsEarned ?? 0) > 0 && typeof res.coinBalance === 'number') {
+            set({ coins: res.coinBalance })
+          }
+          return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate, coinsEarned: res.duplicate ? 0 : (res.coinsEarned ?? 0) }
         } catch (err) {
           // FATAL 4xx — server qat'iy rad etdi (validatsiya/auth/noto'g'ri so'rov):
           // outbox'ga yozish BEFOYDA (flush ilk urunishda tashlab yuborardi) va
@@ -283,6 +306,9 @@ export const useAppStore = create<AppState>()(
           wrongByTicket:   data.progress.wrongByTicket,
           solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
           savedQuestions:  data.savedQuestions,
+          coins:           data.user.coins ?? 0,
+          ownedItems:      data.user.ownedItems ?? [],
+          avatarFrame:     data.user.avatarFrame ?? null,
         }))
       },
 
@@ -300,6 +326,9 @@ export const useAppStore = create<AppState>()(
         initialized: false,
         displayName: null,
         customAvatar: null,
+        coins: 0,
+        ownedItems: [],
+        avatarFrame: null,
       }),
 
       syncFromServer: async (userId) => {
@@ -316,6 +345,9 @@ export const useAppStore = create<AppState>()(
             wrongByTicket:   data.progress.wrongByTicket,
             solvedQuestions: Array.from(new Set([...(s.solvedQuestions ?? []), ...(data.progress.solvedQuestions ?? [])])),
             savedQuestions:  data.savedQuestions,
+            coins:           data.user.coins ?? 0,
+            ownedItems:      data.user.ownedItems ?? [],
+            avatarFrame:     data.user.avatarFrame ?? null,
           }))
         } catch (err) {
           console.error('syncFromServer failed:', err)
@@ -373,6 +405,9 @@ export const useAppStore = create<AppState>()(
         customAvatar:   s.customAvatar,
         tariff:         s.tariff,
         accent:         s.accent,
+        coins:          s.coins,
+        ownedItems:     s.ownedItems,
+        avatarFrame:    s.avatarFrame,
       }),
     }
   )

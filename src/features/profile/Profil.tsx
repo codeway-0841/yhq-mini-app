@@ -5,7 +5,7 @@ import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award,
+  BarChart2, CloudUpload, Ticket, Award, Coins,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -40,6 +40,7 @@ export default function Profil() {
   const setDisplayName = useAppStore((s) => s.setDisplayName)
   const customAvatar   = useAppStore((s) => s.customAvatar)
   const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
+  const coins          = useAppStore((s) => s.coins)
   const tt = useT(settings.language)
 
   // ── Referal statistikasi (Profil kartasidagi "N do'st · +M kun" qatori) ──
@@ -258,6 +259,22 @@ export default function Profil() {
         <Item icon={Lock} label={tt('closedGroup')}
           right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
+      </Section>
+
+      {/* ── DO'KON (#40) — coin balansi + do'kon sahifasiga o'tish ── */}
+      <Section title={tt('shopTitle').toUpperCase()}>
+        <Item
+          icon={Coins}
+          label={tt('shopMenuItem')}
+          right={
+            <span className="flex items-center gap-1.5 text-[13px] font-black text-pgold">
+              <Coins size={14} fill="currentColor" />
+              {coins}
+              <ChevronRight size={15} className="text-muted" />
+            </span>
+          }
+          onPress={() => navigate('/shop')}
+        />
       </Section>
 
       {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}

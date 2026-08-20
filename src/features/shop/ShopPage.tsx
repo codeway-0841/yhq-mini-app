@@ -1,0 +1,378 @@
+/**
+ * Do'kon sahifasi (FIXPLAN #40) — coin iqtisodiyotining markazi.
+ *
+ * Bo'limlar:
+ *  1) Balans hero + "tanga qanday olinadi" hint
+ *  2) Temalar (coin-eksklyuziv + premium temalar coin'ga) — preview swatch
+ *  3) Premium (1 kunlik consumable)
+ *  4) Avatar ramkalari (owned → Tanlash/olib tashlash)
+ *  5) Tangalar tarixi (talab bo'yicha yuklanadi)
+ *
+ * Server trust boundary: narx/egalik/debit FAQAT server'da — client faqat
+ * katalog (shared/shop-items) ko'rsatadi va store'ni SERVER javobi bilan
+ * yangilaydi (setCoins(balance), addOwnedItem, syncFromServer tariff uchun).
+ */
+import { useMemo, useState } from 'react'
+import {
+  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon,
+} from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { useAppStore } from '../../shared/store/useAppStore'
+import { api, ApiError } from '../../shared/api'
+import { getAccentTheme, resolveAccent } from '../../shared/config/themes'
+import { AVATAR_FRAMES } from '../../shared/config/avatar-frames'
+import { SHOP_ITEMS, getShopItem, isDurableShopItem } from '../../../shared/shop-items'
+import { goBack } from '../../shared/lib/navigation'
+import { playSound } from '../../shared/lib/sounds'
+import { newId } from '../../shared/lib/outbox'
+import { track } from '../../shared/lib/analytics'
+import { useT } from '../../shared/i18n'
+import Confetti from '../../shared/components/Confetti'
+import MerchSection from './MerchSection'
+
+/** 2'400 → "2 400" (UZ/RU ikkalasida ham bo'shliqli minglik ajratgich) */
+function fmtCoins(n: number): string {
+  return new Intl.NumberFormat('ru-RU').format(n).replace(/,/g, ' ')
+}
+
+export default function ShopPage() {
+  const navigate = useNavigate()
+  const lang       = useAppStore((s) => s.settings.language)
+  const tt         = useT(lang)
+  const coins      = useAppStore((s) => s.coins)
+  const owned      = useAppStore((s) => s.ownedItems)
+  const accent     = useAppStore((s) => s.accent)
+  const avatarFrame  = useAppStore((s) => s.avatarFrame)
+  const isPremium    = useAppStore((s) => s.tariff === 'premium')
+  const setCoins       = useAppStore((s) => s.setCoins)
+  const addOwnedItem   = useAppStore((s) => s.addOwnedItem)
+  const setAvatarFrame = useAppStore((s) => s.setAvatarFrame)
+  const syncFromServer = useAppStore((s) => s.syncFromServer)
+  const userId         = useAppStore((s) => s.user?.id)
+  const firstName      = useAppStore((s) => s.user?.firstName)
+  const initial = firstName?.[0]?.toUpperCase() ?? 'F'
+
+  const ownedSet = useMemo(() => new Set(owned), [owned])
+  const [busy, setBusy]       = useState<string | null>(null)   // qaysi item jarayonda
+  const [error, setError]     = useState<string | null>(null)
+  const [celebrate, setCelebrate] = useState(false)
+  // Tarix (talab bo'yicha)
+  const [history, setHistory] = useState<Awaited<ReturnType<typeof api.getCoinHistory>>['rows'] | null>(null)
+  const [historyBusy, setHistoryBusy] = useState(false)
+
+  const showError = (msg: string) => { setError(msg); playSound('error'); window.setTimeout(() => setError(null), 3500) }
+
+  const celebrateOnce = () => {
+    setCelebrate(true)
+    playSound('win')
+    window.setTimeout(() => setCelebrate(false), 3200)
+  }
+
+  const buy = async (itemId: string) => {
+    const item = getShopItem(itemId)
+    if (!item || busy) return
+    setError(null)
+    setBusy(itemId)
+    try {
+      const res = await api.purchaseItem({ itemId, purchaseId: newId() })
+      setCoins(res.balance)
+      if (isDurableShopItem(item)) addOwnedItem(item.id)
+      if (!res.duplicate) {
+        track('shop_purchase', { itemId, kind: item.kind, price: item.price })
+        celebrateOnce()
+        // consumable premium: tariff server'da o'zgardi — profilni to'liq yangilaymiz
+        if (item.kind === 'premium-days' && userId) void syncFromServer(userId)
+      }
+    } catch (err) {
+      const code = err instanceof ApiError ? err.code : undefined
+      showError(
+        code === 'COINS_INSUFFICIENT' ? tt('shopInsufficient') :
+        code === 'ITEM_ALREADY_OWNED' ? tt('shopAlreadyOwned') :
+        tt('shopError'),
+      )
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  const equip = async (frameId: string | null) => {
+    if (busy) return
+    setBusy('equip')
+    try {
+      await api.equipFrame(frameId)
+      setAvatarFrame(frameId)
+      playSound(frameId ? 'toggle' : 'click')
+    } catch (err) {
+      const code = err instanceof ApiError ? err.code : undefined
+      showError(code === 'ITEM_NOT_OWNED' ? tt('shopAlreadyOwned') : tt('shopError'))
+    } finally {
+      setBusy(null)
+    }
+  }
+
+  const toggleHistory = async () => {
+    if (history !== null) { setHistory(null); return }
+    setHistoryBusy(true)
+    try {
+      const res = await api.getCoinHistory()
+      setHistory(res.rows.slice(0, 12))
+    } catch {
+      showError(tt('shopError'))
+    } finally {
+      setHistoryBusy(false)
+    }
+  }
+
+  const themeItems   = SHOP_ITEMS.filter((i) => i.kind === 'accent-theme')
+  const premiumItem  = SHOP_ITEMS.find((i) => i.kind === 'premium-days') ?? null
+  const frameItems   = SHOP_ITEMS.filter((i) => i.kind === 'avatar-frame')
+
+  const reasonLabel = (reason: string): string => ({
+    answer:       tt('coinReasonAnswer'),
+    purchase:     tt('coinReasonPurchase'),
+    task_claim:   tt('coinReasonTask'),
+    merch:        tt('coinReasonMerch'),
+    merch_refund: tt('coinReasonRefund'),
+    admin:        tt('coinReasonAdmin'),
+  } as Record<string, string>)[reason] ?? reason
+
+  return (
+    <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
+      {celebrate && <Confetti count={40} />}
+
+      {/* Header */}
+      <div className="flex items-center gap-2 px-5 pt-5 pb-2">
+        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
+          className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
+          <ChevronLeft size={24} />
+        </button>
+        <h1 className="text-lg font-bold tracking-tight">{tt('shopTitle')}</h1>
+      </div>
+
+      {/* Balans hero */}
+      <div className="mx-5 mt-2 rounded-[28px] p-5 relative overflow-hidden"
+        style={{
+          background: 'linear-gradient(160deg, rgb(var(--p-gold-rgb) / 0.12) 0%, var(--p-card) 55%)',
+          border: '1px solid rgb(var(--p-gold-rgb) / 0.30)',
+        }}>
+        <div className="flex items-center justify-between">
+          <div>
+            <p className="text-[11px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
+            <p className="text-[34px] font-black tracking-tight mt-0.5 flex items-center gap-2">
+              <Coins size={26} className="text-pgold" fill="currentColor" />
+              {fmtCoins(coins)}
+            </p>
+          </div>
+          <div className="text-right max-w-[46%]">
+            <p className="text-[11.5px] text-pmuted leading-snug font-semibold">{tt('shopHowToEarn')}</p>
+            <p className="text-[11px] text-psubtle mt-1 leading-snug">{tt('shopEarnHint')}</p>
+          </div>
+        </div>
+        {isPremium && (
+          <span className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10.5px] font-bold"
+            style={{
+              background: 'rgb(var(--p-success-rgb) / 0.15)',
+              border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
+              color: 'var(--p-success)',
+            }}>
+            <Crown size={11} fill="currentColor" /> Premium
+          </span>
+        )}
+      </div>
+
+      {error && (
+        <div className="mx-5 mt-3 rounded-2xl px-4 py-3 text-[12.5px] font-semibold text-pwarning animate-fadeIn"
+          style={{ background: 'rgb(var(--p-warning-rgb) / 0.10)', border: '1px solid rgb(var(--p-warning-rgb) / 0.35)' }}>
+          {error}
+        </div>
+      )}
+
+      {/* ── Temalar ── */}
+      <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
+        <Palette size={11} /> {tt('shopThemesTitle')}
+      </p>
+      <div className="grid grid-cols-2 gap-3 px-5">
+        {themeItems.map((item) => {
+          const theme = getAccentTheme(item.id)
+          const isOwned    = ownedSet.has(theme.id)
+          const isActiveTheme = resolveAccent(accent, isPremium, ownedSet) === theme.id
+          const affordable = coins >= item.price
+          const coinExclusive = !theme.premium
+          return (
+            <div key={theme.id} className="card-premium p-3 flex flex-col gap-2.5 relative overflow-hidden">
+              {coinExclusive && (
+                <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wide"
+                  style={{
+                    background: 'rgb(var(--p-gold-rgb) / 0.16)',
+                    border: '1px solid rgb(var(--p-gold-rgb) / 0.45)',
+                    color: 'var(--p-gold)',
+                  }}>
+                  <Coins size={9} /> {tt('shopCoinThemeBadge')}
+                </span>
+              )}
+              {/* Mini atmosfera preview */}
+              <div className="h-[64px] rounded-xl overflow-hidden border border-pline relative"
+                style={{ background: theme.bg }}>
+                <div className="absolute left-2 right-2 top-2 h-6 rounded-lg"
+                  style={{ background: theme.card, border: `1px solid ${theme.color}4d` }} />
+                <span className="absolute bottom-2 left-2 w-8 h-2 rounded-full"
+                  style={{ background: theme.color, boxShadow: theme.glow ? `0 0 8px ${theme.color}` : undefined }} />
+                {theme.glow && (
+                  <span className="absolute bottom-2.5 right-2 w-2.5 h-2.5 rounded-full"
+                    style={{ background: theme.color, boxShadow: `0 0 8px ${theme.color}` }} />
+                )}
+              </div>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-[12.5px] font-bold truncate">{theme.label[lang]}</p>
+                {isActiveTheme && <Check size={14} className="text-psuccess flex-none" />}
+              </div>
+              {isOwned ? (
+                <span className="text-center text-[11px] font-bold py-1.5 rounded-xl"
+                  style={{
+                    background: 'rgb(var(--p-success-rgb) / 0.12)',
+                    color: 'var(--p-success)',
+                    border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
+                  }}>
+                  {isActiveTheme ? tt('shopActive') : tt('shopOwned')}
+                </span>
+              ) : (
+                <button
+                  onClick={() => buy(item.id)}
+                  disabled={busy !== null}
+                  className="flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+                  style={{
+                    background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
+                    border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
+                    color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
+                  }}>
+                  {busy === item.id
+                    ? <Loader2 size={13} className="animate-spin" />
+                    : <><Coins size={12} /> {fmtCoins(item.price)}</>}
+                </button>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {/* ── Premium (consumable) ── */}
+      {premiumItem && (
+        <>
+          <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
+            <Crown size={11} /> Premium
+          </p>
+          <div className="mx-5 card-premium p-4 flex items-center gap-3.5">
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
+              style={{
+                background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
+                boxShadow: '0 6px 18px rgb(var(--p-gold-rgb) / 0.30)',
+              }}>
+              <Sparkles size={22} className="text-pongold" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[14px] font-bold">{tt('shopPremiumDays')}</p>
+              <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('shopPremiumDaysDesc')}</p>
+            </div>
+            <button
+              onClick={() => buy(premiumItem.id)}
+              disabled={busy !== null}
+              className="btn-premium-gold px-3.5 py-2 rounded-xl text-[12.5px] font-black flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
+              {busy === premiumItem.id
+                ? <Loader2 size={14} className="animate-spin" />
+                : <><Coins size={13} /> {fmtCoins(premiumItem.price)}</>}
+            </button>
+          </div>
+        </>
+      )}
+
+      {/* ── Avatar ramkalari ── */}
+      <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
+        <ImageIcon size={11} /> {tt('shopFramesTitle')}
+      </p>
+      <div className="grid grid-cols-2 gap-3 px-5">
+        {frameItems.map((item) => {
+          const frame = AVATAR_FRAMES.find((f) => f.id === item.id)
+          if (!frame) return null
+          const isOwned    = ownedSet.has(frame.id)
+          const isEquipped = avatarFrame === frame.id
+          const affordable = coins >= item.price
+          return (
+            <div key={frame.id} className="card-premium p-3 flex flex-col items-center gap-2.5">
+              {/* Ramka preview */}
+              <span className={`avatar-frame ${frame.cssClass}`}>
+                <span className="w-14 h-14 rounded-full bg-pcard flex items-center justify-center text-lg font-black text-pmuted">
+                  {initial}
+                </span>
+              </span>
+              <p className="text-[12.5px] font-bold text-center truncate w-full">{frame.label[lang]}</p>
+              {isOwned ? (
+                <button
+                  onClick={() => equip(isEquipped ? null : frame.id)}
+                  disabled={busy !== null}
+                  className="w-full text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+                  style={isEquipped ? {
+                    background: 'rgb(var(--p-success-rgb) / 0.12)',
+                    color: 'var(--p-success)',
+                    border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
+                  } : {
+                    background: 'rgb(var(--p-primary-rgb) / 0.12)',
+                    color: 'var(--p-primary)',
+                    border: '1px solid rgb(var(--p-primary-rgb) / 0.35)',
+                  }}>
+                  {busy === 'equip' ? <Loader2 size={13} className="animate-spin mx-auto" />
+                    : isEquipped ? tt('shopUnequip') : tt('shopEquip')}
+                </button>
+              ) : (
+                <button
+                  onClick={() => buy(item.id)}
+                  disabled={busy !== null}
+                  className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+                  style={{
+                    background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
+                    border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
+                    color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
+                  }}>
+                  {busy === item.id
+                    ? <Loader2 size={13} className="animate-spin" />
+                    : <><Coins size={12} /> {fmtCoins(item.price)}</>}
+                </button>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {/* ── Merch (real fizik tovarlar, #40 Faza 3) ── */}
+      <MerchSection onCelebration={celebrateOnce} />
+
+      {/* ── Tangalar tarixi ── */}
+      <div className="mx-5 mt-6">        <button onClick={toggleHistory}
+          className="w-full card-premium p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-bold text-pmuted active:scale-[0.98] transition-transform">
+          {historyBusy ? <Loader2 size={14} className="animate-spin" /> : <History size={14} />}
+          {history === null ? tt('shopHistoryTitle') : tt('shopHideHistory')}
+        </button>
+        {history !== null && (
+          <div className="card-premium mt-2 divide-y divide-pline animate-fadeIn">
+            {history.length === 0 && (
+              <p className="text-center text-[12px] text-psubtle py-5">{tt('shopHistoryEmpty')}</p>
+            )}
+            {history.map((tx, i) => (
+              <div key={`${tx.refId}-${i}`} className="flex items-center justify-between px-4 py-2.5">
+                <div className="min-w-0">
+                  <p className="text-[12.5px] font-semibold truncate">{reasonLabel(tx.reason)}</p>
+                  <p className="text-[10.5px] text-psubtle">
+                    {new Date(tx.createdAt).toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'uz-UZ',
+                      { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                  </p>
+                </div>
+                <span className={`text-[13px] font-black flex-none ${tx.delta > 0 ? 'text-psuccess' : 'text-pwarning'}`}>
+                  {tx.delta > 0 ? '+' : ''}{fmtCoins(tx.delta)}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}

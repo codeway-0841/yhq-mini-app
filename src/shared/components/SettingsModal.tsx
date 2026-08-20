@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, GraduationCap, Bell, Clock,
+  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, GraduationCap, Bell, Clock, Coins,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
@@ -10,7 +10,8 @@ import { openTelegramLink } from '../../platform/telegram'
 import { requestNotificationPermission } from '../../platform/native'
 import { playSound } from '../lib/sounds'
 import { useT } from '../i18n'
-import { ACCENT_THEMES, getAccentTheme, resolveAccent } from '../config/themes'
+import { ACCENT_THEMES, getAccentTheme, resolveAccent, isAccentUnlocked } from '../config/themes'
+import { getShopItem } from '../../../shared/shop-items'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
@@ -45,19 +46,26 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const accent     = useAppStore((s) => s.accent)
   const setAccent  = useAppStore((s) => s.setAccent)
   const isPremium  = useAppStore((s) => s.tariff === 'premium')
+  const ownedItems = useAppStore((s) => s.ownedItems)
+  const ownedSet   = useMemo(() => new Set(ownedItems), [ownedItems])
   const subject    = useSubjectStore((s) => s.subject)
   const setSubject = useSubjectStore((s) => s.setSubject)
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
   const [picker, setPicker] = useState<PickerKey>(null)
   const tt = useT(local.language)
 
-  // 3 soniyalik SINOV (preview) — lock'langan premium temani sotib olmasdan ko'rish
+  // 3 soniyalik SINOV (preview) — lock'langan temani sotib olmasdan ko'rish
   const [preview, setPreview] = useState<string | null>(null)
   const previewTimer = useRef<number | undefined>(undefined)
 
+  const restoreAccent = () => {
+    const s = useAppStore.getState()
+    document.body.dataset.accent = resolveAccent(s.accent, s.tariff === 'premium', new Set(s.ownedItems))
+  }
+
   const stopPreview = () => {
     window.clearTimeout(previewTimer.current)
-    document.body.dataset.accent = resolveAccent(useAppStore.getState().accent, useAppStore.getState().tariff === 'premium')
+    restoreAccent()
     setPreview(null)
   }
 
@@ -71,7 +79,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   // Modal yopilganda yarim preview qolib ketmasligi uchun
   useEffect(() => () => {
     window.clearTimeout(previewTimer.current)
-    document.body.dataset.accent = resolveAccent(useAppStore.getState().accent, useAppStore.getState().tariff === 'premium')
+    const s = useAppStore.getState()
+    document.body.dataset.accent = resolveAccent(s.accent, s.tariff === 'premium', new Set(s.ownedItems))
   }, [])
 
   // Escape tugmasi bilan yopish
@@ -291,7 +300,10 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             <div className="flex flex-col gap-3 overflow-y-auto -mx-1 px-1 pb-1">
               {ACCENT_THEMES.map((theme) => {
                 const selected = theme.id === accent
-                const locked   = theme.premium && !isPremium
+                const unlocked = isAccentUnlocked(theme.id, isPremium, ownedSet)
+                const locked   = !unlocked
+                const coinItem = locked ? getShopItem(theme.id) : null   // coin yo'li (#40)
+                const premiumOnly = locked && theme.premium
                 return (
                   <button
                     key={theme.id}
@@ -327,10 +339,17 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       <p className="text-sm font-bold text-fg">
                         {theme.label[local.language]}
                       </p>
-                      {locked && (
+                      {premiumOnly && (
                         <p className="text-[11px] text-duo-yellow font-semibold mt-0.5 flex items-center gap-1">
                           <Crown size={11} fill="currentColor" />
                           {preview === theme.id ? tt('themePreviewing') : tt('premiumThemesHint')}
+                        </p>
+                      )}
+                      {/* Coin-eksklyuziv / premium temaning coin yo'li — narx tegi */}
+                      {!premiumOnly && coinItem && (
+                        <p className="text-[11px] text-pgold font-semibold mt-0.5 flex items-center gap-1">
+                          <Coins size={11} fill="currentColor" />
+                          {preview === theme.id ? tt('themePreviewing') : `${coinItem.price} ${tt('shopCoinThemeBadge')}`}
                         </p>
                       )}
                     </div>

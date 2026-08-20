@@ -38,6 +38,9 @@ export const users = pgTable('users', {
   trialGrantedAt: timestamp('trial_granted_at'),
   /** Admin panel ruxsati (savol CRUD). Faqat qo'lda DB orqali beriladi. */
   isAdmin:    boolean('is_admin').default(false).notNull(),
+  /** Joriy avatar ramkasi (do'kon buyumi, avatar-frames config id'si).
+   *  NULL — ramkasiz. Egalik faqat user_items orqali tekshiriladi (equip guard). */
+  avatarFrame: text('avatar_frame'),
   /** Security tracking */
   failedLoginAttempts: integer('failed_login_attempts').default(0).notNull(),
   lockedUntil: timestamp('locked_until'),
@@ -724,4 +727,84 @@ export const tgBroadcastRecipients = pgTable('tg_broadcast_recipients', {
   createdAt:   timestamp('created_at').defaultNow().notNull(),
 }, (t) => [
   index('idx_tg_recipients_broadcast').on(t.broadcastId, t.status),
+])
+
+// ── COINS IQTISODIYOTI (FIXPLAN #40) ─────────────────────────────────────────
+// Uch jadval: balans (hot-path), tranzaksiyalar ledger (audit + idempotency),
+// egalik (durable buyumlar). Tanga FAQAT server'da mint/debit qilinadi —
+// client hech qachon o'z balansini yozmaydi (scoring trust boundary kabi).
+
+/**
+ * Coin balansi — user boshiga 1 qator (faqat coin'i bo'lgan userlar).
+ * Qator yo'q = balans 0 (LEFT JOIN semantikasi; init'da yaratilmaydi —
+ * birinchi mint/purchase'da lazily upsert qilinadi).
+ */
+export const userCoins = pgTable('user_coins', {
+  userId:    text('user_id').primaryKey().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  balance:   integer('balance').default(0).notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  check('chk_user_coins_nonnegative', sql`${t.balance} >= 0`),
+])
+
+/**
+ * Coin tranzaksiyalari ledger — har bir mint/debit/refund qaydi.
+ * `UNIQUE(user_id, reason, ref_id)` — idempotency: bir mantiqiy amal
+ * (javob clientToken'i, xarid purchaseId'si, task claim kuni, merch order id)
+ * hech qachon ikki marta yozilmaydi. Audit: kim, nima uchun, qachon.
+ * reason'lar: 'answer' | 'purchase' | 'task_claim' | 'merch' | 'merch_refund' | 'admin'
+ */
+export const coinTransactions = pgTable('coin_transactions', {
+  id:        serial('id').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** + mint/refund, − debit (purchase/merch) */
+  delta:     integer('delta').notNull(),
+  reason:    text('reason').notNull(),
+  /** Idempotency kaliti: javob clientToken | purchaseId | 'taskId:YYYY-MM-DD' | order id */
+  refId:     text('ref_id').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_coin_tx_ref').on(t.userId, t.reason, t.refId),
+  index('idx_coin_tx_user_time').on(t.userId, t.createdAt),
+  check('chk_coin_tx_delta_nonzero', sql`${t.delta} <> 0`),
+])
+
+/**
+ * Egalik (durable buyumlar) — tema/ramka bitta marta sotib olinadi va
+ * umrbod qoladi. Consumable (premium_days) BU YERGA YOZILMAYDI.
+ * item_id = shared/shop-items.ts katalog id'si (tema id YOKI 'frame-*' id).
+ */
+export const userItems = pgTable('user_items', {
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  itemId:     text('item_id').notNull(),
+  acquiredAt: timestamp('acquired_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.userId, t.itemId] }),
+])
+
+/**
+ * MERCH buyurtmalari (FIXPLAN #40 Faza 3) — real fizik tovarlar coin'ga.
+ * User boshiga har item'dan 1 TA faol buyurtma (CANCELLed tarix bo'lishi mumkin) —
+ * bu limit purchase CTE'da `merch_orders` subquery'si bilan tekshiriladi.
+ * `price_paid` — sotib olingan DAMqdagi narx snapshot'i (katalog narxi keyin
+ * o'zgarsa ham refund to'g'ri hisoblanadi).
+ * Status oqimi: new → contacted → delivered | cancelled (cancel = atomik refund).
+ */
+export const merchOrders = pgTable('merch_orders', {
+  id:        serial('id').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  itemId:    text('item_id').notNull(),
+  fullName:  text('full_name').notNull(),
+  phone:     text('phone').notNull(),
+  note:      text('note'),
+  /** Coin'dagi narx snapshot'i (refund uchun authoritative) */
+  pricePaid: integer('price_paid').notNull(),
+  status:    text('status').$type<'new' | 'contacted' | 'delivered' | 'cancelled'>().default('new').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  index('idx_merch_orders_user').on(t.userId),
+  index('idx_merch_orders_status').on(t.status),
+  index('idx_merch_orders_item').on(t.itemId),
+  check('chk_merch_orders_price_positive', sql`${t.pricePaid} > 0`),
 ])

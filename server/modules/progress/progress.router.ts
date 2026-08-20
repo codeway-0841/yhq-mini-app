@@ -13,6 +13,7 @@ import { progressRepository }   from './progress.repository'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
+import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
 const router = Router()
 
@@ -43,8 +44,8 @@ router.post(
     if (!question) throw new AppError(404, 'Question not found')
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
-    // Progress counterlari + daily record + streak BITTA atomik SQL statement'da.
-    const { updated, dailyStreak, duplicate, reason } = await progressRepository.recordAnswer({
+    // Progress counterlari + daily record + streak (+ coin mint) BITTA atomik SQL statement'da.
+    const { updated, dailyStreak, duplicate, reason, coinBalance } = await progressRepository.recordAnswer({
       userId: uid, correct, questionId, date, subjectId, clientToken,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
@@ -58,13 +59,15 @@ router.post(
         return
       }
       // 'gate': anti-farm (avval to'g'ri yechilganiga yana to'g'ri) yoki kunlik
-      // kredit — counterlar yozilmaydi, LEKIN user FRESH javob bergan: feedback
-      // beriladi (aks holda client buni "offline" deb adashtirardi — pending →
-      // yakuniy natijada "unanswered" qolib ketardi).
+      // kredit — counterlar (va coin) yozilmaydi, LEKIN user FRESH javob bergan:
+      // feedback beriladi (aks holda client buni "offline" deb adashtirardi —
+      // pending → yakuniy natijada "unanswered" qolib ketardi).
       res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak: null, duplicate: true })
       return
     }
-    res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
+    // coin mint: FAQAT yangi to'g'ri javob (gate'dan o'tgan) — duplicate'lar 0.
+    const coinsEarned = correct ? COINS_PER_CORRECT_ANSWER : 0
+    res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak, coinsEarned, coinBalance })
   }),
 )
 

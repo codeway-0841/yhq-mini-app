@@ -135,6 +135,12 @@ export interface ApiUser {
   isAdmin?: boolean
   /** SMS marketing roziligi (opt-in) — faqat user o'zi yoqadi */
   smsOptIn?: boolean
+  /** #40: coin balansi (server SSOT — client faqat ko'rsatadi, o'zi yozmaydi) */
+  coins?: number
+  /** #40: do'konda sotib olingan buyum id'lari (shared/shop-items) */
+  ownedItems?: string[]
+  /** #40: joriy avatar ramkasi id (avatar-frames config) yoki null */
+  avatarFrame?: string | null
 }
 
 export interface ApiProgress {
@@ -465,6 +471,44 @@ export const api = {
   reviewCard: (userId: string, data: { subjectId: string; questionId: number; ef: number; interval: number; reps: number; dueAt: number }) =>
     request<{ ok: true }>('POST', `/progress/${uid(userId)}/cards/review`, data),
 
+  // ── Do'kon / Coins (#40) — userId server'da sessiyadan (client yubormaydi) ──
+  purchaseItem: (data: { itemId: string; purchaseId: string }) =>
+    request<PurchaseResponse>('POST', '/coins/purchase', data),
+
+  equipFrame: (itemId: string | null) =>
+    request<{ ok: true; avatarFrame: string | null }>('POST', '/coins/equip', { itemId }),
+
+  getCoinHistory: () =>
+    request<{ ok: true; rows: CoinTransactionRow[] }>('GET', '/coins/history'),
+
+  /** Kunlik vazifalar holati (progress server aggregate'idan) */
+  getCoinTasks: () =>
+    request<{ ok: true; date: string; tasks: CoinTaskState[] }>('GET', '/coins/tasks'),
+
+  /** Mukofotni olish — atomik, 1/kun (409 TASK_NOT_COMPLETED / TASK_ALREADY_CLAIMED) */
+  claimCoinTask: (taskId: string) =>
+    request<{ ok: true; balance: number; reward: number }>('POST', '/coins/claim-task', { taskId }),
+
+  // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
+  getMerchCatalog: () =>
+    request<{ ok: true; items: MerchCatalogItem[] }>('GET', '/coins/merch'),
+
+  buyMerch: (data: { itemId: string; purchaseId: string; fullName: string; phone: string; note?: string | null }) =>
+    request<{ ok: true; duplicate: boolean; orderId: number | null; balance: number }>('POST', '/coins/buy-merch', data),
+
+  getMyMerchOrders: () =>
+    request<{ ok: true; rows: MerchOrderRow[] }>('GET', '/coins/merch-orders'),
+
+  // Admin:
+  getAdminMerchOrders: (status?: string) =>
+    request<{ ok: true; rows: AdminMerchOrderRow[] }>('GET', `/admin/merch-orders${status ? `?status=${status}` : ''}`),
+
+  setMerchOrderStatus: (id: number, status: 'contacted' | 'delivered') =>
+    request<{ ok: true; id: number; status: string }>('PATCH', `/admin/merch-orders/${id}/status`, { status }),
+
+  cancelMerchOrder: (id: number) =>
+    request<{ ok: true; id: number; status: string }>('POST', `/admin/merch-orders/${id}/cancel`),
+
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
   /** TO'LIQ qatorlar (correctAnswer bilan) — public /questions endi javobsiz */
   getAdminQuestions: (subjectId?: string) =>
@@ -702,6 +746,71 @@ export interface ResultResponse {
   dailyStreak: number | null
   /** Shu clientToken allaqachon qabul qilingan */
   duplicate?: boolean
+  /** #40: shu javob uchun mint bo'lgan tangalar (0/1) — faqat yangi javobda */
+  coinsEarned?: number
+  /** #40: mint'dan keyingi server balansi (wrong javobda null) */
+  coinBalance?: number | null
+}
+
+/** Do'kon xaridi javobi (#40) */
+export interface PurchaseResponse {
+  ok: true
+  /** Idempotent retry (xuddi shu purchaseId) — double-debit YO'Q */
+  duplicate: boolean
+  /** Xariddan keyingi balans */
+  balance: number
+  /** premium-days consumable uchun yangilangan muddat */
+  premiumUntil: string | null
+}
+
+/** Coin tranzaksiyasi (tarix ko'rinishi) */
+export interface CoinTransactionRow {
+  delta: number
+  reason: string
+  refId: string
+  createdAt: string
+}
+
+/** Kunlik vazifa holati (#40 Faza 2) — server aggregate (client raqami ishonchsiz) */
+export interface CoinTaskState {
+  id: string
+  metric: 'answered' | 'correct' | 'fixed'
+  target: number
+  reward: number
+  progress: number
+  completed: boolean
+  claimed: boolean
+}
+
+/** Merch katalog itemi — server hisoblagan stock + user holati (#40 Faza 3) */
+export interface MerchCatalogItem {
+  id: string
+  price: number
+  remaining: number
+  alreadyOwned: boolean
+}
+
+/** Merch buyurtma qatori */
+export interface MerchOrderRow {
+  id: number
+  itemId: string
+  pricePaid: number
+  status: 'new' | 'contacted' | 'delivered' | 'cancelled'
+  createdAt: string
+}
+
+/** Admin merch buyurtma qatori (user ismi bilan) */
+export interface AdminMerchOrderRow {
+  id: number
+  user_id: string
+  first_name: string
+  item_id: string
+  full_name: string
+  phone: string
+  note: string | null
+  price_paid: number
+  status: string
+  created_at: string
 }
 
 export interface DailyState {  record: { date: string; subjectId: string; answered: number; correct: number; challengeDone: boolean } | null

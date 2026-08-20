@@ -114,6 +114,8 @@ export default function TestPage() {
   )
 
   const [toast, setToast]                     = useState<string | null>(null)
+  // 🪙 #40: coin pop qayta-trigger — har mint'da +1 animatsiya (auto-hide CSS'da)
+  const [coinPop, setCoinPop]                 = useState(0)
   const [zoomed, setZoomed]                   = useState(false)
   const [confirmExit, setConfirmExit]         = useState(false)
   const [studyOpen, setStudyOpen]             = useState(false)
@@ -359,6 +361,10 @@ export default function TestPage() {
         correctStreakRef.current += 1
         // 🔥 combo: har 3 ta ketma-ket to'g'ri javobda ko'tariladigan ovoz
         playSound(correctStreakRef.current % 3 === 0 ? 'combo' : 'success')
+        // 🪙 #40: server mint qilgan tangani vizual tasdiqlash (balans store'da yangilangan)
+        if ((outcome.coinsEarned ?? 0) > 0) {
+          setCoinPop((k) => k + 1)
+        }
       } else {
         correctStreakRef.current = 0
         playSound('error')
@@ -563,6 +569,20 @@ export default function TestPage() {
       {toast && (
         <div className="mx-4 mt-2 bg-orange-500/10 border border-orange-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl text-center">
           ⚠️ {toast}
+        </div>
+      )}
+
+      {/* 🪙 #40: mint bo'lgan tanga — suzuvchi pop (CSS animatsiya, 1.2s) */}
+      {coinPop > 0 && (
+        <div key={coinPop} className="coin-pop" aria-hidden>
+          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[13px] font-black text-pgold"
+            style={{
+              background: 'rgb(var(--p-gold-rgb) / 0.14)',
+              border: '1px solid rgb(var(--p-gold-rgb) / 0.5)',
+              boxShadow: '0 4px 18px rgb(var(--p-gold-rgb) / 0.35)',
+            }}>
+            🪙 +1
+          </span>
         </div>
       )}
 

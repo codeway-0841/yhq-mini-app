@@ -24,6 +24,7 @@ import { usersRepository } from '../users/users.repository'
 import { progressRepository } from '../progress/progress.repository'
 import { settingsRepository } from '../settings/settings.repository'
 import { savedRepository } from '../saved/saved.repository'
+import { coinsRepository } from '../coins/coins.repository'
 import { toApiUser, toApiProgress, toApiSettings } from '../users/users.service'
 import { hashPassword, verifyPassword } from '../../utils/password'
 import { verifyLoginWidget } from '../../utils/telegram'
@@ -149,17 +150,18 @@ async function issueSession(userId: string, provider: AuthProvider): Promise<str
 
 /** To'liq profile + ulangan provider'lar (login/me/link javoblarining umumiy tanasi). */
 async function buildAuthSession(userId: string) {
-  const [user, prog, sett, saved, providers, solvedKeys] = await Promise.all([
+  const [user, prog, sett, saved, providers, solvedKeys, economy] = await Promise.all([
     usersRepository.findById(userId),
     progressRepository.findByUserId(userId),
     settingsRepository.findByUserId(userId),
     savedRepository.findByUserId(userId),
     authRepository.listUserProviders(userId),
     progressRepository.listSolvedKeys(userId),   // P2: jsonb o'rniga jadval
+    coinsRepository.getEconomyState(userId),     // #40: balans + egalik
   ])
   if (!user || !prog || !sett) throw new AppError(500, 'auth_profile_incomplete')
   return {
-    user:           toApiUser(user),
+    user:           toApiUser(user, economy),
     progress:       toApiProgress(prog, solvedKeys),
     settings:       toApiSettings(sett),
     savedQuestions: saved,

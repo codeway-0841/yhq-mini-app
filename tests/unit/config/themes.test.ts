@@ -33,8 +33,8 @@ describe('config/themes — data integrity', () => {
       expect(t.card).toMatch(/^#[0-9a-f]{6}$/i)
       expect(t.label.uz.trim()).not.toBe('')
       expect(t.label.ru.trim()).not.toBe('')
-      // Sifati: total temalar 8-10 ta (30 ta oddiy tema EMAS)
-      expect(ACCENT_THEMES.length).toBeLessThanOrEqual(10)
+      // Sifati: total temalar 8-13 ta (30 ta oddiy tema EMAS; #40 coin-eksklyuziv: crimson/royal/arctic)
+      expect(ACCENT_THEMES.length).toBeLessThanOrEqual(13)
     }
   })
 
@@ -86,5 +86,36 @@ describe('resolveAccent — premium gating', () => {
 
   it('getAccentTheme nomaʼlum idʼda birinchi temani qaytaradi', () => {
     expect(getAccentTheme('???').id).toBe(ACCENT_THEMES[0].id)
+  })
+})
+
+describe('resolveAccent — COIN egaligi (#40)', () => {
+  // Coin-eksklyuziv temalar: premium:false + shop'da bor (crimson/royal/arctic)
+  const COIN_EXCLUSIVE = ACCENT_THEMES.filter((t) => !t.premium && t.id !== DEFAULT_ACCENT)
+
+  it('coin-eksklyuziv temalar egalikSIZ hech kimga ochilmaydi (premium ham emas)', () => {
+    expect(COIN_EXCLUSIVE.length).toBeGreaterThanOrEqual(3)
+    for (const t of COIN_EXCLUSIVE) {
+      expect(resolveAccent(t.id, false)).toBe(DEFAULT_ACCENT)
+      expect(resolveAccent(t.id, true)).toBe(DEFAULT_ACCENT)   // obuna coin-temani BUCHMAYDI
+    }
+  })
+
+  it('coin-eksklyuziv temani SOTIB OLgan user ochadi (free ham, premium ham)', () => {
+    for (const t of COIN_EXCLUSIVE) {
+      expect(resolveAccent(t.id, false, new Set([t.id]))).toBe(t.id)
+      expect(resolveAccent(t.id, true,  new Set([t.id]))).toBe(t.id)
+    }
+  })
+
+  it('premium temani coinʼga SOTIB OLgan FREE user ham ochadi (owned har qanday yoʼlni yopadi)', () => {
+    const firstPremium = ACCENT_THEMES.find((t) => t.premium)!
+    expect(resolveAccent(firstPremium.id, false, new Set([firstPremium.id]))).toBe(firstPremium.id)
+  })
+
+  it('egalik boshqalarga TEGMAYDI — egasiz user yopiq qoladi', () => {
+    const t = COIN_EXCLUSIVE[0]
+    expect(resolveAccent(t.id, false, new Set(['boshqa-item']))).toBe(DEFAULT_ACCENT)
+    expect(resolveAccent(t.id, false, new Set())).toBe(DEFAULT_ACCENT)
   })
 })

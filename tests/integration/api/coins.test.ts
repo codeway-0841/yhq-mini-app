@@ -1,0 +1,443 @@
+/**
+ * COINS iqtisodiyoti (FIXPLAN #40) — integration testlar (real test DB).
+ *
+ * Qamrov:
+ *  - MINT qoidalari: faqat gate'dan o'tgan TO'G'RI javob +1; xato/replay/gate → 0
+ *  - Purchase ATOMIK: race double-debit yo'q, idempotency (purchaseId retry),
+ *    already_owned guard, insufficient guard
+ *  - premium-days consumable: premium_until uzaydi, user_items YO'Q, tariff 'free' (C-1)
+ *  - Equip guard: egaliksiz ramka 403; egalikdan keyin users.avatar_frame yoziladi
+ */
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import request from 'supertest'
+import { randomBytes } from 'crypto'
+import { eq, sql } from 'drizzle-orm'
+import { createApp } from '../../../server/app'
+import { db, executeRows } from '../../../server/db/connection'
+import { questions, users } from '../../../server/schema'
+import { usersRepository } from '../../../server/modules/users/users.repository'
+import { authRepository } from '../../../server/modules/auth/auth.repository'
+import { coinsRepository } from '../../../server/modules/coins/coins.repository'
+import { getShopItem } from '../../../shared/shop-items'
+import { tashkentDate } from '../../../server/utils/date'
+
+const app = createApp()
+
+const USER_A = '990000004001'
+const USER_B = '990000004002'
+const IDS = [USER_A, USER_B]
+
+async function cleanup() {
+  for (const id of IDS) {
+    await db.delete(users).where(eq(users.id, id))   // FK cascade: coins/items/sessions/tokens
+  }
+}
+
+async function createUserWithSession(id: string): Promise<string> {
+  await usersRepository.initAtomic({ id, firstName: 'Coins', lastName: 'Test', username: '', photoUrl: '' })
+  await authRepository.ensureIdentity('telegram', id, id)
+  const token = randomBytes(32).toString('hex')
+  await authRepository.createSession({
+    token, userId: id, provider: 'telegram',
+    expiresAt: new Date(Date.now() + 3_600_000),
+  })
+  return token
+}
+
+/** DB orqali balans berish (300 ta javob mock'lash o'rniga — deterministik) */
+async function setBalance(userId: string, balance: number) {
+  await executeRows(sql`
+    INSERT INTO user_coins (user_id, balance) VALUES (${userId}, ${balance})
+    ON CONFLICT (user_id) DO UPDATE SET balance = ${balance}
+  `)
+}
+
+async function getBalance(userId: string): Promise<number> {
+  return (await coinsRepository.getEconomyState(userId)).coins
+}
+
+/** daily_records seed (vazifa/merch testlari progress'ini deterministik sozlash) */
+async function seedDaily(userId: string, answered: number, correct: number, fixed: number) {
+  await executeRows(sql`
+    INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
+    VALUES (${userId}, ${tashkentDate()}, 'yhq', ${answered}, ${correct}, ${fixed})
+    ON CONFLICT (user_id, date, subject_id) DO UPDATE SET
+      answered = EXCLUDED.answered, correct = EXCLUDED.correct, fixed = EXCLUDED.fixed
+  `)
+}
+
+let tokenA: string
+let tokenB: string
+
+beforeAll(async () => {
+  await cleanup()
+  tokenA = await createUserWithSession(USER_A)
+  tokenB = await createUserWithSession(USER_B)
+})
+
+afterAll(cleanup)
+
+describe('coins mint — faqat gate + to\'g\'ri javob', () => {
+  it('to\'g\'ri javob +1 coin mint qiladi; xato javob 0; replay qayta bermaydi', async () => {
+    const [q] = await db.select().from(questions).limit(1)
+    expect(q).toBeDefined()
+    const wrongOpt = Object.keys(q.optionsUz).find((k) => k !== q.correctAnswer) ?? '__x__'
+    const t1 = randomBytes(16).toString('hex')
+
+    // 1) XATO javob — mint yo'q
+    const wrong = await request(app).post(`/api/progress/${USER_A}/result`)
+      .send({ questionId: q.id, selectedAnswer: wrongOpt, subjectId: 'yhq', clientToken: t1 })
+      .expect(200)
+    expect(wrong.body.coinsEarned ?? 0).toBe(0)
+    expect(await getBalance(USER_A)).toBe(0)
+
+    // 2) TO'G'RI javob — +1 mint + balans javobda
+    const t2 = randomBytes(16).toString('hex')
+    const ok = await request(app).post(`/api/progress/${USER_A}/result`)
+      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t2 })
+      .expect(200)
+    expect(ok.body.coinsEarned).toBe(1)
+    expect(ok.body.coinBalance).toBe(1)
+    expect(await getBalance(USER_A)).toBe(1)
+
+    // 3) XUDDI SHU token replay — qayta mint YO'Q
+    const replay = await request(app).post(`/api/progress/${USER_A}/result`)
+      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t2 })
+      .expect(200)
+    expect(replay.body.duplicate).toBe(true)
+    expect(replay.body.coinsEarned ?? 0).toBe(0)
+    expect(await getBalance(USER_A)).toBe(1)
+
+    // 4) YANGI token, lekin anti-farm gate (bu savol allaqachon to'g'ri yechilgan) — mint YO'Q
+    const t3 = randomBytes(16).toString('hex')
+    const gate = await request(app).post(`/api/progress/${USER_A}/result`)
+      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t3 })
+      .expect(200)
+    expect(gate.body.duplicate).toBe(true)
+    expect(await getBalance(USER_A)).toBe(1)
+
+    // Ledger: bitta 'answer' qatori
+    const hist = await coinsRepository.getHistory(USER_A)
+    expect(hist.filter((h) => h.reason === 'answer').length).toBe(1)
+  })
+})
+
+describe('coins purchase — atomiklik', () => {
+  const THEME = 'crimson'          // 500c, accent-theme (durable)
+  const price = getShopItem(THEME)!.price
+
+  it('parallel xarid — FAQAT bitta debit (race double-charge yo\'q)', async () => {
+    await setBalance(USER_B, 1000)
+    const p1 = request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
+    const p2 = request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
+    const [r1, r2] = await Promise.all([p1, p2])
+    const statuses = [r1.status, r2.status].sort()
+    // biri 200 (ok), ikkinchisi 409 ITEM_ALREADY_OWNED (double-debit YO'Q)
+    expect(statuses).toEqual([200, 409])
+    expect(await getBalance(USER_B)).toBe(1000 - price)
+
+    const state = await coinsRepository.getEconomyState(USER_B)
+    expect(state.ownedItems).toContain(THEME)
+    const debits = (await coinsRepository.getHistory(USER_B)).filter((h) => h.reason === 'purchase')
+    expect(debits.length).toBe(1)
+  })
+
+  it('xuddi shu purchaseId retry — idempotent duplicate (qayta debit yo\'q)', async () => {
+    const before = await getBalance(USER_B)
+    const purchaseId = randomBytes(16).toString('hex')
+    await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'frame-neon', purchaseId })
+      .expect(200)
+    const mid = await getBalance(USER_B)
+    const retry = await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'frame-neon', purchaseId })
+      .expect(200)
+    expect(retry.body.duplicate).toBe(true)
+    expect(await getBalance(USER_B)).toBe(mid)
+    expect(before - mid).toBe(getShopItem('frame-neon')!.price)
+  })
+
+  it('balans yetarli bo\'lmasa — 409 COINS_INSUFFICIENT, balans o\'zgarmaydi', async () => {
+    // USER_B 'crimson'ni allaqachon olgan (race testi) — boshqa tema bilan tekshiramiz
+    await setBalance(USER_B, 10)
+    const res = await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'royal', purchaseId: randomBytes(16).toString('hex') })
+      .expect(409)
+    expect(res.body.error).toBe('COINS_INSUFFICIENT')
+    expect(await getBalance(USER_B)).toBe(10)
+  })
+
+  it('noma\'lum item — 404; auth\'siz — 401', async () => {
+    await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'nonexistent', purchaseId: randomBytes(16).toString('hex') })
+      .expect(404)
+    await request(app).post('/api/coins/purchase')
+      .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
+      .expect(401)
+  })
+})
+
+describe('coins — premium-days consumable + equip guard', () => {
+  it('premium-days: premium_until uzaydi, user_items yozilmaydi, tariff free qoladi (C-1), qayta olish mumkin', async () => {
+    await setBalance(USER_A, 1000)
+    const res = await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'premium-days-1', purchaseId: randomBytes(16).toString('hex') })
+      .expect(200)
+    expect(res.body.ok).toBe(true)
+    // timestamp-without-tz serializatsiyasi server TZ'ga bog'liq — aniq +23h emas,
+    // keng xavfsiz pastki chegara (+1 kunlik grant isboti uchun 18h yetarli):
+    expect(new Date(res.body.premiumUntil).getTime()).toBeGreaterThan(Date.now() + 18 * 3600_000)
+
+    const state = await coinsRepository.getEconomyState(USER_A)
+    expect(state.ownedItems).toHaveLength(0)          // consumable — egalik yozuvi YO'Q
+    const [u] = await db.select().from(users).where(eq(users.id, USER_A))
+    expect(u.tariff).toBe('free')                      // C-1: muddatli grant tariff'ga TEGMADI
+    expect(u.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
+
+    // Consumable'ni QAYTA sotib olish mumkin (yangi purchaseId)
+    await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'premium-days-1', purchaseId: randomBytes(16).toString('hex') })
+      .expect(200)
+    expect(await getBalance(USER_A)).toBe(1000 - 2 * getShopItem('premium-days-1')!.price)
+  })
+
+  it('equip: egaliksiz ramka 403; olingandan keyin ok; null — olib tashlash', async () => {
+    // Test mustaqilligi: oldingi xarajatlardan qat'iy nazar balansni tiklaymiz
+    await setBalance(USER_A, 1000)
+    // USER_A'da hali hech qanday ramka yo'q (faqat premium-days olgan)
+    const denied = await request(app).post('/api/coins/equip')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'frame-gold' })
+    expect(denied.status).toBe(403)
+    expect(denied.body.error).toBe('ITEM_NOT_OWNED')
+
+    // Sotib olamiz va equip qilamiz
+    await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'frame-gold', purchaseId: randomBytes(16).toString('hex') })
+      .expect(200)
+    const equipped = await request(app).post('/api/coins/equip')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'frame-gold' })
+      .expect(200)
+    expect(equipped.body.avatarFrame).toBe('frame-gold')
+    let [u] = await db.select().from(users).where(eq(users.id, USER_A))
+    expect(u.avatarFrame).toBe('frame-gold')
+
+    // Profil contract'da ham ko'rinadi (toApiUser enrichment)
+    const prof = await request(app).get(`/api/profile/${USER_A}`).expect(200)
+    expect(prof.body.user.avatarFrame).toBe('frame-gold')
+    expect(prof.body.user.ownedItems).toContain('frame-gold')
+    expect(typeof prof.body.user.coins).toBe('number')
+
+    // Olib tashlash
+    await request(app).post('/api/coins/equip')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: null })
+      .expect(200)
+    ;[u] = await db.select().from(users).where(eq(users.id, USER_A))
+    expect(u.avatarFrame).toBeNull()
+
+    // tema sotib olinganda ham equip shart emas — lekin avatar-frame bo'lmagan
+    // item'ni equip qilish rad etiladi (kind guard)
+    await request(app).post('/api/coins/equip')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'premium-days-1' })
+      .expect(404)
+  })
+
+  it('history endpoint — tangalar harakati tartibda qaytadi', async () => {
+    const res = await request(app).get('/api/coins/history')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(200)
+    expect(Array.isArray(res.body.rows)).toBe(true)
+    expect(res.body.rows.length).toBeGreaterThan(0)
+    const reasons = new Set(res.body.rows.map((r: { reason: string }) => r.reason))
+    expect([...reasons].every((r) => typeof r === 'string')).toBe(true)
+    // debits manfiy, mint musbat
+    for (const row of res.body.rows) {
+      expect(typeof row.delta).toBe('number')
+      expect(row.delta).not.toBe(0)
+    }
+  })
+})
+
+describe('coins — kunlik vazifalar (#40 Faza 2)', () => {
+  const date = tashkentDate()
+
+  it('GET /coins/tasks — progress server aggregate\'dan; claim atomik (1/kun)', async () => {
+    // 25 javob / 16 to'g'ri / 3 tuzatish: answers-20 ✓, correct-15 ✓, fix-5 ✗
+    await seedDaily(USER_A, 25, 16, 3)
+
+    const res = await request(app).get('/api/coins/tasks')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(200)
+    const byId = new Map(res.body.tasks.map((t: { id: string } & Record<string, unknown>) => [t.id, t]))
+    expect(byId.get('answers-20')).toMatchObject({ progress: 20, completed: true, claimed: false })
+    expect(byId.get('correct-15')).toMatchObject({ progress: 15, completed: true, claimed: false })
+    expect(byId.get('fix-5')).toMatchObject({ progress: 3, completed: false, claimed: false })
+
+    const before = await getBalance(USER_A)
+
+    // 1) Bajarilmaganini claim — 409
+    const notDone = await request(app).post('/api/coins/claim-task')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ taskId: 'fix-5' })
+    expect(notDone.status).toBe(409)
+    expect(notDone.body.error).toBe('TASK_NOT_COMPLETED')
+
+    // 2) Bajarilganini claim — +reward, balans yangilanadi
+    const claimed1 = await request(app).post('/api/coins/claim-task')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ taskId: 'answers-20' })
+      .expect(200)
+    expect(claimed1.body.reward).toBe(10)
+    expect(claimed1.body.balance).toBe(before + 10)
+
+    // 3) XUDDI SHU vazifani qayta claim — 409 (race/refresh'dan himoyalangan)
+    const again = await request(app).post('/api/coins/claim-task')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ taskId: 'answers-20' })
+    expect(again.status).toBe(409)
+    expect(again.body.error).toBe('TASK_ALREADY_CLAIMED')
+    expect(await getBalance(USER_A)).toBe(before + 10)   // double-credit YO'Q
+
+    // 4) Holat yangilanganda claimed:true
+    const after = await request(app).get('/api/coins/tasks')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(200)
+    const afterById = new Map(after.body.tasks.map((t: { id: string } & Record<string, unknown>) => [t.id, t]))
+    expect(afterById.get('answers-20')).toMatchObject({ claimed: true })
+
+    // Ledger'da 'task_claim' ref kuni bilan
+    const hist = await coinsRepository.getHistory(USER_A)
+    expect(hist.some((h) => h.reason === 'task_claim' && h.refId === `answers-20:${date}`)).toBe(true)
+  })
+
+  it('noma\'lum taskId — 404; auth\'siz — 401', async () => {
+    await request(app).post('/api/coins/claim-task')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ taskId: 'nonexistent' })
+      .expect(404)
+    await request(app).post('/api/coins/claim-task')
+      .send({ taskId: 'answers-20' })
+      .expect(401)
+    await request(app).get('/api/coins/tasks').expect(401)
+  })
+})
+
+describe('coins — MERCH buyurtmalari (#40 Faza 3)', () => {
+  const MERCH = 'nakleyka'            // 2500c, stock 20
+  const ORDER_INFO = { fullName: 'Test User', phone: '+998901112233', note: 'L o\'lcham' }
+
+  // Admin session: USER_B'ni admin qilamiz (faqat shu testda)
+  beforeAll(async () => {
+    await db.update(users).set({ isAdmin: true }).where(eq(users.id, USER_B))
+  })
+
+  it('buyMerch: debit + order + stock/1-per-user guard + idempotency + refund', async () => {
+    await seedDaily(USER_A, 0, 0, 0)   // task interference bo'lmasin
+    await setBalance(USER_A, 3000)
+
+    // 1) Muvaffaqiyatli buyurtma
+    const p1 = randomBytes(16).toString('hex')
+    const res = await request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: MERCH, purchaseId: p1, ...ORDER_INFO })
+      .expect(200)
+    expect(res.body.ok).toBe(true)
+    expect(res.body.orderId).toBeGreaterThan(0)
+    expect(await getBalance(USER_A)).toBe(3000 - 2500)
+
+    // 2) XUDDI SHU purchaseId — idempotent duplicate (qayta debit yo'q)
+    const dup = await request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: MERCH, purchaseId: p1, ...ORDER_INFO })
+      .expect(200)
+    expect(dup.body.duplicate).toBe(true)
+    expect(await getBalance(USER_A)).toBe(3000 - 2500)
+
+    // 3) 1-PER-USER: o'sha itemdan yana — 409 MERCH_ALREADY_OWNED
+    const again = await request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: MERCH, purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+    expect(again.status).toBe(409)
+    expect(again.body.error).toBe('MERCH_ALREADY_OWNED')
+
+    // 4) Tomon tomon: balans yetarli bo'lmasa — 409 COINS_INSUFFICIENT
+    await setBalance(USER_A, 100)
+    const insuf = await request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'kiyim', purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+    expect(insuf.status).toBe(409)
+    expect(insuf.body.error).toBe('COINS_INSUFFICIENT')
+
+    // 5) Admin: buyurtma ro'yxatda ko'rinadi + status oqimi
+    const list = await request(app).get('/api/admin/merch-orders')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .expect(200)
+    const order = (list.body.rows as { id: number; status: string }[]).find((o) => o.id === res.body.orderId)
+    expect(order?.status).toBe('new')
+
+    await request(app).patch(`/api/admin/merch-orders/${res.body.orderId}/status`)
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ status: 'contacted' })
+      .expect(200)
+
+    // 6) Admin CANCEL → ATOMIK refund (nosilane balans + ledger)
+    const preRefund = 100
+    const cancel = await request(app).post(`/api/admin/merch-orders/${res.body.orderId}/cancel`)
+      .set('Authorization', `Bearer ${tokenB}`)
+      .expect(200)
+    expect(cancel.body.status).toBe('cancelled')
+    expect(await getBalance(USER_A)).toBe(preRefund + 2500)   // 100 + refund
+    const hist = await coinsRepository.getHistory(USER_A)
+    expect(hist.some((h) => h.reason === 'merch_refund' && h.refId === `order:${res.body.orderId}`)).toBe(true)
+
+    // 7) Qayta cancel — 409 (refund ikki marta ISHLAMAYDI)
+    const recancel = await request(app).post(`/api/admin/merch-orders/${res.body.orderId}/cancel`)
+      .set('Authorization', `Bearer ${tokenB}`)
+    expect(recancel.status).toBe(409)
+    expect(await getBalance(USER_A)).toBe(preRefund + 2500)   // o'zgarmadi
+
+    // 8) Bekor qilingandan keyin user item'dan YANA olishi mumkin (faol buyurtma yo'q)
+    await setBalance(USER_A, 3000)
+    const re = await request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: MERCH, purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+      .expect(200)
+    expect(re.body.ok).toBe(true)
+  })
+
+  it('admin-only: oddiy user admin endpointga kira olmaydi; authsiz — 401', async () => {
+    // USER_A admin emas
+    await request(app).get('/api/admin/merch-orders')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(403)
+    await request(app).post('/api/coins/buy-merch')
+      .send({ itemId: MERCH, purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+      .expect(401)
+  })
+
+  it('GET /coins/merch — katalog + zaxira + alreadyOwned holati', async () => {
+    const res = await request(app).get('/api/coins/merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(200)
+    const byId = new Map(res.body.items.map((i: { id: string } & Record<string, unknown>) => [i.id, i]))
+    // Test davomida 1 ta FAOL nakleyka bor (8-qadam) → remaining = stock-1
+    expect(byId.get('nakleyka')).toMatchObject({ alreadyOwned: true })
+    expect(byId.get('sumka')).toMatchObject({ alreadyOwned: false })
+    const nakleykaRemaining = byId.get('nakleyka')?.remaining as number
+    expect(nakleykaRemaining).toBeGreaterThanOrEqual(0)
+  })
+})

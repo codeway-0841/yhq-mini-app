@@ -14,8 +14,10 @@ import { users, progress, userSettings } from '../../schema'
 
 type UserRow = typeof users.$inferSelect
 
-/** JSON-safe user shape (canonical TEXT id) — matches the frontend ApiUser type. */
-export function toApiUser(row: UserRow) {
+/** JSON-safe user shape (canonical TEXT id) — matches the frontend ApiUser type.
+ *  `economy` (FIXPLAN #40): coins balansi + ownedItems — coinsRepository'dan;
+ *  o'tkazilmasa 0/[] (economy'siz eski yo'llar buzilmaydi). */
+export function toApiUser(row: UserRow, economy: { coins: number; ownedItems: string[] } = { coins: 0, ownedItems: [] }) {
   // Effective premium: lifetime tarif YOKI referal mukofot muddati tugamagan
   const isPremium = row.tariff === 'premium'
     || (row.premiumUntil != null && row.premiumUntil > new Date())
@@ -30,6 +32,10 @@ export function toApiUser(row: UserRow) {
     isAdmin:   row.isAdmin,
     /** SMS marketing roziligi (opt-in) — Profil toggle holati */
     smsOptIn:  row.smsOptIn,
+    /** #40: coin balansi + do'konbuyumlari egaligi + joriy avatar ramkasi */
+    coins:      economy.coins,
+    ownedItems: economy.ownedItems,
+    avatarFrame: row.avatarFrame ?? null,
   }
 }
 
@@ -67,6 +73,7 @@ import { progressRepository }     from '../progress/progress.repository'
 import { settingsRepository }     from '../settings/settings.repository'
 import { savedRepository }        from '../saved/saved.repository'
 import { authRepository }         from '../auth/auth.repository'
+import { coinsRepository }        from '../coins/coins.repository'
 import { consumeOTPWithLockout }  from '../auth/otp'
 import { AppError }               from '../../middleware/error-handler'
 
@@ -116,12 +123,13 @@ export const usersService = {
     // idempotent — middleware initData resolve'si DB'siz shunga tayanadi)
     await authRepository.ensureIdentity('telegram', uid, uid)
 
-    const [user, prog, sett, saved, solvedKeys] = await Promise.all([
+    const [user, prog, sett, saved, solvedKeys, economy] = await Promise.all([
       usersRepository.findById(uid),
       progressRepository.findByUserId(uid),
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
       progressRepository.listSolvedKeys(uid),   // P2: jsonb o'rniga jadval
+      coinsRepository.getEconomyState(uid),     // #40: balans + egalik
     ])
 
     // ── Referal: `start_param=ref_<userId>` — FAQAT yangi foydalanuvchi uchun.
@@ -145,7 +153,7 @@ export const usersService = {
 
     if (!user || !prog || !sett) throw new AppError(500, 'init_incomplete')
     return {
-      user:           toApiUser(user),
+      user:           toApiUser(user, economy),
       progress:       toApiProgress(prog, solvedKeys),
       settings:       toApiSettings(sett),
       savedQuestions: saved,

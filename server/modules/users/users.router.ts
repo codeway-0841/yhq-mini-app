@@ -14,6 +14,7 @@ import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constant
 import { progressRepository }                        from '../progress/progress.repository'
 import { settingsRepository }                        from '../settings/settings.repository'
 import { savedRepository }                           from '../saved/saved.repository'
+import { coinsRepository }                           from '../coins/coins.repository'
 import { usersRepository }                           from './users.repository'
 
 const router = Router()
@@ -35,12 +36,13 @@ router.get(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    const [user, prog, sett, saved, solvedKeys] = await Promise.all([
+    const [user, prog, sett, saved, solvedKeys, economy] = await Promise.all([
       usersRepository.findById(uid),
       progressRepository.findByUserId(uid),
       settingsRepository.findByUserId(uid),
       savedRepository.findByUserId(uid),
       progressRepository.listSolvedKeys(uid),   // P2: jsonb o'rniga jadval
+      coinsRepository.getEconomyState(uid),     // #40: balans + egalik
     ])
 
     if (!user) throw new AppError(404, 'User not found')
@@ -48,7 +50,7 @@ router.get(
     if (!prog || !sett) throw new AppError(404, 'User profile incomplete — call /init first')
 
     res.json({
-      user:           toApiUser(user),
+      user:           toApiUser(user, economy),
       progress:       toApiProgress(prog, solvedKeys),
       settings:       toApiSettings(sett),
       savedQuestions: saved,
