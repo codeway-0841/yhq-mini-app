@@ -385,6 +385,11 @@ export const api = {
     percent?: number
   }) => request<{ success: boolean; sentToTelegram: boolean; message?: string }>('POST', '/certificate/send', payload),
 
+  /** Umumiy rasm-natija ulashish (#48): Telegram WebView'da navigator.share/download
+   *  ishlamaydi — bot user chatiga yuboradi, user u yerdan forward qiladi. */
+  sendShareImage: (payload: { imageBase64: string; caption: string; fileName?: string }) =>
+    request<{ ok: boolean; sentToTelegram: boolean; message?: string }>('POST', '/share/image', payload),
+
   getQuestions: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)

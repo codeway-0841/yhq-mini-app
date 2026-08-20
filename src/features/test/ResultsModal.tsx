@@ -3,6 +3,7 @@ import { RotateCcw, Share2, X, BookOpen, Award, ImageDown } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
+import { api } from '../../shared/api'
 import { shareUrl } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
@@ -42,6 +43,7 @@ export default function ResultsModal({
 }) {
   const [showCertificate, setShowCertificate] = useState(false)
   const [sharingImage, setSharingImage] = useState(false)
+  const [imageSentToBot, setImageSentToBot] = useState(false)
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
@@ -50,7 +52,11 @@ export default function ResultsModal({
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
   const passed     = percent >= threshold && !disqualifiedByCheat
 
-  /** #48 — natijani RASM qilib ulashish: canvas karta → Web Share (fayl) → fallback shareUrl + yuklab olish. */
+  /** #48 — natijani RASM qilib ulashish. Muhimlilik tartibi:
+   *  1) Web Share (files) — brauzer/tashqi WebView'da ishlaydi
+   *  2) BOT orqali chatga — Telegram WebView'da navigator.share YO'Q va
+   *     `<a download>` blob jimgina ishlamaydi → bu YAGONA kafolatli yo'l
+   *  3) shareUrl (matn) — oxirgi fallback */
   const handleShareImage = async () => {
     if (sharingImage) return
     haptics.impact('light')
@@ -79,21 +85,38 @@ export default function ResultsModal({
       const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'))
       const file = blob ? new File([blob], `kiwi-result-${percent}pct.png`, { type: 'image/png' }) : null
 
+      // 1) Haqiqiy Web Share (brauzer va ba'zi WebView'larda)
       if (file && navigator.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], title: 'KIWI', text: `${shareText}\n${link}` })
-        return
+        try {
+          await navigator.share({ files: [file], title: 'KIWI', text: `${shareText}\n${link}` })
+          return
+        } catch (err) {
+          if ((err as Error).name === 'AbortError') return // user bekor qildi
+          // boshqa xato — keyingi yo'lga tushamiz
+        }
       }
-      // Fallback: Telegram matn-share + rasmni qurilmaga yuklab olish (qo'lda yuboriladi)
+
+      // 2) Bot orqali shaxsiy chatga (Telegram WebView'da kafolatli)
+      try {
+        const res = await api.sendShareImage({
+          imageBase64: canvas.toDataURL('image/png'),
+          caption:     `${shareText}\n${link}`,
+          fileName:    `kiwi-result-${percent}pct.png`,
+        })
+        if (res.sentToTelegram) {
+          playSound('win')
+          haptics.notify('success')
+          setImageSentToBot(true)
+          return
+        }
+      } catch (err) {
+        console.warn('[share-image bot send]', err)
+      }
+
+      // 3) Oxirgi fallback — matn-share
       shareUrl(link, shareText)
-      if (blob) {
-        const a = document.createElement('a')
-        a.href = URL.createObjectURL(blob)
-        a.download = `kiwi-result-${percent}pct.png`
-        a.click()
-        setTimeout(() => URL.revokeObjectURL(a.href), 1000)
-      }
     } catch (err) {
-      if ((err as Error).name !== 'AbortError') console.warn('[share-image]', err)
+      console.warn('[share-image]', err)
     } finally {
       setSharingImage(false)
     }
@@ -225,8 +248,7 @@ export default function ResultsModal({
           </button>
         </div>
 
-        {/* 🖼 Natijani RASM qilib ulashish (#48) — canvas karta; Web Share bo'lmasa
-            matn-share + rasm yuklab olish fallback */}
+        {/* 🖼 Natijani RASM qilib ulashish (#48) — Web Share → bot chat → matn fallback */}
         <button
           onClick={handleShareImage}
           disabled={sharingImage}
@@ -234,6 +256,11 @@ export default function ResultsModal({
           <ImageDown size={15} />
           {sharingImage ? '...' : tt('shareResultImage')}
         </button>
+        {imageSentToBot && (
+          <p className="mt-2 text-center text-[11.5px] font-bold text-duo-green animate-fadeIn">
+            {tt('shareResultImageSent')}
+          </p>
+        )}
 
         {/* ✉️ Matn + referal link bilan ulashish */}
         <button
