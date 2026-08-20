@@ -5,6 +5,7 @@ import { usersRepository } from '../../../server/modules/users/users.repository'
 import { progressRepository } from '../../../server/modules/progress/progress.repository'
 import { settingsRepository } from '../../../server/modules/settings/settings.repository'
 import { savedRepository } from '../../../server/modules/saved/saved.repository'
+import { coinsRepository } from '../../../server/modules/coins/coins.repository'
 import { hashPassword } from '../../../server/utils/password'
 import { AppError } from '../../../server/middleware/error-handler'
 import { config } from '../../../server/config'
@@ -12,6 +13,9 @@ import { config } from '../../../server/config'
 describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () => {
   beforeEach(() => {
     vi.restoreAllMocks()
+    // #40: buildAuthSession endi getEconomyState ham chaqiradi — mock'siz real
+    // DB'ga urinadi (CI'da DATABASE_URL=db.invalid → test yiqilardi)
+    vi.spyOn(coinsRepository, 'getEconomyState').mockResolvedValue({ coins: 0, ownedItems: [] })
   })
 
   describe('phoneUserId helper', () => {
