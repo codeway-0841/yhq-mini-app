@@ -7,6 +7,7 @@ import { useAppStore } from '../store/useAppStore'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
+import DialogOverlay from './DialogOverlay'
 
 interface PromoCodeModalProps {
   language: Lang
@@ -65,7 +66,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
+    <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
       <div className="relative w-full max-w-sm rounded-3xl bg-surface border border-line p-6 shadow-2xl overflow-hidden">
         {/* Glow accent */}
@@ -109,7 +110,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
               <Ticket size={24} />
             </div>
 
-            <h3 className="text-base font-black text-fg text-center mb-1">
+            <h3 id="promo-code-title" className="text-base font-black text-fg text-center mb-1">
               {tt('promoCodeTitle')}
             </h3>
 
@@ -158,6 +159,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         )}
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

@@ -19,7 +19,7 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
   // Length
   if (password.length < 8) {
     feedback.push(language === 'ru' ? 'Минимум 8 символов' : 'Kamida 8 belgi')
-    return { score: 0, feedback, color: '#ef4444', label: language === 'ru' ? 'Очень слабый' : 'Juda zaif' }
+    return { score: 0, feedback, color: 'var(--p-danger)', label: language === 'ru' ? 'Очень слабый' : 'Juda zaif' }
   }
 
   // Character requirements
@@ -34,7 +34,7 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
   if (!hasSpecial) feedback.push(language === 'ru' ? 'Добавьте спецсимвол' : 'Maxsus belgi qo\'shing')
 
   if (feedback.length > 0) {
-    return { score: 1, feedback, color: '#f97316', label: language === 'ru' ? 'Слабый' : 'Zaif' }
+    return { score: 1, feedback, color: 'var(--p-warning)', label: language === 'ru' ? 'Слабый' : 'Zaif' }
   }
 
   // Calculate strength (clamped to 2-5)
@@ -55,7 +55,13 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
   // Clamp score to valid range
   score = Math.min(5, Math.max(0, score)) as PasswordStrength['score']
 
-  const colors = ['#ef4444', '#f97316', '#eab308', '#84cc16', '#22c55e', '#10b981']
+  // Semantik rampa: danger → warning → gold → success (temadan mustaqil tokenlar)
+  const colors = [
+    'var(--p-danger)', 'var(--p-warning)', 'var(--p-gold)',
+    'color-mix(in srgb, var(--p-gold) 45%, var(--p-success))',
+    'var(--p-success)',
+    'color-mix(in srgb, var(--p-success) 70%, var(--p-blue))',
+  ]
   const labelsUz = ['Juda zaif', 'Zaif', 'Qoniqarli', 'O\'rtacha', 'Kuchli', 'Juda kuchli']
   const labelsRu = ['Очень слабый', 'Слабый', 'Приемлемый', 'Средний', 'Сильный', 'Очень сильный']
 

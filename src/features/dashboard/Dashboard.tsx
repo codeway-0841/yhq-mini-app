@@ -251,7 +251,7 @@ export default function Dashboard() {
             <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
               onClick={goTopics} />
             <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
-              iconColor="#8b5cf6" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
+              iconColor="var(--p-purple)" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
             <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
               badge={mistakesCount || null} onClick={goMistakes} />
             <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}

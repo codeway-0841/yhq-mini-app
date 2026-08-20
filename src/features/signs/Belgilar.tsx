@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { X, Search } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../content/signs'
+import DialogOverlay from '../../shared/components/DialogOverlay'
 
 interface Sign {
   id: string; name: string; shortName: string
@@ -15,12 +16,11 @@ interface Category {
 
 function SignModal({ sign, onClose }: { sign: Sign; onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title">
       <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-base font-bold">Belgi haqida</h2>
-          <button onClick={onClose} className="text-muted hover:text-fg"><X size={20} /></button>
+          <h2 id="sign-modal-title" className="text-base font-bold">Belgi haqida</h2>
+          <button onClick={onClose} className="text-muted hover:text-fg" aria-label="Yopish"><X size={20} /></button>
         </div>
         <div className="w-32 h-32 mx-auto rounded-2xl bg-white flex items-center justify-center mb-4">
           {sign.image
@@ -36,7 +36,7 @@ function SignModal({ sign, onClose }: { sign: Sign; onClose: () => void }) {
           Yopish
         </button>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }
 

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { ZoomIn, ZoomOut, RotateCcw, X } from 'lucide-react'
 import { haptics } from '../../platform/haptics'
+import DialogOverlay from './DialogOverlay'
 
 interface ImageZoomModalProps {
   src: string
@@ -21,14 +22,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
     setPosition({ x: 0, y: 0 })
   }, [src])
 
-  // Handle ESC key to close
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [onClose])
+  // Escape — DialogOverlay (nested stack) boshqaradi; qo'shimcha listener KERAK EMAS
 
   const zoomIn = useCallback(() => {
     setScale((prev) => {
@@ -145,13 +139,22 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
   }
 
   return (
-    <div
-      className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-between p-4 select-none touch-none animate-fadeIn"
-      onClick={onClose}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
+    <DialogOverlay
+      onClose={onClose}
+      position="center"
+      zIndex={60}
+      labelId="image-zoom-title"
+      className="select-none touch-none animate-fadeIn !p-0"
+      backdropClassName="bg-black/95 backdrop-blur-md"
     >
+      <div
+        className="absolute inset-0 flex flex-col items-center justify-between p-4"
+        onClick={onClose}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+      >
       {/* Top Bar: Title & Close Button */}
+      <span id="image-zoom-title" className="sr-only">{alt}</span>
       <div className="w-full flex items-center justify-between text-white z-10" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center gap-2">
           <span className="text-xs font-bold bg-white/10 border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
@@ -226,6 +229,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
           <ZoomIn size={18} />
         </button>
       </div>
-    </div>
+      </div>
+    </DialogOverlay>
   )
 }

@@ -104,7 +104,7 @@ export default function TestlarPage() {
         {cards.map((m) => {
           const d = DIFF[m.diff]
           // Rang intizomi (v2.1): neytral kulrang default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
-          const boxColor = m.danger ? 'var(--p-danger)' : '#94a3b8'
+          const boxColor = m.danger ? 'var(--p-danger)' : 'var(--p-subtle)'
           const ringColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R
@@ -115,7 +115,10 @@ export default function TestlarPage() {
               {/* Icon box — neytral (yoki danger uchun qizil) */}
               <div className="relative flex-shrink-0">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                  style={{ background: `${boxColor}14`, border: `1.5px solid ${boxColor}40` }}>
+                  style={{
+                    background: `color-mix(in srgb, ${boxColor} 8%, transparent)`,
+                    border: `1.5px solid color-mix(in srgb, ${boxColor} 25%, transparent)`,
+                  }}>
                   {m.iconBox === 'num' && (
                     <span className="text-[17px] font-black" style={{ color: boxColor }}>{m.numText}</span>
                   )}

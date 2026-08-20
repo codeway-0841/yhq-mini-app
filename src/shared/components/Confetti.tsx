@@ -5,7 +5,7 @@ import { useMemo } from 'react'
  * Ranglar aksent temaga ergashadi (--p-primary).
  * `noAnimation` yoki OS reduced-motion'da avtomatik yashirinadi (index.css).
  */
-const COLORS = ['var(--p-primary)', '#facc15', '#3b82f6', '#8b5cf6']
+const COLORS = ['var(--p-primary)', 'var(--p-gold)', 'var(--p-blue)', 'var(--p-purple)']
 
 export default function Confetti({ count = 30 }: { count?: number }) {
   const pieces = useMemo(() => Array.from({ length: count }, (_, i) => ({

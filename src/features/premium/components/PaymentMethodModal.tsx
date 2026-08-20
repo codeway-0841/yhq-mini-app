@@ -7,6 +7,7 @@ import { openTelegramLink } from '../../../platform/telegram'
 import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 interface PaymentMethodModalProps {
   plan: PremiumPlan
@@ -114,9 +115,12 @@ export default function PaymentMethodModal({
   }
 
   return (
-    <div
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-fadeIn"
-      onClick={onClose}
+    <DialogOverlay
+      onClose={onClose}
+      position="center"
+      labelId="payment-method-title"
+      className="animate-fadeIn"
+      backdropClassName="bg-black/80 backdrop-blur-sm"
     >
       {isSuccess && <Confetti count={40} />}
 
@@ -131,7 +135,7 @@ export default function PaymentMethodModal({
               <Sparkles size={16} />
             </div>
             <div>
-              <h2 className="text-base font-black">
+              <h2 id="payment-method-title" className="text-base font-black">
                 {lang === 'ru' ? 'Оплата подписки' : "To'lov usulini tanlang"}
               </h2>
               <p className="text-xs text-pmuted">
@@ -266,6 +270,6 @@ export default function PaymentMethodModal({
           </div>
         )}
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

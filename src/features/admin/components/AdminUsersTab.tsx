@@ -3,6 +3,7 @@ import { Search, Crown, User, Shield, Loader2, X, RotateCw, AlertCircle } from '
 import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 export default function AdminUsersTab() {
   const [users, setUsers] = useState<AdminUserItem[]>([])
@@ -214,7 +215,7 @@ export default function AdminUsersTab() {
 
       {/* Grant Modal */}
       {selectedUser && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
+        <DialogOverlay onClose={() => setSelectedUser(null)} position="center" labelId="grant-premium-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
           <div className="relative w-full max-w-sm rounded-3xl bg-surface border border-line p-6 shadow-2xl overflow-hidden">
             <button
               onClick={() => setSelectedUser(null)}
@@ -223,7 +224,7 @@ export default function AdminUsersTab() {
               <X size={16} />
             </button>
 
-            <h3 className="text-base font-black text-fg mb-1 flex items-center gap-2">
+            <h3 id="grant-premium-title" className="text-base font-black text-fg mb-1 flex items-center gap-2">
               <Crown size={18} className="text-duo-purple" />
               Premium berish
             </h3>
@@ -293,7 +294,7 @@ export default function AdminUsersTab() {
               </div>
             )}
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* Toast */}

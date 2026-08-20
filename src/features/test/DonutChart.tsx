@@ -48,7 +48,7 @@ export default function DonutChart({ correct, total, threshold = 90, hideVerdict
       <svg viewBox="0 0 140 140" className="w-full h-full -rotate-90">
         <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--theme-line)" strokeWidth="14" />
         {shownWrong > 0 && (
-          <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ef4444" strokeWidth="14"
+          <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--p-danger)" strokeWidth="14"
             strokeDasharray={`${shownWrong} ${circumference}`}
             strokeDashoffset={-shownArc} />
         )}

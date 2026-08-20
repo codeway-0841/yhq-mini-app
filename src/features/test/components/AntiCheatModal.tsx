@@ -19,7 +19,10 @@ export default function AntiCheatModal({
   const isFinalWarning = strike === maxStrikes - 1
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
+    // QASDDAN DialogOverlay'siz: ogohlantirish faqat "Tushundim" tugmasi bilan yopiladi
+    // (Escape/backdrop-yopish anti-cheat ogohlantirishini aylanib o'tishga yo'l qo'ymasligi shart)
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
+      role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
       <div className="w-full max-w-sm rounded-3xl bg-surface border-2 border-duo-red/60 p-6 text-center shadow-2xl relative overflow-hidden">
         {/* Yuqori aksent nuri */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-36 h-36 bg-duo-red/25 rounded-full blur-2xl pointer-events-none" />
@@ -28,11 +31,11 @@ export default function AntiCheatModal({
           {isFinalWarning ? <AlertOctagon size={34} /> : <ShieldAlert size={34} />}
         </div>
 
-        <h3 className="text-lg font-black text-fg mb-1">
+        <h3 id="anticheat-title" className="text-lg font-black text-fg mb-1">
           {tt('antiCheatWarningTitle')}
         </h3>
 
-        <p className="text-xs text-subtle leading-relaxed mb-4">
+        <p id="anticheat-desc" className="text-xs text-subtle leading-relaxed mb-4">
           {tt('antiCheatWarningDesc')}
         </p>
 

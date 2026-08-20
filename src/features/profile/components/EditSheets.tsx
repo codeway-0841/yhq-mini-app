@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Camera, ImagePlus, Trash2, X, Pencil } from 'lucide-react'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 // ── Bottom sheet — profil rasmini tahrirlash ────────────────────────────
 export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
@@ -10,11 +11,10 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
   onRemove: () => void
 }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title">
       <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-        <p className="text-sm font-bold mb-4 flex items-center justify-center gap-2">
+        <p id="photo-edit-title" className="text-sm font-bold mb-4 flex items-center justify-center gap-2">
           <Camera size={14} className="text-duo-green" />
           Profil rasmi
         </p>
@@ -38,7 +38,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
           </button>
         </div>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }
 
@@ -50,11 +50,10 @@ export function NameEditSheet({ current, onClose, onSave }: {
 }) {
   const [name, setName] = useState(current)
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/60" onClick={onClose} />
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
       <div className="relative w-full bg-surface rounded-t-2xl border-t border-line p-5 pb-8">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-        <p className="text-sm font-bold mb-3 flex items-center justify-center gap-2">
+        <p id="name-edit-title" className="text-sm font-bold mb-3 flex items-center justify-center gap-2">
           <Pencil size={14} className="text-duo-blue" />
           Ismni o'zgartirish
         </p>
@@ -72,6 +71,6 @@ export function NameEditSheet({ current, onClose, onSave }: {
           Saqlash
         </button>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

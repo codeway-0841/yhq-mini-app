@@ -22,6 +22,7 @@ import {
   parseSmartTextQuestions,
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 interface BulkImportModalProps {
   subjectId: string
@@ -221,12 +222,12 @@ export default function BulkImportModal({
   })
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
+    <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-lg rounded-3xl bg-surface border border-line p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-line">
           <div>
-            <h2 className="text-base font-black text-fg flex items-center gap-2">
+            <h2 id="bulk-import-title" className="text-base font-black text-fg flex items-center gap-2">
               <Upload size={18} className="text-duo-purple" />
               Mukammal Savollar Importi
             </h2>
@@ -538,12 +539,12 @@ export default function BulkImportModal({
         </div>
       </div>
 
-      {/* In-Modal Single Question Edit Popup */}
+      {/* In-Modal Single Question Edit Popup (nested overlay: Escape faqat shuni yopadi) */}
       {editingItem && (
-        <div className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 space-y-3 shadow-2xl">
+        <DialogOverlay onClose={() => setEditingItem(null)} position="center" zIndex={60} labelId="bulk-edit-title" backdropClassName="bg-black/85 backdrop-blur-md">
+          <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 space-y-3 shadow-2xl relative">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-black text-fg">Savolni tahrirlash</h3>
+              <h3 id="bulk-edit-title" className="text-sm font-black text-fg">Savolni tahrirlash</h3>
               <button onClick={() => setEditingItem(null)} className="p-1 text-muted">
                 <X size={16} />
               </button>
@@ -608,8 +609,8 @@ export default function BulkImportModal({
               Saqlash
             </button>
           </div>
-        </div>
+        </DialogOverlay>
       )}
-    </div>
+    </DialogOverlay>
   )
 }

@@ -90,9 +90,9 @@ Joy: `progress.repository.ts` recordAnswer CTE + ehtimol yangi jadval (migratsiy
 - Link/adopt FOR UPDATE Neon'da soxta edi — qisman yengillashtirildi (C4), qolgani CTE-guard'larda
 
 **Frontend/config:**
-- SettingsModal ikonkalar hardcoded rangda (qoida №8: neytral #94a3b8); ~59 joyda hardcoded hex (Onboarding, RoundScreen, LeaderboardPage...) → token'lar
+- ✅ Hex → token partiyasi (hex-token sessiyasi): SettingsModal ikonkalar `var(--p-subtle)` + color-mix, GridCards/Section `iconColor` default token + color-mix (hex-alpha konkat bekor — `var()26` ishlamaydi!), Carousel/Onboarding/Testlar/Speed/Donut/Statistika/Streak/Profil/LinkAccount/Dashboard/PremiumPage tokenlashtirildi; PasswordStrengthMeter semantik rampa token-asosida; yangi tokenlar: `--p-gold-deep/--p-on-gold/--p-gold-rgb/--p-success-rgb` (+tailwind `pgolddeep`/`pongold`), `.btn-premium-gold` token'li. ISTISNOLAR (hujjatli): subjects.tsx UI_MAP + themes.ts + achievements.ts + content/* (canonical config), Google/Telegram/Click brend ranglari, canvas .ts (var ishlamaydi).
+- ✅ Modal a11y — umumiy Sheet (`DialogOverlay`): nested stack (faqat eng yuqori Escape/Tab), body scroll-lock + focus restore, Tab dinamik trap, zIndex/className/backdropClassName — SettingsModal×2/ResultsModal/EditSheets×2/PromoCode/Payment/Belgilar/Celebrations×2/Certificate/ExamReview/CustomRoom/AdminPromo/Users/Questions×2/BulkImport×2/Broadcast/ImageZoom. ISTISNO: AntiCheatModal — `role="alertdialog"` (qasddan Escape/backdrop YO'Q, "Tushundim" majburiy), Darslik fullscreen (sahifa-view, modal emas). Test: `DialogOverlay.test.tsx` 8/8. (2026-08-20)
 - ✅ LoginPage i18n (6 matn: `authTelegramLogin` + yangi authCodeExpired/authTelegramNotConfigured/authSmsCodeSent/authBack/authTgSharePhone, UZ+RU). Qolgan: Profil.tsx:70,93-101, useDuelConnection:48,164,205
-- Modal a11y: `role="dialog" aria-modal`, Escape, focus-trap — umumiy Sheet komponent
 - ✅ `yhq-session` `ACCOUNT_STORAGE_KEYS` ro'yxatida (reset'da eski session ham o'chadi; event'siz — xavfsizlik tahlili bilan, MF-3)
 - `App.tsx:75` key={pathname} remount — faqat CSS transition qoldiring
 - ✅ Outbox load() raw-string keshi — getOutboxCount har render'da JSON.parse QILMAYDI (MF-2)

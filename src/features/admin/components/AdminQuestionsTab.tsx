@@ -17,6 +17,7 @@ import { SUBJECT_BASES, type SubjectId } from '../../../../shared/subjects'
 import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 interface AdminQuestionsTabProps {
   lang: 'uz' | 'ru'
@@ -299,8 +300,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
 
       {/* Delete Confirmation Modal */}
       {deleteConfirm && (
-        <div className="fixed inset-0 z-50 flex items-end" onClick={() => setConfirm(null)}>
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+        <DialogOverlay onClose={() => setConfirm(null)} backdropClassName="bg-black/60 backdrop-blur-sm" labelId="delete-question-title">
           <div
             className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
             onClick={(e) => e.stopPropagation()}
@@ -310,7 +310,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               <div className="w-14 h-14 rounded-2xl bg-duo-red/15 border border-duo-red/40 flex items-center justify-center mb-3">
                 <AlertTriangle size={28} className="text-duo-red" />
               </div>
-              <p className="text-[17px] font-black text-fg mb-1">#{deleteConfirm.id} savolni o'chirish</p>
+              <p id="delete-question-title" className="text-[17px] font-black text-fg mb-1">#{deleteConfirm.id} savolni o'chirish</p>
               <p className="text-[13px] text-muted mb-4">
                 Bu amalni ortga qaytarib bo'lmaydi. Savol bazadan butunlay o'chiriladi.
               </p>
@@ -337,7 +337,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               </button>
             </div>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* Bulk Import Modal */}
@@ -471,8 +471,7 @@ function QuestionForm({
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onCancel} />
+    <DialogOverlay onClose={onCancel} labelId="question-editor-title">
       <div
         className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
@@ -480,7 +479,7 @@ function QuestionForm({
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-3" />
         <div className="flex items-center justify-between mb-3">
           <div>
-            <h2 className="font-black text-fg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
+            <h2 id="question-editor-title" className="font-black text-fg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
             <span className="text-[11px] text-duo-purple font-bold">Fan: {subjectName}</span>
           </div>
           <button onClick={onCancel} className="p-1.5"><X size={18} /></button>
@@ -633,6 +632,6 @@ function QuestionForm({
           </button>
         </form>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

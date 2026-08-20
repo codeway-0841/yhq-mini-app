@@ -324,12 +324,16 @@ body[data-no-animation='true'] .route-page { animation: none; }
 
   /* Semantik + qo'shimcha aksentlar (temadan mustaqil) */
   --p-success:     #22c55e;
+  --p-success-rgb: 34 197 94;
   --p-warning:     #f59e0b;
   --p-danger:      #ef4444;
   --p-purple:      #8b5cf6;   /* AI/Premium — ba'zi temalar override qiladi */
   --p-purple-rgb:  139 92 246;
   --p-blue:        #3b82f6;
-  --p-gold:        #facc15;
+  --p-gold:        #facc15;   /* Premium oltin — gradient jufti + ustidagi matn bilan birga */
+  --p-gold-rgb:    250 204 21;
+  --p-gold-deep:   #eab308;
+  --p-on-gold:     #241a00;
 }
 
 body[data-theme='light'] {
@@ -729,17 +733,17 @@ body[data-theme='light'] .dashboard-page .dashboard-avatar-ring {
 }
 .btn-premium-ai:active { transform: scale(0.97); }
 
-/* Premium oltin CTA (obuna) */
+/* Premium oltin CTA (obuna) — token'li: pgold → pgold-deep, matn pon-gold */
 .btn-premium-gold {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #fde047 0%, #facc15 50%, #eab308 100%);
-  color: #241a00;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--p-gold) 82%, #fff) 0%, var(--p-gold) 50%, var(--p-gold-deep) 100%);
+  color: var(--p-on-gold);
   font-weight: 700;
-  box-shadow: 0 8px 22px rgba(250, 204, 21, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 22px rgb(var(--p-gold-rgb) / 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
   transition: transform 0.12s ease, filter 0.2s ease;
 }
 .btn-premium-gold:active { transform: scale(0.97); filter: brightness(0.96); }

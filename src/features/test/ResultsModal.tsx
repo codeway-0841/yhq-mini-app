@@ -9,6 +9,7 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
+import DialogOverlay from '../../shared/components/DialogOverlay'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
@@ -128,15 +129,14 @@ export default function ResultsModal({
   }, [disqualifiedByCheat])
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
+    <DialogOverlay onClose={onFinish} labelId="results-title">
       {passed && !hideVerdict && !disqualifiedByCheat && <Confetti />}
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onFinish} />
       <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
         <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg transition-colors">
           <X size={16} />
         </button>
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
-        <h2 className="text-center text-lg font-black mb-1">{tt('results')}</h2>
+        <h2 id="results-title" className="text-center text-lg font-black mb-1">{tt('results')}</h2>
 
         {disqualifiedByCheat && (
           <div className="mb-4 bg-duo-red/15 border-2 border-duo-red/60 rounded-2xl p-4 text-center">
@@ -285,6 +285,6 @@ export default function ResultsModal({
           />
         )}
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

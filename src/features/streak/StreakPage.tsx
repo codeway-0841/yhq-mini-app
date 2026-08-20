@@ -122,9 +122,12 @@ export default function StreakPage() {
         {/* 🧊 Streak Freeze — Premium himoya (1 kunlik chegara) */}
         {isPremium && (
           <div className="mt-2 flex items-center gap-1.5 rounded-full px-3.5 py-1.5"
-            style={{ background: 'rgba(59, 130, 246, 0.10)', border: '1px solid rgba(59, 130, 246, 0.3)' }}>
+            style={{
+              background: 'color-mix(in srgb, var(--p-blue) 10%, transparent)',
+              border: '1px solid color-mix(in srgb, var(--p-blue) 30%, transparent)',
+            }}>
             <span className="text-[12px]">🧊</span>
-            <span className="text-[11.5px] font-bold" style={{ color: '#3b82f6' }}>
+            <span className="text-[11.5px] font-bold" style={{ color: 'var(--p-blue)' }}>
               {lang === 'ru' ? 'Заморозка серии активна (1 день)' : 'Streak Freeze faol (1 kun himoya)'}
             </span>
           </div>

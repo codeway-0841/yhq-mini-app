@@ -8,6 +8,7 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
+import DialogOverlay from '../../shared/components/DialogOverlay'
 import { drawCertificate } from './certificate-canvas'
 
 interface CertificateModalProps {
@@ -173,7 +174,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
+    <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-lg card-neon rounded-3xl p-5 border border-lineStrong max-h-[92vh] overflow-y-auto flex flex-col items-center">
         {/* Close Button */}
         <button
@@ -187,7 +188,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         {/* Title */}
         <div className="flex items-center gap-2 mb-3 mt-1">
           <Award className="text-pgold" size={24} />
-          <h3 className="text-base font-black text-fg">{tt('certOfficialTitle')}</h3>
+          <h3 id="certificate-title" className="text-base font-black text-fg">{tt('certOfficialTitle')}</h3>
         </div>
 
         {/* Direct High-Resolution Canvas Display */}
@@ -266,6 +267,6 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
             : '💡 Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
         </p>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

@@ -22,8 +22,8 @@ function Dots({ active }: { active: number }) {
 // ── Umumiy ekran o'rashi ────────────────────────────────────────────────────
 function Screen({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col"
-      style={{ background: 'linear-gradient(180deg, #0a1520 0%, #0d1a2b 100%)' }}>
+    <div className="min-h-screen flex flex-col bg-pcanvas"
+      style={{ background: 'linear-gradient(180deg, var(--p-canvas) 0%, var(--p-surface) 100%)' }}>
       <div className="flex flex-col flex-1 px-6 pt-14 pb-6 max-w-md mx-auto w-full">
         {children}
       </div>
@@ -32,10 +32,10 @@ function Screen({ children }: { children: React.ReactNode }) {
 }
 
 function GreenTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-[26px] font-black text-white text-center leading-tight">{children}</h2>
+  return <h2 className="text-[26px] font-black text-pfg text-center leading-tight">{children}</h2>
 }
 function Sub({ children }: { children: React.ReactNode }) {
-  return <p className="text-[13px] font-semibold text-center mt-2" style={{ color: '#7f93ab' }}>{children}</p>
+  return <p className="text-[13px] font-semibold text-center mt-2" style={{ color: 'var(--p-subtle)' }}>{children}</p>
 }
 function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
@@ -85,7 +85,7 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-white/70 active:opacity-60">
+        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">
@@ -102,17 +102,17 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
               className={`flex items-center gap-3.5 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                 !s.available ? 'opacity-55' : ''
               } ${
-                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-[#12202f]'
+                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-pcard'
               }`}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-none"
                 style={{ background: `${s.color}26`, color: s.color }}>
                 <Icon size={22} />
               </div>
-              <span className="flex-1 text-[15px] font-bold text-white">
+              <span className="flex-1 text-[15px] font-bold text-pfg">
                 {lang === 'ru' ? s.nameRu : s.name}
               </span>
               {!s.available && (
-                <span className="text-[10px] font-extrabold uppercase tracking-wide text-white/40 flex-none">
+                <span className="text-[10px] font-extrabold uppercase tracking-wide text-psubtle flex-none">
                   {lang === 'ru' ? 'Скоро' : 'Tez kunda'}
                 </span>
               )}
@@ -136,10 +136,10 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
 
 // ══════════════════════ 3. MAQSAD TANLASH ═══════════════════════════════════
 const GOALS = [
-  { id: '15',  label: '15 daqiqa', desc: 'Yengil rejim',   color: '#1cb0f6' },
-  { id: '30',  label: '30 daqiqa', desc: 'O\u2019rtacha rejim', color: '#58cc02' },
-  { id: '60',  label: '1 soat',    desc: 'Samarali rejim', color: '#ce82ff' },
-  { id: '120', label: '2 soat +',  desc: 'Intensiv rejim', color: '#ff9600' },
+  { id: '15',  label: '15 daqiqa', desc: 'Yengil rejim',   color: 'var(--p-blue)' },
+  { id: '30',  label: '30 daqiqa', desc: 'O\u2019rtacha rejim', color: 'var(--p-success)' },
+  { id: '60',  label: '1 soat',    desc: 'Samarali rejim', color: 'var(--p-purple)' },
+  { id: '120', label: '2 soat +',  desc: 'Intensiv rejim', color: 'var(--p-warning)' },
 ]
 
 function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: () => void }) {
@@ -148,7 +148,7 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-white/70 active:opacity-60">
+        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">
@@ -161,15 +161,15 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
           return (
             <button key={g.id} onClick={() => setGoal(g.id)}
               className={`flex items-center gap-3.5 w-full rounded-2xl border-2 p-4 text-left transition-all active:scale-[0.98] ${
-                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-[#12202f]'
+                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-pcard'
               }`}>
               <div className="w-11 h-11 rounded-full flex items-center justify-center flex-none"
-                style={{ background: `${g.color}26`, color: g.color }}>
+                style={{ background: `color-mix(in srgb, ${g.color} 15%, transparent)`, color: g.color }}>
                 <Clock3 size={22} />
               </div>
               <div className="flex-1">
-                <p className="text-[15px] font-black text-white leading-tight">{g.label}</p>
-                <p className="text-[11px] font-semibold mt-0.5" style={{ color: '#7f93ab' }}>{g.desc}</p>
+                <p className="text-[15px] font-black text-pfg leading-tight">{g.label}</p>
+                <p className="text-[11px] font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>{g.desc}</p>
               </div>
               <span className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-none transition-all ${
                 active ? 'border-duo-green' : 'border-line'
@@ -183,14 +183,14 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
 
       {/* Maqsad kartasi */}
       <div className="mt-4 rounded-2xl border border-line p-3.5 flex items-center gap-3"
-        style={{ background: '#12202f' }}>
+        style={{ background: 'var(--p-card)' }}>
         <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-none"
-          style={{ background: '#ff4b4b26' }}>
+          style={{ background: 'color-mix(in srgb, var(--p-danger) 15%, transparent)' }}>
           <Rocket size={20} className="text-duo-red" />
         </div>
         <div>
-          <p className="text-[13px] font-black text-white">Maqsadga erishamiz! 🚀</p>
-          <p className="text-[11px] font-semibold mt-0.5" style={{ color: '#7f93ab' }}>
+          <p className="text-[13px] font-black text-pfg">Maqsadga erishamiz! 🚀</p>
+          <p className="text-[11px] font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>
             Doimiy o'rganish — muvaffaqiyat kaliti.
           </p>
         </div>

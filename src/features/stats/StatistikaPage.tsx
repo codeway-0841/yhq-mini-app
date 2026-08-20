@@ -105,10 +105,10 @@ export default function StatistikaPage() {
       {/* Katta raqamlar — 2x2 */}
       <div className="grid grid-cols-2 gap-3 px-5 mt-3">
         {[
-          { icon: Star,    color: '#facc15', value: xp.toLocaleString(), label: 'XP' },
-          { icon: Flame,   color: '#f59e0b', value: `${streak}`,        label: lang === 'ru' ? 'дней подряд' : 'kun seriya' },
+          { icon: Star,    color: 'var(--p-gold)', value: xp.toLocaleString(), label: 'XP' },
+          { icon: Flame,   color: 'var(--p-warning)', value: `${streak}`,        label: lang === 'ru' ? 'дней подряд' : 'kun seriya' },
           { icon: TrendingUp, color: 'var(--p-primary)', value: `${level}`, label: 'Level' },
-          { icon: Target,  color: '#3b82f6', value: `${accuracy}%`,    label: lang === 'ru' ? 'точность' : 'aniqlik' },
+          { icon: Target,  color: 'var(--p-blue)', value: `${accuracy}%`,    label: lang === 'ru' ? 'точность' : 'aniqlik' },
         ].map((c, i) => (
           <div key={i} className="card-premium p-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"

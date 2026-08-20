@@ -1,5 +1,6 @@
 import { memo, useEffect } from 'react'
 import Confetti from '../../../shared/components/Confetti'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { playSound } from '../../../shared/lib/sounds'
 
 // ══ Streak MILESTONE sahna — 7/14/30/60/100 kunga yetganda to'liq ekran ═════
@@ -18,13 +19,12 @@ export const MilestoneScene = memo(function MilestoneScene({ streak, lang, onClo
 }) {
   useEffect(() => { playSound('win') }, [])
   return (
-    <div className="fixed inset-0 z-[70] flex items-center justify-center p-6">
+    <DialogOverlay onClose={onClose} position="center" zIndex={70} labelId="milestone-title" backdropClassName="bg-black/80 backdrop-blur-sm" className="p-6">
       <Confetti count={40} />
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
       <div className="relative card-premium rounded-[28px] p-8 text-center max-w-[300px] w-full animate-premiumIn"
         style={{ borderColor: 'rgba(245, 158, 11, 0.40)', boxShadow: '0 0 60px -12px rgba(245, 158, 11, 0.40)' }}>
         <div className="text-6xl mb-3" style={{ filter: 'drop-shadow(0 0 16px rgba(245,158,11,0.7))' }}>🔥</div>
-        <p className="text-[13px] font-semibold text-pwarning uppercase tracking-[0.14em] mb-1">
+        <p id="milestone-title" className="text-[13px] font-semibold text-pwarning uppercase tracking-[0.14em] mb-1">
           {lang === 'ru' ? 'НОВЫЙ РЕКОРД' : 'YANGI YUTUQ'}
         </p>
         <p className="text-[42px] font-bold text-pfg leading-none tabular-nums">{streak}</p>
@@ -35,7 +35,7 @@ export const MilestoneScene = memo(function MilestoneScene({ streak, lang, onClo
           {lang === 'ru' ? 'Продолжить' : 'Davom etish'}
         </button>
       </div>
-    </div>
+    </DialogOverlay>
   )
 })
 
@@ -45,13 +45,12 @@ export const LevelUpScene = memo(function LevelUpScene({ level, lang, onClose }:
 }) {
   useEffect(() => { playSound('win') }, [])
   return (
-    <div className="fixed inset-0 z-[70] flex items-center justify-center p-6">
+    <DialogOverlay onClose={onClose} position="center" zIndex={70} labelId="levelup-title" backdropClassName="bg-black/80 backdrop-blur-sm" className="p-6">
       <Confetti count={40} />
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
       <div className="relative card-premium rounded-[28px] p-8 text-center max-w-[300px] w-full animate-premiumIn"
         style={{ borderColor: 'rgb(var(--p-purple-rgb) / 0.40)', boxShadow: '0 0 60px -12px rgb(var(--p-purple-rgb) / 0.40)' }}>
         <div className="text-6xl mb-3" style={{ filter: 'drop-shadow(0 0 16px rgb(var(--p-purple-rgb) / 0.7))' }}>🏆</div>
-        <p className="text-[13px] font-semibold text-ppurple uppercase tracking-[0.14em] mb-1">
+        <p id="levelup-title" className="text-[13px] font-semibold text-ppurple uppercase tracking-[0.14em] mb-1">
           {lang === 'ru' ? 'НОВЫЙ УРОВЕНЬ' : 'YANGI LEVEL'}
         </p>
         <p className="text-[42px] font-bold text-pfg leading-none tabular-nums">{level}</p>
@@ -62,6 +61,6 @@ export const LevelUpScene = memo(function LevelUpScene({ level, lang, onClose }:
           {lang === 'ru' ? 'Вперёд!' : 'Oldinga!'}
         </button>
       </div>
-    </div>
+    </DialogOverlay>
   )
 })

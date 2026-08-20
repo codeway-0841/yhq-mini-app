@@ -13,11 +13,13 @@ import { useT } from '../i18n'
 import { ACCENT_THEMES, getAccentTheme, resolveAccent } from '../config/themes'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
+import DialogOverlay from './DialogOverlay'
 
 type LucideIcon = typeof Play
 type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'subject' | 'reminderTime' | null
 
-/** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv */
+/** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv.
+ *  iconColor — CSS-token (var(--p-*)); alpha color-mix bilan aralashadi (hex-konkat YO'Q). */
 function Row({ icon: Icon, iconColor, label, children }: {
   icon: LucideIcon
   iconColor: string
@@ -27,7 +29,7 @@ function Row({ icon: Icon, iconColor, label, children }: {
   return (
     <div className="flex items-center gap-3 py-3 border-b border-line last:border-0">
       <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none"
-        style={{ background: `${iconColor}26` }}>
+        style={{ background: `color-mix(in srgb, ${iconColor} 15%, transparent)` }}>
         <Icon size={17} style={{ color: iconColor }} />
       </div>
       <span className="flex-1 text-sm font-semibold text-fg">{label}</span>
@@ -102,8 +104,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const valueBtn = 'flex items-center gap-1 text-[13px] font-bold text-muted active:text-fg transition-colors'
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end" role="dialog" aria-modal="true" aria-labelledby="settings-title">
-      <div className="absolute inset-0 bg-black/75 backdrop-blur-sm" onClick={onClose} />
+    <DialogOverlay onClose={onClose} labelId="settings-title">
       <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
         <div className="p-5 pb-0">
           <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
@@ -117,36 +118,36 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
         {/* Kontent — scrollable */}
         <div className="flex-1 overflow-y-auto px-5">
-          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextCorrect')}>
+          <Row icon={Play} iconColor="var(--p-subtle)" label={tt('autoNextCorrect')}>
             <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
           </Row>
-          <Row icon={Play} iconColor="#94a3b8" label={tt('autoNextWrong')}>
+          <Row icon={Play} iconColor="var(--p-subtle)" label={tt('autoNextWrong')}>
             <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
           </Row>
-          <Row icon={Zap} iconColor="#94a3b8" label={tt('noAnimation')}>
+          <Row icon={Zap} iconColor="var(--p-subtle)" label={tt('noAnimation')}>
             <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
           </Row>
-          <Row icon={Shuffle} iconColor="#94a3b8" label={tt('shuffleOptions')}>
+          <Row icon={Shuffle} iconColor="var(--p-subtle)" label={tt('shuffleOptions')}>
             <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
           </Row>
 
           {/* Shrift o'lchami — picker */}
           <button className="w-full text-left" onClick={() => setPicker('fontSize')} aria-label={`${tt('fontSize')}: ${fontSizeLabel}`}>
-            <Row icon={Type} iconColor="#94a3b8" label={tt('fontSize')}>
+            <Row icon={Type} iconColor="var(--p-subtle)" label={tt('fontSize')}>
               <span className={valueBtn}>{fontSizeLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Shrift uslubi — picker */}
           <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
-            <Row icon={Type} iconColor="#94a3b8" label={tt('fontStyle')}>
+            <Row icon={Type} iconColor="var(--p-subtle)" label={tt('fontStyle')}>
               <span className={valueBtn}>{fontStyleLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
 
           {/* Ilova tili — picker */}
           <button className="w-full text-left" onClick={() => setPicker('language')} aria-label={`${tt('langLabel')}: ${languageLabel}`}>
-            <Row icon={Globe} iconColor="#94a3b8" label={tt('langLabel')}>
+            <Row icon={Globe} iconColor="var(--p-subtle)" label={tt('langLabel')}>
               <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
             </Row>
           </button>
@@ -160,7 +161,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
           {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
           <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
-            <Row icon={Palette} iconColor="#94a3b8" label={tt('accentThemeLabel')}>
+            <Row icon={Palette} iconColor="var(--p-subtle)" label={tt('accentThemeLabel')}>
               <span className={valueBtn}>
                 <span className="w-4 h-4 rounded-full border border-line"
                   style={{ background: getAccentTheme(accent).color }} />
@@ -172,7 +173,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           </button>
 
           {/* Kunlik eslatma — switch */}
-          <Row icon={Bell} iconColor="#94a3b8" label={tt('dailyReminder')}>
+          <Row icon={Bell} iconColor="var(--p-subtle)" label={tt('dailyReminder')}>
             <Toggle checked={local.dailyReminder !== false}
               onChange={(c) => {
                 set('dailyReminder', c)
@@ -183,7 +184,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           {/* Eslatma vaqti — faqat eslatma yoqiq bo'lsa */}
           {local.dailyReminder !== false && (
             <button className="w-full text-left" onClick={() => setPicker('reminderTime')} aria-label={`${tt('dailyReminderTime')}: ${local.dailyReminderTime || '20:00'}`}>
-              <Row icon={Clock} iconColor="#94a3b8" label={tt('dailyReminderTime')}>
+              <Row icon={Clock} iconColor="var(--p-subtle)" label={tt('dailyReminderTime')}>
                 <span className={valueBtn}>{local.dailyReminderTime || '20:00'} <ChevronRight size={14} /></span>
               </Row>
             </button>
@@ -192,8 +193,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <button
             onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
             className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none" style={{ background: '#94a3b826' }}>
-              <Flag size={17} style={{ color: '#94a3b8' }} />
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none" style={{ background: 'color-mix(in srgb, var(--p-subtle) 15%, transparent)' }}>
+              <Flag size={17} style={{ color: 'var(--p-subtle)' }} />
             </div>
             <span className="flex-1 text-sm font-semibold text-left text-fg">{tt('reportIssue')}</span>
           </button>
@@ -264,13 +265,12 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
         />
       )}
 
-      {/* Aksent temasi sheet'i — premium temalar 🔒 */}
+      {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
-        <div className="fixed inset-0 z-50 flex items-end">
-          <div className="absolute inset-0 bg-black/60" onClick={() => setPicker(null)} />
+        <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
           <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[82vh] flex flex-col">
             <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5 flex-none" />
-            <p className="flex items-center justify-center gap-2 text-base font-black mb-1 flex-none">
+            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-black mb-1 flex-none">
               <Palette size={18} className="text-muted" />
               {tt('accentThemeLabel')}
             </p>
@@ -340,7 +340,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
               })}
             </div>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {picker === 'reminderTime' && (
@@ -359,6 +359,6 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           ]}
         />
       )}
-    </div>
+    </DialogOverlay>
   )
 }

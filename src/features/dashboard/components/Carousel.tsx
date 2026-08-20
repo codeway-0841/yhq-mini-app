@@ -4,10 +4,12 @@ import { Zap, Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'luci
 import { type Lang, useT } from '../../../shared/i18n'
 
 // ── Slide config — har slayd o'z route/action'iga o'tadi ────────────────────
+// Rang intizomi (v2.1): semantik tokenlar — aksent (davom), warning (kunlik),
+// purple (Premium), blue (duel), gold (liga sovrini). Hex-alpha konkat YO'Q —
+// tokenlar color-mix bilan aralashadi.
 interface SlideConfig {
   icon: LucideIcon
   color: string
-  colorDark: string
   title: (lang: Lang) => string
   subtitle: (lang: Lang) => string
   route?: string
@@ -18,35 +20,35 @@ interface SlideConfig {
 const SLIDES: SlideConfig[] = [
   {
     icon: GraduationCap,
-    color: '#58cc02', colorDark: '#46a302',
+    color: 'var(--p-primary)',
     title: (l) => l === 'ru' ? 'Продолжить обучение' : 'Darsni davom ettiring',
     subtitle: (l) => l === 'ru' ? 'С того места, где остановились' : "To'xtagan joyingizdan",
     useOnContinue: true,
   },
   {
     icon: Zap,
-    color: '#ff9600', colorDark: '#e59400',
+    color: 'var(--p-warning)',
     title: (l) => l === 'ru' ? 'Ежедневный вызов' : 'Kunlik mashq',
     subtitle: (l) => l === 'ru' ? '10 вопросов · +50 XP' : '10 ta savol · +50 XP',
     route: '/adaptive',
   },
   {
     icon: Crown,
-    color: '#ce82ff', colorDark: '#a85ed4',
+    color: 'var(--p-purple)',
     title: (l) => l === 'ru' ? 'Попробуйте Premium' : 'Premium sinab ko\'ring',
     subtitle: (l) => l === 'ru' ? 'Без рекламы · Полный доступ' : 'Reklamasiz · To\'liq kirish',
     route: '/premium',
   },
   {
     icon: Swords,
-    color: '#1cb0f6', colorDark: '#1899d6',
+    color: 'var(--p-blue)',
     title: (l) => l === 'ru' ? 'Дуэль с друзьями' : 'Do\'stlar bilan duel',
     subtitle: (l) => l === 'ru' ? 'Кто ответит быстрее?' : 'Kim tezroq javob beradi?',
     route: '/octagon',
   },
   {
     icon: Trophy,
-    color: '#ff4b4b', colorDark: '#d93f3f',
+    color: 'var(--p-gold)',
     title: (l) => l === 'ru' ? 'Еженедельная лига' : 'Haftalik liga',
     subtitle: (l) => l === 'ru' ? 'Поднимайтесь в рейтинге' : 'Reytingda ko\'taring',
     route: '/reyting',
@@ -75,7 +77,10 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       {/* Icon tile */}
       <div
         className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-        style={{ background: `${config.color}1F`, border: `1px solid ${config.color}4D` }}
+        style={{
+          background: `color-mix(in srgb, ${config.color} 12%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${config.color} 30%, transparent)`,
+        }}
       >
         <Icon size={19} style={{ color: config.color }} />
       </div>

@@ -83,16 +83,16 @@ export default function PremiumPage() {
       {/* Hero — dark glass + oltin */}
       <div className="mx-5 mt-2 rounded-[28px] p-6 text-center relative overflow-hidden"
         style={{
-          background: 'linear-gradient(160deg, rgba(250,204,21,0.10) 0%, var(--p-card) 55%)',
-          border: '1px solid rgba(250, 204, 21, 0.30)',
-          boxShadow: '0 0 60px -20px rgba(250, 204, 21, 0.35)',
+          background: 'linear-gradient(160deg, rgb(var(--p-gold-rgb) / 0.10) 0%, var(--p-card) 55%)',
+          border: '1px solid rgb(var(--p-gold-rgb) / 0.30)',
+          boxShadow: '0 0 60px -20px rgb(var(--p-gold-rgb) / 0.35)',
         }}>
         <div className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-4"
           style={{
-            background: 'linear-gradient(135deg, #fde047, #eab308)',
-            boxShadow: '0 8px 24px rgba(250, 204, 21, 0.35)',
+            background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
+            boxShadow: '0 8px 24px rgb(var(--p-gold-rgb) / 0.35)',
           }}>
-          <Crown size={30} className="text-[#241a00]" fill="currentColor" />
+          <Crown size={30} className="text-pongold" fill="currentColor" />
         </div>
         <h2 className="text-[24px] font-bold tracking-tight">KIWI Premium</h2>
         <p className="text-[13px] text-pmuted mt-1.5 leading-relaxed max-w-[260px] mx-auto">
@@ -103,7 +103,11 @@ export default function PremiumPage() {
         {isPremium && (
           <div className="mt-4 flex flex-col items-center gap-1">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold"
-              style={{ background: 'rgba(34,197,94,0.15)', border: '1px solid rgba(34,197,94,0.4)', color: '#22c55e' }}>
+              style={{
+                background: 'rgb(var(--p-success-rgb) / 0.15)',
+                border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
+                color: 'var(--p-success)',
+              }}>
               <Check size={13} /> {lang === 'ru' ? 'Подписка активна' : 'Obuna faol'}
             </span>
             {user?.premiumUntil ? (
@@ -200,9 +204,9 @@ export default function PremiumPage() {
               return (
                 <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
                   className="card-premium relative w-full p-4 text-left active:scale-[0.98] transition-transform"
-                  style={highlight ? { borderColor: 'var(--p-gold)', borderWidth: 1.5, boxShadow: '0 0 30px -8px rgba(250,204,21,0.35)' } : undefined}>
+                  style={highlight ? { borderColor: 'var(--p-gold)', borderWidth: 1.5, boxShadow: '0 0 30px -8px rgb(var(--p-gold-rgb) / 0.35)' } : undefined}>
                   {highlight && (
-                    <span className="absolute -top-2.5 left-4 bg-gradient-to-r from-[#fde047] to-[#eab308] text-[#241a00] text-[9.5px] font-black uppercase tracking-wide px-2.5 py-1 rounded-full">
+                     <span className="absolute -top-2.5 left-4 bg-gradient-to-r from-pgold to-pgolddeep text-pongold text-[9.5px] font-black uppercase tracking-wide px-2.5 py-1 rounded-full">
                       ★ {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
                     </span>
                   )}

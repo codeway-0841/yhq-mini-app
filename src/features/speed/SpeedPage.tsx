@@ -116,7 +116,7 @@ export default function SpeedPage() {
 
   const R = 30, C = 2 * Math.PI * R
   const pct       = timeLeft / TIME_LIMIT
-  const ringColor = timeLeft <= 3 ? '#ef4444' : timeLeft <= 5 ? '#f59e0b' : 'var(--p-primary)'
+  const ringColor = timeLeft <= 3 ? 'var(--p-danger)' : timeLeft <= 5 ? 'var(--p-warning)' : 'var(--p-primary)'
   const score     = answers.filter((a) => a === 'correct').length
 
   const results: QuestionResult[] = qs.map((question, i) => ({

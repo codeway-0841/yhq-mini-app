@@ -23,7 +23,7 @@ export interface ItemProps {
   onPress?: () => void
   disabled?: boolean
 }
-export function Item({ icon: Icon, iconColor = '#94a3b8', label, right, onPress, disabled }: ItemProps) {
+export function Item({ icon: Icon, iconColor = 'var(--p-subtle)', label, right, onPress, disabled }: ItemProps) {
   const Comp = onPress ? 'button' : 'div'
   return (
     <Comp
@@ -34,7 +34,10 @@ export function Item({ icon: Icon, iconColor = '#94a3b8', label, right, onPress,
       }`}
     >
       <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
-        style={{ background: `${iconColor}1A`, border: `1px solid ${iconColor}2E` }}>
+        style={{
+          background: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${iconColor} 18%, transparent)`,
+        }}>
         <Icon size={15} style={{ color: iconColor }} />
       </div>
       <span className="flex-1 text-[14px] text-left text-fg">{label}</span>

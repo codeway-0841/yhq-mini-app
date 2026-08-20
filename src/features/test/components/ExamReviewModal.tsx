@@ -7,6 +7,7 @@ import { lessons } from '../../../content/lessons'
 import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 function formatImageSrc(src?: string | null): string | undefined {
   if (!src) return undefined
@@ -59,12 +60,12 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/80 backdrop-blur-md animate-premiumIn">
+    <DialogOverlay onClose={onClose} position="center" labelId="exam-review-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-xl bg-surface border border-line rounded-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
         {/* Header */}
         <div className="p-4 border-b border-line flex items-center justify-between bg-card/60">
           <div>
-            <h3 className="text-base font-black text-fg flex items-center gap-2">
+            <h3 id="exam-review-title" className="text-base font-black text-fg flex items-center gap-2">
               <BookOpen size={18} className="text-duo-green" />
               {tt('examReviewTitle')}
             </h3>
@@ -256,6 +257,6 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           onClose={() => setZoomedImage(null)}
         />
       )}
-    </div>
+    </DialogOverlay>
   )
 }

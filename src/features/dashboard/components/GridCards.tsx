@@ -3,8 +3,9 @@ import React from 'react'
 
 // ── Grid Card (rejimlar — eski vertikal) ───────────────────────────────────────
 /* Rang intizomi (v2.1): default ikonlar NEYTRAL kulrang — faqat AI/Premium binafsha,
-   badge'lar esa semantik (qizil = xato soni). */
-export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = '#94a3b8', onClick }: {
+   badge'lar esa semantik (qizil = xato soni). Ranglar CSS-token (var(--p-*)),
+   shuning uchun alpha color-mix bilan aralashadi, hex-konkatenatsiya bilan EMAS. */
+export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-subtle)', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -24,7 +25,11 @@ export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconC
         </span>
       )}
       <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E`, boxShadow: `0 0 16px ${iconColor}33` }}>
+        style={{
+          backgroundColor: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${iconColor} 18%, transparent)`,
+          boxShadow: `0 0 16px color-mix(in srgb, ${iconColor} 20%, transparent)`,
+        }}>
         <Icon size={17} strokeWidth={2.2} style={{ color: iconColor }} />
       </div>
       <span className="text-[12px] font-semibold text-pfg text-left leading-tight">{label}</span>
@@ -49,7 +54,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
         boxShadow: '0 6px 16px rgba(2,6,16,0.18), inset 0 1px 0 rgba(255,255,255,0.03)',
       }}
     >
-      <Icon size={26} strokeWidth={1.8} className="text-[#CBD5E1]" style={{ color: 'var(--p-subtle)' }} />
+      <Icon size={26} strokeWidth={1.8} style={{ color: 'var(--p-subtle)' }} />
       <span className="text-[11px] font-medium text-pfg text-center leading-[1.25] line-clamp-2 min-h-[28px] flex items-center justify-center px-0.5">
         {label}
       </span>
@@ -58,7 +63,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
 })
 
 // ── Asosiy grid kartasi (Testlar / Mavzular / AI Tutor ...) ────────────────
-export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = '#94a3b8', badge, comingSoon, onClick }: {
+export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = 'var(--p-subtle)', badge, comingSoon, onClick }: {
   icon: React.ElementType
   label: string
   subtitle: string
@@ -80,7 +85,11 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
         </span>
       )}
       <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-[12px] sm:rounded-[14px] flex items-center justify-center flex-shrink-0"
-        style={{ backgroundColor: iconColor + '1A', border: `1px solid ${iconColor}2E`, boxShadow: `0 0 18px ${iconColor}40` }}>
+        style={{
+          backgroundColor: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${iconColor} 18%, transparent)`,
+          boxShadow: `0 0 18px color-mix(in srgb, ${iconColor} 25%, transparent)`,
+        }}>
         <Icon size={19} strokeWidth={2} style={{ color: iconColor }} />
       </div>
       <div className="text-center w-full min-w-0 px-0.5">

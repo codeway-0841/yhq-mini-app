@@ -3,6 +3,7 @@ import { X, Copy, Check, Share2, Users, KeyRound, Swords } from 'lucide-react'
 import { shareUrl } from '../../../platform/telegram'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 interface CustomRoomModalProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -69,8 +70,8 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-premiumIn">
-      <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 shadow-2xl space-y-4">
+    <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
+      <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 shadow-2xl space-y-4 relative">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -78,7 +79,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               <Swords size={18} />
             </div>
             <div>
-              <h2 className="text-sm font-black text-fg">{tt('customRoomTitle')}</h2>
+              <h2 id="custom-room-title" className="text-sm font-black text-fg">{tt('customRoomTitle')}</h2>
               <p className="text-[10px] text-muted">{tt('customRoomDesc')}</p>
             </div>
           </div>
@@ -192,6 +193,6 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           </div>
         )}
       </div>
-    </div>
+    </DialogOverlay>
   )
 }

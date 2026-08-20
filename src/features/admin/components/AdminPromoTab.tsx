@@ -3,6 +3,7 @@ import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkle
 import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
+import DialogOverlay from '../../../shared/components/DialogOverlay'
 
 export default function AdminPromoTab() {
   const [codes, setCodes] = useState<AdminPromoCode[]>([])
@@ -250,7 +251,7 @@ export default function AdminPromoTab() {
 
       {/* Create Modal */}
       {creating && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn">
+        <DialogOverlay onClose={() => setCreating(false)} position="center" labelId="promo-create-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
           <div className="relative w-full max-w-sm rounded-3xl bg-surface border border-line p-6 shadow-2xl overflow-hidden">
             <button
               onClick={() => setCreating(false)}
@@ -259,7 +260,7 @@ export default function AdminPromoTab() {
               <X size={16} />
             </button>
 
-            <h3 className="text-base font-black text-fg mb-4 flex items-center gap-2">
+            <h3 id="promo-create-title" className="text-base font-black text-fg mb-4 flex items-center gap-2">
               <Ticket size={18} className="text-duo-purple" />
               Yangi promokod yaratish
             </h3>
@@ -388,7 +389,7 @@ export default function AdminPromoTab() {
               </button>
             </form>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* Toast Notification */}

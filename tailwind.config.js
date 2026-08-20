@@ -61,6 +61,8 @@ export default {
         ppurple:    'var(--p-purple)',
         pblue:      'var(--p-blue)',
         pgold:      'var(--p-gold)',
+        pgolddeep:  'var(--p-gold-deep)',
+        pongold:    'var(--p-on-gold)',
       },
       fontFamily: {
         sans: ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],

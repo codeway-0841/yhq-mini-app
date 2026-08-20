@@ -235,8 +235,26 @@
   `react-hooks` plugin) — `eslint-disable` kommentlar hozir o'lik. `npm run
   lint` + CI'ga qo'shish.
 - [x] **35.** ~59 qattiq kodlangan hex rang → tokenlar (design qoida №8;
-  `LeaderboardPage.tsx:18-22,63-65`, Onboarding, RoundScreen...). Modal a11y:
-  umumiy Sheet (focus-trap, Escape, `role="dialog"`).
+  `LeaderboardPage.tsx:18-22,63-65`, Onboarding, RoundScreen...).
+  **TUGALLANDI (2026-08-20 sessiya):** SettingsModal/GridCards/Section/Carousel/
+  Onboarding/Testlar/Speed/Donut/Statistika/Streak/Profil/Dashboard/PremiumPage/
+  AdminBroadcast — `color-mix` pattern (`var()26` konkat bekor), +4 yangi token
+  (`--p-gold-deep/--p-on-gold/--p-gold-rgb/--p-success-rgb`) + tailwind
+  `pgolddeep`/`pongold`. Istisnolar: brend (Google/TG/Click), UI_MAP/themes/
+  achievements/content config SSOT, canvas .ts (var ishlamaydi).
+- [x] **35b.** Modal a11y — umumiy Sheet (`DialogOverlay`): **TUGALLANDI (2026-08-20 sessiya).**
+  DialogOverlay kuchaytirildi: nested stack (faqat eng yuqori Escape/Tab tutadi),
+  body scroll-lock (hisoblagich), focus restore, Tab dinamik trap, `zIndex`/`className`/
+  `backdropClassName` prop'lari, `position="center"` (animate-fadeIn/premiumIn). Migratsiya:
+  `SettingsModal` tashqi+accent (nested), `ResultsModal`, `EditSheets`×2,
+  `PromoCodeModal` (center), `PaymentMethodModal`, `Belgilar` SignModal,
+  `Celebrations`×2 (z=70), `CertificateModal`/`ExamReviewModal`/`CustomRoomModal`,
+  `AdminPromoTab`/`AdminUsersTab`/`AdminQuestionsTab`×2/`BulkImportModal`×2 (z=60)/
+  `AdminBroadcastTab` (z=60), `ImageZoomModal` (z=60, nested stack uchun). ISTISNO:
+  `AntiCheatModal` — `role="alertdialog"` (qasddan Escape/backdrop yopmaydi, "Tushundim" majburiy),
+  `Darslik` fullscreen sahifa-view (modal emas), `Confetti`/`FloatingReactions` dekorativ (pointer-events-none).
+  Test: `DialogOverlay.test.tsx` 8/8 (nested, scroll-lock, focus-trap, restore, zIndex).
+  *Verifikatsiya:* tsc×2 ✓, unit 439/439 ✓, lint 0 error ✓, build ✓.
 - [x] **36.** OAuth stub qarori: route'larni o'chirish YOKI `available:false`
   flag bilan frontend'da yashirish (auth.service.ts:1070,1080 hali 501).
 

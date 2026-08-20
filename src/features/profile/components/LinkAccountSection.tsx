@@ -260,7 +260,7 @@ export function LinkAccountSection() {
       {!isTelegram && hasSession && (
         <Item
           icon={LogOut}
-          iconColor="#ef4444"
+          iconColor="var(--p-danger)"
           label={tt('authLogout')}
           onPress={handleLogout}
         />

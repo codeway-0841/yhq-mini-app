@@ -315,7 +315,7 @@ export default function Profil() {
 
         <Item
           icon={Award}
-          iconColor="#f59e0b"
+          iconColor="var(--p-gold)"
           label={tt('certOfficialTitle')}
           right={<ChevronRight size={16} className="text-muted" />}
           onPress={() => setShowCertModal(true)}
@@ -323,7 +323,7 @@ export default function Profil() {
 
         <Item
           icon={Ticket}
-          iconColor="#a855f7"
+          iconColor="var(--p-purple)"
           label={tt('promoCodeTitle')}
           right={<ChevronRight size={16} className="text-muted" />}
           onPress={() => setShowPromoModal(true)}
@@ -340,7 +340,7 @@ export default function Profil() {
           right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
         />
 
-        <Item icon={RotateCcw} iconColor="#ef4444" label={tt('resetProgress')}
+        <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}
           onPress={handleReset} />
 
         <Item icon={Moon} label={tt('themeLabel')}
@@ -349,7 +349,7 @@ export default function Profil() {
 
         {syncPending > 0 && (
           <Item
-            icon={CloudUpload} iconColor="#f59e0b"
+            icon={CloudUpload} iconColor="var(--p-warning)"
             label={`${tt('syncPending')}: ${syncPending}`}
             right={<span className="text-[11px] text-muted">{tt('syncPendingDesc')}</span>}
             onPress={() => { if (user?.id) void flushOutbox(user.id) }}

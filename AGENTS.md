@@ -94,7 +94,8 @@ APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
 
 ```
 src/index.css          # Tokenlar: --p-* (yangi) + --theme-* (legacy alias, ikkalasi sinxron)
-tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/pline/pfg/pmuted/psubtle/pprimary/ponprimary/pgold/ppurple/pblue/psuccess/pwarning/pdanger + duo.* (alias)
+tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/pline/pfg/pmuted/psubtle/pprimary/ponprimary/pgold/pgolddeep/pongold/ppurple/pblue/psuccess/pwarning/pdanger + duo.* (alias)
+                       # CSS var'da hex-alpha konkat ISHLAMAYDI (`var(--p-x)26` noto'g'ri) — alpha uchun `color-mix(in srgb, var(--p-x) N%, transparent)`
 src/shared/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
 shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda)
 src/shared/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
