@@ -40,8 +40,13 @@ export const progressRepository = {
    *
    * `updated=false` bo'lsa progress qatori (va user) yo'q — daily yozuvlar
    * ham yozilmaydi va router 404 qaytaradi (eski behavior bilan bir xil).
-   * `duplicate=true` — shu clientToken allaqachon qabul qilingan: hech narsa
-   * yozilmadi, lekin bu IDEMPOTENT muvaffaqiyat (router 200 + eski natija).
+   * `duplicate=true` — hech narsa yozilmadi, lekin bu IDEMPOTENT muvaffaqiyat.
+   *   `reason`:
+   *    - 'replay' — XUDDI SHU clientToken qayta kelgan (outbox flush/dublikat
+   *      request): reveal QAYTA OCHILMAYDI (farming himoyasi, security tests).
+   *    - 'gate'   — YANGI token, lekin anti-farm gate (avval to'g'ri yechilgan
+   *      savolga yana to'g'ri javob) yoki kunlik kredit: counterlar yozilmaydi,
+   *      LECIN user FRESH javob bergan — feedback (correct/correctAnswer) beriladi.
    */
   async recordAnswer(input: {
     userId:       string
@@ -50,7 +55,7 @@ export const progressRepository = {
     date:         string
     subjectId:    string
     clientToken?: string
-  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean }> {
+  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate' }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
     const token = clientToken ?? null
     // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
@@ -60,7 +65,7 @@ export const progressRepository = {
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
-    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number }>(sql`
+    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -171,7 +176,8 @@ export const progressRepository = {
       SELECT
         (SELECT proceed FROM gate) AS proceed,
         (SELECT COUNT(*)::int FROM prog) AS prog_updated,
-        (SELECT streak::int FROM streak_upsert) AS daily_streak
+        (SELECT streak::int FROM streak_upsert) AS daily_streak,
+        EXISTS (SELECT 1 FROM tok) AS token_inserted
     `)
 
     const row = rows[0]
@@ -180,7 +186,10 @@ export const progressRepository = {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
       const existing = await this.findByUserId(userId)
       if (!existing) return { updated: false, dailyStreak: null, duplicate: false }
-      return { updated: true, dailyStreak: null, duplicate: true }
+      // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
+      // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.
+      const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
+      return { updated: true, dailyStreak: null, duplicate: true, reason }
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak

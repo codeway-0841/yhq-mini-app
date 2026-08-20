@@ -299,13 +299,19 @@ describe('progress anti-farm: post-answer reveal replay (audit fix)', () => {
     expect(afterFirst.totalCorrect).toBe(1)
     expect(afterFirst.totalAnswered).toBe(2)
 
-    // FARM URINISHI: yangi token, to\'g\'ri javob — yozilmaydi
+    // FARM URINISHI: yangi token, to\'g\'ri javob — COUNTERLARGA yozilmaydi,
+    // lekin user FRESH javob bergan → feedback beriladi ('gate' duplicate;
+    // aks holda client buni "offline" deb talqin qilib yakunda unanswered qilardi).
+    // Anti-farm himoyasi counter'larnida — reveal'da EMAS (u birinchi javobda
+    // correctAnswer'ni allaqachon olgan bo'lardi, reveal yangi ma'lumot bermaydi).
     const replay = await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq', clientToken: `farm-replay-${Date.now()}` })
       .expect(200)
     expect(replay.body.duplicate).toBe(true)
-    expect(replay.body.correctAnswer).toBeNull()
+    expect(replay.body.correct).toBe(true)
+    expect(replay.body.correctAnswer).toBe(question.correctAnswer)
+    expect(replay.body.dailyStreak).toBeNull()
 
     const [afterReplay] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     expect(afterReplay.totalCorrect).toBe(1)      // oshmadi
@@ -350,6 +356,8 @@ describe('H-3 anti-farm: kunlik javob krediti (DAILY_ANSWER_CREDIT)', () => {
       })
       .expect(200)
     expect(res.body.duplicate).toBe(true)   // jimgina cap — xato YO'Q
+    expect(res.body.correct).toBe(true)     // 'gate' duplicate: fresh javob feedback'i
+    expect(res.body.correctAnswer).toBe(question.correctAnswer)
 
     const [progAfter] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
     expect(progAfter.totalAnswered).toBe(progBefore.totalAnswered)   // o'smadi

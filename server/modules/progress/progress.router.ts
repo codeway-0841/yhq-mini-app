@@ -44,7 +44,7 @@ router.post(
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
     // Progress counterlari + daily record + streak BITTA atomik SQL statement'da.
-    const { updated, dailyStreak, duplicate } = await progressRepository.recordAnswer({
+    const { updated, dailyStreak, duplicate, reason } = await progressRepository.recordAnswer({
       userId: uid, correct, questionId, date, subjectId, clientToken,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
@@ -52,7 +52,16 @@ router.post(
     // POST-ANSWER REVEAL: correctAnswer endi public /questions'da yo'q —
     // client feedback uchun javob bergandan keyin shu yerda oladi.
     if (duplicate) {
-      res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
+      if (reason === 'replay') {
+        // XUDDI SHU token replay — reveal QAYTA OCHILMAYDI (farming himoyasi).
+        res.json({ ok: true, correct: null, correctAnswer: null, dailyStreak: null, duplicate: true })
+        return
+      }
+      // 'gate': anti-farm (avval to'g'ri yechilganiga yana to'g'ri) yoki kunlik
+      // kredit — counterlar yozilmaydi, LEKIN user FRESH javob bergan: feedback
+      // beriladi (aks holda client buni "offline" deb adashtirardi — pending →
+      // yakuniy natijada "unanswered" qolib ketardi).
+      res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak: null, duplicate: true })
       return
     }
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak })
