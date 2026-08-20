@@ -221,6 +221,31 @@ export const progressRepository = {
     }).where(eq(progress.userId, userId))
   },
 
+  /**
+   * SR dashboard xulosasi (FIXPLAN #46) — "bugun tayyorlar" soni va prognoz.
+   * Bitta GROUP BY'siz aggregate scan (idx_card_user_subject): karta soni
+   * savollar sonidan oshmaydi — arzon.
+   */
+  async getCardsSummary(userId: string, subjectId: string): Promise<{
+    total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null
+  }> {
+    const rows = await executeRows<{
+      total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null
+    }>(sql`
+      SELECT
+        COUNT(*)::int AS "total",
+        -- EKSKLYUZIV oynalar: dueNow + dueNext24h + dueNext7d = 7 kunlik jami
+        -- (kumulativ bo'lsa UI'dagi uchala son qo'shilganda adashtirardi)
+        COUNT(*) FILTER (WHERE due_at <= now())::int AS "dueNow",
+        COUNT(*) FILTER (WHERE due_at > now() AND due_at <= now() + interval '24 hours')::int AS "dueNext24h",
+        COUNT(*) FILTER (WHERE due_at > now() + interval '24 hours' AND due_at <= now() + interval '7 days')::int AS "dueNext7d",
+        ROUND(AVG(ef)::numeric, 2)::float AS "avgEf"
+      FROM card_progress
+      WHERE user_id = ${userId} AND subject_id = ${subjectId}
+    `)
+    return rows[0] ?? { total: 0, dueNow: 0, dueNext24h: 0, dueNext7d: 0, avgEf: null }
+  },
+
   /** Moslashuvchan rejim (Spaced Repetition) kartalarini yuklash */
   async getCards(userId: string, subjectId: string) {
     const { cardProgress } = await import('../../schema')

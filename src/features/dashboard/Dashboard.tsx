@@ -4,7 +4,7 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText,
+  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText, Search,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -222,6 +222,15 @@ export default function Dashboard() {
             lessonLabel={continueInfo.lessonLabel}
             onContinue={continueInfo.go}
           />
+
+          {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
+          <button
+            onClick={() => navigate('/qidiruv')}
+            className="mx-5 mb-4 -mt-1 flex items-center gap-2.5 rounded-2xl border border-line bg-surface px-4 py-3 text-left active:scale-[0.99] transition-transform"
+          >
+            <Search size={16} className="text-muted flex-shrink-0" />
+            <span className="text-sm text-muted">{tt('searchPlaceholder')}</span>
+          </button>
 
           {/* 2. Today's Progress */}
           <ProgressCard

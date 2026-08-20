@@ -450,6 +450,13 @@ export const api = {
       `/progress/${uid(userId)}/cards?subjectId=${encodeURIComponent(subjectId)}`
     ),
 
+  /** SR dashboard: bugun/ertaga/hafta prognozi (#46) */
+  getCardsSummary: (userId: string, subjectId: string) =>
+    request<{ ok: true; summary: { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null } }>(
+      'GET',
+      `/progress/${uid(userId)}/cards/summary?subjectId=${encodeURIComponent(subjectId)}`
+    ),
+
   reviewCard: (userId: string, data: { subjectId: string; questionId: number; ef: number; interval: number; reps: number; dueAt: number }) =>
     request<{ ok: true }>('POST', `/progress/${uid(userId)}/cards/review`, data),
 

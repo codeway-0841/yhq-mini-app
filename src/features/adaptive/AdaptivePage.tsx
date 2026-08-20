@@ -3,13 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
-import { Brain, X } from 'lucide-react'
+import { Brain, X, CalendarClock } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAppStore }      from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
+import { api }              from '../../shared/api'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
+
+/** SR dashboard xulosasi (#46) — server javob shakli */
+type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null }
 
 function EFBadge({ card }: { card: SRCard | undefined }) {
   if (!card) return null
@@ -58,9 +62,19 @@ export default function AdaptivePage() {
   const { currentId, sessionCount, startSession, recordAnswer, advanceNext } = useAdaptiveStore()
   const subjectId = useSubjectStore((s) => s.subjectId)
 
+  // SR dashboard xulosasi (#46) — "bugun tayyorlar" soni va prognoz
+  const [summary, setSummary] = useState<CardsSummary | null>(null)
+
   // Mount paytida bulutdan kartalarni sinxronlash va sessiyani boshlash
   useEffect(() => {
-    if (user?.id) void useAdaptiveStore.getState().syncCardsFromServer(user.id, subjectId)
+    if (user?.id) {
+      void useAdaptiveStore.getState().syncCardsFromServer(user.id, subjectId)
+      api.getCardsSummary(user.id, subjectId)
+        .then((r) => setSummary(r.summary))
+        .catch(() => {}) // offline — karta shunchaki ko'rinmaydi
+    } else {
+      setSummary(null)
+    }
     if (currentId === null && sessionCount === 0) startSession()
   }, [user?.id, subjectId]) // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -110,6 +124,33 @@ export default function AdaptivePage() {
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-muted px-4">
         <Brain size={40} className="text-ppurple" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
+
+        {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
+        {summary && summary.total > 0 && (
+          <div className="card-premium rounded-2xl p-4 w-full max-w-xs">
+            <div className="flex items-center gap-2 mb-3">
+              <CalendarClock size={15} className="text-ppurple" />
+              <p className="text-xs font-bold text-fg">
+                {summary.total} {tt('srTotalCards').toLowerCase()}
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-2 text-center">
+              <div className="rounded-xl bg-psuccess/10 py-2">
+                <p className="text-lg font-black text-psuccess tabular-nums">{summary.dueNow}</p>
+                <p className="text-[10px] font-bold text-muted">{tt('srDueNow')}</p>
+              </div>
+              <div className="rounded-xl bg-pwarning/10 py-2">
+                <p className="text-lg font-black text-pwarning tabular-nums">{summary.dueNext24h}</p>
+                <p className="text-[10px] font-bold text-muted">{tt('srNext24h')}</p>
+              </div>
+              <div className="rounded-xl bg-surface py-2">
+                <p className="text-lg font-black text-fg tabular-nums">{summary.dueNext7d}</p>
+                <p className="text-[10px] font-bold text-muted">{tt('srNext7d')}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
         <button onClick={() => startSession()} className="btn-neon px-8 py-3.5 rounded-2xl text-base">
           {tt('adaptive')}
         </button>

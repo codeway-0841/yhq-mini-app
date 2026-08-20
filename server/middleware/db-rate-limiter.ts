@@ -73,8 +73,18 @@ export function dbRateLimit(opts: DbRateLimitOptions) {
       // Route bo'yicha ajratish: method+path bucket prefix'ga kiritiladi —
       // /auth/otp/request va /auth/phone/login umumiy limitni BO'LISHMAYDI
       // (in-memory nusxada har rateLimit() chaqiruvi alohida Map edi).
-      const { allowed } = await dbRateConsume(`${opts.bucket}:${req.method}:${req.path}:${key}`, max)
+      const { allowed, count } = await dbRateConsume(`${opts.bucket}:${req.method}:${req.path}:${key}`, max)
       if (!allowed) {
+        // 429 SPIKE signal (FIXPLAN #49): har blokda emas — spike BOSHI
+        // (count === max+1) va davomiy hujum (har max-karrali) da ogohlantirish.
+        // Sentry alert rule: message:rate_limit_spike → threshold'ga sozlash oson.
+        if (count === max + 1 || count % max === 0) {
+          Sentry.captureMessage('rate_limit_spike', {
+            level: 'warning',
+            tags:  { bucket: opts.bucket, method: req.method, path: req.path },
+            extra: { count, max },
+          })
+        }
         res.status(429).json({ error: 'Too many requests — slow down' })
         return
       }

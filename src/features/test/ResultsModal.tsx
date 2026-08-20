@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
-import { RotateCcw, Share2, X, BookOpen, Award } from 'lucide-react'
+import { RotateCcw, Share2, X, BookOpen, Award, ImageDown } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { shareUrl } from '../../platform/telegram'
+import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
+import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
+import { drawResultCard, buildResultShareText } from './result-canvas'
 import type { TopicBreakdownItem } from './topic-diagnosis'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
@@ -37,6 +41,7 @@ export default function ResultsModal({
   disqualifiedByCheat?: boolean
 }) {
   const [showCertificate, setShowCertificate] = useState(false)
+  const [sharingImage, setSharingImage] = useState(false)
   const tt           = useT(useAppStore((s) => s.settings.language))
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
@@ -44,6 +49,55 @@ export default function ResultsModal({
   const unanswered = results.filter((r) => r.status === 'unanswered').length
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
   const passed     = percent >= threshold && !disqualifiedByCheat
+
+  /** #48 — natijani RASM qilib ulashish: canvas karta → Web Share (fayl) → fallback shareUrl + yuklab olish. */
+  const handleShareImage = async () => {
+    if (sharingImage) return
+    haptics.impact('light')
+    setSharingImage(true)
+    try {
+      const state = useAppStore.getState()
+      const lang = state.settings.language
+      const uid = state.user?.id ?? '0'
+      const fullName = [state.user?.firstName, state.user?.lastName].filter(Boolean).join(' ')
+      const subjectId = useSubjectStore.getState().subjectId
+      const subject = SUBJECT_BASES.find((s) => s.id === subjectId)
+      const subjectName = lang === 'ru' ? (subject?.nameRu ?? 'ПДД') : (subject?.name ?? 'YHQ')
+      const shareText = buildResultShareText({ correct, total, percent, passed, streak: state.streak, lang })
+      const link = `https://t.me/kiwi_uz_bot?start=ref_${uid}`
+
+      const canvas = document.createElement('canvas')
+      drawResultCard(canvas, {
+        userName: fullName,
+        subjectName,
+        correct, wrong, unanswered, total, percent, passed,
+        streak: state.streak,
+        date: new Intl.DateTimeFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ', { day: '2-digit', month: 'long', year: 'numeric' }).format(new Date()),
+        lang,
+      })
+
+      const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'))
+      const file = blob ? new File([blob], `kiwi-result-${percent}pct.png`, { type: 'image/png' }) : null
+
+      if (file && navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], title: 'KIWI', text: `${shareText}\n${link}` })
+        return
+      }
+      // Fallback: Telegram matn-share + rasmni qurilmaga yuklab olish (qo'lda yuboriladi)
+      shareUrl(link, shareText)
+      if (blob) {
+        const a = document.createElement('a')
+        a.href = URL.createObjectURL(blob)
+        a.download = `kiwi-result-${percent}pct.png`
+        a.click()
+        setTimeout(() => URL.revokeObjectURL(a.href), 1000)
+      }
+    } catch (err) {
+      if ((err as Error).name !== 'AbortError') console.warn('[share-image]', err)
+    } finally {
+      setSharingImage(false)
+    }
+  }
 
   // Natija ochildi — qisqa g'alaba fanfarasi yoki xato tovush
   useEffect(() => {
@@ -171,20 +225,23 @@ export default function ResultsModal({
           </button>
         </div>
 
-        {/* 🖼 Natijani ulashish — matn + referal link (virusli o'sish) */}
+        {/* 🖼 Natijani RASM qilib ulashish (#48) — canvas karta; Web Share bo'lmasa
+            matn-share + rasm yuklab olish fallback */}
+        <button
+          onClick={handleShareImage}
+          disabled={sharingImage}
+          className="btn-3d-ghost w-full mt-3 py-3 rounded-2xl font-bold text-[13px] flex items-center justify-center gap-2 text-duo-blue">
+          <ImageDown size={15} />
+          {sharingImage ? '...' : tt('shareResultImage')}
+        </button>
+
+        {/* ✉️ Matn + referal link bilan ulashish */}
         <button
           onClick={() => {
             const uid  = useAppStore.getState().user?.id
             const lang = useAppStore.getState().settings.language
             const streak = useAppStore.getState().streak
-            const emoji = passed ? '🏆' : '💪'
-            const text = lang === 'ru'
-              ? `${emoji} Мой результат в KIWI: ${percent}% (правильно ${correct}/${total})` +
-                (streak > 1 ? `\n🔥 Серия: ${streak} дн. подряд!` : '') +
-                `\nПопробуй и ты:`
-              : `${emoji} KIWI'dagi natijam: ${percent}% (to'g'ri ${correct}/${total})` +
-                (streak > 1 ? `\n🔥 Seriya: ${streak} kun ketma-ket!` : '') +
-                `\nSan ham sinab ko'r:`
+            const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
           }}
           className="btn-3d-ghost w-full mt-3 py-3 rounded-2xl font-bold text-[13px] flex items-center justify-center gap-2 text-duo-blue">

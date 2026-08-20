@@ -80,6 +80,24 @@ const ReviewCardSchema = z.object({
   dueAt:      z.number().int().positive(), // unix ms timestamp
 })
 
+// GET /api/progress/:userId/cards/summary — SR dashboard xulosasi (#46)
+// ("/cards"dan OLDIN: Express aniq yo'l keng wildcard'dan oldin tekshiriladi)
+router.get(
+  '/progress/:userId/cards/summary',
+  validate({
+    query: z.object({
+      subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject').optional(),
+    }),
+  }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+    const subjectId = (req.query['subjectId'] as string) || 'yhq'
+    const summary = await progressRepository.getCardsSummary(uid, subjectId)
+    res.json({ ok: true, summary })
+  }),
+)
+
 // GET /api/progress/:userId/cards
 router.get(
   '/progress/:userId/cards',

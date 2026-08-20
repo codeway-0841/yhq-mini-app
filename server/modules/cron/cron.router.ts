@@ -15,6 +15,7 @@
 import { Router } from 'express'
 import { Bot, InlineKeyboard } from 'grammy'
 import { config } from '../../config'
+import { Sentry } from '../../utils/sentry'
 import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 import { cronRepository } from './cron.repository'
@@ -104,6 +105,7 @@ router.get('/cron/daily-reminder', async (_req, res) => {
     res.json({ ok: true, ...result })
   } catch (err) {
     console.error('[daily-reminder] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
+    Sentry.captureException(err, { tags: { cron: 'daily-reminder', period: today } })
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
@@ -215,6 +217,7 @@ router.get('/cron/league-rollover', async (_req, res) => {
       console.log(`[league-rollover] Tournament prizes distributed for ${wPrev}: ${prizeResult.winners.length} winners`)
     } catch (e) {
       console.error('[league-rollover] tournament prizes error:', e)
+      Sentry.captureException(e, { tags: { cron: 'league-rollover', stage: 'tournament-prizes', period: wPrev } })
     }
 
     const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted, prizesAwarded: prizeResult.winners?.length ?? 0 }
@@ -225,6 +228,7 @@ router.get('/cron/league-rollover', async (_req, res) => {
     // stale-lease (1 soat) o'tgach keyingi trigger reja jurnalidan davom etadi.
     // (Eski xatti-harakat: catch'da complete → qisman liga holati bir haftaga qotardi.)
     console.error('[league-rollover] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
+    Sentry.captureException(err, { tags: { cron: 'league-rollover', period: wPrev } })
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
@@ -256,6 +260,7 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
     res.json({ ok: true, ...result })
   } catch (err) {
     await cronRepository.complete('cleanup-answer-tokens', today, { error: String(err) }).catch(() => {})
+    Sentry.captureException(err, { tags: { cron: 'cleanup-answer-tokens', period: today } })
     res.status(500).json({ ok: false, error: String(err) })
   }
 })
