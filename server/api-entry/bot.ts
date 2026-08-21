@@ -4,18 +4,21 @@ import { Bot, Context, InlineKeyboard, Keyboard, webhookCallback } from 'grammy'
 import { usersRepository } from '../modules/users/users.repository'
 
 import { PREMIUM_PLANS, getPlan, parseStartParam, type PlanKey } from '../../shared/premium-plans'
-import { assertProdConfig, config } from '../config'
+import { assertProdConfig, assertBotWebhookConfig, config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
 import { parseReferralParam } from '../utils/parse'
 import { registerInterval } from '../utils/shutdown'
 
 // api/index.js (server/api-entry/index.ts) va server/index.ts bu tekshiruvni
-// boot'da chaqiradi, lekin api/bot.js Vercel'da ALOHIDA serverless function —
-// avval bu yerda umuman chaqirilmasdi (audit #9): BOT_WEBHOOK_SECRET yo'qligi
-// deploy vaqtida sezilmasdi, keyin HAR bir Telegram webhook update'i (pastdagi
-// handler'dagi runtime tekshiruv orqali) 500 qaytarardi.
+// boot'da chaqiradi — bu yerda ham chaqiramiz (BOT_TOKEN/CRON_SECRET/OTP_PEPPER
+// umumiy). BOT_WEBHOOK_SECRET esa ALOHIDA assertBotWebhookConfig() orqali —
+// u FAQAT shu (Telegram webhook) entry'ga tegishli; assertProdConfig()'ga
+// qo'shilsa edi, Render'dagi standalone WS server (u webhook'ni ishlatmaydi,
+// server/index.ts ham shu funksiyani chaqiradi) BOT_WEBHOOK_SECRET'siz
+// boot'da qulab tushardi (incident — audit #9 fix'ining yon ta'siri).
 assertProdConfig()
+assertBotWebhookConfig()
 
 const token = config.telegram.botToken
 if (!token) throw new Error('BOT_TOKEN is unset')

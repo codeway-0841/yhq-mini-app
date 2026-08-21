@@ -83,21 +83,32 @@ const env = envSchema.parse(process.env)
  *  - CRON_SECRET — cron endpoint'lar himoyasiz (broadcast/cleanup'ni kimdir chaqiradi);
  *  - OTP_PEPPER — pepper'siz OTP hash DB dump'da brute-force qilinadi (1M qiymat);
  *  - CLICK_SECRET_KEY — Click webhook imzosi sozlanmasa to'lovlar fail-closed
- *    rad etiladi (xizmat ko'rmaydi), shuning uchun Click sozlangan bo'lsa majburiy;
- *  - BOT_WEBHOOK_SECRET — yo'q bo'lsa api/bot.ts HAR bir Telegram update'ida
- *    500 qaytaradi (runtime'da o'z-o'zidan fail-closed), lekin bu yo'qlik
- *    deploy vaqtida jimgina o'tib ketardi (audit #9) — endi boot'da aniqlanadi. */
+ *    rad etiladi (xizmat ko'rmaydi), shuning uchun Click sozlangan bo'lsa majburiy.
+ *  DIQQAT: BOT_WEBHOOK_SECRET bu yerga QO'SHILMAYDI — bu funksiya server/index.ts
+ *  (Render standalone WS server) TOMONIDAN HAM chaqiriladi, u Telegram webhook'ni
+ *  UMUMAN ishlatmaydi (faqat api/bot.ts ishlatadi) — Render'da BOT_WEBHOOK_SECRET
+ *  sozlanmagani uchun bu yerga qo'shilishi butun WS serverni boot'da qulatib
+ *  qo'ydi (incident). Tekshiruv assertBotWebhookConfig()'ga alohida chiqarildi —
+ *  FAQAT api-entry/bot.ts chaqiradi. */
 export function assertProdConfig(): void {
   if (env.NODE_ENV === 'production') {
     const missing: string[] = []
     if (!config.telegram.botToken) missing.push('BOT_TOKEN')
-    if (!config.telegram.webhookSecret) missing.push('BOT_WEBHOOK_SECRET')
     if (!config.cron.secret) missing.push('CRON_SECRET')
     if (!config.auth.otpPepper) missing.push('OTP_PEPPER')
     if ((env.CLICK_SERVICE_ID || env.CLICK_MERCHANT_ID) && !env.CLICK_SECRET_KEY) missing.push('CLICK_SECRET_KEY')
     if (missing.length > 0) {
       throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
     }
+  }
+}
+
+/** FAQAT api-entry/bot.ts chaqiradi (Telegram webhook handler) — Render'dagi
+ *  standalone WS server buni ISHLATMAYDI, shuning uchun assertProdConfig()'ga
+ *  qo'shilmaydi (yuqoridagi izohga qarang). */
+export function assertBotWebhookConfig(): void {
+  if (env.NODE_ENV === 'production' && !config.telegram.webhookSecret) {
+    throw new Error('FATAL: required in production but missing: BOT_WEBHOOK_SECRET')
   }
 }
 
