@@ -20,6 +20,8 @@ import { requireCronSecret } from '../../middleware/cron-auth'
 import { weekStartTashkent, LEAGUE_ORDER } from '../leaderboard/leaderboard.repository'
 import { cronRepository } from './cron.repository'
 import { distributeWeeklyPrizes } from '../leaderboard/tournament-prize.service'
+import { bossRepository } from '../boss/boss.repository'
+import { bossPeriodKey } from '../../../shared/boss-battle'
 
 const router = Router()
 
@@ -229,6 +231,43 @@ router.get('/cron/league-rollover', async (_req, res) => {
     // (Eski xatti-harakat: catch'da complete → qisman liga holati bir haftaga qotardi.)
     console.error('[league-rollover] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
     Sentry.captureException(err, { tags: { cron: 'league-rollover', period: wPrev } })
+    res.status(500).json({ ok: false, error: String(err) })
+  }
+})
+
+/**
+ * Vercel Cron — BOSS BATTLE haftalik rollover (har dushanba 00:35 UTC —
+ * liga rollover'dan 20 daqiqa keyin, DB stampede oldini oladi).
+ *  - O'tgan hafta bossi: 'active' → 'escaped' (vaqt o'tib ketdi);
+ *  - 'defeated' boss uchun mukofotlar: ATOMIK CTE (ledger 'boss:<id>:<user>'
+ *    UNIQUE + rewardsDistributed bayrog'i) — retry-safe;
+ *  - Yangi hafta bossi DETERMINISTIK roster'dan yaratiladi (idempotent).
+ */
+router.get('/cron/boss-rollover', async (_req, res) => {
+  const curPeriod  = bossPeriodKey()
+  // O'tgan hafta: periodKey'ni 7 kun qaytarib
+  const prevDate = new Date(`${curPeriod}T00:00:00Z`)
+  prevDate.setUTCDate(prevDate.getUTCDate() - 7)
+  const prevPeriod = prevDate.toISOString().slice(0, 10)
+
+  const acquired = await cronRepository.tryStart('boss-rollover', prevPeriod)
+  if (!acquired) {
+    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', prevPeriod })
+    return
+  }
+
+  try {
+    const roll = await bossRepository.weeklyRollover(prevPeriod)
+    // Yangi hafta bossi (getState/applyDamage lazy ham yaratadi — bu yerda proaktiv)
+    await bossRepository.ensureActiveBoss(curPeriod)
+    const result = { prevPeriod, curPeriod, ...roll }
+    await cronRepository.complete('boss-rollover', prevPeriod, result)
+    res.json({ ok: true, ...result })
+  } catch (err) {
+    // RETRY-SAFE: complete BELGILANMAYDI (league-rollover pattern'i) — stale-lease
+    // (1 soat) o'tgach re-run; mukofot CTE ledger-UNIQUE bilan qayta xavfsiz.
+    console.error('[boss-rollover] failed — stale-lease retry:', err)
+    Sentry.captureException(err, { tags: { cron: 'boss-rollover', period: prevPeriod } })
     res.status(500).json({ ok: false, error: String(err) })
   }
 })

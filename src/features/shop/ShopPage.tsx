@@ -14,14 +14,14 @@
  */
 import { useMemo, useState } from 'react'
 import {
-  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon,
+  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift,
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError } from '../../shared/api'
 import { getAccentTheme, resolveAccent } from '../../shared/config/themes'
 import { AVATAR_FRAMES } from '../../shared/config/avatar-frames'
-import { SHOP_ITEMS, getShopItem, isDurableShopItem } from '../../../shared/shop-items'
+import { SHOP_ITEMS, getShopItem, isDurableShopItem, isShopItemAvailable, seasonalDaysLeft, type ShopItem } from '../../../shared/shop-items'
 import { goBack } from '../../shared/lib/navigation'
 import { playSound } from '../../shared/lib/sounds'
 import { newId } from '../../shared/lib/outbox'
@@ -29,6 +29,7 @@ import { track } from '../../shared/lib/analytics'
 import { useT } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
 import MerchSection from './MerchSection'
+import SpinModal from './SpinModal'
 
 /** 2'400 → "2 400" (UZ/RU ikkalasida ham bo'shliqli minglik ajratgich) */
 function fmtCoins(n: number): string {
@@ -56,6 +57,7 @@ export default function ShopPage() {
   const [busy, setBusy]       = useState<string | null>(null)   // qaysi item jarayonda
   const [error, setError]     = useState<string | null>(null)
   const [celebrate, setCelebrate] = useState(false)
+  const [spinOpen, setSpinOpen] = useState(false)
   // Tarix (talab bo'yicha)
   const [history, setHistory] = useState<Awaited<ReturnType<typeof api.getCoinHistory>>['rows'] | null>(null)
   const [historyBusy, setHistoryBusy] = useState(false)
@@ -88,6 +90,7 @@ export default function ShopPage() {
       showError(
         code === 'COINS_INSUFFICIENT' ? tt('shopInsufficient') :
         code === 'ITEM_ALREADY_OWNED' ? tt('shopAlreadyOwned') :
+        code === 'ITEM_SEASON_EXPIRED' ? tt('shopSeasonExpired') :
         tt('shopError'),
       )
     } finally {
@@ -125,12 +128,84 @@ export default function ShopPage() {
 
   const themeItems   = SHOP_ITEMS.filter((i) => i.kind === 'accent-theme')
   const premiumItem  = SHOP_ITEMS.find((i) => i.kind === 'premium-days') ?? null
-  const frameItems   = SHOP_ITEMS.filter((i) => i.kind === 'avatar-frame')
+  // Mavsumiy drop: aktiv oynadagi ramkalar alohida bo'limda; oyna yopiq
+  // mavsumiy ramka FAQAT egasiga ko'rinadi (umrbod saqlanadi — equip uchun)
+  const allItems: readonly ShopItem[] = SHOP_ITEMS   // 'as const' literal union → generic
+  const now = useMemo(() => new Date(), [])
+  const isActiveSeasonal = (i: ShopItem) => Boolean(i.seasonal) && isShopItemAvailable(i, now)
+  const seasonalFrameItems = allItems.filter((i) => i.kind === 'avatar-frame' && isActiveSeasonal(i))
+  const frameItems = allItems.filter((i) =>
+    i.kind === 'avatar-frame' && !isActiveSeasonal(i) && (!i.seasonal || ownedSet.has(i.id)),
+  )
+
+  /** Ramka kartasi (umumiy — oddiy grid va mavsumiy bo'lim ikkalasi ishlatadi) */
+  const renderFrameCard = (item: ShopItem, countdownBadge?: string | null) => {
+    const frame = AVATAR_FRAMES.find((f) => f.id === item.id)
+    if (!frame) return null
+    const isOwned    = ownedSet.has(frame.id)
+    const isEquipped = avatarFrame === frame.id
+    const affordable = coins >= item.price
+    return (
+      <div key={frame.id} className="card-premium p-3 flex flex-col items-center gap-2.5 relative">
+        {countdownBadge && (
+          <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-black"
+            style={{
+              background: 'rgb(var(--p-primary-rgb) / 0.12)',
+              border: '1px solid rgb(var(--p-primary-rgb) / 0.40)',
+              color: 'var(--p-primary)',
+            }}>
+            {countdownBadge}
+          </span>
+        )}
+        {/* Ramka preview */}
+        <span className={`avatar-frame ${frame.cssClass}`}>
+          <span className="w-14 h-14 rounded-full bg-pcard flex items-center justify-center text-lg font-black text-pmuted">
+            {initial}
+          </span>
+        </span>
+        <p className="text-[12.5px] font-bold text-center truncate w-full">{frame.label[lang]}</p>
+        {isOwned ? (
+          <button
+            onClick={() => equip(isEquipped ? null : frame.id)}
+            disabled={busy !== null}
+            className="w-full text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+            style={isEquipped ? {
+              background: 'rgb(var(--p-success-rgb) / 0.12)',
+              color: 'var(--p-success)',
+              border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
+            } : {
+              background: 'rgb(var(--p-primary-rgb) / 0.12)',
+              color: 'var(--p-primary)',
+              border: '1px solid rgb(var(--p-primary-rgb) / 0.35)',
+            }}>
+            {busy === 'equip' ? <Loader2 size={13} className="animate-spin mx-auto" />
+              : isEquipped ? tt('shopUnequip') : tt('shopEquip')}
+          </button>
+        ) : (
+          <button
+            onClick={() => buy(item.id)}
+            disabled={busy !== null}
+            className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+            style={{
+              background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
+              border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
+              color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
+            }}>
+            {busy === item.id
+              ? <Loader2 size={13} className="animate-spin" />
+              : <><Coins size={12} /> {fmtCoins(item.price)}</>}
+          </button>
+        )}
+      </div>
+    )
+  }
 
   const reasonLabel = (reason: string): string => ({
     answer:       tt('coinReasonAnswer'),
     purchase:     tt('coinReasonPurchase'),
     task_claim:   tt('coinReasonTask'),
+    spin:         tt('coinReasonSpin'),
+    boss_reward:  tt('coinReasonBoss'),
     merch:        tt('coinReasonMerch'),
     merch_refund: tt('coinReasonRefund'),
     admin:        tt('coinReasonAdmin'),
@@ -285,65 +360,53 @@ export default function ShopPage() {
         </>
       )}
 
+      {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
+      <div className="mx-5 mt-6 card-premium p-4 flex items-center gap-3.5">
+        <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
+          style={{
+            background: 'linear-gradient(135deg, rgb(var(--p-purple-rgb) / 0.9), rgb(var(--p-gold-rgb) / 0.9))',
+            boxShadow: '0 6px 18px rgb(var(--p-purple-rgb) / 0.30)',
+          }}>
+          <Gift size={22} style={{ color: 'var(--p-canvas)' }} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-[14px] font-bold">{tt('spinTitle')}</p>
+          <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('spinDesc')}</p>
+        </div>
+        <button
+          onClick={() => { playSound('click'); setSpinOpen(true) }}
+          className="btn-premium-gold px-3.5 py-2 rounded-xl text-[12.5px] font-black flex-none active:scale-[0.97] transition-transform">
+          {tt('spinButton')}
+        </button>
+      </div>
+
+      {/* ── Mavsumiy drop (aktiv oynadagi ramkalar, countdown bilan) ── */}
+      {seasonalFrameItems.length > 0 && (
+        <>
+          <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-pprimary uppercase tracking-[0.14em] flex items-center gap-1.5">
+            <Sparkles size={11} /> {tt('shopSeasonalTitle')}
+          </p>
+          <div className="grid grid-cols-2 gap-3 px-5">
+            {seasonalFrameItems.map((item) => {
+              const left = item.seasonal ? seasonalDaysLeft(item.seasonal, now) : null
+              return renderFrameCard(item, left !== null ? `${tt('shopSeasonalLeft')} ${left} ${tt('shopSeasonalDays')}` : null)
+            })}
+          </div>
+        </>
+      )}
+
       {/* ── Avatar ramkalari ── */}
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
         <ImageIcon size={11} /> {tt('shopFramesTitle')}
       </p>
       <div className="grid grid-cols-2 gap-3 px-5">
-        {frameItems.map((item) => {
-          const frame = AVATAR_FRAMES.find((f) => f.id === item.id)
-          if (!frame) return null
-          const isOwned    = ownedSet.has(frame.id)
-          const isEquipped = avatarFrame === frame.id
-          const affordable = coins >= item.price
-          return (
-            <div key={frame.id} className="card-premium p-3 flex flex-col items-center gap-2.5">
-              {/* Ramka preview */}
-              <span className={`avatar-frame ${frame.cssClass}`}>
-                <span className="w-14 h-14 rounded-full bg-pcard flex items-center justify-center text-lg font-black text-pmuted">
-                  {initial}
-                </span>
-              </span>
-              <p className="text-[12.5px] font-bold text-center truncate w-full">{frame.label[lang]}</p>
-              {isOwned ? (
-                <button
-                  onClick={() => equip(isEquipped ? null : frame.id)}
-                  disabled={busy !== null}
-                  className="w-full text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
-                  style={isEquipped ? {
-                    background: 'rgb(var(--p-success-rgb) / 0.12)',
-                    color: 'var(--p-success)',
-                    border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
-                  } : {
-                    background: 'rgb(var(--p-primary-rgb) / 0.12)',
-                    color: 'var(--p-primary)',
-                    border: '1px solid rgb(var(--p-primary-rgb) / 0.35)',
-                  }}>
-                  {busy === 'equip' ? <Loader2 size={13} className="animate-spin mx-auto" />
-                    : isEquipped ? tt('shopUnequip') : tt('shopEquip')}
-                </button>
-              ) : (
-                <button
-                  onClick={() => buy(item.id)}
-                  disabled={busy !== null}
-                  className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
-                  style={{
-                    background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
-                    border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
-                    color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
-                  }}>
-                  {busy === item.id
-                    ? <Loader2 size={13} className="animate-spin" />
-                    : <><Coins size={12} /> {fmtCoins(item.price)}</>}
-                </button>
-              )}
-            </div>
-          )
-        })}
+        {frameItems.map((item) => renderFrameCard(item))}
       </div>
 
       {/* ── Merch (real fizik tovarlar, #40 Faza 3) ── */}
       <MerchSection onCelebration={celebrateOnce} />
+
+      {spinOpen && <SpinModal onClose={() => setSpinOpen(false)} />}
 
       {/* ── Tangalar tarixi ── */}
       <div className="mx-5 mt-6">        <button onClick={toggleHistory}

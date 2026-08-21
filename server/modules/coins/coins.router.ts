@@ -8,14 +8,16 @@
  */
 import { Router } from 'express'
 import { z } from 'zod'
+import { randomInt } from 'node:crypto'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
-import { getShopItem, isDurableShopItem } from '../../../shared/shop-items'
+import { getShopItem, isDurableShopItem, isShopItemAvailable } from '../../../shared/shop-items'
 import { getMerchItem } from '../../../shared/merch-items'
 import { getDailyTask } from '../../../shared/daily-tasks'
+import { pickSpinSegment } from '../../../shared/lucky-spin'
 import { tashkentDate } from '../../utils/date'
 import { coinsRepository } from './coins.repository'
 
@@ -43,6 +45,7 @@ const purchaseLimiter = mkLimiter('coins:purchase')
 const equipLimiter    = mkLimiter('coins:equip')
 const claimLimiter    = mkLimiter('coins:claim')
 const merchLimiter    = mkLimiter('coins:merch')
+const spinLimiter     = mkLimiter('coins:spin')
 
 function requireUserId(req: unknown): string {
   const userId = (req as { userId?: string }).userId
@@ -66,6 +69,9 @@ router.post(
     if (item.kind === 'premium-days' && !item.days) {
       throw new AppError(500, 'ITEM_CONFIG_INVALID')
     }
+    // Mavsumiy drop: sotib olish FAQAT oyna ichida (Tashkent kalendari).
+    // Sotib olingan buyum umrbod qoladi — faqat XARID chegaralanadi.
+    if (!isShopItemAvailable(item)) throw new AppError(409, 'ITEM_SEASON_EXPIRED')
 
     const result = await coinsRepository.purchase(userId, itemId, purchaseId)
 
@@ -179,6 +185,49 @@ router.post(
         throw new AppError(409, 'TASK_NOT_COMPLETED')
       case 'ok':
         res.json({ ok: true, balance: result.balance, reward: result.reward })
+        return
+    }
+  }),
+)
+
+// ── LUCKY SPIN (kunlik omad g'ildiragi) ──────────────────────────────────────
+// Trust boundary: segment FAQAT server'da tanlanadi (crypto RNG + og'irliklar);
+// client g'ildiragi server javobidagi segmentga "qonadi" (UI spektakl, halol).
+
+// GET /api/coins/spin — bugungi holat (aylantirilganmi + reward)
+router.get(
+  '/coins/spin',
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const date = tashkentDate()
+    const state = await coinsRepository.getSpinState(userId)
+    const spun = state !== null && state.spinDate === date
+    res.json({ ok: true, date, spun, rewardId: spun ? state.rewardId : null })
+  }),
+)
+
+// POST /api/coins/spin — kunlik 1 marta (atomik claim, 409 SPIN_ALREADY_USED_TODAY)
+router.post(
+  '/coins/spin',
+  spinLimiter,
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const date = tashkentDate()
+    const segment = pickSpinSegment(randomInt(1_000_000) / 1_000_000)
+
+    const result = await coinsRepository.spin(userId, date, segment)
+    switch (result.status) {
+      case 'user_not_found':
+        throw new AppError(404, 'USER_NOT_FOUND')
+      case 'already_spun':
+        throw new AppError(409, 'SPIN_ALREADY_USED_TODAY')
+      case 'ok':
+        res.json({
+          ok: true,
+          segment: { id: segment.id, kind: segment.kind, amount: segment.amount },
+          balance: result.balance,
+          premiumUntil: result.premiumUntil?.toISOString() ?? null,
+        })
         return
     }
   }),

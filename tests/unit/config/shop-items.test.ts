@@ -7,7 +7,7 @@
  * iqtisod. Bu test desync'ni CI'da ushlaydi.
  */
 import { describe, it, expect } from 'vitest'
-import { SHOP_ITEMS, getShopItem, isDurableShopItem, COINS_PER_CORRECT_ANSWER, COINS_MONTH_OF_PLAY } from '../../../shared/shop-items'
+import { SHOP_ITEMS, getShopItem, isDurableShopItem, isShopItemAvailable, isSeasonalWindowActive, seasonalDaysLeft, COINS_PER_CORRECT_ANSWER, COINS_MONTH_OF_PLAY } from '../../../shared/shop-items'
 import { ACCENT_THEMES, DEFAULT_ACCENT } from '../../../src/shared/config/themes'
 import { AVATAR_FRAMES } from '../../../src/shared/config/avatar-frames'
 
@@ -67,5 +67,50 @@ describe('config/shop-items — data integrity', () => {
   it('getShopItem: nomaʼlum id → null', () => {
     expect(getShopItem('???')).toBeNull()
     expect(getShopItem('')).toBeNull()
+  })
+
+  it('mavsumiy buyumlar: to\'g\'ri MM-DD oyna, from<=until, faqat avatar-frame (hozircha)', () => {
+    for (const i of SHOP_ITEMS.filter((x) => x.seasonal)) {
+      expect(i.seasonal!.from).toMatch(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/)
+      expect(i.seasonal!.until).toMatch(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/)
+      const key = (s: string) => Number(s.slice(0, 2)) * 100 + Number(s.slice(3))
+      expect(key(i.seasonal!.from)).toBeLessThanOrEqual(key(i.seasonal!.until))
+      expect(i.kind).toBe('avatar-frame')
+    }
+  })
+})
+
+describe('config/shop-items — mavsumiy oyna logikasi', () => {
+  // Tashkent UTC+5: kunduzi UTC vaqtida test qilsak bir xil kalendar kun bo'ladi
+  const at = (iso: string) => new Date(`${iso}T12:00:00Z`)
+  const w = { from: '03-01', until: '03-27' }
+
+  it('oyna chegaralari (from/until kunlari DAXIT)', () => {
+    expect(isSeasonalWindowActive(w, at('2026-02-28'))).toBe(false)
+    expect(isSeasonalWindowActive(w, at('2026-03-01'))).toBe(true)   // birinchi kun
+    expect(isSeasonalWindowActive(w, at('2026-03-15'))).toBe(true)
+    expect(isSeasonalWindowActive(w, at('2026-03-27'))).toBe(true)   // oxirgi kun
+    expect(isSeasonalWindowActive(w, at('2026-03-28'))).toBe(false)
+  })
+
+  it('isShopItemAvailable: mavsumiysiz doim true; mavsumiy faqat oyna ichida', () => {
+    const plain = SHOP_ITEMS.find((i) => !i.seasonal && i.kind === 'avatar-frame')!
+    expect(isShopItemAvailable(plain, at('2026-01-01'))).toBe(true)
+
+    const navruz = getShopItem('frame-navruz')!
+    expect(navruz.seasonal).toBeDefined()
+    expect(isShopItemAvailable(navruz, at('2026-03-10'))).toBe(true)
+    expect(isShopItemAvailable(navruz, at('2026-08-21'))).toBe(false)
+
+    const mustaqillik = getShopItem('frame-mustaqillik')!
+    expect(isShopItemAvailable(mustaqillik, at('2026-08-21'))).toBe(true)
+    expect(isShopItemAvailable(mustaqillik, at('2026-03-10'))).toBe(false)
+  })
+
+  it('seasonalDaysLeft: tugashigacha qolgan kunlar; faol bo\'lmasa null', () => {
+    expect(seasonalDaysLeft(w, at('2026-03-27'))).toBe(0)   // oxirgi kun
+    expect(seasonalDaysLeft(w, at('2026-03-20'))).toBe(7)
+    expect(seasonalDaysLeft(w, at('2026-03-01'))).toBe(26)
+    expect(seasonalDaysLeft(w, at('2026-04-01'))).toBeNull()
   })
 })

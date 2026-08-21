@@ -18,7 +18,8 @@ import { questions, users } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 import { authRepository } from '../../../server/modules/auth/auth.repository'
 import { coinsRepository } from '../../../server/modules/coins/coins.repository'
-import { getShopItem } from '../../../shared/shop-items'
+import { getShopItem, isShopItemAvailable } from '../../../shared/shop-items'
+import { SPIN_SEGMENTS, getSpinSegment } from '../../../shared/lucky-spin'
 import { tashkentDate } from '../../../server/utils/date'
 
 const app = createApp()
@@ -182,6 +183,108 @@ describe('coins purchase — atomiklik', () => {
     await request(app).post('/api/coins/purchase')
       .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
       .expect(401)
+  })
+})
+
+describe('coins — mavsumiy drop guard', () => {
+  // Oynalar kesishmaydi (03-01..03-27 va 08-15..09-03) → har qanday kunda
+  // KAMIDA bittasi yopiq bo'ladi (expired branch har doim deterministik).
+  const NAVRUZ = 'frame-navruz'
+  const MUSTAQILLIK = 'frame-mustaqillik'
+
+  it('oyna tashqarisidagi mavsumiy buyum — 409 ITEM_SEASON_EXPIRED, balans o\'zgarmaydi', async () => {
+    const expiredItem = [NAVRUZ, MUSTAQILLIK]
+      .map((id) => getShopItem(id)!)
+      .find((i) => !isShopItemAvailable(i))
+    expect(expiredItem).toBeDefined()
+    await setBalance(USER_A, 5000)
+    const res = await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: expiredItem.id, purchaseId: randomBytes(16).toString('hex') })
+      .expect(409)
+    expect(res.body.error).toBe('ITEM_SEASON_EXPIRED')
+    expect(await getBalance(USER_A)).toBe(5000)
+  })
+
+  it('aktiv oynadagi mavsumiy buyum — oddiy durable xarid kabi ishlaydi', async () => {
+    const activeItem = [NAVRUZ, MUSTAQILLIK]
+      .map((id) => getShopItem(id)!)
+      .find((i) => isShopItemAvailable(i))
+    if (!activeItem) return   // iyun kabi oynalar "orasidagi" sana — faqat yopiq branch tekshiriladi
+    // USER_B (uning ownedItems to'plami boshqa testlarda aniq assert qilinmaydi)
+    await setBalance(USER_B, 5000)
+    const res = await request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: activeItem.id, purchaseId: randomBytes(16).toString('hex') })
+      .expect(200)
+    expect(res.body.ok).toBe(true)
+    expect(res.body.durable).toBe(true)
+    expect(await getBalance(USER_B)).toBe(5000 - activeItem.price)
+    const state = await coinsRepository.getEconomyState(USER_B)
+    expect(state.ownedItems).toContain(activeItem.id)
+  })
+})
+
+describe('coins — Lucky Spin (omad g\'ildiragi)', () => {
+  it('GET holat → POST spin (1/kun) → qayta POST 409; yutuq atomik yoziladi', async () => {
+    const date = tashkentDate()
+
+    // 1) Boshlang'ich holat — aylantirilmagan
+    const s0 = await request(app).get('/api/coins/spin')
+      .set('Authorization', `Bearer ${tokenA}`).expect(200)
+    expect(s0.body.spun).toBe(false)
+
+    // 2) Spin — segment config'dan, grant atomik
+    const before = await getBalance(USER_A)
+    const res = await request(app).post('/api/coins/spin')
+      .set('Authorization', `Bearer ${tokenA}`).expect(200)
+    const seg = getSpinSegment(res.body.segment.id)
+    expect(seg).not.toBeNull()
+    expect(res.body.segment).toEqual({ id: seg!.id, kind: seg!.kind, amount: seg!.amount })
+
+    if (seg!.kind === 'coins') {
+      expect(res.body.balance).toBe(before + seg!.amount)
+      expect(await getBalance(USER_A)).toBe(before + seg!.amount)
+      const spinTx = (await coinsRepository.getHistory(USER_A)).filter((h) => h.reason === 'spin')
+      expect(spinTx.length).toBe(1)
+      expect(spinTx[0].refId).toBe(`spin:${date}`)
+    } else {
+      expect(new Date(res.body.premiumUntil).getTime()).toBeGreaterThan(Date.now() + 18 * 3600_000)
+    }
+
+    // 3) Qayta spin — 409 SPIN_ALREADY_USED_TODAY, balans o'zgarmaydi
+    const res2 = await request(app).post('/api/coins/spin')
+      .set('Authorization', `Bearer ${tokenA}`).expect(409)
+    expect(res2.body.error).toBe('SPIN_ALREADY_USED_TODAY')
+
+    // 4) GET holat — spun + rewardId
+    const s1 = await request(app).get('/api/coins/spin')
+      .set('Authorization', `Bearer ${tokenA}`).expect(200)
+    expect(s1.body).toMatchObject({ spun: true, rewardId: seg!.id, date })
+  })
+
+  it('repository: yangi kun yangi claim; ESKI sana qabul qilinmaydi; premium grant C-1', async () => {
+    const coinsSeg = SPIN_SEGMENTS.find((s) => s.kind === 'coins')!
+    const premiumSeg = SPIN_SEGMENTS.find((s) => s.kind === 'premium-days')!
+
+    // Kun ketma-ketligi: 2026-06-01 → ok; shu kun qayta → already; eski kun → already; keyingi kun → ok
+    const r1 = await coinsRepository.spin(USER_B, '2026-06-01', coinsSeg)
+    expect(r1.status).toBe('ok')
+    expect(await coinsRepository.spin(USER_B, '2026-06-01', coinsSeg)).toMatchObject({ status: 'already_spun' })
+    expect(await coinsRepository.spin(USER_B, '2026-05-31', coinsSeg)).toMatchObject({ status: 'already_spun' })
+
+    // Premium segment: premium_until uzaydi, tariff free (C-1), user_items yozilmaydi
+    const r2 = await coinsRepository.spin(USER_B, '2026-06-02', premiumSeg)
+    expect(r2.status).toBe('ok')
+    expect(r2.status === 'ok' && r2.premiumUntil !== null
+      && new Date(r2.premiumUntil).getTime() > Date.now()).toBe(true)
+    const [u] = await db.select().from(users).where(eq(users.id, USER_B))
+    expect(u.tariff).toBe('free')                      // C-1
+    const spinTx = (await coinsRepository.getHistory(USER_B)).filter((h) => h.reason === 'spin')
+    expect(spinTx.length).toBe(1)                      // FAQAT coin yutuq ledger'da (premium audit daily_spins'da)
+
+    // noma'lum user
+    expect(await coinsRepository.spin('no_such_user', '2026-06-03', coinsSeg)).toMatchObject({ status: 'user_not_found' })
   })
 })
 

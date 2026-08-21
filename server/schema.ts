@@ -788,6 +788,58 @@ export const userItems = pgTable('user_items', {
 ])
 
 /**
+ * Lucky Spin — kunlik 1 aylantirish (Lucky Spin feature).
+ * PK user_id + atomik claim (`ON CONFLICT ... WHERE spin_date < yangi`) =
+ * 1/kun strukturaviy (parallel so'rovlar serialize bo'ladi).
+ * reward_id — shared/lucky-spin.ts segment id (audit; coin yutuqlar qo'shimcha
+ * coin_transactions'da reason='spin' bilan yoziladi).
+ * NOTE: coin_transactions.chk_delta_nonzero sababli premium yutuq bu yerda
+ * audit qilinadi (delta=0 ledger'ga kira olmaydi).
+ */
+export const dailySpins = pgTable('daily_spins', {
+  userId:    text('user_id').primaryKey().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** Tashkent kalendari 'YYYY-MM-DD' (daily_records kabi) */
+  spinDate:  text('spin_date').notNull(),
+  /** shared/lucky-spin segment id ('c5' | 'c100' | 'p1' ...) */
+  rewardId:  text('reward_id').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+})
+
+// ─── BOSS BATTLE (haftalik jamoaviy jang) ────────────────────────────────────
+
+/**
+ * Haftalik boss — period bo'yicha 1 qator (periodKey = Tashkent dushanbasi).
+ * status: 'active' | 'defeated' (HP 0) | 'escaped' (vaqt o'tdi).
+ * rewardsDistributed — rollover idempotency bayrog'i (ledger UNIQUE bilan birga).
+ */
+export const bossBattles = pgTable('boss_battles', {
+  id:           serial('id').primaryKey(),
+  /** Tashkent hafta boshi 'YYYY-MM-DD' (shared/boss-battle.bossPeriodKey) */
+  periodKey:    text('period_key').notNull(),
+  /** shared/boss-battle BOSS_ROSTER id */
+  bossId:       text('boss_id').notNull(),
+  hpTotal:      integer('hp_total').notNull(),
+  hpLeft:       integer('hp_left').notNull(),
+  /** 'active' | 'defeated' | 'escaped' */
+  status:       text('status').notNull().default('active'),
+  rewardsDistributed: boolean('rewards_distributed').notNull().default(false),
+  createdAt:    timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_boss_period').on(t.periodKey),
+])
+
+/** Har userning shu boss'ga bergan umumiy zarari (mukofot asosiy) */
+export const bossDamage = pgTable('boss_damage', {
+  bossId:  integer('boss_id').notNull().references(() => bossBattles.id, { onDelete: 'cascade' }),
+  userId:  text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  damage:  integer('damage').notNull().default(0),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.bossId, t.userId] }),
+  check('chk_boss_damage_nonnegative', sql`${t.damage} >= 0`),
+])
+
+/**
  * MERCH buyurtmalari (FIXPLAN #40 Faza 3) — real fizik tovarlar coin'ga.
  * User boshiga har item'dan 1 TA faol buyurtma (CANCELLed tarix bo'lishi mumkin) —
  * bu limit purchase CTE'da `merch_orders` subquery'si bilan tekshiriladi.

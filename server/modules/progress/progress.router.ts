@@ -10,6 +10,9 @@ import { parseUserId }          from '../../utils/parse'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { progressRepository }   from './progress.repository'
+import { bossRepository }       from '../boss/boss.repository'
+import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-battle'
+import { Sentry }               from '../../utils/sentry'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
@@ -67,6 +70,17 @@ router.post(
     }
     // coin mint: FAQAT yangi to'g'ri javob (gate'dan o'tgan) — duplicate'lar 0.
     const coinsEarned = correct ? COINS_PER_CORRECT_ANSWER : 0
+
+    // BOSS BATTLE: gate'dan o'tgan fresh to'g'ri javob — haftalik boss'ga zarar.
+    // Best-effort: boss xatosi ASOSIY javob oqimini sindirmaydi (Sentry'ga tushadi).
+    if (correct) {
+      try {
+        await bossRepository.applyDamage(uid, bossPeriodKey(), BOSS_DAMAGE_PER_CORRECT)
+      } catch (err) {
+        Sentry.captureException(err, { tags: { feature: 'boss-battle', stage: 'applyDamage' } })
+      }
+    }
+
     res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak, coinsEarned, coinBalance })
   }),
 )

@@ -724,6 +724,16 @@ body[data-accent='arctic'] .dashboard-page {
   background: conic-gradient(from 0deg, #f97316, #ef4444 25%, #fbbf24 50%, #ef4444 75%, #f97316);
   box-shadow: 0 0 14px rgba(249, 115, 22, 0.5);
 }
+/* Mavsumiy: Navro'z (bahor — zomcha yashili + lola guli) */
+.avatar-frame-navruz {
+  background: conic-gradient(from 90deg, #34d399, #84cc16 30%, #fb7185 55%, #34d399 80%, #34d399);
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.45);
+}
+/* Mavsumiy: Mustaqillik (bayroq ranglari — ko'k/ojoq/yashil) */
+.avatar-frame-mustaqillik {
+  background: linear-gradient(135deg, #38bdf8, #f8fafc 40%, #22c55e 70%, #0284c7);
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.45);
+}
 
 /* Light dashboard topbar kontrast va frosted glass */
 body[data-theme='light'] .dashboard-page .dashboard-topbar-subtle {

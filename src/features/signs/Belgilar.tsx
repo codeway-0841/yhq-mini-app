@@ -135,6 +135,10 @@ export default function Belgilar() {
             <button onClick={() => goBack(navigate)} aria-label="Orqaga"
               className="text-muted hover:text-fg text-xl px-1">←</button>
             <h1 className="text-xl font-black flex-1">Yo'l belgilari</h1>
+            <button onClick={() => navigate('/belgilar-oyini')}
+              className="btn-premium-sm btn-premium flex items-center gap-1.5 text-[12px]">
+              🎮 O'yin
+            </button>
             <button onClick={() => navigate('/flashcards')}
               className="btn-premium-sm btn-premium flex items-center gap-1.5 text-[12px]">
               🃏 Kartochkalar

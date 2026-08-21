@@ -3,6 +3,16 @@
 > Senior audit natijalari (2026-08-11). Bu fayl keyingi sessiyada davom etish uchun.
 > Buyruq: "TODO.md ni o'qib davom et" + istalganda "caveman ishlatib tur".
 
+## ✅ 2026-08-21 — 4 yangi FEATURE (user tanlovi) — TUGADI
+
+- **#12 Mavsumiy skin drop** — `shared/shop-items.ts` ga `seasonal:{from,until}` (MM-DD Tashkent oynasi, yillik takroriy) + `isShopItemAvailable/seasonalDaysLeft`; xarid guard 409 `ITEM_SEASON_EXPIRED` (coins.router); 2 ramka (`frame-navruz` 03-01..03-27, `frame-mustaqillik` 08-15..09-03) + CSS + ShopPage "Mavsumiy drop" bo'limi (countdown). Test: unit seasonal + coins integration +2.
+- **#11 Lucky Spin** — `shared/lucky-spin.ts` (8 segment, og'irlik=100, EV≈17c/kun byudjet); `daily_spins` jadval (migratsiya 0050, 1/kun atomik claim); GET+POST `/api/coins/spin` (segment FAQAT server crypto RNG; premium yutuq C-1 GREATEST premium_until, audit daily_spins'da — delta=0 ledger'da bo'la olmaydi); `SpinModal` (g'ildirak server segmentiga "qonadi"), ShopPage bo'limi. Integration +2.
+- **#2 Belgilar o'yini** — `/belgilar-oyini` CLIENT-ONLY: `src/content/signs-game.ts` (27 SXEMATIK SVG belgi — shakl/fon/ramka/piktogramma; `num` faqat ishonchli raqamlar), `SignIcon`, `game-logic.ts` (sof + rand inject), 2 rejim: Tezkor (60s×4 variant) + Juftlash (6 juft tile); rekordlar localStorage. DIQQAT: `signs.ts` katalogi MOCK — o'yin unga TAYANMAYDI. Test: unit +8.
+- **#1 Boss Battle** — `boss_battles`+`boss_damage` (0051), zarar FAQAT /result gate-fresh to'g'ri javob hook'idan (`progress.router`, +5, best-effort+Sentry); `shared/boss-battle.ts` roster (deterministik rotatsiya, HP 200k, ishtirok 10+zarar/25c, top-3 100/60/40); cron `/api/cron/boss-rollover` (dushanba 00:35 UTC, vercel.json, jobRuns retry + ledger `boss:<id>:<user>` UNIQUE → idempotent mukofot; 'escaped' mukofotsiz); Dashboard `BossCard`. Integration `boss.test.ts` +5.
+- **MIGRATION DRIFT incident (muhim dars):** drizzle migrator `folderMillis > jurnal MAX(created_at)` sharti bilan ishlaydi — 0048 meta `when`'i KELAJAK sanada edi (1787325600000) → 0049/0050 "Migrations done" deb JIMGINA SKIP bo'lgan. TEST+PROD journalda 0048 `created_at` 1787260000000 ga normallashtirildi + 0049 qatori qo'lda qo'shildi (avatar_webp allaqachon mavjud edi); `migrations/meta/_journal.json` 0048.when ham tuzatildi. Qoida: AGENTS.md №5'ga yozildi.
+- **Verifikatsiya:** tsc ×2 ✓, unit 489/489 ✓, integration **153/153** ✓ (real Neon), lint 0 error ✓, vite build ✓. Migratsiyalar 0050+0051 TEST va PROD'da qo'llangan.
+
+
 ## ✅ P1 Xavfsizlik paketi (2026-08-17, audit sessiyasi) — TUGADI
 
 - **P1-1 DB-limiter migratsiyasi:** `/questions`, `/topics` (bucket `content`, 60/min IP),

@@ -15,6 +15,7 @@ import { executeRows } from '../../db/connection'
 import { getShopItem, isDurableShopItem } from '../../../shared/shop-items'
 import { getMerchItem, MERCH_ITEMS } from '../../../shared/merch-items'
 import { DAILY_TASKS, getDailyTask, type DailyTaskMetric } from '../../../shared/daily-tasks'
+import type { SpinSegment } from '../../../shared/lucky-spin'
 
 /** daily_records ustuni — FAQAT SSOT metrikalari (SQL injection yo'q: identifier) */
 const METRIC_COLUMN: Record<DailyTaskMetric, ReturnType<typeof sql.identifier>> = {
@@ -478,5 +479,91 @@ export const coinsRepository = {
       SELECT status FROM merch_orders WHERE id = ${orderId}
     `)
     return exists.length === 0 ? 'not_found' : 'not_cancellable'
+  },
+
+  // ── LUCKY SPIN (kunlik omad g'ildiragi) ────────────────────────────────────
+
+  /** Bugungi spin holati (GET /coins/spin; spun = record.spinDate === date) */
+  async getSpinState(userId: string): Promise<{ spinDate: string; rewardId: string } | null> {
+    const rows = await executeRows<{ spin_date: string; reward_id: string }>(sql`
+      SELECT spin_date, reward_id FROM daily_spins WHERE user_id = ${userId}
+    `)
+    return rows[0] ? { spinDate: rows[0].spin_date, rewardId: rows[0].reward_id } : null
+  },
+
+  /**
+   * Kunlik spin — BITTA atomik CTE, **CLAIM-FIRST** (claimTask kabi):
+   *  1) `daily_spins` PK + `ON CONFLICT ... WHERE spin_date < yangi` — kuniga
+   *     FAQAT bitta claim; parallel so'rovlar serialize (mag'lub claim'siz).
+   *  2) Grant: coins → user_coins upsert + ledger `reason='spin'`
+   *     (`spin:<date>` UNIQUE — qo'shimcha idempotency); premium-days →
+   *     GREATEST premium_until (C-1: tariff'ga TEGMAYDI; delta=0 ledger'ga
+   *     kira olmagani uchun audit daily_spins.reward_id'da).
+   *  Segment tanlovi router'da (server crypto RNG) — bu metod deterministik.
+   */
+  async spin(userId: string, date: string, segment: SpinSegment): Promise<
+    | { status: 'ok'; balance: number | null; premiumUntil: Date | null }
+    | { status: 'already_spun' }
+    | { status: 'user_not_found' }
+  > {
+    const isCoins = segment.kind === 'coins'
+    const amount = segment.amount
+
+    const rows = await executeRows<{
+      user_exists: boolean; claimed: boolean
+      balance: number | null; current_balance: number | null; premiumUntil: Date | null
+    }>(sql`
+      WITH target_user AS (
+        SELECT id FROM users WHERE id = ${userId}
+      ), claim AS (
+        -- 1/KUN GUARD: PK conflict'da FAQAT eski (o'tgan) sana yangilanadi
+        INSERT INTO daily_spins (user_id, spin_date, reward_id)
+        SELECT ${userId}, ${date}, ${segment.id}
+        WHERE EXISTS (SELECT 1 FROM target_user)
+        ON CONFLICT (user_id) DO UPDATE SET
+          spin_date = EXCLUDED.spin_date,
+          reward_id = EXCLUDED.reward_id
+          WHERE daily_spins.spin_date < EXCLUDED.spin_date
+        RETURNING user_id
+      ), award_coins AS (
+        INSERT INTO user_coins (user_id, balance, updated_at)
+        SELECT ${userId}, ${amount}::int, now()
+        WHERE EXISTS (SELECT 1 FROM claim) AND ${isCoins}::boolean
+        ON CONFLICT (user_id) DO UPDATE SET
+          balance = user_coins.balance + ${amount}::int,
+          updated_at = now()
+        RETURNING balance
+      ), award_ledger AS (
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${amount}::int, 'spin', ${`spin:${date}`}
+        WHERE EXISTS (SELECT 1 FROM award_coins)
+        ON CONFLICT DO NOTHING
+        RETURNING id
+      ), award_premium AS (
+        UPDATE users SET
+          premium_until = GREATEST(COALESCE(premium_until, now()), now())
+            + make_interval(days => ${amount}::int),
+          updated_at = now()
+        WHERE id = ${userId}
+          AND EXISTS (SELECT 1 FROM claim)
+          AND NOT ${isCoins}::boolean
+        RETURNING premium_until
+      )
+      SELECT
+        EXISTS (SELECT 1 FROM target_user) AS user_exists,
+        EXISTS (SELECT 1 FROM claim) AS claimed,
+        (SELECT balance::int FROM award_coins) AS balance,
+        (SELECT balance::int FROM user_coins WHERE user_id = ${userId}) AS current_balance,
+        (SELECT premium_until FROM award_premium) AS "premiumUntil"
+    `)
+
+    const row = rows[0]
+    if (!row?.user_exists) return { status: 'user_not_found' }
+    if (!row.claimed) return { status: 'already_spun' }
+    return {
+      status: 'ok',
+      balance: row.balance !== null ? Number(row.balance) : Number(row.current_balance ?? 0),
+      premiumUntil: row.premiumUntil ? new Date(row.premiumUntil) : null,
+    }
   },
 }

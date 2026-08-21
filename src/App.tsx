@@ -22,6 +22,7 @@ const TestlarPage     = lazy(() => import('./features/testlar/TestlarPage'))
 const Darslik         = lazy(() => import('./features/lessons/Darslik'))
 const Biletlar        = lazy(() => import('./features/tickets/Biletlar'))
 const Belgilar        = lazy(() => import('./features/signs/Belgilar'))
+const SignsGamePage   = lazy(() => import('./features/signs-game/SignsGamePage'))
 const Profil          = lazy(() => import('./features/profile/Profil'))
 const TopicsPage      = lazy(() => import('./features/topics/TopicsPage'))
 const AdaptivePage    = lazy(() => import('./features/adaptive/AdaptivePage'))
@@ -99,6 +100,7 @@ function Layout() {
             <Route path="/darslik"    element={<Darslik />} />
             <Route path="/biletlar"   element={<Biletlar />} />
             <Route path="/belgilar"   element={<Belgilar />} />
+            <Route path="/belgilar-oyini" element={<SignsGamePage />} />
             <Route path="/profil"     element={<Profil />} />
             <Route path="/mavzular"   element={<TopicsPage />} />
             <Route path="/adaptive"   element={<AdaptivePage />} />

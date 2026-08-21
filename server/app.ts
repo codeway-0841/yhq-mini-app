@@ -38,6 +38,7 @@ import tutorRouter        from './modules/tutor/tutor.router'
 import adminRouter        from './modules/admin/admin.router'
 import promoRouter        from './modules/promo/promo.router'
 import coinsRouter        from './modules/coins/coins.router'
+import bossRouter         from './modules/boss/boss.router'
 import certificateRouter  from './modules/certificate/certificate.router'
 import shareRouter        from './modules/share/share.router'
 import { paymentRouter }  from './modules/payments/payment.router'
@@ -119,6 +120,7 @@ export function createApp() {
   app.use('/api', adminRouter)
   app.use('/api', promoRouter)
   app.use('/api', coinsRouter)
+  app.use('/api', bossRouter)
   app.use('/api', certificateRouter)
   app.use('/api', shareRouter)
   app.use('/api/payments', paymentRouter)

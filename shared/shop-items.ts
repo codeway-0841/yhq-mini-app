@@ -21,6 +21,19 @@
 
 export type ShopItemKind = 'accent-theme' | 'premium-days' | 'avatar-frame'
 
+/**
+ * Mavsumiy drop oynasi — 'MM-DD' yillik TAKRORLANUVCHI kalendariya oralig'i
+ * (har yili shu sanalarda avtomatik ochiladi; yil yozish shart emas).
+ * Tashkent kalendari bo'yicha (daily_records bilan bir xil canonical TZ).
+ * Hozir from<=until (yil kesib o'tuvchi oyna yo'q).
+ */
+export interface SeasonalWindow {
+  /** 'MM-DD' — shu kundan aktiv */
+  from: string
+  /** 'MM-DD' — shu kun GACHA aktiv (shu kun oxirgi kun) */
+  until: string
+}
+
 export interface ShopItem {
   id: string
   kind: ShopItemKind
@@ -28,6 +41,8 @@ export interface ShopItem {
   price: number
   /** kind='premium-days' uchun grant kuni (muddati) */
   days?: number
+  /** Mavsumiy drop: sotib olish FAQAT oyna ichida; sotib olingan umrbod qoladi */
+  seasonal?: SeasonalWindow
 }
 
 /** Javob boshiga mint — recordAnswer CTE'da faqat gate'dan o'tgan TO'G'RI javob uchun. */
@@ -59,6 +74,9 @@ export const SHOP_ITEMS = [
   { id: 'frame-royal',   kind: 'avatar-frame', price: 500 },
   { id: 'frame-gold',    kind: 'avatar-frame', price: 500 },
   { id: 'frame-fire',    kind: 'avatar-frame', price: 700 },
+  // ── Mavsumiy drop'lar (limitli oyna; sotib olingan umrbod qoladi) ──
+  { id: 'frame-navruz',      kind: 'avatar-frame', price: 400, seasonal: { from: '03-01', until: '03-27' } },
+  { id: 'frame-mustaqillik', kind: 'avatar-frame', price: 400, seasonal: { from: '08-15', until: '09-03' } },
 ] as const satisfies readonly ShopItem[]
 
 export type ShopItemId = (typeof SHOP_ITEMS)[number]['id']
@@ -70,4 +88,36 @@ export function getShopItem(id: string): ShopItem | null {
 /** Durable buyummi (user_items'ga yoziladimi) — premium-days consumable: yo'q. */
 export function isDurableShopItem(item: ShopItem): boolean {
   return item.kind === 'accent-theme' || item.kind === 'avatar-frame'
+}
+
+// ── Mavsumiy oyna logikasi (TZ: Asia/Tashkent — daily_records canonical) ─────
+
+/** Tashkent kalendari — 'YYYY-MM-DD' (server/utils/date.tashkentDate bilan bir xil) */
+function tashkentCalendar(now: Date): string {
+  return now.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tashkent' })
+}
+
+/** 'MM-DD' → taqqoslash uchun raqamli kalit (masalan '03-15' → 315) */
+function mmddKey(mmdd: string): number {
+  const [m, d] = mmdd.split('-').map(Number)
+  return m * 100 + d
+}
+
+/** Mavsumiy oyna hozir ochiqmi (chegaraviy kunlar IKKALASI ham aktiv) */
+export function isSeasonalWindowActive(w: SeasonalWindow, now: Date = new Date()): boolean {
+  const todayKey = mmddKey(tashkentCalendar(now).slice(5))
+  return mmddKey(w.from) <= todayKey && todayKey <= mmddKey(w.until)
+}
+
+/** Buyum hozir sotib olinadimi — mavsumiy bo'lsa faqat oyna ichida. */
+export function isShopItemAvailable(item: ShopItem, now: Date = new Date()): boolean {
+  return !item.seasonal || isSeasonalWindowActive(item.seasonal, now)
+}
+
+/** Aktiv oyna tugashiga qancha kun qoldi (0 = bugun oxirgi kun); faol bo'lmasa null. */
+export function seasonalDaysLeft(w: SeasonalWindow, now: Date = new Date()): number | null {
+  if (!isSeasonalWindowActive(w, now)) return null
+  const today = tashkentCalendar(now)
+  const endStr = `${today.slice(0, 4)}-${w.until}`
+  return Math.round((Date.parse(`${endStr}T00:00:00Z`) - Date.parse(`${today}T00:00:00Z`)) / 86_400_000)
 }

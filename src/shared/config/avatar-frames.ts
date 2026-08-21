@@ -28,6 +28,9 @@ export const AVATAR_FRAMES: AvatarFrame[] = [
   { id: 'frame-royal',  label: { uz: 'Qirollik halqasi',ru: 'Королевское кольцо'}, cssClass: 'avatar-frame-royal',  color: '#818cf8' },
   { id: 'frame-gold',   label: { uz: 'Oltin halqa',     ru: 'Золотое кольцо'    }, cssClass: 'avatar-frame-gold',   color: '#facc15' },
   { id: 'frame-fire',   label: { uz: 'Olov halqasi',    ru: 'Огненное кольцо'   }, cssClass: 'avatar-frame-fire',   color: '#fb923c' },
+  // ── Mavsumiy drop'lar (oyna oynasi shared/shop-items.ts'da) ──
+  { id: 'frame-navruz',      label: { uz: "Navro'z halqasi",      ru: 'Кольцо Навруза'        }, cssClass: 'avatar-frame-navruz',      color: '#34d399' },
+  { id: 'frame-mustaqillik', label: { uz: 'Mustaqillik halqasi',  ru: 'Кольцо Независимости'  }, cssClass: 'avatar-frame-mustaqillik', color: '#3b82f6' },
 ]
 
 export function getAvatarFrame(id: string | null | undefined): AvatarFrame | null {

@@ -11,6 +11,10 @@
       "schedule": "15 0 * * 1"
     },
     {
+      "path": "/api/cron/boss-rollover",
+      "schedule": "35 0 * * 1"
+    },
+    {
       "path": "/api/cron/cleanup-answer-tokens",
       "schedule": "0 3 * * *"
     }

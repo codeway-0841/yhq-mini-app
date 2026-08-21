@@ -530,6 +530,34 @@ export const api = {
   claimCoinTask: (taskId: string) =>
     request<{ ok: true; balance: number; reward: number }>('POST', '/coins/claim-task', { taskId }),
 
+  // ── Lucky Spin (kunlik omad g'ildiragi) ──
+  getSpinState: () =>
+    request<{ ok: true; date: string; spun: boolean; rewardId: string | null }>('GET', '/coins/spin'),
+
+  /** Segment FAQAT server'da tanlanadi (409 SPIN_ALREADY_USED_TODAY) */
+  spinWheel: () =>
+    request<{
+      ok: true
+      segment: { id: string; kind: 'coins' | 'premium-days'; amount: number }
+      balance: number | null
+      premiumUntil: string | null
+    }>('POST', '/coins/spin'),
+
+  // ── Boss Battle (haftalik jamoaviy jang) — faqat o'qish ──
+  getBossState: () =>
+    request<{
+      ok: true
+      periodKey: string
+      bossId: number
+      bossKey: string
+      hpTotal: number
+      hpLeft: number
+      status: 'active' | 'defeated' | 'escaped'
+      myDamage: number
+      totalDamage: number
+      top: { userId: string; firstName: string; photoUrl: string | null; hasCustomAvatar: boolean; damage: number }[]
+    }>('GET', '/boss/state'),
+
   // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
   getMerchCatalog: () =>
     request<{ ok: true; items: MerchCatalogItem[] }>('GET', '/coins/merch'),

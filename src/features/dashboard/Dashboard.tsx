@@ -24,6 +24,7 @@ import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { DailyTasksCard } from '../shop'
+import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
 import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
@@ -246,6 +247,9 @@ export default function Dashboard() {
 
           {/* 2b. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
+
+          {/* 2c. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
+          <BossCard />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-5">
