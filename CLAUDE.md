@@ -72,7 +72,7 @@ cd android && gradlew assembleDebug       # Build debug APK
 
 ### Deploy flow
 
-Vercel: `vercel.json` routes `/api/*` to serverless function, everything else to SPA. Crons: daily-reminder (14:00 UTC), league-rollover (Mon 00:15 UTC).
+Vercel: `vercel.json` routes `/api/*` to serverless function, everything else to SPA. Crons: daily-reminder (14:00 UTC), league-rollover (Mon 00:15 UTC), boss-rollover (Mon 00:35 UTC), cleanup-answer-tokens (03:00 UTC).
 
 ## Key Rules
 

@@ -147,6 +147,30 @@ describe('coins purchase — atomiklik', () => {
     expect(debits.length).toBe(1)
   })
 
+  it('parallel CONSUMABLE (premium-days) xuddi shu purchaseId — FAQAT bitta debit', async () => {
+    // Durable'dan farqli: consumable claim-first user_items lock'iga ega emas —
+    // shu race'ni aynan shu test ushlashi kerak (audit #4).
+    await setBalance(USER_B, 1000)
+    const purchaseId = randomBytes(16).toString('hex')
+    const before = await getBalance(USER_B)
+    const p1 = request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'premium-days-1', purchaseId })
+    const p2 = request(app).post('/api/coins/purchase')
+      .set('Authorization', `Bearer ${tokenB}`)
+      .send({ itemId: 'premium-days-1', purchaseId })
+    const [r1, r2] = await Promise.all([p1, p2])
+    const price = getShopItem('premium-days-1')!.price
+    expect(r1.status).toBe(200)
+    expect(r2.status).toBe(200)
+    // Biri 'ok', ikkinchisi 'duplicate' bo'lishi kerak — IKKALASI HAM 'ok' bo'lsa double-debit
+    const oks = [r1.body, r2.body].filter((b) => b.duplicate === false).length
+    expect(oks).toBe(1)
+    expect(before - (await getBalance(USER_B))).toBe(price)
+    const debits = (await coinsRepository.getHistory(USER_B)).filter((h) => h.reason === 'purchase' && h.refId === purchaseId)
+    expect(debits.length).toBe(1)
+  })
+
   it('xuddi shu purchaseId retry — idempotent duplicate (qayta debit yo\'q)', async () => {
     const before = await getBalance(USER_B)
     const purchaseId = randomBytes(16).toString('hex')

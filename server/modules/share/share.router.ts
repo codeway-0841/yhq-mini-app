@@ -26,9 +26,12 @@ const ShareImageSchema = z.object({
   fileName:    z.string().min(1).max(80).regex(/^[\w.-]+$/, 'fileName').optional(),
 })
 
-/** Canonical user id → Telegram chatId (raqam id yoki telegram identity) */
+/** Canonical user id → Telegram chatId (raqam id yoki telegram identity).
+ *  Regex octagon.ts WS_USER_ID_RE bilan sinxron (audit #13: eski \d{5,12}
+ *  yangi/kattaroq Telegram id'lar uchun DB fallback'ga tushib qolardi —
+ *  ishlaydi, lekin keraksiz sekin yo'l). */
 async function resolveTgChatId(userId: string): Promise<number | null> {
-  if (/^\d{5,12}$/.test(userId)) return Number(userId)
+  if (/^\d{1,20}$/.test(userId)) return Number(userId)
   const rows = await executeRows<{ provider_uid: string }>(sql`
     SELECT provider_uid FROM auth_identities
     WHERE user_id = ${userId} AND provider = 'telegram'

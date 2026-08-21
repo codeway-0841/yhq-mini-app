@@ -82,9 +82,14 @@ router.post(
 
     // COST CONTROL: Gemini har chaqiruvda pul — premium bo'lsa ham kunlik
     // user limiti va global byudjet shifti tekshiriladi (atomik upsert).
+    // TARTIB MUHIM (audit #10): USER limiti AVVAL tekshiriladi — o'z limitidan
+    // oshgan user'ning so'rovi baribir 429 bo'ladi, shuning uchun GLOBAL
+    // byudjetdan bekorga slot yemasligi kerak (avval global birinchi bo'lsa,
+    // || short-circuit tufayli global slot sarflanib bo'lgach user limiti
+    // ushlab qolardi — behuda sarflangan global kvota).
     const date = tashkentDate()
-    if (!(await tutorUsageRepository.tryConsume(TUTOR_GLOBAL_USER_ID, date, TUTOR_DAILY_GLOBAL_LIMIT))
-      || !(await tutorUsageRepository.tryConsume(uid, date, TUTOR_DAILY_USER_LIMIT))) {
+    if (!(await tutorUsageRepository.tryConsume(uid, date, TUTOR_DAILY_USER_LIMIT))
+      || !(await tutorUsageRepository.tryConsume(TUTOR_GLOBAL_USER_ID, date, TUTOR_DAILY_GLOBAL_LIMIT))) {
       throw new AppError(429, 'daily_limit')
     }
 

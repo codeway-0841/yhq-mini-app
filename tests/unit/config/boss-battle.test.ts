@@ -52,7 +52,7 @@ describe('config/boss-battle — data integrity', () => {
     expect(bossPeriodEndDate('2026-08-17').toISOString().slice(0, 10)).toBe('2026-08-24')
   })
 
-  it('bossForPeriod: deterministik, roster doirasida, qo'shni haftalar (odatda) farq', () => {
+  it("bossForPeriod: deterministik, roster doirasida, qo'shni haftalar (odatda) farq", () => {
     const a = bossForPeriod('2026-08-17')
     const b = bossForPeriod('2026-08-17')      // deterministik
     const c = bossForPeriod('2026-08-24')

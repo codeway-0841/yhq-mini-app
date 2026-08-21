@@ -159,9 +159,14 @@ export const progressRepository = {
           updated_at = now()
         RETURNING balance
       ), coin_ledger AS (
+        -- ref_id: clientToken bo'lsa o'sha (global unique); bo'lmasa qKey
+        -- ('subjectId:questionId') fallback — gate BIR marta shu savolga
+        -- coin_award'ni o'tkazgani uchun (progress_questions.correct qaytmaydi)
+        -- bu ref user boshiga takrorlanmaydi (audit: token yo'qligida ledger
+        -- qatori butunlay tushib qolardi — balans/ledger divergensiyasi).
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', ${token}
-        WHERE ${correct} AND ${token}::text IS NOT NULL AND EXISTS (SELECT 1 FROM coin_award)
+        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', COALESCE(${token}::text, ${qKey}::text)
+        WHERE ${correct} AND EXISTS (SELECT 1 FROM coin_award)
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
       ), record_upsert AS (

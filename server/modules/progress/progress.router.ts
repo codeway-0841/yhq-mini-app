@@ -6,6 +6,7 @@ import { Router }               from 'express'
 import { z }                    from 'zod'
 import { wrap, AppError }       from '../../middleware/error-handler'
 import { validate }             from '../../middleware/validate'
+import { requireSelf }          from '../../middleware/auth'
 import { parseUserId }          from '../../utils/parse'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
@@ -19,6 +20,11 @@ import { tashkentDate }         from '../../utils/date'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
 const router = Router()
+
+// Route-level guard (audit #17): global telegramAuth USER_SEGMENTS tekshiruvi
+// bilan bir xil natija, lekin daily/achievements'dagi patternga mos —
+// explicit, global allowlist'ga tayanmaydi.
+router.use('/progress/:userId', requireSelf)
 
 const ResultSchema = z.object({
   questionId:     z.number().int().positive(),

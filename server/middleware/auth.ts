@@ -120,10 +120,13 @@ export function isPublicAuthPost(req: Request): boolean {
   if (req.method !== 'POST') return false
   const normalized = normalizePath(req.path)
   if (!normalized) return false
-  const seg = normalized.split('/').filter(Boolean)
-  // auth/otp/verify/login → 4 segment, auth/phone/login → 3 segment
-  const path = seg.slice(0, 4).join('/')
-  return PUBLIC_AUTH_POST.has(path) || PUBLIC_AUTH_POST.has(seg.slice(0, 3).join('/'))
+  // TO'LIQ path exact-match (audit #14): oldingi slice(0,3)/slice(0,4) prefiks
+  // tekshiruvi 'auth/phone/login/anything' kabi MAVJUD BO'LMAGAN chuqurroq
+  // yo'lni ham public deb belgilardi (Express baribir 404 qaytaradi — mos
+  // route yo'q — shuning uchun amaliy ta'sir yo'q edi, lekin allowlist
+  // niyatiga mos EMAS edi).
+  const path = normalized.split('/').filter(Boolean).join('/')
+  return PUBLIC_AUTH_POST.has(path)
 }
 
 // `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).

@@ -273,7 +273,7 @@ router.get('/cron/boss-rollover', async (_req, res) => {
 })
 
 /**
- * Vercel Cron — answer_tokens cleanup (har kecha 02:00 UTC).
+ * Vercel Cron — answer_tokens cleanup (har kecha 03:00 UTC — vercel.json).
  * Idempotency token'lari cheksiz o'sib ketmasligi uchun 7 kundan eski
  * qatorlarni o'chiradi. Har replay o'sha paytda yaratilgan token bilan
  * keladi — 7 kun ichida kelmaydigan replay unlikely (client davra yozib beradi).

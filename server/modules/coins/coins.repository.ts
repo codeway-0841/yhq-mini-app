@@ -65,7 +65,14 @@ export const coinsRepository = {
       user_exists: boolean; was_duplicate: boolean
       balance: number | null; current_balance: number | null; premiumUntil: Date | null
     }>(sql`
-      WITH price AS (
+      WITH lock AS (
+        -- (userId, purchaseId) bo'yicha per-statement serialize — durable
+        -- item'lar user_items UNIQUE orqali strukturaviy himoyalangan, lekin
+        -- consumable (premium-days)da bunday claim yo'q edi: ikkita parallel
+        -- so'rov XUDDI SHU purchaseId bilan kelsa ikkalasi ham dup CTE'ni
+        -- bo'sh ko'rib ikkalasi ham debit qilishi mumkin edi (audit #4 — double-charge).
+        SELECT pg_advisory_xact_lock(hashtext(${userId} || ':' || ${purchaseId})::bigint)
+      ), price AS (
         SELECT ${item.price}::int AS p, ${durable}::boolean AS dur, ${days}::int AS days
       ), target_user AS (
         SELECT id FROM users WHERE id = ${userId}

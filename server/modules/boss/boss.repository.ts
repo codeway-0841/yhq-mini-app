@@ -50,6 +50,14 @@ export const bossRepository = {
    * Returns: yangilangan holat (UI toast uchun) yoki null (boss yo'q/jarhoyot).
    */
   async applyDamage(userId: string, periodKey: string, damage: number): Promise<{ defeated: boolean } | null> {
+    // NOTE (audit #6): ensureActiveBoss'ni shu CTE'ga INSERT sifatida qo'shib,
+    // hot path'dagi 2-round-tripni 1taga tushirish SINALGAN edi — lekin
+    // boss_battles'ga BIR WITH ichida IKKI marta yozish (ensured INSERT +
+    // upd UPDATE, orasida to'g'ridan-to'g'ri bog'liqlik yo'q) natijasi
+    // NOANIQ bo'lib chiqdi (Postgres docs: bir jadvalga sibling
+    // data-modifying CTE'lar "unwise" — natija kafolatlanmagan). CI'da
+    // reproduksiya qilindi (applyDamage kill-test yiqildi). Xavfsizlik
+    // uchun ikki alohida statement saqlab qolindi.
     await this.ensureActiveBoss(periodKey)
     const rows = await executeRows<{ boss_id: number | null; defeated: boolean }>(sql`
       WITH boss AS (
@@ -151,8 +159,11 @@ export const bossRepository = {
     const [t1, t2, t3] = BOSS_REWARDS.topCoins
     const rows = await executeRows<{ awarded: number }>(sql`
       WITH winners AS (
+        -- ROW_NUMBER (RANK emas): damage butun sondagi dag'al birlik (5 ballik
+        -- qadam) — teng damage odatiy holat. RANK bo'lsa teng bo'lganlarning
+        -- HAMMASI top-1 mukofot olardi (cheksiz coin mint xavfi).
         SELECT user_id, damage,
-               RANK() OVER (ORDER BY damage DESC) AS rk
+               ROW_NUMBER() OVER (ORDER BY damage DESC, user_id) AS rk
         FROM boss_damage WHERE boss_id = ${bossId}
       ), grants AS (
         SELECT user_id,

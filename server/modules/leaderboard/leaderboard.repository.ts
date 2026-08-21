@@ -51,25 +51,30 @@ export const leaderboardRepository = {
     // Clamp here as well — defense in depth in case router validation is bypassed
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
 
-    // LEFT JOIN so users with no progress row are included (score = 0)
-    // They won't appear in top-N in practice, but the caller's isYou still works correctly
+    // `progress`dan haydash (users'dan EMAS): avvalgi `FROM users LEFT JOIN
+    // progress ORDER BY COALESCE(...)` versiyasi COALESCE ifodasi tufayli
+    // idx_progress_total_correct'dan foydalana OLMASDI — har so'rov BUTUN
+    // users jadvalini scan+sort qilardi.
+    // INNER JOIN progress'i YO'Q userni tashlab ketadi — bu qasddan: progress
+    // qatori FAQAT /init (Mini App ochilishi)da yaratiladi (initAtomic — prog
+    // CTE), demak savolga hech qachon javob bermagan user HAM progress'ga ega
+    // emas HAM totalCorrect=0 — "eng ko'p to'g'ri javob" reytingida ko'rinishi
+    // shart emas. (users.repository.upsert() — bot invoice yo'li — progress'siz
+    // `users` qatori yaratishi mumkin, lekin bu ham xuddi shu 0-ball holat.)
     const rows = await db
       .select({
-        userId:       users.id,
+        userId:       progress.userId,
         firstName:    users.firstName,
         lastName:     users.lastName,
         photoUrl:          users.photoUrl,
         hasCustomAvatar:   sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
         avatarFrame:       users.avatarFrame,
-        totalCorrect: sql<number>`COALESCE(${progress.totalCorrect}, 0)`,
-        streak:       sql<number>`COALESCE(${progress.streak}, 0)`,
+        totalCorrect: progress.totalCorrect,
+        streak:       progress.streak,
       })
-      .from(users)
-      .leftJoin(progress, eq(progress.userId, users.id))
-      .orderBy(
-        desc(sql`COALESCE(${progress.totalCorrect}, 0)`),
-        desc(sql`COALESCE(${progress.streak}, 0)`),
-      )
+      .from(progress)
+      .innerJoin(users, eq(users.id, progress.userId))
+      .orderBy(desc(progress.totalCorrect), desc(progress.streak))
       .limit(safeLimit)
 
     return rows.map((r, i) => ({

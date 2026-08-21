@@ -54,7 +54,16 @@ export function createApp() {
     allowedHeaders: ['Content-Type', 'Authorization', 'x-telegram-init-data', 'X-Request-Id'],
     credentials:    true,
   }))
-  app.use(express.json({ limit: '10mb' }))
+  // Body-parser limiti ROUTE bo'yicha (audit #11): oldin 10mb GLOBAL edi —
+  // har bir endpoint (login, purchase, coins, tutor...) 120 req/min'da 10MB
+  // body qabul qilardi (asossiz katta DoS sirti). Rasm/base64 qabul qiladigan
+  // route'lar (admin savol rasmi, share/image) o'z alohida limitiga ega —
+  // Express shu path'larga BIRINCHI mos keladigan json() parser'ni ishlatadi
+  // (keyingi umumiy chaqiruv req._body allaqachon parse qilinganini ko'rib
+  // o'tkazib yuboradi). Qolgan barcha route uchun kichik default.
+  app.use('/api/admin/questions', express.json({ limit: '10mb' }))
+  app.use('/api/share/image', express.json({ limit: '5mb' }))
+  app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
   // Bo'lmasa rate limiter barcha foydalanuvchini bitta bucket'ga soladi.

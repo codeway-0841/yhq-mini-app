@@ -272,8 +272,15 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
     }
   }
 
-  // 4. If Click reported error (< 0) -> mark cancelled
-  if (Number(input.error) < 0) {
+  // 4. Click xato xabar qilsa (< 0) -> cancelled — LEKIN FAQAT hali 'pending'
+  //    bo'lsa (audit #8: avval bu yerda status tekshiruvi YO'Q edi — ESKI/
+  //    replay xato webhook (masalan Click'ning eskirgan qayta yuborishi)
+  //    ALLAQACHON 'completed' buyurtmani jimgina 'cancelled'ga tushirib
+  //    qo'yardi — premium berilgan holda qoladi, faqat order.status buziladi).
+  //    'completed' holat pastdagi ATOMIK CLAIM (6-bosqich) orqali o'z-o'zidan
+  //    to'g'ri javob beradi: XUDDI SHU click_trans_id → SUCCESS (replay),
+  //    BOSHQA click_trans_id → ALREADY_PAID — bu farqni bu yerda buzmaslik shart.
+  if (Number(input.error) < 0 && order.status === 'pending') {
     await db
       .update(paymentOrders)
       .set({

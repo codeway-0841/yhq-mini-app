@@ -21,6 +21,14 @@ import { usersRepository }                           from './users.repository'
 
 const router = Router()
 
+// Route-level guard'lar (audit #17): global telegramAuth USER_SEGMENTS
+// tekshiruvi bilan bir xil natija, lekin daily/achievements'dagi patternga
+// mos — explicit, global allowlist desyncidan mustaqil. `/avatar/:userId`
+// (GET, public global o'qish) QASDDAN bu ro'yxatda YO'Q.
+router.use('/profile/:userId', requireSelf)
+router.use('/referrals/:userId', requireSelf)
+router.use('/users/:userId', requireSelf)
+
 // POST /api/init
 router.post(
   '/init',
@@ -128,10 +136,10 @@ const avatarUploadLimiter = dbRateLimit({
   keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
 })
 
-// PUT /api/users/:userId/avatar — custom avatar yuklash (FAQAT o'zi; requireSelf).
+// PUT /api/users/:userId/avatar — custom avatar yuklash (FAQAT o'zi —
+// requireSelf yuqorida router.use('/users/:userId', ...) orqali qo'llanadi).
 router.put(
   '/users/:userId/avatar',
-  requireSelf,
   avatarUploadLimiter,
   validate({ body: AvatarUploadSchema }),
   wrap(async (req, res) => {
@@ -143,10 +151,10 @@ router.put(
   }),
 )
 
-// DELETE /api/users/:userId/avatar — avatar o'chirish (FAQAT o'zi).
+// DELETE /api/users/:userId/avatar — avatar o'chirish (FAQAT o'zi —
+// requireSelf yuqorida router.use('/users/:userId', ...) orqali qo'llanadi).
 router.delete(
   '/users/:userId/avatar',
-  requireSelf,
   avatarUploadLimiter,
   wrap(async (req, res) => {
     const uid = parseUserId(req.params['userId'])

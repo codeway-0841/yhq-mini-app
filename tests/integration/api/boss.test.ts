@@ -42,7 +42,8 @@ const IDS = [U1, U2, U3]
 /** Deterministik SOXTA period'lar (haqiqiy period'ga tegmaydi) */
 const P_FAKE_ROLL = '1999-01-04'
 const P_FAKE_ESC  = '1999-01-11'
-const FAKE_PERIODS = [P_FAKE_ROLL, P_FAKE_ESC]
+const P_FAKE_TIE  = '1999-01-18'
+const FAKE_PERIODS = [P_FAKE_ROLL, P_FAKE_ESC, P_FAKE_TIE]
 
 async function cleanup() {
   for (const id of IDS) {
@@ -167,6 +168,30 @@ describe('boss — applyDamage atomikligi + rollover (soxta period)', () => {
     const roll2 = await bossRepository.weeklyRollover(P_FAKE_ROLL)
     expect(roll2.distributed).toBe(false)
     expect((await coinsRepository.getEconomyState(U1)).coins).toBe(bal1 + BOSS_REWARDS.participationCoins + BOSS_REWARDS.topCoins[0])
+  })
+
+  it('teng damage: faqat BITTA user top1 mukofotini oladi (ROW_NUMBER, RANK emas)', async () => {
+    // U1 va U2 ANIQ bir xil zarar (30) — RANK() bo'lsa ikkalasi ham top1
+    // (topCoins[0]) olardi; ROW_NUMBER() esa faqat bittasini ajratadi (user_id
+    // tiebreak bilan deterministik).
+    await bossRepository.applyDamage(U1, P_FAKE_TIE, 30)
+    await bossRepository.applyDamage(U2, P_FAKE_TIE, 30)
+
+    const bal1 = (await coinsRepository.getEconomyState(U1)).coins
+    const bal2 = (await coinsRepository.getEconomyState(U2)).coins
+
+    await executeRows(sql`UPDATE boss_battles SET status = 'defeated' WHERE period_key = ${P_FAKE_TIE}`)
+    const roll = await bossRepository.weeklyRollover(P_FAKE_TIE)
+    expect(roll.distributed).toBe(true)
+    expect(roll.awarded).toBe(2)
+
+    const gain1 = (await coinsRepository.getEconomyState(U1)).coins - bal1
+    const gain2 = (await coinsRepository.getEconomyState(U2)).coins - bal2
+    const gains = [gain1, gain2].sort((a, b) => b - a)
+    // Bittasi top1 (participation+topCoins[0]), ikkinchisi top2 (participation+topCoins[1]) —
+    // IKKALASI HAM top1 OLMASLIGI kerak (bu RANK() buggining aynan o'zi).
+    expect(gains[0]).toBe(BOSS_REWARDS.participationCoins + BOSS_REWARDS.topCoins[0])
+    expect(gains[1]).toBe(BOSS_REWARDS.participationCoins + BOSS_REWARDS.topCoins[1])
   })
 
   it('rollover: "active" boss "escaped"ga aylanadi (mukofotsiz); yangi boss idempotent ensure', async () => {

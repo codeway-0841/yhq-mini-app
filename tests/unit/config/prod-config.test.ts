@@ -6,7 +6,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 
 const KEYS = [
-  'NODE_ENV', 'BOT_TOKEN', 'CRON_SECRET', 'OTP_PEPPER',
+  'NODE_ENV', 'BOT_TOKEN', 'BOT_WEBHOOK_SECRET', 'CRON_SECRET', 'OTP_PEPPER',
   'CLICK_SERVICE_ID', 'CLICK_MERCHANT_ID', 'CLICK_SECRET_KEY',
   'DATABASE_URL',
 ] as const
@@ -31,14 +31,16 @@ describe('server/config assertProdConfig (audit fix)', () => {
     return mod.assertProdConfig
   }
 
-  it('production: BOT_TOKEN, CRON_SECRET, OTP_PEPPER yo\'q bo\'lsa boot qilmaydi', async () => {
+  it('production: BOT_TOKEN, BOT_WEBHOOK_SECRET, CRON_SECRET, OTP_PEPPER yo\'q bo\'lsa boot qilmaydi', async () => {
     process.env['NODE_ENV'] = 'production'
     process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
     delete process.env['BOT_TOKEN']
+    delete process.env['BOT_WEBHOOK_SECRET']
     delete process.env['CRON_SECRET']
     delete process.env['OTP_PEPPER']
     const assert = await boot()
     expect(() => assert()).toThrowError(/BOT_TOKEN/)
+    expect(() => assert()).toThrowError(/BOT_WEBHOOK_SECRET/)
     expect(() => assert()).toThrowError(/CRON_SECRET/)
     expect(() => assert()).toThrowError(/OTP_PEPPER/)
   })
@@ -47,6 +49,7 @@ describe('server/config assertProdConfig (audit fix)', () => {
     process.env['NODE_ENV'] = 'production'
     process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
     process.env['BOT_TOKEN'] = 'x'
+    process.env['BOT_WEBHOOK_SECRET'] = 'x'
     process.env['CRON_SECRET'] = 'x'
     process.env['OTP_PEPPER'] = '0123456789abcdef'
     const assert = await boot()
@@ -57,6 +60,7 @@ describe('server/config assertProdConfig (audit fix)', () => {
     process.env['NODE_ENV'] = 'production'
     process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
     process.env['BOT_TOKEN'] = 'x'
+    process.env['BOT_WEBHOOK_SECRET'] = 'x'
     process.env['CRON_SECRET'] = 'x'
     process.env['OTP_PEPPER'] = '0123456789abcdef'
     process.env['CLICK_SERVICE_ID'] = '32876'
