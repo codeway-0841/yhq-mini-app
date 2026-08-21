@@ -25,13 +25,14 @@
 import { WebSocket, WebSocketServer } from 'ws'
 import { IncomingMessage } from 'http'
 import { randomUUID } from 'crypto'
-import { sql }            from 'drizzle-orm'
+import { inArray, sql }   from 'drizzle-orm'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
 import { getProvider } from './providers'
-import { executeRows } from './db/connection'
+import { db } from './db/connection'
+import { users } from './schema'
 import { progressRepository } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
 import { registerInterval } from './utils/shutdown'
@@ -227,12 +228,18 @@ async function resolveAvatars(...ids: string[]): Promise<Map<string, string | nu
   const out = new Map<string, string | null>()
   if (!clean.length) return out
   try {
-    const rows = await executeRows<{ id: string; photo_url: string | null; has_custom: boolean }>(sql`
-      SELECT id, photo_url, (avatar_webp IS NOT NULL) AS has_custom
-      FROM users WHERE id = ANY(${clean})
-    `)
+    // Query builder (inArray) — RAW `ANY($array)` param'dan CHETLANISH:
+    // neon-http driver JS massivni JSON string qilib yuboradi (ANY buziladi).
+    const rows = await db
+      .select({
+        id:        users.id,
+        photoUrl:  users.photoUrl,
+        hasCustom: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+      })
+      .from(users)
+      .where(inArray(users.id, clean))
     for (const r of rows) {
-      out.set(r.id, r.has_custom ? `/api/avatar/${encodeURIComponent(r.id)}` : (r.photo_url || null))
+      out.set(r.id, r.hasCustom ? `/api/avatar/${encodeURIComponent(r.id)}` : (r.photoUrl || null))
     }
   } catch (err) {
     console.error('[octagon] avatar resolve xatosi (matched davom etadi):', err)
