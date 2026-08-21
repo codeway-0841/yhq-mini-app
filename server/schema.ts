@@ -807,4 +807,8 @@ export const merchOrders = pgTable('merch_orders', {
   index('idx_merch_orders_status').on(t.status),
   index('idx_merch_orders_item').on(t.itemId),
   check('chk_merch_orders_price_positive', sql`${t.pricePaid} > 0`),
+  // NOTE: partial UNIQUE index (user_id, item_id) WHERE status <> 'cancelled'
+  // — drizzle partial index'ni qo'llamaydi (users.email kabi), qo'lda 0048
+  // migratsiyasida (`uq_merch_active_user_item`). Claim-first anti-race: parallel
+  // buyurtmalarda debit faqat claim g'olibiga (double-charge imkonsiz).
 ])

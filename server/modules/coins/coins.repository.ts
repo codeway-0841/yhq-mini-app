@@ -45,12 +45,14 @@ export const coinsRepository = {
   },
 
   /**
-   * Buyum sotib olish — BITTA atomik CTE (payment.complete uslubi):
-   *  1) dup-guard (purchaseId idempotency — retry ikki marta debit qilmaydi)
-   *  2) owned-guard (durable buyum ikki marta olinmaydi)
-   *  3) shartli debit (balance >= price — race'da manfiy bo'lmaydi)
-   *  4) ledger qaydi
-   *  5) grant: durable → user_items; consumable → premium_until GREATEST (C-1: tariff TEGILMAYDI)
+   * Buyum sotib olish — BITTA atomik CTE, **CLAIM-FIRST** tartib (anti-race):
+   *  durable item'da avval `user_items` PK orqali band qilinadi (unique
+   *  insertion lock parallel so'rovlarni SERIALIZE qiladi; mag'lubiyata ON
+   *  CONFLICT DO NOTHING) va debit FAQAT claim g'olibiga tegishli — parallel
+   *  xaridda double-charge strukturaviy imkonsiz (CI race testi kafili).
+   *  Consumable (premium-days) uchun claim yo'q — qayta xarid legít.
+   * Ledger-first idempotency: `'purchase'+purchaseId` UNIQUE — retry xavfsiz.
+   * Grant: durable → user_items (claim allaqachon); consumable → GREATEST premium_until (C-1).
    */
   async purchase(userId: string, itemId: string, purchaseId: string): Promise<PurchaseResult> {
     const item = getShopItem(itemId)
@@ -59,7 +61,7 @@ export const coinsRepository = {
     const days = item.days ?? null
 
     const rows = await executeRows<{
-      user_exists: boolean; was_duplicate: boolean; was_owned: boolean
+      user_exists: boolean; was_duplicate: boolean
       balance: number | null; current_balance: number | null; premiumUntil: Date | null
     }>(sql`
       WITH price AS (
@@ -69,10 +71,21 @@ export const coinsRepository = {
       ), dup AS (
         SELECT 1 FROM coin_transactions
         WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
-      ), owned AS (
-        SELECT 1 FROM user_items
-        WHERE user_id = ${userId} AND item_id = ${item.id}
-          AND (SELECT dur FROM price)
+      ), claim AS (
+        -- 1) Durable egalik band qilish (unique) — parallel race'da faqat BITTA
+        --    so'rov claim oladi; mag'lub claim'siz qoladi → debit'siz → 409.
+        INSERT INTO user_items (user_id, item_id)
+        SELECT ${userId}, ${item.id}
+        WHERE (SELECT dur FROM price)
+          AND EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
+          -- claim-only zoning ximoyasi: balans snapshot'da yetarli bo'lsin
+          AND EXISTS (
+            SELECT 1 FROM user_coins
+            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
+          )
+        ON CONFLICT DO NOTHING
+        RETURNING item_id
       ), debit AS (
         UPDATE user_coins
         SET balance = balance - (SELECT p FROM price),
@@ -81,7 +94,10 @@ export const coinsRepository = {
           AND balance >= (SELECT p FROM price)
           AND EXISTS (SELECT 1 FROM target_user)
           AND NOT EXISTS (SELECT 1 FROM dup)
-          AND NOT EXISTS (SELECT 1 FROM owned)
+          -- durable: FAQAT claim g'olibi; consumable: shartsiz (qayta xarid OK)
+          AND (SELECT CASE WHEN (SELECT dur FROM price)
+                           THEN EXISTS (SELECT 1 FROM claim)
+                           ELSE true END)
         RETURNING balance
       ), ledger AS (
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
@@ -89,12 +105,6 @@ export const coinsRepository = {
         WHERE EXISTS (SELECT 1 FROM debit)
         ON CONFLICT DO NOTHING
         RETURNING id
-      ), grant_item AS (
-        INSERT INTO user_items (user_id, item_id)
-        SELECT ${userId}, ${item.id}
-        WHERE (SELECT dur FROM price) AND EXISTS (SELECT 1 FROM debit)
-        ON CONFLICT DO NOTHING
-        RETURNING item_id
       ), grant_premium AS (
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now())
@@ -108,7 +118,6 @@ export const coinsRepository = {
       SELECT
         EXISTS (SELECT 1 FROM target_user) AS user_exists,
         EXISTS (SELECT 1 FROM dup) AS was_duplicate,
-        EXISTS (SELECT 1 FROM owned) AS was_owned,
         (SELECT balance::int FROM debit) AS balance,
         (SELECT balance::int FROM user_coins WHERE user_id = ${userId}) AS current_balance,
         (SELECT premium_until FROM grant_premium) AS "premiumUntil"
@@ -117,8 +126,16 @@ export const coinsRepository = {
     const row = rows[0]
     if (!row?.user_exists) return { status: 'user_not_found' }
     if (row.was_duplicate) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
-    if (row.was_owned) return { status: 'already_owned' }
-    if (row.balance === null) return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
+    if (row.balance === null) {
+      // Debit bo'lmadi: durable claim ololmadi (egasiz allaqachongi) YOKI balans yetarli emas
+      if (durable) {
+        const owned = await executeRows<{ item_id: string }>(sql`
+          SELECT item_id FROM user_items WHERE user_id = ${userId} AND item_id = ${item.id}
+        `)
+        if (owned.length > 0) return { status: 'already_owned' }
+      }
+      return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
+    }
     return {
       status: 'ok',
       balance: Number(row.balance),
@@ -286,11 +303,13 @@ export const coinsRepository = {
   },
 
   /**
-   * Merch buyurtma — BITTA atomik CTE:
-   *  1) dup-guard (purchaseId idempotency)
-   *  2) stock-guard: faol (cancelled bo'lmagan) buyurtmalar < stock
-   *  3) 1-per-user guard: user'da shu item'dan faol buyurtma YO'Q bo'lsin
-   *  4) shartli debit (balance >= price) → order insert → ledger
+   * Merch buyurtma — BITTA atomik CTE, **CLAIM-FIRST + advisory lock** (anti-race):
+   *  1) `pg_advisory_xact_lock(hashtext(item))` — bir frantsuz item uchun parallel
+   *     buyurtmalar SERIALIZE bo'ladi → stock COUNT tekshiruvi TOCTOU'siz
+   *  2) `ord` INSERT `uq_merch_active_user_item` (0048) ON CONFLICT DO NOTHING —
+   *    unique insertion lock: parallel 1-per-user buyurtmalarda faqat BITTASI o'tadi
+   *  3) debit FAQAT claim g'olibiga — double-charge strukturaviy imkonsiz
+   *  4) dup-guard (purchaseId idempotency) → ledger ref `merch`+purchaseId
    */
   async buyMerch(userId: string, itemId: string, purchaseId: string, info: { fullName: string; phone: string; note: string | null }): Promise<
     | { status: 'ok'; orderId: number; balance: number }
@@ -304,10 +323,14 @@ export const coinsRepository = {
     if (!item) return { status: 'unknown_item' }
 
     const rows = await executeRows<{
-      user_exists: boolean; was_duplicate: boolean; already_owned: boolean
-      sold_out: boolean; balance: number | null; current_balance: number | null; order_id: number | null
+      user_exists: boolean; was_duplicate: boolean
+      balance: number | null; current_balance: number | null; order_id: number | null
     }>(sql`
-      WITH target_user AS (
+      WITH lock AS (
+        -- Item bo'yicha per-statement (neon-http sessiyasiz) serialize —
+        -- stock guard COUNT'u ATOMIK bo'ladi (ikki buyer oxirgi donani yutmaydi).
+        SELECT pg_advisory_xact_lock(hashtext(${item.id})::bigint)
+      ), target_user AS (
         SELECT id FROM users WHERE id = ${userId}
       ), dup AS (
         SELECT 1 FROM coin_transactions
@@ -319,22 +342,30 @@ export const coinsRepository = {
         SELECT (COUNT(*)::int < ${item.stock}) AS ok
         FROM merch_orders
         WHERE item_id = ${item.id} AND status <> 'cancelled'
+      ), ord AS (
+        -- CLAIM: uq_merch_active_user_item'dagi unique insertion lock —
+        -- parallel o'sha item'dagi buyurtmalarda faqat BITTASI claim oladi.
+        INSERT INTO merch_orders (user_id, item_id, full_name, phone, note, price_paid)
+        SELECT ${userId}, ${item.id}, ${info.fullName}, ${info.phone}, ${info.note}, ${item.price}
+        WHERE EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
+          AND NOT EXISTS (SELECT 1 FROM mine)
+          AND (SELECT ok FROM stock_ok)
+          -- claim-only zoning: balans snapshot'da yetarli bo'lsin
+          AND EXISTS (
+            SELECT 1 FROM user_coins
+            WHERE user_id = ${userId} AND balance >= ${item.price}::int
+          )
+        ON CONFLICT (user_id, item_id) WHERE status <> 'cancelled' DO NOTHING
+        RETURNING id
       ), debit AS (
         UPDATE user_coins
         SET balance = balance - ${item.price}::int,
             updated_at = now()
         WHERE user_id = ${userId}
           AND balance >= ${item.price}::int
-          AND EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          AND NOT EXISTS (SELECT 1 FROM mine)
-          AND (SELECT ok FROM stock_ok)
+          AND EXISTS (SELECT 1 FROM ord)
         RETURNING balance
-      ), ord AS (
-        INSERT INTO merch_orders (user_id, item_id, full_name, phone, note, price_paid)
-        SELECT ${userId}, ${item.id}, ${info.fullName}, ${info.phone}, ${info.note}, ${item.price}
-        WHERE EXISTS (SELECT 1 FROM debit)
-        RETURNING id
       ), ledger AS (
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
         SELECT ${userId}, ${-item.price}, 'merch', ${purchaseId}
@@ -345,8 +376,6 @@ export const coinsRepository = {
       SELECT
         EXISTS (SELECT 1 FROM target_user) AS user_exists,
         EXISTS (SELECT 1 FROM dup) AS was_duplicate,
-        EXISTS (SELECT 1 FROM mine) AS already_owned,
-        NOT (SELECT ok FROM stock_ok) AS sold_out,
         (SELECT balance::int FROM debit) AS balance,
         (SELECT balance::int FROM user_coins WHERE user_id = ${userId}) AS current_balance,
         (SELECT id::int FROM ord) AS order_id
@@ -355,9 +384,22 @@ export const coinsRepository = {
     const row = rows[0]
     if (!row?.user_exists) return { status: 'user_not_found' }
     if (row.was_duplicate) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
-    if (row.already_owned) return { status: 'already_owned' }
-    if (row.sold_out) return { status: 'sold_out' }
-    if (row.balance === null) return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
+    if (row.balance === null) {
+      // Debit/claim bo'lmadi — sababni ALOHIDA (post-CTE, hozirgi holat) tekshiruvdan
+      // chiqaramiz: CTE snapshoti race paytida QADIMIY bo'lishi mumkin
+      const mine = await executeRows<{ id: number }>(sql`
+        SELECT id FROM merch_orders
+        WHERE user_id = ${userId} AND item_id = ${item.id} AND status <> 'cancelled'
+        LIMIT 1
+      `)
+      if (mine.length > 0) return { status: 'already_owned' }
+      const stockUsed = await executeRows<{ used: number }>(sql`
+        SELECT COUNT(*)::int AS used FROM merch_orders
+        WHERE item_id = ${item.id} AND status <> 'cancelled'
+      `)
+      if (Number(stockUsed[0]?.used ?? 0) >= item.stock) return { status: 'sold_out' }
+      return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
+    }
     return { status: 'ok', orderId: Number(row.order_id), balance: Number(row.balance) }
   },
 

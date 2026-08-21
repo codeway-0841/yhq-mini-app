@@ -126,7 +126,7 @@ describe('coins purchase — atomiklik', () => {
   const THEME = 'crimson'          // 500c, accent-theme (durable)
   const price = getShopItem(THEME)!.price
 
-  it('parallel xarid — FAQAT bitta debit (race double-charge yo\'q)', async () => {
+  it('parallel xarid — FAQAT bitta debit (claim-first race guard, CI kafili)', async () => {
     await setBalance(USER_B, 1000)
     const p1 = request(app).post('/api/coins/purchase')
       .set('Authorization', `Bearer ${tokenB}`)
@@ -136,12 +136,12 @@ describe('coins purchase — atomiklik', () => {
       .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
     const [r1, r2] = await Promise.all([p1, p2])
     const statuses = [r1.status, r2.status].sort()
-    // biri 200 (ok), ikkinchisi 409 ITEM_ALREADY_OWNED (double-debit YO'Q)
+    // Terms: biri 200 (ok), ikkinchisi 409 ITEM_ALREADY_OWNED — double-debit YO'Q
     expect(statuses).toEqual([200, 409])
     expect(await getBalance(USER_B)).toBe(1000 - price)
 
     const state = await coinsRepository.getEconomyState(USER_B)
-    expect(state.ownedItems).toContain(THEME)
+    expect(state.ownedItems.filter((i) => i === THEME).length).toBe(1)
     const debits = (await coinsRepository.getHistory(USER_B)).filter((h) => h.reason === 'purchase')
     expect(debits.length).toBe(1)
   })
@@ -419,6 +419,29 @@ describe('coins — MERCH buyurtmalari (#40 Faza 3)', () => {
     expect(re.body.ok).toBe(true)
   })
 
+  it('merch RACE: parallel bir-odam-bir-item — FAQAT 1 buyurtma, 1 debit (claim-first)', async () => {
+    await setBalance(USER_A, 10000)
+    // Boshqa item (nakleyka allaqachon olgan — 8-qadamda)
+    const p1 = request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'sumka', purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+    const p2 = request(app).post('/api/coins/buy-merch')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .send({ itemId: 'sumka', purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
+    const [r1, r2] = await Promise.all([p1, p2])
+    const statuses = [r1.status, r2.status].sort()
+    expect(statuses).toEqual([200, 409])
+    // ⚖️ ENG MUHIM INVARIANT: double-debit YO'Q
+    expect(await getBalance(USER_A)).toBe(10000 - 3500)
+    // Buyurtma faqat 1 ta
+    const myOrders = await request(app).get('/api/coins/merch-orders')
+      .set('Authorization', `Bearer ${tokenA}`)
+      .expect(200)
+    const sumkaOrders = (myOrders.body.rows as { itemId: string; status: string }[])
+      .filter((o) => o.itemId === 'sumka' && o.status !== 'cancelled')
+    expect(sumkaOrders).toHaveLength(1)
+  })
+
   it('admin-only: oddiy user admin endpointga kira olmaydi; authsiz — 401', async () => {
     // USER_A admin emas
     await request(app).get('/api/admin/merch-orders')
@@ -436,7 +459,8 @@ describe('coins — MERCH buyurtmalari (#40 Faza 3)', () => {
     const byId = new Map(res.body.items.map((i: { id: string } & Record<string, unknown>) => [i.id, i]))
     // Test davomida 1 ta FAOL nakleyka bor (8-qadam) → remaining = stock-1
     expect(byId.get('nakleyka')).toMatchObject({ alreadyOwned: true })
-    expect(byId.get('sumka')).toMatchObject({ alreadyOwned: false })
+    // kiyim'ni hech qaysi test sotib olmaydi — doimo false (tartibga bog'liq emas)
+    expect(byId.get('kiyim')).toMatchObject({ alreadyOwned: false })
     const nakleykaRemaining = byId.get('nakleyka')?.remaining as number
     expect(nakleykaRemaining).toBeGreaterThanOrEqual(0)
   })

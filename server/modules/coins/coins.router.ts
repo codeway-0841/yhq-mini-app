@@ -241,13 +241,22 @@ router.post(
   }),
 )
 
-// GET /api/coins/merch-orders — mening buyurtmalarim
+// GET /api/coins/merch-orders — mening buyurtmalarim (client kontrakti: camelCase)
 router.get(
   '/coins/merch-orders',
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const rows = await coinsRepository.listMyMerchOrders(userId)
-    res.json({ ok: true, rows })
+    res.json({
+      ok: true,
+      rows: rows.map((r) => ({
+        id: r.id,
+        itemId: r.item_id,
+        pricePaid: r.price_paid,
+        status: r.status,
+        createdAt: r.created_at,
+      })),
+    })
   }),
 )
 
