@@ -58,7 +58,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
 
   return (
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title">
-      <div className="w-full max-w-sm bg-pcard rounded-3xl border border-pline p-5">
+      <div className="relative w-full max-w-sm bg-pcard rounded-3xl border border-pline p-5 shadow-2xl animate-premiumIn">
         <p id="merch-order-title" className="text-[15px] font-black text-center flex items-center justify-center gap-2">
           <Package size={17} className="text-pgold" /> {tt('merchFormTitle')}
         </p>
