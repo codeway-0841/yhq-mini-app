@@ -239,6 +239,8 @@ const UZ = {
   tournamentRank3: "7 kun Bepul Premium",
   pastWinnersTitle: "O'tgan hafta chempionlari",
   noWinnersYet: "Hozircha g'oliblar mavjud emas",
+  tournamentHistoryTitle: "Chempionlar tarixi",
+  premiumDaysShort: "kun Premium",
   // UI/UX a11y labels
   cancelExit: "Bekor qilish", removeSaved: "Saqlanganlardan olib tashlash",
   timeRemaining: "Qolgan vaqt", of: "dan", zoomImage: "Rasmni kattalashtirish",
@@ -563,6 +565,8 @@ const RU: Record<Keys, string> = {
   tournamentRank3: "7 дней Премиум бесплатно",
   pastWinnersTitle: "Победители прошлой недели",
   noWinnersYet: "Победителей пока нет",
+  tournamentHistoryTitle: "История чемпионов",
+  premiumDaysShort: "дн. Premium",
   // UI/UX a11y labels
   cancelExit: "Отмена", removeSaved: "Удалить из сохранённых",
   timeRemaining: "Осталось времени", of: "из", zoomImage: "Увеличить изображение",

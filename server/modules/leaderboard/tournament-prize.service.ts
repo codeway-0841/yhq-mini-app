@@ -3,7 +3,7 @@
  * Telegram orqali maxsus bayramona tabriknoma jo'natish xizmati.
  */
 
-import { and, desc, eq, gte, lt, sql } from 'drizzle-orm'
+import { and, desc, eq, gte, inArray, lt, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { dailyRecords, progress, tournamentPrizes, users } from '../../schema'
 import { config } from '../../config'
@@ -237,6 +237,88 @@ async function sendPrizeNotificationToTelegram(
 /**
  * Oxirgi haftalik turnir g'oliblarini olish (Leaderboard / UI uchun)
  */
+/** Chempionlar tarixi (FIXPLAN #47) — bitta davrning g'oliblari */
+export interface TournamentWinnerEntry {
+  rank: number
+  userId: string
+  name: string
+  score: number
+  league: string
+  prizeDays: number
+  isYou: boolean
+  photoUrl: string | null
+  hasCustomAvatar: boolean
+  avatarFrame: string | null
+}
+
+export interface TournamentSeason {
+  periodKey: string
+  winners: TournamentWinnerEntry[]
+}
+
+/**
+ * O'tgan N haftalik turnir g'oliblari tarixi — LeaderboardPage'dagi
+ * "Chempionlar tarixi" kartasi uchun. Mavjudlar: eng yangi davrdan orqaga
+ * (periodKey = hafta dushanbasi, 'YYYY-MM-DD').
+ *
+ * Ikki so'rov: avval oxirgi N UNIKAL davr (LIMIT davrni o'rtadan kesmasligi
+ * uchun — bir davrda 3 qator), keyin shu davrlarning qatorlari user'ga join.
+ */
+export async function getTournamentHistory(
+  limit: number,
+  callerUserId: string | null,
+): Promise<TournamentSeason[]> {
+  const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 24)
+
+  const periods = await db
+    .select({ periodKey: tournamentPrizes.periodKey })
+    .from(tournamentPrizes)
+    .groupBy(tournamentPrizes.periodKey)
+    .orderBy(desc(tournamentPrizes.periodKey))
+    .limit(safeLimit)
+
+  if (periods.length === 0) return []
+
+  const keys = periods.map((p) => p.periodKey)
+
+  const rows = await db
+    .select({
+      periodKey: tournamentPrizes.periodKey,
+      rank: tournamentPrizes.rank,
+      userId: tournamentPrizes.userId,
+      firstName: users.firstName,
+      lastName: users.lastName,
+      photoUrl: users.photoUrl,
+      hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+      avatarFrame: users.avatarFrame,
+      score: tournamentPrizes.score,
+      league: tournamentPrizes.league,
+      prizeDays: tournamentPrizes.prizeDays,
+    })
+    .from(tournamentPrizes)
+    .innerJoin(users, eq(users.id, tournamentPrizes.userId))
+    .where(inArray(tournamentPrizes.periodKey, keys))
+    .orderBy(desc(tournamentPrizes.periodKey), tournamentPrizes.rank)
+
+  const byPeriod = new Map<string, TournamentWinnerEntry[]>(keys.map((k) => [k, []]))
+  for (const r of rows) {
+    byPeriod.get(r.periodKey)!.push({
+      rank: r.rank,
+      userId: r.userId,
+      name: `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score: r.score,
+      league: r.league,
+      prizeDays: r.prizeDays,
+      isYou: callerUserId !== null && r.userId === callerUserId,
+      photoUrl: r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame: r.avatarFrame ?? null,
+    })
+  }
+
+  return keys.map((periodKey) => ({ periodKey, winners: byPeriod.get(periodKey)! }))
+}
+
 export async function getLatestTournamentWinners(): Promise<Array<{
   periodKey: string
   rank: number

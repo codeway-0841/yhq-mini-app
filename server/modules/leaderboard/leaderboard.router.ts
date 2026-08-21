@@ -7,7 +7,7 @@ import { wrap }                       from '../../middleware/error-handler'
 import { parseUserId, parseLimit }    from '../../utils/parse'
 import { leaderboardRepository }      from './leaderboard.repository'
 
-import { getLatestTournamentWinners } from './tournament-prize.service'
+import { getLatestTournamentWinners, getTournamentHistory } from './tournament-prize.service'
 
 const router = Router()
 
@@ -17,6 +17,18 @@ router.get(
   wrap(async (_req, res) => {
     const winners = await getLatestTournamentWinners()
     res.json({ ok: true, winners })
+  }),
+)
+
+// GET /api/leaderboard/tournament-history?limit=6&userId=<caller> →
+// o'tgan N haftalik turnir g'oliblari tarixi (#47 — eng yangi davr birinchi)
+router.get(
+  '/leaderboard/tournament-history',
+  wrap(async (req, res) => {
+    const limit     = parseLimit(req.query['limit'], 6, 24)
+    const callerUid = parseUserId(String(req.query['userId'] ?? ''))
+    const seasons   = await getTournamentHistory(limit, callerUid)
+    res.json({ ok: true, seasons })
   }),
 )
 

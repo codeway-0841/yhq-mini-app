@@ -472,6 +472,13 @@ export const api = {
       }>
     }>('GET', '/leaderboard/tournament-winners'),
 
+  /** Chempionlar tarixi (#47): o'tgan N haftalik turnir g'oliblari (eng yangi birinchi). */
+  getTournamentHistory: (limit: number, userId?: string) =>
+    request<{ ok: boolean; seasons: TournamentSeason[] }>(
+      'GET',
+      `/leaderboard/tournament-history?limit=${limit}${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+
   // ── Daily Challenge ────────────────────────────────────────────────────
   getDaily: (userId: string, date: string, subject: string) =>
     request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
@@ -905,6 +912,26 @@ export interface LeaderboardEntry {
   photoUrl?:        string | null
   hasCustomAvatar?: boolean
   avatarFrame?:     string | null
+}
+
+/** Chempionlar tarixi (#47) — bitta davr g'olibi */
+export interface TournamentWinner {
+  rank:      number
+  userId:    string
+  name:      string
+  score:     number
+  league:    string
+  prizeDays: number
+  isYou:     boolean
+  photoUrl?:        string | null
+  hasCustomAvatar?: boolean
+  avatarFrame?:     string | null
+}
+
+/** Bitta haftalik davr + uning podium g'oliblari (rank tartibida) */
+export interface TournamentSeason {
+  periodKey: string   // 'YYYY-MM-DD' — hafta dushanbasi
+  winners:   TournamentWinner[]
 }
 
 

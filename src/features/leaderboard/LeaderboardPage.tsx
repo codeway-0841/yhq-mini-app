@@ -9,11 +9,21 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Trophy, Shield, Gift } from 'lucide-react'
+import { Trophy, Shield, Gift, History } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
-import { api, avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
+import { api, avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly, type TournamentSeason } from '../../shared/api'
 import { getAvatarFrame } from '../../shared/config/avatar-frames'
+
+/** 'YYYY-MM-DD' (hafta dushanbasi) → "10.08–16.08" (dushanba–yakshanba) */
+function fmtWeekRange(periodKey: string): string {
+  const d = new Date(`${periodKey}T00:00:00Z`)
+  if (Number.isNaN(d.getTime())) return periodKey
+  const end = new Date(d.getTime() + 6 * 86_400_000)
+  const fmt = (x: Date) =>
+    `${String(x.getUTCDate()).padStart(2, '0')}.${String(x.getUTCMonth() + 1).padStart(2, '0')}`
+  return `${fmt(d)}–${fmt(end)}`
+}
 
 const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
   bronze:   { color: 'var(--p-warning)', titleKey: 'leagueBronze' },
@@ -107,6 +117,8 @@ export default function LeaderboardPage() {
   const [tab, setTab]         = useState<'weekly' | 'all'>('weekly')
   const [entries, setEntries] = useState<Entry[] | null>(null)
   const [weekly, setWeekly]   = useState<LeagueWeekly | null>(null)
+  // Chempionlar tarixi (#47) — xato bo'lsa butun sahifani yemaydi (jimgina yashirish)
+  const [seasons, setSeasons] = useState<TournamentSeason[] | null>(null)
   const [error, setError]     = useState(false)
 
   useEffect(() => {
@@ -114,6 +126,7 @@ export default function LeaderboardPage() {
     // va o'zining 8s timeout'iga ega — alohida AbortController shart emas.
     api.getLeagueWeekly(50, user?.id).then(setWeekly).catch(() => setError(true))
     api.getLeaderboard(50, user?.id).then(setEntries).catch(() => setError(true))
+    api.getTournamentHistory(6, user?.id).then((r) => setSeasons(r.seasons)).catch(() => {})
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -252,6 +265,49 @@ export default function LeaderboardPage() {
                   {tt('demoteZone')}
                 </span>
               </div>
+
+              {/* Chempionlar tarixi (#47) — o'tgan haftalik turnir g'oliblari */}
+              {seasons !== null && (
+                <div className="mx-4 mt-4 rounded-2xl bg-surface border border-line p-3.5 shadow-sm space-y-2.5">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-xl bg-elevated flex items-center justify-center text-subtle flex-shrink-0">
+                      <History size={18} />
+                    </div>
+                    <h3 className="text-xs font-black text-fg">{tt('tournamentHistoryTitle')}</h3>
+                  </div>
+
+                  {seasons.length === 0 && (
+                    <p className="text-[11px] text-muted font-semibold">{tt('noWinnersYet')}</p>
+                  )}
+
+                  {seasons.map((s, si) => (
+                    <div key={s.periodKey} className={si > 0 ? 'pt-2.5 border-t border-line' : ''}>
+                      <p className="text-[10px] font-black text-muted mb-1">
+                        {si === 0 ? `${tt('pastWinnersTitle')} · ` : ''}{fmtWeekRange(s.periodKey)}
+                      </p>
+                      {s.winners.map((w) => (
+                        <div key={w.rank}
+                          className={`flex items-center gap-2.5 py-1.5 ${w.isYou ? 'rounded-lg bg-duo-green/10 px-2 -mx-2' : ''}`}>
+                          <div className="w-6 flex items-center justify-center flex-shrink-0">
+                            <Medal rank={w.rank} />
+                          </div>
+                          <InitialAvatar name={w.name} src={avatarSrcFor(w)} frame={w.avatarFrame} />
+                          <p className="flex-1 min-w-0 text-xs font-semibold truncate">
+                            {w.name}
+                            {w.isYou && (
+                              <span className="ml-1.5 text-[10px] text-duo-blue font-bold">{tt('youLabel')}</span>
+                            )}
+                          </p>
+                          <span className="text-xs font-bold text-pprimary flex-shrink-0">{w.score}</span>
+                          <span className="text-[10px] font-black text-pgold flex-shrink-0">
+                            🎁 {w.prizeDays} {tt('premiumDaysShort')}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              )}
             </>
           )}
         </>

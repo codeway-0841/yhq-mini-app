@@ -317,8 +317,17 @@
   (`useQuestionsStore` ustida) + `SearchPage`.
 - [x] **46. Spaced-repetition dashboard** — "bugun tayyorlar" soni/prognoz:
   `GET /progress/:userId/cards/summary` + `AdaptivePage.tsx` kartasi.
-- [ ] **47. Liga mavsumlar tarixi** — `league_rollover_log` +
-  `tournament_prizes`'dan "oldingi g'oliblar" `LeaderboardPage.tsx`da.
+- [x] **47. Liga mavsumlar tarixi** — **TUGALLANDI:** `GET /api/leaderboard/tournament-history`
+  (`getTournamentHistory` — tournament-prize.service: avval DISTINCT periodKey DESC LIMIT,
+  keyin join — podium o'rtadan kesilmaydi; avatar flaglari leaderboard kontrakti bilan bir xil,
+  optional `userId` → `isYou`) + client `api.getTournamentHistory` + LeaderboardPage Liga tab'ida
+  "Chempionlar tarixi" kartasi (oxirgi 6 davr: 🥇🥈🥉 + ball + `🎁 N kun Premium`, eng yangi davr
+  `pastWinnersTitle` sarlavhalI, `fmtWeekRange` DD.MM–DD.MM) + i18n (`tournamentHistoryTitle`/
+  `premiumDaysShort`, UZ+RU). Test: `tournament-history.test.ts` +4 integration (guruhlash/
+  tartib/isYou/limit-davrga/avatar kontrakti). *Eslatma:* TEST DB'da 0049 journal-drift topildi —
+  `__drizzle_migrations` 0049'ni "applied" ko'rsatardi, lekin `users.avatar_webp` yo'q edi
+  (Neon branch copy qoldig'i, 0049'dan OLDINGi branch); SQL qo'lda qo'llandi (`ADD COLUMN IF NOT EXISTS`).
+  *Verifikatsiya:* tsc×2 ✓, unit 469/469 ✓, integration 144/144 ✓ (real Neon), lint 0 error ✓, build ✓.
 - [x] **48. Natijalarni rasm qilib ulashish** — canvas kartalar +
   `shareUrl`; `ResultsModal.tsx`.
 
