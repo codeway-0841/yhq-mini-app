@@ -2,7 +2,7 @@
  * Octagon PvP — WebSocket matchmaking + game loop.
  *
  * Protocol (server → client):
- *   matched        { matchId, opponentName, opponentAvatar, roundCount }  ← no questionIds upfront
+ *   matched        { matchId, opponentName, opponentAvatar, opponentFrame, roundCount }  ← no questionIds upfront
  *   question       { index, questionId, timeLimit }           ← reveals one at a time
  *   answer_ack     { index, correct, correctOptionId }   ← post-answer reveal
  *   opp_answered   { index }
@@ -223,23 +223,27 @@ function correctFor(questionId: number, pool: QuestionPoolItem[]): string {
 // Same-account dev duel uid'lari (`${uid}_2`) jadvalda yo'q — null qaytadi.
 const AVATAR_UID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
 
-async function resolveAvatars(...ids: string[]): Promise<Map<string, string | null>> {
+async function resolveAvatars(...ids: string[]): Promise<Map<string, { avatar: string | null; frame: string | null }>> {
   const clean = [...new Set(ids.filter((id) => AVATAR_UID_RE.test(id)))]
-  const out = new Map<string, string | null>()
+  const out = new Map<string, { avatar: string | null; frame: string | null }>()
   if (!clean.length) return out
   try {
     // Query builder (inArray) — RAW `ANY($array)` param'dan CHETLANISH:
     // neon-http driver JS massivni JSON string qilib yuboradi (ANY buziladi).
     const rows = await db
       .select({
-        id:        users.id,
-        photoUrl:  users.photoUrl,
-        hasCustom: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        id:          users.id,
+        photoUrl:    users.photoUrl,
+        hasCustom:   sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame: users.avatarFrame,
       })
       .from(users)
       .where(inArray(users.id, clean))
     for (const r of rows) {
-      out.set(r.id, r.hasCustom ? `/api/avatar/${encodeURIComponent(r.id)}` : (r.photoUrl || null))
+      out.set(r.id, {
+        avatar: r.hasCustom ? `/api/avatar/${encodeURIComponent(r.id)}` : (r.photoUrl || null),
+        frame:  r.avatarFrame ?? null,
+      })
     }
   } catch (err) {
     console.error('[octagon] avatar resolve xatosi (matched davom etadi):', err)
@@ -280,10 +284,12 @@ function startMatch(p1: Player, p2: Player): void {
   // saqlangan, xato bo'lsa matched null avatar bilan ketadi (duel buzilmaydi).
   void resolveAvatars(p1.userId, p2.userId).then((avatars) => {
     for (const [player, opponent] of [[p1, p2], [p2, p1]] as [Player, Player][]) {
+      const opp = avatars.get(opponent.userId)
       send(player.ws, {
         type: 'matched', matchId,
         opponentName: opponent.name,
-        opponentAvatar: avatars.get(opponent.userId) ?? null,
+        opponentAvatar: opp?.avatar ?? null,
+        opponentFrame: opp?.frame ?? null,
         roundCount: questionIds.length,
       })
     }

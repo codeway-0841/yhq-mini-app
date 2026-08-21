@@ -52,7 +52,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
 
   const handleMsg = useCallback((msg: OctagonMsg) => {
     switch (msg.type) {
-      case 'matched':          dispatch({ type: 'MATCHED',      matchId: msg.matchId, opponentName: msg.opponentName, opponentAvatar: msg.opponentAvatar, roundCount: msg.roundCount }); break
+      case 'matched':          dispatch({ type: 'MATCHED',      matchId: msg.matchId, opponentName: msg.opponentName, opponentAvatar: msg.opponentAvatar, opponentFrame: msg.opponentFrame, roundCount: msg.roundCount }); break
       case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit }); break
       case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct, correctOptionId: msg.correctOptionId }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break

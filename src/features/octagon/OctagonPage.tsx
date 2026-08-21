@@ -63,7 +63,7 @@ export default function OctagonPage() {
           <SearchingScreen tt={tt} duelCode={duelCode} duelLink={duelLink} onCancel={cancelSearch} />
         )}
 
-        {s.phase === 'matched' && <MatchedScreen opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} />}
+        {s.phase === 'matched' && <MatchedScreen opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
 
         {s.phase === 'in_round' && (
           <RoundScreen tt={tt} q={currentQ} deadline={s.deadline}

@@ -3,8 +3,9 @@
  */
 
 export type OctagonMsg =
-  /** opponentAvatar: server resolve — '/api/avatar/:uid' (custom) | TG photo_url | null */
-  | { type: 'matched';      matchId: string; opponentName: string; opponentAvatar: string | null; roundCount: number }
+  /** opponentAvatar: '/api/avatar/:uid' (custom) | TG photo_url | null;
+   *  opponentFrame: avatar-frames config id'si (do'kon kosmetikasi) | null */
+  | { type: 'matched';      matchId: string; opponentName: string; opponentAvatar: string | null; opponentFrame: string | null; roundCount: number }
   | { type: 'question';     index: number; questionId: number; timeLimit: number }
   | { type: 'answer_ack';   index: number; correct: boolean; correctOptionId: string }
   | { type: 'opp_answered'; index: number }
