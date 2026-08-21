@@ -13,6 +13,7 @@ import { Trophy, Shield, Gift } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { api, avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
+import { getAvatarFrame } from '../../shared/config/avatar-frames'
 
 const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
   bronze:   { color: 'var(--p-warning)', titleKey: 'leagueBronze' },
@@ -39,12 +40,15 @@ function Medal({ rank }: { rank: number }) {
   return <span className="text-xs text-muted w-6 text-center">{rank}</span>
 }
 
-function InitialAvatar({ name, src }: { name: string; src?: string | null }) {
-  return (
-    <div className="w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted text-xs font-black flex-shrink-0 overflow-hidden">
+function InitialAvatar({ name, src, frame }: { name: string; src?: string | null; frame?: string | null }) {
+  const frameClass = getAvatarFrame(frame)?.cssClass ?? null
+  const inner = (
+    <div className={`w-8 h-8 rounded-full bg-elevated flex items-center justify-center text-muted text-xs font-black flex-shrink-0 overflow-hidden${frameClass ? '' : ' border border-line'}`}>
       {src ? <img src={src} alt={name} className="w-full h-full object-cover" loading="lazy" /> : (name[0]?.toUpperCase() ?? '?')}
     </div>
   )
+  // Do'kon ramkasi (cosmetic) — Profil Avatar bilan bir xil wrapper (avatar-frames config)
+  return frameClass ? <span className={`avatar-frame ${frameClass} flex-shrink-0`}>{inner}</span> : inner
 }
 
 interface LeaderEntry {
@@ -56,6 +60,7 @@ interface LeaderEntry {
   isYou: boolean
   photoUrl?: string | null
   hasCustomAvatar?: boolean
+  avatarFrame?: string | null
 }
 
 /** Top-3 podium: oltin/kumush/bronza */
@@ -71,11 +76,17 @@ function Podium({ top3 }: { top3: LeaderEntry[] }) {
       {col.map(({ e, medal, h, ring, bg }, i) => e && (
         <div key={i} className="flex flex-col items-center gap-1.5 flex-1 max-w-[110px]">
           <span className="text-lg">{medal}</span>
-          <div className={`w-14 h-14 rounded-full bg-elevated ring-2 ${ring} flex items-center justify-center text-fg text-xl font-black overflow-hidden`}>
-            {(() => { const src = avatarSrcFor(e); return src
-              ? <img src={src} alt={e.name} className="w-full h-full object-cover" loading="lazy" />
-              : (e.name[0]?.toUpperCase() ?? '?') })()}
-          </div>
+          {(() => {
+            const frameClass = getAvatarFrame(e.avatarFrame)?.cssClass ?? null
+            const circle = (
+              <div className={`w-14 h-14 rounded-full bg-elevated flex items-center justify-center text-fg text-xl font-black overflow-hidden${frameClass ? '' : ` ring-2 ${ring}`}`}>
+                {(() => { const src = avatarSrcFor(e); return src
+                  ? <img src={src} alt={e.name} className="w-full h-full object-cover" loading="lazy" />
+                  : (e.name[0]?.toUpperCase() ?? '?') })()}
+              </div>
+            )
+            return frameClass ? <span className={`avatar-frame ${frameClass}`}>{circle}</span> : circle
+          })()}
           <p className="text-xs font-bold truncate max-w-full">{e.name}</p>
           <p className="text-sm font-black" style={{ color: bg }}>{e.score}</p>
           <div className={`w-full ${h} rounded-t-xl opacity-30`} style={{ background: bg }} />
@@ -89,6 +100,7 @@ export default function LeaderboardPage() {
   // Selector'li obuna — whole-store EMAS
   const settings = useAppStore((s) => s.settings)
   const user     = useAppStore((s) => s.user)
+  const myFrame  = useAppStore((s) => s.avatarFrame)
   const navigate = useNavigate()
   const tt = useT(settings.language)
 
@@ -211,7 +223,7 @@ export default function LeaderboardPage() {
                       <div className="w-8 flex items-center justify-center flex-shrink-0">
                         <Medal rank={entry.rank} />
                       </div>
-                      <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} />
+                      <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} frame={entry.avatarFrame} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-semibold truncate">
                           {entry.name}
@@ -258,7 +270,7 @@ export default function LeaderboardPage() {
                   <div className="w-8 flex items-center justify-center flex-shrink-0">
                     <Medal rank={entry.rank} />
                   </div>
-                  <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} />
+                  <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} frame={entry.avatarFrame} />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold truncate">
                       {entry.name}
@@ -279,7 +291,7 @@ export default function LeaderboardPage() {
             <div className="mx-4 mt-4 bg-surface border border-line rounded-2xl px-4 py-3">
               <p className="text-xs text-muted mb-2">{tt('yourRank')}</p>
               <div className="flex items-center gap-3">
-                <InitialAvatar name={user.firstName} src={avatarSrcFor(user)} />
+                <InitialAvatar name={user.firstName} src={avatarSrcFor(user)} frame={myFrame} />
                 <span className="flex-1 text-sm font-semibold">{user.firstName}</span>
                 <span className="text-xs text-muted">{tt('notInTop50')}</span>
               </div>

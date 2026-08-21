@@ -16,6 +16,8 @@ export interface LeaderboardEntry {
   /** Global avatar: custom bo'lsa GET /api/avatar/:userId, yo'q bo'lsa TG photo_url. */
   photoUrl:        string | null
   hasCustomAvatar: boolean
+  /** Joriy avatar ramkasi (avatar-frames config id'si) — do'kon kosmetikasi. */
+  avatarFrame:     string | null
 }
 
 export interface WeeklyEntry {
@@ -27,6 +29,7 @@ export interface WeeklyEntry {
   isYou:  boolean
   photoUrl:        string | null
   hasCustomAvatar: boolean
+  avatarFrame:     string | null
 }
 
 /**
@@ -57,6 +60,7 @@ export const leaderboardRepository = {
         lastName:     users.lastName,
         photoUrl:          users.photoUrl,
         hasCustomAvatar:   sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:       users.avatarFrame,
         totalCorrect: sql<number>`COALESCE(${progress.totalCorrect}, 0)`,
         streak:       sql<number>`COALESCE(${progress.streak}, 0)`,
       })
@@ -77,6 +81,7 @@ export const leaderboardRepository = {
       isYou:  callerUserId !== null && r.userId === callerUserId,
       photoUrl:        r.photoUrl || null,
       hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame:     r.avatarFrame ?? null,
     }))
   },
 
@@ -109,6 +114,7 @@ export const leaderboardRepository = {
         lastName:  users.lastName,
         photoUrl:         users.photoUrl,
         hasCustomAvatar:  sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:      users.avatarFrame,
         league:    sql<string>`COALESCE(${progress.league}, 'bronze')`,
         score:     sql<number>`COALESCE(${weeklyScores.score}, 0)`,
       })
@@ -140,6 +146,7 @@ export const leaderboardRepository = {
         isYou:  callerUserId !== null && r.userId === callerUserId,
         photoUrl:        r.photoUrl || null,
         hasCustomAvatar: !!r.hasCustomAvatar,
+        avatarFrame:     r.avatarFrame ?? null,
       })),
     }
   },

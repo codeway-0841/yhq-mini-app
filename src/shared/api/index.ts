@@ -885,6 +885,8 @@ export interface WeeklyEntry {
   /** Global avatar manbalari (avatarSrcFor bilan ishlating) */
   photoUrl?:        string | null
   hasCustomAvatar?: boolean
+  /** Joriy avatar ramkasi id (avatar-frames config) — do'kon kosmetikasi */
+  avatarFrame?:     string | null
 }
 
 export interface LeagueWeekly {
@@ -902,6 +904,7 @@ export interface LeaderboardEntry {
   isYou:  boolean
   photoUrl?:        string | null
   hasCustomAvatar?: boolean
+  avatarFrame?:     string | null
 }
 
 
