@@ -205,6 +205,24 @@ export const usersRepository = {
     return rows.length > 0
   },
 
+  /** Qo'lda yuklangan avatar (WebP data URL) — blok yozish; null → o'chirish. */
+  async setAvatarWebp(userId: string, dataUrl: string | null): Promise<boolean> {
+    const rows = await db.update(users)
+      .set({ avatarWebp: dataUrl, updatedAt: new Date() })
+      .where(eq(users.id, userId))
+      .returning({ id: users.id })
+    return rows.length > 0
+  },
+
+  /** Global avatar (GET /api/avatar/:userId) — data URL yoki null. */
+  async getAvatarWebp(userId: string): Promise<string | null> {
+    const [row] = await db
+      .select({ avatarWebp: users.avatarWebp })
+      .from(users)
+      .where(eq(users.id, userId))
+    return row?.avatarWebp ?? null
+  },
+
   /** Tarifni yangilash — Premium sotib olinganda (bot payment handler). */
   async setTariff(id: string, tariff: 'free' | 'premium'): Promise<void> {
     await db.update(users).set({ tariff, updatedAt: new Date() }).where(eq(users.id, id))

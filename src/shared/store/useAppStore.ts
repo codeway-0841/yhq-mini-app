@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { api, ApiError, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
+import { api, ApiError, avatarSrcFor, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
 import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
@@ -30,6 +30,24 @@ export interface SubmitFatal { fatal: true; code?: string }
 /** null = OFFLINE (outbox'da); SubmitFatal = rad etildi; SubmitOutcome = server baholadi */
 export type SubmitResult = SubmitOutcome | SubmitFatal | null
 
+/**
+ * Custom avatar SINXRONLASH (hydrateFromProfile/syncFromServer'da umumiy):
+ * server `hasCustomAvatar` — YAGONA manba (users.avatar_webp).
+ *  - Server'da BOR → lokal kesh server URL'iga yangilanadi (hamma qurilmada bir xil).
+ *  - Server'da YO'Q + lokal data URL bor → BIR MARTALIK backfill upload (eski
+ *    qurilmalar migratsiyasi, fire-and-forget/offline-safe); lokal qoldiriladi —
+ *    keyingi hydrate'da server `true` qaytarib URL'ga almashtiradi.
+ *  - Ikkalasida ham yo'q → lokal tozalanadi (boshqa qurilmada o'chirilgan).
+ */
+function syncAvatarState(localAvatar: string | null, user: ApiUser): string | null {
+  if (user.hasCustomAvatar) return avatarSrcFor(user)
+  if (localAvatar?.startsWith('data:image/')) {
+    if (user.id && user.id !== '0') void api.uploadAvatar(user.id, localAvatar).catch(() => {})
+    return localAvatar
+  }
+  return null
+}
+
 interface AppState {
   user:           ApiUser | null
   settings:       ApiSettings
@@ -46,7 +64,8 @@ interface AppState {
   initialized:    boolean
   /** User-set display name override (Telegram name o'rniga) */
   displayName:    string | null
-  /** Foydalanuvchi yuklagan maxsus avatar (256px WebP data URL, lokal) */
+  /** Avatar src keshi: 256px WebP data URL (yangi yuklash) YOKI server URL
+   *  ('/api/avatar/:id'). Server manba: users.avatar_webp (syncAvatarState). */
   customAvatar:   string | null
   /** Aksent temasi id (src/config/themes.ts). Lokal pref — serverga yuborilmaydi.
    *  Premium/coin temalar faqat App.tsx dagi resolveAccent (egalik bilan) orqali qo'llanadi. */
@@ -295,6 +314,7 @@ export const useAppStore = create<AppState>()(
         if (data.settings.dailyReminder !== false) {
           void scheduleDailyStreakReminder(data.settings.dailyReminderTime || '20:00', data.settings.language)
         }
+        const customAvatar = syncAvatarState(get().customAvatar, data.user)
         set((s) => ({
           user:            data.user,
           tariff:          data.user.tariff,
@@ -309,6 +329,7 @@ export const useAppStore = create<AppState>()(
           coins:           data.user.coins ?? 0,
           ownedItems:      data.user.ownedItems ?? [],
           avatarFrame:     data.user.avatarFrame ?? null,
+          customAvatar,
         }))
       },
 
@@ -334,6 +355,7 @@ export const useAppStore = create<AppState>()(
       syncFromServer: async (userId) => {
         try {
           const data = await api.getProfile(userId)
+          const customAvatar = syncAvatarState(get().customAvatar, data.user)
           set((s) => ({
             user:            data.user,
             tariff:          data.user.tariff,
@@ -348,6 +370,7 @@ export const useAppStore = create<AppState>()(
             coins:           data.user.coins ?? 0,
             ownedItems:      data.user.ownedItems ?? [],
             avatarFrame:     data.user.avatarFrame ?? null,
+            customAvatar,
           }))
         } catch (err) {
           console.error('syncFromServer failed:', err)

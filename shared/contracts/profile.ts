@@ -15,6 +15,8 @@ export const ApiUserSchema = z.object({
   lastName:  z.string().optional(),
   username:  z.string().optional(),
   photoUrl:  z.string().optional(),
+  /** Qo'lda yuklangan avatar bormi — rasm FAQAT GET /api/avatar/:id dan (JSON kichik qoladi) */
+  hasCustomAvatar: z.boolean().optional(),
   phone:     z.string().nullable().optional(),
   tariff:    z.enum(['free', 'premium']),
   isAdmin:   z.boolean().optional(),

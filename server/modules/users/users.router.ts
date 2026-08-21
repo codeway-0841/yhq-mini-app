@@ -7,8 +7,10 @@ import { Router }                                    from 'express'
 import { z }                                         from 'zod'
 import { wrap, AppError }                            from '../../middleware/error-handler'
 import { validate }                                  from '../../middleware/validate'
+import { requireSelf }                               from '../../middleware/auth'
+import { dbRateLimit }                               from '../../middleware/db-rate-limiter'
 import { parseUserId }                               from '../../utils/parse'
-import { usersService, InitInputSchema, PhoneSchema, toApiUser, toApiProgress, toApiSettings } from './users.service'
+import { usersService, InitInputSchema, PhoneSchema, AvatarUploadSchema, AVATAR_DATA_URL_PREFIX, toApiUser, toApiProgress, toApiSettings } from './users.service'
 import { referralsRepository }                       from './users.repository'
 import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
 import { progressRepository }                        from '../progress/progress.repository'
@@ -114,6 +116,65 @@ router.post(
 
     const result = await usersService.startTrial(uid)
     res.json(result)
+  }),
+)
+
+// ── AVATAR — qo'lda yuklangan profil rasmi (global ko'rsatish) ───────────────
+
+// Yuklash brute-force/spam himoyasi (coins kabi): user boshiga 10/min.
+const avatarUploadLimiter = dbRateLimit({
+  maxPerMinute: 10,
+  bucket: 'avatar:upload',
+  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+})
+
+// PUT /api/users/:userId/avatar — custom avatar yuklash (FAQAT o'zi; requireSelf).
+router.put(
+  '/users/:userId/avatar',
+  requireSelf,
+  avatarUploadLimiter,
+  validate({ body: AvatarUploadSchema }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+    const { image } = req.body as z.infer<typeof AvatarUploadSchema>
+    await usersService.updateAvatar(uid, image)
+    res.json({ ok: true })
+  }),
+)
+
+// DELETE /api/users/:userId/avatar — avatar o'chirish (FAQAT o'zi).
+router.delete(
+  '/users/:userId/avatar',
+  requireSelf,
+  avatarUploadLimiter,
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+    await usersService.updateAvatar(uid, null)
+    res.json({ ok: true })
+  }),
+)
+
+// GET /api/avatar/:userId — GLOBAL o'qish (leaderboard/duel). PUBLIC_GET'da —
+// <img> tag auth header yubora olmaydi; avatar ma'lumoti user O'ZI public
+// ko'rsatish uchun yuklagan (PII emas). Binary image/webp, CDN-keshlanadi.
+router.get(
+  '/avatar/:userId',
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+    const dataUrl = await usersService.getAvatar(uid)
+    if (!dataUrl || !dataUrl.startsWith(AVATAR_DATA_URL_PREFIX)) {
+      throw new AppError(404, 'Avatar not found')
+    }
+    const buf = Buffer.from(dataUrl.slice(AVATAR_DATA_URL_PREFIX.length), 'base64')
+    res.set({
+      'Content-Type': 'image/webp',
+      // Qayta yuklangach ~10 daqiqagacha eski kesh ko'rinishi mumkin
+      'Cache-Control': 'public, max-age=600',
+    })
+    res.send(buf)
   }),
 )
 

@@ -41,6 +41,11 @@ export const users = pgTable('users', {
   /** Joriy avatar ramkasi (do'kon buyumi, avatar-frames config id'si).
    *  NULL — ramkasiz. Egalik faqat user_items orqali tekshiriladi (equip guard). */
   avatarFrame: text('avatar_frame'),
+  /** Qo'lda yuklangan avatar — siqilgan 256px WebP data URL (base64, ~10-20KB).
+   *  photo_url'dan ALOHIDA: photo_url har init'da Telegram initData bilan ustiga
+   *  yoziladi; custom avatar SHU YERDA — global ko'rsatish uchun YAGONA manba
+   *  (leaderboard/duel GET /api/users/:id/avatar orqali). NULL — custom avatar yo'q. */
+  avatarWebp: text('avatar_webp'),
   /** Security tracking */
   failedLoginAttempts: integer('failed_login_attempts').default(0).notNull(),
   lockedUntil: timestamp('locked_until'),

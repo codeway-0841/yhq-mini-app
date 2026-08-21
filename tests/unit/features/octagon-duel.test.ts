@@ -31,8 +31,8 @@ describe('duelReducer', () => {
 
   it('MATCHED — matchId/opponent saqlanadi, score nol', () => {
     const s = duelReducer({ ...DUEL_INIT, phase: 'searching' },
-      { type: 'MATCHED', matchId: 'm9', opponentName: 'X', roundCount: 10 })
-    expect(s).toMatchObject({ phase: 'matched', matchId: 'm9', opponentName: 'X', roundCount: 10 })
+      { type: 'MATCHED', matchId: 'm9', opponentName: 'X', opponentAvatar: '/api/avatar/u1', roundCount: 10 })
+    expect(s).toMatchObject({ phase: 'matched', matchId: 'm9', opponentName: 'X', opponentAvatar: '/api/avatar/u1', roundCount: 10 })
   })
 
   it('START_ROUND — old javob/ack/oppAnswered TOZALANADI (server-trust invariant)', () => {

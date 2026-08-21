@@ -7,6 +7,8 @@ export type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
 
 export interface DuelState {
   phase: Phase; matchId: string | null; opponentName: string | null
+  /** Raqib avatari — server matched payload'dan (custom avatar URL yoki TG photo) */
+  opponentAvatar: string | null
   roundCount: number; roundIndex: number; currentQuestionId: number | null
   yourScore: number; oppScore: number
   selected: string | null; ackCorrect: boolean | null; oppAnswered: boolean
@@ -19,7 +21,7 @@ export interface DuelState {
 export type DuelAction =
   | { type: 'SEARCHING' }
   | { type: 'CANCEL' }
-  | { type: 'MATCHED';      matchId: string; opponentName: string; roundCount: number }
+  | { type: 'MATCHED';      matchId: string; opponentName: string; opponentAvatar: string | null; roundCount: number }
   | { type: 'START_ROUND';  index: number; questionId: number; timeLimit: number }
   | { type: 'SELECT';       optionId: string }
   | { type: 'ANSWER_ACK';   correct: boolean; correctOptionId: string }
@@ -38,7 +40,7 @@ export type DuelAction =
   | { type: 'CLEAR_TOAST' }
 
 export const DUEL_INIT: DuelState = {
-  phase: 'idle', matchId: null, opponentName: null,
+  phase: 'idle', matchId: null, opponentName: null, opponentAvatar: null,
   roundCount: 0, roundIndex: 0, currentQuestionId: null,
   yourScore: 0, oppScore: 0,
   selected: null, ackCorrect: null, ackCorrectOptionId: null,
@@ -50,7 +52,7 @@ export function duelReducer(s: DuelState, a: DuelAction): DuelState {
   switch (a.type) {
     case 'SEARCHING':        return { ...DUEL_INIT, phase: 'searching' }
     case 'CANCEL':           return { ...DUEL_INIT }
-    case 'MATCHED':          return { ...s, phase: 'matched', matchId: a.matchId, opponentName: a.opponentName, roundCount: a.roundCount }
+    case 'MATCHED':          return { ...s, phase: 'matched', matchId: a.matchId, opponentName: a.opponentName, opponentAvatar: a.opponentAvatar, roundCount: a.roundCount }
     case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, ackCorrectOptionId: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
     case 'SELECT':           return { ...s, selected: a.optionId }
     case 'ANSWER_ACK':       return { ...s, ackCorrect: a.correct, ackCorrectOptionId: a.correctOptionId }

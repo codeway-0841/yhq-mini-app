@@ -2,7 +2,7 @@
  * Octagon PvP — WebSocket matchmaking + game loop.
  *
  * Protocol (server → client):
- *   matched        { matchId, opponentName, roundCount }      ← no questionIds upfront
+ *   matched        { matchId, opponentName, opponentAvatar, roundCount }  ← no questionIds upfront
  *   question       { index, questionId, timeLimit }           ← reveals one at a time
  *   answer_ack     { index, correct, correctOptionId }   ← post-answer reveal
  *   opp_answered   { index }
@@ -25,11 +25,13 @@
 import { WebSocket, WebSocketServer } from 'ws'
 import { IncomingMessage } from 'http'
 import { randomUUID } from 'crypto'
+import { sql }            from 'drizzle-orm'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
 import { getProvider } from './providers'
+import { executeRows } from './db/connection'
 import { progressRepository } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
 import { registerInterval } from './utils/shutdown'
@@ -214,6 +216,30 @@ function correctFor(questionId: number, pool: QuestionPoolItem[]): string {
   return pool.find((q) => q.id === questionId)?.correct ?? ''
 }
 
+// ── Avatar resolve (matched payload uchun) ─────────────────────────────────
+// Client yuborgan name kabi rasmga ham ISHONILMAYDI — FAQAT server DB'dan.
+// Custom avatar (avatar_webp) → `/api/avatar/:uid` yo'li; yo'q bo'lsa TG photo_url.
+// Same-account dev duel uid'lari (`${uid}_2`) jadvalda yo'q — null qaytadi.
+const AVATAR_UID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
+
+async function resolveAvatars(...ids: string[]): Promise<Map<string, string | null>> {
+  const clean = [...new Set(ids.filter((id) => AVATAR_UID_RE.test(id)))]
+  const out = new Map<string, string | null>()
+  if (!clean.length) return out
+  try {
+    const rows = await executeRows<{ id: string; photo_url: string | null; has_custom: boolean }>(sql`
+      SELECT id, photo_url, (avatar_webp IS NOT NULL) AS has_custom
+      FROM users WHERE id = ANY(${clean})
+    `)
+    for (const r of rows) {
+      out.set(r.id, r.has_custom ? `/api/avatar/${encodeURIComponent(r.id)}` : (r.photo_url || null))
+    }
+  } catch (err) {
+    console.error('[octagon] avatar resolve xatosi (matched davom etadi):', err)
+  }
+  return out
+}
+
 // ── Match lifecycle ────────────────────────────────────────────────────────
 
 function startMatch(p1: Player, p2: Player): void {
@@ -242,16 +268,20 @@ function startMatch(p1: Player, p2: Player): void {
   playerToMatch.set(p1.userId, matchId)
   playerToMatch.set(p2.userId, matchId)
 
-  // Send matched without questionIds — answers must not be pre-fetchable
-  for (const [player, opponent] of [[p1, p2], [p2, p1]] as [Player, Player][]) {
-    send(player.ws, {
-      type: 'matched', matchId,
-      opponentName: opponent.name,
-      roundCount: questionIds.length,
-    })
-  }
-
-  startRound(match)
+  // Send matched without questionIds — answers must not be pre-fetchable.
+  // Avatar URL'lar DB'dan (bitta tez so'rov) — match holati allaqachon
+  // saqlangan, xato bo'lsa matched null avatar bilan ketadi (duel buzilmaydi).
+  void resolveAvatars(p1.userId, p2.userId).then((avatars) => {
+    for (const [player, opponent] of [[p1, p2], [p2, p1]] as [Player, Player][]) {
+      send(player.ws, {
+        type: 'matched', matchId,
+        opponentName: opponent.name,
+        opponentAvatar: avatars.get(opponent.userId) ?? null,
+        roundCount: questionIds.length,
+      })
+    }
+    startRound(match)
+  })
 }
 
 function startRound(match: Match): void {

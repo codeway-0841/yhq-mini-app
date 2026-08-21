@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { t } from '../../../shared/i18n'
+import { api } from '../../../shared/api'
 
-/** Galereyadagi rasmni 256px kvadrat WebP data URL'ga siqadi (localStorage uchun yengil). */
+/** Galereyadagi rasmni 256px kvadrat WebP data URL'ga siqadi (server limiti uchun yengil). */
 function compressAvatar(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const url = URL.createObjectURL(file)
@@ -27,10 +28,13 @@ function compressAvatar(file: File): Promise<string> {
   })
 }
 
+/** Server cheklovi bilan SINXRON (users.service AvatarUploadSchema max(100_000)). */
+export const AVATAR_MAX_DATA_URL_LEN = 100_000
+
 /**
- * Avatar yuklash oqimi — fayl tanlash → siqish → lokal store.
- * Server yuborilmaydi — Telegram WebView'da maxsus avatar endpoint'i yo'q;
- * data URL localStorage'da saqlanadi.
+ * Avatar yuklash oqimi — fayl tanlash → siqish → SERVER'ga yuborish → lokal store.
+ * Server-first: PUT muvaffaqiyatli bo'lmasa lokal YOZILMAYDI — avatar global
+ * (leaderboard/duel) ko'rinishi uchun users.avatar_webp yagona manba bo'lishi shart.
  */
 export function useAvatarUpload({ showToast, closeSheet }: {
   showToast: (msg: string) => void
@@ -38,17 +42,19 @@ export function useAvatarUpload({ showToast, closeSheet }: {
 }) {
   const lang = useAppStore((s) => s.settings.language)
   const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
+  const userId = useAppStore((s) => s.user?.id)
   const [avatarBusy, setAvatarBusy] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null)
 
   const handleAvatarFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     e.target.value = '' // bir xil faylni qayta tanlash ham ishlashi uchun
-    if (!file) return
+    if (!file || !userId) return
     setAvatarBusy(true)
     try {
       const dataUrl = await compressAvatar(file)
-      if (dataUrl.length > 500_000) throw new Error('too big')
+      if (dataUrl.length > AVATAR_MAX_DATA_URL_LEN) throw new Error('too big')
+      await api.uploadAvatar(userId, dataUrl)   // SERVER-FIRST — muvaffaqiyat = global
       setCustomAvatar(dataUrl)
       closeSheet()
       showToast(t(lang, 'avatarSavedToast'))
@@ -59,5 +65,21 @@ export function useAvatarUpload({ showToast, closeSheet }: {
     }
   }
 
-  return { fileRef, avatarBusy, handleAvatarFile }
+  /** O'chirish ham server-first: DELETE o'tsa lokal tozalanadi. */
+  const removeAvatar = async () => {
+    if (!userId || avatarBusy) return
+    setAvatarBusy(true)
+    try {
+      await api.removeAvatar(userId)
+      setCustomAvatar(null)
+      closeSheet()
+      showToast(t(lang, 'avatarRemovedToast'))
+    } catch {
+      showToast(t(lang, 'avatarUploadFailed'))
+    } finally {
+      setAvatarBusy(false)
+    }
+  }
+
+  return { fileRef, avatarBusy, handleAvatarFile, removeAvatar }
 }

@@ -62,7 +62,11 @@ function normalizePath(path: string): string | null {
  * Questions/topics are identical for every user, so auth is NOT required.
  * This lets Vercel's CDN serve them from the edge (huge DB-load win).
  */
-const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard'])
+const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard',
+  // 'avatar/:userId' — public profil rasmi (leaderboard/duel <img src> auth
+  // header yubora olmaydi; rasm user O'ZI global ko'rsatish uchun yuklagan)
+  'avatar',
+])
 
 /**
  * Auth LOGIN endpoint'lari — credentials'siz KIRISH uchun public:

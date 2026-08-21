@@ -98,6 +98,30 @@ function uid(userId: string) {
   return encodeURIComponent(userId)
 }
 
+/**
+ * Global avatar src'ini hosil qiladi:
+ *  - server-relative yo'l ('/api/avatar/...', duel WS payload'dan) → API base'ga ulash
+ *  - hasCustomAvatar → GET /api/avatar/:id (keshlanadi, CDN)
+ *  - aks holda TG photo_url (absolyut http) yoki null (harf fallback)
+ */
+export function avatarSrcFor(
+  user: { id?: string; userId?: string; photoUrl?: string | null; hasCustomAvatar?: boolean | null } | null | undefined,
+): string | null {
+  if (!user) return null
+  if (user.hasCustomAvatar) {
+    const id = user.id ?? user.userId
+    if (id) return `${config.apiBaseUrl}/avatar/${uid(id)}`
+  }
+  const p = user.photoUrl ?? ''
+  return p || null
+}
+
+/** Duel WS payload'dan kelgan tayyor yo'l ('/api/avatar/...' yoki absolyut http). */
+export function resolveAvatarPath(path: string | null | undefined): string | null {
+  if (!path) return null
+  return path.startsWith('/') ? `${config.apiBaseUrl}${path}` : path
+}
+
 /** /init va /profile javobini shared contract bilan tekshiradi (drift himoyasi). */
 function parseProfile(raw: unknown): FullProfile {
   const parsed = FullProfileSchema.safeParse(raw)
@@ -128,6 +152,8 @@ export interface ApiUser {
   lastName: string | undefined
   username: string | undefined
   photoUrl: string | undefined
+  /** Qo'lda yuklangan avatar bormi — rasm uchun avatarSrcFor(user) ishlating */
+  hasCustomAvatar?: boolean
   phone: string | undefined
   tariff: 'free' | 'premium'
   premiumUntil?: string | null
@@ -376,6 +402,14 @@ export const api = {
    *  Oqim: requestOTP({phone}) → SMS kod → updatePhone(userId, phone, otp). */
   updatePhone: (userId: string, phone: string, otp: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone, otp }),
+
+  /** Custom avatar yuklash (256px WebP data URL) — server global manba bo'ladi. */
+  uploadAvatar: (userId: string, image: string) =>
+    request<{ ok: true }>('PUT', `/users/${uid(userId)}/avatar`, { image }),
+
+  /** Custom avatarni o'chirish (harf/TG avatar fallback'ga qaytish). */
+  removeAvatar: (userId: string) =>
+    request<{ ok: true }>('DELETE', `/users/${uid(userId)}/avatar`),
 
   /** 3 kunlik bepul Premium trial (FAQAT 1 marta — backend tekshiradi) */
   startTrial: (userId: string) =>
@@ -848,6 +882,9 @@ export interface WeeklyEntry {
   score:  number
   league: string
   isYou:  boolean
+  /** Global avatar manbalari (avatarSrcFor bilan ishlating) */
+  photoUrl?:        string | null
+  hasCustomAvatar?: boolean
 }
 
 export interface LeagueWeekly {
@@ -863,6 +900,8 @@ export interface LeaderboardEntry {
   score:  number
   streak: number
   isYou:  boolean
+  photoUrl?:        string | null
+  hasCustomAvatar?: boolean
 }
 
 

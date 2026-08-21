@@ -12,7 +12,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { Trophy, Shield, Gift } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
-import { api, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
+import { api, avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly } from '../../shared/api'
 
 const LEAGUES: Record<string, { color: string; titleKey: 'leagueBronze' | 'leagueSilver' | 'leagueGold' | 'leaguePlat' }> = {
   bronze:   { color: 'var(--p-warning)', titleKey: 'leagueBronze' },
@@ -39,10 +39,10 @@ function Medal({ rank }: { rank: number }) {
   return <span className="text-xs text-muted w-6 text-center">{rank}</span>
 }
 
-function InitialAvatar({ name }: { name: string }) {
+function InitialAvatar({ name, src }: { name: string; src?: string | null }) {
   return (
-    <div className="w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted text-xs font-black flex-shrink-0">
-      {name[0]?.toUpperCase() ?? '?'}
+    <div className="w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted text-xs font-black flex-shrink-0 overflow-hidden">
+      {src ? <img src={src} alt={name} className="w-full h-full object-cover" loading="lazy" /> : (name[0]?.toUpperCase() ?? '?')}
     </div>
   )
 }
@@ -54,6 +54,8 @@ interface LeaderEntry {
   score: number
   streak: number
   isYou: boolean
+  photoUrl?: string | null
+  hasCustomAvatar?: boolean
 }
 
 /** Top-3 podium: oltin/kumush/bronza */
@@ -69,8 +71,10 @@ function Podium({ top3 }: { top3: LeaderEntry[] }) {
       {col.map(({ e, medal, h, ring, bg }, i) => e && (
         <div key={i} className="flex flex-col items-center gap-1.5 flex-1 max-w-[110px]">
           <span className="text-lg">{medal}</span>
-          <div className={`w-14 h-14 rounded-full bg-elevated ring-2 ${ring} flex items-center justify-center text-fg text-xl font-black`}>
-            {e.name[0]?.toUpperCase() ?? '?'}
+          <div className={`w-14 h-14 rounded-full bg-elevated ring-2 ${ring} flex items-center justify-center text-fg text-xl font-black overflow-hidden`}>
+            {(() => { const src = avatarSrcFor(e); return src
+              ? <img src={src} alt={e.name} className="w-full h-full object-cover" loading="lazy" />
+              : (e.name[0]?.toUpperCase() ?? '?') })()}
           </div>
           <p className="text-xs font-bold truncate max-w-full">{e.name}</p>
           <p className="text-sm font-black" style={{ color: bg }}>{e.score}</p>
@@ -207,7 +211,7 @@ export default function LeaderboardPage() {
                       <div className="w-8 flex items-center justify-center flex-shrink-0">
                         <Medal rank={entry.rank} />
                       </div>
-                      <InitialAvatar name={entry.name} />
+                      <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-semibold truncate">
                           {entry.name}
@@ -254,7 +258,7 @@ export default function LeaderboardPage() {
                   <div className="w-8 flex items-center justify-center flex-shrink-0">
                     <Medal rank={entry.rank} />
                   </div>
-                  <InitialAvatar name={entry.name} />
+                  <InitialAvatar name={entry.name} src={avatarSrcFor(entry)} />
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold truncate">
                       {entry.name}
@@ -275,7 +279,7 @@ export default function LeaderboardPage() {
             <div className="mx-4 mt-4 bg-surface border border-line rounded-2xl px-4 py-3">
               <p className="text-xs text-muted mb-2">{tt('yourRank')}</p>
               <div className="flex items-center gap-3">
-                <InitialAvatar name={user.firstName} />
+                <InitialAvatar name={user.firstName} src={avatarSrcFor(user)} />
                 <span className="flex-1 text-sm font-semibold">{user.firstName}</span>
                 <span className="text-xs text-muted">{tt('notInTop50')}</span>
               </div>

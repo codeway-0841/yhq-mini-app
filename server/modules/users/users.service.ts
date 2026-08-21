@@ -27,6 +27,9 @@ export function toApiUser(row: UserRow, economy: { coins: number; ownedItems: st
     lastName:  row.lastName  ?? '',
     username:  row.username  ?? '',
     photoUrl:  row.photoUrl  ?? '',
+    /** Qo'lda yuklangan avatar bormi — global ko'rsatish uchun rasm FAQAT
+     *  GET /api/avatar/:userId dan olinadi (JSON payload shishmasligi uchun). */
+    hasCustomAvatar: (row.avatarWebp?.length ?? 0) > 0,
     phone:     row.phone     ?? null,
     tariff:    isPremium ? 'premium' as const : 'free' as const,
     isAdmin:   row.isAdmin,
@@ -98,6 +101,14 @@ export const PhoneSchema = z.object({
   /** H-2 (audit): users.phone endi FAQAT SMS OTP egalik isbotidan keyin yoziladi —
    *  begona raqam → pulli SMS / soxta referal mukofoti zanjiri yopiq. Kod 6 raqamli. */
   otp: z.string().regex(/^\d{6}$/, 'OTP 6 raqamli kod bo\'lishi kerak'),
+})
+
+/** Avatar data URL formati — client 256px WebP'ga siqadi (useAvatarUpload).
+ *  Base64 ~1.37x: ~68KB hajm uchun 100k belgi yetarli. */
+export const AVATAR_DATA_URL_PREFIX = 'data:image/webp;base64,'
+export const AVATAR_DATA_URL_RE = /^data:image\/webp;base64,[A-Za-z0-9+/=]+$/
+export const AvatarUploadSchema = z.object({
+  image: z.string().regex(AVATAR_DATA_URL_RE, 'WebP data URL formatida bo\'lishi kerak').max(100_000),
 })
 
 // ── Service ────────────────────────────────────────────────────────────────
@@ -174,6 +185,17 @@ export const usersService = {
       // Mukofot ixtiyoriy — asosiy phone oqimini sindirmaydi
       console.error('[referral] phone-link reward xatosi (updatePhone davom etadi):', err)
     }
+  },
+
+  /** Custom avatar yozish/o'chirish (image=null → remove). Global manba: users.avatar_webp. */
+  async updateAvatar(userId: string, image: string | null): Promise<void> {
+    const ok = await usersRepository.setAvatarWebp(userId, image)
+    if (!ok) throw new AppError(404, 'User not found')
+  },
+
+  /** Global avatar o'qish (GET /api/avatar/:userId) — data URL yoki null. */
+  async getAvatar(userId: string): Promise<string | null> {
+    return usersRepository.getAvatarWebp(userId)
   },
 
   /** 3 kunlik BEPUL trial — conditional UPDATE parallel requestlarda ham bir marta. */

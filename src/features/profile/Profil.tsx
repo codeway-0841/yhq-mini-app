@@ -39,7 +39,6 @@ export default function Profil() {
   const displayName    = useAppStore((s) => s.displayName)
   const setDisplayName = useAppStore((s) => s.setDisplayName)
   const customAvatar   = useAppStore((s) => s.customAvatar)
-  const setCustomAvatar = useAppStore((s) => s.setCustomAvatar)
   const coins          = useAppStore((s) => s.coins)
   const tt = useT(settings.language)
 
@@ -69,7 +68,7 @@ export default function Profil() {
     setTimeout(() => setToast(null), 3000)
   }
 
-  const { fileRef, avatarBusy, handleAvatarFile } = useAvatarUpload({
+  const { fileRef, avatarBusy, handleAvatarFile, removeAvatar } = useAvatarUpload({
     showToast,
     closeSheet: () => setShowPhotoEdit(false),
   })
@@ -416,7 +415,7 @@ export default function Profil() {
           busy={avatarBusy}
           onClose={() => setShowPhotoEdit(false)}
           onPick={() => fileRef.current?.click()}
-          onRemove={() => { setCustomAvatar(null); setShowPhotoEdit(false); showToast(tt('avatarRemovedToast')) }}
+          onRemove={() => void removeAvatar()}
         />
       )}
 
