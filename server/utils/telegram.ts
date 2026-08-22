@@ -71,6 +71,27 @@ export function verifyInitData(initData: string, botToken: string): InitDataUser
   }
 }
 
+/**
+ * XAVFSIZ EMAS — imzo TEKSHIRILMAYDI. FAQAT dev/test'da (`isAuthEnforced()===false`)
+ * middleware/auth.ts orqali chaqiriladi — index.html'dagi dev-mock Telegram user
+ * doim soxta `hash=dev` yuboradi (haqiqiy BOT_TOKEN bilan HECH QACHON
+ * validatsiyadan o'tolmaydi), shuning uchun coins/boss kabi qat'iy
+ * `req.userId`ga tayanuvchi route'lar local dev'da doim 401 qaytarardi.
+ * Production'da ISHLATILMAYDI (isAuthEnforced()===true bo'lsa chaqirilmaydi).
+ */
+export function parseInitDataUserUnsafe(initData: string): InitDataUser | null {
+  try {
+    const params = new URLSearchParams(initData)
+    const rawUser = params.get('user')
+    if (!rawUser) return null
+    const user = JSON.parse(rawUser) as InitDataUser
+    if (typeof user.id !== 'number') return null
+    return user
+  } catch {
+    return null
+  }
+}
+
 // ── Telegram Login Widget (web/brauzer login) ──────────────────────────────
 
 export interface LoginWidgetUser {

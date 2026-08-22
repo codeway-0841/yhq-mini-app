@@ -21,7 +21,7 @@
 import { Request, Response, NextFunction } from 'express'
 import { posix } from 'node:path'
 import { config }          from '../config'
-import { verifyInitData }  from '../utils/telegram'
+import { verifyInitData, parseInitDataUserUnsafe } from '../utils/telegram'
 import { authRepository }  from '../modules/auth/auth.repository'
 
 /** Routes whose first path segment carries a userId: /:userId/... */
@@ -172,6 +172,18 @@ function verifyTelegram(initData: string): string | null {
   return user ? String(user.id) : null
 }
 
+/**
+ * DEV/TEST FALLBACK: imzo tekshiruvi muvaffaqiyatsiz bo'lsa (masalan
+ * index.html'dagi mock Telegram user — doim soxta `hash=dev` yuboradi, haqiqiy
+ * BOT_TOKEN bilan HECH QACHON validatsiyadan o'tolmaydi) — imzosiz user id'ni
+ * o'qiydi. FAQAT isAuthEnforced()===false chaqiruvchisida ishlatiladi (pastda),
+ * production'da BU YO'L UMUMAN CHAQIRILMAYDI.
+ */
+function devUnverifiedTelegramId(initData: string): string | null {
+  const user = parseInitDataUserUnsafe(initData)
+  return user ? String(user.id) : null
+}
+
 async function resolveBearer(token: string, req: Request): Promise<boolean> {
   const session = await authRepository.resolveSession(token)
   if (!session) return false
@@ -187,10 +199,14 @@ export async function telegramAuth(req: Request, res: Response, next: NextFuncti
     const initData = getInitData(req)
     const bearer   = getBearerToken(req)
 
-    // Verification is optional outside production — validate when present though
+    // Verification is optional outside production — validate when present though.
+    // Imzo muvaffaqiyatsiz bo'lsa devUnverifiedTelegramId fallback qiladi (dev-mock
+    // Telegram user'ning soxta hash'i haqiqiy BOT_TOKEN bilan hech qachon
+    // tasdiqlanmaydi — bu yo'lsiz coins/boss kabi qat'iy route'lar local dev'da
+    // doim 401 qaytarardi).
     if (!isAuthEnforced()) {
       if (initData) {
-        const id = verifyTelegram(initData)
+        const id = verifyTelegram(initData) ?? devUnverifiedTelegramId(initData)
         if (id) (req as { userId?: string }).userId = id
       } else if (bearer) {
         await resolveBearer(bearer, req)
