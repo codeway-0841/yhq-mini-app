@@ -328,7 +328,6 @@ export default function Profil() {
 
         <Item
           icon={Award}
-          iconColor="var(--p-gold)"
           label={tt('certOfficialTitle')}
           right={<ChevronRight size={16} className="text-muted" />}
           onPress={() => setShowCertModal(true)}
@@ -336,7 +335,6 @@ export default function Profil() {
 
         <Item
           icon={Ticket}
-          iconColor="var(--p-purple)"
           label={tt('promoCodeTitle')}
           right={<ChevronRight size={16} className="text-muted" />}
           onPress={() => setShowPromoModal(true)}

@@ -540,6 +540,12 @@ body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shar
   letter-spacing: -0.01em;
 }
 
+/* Sahifa sarlavhalari (h1) — matn Inter'da qoladi, sarlavha Nunito bilan biroz
+   yumshoqroq/o'ziga xos ko'rinadi (asosiy shrift bilan bir xil bo'lib qolmasin) */
+h1 {
+  font-family: 'Nunito', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
 /* ── Premium karta: katta radius, juda ingichka border, yumshoq soya ─────── */
 .card-premium {
   background: var(--p-card);
