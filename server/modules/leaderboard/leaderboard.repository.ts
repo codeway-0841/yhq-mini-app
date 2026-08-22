@@ -33,6 +33,23 @@ export interface WeeklyEntry {
 }
 
 /**
+ * Joriy kun (Asia/Tashkent = UTC+5, DST yo'q).
+ */
+export function todayTashkent(): string {
+  const d = new Date(Date.now() + 5 * 3_600_000)
+  return d.toISOString().slice(0, 10)
+}
+
+/**
+ * Joriy oy boshi (1-kun, Asia/Tashkent = UTC+5).
+ */
+export function monthStartTashkent(): string {
+  const d = new Date(Date.now() + 5 * 3_600_000)
+  d.setUTCDate(1)
+  return d.toISOString().slice(0, 10)
+}
+
+/**
  * Joriy hafta boshi (dushanba, Asia/Tashkent = UTC+5, DST yo'q).
  * weekOffset: 0 — joriy hafta, 1 — o'tgan hafta.
  */
@@ -47,6 +64,99 @@ export function weekStartTashkent(weekOffset = 0): string {
 export { LEAGUE_ORDER } from '../../schema'
 
 export const leaderboardRepository = {
+  async dailyTop(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
+    const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
+    const today = todayTashkent()
+
+    const dailyScores = db
+      .select({
+        userId: dailyRecords.userId,
+        score:  sql<number>`SUM(${dailyRecords.correct})`.as('score'),
+      })
+      .from(dailyRecords)
+      .where(eq(dailyRecords.date, today))
+      .groupBy(dailyRecords.userId)
+      .as('daily_scores')
+
+    const rows = await db
+      .select({
+        userId:    users.id,
+        firstName: users.firstName,
+        lastName:  users.lastName,
+        photoUrl:         users.photoUrl,
+        hasCustomAvatar:  sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:      users.avatarFrame,
+        streak:    sql<number>`COALESCE(${progress.streak}, 0)`,
+        score:     sql<number>`COALESCE(${dailyScores.score}, 0)`,
+      })
+      .from(users)
+      .leftJoin(progress, eq(progress.userId, users.id))
+      .innerJoin(dailyScores, eq(dailyScores.userId, users.id))
+      .orderBy(
+        desc(sql`COALESCE(${dailyScores.score}, 0)`),
+        desc(sql`COALESCE(${progress.totalCorrect}, 0)`),
+      )
+      .limit(safeLimit)
+
+    return rows.map((r, i) => ({
+      rank:   i + 1,
+      userId: r.userId,
+      name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score:  Number(r.score),
+      streak: Number(r.streak),
+      isYou:  callerUserId !== null && r.userId === callerUserId,
+      photoUrl:        r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame:     r.avatarFrame ?? null,
+    }))
+  },
+
+  async monthlyTop(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
+    const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
+    const monthStart = monthStartTashkent()
+
+    const monthlyScores = db
+      .select({
+        userId: dailyRecords.userId,
+        score:  sql<number>`SUM(${dailyRecords.correct})`.as('score'),
+      })
+      .from(dailyRecords)
+      .where(sql`${dailyRecords.date} >= ${monthStart}`)
+      .groupBy(dailyRecords.userId)
+      .as('monthly_scores')
+
+    const rows = await db
+      .select({
+        userId:    users.id,
+        firstName: users.firstName,
+        lastName:  users.lastName,
+        photoUrl:         users.photoUrl,
+        hasCustomAvatar:  sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:      users.avatarFrame,
+        streak:    sql<number>`COALESCE(${progress.streak}, 0)`,
+        score:     sql<number>`COALESCE(${monthlyScores.score}, 0)`,
+      })
+      .from(users)
+      .leftJoin(progress, eq(progress.userId, users.id))
+      .innerJoin(monthlyScores, eq(monthlyScores.userId, users.id))
+      .orderBy(
+        desc(sql`COALESCE(${monthlyScores.score}, 0)`),
+        desc(sql`COALESCE(${progress.totalCorrect}, 0)`),
+      )
+      .limit(safeLimit)
+
+    return rows.map((r, i) => ({
+      rank:   i + 1,
+      userId: r.userId,
+      name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score:  Number(r.score),
+      streak: Number(r.streak),
+      isYou:  callerUserId !== null && r.userId === callerUserId,
+      photoUrl:        r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame:     r.avatarFrame ?? null,
+    }))
+  },
   async topN(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
     // Clamp here as well — defense in depth in case router validation is bypassed
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)

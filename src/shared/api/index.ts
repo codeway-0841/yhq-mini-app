@@ -451,10 +451,22 @@ export const api = {
     return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`)
   },
 
-  getLeaderboard: (limit: number, userId?: string) =>
+  getLeaderboard: (limit: number, userId?: string, mode?: 'daily' | 'monthly' | 'all') =>
     request<LeaderboardEntry[]>(
       'GET',
-      `/leaderboard?limit=${limit}${userId ? `&userId=${uid(userId)}` : ''}`
+      `/leaderboard?limit=${limit}${mode && mode !== 'all' ? `&mode=${mode}` : ''}${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+
+  getLeaderboardDaily: (limit: number, userId?: string) =>
+    request<LeaderboardEntry[]>(
+      'GET',
+      `/leaderboard?limit=${limit}&mode=daily${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+
+  getLeaderboardMonthly: (limit: number, userId?: string) =>
+    request<LeaderboardEntry[]>(
+      'GET',
+      `/leaderboard?limit=${limit}&mode=monthly${userId ? `&userId=${uid(userId)}` : ''}`
     ),
 
   getLeagueWeekly: (limit: number, userId?: string) =>

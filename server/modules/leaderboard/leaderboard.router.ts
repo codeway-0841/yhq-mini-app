@@ -33,14 +33,26 @@ router.get(
 )
 
 // GET /api/leaderboard?limit=50&userId=<caller>          → umumiy (all-time) reyting
-// GET /api/leaderboard?limit=50&userId=<caller>&mode=weekly → haftalik liga reytingi
+// GET /api/leaderboard?limit=50&userId=<caller>&mode=daily   → kunlik reyting
+// GET /api/leaderboard?limit=50&userId=<caller>&mode=weekly  → haftalik liga reytingi
+// GET /api/leaderboard?limit=50&userId=<caller>&mode=monthly → oylik reyting
 router.get(
   '/leaderboard',
   wrap(async (req, res) => {
     const limit      = parseLimit(req.query['limit'], 50, 100)
     const callerUid  = parseUserId(String(req.query['userId'] ?? ''))
-    if (req.query['mode'] === 'weekly') {
+    const mode       = String(req.query['mode'] ?? '')
+
+    if (mode === 'daily') {
+      res.json(await leaderboardRepository.dailyTop(limit, callerUid))
+      return
+    }
+    if (mode === 'weekly') {
       res.json(await leaderboardRepository.weeklyTop(limit, callerUid))
+      return
+    }
+    if (mode === 'monthly') {
+      res.json(await leaderboardRepository.monthlyTop(limit, callerUid))
       return
     }
     res.json(await leaderboardRepository.topN(limit, callerUid))
