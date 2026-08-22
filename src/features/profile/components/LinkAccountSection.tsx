@@ -35,8 +35,16 @@ export function LinkAccountSection() {
   const [okMsg, setOkMsg]   = useState<string | null>(null)
 
   const refresh = useCallback(() => {
-    api.getAuthMe().then((d) => setProviders(d.providers)).catch(() => {})
-  }, [])
+    api.getAuthMe()
+      .then((d) => setProviders(d.providers))
+      .catch(() => {
+        const tgUser = getTelegramUser()
+        const provs: Provider[] = []
+        if (tgUser?.id || (user?.id && !user.id.startsWith('p_'))) provs.push('telegram')
+        if (user?.phone || user?.id?.startsWith('p_')) provs.push('phone')
+        setProviders(provs)
+      })
+  }, [user])
   useEffect(() => { refresh() }, [refresh])
 
   // ── Telefon qo'shish formasi (TG user) ────────────────────────────────────
@@ -148,15 +156,21 @@ export function LinkAccountSection() {
   if (!user) return null
 
   const loadingRow = (
-    <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
+    <span className="size-4 border-2 border-pmuted border-t-transparent rounded-full animate-spin" />
   )
-  const linkedRow = <span className="text-[12px] text-psuccess">{tt('authLinked')}</span>
+  const linkedRow = (
+    <span className="inline-flex items-center gap-1 text-[12px] font-semibold text-psuccess">
+      <Check size={13} strokeWidth={2.5} />
+      {tt('authLinked')}
+    </span>
+  )
 
   return (
     <Section title={tt('authLinkAccount')}>
       {/* ── Telegram provider ── */}
       <Item
         icon={Send}
+        iconColor="#0284c7"
         label="Telegram"
         right={
           providers === null
@@ -172,12 +186,18 @@ export function LinkAccountSection() {
       {/* ── Telefon provider ── */}
       <Item
         icon={Phone}
+        iconColor="#10b981"
         label={tt('authPhone')}
         right={
           providers === null
             ? loadingRow
             : providers.includes('phone')
-              ? <span className="text-[12px] text-psuccess">{user.phone ?? tt('authLinked')}</span>
+              ? (
+                <span className="inline-flex items-center gap-1 text-[12px] font-semibold text-psuccess">
+                  <Check size={13} strokeWidth={2.5} />
+                  {user.phone ?? tt('authLinked')}
+                </span>
+              )
               : <span className="text-[12px] text-pmuted">{phoneOpen ? '–' : tt('authLinkPhone')}</span>
         }
         onPress={providers?.includes('phone') ? undefined : () => setPhoneOpen((o) => !o)}

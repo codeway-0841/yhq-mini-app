@@ -42,7 +42,7 @@ body[data-theme='light'] {
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body, #root, input, button, select, textarea {
+html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -54,6 +54,10 @@ html, body, #root, input, button, select, textarea {
   font-variant-numeric: tabular-nums;
   overscroll-behavior: none;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
 }
 
 /* Scrollbar */
@@ -640,6 +644,17 @@ h1, h2, h3 {
   font-family: var(--font-display);
   letter-spacing: -0.022em;
   text-wrap: balance;
+}
+
+/* ── Karta va konteyner chuqurligi (Apple HIG micro-depth) ─────────────── */
+body[data-theme='light'] .rounded-container.bg-pcard,
+body[data-theme='light'] .rounded-container.bg-card {
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 4px 14px rgba(15, 23, 42, 0.03);
+}
+
+body[data-theme='dark'] .rounded-container.bg-pcard,
+body[data-theme='dark'] .rounded-container.bg-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 /* ── Dashboard foni (v3) ─────────────────────────────────────────────────

@@ -24,29 +24,33 @@ const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, t
       }}
       onPointerUp={cancel} onPointerLeave={cancel}
       className={cn(
-        'flex items-center gap-2 rounded-control px-1 py-0.5',
-        'transition-transform duration-[120ms] ease-out active:scale-[0.98]',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
+        'flex items-center gap-2 rounded-control p-1 text-left',
+        'transition-all duration-[120ms] ease-out active:scale-[0.97]',
+        'hover:bg-psurface/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
       )}>
-      <Flame size={16} strokeWidth={1.75} className="text-pwarning" />
-      <div className="text-left">
-        <p className="text-[13px] font-semibold leading-none tabular-nums text-pfg">{streak} {tt('daysWord')}</p>
-        <p className="mt-0.5 text-[10px] font-medium text-psubtle">{tt('streakDays')}</p>
+      <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-pwarning/15 text-pwarning">
+        <Flame size={15} strokeWidth={2} />
+      </div>
+      <div className="min-w-0">
+        <p className="truncate text-[13px] font-semibold leading-tight tabular-nums text-pfg">{streak} {tt('daysWord')}</p>
+        <p className="truncate text-[10px] font-medium text-psubtle">{tt('streakDays')}</p>
       </div>
     </button>
   )
 })
 
 /** Pastki statistika ustuni — Seriya / XP / Reyting bir xil shaklda. */
-function StatItem({ icon: Icon, value, label, tone }: {
-  icon: typeof Star; value: string; label: string; tone?: string
+function StatItem({ icon: Icon, value, label, iconBg, tone }: {
+  icon: typeof Star; value: string; label: string; iconBg?: string; tone?: string
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <Icon size={16} strokeWidth={1.75} className={tone ?? 'text-psubtle'} />
-      <div className="text-left">
-        <p className="text-[13px] font-semibold leading-none tabular-nums text-pfg">{value}</p>
-        <p className="mt-0.5 text-[10px] font-medium text-psubtle">{label}</p>
+    <div className="flex items-center gap-2 p-1 text-left">
+      <div className={cn('flex size-7 shrink-0 items-center justify-center rounded-full', iconBg ?? 'bg-psurface text-psubtle', tone)}>
+        <Icon size={15} strokeWidth={2} />
+      </div>
+      <div className="min-w-0">
+        <p className="truncate text-[13px] font-semibold leading-tight tabular-nums text-pfg">{value}</p>
+        <p className="truncate text-[10px] font-medium text-psubtle">{label}</p>
       </div>
     </div>
   )
@@ -98,12 +102,12 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
       </div>
 
       {/* Pastki statistika: Seriya / XP / Reyting */}
-      <div className="mt-5 flex items-center justify-between gap-3 border-t border-pline pt-4">
+      <div className="mt-5 grid grid-cols-3 gap-2 border-t border-pline pt-4">
         {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
         <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
           tt={tt} ariaLabel={tt('intizomTitle')} />
-        <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} tone="text-pgold" />
-        <StatItem icon={Trophy} value={league} label={tt('ratingWord')} />
+        <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/15 text-pgold" />
+        <StatItem icon={Trophy} value={league} label={tt('ratingWord')} iconBg="bg-pblue/15 text-pblue" />
       </div>
     </div>
   )
