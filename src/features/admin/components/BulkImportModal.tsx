@@ -240,6 +240,7 @@ export default function BulkImportModal({
           </div>
           <button
             onClick={onClose}
+            aria-label="Yopish"
             className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg"
           >
             <X size={16} />
@@ -550,7 +551,7 @@ export default function BulkImportModal({
           <div className="w-full max-w-sm rounded-container bg-psurface border border-pline p-5 space-y-3 shadow-2xl relative">
             <div className="flex items-center justify-between">
               <h3 id="bulk-edit-title" className="text-sm font-semibold text-pfg">Savolni tahrirlash</h3>
-              <button onClick={() => setEditingItem(null)} className="p-1 text-pmuted">
+              <button onClick={() => setEditingItem(null)} aria-label="Yopish" className="p-1 text-pmuted">
                 <X size={16} />
               </button>
             </div>

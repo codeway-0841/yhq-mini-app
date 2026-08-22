@@ -145,6 +145,7 @@ export default function PaymentMethodModal({
           </div>
           <button
             onClick={onClose}
+            aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
             className="p-2 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors"
           >
             <X size={18} />

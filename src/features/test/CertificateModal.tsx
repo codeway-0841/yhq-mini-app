@@ -179,7 +179,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         {/* Close Button */}
         <button
           onClick={onClose}
-          aria-label={tt('backWord')}
+          aria-label={tt('close')}
           className="absolute top-4 right-4 w-9 h-9 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
         >
           <X size={18} />

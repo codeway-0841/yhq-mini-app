@@ -85,6 +85,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           </div>
           <button
             onClick={onClose}
+            aria-label={tt('close')}
             className="w-8 h-8 rounded-full bg-card hover:bg-elevated flex items-center justify-center text-muted hover:text-fg transition-colors"
           >
             <X size={16} />

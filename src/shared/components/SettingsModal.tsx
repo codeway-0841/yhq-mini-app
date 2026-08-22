@@ -119,7 +119,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">
             <h2 id="settings-title" className="text-base font-black text-fg">{tt('settingsTitle')}</h2>
-            <button onClick={onClose} aria-label={tt('settingsTitle')} className="text-muted hover:text-fg">
+            <button onClick={onClose} aria-label={tt('close')} className="text-muted hover:text-fg">
               <X size={20} />
             </button>
           </div>
