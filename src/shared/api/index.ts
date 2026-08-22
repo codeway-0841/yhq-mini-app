@@ -469,6 +469,12 @@ export const api = {
       `/leaderboard?limit=${limit}&mode=monthly${userId ? `&userId=${uid(userId)}` : ''}`
     ),
 
+  getLeaderboardDuel: (limit: number, userId?: string, timeframe?: 'daily' | 'weekly' | 'monthly' | 'all') =>
+    request<LeaderboardEntry[]>(
+      'GET',
+      `/leaderboard?limit=${limit}&mode=duel${timeframe && timeframe !== 'all' ? `&timeframe=${timeframe}` : ''}${userId ? `&userId=${uid(userId)}` : ''}`
+    ),
+
   getLeagueWeekly: (limit: number, userId?: string) =>
     request<LeagueWeekly>(
       'GET',

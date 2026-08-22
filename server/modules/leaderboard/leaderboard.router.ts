@@ -36,6 +36,7 @@ router.get(
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=daily   → kunlik reyting
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=weekly  → haftalik liga reytingi
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=monthly → oylik reyting
+// GET /api/leaderboard?limit=50&userId=<caller>&mode=duel    → duel (Oktagon) reytingi
 router.get(
   '/leaderboard',
   wrap(async (req, res) => {
@@ -53,6 +54,11 @@ router.get(
     }
     if (mode === 'monthly') {
       res.json(await leaderboardRepository.monthlyTop(limit, callerUid))
+      return
+    }
+    if (mode === 'duel') {
+      const timeframe = (String(req.query['timeframe'] ?? 'all')) as 'daily' | 'weekly' | 'monthly' | 'all'
+      res.json(await leaderboardRepository.duelTop(limit, callerUid, timeframe))
       return
     }
     res.json(await leaderboardRepository.topN(limit, callerUid))

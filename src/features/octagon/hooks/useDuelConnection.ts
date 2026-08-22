@@ -14,6 +14,7 @@ import { playSound }      from '../../../shared/lib/sounds'
 import { getInitData }    from '../../../platform/telegram'
 import { getSessionToken } from '../../../shared/lib/session'
 import { duelReducer, DUEL_INIT } from '../duel-reducer'
+import { recordDuelMatch } from '../duel-history'
 
 import { ActiveReaction } from '../components/FloatingReactionsOverlay'
 
@@ -31,6 +32,8 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   const location = useLocation()
   const lang = useAppStore((s) => s.settings.language)
   const [s, dispatch] = useReducer(duelReducer, DUEL_INIT)
+  const sRef = useRef(s)
+  sRef.current = s
   const [conn, setConn] = useState<ConnStatus>('connecting')
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -57,8 +60,28 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct, correctOptionId: msg.correctOptionId }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break
       case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore, correctOptionId: msg.correctOptionId }); break
-      case 'match_end':        dispatch({ type: 'MATCH_END',    yourScore: msg.yourScore, oppScore: msg.oppScore, result: msg.result }); break
-      case 'opp_disconnected': dispatch({ type: 'OPP_DISCONNECTED' }); break
+      case 'match_end': {
+        dispatch({ type: 'MATCH_END', yourScore: msg.yourScore, oppScore: msg.oppScore, result: msg.result })
+        recordDuelMatch({
+          opponentName: sRef.current.opponentName || 'Raqib',
+          opponentAvatar: sRef.current.opponentAvatar,
+          yourScore: msg.yourScore,
+          oppScore: msg.oppScore,
+          result: msg.result,
+        })
+        break
+      }
+      case 'opp_disconnected': {
+        dispatch({ type: 'OPP_DISCONNECTED' })
+        recordDuelMatch({
+          opponentName: sRef.current.opponentName || 'Raqib',
+          opponentAvatar: sRef.current.opponentAvatar,
+          yourScore: sRef.current.yourScore,
+          oppScore: sRef.current.oppScore,
+          result: 'win',
+        })
+        break
+      }
       case 'opp_waiting':      dispatch({ type: 'OPP_WAIT', waitSeconds: msg.waitSeconds }); break
       case 'opp_reconnected':  dispatch({ type: 'OPP_BACK' }); showToast(t(lang, 'duelOpponentBack')); break
       case 'reaction': {

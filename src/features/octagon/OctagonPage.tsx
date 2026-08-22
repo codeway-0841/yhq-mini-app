@@ -14,6 +14,7 @@ import { FloatingReactionsOverlay } from './components/FloatingReactionsOverlay'
 import { DuelReactionPicker } from './components/DuelReactionPicker'
 import { useOctagonClock }  from './hooks/useOctagonClock'
 import { useDuelConnection } from './hooks/useDuelConnection'
+import { cn } from '../../shared/lib/cn'
 
 export default function OctagonPage() {
   // Selector'li obuna — whole-store EMAS
@@ -53,10 +54,16 @@ export default function OctagonPage() {
         />
       )}
 
-      <div className="flex-1 flex flex-col items-center justify-center px-4">
+      <div className={cn('flex-1 flex flex-col px-4', s.phase === 'idle' ? 'pt-1' : 'items-center justify-center')}>
         {s.phase === 'idle' && (
-          <IdleScreen tt={tt} connFailed={conn === 'failed'}
-            onFind={() => joinQueue()} onDuelWithFriend={() => setIsRoomModalOpen(true)} />
+          <IdleScreen
+            tt={tt}
+            user={user}
+            language={settings.language}
+            connFailed={conn === 'failed'}
+            onFind={() => joinQueue()}
+            onJoinWithPin={(pin) => joinQueue(pin)}
+          />
         )}
 
         {s.phase === 'searching' && (

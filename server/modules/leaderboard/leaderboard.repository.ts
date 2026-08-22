@@ -157,6 +157,56 @@ export const leaderboardRepository = {
       avatarFrame:     r.avatarFrame ?? null,
     }))
   },
+
+  /** Duel (Oktagon) reytingi — progress.octagonWins bo'yicha eng kuchli g'oliblar */
+  async duelTop(
+    limit: number,
+    callerUserId: string | null,
+    timeframe: 'daily' | 'weekly' | 'monthly' | 'all' = 'all',
+  ): Promise<LeaderboardEntry[]> {
+    const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
+
+    let dateCond = sql`TRUE`
+    if (timeframe === 'daily') {
+      const today = todayTashkent()
+      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${today}::date`
+    } else if (timeframe === 'weekly') {
+      const weekStart = weekStartTashkent()
+      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${weekStart}::date`
+    } else if (timeframe === 'monthly') {
+      const monthStart = monthStartTashkent()
+      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${monthStart}::date`
+    }
+
+    const rows = await db
+      .select({
+        userId:          progress.userId,
+        firstName:       users.firstName,
+        lastName:        users.lastName,
+        photoUrl:        users.photoUrl,
+        hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:     users.avatarFrame,
+        streak:          progress.streak,
+        score:           progress.octagonWins,
+      })
+      .from(progress)
+      .innerJoin(users, eq(users.id, progress.userId))
+      .where(sql`${progress.octagonWins} > 0 AND ${dateCond}`)
+      .orderBy(desc(progress.octagonWins), desc(progress.totalCorrect))
+      .limit(safeLimit)
+
+    return rows.map((r, i) => ({
+      rank:   i + 1,
+      userId: r.userId,
+      name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score:  Number(r.score),
+      streak: Number(r.streak),
+      isYou:  callerUserId !== null && r.userId === callerUserId,
+      photoUrl:        r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame:     r.avatarFrame ?? null,
+    }))
+  },
   async topN(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
     // Clamp here as well — defense in depth in case router validation is bypassed
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
