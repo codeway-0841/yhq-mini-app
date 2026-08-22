@@ -80,26 +80,19 @@ export const coinsRepository = {
       ), dup AS (
         SELECT 1 FROM coin_transactions
         WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
-      ), ledger AS (
-        -- UNIQUE (user_id, reason, ref_id) insertion lock — parallel consumable va durable
-        -- xaridlarda xuddi shu purchaseId uchun FAQAT bitta tranzaksiya ledger row oladi.
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
-        WHERE EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          AND EXISTS (
-            SELECT 1 FROM user_coins
-            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
-          )
-        ON CONFLICT DO NOTHING
-        RETURNING id
       ), claim AS (
         -- 1) Durable egalik band qilish (unique) — parallel race'da faqat BITTA
         --    so'rov claim oladi; mag'lub claim'siz qoladi → debit'siz → 409.
         INSERT INTO user_items (user_id, item_id)
         SELECT ${userId}, ${item.id}
         WHERE (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM ledger)
+          AND EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
+          -- claim-only zoning ximoyasi: balans snapshot'da yetarli bo'lsin
+          AND EXISTS (
+            SELECT 1 FROM user_coins
+            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
+          )
         ON CONFLICT DO NOTHING
         RETURNING item_id
       ), debit AS (
@@ -108,12 +101,19 @@ export const coinsRepository = {
             updated_at = now()
         WHERE user_id = ${userId}
           AND balance >= (SELECT p FROM price)
-          AND EXISTS (SELECT 1 FROM ledger)
+          AND EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
           -- durable: FAQAT claim g'olibi; consumable: shartsiz (qayta xarid OK)
           AND (SELECT CASE WHEN (SELECT dur FROM price)
                            THEN EXISTS (SELECT 1 FROM claim)
                            ELSE true END)
         RETURNING balance
+      ), ledger AS (
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
+        WHERE EXISTS (SELECT 1 FROM debit)
+        ON CONFLICT DO NOTHING
+        RETURNING id
       ), grant_premium AS (
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now())

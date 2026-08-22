@@ -31,7 +31,8 @@ const USER_B = '990000004002'
 // yana 2 ta so'rov qo'shish CI'da (retry:2 + tarmoq kechikishi bilan) 429ga
 // olib kelgan edi.
 const USER_C = '990000004003'
-const IDS = [USER_A, USER_B, USER_C]
+const USER_D = '990000004004'
+const IDS = [USER_A, USER_B, USER_C, USER_D]
 
 async function cleanup() {
   for (const id of IDS) {
@@ -75,12 +76,14 @@ async function seedDaily(userId: string, answered: number, correct: number, fixe
 let tokenA: string
 let tokenB: string
 let tokenC: string
+let tokenD: string
 
 beforeAll(async () => {
   await cleanup()
   tokenA = await createUserWithSession(USER_A)
   tokenB = await createUserWithSession(USER_B)
   tokenC = await createUserWithSession(USER_C)
+  tokenD = await createUserWithSession(USER_D)
 })
 
 afterAll(cleanup)
@@ -245,16 +248,16 @@ describe('coins — mavsumiy drop guard', () => {
       .map((id) => getShopItem(id)!)
       .find((i) => isShopItemAvailable(i))
     if (!activeItem) return   // iyun kabi oynalar "orasidagi" sana — faqat yopiq branch tekshiriladi
-    // USER_B (uning ownedItems to'plami boshqa testlarda aniq assert qilinmaydi)
-    await setBalance(USER_B, 5000)
+    // USER_D ishlatiladi (USER_B'ning 10/min bucket'i to'lmasligi uchun)
+    await setBalance(USER_D, 5000)
     const res = await request(app).post('/api/coins/purchase')
-      .set('Authorization', `Bearer ${tokenB}`)
+      .set('Authorization', `Bearer ${tokenD}`)
       .send({ itemId: activeItem.id, purchaseId: randomBytes(16).toString('hex') })
       .expect(200)
     expect(res.body.ok).toBe(true)
     expect(res.body.durable).toBe(true)
-    expect(await getBalance(USER_B)).toBe(5000 - activeItem.price)
-    const state = await coinsRepository.getEconomyState(USER_B)
+    expect(await getBalance(USER_D)).toBe(5000 - activeItem.price)
+    const state = await coinsRepository.getEconomyState(USER_D)
     expect(state.ownedItems).toContain(activeItem.id)
   })
 })
