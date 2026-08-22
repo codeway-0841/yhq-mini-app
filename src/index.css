@@ -209,6 +209,13 @@ body[data-no-animation='true'] .route-page { animation: none; }
   pointer-events: none;
 }
 
+/* Skeleton sweep (ui/skeleton.tsx) — `prefers-reduced-motion` da motion-safe:
+   varianti orqali o'chadi, blok o'zi qoladi. */
+@keyframes kiwi-sweep {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
 /* Smooth scroll for question strip */
 .scroll-smooth-x {
   scroll-behavior: smooth;
