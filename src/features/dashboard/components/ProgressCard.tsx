@@ -1,8 +1,12 @@
-import { memo, useRef } from 'react'
-import { Flame, Star, Trophy } from 'lucide-react'
+import { memo, useRef, useState } from 'react'
+import { Flame, Star, Trophy, ChevronDown } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { useSubjectStore } from '../../../shared/store/useSubjectStore'
+import SubjectSheet from '../../../shared/components/SubjectSheet'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
+import { haptics } from '../../../platform/haptics'
+import { playSound } from '../../../shared/lib/sounds'
 import { cn } from '../../../shared/lib/cn'
 
 // ── Streak tugmasi (long-press = milestone demo preview) ────────────────────
@@ -66,6 +70,8 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const tt = useT(lang)
   const navigate = useNavigate()
   const total = totalPool > 0 ? totalPool : 0
+  const subject = useSubjectStore((s) => s.subject)
+  const [showSubjects, setShowSubjects] = useState(false)
 
   // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000/1000 = 100%
   const progressPct = total > 0
@@ -78,37 +84,69 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const shown = useCountUp(progressPct, 900)
 
   return (
-    <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-5">
-      {/* v3: halqa diagramma OLIB TASHLANDI — u yonidagi katta foiz raqamini
-          takrorlardi. Endi bitta ko'rsatkich: raqam + ingichka rail. */}
-      <p className="mb-1.5 text-[12px] font-medium text-psubtle">{tt('todayProgress')}</p>
-      <div className="flex items-baseline gap-2">
-        <span className="font-display text-[40px] font-semibold leading-none tracking-[-0.03em] tabular-nums text-pfg">
-          {shown}
-        </span>
-        <span className="font-display text-[20px] font-semibold text-pmuted">%</span>
-      </div>
+    <>
+      <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-5">
+        {/* Sarlavha qatori: Bugungi progress (chapda) va Fan tanlash toggle (o'ngda) */}
+        <div className="mb-1.5 flex items-center justify-between gap-2">
+          <p className="text-[12px] font-medium text-psubtle">{tt('todayProgress')}</p>
 
-      <div className="mt-4 flex items-center gap-3">
-        <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
-          <div
-            className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[700ms] ease-out"
-            style={{ width: `${shown}%` }}
-          />
+          {/* Fan tanlash toggle chipi */}
+          <button
+            type="button"
+            onClick={() => {
+              playSound('click')
+              haptics.impact('light')
+              setShowSubjects(true)
+            }}
+            className={cn(
+              'inline-flex h-7 items-center gap-1.5 rounded-control border px-2.5 text-[11.5px] font-semibold',
+              'transition-[background-color,border-color,transform] duration-[120ms] ease-out active:scale-[0.97]',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary'
+            )}
+            style={{
+              background: `${subject.color}14`,
+              borderColor: `${subject.color}38`,
+              color: subject.color,
+            }}
+            aria-label={tt('subjectSelect')}
+          >
+            <subject.icon size={13} strokeWidth={2} />
+            <span className="max-w-[120px] truncate">{subject.name}</span>
+            <ChevronDown size={12} strokeWidth={2} className="opacity-70" />
+          </button>
         </div>
-        <span className="shrink-0 text-[12px] font-semibold tabular-nums text-pmuted">
-          {totalAnswered} / {total || '…'}
-        </span>
+
+        <div className="flex items-baseline gap-2">
+          <span className="font-display text-[40px] font-semibold leading-none tracking-[-0.03em] tabular-nums text-pfg">
+            {shown}
+          </span>
+          <span className="font-display text-[20px] font-semibold text-pmuted">%</span>
+        </div>
+
+        <div className="mt-4 flex items-center gap-3">
+          <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
+            <div
+              className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[700ms] ease-out"
+              style={{ width: `${shown}%` }}
+            />
+          </div>
+          <span className="shrink-0 text-[12px] font-semibold tabular-nums text-pmuted">
+            {totalAnswered} / {total || '…'}
+          </span>
+        </div>
+
+        {/* Pastki statistika: Seriya / XP / Reyting */}
+        <div className="mt-5 grid grid-cols-3 gap-2 border-t border-pline pt-4">
+          {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
+          <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
+            tt={tt} ariaLabel={tt('intizomTitle')} />
+          <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/15 text-pgold" />
+          <StatItem icon={Trophy} value={league} label={tt('ratingWord')} iconBg="bg-pblue/15 text-pblue" />
+        </div>
       </div>
 
-      {/* Pastki statistika: Seriya / XP / Reyting */}
-      <div className="mt-5 grid grid-cols-3 gap-2 border-t border-pline pt-4">
-        {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
-        <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
-          tt={tt} ariaLabel={tt('intizomTitle')} />
-        <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/15 text-pgold" />
-        <StatItem icon={Trophy} value={league} label={tt('ratingWord')} iconBg="bg-pblue/15 text-pblue" />
-      </div>
-    </div>
+      {/* Fan tanlash modal oynasi */}
+      {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
+    </>
   )
 })
