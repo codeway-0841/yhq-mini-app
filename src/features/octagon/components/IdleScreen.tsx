@@ -14,6 +14,9 @@ interface IdleScreenProps {
   user: { id: string; firstName: string; photoUrl?: string } | null | undefined
   language: 'uz' | 'ru'
   connFailed: boolean
+  onlinePlayers?: LeaderboardEntry[]
+  onlineCount?: number
+  onRefreshOnline?: () => void
   onFind: () => void
   onJoinWithPin: (pin: string) => void
 }
@@ -65,15 +68,14 @@ export function IdleScreen({
   user,
   language,
   connFailed,
+  onlinePlayers = [],
+  onlineCount: propOnlineCount,
+  onRefreshOnline,
   onFind,
   onJoinWithPin,
 }: IdleScreenProps) {
   // Alohida navigatsiya (null = Hub, string = Subview)
   const [subview, setSubview] = useState<'battles' | 'leaderboard' | 'online' | 'invite' | null>(null)
-
-  // Online Real Users state
-  const [onlineRealUsers, setOnlineRealUsers] = useState<LeaderboardEntry[] | null>(null)
-  const [loadingOnline, setLoadingOnline] = useState(false)
 
   // Stats & History state
   const [serverWins, setServerWins] = useState<number>(0)
@@ -94,30 +96,16 @@ export function IdleScreen({
     }
   }, [user?.id])
 
-  // Haqiqiy JONLI online o'yinchilar ro'yxati (faqat ayni paytda ulanganlar)
+  // Subview online ochilganda WS yangilanish so'rash
   useEffect(() => {
-    let mounted = true
-    const fetchOnline = (isInitial = false) => {
-      if (isInitial) setLoadingOnline(true)
-      api.getOnlinePlayers(user?.id)
-        .then((data) => {
-          if (mounted) setOnlineRealUsers(data || [])
-        })
-        .catch(() => {
-          if (mounted) setOnlineRealUsers([])
-        })
-        .finally(() => {
-          if (mounted && isInitial) setLoadingOnline(false)
-        })
+    if (subview === 'online') {
+      onRefreshOnline?.()
     }
+  }, [subview, onRefreshOnline])
 
-    fetchOnline(true)
-    const interval = setInterval(() => fetchOnline(false), 5000)
-    return () => {
-      mounted = false
-      clearInterval(interval)
-    }
-  }, [user?.id])
+  // Haqiqiy JONLI online o'yinchilar (WebSocket serverdan real-time keladi)
+  const effectiveOnlineUsers = onlinePlayers
+  const effectiveOnlineCount = propOnlineCount !== undefined ? propOnlineCount : effectiveOnlineUsers.length
 
   // Calculated Stats (Faqat haqiqiy ko'rsatkichlar — hech qanday soxtalashtirishsiz)
   const historyWins = useMemo(() => history.filter((h) => h.result === 'win').length, [history])
@@ -273,17 +261,7 @@ export function IdleScreen({
         {/* 3. Online O'yinchilar Subview -> FAQAT HAQIQIY O'YINCHILAR (TABLE) */}
         {subview === 'online' && (
           <div className="space-y-3">
-            {loadingOnline ? (
-              <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline animate-pulse shadow-xs">
-                {Array.from({ length: 6 }, (_, i) => (
-                  <div key={i} className="flex items-center gap-3 px-4 py-3.5">
-                    <div className="size-8 rounded-full bg-psurface shrink-0" />
-                    <div className="h-3.5 flex-1 bg-psurface rounded" />
-                    <div className="h-7 w-24 bg-psurface rounded shrink-0" />
-                  </div>
-                ))}
-              </div>
-            ) : !onlineRealUsers || onlineRealUsers.length === 0 ? (
+            {effectiveOnlineUsers.length === 0 ? (
               <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs">
                 <Users size={32} className="mx-auto text-psubtle mb-2" />
                 <h4 className="text-sm font-bold text-pfg">{tt('onlinePlayersTitle')}</h4>
@@ -300,7 +278,7 @@ export function IdleScreen({
               </div>
             ) : (
               <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
-                {onlineRealUsers.map((player) => (
+                {effectiveOnlineUsers.map((player) => (
                   <div
                     key={player.userId}
                     className="flex items-center justify-between gap-3 px-4 py-3.5 hover:bg-psurface/40 transition-colors"
@@ -433,7 +411,7 @@ export function IdleScreen({
   }
 
   // ── ASOSIY HUB KO'RINISHI (Hero Banner + 2x2 Grid Menyu) ──
-  const onlineCount = onlineRealUsers ? onlineRealUsers.length : 0
+  const onlineCount = effectiveOnlineCount
 
   return (
     <div className="w-full max-w-md mx-auto space-y-4 pt-1">
@@ -454,9 +432,7 @@ export function IdleScreen({
             onlineCount > 0 ? "bg-psuccess animate-pulse" : "bg-psubtle"
           )} />
           <span>
-            {onlineRealUsers === null
-              ? (language === 'ru' ? 'Загрузка...' : 'Yuklanmoqda...')
-              : `${onlineCount} ${tt('onlinePlayersCount')}`}
+            {`${onlineCount} ${tt('onlinePlayersCount')}`}
           </span>
         </div>
 
@@ -512,9 +488,7 @@ export function IdleScreen({
               } :
               tKey === 'online' ? {
                 title: 'Online',
-                desc: onlineRealUsers === null
-                  ? (language === 'ru' ? 'Загрузка...' : 'Yuklanmoqda...')
-                  : `${onlineCount} ${language === 'ru' ? 'онлайн' : 'faol'}`,
+                desc: `${onlineCount} ${language === 'ru' ? 'онлайн' : 'faol'}`,
                 icon: Users,
                 color: 'text-psuccess bg-psuccess/10',
               } : {

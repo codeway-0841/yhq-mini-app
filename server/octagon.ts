@@ -229,6 +229,62 @@ export async function getOnlineUsers(callerUserId: string | null): Promise<Leade
   }
 }
 
+let onlineBroadcastTimer: NodeJS.Timeout | null = null
+
+/** Barcha ulangan mijozlarga real-time online o'yinchilar ro'yxatini yuborish (debounced) */
+export function triggerOnlineBroadcast(): void {
+  if (onlineBroadcastTimer) return
+  onlineBroadcastTimer = setTimeout(async () => {
+    onlineBroadcastTimer = null
+    const onlineUserIds = Array.from(connsByUser.keys()).filter((id) => AVATAR_UID_RE.test(id))
+    let playerRows: LeaderboardEntry[] = []
+
+    if (onlineUserIds.length > 0) {
+      try {
+        const rows = await db
+          .select({
+            id:              users.id,
+            firstName:       users.firstName,
+            lastName:        users.lastName,
+            photoUrl:        users.photoUrl,
+            hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+            avatarFrame:     users.avatarFrame,
+            streak:          sql<number>`COALESCE(${progress.streak}, 0)`,
+            score:           sql<number>`COALESCE(${progress.octagonWins}, 0)`,
+          })
+          .from(users)
+          .leftJoin(progress, eq(progress.userId, users.id))
+          .where(inArray(users.id, onlineUserIds))
+
+        playerRows = rows.map((r, i) => ({
+          rank: i + 1,
+          userId: r.id,
+          name: `${r.firstName} ${r.lastName ?? ''}`.trim(),
+          score: Number(r.score),
+          streak: Number(r.streak),
+          isYou: false,
+          photoUrl: r.photoUrl || null,
+          hasCustomAvatar: !!r.hasCustomAvatar,
+          avatarFrame: r.avatarFrame ?? null,
+        }))
+      } catch (err) {
+        console.error('[octagon] online broadcast DB error:', err)
+      }
+    }
+
+    for (const [uid, sockets] of connsByUser) {
+      const payload = {
+        type: 'online_players',
+        count: playerRows.length,
+        players: playerRows.map((p) => ({ ...p, isYou: p.userId === uid })),
+      }
+      for (const ws of sockets) {
+        send(ws, payload)
+      }
+    }
+  }, 250)
+}
+
 /** subjectId → savol havzasi (dataSourceId orqali); fallback — birinchi mavjud pool. */
 function poolForSubject(subjectId: string): QuestionPoolItem[] {
   const entry = resolveSubject(subjectId)
@@ -712,6 +768,7 @@ export function attachOctagon(
     for (const [uid, set] of connsByUser) {
       if (set.delete(ws) && set.size === 0) connsByUser.delete(uid)
     }
+    triggerOnlineBroadcast()
   }
 
   // ── Heartbeat: 2 davrda hech qanday jonlilik belgisi (pong/message)
@@ -765,6 +822,7 @@ export function attachOctagon(
         state.authed = true
         clearTimeout(authTimer)
       }
+      triggerOnlineBroadcast()
       return true
     }
 
@@ -786,6 +844,19 @@ export function attachOctagon(
 
       if (msg.type === 'ping') {
         send(ws, { type: 'pong' })
+        return
+      }
+
+      if (msg.type === 'get_online') {
+        void (async () => {
+          const uid = state.userId
+          const onlineList = await getOnlineUsers(uid)
+          send(ws, {
+            type: 'online_players',
+            count: onlineList.length,
+            players: onlineList,
+          })
+        })()
         return
       }
 

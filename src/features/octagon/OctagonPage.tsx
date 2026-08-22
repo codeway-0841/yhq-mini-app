@@ -26,6 +26,7 @@ export default function OctagonPage() {
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
 
   const { state: s, conn, duelCode, duelLink,
+          onlinePlayers, onlineCount, refreshOnline,
           floatingReactions, opponentPhrase, yourPhrase, isMuted,
           joinQueue, cancelSearch, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle } =
     useDuelConnection(user)
@@ -61,6 +62,9 @@ export default function OctagonPage() {
             user={user}
             language={settings.language}
             connFailed={conn === 'failed'}
+            onlinePlayers={onlinePlayers}
+            onlineCount={onlineCount}
+            onRefreshOnline={refreshOnline}
             onFind={() => joinQueue()}
             onJoinWithPin={(pin) => joinQueue(pin)}
           />

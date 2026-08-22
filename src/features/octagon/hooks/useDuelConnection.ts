@@ -15,6 +15,7 @@ import { getInitData }    from '../../../platform/telegram'
 import { getSessionToken } from '../../../shared/lib/session'
 import { duelReducer, DUEL_INIT } from '../duel-reducer'
 import { recordDuelMatch } from '../duel-history'
+import type { LeaderboardEntry } from '../../../shared/api'
 
 import { ActiveReaction } from '../components/FloatingReactionsOverlay'
 
@@ -36,6 +37,10 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   sRef.current = s
   const [conn, setConn] = useState<ConnStatus>('connecting')
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // Real-time live online players state (directly from WebSocket server)
+  const [onlinePlayers, setOnlinePlayers] = useState<LeaderboardEntry[]>([])
+  const [onlineCount, setOnlineCount] = useState<number>(0)
 
   // Live Emotes & Taunts state
   const [floatingReactions, setFloatingReactions] = useState<ActiveReaction[]>([])
@@ -118,6 +123,10 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
         }
         break
       }
+      case 'online_players':
+        setOnlinePlayers(msg.players)
+        setOnlineCount(msg.count)
+        break
       case 'match_state':
         dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
                    timeLimit: msg.timeLimit,
@@ -159,6 +168,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       try {
         // Authenticate immediately upon connection so player is tracked as online
         sock.send({ type: 'auth', userId: u.id, name: u.firstName, ...auth })
+        sock.send({ type: 'get_online' })
 
         // Server drops the queue entry when the old socket dies — rejoin silently.
         if (phaseRef.current === 'searching') {
@@ -322,8 +332,14 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
 
   const toggleMute = useCallback(() => setIsMuted((m) => !m), [])
 
+  const refreshOnline = useCallback(() => {
+    try { getOctagonSocket(config.wsUrl).send({ type: 'get_online' }) }
+    catch { /* socket error */ }
+  }, [])
+
   return {
     state: s, conn, duelCode, duelLink,
+    onlinePlayers, onlineCount, refreshOnline,
     floatingReactions, opponentPhrase, yourPhrase, isMuted,
     joinQueue, startDuel, cancelSearch, leaveQueue, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle,
   }

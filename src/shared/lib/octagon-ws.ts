@@ -1,6 +1,4 @@
-/**
- * Octagon WebSocket client — reconnect, typed protocol, React-friendly emitter.
- */
+import type { LeaderboardEntry } from '../api'
 
 export type OctagonMsg =
   /** opponentAvatar: '/api/avatar/:uid' (custom) | TG photo_url | null;
@@ -18,6 +16,7 @@ export type OctagonMsg =
       opponentName: string; yourAnswer: string | null; oppAnswered: boolean
       correctOptionId: string | null }
   | { type: 'reaction'; senderId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
+  | { type: 'online_players'; players: LeaderboardEntry[]; count: number }
   | { type: 'opp_disconnected' }
   | { type: 'pong' }
   | { type: 'error'; message: string }
@@ -25,6 +24,7 @@ export type OctagonMsg =
 export type OctagonSend =
   | { type: 'ping' }
   | { type: 'auth';        userId: string; name: string; initData?: string; sessionToken?: string }
+  | { type: 'get_online' }
   | { type: 'join_queue';  userId: string; name: string; subjectId?: string; duelCode?: string; initData?: string; sessionToken?: string }
   | { type: 'rejoin';      matchId: string; userId: string; name: string; initData?: string; sessionToken?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }
