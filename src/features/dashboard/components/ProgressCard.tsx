@@ -3,6 +3,7 @@ import { Flame, Star, Trophy } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
+import { cn } from '../../../shared/lib/cn'
 
 // ── Streak tugmasi (long-press = milestone demo preview) ────────────────────
 const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, tt, ariaLabel }: {
@@ -22,17 +23,36 @@ const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, t
         if (onLongPress) timer.current = setTimeout(() => { fired.current = true; onLongPress() }, 700)
       }}
       onPointerUp={cancel} onPointerLeave={cancel}
-      className="flex items-center gap-2 active:scale-95 transition-transform">
-      <Flame size={16} className="text-pwarning" fill="currentColor" />
+      className={cn(
+        'flex items-center gap-2 rounded-control px-1 py-0.5',
+        'transition-transform duration-[120ms] ease-out active:scale-[0.98]',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
+      )}>
+      <Flame size={16} strokeWidth={1.75} className="text-pwarning" />
       <div className="text-left">
-        <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{streak} {tt('daysWord')}</p>
-        <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('streakDays')}</p>
+        <p className="text-[13px] font-semibold leading-none tabular-nums text-pfg">{streak} {tt('daysWord')}</p>
+        <p className="mt-0.5 text-[10px] font-medium text-psubtle">{tt('streakDays')}</p>
       </div>
     </button>
   )
 })
 
-// ── Hero: umumiy progress (ring + test bazasi foizi) ─────────────────────────
+/** Pastki statistika ustuni — Seriya / XP / Reyting bir xil shaklda. */
+function StatItem({ icon: Icon, value, label, tone }: {
+  icon: typeof Star; value: string; label: string; tone?: string
+}) {
+  return (
+    <div className="flex items-center gap-2">
+      <Icon size={16} strokeWidth={1.75} className={tone ?? 'text-psubtle'} />
+      <div className="text-left">
+        <p className="text-[13px] font-semibold leading-none tabular-nums text-pfg">{value}</p>
+        <p className="mt-0.5 text-[10px] font-medium text-psubtle">{label}</p>
+      </div>
+    </div>
+  )
+}
+
+// ── Hero: umumiy progress ───────────────────────────────────────────────────
 export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang, onStreakPreview }: {
   totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
@@ -43,7 +63,7 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const navigate = useNavigate()
   const total = totalPool > 0 ? totalPool : 0
 
-  // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000 ta / 1000 ta = 100%
+  // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000/1000 = 100%
   const progressPct = total > 0
     ? (totalAnswered === 0 ? 0 : Math.min(100, Math.max(1, Math.round((totalAnswered / total) * 100))))
     : 0
@@ -53,50 +73,37 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
   const shown = useCountUp(progressPct, 900)
 
-  // Ring chart geometriyasi (SVG)
-  const R = 36, C = 2 * Math.PI * R
-  const ringOffset = C * (1 - shown / 100)
-
   return (
-    <div className="mx-5 mb-4 card-premium rounded-[28px] p-5 relative overflow-hidden">
-      <div className="flex items-center justify-between gap-4">
-        {/* Chap: foiz + ma'lumot */}
-        <div className="flex-1 min-w-0">
-          <p className="text-[12px] font-medium text-psubtle mb-1.5">{tt('todayProgress')}</p>
-          <p className="text-[36px] font-bold text-pfg leading-none tracking-tight tabular-nums">{shown}%</p>
-          <p className="text-[12px] font-medium text-pmuted mt-2">
-            {totalAnswered} / {total || '…'} {tt('question').toLowerCase()}
-          </p>
-        </div>
-        {/* O'ng: ring chart (aksent rang) */}
-        <svg width="96" height="96" viewBox="0 0 96 96" className="flex-shrink-0">
-          <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-line)" strokeWidth="8" />
-          <circle cx="48" cy="48" r={R} fill="none" stroke="var(--p-primary)" strokeWidth="8"
-            strokeLinecap="round" strokeDasharray={C} strokeDashoffset={ringOffset}
-            transform="rotate(-90 48 48)"
-            style={{ transition: 'stroke-dashoffset 700ms ease-out' }} />
-          <text x="48" y="53" textAnchor="middle" fill="var(--p-fg)" fontSize="17" fontWeight="700">{shown}%</text>
-        </svg>
+    <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-5">
+      {/* v3: halqa diagramma OLIB TASHLANDI — u yonidagi katta foiz raqamini
+          takrorlardi. Endi bitta ko'rsatkich: raqam + ingichka rail. */}
+      <p className="mb-1.5 text-[12px] font-medium text-psubtle">{tt('todayProgress')}</p>
+      <div className="flex items-baseline gap-2">
+        <span className="font-display text-[40px] font-semibold leading-none tracking-[-0.03em] tabular-nums text-pfg">
+          {shown}
+        </span>
+        <span className="font-display text-[20px] font-semibold text-pmuted">%</span>
       </div>
+
+      <div className="mt-4 flex items-center gap-3">
+        <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
+          <div
+            className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[700ms] ease-out"
+            style={{ width: `${shown}%` }}
+          />
+        </div>
+        <span className="shrink-0 text-[12px] font-semibold tabular-nums text-pmuted">
+          {totalAnswered} / {total || '…'}
+        </span>
+      </div>
+
       {/* Pastki statistika: Seriya / XP / Reyting */}
-      <div className="flex items-center justify-around mt-5 pt-4 border-t border-pline">
+      <div className="mt-5 flex items-center justify-between gap-3 border-t border-pline pt-4">
         {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
         <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
           tt={tt} ariaLabel={tt('intizomTitle')} />
-        <div className="flex items-center gap-2">
-          <Star size={16} className="text-pgold" fill="currentColor" />
-          <div className="text-left">
-            <p className="text-[13px] font-semibold text-pfg leading-none tabular-nums">{xp} XP</p>
-            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('totalXp')}</p>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <Trophy size={16} className="text-psubtle" />
-          <div className="text-left">
-            <p className="text-[13px] font-semibold text-pfg leading-none">{league}</p>
-            <p className="text-[10px] font-medium text-psubtle mt-0.5">{tt('ratingWord')}</p>
-          </div>
-        </div>
+        <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} tone="text-pgold" />
+        <StatItem icon={Trophy} value={league} label={tt('ratingWord')} />
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import { memo, useRef, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Zap, Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
 import { type Lang, useT } from '../../../shared/i18n'
+import { cn } from '../../../shared/lib/cn'
 
 // ── Slide config — har slayd o'z route/action'iga o'tadi ────────────────────
 // Rang intizomi (v2.1): semantik tokenlar — aksent (davom), warning (kunlik),
@@ -66,54 +67,56 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
   const Icon = config.icon
   const tt = useT(lang)
 
+  // A11y: ilgari `role="button"` div ICHIDA yana `<button>` bor edi (ichma-ich
+  // interaktiv element) — screen reader ikkita nishonni e'lon qilardi va Tab
+  // tartibi chalkash edi. Endi butun slayd BITTA <button>, CTA esa vizual span.
   return (
-    <div
+    <button
+      type="button"
       onClick={onOpen}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen() } }}
-      className="w-full h-full card-premium p-4 flex items-center gap-3.5 cursor-pointer select-none active:scale-[0.99] transition-transform"
+      className={cn(
+        'flex size-full items-center gap-3.5 rounded-container border border-pline bg-pcard p-4 text-left',
+        'select-none transition-[transform,border-color] duration-[120ms] ease-out',
+        'hover:border-plineStrong active:scale-[0.99]',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
+      )}
     >
       {/* Icon tile */}
       <div
-        className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
+        className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px]"
         style={{
-          background: `color-mix(in srgb, ${config.color} 12%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${config.color} 30%, transparent)`,
+          background: `color-mix(in srgb, ${config.color} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${config.color} 20%, transparent)`,
         }}
       >
-        <Icon size={19} style={{ color: config.color }} />
+        <Icon size={19} strokeWidth={1.75} style={{ color: config.color }} />
       </div>
 
       {/* Title + subtitle/progress */}
-      <div className="flex-1 min-w-0">
-        <p className="text-[13px] font-bold text-pfg truncate">{config.title(lang)}</p>
+      <div className="min-w-0 flex-1">
+        <p className="truncate text-[13px] font-semibold text-pfg">{config.title(lang)}</p>
         {config.useOnContinue ? (
           <>
-            <p className="text-[11px] font-medium text-psubtle mt-0.5 tabular-nums truncate">
+            <p className="mt-0.5 truncate text-[11px] tabular-nums text-psubtle">
               {lessonLabel ?? config.subtitle(lang)}
             </p>
-            <div className="h-1.5 rounded-full bg-pline overflow-hidden mt-1.5">
+            <div className="mt-2 h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
               <div
-                className="h-full rounded-full transition-all duration-500"
+                className="h-full rounded-[2px] transition-[width] duration-[400ms] ease-out"
                 style={{ width: `${Math.max(progressPct, 3)}%`, background: config.color }}
               />
             </div>
           </>
         ) : (
-          <p className="text-[11px] font-medium text-psubtle mt-0.5 truncate">{config.subtitle(lang)}</p>
+          <p className="mt-0.5 truncate text-[11px] text-psubtle">{config.subtitle(lang)}</p>
         )}
       </div>
 
-      {/* CTA button — 1ga 1 Premium banner o'lchami */}
-      <button
-        type="button"
-        className="btn-neon px-4 py-2.5 rounded-xl text-[12px] font-extrabold flex-shrink-0"
-        onClick={(e) => { e.stopPropagation(); onOpen() }}
-      >
+      {/* CTA — vizual element (butun karta allaqachon bosiladi) */}
+      <span className="inline-flex h-[34px] flex-shrink-0 items-center rounded-control bg-pprimary px-3 text-[12.5px] font-semibold text-ponprimary">
         {config.useOnContinue ? tt('continueLearn') : tt('startWord')}
-      </button>
-    </div>
+      </span>
+    </button>
   )
 })
 
@@ -171,7 +174,7 @@ export const Carousel = memo(function Carousel({ lang, progressPct, lessonLabel,
   }, [])
 
   return (
-    <div className="mb-3.5">
+    <div className="mb-6">
       <div ref={trackRef}
         className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-smooth-x px-5 pb-1 touch-pan-x select-none [&::-webkit-scrollbar]:hidden"
         style={{ scrollbarWidth: 'none', WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' as const }}>

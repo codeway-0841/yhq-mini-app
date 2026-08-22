@@ -1,9 +1,10 @@
 import { memo, useEffect, useState } from 'react'
-import { ChevronDown, Sparkles } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { useT } from '../../../shared/i18n'
+import { Button } from '../../../shared/components/ui/button'
 
 // ── Subject Switcher — fan nomi + testlar soni + almashtirish ──────────────
 // Fan rasmlari: `public/fan-{subjectId}.webp` (masalan, fan-matematika.webp) —
@@ -18,8 +19,8 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
   useEffect(() => setImgOk(true), [subject.id]) // fan almashganda qayta urinib ko'rish
   const imgUrl = `/fan-${subject.id}.webp`
   return (
-    <div className="px-5 mb-3">
-      <div className="card-premium relative overflow-hidden p-5 pr-[118px] sm:pr-[132px]">
+    <div className="mb-6 px-5">
+      <div className="relative overflow-hidden rounded-container border border-pline bg-pcard p-5 pr-[118px] sm:pr-[132px]">
         {/* O'ng taraf: fan rasmi — karta ichida sig'adi, matnni bosmaydi */}
         {imgOk && (
           <img src={imgUrl} alt="" aria-hidden
@@ -33,18 +34,22 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
             style={{ color: subject.color }} />
         )}
         <div className="relative min-w-0">
-          <p className="text-[18px] sm:text-[20px] font-bold text-pfg tracking-tight leading-[1.15] line-clamp-2 break-words">
+          <p className="line-clamp-2 break-words font-display text-[19px] font-semibold leading-[1.15] tracking-[-0.02em] text-pfg sm:text-[21px]">
             {lang === 'ru' ? subject.nameRu : subject.name}
           </p>
           <p className="text-[12px] font-medium text-psubtle mt-1">
             {count > 0 ? count.toLocaleString('en-US') : '…'} {tt('testsWord')}
           </p>
-          <button onClick={onOpen}
-            className="btn-premium-secondary mt-3.5 rounded-full px-4 py-2 text-[12px]"
-            aria-label={tt('switchSubject')}>
+          <Button
+            variant="secondary"
+            size="sm"
+            onClick={onOpen}
+            className="mt-3.5"
+            aria-label={tt('switchSubject')}
+          >
             {tt('switchSubject')}
-            <ChevronDown size={14} className="-rotate-90 text-psubtle" />
-          </button>
+            <ChevronRight strokeWidth={1.75} className="text-psubtle" />
+          </Button>
         </div>
       </div>
     </div>
@@ -57,24 +62,28 @@ export const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch:
   const lang    = useAppStore((s) => s.settings.language)
   const Icon    = subject.icon
   return (
-    <div className="mx-5 mt-6 rounded-[28px] border border-dashed border-pline p-8 flex flex-col items-center text-center">
-      <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-4"
-        style={{ background: `${subject.color}1A`, border: `1px solid ${subject.color}2E`, color: subject.color }}>
-        <Icon size={32} />
+    <div className="mx-5 mt-6 flex flex-col items-center rounded-container border border-dashed border-plineStrong p-8 text-center">
+      <div
+        className="mb-4 flex size-14 items-center justify-center rounded-[14px]"
+        style={{
+          background: `color-mix(in srgb, ${subject.color} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${subject.color} 20%, transparent)`,
+          color: subject.color,
+        }}
+      >
+        <Icon size={26} strokeWidth={1.75} />
       </div>
-      <h3 className="text-[17px] font-bold text-pfg tracking-tight">
+      <h3 className="font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg">
         {lang === 'ru' ? subject.nameRu : subject.name}
       </h3>
-      <p className="text-[13px] font-medium text-psubtle mt-1.5 max-w-[240px]">
+      <p className="mt-1.5 max-w-[240px] text-[13px] text-pmuted">
         {lang === 'ru'
           ? 'Этот предмет скоро будет доступен. Следите за обновлениями!'
           : "Bu fan tez kunda qo'shiladi. Yangilanishlarni kuzatib boring!"}
       </p>
-      <button onClick={onSwitch}
-        className="btn-premium btn-premium-sm mt-5">
-        <Sparkles size={16} />
+      <Button onClick={onSwitch} size="sm" className="mt-5">
         {lang === 'ru' ? 'Выбрать другой предмет' : 'Boshqa fan tanlash'}
-      </button>
+      </Button>
     </div>
   )
 })

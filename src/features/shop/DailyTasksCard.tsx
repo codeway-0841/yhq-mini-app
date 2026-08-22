@@ -10,13 +10,15 @@
  * Claim: api.claimCoinTask → store balansi SERVER javobidan.
  */
 import { useCallback, useEffect, useState } from 'react'
-import { Check, Coins, ClipboardCheck, Loader2 } from 'lucide-react'
+import { Check, Coins, ClipboardCheck } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError, type CoinTaskState } from '../../shared/api'
 import { DAILY_TASKS } from '../../../shared/daily-tasks'
 import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
+import { Skeleton } from '../../shared/components/ui/skeleton'
+import { cn } from '../../shared/lib/cn'
 
 export default function DailyTasksCard() {
   const lang     = useAppStore((s) => s.settings.language)
@@ -57,16 +59,26 @@ export default function DailyTasksCard() {
   }
 
   // Yuklanmoqda/xato — sahifa paypoqni buzmaslik uchun ixcham qaytamiz
-  if (tasks === null) return error ? null : <div className="mx-5 mb-4 h-[88px] card-premium animate-pulse" />
+  if (tasks === null) {
+    return error ? null : (
+      <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-4">
+        <Skeleton className="mb-3 h-2.5 w-28" />
+        <div className="space-y-3">
+          <Skeleton className="h-3 w-full" />
+          <Skeleton className="h-3 w-4/5" />
+        </div>
+      </div>
+    )
+  }
 
   const visible = tasks.filter((t) => DAILY_TASKS.some((d) => d.id === t.id))
   if (visible.length === 0) return null
 
   return (
-    <div className="mx-5 mb-4 card-premium p-4">
+    <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-4">
       {celebrate && <Confetti count={32} />}
-      <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5 mb-3">
-        <ClipboardCheck size={11} /> {tt('dailyTasksTitle')}
+      <p className="mb-3 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">
+        <ClipboardCheck size={11} strokeWidth={1.75} /> {tt('dailyTasksTitle')}
       </p>
       <div className="flex flex-col gap-2.5">
         {visible.map((task) => {
@@ -76,12 +88,12 @@ export default function DailyTasksCard() {
             <div key={task.id} className="flex items-center gap-3">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between gap-2 mb-1">
-                  <p className="text-[12px] font-bold text-pfg truncate">{def.label[lang]}</p>
-                  <span className="text-[10.5px] font-semibold text-psubtle flex-none">{task.progress}/{task.target}</span>
+                  <p className="truncate text-[12px] font-semibold text-pfg">{def.label[lang]}</p>
+                  <span className="flex-none text-[10.5px] font-semibold tabular-nums text-psubtle">{task.progress}/{task.target}</span>
                 </div>
-                <div className="h-1.5 rounded-full bg-psurface overflow-hidden">
+                <div className="h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
                   <div
-                    className="h-full rounded-full transition-all duration-500"
+                    className="h-full rounded-[2px] transition-[width] duration-[400ms] ease-out"
                     style={{
                       width: `${pct}%`,
                       background: task.completed ? 'var(--p-success)' : 'var(--p-primary)',
@@ -91,26 +103,27 @@ export default function DailyTasksCard() {
               </div>
               <div className="flex-none w-[74px]">
                 {task.claimed ? (
-                  <span className="flex items-center justify-center gap-1 text-[11px] font-black text-psuccess py-1.5">
-                    <Check size={13} /> {tt('taskClaimed')}
+                  <span className="flex items-center justify-center gap-1 py-1.5 text-[11px] font-semibold text-psuccess">
+                    <Check size={13} strokeWidth={1.75} /> {tt('taskClaimed')}
                   </span>
                 ) : task.completed ? (
                   <button
                     onClick={() => claim(task.id)}
                     disabled={busy !== null}
-                    className="w-full flex items-center justify-center gap-1 text-[11px] font-black text-pgold py-1.5 rounded-xl active:scale-[0.96] transition-transform disabled:opacity-60"
-                    style={{
-                      background: 'rgb(var(--p-gold-rgb) / 0.16)',
-                      border: '1px solid rgb(var(--p-gold-rgb) / 0.5)',
-                      boxShadow: '0 0 14px rgb(var(--p-gold-rgb) / 0.25)',
-                    }}>
+                    className={cn(
+                      'flex h-[34px] w-full items-center justify-center gap-1 rounded-control text-[11px] font-semibold text-pgold',
+                      'border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)]',
+                      'transition-transform duration-[120ms] ease-out active:scale-[0.98]',
+                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
+                      'disabled:pointer-events-none disabled:opacity-40',
+                    )}>
                     {busy === task.id
-                      ? <Loader2 size={12} className="animate-spin" />
-                      : <><Coins size={11} fill="currentColor" /> {tt('taskClaim')} +{task.reward}</>}
+                      ? <span aria-hidden="true" className="size-3 rounded-full border-2 border-current border-t-transparent motion-safe:animate-spin" />
+                      : <><Coins size={11} strokeWidth={1.75} /> {tt('taskClaim')} +{task.reward}</>}
                   </button>
                 ) : (
-                  <span className="flex items-center justify-center gap-1 text-[11px] font-bold text-psubtle py-1.5">
-                    <Coins size={11} /> +{task.reward}
+                  <span className="flex items-center justify-center gap-1 py-1.5 text-[11px] font-medium tabular-nums text-psubtle">
+                    <Coins size={11} strokeWidth={1.75} /> +{task.reward}
                   </span>
                 )}
               </div>
