@@ -14,6 +14,8 @@
 import { and, asc, eq, sql } from 'drizzle-orm'
 import { db, executeRows }         from '../../db/connection'
 import { dailyRecords, dailyStreaks, users } from '../../schema'
+import { coinSaveEligibleSql, streakValueSql } from './streak-save-sql'
+import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
 export function prevDate(date: string): string {
@@ -137,19 +139,14 @@ export const dailyRepository = {
     subjectId: string,
     answeredDelta = 0,
     correctDelta  = 0,
-  ): Promise<{ dailyStreak: number }> {
+  ): Promise<{ dailyStreak: number; coinSaved: boolean }> {
     // Record counters va streak bitta PostgreSQL statement ichida atomik yangilanadi.
     // ON CONFLICT mavjud row qiymatidan hisoblaydi: parallel request lost-update
     // qilmaydi, eski/out-of-order sana esa last_daily_date'ni orqaga qaytarmaydi.
-    const rows = await executeRows<{ daily_streak: number }>(sql`
-      WITH entitlement AS (
-        SELECT (
-          tariff = 'premium'
-          OR (premium_until IS NOT NULL AND premium_until > now())
-        ) AS premium
-        FROM users
-        WHERE id = ${userId}
-      ), record_upsert AS (
+    const ctx = { userId, subjectId, date }
+    const eligible = coinSaveEligibleSql(ctx)
+    const rows = await executeRows<{ daily_streak: number; coin_saved: boolean }>(sql`
+      WITH record_upsert AS (
         INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
         VALUES (${userId}, ${date}, ${subjectId}, ${answeredDelta}, ${correctDelta}, 0)
         ON CONFLICT (user_id, date, subject_id) DO UPDATE SET
@@ -157,29 +154,39 @@ export const dailyRepository = {
           correct = daily_records.correct + EXCLUDED.correct
         RETURNING id
       ), streak_upsert AS (
+        -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
+        -- progress.repository.recordAnswer bilan BITTA manba.
         INSERT INTO daily_streaks (user_id, subject_id, streak, last_daily_date, updated_at)
         VALUES (${userId}, ${subjectId}, 1, ${date}, now())
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = CASE
-            WHEN daily_streaks.last_daily_date >= EXCLUDED.last_daily_date
-              THEN daily_streaks.streak
-            WHEN daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 1, 'YYYY-MM-DD')
-              THEN daily_streaks.streak + 1
-            WHEN COALESCE((SELECT premium FROM entitlement), false)
-              AND daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 2, 'YYYY-MM-DD')
-              THEN daily_streaks.streak + 1
-            ELSE 1
-          END,
+          streak = ${streakValueSql(ctx, eligible)},
           last_daily_date = GREATEST(daily_streaks.last_daily_date, EXCLUDED.last_daily_date),
           updated_at = now()
-        RETURNING streak
+        RETURNING streak, ${eligible} AS saved
+      ), save_ledger AS (
+        -- Idempotentlik gate'i: kuniga BITTA streak_save. Debit shu CTE
+        -- natijasiga bog'langani uchun o'sha kundagi keyingi faolliklar
+        -- coin'ni qayta yechmaydi (ON CONFLICT DO NOTHING → qator yo'q).
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
+        WHERE (SELECT saved FROM streak_upsert)
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING id
+      ), coin_debit AS (
+        UPDATE user_coins SET
+          balance = balance - ${STREAK_SAVE_COST}::int,
+          updated_at = now()
+        WHERE user_id = ${userId} AND EXISTS (SELECT 1 FROM save_ledger)
+        RETURNING balance
       )
-      SELECT streak AS daily_streak FROM streak_upsert
+      SELECT
+        (SELECT streak FROM streak_upsert)::int AS daily_streak,
+        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved
     `)
 
     const value = Number(rows[0]?.daily_streak)
     if (!Number.isFinite(value)) throw new Error('Daily streak upsert returned no value')
-    return { dailyStreak: value }
+    return { dailyStreak: value, coinSaved: rows[0]?.coin_saved === true }
   },
 
   /**
