@@ -24,6 +24,7 @@ export type OctagonMsg =
 
 export type OctagonSend =
   | { type: 'ping' }
+  | { type: 'auth';        userId: string; name: string; initData?: string; sessionToken?: string }
   | { type: 'join_queue';  userId: string; name: string; subjectId?: string; duelCode?: string; initData?: string; sessionToken?: string }
   | { type: 'rejoin';      matchId: string; userId: string; name: string; initData?: string; sessionToken?: string }
   | { type: 'answer';      matchId: string; index: number; optionId: string }

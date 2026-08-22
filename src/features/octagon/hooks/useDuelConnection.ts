@@ -157,6 +157,9 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       if (st !== 'open' || !u) return
       const auth = wsAuthFields()
       try {
+        // Authenticate immediately upon connection so player is tracked as online
+        sock.send({ type: 'auth', userId: u.id, name: u.firstName, ...auth })
+
         // Server drops the queue entry when the old socket dies — rejoin silently.
         if (phaseRef.current === 'searching') {
           sock.send({ type: 'join_queue', userId: u.id, name: u.firstName, subjectId: subjectRef.current, ...(duelCodeRef.current ? { duelCode: duelCodeRef.current } : {}), ...auth })

@@ -68,6 +68,7 @@ export function duelReducer(s: DuelState, a: DuelAction): DuelState {
                                       roundCount: a.roundCount, roundIndex: a.index, currentQuestionId: a.questionId,
                                       yourScore: a.yourScore, oppScore: a.oppScore,
                                       selected: a.yourAnswer, oppAnswered: a.oppAnswered,
+                                      ackCorrect: a.yourAnswer != null && a.correctOptionId != null ? a.yourAnswer === a.correctOptionId : null,
                                       ackCorrectOptionId: a.correctOptionId,
                                       oppWait: s.oppWait,  // Preserve disconnect timer across rejoin
                                       deadline: Date.now() + a.timeLimit }

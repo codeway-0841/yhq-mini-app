@@ -75,10 +75,17 @@ yechish) — qo'lda ikki joyda sinxronlashtirish xato xavfini oshiradi.
 funksiyalari (drizzle `sql` composability — real DB'da tekshirilgan, ishlaydi):
 
 ```ts
-export function streakCaseSql(entitlementAlias: string): SQL   // streak qiymati CASE
-export function coinDebitCaseSql(entitlementAlias: string): SQL // user_coins.balance dan yechish sharti/miqdori
-export function coinSavedFlagSql(entitlementAlias: string): SQL // RETURNING uchun: shu safar coin yechildimi (bool)
+/** Shu chaqiruvda coin-save SHARTI bajarilganmi (gapDays + premium + balans) — boolean SQL */
+export function coinSaveEligibleSql(userId: string, subjectId: string, date: string): SQL
+/** streak yangi qiymati CASE (coin-save hisobga olingan) */
+export function streakCaseSql(eligibleRef: SQL): SQL
 ```
+
+`coinSaveEligibleSql` `daily_streaks` mavjud qatorini, `entitlement`
+(premium) va `user_coins.balance >= STREAK_SAVE_COST`ni bitta ifodada
+tekshiradi. Ikkala repository shu bitta natijani (CTE alias sifatida) ham
+streak CASE'ida, ham coin delta hisobida, ham ledger shartida ishlatadi —
+uchala joyda bir xil qaror kafolatlanadi.
 
 Har ikkala repository o'z CTE zanjiriga shu fragmentlarni interpolatsiya qiladi;
 o'zining mavjud `entitlement` CTE'sidan (`premium` boolean) foydalanadi.
@@ -94,6 +101,28 @@ bo'lishidan qat'iy nazar bitta. Shu tufayli bir kunda bir necha marta
 `touchActivity`/`recordAnswer` chaqirilsa ham (masalan bir nechta savol
 javobi) — coin FAQAT bitta marta yechiladi (`ON CONFLICT (user_id, reason,
 ref_id) DO NOTHING`, mavjud naqsh bilan bir xil).
+
+**KRITIK CHEKLOV — bitta qatorga ikkita CTE yozuvi (real DB'da tekshirilgan):**
+Postgres'da BITTA statement ichida bir xil qatorni ikkita alohida CTE
+yangilasa, **faqat bittasi qo'llanadi** — ikkinchisi JIMGINA yo'qoladi
+(xato berilmaydi). Tajriba: `balance=100`, `mint AS (UPDATE ... +1)` va
+`debit AS (UPDATE ... -50)` → yakuniy saqlangan qiymat **50** (mint
+yo'qolgan), `100+1-50=51` EMAS.
+
+Bu `progress.repository.ts` → `recordAnswer`ga bevosita tegadi: u yerda
+allaqachon `coin_award` CTE bor (to'g'ri javob uchun `+COINS_PER_CORRECT_ANSWER`
+`user_coins`ga yozadi). Streak-save uchun ALOHIDA debit CTE qo'shib
+bo'lmaydi — coin mint jimgina yo'qolardi (haqiqiy balans bug'i).
+
+**Yechim (tekshirilgan, ishlaydi):** `user_coins`ga BITTA yozuv, NET delta
+bilan — `+COINS_PER_CORRECT_ANSWER (agar mint sharti bajarilsa) - STREAK_SAVE_COST
+(agar save sharti bajarilsa)`. Tajriba: bitta CTE'da `balance + 1 - 50` →
+**51**, to'g'ri. `coin_transactions` ledgerga esa IKKITA alohida qator
+yoziladi (`reason='answer'` va `reason='streak_save'`) — ledger boshqa
+jadval, konflikt yo'q, audit izi to'liq saqlanadi.
+
+`daily.repository.ts` → `touchActivity`da coin mint YO'Q, shuning uchun
+u yerda oddiy bitta debit CTE yetarli.
 
 **Premium holati qachon tekshiriladi:** `entitlement` CTE har doim JORIY
 `users.tariff`/`premium_until`ni o'qiydi — ya'ni gap qachon boshlanganidan

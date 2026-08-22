@@ -94,19 +94,29 @@ export function IdleScreen({
     }
   }, [user?.id])
 
-  // Load Real Online users from DB on mount
+  // Haqiqiy JONLI online o'yinchilar ro'yxati (faqat ayni paytda ulanganlar)
   useEffect(() => {
-    setLoadingOnline(true)
-    api.getLeaderboardDaily(30, user?.id)
-      .then((data) => {
-        if (data && data.length > 0) {
-          setOnlineRealUsers(data)
-        } else {
-          return api.getLeaderboard(30, user?.id).then(setOnlineRealUsers)
-        }
-      })
-      .catch(() => setOnlineRealUsers([]))
-      .finally(() => setLoadingOnline(false))
+    let mounted = true
+    const fetchOnline = (isInitial = false) => {
+      if (isInitial) setLoadingOnline(true)
+      api.getOnlinePlayers(user?.id)
+        .then((data) => {
+          if (mounted) setOnlineRealUsers(data || [])
+        })
+        .catch(() => {
+          if (mounted) setOnlineRealUsers([])
+        })
+        .finally(() => {
+          if (mounted && isInitial) setLoadingOnline(false)
+        })
+    }
+
+    fetchOnline(true)
+    const interval = setInterval(() => fetchOnline(false), 5000)
+    return () => {
+      mounted = false
+      clearInterval(interval)
+    }
   }, [user?.id])
 
   // Calculated Stats (Faqat haqiqiy ko'rsatkichlar — hech qanday soxtalashtirishsiz)

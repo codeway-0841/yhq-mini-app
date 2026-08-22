@@ -6,6 +6,7 @@ import { Router }                     from 'express'
 import { wrap }                       from '../../middleware/error-handler'
 import { parseUserId, parseLimit }    from '../../utils/parse'
 import { leaderboardRepository }      from './leaderboard.repository'
+import { getOnlineUsers }            from '../../octagon'
 
 import { getLatestTournamentWinners, getTournamentHistory } from './tournament-prize.service'
 
@@ -37,6 +38,7 @@ router.get(
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=weekly  → haftalik liga reytingi
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=monthly → oylik reyting
 // GET /api/leaderboard?limit=50&userId=<caller>&mode=duel    → duel (Oktagon) reytingi
+// GET /api/leaderboard?userId=<caller>&mode=online          → faqat haqiqiy online ulangan foydalanuvchilar
 router.get(
   '/leaderboard',
   wrap(async (req, res) => {
@@ -44,6 +46,10 @@ router.get(
     const callerUid  = parseUserId(String(req.query['userId'] ?? ''))
     const mode       = String(req.query['mode'] ?? '')
 
+    if (mode === 'online') {
+      res.json(await getOnlineUsers(callerUid))
+      return
+    }
     if (mode === 'daily') {
       res.json(await leaderboardRepository.dailyTop(limit, callerUid))
       return

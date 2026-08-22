@@ -25,17 +25,18 @@
 import { WebSocket, WebSocketServer } from 'ws'
 import { IncomingMessage } from 'http'
 import { randomUUID } from 'crypto'
-import { inArray, sql }   from 'drizzle-orm'
+import { inArray, sql, eq }   from 'drizzle-orm'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
 import { isAuthEnforced } from './middleware/auth'
 import { SUBJECT_IDS, DEFAULT_SUBJECT_ID, SUBJECT_REGISTRY, resolveSubject } from './config/subjects'
 import { getProvider } from './providers'
 import { db } from './db/connection'
-import { users } from './schema'
+import { users, progress } from './schema'
 import { progressRepository } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
 import { registerInterval } from './utils/shutdown'
+import type { LeaderboardEntry } from './modules/leaderboard/leaderboard.repository'
 
 // ── Constants ──────────────────────────────────────────────────────────────
 
@@ -188,6 +189,45 @@ let ACTIVE_LIMITS: OctagonLimits = DEFAULT_OCTAGON_LIMITS
 const queue:         Map<string, Player> = new Map()  // userId → Player
 const matches:       Map<string, Match>  = new Map()  // matchId → Match
 const playerToMatch: Map<string, string> = new Map()  // userId → matchId
+const connsByUser = new Map<string, Set<WebSocket>>()
+
+/** Hozirgi jonli online foydalanuvchilar ro'yxati (faqat haqiqiy ulanganlar) */
+export async function getOnlineUsers(callerUserId: string | null): Promise<LeaderboardEntry[]> {
+  const onlineUserIds = Array.from(connsByUser.keys()).filter((id) => AVATAR_UID_RE.test(id))
+  if (onlineUserIds.length === 0) return []
+
+  try {
+    const rows = await db
+      .select({
+        id:              users.id,
+        firstName:       users.firstName,
+        lastName:        users.lastName,
+        photoUrl:        users.photoUrl,
+        hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:     users.avatarFrame,
+        streak:          sql<number>`COALESCE(${progress.streak}, 0)`,
+        score:           sql<number>`COALESCE(${progress.octagonWins}, 0)`,
+      })
+      .from(users)
+      .leftJoin(progress, eq(progress.userId, users.id))
+      .where(inArray(users.id, onlineUserIds))
+
+    return rows.map((r, i) => ({
+      rank: i + 1,
+      userId: r.id,
+      name: `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score: Number(r.score),
+      streak: Number(r.streak),
+      isYou: callerUserId !== null && r.id === callerUserId,
+      photoUrl: r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame: r.avatarFrame ?? null,
+    }))
+  } catch (err) {
+    console.error('[octagon] getOnlineUsers error:', err)
+    return []
+  }
+}
 
 /** subjectId → savol havzasi (dataSourceId orqali); fallback — birinchi mavjud pool. */
 function poolForSubject(subjectId: string): QuestionPoolItem[] {
@@ -660,7 +700,6 @@ export function attachOctagon(
     msgCount:  number
   }
   const states = new WeakMap<WebSocket, ConnState>()
-  const connsByUser = new Map<string, Set<WebSocket>>()
 
   function trackConn(userId: string, ws: WebSocket): boolean {
     let set = connsByUser.get(userId)
@@ -747,6 +786,28 @@ export function attachOctagon(
 
       if (msg.type === 'ping') {
         send(ws, { type: 'pong' })
+        return
+      }
+
+      if (msg.type === 'auth') {
+        void (async () => {
+          let uid = String(msg.userId ?? '')
+          if (isAuthEnforced()) {
+            const resolved = await resolveWsUserId(msg)
+            if (!resolved) {
+              send(ws, { type: 'error', message: 'auth_failed' })
+              ws.close(4001, 'Unauthorized')
+              return
+            }
+            uid = resolved
+          }
+          if (!WS_USER_ID_RE.test(uid)) {
+            send(ws, { type: 'error', message: 'invalid_user' })
+            return
+          }
+          markAuthed(uid)
+          send(ws, { type: 'auth_ok' })
+        })()
         return
       }
 
