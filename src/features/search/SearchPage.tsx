@@ -65,10 +65,11 @@ export default function SearchPage() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchPlaceholder')}
+            aria-label={tt('searchPlaceholder')}
             className="flex-1 bg-transparent py-3 text-sm outline-none placeholder:text-psubtle"
           />
           {query && (
-            <button onClick={() => setQuery('')} aria-label={tt('backWord')}
+            <button onClick={() => setQuery('')} aria-label={tt('clearSearch')}
               className="text-pmuted hover:text-pfg p-1">
               <X size={16} />
             </button>

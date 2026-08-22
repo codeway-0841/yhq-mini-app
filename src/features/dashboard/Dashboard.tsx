@@ -253,17 +253,16 @@ export default function Dashboard() {
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
-              subtitle={`${questionsCount > 0 ? `${questionsCount}+ ` : ''}${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
-            <MockGridCard icon={BookOpen} label={tt('topics')} subtitle={tt('allTopicsDesc')}
+            <MockGridCard icon={BookOpen} label={tt('topics')}
               onClick={goTopics} />
-            <MockGridCard icon={Bot} label={tt('aiTutor')} subtitle={tt('comingSoonD')}
+            <MockGridCard icon={Bot} label={tt('aiTutor')}
               iconColor="var(--p-purple)" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-            <MockGridCard icon={HeartCrack} label={tt('mistakes')} subtitle={tt('mistakeFixDesc')}
+            <MockGridCard icon={HeartCrack} label={tt('mistakes')}
               badge={mistakesCount || null} onClick={goMistakes} />
-            <MockGridCard icon={Ticket} label={tt('tickets')} subtitle={tt('officialTickets')}
+            <MockGridCard icon={Ticket} label={tt('tickets')}
               onClick={() => navigate('/biletlar')} />
-            <MockGridCard icon={Swords} label={tt('duelTitle')} subtitle={tt('duelDesc')}
+            <MockGridCard icon={Swords} label={tt('duelTitle')}
               onClick={goOctagon} />
           </div>
 

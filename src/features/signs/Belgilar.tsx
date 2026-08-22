@@ -169,10 +169,11 @@ export default function Belgilar() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Belgi qidirish..."
+              aria-label="Belgi qidirish"
               className="flex-1 bg-transparent text-sm text-pfg outline-none placeholder:text-pmuted"
             />
             {query && (
-              <button onClick={() => setQuery('')} className="text-pmuted hover:text-pfg">
+              <button onClick={() => setQuery('')} aria-label="Tozalash" className="text-pmuted hover:text-pfg">
                 <X size={14} />
               </button>
             )}

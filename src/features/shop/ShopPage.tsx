@@ -14,7 +14,7 @@
  */
 import { useMemo, useState } from 'react'
 import {
-  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift,
+  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift, Clock,
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -146,16 +146,19 @@ export default function ShopPage() {
     const isEquipped = avatarFrame === frame.id
     const affordable = coins >= item.price
     return (
-      <div key={frame.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col items-center gap-2.5 relative">
+      <div key={frame.id} className="rounded-container border border-pline bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative">
         {countdownBadge && (
-          <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold"
-            style={{
-              background: 'rgb(var(--p-primary-rgb) / 0.12)',
-              border: '1px solid rgb(var(--p-primary-rgb) / 0.40)',
-              color: 'var(--p-primary)',
-            }}>
-            {countdownBadge}
-          </span>
+          <div className="w-full flex items-center justify-center -mt-0.5">
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9.5px] font-medium"
+              style={{
+                background: 'rgb(var(--p-primary-rgb) / 0.10)',
+                border: '1px solid rgb(var(--p-primary-rgb) / 0.30)',
+                color: 'var(--p-primary)',
+              }}>
+              <Clock size={10} strokeWidth={2} className="flex-shrink-0" />
+              {countdownBadge}
+            </span>
+          </div>
         )}
         {/* Ramka preview */}
         <span className={`avatar-frame ${frame.cssClass}`}>
@@ -272,19 +275,8 @@ export default function ShopPage() {
           const isOwned    = ownedSet.has(theme.id)
           const isActiveTheme = resolveAccent(accent, isPremium, ownedSet) === theme.id
           const affordable = coins >= item.price
-          const coinExclusive = !theme.premium
           return (
             <div key={theme.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col gap-2.5 relative overflow-hidden">
-              {coinExclusive && (
-                <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wide"
-                  style={{
-                    background: 'rgb(var(--p-gold-rgb) / 0.16)',
-                    border: '1px solid rgb(var(--p-gold-rgb) / 0.45)',
-                    color: 'var(--p-gold)',
-                  }}>
-                  <Coins size={9} /> {tt('shopCoinThemeBadge')}
-                </span>
-              )}
               {/* Mini atmosfera preview */}
               <div className="h-[64px] rounded-control overflow-hidden border border-pline relative"
                 style={{ background: theme.bg }}>
