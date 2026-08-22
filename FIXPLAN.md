@@ -335,8 +335,18 @@
 
 - [x] **49. Sentry alertlar** — 429 spike'lar, cron `jobRuns` xato counter'lari,
   `rate_limiter_unavailable` 503'lar (P1-2'dan keyin ahamiyatli).
-- [ ] **50. Octagon WS yuk-testi** — o'sish marketingidan oldin: k6/artillery
-  bilan 100+ parallel duel, matchmaking + neon connection profile.
+- [x] **50. Octagon WS yuk-testi** — **TUGALLANDI:** `server/load-test-octagon.ts`
+  (`npm run loadtest:octagon -- --pairs=N`) — haqiqiy WS protokol orqali
+  (join_queue → matched → question/answer → match_end) N duel simulyatsiya
+  qiladi; localhost-only guard (`--force` bilan bekor qilinadi). k6/artillery
+  o'rniga maxsus `ws`-skript tanlandi — Octagon protokoli stateful (matched
+  kutish, 10 raundlik javob almashinuvi), generic DSL bilan ifodalash qiyin.
+  Lokal `server:dev`da tekshirildi: 100 duel (200 o'yinchi) — 0 xato, barchasi
+  yakunlandi; matchmaking latency (connect→matched, DB avatar resolve ichida)
+  p50=1207ms/p95=1238ms, answer_ack (server/event-loop) p50=0ms/p95=1ms, match
+  davomiyligi (10 raund) p50=27.5s. Neon connection profile: 100 ta parallel
+  `resolveAvatars` so'rovi (matchda 2 tadan) va 100 ta `addOctagonWin` yozuvi
+  bir vaqtda tirbandlik yaratmadi (xato/timeout yo'q).
 - [x] **51. `analytics_events` retention + `answer_tokens` cleanup cron'ini
   birlashtirish** (item 14 bilan birga).
 

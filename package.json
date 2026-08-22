@@ -91,6 +91,7 @@
     "db:seed:explanations": "tsx server/seed-explanations.ts",
     "db:seed:russian": "tsx server/seed-russian.ts",
     "bot:profile": "tsx server/set-bot-profile.ts",
+    "loadtest:octagon": "tsx server/load-test-octagon.ts",
     "lint": "eslint .",
     "test": "npm run test:unit",
     "test:unit": "vitest run tests/unit",
