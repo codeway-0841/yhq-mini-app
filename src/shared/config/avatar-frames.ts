@@ -23,7 +23,7 @@ export interface AvatarFrame {
 }
 
 export const AVATAR_FRAMES: AvatarFrame[] = [
-  { id: 'frame-neon',   label: { uz: 'Neon halqa',      ru: 'Неоновое кольцо'   }, cssClass: 'avatar-frame-neon',   color: '#5be300' },
+  { id: 'frame-neon',   label: { uz: 'Neon halqa',      ru: 'Неоновое кольцо'   }, cssClass: 'avatar-frame-neon',   color: '#0fa47f' },
   { id: 'frame-arctic', label: { uz: 'Muzli halqa',     ru: 'Ледяное кольцо'    }, cssClass: 'avatar-frame-arctic', color: '#38bdf8' },
   { id: 'frame-royal',  label: { uz: 'Qirollik halqasi',ru: 'Королевское кольцо'}, cssClass: 'avatar-frame-royal',  color: '#818cf8' },
   { id: 'frame-gold',   label: { uz: 'Oltin halqa',     ru: 'Золотое кольцо'    }, cssClass: 'avatar-frame-gold',   color: '#facc15' },

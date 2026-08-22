@@ -46,14 +46,14 @@ PiGlyph.displayName = 'PiGlyph'
 /** UI xususiyatlari — shared/subjects.ts dagi `id` bo'yicha ulanadi.
     Record<SubjectId, ...> — fan qo'shilib UI_MAP unutilsa COMPILE-TIME xato */
 const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: string }> = {
-  yhq:        { icon: Car,          color: '#58cc02', colorDark: '#46a302' },
-  rustili:    { icon: Languages,    color: '#0088cc', colorDark: '#006699' },
-  fizika:     { icon: Zap,          color: '#ffc800', colorDark: '#e5b400' },
-  matematika: { icon: PiGlyph,      color: '#ce82ff', colorDark: '#a85ed4' },
-  kimyo:      { icon: FlaskConical, color: '#1cb0f6', colorDark: '#1899d6' },
-  ingliz:     { icon: Globe,        color: '#ff9600', colorDark: '#e59400' },
-  tarix:      { icon: BookOpen,     color: '#ff4b4b', colorDark: '#d93f3f' },
-  biologiya:  { icon: Dna,          color: '#00cd9c', colorDark: '#00a87e' },
+  yhq:        { icon: Car,          color: '#2e8b78', colorDark: '#24705f' },
+  rustili:    { icon: Languages,    color: '#37718e', colorDark: '#2b5a72' },
+  fizika:     { icon: Zap,          color: '#b0822b', colorDark: '#8e6821' },
+  matematika: { icon: PiGlyph,      color: '#74589b', colorDark: '#5d467d' },
+  kimyo:      { icon: FlaskConical, color: '#5566a8', colorDark: '#44528a' },
+  ingliz:     { icon: Globe,        color: '#b96b34', colorDark: '#96552a' },
+  tarix:      { icon: BookOpen,     color: '#a8453c', colorDark: '#87372f' },
+  biologiya:  { icon: Dna,          color: '#5f7a3c', colorDark: '#4c6230' },
 }
 
 export const SUBJECTS: SubjectConfig[] = SUBJECT_BASES.map((s) => {

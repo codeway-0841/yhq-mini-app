@@ -2,49 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Tema tokenlari (v1.1 "Neon Navy" + Duolingo uslubi) ─────────────────────
-   Default: dark (#070f1d — chuqur navy, neon glow aksentlar bilan).
-   body[data-theme='light'] — light.
+/* ── Tema tokenlari (v3 "Jade & Stone") ──────────────────────────────────────
+   Default: dark (#0d1117 — sovuq-neytral grafit; pure black EMAS, navy EMAS).
+   body[data-theme='light'] — iliq-neytral stone (#fafaf9).
    Tailwind klasslar (bg-canvas, text-fg, border-line...) shu o'zgaruvchilarga
    bog'langan — tema almashganda butun ilova avtomatik yangilanadi.
-   NEON_* ranglar temadan mustaqil aksentlar (glow effektlar uchun). */
+   --neon-* nomlari backward-compat uchun saqlangan (glow v3'da yo'q). */
 :root {
   /* v2.2 — semantik matn darajalari + Apple/Linear surface'lar.
      fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary (darhaqiqat semantic). */
-  --theme-canvas:      #0b1120;
-  --theme-surface:     #1e293b;
-  --theme-elevated:    #111827;
-  --theme-fg:          #f8fafc;
-  --theme-fg-muted:    #cbd5e1;
-  --theme-fg-subtle:   #94a3b8;
-  --theme-line:        rgba(255, 255, 255, 0.08);
-  --theme-line-strong: rgba(255, 255, 255, 0.16);
+  --theme-canvas:      #0d1117;
+  --theme-surface:     #1c222b;
+  --theme-elevated:    #161b22;
+  --theme-fg:          #f5f5f4;
+  --theme-fg-muted:    #a8a29e;
+  --theme-fg-subtle:   #78716c;
+  --theme-line:        rgba(255, 255, 255, 0.07);
+  --theme-line-strong: rgba(255, 255, 255, 0.14);
   --theme-shadow:      #000000;
 
-  /* ── Neon aksentlar — v2 palitra; yashil = aksent (premium temalar bilan almashadi) ── */
-  --neon-green:   var(--p-primary, #5be300);
+  /* ── Yordamchi aksentlar (v3: glow YO'Q — nomlar backward-compat uchun saqlangan) ── */
+  --neon-green:   var(--p-primary, #0fa47f);
   /* RGB triplet — Tailwind opacity modifier (bg-duo-green/15 ...) uchun */
-  --p-primary-rgb: 91 227 0;
-  --neon-blue:    #3b82f6;
-  --neon-purple:  #8b5cf6;
-  --neon-violet:  #a78bfa;
-  --neon-red:     #ef4444;
-  --neon-yellow:  #facc15;
-  --neon-glow-purple: rgba(139, 92, 246, 0.45);
-  --neon-glow-green:  var(--p-glow, rgba(91, 227, 0, 0.38));
-  --neon-glow-blue:   rgba(59, 130, 246, 0.40);
+  --p-primary-rgb: 15 164 127;
+  --neon-blue:    #4a90d9;
+  --neon-purple:  #8b7fd4;
+  --neon-violet:  #a99ee0;
+  --neon-red:     #f0546e;
+  --neon-yellow:  #e0a045;
+  --neon-glow-purple: transparent;
+  --neon-glow-green:  transparent;
+  --neon-glow-blue:   transparent;
 }
 
 body[data-theme='light'] {
-  --theme-canvas:      #f8fafc;
-  --theme-surface:     #f1f5f9;
+  --theme-canvas:      #fafaf9;
+  --theme-surface:     #f5f5f4;
   --theme-elevated:    #ffffff;
-  --theme-fg:          #0f172a;
-  --theme-fg-muted:    #475569;
-  --theme-fg-subtle:   #64748b;
-  --theme-line:        #e2e8f0;
-  --theme-line-strong: #cbd5e1;
-  --theme-shadow:      #cbd5e1;
+  --theme-fg:          #1c1917;
+  --theme-fg-muted:    #57534e;
+  --theme-fg-subtle:   #8a8580;
+  --theme-line:        #e7e5e4;
+  --theme-line-strong: #d6d3d1;
+  --theme-shadow:      #d6d3d1;
 }
 
 * {
@@ -58,7 +58,10 @@ html, body, #root {
   padding: 0;
   background: var(--theme-canvas);
   color: var(--theme-fg);
-  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  /* Ta'lim ilovasi = raqam ko'p (ball, foiz, taymer) — tabular figure
+     raqam almashganda layout "sakrash"ini yo'q qiladi */
+  font-variant-numeric: tabular-nums;
   overscroll-behavior: none;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -80,64 +83,57 @@ html, body, #root {
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
 
-/* ══ v1.1 — Neon Navy komponent utilitilari ═════════════════════════════════ */
+/* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */
 
-/* Asosiy karta (v2): elevated fon + ingichka kontur + yumshoq soya */
+/* Asosiy karta (v3 Jade & Stone): sirt qatlami + 1px hairline.
+   Ko'tarilish SOYA bilan emas, sirt ierarxiyasi bilan beriladi. */
 .card-neon {
   background: var(--theme-elevated);
   border: 1px solid var(--theme-line);
-  border-radius: 1.5rem;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.03),
-    0 10px 28px rgba(2, 6, 16, 0.30);
+  border-radius: 18px;
 }
 
-/* Glow soya: neon accent rakurslar (ring chart, ikon konteynerlar, CTA) */
-.glow-purple { box-shadow: 0 0 22px 0 var(--neon-glow-purple); }
-.glow-green  { box-shadow: 0 0 22px 0 var(--neon-glow-green); }
-.glow-blue   { box-shadow: 0 0 22px 0 var(--neon-glow-blue); }
+/* v3: glow tizimdan chiqarildi — nomlar saqlangan (call-site'lar bosqichma-bosqich ko'chadi) */
+.glow-purple,
+.glow-green,
+.glow-blue { box-shadow: none; }
 
-/* Neon CTA tugma (v2.2): gradient aksent + yumshoq soya (qattiq 3D soya yo'q) */
+/* Asosiy CTA (v3): tekis aksent, gradient/glow yo'q, bosish = scale(.98) */
 .btn-neon {
-  background: var(--p-primary, #5be300); /* fallback — color-mix'siz eski webview */
-  background: linear-gradient(135deg, var(--p-primary, #5be300), color-mix(in srgb, var(--p-primary, #5be300) 80%, #000));
-  color: var(--p-on-primary, #0a1a00);
-  font-weight: 800;
-  border-radius: 1rem;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.25),
-    0 10px 30px rgb(var(--p-primary-rgb, 91 227 0) / 0.22);
-  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease,
-              background-color 0.3s ease;
+  background: var(--p-primary, #0fa47f);
+  color: var(--p-on-primary, #04140f);
+  font-weight: 600;
+  border-radius: 10px;
+  transition: transform 120ms cubic-bezier(0.2, 0, 0, 1),
+              background-color 120ms cubic-bezier(0.2, 0, 0, 1),
+              filter 120ms cubic-bezier(0.2, 0, 0, 1);
   user-select: none;
   touch-action: manipulation;
 }
-.btn-neon:hover { filter: brightness(1.08); }
-.btn-neon:active {
-  transform: scale(0.97);
-  filter: brightness(0.90);
-}
+.btn-neon:hover { filter: brightness(1.06); }
+.btn-neon:active { transform: scale(0.98); }
 
-/* Neon progress chizig'i (rount bar / sarfi): yorug' capsula + glow */
+/* Progress (v3): 3px ingichka rail — yo'g'on kapsula emas */
 .progress-neon {
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(30, 58, 95, 0.55);
+  height: 3px;
+  border-radius: 2px;
+  background: var(--theme-line-strong);
   overflow: hidden;
 }
 .progress-neon > .fill {
   height: 100%;
-  border-radius: 999px;
-  background: var(--p-primary, #5be300);
-  box-shadow: 0 0 10px var(--p-glow, transparent);
-  transition: width 240ms ease-out;
+  border-radius: 2px;
+  background: var(--p-primary, #0fa47f);
+  transition: width 400ms cubic-bezier(0.2, 0, 0, 1);
 }
 
-/* Ring chart glow (circular progress) */
-.ring-glow { filter: drop-shadow(0 0 10px var(--neon-glow-purple)); }
+/* v3: ring drop-shadow olib tashlandi */
+.ring-glow { filter: none; }
 
-/* ── 3D tugmalar (v2: yumshatilgan — og'ir Duolingo soya 50% ga kamaytirildi) ──
-   Pastki qattiq soya (box-shadow) + bosilganda siqilish.
+/* ── Tugmalar (v3) ────────────────────────────────────────────────────────
+   Qattiq pastki soya + translateY ("3D") tizimdan CHIQARILDI. Endi tekis sirt,
+   bosish = scale(.98) 120ms. Klass nomlari saqlangan — call-site'lar Phase 6'da
+   <Button> komponentiga ko'chadi.
    Foydalanish: <button class="btn-3d-green"> yoki custom rang bilan "btn-3d". */
 .btn-3d,
 .btn-3d-green,
@@ -147,9 +143,10 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .btn-3d-orange,
 .btn-3d-purple,
 .btn-3d-ghost {
-  --btn-3d-shadow: var(--theme-shadow);
-  box-shadow: 0 2px 0 0 var(--btn-3d-shadow);
-  transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s ease;
+  border-radius: 10px;
+  transition: transform 120ms cubic-bezier(0.2, 0, 0, 1),
+              background-color 120ms cubic-bezier(0.2, 0, 0, 1),
+              filter 120ms cubic-bezier(0.2, 0, 0, 1);
   user-select: none;
   touch-action: manipulation;
 }
@@ -161,8 +158,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
 .btn-3d-orange:active,
 .btn-3d-purple:active,
 .btn-3d-ghost:active {
-  transform: translateY(2px) scale(0.99);
-  box-shadow: 0 0 0 0 var(--btn-3d-shadow);
+  transform: scale(0.98);
 }
 .btn-3d:disabled,
 .btn-3d-green:disabled,
@@ -176,32 +172,29 @@ body[data-no-animation='true'] .route-page { animation: none; }
   pointer-events: none;
 }
 
-.btn-3d-green  { background: var(--p-primary, #5be300); --btn-3d-shadow: color-mix(in srgb, var(--p-primary, #5be300) 72%, #000); color: var(--p-on-primary, #0a1a00); }
-.btn-3d-blue   { background: #3b82f6; --btn-3d-shadow: #1d4ed8; color: #fff; }
-.btn-3d-red    { background: #ef4444; --btn-3d-shadow: #b91c1c; color: #fff; }
-.btn-3d-yellow { background: #facc15; --btn-3d-shadow: #ca8a04; color: #241a00; }
-.btn-3d-orange { background: #f59e0b; --btn-3d-shadow: #b45309; color: #fff; }
-.btn-3d-purple { background: #8b5cf6; --btn-3d-shadow: #6d28d9; color: #fff; }
+.btn-3d-green  { background: var(--p-primary, #0fa47f); color: var(--p-on-primary, #04140f); }
+.btn-3d-blue   { background: var(--p-blue);    color: #fff; }
+.btn-3d-red    { background: var(--p-danger);  color: #fff; }
+.btn-3d-yellow { background: var(--p-warning); color: #241a00; }
+.btn-3d-orange { background: var(--p-warning); color: #fff; }
+.btn-3d-purple { background: var(--p-purple);  color: #fff; }
 .btn-3d-ghost  {
   background: var(--theme-surface);
-  --btn-3d-shadow: var(--theme-shadow);
   color: var(--theme-fg);
-  border: 1px solid var(--theme-line);
+  border: 1px solid var(--theme-line-strong);
 }
 
 /* Karta — elevated sirt, ingichka chiziq */
 .card-3d {
   background: var(--theme-elevated);
   border: 1px solid var(--theme-line);
-  border-radius: 1.25rem;
+  border-radius: 18px;
 }
 
-/* Darslik active-node glow (modul rangida pulsatsiya) */
-@keyframes lessonGlow {
-  0%, 100% { box-shadow: 0 0 0 0 transparent; }
-  50%      { box-shadow: 0 0 20px 5px var(--glow, #ffc800aa); }
+/* Darslik joriy dars belgisi (v3): pulsatsiyalanuvchi glow O'RNIGA barqaror halqa */
+.lesson-glow {
+  box-shadow: 0 0 0 4px rgb(var(--p-primary-rgb) / 0.16);
 }
-.lesson-glow { animation: lessonGlow 1.6s ease-in-out infinite; }
 
 /* Shimmer — banner ustidan yorug'lik o'tishi */
 @keyframes shimmerSlide {
@@ -305,382 +298,371 @@ body[data-no-animation='true'] .route-page { animation: none; }
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v2.2 semantik surface + matn (Apple/Linear/Stripe darajasi) */
-  --p-canvas:      #0b1120;
-  --p-card:        #111827;
-  --p-surface:     #1e293b;
-  --p-line:        rgba(255, 255, 255, 0.08);
+  /* v3 "Graphite" — sovuq-neytral to'q ground (pure black EMAS, navy EMAS) */
+  --p-canvas:      #0d1117;
+  --p-card:        #161b22;
+  --p-surface:     #1c222b;
+  --p-line:        rgba(255, 255, 255, 0.07);
+  --p-line-strong: rgba(255, 255, 255, 0.14);
 
-  --p-fg:          #f8fafc;   /* Primary text */
-  --p-muted:       #cbd5e1;   /* Secondary text */
-  --p-subtle:      #94a3b8;   /* Tertiary text */
-  --p-disabled:    #64748b;   /* Disabled text */
-  --p-link:        #a78bfa;   /* Link (to'q rejim) */
+  --p-fg:          #f5f5f4;   /* Primary text */
+  --p-muted:       #a8a29e;   /* Secondary text */
+  --p-subtle:      #78716c;   /* Tertiary text */
+  --p-disabled:    #57534e;   /* Disabled text */
+  --p-link:        #0fa47f;   /* Link (to'q rejim) */
 
-  /* Aksent (data-accent bilan almashadi) */
-  --p-primary:     #5be300;
-  --p-on-primary:  #0a1a00;
-  --p-glow:        rgba(91, 227, 0, 0.38);
+  /* Aksent — Jade (data-accent bilan almashadi) */
+  --p-primary:     #0fa47f;
+  --p-on-primary:  #04140f;
+  --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
-  /* Semantik + qo'shimcha aksentlar (temadan mustaqil) */
-  --p-success:     #22c55e;
-  --p-success-rgb: 34 197 94;
-  --p-warning:     #f59e0b;
-  --p-warning-rgb: 245 158 11;
-  --p-danger:      #ef4444;
-  --p-purple:      #8b5cf6;   /* AI/Premium — ba'zi temalar override qiladi */
-  --p-purple-rgb:  139 92 246;
-  --p-blue:        #3b82f6;
-  --p-gold:        #facc15;   /* Premium oltin — gradient jufti + ustidagi matn bilan birga */
-  --p-gold-rgb:    250 204 21;
-  --p-gold-deep:   #eab308;
+  /* Semantik ranglar — AKSENTDAN ALOHIDA, faqat status uchun */
+  --p-success:     #35c47f;
+  --p-success-rgb: 53 196 127;
+  --p-warning:     #e0a045;
+  --p-warning-rgb: 224 160 69;
+  --p-danger:      #f0546e;
+  --p-danger-rgb:  240 84 110;
+  --p-purple:      #8b7fd4;   /* AI/Premium — ba'zi temalar override qiladi */
+  --p-purple-rgb:  139 127 212;
+  --p-blue:        #4a90d9;
+  --p-gold:        #d9a441;   /* Premium oltin — gradient jufti + ustidagi matn bilan birga */
+  --p-gold-rgb:    217 164 65;
+  --p-gold-deep:   #b8862c;
   --p-on-gold:     #241a00;
+
+  /* ── Geometriya (v3): ikki bosqichli radius ── */
+  --radius-control:   10px;   /* tugma, input, badge */
+  --radius-container: 18px;   /* card, panel */
+  --radius-sheet:     24px;   /* sheet — faqat yuqori burchak */
+  --radius: var(--radius-control);   /* shadcn/ui base */
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+
 }
 
+/* ── shadcn/ui ko'prigi ────────────────────────────────────────────────────
+   shadcn komponentlari `bg-background`, `text-foreground`, `border-border`,
+   `ring-ring` kabi klasslarni kutadi. Ular KIWI tokenlariga bog'lanadi —
+   accent tema almashsa, shadcn komponentlari ham birga almashadi.
+   YANGI qiymat SHU YERGA yozilmaydi: manba har doim --p-*.
+
+   MUHIM — nega `body`, `:root` EMAS: accent temalar `--p-*` ni BODY'da
+   override qiladi (`body[data-accent='ocean']`). Custom property boshqa
+   custom property'ga murojaat qilsa, u O'ZI E'LON QILINGAN elementda
+   hisoblanadi — ko'prik `:root`da tursa, body'dagi override'ni ko'rmasdan
+   default jade'da qotib qolardi. */
+body {
+  --p-wash:             rgb(var(--p-primary-rgb) / 0.12);  /* tanlangan/active holat foni */
+
+  --background:         var(--p-canvas);
+  --foreground:         var(--p-fg);
+  --card-bg:            var(--p-card);
+  --popover:            var(--p-card);
+  --primary:            var(--p-primary);
+  --primary-foreground: var(--p-on-primary);
+  --secondary:          var(--p-surface);
+  --muted-bg:           var(--p-surface);
+  --muted-foreground:   var(--p-muted);
+  --accent-bg:          var(--p-wash);
+  --destructive:        var(--p-danger);
+  --border:             var(--p-line);
+  --input:              var(--p-line-strong);
+  --ring:               var(--p-primary);
+}
+
+/* v3 "Stone" — iliq-neytral yorug' ground (sovuq slate/zinc EMAS) */
 body[data-theme='light'] {
-  --p-canvas:      #f8fafc;
+  --p-canvas:      #fafaf9;
   --p-card:        #ffffff;
-  --p-surface:     #f1f5f9;
-  --p-line:        #e2e8f0;
+  --p-surface:     #f5f5f4;
+  --p-line:        #e7e5e4;
+  --p-line-strong: #d6d3d1;
 
-  --p-fg:          #0f172a;
-  --p-muted:       #475569;
-  --p-subtle:      #64748b;
-  --p-disabled:    #94a3b8;
-  --p-link:        #4f46e5;
+  --p-fg:          #1c1917;
+  --p-muted:       #57534e;
+  --p-subtle:      #8a8580;
+  --p-disabled:    #a8a29e;
+  --p-link:        #0d8a6a;
 
-  --p-glow:        rgba(91, 227, 0, 0.16);
+  /* Aksent yorug' fonda kontrast uchun to'qlashtiriladi (WCAG AA matn ustida) */
+  --p-primary:     #0d8a6a;
+  --p-primary-rgb: 13 138 106;
+  --p-on-primary:  #ffffff;
+  --p-glow:        transparent;
+
+  /* Semantik ranglar — yorug' fon uchun to'q variantlar */
+  --p-success:     #15803d;
+  --p-success-rgb: 21 128 61;
+  --p-warning:     #b45309;
+  --p-warning-rgb: 180 83 9;
+  --p-danger:      #be123c;
+  --p-danger-rgb:  190 18 60;
+  --p-purple:      #6d5bc4;
+  --p-purple-rgb:  109 91 196;
+  --p-blue:        #2563eb;
+  --p-gold:        #b8862c;
+  --p-gold-rgb:    184 134 44;
+  --p-gold-deep:   #966d1f;
+  --p-on-gold:     #ffffff;
 }
 
-/* ── Premium aksent temalari (Premium obunachilar uchun) ─────────────────── */
-/* ── PREMIUM ATMOSFERA TEMALARI ─────────────────────────────────────────────
-   Har bir tema FAQAT aksentni emas — fon/karta/border/glow'ni ham o'zgartiradi
-   (--theme-* ESKi tokenlar ham — butun app bir zumda boshqa ilovaga aylanadi).
-   Bu bloklar body[data-theme='light'] dan KEYIN keladi → atmosfera
-   light mode'da HAM to'liq qo'llanadi. src/config/themes.ts bilan sinxron! */
+/* ── ATMOSFERA TEMALARI (v3 Jade & Stone) ───────────────────────────────────
+   Har bir tema FAQAT aksentni emas — fon/karta/border'ni ham o'zgartiradi
+   (--theme-* ESKI tokenlar ham). Glow v3'da tizimdan chiqarildi: ierarxiya
+   sirt qatlami + 1px hairline bilan beriladi.
 
-/* 🌌 Aurora — neon yashil + chuqur ko'k-yashil atmosfera (AI: cyan) */
+   Surface qurilishi HAR TEMADA bir xil retsept (shuning uchun tizim yagona
+   bo'lib qoladi, 13 ta alohida dizayn emas):
+     canvas  — eng to'q/eng och ground
+     surface — canvas'dan bir pog'ona
+     card    — kontent yotadigan qatlam
+     line    — hairline, kuchsiz kontrast
+   Tema faqat HUE beradi; qadamlar oralig'i o'zgarmaydi.
+   id'lar O'ZGARMAYDI — shop egaligi (user_items) ularga bog'langan.
+   src/shared/config/themes.ts bilan sinxron! */
+
+/* Aurora — jade-cyan atmosfera (AI: cyan) */
 body[data-theme='dark'][data-accent='aurora'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #00ffa3; --p-on-primary: #032118; --p-glow: rgba(0, 255, 163, 0.35); --p-primary-rgb: 0 255 163;
-  --p-purple: #22d3ee; --p-purple-rgb: 34 211 238;
-  --p-canvas: #061019; --p-surface: #0a1a26; --p-card: #0d2231; --p-line: #16364a;
-  --theme-canvas: #061019; --theme-surface: #0a1a26; --theme-elevated: #0d2231; --theme-line: #16364a;
+  --p-fg: #f2f7f6; --p-muted: #9fb3b0; --p-subtle: #6e8380;
+  --theme-fg: #f2f7f6; --theme-fg-muted: #9fb3b0; --theme-fg-subtle: #6e8380;
+  --p-primary: #16c79a; --p-on-primary: #04211a; --p-glow: transparent; --p-primary-rgb: 22 199 154;
+  --p-purple: #3fb5c4; --p-purple-rgb: 63 181 196;
+  --p-canvas: #081614; --p-surface: #10231f; --p-card: #0d1c19; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #081614; --theme-surface: #10231f; --theme-elevated: #0d1c19;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🍇 Amethyst — binafsha AI atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
+/* Amethyst — binafsha atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
 body[data-theme='dark'][data-accent='violet'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(168, 85, 247, 0.35); --p-primary-rgb: 168 85 247;
-  --p-canvas: #120b1c; --p-surface: #1a1128; --p-card: #221536; --p-line: #33224d;
-  --theme-canvas: #120b1c; --theme-surface: #1a1128; --theme-elevated: #221536; --theme-line: #33224d;
+  --p-fg: #f5f3f7; --p-muted: #aca6b5; --p-subtle: #7c7588;
+  --theme-fg: #f5f3f7; --theme-fg-muted: #aca6b5; --theme-fg-subtle: #7c7588;
+  --p-primary: #9d7bea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 157 123 234;
+  --p-canvas: #130f1a; --p-surface: #221c2d; --p-card: #1a1523; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #130f1a; --theme-surface: #221c2d; --theme-elevated: #1a1523;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🌊 Ocean — deep blue (glow'siz, toza; AI: indigo) */
+/* Ocean — chuqur ko'k (AI: indigo) */
 body[data-theme='dark'][data-accent='ocean'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #38bdf8; --p-on-primary: #062033; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 56 189 248;
-  --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
-  --p-canvas: #071120; --p-surface: #0a1a2e; --p-card: #0e2138; --p-line: #1a3350;
-  --theme-canvas: #071120; --theme-surface: #0a1a2e; --theme-elevated: #0e2138; --theme-line: #1a3350;
+  --p-fg: #f1f5f8; --p-muted: #9fb0bd; --p-subtle: #6e808e;
+  --theme-fg: #f1f5f8; --theme-fg-muted: #9fb0bd; --theme-fg-subtle: #6e808e;
+  --p-primary: #3d9ad9; --p-on-primary: #04202f; --p-glow: transparent; --p-primary-rgb: 61 154 217;
+  --p-purple: #7b8fd4; --p-purple-rgb: 123 143 212;
+  --p-canvas: #0a1219; --p-surface: #16222c; --p-card: #101a23; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #0a1219; --theme-surface: #16222c; --theme-elevated: #101a23;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🌲 Forest — emerald + tabiiy chuqur yashil (AI: teal) */
+/* Forest — chuqur tabiiy yashil (AI: teal) */
 body[data-theme='dark'][data-accent='forest'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #34d399; --p-on-primary: #03251a; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 52 211 153;
-  --p-purple: #2dd4bf; --p-purple-rgb: 45 212 191;
-  --p-canvas: #08130d; --p-surface: #0c1d14; --p-card: #10281c; --p-line: #1a3d2c;
-  --theme-canvas: #08130d; --theme-surface: #0c1d14; --theme-elevated: #10281c; --theme-line: #1a3d2c;
+  --p-fg: #f2f6f3; --p-muted: #a2b3a8; --p-subtle: #72837a;
+  --theme-fg: #f2f6f3; --theme-fg-muted: #a2b3a8; --theme-fg-subtle: #72837a;
+  --p-primary: #3fae7c; --p-on-primary: #04200f; --p-glow: transparent; --p-primary-rgb: 63 174 124;
+  --p-purple: #35a89c; --p-purple-rgb: 53 168 156;
+  --p-canvas: #0a1410; --p-surface: #16241c; --p-card: #101b15; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #0a1410; --theme-surface: #16241c; --theme-elevated: #101b15;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🌅 Sunset — orange + iliq atmosfera (yumshoq glow; AI: pink) */
+/* Sunset — iliq to'q sariq atmosfera (AI: pink) */
 body[data-theme='dark'][data-accent='sunset'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #fb923c; --p-on-primary: #2a1200; --p-glow: rgba(251, 146, 60, 0.28); --p-primary-rgb: 251 146 60;
-  --p-purple: #f472b6; --p-purple-rgb: 244 114 182;
-  --p-canvas: #160f08; --p-surface: #201509; --p-card: #291b0d; --p-line: #3d2a14;
-  --theme-canvas: #160f08; --theme-surface: #201509; --theme-elevated: #291b0d; --theme-line: #3d2a14;
+  --p-fg: #f8f4f0; --p-muted: #b5a99d; --p-subtle: #857a70;
+  --theme-fg: #f8f4f0; --theme-fg-muted: #b5a99d; --theme-fg-subtle: #857a70;
+  --p-primary: #e08b4a; --p-on-primary: #241000; --p-glow: transparent; --p-primary-rgb: 224 139 74;
+  --p-purple: #d4708f; --p-purple-rgb: 212 112 143;
+  --p-canvas: #17110b; --p-surface: #291f15; --p-card: #1e1610; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #17110b; --theme-surface: #291f15; --theme-elevated: #1e1610;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🌸 Sakura — YORUG' atmosfera: oq + pushti */
+/* Sakura — YORUG' atmosfera: iliq oq + pushti (light-only dizayn) */
 body[data-accent='sakura'] {
-  --p-primary: #ec4899; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 236 72 153;
-  --p-canvas: #fff1f5; --p-surface: #ffe4ec; --p-card: #ffffff; --p-line: #f3d0de;
-  --p-fg: #31111f; --p-muted: #6b4a5a; --p-subtle: #9c7b8a;
-  --theme-canvas: #fff1f5; --theme-surface: #ffffff; --theme-elevated: #ffe4ec;
-  --theme-fg: #31111f; --theme-fg-muted: #6b4a5a; --theme-fg-subtle: #9c7b8a;
-  --theme-line: #f3d0de; --theme-line-strong: #e0aec2; --theme-shadow: #e8c3d2;
+  --p-primary: #c4487a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 196 72 122;
+  --p-canvas: #fdf6f7; --p-surface: #f8ecef; --p-card: #ffffff;
+  --p-line: #f0dee3; --p-line-strong: #e2c3cc;
+  --p-fg: #241419; --p-muted: #6b545b; --p-subtle: #9a8188;
+  --theme-canvas: #fdf6f7; --theme-surface: #f8ecef; --theme-elevated: #ffffff;
+  --theme-fg: #241419; --theme-fg-muted: #6b545b; --theme-fg-subtle: #9a8188;
+  --theme-line: #f0dee3; --theme-line-strong: #e2c3cc; --theme-shadow: #e2c3cc;
 }
 
-/* 🌑 Obsidian — premium sof qora (glow'siz, oq-kumush aksent; AI: sof kulrang) */
+/* Obsidian — premium sof qora, kumush aksent (AI: neytral kulrang) */
 body[data-theme='dark'][data-accent='obsidian'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #e4e4e7; --p-on-primary: #09090b; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 228 228 231;
+  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #71717a;
+  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #71717a;
+  --p-primary: #d4d4d8; --p-on-primary: #09090b; --p-glow: transparent; --p-primary-rgb: 212 212 216;
   --p-purple: #a1a1aa; --p-purple-rgb: 161 161 170;
-  --p-canvas: #050506; --p-surface: #0c0c0e; --p-card: #131316; --p-line: #26262b;
-  --theme-canvas: #050506; --theme-surface: #0c0c0e; --theme-elevated: #131316;
-  --theme-line: #26262b; --theme-line-strong: #3a3a41; --theme-shadow: #000000;
+  --p-canvas: #08080a; --p-surface: #17171a; --p-card: #0f0f12; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #08080a; --theme-surface: #17171a; --theme-elevated: #0f0f12;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
+  --theme-shadow: #000000;
 }
 
-/* 🥇 Gold Elite — qora + oltin (id "gold" saqlangan — eski tanlovlar uchun) */
+/* Gold Elite — qora + oltin (id "gold" saqlangan — eski tanlovlar uchun) */
 body[data-theme='dark'][data-accent='gold'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #facc15; --p-on-primary: #241a00; --p-glow: rgba(250, 204, 21, 0.22); --p-primary-rgb: 250 204 21;
-  --p-canvas: #0b0903; --p-surface: #151003; --p-card: #1c1604; --p-line: #2e2610;
-  --theme-canvas: #0b0903; --theme-surface: #151003; --theme-elevated: #1c1604; --theme-line: #2e2610;
+  --p-fg: #f7f5f0; --p-muted: #b3ad9d; --p-subtle: #837e70;
+  --theme-fg: #f7f5f0; --theme-fg-muted: #b3ad9d; --theme-fg-subtle: #837e70;
+  --p-primary: #d9a441; --p-on-primary: #1c1400; --p-glow: transparent; --p-primary-rgb: 217 164 65;
+  --p-canvas: #100d06; --p-surface: #211c0f; --p-card: #17130a; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #100d06; --theme-surface: #211c0f; --theme-elevated: #17130a;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🩵 Payme — rasmiy brend rangi #00c0c9 (payme.uz tile-color, glow'siz) */
+/* Payme — rasmiy brend rangi (faqat aksent; atmosfera default grafit) */
 body[data-theme='dark'][data-accent='payme'] {
-  --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 0 192 201;
+  --p-primary: #00b0b9; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
-/* 🔴 Crimson — COIN-EKSKLYUZIV: chuqur qizil neon (do'kon temasi, #40) */
+/* Crimson — COIN-EKSKLYUZIV: chuqur qizil (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='crimson'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #fb3748; --p-on-primary: #ffffff; --p-glow: rgba(251, 55, 72, 0.32); --p-primary-rgb: 251 55 72;
-  --p-purple: #fb7185; --p-purple-rgb: 251 113 133;
-  --p-canvas: #170a0e; --p-surface: #220f15; --p-card: #2a1119; --p-line: #421c27;
-  --theme-canvas: #170a0e; --theme-surface: #220f15; --theme-elevated: #2a1119; --theme-line: #421c27;
+  --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #857376;
+  --theme-fg: #f8f2f3; --theme-fg-muted: #b5a2a5; --theme-fg-subtle: #857376;
+  --p-primary: #e04a5f; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 224 74 95;
+  --p-purple: #d4708a; --p-purple-rgb: 212 112 138;
+  --p-canvas: #170c0e; --p-surface: #2a171b; --p-card: #1e1013; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #170c0e; --theme-surface: #2a171b; --theme-elevated: #1e1013;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 👑 Royal — COIN-EKSKLYUZIV: chuqur indigo shohona (do'kon temasi, #40) */
+/* Royal — COIN-EKSKLYUZIV: chuqur indigo (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='royal'] {
-  --p-fg: #f8fafc; --p-muted: #cbd5e1; --p-subtle: #94a3b8;
-  --theme-fg: #f8fafc; --theme-fg-muted: #cbd5e1; --theme-fg-subtle: #94a3b8;
-  --p-primary: #818cf8; --p-on-primary: #12123a; --p-glow: rgba(129, 140, 248, 0.32); --p-primary-rgb: 129 140 248;
-  --p-purple: #c084fc; --p-purple-rgb: 192 132 252;
-  --p-canvas: #0a0a18; --p-surface: #111126; --p-card: #181a35; --p-line: #282b52;
-  --theme-canvas: #0a0a18; --theme-surface: #111126; --theme-elevated: #181a35; --theme-line: #282b52;
+  --p-fg: #f3f3f8; --p-muted: #a6a6ba; --p-subtle: #76768a;
+  --theme-fg: #f3f3f8; --theme-fg-muted: #a6a6ba; --theme-fg-subtle: #76768a;
+  --p-primary: #7b83e0; --p-on-primary: #0d0e2b; --p-glow: transparent; --p-primary-rgb: 123 131 224;
+  --p-purple: #a37fe0; --p-purple-rgb: 163 127 224;
+  --p-canvas: #0c0c15; --p-surface: #1b1c2e; --p-card: #12131f; --p-line: rgba(255,255,255,0.07);
+  --p-line-strong: rgba(255,255,255,0.14);
+  --theme-canvas: #0c0c15; --theme-surface: #1b1c2e; --theme-elevated: #12131f;
+  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
 }
 
-/* 🧊 Arctic — COIN-EKSKLYUZIV YORUG' atmosfera (sakura kabi light-only dizayn) */
+/* Arctic — COIN-EKSKLYUZIV YORUG' atmosfera (sakura kabi light-only dizayn) */
 body[data-accent='arctic'] {
-  --p-primary: #0ea5e9; --p-on-primary: #ffffff; --p-glow: rgba(0, 0, 0, 0); --p-primary-rgb: 14 165 233;
-  --p-canvas: #f0f9ff; --p-surface: #e0f2fe; --p-card: #ffffff; --p-line: #c2e4f6;
-  --p-fg: #0c2536; --p-muted: #3f627a; --p-subtle: #7b9db4;
-  --theme-canvas: #f0f9ff; --theme-surface: #ffffff; --theme-elevated: #e0f2fe;
-  --theme-fg: #0c2536; --theme-fg-muted: #3f627a; --theme-fg-subtle: #7b9db4;
-  --theme-line: #c2e4f6; --theme-line-strong: #9bd2ee; --theme-shadow: #c8e3f2;
+  --p-primary: #0b7fb8; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 11 127 184;
+  --p-canvas: #f7fafc; --p-surface: #eaf2f7; --p-card: #ffffff;
+  --p-line: #dde8ef; --p-line-strong: #c3d6e2;
+  --p-fg: #14212b; --p-muted: #4e6472; --p-subtle: #82949f;
+  --theme-canvas: #f7fafc; --theme-surface: #eaf2f7; --theme-elevated: #ffffff;
+  --theme-fg: #14212b; --theme-fg-muted: #4e6472; --theme-fg-subtle: #82949f;
+  --theme-line: #dde8ef; --theme-line-strong: #c3d6e2; --theme-shadow: #c3d6e2;
 }
 
-/* ── LIGHT rejim + premium tema: atmosfera o'rniga FAQAT aksent rang ─────────
-   (light fon saqlanadi; aksent kontrast uchun biroz to'qlashtirilgan) */
+/* ── LIGHT rejim + atmosfera temasi ─────────────────────────────────────────
+   Yorug' fonda atmosfera "bo'yalgan fon" bilan emas, iliq stone ground + tema
+   hue'idagi aksent bilan beriladi (kontrast va o'qishlilik saqlanadi). */
 body[data-theme='light'][data-accent='aurora'] {
-  --p-primary: #00d389; --p-on-primary: #032118; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 211 137;
-  --p-canvas: #e6fcf3; --p-surface: #d3f7e8; --p-card: #ffffff; --p-line: #b8ecd6;
-  --theme-canvas: #e6fcf3; --theme-surface: #d3f7e8; --theme-elevated: #ffffff; --theme-line: #b8ecd6;
+  --p-primary: #0a8f74; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 10 143 116;
+  --p-canvas: #f7faf9; --p-surface: #eef4f2; --p-card: #ffffff;
+  --p-line: #e0eae7; --p-line-strong: #c7d8d3;
+  --theme-canvas: #f7faf9; --theme-surface: #eef4f2; --theme-elevated: #ffffff;
+  --theme-line: #e0eae7; --theme-line-strong: #c7d8d3;
 }
 body[data-theme='light'][data-accent='violet'] {
-  --p-primary: #a855f7; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 168 85 247;
-  --p-canvas: #f6efff; --p-surface: #efe3ff; --p-card: #ffffff; --p-line: #dcc8f7;
-  --theme-canvas: #f6efff; --theme-surface: #efe3ff; --theme-elevated: #ffffff; --theme-line: #dcc8f7;
+  --p-primary: #7c4fd4; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 124 79 212;
+  --p-canvas: #faf8fc; --p-surface: #f2eef7; --p-card: #ffffff;
+  --p-line: #e8e1f0; --p-line-strong: #d4c8e2;
+  --theme-canvas: #faf8fc; --theme-surface: #f2eef7; --theme-elevated: #ffffff;
+  --theme-line: #e8e1f0; --theme-line-strong: #d4c8e2;
 }
 body[data-theme='light'][data-accent='ocean'] {
-  --p-primary: #0ea5e9; --p-on-primary: #062033; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 14 165 233;
-  --p-canvas: #eaf6fe; --p-surface: #d9effd; --p-card: #ffffff; --p-line: #bde0f5;
-  --theme-canvas: #eaf6fe; --theme-surface: #d9effd; --theme-elevated: #ffffff; --theme-line: #bde0f5;
+  --p-primary: #0d6fb0; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 13 111 176;
+  --p-canvas: #f8fafc; --p-surface: #eef3f7; --p-card: #ffffff;
+  --p-line: #e1e9ef; --p-line-strong: #c8d7e2;
+  --theme-canvas: #f8fafc; --theme-surface: #eef3f7; --theme-elevated: #ffffff;
+  --theme-line: #e1e9ef; --theme-line-strong: #c8d7e2;
 }
 body[data-theme='light'][data-accent='forest'] {
-  --p-primary: #10b981; --p-on-primary: #04291c; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 16 185 129;
-  --p-canvas: #e9f7f0; --p-surface: #d7f0e3; --p-card: #ffffff; --p-line: #b8e2cd;
-  --theme-canvas: #e9f7f0; --theme-surface: #d7f0e3; --theme-elevated: #ffffff; --theme-line: #b8e2cd;
+  --p-primary: #0f7a52; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 15 122 82;
+  --p-canvas: #f8faf9; --p-surface: #eef4f1; --p-card: #ffffff;
+  --p-line: #e0eae5; --p-line-strong: #c7d8d0;
+  --theme-canvas: #f8faf9; --theme-surface: #eef4f1; --theme-elevated: #ffffff;
+  --theme-line: #e0eae5; --theme-line-strong: #c7d8d0;
 }
 body[data-theme='light'][data-accent='sunset'] {
-  --p-primary: #f97316; --p-on-primary: #2a1200; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 249 115 22;
-  --p-canvas: #fdf1e7; --p-surface: #fce4cc; --p-card: #ffffff; --p-line: #f5d0a8;
-  --theme-canvas: #fdf1e7; --theme-surface: #fce4cc; --theme-elevated: #ffffff; --theme-line: #f5d0a8;
+  --p-primary: #c05e17; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 192 94 23;
+  --p-canvas: #fdfaf7; --p-surface: #f7efe8; --p-card: #ffffff;
+  --p-line: #efe3d9; --p-line-strong: #ddc9b8;
+  --theme-canvas: #fdfaf7; --theme-surface: #f7efe8; --theme-elevated: #ffffff;
+  --theme-line: #efe3d9; --theme-line-strong: #ddc9b8;
 }
 body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
 body[data-theme='light'][data-accent='obsidian'] {
-  --p-primary: #27272a; --p-on-primary: #fafafa; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 39 39 42;
-  --p-canvas: #f4f4f5; --p-surface: #e9e9ec; --p-card: #ffffff; --p-line: #dcdce0;
-  --theme-canvas: #f4f4f5; --theme-surface: #e9e9ec; --theme-elevated: #ffffff; --theme-line: #dcdce0;
+  --p-primary: #3f3f46; --p-on-primary: #fafafa; --p-glow: transparent; --p-primary-rgb: 63 63 70;
+  --p-canvas: #fafafa; --p-surface: #f4f4f5; --p-card: #ffffff;
+  --p-line: #e7e7ea; --p-line-strong: #d4d4d8;
+  --theme-canvas: #fafafa; --theme-surface: #f4f4f5; --theme-elevated: #ffffff;
+  --theme-line: #e7e7ea; --theme-line-strong: #d4d4d8;
 }
 body[data-theme='light'][data-accent='gold'] {
-  --p-primary: #eab308; --p-on-primary: #241a00; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 234 179 8;
-  --p-canvas: #fdfaee; --p-surface: #fbf3d5; --p-card: #ffffff; --p-line: #f0e3ac;
-  --theme-canvas: #fdfaee; --theme-surface: #fbf3d5; --theme-elevated: #ffffff; --theme-line: #f0e3ac;
+  --p-primary: #966d1f; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 150 109 31;
+  --p-canvas: #fcfaf6; --p-surface: #f5f1e7; --p-card: #ffffff;
+  --p-line: #ece5d5; --p-line-strong: #d9cdb2;
+  --theme-canvas: #fcfaf6; --theme-surface: #f5f1e7; --theme-elevated: #ffffff;
+  --theme-line: #ece5d5; --theme-line-strong: #d9cdb2;
 }
 body[data-theme='light'][data-accent='payme'] {
-  --p-primary: #00c0c9; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 0 192 201;
-  --p-canvas: #e6fafb; --p-surface: #d4f4f6; --p-card: #ffffff; --p-line: #b3e8eb;
-  --theme-canvas: #e6fafb; --theme-surface: #d4f4f6; --theme-elevated: #ffffff; --theme-line: #b3e8eb;
+  --p-primary: #00858c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 133 140;
+  --p-canvas: #f7fafa; --p-surface: #edf4f4; --p-card: #ffffff;
+  --p-line: #dfeaea; --p-line-strong: #c5d8d9;
+  --theme-canvas: #f7fafa; --theme-surface: #edf4f4; --theme-elevated: #ffffff;
+  --theme-line: #dfeaea; --theme-line-strong: #c5d8d9;
 }
 body[data-theme='light'][data-accent='crimson'] {
-  --p-primary: #e11d48; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 225 29 72;
-  --p-canvas: #fff1f2; --p-surface: #ffe4e6; --p-card: #ffffff; --p-line: #f6c6ce;
-  --theme-canvas: #fff1f2; --theme-surface: #ffe4e6; --theme-elevated: #ffffff; --theme-line: #f6c6ce;
+  --p-primary: #b31739; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 179 23 57;
+  --p-canvas: #fdf8f9; --p-surface: #f7ecee; --p-card: #ffffff;
+  --p-line: #efdfe2; --p-line-strong: #ddc3c8;
+  --theme-canvas: #fdf8f9; --theme-surface: #f7ecee; --theme-elevated: #ffffff;
+  --theme-line: #efdfe2; --theme-line-strong: #ddc3c8;
 }
 body[data-theme='light'][data-accent='royal'] {
-  --p-primary: #6366f1; --p-on-primary: #ffffff; --p-glow: rgba(0,0,0,0); --p-primary-rgb: 99 102 241;
-  --p-canvas: #eef0ff; --p-surface: #dfe3ff; --p-card: #ffffff; --p-line: #c2c8f8;
-  --theme-canvas: #eef0ff; --theme-surface: #dfe3ff; --theme-elevated: #ffffff; --theme-line: #c2c8f8;
+  --p-primary: #4a4fc4; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 74 79 196;
+  --p-canvas: #f9f9fc; --p-surface: #eff0f7; --p-card: #ffffff;
+  --p-line: #e3e4f0; --p-line-strong: #cbcde2;
+  --theme-canvas: #f9f9fc; --theme-surface: #eff0f7; --theme-elevated: #ffffff;
+  --theme-line: #e3e4f0; --theme-line-strong: #cbcde2;
 }
 body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shartsiz blok yetarli (sakura kabi) */ }
 
 
-/* Neon glow utilitasi — aksent rangida (ring chart, CTA, halqalar) */
-.glow-premium { box-shadow: 0 0 22px 0 var(--p-glow); }
-.glow-accent-sm { box-shadow: 0 0 10px rgb(var(--p-primary-rgb) / 0.45); }
-.neon-text-glow { text-shadow: 0 0 18px var(--p-glow); }
+/* v3: glow utilitalari tizimdan chiqarildi — klass nomlari saqlangan
+   (call-site'lar Phase 6'da tozalanadi, bir zumda sinmasin) */
+.glow-premium,
+.glow-accent-sm { box-shadow: none; }
+.neon-text-glow { text-shadow: none; }
 
-/* ── Shrift: SF Pro / Inter (premium ekranlar) ───────────────────────────── */
+/* ── Shrift (v3): sarlavha va raqamlar Bricolage Grotesque, matn Inter Tight ──
+   Nunito (Duolingo Feather'ga yaqin yumaloq gротеск) tizimdan chiqarildi. */
 .font-display {
-  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  letter-spacing: -0.01em;
+  font-family: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
-/* Sahifa sarlavhalari (h1) — matn Inter'da qoladi, sarlavha Nunito bilan biroz
-   yumshoqroq/o'ziga xos ko'rinadi (asosiy shrift bilan bir xil bo'lib qolmasin) */
-h1 {
-  font-family: 'Nunito', 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
 }
 
-/* ── Premium karta: katta radius, juda ingichka border, yumshoq soya ─────── */
+/* ── Karta (v3): konteyner radiusi + hairline, soyasiz ──────────────────── */
 .card-premium {
   background: var(--p-card);
   border: 1px solid var(--p-line);
-  border-radius: 24px;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.03),
-    0 10px 28px rgba(2, 6, 16, 0.30);
-}
-body[data-theme='light'] .card-premium {
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+  border-radius: var(--radius-container);
 }
 
-/* ── Dashboard Light Theme Gradients (Har bir tema uchun) ─────────────────
-   Tepasi temaning jonli aksent rangidagi gradient, pastga qarab toza oq / light canvas'da eriydi. */
-
-/* Default (Kiwi) */
-body[data-theme='light'] .dashboard-page,
-body[data-theme='light'][data-accent='kiwi'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #16a34a 0%, #22c55e 35%, #4ade80 65%, transparent 100%),
-    linear-gradient(180deg, #16a34a 0px, #22c55e 100px, #4ade80 190px, #86efac 280px, #dcfce7 360px, #f0fdf4 430px, #f8fafc 500px, #f8fafc 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌌 Aurora */
-body[data-theme='light'][data-accent='aurora'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #059669 0%, #00d389 35%, #34d399 65%, transparent 100%),
-    linear-gradient(180deg, #059669 0px, #00d389 100px, #34d399 190px, #6ee7b7 280px, #cbf5e4 360px, #eefcf6 430px, #e6fcf3 500px, #e6fcf3 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🍇 Amethyst (Violet) */
-body[data-theme='light'][data-accent='violet'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #6d28d9 0%, #a855f7 35%, #c084fc 65%, transparent 100%),
-    linear-gradient(180deg, #6d28d9 0px, #9333ea 100px, #a855f7 190px, #c084fc 280px, #e9d5ff 360px, #f5edff 430px, #f6efff 500px, #f6efff 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌊 Ocean */
-body[data-theme='light'][data-accent='ocean'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #0369a1 0%, #0ea5e9 35%, #38bdf8 65%, transparent 100%),
-    linear-gradient(180deg, #0369a1 0px, #0284c7 100px, #0ea5e9 190px, #38bdf8 280px, #bae6fd 360px, #e0f2fe 430px, #eaf6fe 500px, #eaf6fe 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌲 Forest */
-body[data-theme='light'][data-accent='forest'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #065f46 0%, #10b981 35%, #34d399 65%, transparent 100%),
-    linear-gradient(180deg, #065f46 0px, #047857 100px, #10b981 190px, #34d399 280px, #a7f3d0 360px, #d1fae5 430px, #e9f7f0 500px, #e9f7f0 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌅 Sunset */
-body[data-theme='light'][data-accent='sunset'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #c2410c 0%, #f97316 35%, #fb923c 65%, transparent 100%),
-    linear-gradient(180deg, #c2410c 0px, #ea580c 100px, #f97316 190px, #fb923c 280px, #fed7aa 360px, #ffedd5 430px, #fdf1e7 500px, #fdf1e7 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌸 Sakura */
-body[data-theme='light'][data-accent='sakura'] .dashboard-page,
-body[data-accent='sakura'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #be185d 0%, #ec4899 35%, #f472b6 65%, transparent 100%),
-    linear-gradient(180deg, #be185d 0px, #db2777 100px, #ec4899 190px, #f472b6 280px, #fbcfe8 360px, #fdf2f8 430px, #fff1f5 500px, #fff1f5 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🌑 Obsidian */
-body[data-theme='light'][data-accent='obsidian'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #09090b 0%, #18181b 35%, #27272a 65%, transparent 100%),
-    linear-gradient(180deg, #09090b 0px, #18181b 100px, #27272a 190px, #52525b 280px, #a1a1aa 360px, #e4e4e7 430px, #f4f4f5 500px, #f4f4f5 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🥇 Gold Elite */
-body[data-theme='light'][data-accent='gold'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #92400e 0%, #d97706 35%, #eab308 65%, transparent 100%),
-    linear-gradient(180deg, #92400e 0px, #b45309 100px, #d97706 190px, #eab308 280px, #fde047 360px, #fef9c3 430px, #fdfaee 500px, #fdfaee 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🩵 Payme */
-body[data-theme='light'][data-accent='payme'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #00767c 0%, #00c0c9 35%, #38dbe3 65%, transparent 100%),
-    linear-gradient(180deg, #00767c 0px, #008f96 100px, #00c0c9 190px, #38dbe3 280px, #a5f3f7 360px, #cffafe 430px, #e6fafb 500px, #e6fafb 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🔴 Crimson (coin) */
-body[data-theme='light'][data-accent='crimson'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #9f1239 0%, #e11d48 35%, #fb7185 65%, transparent 100%),
-    linear-gradient(180deg, #9f1239 0px, #be123c 100px, #e11d48 190px, #fb7185 280px, #fecdd3 360px, #fff1f2 430px, #fff1f2 500px, #fff1f2 100%);
-  background-repeat: no-repeat;
-}
-
-/* 👑 Royal (coin) */
-body[data-theme='light'][data-accent='royal'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #4338ca 0%, #6366f1 35%, #818cf8 65%, transparent 100%),
-    linear-gradient(180deg, #4338ca 0px, #4f46e5 100px, #6366f1 190px, #818cf8 280px, #c7d2fe 360px, #e0e7ff 430px, #eef0ff 500px, #eef0ff 100%);
-  background-repeat: no-repeat;
-}
-
-/* 🧊 Arctic (coin, light-only — sakura kabi) */
-body[data-theme='light'][data-accent='arctic'] .dashboard-page,
-body[data-accent='arctic'] .dashboard-page {
-  background-color: var(--p-canvas);
-  background-image:
-    radial-gradient(130% 420px at 50% 0px, #0369a1 0%, #0ea5e9 35%, #38bdf8 65%, transparent 100%),
-    linear-gradient(180deg, #0369a1 0px, #0284c7 100px, #0ea5e9 190px, #38bdf8 280px, #bae6fd 360px, #e0f2fe 430px, #f0f9ff 500px, #f0f9ff 100%);
-  background-repeat: no-repeat;
-}
+/* ── Dashboard foni (v3) ─────────────────────────────────────────────────
+   13 ta temaga 13 ta baland radial+linear gradient sarlavha OLIB TASHLANDI
+   (ortiqcha dekoratsiya). Fon endi oddiy canvas tokeni — atmosfera aksent va
+   sirt ierarxiyasi bilan beriladi. */
+.dashboard-page { background-color: var(--p-canvas); }
 
 /* ── AVATAR RAMKALARI (do'kon kosmetikasi, #40) ──────────────────────────────
    CSS-only (rasm assetsiz): wrapper'ga gradient fon + padding, ichki element
@@ -712,190 +694,157 @@ body[data-accent='arctic'] .dashboard-page {
 /* Neon — JORIY aksent temasiga moslashuvchan (var(--p-primary)) */
 .avatar-frame-neon {
   background: conic-gradient(from 180deg, var(--p-primary), transparent 30%, var(--p-primary) 60%, transparent 85%, var(--p-primary));
-  box-shadow: 0 0 14px rgb(var(--p-primary-rgb) / 0.45);
+  box-shadow: 0 0 12px rgb(var(--p-primary-rgb) / 0.22);
 }
 .avatar-frame-arctic {
   background: linear-gradient(135deg, #7dd3fc, #0ea5e9 45%, #e0f2fe 70%, #0284c7);
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.22);
 }
 .avatar-frame-royal {
   background: linear-gradient(135deg, #c7d2fe, #6366f1 45%, #a5b4fc 70%, #4338ca);
-  box-shadow: 0 0 12px rgba(129, 140, 248, 0.45);
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.22);
 }
 .avatar-frame-gold {
   background: linear-gradient(135deg, #fde68a, #f59e0b 40%, #fef3c7 60%, #b45309);
-  box-shadow: 0 0 14px rgba(250, 204, 21, 0.45);
+  box-shadow: 0 0 14px rgba(250, 204, 21, 0.22);
 }
 .avatar-frame-fire {
   background: conic-gradient(from 0deg, #f97316, #ef4444 25%, #fbbf24 50%, #ef4444 75%, #f97316);
-  box-shadow: 0 0 14px rgba(249, 115, 22, 0.5);
+  box-shadow: 0 0 14px rgba(249, 115, 22, 0.22);
 }
 /* Mavsumiy: Navro'z (bahor — zomcha yashili + lola guli) */
 .avatar-frame-navruz {
   background: conic-gradient(from 90deg, #34d399, #84cc16 30%, #fb7185 55%, #34d399 80%, #34d399);
-  box-shadow: 0 0 14px rgba(52, 211, 153, 0.45);
+  box-shadow: 0 0 14px rgba(52, 211, 153, 0.22);
 }
 /* Mavsumiy: Mustaqillik (bayroq ranglari — ko'k/ojoq/yashil) */
 .avatar-frame-mustaqillik {
   background: linear-gradient(135deg, #38bdf8, #f8fafc 40%, #22c55e 70%, #0284c7);
-  box-shadow: 0 0 14px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.22);
 }
 
-/* Light dashboard topbar kontrast va frosted glass */
-body[data-theme='light'] .dashboard-page .dashboard-topbar-subtle {
-  color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-}
-body[data-theme='light'] .dashboard-page .dashboard-topbar-title {
-  color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
-}
-body[data-theme='light'] .dashboard-page .dashboard-topbar-btn {
-  background: rgba(255, 255, 255, 0.22) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.38) !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-body[data-theme='light'] .dashboard-page .dashboard-topbar-level {
-  background: rgba(255, 255, 255, 0.22) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.38) !important;
-  color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-body[data-theme='light'] .dashboard-page .dashboard-topbar-settings {
-  background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-body[data-theme='light'] .dashboard-page .dashboard-topbar-settings:hover {
-  background: rgba(255, 255, 255, 0.32);
-  color: #ffffff;
-}
-body[data-theme='light'] .dashboard-page .dashboard-avatar-ring {
-  border-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-}
+/* Dashboard topbar (v3): light rejim uchun 'frosted glass on gradient'
+   override'lari OLIB TASHLANDI — gradient yo'q, TopBar'dagi token-asosli inline
+   stillar (subject.color, --p-purple-rgb, --p-gold-rgb) ikkala temada ham ishlaydi. */
 
-/* ── KIWI tugma tizimi (Duolingo 3D EMAS — tekis, yumshoq glow) ──────────── */
+/* ── KIWI tugma tizimi (v3) ────────────────────────────────────────────────
+   Gradient, inset highlight va rangli "glow" soya OLIB TASHLANDI. Tekis sirt,
+   44px touch balandligi, 10px boshqaruv radiusi, bosish = scale(.98) 120ms. */
 .btn-premium {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 58px;
-  padding: 0 24px;
-  border-radius: 16px;
-  /* Gradient primary (aksent → 20% to'qlashtirilgan): temaga ergashadi */
-  background: linear-gradient(135deg, var(--p-primary), color-mix(in srgb, var(--p-primary) 80%, #000));
+  height: 44px;
+  padding: 0 18px;
+  border-radius: var(--radius-control);
+  background: var(--p-primary);
   color: var(--p-on-primary);
   font-weight: 600;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.25),
-    0 10px 30px rgb(var(--p-primary-rgb) / 0.22);
-  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease,
-              background-color 0.3s ease;
+  transition: transform 120ms var(--ease-out),
+              background-color 120ms var(--ease-out),
+              filter 120ms var(--ease-out);
   user-select: none;
   touch-action: manipulation;
 }
-.btn-premium:hover { filter: brightness(1.08); }
-.btn-premium:active {
-  transform: scale(0.97);
-  filter: brightness(0.90);
+.btn-premium:hover { filter: brightness(1.06); }
+.btn-premium:active { transform: scale(0.98); }
+.btn-premium:disabled { opacity: 0.42; pointer-events: none; }
+.btn-premium:focus-visible,
+.btn-premium-secondary:focus-visible,
+.btn-premium-outline:focus-visible,
+.btn-premium-ai:focus-visible,
+.btn-premium-gold:focus-visible {
+  outline: 2px solid var(--p-primary);
+  outline-offset: 2px;
 }
-.btn-premium:disabled { opacity: 0.45; pointer-events: none; }
 
 /* Kichik CTA (kartalar ichida) */
 .btn-premium-sm {
-  height: 44px;
-  padding: 0 18px;
-  border-radius: 14px;
-  font-size: 13px;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: var(--radius-control);
+  font-size: 13.5px;
 }
 
-/* Secondary: to'q karta + ingichka border */
+/* Secondary: sirt qatlami + hairline */
 .btn-premium-secondary {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  border-radius: 18px;
-  background: var(--p-card);
-  border: 1px solid var(--p-line);
+  border-radius: var(--radius-control);
+  background: var(--p-surface);
+  border: 1px solid var(--p-line-strong);
   color: var(--p-fg);
   font-weight: 600;
-  transition: transform 0.12s ease, border-color 0.2s ease, background 0.2s ease;
+  transition: transform 120ms var(--ease-out),
+              border-color 120ms var(--ease-out),
+              background-color 120ms var(--ease-out);
   user-select: none;
   touch-action: manipulation;
 }
-.btn-premium-secondary:active { transform: scale(0.97); }
+.btn-premium-secondary:hover { background: var(--p-card); }
+.btn-premium-secondary:active { transform: scale(0.98); }
 
-/* Outline: shaffof + border */
+/* Outline: shaffof + hairline */
 .btn-premium-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 52px;
-  padding: 0 22px;
-  border-radius: 16px;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: var(--radius-control);
   background: transparent;
-  border: 1.5px solid var(--p-line);
+  border: 1px solid var(--p-line-strong);
   color: var(--p-fg);
   font-weight: 600;
-  transition: transform 0.12s ease, border-color 0.2s ease;
+  transition: transform 120ms var(--ease-out), border-color 120ms var(--ease-out);
 }
-.btn-premium-outline:active { transform: scale(0.97); border-color: var(--p-fg); }
+.btn-premium-outline:active { transform: scale(0.98); border-color: var(--p-fg); }
 
-/* AI tugma: purple glass */
+/* AI tugma — purple wash (blur/glass yo'q) */
 .btn-premium-ai {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 16px;
-  background: rgba(139, 92, 246, 0.14);
-  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: var(--radius-control);
+  background: rgb(var(--p-purple-rgb) / 0.12);
+  border: 1px solid rgb(var(--p-purple-rgb) / 0.30);
   color: var(--p-purple);
   font-weight: 600;
-  backdrop-filter: blur(8px);
-  transition: transform 0.12s ease, background 0.2s ease;
+  transition: transform 120ms var(--ease-out), background-color 120ms var(--ease-out);
 }
-.btn-premium-ai:active { transform: scale(0.97); }
+.btn-premium-ai:active { transform: scale(0.98); }
 
-/* Premium oltin CTA (obuna) — token'li: pgold → pgold-deep, matn pon-gold */
+/* Premium oltin CTA (obuna) — yagona tekis oltin, gradient/soya yo'q */
 .btn-premium-gold {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--p-gold) 82%, #fff) 0%, var(--p-gold) 50%, var(--p-gold-deep) 100%);
+  border-radius: var(--radius-control);
+  background: var(--p-gold);
   color: var(--p-on-gold);
-  font-weight: 700;
-  box-shadow: 0 8px 22px rgb(var(--p-gold-rgb) / 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  transition: transform 0.12s ease, filter 0.2s ease;
+  font-weight: 600;
+  transition: transform 120ms var(--ease-out), filter 120ms var(--ease-out);
 }
-.btn-premium-gold:active { transform: scale(0.97); filter: brightness(0.96); }
+.btn-premium-gold:hover { filter: brightness(1.06); }
+.btn-premium-gold:active { transform: scale(0.98); }
 
-/* ── Progress chizig'i (premium) ─────────────────────────────────────────── */
+/* ── Progress (v3): 3px ingichka rail ────────────────────────────────────── */
 .progress-premium {
-  height: 8px;
-  border-radius: 999px;
-  background: var(--p-line);
+  height: 3px;
+  border-radius: 2px;
+  background: var(--p-line-strong);
   overflow: hidden;
 }
-body[data-theme='light'] .progress-premium { background: #e8eef5; }
 .progress-premium > .fill {
   height: 100%;
-  border-radius: 999px;
+  border-radius: 2px;
   background: var(--p-primary);
-  transition: width 400ms cubic-bezier(0.22, 1, 0.36, 1), background-color 0.3s ease;
+  transition: width 400ms var(--ease-out), background-color 0.3s ease;
 }
 
 /* Tema almashganda kartalar yumshoq "apply" animatsiyasi bilan rang o'zgartiradi */
