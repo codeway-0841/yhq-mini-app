@@ -9,8 +9,8 @@
    bog'langan — tema almashganda butun ilova avtomatik yangilanadi.
    --neon-* nomlari backward-compat uchun saqlangan (glow v3'da yo'q). */
 :root {
-  /* v2.2 — semantik matn darajalari + Apple/Linear surface'lar.
-     fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary (darhaqiqat semantic). */
+  /* v3 — semantik matn darajalari + Apple/Linear surface'lar.
+     fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary. */
   --theme-canvas:      #0d1117;
   --theme-surface:     #1c222b;
   --theme-elevated:    #161b22;
@@ -189,7 +189,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v3 "Graphite" — sovuq-neytral to'q ground (pure black EMAS, navy EMAS) */
+  /* v3 "Jade & Stone" — sovuq-neytral grafit fon (#0d1117), jade yashil aksent (#0fa47f) */
   --p-canvas:      #0d1117;
   --p-card:        #161b22;
   --p-surface:     #1c222b;
@@ -200,9 +200,9 @@ body[data-no-animation='true'] .route-page { animation: none; }
   --p-muted:       #a8a29e;   /* Secondary text */
   --p-subtle:      #78716c;   /* Tertiary text */
   --p-disabled:    #57534e;   /* Disabled text */
-  --p-link:        #0fa47f;   /* Link (to'q rejim) */
+  --p-link:        #0fa47f;   /* Link */
 
-  /* Aksent — Jade (data-accent bilan almashadi) */
+  /* Aksent — Jade Green (data-accent bilan almashadi) */
   --p-primary:     #0fa47f;
   --p-on-primary:  #04140f;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
@@ -214,22 +214,21 @@ body[data-no-animation='true'] .route-page { animation: none; }
   --p-warning-rgb: 224 160 69;
   --p-danger:      #f0546e;
   --p-danger-rgb:  240 84 110;
-  --p-purple:      #8b7fd4;   /* AI/Premium — ba'zi temalar override qiladi */
+  --p-purple:      #8b7fd4;   /* AI/Premium */
   --p-purple-rgb:  139 127 212;
   --p-blue:        #4a90d9;
   --p-blue-rgb:    74 144 217;
-  --p-gold:        #d9a441;   /* Premium oltin — gradient jufti + ustidagi matn bilan birga */
+  --p-gold:        #d9a441;   /* Premium oltin */
   --p-gold-rgb:    217 164 65;
   --p-gold-deep:   #b8862c;
   --p-on-gold:     #241a00;
 
-  /* ── Geometriya (v3): ikki bosqichli radius ── */
-  --radius-control:   10px;   /* tugma, input, badge */
-  --radius-container: 18px;   /* card, panel */
-  --radius-sheet:     24px;   /* sheet — faqat yuqori burchak */
+  /* ── Geometriya (Jade & Stone / Vega): nozik va qulay radius shkalasi ── */
+  --radius-control:   8px;    /* tugma, input, badge */
+  --radius-container: 14px;   /* card, panel */
+  --radius-sheet:     20px;   /* sheet — pastki modal */
   --radius: var(--radius-control);   /* shadcn/ui base */
-  --ease-out: cubic-bezier(0.2, 0, 0, 1);
-
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ── shadcn/ui ko'prigi ────────────────────────────────────────────────────
@@ -262,7 +261,7 @@ body {
   --ring:               var(--p-primary);
 }
 
-/* v3 "Stone" — iliq-neytral yorug' ground (sovuq slate/zinc EMAS) */
+/* v3 "Stone Light" — iliq-neytral yorug' ground */
 body[data-theme='light'] {
   --p-canvas:      #fafaf9;
   --p-card:        #ffffff;
@@ -276,10 +275,10 @@ body[data-theme='light'] {
   --p-disabled:    #a8a29e;
   --p-link:        #0d8a6a;
 
-  /* Aksent yorug' fonda kontrast uchun to'qlashtiriladi (WCAG AA matn ustida) */
+  /* Aksent yorug' fonda to'qlashtirilgan Jade */
   --p-primary:     #0d8a6a;
   --p-primary-rgb: 13 138 106;
-  --p-on-primary:  #000000;   /* oq 4.32:1 edi (AA<4.5) — qora 4.86:1 */
+  --p-on-primary:  #000000;
   --p-glow:        transparent;
 
   /* Semantik ranglar — yorug' fon uchun to'q variantlar */
@@ -384,16 +383,55 @@ body[data-accent='sakura'] {
   --theme-line: #f0dee3; --theme-line-strong: #e2c3cc; --theme-shadow: #e2c3cc;
 }
 
-/* Obsidian — premium sof qora, kumush aksent (AI: neytral kulrang) */
+/* Obsidian / Linear Tech — premium chuqur pitch obsidian qora, electric blue aksent */
 body[data-theme='dark'][data-accent='obsidian'] {
   --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #71717a;
   --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #71717a;
-  --p-primary: #d4d4d8; --p-on-primary: #09090b; --p-glow: transparent; --p-primary-rgb: 212 212 216;
-  --p-purple: #a1a1aa; --p-purple-rgb: 161 161 170;
-  --p-canvas: #08080a; --p-surface: #17171a; --p-card: #0f0f12; --p-line: rgba(255,255,255,0.07);
-  --p-line-strong: rgba(255,255,255,0.14);
-  --theme-canvas: #08080a; --theme-surface: #17171a; --theme-elevated: #0f0f12;
-  --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
+  --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 59 130 246;
+  --p-purple: #8b5cf6; --p-purple-rgb: 139 92 246;
+  --p-canvas: #08090a; --p-surface: #17181c; --p-card: #111215; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #08090a; --theme-surface: #17181c; --theme-elevated: #111215;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: #000000;
+}
+
+/* Gamified Neo — jonli Duolingo emerald yashili, to'q slate navy */
+body[data-theme='dark'][data-accent='neo'] {
+  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #64748b;
+  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
+  --p-primary: #22c55e; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 34 197 94;
+  --p-purple: #a855f7; --p-purple-rgb: 168 85 247;
+  --p-canvas: #0f172a; --p-surface: #334155; --p-card: #1e293b; --p-line: rgba(255,255,255,0.1);
+  --p-line-strong: rgba(255,255,255,0.2);
+  --theme-canvas: #0f172a; --theme-surface: #334155; --theme-elevated: #1e293b;
+  --theme-line: rgba(255,255,255,0.1); --theme-line-strong: rgba(255,255,255,0.2);
+  --theme-shadow: rgba(0,0,0,0.35);
+}
+
+/* Nordic Glass — sokin tumanli kecha, toza muz-havorang */
+body[data-theme='dark'][data-accent='nordic'] {
+  --p-fg: #f1f5f9; --p-muted: #94a3b8; --p-subtle: #64748b;
+  --theme-fg: #f1f5f9; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
+  --p-primary: #38bdf8; --p-on-primary: #082f49; --p-glow: transparent; --p-primary-rgb: 56 189 248;
+  --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
+  --p-canvas: #0c1017; --p-surface: #1b2434; --p-card: #131924; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #0c1017; --theme-surface: #1b2434; --theme-elevated: #131924;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: rgba(0,0,0,0.4);
+}
+
+/* CarPlay Luxury — avtomobil bort kompyuteri, amber olovrang aksent */
+body[data-theme='dark'][data-accent='carplay'] {
+  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #64748b;
+  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
+  --p-primary: #f97316; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 249 115 22;
+  --p-purple: #ec4899; --p-purple-rgb: 236 72 153;
+  --p-canvas: #0b0d11; --p-surface: #1c202c; --p-card: #14171f; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #0b0d11; --theme-surface: #1c202c; --theme-elevated: #14171f;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
   --theme-shadow: #000000;
 }
 
@@ -488,11 +526,32 @@ body[data-theme='light'][data-accent='sunset'] {
 }
 body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
 body[data-theme='light'][data-accent='obsidian'] {
-  --p-primary: #3f3f46; --p-on-primary: #fafafa; --p-glow: transparent; --p-primary-rgb: 63 63 70;
+  --p-primary: #2563eb; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 37 99 235;
+  --p-canvas: #f9fafb; --p-surface: #f3f4f6; --p-card: #ffffff;
+  --p-line: #e5e7eb; --p-line-strong: #d1d5db;
+  --theme-canvas: #f9fafb; --theme-surface: #f3f4f6; --theme-elevated: #ffffff;
+  --theme-line: #e5e7eb; --theme-line-strong: #d1d5db;
+}
+body[data-theme='light'][data-accent='neo'] {
+  --p-primary: #16a34a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 22 163 74;
+  --p-canvas: #f8fafc; --p-surface: #f1f5f9; --p-card: #ffffff;
+  --p-line: #e2e8f0; --p-line-strong: #cbd5e1;
+  --theme-canvas: #f8fafc; --theme-surface: #f1f5f9; --theme-elevated: #ffffff;
+  --theme-line: #e2e8f0; --theme-line-strong: #cbd5e1;
+}
+body[data-theme='light'][data-accent='nordic'] {
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #f8fafc; --p-surface: #f0f4f8; --p-card: #ffffff;
+  --p-line: #e2e8f0; --p-line-strong: #cbd5e1;
+  --theme-canvas: #f8fafc; --theme-surface: #f0f4f8; --theme-elevated: #ffffff;
+  --theme-line: #e2e8f0; --theme-line-strong: #cbd5e1;
+}
+body[data-theme='light'][data-accent='carplay'] {
+  --p-primary: #ea580c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 234 88 12;
   --p-canvas: #fafafa; --p-surface: #f4f4f5; --p-card: #ffffff;
-  --p-line: #e7e7ea; --p-line-strong: #d4d4d8;
+  --p-line: #e4e4e7; --p-line-strong: #d4d4d8;
   --theme-canvas: #fafafa; --theme-surface: #f4f4f5; --theme-elevated: #ffffff;
-  --theme-line: #e7e7ea; --theme-line-strong: #d4d4d8;
+  --theme-line: #e4e4e7; --theme-line-strong: #d4d4d8;
 }
 body[data-theme='light'][data-accent='gold'] {
   --p-primary: #966d1f; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 150 109 31;
