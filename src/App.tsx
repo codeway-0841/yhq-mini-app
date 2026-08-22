@@ -129,9 +129,15 @@ function Layout() {
 function ThemeEffect() {
   const theme       = useAppStore((s) => s.settings.theme)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
+  const language    = useAppStore((s) => s.settings.language)
   const accent      = useAppStore((s) => s.accent)
   const tariff      = useAppStore((s) => s.tariff)
   const ownedItems  = useAppStore((s) => s.ownedItems)
+  useEffect(() => {
+    // <html lang> — screen reader talaffuzi uchun; qattiq "uz" bilan boshlanadi (index.html),
+    // foydalanuvchi tilni almashtirsa sinxronlanadi.
+    document.documentElement.lang = language ?? 'uz'
+  }, [language])
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
