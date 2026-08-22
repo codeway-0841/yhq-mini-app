@@ -522,7 +522,7 @@ export const api = {
     request<{ stats: AchievementStats }>('GET', `/achievements/${uid(userId)}`),
 
   touchDailyActivity: (userId: string, data: { subjectId: string }) =>
-    request<{ ok: true; dailyStreak: number }>('POST', `/daily/${uid(userId)}/activity`, data),
+    request<{ ok: true; dailyStreak: number; coinSaved?: boolean }>('POST', `/daily/${uid(userId)}/activity`, data),
 
   // ── Spaced Repetition (Adaptive Mode) Cards ────────────────────────────
   getCards: (userId: string, subjectId: string) =>
@@ -848,6 +848,8 @@ export interface ResultResponse {
   coinsEarned?: number
   /** #40: mint'dan keyingi server balansi (wrong javobda null) */
   coinBalance?: number | null
+  /** Streak coin-save: shu javob uzilgan seriyani 50 coin evaziga saqladi */
+  coinSaved?: boolean
 }
 
 /** Do'kon xaridi javobi (#40) */

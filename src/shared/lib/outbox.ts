@@ -115,6 +115,8 @@ export interface ResultSyncInfo {
   correct:        boolean
   dailyStreak:    number | null
   duplicate:      boolean
+  /** Server shu javob bilan uzilgan seriyani coin evaziga saqladi */
+  coinSaved?:     boolean
 }
 let resultSyncHandler: ((info: ResultSyncInfo) => void) | null = null
 export function setResultSyncHandler(fn: typeof resultSyncHandler): void {
@@ -142,6 +144,7 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         correct:        res.correct ?? false,
         dailyStreak:    res.dailyStreak,
         duplicate:      !!res.duplicate,
+        coinSaved:      res.coinSaved,
       })
       return
     }

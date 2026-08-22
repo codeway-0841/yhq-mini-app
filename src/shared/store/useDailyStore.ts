@@ -29,6 +29,12 @@ interface DailyState {
   streaks: Record<string, number>
   /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` (kunda 1 marta yuborish uchun) */
   activityKey: string | null
+  /**
+   * Streak coin-save yuz berdi — server uzilgan seriyani coin evaziga saqladi.
+   * UI shu bayroqni ko'rib toast chiqaradi va `clearCoinSaved()` bilan tozalaydi
+   * (persist qilinmaydi — bir martalik bildirishnoma).
+   */
+  coinSaved: boolean
 
   /** Serverdan bugungi holatni tortadi (xato bo'lsa sokin o'tkazadi) */
   sync: (userId: string, date: string, subjectId: string) => Promise<void>
@@ -38,7 +44,8 @@ interface DailyState {
    * berilmasa (sof faollik, masalan dars) kunda 1 marta dedupe qilinadi.
    */
   touchActivity: (userId: string, date: string, subjectId: string) => Promise<void>
-  applyServerResult: (date: string, subjectId: string, dailyStreak: number) => void
+  applyServerResult: (date: string, subjectId: string, dailyStreak: number, coinSaved?: boolean) => void
+  clearCoinSaved: () => void
   resetAccount: () => void
 }
 
@@ -47,6 +54,7 @@ export const useDailyStore = create<DailyState>()(
     (set) => ({
       streaks: {},
       activityKey: null,
+      coinSaved: false,
 
       sync: async (userId, date, subjectId) => {
         if (!userId || userId === '0') return // ghost user — faqat lokal
@@ -65,19 +73,23 @@ export const useDailyStore = create<DailyState>()(
           set((s) => ({
             activityKey: key,
             streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
+            coinSaved: res.coinSaved === true ? true : s.coinSaved,
           }))
         } catch { /* offline — keyingi urinishda belgilanadi */ }
       },
 
-      resetAccount: () => set({ streaks: {}, activityKey: null }),
+      resetAccount: () => set({ streaks: {}, activityKey: null, coinSaved: false }),
 
-      applyServerResult: (date, subjectId, dailyStreak) => {
+      applyServerResult: (date, subjectId, dailyStreak, coinSaved) => {
         const key = doneKeyOf(date, subjectId)
         set((s) => ({
           activityKey: key,
           streaks: { ...s.streaks, [subjectId]: dailyStreak },
+          coinSaved: coinSaved === true ? true : s.coinSaved,
         }))
       },
+
+      clearCoinSaved: () => set({ coinSaved: false }),
     }),
     {
       name:    'yhq-daily',
@@ -92,8 +104,11 @@ export const useDailyStore = create<DailyState>()(
           const subjectId = s.doneKey.split('|')[1]
           if (subjectId && !streaks[subjectId]) streaks[subjectId] = s.dailyStreak
         }
-        return { streaks, activityKey: null }
+        return { streaks, activityKey: null, coinSaved: false }
       },
+      // coinSaved bir martalik UI bildirishnomasi — sahifalar orasida SAQLANMAYDI
+      // (toast ko'rsatilgach clearCoinSaved() bilan tozalanadi).
+      partialize: (s) => ({ streaks: s.streaks, activityKey: s.activityKey }),
     },
   ),
 )

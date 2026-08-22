@@ -14,6 +14,9 @@ import PageLoader from './shared/components/PageLoader'
 import { resolveAccent } from './shared/config/themes'
 import SplashScreen from './features/onboarding/SplashScreen'
 import Onboarding from './features/onboarding/Onboarding'
+import { useDailyStore } from './shared/store/useDailyStore'
+import { useToast } from './shared/components/ToastContainer'
+import { useT } from './shared/i18n'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 const Dashboard       = lazy(() => import('./features/dashboard/Dashboard'))
@@ -164,6 +167,22 @@ function ThemeEffect() {
   useEffect(() => {
     document.body.dataset.fontSize = fontSize || 'medium'
   }, [fontSize])
+  return null
+}
+
+/** Streak coin-save bildirishnomasi — server uzilgan seriyani coin evaziga
+ *  saqlaganda (`useDailyStore.coinSaved`) bir martalik toast ko'rsatadi. */
+function StreakSaveToast() {
+  const coinSaved      = useDailyStore((s) => s.coinSaved)
+  const clearCoinSaved = useDailyStore((s) => s.clearCoinSaved)
+  const language       = useAppStore((s) => s.settings.language)
+  const { info } = useToast()
+  const tt = useT(language)
+  useEffect(() => {
+    if (!coinSaved) return
+    info(tt('streakSavedToast'))
+    clearCoinSaved()
+  }, [coinSaved, clearCoinSaved, info, tt])
   return null
 }
 
@@ -419,6 +438,7 @@ export default function App() {
   return (
     <HashRouter>
       <ThemeEffect />
+      <StreakSaveToast />
       <Layout />
     </HashRouter>
   )

@@ -100,9 +100,10 @@ router.post(
     await progressRepository.ensureExists(uid)
 
     const { subjectId } = req.body as z.infer<typeof ActivitySchema>
-    const { dailyStreak } = await dailyRepository.touchActivity(uid, tashkentDate(), subjectId, 0, 0)
+    const { dailyStreak, coinSaved } = await dailyRepository.touchActivity(uid, tashkentDate(), subjectId, 0, 0)
 
-    res.json({ ok: true, dailyStreak })
+    // coinSaved: uzilgan seriya coin evaziga saqlandi — client toast ko'rsatadi.
+    res.json({ ok: true, dailyStreak, coinSaved })
   }),
 )
 

@@ -137,8 +137,8 @@ export const useAppStore = create<AppState>()(
     (set, get) => {
       /** Server tasdiqlagan javobni lokal counterlarga qo'llash
        *  (submitAnswer muvaffaqiyati VA outbox replay'da — bir xil yo'l). */
-      const applyAnswer = (input: { questionId: number; correct: boolean; subjectId: string; date: string; dailyStreak: number | null }) => {
-        const { questionId, correct, subjectId, date, dailyStreak } = input
+      const applyAnswer = (input: { questionId: number; correct: boolean; subjectId: string; date: string; dailyStreak: number | null; coinSaved?: boolean }) => {
+        const { questionId, correct, subjectId, date, dailyStreak, coinSaved } = input
         // Multi-fan identity: xato qaydlari fan bo'yicha composite kalitda
         const wKey = questionKey(subjectId, questionId)
         // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
@@ -162,7 +162,7 @@ export const useAppStore = create<AppState>()(
               : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 },
           }
         })
-        if (dailyStreak !== null) useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak)
+        if (dailyStreak !== null) useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak, coinSaved)
         const userId = get().user?.id
         if (wasWrong && userId && userId !== '0') {
           api.addDailyFix(userId, { subjectId }).catch(() => {
@@ -178,6 +178,7 @@ export const useAppStore = create<AppState>()(
         applyAnswer({
           questionId: info.questionId, correct: info.correct,
           subjectId: info.subjectId, date: info.date, dailyStreak: info.dailyStreak,
+          coinSaved: info.coinSaved,
         })
       })
 
@@ -259,7 +260,7 @@ export const useAppStore = create<AppState>()(
         try {
           const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken })
           // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
-          if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak })
+          if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak, coinSaved: res.coinSaved })
           // #40: mint bo'lgan tanga — server balansi bilan sinxron (client o'zi mint qilmaydi)
           if (!res.duplicate && (res.coinsEarned ?? 0) > 0 && typeof res.coinBalance === 'number') {
             set({ coins: res.coinBalance })
