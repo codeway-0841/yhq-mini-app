@@ -2,10 +2,10 @@ import { useState, useEffect, useSyncExternalStore } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import {
-  Copy, Zap, Phone, Lock, Globe, CreditCard,
+  Copy, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, Coins, Car, X,
+  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -160,8 +160,8 @@ export default function Profil() {
       <Section title={tt('yourTariff').toUpperCase()}>
         {/* Tariff card */}
         <div className="px-4 py-3.5 flex items-center gap-3">
-          <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-[14px] border border-pline bg-psurface">
-            <Car size={22} strokeWidth={1.75} className="text-pmuted" />
+          <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
+            <Crown size={22} strokeWidth={1.75} className="text-pgold" />
           </div>
           <div className="min-w-0 flex-1">
             <p className="text-[14px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
@@ -176,8 +176,7 @@ export default function Profil() {
               className="flex-shrink-0"
               onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
             >
-              <Zap strokeWidth={1.75} />
-              {tt('upgrade')} · 250
+              250
               <Star size={12} strokeWidth={1.75} />
             </Button>
           )}

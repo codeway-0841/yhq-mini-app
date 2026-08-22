@@ -50,6 +50,7 @@ const UZ = {
   shareResult: "Natijani ulashish", shareResultImage: "Rasm qilib ulashish",
   shareResultImageSent: "✓ Rasm botingizga yuborildi — chatdan ulashing mumkin", backWord: "Orqaga",
   searchPlaceholder: "Savol yoki dars qidirish...", searchNoResults: "Hech narsa topilmadi. Boshqacha yozib ko'ring.",
+  clearSearch: "Qidiruvni tozalash",
   searchQuestionsSection: "Savollar", searchLessonsSection: "Darslar",
   // Dashboard
   promoText: "1 oylik Qora Jentra tarifiga 25% chegirma. Faqat bugun!",
@@ -109,7 +110,7 @@ const UZ = {
   yourRank: "Sizning o'rningiz",
   notInTop50: "Top-50 da emassiz",
   // Profile
-  yourTariff: "Sizning tarifingiz", freeTariff: "Matiz — Bepul",
+  yourTariff: "Sizning tarifingiz", freeTariff: "Bepul",
   premiumTariff: "Premium", upgrade: "Kuchaytirish",
   addPhone: "Telefon raqami", langLabel: "Ilova tili",
   payHistory: "To'lovlar tarixi", offlineMode: "Oflayn rejim",
@@ -411,6 +412,7 @@ const RU: Record<Keys, string> = {
   shareResult: "Поделиться результатом", shareResultImage: "Поделиться картинкой",
   shareResultImageSent: "✓ Картинка отправлена в ваш чат с ботом — поделитесь оттуда", backWord: "Назад",
   searchPlaceholder: "Поиск вопроса или урока...", searchNoResults: "Ничего не найдено. Попробуйте иначе.",
+  clearSearch: "Очистить поиск",
   searchQuestionsSection: "Вопросы", searchLessonsSection: "Уроки",
   promoText: "Скидка 25% на тариф Qora Jentra на 1 месяц. Только сегодня!",
   darslikDesc: "С нуля до экзамена...",
@@ -463,7 +465,7 @@ const RU: Record<Keys, string> = {
   leaderboardError: "Данные не загружены. Попробуйте снова.",
   yourRank: "Ваше место",
   notInTop50: "Вы не в Топ-50",
-  yourTariff: "Ваш тариф", freeTariff: "Matiz — Бесплатно",
+  yourTariff: "Ваш тариф", freeTariff: "Бесплатно",
   premiumTariff: "Премиум", upgrade: "Улучшить",
   addPhone: "Добавить номер", langLabel: "Язык приложения",
   payHistory: "История оплат", offlineMode: "Оффлайн режим",

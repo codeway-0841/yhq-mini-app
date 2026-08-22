@@ -99,7 +99,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
 export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = 'var(--p-subtle)', badge, comingSoon, onClick }: {
   icon: React.ElementType
   label: string
-  subtitle: string
+  subtitle?: string
   iconColor?: string
   badge?: number | null
   comingSoon?: boolean
@@ -110,7 +110,7 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
       onClick={onClick}
       aria-label={`${label}${comingSoon ? ' (tez orada)' : ''}`}
       className={cn(
-        'relative flex min-h-[96px] flex-col items-center justify-center gap-2 rounded-container border border-pline bg-pcard p-2.5 text-center sm:min-h-[104px] sm:p-3.5',
+        'relative flex min-h-[88px] flex-col items-center justify-center gap-2 rounded-container border border-pline bg-pcard p-2.5 text-center sm:min-h-[96px] sm:p-3.5',
         cardInteractive,
         comingSoon && 'opacity-70',
       )}
@@ -119,9 +119,11 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
       <IconChip icon={Icon} color={iconColor} size="md" />
       <div className="w-full min-w-0 px-0.5 text-center">
         <p className="truncate text-[12px] font-semibold leading-tight text-pfg sm:text-[13px]">{label}</p>
-        <p className={cn('mt-0.5 truncate text-[10px] font-medium sm:text-[10.5px]', comingSoon ? 'text-ppurple' : 'text-psubtle')}>
-          {subtitle}
-        </p>
+        {subtitle && (
+          <p className={cn('mt-0.5 truncate text-[10px] font-medium sm:text-[10.5px]', comingSoon ? 'text-ppurple' : 'text-psubtle')}>
+            {subtitle}
+          </p>
+        )}
       </div>
     </button>
   )

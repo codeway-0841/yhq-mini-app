@@ -123,6 +123,7 @@ export default function FormulasPage() {
           <Search size={16} className="text-psubtle flex-shrink-0" />
           <input value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchFormula')}
+            aria-label={tt('searchFormula')}
             className="flex-1 bg-transparent outline-none text-[13px] text-pfg placeholder:text-psubtle" />
         </div>
       </div>
