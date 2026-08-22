@@ -25,10 +25,11 @@ export default function DailyTasksCard() {
   const tt       = useT(lang)
   const setCoins = useAppStore((s) => s.setCoins)
 
-  const [tasks, setTasks]     = useState<CoinTaskState[] | null>(null)
-  const [busy, setBusy]       = useState<string | null>(null)
-  const [error, setError]     = useState(false)
-  const [celebrate, setCelebrate] = useState(false)
+  const [tasks, setTasks]                 = useState<CoinTaskState[] | null>(null)
+  const [busy, setBusy]                   = useState<string | null>(null)
+  const [error, setError]                 = useState(false)
+  const [celebrate, setCelebrate]         = useState(false)
+  const [recentlyClaimed, setRecentlyClaimed] = useState<string | null>(null)
 
   const load = useCallback(() => {
     api.getCoinTasks()
@@ -46,8 +47,13 @@ export default function DailyTasksCard() {
       setCoins(res.balance)
       playSound('win')
       setCelebrate(true)
-      window.setTimeout(() => setCelebrate(false), 3200)
-      load()
+      setRecentlyClaimed(taskId)
+      // Tangani olgach 1.4s "✓ Olindi" ko'rsatilib, so'ng qator mayin o'chadi
+      window.setTimeout(() => {
+        setRecentlyClaimed(null)
+        setCelebrate(false)
+        load()
+      }, 1400)
     } catch (err) {
       // TASK_NOT_COMPLETED / TASK_ALREADY_CLAIMED — holatni yangilab ko'rsatamiz
       if (err instanceof ApiError && (err.code === 'TASK_NOT_COMPLETED' || err.code === 'TASK_ALREADY_CLAIMED')) {
@@ -71,7 +77,12 @@ export default function DailyTasksCard() {
     )
   }
 
-  const visible = tasks.filter((t) => DAILY_TASKS.some((d) => d.id === t.id))
+  // Qator bo'yicha yashirish: faqat hali tangasi olinmagan (yoki hozirgina olingan) vazifalar chiqadi
+  const visible = tasks.filter((t) =>
+    DAILY_TASKS.some((d) => d.id === t.id) && (!t.claimed || recentlyClaimed === t.id)
+  )
+
+  // Barcha vazifalar olib bo'lingan bo'lsa — butun kartochka yo'qoladi
   if (visible.length === 0) return null
 
   return (
