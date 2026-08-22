@@ -12,6 +12,7 @@ import {
   Check,
   RotateCw,
   HelpCircle,
+  X,
 } from 'lucide-react'
 import { SUBJECTS } from '../../../shared/config/subjects'
 import { api } from '../../../shared/api'
@@ -123,7 +124,7 @@ export default function AdminAiStudioTab() {
         setQuestions(editableList)
         playSound('win')
         haptics.notify('success')
-        setSuccessMessage(`✨ AI ${editableList.length} ta savolni muvaffaqiyatli tayyorladi! Ularni tekshirib, bazaga saqlashingiz mumkin.`)
+        setSuccessMessage(`AI ${editableList.length} ta savolni muvaffaqiyatli tayyorladi! Ularni tekshirib, bazaga saqlashingiz mumkin.`)
         setTimeout(() => setSuccessMessage(null), 5000)
       }
     } catch (err: any) {
@@ -270,7 +271,7 @@ export default function AdminAiStudioTab() {
         playSound('win')
         haptics.notify('success')
         setConfetti(true)
-        alert(`✅ ${items.length} ta savol muvaffaqiyatli bazaga qo'shildi!`)
+        alert(`${items.length} ta savol muvaffaqiyatli bazaga qo'shildi!`)
         setQuestions([])
         setPromptText('')
         setTimeout(() => setConfetti(false), 5000)
@@ -288,24 +289,24 @@ export default function AdminAiStudioTab() {
 
       {/* Header */}
       <div>
-        <h2 className="text-base font-black text-fg flex items-center gap-2">
-          <Sparkles size={18} className="text-duo-yellow" />
-          <span>✨ AI Savol Generatori & Matn Studiyasi</span>
+        <h2 className="text-base font-semibold text-pfg flex items-center gap-2">
+          <Sparkles size={18} className="text-pwarning" />
+          <span>AI Savol Generatori & Matn Studiyasi</span>
         </h2>
-        <p className="text-xs text-muted mt-0.5">
+        <p className="text-xs text-pmuted mt-0.5">
           Admin o'zi yozgan matn yoki mavzu asosida professional test savollarini avtomatik shakllantirish
         </p>
       </div>
 
       {/* Mode Selector */}
-      <div className="grid grid-cols-2 gap-2 p-1 bg-elevated rounded-2xl border border-line">
+      <div className="grid grid-cols-2 gap-2 p-1 bg-psurface rounded-container border border-pline">
         <button
           type="button"
           onClick={() => setMode('custom_text')}
-          className={`py-2.5 px-3 rounded-xl text-xs font-black flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-control text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
             mode === 'custom_text'
-              ? 'bg-duo-purple text-ponprimary shadow-md'
-              : 'text-muted hover:text-fg'
+              ? 'bg-ppurple text-ponprimary shadow-md'
+              : 'text-pmuted hover:text-pfg'
           }`}
         >
           <FileText size={15} />
@@ -315,10 +316,10 @@ export default function AdminAiStudioTab() {
         <button
           type="button"
           onClick={() => setMode('topic')}
-          className={`py-2.5 px-3 rounded-xl text-xs font-black flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-control text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
             mode === 'topic'
-              ? 'bg-duo-purple text-ponprimary shadow-md'
-              : 'text-muted hover:text-fg'
+              ? 'bg-ppurple text-ponprimary shadow-md'
+              : 'text-pmuted hover:text-pfg'
           }`}
         >
           <Lightbulb size={15} />
@@ -328,7 +329,7 @@ export default function AdminAiStudioTab() {
 
       {/* Subject Selector Badges */}
       <div className="space-y-1.5">
-        <label className="text-xs font-bold text-fg">Fanni tanlang</label>
+        <label className="text-xs font-semibold text-pfg">Fanni tanlang</label>
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
           {SUBJECTS.map((s) => {
             const isSelected = selectedSubject === s.id
@@ -337,15 +338,15 @@ export default function AdminAiStudioTab() {
                 key={s.id}
                 type="button"
                 onClick={() => setSelectedSubject(s.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 whitespace-nowrap transition-all border ${
+                className={`px-3 py-1.5 rounded-control text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all border ${
                   isSelected
-                    ? 'bg-surface border-duo-purple text-fg shadow-sm'
-                    : 'bg-card border-line text-muted hover:text-fg'
+                    ? 'bg-psurface border-ppurple text-pfg shadow-sm'
+                    : 'bg-card border-pline text-pmuted hover:text-pfg'
                 }`}
               >
                 <s.icon size={13} style={{ color: s.color }} />
                 <span>{s.name}</span>
-                {isSelected && <Check size={12} className="text-duo-purple" />}
+                {isSelected && <Check size={12} className="text-ppurple" />}
               </button>
             )
           })}
@@ -353,47 +354,48 @@ export default function AdminAiStudioTab() {
       </div>
 
       {/* Prompt Input Form */}
-      <div className="rounded-2xl bg-surface border border-line p-4 space-y-4 shadow-sm">
+      <div className="rounded-container bg-psurface border border-pline p-4 space-y-4 shadow-sm">
         {mode === 'custom_text' ? (
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label className="text-xs font-bold text-fg">Darslik matni, qoidalar yoki konspekt</label>
-              <span className="text-[10px] text-muted">{promptText.length} / 15 000 belgi</span>
+              <label className="text-xs font-semibold text-pfg">Darslik matni, qoidalar yoki konspekt</label>
+              <span className="text-[10px] text-pmuted">{promptText.length} / 15 000 belgi</span>
             </div>
             <textarea
               value={promptText}
               onChange={(e) => setPromptText(e.target.value)}
               rows={6}
               placeholder="O'zingiz yozgan qoidalar, darslikdan parcha yoki qonun moddalarini kiriting..."
-              className="w-full bg-card border border-line rounded-2xl p-3 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
+              className="w-full bg-card border border-pline rounded-container p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
             />
           </div>
         ) : (
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label className="text-xs font-bold text-fg">Mavzu nomi yoki qoida sarlavhasi</label>
+              <label className="text-xs font-semibold text-pfg">Mavzu nomi yoki qoida sarlavhasi</label>
             </div>
             <input
               type="text"
               value={promptText}
               onChange={(e) => setPromptText(e.target.value)}
               placeholder="Masalan: Chorrahada burilish qoidalari..."
-              className="w-full bg-card border border-line rounded-2xl px-3 py-2.5 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
+              className="w-full bg-card border border-pline rounded-container px-3 py-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
             />
 
             {/* Sample Topics Suggestions */}
             {SAMPLE_TOPICS[selectedSubject]?.length > 0 && (
               <div className="mt-2.5">
-                <span className="text-[10px] text-muted block mb-1 font-bold">Namunaviy mavzular:</span>
+                <span className="text-[10px] text-pmuted block mb-1 font-semibold">Namunaviy mavzular:</span>
                 <div className="flex flex-wrap gap-1.5">
                   {SAMPLE_TOPICS[selectedSubject].map((topic, i) => (
                     <button
                       key={i}
                       type="button"
                       onClick={() => setPromptText(topic)}
-                      className="px-2 py-1 rounded-lg bg-elevated border border-line text-[10px] text-muted hover:text-fg active:scale-95 transition-all text-left"
+                      className="px-2 py-1 rounded-lg bg-psurface border border-pline text-[10px] text-pmuted hover:text-pfg active:scale-95 transition-all text-left"
                     >
-                      💡 {topic}
+                      <Lightbulb size={10} strokeWidth={1.75} className="inline mr-1" />
+                      {topic}
                     </button>
                   ))}
                 </div>
@@ -403,20 +405,20 @@ export default function AdminAiStudioTab() {
         )}
 
         {/* Parameters: Count & Difficulty */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-line">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-pline">
           {/* Savollar soni */}
           <div>
-            <label className="text-[11px] font-bold text-fg block mb-1.5">Savollar soni</label>
+            <label className="text-[11px] font-semibold text-pfg block mb-1.5">Savollar soni</label>
             <div className="grid grid-cols-5 gap-1">
               {[3, 5, 10, 15, 20].map((c) => (
                 <button
                   key={c}
                   type="button"
                   onClick={() => setCount(c)}
-                  className={`py-1.5 rounded-xl text-xs font-black transition-all border ${
+                  className={`py-1.5 rounded-control text-xs font-semibold transition-all border ${
                     count === c
-                      ? 'bg-duo-purple text-ponprimary border-duo-purple shadow-sm'
-                      : 'bg-card border-line text-muted hover:text-fg'
+                      ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
+                      : 'bg-card border-pline text-pmuted hover:text-pfg'
                   }`}
                 >
                   {c} ta
@@ -427,17 +429,17 @@ export default function AdminAiStudioTab() {
 
           {/* Qiyinchilik darajasi */}
           <div>
-            <label className="text-[11px] font-bold text-fg block mb-1.5">Qiyinchilik</label>
+            <label className="text-[11px] font-semibold text-pfg block mb-1.5">Qiyinchilik</label>
             <div className="grid grid-cols-4 gap-1">
               {(['easy', 'medium', 'hard', 'mixed'] as const).map((d) => (
                 <button
                   key={d}
                   type="button"
                   onClick={() => setDifficulty(d)}
-                  className={`py-1.5 rounded-xl text-[11px] font-bold transition-all border ${
+                  className={`py-1.5 rounded-control text-[11px] font-semibold transition-all border ${
                     difficulty === d
-                      ? 'bg-duo-purple text-ponprimary border-duo-purple shadow-sm'
-                      : 'bg-card border-line text-muted hover:text-fg'
+                      ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
+                      : 'bg-card border-pline text-pmuted hover:text-pfg'
                   }`}
                 >
                   {DIFFICULTY_LABELS[d]}
@@ -452,24 +454,24 @@ export default function AdminAiStudioTab() {
           type="button"
           disabled={loading || !promptText.trim()}
           onClick={handleGenerate}
-          className="w-full btn-premium py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+          className="w-full btn-premium py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
         >
           {loading ? (
             <>
-              <Loader2 size={16} className="animate-spin" />
+              <Loader2 size={16} className="motion-safe:animate-spin" />
               <span>AI savollarni tayyorlamoqda (~5-10s)...</span>
             </>
           ) : (
             <>
               <Sparkles size={16} />
-              <span>✨ {count} ta savolni generatsiya qilish</span>
+              <span>{count} ta savolni generatsiya qilish</span>
             </>
           )}
         </button>
       </div>
 
       {successMessage && (
-        <div className="p-3.5 rounded-2xl bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-bold flex items-center gap-2 shadow-sm animate-premiumIn">
+        <div className="p-3.5 rounded-container bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-semibold flex items-center gap-2 shadow-sm animate-premiumIn">
           <CheckCircle2 size={18} className="flex-none" />
           <span>{successMessage}</span>
         </div>
@@ -480,16 +482,16 @@ export default function AdminAiStudioTab() {
         <div className="space-y-4 pt-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <h3 className="text-sm font-black text-fg">Tayyorlangan Savollar ({questions.length} ta)</h3>
+              <h3 className="text-sm font-semibold text-pfg">Tayyorlangan Savollar ({questions.length} ta)</h3>
             </div>
 
             {/* Language Switcher for Questions View */}
-            <div className="flex items-center gap-1 bg-elevated p-0.5 rounded-xl border border-line text-[10px] font-bold">
+            <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-control border border-pline text-[10px] font-semibold">
               <button
                 type="button"
                 onClick={() => setActiveLangTab('uz')}
                 className={`px-2.5 py-1 rounded-lg transition-all ${
-                  activeLangTab === 'uz' ? 'bg-duo-purple text-ponprimary shadow-xs' : 'text-muted hover:text-fg'
+                  activeLangTab === 'uz' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 🇺🇿 O'zbekcha
@@ -498,7 +500,7 @@ export default function AdminAiStudioTab() {
                 type="button"
                 onClick={() => setActiveLangTab('ru')}
                 className={`px-2.5 py-1 rounded-lg transition-all ${
-                  activeLangTab === 'ru' ? 'bg-duo-purple text-ponprimary shadow-xs' : 'text-muted hover:text-fg'
+                  activeLangTab === 'ru' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 🇷🇺 Русский
@@ -515,21 +517,21 @@ export default function AdminAiStudioTab() {
               return (
                 <div
                   key={q.id}
-                  className="rounded-3xl bg-surface border border-line p-4 space-y-3.5 shadow-sm relative group"
+                  className="rounded-container bg-psurface border border-pline p-4 space-y-3.5 shadow-sm relative group"
                 >
                   {/* Card Top */}
-                  <div className="flex items-center justify-between border-b border-line pb-2.5">
+                  <div className="flex items-center justify-between border-b border-pline pb-2.5">
                     <div className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-lg bg-duo-purple/15 text-duo-purple text-xs font-black flex items-center justify-center">
+                      <span className="w-6 h-6 rounded-lg bg-ppurple/15 text-ppurple text-xs font-semibold flex items-center justify-center">
                         {qIndex + 1}
                       </span>
-                      <span className="text-xs font-bold text-fg">Savol #{qIndex + 1}</span>
+                      <span className="text-xs font-semibold text-pfg">Savol #{qIndex + 1}</span>
                     </div>
 
                     <button
                       type="button"
                       onClick={() => handleDeleteQuestion(q.id)}
-                      className="text-muted hover:text-duo-red p-1 rounded-lg hover:bg-duo-red/10 transition-colors"
+                      className="text-pmuted hover:text-pdanger p-1 rounded-lg hover:bg-pdanger/10 transition-colors"
                       title="Savolni o'chirish"
                     >
                       <Trash2 size={16} />
@@ -538,7 +540,7 @@ export default function AdminAiStudioTab() {
 
                   {/* Question Textarea */}
                   <div>
-                    <label className="text-[11px] font-bold text-fg block mb-1">
+                    <label className="text-[11px] font-semibold text-pfg block mb-1">
                       Savol matni ({activeLangTab.toUpperCase()}):
                     </label>
                     <textarea
@@ -549,13 +551,13 @@ export default function AdminAiStudioTab() {
                         else updateQuestion(q.id, { questionRu: val })
                       }}
                       rows={2}
-                      className="w-full bg-card border border-line rounded-xl p-2.5 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
+                      className="w-full bg-card border border-pline rounded-control p-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
                     />
                   </div>
 
                   {/* Options List */}
                   <div className="space-y-2">
-                    <label className="text-[11px] font-bold text-fg block">
+                    <label className="text-[11px] font-semibold text-pfg block">
                       Variantlar (To'g'ri javobni radio bilan tanlang):
                     </label>
                     <div className="space-y-1.5">
@@ -564,8 +566,8 @@ export default function AdminAiStudioTab() {
                         return (
                           <div
                             key={opt.id}
-                            className={`flex items-center gap-2 p-2 rounded-xl border transition-all ${
-                              isCorrect ? 'bg-psuccess/10 border-psuccess/40' : 'bg-card border-line'
+                            className={`flex items-center gap-2 p-2 rounded-control border transition-all ${
+                              isCorrect ? 'bg-psuccess/10 border-psuccess/40' : 'bg-card border-pline'
                             }`}
                           >
                             <input
@@ -573,19 +575,20 @@ export default function AdminAiStudioTab() {
                               name={`correct_${q.id}`}
                               checked={isCorrect}
                               onChange={() => updateQuestion(q.id, { correctAnswer: opt.id })}
-                              className="accent-duo-green w-4 h-4 cursor-pointer"
+                              className="accent-pprimary w-4 h-4 cursor-pointer"
                             />
-                            <span className="text-[11px] font-black text-muted w-5 flex-none">{opt.id}.</span>
+                            <span className="text-[11px] font-semibold text-pmuted w-5 flex-none">{opt.id}.</span>
                             <input
                               type="text"
                               value={opt.text}
                               onChange={(e) => updateOptionText(q.id, opt.id, activeLangTab, e.target.value)}
                               placeholder={`Variant ${opt.id}...`}
-                              className="flex-1 bg-transparent border-0 text-xs text-fg focus:outline-none"
+                              className="flex-1 bg-transparent border-0 text-xs text-pfg focus:outline-none"
                             />
                             {isCorrect && (
-                              <span className="text-[10px] font-black text-psuccess bg-psuccess/20 px-1.5 py-0.5 rounded-md flex-none">
-                                To'g'ri ✓
+                              <span className="flex items-center gap-0.5 text-[10px] font-semibold text-psuccess bg-psuccess/20 px-1.5 py-0.5 rounded-md flex-none">
+                                <Check size={10} strokeWidth={2} />
+                                To'g'ri
                               </span>
                             )}
                           </div>
@@ -596,8 +599,8 @@ export default function AdminAiStudioTab() {
 
                   {/* Explanation */}
                   <div>
-                    <label className="text-[11px] font-bold text-fg flex items-center gap-1 mb-1">
-                      <HelpCircle size={13} className="text-duo-yellow" />
+                    <label className="text-[11px] font-semibold text-pfg flex items-center gap-1 mb-1">
+                      <HelpCircle size={13} className="text-pwarning" />
                       <span>Tushuntirish (Explanation):</span>
                     </label>
                     <input
@@ -605,15 +608,15 @@ export default function AdminAiStudioTab() {
                       value={q.explanation || ''}
                       onChange={(e) => updateQuestion(q.id, { explanation: e.target.value })}
                       placeholder="Nega aynan shu javob to'g'ri ekanligi tushuntirishi..."
-                      className="w-full bg-card border border-line rounded-xl px-3 py-2 text-xs text-fg focus:outline-none focus:border-duo-purple transition-all"
+                      className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
                     />
                   </div>
 
                   {/* Image Attachment */}
                   <div className="pt-1">
                     <div className="flex items-center justify-between">
-                      <label className="text-[11px] font-bold text-fg flex items-center gap-1">
-                        <ImageIcon size={13} className="text-duo-blue" />
+                      <label className="text-[11px] font-semibold text-pfg flex items-center gap-1">
+                        <ImageIcon size={13} className="text-pblue" />
                         <span>Rasm (ixtiyoriy)</span>
                       </label>
                       <input
@@ -628,7 +631,7 @@ export default function AdminAiStudioTab() {
                       <button
                         type="button"
                         onClick={() => fileInputRefs.current[q.id]?.click()}
-                        className="text-[11px] font-bold text-duo-purple hover:underline flex items-center gap-1"
+                        className="text-[11px] font-semibold text-ppurple hover:underline flex items-center gap-1"
                       >
                         <RotateCw size={12} />
                         <span>{q.image ? 'Rasmni almashtirish' : 'Rasm yuklash'}</span>
@@ -640,14 +643,15 @@ export default function AdminAiStudioTab() {
                         <img
                           src={q.image}
                           alt="Savol rasmi"
-                          className="h-24 w-auto rounded-xl border border-line object-cover"
+                          className="h-24 w-auto rounded-control border border-pline object-cover"
                         />
                         <button
                           type="button"
                           onClick={() => updateQuestion(q.id, { image: null })}
-                          className="absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full bg-duo-red text-white flex items-center justify-center text-xs shadow-md"
+                          className="absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full bg-pdanger text-white flex items-center justify-center shadow-md"
+                          aria-label="Rasmni o'chirish"
                         >
-                          ✕
+                          <X size={12} strokeWidth={2} />
                         </button>
                       </div>
                     )}
@@ -662,7 +666,7 @@ export default function AdminAiStudioTab() {
             <button
               type="button"
               onClick={handleAddBlankQuestion}
-              className="py-3 px-4 rounded-2xl bg-elevated border border-line text-xs font-bold text-fg hover:border-duo-purple flex items-center justify-center gap-1.5 transition-all"
+              className="py-3 px-4 rounded-container bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center justify-center gap-1.5 transition-all"
             >
               <Plus size={16} />
               <span>Yangi bo'sh savol qo'shish</span>
@@ -672,17 +676,17 @@ export default function AdminAiStudioTab() {
               type="button"
               disabled={saving || questions.length === 0}
               onClick={handleSaveAll}
-              className="flex-1 btn-premium py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+              className="flex-1 btn-premium py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
             >
               {saving ? (
                 <>
-                  <Loader2 size={16} className="animate-spin" />
+                  <Loader2 size={16} className="motion-safe:animate-spin" />
                   <span>Bazaga saqlanmoqda...</span>
                 </>
               ) : (
                 <>
                   <Save size={16} />
-                  <span>💾 Barcha {questions.length} ta savolni Bazaga Saqlash</span>
+                  <span>Barcha {questions.length} ta savolni Bazaga Saqlash</span>
                 </>
               )}
             </button>

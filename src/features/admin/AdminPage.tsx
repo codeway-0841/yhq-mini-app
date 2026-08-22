@@ -41,24 +41,24 @@ export default function AdminPage() {
   ]
 
   return (
-    <div className="font-display min-h-screen bg-bg text-fg pb-20">
+    <div className="font-display min-h-screen bg-pcanvas text-pfg pb-20">
       {/* Top Header */}
-      <div className="sticky top-0 bg-surface/90 backdrop-blur-md border-b border-line z-30 px-4 py-3">
+      <div className="sticky top-0 bg-psurface/90 backdrop-blur-md border-b border-pline z-30 px-4 py-3">
         <div className="flex items-center justify-between">
           <button
             onClick={() => goBack(navigate)}
-            className="w-9 h-9 rounded-2xl bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg active:scale-95 transition-all"
+            className="w-9 h-9 rounded-container bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
             aria-label="Orqaga"
           >
             <ChevronLeft size={20} />
           </button>
 
           <div className="text-center">
-            <h1 className="text-sm font-black text-fg flex items-center justify-center gap-1.5">
-              <ShieldCheck size={16} className="text-duo-purple" />
+            <h1 className="text-sm font-semibold text-pfg flex items-center justify-center gap-1.5">
+              <ShieldCheck size={16} className="text-ppurple" />
               KIWI Admin Panel
             </h1>
-            <span className="text-[10px] text-muted font-bold">
+            <span className="text-[10px] text-pmuted font-semibold">
               {user.firstName} (Admin)
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function AdminPage() {
         </div>
 
         {/* Tab Navigation */}
-        <div className="grid grid-cols-8 gap-1 mt-3 p-1 bg-elevated rounded-2xl border border-line">
+        <div className="grid grid-cols-8 gap-1 mt-3 p-1 bg-psurface rounded-container border border-pline">
           {tabs.map((tab) => {
             const Icon = tab.icon
             const isActive = activeTab === tab.id
@@ -76,10 +76,10 @@ export default function AdminPage() {
                 key={tab.id}
                 type="button"
                 onClick={() => setActiveTab(tab.id)}
-                className={`py-2 px-0.5 rounded-xl text-[10px] font-black flex flex-col items-center gap-1 transition-all ${
+                className={`py-2 px-0.5 rounded-control text-[10px] font-semibold flex flex-col items-center gap-1 transition-all ${
                   isActive
-                    ? 'bg-duo-purple text-ponprimary shadow-md scale-[1.02]'
-                    : 'text-muted hover:text-fg'
+                    ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
+                    : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 <Icon size={15} />
