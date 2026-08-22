@@ -41,10 +41,10 @@ export const BOSS_REWARDS = {
 }
 
 export const BOSS_ROSTER: readonly BossDef[] = [
-  { id: 'xavf-timsoli',    name: { uz: 'Xavf Timsoli',      ru: 'Опасный Крокодил'   }, emoji: '🐊', hp: 200_000, color: '#16a34a' },
-  { id: 'sirpanchiq-ajdar', name: { uz: 'Sirpanchiq Ajdar', ru: 'Скользкий Дракон'    }, emoji: '🐉', hp: 200_000, color: '#f97316' },
-  { id: 'qoida-sheri',     name: { uz: 'Qoida Sheri',       ru: 'Лев Правил'          }, emoji: '🦁', hp: 200_000, color: '#facc15' },
-  { id: 'tirbandlik-maxluq', name: { uz: 'Tirbandlik Maxluqi', ru: 'Монстр Пробок'    }, emoji: '🦏', hp: 200_000, color: '#8b5cf6' },
+  { id: 'xavf-timsoli',    name: { uz: 'Koloss',       ru: 'Колосс'              }, emoji: '🗿', hp: 200_000, color: '#16a34a' },
+  { id: 'sirpanchiq-ajdar', name: { uz: 'Magma Titan', ru: 'Магматический Титан' }, emoji: '🌋', hp: 200_000, color: '#f97316' },
+  { id: 'qoida-sheri',     name: { uz: 'Goliaf',       ru: 'Голиаф'              }, emoji: '👑', hp: 200_000, color: '#facc15' },
+  { id: 'tirbandlik-maxluq', name: { uz: 'Nemezis',    ru: 'Немезис'             }, emoji: '🔮', hp: 200_000, color: '#8b5cf6' },
 ]
 
 /**
