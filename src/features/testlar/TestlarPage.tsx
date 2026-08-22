@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -96,8 +96,10 @@ export default function TestlarPage() {
     <div className="px-4 pt-4 pb-8 min-h-screen">
       <div className="flex items-center gap-2 mb-5">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="text-subtle hover:text-fg text-xl px-1 transition-colors">←</button>
-        <h1 className="text-xl font-black">{tt('testlarTitle')}</h1>
+          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            <ChevronLeft size={20} strokeWidth={1.75} />
+          </button>
+        <h1 className="text-xl font-semibold">{tt('testlarTitle')}</h1>
       </div>
 
       <div className="flex flex-col gap-3">
@@ -111,16 +113,16 @@ export default function TestlarPage() {
           const off = C * (1 - accuracy / 100)
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="card-neon w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
+              className="rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
               {/* Icon box — neytral (yoki danger uchun qizil) */}
               <div className="relative flex-shrink-0">
-                <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
+                <div className="w-14 h-14 rounded-container flex items-center justify-center"
                   style={{
                     background: `color-mix(in srgb, ${boxColor} 8%, transparent)`,
                     border: `1.5px solid color-mix(in srgb, ${boxColor} 25%, transparent)`,
                   }}>
                   {m.iconBox === 'num' && (
-                    <span className="text-[17px] font-black" style={{ color: boxColor }}>{m.numText}</span>
+                    <span className="text-[17px] font-semibold" style={{ color: boxColor }}>{m.numText}</span>
                   )}
                   {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: boxColor }} />}
                   {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
@@ -129,11 +131,11 @@ export default function TestlarPage() {
 
               {/* Matn */}
               <div className="flex-1 min-w-0 text-left">
-                <p className="text-[16px] font-black text-fg leading-tight truncate">{tt(m.titleKey)}</p>
-                <p className="text-[11.5px] text-subtle mt-0.5 truncate">{m.meta}</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-bold"
+                <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{tt(m.titleKey)}</p>
+                <p className="text-[11.5px] text-psubtle mt-0.5 truncate">{m.meta}</p>
+                <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
                   style={{ color: d.color }}>
-                  <span className="w-2 h-2 rounded-full" style={{ background: d.color, boxShadow: `0 0 8px ${d.color}` }} />
+                  <span className="size-2 rounded-full" style={{ background: d.color }} />
                   {d.label}
                 </span>
               </div>
@@ -143,9 +145,8 @@ export default function TestlarPage() {
                 <circle cx="31" cy="31" r={R} fill="none" stroke="var(--p-line)" strokeWidth="5" />
                 <circle cx="31" cy="31" r={R} fill="none" stroke={ringColor} strokeWidth="5"
                   strokeLinecap="round" strokeDasharray={C} strokeDashoffset={off}
-                  transform="rotate(-90 31 31)"
-                  style={{ filter: 'drop-shadow(0 0 5px var(--p-glow))' }} />
-                <text x="31" y="35" textAnchor="middle" fill="var(--p-fg)" fontSize="12" fontWeight="900">
+                  transform="rotate(-90 31 31)" />
+                <text x="31" y="35" textAnchor="middle" fill="var(--p-fg)" fontSize="12" fontWeight="600">
                   {accuracy}%
                 </text>
               </svg>

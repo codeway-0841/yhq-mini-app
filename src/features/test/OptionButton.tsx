@@ -1,6 +1,15 @@
+import { Check, X } from 'lucide-react'
+import { cn } from '../../shared/lib/cn'
+
 export type Option = { id: string; text: string }
 
-/** Single answer option with correct/wrong neon glow highlight after answering (v1.1). */
+/**
+ * Test javob varianti.
+ *
+ * v3: neon glow (`boxShadow: 0 0 20px`) va ✓/✗ matn belgilari olib tashlandi.
+ * Holat 1px chegara + yumshoq semantik fon + lucide ikonka bilan beriladi;
+ * "kalit" chipi (A/B/C/D) holat rangiga to'ladi.
+ */
 export default function OptionButton({ option, state, onSelect, answered, fontSize }: {
   option: Option
   state: 'correct' | 'wrong' | 'pending' | 'default'
@@ -8,26 +17,28 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   answered: boolean
   fontSize: string
 }) {
-  const base = 'w-full text-left rounded-2xl border-2 p-3 transition-all focus:outline-none'
-  let style  = 'btn-3d-ghost font-semibold border-transparent hover:border-pline/60 hover:bg-elevated/60 active:border-pline'
-  let chip   = 'bg-elevated border-line text-subtle'
-  let icon   = null
-  let glow: string | undefined
+  const base = cn(
+    'mb-2.5 w-full rounded-container border p-3 text-left',
+    'transition-[transform,border-color,background-color] duration-[120ms] ease-out',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
+    'disabled:cursor-not-allowed',
+  )
+  let style = 'border-pline bg-pcard hover:border-plineStrong active:scale-[0.99]'
+  let chip  = 'border-plineStrong bg-psurface text-psubtle'
+  let icon  = null
 
   if (state === 'correct') {
-    style = 'bg-duo-green/15 border-duo-green text-fg animate-correctPop'
-    chip  = 'bg-duo-green border-duo-green text-ponprimary'
-    icon  = <span className="text-duo-green font-black text-lg">✓</span>
-    glow  = '0 0 20px var(--p-glow)'
+    style = 'border-pprimary bg-pwash motion-safe:animate-correctPop'
+    chip  = 'border-pprimary bg-pprimary text-ponprimary'
+    icon  = <Check size={18} strokeWidth={2} className="flex-none text-pprimary" />
   } else if (state === 'wrong') {
-    style = 'bg-duo-red/15 border-duo-red text-duo-red'
-    chip  = 'bg-duo-red border-duo-red text-white'
-    icon  = <span className="text-duo-red font-black text-lg">✗</span>
-    glow  = '0 0 20px rgba(239, 68, 68, 0.30)'
+    style = 'border-pdanger bg-[rgb(var(--p-danger-rgb)/0.10)]'
+    chip  = 'border-pdanger bg-pdanger text-white'
+    icon  = <X size={18} strokeWidth={2} className="flex-none text-pdanger" />
   } else if (state === 'pending') {
     // Server javobi kutilmoqda (yoki offline — keyin tasdiqlanadi)
-    style = 'bg-duo-blue/10 border-duo-blue/60 text-fg animate-pulse'
-    chip  = 'bg-duo-blue/20 border-duo-blue text-duo-blue'
+    style = 'border-pblue bg-[rgb(var(--p-blue-rgb)/0.08)] motion-safe:animate-pulse'
+    chip  = 'border-pblue bg-[rgb(var(--p-blue-rgb)/0.16)] text-pblue'
   }
 
   const fontClass =
@@ -36,17 +47,16 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   return (
     <button
       type="button"
-      className={`${base} ${style} mb-2 disabled:cursor-not-allowed`}
-      style={glow ? { boxShadow: glow } : undefined}
+      className={cn(base, style)}
       onClick={onSelect}
       disabled={answered}
     >
       <div className="flex items-center justify-between gap-2">
-        <div className="flex items-center gap-2.5">
-          <span className={`flex-none w-8 h-8 rounded-lg border flex items-center justify-center text-xs font-black ${chip}`}>
+        <div className="flex min-w-0 items-center gap-2.5">
+          <span className={cn('flex size-8 flex-none items-center justify-center rounded-control border text-xs font-semibold', chip)}>
             {option.id}
           </span>
-          <span className={fontClass}>{option.text}</span>
+          <span className={cn(fontClass, 'text-pfg')}>{option.text}</span>
         </div>
         {icon}
       </div>

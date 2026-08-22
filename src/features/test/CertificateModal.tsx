@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Download, Share2, Copy, Check, X, Award, Send, ExternalLink } from 'lucide-react'
+import { Download, Share2, Copy, Check, X, Award, Send, ExternalLink, Lightbulb } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -175,12 +175,12 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg card-neon rounded-3xl p-5 border border-lineStrong max-h-[92vh] overflow-y-auto flex flex-col items-center">
+      <div className="relative w-full max-w-lg rounded-container border border-pline bg-pcard rounded-container p-5 border border-plineStrong max-h-[92vh] overflow-y-auto flex flex-col items-center">
         {/* Close Button */}
         <button
           onClick={onClose}
           aria-label={tt('backWord')}
-          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg transition-colors z-10"
+          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
         >
           <X size={18} />
         </button>
@@ -188,11 +188,11 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         {/* Title */}
         <div className="flex items-center gap-2 mb-3 mt-1">
           <Award className="text-pgold" size={24} />
-          <h3 id="certificate-title" className="text-base font-black text-fg">{tt('certOfficialTitle')}</h3>
+          <h3 id="certificate-title" className="text-base font-semibold text-pfg">{tt('certOfficialTitle')}</h3>
         </div>
 
         {/* Direct High-Resolution Canvas Display */}
-        <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-line mb-3 bg-black/40">
+        <div className="w-full rounded-container overflow-hidden shadow-2xl border border-pline mb-3 bg-black/40">
           <canvas
             ref={canvasRef}
             className="w-full h-auto block object-contain select-none"
@@ -201,26 +201,26 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         </div>
 
         {/* Certificate Metadata Pill */}
-        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-elevated border border-line mb-3 text-xs font-bold text-muted">
-          <span className="truncate">ID: <span className="font-mono text-fg">{certId}</span></span>
+        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-container bg-psurface border border-pline mb-3 text-xs font-semibold text-pmuted">
+          <span className="truncate">ID: <span className="font-mono text-pfg">{certId}</span></span>
           <button
             onClick={handleCopyId}
-            className="flex items-center gap-1 text-duo-blue hover:underline ml-2 flex-shrink-0"
+            className="flex items-center gap-1 text-pblue hover:underline ml-2 flex-shrink-0"
           >
-            {copied ? <Check size={14} className="text-duo-green" /> : <Copy size={14} />}
+            {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
             <span>{copied ? tt('copied') : tt('copy')}</span>
           </button>
         </div>
 
         {/* Bot Sent Success Alert */}
         {botSentSuccess && (
-          <div className="w-full bg-duo-green/15 border border-duo-green/40 rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn">
-            <p className="text-xs font-black text-duo-green mb-1">
+          <div className="w-full bg-pprimary/15 border border-pprimary/40 rounded-container p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn">
+            <p className="text-xs font-semibold text-pprimary mb-1">
               {tt('certSentSuccess')}
             </p>
             <button
               onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
-              className="mt-1 text-[11.5px] font-bold text-fg underline flex items-center gap-1 hover:text-duo-green"
+              className="mt-1 text-[11.5px] font-semibold text-pfg underline flex items-center gap-1 hover:text-pprimary"
             >
               <span>{lang === 'ru' ? 'Открыть чат с ботом' : 'Bot chatini ochish'}</span>
               <ExternalLink size={12} />
@@ -234,7 +234,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <button
             onClick={handleSendToTelegramBot}
             disabled={sendingBot}
-            className="btn-premium w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
+            className="btn-premium w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
           >
             <Send size={18} className="text-black" />
             {sendingBot ? tt('certSending') : tt('sendToTelegram')}
@@ -244,7 +244,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <button
             onClick={handleDownload}
             disabled={downloading}
-            className="btn-3d-ghost w-full py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-2"
+            className="btn-3d-ghost w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2"
           >
             <Download size={16} />
             {downloading ? 'Yuklanmoqda...' : tt('downloadCertificate')}
@@ -253,7 +253,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           {/* Share CTA */}
           <button
             onClick={handleShare}
-            className="btn-3d-ghost w-full py-3 rounded-2xl font-bold text-xs flex items-center justify-center gap-2 text-duo-blue"
+            className="btn-3d-ghost w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2 text-pblue"
           >
             <Share2 size={15} />
             {tt('shareCertificate')}
@@ -261,10 +261,11 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         </div>
 
         {/* Mobile helper hint */}
-        <p className="text-[11px] text-muted text-center leading-snug px-2">
+        <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted">
+          <Lightbulb size={12} strokeWidth={1.75} className="mt-px flex-none text-psubtle" aria-hidden="true" />
           {lang === 'ru'
-            ? '💡 Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
-            : '💡 Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
+            ? 'Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
+            : 'Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
         </p>
       </div>
     </DialogOverlay>

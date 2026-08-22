@@ -15,7 +15,9 @@ test.describe('Biletlar Sahifasi E2E', () => {
   test('orqaga qaytish tugmasi mavjud', async ({ page }) => {
     await page.goto('/#/biletlar')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
-    const backBtn = page.locator('button', { hasText: '←' })
+    // v3: orqaga strelkasi matn "←" o'rniga lucide ikonka + aria-label bilan
+    // beriladi (KIWI redesign) — nomga emas, rolga qarab topamiz.
+    const backBtn = page.getByRole('button', { name: /orqaga|назад/i })
     await expect(backBtn).toBeVisible()
   })
 })

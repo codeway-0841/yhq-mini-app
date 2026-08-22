@@ -29,7 +29,7 @@ export default function StudyPanel({ language, isOpen }: StudyPanelProps) {
             disabled
             title={tt('comingSoon')}
             aria-label={tt(it.key as StudyItemKey)}
-            className={`btn-3d-ghost flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full text-[12px] font-extrabold transition-all duration-300 pointer-events-auto ${
+            className={`btn-3d-ghost flex items-center gap-2 pl-3 pr-4 py-2.5 rounded-full text-[12px] font-semibold transition-all duration-300 pointer-events-auto ${
               isOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-3 invisible pointer-events-none'
             }`}
             style={{ transitionDelay: isOpen ? `${i * 45}ms` : `${(STUDY_ITEMS.length - 1 - i) * 45}ms` }}>
