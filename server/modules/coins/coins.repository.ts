@@ -81,8 +81,7 @@ export const coinsRepository = {
         SELECT 1 FROM coin_transactions
         WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
       ), claim AS (
-        -- 1) Durable egalik band qilish (unique) — parallel race'da faqat BITTA
-        --    so'rov claim oladi; mag'lub claim'siz qoladi → debit'siz → 409.
+        -- 1) Durable: user_items PK ga band qilish. Parallel durable race'da faqat 1 ta so'rov claim oladi.
         INSERT INTO user_items (user_id, item_id)
         SELECT ${userId}, ${item.id}
         WHERE (SELECT dur FROM price)
@@ -95,33 +94,39 @@ export const coinsRepository = {
           )
         ON CONFLICT DO NOTHING
         RETURNING item_id
+      ), ledger AS (
+        -- 2) UNIQUE (user_id, reason, ref_id): consumable'da unique insertion lock, durable'da faqat claim g'olibi.
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
+        WHERE EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
+          AND EXISTS (
+            SELECT 1 FROM user_coins
+            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
+          )
+          AND (SELECT CASE WHEN (SELECT dur FROM price)
+                           THEN EXISTS (SELECT 1 FROM claim)
+                           ELSE true END)
+        ON CONFLICT DO NOTHING
+        RETURNING id
       ), debit AS (
+        -- 3) Debit FAQAT ledger yozuvi muvaffaqiyatli kiritilganda bajariladi.
         UPDATE user_coins
         SET balance = balance - (SELECT p FROM price),
             updated_at = now()
         WHERE user_id = ${userId}
           AND balance >= (SELECT p FROM price)
-          AND EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          -- durable: FAQAT claim g'olibi; consumable: shartsiz (qayta xarid OK)
-          AND (SELECT CASE WHEN (SELECT dur FROM price)
-                           THEN EXISTS (SELECT 1 FROM claim)
-                           ELSE true END)
+          AND EXISTS (SELECT 1 FROM ledger)
         RETURNING balance
-      ), ledger AS (
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
-        WHERE EXISTS (SELECT 1 FROM debit)
-        ON CONFLICT DO NOTHING
-        RETURNING id
       ), grant_premium AS (
+        -- 4) Consumable: premium_until uzaytirish FAQAT ledger/debit g'olibiga.
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now())
             + make_interval(days => (SELECT days FROM price)),
           updated_at = now()
         WHERE id = ${userId}
           AND NOT (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM debit)
+          AND EXISTS (SELECT 1 FROM ledger)
         RETURNING premium_until
       )
       SELECT
@@ -136,12 +141,19 @@ export const coinsRepository = {
     if (!row?.user_exists) return { status: 'user_not_found' }
     if (row.was_duplicate) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
     if (row.balance === null) {
-      // Debit bo'lmadi: durable claim ololmadi (egasiz allaqachongi) YOKI balans yetarli emas
+      // Debit bo'lmadi: durable claim ololmadi (allaqachon egasi) YOKI duplicate retry YOKI balans yetarli emas
       if (durable) {
         const owned = await executeRows<{ item_id: string }>(sql`
           SELECT item_id FROM user_items WHERE user_id = ${userId} AND item_id = ${item.id}
         `)
         if (owned.length > 0) return { status: 'already_owned' }
+      } else {
+        // Consumable'da ledger insert bo'lmagan bo'lsa — parallel race mag'lubi (duplicate)
+        const dupCheck = await executeRows<{ id: number }>(sql`
+          SELECT id FROM coin_transactions
+          WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
+        `)
+        if (dupCheck.length > 0) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
       }
       return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
     }
