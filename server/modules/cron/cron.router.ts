@@ -22,6 +22,7 @@ import { cronRepository } from './cron.repository'
 import { distributeWeeklyPrizes } from '../leaderboard/tournament-prize.service'
 import { bossRepository } from '../boss/boss.repository'
 import { bossPeriodKey } from '../../../shared/boss-battle'
+import { decideStreakOutcome, STREAK_SAVE_COST } from '../../../shared/streak-save'
 
 const router = Router()
 
@@ -66,16 +67,37 @@ router.get('/cron/daily-reminder', async (_req, res) => {
 
     // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
     const streakOf = await cronRepository.topStreaksForUsers(targets)
+    // Streak coin-save: bugun ham o'tkazib yuborilsa nima bo'lishini oldindan
+    // ogohlantirish (foydalanuvchi coin avtomatik yechilishini bilishi shart).
+    const riskOf = await cronRepository.streakSaveRiskForUsers(targets, today)
 
     const bot = new Bot(token)
     const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
+    const coinSaveWarning = (uid: string): string => {
+      const risk = riskOf.get(uid)
+      if (!risk) return ''
+      const outcome = decideStreakOutcome({
+        gapDays: risk.gapDaysTomorrow, premium: risk.premium, balance: risk.balance,
+      })
+      if (outcome === 'coin_save') {
+        return `\n\n🧊 Bugun ham mashq qilmasangiz, ${STREAK_SAVE_COST} coin evaziga seriyangiz saqlanadi.`
+      }
+      if (outcome === 'reset' && risk.gapDaysTomorrow <= 1) {
+        // Faqat hali "saqlab qolish mumkin edi" bosqichida foydali — coin
+        // yetishmasa aynan shu ogohlantirish sabab bo'lib qolishi mumkin.
+        // gapDaysTomorrow > 1 bo'lsa allaqachon kech — foydasiz xabar.
+        return `\n\n⚠️ Balansingizda ${STREAK_SAVE_COST} coin yo'q — seriyangiz saqlanmaydi, 0 ga tushadi.`
+      }
+      return ''
+    }
     const textFor = (uid: string) => {
       const s = streakOf.get(uid) ?? 0
       if (s > 0) {
         return (
           `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +
           `Bugun hali mashq qilmadingiz — 2 daqiqalik test seriyangizni saqlab qoladi. ` +
-          `1 kun o'tkazilsa intizom 0 ga tushadi!`
+          `1 kun o'tkazilsa intizom 0 ga tushadi!` +
+          coinSaveWarning(uid)
         )
       }
       return (

@@ -3,6 +3,7 @@ import { db } from '../../db/connection'
 import {
   analyticsEvents, answerTokens, dailyRecords, dailyStreaks, jobRuns,
   leagueRolloverLog, linkCodes, progress, rateLimits, telegramLoginCodes,
+  users, userCoins,
 } from '../../schema'
 
 const STALE_AFTER_MS = 60 * 60_000
@@ -58,6 +59,54 @@ export const cronRepository = {
       .where(inArray(dailyStreaks.userId, userIds))
       .groupBy(dailyStreaks.userId)
     return new Map(rows.map((r) => [r.userId, Number(r.streak)]))
+  },
+
+  /**
+   * Streak coin-save ogohlantirishi uchun: har user "ENG SO'NGGI faollik
+   * sanasi" (barcha fanlar bo'yicha eng yaqini) + premium holati + coin
+   * balansi. `gapDaysTomorrow` = agar user BUGUN ham faol bo'lmasa va
+   * ERTAGA qaytsa, `shared/streak-save.ts` formulasidagi `gapDays` qancha
+   * bo'lishi (ya'ni `today - lastActive`, chunki (ertaga - lastActive) - 1
+   * = bugun - lastActive).
+   */
+  async streakSaveRiskForUsers(userIds: string[], today: string): Promise<Map<string, {
+    gapDaysTomorrow: number
+    premium: boolean
+    balance: number
+  }>> {
+    if (userIds.length === 0) return new Map()
+
+    const lastActiveRows = await db
+      .select({ userId: dailyStreaks.userId, lastActive: sql<string | null>`MAX(${dailyStreaks.lastDailyDate})` })
+      .from(dailyStreaks)
+      .where(inArray(dailyStreaks.userId, userIds))
+      .groupBy(dailyStreaks.userId)
+    // lastDailyDate ustuni NULLABLE (schema) — amalda touchActivity/recordAnswer
+    // har doim to'ldiradi, lekin himoya sifatida null qatorlarni tashlaymiz
+    // (aks holda Date(null) → Invalid Date → NaN gap).
+    const lastActive = lastActiveRows.filter((r): r is { userId: string; lastActive: string } => r.lastActive != null)
+
+    const entitlement = await db
+      .select({
+        userId:  users.id,
+        premium: sql<boolean>`(${users.tariff} = 'premium' OR (${users.premiumUntil} IS NOT NULL AND ${users.premiumUntil} > now()))`,
+      })
+      .from(users)
+      .where(inArray(users.id, userIds))
+
+    const balances = await db
+      .select({ userId: userCoins.userId, balance: userCoins.balance })
+      .from(userCoins)
+      .where(inArray(userCoins.userId, userIds))
+
+    const premiumOf = new Map(entitlement.map((r) => [r.userId, r.premium]))
+    const balanceOf = new Map(balances.map((r) => [r.userId, r.balance]))
+
+    return new Map(lastActive.map((r) => [r.userId, {
+      gapDaysTomorrow: Math.floor((new Date(`${today}T00:00:00Z`).getTime() - new Date(`${r.lastActive}T00:00:00Z`).getTime()) / 86_400_000),
+      premium: premiumOf.get(r.userId) ?? false,
+      balance: balanceOf.get(r.userId) ?? 0,
+    }]))
   },
 
   // ── league-rollover so'rovlar ─────────────────────────────────────────
