@@ -1,43 +1,53 @@
-import { memo } from 'react'
-import React from 'react'
+import React, { memo } from 'react'
+import { cn } from '../../../shared/lib/cn'
 
-/* Rang intizomi (v2.1): default ikonlar NEYTRAL kulrang — faqat AI/Premium binafsha,
-   badge'lar esa semantik (qizil = xato soni). Ranglar CSS-token (var(--p-*)),
-   shuning uchun alpha color-mix bilan aralashadi, hex-konkatenatsiya bilan EMAS. */
+/* Rang intizomi (v3): default ikonlar NEYTRAL — kategoriya rangi FAQAT
+   ma'lumotdan kelganda (fan/modul) ishlatiladi. Badge'lar semantik
+   (qizil = xato soni). Glow tizimdan chiqarildi: ikonka qutisi sirt +
+   hairline bilan ajraladi. */
 
 // ── Icon chip — GridCard/ServiceCard/MockGridCard'ning umumiy ikonka qutisi.
-// Bitta joyda: o'lcham/stroke/tint bir xil intizomga bo'ysunadi (avval har biri
-// o'zicha 17px/2.2, 26px/1.8, 19px/2 — tasodifiy farqlanardi).
+// Bitta joyda: o'lcham/stroke/tint bir xil intizomga bo'ysunadi.
 const CHIP_SCALE = {
-  sm: { box: 'w-9 h-9',                          radius: 'rounded-xl',                       icon: 18 },
-  md: { box: 'w-10 h-10 sm:w-11 sm:h-11',         radius: 'rounded-[12px] sm:rounded-[14px]', icon: 20 },
-  lg: { box: 'w-11 h-11 sm:w-12 sm:h-12',         radius: 'rounded-2xl',                      icon: 24 },
+  sm: { box: 'size-9',                     radius: 'rounded-[10px]', icon: 18 },
+  md: { box: 'size-10 sm:size-11',         radius: 'rounded-[12px]', icon: 20 },
+  lg: { box: 'size-11 sm:size-12',         radius: 'rounded-[14px]', icon: 22 },
 } as const
 
 function IconChip({ icon: Icon, color, size }: { icon: React.ElementType; color: string; size: keyof typeof CHIP_SCALE }) {
   const s = CHIP_SCALE[size]
   return (
-    <div className={`${s.box} ${s.radius} flex items-center justify-center flex-shrink-0`}
+    <div
+      className={cn(s.box, s.radius, 'flex flex-shrink-0 items-center justify-center')}
       style={{
         backgroundColor: `color-mix(in srgb, ${color} 10%, transparent)`,
-        border: `1px solid color-mix(in srgb, ${color} 18%, transparent)`,
-        boxShadow: `0 0 16px color-mix(in srgb, ${color} 20%, transparent)`,
-      }}>
-      <Icon size={s.icon} strokeWidth={2} style={{ color }} />
+        border: `1px solid color-mix(in srgb, ${color} 20%, transparent)`,
+      }}
+    >
+      <Icon size={s.icon} strokeWidth={1.75} style={{ color }} />
     </div>
   )
 }
 
 function BadgeDot({ count }: { count: number }) {
   return (
-    <span className="absolute -top-2 -right-1 text-white text-[10px] font-bold px-1.5 min-w-[20px] h-5 rounded-full flex items-center justify-center shadow-lg"
-      style={{ background: 'var(--p-danger)' }}>
+    <span
+      className="absolute -right-1 -top-2 flex h-5 min-w-[20px] items-center justify-center rounded-full px-1.5 text-[10px] font-semibold tabular-nums text-white"
+      style={{ background: 'var(--p-danger)' }}
+    >
       {count}
     </span>
   )
 }
 
-// ── Grid Card (rejimlar — eski vertikal) ───────────────────────────────────────
+/** Interaktiv karta uchun umumiy holat klasslari (hover/active/focus). */
+const cardInteractive = cn(
+  'transition-[transform,border-color] duration-[120ms] ease-out',
+  'hover:border-plineStrong active:scale-[0.98]',
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
+)
+
+// ── Grid Card (rejimlar — gorizontal) ──────────────────────────────────────
 export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-subtle)', onClick }: {
   icon: React.ElementType
   label: string
@@ -49,16 +59,19 @@ export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconC
     <button
       onClick={onClick}
       aria-label={label}
-      className="btn-premium-secondary relative flex items-center gap-2.5 rounded-2xl px-3.5 py-3 w-full"
+      className={cn(
+        'relative flex w-full items-center gap-2.5 rounded-container border border-pline bg-pcard px-3.5 py-3',
+        cardInteractive,
+      )}
     >
-      {badge != null && <BadgeDot count={badge} />}
+      {badge != null && badge > 0 && <BadgeDot count={badge} />}
       <IconChip icon={Icon} color={iconColor} size="sm" />
-      <span className="text-[12px] font-semibold text-pfg text-left leading-tight">{label}</span>
+      <span className="text-left text-[12px] font-semibold leading-tight text-pfg">{label}</span>
     </button>
   )
 })
 
-// ── Service Carousel Card — kvadrat, kichkina (auto-scroll uchun) ───────────────
+// ── Service Carousel Card — kvadrat (auto-scroll karusel uchun) ────────────
 export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClick }: {
   icon: React.ElementType
   label: string
@@ -68,15 +81,14 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
     <button
       onClick={onClick}
       aria-label={label}
-      className="relative flex flex-col items-center justify-center gap-2.5 rounded-[16px] shrink-0 snap-start w-[100px] h-[100px] sm:w-[108px] sm:h-[108px] p-2.5 active:scale-[0.97] transition-transform"
-      style={{
-        background: 'var(--p-card)',
-        border: '1px solid var(--p-line)',
-        boxShadow: '0 6px 16px rgba(2,6,16,0.18), inset 0 1px 0 rgba(255,255,255,0.03)',
-      }}
+      className={cn(
+        'relative flex size-[100px] shrink-0 snap-start flex-col items-center justify-center gap-2.5 p-2.5 sm:size-[108px]',
+        'rounded-container border border-pline bg-pcard',
+        cardInteractive,
+      )}
     >
       <IconChip icon={Icon} color="var(--p-subtle)" size="lg" />
-      <span className="text-[11px] font-medium text-pfg text-center leading-[1.25] line-clamp-2 min-h-[28px] flex items-center justify-center px-0.5">
+      <span className="line-clamp-2 flex min-h-[28px] items-center justify-center px-0.5 text-center text-[11px] font-medium leading-[1.25] text-pfg">
         {label}
       </span>
     </button>
@@ -97,13 +109,19 @@ export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subt
     <button
       onClick={onClick}
       aria-label={`${label}${comingSoon ? ' (tez orada)' : ''}`}
-      className={`card-premium relative flex flex-col items-center justify-center text-center gap-2 p-2.5 sm:p-3.5 min-h-[96px] sm:min-h-[104px] active:scale-[0.97] transition-transform ${comingSoon ? 'opacity-70' : ''}`}
+      className={cn(
+        'relative flex min-h-[96px] flex-col items-center justify-center gap-2 rounded-container border border-pline bg-pcard p-2.5 text-center sm:min-h-[104px] sm:p-3.5',
+        cardInteractive,
+        comingSoon && 'opacity-70',
+      )}
     >
-      {badge != null && <BadgeDot count={badge} />}
+      {badge != null && badge > 0 && <BadgeDot count={badge} />}
       <IconChip icon={Icon} color={iconColor} size="md" />
-      <div className="text-center w-full min-w-0 px-0.5">
-        <p className="text-[12px] sm:text-[13px] font-semibold text-pfg leading-tight truncate">{label}</p>
-        <p className={`text-[10px] sm:text-[10.5px] font-medium mt-0.5 truncate ${comingSoon ? 'text-ppurple' : 'text-psubtle'}`}>{subtitle}</p>
+      <div className="w-full min-w-0 px-0.5 text-center">
+        <p className="truncate text-[12px] font-semibold leading-tight text-pfg sm:text-[13px]">{label}</p>
+        <p className={cn('mt-0.5 truncate text-[10px] font-medium sm:text-[10.5px]', comingSoon ? 'text-ppurple' : 'text-psubtle')}>
+          {subtitle}
+        </p>
       </div>
     </button>
   )

@@ -27,7 +27,8 @@ describe('ErrorBoundary component', () => {
       </ErrorBoundary>
     )
 
-    expect(screen.getByText('Xato yuz berdi')).toBeInTheDocument()
+    expect(screen.getByText("Ilova kutilmaganda to'xtadi")).toBeInTheDocument()
+    // Texnik xabar ham ko'rsatiladi (support uchun), lekin asosiy matn emas
     expect(screen.getByText('Kutilmagan xatolik yuz berdi')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Qayta yuklash' })).toBeInTheDocument()
   })

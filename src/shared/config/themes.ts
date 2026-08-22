@@ -11,6 +11,8 @@
  *   shart — u yerda --p-* VA --theme-* tokenlar birga override qilinadi
  *   (consistency test tekshiradi).
  * - `color` — CSS dagi --p-primary bilan bir xil bo'lishi kerak (swatch/preview).
+ * - `glow` — v3 "Jade & Stone"da glow tizimdan chiqarildi; maydon interfeys
+ *   barqarorligi uchun qoldi va HAR DOIM false (swatch preview'da halqa yo'q).
  * - `premium: true` temalarni faqat obunachilar tanlaydi YOKI tangaga sotib oladi
  *   (App.tsx dagi resolveAccent free user'ni default'ga qaytaradi — egasiz bo'lsa).
  * - COIN temalari: `premium: false` + shared/shop-items.ts'da 'accent-theme'
@@ -33,7 +35,7 @@ export interface AccentTheme {
   bg:      string
   /** Karta rangi (preview swatch) */
   card:    string
-  /** Neon glow atmosferasi bormi */
+  /** @deprecated v3: glow tizimda yo'q — har doim false */
   glow:    boolean
   premium: boolean
 }
@@ -41,21 +43,21 @@ export interface AccentTheme {
 export const DEFAULT_ACCENT = 'kiwi' as const
 
 export const ACCENT_THEMES: AccentTheme[] = [
-  { id: 'kiwi',     label: { uz: 'Kiwi (standart)', ru: 'Киви (стандарт)' }, color: '#5be300', bg: '#090e18', card: '#162132', glow: true,  premium: false },
-  { id: 'aurora',   label: { uz: 'Aurora',          ru: 'Аврора'          }, color: '#00ffa3', bg: '#061019', card: '#0d2231', glow: true,  premium: true  },
-  { id: 'violet',   label: { uz: 'Amethyst',        ru: 'Аметист'         }, color: '#a855f7', bg: '#120b1c', card: '#221536', glow: true,  premium: true  },
-  { id: 'ocean',    label: { uz: 'Ocean',           ru: 'Океан'           }, color: '#38bdf8', bg: '#071120', card: '#0e2138', glow: false, premium: true  },
-  { id: 'forest',   label: { uz: 'Forest',          ru: 'Лес'             }, color: '#34d399', bg: '#08130d', card: '#10281c', glow: false, premium: true  },
-  { id: 'sunset',   label: { uz: 'Sunset',          ru: 'Закат'           }, color: '#fb923c', bg: '#160f08', card: '#291b0d', glow: true,  premium: true  },
-  { id: 'sakura',   label: { uz: 'Sakura',          ru: 'Сакура'          }, color: '#ec4899', bg: '#fff1f5', card: '#ffffff', glow: false, premium: true  },
-  { id: 'obsidian', label: { uz: 'Obsidian',        ru: 'Обсидиан'        }, color: '#e4e4e7', bg: '#050506', card: '#131316', glow: false, premium: true  },
-  { id: 'gold',     label: { uz: 'Gold Elite',      ru: 'Gold Elite'      }, color: '#facc15', bg: '#0b0903', card: '#1c1604', glow: true,  premium: true  },
-  { id: 'payme',    label: { uz: 'Payme',           ru: 'Payme'           }, color: '#00c0c9', bg: '#090e18', card: '#162132', glow: false, premium: true  },
+  { id: 'kiwi',     label: { uz: 'Kiwi (standart)', ru: 'Киви (стандарт)' }, color: '#0fa47f', bg: '#0d1117', card: '#161b22', glow: false, premium: false },
+  { id: 'aurora',   label: { uz: 'Aurora',          ru: 'Аврора'          }, color: '#16c79a', bg: '#081614', card: '#0d1c19', glow: false, premium: true  },
+  { id: 'violet',   label: { uz: 'Amethyst',        ru: 'Аметист'         }, color: '#9d7bea', bg: '#130f1a', card: '#1a1523', glow: false, premium: true  },
+  { id: 'ocean',    label: { uz: 'Ocean',           ru: 'Океан'           }, color: '#3d9ad9', bg: '#0a1219', card: '#101a23', glow: false, premium: true  },
+  { id: 'forest',   label: { uz: 'Forest',          ru: 'Лес'             }, color: '#3fae7c', bg: '#0a1410', card: '#101b15', glow: false, premium: true  },
+  { id: 'sunset',   label: { uz: 'Sunset',          ru: 'Закат'           }, color: '#e08b4a', bg: '#17110b', card: '#1e1610', glow: false, premium: true  },
+  { id: 'sakura',   label: { uz: 'Sakura',          ru: 'Сакура'          }, color: '#c4487a', bg: '#fdf6f7', card: '#ffffff', glow: false, premium: true  },
+  { id: 'obsidian', label: { uz: 'Obsidian',        ru: 'Обсидиан'        }, color: '#d4d4d8', bg: '#08080a', card: '#0f0f12', glow: false, premium: true  },
+  { id: 'gold',     label: { uz: 'Gold Elite',      ru: 'Gold Elite'      }, color: '#d9a441', bg: '#100d06', card: '#17130a', glow: false, premium: true  },
+  { id: 'payme',    label: { uz: 'Payme',           ru: 'Payme'           }, color: '#00b0b9', bg: '#0d1117', card: '#161b22', glow: false, premium: true  },
   // ── COIN-EKSKLYUZIV (premium:false) — FAQAT do'konda tanga evaziga ochiladi.
   // Narxlar: shared/shop-items.ts (server ham o'qiydi). ──
-  { id: 'crimson',  label: { uz: 'Crimson',         ru: 'Малиновый'       }, color: '#fb3748', bg: '#170a0e', card: '#2a1119', glow: true,  premium: false },
-  { id: 'royal',    label: { uz: 'Royal',           ru: 'Королевский'     }, color: '#818cf8', bg: '#0a0a18', card: '#181a35', glow: true,  premium: false },
-  { id: 'arctic',   label: { uz: 'Arctic',          ru: 'Арктика'         }, color: '#0ea5e9', bg: '#f0f9ff', card: '#ffffff', glow: false, premium: false },
+  { id: 'crimson',  label: { uz: 'Crimson',         ru: 'Малиновый'       }, color: '#e04a5f', bg: '#170c0e', card: '#1e1013', glow: false, premium: false },
+  { id: 'royal',    label: { uz: 'Royal',           ru: 'Королевский'     }, color: '#7b83e0', bg: '#0c0c15', card: '#12131f', glow: false, premium: false },
+  { id: 'arctic',   label: { uz: 'Arctic',          ru: 'Арктика'         }, color: '#0b7fb8', bg: '#f7fafc', card: '#ffffff', glow: false, premium: false },
 ]
 
 export function getAccentTheme(id: string): AccentTheme {

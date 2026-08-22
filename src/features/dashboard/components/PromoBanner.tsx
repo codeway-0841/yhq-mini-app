@@ -26,14 +26,12 @@ function useCountdown() {
 export const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
-    <div className="mx-5 mb-4 card-premium rounded-[24px] relative overflow-hidden active:scale-[0.98] transition-transform cursor-pointer"
-      style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
-      <div className="relative z-10 p-4 flex items-center justify-between">
-        <p className="text-pfg text-[13px] font-semibold leading-snug max-w-[55%]">
+    <div className="relative mx-5 mb-6 overflow-hidden rounded-container border bg-pcard border-[rgb(var(--p-danger-rgb)/0.35)]">
+      <div className="relative z-10 flex items-center justify-between gap-4 p-4">
+        <p className="max-w-[55%] text-[13px] font-semibold leading-snug text-pfg">
           {text}
         </p>
-        <span className="text-pdanger text-[28px] font-bold tracking-wider tabular-nums"
-          style={{ fontVariantNumeric: 'tabular-nums' }}>
+        <span className="font-display text-[26px] font-semibold tabular-nums tracking-[-0.02em] text-pdanger">
           {countdown}
         </span>
       </div>

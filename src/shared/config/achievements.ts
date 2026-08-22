@@ -22,17 +22,17 @@ export interface AchievementDef {
 }
 
 export const ACHIEVEMENTS: AchievementDef[] = [
-  { id: 'streak7',      icon: Flame,        color: '#ff9600', titleKey: 'achStreak7',     target: 7,    get: (s) => s.bestStreak },
-  { id: 'streak14',     icon: Flame,        color: '#ffc800', titleKey: 'achStreak14',    target: 14,   get: (s) => s.bestStreak },
-  { id: 'streak30',     icon: Flame,        color: '#ff4b4b', titleKey: 'achStreak30',    target: 30,   get: (s) => s.bestStreak },
-  { id: 'correct100',   icon: CheckCircle2, color: '#58cc02', titleKey: 'achCorrect100',  target: 100,  get: (s) => s.totalCorrect },
-  { id: 'correct500',   icon: CheckCircle2, color: '#58cc02', titleKey: 'achCorrect500',  target: 500,  get: (s) => s.totalCorrect },
-  { id: 'correct1000',  icon: CheckCircle2, color: '#58cc02', titleKey: 'achCorrect1000', target: 1000, get: (s) => s.totalCorrect },
-  { id: 'answered500',  icon: ListChecks,   color: '#1cb0f6', titleKey: 'achAnswered500', target: 500,  get: (s) => s.totalAnswered },
-  { id: 'fixed10',      icon: HeartCrack,   color: '#ff4b4b', titleKey: 'achFixed10',     target: 10,   get: (s) => s.totalFixed },
-  { id: 'fixed50',      icon: HeartCrack,   color: '#a855f7', titleKey: 'achFixed50',     target: 50,   get: (s) => s.totalFixed },
-  { id: 'octagon10',    icon: Swords,       color: '#38bdf8', titleKey: 'achOctagon10',   target: 10,   get: (s) => s.octagonWins },
-  { id: 'allsubjects80',icon: Trophy,       color: '#ffc800', titleKey: 'achAllSubj80',   target: 1,    get: (s) => (s.allPassed80 ? 1 : 0) },
+  { id: 'streak7',      icon: Flame,        color: '#b96b34', titleKey: 'achStreak7',     target: 7,    get: (s) => s.bestStreak },
+  { id: 'streak14',     icon: Flame,        color: '#b0822b', titleKey: 'achStreak14',    target: 14,   get: (s) => s.bestStreak },
+  { id: 'streak30',     icon: Flame,        color: '#a8453c', titleKey: 'achStreak30',    target: 30,   get: (s) => s.bestStreak },
+  { id: 'correct100',   icon: CheckCircle2, color: '#2e8b78', titleKey: 'achCorrect100',  target: 100,  get: (s) => s.totalCorrect },
+  { id: 'correct500',   icon: CheckCircle2, color: '#2e8b78', titleKey: 'achCorrect500',  target: 500,  get: (s) => s.totalCorrect },
+  { id: 'correct1000',  icon: CheckCircle2, color: '#2e8b78', titleKey: 'achCorrect1000', target: 1000, get: (s) => s.totalCorrect },
+  { id: 'answered500',  icon: ListChecks,   color: '#37718e', titleKey: 'achAnswered500', target: 500,  get: (s) => s.totalAnswered },
+  { id: 'fixed10',      icon: HeartCrack,   color: '#a8453c', titleKey: 'achFixed10',     target: 10,   get: (s) => s.totalFixed },
+  { id: 'fixed50',      icon: HeartCrack,   color: '#74589b', titleKey: 'achFixed50',     target: 50,   get: (s) => s.totalFixed },
+  { id: 'octagon10',    icon: Swords,       color: '#5566a8', titleKey: 'achOctagon10',   target: 10,   get: (s) => s.octagonWins },
+  { id: 'allsubjects80',icon: Trophy,       color: '#b0822b', titleKey: 'achAllSubj80',   target: 1,    get: (s) => (s.allPassed80 ? 1 : 0) },
 ]
 
 export function isUnlocked(d: AchievementDef, s: AchievementStats): boolean {

@@ -7,7 +7,7 @@
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, ChevronLeft, Gift, Loader2, Ticket } from 'lucide-react'
+import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Loader2, Star, Ticket } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -77,7 +77,7 @@ export default function PremiumPage() {
           className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold tracking-tight">Premium</h1>
+        <h1 className="text-lg font-semibold tracking-tight">Premium</h1>
       </div>
 
       {/* Hero — dark glass + oltin */}
@@ -85,16 +85,14 @@ export default function PremiumPage() {
         style={{
           background: 'linear-gradient(160deg, rgb(var(--p-gold-rgb) / 0.10) 0%, var(--p-card) 55%)',
           border: '1px solid rgb(var(--p-gold-rgb) / 0.30)',
-          boxShadow: '0 0 60px -20px rgb(var(--p-gold-rgb) / 0.35)',
         }}>
-        <div className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-4"
+        <div className="w-16 h-16 mx-auto rounded-container flex items-center justify-center mb-4"
           style={{
             background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
-            boxShadow: '0 8px 24px rgb(var(--p-gold-rgb) / 0.35)',
           }}>
-          <Crown size={30} className="text-pongold" fill="currentColor" />
+          <Crown size={28} strokeWidth={1.75} className="text-pongold" />
         </div>
-        <h2 className="text-[24px] font-bold tracking-tight">KIWI Premium</h2>
+        <h2 className="text-[24px] font-semibold tracking-tight">KIWI Premium</h2>
         <p className="text-[13px] text-pmuted mt-1.5 leading-relaxed max-w-[260px] mx-auto">
           {lang === 'ru'
             ? 'Все возможности без ограничений — в одной подписке'
@@ -102,7 +100,7 @@ export default function PremiumPage() {
         </p>
         {isPremium && (
           <div className="mt-4 flex flex-col items-center gap-1">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold"
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold"
               style={{
                 background: 'rgb(var(--p-success-rgb) / 0.15)',
                 border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
@@ -128,7 +126,7 @@ export default function PremiumPage() {
       </div>
 
       {/* Imkoniyatlar */}
-      <div className="mx-5 mt-4 card-premium divide-y divide-pline">
+      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard divide-y divide-pline">
         {BENEFITS.map((b, i) => (
           <div key={i} className="flex items-center gap-3.5 px-4 py-3.5">
             <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"
@@ -147,17 +145,13 @@ export default function PremiumPage() {
       <div className="flex gap-3 px-5 overflow-x-auto pb-2 scroll-smooth-x">
         {premiumThemes.map((t) => (
           <div key={t.id} className="flex-none w-[110px]">
-            <div className="h-[72px] rounded-2xl overflow-hidden border border-pline relative"
+            <div className="h-[72px] rounded-container overflow-hidden border border-pline relative"
               style={{ background: t.bg }}>
               <div className="absolute left-2 right-2 top-2 h-6 rounded-lg"
                 style={{ background: t.card, border: `1px solid ${t.color}4d` }} />
               <span className="absolute bottom-2 left-2 w-8 h-2 rounded-full"
-                style={{ background: t.color, boxShadow: t.glow ? `0 0 8px ${t.color}` : undefined }} />
-              {t.glow && (
-                <span className="absolute bottom-2.5 right-2 w-2.5 h-2.5 rounded-full"
-                  style={{ background: t.color, boxShadow: `0 0 8px ${t.color}` }} />
-              )}
-              <Crown size={12} className="absolute top-2 right-2 text-pgold" fill="currentColor" />
+                style={{ background: t.color }} />
+              <Crown size={12} strokeWidth={1.75} className="absolute right-2 top-2 text-pgold" />
             </div>
             <p className="text-[11px] font-semibold text-pmuted mt-1.5 text-center truncate">
               {t.label[lang]}
@@ -166,13 +160,13 @@ export default function PremiumPage() {
         ))}
       </div>
 
-      {/* 🎁 3 kunlik BEPUL trial — 1 marta */}
+      {/* 3 kunlik BEPUL trial — 1 marta */}
       {!isPremium && !trialDone && (
         <div className="mx-5 mt-4">
           <button onClick={startTrial} disabled={trialBusy}
-            className="btn-neon w-full h-[58px] rounded-[18px] text-[15px] font-bold flex items-center justify-center gap-2 disabled:opacity-60">
-            {trialBusy ? <Loader2 size={19} className="animate-spin" /> : <Gift size={19} />}
-            {lang === 'ru' ? '🎁 3 дня Premium — бесплатно' : '🎁 3 kun Premium — BEPUL'}
+            className="btn-neon flex h-[52px] w-full items-center justify-center gap-2 text-[15px] font-semibold disabled:opacity-40">
+            {trialBusy ? <Loader2 size={19} strokeWidth={1.75} className="motion-safe:animate-spin" /> : <Gift size={19} />}
+            {lang === 'ru' ? '3 дня Premium — бесплатно' : '3 kun Premium — bepul'}
           </button>
           {trialError && (
             <p className="text-center text-[11.5px] text-pwarning font-medium mt-2">{trialError}</p>
@@ -183,9 +177,11 @@ export default function PremiumPage() {
         </div>
       )}
       {trialDone && (
-        <div className="mx-5 mt-4 card-premium p-4 text-center"
-          style={{ borderColor: 'rgba(34,197,94,0.4)' }}>
-          <p className="text-[14px] font-bold text-psuccess">🎉 {lang === 'ru' ? 'Пробный период активирован!' : 'Sinov muddati faollashdi!'}</p>
+        <div className="mx-5 mt-4 rounded-container border border-[rgb(var(--p-success-rgb)/0.35)] bg-[rgb(var(--p-success-rgb)/0.09)] p-4 text-center">
+          <p className="flex items-center justify-center gap-1.5 text-[14px] font-semibold text-psuccess">
+            <CheckCircle2 size={16} strokeWidth={1.75} />
+            {lang === 'ru' ? 'Пробный период активирован' : 'Sinov muddati faollashdi'}
+          </p>
           <p className="text-[11.5px] text-pmuted mt-1">
             {lang === 'ru' ? '3 дня полного доступа ко всем функциям' : "3 kun davomida barcha funksiyalardan to'liq foydalaning"}
           </p>
@@ -203,16 +199,17 @@ export default function PremiumPage() {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (
                 <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
-                  className="card-premium relative w-full p-4 text-left active:scale-[0.98] transition-transform"
-                  style={highlight ? { borderColor: 'var(--p-gold)', borderWidth: 1.5, boxShadow: '0 0 30px -8px rgb(var(--p-gold-rgb) / 0.35)' } : undefined}>
+                  className="rounded-container border border-pline bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-transform"
+                  style={highlight ? { borderColor: 'var(--p-gold)' } : undefined}>
                   {highlight && (
-                     <span className="absolute -top-2.5 left-4 bg-gradient-to-r from-pgold to-pgolddeep text-pongold text-[9.5px] font-black uppercase tracking-wide px-2.5 py-1 rounded-full">
-                      ★ {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
+                    <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full bg-pgold px-2.5 py-1 text-[9.5px] font-semibold uppercase tracking-wide text-pongold">
+                      <Star size={9} strokeWidth={2} />
+                      {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
                     </span>
                   )}
                   <div className="flex items-center justify-between gap-3">
                     <div>
-                      <p className="text-[15px] font-bold text-pfg">
+                      <p className="text-[15px] font-semibold text-pfg">
                         {lang === 'ru' ? plan.titleRu : plan.titleUz}
                       </p>
                       <p className="text-[11.5px] text-psubtle mt-0.5">
@@ -220,7 +217,7 @@ export default function PremiumPage() {
                       </p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <span className="btn-premium-gold px-3.5 py-1.5 rounded-xl text-[13px] inline-block font-black">
+                      <span className="btn-premium-gold px-3.5 py-1.5 rounded-control text-[13px] inline-block font-semibold">
                         {formatUzs(plan.priceUzs, lang)}
                       </span>
                       <span className="text-[10px] text-pmuted block mt-0.5">
@@ -242,7 +239,7 @@ export default function PremiumPage() {
             <button
               type="button"
               onClick={() => setShowPromoModal(true)}
-              className="text-xs font-bold text-duo-purple hover:underline inline-flex items-center gap-1.5 active:opacity-70 transition-opacity"
+              className="text-xs font-semibold text-ppurple hover:underline inline-flex items-center gap-1.5 active:opacity-70 transition-opacity"
             >
               <Ticket size={14} />
               {lang === 'ru' ? 'У вас есть промокод?' : 'Promokodingiz bormi?'}

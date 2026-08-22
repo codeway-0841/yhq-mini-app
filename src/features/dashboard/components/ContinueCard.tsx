@@ -1,6 +1,7 @@
 import { memo, useState } from 'react'
-import { ChevronDown } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
+import { cn } from '../../../shared/lib/cn'
 
 // ── Davom etayotgan mavzu kartasi ───────────────────────────────────────────
 // Background rasm: faylni `public/continue-mavzu.webp` ga tashlasangiz kifoya —
@@ -17,34 +18,44 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
   const tt = useT(lang)
   const [bgOk, setBgOk] = useState(true)
   return (
-    <div className="px-5 mb-4">
-      <button onClick={onContinue}
-        className="card-premium w-full relative overflow-hidden p-5 text-left active:scale-[0.98] transition-transform">
-        {/* Background PNG (o'ng tomonda) — fayl yo'q bo'lsa yashirinadi */}
+    <div className="mb-6 px-5">
+      <button
+        onClick={onContinue}
+        className={cn(
+          'relative w-full overflow-hidden rounded-container border border-pline bg-pcard p-5 text-left',
+          'transition-[transform,border-color] duration-[120ms] ease-out',
+          'hover:border-plineStrong active:scale-[0.98]',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
+        )}
+      >
+        {/* Dekorativ rasm — fayl yo'q bo'lsa yashirinadi.
+            v3: `mix-blend-mode: screen` olib tashlandi (light temada rasm
+            butunlay yo'qolardi); o'rniga past opacity ikkala temada ishlaydi. */}
         {bgOk && (
           <img src={CONTINUE_BG_URL} alt="" aria-hidden
             onError={() => setBgOk(false)}
-            style={{ mixBlendMode: 'screen' }}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-full max-w-full object-contain pointer-events-none select-none" />
+            className="pointer-events-none absolute right-0 top-1/2 h-full max-w-[45%] -translate-y-1/2 select-none object-contain opacity-[0.14]" />
         )}
         <div className="relative">
-          {/* Sarlavha */}
           <p className="text-[12px] font-medium text-psubtle">{tt('currentTopic')}</p>
           {/* Mavzu nomi — to'liq qatorda, kesilmaydi */}
-          <p className="text-[18px] font-bold text-pfg tracking-tight whitespace-normal break-words leading-snug mt-1 pr-16">
+          <p className="mt-1 whitespace-normal break-words pr-16 font-display text-[18px] font-semibold leading-snug tracking-[-0.015em] text-pfg">
             {modTitle}
           </p>
-          <p className="text-[12px] font-medium text-pmuted mt-1.5">
+          <p className="mt-1.5 text-[12px] font-medium text-pmuted">
             {allDone ? tt('allDoneWord') : lessonLabel}
           </p>
-          {/* Progress bar + "Davom etish" — bir qatorda */}
-          <div className="flex items-center gap-3 mt-3.5">
-            <div className="progress-premium flex-1">
-              <div className="fill" style={{ width: `${Math.max(progressPct, 2)}%` }} />
+          {/* Progress rail + "Davom etish" — bir qatorda */}
+          <div className="mt-4 flex items-center gap-3">
+            <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
+              <div
+                className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
+                style={{ width: `${Math.max(progressPct, 2)}%` }}
+              />
             </div>
-            <span className="btn-premium btn-premium-sm flex-shrink-0">
+            <span className="inline-flex h-[34px] shrink-0 items-center gap-1 rounded-control bg-pprimary px-3 text-[13.5px] font-semibold text-ponprimary">
               {tt('continueLearn')}
-              <ChevronDown size={15} className="-rotate-90" />
+              <ChevronRight size={15} strokeWidth={1.75} />
             </span>
           </div>
         </div>

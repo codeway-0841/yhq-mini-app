@@ -9,7 +9,7 @@
  *    premium → syncFromServer (tariff/premium_until o'zgarishi).
  */
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { X, Coins, Loader2 } from 'lucide-react'
+import { X, Coins, Crown, Loader2 } from 'lucide-react'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import Confetti from '../../shared/components/Confetti'
 import { api, ApiError } from '../../shared/api'
@@ -121,10 +121,10 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
   return (
     <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
       {celebrate && <Confetti count={40} />}
-      <div className="bg-pcard border border-pline rounded-3xl w-[332px] max-w-[92vw] p-5 pt-4 relative">
+      <div className="bg-pcard border border-pline rounded-container w-[332px] max-w-[92vw] p-5 pt-4 relative">
         {/* Header */}
         <div className="flex items-center justify-between mb-1.5">
-          <h2 className="text-[16px] font-black tracking-tight">{tt('spinTitle')}</h2>
+          <h2 className="text-[16px] font-semibold tracking-tight">{tt('spinTitle')}</h2>
           <button onClick={onClose} aria-label={tt('spinClose')}
             className="text-psubtle hover:text-pfg p-1 transition-colors">
             <X size={18} />
@@ -141,21 +141,20 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               borderLeft: '11px solid transparent',
               borderRight: '11px solid transparent',
               borderTop: '18px solid var(--p-gold)',
-              filter: 'drop-shadow(0 2px 3px rgb(var(--p-gold-rgb) / 0.5))',
             }} />
           {/* Aylanuvchi disk */}
           <div
             className="absolute inset-0 rounded-full border-4 border-pcard overflow-hidden"
             style={{
               background: gradient,
-              boxShadow: '0 8px 28px rgb(var(--p-gold-rgb) / 0.25), inset 0 0 0 4px rgb(var(--p-gold-rgb) / 0.35)',
+              boxShadow: 'inset 0 0 0 3px rgb(var(--p-gold-rgb) / 0.30)',
               transform: `rotate(${rotation}deg)`,
               transition: `transform ${SPIN_MS}ms cubic-bezier(0.15, 0.9, 0.25, 1)`,
             }}>
             {SPIN_SEGMENTS.map((s, i) => (
               <div key={s.id} className="absolute inset-0 flex justify-center"
                 style={{ transform: `rotate(${i * SEG + SEG / 2}deg)` }}>
-                <span className="pt-3 text-[12px] font-black whitespace-nowrap"
+                <span className="pt-3 text-[12px] font-semibold whitespace-nowrap"
                   style={{ color: 'var(--p-canvas)' }}>
                   {segLabel(s)}
                 </span>
@@ -179,7 +178,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
             <p className="text-[12px] text-psubtle font-semibold">🍀</p>
           )}
           {phase === 'spinning' && (
-            <p className="text-[12.5px] font-bold text-pmuted animate-pulse">{tt('spinSpinning')}</p>
+            <p className="text-[12.5px] font-semibold text-pmuted motion-safe:animate-pulse">{tt('spinSpinning')}</p>
           )}
           {(phase === 'done' || phase === 'used') && (
             <div className="animate-premiumIn">
@@ -187,9 +186,11 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
                 {phase === 'done' ? tt('spinCongrats') : tt('spinTodayPrize')}
               </p>
               {result && (
-                <p className="mt-1 text-[22px] font-black flex items-center justify-center gap-1.5"
+                <p className="mt-1 text-[22px] font-semibold flex items-center justify-center gap-1.5"
                   style={{ color: result.kind === 'coins' ? 'var(--p-gold)' : 'var(--p-purple)' }}>
-                  {result.kind === 'coins' ? <Coins size={20} fill="currentColor" /> : '👑'}
+                  {result.kind === 'coins'
+                    ? <Coins size={20} strokeWidth={1.75} />
+                    : <Crown size={20} strokeWidth={1.75} />}
                   {segLabel(result)}
                 </p>
               )}
@@ -204,7 +205,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
           <button
             onClick={spin}
             disabled={busy || phase === 'loading'}
-            className="btn-premium-gold w-full mt-2 py-2.5 rounded-2xl text-[14px] font-black flex items-center justify-center gap-2 disabled:opacity-50 active:scale-[0.98] transition-transform">
+            className="btn-premium-gold w-full mt-2 py-2.5 rounded-container text-[14px] font-semibold flex items-center justify-center gap-2 disabled:opacity-50 active:scale-[0.98] transition-transform">
             {busy ? <Loader2 size={16} className="animate-spin" /> : tt('spinButton')}
           </button>
         )}

@@ -146,9 +146,9 @@ export default function ShopPage() {
     const isEquipped = avatarFrame === frame.id
     const affordable = coins >= item.price
     return (
-      <div key={frame.id} className="card-premium p-3 flex flex-col items-center gap-2.5 relative">
+      <div key={frame.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col items-center gap-2.5 relative">
         {countdownBadge && (
-          <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-black"
+          <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold"
             style={{
               background: 'rgb(var(--p-primary-rgb) / 0.12)',
               border: '1px solid rgb(var(--p-primary-rgb) / 0.40)',
@@ -159,16 +159,16 @@ export default function ShopPage() {
         )}
         {/* Ramka preview */}
         <span className={`avatar-frame ${frame.cssClass}`}>
-          <span className="w-14 h-14 rounded-full bg-pcard flex items-center justify-center text-lg font-black text-pmuted">
+          <span className="w-14 h-14 rounded-full bg-pcard flex items-center justify-center text-lg font-semibold text-pmuted">
             {initial}
           </span>
         </span>
-        <p className="text-[12.5px] font-bold text-center truncate w-full">{frame.label[lang]}</p>
+        <p className="text-[12.5px] font-semibold text-center truncate w-full">{frame.label[lang]}</p>
         {isOwned ? (
           <button
             onClick={() => equip(isEquipped ? null : frame.id)}
             disabled={busy !== null}
-            className="w-full text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+            className="w-full text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
             style={isEquipped ? {
               background: 'rgb(var(--p-success-rgb) / 0.12)',
               color: 'var(--p-success)',
@@ -185,7 +185,7 @@ export default function ShopPage() {
           <button
             onClick={() => buy(item.id)}
             disabled={busy !== null}
-            className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+            className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
             style={{
               background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
               border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
@@ -221,7 +221,7 @@ export default function ShopPage() {
           className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <h1 className="text-lg font-bold tracking-tight">{tt('shopTitle')}</h1>
+        <h1 className="text-lg font-semibold tracking-tight">{tt('shopTitle')}</h1>
       </div>
 
       {/* Balans hero */}
@@ -233,8 +233,8 @@ export default function ShopPage() {
         <div className="flex items-center justify-between">
           <div>
             <p className="text-[11px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
-            <p className="text-[34px] font-black tracking-tight mt-0.5 flex items-center gap-2">
-              <Coins size={26} className="text-pgold" fill="currentColor" />
+            <p className="text-[34px] font-semibold tracking-tight mt-0.5 flex items-center gap-2">
+              <Coins size={26} strokeWidth={1.75} className="text-pgold" />
               {fmtCoins(coins)}
             </p>
           </div>
@@ -244,19 +244,19 @@ export default function ShopPage() {
           </div>
         </div>
         {isPremium && (
-          <span className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10.5px] font-bold"
+          <span className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10.5px] font-semibold"
             style={{
               background: 'rgb(var(--p-success-rgb) / 0.15)',
               border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
               color: 'var(--p-success)',
             }}>
-            <Crown size={11} fill="currentColor" /> Premium
+            <Crown size={11} strokeWidth={1.75} /> Premium
           </span>
         )}
       </div>
 
       {error && (
-        <div className="mx-5 mt-3 rounded-2xl px-4 py-3 text-[12.5px] font-semibold text-pwarning animate-fadeIn"
+        <div className="mx-5 mt-3 rounded-container px-4 py-3 text-[12.5px] font-semibold text-pwarning animate-fadeIn"
           style={{ background: 'rgb(var(--p-warning-rgb) / 0.10)', border: '1px solid rgb(var(--p-warning-rgb) / 0.35)' }}>
           {error}
         </div>
@@ -274,9 +274,9 @@ export default function ShopPage() {
           const affordable = coins >= item.price
           const coinExclusive = !theme.premium
           return (
-            <div key={theme.id} className="card-premium p-3 flex flex-col gap-2.5 relative overflow-hidden">
+            <div key={theme.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col gap-2.5 relative overflow-hidden">
               {coinExclusive && (
-                <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wide"
+                <span className="absolute top-2 right-2 z-10 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wide"
                   style={{
                     background: 'rgb(var(--p-gold-rgb) / 0.16)',
                     border: '1px solid rgb(var(--p-gold-rgb) / 0.45)',
@@ -286,23 +286,19 @@ export default function ShopPage() {
                 </span>
               )}
               {/* Mini atmosfera preview */}
-              <div className="h-[64px] rounded-xl overflow-hidden border border-pline relative"
+              <div className="h-[64px] rounded-control overflow-hidden border border-pline relative"
                 style={{ background: theme.bg }}>
                 <div className="absolute left-2 right-2 top-2 h-6 rounded-lg"
                   style={{ background: theme.card, border: `1px solid ${theme.color}4d` }} />
                 <span className="absolute bottom-2 left-2 w-8 h-2 rounded-full"
-                  style={{ background: theme.color, boxShadow: theme.glow ? `0 0 8px ${theme.color}` : undefined }} />
-                {theme.glow && (
-                  <span className="absolute bottom-2.5 right-2 w-2.5 h-2.5 rounded-full"
-                    style={{ background: theme.color, boxShadow: `0 0 8px ${theme.color}` }} />
-                )}
+                  style={{ background: theme.color }} />
               </div>
               <div className="flex items-center justify-between gap-2">
-                <p className="text-[12.5px] font-bold truncate">{theme.label[lang]}</p>
+                <p className="text-[12.5px] font-semibold truncate">{theme.label[lang]}</p>
                 {isActiveTheme && <Check size={14} className="text-psuccess flex-none" />}
               </div>
               {isOwned ? (
-                <span className="text-center text-[11px] font-bold py-1.5 rounded-xl"
+                <span className="text-center text-[11px] font-semibold py-1.5 rounded-control"
                   style={{
                     background: 'rgb(var(--p-success-rgb) / 0.12)',
                     color: 'var(--p-success)',
@@ -314,7 +310,7 @@ export default function ShopPage() {
                 <button
                   onClick={() => buy(item.id)}
                   disabled={busy !== null}
-                  className="flex items-center justify-center gap-1.5 text-[11.5px] font-black py-1.5 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50"
+                  className="flex items-center justify-center gap-1.5 text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
                   style={{
                     background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
                     border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
@@ -336,22 +332,21 @@ export default function ShopPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
             <Crown size={11} /> Premium
           </p>
-          <div className="mx-5 card-premium p-4 flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
+          <div className="mx-5 rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5">
+            <div className="w-12 h-12 rounded-container flex items-center justify-center flex-none"
               style={{
                 background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
-                boxShadow: '0 6px 18px rgb(var(--p-gold-rgb) / 0.30)',
               }}>
               <Sparkles size={22} className="text-pongold" />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-[14px] font-bold">{tt('shopPremiumDays')}</p>
+              <p className="text-[14px] font-semibold">{tt('shopPremiumDays')}</p>
               <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('shopPremiumDaysDesc')}</p>
             </div>
             <button
               onClick={() => buy(premiumItem.id)}
               disabled={busy !== null}
-              className="btn-premium-gold px-3.5 py-2 rounded-xl text-[12.5px] font-black flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
+              className="btn-premium-gold px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
               {busy === premiumItem.id
                 ? <Loader2 size={14} className="animate-spin" />
                 : <><Coins size={13} /> {fmtCoins(premiumItem.price)}</>}
@@ -361,21 +356,20 @@ export default function ShopPage() {
       )}
 
       {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
-      <div className="mx-5 mt-6 card-premium p-4 flex items-center gap-3.5">
-        <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
+      <div className="mx-5 mt-6 rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5">
+        <div className="w-12 h-12 rounded-container flex items-center justify-center flex-none"
           style={{
             background: 'linear-gradient(135deg, rgb(var(--p-purple-rgb) / 0.9), rgb(var(--p-gold-rgb) / 0.9))',
-            boxShadow: '0 6px 18px rgb(var(--p-purple-rgb) / 0.30)',
           }}>
           <Gift size={22} style={{ color: 'var(--p-canvas)' }} />
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] font-bold">{tt('spinTitle')}</p>
+          <p className="text-[14px] font-semibold">{tt('spinTitle')}</p>
           <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('spinDesc')}</p>
         </div>
         <button
           onClick={() => { playSound('click'); setSpinOpen(true) }}
-          className="btn-premium-gold px-3.5 py-2 rounded-xl text-[12.5px] font-black flex-none active:scale-[0.97] transition-transform">
+          className="btn-premium-gold px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex-none active:scale-[0.97] transition-transform">
           {tt('spinButton')}
         </button>
       </div>
@@ -410,12 +404,12 @@ export default function ShopPage() {
 
       {/* ── Tangalar tarixi ── */}
       <div className="mx-5 mt-6">        <button onClick={toggleHistory}
-          className="w-full card-premium p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-bold text-pmuted active:scale-[0.98] transition-transform">
+          className="w-full rounded-container border border-pline bg-pcard p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-semibold text-pmuted active:scale-[0.98] transition-transform">
           {historyBusy ? <Loader2 size={14} className="animate-spin" /> : <History size={14} />}
           {history === null ? tt('shopHistoryTitle') : tt('shopHideHistory')}
         </button>
         {history !== null && (
-          <div className="card-premium mt-2 divide-y divide-pline animate-fadeIn">
+          <div className="rounded-container border border-pline bg-pcard mt-2 divide-y divide-pline animate-fadeIn">
             {history.length === 0 && (
               <p className="text-center text-[12px] text-psubtle py-5">{tt('shopHistoryEmpty')}</p>
             )}
@@ -428,7 +422,7 @@ export default function ShopPage() {
                       { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
                   </p>
                 </div>
-                <span className={`text-[13px] font-black flex-none ${tx.delta > 0 ? 'text-psuccess' : 'text-pwarning'}`}>
+                <span className={`text-[13px] font-semibold flex-none ${tx.delta > 0 ? 'text-psuccess' : 'text-pwarning'}`}>
                   {tx.delta > 0 ? '+' : ''}{fmtCoins(tx.delta)}
                 </span>
               </div>

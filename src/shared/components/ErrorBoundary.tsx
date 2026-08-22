@@ -30,6 +30,9 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
   render() {
     if (this.state.hasError) {
       return (
+        // Ataylab inline style + xom SVG: xato AYNAN UI komponentidan kelgan
+        // bo'lishi mumkin, shuning uchun bu ekran ui/ qatlamiga TAYANMAYDI.
+        // Faqat CSS tokenlariga bog'lanadi (ular tema bilan birga ishlaydi).
         <div style={{
           minHeight: '100vh',
           background: 'var(--theme-canvas)',
@@ -39,22 +42,47 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
           justifyContent: 'center',
           padding: '24px',
           color: 'var(--theme-fg)',
-          fontFamily: 'Nunito, sans-serif',
+          fontFamily: "'Inter Tight', system-ui, sans-serif",
         }}>
-          <div style={{ fontSize: 48, marginBottom: 16 }}>⚠️</div>
-          <h2 style={{ fontSize: 20, fontWeight: 800, marginBottom: 8 }}>Xato yuz berdi</h2>
-          <p style={{ fontSize: 14, color: 'var(--theme-fg-muted)', textAlign: 'center', marginBottom: 24 }}>
+          <svg
+            width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--p-danger)"
+            strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"
+            aria-hidden="true" style={{ marginBottom: 16, opacity: 0.7 }}
+          >
+            <path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" />
+            <path d="M12 9v4M12 17h.01" />
+          </svg>
+          <h2 style={{
+            fontSize: 19, fontWeight: 600, marginBottom: 6, letterSpacing: '-0.015em',
+            fontFamily: "'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif",
+          }}>
+            Ilova kutilmaganda to'xtadi
+          </h2>
+          <p style={{
+            fontSize: 14, color: 'var(--theme-fg-muted)', textAlign: 'center',
+            marginBottom: 20, maxWidth: '34ch',
+          }}>
+            Sahifani qayta yuklang. Takrorlansa, ma'lumotlaringiz saqlanib qoladi —
+            keyinroq urinib ko'ring.
+          </p>
+          <p style={{
+            fontSize: 12.5, color: 'var(--theme-fg-subtle)', textAlign: 'center',
+            marginBottom: 24, maxWidth: '40ch', wordBreak: 'break-word',
+          }}>
             {this.state.message}
           </p>
           <button
             onClick={() => window.location.reload()}
-            className="btn-3d-green"
             style={{
+              height: 44,
+              padding: '0 18px',
               border: 'none',
-              borderRadius: 16,
-              padding: '12px 28px',
+              borderRadius: 'var(--radius-control, 10px)',
+              background: 'var(--p-primary)',
+              color: 'var(--p-on-primary)',
               fontSize: 15,
-              fontWeight: 800,
+              fontWeight: 600,
+              fontFamily: 'inherit',
               cursor: 'pointer',
             }}
           >

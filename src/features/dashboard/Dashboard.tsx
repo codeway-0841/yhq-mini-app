@@ -4,13 +4,16 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  Sparkles, Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText, Search,
+  Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText, Search,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
+import { useToast } from '../../shared/components/ToastContainer'
+import { Button } from '../../shared/components/ui/button'
+import { Alert, AlertDescription } from '../../shared/components/ui/alert'
 import { track } from '../../shared/lib/analytics'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -107,7 +110,7 @@ export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
-  const [toast, setToast] = useState<string | null>(null)
+  const { info } = useToast()
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
   const user            = useAppStore((s) => s.user)
   const displayName     = useAppStore((s) => s.displayName)
@@ -150,10 +153,8 @@ export default function Dashboard() {
   const continueInfo = useContinueInfo(user?.id, settings.language, tt)
   const { mistakesCount } = useSubjectBadges(subject.id)
 
-  const showToast = useCallback((msg: string) => {
-    setToast(msg)
-    setTimeout(() => setToast(null), 3000)
-  }, [])
+  // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount).
+  const showToast = useCallback((msg: string) => info(msg), [info])
 
   const goMistakes = useCallback(() => navigate('/xatolar'), [navigate])
   const goTopics   = useCallback(() => navigate('/mavzular'), [navigate])
@@ -183,13 +184,13 @@ export default function Dashboard() {
   }, [savedQuestions, subject.id, settings.language, navigate, tt, showToast])
 
   return (
-    <div className="dashboard-page font-display min-h-screen bg-pcanvas pb-6 safe-bottom">
+    <div className="dashboard-page min-h-screen bg-pcanvas pb-6 safe-bottom">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-3 left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
-          <div className="w-10 h-10 rounded-full card-premium flex items-center justify-center transition-transform"
+          <div className="flex size-10 items-center justify-center rounded-full border border-pline bg-pcard transition-transform"
             style={{ transform: `scale(${Math.min(1, ptr.dist / ptr.threshold)})` }}>
-            <span className="block w-5 h-5 rounded-full border-2 border-pline animate-spin"
+            <span className="block size-5 rounded-full border-2 border-pline motion-safe:animate-spin"
               style={{ borderTopColor: 'var(--p-primary)' }} />
           </div>
         </div>
@@ -206,15 +207,13 @@ export default function Dashboard() {
         <div key={subject.id} className="animate-premiumIn">
           {/* Demo ma'lumotlar badge */}
           {subject.demoData && (
-            <div className="mx-5 mb-3 rounded-2xl px-4 py-3 flex items-center gap-2"
-              style={{ background: 'rgba(245, 158, 11, 0.08)', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
-              <Sparkles size={15} className="text-pwarning flex-shrink-0" />
-              <span className="text-[12px] font-semibold text-pwarning">
+            <Alert variant="warning" className="mx-5 mb-4">
+              <AlertDescription>
                 {settings.language === 'ru'
                   ? 'Временные демо-данные — база этого предмета скоро будет подключена'
                   : "Vaqtinchalik demo ma'lumotlar — bu fanning bazasi tez orada ulanadi"}
-              </span>
-            </div>
+              </AlertDescription>
+            </Alert>
           )}
 
           {/* 1. Carousel */}
@@ -228,10 +227,10 @@ export default function Dashboard() {
           {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
           <button
             onClick={() => navigate('/qidiruv')}
-            className="mx-5 mb-4 -mt-1 flex items-center gap-2.5 rounded-2xl border border-line bg-surface px-4 py-3 text-left active:scale-[0.99] transition-transform"
+            className="mx-5 mb-6 flex items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
           >
-            <Search size={16} className="text-muted flex-shrink-0" />
-            <span className="text-sm text-muted">{tt('searchPlaceholder')}</span>
+            <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
+            <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
           </button>
 
           {/* 2. Today's Progress */}
@@ -252,7 +251,7 @@ export default function Dashboard() {
           <BossCard />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
-          <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 px-5 mb-5">
+          <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">
             <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
               subtitle={`${questionsCount > 0 ? `${questionsCount}+ ` : ''}${tt('question').toLowerCase()}`}
               onClick={() => navigate('/testlar')} />
@@ -269,7 +268,7 @@ export default function Dashboard() {
           </div>
 
           {/* 5. Modes — auto carousel */}
-          <div className="mb-5">
+          <div className="mb-6">
             <RejimlarCarousel
               title={tt('modesTitle')}
               lang={settings.language}
@@ -286,7 +285,7 @@ export default function Dashboard() {
           </div>
 
           {/* 6. Leaderboard */}
-          <div className="mt-4 min-h-[12px]">
+          <div>
             <LeaguePreview
               lang={settings.language}
               userId={user?.id}
@@ -295,19 +294,17 @@ export default function Dashboard() {
           </div>
 
           {/* 7. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
-          <div className="mx-5 mt-12 mb-4 card-premium p-4 flex items-center gap-3.5">
-            <div className="w-11 h-11 rounded-[14px] flex items-center justify-center flex-shrink-0"
-              style={{ background: 'rgb(var(--p-primary-rgb) / 0.12)', border: '1px solid rgb(var(--p-primary-rgb) / 0.30)' }}>
-              <Crown size={19} className="text-pprimary" />
+          <div className="mx-5 mb-6 mt-10 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
+            <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
+              <Crown size={19} strokeWidth={1.75} className="text-pgold" />
             </div>
-            <div className="flex-1 min-w-0">
-              <p className="text-[13px] font-bold text-pfg">Premium</p>
-              <p className="text-[11px] font-medium text-psubtle mt-0.5">{tt('premiumTagline')}</p>
+            <div className="min-w-0 flex-1">
+              <p className="text-[13px] font-semibold text-pfg">Premium</p>
+              <p className="mt-0.5 text-[11px] text-psubtle">{tt('premiumTagline')}</p>
             </div>
-            <button onClick={() => { track('premium_click'); navigate('/premium') }}
-              className="btn-premium-gold px-4 py-2.5 rounded-xl text-[12px]">
+            <Button variant="gold" size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>
               {tt('tryWord')}
-            </button>
+            </Button>
           </div>
 
           {/* Promo banner */}
@@ -315,13 +312,6 @@ export default function Dashboard() {
         </div>
       ) : (
         <SubjectEmpty onSwitch={() => setShowSubjects(true)} />
-      )}
-
-      {/* Toast */}
-      {toast && (
-        <div className="fixed bottom-20 left-5 right-5 card-premium text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-40 animate-premiumIn">
-          {toast}
-        </div>
       )}
 
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}

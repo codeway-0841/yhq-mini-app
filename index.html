@@ -9,8 +9,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="description" content="KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi. Testlar, biletlar va real vaqtli o'yinlar bitta ilovada." />
-    <meta name="theme-color" content="#f1f5f9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#131f24" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="KIWI" />
     <meta property="og:description" content="Fanlar bo'yicha testler, biletlar va yo'l belgilari — hammasi bitta ilovada." />
@@ -59,7 +59,7 @@
               isVisible: false,
               isActive: true,
               text: '',
-              color: '#5be300',
+              color: '#0fa47f',
               textColor: '#ffffff',
               show: function() { this.isVisible = true; console.log('[DEV] MainButton.show()') },
               hide: function() { this.isVisible = false; console.log('[DEV] MainButton.hide()') },
@@ -117,30 +117,30 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <style>
       /* Splash — React yuklanguncha ko'rinadi; index.css tema tokenlari
          hali yuklanmaganligi uchun ranglar shu yerda inline beriladi */
       :root { color-scheme: dark; }
       html[data-theme='light'] { color-scheme: light; }
-      html, body { margin: 0; background: #0a1520; }
-      html[data-theme='light'], html[data-theme='light'] body { background: #f1f5f9; }
+      html, body { margin: 0; background: #0d1117; }
+      html[data-theme='light'], html[data-theme='light'] body { background: #fafaf9; }
       #app-loader {
         min-height: 100dvh; display: flex; flex-direction: column;
         align-items: center; justify-content: center; gap: 24px;
-        font-family: Nunito, system-ui, sans-serif;
-        color: #fff; background: #0a1520;
+        font-family: 'Inter Tight', system-ui, sans-serif;
+        color: #f5f5f4; background: #0d1117;
       }
-      html[data-theme='light'] #app-loader { color: #0f172a; background: #f1f5f9; }
-      #app-loader-title { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
-      #app-loader-brand { font-weight: 900; }
-      #app-loader-brand em { font-style: normal; color: var(--p-primary, #5be300); }
+      html[data-theme='light'] #app-loader { color: #1c1917; background: #fafaf9; }
+      #app-loader-title { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; font-family: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif; }
+      #app-loader-brand { font-weight: 700; }
+      #app-loader-brand em { font-style: normal; color: var(--p-primary, #0fa47f); }
       #app-loader-spinner {
         width: 36px; height: 36px; border-radius: 50%;
-        border: 3px solid #334155; border-top-color: var(--p-primary, #5be300);
+        border: 3px solid #1c222b; border-top-color: var(--p-primary, #0fa47f);
         animation: app-spin 0.8s linear infinite;
       }
-      html[data-theme='light'] #app-loader-spinner { border-color: #cbd5e1; border-top-color: var(--p-primary, #5be300); }
+      html[data-theme='light'] #app-loader-spinner { border-color: #d6d3d1; border-top-color: var(--p-primary, #0d8a6a); }
       @keyframes app-spin { to { transform: rotate(360deg); } }
     </style>
   </head>

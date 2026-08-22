@@ -163,7 +163,7 @@ export function LinkAccountSection() {
             ? loadingRow
             : providers.includes('telegram')
               ? linkedRow
-              : <span className="text-[12px] text-muted">{tt('authLinkTelegram')}</span>
+              : <span className="text-[12px] text-pmuted">{tt('authLinkTelegram')}</span>
         }
         onPress={providers?.includes('telegram') ? undefined : startTgLink}
         disabled={busy || providers === null || providers.includes('telegram')}
@@ -178,7 +178,7 @@ export function LinkAccountSection() {
             ? loadingRow
             : providers.includes('phone')
               ? <span className="text-[12px] text-psuccess">{user.phone ?? tt('authLinked')}</span>
-              : <span className="text-[12px] text-muted">{phoneOpen ? '–' : tt('authLinkPhone')}</span>
+              : <span className="text-[12px] text-pmuted">{phoneOpen ? '–' : tt('authLinkPhone')}</span>
         }
         onPress={providers?.includes('phone') ? undefined : () => setPhoneOpen((o) => !o)}
         disabled={busy || providers === null || providers.includes('phone')}
@@ -186,9 +186,9 @@ export function LinkAccountSection() {
 
       {/* Telefon ulash formasi (telefon provider hali bog'lanmagan) */}
       {phoneOpen && providers !== null && !providers.includes('phone') && (
-        <div className="px-4 pb-3.5 flex flex-col gap-2 border-t border-line pt-3">
-          <div className="w-full bg-canvas border border-line rounded-xl px-3.5 flex items-center gap-2">
-            <span className="text-muted text-sm font-bold select-none">+998</span>
+        <div className="px-4 pb-3.5 flex flex-col gap-2 border-t border-pline pt-3">
+          <div className="w-full bg-pcanvas border border-pline rounded-control px-3.5 flex items-center gap-2">
+            <span className="text-pmuted text-sm font-semibold select-none">+998</span>
             <input
               value={phone.digits}
               onChange={(e) => phone.setDigits(e.target.value)}
@@ -197,7 +197,7 @@ export function LinkAccountSection() {
               placeholder="90 123 45 67"
               maxLength={11}
               disabled={busy}
-              className="flex-1 min-w-0 bg-transparent outline-none py-3 text-sm text-fg placeholder:text-muted tracking-widest"
+              className="flex-1 min-w-0 bg-transparent outline-none py-3 text-sm text-pfg placeholder:text-pmuted tracking-widest"
             />
           </div>
           <input
@@ -208,12 +208,12 @@ export function LinkAccountSection() {
             maxLength={72}
             placeholder={`${tt('authPassword')} · ${tt('authPasswordHint')}`}
             disabled={busy}
-            className="w-full bg-canvas border border-line rounded-xl px-3.5 py-3 text-sm text-fg placeholder:text-muted outline-none"
+            className="w-full bg-pcanvas border border-pline rounded-control px-3.5 py-3 text-sm text-pfg placeholder:text-pmuted outline-none"
           />
           {otpStep && (
             <>
-              <p className="text-[11.5px] text-muted leading-snug">
-                {tt('authSmsCodeSent')} <span className="font-bold text-fg">{phone.value}</span>
+              <p className="text-[11.5px] text-pmuted leading-snug">
+                {tt('authSmsCodeSent')} <span className="font-semibold text-pfg">{phone.value}</span>
               </p>
               <OTPInput value={otpCode} onChange={setOtpCode} disabled={busy} error={!!error} />
             </>
@@ -222,7 +222,7 @@ export function LinkAccountSection() {
             type="button"
             onClick={() => void submitPhoneLink()}
             disabled={busy || !phone.isValid || password.length < 8 || (otpStep && otpCode.length !== 6)}
-            className="btn-premium w-full py-2.5 rounded-xl text-[13px] font-bold flex items-center justify-center gap-2"
+            className="btn-premium w-full py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-2"
           >
             {busy && (
               <span className="w-3.5 h-3.5 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />
@@ -234,26 +234,26 @@ export function LinkAccountSection() {
 
       {/* TG ulash kodi — bot'dan tasdiqlanadi */}
       {tgLink && (
-        <div className="px-4 pb-3.5 border-t border-line pt-3 flex flex-col gap-2">
-          <p className="text-[11.5px] text-muted leading-snug">{tt('authLinkCodeHint')}</p>
+        <div className="px-4 pb-3.5 border-t border-pline pt-3 flex flex-col gap-2">
+          <p className="text-[11.5px] text-pmuted leading-snug">{tt('authLinkCodeHint')}</p>
           <div className="flex items-center gap-2">
-            <code className="flex-1 bg-canvas border border-line rounded-lg px-2.5 py-2 text-[12px] text-fg truncate">
+            <code className="flex-1 bg-pcanvas border border-pline rounded-lg px-2.5 py-2 text-[12px] text-pfg truncate">
               {tgLink.url ?? tgLink.code}
             </code>
             <button
               type="button"
               onClick={copyCode}
-              className="w-9 h-9 rounded-lg bg-elevated border border-line flex items-center justify-center active:scale-95 transition-transform"
+              className="w-9 h-9 rounded-lg bg-psurface border border-pline flex items-center justify-center active:scale-95 transition-transform"
             >
-              {copied ? <Check size={14} className="text-psuccess" /> : <Copy size={14} className="text-muted" />}
+              {copied ? <Check size={14} className="text-psuccess" /> : <Copy size={14} className="text-pmuted" />}
             </button>
           </div>
-          <p className="text-[10.5px] text-muted">{tt('authCodeExpires')}</p>
+          <p className="text-[10.5px] text-pmuted">{tt('authCodeExpires')}</p>
         </div>
       )}
 
       {/* Xato / muvaffaqiyat xabarlari */}
-      {error && <p className="px-4 pb-3 text-[12px] font-semibold text-duo-red">{error}</p>}
+      {error && <p className="px-4 pb-3 text-[12px] font-semibold text-pdanger">{error}</p>}
       {okMsg && <p className="px-4 pb-3 text-[12px] font-semibold text-psuccess">{okMsg}</p>}
 
       {/* ── Logout (faqat Bearer sessiya bilan kirganlarda) ── */}

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { X, CheckCircle, AlertCircle, Info } from 'lucide-react'
+import { X, CheckCircle2, AlertTriangle, Info } from 'lucide-react'
+import { cn } from '../lib/cn'
 
 export type ToastType = 'success' | 'error' | 'info'
 
@@ -11,6 +12,25 @@ export interface ToastProps {
   onClose: (id: string) => void
 }
 
+const ICONS = {
+  success: CheckCircle2,
+  error: AlertTriangle,
+  info: Info,
+} as const
+
+const ICON_TONE = {
+  success: 'text-psuccess',
+  error: 'text-pdanger',
+  info: 'text-ppurple',
+} as const
+
+/**
+ * KIWI Toast — suzuvchi qatlam, shuning uchun YAGONA joy soya ishlatiladi.
+ *
+ * v3'da chapdagi qalin rangli chiziq (border-l-4) olib tashlandi: status
+ * ikonka rangida beriladi, karta grammatikasi esa qolgan interfeys bilan
+ * bir xil qoladi (card + hairline).
+ */
 export default function Toast({ id, type, message, duration = 3000, onClose }: ToastProps) {
   useEffect(() => {
     if (duration > 0) {
@@ -19,36 +39,30 @@ export default function Toast({ id, type, message, duration = 3000, onClose }: T
     }
   }, [id, duration, onClose])
 
-  const icons = {
-    success: <CheckCircle className="w-5 h-5 text-psuccess" />,
-    error: <AlertCircle className="w-5 h-5 text-pdanger" />,
-    info: <Info className="w-5 h-5 text-pblue" />,
-  }
-
-  const styles = {
-    success: 'bg-psuccess/10 border-l-psuccess',
-    error: 'bg-pdanger/10 border-l-pdanger',
-    info: 'bg-pblue/10 border-l-pblue',
-  }
+  const Icon = ICONS[type]
 
   return (
     <div
       role={type === 'error' ? 'alert' : 'status'}
       aria-live={type === 'error' ? 'assertive' : 'polite'}
-      className={`
-        flex items-start gap-3 p-4 rounded-lg border-l-4 shadow-lg
-        ${styles[type]}
-        animate-fadeIn
-      `}
+      className={cn(
+        'flex items-start gap-3 rounded-container border border-pline bg-pcard p-3.5',
+        'shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]',
+        'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:slide-in-from-top-2 motion-safe:duration-200',
+      )}
     >
-      {icons[type]}
-      <p className="flex-1 text-[14px] text-fg font-medium">{message}</p>
+      <Icon aria-hidden="true" strokeWidth={1.75} className={cn('mt-px size-[18px] shrink-0', ICON_TONE[type])} />
+      <p className="min-w-0 flex-1 text-[14px] font-medium text-pfg">{message}</p>
       <button
         onClick={() => onClose(id)}
-        className="p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded transition-colors"
+        className={cn(
+          'grid size-6 shrink-0 place-items-center rounded-[7px] text-psubtle',
+          'transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
+        )}
         aria-label="Yopish"
       >
-        <X className="w-4 h-4 text-muted" />
+        <X className="size-4" />
       </button>
     </div>
   )
