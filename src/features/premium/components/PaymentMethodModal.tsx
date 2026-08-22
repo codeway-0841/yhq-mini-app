@@ -125,17 +125,17 @@ export default function PaymentMethodModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full sm:max-w-md bg-pcard border border-pline rounded-t-3xl sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
+        className="w-full sm:max-w-md bg-pcard border border-pline rounded-t-sheet sm:rounded-container p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-pline">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-pgold/15 border border-pgold/30 flex items-center justify-center text-pgold">
+            <div className="w-8 h-8 rounded-control bg-pgold/15 border border-pgold/30 flex items-center justify-center text-pgold">
               <Sparkles size={16} />
             </div>
             <div>
-              <h2 id="payment-method-title" className="text-base font-black">
+              <h2 id="payment-method-title" className="text-base font-semibold">
                 {lang === 'ru' ? 'Оплата подписки' : "To'lov usulini tanlang"}
               </h2>
               <p className="text-xs text-pmuted">
@@ -158,7 +158,7 @@ export default function PaymentMethodModal({
               <CheckCircle2 size={36} />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-psuccess">
+              <h3 className="text-lg font-semibold text-psuccess">
                 {lang === 'ru' ? 'Оплата прошла успешно!' : "To'lov muvaffaqiyatli amalga oshirildi!"}
               </h3>
               <p className="text-xs text-pmuted mt-1">
@@ -169,7 +169,7 @@ export default function PaymentMethodModal({
             </div>
             <button
               onClick={onClose}
-              className="btn-premium w-full py-3 rounded-2xl font-black text-sm"
+              className="btn-premium w-full py-3 rounded-container font-semibold text-sm"
             >
               {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
             </button>
@@ -177,15 +177,15 @@ export default function PaymentMethodModal({
         ) : (
           <div className="py-4 space-y-4">
             {/* Price Badge */}
-            <div className="p-4 rounded-2xl bg-psurface/60 border border-pline flex items-center justify-between">
-              <span className="text-xs font-bold text-pmuted">
+            <div className="p-4 rounded-container bg-psurface/60 border border-pline flex items-center justify-between">
+              <span className="text-xs font-semibold text-pmuted">
                 {lang === 'ru' ? 'К оплате:' : "To'lov summasi:"}
               </span>
               <div className="text-right">
-                <span className="text-lg font-black text-pfg block">
+                <span className="text-lg font-semibold text-pfg block">
                   {formatUzs(plan.priceUzs, lang)}
                 </span>
-                <span className="text-[11px] text-pgold font-bold block">
+                <span className="text-[11px] text-pgold font-semibold block">
                   yoki ⭐ {plan.stars} Stars
                 </span>
               </div>
@@ -193,10 +193,10 @@ export default function PaymentMethodModal({
 
             {/* Waiting for payment indicator */}
             {isWaitingPayment && (
-              <div className="p-3.5 rounded-2xl bg-pblue/10 border border-pblue/30 flex items-center gap-3">
+              <div className="p-3.5 rounded-container bg-pblue/10 border border-pblue/30 flex items-center gap-3">
                 <Loader2 size={20} className="text-pblue animate-spin flex-shrink-0" />
                 <div className="text-xs leading-tight">
-                  <p className="font-bold text-pblue">
+                  <p className="font-semibold text-pblue">
                     {lang === 'ru' ? 'Ожидание подтверждения оплаты...' : "To'lov tasdiqlanishi kutilmoqda..."}
                   </p>
                   <p className="text-[11px] text-pmuted mt-0.5">
@@ -209,7 +209,7 @@ export default function PaymentMethodModal({
             )}
 
             {errorMsg && (
-              <div className="p-3 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
+              <div className="p-3 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
                 <AlertCircle size={16} className="flex-shrink-0" />
                 <span>{errorMsg}</span>
               </div>
@@ -219,16 +219,16 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithClick}
               disabled={loadingProvider === 'click' || isWaitingPayment}
-              className="w-full p-4 rounded-2xl bg-psurface border border-pline hover:border-pblue/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
+              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-pblue/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-[#0073ff]/15 border border-[#0073ff]/30 flex items-center justify-center font-black text-[#0073ff] text-base flex-shrink-0">
+                <div className="w-11 h-11 rounded-control bg-[#0073ff]/15 border border-[#0073ff]/30 flex items-center justify-center font-semibold text-[#0073ff] text-base flex-shrink-0">
                   <CreditCard size={20} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-black text-pfg">Click.uz</span>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-psuccess/15 text-psuccess border border-psuccess/30">
+                    <span className="text-sm font-semibold text-pfg">Click.uz</span>
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-psuccess/15 text-psuccess border border-psuccess/30">
                       Humo / Uzcard
                     </span>
                   </div>
@@ -250,14 +250,14 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithStars}
               disabled={loadingProvider !== null || isWaitingPayment}
-              className="w-full p-4 rounded-2xl bg-psurface border border-pline hover:border-pgold/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
+              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-pgold/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-pgold/15 border border-pgold/30 flex items-center justify-center font-black text-pgold text-base flex-shrink-0">
+                <div className="w-11 h-11 rounded-control bg-pgold/15 border border-pgold/30 flex items-center justify-center font-semibold text-pgold text-base flex-shrink-0">
                   ⭐
                 </div>
                 <div>
-                  <span className="text-sm font-black text-pfg">Telegram Stars</span>
+                  <span className="text-sm font-semibold text-pfg">Telegram Stars</span>
                   <p className="text-xs text-pmuted mt-0.5">
                     ⭐ {plan.stars} Stars (Telegram hisobidan)
                   </p>

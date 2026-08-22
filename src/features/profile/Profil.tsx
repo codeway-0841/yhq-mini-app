@@ -4,8 +4,8 @@ import { goBack } from '../../shared/lib/navigation'
 import {
   Copy, Zap, Phone, Lock, Globe, CreditCard,
   WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
-  Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, Coins,
+  Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
+  BarChart2, CloudUpload, Ticket, Award, Coins, Car, X,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -15,6 +15,8 @@ import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/ou
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
 import PickerSheet from '../../shared/components/PickerSheet'
 import Toggle from '../../shared/components/Toggle'
+import { Button } from '../../shared/components/ui/button'
+import { useToast } from '../../shared/components/ToastContainer'
 import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
@@ -55,7 +57,6 @@ export default function Profil() {
   const syncPending = useSyncExternalStore(onOutboxChange, () => getOutboxCount(syncUserId))
 
   const [copied, setCopied]               = useState(false)
-  const [toast, setToast]                 = useState<string | null>(null)
   const [showNameEdit, setShowNameEdit]   = useState(false)
   const [showPhotoEdit, setShowPhotoEdit] = useState(false)
   const [showLangPicker, setShowLangPicker]   = useState(false)
@@ -63,10 +64,9 @@ export default function Profil() {
   const [showPromoModal, setShowPromoModal]   = useState(false)
   const [showCertModal, setShowCertModal]     = useState(false)
 
-  const showToast = (msg: string) => {
-    setToast(msg)
-    setTimeout(() => setToast(null), 3000)
-  }
+  // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount)
+  const { info } = useToast()
+  const showToast = info
 
   const { fileRef, avatarBusy, handleAvatarFile, removeAvatar } = useAvatarUpload({
     showToast,
@@ -129,30 +129,30 @@ export default function Profil() {
   return (
     <div className="pt-4 pb-8 safe-bottom">
       {/* ← Back */}
-      <div className="px-4 mb-0.5">
+      <div className="mb-1 px-5">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="flex items-center gap-1 text-muted hover:text-fg text-sm active:opacity-70 transition-opacity">
-          <span className="text-lg">←</span>
+          className="flex h-11 items-center gap-1 rounded-control text-sm text-pmuted transition-opacity hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={18} strokeWidth={1.75} />
           <span>{tt('backWord')}</span>
         </button>
       </div>
 
       {/* Page title */}
-      <p className="text-[18px] font-bold px-4 mb-5 text-fg">{tt('profile')}</p>
+      <h1 className="mb-6 px-5 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">{tt('profile')}</h1>
 
       {/* Avatar + Name + ID */}
-      <div className="flex flex-col items-center gap-2.5 mb-7 px-4">
+      <div className="mb-7 flex flex-col items-center gap-2.5 px-5">
         <Avatar name={name} photoUrl={user?.photoUrl}
           onEditName={() => setShowNameEdit(true)}
           onEditPhoto={() => setShowPhotoEdit(true)} />
-        <p className="text-[18px] font-bold text-fg mt-1">{name}</p>
+        <p className="mt-1 font-display text-[18px] font-semibold tracking-[-0.015em] text-pfg">{name}</p>
         <button
           type="button"
           onClick={copyId}
-          className="flex items-center gap-1.5 text-[11px] text-muted bg-elevated px-3 py-1 rounded-full active:scale-95 transition-transform"
+          className="flex h-8 items-center gap-1.5 rounded-control border border-pline bg-psurface px-3 text-[11px] tabular-nums text-pmuted transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <span>ID: {userId}</span>
-          {copied ? <Check size={11} className="text-psuccess" /> : <Copy size={11} />}
+          {copied ? <Check size={11} strokeWidth={1.75} className="text-psuccess" /> : <Copy size={11} strokeWidth={1.75} />}
         </button>
       </div>
 
@@ -160,22 +160,26 @@ export default function Profil() {
       <Section title={tt('yourTariff').toUpperCase()}>
         {/* Tariff card */}
         <div className="px-4 py-3.5 flex items-center gap-3">
-          <div className="w-14 h-14 rounded-xl bg-elevated flex items-center justify-center text-3xl flex-shrink-0">
-            🚗
+          <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-[14px] border border-pline bg-psurface">
+            <Car size={22} strokeWidth={1.75} className="text-pmuted" />
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-[14px] font-bold text-fg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
-            <p className="text-[11px] text-muted mt-0.5 leading-tight">
+          <div className="min-w-0 flex-1">
+            <p className="text-[14px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
+            <p className="mt-0.5 text-[11px] leading-tight text-pmuted">
               {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>
           </div>
           {tariff === 'free' && (
-            <button type="button"
+            <Button
+              variant="gold"
+              size="sm"
+              className="flex-shrink-0"
               onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
-               className="btn-premium-gold text-[12px] px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
-              <Zap size={13} fill="white" />
-              {tt('upgrade')} · ⭐250
-            </button>
+            >
+              <Zap strokeWidth={1.75} />
+              {tt('upgrade')} · 250
+              <Star size={12} strokeWidth={1.75} />
+            </Button>
           )}
         </div>
 
@@ -187,8 +191,8 @@ export default function Profil() {
             user?.phone
               ? <span className="text-[12px] text-psuccess">{user.phone}</span>
               : phoneLoading
-                ? <span className="w-4 h-4 border-2 border-muted border-t-transparent rounded-full animate-spin" />
-                : <span className="text-[12px] text-muted">{tt('profileAddPhoneCta')}</span>
+                ? <span aria-hidden="true" className="size-4 rounded-full border-2 border-pmuted border-t-transparent motion-safe:animate-spin" />
+                : <span className="text-[12px] text-pmuted">{tt('profileAddPhoneCta')}</span>
           }
           onPress={user?.phone || otpPhone ? undefined : handleAddPhone}
           disabled={phoneLoading || !!user?.phone || !!otpPhone}
@@ -198,7 +202,7 @@ export default function Profil() {
         {phoneError && <p className="px-4 pb-1 text-[12px] text-pdanger">{tt(phoneError)}</p>}
         {otpPhone && !user?.phone && (
           <div className="px-4 pb-3 animate-premiumIn">
-            <p className="text-[12px] text-muted mb-2">
+            <p className="mb-2 text-[12px] text-pmuted">
               {tt('authSmsCodeSent')}: <span className="font-semibold text-pfg">{otpPhone}</span>
             </p>
             <div className="flex items-center gap-3">
@@ -211,22 +215,23 @@ export default function Profil() {
               />
             </div>
             <div className="flex items-center gap-3 mt-2">
-              <button
-                type="button"
-                className="btn-premium -sm"
-                disabled={otpBusy || otpCode.length !== 6}
+              <Button
+                size="sm"
+                loading={otpBusy}
+                disabled={otpCode.length !== 6}
                 onClick={() => onSubmitPhoneOtp(otpCode)}
               >
-                {otpBusy ? '…' : tt('authLinkPhoneConfirm')}
-              </button>
-              <button
-                type="button"
-                className="text-[12px] text-muted"
+                {tt('authLinkPhoneConfirm')}
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                aria-label={tt('backWord')}
                 disabled={otpBusy}
                 onClick={() => { cancelPhoneOtp(); setOtpCode(''); setOtpErrorKey(null) }}
               >
-                ✕
-              </button>
+                <X strokeWidth={1.75} />
+              </Button>
               {otpErrorKey && <span className="text-[12px] text-pdanger">{tt(otpErrorKey)}</span>}
             </div>
           </div>
@@ -256,7 +261,7 @@ export default function Profil() {
 
         {/* Yopiq guruh */}
         <Item icon={Lock} label={tt('closedGroup')}
-          right={<span className="text-[12px] text-muted">{tt('joinWord')}</span>}
+          right={<span className="text-[12px] text-pmuted">{tt('joinWord')}</span>}
           onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
       </Section>
 
@@ -266,10 +271,10 @@ export default function Profil() {
           icon={Coins}
           label={tt('shopMenuItem')}
           right={
-            <span className="flex items-center gap-1.5 text-[13px] font-black text-pgold">
-              <Coins size={14} fill="currentColor" />
+            <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums text-pgold">
+              <Coins size={14} strokeWidth={1.75} />
               {coins}
-              <ChevronRight size={15} className="text-muted" />
+              <ChevronRight size={15} strokeWidth={1.75} className="text-psubtle" />
             </span>
           }
           onPress={() => navigate('/shop')}
@@ -277,15 +282,15 @@ export default function Profil() {
       </Section>
 
       {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}
-      <div className="card-neon mx-4 mt-4 mb-1 flex items-center gap-3 px-4 py-3">
-        <div className="w-11 h-11 rounded-xl bg-duo-green/15 border border-duo-green/40 flex items-center justify-center flex-shrink-0">
-          <Share2 size={19} className="text-duo-green" />
+      <div className="mx-5 mb-6 flex items-center gap-3 rounded-container border border-pline bg-pcard px-4 py-3">
+        <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-primary-rgb)/0.26)] bg-pwash">
+          <Share2 size={19} strokeWidth={1.75} className="text-pprimary" />
         </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-[13px] font-black text-fg">{tt('refTitle')}</p>
-          <p className="text-[10.5px] text-muted mt-0.5 leading-snug">{tt('refDesc')}</p>
+        <div className="min-w-0 flex-1">
+          <p className="text-[13px] font-semibold text-pfg">{tt('refTitle')}</p>
+          <p className="mt-0.5 text-[10.5px] leading-snug text-pmuted">{tt('refDesc')}</p>
           {refStats && refStats.invited > 0 && (
-            <p className="text-[10.5px] text-duo-green font-bold mt-1 leading-snug">
+            <p className="mt-1 text-[10.5px] font-semibold leading-snug text-pprimary">
               {refStats.rewarded} {tt('refStatFriends')} · +{refStats.rewarded * refStats.rewardDays} {tt('refStatDays')}
               {refStats.pending > 0 ? ` · ${refStats.pending} ${tt('refStatPending')}` : ''}
             </p>
@@ -296,8 +301,8 @@ export default function Profil() {
             if (!user) return
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${user.id}`, tt('refShareText'))
           }}
-          className="flex items-center gap-1.5 bg-duo-green text-ponprimary text-[12px] font-bold px-3.5 py-2 rounded-xl flex-shrink-0 active:scale-95 transition-transform">
-          <Share2 size={13} />
+          className="inline-flex h-[34px] flex-shrink-0 items-center gap-1.5 rounded-control bg-pprimary px-3 text-[12px] font-semibold text-ponprimary transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas">
+          <Share2 size={13} strokeWidth={1.75} />
           {tt('refBtn')}
         </button>
       </div>
@@ -314,7 +319,7 @@ export default function Profil() {
           <Item
             icon={Pencil}
             label="Savollar boshqaruvi"
-            right={<ChevronRight size={16} className="text-muted" />}
+            right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
             onPress={() => navigate('/admin')}
           />
         </Section>
@@ -323,20 +328,20 @@ export default function Profil() {
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
         <Item icon={Globe} label={tt('langLabel')}
-          right={<span className="text-[12px] text-muted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
+          right={<span className="text-[12px] text-pmuted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
 
         <Item
           icon={Award}
           label={tt('certOfficialTitle')}
-          right={<ChevronRight size={16} className="text-muted" />}
+          right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
           onPress={() => setShowCertModal(true)}
         />
 
         <Item
           icon={Ticket}
           label={tt('promoCodeTitle')}
-          right={<ChevronRight size={16} className="text-muted" />}
+          right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
           onPress={() => setShowPromoModal(true)}
         />
 
@@ -355,14 +360,14 @@ export default function Profil() {
           onPress={handleReset} />
 
         <Item icon={Moon} label={tt('themeLabel')}
-          right={<span className="text-[12px] text-muted">{themeLabel}</span>}
+          right={<span className="text-[12px] text-pmuted">{themeLabel}</span>}
           onPress={() => setShowThemePicker(true)} />
 
         {syncPending > 0 && (
           <Item
             icon={CloudUpload} iconColor="var(--p-warning)"
             label={`${tt('syncPending')}: ${syncPending}`}
-            right={<span className="text-[11px] text-muted">{tt('syncPendingDesc')}</span>}
+            right={<span className="text-[11px] text-pmuted">{tt('syncPendingDesc')}</span>}
             onPress={() => { if (user?.id) void flushOutbox(user.id) }}
           />
         )}
@@ -386,13 +391,6 @@ export default function Profil() {
             ? tt('installAppPrompt')
             : tt('installAppUnsupported'))} />
       </Section>
-
-      {/* Toast */}
-      {toast && (
-        <div className="fixed bottom-20 left-4 right-4 card-neon text-fg text-xs font-semibold px-4 py-3 rounded-xl text-center z-40 shadow-lg animate-fadeIn">
-          {toast}
-        </div>
-      )}
 
       {/* Name edit sheet */}
       {showNameEdit && (
@@ -436,12 +434,12 @@ export default function Profil() {
       {showThemePicker && (
         <PickerSheet
           title={tt('themeLabel')}
-          titleIcon={<Sun size={18} className="text-duo-purple" />}
+          titleIcon={<Sun size={18} className="text-ppurple" />}
           value={settings.theme}
           options={[
-            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-duo-yellow" /> },
-            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-duo-purple" /> },
-            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-duo-blue" /> },
+            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-pwarning" /> },
+            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-ppurple" /> },
+            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-pblue" /> },
           ]}
           onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
           onClose={() => setShowThemePicker(false)}

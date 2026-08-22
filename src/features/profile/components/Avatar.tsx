@@ -1,7 +1,11 @@
 import { Camera, Pencil } from 'lucide-react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
+import { cn } from '../../../shared/lib/cn'
 
+/** Profil sahifasidagi katta avatar.
+ *  Doira shakli ATAYLAB saqlanadi — sotib olinadigan ramka kosmetikasi
+ *  (avatar-frames) doira halqa uchun chizilgan. */
 export function Avatar({ name, photoUrl, onEditName, onEditPhoto }: {
   name: string; photoUrl?: string; onEditName?: () => void; onEditPhoto?: () => void
 }) {
@@ -11,14 +15,18 @@ export function Avatar({ name, photoUrl, onEditName, onEditPhoto }: {
   const src = customAvatar ?? photoUrl
   const letter = name?.[0]?.toUpperCase() ?? 'F'
   const ring = (
-    <div className="w-[88px] h-[88px] rounded-full bg-gradient-to-br from-duo-blue to-duo-purple flex items-center justify-center text-white font-black text-4xl relative overflow-hidden ring-[3px] ring-duo-blue/40">
+    <div className="relative flex size-[88px] items-center justify-center overflow-hidden rounded-full border border-pline bg-pwash font-display text-[34px] font-semibold text-pprimary">
       {src ? (
-        <img src={src} alt={name} className="absolute inset-0 w-full h-full object-cover" />
+        <img src={src} alt="" className="absolute inset-0 size-full object-cover" />
       ) : (
         letter
       )}
     </div>
   )
+
+  /** Avatar ustidagi kichik amal tugmasi — 28px vizual, 44px bosish maydoni. */
+  const editBtn = 'absolute grid size-7 place-items-center rounded-full border-[2.5px] border-pcanvas transition-transform duration-[120ms] ease-out active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
+
   return (
     <div className="relative">
       {/* #40: sotib olingan avatar ramkasi (gradient ring, avatar-frames config) */}
@@ -27,14 +35,14 @@ export function Avatar({ name, photoUrl, onEditName, onEditPhoto }: {
       ) : ring}
       {onEditName && (
         <button onClick={onEditName} aria-label="Ismni o'zgartirish"
-          className="absolute top-0 right-0 w-7 h-7 rounded-full bg-duo-blue border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
-          <Pencil size={12} className="text-white" />
+          className={cn(editBtn, 'right-0 top-0 bg-psurface text-pmuted hover:text-pfg')}>
+          <Pencil size={12} strokeWidth={1.75} />
         </button>
       )}
       {onEditPhoto && (
         <button onClick={onEditPhoto} aria-label="Rasmni o'zgartirish"
-          className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-duo-green border-[2.5px] border-canvas flex items-center justify-center active:scale-90 transition-transform shadow-lg">
-          <Camera size={12} className="text-white" />
+          className={cn(editBtn, 'bottom-0 right-0 bg-pprimary text-ponprimary')}>
+          <Camera size={12} strokeWidth={1.75} />
         </button>
       )}
     </div>

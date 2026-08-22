@@ -10,6 +10,7 @@ import type { MerchItem } from '../../../shared/merch-items'
 import { newId } from '../../shared/lib/outbox'
 import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
+import { getMerchIcon } from './merch-icons'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
@@ -58,17 +59,17 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
 
   return (
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title">
-      <div className="relative w-full max-w-sm bg-pcard rounded-3xl border border-pline p-5 shadow-2xl animate-premiumIn">
-        <p id="merch-order-title" className="text-[15px] font-black text-center flex items-center justify-center gap-2">
+      <div className="relative w-full max-w-sm bg-pcard rounded-container border border-pline p-5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)] motion-safe:animate-premiumIn">
+        <p id="merch-order-title" className="text-[15px] font-semibold text-center flex items-center justify-center gap-2">
           <Package size={17} className="text-pgold" /> {tt('merchFormTitle')}
         </p>
         {/* Buyum sarlavhasi */}
-        <div className="mt-3 flex items-center gap-3 rounded-2xl bg-psurface border border-pline p-3">
-          <span className="text-3xl">{item.emoji}</span>
+        <div className="mt-3 flex items-center gap-3 rounded-container bg-psurface border border-pline p-3">
+          {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="shrink-0 text-pgold" /> })()}
           <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-bold truncate">{item.label[lang]}</p>
-            <p className="text-[11px] text-pgold font-black flex items-center gap-1 mt-0.5">
-              <Coins size={11} fill="currentColor" /> {item.price.toLocaleString('ru-RU')}
+            <p className="text-[13px] font-semibold truncate">{item.label[lang]}</p>
+            <p className="text-[11px] text-pgold font-semibold flex items-center gap-1 mt-0.5">
+              <Coins size={11} strokeWidth={1.75} /> {item.price.toLocaleString('ru-RU')}
             </p>
           </div>
         </div>
@@ -79,7 +80,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             onChange={(e) => setFullName(e.target.value)}
             placeholder={tt('merchFormName')}
             maxLength={80}
-            className="w-full bg-psurface border border-pline rounded-xl px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
           />
           <input
             value={phone}
@@ -87,32 +88,32 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             placeholder={tt('merchFormPhone')}
             inputMode="tel"
             maxLength={20}
-            className="w-full bg-psurface border border-pline rounded-xl px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
           />
           <input
             value={note}
             onChange={(e) => setNote(e.target.value)}
             placeholder={tt('merchFormNote')}
             maxLength={200}
-            className="w-full bg-psurface border border-pline rounded-xl px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
           />
         </div>
 
         {error && (
-          <p className="mt-2.5 text-center text-[11.5px] font-bold text-pwarning animate-fadeIn">{error}</p>
+          <p className="mt-2.5 text-center text-[11.5px] font-semibold text-pwarning animate-fadeIn">{error}</p>
         )}
 
         <div className="mt-4 flex gap-2">
           <button
             onClick={onClose}
             disabled={busy}
-            className="flex-1 py-2.5 rounded-xl text-[13px] font-bold text-pmuted bg-psurface border border-pline active:scale-[0.97] transition-transform disabled:opacity-50">
+            className="flex-1 py-2.5 rounded-control text-[13px] font-semibold text-pmuted bg-psurface border border-pline active:scale-[0.97] transition-transform disabled:opacity-50">
             {tt('merchFormCancel')}
           </button>
           <button
             onClick={submit}
             disabled={busy}
-            className="btn-premium-gold flex-[2] py-2.5 rounded-xl text-[13px] font-black flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
+            className="btn-premium-gold flex-[2] py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
             {busy ? <Loader2 size={15} className="animate-spin" /> : <Coins size={14} />}
             {tt('merchFormSubmit')}
           </button>

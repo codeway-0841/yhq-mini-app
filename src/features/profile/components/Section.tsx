@@ -1,12 +1,13 @@
 import React from 'react'
 import { ChevronRight } from 'lucide-react'
+import { cn } from '../../../shared/lib/cn'
 
 // ── Section wrapper ─────────────────────────────────────────────────────
 export function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="mb-4">
-      <p className="text-[10px] font-bold text-muted uppercase tracking-[0.12em] px-4 mb-1.5">{title}</p>
-      <div className="card-neon mx-4 overflow-hidden">
+    <div className="mb-6">
+      <p className="mb-2 px-5 text-[10px] font-semibold uppercase tracking-[0.12em] text-psubtle">{title}</p>
+      <div className="mx-5 overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline">
         {children}
       </div>
     </div>
@@ -29,19 +30,28 @@ export function Item({ icon: Icon, iconColor = 'var(--p-subtle)', label, right, 
     <Comp
       type={onPress ? 'button' : undefined}
       onClick={disabled ? undefined : onPress}
-      className={`flex items-center gap-3 w-full px-4 py-3.5 transition-colors ${
-        disabled ? 'opacity-50 cursor-not-allowed' : onPress ? 'active:bg-elevated cursor-pointer' : ''
-      }`}
+      disabled={Comp === 'button' && disabled ? true : undefined}
+      className={cn(
+        // 52px — touch target (44px minimum + ro'yxat zichligi)
+        'flex min-h-[52px] w-full items-center gap-3 px-4 py-3 text-left',
+        'transition-colors duration-[120ms] ease-out',
+        disabled && 'cursor-not-allowed opacity-50',
+        !disabled && onPress && 'cursor-pointer hover:bg-psurface active:bg-psurface',
+        onPress && 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary',
+      )}
     >
-      <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+      {/* v3: ikonka qutisi squircle (doira EMAS) — ui/Avatar va IconChip bilan bir ritm */}
+      <div
+        className="flex size-8 flex-shrink-0 items-center justify-center rounded-[10px]"
         style={{
           background: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${iconColor} 18%, transparent)`,
-        }}>
-        <Icon size={15} style={{ color: iconColor }} />
+          border: `1px solid color-mix(in srgb, ${iconColor} 20%, transparent)`,
+        }}
+      >
+        <Icon size={15} strokeWidth={1.75} style={{ color: iconColor }} />
       </div>
-      <span className="flex-1 text-[14px] text-left text-fg">{label}</span>
-      {right !== undefined ? right : <ChevronRight size={16} className="text-lineStrong" />}
+      <span className="flex-1 text-left text-[14px] text-pfg">{label}</span>
+      {right !== undefined ? right : <ChevronRight size={16} strokeWidth={1.75} className="shrink-0 text-psubtle" />}
     </Comp>
   )
 }
