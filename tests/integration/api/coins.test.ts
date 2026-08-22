@@ -26,7 +26,12 @@ const app = createApp()
 
 const USER_A = '990000004001'
 const USER_B = '990000004002'
-const IDS = [USER_A, USER_B]
+// USER_C: consumable-race testi uchun ALOHIDA — USER_B'ning 'coins:purchase'
+// rate-limit bucket'i (10/min) allaqachon bir nechta subtestda ishlatiladi;
+// yana 2 ta so'rov qo'shish CI'da (retry:2 + tarmoq kechikishi bilan) 429ga
+// olib kelgan edi.
+const USER_C = '990000004003'
+const IDS = [USER_A, USER_B, USER_C]
 
 async function cleanup() {
   for (const id of IDS) {
@@ -69,11 +74,13 @@ async function seedDaily(userId: string, answered: number, correct: number, fixe
 
 let tokenA: string
 let tokenB: string
+let tokenC: string
 
 beforeAll(async () => {
   await cleanup()
   tokenA = await createUserWithSession(USER_A)
   tokenB = await createUserWithSession(USER_B)
+  tokenC = await createUserWithSession(USER_C)
 })
 
 afterAll(cleanup)
@@ -150,14 +157,17 @@ describe('coins purchase — atomiklik', () => {
   it('parallel CONSUMABLE (premium-days) xuddi shu purchaseId — FAQAT bitta debit', async () => {
     // Durable'dan farqli: consumable claim-first user_items lock'iga ega emas —
     // shu race'ni aynan shu test ushlashi kerak (audit #4).
-    await setBalance(USER_B, 1000)
+    // USER_C ishlatiladi (USER_B EMAS) — USER_B'ning 'coins:purchase' rate-limit
+    // bucket'i (10/min) shu describe blokidagi boshqa subtestlarda allaqachon
+    // deyarli to'lgan; bu yerga qo'shsa CI'da 429 chiqarardi.
+    await setBalance(USER_C, 1000)
     const purchaseId = randomBytes(16).toString('hex')
-    const before = await getBalance(USER_B)
+    const before = await getBalance(USER_C)
     const p1 = request(app).post('/api/coins/purchase')
-      .set('Authorization', `Bearer ${tokenB}`)
+      .set('Authorization', `Bearer ${tokenC}`)
       .send({ itemId: 'premium-days-1', purchaseId })
     const p2 = request(app).post('/api/coins/purchase')
-      .set('Authorization', `Bearer ${tokenB}`)
+      .set('Authorization', `Bearer ${tokenC}`)
       .send({ itemId: 'premium-days-1', purchaseId })
     const [r1, r2] = await Promise.all([p1, p2])
     const price = getShopItem('premium-days-1')!.price
@@ -166,8 +176,8 @@ describe('coins purchase — atomiklik', () => {
     // Biri 'ok', ikkinchisi 'duplicate' bo'lishi kerak — IKKALASI HAM 'ok' bo'lsa double-debit
     const oks = [r1.body, r2.body].filter((b) => b.duplicate === false).length
     expect(oks).toBe(1)
-    expect(before - (await getBalance(USER_B))).toBe(price)
-    const debits = (await coinsRepository.getHistory(USER_B)).filter((h) => h.reason === 'purchase' && h.refId === purchaseId)
+    expect(before - (await getBalance(USER_C))).toBe(price)
+    const debits = (await coinsRepository.getHistory(USER_C)).filter((h) => h.reason === 'purchase' && h.refId === purchaseId)
     expect(debits.length).toBe(1)
   })
 

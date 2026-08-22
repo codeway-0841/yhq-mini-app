@@ -11,20 +11,37 @@
  * HECH QACHON ishlamasligi shart — aks holda istalgan client o'zini istalgan
  * userId sifatida ko'rsata oladi (auth bypass). Shu invariantni ushbu test
  * qulflab qo'yadi.
+ *
+ * DIQQAT: `config` (demak `config.telegram.botToken`) MODUL YUKLANGANDA bir
+ * marta parse qilinadi (server/config/index.ts: `const env = envSchema.parse
+ * (process.env)`) — oddiy `process.env['BOT_TOKEN'] = ...` mutatsiyasi bunga
+ * ta'sir qilmaydi (faqat `config.isProd` kabi live getter'lar dinamik).
+ * Shuning uchun har bir test `vi.resetModules()` + dinamik import bilan
+ * `server/middleware/auth`ni QAYTA yuklaydi (prod-config.test.ts'dagi bilan
+ * bir xil pattern) — aks holda CI'da (BOT_TOKEN ambient env'da yo'q) 503
+ * qaytadi, 401 emas (bu xato birinchi versiyada aynan shunday sodir bo'lgan).
  */
-import { describe, it, expect, afterEach } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 import type { Request, Response, NextFunction } from 'express'
-import { telegramAuth } from '../../../server/middleware/auth'
 
 const originalNodeEnv = process.env['NODE_ENV']
 const originalBotToken = process.env['BOT_TOKEN']
 
+beforeEach(() => {
+  vi.resetModules()
+})
 afterEach(() => {
   if (originalNodeEnv === undefined) delete process.env['NODE_ENV']
   else process.env['NODE_ENV'] = originalNodeEnv
   if (originalBotToken === undefined) delete process.env['BOT_TOKEN']
   else process.env['BOT_TOKEN'] = originalBotToken
+  vi.resetModules()
 })
+
+async function loadTelegramAuth() {
+  const mod = await import('../../../server/middleware/auth')
+  return mod.telegramAuth
+}
 
 /** index.html dev-mock bilan bir xil shakl — imzosi (`hash=dev`) HAR DOIM soxta. */
 const FAKE_INIT_DATA =
@@ -50,6 +67,8 @@ describe('telegramAuth — dev-mock fallback xavfsizlik chegarasi', () => {
   it('production: soxta hash bilan initData → 401 (fallback ISHLAMAYDI)', async () => {
     process.env['NODE_ENV'] = 'production'
     process.env['BOT_TOKEN'] = 'real-bot-token-not-matching-fake-hash'
+    const telegramAuth = await loadTelegramAuth()
+
     const req = mockReq()
     const res = mockRes()
     let statusCode: number | undefined
@@ -67,6 +86,8 @@ describe('telegramAuth — dev-mock fallback xavfsizlik chegarasi', () => {
   it("dev/test: soxta hash bilan initData → fallback ORQALI userId o'rnatiladi", async () => {
     process.env['NODE_ENV'] = 'test'
     process.env['BOT_TOKEN'] = 'irrelevant-in-dev'
+    const telegramAuth = await loadTelegramAuth()
+
     const req = mockReq()
     const res = mockRes()
     let nextCalled = false
