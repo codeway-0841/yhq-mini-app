@@ -395,7 +395,7 @@ body[data-theme='light'] {
   /* Aksent yorug' fonda kontrast uchun to'qlashtiriladi (WCAG AA matn ustida) */
   --p-primary:     #0d8a6a;
   --p-primary-rgb: 13 138 106;
-  --p-on-primary:  #ffffff;
+  --p-on-primary:  #000000;   /* oq 4.32:1 edi (AA<4.5) — qora 4.86:1 */
   --p-glow:        transparent;
 
   /* Semantik ranglar — yorug' fon uchun to'q variantlar */
@@ -446,7 +446,7 @@ body[data-theme='dark'][data-accent='aurora'] {
 body[data-theme='dark'][data-accent='violet'] {
   --p-fg: #f5f3f7; --p-muted: #aca6b5; --p-subtle: #7c7588;
   --theme-fg: #f5f3f7; --theme-fg-muted: #aca6b5; --theme-fg-subtle: #7c7588;
-  --p-primary: #9d7bea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 157 123 234;
+  --p-primary: #9d7bea; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 157 123 234;
   --p-canvas: #130f1a; --p-surface: #221c2d; --p-card: #1a1523; --p-line: rgba(255,255,255,0.07);
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #130f1a; --theme-surface: #221c2d; --theme-elevated: #1a1523;
@@ -526,14 +526,14 @@ body[data-theme='dark'][data-accent='gold'] {
 
 /* Payme — rasmiy brend rangi (faqat aksent; atmosfera default grafit) */
 body[data-theme='dark'][data-accent='payme'] {
-  --p-primary: #00b0b9; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 176 185;
+  --p-primary: #00b0b9; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
 /* Crimson — COIN-EKSKLYUZIV: chuqur qizil (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='crimson'] {
   --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #857376;
   --theme-fg: #f8f2f3; --theme-fg-muted: #b5a2a5; --theme-fg-subtle: #857376;
-  --p-primary: #e04a5f; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 224 74 95;
+  --p-primary: #e04a5f; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 224 74 95;
   --p-purple: #d4708a; --p-purple-rgb: 212 112 138;
   --p-canvas: #170c0e; --p-surface: #2a171b; --p-card: #1e1013; --p-line: rgba(255,255,255,0.07);
   --p-line-strong: rgba(255,255,255,0.14);
@@ -555,7 +555,7 @@ body[data-theme='dark'][data-accent='royal'] {
 
 /* Arctic — COIN-EKSKLYUZIV YORUG' atmosfera (sakura kabi light-only dizayn) */
 body[data-accent='arctic'] {
-  --p-primary: #0b7fb8; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 11 127 184;
+  --p-primary: #0b7fb8; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 11 127 184;
   --p-canvas: #f7fafc; --p-surface: #eaf2f7; --p-card: #ffffff;
   --p-line: #dde8ef; --p-line-strong: #c3d6e2;
   --p-fg: #14212b; --p-muted: #4e6472; --p-subtle: #82949f;
@@ -568,7 +568,7 @@ body[data-accent='arctic'] {
    Yorug' fonda atmosfera "bo'yalgan fon" bilan emas, iliq stone ground + tema
    hue'idagi aksent bilan beriladi (kontrast va o'qishlilik saqlanadi). */
 body[data-theme='light'][data-accent='aurora'] {
-  --p-primary: #0a8f74; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 10 143 116;
+  --p-primary: #0a8f74; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 10 143 116;
   --p-canvas: #f7faf9; --p-surface: #eef4f2; --p-card: #ffffff;
   --p-line: #e0eae7; --p-line-strong: #c7d8d3;
   --theme-canvas: #f7faf9; --theme-surface: #eef4f2; --theme-elevated: #ffffff;
@@ -596,7 +596,7 @@ body[data-theme='light'][data-accent='forest'] {
   --theme-line: #e0eae5; --theme-line-strong: #c7d8d0;
 }
 body[data-theme='light'][data-accent='sunset'] {
-  --p-primary: #c05e17; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 192 94 23;
+  --p-primary: #c05e17; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 192 94 23;
   --p-canvas: #fdfaf7; --p-surface: #f7efe8; --p-card: #ffffff;
   --p-line: #efe3d9; --p-line-strong: #ddc9b8;
   --theme-canvas: #fdfaf7; --theme-surface: #f7efe8; --theme-elevated: #ffffff;
@@ -618,7 +618,7 @@ body[data-theme='light'][data-accent='gold'] {
   --theme-line: #ece5d5; --theme-line-strong: #d9cdb2;
 }
 body[data-theme='light'][data-accent='payme'] {
-  --p-primary: #00858c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 133 140;
+  --p-primary: #00858c; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 133 140;
   --p-canvas: #f7fafa; --p-surface: #edf4f4; --p-card: #ffffff;
   --p-line: #dfeaea; --p-line-strong: #c5d8d9;
   --theme-canvas: #f7fafa; --theme-surface: #edf4f4; --theme-elevated: #ffffff;
