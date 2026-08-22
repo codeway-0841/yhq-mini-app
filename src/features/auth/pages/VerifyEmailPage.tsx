@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
+import { CheckCircle2, XCircle } from 'lucide-react'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 
@@ -46,18 +47,18 @@ export default function VerifyEmailPage() {
   }, [status, navigate])
 
   return (
-    <div className="min-h-screen bg-canvas flex items-center justify-center px-6">
+    <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
       <div className="w-full max-w-md">
-        <div className="card-premium p-8 text-center space-y-4">
+        <div className="rounded-container border border-pline bg-pcard p-8 text-center space-y-4">
           {status === 'verifying' && (
             <>
-              <div className="w-16 h-16 rounded-full bg-duo-green/10 flex items-center justify-center mx-auto">
-                <div className="w-8 h-8 border-4 border-duo-green/30 border-t-duo-green rounded-full animate-spin" />
+              <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto">
+                <div aria-hidden="true" className="w-8 h-8 border-4 border-pprimary/30 border-t-pprimary rounded-full motion-safe:animate-spin" />
               </div>
-              <h1 className="text-[20px] font-black text-fg">
+              <h1 className="text-[20px] font-semibold text-pfg">
                 {language === 'ru' ? 'Проверяем...' : 'Tekshirilmoqda...'}
               </h1>
-              <p className="text-[14px] text-muted">
+              <p className="text-[14px] text-pmuted">
                 {language === 'ru'
                   ? 'Подтверждаем ваш email адрес'
                   : 'Email manzilingiz tasdiqlanmoqda'}
@@ -67,20 +68,18 @@ export default function VerifyEmailPage() {
 
           {status === 'success' && (
             <>
-              <div className="w-16 h-16 rounded-full bg-duo-green/10 flex items-center justify-center mx-auto animate-premiumIn">
-                <svg className="w-10 h-10 text-duo-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
+              <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto motion-safe:animate-premiumIn">
+                <CheckCircle2 size={36} strokeWidth={1.75} className="text-pprimary" />
               </div>
-              <h1 className="text-[20px] font-black text-fg">
-                {language === 'ru' ? '✓ Подтверждено!' : '✓ Tasdiqlandi!'}
+              <h1 className="text-[20px] font-semibold text-pfg">
+                {language === 'ru' ? 'Подтверждено' : 'Tasdiqlandi'}
               </h1>
-              <p className="text-[14px] text-muted">
+              <p className="text-[14px] text-pmuted">
                 {language === 'ru'
                   ? 'Ваш email успешно подтверждён'
                   : 'Emailingiz muvaffaqiyatli tasdiqlandi'}
               </p>
-              <p className="text-[12px] text-muted/70">
+              <p className="text-[12px] text-pmuted/70">
                 {language === 'ru'
                   ? 'Перенаправление на главную...'
                   : 'Bosh sahifaga yo\'naltirilmoqda...'}
@@ -90,20 +89,18 @@ export default function VerifyEmailPage() {
 
           {status === 'error' && (
             <>
-              <div className="w-16 h-16 rounded-full bg-duo-red/10 flex items-center justify-center mx-auto animate-premiumIn">
-                <svg className="w-10 h-10 text-duo-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
+              <div className="w-16 h-16 rounded-full bg-[rgb(var(--p-danger-rgb)/0.10)] flex items-center justify-center mx-auto motion-safe:animate-premiumIn">
+                <XCircle size={36} strokeWidth={1.75} className="text-pdanger" />
               </div>
-              <h1 className="text-[20px] font-black text-fg">
+              <h1 className="text-[20px] font-semibold text-pfg">
                 {language === 'ru' ? 'Ошибка' : 'Xatolik'}
               </h1>
-              <p className="text-[14px] text-duo-red">
+              <p className="text-[14px] text-pdanger">
                 {error || (language === 'ru' ? 'Произошла ошибка' : 'Xatolik yuz berdi')}
               </p>
               <button
                 onClick={() => navigate('/')}
-                className="btn-premium w-full py-3 rounded-2xl font-black text-[14px] mt-4"
+                className="btn-premium flex h-11 w-full items-center justify-center font-semibold text-[14px] mt-4"
               >
                 {language === 'ru' ? 'На главную' : 'Bosh sahifaga'}
               </button>

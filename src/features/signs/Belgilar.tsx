@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { X, Search, ChevronLeft, TrafficCone, Gamepad2, Layers } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../content/signs'
+import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 
 interface Sign {
@@ -11,7 +12,7 @@ interface Sign {
 }
 
 interface Category {
-  id: string; name: string; emoji: string; count: number
+  id: string; name: string; emoji: string; count: number; color: string
 }
 
 function SignModal({ sign, onClose }: { sign: Sign; onClose: () => void }) {
@@ -43,16 +44,27 @@ function SignModal({ sign, onClose }: { sign: Sign; onClose: () => void }) {
 function CategoryGrid({ onSelect }: { onSelect: (cat: Category) => void }) {
   return (
     <div className="grid grid-cols-2 gap-3">
-      {signCategories.map((cat) => (
+      {signCategories.map((cat) => {
+        const Icon = getSignCategoryIcon(cat.id)
+        return (
         <button key={cat.id} onClick={() => onSelect(cat)}
           className="flex items-center gap-3 rounded-container border border-pline bg-psurface p-3.5 active:scale-95 transition-transform text-left">
-          <span className="text-2xl">{cat.emoji}</span>
+          <div
+            className="flex size-10 flex-shrink-0 items-center justify-center rounded-[12px]"
+            style={{
+              background: `color-mix(in srgb, ${cat.color} 10%, transparent)`,
+              border: `1px solid color-mix(in srgb, ${cat.color} 20%, transparent)`,
+            }}
+          >
+            <Icon size={18} strokeWidth={1.75} style={{ color: cat.color }} />
+          </div>
           <div>
             <p className="text-xs font-semibold leading-tight">{cat.name}</p>
             <p className="text-[10px] text-pmuted mt-0.5">{cat.count} ta belgi</p>
           </div>
         </button>
-      ))}
+        )
+      })}
     </div>
   )
 }

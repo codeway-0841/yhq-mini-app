@@ -183,7 +183,7 @@ const UZ = {
   mistakesTitle: "Xatolarim", practiceAll: "Barchasini mashq qilish",
   practiceWord: "Mashq", byTopicsWord: "Mavzular kesimida",
   topMistakes: "Eng ko'p xato qilinadigan savollar",
-  mistakesEmptyTitle: "Xatolar yo'q! 🎉",
+  mistakesEmptyTitle: "Xatolar yo'q",
   mistakesEmptyDesc: "Barcha savollar to'g'ri yechilgan. Ajoyib natija!",
   timesWord: "marta", unansweredWord: "ta hal qilinmagan xato",
   // Intizom (streak) sahifasi
@@ -536,7 +536,7 @@ const RU: Record<Keys, string> = {
   mistakesTitle: "Мои ошибки", practiceAll: "Повторить все",
   practiceWord: "Повторить", byTopicsWord: "По темам",
   topMistakes: "Самые сложные вопросы",
-  mistakesEmptyTitle: "Ошибок нет! 🎉",
+  mistakesEmptyTitle: "Ошибок нет",
   mistakesEmptyDesc: "Все вопросы решены верно. Отличный результат!",
   timesWord: "раз", unansweredWord: "неисправленных ошибок",
   // Страница «Дисциплина» (серия)

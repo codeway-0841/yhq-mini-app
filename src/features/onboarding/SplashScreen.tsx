@@ -10,7 +10,7 @@ export default function SplashScreen() {
         <img
           src="/images/splash-brand.png"
           alt="KIWI"
-          className="relative w-[260px] rounded-3xl"
+          className="relative w-[260px] rounded-container"
         />
       </div>
 

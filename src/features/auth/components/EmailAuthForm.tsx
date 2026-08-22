@@ -51,12 +51,12 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
   }
 
   const inputCls =
-    'w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg ' +
-    'placeholder:text-muted outline-none focus:border-duo-green transition-colors'
+    'w-full bg-psurface border border-pline rounded-control px-3.5 py-3 text-[15px] text-pfg ' +
+    'placeholder:text-pmuted outline-none focus:border-pprimary transition-colors'
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3" noValidate>
-      <label htmlFor="email" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+      <label htmlFor="email" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide -mb-1.5">
         {tt('authEmail')}
       </label>
       <input
@@ -72,7 +72,7 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
 
       {mode === 'register' && (
         <>
-          <label htmlFor="firstName" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+          <label htmlFor="firstName" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide -mb-1.5">
             {tt('authFirstName')}
           </label>
           <input
@@ -103,7 +103,7 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
       )}
 
       {error && (
-        <p className="text-[12px] font-semibold text-duo-red animate-fadeIn">
+        <p className="text-[12px] font-semibold text-pdanger animate-fadeIn">
           {error}
         </p>
       )}
@@ -116,7 +116,7 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
           (mode === 'register' && !firstName.trim()) ||
           busy
         }
-        className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] mt-1 flex items-center justify-center gap-2"
+        className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] mt-1 flex items-center justify-center gap-2"
       >
         {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
         {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
@@ -126,7 +126,7 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
         <button
           type="button"
           onClick={onToggleMode}
-          className="text-[13px] text-muted hover:text-fg transition-colors text-center"
+          className="text-[13px] text-pmuted hover:text-pfg transition-colors text-center"
           disabled={busy}
         >
           {mode === 'login' ? tt('authNoAccount') : tt('authHaveAccount')}

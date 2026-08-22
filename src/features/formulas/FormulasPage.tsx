@@ -36,7 +36,7 @@ function FormulaCard({ item, fav, onFav, lang }: {
   const s = getSubject(item.subjectId)
   const Icon = s.icon
   return (
-    <div className="card-premium rounded-2xl p-3.5 relative">
+    <div className="rounded-container border border-pline bg-pcard rounded-container p-3.5 relative">
       <button type="button" onClick={(e) => { e.stopPropagation(); onFav() }}
         aria-label="favorite"
         className="absolute top-2.5 right-2.5 p-1 cursor-pointer">
@@ -49,7 +49,7 @@ function FormulaCard({ item, fav, onFav, lang }: {
         </span>
       </div>
       <p className="text-[12px] font-semibold text-pmuted leading-snug">{item.title}</p>
-      <p className="text-[13px] font-bold leading-relaxed mt-1 break-words"
+      <p className="text-[13px] font-semibold leading-relaxed mt-1 break-words"
         style={{ color: s.color, fontFamily: 'ui-monospace, monospace' }}>
         {item.formula}
       </p>
@@ -103,15 +103,15 @@ export default function FormulasPage() {
       {/* Header */}
       <div className="flex items-center gap-3 px-5 pt-4 pb-3">
         <button type="button" onClick={() => goBack(navigate)} aria-label="back"
-          className="w-9 h-9 rounded-xl card-premium flex items-center justify-center flex-shrink-0 cursor-pointer">
+          className="w-9 h-9 rounded-control rounded-container border border-pline bg-pcard flex items-center justify-center flex-shrink-0 cursor-pointer">
           <ChevronLeft size={18} className="text-pmuted" />
         </button>
         <div className="flex-1 min-w-0">
-          <h1 className="text-[17px] font-bold text-pfg leading-tight">{tt('cheatsheets')}</h1>
+          <h1 className="text-[17px] font-semibold text-pfg leading-tight">{tt('cheatsheets')}</h1>
           <p className="text-[11px] text-psubtle">{tt('cheatsheetsDesc')}</p>
         </div>
         {favs.length > 0 && (
-          <span className="flex items-center gap-1 text-[11px] font-bold text-pwarning tabular-nums">
+          <span className="flex items-center gap-1 text-[11px] font-semibold text-pwarning tabular-nums">
             <Star size={13} className="fill-pwarning" /> {favs.length}
           </span>
         )}
@@ -119,7 +119,7 @@ export default function FormulasPage() {
 
       {/* Qidiruv */}
       <div className="px-5 mb-3">
-        <div className="card-premium rounded-2xl flex items-center gap-2.5 px-4 py-3">
+        <div className="rounded-container border border-pline bg-pcard rounded-container flex items-center gap-2.5 px-4 py-3">
           <Search size={16} className="text-psubtle flex-shrink-0" />
           <input value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchFormula')}
@@ -138,12 +138,12 @@ export default function FormulasPage() {
             return (
               <button key={s.subjectId} type="button"
                 onClick={() => { setSubjectId(s.subjectId); setTopicId(null); playSound('click') }}
-                className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl flex-shrink-0 cursor-pointer transition-all"
+                className="flex items-center gap-2 px-3.5 py-2.5 rounded-container flex-shrink-0 cursor-pointer transition-all"
                 style={active
                   ? { background: `linear-gradient(145deg, ${cfg.color}, ${cfg.colorDark})`, boxShadow: `0 4px 14px ${cfg.color}40` }
                   : { background: 'var(--p-card)', border: '1px solid var(--p-line)' }}>
                 <Icon size={15} className={active ? 'text-white' : ''} style={active ? {} : { color: cfg.color }} />
-                <span className={`text-[12px] font-bold whitespace-nowrap ${active ? 'text-white' : 'text-pfg'}`}>
+                <span className={`text-[12px] font-semibold whitespace-nowrap ${active ? 'text-white' : 'text-pfg'}`}>
                   {lang === 'ru' ? cfg.nameRu : cfg.name}
                 </span>
                 <span className={`text-[10px] font-semibold tabular-nums ${active ? 'text-white/80' : 'text-psubtle'}`}>
@@ -160,7 +160,7 @@ export default function FormulasPage() {
         <div className="flex gap-2 overflow-x-auto px-5 pb-3 scroll-smooth-x [&::-webkit-scrollbar]:hidden"
           style={{ scrollbarWidth: 'none' }}>
           <button type="button" onClick={() => setTopicId(null)}
-            className="px-3 py-1.5 rounded-xl text-[11px] font-semibold flex-shrink-0 cursor-pointer"
+            className="px-3 py-1.5 rounded-control text-[11px] font-semibold flex-shrink-0 cursor-pointer"
             style={topicId === null
               ? { background: `${subjectCfg.color}22`, color: subjectCfg.color, border: `1px solid ${subjectCfg.color}55` }
               : { background: 'var(--p-card)', color: 'var(--p-muted)', border: '1px solid var(--p-line)' }}>
@@ -168,7 +168,7 @@ export default function FormulasPage() {
           </button>
           {subject.topics.map((t) => (
             <button key={t.id} type="button" onClick={() => setTopicId(t.id)}
-              className="px-3 py-1.5 rounded-xl text-[11px] font-semibold flex-shrink-0 whitespace-nowrap cursor-pointer"
+              className="px-3 py-1.5 rounded-control text-[11px] font-semibold flex-shrink-0 whitespace-nowrap cursor-pointer"
               style={topicId === t.id
                 ? { background: `${subjectCfg.color}22`, color: subjectCfg.color, border: `1px solid ${subjectCfg.color}55` }
                 : { background: 'var(--p-card)', color: 'var(--p-muted)', border: '1px solid var(--p-line)' }}>

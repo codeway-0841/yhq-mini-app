@@ -8,8 +8,9 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { ChevronLeft, RotateCcw, Check, X, Layers } from 'lucide-react'
+import { ChevronLeft, RotateCcw, PartyPopper, TrafficCone, Check, X, Layers } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../content/signs'
+import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -18,7 +19,7 @@ interface Sign {
   id: string; name: string; shortName: string
   image: string; description: string; legalRef: string
 }
-interface Category { id: string; name: string; emoji: string; count: number }
+interface Category { id: string; name: string; emoji: string; count: number; color: string }
 
 const knownKey = (catId: string) => `yhq-flash-known-${catId}`
 function readKnown(catId: string): string[] {
@@ -90,7 +91,7 @@ export default function FlashcardsPage() {
             <ChevronLeft size={24} />
           </button>
           <Layers size={18} className="text-psubtle" />
-          <h1 className="text-lg font-bold tracking-tight">Flashcards</h1>
+          <h1 className="text-lg font-semibold tracking-tight">Flashcards</h1>
         </div>
         <p className="text-[12px] text-psubtle mb-4">
           {lang === 'ru' ? 'Категорию выберите — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
@@ -98,10 +99,19 @@ export default function FlashcardsPage() {
         <div className="flex flex-col gap-2.5">
           {signCategories.map((c) => {
             const k = readKnown(c.id).length
+            const Icon = getSignCategoryIcon(c.id)
             return (
               <button key={c.id} onClick={() => start(c)}
-                className="card-premium w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-transform">
-                <span className="text-2xl">{c.emoji}</span>
+                className="rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-transform">
+                <div
+                  className="flex size-10 flex-shrink-0 items-center justify-center rounded-[12px]"
+                  style={{
+                    background: `color-mix(in srgb, ${c.color} 10%, transparent)`,
+                    border: `1px solid color-mix(in srgb, ${c.color} 20%, transparent)`,
+                  }}
+                >
+                  <Icon size={18} strokeWidth={1.75} style={{ color: c.color }} />
+                </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-[14px] font-semibold truncate">{c.name}</p>
                   <p className="text-[11px] text-psubtle mt-0.5">
@@ -110,7 +120,7 @@ export default function FlashcardsPage() {
                   </p>
                 </div>
                 {k > 0 && (
-                  <span className="text-[10px] font-bold text-pprimary">
+                  <span className="text-[10px] font-semibold text-pprimary">
                     {Math.round((k / c.count) * 100)}%
                   </span>
                 )}
@@ -126,8 +136,8 @@ export default function FlashcardsPage() {
   if (done) {
     return (
       <div className="font-display min-h-screen bg-pcanvas text-pfg flex flex-col items-center justify-center px-6 text-center">
-        <span className="text-6xl mb-4">🎉</span>
-        <h2 className="text-[22px] font-bold tracking-tight mb-2">
+        <PartyPopper size={48} strokeWidth={1.5} className="mb-4 text-pprimary" />
+        <h2 className="font-display text-[22px] font-semibold tracking-[-0.015em] mb-2">
           {lang === 'ru' ? 'Дек пройден!' : 'Dek tugadi!'}
         </h2>
         <p className="text-[13px] text-psubtle mb-6">
@@ -135,16 +145,18 @@ export default function FlashcardsPage() {
             ? `${known.length} из ${cat.count} знаков изучено`
             : `${known.length} / ${cat.count} belgi o'zlashtirildi`}
         </p>
-        <button onClick={() => start(cat)} className="btn-neon px-8 py-3.5 rounded-2xl font-bold mb-3">
-          🔄 {lang === 'ru' ? 'Ещё раз' : 'Yana bir bor'}
+        <button onClick={() => start(cat)} className="btn-neon flex h-11 items-center gap-2 px-8 font-semibold mb-3">
+          <RotateCcw size={16} strokeWidth={1.75} />
+          {lang === 'ru' ? 'Ещё раз' : 'Yana bir bor'}
         </button>
         <button onClick={reset}
           className="text-[12px] font-semibold text-psubtle underline underline-offset-2">
           {lang === 'ru' ? 'Сбросить прогресс' : 'Progressni tozalash'}
         </button>
         <button onClick={() => setCat(null)}
-          className="mt-6 text-[13px] font-semibold text-pmuted">
-          ← {lang === 'ru' ? 'Категории' : 'Kategoriyalar'}
+          className="mt-6 flex items-center gap-1 text-[13px] font-semibold text-pmuted">
+          <ChevronLeft size={15} strokeWidth={1.75} />
+          {lang === 'ru' ? 'Категории' : 'Kategoriyalar'}
         </button>
       </div>
     )
@@ -155,11 +167,11 @@ export default function FlashcardsPage() {
     <div className="font-display min-h-screen bg-pcanvas text-pfg flex flex-col pb-6">
       <div className="flex items-center justify-between px-5 pt-5">
         <button onClick={() => setCat(null)} aria-label="Orqaga"
-          className="text-psubtle hover:text-pfg px-1 transition-colors">
-          <ChevronLeft size={24} />
+          className="grid size-11 place-items-center rounded-control text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <span className="text-[12px] font-semibold text-psubtle">{cat.name}</span>
-        <span className="text-[12px] font-bold text-pmuted tabular-nums">{idx + 1}/{deck.length}</span>
+        <span className="text-[12px] font-semibold text-pmuted tabular-nums">{idx + 1}/{deck.length}</span>
       </div>
 
       {/* Progress */}
@@ -173,20 +185,20 @@ export default function FlashcardsPage() {
           className="flip-card w-full max-w-[320px] aspect-[3/4] text-left select-none">
           <div className={`flip-inner ${flipped ? 'flipped' : ''}`}>
             {/* OLD TOMON — belgi rasmi */}
-            <div className="flip-face card-premium rounded-[28px] p-6 flex flex-col items-center justify-center gap-4">
-              <div className="w-40 h-40 rounded-2xl bg-white flex items-center justify-center">
+            <div className="flip-face rounded-container border border-pline bg-pcard rounded-[28px] p-6 flex flex-col items-center justify-center gap-4">
+              <div className="w-40 h-40 rounded-container bg-white flex items-center justify-center">
                 {current.image
                   ? <img src={current.image} alt={current.name} className="w-32 h-32 object-contain" />
-                  : <span className="text-6xl">🚧</span>}
+                  : <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />}
               </div>
               <p className="text-[11px] font-semibold text-psubtle">
                 {lang === 'ru' ? 'Нажмите — увидеть ответ' : 'Bosing — javobni ko\'rish'}
               </p>
             </div>
             {/* ORQA TOMON — nom + tavsif */}
-            <div className="flip-face flip-back card-premium rounded-[28px] p-6 flex flex-col justify-center"
+            <div className="flip-face flip-back rounded-container border border-pline bg-pcard rounded-[28px] p-6 flex flex-col justify-center"
               style={{ borderColor: 'rgb(var(--p-primary-rgb) / 0.35)' }}>
-              <p className="text-[17px] font-bold text-pfg leading-snug mb-2">{current.name}</p>
+              <p className="text-[17px] font-semibold text-pfg leading-snug mb-2">{current.name}</p>
               <p className="text-[11px] font-semibold text-ppurple mb-3">{current.legalRef}</p>
               <p className="text-[12.5px] text-pmuted leading-relaxed">{current.description}</p>
             </div>
@@ -197,13 +209,13 @@ export default function FlashcardsPage() {
       {/* Boshqaruv */}
       <div className="flex gap-3 px-6">
         <button onClick={() => mark(false)}
-          className="btn-premium-secondary flex-1 h-[54px] rounded-2xl font-bold text-[14px] justify-center text-pdanger"
+          className="btn-premium-secondary flex-1 h-[54px] rounded-container font-semibold text-[14px] justify-center text-pdanger"
           style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
           <X size={17} />
           {lang === 'ru' ? 'Не знал' : 'Bilmadim'}
         </button>
         <button onClick={() => mark(true)}
-          className="btn-premium flex-[1.3] h-[54px] rounded-2xl font-bold text-[14px]">
+          className="btn-premium flex-[1.3] h-[54px] rounded-container font-semibold text-[14px]">
           <Check size={17} />
           {lang === 'ru' ? 'Знаю' : 'Bilaman'}
         </button>

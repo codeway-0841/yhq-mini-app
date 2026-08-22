@@ -12,7 +12,7 @@ function Dots({ active }: { active: number }) {
     <div className="flex items-center justify-center gap-2 pb-6">
       {[0, 1, 2].map((i) => (
         <span key={i} className={`rounded-full transition-all duration-300 ${
-          i === active ? 'w-6 h-2.5 bg-duo-green' : 'w-2.5 h-2.5 bg-line'
+          i === active ? 'w-6 h-2.5 bg-pprimary' : 'w-2.5 h-2.5 bg-plineStrong'
         }`} />
       ))}
     </div>
@@ -32,7 +32,7 @@ function Screen({ children }: { children: React.ReactNode }) {
 }
 
 function GreenTitle({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-[26px] font-black text-pfg text-center leading-tight">{children}</h2>
+  return <h2 className="text-[26px] font-semibold text-pfg text-center leading-tight">{children}</h2>
 }
 function Sub({ children }: { children: React.ReactNode }) {
   return <p className="text-[13px] font-semibold text-center mt-2" style={{ color: 'var(--p-subtle)' }}>{children}</p>
@@ -40,7 +40,7 @@ function Sub({ children }: { children: React.ReactNode }) {
 function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
     <button onClick={onClick}
-      className="btn-neon w-full py-4 rounded-2xl font-black text-[16px] flex items-center justify-center gap-2">
+      className="btn-neon w-full py-4 rounded-container font-semibold text-[16px] flex items-center justify-center gap-2">
       {label}
       <ChevronRight size={20} strokeWidth={3} />
     </button>
@@ -52,7 +52,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
   return (
     <Screen>
       <div className="mt-6">
-        <GreenTitle>Xush <span className="text-duo-green">kelibsiz!</span></GreenTitle>
+        <GreenTitle>Xush <span className="text-pprimary">kelibsiz!</span></GreenTitle>
         <Sub>Barcha fanlarni bitta ilovada o'rganing va test yeching.</Sub>
       </div>
 
@@ -85,11 +85,11 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
+        className="self-start w-9 h-9 rounded-control flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">
-        <GreenTitle>Qaysi <span className="text-duo-green">fanni</span><br />o'rganmoqchisiz?</GreenTitle>
+        <GreenTitle>Qaysi <span className="text-pprimary">fanni</span><br />o'rganmoqchisiz?</GreenTitle>
         <Sub>Bir yoki bir nechta fan tanlashingiz mumkin</Sub>
       </div>
 
@@ -99,25 +99,25 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
           const Icon = s.icon
           return (
             <button key={s.id} onClick={() => toggle(s.id, s.available)}
-              className={`flex items-center gap-3.5 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+              className={`flex items-center gap-3.5 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                 !s.available ? 'opacity-55' : ''
               } ${
-                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-pcard'
+                active ? 'border-pprimary bg-pprimary/10' : 'border-pline bg-pcard'
               }`}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-none"
+              <div className="w-11 h-11 rounded-control flex items-center justify-center flex-none"
                 style={{ background: `${s.color}26`, color: s.color }}>
                 <Icon size={22} />
               </div>
-              <span className="flex-1 text-[15px] font-bold text-pfg">
+              <span className="flex-1 text-[15px] font-semibold text-pfg">
                 {lang === 'ru' ? s.nameRu : s.name}
               </span>
               {!s.available && (
-                <span className="text-[10px] font-extrabold uppercase tracking-wide text-psubtle flex-none">
+                <span className="text-[10px] font-semibold uppercase tracking-wide text-psubtle flex-none">
                   {lang === 'ru' ? 'Скоро' : 'Tez kunda'}
                 </span>
               )}
               {active && s.available && (
-                <span className="w-7 h-7 rounded-lg border-2 bg-duo-green border-duo-green flex items-center justify-center flex-none">
+                <span className="w-7 h-7 rounded-lg border-2 bg-pprimary border-pprimary flex items-center justify-center flex-none">
                   <Check size={16} className="text-white" strokeWidth={3.2} />
                 </span>
               )}
@@ -148,7 +148,7 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
+        className="self-start w-9 h-9 rounded-control flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">
@@ -160,21 +160,21 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
           const active = goal === g.id
           return (
             <button key={g.id} onClick={() => setGoal(g.id)}
-              className={`flex items-center gap-3.5 w-full rounded-2xl border-2 p-4 text-left transition-all active:scale-[0.98] ${
-                active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-pcard'
+              className={`flex items-center gap-3.5 w-full rounded-container border-2 p-4 text-left transition-all active:scale-[0.98] ${
+                active ? 'border-pprimary bg-pprimary/10' : 'border-pline bg-pcard'
               }`}>
               <div className="w-11 h-11 rounded-full flex items-center justify-center flex-none"
                 style={{ background: `color-mix(in srgb, ${g.color} 15%, transparent)`, color: g.color }}>
                 <Clock3 size={22} />
               </div>
               <div className="flex-1">
-                <p className="text-[15px] font-black text-pfg leading-tight">{g.label}</p>
+                <p className="text-[15px] font-semibold text-pfg leading-tight">{g.label}</p>
                 <p className="text-[11px] font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>{g.desc}</p>
               </div>
               <span className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-none transition-all ${
-                active ? 'border-duo-green' : 'border-line'
+                active ? 'border-pprimary' : 'border-pline'
               }`}>
-                {active && <span className="w-3 h-3 rounded-full bg-duo-green" />}
+                {active && <span className="w-3 h-3 rounded-full bg-pprimary" />}
               </span>
             </button>
           )
@@ -182,14 +182,14 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
       </div>
 
       {/* Maqsad kartasi */}
-      <div className="mt-4 rounded-2xl border border-line p-3.5 flex items-center gap-3"
+      <div className="mt-4 rounded-container border border-pline p-3.5 flex items-center gap-3"
         style={{ background: 'var(--p-card)' }}>
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-none"
+        <div className="w-10 h-10 rounded-control flex items-center justify-center flex-none"
           style={{ background: 'color-mix(in srgb, var(--p-danger) 15%, transparent)' }}>
-          <Rocket size={20} className="text-duo-red" />
+          <Rocket size={20} className="text-pdanger" />
         </div>
         <div>
-          <p className="text-[13px] font-black text-pfg">Maqsadga erishamiz! 🚀</p>
+          <p className="text-[13px] font-semibold text-pfg">Maqsadga erishamiz!</p>
           <p className="text-[11px] font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>
             Doimiy o'rganish — muvaffaqiyat kaliti.
           </p>

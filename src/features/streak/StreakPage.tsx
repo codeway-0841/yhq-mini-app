@@ -10,7 +10,7 @@
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, Trophy, CalendarCheck2, HeartCrack } from 'lucide-react'
+import { Zap, Flame, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
 import { api, type DailyHistory } from '../../shared/api'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
@@ -92,42 +92,42 @@ export default function StreakPage() {
   const weeks  = tt('weekdaysList').split('|')
 
   return (
-    <div className="px-4 pt-4 pb-10">
+    <div className="px-5 pt-4 pb-10">
       {/* Header */}
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="text-subtle hover:text-fg text-xl px-1 transition-colors">←</button>
-        <h1 className="text-xl font-black">{tt('intizomTitle')}</h1>
+          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
+        </button>
+        <h1 className="text-xl font-semibold">{tt('intizomTitle')}</h1>
       </div>
 
       {/* Streak hero */}
-      <div className="card-neon p-5 flex flex-col items-center text-center mb-4">
-        <div className="w-20 h-20 rounded-3xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center mb-3"
-          style={{ boxShadow: streak > 0 ? '0 0 30px rgba(255,200,0,0.25)' : undefined }}>
-          <Zap size={44} className={streak > 0 ? 'text-duo-yellow' : 'text-subtle'}
-            fill="currentColor" />
+      <div className="rounded-container border border-pline bg-pcard p-5 flex flex-col items-center text-center mb-4">
+        <div className="w-20 h-20 rounded-container bg-[rgb(var(--p-warning-rgb)/0.12)] border border-[rgb(var(--p-warning-rgb)/0.30)] flex items-center justify-center mb-3">
+          <Flame size={38} strokeWidth={1.75} className={streak > 0 ? 'text-pwarning' : 'text-psubtle'} />
         </div>
-        <p className="text-[38px] font-black leading-none text-fg">
-          {streak} <span className="text-lg font-bold text-subtle">{tt('daysWord')}</span>
+        <p className="font-display text-[40px] font-semibold leading-none tabular-nums text-pfg">
+          {streak} <span className="text-lg font-semibold text-psubtle">{tt('daysWord')}</span>
         </p>
-        <p className="text-[13px] text-subtle mt-2 font-semibold">
+        <p className="text-[13px] text-psubtle mt-2 font-semibold">
           {streak > 0 ? tt('intizomStreakGood') : tt('intizomStreakStart')}
         </p>
-        <div className="mt-3 flex items-center gap-1.5 bg-elevated rounded-full px-3.5 py-1.5">
-          <Trophy size={13} className="text-duo-yellow" />
-          <span className="text-[12px] font-bold text-subtle">
+        <div className="mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3.5 py-1.5">
+          <Trophy size={13} strokeWidth={1.75} className="text-pwarning" />
+          <span className="text-[12px] font-semibold text-psubtle">
             {tt('intizomBest')}: {history?.bestStreak ?? 0} {tt('daysWord')}
           </span>
         </div>
-        {/* 🧊 Streak Freeze — Premium himoya (1 kunlik chegara) */}
+        {/* Streak Freeze — Premium himoya (1 kunlik chegara) */}
         {isPremium && (
           <div className="mt-2 flex items-center gap-1.5 rounded-full px-3.5 py-1.5"
             style={{
               background: 'color-mix(in srgb, var(--p-blue) 10%, transparent)',
               border: '1px solid color-mix(in srgb, var(--p-blue) 30%, transparent)',
             }}>
-            <span className="text-[12px]">🧊</span>
-            <span className="text-[11.5px] font-bold" style={{ color: 'var(--p-blue)' }}>
+            <Snowflake size={13} strokeWidth={1.75} style={{ color: 'var(--p-blue)' }} />
+            <span className="text-[11.5px] font-semibold" style={{ color: 'var(--p-blue)' }}>
               {lang === 'ru' ? 'Заморозка серии активна (1 день)' : 'Streak Freeze faol (1 kun himoya)'}
             </span>
           </div>
@@ -138,46 +138,50 @@ export default function StreakPage() {
       {history ? (
         <div className="grid grid-cols-3 gap-2.5 mb-4">
           {[
-            { v: sel.answered,              label: tt('solvedWord'), color: 'text-duo-green' },
-            { v: sel.answered - sel.correct, label: tt('wrongUpper'), color: 'text-duo-red' },
-            { v: sel.fixed,                  label: tt('fixedUpper'), color: 'text-duo-blue' },
+            { v: sel.answered,              label: tt('solvedWord'), color: 'text-pprimary' },
+            { v: sel.answered - sel.correct, label: tt('wrongUpper'), color: 'text-pdanger' },
+            { v: sel.fixed,                  label: tt('fixedUpper'), color: 'text-pblue' },
           ].map((c) => (
-            <div key={c.label} className="card-neon p-3 text-center">
-              <p className={`text-[24px] font-black leading-none ${c.color}`}>{c.v}</p>
-              <p className="text-[10px] font-bold text-subtle mt-1.5 tracking-wide">{c.label}</p>
+            <div key={c.label} className="rounded-container border border-pline bg-pcard p-3 text-center">
+              <p className={`text-[24px] font-semibold leading-none ${c.color}`}>{c.v}</p>
+              <p className="text-[10px] font-semibold text-psubtle mt-1.5 tracking-wide">{c.label}</p>
             </div>
           ))}
         </div>
       ) : (
         <div className="grid grid-cols-3 gap-2.5 mb-4">
           {[0, 1, 2].map((i) => (
-            <div key={i} className="card-neon p-3 text-center animate-pulse">
-              <div className="h-6 w-8 mx-auto rounded-md bg-elevated" />
-              <div className="h-2.5 w-14 mx-auto rounded bg-elevated mt-2" />
+            <div key={i} className="rounded-container border border-pline bg-pcard p-3 text-center animate-pulse">
+              <div className="h-6 w-8 mx-auto rounded-md bg-psurface" />
+              <div className="h-2.5 w-14 mx-auto rounded bg-psurface mt-2" />
             </div>
           ))}
         </div>
       )}
 
       {/* Kalendar */}
-      <div className="card-neon p-4 mb-4">
+      <div className="rounded-container border border-pline bg-pcard p-4 mb-4">
         <div className="flex items-center justify-between mb-3">
-          <button onClick={() => shiftMonth(-1)} aria-label="‹"
-            className="btn-3d-ghost w-8 h-8 rounded-xl flex items-center justify-center text-subtle">‹</button>
-          <p className="text-[14px] font-black text-fg capitalize">
+          <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
+            className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            <ChevronLeft size={16} strokeWidth={1.75} />
+          </button>
+          <p className="text-[14px] font-semibold text-pfg capitalize">
             {months[m - 1]} {y}
           </p>
-          <button onClick={() => shiftMonth(1)} aria-label="›"
+          <button onClick={() => shiftMonth(1)} aria-label={lang === 'ru' ? 'Следующий месяц' : 'Keyingi oy'}
             disabled={month >= today.slice(0, 7)}
-            className="btn-3d-ghost w-8 h-8 rounded-xl flex items-center justify-center text-subtle disabled:opacity-30">›</button>
+            className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
+            <ChevronRight size={16} strokeWidth={1.75} />
+          </button>
         </div>
         <div className="grid grid-cols-7 gap-1.5 text-center">
           {weeks.map((w) => (
-            <p key={w} className="text-[10px] font-bold text-subtle uppercase py-1">{w}</p>
+            <p key={w} className="text-[10px] font-semibold text-psubtle uppercase py-1">{w}</p>
           ))}
           {/* Yuklanish skeleti — yashil kataklar "0 holati"da miltillamasin */}
           {!history && cells.map((date, i) =>
-            date ? <span key={`sk${date}`} className="aspect-square rounded-xl bg-elevated animate-pulse" />
+            date ? <span key={`sk${date}`} className="aspect-square rounded-control bg-psurface animate-pulse" />
                  : <span key={`e${i}`} />)}
           {history && cells.map((date, i) => {
             if (!date) return <span key={`e${i}`} />
@@ -190,9 +194,9 @@ export default function StreakPage() {
             return (
               <button key={date} disabled={future}
                 onClick={() => setSelected(date)}
-                className={`aspect-square rounded-xl flex items-center justify-center text-[13px] font-bold transition-all ${
-                  level > 0 ? 'text-ponprimary' : 'text-subtle'} ${isSel ? 'ring-2 ring-duo-green scale-105' : ''
-                } ${isNow && !isSel ? 'ring-1 ring-duo-blue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
+                className={`aspect-square rounded-control flex items-center justify-center text-[13px] font-semibold transition-all ${
+                  level > 0 ? 'text-ponprimary' : 'text-psubtle'} ${isSel ? 'ring-2 ring-pprimary scale-105' : ''
+                } ${isNow && !isSel ? 'ring-1 ring-pblue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
                 style={{ background: heatBg(level) }}>
                 {Number(date.slice(8))}
               </button>
@@ -203,22 +207,22 @@ export default function StreakPage() {
 
 
       {/* Qanday ishlaydi? */}
-      <div className="card-neon p-4">
-        <h2 className="text-[15px] font-black text-fg mb-1">{tt('howItWorks')}</h2>
-        <p className="text-[12px] text-subtle mb-4">{tt('intizomDesc')}</p>
+      <div className="rounded-container border border-pline bg-pcard p-4">
+        <h2 className="text-[15px] font-semibold text-pfg mb-1">{tt('howItWorks')}</h2>
+        <p className="text-[12px] text-psubtle mb-4">{tt('intizomDesc')}</p>
         {([
-          { icon: Zap,            color: 'text-duo-yellow bg-duo-yellow/15 border-duo-yellow/40', t: 'hw1Title', d: 'hw1Desc' },
-          { icon: CalendarCheck2, color: 'text-duo-green  bg-duo-green/15  border-duo-green/40',  t: 'hw2Title', d: 'hw2Desc' },
-          { icon: Trophy,         color: 'text-duo-yellow bg-duo-yellow/15 border-duo-yellow/40', t: 'hw3Title', d: 'hw3Desc' },
-          { icon: HeartCrack,     color: 'text-duo-red    bg-duo-red/15    border-duo-red/40',    t: 'hw4Title', d: 'hw4Desc' },
+          { icon: Zap,            color: 'text-pwarning bg-pwarning/15 border-pwarning/40', t: 'hw1Title', d: 'hw1Desc' },
+          { icon: CalendarCheck2, color: 'text-pprimary  bg-pprimary/15  border-pprimary/40',  t: 'hw2Title', d: 'hw2Desc' },
+          { icon: Trophy,         color: 'text-pwarning bg-pwarning/15 border-pwarning/40', t: 'hw3Title', d: 'hw3Desc' },
+          { icon: HeartCrack,     color: 'text-pdanger    bg-pdanger/15    border-pdanger/40',    t: 'hw4Title', d: 'hw4Desc' },
         ] as const).map(({ icon: Icon, color, t: tKey, d: dKey }) => (
           <div key={tKey} className="flex items-start gap-3 mb-3.5 last:mb-0">
-            <div className={`w-10 h-10 rounded-xl border flex items-center justify-center flex-shrink-0 ${color}`}>
+            <div className={`w-10 h-10 rounded-control border flex items-center justify-center flex-shrink-0 ${color}`}>
               <Icon size={18} />
             </div>
             <div className="min-w-0">
-              <p className="text-[13px] font-black text-fg">{tt(tKey)}</p>
-              <p className="text-[12px] text-subtle leading-snug mt-0.5">{tt(dKey)}</p>
+              <p className="text-[13px] font-semibold text-pfg">{tt(tKey)}</p>
+              <p className="text-[12px] text-psubtle leading-snug mt-0.5">{tt(dKey)}</p>
             </div>
           </div>
         ))}

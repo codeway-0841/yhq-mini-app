@@ -141,42 +141,42 @@ export default function LoginPage() {
   }
 
   const inputCls =
-    'w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg ' +
-    'placeholder:text-muted outline-none focus:border-duo-green transition-colors'
+    'w-full bg-psurface border border-pline rounded-control px-3.5 py-3 text-[15px] text-pfg ' +
+    'placeholder:text-pmuted outline-none focus:border-pprimary transition-colors'
 
   const isWeb = !getTelegramWebApp() && !isNativeApp()
 
   return (
-    <div className="min-h-screen bg-canvas flex flex-col items-center justify-center px-6 py-10">
+    <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-6 py-10">
       <div className="w-full max-w-[380px] animate-premiumIn">
         {isWeb ? (
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <img src="/images/splash-brand.png" alt="KIWI" className="w-14 rounded-xl" />
+              <img src="/images/splash-brand.png" alt="KIWI" className="w-14 rounded-control" />
               <div>
-                <h1 className="text-[18px] font-black text-fg leading-tight">{tt('authWelcome')}</h1>
-                <p className="text-[12px] text-muted">{tt('authTagline')}</p>
+                <h1 className="text-[18px] font-semibold text-pfg leading-tight">{tt('authWelcome')}</h1>
+                <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
               </div>
             </div>
           </div>
         ) : (
           <>
             <img src="/images/splash-brand.png" alt="KIWI" className="w-36 rounded-[1.75rem] mx-auto" />
-            <h1 className="text-[22px] font-black text-fg text-center mt-5">{tt('authWelcome')}</h1>
-            <p className="text-[13px] text-muted text-center mt-1 mb-6">{tt('authTagline')}</p>
+            <h1 className="text-[22px] font-semibold text-pfg text-center mt-5">{tt('authWelcome')}</h1>
+            <p className="text-[13px] text-pmuted text-center mt-1 mb-6">{tt('authTagline')}</p>
           </>
         )}
 
-        <div className="card-premium p-4">
+        <div className="rounded-container border border-pline bg-pcard p-4">
           {/* Segment: Kirish | Ro'yxatdan o'tish */}
-          <div className="grid grid-cols-2 gap-1 p-1 rounded-xl bg-elevated border border-line mb-4">
+          <div className="grid grid-cols-2 gap-1 p-1 rounded-control bg-psurface border border-pline mb-4">
             {(['login', 'register'] as const).map((m) => (
               <button
                 key={m}
                 type="button"
                 onClick={() => { setMode(m); setStep('form'); setMethod(method === 'forgot' ? 'phone' : method); setError(null) }}
-                className={`py-2 rounded-lg text-[13px] font-bold transition-colors ${
-                  mode === m ? 'bg-duo-green text-ponprimary' : 'text-muted'
+                className={`py-2 rounded-lg text-[13px] font-semibold transition-colors ${
+                  mode === m ? 'bg-pprimary text-ponprimary' : 'text-pmuted'
                 }`}
               >
                 {tt(m === 'login' ? 'authLogin' : 'authRegister')}
@@ -192,8 +192,8 @@ export default function LoginPage() {
                   key={m}
                   type="button"
                   onClick={() => { setMethod(m); setError(null); }}
-                  className={`flex-1 py-1.5 rounded-lg text-[12px] font-bold transition-colors ${
-                    method === m ? 'bg-elevated border border-duo-green text-duo-green' : 'text-muted border border-line'
+                  className={`flex-1 py-1.5 rounded-lg text-[12px] font-semibold transition-colors ${
+                    method === m ? 'bg-psurface border border-pprimary text-pprimary' : 'text-pmuted border border-pline'
                   }`}
                 >
                   {m === 'phone' ? tt('authPhone') : 'Email'}
@@ -222,7 +222,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setMethod('forgot')}
-                  className="text-[12px] text-duo-green hover:underline mt-2 w-full text-center"
+                  className="text-[12px] text-pprimary hover:underline mt-2 w-full text-center"
                 >
                   {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
                 </button>
@@ -233,11 +233,11 @@ export default function LoginPage() {
           {/* Phone Form */}
           {method === 'phone' && step === 'form' && (
             <form onSubmit={submitForm} className="flex flex-col gap-3" noValidate>
-              <label htmlFor="phone" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+              <label htmlFor="phone" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide -mb-1.5">
                 {tt('authPhone')}
               </label>
               <div className={`${inputCls} flex items-center gap-2 px-3.5`}>
-                <span className="text-muted font-bold select-none">+998</span>
+                <span className="text-pmuted font-semibold select-none">+998</span>
                 <input
                   id="phone"
                   value={phone.digits}
@@ -247,13 +247,13 @@ export default function LoginPage() {
                   placeholder="90 123 45 67"
                   maxLength={11}
                   disabled={busy}
-                  className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[15px] text-fg placeholder:text-muted tracking-widest"
+                  className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[15px] text-pfg placeholder:text-pmuted tracking-widest"
                 />
               </div>
 
               {mode === 'register' && (
                 <>
-                  <label htmlFor="firstName" className="text-[11px] font-bold text-muted uppercase tracking-wide -mb-1.5">
+                  <label htmlFor="firstName" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide -mb-1.5">
                     {tt('authFirstName')}
                   </label>
                   <input
@@ -278,13 +278,13 @@ export default function LoginPage() {
                 </>
               )}
 
-              {error && <p className="text-[12px] font-semibold text-duo-red">{error}</p>}
+              {error && <p className="text-[12px] font-semibold text-pdanger">{error}</p>}
 
               {mode === 'login' && (
                 <button
                   type="button"
                   onClick={() => setMethod('forgot')}
-                  className="text-[12px] text-duo-green hover:underline -mt-2"
+                  className="text-[12px] text-pprimary hover:underline -mt-2"
                   disabled={busy}
                 >
                   {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
@@ -298,7 +298,7 @@ export default function LoginPage() {
                   (mode === 'register' && (!firstName.trim() || password.length < 8)) ||
                   busy
                 }
-                className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] mt-1 flex items-center justify-center gap-2"
+                className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] mt-1 flex items-center justify-center gap-2"
               >
                 {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
@@ -310,10 +310,10 @@ export default function LoginPage() {
           {method === 'phone' && step === 'otp' && (
             <form onSubmit={verifyOTP} className="flex flex-col gap-4" noValidate>
               <div className="text-center">
-                <p className="text-[13px] text-muted mb-1">
+                <p className="text-[13px] text-pmuted mb-1">
                   {tt('authSmsCodeSent')}
                 </p>
-                <p className="text-[15px] font-bold text-fg">{phone.value}</p>
+                <p className="text-[15px] font-semibold text-pfg">{phone.value}</p>
               </div>
 
               <OTPInput
@@ -324,7 +324,7 @@ export default function LoginPage() {
               />
 
               {error && (
-                <p className="text-[12px] font-semibold text-duo-red text-center animate-fadeIn">
+                <p className="text-[12px] font-semibold text-pdanger text-center animate-fadeIn">
                   {error}
                 </p>
               )}
@@ -332,7 +332,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={otpCode.length !== 6 || busy}
-                className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] flex items-center justify-center gap-2"
+                className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
               >
                 {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
@@ -341,7 +341,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => { setStep('form'); setOtpCode(''); setError(null) }}
-                className="text-[13px] text-muted hover:text-fg transition-colors text-center"
+                className="text-[13px] text-pmuted hover:text-pfg transition-colors text-center"
               >
                 {tt('authBack')}
               </button>
@@ -352,14 +352,14 @@ export default function LoginPage() {
           {method !== 'forgot' && step === 'form' && showTelegramLogin && (
             <>
               <div className="flex items-center gap-3 my-4">
-                <span className="flex-1 h-px bg-line" />
-                <span className="text-[11px] font-bold text-muted uppercase">{tt('authOr')}</span>
-                <span className="flex-1 h-px bg-line" />
+                <span className="flex-1 h-px bg-plineStrong" />
+                <span className="text-[11px] font-semibold text-pmuted uppercase">{tt('authOr')}</span>
+                <span className="flex-1 h-px bg-plineStrong" />
               </div>
               {telegramLoginCode ? (
                 <div className="flex flex-col items-center gap-2 py-3">
                   <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
-                  <p className="text-[12px] text-muted text-center">
+                  <p className="text-[12px] text-pmuted text-center">
                     {tt('authTgSharePhone')}
                   </p>
                   <a
@@ -376,7 +376,7 @@ export default function LoginPage() {
                   type="button"
                   onClick={startTelegramLogin}
                   disabled={busy}
-                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-[#0088cc] rounded-xl hover:bg-[#0077b5] transition-all disabled:opacity-50"
+                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-[#0088cc] rounded-control hover:bg-[#0077b5] transition-all disabled:opacity-50"
                 >
                   <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
                     <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>

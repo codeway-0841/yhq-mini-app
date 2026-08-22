@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ChevronLeft } from 'lucide-react'
 import { api } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
 
@@ -38,16 +39,16 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
   if (sent) {
     return (
       <div className="text-center space-y-4 animate-fadeIn">
-        <div className="w-16 h-16 rounded-full bg-duo-green/10 flex items-center justify-center mx-auto">
-          <svg className="w-8 h-8 text-duo-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="w-16 h-16 rounded-full bg-pprimary/10 flex items-center justify-center mx-auto">
+          <svg className="w-8 h-8 text-pprimary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
         </div>
         <div>
-          <h3 className="text-[17px] font-bold text-fg mb-2">
+          <h3 className="text-[17px] font-semibold text-pfg mb-2">
             {language === 'ru' ? 'Проверьте почту' : 'Emailni tekshiring'}
           </h3>
-          <p className="text-[13px] text-muted">
+          <p className="text-[13px] text-pmuted">
             {language === 'ru'
               ? `Мы отправили инструкции по восстановлению пароля на ${email}`
               : `Parol tiklash bo'yicha ko'rsatmalar ${email} manziliga yuborildi`}
@@ -55,9 +56,10 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
         </div>
         <button
           onClick={onBack}
-          className="text-[13px] text-duo-green hover:underline font-semibold"
+          className="inline-flex items-center gap-1 text-[13px] font-semibold text-pprimary hover:underline"
         >
-          {language === 'ru' ? '← Назад ко входу' : '← Kirish sahifasiga qaytish'}
+          <ChevronLeft size={14} strokeWidth={1.75} />
+          {language === 'ru' ? 'Назад ко входу' : 'Kirish sahifasiga qaytish'}
         </button>
       </div>
     )
@@ -66,10 +68,10 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
   return (
     <form onSubmit={handleSubmit} className="space-y-4" noValidate>
       <div className="text-center mb-4">
-        <h3 className="text-[17px] font-bold text-fg mb-1">
+        <h3 className="text-[17px] font-semibold text-pfg mb-1">
           {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
         </h3>
-        <p className="text-[13px] text-muted">
+        <p className="text-[13px] text-pmuted">
           {language === 'ru'
             ? 'Введите email, и мы отправим инструкции'
             : 'Emailingizni kiriting, ko\'rsatmalar yuboramiz'}
@@ -77,7 +79,7 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
       </div>
 
       <div>
-        <label htmlFor="reset-email" className="text-[11px] font-bold text-muted uppercase tracking-wide block mb-2">
+        <label htmlFor="reset-email" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide block mb-2">
           Email
         </label>
         <input
@@ -88,12 +90,12 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
           autoComplete="email"
           placeholder="example@email.com"
           disabled={busy}
-          className="w-full bg-elevated border border-line rounded-xl px-3.5 py-3 text-[15px] text-fg placeholder:text-muted outline-none focus:border-duo-green transition-colors"
+          className="w-full bg-psurface border border-pline rounded-control px-3.5 py-3 text-[15px] text-pfg placeholder:text-pmuted outline-none focus:border-pprimary transition-colors"
         />
       </div>
 
       {error && (
-        <p className="text-[12px] font-semibold text-duo-red animate-fadeIn">
+        <p className="text-[12px] font-semibold text-pdanger animate-fadeIn">
           {error}
         </p>
       )}
@@ -101,19 +103,20 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
       <button
         type="submit"
         disabled={!email.trim() || busy}
-        className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] flex items-center justify-center gap-2"
+        className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
       >
-        {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
+        {busy && <span aria-hidden="true" className="size-4 rounded-full border-2 border-ponprimary/60 border-t-transparent motion-safe:animate-spin" />}
         {language === 'ru' ? 'Отправить' : 'Yuborish'}
       </button>
 
       <button
         type="button"
         onClick={onBack}
-        className="text-[13px] text-muted hover:text-fg transition-colors text-center w-full"
+        className="inline-flex w-full items-center justify-center gap-1 text-[13px] text-pmuted transition-colors hover:text-pfg"
         disabled={busy}
       >
-        {language === 'ru' ? '← Назад' : '← Orqaga'}
+        <ChevronLeft size={14} strokeWidth={1.75} />
+        {language === 'ru' ? 'Назад' : 'Orqaga'}
       </button>
     </form>
   )
