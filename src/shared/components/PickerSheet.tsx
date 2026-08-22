@@ -23,7 +23,7 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
 
         <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-black mb-5">
-          <span className="text-duo-blue">{titleIcon}</span>
+          <span className="text-pblue">{titleIcon}</span>
           {title}
         </p>
 
@@ -36,7 +36,7 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
                 onClick={() => { onSelect(opt.value); onClose() }}
                 className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                   selected
-                    ? 'border-duo-green bg-duo-green/15'
+                    ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]'
                     : 'border-line bg-canvas active:border-lineStrong'
                 }`}
               >
@@ -53,7 +53,7 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
                     <p className="text-[11px] text-muted mt-0.5">{opt.desc}</p>
                   )}
                 </div>
-                {selected && <Check size={18} className="text-duo-green flex-none" />}
+                {selected && <Check size={18} className="text-pprimary flex-none" />}
               </button>
             )
           })}

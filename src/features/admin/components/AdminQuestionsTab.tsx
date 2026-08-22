@@ -130,7 +130,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           </button>
           <button
             onClick={() => setCreating(true)}
-            className="btn-premium flex items-center gap-1 px-3 py-2.5 rounded-container text-xs font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1 px-3 py-2.5 rounded-container text-xs font-semibold"
           >
             <Plus size={14} />
             <span>Yangi</span>
@@ -259,7 +259,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               </p>
               <button
                 onClick={() => setCreating(true)}
-                className="mt-3 btn-premium px-4 py-2 rounded-control text-xs font-semibold"
+                className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-control text-xs font-semibold"
               >
                 + Yangi savol qo'shish
               </button>
@@ -326,7 +326,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                     await useQuestionsStore.getState().reload().catch(() => {})
                   } finally { setBusy(false) }
                 }}
-                className="btn-neon bg-pdanger w-full py-3.5 rounded-container font-semibold text-[14px] text-white mb-2 disabled:opacity-50"
+                className="font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] bg-pdanger w-full py-3.5 rounded-container text-[14px] text-white mb-2 disabled:opacity-50"
               >
                 {busy ? <Loader2 size={16} className="motion-safe:animate-spin inline" /> : "Ha, o'chirish"}
               </button>
@@ -628,7 +628,7 @@ function QuestionForm({
           </div>
 
           <button type="submit" disabled={busy}
-            className="btn-premium w-full py-3.5 rounded-container font-semibold text-[14px] disabled:opacity-50">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container text-[14px] disabled:opacity-50">
             {busy ? <Loader2 size={16} className="motion-safe:animate-spin inline" /> : 'Saqlash'}
           </button>
         </form>

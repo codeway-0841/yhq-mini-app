@@ -30,7 +30,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                   !s.available ? 'opacity-55' : ''
                 } ${
-                  active ? 'border-duo-green bg-duo-green/10' : 'border-line bg-canvas active:border-lineStrong'
+                  active ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.10)]' : 'border-line bg-canvas active:border-lineStrong'
                 }`}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-none"
                   style={{ background: `${s.color}26`, color: s.color }}>
@@ -40,7 +40,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                   {lang === 'ru' ? s.nameRu : s.name}
                 </span>
                 {s.demoData && (
-                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-duo-yellow flex-none">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-pwarning flex-none">
                     demo
                   </span>
                 )}
@@ -49,7 +49,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                     {lang === 'ru' ? 'Скоро' : 'Tez kunda'}
                   </span>
                 )}
-                {active && s.available && <Check size={18} className="text-duo-green flex-none" strokeWidth={3} />}
+                {active && s.available && <Check size={18} className="text-pprimary flex-none" strokeWidth={3} />}
               </button>
             )
           })}

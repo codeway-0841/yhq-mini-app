@@ -90,7 +90,7 @@ export function DuelReactionPicker({
           }}
           disabled={cooldown}
           className={`w-11 h-11 rounded-2xl bg-card border border-line flex items-center justify-center text-fg shadow-lg active:scale-95 transition-all ${
-            isOpen ? 'border-duo-purple bg-surface text-duo-purple' : 'hover:bg-elevated'
+            isOpen ? 'border-ppurple bg-surface text-ppurple' : 'hover:bg-elevated'
           } ${cooldown ? 'opacity-50 cursor-not-allowed' : ''}`}
           title="Reaksiyalar"
         >
@@ -107,7 +107,7 @@ export function DuelReactionPicker({
           className="w-11 h-11 rounded-2xl bg-card border border-line flex items-center justify-center text-muted hover:text-fg shadow-lg active:scale-95 transition-all"
           title={isMuted ? 'Ovozni yoqish' : 'Ovozni o\'chirish'}
         >
-          {isMuted ? <VolumeX size={18} className="text-duo-red" /> : <Volume2 size={18} />}
+          {isMuted ? <VolumeX size={18} className="text-pdanger" /> : <Volume2 size={18} />}
         </button>
       </div>
 
@@ -122,7 +122,7 @@ export function DuelReactionPicker({
                 onClick={() => setTab('emojis')}
                 className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'emojis'
-                    ? 'bg-duo-purple text-ponprimary shadow-xs'
+                    ? 'bg-ppurple text-ponprimary shadow-xs'
                     : 'text-muted hover:text-fg'
                 }`}
               >
@@ -134,7 +134,7 @@ export function DuelReactionPicker({
                 onClick={() => setTab('taunts')}
                 className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'taunts'
-                    ? 'bg-duo-purple text-ponprimary shadow-xs'
+                    ? 'bg-ppurple text-ponprimary shadow-xs'
                     : 'text-muted hover:text-fg'
                 }`}
               >
@@ -178,7 +178,7 @@ export function DuelReactionPicker({
                   onClick={() => handleSendTaunt(item.text)}
                   className="w-full text-left px-3 py-2 rounded-xl bg-card hover:bg-elevated border border-line text-xs font-bold text-fg flex items-center gap-2 active:scale-98 transition-all"
                 >
-                  <Zap size={13} className="text-duo-purple shrink-0" />
+                  <Zap size={13} className="text-ppurple shrink-0" />
                   <span className="truncate">{item.text}</span>
                 </button>
               ))}

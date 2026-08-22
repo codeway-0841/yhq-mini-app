@@ -103,7 +103,7 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
       <button
         type="submit"
         disabled={!email.trim() || busy}
-        className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
+        className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
       >
         {busy && <span aria-hidden="true" className="size-4 rounded-full border-2 border-ponprimary/60 border-t-transparent motion-safe:animate-spin" />}
         {language === 'ru' ? 'Отправить' : 'Yuborish'}

@@ -70,7 +70,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
       {successData && <Confetti />}
       <div className="relative w-full max-w-sm rounded-3xl bg-surface border border-line p-6 shadow-2xl overflow-hidden">
         {/* Glow accent */}
-        <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-duo-purple/20 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-[rgb(var(--p-purple-rgb)/0.20)] rounded-full blur-2xl pointer-events-none" />
 
         <button
           onClick={onClose}
@@ -82,7 +82,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
 
         {successData ? (
           <div className="text-center py-4">
-            <div className="w-16 h-16 rounded-2xl bg-duo-green/15 border border-duo-green/40 flex items-center justify-center mx-auto mb-4 text-duo-green animate-bounce">
+            <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] border border-[rgb(var(--p-primary-rgb)/0.40)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
               <CheckCircle2 size={36} />
             </div>
 
@@ -99,14 +99,14 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
             <button
               type="button"
               onClick={onClose}
-              className="btn-3d-green w-full py-3.5 rounded-2xl font-black text-sm"
+              className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-black text-sm"
             >
               {tt('saveBtn')}
             </button>
           </div>
         ) : (
           <div>
-            <div className="w-12 h-12 rounded-2xl bg-duo-purple/15 border border-duo-purple/40 flex items-center justify-center mx-auto mb-3 text-duo-purple">
+            <div className="w-12 h-12 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] border border-[rgb(var(--p-purple-rgb)/0.40)] flex items-center justify-center mx-auto mb-3 text-ppurple">
               <Ticket size={24} />
             </div>
 
@@ -130,12 +130,12 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                   placeholder={tt('promoCodePlaceholder')}
                   autoFocus
                   maxLength={30}
-                  className="w-full bg-card border border-line rounded-2xl px-4 py-3.5 text-center text-base font-black tracking-widest text-fg placeholder:text-muted/50 placeholder:tracking-normal placeholder:font-medium focus:outline-none focus:border-duo-purple transition-all"
+                  className="w-full bg-card border border-line rounded-2xl px-4 py-3.5 text-center text-base font-black tracking-widest text-fg placeholder:text-muted/50 placeholder:tracking-normal placeholder:font-medium focus:outline-none focus:border-ppurple transition-all"
                 />
               </div>
 
               {error && (
-                <div className="flex items-center gap-2 p-3 rounded-xl bg-duo-red/10 border border-duo-red/30 text-duo-red text-xs font-semibold">
+                <div className="flex items-center gap-2 p-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] border border-[rgb(var(--p-danger-rgb)/0.30)] text-pdanger text-xs font-semibold">
                   <AlertCircle size={15} className="flex-shrink-0" />
                   <span>{error}</span>
                 </div>
@@ -144,7 +144,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
               <button
                 type="submit"
                 disabled={loading || code.trim().length < 3}
-                className="btn-premium w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? (
                   <Loader2 size={16} className="animate-spin" />

@@ -234,7 +234,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <button
             onClick={handleSendToTelegramBot}
             disabled={sendingBot}
-            className="btn-premium w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
           >
             <Send size={18} className="text-black" />
             {sendingBot ? tt('certSending') : tt('sendToTelegram')}
@@ -244,7 +244,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           <button
             onClick={handleDownload}
             disabled={downloading}
-            className="btn-3d-ghost w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2"
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2"
           >
             <Download size={16} />
             {downloading ? 'Yuklanmoqda...' : tt('downloadCertificate')}
@@ -253,7 +253,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           {/* Share CTA */}
           <button
             onClick={handleShare}
-            className="btn-3d-ghost w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2 text-pblue"
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2 text-pblue"
           >
             <Share2 size={15} />
             {tt('shareCertificate')}

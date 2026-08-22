@@ -217,7 +217,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={() => setShowCertificate(true)}
-            className="btn-premium-gold mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-control mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
           >
             <Award size={17} strokeWidth={1.75} />
             {tt('viewCertificate')}
@@ -228,7 +228,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={onOpenReview}
-            className="btn-premium mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-control mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
           >
             <BookOpen size={16} strokeWidth={1.75} />
             {tt('examReviewBtn')}
@@ -238,12 +238,12 @@ export default function ResultsModal({
         <div className="flex gap-3">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="btn-3d-ghost flex h-11 flex-1 items-center justify-center gap-2 font-semibold">
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control flex h-11 flex-1 items-center justify-center gap-2 font-semibold">
             <RotateCcw size={16} strokeWidth={1.75} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="btn-neon h-11 flex-[2] font-semibold">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control h-11 flex-[2] font-semibold">
             {tt('finish')}
           </button>
         </div>
@@ -252,7 +252,7 @@ export default function ResultsModal({
         <button
           onClick={handleShareImage}
           disabled={sharingImage}
-          className="btn-3d-ghost mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
+          className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
           <ImageDown size={15} strokeWidth={1.75} />
           {sharingImage ? '...' : tt('shareResultImage')}
         </button>
@@ -271,7 +271,7 @@ export default function ResultsModal({
             const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
           }}
-          className="btn-3d-ghost mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
+          className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
           <Share2 size={15} strokeWidth={1.75} />
           {tt('shareResult')}
         </button>

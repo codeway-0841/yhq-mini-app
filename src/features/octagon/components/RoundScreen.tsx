@@ -36,7 +36,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
       <p className="text-xs text-muted mb-1 text-center">
         {tt('round')} {roundIndex + 1} / {roundCount}
         {timeLeft !== null && (
-          <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-pdanger animate-pulse' : 'text-duo-blue'}`}>
+          <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-pdanger animate-pulse' : 'text-pblue'}`}>
             ⏱ {timeLeft}s
           </span>
         )}
@@ -61,7 +61,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           showCorrect    ? 'bg-psuccess/15 border-psuccess text-fg' :
           isSelected && ackCorrect === true ? 'bg-psuccess/20 border-psuccess text-fg' :
           // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
-          isSelected && ackCorrect === null ? 'bg-duo-blue/10 border-duo-blue/60 text-fg' :
+          isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-[rgb(var(--p-blue-rgb)/0.60)] text-fg' :
           isSelected    ? 'bg-pdanger/15   border-pdanger   text-fg' :
                           'bg-surface border-line text-muted'
         return (

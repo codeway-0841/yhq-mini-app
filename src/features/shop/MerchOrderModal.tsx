@@ -113,7 +113,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           <button
             onClick={submit}
             disabled={busy}
-            className="btn-premium-gold flex-[2] py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
             {busy ? <Loader2 size={15} className="animate-spin" /> : <Coins size={14} />}
             {tt('merchFormSubmit')}
           </button>

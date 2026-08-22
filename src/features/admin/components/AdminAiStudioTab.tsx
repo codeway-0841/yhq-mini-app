@@ -454,7 +454,7 @@ export default function AdminAiStudioTab() {
           type="button"
           disabled={loading || !promptText.trim()}
           onClick={handleGenerate}
-          className="w-full btn-premium py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+          className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
         >
           {loading ? (
             <>
@@ -676,7 +676,7 @@ export default function AdminAiStudioTab() {
               type="button"
               disabled={saving || questions.length === 0}
               onClick={handleSaveAll}
-              className="flex-1 btn-premium py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+              className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
             >
               {saving ? (
                 <>

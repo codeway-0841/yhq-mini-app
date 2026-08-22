@@ -109,7 +109,7 @@ export default function XatolarPage() {
               </div>
             </div>
             <button onClick={() => startPractice(wrongQuestions.map((q) => q.id), tt('fixMistakes'))}
-              className="btn-neon w-full py-3.5 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-container text-[14px] flex items-center justify-center gap-2">
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
             </button>

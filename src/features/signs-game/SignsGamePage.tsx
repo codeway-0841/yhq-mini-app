@@ -104,7 +104,7 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
           {tt('signsGameCorrect')}: <b className="text-pfg">{score}</b> / {rounds.length}
           {best !== null && ` · ${tt('signsGameBest')}: ${Math.max(best, score)}`}
         </p>
-        <button onClick={onExit} className="btn-premium mt-6 px-6 py-2.5 rounded-2xl text-[13.5px] font-black">
+        <button onClick={onExit} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 mt-6 px-6 py-2.5 rounded-2xl text-[13.5px] font-black">
           {tt('signsGameBack')}
         </button>
       </div>
@@ -120,7 +120,7 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
         </span>
         <span className="text-[12.5px] font-black text-pmuted">{tt('signsGameScore')}: {score}</span>
       </div>
-      <div className="progress-premium mb-6" style={{ ['--val' as string]: `${(timeLeft / SPEED_SECONDS) * 100}%` }} />
+      <div className="h-[3px] rounded-[2px] bg-plineStrong overflow-hidden mb-6" style={{ ['--val' as string]: `${(timeLeft / SPEED_SECONDS) * 100}%` }} />
 
       {/* Belgi */}
       <div key={round.sign.id} className="flex justify-center py-4 animate-premiumIn">
@@ -131,7 +131,7 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
       <div className="grid gap-2.5 mt-2">
         {round.options.map((o) => (
           <button key={o.id} onClick={() => answer(o)} disabled={flash !== null}
-            className="card-premium py-3 px-4 text-[13.5px] font-bold text-left active:scale-[0.98] transition-all disabled:opacity-90"
+            className="border border-pline bg-pcard rounded-container py-3 px-4 text-[13.5px] font-bold text-left active:scale-[0.98] transition-all disabled:opacity-90"
             style={flash !== null && o.id === round.sign.id
               ? { border: '1px solid rgb(var(--p-success-rgb) / 0.6)', background: 'rgb(var(--p-success-rgb) / 0.12)' }
               : undefined}>
@@ -222,7 +222,7 @@ function MatchGame({ onExit }: { onExit: () => void }) {
           const isWrong = wrong?.includes(tile.uid) ?? false
           return (
             <button key={tile.uid} onClick={() => tap(tile)}
-              className={`card-premium aspect-square flex items-center justify-center p-2 text-center transition-all active:scale-[0.96] ${isMatched ? 'opacity-40' : ''} ${isWrong ? 'animate-shake' : ''}`}
+              className={`border border-pline bg-pcard rounded-container aspect-square flex items-center justify-center p-2 text-center transition-all active:scale-[0.96] ${isMatched ? 'opacity-40' : ''} ${isWrong ? 'animate-shake' : ''}`}
               style={isSelected ? {
                 border: '1.5px solid rgb(var(--p-primary-rgb) / 0.7)',
                 boxShadow: '0 0 0 3px rgb(var(--p-primary-rgb) / 0.15)',
@@ -249,7 +249,7 @@ function MatchGame({ onExit }: { onExit: () => void }) {
             </p>
             <div className="flex gap-2.5 mt-5">
               <button onClick={startNew}
-                className="btn-premium flex-1 py-2.5 rounded-2xl text-[13px] font-black flex items-center justify-center gap-1.5">
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-1 py-2.5 rounded-2xl text-[13px] font-black flex items-center justify-center gap-1.5">
                 <RotateCcw size={14} /> {tt('signsGamePlayAgain')}
               </button>
               <button onClick={onExit}
@@ -295,7 +295,7 @@ export default function SignsGamePage() {
               iconColor: 'var(--p-blue)' },
           ]).map((m) => (
             <button key={m.id} onClick={() => { playSound('click'); setMode(m.id) }}
-              className="card-premium p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform">
+              className="border border-pline bg-pcard rounded-container p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
                 style={m.id === 'speed'
                   ? { background: 'rgb(var(--p-warning-rgb) / 0.14)', border: '1px solid rgb(var(--p-warning-rgb) / 0.4)' }

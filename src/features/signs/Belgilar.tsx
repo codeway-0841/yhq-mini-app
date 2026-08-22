@@ -153,11 +153,11 @@ export default function Belgilar() {
             </button>
             <h1 className="flex-1 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">Yo'l belgilari</h1>
             <button onClick={() => navigate('/belgilar-oyini')}
-              className="btn-premium-sm btn-premium flex items-center gap-1.5 text-[12px]">
+              className="h-[34px] px-3 rounded-control text-[13.5px] bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1.5 text-[12px]">
               <Gamepad2 size={13} strokeWidth={1.75} /> O'yin
             </button>
             <button onClick={() => navigate('/flashcards')}
-              className="btn-premium-sm btn-premium flex items-center gap-1.5 text-[12px]">
+              className="h-[34px] px-3 rounded-control text-[13.5px] bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1.5 text-[12px]">
               <Layers size={13} strokeWidth={1.75} /> Kartochkalar
             </button>
           </div>

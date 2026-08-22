@@ -338,7 +338,7 @@ export default function ShopPage() {
             <button
               onClick={() => buy(premiumItem.id)}
               disabled={busy !== null}
-              className="btn-premium-gold px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
+              className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
               {busy === premiumItem.id
                 ? <Loader2 size={14} className="animate-spin" />
                 : <><Coins size={13} /> {fmtCoins(premiumItem.price)}</>}
@@ -361,7 +361,7 @@ export default function ShopPage() {
         </div>
         <button
           onClick={() => { playSound('click'); setSpinOpen(true) }}
-          className="btn-premium-gold px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex-none active:scale-[0.97] transition-transform">
+          className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex-none active:scale-[0.97] transition-transform">
           {tt('spinButton')}
         </button>
       </div>

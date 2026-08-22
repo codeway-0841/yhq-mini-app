@@ -521,14 +521,14 @@ export default function TestPage() {
           </button>
           <button onClick={() => toggleSaved(q.id)}
             aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-            className={`btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold ${isSaved ? 'text-pwarning' : ''}`}>
+            className={`bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold ${isSaved ? 'text-pwarning' : ''}`}>
             <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
             aria-label={tt('shareApp')}
-            className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold">
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
@@ -552,18 +552,18 @@ export default function TestPage() {
         <div className="flex items-center gap-2">
           {isFinished && (
             <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
+              className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-9 h-9 rounded-control flex items-center justify-center">
               <BarChart2 size={17} />
             </button>
           )}
           <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-            className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-9 h-9 rounded-control flex items-center justify-center">
             <Settings size={17} />
           </button>
           <button
             onClick={() => { setIsFinished(true); setShowResults(true) }}
             aria-label="Testni yakunlash"
-            className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-9 h-9 rounded-control flex items-center justify-center">
             <Flag size={16} />
           </button>
         </div>
@@ -672,13 +672,13 @@ export default function TestPage() {
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash}
             aria-label={tt('finish')}
-            className="btn-neon flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold">
             <Check size={15} strokeWidth={2} aria-hidden="true" /> {tt('finish')}
           </button>
         ) : (
           <button onClick={handleStudyToggle}
             aria-label={studyOpen ? tt('closeStudy') : tt('study')}
-            className="btn-3d-ghost flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-semibold">
+            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-semibold">
             {studyOpen
               ? (<><X size={15} aria-hidden="true" />{tt('study')}</>)
               : (<><GraduationCap size={16} aria-hidden="true" />{tt('study')}</>)}
@@ -738,7 +738,7 @@ export default function TestPage() {
                 setShowExplain(false)
                 navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
               }}
-              className="btn-neon w-full mt-2 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2">
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-2 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2">
               <GraduationCap size={16} />
               {tt('openModule')}
             </button>

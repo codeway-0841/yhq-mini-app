@@ -114,7 +114,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title">
-      <div className="relative w-full card-neon rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
+      <div className="relative w-full border border-pline bg-pcard rounded-container rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
         <div className="p-5 pb-0">
           <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">
@@ -213,7 +213,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
         <div className="p-5 pt-3 bg-surface rounded-b-3xl">
           <button
             onClick={save}
-            className="btn-3d-green w-full py-3.5 rounded-2xl font-black text-base"
+            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-black text-base"
           >
             {tt('saveBtn')}
           </button>
@@ -288,10 +288,10 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             {preview && (
               <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-xl px-3.5 py-2 animate-fadeIn"
                 style={{ background: 'rgba(250, 204, 21, 0.10)', border: '1px solid rgba(250, 204, 21, 0.3)' }}>
-                <span className="text-[11px] font-bold text-duo-yellow">⏱ {tt('themePreviewing')}</span>
+                <span className="text-[11px] font-bold text-pwarning">⏱ {tt('themePreviewing')}</span>
                 <button
                   onClick={() => { stopPreview(); setPicker(null); onClose(); openTelegramLink('https://t.me/kiwi_uz_bot?start=premium') }}
-                  className="text-[11px] font-black text-duo-yellow underline underline-offset-2 active:opacity-70">
+                  className="text-[11px] font-black text-pwarning underline underline-offset-2 active:opacity-70">
                   {tt('themeGetPremium')}
                 </button>
               </div>
@@ -319,8 +319,8 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       setPicker(null)
                     }}
                     className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
-                      selected ? 'border-duo-green bg-duo-green/15' :
-                      preview === theme.id ? 'border-duo-yellow bg-duo-yellow/10' : 'border-line bg-canvas'
+                      selected ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' :
+                      preview === theme.id ? 'border-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'border-line bg-canvas'
                     }`}
                   >
                     {/* Mini atmosfera preview: fon + karta + aksent */}
@@ -340,7 +340,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                         {theme.label[local.language]}
                       </p>
                       {premiumOnly && (
-                        <p className="text-[11px] text-duo-yellow font-semibold mt-0.5 flex items-center gap-1">
+                        <p className="text-[11px] text-pwarning font-semibold mt-0.5 flex items-center gap-1">
                           <Crown size={11} fill="currentColor" />
                           {preview === theme.id ? tt('themePreviewing') : tt('premiumThemesHint')}
                         </p>
@@ -353,7 +353,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                         </p>
                       )}
                     </div>
-                    {selected && <Check size={18} className="text-duo-green flex-none" />}
+                    {selected && <Check size={18} className="text-pprimary flex-none" />}
                   </button>
                 )
               })}

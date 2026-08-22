@@ -23,9 +23,9 @@ export function FloatingReactionsOverlay({
       {/* Speech bubbles for phrases */}
       {opponentPhrase && (
         <div className="absolute top-20 left-6 max-w-[200px] animate-premiumIn z-50">
-          <div className="relative rounded-2xl bg-duo-purple text-ponprimary px-3.5 py-2 text-xs font-black shadow-xl border border-white/20">
+          <div className="relative rounded-2xl bg-ppurple text-ponprimary px-3.5 py-2 text-xs font-black shadow-xl border border-white/20">
             {opponentPhrase}
-            <div className="absolute -top-1.5 left-4 w-3 h-3 bg-duo-purple rotate-45" />
+            <div className="absolute -top-1.5 left-4 w-3 h-3 bg-ppurple rotate-45" />
           </div>
         </div>
       )}

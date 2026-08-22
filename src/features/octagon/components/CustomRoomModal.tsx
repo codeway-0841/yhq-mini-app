@@ -75,7 +75,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-duo-purple/15 flex items-center justify-center text-duo-purple">
+            <div className="w-8 h-8 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center text-ppurple">
               <Swords size={18} />
             </div>
             <div>
@@ -99,7 +99,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             onClick={() => { setTab('create'); setErrorMsg(null) }}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'create'
-                ? 'bg-duo-purple text-ponprimary shadow-sm'
+                ? 'bg-ppurple text-ponprimary shadow-sm'
                 : 'text-muted hover:text-fg'
             }`}
           >
@@ -111,7 +111,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             onClick={() => { setTab('join'); setErrorMsg(null) }}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'join'
-                ? 'bg-duo-purple text-ponprimary shadow-sm'
+                ? 'bg-ppurple text-ponprimary shadow-sm'
                 : 'text-muted hover:text-fg'
             }`}
           >
@@ -123,7 +123,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         {/* TAB 1: Xona yaratish */}
         {tab === 'create' && (
           <div className="space-y-4 pt-1">
-            <div className="rounded-2xl bg-card border border-duo-purple/30 p-4 text-center space-y-2">
+            <div className="rounded-2xl bg-card border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 text-center space-y-2">
               <span className="text-[11px] font-bold text-muted">{tt('yourRoomPin')}</span>
               <div className="text-3xl font-black font-mono tracking-widest text-pprimary select-all">
                 {formattedCreatedPin}
@@ -135,15 +135,15 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               <button
                 type="button"
                 onClick={handleCopyPin}
-                className="py-2.5 px-3 rounded-xl bg-card border border-line hover:border-duo-purple text-fg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="py-2.5 px-3 rounded-xl bg-card border border-line hover:border-ppurple text-fg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
               >
-                {copied ? <Check size={14} className="text-duo-green" /> : <Copy size={14} />}
+                {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
               </button>
               <button
                 type="button"
                 onClick={handleShare}
-                className="py-2.5 px-3 rounded-xl bg-duo-blue/15 text-duo-blue border border-duo-blue/30 text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
               >
                 <Share2 size={14} />
                 <span>{tt('shareInviteBtn')}</span>
@@ -153,7 +153,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             <button
               type="button"
               onClick={handleStartCreated}
-              className="w-full btn-premium py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 active:scale-95 transition-all"
+              className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 active:scale-95 transition-all"
             >
               <Swords size={16} />
               <span>{tt('startWaitingBtn')}</span>
@@ -176,17 +176,17 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
                   setErrorMsg(null)
                 }}
                 placeholder={tt('pinInputPlaceholder')}
-                className="w-full px-4 py-3 rounded-2xl bg-card border border-line focus:border-duo-purple text-center font-mono text-xl font-black text-fg placeholder:text-muted/40 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-2xl bg-card border border-line focus:border-ppurple text-center font-mono text-xl font-black text-fg placeholder:text-muted/40 focus:outline-none transition-colors"
                 autoFocus
               />
-              {errorMsg && <p className="text-[11px] font-bold text-duo-red text-center">{errorMsg}</p>}
+              {errorMsg && <p className="text-[11px] font-bold text-pdanger text-center">{errorMsg}</p>}
             </div>
 
             <button
               type="button"
               onClick={handleJoinEntered}
               disabled={!inputPin.trim()}
-              className="w-full btn-premium py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
+              className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
             >
               <KeyRound size={16} />
               <span>{tt('joinRoomBtn')}</span>
