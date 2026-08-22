@@ -69,11 +69,9 @@ Medium batch workdir'da, COMMIT QILINMAGAN (davomiylik sessiyasi — quyida baja
 
 ## 🔴 Qolgan HIGH
 
-### H4 — Ball farming (PRODUCT QARORI TALAB — avval variant tanlang)
+### ~~H4 — Ball farming~~ ✅ TUGADI (FIXPLAN #9)
 
-Hozir bir savolga cheksiz javob → total_correct/streak/daily_records (liga balli) oshadi. Re-answer LEGIT (xatolar bo'limi, re-test) — to'liq bloklab bo'lmaydi.
-Variantlar: 1) kunlik kredit `(user,date,subject,question)` — kuniga 1 marta hisob; 2) faqat `daily_records` dedup (liga himoyasi), wrong_by_ticket erkin; 3) hozircha rate-limit+monitoring.
-Joy: `progress.repository.ts` recordAnswer CTE + ehtimol yangi jadval (migratsiya) + security-critical.test.
+Variant 1 (kunlik kredit) tanlandi: `DAILY_ANSWER_CREDIT = 1000` — `progress.repository.ts` recordAnswer CTE'da kunlik javob chegarasi gate qiladi (cap'dan keyin duplicate jimgina no-op). Test: `security-critical.test.ts`.
 
 ### ~~Session token hashing (M10)~~ ✅ TUGADI (Batch 3)
 
