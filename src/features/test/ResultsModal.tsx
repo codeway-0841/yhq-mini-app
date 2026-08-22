@@ -123,10 +123,18 @@ export default function ResultsModal({
     }
   }
 
-  // Natija ochildi — qisqa g'alaba fanfarasi yoki xato tovush
+  // Natija ochildi — g'alaba fanfarasi + tangalar yomg'iri yoki xato tovush
   useEffect(() => {
-    playSound(disqualifiedByCheat ? 'error' : 'win')
-  }, [disqualifiedByCheat])
+    if (disqualifiedByCheat) {
+      playSound('error')
+      haptics.notify('error')
+    } else if (passed) {
+      playSound('win')
+      haptics.notify('success')
+    } else {
+      playSound('click')
+    }
+  }, [disqualifiedByCheat, passed])
 
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title">

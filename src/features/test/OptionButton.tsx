@@ -1,5 +1,7 @@
 import { Check, X } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
+import { playSound } from '../../shared/lib/sounds'
+import { haptics } from '../../platform/haptics'
 
 export type Option = { id: string; text: string }
 
@@ -17,6 +19,14 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
   answered: boolean
   fontSize: string
 }) {
+  const handleClick = () => {
+    if (!answered) {
+      playSound('click')
+      haptics.impact('light')
+      onSelect()
+    }
+  }
+
   const base = cn(
     'mb-2.5 w-full rounded-container border p-3 text-left',
     'transition-[transform,border-color,background-color] duration-[120ms] ease-out',
@@ -48,7 +58,7 @@ export default function OptionButton({ option, state, onSelect, answered, fontSi
     <button
       type="button"
       className={cn(base, style)}
-      onClick={onSelect}
+      onClick={handleClick}
       disabled={answered}
     >
       <div className="flex items-center justify-between gap-2">

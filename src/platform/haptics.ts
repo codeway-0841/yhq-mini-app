@@ -18,12 +18,38 @@ function getHaptics(): HapticFeedback | undefined {
 
 export const haptics = {
   impact(style: HapticStyle = 'light'): void {
-    try { getHaptics()?.impactOccurred(style) } catch { /* not in Telegram */ }
+    const tgHaptics = getHaptics()
+    if (tgHaptics) {
+      try { tgHaptics.impactOccurred(style); return } catch { /* noop */ }
+    }
+    try {
+      if (typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+        const ms = style === 'heavy' ? 30 : style === 'medium' ? 18 : 10
+        navigator.vibrate(ms)
+      }
+    } catch { /* noop */ }
   },
   notify(type: HapticNotification): void {
-    try { getHaptics()?.notificationOccurred(type) } catch { /* not in Telegram */ }
+    const tgHaptics = getHaptics()
+    if (tgHaptics) {
+      try { tgHaptics.notificationOccurred(type); return } catch { /* noop */ }
+    }
+    try {
+      if (typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+        const pattern = type === 'success' ? [12, 35, 18] : type === 'error' ? [25, 40, 25] : [15, 30, 15]
+        navigator.vibrate(pattern)
+      }
+    } catch { /* noop */ }
   },
   select(): void {
-    try { getHaptics()?.selectionChanged() } catch { /* not in Telegram */ }
+    const tgHaptics = getHaptics()
+    if (tgHaptics) {
+      try { tgHaptics.selectionChanged(); return } catch { /* noop */ }
+    }
+    try {
+      if (typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') {
+        navigator.vibrate(8)
+      }
+    } catch { /* noop */ }
   },
 }

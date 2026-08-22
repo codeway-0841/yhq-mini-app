@@ -58,16 +58,59 @@ function tone(freq: number, at: number, dur: number, type: OscillatorType, peak:
   const osc = c.createOscillator()
   const gain = c.createGain()
   osc.type = type
-  osc.frequency.value = freq
+  osc.frequency.setValueAtTime(freq, at)
   gain.gain.setValueAtTime(0.0001, at)
-  gain.gain.exponentialRampToValueAtTime(peak, at + 0.015)
+  gain.gain.exponentialRampToValueAtTime(peak, at + Math.min(0.012, dur * 0.2))
   gain.gain.exponentialRampToValueAtTime(0.0001, at + dur)
   osc.connect(gain).connect(c.destination)
   osc.start(at)
   osc.stop(at + dur + 0.02)
 }
 
-export type SoundKind = 'click' | 'success' | 'error' | 'chime' | 'win' | 'combo' | 'match' | 'toggle' | 'emote_pop' | 'emote_whoosh' | 'emote_splash'
+/** ASMR Kristall "ting" — fundamental nota + shaffof garmonika va yumshoq aks sado */
+function crystalTing(baseFreq: number, at: number, volume = 0.075) {
+  const c = ensureCtx()
+  if (!c) return
+  // 1. Asosiy tiniq nota
+  tone(baseFreq, at, 0.22, 'sine', volume)
+  // 2. Yuqori shaffof kristall garmonika (2.76x)
+  tone(baseFreq * 2.756, at, 0.12, 'sine', volume * 0.45)
+  // 3. Mayin sevinch akkordi (1.335x)
+  tone(baseFreq * 1.335, at + 0.05, 0.26, 'sine', volume * 0.85)
+  // 4. Yuqori oktava aks-sadosi
+  tone(baseFreq * 2.0, at + 0.09, 0.28, 'sine', volume * 0.4)
+}
+
+/** Oltin tangalar yomg'iri (ASMR coin cascade) */
+function coinsCascade(baseFreq: number, at: number) {
+  const freqs = [
+    baseFreq * 1.5,
+    baseFreq * 1.88,
+    baseFreq * 2.25,
+    baseFreq * 2.66,
+    baseFreq * 3.0,
+    baseFreq * 3.55,
+  ]
+  freqs.forEach((f, idx) => {
+    const delay = at + idx * 0.045
+    tone(f, delay, 0.14, 'sine', 0.045)
+    tone(f * 2.4, delay, 0.06, 'triangle', 0.02)
+  })
+}
+
+export type SoundKind =
+  | 'click'
+  | 'success'
+  | 'error'
+  | 'coins'
+  | 'chime'
+  | 'win'
+  | 'combo'
+  | 'match'
+  | 'toggle'
+  | 'emote_pop'
+  | 'emote_whoosh'
+  | 'emote_splash'
 
 /** Master ovoz funksiyasi — barcha UI portlari shu orqali o'ynaydi */
 export function playSound(kind: SoundKind) {
@@ -78,37 +121,38 @@ export function playSound(kind: SoundKind) {
 
   switch (kind) {
     case 'click':
-      // Yumshoq premium "tap"
-      tone(base, t, 0.09, 'sine', 0.05)
+      // Yoqimli shaffof "tap" (ASMR bubble click)
+      tone(base * 1.1, t, 0.035, 'sine', 0.045)
       break
     case 'success':
-      // Yuqoriga ikki nota — yengil sevinch
-      tone(base, t, 0.10, 'sine', 0.06)
-      tone(base * 1.335, t + 0.08, 0.14, 'sine', 0.06)
+      // ✨ Kristall "ting" ovozi — juda yoqimli to'g'ri javob effekti
+      crystalTing(base, t, 0.075)
       break
     case 'error':
-      // Pastga yumshoq signal (qora emas)
-      tone(base * 0.8, t, 0.12, 'triangle', 0.05)
-      tone(base * 0.6, t + 0.07, 0.16, 'triangle', 0.05)
+      // Yumshoq pastki signal (quloqqa botmaydigan)
+      tone(base * 0.75, t, 0.09, 'triangle', 0.045)
+      tone(base * 0.55, t + 0.06, 0.12, 'triangle', 0.04)
+      break
+    case 'coins':
+      // 🪙 Oltin tangalar yomg'iri / tanga yutib olish
+      coinsCascade(base, t)
       break
     case 'chime':
-      // Tema unlock — uch nota portamento'siz
+      // Tema unlock — uch nota
       tone(base, t, 0.12, 'sine', 0.055)
-      tone(base * 1.25, t + 0.09, 0.12, 'sine', 0.055)
-      tone(base * 1.5, t + 0.18, 0.2, 'sine', 0.05)
+      tone(base * 1.25, t + 0.08, 0.12, 'sine', 0.055)
+      tone(base * 1.5, t + 0.16, 0.22, 'sine', 0.05)
       break
     case 'win':
-      // Natija ochildi — qisqa fanfar
-      tone(base, t, 0.12, 'sine', 0.055)
-      tone(base * 1.25, t + 0.1, 0.12, 'sine', 0.055)
-      tone(base * 1.5, t + 0.2, 0.14, 'sine', 0.055)
-      tone(base * 2, t + 0.3, 0.26, 'sine', 0.05)
+      // 🏆 G'alaba tantanasi + oltin tangalar yomg'iri
+      crystalTing(base, t, 0.08)
+      crystalTing(base * 1.25, t + 0.12, 0.08)
+      coinsCascade(base, t + 0.24)
       break
     case 'combo':
-      // 🔥 3+ to'g'ri javob ketma-ketligi — ko'tariladigan to'lqin
-      tone(base * 1.25, t, 0.10, 'sine', 0.06)
-      tone(base * 1.5, t + 0.07, 0.10, 'sine', 0.06)
-      tone(base * 2, t + 0.14, 0.18, 'sine', 0.06)
+      // 🔥 3+ to'g'ri javob ketma-ketligi — shiddatli quvvat akkordi
+      crystalTing(base * 1.25, t, 0.08)
+      crystalTing(base * 1.5, t + 0.08, 0.085)
       break
     case 'match':
       // ⚔ Raqib topildi — "game start" ikki zarb
@@ -117,7 +161,7 @@ export function playSound(kind: SoundKind) {
       break
     case 'toggle':
       // Sozlamalar switch — juda qisqa tick
-      tone(base * 1.5, t, 0.05, 'sine', 0.04)
+      tone(base * 1.6, t, 0.04, 'sine', 0.04)
       break
     case 'emote_pop':
       // 🎭 Jonli smaylik — ASMR pufakcha tovushi
