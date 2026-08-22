@@ -1,7 +1,7 @@
 /**
  * Shaxsiy statistika — katta raqamlar + haftalik faollik grafigi + zaif mavzular.
  * Ma'lumotlar: daily history API (server) + wrongByTicket (zaif savollar).
- * Dizayn: v2 premium (card-premium, aksent barlar, Inter).
+ * Dizayn: v2 premium (rounded-container border border-pline bg-pcard, aksent barlar, Inter).
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -97,7 +97,7 @@ export default function StatistikaPage() {
           <ChevronLeft size={24} />
         </button>
         <BarChart2 size={18} className="text-ppurple" />
-        <h1 className="text-lg font-bold tracking-tight">
+        <h1 className="text-lg font-semibold tracking-tight">
           {lang === 'ru' ? 'Статистика' : 'Statistika'}
         </h1>
       </div>
@@ -110,13 +110,13 @@ export default function StatistikaPage() {
           { icon: TrendingUp, color: 'var(--p-primary)', value: `${level}`, label: 'Level' },
           { icon: Target,  color: 'var(--p-blue)', value: `${accuracy}%`,    label: lang === 'ru' ? 'точность' : 'aniqlik' },
         ].map((c, i) => (
-          <div key={i} className="card-premium p-4 flex items-center gap-3">
+          <div key={i} className="rounded-container border border-pline bg-pcard p-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"
               style={{ background: `color-mix(in srgb, ${c.color} 12%, transparent)`, border: `1px solid color-mix(in srgb, ${c.color} 30%, transparent)` }}>
               <c.icon size={18} style={{ color: c.color }} />
             </div>
             <div>
-              <p className="text-[19px] font-bold tracking-tight tabular-nums leading-none">{c.value}</p>
+              <p className="text-[19px] font-semibold tracking-tight tabular-nums leading-none">{c.value}</p>
               <p className="text-[10.5px] text-psubtle mt-1">{c.label}</p>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function StatistikaPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? `Неделя · ${weekTotal} вопросов` : `Hafta · ${weekTotal} savol`}
       </p>
-      <div className="mx-5 card-premium p-5">
+      <div className="mx-5 rounded-container border border-pline bg-pcard p-5">
         <div className="flex items-end justify-between gap-2 h-28">
           {week.map((r) => {
             const pct = r.answered / maxAnswered
@@ -141,7 +141,6 @@ export default function StatistikaPage() {
                     style={{
                       height: `${Math.max(pct * 100, r.answered > 0 ? 6 : 0)}%`,
                       background: r.answered > 0 ? 'var(--p-primary)' : 'transparent',
-                      boxShadow: r.answered > 0 ? '0 0 10px var(--p-glow)' : undefined,
                     }} />
                 </div>
                 <span className="text-[9.5px] font-semibold text-psubtle">
@@ -160,17 +159,17 @@ export default function StatistikaPage() {
             <HeartCrack size={11} className="text-pdanger" />
             {lang === 'ru' ? 'Слабые темы' : 'Zaif mavzular'}
           </p>
-          <div className="card-premium mx-5 divide-y divide-pline">
+          <div className="rounded-container border border-pline bg-pcard mx-5 divide-y divide-pline">
             {weakTopics.map(({ topic, ids }) => (
               <button key={topic!.id} onClick={() => practiceWeak(ids, lang === 'ru' ? topic!.nameRu : topic!.nameUz)}
-                className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-elevated transition-colors">
+                className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors">
                 <span className="flex-1 text-[13px] font-semibold text-pfg truncate">
                   {lang === 'ru' ? topic!.nameRu : topic!.nameUz}
                 </span>
-                <span className="bg-duo-red/15 border border-duo-red/40 text-duo-red text-[11px] font-bold px-2 py-0.5 rounded-full flex-shrink-0">
+                <span className="bg-pdanger/15 border border-pdanger/40 text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
                   {ids.length}
                 </span>
-                <span className="text-[11px] font-bold text-psubtle flex-shrink-0">
+                <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">
                   {lang === 'ru' ? 'Повторить' : 'Takrorlash'} ›
                 </span>
               </button>
@@ -180,9 +179,9 @@ export default function StatistikaPage() {
       )}
 
       {/* Umumiy */}
-      <div className="mx-5 mt-4 card-premium p-4 flex items-center justify-between text-[12px]">
+      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard p-4 flex items-center justify-between text-[12px]">
         <span className="text-psubtle">{lang === 'ru' ? 'Всего ответов' : 'Jami javoblar'}</span>
-        <span className="font-bold tabular-nums">
+        <span className="font-semibold tabular-nums">
           <span className="text-psuccess">{totalCorrect}</span> / <span className="text-pdanger">{totalWrong}</span>
         </span>
       </div>

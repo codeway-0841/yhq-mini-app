@@ -11,7 +11,7 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { HeartCrack, Play, ChevronRight, Flame } from 'lucide-react'
+import { HeartCrack, Play, ChevronRight, Flame, ChevronLeft } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -78,37 +78,39 @@ export default function XatolarPage() {
     <div className="px-4 pt-4 pb-8">
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="text-subtle hover:text-fg text-xl px-1 transition-colors">←</button>
-        <h1 className="text-xl font-black">{tt('mistakesTitle')}</h1>
+          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
+        </button>
+        <h1 className="text-xl font-semibold">{tt('mistakesTitle')}</h1>
       </div>
 
       {/* Bo'sh holat */}
       {total === 0 && (
-        <div className="card-neon p-8 flex flex-col items-center text-center">
-          <div className="w-16 h-16 rounded-2xl bg-duo-green/15 border border-duo-green/40 flex items-center justify-center mb-4">
-            <HeartCrack size={30} className="text-duo-green" />
+        <div className="rounded-container border border-pline bg-pcard p-8 flex flex-col items-center text-center">
+          <div className="w-16 h-16 rounded-container bg-pprimary/15 border border-pprimary/40 flex items-center justify-center mb-4">
+            <HeartCrack size={30} className="text-pprimary" />
           </div>
-          <p className="text-[17px] font-black text-fg">{tt('mistakesEmptyTitle')}</p>
-          <p className="text-[12px] text-subtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
+          <p className="text-[17px] font-semibold text-pfg">{tt('mistakesEmptyTitle')}</p>
+          <p className="text-[12px] text-psubtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
         </div>
       )}
 
       {total > 0 && (
         <>
           {/* Umumiy holat + "Barchasini mashq qilish" */}
-          <div className="card-neon p-4 mb-4">
+          <div className="rounded-container border border-pline bg-pcard p-4 mb-4">
             <div className="flex items-center gap-3 mb-3.5">
-              <div className="w-11 h-11 rounded-xl bg-duo-red/15 border border-duo-red/40 flex items-center justify-center flex-shrink-0">
-                <HeartCrack size={20} className="text-duo-red" />
+              <div className="w-11 h-11 rounded-control bg-pdanger/15 border border-pdanger/40 flex items-center justify-center flex-shrink-0">
+                <HeartCrack size={20} className="text-pdanger" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[24px] font-black text-fg leading-none">{total}</p>
-                <p className="text-[11px] text-subtle mt-1">{total} {tt('unansweredWord')}</p>
+                <p className="text-[24px] font-semibold text-pfg leading-none">{total}</p>
+                <p className="text-[11px] text-psubtle mt-1">{total} {tt('unansweredWord')}</p>
               </div>
             </div>
             <button onClick={() => startPractice(wrongQuestions.map((q) => q.id), tt('fixMistakes'))}
-              className="btn-neon w-full py-3.5 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
-              <Play size={16} fill="currentColor" />
+              className="btn-neon w-full py-3.5 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+              <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
             </button>
           </div>
@@ -116,32 +118,32 @@ export default function XatolarPage() {
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
             <button onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
-              className="card-neon w-full p-4 mb-4 flex items-center gap-3 text-left active:scale-[0.98] transition-transform">
-              <div className="w-11 h-11 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
-                <Sparkles size={20} className="text-duo-yellow" />
+              className="rounded-container border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 text-left active:scale-[0.98] transition-transform">
+              <div className="w-11 h-11 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
+                <Sparkles size={20} className="text-pwarning" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-black text-fg">{tt('premiumMistakesTitle')}</p>
-                <p className="text-[11px] text-subtle mt-1 leading-snug">{tt('premiumMistakesDesc')}</p>
+                <p className="text-[14px] font-semibold text-pfg">{tt('premiumMistakesTitle')}</p>
+                <p className="text-[11px] text-psubtle mt-1 leading-snug">{tt('premiumMistakesDesc')}</p>
               </div>
-              <span className="bg-duo-yellow text-black text-[11px] font-black px-3 py-1.5 rounded-xl flex-shrink-0">
+              <span className="bg-pwarning text-black text-[11px] font-semibold px-3 py-1.5 rounded-control flex-shrink-0">
                 ⭐250
               </span>
             </button>
           )}
           {isPremium && byTopic.length > 0 && (
             <>
-              <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
-              <div className="card-neon overflow-hidden mb-4">
+              <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
+              <div className="rounded-container border border-pline bg-pcard overflow-hidden mb-4">
                 {byTopic.map((g, i) => (
                   <button key={g.topicId} onClick={() => startPractice(g.ids, g.name)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 text-left active:bg-elevated transition-colors ${
-                      i > 0 ? 'border-t border-line/50' : ''}`}>
-                    <span className="flex-1 text-[13px] font-semibold text-fg truncate">{g.name}</span>
-                    <span className="bg-duo-red/15 border border-duo-red/40 text-duo-red text-[11px] font-bold px-2 py-0.5 rounded-full flex-shrink-0">
+                    className={`w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors ${
+                      i > 0 ? 'border-t border-pline/50' : ''}`}>
+                    <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
+                    <span className="bg-pdanger/15 border border-pdanger/40 text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
                       {g.ids.length}
                     </span>
-                    <span className="text-[11px] font-bold text-subtle flex-shrink-0">{tt('practiceWord')} ›</span>
+                    <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">{tt('practiceWord')} ›</span>
                   </button>
                 ))}
               </div>
@@ -151,25 +153,25 @@ export default function XatolarPage() {
           {/* Top-10 eng qiyin savollar */}
           {isPremium && topHard.length > 0 && (
             <>
-              <p className="text-[10px] font-bold text-subtle uppercase tracking-[0.12em] mb-1.5 flex items-center gap-1.5">
-                <Flame size={11} className="text-duo-yellow" />
+              <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5 flex items-center gap-1.5">
+                <Flame size={11} className="text-pwarning" />
                 {tt('topMistakes')}
               </p>
               <div className="flex flex-col gap-2">
                 {topHard.map(({ q, count }, i) => (
                   <button key={q.id} onClick={() => startPractice([q.id], tt('topMistakes'))}
-                    className="card-neon p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform">
-                    <span className="w-6 text-center text-[12px] font-black text-subtle flex-shrink-0 tabular-nums">
+                    className="rounded-container border border-pline bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform">
+                    <span className="w-6 text-center text-[12px] font-semibold text-psubtle flex-shrink-0 tabular-nums">
                       {i + 1}
                     </span>
-                    <span className="flex-1 min-w-0 text-[12px] font-semibold text-fg leading-snug"
+                    <span className="flex-1 min-w-0 text-[12px] font-semibold text-pfg leading-snug"
                       style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                       {q.text}
                     </span>
-                    <span className="bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[11px] font-bold px-2 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-pwarning/15 border border-pwarning/40 text-pwarning text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
                       {count} {tt('timesWord')}
                     </span>
-                    <ChevronRight size={15} className="text-lineStrong flex-shrink-0" />
+                    <ChevronRight size={15} className="text-psubtle flex-shrink-0" />
                   </button>
                 ))}
               </div>

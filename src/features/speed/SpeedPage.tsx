@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { X, Zap } from 'lucide-react'
+import { X, Zap, Check } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { haptics } from '../../platform/haptics'
@@ -141,11 +141,12 @@ export default function SpeedPage() {
           <X size={20} />
         </button>
         <div className="flex items-center gap-2">
-          <Zap size={15} className="text-pwarning" fill="currentColor" />
-          <span className="text-sm font-bold">Speed Round</span>
+          <Zap size={15} strokeWidth={1.75} className="text-pwarning" />
+          <span className="text-sm font-semibold">Speed Round</span>
         </div>
-        <span className="text-xs font-bold text-pmuted tabular-nums">
-          ✓ {score} · {idx + 1}/{qs.length}
+        <span className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums text-pmuted">
+          <Check size={12} strokeWidth={2} />
+          {score} · {idx + 1}/{qs.length}
         </span>
       </div>
 
@@ -170,7 +171,7 @@ export default function SpeedPage() {
         </p>
         <p className="text-base font-semibold leading-snug mb-4 text-center">{q.text}</p>
         {q.image && (
-          <div className="rounded-xl overflow-hidden mb-4 border border-pline flex items-center justify-center bg-elevated">
+          <div className="rounded-control overflow-hidden mb-4 border border-pline flex items-center justify-center bg-psurface">
             <img src={q.image} alt="savol" loading="lazy"
               className="max-w-full max-h-[40vh] w-auto h-auto object-contain" />
           </div>
@@ -180,27 +181,27 @@ export default function SpeedPage() {
           const isChoice = selected === opt.id
           const showResult = answered && !busy
           const style =
-            !showResult && isChoice ? 'bg-duo-blue/10 border-duo-blue/60 border-2 text-pfg animate-pulse' :
-            !showResult            ? 'bg-surface border-pline text-pfg hover:border-pline/80 hover:bg-elevated/60 active:scale-[0.98]' :
-            isRight                ? 'bg-duo-green/15 border-duo-green text-pfg' :
-            isChoice               ? 'bg-duo-red/15 border-duo-red text-duo-red' :
-                                     'bg-surface border-pline text-pmuted'
+            !showResult && isChoice ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-pblue border-2 text-pfg motion-safe:animate-pulse' :
+            !showResult            ? 'bg-psurface border-pline text-pfg hover:border-pline/80 hover:bg-psurface/60 active:scale-[0.98]' :
+            isRight                ? 'bg-pprimary/15 border-pprimary text-pfg' :
+            isChoice               ? 'bg-pdanger/15 border-pdanger text-pdanger' :
+                                     'bg-psurface border-pline text-pmuted'
           return (
             <button key={`${q.id}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}
-              className={`w-full text-left rounded-xl border-2 p-3.5 mb-2 transition-all focus:outline-none ${style}`}>
+              className={`w-full text-left rounded-control border-2 p-3.5 mb-2 transition-all focus:outline-none ${style}`}>
               <div className="flex items-center gap-3">
-                <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-bold opacity-60 flex-shrink-0">
+                <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-semibold opacity-60 flex-shrink-0">
                   {opt.id}
                 </span>
                 <span className="text-sm">{opt.text}</span>
-                {showResult && isRight && <span className="ml-auto text-duo-green font-black">✓</span>}
-                {showResult && isChoice && revealed !== null && !isRight && <span className="ml-auto font-black">✗</span>}
+                {showResult && isRight && <Check size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pprimary" />}
+                {showResult && isChoice && revealed !== null && !isRight && <X size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pdanger" />}
               </div>
             </button>
           )
         })}
         {answered && selected === '__timeout__' && (
-          <p className="text-center text-[12px] text-pdanger font-bold mt-2 animate-premiumIn">
+          <p className="text-center text-[12px] text-pdanger font-semibold mt-2 animate-premiumIn">
             ⏱ {lang === 'ru' ? 'Время вышло!' : 'Vaqt tugadi!'}
           </p>
         )}

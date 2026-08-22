@@ -7,7 +7,7 @@
 import { useMemo, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { X, Search, BookOpen, ListChecks } from 'lucide-react'
+import { X, Search, BookOpen, ListChecks, ChevronLeft } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
@@ -55,19 +55,21 @@ export default function SearchPage() {
       {/* Header: back + input */}
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="text-muted hover:text-fg text-xl px-1 transition-colors">←</button>
-        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-line bg-surface px-3.5">
-          <Search size={16} className="text-muted flex-shrink-0" />
+          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
+        </button>
+        <div className="flex-1 flex items-center gap-2 rounded-container border border-pline bg-psurface px-3.5">
+          <Search size={16} className="text-pmuted flex-shrink-0" />
           <input
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchPlaceholder')}
-            className="flex-1 bg-transparent py-3 text-sm outline-none placeholder:text-subtle"
+            className="flex-1 bg-transparent py-3 text-sm outline-none placeholder:text-psubtle"
           />
           {query && (
             <button onClick={() => setQuery('')} aria-label={tt('backWord')}
-              className="text-muted hover:text-fg p-1">
+              className="text-pmuted hover:text-pfg p-1">
               <X size={16} />
             </button>
           )}
@@ -76,15 +78,15 @@ export default function SearchPage() {
 
       {/* Bo'sh natija */}
       {isEmpty && (
-        <p className="text-center text-sm text-muted py-16">{tt('searchNoResults')}</p>
+        <p className="text-center text-sm text-pmuted py-16">{tt('searchNoResults')}</p>
       )}
 
       {/* Savollar bo'limi */}
       {hasAny && results.questions.length > 0 && (
         <div className="mb-5">
           <div className="flex items-center gap-2 mb-2">
-            <ListChecks size={15} className="text-muted" />
-            <p className="text-xs font-black uppercase tracking-wide text-muted">
+            <ListChecks size={15} className="text-pmuted" />
+            <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
               {tt('searchQuestionsSection')} · {results.questions.length}
             </p>
           </div>
@@ -93,13 +95,13 @@ export default function SearchPage() {
               <button
                 key={h.question.id}
                 onClick={() => openQuestion(h.question.id, h.question.text)}
-                className="w-full text-left card-premium rounded-2xl p-3.5 active:scale-[0.99] transition-transform"
+                className="w-full text-left rounded-container border border-pline bg-pcard rounded-container p-3.5 active:scale-[0.99] transition-transform"
               >
-                <p className="text-sm font-semibold text-fg leading-snug line-clamp-2 mb-1.5">
+                <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
                   {h.question.text}
                 </p>
                 {h.topicName && (
-                  <span className="text-[10.5px] font-bold text-muted bg-elevated px-2 py-0.5 rounded-full">
+                  <span className="text-[10.5px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-full">
                     {h.topicName}
                   </span>
                 )}
@@ -113,8 +115,8 @@ export default function SearchPage() {
       {hasAny && results.lessons.length > 0 && (
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <BookOpen size={15} className="text-muted" />
-            <p className="text-xs font-black uppercase tracking-wide text-muted">
+            <BookOpen size={15} className="text-pmuted" />
+            <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
               {tt('searchLessonsSection')} · {results.lessons.length}
             </p>
           </div>
@@ -123,11 +125,11 @@ export default function SearchPage() {
               <button
                 key={`${h.moduleId}:${h.lessonIdx}`}
                 onClick={() => openLesson(h.moduleId, h.lessonIdx)}
-                className="w-full text-left card-premium rounded-2xl p-3.5 active:scale-[0.99] transition-transform"
+                className="w-full text-left rounded-container border border-pline bg-pcard rounded-container p-3.5 active:scale-[0.99] transition-transform"
               >
-                <p className="text-sm font-bold text-fg mb-0.5">{h.title}</p>
-                <p className="text-[11px] font-bold text-ppurple mb-1">{h.moduleTitle}</p>
-                <p className="text-xs text-muted leading-snug line-clamp-2">{h.snippet}</p>
+                <p className="text-sm font-semibold text-pfg mb-0.5">{h.title}</p>
+                <p className="text-[11px] font-semibold text-ppurple mb-1">{h.moduleTitle}</p>
+                <p className="text-xs text-pmuted leading-snug line-clamp-2">{h.snippet}</p>
               </button>
             ))}
           </div>
