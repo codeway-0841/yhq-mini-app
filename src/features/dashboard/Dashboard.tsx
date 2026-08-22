@@ -225,13 +225,16 @@ export default function Dashboard() {
           />
 
           {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
-          <button
-            onClick={() => navigate('/qidiruv')}
-            className="mx-5 mb-6 flex items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
-          >
-            <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
-            <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
-          </button>
+          <div className="mx-5 mb-6">
+            <button
+              type="button"
+              onClick={() => navigate('/qidiruv')}
+              className="flex w-full items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+            >
+              <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
+              <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
+            </button>
+          </div>
 
           {/* 2. Today's Progress */}
           <ProgressCard
