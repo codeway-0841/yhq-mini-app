@@ -1,10 +1,12 @@
 import { memo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Settings, Coins } from 'lucide-react'
+import { Settings, Coins, Sun, Moon } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { Button } from '../../../shared/components/ui/button'
+import { playSound } from '../../../shared/lib/sounds'
+import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
@@ -52,8 +54,24 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const coins = useAppStore((s) => s.coins)
+  const theme = useAppStore((s) => s.settings.theme)
+  const updateSettings = useAppStore((s) => s.updateSettings)
   const navigate = useNavigate()
   const name = displayName ?? user?.firstName ?? tt('guestName')
+
+  // Dark / Light rejimini bir bosishda almashtirish
+  const toggleTheme = () => {
+    playSound('toggle')
+    haptics.impact('light')
+    const currentIsDark =
+      theme === 'dark' ||
+      (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    updateSettings({ theme: currentIsDark ? 'light' : 'dark' })
+  }
+
+  const isDark =
+    theme === 'dark' ||
+    (theme === 'system' && typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches)
 
   return (
     <div className="flex items-center justify-between gap-3 px-5 pb-4 pt-6">
@@ -93,6 +111,21 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
           <Coins size={13} strokeWidth={1.75} />
           {coins >= 1000 ? `${(coins / 1000).toFixed(1).replace('.', ',')}k` : coins}
         </button>
+
+        {/* Dark / Light rejim toggle tugmasi */}
+        <Button
+          variant="ghost"
+          size="icon-sm"
+          onClick={toggleTheme}
+          aria-label={isDark ? 'Light mode' : 'Dark mode'}
+          className="size-8 text-pmuted hover:text-pfg transition-transform active:scale-90"
+        >
+          {isDark ? (
+            <Moon size={16} strokeWidth={1.75} className="text-pblue" />
+          ) : (
+            <Sun size={16} strokeWidth={1.75} className="text-pwarning" />
+          )}
+        </Button>
 
         <Button
           variant="ghost"
