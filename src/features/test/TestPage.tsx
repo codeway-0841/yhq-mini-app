@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn } from 'lucide-react'
+import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Coins, Sparkles, Check } from 'lucide-react'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -489,14 +489,14 @@ export default function TestPage() {
   if (!q) {
     if (questionsLoading || !questionsLoaded) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-muted gap-3">
-          <div className="w-8 h-8 rounded-full border-2 border-duo-green border-t-transparent animate-spin" />
+        <div className="flex flex-col items-center justify-center min-h-screen text-pmuted gap-3">
+          <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
           <p className="text-sm font-semibold">{tt('loadingDots')}</p>
         </div>
       )
     }
     return (
-      <div className="flex items-center justify-center min-h-screen text-muted">{tt('notFoundQ')}</div>
+      <div className="flex items-center justify-center min-h-screen text-pmuted">{tt('notFoundQ')}</div>
     )
   }
 
@@ -510,78 +510,78 @@ export default function TestPage() {
   })()
 
   return (
-    <div className="flex flex-col min-h-screen bg-canvas">
-      <div className="relative flex items-center justify-between px-4 py-3 border-b border-line">
+    <div className="flex flex-col min-h-screen bg-pcanvas">
+      <div className="relative flex items-center justify-between px-4 py-3 border-b border-pline">
         <div className="flex items-center gap-2">
           <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
-            className={`btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center text-lg ${confirmExit ? 'text-duo-red' : ''}`}>
-            {confirmExit ? '✕' : '←'}
+            className={`grid size-9 place-items-center rounded-control border border-plineStrong bg-psurface transition-colors duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
+            {confirmExit
+              ? <X size={17} strokeWidth={1.75} />
+              : <ChevronLeft size={18} strokeWidth={1.75} />}
           </button>
           <button onClick={() => toggleSaved(q.id)}
             aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-            className={`btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold ${isSaved ? 'text-duo-yellow' : ''}`}>
+            className={`btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold ${isSaved ? 'text-pwarning' : ''}`}>
             <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
             aria-label={tt('shareApp')}
-            className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-xl text-[13px] font-extrabold">
+            className="btn-3d-ghost flex items-center gap-1.5 px-3 py-2 rounded-control text-[13px] font-semibold">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
         </div>
 
-        <div className="card-neon flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl min-w-[75px] sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-[0_0_14px_rgba(59,130,246,0.20)]" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
-          <span className="text-neon-yellow text-sm flex-shrink-0" aria-hidden="true">⏱</span>
-          <span className="font-mono font-black text-sm text-fg whitespace-nowrap">{timer}</span>
+        <div className="flex min-w-[75px] items-center gap-1.5 rounded-control border border-plineStrong bg-psurface px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+          <Timer size={14} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" aria-hidden="true" />
+          <span className="whitespace-nowrap text-sm font-semibold tabular-nums text-pfg">{timer}</span>
         </div>
 
         {/* Mock imtihon: xatolar hisoblagichi (2 ta = yiqildingiz) */}
         {mode === 'mock' && (
-          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl border ${
-            wrongCount > 0 ? 'border-duo-red/60 bg-duo-red/10 text-duo-red' : 'border-line text-subtle'
+          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-control border ${
+            wrongCount > 0 ? 'border-pdanger/60 bg-pdanger/10 text-pdanger' : 'border-pline text-psubtle'
           }`}>
-            <span className="text-[12px] font-black">✗ {wrongCount}/2</span>
+            <X size={12} strokeWidth={2} aria-hidden="true" />
+            <span className="text-[12px] font-semibold tabular-nums">{wrongCount}/2</span>
           </div>
         )}
 
         <div className="flex items-center gap-2">
           {isFinished && (
             <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
+              className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
               <BarChart2 size={17} />
             </button>
           )}
           <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-            className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
+            className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
             <Settings size={17} />
           </button>
           <button
             onClick={() => { setIsFinished(true); setShowResults(true) }}
             aria-label="Testni yakunlash"
-            className="btn-3d-ghost w-9 h-9 rounded-xl flex items-center justify-center">
+            className="btn-3d-ghost w-9 h-9 rounded-control flex items-center justify-center">
             <Flag size={16} />
           </button>
         </div>
       </div>
 
       {toast && (
-        <div className="mx-4 mt-2 bg-orange-500/10 border border-orange-500/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl text-center">
-          ⚠️ {toast}
+        <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-center text-[12.5px] font-medium text-pfg">
+          <AlertTriangle size={14} strokeWidth={1.75} className="flex-none text-pwarning" aria-hidden="true" />
+          {toast}
         </div>
       )}
 
-      {/* 🪙 #40: mint bo'lgan tanga — suzuvchi pop (CSS animatsiya, 1.2s) */}
+      {/* #40: mint bo'lgan tanga — suzuvchi pop (CSS animatsiya, 1.2s) */}
       {coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
-          <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-[13px] font-black text-pgold"
-            style={{
-              background: 'rgb(var(--p-gold-rgb) / 0.14)',
-              border: '1px solid rgb(var(--p-gold-rgb) / 0.5)',
-              boxShadow: '0 4px 18px rgb(var(--p-gold-rgb) / 0.35)',
-            }}>
-            🪙 +1
+          <span className="inline-flex items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.14)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold">
+            <Coins size={13} strokeWidth={1.75} />
+            +1
           </span>
         </div>
       )}
@@ -592,7 +592,7 @@ export default function TestPage() {
         <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
           <div className="lg:col-start-1 lg:row-start-1">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-              <p className="text-xs text-muted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
+              <p className="text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
                 {current + 1} / {activeQuestions.length}
                 {topicLabel ? ` · ${topicLabel}` : ''}
               </p>
@@ -604,13 +604,13 @@ export default function TestPage() {
                   playSound('click')
                 }}
                 aria-label={settings?.language === 'ru' ? 'Озвучить вопрос' : "Savolni o'qib berish"}
-                className="w-6 h-6 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg active:scale-90 transition-all"
+                className="grid size-7 place-items-center rounded-full border border-pline bg-psurface text-pmuted transition-colors duration-[120ms] ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
               >
-                <Volume2 size={12} />
+                <Volume2 size={13} strokeWidth={1.75} />
               </button>
             </div>
-            <p className={`text-center lg:text-left font-semibold mb-4 leading-snug ${
-              fontSize === 'small' ? 'text-sm' : fontSize === 'large' ? 'text-xl' : 'text-base'
+            <p className={`mb-4 text-center font-display font-semibold leading-snug tracking-[-0.015em] text-pfg lg:text-left ${
+              fontSize === 'small' ? 'text-[15px]' : fontSize === 'large' ? 'text-[21px]' : 'text-[18px]'
             }`}>
               {q.text}
             </p>
@@ -619,7 +619,7 @@ export default function TestPage() {
               {selected && explanation && (
                 <button onClick={() => setShowExplain(true)}
                   aria-label={tt('whyThis')}
-                  className="flex items-center gap-1.5 bg-duo-yellow/15 border border-duo-yellow/40 text-duo-yellow text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
+                  className="flex h-[34px] items-center gap-1.5 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
                   <Info size={14} aria-hidden="true" />
                   {tt('whyThis')}
                 </button>
@@ -628,8 +628,8 @@ export default function TestPage() {
               {selected && (
                 <button onClick={() => setShowAiTutor(true)}
                   aria-label={tt('askAiExplain')}
-                  className="flex items-center gap-1.5 bg-duo-purple/15 border border-duo-purple/40 text-duo-purple text-[12px] font-bold px-3.5 py-2 rounded-xl active:scale-95 transition-transform">
-                  <span aria-hidden="true">✨</span> {tt('askAiExplain')}
+                  className="flex h-[34px] items-center gap-1.5 rounded-control border border-[rgb(var(--p-purple-rgb)/0.30)] bg-[rgb(var(--p-purple-rgb)/0.12)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+                  <Sparkles size={13} strokeWidth={1.75} aria-hidden="true" /> {tt('askAiExplain')}
                 </button>
               )}
             </div>
@@ -638,7 +638,7 @@ export default function TestPage() {
             /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
                kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
                rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
-            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 border border-line cursor-zoom-in flex items-center justify-center bg-elevated relative group active:scale-[0.99] transition-transform"
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-container overflow-hidden mb-4 border border-pline cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform"
               onClick={() => {
                 setZoomed(true)
                 haptics.impact('light')
@@ -649,8 +649,8 @@ export default function TestPage() {
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="lazy"
                 className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
-              <div className="absolute top-2.5 right-2.5 bg-black/70 backdrop-blur-md text-white border border-white/20 text-[10px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 shadow-lg pointer-events-none group-hover:bg-black/85 transition-all">
-                <ZoomIn size={11} className="text-duo-purple" />
+              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full border border-white/20 bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-black/85">
+                <ZoomIn size={11} strokeWidth={1.75} />
                 <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
               </div>
             </div>
@@ -672,13 +672,13 @@ export default function TestPage() {
         {(isLast || allAnswered) ? (
           <button onClick={handleYakunlash}
             aria-label={tt('finish')}
-            className="btn-neon flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-black">
-            <span aria-hidden="true">✓</span> {tt('finish')}
+            className="btn-neon flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold">
+            <Check size={15} strokeWidth={2} aria-hidden="true" /> {tt('finish')}
           </button>
         ) : (
           <button onClick={handleStudyToggle}
             aria-label={studyOpen ? tt('closeStudy') : tt('study')}
-            className="btn-3d-ghost flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-extrabold">
+            className="btn-3d-ghost flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-semibold">
             {studyOpen
               ? (<><X size={15} aria-hidden="true" />{tt('study')}</>)
               : (<><GraduationCap size={16} aria-hidden="true" />{tt('study')}</>)}
@@ -718,27 +718,27 @@ export default function TestPage() {
       {/* "Nega shunday?" — modda izohi (bottom sheet) */}
       {showExplain && explanation && (
         <DialogOverlay onClose={() => setShowExplain(false)} labelId="explain-title">
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-5 pb-8"
+          <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8"
             onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-9 h-9 rounded-xl bg-duo-yellow/15 border border-duo-yellow/40 flex items-center justify-center flex-shrink-0">
-                <Info size={17} className="text-duo-yellow" />
+              <div className="w-9 h-9 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
+                <Info size={17} className="text-pwarning" />
               </div>
-              <p id="explain-title" className="text-[15px] font-black text-fg">
+              <p id="explain-title" className="text-[15px] font-semibold text-pfg">
                 {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
               </p>
             </div>
             {(settings?.language === 'ru' ? explanation.lesson.bodyRu : explanation.lesson.bodyUz)
               .slice(0, 3).map((p, i) => (
-                <p key={i} className="text-[13px] text-muted leading-relaxed mb-2">{p}</p>
+                <p key={i} className="text-[13px] text-pmuted leading-relaxed mb-2">{p}</p>
               ))}
             <button
               onClick={() => {
                 setShowExplain(false)
                 navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
               }}
-              className="btn-neon w-full mt-2 py-3 rounded-2xl font-black text-[14px] flex items-center justify-center gap-2">
+              className="btn-neon w-full mt-2 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2">
               <GraduationCap size={16} />
               {tt('openModule')}
             </button>

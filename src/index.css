@@ -333,6 +333,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
   --p-purple:      #8b7fd4;   /* AI/Premium — ba'zi temalar override qiladi */
   --p-purple-rgb:  139 127 212;
   --p-blue:        #4a90d9;
+  --p-blue-rgb:    74 144 217;
   --p-gold:        #d9a441;   /* Premium oltin — gradient jufti + ustidagi matn bilan birga */
   --p-gold-rgb:    217 164 65;
   --p-gold-deep:   #b8862c;
@@ -407,6 +408,7 @@ body[data-theme='light'] {
   --p-purple:      #6d5bc4;
   --p-purple-rgb:  109 91 196;
   --p-blue:        #2563eb;
+  --p-blue-rgb:    37 99 235;
   --p-gold:        #b8862c;
   --p-gold-rgb:    184 134 44;
   --p-gold-deep:   #966d1f;

@@ -4,7 +4,7 @@
  *  v2.1: animatsiyali arc + count-up foiz (premium reward tuyg'usi). */
 import { useEffect, useState } from 'react'
 
-export default function DonutChart({ correct, total, threshold = 90, hideVerdict = false, passedLabel = "O'tdi ✓", failedLabel = "O'tmadi ✗" }: {
+export default function DonutChart({ correct, total, threshold = 90, hideVerdict = false, passedLabel = "O'tdi", failedLabel = "O'tmadi" }: {
   correct: number; total: number; threshold?: number
   /** Rasmiy preset rejimda mezon yo'q — foiz neytral rangda, verdict ko'rinmaydi */
   hideVerdict?: boolean
@@ -59,11 +59,11 @@ export default function DonutChart({ correct, total, threshold = 90, hideVerdict
         )}
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className={`text-4xl font-black tabular-nums ${
-          hideVerdict ? 'text-fg' : passed ? 'text-duo-green' : 'text-duo-red'
+        <span className={`text-4xl font-semibold tabular-nums ${
+          hideVerdict ? 'text-pfg' : passed ? 'text-pprimary' : 'text-pdanger'
         }`}>{shownPct}%</span>
         {!hideVerdict && (
-          <span className="text-sm font-bold mt-0.5 text-subtle">
+          <span className="text-sm font-semibold mt-0.5 text-psubtle">
             {passed ? passedLabel : failedLabel}
           </span>
         )}
