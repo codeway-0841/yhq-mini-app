@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Eye, EyeOff } from 'lucide-react'
+import { Eye, EyeOff, Check, Circle } from 'lucide-react'
 
 interface PasswordInputProps {
   value: string
@@ -43,13 +43,13 @@ export default function PasswordInput({
   const hasNumber = /\d/.test(value)
 
   const inputCls =
-    'w-full bg-elevated border border-line rounded-xl pl-3.5 pr-12 py-3 text-[15px] text-fg ' +
-    'placeholder:text-muted outline-none focus:border-duo-green transition-colors'
+    'w-full bg-psurface border border-pline rounded-control pl-3.5 pr-12 py-3 text-[15px] text-pfg ' +
+    'placeholder:text-pmuted outline-none focus:border-pprimary transition-colors'
 
   return (
     <div className="flex flex-col gap-2">
       {label && (
-        <label htmlFor={id} className="text-[11px] font-bold text-muted uppercase tracking-wide">
+        <label htmlFor={id} className="text-[11px] font-semibold text-pmuted uppercase tracking-wide">
           {label}
         </label>
       )}
@@ -71,13 +71,13 @@ export default function PasswordInput({
           type="button"
           onClick={() => setVisible(!visible)}
           disabled={disabled}
-          className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 hover:bg-line/50 rounded-lg transition-colors"
+          className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 hover:bg-plineStrong/50 rounded-lg transition-colors"
           aria-label={visible ? 'Parolni yashirish' : "Parolni ko'rsatish"}
         >
           {visible ? (
-            <EyeOff className="w-5 h-5 text-muted" />
+            <EyeOff className="w-5 h-5 text-pmuted" />
           ) : (
-            <Eye className="w-5 h-5 text-muted" />
+            <Eye className="w-5 h-5 text-pmuted" />
           )}
         </button>
       </div>
@@ -90,7 +90,7 @@ export default function PasswordInput({
               <div
                 key={level}
                 className={`flex-1 rounded-full transition-colors ${
-                  strength && level <= strength.level ? strength.barColor : 'bg-line'
+                  strength && level <= strength.level ? strength.barColor : 'bg-plineStrong'
                 }`}
               />
             ))}
@@ -103,12 +103,12 @@ export default function PasswordInput({
 
           {/* Requirements Checklist */}
           <div className="flex flex-col gap-1 text-[11px]">
-            <div className={`flex items-center gap-1.5 ${hasMinLength ? 'text-psuccess' : 'text-muted'}`}>
-              <span>{hasMinLength ? '✓' : '○'}</span>
+            <div className={`flex items-center gap-1.5 ${hasMinLength ? 'text-psuccess' : 'text-pmuted'}`}>
+              {hasMinLength ? <Check size={12} strokeWidth={2} /> : <Circle size={12} strokeWidth={1.75} />}
               <span>Kamida 8 belgi</span>
             </div>
-            <div className={`flex items-center gap-1.5 ${hasNumber ? 'text-psuccess' : 'text-muted'}`}>
-              <span>{hasNumber ? '✓' : '○'}</span>
+            <div className={`flex items-center gap-1.5 ${hasNumber ? 'text-psuccess' : 'text-pmuted'}`}>
+              {hasNumber ? <Check size={12} strokeWidth={2} /> : <Circle size={12} strokeWidth={1.75} />}
               <span>Kamida 1 raqam</span>
             </div>
           </div>

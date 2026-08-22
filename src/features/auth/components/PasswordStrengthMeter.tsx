@@ -8,6 +8,9 @@ interface PasswordStrengthMeterProps {
 interface PasswordStrength {
   score: 0 | 1 | 2 | 3 | 4 | 5
   feedback: string[]
+  /** true — feedback ro'yxati "kuchli parol" fallback matni (haqiqiy
+   *  kamchilik emas) — UI'da yashil rangda ko'rsatiladi */
+  isGood: boolean
   color: string
   label: string
 }
@@ -19,7 +22,7 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
   // Length
   if (password.length < 8) {
     feedback.push(language === 'ru' ? 'Минимум 8 символов' : 'Kamida 8 belgi')
-    return { score: 0, feedback, color: 'var(--p-danger)', label: language === 'ru' ? 'Очень слабый' : 'Juda zaif' }
+    return { score: 0, feedback, isGood: false, color: 'var(--p-danger)', label: language === 'ru' ? 'Очень слабый' : 'Juda zaif' }
   }
 
   // Character requirements
@@ -34,7 +37,7 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
   if (!hasSpecial) feedback.push(language === 'ru' ? 'Добавьте спецсимвол' : 'Maxsus belgi qo\'shing')
 
   if (feedback.length > 0) {
-    return { score: 1, feedback, color: 'var(--p-warning)', label: language === 'ru' ? 'Слабый' : 'Zaif' }
+    return { score: 1, feedback, isGood: false, color: 'var(--p-warning)', label: language === 'ru' ? 'Слабый' : 'Zaif' }
   }
 
   // Calculate strength (clamped to 2-5)
@@ -67,7 +70,8 @@ function validatePasswordStrength(password: string, language: 'uz' | 'ru'): Pass
 
   return {
     score,
-    feedback: feedback.length > 0 ? feedback : [language === 'ru' ? '✓ Надёжный пароль' : '✓ Kuchli parol'],
+    feedback: feedback.length > 0 ? feedback : [language === 'ru' ? 'Надёжный пароль' : 'Kuchli parol'],
+    isGood: feedback.length === 0,
     color: colors[score] || colors[0],
     label: language === 'ru' ? (labelsRu[score] || labelsRu[0]) : (labelsUz[score] || labelsUz[0]),
   }
@@ -83,7 +87,7 @@ export default function PasswordStrengthMeter({ password, language }: PasswordSt
   return (
     <div className="space-y-2 animate-fadeIn">
       {/* Progress bar */}
-      <div className="h-1.5 bg-elevated rounded-full overflow-hidden">
+      <div className="h-1.5 bg-psurface rounded-full overflow-hidden">
         <div
           className="h-full transition-all duration-300 ease-out rounded-full"
           style={{
@@ -96,15 +100,15 @@ export default function PasswordStrengthMeter({ password, language }: PasswordSt
       {/* Label + feedback */}
       <div className="flex items-start justify-between gap-2">
         <span
-          className="text-[11px] font-bold uppercase tracking-wide"
+          className="text-[11px] font-semibold uppercase tracking-wide"
           style={{ color: strength.color }}
         >
           {strength.label}
         </span>
         {strength.feedback.length > 0 && (
-          <ul className="text-[11px] text-muted text-right space-y-0.5 flex-1">
+          <ul className="text-[11px] text-pmuted text-right space-y-0.5 flex-1">
             {strength.feedback.slice(0, 2).map((msg, i) => (
-              <li key={i} className={msg.startsWith('✓') ? 'text-duo-green' : ''}>
+              <li key={i} className={strength.isGood ? 'text-pprimary' : ''}>
                 {msg}
               </li>
             ))}

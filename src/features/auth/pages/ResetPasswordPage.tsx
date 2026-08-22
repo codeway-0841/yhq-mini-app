@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useSearchParams, useNavigate } from 'react-router-dom'
+import { CheckCircle2 } from 'lucide-react'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import PasswordInput from '../components/PasswordInput'
@@ -33,19 +34,19 @@ export default function ResetPasswordPage() {
 
   if (!token) {
     return (
-      <div className="min-h-screen bg-canvas flex items-center justify-center px-6">
-        <div className="card-premium p-8 text-center">
-          <h1 className="text-[18px] font-bold text-fg mb-2">
+      <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
+        <div className="rounded-container border border-pline bg-pcard p-8 text-center">
+          <h1 className="text-[18px] font-semibold text-pfg mb-2">
             {language === 'ru' ? 'Ссылка недействительна' : 'Havola yaroqsiz'}
           </h1>
-          <p className="text-[13px] text-muted mb-4">
+          <p className="text-[13px] text-pmuted mb-4">
             {language === 'ru'
               ? 'Запросите новую ссылку для сброса пароля'
               : 'Parol tiklash uchun yangi havola so\'rang'}
           </p>
           <button
             onClick={() => navigate('/')}
-            className="btn-premium px-6 py-2.5 rounded-xl font-bold text-[14px]"
+            className="btn-premium px-6 py-2.5 rounded-control font-semibold text-[14px]"
           >
             {language === 'ru' ? 'На главную' : 'Bosh sahifaga'}
           </button>
@@ -79,17 +80,15 @@ export default function ResetPasswordPage() {
 
   if (success) {
     return (
-      <div className="min-h-screen bg-canvas flex items-center justify-center px-6">
-        <div className="card-premium p-8 text-center space-y-4 max-w-md animate-premiumIn">
-          <div className="w-16 h-16 rounded-full bg-duo-green/10 flex items-center justify-center mx-auto">
-            <svg className="w-10 h-10 text-duo-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
+      <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
+        <div className="rounded-container border border-pline bg-pcard p-8 text-center space-y-4 max-w-md animate-premiumIn">
+          <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto">
+            <CheckCircle2 size={36} strokeWidth={1.75} className="text-pprimary" />
           </div>
-          <h1 className="text-[20px] font-black text-fg">
-            {language === 'ru' ? '✓ Пароль изменён!' : '✓ Parol o\'zgartirildi!'}
+          <h1 className="text-[20px] font-semibold text-pfg">
+            {language === 'ru' ? 'Пароль изменён' : 'Parol o\'zgartirildi'}
           </h1>
-          <p className="text-[14px] text-muted">
+          <p className="text-[14px] text-pmuted">
             {language === 'ru'
               ? 'Ваш пароль успешно изменён. Перенаправление...'
               : 'Parolingiz muvaffaqiyatli o\'zgartirildi. Yo\'naltirilmoqda...'}
@@ -100,13 +99,13 @@ export default function ResetPasswordPage() {
   }
 
   return (
-    <div className="min-h-screen bg-canvas flex items-center justify-center px-6 py-10">
+    <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6 py-10">
       <div className="w-full max-w-md">
-        <div className="card-premium p-6">
-          <h1 className="text-[20px] font-black text-fg text-center mb-2">
+        <div className="rounded-container border border-pline bg-pcard p-6">
+          <h1 className="text-[20px] font-semibold text-pfg text-center mb-2">
             {language === 'ru' ? 'Новый пароль' : 'Yangi parol'}
           </h1>
-          <p className="text-[13px] text-muted text-center mb-6">
+          <p className="text-[13px] text-pmuted text-center mb-6">
             {language === 'ru'
               ? 'Введите новый пароль для вашего аккаунта'
               : 'Akkauntingiz uchun yangi parol kiriting'}
@@ -139,7 +138,7 @@ export default function ResetPasswordPage() {
             />
 
             {error && (
-              <p className="text-[12px] font-semibold text-duo-red animate-fadeIn">
+              <p className="text-[12px] font-semibold text-pdanger animate-fadeIn">
                 {error}
               </p>
             )}
@@ -147,7 +146,7 @@ export default function ResetPasswordPage() {
             <button
               type="submit"
               disabled={!trimmedPassword || !trimmedConfirmPassword || trimmedPassword.length < 8 || trimmedPassword !== trimmedConfirmPassword || busy}
-              className="btn-premium w-full py-3.5 rounded-2xl font-black text-[15px] flex items-center justify-center gap-2"
+              className="btn-premium w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
             >
               {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
               {language === 'ru' ? 'Сохранить пароль' : 'Parolni saqlash'}

@@ -126,13 +126,13 @@ export default function OTPInput({
           aria-label={`Raqam ${index + 1} of ${length}`}
           className={`
             w-12 h-14 sm:w-14 sm:h-16
-            text-center text-2xl font-bold
-            bg-elevated border-2 rounded-xl
+            text-center text-2xl font-semibold
+            bg-psurface border-2 rounded-control
             outline-none transition-all
             ${error ? 'border-red-500 animate-shake' :
-              focused === index ? 'border-duo-green bg-duo-green/5' : 'border-line'}
+              focused === index ? 'border-pprimary bg-pprimary/5' : 'border-pline'}
             ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
-            ${digit !== ' ' ? 'text-fg' : 'text-transparent'}
+            ${digit !== ' ' ? 'text-pfg' : 'text-transparent'}
           `}
         />
       ))}
