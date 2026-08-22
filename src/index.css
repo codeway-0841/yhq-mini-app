@@ -21,18 +21,8 @@
   --theme-line-strong: rgba(255, 255, 255, 0.14);
   --theme-shadow:      #000000;
 
-  /* ── Yordamchi aksentlar (v3: glow YO'Q — nomlar backward-compat uchun saqlangan) ── */
-  --neon-green:   var(--p-primary, #0fa47f);
-  /* RGB triplet — Tailwind opacity modifier (bg-duo-green/15 ...) uchun */
+  /* RGB triplet — Tailwind opacity modifier (bg-[rgb(var(--p-primary-rgb)/X)] ...) uchun */
   --p-primary-rgb: 15 164 127;
-  --neon-blue:    #4a90d9;
-  --neon-purple:  #8b7fd4;
-  --neon-violet:  #a99ee0;
-  --neon-red:     #f0546e;
-  --neon-yellow:  #e0a045;
-  --neon-glow-purple: transparent;
-  --neon-glow-green:  transparent;
-  --neon-glow-blue:   transparent;
 }
 
 body[data-theme='light'] {
@@ -84,112 +74,6 @@ html, body, #root {
 body[data-no-animation='true'] .route-page { animation: none; }
 
 /* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */
-
-/* Asosiy karta (v3 Jade & Stone): sirt qatlami + 1px hairline.
-   Ko'tarilish SOYA bilan emas, sirt ierarxiyasi bilan beriladi. */
-.card-neon {
-  background: var(--theme-elevated);
-  border: 1px solid var(--theme-line);
-  border-radius: 18px;
-}
-
-/* v3: glow tizimdan chiqarildi — nomlar saqlangan (call-site'lar bosqichma-bosqich ko'chadi) */
-.glow-purple,
-.glow-green,
-.glow-blue { box-shadow: none; }
-
-/* Asosiy CTA (v3): tekis aksent, gradient/glow yo'q, bosish = scale(.98) */
-.btn-neon {
-  background: var(--p-primary, #0fa47f);
-  color: var(--p-on-primary, #04140f);
-  font-weight: 600;
-  border-radius: 10px;
-  transition: transform 120ms cubic-bezier(0.2, 0, 0, 1),
-              background-color 120ms cubic-bezier(0.2, 0, 0, 1),
-              filter 120ms cubic-bezier(0.2, 0, 0, 1);
-  user-select: none;
-  touch-action: manipulation;
-}
-.btn-neon:hover { filter: brightness(1.06); }
-.btn-neon:active { transform: scale(0.98); }
-
-/* Progress (v3): 3px ingichka rail — yo'g'on kapsula emas */
-.progress-neon {
-  height: 3px;
-  border-radius: 2px;
-  background: var(--theme-line-strong);
-  overflow: hidden;
-}
-.progress-neon > .fill {
-  height: 100%;
-  border-radius: 2px;
-  background: var(--p-primary, #0fa47f);
-  transition: width 400ms cubic-bezier(0.2, 0, 0, 1);
-}
-
-/* v3: ring drop-shadow olib tashlandi */
-.ring-glow { filter: none; }
-
-/* ── Tugmalar (v3) ────────────────────────────────────────────────────────
-   Qattiq pastki soya + translateY ("3D") tizimdan CHIQARILDI. Endi tekis sirt,
-   bosish = scale(.98) 120ms. Klass nomlari saqlangan — call-site'lar Phase 6'da
-   <Button> komponentiga ko'chadi.
-   Foydalanish: <button class="btn-3d-green"> yoki custom rang bilan "btn-3d". */
-.btn-3d,
-.btn-3d-green,
-.btn-3d-blue,
-.btn-3d-red,
-.btn-3d-yellow,
-.btn-3d-orange,
-.btn-3d-purple,
-.btn-3d-ghost {
-  border-radius: 10px;
-  transition: transform 120ms cubic-bezier(0.2, 0, 0, 1),
-              background-color 120ms cubic-bezier(0.2, 0, 0, 1),
-              filter 120ms cubic-bezier(0.2, 0, 0, 1);
-  user-select: none;
-  touch-action: manipulation;
-}
-.btn-3d:active,
-.btn-3d-green:active,
-.btn-3d-blue:active,
-.btn-3d-red:active,
-.btn-3d-yellow:active,
-.btn-3d-orange:active,
-.btn-3d-purple:active,
-.btn-3d-ghost:active {
-  transform: scale(0.98);
-}
-.btn-3d:disabled,
-.btn-3d-green:disabled,
-.btn-3d-blue:disabled,
-.btn-3d-red:disabled,
-.btn-3d-yellow:disabled,
-.btn-3d-orange:disabled,
-.btn-3d-purple:disabled,
-.btn-3d-ghost:disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.btn-3d-green  { background: var(--p-primary, #0fa47f); color: var(--p-on-primary, #04140f); }
-.btn-3d-blue   { background: var(--p-blue);    color: #fff; }
-.btn-3d-red    { background: var(--p-danger);  color: #fff; }
-.btn-3d-yellow { background: var(--p-warning); color: #241a00; }
-.btn-3d-orange { background: var(--p-warning); color: #fff; }
-.btn-3d-purple { background: var(--p-purple);  color: #fff; }
-.btn-3d-ghost  {
-  background: var(--theme-surface);
-  color: var(--theme-fg);
-  border: 1px solid var(--theme-line-strong);
-}
-
-/* Karta — elevated sirt, ingichka chiziq */
-.card-3d {
-  background: var(--theme-elevated);
-  border: 1px solid var(--theme-line);
-  border-radius: 18px;
-}
 
 /* Darslik joriy dars belgisi (v3): pulsatsiyalanuvchi glow O'RNIGA barqaror halqa */
 .lesson-glow {
@@ -641,12 +525,6 @@ body[data-theme='light'][data-accent='royal'] {
 body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shartsiz blok yetarli (sakura kabi) */ }
 
 
-/* v3: glow utilitalari tizimdan chiqarildi — klass nomlari saqlangan
-   (call-site'lar Phase 6'da tozalanadi, bir zumda sinmasin) */
-.glow-premium,
-.glow-accent-sm { box-shadow: none; }
-.neon-text-glow { text-shadow: none; }
-
 /* ── Shrift (v3): sarlavha va raqamlar Bricolage Grotesque, matn Inter Tight ──
    Nunito (Duolingo Feather'ga yaqin yumaloq gротеск) tizimdan chiqarildi. */
 .font-display {
@@ -658,13 +536,6 @@ h1, h2, h3 {
   font-family: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   letter-spacing: -0.022em;
   text-wrap: balance;
-}
-
-/* ── Karta (v3): konteyner radiusi + hairline, soyasiz ──────────────────── */
-.card-premium {
-  background: var(--p-card);
-  border: 1px solid var(--p-line);
-  border-radius: var(--radius-container);
 }
 
 /* ── Dashboard foni (v3) ─────────────────────────────────────────────────
@@ -738,133 +609,6 @@ h1, h2, h3 {
 /* Dashboard topbar (v3): light rejim uchun 'frosted glass on gradient'
    override'lari OLIB TASHLANDI — gradient yo'q, TopBar'dagi token-asosli inline
    stillar (subject.color, --p-purple-rgb, --p-gold-rgb) ikkala temada ham ishlaydi. */
-
-/* ── KIWI tugma tizimi (v3) ────────────────────────────────────────────────
-   Gradient, inset highlight va rangli "glow" soya OLIB TASHLANDI. Tekis sirt,
-   44px touch balandligi, 10px boshqaruv radiusi, bosish = scale(.98) 120ms. */
-.btn-premium {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  height: 44px;
-  padding: 0 18px;
-  border-radius: var(--radius-control);
-  background: var(--p-primary);
-  color: var(--p-on-primary);
-  font-weight: 600;
-  transition: transform 120ms var(--ease-out),
-              background-color 120ms var(--ease-out),
-              filter 120ms var(--ease-out);
-  user-select: none;
-  touch-action: manipulation;
-}
-.btn-premium:hover { filter: brightness(1.06); }
-.btn-premium:active { transform: scale(0.98); }
-.btn-premium:disabled { opacity: 0.42; pointer-events: none; }
-.btn-premium:focus-visible,
-.btn-premium-secondary:focus-visible,
-.btn-premium-outline:focus-visible,
-.btn-premium-ai:focus-visible,
-.btn-premium-gold:focus-visible {
-  outline: 2px solid var(--p-primary);
-  outline-offset: 2px;
-}
-
-/* Kichik CTA (kartalar ichida) */
-.btn-premium-sm {
-  height: 34px;
-  padding: 0 12px;
-  border-radius: var(--radius-control);
-  font-size: 13.5px;
-}
-
-/* Secondary: sirt qatlami + hairline */
-.btn-premium-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: var(--radius-control);
-  background: var(--p-surface);
-  border: 1px solid var(--p-line-strong);
-  color: var(--p-fg);
-  font-weight: 600;
-  transition: transform 120ms var(--ease-out),
-              border-color 120ms var(--ease-out),
-              background-color 120ms var(--ease-out);
-  user-select: none;
-  touch-action: manipulation;
-}
-.btn-premium-secondary:hover { background: var(--p-card); }
-.btn-premium-secondary:active { transform: scale(0.98); }
-
-/* Outline: shaffof + hairline */
-.btn-premium-outline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  height: 44px;
-  padding: 0 18px;
-  border-radius: var(--radius-control);
-  background: transparent;
-  border: 1px solid var(--p-line-strong);
-  color: var(--p-fg);
-  font-weight: 600;
-  transition: transform 120ms var(--ease-out), border-color 120ms var(--ease-out);
-}
-.btn-premium-outline:active { transform: scale(0.98); border-color: var(--p-fg); }
-
-/* AI tugma — purple wash (blur/glass yo'q) */
-.btn-premium-ai {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: var(--radius-control);
-  background: rgb(var(--p-purple-rgb) / 0.12);
-  border: 1px solid rgb(var(--p-purple-rgb) / 0.30);
-  color: var(--p-purple);
-  font-weight: 600;
-  transition: transform 120ms var(--ease-out), background-color 120ms var(--ease-out);
-}
-.btn-premium-ai:active { transform: scale(0.98); }
-
-/* Premium oltin CTA (obuna) — yagona tekis oltin, gradient/soya yo'q */
-.btn-premium-gold {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: var(--radius-control);
-  background: var(--p-gold);
-  color: var(--p-on-gold);
-  font-weight: 600;
-  transition: transform 120ms var(--ease-out), filter 120ms var(--ease-out);
-}
-.btn-premium-gold:hover { filter: brightness(1.06); }
-.btn-premium-gold:active { transform: scale(0.98); }
-
-/* ── Progress (v3): 3px ingichka rail ────────────────────────────────────── */
-.progress-premium {
-  height: 3px;
-  border-radius: 2px;
-  background: var(--p-line-strong);
-  overflow: hidden;
-}
-.progress-premium > .fill {
-  height: 100%;
-  border-radius: 2px;
-  background: var(--p-primary);
-  transition: width 400ms var(--ease-out), background-color 0.3s ease;
-}
-
-/* Tema almashganda kartalar yumshoq "apply" animatsiyasi bilan rang o'zgartiradi */
-.card-neon,
-.card-premium,
-.card-3d {
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
 
 /* ── Confetti — test o'tilganda nishonlash (faqat CSS, lib yo'q) ─────────── */
 @keyframes confettiFall {

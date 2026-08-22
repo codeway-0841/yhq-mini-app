@@ -145,7 +145,7 @@ export default function FlashcardsPage() {
             ? `${known.length} из ${cat.count} знаков изучено`
             : `${known.length} / ${cat.count} belgi o'zlashtirildi`}
         </p>
-        <button onClick={() => start(cat)} className="btn-neon flex h-11 items-center gap-2 px-8 font-semibold mb-3">
+        <button onClick={() => start(cat)} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control flex h-11 items-center gap-2 px-8 font-semibold mb-3">
           <RotateCcw size={16} strokeWidth={1.75} />
           {lang === 'ru' ? 'Ещё раз' : 'Yana bir bor'}
         </button>
@@ -175,8 +175,8 @@ export default function FlashcardsPage() {
       </div>
 
       {/* Progress */}
-      <div className="mx-5 mt-3 progress-premium">
-        <div className="fill" style={{ width: `${progress}%` }} />
+      <div className="mx-5 mt-3 h-[3px] rounded-[2px] bg-plineStrong overflow-hidden">
+        <div className="h-full rounded-[2px] bg-pprimary transition-[width,background-color] duration-[400ms]" style={{ width: `${progress}%` }} />
       </div>
 
       {/* FLIP karta */}
@@ -209,13 +209,13 @@ export default function FlashcardsPage() {
       {/* Boshqaruv */}
       <div className="flex gap-3 px-6">
         <button onClick={() => mark(false)}
-          className="btn-premium-secondary flex-1 h-[54px] rounded-container font-semibold text-[14px] justify-center text-pdanger"
+          className="bg-psurface border border-plineStrong text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-[transform,border-color,background-color] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-2.5 flex-1 h-[54px] rounded-container font-semibold text-[14px] justify-center text-pdanger"
           style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
           <X size={17} />
           {lang === 'ru' ? 'Не знал' : 'Bilmadim'}
         </button>
         <button onClick={() => mark(true)}
-          className="btn-premium flex-[1.3] h-[54px] rounded-container font-semibold text-[14px]">
+          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 flex-[1.3] h-[54px] rounded-container font-semibold text-[14px]">
           <Check size={17} />
           {lang === 'ru' ? 'Знаю' : 'Bilaman'}
         </button>

@@ -123,7 +123,7 @@ export default function AdminPromoTab() {
         </div>
         <button
           onClick={() => setCreating(true)}
-          className="btn-premium flex items-center gap-1.5 px-4 py-2.5 rounded-container text-xs font-semibold"
+          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1.5 px-4 py-2.5 rounded-container text-xs font-semibold"
         >
           <Plus size={15} />
           Yangi promokod
@@ -143,7 +143,7 @@ export default function AdminPromoTab() {
           <p className="text-xs text-psubtle mt-1 mb-4">Birinchi promokodni yarating</p>
           <button
             onClick={() => setCreating(true)}
-            className="btn-premium px-4 py-2 rounded-control text-xs font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-control text-xs font-semibold"
           >
             Yaratish
           </button>
@@ -385,7 +385,7 @@ export default function AdminPromoTab() {
               <button
                 type="submit"
                 disabled={formBusy || newCode.trim().length < 3}
-                className="btn-premium w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2"
               >
                 {formBusy ? <Loader2 size={16} className="motion-safe:animate-spin" /> : "Promokod yaratish"}
               </button>

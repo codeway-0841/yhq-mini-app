@@ -141,7 +141,7 @@ export function playSound(kind: SoundKind) {
    Event delegation — har sahifaga alohida yozish shart emas. */
 if (typeof document !== 'undefined') {
   document.addEventListener('pointerdown', (e) => {
-    const el = (e.target as HTMLElement | null)?.closest?.('.btn-neon, .btn-premium')
+    const el = (e.target as HTMLElement | null)?.closest?.('button.bg-pprimary')
     if (el && !(el as HTMLButtonElement).disabled) playSound('click')
   })
 }

@@ -205,7 +205,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
           <button
             onClick={spin}
             disabled={busy || phase === 'loading'}
-            className="btn-premium-gold w-full mt-2 py-2.5 rounded-container text-[14px] font-semibold flex items-center justify-center gap-2 disabled:opacity-50 active:scale-[0.98] transition-transform">
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full mt-2 py-2.5 rounded-container text-[14px] font-semibold flex items-center justify-center gap-2 disabled:opacity-50 active:scale-[0.98] transition-transform">
             {busy ? <Loader2 size={16} className="animate-spin" /> : tt('spinButton')}
           </button>
         )}

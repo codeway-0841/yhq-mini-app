@@ -164,7 +164,7 @@ export default function PremiumPage() {
       {!isPremium && !trialDone && (
         <div className="mx-5 mt-4">
           <button onClick={startTrial} disabled={trialBusy}
-            className="btn-neon flex h-[52px] w-full items-center justify-center gap-2 text-[15px] font-semibold disabled:opacity-40">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control flex h-[52px] w-full items-center justify-center gap-2 text-[15px] font-semibold disabled:opacity-40">
             {trialBusy ? <Loader2 size={19} strokeWidth={1.75} className="motion-safe:animate-spin" /> : <Gift size={19} />}
             {lang === 'ru' ? '3 дня Premium — бесплатно' : '3 kun Premium — bepul'}
           </button>
@@ -217,7 +217,7 @@ export default function PremiumPage() {
                       </p>
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <span className="btn-premium-gold px-3.5 py-1.5 rounded-control text-[13px] inline-block font-semibold">
+                      <span className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-1.5 rounded-control text-[13px] inline-block font-semibold">
                         {formatUzs(plan.priceUzs, lang)}
                       </span>
                       <span className="text-[10px] text-pmuted block mt-0.5">

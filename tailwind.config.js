@@ -19,31 +19,6 @@ export default {
         lineStrong: 'var(--theme-line-strong)',
         shadow:     'var(--theme-shadow)',
 
-        // ── DEPRECATED: `duo.*` namespace (v3'da nomi ham, Duolingo mazmuni ham
-        // tizimdan chiqadi). Qiymatlar allaqachon Jade & Stone palitrasiga
-        // ko'chirilgan — yangi kodda `accent` / `success` / `warning` / `danger`
-        // ishlating. Phase 6 call-site'larni ko'chiradi, Phase 10 bu blokni
-        // butunlay o'chiradi.
-        duo: {
-          green:  { DEFAULT: 'rgb(var(--p-primary-rgb) / <alpha-value>)', dark: 'color-mix(in srgb, var(--p-primary) 82%, #000)' },
-          blue:   { DEFAULT: 'var(--p-blue)',    dark: 'color-mix(in srgb, var(--p-blue) 82%, #000)' },
-          red:    { DEFAULT: 'var(--p-danger)',  dark: 'color-mix(in srgb, var(--p-danger) 82%, #000)' },
-          yellow: { DEFAULT: 'var(--p-warning)', dark: 'color-mix(in srgb, var(--p-warning) 82%, #000)' },
-          orange: { DEFAULT: 'var(--p-warning)', dark: 'color-mix(in srgb, var(--p-warning) 82%, #000)' },
-          purple: { DEFAULT: 'var(--p-purple)',  dark: 'color-mix(in srgb, var(--p-purple) 82%, #000)' },
-          gray:   { DEFAULT: 'var(--p-subtle)',  dark: 'var(--p-disabled)' },
-        },
-
-        // DEPRECATED: `neon.*` — v3'da glow yo'q, ranglar semantik tokenlarga bog'landi
-        neon: {
-          green:  'rgb(var(--p-primary-rgb) / <alpha-value>)',
-          blue:   'var(--p-blue)',
-          purple: 'var(--p-purple)',
-          violet: 'var(--p-purple)',
-          red:    'var(--p-danger)',
-          yellow: 'var(--p-warning)',
-        },
-
         // Eski nomlar (backward-compat) — yangi kodda ishlatmang
         bg:      'var(--theme-canvas)',
         accent:  'var(--p-primary)',
