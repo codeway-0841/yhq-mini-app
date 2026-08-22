@@ -6,6 +6,8 @@ import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress }            from '../../schema'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
+import { STREAK_SAVE_COST } from '../../../shared/streak-save'
+import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
 
 /**
  * H-3 (audit, TODO H4 variant 1 — kunlik kredit): bitta user kuniga shu
@@ -56,7 +58,7 @@ export const progressRepository = {
     date:         string
     subjectId:    string
     clientToken?: string
-  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null }> {
+  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
     const token = clientToken ?? null
     // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
@@ -66,7 +68,10 @@ export const progressRepository = {
     const correctDelta = correct ? 1 : 0
     const wrongDelta   = correct ? 0 : 1
 
-    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null }>(sql`
+    const ctx = { userId, subjectId, date }
+    const eligible = coinSaveEligibleSql(ctx)
+
+    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null; coin_saved: boolean }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -107,13 +112,6 @@ export const progressRepository = {
           -- 3) H-3: kunlik kredit (DAILY_ANSWER_CREDIT) — farming kunlik chegarasi
           AND (SELECT ok FROM credit)
         ) AS proceed
-      ), entitlement AS (
-        SELECT (
-          tariff = 'premium'
-          OR (premium_until IS NOT NULL AND premium_until > now())
-        ) AS premium
-        FROM users
-        WHERE id = ${userId}
       ), prog AS (
         UPDATE progress SET
           total_correct  = total_correct + ${correctDelta},
@@ -145,30 +143,6 @@ export const progressRepository = {
           SET correct = progress_questions.correct OR EXCLUDED.correct,
               answered_at = now()
         RETURNING user_id
-      ), coin_award AS (
-        -- FIXPLAN #40: coin MINT — FAQAT gate'dan o'tgan TO'G'RI javob uchun
-        -- (EXISTS prog: anti-farm gate, kunlik kredit va token replay'ning
-        -- BARCHASI coin'ni ham to'xtatadi — farming qiymati ball bilan birga
-        -- cheklangan). Consumable idempotency: 'answer'+clientToken ref —
-        -- replay'da prog yo'q → qayta mint yo'q (ledger ikki marta yozilmaydi).
-        INSERT INTO user_coins (user_id, balance, updated_at)
-        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}::int, now()
-        WHERE ${correct} AND EXISTS (SELECT 1 FROM prog)
-        ON CONFLICT (user_id) DO UPDATE SET
-          balance = user_coins.balance + ${COINS_PER_CORRECT_ANSWER}::int,
-          updated_at = now()
-        RETURNING balance
-      ), coin_ledger AS (
-        -- ref_id: clientToken bo'lsa o'sha (global unique); bo'lmasa qKey
-        -- ('subjectId:questionId') fallback — gate BIR marta shu savolga
-        -- coin_award'ni o'tkazgani uchun (progress_questions.correct qaytmaydi)
-        -- bu ref user boshiga takrorlanmaydi (audit: token yo'qligida ledger
-        -- qatori butunlay tushib qolardi — balans/ledger divergensiyasi).
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', COALESCE(${token}::text, ${qKey}::text)
-        WHERE ${correct} AND EXISTS (SELECT 1 FROM coin_award)
-        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
-        RETURNING id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
         -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
@@ -180,30 +154,72 @@ export const progressRepository = {
           correct = daily_records.correct + EXCLUDED.correct
         RETURNING id
       ), streak_upsert AS (
+        -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
+        -- daily.repository.touchActivity bilan BITTA manba.
         INSERT INTO daily_streaks (user_id, subject_id, streak, last_daily_date, updated_at)
         SELECT ${userId}, ${subjectId}, 1, ${date}, now()
         WHERE EXISTS (SELECT 1 FROM prog)
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = CASE
-            WHEN daily_streaks.last_daily_date >= EXCLUDED.last_daily_date
-              THEN daily_streaks.streak
-            WHEN daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 1, 'YYYY-MM-DD')
-              THEN daily_streaks.streak + 1
-            WHEN COALESCE((SELECT premium FROM entitlement), false)
-              AND daily_streaks.last_daily_date = to_char(EXCLUDED.last_daily_date::date - 2, 'YYYY-MM-DD')
-              THEN daily_streaks.streak + 1
-            ELSE 1
-          END,
+          streak = ${streakValueSql(ctx, eligible)},
           last_daily_date = GREATEST(COALESCE(daily_streaks.last_daily_date, EXCLUDED.last_daily_date), EXCLUDED.last_daily_date),
           updated_at = now()
-        RETURNING streak
+        RETURNING streak, ${eligible} AS saved
+      ), save_ledger AS (
+        -- Idempotentlik gate'i: kuniga BITTA streak_save. Debit shu CTE
+        -- natijasiga bog'langani uchun o'sha kundagi keyingi javoblar
+        -- coin'ni qayta yechmaydi (ON CONFLICT DO NOTHING → qator yo'q).
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
+        WHERE (SELECT saved FROM streak_upsert)
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING id
+      ), coin_award AS (
+        -- FIXPLAN #40: coin MINT — FAQAT gate'dan o'tgan TO'G'RI javob uchun
+        -- (EXISTS prog: anti-farm gate, kunlik kredit va token replay'ning
+        -- BARCHASI coin'ni ham to'xtatadi — farming qiymati ball bilan birga
+        -- cheklangan). Consumable idempotency: 'answer'+clientToken ref —
+        -- replay'da prog yo'q → qayta mint yo'q (ledger ikki marta yozilmaydi).
+        --
+        -- MINT VA STREAK-SAVE DEBIT BITTA YOZUVDA (net delta) — SABAB:
+        -- Postgres bitta statementda BIR QATORGA ikkita alohida upsert/UPDATE
+        -- CTE qo'llasa FAQAT BITTASI saqlanadi, ikkinchisi JIMGINA yo'qoladi
+        -- (real DB'da tekshirilgan). Alohida debit CTE mint'ni yo'q qilardi.
+        INSERT INTO user_coins (user_id, balance, updated_at)
+        SELECT ${userId},
+          GREATEST(0,
+            (CASE WHEN ${correct} AND EXISTS (SELECT 1 FROM prog) THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END)
+            - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END)
+          ),
+          now()
+        WHERE (${correct} AND EXISTS (SELECT 1 FROM prog))
+           OR EXISTS (SELECT 1 FROM save_ledger)
+        ON CONFLICT (user_id) DO UPDATE SET
+          balance = user_coins.balance
+            + (CASE WHEN ${correct} AND EXISTS (SELECT 1 FROM prog) THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END)
+            - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END),
+          updated_at = now()
+        RETURNING balance
+      ), coin_ledger AS (
+        -- ref_id: clientToken bo'lsa o'sha (global unique); bo'lmasa qKey
+        -- ('subjectId:questionId') fallback — gate BIR marta shu savolga
+        -- mint'ni o'tkazgani uchun (progress_questions.correct qaytmaydi)
+        -- bu ref user boshiga takrorlanmaydi (audit: token yo'qligida ledger
+        -- qatori butunlay tushib qolardi — balans/ledger divergensiyasi).
+        -- Shart endi coin_award EMAS, prog — coin_award faqat streak-save
+        -- sababli ham yaratilishi mumkin (mint bo'lmasa ham).
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', COALESCE(${token}::text, ${qKey}::text)
+        WHERE ${correct} AND EXISTS (SELECT 1 FROM prog)
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING id
       )
       SELECT
         (SELECT proceed FROM gate) AS proceed,
         (SELECT COUNT(*)::int FROM prog) AS prog_updated,
         (SELECT streak::int FROM streak_upsert) AS daily_streak,
         EXISTS (SELECT 1 FROM tok) AS token_inserted,
-        (SELECT balance::int FROM coin_award) AS coin_balance
+        (SELECT balance::int FROM coin_award) AS coin_balance,
+        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved
     `)
 
     const row = rows[0]
@@ -211,25 +227,32 @@ export const progressRepository = {
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
       const existing = await this.findByUserId(userId)
-      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null }
+      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null, coinSaved: false }
       // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
       // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.
       const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
-      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null }
+      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null, coinSaved: false }
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
     const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : (updated ? 1 : null)
     const coinBalance = row?.coin_balance != null ? Number(row.coin_balance) : null
-    return { updated, dailyStreak, duplicate: false, coinBalance }
+    return { updated, dailyStreak, duplicate: false, coinBalance, coinSaved: row?.coin_saved === true }
   },
 
   /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */
   async addOctagonWin(userId: string): Promise<void> {
-    await db.update(progress).set({
-      octagonWins: sql`octagon_wins + 1`,
-      updatedAt:   new Date(),
-    }).where(eq(progress.userId, userId))
+    await db.insert(progress).values({
+      userId,
+      octagonWins: 1,
+      updatedAt: new Date(),
+    }).onConflictDoUpdate({
+      target: progress.userId,
+      set: {
+        octagonWins: sql`COALESCE(${progress.octagonWins}, 0) + 1`,
+        updatedAt:   sql`now()`,
+      },
+    })
   },
 
   /** Profil API uchun yechilgan savollar ro'yxati (`${subjectId}:${questionId}` format — client kontrakti o'zgarmaydi) */
