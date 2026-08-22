@@ -107,7 +107,14 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   }
 
   const fontSizeLabel  = { small: tt('fontSmall'),   medium: tt('fontMedium'),  large: tt('fontLarge') }[local.fontSize]
-  const fontStyleLabel = { default: tt('fontDefault'), serif: tt('fontSerif'),  mono: tt('fontMono')   }[local.fontStyle]
+  const fontStyleLabel = {
+    default: tt('fontDefault'),
+    jakarta: tt('fontJakarta'),
+    rounded: tt('fontRounded'),
+    grotesk: tt('fontGrotesk'),
+    serif:   tt('fontSerif'),
+    mono:    tt('fontMono'),
+  }[local.fontStyle] ?? tt('fontDefault')
   const languageLabel  = { uz: tt('uzLang'), ru: tt('ruLang') }[local.language]
 
   const valueBtn = 'flex items-center gap-1 text-[13px] font-bold text-muted active:text-fg transition-colors'
@@ -244,6 +251,9 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           onSelect={(v) => set('fontStyle', v as ApiSettings['fontStyle'])}
           options={[
             { value: 'default', label: tt('fontDefault') },
+            { value: 'jakarta', label: tt('fontJakarta') },
+            { value: 'rounded', label: tt('fontRounded') },
+            { value: 'grotesk', label: tt('fontGrotesk') },
             { value: 'serif',   label: tt('fontSerif')   },
             { value: 'mono',    label: tt('fontMono')    },
           ]}

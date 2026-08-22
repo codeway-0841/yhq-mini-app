@@ -133,6 +133,8 @@ function ThemeEffect() {
   const accent      = useAppStore((s) => s.accent)
   const tariff      = useAppStore((s) => s.tariff)
   const ownedItems  = useAppStore((s) => s.ownedItems)
+  const fontStyle   = useAppStore((s) => s.settings.fontStyle)
+  const fontSize    = useAppStore((s) => s.settings.fontSize)
   useEffect(() => {
     // <html lang> — screen reader talaffuzi uchun; qattiq "uz" bilan boshlanadi (index.html),
     // foydalanuvchi tilni almashtirsa sinxronlanadi.
@@ -156,6 +158,12 @@ function ThemeEffect() {
     // noAnimation setting — route transitionlar ham o'chadi (index.css)
     document.body.dataset.noAnimation = String(noAnimation)
   }, [noAnimation])
+  useEffect(() => {
+    document.body.dataset.font = fontStyle || 'default'
+  }, [fontStyle])
+  useEffect(() => {
+    document.body.dataset.fontSize = fontSize || 'medium'
+  }, [fontSize])
   return null
 }
 

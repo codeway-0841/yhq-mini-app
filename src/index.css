@@ -42,13 +42,13 @@ body[data-theme='light'] {
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body, #root {
+html, body, #root, input, button, select, textarea {
   height: 100%;
   margin: 0;
   padding: 0;
   background: var(--theme-canvas);
   color: var(--theme-fg);
-  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans);
   /* Ta'lim ilovasi = raqam ko'p (ball, foiz, taymer) — tabular figure
      raqam almashganda layout "sakrash"ini yo'q qiladi */
   font-variant-numeric: tabular-nums;
@@ -584,15 +584,60 @@ body[data-theme='light'][data-accent='royal'] {
 body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shartsiz blok yetarli (sakura kabi) */ }
 
 
-/* ── Shrift (v3): sarlavha va raqamlar Bricolage Grotesque, matn Inter Tight ──
-   Nunito (Duolingo Feather'ga yaqin yumaloq gротеск) tizimdan chiqarildi. */
+/* ── Shrift uslublari (Settings -> Shrift uslubi) ───────────────────────────
+   6 xil zamonaviy font: Inter, Plus Jakarta Sans, Outfit, Bricolage, Lora, JetBrains Mono */
+:root,
+body,
+body[data-font='default'] {
+  --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans);
+}
+body[data-font='jakarta'] {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans);
+}
+body[data-font='rounded'] {
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans);
+}
+body[data-font='grotesk'] {
+  --font-sans: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-sans);
+}
+body[data-font='serif'] {
+  --font-sans: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-display: 'Lora', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-sans);
+}
+body[data-font='mono'] {
+  --font-sans: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  --font-display: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+  font-family: var(--font-sans);
+}
+
+/* Shrift o'lchamlari (Settings -> Shrift o'lchami) */
+body[data-font-size='small'] {
+  font-size: 14px;
+}
+body[data-font-size='medium'] {
+  font-size: 15px;
+}
+body[data-font-size='large'] {
+  font-size: 16.5px;
+}
+
+/* Sarlavha va Display shriftlari */
 .font-display {
-  font-family: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-display);
   letter-spacing: -0.02em;
 }
 
 h1, h2, h3 {
-  font-family: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: var(--font-display);
   letter-spacing: -0.022em;
   text-wrap: balance;
 }

@@ -82,9 +82,9 @@ export default {
         xs: '400px',
       },
       fontFamily: {
-        // Matn — Inter Tight. Sarlavha/raqam — Bricolage Grotesque.
-        sans:    ['Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
-        display: ['Bricolage Grotesque', 'Inter Tight', '-apple-system', 'system-ui', 'sans-serif'],
+        // Dinamik shriftlar — src/index.css dagi --font-sans va --font-display ga bog'langan (body[data-font])
+        sans:    ['var(--font-sans)', 'Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Bricolage Grotesque', 'Inter Tight', '-apple-system', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         // v3 ikki bosqichli shkala: boshqaruv 10px · konteyner 18px · sheet 24px

@@ -176,7 +176,7 @@ const UZ = {
   autoNextWrong: "Xato javobda avtomatik o'tish", noAnimation: "Animatsiyalar",
   shuffleOptions: "Variantlarni aralashtirish", fontSize: "Shrift o'lchami",
   fontStyle: "Shrift uslubi", fontSmall: "Kichik", fontMedium: "O'rtacha",
-  fontLarge: "Katta", fontDefault: "Standart", fontSerif: "Serif", fontMono: "Mono",
+  fontLarge: "Katta", fontDefault: "Inter (Standart)", fontJakarta: "Plus Jakarta (Nafis)", fontRounded: "Outfit (Yumaloq)", fontGrotesk: "Bricolage (Grotesk)", fontSerif: "Lora (Kitobiy)", fontMono: "JetBrains (Kod)",
   reportIssue: "Xatolik haqida xabar berish", saveBtn: "Saqlash",
   uzLang: "O'zbekcha", ruLang: "Русский",
   // Daily Challenge
@@ -531,7 +531,7 @@ const RU: Record<Keys, string> = {
   autoNextWrong: "Автопереход при ошибке", noAnimation: "Анимации",
   shuffleOptions: "Перемешивать варианты", fontSize: "Размер шрифта",
   fontStyle: "Стиль шрифта", fontSmall: "Мелкий", fontMedium: "Средний",
-  fontLarge: "Крупный", fontDefault: "Стандарт", fontSerif: "Serif", fontMono: "Mono",
+  fontLarge: "Крупный", fontDefault: "Inter (Стандарт)", fontJakarta: "Plus Jakarta (Эстетичный)", fontRounded: "Outfit (Скругленный)", fontGrotesk: "Bricolage (Гротеск)", fontSerif: "Lora (Книжный)", fontMono: "JetBrains (Моно)",
   reportIssue: "Сообщить об ошибке", saveBtn: "Сохранить",
   uzLang: "O'zbekcha", ruLang: "Русский",
   // Daily Challenge

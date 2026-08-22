@@ -185,7 +185,7 @@ export interface ApiSettings {
   noAnimation: boolean
   shuffleOptions: boolean
   fontSize: 'small' | 'medium' | 'large'
-  fontStyle: 'default' | 'serif' | 'mono'
+  fontStyle: 'default' | 'jakarta' | 'rounded' | 'grotesk' | 'serif' | 'mono'
   language: 'uz' | 'ru'
   theme: 'dark' | 'light' | 'system'
   offlineMode: boolean
@@ -383,8 +383,13 @@ export const api = {
   patchProgress: (userId: string, patch: Partial<ApiProgress>) =>
     request<{ ok: true }>('PATCH', `/progress/${uid(userId)}`, patch),
 
-  patchSettings: (userId: string, patch: Partial<ApiSettings>) =>
-    request<{ ok: true }>('PATCH', `/settings/${uid(userId)}`, patch),
+  patchSettings: (userId: string, patch: Partial<ApiSettings>) => {
+    const serverPatch = { ...patch }
+    if (serverPatch.fontStyle && serverPatch.fontStyle !== 'serif' && serverPatch.fontStyle !== 'mono') {
+      serverPatch.fontStyle = 'default'
+    }
+    return request<{ ok: true }>('PATCH', `/settings/${uid(userId)}`, serverPatch)
+  },
 
   addSaved: (userId: string, questionId: number, subjectId: string) =>
     request<{ ok: true }>('POST', `/saved/${uid(userId)}`, { questionId, subjectId }),
