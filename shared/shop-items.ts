@@ -57,13 +57,16 @@ export const SHOP_ITEMS = [
   { id: 'royal',   kind: 'accent-theme', price: 500 },
   { id: 'arctic',  kind: 'accent-theme', price: 500 },
   // ── Mavjud premium temalar — coin'ga ham (premium obunasi ALTERNATIVASI) ──
+  { id: 'obsidian', kind: 'accent-theme', price: 800 },
+  { id: 'neo',      kind: 'accent-theme', price: 800 },
+  { id: 'nordic',   kind: 'accent-theme', price: 800 },
+  { id: 'carplay',  kind: 'accent-theme', price: 800 },
   { id: 'aurora',   kind: 'accent-theme', price: 800 },
   { id: 'violet',   kind: 'accent-theme', price: 800 },
   { id: 'ocean',    kind: 'accent-theme', price: 800 },
   { id: 'forest',   kind: 'accent-theme', price: 800 },
   { id: 'sunset',   kind: 'accent-theme', price: 800 },
   { id: 'sakura',   kind: 'accent-theme', price: 800 },
-  { id: 'obsidian', kind: 'accent-theme', price: 800 },
   { id: 'gold',     kind: 'accent-theme', price: 800 },
   { id: 'payme',    kind: 'accent-theme', price: 800 },
   // ── Consumable: 1 kunlik premium (C-1 — tariff'ga tegmaydi) ──
