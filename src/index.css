@@ -26,15 +26,15 @@
 }
 
 body[data-theme='light'] {
-  --theme-canvas:      #fafaf9;
-  --theme-surface:     #f5f5f4;
+  --theme-canvas:      #f0f3f6;
+  --theme-surface:     #e4e8ee;
   --theme-elevated:    #ffffff;
-  --theme-fg:          #1c1917;
-  --theme-fg-muted:    #57534e;
-  --theme-fg-subtle:   #8a8580;
-  --theme-line:        #e7e5e4;
-  --theme-line-strong: #d6d3d1;
-  --theme-shadow:      #d6d3d1;
+  --theme-fg:          #0f172a;
+  --theme-fg-muted:    #475569;
+  --theme-fg-subtle:   #64748b;
+  --theme-line:        rgba(0, 0, 0, 0.08);
+  --theme-line-strong: rgba(0, 0, 0, 0.15);
+  --theme-shadow:      rgba(0, 0, 0, 0.06);
 }
 
 * {
@@ -261,24 +261,24 @@ body {
   --ring:               var(--p-primary);
 }
 
-/* v3 "Stone Light" — iliq-neytral yorug' ground */
+/* v3 "Light High-Contrast" — boy va aniq ajralib turadigan yorug' rejim */
 body[data-theme='light'] {
-  --p-canvas:      #fafaf9;
+  --p-canvas:      #f0f3f6;
   --p-card:        #ffffff;
-  --p-surface:     #f5f5f4;
-  --p-line:        #e7e5e4;
-  --p-line-strong: #d6d3d1;
+  --p-surface:     #e4e8ee;
+  --p-line:        rgba(0, 0, 0, 0.08);
+  --p-line-strong: rgba(0, 0, 0, 0.15);
 
-  --p-fg:          #1c1917;
-  --p-muted:       #57534e;
-  --p-subtle:      #8a8580;
-  --p-disabled:    #a8a29e;
-  --p-link:        #0d8a6a;
+  --p-fg:          #0f172a;
+  --p-muted:       #475569;
+  --p-subtle:      #64748b;
+  --p-disabled:    #94a3b8;
+  --p-link:        #0d9488;
 
-  /* Aksent yorug' fonda to'qlashtirilgan Jade */
-  --p-primary:     #0d8a6a;
-  --p-primary-rgb: 13 138 106;
-  --p-on-primary:  #000000;
+  /* Aksent yorug' fonda to'yingan va yorqin Jade */
+  --p-primary:     #0d9488;
+  --p-primary-rgb: 13 148 136;
+  --p-on-primary:  #ffffff;
   --p-glow:        transparent;
 
   /* Semantik ranglar — yorug' fon uchun to'q variantlar */
@@ -288,13 +288,13 @@ body[data-theme='light'] {
   --p-warning-rgb: 180 83 9;
   --p-danger:      #be123c;
   --p-danger-rgb:  190 18 60;
-  --p-purple:      #6d5bc4;
-  --p-purple-rgb:  109 91 196;
+  --p-purple:      #7c3aed;
+  --p-purple-rgb:  124 58 237;
   --p-blue:        #2563eb;
   --p-blue-rgb:    37 99 235;
-  --p-gold:        #b8862c;
-  --p-gold-rgb:    184 134 44;
-  --p-gold-deep:   #966d1f;
+  --p-gold:        #b45309;
+  --p-gold-rgb:    180 83 9;
+  --p-gold-deep:   #92400e;
   --p-on-gold:     #ffffff;
 }
 
@@ -487,99 +487,99 @@ body[data-accent='arctic'] {
 }
 
 /* ── LIGHT rejim + atmosfera temasi ─────────────────────────────────────────
-   Yorug' fonda atmosfera "bo'yalgan fon" bilan emas, iliq stone ground + tema
-   hue'idagi aksent bilan beriladi (kontrast va o'qishlilik saqlanadi). */
+   Yorug' fonda toza kontrast: har bir temaga xos tonlashtirilgan qulay fon,
+   aniq oq kartalar (p-card: #ffffff), 1px ko'rinuvchi chegara va yorqin aksent. */
 body[data-theme='light'][data-accent='aurora'] {
-  --p-primary: #0a8f74; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 10 143 116;
-  --p-canvas: #f7faf9; --p-surface: #eef4f2; --p-card: #ffffff;
-  --p-line: #e0eae7; --p-line-strong: #c7d8d3;
-  --theme-canvas: #f7faf9; --theme-surface: #eef4f2; --theme-elevated: #ffffff;
-  --theme-line: #e0eae7; --theme-line-strong: #c7d8d3;
+  --p-primary: #0d9488; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 13 148 136;
+  --p-canvas: #eef5f3; --p-surface: #daece7; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #eef5f3; --theme-surface: #daece7; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='violet'] {
-  --p-primary: #7c4fd4; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 124 79 212;
-  --p-canvas: #faf8fc; --p-surface: #f2eef7; --p-card: #ffffff;
-  --p-line: #e8e1f0; --p-line-strong: #d4c8e2;
-  --theme-canvas: #faf8fc; --theme-surface: #f2eef7; --theme-elevated: #ffffff;
-  --theme-line: #e8e1f0; --theme-line-strong: #d4c8e2;
+  --p-primary: #7c3aed; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 124 58 237;
+  --p-canvas: #f3f0f7; --p-surface: #e5def0; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f3f0f7; --theme-surface: #e5def0; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='ocean'] {
-  --p-primary: #0d6fb0; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 13 111 176;
-  --p-canvas: #f8fafc; --p-surface: #eef3f7; --p-card: #ffffff;
-  --p-line: #e1e9ef; --p-line-strong: #c8d7e2;
-  --theme-canvas: #f8fafc; --theme-surface: #eef3f7; --theme-elevated: #ffffff;
-  --theme-line: #e1e9ef; --theme-line-strong: #c8d7e2;
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #eef3f8; --p-surface: #dbe7f3; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #eef3f8; --theme-surface: #dbe7f3; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='forest'] {
-  --p-primary: #0f7a52; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 15 122 82;
-  --p-canvas: #f8faf9; --p-surface: #eef4f1; --p-card: #ffffff;
-  --p-line: #e0eae5; --p-line-strong: #c7d8d0;
-  --theme-canvas: #f8faf9; --theme-surface: #eef4f1; --theme-elevated: #ffffff;
-  --theme-line: #e0eae5; --theme-line-strong: #c7d8d0;
+  --p-primary: #059669; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 5 150 105;
+  --p-canvas: #edf4f0; --p-surface: #d7e8de; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #edf4f0; --theme-surface: #d7e8de; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='sunset'] {
-  --p-primary: #c05e17; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 192 94 23;
-  --p-canvas: #fdfaf7; --p-surface: #f7efe8; --p-card: #ffffff;
-  --p-line: #efe3d9; --p-line-strong: #ddc9b8;
-  --theme-canvas: #fdfaf7; --theme-surface: #f7efe8; --theme-elevated: #ffffff;
-  --theme-line: #efe3d9; --theme-line-strong: #ddc9b8;
+  --p-primary: #d97706; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 217 119 6;
+  --p-canvas: #f7f2ee; --p-surface: #eee2d7; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f7f2ee; --theme-surface: #eee2d7; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
 body[data-theme='light'][data-accent='obsidian'] {
   --p-primary: #2563eb; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 37 99 235;
-  --p-canvas: #f9fafb; --p-surface: #f3f4f6; --p-card: #ffffff;
-  --p-line: #e5e7eb; --p-line-strong: #d1d5db;
-  --theme-canvas: #f9fafb; --theme-surface: #f3f4f6; --theme-elevated: #ffffff;
-  --theme-line: #e5e7eb; --theme-line-strong: #d1d5db;
+  --p-canvas: #f1f3f7; --p-surface: #e4e8ee; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f1f3f7; --theme-surface: #e4e8ee; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='neo'] {
   --p-primary: #16a34a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 22 163 74;
-  --p-canvas: #f8fafc; --p-surface: #f1f5f9; --p-card: #ffffff;
-  --p-line: #e2e8f0; --p-line-strong: #cbd5e1;
-  --theme-canvas: #f8fafc; --theme-surface: #f1f5f9; --theme-elevated: #ffffff;
-  --theme-line: #e2e8f0; --theme-line-strong: #cbd5e1;
+  --p-canvas: #edf3ee; --p-surface: #d8e8db; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #edf3ee; --theme-surface: #d8e8db; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='nordic'] {
   --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
-  --p-canvas: #f8fafc; --p-surface: #f0f4f8; --p-card: #ffffff;
-  --p-line: #e2e8f0; --p-line-strong: #cbd5e1;
-  --theme-canvas: #f8fafc; --theme-surface: #f0f4f8; --theme-elevated: #ffffff;
-  --theme-line: #e2e8f0; --theme-line-strong: #cbd5e1;
+  --p-canvas: #edf2f7; --p-surface: #dbe4ee; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #edf2f7; --theme-surface: #dbe4ee; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='carplay'] {
   --p-primary: #ea580c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 234 88 12;
-  --p-canvas: #fafafa; --p-surface: #f4f4f5; --p-card: #ffffff;
-  --p-line: #e4e4e7; --p-line-strong: #d4d4d8;
-  --theme-canvas: #fafafa; --theme-surface: #f4f4f5; --theme-elevated: #ffffff;
-  --theme-line: #e4e4e7; --theme-line-strong: #d4d4d8;
+  --p-canvas: #f5f2ee; --p-surface: #eae3da; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f5f2ee; --theme-surface: #eae3da; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='gold'] {
-  --p-primary: #966d1f; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 150 109 31;
-  --p-canvas: #fcfaf6; --p-surface: #f5f1e7; --p-card: #ffffff;
-  --p-line: #ece5d5; --p-line-strong: #d9cdb2;
-  --theme-canvas: #fcfaf6; --theme-surface: #f5f1e7; --theme-elevated: #ffffff;
-  --theme-line: #ece5d5; --theme-line-strong: #d9cdb2;
+  --p-primary: #b45309; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 180 83 9;
+  --p-canvas: #f6f3eb; --p-surface: #ece5d3; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f6f3eb; --theme-surface: #ece5d3; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='payme'] {
-  --p-primary: #00858c; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 133 140;
-  --p-canvas: #f7fafa; --p-surface: #edf4f4; --p-card: #ffffff;
-  --p-line: #dfeaea; --p-line-strong: #c5d8d9;
-  --theme-canvas: #f7fafa; --theme-surface: #edf4f4; --theme-elevated: #ffffff;
-  --theme-line: #dfeaea; --theme-line-strong: #c5d8d9;
+  --p-primary: #00858c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 133 140;
+  --p-canvas: #ecf5f6; --p-surface: #d4ecee; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #ecf5f6; --theme-surface: #d4ecee; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='crimson'] {
-  --p-primary: #b31739; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 179 23 57;
-  --p-canvas: #fdf8f9; --p-surface: #f7ecee; --p-card: #ffffff;
-  --p-line: #efdfe2; --p-line-strong: #ddc3c8;
-  --theme-canvas: #fdf8f9; --theme-surface: #f7ecee; --theme-elevated: #ffffff;
-  --theme-line: #efdfe2; --theme-line-strong: #ddc3c8;
+  --p-primary: #be123c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 190 18 60;
+  --p-canvas: #f7eef0; --p-surface: #edd6da; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f7eef0; --theme-surface: #edd6da; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='royal'] {
-  --p-primary: #4a4fc4; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 74 79 196;
-  --p-canvas: #f9f9fc; --p-surface: #eff0f7; --p-card: #ffffff;
-  --p-line: #e3e4f0; --p-line-strong: #cbcde2;
-  --theme-canvas: #f9f9fc; --theme-surface: #eff0f7; --theme-elevated: #ffffff;
-  --theme-line: #e3e4f0; --theme-line-strong: #cbcde2;
+  --p-primary: #4338ca; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 67 56 202;
+  --p-canvas: #f0f1f8; --p-surface: #dcdff1; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f0f1f8; --theme-surface: #dcdff1; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shartsiz blok yetarli (sakura kabi) */ }
 
