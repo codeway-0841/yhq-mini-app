@@ -10,6 +10,13 @@
  *  - Ikonka rangi neytral (pmuted); status rangi semantik tokenlardan.
  *  - Boshqaruv balandligi 44px, radius 10px; konteyner radiusi 18px; sheet 24px.
  *  - Bosish javobi: scale(.98) 120ms. Qattiq soya / translateY YO'Q.
+ *
+ * ⚠️ BUNDLE: sahifa/feature kodida SHU BARRELDAN import QILMANG —
+ * `import { Button } from '.../ui'` butun ro'yxatni, jumladan ishlatilmagan
+ * radix paketlarini (select, dropdown-menu, scroll-area...) bundle'ga tortadi.
+ * O'lchandi: barrel orqali 571 kB, to'g'ridan-to'g'ri 403 kB.
+ * To'g'risi:  `import { Button } from '.../ui/button'`
+ * Barrel faqat testlar va tez prototip uchun.
  */
 export { Button, buttonVariants, type ButtonProps } from './button'
 export { Input } from './input'

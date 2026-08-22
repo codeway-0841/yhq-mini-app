@@ -100,6 +100,12 @@ export default {
           foreground:  'var(--foreground)',
         },
       },
+      screens: {
+        // Tor Telegram WebView (360px) va undan kattaroq telefonlar orasidagi chegara.
+        // TopBar'da `xs:inline` ishlatiladi — bu breakpoint e'lon qilinmagani uchun
+        // element HAR DOIM yashirin qolardi.
+        xs: '400px',
+      },
       fontFamily: {
         // Matn — Inter Tight. Sarlavha/raqam — Bricolage Grotesque.
         sans:    ['Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],

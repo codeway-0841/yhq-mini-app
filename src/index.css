@@ -691,7 +691,10 @@ h1, h2, h3 {
   20%  { opacity: 1; transform: translate(-50%, 0) scale(1.1); }
   70%  { opacity: 1; transform: translate(-50%, -14px) scale(1); }
   100% { opacity: 0; transform: translate(-50%, -26px) scale(0.9); }
-}.avatar-frame {
+}
+
+/* Avatar ramkasi (do'kon kosmetikasi) — gradient halqa uchun wrapper */
+.avatar-frame {
   display: inline-flex;
   padding: 3px;
   border-radius: 9999px;

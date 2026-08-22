@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import ErrorBoundary from './shared/components/ErrorBoundary'
+import { ToastProvider } from './shared/components/ToastContainer'
 import './index.css'
 
 // Telegram WebView dastlabki yuklanishda #tgWebAppData=... hashini qo'shishi mumkin —
@@ -17,7 +18,13 @@ if (rootEl) {
   ReactDOM.createRoot(rootEl).render(
     <React.StrictMode>
       <ErrorBoundary>
-        <App />
+        {/* ToastProvider ILGARI hech qayerda mount qilinmagan edi — `useToast()`
+            chaqirilsa xato tashlardi, shuning uchun sahifalar o'z lokal toast
+            state'ini yuritardi. Endi yagona manba mavjud (Phase 6'da sahifalar
+            lokal implementatsiyalardan shu API'ga ko'chadi). */}
+        <ToastProvider>
+          <App />
+        </ToastProvider>
       </ErrorBoundary>
     </React.StrictMode>
   )
