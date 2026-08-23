@@ -60,11 +60,14 @@ beforeAll(async () => {
     id: UID, first_name: 'Xp', last_name: 'Test', username: 'xp_test',
   }).expect(200)
 
-  // FAQAT YHQ bankidagi savollar — boshqa bank savoli 'yhq' fanida 404 beradi
+  // FAQAT YHQ bankidagi savollar — boshqa bank savoli 'yhq' fanida 404 beradi.
+  // CI bazasida atigi 3 ta seed savol bor (tests/integration/seed-db.ts),
+  // shuning uchun testlar 3 tadan ortiq savolga TAYANMAYDI — har test oldidan
+  // foydalanuvchi tarixi tozalanadi va o'sha savollar qayta ishlatiladi.
   const rows = await db.select().from(questions)
     .where(eq(questions.bankId, 'traffic_rules_db'))
-    .limit(120)
-  expect(rows.length).toBeGreaterThan(60)
+    .limit(20)
+  expect(rows.length).toBeGreaterThanOrEqual(3)
   bank = rows.map((q) => ({
     id: q.id,
     correctAnswer: q.correctAnswer,
@@ -104,7 +107,7 @@ describe('XP — o\'rganish hodisasiga qarab', () => {
   })
 
   it('allaqachon to\'g\'ri yechilgan savolni qayta bosish XP bermaydi', async () => {
-    const q = bank[3]!
+    const q = bank[0]!
     await answer(q, q.correctAnswer).expect(200)
     const again = await answer(q, q.correctAnswer).expect(200)
 
@@ -120,12 +123,12 @@ describe('Kunlik XP shifti', () => {
       userId: UID, date: tashkentDate(), xpEarned: XP_DAILY_CAP - 4, coinsEarned: 0,
     })
 
-    const q1 = bank[10]!
+    const q1 = bank[0]!
     const partial = await answer(q1, q1.correctAnswer).expect(200)
     expect(partial.body.xpEarned).toBe(4)          // qolgan joy qadar kesildi
     expect(await xpOf()).toBe(4)
 
-    const q2 = bank[11]!
+    const q2 = bank[1]!
     const capped = await answer(q2, q2.correctAnswer).expect(200)
     expect(capped.body.xpEarned).toBe(0)           // shift to'ldi
     expect(await xpOf()).toBe(4)
@@ -141,7 +144,7 @@ describe('Kunlik XP shifti', () => {
       userId: UID, date: '2020-01-01', xpEarned: XP_DAILY_CAP, coinsEarned: COINS_DAILY_ANSWER_CAP,
     })
 
-    const q = bank[12]!
+    const q = bank[0]!
     const res = await answer(q, q.correctAnswer).expect(200)
     expect(res.body.xpEarned).toBe(XP_FIRST_CORRECT)   // bugun shift bo'sh
   })
@@ -154,7 +157,7 @@ describe('Kunlik coin shifti', () => {
     })
     await db.insert(userCoins).values({ userId: UID, balance: 100 }).onConflictDoNothing()
 
-    const q = bank[20]!
+    const q = bank[0]!
     const res = await answer(q, q.correctAnswer).expect(200)
 
     expect(res.body.coinsEarned).toBe(0)
@@ -166,7 +169,7 @@ describe('Kunlik coin shifti', () => {
   })
 
   it('shift ichida coin oddiy mint bo\'ladi va hisob yuritiladi', async () => {
-    const q = bank[21]!
+    const q = bank[1]!
     const res = await answer(q, q.correctAnswer).expect(200)
 
     expect(res.body.coinsEarned).toBe(1)
@@ -178,14 +181,15 @@ describe('Kunlik coin shifti', () => {
 
 describe('daily_limits hisobi', () => {
   it('bir necha javobdan keyin yig\'indi to\'g\'ri', async () => {
-    for (const q of bank.slice(30, 35)) {
+    const used = bank.slice(0, 3)
+    for (const q of used) {
       await answer(q, q.correctAnswer).expect(200)
     }
 
     const row = await limitsRow()
-    expect(row?.xpEarned).toBe(5 * XP_FIRST_CORRECT)
-    expect(row?.coinsEarned).toBe(5)
-    expect(await xpOf()).toBe(5 * XP_FIRST_CORRECT)
+    expect(row?.xpEarned).toBe(used.length * XP_FIRST_CORRECT)
+    expect(row?.coinsEarned).toBe(used.length)
+    expect(await xpOf()).toBe(used.length * XP_FIRST_CORRECT)
   })
 
   it('XP manfiy bo\'lmaydi (DB constraint)', async () => {
