@@ -348,6 +348,8 @@ export const useAppStore = create<AppState>()(
         user: null,
         settings: { ...DEFAULT_SETTINGS },
         streak: 0,
+        xp: 0,
+        league: 'bronze',
         totalCorrect: 0,
         totalWrong: 0,
         totalAnswered: 0,
