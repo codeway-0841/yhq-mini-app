@@ -4,7 +4,7 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket, ShieldAlert,
-  Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText, Search,
+  Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -224,18 +224,6 @@ export default function Dashboard() {
             onContinue={continueInfo.go}
           />
 
-          {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
-          <div className="mx-5 mb-6">
-            <button
-              type="button"
-              onClick={() => navigate('/qidiruv')}
-              className="flex w-full items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
-            >
-              <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
-              <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
-            </button>
-          </div>
-
           {/* 2. Today's Progress */}
           <ProgressCard
             totalCorrect={totalCorrect}
@@ -249,9 +237,6 @@ export default function Dashboard() {
 
           {/* 2b. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
-
-          {/* 2c. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
-          <BossCard />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">
@@ -285,6 +270,9 @@ export default function Dashboard() {
               ]}
             />
           </div>
+
+          {/* 5b. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
+          <BossCard />
 
           {/* 6. Leaderboard */}
           <div>

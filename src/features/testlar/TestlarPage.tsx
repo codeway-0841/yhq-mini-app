@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft, Search } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -94,12 +94,24 @@ export default function TestlarPage() {
 
   return (
     <div className="px-4 pt-4 pb-8 min-h-screen">
-      <div className="flex items-center gap-2 mb-5">
+      <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
         <h1 className="text-xl font-semibold">{tt('testlarTitle')}</h1>
+      </div>
+
+      {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
+      <div className="mb-4">
+        <button
+          type="button"
+          onClick={() => navigate('/qidiruv')}
+          className="flex w-full items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+        >
+          <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
+          <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
+        </button>
       </div>
 
       <div className="flex flex-col gap-3">
