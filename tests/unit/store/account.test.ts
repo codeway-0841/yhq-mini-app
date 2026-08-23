@@ -31,7 +31,7 @@ beforeEach(() => {
 })
 
 function seedUserA(): void {
-  useAppStore.setState({ user: userA, tariff: 'premium', streak: 7, xp: 60, totalCorrect: 42, displayName: 'Anvar_aka' })
+  useAppStore.setState({ user: userA, tariff: 'premium', streak: 7, xp: 60, league: 'gold', totalCorrect: 42, displayName: 'Anvar_aka' })
   useDailyStore.setState({ streaks: { yhq: 5 }, activityKey: '2026-08-07|yhq' })
   useAdaptiveStore.setState({ cardsBySubject: { yhq: { 1: {} as never } } })
   useTestSessionStore.getState().save({ mode: 'exam', index: 3 } as never)
@@ -59,6 +59,7 @@ describe('ensureAccountOwner', () => {
     expect(app.tariff).toBe('free')
     expect(app.streak).toBe(0)
     expect(app.xp).toBe(0)
+    expect(app.league).toBe('bronze')
     expect(app.totalCorrect).toBe(0)
     expect(app.displayName).toBeNull()
     expect(useDailyStore.getState().streaks).toEqual({})
