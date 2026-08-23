@@ -254,7 +254,8 @@ router.post(
 
 // ── BROADCAST (OMMAVIY XABARNOMA) ENDPOINTS ──
 
-const BroadcastSchema = z.object({
+/** Ommaviy xabarnoma payloadi — testlar ham SHU yagona manbani tekshiradi */
+export const BroadcastSchema = z.object({
   target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
   text: z.string().min(2).max(4000),
   imageUrl: z.string().url().max(1000).nullable().optional(),
@@ -264,7 +265,7 @@ const BroadcastSchema = z.object({
   testTelegramId: z.union([z.string(), z.number()]).nullable().optional(),
 })
 
-const BroadcastPreviewSchema = z.object({
+export const BroadcastPreviewSchema = z.object({
   target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
 })
 

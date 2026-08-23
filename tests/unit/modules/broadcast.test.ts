@@ -1,75 +1,63 @@
+/**
+ * Ommaviy xabarnoma payload validatsiyasi — SERVERDAGI haqiqiy zod sxemalari
+ * ustidan (`admin.router.ts`). Yuborish oqimining o'zi
+ * tests/integration/api/admin-broadcast.test.ts'da.
+ */
 import { describe, it, expect } from 'vitest'
-import { z } from 'zod'
+import { BroadcastSchema, BroadcastPreviewSchema } from '../../../server/modules/admin/admin.router'
 
-const BroadcastSchema = z.object({
-  target: z.enum(['all', 'free', 'premium', 'inactive_7d', 'active_today']),
-  text: z.string().min(2).max(4000),
-  imageUrl: z.string().url().max(1000).nullable().optional(),
-  imageData: z.string().max(10_000_000).nullable().optional(),
-  buttonText: z.string().max(64).nullable().optional(),
-  buttonUrl: z.string().max(1000).nullable().optional(),
-  testTelegramId: z.union([z.string(), z.number()]).nullable().optional(),
-})
+const base = { target: 'all' as const, text: 'Yangi aksiya boshlandi!' }
 
-describe('Admin Broadcast Module', () => {
-  it('validates a valid broadcast announcement payload with uploaded image data', () => {
-    const valid = {
-      target: 'all' as const,
-      text: '🔥 Yangi aksiya boshlandi!\n\nBarcha imtihonlarni bepul yeching!',
-      imageData: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD...',
-      buttonText: '🚀 Ilovani ochish',
+describe('BroadcastSchema', () => {
+  it('to\'liq payloadni (yuklangan rasm + tugma) qabul qiladi', () => {
+    const res = BroadcastSchema.safeParse({
+      ...base,
+      imageData: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD',
+      buttonText: 'Ilovani ochish',
       buttonUrl: 'https://t.me/kiwi_app_bot/start',
-    }
-    const res = BroadcastSchema.safeParse(valid)
+    })
     expect(res.success).toBe(true)
   })
 
-  it('rejects empty text or invalid target', () => {
-    const invalidText = {
-      target: 'free' as const,
-      text: '',
-    }
-    expect(BroadcastSchema.safeParse(invalidText).success).toBe(false)
-
-    const invalidTarget = {
-      target: 'random_group' as any,
-      text: 'Xabar matni',
-    }
-    expect(BroadcastSchema.safeParse(invalidTarget).success).toBe(false)
+  it('rasm/tugmasiz minimal payload ham yaroqli', () => {
+    expect(BroadcastSchema.safeParse(base).success).toBe(true)
   })
 
-  it('correctly calculates chunk batches for rate-limited Telegram sending', () => {
-    const totalUsers = 120
-    const chunkSize = 25
-    const chunks: number[][] = []
-
-    const userIds = Array.from({ length: totalUsers }, (_, i) => 100000 + i)
-    for (let i = 0; i < userIds.length; i += chunkSize) {
-      chunks.push(userIds.slice(i, i + chunkSize))
-    }
-
-    expect(chunks.length).toBe(5) // 25, 25, 25, 25, 20
-    expect(chunks[0].length).toBe(25)
-    expect(chunks[4].length).toBe(20)
+  it('noma\'lum target rad etiladi', () => {
+    expect(BroadcastSchema.safeParse({ ...base, target: 'vip' }).success).toBe(false)
+    expect(BroadcastSchema.safeParse({ ...base, target: 'inactive_7d' }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, target: 'active_today' }).success).toBe(true)
   })
 
-  it('distinguishes free vs premium target filtering logic', () => {
-    const now = new Date()
-    const sampleUsers = [
-      { id: '1001', tariff: 'free', premiumUntil: null },
-      { id: '1002', tariff: 'premium', premiumUntil: null }, // lifetime
-      { id: '1003', tariff: 'free', premiumUntil: new Date(now.getTime() + 86400000) }, // active trial
-      { id: '1004', tariff: 'free', premiumUntil: new Date(now.getTime() - 86400000) }, // expired
-    ]
+  it('matn chegaralari: 1 belgi kam, 4000 chegara, 4001 ko\'p', () => {
+    expect(BroadcastSchema.safeParse({ ...base, text: 'a' }).success).toBe(false)
+    expect(BroadcastSchema.safeParse({ ...base, text: 'ab' }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, text: 'a'.repeat(4000) }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, text: 'a'.repeat(4001) }).success).toBe(false)
+  })
 
-    const premiumUsers = sampleUsers.filter(
-      (u) => u.tariff === 'premium' || (u.premiumUntil && new Date(u.premiumUntil) > now)
-    )
-    const freeUsers = sampleUsers.filter(
-      (u) => u.tariff === 'free' && (!u.premiumUntil || new Date(u.premiumUntil) <= now)
-    )
+  it('imageUrl URL bo\'lishi shart, null ruxsat etiladi', () => {
+    expect(BroadcastSchema.safeParse({ ...base, imageUrl: 'not-a-url' }).success).toBe(false)
+    expect(BroadcastSchema.safeParse({ ...base, imageUrl: 'https://cdn.example.com/a.jpg' }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, imageUrl: null }).success).toBe(true)
+  })
 
-    expect(premiumUsers.map((u) => u.id)).toEqual(['1002', '1003'])
-    expect(freeUsers.map((u) => u.id)).toEqual(['1001', '1004'])
+  it('tugma matni 64 belgidan oshmaydi', () => {
+    expect(BroadcastSchema.safeParse({ ...base, buttonText: 'a'.repeat(64) }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, buttonText: 'a'.repeat(65) }).success).toBe(false)
+  })
+
+  it('testTelegramId string ham, raqam ham bo\'la oladi', () => {
+    expect(BroadcastSchema.safeParse({ ...base, testTelegramId: 12345678 }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, testTelegramId: '12345678' }).success).toBe(true)
+    expect(BroadcastSchema.safeParse({ ...base, testTelegramId: null }).success).toBe(true)
+  })
+})
+
+describe('BroadcastPreviewSchema', () => {
+  it('faqat targetni talab qiladi', () => {
+    expect(BroadcastPreviewSchema.safeParse({ target: 'premium' }).success).toBe(true)
+    expect(BroadcastPreviewSchema.safeParse({}).success).toBe(false)
+    expect(BroadcastPreviewSchema.safeParse({ target: 'nobody' }).success).toBe(false)
   })
 })
