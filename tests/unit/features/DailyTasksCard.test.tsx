@@ -67,6 +67,10 @@ describe('DailyTasksCard', () => {
     await waitFor(() => expect(mockClaim).toHaveBeenCalledWith('answers-20'))
     await waitFor(() => expect(useAppStore.getState().coins).toBe(260))
 
+    // Qator darhol "✓ Olindi" holatiga o'tadi (tugma o'rniga)
+    expect(await screen.findByText('Olindi')).toBeInTheDocument()
+    expect(screen.queryByRole('button')).toBeNull()
+
     // ~1.4s dan keyin holat serverdan qayta o'qiladi; olingan vazifa ro'yxatdan
     // chiqib ketadi (boshqa vazifa qolmagani uchun butun karta yo'qoladi)
     await waitFor(() => expect(mockGetTasks).toHaveBeenCalledTimes(2), { timeout: 4000 })

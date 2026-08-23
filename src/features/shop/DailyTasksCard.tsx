@@ -48,6 +48,10 @@ export default function DailyTasksCard() {
       playSound('win')
       setCelebrate(true)
       setRecentlyClaimed(taskId)
+      // Qatorni DARHOL "olingan" holatiga o'tkazamiz — aks holda "✓ Olindi"
+      // hech qachon ko'rinmaydi: server holati faqat 1.4s dan keyin qayta
+      // o'qiladi va o'shanda recentlyClaimed allaqachon tozalangan bo'ladi.
+      setTasks((prev) => prev?.map((t) => (t.id === taskId ? { ...t, claimed: true } : t)) ?? prev)
       // Tangani olgach 1.4s "✓ Olindi" ko'rsatilib, so'ng qator mayin o'chadi
       window.setTimeout(() => {
         setRecentlyClaimed(null)
