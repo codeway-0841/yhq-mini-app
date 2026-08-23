@@ -216,15 +216,7 @@ export default function Dashboard() {
             </Alert>
           )}
 
-          {/* 1. Carousel */}
-          <Carousel
-            lang={settings.language}
-            progressPct={continueInfo.pct}
-            lessonLabel={continueInfo.lessonLabel}
-            onContinue={continueInfo.go}
-          />
-
-          {/* 2. Today's Progress */}
+          {/* 1. Today's Progress */}
           <ProgressCard
             totalCorrect={totalCorrect}
             totalWrong={totalWrong}
@@ -235,8 +227,16 @@ export default function Dashboard() {
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
 
-          {/* 2b. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
+          {/* 2. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
+
+          {/* 3. Darsni davom ettirish (Carousel) */}
+          <Carousel
+            lang={settings.language}
+            progressPct={continueInfo.pct}
+            lessonLabel={continueInfo.lessonLabel}
+            onContinue={continueInfo.go}
+          />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">

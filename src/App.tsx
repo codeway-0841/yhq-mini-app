@@ -93,8 +93,10 @@ function Layout() {
   }, [location.pathname])
 
   return (
-    <div className="flex flex-col min-h-screen bg-canvas text-fg">
-      <div ref={pageRef} className="route-page flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
+    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-hidden">
+      {/* Har bir temaga moslashuvchi Dynamic Ambient Hero Glow */}
+      <div className="ambient-mesh-glow" aria-hidden="true" />
+      <div ref={pageRef} className="route-page relative z-10 flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />
