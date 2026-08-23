@@ -39,6 +39,9 @@ export const ApiProgressSchema = z.object({
    *  MUHIM: zod noma'lum maydonlarni TASHLAB yuboradi — bu yerda e'lon
    *  qilinmasa, server yuborgan xp client'ga umuman yetib bormaydi. */
   xp: z.number().optional(),
+  /** Haftalik liga darajasi (progress.league, cron yuritadi) — dashboard
+   *  kartasi shu qiymatni ko'rsatishi kerak, totalCorrect'dan taxmin emas. */
+  league: z.enum(['bronze', 'silver', 'gold', 'platinum']).optional(),
 })
 
 export const ApiSettingsSchema = z.object({

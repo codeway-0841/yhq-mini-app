@@ -116,7 +116,6 @@ export default function Dashboard() {
   const user            = useAppStore((s) => s.user)
   const displayName     = useAppStore((s) => s.displayName)
   const settings        = useAppStore((s) => s.settings)
-  const totalCorrect    = useAppStore((s) => s.totalCorrect)
   const xp              = useAppStore((s) => s.xp)
   const totalWrong      = useAppStore((s) => s.totalWrong)
   const savedQuestions  = useAppStore((s) => s.savedQuestions)
@@ -222,7 +221,6 @@ export default function Dashboard() {
 
           {/* 1. Today's Progress */}
           <ProgressCard
-            totalCorrect={totalCorrect}
             totalWrong={totalWrong}
             totalAnswered={uniqueSolvedCount}
             streak={dailyStreak}

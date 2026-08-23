@@ -61,9 +61,14 @@ function StatItem({ icon: Icon, value, label, iconBg, tone }: {
   )
 }
 
+/** progress.league (server) → i18n kalit — LeaderboardPage'dagi tarjimalar bilan bir xil. */
+const LEAGUE_TT_KEY = {
+  bronze: 'leagueBronze', silver: 'leagueSilver', gold: 'leagueGold', platinum: 'leaguePlat',
+} as const
+
 // ── Hero: umumiy progress ───────────────────────────────────────────────────
-export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnswered, streak, totalPool, lang, onStreakPreview }: {
-  totalCorrect: number; totalWrong: number; totalAnswered: number; streak: number
+export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, totalPool, lang, onStreakPreview }: {
+  totalWrong: number; totalAnswered: number; streak: number
   totalPool: number
   lang: 'uz' | 'ru'
   onStreakPreview?: () => void
@@ -81,7 +86,10 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   // XP endi SERVER hisobi (o'rganish hodisasiga qarab) — avval bu yerda
   // totalCorrect * 10 edi, ya'ni XP javob sonining ko'paytmasi bo'lib qolardi
   const xp = useAppStore((s) => s.xp)
-  const league = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
+  // Liga endi SERVER progress.league'dan (haftalik cron) — avval bu yerda
+  // totalCorrect chegaralaridan "o'ylab topilardi", reyting sahifasidagi
+  // haqiqiy liga bilan mos kelmasligi mumkin edi (FIXPLAN #60).
+  const league = useAppStore((s) => s.league)
 
   // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
   const shown = useCountUp(progressPct, 900)
@@ -139,7 +147,7 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
           <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
             tt={tt} ariaLabel={tt('intizomTitle')} />
           <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/25 text-pgold" />
-          <StatItem icon={Trophy} value={league} label={tt('ratingWord')} iconBg="bg-pblue/25 text-pblue" />
+          <StatItem icon={Trophy} value={tt(LEAGUE_TT_KEY[league])} label={tt('ratingWord')} iconBg="bg-pblue/25 text-pblue" />
         </div>
       </div>
 

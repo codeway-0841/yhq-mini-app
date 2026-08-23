@@ -54,6 +54,8 @@ interface AppState {
   streak:         number
   /** Umrbod XP (server hisoblaydi) — level shundan (shared/xp.ts levelFromXp) */
   xp:             number
+  /** Haftalik liga darajasi (server progress.league, cron yuritadi) */
+  league:         'bronze' | 'silver' | 'gold' | 'platinum'
   totalCorrect:   number
   totalWrong:     number
   totalAnswered:  number
@@ -189,6 +191,7 @@ export const useAppStore = create<AppState>()(
       settings:       { ...DEFAULT_SETTINGS },
       streak:         0,
       xp:             0,
+      league:         'bronze',
       totalCorrect:   0,
       totalWrong:     0,
       totalAnswered:  0,
@@ -327,6 +330,7 @@ export const useAppStore = create<AppState>()(
           settings:        data.settings,
           streak:          data.progress.streak,
           xp:              data.progress.xp ?? s.xp,
+          league:          data.progress.league ?? s.league,
           totalCorrect:    data.progress.totalCorrect,
           totalWrong:      data.progress.totalWrong,
           totalAnswered:   data.progress.totalAnswered,
@@ -369,6 +373,7 @@ export const useAppStore = create<AppState>()(
             settings:        data.settings,
             streak:          data.progress.streak,
             xp:              data.progress.xp ?? s.xp,
+            league:          data.progress.league ?? s.league,
             totalCorrect:    data.progress.totalCorrect,
             totalWrong:      data.progress.totalWrong,
             totalAnswered:   data.progress.totalAnswered,
@@ -427,6 +432,7 @@ export const useAppStore = create<AppState>()(
         settings:       s.settings,
         streak:         s.streak,
         xp:             s.xp,
+        league:         s.league,
         totalCorrect:   s.totalCorrect,
         totalWrong:     s.totalWrong,
         totalAnswered:  s.totalAnswered,

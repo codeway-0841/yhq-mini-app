@@ -63,6 +63,29 @@ describe('FullProfileSchema (contract validation)', () => {
     expect(parsed.data?.progress.xp).toBeUndefined()
   })
 
+  it('REGRESSIYA: server yuborgan league PARSE natijasida saqlanadi', () => {
+    // xp'dagi aynan shu xato: sxemada e'lon qilinmagan maydonni zod tashlab
+    // yuboradi — dashboard karta shu bilan haqiqiy liga o'rniga totalCorrect'dan
+    // "o'ylab topilgan" qiymatni ko'rsatib qolardi.
+    const parsed = FullProfileSchema.safeParse({
+      ...VALID_PROFILE,
+      progress: { ...VALID_PROFILE.progress, league: 'gold' },
+    })
+    expect(parsed.success).toBe(true)
+    expect(parsed.data?.progress.league).toBe('gold')
+  })
+
+  it('league yo\'q bo\'lsa ham o\'tadi (eski server javobi)', () => {
+    const parsed = FullProfileSchema.safeParse(VALID_PROFILE)
+    expect(parsed.success).toBe(true)
+    expect(parsed.data?.progress.league).toBeUndefined()
+  })
+
+  it('DRIFT: league registrydan tashqari qiymat bo\'lsa — rad etiladi', () => {
+    const bad = { ...VALID_PROFILE, progress: { ...VALID_PROFILE.progress, league: 'diamond' } }
+    expect(FullProfileSchema.safeParse(bad).success).toBe(false)
+  })
+
   it('isAdmin va phone ixtiyoriy (yo\'q bo\'lsa ham o\'tadi)', () => {
     const { isAdmin: _a, ...userNoAdmin } = VALID_PROFILE.user
     const p = FullProfileSchema.safeParse({ ...VALID_PROFILE, user: userNoAdmin })

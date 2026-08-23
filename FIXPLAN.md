@@ -480,19 +480,25 @@ yo'l qolmaydi.
 
 #### Keyingi sessiyada — birinchi ish
 
-- [ ] **60. Dashboard liga yorlig'i haqiqiy ligaga bog'lansin** (~20 daqiqa).
-  `src/features/dashboard/components/ProgressCard.tsx:84` hamon
-  `totalCorrect >= 1000 ? 'Platinum' : …` bilan liga "o'ylab topadi", haqiqiy
-  liga esa `progress.league` ustunida (haftalik cron yuritadi). Ya'ni kartadagi
-  liga bilan reyting sahifasidagi liga bir-biriga mos kelmasligi mumkin.
-  Qadamlar: (a) `toApiProgress` (`server/modules/users/users.service.ts:51`) ga
-  `league: row.league` qo'shish; (b) `ApiProgressSchema`
-  (`shared/contracts/profile.ts`) ga `league: z.enum(['bronze','silver','gold','platinum']).optional()`
-  — **zod e'lon qilinmagan maydonni tashlab yuboradi, xp bilan aynan shu xato
-  bo'lgan**; (c) store'ga `league` holati + persist + init/sync'da o'qish
-  (`src/shared/store/useAppStore.ts`); (d) ProgressCard shu qiymatni ko'rsatsin
-  (bosh harf bilan, i18n kerak bo'lsa yangi kalitlar UZ+RU); (e) test:
-  kontrakt regressiyasi + ProgressCard render.
+- [x] **60. Dashboard liga yorlig'i haqiqiy ligaga bog'lansin** — **TUGALLANDI.**
+  `toApiProgress` (`users.service.ts`) → `league: row.league`; `ApiProgressSchema`
+  + hand-authored `ApiProgress` TS interface (`src/shared/api/index.ts` — xp bilan
+  bir xil ikkilangan tip, alohida yangilash kerak edi) ikkalasiga ham
+  `league` optional maydon (xp'dagi aynan shu zod-tashlab-yuborish xatosi
+  regressiya testi bilan qamrab olindi). Store: `league` holati + persist +
+  hydrate/sync (`useAppStore.ts`, xp pattern'i aynan takrorlangan).
+  ProgressCard endi `useAppStore(s => s.league)` o'qiydi — `totalCorrect`
+  guess butunlay o'chirildi (prop ham kerak bo'lmay qoldi, Dashboard.tsx'dan
+  ham olib tashlandi). i18n: yangi kalit KERAK BO'LMADI —
+  `leagueBronze/Silver/Gold/Plat` allaqachon UZ+RU'da bor edi, hech qayerda
+  ishlatilmagan (endi ishlatiladi). Test: `contracts.test.ts` +3 (league
+  saqlanadi/yo'q/drift rad etiladi), yangi `ProgressCard.test.tsx` +5 (4 liga
+  darajasi tarjimasi + kam progress bilan ham haqiqiy league ko'rsatilishi —
+  guess'ga qaytish regressiyasi). *Chetga chiqarilgan:* `resetAccount` xp/league'ni
+  tozalamaydi (xp'da ham xuddi shu bo'shliq bor edi, oldindan mavjud — alohida
+  task sifatida flag qilindi).
+  *Verifikatsiya:* tsc×2 ✓, unit **638/638** ✓ (98 fayl), integration
+  **249/249** ✓ (32 fayl, real Neon test DB), lint 0 error ✓, vite build ✓.
 
 #### Keyingi ishlar (kelishilgan tartibda)
 

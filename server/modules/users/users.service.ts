@@ -58,6 +58,8 @@ export function toApiProgress(row: ProgressRow, solvedKeys: string[] = []) {
     solvedQuestions: solvedKeys,
     /** Umrbod XP — level shundan hisoblanadi (shared/xp.ts) */
     xp:              row.xp,
+    /** Haftalik liga darajasi — dashboard va reyting sahifasi bir xil manbadan o'qishi uchun */
+    league:          row.league,
   }
 }
 

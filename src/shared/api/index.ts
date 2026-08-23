@@ -179,6 +179,8 @@ export interface ApiProgress {
   solvedQuestions?: string[]
   /** Umrbod XP — level shundan hisoblanadi (shared/xp.ts). Eski server: undefined */
   xp?: number
+  /** Haftalik liga darajasi (server hisobi, cron yuritadi). Eski server: undefined */
+  league?: 'bronze' | 'silver' | 'gold' | 'platinum'
 }
 
 export interface ApiSettings {
