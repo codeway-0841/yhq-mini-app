@@ -455,6 +455,67 @@ yo'l qolmaydi.
 4. Bo'sh fanlarni "tez kunda" holatiga o'tkazish
 5. (odam kelgach) duel Elo, liga cohort, tezlik bo'yicha ball, imtihonga tayyorlik %
 
+### 9.7 Holat va keyingi sessiya rejasi (2026-08-23, oxirgi commit `aa3dae3`)
+
+#### Bajarilgan (master'da, CI yashil)
+
+- [x] **1-punkt — javob vaqtini yozish** (`9d785da`, migratsiya 0053).
+  `progress_questions.first_ms` / `last_ms`; `POST /result` ixtiyoriy `elapsedMs`
+  qabul qiladi (server 0..10 daqiqa oralig'iga kesadi); client `useAnswerTimer`
+  (test / speed / adaptive oqimlarida). Hech qanday ball/XP'ga ta'sir qilmaydi —
+  faqat yig'iladi. **Prod'da tasdiqlangan** (12 qator, 0.6–7.3s oralig'ida).
+- [x] **2-punkt — XP serverga + kunlik shiftlar** (`23d3d2c`, migratsiya 0054).
+  `progress.xp` + `daily_limits` jadvali; XP: birinchi to'g'ri 10, xato tuzatildi 15,
+  qolgani 0; shiftlar XP 500/kun, coin 50/kun (`shared/xp.ts` — yagona manba);
+  level `250 × n^1.5`; `/result` javobi haqiqiy mint qilingan coin va xp qaytaradi.
+- [x] **Bugfix — XP refreshdan keyin 0 bo'lib ketardi** (`9095e8c`).
+  Sabab: `shared/contracts/profile.ts` dagi zod sxemasida `xp` e'lon qilinmagan
+  edi, zod esa noma'lum maydonni tashlab yuboradi; ustiga store persist ro'yxatida
+  ham yo'q edi. Ikkalasi tuzatildi + regressiya testi.
+- [x] **Bugfix — level-up sahnasi jim qolardi** (`aa3dae3`).
+  `yhq-level-seen` localStorage yozuvida eski (shishgan) level turardi; endi
+  joriy leveldan yuqori bo'lsa qayta bazalanadi.
+- [x] **CI tuzatildi** (`d54517c`). Yangi integration testlar lokal bazadagi 1300
+  savolga tayangan edi, CI esa 3 ta seed savol bilan ishlaydi (`tests/integration/seed-db.ts`).
+
+#### Keyingi sessiyada — birinchi ish
+
+- [ ] **60. Dashboard liga yorlig'i haqiqiy ligaga bog'lansin** (~20 daqiqa).
+  `src/features/dashboard/components/ProgressCard.tsx:84` hamon
+  `totalCorrect >= 1000 ? 'Platinum' : …` bilan liga "o'ylab topadi", haqiqiy
+  liga esa `progress.league` ustunida (haftalik cron yuritadi). Ya'ni kartadagi
+  liga bilan reyting sahifasidagi liga bir-biriga mos kelmasligi mumkin.
+  Qadamlar: (a) `toApiProgress` (`server/modules/users/users.service.ts:51`) ga
+  `league: row.league` qo'shish; (b) `ApiProgressSchema`
+  (`shared/contracts/profile.ts`) ga `league: z.enum(['bronze','silver','gold','platinum']).optional()`
+  — **zod e'lon qilinmagan maydonni tashlab yuboradi, xp bilan aynan shu xato
+  bo'lgan**; (c) store'ga `league` holati + persist + init/sync'da o'qish
+  (`src/shared/store/useAppStore.ts`); (d) ProgressCard shu qiymatni ko'rsatsin
+  (bosh harf bilan, i18n kerak bo'lsa yangi kalitlar UZ+RU); (e) test:
+  kontrakt regressiyasi + ProgressCard render.
+
+#### Keyingi ishlar (kelishilgan tartibda)
+
+- [ ] **3-punkt — savol bazasini kengaytirish.** YHQ'da atigi 300 savol, faol
+  o'yinchi 4-5 kunda tugatadi (rus tilida 1000 ta). **Kontent qismini
+  foydalanuvchi beradi** — AI bilan YHQ javoblarini generatsiya qilish tavsiya
+  ETILMAYDI (noto'g'ri qoida real xavf). Kod qismi: import quvurini kengaytirish
+  (#53 — xlsx to'g'ridan o'qish, rasm ZIP, xato qatorlarni qayta eksport).
+- [ ] **4-punkt — bo'sh fanlarni "tez kunda" holatiga o'tkazish.** Fizika,
+  matematika, kimyo, tarix, biologiya, ingliz — kontenti yo'q, lekin oddiy fan
+  kabi ko'rinadi (yangi foydalanuvchi bo'sh ekran ko'radi). `shared/subjects.ts`
+  dagi `available` bayrog'i bor — UI'da "tez kunda" belgisi va bosilmaydigan holat.
+- [ ] **5-punkt (odam kelgach, ~30+ faol foydalanuvchi):** duel Elo (#41 bilan
+  birga), liga cohort (30 kishilik guruh), tezlik bo'yicha ball (1-punktda
+  yig'ilayotgan `first_ms` asosida), "imtihonga tayyorlik %" paneli.
+
+#### Kutilayotgan tekshiruv
+
+- [ ] Vercel deploy tugagach ilovada XP **60**, level **1** turishini tasdiqlash
+  (prod DB'da xp allaqachon 60). Eski foydalanuvchilarda XP 0 dan boshlanadi —
+  bu atayin: o'tmishdagi javoblarni "birinchi marta / tuzatildi" hodisalariga
+  ajratib bo'lmaydi.
+
 ### 9.5 Qilinmaydi (qaror qabul qilingan)
 
 - **Pul evaziga coin sotish** (Telegram Stars orqali) — foydalanuvchi rad etgan
