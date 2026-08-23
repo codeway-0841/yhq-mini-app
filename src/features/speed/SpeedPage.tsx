@@ -8,6 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { X, Zap, Check } from 'lucide-react'
+import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { haptics } from '../../platform/haptics'
@@ -46,6 +47,8 @@ export default function SpeedPage() {
   const advanceTimerRef = useRef<number | null>(null)
 
   const q = qs[idx]
+  // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
+  const answerTimer = useAnswerTimer(q?.id)
   const answered = selected !== null
 
   // Har savol uchun countdown — javob berilsa yoki vaqt tugasa to'xtaydi
@@ -81,7 +84,7 @@ export default function SpeedPage() {
     void (async () => {
       // selectedAnswer=null → server xato deb yozadi va reveal qaytaradi
       // (fatal rad etuvida reveal yo'q — jimgina keyingisiga o'tamiz)
-      const outcome = q ? await submitAnswer(q.id, null) : null
+      const outcome = q ? await submitAnswer(q.id, null, answerTimer.elapsed()) : null
       setBusy(false)
       if (outcome && !('fatal' in outcome)) setRevealed(outcome.correctAnswer)
       playSound('error')
@@ -96,7 +99,7 @@ export default function SpeedPage() {
     setBusy(true)
     void (async () => {
       // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (kalit client'da yo'q)
-      const outcome = await submitAnswer(q.id, optId)
+      const outcome = await submitAnswer(q.id, optId, answerTimer.elapsed())
       setBusy(false)
       // Fatal (4xx) — javob saqlanmadi; reveal yo'q (offline kabi qisqa o'tamiz)
       const scored = outcome && !('fatal' in outcome) ? outcome : null

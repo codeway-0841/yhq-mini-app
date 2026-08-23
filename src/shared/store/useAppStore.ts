@@ -93,7 +93,7 @@ interface AppState {
    * FAQAT shu natijaga tayanadi. null = offline (outbox'ga yozildi);
    * { fatal } = server QAT'IY rad etdi (4xx) — outbox'siz, javob yo'qoldi.
    */
-  submitAnswer:   (questionId: number, selectedAnswer: string | null) => Promise<SubmitResult>
+  submitAnswer:   (questionId: number, selectedAnswer: string | null, elapsedMs?: number) => Promise<SubmitResult>
   resetProgress:  () => void
   toggleSaved:    (questionId: number) => void
   syncFromServer: (userId: string) => Promise<void>
@@ -249,7 +249,7 @@ export const useAppStore = create<AppState>()(
         }
       },
 
-      submitAnswer: async (questionId, selectedAnswer) => {
+      submitAnswer: async (questionId, selectedAnswer, elapsedMs) => {
         // Read userId BEFORE set() — never call side-effects inside set()
         const userId = get().user?.id
         const subjectId = useSubjectStore.getState().subjectId
@@ -258,7 +258,7 @@ export const useAppStore = create<AppState>()(
         // Idempotency kaliti JAVOBGA bog'lanadi — outbox replay shu bilan.
         const clientToken = newId()
         try {
-          const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken })
+          const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken, ...(elapsedMs != null ? { elapsedMs } : {}) })
           // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
           if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak, coinSaved: res.coinSaved })
           // #40: mint bo'lgan tanga — server balansi bilan sinxron (client o'zi mint qilmaydi)
@@ -278,7 +278,7 @@ export const useAppStore = create<AppState>()(
           // qaytganda flushOutbox serverga yetkazadi (progress yo'qolmaydi,
           // clientToken tufayli ikki marta ham yozilmaydi).
           console.warn('postResult muvaffaqiyatsiz — outbox\'ga yozildi:', (err as Error)?.message ?? err)
-          enqueueOutbox(userId, 'result', { questionId, selectedAnswer, subjectId, date: todayStr(), clientToken })
+          enqueueOutbox(userId, 'result', { questionId, selectedAnswer, subjectId, date: todayStr(), clientToken, ...(elapsedMs != null ? { elapsedMs } : {}) })
           return null
         }
       },

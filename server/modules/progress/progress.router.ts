@@ -33,6 +33,9 @@ const ResultSchema = z.object({
   /** Offline outbox idempotency: har mantiqiy javob uchun 1 UUID.
    *  Replay shu token bilan keladi — counterlar FAQAT 1 marta yoziladi. */
   clientToken:    z.string().min(8).max(64).optional(),
+  /** Savol ko'rsatilgandan javobgacha ketgan vaqt (ms) — qiyinlikni
+   *  ma'lumotdan chiqarish uchun yig'iladi; ball/XP'ga ta'sir qilmaydi. */
+  elapsedMs:      z.number().int().min(0).max(600_000).optional(),
 })
 
 // POST /api/progress/:userId/result
@@ -44,7 +47,7 @@ router.post(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 
-    const { questionId, selectedAnswer, subjectId, clientToken } = req.body as z.infer<typeof ResultSchema>
+    const { questionId, selectedAnswer, subjectId, clientToken, elapsedMs } = req.body as z.infer<typeof ResultSchema>
     const date = tashkentDate()
     const subject = resolveSubject(subjectId)
     if (!subject.isActive) throw new AppError(400, 'Subject is not active')
@@ -55,7 +58,7 @@ router.post(
 
     // Progress counterlari + daily record + streak (+ coin mint) BITTA atomik SQL statement'da.
     const { updated, dailyStreak, duplicate, reason, coinBalance, coinSaved } = await progressRepository.recordAnswer({
-      userId: uid, correct, questionId, date, subjectId, clientToken,
+      userId: uid, correct, questionId, date, subjectId, clientToken, elapsedMs,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
 

@@ -5,6 +5,7 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { Brain, X, Check, CalendarClock } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
+import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore }      from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -84,6 +85,8 @@ export default function AdaptivePage() {
   ) as SRCard | undefined
 
   const q = questions.find((q) => q.id === currentId)
+  // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
+  const answerTimer = useAnswerTimer(currentId)
 
   // Track which option was selected so we can show correct/wrong feedback
   // before the store advances to the next question.
@@ -100,7 +103,7 @@ export default function AdaptivePage() {
 
     void (async () => {
       // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi.
-      const outcome = await submitAnswer(q.id, optionId)
+      const outcome = await submitAnswer(q.id, optionId, answerTimer.elapsed())
       // Fatal (4xx) — server rad etdi, javob saqlanmadi; reveal yo'q
       // (xato-feedback TestPage'da; adaptive oqimi davom etadi).
       const scored = outcome && !('fatal' in outcome) ? outcome : null

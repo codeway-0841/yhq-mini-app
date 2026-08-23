@@ -69,8 +69,18 @@ export const progressRepository = {
     date:         string
     subjectId:    string
     clientToken?: string
+    /** Savol ko'rsatilgandan javob berilgunga qadar ketgan vaqt (ms).
+     *  Client yuboradi; qiyinlikni keyinchalik MA'LUMOTDAN chiqarish uchun
+     *  yig'iladi (hech qanday ball/XP'ga hozir ta'sir qilmaydi). */
+    elapsedMs?:   number | null
   }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
+    // Ishonchsiz client qiymati: 0..10 daqiqa oralig'idan tashqarisi tashlanadi
+    // (fon rejimida qolgan tab soatlab "javob berdi" bo'lib ko'rinmasin).
+    const rawMs = input.elapsedMs
+    const elapsedMs = typeof rawMs === 'number' && Number.isFinite(rawMs)
+      ? Math.min(600_000, Math.max(0, Math.round(rawMs)))
+      : null
     const token = clientToken ?? null
     // Multi-fan identity: kalit `${subjectId}:${questionId}` formatida —
     // fanlar orasida xato qaydlari chalkashmaydi.
@@ -146,13 +156,17 @@ export const progressRepository = {
       ), q_write AS (
         -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
         -- correct bir marta true bo'lsa orqaga qaytmaydi (anti-farm gate manbai).
-        INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at)
-        SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now()
+        INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at, first_ms, last_ms)
+        SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now(),
+               ${elapsedMs}::int, ${elapsedMs}::int
         WHERE ${questionId}::int IS NOT NULL
           AND EXISTS (SELECT 1 FROM prog)
         ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
           SET correct = progress_questions.correct OR EXCLUDED.correct,
-              answered_at = now()
+              answered_at = now(),
+              -- first_ms FAQAT birinchi urinishda yoziladi (bo'sh bo'lsa to'ldiriladi)
+              first_ms = COALESCE(progress_questions.first_ms, EXCLUDED.first_ms),
+              last_ms = COALESCE(EXCLUDED.last_ms, progress_questions.last_ms)
         RETURNING user_id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:

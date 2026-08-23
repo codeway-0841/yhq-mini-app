@@ -134,6 +134,7 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         // Replay XUDDI SHU token bilan — server counterlarni bir martadan
         // ortiq yozmaydi (eski tokensiz yozuvlar: token'siz, bitta shot).
         ...(p.clientToken ? { clientToken: p.clientToken as string } : {}),
+        ...(typeof p.elapsedMs === 'number' ? { elapsedMs: p.elapsedMs } : {}),
       })
       resultSyncHandler?.({
         date:           p.date as string,

@@ -359,9 +359,20 @@ export const progressQuestions = pgTable('progress_questions', {
   /** Qachonlardir TO'G'RI yechilganmi (anti-farm gate: replay to'g'ri javob ball yozmaydi). Bir marta true bo'lsa orqaga qaytmaydi. */
   correct:    boolean('correct').default(false).notNull(),
   answeredAt: timestamp('answered_at').defaultNow().notNull(),
+  /** BIRINCHI urinishga ketgan vaqt (ms) — savol qiyinligini keyinchalik
+   *  ma'lumotdan chiqarish uchun (qo'lda "oson/qiyin" belgilanmaydi).
+   *  Faqat insert paytida yoziladi, keyingi urinishlar o'zgartirmaydi. */
+  firstMs:    integer('first_ms'),
+  /** OXIRGI urinishga ketgan vaqt (ms) — tezlik dinamikasi (bilib qoldimi?) */
+  lastMs:     integer('last_ms'),
 }, (t) => [
   primaryKey({ columns: [t.userId, t.subjectId, t.questionId] }),
   index('idx_progress_questions_user').on(t.userId, t.subjectId),
+  // Aql bovar qilmaydigan qiymatlar yozilmasin (soat/kun emas — 10 daqiqa shift)
+  check('chk_progress_questions_ms', sql`
+    (${t.firstMs} IS NULL OR (${t.firstMs} >= 0 AND ${t.firstMs} <= 600000))
+    AND (${t.lastMs} IS NULL OR (${t.lastMs} >= 0 AND ${t.lastMs} <= 600000))
+  `),
 ])
 
 export const userSettings = pgTable('settings', {

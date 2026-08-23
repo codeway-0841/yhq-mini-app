@@ -10,6 +10,7 @@ import { resolveExamMode } from '../../../shared/exam-presets'
 import { buildTopicBreakdown } from './topic-diagnosis'
 import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
 import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test-session'
+import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
 import SettingsModal from '../../shared/components/SettingsModal'
 import DialogOverlay from '../../shared/components/DialogOverlay'
@@ -121,6 +122,8 @@ export default function TestPage() {
   const [studyOpen, setStudyOpen]             = useState(false)
 
   const q         = activeQuestions[current]
+  // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
+  const answerTimer = useAnswerTimer(q?.id)
   const fontSize  = settings?.fontSize || 'medium'
   const selected  = selectedHistory[current] ?? null
   const answeredStatus = answers[current]
@@ -323,7 +326,7 @@ export default function TestPage() {
 
     // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
     void (async () => {
-      const outcome = await submitAnswer(questionId, optId)
+      const outcome = await submitAnswer(questionId, optId, answerTimer.elapsed())
       setSubmitting(false)
 
       // Fatal (4xx) — server QAT'IY rad etdi: javob SAQLANMADI (outbox'siz).

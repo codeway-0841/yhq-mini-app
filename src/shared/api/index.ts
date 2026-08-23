@@ -366,6 +366,8 @@ export const api = {
     subjectId: string
     /** Outbox idempotency kaliti — replay counterlarni qayta yozmaydi */
     clientToken?: string
+    /** Savol ko'rsatilgandan javobgacha ketgan vaqt (ms) — statistika uchun */
+    elapsedMs?: number
   }) => request<ResultResponse>(
     'POST', `/progress/${uid(userId)}/result`, data,
   ),

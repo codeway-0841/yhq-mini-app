@@ -1,0 +1,109 @@
+/**
+ * Javob vaqtini yozish — POST /api/progress/:userId/result `elapsedMs` maydoni.
+ *
+ * Nima uchun: savollarga qo'lda "oson/qiyin" bahosi qo'yilmaydi; buning o'rniga
+ * javob vaqti yig'iladi va qiyinlik keyinchalik MA'LUMOTDAN chiqariladi.
+ * Hozircha bu qiymat hech qanday ball/XP/coin'ga ta'sir qilmaydi — faqat
+ * `progress_questions.first_ms` / `last_ms` ustunlariga yoziladi.
+ */
+import { afterAll, beforeAll, describe, expect, it } from 'vitest'
+import request from 'supertest'
+import { and, eq } from 'drizzle-orm'
+import { createApp } from '../../../server/app'
+import { db } from '../../../server/db/connection'
+import { answerTokens, progress, progressQuestions, questions, users } from '../../../server/schema'
+
+const app = createApp()
+const UID = '998877670001'
+
+async function cleanup() {
+  await db.delete(answerTokens).where(eq(answerTokens.userId, UID))
+  await db.delete(users).where(eq(users.id, UID))   // cascade: progress, progress_questions
+}
+
+/** Shu foydalanuvchining berilgan savol bo'yicha yozuvi */
+async function row(questionId: number) {
+  const rows = await db.select().from(progressQuestions).where(and(
+    eq(progressQuestions.userId, UID),
+    eq(progressQuestions.subjectId, 'yhq'),
+    eq(progressQuestions.questionId, questionId),
+  ))
+  return rows[0]
+}
+
+let qIds: number[]
+
+beforeAll(async () => {
+  await cleanup()
+  await request(app).post('/api/init').send({
+    id: UID, first_name: 'Timing', last_name: 'Test', username: 'timing_test',
+  }).expect(200)
+
+  const rows = await db.select({ id: questions.id }).from(questions).limit(5)
+  expect(rows.length).toBeGreaterThanOrEqual(4)
+  qIds = rows.map((r) => r.id)
+})
+
+afterAll(cleanup)
+
+const answer = (questionId: number, body: Record<string, unknown>) =>
+  request(app).post(`/api/progress/${UID}/result`)
+    .send({ questionId, selectedAnswer: 'F1', subjectId: 'yhq', ...body })
+
+describe('POST /result — elapsedMs', () => {
+  it('javob vaqti first_ms va last_ms ga yoziladi', async () => {
+    const qid = qIds[0]!
+    await answer(qid, { elapsedMs: 4200 }).expect(200)
+
+    const r = await row(qid)
+    expect(r?.firstMs).toBe(4200)
+    expect(r?.lastMs).toBe(4200)
+  })
+
+  it('takroriy javobda first_ms O\'ZGARMAYDI, last_ms yangilanadi', async () => {
+    const qid = qIds[1]!
+    await answer(qid, { elapsedMs: 3000 }).expect(200)
+    await answer(qid, { elapsedMs: 900 }).expect(200)
+
+    const r = await row(qid)
+    expect(r?.firstMs).toBe(3000)   // birinchi urinish saqlanadi
+    expect(r?.lastMs).toBe(900)     // tezlashgani ko'rinadi
+  })
+
+  it('elapsedMs yuborilmasa qatorlar buzilmaydi (eski clientlar)', async () => {
+    const qid = qIds[2]!
+    await answer(qid, {}).expect(200)
+
+    const r = await row(qid)
+    expect(r).toBeDefined()
+    expect(r?.firstMs).toBeNull()
+    expect(r?.lastMs).toBeNull()
+  })
+
+  it('eski client vaqtsiz javob bersa — mavjud first_ms o\'chib ketmaydi', async () => {
+    const qid = qIds[3]!
+    await answer(qid, { elapsedMs: 5500 }).expect(200)
+    await answer(qid, {}).expect(200)   // vaqtsiz takror
+
+    const r = await row(qid)
+    expect(r?.firstMs).toBe(5500)
+    expect(r?.lastMs).toBe(5500)
+  })
+
+  it('yaroqsiz qiymat rad etiladi (manfiy, kasr, 10 daqiqadan uzun)', async () => {
+    const qid = qIds[0]!
+    await answer(qid, { elapsedMs: -1 }).expect(400)
+    await answer(qid, { elapsedMs: 12.5 }).expect(400)
+    await answer(qid, { elapsedMs: 600_001 }).expect(400)
+  })
+
+  it('vaqt ball/coin hisobiga TA\'SIR QILMAYDI', async () => {
+    const [before] = await db.select().from(progress).where(eq(progress.userId, UID))
+    const qid = qIds[4] ?? qIds[0]!
+    await answer(qid, { elapsedMs: 599_000 }).expect(200)   // juda sekin javob
+    const [after] = await db.select().from(progress).where(eq(progress.userId, UID))
+
+    // Javob hisoblandi (answered oshdi), lekin sekinligi uchun jarima yo'q
+    expect(after!.totalAnswered).toBe(before!.totalAnswered + 1)
+  })
+})
