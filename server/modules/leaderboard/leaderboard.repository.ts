@@ -167,9 +167,55 @@ export const leaderboardRepository = {
     }))
   },
 
+  /** Umumiy duel reytingi — umrbod `progress.octagon_wins` counteri bo'yicha */
+  async duelTopAllTime(limit: number, callerUserId: string | null): Promise<DuelLeaderboardEntry[]> {
+    const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
+
+    const rows = await db
+      .select({
+        userId:          progress.userId,
+        firstName:       users.firstName,
+        lastName:        users.lastName,
+        photoUrl:        users.photoUrl,
+        hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+        avatarFrame:     users.avatarFrame,
+        streak:          sql<number>`COALESCE(${progress.streak}, 0)`,
+        wins:            progress.octagonWins,
+      })
+      .from(progress)
+      .innerJoin(users, eq(users.id, progress.userId))
+      .where(sql`${progress.octagonWins} > 0`)
+      .orderBy(desc(progress.octagonWins), desc(progress.totalCorrect))
+      .limit(safeLimit)
+
+    return rows.map((r, i) => ({
+      rank:   i + 1,
+      userId: r.userId,
+      name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
+      score:  Number(r.wins),
+      streak: Number(r.streak),
+      isYou:  callerUserId !== null && r.userId === callerUserId,
+      photoUrl:        r.photoUrl || null,
+      hasCustomAvatar: !!r.hasCustomAvatar,
+      avatarFrame:     r.avatarFrame ?? null,
+      wins:   Number(r.wins),
+      // Counterda mag'lubiyat/durang tarixi yo'q — UI umumiy tabda W-L-D ko'rsatmaydi
+      losses: 0,
+      draws:  0,
+      winRate: 0,
+    }))
+  },
+
   /**
-   * Duel (Oktagon) reytingi — `duel_results` jadvalidan davr bo'yicha agregatsiya.
-   * Ball = davr ichida yig'ilgan g'alabalar; qo'shimcha W-L-D va g'alaba foizi.
+   * Duel (Oktagon) reytingi.
+   *
+   * Davr (kunlik/haftalik/oylik) — `duel_results` jadvalidan agregatsiya:
+   * ball = davr ichida yig'ilgan g'alabalar, ustiga W-L-D va g'alaba foizi.
+   *
+   * `all` (umumiy) — umrbod `progress.octagon_wins` counteri. `duel_results`
+   * faqat #52 deploy'idan keyingi duellarni biladi, counter esa undan oldingi
+   * butun tarixni saqlaydi; shuning uchun umumiy reyting counterdan o'qiydi
+   * (mag'lubiyat/durang tarixi yo'q — W-L-D nol qaytadi, UI uni yashiradi).
    */
   async duelTop(
     limit: number,
@@ -178,15 +224,14 @@ export const leaderboardRepository = {
   ): Promise<DuelLeaderboardEntry[]> {
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
 
+    if (timeframe === 'all') return this.duelTopAllTime(safeLimit, callerUserId)
+
     // Davr boshi Toshkent vaqti bo'yicha (UTC+5, DST yo'q) — created_at UTC saqlanadi
     const periodStart =
-      timeframe === 'daily'   ? todayTashkent()      :
-      timeframe === 'weekly'  ? weekStartTashkent()  :
-      timeframe === 'monthly' ? monthStartTashkent() : null
+      timeframe === 'daily'  ? todayTashkent()     :
+      timeframe === 'weekly' ? weekStartTashkent() : monthStartTashkent()
 
-    const dateCond = periodStart === null
-      ? sql`TRUE`
-      : sql`(${duelResults.createdAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${periodStart}::date`
+    const dateCond = sql`(${duelResults.createdAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${periodStart}::date`
 
     const duelScores = db
       .select({

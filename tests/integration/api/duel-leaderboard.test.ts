@@ -135,13 +135,23 @@ describe('leaderboard — duelTop', () => {
     expect(rows.find((r) => r.userId === D4)).toBeUndefined()
   })
 
-  it('all: barcha davrlar; octagon_wins counteriga bog\'liq emas', async () => {
+  it('all: umrbod octagon_wins counteridan o\'qiydi (deploy oldingi tarix ham)', async () => {
+    // D4'ning duel_results'da 5 qatori bor, counteri esa 999 — umumiy tab
+    // counterni ko'rsatadi (davr jadvali #52 deploy'idan keyingini biladi xolos)
     const rows = await leaderboardRepository.duelTop(100, null, 'all')
     const d4 = rows.find((r) => r.userId === D4)
 
-    expect(d4?.wins).toBe(5)          // octagon_wins = 999 bo'lsa ham 5
-    expect(d4?.score).toBe(5)
-    expect(d4?.winRate).toBe(100)
+    expect(d4?.score).toBe(999)
+    expect(d4?.wins).toBe(999)
+    // Counterda mag'lubiyat/durang tarixi yo'q — UI bu tabda W-L-D ko'rsatmaydi
+    expect(d4?.losses).toBe(0)
+    expect(d4?.draws).toBe(0)
+    expect(d4?.winRate).toBe(0)
+  })
+
+  it('all: octagon_wins = 0 bo\'lgan user ro\'yxatda yo\'q', async () => {
+    const rows = await leaderboardRepository.duelTop(100, null, 'all')
+    expect(rows.find((r) => r.userId === D3)).toBeUndefined()
   })
 
   it('teng g\'alabada sof farq (W−L) bo\'yicha saralaydi', async () => {

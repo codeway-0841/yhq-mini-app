@@ -6,6 +6,10 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
 
+/** Duel reytingi davrlari — 'all' umrbod counterdan, qolgani duel_results'dan */
+const RANK_TABS = ['daily', 'weekly', 'monthly', 'all'] as const
+type RankTab = typeof RANK_TABS[number]
+
 interface DuelLeaderboardViewProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
   user: { id: string; firstName: string; photoUrl?: string } | null | undefined
@@ -130,52 +134,40 @@ export function DuelLeaderboardView({
   user,
   onFind,
 }: DuelLeaderboardViewProps) {
-  // Duel Leaderboard filtri: Kunlik / Haftalik / Oylik
-  const [rankTab, setRankTab] = useState<'daily' | 'weekly' | 'monthly'>('daily')
-  const [dailyLeaders, setDailyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
-  const [weeklyLeaders, setWeeklyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
-  const [monthlyLeaders, setMonthlyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
+  // Duel Leaderboard filtri: Kunlik / Haftalik / Oylik / Umumiy
+  const [rankTab, setRankTab] = useState<RankTab>('daily')
+  const [leaders, setLeaders] = useState<Record<RankTab, DuelLeaderboardEntry[] | null>>({
+    daily: null, weekly: null, monthly: null, all: null,
+  })
   const [loadingLeaders, setLoadingLeaders] = useState(false)
 
   // Tanlangan davr bo'yicha real duel g'alabalarini yuklash
   useEffect(() => {
     setLoadingLeaders(true)
     api.getLeaderboardDuel(50, user?.id, rankTab)
-      .then((data) => {
-        if (rankTab === 'daily') setDailyLeaders(data)
-        else if (rankTab === 'weekly') setWeeklyLeaders(data)
-        else setMonthlyLeaders(data)
-      })
-      .catch(() => {
-        if (rankTab === 'daily') setDailyLeaders([])
-        else if (rankTab === 'weekly') setWeeklyLeaders([])
-        else setMonthlyLeaders([])
-      })
+      .then((data) => setLeaders((prev) => ({ ...prev, [rankTab]: data })))
+      .catch(() => setLeaders((prev) => ({ ...prev, [rankTab]: [] })))
       .finally(() => setLoadingLeaders(false))
   }, [rankTab, user?.id])
 
   // Joriy ro'yxat
-  const currentLeaderList: DuelLeaderboardEntry[] = useMemo(() => {
-    if (rankTab === 'daily') return dailyLeaders ?? []
-    if (rankTab === 'weekly') return weeklyLeaders ?? []
-    return monthlyLeaders ?? []
-  }, [rankTab, dailyLeaders, weeklyLeaders, monthlyLeaders])
-
-  const isLeaderboardLoading = loadingLeaders && (
-    (rankTab === 'daily' && dailyLeaders === null) ||
-    (rankTab === 'weekly' && weeklyLeaders === null) ||
-    (rankTab === 'monthly' && monthlyLeaders === null)
+  const currentLeaderList: DuelLeaderboardEntry[] = useMemo(
+    () => leaders[rankTab] ?? [],
+    [rankTab, leaders],
   )
+
+  const isLeaderboardLoading = loadingLeaders && leaders[rankTab] === null
 
   return (
     <div className="space-y-4">
       {/* Segmented Control Tabs (Global Button Style) */}
       <div className="flex gap-1.5 bg-psurface p-1 rounded-control border border-pline">
-        {(['daily', 'weekly', 'monthly'] as const).map((t) => {
+        {RANK_TABS.map((t) => {
           const label =
-            t === 'daily'   ? tt('dailyTab') :
-            t === 'weekly'  ? tt('weeklyTab') :
-            tt('monthlyTab')
+            t === 'daily'   ? tt('dailyTab')   :
+            t === 'weekly'  ? tt('weeklyTab')  :
+            t === 'monthly' ? tt('monthlyTab') :
+            tt('allTimeTab')
           const active = rankTab === t
 
           return (
@@ -217,9 +209,10 @@ export function DuelLeaderboardView({
         <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs">
           <Trophy size={32} className="mx-auto text-psubtle mb-2" />
           <h4 className="text-sm font-bold text-pfg">
-            {rankTab === 'daily'  ? tt('duelEmptyDaily')  :
-             rankTab === 'weekly' ? tt('duelEmptyWeekly') :
-             tt('duelEmptyMonthly')}
+            {rankTab === 'daily'   ? tt('duelEmptyDaily')   :
+             rankTab === 'weekly'  ? tt('duelEmptyWeekly')  :
+             rankTab === 'monthly' ? tt('duelEmptyMonthly') :
+             tt('duelEmptyAll')}
           </h4>
           <p className="text-xs text-psubtle mt-1">
             {tt('duelEmptyHint')}
@@ -287,12 +280,14 @@ export function DuelLeaderboardView({
                       {tt('duelWinsLabel').toLowerCase()}
                     </span>
                   </div>
-                  <span
-                    className="text-[10px] text-psubtle tabular-nums"
-                    title={`${tt('duelRecordLabel')} · ${tt('duelWinRateLabel')}`}
-                  >
-                    {entry.wins}–{entry.losses}–{entry.draws} · {entry.winRate}%
-                  </span>
+                  {rankTab !== 'all' && (
+                    <span
+                      className="text-[10px] text-psubtle tabular-nums"
+                      title={`${tt('duelRecordLabel')} · ${tt('duelWinRateLabel')}`}
+                    >
+                      {entry.wins}–{entry.losses}–{entry.draws} · {entry.winRate}%
+                    </span>
+                  )}
                 </div>
               </div>
             )
