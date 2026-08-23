@@ -51,7 +51,7 @@ const MAX_NAME_LEN        = 64
 // DEFAULT_OCTAGON_LIMITS.reconnectWindowMs / pauseBudgetMs.
 
 /** Duel / Xona PIN kod validatsiyasi: `duel-xxxxxx`, `room-xxxxxx`, 6-8 xonali PIN yoki xavfsiz belgilar (M-9: min 6 char brute-force oldini olish) */
-const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{6,16}|room-[a-z0-9]{6,16}|\d{6,8}|[a-z0-9]{6,12})$/i
+export const DUEL_CODE_RE = /^(?:duel-[a-z0-9]{6,16}|room-[a-z0-9]{6,16}|\d{6,8}|[a-z0-9]{6,12})$/i
 
 /** Canonical user id (Telegram raqam-string, telefon akkaunt 'p_<digits>' yoki email 'e_<hex>') */
 const WS_USER_ID_RE = /^(?:\d{1,20}|p_\d{9,15}|e_[0-9a-f]{32})$/
