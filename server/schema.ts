@@ -869,3 +869,33 @@ export const merchOrders = pgTable('merch_orders', {
   // migratsiyasida (`uq_merch_active_user_item`). Claim-first anti-race: parallel
   // buyurtmalarda debit faqat claim g'olibiga (double-charge imkonsiz).
 ])
+
+/**
+ * Duel (Oktagon) natijalari — har match uchun HAR ISHTIROKCHIGA bitta qator
+ * (bitta match = 2 qator; mehmon o'yinchi (`'0'`) uchun qator yozilmaydi).
+ *
+ * `progress.octagon_wins` umrbod hisoblagich bo'lib qoladi (yutuqlar + online
+ * ro'yxat), bu jadval esa davr bo'yicha reyting uchun: leaderboard `duelTop`
+ * kunlik/haftalik/oylik g'alaba-mag'lub-durangni shundan agregatlaydi.
+ */
+export const duelResults = pgTable('duel_results', {
+  id:         serial('id').primaryKey(),
+  matchId:    text('match_id').notNull(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** Raqib id'si; raqib mehmon bo'lsa null */
+  opponentId: text('opponent_id'),
+  result:     text('result').$type<'win' | 'lose' | 'draw'>().notNull(),
+  selfScore:  integer('self_score').default(0).notNull(),
+  oppScore:   integer('opp_score').default(0).notNull(),
+  /** Raqib diskonekt qilib taslim bo'ldimi (forfeit bilan yakunlangan match) */
+  forfeit:    boolean('forfeit').default(false).notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  // endMatch/forfeit ikkalasi ham ishga tushsa ham natija ikki marta yozilmaydi
+  unique('uq_duel_result_match_user').on(t.matchId, t.userId),
+  // duelTop davr filtri: created_at >= davr boshi + user_id bo'yicha agregatsiya
+  index('idx_duel_result_created').on(t.createdAt),
+  index('idx_duel_result_user_created').on(t.userId, t.createdAt),
+  check('chk_duel_result_kind', sql`${t.result} IN ('win','lose','draw')`),
+  check('chk_duel_result_scores', sql`${t.selfScore} >= 0 AND ${t.oppScore} >= 0`),
+])

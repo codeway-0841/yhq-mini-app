@@ -4,7 +4,7 @@
 
 import { desc, eq, sql } from 'drizzle-orm'
 import { db }                 from '../../db/connection'
-import { users, progress, dailyRecords } from '../../schema'
+import { users, progress, dailyRecords, duelResults } from '../../schema'
 
 export interface LeaderboardEntry {
   rank:   number
@@ -30,6 +30,15 @@ export interface WeeklyEntry {
   photoUrl:        string | null
   hasCustomAvatar: boolean
   avatarFrame:     string | null
+}
+
+/** Duel (Oktagon) reytingi qatori — ball = davr ichidagi g'alabalar soni */
+export interface DuelLeaderboardEntry extends LeaderboardEntry {
+  wins:   number
+  losses: number
+  draws:  number
+  /** Butun foiz (0..100): wins / (wins + losses + draws) */
+  winRate: number
 }
 
 /**
@@ -158,55 +167,90 @@ export const leaderboardRepository = {
     }))
   },
 
-  /** Duel (Oktagon) reytingi — progress.octagonWins bo'yicha eng kuchli g'oliblar */
+  /**
+   * Duel (Oktagon) reytingi — `duel_results` jadvalidan davr bo'yicha agregatsiya.
+   * Ball = davr ichida yig'ilgan g'alabalar; qo'shimcha W-L-D va g'alaba foizi.
+   */
   async duelTop(
     limit: number,
     callerUserId: string | null,
     timeframe: 'daily' | 'weekly' | 'monthly' | 'all' = 'all',
-  ): Promise<LeaderboardEntry[]> {
+  ): Promise<DuelLeaderboardEntry[]> {
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
 
-    let dateCond = sql`TRUE`
-    if (timeframe === 'daily') {
-      const today = todayTashkent()
-      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${today}::date`
-    } else if (timeframe === 'weekly') {
-      const weekStart = weekStartTashkent()
-      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${weekStart}::date`
-    } else if (timeframe === 'monthly') {
-      const monthStart = monthStartTashkent()
-      dateCond = sql`(${progress.updatedAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${monthStart}::date`
-    }
+    // Davr boshi Toshkent vaqti bo'yicha (UTC+5, DST yo'q) — created_at UTC saqlanadi
+    const periodStart =
+      timeframe === 'daily'   ? todayTashkent()      :
+      timeframe === 'weekly'  ? weekStartTashkent()  :
+      timeframe === 'monthly' ? monthStartTashkent() : null
+
+    const dateCond = periodStart === null
+      ? sql`TRUE`
+      : sql`(${duelResults.createdAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${periodStart}::date`
+
+    const duelScores = db
+      .select({
+        userId: duelResults.userId,
+        wins:   sql<number>`COUNT(*) FILTER (WHERE ${duelResults.result} = 'win')`.as('wins'),
+        losses: sql<number>`COUNT(*) FILTER (WHERE ${duelResults.result} = 'lose')`.as('losses'),
+        draws:  sql<number>`COUNT(*) FILTER (WHERE ${duelResults.result} = 'draw')`.as('draws'),
+      })
+      .from(duelResults)
+      .where(dateCond)
+      .groupBy(duelResults.userId)
+      .as('duel_scores')
 
     const rows = await db
       .select({
-        userId:          progress.userId,
+        userId:          users.id,
         firstName:       users.firstName,
         lastName:        users.lastName,
         photoUrl:        users.photoUrl,
         hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
         avatarFrame:     users.avatarFrame,
-        streak:          progress.streak,
-        score:           progress.octagonWins,
+        streak:          sql<number>`COALESCE(${progress.streak}, 0)`,
+        wins:            duelScores.wins,
+        losses:          duelScores.losses,
+        draws:           duelScores.draws,
       })
-      .from(progress)
-      .innerJoin(users, eq(users.id, progress.userId))
-      .where(sql`${progress.octagonWins} > 0 AND ${dateCond}`)
-      .orderBy(desc(progress.octagonWins), desc(progress.totalCorrect))
+      .from(users)
+      .leftJoin(progress, eq(progress.userId, users.id))
+      .innerJoin(duelScores, eq(duelScores.userId, users.id))
+      .where(sql`${duelScores.wins} > 0`)
+      // G'alaba soni birinchi; teng bo'lsa sof farq (W−L), keyin duranglar.
+      // Win rate bo'yicha saralamaymiz: 1/1 = 100% yangi o'yinchi 20 g'alabalidan
+      // yuqori chiqib qolmasin.
+      .orderBy(
+        desc(duelScores.wins),
+        desc(sql`${duelScores.wins} - ${duelScores.losses}`),
+        desc(duelScores.draws),
+      )
       .limit(safeLimit)
 
-    return rows.map((r, i) => ({
-      rank:   i + 1,
-      userId: r.userId,
-      name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
-      score:  Number(r.score),
-      streak: Number(r.streak),
-      isYou:  callerUserId !== null && r.userId === callerUserId,
-      photoUrl:        r.photoUrl || null,
-      hasCustomAvatar: !!r.hasCustomAvatar,
-      avatarFrame:     r.avatarFrame ?? null,
-    }))
+    return rows.map((r, i) => {
+      const wins   = Number(r.wins)
+      const losses = Number(r.losses)
+      const draws  = Number(r.draws)
+      const played = wins + losses + draws
+
+      return {
+        rank:   i + 1,
+        userId: r.userId,
+        name:   `${r.firstName} ${r.lastName ?? ''}`.trim(),
+        score:  wins,
+        streak: Number(r.streak),
+        isYou:  callerUserId !== null && r.userId === callerUserId,
+        photoUrl:        r.photoUrl || null,
+        hasCustomAvatar: !!r.hasCustomAvatar,
+        avatarFrame:     r.avatarFrame ?? null,
+        wins,
+        losses,
+        draws,
+        winRate: played > 0 ? Math.round((wins * 100) / played) : 0,
+      }
+    })
   },
+
   async topN(limit: number, callerUserId: string | null): Promise<LeaderboardEntry[]> {
     // Clamp here as well — defense in depth in case router validation is bypassed
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)

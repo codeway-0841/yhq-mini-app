@@ -253,7 +253,6 @@ export function IdleScreen({
           <DuelLeaderboardView
             tt={tt}
             user={user}
-            language={language}
             onFind={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
           />
         )}

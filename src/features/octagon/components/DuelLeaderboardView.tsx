@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { Trophy, Crown, Swords } from 'lucide-react'
-import { api, type LeaderboardEntry, avatarSrcFor } from '../../../shared/api'
+import { api, type DuelLeaderboardEntry, avatarSrcFor } from '../../../shared/api'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -9,7 +9,6 @@ import { cn } from '../../../shared/lib/cn'
 interface DuelLeaderboardViewProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
   user: { id: string; firstName: string; photoUrl?: string } | null | undefined
-  language: 'uz' | 'ru'
   onFind: () => void
 }
 
@@ -49,7 +48,7 @@ function UserAvatar({ name, src, frame, size = 'sm' }: {
  * 👑 Top-3 Arc Showcase (Leaderboard bilan 100% bir xil yaltiroq Oltin, Kumush va Bronza nishonlari)
  */
 function Top3ArcStage({ top3, tt }: {
-  top3: readonly LeaderboardEntry[]
+  top3: readonly DuelLeaderboardEntry[]
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
 }) {
   const first  = top3[0]
@@ -129,14 +128,13 @@ function Top3ArcStage({ top3, tt }: {
 export function DuelLeaderboardView({
   tt,
   user,
-  language,
   onFind,
 }: DuelLeaderboardViewProps) {
   // Duel Leaderboard filtri: Kunlik / Haftalik / Oylik
   const [rankTab, setRankTab] = useState<'daily' | 'weekly' | 'monthly'>('daily')
-  const [dailyLeaders, setDailyLeaders] = useState<LeaderboardEntry[] | null>(null)
-  const [weeklyLeaders, setWeeklyLeaders] = useState<LeaderboardEntry[] | null>(null)
-  const [monthlyLeaders, setMonthlyLeaders] = useState<LeaderboardEntry[] | null>(null)
+  const [dailyLeaders, setDailyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
+  const [weeklyLeaders, setWeeklyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
+  const [monthlyLeaders, setMonthlyLeaders] = useState<DuelLeaderboardEntry[] | null>(null)
   const [loadingLeaders, setLoadingLeaders] = useState(false)
 
   // Tanlangan davr bo'yicha real duel g'alabalarini yuklash
@@ -157,7 +155,7 @@ export function DuelLeaderboardView({
   }, [rankTab, user?.id])
 
   // Joriy ro'yxat
-  const currentLeaderList: LeaderboardEntry[] = useMemo(() => {
+  const currentLeaderList: DuelLeaderboardEntry[] = useMemo(() => {
     if (rankTab === 'daily') return dailyLeaders ?? []
     if (rankTab === 'weekly') return weeklyLeaders ?? []
     return monthlyLeaders ?? []
@@ -219,14 +217,12 @@ export function DuelLeaderboardView({
         <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs">
           <Trophy size={32} className="mx-auto text-psubtle mb-2" />
           <h4 className="text-sm font-bold text-pfg">
-            {rankTab === 'daily'
-              ? (language === 'ru' ? 'Сегодня дуэлей пока не было' : 'Bugun hali duellar o‘tkazilmadi')
-              : rankTab === 'weekly'
-              ? (language === 'ru' ? 'На этой неделе дуэлей пока не было' : 'Bu hafta hali duellar o‘tkazilmadi')
-              : (language === 'ru' ? 'В этом месяце дуэлей пока не было' : 'Bu oy hali duellar o‘tkazilmadi')}
+            {rankTab === 'daily'  ? tt('duelEmptyDaily')  :
+             rankTab === 'weekly' ? tt('duelEmptyWeekly') :
+             tt('duelEmptyMonthly')}
           </h4>
           <p className="text-xs text-psubtle mt-1">
-            {language === 'ru' ? 'Станьте первым победителем в рейтинге!' : 'Reytingda birinchi g‘olib bo‘ling!'}
+            {tt('duelEmptyHint')}
           </p>
           <button
             type="button"
@@ -278,16 +274,24 @@ export function DuelLeaderboardView({
                   </span>
                 </div>
 
-                {/* Score: G'alabalar soni (Duel Wins) */}
-                <div className="flex items-baseline gap-1 shrink-0">
-                  <span className={cn(
-                    'font-display text-[13px] font-bold tabular-nums',
-                    isYou ? 'text-pprimary' : 'text-pfg'
-                  )}>
-                    {entry.score}
-                  </span>
-                  <span className="text-[11px] font-normal text-psubtle">
-                    {tt('duelWinsLabel').toLowerCase()}
+                {/* Score: davr ichidagi g'alabalar + W-L-D / g'alaba foizi */}
+                <div className="flex flex-col items-end shrink-0">
+                  <div className="flex items-baseline gap-1">
+                    <span className={cn(
+                      'font-display text-[13px] font-bold tabular-nums',
+                      isYou ? 'text-pprimary' : 'text-pfg'
+                    )}>
+                      {entry.score}
+                    </span>
+                    <span className="text-[11px] font-normal text-psubtle">
+                      {tt('duelWinsLabel').toLowerCase()}
+                    </span>
+                  </div>
+                  <span
+                    className="text-[10px] text-psubtle tabular-nums"
+                    title={`${tt('duelRecordLabel')} · ${tt('duelWinRateLabel')}`}
+                  >
+                    {entry.wins}–{entry.losses}–{entry.draws} · {entry.winRate}%
                   </span>
                 </div>
               </div>

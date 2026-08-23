@@ -34,6 +34,7 @@ import { getProvider } from './providers'
 import { db } from './db/connection'
 import { users, progress } from './schema'
 import { progressRepository } from './modules/progress/progress.repository'
+import type { DuelResultRow } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
 import { registerInterval } from './utils/shutdown'
 import type { LeaderboardEntry } from './modules/leaderboard/leaderboard.repository'
@@ -177,6 +178,8 @@ interface Match {
   /** userId → qolgan pauza byudjeti (ms). Tugagan o'yinchi grace OLMAYDI (forfeit) */
   pauseBudget:     Map<string, number>
   gapTimer:        ReturnType<typeof setTimeout> | null  // rounds orasidagi 1s pauza
+  /** Natija `duel_results`ga yozildimi — endMatch va forfeit ikki marta yozmasin */
+  recorded?:       boolean
 }
 
 // ── Module state ───────────────────────────────────────────────────────────
@@ -473,6 +476,12 @@ function endMatch(match: Match): void {
       .catch((err) => console.error('[octagon] addOctagonWin failed:', err?.message ?? err))
   }
 
+  // Davr reytingi (kunlik/haftalik/oylik) uchun timestamp'li natija — draw ham yoziladi
+  recordDuelResults(match, [
+    { userId: p1.userId, opponentId: p2.userId, selfScore: s1, oppScore: s2, result: result(s1, s2) },
+    { userId: p2.userId, opponentId: p1.userId, selfScore: s2, oppScore: s1, result: result(s2, s1) },
+  ], false)
+
   cleanupMatch(match)
 }
 
@@ -502,8 +511,62 @@ function forfeitDisconnected(match: Match, userId: string): void {
       void progressRepository.addOctagonWin(opp.userId)
         .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
     }
+    const oppScore  = match.scores.get(opp.userId) ?? 0
+    const selfScore = match.scores.get(userId)     ?? 0
+    recordDuelResults(match, [
+      { userId: opp.userId, opponentId: userId,     selfScore: oppScore,  oppScore: selfScore, result: 'win'  },
+      { userId,             opponentId: opp.userId, selfScore,            oppScore,            result: 'lose' },
+    ], true)
   }
   cleanupMatch(match)
+}
+
+/** Bitta o'yinchining match yakunidagi natijasi (DB qatoriga aylantirilgunga qadar) */
+export interface DuelOutcome {
+  userId:     string
+  opponentId: string
+  selfScore:  number
+  oppScore:   number
+  result:     'win' | 'lose' | 'draw'
+}
+
+/**
+ * Match yakunini `duel_results` qatorlariga aylantirish — mehmon (`'0'`)
+ * o'yinchilar uchun qator yozilmaydi, raqib mehmon bo'lsa opponentId null.
+ * Pure funksiya (testlanadi); yozishning o'zi `recordDuelResults`da.
+ */
+export function buildDuelResultRows(
+  matchId: string,
+  outcomes: ReadonlyArray<DuelOutcome>,
+  forfeit: boolean,
+): DuelResultRow[] {
+  return outcomes
+    .filter((o) => o.userId !== '0')
+    .map((o) => ({
+      matchId,
+      userId:     o.userId,
+      opponentId: o.opponentId === '0' ? null : o.opponentId,
+      result:     o.result,
+      selfScore:  o.selfScore,
+      oppScore:   o.oppScore,
+      forfeit,
+    }))
+}
+
+/**
+ * Duel natijalarini `duel_results`ga yozish (fire-and-forget).
+ * `match.recorded` bayrog'i endMatch va forfeit ketma-ket ishga tushsa ham
+ * ikkinchi yozuvni to'xtatadi (DB'da (match_id, user_id) unique ham bor).
+ */
+function recordDuelResults(match: Match, outcomes: ReadonlyArray<DuelOutcome>, forfeit: boolean): void {
+  if (match.recorded) return
+  match.recorded = true
+
+  const rows = buildDuelResultRows(match.id, outcomes, forfeit)
+  if (rows.length === 0) return
+
+  void progressRepository.recordDuelResults(rows)
+    .catch((err) => console.error('[octagon] recordDuelResults failed:', err?.message ?? err))
 }
 
 /**

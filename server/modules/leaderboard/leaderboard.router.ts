@@ -3,6 +3,7 @@
  */
 
 import { Router }                     from 'express'
+import { z }                          from 'zod'
 import { wrap }                       from '../../middleware/error-handler'
 import { parseUserId, parseLimit }    from '../../utils/parse'
 import { leaderboardRepository }      from './leaderboard.repository'
@@ -11,6 +12,9 @@ import { getOnlineUsers }            from '../../octagon'
 import { getLatestTournamentWinners, getTournamentHistory } from './tournament-prize.service'
 
 const router = Router()
+
+/** mode=duel uchun davr filtri — noma'lum qiymat 400 bermasin, 'all'ga tushadi */
+const DuelTimeframeSchema = z.enum(['daily', 'weekly', 'monthly', 'all']).catch('all')
 
 // GET /api/leaderboard/tournament-winners → oxirgi haftalik turnir g'oliblari
 router.get(
@@ -63,7 +67,7 @@ router.get(
       return
     }
     if (mode === 'duel') {
-      const timeframe = (String(req.query['timeframe'] ?? 'all')) as 'daily' | 'weekly' | 'monthly' | 'all'
+      const timeframe = DuelTimeframeSchema.parse(req.query['timeframe'] ?? 'all')
       res.json(await leaderboardRepository.duelTop(limit, callerUid, timeframe))
       return
     }

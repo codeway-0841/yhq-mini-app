@@ -4,7 +4,7 @@
 
 import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
-import { progress }            from '../../schema'
+import { progress, duelResults } from '../../schema'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
@@ -17,6 +17,17 @@ import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
  * Jimgina cap: javob "duplicate" no-op sifatida qaytariladi (xato YO'Q).
  */
 export const DAILY_ANSWER_CREDIT = 1000
+
+/** Bitta duel ishtirokchisining natijasi (`duel_results` qatori) */
+export interface DuelResultRow {
+  matchId:    string
+  userId:     string
+  opponentId: string | null
+  result:     'win' | 'lose' | 'draw'
+  selfScore:  number
+  oppScore:   number
+  forfeit:    boolean
+}
 
 export const progressRepository = {
   async ensureExists(userId: string): Promise<void> {
@@ -252,6 +263,21 @@ export const progressRepository = {
         octagonWins: sql`COALESCE(${progress.octagonWins}, 0) + 1`,
         updatedAt:   sql`now()`,
       },
+    })
+  },
+
+  /**
+   * Duel natijalarini yozish — har ishtirokchiga bitta qator (mehmonlar
+   * chaqiruvchi tomonda filtrlanadi). Leaderboard `duelTop` kunlik/haftalik/
+   * oylik reytingni shu jadvaldan agregatlaydi.
+   *
+   * Idempotent: (match_id, user_id) unique — endMatch va forfeit ikkalasi ham
+   * ishga tushib qolsa, ikkinchisi jimgina tashlab yuboriladi.
+   */
+  async recordDuelResults(rows: DuelResultRow[]): Promise<void> {
+    if (rows.length === 0) return
+    await db.insert(duelResults).values(rows).onConflictDoNothing({
+      target: [duelResults.matchId, duelResults.userId],
     })
   },
 

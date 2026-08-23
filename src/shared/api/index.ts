@@ -470,7 +470,7 @@ export const api = {
     ),
 
   getLeaderboardDuel: (limit: number, userId?: string, timeframe?: 'daily' | 'weekly' | 'monthly' | 'all') =>
-    request<LeaderboardEntry[]>(
+    request<DuelLeaderboardEntry[]>(
       'GET',
       `/leaderboard?limit=${limit}&mode=duel${timeframe && timeframe !== 'all' ? `&timeframe=${timeframe}` : ''}${userId ? `&userId=${uid(userId)}` : ''}`
     ),
@@ -971,6 +971,15 @@ export interface LeaderboardEntry {
   photoUrl?:        string | null
   hasCustomAvatar?: boolean
   avatarFrame?:     string | null
+}
+
+/** Duel (Oktagon) reytingi qatori — score = davr ichidagi g'alabalar soni */
+export interface DuelLeaderboardEntry extends LeaderboardEntry {
+  wins:   number
+  losses: number
+  draws:  number
+  /** Butun foiz (0..100) */
+  winRate: number
 }
 
 /** Chempionlar tarixi (#47) — bitta davr g'olibi */
