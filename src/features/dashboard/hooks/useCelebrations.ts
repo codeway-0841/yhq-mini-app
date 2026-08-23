@@ -19,6 +19,14 @@ export function useCelebrations(level: number, dailyStreak: number, subjectId: s
         return
       }
       const seen = Number(raw)
+      // Level endi SERVER XP'sidan hisoblanadi (avval totalCorrect/50 edi va
+      // sun'iy baland chiqardi). Eski yozuv joriy leveldan YUQORI bo'lsa —
+      // uni pasaytiramiz, aks holda foydalanuvchi eski "shishgan" levelga
+      // qaytib chiqmaguncha level-up sahnasi umuman ko'rinmay qolardi.
+      if (!Number.isFinite(seen) || seen > level) {
+        localStorage.setItem('yhq-level-seen', String(level))
+        return
+      }
       if (level > seen) {
         localStorage.setItem('yhq-level-seen', String(level))
         const t = setTimeout(() => setLevelUp(level), 700)
