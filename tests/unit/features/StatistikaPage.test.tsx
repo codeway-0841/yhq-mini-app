@@ -24,6 +24,7 @@ import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
 import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import { questionKey } from '../../../shared/subjects'
+import { xpForLevel } from '../../../shared/xp'
 
 const today = () => new Date().toLocaleDateString('sv-SE')
 
@@ -48,6 +49,7 @@ beforeEach(() => {
     settings: { ...useAppStore.getState().settings, language: 'uz' },
     user: { id: '12345', firstName: 'Ali' } as never,
     totalCorrect: 120, totalWrong: 30, totalAnswered: 150,
+    xp: xpForLevel(3),   // level SERVER XP'sidan hisoblanadi (totalCorrect emas)
     wrongByTicket: {},
   })
 })
@@ -56,13 +58,13 @@ describe('StatistikaPage', () => {
   it('level, aniqlik va seriyani counterlardan hisoblaydi', () => {
     render(<StatistikaPage />)
 
-    expect(screen.getByText('3')).toBeInTheDocument()     // level = 120/50 + 1
+    expect(screen.getByText('3')).toBeInTheDocument()     // level = levelFromXp(xp)
     expect(screen.getByText('80%')).toBeInTheDocument()   // aniqlik = 120/150
     expect(screen.getByText('5')).toBeInTheDocument()     // kunlik seriya
   })
 
   it('javob berilmagan holatda aniqlik 0% (nolga bo\'linish yo\'q)', () => {
-    useAppStore.setState({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0 })
+    useAppStore.setState({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, xp: 0 })
     render(<StatistikaPage />)
 
     expect(screen.getByText('0%')).toBeInTheDocument()

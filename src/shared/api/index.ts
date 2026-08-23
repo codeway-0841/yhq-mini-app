@@ -177,6 +177,8 @@ export interface ApiProgress {
   /** Wrong-answer counts keyed by question id. */
   wrongByTicket: Record<string, number>
   solvedQuestions?: string[]
+  /** Umrbod XP — level shundan hisoblanadi (shared/xp.ts). Eski server: undefined */
+  xp?: number
 }
 
 export interface ApiSettings {
@@ -852,6 +854,9 @@ export interface ResultResponse {
   coinBalance?: number | null
   /** Streak coin-save: shu javob uzilgan seriyani 50 coin evaziga saqladi */
   coinSaved?: boolean
+  /** Umrbod XP (server hisobi) va shu javobda berilgani */
+  xp?: number | null
+  xpEarned?: number
 }
 
 /** Do'kon xaridi javobi (#40) */

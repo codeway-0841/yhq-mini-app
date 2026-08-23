@@ -335,6 +335,10 @@ export const progress = pgTable('progress', {
   octagonWins:  integer('octagon_wins').default(0).notNull(),
   /** Haftalik liga darajasi — cron har dushanba 30% otiradi/tushiradi */
   league:       text('league').default('bronze').notNull(),
+  /** Umrbod XP — o'rganish HODISASIGA qarab beriladi (birinchi to'g'ri javob,
+   *  xatoni tuzatish), `total_correct` bilan bir xil emas. Level shundan
+   *  hisoblanadi (`shared/xp.ts`). Sarflanmaydi, nolga tushmaydi. */
+  xp:           integer('xp').default(0).notNull(),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   // Leaderboard queries sort by totalCorrect
@@ -342,7 +346,7 @@ export const progress = pgTable('progress', {
   // Data integrity: counterlar manfiy bo'la olmaydi va summa idempotent hisoblanishi shart
   check('chk_progress_nonnegative', sql`
     ${t.totalCorrect} >= 0 AND ${t.totalWrong} >= 0 AND ${t.totalAnswered} >= 0
-    AND ${t.streak} >= 0 AND ${t.octagonWins} >= 0
+    AND ${t.streak} >= 0 AND ${t.octagonWins} >= 0 AND ${t.xp} >= 0
   `),
   check('chk_progress_sum', sql`${t.totalAnswered} = ${t.totalCorrect} + ${t.totalWrong}`),
   // Registrydan tashqari liga qiymati yozilmasligi kerak (LEAGUE_ORDER bilan sinxron)
@@ -373,6 +377,29 @@ export const progressQuestions = pgTable('progress_questions', {
     (${t.firstMs} IS NULL OR (${t.firstMs} >= 0 AND ${t.firstMs} <= 600000))
     AND (${t.lastMs} IS NULL OR (${t.lastMs} >= 0 AND ${t.lastMs} <= 600000))
   `),
+])
+
+/**
+ * Kunlik shiftlar hisobi — bitta foydalanuvchi bir kunda qancha XP va coin
+ * ISHLAB TOPGANI (`shared/xp.ts` dagi XP_DAILY_CAP / COINS_DAILY_ANSWER_CAP).
+ *
+ * Nega alohida jadval: shift FAN bo'yicha emas, FOYDALANUVCHI bo'yicha —
+ * `daily_records` (user, date, subject) buni bera olmaydi. Yozuv `recordAnswer`
+ * CTE'sining bir qismi, ya'ni javob bilan bitta atomik statementda.
+ */
+export const dailyLimits = pgTable('daily_limits', {
+  userId:       text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** 'YYYY-MM-DD' — Asia/Tashkent (daily_records bilan bir xil manba) */
+  date:         text('date').notNull(),
+  /** Shu kuni berilgan XP (shiftgacha) */
+  xpEarned:     integer('xp_earned').default(0).notNull(),
+  /** Shu kuni JAVOBLARDAN olingan coin (vazifa/streak mukofotlari kirmaydi) */
+  coinsEarned:  integer('coins_earned').default(0).notNull(),
+  updatedAt:    timestamp('updated_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.userId, t.date] }),
+  check('chk_daily_limits_nonnegative', sql`${t.xpEarned} >= 0 AND ${t.coinsEarned} >= 0`),
+  check('chk_daily_limits_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 
 export const userSettings = pgTable('settings', {

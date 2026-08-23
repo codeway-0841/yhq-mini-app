@@ -52,6 +52,8 @@ interface AppState {
   user:           ApiUser | null
   settings:       ApiSettings
   streak:         number
+  /** Umrbod XP (server hisoblaydi) — level shundan (shared/xp.ts levelFromXp) */
+  xp:             number
   totalCorrect:   number
   totalWrong:     number
   totalAnswered:  number
@@ -186,6 +188,7 @@ export const useAppStore = create<AppState>()(
       user:           null,
       settings:       { ...DEFAULT_SETTINGS },
       streak:         0,
+      xp:             0,
       totalCorrect:   0,
       totalWrong:     0,
       totalAnswered:  0,
@@ -265,6 +268,8 @@ export const useAppStore = create<AppState>()(
           if (!res.duplicate && (res.coinsEarned ?? 0) > 0 && typeof res.coinBalance === 'number') {
             set({ coins: res.coinBalance })
           }
+          // XP ham SERVER hisobidan (kunlik shift tufayli 0 bo'lishi mumkin)
+          if (!res.duplicate && typeof res.xp === 'number') set({ xp: res.xp })
           return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate, coinsEarned: res.duplicate ? 0 : (res.coinsEarned ?? 0) }
         } catch (err) {
           // FATAL 4xx — server qat'iy rad etdi (validatsiya/auth/noto'g'ri so'rov):
@@ -285,7 +290,7 @@ export const useAppStore = create<AppState>()(
 
       resetProgress: () => {
         const userId = get().user?.id
-        set({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, streak: 0, wrongByTicket: {}, solvedQuestions: [] })
+        set({ totalCorrect: 0, totalWrong: 0, totalAnswered: 0, streak: 0, xp: 0, wrongByTicket: {}, solvedQuestions: [] })
         if (userId && userId !== '0') api.resetProgress(userId).catch(console.error)
       },
 
@@ -321,6 +326,7 @@ export const useAppStore = create<AppState>()(
           tariff:          data.user.tariff,
           settings:        data.settings,
           streak:          data.progress.streak,
+          xp:              data.progress.xp ?? s.xp,
           totalCorrect:    data.progress.totalCorrect,
           totalWrong:      data.progress.totalWrong,
           totalAnswered:   data.progress.totalAnswered,
@@ -362,6 +368,7 @@ export const useAppStore = create<AppState>()(
             tariff:          data.user.tariff,
             settings:        data.settings,
             streak:          data.progress.streak,
+            xp:              data.progress.xp ?? s.xp,
             totalCorrect:    data.progress.totalCorrect,
             totalWrong:      data.progress.totalWrong,
             totalAnswered:   data.progress.totalAnswered,

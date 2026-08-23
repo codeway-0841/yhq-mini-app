@@ -6,6 +6,9 @@ import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress, duelResults } from '../../schema'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
+import {
+  XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
+} from '../../../shared/xp'
 import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
 
@@ -73,7 +76,7 @@ export const progressRepository = {
      *  Client yuboradi; qiyinlikni keyinchalik MA'LUMOTDAN chiqarish uchun
      *  yig'iladi (hech qanday ball/XP'ga hozir ta'sir qilmaydi). */
     elapsedMs?:   number | null
-  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean }> {
+  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean; xp: number | null; xpEarned: number; coinsMinted: number }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
     // Ishonchsiz client qiymati: 0..10 daqiqa oralig'idan tashqarisi tashlanadi
     // (fon rejimida qolgan tab soatlab "javob berdi" bo'lib ko'rinmasin).
@@ -92,7 +95,7 @@ export const progressRepository = {
     const ctx = { userId, subjectId, date }
     const eligible = coinSaveEligibleSql(ctx)
 
-    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null; coin_saved: boolean }>(sql`
+    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null; coin_saved: boolean; xp: number | null; xp_earned: number; coins_minted: number }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -133,6 +136,37 @@ export const progressRepository = {
           -- 3) H-3: kunlik kredit (DAILY_ANSWER_CREDIT) — farming kunlik chegarasi
           AND (SELECT ok FROM credit)
         ) AS proceed
+      ), limits AS (
+        -- Kunlik shift hisobi statement'dan OLDINGI holatda o'qiladi
+        -- (snapshot izolyatsiyasi — credit CTE bilan bir xil yondashuv).
+        SELECT xp_earned, coins_earned FROM daily_limits
+        WHERE user_id = ${userId} AND date = ${date}
+      ), xp_calc AS (
+        -- XP o'rganish HODISASIGA beriladi, javob soniga emas:
+        --   yangi savol to'g'ri yechildi          → XP_FIRST_CORRECT
+        --   avval XATO qilingan savol tuzatildi   → XP_MISTAKE_FIXED (qimmatroq)
+        --   xato javob / takroriy to'g'ri javob   → 0
+        SELECT CASE
+          WHEN NOT ${correct}::boolean THEN 0
+          WHEN ${questionId}::int IS NULL THEN 0
+          WHEN NOT EXISTS (
+            SELECT 1 FROM progress_questions pq
+            WHERE pq.user_id = ${userId} AND pq.subject_id = ${subjectId}
+              AND pq.question_id = ${questionId}::int
+          ) THEN ${XP_FIRST_CORRECT}::int
+          WHEN EXISTS (
+            SELECT 1 FROM progress_questions pq
+            WHERE pq.user_id = ${userId} AND pq.subject_id = ${subjectId}
+              AND pq.question_id = ${questionId}::int AND NOT pq.correct
+          ) THEN ${XP_MISTAKE_FIXED}::int
+          ELSE 0
+        END AS raw
+      ), xp_award AS (
+        -- Kunlik shift: shiftdan keyin mashq davom etadi, faqat XP to'xtaydi
+        SELECT GREATEST(0, LEAST(
+          (SELECT raw FROM xp_calc),
+          ${XP_DAILY_CAP}::int - COALESCE((SELECT xp_earned FROM limits), 0)
+        )) AS amount
       ), prog AS (
         UPDATE progress SET
           total_correct  = total_correct + ${correctDelta},
@@ -150,9 +184,10 @@ export const progressRepository = {
           END,
           -- P2: solved/correct jsonb massivlar endi YOZILMAYDI — q_write CTE
           -- progress_questions jadvaliga O(1) upsert qiladi.
+          xp             = xp + (SELECT amount FROM xp_award),
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
-        RETURNING id
+        RETURNING id, xp
       ), q_write AS (
         -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
         -- correct bir marta true bo'lsa orqaga qaytmaydi (anti-farm gate manbai).
@@ -198,6 +233,17 @@ export const progressRepository = {
         WHERE (SELECT saved FROM streak_upsert)
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
+      ), coin_mint AS (
+        -- Javoblardan kuniga olinadigan coin ham cheklangan (COINS_DAILY_ANSWER_CAP):
+        -- balans yillar davomida shishib ketsa, keyin narxni ma'nosiz ko'tarish
+        -- yoki balansni nolga tushirishdan boshqa chora qolmaydi.
+        SELECT CASE
+          WHEN ${correct}
+           AND EXISTS (SELECT 1 FROM prog)
+           AND COALESCE((SELECT coins_earned FROM limits), 0) < ${COINS_DAILY_ANSWER_CAP}::int
+          THEN ${COINS_PER_CORRECT_ANSWER}::int
+          ELSE 0
+        END AS amount
       ), coin_award AS (
         -- FIXPLAN #40: coin MINT — FAQAT gate'dan o'tgan TO'G'RI javob uchun
         -- (EXISTS prog: anti-farm gate, kunlik kredit va token replay'ning
@@ -212,15 +258,15 @@ export const progressRepository = {
         INSERT INTO user_coins (user_id, balance, updated_at)
         SELECT ${userId},
           GREATEST(0,
-            (CASE WHEN ${correct} AND EXISTS (SELECT 1 FROM prog) THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END)
+            (SELECT amount FROM coin_mint)
             - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END)
           ),
           now()
-        WHERE (${correct} AND EXISTS (SELECT 1 FROM prog))
+        WHERE (SELECT amount FROM coin_mint) > 0
            OR EXISTS (SELECT 1 FROM save_ledger)
         ON CONFLICT (user_id) DO UPDATE SET
           balance = user_coins.balance
-            + (CASE WHEN ${correct} AND EXISTS (SELECT 1 FROM prog) THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END)
+            + (SELECT amount FROM coin_mint)
             - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END),
           updated_at = now()
         RETURNING balance
@@ -233,10 +279,21 @@ export const progressRepository = {
         -- Shart endi coin_award EMAS, prog — coin_award faqat streak-save
         -- sababli ham yaratilishi mumkin (mint bo'lmasa ham).
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${COINS_PER_CORRECT_ANSWER}, 'answer', COALESCE(${token}::text, ${qKey}::text)
-        WHERE ${correct} AND EXISTS (SELECT 1 FROM prog)
+        SELECT ${userId}, (SELECT amount FROM coin_mint), 'answer', COALESCE(${token}::text, ${qKey}::text)
+        WHERE (SELECT amount FROM coin_mint) > 0
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
+      ), limits_upsert AS (
+        -- Kunlik shift hisobini yangilash (XP va coin bitta qatorda)
+        INSERT INTO daily_limits (user_id, date, xp_earned, coins_earned, updated_at)
+        SELECT ${userId}, ${date}, (SELECT amount FROM xp_award), (SELECT amount FROM coin_mint), now()
+        WHERE EXISTS (SELECT 1 FROM prog)
+          AND ((SELECT amount FROM xp_award) > 0 OR (SELECT amount FROM coin_mint) > 0)
+        ON CONFLICT (user_id, date) DO UPDATE SET
+          xp_earned    = daily_limits.xp_earned + EXCLUDED.xp_earned,
+          coins_earned = daily_limits.coins_earned + EXCLUDED.coins_earned,
+          updated_at   = now()
+        RETURNING xp_earned
       )
       SELECT
         (SELECT proceed FROM gate) AS proceed,
@@ -244,7 +301,10 @@ export const progressRepository = {
         (SELECT streak::int FROM streak_upsert) AS daily_streak,
         EXISTS (SELECT 1 FROM tok) AS token_inserted,
         (SELECT balance::int FROM coin_award) AS coin_balance,
-        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved
+        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved,
+        (SELECT xp::int FROM prog) AS xp,
+        (SELECT amount::int FROM xp_award) AS xp_earned,
+        (SELECT amount::int FROM coin_mint) AS coins_minted
     `)
 
     const row = rows[0]
@@ -252,17 +312,22 @@ export const progressRepository = {
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
       const existing = await this.findByUserId(userId)
-      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null, coinSaved: false }
+      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null, coinSaved: false, xp: null, xpEarned: 0, coinsMinted: 0 }
       // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
       // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.
       const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
-      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null, coinSaved: false }
+      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null, coinSaved: false, xp: existing.xp ?? null, xpEarned: 0, coinsMinted: 0 }
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
     const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : (updated ? 1 : null)
     const coinBalance = row?.coin_balance != null ? Number(row.coin_balance) : null
-    return { updated, dailyStreak, duplicate: false, coinBalance, coinSaved: row?.coin_saved === true }
+    return {
+      updated, dailyStreak, duplicate: false, coinBalance, coinSaved: row?.coin_saved === true,
+      xp: row?.xp != null ? Number(row.xp) : null,
+      xpEarned: row?.xp_earned != null ? Number(row.xp_earned) : 0,
+      coinsMinted: row?.coins_minted != null ? Number(row.coins_minted) : 0,
+    }
   },
 
   /** Oktagon (PvP) g'alabasi — WS server match yakunida chaqiradi (Yutuqlar uchun) */

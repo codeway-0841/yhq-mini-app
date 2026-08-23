@@ -56,6 +56,8 @@ export function toApiProgress(row: ProgressRow, solvedKeys: string[] = []) {
     streak:          row.streak,
     wrongByTicket:   row.wrongByTicket,
     solvedQuestions: solvedKeys,
+    /** Umrbod XP — level shundan hisoblanadi (shared/xp.ts) */
+    xp:              row.xp,
   }
 }
 

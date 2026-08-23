@@ -1,6 +1,7 @@
 import { memo, useRef, useState } from 'react'
 import { Flame, Star, Trophy, ChevronDown } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import SubjectSheet from '../../../shared/components/SubjectSheet'
 import { useT } from '../../../shared/i18n'
@@ -77,7 +78,9 @@ export const ProgressCard = memo(function ProgressCard({ totalCorrect, totalAnsw
   const progressPct = total > 0
     ? (totalAnswered === 0 ? 0 : Math.min(100, Math.max(1, Math.round((totalAnswered / total) * 100))))
     : 0
-  const xp = totalCorrect * 10
+  // XP endi SERVER hisobi (o'rganish hodisasiga qarab) — avval bu yerda
+  // totalCorrect * 10 edi, ya'ni XP javob sonining ko'paytmasi bo'lib qolardi
+  const xp = useAppStore((s) => s.xp)
   const league = totalCorrect >= 1000 ? 'Platinum' : totalCorrect >= 500 ? 'Gold' : totalCorrect >= 100 ? 'Silver' : 'Bronze'
 
   // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi

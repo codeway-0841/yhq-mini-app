@@ -17,7 +17,6 @@ import { Sentry }               from '../../utils/sentry'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
-import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
 const router = Router()
 
@@ -57,7 +56,7 @@ router.post(
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
     // Progress counterlari + daily record + streak (+ coin mint) BITTA atomik SQL statement'da.
-    const { updated, dailyStreak, duplicate, reason, coinBalance, coinSaved } = await progressRepository.recordAnswer({
+    const { updated, dailyStreak, duplicate, reason, coinBalance, coinSaved, xp, xpEarned, coinsMinted } = await progressRepository.recordAnswer({
       userId: uid, correct, questionId, date, subjectId, clientToken, elapsedMs,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
@@ -78,7 +77,9 @@ router.post(
       return
     }
     // coin mint: FAQAT yangi to'g'ri javob (gate'dan o'tgan) — duplicate'lar 0.
-    const coinsEarned = correct ? COINS_PER_CORRECT_ANSWER : 0
+    // Kunlik shift (COINS_DAILY_ANSWER_CAP) to'lgan bo'lsa 0 qaytadi, shuning
+    // uchun qiymat SERVER hisobidan olinadi (client "+1" deb aldanmasin).
+    const coinsEarned = coinsMinted
 
     // BOSS BATTLE: gate'dan o'tgan fresh to'g'ri javob — haftalik boss'ga zarar.
     // Best-effort: boss xatosi ASOSIY javob oqimini sindirmaydi (Sentry'ga tushadi).
@@ -92,7 +93,12 @@ router.post(
 
     // coinSaved: shu javob uzilgan seriyani coin evaziga saqladi — client toast
     // ko'rsatadi (foydalanuvchi coin nimaga sarflanganini bilishi shart).
-    res.json({ ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak, coinsEarned, coinBalance, coinSaved })
+    res.json({
+      ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak,
+      coinsEarned, coinBalance, coinSaved,
+      // XP: jami (level uchun) + shu javobda berilgani (animatsiya uchun)
+      xp, xpEarned,
+    })
   }),
 )
 

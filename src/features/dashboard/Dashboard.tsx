@@ -6,6 +6,7 @@ import {
   Ticket, ShieldAlert,
   Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText,
 } from 'lucide-react'
+import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -116,6 +117,7 @@ export default function Dashboard() {
   const displayName     = useAppStore((s) => s.displayName)
   const settings        = useAppStore((s) => s.settings)
   const totalCorrect    = useAppStore((s) => s.totalCorrect)
+  const xp              = useAppStore((s) => s.xp)
   const totalWrong      = useAppStore((s) => s.totalWrong)
   const savedQuestions  = useAppStore((s) => s.savedQuestions)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
@@ -133,7 +135,9 @@ export default function Dashboard() {
   useDashboardSync(user?.id, subject.id, settings.language)
 
   // ⬆️ Level-Up + Streak milestone nishonlashlari
-  const level = Math.floor(totalCorrect / 50) + 1
+  // Level SERVER XP'sidan (shared/xp.ts) — avval totalCorrect/50 edi, ya'ni
+  // bilgan savolni qayta bosish ham level berardi
+  const level = levelFromXp(xp)
   const { milestone, levelUp, closeMilestone, closeLevelUp, previewMilestone } =
     useCelebrations(level, dailyStreak, subject.id)
 
