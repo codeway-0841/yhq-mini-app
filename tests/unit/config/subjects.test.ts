@@ -41,6 +41,19 @@ describe('shared/subjects — data integrity', () => {
     const dataSourceIds = SUBJECT_BASES.map((s) => s.dataSourceId)
     expect(new Set(dataSourceIds).size).toBe(dataSourceIds.length)
   })
+
+  it("REGRESSIYA: kontenti yo'q fanlar available:false (FIXPLAN 4-punkt) — yangi " +
+    "foydalanuvchi bo'sh ekranga tushmasin, faqat haqiqiy baza bilan fanlar tanlanadi", () => {
+    const byId = Object.fromEntries(SUBJECT_BASES.map((s) => [s.id, s.available]))
+    expect(byId['yhq']).toBe(true)       // 300 savol
+    expect(byId['rustili']).toBe(true)   // 1000 savol
+    expect(byId['fizika']).toBe(false)
+    expect(byId['matematika']).toBe(false)
+    expect(byId['kimyo']).toBe(false)
+    expect(byId['ingliz']).toBe(false)
+    expect(byId['tarix']).toBe(false)
+    expect(byId['biologiya']).toBe(false)
+  })
 })
 
 describe('backend registry — shared bilan sinxron', () => {

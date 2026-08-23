@@ -507,10 +507,24 @@ yo'l qolmaydi.
   foydalanuvchi beradi** — AI bilan YHQ javoblarini generatsiya qilish tavsiya
   ETILMAYDI (noto'g'ri qoida real xavf). Kod qismi: import quvurini kengaytirish
   (#53 — xlsx to'g'ridan o'qish, rasm ZIP, xato qatorlarni qayta eksport).
-- [ ] **4-punkt — bo'sh fanlarni "tez kunda" holatiga o'tkazish.** Fizika,
-  matematika, kimyo, tarix, biologiya, ingliz — kontenti yo'q, lekin oddiy fan
-  kabi ko'rinadi (yangi foydalanuvchi bo'sh ekran ko'radi). `shared/subjects.ts`
-  dagi `available` bayrog'i bor — UI'da "tez kunda" belgisi va bosilmaydigan holat.
+- [x] **4-punkt — bo'sh fanlarni "tez kunda" holatiga o'tkazish.** — **TUGALLANDI.**
+  Kutilganidan kichik chiqdi: UI mashinasi (dimmed row, "Tez kunda"/"Скоро"
+  badge, bosilmaydigan holat `SubjectSheet.tsx`+`Onboarding.tsx`da, va butun
+  `SubjectEmpty` bo'sh-holat ekrani Dashboard'da) **allaqachon yozilgan va
+  ishlatilmay yotgan edi** — faqat `shared/subjects.ts`dagi `available`
+  bayrog'i hamma joyda `true` bo'lgani uchun hech qachon ishga tushmagan.
+  Ish — 6 ta bayroqni `false`ga o'tkazish: fizika/matematika/kimyo/ingliz/
+  tarix/biologiya (`physics_db`/`math_db`/`chemistry_db`/`english_db`/
+  `history_db`/`biology_db` — birortasiga provider ham ro'yxatdan o'tmagan,
+  `server/providers/index.ts`). yhq (300 savol) va rustili (1000 savol)
+  `true` qoladi. Server tomoni (`resolveSubject`) `isActive`ga qaramaydi —
+  faqat UI/discoverability gate, mavjud progress/daily_records o'chmaydi.
+  Test: `subjects.test.ts`ga regressiya (aniq available-set assertion, RED→GREEN
+  tasdiqlangan).
+  *Verifikatsiya:* tsc×2 ✓, unit 639/639 ✓ (98 fayl), lint 0 error ✓, vite build ✓.
+  Brauzer orqali qo'lda tekshirilmadi — sabab: 0 qator UI kodi yozilmadi (faqat
+  config bayrog'i), shartli render mantiqi (`!available` dim/badge/block)
+  oldindan mavjud va component testlar bilan qamrab olingan edi.
 - [ ] **5-punkt (odam kelgach, ~30+ faol foydalanuvchi):** duel Elo (#41 bilan
   birga), liga cohort (30 kishilik guruh), tezlik bo'yicha ball (1-punktda
   yig'ilayotgan `first_ms` asosida), "imtihonga tayyorlik %" paneli.
