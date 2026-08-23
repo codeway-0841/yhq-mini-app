@@ -45,6 +45,24 @@ describe('FullProfileSchema (contract validation)', () => {
     expect(FullProfileSchema.safeParse(bad).success).toBe(false)
   })
 
+  it('REGRESSIYA: server yuborgan xp PARSE natijasida saqlanadi', () => {
+    // Zod noma'lum maydonlarni tashlab yuboradi: xp sxemada e'lon qilinmagan
+    // paytda refreshdan keyin XP/level 0 bo'lib ko'rinardi (server bazasida
+    // 60 bo'lsa ham) — shu test o'sha regressiyani ushlaydi.
+    const parsed = FullProfileSchema.safeParse({
+      ...VALID_PROFILE,
+      progress: { ...VALID_PROFILE.progress, xp: 60 },
+    })
+    expect(parsed.success).toBe(true)
+    expect(parsed.data?.progress.xp).toBe(60)
+  })
+
+  it('xp yo\'q bo\'lsa ham o\'tadi (eski server javobi)', () => {
+    const parsed = FullProfileSchema.safeParse(VALID_PROFILE)
+    expect(parsed.success).toBe(true)
+    expect(parsed.data?.progress.xp).toBeUndefined()
+  })
+
   it('isAdmin va phone ixtiyoriy (yo\'q bo\'lsa ham o\'tadi)', () => {
     const { isAdmin: _a, ...userNoAdmin } = VALID_PROFILE.user
     const p = FullProfileSchema.safeParse({ ...VALID_PROFILE, user: userNoAdmin })

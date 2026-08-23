@@ -35,6 +35,10 @@ export const ApiProgressSchema = z.object({
   /** Composite kalitlar: '<subjectId>:<questionId>' */
   wrongByTicket: z.record(z.string(), z.number()),
   solvedQuestions: z.array(z.string()).optional(),
+  /** Umrbod XP (server hisobi) — level shundan (shared/xp.ts).
+   *  MUHIM: zod noma'lum maydonlarni TASHLAB yuboradi — bu yerda e'lon
+   *  qilinmasa, server yuborgan xp client'ga umuman yetib bormaydi. */
+  xp: z.number().optional(),
 })
 
 export const ApiSettingsSchema = z.object({

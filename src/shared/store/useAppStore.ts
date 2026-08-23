@@ -426,6 +426,7 @@ export const useAppStore = create<AppState>()(
         user:           stripUserPii(s.user),
         settings:       s.settings,
         streak:         s.streak,
+        xp:             s.xp,
         totalCorrect:   s.totalCorrect,
         totalWrong:     s.totalWrong,
         totalAnswered:  s.totalAnswered,
