@@ -352,6 +352,73 @@
 
 ---
 
+## PART 9 — 2026-08-23 audit: qolgan ishlar va g'oyalar
+
+> Manba: shu sanadagi to'liq tekshiruv (FIXPLAN + TODO fayllar + kod stub'lari +
+> **prod DB holati**). Yangi g'oyalar shu ro'yxatga qo'shib boriladi.
+
+### 9.1 Prod ma'lumot suratlari (2026-08-23)
+
+```
+users 11 · 7 kunda faol 4 · premium 5 · referral 3 · user_devices 0
+savollar 1300 · tushuntirish 300 (1000 tasi TUSHUNTIRISHSIZ)
+merch buyurtma 2 · sotib olingan item 8
+daily_records fan bo'yicha: rustili 26 · yhq 20 · fizika 2 · matematika 1
+duel_results 6 qator (3 match) — davr reytingi shu jadvaldan ishlaydi
+```
+
+**Xulosa:** mahsulot texnik jihatdan boy, foydalanuvchi deyarli yo'q. Yangi
+feature qo'shishdan ko'ra o'sish/aktivatsiya o'lchovi ustuvor.
+
+### 9.2 Ochiq texnik ish
+
+- [ ] **16. httpOnly cookie** (PART 3'dan) — alohida sessiya rejasi, shoshilinch emas.
+- [ ] **41. Octagon kubogi** — mavsumiy PvP turnir. **Endi arzon:** `duel_results`
+  jadvali (migratsiya 0052) mavsumiy agregat uchun tayyor manba.
+- [ ] **42. Guruh reytinglari** — sinf/avtomaktab jamoalari (`groups` jadval +
+  leaderboard endpoint). Promokod tizimi allaqachon avtomaktablar uchun ishlangan —
+  bu B2B kanalni mahsulotga aylantiradi.
+- [ ] **43. AI tushuntirish backfill** — 1300 savoldan 1000 tasi tushuntirishsiz.
+  `ai-question-generator.service` pattern'i, kechasi chunk'lab, narx nazorati bilan.
+- [ ] **44. Cheat detection server-side** — javob vaqtlari statistikasi +
+  `cheatViolations`ni serverga yozish.
+- [ ] **52. Google / Apple Sign-In** — `auth.service.ts:1079,1089` hamon stub
+  (501 `{available:false}`). Telegram + telefon ishlagani uchun past ustuvorlik.
+- [ ] **53. Bulk import kengaytmasi** (`SAVOLLAR_IMPORT_TODO.md`) — xlsx to'g'ridan
+  o'qish, rasm ZIP, docx/pdf ajratish, xato qatorlarni qayta eksport. Fizika/
+  matematika kontenti deyarli bo'sh — shu ish kontent kiritishni tezlashtiradi.
+- [ ] **54. Gigiyena** — master'ga to'liq merge bo'lgan lokal branchlar
+  (`redesign/kiwi-jade-stone`, `cleanup/phase10-legacy-css-removal`,
+  `fix/a11y-labels-lang-sync`, `feat/duel-leaderboard-periods`) o'chirilsin.
+
+### 9.3 G'oyalar — o'sish va aktivatsiya (P0)
+
+- [ ] **55. Aktivatsiya voronkasi paneli** — `analytics_events` yoziladi, lekin
+  hech kim ko'rmaydi. Admin panelga voronka: ochdi → 1-savol → 1-test → 2-kun
+  qaytdi. Qayerda tushib qolinayotgani ma'lum bo'lmasa qolgan hamma ish taxmin.
+- [ ] **56. Referral kuchaytirish** — ikki tomonlama mukofot (ikkalasiga premium
+  kun/coin) + ulashish kartasi rasm bilan (`certificate-canvas.ts`/`result-canvas.ts`
+  tayyor). Hozircha 3 ta referral bor, mexanizm ishlaydi.
+- [ ] **57. Bot retention xabarlari** — kunlik eslatma cron'ga yangi turlar:
+  "duelga chaqiruv" (raqib online), "reytingda N o'ringa tushding". Streak
+  ogohlantirishi allaqachon bor.
+
+### 9.4 G'oyalar — mahsulot qiymati (P1)
+
+- [ ] **58. Duel statistikasi profil sahifasida** — `duel_results` endi W-L-D
+  tarixini saqlaydi: profilda "so'nggi 10 duel", g'alaba foizi, eng ko'p
+  o'ynagan raqib. Server ma'lumoti bor, faqat endpoint + UI kerak.
+- [ ] **59. Fan bo'yicha kontent to'ldirish rejasi** — fizika/matematika/kimyo
+  amalda bo'sh (daily_records: 2 va 1 qator). Yo kontent kiritiladi, yo UI'da
+  "tez kunda" holati aniq ko'rsatiladi (hozir bo'sh fan oddiy fan kabi ko'rinadi).
+
+### 9.5 Qilinmaydi (qaror qabul qilingan)
+
+- **Pul evaziga coin sotish** (Telegram Stars orqali) — foydalanuvchi rad etgan
+  (2026-08-23). Taklif qilinmasin.
+
+---
+
 ## Bajarilganlar (tarix)
 
 - ✅ C-1, H-2, M-3, M-12, P1-1…P1-5, H-1 (GREATEST qismi), P3 gigiyena — `34462cd`, `d9ab3ad` (2026-08-17)
