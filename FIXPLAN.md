@@ -412,6 +412,49 @@ feature qo'shishdan ko'ra o'sish/aktivatsiya o'lchovi ustuvor.
   amalda bo'sh (daily_records: 2 va 1 qator). Yo kontent kiritiladi, yo UI'da
   "tez kunda" holati aniq ko'rsatiladi (hozir bo'sh fan oddiy fan kabi ko'rinadi).
 
+### 9.6 Ball iqtisodi — qabul qilingan dizayn (2026-08-23)
+
+**Muammo:** XP, level, liga bali va coin — to'rttasi ham BITTA raqamdan chiqadi
+(`totalCorrect`). Natijada oson savolni qayta bosish yangi mavzuni o'rganish bilan
+teng, ko'p vaqt o'tirgan g'olib, xato javobning narxi yo'q, umumiy reytingda yangi
+odam hech qachon quvib yetolmaydi.
+
+**Qaror: uchta valyuta ajratiladi** — XP (shaxsiy o'sish, sarflanmaydi), coin
+(iqtisod, sarflanadi), ball/reyting (raqobat, davriy qayta boshlanadi).
+
+**Savol qiyinligi belgilanmaydi** (qo'lda ajratib bo'lmaydi) — o'rniga javob vaqti
+yig'iladi va keyinchalik shu vazifani bajaradi.
+
+- **XP:** birinchi marta to'g'ri **10** · avval xato qilingan savol tuzatildi **15**
+  (har savolga 1 marta — aks holda ataylab xato qilib farm qilinadi) · 7+ kundan
+  keyingi takror **8** · bilgan savolni yana bosdi **2** · xato **0**.
+  **Kuniga max 500 XP** (cheklovdan keyin mashq va coin davom etadi, faqat XP to'xtaydi).
+  Cheklovsiz farq 7 barobar bo'lardi (grinder 60k vs oddiy 8k oyiga), chek bilan 2 barobar.
+- **Level:** `250 × n^1.5` XP. Oddiy foydalanuvchi 1 oyda ~10-level, 2 yilda ~50.
+  (Hozirgi `totalCorrect/50` bilan bir haftada 40-level — ma'nosiz.)
+- **Coin:** javobdan +1, **kuniga max 50**. Kunlik vazifalar 35 (o'zgarishsiz).
+  Streak bosqichlari, duel g'alabasi, liga o'rni — keyinroq.
+- **Xato narxi:** balldan ayirish EMAS — imtihonda cheklangan urinish (yurak,
+  Duolingo modeli). Taxmin qilish foydasiz bo'ladi, XP halol qoladi.
+- **Duel:** `octagon_wins` o'rniga **Elo** (1000 dan, K=32 birinchi 10 o'yin, keyin 16).
+  `duel_results` jadvalidan backfill qilinadi.
+- **Liga:** global reyting o'rniga **30 kishilik cohort** + ko'tarilish/tushish
+  (Duolingo modeli). Umumiy reyting "shon-shuhrat zali" sifatida ikkinchi darajali tab.
+
+**Kechiktirilgan (foydalanuvchi qarori 2026-08-23):** sarfli do'kon item'lari (hint,
+yurak tiklash, duel bileti) HOZIR qurilmaydi — real foydalanuvchi yo'q. Qayta ko'rish
+nuqtasi: **~500-1000 faol foydalanuvchi** (100k emas — o'shangacha kutilsa iqtisod
+allaqachon buzilgan bo'ladi). Kunlik coin cheklovi esa hozir qo'yiladi: keyin
+balanslar shishib ketsa, narxni ko'tarish yoki balansni nolga tushirishdan boshqa
+yo'l qolmaydi.
+
+**Kelishilgan ish tartibi:**
+1. Javob vaqtini yozish (poydevor — orqaga qaytib to'plab bo'lmaydi)
+2. XP serverga ko'chirish + kunlik cheklovlar (XP 500, coin 50)
+3. Savol bazasini kengaytirish (YHQ'da atigi 300 savol — faol o'yinchi 4-5 kunda tugatadi)
+4. Bo'sh fanlarni "tez kunda" holatiga o'tkazish
+5. (odam kelgach) duel Elo, liga cohort, tezlik bo'yicha ball, imtihonga tayyorlik %
+
 ### 9.5 Qilinmaydi (qaror qabul qilingan)
 
 - **Pul evaziga coin sotish** (Telegram Stars orqali) — foydalanuvchi rad etgan
