@@ -114,17 +114,37 @@ export const progressRepository = {
         ) AS ok
         FROM daily_records
         WHERE user_id = ${userId} AND date = ${date}
+      ), is_mistake_fixed AS (
+        -- Xato tuzatilyaptimi: savol wrong_by_ticket'da mavjud YOKI pq.correct = false
+        SELECT (
+          ${correct}::boolean
+          AND ${qKey}::text IS NOT NULL
+          AND (
+            EXISTS (
+              SELECT 1 FROM progress p
+              WHERE p.user_id = ${userId}
+                AND (COALESCE(p.wrong_by_ticket, '{}'::jsonb)->>${qKey}::text)::int > 0
+            )
+            OR EXISTS (
+              SELECT 1 FROM progress_questions pq
+              WHERE pq.user_id = ${userId}
+                AND pq.subject_id = ${subjectId}
+                AND pq.question_id = ${questionId}::int
+                AND NOT pq.correct
+            )
+          )
+        ) AS is_fix
       ), gate AS (
         SELECT (
           -- 1) clientToken replay YOKI token yo'q — o'tadi;
           (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok))
-          -- 2) ANTI-FARM: ilgari TO'G'RI javob berilgan savolga takroriy
-          --    to'g'ri javob counterlarga YOZILMAYDI. P2 (audit): gate endi
-          --    progress_questions jadvaliga tayanadi (jsonb correct_questions
-          --    o'rniga O(1) index EXISTS — quadratic rewrite yo'q).
+          -- 2) ANTI-FARM: ilgari TO'G'RI javob berilgan va XATOSI YO'Q bo'lgan savolga takroriy
+          --    to'g'ri javob counterlarga YOZILMAYDI.
+          --    Agar savol xatoda bo'lsa (is_fix), bu xatoni tuzatish hisoblanadi va gate'dan O'TADI!
           AND NOT (
             ${correct}
             AND ${questionId}::int IS NOT NULL
+            AND NOT (SELECT is_fix FROM is_mistake_fixed)
             AND EXISTS (
               SELECT 1 FROM progress_questions pq
               WHERE pq.user_id = ${userId}
@@ -149,16 +169,12 @@ export const progressRepository = {
         SELECT CASE
           WHEN NOT ${correct}::boolean THEN 0
           WHEN ${questionId}::int IS NULL THEN 0
+          WHEN (SELECT is_fix FROM is_mistake_fixed) THEN ${XP_MISTAKE_FIXED}::int
           WHEN NOT EXISTS (
             SELECT 1 FROM progress_questions pq
             WHERE pq.user_id = ${userId} AND pq.subject_id = ${subjectId}
               AND pq.question_id = ${questionId}::int
           ) THEN ${XP_FIRST_CORRECT}::int
-          WHEN EXISTS (
-            SELECT 1 FROM progress_questions pq
-            WHERE pq.user_id = ${userId} AND pq.subject_id = ${subjectId}
-              AND pq.question_id = ${questionId}::int AND NOT pq.correct
-          ) THEN ${XP_MISTAKE_FIXED}::int
           ELSE 0
         END AS raw
       ), xp_award AS (
@@ -190,14 +206,14 @@ export const progressRepository = {
         RETURNING id, xp
       ), q_write AS (
         -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
-        -- correct bir marta true bo'lsa orqaga qaytmaydi (anti-farm gate manbai).
+        -- correct user'ning ushbu savol bo'yicha joriy holatini aks ettiradi.
         INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at, first_ms, last_ms)
         SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now(),
                ${elapsedMs}::int, ${elapsedMs}::int
         WHERE ${questionId}::int IS NOT NULL
           AND EXISTS (SELECT 1 FROM prog)
         ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
-          SET correct = progress_questions.correct OR EXCLUDED.correct,
+          SET correct = EXCLUDED.correct,
               answered_at = now(),
               -- first_ms FAQAT birinchi urinishda yoziladi (bo'sh bo'lsa to'ldiriladi)
               first_ms = COALESCE(progress_questions.first_ms, EXCLUDED.first_ms),
@@ -207,11 +223,12 @@ export const progressRepository = {
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
         -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.
         INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
-        SELECT ${userId}, ${date}, ${subjectId}, 1, ${correctDelta}, 0
+        SELECT ${userId}, ${date}, ${subjectId}, 1, ${correctDelta}, CASE WHEN (SELECT is_fix FROM is_mistake_fixed) THEN 1 ELSE 0 END
         WHERE EXISTS (SELECT 1 FROM prog)
         ON CONFLICT (user_id, date, subject_id) DO UPDATE SET
           answered = daily_records.answered + EXCLUDED.answered,
-          correct = daily_records.correct + EXCLUDED.correct
+          correct = daily_records.correct + EXCLUDED.correct,
+          fixed = daily_records.fixed + EXCLUDED.fixed
         RETURNING id
       ), streak_upsert AS (
         -- Streak CASE va coin-save sharti streak-save-sql.ts dan —

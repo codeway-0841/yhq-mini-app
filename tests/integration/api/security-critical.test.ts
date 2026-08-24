@@ -77,6 +77,43 @@ describe('server-authoritative progress', () => {
     expect(daily.correct).toBe(1)
   })
 
+  it('avval to\'g\'ri yechilgan savolda keyin xato qilib qayta to\'g\'ri yechganda xato wrongByTicket dan o\'chadi', async () => {
+    await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
+    const [question] = await db.select().from(questions).limit(1)
+    const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
+
+    // 1) Dastlab to'g'ri yechildi
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq' })
+      .expect(200)
+
+    // 2) Keyinchalik xato qilindi (2 marta)
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'yhq' })
+      .expect(200)
+    await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: wrongAnswer, subjectId: 'yhq' })
+      .expect(200)
+
+    const [progWithMistake] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(progWithMistake.wrongByTicket[`yhq:${question.id}`]).toBe(2)
+
+    // 3) Xatolar sahifasida qayta to'g'ri yechildi — gate uni DUPLICATE deb to'xtatmasdan wrongByTicket dan o'chirishi shart
+    const fixRes = await request(app)
+      .post(`/api/progress/${PROGRESS_ID}/result`)
+      .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq' })
+      .expect(200)
+
+    expect(fixRes.body.duplicate).toBeUndefined()
+    expect(fixRes.body.correct).toBe(true)
+
+    const [progFixed] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
+    expect(progFixed.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
+  })
+
   it('javob bilan birga correctAnswer POST-ANSWER REVEAL qilinadi (feedback uchun)', async () => {
     // Anti-farm gate: oldingi test birinchi savolni TO'G'RI yechgan —
     // yangi (yechilmagan) savol uchun progressni reset qilamiz.
