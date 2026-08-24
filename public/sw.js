@@ -9,6 +9,10 @@
  */
 
 const CACHE = 'yhq-app-v3'
+// Oflayn fan-paketlari (Task 3, src/shared/lib/offlinePackage.ts) shu prefiks
+// bilan nomlangan alohida keshlarga yoziladi — activate cleanup'da SAQLANADI
+// (foydalanuvchi ataylab yuklab olgan kontent app-update'da o'chib ketmasin).
+const OFFLINE_CACHE_PREFIX = 'yhq-offline-'
 
 const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||
@@ -42,7 +46,9 @@ self.addEventListener('activate', (event) => {
     (async () => {
       // Drop outdated caches
       const keys = await caches.keys()
-      await Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+      await Promise.all(
+        keys.filter((k) => k !== CACHE && !k.startsWith(OFFLINE_CACHE_PREFIX)).map((k) => caches.delete(k))
+      )
       await self.clients.claim()
     })()
   )
