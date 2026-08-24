@@ -1,9 +1,10 @@
-import { memo, useRef, useState } from 'react'
+import { memo, useRef, useState, type ElementType } from 'react'
 import { Flame, Star, Trophy, ChevronDown } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import SubjectSheet from '../../../shared/components/SubjectSheet'
+import StatInfoSheet from '../../../shared/components/StatInfoSheet'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
 import { haptics } from '../../../platform/haptics'
@@ -44,12 +45,18 @@ const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, t
   )
 })
 
-/** Pastki statistika ustuni — Seriya / XP / Reyting bir xil shaklda. */
-function StatItem({ icon: Icon, value, label, iconBg, tone }: {
+/** Pastki statistika ustuni — Seriya / XP / Reyting bir xil shaklda. onClick berilsa bosiladigan tugma bo'ladi. */
+function StatItem({ icon: Icon, value, label, iconBg, tone, onClick, ariaLabel }: {
   icon: typeof Star; value: string; label: string; iconBg?: string; tone?: string
+  onClick?: () => void; ariaLabel?: string
 }) {
+  const Tag: ElementType = onClick ? 'button' : 'div'
   return (
-    <div className="flex items-center gap-2 p-1 text-left">
+    <Tag
+      onClick={onClick}
+      aria-label={onClick ? ariaLabel : undefined}
+      className={cn('flex items-center gap-2 p-1 text-left', onClick && 'active:scale-[0.97] transition-transform')}
+    >
       <div className={cn('flex size-7 shrink-0 items-center justify-center rounded-full', iconBg ?? 'bg-white/15 text-white', tone)}>
         <Icon size={15} strokeWidth={2} />
       </div>
@@ -57,7 +64,7 @@ function StatItem({ icon: Icon, value, label, iconBg, tone }: {
         <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{value}</p>
         <p className="truncate text-[10px] font-medium text-white/65">{label}</p>
       </div>
-    </div>
+    </Tag>
   )
 }
 
@@ -78,6 +85,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
   const total = totalPool > 0 ? totalPool : 0
   const subject = useSubjectStore((s) => s.subject)
   const [showSubjects, setShowSubjects] = useState(false)
+  const [xpInfoOpen, setXpInfoOpen] = useState(false)
+  const [leagueInfoOpen, setLeagueInfoOpen] = useState(false)
 
   // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000/1000 = 100%
   const progressPct = total > 0
@@ -146,13 +155,32 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
           {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
           <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
             tt={tt} ariaLabel={tt('intizomTitle')} />
-          <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/25 text-pgold" />
-          <StatItem icon={Trophy} value={tt(LEAGUE_TT_KEY[league])} label={tt('ratingWord')} iconBg="bg-pblue/25 text-pblue" />
+          <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/25 text-pgold"
+            onClick={() => setXpInfoOpen(true)} ariaLabel={tt('xpInfoTitle')} />
+          <StatItem icon={Trophy} value={tt(LEAGUE_TT_KEY[league])} label={tt('ratingWord')} iconBg="bg-pblue/25 text-pblue"
+            onClick={() => setLeagueInfoOpen(true)} ariaLabel={tt('leagueInfoTitle')} />
         </div>
       </div>
 
       {/* Fan tanlash modal oynasi */}
       {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
+
+      {xpInfoOpen && (
+        <StatInfoSheet
+          icon={<Star size={20} strokeWidth={2} />}
+          title={tt('xpInfoTitle')}
+          body={tt('xpInfoBody')}
+          onClose={() => setXpInfoOpen(false)}
+        />
+      )}
+      {leagueInfoOpen && (
+        <StatInfoSheet
+          icon={<Trophy size={20} strokeWidth={2} />}
+          title={tt('leagueInfoTitle')}
+          body={tt('leagueInfoBody')}
+          onClose={() => setLeagueInfoOpen(false)}
+        />
+      )}
     </>
   )
 })
