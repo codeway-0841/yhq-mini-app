@@ -229,7 +229,7 @@ export const progressRepository = {
           answered = daily_records.answered + EXCLUDED.answered,
           correct = daily_records.correct + EXCLUDED.correct,
           fixed = daily_records.fixed + EXCLUDED.fixed
-        RETURNING id
+        RETURNING id, fixed
       ), streak_upsert AS (
         -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
         -- daily.repository.touchActivity bilan BITTA manba.
@@ -252,13 +252,17 @@ export const progressRepository = {
         RETURNING id
       ), coin_mint AS (
         -- Javoblardan kuniga olinadigan coin ham cheklangan (COINS_DAILY_ANSWER_CAP):
-        -- balans yillar davomida shishib ketsa, keyin narxni ma'nosiz ko'tarish
-        -- yoki balansni nolga tushirishdan boshqa chora qolmaydi.
+        -- Yangi to'g'ri javob: 1 coin (COINS_PER_CORRECT_ANSWER).
+        -- Xato savolni tuzatish (is_fix): har 10 ta xato uchun 1 coin (0.1 coin/xato nisbati).
         SELECT CASE
           WHEN ${correct}
            AND EXISTS (SELECT 1 FROM prog)
            AND COALESCE((SELECT coins_earned FROM limits), 0) < ${COINS_DAILY_ANSWER_CAP}::int
-          THEN ${COINS_PER_CORRECT_ANSWER}::int
+          THEN CASE
+            WHEN (SELECT is_fix FROM is_mistake_fixed) THEN
+              CASE WHEN (SELECT fixed FROM record_upsert) % 10 = 0 THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END
+            ELSE ${COINS_PER_CORRECT_ANSWER}::int
+          END
           ELSE 0
         END AS amount
       ), coin_award AS (

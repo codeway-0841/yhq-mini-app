@@ -109,6 +109,8 @@ describe('server-authoritative progress', () => {
 
     expect(fixRes.body.duplicate).toBeUndefined()
     expect(fixRes.body.correct).toBe(true)
+    // 1-xato tuzatish: hali 10 ta to'lmagani uchun 0 coin
+    expect(fixRes.body.coinsEarned ?? 0).toBe(0)
 
     const [progFixed] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     expect(progFixed.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()
