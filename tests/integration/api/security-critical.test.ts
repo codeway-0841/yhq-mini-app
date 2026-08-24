@@ -20,6 +20,7 @@ async function cleanup() {
     await db.delete(payments).where(eq(payments.userId, id))
     await db.delete(users).where(eq(users.id, id))
   }
+  await db.delete(questions).where(eq(questions.id, 999111))
 }
 
 beforeAll(async () => {
@@ -164,19 +165,19 @@ describe('server-authoritative progress', () => {
   })
 
   it('fanlar orasida xatolar izolyatsiya qilingan (bir xil questionId, turli subject)', async () => {
-    // Fizika banki va savolini bazaga kiritish (physics_db dataSourceId bilan)
-    await db.insert(questionBanks).values({ id: 'physics_db', name: 'Fizika' }).onConflictDoNothing()
+    // Rus tili banki va savolini bazaga kiritish (russian_db dataSourceId bilan)
+    await db.insert(questionBanks).values({ id: 'russian_db', name: 'Rus tili' }).onConflictDoNothing()
     const [t] = await db.insert(topics).values({
-      nameUz: 'Fizika mavzu', nameRu: 'Тема по физике', bankId: 'physics_db', slug: 'fizika-mavzu-uniq',
+      nameUz: 'Rus tili mavzu', nameRu: 'Тема по русскому', bankId: 'russian_db', slug: 'rustili-mavzu-uniq',
     }).onConflictDoNothing().returning()
-    const tId = t?.id ?? (await db.select({ id: topics.id }).from(topics).where(eq(topics.bankId, 'physics_db')))[0]?.id ?? null
+    const tId = t?.id ?? (await db.select({ id: topics.id }).from(topics).where(eq(topics.bankId, 'russian_db')))[0]?.id ?? null
 
     await db.insert(questions).values({
       id: 999111,
-      bankId: 'physics_db',
-      externalId: 'physics_999111',
-      questionUz: 'Fizika savol?',
-      questionRu: 'Физика вопрос?',
+      bankId: 'russian_db',
+      externalId: 'rustili_999111',
+      questionUz: 'Rus tili savol?',
+      questionRu: 'Русский вопрос?',
       optionsUz: { a: '1', b: '2' },
       optionsRu: { a: '1', b: '2' },
       correctAnswer: 'a',
@@ -185,11 +186,11 @@ describe('server-authoritative progress', () => {
 
     await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
-      .send({ questionId: 999111, selectedAnswer: 'b', subjectId: 'fizika' })
+      .send({ questionId: 999111, selectedAnswer: 'b', subjectId: 'rustili' })
       .expect(200)
 
     const [prog] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
-    expect(prog.wrongByTicket[`fizika:999111`]).toBe(1)
+    expect(prog.wrongByTicket[`rustili:999111`]).toBe(1)
     expect(prog.wrongByTicket[`yhq:999111`]).toBeUndefined()
   })
 })
