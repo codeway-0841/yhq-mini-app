@@ -109,7 +109,7 @@ export default function TestlarPage() {
           onClick={() => navigate('/qidiruv')}
           className="flex w-full items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
         >
-          <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" />
+          <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-pprimary" />
           <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
         </button>
       </div>
@@ -117,8 +117,8 @@ export default function TestlarPage() {
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
           const d = DIFF[m.diff]
-          // Rang intizomi (v2.1): neytral kulrang default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
-          const boxColor = m.danger ? 'var(--p-danger)' : 'var(--p-subtle)'
+          // Rang intizomi: tema aksent rangi default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
+          const boxColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
           const ringColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R

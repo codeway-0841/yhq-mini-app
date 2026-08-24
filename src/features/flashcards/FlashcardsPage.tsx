@@ -90,7 +90,7 @@ export default function FlashcardsPage() {
             className="text-psubtle hover:text-pfg px-1 transition-colors">
             <ChevronLeft size={24} />
           </button>
-          <Layers size={18} className="text-psubtle" />
+          <Layers size={18} className="text-pprimary" />
           <h1 className="text-lg font-semibold tracking-tight">Flashcards</h1>
         </div>
         <p className="text-[12px] text-psubtle mb-4">

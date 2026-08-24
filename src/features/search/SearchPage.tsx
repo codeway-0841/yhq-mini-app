@@ -59,7 +59,7 @@ export default function SearchPage() {
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <div className="flex-1 flex items-center gap-2 rounded-container border border-pline bg-psurface px-3.5">
-          <Search size={16} className="text-pmuted flex-shrink-0" />
+          <Search size={16} className="text-pprimary flex-shrink-0" />
           <input
             autoFocus
             value={query}
@@ -86,7 +86,7 @@ export default function SearchPage() {
       {hasAny && results.questions.length > 0 && (
         <div className="mb-5">
           <div className="flex items-center gap-2 mb-2">
-            <ListChecks size={15} className="text-pmuted" />
+            <ListChecks size={15} className="text-pprimary" />
             <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
               {tt('searchQuestionsSection')} · {results.questions.length}
             </p>
@@ -116,7 +116,7 @@ export default function SearchPage() {
       {hasAny && results.lessons.length > 0 && (
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <BookOpen size={15} className="text-pmuted" />
+            <BookOpen size={15} className="text-pprimary" />
             <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
               {tt('searchLessonsSection')} · {results.lessons.length}
             </p>

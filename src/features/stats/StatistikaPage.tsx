@@ -99,7 +99,7 @@ export default function StatistikaPage() {
           className="text-psubtle hover:text-pfg px-1 transition-colors">
           <ChevronLeft size={24} />
         </button>
-        <BarChart2 size={18} className="text-ppurple" />
+        <BarChart2 size={18} className="text-pprimary" />
         <h1 className="text-lg font-semibold tracking-tight">
           {lang === 'ru' ? 'Статистика' : 'Statistika'}
         </h1>

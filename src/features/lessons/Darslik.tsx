@@ -85,7 +85,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         <button onClick={onPractice}
           className="w-full rounded-container border border-pline bg-psurface p-4 text-left active:scale-[0.98] transition-transform">
           <p className="text-sm font-semibold flex items-center gap-2 mb-1">
-            <Dumbbell size={16} className="text-ppurple" />
+            <Dumbbell size={16} className="text-pprimary" />
             {ru ? 'Практика по теме' : "Mavzu bo'yicha mashq"}
           </p>
           <p className="text-xs text-pmuted">

@@ -267,7 +267,7 @@ export default function ShopPage() {
 
       {/* ── Temalar ── */}
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
-        <Palette size={11} /> {tt('shopThemesTitle')}
+        <Palette size={11} className="text-pprimary" /> {tt('shopThemesTitle')}
       </p>
       <div className="grid grid-cols-2 gap-3 px-5">
         {themeItems.map((item) => {
@@ -383,7 +383,7 @@ export default function ShopPage() {
 
       {/* ── Avatar ramkalari ── */}
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
-        <ImageIcon size={11} /> {tt('shopFramesTitle')}
+        <ImageIcon size={11} className="text-pprimary" /> {tt('shopFramesTitle')}
       </p>
       <div className="grid grid-cols-2 gap-3 px-5">
         {frameItems.map((item) => renderFrameCard(item))}

@@ -125,14 +125,14 @@ export default function AdaptivePage() {
   if (!q) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-pmuted px-4">
-        <Brain size={40} className="text-ppurple" />
+        <Brain size={40} className="text-pprimary" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
 
         {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
         {summary && summary.total > 0 && (
           <div className="rounded-container border border-pline bg-pcard rounded-container p-4 w-full max-w-xs">
             <div className="flex items-center gap-2 mb-3">
-              <CalendarClock size={15} className="text-ppurple" />
+              <CalendarClock size={15} className="text-pprimary" />
               <p className="text-xs font-semibold text-pfg">
                 {summary.total} {tt('srTotalCards').toLowerCase()}
               </p>
