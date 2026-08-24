@@ -24,7 +24,7 @@ export interface ItemProps {
   onPress?: () => void
   disabled?: boolean
 }
-export function Item({ icon: Icon, iconColor = 'var(--p-subtle)', label, right, onPress, disabled }: ItemProps) {
+export function Item({ icon: Icon, iconColor = 'var(--p-primary)', label, right, onPress, disabled }: ItemProps) {
   const Comp = onPress ? 'button' : 'div'
   return (
     <Comp

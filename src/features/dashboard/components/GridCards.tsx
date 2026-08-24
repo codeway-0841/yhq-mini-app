@@ -48,7 +48,7 @@ const cardInteractive = cn(
 )
 
 // ── Grid Card (rejimlar — gorizontal) ──────────────────────────────────────
-export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-subtle)', onClick }: {
+export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconColor = 'var(--p-primary)', onClick }: {
   icon: React.ElementType
   label: string
   badge?: number | null
@@ -72,9 +72,10 @@ export const GridCard = memo(function GridCard({ icon: Icon, label, badge, iconC
 })
 
 // ── Service Carousel Card — kvadrat (auto-scroll karusel uchun) ────────────
-export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClick }: {
+export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, iconColor = 'var(--p-primary)', onClick }: {
   icon: React.ElementType
   label: string
+  iconColor?: string
   onClick: () => void
 }) {
   return (
@@ -87,7 +88,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
         cardInteractive,
       )}
     >
-      <IconChip icon={Icon} color="var(--p-subtle)" size="lg" />
+      <IconChip icon={Icon} color={iconColor} size="lg" />
       <span className="line-clamp-2 flex min-h-[28px] items-center justify-center px-0.5 text-center text-[11px] font-medium leading-[1.25] text-pfg">
         {label}
       </span>
@@ -96,7 +97,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
 })
 
 // ── Asosiy grid kartasi (Testlar / Mavzular / AI Tutor ...) ────────────────
-export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = 'var(--p-subtle)', badge, comingSoon, onClick }: {
+export const MockGridCard = memo(function MockGridCard({ icon: Icon, label, subtitle, iconColor = 'var(--p-primary)', badge, comingSoon, onClick }: {
   icon: React.ElementType
   label: string
   subtitle?: string

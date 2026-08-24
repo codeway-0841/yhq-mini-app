@@ -20,7 +20,7 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
 
         <p id="stat-info-title" className="flex items-center justify-center gap-2 text-base font-black mb-4 text-fg">
-          <span className="text-pblue">{icon}</span>
+          <span className="text-pprimary">{icon}</span>
           {title}
         </p>
 

@@ -151,7 +151,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
           className="size-8 text-pmuted hover:text-pfg transition-transform active:scale-90"
         >
           {isDark ? (
-            <Moon size={16} strokeWidth={1.75} className="text-pblue" />
+            <Moon size={16} strokeWidth={1.75} className="text-pprimary" />
           ) : (
             <Sun size={16} strokeWidth={1.75} className="text-pwarning" />
           )}

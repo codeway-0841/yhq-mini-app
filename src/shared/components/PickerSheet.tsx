@@ -22,8 +22,8 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
       <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
         <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
 
-        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-black mb-5">
-          <span className="text-pblue">{titleIcon}</span>
+        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-black mb-5 text-fg">
+          <span className="text-pprimary">{titleIcon}</span>
           {title}
         </p>
 
