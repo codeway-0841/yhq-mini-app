@@ -6,7 +6,7 @@
  * Bu paket javob kaliti (correctAnswer) BILAN keladi — faqat oflayn-mashq
  * uchun (src/shared/store/useQuestionsStore.ts), hisobga YOZILMAYDI.
  */
-import type { AdminDbQuestion } from '../api'
+import { api, type AdminDbQuestion } from '../api'
 
 export type OfflineQuestionRow = AdminDbQuestion
 
@@ -28,10 +28,15 @@ export async function downloadSubjectOffline(
 ): Promise<void> {
   const cache = await caches.open(cacheNameFor(subjectId))
   const url = packageUrl(subjectId)
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`offline-package fetch failed: ${res.status}`)
-  const rows: OfflineQuestionRow[] = await res.clone().json()
-  await cache.put(url, res)
+  // Auth (initData/Bearer), timeout va ApiError — hammasi mavjud request()
+  // qatlamidan keladi. Oddiy fetch() auth header YUBORMAYDI, endpoint esa
+  // requireAuth ostida — shuning uchun u har safar 401 qaytarardi.
+  const rows = await api.getOfflinePackage(subjectId)
+  // Keshga SINTETIK Response yoziladi (tarmoqdan kelgani emas) — Response
+  // tanasi bir marta o'qiladi, shuning uchun clone()ga ehtiyoj qolmaydi.
+  await cache.put(url, new Response(JSON.stringify(rows), {
+    headers: { 'Content-Type': 'application/json' },
+  }))
 
   const images = [...new Set(rows.map((r) => r.image).filter((x): x is string => !!x))]
   const total = images.length + 1
@@ -54,6 +59,9 @@ export async function downloadSubjectOffline(
 }
 
 export async function isSubjectDownloaded(subjectId: string): Promise<boolean> {
+  // caches.open() keshni YARATADI — hech qachon yuklanmagan fanlar uchun bo'sh
+  // kesh qoldirmaslik uchun avval mavjudligini tekshiramiz.
+  if (!(await caches.has(cacheNameFor(subjectId)))) return false
   const cache = await caches.open(cacheNameFor(subjectId))
   const match = await cache.match(packageUrl(subjectId))
   return !!match
@@ -64,6 +72,9 @@ export async function deleteSubjectOffline(subjectId: string): Promise<void> {
 }
 
 export async function readOfflinePackage(subjectId: string): Promise<OfflineQuestionRow[] | null> {
+  // caches.open() keshni YARATADI — hech qachon yuklanmagan fanlar uchun bo'sh
+  // kesh qoldirmaslik uchun avval mavjudligini tekshiramiz.
+  if (!(await caches.has(cacheNameFor(subjectId)))) return null
   const cache = await caches.open(cacheNameFor(subjectId))
   const match = await cache.match(packageUrl(subjectId))
   if (!match) return null

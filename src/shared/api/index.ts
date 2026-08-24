@@ -457,6 +457,11 @@ export const api = {
     return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`)
   },
 
+  /** Oflayn paket — javob kaliti (correctAnswer) BILAN, requireAuth ostida.
+   *  Faqat src/shared/lib/offlinePackage.ts chaqiradi (oflayn mashq uchun). */
+  getOfflinePackage: (subject: string) =>
+    request<AdminDbQuestion[]>('GET', `/offline-package?subject=${encodeURIComponent(subject)}`),
+
   getLeaderboard: (limit: number, userId?: string, mode?: 'daily' | 'monthly' | 'all') =>
     request<LeaderboardEntry[]>(
       'GET',
