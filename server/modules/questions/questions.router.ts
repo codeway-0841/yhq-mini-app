@@ -80,7 +80,7 @@ const OfflinePackageQuery = z.object({
  * isOfflinePractice tekshiruvi) — kalitni bilish reyting/coin'ni aldash
  * uchun ishlatib bo'lmaydi (bu yo'l butunlay yopiq).
  *
- * Yo'l ATAYYLA '/questions/...' PREFIKSSIZ: server/middleware/auth.ts'dagi
+ * Yo'l ATAYLAB '/questions/...' PREFIKSSIZ: server/middleware/auth.ts'dagi
  * PUBLIC_GET birinchi segmenti 'questions' bo'lgan HAR QANDAY yo'lni
  * telegramAuth'da to'liq credential-tekshiruvsiz o'tkazadi — req.userId
  * hech qachon o'rnatilmaydi, requireAuth doim 401 qaytarardi.
@@ -95,7 +95,7 @@ router.get('/offline-package', requireAuth, contentLimit, wrap(async (req, res) 
   const provider = getProvider(entry.dataSourceId)
   const rows     = await provider.getAllQuestions()
 
-  res.set('Cache-Control', CONTENT_CACHE)
+  res.set('Cache-Control', 'no-store')  // javob kalitlari CDN/browser'da qolmasin
   res.set('X-Data-Source', entry.dataSourceId)
   res.json(rows)   // toPublic() CHAQIRILMAYDI — correctAnswer qoladi
 }))

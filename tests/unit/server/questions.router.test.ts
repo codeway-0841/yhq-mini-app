@@ -156,5 +156,35 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
         .expect(400)
       expect(res.body.error).toBe("Noto'g'ri so'rov parametrlari")
     })
+
+    it('sets Cache-Control: no-store so the answer key is never cached', async () => {
+      const mockQuestions = [
+        {
+          id: 1,
+          questionUz: 'Savol 1',
+          questionRu: 'Вопрос 1',
+          optionsUz: { a: '1', b: '2' },
+          optionsRu: { a: '1', b: '2' },
+          correctAnswer: 'a',
+          image: null,
+          topicId: 1,
+        },
+      ]
+      vi.spyOn(providers, 'getProvider').mockReturnValue({
+        getAllQuestions: vi.fn().mockResolvedValue(mockQuestions),
+        getQuestionsByTopic: vi.fn().mockResolvedValue(mockQuestions),
+        getTopics: vi.fn().mockResolvedValue([]),
+        getQuestionById: vi.fn().mockResolvedValue(mockQuestions[0]),
+      } as any)
+      const FAKE_INIT_DATA =
+        'query_id=DEV&user=%7B%22id%22%3A999999999%2C%22first_name%22%3A%22Dev%22%7D&auth_date=1723000000&hash=dev'
+
+      const res = await request(app)
+        .get('/api/offline-package?subject=yhq')
+        .set('x-telegram-init-data', FAKE_INIT_DATA)
+        .expect(200)
+
+      expect(res.headers['cache-control']).toBe('no-store')
+    })
   })
 })
