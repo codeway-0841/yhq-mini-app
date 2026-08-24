@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Play, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, Bell, Clock, Coins,
+  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, Bell, Clock, Coins,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
@@ -14,7 +14,7 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
 
-type LucideIcon = typeof Play
+type LucideIcon = typeof Zap
 type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv.
@@ -130,12 +130,6 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
         {/* Kontent — scrollable */}
         <div className="flex-1 overflow-y-auto px-5">
-          <Row icon={Play} label={tt('autoNextCorrect')}>
-            <Toggle label={tt('autoNextCorrect')} checked={local.autoNextCorrect} onChange={(v) => set('autoNextCorrect', v)} />
-          </Row>
-          <Row icon={Play} label={tt('autoNextWrong')}>
-            <Toggle label={tt('autoNextWrong')} checked={local.autoNextWrong} onChange={(v) => set('autoNextWrong', v)} />
-          </Row>
           <Row icon={Zap} label={tt('noAnimation')}>
             <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
           </Row>
