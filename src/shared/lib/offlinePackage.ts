@@ -26,14 +26,18 @@ export async function downloadSubjectOffline(
   subjectId: string,
   onProgress: (p: DownloadProgress) => void,
 ): Promise<void> {
-  const cache = await caches.open(cacheNameFor(subjectId))
   const url = packageUrl(subjectId)
   // Auth (initData/Bearer), timeout va ApiError — hammasi mavjud request()
   // qatlamidan keladi. Oddiy fetch() auth header YUBORMAYDI, endpoint esa
   // requireAuth ostida — shuning uchun u har safar 401 qaytarardi.
   const rows = await api.getOfflinePackage(subjectId)
-  // Keshga SINTETIK Response yoziladi (tarmoqdan kelgani emas) — Response
-  // tanasi bir marta o'qiladi, shuning uchun clone()ga ehtiyoj qolmaydi.
+
+  // Keshni faqat muvaffaqiyatli yuklanishi keyin yaratamiz — aks holda
+  // SINTETIK Response yoziladi (tarmoqdan kelgani emas). api.getOfflinePackage()
+  // javob tanasini allaqachon o'qigan (request() ichida res.json()), Response
+  // tanasi esa BIR MARTA o'qiladi: shu yerda tarmoq Response'ini saqlashga
+  // urinish brauzerda "body already consumed" xatosi berardi.
+  const cache = await caches.open(cacheNameFor(subjectId))
   await cache.put(url, new Response(JSON.stringify(rows), {
     headers: { 'Content-Type': 'application/json' },
   }))

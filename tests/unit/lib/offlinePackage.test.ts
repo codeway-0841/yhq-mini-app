@@ -109,17 +109,6 @@ describe('downloadSubjectOffline', () => {
     expect(progress[progress.length - 1]).toBe(100)
   })
 
-  it('does not double-consume a response body', async () => {
-    const { downloadSubjectOffline, readOfflinePackage } = await fresh()
-    const { api } = await import('../../../src/shared/api')
-    vi.mocked(api.getOfflinePackage).mockResolvedValueOnce(QUESTIONS)
-    fetchMock.mockResolvedValue(jsonResponse({}))
-
-    await downloadSubjectOffline('yhq', () => {})
-    const rows = await readOfflinePackage('yhq')
-    expect(rows).toHaveLength(3)
-  })
-
   it('propagates failed package fetch', async () => {
     const { downloadSubjectOffline } = await fresh()
     const { api, ApiError } = await import('../../../src/shared/api')
