@@ -32,12 +32,14 @@ export async function downloadSubjectOffline(
   // requireAuth ostida — shuning uchun u har safar 401 qaytarardi.
   const rows = await api.getOfflinePackage(subjectId)
 
-  // Keshni faqat muvaffaqiyatli yuklanishi keyin yaratamiz — aks holda
-  // SINTETIK Response yoziladi (tarmoqdan kelgani emas). api.getOfflinePackage()
-  // javob tanasini allaqachon o'qigan (request() ichida res.json()), Response
-  // tanasi esa BIR MARTA o'qiladi: shu yerda tarmoq Response'ini saqlashga
-  // urinish brauzerda "body already consumed" xatosi berardi.
+  // Kesh FAQAT yuklash muvaffaqiyatli bo'lgach yaratiladi: caches.open() keshni
+  // darhol yaratadi, shuning uchun yuqoridagi so'rov xato bersa bo'sh
+  // 'yhq-offline-<id>' kesh qolib ketardi (sw.js uni abadiy saqlaydi).
   const cache = await caches.open(cacheNameFor(subjectId))
+  // SINTETIK Response — tarmoqdan kelgani EMAS. api.getOfflinePackage() javob
+  // tanasini allaqachon o'qigan (request() ichida res.json()), Response tanasi
+  // esa BIR MARTA o'qiladi: shu yerda tarmoq Response'ini saqlashga urinish
+  // brauzerda "body already consumed" xatosi berardi.
   await cache.put(url, new Response(JSON.stringify(rows), {
     headers: { 'Content-Type': 'application/json' },
   }))
