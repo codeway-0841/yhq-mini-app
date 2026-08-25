@@ -54,6 +54,8 @@ export default function TestPage() {
   const storeTopics      = useQuestionsStore((s) => s.topics)
   const questionsLoading = useQuestionsStore((s) => s.loading)
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
+  const isOfflinePractice = useQuestionsStore((s) => s.isOfflinePractice)
+  const offlineAnswers    = useQuestionsStore((s) => s.offlineAnswers)
 
   const mode = (location.state?.mode as string | undefined) ?? null
   /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
@@ -322,6 +324,20 @@ export default function TestPage() {
     const questionId = q.id
     const answeredIndex = current
     setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = optId; return next })
+
+    // OFLAYN MASHQ: javob kaliti keshdan (useQuestionsStore.offlineAnswers) —
+    // serverga HECH NARSA yuborilmaydi, hisobga (XP/coin/streak/liga) tegmaydi.
+    if (isOfflinePractice) {
+      const idx = activeQuestions.findIndex((x) => x.id === questionId)
+      if (idx === -1) return
+      const correctAnswer = offlineAnswers[questionId]
+      const isCorrect = correctAnswer === optId
+      setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
+      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = correctAnswer ?? null; return next })
+      haptics.notify(isCorrect ? 'success' : 'error')
+      return
+    }
+
     setSubmitting(true)
 
     // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
@@ -383,7 +399,7 @@ export default function TestPage() {
         }, delay)
       }
     })()
-  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions])
+  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions, isOfflinePractice, offlineAnswers])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({
@@ -571,6 +587,12 @@ export default function TestPage() {
           </button>
         </div>
       </div>
+
+      {isOfflinePractice && (
+        <div className="mx-5 mb-3 rounded-control border border-pline bg-psurface px-3 py-2 text-center text-[12px] font-medium text-pmuted">
+          📴 {tt('offlinePracticeBanner')}
+        </div>
+      )}
 
       {toast && (
         <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-center text-[12.5px] font-medium text-pfg">
