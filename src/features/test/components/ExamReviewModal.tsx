@@ -174,7 +174,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
                   {/* Options List */}
                   <div className="space-y-1.5 mb-3">
-                    {q.options.map((opt) => {
+                    {q.options.map((opt, i) => {
                       const isUserChoice = item.selectedOptionId === opt.id
                       const isCorrect = item.correctOptionId === opt.id
 
@@ -212,7 +212,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                           className={`p-2.5 rounded-control border text-xs flex items-center gap-2 ${borderStyle}`}
                         >
                           <span className="w-5 h-5 rounded-md bg-psurface border border-pline flex items-center justify-center font-semibold text-[10px] flex-shrink-0">
-                            {opt.id.toUpperCase()}
+                            {String.fromCharCode(65 + i)}
                           </span>
                           <span className="flex-1 min-w-0">{opt.text}</span>
                           {badge}

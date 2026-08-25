@@ -181,7 +181,7 @@ export default function SpeedPage() {
               className="max-w-full max-h-[40vh] w-auto h-auto object-contain" />
           </div>
         )}
-        {q.options.map((opt) => {
+        {q.options.map((opt, i) => {
           const isRight  = revealed !== null && opt.id === revealed
           const isChoice = selected === opt.id
           const showResult = answered && !busy
@@ -196,7 +196,7 @@ export default function SpeedPage() {
               className={`w-full text-left rounded-control border-2 p-3.5 mb-2 transition-all focus:outline-none ${style}`}>
               <div className="flex items-center gap-3">
                 <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-semibold opacity-60 flex-shrink-0">
-                  {opt.id}
+                  {String.fromCharCode(65 + i)}
                 </span>
                 <span className="text-sm">{opt.text}</span>
                 {showResult && isRight && <Check size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pprimary" />}

@@ -723,8 +723,8 @@ export default function TestPage() {
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">
-            {q.options.map((opt) => (
-              <OptionButton key={`${q.id}_${opt.id}`} option={opt} state={getOptionState(opt.id)}
+            {q.options.map((opt, i) => (
+              <OptionButton key={`${q.id}_${opt.id}`} indexLabel={String.fromCharCode(65 + i)} option={opt} state={getOptionState(opt.id)}
                 onSelect={() => handleSelect(opt.id)} answered={!!selected} />
             ))}
           </div>

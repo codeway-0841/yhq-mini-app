@@ -27,10 +27,11 @@ function EFBadge({ card }: { card: SRCard | undefined }) {
   return <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${cls}`}>{label}</span>
 }
 
-function Option({ id, text, state, onSelect, answered }: {
+function Option({ id, text, state, onSelect, answered, label }: {
   id: string; text: string
   state: 'correct' | 'wrong' | 'default'
   onSelect: () => void; answered: boolean
+  label?: string
 }) {
   const base  = 'w-full text-left rounded-control border p-3.5 transition-all active:scale-[0.98]'
   const style =
@@ -41,7 +42,7 @@ function Option({ id, text, state, onSelect, answered }: {
     <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>
       <div className="flex items-center gap-3">
         <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-semibold opacity-60 flex-shrink-0">
-          {id}
+          {label ?? id.toUpperCase()}
         </span>
         <span className="text-sm">{text}</span>
         {state === 'correct' && <Check size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-psuccess" />}
@@ -197,14 +198,14 @@ export default function AdaptivePage() {
               className="max-w-full max-h-[55vh] w-auto h-auto object-contain" />
           </div>
         )}
-        {currentOptions.map((opt) => {
+        {currentOptions.map((opt, i) => {
           const state: 'correct' | 'wrong' | 'default' =
             !answered            ? 'default' :
             revealed && opt.id === revealed ? 'correct' :
             revealed && opt.id === selectedOption ? 'wrong' :
             'default'
           return (
-            <Option key={`${q.id}_${opt.id}`} id={opt.id} text={opt.text}
+            <Option key={`${q.id}_${opt.id}`} id={opt.id} label={String.fromCharCode(65 + i)} text={opt.text}
               state={state} onSelect={() => handleSelect(opt.id)} answered={answered} />
           )
         })}

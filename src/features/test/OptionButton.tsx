@@ -12,11 +12,12 @@ export type Option = { id: string; text: string }
  * Holat 1px chegara + yumshoq semantik fon + lucide ikonka bilan beriladi;
  * "kalit" chipi (A/B/C/D) holat rangiga to'ladi.
  */
-export default function OptionButton({ option, state, onSelect, answered }: {
+export default function OptionButton({ option, state, onSelect, answered, indexLabel }: {
   option: Option
   state: 'correct' | 'wrong' | 'pending' | 'default'
   onSelect: () => void
   answered: boolean
+  indexLabel?: string
 }) {
   const handleClick = () => {
     if (!answered) {
@@ -60,7 +61,7 @@ export default function OptionButton({ option, state, onSelect, answered }: {
       <div className="flex items-center justify-between gap-2">
         <div className="flex min-w-0 items-center gap-2.5">
           <span className={cn('flex size-8 flex-none items-center justify-center rounded-control border text-xs font-semibold', chip)}>
-            {option.id}
+            {indexLabel ?? option.id.toUpperCase()}
           </span>
           <span className="text-base text-pfg">{option.text}</span>
         </div>
