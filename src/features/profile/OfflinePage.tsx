@@ -34,7 +34,14 @@ export default function OfflinePage() {
   // sahifadan chiqib ketsa (orqaga tugma) — keyingi setState chaqiruvlari
   // unmount qilingan komponentga tegmasin.
   const mountedRef = useRef(true)
-  useEffect(() => () => { mountedRef.current = false }, [])
+  useEffect(() => {
+    // Remount'da QAYTA true qilinadi. Faqat cleanup yozilsa, React StrictMode'ning
+    // mount-unmount-remount siklidan keyin ref abadiy false bo'lib qolardi va
+    // yuklash progressi UI'ga umuman yetib bormasdi (yuklashning o'zi ishlagani
+    // holda ekran 0% da qotib turardi). Bir marta chiqib qaytilganda ham xuddi shu.
+    mountedRef.current = true
+    return () => { mountedRef.current = false }
+  }, [])
 
   useEffect(() => {
     let cancelled = false

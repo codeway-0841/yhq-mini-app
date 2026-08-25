@@ -1,3 +1,4 @@
+import { StrictMode } from 'react'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
@@ -20,6 +21,14 @@ function renderPage() {
   // that hook throws without a ToastProvider ancestor, so it's included here
   // alongside MemoryRouter (needed for useNavigate/goBack).
   return render(<MemoryRouter><ToastProvider><OfflinePage /></ToastProvider></MemoryRouter>)
+}
+
+/** StrictMode qo'shilgan variant — mount-unmount-remount siklini takrorlaydi
+ *  (src/main.tsx ilovani aynan shunday o'raydi, ya'ni bu REAL dev xulqi). */
+function renderPageStrict() {
+  return render(
+    <StrictMode><MemoryRouter><ToastProvider><OfflinePage /></ToastProvider></MemoryRouter></StrictMode>
+  )
 }
 
 beforeEach(() => {
@@ -106,5 +115,22 @@ describe('OfflinePage', () => {
 
     expect(await screen.findByText("Yuklab bo'lmadi. Qaytadan urinib ko'ring")).toBeInTheDocument()
     expect(screen.getByText('Yuklab olish')).toBeInTheDocument()
+  })
+  it('StrictMode remount ostida ham progress UI ga yetib boradi', async () => {
+    isSubjectDownloaded.mockResolvedValue(false)
+    // Yuklash progressni bosqichma-bosqich xabar qiladi, keyin tugaydi.
+    downloadSubjectOffline.mockImplementation(async (_sid: string, onProgress: (p: unknown) => void) => {
+      onProgress({ done: 1, total: 2, percent: 50 })
+      onProgress({ done: 2, total: 2, percent: 100 })
+    })
+    renderPageStrict()
+    await waitFor(() => screen.getByText('Yuklab olish'))
+
+    fireEvent.click(screen.getByText('Yuklab olish'))
+    fireEvent.click(await screen.findByText('Rasmlarni yuklash'))
+
+    // mountedRef remount'da true ga qaytarilmasa, progress ham, yakuniy holat
+    // ham UI ga umuman yetib bormaydi — ekran "Yuklab olish"da qotib qoladi.
+    await waitFor(() => expect(screen.getByText("O'chirish")).toBeInTheDocument())
   })
 })
