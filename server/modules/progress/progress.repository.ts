@@ -5,7 +5,7 @@
 import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress, duelResults } from '../../schema'
-import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
+import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import {
   XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
@@ -229,7 +229,7 @@ export const progressRepository = {
           answered = daily_records.answered + EXCLUDED.answered,
           correct = daily_records.correct + EXCLUDED.correct,
           fixed = daily_records.fixed + EXCLUDED.fixed
-        RETURNING id, fixed
+        RETURNING id
       ), streak_upsert AS (
         -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
         -- daily.repository.touchActivity bilan BITTA manba.
@@ -251,16 +251,22 @@ export const progressRepository = {
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
       ), coin_mint AS (
-        -- Javoblardan kuniga olinadigan coin ham cheklangan (COINS_DAILY_ANSWER_CAP):
-        -- Yangi to'g'ri javob: 1 coin (COINS_PER_CORRECT_ANSWER).
-        -- Xato savolni tuzatish (is_fix): har 10 ta xato uchun 1 coin (0.1 coin/xato nisbati).
+        -- Javoblardan kuniga olinadigan coin cheklangan (COINS_DAILY_ANSWER_CAP).
+        -- Yangi to'g'ri javob: COINS_PER_CORRECT_ANSWER.
+        -- Xato savolni tuzatish (is_fix): COINS_PER_MISTAKE_FIXED — to'g'ri
+        -- javobning yarmi, HAR BIR tuzatish uchun darhol.
+        --
+        -- Avval bu "har 10 ta tuzatishga 1 coin" edi, hisoblagich esa
+        -- daily_records.fixed — u har KUNI va har FAN bo'yicha nolga qaytardi.
+        -- Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi, ya'ni vazifani
+        -- bajaradigan foydalanuvchi 10 ga hech qachon yetmay, tuzatishdan
+        -- abadiy 0 coin olardi.
         SELECT CASE
           WHEN ${correct}
            AND EXISTS (SELECT 1 FROM prog)
            AND COALESCE((SELECT coins_earned FROM limits), 0) < ${COINS_DAILY_ANSWER_CAP}::int
           THEN CASE
-            WHEN (SELECT is_fix FROM is_mistake_fixed) THEN
-              CASE WHEN (SELECT fixed FROM record_upsert) % 10 = 0 THEN ${COINS_PER_CORRECT_ANSWER}::int ELSE 0 END
+            WHEN (SELECT is_fix FROM is_mistake_fixed) THEN ${COINS_PER_MISTAKE_FIXED}::int
             ELSE ${COINS_PER_CORRECT_ANSWER}::int
           END
           ELSE 0

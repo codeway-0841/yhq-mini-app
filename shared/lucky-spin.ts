@@ -25,13 +25,16 @@ export interface SpinSegment {
 }
 
 export const SPIN_SEGMENTS: readonly SpinSegment[] = [
-  { id: 'c5',   kind: 'coins',        amount: 5,   weight: 25 },
-  { id: 'c10',  kind: 'coins',        amount: 10,  weight: 22 },
-  { id: 'c15',  kind: 'coins',        amount: 15,  weight: 18 },
-  { id: 'c20',  kind: 'coins',        amount: 20,  weight: 14 },
-  { id: 'c30',  kind: 'coins',        amount: 30,  weight: 10 },
-  { id: 'c50',  kind: 'coins',        amount: 50,  weight: 7  },
-  { id: 'c100', kind: 'coins',        amount: 100, weight: 2  },
+  // DIQQAT: id'lar TARIXIY yorliq, miqdor EMAS ('c5' endi 10 tanga beradi).
+  // daily_spins.reward_id bazada saqlanadi — id o'zgartirilsa, o'sha kuni
+  // allaqachon aylantirgan foydalanuvchining natijasi topilmay qolardi.
+  { id: 'c5',   kind: 'coins',        amount: 10,   weight: 25 },
+  { id: 'c10',  kind: 'coins',        amount: 20,  weight: 22 },
+  { id: 'c15',  kind: 'coins',        amount: 30,  weight: 18 },
+  { id: 'c20',  kind: 'coins',        amount: 40,  weight: 14 },
+  { id: 'c30',  kind: 'coins',        amount: 60,  weight: 10 },
+  { id: 'c50',  kind: 'coins',        amount: 100,  weight: 7  },
+  { id: 'c100', kind: 'coins',        amount: 200, weight: 2  },
   { id: 'p1',   kind: 'premium-days', amount: 1,   weight: 2  },
 ] as const
 

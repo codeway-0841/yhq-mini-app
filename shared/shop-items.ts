@@ -46,40 +46,51 @@ export interface ShopItem {
 }
 
 /** Javob boshiga mint — recordAnswer CTE'da faqat gate'dan o'tgan TO'G'RI javob uchun. */
-export const COINS_PER_CORRECT_ANSWER = 1
+export const COINS_PER_CORRECT_ANSWER = 2
 
-/** Merch narx-anchor'i: 1 oylik har-kunlik faol o'yin (30 × 80c) ≈ 2'400c. */
-export const COINS_MONTH_OF_PLAY = 2400
+/**
+ * Xatoni tuzatgani uchun mint — to'g'ri javobning YARMI.
+ *
+ * Avval bu "har 10 ta tuzatishga 1 tanga" edi (0.1 nisbati), lekin hisoblagich
+ * `daily_records.fixed` dan olinardi va u har KUNI hamda har FAN bo'yicha
+ * nolga qaytardi. Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi, ya'ni
+ * vazifani bajaradigan foydalanuvchi 10 ga hech qachon yetmay, tuzatishdan
+ * abadiy 0 tanga olardi. Endi har bir tuzatish darhol to'lanadi.
+ */
+export const COINS_PER_MISTAKE_FIXED = 1
+
+/** Merch narx-anchor'i: 1 oylik har-kunlik faol o'yin (30 × 160c) ≈ 4'800c. */
+export const COINS_MONTH_OF_PLAY = 4800
 
 export const SHOP_ITEMS = [
   // ── Coin-eksklyuziv temalar (premium:false — FAQAT tanga evaziga) ──
-  { id: 'crimson', kind: 'accent-theme', price: 500 },
-  { id: 'royal',   kind: 'accent-theme', price: 500 },
-  { id: 'arctic',  kind: 'accent-theme', price: 500 },
+  { id: 'crimson', kind: 'accent-theme', price: 1000 },
+  { id: 'royal',   kind: 'accent-theme', price: 1000 },
+  { id: 'arctic',  kind: 'accent-theme', price: 1000 },
   // ── Mavjud premium temalar — coin'ga ham (premium obunasi ALTERNATIVASI) ──
-  { id: 'obsidian', kind: 'accent-theme', price: 800 },
-  { id: 'neo',      kind: 'accent-theme', price: 800 },
-  { id: 'nordic',   kind: 'accent-theme', price: 800 },
-  { id: 'carplay',  kind: 'accent-theme', price: 800 },
-  { id: 'aurora',   kind: 'accent-theme', price: 800 },
-  { id: 'violet',   kind: 'accent-theme', price: 800 },
-  { id: 'ocean',    kind: 'accent-theme', price: 800 },
-  { id: 'forest',   kind: 'accent-theme', price: 800 },
-  { id: 'sunset',   kind: 'accent-theme', price: 800 },
-  { id: 'sakura',   kind: 'accent-theme', price: 800 },
-  { id: 'gold',     kind: 'accent-theme', price: 800 },
-  { id: 'payme',    kind: 'accent-theme', price: 800 },
+  { id: 'obsidian', kind: 'accent-theme', price: 1600 },
+  { id: 'neo',      kind: 'accent-theme', price: 1600 },
+  { id: 'nordic',   kind: 'accent-theme', price: 1600 },
+  { id: 'carplay',  kind: 'accent-theme', price: 1600 },
+  { id: 'aurora',   kind: 'accent-theme', price: 1600 },
+  { id: 'violet',   kind: 'accent-theme', price: 1600 },
+  { id: 'ocean',    kind: 'accent-theme', price: 1600 },
+  { id: 'forest',   kind: 'accent-theme', price: 1600 },
+  { id: 'sunset',   kind: 'accent-theme', price: 1600 },
+  { id: 'sakura',   kind: 'accent-theme', price: 1600 },
+  { id: 'gold',     kind: 'accent-theme', price: 1600 },
+  { id: 'payme',    kind: 'accent-theme', price: 1600 },
   // ── Consumable: 1 kunlik premium (C-1 — tariff'ga tegmaydi) ──
-  { id: 'premium-days-1', kind: 'premium-days', price: 300, days: 1 },
+  { id: 'premium-days-1', kind: 'premium-days', price: 600, days: 1 },
   // ── Avatar ramkalari (durable — bitta marta sotib olinadi, umrbod) ──
-  { id: 'frame-neon',    kind: 'avatar-frame', price: 300 },
-  { id: 'frame-arctic',  kind: 'avatar-frame', price: 500 },
-  { id: 'frame-royal',   kind: 'avatar-frame', price: 500 },
-  { id: 'frame-gold',    kind: 'avatar-frame', price: 500 },
-  { id: 'frame-fire',    kind: 'avatar-frame', price: 700 },
+  { id: 'frame-neon',    kind: 'avatar-frame', price: 600 },
+  { id: 'frame-arctic',  kind: 'avatar-frame', price: 1000 },
+  { id: 'frame-royal',   kind: 'avatar-frame', price: 1000 },
+  { id: 'frame-gold',    kind: 'avatar-frame', price: 1000 },
+  { id: 'frame-fire',    kind: 'avatar-frame', price: 1400 },
   // ── Mavsumiy drop'lar (limitli oyna; sotib olingan umrbod qoladi) ──
-  { id: 'frame-navruz',      kind: 'avatar-frame', price: 400, seasonal: { from: '03-01', until: '03-27' } },
-  { id: 'frame-mustaqillik', kind: 'avatar-frame', price: 400, seasonal: { from: '08-15', until: '09-03' } },
+  { id: 'frame-navruz',      kind: 'avatar-frame', price: 800, seasonal: { from: '03-01', until: '03-27' } },
+  { id: 'frame-mustaqillik', kind: 'avatar-frame', price: 800, seasonal: { from: '08-15', until: '09-03' } },
 ] as const satisfies readonly ShopItem[]
 
 export type ShopItemId = (typeof SHOP_ITEMS)[number]['id']

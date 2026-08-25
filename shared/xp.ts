@@ -34,7 +34,7 @@ export const XP_DAILY_CAP = 500
  * Nega hozir kerak: keyinroq balanslar shishib ketsa, yagona chora narxni
  * ma'nosiz ko'tarish yoki balansni nolga tushirish bo'lardi — ikkalasi ham yomon.
  */
-export const COINS_DAILY_ANSWER_CAP = 50
+export const COINS_DAILY_ANSWER_CAP = 100
 
 /**
  * Level chegarasi: `n`-levelga chiqish uchun kerak bo'lgan JAMI XP.
