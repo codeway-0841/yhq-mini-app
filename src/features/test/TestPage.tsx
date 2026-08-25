@@ -55,7 +55,6 @@ export default function TestPage() {
   const questionsLoading = useQuestionsStore((s) => s.loading)
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
   const isOfflinePractice = useQuestionsStore((s) => s.isOfflinePractice)
-  const offlineAnswers    = useQuestionsStore((s) => s.offlineAnswers)
 
   const mode = (location.state?.mode as string | undefined) ?? null
   /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
@@ -325,22 +324,13 @@ export default function TestPage() {
     const answeredIndex = current
     setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = optId; return next })
 
-    // OFLAYN MASHQ: javob kaliti keshdan (useQuestionsStore.offlineAnswers) —
-    // serverga HECH NARSA yuborilmaydi, hisobga (XP/coin/streak/liga) tegmaydi.
-    if (isOfflinePractice) {
-      const idx = activeQuestions.findIndex((x) => x.id === questionId)
-      if (idx === -1) return
-      const correctAnswer = offlineAnswers[questionId]
-      const isCorrect = correctAnswer === optId
-      setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
-      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = correctAnswer ?? null; return next })
-      haptics.notify(isCorrect ? 'success' : 'error')
-      return
-    }
-
     setSubmitting(true)
 
-    // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
+    // ASYNC FEEDBACK: to'g'rilikni odatda SERVER hal qiladi (javob kaliti
+    // client'da yo'q). Oflayn mashqda esa submitAnswer'ning O'ZI lokal
+    // baholaydi va serverga hech narsa yubormaydi (useAppStore choke point) —
+    // shu tufayli bu yerda alohida filial kerak emas va oflayn javob ham
+    // ovoz/auto-next kabi odatdagi fikr-bildirishni to'liq oladi.
     void (async () => {
       const outcome = await submitAnswer(questionId, optId, answerTimer.elapsed())
       setSubmitting(false)
@@ -399,7 +389,7 @@ export default function TestPage() {
         }, delay)
       }
     })()
-  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions, isOfflinePractice, offlineAnswers])
+  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({

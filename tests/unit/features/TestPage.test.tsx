@@ -1,13 +1,15 @@
 /**
- * TestPage — oflayn-mashq javob yo'lining xavfsizlik xossasi.
+ * TestPage — oflayn-mashq EKRAN xulqi (banner + vizual fikr-bildirish).
  *
- * Butun "offline subject download" feature'i shu bitta qoidaga tayanadi:
- * isOfflinePractice===true bo'lganda javob HECH QACHON serverga
- * (submitAnswer, demak enqueueOutbox ham) yuborilmaydi — faqat lokal
- * (useQuestionsStore.offlineAnswers) skorlanadi. Shu tufayli GET
- * /api/offline-package javob kalitini client'ga yuborishi xavfsiz: oflayn
- * javob hech qachon qaytarilmagani uchun kalitni bilish hech narsa bermaydi.
- * Bu test o'sha chegarani himoya qiladi.
+ * DIQQAT: "serverga yuborilmaydi" xavfsizlik xossasi endi BU YERDA emas —
+ * u useAppStore.submitAnswer ichidagi choke point bilan ta'minlanadi va
+ * tests/unit/store/offline-practice-guard.test.ts da qulflangan. Qorovul
+ * ataylab o'sha yerga ko'chirildi: ekran darajasida u faqat TestPage'ni
+ * qamrab, Speed Round va Kunlik mashqni ochiq qoldirardi (ular xuddi shu
+ * savollar bilan ishlab, javoblarni outbox orqali serverga yetkazardi).
+ *
+ * Shuning uchun bu yerda submitAnswer CHAQIRILADI — u oflayn holatda
+ * tarmoqqa chiqmasdan lokal javob qaytaradi.
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent, act } from '@testing-library/react'
@@ -70,7 +72,10 @@ beforeEach(() => {
 })
 
 describe('TestPage — offline practice', () => {
-  it('javobni lokal offlineAnswers bilan skorlaydi va submitAnswer chaqirmaydi', () => {
+  it("banner ko'rsatadi va javobni odatdagidek vizual belgilaydi", async () => {
+    // Oflayn holatda submitAnswer tarmoqqa chiqmasdan LOKAL javob qaytaradi —
+    // shu yerda aynan o'sha shakl taqlid qilinadi ('b' tanlandi, to'g'risi 'a').
+    mockSubmitAnswer.mockResolvedValue({ correct: false, correctAnswer: 'a', duplicate: false, coinsEarned: 0 })
     useQuestionsStore.setState({
       questions: [QUESTION],
       topics: [],
@@ -93,12 +98,15 @@ describe('TestPage — offline practice', () => {
     // Noto'g'ri variantni tanlaymiz.
     fireEvent.click(optionB)
 
-    // XAVFSIZLIK XOSSASI: serverga (demak outbox'ga ham) HECH NARSA yuborilmadi.
-    expect(mockSubmitAnswer).not.toHaveBeenCalled()
+    // Ekran odatdagi yo'ldan boradi — submitAnswer chaqiriladi, lekin u oflayn
+    // holatda tarmoqqa chiqmaydi (o'sha xossa store testida qulflangan).
+    expect(mockSubmitAnswer).toHaveBeenCalledWith(1, 'b', expect.any(Number))
+
+    // Fikr-bildirish endi async (submitAnswer promise qaytaradi) — kutamiz.
+    await act(async () => { await new Promise((r) => setTimeout(r, 0)) })
 
     // Vizual feedback onlayn yo'l bilan bir xil: tanlangan (noto'g'ri) qizil,
-    // haqiqiy to'g'ri variant reveal qilinadi (yashil) — bu faqat mahalliy
-    // skoring to'g'ri ishlaganda mumkin (submitAnswer chaqirilmagan bo'lsa-da).
+    // haqiqiy to'g'ri variant reveal qilinadi (yashil).
     expect(optionB).toHaveClass('border-pdanger')
     expect(optionA).toHaveClass('border-pprimary')
     expect(optionA).toBeDisabled()

@@ -64,7 +64,11 @@ export const useAdaptiveStore = create<AdaptiveState>()(
           sessionCount:   s.sessionCount + 1,
         }))
 
-        if (userId && userId !== '0') {
+        // Oflayn mashqda takrorlash jadvali SERVERGA yozilmaydi — javob kaliti
+        // qurilmada bo'lgani uchun bu javoblar hisobga olinmaydi (useAppStore
+        // submitAnswer'dagi choke point bilan bir xil sabab). Lokal karta
+        // yuqorida yangilandi, ya'ni oflayn mashq foydali bo'lib qolaveradi.
+        if (userId && userId !== '0' && !useQuestionsStore.getState().isOfflinePractice) {
           enqueueOutbox(userId, 'card-review', {
             subjectId,
             questionId,
