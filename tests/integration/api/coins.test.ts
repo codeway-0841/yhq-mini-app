@@ -32,11 +32,37 @@ const USER_B = '990000004002'
 // olib kelgan edi.
 const USER_C = '990000004003'
 const USER_D = '990000004004'
-const IDS = [USER_A, USER_B, USER_C, USER_D]
+// USER_E: per-10-fixes testi uchun ALOHIDA — USER_D merch testlarida
+// balansi qo'lda o'rnatiladi (setBalance), ya'ni javob mint'i bilan
+// bir foydalanuvchini bo'lishish ikkala testni ham buzadi.
+const USER_E = '990000004005'
+const IDS = [USER_A, USER_B, USER_C, USER_D, USER_E]
+
+/** Per-10-fixes testi uchun test O'ZI yaratadigan savollar (CI bazasida
+ *  yetarli savol yo'q). 'a' — to'g'ri, 'b' — xato. */
+const FIX_QUESTION_IDS = Array.from({ length: 10 }, (_, i) => 998001 + i)
 
 async function cleanup() {
   for (const id of IDS) {
     await db.delete(users).where(eq(users.id, id))   // FK cascade: coins/items/sessions/tokens
+  }
+  for (const qid of FIX_QUESTION_IDS) {
+    await db.delete(questions).where(eq(questions.id, qid))
+  }
+}
+
+/** Per-10-fixes testi uchun savollarni yaratish — idempotent (onConflictDoNothing). */
+async function seedFixQuestions() {
+  for (const [i, id] of FIX_QUESTION_IDS.entries()) {
+    await db.insert(questions).values({
+      id,
+      externalId: `coins_fix_${id}`,
+      questionUz: `Coins fix savol ${i + 1}`,
+      questionRu: `Coins fix вопрос ${i + 1}`,
+      optionsUz: { a: '1', b: '2' },
+      optionsRu: { a: '1', b: '2' },
+      correctAnswer: 'a',
+    }).onConflictDoNothing()
   }
 }
 
@@ -80,32 +106,38 @@ let tokenD: string
 
 beforeAll(async () => {
   await cleanup()
+  await seedFixQuestions()
   tokenA = await createUserWithSession(USER_A)
   tokenB = await createUserWithSession(USER_B)
   tokenC = await createUserWithSession(USER_C)
   tokenD = await createUserWithSession(USER_D)
+  await createUserWithSession(USER_E)
 })
 
 afterAll(cleanup)
 
 describe('coins mint — faqat gate + to\'g\'ri javob', () => {
-  it('to\'g\'ri javob +1 coin mint qiladi; xato javob 0; replay qayta bermaydi', async () => {
-    const [q] = await db.select().from(questions).limit(1)
-    expect(q).toBeDefined()
-    const wrongOpt = Object.keys(q.optionsUz).find((k) => k !== q.correctAnswer) ?? '__x__'
+  it('yangi to\'g\'ri javob +1 coin mint qiladi; xato javob 0; replay qayta bermaydi', async () => {
+    // IKKI xil savol kerak: mint qoidasi ularni FARQLI baholaydi — qFix xato
+    // qilinib keyin tuzatiladi (is_fix yo'li), qNew esa birinchi urinishda
+    // to'g'ri yechiladi (oddiy +1 coin yo'li).
+    const [qFix, qNew] = await db.select().from(questions).limit(2)
+    expect(qFix).toBeDefined()
+    expect(qNew).toBeDefined()
+    const wrongOpt = Object.keys(qFix.optionsUz).find((k) => k !== qFix.correctAnswer) ?? '__x__'
     const t1 = randomBytes(16).toString('hex')
 
     // 1) XATO javob — mint yo'q
     const wrong = await request(app).post(`/api/progress/${USER_A}/result`)
-      .send({ questionId: q.id, selectedAnswer: wrongOpt, subjectId: 'yhq', clientToken: t1 })
+      .send({ questionId: qFix.id, selectedAnswer: wrongOpt, subjectId: 'yhq', clientToken: t1 })
       .expect(200)
     expect(wrong.body.coinsEarned ?? 0).toBe(0)
     expect(await getBalance(USER_A)).toBe(0)
 
-    // 2) TO'G'RI javob — +1 mint + balans javobda
+    // 2) YANGI savolga TO'G'RI javob — +1 mint + balans javobda
     const t2 = randomBytes(16).toString('hex')
     const ok = await request(app).post(`/api/progress/${USER_A}/result`)
-      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t2 })
+      .send({ questionId: qNew.id, selectedAnswer: qNew.correctAnswer, subjectId: 'yhq', clientToken: t2 })
       .expect(200)
     expect(ok.body.coinsEarned).toBe(1)
     expect(ok.body.coinBalance).toBe(1)
@@ -113,7 +145,7 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
 
     // 3) XUDDI SHU token replay — qayta mint YO'Q
     const replay = await request(app).post(`/api/progress/${USER_A}/result`)
-      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t2 })
+      .send({ questionId: qNew.id, selectedAnswer: qNew.correctAnswer, subjectId: 'yhq', clientToken: t2 })
       .expect(200)
     expect(replay.body.duplicate).toBe(true)
     expect(replay.body.coinsEarned ?? 0).toBe(0)
@@ -122,7 +154,7 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
     // 4) YANGI token, lekin anti-farm gate (bu savol allaqachon to'g'ri yechilgan) — mint YO'Q
     const t3 = randomBytes(16).toString('hex')
     const gate = await request(app).post(`/api/progress/${USER_A}/result`)
-      .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: t3 })
+      .send({ questionId: qNew.id, selectedAnswer: qNew.correctAnswer, subjectId: 'yhq', clientToken: t3 })
       .expect(200)
     expect(gate.body.duplicate).toBe(true)
     expect(await getBalance(USER_A)).toBe(1)
@@ -131,6 +163,45 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
     const hist = await coinsRepository.getHistory(USER_A)
     expect(hist.filter((h) => h.reason === 'answer').length).toBe(1)
   })
+
+  it('xato tuzatish: 10-tuzatishgacha 0 coin, 10-tasida +1 (0.1 coin/xato)', async () => {
+    // bcdfe51 feat(economy) qoidasi: is_fix yo'lida coin FAQAT kunlik
+    // daily_records.fixed hisobi 10 ga karrali bo'lganda beriladi.
+    // Avval bu holat umuman qoplanmagan edi — yuqoridagi test bir xil savolni
+    // xato->to'g'ri qilib "+1 coin" kutardi, ya'ni ESKI qoidani tekshirardi va
+    // o'sha commitdan keyin qizil bo'lib qolgandi.
+    // Savollarni TESTNING O'ZI yaratadi (beforeAll): CI test bazasida atigi
+    // bir nechta savol bor, ya'ni mavjud qatorlar soniga tayanib bo'lmaydi.
+    // Retry'ga chidamli: vitest bu faylda retry:2 bilan ishlaydi, oldingi
+    // urinishning javoblari qolsa anti-farm gate mint'ni to'sib qo'yardi.
+    await db.delete(users).where(eq(users.id, USER_E))
+    await createUserWithSession(USER_E)
+
+    const rows = FIX_QUESTION_IDS.map((id) => ({ id, correctAnswer: 'a' }))
+
+    // 10 ta savolga avval XATO javob — tuzatiladigan xatolar tayyorlanadi
+    for (const q of rows) {
+      await request(app).post(`/api/progress/${USER_E}/result`)
+        .send({ questionId: q.id, selectedAnswer: 'b', subjectId: 'yhq', clientToken: randomBytes(16).toString('hex') })
+        .expect(200)
+    }
+    expect(await getBalance(USER_E)).toBe(0)
+
+    // Ketma-ket tuzatamiz: 1..9-tuzatish 0 coin, 10-tuzatish +1 coin
+    const earned: number[] = []
+    for (const q of rows) {
+      const res = await request(app).post(`/api/progress/${USER_E}/result`)
+        .send({ questionId: q.id, selectedAnswer: q.correctAnswer, subjectId: 'yhq', clientToken: randomBytes(16).toString('hex') })
+        .expect(200)
+      earned.push(res.body.coinsEarned ?? 0)
+    }
+
+    expect(earned.slice(0, 9)).toEqual([0, 0, 0, 0, 0, 0, 0, 0, 0])
+    expect(earned[9]).toBe(1)
+    expect(await getBalance(USER_E)).toBe(1)
+    // 20 ta ketma-ket so'rov (10 xato + 10 tuzatish) uzoq test bazasiga —
+    // standart 15s yetmaydi.
+  }, 90_000)
 })
 
 describe('coins purchase — atomiklik', () => {
