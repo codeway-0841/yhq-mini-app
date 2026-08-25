@@ -74,11 +74,14 @@ const OfflinePackageQuery = z.object({
  * GET /api/offline-package?subject=yhq
  *
  * Oflayn mashq uchun — javob kaliti (correctAnswer) BILAN qaytaradi.
- * DIQQAT: bu YAGONA joy repo bo'ylab — correctAnswer ataylan client'ga
+ * DIQQAT: bu YAGONA joy repo bo'ylab — correctAnswer ataylab client'ga
  * yuboriladi. Xavfsiz, chunki oflayn-mashq javoblari HECH QACHON
- * /progress/:userId/result'ga yuborilmaydi (src/features/test/TestPage.tsx,
- * isOfflinePractice tekshiruvi) — kalitni bilish reyting/coin'ni aldash
- * uchun ishlatib bo'lmaydi (bu yo'l butunlay yopiq).
+ * /progress/:userId/result'ga yuborilmaydi: qorovul
+ * src/shared/store/useAppStore.ts'dagi submitAnswer ichida (choke point),
+ * ya'ni HAR QANDAY mashq ekrani — TestPage, Speed Round, Kunlik mashq va
+ * keyin qo'shiladiganlari ham — avtomatik qamrab olinadi. Kalitni bilish
+ * shu sababli reyting/coin'ni aldashga yaramaydi.
+ * Regressiya qulfi: tests/unit/store/offline-practice-guard.test.ts.
  *
  * Yo'l ATAYLAB '/questions/...' PREFIKSSIZ: server/middleware/auth.ts'dagi
  * PUBLIC_GET birinchi segmenti 'questions' bo'lgan HAR QANDAY yo'lni
