@@ -337,6 +337,14 @@ export default function App() {
     const onOnline = () => {
       const id = useAppStore.getState().user?.id
       if (id && id !== '0') void flushOutbox(id)
+      // Internet qaytdi — oflayn-mashq rejimida qotib qolmaslik uchun savollarni
+      // serverdan QAYTA yuklaymiz. Aks holda load()ning `loaded` qorovuli ishlab,
+      // foydalanuvchi onlayn bo'lsa ham oflayn rejimda qolib ketardi — javoblari
+      // hisobga (XP/coin/liga) yozilmasdan. reload() qorovulni chetlab o'tadi va
+      // muvaffaqiyatda isOfflinePractice'ni tozalaydi; muvaffaqiyatsizlikda esa
+      // oflayn rejim saqlanadi (xavfsiz yo'nalish).
+      const qs = useQuestionsStore.getState()
+      if (qs.isOfflinePractice) void qs.reload()
     }
     window.addEventListener('online', onOnline)
 

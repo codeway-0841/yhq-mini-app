@@ -76,7 +76,15 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
         })
         return
       }
-      set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+      // Yuklab bo'lmadi va oflayn paket ham yo'q: ESKI fanning ma'lumotlari
+      // ekranda qolib ketmasin (xato xabari yangi fan haqida bo'lsa-da).
+      // subjectId shu yerda ham yangilanadi — aks holda keyinchalik eski fanga
+      // qaytilganda load()ning `loaded` qorovuli noto'g'ri ishlab ketardi.
+      set({
+        error: e instanceof Error ? e.message : 'Failed to load questions',
+        subjectId: sid, questions: [], topics: [], loaded: false,
+        isOfflinePractice: false, offlineAnswers: {},
+      })
     } finally {
       if (version === loadVersion) set({ loading: false })
     }

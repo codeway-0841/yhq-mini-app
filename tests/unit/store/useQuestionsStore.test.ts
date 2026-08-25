@@ -64,4 +64,75 @@ describe('useQuestionsStore.load — offline fallback', () => {
     expect(state.isOfflinePractice).toBe(false)
     expect(state.error).toBeTruthy()
   })
+  it("ketma-ket load: keshsiz fanga o'tilsa ESKI fan ma'lumotlari qolmaydi", async () => {
+    // 1-bosqich: 'yhq' oflayn paketdan yuklanadi
+    getQuestions.mockRejectedValue(new TypeError('network error'))
+    readOfflinePackage.mockResolvedValue(OFFLINE_ROWS)
+    const { useQuestionsStore } = await fresh()
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(useQuestionsStore.getState().isOfflinePractice).toBe(true)
+
+    // 2-bosqich: 'rustili' — na tarmoq, na oflayn paket
+    readOfflinePackage.mockResolvedValue(null)
+    await useQuestionsStore.getState().load('uz', 'rustili')
+
+    const state = useQuestionsStore.getState()
+    expect(state.error).toBeTruthy()
+    expect(state.questions).toEqual([])          // 'yhq' savollari qolib ketmasin
+    expect(state.offlineAnswers).toEqual({})     // 'yhq' javob kaliti qolib ketmasin
+    expect(state.isOfflinePractice).toBe(false)
+    expect(state.subjectId).toBe('rustili')      // qorovul keyinchalik noto'g'ri ishlamasin
+    expect(state.loaded).toBe(false)
+  })
+})
+
+describe('useQuestionsStore — oflayn rejimdan chiqish', () => {
+  it("reload() muvaffaqiyatli bo'lsa oflayn rejim tozalanadi", async () => {
+    getQuestions.mockRejectedValue(new TypeError('network error'))
+    readOfflinePackage.mockResolvedValue(OFFLINE_ROWS)
+    const { useQuestionsStore } = await fresh()
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(useQuestionsStore.getState().isOfflinePractice).toBe(true)
+
+    // Internet qaytdi — App.tsx'dagi 'online' hodisasi shu yo'lni chaqiradi
+    getQuestions.mockResolvedValue([{ id: 2, questionUz: 'S2', questionRu: 'В2', optionsUz: { a: '1' }, optionsRu: { a: '1' }, image: null, topicId: 1 }])
+    getTopics.mockResolvedValue([])
+    await useQuestionsStore.getState().reload()
+
+    const state = useQuestionsStore.getState()
+    expect(state.isOfflinePractice).toBe(false)
+    expect(state.offlineAnswers).toEqual({})
+    expect(state.questions[0]!.id).toBe(2)
+  })
+
+  it("reload() muvaffaqiyatsiz bo'lsa oflayn rejim SAQLANADI (xavfsiz yo'nalish)", async () => {
+    getQuestions.mockRejectedValue(new TypeError('network error'))
+    readOfflinePackage.mockResolvedValue(OFFLINE_ROWS)
+    const { useQuestionsStore } = await fresh()
+    await useQuestionsStore.getState().load('uz', 'yhq')
+
+    await useQuestionsStore.getState().reload()   // tarmoq hali ham yo'q
+
+    const state = useQuestionsStore.getState()
+    expect(state.isOfflinePractice).toBe(true)
+    expect(state.offlineAnswers).toEqual({ 1: 'a' })
+  })
+})
+
+describe('useQuestionsStore.setLang — oflayn filial', () => {
+  it('oflayn rejimda til almashsa TARMOQQA murojaat qilmaydi', async () => {
+    getQuestions.mockRejectedValue(new TypeError('network error'))
+    readOfflinePackage.mockResolvedValue(OFFLINE_ROWS)
+    const { useQuestionsStore } = await fresh()
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(useQuestionsStore.getState().questions[0]!.text).toBe('S1')
+
+    getQuestions.mockClear()
+    useQuestionsStore.getState().setLang('ru')
+
+    const state = useQuestionsStore.getState()
+    expect(state.questions[0]!.text).toBe('В1')   // RU matnga qayta xaritalandi
+    expect(state.isOfflinePractice).toBe(true)
+    expect(getQuestions).not.toHaveBeenCalled()
+  })
 })
