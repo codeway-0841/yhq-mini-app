@@ -192,7 +192,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                         borderStyle = 'border-pdanger/60 bg-pdanger/15 text-pfg font-semibold'
                         badge = (
                           <span className="text-[10px] font-semibold text-pdanger flex items-center gap-1 ml-auto flex-shrink-0">
-                            <X size={12} /> {tt('yourAnswerLabel')}
+                            <X size={12} /> {tt('yourAnswer')}
                           </span>
                         )
                       } else if (isUserChoice && item.status === 'pending') {
