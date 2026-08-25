@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import {
   Copy, Phone, Lock, Globe, CreditCard,
-  WifiOff, RotateCcw, Moon, Sun, Monitor, MessageCircle,
+  RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
   BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X,
 } from 'lucide-react'
@@ -123,8 +123,6 @@ export default function Profil() {
   const handleSync = () => {
     if (user?.id) syncFromServer(user.id)
   }
-
-  const offlineOn = settings.offlineMode
 
   return (
     <div className="pt-4 pb-8 safe-bottom">
@@ -349,11 +347,6 @@ export default function Profil() {
 
         <Item icon={CreditCard} label={tt('payHistory')}
           onPress={() => showToast(tt('payHistoryEmpty'))} />
-
-        <Item
-          icon={WifiOff} label={tt('offlineMode')}
-          right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
-        />
 
         <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}
           onPress={handleReset} />
