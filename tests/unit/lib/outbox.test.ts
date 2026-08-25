@@ -91,4 +91,36 @@ describe('flushOutbox retry siyosati', () => {
     expect(getOutboxEntries('u1')).toHaveLength(0)
     expect(postResult).toHaveBeenCalledTimes(1)
   })
+
+  it('200 OK — onResultSync ga to\'liq ma\'lumot yuboriladi va navbat tozalanadi', async () => {
+    postResult.mockResolvedValue({
+      ok: true,
+      correct: true,
+      correctAnswer: 'a',
+      dailyStreak: 3,
+      coinsEarned: 1,
+      coinBalance: 50,
+      xp: 120,
+    })
+    const { enqueueOutbox, getOutboxEntries, flushOutbox, onResultSync } = await freshOutbox()
+
+    const synced: any[] = []
+    const unsub = onResultSync((info) => synced.push(info))
+
+    enqueueOutbox('u1', 'result', { ...ENTRY })
+    await flushOutbox('u1')
+
+    expect(getOutboxEntries('u1')).toHaveLength(0)
+    expect(synced).toHaveLength(1)
+    expect(synced[0]).toMatchObject({
+      questionId: 1,
+      correct: true,
+      correctAnswer: 'a',
+      dailyStreak: 3,
+      coinsEarned: 1,
+      coinBalance: 50,
+      xp: 120,
+    })
+    unsub()
+  })
 })

@@ -15,7 +15,7 @@ import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
 import type { TopicBreakdownItem } from './topic-diagnosis'
 
-export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' }
+export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' | 'pending' }
 
 export default function ResultsModal({
   results,
@@ -49,7 +49,8 @@ export default function ResultsModal({
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
   const wrong      = results.filter((r) => r.status === 'incorrect').length
-  const unanswered = results.filter((r) => r.status === 'unanswered').length
+  const pending    = results.filter((r) => r.status === 'pending').length
+  const unanswered = results.filter((r) => r.status === 'unanswered' || r.status === 'pending').length
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
   const passed     = percent >= threshold && !disqualifiedByCheat
 
@@ -157,6 +158,15 @@ export default function ResultsModal({
           </div>
         )}
 
+        {pending > 0 && (
+          <div className="mb-4 bg-pblue/15 border border-pblue/40 rounded-container p-3 flex items-center gap-2.5">
+            <div className="w-2 h-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
+            <p className="text-xs text-pfg font-medium">
+              {pending} {tt('pendingSyncNotice') || `${pending} ta javob oflayn saqlandi (internet ulanganda natija yangilanadi)`}
+            </p>
+          </div>
+        )}
+
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
@@ -209,10 +219,11 @@ export default function ResultsModal({
         <div className="grid grid-cols-8 gap-1.5 mb-6">
           {results.map((r, i) => (
             <button key={r.questionId} onClick={() => onGoToQuestion(i)}
-              aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : tt('unanswered')}`}
+              aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : r.status === 'pending' ? 'pending' : tt('unanswered')}`}
               className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-semibold transition-all active:scale-90 ${
                 r.status === 'correct'   ? 'bg-pprimary text-ponprimary' :
                 r.status === 'incorrect' ? 'bg-pdanger text-white'   :
+                r.status === 'pending'   ? 'bg-pblue/20 border border-pblue text-pblue' :
                                            'bg-psurface text-pmuted'
               }`}>
               {i + 1}

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, CheckCircle2, XCircle, HelpCircle, BookOpen, GraduationCap, Check, ZoomIn } from 'lucide-react'
+import { X, CheckCircle2, XCircle, HelpCircle, BookOpen, GraduationCap, Check, ZoomIn, Clock } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
 import type { Lang } from '../../../shared/i18n'
 import type { Question } from '../../../shared/api'
@@ -20,7 +20,7 @@ function formatImageSrc(src?: string | null): string | undefined {
 export interface ExamReviewItem {
   question: Question
   index: number
-  status: 'correct' | 'incorrect' | 'unanswered'
+  status: 'correct' | 'incorrect' | 'unanswered' | 'pending'
   selectedOptionId: string | null
   correctOptionId: string | null
   topicName?: string
@@ -132,6 +132,8 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       ? 'border-pprimary/30'
                       : item.status === 'incorrect'
                       ? 'border-pdanger/40 bg-pdanger/[0.02]'
+                      : item.status === 'pending'
+                      ? 'border-pblue/40 bg-pblue/[0.02]'
                       : 'border-pline'
                   }`}
                 >
@@ -141,6 +143,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       #{item.index + 1}
                       {item.status === 'correct' && <CheckCircle2 size={13} className="text-pprimary" />}
                       {item.status === 'incorrect' && <XCircle size={13} className="text-pdanger" />}
+                      {item.status === 'pending' && <Clock size={13} className="text-pblue" />}
                       {item.status === 'unanswered' && <HelpCircle size={13} className="text-psubtle" />}
                     </span>
                     {item.topicName && (
@@ -185,13 +188,22 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                             <Check size={12} /> {tt('correctAnswerLabel')}
                           </span>
                         )
-                      } else if (isUserChoice) {
-                        borderStyle = 'border-pdanger/60 bg-pdanger/15 text-pdanger font-semibold'
+                      } else if (isUserChoice && item.status === 'incorrect') {
+                        borderStyle = 'border-pdanger/60 bg-pdanger/15 text-pfg font-semibold'
                         badge = (
                           <span className="text-[10px] font-semibold text-pdanger flex items-center gap-1 ml-auto flex-shrink-0">
-                            <X size={12} /> {tt('yourAnswer')}
+                            <X size={12} /> {tt('yourAnswerLabel')}
                           </span>
                         )
+                      } else if (isUserChoice && item.status === 'pending') {
+                        borderStyle = 'border-pblue/60 bg-pblue/15 text-pfg font-semibold'
+                        badge = (
+                          <span className="text-[10px] font-semibold text-pblue flex items-center gap-1 ml-auto flex-shrink-0">
+                            <Clock size={12} /> {language === 'ru' ? 'Ожидает сети' : 'Tarmoq kutilmoqda'}
+                          </span>
+                        )
+                      } else if (isUserChoice) {
+                        borderStyle = 'border-pprimary/40 bg-psurface text-pfg'
                       }
 
                       return (

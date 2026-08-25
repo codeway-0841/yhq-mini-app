@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { api, ApiError, avatarSrcFor, type ApiUser, type ApiProgress, type ApiSettings, type FullProfile } from '@/shared/api'
-import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
+import { enqueueOutbox, onResultSync, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
 import { useDailyStore, todayStr } from './useDailyStore'
@@ -177,13 +177,19 @@ export const useAppStore = create<AppState>()(
 
       // Outbox'dan replay bo'lgan javob lokal counterlarni ham yangilasin
       // (offline javob qayta yuborilganda UI server bilan tekislansin).
-      setResultSyncHandler((info) => {
+      onResultSync((info) => {
         if (info.duplicate) return   // server allaqachon hisoblagan
         applyAnswer({
           questionId: info.questionId, correct: info.correct,
           subjectId: info.subjectId, date: info.date, dailyStreak: info.dailyStreak,
           coinSaved: info.coinSaved,
         })
+        if (typeof info.coinBalance === 'number') {
+          set({ coins: info.coinBalance })
+        }
+        if (typeof info.xp === 'number') {
+          set({ xp: info.xp })
+        }
       })
 
       return {

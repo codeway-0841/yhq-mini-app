@@ -333,15 +333,25 @@ export default function App() {
           })
       }
     }
-    // Internet qaytganda outbox navbatini darhol yuborish
-    const onOnline = () => {
+    // Internet qaytganda yoki ilovaga qaytilganda outbox navbatini yuborish va store'ni yangilash
+    const triggerSync = () => {
       const id = useAppStore.getState().user?.id
-      if (id && id !== '0') void flushOutbox(id)
+      if (id && id !== '0' && (typeof navigator === 'undefined' || navigator.onLine !== false)) {
+        void flushOutbox(id).then(() => {
+          void syncFromServer(id)
+        })
+      }
+    }
+    const onOnline = () => triggerSync()
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'visible') triggerSync()
     }
     window.addEventListener('online', onOnline)
+    document.addEventListener('visibilitychange', onVisibilityChange)
 
     return () => {
       window.removeEventListener('online', onOnline)
+      document.removeEventListener('visibilitychange', onVisibilityChange)
       unsubSubject()
     }
   }, [syncFromServer])

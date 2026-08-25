@@ -113,14 +113,25 @@ export interface ResultSyncInfo {
   questionId:     number
   selectedAnswer: string | null
   correct:        boolean
+  correctAnswer?: string | null
   dailyStreak:    number | null
   duplicate:      boolean
   /** Server shu javob bilan uzilgan seriyani coin evaziga saqladi */
   coinSaved?:     boolean
+  coinsEarned?:   number
+  coinBalance?:   number | null
+  xp?:            number | null
 }
-let resultSyncHandler: ((info: ResultSyncInfo) => void) | null = null
-export function setResultSyncHandler(fn: typeof resultSyncHandler): void {
-  resultSyncHandler = fn
+
+const resultSyncListeners = new Set<(info: ResultSyncInfo) => void>()
+
+export function onResultSync(fn: (info: ResultSyncInfo) => void): () => void {
+  resultSyncListeners.add(fn)
+  return () => resultSyncListeners.delete(fn)
+}
+
+export function setResultSyncHandler(fn: ((info: ResultSyncInfo) => void) | null): void {
+  if (fn) resultSyncListeners.add(fn)
 }
 
 async function execute(userId: string, entry: OutboxEntry): Promise<void> {
@@ -136,17 +147,28 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         ...(p.clientToken ? { clientToken: p.clientToken as string } : {}),
         ...(typeof p.elapsedMs === 'number' ? { elapsedMs: p.elapsedMs } : {}),
       })
-      resultSyncHandler?.({
+      const info: ResultSyncInfo = {
         date:           p.date as string,
         subjectId:      p.subjectId as string,
         questionId:     p.questionId as number,
         selectedAnswer: (p.selectedAnswer as string | null) ?? null,
         // duplicate replay'da correct null — counterlar tegilmagan (handler o'zi bilib oladi)
         correct:        res.correct ?? false,
+        correctAnswer:  res.correctAnswer,
         dailyStreak:    res.dailyStreak,
         duplicate:      !!res.duplicate,
         coinSaved:      res.coinSaved,
-      })
+        coinsEarned:    res.coinsEarned,
+        coinBalance:    res.coinBalance,
+        xp:             res.xp,
+      }
+      for (const listener of resultSyncListeners) {
+        try {
+          listener(info)
+        } catch (err) {
+          console.error('[outbox] resultSync listener error:', err)
+        }
+      }
       return
     }
     case 'saved-add':

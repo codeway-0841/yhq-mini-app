@@ -12,6 +12,7 @@ import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
 import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test-session'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { onResultSync } from '../../shared/lib/outbox'
 import SettingsModal from '../../shared/components/SettingsModal'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import { haptics } from '../../platform/haptics'
@@ -352,6 +353,13 @@ export default function TestPage() {
         setAnswers((prev) => { const next = [...prev]; next[idx] = 'pending'; return next })
         setToast(tt('offlineQueued'))
         setTimeout(() => setToast(null), 2500)
+        if ((settings?.autoNextCorrect || settings?.autoNextWrong) && idx < activeQuestions.length - 1) {
+          cancelAutoNext()
+          autoNextTimerRef.current = window.setTimeout(() => {
+            autoNextTimerRef.current = null
+            goTo(idx + 1)
+          }, 800)
+        }
         return
       }
 
@@ -385,10 +393,31 @@ export default function TestPage() {
     })()
   }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions])
 
+  // Offline holatda yuborilgan javoblar internet ulanganda darhol TestPage'da ham yangilansin
+  useEffect(() => {
+    return onResultSync((info) => {
+      const idx = activeQuestions.findIndex((x) => x.id === info.questionId)
+      if (idx !== -1) {
+        setAnswers((prev) => {
+          const next = [...prev]
+          next[idx] = info.correct ? 'correct' : 'wrong'
+          return next
+        })
+        if (info.correctAnswer) {
+          setCorrectOpts((prev) => {
+            const next = [...prev]
+            next[idx] = info.correctAnswer!
+            return next
+          })
+        }
+      }
+    })
+  }, [activeQuestions])
+
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({
       questionId: q.id,
-      status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as QuestionResult['status'],
+      status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : answers[i] === 'pending' ? 'pending' : 'unanswered') as QuestionResult['status'],
     })),
     [activeQuestions, answers]
   )
@@ -399,7 +428,7 @@ export default function TestPage() {
       return {
         question: q,
         index: i,
-        status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as ExamReviewItem['status'],
+        status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : answers[i] === 'pending' ? 'pending' : 'unanswered') as ExamReviewItem['status'],
         selectedOptionId: selectedHistory[i] ?? null,
         correctOptionId: correctOpts[i] ?? null,
         topicName: topic ? (settings.language === 'ru' ? topic.nameRu : topic.nameUz) : undefined,
