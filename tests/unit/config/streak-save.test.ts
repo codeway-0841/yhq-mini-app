@@ -39,8 +39,8 @@ describe('decideStreakOutcome', () => {
     expect(d(3, false, 10_000)).toBe('reset')
   })
 
-  it('narx 50 coin', () => {
-    expect(STREAK_SAVE_COST).toBe(50)
+  it('narx 100 coin', () => {
+    expect(STREAK_SAVE_COST).toBe(100)
   })
 })
 

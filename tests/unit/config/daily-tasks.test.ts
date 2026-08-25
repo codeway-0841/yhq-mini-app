@@ -5,6 +5,7 @@
  */
 import { describe, it, expect } from 'vitest'
 import { DAILY_TASKS, getDailyTask } from '../../../shared/daily-tasks'
+import { COINS_DAILY_ANSWER_CAP } from '../../../shared/xp'
 
 describe('config/daily-tasks — data integrity', () => {
   it("barcha id'lar unikal", () => {
@@ -22,13 +23,16 @@ describe('config/daily-tasks — data integrity', () => {
     for (const t of DAILY_TASKS) {
       expect(Number.isInteger(t.target) && t.target > 0).toBe(true)
       expect(Number.isInteger(t.reward) && t.reward > 0).toBe(true)
-      // Yumshoq cap: bitta vazifa 25c'dan oshmasin (kunlik ~40c vazifalardan —
-      // javob mint'i (~80c) asosiy manba bo'lib qoladi)
-      expect(t.reward).toBeLessThanOrEqual(25)
+      // Yumshoq cap: bitta vazifa kunlik javob shiftining YARMIDAN oshmasin —
+      // javob mint'i asosiy manba bo'lib qolishi kerak.
+      expect(t.reward).toBeLessThanOrEqual(COINS_DAILY_ANSWER_CAP / 2)
     }
-    // Kunlik total mukofot cap'i: vazifalar javob mint'idan katta bo'lmasligi shart
+    // Kunlik total mukofot cap'i: vazifalar javob mint'idan katta bo'lmasligi
+    // shart. Chegara konstantaga BOG'LANGAN — iqtisod miqyosi o'zgarganda bu
+    // test qo'lda yangilanishi shart emas (avval 50 deb qattiq yozilgandi va
+    // 2× ko'chirishda eskirib qolgandi).
     const totalReward = DAILY_TASKS.reduce((s, t) => s + t.reward, 0)
-    expect(totalReward).toBeLessThanOrEqual(50)
+    expect(totalReward).toBeLessThanOrEqual(COINS_DAILY_ANSWER_CAP)
   })
 
   it('i18n label to‘liq (uz/ru)', () => {

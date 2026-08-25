@@ -5,6 +5,7 @@ import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
 import { answerTokens, dailyRecords, payments, progress, questions, questionBanks, topics, users } from '../../../server/schema'
 import { paymentRepository } from '../../../server/modules/payments/payment.repository'
+import { COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import { tashkentDate } from '../../../server/utils/date'
 
 const app = createApp()
@@ -109,6 +110,9 @@ describe('server-authoritative progress', () => {
 
     expect(fixRes.body.duplicate).toBeUndefined()
     expect(fixRes.body.correct).toBe(true)
+    // Xato tuzatish HAR SAFAR coin beradi (to'g'ri javobning yarmi). Avval
+    // "har 10 ta tuzatishga 1 coin" edi va bu yerda 0 kutilardi.
+    expect(fixRes.body.coinsEarned ?? 0).toBe(COINS_PER_MISTAKE_FIXED)
 
     const [progFixed] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     expect(progFixed.wrongByTicket[`yhq:${question.id}`]).toBeUndefined()

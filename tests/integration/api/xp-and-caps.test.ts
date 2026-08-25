@@ -17,6 +17,7 @@ import { tashkentDate } from '../../../server/utils/date'
 import {
   XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
+import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
 const app = createApp()
 const UID = '998877680001'
@@ -172,9 +173,9 @@ describe('Kunlik coin shifti', () => {
     const q = bank[1]!
     const res = await answer(q, q.correctAnswer).expect(200)
 
-    expect(res.body.coinsEarned).toBe(1)
+    expect(res.body.coinsEarned).toBe(COINS_PER_CORRECT_ANSWER)
     const row = await limitsRow()
-    expect(row?.coinsEarned).toBe(1)
+    expect(row?.coinsEarned).toBe(COINS_PER_CORRECT_ANSWER)
     expect(row?.xpEarned).toBe(XP_FIRST_CORRECT)
   })
 })
@@ -188,7 +189,7 @@ describe('daily_limits hisobi', () => {
 
     const row = await limitsRow()
     expect(row?.xpEarned).toBe(used.length * XP_FIRST_CORRECT)
-    expect(row?.coinsEarned).toBe(used.length)
+    expect(row?.coinsEarned).toBe(used.length * COINS_PER_CORRECT_ANSWER)
     expect(await xpOf()).toBe(used.length * XP_FIRST_CORRECT)
   })
 

@@ -5,7 +5,7 @@
 import { eq, sql } from 'drizzle-orm'
 import { db, executeRows }     from '../../db/connection'
 import { progress, duelResults } from '../../schema'
-import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
+import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import {
   XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
@@ -251,14 +251,24 @@ export const progressRepository = {
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
       ), coin_mint AS (
-        -- Javoblardan kuniga olinadigan coin ham cheklangan (COINS_DAILY_ANSWER_CAP):
-        -- balans yillar davomida shishib ketsa, keyin narxni ma'nosiz ko'tarish
-        -- yoki balansni nolga tushirishdan boshqa chora qolmaydi.
+        -- Javoblardan kuniga olinadigan coin cheklangan (COINS_DAILY_ANSWER_CAP).
+        -- Yangi to'g'ri javob: COINS_PER_CORRECT_ANSWER.
+        -- Xato savolni tuzatish (is_fix): COINS_PER_MISTAKE_FIXED — to'g'ri
+        -- javobning yarmi, HAR BIR tuzatish uchun darhol.
+        --
+        -- Avval bu "har 10 ta tuzatishga 1 coin" edi, hisoblagich esa
+        -- daily_records.fixed — u har KUNI va har FAN bo'yicha nolga qaytardi.
+        -- Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi, ya'ni vazifani
+        -- bajaradigan foydalanuvchi 10 ga hech qachon yetmay, tuzatishdan
+        -- abadiy 0 coin olardi.
         SELECT CASE
           WHEN ${correct}
            AND EXISTS (SELECT 1 FROM prog)
            AND COALESCE((SELECT coins_earned FROM limits), 0) < ${COINS_DAILY_ANSWER_CAP}::int
-          THEN ${COINS_PER_CORRECT_ANSWER}::int
+          THEN CASE
+            WHEN (SELECT is_fix FROM is_mistake_fixed) THEN ${COINS_PER_MISTAKE_FIXED}::int
+            ELSE ${COINS_PER_CORRECT_ANSWER}::int
+          END
           ELSE 0
         END AS amount
       ), coin_award AS (

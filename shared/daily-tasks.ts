@@ -25,11 +25,11 @@ export interface DailyTask {
 }
 
 export const DAILY_TASKS = [
-  { id: 'answers-20', metric: 'answered', target: 20, reward: 10,
+  { id: 'answers-20', metric: 'answered', target: 20, reward: 20,
     label: { uz: '20 ta savolga javob ber', ru: 'Ответь на 20 вопросов' } },
-  { id: 'correct-15', metric: 'correct', target: 15, reward: 15,
+  { id: 'correct-15', metric: 'correct', target: 15, reward: 30,
     label: { uz: '15 ta to‘g‘ri javob',   ru: '15 правильных ответов'   } },
-  { id: 'fix-5',      metric: 'fixed',   target: 5,  reward: 10,
+  { id: 'fix-5',      metric: 'fixed',   target: 5,  reward: 20,
     label: { uz: '5 ta xatoni tuzat',     ru: 'Исправь 5 ошибок'        } },
 ] as const satisfies readonly DailyTask[]
 

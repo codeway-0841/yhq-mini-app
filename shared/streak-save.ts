@@ -12,7 +12,7 @@
  * BIR XIL qaror beradi — biri o'zgarsa ikkinchisi ham o'zgarishi shart.
  */
 
-export const STREAK_SAVE_COST = 50
+export const STREAK_SAVE_COST = 100
 
 export type StreakOutcome = 'continue' | 'coin_save' | 'reset'
 
