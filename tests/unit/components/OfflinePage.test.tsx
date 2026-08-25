@@ -73,4 +73,38 @@ describe('OfflinePage', () => {
     fireEvent.click(screen.getByText('Ha, o\'chirish'))
     await waitFor(() => expect(deleteSubjectOffline).toHaveBeenCalledWith('yhq'))
   })
+
+  it('keeps the downloaded state and shows an error toast when delete fails', async () => {
+    isSubjectDownloaded.mockResolvedValue(true)
+    deleteSubjectOffline.mockRejectedValue(new Error('quota'))
+    renderPage()
+    await waitFor(() => screen.getByText("O'chirish"))
+
+    fireEvent.click(screen.getByText("O'chirish"))
+    expect(await screen.findByText('Ha, o\'chirish')).toBeInTheDocument()
+
+    fireEvent.click(screen.getByText('Ha, o\'chirish'))
+    await waitFor(() => expect(deleteSubjectOffline).toHaveBeenCalledWith('yhq'))
+
+    // Kesh haqiqatan o'chmadi — delete tugmasi ko'rinishda qolishi kerak,
+    // 'Yuklab olish'ga almashmasligi kerak.
+    expect(await screen.findByText("Xatolik yuz berdi. Qayta urinib ko'ring")).toBeInTheDocument()
+    expect(screen.getByText("O'chirish")).toBeInTheDocument()
+  })
+
+  it('shows the download button again and an error toast when download fails', async () => {
+    isSubjectDownloaded.mockResolvedValue(false)
+    downloadSubjectOffline.mockRejectedValue(new Error('network'))
+    renderPage()
+    await waitFor(() => screen.getByText('Yuklab olish'))
+
+    fireEvent.click(screen.getByText('Yuklab olish'))
+    expect(await screen.findByText('Rasmlarni yuklash')).toBeInTheDocument()
+
+    fireEvent.click(screen.getByText('Rasmlarni yuklash'))
+    await waitFor(() => expect(downloadSubjectOffline).toHaveBeenCalledWith('yhq', expect.any(Function)))
+
+    expect(await screen.findByText("Yuklab bo'lmadi. Qaytadan urinib ko'ring")).toBeInTheDocument()
+    expect(screen.getByText('Yuklab olish')).toBeInTheDocument()
+  })
 })

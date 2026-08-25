@@ -19,7 +19,11 @@ export default function OfflinePage() {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const subjectId = useSubjectStore((s) => s.subjectId)
-  const { info: showToast } = useToast()
+  // Ikkala chaqiruv ham haqiqiy xatolik (yuklab bo'lmadi / o'chirib bo'lmadi) —
+  // `error` ishlatiladi, `info` emas: role="alert"/aria-live="assertive" va
+  // uzunroq ko'rsatish vaqti (Toast.tsx/ToastContainer.tsx) ekran o'quvchiga
+  // to'g'ri urg'u bilan yetkazadi.
+  const { error: showToast } = useToast()
 
   const [status, setStatus] = useState<Status>('checking')
   const [progress, setProgress] = useState<DownloadProgress>({ done: 0, total: 1, percent: 0 })
@@ -35,9 +39,17 @@ export default function OfflinePage() {
   useEffect(() => {
     let cancelled = false
     setStatus('checking')
-    isSubjectDownloaded(subjectId).then((yes) => {
-      if (!cancelled) setStatus(yes ? 'downloaded' : 'idle')
-    })
+    isSubjectDownloaded(subjectId)
+      .then((yes) => {
+        if (!cancelled) setStatus(yes ? 'downloaded' : 'idle')
+      })
+      .catch((err) => {
+        // Tekshirib bo'lmadi — 'checking'da qotib qolmaslik uchun 'idle' deb
+        // hisoblaymiz: foydalanuvchi hech bo'lmasa qayta yuklab ko'ra oladi
+        // (yuklash o'zi baribir mavjud keshning ustiga yozadi).
+        console.warn('[OfflinePage] kesh holatini tekshirib bo\'lmadi:', (err as Error)?.message ?? err)
+        if (!cancelled) setStatus('idle')
+      })
     return () => { cancelled = true }
   }, [subjectId])
 
