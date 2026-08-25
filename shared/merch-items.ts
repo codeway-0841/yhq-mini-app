@@ -32,17 +32,17 @@ export interface MerchItem {
 
 export const MERCH_ITEMS = [
   {
-    id: 'nakleyka', price: 2500, stock: 20, emoji: '🏷️',
+    id: 'nakleyka', price: 5000, stock: 20, emoji: '🏷️',
     label: { uz: 'KIWI nakleykalari to‘plami', ru: 'Набор наклеек KIWI' },
     desc:  { uz: '10 ta premium nakleyka — noutbuk, telefon, avtoulovingiz uchun', ru: '10 премиум-наклеек — для ноутбука, телефона, авто' },
   },
   {
-    id: 'sumka',    price: 3500, stock: 10, emoji: '👜',
+    id: 'sumka',    price: 7000, stock: 10, emoji: '👜',
     label: { uz: 'KIWI shopper sumka', ru: 'Шоппер KIWI' },
     desc:  { uz: 'Mustahkam x/з sumka — kundalik foydalanish va kutubxonaga', ru: 'Прочный х/б шоппер — на каждый день и для учёбы' },
   },
   {
-    id: 'kiyim',    price: 5000, stock: 10, emoji: '👕',
+    id: 'kiyim',    price: 10000, stock: 10, emoji: '👕',
     label: { uz: 'KIWI futbolka', ru: 'Футболка KIWI' },
     desc:  { uz: '100% paxta, brend bosmasi — o‘lcham buyurtma tafsilotida', ru: '100% хлопок, фирменный принт — размер в деталях заказа' },
   },

@@ -24,10 +24,10 @@ describe('config/lucky-spin — data integrity', () => {
     expect(SPIN_TOTAL_WEIGHT).toBe(100)
   })
 
-  it('iquisod byudjeti: EV 10..25 coin/kun chegarasida (kunlik ~80c mintdan kam)', () => {
+  it('iquisod byudjeti: EV 20..50 coin/kun chegarasida (kunlik ~160c mintdan kam)', () => {
     const ev = spinExpectedValue()
-    expect(ev).toBeGreaterThan(10)
-    expect(ev).toBeLessThanOrEqual(25)
+    expect(ev).toBeGreaterThan(20)
+    expect(ev).toBeLessThanOrEqual(50)
   })
 
   it('kamirib 2 segment (g\'ildirak uchun), premium segment faqat bitta', () => {
@@ -60,7 +60,8 @@ describe('config/lucky-spin — pickSpinSegment (sof funksiya)', () => {
   })
 
   it('getSpinSegment: nomaʼlum id → null', () => {
-    expect(getSpinSegment('c10')?.amount).toBe(10)
+    // id'lar tarixiy yorliq, miqdor emas: 'c10' 2× iqtisoddan keyin 20 beradi
+    expect(getSpinSegment('c10')?.amount).toBe(20)
     expect(getSpinSegment('???')).toBeNull()
   })
 })

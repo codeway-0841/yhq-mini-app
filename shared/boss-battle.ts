@@ -35,9 +35,9 @@ export const BOSS_DAMAGE_PER_CORRECT = 5
 export const BOSS_REWARDS = {
   /** Ishtirok mukofoti: shuncha zarar yig'gan har kimga */
   participationMinDamage: 10,
-  participationCoins: 25,
+  participationCoins: 50,
   /** Top-3 bonus: [1-o'rin, 2-o'rin, 3-o'rin] */
-  topCoins: [100, 60, 40] as const,
+  topCoins: [200, 120, 80] as const,
 }
 
 export const BOSS_ROSTER: readonly BossDef[] = [
