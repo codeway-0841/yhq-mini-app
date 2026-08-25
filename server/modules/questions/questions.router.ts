@@ -3,6 +3,7 @@ import { z } from 'zod'
 import { wrap }   from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
 import { getProvider } from '../../providers'
+import { requireAuth } from '../../middleware/auth'
 import { questionsRepository } from './questions.repository'
 // Multi-instance umumiy limiter: prod'da DB counter (Neon), test/dev'da in-memory.
 // Vercel serverless'da har so'rov yangi instansiya bo'lishi mumkin — in-memory
@@ -63,6 +64,43 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   res.set('Cache-Control', CONTENT_CACHE)
   res.set('X-Data-Source', entry.dataSourceId)
   res.json(toPublic(rows))
+}))
+
+const OfflinePackageQuery = z.object({
+  subject: z.string().max(32).optional(),
+})
+
+/**
+ * GET /api/offline-package?subject=yhq
+ *
+ * Oflayn mashq uchun — javob kaliti (correctAnswer) BILAN qaytaradi.
+ * DIQQAT: bu YAGONA joy repo bo'ylab — correctAnswer ataylab client'ga
+ * yuboriladi. Xavfsiz, chunki oflayn-mashq javoblari HECH QACHON
+ * /progress/:userId/result'ga yuborilmaydi: qorovul
+ * src/shared/store/useAppStore.ts'dagi submitAnswer ichida (choke point),
+ * ya'ni HAR QANDAY mashq ekrani — TestPage, Speed Round, Kunlik mashq va
+ * keyin qo'shiladiganlari ham — avtomatik qamrab olinadi. Kalitni bilish
+ * shu sababli reyting/coin'ni aldashga yaramaydi.
+ * Regressiya qulfi: tests/unit/store/offline-practice-guard.test.ts.
+ *
+ * Yo'l ATAYLAB '/questions/...' PREFIKSSIZ: server/middleware/auth.ts'dagi
+ * PUBLIC_GET birinchi segmenti 'questions' bo'lgan HAR QANDAY yo'lni
+ * telegramAuth'da to'liq credential-tekshiruvsiz o'tkazadi — req.userId
+ * hech qachon o'rnatilmaydi, requireAuth doim 401 qaytarardi.
+ */
+router.get('/offline-package', requireAuth, contentLimit, wrap(async (req, res) => {
+  const parsed = OfflinePackageQuery.safeParse(req.query)
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
+    return
+  }
+  const entry    = resolveSubject(parsed.data.subject)
+  const provider = getProvider(entry.dataSourceId)
+  const rows     = await provider.getAllQuestions()
+
+  res.set('Cache-Control', 'no-store')  // javob kalitlari CDN/browser'da qolmasin
+  res.set('X-Data-Source', entry.dataSourceId)
+  res.json(rows)   // toPublic() CHAQIRILMAYDI — correctAnswer qoladi
 }))
 
 // GET /api/topics?subject=fizika

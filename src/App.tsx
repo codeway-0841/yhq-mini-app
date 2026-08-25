@@ -37,6 +37,7 @@ const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
 const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
 const ShopPage        = lazy(() => import('./features/shop/ShopPage'))
 const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
+const OfflinePage      = lazy(() => import('./features/profile/OfflinePage'))
 const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
 const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
 const FormulasPage    = lazy(() => import('./features/formulas/FormulasPage'))
@@ -116,6 +117,7 @@ function Layout() {
             <Route path="/premium"    element={<PremiumPage />} />
             <Route path="/shop"       element={<ShopPage />} />
             <Route path="/statistika" element={<StatistikaPage />} />
+            <Route path="/offline"    element={<OfflinePage />} />
             <Route path="/speed"      element={<SpeedPage />} />
             <Route path="/flashcards" element={<FlashcardsPage />} />
             <Route path="/shpargalkalar" element={<FormulasPage />} />
@@ -337,6 +339,14 @@ export default function App() {
     const onOnline = () => {
       const id = useAppStore.getState().user?.id
       if (id && id !== '0') void flushOutbox(id)
+      // Internet qaytdi — oflayn-mashq rejimida qotib qolmaslik uchun savollarni
+      // serverdan QAYTA yuklaymiz. Aks holda load()ning `loaded` qorovuli ishlab,
+      // foydalanuvchi onlayn bo'lsa ham oflayn rejimda qolib ketardi — javoblari
+      // hisobga (XP/coin/liga) yozilmasdan. reload() qorovulni chetlab o'tadi va
+      // muvaffaqiyatda isOfflinePractice'ni tozalaydi; muvaffaqiyatsizlikda esa
+      // oflayn rejim saqlanadi (xavfsiz yo'nalish).
+      const qs = useQuestionsStore.getState()
+      if (qs.isOfflinePractice) void qs.reload()
     }
     window.addEventListener('online', onOnline)
 
