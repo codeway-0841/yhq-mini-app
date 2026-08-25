@@ -125,7 +125,6 @@ export default function TestPage() {
   const q         = activeQuestions[current]
   // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
   const answerTimer = useAnswerTimer(q?.id)
-  const fontSize  = settings?.fontSize || 'medium'
   const selected  = selectedHistory[current] ?? null
   const answeredStatus = answers[current]
   // To'g'ri javob endi client'da saqlanMAYDI — faqat server javob bergach
@@ -210,6 +209,43 @@ export default function TestPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
+
+  // Bilet yoki test boshlanganda shu sessiyadagi barcha savollar rasmlarini
+  // oldindan yuklab olish (preload) — o'rtada internet uzilsa ham rasmlar ko'rinadi.
+  // Test yakunlanganda yoki sahifadan chiqilganda vaqtinchalik kesh avtomatik tozalanadi.
+  useEffect(() => {
+    if (!activeQuestions || activeQuestions.length === 0) return
+
+    const imageSources = activeQuestions
+      .map((q) => formatImageSrc(q.image))
+      .filter((src): src is string => Boolean(src))
+
+    if (imageSources.length === 0) return
+
+    const preloadedImages: HTMLImageElement[] = []
+    for (const src of imageSources) {
+      const img = new Image()
+      img.src = src
+      preloadedImages.push(img)
+    }
+
+    if (typeof caches !== 'undefined') {
+      caches.open('yhq-test-images').then((cache) => {
+        imageSources.forEach((src) => {
+          fetch(src, { mode: 'no-cors' }).then((res) => {
+            if (res.ok || res.type === 'opaque') void cache.put(src, res)
+          }).catch(() => {})
+        })
+      }).catch(() => {})
+    }
+
+    return () => {
+      preloadedImages.forEach((img) => { img.src = '' })
+      if (typeof caches !== 'undefined') {
+        caches.delete('yhq-test-images').catch(() => {})
+      }
+    }
+  }, [activeQuestions])
 
   // ── Anti-Cheat: Rasmiy imtihonda tab switch / blur / background aniqlash ──
   const wasHiddenRef = useRef(false)
@@ -641,9 +677,7 @@ export default function TestPage() {
                 <Volume2 size={13} strokeWidth={1.75} />
               </button>
             </div>
-            <p className={`mb-4 text-center font-display font-semibold leading-snug tracking-[-0.015em] text-pfg lg:text-left ${
-              fontSize === 'small' ? 'text-[15px]' : fontSize === 'large' ? 'text-[21px]' : 'text-[18px]'
-            }`}>
+            <p className="mb-4 text-center font-display font-semibold leading-snug tracking-[-0.015em] text-pfg lg:text-left text-[18px]">
               {q.text}
             </p>
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
@@ -679,7 +713,7 @@ export default function TestPage() {
               tabIndex={0}
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
               aria-label={tt('zoomImage')}>
-              <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="lazy"
+              <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
                 className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
               <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full border border-white/20 bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-black/85">
                 <ZoomIn size={11} strokeWidth={1.75} />
@@ -690,7 +724,7 @@ export default function TestPage() {
           <div className="lg:col-start-1 lg:row-start-2">
             {q.options.map((opt) => (
               <OptionButton key={`${q.id}_${opt.id}`} option={opt} state={getOptionState(opt.id)}
-                onSelect={() => handleSelect(opt.id)} answered={!!selected} fontSize={fontSize} />
+                onSelect={() => handleSelect(opt.id)} answered={!!selected} />
             ))}
           </div>
         </div>

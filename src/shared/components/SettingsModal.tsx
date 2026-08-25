@@ -15,7 +15,7 @@ import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
 
 type LucideIcon = typeof Zap
-type PickerKey = 'fontSize' | 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
+type PickerKey = 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv.
  *  iconColor — CSS-token (var(--p-*)); alpha color-mix bilan aralashadi (hex-konkat YO'Q). */
@@ -102,7 +102,6 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
     onClose()
   }
 
-  const fontSizeLabel  = { small: tt('fontSmall'),   medium: tt('fontMedium'),  large: tt('fontLarge') }[local.fontSize]
   const fontStyleLabel = {
     default: tt('fontDefault'),
     jakarta: tt('fontJakarta'),
@@ -136,13 +135,6 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <Row icon={Shuffle} label={tt('shuffleOptions')}>
             <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
           </Row>
-
-          {/* Shrift o'lchami — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('fontSize')} aria-label={`${tt('fontSize')}: ${fontSizeLabel}`}>
-            <Row icon={Type} label={tt('fontSize')}>
-              <span className={valueBtn}>{fontSizeLabel} <ChevronRight size={14} /></span>
-            </Row>
-          </button>
 
           {/* Shrift uslubi — picker */}
           <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
@@ -211,20 +203,6 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
       </div>
 
       {/* Picker sheet'lar */}
-      {picker === 'fontSize' && (
-        <PickerSheet
-          title={tt('fontSize')}
-          titleIcon={<Type size={18} />}
-          value={local.fontSize}
-          onClose={() => setPicker(null)}
-          onSelect={(v) => set('fontSize', v as ApiSettings['fontSize'])}
-          options={[
-            { value: 'small',  label: tt('fontSmall')  },
-            { value: 'medium', label: tt('fontMedium') },
-            { value: 'large',  label: tt('fontLarge')  },
-          ]}
-        />
-      )}
       {picker === 'fontStyle' && (
         <PickerSheet
           title={tt('fontStyle')}

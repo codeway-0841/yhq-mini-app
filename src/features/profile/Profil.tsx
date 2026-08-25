@@ -37,7 +37,6 @@ export default function Profil() {
   const updateSettings = useAppStore((s) => s.updateSettings)
   const resetProgress  = useAppStore((s) => s.resetProgress)
   const tariff         = useAppStore((s) => s.tariff)
-  const syncFromServer = useAppStore((s) => s.syncFromServer)
   const displayName    = useAppStore((s) => s.displayName)
   const setDisplayName = useAppStore((s) => s.setDisplayName)
   const customAvatar   = useAppStore((s) => s.customAvatar)
@@ -118,10 +117,6 @@ export default function Profil() {
 
   const handleReset = () => {
     if (window.confirm(tt('resetProgressConfirm'))) resetProgress()
-  }
-
-  const handleSync = () => {
-    if (user?.id) syncFromServer(user.id)
   }
 
   return (
@@ -363,9 +358,6 @@ export default function Profil() {
             onPress={() => { if (user?.id) void flushOutbox(user.id) }}
           />
         )}
-
-        <Item icon={RotateCcw} label={tt('syncServer')}
-          onPress={handleSync} />
       </Section>
 
       {/* ── YORDAM ── */}
