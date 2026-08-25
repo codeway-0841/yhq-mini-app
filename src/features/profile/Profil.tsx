@@ -124,6 +124,8 @@ export default function Profil() {
     if (user?.id) syncFromServer(user.id)
   }
 
+  const offlineOn = settings.offlineMode
+
   return (
     <div className="pt-4 pb-8 safe-bottom">
       {/* ← Back */}
@@ -349,8 +351,8 @@ export default function Profil() {
           onPress={() => showToast(tt('payHistoryEmpty'))} />
 
         <Item
-          icon={WifiOff} label={tt('offlineScreenTitle')}
-          onPress={() => navigate('/offline')}
+          icon={WifiOff} label={tt('offlineMode')}
+          right={<Toggle size="sm" checked={offlineOn} onChange={(v) => updateSettings({ offlineMode: v })} />}
         />
 
         <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}

@@ -4,7 +4,6 @@ import { api, ApiError, avatarSrcFor, type ApiUser, type ApiProgress, type ApiSe
 import { enqueueOutbox, setResultSyncHandler, newId } from '@/shared/lib/outbox'
 import { questionKey, DEFAULT_SUBJECT_ID } from '../../../shared/subjects'
 import { useSubjectStore } from './useSubjectStore'
-import { useQuestionsStore } from './useQuestionsStore'
 import { useDailyStore, todayStr } from './useDailyStore'
 import { scheduleDailyStreakReminder, cancelDailyStreakReminder } from '../../platform/native'
 
@@ -261,26 +260,6 @@ export const useAppStore = create<AppState>()(
         const userId = get().user?.id
         const subjectId = useSubjectStore.getState().subjectId
         if (!userId || userId === '0') return null   // anonim — tekshirish imkonsiz
-
-        // ── OFLAYN MASHQ CHOKE POINT ────────────────────────────────────────
-        // Bu YAGONA joy: oflayn javob serverga ham, outbox'ga ham YOZILMAYDI.
-        // Tekshiruv ataylab shu yerda (har ekranda alohida emas) — TestPage,
-        // Speed Round, Kunlik mashq va kelajakdagi har qanday yangi mashq
-        // ekrani avtomatik himoyalanadi. Ekran darajasidagi tekshiruv bir
-        // ekranni qamrab, qolganini ochiq qoldirardi.
-        //
-        // Nega bu XAVFSIZLIK uchun muhim: /api/offline-package javob kalitini
-        // (correctAnswer) qurilmaga yuboradi — CLAUDE.md #8 qoidasidan ataylab
-        // qilingan istisno. U faqat shu sababli xavfsiz: oflayn javob HECH
-        // QAYERGA yuborilmagani uchun kalitni bilish reyting/coin'ni aldashga
-        // yaramaydi. Shu qorovul olib tashlansa, istisno teshikka aylanadi.
-        const qs = useQuestionsStore.getState()
-        if (qs.isOfflinePractice) {
-          const correctAnswer = qs.offlineAnswers[questionId]
-          if (correctAnswer == null) return null   // kalit yo'q — javobsiz "pending" qoladi
-          // XP/coin/streak/liga TEGILMAYDI — applyAnswer ham chaqirilmaydi.
-          return { correct: selectedAnswer === correctAnswer, correctAnswer, duplicate: false, coinsEarned: 0 }
-        }
 
         // Idempotency kaliti JAVOBGA bog'lanadi — outbox replay shu bilan.
         const clientToken = newId()

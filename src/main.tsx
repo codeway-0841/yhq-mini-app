@@ -40,15 +40,7 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
           navigator.serviceWorker.register('/sw.js').catch(() => { /* some WebViews */ })
         } else {
           navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()))
-          // Foydalanuvchi ATAYLAB yuklab olgan fan paketlari ('yhq-offline-*')
-          // bu tozalashdan CHETDA qoladi — ular "Oflayn rejim" ekranidagi
-          // O'chirish tugmasiga tegishli, bu SW toggle'iga emas. Aks holda
-          // qishloqda yuklab olingan kontent ilova keyingi ochilishida jimgina
-          // yo'q bo'lardi (public/sw.js activate cleanup'i ham xuddi shu
-          // prefiksni saqlab qoladi — ikkalasi bir xil shartga tayanadi).
-          caches?.keys?.().then((ks) =>
-            ks.filter((k) => !k.startsWith('yhq-offline-')).forEach((k) => caches.delete(k))
-          )
+          caches?.keys?.().then((ks) => ks.forEach((k) => caches.delete(k)))
         }
       }
       applySw(useAppStore.getState().settings.offlineMode)
