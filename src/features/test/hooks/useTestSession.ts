@@ -1,6 +1,7 @@
 import { useMemo, useEffect, useRef } from 'react'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
 import { makeSessionKey, isResumable } from '../../../shared/lib/test-session'
+import { shuffleArray } from '../../../shared/lib/seeded'
 import { resolveExamMode } from '../../../../shared/exam-presets'
 import type { Question } from '../../../shared/api'
 
@@ -17,6 +18,7 @@ interface UseTestSessionParams {
   selectedHistory: (string | null)[]
   correctOpts: (string | null)[]
   cheatViolations?: number
+  shuffleOptions?: boolean
 }
 
 export function useTestSession(params: UseTestSessionParams) {
@@ -33,6 +35,7 @@ export function useTestSession(params: UseTestSessionParams) {
     selectedHistory,
     correctOpts,
     cheatViolations,
+    shuffleOptions = false,
   } = params
 
   const examPreset = resolveExamMode(mode)
@@ -41,36 +44,51 @@ export function useTestSession(params: UseTestSessionParams) {
 
   // ── Resumable session — activeQuestions computation ──
   const activeQuestions = useMemo(() => {
+    let result: Question[]
     // RESUME: saqlangan sessiya savollarining ASL tartibi qayta yig'iladi
     // (yangi shuffle EMAS — javoblar indeks bo'yicha bog'langan)
     const snap = useTestSessionStore.getState().session
     if (isResumable(snap, sessionKey, subjectId) && snap.questionIds.length) {
       const byId = new Map(questions.map((x) => [x.id, x]))
       const restored = snap.questionIds.map((qid) => byId.get(qid)).filter((x) => !!x)
-      if (restored.length) return restored as typeof questions
-    }
-    if (questionIds?.length) {
-      const idSet = new Set(questionIds)
-      return questions.filter((q) => idSet.has(q.id))
-    }
-    const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
-    // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
-    if (examPreset) return shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
-    switch (mode) {
-      case 'marathon':  return shuffled()
-      case 'exam':      return shuffled().slice(0, Math.min(40, questions.length))
-      case 'mock':      return shuffled().slice(0, Math.min(20, questions.length)) // Mock imtihon — bilet formatida
-      case 'random50':  return shuffled().slice(0, Math.min(50, questions.length))
-      case 'random100': return shuffled().slice(0, Math.min(100, questions.length))
-      case 'random20':  return shuffled().slice(0, Math.min(20, questions.length))
-      case 'tricky':   return shuffled().slice(0, Math.min(30, questions.length))
-      case 'numeric': {
-        const numeric = questions.filter((q) => /\d/.test(q.text))
-        return numeric.length > 0 ? numeric : questions
+      if (restored.length) {
+        result = restored as typeof questions
+      } else {
+        result = questions
       }
-      default:         return questions
+    } else if (questionIds?.length) {
+      const idSet = new Set(questionIds)
+      result = questions.filter((q) => idSet.has(q.id))
+    } else {
+      const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
+      // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
+      if (examPreset) {
+        result = shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
+      } else {
+        switch (mode) {
+          case 'marathon':  result = shuffled(); break
+          case 'exam':      result = shuffled().slice(0, Math.min(40, questions.length)); break
+          case 'mock':      result = shuffled().slice(0, Math.min(20, questions.length)); break
+          case 'random50':  result = shuffled().slice(0, Math.min(50, questions.length)); break
+          case 'random100': result = shuffled().slice(0, Math.min(100, questions.length)); break
+          case 'random20':  result = shuffled().slice(0, Math.min(20, questions.length)); break
+          case 'tricky':   result = shuffled().slice(0, Math.min(30, questions.length)); break
+          case 'numeric': {
+            const numeric = questions.filter((q) => /\d/.test(q.text))
+            result = numeric.length > 0 ? numeric : questions
+            break
+          }
+          default:         result = questions
+        }
+      }
     }
-  }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset])
+
+    if (!shuffleOptions) return result
+    return result.map((q) => ({
+      ...q,
+      options: shuffleArray(q.options),
+    }))
+  }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
 
   // ── Session save — snapshot persistence ──
   useEffect(() => {

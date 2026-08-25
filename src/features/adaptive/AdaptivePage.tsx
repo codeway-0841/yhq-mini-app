@@ -1,4 +1,4 @@
-import { useEffect, useCallback, useState } from 'react'
+import { useEffect, useCallback, useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
@@ -12,6 +12,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
 import { api }              from '../../shared/api'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
+import { shuffleArray }     from '../../shared/lib/seeded'
 
 /** SR dashboard xulosasi (#46) — server javob shakli */
 type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null }
@@ -122,6 +123,11 @@ export default function AdaptivePage() {
     })()
   }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext, user?.id])
 
+  const currentOptions = useMemo(() => {
+    if (!q?.options) return []
+    return settings?.shuffleOptions ? shuffleArray(q.options) : q.options
+  }, [q?.id, settings?.shuffleOptions])
+
   if (!q) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-pmuted px-4">
@@ -191,7 +197,7 @@ export default function AdaptivePage() {
               className="max-w-full max-h-[55vh] w-auto h-auto object-contain" />
           </div>
         )}
-        {q.options.map((opt) => {
+        {currentOptions.map((opt) => {
           const state: 'correct' | 'wrong' | 'default' =
             !answered            ? 'default' :
             revealed && opt.id === revealed ? 'correct' :

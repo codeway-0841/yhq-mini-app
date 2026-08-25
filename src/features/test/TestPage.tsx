@@ -108,6 +108,7 @@ export default function TestPage() {
     selectedHistory,
     correctOpts,
     cheatViolations,
+    shuffleOptions: settings?.shuffleOptions,
   })
 
   const startIndex = Math.min(

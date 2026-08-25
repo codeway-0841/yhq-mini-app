@@ -14,6 +14,7 @@ import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { ResultsModal, type QuestionResult } from '../test'
+import { shuffleArray } from '../../shared/lib/seeded'
 
 const TIME_LIMIT = 10   // soniya / savol
 const QUESTIONS  = 20
@@ -28,13 +29,14 @@ export default function SpeedPage() {
 
   // 20 ta tasodifiy savol (sahifa ochilganda 1 marta tanlanadi)
   const qs = useMemo(() => {
-    const pool = [...questions]
-    for (let i = pool.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[pool[i], pool[j]] = [pool[j], pool[i]]
-    }
-    return pool.slice(0, QUESTIONS)
-  }, [questions])
+    const pool = shuffleArray(questions)
+    const list = pool.slice(0, QUESTIONS)
+    if (!settings.shuffleOptions) return list
+    return list.map((q) => ({
+      ...q,
+      options: shuffleArray(q.options),
+    }))
+  }, [questions, settings.shuffleOptions])
 
   const [idx, setIdx]           = useState(0)
   const [answers, setAnswers]   = useState<('correct' | 'wrong')[]>([])
