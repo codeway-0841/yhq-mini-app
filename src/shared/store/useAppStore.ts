@@ -448,7 +448,9 @@ export const useAppStore = create<AppState>()(
         savedQuestions: s.savedQuestions,
         solvedQuestions: s.solvedQuestions ?? [],
         displayName:    s.displayName,
-        customAvatar:   s.customAvatar,
+        // customAvatar PERSIST QILINMAYDI (audit C3): 256px WebP data URL
+        // (~30-40KB) har set()'da butun snapshot'ni shishirardi. Server SSOT —
+        // hydrate'da syncAvatarState server URL'ini qayta tiklaydi.
         tariff:         s.tariff,
         accent:         s.accent,
         coins:          s.coins,

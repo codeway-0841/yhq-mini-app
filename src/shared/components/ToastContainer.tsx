@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react'
+import { createContext, useContext, useState, useCallback, useMemo, ReactNode } from 'react'
 import Toast, { type ToastType } from './Toast'
 
 interface ToastItem {
@@ -47,8 +47,12 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     showToast('info', message, duration)
   }, [showToast])
 
+  // Context value MEMO (audit C2): har toast setState'da yangi obyekt barcha
+  // useToast() consumer'larini (deyarli har sahifa) qayta render qilardi.
+  const value = useMemo(() => ({ showToast, success, error, info }), [showToast, success, error, info])
+
   return (
-    <ToastContext.Provider value={{ showToast, success, error, info }}>
+    <ToastContext.Provider value={value}>
       {children}
 
       {/* Toast Container - top-center (mobile), top-right (desktop) */}

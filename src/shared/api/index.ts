@@ -77,17 +77,23 @@ async function request<T>(
     clearTimeout(timer)
   }
   if (!res.ok) {
-    // Bearer bilan yuborilgan so'rov 401 qaytardi → sessiya eskirgan/revoke:
-    // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').
-    if (sentBearer && res.status === 401) notifySessionExpired()
-    // initData bilan yuborilgan so'rov 401 → auth_date eskirgan (server replay
-    // oynasi qisqartirildi). Mini App'ni BIR marta qayta yuklab Telegram'dan
-    // yangi initData olamiz (loop guard — P1-4 klient recovery).
-    if (sentInitData && res.status === 401) requestFreshInitData()
     const text = await res.text().catch(() => res.statusText)
     // Server { error: '<code>' } JSON qaytarsa — typed code sifatida chiqaramiz
     let code: string | undefined
     try { code = (JSON.parse(text) as { error?: unknown }).error as string | undefined } catch { /* text javob */ }
+    // 401 FAQAT auth middleware'ining 'invalid_session' kodida sessiyani o'chiradi.
+    // BIZNES-logika 401'lari (invalid_credentials / invalid_otp /
+    // invalid_current_password — server/modules/auth/*) joriy sessiyani BUZMAYDI:
+    // aks holda Profil'da bitta xato parol/OTP yozish = TO'LIQ LOGOUT bo'lardi.
+    // (server/middleware/auth.ts 401 kodlari: 'invalid_session' = Bearer sessiya
+    // yaroqsiz; 'Invalid Telegram initData signature' = initData eskirgan/soxta).
+    // Bearer bilan yuborilgan so'rov → token eskirgan/revoke:
+    // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').
+    if (sentBearer && res.status === 401 && code === 'invalid_session') notifySessionExpired()
+    // initData bilan yuborilgan so'rov 401 → auth_date eskirgan (server replay
+    // oynasi qisqartirildi). Mini App'ni BIR marta qayta yuklab Telegram'dan
+    // yangi initData olamiz (loop guard — P1-4 klient recovery).
+    if (sentInitData && res.status === 401 && code === 'Invalid Telegram initData signature') requestFreshInitData()
     throw new ApiError(res.status, `${method} ${path} → ${res.status}: ${text}`, typeof code === 'string' ? code : undefined)
   }
   if (res.status === 204) return undefined as T
@@ -292,8 +298,10 @@ export const api = {
   loginWithEmail: (data: { email: string; password: string }) =>
     request<unknown>('POST', '/auth/email/login', data).then(parseAuthResponse),
 
+  // Server FAQAT GET /auth/verify-email?token= qabul qiladi (auth.router.ts) —
+  // email'dagi link brauzerda GET sifatida ochiladi, client ham shu kontraktga mos.
   verifyEmail: (token: string) =>
-    request<{ ok: true }>('POST', '/auth/verify-email', { token }),
+    request<{ verified: boolean; userId: string }>('GET', `/auth/verify-email?token=${encodeURIComponent(token)}`),
 
   resendEmailVerification: (email: string) =>
     request<{ ok: true }>('POST', '/auth/resend-verification', { email }),
@@ -301,8 +309,9 @@ export const api = {
   requestPasswordReset: (email: string) =>
     request<{ ok: true }>('POST', '/auth/forgot-password', { email }),
 
+  // Server zod schemsi { token, password } kutadi (auth.router.ts ResetPasswordSchema).
   resetPassword: (token: string, newPassword: string) =>
-    request<{ ok: true }>('POST', '/auth/reset-password', { token, newPassword }),
+    request<{ ok: true }>('POST', '/auth/reset-password', { token, password: newPassword }),
 
   changePassword: (currentPassword: string, newPassword: string) =>
     request<{ ok: true }>('POST', '/auth/change-password', { currentPassword, newPassword }),
@@ -376,18 +385,16 @@ export const api = {
     'POST', `/progress/${uid(userId)}/result`, data,
   ),
 
-  /** Referal statistikasi (Profil kartasi) */
+  /** Referal statistikasi (Profil kartasi).
+   *  Server javobi: getStats + {rewardDays, cap} (users.router.ts) — kontrakt
+   *  drift'ini olib tashladik (audit C5). */
   getReferrals: (userId: string): Promise<{
     invited: number
     rewarded: number
     pending: number
     rewardDays: number
     cap: number
-    eligibilityAnswers: number
   }> => request('GET', `/referrals/${uid(userId)}`),
-
-  patchProgress: (userId: string, patch: Partial<ApiProgress>) =>
-    request<{ ok: true }>('PATCH', `/progress/${uid(userId)}`, patch),
 
   patchSettings: (userId: string, patch: Partial<ApiSettings>) => {
     const serverPatch = { ...patch }

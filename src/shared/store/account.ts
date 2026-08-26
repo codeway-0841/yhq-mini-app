@@ -32,6 +32,24 @@ export const ACCOUNT_STORAGE_KEYS = [
   // bilan warm-start bo'lmasligi uchun). SESSION_CHANGED event BILOQSIZ
   // o'chiriladi — App reset'ni boshlatgan yo'l allaqachon holatni sozlaydi.
   'yhq-session',
+  // PvP tarix (raqib ismlari/natijalar — PII-yaqin) va celebratsiya/maqsad
+  // bayroqlari user-scoped EMAS (features/octagon/duel-history.ts,
+  // features/dashboard hooks/useCelebrations.ts, Onboarding) — shared
+  // qurilmada oldingi akkaunt izlari ko'rinmasligi uchun tozalanadi (audit H-8).
+  'yhq-duel-history',
+  'yhq-level-seen',
+  'yhq-goal',
+  'yhq-formula-favs',
+] as const
+
+/**
+ * Dinamik (ID-qo'shimchali) user-scoped kalitlar — reset'da PREFIX bo'yicha
+ * tozalanadi (features/flashcards — `yhq-flash-known-<catId>`,
+ * Celebrations — `yhq-milestones-<subjectId>`). (audit H-8)
+ */
+export const ACCOUNT_STORAGE_PREFIXES = [
+  'yhq-flash-known-',
+  'yhq-milestones-',
 ] as const
 
 /**
@@ -45,9 +63,18 @@ export function resetAccountState(): void {
   useAdaptiveStore.getState().resetAll()
   useTestSessionStore.getState().clear()
   if (typeof localStorage !== 'undefined') {
-    for (const key of ACCOUNT_STORAGE_KEYS) {
-      try { localStorage.removeItem(key) } catch { /* private mode — ignore */ }
-    }
+    try {
+      for (const key of ACCOUNT_STORAGE_KEYS) {
+        localStorage.removeItem(key)
+      }
+      // Dinamik prefix'li kalitlar (bitta iteratsiya — localStorage kichik)
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const key = localStorage.key(i)
+        if (key && ACCOUNT_STORAGE_PREFIXES.some((p) => key.startsWith(p))) {
+          localStorage.removeItem(key)
+        }
+      }
+    } catch { /* private mode — ignore */ }
   }
 }
 

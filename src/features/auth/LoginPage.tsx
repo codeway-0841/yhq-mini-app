@@ -43,9 +43,12 @@ export default function LoginPage() {
 
   /** Login/register/link muvaffaqiyatining YAGONA hydrate yo'li (App boot bilan bir xil). */
   const applyAuth = (data: AuthResponse) => {
-    setSessionToken(data.sessionToken)
-    // Adopt-merge yoki boshqa akkaunt cache'i bo'lsa — atomik reset
+    // Adopt-merge yoki boshqa akkaunt cache'i bo'lsa — atomik reset.
+    // TARTIB MUHIM (audit H-7): owner-check AVVAL — reset 'yhq-session' kalitini
+    // ham o'chiradi; token avval yozilsa u darhol o'chirib yuborilardi
+    // (tokensiz "login" holati: keyingi so'rovlar auth'siz 401 olardi).
     ensureAccountOwner(data.user.id)
+    setSessionToken(data.sessionToken)
     useAppStore.getState().hydrateFromProfile(data)
     void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
     void flushOutbox(data.user.id)

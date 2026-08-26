@@ -89,4 +89,41 @@ describe('resetAccountState', () => {
     expect(() => resetAccountState()).not.toThrow()
     expect(useAppStore.getState().user).toBeNull()
   })
+
+  it("user-scoped BO'LMAGAN izlar (duel-history, flash-known-*, milestones-*, ...) reset'da o'chadi (audit H-8)", () => {
+    localStorage.clear()
+    localStorage.setItem('yhq-duel-history', '[{"opponentName":"Sardor"}]')
+    localStorage.setItem('yhq-level-seen', '5')
+    localStorage.setItem('yhq-goal', '20')
+    localStorage.setItem('yhq-formula-favs', '[1]')
+    localStorage.setItem('yhq-flash-known-7', '[1,2,3]')
+    localStorage.setItem('yhq-flash-known-12', '[9]')
+    localStorage.setItem('yhq-milestones-yhq', '{"m1":true}')
+
+    resetAccountState()
+
+    expect(localStorage.getItem('yhq-duel-history')).toBeNull()
+    expect(localStorage.getItem('yhq-level-seen')).toBeNull()
+    expect(localStorage.getItem('yhq-goal')).toBeNull()
+    expect(localStorage.getItem('yhq-formula-favs')).toBeNull()
+    expect(localStorage.getItem('yhq-flash-known-7')).toBeNull()
+    expect(localStorage.getItem('yhq-flash-known-12')).toBeNull()
+    expect(localStorage.getItem('yhq-milestones-yhq')).toBeNull()
+  })
+
+  it("by-design SAQLANADIGAN kalitlar reset'dan o'tib qoladi (signs-best, user-namespaced outbox)", () => {
+    localStorage.clear()
+    // Client-only o'yin rekordi (AGENTS 8e — server/iqtisod yo'q, qurilma rekordi)
+    localStorage.setItem('yhq-signs-best-yhq', '99')
+    // Outbox user-id bilan namespaced — chalkashmaydi, o'chirilsa offline javoblar yo'qoladi
+    localStorage.setItem('yhq-outbox:111', '[]')
+    // Umumiy user-preference (fan tanlovi) — akkauntga bog'liq emas
+    localStorage.setItem('yhq-subject', 'yhq')
+
+    resetAccountState()
+
+    expect(localStorage.getItem('yhq-signs-best-yhq')).toBe('99')
+    expect(localStorage.getItem('yhq-outbox:111')).toBe('[]')
+    expect(localStorage.getItem('yhq-subject')).toBe('yhq')
+  })
 })
