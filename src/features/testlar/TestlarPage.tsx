@@ -64,26 +64,26 @@ export default function TestlarPage() {
   })
 
   const cards: ModeCard[] = [
-    { id: 'speed',     iconBox: 'zap',
-      titleKey: 'speedTitle', meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' },
-    { id: 'random50',  iconBox: 'num', numText: '50',
-      titleKey: 't50Test', meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' },
-    { id: 'random100', iconBox: 'num', numText: '100',
-      titleKey: 't100',    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' },
-    { id: 'random20',  iconBox: 'zap',
-      titleKey: 't20',     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' },
-    { id: 'marathon',  iconBox: 'zap',
-      titleKey: 'marathonTitle', meta: tt('marathonDesc'), diff: 'hard' },
-    // YHQ: mavjud generic realExam; qolgan fanlar: rasmiy preset kartalari (config'dan)
     ...(subjectId === 'yhq'
-      ? [{ id: 'exam',  iconBox: 'cap' as const,
-           titleKey: 'realExam' as const, meta: `40 ${tt('question').toLowerCase()} · 30 ${tt('minWord')} — ${tt('examDesc')}`, diff: 'hard' as const }]
-      : examPresetCards),
-    // Mock imtihon FAQAT YHQ uchun (rasmiy bilet formati) — boshqa fanlarda ko'rinmaydi
-    ...(subjectId === 'yhq'
-      ? [{ id: 'mock',  iconBox: 'cap' as const,        danger: true,
-           titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const }]
-      : []),
+      ? [
+          { id: 'mock',     iconBox: 'cap' as const, danger: true,
+            titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const },
+          { id: 'marathon', iconBox: 'zap' as const,
+            titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
+        ]
+      : [
+          { id: 'speed',     iconBox: 'zap' as const,
+            titleKey: 'speedTitle' as const, meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' as const },
+          { id: 'random50',  iconBox: 'num' as const, numText: '50',
+            titleKey: 't50Test' as const, meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' as const },
+          { id: 'random100', iconBox: 'num' as const, numText: '100',
+            titleKey: 't100' as const,    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' as const },
+          { id: 'random20',  iconBox: 'zap' as const,
+            titleKey: 't20' as const,     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' as const },
+          { id: 'marathon',  iconBox: 'zap' as const,
+            titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
+          ...examPresetCards,
+        ]),
   ]
 
   const start = (m: ModeCard) => {

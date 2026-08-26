@@ -167,7 +167,7 @@ export default function Dashboard() {
   const goDarslik  = useCallback(() => navigate('/darslik'), [navigate])
 
   /** Real test modes — TestPage builds the question set based on `mode` */
-  const goMode = useCallback((mode: 'tricky' | 'numeric', title: string) => () =>
+  const goMode = useCallback((mode: 'numeric', title: string) => () =>
     navigate('/test/1', { state: { mode, title } }), [navigate])
 
   const goSaved = useCallback(() => {
@@ -262,7 +262,6 @@ export default function Dashboard() {
               title={tt('modesTitle')}
               lang={settings.language}
               items={[
-                { icon: ShieldAlert,  label: tt('distracting'), onClick: goMode('tricky', tt('distracting')) },
                 { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
                 { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
                 { icon: Signpost,      label: tt('roadSigns'),   onClick: () => navigate('/belgilar') },
