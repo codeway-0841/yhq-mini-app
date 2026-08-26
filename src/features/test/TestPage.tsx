@@ -28,6 +28,7 @@ import ResultsModal, { type QuestionResult } from './ResultsModal'
 import AiTutorModal from './components/AiTutorModal'
 import AntiCheatModal from './components/AntiCheatModal'
 import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
+import MarkdownExplanation from './components/MarkdownExplanation'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
@@ -805,8 +806,8 @@ export default function TestPage() {
                   <span className="text-xs">{tt('loadingDots')}</span>
                 </div>
               ) : dbExplanation ? (
-                <div className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap font-normal bg-pcanvas/50 p-3.5 rounded-container border border-pline">
-                  {dbExplanation}
+                <div className="bg-pcanvas/50 p-3.5 rounded-container border border-pline">
+                  <MarkdownExplanation content={dbExplanation} />
                 </div>
               ) : explanation ? (
                 <div>
