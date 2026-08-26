@@ -80,6 +80,10 @@ export const SHOP_ITEMS = [
   { id: 'sakura',   kind: 'accent-theme', price: 1600 },
   { id: 'gold',     kind: 'accent-theme', price: 1600 },
   { id: 'payme',    kind: 'accent-theme', price: 1600 },
+  { id: 'cupertino',   kind: 'accent-theme', price: 1600 },
+  { id: 'titanium',    kind: 'accent-theme', price: 1600 },
+  { id: 'deeppurple',  kind: 'accent-theme', price: 1600 },
+  { id: 'liquidglass', kind: 'accent-theme', price: 1600 },
   // ── Consumable: 1 kunlik premium (C-1 — tariff'ga tegmaydi) ──
   { id: 'premium-days-1', kind: 'premium-days', price: 600, days: 1 },
   // ── Avatar ramkalari (durable — bitta marta sotib olinadi, umrbod) ──

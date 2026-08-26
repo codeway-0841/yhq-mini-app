@@ -537,6 +537,58 @@ body[data-theme='dark'][data-accent='payme'] {
   --p-primary: #00b0b9; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
+/* Cupertino (Apple iOS & OLED) — toza OLED qora va Apple System Blue */
+body[data-theme='dark'][data-accent='cupertino'] {
+  --p-fg: #f5f5f7; --p-muted: #86868b; --p-subtle: #636366;
+  --theme-fg: #f5f5f7; --theme-fg-muted: #86868b; --theme-fg-subtle: #636366;
+  --p-primary: #0a84ff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 10 132 255;
+  --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
+  --p-canvas: #000000; --p-surface: #1c1c1e; --p-card: #121214; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #000000; --theme-surface: #1c1c1e; --theme-elevated: #121214;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: #000000;
+}
+
+/* Natural Titanium — iPhone Pro titan teksturasi, amber-oltin aksent */
+body[data-theme='dark'][data-accent='titanium'] {
+  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #71717a;
+  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #71717a;
+  --p-primary: #e4a853; --p-on-primary: #1c1300; --p-glow: transparent; --p-primary-rgb: 228 168 83;
+  --p-purple: #c084fc; --p-purple-rgb: 192 132 252;
+  --p-canvas: #0c0c0e; --p-surface: #222226; --p-card: #161619; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #0c0c0e; --theme-surface: #222226; --theme-elevated: #161619;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: #000000;
+}
+
+/* Deep Purple — iPhone 14 Pro chuqur kosmik binafsha */
+body[data-theme='dark'][data-accent='deeppurple'] {
+  --p-fg: #f6f3f9; --p-muted: #a89fb3; --p-subtle: #796f86;
+  --theme-fg: #f6f3f9; --theme-fg-muted: #a89fb3; --theme-fg-subtle: #796f86;
+  --p-primary: #bf5af2; --p-on-primary: #170026; --p-glow: transparent; --p-primary-rgb: 191 90 242;
+  --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
+  --p-canvas: #0b0813; --p-surface: #231c36; --p-card: #151022; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #0b0813; --theme-surface: #231c36; --theme-elevated: #151022;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: #000000;
+}
+
+/* Vision Glass — Apple VisionOS va Liquid Glass shaffof muzli kristall */
+body[data-theme='dark'][data-accent='liquidglass'] {
+  --p-fg: #f0f6fc; --p-muted: #8b9cb5; --p-subtle: #5d718d;
+  --theme-fg: #f0f6fc; --theme-fg-muted: #8b9cb5; --theme-fg-subtle: #5d718d;
+  --p-primary: #64d2ff; --p-on-primary: #00283d; --p-glow: transparent; --p-primary-rgb: 100 210 255;
+  --p-purple: #70a1ff; --p-purple-rgb: 112 161 255;
+  --p-canvas: #070b12; --p-surface: #182438; --p-card: #0f1726; --p-line: rgba(255,255,255,0.1);
+  --p-line-strong: rgba(255,255,255,0.2);
+  --theme-canvas: #070b12; --theme-surface: #182438; --theme-elevated: #0f1726;
+  --theme-line: rgba(255,255,255,0.1); --theme-line-strong: rgba(255,255,255,0.2);
+  --theme-shadow: rgba(0,0,0,0.5);
+}
+
 /* Crimson — COIN-EKSKLYUZIV: chuqur qizil (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='crimson'] {
   --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #857376;
@@ -651,6 +703,34 @@ body[data-theme='light'][data-accent='payme'] {
   --p-canvas: #ecf5f6; --p-surface: #d4ecee; --p-card: #ffffff;
   --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #ecf5f6; --theme-surface: #d4ecee; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='cupertino'] {
+  --p-primary: #007aff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 122 255;
+  --p-canvas: #f2f2f7; --p-surface: #e5e5ea; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f2f2f7; --theme-surface: #e5e5ea; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='titanium'] {
+  --p-primary: #b45309; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 180 83 9;
+  --p-canvas: #f4f4f6; --p-surface: #e5e5eb; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f4f4f6; --theme-surface: #e5e5eb; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='deeppurple'] {
+  --p-primary: #9333ea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 147 51 234;
+  --p-canvas: #f7f2fb; --p-surface: #ecdef7; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f7f2fb; --theme-surface: #ecdef7; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='liquidglass'] {
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #eef6fc; --p-surface: #d9ebf8; --p-card: #ffffff;
+  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #eef6fc; --theme-surface: #d9ebf8; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='crimson'] {

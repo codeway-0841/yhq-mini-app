@@ -45,6 +45,10 @@ const THEME_FREQ: Record<string, number> = {
   obsidian: 440,   // minimal, jiddiy
   gold:     700,   // premium zang
   payme:    640,   // toza, moliyaviy
+  cupertino:   520,   // toza, Apple iOS chime
+  titanium:    580,   // metallik, jiddiy Pro
+  deeppurple:  760,   // nafis binafsha
+  liquidglass: 840,   // kristall, shaffof Vision chime
 }
 
 function themeBase(): number {

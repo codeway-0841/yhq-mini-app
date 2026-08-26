@@ -56,6 +56,11 @@ export const ACCENT_THEMES: AccentTheme[] = [
   { id: 'sakura',   label: { uz: 'Sakura',                  ru: 'Сакура'                  }, color: '#c4487a', bg: '#fdf6f7', card: '#ffffff', glow: false, premium: true  },
   { id: 'gold',     label: { uz: 'Gold Elite',              ru: 'Gold Elite'              }, color: '#d9a441', bg: '#100d06', card: '#17130a', glow: false, premium: true  },
   { id: 'payme',    label: { uz: 'Payme',                   ru: 'Payme'                   }, color: '#00b0b9', bg: '#0d1117', card: '#161b22', glow: false, premium: true  },
+  // ── APPLE EDITION (premium: true) — iOS, iPhone Pro & VisionOS dizayn tili ──
+  { id: 'cupertino',   label: { uz: 'Cupertino (iOS)',         ru: 'Cupertino (iOS)'         }, color: '#0a84ff', bg: '#000000', card: '#121214', glow: false, premium: true  },
+  { id: 'titanium',    label: { uz: 'Natural Titanium',        ru: 'Натуральный титан'       }, color: '#e4a853', bg: '#0c0c0e', card: '#161619', glow: false, premium: true  },
+  { id: 'deeppurple',  label: { uz: 'Deep Purple (Apple)',     ru: 'Deep Purple (Apple)'     }, color: '#bf5af2', bg: '#0b0813', card: '#151022', glow: false, premium: true  },
+  { id: 'liquidglass', label: { uz: 'Vision Glass (Apple)',    ru: 'Vision Glass (Apple)'    }, color: '#64d2ff', bg: '#070b12', card: '#0f1726', glow: false, premium: true  },
   // ── COIN-EKSKLYUZIV (premium:false) — FAQAT do'konda tanga evaziga ochiladi.
   // Narxlar: shared/shop-items.ts (server ham o'qiydi). ──
   { id: 'crimson',  label: { uz: 'Crimson',                 ru: 'Малиновый'               }, color: '#e04a5f', bg: '#170c0e', card: '#1e1013', glow: false, premium: false },
