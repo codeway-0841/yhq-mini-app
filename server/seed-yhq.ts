@@ -1,4 +1,11 @@
 import 'dotenv/config'
+// Prod xavfsizligi (audit B3): seed kontentni UPSERT qiladi (prod'dagi
+// correctAnswer'larni lokaldagi eski JSON bilan qayta yozishi mumkin) —
+// prod DB'da FAQAT aniq --yes bayrog'i bilan ishlaydi.
+if (process.env.NODE_ENV === 'production' && !process.argv.includes('--yes')) {
+  console.error("DIQQAT: NODE_ENV=production — seed prod DB'ga YOZADI. Davom etish uchun: --yes")
+  process.exit(1)
+}
 import { sql } from 'drizzle-orm'
 import { db } from './db/connection'
 import { questionBanks, topics, questions, questionExplanations } from './schema'

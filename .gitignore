@@ -44,3 +44,9 @@ coverage/
 
 # Mahalliy sessiya qaydlari (davomiylik hujjati — commit qilinmaydi)
 walkthrough.md
+
+# Android imzo kalitlari — repo'ga HECH QACHON (audit B1; android/.gitignore'da ham bor)
+*.jks
+*.keystore
+**/key.properties
+**/keystore.properties

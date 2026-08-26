@@ -12,6 +12,11 @@
  * Ishga tushirish: npx tsx server/seed-explanations.ts
  */
 import 'dotenv/config'
+// Prod xavfsizligi (audit B3): prod DB'da FAQAT aniq --yes bayrog'i bilan.
+if (process.env.NODE_ENV === 'production' && !process.argv.includes('--yes')) {
+  console.error("DIQQAT: NODE_ENV=production — seed prod DB'ga YOZADI. Davom etish uchun: --yes")
+  process.exit(1)
+}
 import { db } from './db/connection'
 import { questions, topics, questionExplanations } from './schema'
 import { MODULE_TOPICS } from '../src/content/modules'

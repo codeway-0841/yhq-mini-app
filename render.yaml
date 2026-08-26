@@ -4,6 +4,9 @@ services:
     env: node
     region: frankfurt
     plan: free
+    # ESLATMA (faqat ma'lumot uchun — qaror sizniki): free plan 15 daqiqa trafik
+    # bo'lmasa UYQUGA o'tadi va cold start ~30-60s — birinchi duel ulanishi
+    # sekin bo'ladi. Keyin trafik oshsa starter'ga ($7/oy) ko'chirish mumkin.
     buildCommand: npm ci --include=dev && npm run build:server
     startCommand: node server/dist/index.js
     healthCheckPath: /health
@@ -12,6 +15,29 @@ services:
         value: production
       - key: PORT
         value: 8080
+      # ↓↓↓ Secret'lar — qiymat Render dashboard'da qo'lda kiritiladi (sync: false).
+      # assertProdConfig (server/config/index.ts) prod boot'da BOT_TOKEN /
+      # CRON_SECRET / OTP_PEPPER'siz FATAL qiladi — ular RO'YXATDA BO'LISHI SHART.
       - key: DATABASE_URL
         sync: false
-      # BOT_TOKEN app Environment'da qo'lda (mavjud) — render.yaml'ga yozilmaydi (secret)
+      - key: BOT_TOKEN
+        sync: false
+      - key: CRON_SECRET
+        sync: false
+      - key: OTP_PEPPER
+        sync: false
+      # WS origin allowlist (octagon.ts) — sozlanmasa origin tekshiruvi O'CHIQ.
+      # Masalan: https://yhq-mini-app.vercel.app yoki prod domen.
+      - key: ALLOWED_ORIGIN
+        sync: false
+      # Referral/deep-link'lar uchun (auth.service url'lari).
+      - key: BOT_USERNAME
+        sync: false
+      - key: APP_URL
+        sync: false
+      # Ixtiyoriy — monitoring (bo'lmasa Sentry no-op).
+      # - key: SENTRY_DSN
+      #   sync: false
+      # Ixtiyoriy — admin AI savol generatori.
+      # - key: GEMINI_API_KEY
+      #   sync: false
