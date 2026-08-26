@@ -28,7 +28,6 @@ import ResultsModal, { type QuestionResult } from './ResultsModal'
 import AiTutorModal from './components/AiTutorModal'
 import AntiCheatModal from './components/AntiCheatModal'
 import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
-import StudyPanel from './components/StudyPanel'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
@@ -122,7 +121,6 @@ export default function TestPage() {
   const [coinPop, setCoinPop]                 = useState(0)
   const [zoomed, setZoomed]                   = useState(false)
   const [confirmExit, setConfirmExit]         = useState(false)
-  const [studyOpen, setStudyOpen]             = useState(false)
 
   const q         = activeQuestions[current]
   // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
@@ -224,7 +222,6 @@ export default function TestPage() {
     setShowResults(false)
     setIsFinished(false)
     setToast(null)
-    setStudyOpen(false)
     if (r && len > 0 && r.answers.some((a) => a !== null)) {
       setToast(tt('sessionResumed'))
       setTimeout(() => setToast(null), 3000)
@@ -347,16 +344,10 @@ export default function TestPage() {
     }
     if (i >= 0 && i < activeQuestions.length) {
       setCurrent(i)
-      setStudyOpen(false)
       setShowExplain(false)
       setShowAiTutor(false)
     }
   }, [activeQuestions.length, cancelAutoNext])
-
-  // "O'rganish" — panelni ochadi/yopadi (faqat toggle)
-  const handleStudyToggle = useCallback(() => {
-    setStudyOpen((o) => !o)
-  }, [])
 
   const getOptionState = useCallback((optId: string) => {
     if (!selected) return 'default'
@@ -752,27 +743,16 @@ export default function TestPage() {
         </div>
       </div>
 
-      {/* Floating study panel */}
-      <StudyPanel language={settings.language} isOpen={studyOpen} />
-
-      {/* Yakunlash / O'rganish tugma */}
-      <div className="fixed right-4 bottom-6 z-40">
-        {(isLast || allAnswered) ? (
+      {/* Yakunlash tugmasi (faqat oxirgi savolga yetganda yoki barchasiga javob berilganda) */}
+      {(isLast || allAnswered) && (
+        <div className="fixed right-4 bottom-6 z-40">
           <button onClick={handleYakunlash}
             aria-label={tt('finish')}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold shadow-lg">
             <Check size={15} strokeWidth={2} aria-hidden="true" /> {tt('finish')}
           </button>
-        ) : (
-          <button onClick={handleStudyToggle}
-            aria-label={studyOpen ? tt('closeStudy') : tt('study')}
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-2 pl-4 pr-5 py-2.5 rounded-full text-[13px] font-semibold">
-            {studyOpen
-              ? (<><X size={15} aria-hidden="true" />{tt('study')}</>)
-              : (<><GraduationCap size={16} aria-hidden="true" />{tt('study')}</>)}
-          </button>
-        )}
-      </div>
+        </div>
+      )}
 
       {showResults && (
         <ResultsModal results={buildResults()} onRetry={handleRetry}
