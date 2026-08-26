@@ -20,6 +20,7 @@ const SIGN_CATEGORY_ICONS: Record<string, LucideIcon> = {
   servis:          Hospital,
   qoshimcha:       ClipboardList,
   transport:       Car,
+  taniqlik:        Car,
 }
 
 export function getSignCategoryIcon(id: string): LucideIcon {
