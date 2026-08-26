@@ -298,7 +298,7 @@ export default function Belgilar() {
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
   return (
-    <div className="px-5 pb-6 pt-4">
+    <div className="route-page px-5 pb-6 pt-4 min-h-screen">
       {!selectedCategory && (
         <>
           <div className="flex items-center gap-2 mb-4">
@@ -358,7 +358,7 @@ export default function Belgilar() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder={
                 activeTab === 'signs'
-                  ? 'Belgi nomi yoki raqami (masalan 3.27)...'
+                  ? 'Belgi qidirish (nomi yoki 3.27)...'
                   : 'Qoida yoki jarima qidirish...'
               }
               aria-label="Qidirish"
