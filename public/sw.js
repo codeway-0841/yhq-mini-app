@@ -2,17 +2,28 @@
  * YHQ Service Worker — offline support for the Mini App.
  *
  * Strategy:
- *   - Hashed assets & question images   → cache-first (immutable content)
+ *   - Hashed assets (/assets/, fonts)   → cache-first, cheksiz (hash bilan nomlangan)
+ *   - Savol rasmlari (/images/)         → cache-first, ALOHIDA kesh + LRU cap
  *   - /api/questions, /api/topics (GET) → network-first, cache fallback
- *   - Page navigation                   → network-first, cached shell fallback
+ *   - Page navigation                   → network-first (timeout), cached shell
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
 const CACHE = 'yhq-app-v3'
 
+// Savol rasmlari ALOHIDA keshda: /public/images ~84 MB va user ko'rgan har bir
+// rasm keshga tushardi — cheklovsiz. Qurilma xotirasi vaqt o'tib shuncha tomon
+// o'sardi. Alohida kesh + entry cap trimmingni app shell/assets'ga tegmasdan
+// bajarish imkonini beradi (ular hash bilan nomlangan, o'chirilmasligi kerak).
+const IMG_CACHE = 'yhq-img-v1'
+// ~300 rasm x ~30 KB ≈ 9 MB. Bir imtihon seansi ~100 rasmdan oshmaydi,
+// shuning uchun cap normal foydalanishda sezilmaydi.
+const IMG_MAX_ENTRIES = 300
+
+const isImageAsset = (path) => path.startsWith('/images/')
+
 const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||
-  path.startsWith('/images/') ||
   /\.(js|css|jpg|jpeg|png|webp|svg|woff2?)$/.test(path)
 
 const isQuestionData = (path) =>
@@ -40,13 +51,85 @@ self.addEventListener('install', () => self.skipWaiting())
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
-      // Drop outdated caches
+      // Drop outdated caches — IMG_CACHE ham SAQLANADI (aks holda har
+      // activate'da userning butun rasm keshi qayta yuklanardi).
+      const keep = new Set([CACHE, IMG_CACHE])
       const keys = await caches.keys()
-      await Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+      await Promise.all(keys.filter((k) => !keep.has(k)).map((k) => caches.delete(k)))
+
+      // Migratsiya: eski versiyalarda rasmlar CACHE ichida, CHEKLOVSIZ yig'ilgan.
+      // Ularni bir marta tozalaymiz — kerakli rasm IMG_CACHE ga qayta tushadi.
+      const appCache = await caches.open(CACHE)
+      const stale = (await appCache.keys()).filter((req) => {
+        try { return isImageAsset(new URL(req.url).pathname) } catch { return false }
+      })
+      await Promise.all(stale.map((req) => appCache.delete(req)))
+
       await self.clients.claim()
     })()
   )
 })
+
+// Bir vaqtda bitta trim — parallel fetch'lar keys() ni birga kesmasligi uchun
+let trimming = false
+
+/** Rasm keshini IMG_MAX_ENTRIES gacha qisqartiradi (eng eskisidan boshlab).
+ *  cache.keys() QO'SHILISH TARTIBIDA qaytaradi, `touch` esa ko'rilgan rasmni
+ *  oxiriga suradi — natijada o'chirilayotgani eng uzoq ko'rilmagani bo'ladi. */
+async function trimImageCache() {
+  if (trimming) return
+  trimming = true
+  try {
+    const cache = await caches.open(IMG_CACHE)
+    const keys = await cache.keys()
+    const excess = keys.length - IMG_MAX_ENTRIES
+    if (excess > 0) {
+      await Promise.all(keys.slice(0, excess).map((req) => cache.delete(req)))
+    }
+  } catch { /* kvota/race — kesh bo'lmasa ham ilova ishlayveradi */ } finally {
+    trimming = false
+  }
+}
+
+/** LRU "touch": delete + put yozuvni qo'shilish tartibining OXIRIGA suradi. */
+async function touchImage(request, response) {
+  try {
+    const cache = await caches.open(IMG_CACHE)
+    await cache.delete(request)
+    await cache.put(request, response)
+  } catch { /* ignore */ }
+}
+
+/** Keshdagi app shell ('/' yoki '/index.html').
+ *  Global caches.match() EMAS — u BARCHA keshlarni, jumladan yuzlab yozuvli
+ *  IMG_CACHE ni ham skanerlaydi. Navigatsiya har ochilishda shu yo'ldan
+ *  o'tgani uchun qidiruv CACHE bilan cheklanadi. */
+async function cachedShell() {
+  const cache = await caches.open(CACHE)
+  return (await cache.match('/')) || (await cache.match('/index.html'))
+}
+
+const NAV_TIMEOUT_MS = 1500
+
+async function handleNavigate(request) {
+  // Tarmoq so'rovi HAR DOIM yuboriladi — timeout'da ham u keshni yangilaydi.
+  const network = fetch(request).then((res) => {
+    if (res.ok) void putInCache('/', res.clone())
+    return res
+  })
+
+  const shell = await cachedShell()
+  if (!shell) {
+    // Kesh bo'sh (birinchi kirish) — tarmoqdan boshqa chora yo'q
+    return network.catch(() => new Response('', { status: 504 }))
+  }
+
+  // Kesh bor: tarmoq NAV_TIMEOUT_MS ichida ulgursa — yangi javob, aks holda shell.
+  return Promise.race([
+    network.catch(() => shell),
+    new Promise((resolve) => setTimeout(() => resolve(shell), NAV_TIMEOUT_MS)),
+  ])
+}
 
 self.addEventListener('fetch', (event) => {
   const { request } = event
@@ -55,12 +138,44 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url)
   if (url.origin !== self.location.origin) return
 
-  // Navigation — network first, fall back to cached app shell when offline
+  // Navigation — network-first, LEKIN timeout bilan (boot perf).
+  //
+  // Ilgari toza network-first edi: sekin tarmoqda cache'da tayyor shell tursa
+  // ham har cold start to'liq round-trip kutardi (Telegram WebView'da bu ko'p
+  // hollarda 1-3 s). Endi NAV_TIMEOUT_MS ichida javob kelmasa keshdagi shell
+  // darhol beriladi; tarmoq javobi baribir fon rejimida keshni yangilaydi,
+  // shuning uchun keyingi ochilish yangi bo'ladi.
+  //
+  // Eski `caches.match('/') ?? caches.match('/index.html')` ISHLAMASDI:
+  // caches.match() HAR DOIM Promise qaytaradi (hech qachon null emas), ya'ni
+  // `??` o'ng tomonga hech qachon o'tmasdi va '/' keshda bo'lmasa offline
+  // fallback umuman yo'q edi.
   if (request.mode === 'navigate') {
+    event.respondWith(handleNavigate(request))
+    return
+  }
+
+  // Savol rasmlari — cache-first + LRU cap (isStaticAsset'dan OLDIN turishi
+  // SHART: undagi regex .jpg/.png/.webp ga ham mos keladi va cheklovsiz
+  // CACHE'ga yozib yuborardi).
+  if (isImageAsset(url.pathname)) {
     event.respondWith(
-      fetch(request)
-        .then((res) => { putInCache('/', res.clone()); return res })
-        .catch(() => caches.match('/') ?? caches.match('/index.html'))
+      (async () => {
+        const cache = await caches.open(IMG_CACHE)
+        const hit = await cache.match(request)
+        if (hit) {
+          // Javobga xalaqit bermaydi — respondWith hali kutilmoqda,
+          // shuning uchun event hamon "active" va waitUntil qabul qilinadi.
+          event.waitUntil(touchImage(request, hit.clone()))
+          return hit
+        }
+        const res = await fetch(request)
+        const clean = storable(request, res.clone())
+        if (clean) {
+          event.waitUntil(cache.put(request, clean).then(trimImageCache).catch(() => {}))
+        }
+        return res
+      })()
     )
     return
   }
@@ -68,9 +183,14 @@ self.addEventListener('fetch', (event) => {
   // Static / hashed content — cache first
   if (isStaticAsset(url.pathname)) {
     event.respondWith(
-      caches.match(request).then(
-        (hit) => hit ?? fetch(request).then((res) => { putInCache(request, res.clone()); return res })
-      )
+      (async () => {
+        const cache = await caches.open(CACHE)
+        const hit = await cache.match(request)
+        if (hit) return hit
+        const res = await fetch(request)
+        void putInCache(request, res.clone())
+        return res
+      })()
     )
     return
   }
@@ -79,8 +199,14 @@ self.addEventListener('fetch', (event) => {
   if (isQuestionData(url.pathname)) {
     event.respondWith(
       fetch(request)
-        .then((res) => { putInCache(request, res.clone()); return res })
-        .catch(() => caches.match(request))
+        .then((res) => { void putInCache(request, res.clone()); return res })
+        .catch(async () => {
+          const cache = await caches.open(CACHE)
+          // Kesh ham yo'q — 504. Bo'sh massiv qaytarish MUMKIN EMAS: store
+          // `loaded: true, questions: []` deb yozib qo'yardi va boshqa qayta
+          // urinmasdi. Xato bo'lsa store error holatiga tushadi va retry qiladi.
+          return (await cache.match(request)) || new Response('', { status: 504 })
+        })
     )
     return
   }
