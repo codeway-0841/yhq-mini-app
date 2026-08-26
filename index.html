@@ -20,7 +20,14 @@
          window.Telegram App mount'idan oldin mavjud bo'lishi kafolatlangan. -->
     <script defer src="https://telegram.org/js/telegram-web-app.js"></script>
     <!-- DEV-MOCK-START (vite.config.ts faqat dev'da saqlaydi — prod build'dan o'chiriladi) -->
-    <script>
+    <!--
+      type="module" ATAYLAB: telegram-web-app.js `defer` bilan yuklanadi va
+      module skriptlar u bilan BIR RO'YXATDA, hujjat tartibida ishlaydi. Oddiy
+      inline skript esa parse paytida, ya'ni deferred skriptdan OLDIN ishlardi —
+      mock o'rnatilib, keyin haqiqiy telegram-web-app.js uni (initData'siz)
+      ustiga yozib yuborardi va localhost'da ilova LoginPage'da qolardi.
+    -->
+    <script type="module">
       // Dev mock: inject fake Telegram user when not in real TG Mini App
       ;(function() {
         var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
@@ -120,6 +127,11 @@
         }
       })()
     </script>
+    <!-- Splash rasmi HTML parse paytidayoq yuklana boshlaydi — React mount
+         bo'lishini kutmaydi. type=image/webp: webp'ni qo'llamaydigan brauzer
+         preload'ni butunlay o'tkazib yuboradi (behuda trafik yo'q), rasmning
+         o'zi esa <picture> orqali png'ga tushadi. -->
+    <link rel="preload" as="image" type="image/webp" href="/images/splash-brand.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!--

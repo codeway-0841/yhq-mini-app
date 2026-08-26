@@ -17,7 +17,6 @@ export default function SplashScreen() {
             alt="KIWI"
             width={260}
             height={260}
-            fetchPriority="high"
             decoding="async"
             className="relative w-[260px] rounded-container"
           />

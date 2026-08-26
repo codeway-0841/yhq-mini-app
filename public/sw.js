@@ -91,6 +91,19 @@ async function trimImageCache() {
   }
 }
 
+/**
+ * event.waitUntil() ni XAVFSIZ chaqiradi.
+ *
+ * waitUntil event "active" bo'lmaganda InvalidStateError tashlaydi. Biz uni
+ * respondWith ichida, `await` dan KEYIN chaqiramiz — amalda event hamon
+ * active (respondWith promise'i kutilmoqda), lekin agar biror WebView boshqacha
+ * yo'l tutsa, tashlangan xato handler'ni sindirib RASMNI umuman yuklatmasdi.
+ * Fon ishi baribir boshlangan bo'ladi — waitUntil faqat SW umrini uzaytiradi.
+ */
+function keepAlive(event, promise) {
+  try { event.waitUntil(promise) } catch { /* event yopilgan — fon ishi baribir ketadi */ }
+}
+
 /** LRU "touch": delete + put yozuvni qo'shilish tartibining OXIRIGA suradi. */
 async function touchImage(request, response) {
   try {
@@ -166,13 +179,13 @@ self.addEventListener('fetch', (event) => {
         if (hit) {
           // Javobga xalaqit bermaydi — respondWith hali kutilmoqda,
           // shuning uchun event hamon "active" va waitUntil qabul qilinadi.
-          event.waitUntil(touchImage(request, hit.clone()))
+          keepAlive(event, touchImage(request, hit.clone()))
           return hit
         }
         const res = await fetch(request)
         const clean = storable(request, res.clone())
         if (clean) {
-          event.waitUntil(cache.put(request, clean).then(trimImageCache).catch(() => {}))
+          keepAlive(event, cache.put(request, clean).then(trimImageCache).catch(() => {}))
         }
         return res
       })()
