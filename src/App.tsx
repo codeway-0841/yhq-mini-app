@@ -48,7 +48,7 @@ const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
 const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage'))
 const ResetPasswordPage = lazy(() => import('./features/auth/pages/ResetPasswordPage'))
 
-import { getStartParam, getTelegramUser, readyAndExpand } from './platform/telegram'
+import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen } from './platform/native'
 
 function Layout() {
@@ -248,6 +248,19 @@ export default function App() {
       useQuestionsStore.getState().load(lang, useSubjectStore.getState().subjectId)
 
     if (tgUser?.id) {
+      // initData FRESHNESS GATE (regressiya fix): ilova Telegram fonda 1+ soat
+      // turganida auth_date eskirgan bo'ladi — server'ning qat'iy replay oynasi
+      // (INITDATA_MAX_AGE_SECONDS=3600) auth-only '/questions' uchun 401 qaytarib,
+      // sahifa "yuklanmoqda"da qolib ketardi (2026-08-26 content-protection yoqilgach).
+      // So'rov AVTASHISHdan OLDIN: initData 55+ daqiqalik bo'lsa ilovani BIR MARTA
+      // qayta yuklaymiz — Telegram yangi initData (fresh auth_date) beradi.
+      // Loop himoyasi requestFreshInitData'dagi 60s guard'da.
+      const authDate = getTelegramWebApp()?.initDataUnsafe?.auth_date
+      if (typeof authDate === 'number' && Date.now() - authDate * 1000 > 55 * 60_000) {
+        requestFreshInitData()
+        return
+      }
+
       const verifiedId = String(tgUser.id)
 
       // Warm start FAQAT ayni Telegram akkauntining cache'i bo'lsa xavfsiz.

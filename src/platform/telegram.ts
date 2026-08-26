@@ -29,6 +29,8 @@ interface TelegramWebApp {
   initDataUnsafe?: {
     start_param?: string
     user?: TelegramUser
+    /** Unix seconds — initData chiqarilgan vaqt (freshness gate uchun) */
+    auth_date?: number
   }
   BackButton?: BackButton
   requestContact?(callback: (ok: boolean, data?: { contact?: { phone_number: string } }) => void): void
