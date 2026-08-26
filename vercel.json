@@ -3,24 +3,16 @@
   "outputDirectory": "dist",
   "crons": [
     {
-      "path": "/api/cron/daily-reminder",
+      "path": "/api/cron/daily-suite",
       "schedule": "0 14 * * *"
     },
     {
-      "path": "/api/cron/league-rollover",
+      "path": "/api/cron/weekly-suite",
       "schedule": "15 0 * * 1"
-    },
-    {
-      "path": "/api/cron/boss-rollover",
-      "schedule": "35 0 * * 1"
-    },
-    {
-      "path": "/api/cron/cleanup-answer-tokens",
-      "schedule": "0 3 * * *"
     }
   ],
   "functions": {
-    "api/index.js": { "maxDuration": 30 },
+    "api/index.js": { "maxDuration": 60 },
     "api/bot.js":   { "maxDuration": 10 }
   },
   "headers": [

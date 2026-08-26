@@ -1,12 +1,14 @@
 /**
- * Vercel Cron — kunlik eslatma (har kuni soat 19:00 Toshkent = 14:00 UTC).
+ * Cron endpoint'lari — `Authorization: Bearer $CRON_SECRET` himoyali.
  *
- * Kimlar yuboriladi:
- *  - so'nggi 14 kunda faol bo'lgan (daily_records'da yozuvi bor) VA
- *  - bugun hali faol bo'lmagan foydalanuvchilar.
- *
- * Himoya: `Authorization: Bearer $CRON_SECRET` (Vercel cron avtomatik yuboradi;
- * manual trigger ham shu secret bilan ishlaydi).
+ * VERCEL HOBBY CHEKLOVI: free plan'da FAQAT 2 cron slot — shuning uchun 4 job
+ * ikkita FANOUT endpoint'ga birlashtirilgan (vercel.json):
+ *   /api/cron/daily-suite  (har kuni 14:00 UTC)  → cleanup-answer-tokens → daily-reminder
+ *   /api/cron/weekly-suite (dushanba 00:15 UTC)  → league-rollover → boss-rollover
+ * Har komponent o'z tryStart/complete guard'iga ega (alohida idempotency —
+ * suite ichidagi bitta komponent xatosi boshqasini to'xtatmaydi va qayta
+ * ishlatish xavfsiz). Alohida endpoint'lar saqlanadi: manual trigger,
+ * admin/debug va kelajakda Pro plan'da alohida schedule'ga qaytarish uchun.
  *
  * Muhim: bu router `telegramAuth`dan OLDIN mount qilinadi (bot foydalanuvchilari
  * emas — Vercel cron chaqiruvi), lekin CRON_SECRET'siz har qanday so'rov 401.
@@ -36,19 +38,23 @@ function tashkentDate(daysAgo = 0): string {
   return d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Tashkent' })
 }
 
-// Vercel Cron scheduled requests use GET; secret middleware is the trust boundary.
-router.get('/cron/daily-reminder', async (_req, res) => {
+interface CronRunResult { status: number; body: Record<string, unknown> }
+
+// ── Job implementatsiyalari (handler'lardan ajratilgan — suite fanout ham
+//    shularni chaqiradi) ───────────────────────────────────────────────────
+
+/** Kunlik eslatma (19:00 Toshkent = 14:00 UTC).
+ *  Kimlarga: so'nggi 14 kunda faol VA bugun hali faol bo'lmagan TG-linkli userlar. */
+async function runDailyReminder(): Promise<CronRunResult> {
   const token = config.telegram.botToken
   if (!token) {
-    res.status(500).json({ error: 'BOT_TOKEN not set' })
-    return
+    return { status: 500, body: { error: 'BOT_TOKEN not set' } }
   }
 
   const today  = tashkentDate()
   const acquired = await cronRepository.tryStart('daily-reminder', today)
   if (!acquired) {
-    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
-    return
+    return { status: 200, body: { ok: true, skipped: true, reason: 'already_started_or_completed', date: today } }
   }
 
   try {
@@ -138,27 +144,22 @@ router.get('/cron/daily-reminder', async (_req, res) => {
 
     const result = { date: today, targets: targets.length, sent, blocked, failed }
     await cronRepository.complete('daily-reminder', today, result)
-    res.json({ ok: true, ...result })
+    return { status: 200, body: { ok: true, ...result } }
   } catch (err) {
     console.error('[daily-reminder] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
     Sentry.captureException(err, { tags: { cron: 'daily-reminder', period: today } })
-    res.status(500).json({ ok: false, error: String(err) })
+    return { status: 500, body: { ok: false, error: String(err) } }
   }
-})
+}
 
-/**
- * Vercel Cron — haftalik LIGA rollover (har dushanba 00:15 UTC).
- * O'tgan hafta ball asosida: har ligada TOP 30% → bir daraja YUQORIga,
- * PASTKI 30% va umuman nofaollar → bir daraja PASTGA.
- * Duolingo uslubi: bronze → silver → gold → platinum.
- */
-router.get('/cron/league-rollover', async (_req, res) => {
+/** Haftalik LIGA rollover: TOP 30% yuqoriga, PASTKI 30%/nofaollar pastga
+ *  (bronze → silver → gold → platinum) + turnir mukofotlari. */
+async function runLeagueRollover(): Promise<CronRunResult> {
   const wThis = weekStartTashkent()    // joriy hafta boshi (yangi liga davri)
   const wPrev = weekStartTashkent(1)   // natija olingan hafta boshi
   const acquired = await cronRepository.tryStart('league-rollover', wPrev)
   if (!acquired) {
-    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', prevWeekStart: wPrev })
-    return
+    return { status: 200, body: { ok: true, skipped: true, reason: 'already_started_or_completed', prevWeekStart: wPrev } }
   }
 
   const lvl = (l: string) => {
@@ -258,26 +259,20 @@ router.get('/cron/league-rollover', async (_req, res) => {
 
     const result = { prevWeekStart: wPrev, users: evaluated, planned: plan.length, applied: appliedCount, promoted, demoted, prizesAwarded: prizeResult.winners?.length ?? 0 }
     await cronRepository.complete('league-rollover', wPrev, result)
-    res.json({ ok: true, ...result })
+    return { status: 200, body: { ok: true, ...result } }
   } catch (err) {
     // RETRY-SAFE: davr 'completed'ga BELGILANMAYDI — jobRuns 'running' qoladi,
     // stale-lease (1 soat) o'tgach keyingi trigger reja jurnalidan davom etadi.
     // (Eski xatti-harakat: catch'da complete → qisman liga holati bir haftaga qotardi.)
     console.error('[league-rollover] failed — stale-lease (1 soat) keyingi urinishga ruxsat beradi:', err)
     Sentry.captureException(err, { tags: { cron: 'league-rollover', period: wPrev } })
-    res.status(500).json({ ok: false, error: String(err) })
+    return { status: 500, body: { ok: false, error: String(err) } }
   }
-})
+}
 
-/**
- * Vercel Cron — BOSS BATTLE haftalik rollover (har dushanba 00:35 UTC —
- * liga rollover'dan 20 daqiqa keyin, DB stampede oldini oladi).
- *  - O'tgan hafta bossi: 'active' → 'escaped' (vaqt o'tib ketdi);
- *  - 'defeated' boss uchun mukofotlar: ATOMIK CTE (ledger 'boss:<id>:<user>'
- *    UNIQUE + rewardsDistributed bayrog'i) — retry-safe;
- *  - Yangi hafta bossi DETERMINISTIK roster'dan yaratiladi (idempotent).
- */
-router.get('/cron/boss-rollover', async (_req, res) => {
+/** BOSS BATTLE haftalik rollover: o'tgan hafta bossi active→escaped yoki
+ *  defeated→mukofotlar (atomik CTE, ledger UNIQUE) + yangi hafta bossi. */
+async function runBossRollover(): Promise<CronRunResult> {
   const curPeriod  = bossPeriodKey()
   // O'tgan hafta: periodKey'ni 7 kun qaytarib
   const prevDate = new Date(`${curPeriod}T00:00:00Z`)
@@ -286,8 +281,7 @@ router.get('/cron/boss-rollover', async (_req, res) => {
 
   const acquired = await cronRepository.tryStart('boss-rollover', prevPeriod)
   if (!acquired) {
-    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', prevPeriod })
-    return
+    return { status: 200, body: { ok: true, skipped: true, reason: 'already_started_or_completed', prevPeriod } }
   }
 
   try {
@@ -296,28 +290,23 @@ router.get('/cron/boss-rollover', async (_req, res) => {
     await bossRepository.ensureActiveBoss(curPeriod)
     const result = { prevPeriod, curPeriod, ...roll }
     await cronRepository.complete('boss-rollover', prevPeriod, result)
-    res.json({ ok: true, ...result })
+    return { status: 200, body: { ok: true, ...result } }
   } catch (err) {
     // RETRY-SAFE: complete BELGILANMAYDI (league-rollover pattern'i) — stale-lease
     // (1 soat) o'tgach re-run; mukofot CTE ledger-UNIQUE bilan qayta xavfsiz.
     console.error('[boss-rollover] failed — stale-lease retry:', err)
     Sentry.captureException(err, { tags: { cron: 'boss-rollover', period: prevPeriod } })
-    res.status(500).json({ ok: false, error: String(err) })
+    return { status: 500, body: { ok: false, error: String(err) } }
   }
-})
+}
 
-/**
- * Vercel Cron — answer_tokens cleanup (har kecha 03:00 UTC — vercel.json).
- * Idempotency token'lari cheksiz o'sib ketmasligi uchun 7 kundan eski
- * qatorlarni o'chiradi. Har replay o'sha paytda yaratilgan token bilan
- * keladi — 7 kun ichida kelmaydigan replay unlikely (client davra yozib beradi).
- */
-router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
+/** answer_tokens cleanup: 7 kundan eski idempotency token'lari + retention
+ *  (rate_limits, analytics, sessions, otp, email/pwd tokenlar, history, audit). */
+async function runCleanup(): Promise<CronRunResult> {
   const today = tashkentDate()
   const acquired = await cronRepository.tryStart('cleanup-answer-tokens', today)
   if (!acquired) {
-    res.json({ ok: true, skipped: true, reason: 'already_started_or_completed', date: today })
-    return
+    return { status: 200, body: { ok: true, skipped: true, reason: 'already_started_or_completed', date: today } }
   }
 
   try {
@@ -336,12 +325,73 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
       loginHistoryDeleted: result.loginHistoryDeleted,
       auditLogsDeleted: result.auditLogsDeleted,
     })
-    res.json({ ok: true, ...result })
+    return { status: 200, body: { ok: true, ...result } }
   } catch (err) {
     await cronRepository.complete('cleanup-answer-tokens', today, { error: String(err) }).catch(() => {})
     Sentry.captureException(err, { tags: { cron: 'cleanup-answer-tokens', period: today } })
-    res.status(500).json({ ok: false, error: String(err) })
+    return { status: 500, body: { ok: false, error: String(err) } }
   }
+}
+
+// ── FANOUT SUITE'lar (Vercel Hobby: 2 cron slot) ────────────────────────────
+
+/**
+ * /api/cron/daily-suite — har kuni 14:00 UTC (19:00 Toshkent).
+ * cleanup (tez) → daily-reminder (uzun). Komponent xatosi keyingisini to'xtatmaydi.
+ */
+router.get('/cron/daily-suite', async (_req, res) => {
+  const results: Record<string, unknown> = {}
+  for (const [name, run] of [['cleanup-answer-tokens', runCleanup], ['daily-reminder', runDailyReminder]] as const) {
+    try {
+      results[name] = (await run()).body
+    } catch (err) {
+      Sentry.captureException(err, { tags: { cron: 'daily-suite', stage: name } })
+      results[name] = { ok: false, error: String(err) }
+    }
+  }
+  res.json({ ok: true, suite: 'daily', ...results })
+})
+
+/**
+ * /api/cron/weekly-suite — dushanba 00:15 UTC.
+ * league-rollover → boss-rollover (izchil — eski 00:35 alohida schedule
+ * o'rniga; ketma-ketlik stampede'siz, boss liga bitgach darhol boshlanadi).
+ */
+router.get('/cron/weekly-suite', async (_req, res) => {
+  const results: Record<string, unknown> = {}
+  for (const [name, run] of [['league-rollover', runLeagueRollover], ['boss-rollover', runBossRollover]] as const) {
+    try {
+      results[name] = (await run()).body
+    } catch (err) {
+      Sentry.captureException(err, { tags: { cron: 'weekly-suite', stage: name } })
+      results[name] = { ok: false, error: String(err) }
+    }
+  }
+  res.json({ ok: true, suite: 'weekly', ...results })
+})
+
+// ── Alohida endpoint'lar — manual trigger / admin / debug.
+//    (Vercel PRO'ga ko'chilsa, vercel.json'da alohida schedule'ga qaytariladi.)
+// Vercel Cron scheduled requests use GET; secret middleware is the trust boundary.
+
+router.get('/cron/daily-reminder', async (_req, res) => {
+  const r = await runDailyReminder()
+  res.status(r.status).json(r.body)
+})
+
+router.get('/cron/league-rollover', async (_req, res) => {
+  const r = await runLeagueRollover()
+  res.status(r.status).json(r.body)
+})
+
+router.get('/cron/boss-rollover', async (_req, res) => {
+  const r = await runBossRollover()
+  res.status(r.status).json(r.body)
+})
+
+router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
+  const r = await runCleanup()
+  res.status(r.status).json(r.body)
 })
 
 export default router
