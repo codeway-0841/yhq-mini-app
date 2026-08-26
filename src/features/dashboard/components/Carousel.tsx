@@ -1,6 +1,6 @@
 import { memo, useRef, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
+import { Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
 import { type Lang, useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
 
@@ -25,13 +25,6 @@ const SLIDES: SlideConfig[] = [
     title: (l) => l === 'ru' ? 'Продолжить обучение' : 'Darsni davom ettiring',
     subtitle: (l) => l === 'ru' ? 'С того места, где остановились' : "To'xtagan joyingizdan",
     useOnContinue: true,
-  },
-  {
-    icon: Zap,
-    color: 'var(--p-warning)',
-    title: (l) => l === 'ru' ? 'Ежедневный вызов' : 'Kunlik mashq',
-    subtitle: (l) => l === 'ru' ? '10 вопросов · +50 XP' : '10 ta savol · +50 XP',
-    route: '/adaptive',
   },
   {
     icon: Crown,

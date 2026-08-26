@@ -22,16 +22,23 @@ function daysLeftOf(periodKey: string): number {
   return Math.max(0, Math.ceil((end.getTime() - Date.now()) / 86_400_000))
 }
 
+let memoryBossCache: State | null = null
+
 export default function BossCard() {
   const lang     = useAppStore((s) => s.settings.language)
   const tt       = useT(lang)
-  const [state, setState] = useState<State | null>(null)
+  const [state, setState] = useState<State | null>(() => memoryBossCache)
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
     let alive = true
     api.getBossState()
-      .then((s) => { if (alive) setState(s) })
+      .then((s) => {
+        if (alive) {
+          memoryBossCache = s
+          setState(s)
+        }
+      })
       .catch(() => { if (alive) setFailed(true) })
     return () => { alive = false }
   }, [])

@@ -20,12 +20,14 @@ import Confetti from '../../shared/components/Confetti'
 import { Skeleton } from '../../shared/components/ui/skeleton'
 import { cn } from '../../shared/lib/cn'
 
+let memoryTasksCache: CoinTaskState[] | null = null
+
 export default function DailyTasksCard() {
   const lang     = useAppStore((s) => s.settings.language)
   const tt       = useT(lang)
   const setCoins = useAppStore((s) => s.setCoins)
 
-  const [tasks, setTasks]                 = useState<CoinTaskState[] | null>(null)
+  const [tasks, setTasks]                 = useState<CoinTaskState[] | null>(() => memoryTasksCache)
   const [busy, setBusy]                   = useState<string | null>(null)
   const [error, setError]                 = useState(false)
   const [celebrate, setCelebrate]         = useState(false)
@@ -33,7 +35,11 @@ export default function DailyTasksCard() {
 
   const load = useCallback(() => {
     api.getCoinTasks()
-      .then((r) => { setTasks(r.tasks); setError(false) })
+      .then((r) => {
+        memoryTasksCache = r.tasks
+        setTasks(r.tasks)
+        setError(false)
+      })
       .catch(() => setError(true))
   }, [])
 

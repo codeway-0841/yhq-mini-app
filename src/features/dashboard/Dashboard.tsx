@@ -20,7 +20,6 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
-import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
 import { ServiceCard, MockGridCard } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
@@ -30,7 +29,7 @@ import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { DailyTasksCard } from '../shop'
 import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
+import { useDashboardSync, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
@@ -153,7 +152,6 @@ export default function Dashboard() {
   })
   const tt = useT(settings.language)
 
-  const continueInfo = useContinueInfo(user?.id, settings.language, tt)
   const { mistakesCount } = useSubjectBadges(subject.id)
 
   // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount).
@@ -231,14 +229,6 @@ export default function Dashboard() {
 
           {/* 2. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
-
-          {/* 3. Darsni davom ettirish (Carousel) */}
-          <Carousel
-            lang={settings.language}
-            progressPct={continueInfo.pct}
-            lessonLabel={continueInfo.lessonLabel}
-            onContinue={continueInfo.go}
-          />
 
           {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
           <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">
