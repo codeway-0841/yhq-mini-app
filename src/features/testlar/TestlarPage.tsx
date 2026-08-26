@@ -68,6 +68,8 @@ export default function TestlarPage() {
       ? [
           { id: 'mock',     iconBox: 'cap' as const, danger: true,
             titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const },
+          { id: 'speed',    iconBox: 'zap' as const,
+            titleKey: 'speedTitle' as const, meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' as const },
           { id: 'marathon', iconBox: 'zap' as const,
             titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
         ]

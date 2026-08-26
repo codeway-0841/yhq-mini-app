@@ -264,10 +264,16 @@ export default function Dashboard() {
               items={[
                 { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
                 { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
-                { icon: Signpost,      label: tt('roadSigns'),   onClick: () => navigate('/belgilar') },
-                { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
+                ...(subject.id === 'yhq'
+                  ? [{ icon: Signpost, label: tt('roadSigns'),   onClick: () => navigate('/belgilar') }]
+                  : []),
+                ...(subject.id === 'yhq'
+                  ? [{ icon: Hash,     label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) }]
+                  : []),
                 { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
-                { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
+                ...(subject.id === 'yhq'
+                  ? [{ icon: NotebookText, label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') }]
+                  : []),
               ]}
             />
           </div>
