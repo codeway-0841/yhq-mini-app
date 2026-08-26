@@ -59,10 +59,14 @@ function normalizePath(path: string): string | null {
 
 /**
  * Public read-only content — no per-user data, safe to cache on the CDN.
- * Questions/topics are identical for every user, so auth is NOT required.
- * This lets Vercel's CDN serve them from the edge (huge DB-load win).
+ * (Audit 2026-08-26: savollar/topiklar PUBLIC'dan CHIQARILDI — massa-yig'ish
+ * himoyasi; faqat umummazmu (dashboard summary) va avatar ochiq qoladi.)
  */
-const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard',
+// Diqqat (audit: content protection): 'questions'/'topics' RO'YXATDAN
+// CHIQARILDI — savollar banki anonim massa-yig'ishdan himoyalanadi: endi
+// faqat authed user'ga ochiq (scraper avval akkaunt yaratishi kerak + per-user
+// kunlik limit + abuse flagging — questions.router.ts).
+const PUBLIC_GET = new Set(['dashboard',
   // 'avatar/:userId' — public profil rasmi (leaderboard/duel <img src> auth
   // header yubora olmaydi; rasm user O'ZI global ko'rsatish uchun yuklagan)
   'avatar',

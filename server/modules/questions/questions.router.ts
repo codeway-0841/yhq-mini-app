@@ -5,6 +5,9 @@ import { resolveSubject } from '../../config/subjects'
 import { getProvider } from '../../providers'
 import { questionsRepository } from './questions.repository'
 import { isAuthEnforced } from '../../middleware/auth'
+import { dbRateConsumeWindow } from '../../middleware/db-rate-limiter'
+import { authRepository } from '../auth/auth.repository'
+import { Sentry } from '../../utils/sentry'
 import { executeRows } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 // Multi-instance umumiy limiter: prod'da DB counter (Neon), test/dev'da in-memory.
@@ -23,12 +26,17 @@ const QuestionsQuery = z.object({
 })
 
 /**
- * Public content — CDN edge cache (10 min) + browser cache (5 min).
- * Admin CRUD mavjud bo'lgani uchun 24 soatlik cache endi ZIYO: tahrirlangan
- * savol foydalanuvchilarga bir kungacha eski holatda ko'rinardi.
- * stale-while-revalidate=1h: muddat o'tgach ham eski javob, orqada yangilanadi.
+ * AUTH-ONLY kontent (audit 2026-08-26: /questions + /topics public'dan olindi) —
+ * CDN public cache ZIYO: edge cache auth cheklovini aylanib o'tardi (URL-keyed
+ * cache birinchi authed user javobini anonim so'rovga ham berardi). Endi
+ * kontent faqat authed userga; client session'da bir marta yuklaydi
+ * (useQuestionsStore), server providerlar in-memory pool — DB bosimi oshmaydi.
  */
-const CONTENT_CACHE = 'public, max-age=300, s-maxage=600, stale-while-revalidate=3600'
+const CONTENT_CACHE = 'private, no-store'
+
+/** Kuniga bir user necha marta BUTUN bankni qayta tortishi mumkin (audit:
+ *  massa-yig'ish signal — normal user client cache tufayli 1 marta yuklaydi). */
+const FULL_BANK_DAILY_CAP = 5
 
 /**
  * Public savol payload'i TO'G'RI JAVOBSIZ — correctAnswer faqat serverda
@@ -56,6 +64,30 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
     return
   }
   const { topicId, subject } = parsed.data
+
+  // Massa-yig'ish himoyasi (audit): BUTUN bankni (topicId'siz) bir user kuniga
+  // FULL_BANK_DAILY_CAP martadan ko'p tortishi — shubhali scraping alomati.
+  // Limit oshsa: 429 + audit_logs 'questions_fullbank_abuse' + Sentry signal.
+  // Dev/test'da (auth enforce EMAS) o'tkaziladi.
+  const userId = (req as { userId?: string }).userId
+  if (isAuthEnforced() && userId && !topicId) {
+    const window = await dbRateConsumeWindow(`qbank:${userId}`, FULL_BANK_DAILY_CAP, 24 * 3600)
+    if (!window.allowed) {
+      void authRepository.createAuditLog({
+        userId,
+        action: 'questions_fullbank_abuse',
+        resourceType: 'question_bank',
+        changes: { count: window.count, cap: FULL_BANK_DAILY_CAP },
+      }).catch(() => {})
+      Sentry.captureMessage('questions full-bank fetch abuse', {
+        level: 'warning',
+        tags: { userId, count: window.count },
+      })
+      res.status(429).json({ error: 'too_many_requests', retryAfterSeconds: 86_400 })
+      return
+    }
+  }
+
   const entry    = resolveSubject(subject)
   const provider = getProvider(entry.dataSourceId)
 
