@@ -1,10 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../content/lessons'
+import lessonMap from '../../content/lessonMap.yhq.json'
+import videosData from '../../content/videos.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -15,19 +17,32 @@ import { getModuleIcon } from './module-icons'
 
 type Mod = typeof modules[number]
 
+interface VideoInfo {
+  vimeoId: string
+  poster: string
+  title: string
+  topicName?: string
+}
+
 // ── Lesson screen (telefon ilovasidagi dizayn kabi) ─────────────────────────
 function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
   mod: Mod
   lessonIdx: number
   onClose: () => void
   onDone: (idx: number) => void
-  onPractice: () => void
+  onPractice: (idx: number) => void
 }) {
   const [idx, setIdx] = useState(lessonIdx)
+  const [isPlaying, setIsPlaying] = useState(false)
   const settings = useAppStore((s) => s.settings)
   const list = lessons[mod.id] ?? []
   const lesson: Lesson | undefined = list[idx]
   const ru = settings.language === 'ru'
+  const videoInfo: VideoInfo | undefined = (videosData as Record<string, VideoInfo | undefined>)[`${mod.id}:${idx}`]
+
+  useEffect(() => {
+    setIsPlaying(false)
+  }, [idx])
 
   if (!lesson) return null
 
@@ -52,16 +67,47 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 py-4 pb-6">
-        {/* Video karta (video kelguncha — nomli karta) */}
-        <div className="rounded-container bg-psurface border border-pline aspect-video flex items-center justify-center relative overflow-hidden mb-4">
-          <p className="text-2xl font-semibold px-6 text-center" style={{ color: mod.color }}>
-            {ru ? lesson.titleRu : lesson.titleUz}
-          </p>
-          <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-            <div className="grid size-14 place-items-center rounded-full border border-white/20 bg-black/50">
-              <Play size={24} strokeWidth={1.75} className="ml-0.5 text-white" />
+        {/* Video Player / HD Karta */}
+        <div className="rounded-container bg-psurface border border-pline aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
+          {videoInfo?.vimeoId && isPlaying ? (
+            <iframe
+              src={`https://player.vimeo.com/video/${videoInfo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
+              className="w-full h-full border-0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title={videoInfo.title || lesson.titleUz}
+            />
+          ) : (
+            <div
+              onClick={() => {
+                if (videoInfo?.vimeoId) setIsPlaying(true)
+              }}
+              className="w-full h-full relative flex items-center justify-center cursor-pointer group select-none"
+            >
+              {videoInfo?.poster ? (
+                <img
+                  src={videoInfo.poster}
+                  alt={ru ? lesson.titleRu : lesson.titleUz}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              ) : null}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+              <div className="relative z-10 flex flex-col items-center gap-2 px-4 text-center">
+                <div className="grid size-14 place-items-center rounded-full border border-white/30 bg-black/60 backdrop-blur-sm shadow-lg transition-transform group-hover:scale-110 group-active:scale-95">
+                  <Play size={24} strokeWidth={2} className="ml-0.5 text-white" />
+                </div>
+                <p className="text-sm font-semibold text-white/95 line-clamp-1 drop-shadow-sm">
+                  {ru ? lesson.titleRu : lesson.titleUz}
+                </p>
+                {videoInfo?.vimeoId && (
+                  <span className="text-[11px] font-medium text-white/80 px-2.5 py-0.5 rounded-full bg-white/15 backdrop-blur-xs border border-white/20">
+                    {ru ? 'Смотреть HD видеоурок' : 'HD video darsni ko‘rish'}
+                  </span>
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <h2 className="text-base font-semibold mb-3">
@@ -82,14 +128,14 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         </div>
 
         {/* Mavzu bo'yicha mashq kartasi */}
-        <button onClick={onPractice}
+        <button onClick={() => onPractice(idx)}
           className="w-full rounded-container border border-pline bg-psurface p-4 text-left active:scale-[0.98] transition-transform">
           <p className="text-sm font-semibold flex items-center gap-2 mb-1">
             <Dumbbell size={16} className="text-pprimary" />
             {ru ? 'Практика по теме' : "Mavzu bo'yicha mashq"}
           </p>
           <p className="text-xs text-pmuted">
-            {ru ? 'Тест по вопросам этого модуля' : "Shu modul savollaridan test"}
+            {ru ? 'Тест по вопросам этого урока' : "Shu dars savollaridan test"}
           </p>
         </button>
       </div>
@@ -274,6 +320,19 @@ export default function Darslik() {
 
   const showToast = (msg: string) => { setToast(msg); setTimeout(() => setToast(null), 3000) }
 
+  const practiceLesson = (mod: Mod, lessonIdx: number) => {
+    const map = lessonMap as Record<string, number[]>
+    const lessonQuestionIds = map[`${mod.id}:${lessonIdx}`]
+    if (lessonQuestionIds && lessonQuestionIds.length > 0) {
+      const lessonTitle = (lessons[mod.id] && lessons[mod.id][lessonIdx])
+        ? (ru ? lessons[mod.id][lessonIdx].titleRu : lessons[mod.id][lessonIdx].titleUz)
+        : `${lessonIdx + 1}-dars`
+      navigate('/test/1', { state: { questionIds: lessonQuestionIds, title: `${lessonTitle} — ${ru ? 'практика' : 'mashq'}` } })
+      return
+    }
+    practiceModule(mod)
+  }
+
   const practiceModule = (mod: Mod) => {
     const slugs = MODULE_TOPICS[mod.id] ?? []
     const topicIds = topics.filter((t) => slugs.includes(t.slug)).map((t) => t.id)
@@ -333,7 +392,7 @@ export default function Darslik() {
               userId, todayStr(), useSubjectStore.getState().subjectId,
             )
           }}
-          onPractice={() => practiceModule(reader.mod)}
+          onPractice={(idx) => practiceLesson(reader.mod, idx)}
         />
       )}
     </div>
