@@ -15,7 +15,10 @@
     <meta property="og:title" content="KIWI" />
     <meta property="og:description" content="Fanlar bo'yicha testler, biletlar va yo'l belgilari — hammasi bitta ilovada." />
     <title>KIWI</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- defer: HTML parse'ni bloklamaydi. `type="module"` (main.tsx) ham
+         defer semantikasida va HUJJAT TARTIBIDA keyin ishga tushadi — ya'ni
+         window.Telegram App mount'idan oldin mavjud bo'lishi kafolatlangan. -->
+    <script defer src="https://telegram.org/js/telegram-web-app.js"></script>
     <!-- DEV-MOCK-START (vite.config.ts faqat dev'da saqlaydi — prod build'dan o'chiriladi) -->
     <script>
       // Dev mock: inject fake Telegram user when not in real TG Mini App
@@ -119,7 +122,24 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!--
+      Shriftlar ikkiga bo'lingan (boot perf):
+        1) DEFAULT (Inter Tight + Bricolage Grotesque) — har bir userga kerak.
+           media="print" + onload hiylasi: <link> render'ni BLOKLAMAYDI, lekin
+           darhol yuklanadi. font-display=swap tufayli matn system-font bilan
+           birinchi kadrdayoq chiqadi.
+        2) OPTIONAL (Jakarta/Outfit/Lora/JetBrains) — faqat user Sozlamalarda
+           o'sha shriftni tanlasa yuklanadi (src/shared/lib/fonts.ts).
+    -->
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all';this.onload=null"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
+    />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
     <style>
       /* Splash — React yuklanguncha ko'rinadi; index.css tema tokenlari
          hali yuklanmaganligi uchun ranglar shu yerda inline beriladi */

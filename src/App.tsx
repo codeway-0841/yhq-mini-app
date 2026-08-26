@@ -13,14 +13,19 @@ import {
 } from './shared/lib/session'
 import PageLoader from './shared/components/PageLoader'
 import { resolveAccent } from './shared/config/themes'
+import { ensureFontLoaded } from './shared/lib/fonts'
 import SplashScreen from './features/onboarding/SplashScreen'
-import Onboarding from './features/onboarding/Onboarding'
 import { useDailyStore } from './shared/store/useDailyStore'
 import { useToast } from './shared/components/ToastContainer'
 import { useT } from './shared/i18n'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
-const Dashboard       = lazy(() => import('./features/dashboard/Dashboard'))
+// Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
+// KO'RINIB TURGANDA (init so'rovlariga parallel) yuklanadi, aks holda splash
+// tugagach yana bitta round-trip + PageLoader miltillashi bo'lardi.
+const dashboardChunk = () => import('./features/dashboard/Dashboard')
+void dashboardChunk()
+const Dashboard       = lazy(dashboardChunk)
 const TestPage        = lazy(() => import('./features/test/TestPage'))
 const TestlarPage     = lazy(() => import('./features/testlar/TestlarPage'))
 const Darslik         = lazy(() => import('./features/lessons/Darslik'))
@@ -43,6 +48,9 @@ const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'
 const FormulasPage    = lazy(() => import('./features/formulas/FormulasPage'))
 const SearchPage      = lazy(() => import('./features/search/SearchPage'))
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
+// Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
+// uchun har bir userning entry bundle'ida yotardi.
+const Onboarding      = lazy(() => import('./features/onboarding/Onboarding'))
 // Auth (telefon+parol / TG Login Widget) — faqat initData'siz muhitda ko'rinadi
 const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
 const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage'))
@@ -164,6 +172,8 @@ function ThemeEffect() {
     document.body.dataset.noAnimation = String(noAnimation)
   }, [noAnimation])
   useEffect(() => {
+    // Ixtiyoriy oilalar boot'da emas, TANLANGANDA yuklanadi (shared/lib/fonts.ts)
+    ensureFontLoaded(fontStyle)
     document.body.dataset.font = fontStyle || 'default'
   }, [fontStyle])
   return null
@@ -247,6 +257,15 @@ export default function App() {
     const loadQuestions = (lang: 'uz' | 'ru') =>
       useQuestionsStore.getState().load(lang, useSubjectStore.getState().subjectId)
 
+    // /questions va /topics — PUBLIC endpoint'lar (questions.router.ts: auth
+    // middleware yo'q, CDN kesh bor). Ya'ni ular auth javobini kutishi SHART
+    // EMAS. Keshdagi til bilan DARHOL boshlaymiz — api.init()/getAuthMe() bilan
+    // parallel ketadi va bitta to'liq round-trip yo'qoladi.
+    // Profil kelgach loadQuestions(server tili) yana chaqiriladi: til bir xil
+    // bo'lsa store guard'i no-op qiladi (uchib ketayotgan so'rov ham hisobga
+    // olinadi — useQuestionsStore `inFlight`), boshqacha bo'lsa qayta yuklanadi.
+    void loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
+
     if (tgUser?.id) {
       // initData FRESHNESS GATE (regressiya fix): ilova Telegram fonda 1+ soat
       // turganida auth_date eskirgan bo'ladi — server'ning qat'iy replay oynasi
@@ -291,7 +310,10 @@ export default function App() {
           try {
             // Mapping auth (Bearer) yo'li bilan BIR XIL — hydrateFromProfile
             useAppStore.getState().hydrateFromProfile(data)
-            await loadQuestions(data.settings.language).catch(() => {})
+            // SAVOLLAR SPLASH'NI KUTIB TURMAYDI (boot perf): /questions + /topics
+            // eng og'ir payload, lekin Dashboard'ga faqat SON uchun kerak.
+            // `await` bo'lgani uchun splash shu ikki so'rov tugaguncha turardi.
+            void loadQuestions(data.settings.language).catch(() => {})
             void flushOutbox(verifiedId)
             // Dashboard preview skeletsiz ochilishi uchun kesh oldindan isitiladi
             // (fire-and-forget — boot'ni sekinlashtirmaydi)
@@ -305,7 +327,7 @@ export default function App() {
           try {
             await syncFromServer(String(tgUser.id)).catch(() => {})
             const lang = useAppStore.getState().settings?.language ?? 'uz'
-            await loadQuestions(lang).catch(() => {})
+            void loadQuestions(lang).catch(() => {})
           } finally {
             useAppStore.setState({ initialized: true })
           }
@@ -330,7 +352,7 @@ export default function App() {
               // Adopt-merge (p_ → telegram raqam id) almashinuvini ushlaymiz
               ensureAccountOwner(data.user.id)
               useAppStore.getState().hydrateFromProfile(data)
-              await loadQuestions(data.settings.language).catch(() => {})
+              void loadQuestions(data.settings.language).catch(() => {})
               void flushOutbox(data.user.id)
             } finally {
               useAppStore.setState({ initialized: true })
@@ -455,7 +477,9 @@ export default function App() {
     return (
       <>
         <ThemeEffect />
-        <Onboarding onDone={finishOnboarding} />
+        <Suspense fallback={<PageLoader />}>
+          <Onboarding onDone={finishOnboarding} />
+        </Suspense>
       </>
     )
   }

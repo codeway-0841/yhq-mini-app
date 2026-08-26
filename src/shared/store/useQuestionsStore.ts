@@ -23,6 +23,11 @@ interface QuestionsState {
 // qayta map qilish uchun. correctAnswer bu yerda YO'Q (server strip qiladi).
 let rawQuestions: DbQuestion[] = []
 let loadVersion = 0
+// Uchib ketayotgan load() — AYNI (lang, subject) uchun ikkinchi so'rovni
+// bloklaydi. Boot'da load() ikki marta chaqiriladi (App.tsx: keshdagi til
+// bilan ERTA + profil kelgach tasdiq) — guard bo'lmasa `loaded` hali false
+// bo'lgani uchun ikkala chaqiruv ham tarmoqqa chiqardi.
+let inFlight: { key: string; promise: Promise<void> } | null = null
 
 export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   questions: [],
@@ -37,20 +42,29 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     const sid = subjectId ?? useSubjectStore.getState().subjectId ?? get().subjectId
     // Shu til + shu fan allaqachon yuklangan
     if (get().loaded && get().lang === lang && get().subjectId === sid) return
+    // Ayni so'rov hozir uchib ketmoqda — uni qaytaramiz (takroriy fetch yo'q)
+    const key = `${sid}::${lang}`
+    if (inFlight?.key === key) return inFlight.promise
+
     const version = ++loadVersion
     set({ loading: true, error: null })
-    try {
-      const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
-      if (version !== loadVersion) return
-      rawQuestions = raw
-      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
-    } catch (e) {
-      if (version === loadVersion) {
-        set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+    const run = (async () => {
+      try {
+        const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
+        if (version !== loadVersion) return
+        rawQuestions = raw
+        set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
+      } catch (e) {
+        if (version === loadVersion) {
+          set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+        }
+      } finally {
+        if (version === loadVersion) set({ loading: false })
+        if (inFlight?.key === key) inFlight = null
       }
-    } finally {
-      if (version === loadVersion) set({ loading: false })
-    }
+    })()
+    inFlight = { key, promise: run }
+    return run
   },
 
   async reload() {

@@ -7,11 +7,21 @@ export default function SplashScreen() {
 
       {/* Brend kartochkasi — yumshoq kirish; soya/glow YO'Q (toza) */}
       <div className="relative animate-premiumIn">
-        <img
-          src="/images/splash-brand.png"
-          alt="KIWI"
-          className="relative w-[260px] rounded-container"
-        />
+        {/* webp = 87 KB, png = 1.42 MB (16x). Splash birinchi ko'rinadigan
+            rasm — png versiyasi boot'da bir necha soniya yeyardi. <picture>
+            webp'ni qo'llamaydigan eski WebView'lar uchun png'ga tushadi. */}
+        <picture>
+          <source srcSet="/images/splash-brand.webp" type="image/webp" />
+          <img
+            src="/images/splash-brand.png"
+            alt="KIWI"
+            width={260}
+            height={260}
+            fetchPriority="high"
+            decoding="async"
+            className="relative w-[260px] rounded-container"
+          />
+        </picture>
       </div>
 
       {/* Progress bar — neytral, neonsiz */}
