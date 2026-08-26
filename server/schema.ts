@@ -261,9 +261,17 @@ export const otpCodes = pgTable('otp_codes', {
 export const telegramLoginCodes = pgTable('telegram_login_codes', {
   code:         text('code').primaryKey(),
   sessionToken: text('session_token'),
+  // Pending-login holati (D1 — serverless multi-instance): in-memory Map'dan
+  // DB'ga ko'chirildi. Bot'ning 3 bosqichi (/start login_, contact, tasdiqlash)
+  // turli Vercel instancelarda yurganda ham bir xil holat ko'rinadi.
+  tgUserId:   text('tg_user_id'),                             // pending egasi (TG user)
+  tgPhone:    text('tg_phone'),                               // contact'dan keyin
+  tgProfile:  jsonb('tg_profile').$type<Record<string, unknown>>(), // {id, first_name,...}
   expiresAt:    timestamp('expires_at').notNull(),
   createdAt:    timestamp('created_at').defaultNow().notNull(),
-})
+}, (t) => [
+  index('idx_tg_login_codes_tg_user').on(t.tgUserId),
+])
 
 /**
  * Test javobi idempotency token'lari — offline outbox replay'da

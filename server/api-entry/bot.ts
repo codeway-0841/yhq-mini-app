@@ -8,7 +8,6 @@ import { assertProdConfig, assertBotWebhookConfig, config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
 import { parseReferralParam } from '../utils/parse'
-import { registerInterval } from '../utils/shutdown'
 
 // api/index.js (server/api-entry/index.ts) va server/index.ts bu tekshiruvni
 // boot'da chaqiradi — bu yerda ham chaqiramiz (BOT_TOKEN/CRON_SECRET/OTP_PEPPER
@@ -30,25 +29,13 @@ const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
 const bot = new Bot(token)
 
-// In-memory: TG user_id → login code (5 min TTL).
+// Pending-login holati — telegram_login_codes DB ustunlarida (D1, 2026-08-26).
+// Ilgari in-memory Map'da edi: Vercel serverless webhook turli instance'larga
+// tushganda (/start → instance A, contact → instance B, tasdiqlash → instance C)
+// pending yo'qolardi va login JIM sindiriladi. Endi 3 bosqich ham DB orqali.
 // M-8 (audit): contact KELGANDA DARHOL sessiya bog'lanmaydi — avval in-bot
 // TASDIQLASH tugmasi talab qilinadi (phishing: hujumchi yaratgan kodga qurbon
 // kontakt ulashsa, qurbon "Brauzerdan kirishni tasdiqlaysizmi?" ni ko'radi).
-const loginPendingCodes = new Map<number, {
-  code: string
-  phone?: string
-  tgUser?: { id: number; first_name?: string; last_name?: string; username?: string }
-  expiresAt: number
-}>()
-
-const loginCodeCleanupTimer = setInterval(() => {
-  const now = Date.now()
-  for (const [uid, entry] of loginPendingCodes) {
-    if (now > entry.expiresAt) loginPendingCodes.delete(uid)
-  }
-}, 5 * 60_000)
-loginCodeCleanupTimer.unref?.()
-registerInterval(loginCodeCleanupTimer)   // graceful shutdown (FIXPLAN #21)
 
 const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL)
 
@@ -147,10 +134,17 @@ bot.command('start', async (ctx) => {
         .requestContact("📱 Raqamni ulashish")
         .resized()
         .oneTime()
-      loginPendingCodes.set(ctx.from.id, {
-        code: param.slice(6),
-        expiresAt: Date.now() + 5 * 60_000,
-      })
+      // D1: pending DB'da (atomik claim — boshqa TG user shu kodni ololmaydi
+      // va qayta boshamaydi: tg_user_id FAQAT NULL'dan o'rnatiladi).
+      const { authRepository } = await import('../modules/auth/auth.repository')
+      const claimed = await authRepository.claimTelegramLoginCodeForTgUser(param.slice(6), String(ctx.from.id))
+      if (!claimed) {
+        await ctx.reply(
+          '⏳ Ushbu kirish kodi eskirgan yoki band. ' +
+          'Brauzerda «Telegram orqali kirish» tugmasini qaytadan bosing — yangi kod olinadi.',
+        )
+        return
+      }
       await ctx.reply(
         "📱 Ilovaga kirish uchun telefon raqamingizni ulashing.\n\n" +
         "Quyidagi tugmani bosing — raqamingiz xavfsiz tarzda tekshiriladi:",
@@ -216,24 +210,22 @@ bot.command('start', async (ctx) => {
 bot.on('message:contact', async (ctx) => {
   const from = ctx.from
   if (!from) return
-  const pending = loginPendingCodes.get(from.id)
-  if (!pending || Date.now() > pending.expiresAt) {
-    if (pending) loginPendingCodes.delete(from.id)
+  const { authRepository } = await import('../modules/auth/auth.repository')
+  const pending = await authRepository.findPendingTelegramLoginByTgUserId(String(from.id))
+  if (!pending) {
     return // login flow'da emas yoki muddati tugagan — ignore
   }
 
   const contact = ctx.message.contact
   if (contact.user_id !== from.id) {
     await ctx.reply("❌ Faqat o'zingizning raqamingizni ulashishingiz mumkin.", { reply_markup: { remove_keyboard: true } })
-    loginPendingCodes.delete(from.id)
+    await authRepository.resetTelegramLoginPending(pending.code)
     return
   }
 
-  // Kontakt saqlanadi — sessiya faqat aniq tasdiqlashdan keyin (M-8 anti-phishing)
-  loginPendingCodes.set(from.id, {
-    ...pending,
-    phone: contact.phone_number,
-    tgUser: { id: from.id, first_name: from.first_name, last_name: from.last_name, username: from.username },
+  // Kontakt DB'ga saqlanadi — sessiya faqat aniq tasdiqlashdan keyin (M-8 anti-phishing)
+  await authRepository.attachContactToTelegramLoginCode(pending.code, contact.phone_number, {
+    id: from.id, first_name: from.first_name, last_name: from.last_name, username: from.username,
   })
   const kb = new InlineKeyboard()
     .text('✅ Ha, bu men — kirishni tasdiqlash', 'tglogin_ok').row()
@@ -249,14 +241,14 @@ bot.on('message:contact', async (ctx) => {
 // ── Login tasdiqlash (M-8): FAQAT shu yerda sessiya yaratiladi ──────────────
 bot.callbackQuery(/^tglogin_(ok|no)$/, async (ctx) => {
   const from = ctx.from
-  const pending = from ? loginPendingCodes.get(from.id) : undefined
+  const { authRepository } = await import('../modules/auth/auth.repository')
+  const pending = from ? await authRepository.findPendingTelegramLoginByTgUserId(String(from.id)) : null
   await ctx.answerCallbackQuery()
-  if (!from || !pending || Date.now() > pending.expiresAt || !pending.phone || !pending.tgUser) {
-    if (pending) loginPendingCodes.delete(from.id)
+  if (!from || !pending || !pending.phone || !pending.profile) {
     try { await ctx.editMessageText('⏳ Sessiya kodi eskurgan — kirish oqimini qaytadan boshlang.') } catch { /* edit xatosi jimgina */ }
     return
   }
-  loginPendingCodes.delete(from.id)
+  await authRepository.resetTelegramLoginPending(pending.code)
   try { await ctx.deleteMessage() } catch { /* eski xabar o'chmasa ham OK */ }
 
   if (ctx.match[1] === 'no') {
@@ -265,8 +257,9 @@ bot.callbackQuery(/^tglogin_(ok|no)$/, async (ctx) => {
   }
 
   try {
+    const tgProfile = pending.profile as { id: number; first_name?: string; last_name?: string; username?: string }
     const { authService } = await import('../modules/auth/auth.service')
-    const result = await authService.completeTelegramLoginByPhone(pending.code, pending.phone, pending.tgUser)
+    const result = await authService.completeTelegramLoginByPhone(pending.code, pending.phone, tgProfile)
     await ctx.reply(result.message)
   } catch (err) {
     console.error('[bot] telegram-login confirm error:', err)

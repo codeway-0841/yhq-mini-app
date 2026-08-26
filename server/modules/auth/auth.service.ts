@@ -13,7 +13,7 @@
  */
 
 import { z } from 'zod'
-import { randomBytes } from 'crypto'
+import { randomBytes, randomUUID } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
 import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../../db/connection'
@@ -1046,7 +1046,9 @@ export const authService = {
       return { status: 'expired' as const }
     }
     const sessionToken = rows[0].session_token
-    if (sessionToken) {
+    // 'pending:' marker (D2 claim) — tasdiqlash jarayoni hali davom etyapti,
+    // client bu marker'ni token sifatida ishlatib yubormasligi kerak.
+    if (sessionToken && !sessionToken.startsWith('pending:')) {
       await executeRows(sql`DELETE FROM telegram_login_codes WHERE code = ${code}`)
       const session = await authRepository.resolveSession(sessionToken)
       if (!session) return { status: 'expired' as const }
@@ -1057,10 +1059,18 @@ export const authService = {
   },
 
   async completeTelegramLoginByPhone(code: string, phone: string, tg: { id: number; first_name?: string; last_name?: string; username?: string }) {
-    const rows = await executeRows<{ session_token: string | null; expires_at: Date }>(sql`
-      SELECT session_token, expires_at FROM telegram_login_codes WHERE code = ${code}
+    // ATOMIK CLAIM (D2): avval kodni vaqtinchalik marker bilan band qilamiz —
+    // ikki parallel tasdiqlash sariq IDOR'siz faqat BIRI UPDATE'dan o'tadi
+    // (row lock, RETURNING bo'sh qaytadi). Eski oqim SELECT→issue→UPDATE edi:
+    // ikkovlon SELECT'da o'tib, 2 yaroqli sessiya yaratardi.
+    const claimMarker = `pending:${randomUUID()}`
+    const claimed = await executeRows<{ code: string }>(sql`
+      UPDATE telegram_login_codes
+      SET session_token = ${claimMarker}
+      WHERE code = ${code} AND session_token IS NULL AND expires_at > now()
+      RETURNING code
     `)
-    if (!rows[0] || rows[0].expires_at <= new Date() || rows[0].session_token !== null) {
+    if (!claimed[0]) {
       return { ok: false, message: '❌ Kod eskirgan yoki allaqachon ishlatilgan.' }
     }
 
@@ -1088,7 +1098,8 @@ export const authService = {
 
     const sessionToken = await issueSession(userId, 'telegram')
     await executeRows(sql`
-      UPDATE telegram_login_codes SET session_token = ${sessionToken} WHERE code = ${code}
+      UPDATE telegram_login_codes SET session_token = ${sessionToken}
+      WHERE code = ${code} AND session_token = ${claimMarker}
     `)
     return { ok: true, message: '✅ Muvaffaqiyatli! Ilovaga qayting — avtomatik kirish amalga oshdi.' }
   },

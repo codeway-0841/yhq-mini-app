@@ -1,6 +1,6 @@
 {
-  "id": "64bc21c3-4285-4054-8468-561a3f854bcf",
-  "prevId": "28190bb7-62aa-43d0-a58b-b265fd04f8c6",
+  "id": "6eb9bf23-6d3c-4538-9c11-88bac47a869c",
+  "prevId": "82383f3b-257a-4037-8639-d2a6a3742c01",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -406,6 +406,157 @@
       },
       "isRLSEnabled": false
     },
+    "public.boss_battles": {
+      "name": "boss_battles",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "period_key": {
+          "name": "period_key",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "boss_id": {
+          "name": "boss_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hp_total": {
+          "name": "hp_total",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "hp_left": {
+          "name": "hp_left",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'active'"
+        },
+        "rewards_distributed": {
+          "name": "rewards_distributed",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "uq_boss_period": {
+          "name": "uq_boss_period",
+          "nullsNotDistinct": false,
+          "columns": [
+            "period_key"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.boss_damage": {
+      "name": "boss_damage",
+      "schema": "",
+      "columns": {
+        "boss_id": {
+          "name": "boss_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "damage": {
+          "name": "damage",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "boss_damage_boss_id_boss_battles_id_fk": {
+          "name": "boss_damage_boss_id_boss_battles_id_fk",
+          "tableFrom": "boss_damage",
+          "tableTo": "boss_battles",
+          "columnsFrom": [
+            "boss_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        },
+        "boss_damage_user_id_users_id_fk": {
+          "name": "boss_damage_user_id_users_id_fk",
+          "tableFrom": "boss_damage",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "cascade"
+        }
+      },
+      "compositePrimaryKeys": {
+        "boss_damage_boss_id_user_id_pk": {
+          "name": "boss_damage_boss_id_user_id_pk",
+          "columns": [
+            "boss_id",
+            "user_id"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_boss_damage_nonnegative": {
+          "name": "chk_boss_damage_nonnegative",
+          "value": "\"boss_damage\".\"damage\" >= 0"
+        }
+      },
+      "isRLSEnabled": false
+    },
     "public.card_progress": {
       "name": "card_progress",
       "schema": "",
@@ -638,6 +789,83 @@
       },
       "isRLSEnabled": false
     },
+    "public.daily_limits": {
+      "name": "daily_limits",
+      "schema": "",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "xp_earned": {
+          "name": "xp_earned",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "coins_earned": {
+          "name": "coins_earned",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "daily_limits_user_id_users_id_fk": {
+          "name": "daily_limits_user_id_users_id_fk",
+          "tableFrom": "daily_limits",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "cascade"
+        }
+      },
+      "compositePrimaryKeys": {
+        "daily_limits_user_id_date_pk": {
+          "name": "daily_limits_user_id_date_pk",
+          "columns": [
+            "user_id",
+            "date"
+          ]
+        }
+      },
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {
+        "chk_daily_limits_nonnegative": {
+          "name": "chk_daily_limits_nonnegative",
+          "value": "\"daily_limits\".\"xp_earned\" >= 0 AND \"daily_limits\".\"coins_earned\" >= 0"
+        },
+        "chk_daily_limits_date_fmt": {
+          "name": "chk_daily_limits_date_fmt",
+          "value": "\"daily_limits\".\"date\" ~ '^\\d{4}-\\d{2}-\\d{2}$'"
+        }
+      },
+      "isRLSEnabled": false
+    },
     "public.daily_records": {
       "name": "daily_records",
       "schema": "",
@@ -784,6 +1012,58 @@
       },
       "isRLSEnabled": false
     },
+    "public.daily_spins": {
+      "name": "daily_spins",
+      "schema": "",
+      "columns": {
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "spin_date": {
+          "name": "spin_date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "reward_id": {
+          "name": "reward_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "daily_spins_user_id_users_id_fk": {
+          "name": "daily_spins_user_id_users_id_fk",
+          "tableFrom": "daily_spins",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "cascade"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
     "public.daily_streaks": {
       "name": "daily_streaks",
       "schema": "",
@@ -863,6 +1143,146 @@
         "chk_daily_streak_date_fmt": {
           "name": "chk_daily_streak_date_fmt",
           "value": "\"daily_streaks\".\"last_daily_date\" IS NULL OR \"daily_streaks\".\"last_daily_date\" ~ '^\\d{4}-\\d{2}-\\d{2}$'"
+        }
+      },
+      "isRLSEnabled": false
+    },
+    "public.duel_results": {
+      "name": "duel_results",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "match_id": {
+          "name": "match_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "opponent_id": {
+          "name": "opponent_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "result": {
+          "name": "result",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "self_score": {
+          "name": "self_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "opp_score": {
+          "name": "opp_score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "forfeit": {
+          "name": "forfeit",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "idx_duel_result_created": {
+          "name": "idx_duel_result_created",
+          "columns": [
+            {
+              "expression": "created_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "idx_duel_result_user_created": {
+          "name": "idx_duel_result_user_created",
+          "columns": [
+            {
+              "expression": "user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "created_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "duel_results_user_id_users_id_fk": {
+          "name": "duel_results_user_id_users_id_fk",
+          "tableFrom": "duel_results",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "cascade"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "uq_duel_result_match_user": {
+          "name": "uq_duel_result_match_user",
+          "nullsNotDistinct": false,
+          "columns": [
+            "match_id",
+            "user_id"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {
+        "chk_duel_result_kind": {
+          "name": "chk_duel_result_kind",
+          "value": "\"duel_results\".\"result\" IN ('win','lose','draw')"
+        },
+        "chk_duel_result_scores": {
+          "name": "chk_duel_result_scores",
+          "value": "\"duel_results\".\"self_score\" >= 0 AND \"duel_results\".\"opp_score\" >= 0"
         }
       },
       "isRLSEnabled": false
@@ -2005,6 +2425,13 @@
           "notNull": true,
           "default": "'bronze'"
         },
+        "xp": {
+          "name": "xp",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
         "updated_at": {
           "name": "updated_at",
           "type": "timestamp",
@@ -2059,7 +2486,7 @@
       "checkConstraints": {
         "chk_progress_nonnegative": {
           "name": "chk_progress_nonnegative",
-          "value": "\n    \"progress\".\"total_correct\" >= 0 AND \"progress\".\"total_wrong\" >= 0 AND \"progress\".\"total_answered\" >= 0\n    AND \"progress\".\"streak\" >= 0 AND \"progress\".\"octagon_wins\" >= 0\n  "
+          "value": "\n    \"progress\".\"total_correct\" >= 0 AND \"progress\".\"total_wrong\" >= 0 AND \"progress\".\"total_answered\" >= 0\n    AND \"progress\".\"streak\" >= 0 AND \"progress\".\"octagon_wins\" >= 0 AND \"progress\".\"xp\" >= 0\n  "
         },
         "chk_progress_sum": {
           "name": "chk_progress_sum",
@@ -2107,6 +2534,18 @@
           "primaryKey": false,
           "notNull": true,
           "default": "now()"
+        },
+        "first_ms": {
+          "name": "first_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "last_ms": {
+          "name": "last_ms",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
         }
       },
       "indexes": {
@@ -2159,7 +2598,12 @@
       },
       "uniqueConstraints": {},
       "policies": {},
-      "checkConstraints": {},
+      "checkConstraints": {
+        "chk_progress_questions_ms": {
+          "name": "chk_progress_questions_ms",
+          "value": "\n    (\"progress_questions\".\"first_ms\" IS NULL OR (\"progress_questions\".\"first_ms\" >= 0 AND \"progress_questions\".\"first_ms\" <= 600000))\n    AND (\"progress_questions\".\"last_ms\" IS NULL OR (\"progress_questions\".\"last_ms\" >= 0 AND \"progress_questions\".\"last_ms\" <= 600000))\n  "
+        }
+      },
       "isRLSEnabled": false
     },
     "public.promo_code_redemptions": {
@@ -3133,6 +3577,24 @@
           "primaryKey": false,
           "notNull": false
         },
+        "tg_user_id": {
+          "name": "tg_user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tg_phone": {
+          "name": "tg_phone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "tg_profile": {
+          "name": "tg_profile",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
         "expires_at": {
           "name": "expires_at",
           "type": "timestamp",
@@ -3147,7 +3609,23 @@
           "default": "now()"
         }
       },
-      "indexes": {},
+      "indexes": {
+        "idx_tg_login_codes_tg_user": {
+          "name": "idx_tg_login_codes_tg_user",
+          "columns": [
+            {
+              "expression": "tg_user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},

@@ -73,15 +73,18 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   if (isAuthEnforced() && userId && !topicId) {
     const window = await dbRateConsumeWindow(`qbank:${userId}`, FULL_BANK_DAILY_CAP, 24 * 3600)
     if (!window.allowed) {
+      // Repeat-offender kuzatuvi (7 kunlik oyna): bitta kalendariy kunlik chekka
+      // emas, tizimli pattern'ni admin ko'rsin — 3+ overage = scrape shubhasi.
+      const abuse = await dbRateConsumeWindow(`qbank-abuse:${userId}`, 3, 7 * 24 * 3600)
       void authRepository.createAuditLog({
         userId,
         action: 'questions_fullbank_abuse',
         resourceType: 'question_bank',
-        changes: { count: window.count, cap: FULL_BANK_DAILY_CAP },
+        changes: { count: window.count, cap: FULL_BANK_DAILY_CAP, abuseCount7d: abuse.count, repeatOffender: !abuse.allowed },
       }).catch(() => {})
       Sentry.captureMessage('questions full-bank fetch abuse', {
-        level: 'warning',
-        tags: { userId, count: window.count },
+        level: !abuse.allowed ? 'error' : 'warning',
+        tags: { userId, count: window.count, abuseCount7d: abuse.count },
       })
       res.status(429).json({ error: 'too_many_requests', retryAfterSeconds: 86_400 })
       return

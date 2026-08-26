@@ -110,6 +110,55 @@ export const authRepository = {
     return rows[0]?.user_id ?? null
   },
 
+  // ── Telegram login codes — PENDING holati (D1: serverless multi-instance) ──
+  // Ilgari bot xotirasidagi Map'da edi — webhook turli instance'larga tushganda
+  // /start → contact → tasdiqlash zanjiri sindi. Endi holat DB ustunlarida
+  // (telegram_login_codes.tg_user_id / tg_phone / tg_profile).
+
+  /** /start login_<code>: kodni shu TG user uchun ATOMIK band qilish (faqat bittasi o'tadi). */
+  async claimTelegramLoginCodeForTgUser(code: string, tgUserId: string): Promise<boolean> {
+    const rows = await executeRows<{ code: string }>(sql`
+      UPDATE telegram_login_codes SET tg_user_id = ${tgUserId}
+      WHERE code = ${code} AND session_token IS NULL AND tg_user_id IS NULL AND expires_at > now()
+      RETURNING code
+    `)
+    return rows.length > 0
+  },
+
+  /** Shu TG user'ning pending login kodi (yuqori bosqichlar uchun) */
+  async findPendingTelegramLoginByTgUserId(tgUserId: string): Promise<{
+    code: string
+    phone: string | null
+    profile: Record<string, unknown> | null
+  } | null> {
+    const rows = await executeRows<{ code: string; tg_phone: string | null; tg_profile: Record<string, unknown> | null }>(sql`
+      SELECT code, tg_phone, tg_profile FROM telegram_login_codes
+      WHERE tg_user_id = ${tgUserId} AND session_token IS NULL AND expires_at > now()
+      ORDER BY created_at DESC LIMIT 1
+    `)
+    return rows[0] ? { code: rows[0].code, phone: rows[0].tg_phone, profile: rows[0].tg_profile } : null
+  },
+
+  /** Contact qabul qilingach: phone + TG profil yoziladi (tasdiqlashdan OLDIN) */
+  async attachContactToTelegramLoginCode(code: string, phone: string, profile: Record<string, unknown>): Promise<boolean> {
+    const rows = await executeRows<{ code: string }>(sql`
+      UPDATE telegram_login_codes
+      SET tg_phone = ${phone}, tg_profile = ${JSON.stringify(profile)}
+      WHERE code = ${code} AND session_token IS NULL
+      RETURNING code
+    `)
+    return rows.length > 0
+  },
+
+  /** Pending maydonlarni tozalash (tasdiq/bekor/eskirma) — kod o'zi POLLING uchun saqlanadi */
+  async resetTelegramLoginPending(code: string): Promise<void> {
+    await executeRows(sql`
+      UPDATE telegram_login_codes
+      SET tg_user_id = NULL, tg_phone = NULL, tg_profile = NULL
+      WHERE code = ${code} AND session_token IS NULL
+    `)
+  },
+
   /** OTP kod yaratish (hash saqlanadi, plain text SMS'da). Conflict'da eskisini replace qiladi. */
   async createOTP(phone: string, codeHash: string, expiresAt: Date, txOrDb?: DB): Promise<void> {
     // created_at HAM yangilanadi — resend cooldown (so'nggi yuborilgan vaqt) shunga tayanadi
