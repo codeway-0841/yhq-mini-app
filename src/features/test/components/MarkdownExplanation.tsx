@@ -156,11 +156,12 @@ export default function MarkdownExplanation({ content }: MarkdownExplanationProp
  * - [Label](/signs/3.27) -> Road Sign Clickable Badge
  * - [Label](url) -> External Link
  * - **Bold Text** -> <strong>Bold Text</strong>
+ * - Automatic detection of road signs (3.27, 5.33, etc.)
  */
 function renderInlineMarkdown(text: string, onSignClick: (code: string) => void) {
   // Regex to match links [label](url) and bold **text**
   const regex = /\[(.*?)\]\((.*?)\)|\*\*(.*?)\*\*/g
-  const result = []
+  const result: React.ReactNode[] = []
   let lastIndex = 0
   let match: RegExpExecArray | null
 
@@ -169,7 +170,8 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
 
     // Text before match
     if (matchIndex > lastIndex) {
-      result.push(text.slice(lastIndex, matchIndex))
+      const beforeText = text.slice(lastIndex, matchIndex)
+      result.push(parsePlainRoadSigns(beforeText, onSignClick, `plain-${lastIndex}`))
     }
 
     if (match[1] !== undefined && match[2] !== undefined) {
@@ -177,7 +179,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
       const label = match[1]
       const url = match[2]
 
-      // Check if it's a sign link like `/signs/3.27`
+      // Check if it's a sign link like `/signs/3.27` or `/signs/5.33`
       const signMatch = url.match(/^\/?signs\/([a-zA-Z0-9._-]+)$/)
       if (signMatch) {
         const code = signMatch[1]
@@ -187,14 +189,18 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
           <button
             key={`sign-${matchIndex}`}
             type="button"
-            onClick={() => onSignClick(code)}
-            className="inline-flex items-center gap-1 px-2 py-0.5 mx-0.5 my-0.5 rounded-control bg-pblue/15 text-pblue font-semibold text-[13px] border border-pblue/30 hover:bg-pblue/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-xs"
+            onClick={(e) => {
+              e.preventDefault()
+              e.stopPropagation()
+              onSignClick(code)
+            }}
+            className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-control bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] border border-blue-500/35 hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-xs"
             title={`${label} — ma'lumotlarini ko'rish`}
           >
             {sign?.image ? (
               <img src={sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
             ) : (
-              <TrafficCone size={13} className="inline-block flex-shrink-0 text-pblue" />
+              <TrafficCone size={13} className="inline-block flex-shrink-0 text-blue-500" />
             )}
             <span className="underline underline-offset-2">{label}</span>
           </button>
@@ -216,9 +222,10 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
       }
     } else if (match[3] !== undefined) {
       // Bold match **text**
+      const boldContent = match[3]
       result.push(
         <strong key={`bold-${matchIndex}`} className="font-bold text-pfg">
-          {match[3]}
+          {parsePlainRoadSigns(boldContent, onSignClick, `bold-${matchIndex}`)}
         </strong>
       )
     }
@@ -227,8 +234,65 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
   }
 
   if (lastIndex < text.length) {
-    result.push(text.slice(lastIndex))
+    const afterText = text.slice(lastIndex)
+    result.push(parsePlainRoadSigns(afterText, onSignClick, `plain-end-${lastIndex}`))
   }
 
   return result
+}
+
+/**
+ * Automatically detects road sign codes like 3.27, 5.33, 1.1 in text and turns them into blue buttons
+ */
+function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, keyPrefix: string): React.ReactNode {
+  const signCodeRegex = /\b([1-7]\.\d{1,2}(?:\.\d{1,2})?)\b(?:\s*-\s*["«“]([^"»”]+)["»”])?/g
+  const nodes: React.ReactNode[] = []
+  let lastIdx = 0
+  let m: RegExpExecArray | null
+
+  while ((m = signCodeRegex.exec(text)) !== null) {
+    const code = m[1]
+    const sign = getSignByCode(code)
+
+    if (sign) {
+      if (m.index > lastIdx) {
+        nodes.push(text.slice(lastIdx, m.index))
+      }
+
+      const label = m[2] ? `${code} - "${m[2]}"` : `${code} - ${sign.name.replace(/^\d+(\.\d+)*\.\s*/, '')}`
+
+      nodes.push(
+        <button
+          key={`${keyPrefix}-${m.index}`}
+          type="button"
+          onClick={(e) => {
+            e.preventDefault()
+            e.stopPropagation()
+            onSignClick(code)
+          }}
+          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-control bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] border border-blue-500/35 hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-xs"
+          title={`${label} — ma'lumotlarini ko'rish`}
+        >
+          {sign.image ? (
+            <img src={sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
+          ) : (
+            <TrafficCone size={13} className="inline-block flex-shrink-0 text-blue-500" />
+          )}
+          <span className="underline underline-offset-2">{label}</span>
+        </button>
+      )
+
+      lastIdx = m.index + m[0].length
+    }
+  }
+
+  if (nodes.length === 0) {
+    return text
+  }
+
+  if (lastIdx < text.length) {
+    nodes.push(text.slice(lastIdx))
+  }
+
+  return nodes
 }
