@@ -12,6 +12,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { getBossIcon } from './boss-icons'
 import { Skeleton } from '../../shared/components/ui/skeleton'
+import { bossCache, fetchBossState } from '../../shared/lib/dashboard-cache'
 import { cn } from '../../shared/lib/cn'
 
 type State = Awaited<ReturnType<typeof api.getBossState>>
@@ -22,28 +23,31 @@ function daysLeftOf(periodKey: string): number {
   return Math.max(0, Math.ceil((end.getTime() - Date.now()) / 86_400_000))
 }
 
-let memoryBossCache: State | null = null
+/** Keshdagi holat HALI SHU HAFTAGA tegishlimi? Boss davri dushanba kuni
+ *  almashadi — kechagi nusxa yangi hafta boshida boshqa bossni ko'rsatardi. */
+function usableCachedState(): State | null {
+  const cached = bossCache.peek()
+  if (!cached) return null
+  return daysLeftOf(cached.periodKey) > 0 ? cached : null
+}
 
 export default function BossCard() {
   const lang     = useAppStore((s) => s.settings.language)
   const tt       = useT(lang)
-  const [state, setState] = useState<State | null>(() => memoryBossCache)
+  const [state, setState] = useState<State | null>(usableCachedState)
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
     let alive = true
-    api.getBossState()
-      .then((s) => {
-        if (alive) {
-          memoryBossCache = s
-          setState(s)
-        }
-      })
+    fetchBossState()
+      .then((s) => { if (alive) setState(s) })
       .catch(() => { if (alive) setFailed(true) })
     return () => { alive = false }
   }, [])
 
-  if (failed) return null    // offline/xato — Dashboard'ni sindirmaydi
+  // Offline/xato — Dashboard'ni sindirmaydi. Lekin keshdagi holat BOR bo'lsa
+  // uni ko'rsatamiz: kartani yashirish o'rniga eski ma'lumot foydaliroq.
+  if (failed && !state) return null
   if (!state) {
     return (
       <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-4">

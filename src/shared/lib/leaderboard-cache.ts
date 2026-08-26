@@ -9,7 +9,7 @@
  */
 
 import { api, type LeaderboardEntry, type LeagueWeekly, type TournamentSeason } from '../api'
-import { createTtlCache } from './ttl-cache'
+import { createTtlCache, invalidateAllPersistedCaches } from './ttl-cache'
 
 export interface LeaderboardPreviewEntry {
   rank: number
@@ -18,7 +18,14 @@ export interface LeaderboardPreviewEntry {
   isYou: boolean
 }
 
-const previewCache = createTtlCache<LeaderboardPreviewEntry[]>(60_000)
+// Preview PERSIST qilinadi: Mini App har ochilishda sahifani qayta yuklaydi,
+// ya'ni faqat xotiradagi kesh boot'da doim bo'sh bo'lardi va user HAR SAFAR
+// skelet ko'rardi. Diskdagi nusxa birinchi kadrni to'ldiradi, TTL (60s)
+// tugagani uchun orqa fonda darhol yangilanadi.
+const previewCache = createTtlCache<LeaderboardPreviewEntry[]>(60_000, {
+  persistKey: 'lb-preview',
+  maxAgeMs:   24 * 3600_000,
+})
 const dailyCache   = createTtlCache<LeaderboardEntry[]>(60_000)
 const weeklyCache  = createTtlCache<LeagueWeekly>(60_000)
 const monthlyCache = createTtlCache<LeaderboardEntry[]>(60_000)
@@ -58,4 +65,7 @@ export function invalidateLeaderboardCache(): void {
   weeklyCache.invalidate()
   monthlyCache.invalidate()
   seasonsCache.invalidate()
+  // Diskdagi barcha kesh yozuvlari ham (kunlik vazifalar, boss) — ular ham
+  // user-specific va akkaunt almashganda ko'rinib qolmasligi kerak.
+  invalidateAllPersistedCaches()
 }

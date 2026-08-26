@@ -7,6 +7,7 @@ import { ensureAccountOwner, resetAccountToLoggedOut } from './shared/store/acco
 import { api } from './shared/api'
 import { flushOutbox } from './shared/lib/outbox'
 import { prefetchLeaderboardPreview } from './shared/lib/leaderboard-cache'
+import { prefetchDashboardCards } from './shared/lib/dashboard-cache'
 import { track } from './shared/lib/analytics'
 import {
   getSessionToken, SESSION_EXPIRED_EVENT, SESSION_CHANGED_EVENT,
@@ -315,9 +316,12 @@ export default function App() {
             // `await` bo'lgani uchun splash shu ikki so'rov tugaguncha turardi.
             void loadQuestions(data.settings.language).catch(() => {})
             void flushOutbox(verifiedId)
-            // Dashboard preview skeletsiz ochilishi uchun kesh oldindan isitiladi
-            // (fire-and-forget — boot'ni sekinlashtirmaydi)
+            // Dashboard kartalari skeletsiz ochilishi uchun keshlar oldindan
+            // isitiladi (fire-and-forget — boot'ni sekinlashtirmaydi). Aks holda
+            // bu so'rovlar Dashboard MOUNT bo'lgandan keyin, ya'ni splash
+            // tugagach boshlanardi — o'sha payt skeletlar ko'rinardi.
             prefetchLeaderboardPreview(data.user.id)
+            prefetchDashboardCards()
           } finally {
             // Xato bo'lsa ham splash'dan chiqishi shart
             useAppStore.setState({ initialized: true })
@@ -354,6 +358,8 @@ export default function App() {
               useAppStore.getState().hydrateFromProfile(data)
               void loadQuestions(data.settings.language).catch(() => {})
               void flushOutbox(data.user.id)
+              prefetchLeaderboardPreview(data.user.id)
+              prefetchDashboardCards()
             } finally {
               useAppStore.setState({ initialized: true })
             }

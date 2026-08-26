@@ -18,26 +18,24 @@ import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
 import { Skeleton } from '../../shared/components/ui/skeleton'
+import { coinTasksCache, fetchCoinTasks } from '../../shared/lib/dashboard-cache'
 import { cn } from '../../shared/lib/cn'
-
-let memoryTasksCache: CoinTaskState[] | null = null
 
 export default function DailyTasksCard() {
   const lang     = useAppStore((s) => s.settings.language)
   const tt       = useT(lang)
   const setCoins = useAppStore((s) => s.setCoins)
 
-  const [tasks, setTasks]                 = useState<CoinTaskState[] | null>(() => memoryTasksCache)
+  const [tasks, setTasks]                 = useState<CoinTaskState[] | null>(() => coinTasksCache.peek())
   const [busy, setBusy]                   = useState<string | null>(null)
   const [error, setError]                 = useState(false)
   const [celebrate, setCelebrate]         = useState(false)
   const [recentlyClaimed, setRecentlyClaimed] = useState<string | null>(null)
 
   const load = useCallback(() => {
-    api.getCoinTasks()
-      .then((r) => {
-        memoryTasksCache = r.tasks
-        setTasks(r.tasks)
+    fetchCoinTasks()
+      .then((t) => {
+        setTasks(t)
         setError(false)
       })
       .catch(() => setError(true))
