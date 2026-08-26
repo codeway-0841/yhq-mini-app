@@ -1,10 +1,11 @@
 import { and, eq, gte, inArray, lt, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import {
-  analyticsEvents, answerTokens, dailyRecords, dailyStreaks, jobRuns,
-  leagueRolloverLog, linkCodes, progress, rateLimits, telegramLoginCodes,
-  users, userCoins,
+  analyticsEvents, answerTokens, auditLogs, dailyRecords, dailyStreaks, jobRuns,
+  leagueRolloverLog, linkCodes, loginHistory, otpCodes, progress, rateLimits,
+  sessions, telegramLoginCodes, users, userCoins,
 } from '../../schema'
+import { authRepository } from '../auth/auth.repository'
 
 const STALE_AFTER_MS = 60 * 60_000
 
@@ -15,11 +16,29 @@ export const cronRepository = {
     const rows = await db.insert(jobRuns).values({ jobName, periodKey })
       .onConflictDoUpdate({
         target: [jobRuns.jobName, jobRuns.periodKey],
-        set: { status: 'running', startedAt: new Date(), finishedAt: null, details: {} },
+        // DIQQAT: details QAYTA YOZILMAYDI (audit H-6) — stale-lease RTY'da
+        // oldingi run checkpoint'i ({offset, sent...}) saqlanib qoladi va job
+        // shu nuqtadan davom etadi (dublikat yuborish himoyasi).
+        set: { status: 'running', startedAt: new Date(), finishedAt: null },
         where: and(eq(jobRuns.status, 'running'), lt(jobRuns.startedAt, staleBefore)),
       })
       .returning({ id: jobRuns.id })
     return rows.length > 0
+  },
+
+  /** Stale-lease retry'da davom ettirish uchun saqlangan checkpoint (masalan {offset, sent...}). */
+  async getRunDetails(jobName: string, periodKey: string): Promise<Record<string, unknown>> {
+    const rows = await db
+      .select({ details: jobRuns.details })
+      .from(jobRuns)
+      .where(and(eq(jobRuns.jobName, jobName), eq(jobRuns.periodKey, periodKey)))
+    return (rows[0]?.details as Record<string, unknown> | undefined) ?? {}
+  },
+
+  /** Uzoq yuradigan job'ning oraliq checkpoint'i (har batch'dan keyin). */
+  async saveCheckpoint(jobName: string, periodKey: string, checkpoint: Record<string, unknown>): Promise<void> {
+    await db.update(jobRuns).set({ details: checkpoint })
+      .where(and(eq(jobRuns.jobName, jobName), eq(jobRuns.periodKey, periodKey)))
   },
 
   async complete(jobName: string, periodKey: string, details: Record<string, unknown>): Promise<void> {
@@ -160,6 +179,12 @@ export const cronRepository = {
     analyticsDeleted: number
     tgCodesDeleted: number
     linkCodesDeleted: number
+    sessionsDeleted: number
+    otpDeleted: number
+    emailTokensDeleted: number
+    pwdTokensDeleted: number
+    loginHistoryDeleted: number
+    auditLogsDeleted: number
     cutoff: string
   }> {
     const cutoff = new Date(Date.now() - 7 * 86_400_000)
@@ -178,12 +203,32 @@ export const cronRepository = {
     const tgCodesResult = await db.delete(telegramLoginCodes).where(lt(telegramLoginCodes.createdAt, codesCutoff))
     const linkCodesResult = await db.delete(linkCodes).where(lt(linkCodes.createdAt, codesCutoff))
 
+    // Auth retention (audit M): eskirgan sessiyalar, OTP kodlar, email/parol
+    // token'lari — avval faqat resolve-payti opportunistic tozalanardi (o'suvchi jadvallar).
+    const sessionsResult = await db.delete(sessions).where(lt(sessions.expiresAt, new Date()))
+    const otpCutoff = new Date(Date.now() - 86_400_000) // OTP TTL 5 daqiqa — 1 kunlik xavfsiz margin
+    const otpResult = await db.delete(otpCodes).where(lt(otpCodes.expiresAt, otpCutoff))
+    // auth.repository'dagi tayyor amallar (yagona implementatsiya)
+    const emailTokensDeleted = await authRepository.cleanExpiredEmailTokens()
+    const pwdTokensDeleted = await authRepository.cleanExpiredPasswordTokens()
+
+    // 90 kunlik retention (schema.ts'dagi izohli shartnoma)
+    const historyCutoff = new Date(Date.now() - 90 * 86_400_000)
+    const loginHistoryResult = await db.delete(loginHistory).where(lt(loginHistory.createdAt, historyCutoff))
+    const auditLogsResult = await db.delete(auditLogs).where(lt(auditLogs.createdAt, historyCutoff))
+
     return {
       deleted: result.rowCount ?? 0,
       rateLimitsDeleted: rlResult.rowCount ?? 0,
       analyticsDeleted: analyticsResult.rowCount ?? 0,
       tgCodesDeleted: tgCodesResult.rowCount ?? 0,
       linkCodesDeleted: linkCodesResult.rowCount ?? 0,
+      sessionsDeleted: sessionsResult.rowCount ?? 0,
+      otpDeleted: otpResult.rowCount ?? 0,
+      emailTokensDeleted,
+      pwdTokensDeleted,
+      loginHistoryDeleted: loginHistoryResult.rowCount ?? 0,
+      auditLogsDeleted: auditLogsResult.rowCount ?? 0,
       cutoff: cutoff.toISOString(),
     }
   },

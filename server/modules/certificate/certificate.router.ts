@@ -19,7 +19,8 @@ import { sql } from 'drizzle-orm'
 const router = Router()
 
 const SendCertificateSchema = z.object({
-  imageBase64: z.string().min(50),
+  // ~3.7MB rasmgacha (base64 ≈ 4/3) — route-level body limit 5mb bilan mos (audit H-9).
+  imageBase64: z.string().min(50).max(5_000_000),
   certId:      z.string().min(3).max(64),
   subjectName: z.string().min(1).max(128),
   score:       z.number().optional(),

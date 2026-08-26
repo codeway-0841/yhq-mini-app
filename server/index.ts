@@ -5,7 +5,7 @@
  */
 
 import 'dotenv/config'
-import './utils/sentry'
+import { Sentry } from './utils/sentry'
 import { assertProdConfig } from './config'
 
 assertProdConfig()   // production'da BOT_TOKEN'siz boot QILMAYDI (auth fail-open himoyasi)
@@ -43,6 +43,24 @@ function shutdown(signal: string): void {
 }
 process.on('SIGTERM', () => shutdown('SIGTERM'))
 process.on('SIGINT',  () => shutdown('SIGINT'))
+
+// Process-level xavfsizlik tarmog'i (P0): bitta yutqazilgan async xato
+// (masalan, WS handler'dagi DB timeout) butun WS+HTTP serverni jim qulatmasligi
+// kerak — Node 15+ default'da unhandledRejection = FATAL crash.
+process.on('unhandledRejection', (reason) => {
+  console.error('Unhandled promise rejection:', reason)
+  Sentry.captureException(reason instanceof Error ? reason : new Error(String(reason)))
+})
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception — shutting down:', err)
+  Sentry.captureException(err)
+  shutdown('uncaughtException')
+})
+// Malformed HTTP request (buzilgan header'lar va h.k.) server'ni qulatmasligi kerak.
+server.on('clientError', (err, socket) => {
+  console.warn('clientError:', err.message)
+  socket.destroy()
+})
 
 loadOctagonPools()
   .then((pools) => {

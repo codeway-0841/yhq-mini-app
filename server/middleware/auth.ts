@@ -194,7 +194,27 @@ async function resolveBearer(token: string, req: Request): Promise<boolean> {
 
 export async function telegramAuth(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    if (isPublicGet(req) || isPublicAuthPost(req) || isPublicAuthGet(req) || isPublicPaymentPost(req)) { next(); return }
+    // Public GET: kontent anonim ochiq qoladi — lekin credentials YUBORILGAN
+    // bo'lsa BEST-EFFORT resolve qilamiz (post-answer explanation gating kabi
+    // per-user public GET'lar req.userId'ga tayanadi — audit H-4). Resolve
+    // xatosi HECH QACHON 401 qaytarmaydi: public kontent ochiq qolishi SHART.
+    if (isPublicGet(req)) {
+      const pubInitData = getInitData(req)
+      const pubBearer   = getBearerToken(req)
+      try {
+        if (pubInitData) {
+          const id = isAuthEnforced()
+            ? verifyTelegram(pubInitData)
+            : (verifyTelegram(pubInitData) ?? devUnverifiedTelegramId(pubInitData))
+          if (id) (req as { userId?: string }).userId = id
+        } else if (pubBearer) {
+          await resolveBearer(pubBearer, req)
+        }
+      } catch { /* best-effort — public yo'l bloklanmaydi */ }
+      next(); return
+    }
+
+    if (isPublicAuthPost(req) || isPublicAuthGet(req) || isPublicPaymentPost(req)) { next(); return }
 
     const initData = getInitData(req)
     const bearer   = getBearerToken(req)

@@ -34,16 +34,25 @@ interface DbRateLimitOptions {
 
 /** Atomik oyna-counter iste'moli. `count > max` bo'lsa so'rov rad etilishi kerak. */
 export async function dbRateConsume(bucketKey: string, max: number): Promise<{ allowed: boolean; count: number }> {
+  return dbRateConsumeWindow(bucketKey, max, 60)
+}
+
+/**
+ * Umumlashgan atomik oyna-counter (ixtiyoriy oyna, sekundlarda) — 60s'dan uzun
+ * oynalar uchun (masalan, OTP per-telefon kunlik SMS cap). Xuddi `dbRateConsume`
+ * semantikasi: multi-instance xavfsiz ATOMIK upsert (row-level lock).
+ */
+export async function dbRateConsumeWindow(bucketKey: string, max: number, windowSeconds: number): Promise<{ allowed: boolean; count: number }> {
   const rows = await executeRows<{ count: number }>(sql`
     INSERT INTO rate_limits (bucket, count, window_start)
     VALUES (${bucketKey}, 1, now())
     ON CONFLICT (bucket) DO UPDATE SET
       count = CASE
-        WHEN rate_limits.window_start <= now() - interval '60 seconds' THEN 1
+        WHEN rate_limits.window_start <= now() - (${Math.max(1, Math.floor(windowSeconds))} * interval '1 second') THEN 1
         ELSE rate_limits.count + 1
       END,
       window_start = CASE
-        WHEN rate_limits.window_start <= now() - interval '60 seconds' THEN now()
+        WHEN rate_limits.window_start <= now() - (${Math.max(1, Math.floor(windowSeconds))} * interval '1 second') THEN now()
         ELSE rate_limits.window_start
       END
     RETURNING count

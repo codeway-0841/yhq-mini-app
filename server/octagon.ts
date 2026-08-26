@@ -37,6 +37,7 @@ import { progressRepository } from './modules/progress/progress.repository'
 import type { DuelResultRow } from './modules/progress/progress.repository'
 import { authRepository } from './modules/auth/auth.repository'
 import { registerInterval } from './utils/shutdown'
+import { Sentry } from './utils/sentry'
 import type { LeaderboardEntry } from './modules/leaderboard/leaderboard.repository'
 
 // ── Constants ──────────────────────────────────────────────────────────────
@@ -846,6 +847,11 @@ export function attachOctagon(
   }, L.heartbeatMs)
   registerInterval(heartbeat)   // wss 'close' ham tozalaydi; shutdown registry esa Node process'dan chiqishda sog'lom optimum
   wss.on('close', () => clearInterval(heartbeat))
+  // 'error' event'i listener'siz EventEmitter'da process throw'ga aylanadi (P0).
+  wss.on('error', (err) => {
+    console.error('[octagon] wss error:', err)
+    Sentry.captureException(err)
+  })
 
   wss.on('connection', (ws: WebSocket, req: IncomingMessage) => {
     // Origin allowlist — FAQAT prod'da va ALLOWED_ORIGIN ANIQ berilganda
@@ -863,6 +869,14 @@ export function attachOctagon(
       msgWindowStart: Date.now(), msgCount: 0,
     }
     states.set(ws, state)
+
+    // 'error' listener'siz socket EventEmitter throw qiladi — bitta g'araz
+    // socket butun process'ni qulatmasligi kerak (P0). Terminate qilamiz:
+    // 'close' handler tozalashni (states/queue/duels) o'zi bajaradi.
+    ws.on('error', (err) => {
+      console.warn('[octagon] ws error:', err.message)
+      ws.terminate()
+    })
 
     // Auth deadline — hech qachon join_queue/rejoin qilmagan socketlar
     // resurslarni cheksiz ushlab turmasligi kerak.

@@ -63,6 +63,9 @@ export function createApp() {
   // o'tkazib yuboradi). Qolgan barcha route uchun kichik default.
   app.use('/api/admin/questions', express.json({ limit: '10mb' }))
   app.use('/api/share/image', express.json({ limit: '5mb' }))
+  // Sertifikat PNG base64 (canvas.toDataURL) odatda 300KB'dan oshadi — umumiy
+  // 300kb limit 413 qaytarardi (audit H-9). share/image bilan bir kategoriya.
+  app.use('/api/certificate/send', express.json({ limit: '5mb' }))
   app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.

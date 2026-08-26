@@ -4,6 +4,9 @@ import { wrap }   from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
 import { getProvider } from '../../providers'
 import { questionsRepository } from './questions.repository'
+import { isAuthEnforced } from '../../middleware/auth'
+import { executeRows } from '../../db/connection'
+import { sql } from 'drizzle-orm'
 // Multi-instance umumiy limiter: prod'da DB counter (Neon), test/dev'da in-memory.
 // Vercel serverless'da har so'rov yangi instansiya bo'lishi mumkin — in-memory
 // bucket o'sha instansiya bilan birga yo'qoladi (no-op); DB counter umumiy.
@@ -98,6 +101,29 @@ router.get('/questions/:questionId/explanation', wrap(async (req, res) => {
     return
   }
 
+  // Post-answer GATING (audit H-4): izoh matni to'g'ri javobni oshkor qilishi
+  // mumkin ("Nima uchun A4 to'g'ri...") — public ochiq endpoint cheater skriptiga
+  // har savolda fresh-correct + coin/XP/liga farm yo'lini berardi. Izoh FAQAT shu
+  // savolga ALLAQACHON javob bergan (progress_questions'da qatori bor) user'ga
+  // ko'rsatiladi (/result post-answer reveal semantikasi bilan bir xil).
+  // Auth enforce qilinmagan dev/test muhitda gate o'tkazib yuboriladi.
+  const userId = (req as { userId?: string }).userId
+  if (isAuthEnforced()) {
+    if (!userId) {
+      res.status(401).json({ error: 'Authentication required' })
+      return
+    }
+    const answered = await executeRows(sql`
+      SELECT 1 AS x FROM progress_questions
+      WHERE user_id = ${userId} AND question_id = ${id}
+      LIMIT 1
+    `)
+    if (answered.length === 0) {
+      res.status(403).json({ error: 'explanation_locked' })
+      return
+    }
+  }
+
   // Hozircha barcha dataSource'lar YHQ bazasiga ishora qiladi — subject
   // parametri kerak emas (questionId global unique). Yangi provider'lar
   // kelganda per-subject explain endpoint'lari qo'shiladi.
@@ -106,7 +132,8 @@ router.get('/questions/:questionId/explanation', wrap(async (req, res) => {
     res.status(404).json({ error: 'explanation_not_found' })
     return
   }
-  res.set('Cache-Control', CONTENT_CACHE)
+  // Per-user gate — CDN public cache ZIYO (403 per user farq qiladi).
+  res.set('Cache-Control', 'private, no-store')
   res.json({ questionId: id, text: parsed.data.lang === 'ru' ? row.explanationRu : row.explanationUz })
 }))
 

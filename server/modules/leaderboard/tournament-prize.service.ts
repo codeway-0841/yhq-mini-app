@@ -4,7 +4,7 @@
  */
 
 import { and, desc, eq, gte, inArray, lt, sql } from 'drizzle-orm'
-import { db } from '../../db/connection'
+import { db, executeRows } from '../../db/connection'
 import { dailyRecords, progress, tournamentPrizes, users } from '../../schema'
 import { config } from '../../config'
 
@@ -123,36 +123,33 @@ export async function distributeWeeklyPrizes(periodKey: string): Promise<{
     const rank = i + 1
     const prizeDays = TOURNAMENT_PRIZES[rank] || 7
 
-    // 1. Mukofot yozuvini kiritish (ledger-first — H-1: tranzaksiyasiz ham idempotent)
-    const inserted = await db
-      .insert(tournamentPrizes)
-      .values({
-        periodKey,
-        userId: row.userId,
-        rank,
-        score: Number(row.score),
-        league: row.league,
-        prizeDays,
-      })
-      .onConflictDoNothing()
-      .returning({ id: tournamentPrizes.id })
-
-    if (inserted.length === 0) {
-      // Allaqachon kiritilgan — o'tkazib yuboramiz
-      continue
-    }
-
-    // 2. Foydalanuvchiga Premium berish.
+    // 1+2. Mukofot yozuvi (ledger) + Premium grant — BITTA atomik CTE (audit H-5):
+    // alohida statement'larda crash orasida "qator bor, grant yo'q" holati qolib,
+    // retry `inserted.length===0 → continue` qismiyat o'tkazardi (g'olib premiumni
+    // HECH QACHON olmas edi). CTE atomikligi + ON CONFLICT (period,rank) =
+    // tranzaksiyasiz ham idempotent (retry'da INSERT conflict → grant yozilmaydi).
     // C-1: muddatli sovrin tariff'ga TEGMAYDI (premium_until yetarli).
     // H-1: GREATEST SQLda — to'lov/promo muddatni uzatsa, eskisi ko'r-ko'rona o'chirilmaydi.
-    const [granted] = await db
-      .update(users)
-      .set({
-        premiumUntil: sql`GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${prizeDays}::int)`,
-        updatedAt: new Date(),
-      })
-      .where(eq(users.id, row.userId))
-      .returning({ premiumUntil: users.premiumUntil })
+    const grantedRows = await executeRows<{ userId: string; premiumUntil: Date }>(sql`
+      WITH ins AS (
+        INSERT INTO tournament_prizes (period_key, user_id, rank, score, league, prize_days)
+        VALUES (${periodKey}, ${row.userId}, ${rank}, ${Number(row.score)}, ${row.league}, ${prizeDays})
+        ON CONFLICT (period_key, rank) DO NOTHING
+        RETURNING user_id, prize_days
+      )
+      UPDATE users u
+      SET premium_until = GREATEST(COALESCE(u.premium_until, now()), now())
+            + make_interval(days => (SELECT prize_days FROM ins)),
+          updated_at = now()
+      WHERE u.id = (SELECT user_id FROM ins)
+      RETURNING u.id AS "userId", u.premium_until AS "premiumUntil"
+    `)
+
+    if (grantedRows.length === 0) {
+      // Allaqachon kiritilgan (period,rank) — o'tkazib yuboramiz
+      continue
+    }
+    const granted = grantedRows[0]
 
     // Telegram Bot orqali maxsus bayramona tabriknoma jo'natish
     let notified = false

@@ -97,6 +97,10 @@ export function assertProdConfig(): void {
     if (!config.cron.secret) missing.push('CRON_SECRET')
     if (!config.auth.otpPepper) missing.push('OTP_PEPPER')
     if ((env.CLICK_SERVICE_ID || env.CLICK_MERCHANT_ID) && !env.CLICK_SECRET_KEY) missing.push('CLICK_SECRET_KEY')
+    // WS origin allowlist + CORS prod domeni (audit A3): yo'q bo'lsa octagon
+    // origin tekshiruvi FAIL-OPEN ishlaydi va CORS localhost:5173 default'ga
+    // tushadi — prod'da ikkalasi ham xavfli.
+    if (!env.ALLOWED_ORIGIN) missing.push('ALLOWED_ORIGIN')
     if (missing.length > 0) {
       throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
     }

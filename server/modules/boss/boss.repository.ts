@@ -174,19 +174,23 @@ export const bossRepository = {
                 ELSE 0 END
                ) AS amt
         FROM winners
+      ), ledger AS (
+        -- LEDGER-FIRST (audit H-5): idempotency ('boss:<bossId>:<userId>' UNIQUE)
+        -- AVVAL yoziladi, award FAQAT ledger'dan O'TGAN userlarga. Teskari tartibda
+        -- (award → ledger) statement qayta ishga tushganda balans IKKI MARTA
+        -- oshardi (claimTask bilan bir xil pattern).
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT user_id, amt, 'boss_reward', ${'boss:'} || ${String(bossId)} || ':' || user_id
+        FROM grants WHERE amt > 0
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING user_id
       ), award AS (
         INSERT INTO user_coins (user_id, balance, updated_at)
-        SELECT user_id, amt, now() FROM grants WHERE amt > 0
+        SELECT g.user_id, g.amt, now() FROM grants g
+        WHERE g.amt > 0 AND EXISTS (SELECT 1 FROM ledger l WHERE l.user_id = g.user_id)
         ON CONFLICT (user_id) DO UPDATE SET
           balance = user_coins.balance + EXCLUDED.balance,
           updated_at = now()
-        RETURNING user_id
-      ), ledger AS (
-        -- Idempotency: 'boss:<bossId>:<userId>' UNIQUE — retry'da qayta berilmaydi
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT user_id, amt, 'boss_reward', ${'boss:'} || ${String(bossId)} || ':' || user_id
-        FROM grants WHERE amt > 0 AND EXISTS (SELECT 1 FROM award a WHERE a.user_id = grants.user_id)
-        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING user_id
       ), flag AS (
         UPDATE boss_battles SET rewards_distributed = true

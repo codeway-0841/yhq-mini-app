@@ -20,6 +20,7 @@ import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { consumeOTPWithLockout } from './otp'
+import { dbRateConsumeWindow } from '../../middleware/db-rate-limiter'
 import { usersRepository } from '../users/users.repository'
 import { progressRepository } from '../progress/progress.repository'
 import { settingsRepository } from '../settings/settings.repository'
@@ -323,6 +324,10 @@ export interface LinkResponse extends AuthResponse {
   status: 'attached' | 'adopted'
 }
 
+/** Bir telefon raqamga 24 soatda yuboriladigan MAKSIMAL SMS (audit H-3 —
+ *  Eskiz har SMS uchun pul yechadi; IP aylanuvchi flood himoyasi). */
+const OTP_SMS_DAILY_CAP = 10
+
 export const authService = {
   // ── SMS OTP flow ─────────────────────────────────────────────────────────
 
@@ -336,6 +341,14 @@ export const authService = {
     const code = generateOTP()
     const codeHash = hashOTP(code)
     const expiresAt = new Date(Date.now() + 5 * 60_000) // 5 daqiqa
+
+    // 0. Kunlik per-telefon SMS cap (SMS-flood himoyasi — audit H-3): IP'ni
+    //    almashtiruvchi hujumchi bitta raqamni kun davomida bombalamasin —
+    //    har SMS Eskiz'da PUL. Atomik multi-instance counter (rate_limits).
+    const daily = await dbRateConsumeWindow(`otp:phone:${input.phone}`, OTP_SMS_DAILY_CAP, 24 * 3600)
+    if (!daily.allowed) {
+      throw new AppError(429, 'otp_daily_limit: Kunlik SMS limiti tugadi — ertaga qayta urinib ko\'ring')
+    }
 
     // 1. Atomik cooldown bilan DB'da joy olish (M-11: parallel poyga va ortiqcha SMS'ni to'sadi)
     const acquired = await authRepository.createOTPWithCooldown(input.phone, codeHash, expiresAt)
@@ -678,7 +691,15 @@ export const authService = {
 
       const created = await authRepository.createIdentity('email', input.email.toLowerCase(), userId, passwordHash, tx)
       if (!created) {
-        throw new AppError(409, 'email_taken')  // Race: tx rollback user'ni ham qaytaradi
+        // Audit H-5: neon-http transaction() IZOLYATSIYA BERMAYDI (driver
+        // stateless — db/connection.ts) — "tx rollback" izohi faqat postgres-js
+        // uchun to'g'ri. Race'da identity'siz ORPHAN user qolmasligi uchun
+        // qo'lda kompensatsiya (postgres-js'da rollback allaqachon tozalagan,
+        // idempotent DELETE ikkala yo'lda xavfsiz; FK cascade progress/settings
+        // qatorlarini ham olib ketadi).
+        await executeRows(sql`DELETE FROM users WHERE id = ${userId}`, tx)
+          .catch((e) => console.warn('[registerWithEmail] orphan cleanup failed:', e))
+        throw new AppError(409, 'email_taken')
       }
 
       // Update email field in users table

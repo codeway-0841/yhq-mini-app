@@ -107,9 +107,18 @@ router.get('/cron/daily-reminder', async (_req, res) => {
       )
     }
 
-    let sent = 0, blocked = 0, failed = 0
+    // Checkpoint-resume (audit H-6): 30s maxDuration'dan oshib function o'ldirilsa,
+    // stale-lease retry BARCHA target'larga QAYTA yuborardi (dublikat spam).
+    // Oldingi run'ning {offset, sent...} checkpoint'idan davom etamiz — har batch
+    // DB'ga yoziladi, retry faqat qolganidan boshlaydi.
+    const prevRun = await cronRepository.getRunDetails('daily-reminder', today)
+    let sent    = Number(prevRun['sent']    ?? 0)
+    let blocked = Number(prevRun['blocked'] ?? 0)
+    let failed  = Number(prevRun['failed']  ?? 0)
+    const startOffset = Math.min(Number(prevRun['offset'] ?? 0), targets.length)
+
     // Telegram limiti (~30 msg/s) uchun 20 talik batch'lar (har userga personalized matn)
-    for (let i = 0; i < targets.length; i += 20) {
+    for (let i = startOffset; i < targets.length; i += 20) {
       const batch = targets.slice(i, i + 20)
       const results = await Promise.allSettled(
         batch.map((uid) => bot.api.sendMessage(Number(uid), textFor(uid), { reply_markup: keyboard() })),
@@ -122,6 +131,9 @@ router.get('/cron/daily-reminder', async (_req, res) => {
           else failed++
         }
       }
+      await cronRepository.saveCheckpoint('daily-reminder', today, {
+        offset: i + batch.length, sent, blocked, failed,
+      })
     }
 
     const result = { date: today, targets: targets.length, sent, blocked, failed }
@@ -317,6 +329,12 @@ router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
       analyticsDeleted: result.analyticsDeleted,
       tgCodesDeleted: result.tgCodesDeleted,
       linkCodesDeleted: result.linkCodesDeleted,
+      sessionsDeleted: result.sessionsDeleted,
+      otpDeleted: result.otpDeleted,
+      emailTokensDeleted: result.emailTokensDeleted,
+      pwdTokensDeleted: result.pwdTokensDeleted,
+      loginHistoryDeleted: result.loginHistoryDeleted,
+      auditLogsDeleted: result.auditLogsDeleted,
     })
     res.json({ ok: true, ...result })
   } catch (err) {

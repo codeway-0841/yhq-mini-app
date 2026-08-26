@@ -29,6 +29,20 @@ export function errorHandler(
     return
   }
 
+  // Body-parser (express.json) xatolari — CLIENT xatosi, server xatosi EMAS
+  // (audit B4): avval ular 500 va Sentry spam bo'lardi (har buzilgan JSON spam =
+  // alert shovqini). Endi 4xx + Sentry'siz.
+  const type = (err as { type?: string }).type
+  if (type === 'entity.too.large') {
+    res.status(413).json({ error: "So'rov hajmi juda katta" })
+    return
+  }
+  if (typeof type === 'string' && type.startsWith('entity.')) {
+    // entity.parse.failed (buzilgan JSON), entity.too... va boshqalar
+    res.status(400).json({ error: "So'rov tanasi formati noto'g'ri" })
+    return
+  }
+
   // Unexpected error — log full stack, hide internals from client
   console.error('[unhandled error]', err)
   Sentry.captureException(err)

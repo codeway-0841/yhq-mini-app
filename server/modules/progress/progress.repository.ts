@@ -206,14 +206,17 @@ export const progressRepository = {
         RETURNING id, xp
       ), q_write AS (
         -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
-        -- correct user'ning ushbu savol bo'yicha joriy holatini aks ettiradi.
+        -- correct = "qachonlardir TO'G'RI yechilgan" MONOTON flag (schema izohi:
+        -- bir marta true → orqaga qaytmaydi). Aks holda xato qayta-javob avvalgi
+        -- true'ni false'ga tushirib, keyingi to'g'ri javob anti-farm gate'dan
+        -- qaytadan o'tib +1 coin mint qilardi (audit M).
         INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at, first_ms, last_ms)
         SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now(),
                ${elapsedMs}::int, ${elapsedMs}::int
         WHERE ${questionId}::int IS NOT NULL
           AND EXISTS (SELECT 1 FROM prog)
         ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
-          SET correct = EXCLUDED.correct,
+          SET correct = (progress_questions.correct OR EXCLUDED.correct),
               answered_at = now(),
               -- first_ms FAQAT birinchi urinishda yoziladi (bo'sh bo'lsa to'ldiriladi)
               first_ms = COALESCE(progress_questions.first_ms, EXCLUDED.first_ms),
