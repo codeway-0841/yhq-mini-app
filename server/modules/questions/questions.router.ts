@@ -26,17 +26,17 @@ const QuestionsQuery = z.object({
 })
 
 /**
- * AUTH-ONLY kontent (audit 2026-08-26: /questions + /topics public'dan olindi) —
- * CDN public cache ZIYO: edge cache auth cheklovini aylanib o'tardi (URL-keyed
- * cache birinchi authed user javobini anonim so'rovga ham berardi). Endi
- * kontent faqat authed userga; client session'da bir marta yuklaydi
- * (useQuestionsStore), server providerlar in-memory pool — DB bosimi oshmaydi.
+ * Public content — CDN edge cache (10 min) + browser cache (5 min).
+ * Savol matni ommaviy kontent (correctAnswer strip qilinadi) — asl IP server'da
+ * (javoblar + izohlar). CDN haqiqiy so'rovlarning ko'pini yutadi, origin'ga esa
+ * faqat CDN-miss tushadi — IP cap quyida shuning uchun real user'larga tegmaydi.
  */
-const CONTENT_CACHE = 'private, no-store'
+const CONTENT_CACHE = 'public, max-age=300, s-maxage=600, stale-while-revalidate=3600'
 
-/** Kuniga bir user necha marta BUTUN bankni qayta tortishi mumkin (audit:
- *  massa-yig'ish signal — normal user client cache tufayli 1 marta yuklaydi). */
-const FULL_BANK_DAILY_CAP = 5
+/** Kuniga bir IP dan necha marta BUTUN bank (topicId'siz) tortish mumkin —
+ *  massa-yig'ish SIgnali (script'dan yuzlab refetch). Normal user CDN + client
+ *  session cache tufayli origin'ga deyarli tushmaydi → limit urmaydi. */
+const FULL_BANK_DAILY_CAP = 20
 
 /**
  * Public savol payload'i TO'G'RI JAVOBSIZ — correctAnswer faqat serverda
@@ -65,26 +65,26 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   }
   const { topicId, subject } = parsed.data
 
-  // Massa-yig'ish himoyasi (audit): BUTUN bankni (topicId'siz) bir user kuniga
-  // FULL_BANK_DAILY_CAP martadan ko'p tortishi — shubhali scraping alomati.
-  // Limit oshsa: 429 + audit_logs 'questions_fullbank_abuse' + Sentry signal.
-  // Dev/test'da (auth enforce EMAS) o'tkaziladi.
-  const userId = (req as { userId?: string }).userId
-  if (isAuthEnforced() && userId && !topicId) {
-    const window = await dbRateConsumeWindow(`qbank:${userId}`, FULL_BANK_DAILY_CAP, 24 * 3600)
+  // Massa-yig'ish SIgnali (audit): BUTUN bankni (topicId'siz) bir IP dan kuniga
+  // FULL_BANK_DAILY_CAP martadan ko'p tortish — skript-refetch alomati. Normal
+  // userlar CDN'dan oladi (origin'ga tushmaydi) → limit ularga tegmaydi.
+  // userId bo'lsa (best-effort auth resolve) audit log'da ham yoziladi.
+  if (isAuthEnforced() && !topicId) {
+    const userId = (req as { userId?: string }).userId
+    const ip = req.ip ?? 'unknown'
+    const window = await dbRateConsumeWindow(`qbank:ip:${ip}`, FULL_BANK_DAILY_CAP, 24 * 3600)
     if (!window.allowed) {
-      // Repeat-offender kuzatuvi (7 kunlik oyna): bitta kalendariy kunlik chekka
-      // emas, tizimli pattern'ni admin ko'rsin — 3+ overage = scrape shubhasi.
-      const abuse = await dbRateConsumeWindow(`qbank-abuse:${userId}`, 3, 7 * 24 * 3600)
+      const abuse = await dbRateConsumeWindow(`qbank-abuse:ip:${ip}`, 3, 7 * 24 * 3600)
       void authRepository.createAuditLog({
         userId,
         action: 'questions_fullbank_abuse',
         resourceType: 'question_bank',
-        changes: { count: window.count, cap: FULL_BANK_DAILY_CAP, abuseCount7d: abuse.count, repeatOffender: !abuse.allowed },
+        changes: { ip, count: window.count, cap: FULL_BANK_DAILY_CAP, abuseCount7d: abuse.count, repeatOffender: !abuse.allowed },
+        ipAddress: ip,
       }).catch(() => {})
       Sentry.captureMessage('questions full-bank fetch abuse', {
         level: !abuse.allowed ? 'error' : 'warning',
-        tags: { userId, count: window.count, abuseCount7d: abuse.count },
+        tags: { ip, userId: userId ?? 'anon', count: window.count, abuseCount7d: abuse.count },
       })
       res.status(429).json({ error: 'too_many_requests', retryAfterSeconds: 86_400 })
       return

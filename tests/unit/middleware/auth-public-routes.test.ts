@@ -67,9 +67,10 @@ describe('auth.middleware — public route allowlist (C1)', () => {
       expect(isPublicAuthGet(req('GET', `/${p}`)), `GET /${p} public bo'lmasin`).toBe(false)
     }
     expect(isPublicGet(req('GET', '/auth/me'))).toBe(false)
-    // Audit 2026-08-26: savollar banki anonim yig'ishdan himoyalangan — auth MAJBURIY
-    expect(isPublicGet(req('GET', '/api/questions'))).toBe(false)
-    expect(isPublicGet(req('GET', '/api/topics'))).toBe(false)
+    // 2026-08-26 qayta qaror: savollar PUBLIC (CDN tezlik) — himoya IP-cap'da.
+    // (router-relative path — middleware /api ostida mount qilinadi)
+    expect(isPublicGet(req('GET', '/questions'))).toBe(true)
+    expect(isPublicGet(req('GET', '/topics'))).toBe(true)
   })
 
   it('traversal/encoding bilan public-list aylanib o\'tilmaydi', () => {

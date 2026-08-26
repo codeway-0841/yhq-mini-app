@@ -59,14 +59,16 @@ function normalizePath(path: string): string | null {
 
 /**
  * Public read-only content — no per-user data, safe to cache on the CDN.
- * (Audit 2026-08-26: savollar/topiklar PUBLIC'dan CHIQARILDI — massa-yig'ish
- * himoyasi; faqat umummazmu (dashboard summary) va avatar ochiq qoladi.)
+ * Questions/topics are identical for every user, so auth is NOT required.
+ * This lets Vercel's CDN serve them from the edge (huge DB-load win).
+ * Massa-yig'ish himoyasi esa route qatlamida (IP limit + abuse flag).
  */
-// Diqqat (audit: content protection): 'questions'/'topics' RO'YXATDAN
-// CHIQARILDI — savollar banki anonim massa-yig'ishdan himoyalanadi: endi
-// faqat authed user'ga ochiq (scraper avval akkaunt yaratishi kerak + per-user
-// kunlik limit + abuse flagging — questions.router.ts).
-const PUBLIC_GET = new Set(['dashboard',
+// 'questions'/'topics' PUBLIC (2026-08-26 qayta qaror): savol matni davlat
+// imtihon kontenti (ommaviy) — himoyaga muhtoj asl narsalar correctAnswer
+// (client'ga umuman kirmaydi) va izohlar (post-answer gate). CDN edge cache
+// (tezlik+arzon) muhimroq; massa-yig'ish esa IP-rate-limit + abuse-flagging
+// bilan cheklanadi (questions.router.ts).
+const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard',
   // 'avatar/:userId' — public profil rasmi (leaderboard/duel <img src> auth
   // header yubora olmaydi; rasm user O'ZI global ko'rsatish uchun yuklagan)
   'avatar',
