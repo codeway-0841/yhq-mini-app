@@ -5,6 +5,7 @@ import { X, Search, ChevronLeft, TrafficCone, Gamepad2, Layers, BookOpen, Shield
 import { signCategories, getSignsByCategory, searchSigns, type RoadSign, type SignCategory } from '../../content/signs'
 import { rulesChapters } from '../../content/rules'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
+import { useAppStore } from '../../shared/store/useAppStore'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 
 function renderBoldText(str: string) {
@@ -21,9 +22,15 @@ function renderBoldText(str: string) {
   })
 }
 
-function FormattedDescription({ text }: { text: string }) {
+function FormattedDescription({ text, lang }: { text: string; lang: 'uz' | 'ru' }) {
   if (!text) {
-    return <p className="text-pmuted text-center">Ushbu belgi bo'yicha qo'shimcha ma'lumot mavjud emas.</p>
+    return (
+      <p className="text-pmuted text-center">
+        {lang === 'ru'
+          ? 'Дополнительная информация по этому знаку отсутствует.'
+          : "Ushbu belgi bo'yicha qo'shimcha ma'lumot mavjud emas."}
+      </p>
+    )
   }
   const paragraphs = text.split(/\n\s*\n/)
   return (
@@ -47,7 +54,12 @@ function FormattedDescription({ text }: { text: string }) {
   )
 }
 
-function SignModal({ sign, onClose }: { sign: RoadSign; onClose: () => void }) {
+function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => void; lang: 'uz' | 'ru' }) {
+  const isRu = lang === 'ru'
+  const signName = isRu ? (sign.nameRu || sign.name) : sign.name
+  const signDesc = isRu ? (sign.descriptionRu || sign.description) : sign.description
+  const legalRef = isRu ? `ПДД Приложение 1 ${sign.code}` : sign.legalRef
+
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title">
       <div
@@ -62,41 +74,43 @@ function SignModal({ sign, onClose }: { sign: RoadSign; onClose: () => void }) {
           <button
             onClick={onClose}
             className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
-            aria-label="Yopish"
+            aria-label={isRu ? 'Закрыть' : 'Yopish'}
           >
             <X size={16} />
           </button>
         </div>
         <div className="w-40 h-40 mx-auto rounded-container bg-white/95 border border-pline shadow-inner flex items-center justify-center mb-4 p-3">
           {sign.image ? (
-            <img src={sign.image} alt={sign.name} className="w-full h-full object-contain" />
+            <img src={sign.image} alt={signName} className="w-full h-full object-contain" />
           ) : (
             <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />
           )}
         </div>
         <h3 id="sign-modal-title" className="text-center font-display font-semibold text-lg text-pfg mb-1">
-          {sign.name}
+          {signName}
         </h3>
-        <p className="text-center text-xs text-pmuted mb-4 font-medium">{sign.legalRef}</p>
+        <p className="text-center text-xs text-pmuted mb-4 font-medium">{legalRef}</p>
         <div className="bg-pcanvas/60 border border-pline p-4 rounded-container mb-5">
-          <FormattedDescription text={sign.description} />
+          <FormattedDescription text={signDesc} lang={lang} />
         </div>
         <button
           onClick={onClose}
           className="w-full py-3.5 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all"
         >
-          Yopish
+          {isRu ? 'Закрыть' : 'Yopish'}
         </button>
       </div>
     </DialogOverlay>
   )
 }
 
-function CategoryGrid({ onSelect }: { onSelect: (cat: SignCategory) => void }) {
+function CategoryGrid({ onSelect, lang }: { onSelect: (cat: SignCategory) => void; lang: 'uz' | 'ru' }) {
+  const isRu = lang === 'ru'
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
       {signCategories.map((cat) => {
         const Icon = getSignCategoryIcon(cat.id)
+        const catName = isRu ? (cat.nameRu || cat.name) : cat.name
         return (
           <button
             key={cat.id}
@@ -111,14 +125,16 @@ function CategoryGrid({ onSelect }: { onSelect: (cat: SignCategory) => void }) {
               }}
             >
               {cat.image ? (
-                <img src={cat.image} alt={cat.name} className="w-8 h-8 object-contain" />
+                <img src={cat.image} alt={catName} className="w-8 h-8 object-contain" />
               ) : (
                 <Icon size={22} strokeWidth={1.75} style={{ color: cat.color }} />
               )}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold leading-tight text-pfg truncate">{cat.name}</p>
-              <p className="text-xs text-pmuted mt-1 font-medium">{cat.count} ta belgi</p>
+              <p className="text-sm font-semibold leading-tight text-pfg truncate">{catName}</p>
+              <p className="text-xs text-pmuted mt-1 font-medium">
+                {cat.count} {isRu ? 'знаков' : 'ta belgi'}
+              </p>
             </div>
           </button>
         )
@@ -131,29 +147,85 @@ function SignsGrid({
   category,
   onBack,
   onSignSelect,
+  lang,
 }: {
   category: SignCategory
   onBack: () => void
   onSignSelect: (sign: RoadSign) => void
+  lang: 'uz' | 'ru'
 }) {
   const signs = getSignsByCategory(category.id)
+  const isRu = lang === 'ru'
+  const categoryName = isRu ? (category.nameRu || category.name) : category.name
+
   return (
     <div>
       <div className="flex items-center gap-3 mb-4">
         <button
           onClick={onBack}
-          aria-label="Orqaga"
+          aria-label={isRu ? 'Назад' : 'Orqaga'}
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
-        <h2 className="text-base font-semibold text-pfg truncate">{category.name}</h2>
+        <h2 className="text-base font-semibold text-pfg truncate">{categoryName}</h2>
         <span className="text-xs text-pmuted ml-auto bg-psurface border border-pline px-2.5 py-1 rounded-control flex-shrink-0">
-          {category.count} ta
+          {category.count} {isRu ? 'знаков' : 'ta'}
         </span>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
-        {signs.map((sign) => (
+        {signs.map((sign) => {
+          const signName = isRu ? (sign.nameRu || sign.name) : sign.name
+          return (
+            <button
+              key={sign.id}
+              onClick={() => onSignSelect(sign)}
+              className="flex flex-col items-center rounded-container border border-pline bg-psurface p-2.5 active:scale-95 transition-transform hover:border-plineStrong shadow-xs text-center"
+            >
+              <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
+                {sign.image ? (
+                  <img src={sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
+                ) : (
+                  <TrafficCone size={24} strokeWidth={1.5} className="text-stone-400" />
+                )}
+              </div>
+              <span className="text-[11px] font-bold text-pprimary mb-0.5">{sign.code}</span>
+              <span className="text-[10px] text-pmuted leading-tight line-clamp-2">
+                {signName.replace(/^\d+(\.\d+)*\.\s*/, '')}
+              </span>
+            </button>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+/** Qidiruv natijalari */
+function SearchGrid({
+  query,
+  onSignSelect,
+  lang,
+}: {
+  query: string
+  onSignSelect: (sign: RoadSign) => void
+  lang: 'uz' | 'ru'
+}) {
+  const results = useMemo(() => searchSigns(query), [query])
+  const isRu = lang === 'ru'
+
+  if (results.length === 0) {
+    return (
+      <p className="text-center text-sm text-pmuted py-10">
+        {isRu ? 'Знаки не найдены' : 'Hech qanday belgi topilmadi'}
+      </p>
+    )
+  }
+  return (
+    <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+      {results.map((sign) => {
+        const signName = isRu ? (sign.nameRu || sign.name) : sign.name
+        return (
           <button
             key={sign.id}
             onClick={() => onSignSelect(sign)}
@@ -161,57 +233,26 @@ function SignsGrid({
           >
             <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
               {sign.image ? (
-                <img src={sign.image} alt={sign.name} className="w-full h-full object-contain" loading="lazy" />
+                <img src={sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
               ) : (
                 <TrafficCone size={24} strokeWidth={1.5} className="text-stone-400" />
               )}
             </div>
             <span className="text-[11px] font-bold text-pprimary mb-0.5">{sign.code}</span>
             <span className="text-[10px] text-pmuted leading-tight line-clamp-2">
-              {sign.name.replace(/^\d+(\.\d+)*\.\s*/, '')}
+              {signName.replace(/^\d+(\.\d+)*\.\s*/, '')}
             </span>
           </button>
-        ))}
-      </div>
-    </div>
-  )
-}
-
-/** Qidiruv natijalari */
-function SearchGrid({ query, onSignSelect }: { query: string; onSignSelect: (sign: RoadSign) => void }) {
-  const results = useMemo(() => searchSigns(query), [query])
-
-  if (results.length === 0) {
-    return <p className="text-center text-sm text-pmuted py-10">Hech qanday belgi topilmadi</p>
-  }
-  return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
-      {results.map((sign) => (
-        <button
-          key={sign.id}
-          onClick={() => onSignSelect(sign)}
-          className="flex flex-col items-center rounded-container border border-pline bg-psurface p-2.5 active:scale-95 transition-transform hover:border-plineStrong shadow-xs text-center"
-        >
-          <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
-            {sign.image ? (
-              <img src={sign.image} alt={sign.name} className="w-full h-full object-contain" loading="lazy" />
-            ) : (
-              <TrafficCone size={24} strokeWidth={1.5} className="text-stone-400" />
-            )}
-          </div>
-          <span className="text-[11px] font-bold text-pprimary mb-0.5">{sign.code}</span>
-          <span className="text-[10px] text-pmuted leading-tight line-clamp-2">
-            {sign.name.replace(/^\d+(\.\d+)*\.\s*/, '')}
-          </span>
-        </button>
-      ))}
+        )
+      })}
     </div>
   )
 }
 
 /** Qoidalar va Jarimalar bo'limi */
-function RulesSection({ query }: { query: string }) {
+function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
   const [expandedChapter, setExpandedChapter] = useState<number | null>(1)
+  const isRu = lang === 'ru'
 
   const filteredChapters = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -229,7 +270,11 @@ function RulesSection({ query }: { query: string }) {
   }, [query])
 
   if (filteredChapters.length === 0) {
-    return <p className="text-center text-sm text-pmuted py-10">Hech narsa topilmadi</p>
+    return (
+      <p className="text-center text-sm text-pmuted py-10">
+        {isRu ? 'Ничего не найдено' : 'Hech narsa topilmadi'}
+      </p>
+    )
   }
 
   return (
@@ -255,7 +300,9 @@ function RulesSection({ query }: { query: string }) {
                 </div>
                 <div>
                   <h3 className="text-[14px] font-semibold text-pfg leading-snug">{ch.title}</h3>
-                  <p className="text-[11px] text-pmuted">{ch.articles.length} ta band</p>
+                  <p className="text-[11px] text-pmuted">
+                    {ch.articles.length} {isRu ? 'пунктов' : 'ta band'}
+                  </p>
                 </div>
               </div>
               {isExpanded ? (
@@ -274,7 +321,7 @@ function RulesSection({ query }: { query: string }) {
                         isFines ? 'bg-pwarning/15 text-pwarning border border-pwarning/30' : 'bg-pprimary/10 text-pprimary'
                       }`}
                     >
-                      {art.id.startsWith('J-') ? art.id : `${art.id}-band`}
+                      {art.id.startsWith('J-') ? art.id : (isRu ? `Пункт ${art.id}` : `${art.id}-band`)}
                     </span>
                     <p className="text-[13px] text-pfg leading-relaxed whitespace-pre-wrap">{art.text}</p>
                   </div>
@@ -294,6 +341,8 @@ export default function Belgilar() {
   const [selectedSign, setSelectedSign]         = useState<RoadSign | null>(null)
   const [query, setQuery]                       = useState('')
   const navigate = useNavigate()
+  const lang = useAppStore((s) => s.settings.language)
+  const isRu = lang === 'ru'
 
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
@@ -304,23 +353,25 @@ export default function Belgilar() {
           <div className="flex items-center gap-2 mb-4">
             <button
               onClick={() => goBack(navigate)}
-              aria-label="Orqaga"
+              aria-label={isRu ? 'Назад' : 'Orqaga'}
               className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <ChevronLeft size={20} strokeWidth={1.75} />
             </button>
-            <h1 className="flex-1 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">Yo'l qoidalari</h1>
+            <h1 className="flex-1 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">
+              {isRu ? 'Правила и знаки' : "Yo'l qoidalari"}
+            </h1>
             <button
               onClick={() => navigate('/belgilar-oyini')}
               className="h-[34px] px-3 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1.5 text-[12px]"
             >
-              <Gamepad2 size={13} strokeWidth={1.75} /> O'yin
+              <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
             </button>
             <button
               onClick={() => navigate('/flashcards')}
               className="h-[34px] px-3 rounded-control bg-psurface border border-pline text-pfg font-semibold hover:bg-plineStrong active:scale-[0.98] transition-all flex items-center gap-1.5 text-[12px]"
             >
-              <Layers size={13} strokeWidth={1.75} /> Kartochkalar
+              <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
             </button>
           </div>
 
@@ -335,7 +386,7 @@ export default function Belgilar() {
                 activeTab === 'signs' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
-              Yo'l belgilari ({totalSignsCount})
+              {isRu ? `Дорожные знаки (${totalSignsCount})` : `Yo'l belgilari (${totalSignsCount})`}
             </button>
             <button
               onClick={() => {
@@ -346,7 +397,7 @@ export default function Belgilar() {
                 activeTab === 'rules' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
-              Qoidalar & Jarimalar ({rulesChapters.length})
+              {isRu ? `Правила и штрафы (${rulesChapters.length})` : `Qoidalar & Jarimalar (${rulesChapters.length})`}
             </button>
           </div>
 
@@ -358,14 +409,18 @@ export default function Belgilar() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder={
                 activeTab === 'signs'
-                  ? 'Belgi qidirish (nomi yoki 3.27)...'
-                  : 'Qoida yoki jarima qidirish...'
+                  ? (isRu ? 'Поиск знака (название или 3.27)...' : 'Belgi qidirish (nomi yoki 3.27)...')
+                  : (isRu ? 'Поиск правила или штрафа...' : 'Qoida yoki jarima qidirish...')
               }
-              aria-label="Qidirish"
+              aria-label={isRu ? 'Поиск' : 'Qidirish'}
               className="flex-1 bg-transparent text-sm text-pfg outline-none placeholder:text-pmuted"
             />
             {query && (
-              <button onClick={() => setQuery('')} aria-label="Tozalash" className="text-pmuted hover:text-pfg">
+              <button
+                onClick={() => setQuery('')}
+                aria-label={isRu ? 'Очистить' : 'Tozalash'}
+                className="text-pmuted hover:text-pfg"
+              >
                 <X size={14} />
               </button>
             )}
@@ -373,12 +428,12 @@ export default function Belgilar() {
 
           {activeTab === 'signs' ? (
             query ? (
-              <SearchGrid query={query} onSignSelect={setSelectedSign} />
+              <SearchGrid query={query} onSignSelect={setSelectedSign} lang={lang} />
             ) : (
-              <CategoryGrid onSelect={setSelectedCategory} />
+              <CategoryGrid onSelect={setSelectedCategory} lang={lang} />
             )
           ) : (
-            <RulesSection query={query} />
+            <RulesSection query={query} lang={lang} />
           )}
         </>
       )}
@@ -388,10 +443,11 @@ export default function Belgilar() {
           category={selectedCategory}
           onBack={() => setSelectedCategory(null)}
           onSignSelect={setSelectedSign}
+          lang={lang}
         />
       )}
       {selectedSign && (
-        <SignModal sign={selectedSign} onClose={() => setSelectedSign(null)} />
+        <SignModal sign={selectedSign} onClose={() => setSelectedSign(null)} lang={lang} />
       )}
     </div>
   )

@@ -35,6 +35,10 @@ function FormulaCard({ item, fav, onFav, lang }: {
 }) {
   const s = getSubject(item.subjectId)
   const Icon = s.icon
+  const isRu = lang === 'ru'
+  const title = isRu ? item.titleRu : item.title
+  const note = isRu ? (item.noteRu ?? item.note) : item.note
+
   return (
     <div className="rounded-container border border-pline bg-pcard rounded-container p-3.5 relative">
       <button type="button" onClick={(e) => { e.stopPropagation(); onFav() }}
@@ -45,15 +49,15 @@ function FormulaCard({ item, fav, onFav, lang }: {
       <div className="flex items-center gap-1.5 mb-2 pr-6">
         <Icon size={13} style={{ color: s.color }} />
         <span className="text-[10px] font-semibold text-psubtle truncate">
-          {lang === 'ru' ? item.topicNameRu : item.topicName}
+          {isRu ? item.topicNameRu : item.topicName}
         </span>
       </div>
-      <p className="text-[12px] font-semibold text-pmuted leading-snug">{item.title}</p>
+      <p className="text-[12px] font-semibold text-pmuted leading-snug">{title}</p>
       <p className="text-[13px] font-semibold leading-relaxed mt-1 break-words"
         style={{ color: s.color, fontFamily: 'ui-monospace, monospace' }}>
         {item.formula}
       </p>
-      {item.note && <p className="text-[10px] text-psubtle mt-1">{item.note}</p>}
+      {note && <p className="text-[10px] text-psubtle mt-1">{note}</p>}
     </div>
   )
 }
@@ -87,9 +91,12 @@ export default function FormulasPage() {
       const q = query.trim().toLowerCase()
       return ALL.filter((x) =>
         x.title.toLowerCase().includes(q) ||
+        (x.titleRu && x.titleRu.toLowerCase().includes(q)) ||
         x.formula.toLowerCase().includes(q) ||
         x.topicName.toLowerCase().includes(q) ||
-        x.topicNameRu.toLowerCase().includes(q)
+        x.topicNameRu.toLowerCase().includes(q) ||
+        (x.note && x.note.toLowerCase().includes(q)) ||
+        (x.noteRu && x.noteRu.toLowerCase().includes(q))
       )
     }
     return ALL.filter((x) => x.subjectId === subject.subjectId &&

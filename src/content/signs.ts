@@ -1,4 +1,5 @@
 import signsData from './signs.yhq.json'
+import signsDataRu from './signs.ru.yhq.json'
 
 export interface RoadSignContent {
   type: string
@@ -12,9 +13,12 @@ export interface RoadSign {
   categoryId: string
   order: number
   name: string
+  nameRu?: string
   shortName: string
+  shortNameRu?: string
   image: string
   description: string
+  descriptionRu?: string
   legalRef: string
   content: RoadSignContent[]
 }
@@ -24,6 +28,7 @@ export interface SignCategory {
   groupId: number
   code: string
   name: string
+  nameRu?: string
   count: number
   color: string
   emoji: string
@@ -51,6 +56,16 @@ const rawSigns = signsData.signs as Array<{
   image: string
   content: RoadSignContent[]
 }>
+
+const ruGroupsMap = new Map<number, string>(
+  ((signsDataRu as { groups?: Array<{ id: number; name: string }> }).groups || []).map((g) => [g.id, g.name])
+)
+const ruSignsMap = new Map<string, { name: string; content: RoadSignContent[] }>(
+  ((signsDataRu as { signs?: Array<{ code: string; name: string; content: RoadSignContent[] }> }).signs || []).map((s) => [
+    s.code,
+    { name: s.name, content: s.content || [] },
+  ])
+)
 
 function resolveImage(img: string): string {
   if (!img) return ''
@@ -95,6 +110,11 @@ const ALL_SIGNS: RoadSign[] = rawSigns.map((s) => {
   const meta = GROUP_ID_TO_CAT_ID[s.groupId] ?? { id: String(s.groupId), color: '#37718e', emoji: '📌' }
   const rawDesc = Array.isArray(s.content) ? s.content.map((c) => c.value).join('\n\n') : ''
   const desc = cleanSignDescription(rawDesc)
+
+  const ruData = ruSignsMap.get(s.code)
+  const ruRawDesc = ruData && Array.isArray(ruData.content) ? ruData.content.map((c) => c.value).join('\n\n') : ''
+  const descRu = ruRawDesc ? cleanSignDescription(ruRawDesc) : undefined
+
   return {
     id: `sign-${s.id}`,
     code: s.code,
@@ -102,9 +122,12 @@ const ALL_SIGNS: RoadSign[] = rawSigns.map((s) => {
     categoryId: meta.id,
     order: s.order,
     name: s.name,
+    nameRu: ruData?.name,
     shortName: s.name,
+    shortNameRu: ruData?.name,
     image: resolveImage(s.image),
     description: desc,
+    descriptionRu: descRu,
     legalRef: `YHQ 1-ilova ${s.code}`,
     content: s.content || [],
   }
@@ -130,6 +153,7 @@ export const signCategories: readonly SignCategory[] = Object.freeze(
       groupId: g.id,
       code: g.code,
       name: g.name,
+      nameRu: ruGroupsMap.get(g.id),
       count: catSigns.length,
       color: meta.color,
       emoji: meta.emoji,
@@ -161,6 +185,8 @@ export function searchSigns(query: string): RoadSign[] {
     (s) =>
       s.code.toLowerCase().includes(q) ||
       s.name.toLowerCase().includes(q) ||
-      s.description.toLowerCase().includes(q)
+      (s.nameRu && s.nameRu.toLowerCase().includes(q)) ||
+      s.description.toLowerCase().includes(q) ||
+      (s.descriptionRu && s.descriptionRu.toLowerCase().includes(q))
   )
 }
