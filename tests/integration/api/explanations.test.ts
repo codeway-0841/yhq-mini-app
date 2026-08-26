@@ -23,7 +23,9 @@ describe('GET /api/questions/:questionId/explanation', () => {
     expect(res.body.questionId).toBe(q.id)
     expect(res.body.text).toBeTruthy()
     expect(typeof res.body.text).toBe('string')
-    expect(res.headers['cache-control']).toContain('public')
+    // Post-answer gate (audit H-4): izoh endi PUBLIC CDN-cache EMAS —
+    // per-user 'private, no-store' (prod'da faqat javob bergan user'ga).
+    expect(res.headers['cache-control']).toContain('private, no-store')
   })
 
   it('ru tilda statik tushuntirish qaytaradi', async () => {

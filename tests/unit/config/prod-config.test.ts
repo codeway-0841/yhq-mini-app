@@ -8,7 +8,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 const KEYS = [
   'NODE_ENV', 'BOT_TOKEN', 'BOT_WEBHOOK_SECRET', 'CRON_SECRET', 'OTP_PEPPER',
   'CLICK_SERVICE_ID', 'CLICK_MERCHANT_ID', 'CLICK_SECRET_KEY',
-  'DATABASE_URL',
+  'DATABASE_URL', 'ALLOWED_ORIGIN',
 ] as const
 
 const saved = new Map<string, string | undefined>()
@@ -49,6 +49,7 @@ describe('server/config assertProdConfig (audit fix)', () => {
     process.env['BOT_TOKEN'] = 'x'
     process.env['CRON_SECRET'] = 'x'
     process.env['OTP_PEPPER'] = '0123456789abcdef'
+    process.env['ALLOWED_ORIGIN'] = 'https://app.example.com'
     const assert = await boot()
     expect(() => assert()).not.toThrow()
   })
@@ -79,9 +80,21 @@ describe('server/config assertProdConfig (audit fix)', () => {
     process.env['BOT_TOKEN'] = 'x'
     process.env['CRON_SECRET'] = 'x'
     process.env['OTP_PEPPER'] = '0123456789abcdef'
+    process.env['ALLOWED_ORIGIN'] = 'https://app.example.com'
     delete process.env['BOT_WEBHOOK_SECRET']
     const assert = await boot()
     expect(() => assert()).not.toThrow()
+  })
+
+  it('production: ALLOWED_ORIGIN yo\'q bo\'lsa boot qilmaydi (audit A3 — WS origin fail-open himoyasi)', async () => {
+    process.env['NODE_ENV'] = 'production'
+    process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
+    process.env['BOT_TOKEN'] = 'x'
+    process.env['CRON_SECRET'] = 'x'
+    process.env['OTP_PEPPER'] = '0123456789abcdef'
+    delete process.env['ALLOWED_ORIGIN']
+    const assert = await boot()
+    expect(() => assert()).toThrowError(/ALLOWED_ORIGIN/)
   })
 })
 
