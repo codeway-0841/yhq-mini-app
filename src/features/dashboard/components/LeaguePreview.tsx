@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
-import { api } from '../../../shared/api'
+import { getLeaderboardPreview, peekLeaderboardPreview, type LeaderboardPreviewEntry } from '../../../shared/lib/leaderboard-cache'
 import { useT } from '../../../shared/i18n'
 import { Skeleton } from '../../../shared/components/ui/skeleton'
 import { cn } from '../../../shared/lib/cn'
@@ -10,15 +10,17 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
   lang: 'uz' | 'ru'; onSeeAll: () => void; userId: string | undefined
 }) {
   const tt = useT(lang)
-  const [entries, setEntries] = useState<{ rank: number; name: string; score: number; isYou: boolean }[]>([])
+  const [entries, setEntries] = useState<LeaderboardPreviewEntry[]>(() => peekLeaderboardPreview() ?? [])
   // "Yuklanmoqda" va "bo'sh" holatlari AJRATILDI: ilgari ikkalasi ham null
   // qaytarardi va ma'lumot kelganda sahifa sakrardi (layout shift).
-  const [loading, setLoading] = useState(true)
+  // SWR (audet tezligi): keshda bor ma'lumot DARHOL chiziladi, yangilanish
+  // orqa fonda — qayta ochilganda skelet KO'RINMAYDI.
+  const [loading, setLoading] = useState(() => peekLeaderboardPreview() === null)
 
   useEffect(() => {
     let alive = true
-    api.getLeaderboard(3, userId)
-      .then((r) => { if (alive) setEntries(r.slice(0, 3).map((e) => ({ rank: e.rank, name: e.name, score: e.score, isYou: e.isYou }))) })
+    getLeaderboardPreview(userId)
+      .then((r) => { if (alive) setEntries(r) })
       .catch(() => {})
       .finally(() => { if (alive) setLoading(false) })
     return () => { alive = false }

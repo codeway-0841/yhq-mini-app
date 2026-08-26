@@ -6,6 +6,7 @@ import { useSubjectStore } from './shared/store/useSubjectStore'
 import { ensureAccountOwner, resetAccountToLoggedOut } from './shared/store/account'
 import { api } from './shared/api'
 import { flushOutbox } from './shared/lib/outbox'
+import { prefetchLeaderboardPreview } from './shared/lib/leaderboard-cache'
 import { track } from './shared/lib/analytics'
 import {
   getSessionToken, SESSION_EXPIRED_EVENT, SESSION_CHANGED_EVENT,
@@ -279,6 +280,9 @@ export default function App() {
             useAppStore.getState().hydrateFromProfile(data)
             await loadQuestions(data.settings.language).catch(() => {})
             void flushOutbox(verifiedId)
+            // Dashboard preview skeletsiz ochilishi uchun kesh oldindan isitiladi
+            // (fire-and-forget — boot'ni sekinlashtirmaydi)
+            prefetchLeaderboardPreview(data.user.id)
           } finally {
             // Xato bo'lsa ham splash'dan chiqishi shart
             useAppStore.setState({ initialized: true })

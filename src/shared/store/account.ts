@@ -16,6 +16,7 @@ import { useAppStore }         from './useAppStore'
 import { useDailyStore }       from './useDailyStore'
 import { useAdaptiveStore }    from './useAdaptiveStore'
 import { useTestSessionStore } from './useTestSessionStore'
+import { invalidateLeaderboardCache } from '../lib/leaderboard-cache'
 
 /**
  * Account-scoped persist kalitlari — account switch'da disk'dan ham o'chiriladi.
@@ -62,6 +63,7 @@ export function resetAccountState(): void {
   useDailyStore.getState().resetAccount()
   useAdaptiveStore.getState().resetAll()
   useTestSessionStore.getState().clear()
+  invalidateLeaderboardCache() // isYou bayroqlari yangi account'niki bo'lsin
   if (typeof localStorage !== 'undefined') {
     try {
       for (const key of ACCOUNT_STORAGE_KEYS) {

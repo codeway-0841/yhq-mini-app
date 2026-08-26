@@ -18,8 +18,9 @@ import {
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import {
-  api, avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly, type TournamentSeason,
+  avatarSrcFor, type LeaderboardEntry as Entry, type LeagueWeekly, type TournamentSeason,
 } from '../../shared/api'
+import { leaderboardPageCaches } from '../../shared/lib/leaderboard-cache'
 import { getAvatarFrame } from '../../shared/config/avatar-frames'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -169,18 +170,20 @@ export default function LeaderboardPage() {
   const tt = useT(settings.language)
 
   const [tab, setTab] = useState<'daily' | 'weekly' | 'monthly'>('daily')
-  const [dailyEntries, setDailyEntries]     = useState<Entry[] | null>(null)
-  const [weekly, setWeekly]                 = useState<LeagueWeekly | null>(null)
-  const [monthlyEntries, setMonthlyEntries] = useState<Entry[] | null>(null)
-  const [seasons, setSeasons]               = useState<TournamentSeason[] | null>(null)
+  // SWR (audit tezlik): keshdagi ma'lumot DARHOL — qayta ochilganda skelet yo'q;
+  // tarmoq javobi kelgach state yangilanadi (fonda, dedup'langan so'rov).
+  const [dailyEntries, setDailyEntries]     = useState<Entry[] | null>(() => leaderboardPageCaches.daily.peek())
+  const [weekly, setWeekly]                 = useState<LeagueWeekly | null>(() => leaderboardPageCaches.weekly.peek())
+  const [monthlyEntries, setMonthlyEntries] = useState<Entry[] | null>(() => leaderboardPageCaches.monthly.peek())
+  const [seasons, setSeasons]               = useState<TournamentSeason[] | null>(() => leaderboardPageCaches.seasons.peek())
   const [error, setError]                   = useState(false)
   const [showHistory, setShowHistory]       = useState(false)
 
   useEffect(() => {
-    api.getLeaderboardDaily(50, user?.id).then(setDailyEntries).catch(() => setError(true))
-    api.getLeagueWeekly(50, user?.id).then(setWeekly).catch(() => setError(true))
-    api.getLeaderboardMonthly(50, user?.id).then(setMonthlyEntries).catch(() => setError(true))
-    api.getTournamentHistory(6, user?.id).then((r) => setSeasons(r.seasons)).catch(() => {})
+    leaderboardPageCaches.daily.fetch(user?.id).then(setDailyEntries).catch(() => setError(true))
+    leaderboardPageCaches.weekly.fetch(user?.id).then(setWeekly).catch(() => setError(true))
+    leaderboardPageCaches.monthly.fetch(user?.id).then(setMonthlyEntries).catch(() => setError(true))
+    leaderboardPageCaches.seasons.fetch(user?.id).then(setSeasons).catch(() => {})
   }, [user?.id])
 
   const wEntries = weekly?.entries ?? []
