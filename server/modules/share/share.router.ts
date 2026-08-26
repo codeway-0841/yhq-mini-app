@@ -67,6 +67,16 @@ router.post(
     const { imageBase64, caption, fileName } = req.body as z.infer<typeof ShareImageSchema>
     const buffer = Buffer.from(imageBase64.replace(/^data:image\/\w+;base64,/, ''), 'base64')
 
+    // Magic bytes tekshiruvi (audit Q3): zod faqat uzunlikni biladi — ixtiyoriy
+    // bayt oqimini Telegram'ga "rasm" deb yuborish mumkin edi. FAQAT PNG/JPEG.
+    const isPng = buffer.length > 8
+      && buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4e && buffer[3] === 0x47
+    const isJpeg = buffer.length > 3
+      && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff
+    if (!isPng && !isJpeg) {
+      throw new AppError(400, 'unsupported_image_format')
+    }
+
     try {
       const bot = new Bot(token)
       await bot.api.sendPhoto(tgId, new InputFile(buffer, fileName ?? 'kiwi-share.png'), { caption })

@@ -168,6 +168,11 @@ async function handleClickWebhookRoute(req: any, res: any) {
   }
 }
 
-paymentRouter.post('/click', clickBodyParser, wrap(handleClickWebhookRoute))
-paymentRouter.post('/click/prepare', clickBodyParser, wrap(handleClickWebhookRoute))
-paymentRouter.post('/click/complete', clickBodyParser, wrap(handleClickWebhookRoute))
+// Click webhook alohida bucket (audit Q2): imzo-himoyalangan bo'lsa-da, global
+// 120/min IP limitidan tashqari maxsus tor cheklov — webhook spam/probe'lar
+// DB'ga chuqur ish qilmasligi uchun. KeyFn: IP (webhook'da userId yo'q).
+const clickHookLimiter = rateLimit({ maxPerMinute: 30, bucket: 'pay-hook', keyFn: (req) => req.ip ?? 'unknown' })
+
+paymentRouter.post('/click', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))
+paymentRouter.post('/click/prepare', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))
+paymentRouter.post('/click/complete', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))

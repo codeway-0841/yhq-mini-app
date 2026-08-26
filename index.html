@@ -16,6 +16,7 @@
     <meta property="og:description" content="Fanlar bo'yicha testler, biletlar va yo'l belgilari — hammasi bitta ilovada." />
     <title>KIWI</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <!-- DEV-MOCK-START (vite.config.ts faqat dev'da saqlaydi — prod build'dan o'chiriladi) -->
     <script>
       // Dev mock: inject fake Telegram user when not in real TG Mini App
       ;(function() {
@@ -94,6 +95,7 @@
         }
       })()
     </script>
+    <!-- DEV-MOCK-END -->
     <script>
       ;(function () {
         try {

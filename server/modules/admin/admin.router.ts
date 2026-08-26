@@ -335,8 +335,13 @@ router.post(
   '/admin/ai/generate-questions',
   wrap(async (req, res) => {
     const { GenerateQuestionsInputSchema, generateAiQuestions } = await import('./ai-question-generator.service')
-    const parsed = GenerateQuestionsInputSchema.parse(req.body)
-    const questions = await generateAiQuestions(parsed)
+    // safeParse + AppError (audit Q5): avvalgi .parse() ZodError → umumiy 500 edi
+    // (validate.ts pattern'i: client input xatosi = 400)
+    const input = GenerateQuestionsInputSchema.safeParse(req.body)
+    if (!input.success) {
+      throw new AppError(400, 'Validation failed', input.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; '))
+    }
+    const questions = await generateAiQuestions(input.data)
     res.json({ ok: true, count: questions.length, questions })
   }),
 )

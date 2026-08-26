@@ -27,8 +27,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.19.1
           cache: npm
+      - name: Dependency audit (prod deps only)
+        run: npm audit --omit=dev --audit-level=high
       - run: npm ci --include=dev
       - name: Typecheck (client)
         run: npx tsc --noEmit -p tsconfig.json
@@ -54,7 +56,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.19.1
           cache: npm
       - run: npm ci --include=dev
       - name: Cache Playwright browsers
@@ -112,7 +114,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.19.1
           cache: npm
       - run: npm ci --include=dev
       - name: Create test databases

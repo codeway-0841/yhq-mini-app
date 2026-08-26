@@ -6,6 +6,32 @@ interface ErrorState {
   message: string
 }
 
+/** Crash ekrani matnlari (audit Q6): Boundary i18n hook'siz klass komponent —
+ *  til persist snapshot'idan oddiy o'qilinadi (yhq-app-store → settings.language). */
+const CRASH_TEXT = {
+  uz: {
+    title: 'Ilova kutilmaganda to\'xtadi',
+    body: 'Sahifani qayta yuklang. Takrorlansa, ma\'lumotlaringiz saqlanib qoladi — keyinroq urinib ko\'ring.',
+    reload: 'Qayta yuklash',
+  },
+  ru: {
+    title: 'Приложение неожиданно остановилось',
+    body: 'Перезагрузите страницу. Если ошибка повторится, ваши данные сохранятся — попробуйте позже.',
+    reload: 'Перезагрузить',
+  },
+} as const
+
+function crashLanguage(): 'uz' | 'ru' {
+  try {
+    const raw = localStorage.getItem('yhq-app-store')
+    if (raw) {
+      const parsed = JSON.parse(raw) as { state?: { settings?: { language?: string } } }
+      if (parsed.state?.settings?.language === 'ru') return 'ru'
+    }
+  } catch { /* ignore */ }
+  return 'uz'
+}
+
 interface ErrorBoundaryProps {
   children: React.ReactNode
 }
@@ -29,6 +55,7 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
 
   render() {
     if (this.state.hasError) {
+      const t = CRASH_TEXT[crashLanguage()]
       return (
         // Ataylab inline style + xom SVG: xato AYNAN UI komponentidan kelgan
         // bo'lishi mumkin, shuning uchun bu ekran ui/ qatlamiga TAYANMAYDI.
@@ -56,21 +83,25 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
             fontSize: 19, fontWeight: 600, marginBottom: 6, letterSpacing: '-0.015em',
             fontFamily: "'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif",
           }}>
-            Ilova kutilmaganda to'xtadi
+            {t.title}
           </h2>
           <p style={{
             fontSize: 14, color: 'var(--theme-fg-muted)', textAlign: 'center',
             marginBottom: 20, maxWidth: '34ch',
           }}>
-            Sahifani qayta yuklang. Takrorlansa, ma'lumotlaringiz saqlanib qoladi —
-            keyinroq urinib ko'ring.
+            {t.body}
           </p>
-          <p style={{
-            fontSize: 12.5, color: 'var(--theme-fg-subtle)', textAlign: 'center',
-            marginBottom: 24, maxWidth: '40ch', wordBreak: 'break-word',
-          }}>
-            {this.state.message}
-          </p>
+          {/* Xom xato matni FAQAT dev'da (audit Q6): prod'da ichki tafsilotlar
+              (server javoblari, stack parchalari) foydalanuvchiga ko'rinmasligi
+              kerak — tafsilotlar Sentry'ga ketadi. */}
+          {import.meta.env.DEV && (
+            <p style={{
+              fontSize: 12.5, color: 'var(--theme-fg-subtle)', textAlign: 'center',
+              marginBottom: 24, maxWidth: '40ch', wordBreak: 'break-word',
+            }}>
+              {this.state.message}
+            </p>
+          )}
           <button
             onClick={() => window.location.reload()}
             style={{
@@ -86,7 +117,7 @@ export default class ErrorBoundary extends React.Component<ErrorBoundaryProps, E
               cursor: 'pointer',
             }}
           >
-            Qayta yuklash
+            {t.reload}
           </button>
         </div>
       )

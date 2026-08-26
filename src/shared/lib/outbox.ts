@@ -37,6 +37,10 @@ export interface OutboxEntry {
 
 const MAX_ATTEMPTS = 25
 
+/** Navbat hajmi cheklovi (audit Q7): uzoq offline + yuzlab javob localStorage
+ *  kvotasini yemasligi uchun — eng eski yozuvlar tushiriladi. */
+const MAX_ENTRIES = 500
+
 function storageKey(userId: string): string {
   return `yhq-outbox:${userId}`
 }
@@ -210,10 +214,17 @@ function isFatalClientError(err: unknown): boolean {
 /** Mutation'ni navbatga qo'shadi va fonda flush'ni ishga tushiradi. */
 export function enqueueOutbox(userId: string, type: OutboxType, payload: Record<string, unknown>): void {
   if (!userId || userId === '0') return
-  void atomicUpdate(userId, entries => [
-    ...entries,
-    { id: newId(), type, payload, attempts: 0, createdAt: Date.now() }
-  ]).then(() => {
+  void atomicUpdate(userId, entries => {
+    const next = [
+      ...entries,
+      { id: newId(), type, payload, attempts: 0, createdAt: Date.now() }
+    ]
+    if (next.length > MAX_ENTRIES) {
+      console.warn(`[outbox] overflow: ${next.length - MAX_ENTRIES} eski yozuv tushirildi (MAX_ENTRIES=${MAX_ENTRIES})`)
+      return next.slice(next.length - MAX_ENTRIES)
+    }
+    return next
+  }).then(() => {
     notify()
     void flushOutbox(userId)
   }).catch(err => {
