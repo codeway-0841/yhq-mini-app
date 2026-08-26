@@ -26,6 +26,11 @@ const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||
   /\.(js|css|jpg|jpeg|png|webp|svg|woff2?)$/.test(path)
 
+// Avatar — /api/ ostida, lekin bu RASM va deyarli o'zgarmaydi. Keshsiz
+// bo'lgani uchun har ochilishda Vercel funksiyasi + DB ga round-trip ketardi
+// va avatar sezilarli kech chiqardi.
+const isAvatar = (path) => path.startsWith('/api/avatar/')
+
 const isQuestionData = (path) =>
   path.startsWith('/api/questions') || path.startsWith('/api/topics')
 
@@ -165,6 +170,30 @@ self.addEventListener('fetch', (event) => {
   // fallback umuman yo'q edi.
   if (request.mode === 'navigate') {
     event.respondWith(handleNavigate(request))
+    return
+  }
+
+  // Avatar — stale-while-revalidate: keshdagi nusxa DARHOL beriladi, yangisi
+  // orqa fonda olinadi (user avatarni almashtirsa keyingi ochilishda ko'rinadi).
+  // IMG_CACHE ichida — LRU cap avatarlarga ham tegishli bo'lsin.
+  if (isAvatar(url.pathname)) {
+    event.respondWith(
+      (async () => {
+        const cache = await caches.open(IMG_CACHE)
+        const hit = await cache.match(request)
+        const network = fetch(request)
+          .then((res) => {
+            const clean = storable(request, res.clone())
+            if (clean) void cache.put(request, clean).then(trimImageCache).catch(() => {})
+            return res
+          })
+        if (hit) {
+          keepAlive(event, network.catch(() => {}))
+          return hit
+        }
+        return network
+      })()
+    )
     return
   }
 

@@ -9,7 +9,7 @@ import {
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
-import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useQuestionsStore, cachedQuestionCount } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
 import { useToast } from '../../shared/components/ToastContainer'
@@ -123,7 +123,10 @@ export default function Dashboard() {
   const subject         = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
   const dailyStreak     = useDailyStore((s) => s.streaks[subject.id] ?? 0)
-  const questionsCount  = useQuestionsStore((s) => s.questions.length)
+  // Savollar hali yuklanmagan bo'lsa oxirgi ma'lum SONdan foydalanamiz —
+  // aks holda birinchi kadrda "0%" chizilib, keyin haqiqiy foizga sakrardi.
+  const loadedCount     = useQuestionsStore((s) => s.questions.length)
+  const questionsCount  = loadedCount || cachedQuestionCount(subject.id)
 
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {

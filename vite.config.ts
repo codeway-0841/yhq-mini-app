@@ -32,4 +32,12 @@ export default defineConfig({
       '/api': { target: 'http://localhost:3001', changeOrigin: true },
     },
   },
+  // `vite preview` (prod build'ni lokal sinash) ham backend'ga proxy qilsin —
+  // aks holda service worker / offline xatti-harakatini faqat 404 javoblar
+  // bilan tekshirish mumkin bo'lardi.
+  preview: {
+    proxy: {
+      '/api': { target: 'http://localhost:3001', changeOrigin: true },
+    },
+  },
 })

@@ -23,7 +23,19 @@ vi.mock('../../../src/shared/api', async (importOriginal) => {
   }
 })
 
-const { useQuestionsStore } = await import('../../../src/shared/store/useQuestionsStore')
+// Savol soni localStorage'ga yoziladi — importdan OLDIN stub kerak
+const lsStore = new Map<string, string>()
+vi.stubGlobal('localStorage', {
+  get length() { return lsStore.size },
+  key:        (i: number) => [...lsStore.keys()][i] ?? null,
+  getItem:    (k: string) => lsStore.get(k) ?? null,
+  setItem:    (k: string, v: string) => { lsStore.set(k, String(v)) },
+  removeItem: (k: string) => { lsStore.delete(k) },
+  clear:      () => lsStore.clear(),
+})
+
+const { useQuestionsStore, cachedQuestionCount } =
+  await import('../../../src/shared/store/useQuestionsStore')
 
 /** Qo'lda yechiladigan promise — so'rovni "uchib ketgan" holatda ushlab turish */
 function deferred<T>() {
@@ -33,6 +45,7 @@ function deferred<T>() {
 }
 
 beforeEach(() => {
+  lsStore.clear()
   getQuestions.mockReset()
   getTopics.mockReset()
   useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null })
@@ -76,5 +89,39 @@ describe('useQuestionsStore.load() in-flight dedupe', () => {
     await useQuestionsStore.getState().load('ru', 'yhq')
 
     expect(getQuestions).toHaveBeenCalledTimes(2)
+  })
+})
+
+describe('cachedQuestionCount', () => {
+  it("yuklangandan keyin son diskda qoladi — birinchi kadrda 0% ko'rsatmaydi", async () => {
+    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }, { id: 3 }])
+    getTopics.mockResolvedValue([])
+
+    expect(cachedQuestionCount('yhq')).toBe(0)
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(cachedQuestionCount('yhq')).toBe(3)
+  })
+
+  it('fanlar bir-birining sonini bosmaydi', async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }])
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    getQuestions.mockResolvedValue([{ id: 1 }])
+    await useQuestionsStore.getState().load('uz', 'fizika')
+
+    expect(cachedQuestionCount('yhq')).toBe(2)
+    expect(cachedQuestionCount('fizika')).toBe(1)
+  })
+
+  it("bo'sh javob eski sonni O'CHIRMAYDI", async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }])
+    await useQuestionsStore.getState().load('uz', 'yhq')
+
+    useQuestionsStore.setState({ loaded: false })
+    getQuestions.mockResolvedValue([])
+    await useQuestionsStore.getState().load('ru', 'yhq')
+
+    expect(cachedQuestionCount('yhq')).toBe(2)
   })
 })

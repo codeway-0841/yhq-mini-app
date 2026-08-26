@@ -29,6 +29,35 @@ let loadVersion = 0
 // bo'lgani uchun ikkala chaqiruv ham tarmoqqa chiqardi.
 let inFlight: { key: string; promise: Promise<void> } | null = null
 
+// Fan bo'yicha savollar SONI — diskda saqlanadi.
+//
+// Nima uchun: savollar endi boot'ni bloklamaydi (perf), ya'ni Dashboard
+// `questions.length === 0` bilan mount bo'ladi. ProgressCard undan foizni
+// hisoblagani uchun birinchi kadrda "0%" va "37 / …" ko'rinardi, so'ng
+// ma'lumot kelgach 51% ga sakrardi. Faqat SON saqlanadi (bir nechta bayt) —
+// savollarning o'zi emas.
+const COUNT_KEY = 'yhq-qcount'
+
+function readCounts(): Record<string, number> {
+  try {
+    const raw = localStorage.getItem(COUNT_KEY)
+    return raw ? (JSON.parse(raw) as Record<string, number>) : {}
+  } catch { return {} }
+}
+
+/** Oxirgi ma'lum savollar soni — savollar yuklanguncha ishlatiladi. */
+export function cachedQuestionCount(subjectId: string): number {
+  const n = readCounts()[subjectId]
+  return typeof n === 'number' && n > 0 ? n : 0
+}
+
+function writeCount(subjectId: string, count: number): void {
+  if (count <= 0) return
+  try {
+    localStorage.setItem(COUNT_KEY, JSON.stringify({ ...readCounts(), [subjectId]: count }))
+  } catch { /* kvota — kesh ixtiyoriy */ }
+}
+
 export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   questions: [],
   topics:    [],
@@ -53,6 +82,7 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
         const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
         if (version !== loadVersion) return
         rawQuestions = raw
+        writeCount(sid, raw.length)
         set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
       } catch (e) {
         if (version === loadVersion) {
@@ -78,6 +108,7 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
         api.getTopics(subjectId, true),
       ])
       rawQuestions = raw
+      writeCount(subjectId, raw.length)
       set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId })
     } catch (e) {
       set({ error: e instanceof Error ? e.message : 'Failed to reload questions' })
