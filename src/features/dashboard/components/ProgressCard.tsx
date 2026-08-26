@@ -1,4 +1,4 @@
-import { memo, useRef, useState, type ElementType } from 'react'
+import { memo, useRef, useState } from 'react'
 import { Flame, Star, Trophy, ChevronDown } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -11,51 +11,54 @@ import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { cn } from '../../../shared/lib/cn'
 
-// ── Streak tugmasi (long-press = milestone demo preview) ────────────────────
-const StreakButton = memo(function StreakButton({ streak, onOpen, onLongPress, tt, ariaLabel }: {
-  streak: number; onOpen: () => void; onLongPress?: () => void
-  tt: (k: Parameters<ReturnType<typeof useT>>[0]) => string
+// ── Interaktiv StatButton (Streak, XP, Reyting bir xil premium hover & active shaklda) ──
+const StatButton = memo(function StatButton({
+  icon: Icon,
+  value,
+  label,
+  iconBg,
+  tone,
+  onClick,
+  onLongPress,
+  ariaLabel,
+}: {
+  icon: typeof Flame | typeof Star | typeof Trophy
+  value: string
+  label: string
+  iconBg?: string
+  tone?: string
+  onClick?: () => void
+  onLongPress?: () => void
   ariaLabel: string
 }) {
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const fired = useRef(false)
   const cancel = () => { if (timer.current) { clearTimeout(timer.current); timer.current = null } }
+
   return (
-    <button aria-label={ariaLabel}
-      onClick={() => { if (!fired.current) onOpen(); fired.current = false }}
+    <button
+      type="button"
+      aria-label={ariaLabel}
+      onClick={() => {
+        if (!fired.current && onClick) {
+          playSound('click')
+          haptics.impact('light')
+          onClick()
+        }
+        fired.current = false
+      }}
       onPointerDown={() => {
         fired.current = false
         cancel()
         if (onLongPress) timer.current = setTimeout(() => { fired.current = true; onLongPress() }, 700)
       }}
-      onPointerUp={cancel} onPointerLeave={cancel}
+      onPointerUp={cancel}
+      onPointerLeave={cancel}
       className={cn(
         'flex items-center gap-2 rounded-control p-1 text-left',
         'transition-all duration-[120ms] ease-out active:scale-[0.97]',
         'hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
-      )}>
-      <div className="flex size-7 shrink-0 items-center justify-center rounded-full bg-pwarning/25 text-pwarning">
-        <Flame size={15} strokeWidth={2} />
-      </div>
-      <div className="min-w-0">
-        <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{streak} {tt('daysWord')}</p>
-        <p className="truncate text-[10px] font-medium text-white/65">{tt('streakDays')}</p>
-      </div>
-    </button>
-  )
-})
-
-/** Pastki statistika ustuni — Seriya / XP / Reyting bir xil shaklda. onClick berilsa bosiladigan tugma bo'ladi. */
-function StatItem({ icon: Icon, value, label, iconBg, tone, onClick, ariaLabel }: {
-  icon: typeof Star; value: string; label: string; iconBg?: string; tone?: string
-  onClick?: () => void; ariaLabel?: string
-}) {
-  const Tag: ElementType = onClick ? 'button' : 'div'
-  return (
-    <Tag
-      onClick={onClick}
-      aria-label={onClick ? ariaLabel : undefined}
-      className={cn('flex items-center gap-2 p-1 text-left', onClick && 'active:scale-[0.97] transition-transform')}
+      )}
     >
       <div className={cn('flex size-7 shrink-0 items-center justify-center rounded-full', iconBg ?? 'bg-white/15 text-white', tone)}>
         <Icon size={15} strokeWidth={2} />
@@ -64,9 +67,9 @@ function StatItem({ icon: Icon, value, label, iconBg, tone, onClick, ariaLabel }
         <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{value}</p>
         <p className="truncate text-[10px] font-medium text-white/65">{label}</p>
       </div>
-    </Tag>
+    </button>
   )
-}
+})
 
 /** progress.league (server) → i18n kalit — LeaderboardPage'dagi tarjimalar bilan bir xil. */
 const LEAGUE_TT_KEY = {
@@ -152,13 +155,35 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
 
         {/* Pastki statistika: Seriya / XP / Reyting — Frosted sub-card pill container */}
         <div className="mt-4 grid grid-cols-3 gap-2 rounded-[12px] border border-white/15 bg-black/35 p-2.5 backdrop-blur-md">
-          {/* Streak — bosilsa "Intizom" sahifasi; 1s bosib turilsa → milestone PREVIEW (demo) */}
-          <StreakButton streak={streak} onOpen={() => navigate('/streak')} onLongPress={onStreakPreview}
-            tt={tt} ariaLabel={tt('intizomTitle')} />
-          <StatItem icon={Star} value={`${xp} XP`} label={tt('totalXp')} iconBg="bg-pgold/25 text-pgold"
-            onClick={() => setXpInfoOpen(true)} ariaLabel={tt('xpInfoTitle')} />
-          <StatItem icon={Trophy} value={tt(LEAGUE_TT_KEY[league])} label={tt('ratingWord')} iconBg="bg-pblue/25 text-pblue"
-            onClick={() => setLeagueInfoOpen(true)} ariaLabel={tt('leagueInfoTitle')} />
+          {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
+          <StatButton
+            icon={Flame}
+            value={`${streak} ${tt('daysWord')}`}
+            label={tt('streakDays')}
+            iconBg="bg-pwarning/25 text-pwarning"
+            onClick={() => navigate('/streak')}
+            onLongPress={onStreakPreview}
+            ariaLabel={tt('intizomTitle')}
+          />
+          {/* XP — bosilsa XP ma'lumot sheet'i */}
+          <StatButton
+            icon={Star}
+            value={`${xp} XP`}
+            label={tt('totalXp')}
+            iconBg="bg-pgold/25 text-pgold"
+            onClick={() => setXpInfoOpen(true)}
+            ariaLabel={tt('xpInfoTitle')}
+          />
+          {/* Reyting — bosilsa Reyting sahifasi; 700ms bosib turilsa → liga qoidalari sheet'i */}
+          <StatButton
+            icon={Trophy}
+            value={tt(LEAGUE_TT_KEY[league])}
+            label={tt('ratingWord')}
+            iconBg="bg-pblue/25 text-pblue"
+            onClick={() => navigate('/reyting')}
+            onLongPress={() => setLeagueInfoOpen(true)}
+            ariaLabel={tt('leagueInfoTitle')}
+          />
         </div>
       </div>
 

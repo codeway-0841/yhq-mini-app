@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
-  Ticket, ShieldAlert,
+  Ticket,
   Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText,
 } from 'lucide-react'
 import { levelFromXp } from '../../../shared/xp'
@@ -267,13 +267,9 @@ export default function Dashboard() {
                 ...(subject.id === 'yhq'
                   ? [{ icon: Signpost, label: tt('roadSigns'),   onClick: () => navigate('/belgilar') }]
                   : []),
-                ...(subject.id === 'yhq'
-                  ? [{ icon: Hash,     label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) }]
-                  : []),
+                { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
                 { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
-                ...(subject.id === 'yhq'
-                  ? [{ icon: NotebookText, label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') }]
-                  : []),
+                { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
               ]}
             />
           </div>
