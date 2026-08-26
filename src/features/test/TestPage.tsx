@@ -12,6 +12,7 @@ import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
 import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test-session'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { api } from '../../shared/api'
 import { onResultSync } from '../../shared/lib/outbox'
 import SettingsModal from '../../shared/components/SettingsModal'
 import DialogOverlay from '../../shared/components/DialogOverlay'
@@ -132,6 +133,26 @@ export default function TestPage() {
   // (post-answer reveal) shu massivga yoziladi.
   const revealedId = correctOpts[current] ?? null
   const [showExplain, setShowExplain] = useState(false)
+  const [dbExplanation, setDbExplanation] = useState<string | null>(null)
+  const [loadingDbExplain, setLoadingDbExplain] = useState(false)
+
+  useEffect(() => {
+    setDbExplanation(null)
+    setLoadingDbExplain(false)
+  }, [q?.id])
+
+  const handleOpenExplain = useCallback(() => {
+    setShowExplain(true)
+    if (q?.id && !dbExplanation) {
+      setLoadingDbExplain(true)
+      api.getExplanation(q.id, settings.language)
+        .then((res) => {
+          if (res.text) setDbExplanation(res.text)
+        })
+        .catch(() => {})
+        .finally(() => setLoadingDbExplain(false))
+    }
+  }, [q?.id, dbExplanation, settings.language])
 
   // ── AI Tutor modal state ──
   const [showAiTutor, setShowAiTutor] = useState(false)
@@ -683,8 +704,8 @@ export default function TestPage() {
             </p>
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
               {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
-              {selected && explanation && (
-                <button onClick={() => setShowExplain(true)}
+              {selected && (
+                <button onClick={handleOpenExplain}
                   aria-label={tt('whyThis')}
                   className="flex h-[34px] items-center gap-1.5 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
                   <Info size={14} aria-hidden="true" />
@@ -783,32 +804,58 @@ export default function TestPage() {
       )}
 
       {/* "Nega shunday?" — modda izohi (bottom sheet) */}
-      {showExplain && explanation && (
+      {showExplain && (
         <DialogOverlay onClose={() => setShowExplain(false)} labelId="explain-title">
-          <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8"
+          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8 max-h-[85vh] flex flex-col shadow-2xl"
             onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-            <div className="flex items-center gap-2 mb-3">
+            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 flex-shrink-0" />
+            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
               <div className="w-9 h-9 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
                 <Info size={17} className="text-pwarning" />
               </div>
               <p id="explain-title" className="text-[15px] font-semibold text-pfg">
-                {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
+                {tt('whyThis')}
               </p>
             </div>
-            {(settings?.language === 'ru' ? explanation.lesson.bodyRu : explanation.lesson.bodyUz)
-              .slice(0, 3).map((p, i) => (
-                <p key={i} className="text-[13px] text-pmuted leading-relaxed mb-2">{p}</p>
-              ))}
-            <button
-              onClick={() => {
-                setShowExplain(false)
-                navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
-              }}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-2 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2">
-              <GraduationCap size={16} />
-              {tt('openModule')}
-            </button>
+
+            <div className="flex-1 overflow-y-auto pr-1">
+              {loadingDbExplain ? (
+                <div className="flex items-center justify-center py-8 gap-2 text-pmuted">
+                  <div className="w-5 h-5 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
+                  <span className="text-xs">{tt('loadingDots')}</span>
+                </div>
+              ) : dbExplanation ? (
+                <div className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap font-normal bg-pcanvas/50 p-3.5 rounded-container border border-pline">
+                  {dbExplanation}
+                </div>
+              ) : explanation ? (
+                <div>
+                  <p className="text-xs font-semibold text-pprimary mb-1.5">
+                    {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
+                  </p>
+                  {(settings?.language === 'ru' ? explanation.lesson.bodyRu : explanation.lesson.bodyUz)
+                    .slice(0, 3).map((p, i) => (
+                      <p key={i} className="text-[13px] text-pmuted leading-relaxed mb-2">{p}</p>
+                    ))}
+                </div>
+              ) : (
+                <p className="text-xs text-pmuted py-4 text-center">
+                  {settings?.language === 'ru' ? 'Пояснение к этому вопросу скоро будет добавлено.' : "Ushbu savol uchun izoh tez kunda qo'shiladi."}
+                </p>
+              )}
+            </div>
+
+            {explanation && (
+              <button
+                onClick={() => {
+                  setShowExplain(false)
+                  navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
+                }}
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-4 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0">
+                <GraduationCap size={16} />
+                {tt('openModule')}
+              </button>
+            )}
           </div>
         </DialogOverlay>
       )}

@@ -449,6 +449,9 @@ export const api = {
     const qs = params.toString()
     return request<DbQuestion[]>('GET', `/questions${qs ? `?${qs}` : ''}`)
   },
+  getExplanation: (questionId: number, lang: 'uz' | 'ru' = 'uz') =>
+    request<{ questionId: number; text: string }>('GET', `/questions/${encodeURIComponent(questionId)}/explanation?lang=${lang}`),
+
   getTopics: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)
