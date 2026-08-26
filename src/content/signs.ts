@@ -58,9 +58,43 @@ function resolveImage(img: string): string {
   return `/images/signs/${filename}`
 }
 
+export function cleanSignDescription(raw?: string): string {
+  if (!raw) return ''
+  let str = raw.trim()
+
+  // Remove leading duplicate title list or paragraphs
+  str = str.replace(/^\s*<ul>\s*<li>\s*(?:<strong[^>]*>)?\s*[\d.]+\s*["«“][^<]+["»”]\s*(?:<\/strong>)?\s*<\/li>\s*<\/ul>/i, '')
+  str = str.replace(/^\s*<p>\s*<strong[^>]*>\s*[\d.]+\s*["«“][^<]+["»”]\s*<\/strong>\s*<\/p>/i, '')
+  str = str.replace(/^\s*[\d.]+\s*["«“][^"\r\n]+["»”]\s*(\r?\n)+/i, '')
+
+  // Convert HTML elements into clean markdown/text
+  str = str
+    .replace(/<strong[^>]*>(.*?)<\/strong>/gi, '**$1**')
+    .replace(/<b[^>]*>(.*?)<\/b>/gi, '**$1**')
+    .replace(/<em[^>]*>(.*?)<\/em>/gi, '*$1*')
+    .replace(/<i[^>]*>(.*?)<\/i>/gi, '*$1*')
+    .replace(/<li[^>]*>(.*?)<\/li>/gi, '- $1\n')
+    .replace(/<p[^>]*>(.*?)<\/p>/gi, '$1\n\n')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<[^>]+>/g, '') // strip any other html tags
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&laquo;/g, '«')
+    .replace(/&raquo;/g, '»')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/\r/g, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+
+  return str
+}
+
 const ALL_SIGNS: RoadSign[] = rawSigns.map((s) => {
   const meta = GROUP_ID_TO_CAT_ID[s.groupId] ?? { id: String(s.groupId), color: '#37718e', emoji: '📌' }
-  const desc = Array.isArray(s.content) ? s.content.map((c) => c.value).join('\n\n') : ''
+  const rawDesc = Array.isArray(s.content) ? s.content.map((c) => c.value).join('\n\n') : ''
+  const desc = cleanSignDescription(rawDesc)
   return {
     id: `sign-${s.id}`,
     code: s.code,

@@ -3,6 +3,46 @@ import { getSignByCode, type RoadSign } from '../../../content/signs'
 import { X, TrafficCone, ExternalLink } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 
+function renderSimpleBold(str: string) {
+  const parts = str.split(/(\*\*.*?\*\*)/g)
+  return parts.map((part, idx) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={idx} className="font-bold text-pfg">
+          {part.slice(2, -2)}
+        </strong>
+      )
+    }
+    return part
+  })
+}
+
+function FormattedSignDescription({ text }: { text: string }) {
+  if (!text) {
+    return <p className="text-pmuted text-center">Ushbu belgi bo'yicha qo'shimcha ma'lumot mavjud emas.</p>
+  }
+  const paragraphs = text.split(/\n\s*\n/)
+  return (
+    <div className="space-y-2 text-[13px] text-pfg leading-relaxed">
+      {paragraphs.map((p, i) => {
+        const trimmed = p.trim()
+        if (!trimmed) return null
+        if (trimmed.startsWith('- ')) {
+          const items = trimmed.split('\n').map((l) => l.replace(/^[-*]\s*/, '').trim())
+          return (
+            <ul key={i} className="list-disc list-inside space-y-1">
+              {items.map((it, idx) => (
+                <li key={idx}>{renderSimpleBold(it)}</li>
+              ))}
+            </ul>
+          )
+        }
+        return <p key={i}>{renderSimpleBold(trimmed)}</p>
+      })}
+    </div>
+  )
+}
+
 function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => void }) {
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/75 z-50" labelId="sign-detail-modal-title">
@@ -37,8 +77,8 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
         </h3>
         <p className="text-center text-xs text-pmuted mb-4 font-medium">{sign.legalRef}</p>
 
-        <div className="bg-pcanvas/70 border border-pline p-3.5 rounded-container mb-4 text-[13px] text-pfg leading-relaxed whitespace-pre-line">
-          {sign.description || "Ushbu belgi bo'yicha qo'shimcha ma'lumot mavjud emas."}
+        <div className="bg-pcanvas/70 border border-pline p-3.5 rounded-container mb-4">
+          <FormattedSignDescription text={sign.description} />
         </div>
 
         <button
