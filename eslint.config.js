@@ -10,7 +10,7 @@ export default tseslint.config(
     ignores: [
       'node_modules/**', 'dist/**', 'api/**', 'server/dist/**', 'android/**',
       'migrations/**', '*.config.*', 'graphify-out/**', 'coverage/**',
-      '.vercel/**', '.claude/**', '.agents/**', '.drizzle/**', 'public/**',
+      '.vercel/**', '.claude/**', '.agents/**', '.drizzle/**', 'public/**', 'scratch/**',
     ],
   },
   js.configs.recommended,
