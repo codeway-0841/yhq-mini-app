@@ -12,7 +12,20 @@ interface QuestionsState {
   lang:      'uz' | 'ru'
   /** Qaysi fan uchun yuklangan (subject almashganda qayta yuklanadi). */
   subjectId: string
+  /**
+   * Oxirgi urinish YIQILGAN kalit ('<subject>::<lang>').
+   *
+   * Sahifalar `!loaded && !loading` shartida load() chaqiradi. Xatoda ikkala
+   * flag ham false qoladi, ya'ni effekt darhol qayta ishga tushib CHEKSIZ
+   * SIKL hosil qilardi. Server esa butun bankni bir IP dan kuniga 20 marta
+   * beradi (questions.router.ts FULL_BANK_DAILY_CAP) — sikl shu limitni bir
+   * necha soniyada yeb, 429 + 24 soatlik blok keltirardi va sahifa
+   * "yuklanmoqda"da muzlab qolardi.
+   */
+  failedKey: string | null
   load:      (lang: 'uz' | 'ru', subjectId?: string) => Promise<void>
+  /** Foydalanuvchi BOSGANDA qayta urinish — avtomatik takror emas. */
+  retry:     () => Promise<void>
   /** Admin CRUD'dan keyin cache'dan qat'iatan qayta yuklash (force) */
   reload:    () => Promise<void>
   /** Re-map already-fetched questions to another language — no network call. */
@@ -66,6 +79,7 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
   error:     null,
   lang:      'uz',
   subjectId: useSubjectStore.getState().subjectId || 'yhq',
+  failedKey: null,
 
   async load(lang, subjectId) {
     const sid = subjectId ?? useSubjectStore.getState().subjectId ?? get().subjectId
@@ -75,6 +89,23 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     const key = `${sid}::${lang}`
     if (inFlight?.key === key) return inFlight.promise
 
+    // Shu FAN allaqachon tortilgan, faqat TIL boshqa — butun bankni qayta
+    // tortish shart emas, xom javob saqlangan va lokal qayta map qilinadi.
+    // (Boot'da kesh tili bilan erta yuklaymiz, profil boshqa til qaytarsa
+    //  ilgari shu yerda ikkinchi to'liq fetch ketardi — kunlik limitni ikki
+    //  barobar tez yeydi.)
+    // `loaded` sharti MUHIM: `rawQuestions` modul darajasida yashaydi, store
+    // holati esa tozalanishi mumkin — u holda eskirgan xom keshdan xizmat
+    // qilib qo'ymasligimiz kerak.
+    if (get().loaded && rawQuestions.length > 0 && get().subjectId === sid) {
+      set({ questions: rawQuestions.map((q) => dbToQuestion(q, lang)), lang, loaded: true, error: null, failedKey: null })
+      return
+    }
+
+    // Oxirgi urinish shu kalitda yiqilgan — AVTOMATIK takrorlamaymiz.
+    // Qayta urinish faqat retry() orqali (foydalanuvchi bosganda).
+    if (get().failedKey === key) return
+
     const version = ++loadVersion
     set({ loading: true, error: null })
     const run = (async () => {
@@ -83,10 +114,13 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
         if (version !== loadVersion) return
         rawQuestions = raw
         writeCount(sid, raw.length)
-        set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid })
+        set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid, failedKey: null })
       } catch (e) {
         if (version === loadVersion) {
-          set({ error: e instanceof Error ? e.message : 'Failed to load questions' })
+          set({
+            error: e instanceof Error ? e.message : 'Failed to load questions',
+            failedKey: key,
+          })
         }
       } finally {
         if (version === loadVersion) set({ loading: false })
@@ -95,6 +129,12 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     })()
     inFlight = { key, promise: run }
     return run
+  },
+
+  async retry() {
+    set({ failedKey: null, error: null })
+    const { lang, subjectId } = get()
+    await get().load(lang, subjectId)
   },
 
   async reload() {
@@ -109,7 +149,7 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
       ])
       rawQuestions = raw
       writeCount(subjectId, raw.length)
-      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId })
+      set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId, failedKey: null })
     } catch (e) {
       set({ error: e instanceof Error ? e.message : 'Failed to reload questions' })
     } finally {

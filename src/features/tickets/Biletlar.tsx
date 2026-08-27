@@ -20,13 +20,16 @@ export default function Biletlar() {
   const questions        = useQuestionsStore((s) => s.questions)
   const questionsLoading = useQuestionsStore((s) => s.loading)
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
+  const questionsError   = useQuestionsStore((s) => s.error)
   const subjectId        = useSubjectStore((s) => s.subjectId)
 
+  // `questionsError` shartda — TestPage'dagi bilan bir xil cheksiz sikl
+  // (izohi useQuestionsStore.failedKey ustida).
   useEffect(() => {
-    if (!questionsLoaded && !questionsLoading) {
+    if (!questionsLoaded && !questionsLoading && !questionsError) {
       void useQuestionsStore.getState().load(settings.language, subjectId)
     }
-  }, [questionsLoaded, questionsLoading, settings.language, subjectId])
+  }, [questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
 
   const TABS = [
     { id: 'all',    label: tt('allTab') },

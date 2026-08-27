@@ -37,6 +37,15 @@ vi.stubGlobal('localStorage', {
 const { useQuestionsStore, cachedQuestionCount } =
   await import('../../../src/shared/store/useQuestionsStore')
 
+/** dbToQuestion() optionsUz/optionsRu ni Object.entries bilan o'qiydi —
+ *  stub'lar shu shaklga mos bo'lishi kerak, aks holda map paytida yiqiladi. */
+const q = (id: number) => ({
+  id,
+  questionUz: `savol ${id}`, questionRu: `вопрос ${id}`,
+  optionsUz: { a: 'A', b: 'B' }, optionsRu: { a: 'А', b: 'Б' },
+  topicId: 1, image: null,
+})
+
 /** Qo'lda yechiladigan promise — so'rovni "uchib ketgan" holatda ushlab turish */
 function deferred<T>() {
   let resolve!: (v: T) => void
@@ -48,7 +57,7 @@ beforeEach(() => {
   lsStore.clear()
   getQuestions.mockReset()
   getTopics.mockReset()
-  useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null })
+  useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null, failedKey: null })
 })
 
 describe('useQuestionsStore.load() in-flight dedupe', () => {
@@ -94,7 +103,7 @@ describe('useQuestionsStore.load() in-flight dedupe', () => {
 
 describe('cachedQuestionCount', () => {
   it("yuklangandan keyin son diskda qoladi — birinchi kadrda 0% ko'rsatmaydi", async () => {
-    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }, { id: 3 }])
+    getQuestions.mockResolvedValue([q(1), q(2), q(3)])
     getTopics.mockResolvedValue([])
 
     expect(cachedQuestionCount('yhq')).toBe(0)
@@ -104,9 +113,9 @@ describe('cachedQuestionCount', () => {
 
   it('fanlar bir-birining sonini bosmaydi', async () => {
     getTopics.mockResolvedValue([])
-    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }])
+    getQuestions.mockResolvedValue([q(1), q(2)])
     await useQuestionsStore.getState().load('uz', 'yhq')
-    getQuestions.mockResolvedValue([{ id: 1 }])
+    getQuestions.mockResolvedValue([q(1)])
     await useQuestionsStore.getState().load('uz', 'fizika')
 
     expect(cachedQuestionCount('yhq')).toBe(2)
@@ -115,7 +124,7 @@ describe('cachedQuestionCount', () => {
 
   it("bo'sh javob eski sonni O'CHIRMAYDI", async () => {
     getTopics.mockResolvedValue([])
-    getQuestions.mockResolvedValue([{ id: 1 }, { id: 2 }])
+    getQuestions.mockResolvedValue([q(1), q(2)])
     await useQuestionsStore.getState().load('uz', 'yhq')
 
     useQuestionsStore.setState({ loaded: false })
@@ -123,5 +132,50 @@ describe('cachedQuestionCount', () => {
     await useQuestionsStore.getState().load('ru', 'yhq')
 
     expect(cachedQuestionCount('yhq')).toBe(2)
+  })
+})
+
+describe("xato holati — cheksiz qayta urinish YO'Q", () => {
+  it('yiqilgandan keyin load() AVTOMATIK takrorlamaydi', async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockRejectedValue(new Error('429: too_many_requests'))
+
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(1)
+    expect(useQuestionsStore.getState().error).toBeTruthy()
+    expect(useQuestionsStore.getState().loaded).toBe(false)
+    expect(useQuestionsStore.getState().loading).toBe(false)
+
+    // Sahifa effekti aynan shu shartda qayta chaqiradi — endi to'xtashi kerak
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(1)
+  })
+
+  it("retry() guardni ATAYLAB chetlab otadi", async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockRejectedValue(new Error('boom'))
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(1)
+
+    getQuestions.mockResolvedValue([q(1)])
+    await useQuestionsStore.getState().retry()
+
+    expect(getQuestions).toHaveBeenCalledTimes(2)
+    expect(useQuestionsStore.getState().loaded).toBe(true)
+    expect(useQuestionsStore.getState().failedKey).toBeNull()
+  })
+
+  it('til almashsa butun bank QAYTA TORTILMAYDI — lokal remap', async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockResolvedValue([q(1), q(2)])
+
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(1)
+
+    await useQuestionsStore.getState().load('ru', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(1)
+    expect(useQuestionsStore.getState().lang).toBe('ru')
+    expect(useQuestionsStore.getState().questions).toHaveLength(2)
   })
 })

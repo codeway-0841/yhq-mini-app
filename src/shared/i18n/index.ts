@@ -61,6 +61,8 @@ const UZ = {
   // Biletlar
   allTab: "Barchasi", errorsTab: "Xatolar",
   noErrors: "Xato yo'q — yaxshi natija!", loadingDots: "Yuklanmoqda...",
+  qLoadFailed: "Savollarni yuklab bo'lmadi", qLoadRetry: "Qayta urinish",
+  qLoadRateLimited: "Savollar juda ko'p marta so'raldi. Bir ozdan keyin urinib ko'ring.",
   ticketWord: "bilet",
   // Umumiy/interfeys
   guestName: "Foydalanuvchi", riderLabel: "YO'LOVCHI ›",
@@ -467,6 +469,8 @@ const RU: Record<Keys, string> = {
   correctShort: "верно", wrongShort: "ошибок", remainingShort: "осталось",
   allTab: "Все", errorsTab: "С ошибками",
   noErrors: "Нет ошибок — отличный результат!", loadingDots: "Загрузка...",
+  qLoadFailed: "Не удалось загрузить вопросы", qLoadRetry: "Повторить",
+  qLoadRateLimited: "Вопросы запрашивались слишком часто. Попробуйте чуть позже.",
   ticketWord: "билет",
   guestName: "Пользователь", riderLabel: "ПАССАЖИР ›",
   flagThanks: "Сообщение об ошибке получено. Спасибо!",

@@ -3,6 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Coins, Sparkles, Check } from 'lucide-react'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
+import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
@@ -56,6 +57,7 @@ export default function TestPage() {
   const storeTopics      = useQuestionsStore((s) => s.topics)
   const questionsLoading = useQuestionsStore((s) => s.loading)
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
+  const questionsError   = useQuestionsStore((s) => s.error)
 
   const mode = (location.state?.mode as string | undefined) ?? null
   /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
@@ -67,11 +69,16 @@ export default function TestPage() {
   const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
 
+  // `questionsError` shartda BO'LISHI SHART: xatoda `loaded` ham, `loading` ham
+  // false qoladi, ya'ni effekt darhol qayta ishga tushib cheksiz sikl yasardi.
+  // Server butun bankni bir IP dan kuniga 20 marta beradi, shuning uchun sikl
+  // limitni bir necha soniyada yeb, 429 + 24 soatlik blokga olib kelardi va
+  // sahifa "Yuklanmoqda..."da muzlab qolardi. Qayta urinish endi qo'lda.
   useEffect(() => {
-    if (!questionsLoaded && !questionsLoading) {
+    if (!questionsLoaded && !questionsLoading && !questionsError) {
       void useQuestionsStore.getState().load(settings?.language || 'uz', subjectId)
     }
-  }, [questionsLoaded, questionsLoading, settings?.language, subjectId])
+  }, [questionsLoaded, questionsLoading, questionsError, settings?.language, subjectId])
 
   // State initialization (needed before calling the hook)
   const [current, setCurrent]                 = useState(0)
@@ -569,6 +576,9 @@ export default function TestPage() {
   }, [])
 
   if (!q) {
+    if (questionsError && !questionsLoaded) {
+      return <QuestionsLoadError error={questionsError} lang={settings?.language || 'uz'} />
+    }
     if (questionsLoading || !questionsLoaded) {
       return (
         <div className="flex flex-col items-center justify-center min-h-screen text-pmuted gap-3">
