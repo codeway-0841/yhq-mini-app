@@ -141,4 +141,60 @@ describe('server/config assertBotWebhookConfig (bot.ts entry — alohida)', () =
   })
 })
 
+describe("server/config ALLOWED_ORIGIN ro'yxati (domen ko'chirish)", () => {
+  beforeEach(() => {
+    for (const k of KEYS) saved.set(k, process.env[k])
+    vi.resetModules()
+  })
+  afterEach(() => {
+    for (const [k, v] of saved) {
+      if (v === undefined) delete process.env[k]
+      else process.env[k] = v
+    }
+    vi.resetModules()
+  })
+
+  async function bootConfig() {
+    process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
+    const mod = await import('../../../server/config')
+    return mod.config
+  }
+
+  it("vergulli ro'yxat: har ikkala domen ham ruxsat etiladi", async () => {
+    process.env['ALLOWED_ORIGIN'] = 'https://kivvi.uz,https://yhq-mini-app.vercel.app'
+    const config = await bootConfig()
+    expect(config.server.allowedOrigins).toContain('https://kivvi.uz')
+    expect(config.server.allowedOrigins).toContain('https://yhq-mini-app.vercel.app')
+    // Capacitor origin'lari saqlanadi
+    expect(config.server.allowedOrigins).toContain('capacitor://localhost')
+  })
+
+  it("birlamchi origin = ro'yxatdagi birinchisi", async () => {
+    process.env['ALLOWED_ORIGIN'] = 'https://kivvi.uz,https://yhq-mini-app.vercel.app'
+    const config = await bootConfig()
+    expect(config.server.allowedOrigin).toBe('https://kivvi.uz')
+  })
+
+  it("bo'sh joy va oxirgi slash tozalanadi", async () => {
+    process.env['ALLOWED_ORIGIN'] = ' https://kivvi.uz/ , https://www.kivvi.uz// '
+    const config = await bootConfig()
+    expect(config.server.allowedOrigins).toContain('https://kivvi.uz')
+    expect(config.server.allowedOrigins).toContain('https://www.kivvi.uz')
+  })
+
+  it('bitta origin (eski format) ishlashda davom etadi', async () => {
+    process.env['ALLOWED_ORIGIN'] = 'https://kivvi.uz'
+    const config = await bootConfig()
+    expect(config.server.allowedOrigin).toBe('https://kivvi.uz')
+    expect(config.server.allowedOriginExplicit).toBe(true)
+  })
+
+  it("faqat vergul/bo'sh joy = berilmagan deb hisoblanadi (WS fail-open emas)", async () => {
+    process.env['ALLOWED_ORIGIN'] = ' , , '
+    const config = await bootConfig()
+    expect(config.server.allowedOriginExplicit).toBe(false)
+    expect(config.server.allowedOrigin).toBe('http://localhost:5173')
+  })
+})
+
 // config moduli env snapshot'ini import paytida oladi — reset shart (yuqorida chaqiriladi).

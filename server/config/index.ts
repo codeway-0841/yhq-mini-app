@@ -16,6 +16,8 @@ const envSchema = z.object({
 
   /** Server */
   PORT:           z.string().regex(/^\d+$/).optional(),
+  /** CORS/WS origin allowlist — bitta origin yoki vergul bilan ajratilgan
+   *  ro'yxat (domen ko'chirish davrida eski+yangi ikkalasi ham kerak). */
   ALLOWED_ORIGIN: z.string().optional(),
 
   /** Telegram Bot — production'da MAJBURIY (pastda assertProdConfig).
@@ -77,6 +79,17 @@ const envSchema = z.object({
 // Startup'da parse — format xatolar (masalan bo'sh DATABASE_URL) darhol ko'rinadi
 const env = envSchema.parse(process.env)
 
+/** ALLOWED_ORIGIN'ni ro'yxatga aylantiradi: vergul bilan ajratiladi, bo'sh
+ *  elementlar va oxirgi `/` tashlanadi (`https://a.uz/` va `https://a.uz`
+ *  CORS uchun bir xil origin — brauzer hech qachon slash bilan yubormaydi). */
+function parseOrigins(raw: string | undefined): string[] {
+  if (!raw) return []
+  return raw
+    .split(',')
+    .map((o) => o.trim().replace(/\/+$/, ''))
+    .filter((o) => o.length > 0)
+}
+
 /** Production app boot xavfsizligi: xavfsizlikka ta'sir qiluvchi secret'lar
  *  YO'Q bo'lsa server ishga tushMASLIGI kerak (fail-open himoyasi):
  *  - BOT_TOKEN — butun API + WS authsiz qoladi;
@@ -100,7 +113,7 @@ export function assertProdConfig(): void {
     // WS origin allowlist + CORS prod domeni (audit A3): yo'q bo'lsa octagon
     // origin tekshiruvi FAIL-OPEN ishlaydi va CORS localhost:5173 default'ga
     // tushadi — prod'da ikkalasi ham xavfli.
-    if (!env.ALLOWED_ORIGIN) missing.push('ALLOWED_ORIGIN')
+    if (parseOrigins(env.ALLOWED_ORIGIN).length === 0) missing.push('ALLOWED_ORIGIN')
     if (missing.length > 0) {
       throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
     }
@@ -134,20 +147,24 @@ export const config = {
 
   server: {
     port:           Number(env.PORT ?? '3001'),
-    allowedOrigin:  env.ALLOWED_ORIGIN ?? 'http://localhost:5173',
-    /** CORS/WS uchun ruxsat etilgan barcha origin'lar — ALLOWED_ORIGIN +
-     *  Capacitor native WebView origin'lari (Android https://localhost yoki
-     *  http://localhost, iOS capacitor://localhost). SDK konstantalari,
-     *  secret emas — env'siz statik ro'yxat. */
+    /** Birlamchi (kanonik) origin — bot tugmalari/redirect uchun. Ro'yxat
+     *  berilgan bo'lsa birinchisi. */
+    allowedOrigin:  parseOrigins(env.ALLOWED_ORIGIN)[0] ?? 'http://localhost:5173',
+    /** CORS/WS uchun ruxsat etilgan barcha origin'lar — ALLOWED_ORIGIN
+     *  ro'yxati + Capacitor native WebView origin'lari (Android
+     *  https://localhost yoki http://localhost, iOS capacitor://localhost).
+     *  SDK konstantalari, secret emas — env'siz statik ro'yxat. */
     allowedOrigins: [
-      env.ALLOWED_ORIGIN ?? 'http://localhost:5173',
+      ...(parseOrigins(env.ALLOWED_ORIGIN).length > 0
+        ? parseOrigins(env.ALLOWED_ORIGIN)
+        : ['http://localhost:5173']),
       'capacitor://localhost',
       'https://localhost',
       'http://localhost',
     ] as string[], // mutable — cors() `StaticOrigin` readonly array qabul qilmaydi
     /** ALLOWED_ORIGIN ANIQ berilganmi? WS origin himoyasi FAQAT shunda
      *  fail-closed — aks holda default qiymat hamma connection'ni yopardi. */
-    allowedOriginExplicit: Boolean(env.ALLOWED_ORIGIN),
+    allowedOriginExplicit: parseOrigins(env.ALLOWED_ORIGIN).length > 0,
   },
 
   // Used to verify Telegram initData (HMAC-SHA256 with bot token).
