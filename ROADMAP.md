@@ -23,6 +23,15 @@
   `DATABASE_URL` uch joyda almashtirildi: Vercel `production` + `preview`, Render,
   lokal `.env`. `/api/ready` 200 qaytardi.
   Runbook + tekshiruv skripti: `infra/db/README.md`.
+- [ ] **Fluid Compute holatini tekshirish** — Vercel dashboard → Settings → Functions.
+  Yoqilgan bo'lsa Vercel instansiyani so'rovlar orasida qayta ishlatadi va sovuq
+  start kamayadi; kod o'zgarmaydi. Men bu sozlamani API orqali o'qiy olmadim.
+  Kontekst: 2026-08-27 da `@sentry/node` dinamik yuklashga o'tkazildi va sovuq
+  `/api/health` 3.63s dan 1.35s ga tushdi (bittadan o'lchov). Qolgan ~0.9s —
+  Node boot + `drizzle-orm`/`express` yuklanishi. Fluid uni ham kesadi.
+  Yana ~0.8s Neon compute uyg'onishidan (`ready` sovuq 1.37s, issiq 0.69s) —
+  free tarifda autosuspend 5 daqiqa, o'zgartirib bo'lmaydi.
+
 - [ ] **Eski Neon loyihasini o'chirish** — `ep-late-resonance-ax7o314j` (`us-east-2`).
   Kamida BIR HAFTA turishi kerak (2026-09-03 dan keyin) — muammo chiqsa
   `DATABASE_URL` ni orqaga qaytarish yagona rollback yo'li. O'chirilgach eski
