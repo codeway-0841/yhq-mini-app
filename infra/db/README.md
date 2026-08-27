@@ -1,5 +1,22 @@
 # Baza regionini ko'chirish — us-east-2 → eu-central-1
 
+> **BAJARILDI — 2026-08-27.** Yangi loyiha: `ep-mute-rain-b1e8v8fq`
+> (`aws-eu-central-1`, PostgreSQL 18.6). 49 jadval ko'chdi, qator sonlari mos,
+> yo'qotish nol — dump bilan cutover orasida eski bazaga yozuv tushmagan.
+> `DATABASE_URL` Vercel `production`+`preview`, Render va lokal `.env` da
+> almashtirildi; `/api/ready` 200.
+>
+> Quyidagi qadamlar tarix uchun qoldirildi — kelgusi ko'chirishlarda qayta
+> ishlatiladi. Ikkita amaliy saboq:
+>
+> - `pg_restore -O` da `DEFAULT ACL ... cloud_admin` uchun ikkita
+>   `permission denied to change default privileges` xatosi NORMAL. Neon o'sha
+>   huquqlarni o'zi boshqaradi; boshqa yozuvlar to'liq tiklanadi.
+> - `verify-migration.ts` faqat cutover'dan OLDIN mazmunli. Cutover'dan keyin
+>   yangi baza jonli trafikdan oldinga ketadi va skript soxta `exit 1` beradi.
+>   Farq YANGI tomonda ko'p bo'lsa — bu yo'qotish emas.
+
+
 ## Nima uchun
 
 Hisoblash Frankfurtda, baza Ogayoda:
@@ -37,8 +54,10 @@ Manba `PostgreSQL 18.6`, extension'lar: `plpgsql`, `pgcrypto`.
 - Yangi Neon loyihasi **PostgreSQL 18** bilan yaratilsin — katta versiya mos
   kelmasa `pg_restore` yiqiladi.
 - `pg_dump` / `pg_restore` mijozi ham **18-versiya** bo'lishi kerak.
-  Bu mashinada `pg_dump` **o'rnatilmagan** — avval PostgreSQL 18 client tools
-  o'rnating (yoki Neon'ning import sahifasidan foydalaning).
+  2026-08-27 da o'rnatildi: `winget install PostgreSQL.PostgreSQL.18 --custom
+  "--disable-components server,pgAdmin,stackbuilder"` — faqat mijoz vositalari,
+  server service yo'q. PATH ga qo'shilmaydi, to'liq yo'l bilan chaqiring:
+  `C:\Program Files\PostgreSQL\18\bin\pg_dump.exe`.
 - Ikkala ulanish satri ham **UNPOOLED** bo'lsin. Pooler (PgBouncer) ortida
   `pg_dump`/`pg_restore` ishlamaydi.
 

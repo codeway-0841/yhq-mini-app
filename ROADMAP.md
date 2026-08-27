@@ -16,12 +16,17 @@
   Ikkalasi ham natija qaytarsa — ✅. `0001_add_phone` jurnalda yo'q, lekin ustun bor bo'lsa → jurnal INSERT kerak (skript tayyor, so'rang).
 - [ ] **Vercel → Project → Cron Jobs** — FAQAT 2 ta yozuv ko'rinishi kerak: `daily-suite` (14:00 UTC), `weekly-suite` (dushanba 00:15 UTC)
 - [ ] **Ilovani sinash** — yopib-oching, Dashboard/bir test/izoh/streak ishlasin
-- [ ] **Baza regionini ko'chirish** — Neon `us-east-2` (Ogayo), Vercel `fra1` va
-  Render `frankfurt`. Har bir SQL so'rovi Atlantikani kesadi (~90-110 ms) — test
-  javobini belgilaganda sezilarli kutish shundan. 19 MB, 11 ta foydalanuvchi:
-  hozir ko'chirish arzon, chiqishdan keyin qiyinlashadi.
+- [x] **Baza regionini ko'chirish** — BAJARILDI 2026-08-27. Neon `us-east-2` dan
+  `aws-eu-central-1` ga ko'chirildi (`ep-mute-rain-b1e8v8fq`), endi Vercel `fra1`
+  va Render `frankfurt` bilan bir regionda. Har bir SQL so'rovidan ~100 ms tejaldi.
+  49 jadval, 19 MB, qator sonlari bir-biriga mos — yo'qotish nol.
+  `DATABASE_URL` uch joyda almashtirildi: Vercel `production` + `preview`, Render,
+  lokal `.env`. `/api/ready` 200 qaytardi.
   Runbook + tekshiruv skripti: `infra/db/README.md`.
-  Neon regionini o'zgartirib BO'LMAYDI — `aws-eu-central-1` da yangi loyiha kerak.
+- [ ] **Eski Neon loyihasini o'chirish** — `ep-late-resonance-ax7o314j` (`us-east-2`).
+  Kamida BIR HAFTA turishi kerak (2026-09-03 dan keyin) — muammo chiqsa
+  `DATABASE_URL` ni orqaga qaytarish yagona rollback yo'li. O'chirilgach eski
+  parol ham o'ladi; u hozir `.claude/settings.local.json` da ochiq matnda.
 - [ ] **Vercel Firewall qoidalarini PUBLISH qilish** — 2 ta qoida QORALAMADA turibdi,
   hali jonli EMAS. Ikkalasi ham `log` rejimida, hech kimni bloklamaydi:
   ```bash
