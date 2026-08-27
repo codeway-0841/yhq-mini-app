@@ -174,7 +174,9 @@ export default function LoginPage() {
         )}
 
         <div className="rounded-container border border-pline bg-pcard p-4">
-          {/* Segment: Kirish | Ro'yxatdan o'tish */}
+          {/* Segment: Kirish | Ro'yxatdan o'tish — faqat phone/email auth yoqilganda
+              (Telegram login o'zi register/login'ni avtomatik hal qiladi) */}
+          {config.phoneEmailAuthEnabled && (
           <div className="grid grid-cols-2 gap-1 p-1 rounded-control bg-psurface border border-pline mb-4">
             {(['login', 'register'] as const).map((m) => (
               <button
@@ -189,9 +191,10 @@ export default function LoginPage() {
               </button>
             ))}
           </div>
+          )}
 
           {/* Method switcher: Phone | Email */}
-          {method !== 'forgot' && step === 'form' && (
+          {config.phoneEmailAuthEnabled && method !== 'forgot' && step === 'form' && (
             <div className="flex gap-2 mb-4">
               {(['phone', 'email'] as const).map((m) => (
                 <button
@@ -209,7 +212,7 @@ export default function LoginPage() {
           )}
 
           {/* Forgot Password Form */}
-          {method === 'forgot' && (
+          {config.phoneEmailAuthEnabled && method === 'forgot' && (
             <ForgotPasswordForm
               language={language}
               onBack={() => setMethod('phone')}
@@ -217,7 +220,7 @@ export default function LoginPage() {
           )}
 
           {/* Email Auth Form */}
-          {method === 'email' && step === 'form' && (
+          {config.phoneEmailAuthEnabled && method === 'email' && step === 'form' && (
             <>
               <EmailAuthForm
                 mode={mode}
@@ -237,7 +240,7 @@ export default function LoginPage() {
           )}
 
           {/* Phone Form */}
-          {method === 'phone' && step === 'form' && (
+          {config.phoneEmailAuthEnabled && method === 'phone' && step === 'form' && (
             <form onSubmit={submitForm} className="flex flex-col gap-3" noValidate>
               <label htmlFor="phone" className="text-[11px] font-semibold text-pmuted uppercase tracking-wide -mb-1.5">
                 {tt('authPhone')}
@@ -313,7 +316,7 @@ export default function LoginPage() {
           )}
 
           {/* OTP step (phone only) */}
-          {method === 'phone' && step === 'otp' && (
+          {config.phoneEmailAuthEnabled && method === 'phone' && step === 'otp' && (
             <form onSubmit={verifyOTP} className="flex flex-col gap-4" noValidate>
               <div className="text-center">
                 <p className="text-[13px] text-pmuted mb-1">
@@ -357,11 +360,19 @@ export default function LoginPage() {
           {/* Telegram Login */}
           {method !== 'forgot' && step === 'form' && showTelegramLogin && (
             <>
+              {/* "YOKI" ajratgichi — faqat yuqorida phone/email formalar ko'rinib turganda kerak */}
+              {config.phoneEmailAuthEnabled && (
               <div className="flex items-center gap-3 my-4">
                 <span className="flex-1 h-px bg-plineStrong" />
                 <span className="text-[11px] font-semibold text-pmuted uppercase">{tt('authOr')}</span>
                 <span className="flex-1 h-px bg-plineStrong" />
               </div>
+              )}
+              {/* Xato xabari — phone/email o'chirilganda Telegram oqimi xatolari shu yerda ko'rinadi
+                  (flag yoqilganda phone formadagi joyida ko'rsatiladi — dublikat bo'lmasligi uchun) */}
+              {!config.phoneEmailAuthEnabled && error && (
+                <p className="text-[12px] font-semibold text-pdanger text-center mb-2 animate-fadeIn">{error}</p>
+              )}
               {telegramLoginCode ? (
                 <div className="flex flex-col items-center gap-2 py-3">
                   <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />

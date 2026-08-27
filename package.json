@@ -77,7 +77,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/build.mjs",
     "build:api": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/api-entry/index.ts','server/api-entry/bot.ts'],bundle:true,platform:'node',format:'esm',outdir:'api/dist',packages:'external'})\"",
     "build:server": "node --input-type=module -e \"import {build} from 'esbuild'; await build({entryPoints:['server/index.ts'],bundle:true,platform:'node',format:'esm',outdir:'server/dist',packages:'external'})\"",
     "vercel-build": "if [ \"$VERCEL_ENV\" = \"production\" ]; then npm run db:migrate; fi && npm run build:api && npm run build",
