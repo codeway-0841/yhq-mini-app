@@ -80,6 +80,14 @@ export default function TestPage() {
     }
   }, [questionsLoaded, questionsLoading, questionsError, settings?.language, subjectId])
 
+  // Serverless backend'ni OLDINDAN uyg'otish: boot'dan testgacha o'tgan
+  // vaqtda Vercel funksiyasi + Neon DB yana suspend bo'lgan bo'lishi mumkin —
+  // shunda 1-javob 5-8s cold start'ga urilib "offline"ga tushardi. Ping
+  // user 1-savolni o'qiyotganda backend'ni isitadi (fire-and-forget).
+  useEffect(() => {
+    api.warmUp()
+  }, [])
+
   // State initialization (needed before calling the hook)
   const [current, setCurrent]                 = useState(0)
   const [answers, setAnswers]                 = useState<(string | null)[]>([])

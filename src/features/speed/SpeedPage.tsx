@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { X, Zap, Check } from 'lucide-react'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
+import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { haptics } from '../../platform/haptics'
@@ -52,6 +53,12 @@ export default function SpeedPage() {
   // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
   const answerTimer = useAnswerTimer(q?.id)
   const answered = selected !== null
+
+  // Serverless backend'ni OLDINDAN uyg'otish — aks holda 1-javob cold start
+  // (5-8s) tufayli "offline"ga tushib qolardi (TestPage'dagi bilan bir xil).
+  useEffect(() => {
+    api.warmUp()
+  }, [])
 
   // Har savol uchun countdown — javob berilsa yoki vaqt tugasa to'xtaydi
   useEffect(() => {

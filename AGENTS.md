@@ -22,7 +22,11 @@ src/
     store/         #     Zustand store'lar (persist middleware) — account.ts = YAGONA reset ro'yxati
     lib/           #     analytics, outbox, sentry, sounds, navigation, spaced-repetition, test-session,
                    #     session (Bearer token store — 'yhq-session' localStorage + expired/changed event'lar), ...
-    api/           #     HTTP client (index.ts) — har so'rovga initData header
+    api/           #     HTTP client (index.ts) — har so'rovga initData header;
+                   #     warmUp() — serverless cold-start ping (GET /api/ready, fire-and-forget):
+                   #     TestPage/SpeedPage MOUNT'da chaqiriladi, aks holda 1-javob Vercel fn +
+                   #     Neon suspend uyg'onishiga (5-8s) urilib 8s timeout'dan "offline"ga tushardi
+                   #     (AdaptivePage'da mount allaqachon serverga boradi — alohida ping shart emas)
     i18n/          #     Tarjimalar (index.ts) — useT / t
     hooks/         #     useCountUp, usePullToRefresh
     config/        #     subjects.tsx (UI_MAP), themes.ts, achievements.ts, index.ts (runtime env)

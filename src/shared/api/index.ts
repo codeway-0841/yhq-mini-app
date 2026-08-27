@@ -299,6 +299,21 @@ export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
 }
 
 export const api = {
+  /**
+   * Serverless backend'ni "uyg'otish" — fire-and-forget (javob MUHIM EMAS).
+   *
+   * Vercel funksiyasi + Neon DB idle'dan keyin SUSPEND bo'ladi: birinchi real
+   * so'rov (masalan, testdagi 1-javob POST /result) cold start tufayli 5-8s
+   * kutadi — 8s client timeout yoki server xatosiga urilib, javob "offline"ga
+   * (outbox) tushib qolardi. Test sahifasi ochilganda shu ping yuboriladi:
+   * user 1-savolni o'qib javob berguncha backend isib QOLADI. `/ready` DB
+   * ping qiladi (`SELECT 1`) — ya'ni funksiya HAM, Neon compute HAM uyg'onadi
+   * (`/health` DB'ga tegmaydi, u yetarli emas). Auth'siz public endpoint.
+   */
+  warmUp: (): void => {
+    fetch(`${config.apiBaseUrl}/ready`).catch(() => {})
+  },
+
   // ── Auth — SMS OTP ────────────────────────────────────────────────────────
   requestOTP: (data: { phone: string }) =>
     request<{ sent: boolean }>('POST', '/auth/otp/request', data),
