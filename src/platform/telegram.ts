@@ -23,6 +23,8 @@ interface BackButton {
 interface TelegramWebApp {
   ready?(): void
   expand?(): void
+  /** Mini App'ni yopadi (user bot'dan qayta ochganda FRESH initData beriladi). */
+  close?(): void
   openTelegramLink?(url: string): void
   shareURL?(url: string, text?: string): void
   initData?: string
@@ -119,17 +121,72 @@ export function shareUrl(url: string, text?: string): void {
 }
 
 /**
- * initData 401 (auth_date eskirgan — server replay oynasi qisqartirilganda
- * sodir bo'ladi) — Mini App'ni QAYTA YUKLAYDI: Telegram iframe qayta ochilganda
- * yangi initData (yangi auth_date + hash) beradi. Loop himoyasi: 60 sekund
- * ichida faqat 1 marta (sessionStorage timestamp).
+ * initData 401 (auth_date eskirgan — server replay oynasi INITDATA_MAX_AGE_SECONDS,
+ * default 1 soat) — Mini App'ni QAYTA YUKLAYDI.
+ *
+ * MUHIM (2026-08-27 incident): Telegram ko'p platformalarda reload'da O'SHA
+ * sessiya initData'sini qaytaradi — auth_date O'ZGARMAYDI. Eski 60s-guard
+ * yetarli emas edi: sessiyani 1+ soat ochiq qoldirgan user cheksiz
+ * reload→401→reload sikliga tushib qolardi (test javobi yuborilganda sahifa
+ * qayta yuklanardi, yangi akkaunt profili umuman yuklanmasdi; 72 daqiqada 218
+ * ta full-bank fetch kuzatilgan).
+ *
+ * Yangi qoida: HAR BIR noyob auth_date uchun FAQAT 1 reload. Reload'dan keyin
+ * Telegram xuddi shu auth_date'ni qaytarsa — demak bu sessiyada initData
+ * YANGILANMAYDI — keyingi 401'larda reload YO'Q, `INITDATA_DEAD_EVENT`
+ * tarqaladi (App.tsx blokirovka ekranini ko'rsatadi: "ilovani yopib qayta
+ * oching" — yagona HAQIQIY yechim, chunki fresh initData faqat yangi Mini App
+ * launch'da tug'iladi).
  */
 const INITDATA_RELOAD_GUARD = 'yhq:initdata-reload-at'
-export function requestFreshInitData(): void {
+export const INITDATA_DEAD_EVENT = 'yhq:initdata-dead'
+
+interface ReloadAttempt { at: number; authDate: number | null }
+
+/** Sof qaror funksiyasi (test uchun eksport): reload yoki dead? */
+export function nextInitDataAction(
+  stored: ReloadAttempt | null,
+  authDate: number | null,
+  now: number,
+): 'reload' | 'dead' {
+  if (!stored) return 'reload'
+  // 10 daqiqadan eski yozuv — avvalgi sessiya merosi, kechiramiz
+  if (now - stored.at > 10 * 60_000) return 'reload'
+  // auth_date O'ZGARGAN — bu yangi sessiya/launch, unga 1 reload huquqi bor
+  if (stored.authDate !== authDate) return 'reload'
+  // Shu auth_date bilan allaqachon reload qilingan — Telegram yangilamaydi: DEAD
+  return 'dead'
+}
+
+function readAttempt(): ReloadAttempt | null {
   try {
-    const last = Number(sessionStorage.getItem(INITDATA_RELOAD_GUARD) ?? 0)
-    if (Number.isFinite(last) && Date.now() - last < 60_000) return
-    sessionStorage.setItem(INITDATA_RELOAD_GUARD, String(Date.now()))
-  } catch { /* private mode — himoyasiz davom (reload loop xavfi past) */ }
+    const raw = localStorage.getItem(INITDATA_RELOAD_GUARD)
+    if (!raw) return null
+    const parsed = JSON.parse(raw) as Partial<ReloadAttempt>
+    return typeof parsed.at === 'number' ? { at: parsed.at, authDate: typeof parsed.authDate === 'number' ? parsed.authDate : null } : null
+  } catch { return null }
+}
+
+function dispatchDead(): void {
+  if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+    window.dispatchEvent(new Event(INITDATA_DEAD_EVENT))
+  }
+}
+
+export function requestFreshInitData(): void {
+  const authDate = getTelegramWebApp()?.initDataUnsafe?.auth_date ?? null
+  const now = Date.now()
+  if (nextInitDataAction(readAttempt(), authDate, now) === 'dead') {
+    dispatchDead()
+    return
+  }
+  try { localStorage.setItem(INITDATA_RELOAD_GUARD, JSON.stringify({ at: now, authDate } satisfies ReloadAttempt)) }
+  catch { /* private mode — yozilmasa ham reload qilamiz */ }
   window.location.reload()
+}
+
+/** Mini App'ni yopish — fresh initData olishning YAGONA ishonchli yo'li
+ *  (keyingi ochilishda Telegram yangi auth_date bilan initData tuzadi). */
+export function closeMiniApp(): void {
+  getTelegramWebApp()?.close?.()
 }

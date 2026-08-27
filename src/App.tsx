@@ -18,7 +18,7 @@ import { ensureFontLoaded } from './shared/lib/fonts'
 import SplashScreen from './features/onboarding/SplashScreen'
 import { useDailyStore } from './shared/store/useDailyStore'
 import { useToast } from './shared/components/ToastContainer'
-import { useT } from './shared/i18n'
+import { useT, t } from './shared/i18n'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -57,7 +57,7 @@ const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
 const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage'))
 const ResetPasswordPage = lazy(() => import('./features/auth/pages/ResetPasswordPage'))
 
-import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData } from './platform/telegram'
+import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen } from './platform/native'
 
 function Layout() {
@@ -204,16 +204,23 @@ export default function App() {
   const [isTelegram]   = useState(() => Boolean(getTelegramUser()?.id))
   // Bearer sessiya holati — set/clear event'lari orqali kuzatiladi (LoginPage render qarori)
   const [hasSession, setHasSession] = useState(() => Boolean(getSessionToken()))
+  // initData eskirgan va Telegram reload'da yangilamadi — faqat "yopib-qayta ochish"
+  // yechim (2026-08-27 incident: cheksiz reload sikli). Blokirovka ekrani.
+  const [initDataDead, setInitDataDead] = useState(false)
+  const lang = useAppStore((s) => s.settings.language)
 
   // Session expire (401) → akkaunt reset + LoginPage; token set/clear → isAuthed yangilanadi
   useEffect(() => {
     const onExpired = () => { setHasSession(false); resetAccountToLoggedOut() }
     const onChanged = () => setHasSession(Boolean(getSessionToken()))
+    const onInitDataDead = () => setInitDataDead(true)
     window.addEventListener(SESSION_EXPIRED_EVENT, onExpired)
     window.addEventListener(SESSION_CHANGED_EVENT, onChanged)
+    window.addEventListener(INITDATA_DEAD_EVENT, onInitDataDead)
     return () => {
       window.removeEventListener(SESSION_EXPIRED_EVENT, onExpired)
       window.removeEventListener(SESSION_CHANGED_EVENT, onChanged)
+      window.removeEventListener(INITDATA_DEAD_EVENT, onInitDataDead)
     }
   }, [])
 
@@ -419,6 +426,25 @@ export default function App() {
       }
     }
   }, [])
+
+  // initData DEAD — reload Telegram'ni yangilamadi, yagona yechim: yopib-qayta ochish.
+  // Bu ekran splash'dan ham OLDIN turadi (dead holatda boot'un davomi ma'nosiz).
+  if (initDataDead) {
+    return (
+      <>
+        <ThemeEffect />
+        <div className="min-h-screen bg-canvas text-fg flex items-center justify-center px-6">
+          <div className="card-premium max-w-sm w-full text-center flex flex-col items-center gap-3">
+            <div className="text-lg font-bold">{t(lang, 'sessionStaleTitle')}</div>
+            <p className="text-sm text-pmuted leading-relaxed">{t(lang, 'sessionStaleBody')}</p>
+            <button type="button" className="btn-premium w-full mt-1" onClick={() => closeMiniApp()}>
+              {t(lang, 'sessionStaleClose')}
+            </button>
+          </div>
+        </div>
+      </>
+    )
+  }
 
   if (!initialized) {
     return (
