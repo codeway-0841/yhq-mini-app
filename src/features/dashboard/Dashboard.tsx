@@ -4,7 +4,7 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket,
-  Bot, BookOpen, ClipboardList, HeartCrack, Crown, NotebookText,
+  Bot, BookOpen, HeartCrack, Crown, NotebookText,
 } from 'lucide-react'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -16,13 +16,15 @@ import { useToast } from '../../shared/components/ToastContainer'
 import { Button } from '../../shared/components/ui/button'
 import { Alert, AlertDescription } from '../../shared/components/ui/alert'
 import { track } from '../../shared/lib/analytics'
+import { playSound } from '../../shared/lib/sounds'
+import { haptics } from '../../platform/haptics'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
 import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
-import { ServiceCard, MockGridCard } from './components/GridCards'
+import { ServiceCard, ModeList, ModeRow } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
@@ -88,7 +90,7 @@ function RejimlarCarousel({ title, items, lang }: {
   return (
     <div>
       <div className="flex items-center justify-between px-5 mb-2.5">
-        <p className="text-[17px] font-bold text-pfg tracking-tight">{title}</p>
+        <p className="font-display text-[19px] font-bold tracking-[-0.01em] text-pfg">{title}</p>
         <button onClick={onYana} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
           {lang === 'ru' ? 'Ещё' : 'Yana'}
         </button>
@@ -243,23 +245,33 @@ export default function Dashboard() {
             onContinue={continueInfo.go}
           />
 
-          {/* 4. Quick Actions (main grid) — 3x2 (6ta) */}
-          <div className="mb-6 grid grid-cols-3 gap-2.5 px-5 sm:gap-3">
-            <MockGridCard icon={ClipboardList} label={tt('testlarTitle')}
-              onClick={() => navigate('/testlar')} />
-            <MockGridCard icon={BookOpen} label={tt('topics')}
-              onClick={goTopics} />
-            <MockGridCard icon={Bot} label={tt('aiTutor')}
-              iconColor="var(--p-purple)" comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-            <MockGridCard icon={HeartCrack} label={tt('mistakes')}
-              badge={mistakesCount || null} onClick={goMistakes} />
-            <MockGridCard icon={Ticket} label={tt('tickets')}
-              onClick={() => navigate('/biletlar')} />
-            <MockGridCard icon={Swords} label={tt('duelTitle')}
-              onClick={goOctagon} />
+          {/* 4. HERO CTA — sahifaning YAGONA aksentli amali (rang intizomi:
+              aksent faqat shu yerda). Asosiy harakat grid'dan chiqarildi —
+              bir ekranda bitta qahramon, qolganlari unga bo'ysunadi. */}
+          <div className="mb-5 px-5">
+            <Button
+              size="lg"
+              block
+              onClick={() => { playSound('click'); haptics.impact('medium'); navigate('/testlar') }}
+            >
+              <Play size={20} strokeWidth={2.25} fill="currentColor" />
+              {tt('startTestBtn')}
+            </Button>
           </div>
 
-          {/* 5. Modes — auto carousel */}
+          {/* 5. Rejimlar — grouped list (uniform karta panjara O'RNIGA):
+              bitta sirt + hairline qatorlar, flat neytral ikonkalar */}
+          <div className="mb-6 px-5">
+            <ModeList>
+              <ModeRow icon={BookOpen} label={tt('topics')} onClick={goTopics} />
+              <ModeRow icon={Ticket} label={tt('tickets')} onClick={() => navigate('/biletlar')} />
+              <ModeRow icon={Swords} label={tt('duelTitle')} onClick={goOctagon} />
+              <ModeRow icon={HeartCrack} label={tt('mistakes')} badge={mistakesCount || null} onClick={goMistakes} />
+              <ModeRow icon={Bot} label={tt('aiTutor')} comingSoon onClick={() => showToast(tt('comingSoonD'))} />
+            </ModeList>
+          </div>
+
+          {/* 6. Modes — auto carousel */}
           <div className="mb-6">
             <RejimlarCarousel
               title={tt('modesTitle')}
@@ -277,10 +289,10 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* 5b. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
+          {/* 6b. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
           <BossCard />
 
-          {/* 6. Leaderboard */}
+          {/* 7. Leaderboard */}
           <div>
             <LeaguePreview
               lang={settings.language}
@@ -289,7 +301,7 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* 7. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
+          {/* 8. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
           <div className="mx-5 mb-6 mt-10 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
             <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
               <Crown size={19} strokeWidth={1.75} className="text-pgold" />
