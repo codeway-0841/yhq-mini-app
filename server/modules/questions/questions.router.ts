@@ -17,8 +17,19 @@ import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 
 const router = Router()
 
-/** Kontent endpointlari og'ir (to'liq savollar to'plami) — IP bo'yicha 60/min */
-const contentLimit = rateLimit({ maxPerMinute: 60, bucket: 'content', keyFn: (req) => req.ip ?? 'unknown' })
+/**
+ * Kontent endpointlari og'ir (to'liq savollar to'plami) — 60/min.
+ *
+ * Kalit FOYDALANUVCHI bo'yicha, IP bo'yicha emas: mobil operatorlar CGNAT
+ * ishlatadi va bitta public IP ortida minglab abonent bo'ladi, ya'ni IP
+ * chelagi begona odamlar o'rtasida bo'linib ketardi. Anonim so'rov uchungina
+ * IP'ga qaytamiz.
+ */
+const contentLimit = rateLimit({
+  maxPerMinute: 60,
+  bucket: 'content',
+  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+})
 
 const QuestionsQuery = z.object({
   topicId: z.string().regex(/^\d+$/).optional(),
@@ -69,26 +80,46 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   // FULL_BANK_DAILY_CAP martadan ko'p tortish — skript-refetch alomati. Normal
   // userlar CDN'dan oladi (origin'ga tushmaydi) → limit ularga tegmaydi.
   // userId bo'lsa (best-effort auth resolve) audit log'da ham yoziladi.
+  // KUZATUV rejimi — bloklamaydi, faqat signal yozadi.
+  //
+  // Ilgari cap oshsa 429 + retryAfterSeconds 86400 qaytarardi. Ikki sabab
+  // bilan olib tashlandi:
+  //
+  //  1) Kalit IP edi, mobil operatorlar esa CGNAT ishlatadi. Bitta public IP
+  //     ortidagi HAMMA foydalanuvchi kuniga jami 20 ta sovuq ochish ulashardi,
+  //     keyin butun ilova ular uchun 24 soatga o'lardi. Hech kim qoidabuzarlik
+  //     qilmasa ham.
+  //  2) Himoyalanayotgan narsa maxfiy emas: `toPublic()` `correctAnswer` ni
+  //     olib tashlaydi, ya'ni bu javobsiz savollar — ochiq kontent. Hujumchi
+  //     IP'ni arzonga almashtiradi, haqiqiy foydalanuvchi esa qamalib qoladi.
+  //     Noto'g'ri pozitivning narxi foydasidan katta.
+  //
+  // Signal (audit log + Sentry) SAQLANADI. Haqiqiy suiiste'mol ko'rinsa,
+  // qayta yoqishda kalit `userId` bo'lishi shart, IP emas.
   if (isAuthEnforced() && !topicId) {
     const userId = (req as { userId?: string }).userId
     const ip = req.ip ?? 'unknown'
-    const window = await dbRateConsumeWindow(`qbank:ip:${ip}`, FULL_BANK_DAILY_CAP, 24 * 3600)
-    if (!window.allowed) {
-      const abuse = await dbRateConsumeWindow(`qbank-abuse:ip:${ip}`, 3, 7 * 24 * 3600)
-      void authRepository.createAuditLog({
-        userId,
-        action: 'questions_fullbank_abuse',
-        resourceType: 'question_bank',
-        changes: { ip, count: window.count, cap: FULL_BANK_DAILY_CAP, abuseCount7d: abuse.count, repeatOffender: !abuse.allowed },
-        ipAddress: ip,
-      }).catch(() => {})
-      Sentry.captureMessage('questions full-bank fetch abuse', {
-        level: !abuse.allowed ? 'error' : 'warning',
-        tags: { ip, userId: userId ?? 'anon', count: window.count, abuseCount7d: abuse.count },
-      })
-      res.status(429).json({ error: 'too_many_requests', retryAfterSeconds: 86_400 })
-      return
-    }
+    // Limiter DB'si yiqilsa kontent berilaveradi — bu yerda fail-OPEN.
+    // Ilgari xato yuqoriga otilib 500 qaytarardi, ya'ni DB uzilishi savollarni
+    // butunlay o'chirardi.
+    try {
+      const key = userId ? `qbank:user:${userId}` : `qbank:ip:${ip}`
+      const window = await dbRateConsumeWindow(key, FULL_BANK_DAILY_CAP, 24 * 3600)
+      if (!window.allowed) {
+        const abuse = await dbRateConsumeWindow(`qbank-abuse:${key}`, 3, 7 * 24 * 3600)
+        void authRepository.createAuditLog({
+          userId,
+          action: 'questions_fullbank_abuse',
+          resourceType: 'question_bank',
+          changes: { ip, key, count: window.count, cap: FULL_BANK_DAILY_CAP, abuseCount7d: abuse.count, repeatOffender: !abuse.allowed, enforced: false },
+          ipAddress: ip,
+        }).catch(() => {})
+        Sentry.captureMessage('questions full-bank fetch over cap (observe-only)', {
+          level: !abuse.allowed ? 'warning' : 'info',
+          tags: { ip, userId: userId ?? 'anon', count: window.count, abuseCount7d: abuse.count },
+        })
+      }
+    } catch { /* limiter yiqildi — kontent bloklanmaydi */ }
   }
 
   const entry    = resolveSubject(subject)

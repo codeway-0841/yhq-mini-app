@@ -1,8 +1,15 @@
 /**
- * Audit content-protection regression (IP-model): /api/questions PUBLIC (CDN
- * cache qaytarildi, 2026-08-26), lekin BUTUN bankni (topicId'siz) yuklab olish
- * kuniga IP bo'yicha cheklangan — skript-refetch 429 + audit_logs +
- * Sentry signal. Topic-bounded so'rovlar cheklanmaydi (oddiy UX yo'li).
+ * /api/questions PUBLIC (CDN cache), butun bankni tortish esa KUZATILADI —
+ * lekin BLOKLANMAYDI.
+ *
+ * Cap ilgari 429 + retryAfterSeconds 86400 qaytarardi va IP bo'yicha
+ * kalitlanardi. Mobil operatorlar CGNAT ishlatgani uchun bitta public IP
+ * ortidagi hamma foydalanuvchi kuniga jami 20 ta sovuq ochishni ULASHARDI,
+ * so'ng butun ilova ular uchun 24 soatga o'lardi — hech kim qoidabuzarlik
+ * qilmasa ham. Himoyalanayotgan narsa maxfiy ham emas: `toPublic()`
+ * `correctAnswer` ni olib tashlaydi.
+ *
+ * Endi signal (audit log + Sentry) saqlanadi, javob esa 200 bo'lib qolaveradi.
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
@@ -46,7 +53,7 @@ const emptyProvider = {
   getQuestionById: vi.fn().mockResolvedValue(null),
 }
 
-describe('GET /api/questions — public + IP full-bank kunlik cap', () => {
+describe('GET /api/questions — full-bank cap KUZATUV rejimida', () => {
   beforeEach(() => {
     h.count = 1
     vi.restoreAllMocks()
@@ -62,15 +69,36 @@ describe('GET /api/questions — public + IP full-bank kunlik cap', () => {
     expect(res.headers['cache-control']).toContain('max-age=300')
   })
 
-  it('cap oshgan (count=21) → 429 + abuse audit log, provider chaqirilmaydi', async () => {
+  it('cap oshgan (count=21) → 200 BERILADI, lekin audit log yoziladi', async () => {
     h.count = 21
     const res = await request(buildApp()).get('/api/questions')
-    expect(res.status).toBe(429)
-    expect(res.body.error).toBe('too_many_requests')
+    // Bloklash YO'Q — aks holda bitta CGNAT shlyuzidagi begona odamlar
+    // bir-birini kun bo'yi ilovadan mahrum qilardi.
+    expect(res.status).toBe(200)
+    expect(emptyProvider.getAllQuestions).toHaveBeenCalled()
+    // Signal esa saqlanadi — suiiste'mol ko'rinsa qaror qabul qilish uchun
     expect(authRepository.createAuditLog).toHaveBeenCalledWith(
-      expect.objectContaining({ action: 'questions_fullbank_abuse' }),
+      expect.objectContaining({
+        action: 'questions_fullbank_abuse',
+        changes: expect.objectContaining({ enforced: false }),
+      }),
     )
-    expect(emptyProvider.getAllQuestions).not.toHaveBeenCalled()
+  })
+
+  it('limiter DB\'si yiqilsa kontent BLOKLANMAYDI (fail-open)', async () => {
+    const limiter = await import('../../../server/middleware/db-rate-limiter')
+    // Spy ATAYLAB shu test ichida tiklanadi: `vi.restoreAllMocks()`
+    // `vi.mock()` bilan almashtirilgan modul eksportini qaytara olmaydi,
+    // shuning uchun rad etish keyingi testlarga oqib ketardi.
+    const spy = vi.spyOn(limiter, 'dbRateConsumeWindow').mockRejectedValue(new Error('db down'))
+    try {
+      const res = await request(buildApp()).get('/api/questions')
+      // Ilgari xato yuqoriga otilib 500 qaytarardi — DB uzilishi savollarni
+      // butunlay o'chirardi.
+      expect(res.status).toBe(200)
+    } finally {
+      spy.mockRestore()
+    }
   })
 
   it("topicId BILAN so'rov cap hisoblanmaydi (oddiy foydalanish yo'li)", async () => {
@@ -80,11 +108,10 @@ describe('GET /api/questions — public + IP full-bank kunlik cap', () => {
     expect(emptyProvider.getQuestionsByTopic).toHaveBeenCalled()
   })
 
-  it('anonim so\'rov ham IP-cap ostinda (IP identifikatori — shared-NAT xavfsiz)', async () => {
+  it('anonim so\'rov ham sanaladi — kalit IP\'ga qaytadi', async () => {
     h.count = 21
     const res = await request(buildApp()).get('/api/questions')
-    expect(res.status).toBe(429)
-    // IP-keyed limit — login'siz ham himoya saqlanadi
+    expect(res.status).toBe(200)
     expect(authRepository.createAuditLog).toHaveBeenCalledWith(
       expect.objectContaining({ action: 'questions_fullbank_abuse', userId: undefined }),
     )

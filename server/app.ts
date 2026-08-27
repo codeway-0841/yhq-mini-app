@@ -100,11 +100,26 @@ export function createApp() {
     if (!poolReady) throw new Error('Question pool not loaded')
   }))
 
-  // Global IP-based rate limit (per-endpoint limiters may be stricter).
-  // 120/min per-IP: oddiy foydalanuvchi uchun kafolatli (sahifa yuklash
-  // + progress sync ~10-20 req/min), lekin polling/spam hujumlarga yetarli devor.
+  // ── Qatlam 1: DoS qalqoni (auth'dan OLDIN, IP bo'yicha) ──────────────────
+  //
+  // DIQQAT — bu limit ATAYLAB juda bo'sh. Ilgari shu joyda 120/min turardi va
+  // u IP bo'yicha kalitlanardi, chunki `req.userId` telegramAuth'dan KEYIN
+  // paydo bo'ladi. Lekin mobil operatorlar CGNAT ishlatadi: minglab abonent
+  // bitta public IPv4 ortida. Bitta faol foydalanuvchi ~10-20 req/min qiladi,
+  // ya'ni bitta operator shlyuzidagi 6-12 foydalanuvchi BUTUN API'ni
+  // o'chirardi — testlarni emas, hammasini.
+  //
+  // Qiymat hisobi: bitta operator shlyuzida bir vaqtda 300+ faol foydalanuvchi
+  // bo'lishi mumkin, har biri ~15 req/min — ya'ni 4500+/min mutlaqo normal.
+  // 6000/min (100 req/s) shundan ham yuqori, lekin bitta Mini App mijozi uchun
+  // aniq g'ayritabiiy. Ya'ni bu chegara faqat qo'pol flood'ni kesadi.
+  //
+  // Hajmli (volumetric) hujum uchun ASOSIY himoya bu yerda emas: Vercel
+  // platformasi DDoS mitigatsiyasi va WAF/BotID bilan funksiya ishga
+  // tushishidan OLDIN filtrlaydi. App darajasidagi IP limiti CGNAT tufayli
+  // hech qachon aniq bo'la olmaydi — uni yagona devor deb hisoblamang.
   app.use('/api', rateLimit({
-    maxPerMinute: 120,
+    maxPerMinute: 6000,
     keyFn: (req) => req.ip ?? 'unknown',
   }))
 
@@ -113,6 +128,17 @@ export function createApp() {
 
   // Telegram initData verification (enforced in production, see middleware/auth)
   app.use('/api', telegramAuth)
+
+  // ── Qatlam 2: foydalanuvchi bo'yicha adolatli limit (auth'dan KEYIN) ─────
+  //
+  // Endi `req.userId` mavjud, shuning uchun chelak SHAXSGA tegishli va bitta
+  // operator IP'sidagi qo'shnilar bir-birini bloklamaydi. Anonim so'rovlar
+  // (login/OTP) uchun IP'ga qaytamiz — ular kamdan-kam va shu bo'sh limitga
+  // bemalol sig'adi.
+  app.use('/api', rateLimit({
+    maxPerMinute: 120,
+    keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+  }))
 
   // ── Feature routers ──────────────────────────────────────────────────────
   // All public API routes are prefixed with /api.
