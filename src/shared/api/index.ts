@@ -1,6 +1,6 @@
 import { config } from '../config'
 import { getInitData, requestFreshInitData } from '../../platform/telegram'
-import { getSessionToken, notifySessionExpired } from '../lib/session'
+import { getSessionToken, setSessionToken, clearSessionToken, notifySessionExpired } from '../lib/session'
 import {
   FullProfileSchema, AuthSessionSchema, AuthResponseSchema, LinkResponseSchema,
 } from '../../../shared/contracts/profile'
@@ -38,20 +38,25 @@ async function request<T>(
   body?: unknown,
   timeoutMs = TIMEOUT_MS,
   extraHeaders?: Record<string, string>,
+  retriedWithInitData = false,
 ): Promise<T> {
   const headers: Record<string, string> = { ...extraHeaders }
   if (body) headers['Content-Type'] = 'application/json'
-  // Auth credential TANLOVI: initData (Mini App) USTUVOR — ikkalovidan FAQAT biri
-  // yuboriladi (server dual-auth). initData yo'q bo'lsa Bearer session token.
+  // Auth credential TANLOVI (v2 initData→Bearer exchange): Bearer sessiya
+  // USTUVOR — initData faqat BOOTSTRAP credential (POST /init 30-kunlik sessiya
+  // chiqaradi). Bearer bo'lmasa initData yuboriladi. Account switch xavfsizligi:
+  // ensureAccountOwner yangi TG akkauntida 'yhq-session'ni boot'dan OLDIN
+  // tozalaydi — begona token hech qachon yuborilmaydi.
   let sentBearer = false
   let sentInitData = false
+  const token = getSessionToken()
   const initData = getInitData()
-  if (initData) {
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`
+    sentBearer = true
+  } else if (initData) {
     headers['x-telegram-init-data'] = initData
     sentInitData = true
-  } else {
-    const token = getSessionToken()
-    if (token) { headers['Authorization'] = `Bearer ${token}`; sentBearer = true }
   }
 
   const controller = new AbortController()
@@ -88,8 +93,19 @@ async function request<T>(
     // (server/middleware/auth.ts 401 kodlari: 'invalid_session' = Bearer sessiya
     // yaroqsiz; 'Invalid Telegram initData signature' = initData eskirgan/soxta).
     // Bearer bilan yuborilgan so'rov → token eskirgan/revoke:
-    // token o'chiriladi + App login holatiga o'tadi ('yhq:session-expired').
-    if (sentBearer && res.status === 401 && code === 'invalid_session') notifySessionExpired()
+    //  - TG muhitida (initData bor): LOGOUT EMAS — token jim o'chiriladi va
+    //    so'rov initData bilan BIR MARTA qayta yuboriladi (keyingi /init yangi
+    //    Bearer chiqaradi). 401 = so'rov serverda BAJARILMAGAN — qayta yuborish
+    //    xavfsiz (mutatsiyalar clientToken bilan idempotent).
+    //  - initData'siz muhitda (brauzer/APK): App login holatiga o'tadi
+    //    ('yhq:session-expired').
+    if (sentBearer && res.status === 401 && code === 'invalid_session') {
+      if (initData && !retriedWithInitData) {
+        clearSessionToken()
+        return request<T>(method, path, body, timeoutMs, extraHeaders, true)
+      }
+      notifySessionExpired()
+    }
     // initData bilan yuborilgan so'rov 401 → auth_date eskirgan (server replay
     // oynasi qisqartirildi). Mini App'ni BIR marta qayta yuklab Telegram'dan
     // yangi initData olamiz (loop guard — P1-4 klient recovery).
@@ -209,6 +225,8 @@ export interface FullProfile {
   settings: ApiSettings
   /** Composite kalitlar: `${subjectId}:${questionId}` ('yhq:123') — multi-fan identity */
   savedQuestions: string[]
+  /** initData→Bearer exchange (v2): FAQAT sessiyasiz init javobida keladi. */
+  sessionToken?: string
 }
 
 /** GET /auth/me javobi — FullProfile + ulangan login usullari ro'yxati. */
@@ -368,7 +386,13 @@ export const api = {
     start_param?: string
   // Warm-start asosiy manbai — contract DRIFT bo'lsa jimgina buzilmasin:
   }): Promise<FullProfile> =>
-    request<unknown>('POST', '/init', data).then(parseProfile),
+    request<unknown>('POST', '/init', data).then((raw) => {
+      const profile = parseProfile(raw)
+      // initData→Bearer exchange (v2): server sessiyasiz (initData'li) init'da
+      // 30-kunlik token chiqaradi — saqlab qo'yamiz, keyingi so'rovlar Bearer bilan.
+      if (profile.sessionToken) setSessionToken(profile.sessionToken)
+      return profile
+    }),
 
   getProfile: (userId: string): Promise<FullProfile> =>
     request<unknown>('GET', `/profile/${uid(userId)}`).then(parseProfile),

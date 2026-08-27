@@ -19,6 +19,7 @@ import { AppError } from '../../middleware/error-handler'
 import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
+import { issueSession } from './session-issuer'
 import { consumeOTPWithLockout } from './otp'
 import { dbRateConsumeWindow } from '../../middleware/db-rate-limiter'
 import { usersRepository } from '../users/users.repository'
@@ -132,20 +133,9 @@ export const PHONE_LOGIN_MAX_ATTEMPTS = 5    // telefon login parol lockout (ema
 const PHONE_LOGIN_LOCK_MS = 15 * 60_000
 const RESET_MAX_PER_HOUR = 3          // password-reset email flood chegarasi
 
-function newSessionToken(): string {
-  return randomBytes(32).toString('hex')   // 64-hex opaque
-}
-
-function sessionExpiry(): Date {
-  return new Date(Date.now() + config.auth.sessionTtlDays * 86_400_000)
-}
-
-/** Xom token FAQAT shu yerda yaratilib client'ga qaytariladi; DB'ga hash yoziladi (repository'da). */
-async function issueSession(userId: string, provider: AuthProvider): Promise<string> {
-  const token = newSessionToken()
-  await authRepository.createSession({ token, userId, provider, expiresAt: sessionExpiry() })
-  return token
-}
+// Sessiya chiqarish — ./session-issuer (umumiy qatlam: users.service ham
+// initData→Bearer exchange'da shuni ishlatadi, import cycle'siz).
+// Xom token FAQAT shu yerda yaratilib client'ga qaytariladi; DB'ga hash yoziladi (repository'da).
 
 // consumeOTPWithLockout + OTP_MAX_ATTEMPTS → ./otp (umumiy qatlam, cycle'siz)
 

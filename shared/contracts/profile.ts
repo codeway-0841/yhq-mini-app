@@ -64,6 +64,11 @@ export const FullProfileSchema = z.object({
   settings:       ApiSettingsSchema,
   /** Composite kalitlar: '<subjectId>:<questionId>' */
   savedQuestions: z.array(z.string()),
+  /** initData→Bearer exchange (v2): POST /init initData bilan (sessiyasiz) kelganda
+   *  server 30-kunlik opaque token chiqaradi; Bearer'li init'da MAYDON YO'Q
+   *  (mavjud sessiya ishlatilaveradi). Client saqlaganini keyingi so'rovlarda
+   *  initData'dan USTUN qo'yadi. */
+  sessionToken:   z.string().min(32).optional(),
 })
 
 /**

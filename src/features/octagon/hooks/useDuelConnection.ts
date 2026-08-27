@@ -21,12 +21,13 @@ import { ActiveReaction } from '../components/FloatingReactionsOverlay'
 
 interface DuelUser { id: string; firstName: string }
 
-/** WS auth credential: initData (Mini App) USTUVOR, bo'lmasa Bearer sessiya tokeni. */
+/** WS auth credential (v2 initData→Bearer exchange): Bearer sessiya USTUVOR
+ *  (initData staleness WS'ga tegmaydi — sessiya DB resolve 30 kun); bo'lmasa initData. */
 function wsAuthFields(): { initData?: string; sessionToken?: string } {
-  const initData = getInitData()
-  if (initData) return { initData }
   const sessionToken = getSessionToken()
-  return sessionToken ? { sessionToken } : {}
+  if (sessionToken) return { sessionToken }
+  const initData = getInitData()
+  return initData ? { initData } : {}
 }
 
 export function useDuelConnection(user: DuelUser | null | undefined) {

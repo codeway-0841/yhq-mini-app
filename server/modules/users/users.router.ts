@@ -12,6 +12,7 @@ import { dbRateLimit }                               from '../../middleware/db-r
 import { identityKey } from '../../middleware/rate-limiter'
 import { parseUserId }                               from '../../utils/parse'
 import { usersService, InitInputSchema, PhoneSchema, AvatarUploadSchema, AVATAR_DATA_URL_PREFIX, toApiUser, toApiProgress, toApiSettings } from './users.service'
+import { issueSession } from '../auth/session-issuer'
 import { referralsRepository }                       from './users.repository'
 import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
 import { progressRepository }                        from '../progress/progress.repository'
@@ -36,7 +37,16 @@ router.post(
   validate({ body: InitInputSchema }),
   wrap(async (req, res) => {
     const profile = await usersService.init(req.body)
-    res.json(profile)
+    // initData→Bearer exchange (v2): initData FAQAT bootstrap credential.
+    // Bearer sessiyasi YO'Q (yangi boot/revoke) bo'lsa — 30-kunlik opaque
+    // token chiqariladi; client keyingi BARCHA so'rovni Bearer bilan yuboradi
+    // (initData staleness endi faqat shu bir martalik bootstrap'ga tegishli).
+    // Bearer valid kelgan bo'lsa (req.sessionToken — middleware resolve qilgan)
+    // yangi sessiya yaratilMAYDI: har boot'da sessions jadvali shishmasligi uchun.
+    const sessionToken = (req as { sessionToken?: string }).sessionToken
+      ? undefined
+      : await issueSession(String((req.body as { id: unknown }).id), 'telegram')
+    res.json(sessionToken ? { ...profile, sessionToken } : profile)
   }),
 )
 
