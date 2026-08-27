@@ -104,5 +104,8 @@ export function ensureAccountOwner(verifiedId: string): boolean {
  */
 export function resetAccountToLoggedOut(): void {
   resetAccountState()
+  if (typeof window !== 'undefined') {
+    window.location.hash = '#/'
+  }
   useAppStore.setState({ initialized: true })
 }

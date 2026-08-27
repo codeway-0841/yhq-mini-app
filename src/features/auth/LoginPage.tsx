@@ -52,6 +52,9 @@ export default function LoginPage() {
     useAppStore.getState().hydrateFromProfile(data)
     void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
     void flushOutbox(data.user.id)
+    if (typeof window !== 'undefined') {
+      window.location.hash = '#/'
+    }
     useAppStore.setState({ initialized: true })
   }
 
