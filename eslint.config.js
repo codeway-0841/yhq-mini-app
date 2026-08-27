@@ -26,6 +26,14 @@ export default tseslint.config(
     },
   },
   {
+    // Node build skriptlari (.mjs — TS qamrovda emas, `no-undef` faol):
+    // browser globals'lari yo'q, Node global'lari kerak (CI lint error: 'process').
+    files: ['scripts/**/*.mjs'],
+    languageOptions: {
+      globals: { process: 'readonly', console: 'readonly' },
+    },
+  },
+  {
     rules: {
       // Mavjud kod bilan yashash — asta-sekin error'ga ko'taramiz
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' }],
