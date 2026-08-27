@@ -13,6 +13,7 @@ import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
+import { identityKey } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { getShopItem, isDurableShopItem, isShopItemAvailable } from '../../../shared/shop-items'
 import { getMerchItem } from '../../../shared/merch-items'
@@ -39,7 +40,7 @@ const EquipBodySchema = z.object({
 const mkLimiter = (bucket: string) => rateLimit({
   maxPerMinute: 10,
   bucket,
-  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+  keyFn: identityKey,
 })
 const purchaseLimiter = mkLimiter('coins:purchase')
 const equipLimiter    = mkLimiter('coins:equip')

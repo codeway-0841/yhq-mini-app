@@ -9,6 +9,7 @@ import { wrap, AppError }                            from '../../middleware/erro
 import { validate }                                  from '../../middleware/validate'
 import { requireSelf }                               from '../../middleware/auth'
 import { dbRateLimit }                               from '../../middleware/db-rate-limiter'
+import { identityKey } from '../../middleware/rate-limiter'
 import { parseUserId }                               from '../../utils/parse'
 import { usersService, InitInputSchema, PhoneSchema, AvatarUploadSchema, AVATAR_DATA_URL_PREFIX, toApiUser, toApiProgress, toApiSettings } from './users.service'
 import { referralsRepository }                       from './users.repository'
@@ -133,7 +134,7 @@ router.post(
 const avatarUploadLimiter = dbRateLimit({
   maxPerMinute: 10,
   bucket: 'avatar:upload',
-  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+  keyFn: identityKey,
 })
 
 // PUT /api/users/:userId/avatar — custom avatar yuklash (FAQAT o'zi —

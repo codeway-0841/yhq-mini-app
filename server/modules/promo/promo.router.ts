@@ -4,6 +4,7 @@ import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
+import { identityKey } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { promoRepository } from './promo.repository'
 
@@ -26,7 +27,7 @@ const CreatePromoBodySchema = z.object({
 const redeemLimiter = rateLimit({
   maxPerMinute: 5,
   bucket: 'promo',
-  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+  keyFn: identityKey,
 })
 
 // POST /api/promo/redeem

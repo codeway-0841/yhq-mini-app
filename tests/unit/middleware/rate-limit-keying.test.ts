@@ -13,11 +13,10 @@
 import { describe, it, expect } from 'vitest'
 import express from 'express'
 import request from 'supertest'
-import { rateLimit } from '../../../server/middleware/rate-limiter'
+import { rateLimit, identityKey } from '../../../server/middleware/rate-limiter'
 
-/** app.ts va questions.router.ts dagi kalit funksiyasining aynan o'zi */
-const userFirstKey = (req: express.Request) =>
-  (req as { userId?: string }).userId ?? req.ip ?? 'unknown'
+/** Ishlab chiqarishdagi kalit funksiyasining AYNAN o'zi ishlatiladi */
+const userFirstKey = identityKey
 
 /** Bitta CGNAT IP ortidagi bir nechta foydalanuvchini taqlid qiladi */
 function buildApp(maxPerMinute: number) {
@@ -74,5 +73,35 @@ describe('rate limit kaliti — CGNAT ortida', () => {
     }
     const victim = await request(app).get('/ping').set('X-Forwarded-For', '203.0.113.7')
     expect(victim.status).toBe(429)
+  })
+})
+
+describe('identityKey — platformadan mustaqil', () => {
+  const asReq = (o: Partial<express.Request> & { userId?: string }) => o as express.Request
+
+  it("userId bolsa transportdan qatiy nazar osha ishlatiladi", () => {
+    // Telegram Mini App
+    expect(identityKey(asReq({ userId: 'u-1', ip: '1.1.1.1' }))).toBe('u-1')
+    // Telefon/email Bearer sessiyasi — ayni kanonik id shakli
+    expect(identityKey(asReq({ userId: 'p_998900000', ip: '2.2.2.2' }))).toBe('p_998900000')
+    // Kelajakdagi Android/iOS mijoz — o'z auth usuli `req.userId` ni to'ldirsa
+    // rate limit qatlamiga umuman tegish shart emas.
+    expect(identityKey(asReq({ userId: 'e_ab12cd', ip: '3.3.3.3' }))).toBe('e_ab12cd')
+  })
+
+  it("userId yoq bolsa IP zaxira kalit", () => {
+    expect(identityKey(asReq({ ip: '9.9.9.9' }))).toBe('9.9.9.9')
+  })
+
+  it("ikkalasi ham yoq bolsa ham kalit qaytaradi (limiter ochib qolmaydi)", () => {
+    expect(identityKey(asReq({}))).toBe('unknown')
+  })
+
+  it("BIR XIL userId turli transportlarda BIR XIL chelakka tushadi", () => {
+    // Bitta akkaunt Telegram'dan ham, kelajakdagi ilovadan ham kirsa — bitta
+    // limit. Kalit transportga qarab bo'linib ketmasligi kerak.
+    const fromTelegram = identityKey(asReq({ userId: 'acct-7', ip: '5.5.5.5' }))
+    const fromNativeApp = identityKey(asReq({ userId: 'acct-7', ip: '6.6.6.6' }))
+    expect(fromTelegram).toBe(fromNativeApp)
   })
 })

@@ -14,6 +14,7 @@ import { sql } from 'drizzle-orm'
 // Vercel serverless'da har so'rov yangi instansiya bo'lishi mumkin — in-memory
 // bucket o'sha instansiya bilan birga yo'qoladi (no-op); DB counter umumiy.
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
+import { identityKey } from '../../middleware/rate-limiter'
 
 const router = Router()
 
@@ -28,7 +29,7 @@ const router = Router()
 const contentLimit = rateLimit({
   maxPerMinute: 60,
   bucket: 'content',
-  keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+  keyFn: identityKey,
 })
 
 const QuestionsQuery = z.object({

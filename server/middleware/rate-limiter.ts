@@ -19,6 +19,32 @@ interface Options {
   keyFn?: (req: Request) => string | undefined
 }
 
+/**
+ * Rate limit KALITI — shaxs bo'yicha, transport bo'yicha EMAS.
+ *
+ * Nega alohida funksiya:
+ *
+ *  1) CGNAT. Mobil operatorlar minglab abonentni bitta public IPv4 ortiga
+ *     joylaydi. IP bo'yicha kalitlangan chelak begona odamlar o'rtasida
+ *     bo'linadi va ular bir-birini bloklaydi. Kalit HAR DOIM avval `userId`
+ *     bo'lishi kerak; IP faqat anonim so'rov uchun zaxira.
+ *
+ *  2) PLATFORMADAN MUSTAQILLIK. `req.userId` — kanonik matn id (CLAUDE.md
+ *     qoida 9), uni Telegram initData ham, telefon/email Bearer sessiyasi ham
+ *     bir xil to'ldiradi. Bu yerda ATAYLAB Telegram'ga oid hech narsa yo'q:
+ *     `x-telegram-init-data`, initData shakli, Telegram raqam id — hech biri
+ *     tekshirilmaydi. Kelajakda Android APK va iOS ilovalari o'z auth
+ *     usullari bilan kelganda, ular AYNI `req.userId` ni to'ldirsa, rate
+ *     limit qatlamiga umuman tegish shart bo'lmaydi.
+ *
+ * Bu yerga transportga xos shart QO'SHMANG (User-Agent, platforma sarlavhasi,
+ * Telegram-only maydonlar) — aks holda yangi mijoz turi qo'shilganda limitlar
+ * jimgina noto'g'ri ishlaydi.
+ */
+export function identityKey(req: Request): string {
+  return (req as { userId?: string }).userId ?? req.ip ?? 'unknown'
+}
+
 export function rateLimit(opts: Options = {}) {
   const max = Math.max(1, Math.floor(opts.maxPerMinute ?? 60))
   const refillIntervalMs = 60_000 / max

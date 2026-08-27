@@ -1,0 +1,90 @@
+{
+  "$comment": [
+    "Vercel WAF custom rules — KUZATUV REJIMI. Hech biri bloklamaydi.",
+    "",
+    "Bu fayl hujjat + manba: qoidalar Vercel loyihasida yashaydi, bu yerda esa",
+    "ular nima uchun borligi va aynan qanday qo'llanishi yozilgan.",
+    "Qo'llash va orqaga qaytarish buyruqlari — infra/vercel/README.md.",
+    "",
+    "ILOVA KODI BU FAYLGA BOG'LIQ EMAS. Boshqa hostingga ko'chishda butun",
+    "infra/vercel/ katalogini o'chirish yetarli — server/ va src/ o'zgarmaydi.",
+    "",
+    "Bloklash ATAYLAB yo'q: foydalanuvchilar Telegram Mini App'da, ya'ni asosan",
+    "mobil tarmoqda. Operatorlar CGNAT ishlatadi — minglab abonent bitta public",
+    "IPv4 ortida. Har qanday IP bo'yicha bloklash begona odamlarni ham uradi.",
+    "Avval MA'LUMOT yig'iladi; enforcement kerak-kermasligini o'sha ma'lumot",
+    "hal qiladi, taxmin emas."
+  ],
+  "rules": [
+    {
+      "name": "observe-api-volume-per-ip",
+      "action": "rate_limit",
+      "rateLimit": {
+        "window": 60,
+        "requests": 3000,
+        "keys": ["ip"],
+        "action": "log"
+      },
+      "conditions": [{ "type": "path", "op": "pre", "value": "/api" }],
+      "why": [
+        "Bitta IP daqiqada nechta so'rov qilayotganini KO'RSATADI, bloklamaydi.",
+        "3000/min qasddan yuqori: 200 ta bir vaqtdagi foydalanuvchi ~15 req/min",
+        "bilan 3000/min beradi va bu mutlaqo normal operator shlyuzi.",
+        "Ya'ni qoida ishga tushishi = 'bu IP katta gateway', 'bu hujum' EMAS.",
+        "Maqsad — taqsimotning yuqori qismini ko'rish. Enforcement'ga o'tishdan",
+        "oldin dashboard'da bir hafta kuzatilishi kerak."
+      ]
+    },
+    {
+      "name": "observe-exploit-probes",
+      "action": "log",
+      "conditions": [
+        {
+          "type": "path",
+          "op": "inc",
+          "value": [
+            "/wp-admin",
+            "/wp-login.php",
+            "/.env",
+            "/.git/config",
+            "/phpmyadmin",
+            "/vendor/phpunit/phpunit/phpunit.xml"
+          ]
+        }
+      ],
+      "why": [
+        "Bu yo'llar ilovada YO'Q — na SPA, na API ularni ishlatadi, ya'ni",
+        "haqiqiy mijoz hech qachon so'ramaydi. Noto'g'ri pozitiv xavfi nolga",
+        "yaqin. Shunga qaramay log rejimida: signal beradi, hech kimni urmaydi."
+      ]
+    }
+  ],
+  "notRecommended": [
+    {
+      "what": "BotID",
+      "why": [
+        "BotID brauzer konteksti va client-side JS signaliga tayanadi. Kelajakdagi",
+        "Android APK va iOS ilovalari HTTP mijoz bo'ladi — brauzer emas — ya'ni",
+        "ular bot deb baholanishi mumkin. Ustiga u ilova kodiga (client + server)",
+        "kirib boradi, bu esa 'Vercel-specific kod alohida va oson olib",
+        "tashlanadigan bo'lsin' shartini buzadi."
+      ]
+    },
+    {
+      "what": "user_agent / JA4 bo'yicha qoidalar",
+      "why": [
+        "JA4 barmoq izi millionlab mijozda bir xil (bitta Chrome yoki iOS",
+        "versiyasi = bitta JA4). User-Agent substring qoidalari esa uptime",
+        "monitor, link preview va o'z CI'ingizni ham uradi. Ikkalasi ham",
+        "Telegram WebView va native SDK'lar bilan to'qnashadi."
+      ]
+    },
+    {
+      "what": "geo bo'yicha cheklash",
+      "why": [
+        "Foydalanuvchilar sayohatda yoki VPN ortida bo'lishi mumkin.",
+        "Geo bloklash real mijozni yo'qotadi, hujumchini to'xtatmaydi."
+      ]
+    }
+  ]
+}

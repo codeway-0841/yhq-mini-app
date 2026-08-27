@@ -16,7 +16,7 @@ import { sql }           from 'drizzle-orm'
 import { config }        from './config'
 import { requestLogger } from './middleware/request-logger'
 import { errorHandler }  from './middleware/error-handler'
-import { rateLimit }     from './middleware/rate-limiter'
+import { rateLimit, identityKey } from './middleware/rate-limiter'
 import { telegramAuth }  from './middleware/auth'
 import { createReadinessHandler } from './middleware/readiness'
 import { executeRows }   from './db/connection'
@@ -137,7 +137,7 @@ export function createApp() {
   // bemalol sig'adi.
   app.use('/api', rateLimit({
     maxPerMinute: 120,
-    keyFn: (req) => (req as { userId?: string }).userId ?? req.ip ?? 'unknown',
+    keyFn: identityKey,
   }))
 
   // ── Feature routers ──────────────────────────────────────────────────────
