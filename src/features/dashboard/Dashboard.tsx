@@ -22,7 +22,6 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
-import { Carousel } from './components/Carousel'
 import { ProgressCard } from './components/ProgressCard'
 import { ServiceCard, ModeList, ModeRow } from './components/GridCards'
 import { LeaguePreview } from './components/LeaguePreview'
@@ -32,7 +31,7 @@ import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { DailyTasksCard } from '../shop'
 import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, useContinueInfo, useSubjectBadges } from './hooks/useDashboardData'
+import { useDashboardSync, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
@@ -158,7 +157,6 @@ export default function Dashboard() {
   })
   const tt = useT(settings.language)
 
-  const continueInfo = useContinueInfo(user?.id, tt)
   const { mistakesCount } = useSubjectBadges(subject.id)
 
   // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount).
@@ -237,15 +235,7 @@ export default function Dashboard() {
           {/* 2. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
 
-          {/* 3. Darsni davom ettirish (Carousel) */}
-          <Carousel
-            lang={settings.language}
-            progressPct={continueInfo.pct}
-            lessonLabel={continueInfo.lessonLabel}
-            onContinue={continueInfo.go}
-          />
-
-          {/* 4. HERO CTA — sahifaning YAGONA aksentli amali (rang intizomi:
+          {/* 3. HERO CTA — sahifaning YAGONA aksentli amali (rang intizomi:
               aksent faqat shu yerda). Asosiy harakat grid'dan chiqarildi —
               bir ekranda bitta qahramon, qolganlari unga bo'ysunadi. */}
           <div className="mb-5 px-5">
