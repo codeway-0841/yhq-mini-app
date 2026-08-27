@@ -16,7 +16,7 @@ import request from 'supertest'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
 import { cardProgress, questionBanks, questions, users } from '../../../server/schema'
-import { eq, inArray, sql } from 'drizzle-orm'
+import { eq, inArray } from 'drizzle-orm'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 
 const app = createApp()

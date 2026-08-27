@@ -5,7 +5,7 @@
  * Barcha testlar REAL Neon test DB'da (레pository CTE'larining race semantikasi).
  */
 
-import { describe, it, expect, beforeAll, afterAll } from 'vitest'
+import { describe, it, expect, afterAll } from 'vitest'
 import { db } from '../../../server/db/connection'
 import { users, referrals, payments, promoCodes, otpCodes, sessions, authIdentities } from '../../../server/schema'
 import { eq, inArray } from 'drizzle-orm'

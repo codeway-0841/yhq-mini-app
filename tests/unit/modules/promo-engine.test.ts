@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { promoRepository, PromoCodeRow } from '../../../server/modules/promo/promo.repository'
+import { describe, it, expect } from 'vitest'
+import { PromoCodeRow } from '../../../server/modules/promo/promo.repository'
 
 describe('Promo Code Engine & Subscription Stacking', () => {
   const BASE_DATE = new Date('2026-08-16T12:00:00.000Z')

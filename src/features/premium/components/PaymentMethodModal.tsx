@@ -97,7 +97,7 @@ export default function PaymentMethodModal({
       } else {
         throw new Error('No payment URL returned')
       }
-    } catch (err: any) {
+    } catch {
       setErrorMsg(
         lang === 'ru'
           ? 'Не удалось создать платеж. Попробуйте еще раз.'

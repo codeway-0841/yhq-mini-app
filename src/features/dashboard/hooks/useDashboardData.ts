@@ -24,7 +24,9 @@ export function useDashboardSync(userId: string | undefined, subjectId: string, 
 }
 
 // "Davom etish" — QAYSI darsda qolgan bo'lsa o'sha darslik ma'lumoti
-export function useContinueInfo(userId: string | undefined, lang: 'uz' | 'ru', tt: ReturnType<typeof useT>) {
+// `lang` param'i olib tashlandi (2026-08-27 lint tozaligi): tt allaqachon
+// joriy tilni o'z ichiga oladi — alohida param redundant edi.
+export function useContinueInfo(userId: string | undefined, tt: ReturnType<typeof useT>) {
   const navigate = useNavigate()
   return useMemo(() => {
     const uid     = userId ?? '0'
@@ -51,7 +53,7 @@ export function useContinueInfo(userId: string | undefined, lang: 'uz' | 'ru', t
       allDone: true,
       go: () => navigate('/darslik'),
     }
-  }, [userId, lang, navigate, tt])
+  }, [userId, navigate, tt])
 }
 
 /** Badge hisoblagichlar — faqat JORIY fanga oid (composite kalit: '<subjectId>:<qid>'). */

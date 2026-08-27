@@ -16,7 +16,8 @@ interface PasswordStrength {
 }
 
 function validatePasswordStrength(password: string, language: 'uz' | 'ru'): PasswordStrength {
-  let score: PasswordStrength['score'] = 0
+  // Barcha yo'llar yoki literal qaytaradi yoki avval `score = 2` yozadi — initializer shart emas.
+  let score: PasswordStrength['score']
   const feedback: string[] = []
 
   // Length

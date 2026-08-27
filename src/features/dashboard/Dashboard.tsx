@@ -156,7 +156,7 @@ export default function Dashboard() {
   })
   const tt = useT(settings.language)
 
-  const continueInfo = useContinueInfo(user?.id, settings.language, tt)
+  const continueInfo = useContinueInfo(user?.id, tt)
   const { mistakesCount } = useSubjectBadges(subject.id)
 
   // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount).

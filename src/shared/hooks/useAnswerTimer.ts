@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useMemo, useRef } from 'react'
 
 /**
  * Savolga javob berish vaqtini o'lchaydi (ms).
@@ -30,5 +30,9 @@ export function useAnswerTimer(questionId: number | null | undefined) {
   /** Qo'lda qayta boshlash (masalan javobdan keyin yana o'sha savol ochilsa) */
   const restart = useCallback((): void => { startedAt.current = Date.now() }, [])
 
-  return { elapsed, restart }
+  // OBYEKT ham barqaror bo'lishi shart (elapsed/restart stable — deps []):
+  // aks holda har render'da yangi identity → chaqiruvchi useCallback/useEffect
+  // deps'iga qo'shganda har render'da qayta yaratilishga olib kelardi
+  // (react-hooks/exhaustive-deps warning'lari shundan chiqqan edi).
+  return useMemo(() => ({ elapsed, restart }), [elapsed, restart])
 }

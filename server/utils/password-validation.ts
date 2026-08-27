@@ -43,8 +43,9 @@ const COMMON_WEAK_PASSWORDS = new Set([
  */
 export function validatePassword(password: string, policy: PasswordPolicy = DEFAULT_PASSWORD_POLICY): PasswordStrength {
   const feedback: string[] = []
-  // `number` sifatida hisoblanadi — return'da tor union tipga cast qilinadi
-  let score = 0
+  // `number` sifatida hisoblanadi — return'da tor union tipga cast qilinadi.
+  // Barcha yo'llar yoki literal qaytaradi yoki avval `score = 2` yozadi — initializer shart emas.
+  let score: number
 
   // Length check
   if (password.length < policy.minLength) {

@@ -544,7 +544,7 @@ const callback = webhookCallback(bot, 'https')
 // PRODUCTION'da BOT_WEBHOOK_SECRET MAJBURIY — bo'lmasa istalgan odam soxta
 // Telegram update'larini yuborib bot'ni spamer/polly sifatida ishlatadi.
 // Header solishtirish timingSafeEqual bilan (timing attack himoyasi).
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
 export default async function handler(req: any, res: any) {
   const secret = config.telegram.webhookSecret
   if (!secret) {

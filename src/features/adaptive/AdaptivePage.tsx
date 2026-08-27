@@ -122,12 +122,12 @@ export default function AdaptivePage() {
       // Faqat vizual feedback (yashil/qizil rang) uchun 800ms kechikish, keyin keyingi savol
       setTimeout(() => advanceNext(), 800)
     })()
-  }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext, user?.id])
+  }, [q, selectedOption, submitAnswer, recordAnswer, advanceNext, user?.id, answerTimer])
 
   const currentOptions = useMemo(() => {
     if (!q?.options) return []
     return settings?.shuffleOptions ? shuffleArray(q.options) : q.options
-  }, [q?.id, settings?.shuffleOptions])
+  }, [q?.options, settings?.shuffleOptions])
 
   if (!q) {
     return (

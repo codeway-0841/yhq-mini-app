@@ -224,7 +224,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
       const phase = phaseRef.current
       if (phase === 'idle' || phase === 'match_end') destroyOctagonSocket()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, [])
 
   // Ovoz effektlari: raqib topilganda + g'alaba/mag'lubiyat

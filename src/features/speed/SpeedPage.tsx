@@ -93,7 +93,7 @@ export default function SpeedPage() {
       haptics.notify('error')
       advanceTimerRef.current = window.setTimeout(() => advance(false), 700)
     })()
-  }, [advance, busy, q, submitAnswer])
+  }, [advance, busy, q, submitAnswer, answerTimer])
 
   const handleSelect = useCallback((optId: string) => {
     if (answered || busy || !q) return
@@ -113,7 +113,7 @@ export default function SpeedPage() {
       // Offline/fatal: reveal yo'q — faqat tanlangan variant belgilanib qoladi
       advanceTimerRef.current = window.setTimeout(() => advance(scored?.correct ?? false), scored ? 800 : 400)
     })()
-  }, [answered, busy, q, submitAnswer, advance])
+  }, [answered, busy, q, submitAnswer, advance, answerTimer])
 
   if (!q) {
     return <div className="flex items-center justify-center min-h-screen text-pmuted">Yuklanmoqda...</div>

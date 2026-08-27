@@ -15,7 +15,7 @@
 process.env.CRON_SECRET ||= 'integration-test-cron-secret'
 
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
-import { eq, and, inArray, sql } from 'drizzle-orm'
+import { eq, and, inArray } from 'drizzle-orm'
 
 const { createApp } = await import('../../../server/app')
 const { db } = await import('../../../server/db/connection')

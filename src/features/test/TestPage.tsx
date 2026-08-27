@@ -448,7 +448,7 @@ export default function TestPage() {
         }, delay)
       }
     })()
-  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions])
+  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions, answerTimer])
 
   // Offline holatda yuborilgan javoblar internet ulanganda darhol TestPage'da ham yangilansin
   useEffect(() => {
@@ -527,7 +527,7 @@ export default function TestPage() {
       setIsFinished(true)
       setShowResults(true)
     }
-  }, [answers])
+  }, [answers, tt])
 
   // "Qayta" — shu rejimni 1-savoldan qayta boshlaydi (yangi aralashtirish:
   // location.key o'zgarishi activeQuestions memo'sini ham yangilaydi)

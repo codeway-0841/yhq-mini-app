@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { UZ, RU, t, useT, Lang, Keys } from '../../../src/shared/i18n'
+import { UZ, RU, t, useT, Keys } from '../../../src/shared/i18n'
 
 describe('i18n Localization Integrity & Parity', () => {
   const uzKeys = Object.keys(UZ) as Keys[]

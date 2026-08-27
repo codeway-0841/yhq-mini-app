@@ -86,7 +86,7 @@ export default function StatistikaPage() {
       .filter((x) => x.topic)
       .sort((a, b) => b.ids.length - a.ids.length)
       .slice(0, 3)
-  }, [wrongByTicket, questions, topics])
+  }, [wrongByTicket, questions, topics, subject.id])
 
   const practiceWeak = (ids: number[], title: string) =>
     navigate('/test/1', { state: { questionIds: ids, title } })

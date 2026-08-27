@@ -136,11 +136,11 @@ Faqat va faqat quyidagi JSON massiv formatida javob qaytaring (hech qanday markd
     throw new AppError(500, "AI dan bo'sh javob qaytdi")
   }
 
-  let parsedQuestions: any[] = []
+  let parsedQuestions: any[]
   try {
     const parsed = JSON.parse(textContent)
     parsedQuestions = Array.isArray(parsed) ? parsed : (parsed.questions || [])
-  } catch (e) {
+  } catch {
     console.error('[ai-question-generator] JSON parse error:', textContent.slice(0, 300))
     throw new AppError(500, "AI javobini JSON formatida o'qib bo'lmadi")
   }

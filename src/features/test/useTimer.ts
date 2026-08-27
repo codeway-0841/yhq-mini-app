@@ -40,7 +40,7 @@ export function useTimer(onTimeUp: () => void, resetKey: unknown, totalSeconds =
       document.removeEventListener('visibilitychange', tick)
       window.removeEventListener('focus', tick)
     }
-  }, [resetKey])
+  }, [resetKey, totalSeconds])
 
   const m = String(Math.floor(seconds / 60)).padStart(2, '0')
   const s = String(seconds % 60).padStart(2, '0')

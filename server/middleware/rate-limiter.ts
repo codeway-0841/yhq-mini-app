@@ -75,7 +75,7 @@ export function rateLimit(opts: Options = {}) {
     if (!key) { next(); return }
 
     const now = Date.now()
-    let b = buckets.get(key)
+    const b = buckets.get(key)
 
     if (!b) {
       buckets.set(key, { tokens: max - 1, lastRefillMs: now })

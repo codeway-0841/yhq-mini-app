@@ -48,7 +48,7 @@ function validateAppUrl(url: string): string {
     }
     return url
   } catch (err) {
-    throw new Error(`Invalid URL: ${err instanceof Error ? err.message : 'parse failed'}`)
+    throw new Error(`Invalid URL: ${err instanceof Error ? err.message : 'parse failed'}`, { cause: err })
   }
 }
 

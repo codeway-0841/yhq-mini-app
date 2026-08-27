@@ -125,7 +125,7 @@ export async function executeBroadcast(payload: BroadcastPayload): Promise<Broad
   const bot = new Bot(token)
   const startTime = Date.now()
 
-  let targetIds: number[] = []
+  let targetIds: number[]
   if (payload.testTelegramId) {
     targetIds = [Number(payload.testTelegramId)]
   } else {
@@ -160,7 +160,7 @@ export async function executeBroadcast(payload: BroadcastPayload): Promise<Broad
   // Prepare photo: support base64 data url or external URL
   let photoSource: string | InputFile | null = null
   if (payload.imageData && payload.imageData.startsWith('data:')) {
-    const match = payload.imageData.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/)
+    const match = payload.imageData.match(/^data:([A-Za-z-+/]+);base64,(.+)$/)
     if (match && match[2]) {
       const buffer = Buffer.from(match[2], 'base64')
       photoSource = new InputFile(buffer, 'broadcast.jpg')

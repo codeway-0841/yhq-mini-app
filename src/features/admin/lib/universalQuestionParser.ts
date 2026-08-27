@@ -355,7 +355,7 @@ export function parseSmartTextQuestions(rawText: string): ParsedQuestion[] {
     let currentBlock: string[] = []
 
     const isQuestionStart = (line: string): boolean => {
-      return /^(\d+\.|\#\d+|№\d+|\d+\s*[-–—]|savol\s*\d+|вопрос\s*\d+|q\d+[:\.\)])/i.test(line)
+      return /^(\d+\.|#\d+|№\d+|\d+\s*[-–—]|savol\s*\d+|вопрос\s*\d+|q\d+[:.)])/i.test(line)
     }
 
     for (let i = 0; i < lines.length; i++) {
@@ -386,13 +386,13 @@ export function parseSmartTextQuestions(rawText: string): ParsedQuestion[] {
       // 1. Check for option line:
       // - Letter options: A), B), C), D) or A., B., *A), +A)
       // - Numeric options: 1), 2), 3) only if questionUz is already non-empty!
-      const isLetterOpt = /^([\*\+]?\s*[A-Da-dFf])[\)\.\:\-]\s*(.+)/.test(line)
-      const isNumericOpt = Boolean(questionUz) && /^([\*\+]?\s*[1-9])[\)\.\:\-]\s*(.+)/.test(line)
+      const isLetterOpt = /^([*+]?\s*[A-Da-dFf])[).:-]\s*(.+)/.test(line)
+      const isNumericOpt = Boolean(questionUz) && /^([*+]?\s*[1-9])[).:-]\s*(.+)/.test(line)
 
       if (isLetterOpt || isNumericOpt) {
-        const optMatch = line.match(/^([\*\+]?\s*[A-Da-dFf\d])[\)\.\:\-]\s*(.+)/)
+        const optMatch = line.match(/^([*+]?\s*[A-Da-dFf\d])[).:-]\s*(.+)/)
         if (optMatch) {
-          const rawKey = optMatch[1].replace(/[\*\+]/g, '').trim()
+          const rawKey = optMatch[1].replace(/[*+]/g, '').trim()
           const isMarkedCorrect = optMatch[1].includes('*') || optMatch[1].includes('+')
           const optKey = normalizeOptionKey(rawKey)
           const optText = optMatch[2].trim()
@@ -422,7 +422,7 @@ export function parseSmartTextQuestions(rawText: string): ParsedQuestion[] {
       // 4. Otherwise, it's question text line
       if (!questionUz) {
         // Strip leading number like "1.", "1)", "Savol 1:"
-        questionUz = line.replace(/^(\d+[\.\)]|\#\d+|\d+\s*[-–—]|savol\s*\d+[:\.]?|вопрос\s*\d+[:\.]?)\s*/i, '').trim()
+        questionUz = line.replace(/^(\d+[.)]|#\d+|\d+\s*[-–—]|savol\s*\d+[:.]?|вопрос\s*\d+[:.]?)\s*/i, '').trim()
       } else {
         // Append multi-line question text
         questionUz += ' ' + line

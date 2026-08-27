@@ -88,6 +88,7 @@ export function useTestSession(params: UseTestSessionParams) {
       ...q,
       options: shuffleArray(q.options),
     }))
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: sahifaga har KIRISHDA yangi aralashtirish (re-shuffle) trigger'i; memo ichida o'qilmasa ham faqat identity o'zgarishi kerak.
   }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
 
   // ── Session save — snapshot persistence ──

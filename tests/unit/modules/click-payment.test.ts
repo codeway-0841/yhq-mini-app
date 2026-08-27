@@ -8,7 +8,7 @@ import {
 } from '../../../server/modules/payments/click.service'
 import { db } from '../../../server/db/connection'
 import { config } from '../../../server/config'
-import { formatUzs, PREMIUM_PLANS, getPlan } from '../../../shared/premium-plans'
+import { formatUzs, getPlan } from '../../../shared/premium-plans'
 
 describe('Click Payment Gateway — Unit Tests', () => {
   const sampleSecretKey = 'test_click_secret_key_12345'
