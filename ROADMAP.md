@@ -16,6 +16,18 @@
   Ikkalasi ham natija qaytarsa — ✅. `0001_add_phone` jurnalda yo'q, lekin ustun bor bo'lsa → jurnal INSERT kerak (skript tayyor, so'rang).
 - [ ] **Vercel → Project → Cron Jobs** — FAQAT 2 ta yozuv ko'rinishi kerak: `daily-suite` (14:00 UTC), `weekly-suite` (dushanba 00:15 UTC)
 - [ ] **Ilovani sinash** — yopib-oching, Dashboard/bir test/izoh/streak ishlasin
+- [ ] **Vercel Firewall qoidalarini PUBLISH qilish** — 2 ta qoida QORALAMADA turibdi,
+  hali jonli EMAS. Ikkalasi ham `log` rejimida, hech kimni bloklamaydi:
+  ```bash
+  npx vercel firewall diff
+  ```
+  ```bash
+  npx vercel firewall publish --yes
+  ```
+  Publish qilinmasa ma'lumot yig'ilmaydi. Tafsilot: `infra/vercel/README.md`.
+  **Publish'dan keyin:** kamida 1 hafta dashboard'ni kuzating
+  (`https://vercel.com/<team>/yhq-mini-app/firewall`). `observe-api-volume-per-ip`
+  ishga tushishi HUJUM DEGANI EMAS — 3000/min normal operator shlyuziga teng.
 
 ---
 
