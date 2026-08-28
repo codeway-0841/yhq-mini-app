@@ -1,12 +1,14 @@
 /**
- * Profil hooklari — telefon ulash (Telegram kontakt → SMS OTP) va avatar
- * yuklash/o'chirish (SERVER-FIRST: server yozmaguncha lokal o'zgarmaydi).
+ * Profil hooklari — telefon ulash (Telegram kontakt → BOT FAST-PATH (SMS'siz)
+ * → SMS OTP fallback) va avatar yuklash/o'chirish (SERVER-FIRST: server
+ * yozmaguncha lokal o'zgarmaydi).
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { renderHook, act, waitFor } from '@testing-library/react'
 
-const { mockRequestOTP, mockUploadAvatar, mockRemoveAvatar, mockRequestContact, mockHeic2any } = vi.hoisted(() => ({
+const { mockRequestOTP, mockGetLinkedPhone, mockUploadAvatar, mockRemoveAvatar, mockRequestContact, mockHeic2any } = vi.hoisted(() => ({
   mockRequestOTP: vi.fn(),
+  mockGetLinkedPhone: vi.fn(),
   mockUploadAvatar: vi.fn(),
   mockRemoveAvatar: vi.fn(),
   mockRequestContact: vi.fn(),
@@ -20,6 +22,7 @@ vi.mock('../../../src/shared/api', async (importOriginal) => {
     api: {
       ...actual.api,
       requestOTP: mockRequestOTP,
+      getLinkedPhone: mockGetLinkedPhone,
       uploadAvatar: mockUploadAvatar,
       removeAvatar: mockRemoveAvatar,
     },
@@ -37,6 +40,8 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 
 beforeEach(() => {
   mockRequestOTP.mockReset().mockResolvedValue({ ok: true })
+  // Default: bot fast-path raqamni (hali) yozmagan → SMS OTP fallback
+  mockGetLinkedPhone.mockReset().mockResolvedValue({ phone: null })
   mockUploadAvatar.mockReset().mockResolvedValue({ ok: true })
   mockRemoveAvatar.mockReset().mockResolvedValue({ ok: true })
   mockRequestContact.mockReset()
@@ -48,32 +53,54 @@ beforeEach(() => {
   })
 })
 
+/** Real poll delay (1.5s×4) testlarni sekinlashtirmasligi uchun delay'siz seam. */
+const renderPhone = () => renderHook(() => usePhoneContact({ pollAttempts: 2, pollDelayMs: 0 }))
+
 describe('usePhoneContact', () => {
-  it('kontakt berilsa raqamga SMS kod yuboriladi va OTP bosqichiga o\'tadi', async () => {
+  it('FAST-PATH: bot raqamni yozgan bo\'lsa — SMS YO\'Q, store yangilanadi + notice', async () => {
+    mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
+      cb(true, { contact: { phone_number: '998901234567' } })
+      return true
+    })
+    mockGetLinkedPhone.mockResolvedValue({ phone: '+998901234567' })
+
+    const { result } = renderPhone()
+    act(() => { result.current.handleAddPhone() })
+
+    await waitFor(() => expect(result.current.phoneNotice).toBe('phoneLinkedOk'))
+    expect(mockRequestOTP).not.toHaveBeenCalled()       // SMS xarajati nol
+    expect(result.current.otpPhone).toBeNull()          // OTP bosqichi ochilmaydi
+    expect(useAppStore.getState().user?.phone).toBe('+998901234567')
+    expect(result.current.phoneLoading).toBe(false)
+  })
+
+  it('bot fast-path topilmasa — raqamga SMS kod yuboriladi va OTP bosqichiga o\'tadi', async () => {
     mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
       cb(true, { contact: { phone_number: '998901234567' } })
       return true
     })
 
-    const { result } = renderHook(() => usePhoneContact())
+    const { result } = renderPhone()
     act(() => { result.current.handleAddPhone() })
 
-    // Raqam '+' bilan normallashtiriladi
+    // Avval fast-path poll, keyin fallback — raqam '+' bilan normallashtiriladi
     await waitFor(() => expect(mockRequestOTP).toHaveBeenCalledWith({ phone: '+998901234567' }))
     await waitFor(() => expect(result.current.otpPhone).toBe('+998901234567'))
+    expect(mockGetLinkedPhone).toHaveBeenCalled()
     expect(result.current.phoneError).toBeNull()
   })
 
-  it('kontakt rad etilsa — xato kaliti, SMS yuborilmaydi', async () => {
+  it('kontakt rad etilsa — xato kaliti, na poll na SMS', async () => {
     mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
       cb(false)
       return true
     })
 
-    const { result } = renderHook(() => usePhoneContact())
+    const { result } = renderPhone()
     act(() => { result.current.handleAddPhone() })
 
     await waitFor(() => expect(result.current.phoneError).toBe('phoneContactDenied'))
+    expect(mockGetLinkedPhone).not.toHaveBeenCalled()
     expect(mockRequestOTP).not.toHaveBeenCalled()
     expect(result.current.otpPhone).toBeNull()
   })
@@ -81,7 +108,7 @@ describe('usePhoneContact', () => {
   it('Telegram muhiti bo\'lmasa — phoneNeedTelegram', async () => {
     mockRequestContact.mockReturnValue(false)
 
-    const { result } = renderHook(() => usePhoneContact())
+    const { result } = renderPhone()
     act(() => { result.current.handleAddPhone() })
 
     await waitFor(() => expect(result.current.phoneError).toBe('phoneNeedTelegram'))
@@ -95,7 +122,7 @@ describe('usePhoneContact', () => {
     })
     mockRequestOTP.mockRejectedValue(new ApiError(429, 'slow down'))
 
-    const { result } = renderHook(() => usePhoneContact())
+    const { result } = renderPhone()
     act(() => { result.current.handleAddPhone() })
 
     await waitFor(() => expect(result.current.phoneError).toBe('authRateLimited'))
@@ -108,7 +135,7 @@ describe('usePhoneContact', () => {
       return true
     })
 
-    const { result } = renderHook(() => usePhoneContact())
+    const { result } = renderPhone()
     act(() => { result.current.handleAddPhone() })
     await waitFor(() => expect(result.current.otpPhone).not.toBeNull())
 

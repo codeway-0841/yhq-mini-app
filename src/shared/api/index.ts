@@ -460,6 +460,13 @@ export const api = {
   updatePhone: (userId: string, phone: string, otp: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone, otp }),
 
+  /** Telefon-ulash holati — requestContact fast-path polling'i: Telegram bot
+   *  chat'iga imzolangan contact xabarini yuboradi, bot users.phone'ni SMS'siz
+   *  yozadi (server/api-entry/bot.ts message:contact). Bir necha soniya ichida
+   *  ko'rinmasa client SMS OTP fallback'ga tushadi. */
+  getLinkedPhone: (userId: string) =>
+    request<{ phone: string | null }>('GET', `/users/${uid(userId)}/phone`),
+
   /** Custom avatar yuklash (256px WebP/JPEG data URL) — server global manba bo'ladi.
    *  Timeout 20s: ~100KB'lik body sekin mobil uplink + Vercel/Neon cold start'da
    *  default 8s'ga sig'may qolardi — user "aloqa xatosi" ko'rardi. */

@@ -8,6 +8,7 @@ import { assertProdConfig, assertBotWebhookConfig, config } from '../config'
 import { paymentRepository } from '../modules/payments/payment.repository'
 import { paymentErrorMessage, validatePremiumPayment } from '../modules/payments/payment.service'
 import { parseReferralParam } from '../utils/parse'
+import { extractOwnContactPhone } from '../modules/users/contact-phone'
 
 // api/index.js (server/api-entry/index.ts) va server/index.ts bu tekshiruvni
 // boot'da chaqiradi — bu yerda ham chaqiramiz (BOT_TOKEN/CRON_SECRET/OTP_PEPPER
@@ -213,7 +214,27 @@ bot.on('message:contact', async (ctx) => {
   const { authRepository } = await import('../modules/auth/auth.repository')
   const pending = await authRepository.findPendingTelegramLoginByTgUserId(String(from.id))
   if (!pending) {
-    return // login flow'da emas yoki muddati tugagan — ignore
+    // ── Mini App requestContact fast-path (SMS'siz telefon ulash, 2026-08-28) ──
+    // Ilovadagi "Telefon qo'shish" → requestContact'da rozi bo'lgan user uchun
+    // Telegram O'ZI shu chat'ga imzolangan contact xabarini yuboradi —
+    // contact.user_id === from.id bo'lsa egalik isboti Telegram darajasida
+    // (SMS OTP shart emas). Client bu yozuvni GET /users/:id/phone bilan
+    // bir necha soniya poll qiladi; yetib kelmasa eski OTP oqimiga tushadi.
+    const phone = extractOwnContactPhone(ctx.message?.contact, from.id)
+    if (!phone) return   // begona kontakt forward'i yoki login-flow'siz tasodifiy ulash — ignore
+    try {
+      const { usersService } = await import('../modules/users/users.service')
+      await usersService.applyVerifiedPhone(String(from.id), phone)
+      await ctx.reply(`✅ Telefon raqamingiz tasdiqlandi va hisobingizga ulandi: ${phone}`)
+    } catch (err) {
+      // User hali /init'dan o'tmagan (qator yo'q) — raqam yozilmaydi
+      console.warn('[bot] contact phone-link yozilmadi:', err instanceof Error ? err.message : err)
+      await ctx.reply(
+        "ℹ️ Raqamingiz qabul qilindi, lekin hisob topilmadi — avval ilovani ochib ro'yxatdan o'ting.",
+        { reply_markup: appKeyboard() },
+      )
+    }
+    return
   }
 
   const contact = ctx.message.contact

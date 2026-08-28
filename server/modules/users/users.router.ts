@@ -94,6 +94,24 @@ router.patch(
   }),
 )
 
+// GET /api/users/:userId/phone — telefon-ulash holati (FAQAT o'zi — requireSelf
+// yuqorida). Mini App requestContact fast-path'ida client shu endpoint'ni
+// bir necha soniya poll qiladi: Telegram bot chat'iga imzolangan contact
+// xabarini yuboradi → bot handler users.phone'ni yozadi → client ko'radi.
+// SMS OTP fallback shu poll muddati tugaganda ochiladi.
+router.get(
+  '/users/:userId/phone',
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const user = await usersRepository.findById(uid)
+    if (!user) throw new AppError(404, 'User not found')
+    res.set('Cache-Control', 'private, no-store')   // PII — keshlanmaydi
+    res.json({ phone: user.phone ?? null })
+  }),
+)
+
 // GET /api/referrals/:userId — referal statistikasi (Profil kartasi)
 router.get(
   '/referrals/:userId',

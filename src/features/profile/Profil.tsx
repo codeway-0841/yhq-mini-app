@@ -90,7 +90,7 @@ export default function Profil() {
     closeSheet: () => setShowPhotoEdit(false),
   })
   const {
-    phoneLoading, otpPhone, phoneError,
+    phoneLoading, otpPhone, phoneError, phoneNotice,
     handleAddPhone, submitPhoneOtp, cancelPhoneOtp,
   } = usePhoneContact()
   // OTP bosqichi (SMS egalik isboti) lokal holati
@@ -258,6 +258,7 @@ export default function Profil() {
 
         {/* SMS OTP bosqichi (H-2: egalik isbotisiz telefon yozilmaydi) */}
         {phoneError && <p className="px-4 pb-1 text-[12px] text-pdanger">{tt(phoneError)}</p>}
+        {phoneNotice && <p className="px-4 pb-1 text-[12px] text-psuccess">{tt(phoneNotice)}</p>}
         {otpPhone && !user?.phone && (
           <div className="px-4 pb-3 animate-premiumIn">
             <p className="mb-2 text-[12px] text-pmuted">

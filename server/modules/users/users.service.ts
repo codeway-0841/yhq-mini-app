@@ -176,18 +176,26 @@ export const usersService = {
   },
 
   /** Update phone number — FAQAT SMS OTP egalik isbotidan keyin (H-2 audit).
-   *  Avval kod konsumatsiya qilinadi (lockout bilan) — soxta raqam YOZILMAYDI.
-   *  Telefon ulash REFERAL trigger'i: referee raqam ulasa — referrerga
-   *  mukofot (marketing: endi HAQIQATAN verified raqam + anti-fraud). */
+   *  Avval kod konsumatsiya qilinadi (lockout bilan) — soxta raqam YOZILMAYDI. */
   async updatePhone(userId: string, phone: string, otp: string): Promise<void> {
     await consumeOTPWithLockout(phone, otp)   // 401 invalid_otp / 429 otp_locked
+    await usersService.applyVerifiedPhone(userId, phone)
+  },
+
+  /** users.phone yozish nuqtasi — FAQAT egaligi ALLAQACHON isbotlangan
+   *  raqam uchun (SMS OTP o'tgan YOKI Telegram-imzolangan contact xabari —
+   *  bot fast-path, qarang: api-entry/bot.ts message:contact).
+   *  Telefon ulash REFERAL trigger'i: referee raqam ulasa — referrerga
+   *  mukofot (marketing: HAQIQATAN verified raqam + anti-fraud; repository
+   *  CTE idempotent — pending→rewarded bir marta). */
+  async applyVerifiedPhone(userId: string, phone: string): Promise<void> {
     const updated = await usersRepository.updatePhone(userId, phone)
     if (!updated) throw new AppError(404, 'User not found')
     try {
       await referralsRepository.rewardIfPhoneLinked(userId)
     } catch (err) {
       // Mukofot ixtiyoriy — asosiy phone oqimini sindirmaydi
-      console.error('[referral] phone-link reward xatosi (updatePhone davom etadi):', err)
+      console.error('[referral] phone-link reward xatosi (applyVerifiedPhone davom etadi):', err)
     }
   },
 
