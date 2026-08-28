@@ -1,5 +1,6 @@
 import { memo } from 'react'
-import { Settings, Sun, Moon } from 'lucide-react'
+import { Sun, Moon } from 'lucide-react'
+import SettingsIcon from '../../../shared/components/SettingsIcon'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
@@ -105,7 +106,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
           aria-label={tt('settingsTitle')}
           className="size-8 text-pmuted hover:text-pfg"
         >
-          <Settings size={18} strokeWidth={1.75} />
+          <SettingsIcon className="size-[18px]" />
         </Button>
       </div>
     </div>

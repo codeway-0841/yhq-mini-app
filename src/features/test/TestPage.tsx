@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, Settings, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Coins, Sparkles, Check } from 'lucide-react'
+import { Bookmark, Share2, Flag, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Coins, Sparkles, Check } from 'lucide-react'
+import SettingsIcon from '../../shared/components/SettingsIcon'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -658,7 +659,7 @@ export default function TestPage() {
           )}
           <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
             className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-9 h-9 rounded-control flex items-center justify-center">
-            <Settings size={17} />
+            <SettingsIcon className="size-[17px]" />
           </button>
           <button
             onClick={() => { setIsFinished(true); setShowResults(true) }}
