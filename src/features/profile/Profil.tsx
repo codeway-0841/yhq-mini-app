@@ -158,12 +158,10 @@ export default function Profil() {
       {/* ── SIZNING TARIFINGIZ ── */}
       <Section title={tt('yourTariff').toUpperCase()}>
         {/* Tariff card */}
-        <div className="px-4 py-3.5 flex items-center gap-3">
-          <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
-            <Crown size={22} strokeWidth={1.75} className="text-pgold" />
-          </div>
+        <div className="px-4 py-3.5 flex items-center gap-3.5">
+          <Crown size={22} strokeWidth={1.75} className="shrink-0 text-pgold" />
           <div className="min-w-0 flex-1">
-            <p className="text-[14px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
+            <p className="text-[14.5px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
             <p className="mt-0.5 text-[11px] leading-tight text-pmuted">
               {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
             </p>
@@ -280,12 +278,10 @@ export default function Profil() {
       </Section>
 
       {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}
-      <div className="mx-5 mb-6 flex items-center gap-3 rounded-container border border-pline bg-pcard px-4 py-3">
-        <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-primary-rgb)/0.26)] bg-pwash">
-          <Share2 size={19} strokeWidth={1.75} className="text-pprimary" />
-        </div>
+      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard px-4 py-3.5">
+        <Share2 size={22} strokeWidth={1.75} className="shrink-0 text-pprimary" />
         <div className="min-w-0 flex-1">
-          <p className="text-[13px] font-semibold text-pfg">{tt('refTitle')}</p>
+          <p className="text-[13.5px] font-semibold text-pfg">{tt('refTitle')}</p>
           <p className="mt-0.5 text-[10.5px] leading-snug text-pmuted">{tt('refDesc')}</p>
           {refStats && refStats.invited > 0 && (
             <p className="mt-1 text-[10.5px] font-semibold leading-snug text-pprimary">

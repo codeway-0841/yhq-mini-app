@@ -14,31 +14,27 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
 import { Button } from './ui/button'
+import { cn } from '../lib/cn'
 
 type LucideIcon = typeof Zap
 type PickerKey = 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
 
-/** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv.
- *  iconColor — CSS-token (var(--p-*)); alpha color-mix bilan aralashadi (hex-konkat YO'Q).
- *  Chip retsepti profile/Section Item bilan bir xil (10% fon + 20% ramka, squircle). */
-function Row({ icon: Icon, iconColor = 'var(--p-primary)', label, children }: {
+/** Qator: chapda flat neytral ikonka + label + o'ngda boshqaruv (ModeRow / Grid uslubi). */
+function Row({ icon: Icon, iconColor, label, children }: {
   icon: LucideIcon
   iconColor?: string
   label: string
   children: ReactNode
 }) {
   return (
-    <div className="flex items-center gap-3 py-3 border-b border-pline last:border-0">
-      <div
-        className="flex size-8 flex-none items-center justify-center rounded-[10px]"
-        style={{
-          background: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${iconColor} 20%, transparent)`,
-        }}
-      >
-        <Icon size={15} strokeWidth={1.75} style={{ color: iconColor }} />
-      </div>
-      <span className="flex-1 text-[14px] text-pfg">{label}</span>
+    <div className="flex items-center gap-3.5 py-3.5 border-b border-pline last:border-0">
+      <Icon
+        size={20}
+        strokeWidth={1.75}
+        className={cn('shrink-0', !iconColor && 'text-pmuted')}
+        style={iconColor ? { color: iconColor } : undefined}
+      />
+      <span className="flex-1 text-[14.5px] font-medium text-pfg">{label}</span>
       {children}
     </div>
   )

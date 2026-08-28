@@ -104,10 +104,7 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
               } ${
                 active ? 'border-pprimary bg-pprimary/10' : 'border-pline bg-pcard'
               }`}>
-              <div className="w-11 h-11 rounded-control flex items-center justify-center flex-none"
-                style={{ background: `${s.color}26`, color: s.color }}>
-                <Icon size={22} />
-              </div>
+              <Icon size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
               <span className="flex-1 text-[15px] font-semibold text-pfg">
                 {lang === 'ru' ? s.nameRu : s.name}
               </span>

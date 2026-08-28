@@ -29,19 +29,11 @@ export function AchievementsSection({ lang, tt, userId }: {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="flex min-h-[52px] w-full items-center gap-3 px-4 py-3 text-left transition-colors duration-[120ms] ease-out hover:bg-psurface active:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary"
+        className="flex min-h-[50px] w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors duration-[120ms] ease-out hover:bg-psurface active:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary"
       >
-        <div
-          className="flex size-8 flex-shrink-0 items-center justify-center rounded-[10px]"
-          style={{
-            background: 'color-mix(in srgb, var(--p-primary) 10%, transparent)',
-            border: '1px solid color-mix(in srgb, var(--p-primary) 20%, transparent)',
-          }}
-        >
-          <Trophy size={15} strokeWidth={1.75} style={{ color: 'var(--p-primary)' }} />
-        </div>
+        <Trophy size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
         <div className="flex-1 min-w-0">
-          <p className="text-[14px] text-pfg">{tt('achTitle')}</p>
+          <p className="text-[14.5px] font-medium text-pfg">{tt('achTitle')}</p>
           <div className="mt-1.5 h-[3px] w-full max-w-[140px] overflow-hidden rounded-[2px] bg-plineStrong">
             <div className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
               style={{ width: `${(unlockedCount / ACHIEVEMENTS.length) * 100}%` }} />

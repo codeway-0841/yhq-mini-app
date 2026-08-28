@@ -84,7 +84,7 @@ export default function BossCard() {
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-psubtle">
-          <Swords size={13} strokeWidth={2} className="text-pprimary" />
+          <Swords size={14} strokeWidth={1.75} className="text-pmuted" />
           <span>{tt('bossTitle')}</span>
         </div>
         <span
@@ -100,20 +100,16 @@ export default function BossCard() {
 
       {/* Asosiy Boss ma'lumoti */}
       <div className="flex items-center gap-3.5">
-        {/* Boss Avatari (Emoji + Rangli Glowing Badge) */}
+        {/* Boss Avatari (Clean border box) */}
         <div
-          className="relative flex size-12 shrink-0 items-center justify-center rounded-[14px] border text-[22px] shadow-sm transition-transform active:scale-95"
-          style={{
-            background: `color-mix(in srgb, ${bossColor} 14%, transparent)`,
-            borderColor: `color-mix(in srgb, ${bossColor} 30%, transparent)`,
-          }}
+          className="relative flex size-12 shrink-0 items-center justify-center rounded-[14px] border border-pline bg-psurface text-[22px] transition-transform active:scale-95"
         >
           <span>{emoji}</span>
           <span
-            className="absolute -bottom-1 -right-1 flex size-5 items-center justify-center rounded-full border border-pcard bg-pcard shadow-xs"
+            className="absolute -bottom-1 -right-1 flex size-5 items-center justify-center rounded-full border border-pline bg-pcard shadow-xs"
             style={{ color: bossColor }}
           >
-            <BossIcon size={11} strokeWidth={2.2} />
+            <BossIcon size={11} strokeWidth={1.75} />
           </span>
         </div>
 
@@ -141,8 +137,8 @@ export default function BossCard() {
             <span className="text-[10.5px] font-medium tabular-nums text-pmuted">
               {tt('bossHpShort')}: <strong className="font-bold text-pfg">{remainingHpPct}%</strong>
             </span>
-            <span className="flex items-center gap-1 text-[10.5px] font-bold tabular-nums text-pprimary">
-              <Flame size={12} className="text-pwarning" />
+            <span className="flex items-center gap-1 text-[10.5px] font-bold tabular-nums text-pfg">
+              <Flame size={12} strokeWidth={1.75} className="text-pwarning" />
               <span>{tt('bossMyDamage')}: {state.myDamage}</span>
             </span>
           </div>
@@ -153,7 +149,7 @@ export default function BossCard() {
       {state.top.length > 0 && (
         <div className="mt-3 flex items-center justify-between border-t border-pline/70 pt-2.5">
           <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-psubtle">
-            <Trophy size={11} className="text-pgold" /> {tt('bossTopHitters')}
+            <Trophy size={11} strokeWidth={1.75} className="text-pmuted" /> {tt('bossTopHitters')}
           </span>
           <div className="flex items-center gap-2">
             <div className="flex items-center -space-x-1.5">

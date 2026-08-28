@@ -156,9 +156,9 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
           className="size-8 text-pmuted hover:text-pfg transition-transform active:scale-90"
         >
           {isDark ? (
-            <Moon size={16} strokeWidth={1.75} className="text-pprimary" />
+            <Moon size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />
           ) : (
-            <Sun size={16} strokeWidth={1.75} className="text-pwarning" />
+            <Sun size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />
           )}
         </Button>
 
@@ -167,16 +167,16 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
           size="icon-sm"
           onClick={onSettings}
           aria-label={tt('settingsTitle')}
-          className="size-8"
+          className="size-8 text-pmuted hover:text-pfg"
         >
-          <Settings strokeWidth={1.75} />
+          <Settings size={18} strokeWidth={1.75} />
         </Button>
       </div>
     </div>
 
     {levelInfoOpen && (
       <StatInfoSheet
-        icon={<Award size={20} strokeWidth={2} />}
+        icon={<Award size={20} strokeWidth={1.75} />}
         title={tt('levelInfoTitle')}
         body={tt('levelInfoBody')}
         extra={`${tt('xpToNextLevel')}: ${xpToNext} XP`}
@@ -185,7 +185,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
     )}
     {coinInfoOpen && (
       <StatInfoSheet
-        icon={<Coins size={20} strokeWidth={2} />}
+        icon={<Coins size={20} strokeWidth={1.75} />}
         title={tt('coinInfoTitle')}
         body={tt('coinInfoBody')}
         onClose={() => setCoinInfoOpen(false)}

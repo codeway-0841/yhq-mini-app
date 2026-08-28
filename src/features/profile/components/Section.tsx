@@ -15,7 +15,7 @@ export function Section({ title, children }: { title: string; children: React.Re
 }
 
 // ── List Item ───────────────────────────────────────────────────────────
-// Rang intizomi: ikonkalar NEYTRAL, faqat semantik ma'nolilar rangli (danger=qizil)
+// Rang intizomi (v3): ikonkalar NEYTRAL (ModeRow / Grid uslubi), faqat semantik ma'nolilar rangli
 export interface ItemProps {
   icon: React.ElementType
   iconColor?: string
@@ -24,7 +24,7 @@ export interface ItemProps {
   onPress?: () => void
   disabled?: boolean
 }
-export function Item({ icon: Icon, iconColor = 'var(--p-primary)', label, right, onPress, disabled }: ItemProps) {
+export function Item({ icon: Icon, iconColor, label, right, onPress, disabled }: ItemProps) {
   const Comp = onPress ? 'button' : 'div'
   return (
     <Comp
@@ -32,25 +32,21 @@ export function Item({ icon: Icon, iconColor = 'var(--p-primary)', label, right,
       onClick={disabled ? undefined : onPress}
       disabled={Comp === 'button' && disabled ? true : undefined}
       className={cn(
-        // 52px — touch target (44px minimum + ro'yxat zichligi)
-        'flex min-h-[52px] w-full items-center gap-3 px-4 py-3 text-left',
+        // 50px — touch target (ModeRow bilan bir xil ritm)
+        'flex min-h-[50px] w-full items-center gap-3.5 px-4 py-3.5 text-left',
         'transition-colors duration-[120ms] ease-out',
         disabled && 'cursor-not-allowed opacity-50',
         !disabled && onPress && 'cursor-pointer hover:bg-psurface active:bg-psurface',
         onPress && 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary',
       )}
     >
-      {/* v3: ikonka qutisi squircle (doira EMAS) — ui/Avatar va IconChip bilan bir ritm */}
-      <div
-        className="flex size-8 flex-shrink-0 items-center justify-center rounded-[10px]"
-        style={{
-          background: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${iconColor} 20%, transparent)`,
-        }}
-      >
-        <Icon size={15} strokeWidth={1.75} style={{ color: iconColor }} />
-      </div>
-      <span className="flex-1 text-left text-[14px] text-pfg">{label}</span>
+      <Icon
+        size={20}
+        strokeWidth={1.75}
+        className={cn('shrink-0', !iconColor && 'text-pmuted')}
+        style={iconColor ? { color: iconColor } : undefined}
+      />
+      <span className="flex-1 text-left text-[14.5px] font-medium text-pfg">{label}</span>
       {right !== undefined ? right : <ChevronRight size={16} strokeWidth={1.75} className="shrink-0 text-psubtle" />}
     </Comp>
   )

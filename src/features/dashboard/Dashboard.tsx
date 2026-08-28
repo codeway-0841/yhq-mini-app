@@ -311,11 +311,9 @@ export default function Dashboard() {
 
           {/* 8. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
           <div className="mx-5 mb-6 mt-10 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
-            <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
-              <Crown size={19} strokeWidth={1.75} className="text-pgold" />
-            </div>
+            <Crown size={22} strokeWidth={1.75} className="shrink-0 text-pgold" />
             <div className="min-w-0 flex-1">
-              <p className="text-[13px] font-semibold text-pfg">Premium</p>
+              <p className="text-[13.5px] font-semibold text-pfg">Premium</p>
               <p className="mt-0.5 text-[11px] text-psubtle">{tt('premiumTagline')}</p>
             </div>
             <Button variant="gold" size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>

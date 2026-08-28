@@ -16,8 +16,6 @@ const StatButton = memo(function StatButton({
   icon: Icon,
   value,
   label,
-  iconBg,
-  tone,
   onClick,
   onLongPress,
   ariaLabel,
@@ -25,8 +23,6 @@ const StatButton = memo(function StatButton({
   icon: typeof Flame | typeof Star | typeof Trophy
   value: string
   label: string
-  iconBg?: string
-  tone?: string
   onClick?: () => void
   onLongPress?: () => void
   ariaLabel: string
@@ -55,14 +51,12 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex items-center gap-2 rounded-control p-1 text-left',
+        'flex items-center gap-2.5 rounded-control p-1.5 text-left',
         'transition-all duration-[120ms] ease-out active:scale-[0.97]',
         'hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
-      <div className={cn('flex size-7 shrink-0 items-center justify-center rounded-full', iconBg ?? 'bg-white/15 text-white', tone)}>
-        <Icon size={15} strokeWidth={2} />
-      </div>
+      <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />
       <div className="min-w-0">
         <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{value}</p>
         <p className="truncate text-[10px] font-medium text-white/65">{label}</p>
@@ -128,9 +122,9 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             )}
             aria-label={tt('subjectSelect')}
           >
-            <subject.icon size={13} strokeWidth={2} style={{ color: subject.color }} />
+            <subject.icon size={14} strokeWidth={1.75} className="shrink-0 text-white/90" />
             <span className="max-w-[120px] truncate">{subject.name}</span>
-            <ChevronDown size={12} strokeWidth={2} className="opacity-75" />
+            <ChevronDown size={12} strokeWidth={1.75} className="text-white/70" />
           </button>
         </div>
 
@@ -160,7 +154,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             icon={Flame}
             value={`${streak} ${tt('daysWord')}`}
             label={tt('streakDays')}
-            iconBg="bg-pwarning/25 text-pwarning"
             onClick={() => navigate('/streak')}
             onLongPress={onStreakPreview}
             ariaLabel={tt('intizomTitle')}
@@ -170,7 +163,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             icon={Star}
             value={`${xp} XP`}
             label={tt('totalXp')}
-            iconBg="bg-pgold/25 text-pgold"
             onClick={() => setXpInfoOpen(true)}
             ariaLabel={tt('xpInfoTitle')}
           />
@@ -179,7 +171,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             icon={Trophy}
             value={tt(LEAGUE_TT_KEY[league])}
             label={tt('ratingWord')}
-            iconBg="bg-pblue/25 text-pblue"
             onClick={() => navigate('/reyting')}
             onLongPress={() => setLeagueInfoOpen(true)}
             ariaLabel={tt('leagueInfoTitle')}
@@ -192,7 +183,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
 
       {xpInfoOpen && (
         <StatInfoSheet
-          icon={<Star size={20} strokeWidth={2} />}
+          icon={<Star size={20} strokeWidth={1.75} />}
           title={tt('xpInfoTitle')}
           body={tt('xpInfoBody')}
           onClose={() => setXpInfoOpen(false)}
@@ -200,7 +191,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
       )}
       {leagueInfoOpen && (
         <StatInfoSheet
-          icon={<Trophy size={20} strokeWidth={2} />}
+          icon={<Trophy size={20} strokeWidth={1.75} />}
           title={tt('leagueInfoTitle')}
           body={tt('leagueInfoBody')}
           onClose={() => setLeagueInfoOpen(false)}

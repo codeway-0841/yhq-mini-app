@@ -83,10 +83,8 @@ export default function PremiumPage() {
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
-        <div className="flex items-center gap-3">
-          <div className="flex size-12 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
-            <Crown size={22} strokeWidth={1.75} className="text-pgold" />
-          </div>
+        <div className="flex items-center gap-3.5">
+          <Crown size={24} strokeWidth={1.75} className="shrink-0 text-pgold" />
           <div className="min-w-0 flex-1">
             <h2 className="text-[16px] font-semibold tracking-tight">KIWI Premium</h2>
             <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
@@ -121,11 +119,9 @@ export default function PremiumPage() {
       </p>
       <div className="mx-5 rounded-container border border-pline bg-pcard divide-y divide-pline">
         {BENEFITS.map((b, i) => (
-          <div key={i} className="flex items-center gap-3 px-4 py-3">
-            <div className="flex size-8 flex-none items-center justify-center rounded-[10px] border border-pline bg-psurface">
-              <b.icon size={15} strokeWidth={1.75} className="text-pmuted" />
-            </div>
-            <span className="text-[14px] text-pfg">{lang === 'ru' ? b.ru : b.uz}</span>
+          <div key={i} className="flex items-center gap-3.5 px-4 py-3.5">
+            <b.icon size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+            <span className="text-[14.5px] font-medium text-pfg">{lang === 'ru' ? b.ru : b.uz}</span>
           </div>
         ))}
       </div>

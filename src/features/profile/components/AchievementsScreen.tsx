@@ -20,17 +20,11 @@ function AchievementTile({ a, stats, tt }: {
       <div className="relative mb-2">
         <div
           className={cn(
-            'flex size-[52px] items-center justify-center rounded-[16px] transition-colors duration-[120ms] ease-out',
-            !unlocked && 'border border-pline bg-psurface opacity-50',
+            'flex size-[52px] items-center justify-center rounded-[16px] border border-pline bg-psurface transition-colors duration-[120ms] ease-out',
+            !unlocked && 'opacity-40',
           )}
-          style={unlocked
-            ? {
-                background: `color-mix(in srgb, ${a.color} 12%, transparent)`,
-                border: `1px solid color-mix(in srgb, ${a.color} 26%, transparent)`,
-              }
-            : undefined}
         >
-          <Icon size={22} strokeWidth={1.75} style={{ color: unlocked ? a.color : 'var(--p-subtle)' }} />
+          <Icon size={24} strokeWidth={1.75} style={{ color: unlocked ? a.color : 'var(--p-subtle)' }} />
         </div>
         {unlocked && (
           <span className="absolute -bottom-1 -right-1 grid size-[18px] place-items-center rounded-full border-2 border-pcard bg-psuccess">

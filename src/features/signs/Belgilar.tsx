@@ -117,15 +117,9 @@ function CategoryGrid({ onSelect, lang }: { onSelect: (cat: SignCategory) => voi
             onClick={() => onSelect(cat)}
             className="flex items-center gap-3.5 rounded-container border border-pline bg-psurface p-3.5 active:scale-[0.98] transition-all text-left hover:border-plineStrong shadow-xs"
           >
-            <div
-              className="flex size-12 flex-shrink-0 items-center justify-center rounded-[14px] overflow-hidden"
-              style={{
-                background: `color-mix(in srgb, ${cat.color} 12%, transparent)`,
-                border: `1px solid color-mix(in srgb, ${cat.color} 25%, transparent)`,
-              }}
-            >
+            <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-control border border-pline bg-pcard overflow-hidden">
               {cat.image ? (
-                <img src={cat.image} alt={catName} className="w-8 h-8 object-contain" />
+                <img src={cat.image} alt={catName} className="w-7 h-7 object-contain" />
               ) : (
                 <Icon size={22} strokeWidth={1.75} style={{ color: cat.color }} />
               )}
@@ -288,16 +282,12 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
               onClick={() => setExpandedChapter(isExpanded && !query.trim() ? null : ch.chapter)}
               className="w-full p-4 flex items-center justify-between text-left hover:bg-pcanvas/30 transition-colors"
             >
-              <div className="flex items-center gap-3 pr-2">
-                <div
-                  className={`size-8 rounded-control flex items-center justify-center flex-shrink-0 ${
-                    isFines
-                      ? 'bg-pwarning/15 text-pwarning border border-pwarning/30'
-                      : 'bg-pprimary/10 text-pprimary border border-pprimary/20'
-                  }`}
-                >
-                  {isFines ? <ShieldAlert size={16} /> : <BookOpen size={16} />}
-                </div>
+              <div className="flex items-center gap-3.5 pr-2">
+                {isFines ? (
+                  <ShieldAlert size={20} strokeWidth={1.75} className="shrink-0 text-pwarning" />
+                ) : (
+                  <BookOpen size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+                )}
                 <div>
                   <h3 className="text-[14px] font-semibold text-pfg leading-snug">{ch.title}</h3>
                   <p className="text-[11px] text-pmuted">

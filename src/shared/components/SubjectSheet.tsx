@@ -16,40 +16,43 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} labelId="subject-title">
-      <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[80vh] overflow-y-auto">
-        <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
-        <p id="subject-title" className="text-center text-base font-black mb-5 text-fg">
+      <div className="relative w-full bg-pcard rounded-t-sheet border-t border-pline p-4 pb-8 max-h-[80vh] overflow-y-auto">
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
+        <p id="subject-title" className="text-center text-base font-semibold mb-5 text-pfg">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
-        <div className="flex flex-col gap-2.5">
+        <div className="overflow-hidden rounded-container border border-pline bg-psurface divide-y divide-pline">
           {SUBJECTS.map((s) => {
             const active = s.id === subjectId
             const Icon = s.icon
             return (
-              <button key={s.id} onClick={() => pick(s.id, s.available)}
-                className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
-                  !s.available ? 'opacity-55' : ''
+              <button
+                key={s.id}
+                onClick={() => pick(s.id, s.available)}
+                disabled={!s.available}
+                className={`flex items-center gap-3.5 w-full p-3.5 text-left transition-colors duration-[120ms] ease-out ${
+                  !s.available ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pcard active:bg-pcard'
                 } ${
-                  active ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.10)]' : 'border-line bg-canvas active:border-lineStrong'
-                }`}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-none"
-                  style={{ background: `${s.color}26`, color: s.color }}>
-                  <Icon size={22} />
-                </div>
-                <span className="flex-1 text-[15px] font-bold text-fg">
+                  active ? 'bg-pcard font-semibold' : ''
+                }`}
+              >
+                <Icon size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+                <span className="flex-1 text-[14.5px] font-medium text-pfg">
                   {lang === 'ru' ? s.nameRu : s.name}
                 </span>
                 {s.demoData && (
-                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-pwarning flex-none">
+                  <span className="text-[10px] font-bold uppercase tracking-wide text-pwarning flex-none">
                     demo
                   </span>
                 )}
                 {!s.available && (
-                  <span className="text-[10px] font-extrabold uppercase tracking-wide text-subtle flex-none">
+                  <span className="text-[10px] font-bold uppercase tracking-wide text-psubtle flex-none">
                     {lang === 'ru' ? 'Скоро' : 'Tez kunda'}
                   </span>
                 )}
-                {active && s.available && <Check size={18} className="text-pprimary flex-none" strokeWidth={3} />}
+                {active && s.available && (
+                  <Check size={18} className="text-pprimary flex-none" strokeWidth={2.25} />
+                )}
               </button>
             )
           })}

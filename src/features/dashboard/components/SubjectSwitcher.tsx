@@ -30,8 +30,7 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
         {/* Rasm bo'lmasa: dekorativ watermark ikon */}
         {!imgOk && (
           <Icon size={110} strokeWidth={1} aria-hidden
-            className="absolute -right-4 -bottom-6 opacity-[0.07] pointer-events-none"
-            style={{ color: subject.color }} />
+            className="absolute -right-4 -bottom-6 opacity-[0.07] pointer-events-none text-pfg" />
         )}
         <div className="relative min-w-0">
           <p className="line-clamp-2 break-words font-display text-[19px] font-semibold leading-[1.15] tracking-[-0.02em] text-pfg sm:text-[21px]">
@@ -63,16 +62,7 @@ export const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch:
   const Icon    = subject.icon
   return (
     <div className="mx-5 mt-6 flex flex-col items-center rounded-container border border-dashed border-plineStrong p-8 text-center">
-      <div
-        className="mb-4 flex size-14 items-center justify-center rounded-[14px]"
-        style={{
-          background: `color-mix(in srgb, ${subject.color} 10%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${subject.color} 20%, transparent)`,
-          color: subject.color,
-        }}
-      >
-        <Icon size={26} strokeWidth={1.75} />
-      </div>
+      <Icon size={36} strokeWidth={1.75} className="mb-3 shrink-0 text-pmuted" />
       <h3 className="font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg">
         {lang === 'ru' ? subject.nameRu : subject.name}
       </h3>

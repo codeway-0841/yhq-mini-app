@@ -160,9 +160,9 @@ body[data-theme='light'] .ambient-mesh-glow::after {
 }
 
 body[data-theme='light'] .hero-gradient-card {
-  border: 1px solid color-mix(in srgb, var(--p-primary) 32%, rgba(0, 0, 0, 0.12));
+  border: 1px solid color-mix(in srgb, var(--p-primary) 36%, rgba(0, 0, 0, 0.15));
   background: 
-    radial-gradient(130% 140% at 95% 10%, color-mix(in srgb, var(--p-primary) 80%, #ffffff) 0%, color-mix(in srgb, var(--p-primary) 50%, #f1f5f9) 50%, color-mix(in srgb, var(--p-primary) 90%, #000) 100%);
+    radial-gradient(130% 140% at 95% 10%, color-mix(in srgb, var(--p-primary) 92%, #000) 0%, color-mix(in srgb, var(--p-primary) 55%, #0a101d) 45%, color-mix(in srgb, var(--p-primary) 22%, #0f172a) 100%);
 }
 
 /* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */
