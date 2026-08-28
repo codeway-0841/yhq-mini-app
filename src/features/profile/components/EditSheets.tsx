@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { Camera, ImagePlus, Trash2, X, Pencil } from 'lucide-react'
+import { Camera, ImagePlus, Trash2, X, Pencil, Phone, Send, MessageSquare } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
+import { usePhoneInput } from '../../auth'
 
 // ── Bottom sheet — profil rasmini tahrirlash ────────────────────────────
 export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
@@ -38,6 +39,112 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
             {tt('cancel')}
           </Button>
         </div>
+      </div>
+    </DialogOverlay>
+  )
+}
+
+// ── Bottom sheet — telefon qo'shish/o'zgartirish ─────────────────────────
+// Zanjir: (change'da) TASDIQ ("Raqamni o'zgartirasizmi?") → USUL tanlash
+// (Telegram orqali = requestContact fast-path, SMS'siz / SMS orqali = qo'lda
+// raqam + kod) → (SMS'da) RAQAM INPUT. OTP kodi Profil'dagi umumiy blokda
+// kiritiladi (sheet yopilgach ko'rinadi).
+
+/** +998909080724 → "+998 90 908 07 24" (o'qish oson — faqat ko'rsatish uchun) */
+function formatPhoneDisplay(p: string): string {
+  const m = /^\+998(\d{2})(\d{3})(\d{2})(\d{2})$/.exec(p)
+  return m ? `+998 ${m[1]} ${m[2]} ${m[3]} ${m[4]}` : p
+}
+
+export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms }: {
+  currentPhone: string | null
+  busy: boolean
+  onClose: () => void
+  onTelegram: () => void
+  onSms: (phone: string) => void
+}) {
+  const tt = useT(useAppStore((s) => s.settings.language))
+  const phone = usePhoneInput()
+  // Change rejimida avval tasdiqlash; add rejimida to'g'ridan-to'g'ri usul
+  const [step, setStep] = useState<'confirm' | 'method' | 'sms'>(currentPhone ? 'confirm' : 'method')
+
+  return (
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="phone-edit-title">
+      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8">
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
+
+        <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-pprimary/10">
+          <Phone size={28} strokeWidth={1.75} className="text-pprimary" />
+        </div>
+
+        {step === 'confirm' && currentPhone && (
+          <>
+            <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg">
+              {tt('phoneChangeTitle')}
+            </p>
+            <p className="mt-2 text-center text-[16px] font-semibold tracking-wide text-pprimary">
+              {formatPhoneDisplay(currentPhone)}
+            </p>
+            <p className="mt-2 mb-5 text-center text-[13px] text-pmuted">
+              {tt('phoneChangeHint')}
+            </p>
+            <div className="flex gap-3">
+              <Button block variant="outline" onClick={onClose}>{tt('cancel')}</Button>
+              <Button block onClick={() => setStep('method')}>{tt('continueAction')}</Button>
+            </div>
+          </>
+        )}
+
+        {step === 'method' && (
+          <>
+            <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg">
+              {tt('phoneMethodTitle')}
+            </p>
+            <p className="mt-2 mb-5 text-center text-[13px] text-pmuted">
+              {tt('phoneMethodHint')}
+            </p>
+            <div className="flex flex-col gap-2.5">
+              <Button block loading={busy} onClick={onTelegram}>
+                <Send size={16} />
+                {tt('viaTelegram')}
+              </Button>
+              <Button block variant="outline" disabled={busy} onClick={() => setStep('sms')}>
+                <MessageSquare size={16} />
+                {tt('viaSms')}
+              </Button>
+            </div>
+          </>
+        )}
+
+        {step === 'sms' && (
+          <>
+            <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg mb-4">
+              {tt('viaSms')}
+            </p>
+            <div className="mb-4 flex items-center gap-2 rounded-control border border-pline bg-pcanvas px-3.5 focus-within:border-pprimary">
+              <span className="text-pmuted font-semibold select-none">+998</span>
+              <input
+                value={phone.digits}
+                onChange={(e) => phone.setDigits(e.target.value)}
+                inputMode="numeric"
+                autoComplete="tel-national"
+                placeholder="90 123 45 67"
+                maxLength={11}
+                disabled={busy}
+                autoFocus
+                className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[15px] text-pfg placeholder:text-pmuted tracking-widest"
+              />
+            </div>
+            <div className="flex flex-col gap-2.5">
+              <Button block loading={busy} disabled={!phone.isValid} onClick={() => onSms(phone.value)}>
+                {tt('sendSmsCode')}
+              </Button>
+              <Button block variant="ghost" disabled={busy} onClick={() => setStep('method')}>
+                {tt('backWord')}
+              </Button>
+            </div>
+          </>
+        )}
       </div>
     </DialogOverlay>
   )

@@ -18,7 +18,7 @@ import { Button } from '../../shared/components/ui/button'
 import { useToast } from '../../shared/components/ToastContainer'
 import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
-import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
+import { PhotoEditSheet, NameEditSheet, PhoneEditSheet } from './components/EditSheets'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { CertificateModal } from '../test'
 import { AchievementsItem } from './components/AchievementsSection'
@@ -76,6 +76,7 @@ export default function Profil() {
   const [showThemePicker, setShowThemePicker] = useState(false)
   const [showPromoModal, setShowPromoModal]   = useState(false)
   const [showCertModal, setShowCertModal]     = useState(false)
+  const [showPhoneSheet, setShowPhoneSheet]   = useState(false)
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
 
   const { current: xpCurrent, needed: xpNeeded } = levelProgress(xp)
@@ -91,7 +92,7 @@ export default function Profil() {
   })
   const {
     phoneLoading, otpPhone, phoneError, phoneNotice,
-    handleAddPhone, submitPhoneOtp, cancelPhoneOtp,
+    handleAddPhone, startManualPhone, submitPhoneOtp, cancelPhoneOtp,
   } = usePhoneContact()
   // OTP bosqichi (SMS egalik isboti) lokal holati
   const [otpCode, setOtpCode] = useState('')
@@ -252,14 +253,14 @@ export default function Profil() {
                 ? <span aria-hidden="true" className="size-4 rounded-full border-2 border-pmuted border-t-transparent motion-safe:animate-spin" />
                 : <span className="text-[12px] text-pmuted">{tt('profileAddPhoneCta')}</span>
           }
-          onPress={user?.phone || otpPhone ? undefined : handleAddPhone}
-          disabled={phoneLoading || !!user?.phone || !!otpPhone}
+          onPress={otpPhone ? undefined : () => setShowPhoneSheet(true)}
+          disabled={phoneLoading || !!otpPhone}
         />
 
         {/* SMS OTP bosqichi (H-2: egalik isbotisiz telefon yozilmaydi) */}
         {phoneError && <p className="px-4 pb-1 text-[12px] text-pdanger">{tt(phoneError)}</p>}
         {phoneNotice && <p className="px-4 pb-1 text-[12px] text-psuccess">{tt(phoneNotice)}</p>}
-        {otpPhone && !user?.phone && (
+        {otpPhone && (
           <div className="px-4 pb-3 animate-premiumIn">
             <p className="mb-2 text-[12px] text-pmuted">
               {tt('authSmsCodeSent')}: <span className="font-semibold text-pfg">{otpPhone}</span>
@@ -435,6 +436,17 @@ export default function Profil() {
           onClose={() => setShowPhotoEdit(false)}
           onPick={() => fileRef.current?.click()}
           onRemove={() => void removeAvatar()}
+        />
+      )}
+
+      {/* Telefon qo'shish/o'zgartirish — tasdiq → usul (Telegram/SMS) → input */}
+      {showPhoneSheet && (
+        <PhoneEditSheet
+          currentPhone={user?.phone ?? null}
+          busy={phoneLoading}
+          onClose={() => setShowPhoneSheet(false)}
+          onTelegram={() => { setShowPhoneSheet(false); handleAddPhone() }}
+          onSms={(p) => { setShowPhoneSheet(false); void startManualPhone(p) }}
         />
       )}
 

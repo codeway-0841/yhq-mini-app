@@ -158,6 +158,26 @@ describe('usePhoneContact', () => {
     expect(result.current.otpPhone).toBeNull()
   })
 
+  it('startManualPhone (SMS orqali qo\'lda raqam) — kod yuborilib OTP bosqichiga o\'tadi', async () => {
+    const { result } = renderPhone()
+    await act(async () => { await result.current.startManualPhone('+998901234567') })
+
+    expect(mockRequestOTP).toHaveBeenCalledWith({ phone: '+998901234567' })
+    expect(result.current.otpPhone).toBe('+998901234567')
+    expect(result.current.phoneError).toBeNull()
+    expect(result.current.phoneLoading).toBe(false)
+  })
+
+  it('startManualPhone 429 — authRateLimited, OTP ochilmaydi', async () => {
+    mockRequestOTP.mockRejectedValue(new ApiError(429, 'slow down'))
+    const { result } = renderPhone()
+    await act(async () => { await result.current.startManualPhone('+998901234567') })
+
+    await waitFor(() => expect(result.current.phoneError).toBe('authRateLimited'))
+    expect(result.current.otpPhone).toBeNull()
+    expect(result.current.phoneLoading).toBe(false)
+  })
+
   it('cancelPhoneOtp OTP bosqichini bekor qiladi', async () => {
     mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
       cb(true, { contact: { phone_number: '+998901234567' } })

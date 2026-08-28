@@ -376,9 +376,12 @@ export const api = {
     return { status: r.status as 'pending' | 'expired' }
   },
 
-  /** Bearer sessiya bilan warm start — profile + providers. */
+  /** Bearer sessiya bilan warm start — profile + providers.
+   *  Boot-path 20s (uploadAvatar pattern'i): Vercel fn + Neon SUSPEND cold start
+   *  5-8s — default 8s timeout'da boot so'rovi yiqilib qayta urinishga tushardi
+   *  (ikki sovuq round-trip = ~16s splash, 2026-08-28 "sekin ochilyapti"). */
   getAuthMe: () =>
-    request<unknown>('GET', '/auth/me').then(parseAuthSession),
+    request<unknown>('GET', '/auth/me', undefined, 20_000).then(parseAuthSession),
 
   /** Offline'da ham lokal reset bo'lishi uchun xato yutuvchi. */
   logout: () =>
@@ -401,7 +404,9 @@ export const api = {
     start_param?: string
   // Warm-start asosiy manbai — contract DRIFT bo'lsa jimgina buzilmasin:
   }): Promise<FullProfile> =>
-    request<unknown>('POST', '/init', data).then((raw) => {
+    // Boot-path 20s — cold start'da 8s timeout + fallback qayta urinish
+    // splash'ni ~16s'ga cho'zardi (2026-08-28 "sekin ochilyapti" fix)
+    request<unknown>('POST', '/init', data, 20_000).then((raw) => {
       const profile = parseProfile(raw)
       // initData→Bearer exchange (v2): server sessiyasiz (initData'li) init'da
       // 30-kunlik token chiqaradi — saqlab qo'yamiz, keyingi so'rovlar Bearer bilan.
@@ -410,7 +415,7 @@ export const api = {
     }),
 
   getProfile: (userId: string): Promise<FullProfile> =>
-    request<unknown>('GET', `/profile/${uid(userId)}`).then(parseProfile),
+    request<unknown>('GET', `/profile/${uid(userId)}`, undefined, 20_000).then(parseProfile),
 
   postResult: (userId: string, data: {
     questionId: number

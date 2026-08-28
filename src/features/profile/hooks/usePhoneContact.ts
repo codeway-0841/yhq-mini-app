@@ -139,6 +139,22 @@ export function usePhoneContact(options?: PhoneContactOptions) {
     }
   }
 
+  // SMS orqali qo'lda raqam kiritish (PhoneEditSheet "SMS orqali" yo'li) —
+  // boshqa raqam (TG'niki emas) yoki Telegram'siz muhit (APK/brauzer) uchun.
+  const startManualPhone = async (phone: string): Promise<void> => {
+    setPhoneLoading(true)
+    setPhoneError(null)
+    setPhoneNotice(null)
+    try {
+      await api.requestOTP({ phone })
+      setOtpPhone(phone)
+    } catch (err) {
+      flashError(err instanceof ApiError && err.status === 429 ? 'authRateLimited' : 'authGenericError')
+    } finally {
+      setPhoneLoading(false)
+    }
+  }
+
   // 2-qadam (fallback): SMS kodni serverga yuborish (egalik isboti bilan yozadi)
   const submitPhoneOtp = async (code: string): Promise<void> => {
     if (!otpPhone) return
@@ -152,5 +168,5 @@ export function usePhoneContact(options?: PhoneContactOptions) {
     setOtpPhone(null)
   }
 
-  return { phoneLoading, otpPhone, phoneError, phoneNotice, handleAddPhone, submitPhoneOtp, cancelPhoneOtp }
+  return { phoneLoading, otpPhone, phoneError, phoneNotice, handleAddPhone, startManualPhone, submitPhoneOtp, cancelPhoneOtp }
 }
