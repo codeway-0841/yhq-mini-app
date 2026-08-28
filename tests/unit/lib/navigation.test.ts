@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import {
   registerModal,
   closeTopModal,
@@ -74,16 +74,8 @@ describe('navigation — modal stack & safe back handling', () => {
     unreg()
   })
 
-  it('goBack modal boʻlmasa router navigate(-1) yoki fallback ga oʻtadi', () => {
+  it('goBack modal boʻlmasa router navigate(-1) chaqiradi', () => {
     const navigate = vi.fn()
-
-    // History state null bo'lsa -> '/'
-    window.history.replaceState(null, '')
-    goBack(navigate)
-    expect(navigate).toHaveBeenCalledWith('/', { replace: true })
-
-    // History state idx > 0 bo'lsa -> -1
-    window.history.replaceState({ idx: 2 }, '')
     goBack(navigate)
     expect(navigate).toHaveBeenCalledWith(-1)
   })

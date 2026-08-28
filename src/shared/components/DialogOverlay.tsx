@@ -50,56 +50,24 @@ export default function DialogOverlay({ onClose, labelId, children, position = '
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
   const prevFocusRef = useRef<Element | null>(null)
-  const closedByPopstateRef = useRef(false)
 
-  // Stack ro'yxati + body scroll-lock + history push + focus restore
+  // Stack ro'yxati + body scroll-lock + modal stack ro'yxati + focus restore
   useEffect(() => {
     const id = idRef.current
     dialogStack.push(id)
     lockScroll()
     prevFocusRef.current = document.activeElement
 
-    // Android sensor/gesture swipe back (popstate)
-    const modalKey = `modal_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`
-    if (typeof window !== 'undefined' && window.history) {
-      try {
-        window.history.pushState({ isModal: true, modalKey }, '')
-      } catch {
-        // no-op (private/restricted mode)
-      }
-    }
-
-    const onPopState = () => {
-      if (isTop(id)) {
-        closedByPopstateRef.current = true
-        onCloseRef.current()
-      }
-    }
-    window.addEventListener('popstate', onPopState)
-
-    // Global navigation modal stack ro'yxatiga qo'shish (Telegram BackButton uchun)
+    // Global navigation modal stack ro'yxatiga qo'shish (Telegram BackButton & Android hardware back uchun)
     const unregister = registerModal(id, () => {
       onCloseRef.current()
     })
 
     return () => {
-      window.removeEventListener('popstate', onPopState)
       unregister()
       const i = dialogStack.indexOf(id)
       if (i >= 0) dialogStack.splice(i, 1)
       unlockScroll()
-
-      // Agar modal UI tugmasi orqali yopilgan bo'lsa (popstate emas) — push qilingan history state'ni qaytarish
-      if (!closedByPopstateRef.current && typeof window !== 'undefined' && window.history) {
-        try {
-          const st = window.history.state as { modalKey?: string } | null
-          if (st?.modalKey === modalKey) {
-            window.history.back()
-          }
-        } catch {
-          // no-op
-        }
-      }
 
       // Fokusni trigger elementga qaytarish (element hali DOM'da bo'lsa)
       const prev = prevFocusRef.current

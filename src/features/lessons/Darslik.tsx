@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { goBack } from '../../shared/lib/navigation'
+import { goBack, registerModal } from '../../shared/lib/navigation'
 import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
@@ -39,6 +39,19 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
   const lesson: Lesson | undefined = list[idx]
   const ru = settings.language === 'ru'
   const videoInfo: VideoInfo | undefined = (videosData as Record<string, VideoInfo | undefined>)[`${mod.id}:${idx}`]
+  const onCloseRef = useRef(onClose)
+  onCloseRef.current = onClose
+
+  // Android hardware/sensor orqaga surish va Telegram BackButton orqali darslikka qaytish
+  useEffect(() => {
+    const id = Symbol('lesson-reader')
+    const unregister = registerModal(id, () => {
+      onCloseRef.current()
+    })
+    return () => {
+      unregister()
+    }
+  }, [])
 
   useEffect(() => {
     setIsPlaying(false)

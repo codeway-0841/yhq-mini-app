@@ -76,21 +76,15 @@ export function closeTopModal(): boolean {
 
 /**
  * Xavfsiz "Orqaga":
- *  1) Agar biror modal/sheet ochiq bo'lsa — eng oxirgisini yopadi (botdan chiqib ketmaydi).
- *  2) Modal bo'lmasa — browser/router history bo'yicha bitta qadam orqaga (`navigate(-1)`).
- *  3) Agar history bo'lmasa (reload holati) — bosh sahifaga (`/`) qaytaradi.
+ *  1) Agar biror modal/sheet ochiq bo'lsa — eng oxirgisini yopadi (sahifa o'zgarmaydi).
+ *  2) Modal bo'lmasa — router tarixi bo'yicha ketma-ket bitta sahifa orqaga qaytaradi (`navigate(-1)`).
  */
 export function goBack(navigate?: NavigateFunction): void {
   if (closeTopModal()) {
     return
   }
   if (navigate) {
-    const idx = (window.history.state as { idx?: number } | null)?.idx
-    if (typeof idx === 'number' && idx > 0) {
-      navigate(-1)
-    } else {
-      navigate('/', { replace: true })
-    }
+    navigate(-1)
   } else if (typeof window !== 'undefined' && window.history) {
     window.history.back()
   }

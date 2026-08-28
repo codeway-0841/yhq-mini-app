@@ -1,6 +1,6 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { goBack } from '../../shared/lib/navigation'
+import { goBack, registerModal } from '../../shared/lib/navigation'
 import { X, Search, ChevronLeft, TrafficCone, Gamepad2, Layers, BookOpen, ShieldAlert, ChevronDown, ChevronUp } from 'lucide-react'
 import { signCategories, getSignsByCategory, searchSigns, type RoadSign, type SignCategory } from '../../content/signs'
 import { rulesChapters } from '../../content/rules'
@@ -333,6 +333,17 @@ export default function Belgilar() {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const isRu = lang === 'ru'
+  // Kategoriya ochilganda orqaga bosilsa umumiy ro'yxatga qaytish
+  useEffect(() => {
+    if (!selectedCategory) return
+    const id = Symbol('signs-category')
+    const unregister = registerModal(id, () => {
+      setSelectedCategory(null)
+    })
+    return () => {
+      unregister()
+    }
+  }, [selectedCategory])
 
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
