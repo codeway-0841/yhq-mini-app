@@ -83,6 +83,7 @@ export function IdleScreen({
   const [history, setHistory] = useState<DuelHistoryRecord[]>([])
 
   // Quick invite tab state
+  const [inviteTab, setInviteTab] = useState<'create' | 'join'>('create')
   const [quickPin] = useState(() => Math.floor(100000 + Math.random() * 900000).toString())
   const [copiedPin, setCopiedPin] = useState(false)
   const [inputPin, setInputPin] = useState('')
@@ -333,48 +334,90 @@ export function IdleScreen({
           </div>
         )}
 
-        {/* 4. Do'st bilan Duel Subview -> TABLE KO'RINISHIDA */}
+        {/* 4. Do'st bilan Duel Subview -> TABLI KO'RINISH (Xona yaratish / Qo'shilish) */}
         {subview === 'invite' && (
           <div className="space-y-3">
-            <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
-              {/* Row 1: PIN kodi */}
-              <div className="p-4 space-y-2">
-                <div className="flex items-center justify-between">
+            {/* Tab switcher */}
+            <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard border border-pline">
+              <button
+                type="button"
+                onClick={() => { setInviteTab('create'); setPinError(null); playSound('click'); haptics.impact('light') }}
+                className={cn(
+                  'py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all',
+                  inviteTab === 'create'
+                    ? 'bg-ppurple text-ponprimary shadow-xs'
+                    : 'text-pmuted hover:text-pfg'
+                )}
+              >
+                <Users size={14} />
+                <span>{tt('tabCreateRoom')}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => { setInviteTab('join'); setPinError(null); playSound('click'); haptics.impact('light') }}
+                className={cn(
+                  'py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all',
+                  inviteTab === 'join'
+                    ? 'bg-ppurple text-ponprimary shadow-xs'
+                    : 'text-pmuted hover:text-pfg'
+                )}
+              >
+                <KeyRound size={14} />
+                <span>{tt('tabJoinRoom')}</span>
+              </button>
+            </div>
+
+            {/* TAB 1: XONA YARATISH */}
+            {inviteTab === 'create' && (
+              <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
+                {/* PIN kodi */}
+                <div className="p-4 space-y-2 text-center">
                   <span className="text-xs font-bold text-psubtle">{tt('yourRoomPin')}</span>
+                  <div className="text-3xl font-black font-mono tracking-widest text-pprimary select-all">
+                    {quickPin.slice(0, 3)} {quickPin.slice(3)}
+                  </div>
+                  <p className="text-[11px] text-psubtle">{tt('roomWaitingHint')}</p>
+                </div>
+
+                {/* Tugmalar: Nusxa olish & Telegram'da ulashish */}
+                <div className="p-4 grid grid-cols-2 gap-2">
                   <button
                     type="button"
                     onClick={handleCopyPin}
-                    className="h-7 px-2.5 rounded-control bg-psurface border border-plineStrong text-pfg text-[11px] font-bold flex items-center gap-1 active:scale-95 transition-all"
+                    className="py-2.5 px-3 rounded-control bg-psurface border border-pline text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
                   >
-                    {copiedPin ? <Check size={13} className="text-pprimary" /> : <Copy size={13} />}
+                    {copiedPin ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                     <span>{copiedPin ? tt('pinCopied') : tt('copyPinBtn')}</span>
                   </button>
+                  <button
+                    type="button"
+                    onClick={handleShareInvite}
+                    className="py-2.5 px-3 rounded-control bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shrink-0 hover:bg-[rgb(var(--p-blue-rgb)/0.25)]"
+                  >
+                    <Share2 size={14} />
+                    <span>{language === 'ru' ? 'Отправить' : 'Ulashish'}</span>
+                  </button>
                 </div>
-                <div className="text-2xl font-black font-mono tracking-widest text-pprimary select-all">
-                  {quickPin.slice(0, 3)} {quickPin.slice(3)}
+
+                {/* Xona yaratib kutish CTA */}
+                <div className="p-4">
+                  <button
+                    type="button"
+                    onClick={() => { playSound('click'); haptics.impact('heavy'); onJoinWithPin(quickPin) }}
+                    className="w-full h-11 rounded-control bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all"
+                  >
+                    <Swords size={16} />
+                    <span>{tt('startWaitingBtn')}</span>
+                  </button>
                 </div>
               </div>
+            )}
 
-              {/* Row 2: Telegram orqali ulashish */}
-              <div className="flex items-center justify-between gap-3 p-4">
-                <div className="min-w-0 flex-1">
-                  <p className="text-[13px] font-bold text-pfg">{tt('shareInviteBtn')}</p>
-                  <p className="text-[11px] text-psubtle">{tt('duelInviteHint')}</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={handleShareInvite}
-                  className="h-9 px-3.5 rounded-control bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shrink-0 hover:bg-[rgb(var(--p-blue-rgb)/0.25)]"
-                >
-                  <Share2 size={14} />
-                  <span>{language === 'ru' ? 'Отправить' : 'Ulashish'}</span>
-                </button>
-              </div>
-
-              {/* Row 3: Do'stning PIN kodini kiritish */}
-              <div className="p-4 space-y-2.5">
-                <label className="text-xs font-bold text-pfg block">{tt('enterPinPrompt')}</label>
-                <div className="flex gap-2">
+            {/* TAB 2: XONAGA QO'SHILISH */}
+            {inviteTab === 'join' && (
+              <div className="overflow-hidden rounded-container border border-pline bg-pcard p-4 space-y-4 shadow-xs">
+                <div className="space-y-1.5">
+                  <label className="text-xs font-bold text-pfg block text-center">{tt('enterPinPrompt')}</label>
                   <input
                     type="text"
                     inputMode="numeric"
@@ -385,37 +428,23 @@ export function IdleScreen({
                       setPinError(null)
                     }}
                     placeholder={tt('pinInputPlaceholder')}
-                    className="flex-1 h-10 px-3 rounded-control bg-psurface border border-pline focus:border-ppurple text-center font-mono text-sm font-black text-pfg placeholder:text-psubtle/40 focus:outline-none transition-colors"
+                    className="w-full h-12 px-4 rounded-control bg-psurface border border-pline focus:border-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-psubtle/40 focus:outline-none transition-colors"
+                    autoFocus
                   />
-                  <button
-                    type="button"
-                    onClick={handleJoinPin}
-                    disabled={!inputPin.trim()}
-                    className="h-10 px-4 rounded-control bg-pprimary text-ponprimary text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all shrink-0"
-                  >
-                    <KeyRound size={14} />
-                    <span>{tt('joinRoomBtn')}</span>
-                  </button>
+                  {pinError && <p className="text-[11px] font-bold text-pdanger text-center">{pinError}</p>}
                 </div>
-                {pinError && <p className="text-[11px] font-bold text-pdanger text-center">{pinError}</p>}
-              </div>
 
-              {/* Row 4: Xona yaratib kutish */}
-              <div className="p-4 flex items-center justify-between gap-3">
-                <div className="min-w-0 flex-1">
-                  <p className="text-[13px] font-bold text-pfg">{tt('startWaitingBtn')}</p>
-                  <p className="text-[11px] text-psubtle">{tt('roomWaitingHint')}</p>
-                </div>
                 <button
                   type="button"
-                  onClick={() => onJoinWithPin(quickPin)}
-                  className="h-9 px-3.5 rounded-control bg-pprimary text-ponprimary text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs active:scale-95 transition-all shrink-0"
+                  onClick={handleJoinPin}
+                  disabled={!inputPin.trim()}
+                  className="w-full h-11 rounded-control bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
                 >
-                  <Swords size={14} />
-                  <span>{language === 'ru' ? 'Войти' : 'Kirish'}</span>
+                  <KeyRound size={16} />
+                  <span>{tt('joinRoomBtn')}</span>
                 </button>
               </div>
-            </div>
+            )}
           </div>
         )}
       </div>
