@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { X, CreditCard, Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle, Star } from 'lucide-react'
+import { X, Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
 import { type PremiumPlan, formatUzs } from '../../../../shared/premium-plans'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -188,7 +188,7 @@ export default function PaymentMethodModal({
                 </span>
                 <span className="mt-0.5 flex items-center justify-end gap-1 text-[11px] font-semibold text-pgold tabular-nums">
                   {lang === 'ru' ? 'или' : 'yoki'}
-                  <Star size={10} strokeWidth={1.75} fill="currentColor" />
+                  <img src="/stars.svg" alt="" className="size-3" />
                   {plan.stars} Stars
                 </span>
               </div>
@@ -225,12 +225,12 @@ export default function PaymentMethodModal({
               className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-[rgb(var(--p-blue-rgb)/0.5)] active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-control bg-[#0073ff]/15 border border-[#0073ff]/30 flex items-center justify-center font-semibold text-[#0073ff] text-base flex-shrink-0">
-                  <CreditCard size={20} />
+                <div className="w-11 h-11 rounded-control bg-[#0073ff]/15 border border-[#0073ff]/30 flex items-center justify-center flex-shrink-0 px-1.5">
+                  <img src="/click.svg" alt="Click" className="w-full h-auto" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-sm font-semibold text-pfg">Click.uz</span>
+                    <span className="text-sm font-semibold text-pfg">Click</span>
                     <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-psuccess/15 text-psuccess border border-psuccess/30">
                       Humo / Uzcard
                     </span>
@@ -256,8 +256,8 @@ export default function PaymentMethodModal({
               className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-[rgb(var(--p-gold-rgb)/0.5)] active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-control border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)] flex items-center justify-center text-pgold flex-shrink-0">
-                  <Star size={20} strokeWidth={1.75} fill="currentColor" />
+                <div className="w-11 h-11 rounded-control border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)] flex items-center justify-center flex-shrink-0 p-2.5">
+                  <img src="/stars.svg" alt="" className="w-full h-full" />
                 </div>
                 <div>
                   <span className="text-sm font-semibold text-pfg">Telegram Stars</span>

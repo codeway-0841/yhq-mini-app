@@ -66,6 +66,11 @@ const envSchema = z.object({
   CLICK_MERCHANT_ID:      z.string().optional(),
   CLICK_SECRET_KEY:       z.string().optional(),
   CLICK_MERCHANT_USER_ID: z.string().optional(),
+
+  /** Payme (Paycom) Payment Gateway — merchant kabiynet credential'lari.
+   *  Secret'siz webhook FAIL-CLOSED (Click bilan bir xil himoya modeli). */
+  PAYME_MERCHANT_ID:      z.string().optional(),
+  PAYME_SECRET_KEY:       z.string().optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -110,6 +115,7 @@ export function assertProdConfig(): void {
     if (!config.cron.secret) missing.push('CRON_SECRET')
     if (!config.auth.otpPepper) missing.push('OTP_PEPPER')
     if ((env.CLICK_SERVICE_ID || env.CLICK_MERCHANT_ID) && !env.CLICK_SECRET_KEY) missing.push('CLICK_SECRET_KEY')
+    if (env.PAYME_MERCHANT_ID && !env.PAYME_SECRET_KEY) missing.push('PAYME_SECRET_KEY')
     // WS origin allowlist + CORS prod domeni (audit A3): yo'q bo'lsa octagon
     // origin tekshiruvi FAIL-OPEN ishlaydi va CORS localhost:5173 default'ga
     // tushadi — prod'da ikkalasi ham xavfli.
@@ -221,6 +227,12 @@ export const config = {
     merchantId:     env.CLICK_MERCHANT_ID ?? '',
     secretKey:      env.CLICK_SECRET_KEY ?? '',
     merchantUserId: env.CLICK_MERCHANT_USER_ID ?? '',
+  },
+
+  /** Payme (Paycom) Payment Gateway */
+  payme: {
+    merchantId: env.PAYME_MERCHANT_ID ?? '',
+    secretKey:  env.PAYME_SECRET_KEY ?? '',
   },
 
   sentry: {

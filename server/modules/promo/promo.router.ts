@@ -16,10 +16,12 @@ const RedeemBodySchema = z.object({
 
 const CreatePromoBodySchema = z.object({
   code: z.string().trim().min(3).max(30),
-  type: z.enum(['premium_days']).default('premium_days'),
+  type: z.enum(['premium_days', 'discount_percent']).default('premium_days'),
   value: z.number().int().positive(),
   maxUses: z.number().int().positive().nullable().optional(),
   expiresAt: z.string().datetime().nullable().optional(),
+}).refine((d) => d.type !== 'discount_percent' || d.value <= 99, {
+  message: 'discount_percent value 1..99 bo‘lishi kerak',
 })
 
 // ── Rate limit: 1 daqiqada 5 ta urinish (brute-force kod taxminidan himoya).
@@ -77,6 +79,41 @@ router.post(
       premiumUntil: result.premiumUntil?.toISOString() ?? null,
       tariff: result.tariff,
     })
+  }),
+)
+
+// POST /api/promo/check — to'lov sheet'ida CHEGIRMA promokodini tekshirish
+// (redeem EMAS — faqat validatsiya + foiz; ishlatilgan deb belgilash to'lov
+// completion'da bo'ladi, bekor buyurtma kodni kuydirmaydi).
+router.post(
+  '/promo/check',
+  redeemLimiter,
+  validate({ body: RedeemBodySchema }),
+  wrap(async (req, res) => {
+    const userId = (req as { userId?: string }).userId
+    if (!userId || userId === '0') {
+      throw new AppError(401, 'Avval tizimga kiring', 'AUTH_REQUIRED')
+    }
+
+    const { code } = req.body as z.infer<typeof RedeemBodySchema>
+    const promo = await promoRepository.findByCode(code)
+
+    if (!promo) throw new AppError(404, 'Promokod topilmadi', 'PROMO_NOT_FOUND')
+    if (!promo.isActive) throw new AppError(400, 'Promokod faol emas', 'PROMO_INACTIVE')
+    if (promo.expiresAt && new Date(promo.expiresAt) < new Date()) {
+      throw new AppError(400, 'Promokodning amal qilish muddati tugagan', 'PROMO_EXPIRED')
+    }
+    if (promo.maxUses !== null && promo.usedCount >= promo.maxUses) {
+      throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
+    }
+    if (promo.type !== 'discount_percent') {
+      throw new AppError(400, 'Bu promokod chegirma kodi emas', 'PROMO_NOT_DISCOUNT')
+    }
+    if (await promoRepository.isRedeemedByUser(promo.id, userId)) {
+      throw new AppError(400, 'Siz ushbu promokodni avval ishlatgansiz', 'PROMO_ALREADY_USED')
+    }
+
+    res.json({ ok: true, type: promo.type, code: promo.code, discountPercent: promo.value })
   }),
 )
 

@@ -814,16 +814,23 @@ export const api = {
         explanation?: string
       }>
     }>('POST', '/admin/ai/generate-questions', data, 90_000),
-  // ── Payments & Orders (Click.uz) ──────────────────────────────────────────
-  createPaymentOrder: (data: { plan: string; provider?: 'click'; returnUrl?: string }) =>
+  // ── Payments & Orders (Click.uz / Payme) ─────────────────────────────────
+  createPaymentOrder: (data: { plan: string; provider?: 'click' | 'payme'; promoCode?: string; returnUrl?: string }) =>
     request<{
       ok: boolean
       orderId: string
       amountUzs: number
       plan: string
       provider: string
+      discountPercent: number
       paymentUrl: string
     }>('POST', '/payments/create-order', data),
+
+  /** Chegirma promokodini tekshirish (to'lov sheet'i) — redeem EMAS. */
+  checkPromoDiscount: (code: string) =>
+    request<{ ok: boolean; type: string; code: string; discountPercent: number }>(
+      'POST', '/promo/check', { code },
+    ),
 
   checkPaymentOrder: (orderId: string) =>
     request<{

@@ -140,6 +140,14 @@ export function formatUzs(amount: number, lang: 'uz' | 'ru' = 'uz'): string {
   return lang === 'ru' ? `${formatted} сум` : `${formatted} so'm`
 }
 
+/** Promokod chegirmasi qo'llangan narx (foiz 1..99) — client ko'rsatishi va
+ *  server order summasi SHU funksiyadan hisoblanadi (desync himoyasi). */
+export function applyDiscount(priceUzs: number, discountPercent: number): number {
+  if (!Number.isFinite(discountPercent) || discountPercent <= 0) return priceUzs
+  const pct = Math.min(99, Math.floor(discountPercent))
+  return Math.round((priceUzs * (100 - pct)) / 100)
+}
+
 /** Telegram /start param → plan kaliti: 'premium' (umumiy), 'premium_month', ... */
 export function parseStartParam(param: string): PlanKey | 'chooser' | null {
   if (param === 'premium') return 'chooser'

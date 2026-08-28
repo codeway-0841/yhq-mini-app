@@ -8,6 +8,7 @@ import { eq, and } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { paymentRepository } from './payment.repository'
+import { redeemOrderPromo } from './order-promo'
 import { getPlan, type PlanKey } from '../../../shared/premium-plans'
 import { config } from '../../config'
 
@@ -386,6 +387,9 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
       throw err
     }
   }
+
+  // Promokod redemption — best-effort (premium allaqachon berilgan)
+  await redeemOrderPromo(order)
 
   return {
     click_trans_id: clickTransId,

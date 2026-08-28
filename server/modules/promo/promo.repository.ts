@@ -96,6 +96,32 @@ export const promoRepository = {
     }
   },
 
+  /**
+   * Chegirma promokodini ISHLATILDI deb belgilash (to'lov COMPLETION'da —
+   * order yaratilganda EMAS: bekor to'lov kodni kuydirmaydi).
+   * Atomik: per-user UNIQUE(promo_code_id, user_id) + max_uses guard.
+   * Parallel ikki to'lov bir xil kod bilan — faqat biri hisoblanadi.
+   */
+  async markRedeemed(promoCodeId: number, userId: string): Promise<boolean> {
+    const rows = await executeRows<{ ok: boolean }>(sql`
+      WITH inserted AS (
+        INSERT INTO promo_code_redemptions (promo_code_id, user_id)
+        VALUES (${promoCodeId}, ${userId})
+        ON CONFLICT (promo_code_id, user_id) DO NOTHING
+        RETURNING id
+      ), bumped AS (
+        UPDATE promo_codes
+        SET used_count = used_count + 1
+        WHERE id = ${promoCodeId}
+          AND EXISTS (SELECT 1 FROM inserted)
+          AND (max_uses IS NULL OR used_count < max_uses)
+        RETURNING id
+      )
+      SELECT EXISTS (SELECT 1 FROM inserted) AS ok
+    `)
+    return Boolean(rows[0]?.ok)
+  },
+
   async getAllCodes(): Promise<PromoCodeRow[]> {
     return executeRows<PromoCodeRow>(sql`
       SELECT

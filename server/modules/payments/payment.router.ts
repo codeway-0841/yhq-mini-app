@@ -10,7 +10,7 @@ import { validate } from '../../middleware/validate'
 // Multi-instance umumiy limiter (prod'da Neon DB counter, test/dev'da in-memory)
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { wrap, AppError } from '../../middleware/error-handler'
-import { getPlan, type PlanKey } from '../../../shared/premium-plans'
+import { getPlan, applyDiscount, type PlanKey } from '../../../shared/premium-plans'
 import {
   handleClickPrepare,
   handleClickComplete,
@@ -18,6 +18,8 @@ import {
   type ClickPrepareInput,
   type ClickCompleteInput,
 } from './click.service'
+import { handlePaymeRpc, buildPaymePaymentUrl, verifyPaymeAuth } from './payme.service'
+import { promoRepository } from '../promo/promo.repository'
 
 export const paymentRouter = Router()
 
@@ -31,8 +33,10 @@ const clickBodyParser = express.urlencoded({ extended: false })
 
 const CreateOrderSchema = z.object({
   plan: z.enum(['month', 'year', 'lifetime']),
-  provider: z.enum(['click']).default('click'),
+  provider: z.enum(['click', 'payme']).default('click'),
   returnUrl: z.string().url().optional(),
+  /** Chegirma promokodi (discount_percent turi) — server QAYTA tekshiradi. */
+  promoCode: z.string().trim().min(3).max(30).optional(),
 })
 
 /**
@@ -45,12 +49,37 @@ paymentRouter.post(
   orderLimiter,
   validate({ body: CreateOrderSchema }),
   wrap(async (req: any, res) => {
-    const { plan: planKey, provider, returnUrl } = req.body
+    const { plan: planKey, provider, returnUrl, promoCode } = req.body
     const userId = req.userId
 
     const plan = getPlan(planKey)
     if (!plan) {
       throw new AppError(400, 'Invalid plan')
+    }
+
+    // ── Promokod (chegirma) — SERVER qayta tekshiradi (client faqat ko'rsatadi).
+    // Chegirma kodi FAQAT 'discount_percent' turi; premium_days kodlari shu
+    // yerda ishlamaydi (ular Profil'dagi PromoCodeModal'da faollashadi).
+    let finalAmount = plan.priceUzs
+    let discountPercent = 0
+    if (promoCode) {
+      const promo = await promoRepository.findByCode(promoCode)
+      if (!promo) throw new AppError(404, 'Promokod topilmadi', 'PROMO_NOT_FOUND')
+      if (!promo.isActive) throw new AppError(400, 'Promokod faol emas', 'PROMO_INACTIVE')
+      if (promo.expiresAt && new Date(promo.expiresAt) < new Date()) {
+        throw new AppError(400, 'Promokodning amal qilish muddati tugagan', 'PROMO_EXPIRED')
+      }
+      if (promo.maxUses !== null && promo.usedCount >= promo.maxUses) {
+        throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
+      }
+      if (promo.type !== 'discount_percent') {
+        throw new AppError(400, 'Bu promokod chegirma kodi emas', 'PROMO_NOT_DISCOUNT')
+      }
+      if (await promoRepository.isRedeemedByUser(promo.id, userId)) {
+        throw new AppError(400, 'Siz ushbu promokodni avval ishlatgansiz', 'PROMO_ALREADY_USED')
+      }
+      discountPercent = promo.value
+      finalAmount = applyDiscount(plan.priceUzs, discountPercent)
     }
 
     // Generate unique order ID
@@ -63,18 +92,16 @@ paymentRouter.post(
         orderId,
         userId,
         plan: planKey as PlanKey,
-        amountUzs: plan.priceUzs,
+        amountUzs: finalAmount,
         provider,
         status: 'pending',
-        rawDetails: {},
+        rawDetails: promoCode ? { promoCode: promoCode.toUpperCase(), discountPercent } : {},
       })
       .returning()
 
-    const paymentUrl = buildClickPaymentUrl({
-      orderId: order.orderId,
-      amount: order.amountUzs,
-      returnUrl,
-    })
+    const paymentUrl = provider === 'payme'
+      ? buildPaymePaymentUrl({ orderId: order.orderId, amountUzs: order.amountUzs, returnUrl })
+      : buildClickPaymentUrl({ orderId: order.orderId, amount: order.amountUzs, returnUrl })
 
     res.status(201).json({
       ok: true,
@@ -82,6 +109,7 @@ paymentRouter.post(
       amountUzs: order.amountUzs,
       plan: order.plan,
       provider: order.provider,
+      discountPercent,
       paymentUrl,
     })
   })
@@ -176,3 +204,22 @@ const clickHookLimiter = rateLimit({ maxPerMinute: 30, bucket: 'pay-hook', keyFn
 paymentRouter.post('/click', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))
 paymentRouter.post('/click/prepare', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))
 paymentRouter.post('/click/complete', clickBodyParser, clickHookLimiter, wrap(handleClickWebhookRoute))
+
+// ── Payme (Paycom) Merchant API — JSON-RPC 2.0 ─────────────────────────────
+// Auth: HTTP Basic (login "Paycom", parol PAYME_SECRET_KEY) — FAIL-CLOSED
+// (secret'siz har qanday RPC -32504: soxta webhook premium bermaydi).
+paymentRouter.post(
+  '/payme',
+  rateLimit({ maxPerMinute: 30, bucket: 'payme-hook', keyFn: (req) => req.ip ?? 'unknown' }),
+  wrap(async (req: any, res) => {
+    if (!verifyPaymeAuth(req.headers['authorization'])) {
+      res.json({
+        id: req.body?.id ?? null,
+        error: { code: -32504, message: 'Недостаточно привилегий для выполнения данного метода' },
+      })
+      return
+    }
+    const result = await handlePaymeRpc(req.body ?? {})
+    res.json(result)
+  }),
+)

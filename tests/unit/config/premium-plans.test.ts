@@ -9,6 +9,7 @@ import {
   getPlan,
   parseStartParam,
   parsePaymentPayload,
+  applyDiscount,
 } from '../../../shared/premium-plans'
 
 describe('shared/premium-plans — data integrity', () => {
@@ -73,4 +74,16 @@ describe('parsePaymentPayload', () => {
     expect(parsePaymentPayload('random')).toBeNull()
     expect(parsePaymentPayload('premium_month_')).toBeNull()
   })
+})
+
+describe('applyDiscount — promokod chegirmasi (client↔server umumiy)', () => {
+  it('25%: 29000 → 21750', () => expect(applyDiscount(29_000, 25)).toBe(21_750))
+  it('10%: 149000 → 134100', () => expect(applyDiscount(149_000, 10)).toBe(134_100))
+  it('0/NaN/manfiy → asl narx', () => {
+    expect(applyDiscount(29_000, 0)).toBe(29_000)
+    expect(applyDiscount(29_000, Number.NaN)).toBe(29_000)
+    expect(applyDiscount(29_000, -5)).toBe(29_000)
+  })
+  it("99% dan oshgan qiymat clamp'lanadi", () => expect(applyDiscount(100_000, 150)).toBe(1_000))
+  it('kasr yaxlitlanadi (integer UZS)', () => expect(applyDiscount(10_001, 33)).toBe(Math.round(10_001 * 67 / 100)))
 })

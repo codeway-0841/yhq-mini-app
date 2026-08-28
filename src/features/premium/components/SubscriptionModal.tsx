@@ -7,8 +7,6 @@ import {
   ShieldCheck,
   Pencil,
   Ticket,
-  Gift,
-  Star,
   ExternalLink,
   Loader2,
   CheckCircle2,
@@ -17,16 +15,15 @@ import {
   ChevronRight,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
+import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { track } from '../../../shared/lib/analytics'
-import { openTelegramLink, shareUrl } from '../../../platform/telegram'
+import { openTelegramLink } from '../../../platform/telegram'
 import Confetti from '../../../shared/components/Confetti'
-import PromoCodeModal from '../../../shared/components/PromoCodeModal'
 import { cn } from '../../../shared/lib/cn'
 
 interface SubscriptionModalProps {
@@ -36,35 +33,19 @@ interface SubscriptionModalProps {
 }
 
 type Step = 'choose_plan' | 'payment_method'
-type PaymentProvider = 'click' | 'payme' | 'card' | 'stars'
+type PaymentProvider = 'click' | 'payme' | 'stars'
 
-// Claude.ai xarakterli geometrik daraxt ikonkasi
+// Tarif darajasi ikonkasi (payment.svg — money-diamond, currentColor)
 const ClaudeTreeIcon = memo(function ClaudeTreeIcon({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 64 64"
+      viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className || 'size-10 text-white/90'}
     >
-      {/* Yuqori bosh doira */}
-      <circle cx="32" cy="16" r="7.5" stroke="currentColor" strokeWidth="2.2" />
-      <circle cx="32" cy="16" r="2.8" fill="currentColor" />
-      {/* Markaziy tana */}
-      <path d="M32 23.5V50" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-      {/* Chap shoxlar */}
-      <path d="M32 35L19 28" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-      <circle cx="17" cy="27" r="3.2" stroke="currentColor" strokeWidth="2.2" />
-      <path d="M32 43L19 39" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-      <circle cx="17" cy="38.5" r="3.2" stroke="currentColor" strokeWidth="2.2" />
-      {/* O'ng shoxlar */}
-      <path d="M32 35L45 28" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-      <circle cx="47" cy="27" r="3.2" stroke="currentColor" strokeWidth="2.2" />
-      <path d="M32 43L45 39" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-      <circle cx="47" cy="38.5" r="3.2" stroke="currentColor" strokeWidth="2.2" />
-      {/* Pastki tugunlar */}
-      <circle cx="25" cy="50" r="2.8" stroke="currentColor" strokeWidth="2.2" />
-      <circle cx="39" cy="50" r="2.8" stroke="currentColor" strokeWidth="2.2" />
+      <path fill="currentColor" d="M30.47 28.95H32v1.53h-1.53Zm0-27.43h-1.52v1.53h-1.52v1.52h1.52V6.1h1.52V4.57H32V3.05h-1.53zm-1.52 21.34h1.52v1.52h-1.52Zm-1.52 1.52h1.52v1.53h-1.52Zm0-3.05h1.52v1.53h-1.52Zm0-6.09h1.52v1.52h-1.52Zm0-6.1h1.52v1.53h-1.52ZM25.9 22.86h1.53v1.52H25.9Zm0-6.1h1.53v1.53H25.9Zm0-9.14h1.53v1.52H25.9Zm-1.52 10.67h1.52v1.52h-1.52Zm0-12.19h1.52v1.52h-1.52Zm0 25.9v-1.52h1.52v-1.53h-1.52v-1.52h-1.53v1.52h-1.52v1.53h1.52V32zm-1.53-12.19h1.53v1.52h-1.53Zm-1.52 1.52h1.52v1.53h-1.52Zm0-6.09h1.52v1.52h-1.52Zm0-6.1h1.52v1.53h-1.52Zm0-7.62h1.52v1.53h-1.52Zm-1.52 21.34h1.52v1.52h-1.52Zm0-6.1h1.52v3.05h-1.52Zm0-9.14h1.52v1.52h-1.52Z"/>
+      <path fill="currentColor" d="M18.28 19.81h1.53v3.05h-1.53Zm0 3.05h-1.52v4.57h1.52v-1.52h1.53v-1.53h-1.53zM16.76 0h1.52v1.52h-1.52Zm-3.05 27.43h3.05v1.52h-3.05Zm0-4.57h-1.52v1.52h-1.53v1.53h1.53v1.52h1.52zm-3.05-3.05h1.53v3.05h-1.53Zm-1.52 3.05h1.52v1.52H9.14Zm0-6.1h1.52v3.05H9.14Zm0-9.14h1.52v1.52H9.14Zm0-6.1h1.52v1.53H9.14ZM7.62 27.43h1.52v1.52H7.62Zm0-6.1h1.52v1.53H7.62Zm0-6.09h1.52v1.52H7.62Zm0-6.1h1.52v1.53H7.62Zm3.04-3.04v1.52h1.53V6.1h6.09v1.52h1.53V6.1h4.57V4.57H6.09V6.1zM6.09 19.81h1.53v1.52H6.09Zm-1.52-1.52h1.52v1.52H4.57Zm0-12.19h1.52v1.52H4.57ZM3.04 24.38h1.53v1.53H3.04Zm0-7.62h1.53v1.53H3.04Zm0-9.14h1.53v1.52H3.04ZM1.52 30.48h1.52V32H1.52Zm0-4.57h1.52v1.52H1.52Zm0-3.05h1.52v1.52H1.52Zm0-7.62h1.52v1.52H1.52Zm0-1.53h4.57v1.53h1.53v-1.53h15.23v1.53h1.53v-1.53h4.57v1.53h1.52v-4.57h-1.52v1.52h-4.57v-1.52h-1.53v1.52H7.62v-1.52H6.09v1.52H1.52v-1.52H0v4.57h1.52zm0-4.57h1.52v1.53H1.52Zm0-4.57h1.52V3.05h1.53V1.52H3.04V0H1.52v1.52H0v1.53h1.52zM0 24.38h1.52v1.53H0Z"/>
     </svg>
   )
 })
@@ -88,11 +69,19 @@ export default function SubscriptionModal({
   const [isWaitingPayment, setIsWaitingPayment] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [errorMsg, setErrorMsg] = useState<string | null>(null)
-  const [showPromoModal, setShowPromoModal] = useState(false)
+
+  // ── Promokod (chegirma) holati ──
+  const [promoInput, setPromoInput] = useState('')
+  const [promoBusy, setPromoBusy] = useState(false)
+  /** Qo'llangan chegirma: { code, percent } — narx SHUNDAN hisoblanadi */
+  const [appliedPromo, setAppliedPromo] = useState<{ code: string; percent: number } | null>(null)
+  const [promoError, setPromoError] = useState<string | null>(null)
 
   const pollTimerRef = useRef<any>(null)
 
   const selectedPlan: PremiumPlan = getPlan(selectedPlanKey) ?? PREMIUM_PLANS[1]
+  /** Yakuniy narx — promokod chegirmasi bilan (server XUDDI SHU summani yozadi) */
+  const finalPriceUzs = appliedPromo ? applyDiscount(selectedPlan.priceUzs, appliedPromo.percent) : selectedPlan.priceUzs
 
   useEffect(() => {
     return () => {
@@ -140,6 +129,37 @@ export default function SubscriptionModal({
     }, 3000)
   }
 
+  // Promokodni tekshirish (redeem EMAS — ishlatilgan deb belgilash to'lov
+  // completion'da serverda bo'ladi; bekor buyurtma kodni kuydirmaydi)
+  const handleApplyPromo = async () => {
+    const code = promoInput.trim()
+    if (!code || promoBusy) return
+    setPromoBusy(true)
+    setPromoError(null)
+    try {
+      const res = await api.checkPromoDiscount(code)
+      setAppliedPromo({ code: res.code, percent: res.discountPercent })
+      playSound('toggle')
+      track('premium_promo_applied', { plan: selectedPlan.key, percent: res.discountPercent })
+    } catch (err: any) {
+      setAppliedPromo(null)
+      const code_ = err?.code as string | undefined
+      setPromoError(
+        code_ === 'PROMO_NOT_DISCOUNT'
+          ? tt('promoNotDiscount')
+          : tt('promoInvalid')
+      )
+    } finally {
+      setPromoBusy(false)
+    }
+  }
+
+  const clearPromo = () => {
+    setAppliedPromo(null)
+    setPromoInput('')
+    setPromoError(null)
+  }
+
   // To'lovni boshlash
   const handleProceedToPayment = async () => {
     setErrorMsg(null)
@@ -157,7 +177,8 @@ export default function SubscriptionModal({
     try {
       const res = await api.createPaymentOrder({
         plan: selectedPlan.key,
-        provider: 'click',
+        provider: selectedProvider,
+        ...(appliedPromo ? { promoCode: appliedPromo.code } : {}),
       })
 
       if (res.paymentUrl) {
@@ -166,7 +187,12 @@ export default function SubscriptionModal({
       } else {
         throw new Error('No payment URL returned')
       }
-    } catch {
+    } catch (err: any) {
+      // Promokod serverda rad etilgan bo'lsa (limit/eskirgan) — tozalaymiz
+      if (err?.code && String(err.code).startsWith('PROMO_')) {
+        clearPromo()
+        setPromoError(tt('promoInvalid'))
+      }
       setErrorMsg(
         lang === 'ru'
           ? 'Не удалось создать платеж. Попробуйте еще раз.'
@@ -175,13 +201,6 @@ export default function SubscriptionModal({
     } finally {
       setLoadingProvider(null)
     }
-  }
-
-  // "Do'stim to'laydi" havolasi
-  const handleShareWithFriend = () => {
-    haptics.impact('light')
-    const shareLink = `https://t.me/kiwi_uz_bot?start=premium_${selectedPlan.key}`
-    shareUrl(shareLink, tt('payFriendShareText'))
   }
 
   // Yordam olish
@@ -429,8 +448,13 @@ export default function SubscriptionModal({
                     </div>
                     <div className="text-right">
                       <span className="text-[17px] font-bold text-white tabular-nums">
-                        {formatUzs(selectedPlan.priceUzs, lang)}
+                        {formatUzs(finalPriceUzs, lang)}
                       </span>
+                      {appliedPromo && (
+                        <span className="block text-[11px] text-white/40 line-through tabular-nums">
+                          {formatUzs(selectedPlan.priceUzs, lang)}
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -465,7 +489,7 @@ export default function SubscriptionModal({
                     <p className="text-[12px] font-semibold text-white/60">
                       {tt('paymentMethodLabel')}: <span className="text-white capitalize font-bold">{selectedProvider}</span>
                     </p>
-                    <div className="grid grid-cols-4 gap-2.5">
+                    <div className="grid grid-cols-3 gap-2.5">
                       {/* 1. Click */}
                       <button
                         type="button"
@@ -480,7 +504,7 @@ export default function SubscriptionModal({
                             : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
                         )}
                       >
-                        <span className="text-[13.5px] font-bold tracking-tight">click</span>
+                        <img src="/click.svg" alt="Click" className="h-[18px] w-auto" />
                       </button>
 
                       {/* 2. Payme */}
@@ -497,28 +521,10 @@ export default function SubscriptionModal({
                             : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
                         )}
                       >
-                        <span className="text-[13.5px] font-bold tracking-tight">payme</span>
+                        <img src="/payme.svg" alt="Payme" className="h-[18px] w-auto" />
                       </button>
 
-                      {/* 3. Karta (Uzcard / Humo) */}
-                      <button
-                        type="button"
-                        onClick={() => {
-                          haptics.impact('light')
-                          setSelectedProvider('card')
-                        }}
-                        className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
-                          selectedProvider === 'card'
-                            ? 'border-white bg-white/15 text-white font-bold shadow-sm'
-                            : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
-                        )}
-                      >
-                        <span className="text-[12px] font-bold">Karta</span>
-                        <span className="text-[9px] font-semibold text-white/40">Uzcard/Humo</span>
-                      </button>
-
-                      {/* 4. Telegram Stars */}
+                      {/* 3. Telegram Stars */}
                       <button
                         type="button"
                         onClick={() => {
@@ -532,34 +538,60 @@ export default function SubscriptionModal({
                             : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
                         )}
                       >
-                        <div className="flex items-center gap-1">
-                          <Star size={11} className="fill-white text-white" />
-                          <span className="text-[12px] font-bold">Stars</span>
+                        <div className="flex items-center gap-1.5">
+                          <img src="/stars.svg" alt="" className="h-[18px] w-auto" />
+                          <span className="text-[13.5px] font-bold tracking-tight">Stars</span>
                         </div>
-                        <span className="text-[9px] font-semibold text-white/40">{selectedPlan.stars} ⭐</span>
                       </button>
                     </div>
                   </div>
 
-                  {/* Secondary Actions: Promokod & Do'stim to'laydi */}
-                  <div className="grid grid-cols-2 gap-2.5 pt-1">
-                    <button
-                      type="button"
-                      onClick={() => setShowPromoModal(true)}
-                      className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] text-xs font-bold text-white hover:bg-white/10 active:scale-98 transition-all cursor-pointer shadow-sm"
-                    >
-                      <Ticket size={14} className="text-white/70" />
-                      <span>Promokod</span>
-                    </button>
-
-                    <button
-                      type="button"
-                      onClick={handleShareWithFriend}
-                      className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] text-xs font-bold text-white hover:bg-white/10 active:scale-98 transition-all cursor-pointer shadow-md"
-                    >
-                      <Gift size={14} className="text-white/70" />
-                      <span>{tt('payFriend')}</span>
-                    </button>
+                  {/* Promokod — chegirma (kod to'lov COMPLETION'da ishlatilgan
+                      deb belgilanadi; bekor buyurtma kodni kuydirmaydi) */}
+                  <div className="space-y-2 pt-1">
+                    {appliedPromo ? (
+                      <div className="flex items-center justify-between rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-3.5">
+                        <div className="flex items-center gap-2.5">
+                          <Ticket size={16} className="text-emerald-400" />
+                          <span className="text-[13px] font-bold text-emerald-400">
+                            {appliedPromo.code} · −{appliedPromo.percent}%
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={clearPromo}
+                          aria-label={tt('cancel')}
+                          className="p-1.5 rounded-lg text-emerald-400/60 hover:text-emerald-400 hover:bg-white/10 transition-colors cursor-pointer"
+                        >
+                          <X size={14} />
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="flex gap-2.5">
+                        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] px-3.5">
+                          <Ticket size={14} className="text-white/50 shrink-0" />
+                          <input
+                            value={promoInput}
+                            onChange={(e) => { setPromoInput(e.target.value.toUpperCase()); setPromoError(null) }}
+                            placeholder={tt('promoInputPlaceholder')}
+                            maxLength={30}
+                            disabled={promoBusy || isWaitingPayment}
+                            className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[13px] font-semibold text-white placeholder:text-white/30 tracking-wider uppercase"
+                          />
+                        </div>
+                        <button
+                          type="button"
+                          onClick={handleApplyPromo}
+                          disabled={!promoInput.trim() || promoBusy || isWaitingPayment}
+                          className="px-4 py-3 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] text-[13px] font-bold text-white hover:bg-white/10 disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0"
+                        >
+                          {promoBusy ? <Loader2 size={15} className="animate-spin" /> : tt('promoApply')}
+                        </button>
+                      </div>
+                    )}
+                    {promoError && (
+                      <p className="text-[12px] text-red-400 px-1">{promoError}</p>
+                    )}
                   </div>
 
                   {/* Polling / Waiting Indicator */}
@@ -606,7 +638,7 @@ export default function SubscriptionModal({
                       <span>
                         {selectedProvider === 'stars'
                           ? `${tt('payWithStarsAction')} (${selectedPlan.stars} Stars)`
-                          : `${tt('payAmount')} ${formatUzs(selectedPlan.priceUzs, lang)}`}
+                          : `${tt('payAmount')} ${formatUzs(finalPriceUzs, lang)}`}
                       </span>
                       <ExternalLink size={16} />
                     </>
@@ -617,14 +649,6 @@ export default function SubscriptionModal({
           </div>
         )}
       </div>
-
-      {/* Promokod kiritish modali */}
-      {showPromoModal && (
-        <PromoCodeModal
-          language={lang}
-          onClose={() => setShowPromoModal(false)}
-        />
-      )}
     </DialogOverlay>
   )
 }

@@ -111,7 +111,20 @@ src/index.css          # Tokenlar: --p-* (yangi) + --theme-* (legacy alias, ikka
 tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/pline/pfg/pmuted/psubtle/pprimary/ponprimary/pgold/pgolddeep/pongold/ppurple/pblue/psuccess/pwarning/pdanger + duo.* (alias)
                        # CSS var'da hex-alpha konkat ISHLAMAYDI (`var(--p-x)26` noto'g'ri) — alpha uchun `color-mix(in srgb, var(--p-x) N%, transparent)`
 src/shared/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
-shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda)
+shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda;
+                           #   applyDiscount = promokod chegirmasi SSOT — client UI va server create-order SHU formuladan)
+server/modules/payments/  # Click (click.service — PREPARE/COMPLETE webhook) + Payme (payme.service — JSON-RPC
+                           #   CheckPerform/Create/Perform/Cancel/Check, Basic auth) merchant API'lari.
+                           #   IKKALASI HAM FAIL-CLOSED: secret'siz (CLICK_SECRET_KEY / PAYME_SECRET_KEY env,
+                           #   config zod optional) webhook premium BERMAYDI. Order = payment_orders jadvali
+                           #   (provider text, promo meta rawDetails.promoCode/discountPercent — migratsiya shart emas);
+                           #   completion'da atomik claim (pending→completed) + paymentRepository.complete ledger
+                           #   (idempotent) + redeemOrderPromo (best-effort). Chegirma promokodlari:
+                           #   promo_codes type='discount_percent' (value=1..99, admin endpointdan yaratiladi) —
+                           #   POST /api/promo/check (redeem EMAS, faqat validatsiya), ishlatilgan deb belgilash
+                           #   FAQAT to'lov completion'da (bekor buyurtma kodni kuydirmaydi);
+                           #   premium_days kodlari to'lovda ishlamaydi (400 PROMO_NOT_DISCOUNT — ular Profil'da).
+                           #   Webhook URL'lar: /api/payments/click, /api/payments/payme (merchant kabiynetga yoziladi)
 src/shared/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
 src/shared/components/Confetti.tsx  # Nishonlash confetti; src/shared/hooks/useCountUp.ts — count-up animatsiya
 ```
