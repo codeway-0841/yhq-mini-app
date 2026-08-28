@@ -61,6 +61,32 @@ export const ModeRow = memo(function ModeRow({ icon: Icon, label, badge, comingS
   )
 })
 
+// ── ModeGridCard — "Yana" sheet'dagi 3-ustunli panjara kartasi (ServiceCard'ning
+//    kengayuvchan varianti: fixed o'lcham o'rniga grid kataqqa to'la sig'adi) ──
+export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onClick }: {
+  icon: React.ElementType
+  label: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={label}
+      className={cn(
+        'relative flex w-full aspect-square flex-col items-center justify-center gap-2.5 p-2.5',
+        'rounded-[16px] border border-pline bg-pcard',
+        interactive,
+        'hover:border-plineStrong',
+      )}
+    >
+      <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
+      <span className="line-clamp-2 flex min-h-[26px] items-center justify-center px-0.5 text-center text-[11px] font-medium leading-[1.25] text-pfg">
+        {label}
+      </span>
+    </button>
+  )
+})
+
 // ── Service Carousel Card — kvadrat (auto-scroll karusel uchun) ────────────
 // Chip'siz: katta flat ikonka + kichik label. Kvadrat ritm saqlanadi.
 export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClick }: {
