@@ -96,12 +96,20 @@ function avatarErrorKey(err: unknown): Keys {
   // Barcha adaptiv bosqichlar (128px JPEG q0.55 gacha) sig'madi — amalda imkonsizga yaqin
   if (msg === 'too big') return 'avatarUploadTooBig'
   if (err instanceof ApiError) {
-    if (err.status === 400) return 'avatarUploadBadFormat'  // schema: WebP emas
+    if (err.status === 400) return 'avatarUploadBadFormat'  // schema: WebP/JPEG emas
     if (err.status === 413) return 'avatarUploadTooBig'
     if (err.status === 429) return 'avatarUploadRateLimit'
     if (err.status <= 0 || err.status === 408 || err.status >= 500) return 'avatarUploadNetwork'
   }
   return 'avatarUploadFailed'
+}
+
+/** Diagnostika hinti — decode xatosida faylning ANIQLANGAN formatini ko'rsatadi.
+ *  User ".jpg" deb o'ylagan fayl aslida HEIC/AVIF chiqishi ko'p uchraydi:
+ *  kengaytma ≠ ichki format, file.type (OS picker) + kengaytma haqiqatni aytdi. */
+export function describePickedFile(file: File): string {
+  const type = file.type || `(noma'lum) .${file.name.split('.').pop()?.toLowerCase() ?? '?'}`
+  return `${type} · ${(file.size / 1024 / 1024).toFixed(1)}MB`
 }
 
 /** Haqiqiy sabab konsol + Sentry'da qoladi — toast foydalanuvchiga qisqa.
@@ -145,7 +153,11 @@ export function useAvatarUpload({ showToast, closeSheet }: {
       showToast(t(lang, 'avatarSavedToast'))
     } catch (err) {
       reportAvatarError(err, file)
-      showToast(t(lang, avatarErrorKey(err)))
+      const key = avatarErrorKey(err)
+      // Format/decode xatosida aniqlangan HAQIQIY formatni ham ko'rsatamiz —
+      // user "lekin bu jpg-ku!" holatini bir qarashda tushunadi
+      const hint = key === 'avatarUploadBadFormat' ? ` [${describePickedFile(file)}]` : ''
+      showToast(t(lang, key) + hint)
     } finally {
       setAvatarBusy(false)
     }
