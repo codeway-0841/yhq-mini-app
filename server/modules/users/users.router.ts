@@ -11,7 +11,7 @@ import { requireSelf }                               from '../../middleware/auth
 import { dbRateLimit }                               from '../../middleware/db-rate-limiter'
 import { identityKey } from '../../middleware/rate-limiter'
 import { parseUserId }                               from '../../utils/parse'
-import { usersService, InitInputSchema, PhoneSchema, AvatarUploadSchema, AVATAR_DATA_URL_PREFIX, toApiUser, toApiProgress, toApiSettings } from './users.service'
+import { usersService, InitInputSchema, PhoneSchema, AvatarUploadSchema, AVATAR_DATA_URL_RE, toApiUser, toApiProgress, toApiSettings } from './users.service'
 import { issueSession } from '../auth/session-issuer'
 import { referralsRepository }                       from './users.repository'
 import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
@@ -184,12 +184,13 @@ router.get(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
     const dataUrl = await usersService.getAvatar(uid)
-    if (!dataUrl || !dataUrl.startsWith(AVATAR_DATA_URL_PREFIX)) {
+    const match = dataUrl ? AVATAR_DATA_URL_RE.exec(dataUrl) : null
+    if (!dataUrl || !match) {
       throw new AppError(404, 'Avatar not found')
     }
-    const buf = Buffer.from(dataUrl.slice(AVATAR_DATA_URL_PREFIX.length), 'base64')
+    const buf = Buffer.from(dataUrl.slice(dataUrl.indexOf(',') + 1), 'base64')
     res.set({
-      'Content-Type': 'image/webp',
+      'Content-Type': `image/${match[1]}`,
       // Qayta yuklangach ~10 daqiqagacha eski kesh ko'rinishi mumkin
       'Cache-Control': 'public, max-age=600',
     })

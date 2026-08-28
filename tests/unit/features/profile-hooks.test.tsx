@@ -120,12 +120,12 @@ describe('useAvatarUpload', () => {
   const renderUpload = () => renderHook(() => useAvatarUpload({ showToast, closeSheet }))
 
   /** compressAvatar canvas'ga tayanadi — jsdom'da uni boshqarib turamiz */
-  function stubCanvas(dataUrl: string | (() => never)) {
+  function stubCanvas(dataUrl: string | ((mime?: string) => string)) {
     vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue({
       drawImage: vi.fn(),
     } as unknown as CanvasRenderingContext2D)
     vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockImplementation(
-      typeof dataUrl === 'string' ? () => dataUrl : (dataUrl as () => never),
+      (typeof dataUrl === 'string' ? () => dataUrl : dataUrl) as () => string,
     )
     // Image.onload'ni darhol ishga tushiramiz
     vi.spyOn(window, 'Image').mockImplementation(function (this: HTMLImageElement) {
@@ -173,7 +173,7 @@ describe('useAvatarUpload', () => {
     expect(showToast).toHaveBeenCalled()
   })
 
-  it('limitdan katta rasm yuborilmaydi', async () => {
+  it('limitdan katta rasm yuborilmaydi (barcha adaptiv bosqichlar sig\'magan holda)', async () => {
     stubCanvas('data:image/webp;base64,' + 'A'.repeat(AVATAR_MAX_DATA_URL_LEN))
     const { result } = renderUpload()
 
@@ -181,6 +181,32 @@ describe('useAvatarUpload', () => {
 
     expect(mockUploadAvatar).not.toHaveBeenCalled()
     expect(useAppStore.getState().customAvatar).toBeNull()
+  })
+
+  it('birinchi siqish limitdan oshsa — sifat tushirilib QAYTA siqilib yuboriladi', async () => {
+    let calls = 0
+    stubCanvas(() =>
+      ++calls === 1
+        ? 'data:image/webp;base64,' + 'A'.repeat(AVATAR_MAX_DATA_URL_LEN)
+        : 'data:image/webp;base64,SMALL')
+    const { result } = renderUpload()
+
+    await act(async () => { await result.current.handleAvatarFile(fileEvent()) })
+
+    expect(calls).toBeGreaterThan(1)   // qayta siqildi
+    expect(mockUploadAvatar).toHaveBeenCalledWith('12345', 'data:image/webp;base64,SMALL')
+    expect(useAppStore.getState().customAvatar).toBe('data:image/webp;base64,SMALL')
+  })
+
+  it('WebP codec yo\'q WebView (jimgina PNG qaytaradi) — JPEG fallback yuboriladi', async () => {
+    stubCanvas((mime) =>
+      mime === 'image/webp' ? 'data:image/png;base64,PNG_FALLBACK' : 'data:image/jpeg;base64,JPEG_OK')
+    const { result } = renderUpload()
+
+    await act(async () => { await result.current.handleAvatarFile(fileEvent()) })
+
+    expect(mockUploadAvatar).toHaveBeenCalledWith('12345', 'data:image/jpeg;base64,JPEG_OK')
+    expect(useAppStore.getState().customAvatar).toBe('data:image/jpeg;base64,JPEG_OK')
   })
 
   it('o\'chirish ham server-first: DELETE o\'tsa lokal tozalanadi', async () => {

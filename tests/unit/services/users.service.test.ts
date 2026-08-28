@@ -55,6 +55,10 @@ describe('AvatarUploadSchema', () => {
     expect(AvatarUploadSchema.safeParse({ image: 'data:image/webp;base64,iVBORw0KGgo=' }).success).toBe(true)
   })
 
+  it('JPEG data URL ham qabul qilinadi (eski WebView client fallback)', () => {
+    expect(AvatarUploadSchema.safeParse({ image: 'data:image/jpeg;base64,iVBORw0KGgo=' }).success).toBe(true)
+  })
+
   it('boshqa format/fayl tiplarini rad etadi (parsing xurujlari yopiq)', () => {
     for (const image of [
       'data:image/png;base64,iVBORw0KGgo=',

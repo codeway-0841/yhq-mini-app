@@ -107,12 +107,12 @@ export const PhoneSchema = z.object({
   otp: z.string().regex(/^\d{6}$/, 'OTP 6 raqamli kod bo\'lishi kerak'),
 })
 
-/** Avatar data URL formati — client 256px WebP'ga siqadi (useAvatarUpload).
+/** Avatar data URL formati — client 256px WebP'ga siqadi (useAvatarUpload);
+ *  JPEG — WebP codec'i yo'q eski WebView'lar uchun client fallback.
  *  Base64 ~1.37x: ~68KB hajm uchun 100k belgi yetarli. */
-export const AVATAR_DATA_URL_PREFIX = 'data:image/webp;base64,'
-export const AVATAR_DATA_URL_RE = /^data:image\/webp;base64,[A-Za-z0-9+/=]+$/
+export const AVATAR_DATA_URL_RE = /^data:image\/(webp|jpeg);base64,[A-Za-z0-9+/=]+$/
 export const AvatarUploadSchema = z.object({
-  image: z.string().regex(AVATAR_DATA_URL_RE, 'WebP data URL formatida bo\'lishi kerak').max(100_000),
+  image: z.string().regex(AVATAR_DATA_URL_RE, 'WebP/JPEG data URL formatida bo\'lishi kerak').max(100_000),
 })
 
 // ── Service ────────────────────────────────────────────────────────────────
