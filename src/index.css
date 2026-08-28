@@ -538,16 +538,16 @@ body[data-theme='dark'][data-accent='payme'] {
   --p-primary: #00b0b9; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
-/* Claude AI — Anthropic Terracotta & iliq qora atmosfera (#131312 canvas / #1e1e1d card) */
+/* Claude AI — Anthropic Terracotta & iliq qora atmosfera (#141413 canvas / #1e1e1d card) */
 body[data-theme='dark'][data-accent='claude'] {
-  --p-fg: #f5f5f4; --p-muted: #a8a29e; --p-subtle: #78716c;
-  --theme-fg: #f5f5f4; --theme-fg-muted: #a8a29e; --theme-fg-subtle: #78716c;
+  --p-fg: #faf9f5; --p-muted: #a19c91; --p-subtle: #6b665e;
+  --theme-fg: #faf9f5; --theme-fg-muted: #a19c91; --theme-fg-subtle: #6b665e;
   --p-primary: #d97757; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 217 119 87;
   --p-purple: #d97757; --p-purple-rgb: 217 119 87;
-  --p-canvas: #131312; --p-surface: #262624; --p-card: #1e1e1d; --p-line: rgba(255,255,255,0.08);
-  --p-line-strong: rgba(255,255,255,0.16);
-  --theme-canvas: #131312; --theme-surface: #262624; --theme-elevated: #1e1e1d;
-  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --p-canvas: #141413; --p-surface: #282724; --p-card: #1e1e1d; --p-line: rgba(245,245,240,0.08);
+  --p-line-strong: rgba(245,245,240,0.16);
+  --theme-canvas: #141413; --theme-surface: #282724; --theme-elevated: #1e1e1d;
+  --theme-line: rgba(245,245,240,0.08); --theme-line-strong: rgba(245,245,240,0.16);
   --theme-shadow: rgba(0,0,0,0.6);
 }
 
