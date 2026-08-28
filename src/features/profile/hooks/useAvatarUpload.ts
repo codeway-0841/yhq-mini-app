@@ -36,31 +36,55 @@ function tryEncode(canvas: HTMLCanvasElement, mime: string, quality: number): st
   }
 }
 
-/** Galereyadagi rasmni server limitiga SIG'DIRIB kvadrat data URL'ga siqadi:
- *  WebP → JPEG, har birida sifat/o'lcham bosqichma-bosqich tushadi. */
-function compressAvatar(file: File): Promise<string> {
+function loadImage(blob: Blob): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
-    const url = URL.createObjectURL(file)
+    const url = URL.createObjectURL(blob)
     const img = new Image()
     img.onload = () => {
       URL.revokeObjectURL(url)
       if (!Math.min(img.width, img.height)) return reject(new Error('bad image'))
-      for (const mime of MIME_STEPS) {
-        for (const size of SIZE_STEPS) {
-          const canvas = cropToCanvas(img, size)
-          if (!canvas) return reject(new Error('no canvas'))
-          for (const quality of QUALITY_STEPS) {
-            const dataUrl = tryEncode(canvas, mime, quality)
-            if (!dataUrl) break // bu brauzerda codec yo'q — keyingi mime'ga o'tamiz
-            if (dataUrl.length <= AVATAR_MAX_DATA_URL_LEN) return resolve(dataUrl)
-          }
-        }
-      }
-      reject(new Error('too big'))
+      resolve(img)
     }
     img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('load failed')) }
     img.src = url
   })
+}
+
+/** WebView decode qila oladigan rasmni qaytaradi. Android Chrome WebView
+ *  HEIC/HEIF'ni (iPhone kamera formati, Samsung "High efficiency" rejimi)
+ *  OCHOLMAYDI — bunday holda client O'ZI JPEG'ga o'giradi: heic2any sof JS
+ *  (WASM yo'q — CSP xavfsiz) va LAZY chunk — faqat shu holatda yuklanadi,
+ *  oddiy JPG/PNG userlar hech qachon to'lamaydi. */
+async function loadDecodableImage(file: File): Promise<HTMLImageElement> {
+  try {
+    return await loadImage(file)
+  } catch (originalErr) {
+    try {
+      const { default: heic2any } = await import('heic2any')
+      const converted = await heic2any({ blob: file, toType: 'image/jpeg', quality: 0.9 })
+      return await loadImage(Array.isArray(converted) ? converted[0] : converted)
+    } catch {
+      throw originalErr // HEIC ham emas — haqiqiy "format qo'llab-quvvatlanmaydi"
+    }
+  }
+}
+
+/** Galereyadagi rasmni server limitiga SIG'DIRIB kvadrat data URL'ga siqadi:
+ *  WebP → JPEG, har birida sifat/o'lcham bosqichma-bosqich tushadi. */
+async function compressAvatar(file: File): Promise<string> {
+  const img = await loadDecodableImage(file)
+  for (const mime of MIME_STEPS) {
+    for (const size of SIZE_STEPS) {
+      const canvas = cropToCanvas(img, size)
+      if (!canvas) throw new Error('no canvas')
+      for (const quality of QUALITY_STEPS) {
+        const dataUrl = tryEncode(canvas, mime, quality)
+        if (!dataUrl) break // bu brauzerda codec yo'q — keyingi mime'ga o'tamiz
+        if (dataUrl.length <= AVATAR_MAX_DATA_URL_LEN) return dataUrl
+      }
+    }
+  }
+  throw new Error('too big')
 }
 
 /** Xato SABABINI i18n kalitiga xaritalash — ilgari barchasi umumiy

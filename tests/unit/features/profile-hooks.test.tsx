@@ -5,12 +5,14 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { renderHook, act, waitFor } from '@testing-library/react'
 
-const { mockRequestOTP, mockUploadAvatar, mockRemoveAvatar, mockRequestContact } = vi.hoisted(() => ({
+const { mockRequestOTP, mockUploadAvatar, mockRemoveAvatar, mockRequestContact, mockHeic2any } = vi.hoisted(() => ({
   mockRequestOTP: vi.fn(),
   mockUploadAvatar: vi.fn(),
   mockRemoveAvatar: vi.fn(),
   mockRequestContact: vi.fn(),
+  mockHeic2any: vi.fn(),
 }))
+vi.mock('heic2any', () => ({ default: mockHeic2any }))
 vi.mock('../../../src/shared/api', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../../../src/shared/api')>()
   return {
@@ -38,6 +40,7 @@ beforeEach(() => {
   mockUploadAvatar.mockReset().mockResolvedValue({ ok: true })
   mockRemoveAvatar.mockReset().mockResolvedValue({ ok: true })
   mockRequestContact.mockReset()
+  mockHeic2any.mockReset()
   useAppStore.setState({
     settings: { ...useAppStore.getState().settings, language: 'uz' },
     user: { id: '12345', firstName: 'Ali' } as never,
@@ -119,8 +122,9 @@ describe('useAvatarUpload', () => {
   const closeSheet = vi.fn()
   const renderUpload = () => renderHook(() => useAvatarUpload({ showToast, closeSheet }))
 
-  /** compressAvatar canvas'ga tayanadi — jsdom'da uni boshqarib turamiz */
-  function stubCanvas(dataUrl: string | ((mime?: string) => string)) {
+  /** compressAvatar canvas'ga tayanadi — jsdom'da uni boshqarib turamiz.
+   *  failImages — dastlabki N ta Image yuklash onerror bilan tugaydi (HEIC stub). */
+  function stubCanvas(dataUrl: string | ((mime?: string) => string), failImages = 0) {
     vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue({
       drawImage: vi.fn(),
     } as unknown as CanvasRenderingContext2D)
@@ -128,10 +132,18 @@ describe('useAvatarUpload', () => {
       (typeof dataUrl === 'string' ? () => dataUrl : dataUrl) as () => string,
     )
     // Image.onload'ni darhol ishga tushiramiz
+    let imgCount = 0
     vi.spyOn(window, 'Image').mockImplementation(function (this: HTMLImageElement) {
+      const n = ++imgCount
       const img = { width: 512, height: 512 } as unknown as HTMLImageElement
       Object.defineProperty(img, 'src', {
-        set() { queueMicrotask(() => (img as unknown as { onload: () => void }).onload?.()) },
+        set() {
+          queueMicrotask(() => {
+            const rec = img as unknown as Record<string, (() => void) | undefined>
+            if (n <= failImages) rec['onerror']?.()
+            else rec['onload']?.()
+          })
+        },
       })
       return img
     } as unknown as typeof Image)
@@ -207,6 +219,32 @@ describe('useAvatarUpload', () => {
 
     expect(mockUploadAvatar).toHaveBeenCalledWith('12345', 'data:image/jpeg;base64,JPEG_OK')
     expect(useAppStore.getState().customAvatar).toBe('data:image/jpeg;base64,JPEG_OK')
+  })
+
+  it('HEIC rasm WebView ocholmasa — client o\'zi JPEG\'ga o\'girib yuklaydi', async () => {
+    stubCanvas('data:image/webp;base64,HEIC_OK', 1)   // 1-decode fail (HEIC), 2-o'girilgan JPEG OK
+    mockHeic2any.mockResolvedValue(new Blob(['x'], { type: 'image/jpeg' }))
+    const { result } = renderUpload()
+
+    const heicEvent = {
+      target: { files: [new File(['x'], 'IMG_1234.HEIC', { type: 'image/heic' })], value: 'x' },
+    } as unknown as React.ChangeEvent<HTMLInputElement>
+    await act(async () => { await result.current.handleAvatarFile(heicEvent) })
+
+    expect(mockHeic2any).toHaveBeenCalledTimes(1)
+    expect(mockUploadAvatar).toHaveBeenCalledWith('12345', 'data:image/webp;base64,HEIC_OK')
+    expect(useAppStore.getState().customAvatar).toBe('data:image/webp;base64,HEIC_OK')
+  })
+
+  it('HEIC ham bo\'lmagan buzuk fayl — yuklanmaydi (haqiqiy format xatosi)', async () => {
+    stubCanvas('data:image/webp;base64,NOPE', 99)   // har decode fail
+    mockHeic2any.mockRejectedValue(new Error('not heic'))
+    const { result } = renderUpload()
+
+    await act(async () => { await result.current.handleAvatarFile(fileEvent()) })
+
+    expect(mockUploadAvatar).not.toHaveBeenCalled()
+    expect(useAppStore.getState().customAvatar).toBeNull()
   })
 
   it('o\'chirish ham server-first: DELETE o\'tsa lokal tozalanadi', async () => {
