@@ -5,7 +5,7 @@ import {
   Copy, Phone, Lock, Globe, CreditCard,
   RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X, Zap, Flame,
+  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -26,13 +26,13 @@ import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
-import { getPlan, HIGHLIGHT_PLAN } from '../../../shared/premium-plans'
-import { levelFromXp } from '../../../shared/xp'
+import { SubscriptionModal } from '../premium'
+import { levelFromXp, levelProgress } from '../../../shared/xp'
+import { haptics } from '../../platform/haptics'
+import StatInfoSheet from '../../shared/components/StatInfoSheet'
 
 /** Bot havolasi — barcha profil linklari shu bazadan quriladi */
 const BOT_URL = 'https://t.me/kiwi_uz_bot'
-/** Tarif kartasidagi CTA narxi — SSOT: shared/premium-plans.ts (desync'ni premium-plans.test.ts ushlaydi) */
-const PREMIUM_CTA_STARS = getPlan(HIGHLIGHT_PLAN)!.stars
 
 // ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {
@@ -48,7 +48,6 @@ export default function Profil() {
   const customAvatar   = useAppStore((s) => s.customAvatar)
   const coins          = useAppStore((s) => s.coins)
   const xp             = useAppStore((s) => s.xp)
-  const streak         = useAppStore((s) => s.streak)
   const tt = useT(settings.language)
   const level = levelFromXp(xp)
 
@@ -72,10 +71,15 @@ export default function Profil() {
   const [copied, setCopied]               = useState(false)
   const [showNameEdit, setShowNameEdit]   = useState(false)
   const [showPhotoEdit, setShowPhotoEdit] = useState(false)
+  const [showLevelInfo, setShowLevelInfo] = useState(false)
   const [showLangPicker, setShowLangPicker]   = useState(false)
   const [showThemePicker, setShowThemePicker] = useState(false)
   const [showPromoModal, setShowPromoModal]   = useState(false)
   const [showCertModal, setShowCertModal]     = useState(false)
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+
+  const { current: xpCurrent, needed: xpNeeded } = levelProgress(xp)
+  const xpToNext = xpNeeded - xpCurrent
 
   // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount)
   const { info } = useToast()
@@ -177,7 +181,7 @@ export default function Profil() {
             </button>
           </div>
 
-          {/* Id - 00458547 ❐ */}
+          {/* ID: 00458547 ❐ */}
           <div className="mt-0.5 flex items-center">
             <button
               type="button"
@@ -185,7 +189,7 @@ export default function Profil() {
               className="inline-flex items-center gap-1.5 rounded text-[12px] tabular-nums text-pmuted transition-colors hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
               aria-label="ID nusxalash"
             >
-              <span>Id - {userId}</span>
+              <span>ID: {userId}</span>
               {copied ? (
                 <Check size={12} strokeWidth={2} className="text-psuccess" />
               ) : (
@@ -194,25 +198,19 @@ export default function Profil() {
             </button>
           </div>
 
-          {/* Badges / Chips: Ilovaning o'z nishonlari (Level, Streak, Coins) */}
-          <div className="mt-2 flex flex-wrap items-center gap-1.5">
-            {/* 1. Daraja (Zap) */}
-            <span className="inline-flex items-center gap-1 rounded-full bg-pblue/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pblue">
-              <Zap size={11} className="fill-pblue/40 text-pblue" />
-              <span>Lv.{level}</span>
-            </span>
-
-            {/* 2. Seriya / Streak (Flame) */}
-            <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-orange-500 dark:text-orange-400">
-              <Flame size={11} className="fill-orange-500/40 text-orange-500" />
-              <span>{streak}</span>
-            </span>
-
-            {/* 3. Tangalar (Coins) */}
-            <span className="inline-flex items-center gap-1 rounded-full bg-pgold/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pgold">
-              <Coins size={11} strokeWidth={2} className="text-pgold" />
-              <span>{coins}</span>
-            </span>
+          {/* Daraja nishoni — bosilganda daraja va XP haqida tushuntirish modali ochiladi */}
+          <div className="mt-2 flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => {
+                haptics.impact('light')
+                setShowLevelInfo(true)
+              }}
+              className="inline-flex items-center rounded-full bg-pblue/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pblue transition-transform active:scale-95 hover:bg-pblue/25 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary cursor-pointer"
+              aria-label={`${tt('level')} ${level}`}
+            >
+              <span>Level {level}</span>
+            </button>
           </div>
         </div>
       </div>
@@ -232,11 +230,13 @@ export default function Profil() {
             <Button
               variant="gold"
               size="sm"
-              className="flex-shrink-0"
-              onClick={() => openTelegramLink(`${BOT_URL}?start=premium`)}
+              className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+              onClick={() => {
+                haptics.impact('light')
+                setShowSubscriptionModal(true)
+              }}
             >
-              {PREMIUM_CTA_STARS}
-              <Star size={12} strokeWidth={1.75} />
+              {tt('subscribe')}
             </Button>
           )}
         </div>
@@ -485,6 +485,24 @@ export default function Profil() {
           total={40}
           percent={95}
           onClose={() => setShowCertModal(false)}
+        />
+      )}
+
+      {/* Daraja / Level ma'lumot sheet */}
+      {showLevelInfo && (
+        <StatInfoSheet
+          icon={<Award size={20} strokeWidth={1.75} />}
+          title={tt('levelInfoTitle')}
+          body={tt('levelInfoBody')}
+          extra={`${tt('xpToNextLevel')}: ${xpToNext} XP`}
+          onClose={() => setShowLevelInfo(false)}
+        />
+      )}
+
+      {/* Obuna bo'lish modali (Multi-step Senior-grade subscription sheet) */}
+      {showSubscriptionModal && (
+        <SubscriptionModal
+          onClose={() => setShowSubscriptionModal(false)}
         />
       )}
 

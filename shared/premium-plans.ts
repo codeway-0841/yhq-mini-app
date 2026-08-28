@@ -14,23 +14,117 @@
 export type PlanKey = 'month' | 'year' | 'lifetime'
 
 export interface PremiumPlan {
-  key:      PlanKey
+  key:              PlanKey
   /** Telegram Stars narxi */
-  stars:    number
+  stars:            number
   /** O'zbek so'midagi narx (UZS) */
-  priceUzs: number
+  priceUzs:         number
   /** Necha kun davom etadi (null = umrbod) */
-  days:     number | null
-  titleUz:  string
-  titleRu:  string
-  periodUz: string
-  periodRu: string
+  days:             number | null
+  titleUz:          string
+  titleRu:          string
+  periodUz:         string
+  periodRu:         string
+  /** Brendlangan daraja nomi (Gentra / Malibu / Gelik) */
+  tierNameUz:       string
+  tierNameRu:       string
+  /** Kichik teg/badge (masalan: 👑 Premium, 🎓 Video darslar, 🎧 Ovozli sharh) */
+  badgeUz:          string
+  badgeRu:          string
+  /** Chegirmasiz asl narx (so'mda, ustidan chizish uchun) */
+  originalPriceUzs: number
+  /** Chegirma foizi (masalan: 25) */
+  discountPercent:  number
+  /** Imkoniyatlar ro'yxati (har bir kartada ochiladigan checklist) */
+  featuresUz:       string[]
+  featuresRu:       string[]
 }
 
 export const PREMIUM_PLANS: PremiumPlan[] = [
-  { key: 'month',    stars: 99,  priceUzs: 29_000,  days: 30,  titleUz: 'Oylik',   titleRu: 'Месяц', periodUz: '30 kun',    periodRu: '30 дней'  },
-  { key: 'year',     stars: 250, priceUzs: 79_000,  days: 365, titleUz: 'Yillik',  titleRu: 'Год',   periodUz: '12 oy',     periodRu: '12 месяцев' },
-  { key: 'lifetime', stars: 500, priceUzs: 149_000, days: null, titleUz: 'Umrbod', titleRu: 'Навсегда', periodUz: 'umrbod', periodRu: 'навсегда' },
+  {
+    key: 'month',
+    stars: 99,
+    priceUzs: 29_000,
+    days: 30,
+    titleUz: 'Oylik',
+    titleRu: 'Месяц',
+    periodUz: '1 oylik',
+    periodRu: '1 месяц',
+    tierNameUz: 'Plus',
+    tierNameRu: 'Plus',
+    badgeUz: 'Ovozli sharh',
+    badgeRu: 'Аудиокомментарий',
+    originalPriceUzs: 39_000,
+    discountPercent: 25,
+    featuresUz: [
+      "Barcha test savollari uchun mutaxassis yozgan ovozli sharh",
+      "Qoidasini ko'rish tugmasi — tegishli qonun bandi",
+      "Reklamasiz to'liq va tezkor ilova tajribasi",
+    ],
+    featuresRu: [
+      'Аудиокомментарии специалистов к каждому вопросу теста',
+      'Просмотр правил — соответствующий пункт ПДД',
+      'Быстрый интерфейс полностью без рекламы',
+    ],
+  },
+  {
+    key: 'year',
+    stars: 250,
+    priceUzs: 79_000,
+    days: 365,
+    titleUz: 'Yillik',
+    titleRu: 'Год',
+    periodUz: '1 yillik',
+    periodRu: '1 год',
+    tierNameUz: 'Pro',
+    tierNameRu: 'Pro',
+    badgeUz: 'Video darslar',
+    badgeRu: 'Видеоуроки',
+    originalPriceUzs: 105_000,
+    discountPercent: 25,
+    featuresUz: [
+      "Plus tarifining barcha imkoniyatlari",
+      "Tajribali ustoz yozgan chuqur video darslar",
+      "Har bir video dars uchun mustahkamlovchi amaliy mashqlar",
+      "Barcha eksklyuziv premium temalar va yutuqlar",
+    ],
+    featuresRu: [
+      'Все возможности тарифа Plus',
+      'Углубленные видеоуроки от опытного преподавателя',
+      'Практические упражнения для закрепления каждого урока',
+      'Все эксклюзивные премиум темы и достижения',
+    ],
+  },
+  {
+    key: 'lifetime',
+    stars: 500,
+    priceUzs: 149_000,
+    days: null,
+    titleUz: 'Umrbod',
+    titleRu: 'Навсегда',
+    periodUz: 'cheksiz muddat',
+    periodRu: 'бессрочно',
+    tierNameUz: 'Premium',
+    tierNameRu: 'Premium',
+    badgeUz: 'VIP imkoniyatlar',
+    badgeRu: 'VIP доступ',
+    originalPriceUzs: 199_000,
+    discountPercent: 25,
+    featuresUz: [
+      "Pro tarifining barcha imkoniyatlari",
+      "Har bir test uchun video darsdan qisqa video javob",
+      "Haftada 6 kun (9:00–21:00) ustoz bilan jonli chatda yordam",
+      "Yopiq muhokama guruhi — boshqa o'quvchilar bilan muloqot",
+      "Cheksiz muddat — bir martalik to'lov bilan butun umrga",
+    ],
+    featuresRu: [
+      'Все возможности тарифа Pro',
+      'Короткие видеоответы к каждому тестовому вопросу',
+      'Помощь преподавателя в чате 6 дней в неделю (9:00–21:00)',
+      'Закрытая группа обсуждений с другими учениками',
+      'Бессрочный доступ навсегда за один платёж',
+    ],
+  },
 ]
 
 /** Ommaviy ko'rsatish uchun — "Eng mashhur" badge qo'yiladigan tarif */

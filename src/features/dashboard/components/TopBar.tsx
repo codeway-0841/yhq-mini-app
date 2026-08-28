@@ -1,6 +1,5 @@
-import { memo, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Settings, Coins, Sun, Moon, Award } from 'lucide-react'
+import { memo } from 'react'
+import { Settings, Sun, Moon } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
@@ -8,9 +7,6 @@ import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { Button } from '../../../shared/components/ui/button'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
-import { cn } from '../../../shared/lib/cn'
-import StatInfoSheet from '../../../shared/components/StatInfoSheet'
-import { levelProgress } from '../../../../shared/xp'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 // DIQQAT: bu avatar DOIRA bo'lib qoladi (ui/Avatar squircle emas) — sotib
@@ -39,40 +35,19 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   )
 })
 
-/** Kichik chip — TopBar'dagi status/hisob ko'rsatkichlari uchun yagona shakl. */
-const chipStyles = cn(
-  'inline-flex h-8 items-center gap-1.5 rounded-control border px-2.5 text-[12px] font-semibold',
-  'transition-[background-color,border-color,transform] duration-[120ms] ease-out',
-  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
-)
-
 // ── Top Bar (v3 KIWI) ───────────────────────────────────────────────────────
-export const TopBar = memo(function TopBar({ user, displayName, level, onSettings, onProfile }: {
+export const TopBar = memo(function TopBar({ user, displayName, level: _level, onSettings, onProfile }: {
   user: ApiUser | null
   displayName: string | null
-  level: number
+  level?: number
   onSettings: () => void
   onProfile: () => void
 }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
-  const coins = useAppStore((s) => s.coins)
-  const xp = useAppStore((s) => s.xp)
   const theme = useAppStore((s) => s.settings.theme)
   const updateSettings = useAppStore((s) => s.updateSettings)
-  const navigate = useNavigate()
   const name = displayName ?? user?.firstName ?? tt('guestName')
-
-  const [levelInfoOpen, setLevelInfoOpen] = useState(false)
-  const [coinInfoOpen, setCoinInfoOpen] = useState(false)
-
-  // Tanga tugmasi: qisqa bosish → Do'kon, uzoq bosish (700ms) → tushuntirish sheet
-  // (StreakButton'dagi bilan bir xil pattern — ProgressCard.tsx)
-  const coinPressTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const coinLongPressed = useRef(false)
-  const cancelCoinPress = () => {
-    if (coinPressTimer.current) { clearTimeout(coinPressTimer.current); coinPressTimer.current = null }
-  }
 
   // Dark / Light rejimini bir bosishda almashtirish
   const toggleTheme = () => {
@@ -88,11 +63,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
     theme === 'dark' ||
     (theme === 'system' && typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches)
 
-  const { current: xpCurrent, needed: xpNeeded } = levelProgress(xp)
-  const xpToNext = xpNeeded - xpCurrent
-
   return (
-    <>
     <div className="flex items-center justify-between gap-3 px-5 pb-4 pt-6">
       <button
         onClick={onProfile}
@@ -112,41 +83,6 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
       </button>
 
       <div className="flex flex-shrink-0 items-center gap-1.5">
-        {/* Daraja — glif (✦) o'rniga tabular raqam + qisqa yorliq. Bosilsa → tushuntirish sheet */}
-        <button
-          onClick={() => { haptics.impact('light'); setLevelInfoOpen(true) }}
-          className={cn(chipStyles, 'border-plineStrong bg-psurface text-pmuted active:scale-[0.98]')}
-          aria-label={`${tt('level')} ${level}`}
-        >
-          <span className="text-[10px] uppercase tracking-[0.08em] text-psubtle">LVL</span>
-          <span className="text-pfg">{level}</span>
-        </button>
-
-        {/* Tangalar — qisqa bosish: do'kon (#40); uzoq bosish (700ms): tushuntirish sheet */}
-        <button
-          onClick={() => { if (!coinLongPressed.current) navigate('/shop'); coinLongPressed.current = false }}
-          onPointerDown={() => {
-            coinLongPressed.current = false
-            cancelCoinPress()
-            coinPressTimer.current = setTimeout(() => {
-              coinLongPressed.current = true
-              haptics.impact('light')
-              setCoinInfoOpen(true)
-            }, 700)
-          }}
-          onPointerUp={cancelCoinPress}
-          onPointerLeave={cancelCoinPress}
-          aria-label={tt('shopAria')}
-          className={cn(
-            chipStyles,
-            'border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] text-pgold',
-            'active:scale-[0.98]',
-          )}
-        >
-          <Coins size={13} strokeWidth={1.75} />
-          {coins >= 1000 ? `${(coins / 1000).toFixed(1).replace('.', ',')}k` : coins}
-        </button>
-
         {/* Dark / Light rejim toggle tugmasi */}
         <Button
           variant="ghost"
@@ -173,24 +109,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level, onSetting
         </Button>
       </div>
     </div>
-
-    {levelInfoOpen && (
-      <StatInfoSheet
-        icon={<Award size={20} strokeWidth={1.75} />}
-        title={tt('levelInfoTitle')}
-        body={tt('levelInfoBody')}
-        extra={`${tt('xpToNextLevel')}: ${xpToNext} XP`}
-        onClose={() => setLevelInfoOpen(false)}
-      />
-    )}
-    {coinInfoOpen && (
-      <StatInfoSheet
-        icon={<Coins size={20} strokeWidth={1.75} />}
-        title={tt('coinInfoTitle')}
-        body={tt('coinInfoBody')}
-        onClose={() => setCoinInfoOpen(false)}
-      />
-    )}
-    </>
   )
 })
+
+
