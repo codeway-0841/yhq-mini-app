@@ -7,6 +7,7 @@ import {
 import { ensureAccountOwner, resetAccountToLoggedOut } from '../../../shared/store/account'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { getTelegramUser, openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { useT } from '../../../shared/i18n'
 import { Section, Item } from './Section'
 import { authErrorKey, usePhoneInput, OTPInput } from '../../auth'
@@ -154,6 +155,24 @@ export function LinkAccountSection() {
   }
 
   if (!user) return null
+
+  // Telegram Mini App foydalanuvchisi uchun (yoki phoneEmailAuthEnabled o'chiq bo'lsa)
+  // "Telegram ulangan" va dublikat telefon bog'lash ma'nosiz — bo'lim ko'rsatilmaydi.
+  if (isTelegram || !config.phoneEmailAuthEnabled) {
+    if (!isTelegram && hasSession) {
+      return (
+        <Section title={tt('authLinkAccount')}>
+          <Item
+            icon={LogOut}
+            iconColor="var(--p-danger)"
+            label={tt('authLogout')}
+            onPress={handleLogout}
+          />
+        </Section>
+      )
+    }
+    return null
+  }
 
   const loadingRow = (
     <span className="size-4 border-2 border-pmuted border-t-transparent rounded-full animate-spin" />
