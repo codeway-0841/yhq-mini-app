@@ -104,11 +104,15 @@ function avatarErrorKey(err: unknown): Keys {
   return 'avatarUploadFailed'
 }
 
-/** Haqiqiy sabab konsol + Sentry'da qoladi — toast foydalanuvchiga qisqa. */
-function reportAvatarError(err: unknown) {
-  console.warn('[avatar] yuklash xatosi:', err)
+/** Haqiqiy sabab konsol + Sentry'da qoladi — toast foydalanuvchiga qisqa.
+ *  Fayl meta (type/kengaytma/hajm) diagnostika uchun SHART: WebView decode
+ *  xatolarida (HEIC/AVIF/...) rasmning HAqiqiy formatini ko'rsatadi. */
+function reportAvatarError(err: unknown, file?: File) {
+  const meta = file ? { type: file.type || '(bo\'sh)', name: file.name, sizeKB: Math.round(file.size / 1024) } : undefined
+  console.warn('[avatar] yuklash xatosi:', err, meta ?? '')
   Sentry.captureException(err instanceof Error ? err : new Error(String(err)), {
     tags: { area: 'avatar-upload' },
+    extra: meta,
   })
 }
 
@@ -140,7 +144,7 @@ export function useAvatarUpload({ showToast, closeSheet }: {
       closeSheet()
       showToast(t(lang, 'avatarSavedToast'))
     } catch (err) {
-      reportAvatarError(err)
+      reportAvatarError(err, file)
       showToast(t(lang, avatarErrorKey(err)))
     } finally {
       setAvatarBusy(false)
