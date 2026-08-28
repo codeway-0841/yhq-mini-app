@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, X, Calendar, Users, Crown } from 'lucide-react'
+import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, X, Calendar, Users, Crown, Percent } from 'lucide-react'
 import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -14,7 +14,9 @@ export default function AdminPromoTab() {
 
   // Form State
   const [newCode, setNewCode] = useState('')
+  const [promoType, setPromoType] = useState<'premium_days' | 'discount_percent'>('premium_days')
   const [days, setDays] = useState(30)
+  const [percent, setPercent] = useState(25)
   const [maxUses, setMaxUses] = useState<number | null>(null)
   const [expiresAt, setExpiresAt] = useState<string>('')
   const [formBusy, setFormBusy] = useState(false)
@@ -79,13 +81,19 @@ export default function AdminPromoTab() {
       return
     }
 
+    if (promoType === 'discount_percent' && (percent < 1 || percent > 99)) {
+      setFormError("Chegirma 1 dan 99 gacha bo'lsin")
+      return
+    }
+
     setFormBusy(true)
     setFormError(null)
 
     try {
       const created = await api.createAdminPromoCode({
         code: trimmed,
-        value: days,
+        type: promoType,
+        value: promoType === 'discount_percent' ? percent : days,
         maxUses: maxUses || null,
         expiresAt: expiresAt ? new Date(expiresAt).toISOString() : null,
       })
@@ -96,7 +104,9 @@ export default function AdminPromoTab() {
       showToast(`"${trimmed}" muvaffaqiyatli yaratildi!`)
       setCreating(false)
       setNewCode('')
+      setPromoType('premium_days')
       setDays(30)
+      setPercent(25)
       setMaxUses(null)
       setExpiresAt('')
     } catch (err: any) {
@@ -205,9 +215,19 @@ export default function AdminPromoTab() {
 
                 <div className="grid grid-cols-3 gap-2 py-2 border-y border-pline/60 my-2 text-[11px]">
                   <div>
-                    <span className="text-pmuted block">Muddat:</span>
+                    <span className="text-pmuted block">
+                      {c.type === 'discount_percent' ? 'Chegirma:' : 'Muddat:'}
+                    </span>
                     <span className="font-semibold text-pfg flex items-center gap-1">
-                      <Crown size={11} strokeWidth={1.75} className="text-pgold" /> {c.value} kun
+                      {c.type === 'discount_percent' ? (
+                        <>
+                          <Percent size={11} strokeWidth={1.75} className="text-ppurple" /> {c.value}% chegirma
+                        </>
+                      ) : (
+                        <>
+                          <Crown size={11} strokeWidth={1.75} className="text-pgold" /> {c.value} kun
+                        </>
+                      )}
                     </span>
                   </div>
                   <div>
@@ -268,6 +288,40 @@ export default function AdminPromoTab() {
             </h3>
 
             <form onSubmit={handleCreate} className="space-y-4">
+              {/* Promokod turi */}
+              <div>
+                <label className="text-xs font-semibold text-pfg block mb-1.5">Promokod turi</label>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setPromoType('premium_days')}
+                    className={`py-2.5 rounded-control text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                      promoType === 'premium_days'
+                        ? 'bg-ppurple text-ponprimary border-ppurple'
+                        : 'bg-card border-pline text-pmuted'
+                    }`}
+                  >
+                    <Crown size={13} /> Premium kun
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPromoType('discount_percent')}
+                    className={`py-2.5 rounded-control text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                      promoType === 'discount_percent'
+                        ? 'bg-ppurple text-ponprimary border-ppurple'
+                        : 'bg-card border-pline text-pmuted'
+                    }`}
+                  >
+                    <Percent size={13} /> Chegirma (to'lov)
+                  </button>
+                </div>
+                {promoType === 'discount_percent' && (
+                  <p className="text-[11px] text-pmuted mt-1.5">
+                    Bu kod tarif sotib olishda (Click/Payme) narxni tushiradi — ishlatilishi to'lov yakunlanganda hisoblanadi.
+                  </p>
+                )}
+              </div>
+
               <div>
                 <div className="flex items-center justify-between mb-1.5">
                   <label className="text-xs font-semibold text-pfg">Promokod nomi</label>
@@ -289,50 +343,84 @@ export default function AdminPromoTab() {
                 />
               </div>
 
-              {/* Kunlar presetlari */}
-              <div>
-                <label className="text-xs font-semibold text-pfg block mb-1.5">
-                  Beriladigan muddat: <b className="text-ppurple">{days} kun</b>
-                </label>
-                <div className="grid grid-cols-4 gap-1.5 mb-2">
-                  {[7, 15, 30, 90].map((d) => (
+              {promoType === 'discount_percent' ? (
+                /* Chegirma foizi presetlari */
+                <div>
+                  <label className="text-xs font-semibold text-pfg block mb-1.5">
+                    Chegirma miqdori: <b className="text-ppurple">{percent}%</b>
+                  </label>
+                  <div className="grid grid-cols-4 gap-1.5 mb-2">
+                    {[10, 15, 25, 50].map((p) => (
+                      <button
+                        key={p}
+                        type="button"
+                        onClick={() => setPercent(p)}
+                        className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                          percent === p
+                            ? 'bg-ppurple text-ponprimary border-ppurple'
+                            : 'bg-card border-pline text-pmuted'
+                        }`}
+                      >
+                        {p}%
+                      </button>
+                    ))}
+                  </div>
+                  <input
+                    type="number"
+                    min={1}
+                    max={99}
+                    value={percent}
+                    onChange={(e) => setPercent(Number(e.target.value))}
+                    placeholder="Boshqa foiz (1-99)"
+                    className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
+                  />
+                </div>
+              ) : (
+                /* Kunlar presetlari */
+                <div>
+                  <label className="text-xs font-semibold text-pfg block mb-1.5">
+                    Beriladigan muddat: <b className="text-ppurple">{days} kun</b>
+                  </label>
+                  <div className="grid grid-cols-4 gap-1.5 mb-2">
+                    {[7, 15, 30, 90].map((d) => (
+                      <button
+                        key={d}
+                        type="button"
+                        onClick={() => setDays(d)}
+                        className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                          days === d
+                            ? 'bg-ppurple text-ponprimary border-ppurple'
+                            : 'bg-card border-pline text-pmuted'
+                        }`}
+                      >
+                        {d} kun
+                      </button>
+                    ))}
+                  </div>
+                  <div className="grid grid-cols-2 gap-1.5">
                     <button
-                      key={d}
                       type="button"
-                      onClick={() => setDays(d)}
+                      onClick={() => setDays(365)}
                       className={`py-2 rounded-control text-xs font-semibold border transition-all ${
-                        days === d
+                        days === 365
                           ? 'bg-ppurple text-ponprimary border-ppurple'
                           : 'bg-card border-pline text-pmuted'
                       }`}
                     >
-                      {d} kun
+                      1 yil (365 kun)
                     </button>
-                  ))}
+                    <input
+                      type="number"
+                      min={1}
+                      max={3650}
+                      value={days}
+                      onChange={(e) => setDays(Number(e.target.value))}
+                      placeholder="Boshqa kun"
+                      className="bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
+                    />
+                  </div>
                 </div>
-                <div className="grid grid-cols-2 gap-1.5">
-                  <button
-                    type="button"
-                    onClick={() => setDays(365)}
-                    className={`py-2 rounded-control text-xs font-semibold border transition-all ${
-                      days === 365
-                        ? 'bg-ppurple text-ponprimary border-ppurple'
-                        : 'bg-card border-pline text-pmuted'
-                    }`}
-                  >
-                    1 yil (365 kun)
-                  </button>
-                  <input
-                    type="number"
-                    min={1}
-                    max={3650}
-                    value={days}
-                    onChange={(e) => setDays(Number(e.target.value))}
-                    placeholder="Boshqa kun"
-                    className="bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
-                  />
-                </div>
-              </div>
+              )}
 
               {/* Ishlatish limiti */}
               <div>
