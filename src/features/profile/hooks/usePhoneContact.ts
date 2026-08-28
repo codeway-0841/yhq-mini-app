@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { api, ApiError } from '../../../shared/api'
 import { requestContact } from '../../../platform/telegram'
@@ -12,18 +12,24 @@ import type { Keys } from '../../../shared/i18n'
  *    imzolangan contact xabarini yuboradi (rasmiy docs: "the bot will receive
  *    the phone details") — bot handler `contact.user_id === from.id` ni
  *    tekshirib users.phone'ni DARHOL yozadi (SMS kerak emas).
- * 2. Webhook asinxron — client GET /users/:id/phone ni bir necha soniya
- *    poll qiladi; raqam ko'rinsa — tayyor (spinner → yashil raqam + notice).
- * 3. Bot yetib kelmasa (eski client, webhook kechikishi) — eski SMS OTP
- *    oqimi ochiladi (server phone'ni FAQAT egalik isbotidan keyin yozadi).
+ * 2. Webhook asinxron — client GET /users/:id/phone ni poll qiladi; raqam
+ *    ko'rinsa — tayyor (spinner → yashil raqam + notice).
+ * 3. Bot yetib kelmasa (bot bloklangan, eski TG client) — SMS OTP fallback.
+ * 4. OTP ekrani ochilgach HAM fon kuzatuv davom etadi — bot yozuvi KECH
+ *    kelgan bo'lsa (cold start race) OTP oynasi o'zi yopilib notice chiqadi
+ *    (2026-08-28 prod incident: deploy'dan keyingi cold start 6s oynadan
+ *    oshib, bot ✅ yozgan-app OTP ochgan mismatch).
  *
  * Bosqichlar: idle → otp (kod kutilmoqda, faqat fallback) → done.
  * `phoneError`/`phoneNotice` har doim i18n KALIT saqlaydi (caller tt() bilan ko'rsatadi).
  */
 
-/** Bot webhook'i odatda <1s; 4×1.5s ≈ 6s oyna — undan oshsa OTP fallback. */
-const BOT_LINK_ATTEMPTS = 4
-const BOT_LINK_DELAY_MS = 1500
+/** Bot webhook warm'da <1s; lekin Vercel fn + Neon COLD START 5-8s —
+ *  oyna ~12s (7×2s) bo'lishi shart, aks holda bot yozuvi oynadan kech qoladi. */
+const BOT_LINK_ATTEMPTS = 7
+const BOT_LINK_DELAY_MS = 2000
+/** OTP ekrani ochilgach ham NECHA marta fon tekshiruv (kech cold-start yozuvi). */
+const BOT_LINK_WATCH_ATTEMPTS = 3
 
 interface PhoneContactOptions {
   /** Test seam (prod'da berilmaydi — default'lar ishlatiladi). */
@@ -41,6 +47,9 @@ export function usePhoneContact(options?: PhoneContactOptions) {
   const [otpPhone, setOtpPhone] = useState<string | null>(null)
   const [phoneError, setPhoneError] = useState<Keys | null>(null)
   const [phoneNotice, setPhoneNotice] = useState<Keys | null>(null)
+  /** Fon kuzatuv generatsiyasi — cancel/submit/unmount'da eski watcher o'chadi. */
+  const watchGenRef = useRef(0)
+  useEffect(() => () => { watchGenRef.current++ }, [])   // unmount — watcher to'xtaydi
 
   const flashError = (key: Keys) => {
     setPhoneError(key)
@@ -49,6 +58,14 @@ export function usePhoneContact(options?: PhoneContactOptions) {
   const flashNotice = (key: Keys) => {
     setPhoneNotice(key)
     setTimeout(() => setPhoneNotice(null), 4000)
+  }
+
+  /** Fast-path muvaffaqiyati — store + notice (poll va watcher UMUMIY nuqtasi). */
+  const applyBotLinkedPhone = (phone: string) => {
+    const u = useAppStore.getState().user
+    if (u) setUser({ ...u, phone })
+    setOtpPhone(null)           // OTP ekrani ochiq bo'lsa — yopiladi
+    flashNotice('phoneLinkedOk')
   }
 
   /** Bot contact-xabari users.phone'ni yozguncha poll; yozilganini ko'rsa true. */
@@ -61,6 +78,22 @@ export function usePhoneContact(options?: PhoneContactOptions) {
       if (i < pollAttempts - 1) await new Promise((r) => setTimeout(r, pollDelayMs))
     }
     return false
+  }
+
+  /** OTP ekrani ochilgach ham FON kuzatuv — cold start'da bot yozuvi poll
+   *  oynasidan KECH qolsa, SMS kiritish shart bo'lmasdan o'zi yopiladi. */
+  const watchBotLinkDuringOtp = (userId: string, phone: string) => {
+    const gen = ++watchGenRef.current
+    void (async () => {
+      for (let i = 0; i < BOT_LINK_WATCH_ATTEMPTS; i++) {
+        await new Promise((r) => setTimeout(r, Math.max(pollDelayMs, 1)))
+        if (watchGenRef.current !== gen) return   // bekor qilingan / tasdiqlangan
+        try {
+          const { phone: linked } = await api.getLinkedPhone(userId)
+          if (linked === phone) { applyBotLinkedPhone(phone); return }
+        } catch { /* ignore */ }
+      }
+    })()
   }
 
   // 1-qadam: Telegram'dan raqam olish → bot fast-path, bo'lmasa SMS OTP
@@ -84,14 +117,13 @@ export function usePhoneContact(options?: PhoneContactOptions) {
       const run = async () => {
         // Fast-path: Telegram-imzolangan bot contact xabari raqamni yozdimi?
         if (userId && await pollBotLinkedPhone(userId, phone)) {
-          const u = useAppStore.getState().user
-          if (u) setUser({ ...u, phone })
-          flashNotice('phoneLinkedOk')
+          applyBotLinkedPhone(phone)
           return
         }
         // Fallback: SMS OTP egalik isboti (H-2)
         await api.requestOTP({ phone })
         setOtpPhone(phone)
+        if (userId) watchBotLinkDuringOtp(userId, phone)   // kech cold-start yozuvi
       }
 
       run()
@@ -110,11 +142,15 @@ export function usePhoneContact(options?: PhoneContactOptions) {
   // 2-qadam (fallback): SMS kodni serverga yuborish (egalik isboti bilan yozadi)
   const submitPhoneOtp = async (code: string): Promise<void> => {
     if (!otpPhone) return
+    watchGenRef.current++              // fon kuzatuvni to'xtatish
     await updatePhone(otpPhone, code)   // optimistik; server xatoda rollback qiladi
     setOtpPhone(null)
   }
 
-  const cancelPhoneOtp = () => setOtpPhone(null)
+  const cancelPhoneOtp = () => {
+    watchGenRef.current++              // fon kuzatuvni to'xtatish
+    setOtpPhone(null)
+  }
 
   return { phoneLoading, otpPhone, phoneError, phoneNotice, handleAddPhone, submitPhoneOtp, cancelPhoneOtp }
 }

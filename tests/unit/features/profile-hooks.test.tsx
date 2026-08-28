@@ -3,8 +3,8 @@
  * → SMS OTP fallback) va avatar yuklash/o'chirish (SERVER-FIRST: server
  * yozmaguncha lokal o'zgarmaydi).
  */
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { renderHook, act, waitFor } from '@testing-library/react'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { renderHook, act, waitFor, cleanup } from '@testing-library/react'
 
 const { mockRequestOTP, mockGetLinkedPhone, mockUploadAvatar, mockRemoveAvatar, mockRequestContact, mockHeic2any } = vi.hoisted(() => ({
   mockRequestOTP: vi.fn(),
@@ -53,8 +53,13 @@ beforeEach(() => {
   })
 })
 
-/** Real poll delay (1.5s×4) testlarni sekinlashtirmasligi uchun delay'siz seam. */
+/** Real poll delay testlarni sekinlashtirmasligi uchun delay'siz seam. */
 const renderPhone = () => renderHook(() => usePhoneContact({ pollAttempts: 2, pollDelayMs: 0 }))
+
+// globals:false — RTL auto-cleanup YO'Q. Qo'lda: unmount hook'ning fon
+// kuzatuvini (watchBotLinkDuringOtp timer'lari) o'chiradi — aks holda OLDINGI
+// test'ning watcher'i keyingi test'dagi mock'ni konsumatsiya qiladi.
+afterEach(() => { cleanup() })
 
 describe('usePhoneContact', () => {
   it('FAST-PATH: bot raqamni yozgan bo\'lsa — SMS YO\'Q, store yangilanadi + notice', async () => {
@@ -88,6 +93,30 @@ describe('usePhoneContact', () => {
     await waitFor(() => expect(result.current.otpPhone).toBe('+998901234567'))
     expect(mockGetLinkedPhone).toHaveBeenCalled()
     expect(result.current.phoneError).toBeNull()
+  })
+
+  it('COLD START: bot yozuvi kech kelsa — OTP ochilgach fon kuzatuv o\'zi yopadi', async () => {
+    mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
+      cb(true, { contact: { phone_number: '+998901234567' } })
+      return true
+    })
+    // Dastlabki poll urinishlari → hali yozilmagan; watcher tekshiruvida yozilgan
+    mockGetLinkedPhone
+      .mockResolvedValueOnce({ phone: null })
+      .mockResolvedValueOnce({ phone: null })
+      .mockResolvedValue({ phone: '+998901234567' })
+
+    const { result } = renderPhone()
+    act(() => { result.current.handleAddPhone() })
+
+    // Fon kuzatuv kech kelgan yozuvni tutib, OTP'ni o'zi yopadi
+    // (test'da watcher delay ~1ms — oraliq OTP holati waitFor'ga tushmaydi,
+    //  shuning uchun FINAL holat + fallback chaqirig'i tekshiriladi)
+    await waitFor(() => expect(result.current.phoneNotice).toBe('phoneLinkedOk'))
+    expect(mockRequestOTP).toHaveBeenCalledWith({ phone: '+998901234567' })  // fallback ishga tushgan edi
+    expect(result.current.otpPhone).toBeNull()                                // watcher yopdi
+    expect(useAppStore.getState().user?.phone).toBe('+998901234567')
+    expect(mockGetLinkedPhone.mock.calls.length).toBeGreaterThanOrEqual(3)    // 2 poll + ≥1 watcher
   })
 
   it('kontakt rad etilsa — xato kaliti, na poll na SMS', async () => {
