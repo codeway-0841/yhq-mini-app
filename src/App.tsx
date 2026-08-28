@@ -19,6 +19,7 @@ import SplashScreen from './features/onboarding/SplashScreen'
 import { useDailyStore } from './shared/store/useDailyStore'
 import { useToast } from './shared/components/ToastContainer'
 import { useT, t } from './shared/i18n'
+import { goBack, subscribeModalStack } from './shared/lib/navigation'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -64,6 +65,12 @@ function Layout() {
   const location = useLocation()
   const navigate = useNavigate()
   const atHome = location.pathname === '/'
+  const [modalCount, setModalCount] = useState(0)
+
+  // Modal stack holatini kuzatish — modal ochiq bo'lsa BackButton ko'rinadi va eng oxirgi modalni yopadi
+  useEffect(() => {
+    return subscribeModalStack((count) => setModalCount(count))
+  }, [])
 
   // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
   useEffect(() => {
@@ -86,8 +93,11 @@ function Layout() {
   }, [])
 
   // Platforma "orqaga" tugmasi — Telegram'da TG BackButton, APK'da hardware back.
-  // Bosh sahifada tugma yashirinadi (ilova tasodifan yopilmaydi).
-  useEffect(() => bindAppBackButton(!atHome, () => window.history.back()), [atHome])
+  // visible: sub-sahifada bo'lsa YOKI biror modal/sheet ochiq bo'lsa (bosh sahifada ham).
+  const shouldShowBack = !atHome || modalCount > 0
+  useEffect(() => {
+    return bindAppBackButton(shouldShowBack, () => goBack(navigate))
+  }, [shouldShowBack, navigate])
 
   // Sahifa o'tishida scroll reset + transition — key={pathname} EMAS (audit L11b):
   // key har navigatsiyada BUTUN sahifani REMOUNT qilardi (komponent state'lari
