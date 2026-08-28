@@ -5,10 +5,8 @@
  * uchun konstantalar alohida modulda.
  */
 
-/** Referrer VA refereega beriladigan mukofot (kun) */
-export const REFERRAL_REWARD_DAYS = 3
+/** Referrerga beriladigan mukofot (kun) — do'st taklif qilgan odamga 1 kun Premium */
+export const REFERRAL_REWARD_DAYS = 1
 
-/** Bitta referrer mukofot olishi mumkin bo'lgan MAKSIMAL referallar soni (farming himoyasi).
- *  Haqiqiy gate — har referee YANGI TG akkaunt (referee UNIQUE); telefon ulash
- *  trigger'i marketing (verified raqam) va qulaylik uchun. */
+/** Bitta referrer mukofot olishi mumkin bo'lgan MAKSIMAL referallar soni (farming himoyasi). */
 export const REFERRAL_MAX_REWARDED = 50

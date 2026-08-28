@@ -370,8 +370,6 @@ export default function Profil() {
           onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Star}      label={tt('rateApp')}
           onPress={() => openTelegramLink(BOT_URL)} />
-        <Item icon={Share2}     label={tt('shareApp')}
-          onPress={() => shareUrl(BOT_URL, tt('shareAppText'))} />
         <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(promptAddToHomeScreen()
             ? tt('installAppPrompt')

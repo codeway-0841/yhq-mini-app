@@ -166,21 +166,21 @@ describe('Referal tizimi (MB-5, v3 — split mukofot + telefon trigger)', () => 
     await db.delete(users).where(inArray(users.id, ALL))
   })
 
-  it("yangi user ref_<id> bilan kirsa — PENDING qayd + WELCOME sovg'a referee'ga DARHOL, referrerga YO'Q", async () => {
+  it("yangi user ref_<id> bilan kirsa — REWARDED qayd + referrerga DARHOL 1 kun, referee'ga esa berilmaydi", async () => {
     await request(app).post('/api/init').send({
       id: REF_IDS[0], first_name: 'Ref1', last_name: '', username: 'ref1', photo_url: '',
       start_param: `ref_${REFERRER}`,
     }).expect(200)
 
     const [r] = await db.select().from(referrals).where(eq(referrals.referrerId, REFERRER))
-    expect(r?.status).toBe('pending')
-    // Yangi o'quvchi test yechishga majbur EMAS — sovg'asi ro'yxatdan o'tishdayoq
+    expect(r?.status).toBe('rewarded')
+    // Referee mukofot olmaydi
     const [referee] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REF_IDS[0]))
-    expect(referee?.premiumUntil).not.toBeNull()
-    expect(referee!.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
-    // Referrer mukofoti hali YO'Q (telefon ulash kutilmoqda)
+    expect(referee?.premiumUntil).toBeNull()
+    // Referrer darhol 1 kun mukofot oladi
     const [referrer] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REFERRER))
-    expect(referrer?.premiumUntil).toBeNull()
+    expect(referrer?.premiumUntil).not.toBeNull()
+    expect(referrer!.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
   })
 
   it("mavjud user qayta init — referral takrorlanmaydi (faqat yangi user)", async () => {
@@ -210,59 +210,7 @@ describe('Referal tizimi (MB-5, v3 — split mukofot + telefon trigger)', () => 
     }).expect(200)
     const rows = await db.select().from(referrals).where(eq(referrals.referrerId, P_REFERRER))
     expect(rows).toHaveLength(1)
-    expect(rows[0].status).toBe('pending')
-  })
-
-  it("savol yechish mukofot BERMAYDI (trigger faqat telefon ulash)", async () => {
-    const qs = await db.select({ id: questions.id }).from(questions).limit(3)
-    for (let i = 0; i < qs.length; i++) {
-      await request(app)
-        .post(`/api/progress/${REF_IDS[0]}/result`)
-        .send({ questionId: qs[i].id, selectedAnswer: null, subjectId: 'yhq', clientToken: `nov3-trigger-${i}` })
-        .expect(200)
-    }
-    const [r] = await db.select().from(referrals).where(eq(referrals.refereeId, REF_IDS[0]))
-    expect(r?.status).toBe('pending')
-    const [referrer] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REFERRER))
-    expect(referrer?.premiumUntil).toBeNull()
-  })
-
-  it("referee TELEFON ULADI — referrer mukofoti; referee qayta mukofotlanmaydi; raqam almashuvi qayta mukofot bermaydi", async () => {
-    // Referee welcome premium'i (init'da olgan) — keyin solishtiramiz
-    const [referee0] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REF_IDS[0]))
-    const refereeWelcomeUntil = referee0!.premiumUntil!.getTime()
-
-    const otp1 = await seedOTP('+998901234567')
-    await request(app)
-      .patch(`/api/users/${REF_IDS[0]}/phone`)
-      .send({ phone: '+998901234567', otp: otp1 })
-      .expect(200)
-
-    let [r] = await db.select().from(referrals).where(eq(referrals.refereeId, REF_IDS[0]))
-    expect(r?.status).toBe('rewarded')
-    expect(r?.rewardedAt).not.toBeNull()
-
-    // Referrer mukofoti
-    const [referrer] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REFERRER))
-    expect(referrer!.premiumUntil).not.toBeNull()
-    expect(referrer!.premiumUntil!.getTime()).toBeGreaterThan(Date.now())
-
-    // Referee welcome'dan keyin QO'SHIMCHA mukofot OLMADI (split — faqat referrer)
-    const [referee1] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REF_IDS[0]))
-    expect(referee1!.premiumUntil!.getTime()).toBe(refereeWelcomeUntil)
-
-    const referrerAfter = referrer!.premiumUntil!.getTime()
-
-    // Raqamni almashtirish — qayta mukofot YO'Q (status rewarded)
-    const otp2 = await seedOTP('+998909876543')
-    await request(app)
-      .patch(`/api/users/${REF_IDS[0]}/phone`)
-      .send({ phone: '+998909876543', otp: otp2 })
-      .expect(200)
-    ;[r] = await db.select().from(referrals).where(eq(referrals.refereeId, REF_IDS[0]))
-    expect(r?.status).toBe('rewarded')
-    const [referrer2] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, REFERRER))
-    expect(referrer2!.premiumUntil!.getTime()).toBe(referrerAfter)
+    expect(rows[0].status).toBe('rewarded')
   })
 
   it('GET /api/referrals/:userId — statistika (invited/rewarded/pending)', async () => {
@@ -270,7 +218,7 @@ describe('Referal tizimi (MB-5, v3 — split mukofot + telefon trigger)', () => 
     expect(res.body.invited).toBe(1)
     expect(res.body.rewarded).toBe(1)
     expect(res.body.pending).toBe(0)
-    expect(res.body.rewardDays).toBe(3)
+    expect(res.body.rewardDays).toBe(1)
     expect(res.body.cap).toBe(50)
   })
 })

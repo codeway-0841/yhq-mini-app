@@ -179,8 +179,8 @@ bot.command('start', async (ctx) => {
       console.warn(`[bot] ref start_param noto'g'ri id shaklida: ${param}`)
     } else {
       await ctx.reply(
-        "🚗 Do'stingiz sizni KIWI'ga taklif qilgani uchun mukofot beriladi!\n\n" +
-        "Ilovani oching — do'stingizga +3 kun Premium (sizga esa imtihonga to'liq tayyorlanish imkoniyati).",
+        "🚗 Do'stingiz sizni KIWI'ga taklif qildi!\n\n" +
+        "Ilovani oching va qulay tarzda o'rganishni boshlang!",
         { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
       )
     }

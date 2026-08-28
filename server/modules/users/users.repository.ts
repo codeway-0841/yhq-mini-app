@@ -18,29 +18,28 @@ export interface CreateOrUpdateUserInput {
 
 export const referralsRepository = {
   /**
-   * Yangi referal QAYDI + referee'ning WELCOME sovg'asi (+N kun premium) —
-   * BITTA atomik statement'da. Referee yangi o'quvchi: sovg'asini darhol oladi,
-   * test yechishga MAJBUR EMAS (darslarni Premium bilan o'rganadi).
-   *
-   * Referrer mukofoti alohida: referee REFERRAL_ELIGIBILITY_ANSWERS ta HAR XIL
-   * savol yechganda progress.repository'dagi CTE beradi (fake-akkaunt
-   * farming'i uchun real aktivlik talab qilinadi).
+   * Yangi referal QAYDI + Referrer mukofoti (+1 kun premium).
+   * Do'st Telegram orqali kirishi bilanoq ulashgan odamga (referrer) 1 kun Premium beriladi.
+   * Ulangan odam (referee) esa mukofot olmaydi.
    * referee UNIQUE — bir user faqat bir marta referal bo'la oladi.
    * @returns qayd yaratildimi (false = bu referee allaqachon bor)
    */
   async createPending(referrerId: string, refereeId: string): Promise<boolean> {
     const rows = await executeRows<{ created: boolean }>(sql`
       WITH inserted AS (
-        INSERT INTO referrals (referrer_id, referee_id)
-        VALUES (${referrerId}, ${refereeId})
+        INSERT INTO referrals (referrer_id, referee_id, status, rewarded_at)
+        VALUES (${referrerId}, ${refereeId}, 'rewarded', now())
         ON CONFLICT (referee_id) DO NOTHING
-        RETURNING id
-      ), welcome AS (
+        RETURNING id, referrer_id
+      ), rew AS (
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now()) + make_interval(days => ${REFERRAL_REWARD_DAYS}::int),
           updated_at = now()
-        WHERE id = ${refereeId}
-          AND EXISTS (SELECT 1 FROM inserted)
+        WHERE id IN (
+          SELECT i.referrer_id FROM inserted i
+          WHERE (SELECT COUNT(*) FROM referrals x
+                 WHERE x.referrer_id = i.referrer_id AND x.status = 'rewarded') <= ${REFERRAL_MAX_REWARDED}::int
+        )
         RETURNING id
       )
       SELECT EXISTS (SELECT 1 FROM inserted) AS created
