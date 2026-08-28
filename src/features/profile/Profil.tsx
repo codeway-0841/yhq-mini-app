@@ -5,11 +5,11 @@ import {
   Copy, Phone, Lock, Globe, CreditCard,
   RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X,
+  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X, Zap, Flame,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { api } from '../../shared/api'
+import { api, avatarSrcFor } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
@@ -27,6 +27,7 @@ import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
 import { getPlan, HIGHLIGHT_PLAN } from '../../../shared/premium-plans'
+import { levelFromXp } from '../../../shared/xp'
 
 /** Bot havolasi — barcha profil linklari shu bazadan quriladi */
 const BOT_URL = 'https://t.me/kiwi_uz_bot'
@@ -46,7 +47,10 @@ export default function Profil() {
   const setDisplayName = useAppStore((s) => s.setDisplayName)
   const customAvatar   = useAppStore((s) => s.customAvatar)
   const coins          = useAppStore((s) => s.coins)
+  const xp             = useAppStore((s) => s.xp)
+  const streak         = useAppStore((s) => s.streak)
   const tt = useT(settings.language)
+  const level = levelFromXp(xp)
 
   // ── Referal statistikasi (Profil kartasidagi "N do'st · +M kun" qatori) ──
   const [refStats, setRefStats] = useState<{ invited: number; rewarded: number; pending: number; rewardDays: number } | null>(null)
@@ -119,9 +123,12 @@ export default function Profil() {
     ?? (user ? `${user.firstName} ${user.lastName ?? ''}`.trim() : tt('guestName'))
   const userId = user?.id ?? '—'
 
-  const copyId = () => {
+  const copyId = (e?: React.MouseEvent) => {
+    e?.stopPropagation()
+    if (!user?.id || user.id === '0') return
     navigator.clipboard.writeText(String(userId)).catch(() => {})
     setCopied(true)
+    showToast(tt('idCopied'))
     setTimeout(() => setCopied(false), 1500)
   }
 
@@ -141,22 +148,73 @@ export default function Profil() {
       </div>
 
       {/* Page title */}
-      <h1 className="mb-6 px-5 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">{tt('profile')}</h1>
+      <h1 className="mb-4 px-5 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">{tt('profile')}</h1>
 
-      {/* Avatar + Name + ID */}
-      <div className="mb-7 flex flex-col items-center gap-2.5 px-5">
-        <Avatar name={name} photoUrl={user?.photoUrl}
-          onEditName={() => setShowNameEdit(true)}
-          onEditPhoto={() => setShowPhotoEdit(true)} />
-        <p className="mt-1 font-display text-[18px] font-semibold tracking-[-0.015em] text-pfg">{name}</p>
-        <button
-          type="button"
-          onClick={copyId}
-          className="flex h-8 items-center gap-1.5 rounded-control border border-pline bg-psurface px-3 text-[11px] tabular-nums text-pmuted transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <span>ID: {userId}</span>
-          {copied ? <Check size={11} strokeWidth={1.75} className="text-psuccess" /> : <Copy size={11} strokeWidth={1.75} />}
-        </button>
+      {/* ── Gorizontal Profil Kartasi ── */}
+      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4 transition-all duration-150">
+        {/* Avatar (chapda) */}
+        <Avatar
+          name={name}
+          photoUrl={avatarSrcFor(user) ?? undefined}
+          size="md"
+          onEditPhoto={() => setShowPhotoEdit(true)}
+        />
+
+        {/* Markaziy qism (Ism, ID, Nishonlar) */}
+        <div className="min-w-0 flex-1">
+          {/* Ism */}
+          <div className="flex items-center gap-1.5">
+            <p className="truncate font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg">
+              {name}
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowNameEdit(true)}
+              className="rounded p-0.5 text-psubtle transition-colors hover:text-pfg active:scale-95"
+              aria-label={tt('editProfile')}
+            >
+              <Pencil size={12} strokeWidth={1.75} />
+            </button>
+          </div>
+
+          {/* Id - 00458547 ❐ */}
+          <div className="mt-0.5 flex items-center">
+            <button
+              type="button"
+              onClick={copyId}
+              className="inline-flex items-center gap-1.5 rounded text-[12px] tabular-nums text-pmuted transition-colors hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
+              aria-label="ID nusxalash"
+            >
+              <span>Id - {userId}</span>
+              {copied ? (
+                <Check size={12} strokeWidth={2} className="text-psuccess" />
+              ) : (
+                <Copy size={12} strokeWidth={1.75} className="text-psubtle" />
+              )}
+            </button>
+          </div>
+
+          {/* Badges / Chips: Ilovaning o'z nishonlari (Level, Streak, Coins) */}
+          <div className="mt-2 flex flex-wrap items-center gap-1.5">
+            {/* 1. Daraja (Zap) */}
+            <span className="inline-flex items-center gap-1 rounded-full bg-pblue/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pblue">
+              <Zap size={11} className="fill-pblue/40 text-pblue" />
+              <span>Lv.{level}</span>
+            </span>
+
+            {/* 2. Seriya / Streak (Flame) */}
+            <span className="inline-flex items-center gap-1 rounded-full bg-orange-500/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-orange-500 dark:text-orange-400">
+              <Flame size={11} className="fill-orange-500/40 text-orange-500" />
+              <span>{streak}</span>
+            </span>
+
+            {/* 3. Tangalar (Coins) */}
+            <span className="inline-flex items-center gap-1 rounded-full bg-pgold/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pgold">
+              <Coins size={11} strokeWidth={2} className="text-pgold" />
+              <span>{coins}</span>
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* ── SIZNING TARIFINGIZ ── */}
