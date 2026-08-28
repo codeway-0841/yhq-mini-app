@@ -44,11 +44,11 @@ describe('ModesSheet', () => {
     expect(items[0]!.onClick).not.toHaveBeenCalled()
   })
 
-  it('yopish tugmasi onClose\'ni chaqiradi', () => {
+  it('orqaga (←) tugmasi onClose\'ni chaqiradi', () => {
     const onClose = vi.fn()
     render(<ModesSheet title="Rejimlar" items={makeItems()} onClose={onClose} />)
 
-    fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Orqaga' }))
     expect(onClose).toHaveBeenCalledTimes(1)
   })
 })

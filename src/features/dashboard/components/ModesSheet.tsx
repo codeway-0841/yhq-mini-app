@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { useT } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -12,8 +12,10 @@ export interface ModeItem {
 
 /**
  * ModesSheet — "Rejimlar" karuselidagi "Yana" bosilganda ochiladigan
- * to'liq panjara (payme/usluga tanlash uslubida 3-ustunli grid).
- * Karta bosilsa sheet yopilib, rejim navigatsiyasi ishga tushadi.
+ * TO'LIQ EKRAN panjara (xizmat tanlash sahifasi uslubida):
+ * ← back + sarlavha header + 3-ustunli grid. Karta bosilsa ekran
+ * yopilib, rejim navigatsiyasi ishga tushadi.
+ * DialogOverlay: Escape + focus-trap + scroll-lock shu yerda ham kafolatlangan.
  */
 export default function ModesSheet({ title, items, onClose }: {
   title: string
@@ -24,33 +26,33 @@ export default function ModesSheet({ title, items, onClose }: {
   const tt = useT(language)
 
   return (
-    <DialogOverlay onClose={onClose} labelId="modes-sheet-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-4 pb-8 max-h-[85dvh] overflow-y-auto">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-
-        <div className="flex items-center justify-between mb-4 px-1">
-          <p id="modes-sheet-title" className="font-display text-[17px] font-bold tracking-[-0.01em] text-pfg">
-            {title}
-          </p>
+    <DialogOverlay onClose={onClose} labelId="modes-sheet-title" position="center" className="!p-0" backdropClassName="hidden">
+      <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
+        {/* Header — ← back + sarlavha (rasmdagi kabi) */}
+        <div className="flex items-center gap-3 px-4 pt-4 pb-3 safe-top">
           <button
             type="button"
             onClick={onClose}
-            aria-label={tt('close')}
-            className="w-8 h-8 rounded-full bg-pcard border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+            aria-label={tt('backWord')}
+            className="w-10 h-10 rounded-full flex items-center justify-center text-pfg hover:bg-psurface active:scale-95 transition-all"
           >
-            <X size={16} strokeWidth={2.5} />
+            <ArrowLeft size={22} strokeWidth={2} />
           </button>
+          <p id="modes-sheet-title" className="text-[18px] font-semibold text-pfg">{title}</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-3">
-          {items.map((it) => (
-            <ModeGridCard
-              key={it.label}
-              icon={it.icon}
-              label={it.label}
-              onClick={() => { onClose(); it.onClick() }}
-            />
-          ))}
+        {/* 3-ustunli rejimlar panjarasi */}
+        <div className="flex-1 overflow-y-auto px-4 pb-8 safe-bottom">
+          <div className="grid grid-cols-3 gap-3">
+            {items.map((it) => (
+              <ModeGridCard
+                key={it.label}
+                icon={it.icon}
+                label={it.label}
+                onClick={() => { onClose(); it.onClick() }}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </DialogOverlay>
