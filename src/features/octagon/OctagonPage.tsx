@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { goBack, registerModal } from '../../shared/lib/navigation'
 import { DuelHeader }       from './components/DuelHeader'
 import { DuelBanners }      from './components/DuelBanners'
 import { IdleScreen }       from './components/IdleScreen'
@@ -17,6 +19,7 @@ import { useDuelConnection } from './hooks/useDuelConnection'
 import { cn } from '../../shared/lib/cn'
 
 export default function OctagonPage() {
+  const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS
   const user     = useAppStore((s) => s.user)
   const settings = useAppStore((s) => s.settings)
@@ -32,16 +35,55 @@ export default function OctagonPage() {
     useDuelConnection(user)
   const { timeLeft, roundPct } = useOctagonClock(s.deadline)
 
+  // Qidiruv holatida orqaga bosilsa qidiruvni bekor qilib Duel boshiga qaytish
+  useEffect(() => {
+    if (s.phase !== 'searching') return
+    const id = Symbol('duel-searching')
+    const unregister = registerModal(id, () => {
+      cancelSearch()
+    })
+    return () => {
+      unregister()
+    }
+  }, [s.phase, cancelSearch])
+
+  // O'yin tugagan natija ekranida orqaga bosilsa Duel boshiga qaytish
+  useEffect(() => {
+    if (s.phase !== 'match_end') return
+    const id = Symbol('duel-match-end')
+    const unregister = registerModal(id, () => {
+      exitToIdle()
+    })
+    return () => {
+      unregister()
+    }
+  }, [s.phase, exitToIdle])
+
   const currentQ = s.currentQuestionId !== null
     ? questions.find((q) => q.id === s.currentQuestionId) ?? null
     : null
 
   const isLiveMatch = s.phase === 'in_round' || s.phase === 'matched' || s.phase === 'match_end'
 
+  const handleHeaderBack = () => {
+    if (s.phase === 'searching') {
+      cancelSearch()
+    } else if (s.phase === 'match_end') {
+      exitToIdle()
+    } else {
+      goBack(navigate)
+    }
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-canvas relative pb-6">
-      <DuelHeader title={tt('octagonTitle')} inRound={s.phase === 'in_round'}
-        yourScore={s.yourScore} oppScore={s.oppScore} />
+      <DuelHeader
+        title={tt('octagonTitle')}
+        inRound={s.phase === 'in_round'}
+        yourScore={s.yourScore}
+        oppScore={s.oppScore}
+        onBack={handleHeaderBack}
+      />
 
       <DuelBanners toastMsg={s.toastMsg} conn={conn} phase={s.phase}
         oppWait={s.oppWait} onRetry={retryConnect} />

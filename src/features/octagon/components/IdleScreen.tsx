@@ -6,6 +6,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { shareUrl } from '../../../platform/telegram'
 import { cn } from '../../../shared/lib/cn'
+import { registerModal } from '../../../shared/lib/navigation'
 import { getDuelHistory, type DuelHistoryRecord } from '../duel-history'
 import { DuelLeaderboardView } from './DuelLeaderboardView'
 
@@ -102,6 +103,18 @@ export function IdleScreen({
       onRefreshOnline?.()
     }
   }, [subview, onRefreshOnline])
+
+  // Subview ochiq bo'lsa (Reyting, Janglarim, Onlayn, Taklif) — orqaga bosilganda Duel boshiga qaytadi
+  useEffect(() => {
+    if (!subview) return
+    const id = Symbol(`duel-subview-${subview}`)
+    const unregister = registerModal(id, () => {
+      setSubview(null)
+    })
+    return () => {
+      unregister()
+    }
+  }, [subview])
 
   // Haqiqiy JONLI online o'yinchilar (WebSocket serverdan real-time keladi)
   const effectiveOnlineUsers = onlinePlayers
