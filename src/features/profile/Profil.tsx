@@ -22,7 +22,7 @@ import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet } from './components/EditSheets'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { CertificateModal } from '../test'
-import { AchievementsSection } from './components/AchievementsSection'
+import { AchievementsItem } from './components/AchievementsSection'
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
@@ -261,23 +261,7 @@ export default function Profil() {
           onPress={() => openTelegramLink(BOT_URL)} />
       </Section>
 
-      {/* ── DO'KON (#40) — coin balansi + do'kon sahifasiga o'tish ── */}
-      <Section title={tt('shopTitle').toUpperCase()}>
-        <Item
-          icon={Coins}
-          label={tt('shopMenuItem')}
-          right={
-            <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums text-pgold">
-              <Coins size={14} strokeWidth={1.75} />
-              {coins}
-              <ChevronRight size={15} strokeWidth={1.75} className="text-psubtle" />
-            </span>
-          }
-          onPress={() => navigate('/shop')}
-        />
-      </Section>
-
-      {/* ── REFERAL: do'st taklif = +3 kun Premium ── */}
+      {/* ── REFERAL: do'st taklif = +1 kun Premium ── */}
       <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard px-4 py-3.5">
         <Share2 size={22} strokeWidth={1.75} className="shrink-0 text-pprimary" />
         <div className="min-w-0 flex-1">
@@ -304,9 +288,6 @@ export default function Profil() {
       {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
       <LinkAccountSection />
 
-      {/* ── YUTUQLAR (server metrikalari asosidagi badge'lar) ── */}
-      <AchievementsSection lang={settings.language} tt={tt} userId={user?.id} />
-
       {/* ── ADMIN (faqat is_admin foydalanuvchilariga ko'rinadi) ── */}
       {user?.isAdmin && (
         <Section title="ADMIN">
@@ -321,6 +302,23 @@ export default function Profil() {
 
       {/* ── UMUMIY ── */}
       <Section title={tt('generalSection')}>
+        {/* Do'kon (#40) — coin balansi + do'kon sahifasiga o'tish */}
+        <Item
+          icon={Coins}
+          label={tt('shopMenuItem')}
+          right={
+            <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums text-pgold">
+              <Coins size={14} strokeWidth={1.75} />
+              {coins}
+              <ChevronRight size={15} strokeWidth={1.75} className="text-psubtle" />
+            </span>
+          }
+          onPress={() => navigate('/shop')}
+        />
+
+        {/* Yutuqlar (server metrikalari asosidagi badge'lar) */}
+        <AchievementsItem lang={settings.language} tt={tt} userId={user?.id} />
+
         <Item icon={Globe} label={tt('langLabel')}
           right={<span className="text-[12px] text-pmuted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
           onPress={() => setShowLangPicker(true)} />
