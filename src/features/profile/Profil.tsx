@@ -56,6 +56,11 @@ export default function Profil() {
     api.getReferrals(uid).then(setRefStats).catch(() => {})
   }, [user?.id])
 
+  // Avatar yuklash (mutation, ~100KB body) cold start'ga urilib timeout bo'lmasligi
+  // uchun backend'ni OLDINDAN isitamiz — user rasm tanlaguncha server uyg'onadi
+  // (TestPage/SpeedPage'dagi warmUp pattern'i, qarang: shared/api warmUp izohi).
+  useEffect(() => { api.warmUp() }, [])
+
   // Offline Sync Center: serverga yetmagan mutation'lar soni (0 bo'lsa yashirin)
   const syncUserId = user?.id ?? ''
   const syncPending = useSyncExternalStore(onOutboxChange, () => getOutboxCount(syncUserId))

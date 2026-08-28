@@ -460,13 +460,15 @@ export const api = {
   updatePhone: (userId: string, phone: string, otp: string) =>
     request<{ ok: true }>('PATCH', `/users/${uid(userId)}/phone`, { phone, otp }),
 
-  /** Custom avatar yuklash (256px WebP data URL) — server global manba bo'ladi. */
+  /** Custom avatar yuklash (256px WebP/JPEG data URL) — server global manba bo'ladi.
+   *  Timeout 20s: ~100KB'lik body sekin mobil uplink + Vercel/Neon cold start'da
+   *  default 8s'ga sig'may qolardi — user "aloqa xatosi" ko'rardi. */
   uploadAvatar: (userId: string, image: string) =>
-    request<{ ok: true }>('PUT', `/users/${uid(userId)}/avatar`, { image }),
+    request<{ ok: true }>('PUT', `/users/${uid(userId)}/avatar`, { image }, 20_000),
 
   /** Custom avatarni o'chirish (harf/TG avatar fallback'ga qaytish). */
   removeAvatar: (userId: string) =>
-    request<{ ok: true }>('DELETE', `/users/${uid(userId)}/avatar`),
+    request<{ ok: true }>('DELETE', `/users/${uid(userId)}/avatar`, undefined, 20_000),
 
   /** 3 kunlik bepul Premium trial (FAQAT 1 marta — backend tekshiradi) */
   startTrial: (userId: string) =>
