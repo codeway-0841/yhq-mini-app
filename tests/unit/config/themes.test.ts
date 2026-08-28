@@ -33,8 +33,8 @@ describe('config/themes — data integrity', () => {
       expect(t.card).toMatch(/^#[0-9a-f]{6}$/i)
       expect(t.label.uz.trim()).not.toBe('')
       expect(t.label.ru.trim()).not.toBe('')
-      // Sifati: total temalar 8-20 ta (30 ta oddiy tema EMAS; #40 coin-eksklyuziv: crimson/royal/arctic)
-      expect(ACCENT_THEMES.length).toBeLessThanOrEqual(20)
+      // Sifati: total temalar 8-25 ta (#40 coin-eksklyuziv: crimson/royal/arctic, claude AI)
+      expect(ACCENT_THEMES.length).toBeLessThanOrEqual(25)
     }
   })
 

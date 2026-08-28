@@ -538,6 +538,19 @@ body[data-theme='dark'][data-accent='payme'] {
   --p-primary: #00b0b9; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
+/* Claude AI — Anthropic Terracotta & iliq qora atmosfera (#131312 canvas / #1e1e1d card) */
+body[data-theme='dark'][data-accent='claude'] {
+  --p-fg: #f5f5f4; --p-muted: #a8a29e; --p-subtle: #78716c;
+  --theme-fg: #f5f5f4; --theme-fg-muted: #a8a29e; --theme-fg-subtle: #78716c;
+  --p-primary: #d97757; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 217 119 87;
+  --p-purple: #d97757; --p-purple-rgb: 217 119 87;
+  --p-canvas: #131312; --p-surface: #262624; --p-card: #1e1e1d; --p-line: rgba(255,255,255,0.08);
+  --p-line-strong: rgba(255,255,255,0.16);
+  --theme-canvas: #131312; --theme-surface: #262624; --theme-elevated: #1e1e1d;
+  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --theme-shadow: rgba(0,0,0,0.6);
+}
+
 /* Cupertino (Apple iOS & OLED) — toza OLED qora va Apple System Blue */
 body[data-theme='dark'][data-accent='cupertino'] {
   --p-fg: #f5f5f7; --p-muted: #86868b; --p-subtle: #636366;
@@ -705,6 +718,14 @@ body[data-theme='light'][data-accent='payme'] {
   --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #ecf5f6; --theme-surface: #d4ecee; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='claude'] {
+  --p-primary: #c15f3e; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 193 95 62;
+  --p-canvas: #faf9f5; --p-surface: #f3f1eb; --p-card: #ffffff;
+  --p-line: #e7e5df; --p-line-strong: #d6d3cb;
+  --p-fg: #1c1917; --p-muted: #57534e; --p-subtle: #a8a29e;
+  --theme-canvas: #faf9f5; --theme-surface: #f3f1eb; --theme-elevated: #ffffff;
+  --theme-line: #e7e5df; --theme-line-strong: #d6d3cb;
 }
 body[data-theme='light'][data-accent='cupertino'] {
   --p-primary: #007aff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 122 255;

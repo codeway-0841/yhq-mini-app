@@ -80,6 +80,7 @@ export const SHOP_ITEMS = [
   { id: 'sakura',   kind: 'accent-theme', price: 1600 },
   { id: 'gold',     kind: 'accent-theme', price: 1600 },
   { id: 'payme',    kind: 'accent-theme', price: 1600 },
+  { id: 'claude',      kind: 'accent-theme', price: 1600 },
   { id: 'cupertino',   kind: 'accent-theme', price: 1600 },
   { id: 'titanium',    kind: 'accent-theme', price: 1600 },
   { id: 'deeppurple',  kind: 'accent-theme', price: 1600 },
