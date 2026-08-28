@@ -16,6 +16,14 @@ import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
+import TelegramQrSheet from './components/TelegramQrSheet'
+
+/** Mobil brauzer = Telegram app o'rnatilgan bo'lishi ehtimoli yuqori → to'g'ridan-to'g'ri ochamiz.
+ *  Desktop = Telegram Desktop bo'lmasligi mumkin → QR kod variantini ko'rsatamiz. */
+function isMobileBrowser() {
+  if (typeof navigator === 'undefined') return false
+  return /Android|iPhone|iPad|iPod|Mobile|webOS/i.test(navigator.userAgent)
+}
 
 /**
  * LoginPage — mehmon rejim YO'Q: initData'siz (APK/brauzer) foydalanuvchi
@@ -39,6 +47,7 @@ export default function LoginPage() {
   const showTelegramLogin = !getTelegramUser() && Boolean(config.botUsername)
   const [telegramLoginUrl, setTelegramLoginUrl] = useState<string | null>(null)
   const [telegramLoginCode, setTelegramLoginCode] = useState<string | null>(null)
+  const [qrOpen, setQrOpen] = useState(false)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   /** Login/register/link muvaffaqiyatining YAGONA hydrate yo'li (App boot bilan bir xil). */
@@ -119,6 +128,7 @@ export default function LoginPage() {
           if (pollRef.current) clearInterval(pollRef.current)
           setTelegramLoginCode(null)
           setTelegramLoginUrl(null)
+          setQrOpen(false)
           setError(tt('authCodeExpired'))
         }
       } catch { /* ignore polling errors */ }
@@ -135,7 +145,13 @@ export default function LoginPage() {
       if (res.url) {
         setTelegramLoginUrl(res.url)
         setTelegramLoginCode(res.code)
-        window.open(res.url, '_blank')
+        // Desktop'da Telegram app bo'lmasligi mumkin — QR kodli variant ochamiz;
+        // mobilda Telegram app borligi deyarli kafolatlangan → to'g'ridan-to'g'ri ochamiz.
+        if (isMobileBrowser()) {
+          window.open(res.url, '_blank')
+        } else {
+          setQrOpen(true)
+        }
       } else {
         setError(tt('authTelegramNotConfigured'))
       }
@@ -379,13 +395,22 @@ export default function LoginPage() {
                   <p className="text-[12px] text-pmuted text-center">
                     {tt('authTgSharePhone')}
                   </p>
+                  {!isMobileBrowser() && (
+                    <button
+                      type="button"
+                      onClick={() => setQrOpen(true)}
+                      className="text-[12px] font-semibold text-[#0088cc] hover:underline"
+                    >
+                      {tt('authQrTitle')}
+                    </button>
+                  )}
                   <a
                     href={telegramLoginUrl!}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[12px] text-[#0088cc] hover:underline"
                   >
-                    Botni ochish
+                    {tt('authQrOpenBot')}
                   </a>
                 </div>
               ) : (
@@ -406,6 +431,9 @@ export default function LoginPage() {
         </div>
       </div>
 
+      {qrOpen && telegramLoginUrl && (
+        <TelegramQrSheet url={telegramLoginUrl} onClose={() => setQrOpen(false)} />
+      )}
     </div>
   )
 }
