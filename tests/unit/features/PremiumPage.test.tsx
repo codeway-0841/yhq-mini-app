@@ -98,10 +98,11 @@ describe('PremiumPage', () => {
     expect(screen.getByText(/3 kun qoldi/)).toBeInTheDocument()
   })
 
-  it('muddatsiz premium — "Umrbod faol"', () => {
+  it('muddatsiz premium — "Obuna faol · umrbod" holat qatori', () => {
     useAppStore.setState({ tariff: 'premium', user: { id: '12345', firstName: 'Ali' } as never })
     render(<PremiumPage />)
 
-    expect(screen.getByText(/Umrbod faol/)).toBeInTheDocument()
+    expect(screen.getByText(/Obuna faol/)).toBeInTheDocument()
+    expect(screen.getByText(/umrbod/)).toBeInTheDocument()
   })
 })

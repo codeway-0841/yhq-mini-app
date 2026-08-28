@@ -9,9 +9,10 @@
  *    premium → syncFromServer (tariff/premium_until o'zgarishi).
  */
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { X, Coins, Crown, Loader2, Sparkles } from 'lucide-react'
+import { X, Coins, Crown, Loader2, Sparkles, Target } from 'lucide-react'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import Confetti from '../../shared/components/Confetti'
+import { Button } from '../../shared/components/ui/button'
 import { api, ApiError } from '../../shared/api'
 import { SPIN_SEGMENTS, getSpinSegment, type SpinSegment } from '../../../shared/lucky-spin'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -24,8 +25,8 @@ const SEG_COUNT = SPIN_SEGMENTS.length
 const SEG_ANGLE = 360 / SEG_COUNT
 const SPIN_MS = 4500
 
-/** Segment label: coins → "+N", premium → "👑 24h" */
-const segLabel = (s: SpinSegment) => (s.kind === 'coins' ? `+${s.amount}` : '👑 24h')
+/** Segment label: coins → "+N", premium → "24h" (Crown ikonkasi alohida chiziladi) */
+const segLabel = (s: SpinSegment) => (s.kind === 'coins' ? `+${s.amount}` : '24h')
 
 type Phase = 'loading' | 'idle' | 'requesting' | 'spinning' | 'done' | 'used'
 
@@ -261,7 +262,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
                           fontSize="13px"
                           style={{ filter: 'drop-shadow(0 2px 3px rgba(0,0,0,0.9))', fontFamily: 'var(--font-sans)' }}
                         >
-                          👑 VIP
+                          VIP
                         </text>
                         <text
                           x="150"
@@ -323,9 +324,11 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               {/* 5. Markaziy 3D Oltin Hub */}
               <circle cx="150" cy="150" r="26" fill="url(#centerHubGold)" stroke="#ffffff" strokeWidth="2" style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.4))' }} />
               <circle cx="150" cy="150" r="20" fill="#92400e" opacity="0.4" />
-              <text x="150" y="156" textAnchor="middle" fontSize="18px">
-                🎁
-              </text>
+              {/* Lucide crown (emoji o'rniga vektor) */}
+              <g transform="translate(150 150) scale(1.05) translate(-12 -12)" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                <path d="M5 21h14" />
+              </g>
             </svg>
           </div>
         </div>
@@ -339,7 +342,8 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
           {phase === 'loading' && <Loader2 size={20} className="animate-spin text-psubtle" />}
           {phase === 'idle' && !error && (
             <p className="text-[12.5px] font-semibold text-pmuted flex items-center gap-1.5">
-              <span>🎯</span> {lang === 'ru' ? 'Вращайте и выигрывайте призы!' : 'Aylantiring va sovrin yuting!'}
+              <Target size={14} strokeWidth={1.75} className="text-psubtle" />
+              {lang === 'ru' ? 'Вращайте и выигрывайте призы!' : 'Aylantiring va sovrin yuting!'}
             </p>
           )}
           {phase === 'spinning' && (
@@ -354,7 +358,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               </p>
               {result && (
                 <div
-                  className="mt-1 flex items-center justify-center gap-1.5 text-[22px] font-black"
+                  className="mt-1 flex items-center justify-center gap-1.5 text-[22px] font-bold tabular-nums"
                   style={{ color: result.kind === 'coins' ? 'var(--p-gold)' : 'var(--p-purple)' }}
                 >
                   {result.kind === 'coins' ? (
@@ -376,18 +380,17 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               <p className="text-[12px] font-semibold text-pmuted">{tt('spinUsed')}</p>
             </div>
           ) : (
-            <button
-              onClick={spin}
+            <Button
+              variant="gold"
+              block
+              size="lg"
+              loading={busy}
               disabled={busy || phase === 'loading'}
-              className="w-full flex items-center justify-center gap-2 rounded-control bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 py-3 text-[14px] font-bold text-white shadow-lg shadow-amber-500/20 transition-all duration-150 active:scale-[0.98] disabled:opacity-50"
+              onClick={spin}
             >
-              {busy ? <Loader2 size={18} className="animate-spin" /> : (
-                <>
-                  <Sparkles size={16} />
-                  <span>{tt('spinButton')}</span>
-                </>
-              )}
-            </button>
+              <Sparkles size={16} strokeWidth={1.75} />
+              {tt('spinButton')}
+            </Button>
           )}
         </div>
       </div>

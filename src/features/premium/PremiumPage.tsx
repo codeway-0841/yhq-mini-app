@@ -1,13 +1,13 @@
 /**
  * Premium sahifasi — obuna showcase.
- *  - Hero: gold Crown + sarlavha
- *  - Imkoniyatlar ro'yxati (semantik ikonlar)
+ *  - Ixcham status kartasi (oltin chip + sarlavha; faol obuna — bitta qator)
+ *  - Imkoniyatlar ro'yxati (ikonkalar NEYTRAL — rang intizomi, qoida 8)
  *  - Premium temalar showcase (src/config/themes.ts dan — YAGONA MANBA)
  *  - CTA → Telegram bot (to'lov Telegram Stars orqali)
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Loader2, Star, Ticket } from 'lucide-react'
+import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Star, Ticket } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -19,13 +19,14 @@ import { track } from '../../shared/lib/analytics'
 import Confetti from '../../shared/components/Confetti'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import PaymentMethodModal from './components/PaymentMethodModal'
+import { Button } from '../../shared/components/ui/button'
 
 const BENEFITS = [
-  { icon: Sparkles,   color: 'var(--p-gold)',    uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
-  { icon: Bot,        color: 'var(--p-purple)',  uz: 'AI Tutor — chuqur tushuntirishlar', ru: 'ИИ-тьютор — подробные объяснения' },
-  { icon: Palette,    color: 'var(--p-primary)', uz: `${ACCENT_THEMES.filter((t) => t.premium).length} ta eksklyuziv tema`, ru: `${ACCENT_THEMES.filter((t) => t.premium).length} эксклюзивных тем` },
-  { icon: HeartCrack, color: 'var(--p-danger)',  uz: "Xatolar bo'yicha chuqur tahlil",       ru: 'Глубокий анализ ошибок' },
-  { icon: Zap,        color: 'var(--p-blue)',    uz: 'Cheksiz mashq rejimlari',            ru: 'Безлимитные режимы практики' },
+  { icon: Sparkles,   uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
+  { icon: Bot,        uz: 'AI Tutor — chuqur tushuntirishlar', ru: 'ИИ-тьютор — подробные объяснения' },
+  { icon: Palette,    uz: `${ACCENT_THEMES.filter((t) => t.premium).length} ta eksklyuziv tema`, ru: `${ACCENT_THEMES.filter((t) => t.premium).length} эксклюзивных тем` },
+  { icon: HeartCrack, uz: "Xatolar bo'yicha chuqur tahlil",       ru: 'Глубокий анализ ошибок' },
+  { icon: Zap,        uz: 'Cheksiz mashq rejimlari',            ru: 'Безлимитные режимы практики' },
 ]
 
 export default function PremiumPage() {
@@ -74,66 +75,57 @@ export default function PremiumPage() {
       {/* Header */}
       <div className="flex items-center gap-2 px-5 pt-5 pb-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
-          <ChevronLeft size={24} />
+          className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-lg font-semibold tracking-tight">Premium</h1>
       </div>
 
-      {/* Hero — dark glass + oltin */}
-      <div className="mx-5 mt-2 rounded-[28px] p-6 text-center relative overflow-hidden"
-        style={{
-          background: 'linear-gradient(160deg, rgb(var(--p-gold-rgb) / 0.10) 0%, var(--p-card) 55%)',
-          border: '1px solid rgb(var(--p-gold-rgb) / 0.30)',
-        }}>
-        <div className="w-16 h-16 mx-auto rounded-container flex items-center justify-center mb-4"
-          style={{
-            background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
-          }}>
-          <Crown size={28} strokeWidth={1.75} className="text-pongold" />
+      {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
+      <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
+        <div className="flex items-center gap-3">
+          <div className="flex size-12 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
+            <Crown size={22} strokeWidth={1.75} className="text-pgold" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <h2 className="text-[16px] font-semibold tracking-tight">KIWI Premium</h2>
+            <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
+              {lang === 'ru'
+                ? 'Все возможности без ограничений — в одной подписке'
+                : 'Barcha imkoniyatlar — bitta obunada, cheksiz'}
+            </p>
+          </div>
         </div>
-        <h2 className="text-[24px] font-semibold tracking-tight">KIWI Premium</h2>
-        <p className="text-[13px] text-pmuted mt-1.5 leading-relaxed max-w-[260px] mx-auto">
-          {lang === 'ru'
-            ? 'Все возможности без ограничений — в одной подписке'
-            : 'Barcha imkoniyatlar — bitta obunada, cheksiz'}
-        </p>
         {isPremium && (
-          <div className="mt-4 flex flex-col items-center gap-1">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold"
-              style={{
-                background: 'rgb(var(--p-success-rgb) / 0.15)',
-                border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
-                color: 'var(--p-success)',
-              }}>
-              <Check size={13} /> {lang === 'ru' ? 'Подписка активна' : 'Obuna faol'}
+          <div className="mt-3 flex items-center gap-1.5 border-t border-pline pt-3 text-[12px]">
+            <Check size={13} strokeWidth={2} className="flex-none text-psuccess" />
+            <span className="font-semibold text-psuccess">
+              {lang === 'ru' ? 'Подписка активна' : 'Obuna faol'}
             </span>
-            {user?.premiumUntil ? (
-              <span className="text-[11.5px] text-pmuted font-medium">
-                {(() => {
-                  const days = Math.max(0, Math.ceil((new Date(user.premiumUntil).getTime() - Date.now()) / (24 * 60 * 60 * 1000)))
-                  if (days === 0) return lang === 'ru' ? 'Заканчивается сегодня' : 'Bugun tugaydi'
-                  return lang === 'ru' ? `Осталось ${days} дн.` : `${days} kun qoldi`
-                })()}
-              </span>
-            ) : (
-              <span className="text-[11.5px] text-pgold font-medium">
-                {lang === 'ru' ? 'Навсегда' : 'Umrbod faol'}
-              </span>
-            )}
+            <span className="text-pmuted">
+              · {user?.premiumUntil
+                ? (() => {
+                    const days = Math.max(0, Math.ceil((new Date(user.premiumUntil).getTime() - Date.now()) / (24 * 60 * 60 * 1000)))
+                    if (days === 0) return lang === 'ru' ? 'заканчивается сегодня' : 'bugun tugaydi'
+                    return lang === 'ru' ? `осталось ${days} дн.` : `${days} kun qoldi`
+                  })()
+                : (lang === 'ru' ? 'навсегда' : 'umrbod')}
+            </span>
           </div>
         )}
       </div>
 
       {/* Imkoniyatlar */}
-      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard divide-y divide-pline">
+      <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
+        {lang === 'ru' ? 'Возможности' : 'Imkoniyatlar'}
+      </p>
+      <div className="mx-5 rounded-container border border-pline bg-pcard divide-y divide-pline">
         {BENEFITS.map((b, i) => (
-          <div key={i} className="flex items-center gap-3.5 px-4 py-3.5">
-            <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"
-              style={{ background: `${b.color}1A`, border: `1px solid ${b.color}33` }}>
-              <b.icon size={18} style={{ color: b.color }} />
+          <div key={i} className="flex items-center gap-3 px-4 py-3">
+            <div className="flex size-8 flex-none items-center justify-center rounded-[10px] border border-pline bg-psurface">
+              <b.icon size={15} strokeWidth={1.75} className="text-pmuted" />
             </div>
-            <span className="text-[13.5px] font-semibold text-pfg">{lang === 'ru' ? b.ru : b.uz}</span>
+            <span className="text-[14px] text-pfg">{lang === 'ru' ? b.ru : b.uz}</span>
           </div>
         ))}
       </div>
@@ -144,16 +136,15 @@ export default function PremiumPage() {
       </p>
       <div className="flex gap-3 px-5 overflow-x-auto pb-2 scroll-smooth-x">
         {premiumThemes.map((t) => (
-          <div key={t.id} className="flex-none w-[110px]">
-            <div className="h-[72px] rounded-container overflow-hidden border border-pline relative"
+          <div key={t.id} className="flex-none w-[104px]">
+            <div className="h-[64px] rounded-container overflow-hidden border border-pline relative"
               style={{ background: t.bg }}>
-              <div className="absolute left-2 right-2 top-2 h-6 rounded-lg"
+              <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
                 style={{ background: t.card, border: `1px solid ${t.color}4d` }} />
-              <span className="absolute bottom-2 left-2 w-8 h-2 rounded-full"
+              <span className="absolute bottom-2 left-2 w-7 h-1.5 rounded-full"
                 style={{ background: t.color }} />
-              <Crown size={12} strokeWidth={1.75} className="absolute right-2 top-2 text-pgold" />
             </div>
-            <p className="text-[11px] font-semibold text-pmuted mt-1.5 text-center truncate">
+            <p className="text-[11px] font-medium text-pmuted mt-1.5 text-center truncate">
               {t.label[lang]}
             </p>
           </div>
@@ -162,12 +153,11 @@ export default function PremiumPage() {
 
       {/* 3 kunlik BEPUL trial — 1 marta */}
       {!isPremium && !trialDone && (
-        <div className="mx-5 mt-4">
-          <button onClick={startTrial} disabled={trialBusy}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control flex h-[52px] w-full items-center justify-center gap-2 text-[15px] font-semibold disabled:opacity-40">
-            {trialBusy ? <Loader2 size={19} strokeWidth={1.75} className="motion-safe:animate-spin" /> : <Gift size={19} />}
+        <div className="mx-5 mt-5">
+          <Button block size="lg" loading={trialBusy} onClick={startTrial}>
+            <Gift size={18} strokeWidth={1.75} />
             {lang === 'ru' ? '3 дня Premium — бесплатно' : '3 kun Premium — bepul'}
-          </button>
+          </Button>
           {trialError && (
             <p className="text-center text-[11.5px] text-pwarning font-medium mt-2">{trialError}</p>
           )}
@@ -194,21 +184,21 @@ export default function PremiumPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
             {lang === 'ru' ? 'Выберите тариф' : 'Tarifni tanlang'}
           </p>
-          <div className="mx-5 flex flex-col gap-3">
+          <div className="mx-5 flex flex-col gap-2.5">
             {PREMIUM_PLANS.map((plan) => {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (
                 <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
-                  className="rounded-container border border-pline bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-transform"
-                  style={highlight ? { borderColor: 'var(--p-gold)' } : undefined}>
+                  className={`rounded-container border bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-transform ${
+                    highlight ? 'border-pprimary' : 'border-pline'
+                  }`}>
                   {highlight && (
-                    <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full bg-pgold px-2.5 py-1 text-[9.5px] font-semibold uppercase tracking-wide text-pongold">
-                      <Star size={9} strokeWidth={2} />
+                    <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full border border-[rgb(var(--p-primary-rgb)/0.35)] bg-pwash px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-pprimary">
                       {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
                     </span>
                   )}
                   <div className="flex items-center justify-between gap-3">
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-[15px] font-semibold text-pfg">
                         {lang === 'ru' ? plan.titleRu : plan.titleUz}
                       </p>
@@ -216,13 +206,14 @@ export default function PremiumPage() {
                         {lang === 'ru' ? plan.periodRu : plan.periodUz}
                       </p>
                     </div>
-                    <div className="text-right flex-shrink-0">
-                      <span className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-1.5 rounded-control text-[13px] inline-block font-semibold">
+                    <div className="text-right flex-none">
+                      <p className="text-[14px] font-semibold text-pfg tabular-nums">
                         {formatUzs(plan.priceUzs, lang)}
-                      </span>
-                      <span className="text-[10px] text-pmuted block mt-0.5">
-                        ⭐ {plan.stars} Stars
-                      </span>
+                      </p>
+                      <p className="mt-0.5 flex items-center justify-end gap-1 text-[11px] text-pmuted tabular-nums">
+                        <Star size={10} strokeWidth={1.75} className="text-pgold" fill="currentColor" />
+                        {plan.stars} Stars
+                      </p>
                     </div>
                   </div>
                 </button>

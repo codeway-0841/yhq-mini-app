@@ -19,10 +19,10 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
 }) {
   return (
     <DialogOverlay onClose={onClose} labelId="picker-title">
-      <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8">
-        <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5" />
+      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-4 pb-8">
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
 
-        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-black mb-5 text-fg">
+        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-semibold mb-5 text-pfg">
           <span className="text-pprimary">{titleIcon}</span>
           {title}
         </p>
@@ -34,26 +34,26 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
               <button
                 key={opt.value}
                 onClick={() => { onSelect(opt.value); onClose() }}
-                className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+                className={`flex items-center gap-3 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                   selected
                     ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]'
-                    : 'border-line bg-canvas active:border-lineStrong'
+                    : 'border-pline bg-pcanvas active:border-plineStrong'
                 }`}
               >
                 {opt.icon && (
-                  <div className="w-10 h-10 rounded-full bg-elevated flex items-center justify-center flex-none">
+                  <div className="w-10 h-10 rounded-full bg-pcard border border-pline flex items-center justify-center flex-none">
                     {opt.icon}
                   </div>
                 )}
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-bold text-fg">
+                  <p className="text-sm font-semibold text-pfg">
                     {opt.label}
                   </p>
                   {opt.desc && (
-                    <p className="text-[11px] text-muted mt-0.5">{opt.desc}</p>
+                    <p className="text-[11px] text-pmuted mt-0.5">{opt.desc}</p>
                   )}
                 </div>
-                {selected && <Check size={18} className="text-pprimary flex-none" />}
+                {selected && <Check size={18} strokeWidth={2} className="text-pprimary flex-none" />}
               </button>
             )
           })}

@@ -9,12 +9,15 @@ import { playSound } from '../../shared/lib/sounds'
 import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import { Button } from '../../shared/components/ui/button'
 import { drawCertificate } from './certificate-canvas'
 
 interface CertificateModalProps {
   score: number
   total: number
   percent: number
+  /** true — Profil'dagi ko'rgazmali namuna: yuborish/ulashish o'chiq, "Namuna" badge */
+  sample?: boolean
   onClose: () => void
 }
 
@@ -30,7 +33,7 @@ function dataUrlToBlob(dataUrl: string): Blob {
   return new Blob([u8arr], { type: mime })
 }
 
-export default function CertificateModal({ score, total, percent, onClose }: CertificateModalProps) {
+export default function CertificateModal({ score, total, percent, sample = false, onClose }: CertificateModalProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const [copied, setCopied] = useState(false)
   const [sendingBot, setSendingBot] = useState(false)
@@ -46,7 +49,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
   const subjectName = lang === 'ru' ? (subject?.nameRu ?? 'ПДД') : (subject?.name ?? 'Yo‘l Harakati Qoidalari')
 
   const certIdRef = useRef(`KIWI-${(user?.id ?? 'GUEST').slice(-5).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`)
-  const certId = certIdRef.current
+  const certId = sample ? 'NAMUNA' : certIdRef.current
 
   const formattedDate = new Intl.DateTimeFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ', {
     day: '2-digit',
@@ -175,7 +178,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-container border border-pline bg-pcard rounded-container p-5 border border-plineStrong max-h-[92vh] overflow-y-auto flex flex-col items-center">
+      <div className="relative w-full max-w-lg rounded-container border border-plineStrong bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -189,6 +192,11 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
         <div className="flex items-center gap-2 mb-3 mt-1">
           <Award className="text-pgold" size={24} />
           <h3 id="certificate-title" className="text-base font-semibold text-pfg">{tt('certOfficialTitle')}</h3>
+          {sample && (
+            <span className="rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold">
+              {tt('certSampleBadge')}
+            </span>
+          )}
         </div>
 
         {/* Direct High-Resolution Canvas Display */}
@@ -200,7 +208,8 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           />
         </div>
 
-        {/* Certificate Metadata Pill */}
+        {/* Certificate Metadata Pill — namunada yashirin */}
+        {!sample && (
         <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-container bg-psurface border border-pline mb-3 text-xs font-semibold text-pmuted">
           <span className="truncate">ID: <span className="font-mono text-pfg">{certId}</span></span>
           <button
@@ -211,6 +220,7 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
             <span>{copied ? tt('copied') : tt('copy')}</span>
           </button>
         </div>
+        )}
 
         {/* Bot Sent Success Alert */}
         {botSentSuccess && (
@@ -228,45 +238,58 @@ export default function CertificateModal({ score, total, percent, onClose }: Cer
           </div>
         )}
 
-        {/* Action Buttons */}
-        <div className="w-full flex flex-col gap-2 mb-2">
-          {/* Primary CTA: Telegram Botga jo'natish (Rasmni saqlash) */}
-          <button
-            onClick={handleSendToTelegramBot}
-            disabled={sendingBot}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2 shadow-lg bg-gradient-to-r from-amber-500 to-yellow-500 text-black"
-          >
-            <Send size={18} className="text-black" />
-            {sendingBot ? tt('certSending') : tt('sendToTelegram')}
-          </button>
+        {/* Action Buttons — namunada soxta sertifikat tarqalmasligi uchun o'chiq */}
+        {sample ? (
+          <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted">
+            <Lightbulb size={12} strokeWidth={1.75} className="mt-px flex-none text-psubtle" aria-hidden="true" />
+            {tt('certSampleHint')}
+          </p>
+        ) : (
+          <>
+            <div className="w-full flex flex-col gap-2 mb-2">
+              {/* Primary CTA: Telegram Botga jo'natish (Rasmni saqlash) */}
+              <Button
+                variant="gold"
+                size="lg"
+                block
+                loading={sendingBot}
+                onClick={handleSendToTelegramBot}
+              >
+                <Send size={18} />
+                {sendingBot ? tt('certSending') : tt('sendToTelegram')}
+              </Button>
 
-          {/* Secondary CTA: Qurilmaga to'g'ridan-to'g'ri yuklash */}
-          <button
-            onClick={handleDownload}
-            disabled={downloading}
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2"
-          >
-            <Download size={16} />
-            {downloading ? 'Yuklanmoqda...' : tt('downloadCertificate')}
-          </button>
+              {/* Secondary CTA: Qurilmaga to'g'ridan-to'g'ri yuklash */}
+              <Button
+                variant="secondary"
+                block
+                loading={downloading}
+                onClick={handleDownload}
+              >
+                <Download size={16} />
+                {downloading ? tt('downloading') : tt('downloadCertificate')}
+              </Button>
 
-          {/* Share CTA */}
-          <button
-            onClick={handleShare}
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] w-full py-3 rounded-container font-semibold text-xs flex items-center justify-center gap-2 text-pblue"
-          >
-            <Share2 size={15} />
-            {tt('shareCertificate')}
-          </button>
-        </div>
+              {/* Share CTA */}
+              <Button
+                variant="secondary"
+                block
+                onClick={handleShare}
+              >
+                <Share2 size={15} className="text-pblue" />
+                {tt('shareCertificate')}
+              </Button>
+            </div>
 
-        {/* Mobile helper hint */}
-        <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted">
-          <Lightbulb size={12} strokeWidth={1.75} className="mt-px flex-none text-psubtle" aria-hidden="true" />
-          {lang === 'ru'
-            ? 'Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
-            : 'Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
-        </p>
+            {/* Mobile helper hint */}
+            <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted">
+              <Lightbulb size={12} strokeWidth={1.75} className="mt-px flex-none text-psubtle" aria-hidden="true" />
+              {lang === 'ru'
+                ? 'Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
+                : 'Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
+            </p>
+          </>
+        )}
       </div>
     </DialogOverlay>
   )

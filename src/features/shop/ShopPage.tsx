@@ -14,7 +14,7 @@
  */
 import { useMemo, useState } from 'react'
 import {
-  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift, Clock,
+  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift, Clock, Info,
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -28,6 +28,7 @@ import { newId } from '../../shared/lib/outbox'
 import { track } from '../../shared/lib/analytics'
 import { useT } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
+import { Button } from '../../shared/components/ui/button'
 import MerchSection from './MerchSection'
 import SpinModal from './SpinModal'
 
@@ -144,7 +145,6 @@ export default function ShopPage() {
     if (!frame) return null
     const isOwned    = ownedSet.has(frame.id)
     const isEquipped = avatarFrame === frame.id
-    const affordable = coins >= item.price
     return (
       <div key={frame.id} className="rounded-container border border-pline bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative">
         {countdownBadge && (
@@ -188,15 +188,10 @@ export default function ShopPage() {
           <button
             onClick={() => buy(item.id)}
             disabled={busy !== null}
-            className="w-full flex items-center justify-center gap-1.5 text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
-            style={{
-              background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
-              border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
-              color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
-            }}>
+            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
             {busy === item.id
               ? <Loader2 size={13} className="animate-spin" />
-              : <><Coins size={12} /> {fmtCoins(item.price)}</>}
+              : <><Coins size={13} strokeWidth={1.75} className="text-pgold" /> {fmtCoins(item.price)}</>}
           </button>
         )}
       </div>
@@ -221,41 +216,32 @@ export default function ShopPage() {
       {/* Header */}
       <div className="flex items-center gap-2 px-5 pt-5 pb-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="text-psubtle hover:text-pfg text-xl px-1 transition-colors">
-          <ChevronLeft size={24} />
+          className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-lg font-semibold tracking-tight">{tt('shopTitle')}</h1>
       </div>
 
-      {/* Balans hero */}
-      <div className="mx-5 mt-2 rounded-[28px] p-5 relative overflow-hidden"
-        style={{
-          background: 'linear-gradient(160deg, rgb(var(--p-gold-rgb) / 0.12) 0%, var(--p-card) 55%)',
-          border: '1px solid rgb(var(--p-gold-rgb) / 0.30)',
-        }}>
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-[11px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
-            <p className="text-[34px] font-semibold tracking-tight mt-0.5 flex items-center gap-2">
-              <Coins size={26} strokeWidth={1.75} className="text-pgold" />
+      {/* Balans — ixcham karta (gradient border'siz); hint pastki qatorda */}
+      <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
+            <p className="mt-1 flex items-center gap-1.5 text-[26px] font-semibold tracking-tight tabular-nums">
+              <Coins size={21} strokeWidth={1.75} className="flex-none text-pgold" />
               {fmtCoins(coins)}
             </p>
           </div>
-          <div className="text-right max-w-[46%]">
-            <p className="text-[11.5px] text-pmuted leading-snug font-semibold">{tt('shopHowToEarn')}</p>
-            <p className="text-[11px] text-psubtle mt-1 leading-snug">{tt('shopEarnHint')}</p>
-          </div>
+          {isPremium && (
+            <span className="inline-flex flex-none items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] px-2.5 py-1 text-[10.5px] font-semibold text-pgold">
+              <Crown size={11} strokeWidth={1.75} /> Premium
+            </span>
+          )}
         </div>
-        {isPremium && (
-          <span className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10.5px] font-semibold"
-            style={{
-              background: 'rgb(var(--p-success-rgb) / 0.15)',
-              border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
-              color: 'var(--p-success)',
-            }}>
-            <Crown size={11} strokeWidth={1.75} /> Premium
-          </span>
-        )}
+        <p className="mt-3 flex items-center gap-1.5 border-t border-pline pt-2.5 text-[11px] text-pmuted">
+          <Info size={12} strokeWidth={1.75} className="flex-none text-psubtle" />
+          {tt('shopEarnHint')}
+        </p>
       </div>
 
       {error && (
@@ -274,15 +260,14 @@ export default function ShopPage() {
           const theme = getAccentTheme(item.id)
           const isOwned    = ownedSet.has(theme.id)
           const isActiveTheme = resolveAccent(accent, isPremium, ownedSet) === theme.id
-          const affordable = coins >= item.price
           return (
-            <div key={theme.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col gap-2.5 relative overflow-hidden">
+            <div key={theme.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col gap-2 relative overflow-hidden">
               {/* Mini atmosfera preview */}
-              <div className="h-[64px] rounded-control overflow-hidden border border-pline relative"
+              <div className="h-[52px] rounded-control overflow-hidden border border-pline relative"
                 style={{ background: theme.bg }}>
-                <div className="absolute left-2 right-2 top-2 h-6 rounded-lg"
+                <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
                   style={{ background: theme.card, border: `1px solid ${theme.color}4d` }} />
-                <span className="absolute bottom-2 left-2 w-8 h-2 rounded-full"
+                <span className="absolute bottom-2 left-2 w-7 h-1.5 rounded-full"
                   style={{ background: theme.color }} />
               </div>
               <div className="flex items-center justify-between gap-2">
@@ -290,7 +275,7 @@ export default function ShopPage() {
                 {isActiveTheme && <Check size={14} className="text-psuccess flex-none" />}
               </div>
               {isOwned ? (
-                <span className="text-center text-[11px] font-semibold py-1.5 rounded-control"
+                <span className="text-center text-[11px] font-semibold py-2 rounded-control"
                   style={{
                     background: 'rgb(var(--p-success-rgb) / 0.12)',
                     color: 'var(--p-success)',
@@ -302,15 +287,10 @@ export default function ShopPage() {
                 <button
                   onClick={() => buy(item.id)}
                   disabled={busy !== null}
-                  className="flex items-center justify-center gap-1.5 text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
-                  style={{
-                    background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
-                    border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
-                    color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
-                  }}>
+                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
                   {busy === item.id
                     ? <Loader2 size={13} className="animate-spin" />
-                    : <><Coins size={12} /> {fmtCoins(item.price)}</>}
+                    : <><Coins size={13} strokeWidth={1.75} className="text-pgold" /> {fmtCoins(item.price)}</>}
                 </button>
               )}
             </div>
@@ -318,52 +298,51 @@ export default function ShopPage() {
         })}
       </div>
 
-      {/* ── Premium (consumable) ── */}
+          {/* ── Premium (consumable) ── */}
       {premiumItem && (
         <>
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
             <Crown size={11} /> Premium
           </p>
-          <div className="mx-5 rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded-container flex items-center justify-center flex-none"
-              style={{
-                background: 'linear-gradient(135deg, var(--p-gold), var(--p-gold-deep))',
-              }}>
-              <Sparkles size={22} className="text-pongold" />
+          <div className="mx-5 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
+            <div className="flex size-11 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
+              <Sparkles size={19} strokeWidth={1.75} className="text-pgold" />
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-[14px] font-semibold">{tt('shopPremiumDays')}</p>
               <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('shopPremiumDaysDesc')}</p>
             </div>
-            <button
-              onClick={() => buy(premiumItem.id)}
+            <Button
+              variant="gold"
+              size="sm"
+              className="flex-none"
+              loading={busy === premiumItem.id}
               disabled={busy !== null}
-              className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex items-center gap-1.5 flex-none disabled:opacity-50 active:scale-[0.97] transition-transform">
-              {busy === premiumItem.id
-                ? <Loader2 size={14} className="animate-spin" />
-                : <><Coins size={13} /> {fmtCoins(premiumItem.price)}</>}
-            </button>
+              onClick={() => buy(premiumItem.id)}
+            >
+              <Coins size={13} strokeWidth={1.75} /> {fmtCoins(premiumItem.price)}
+            </Button>
           </div>
         </>
       )}
 
       {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
-      <div className="mx-5 mt-6 rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5">
-        <div className="w-12 h-12 rounded-container flex items-center justify-center flex-none"
-          style={{
-            background: 'linear-gradient(135deg, rgb(var(--p-purple-rgb) / 0.9), rgb(var(--p-gold-rgb) / 0.9))',
-          }}>
-          <Gift size={22} style={{ color: 'var(--p-canvas)' }} />
+      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
+        <div className="flex size-11 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-purple-rgb)/0.30)] bg-[rgb(var(--p-purple-rgb)/0.12)]">
+          <Gift size={19} strokeWidth={1.75} className="text-ppurple" />
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-[14px] font-semibold">{tt('spinTitle')}</p>
           <p className="text-[11px] text-pmuted mt-0.5 leading-snug">{tt('spinDesc')}</p>
         </div>
-        <button
+        <Button
+          variant="gold"
+          size="sm"
+          className="flex-none"
           onClick={() => { playSound('click'); setSpinOpen(true) }}
-          className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3.5 py-2 rounded-control text-[12.5px] font-semibold flex-none active:scale-[0.97] transition-transform">
+        >
           {tt('spinButton')}
-        </button>
+        </Button>
       </div>
 
       {/* ── Mavsumiy drop (aktiv oynadagi ramkalar, countdown bilan) ── */}

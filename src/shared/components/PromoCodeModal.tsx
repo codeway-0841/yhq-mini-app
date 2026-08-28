@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, Ticket, Sparkles, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
+import { X, Ticket, Sparkles, CheckCircle2, AlertCircle } from 'lucide-react'
 import { useT } from '../i18n'
 import type { Lang } from '../i18n'
 import { api, ApiError } from '../api'
@@ -8,6 +8,7 @@ import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
 import DialogOverlay from './DialogOverlay'
+import { Button } from './ui/button'
 
 interface PromoCodeModalProps {
   language: Lang
@@ -68,53 +69,49 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
-      <div className="relative w-full max-w-sm rounded-3xl bg-surface border border-line p-6 shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-sm rounded-container bg-pcard border border-plineStrong p-6 shadow-2xl overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-[rgb(var(--p-purple-rgb)/0.20)] rounded-full blur-2xl pointer-events-none" />
 
         <button
           onClick={onClose}
           aria-label={tt('cancelExit')}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-elevated border border-line flex items-center justify-center text-muted hover:text-fg transition-colors"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
         >
-          <X size={16} />
+          <X size={16} strokeWidth={1.75} />
         </button>
 
         {successData ? (
           <div className="text-center py-4">
-            <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] border border-[rgb(var(--p-primary-rgb)/0.40)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
+            <div className="w-16 h-16 rounded-container bg-[rgb(var(--p-primary-rgb)/0.15)] border border-[rgb(var(--p-primary-rgb)/0.40)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
               <CheckCircle2 size={36} />
             </div>
 
-            <h3 className="text-lg font-black text-fg mb-2">
+            <h3 className="text-lg font-semibold text-pfg mb-2">
               {tt('promoCodeSuccessTitle')}
             </h3>
 
-            <p className="text-xs text-subtle leading-relaxed mb-6">
+            <p className="text-xs text-pmuted leading-relaxed mb-6">
               {language === 'ru'
                 ? `Вам успешно предоставлен Premium доступ на ${successData.value} дней!`
                 : `Sizga ${successData.value} kunlik bepul Premium obuna faollashtirildi!`}
             </p>
 
-            <button
-              type="button"
-              onClick={onClose}
-              className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-black text-sm"
-            >
-              {tt('saveBtn')}
-            </button>
+            <Button block onClick={onClose}>
+              {tt('close')}
+            </Button>
           </div>
         ) : (
           <div>
-            <div className="w-12 h-12 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] border border-[rgb(var(--p-purple-rgb)/0.40)] flex items-center justify-center mx-auto mb-3 text-ppurple">
+            <div className="w-12 h-12 rounded-container bg-[rgb(var(--p-purple-rgb)/0.15)] border border-[rgb(var(--p-purple-rgb)/0.40)] flex items-center justify-center mx-auto mb-3 text-ppurple">
               <Ticket size={24} />
             </div>
 
-            <h3 id="promo-code-title" className="text-base font-black text-fg text-center mb-1">
+            <h3 id="promo-code-title" className="text-base font-semibold text-pfg text-center mb-1">
               {tt('promoCodeTitle')}
             </h3>
 
-            <p className="text-xs text-subtle text-center mb-5 leading-relaxed">
+            <p className="text-xs text-pmuted text-center mb-5 leading-relaxed">
               {tt('promoCodeDesc')}
             </p>
 
@@ -130,31 +127,26 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                   placeholder={tt('promoCodePlaceholder')}
                   autoFocus
                   maxLength={30}
-                  className="w-full bg-card border border-line rounded-2xl px-4 py-3.5 text-center text-base font-black tracking-widest text-fg placeholder:text-muted/50 placeholder:tracking-normal placeholder:font-medium focus:outline-none focus:border-ppurple transition-all"
+                  className="w-full bg-pcanvas border border-pline rounded-control px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:border-ppurple transition-colors"
                 />
               </div>
 
               {error && (
-                <div className="flex items-center gap-2 p-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] border border-[rgb(var(--p-danger-rgb)/0.30)] text-pdanger text-xs font-semibold">
+                <div className="flex items-center gap-2 p-3 rounded-control bg-[rgb(var(--p-danger-rgb)/0.10)] border border-[rgb(var(--p-danger-rgb)/0.30)] text-pdanger text-xs font-semibold">
                   <AlertCircle size={15} className="flex-shrink-0" />
                   <span>{error}</span>
                 </div>
               )}
 
-              <button
+              <Button
                 type="submit"
-                disabled={loading || code.trim().length < 3}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                block
+                loading={loading}
+                disabled={code.trim().length < 3}
               >
-                {loading ? (
-                  <Loader2 size={16} className="animate-spin" />
-                ) : (
-                  <>
-                    <Sparkles size={16} />
-                    {tt('promoCodeActivateBtn')}
-                  </>
-                )}
-              </button>
+                <Sparkles size={16} />
+                {tt('promoCodeActivateBtn')}
+              </Button>
             </form>
           </div>
         )}

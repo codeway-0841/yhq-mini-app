@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, Bell, Clock, Coins,
+  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, Bell, Clock, Coins, Timer,
 } from 'lucide-react'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
@@ -13,12 +13,14 @@ import { getShopItem } from '../../../shared/shop-items'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
+import { Button } from './ui/button'
 
 type LucideIcon = typeof Zap
 type PickerKey = 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
 
 /** Qator: chapda rangli ikonka-chip + label + o'ngda boshqaruv.
- *  iconColor — CSS-token (var(--p-*)); alpha color-mix bilan aralashadi (hex-konkat YO'Q). */
+ *  iconColor — CSS-token (var(--p-*)); alpha color-mix bilan aralashadi (hex-konkat YO'Q).
+ *  Chip retsepti profile/Section Item bilan bir xil (10% fon + 20% ramka, squircle). */
 function Row({ icon: Icon, iconColor = 'var(--p-primary)', label, children }: {
   icon: LucideIcon
   iconColor?: string
@@ -26,12 +28,17 @@ function Row({ icon: Icon, iconColor = 'var(--p-primary)', label, children }: {
   children: ReactNode
 }) {
   return (
-    <div className="flex items-center gap-3 py-3 border-b border-line last:border-0">
-      <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none"
-        style={{ background: `color-mix(in srgb, ${iconColor} 15%, transparent)` }}>
-        <Icon size={17} style={{ color: iconColor }} />
+    <div className="flex items-center gap-3 py-3 border-b border-pline last:border-0">
+      <div
+        className="flex size-8 flex-none items-center justify-center rounded-[10px]"
+        style={{
+          background: `color-mix(in srgb, ${iconColor} 10%, transparent)`,
+          border: `1px solid color-mix(in srgb, ${iconColor} 20%, transparent)`,
+        }}
+      >
+        <Icon size={15} strokeWidth={1.75} style={{ color: iconColor }} />
       </div>
-      <span className="flex-1 text-sm font-semibold text-fg">{label}</span>
+      <span className="flex-1 text-[14px] text-pfg">{label}</span>
       {children}
     </div>
   )
@@ -112,17 +119,17 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   }[local.fontStyle] ?? tt('fontDefault')
   const languageLabel  = { uz: tt('uzLang'), ru: tt('ruLang') }[local.language]
 
-  const valueBtn = 'flex items-center gap-1 text-[13px] font-bold text-muted active:text-fg transition-colors'
+  const valueBtn = 'flex items-center gap-1 text-[12px] text-pmuted active:text-pfg transition-colors'
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title">
-      <div className="relative w-full border border-pline bg-pcard rounded-container rounded-t-3xl border-t border-lineStrong max-h-[85vh] flex flex-col">
+      <div className="relative w-full rounded-t-sheet border-t border-plineStrong bg-pcard max-h-[85vh] flex flex-col">
         <div className="p-5 pb-0">
-          <div className="w-10 h-1 bg-line rounded-full mx-auto mb-4" />
+          <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">
-            <h2 id="settings-title" className="text-base font-black text-fg">{tt('settingsTitle')}</h2>
-            <button onClick={onClose} aria-label={tt('close')} className="text-muted hover:text-fg">
-              <X size={20} />
+            <h2 id="settings-title" className="text-base font-semibold text-pfg">{tt('settingsTitle')}</h2>
+            <button onClick={onClose} aria-label={tt('close')} className="text-pmuted hover:text-pfg transition-colors">
+              <X size={20} strokeWidth={1.75} />
             </button>
           </div>
         </div>
@@ -154,7 +161,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
             <Row icon={Palette} label={tt('accentThemeLabel')}>
               <span className={valueBtn}>
-                <span className="w-4 h-4 rounded-full border border-line"
+                <span className="w-4 h-4 rounded-full border border-pline"
                   style={{ background: getAccentTheme(accent).color }} />
                 {getAccentTheme(accent).label[local.language]}
                 {!isPremium && <Crown size={12} className="text-pgold" />}
@@ -181,24 +188,19 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             </button>
           )}
 
-          <button
-            onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
-            className="w-full flex items-center gap-3 py-3 active:opacity-70 transition-opacity">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-none" style={{ background: 'color-mix(in srgb, var(--p-primary) 15%, transparent)' }}>
-              <Flag size={17} style={{ color: 'var(--p-primary)' }} />
-            </div>
-            <span className="flex-1 text-sm font-semibold text-left text-fg">{tt('reportIssue')}</span>
+          {/* Xatolik haqida xabar — Row bilan bir xil ritm (dublikat chip markup'i yo'q) */}
+          <button className="w-full text-left" onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')} aria-label={tt('reportIssue')}>
+            <Row icon={Flag} label={tt('reportIssue')}>
+              <ChevronRight size={14} className="text-psubtle" />
+            </Row>
           </button>
         </div>
 
         {/* Saqlash — doim pastda sticky */}
-        <div className="p-5 pt-3 bg-surface rounded-b-3xl">
-          <button
-            onClick={save}
-            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-black text-base"
-          >
+        <div className="p-5 pt-3 bg-pcard rounded-b-sheet">
+          <Button block size="lg" onClick={save}>
             {tt('saveBtn')}
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -237,21 +239,24 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
       {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
-          <div className="relative w-full bg-surface rounded-t-3xl border-t border-line p-4 pb-8 max-h-[82vh] flex flex-col">
-            <div className="w-10 h-1 bg-line rounded-full mx-auto mb-5 flex-none" />
-            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-black mb-1 flex-none">
+          <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-4 pb-8 max-h-[82vh] flex flex-col">
+            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none" />
+            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-semibold text-pfg mb-1 flex-none">
               <Palette size={18} className="text-pprimary" />
               {tt('accentThemeLabel')}
             </p>
-            <p className="text-center text-[11px] text-muted mb-3 flex-none">{tt('accentThemeDesc')}</p>
+            <p className="text-center text-[11px] text-pmuted mb-3 flex-none">{tt('accentThemeDesc')}</p>
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
-              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-xl px-3.5 py-2 animate-fadeIn"
-                style={{ background: 'rgba(250, 204, 21, 0.10)', border: '1px solid rgba(250, 204, 21, 0.3)' }}>
-                <span className="text-[11px] font-bold text-pwarning">⏱ {tt('themePreviewing')}</span>
+              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-control px-3.5 py-2 animate-fadeIn"
+                style={{ background: 'rgb(var(--p-warning-rgb) / 0.10)', border: '1px solid rgb(var(--p-warning-rgb) / 0.30)' }}>
+                <span className="flex items-center gap-1.5 text-[11px] font-semibold text-pwarning">
+                  <Timer size={12} strokeWidth={1.75} />
+                  {tt('themePreviewing')}
+                </span>
                 <button
                   onClick={() => { stopPreview(); setPicker(null); onClose(); openTelegramLink('https://t.me/kiwi_uz_bot?start=premium') }}
-                  className="text-[11px] font-black text-pwarning underline underline-offset-2 active:opacity-70">
+                  className="text-[11px] font-semibold text-pwarning underline underline-offset-2 active:opacity-70">
                   {tt('themeGetPremium')}
                 </button>
               </div>
@@ -278,13 +283,13 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       playSound('chime') // tema unlock — tema-mos chime
                       setPicker(null)
                     }}
-                    className={`flex items-center gap-3 w-full rounded-2xl border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+                    className={`flex items-center gap-3 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
                       selected ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' :
-                      preview === theme.id ? 'border-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'border-line bg-canvas'
+                      preview === theme.id ? 'border-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'border-pline bg-pcanvas'
                     }`}
                   >
                     {/* Mini atmosfera preview: fon + karta + aksent */}
-                    <div className="relative w-14 h-11 rounded-xl overflow-hidden flex-none border border-line"
+                    <div className="relative w-14 h-11 rounded-control overflow-hidden flex-none border border-pline"
                       style={{ background: theme.bg }}>
                       <div className="absolute left-1.5 right-1.5 top-1.5 h-4 rounded-[5px]"
                         style={{ background: theme.card, border: `1px solid ${theme.color}40` }} />
@@ -296,7 +301,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-bold text-fg">
+                      <p className="text-sm font-semibold text-pfg">
                         {theme.label[local.language]}
                       </p>
                       {premiumOnly && (
@@ -330,11 +335,11 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           onClose={() => setPicker(null)}
           onSelect={(v) => set('dailyReminderTime', v)}
           options={[
-            { value: '08:00', label: '08:00 (Ertalab / Утро)' },
-            { value: '12:00', label: '12:00 (Tushda / Обед)' },
-            { value: '18:00', label: '18:00 (Kechki payt / Вечер)' },
-            { value: '20:00', label: '20:00 (Kechqurun / Поздно вечером)' },
-            { value: '21:30', label: '21:30 (Uxlashdan oldin / Перед сном)' },
+            { value: '08:00', label: '08:00', desc: tt('reminderMorning') },
+            { value: '12:00', label: '12:00', desc: tt('reminderNoon') },
+            { value: '18:00', label: '18:00', desc: tt('reminderEvening') },
+            { value: '20:00', label: '20:00', desc: tt('reminderNight') },
+            { value: '21:30', label: '21:30', desc: tt('reminderBeforeSleep') },
           ]}
         />
       )}

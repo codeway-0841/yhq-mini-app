@@ -16,7 +16,6 @@ import MerchOrderModal from './MerchOrderModal'
 export default function MerchSection({ onCelebration }: { onCelebration?: () => void }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
-  const coins = useAppStore((s) => s.coins)
   const setCoins = useAppStore((s) => s.setCoins)
 
   const [catalog, setCatalog] = useState<MerchCatalogItem[] | null>(null)
@@ -48,12 +47,11 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
           const remaining = state?.remaining ?? item.stock
           const soldOut = remaining <= 0
           const owned = state?.alreadyOwned ?? false
-          const affordable = coins >= item.price
           return (
             <div key={item.id} className="rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5 relative overflow-hidden">
-              {/* v3: emoji tile O'RNIGA lucide ikonka (merch-icons.ts) */}
-              <div className="flex size-16 flex-none items-center justify-center rounded-container border border-[rgb(var(--p-gold-rgb)/0.25)] bg-[rgb(var(--p-gold-rgb)/0.08)]">
-                {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="text-pgold" /> })()}
+              {/* v3: emoji tile O'RNIGA lucide ikonka (merch-icons.ts) — neytral chip */}
+              <div className="flex size-14 flex-none items-center justify-center rounded-[14px] border border-pline bg-psurface">
+                {(() => { const Icon = getMerchIcon(item.id); return <Icon size={22} strokeWidth={1.75} className="text-pmuted" /> })()}
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[13.5px] font-semibold truncate">{item.label[lang]}</p>
@@ -80,13 +78,8 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
                 ) : (
                   <button
                     onClick={() => { playSound('click'); setOrderItem(item) }}
-                    className="flex items-center gap-1.5 px-3 py-2 rounded-control text-[11.5px] font-semibold active:scale-[0.96] transition-transform"
-                    style={{
-                      background: affordable ? 'rgb(var(--p-gold-rgb) / 0.16)' : 'var(--p-surface)',
-                      border: `1px solid ${affordable ? 'rgb(var(--p-gold-rgb) / 0.5)' : 'var(--p-line)'}`,
-                      color: affordable ? 'var(--p-gold)' : 'var(--p-subtle)',
-                    }}>
-                    <Coins size={12} strokeWidth={1.75} />
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-control border border-pline bg-psurface text-[11.5px] font-semibold text-pfg active:scale-[0.96] transition-transform">
+                    <Coins size={12} strokeWidth={1.75} className="text-pgold" />
                     {item.price.toLocaleString('ru-RU')}
                   </button>
                 )}
@@ -111,7 +104,9 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
             background: 'rgb(var(--p-success-rgb) / 0.10)',
             border: '1px solid rgb(var(--p-success-rgb) / 0.4)',
           }}>
-          <p className="text-[13.5px] font-semibold text-psuccess">🎉 {tt('merchOrdered')}</p>
+          <p className="flex items-center justify-center gap-1.5 text-[13.5px] font-semibold text-psuccess">
+            <Check size={15} strokeWidth={2} /> {tt('merchOrdered')}
+          </p>
           <p className="text-[11.5px] text-pmuted mt-0.5">{tt('merchOrderedDesc')}</p>
         </div>
       )}

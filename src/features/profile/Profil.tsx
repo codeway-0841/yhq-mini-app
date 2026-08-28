@@ -27,6 +27,12 @@ import { LinkAccountSection } from './components/LinkAccountSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
+import { getPlan, HIGHLIGHT_PLAN } from '../../../shared/premium-plans'
+
+/** Bot havolasi — barcha profil linklari shu bazadan quriladi */
+const BOT_URL = 'https://t.me/kiwi_uz_bot'
+/** Tarif kartasidagi CTA narxi — SSOT: shared/premium-plans.ts (desync'ni premium-plans.test.ts ushlaydi) */
+const PREMIUM_CTA_STARS = getPlan(HIGHLIGHT_PLAN)!.stars
 
 // ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {
@@ -167,9 +173,9 @@ export default function Profil() {
               variant="gold"
               size="sm"
               className="flex-shrink-0"
-              onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
+              onClick={() => openTelegramLink(`${BOT_URL}?start=premium`)}
             >
-              250
+              {PREMIUM_CTA_STARS}
               <Star size={12} strokeWidth={1.75} />
             </Button>
           )}
@@ -254,7 +260,7 @@ export default function Profil() {
         {/* Yopiq guruh */}
         <Item icon={Lock} label={tt('closedGroup')}
           right={<span className="text-[12px] text-pmuted">{tt('joinWord')}</span>}
-          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
+          onPress={() => openTelegramLink(BOT_URL)} />
       </Section>
 
       {/* ── DO'KON (#40) — coin balansi + do'kon sahifasiga o'tish ── */}
@@ -291,7 +297,7 @@ export default function Profil() {
         <button type="button"
           onClick={() => {
             if (!user) return
-            shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${user.id}`, tt('refShareText'))
+            shareUrl(`${BOT_URL}?start=ref_${user.id}`, tt('refShareText'))
           }}
           className="inline-flex h-[34px] flex-shrink-0 items-center gap-1.5 rounded-control bg-pprimary px-3 text-[12px] font-semibold text-ponprimary transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas">
           <Share2 size={13} strokeWidth={1.75} />
@@ -326,7 +332,7 @@ export default function Profil() {
         <Item
           icon={Award}
           label={tt('certOfficialTitle')}
-          right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
+          right={<span className="text-[12px] text-pmuted">{tt('certSampleBadge')}</span>}
           onPress={() => setShowCertModal(true)}
         />
 
@@ -337,7 +343,7 @@ export default function Profil() {
           onPress={() => setShowPromoModal(true)}
         />
 
-        <Item icon={BarChart2} label={settings.language === 'ru' ? 'Статистика' : 'Statistika'}
+        <Item icon={BarChart2} label={tt('statsTitle')}
           onPress={() => navigate('/statistika')} />
 
         <Item icon={CreditCard} label={tt('payHistory')}
@@ -363,13 +369,13 @@ export default function Profil() {
       {/* ── YORDAM ── */}
       <Section title={tt('helpSection')}>
         <Item icon={MessageCircle} label={tt('contactUs')}
-          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
+          onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Radio}      label={tt('tgChannel')}
-          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
+          onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Star}      label={tt('rateApp')}
-          onPress={() => openTelegramLink('https://t.me/kiwi_uz_bot')} />
+          onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Share2}     label={tt('shareApp')}
-          onPress={() => shareUrl('https://t.me/kiwi_uz_bot', tt('shareAppText'))} />
+          onPress={() => shareUrl(BOT_URL, tt('shareAppText'))} />
         <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(promptAddToHomeScreen()
             ? tt('installAppPrompt')
@@ -438,9 +444,11 @@ export default function Profil() {
         />
       )}
 
-      {/* Rasmiy Sertifikat modali */}
+      {/* Sertifikat NAMUNASI — real sertifikat faqat imtihon natijalaridan
+          (ResultsModal) ochiladi; bu yerda ballar emas, ko'rinish ko'rsatiladi */}
       {showCertModal && (
         <CertificateModal
+          sample
           score={38}
           total={40}
           percent={95}

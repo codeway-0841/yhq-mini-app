@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { X, CreditCard, Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
+import { X, CreditCard, Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle, Star } from 'lucide-react'
 import { type PremiumPlan, formatUzs } from '../../../../shared/premium-plans'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -131,8 +131,8 @@ export default function PaymentMethodModal({
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-pline">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-control bg-pgold/15 border border-pgold/30 flex items-center justify-center text-pgold">
-              <Sparkles size={16} />
+            <div className="w-8 h-8 rounded-control border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)] flex items-center justify-center text-pgold">
+              <Sparkles size={16} strokeWidth={1.75} />
             </div>
             <div>
               <h2 id="payment-method-title" className="text-base font-semibold">
@@ -155,7 +155,7 @@ export default function PaymentMethodModal({
         {/* Success View */}
         {isSuccess ? (
           <div className="py-8 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-psuccess/20 border border-psuccess text-psuccess mx-auto flex items-center justify-center animate-bounce">
+            <div className="w-16 h-16 rounded-full border border-[rgb(var(--p-success-rgb)/0.40)] bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess mx-auto flex items-center justify-center animate-bounce">
               <CheckCircle2 size={36} />
             </div>
             <div>
@@ -170,7 +170,7 @@ export default function PaymentMethodModal({
             </div>
             <button
               onClick={onClose}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 w-full py-3 rounded-container font-semibold text-sm"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 w-full py-3 rounded-container text-sm"
             >
               {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
             </button>
@@ -178,23 +178,25 @@ export default function PaymentMethodModal({
         ) : (
           <div className="py-4 space-y-4">
             {/* Price Badge */}
-            <div className="p-4 rounded-container bg-psurface/60 border border-pline flex items-center justify-between">
+            <div className="p-4 rounded-container bg-psurface border border-pline flex items-center justify-between">
               <span className="text-xs font-semibold text-pmuted">
                 {lang === 'ru' ? 'К оплате:' : "To'lov summasi:"}
               </span>
               <div className="text-right">
-                <span className="text-lg font-semibold text-pfg block">
+                <span className="text-lg font-semibold text-pfg block tabular-nums">
                   {formatUzs(plan.priceUzs, lang)}
                 </span>
-                <span className="text-[11px] text-pgold font-semibold block">
-                  yoki ⭐ {plan.stars} Stars
+                <span className="mt-0.5 flex items-center justify-end gap-1 text-[11px] font-semibold text-pgold tabular-nums">
+                  {lang === 'ru' ? 'или' : 'yoki'}
+                  <Star size={10} strokeWidth={1.75} fill="currentColor" />
+                  {plan.stars} Stars
                 </span>
               </div>
             </div>
 
             {/* Waiting for payment indicator */}
             {isWaitingPayment && (
-              <div className="p-3.5 rounded-container bg-pblue/10 border border-pblue/30 flex items-center gap-3">
+              <div className="p-3.5 rounded-container bg-[rgb(var(--p-blue-rgb)/0.10)] border border-[rgb(var(--p-blue-rgb)/0.30)] flex items-center gap-3">
                 <Loader2 size={20} className="text-pblue animate-spin flex-shrink-0" />
                 <div className="text-xs leading-tight">
                   <p className="font-semibold text-pblue">
@@ -210,7 +212,7 @@ export default function PaymentMethodModal({
             )}
 
             {errorMsg && (
-              <div className="p-3 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
+              <div className="p-3 rounded-control bg-[rgb(var(--p-danger-rgb)/0.10)] border border-[rgb(var(--p-danger-rgb)/0.30)] text-pdanger text-xs flex items-center gap-2">
                 <AlertCircle size={16} className="flex-shrink-0" />
                 <span>{errorMsg}</span>
               </div>
@@ -220,7 +222,7 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithClick}
               disabled={loadingProvider === 'click' || isWaitingPayment}
-              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-pblue/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
+              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-[rgb(var(--p-blue-rgb)/0.5)] active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
                 <div className="w-11 h-11 rounded-control bg-[#0073ff]/15 border border-[#0073ff]/30 flex items-center justify-center font-semibold text-[#0073ff] text-base flex-shrink-0">
@@ -251,16 +253,16 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithStars}
               disabled={loadingProvider !== null || isWaitingPayment}
-              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-pgold/50 active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
+              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-[rgb(var(--p-gold-rgb)/0.5)] active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-control bg-pgold/15 border border-pgold/30 flex items-center justify-center font-semibold text-pgold text-base flex-shrink-0">
-                  ⭐
+                <div className="w-11 h-11 rounded-control border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)] flex items-center justify-center text-pgold flex-shrink-0">
+                  <Star size={20} strokeWidth={1.75} fill="currentColor" />
                 </div>
                 <div>
                   <span className="text-sm font-semibold text-pfg">Telegram Stars</span>
-                  <p className="text-xs text-pmuted mt-0.5">
-                    ⭐ {plan.stars} Stars (Telegram hisobidan)
+                  <p className="text-xs text-pmuted mt-0.5 tabular-nums">
+                    {plan.stars} Stars · {lang === 'ru' ? 'со счёта Telegram' : "Telegram hisobidan"}
                   </p>
                 </div>
               </div>

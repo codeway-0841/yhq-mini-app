@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Camera, ImagePlus, Trash2, X, Pencil } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import { Button } from '../../../shared/components/ui/button'
+import { useAppStore } from '../../../shared/store/useAppStore'
+import { useT } from '../../../shared/i18n'
 
 // ── Bottom sheet — profil rasmini tahrirlash ────────────────────────────
 export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
@@ -10,32 +13,30 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
   onPick: () => void
   onRemove: () => void
 }) {
+  const tt = useT(useAppStore((s) => s.settings.language))
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title">
       <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <p id="photo-edit-title" className="text-sm font-semibold mb-4 flex items-center justify-center gap-2">
+        <p id="photo-edit-title" className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg">
           <Camera size={14} className="text-pprimary" />
-          Profil rasmi
+          {tt('photoEditTitle')}
         </p>
         <div className="flex flex-col gap-2.5">
-          <button onClick={onPick} disabled={busy}
-            className="w-full py-3.5 rounded-control bg-pprimary text-ponprimary font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
+          <Button block loading={busy} onClick={onPick}>
             <ImagePlus size={16} />
-            {busy ? 'Yuklanmoqda…' : 'Galereyadan tanlash'}
-          </button>
+            {busy ? tt('uploadingPhoto') : tt('pickFromGallery')}
+          </Button>
           {hasCustom && (
-            <button onClick={onRemove} disabled={busy}
-              className="w-full py-3.5 rounded-control bg-psurface border border-pline text-pdanger font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-60">
+            <Button block variant="destructive" disabled={busy} onClick={onRemove}>
               <Trash2 size={16} />
-              Rasmni o'chirish
-            </button>
+              {tt('removePhoto')}
+            </Button>
           )}
-          <button onClick={onClose}
-            className="w-full py-3 rounded-control text-pmuted font-semibold flex items-center justify-center gap-2 active:opacity-70">
+          <Button block variant="ghost" onClick={onClose}>
             <X size={16} />
-            Bekor qilish
-          </button>
+            {tt('cancel')}
+          </Button>
         </div>
       </div>
     </DialogOverlay>
@@ -48,28 +49,27 @@ export function NameEditSheet({ current, onClose, onSave }: {
   onClose: () => void
   onSave: (name: string) => void
 }) {
+  const tt = useT(useAppStore((s) => s.settings.language))
   const [name, setName] = useState(current)
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
       <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <p id="name-edit-title" className="text-sm font-semibold mb-3 flex items-center justify-center gap-2">
+        <p id="name-edit-title" className="text-sm font-semibold mb-3 flex items-center justify-center gap-2 text-pfg">
           <Pencil size={14} className="text-pblue" />
-          Ismni o'zgartirish
+          {tt('nameEditTitle')}
         </p>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
           maxLength={32}
-          placeholder="Ismingiz"
+          placeholder={tt('yourNamePlaceholder')}
           autoFocus
-          className="w-full bg-pcanvas border border-pblue rounded-control px-4 py-3 text-sm text-pfg outline-none mb-4"
+          className="w-full bg-pcanvas border border-pline rounded-control px-4 py-3 text-sm text-pfg outline-none mb-4 focus:border-pprimary"
         />
-        <button
-          onClick={() => { onSave(name); onClose() }}
-          className="w-full py-3.5 rounded-control bg-pprimary text-ponprimary font-semibold active:scale-[0.98] transition-transform">
-          Saqlash
-        </button>
+        <Button block onClick={() => { onSave(name); onClose() }}>
+          {tt('saveBtn')}
+        </Button>
       </div>
     </DialogOverlay>
   )
