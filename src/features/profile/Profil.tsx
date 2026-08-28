@@ -14,7 +14,6 @@ import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
 import PickerSheet from '../../shared/components/PickerSheet'
-import Toggle from '../../shared/components/Toggle'
 import { Button } from '../../shared/components/ui/button'
 import { useToast } from '../../shared/components/ToastContainer'
 import { Section, Item } from './components/Section'
@@ -231,28 +230,6 @@ export default function Profil() {
               {otpErrorKey && <span className="text-[12px] text-pdanger">{tt(otpErrorKey)}</span>}
             </div>
           </div>
-        )}
-
-        {/* SMS marketing roziligi — FAQAT telefon ulangan bo'lsa ko'rinadi */}
-        {user?.phone && (
-          <Item
-            icon={MessageCircle}
-            label={tt('smsOptInLabel')}
-            right={
-              <Toggle
-                checked={!!user.smsOptIn}
-                onChange={(next) => {
-                  const id = user?.id
-                  if (!id) return
-                  // Optimistik yangilash; xatoda qaytamiz
-                  useAppStore.setState({ user: { ...user, smsOptIn: next } })
-                  api.setSmsConsent(id, next).catch(() => {
-                    useAppStore.setState({ user: { ...user, smsOptIn: !next } })
-                  })
-                }}
-              />
-            }
-          />
         )}
 
         {/* Yopiq guruh */}
