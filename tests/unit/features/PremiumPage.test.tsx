@@ -38,11 +38,12 @@ beforeEach(() => {
 const trialBtn = () => screen.getByText(/3 kun Premium/)
 
 describe('PremiumPage', () => {
-  it('barcha tarif rejalarini ko\'rsatadi', () => {
+  it('barcha tarif rejalarini ko\'rsatadi (oylik model: tierName bilan farqlanadi)', () => {
     render(<PremiumPage />)
 
     for (const plan of PREMIUM_PLANS) {
-      expect(screen.getByText(plan.titleUz)).toBeInTheDocument()
+      // 'Premium' tierName sahifa sarlavhasi bilan to'qnashishi mumkin — kamida 1 ta yetarli
+      expect(screen.getAllByText(plan.tierNameUz).length).toBeGreaterThan(0)
     }
     expect(screen.getByText(/Eng mashhur/)).toBeInTheDocument()
   })

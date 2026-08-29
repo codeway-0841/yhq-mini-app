@@ -57,10 +57,13 @@ export const paymentRepository = {
       ), activated AS (
         UPDATE users
         SET
-          /* C-1 (audit CRITICAL): tariff='premium' FAQAT umrbod (days IS NULL)
-           * sentineli. Muddatli (month/year) grantlar tariff'ga TEGMAYDI —
-           * entitlement premium_until > now() orqali; aks holda eng arzon oylik
-           * xarid umrbod premium berib qo'yardi (hech narsa tariff'ni qaytarmasdi). */
+          /* C-1 (audit CRITICAL): tariff='premium' FAQAT days IS NULL sentinelida.
+           * OYLIK MODEL (2026-08-29): barcha plan'lar 30 kunlik — plan'lardan
+           * days=null ENDI KELMAYDI; sentinel branch faqat eski umrbod egalari
+           * va admin grant (admin.repository.grantPremium) uchun saqlanadi.
+           * Muddatli grantlar tariff'ga TEGMAYDI — entitlement premium_until
+           * > now() orqali; aks holda eng arzon oylik xarid umrbod premium
+           * berib qo'yardi (hech narsa tariff'ni qaytarmasdi). */
           tariff = CASE
             WHEN ${input.days}::integer IS NULL THEN 'premium'::tariff
             ELSE users.tariff

@@ -5,10 +5,12 @@
  * SHU konfigdan quriladi (desync bo'lmasligi uchun consistency test bor:
  * tests/unit/config/premium-plans.test.ts).
  *
- * Semantika:
- *  - muddatli tarif (month/year) → DB `users.premium_until = max(now, premium_until) + days`
+ * Semantika (2026-08-29 — OYLIK MODEL):
+ *  - BARCHA tariflar 30 kunlik obuna → DB `users.premium_until = max(now, premium_until) + days`
  *    (payment.repository.complete CTE — eski muddat ustiga yig'iladi)
- *  - lifetime → DB `users.tariff = 'premium'` (muddat cheksiz)
+ *  - 'lifetime' KEY saqlanadi (bot payload/eski start-link backward-compat) lekin endi u HAM
+ *    30 kunlik — yangi xaridlar `tariff='premium'` (umrbod sentinel, days=null) YOZMAYDI;
+ *    umrbod holat faqat eski xaridlar va admin grant'da qoladi.
  */
 
 export type PlanKey = 'month' | 'year' | 'lifetime'
@@ -19,7 +21,7 @@ export interface PremiumPlan {
   stars:            number
   /** O'zbek so'midagi narx (UZS) */
   priceUzs:         number
-  /** Necha kun davom etadi (null = umrbod) */
+  /** Necha kun davom etadi (oylik model: barcha tariflar 30) */
   days:             number | null
   titleUz:          string
   titleRu:          string
@@ -71,11 +73,11 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
     key: 'year',
     stars: 250,
     priceUzs: 79_000,
-    days: 365,
-    titleUz: 'Yillik',
-    titleRu: 'Год',
-    periodUz: '1 yillik',
-    periodRu: '1 год',
+    days: 30,
+    titleUz: 'Oylik',
+    titleRu: 'Месяц',
+    periodUz: '1 oylik',
+    periodRu: '1 месяц',
     tierNameUz: 'Pro',
     tierNameRu: 'Pro',
     badgeUz: 'Video darslar',
@@ -99,11 +101,11 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
     key: 'lifetime',
     stars: 500,
     priceUzs: 149_000,
-    days: null,
-    titleUz: 'Umrbod',
-    titleRu: 'Навсегда',
-    periodUz: 'cheksiz muddat',
-    periodRu: 'бессрочно',
+    days: 30,
+    titleUz: 'Oylik',
+    titleRu: 'Месяц',
+    periodUz: '1 oylik',
+    periodRu: '1 месяц',
     tierNameUz: 'Premium',
     tierNameRu: 'Premium',
     badgeUz: 'VIP imkoniyatlar',
@@ -115,14 +117,12 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
       "Har bir test uchun video darsdan qisqa video javob",
       "Haftada 6 kun (9:00–21:00) ustoz bilan jonli chatda yordam",
       "Yopiq muhokama guruhi — boshqa o'quvchilar bilan muloqot",
-      "Cheksiz muddat — bir martalik to'lov bilan butun umrga",
     ],
     featuresRu: [
       'Все возможности тарифа Pro',
       'Короткие видеоответы к каждому тестовому вопросу',
       'Помощь преподавателя в чате 6 дней в неделю (9:00–21:00)',
       'Закрытая группа обсуждений с другими учениками',
-      'Бессрочный доступ навсегда за один платёж',
     ],
   },
 ]
@@ -156,7 +156,8 @@ export function parseStartParam(param: string): PlanKey | 'chooser' | null {
 }
 
 /** Payment invoice payload ↔ plan: yangi format 'premium_<plan>_<uid>',
- *  ESKI format 'premium_<uid>' = umrbod (backward-compat). */
+ *  ESKI format 'premium_<uid>' → 'lifetime' key (backward-compat; oylik modeldan
+ *  keyin bu 30 kunlik Premium obuna beradi). */
 export function parsePaymentPayload(payload: string): { plan: PremiumPlan; userId: string } | null {
   const m = /^premium_(?:(month|year|lifetime)_)?(\d{1,19})$/.exec(payload)
   if (!m) return null

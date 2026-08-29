@@ -112,7 +112,10 @@ tailwind.config.js     # Klasslar tokenlarga bog'langan: pcanvas/pcard/psurface/
                        # CSS var'da hex-alpha konkat ISHLAMAYDI (`var(--p-x)26` noto'g'ri) — alpha uchun `color-mix(in srgb, var(--p-x) N%, transparent)`
 src/shared/config/themes.ts   # Aksent temalar — YAGONA MANBA (config + preview + premium flag)
 shared/premium-plans.ts# Tarif rejalari — YAGONA MANBA (month/year/lifetime, bot invoice payload shu yerda;
-                           #   applyDiscount = promokod chegirmasi SSOT — client UI va server create-order SHU formuladan)
+                           #   applyDiscount = promokod chegirmasi SSOT — client UI va server create-order SHU formuladan).
+                           #   OYLIK MODEL (2026-08-29): BARCHA tariflar 30 kunlik (days=30) — 'lifetime' KEY faqat
+                           #   backward-compat (bot payload/eski linklar); yangi xaridlar tariff='premium' (days=null
+                           #   sentinel) YOZMAYDI, entitlement FAQAT premium_until orqali; umrbod = eski xaridlar + admin grant
 server/modules/payments/  # Click (click.service — PREPARE/COMPLETE webhook) + Payme (payme.service — JSON-RPC
                            #   CheckPerform/Create/Perform/Cancel/Check, Basic auth) merchant API'lari.
                            #   IKKALASI HAM FAIL-CLOSED: secret'siz (CLICK_SECRET_KEY / PAYME_SECRET_KEY env,
@@ -124,7 +127,10 @@ server/modules/payments/  # Click (click.service — PREPARE/COMPLETE webhook) +
                            #   POST /api/promo/check (redeem EMAS, faqat validatsiya), ishlatilgan deb belgilash
                            #   FAQAT to'lov completion'da (bekor buyurtma kodni kuydirmaydi);
                            #   premium_days kodlari to'lovda ishlamaydi (400 PROMO_NOT_DISCOUNT — ular Profil'da).
-                           #   Webhook URL'lar: /api/payments/click, /api/payments/payme (merchant kabiynetga yoziladi)
+                           #   Webhook URL'lar: /api/payments/click, /api/payments/payme (merchant kabiynetga yoziladi).
+                           #   GET /api/payments/history (requireAuth, no-store) — user'ning buyurtmalari (50 tagacha,
+                           #   yangisi birinchi); client: Profil → "To'lovlar tarixi" PaymentHistorySheet
+                           #   (features/profile/components), api.getPaymentHistory
 src/shared/lib/sounds.ts      # UI ovozlar (Web Audio, faylsiz) — playSound(kind); chastota body[data-accent]'ga mos
 src/shared/components/Confetti.tsx  # Nishonlash confetti; src/shared/hooks/useCountUp.ts — count-up animatsiya
 ```

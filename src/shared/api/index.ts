@@ -842,6 +842,19 @@ export const api = {
       provider: string
       updatedAt: string
     }>('GET', `/payments/check-order/${encodeURIComponent(orderId)}`),
+
+  /** To'lovlar tarixi (Profil sheet'i) — joriy user'ning buyurtmalari, 50 tagacha */
+  getPaymentHistory: () =>
+    request<{ ok: boolean; rows: PaymentHistoryRow[] }>('GET', '/payments/history'),
+}
+
+export interface PaymentHistoryRow {
+  orderId: string
+  plan: string
+  amountUzs: number
+  provider: 'click' | 'payme'
+  status: 'pending' | 'completed' | 'cancelled' | 'failed'
+  createdAt: string
 }
 
 export interface AdminPromoCode {

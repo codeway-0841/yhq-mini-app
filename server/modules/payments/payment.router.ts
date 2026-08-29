@@ -2,7 +2,7 @@ import { Router } from 'express'
 import express from 'express'
 import crypto from 'crypto'
 import { z } from 'zod'
-import { eq, and } from 'drizzle-orm'
+import { eq, and, desc } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { requireAuth } from '../../middleware/auth'
@@ -143,6 +143,39 @@ paymentRouter.get(
       amountUzs: order.amountUzs,
       provider: order.provider,
       updatedAt: order.updatedAt,
+    })
+  })
+)
+
+/**
+ * 2.5. Payment History (Profil → "To'lovlar tarixi" sheet'i)
+ * Authenticated: joriy user'ning buyurtmalari (eng yangisi birinchi, 50 tagacha).
+ * PII bo'lmasa-da user'ga tegishli moliyaviy data — keshlanmaydi.
+ */
+paymentRouter.get(
+  '/history',
+  requireAuth,
+  wrap(async (req: any, res) => {
+    const userId = req.userId
+
+    const rows = await db
+      .select({
+        orderId: paymentOrders.orderId,
+        plan: paymentOrders.plan,
+        amountUzs: paymentOrders.amountUzs,
+        provider: paymentOrders.provider,
+        status: paymentOrders.status,
+        createdAt: paymentOrders.createdAt,
+      })
+      .from(paymentOrders)
+      .where(eq(paymentOrders.userId, userId))
+      .orderBy(desc(paymentOrders.createdAt))
+      .limit(50)
+
+    res.set('Cache-Control', 'private, no-store')
+    res.json({
+      ok: true,
+      rows: rows.map((r) => ({ ...r, createdAt: r.createdAt.toISOString() })),
     })
   })
 )

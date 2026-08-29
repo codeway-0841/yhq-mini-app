@@ -48,16 +48,17 @@ const PREMIUM_DESC =
   "• AI Tutor va xatolar tahlili\n" +
   "• Reklama'siz toza tajriba"
 
-/** Bitta tarif uchun Stars invoice yuborish. Payload: premium_<plan>_<uid>. */
+/** Bitta tarif uchun Stars invoice yuborish. Payload: premium_<plan>_<uid>.
+ *  Sarlavhada tierName (Plus/Pro/Premium) — oylik modelda titleUz barchada "Oylik". */
 async function sendPremiumInvoice(ctx: Context, planKey: PlanKey) {
   const plan = getPlan(planKey)
   if (!plan) return
   await ctx.replyWithInvoice(
-    `⭐ KIWI Premium — ${plan.titleUz}`,
+    `⭐ KIWI Premium — ${plan.tierNameUz}`,
     PREMIUM_DESC,
     `premium_${plan.key}_${ctx.from?.id}`,
     'XTR',
-    [{ label: `Premium · ${plan.periodUz}`, amount: plan.stars }],
+    [{ label: `${plan.tierNameUz} · ${plan.periodUz}`, amount: plan.stars }],
   )
 }
 
@@ -65,11 +66,11 @@ async function sendPremiumInvoice(ctx: Context, planKey: PlanKey) {
 async function sendPremiumChooser(ctx: Context) {
   const kb = new InlineKeyboard()
   for (const p of PREMIUM_PLANS) {
-    kb.text(`⭐ ${p.titleUz} — ${p.stars} Stars`, `buy_${p.key}`).row()
+    kb.text(`⭐ ${p.tierNameUz} — ${p.stars} Stars`, `buy_${p.key}`).row()
   }
   await ctx.reply(
     "👑 KIWI Premium — o'z tarifingizni tanlang:\n\n" +
-    PREMIUM_PLANS.map((p) => `• ${p.titleUz} — ${p.periodUz} — ${p.stars}⭐`).join('\n'),
+    PREMIUM_PLANS.map((p) => `• ${p.tierNameUz} — ${p.periodUz} — ${p.stars}⭐`).join('\n'),
     { reply_markup: kb }
   )
 }

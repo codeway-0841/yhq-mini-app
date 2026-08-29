@@ -21,6 +21,9 @@ import { useToast } from '../../shared/components/ToastContainer'
 import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
 import { PhotoEditSheet, NameEditSheet, PhoneEditSheet } from './components/EditSheets'
+import { PaymentHistorySheet } from './components/PaymentHistorySheet'
+import { ClosedGroupSheet } from './components/ClosedGroupSheet'
+import type { PlanKey } from '../../../shared/premium-plans'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { CertificateModal } from '../test'
 import { AchievementsItem } from './components/AchievementsSection'
@@ -79,7 +82,10 @@ export default function Profil() {
   const [showPromoModal, setShowPromoModal]   = useState(false)
   const [showCertModal, setShowCertModal]     = useState(false)
   const [showPhoneSheet, setShowPhoneSheet]   = useState(false)
+  const [showPayHistory, setShowPayHistory]   = useState(false)
+  const [showGroupSheet, setShowGroupSheet]   = useState(false)
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+  const [subInitialPlan, setSubInitialPlan]   = useState<PlanKey | undefined>(undefined)
 
   const { current: xpCurrent, needed: xpNeeded } = levelProgress(xp)
   const xpToNext = xpNeeded - xpCurrent
@@ -184,7 +190,7 @@ export default function Profil() {
             </button>
           </div>
 
-          {/* ID: 00458547 ❐ */}
+          {/* ID: 00458547 ❐ · Level X (daraja yozuvi ID qatori oxirida, neytral) */}
           <div className="mt-0.5 flex items-center">
             <button
               type="button"
@@ -199,20 +205,18 @@ export default function Profil() {
                 <Copy size={12} strokeWidth={1.75} className="text-psubtle" />
               )}
             </button>
-          </div>
-
-          {/* Daraja nishoni — bosilganda daraja va XP haqida tushuntirish modali ochiladi */}
-          <div className="mt-2 flex items-center gap-1.5">
+            {/* Daraja — bosilganda daraja va XP haqida tushuntirish modali ochiladi */}
+            <span className="mx-1.5 text-psubtle select-none">·</span>
             <button
               type="button"
               onClick={() => {
                 haptics.impact('light')
                 setShowLevelInfo(true)
               }}
-              className="inline-flex items-center rounded-full bg-pblue/15 px-2.5 py-0.5 text-[11.5px] font-semibold text-pblue transition-transform active:scale-95 hover:bg-pblue/25 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary cursor-pointer"
+              className="rounded text-[12px] font-semibold text-pmuted transition-colors hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
               aria-label={`${tt('level')} ${level}`}
             >
-              <span>Level {level}</span>
+              Level {level}
             </button>
           </div>
         </div>
@@ -298,10 +302,10 @@ export default function Profil() {
           </div>
         )}
 
-        {/* Yopiq guruh */}
+        {/* Yopiq guruh — premium bo'lsa botga, aks holda upsell sheet */}
         <Item icon={Lock} label={tt('closedGroup')}
           right={<span className="text-[12px] text-pmuted">{tt('joinWord')}</span>}
-          onPress={() => openTelegramLink(BOT_URL)} />
+          onPress={() => tariff === 'premium' ? openTelegramLink(BOT_URL) : setShowGroupSheet(true)} />
       </Section>
 
       {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
@@ -360,7 +364,7 @@ export default function Profil() {
           onPress={() => navigate('/statistika')} />
 
         <Item icon={CreditCard} label={tt('payHistory')}
-          onPress={() => showToast(tt('payHistoryEmpty'))} />
+          onPress={() => setShowPayHistory(true)} />
 
         <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}
           onPress={handleReset} />
@@ -513,9 +517,27 @@ export default function Profil() {
         />
       )}
 
+      {/* To'lovlar tarixi sheet'i (Click/Payme buyurtmalari) */}
+      {showPayHistory && (
+        <PaymentHistorySheet onClose={() => setShowPayHistory(false)} />
+      )}
+
+      {/* Yopiq guruh upsell sheet'i — tarif kartasi/CTA obuna modalini ochadi */}
+      {showGroupSheet && (
+        <ClosedGroupSheet
+          onClose={() => setShowGroupSheet(false)}
+          onGetPlan={(planKey) => {
+            setShowGroupSheet(false)
+            setSubInitialPlan(planKey)
+            setShowSubscriptionModal(true)
+          }}
+        />
+      )}
+
       {/* Obuna bo'lish modali (Multi-step Senior-grade subscription sheet) */}
       {showSubscriptionModal && (
         <SubscriptionModal
+          initialPlanKey={subInitialPlan}
           onClose={() => setShowSubscriptionModal(false)}
         />
       )}

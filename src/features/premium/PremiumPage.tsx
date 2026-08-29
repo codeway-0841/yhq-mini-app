@@ -197,7 +197,7 @@ export default function PremiumPage() {
                   <div className="flex items-center justify-between gap-3">
                     <div className="min-w-0">
                       <p className="text-[15px] font-semibold text-pfg">
-                        {lang === 'ru' ? plan.titleRu : plan.titleUz}
+                        {lang === 'ru' ? plan.tierNameRu : plan.tierNameUz}
                       </p>
                       <p className="text-[11.5px] text-psubtle mt-0.5">
                         {lang === 'ru' ? plan.periodRu : plan.periodUz}

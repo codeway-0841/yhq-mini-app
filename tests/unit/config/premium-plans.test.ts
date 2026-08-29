@@ -22,7 +22,7 @@ describe('shared/premium-plans — data integrity', () => {
     expect(PREMIUM_PLANS.some((p) => p.key === HIGHLIGHT_PLAN)).toBe(true)
   })
 
-  it('narxlar musbat va oylik < yillik < umrbod tartibida (Stars & UZS)', () => {
+  it('narxlar musbat va month < year < lifetime tartibida (Stars & UZS)', () => {
     const starsPrice = (k: string) => getPlan(k)!.stars
     const uzsPrice = (k: string) => getPlan(k)!.priceUzs
     for (const p of PREMIUM_PLANS) {
@@ -35,10 +35,9 @@ describe('shared/premium-plans — data integrity', () => {
     expect(uzsPrice('year')).toBeLessThan(uzsPrice('lifetime'))
   })
 
-  it("faqat lifetime'da days = null", () => {
+  it('OYLIK MODEL (2026-08-29): barcha tariflar 30 kunlik (days=null sentinel yo\'q)', () => {
     for (const p of PREMIUM_PLANS) {
-      if (p.key === 'lifetime') expect(p.days).toBeNull()
-      else expect(p.days).toBeGreaterThan(0)
+      expect(p.days).toBe(30)
     }
   })
 
