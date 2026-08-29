@@ -65,9 +65,7 @@ export default function BossCard() {
 
   const def = getBossDef(state.bossKey)
   const name = def?.name[lang] ?? 'Boss'
-  const emoji = def?.emoji ?? '🐉'
   const BossIcon = getBossIcon(state.bossKey)
-  const bossColor = def?.color ?? 'var(--p-purple)'
   
   // Zarar foizi va qolgan HP
   const damagePct = state.hpTotal > 0 ? Math.min(100, Math.round((state.totalDamage / state.hpTotal) * 100)) : 0
@@ -100,17 +98,9 @@ export default function BossCard() {
 
       {/* Asosiy Boss ma'lumoti */}
       <div className="flex items-center gap-3.5">
-        {/* Boss Avatari (Clean border box) */}
-        <div
-          className="relative flex size-12 shrink-0 items-center justify-center rounded-[14px] border border-pline bg-psurface text-[22px] transition-transform active:scale-95"
-        >
-          <span>{emoji}</span>
-          <span
-            className="absolute -bottom-1 -right-1 flex size-5 items-center justify-center rounded-full border border-pline bg-pcard shadow-xs"
-            style={{ color: bossColor }}
-          >
-            <BossIcon size={11} strokeWidth={1.75} />
-          </span>
+        {/* Boss Ikonkasi */}
+        <div className="flex size-11 shrink-0 items-center justify-center">
+          <BossIcon size={38} className="text-pmuted" />
         </div>
 
         {/* Boss nomi & Jon (HP) ko'rsatkichi */}
@@ -125,10 +115,9 @@ export default function BossCard() {
           {/* HP Bar (Qolgan jon yoki jamoaviy zarar) */}
           <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-psurface">
             <div
-              className="h-full rounded-full transition-[width] duration-[600ms] ease-out"
+              className="h-full rounded-full bg-pprimary transition-[width] duration-[600ms] ease-out"
               style={{
                 width: `${damagePct}%`,
-                background: `linear-gradient(90deg, ${bossColor}, #fbbf24)`,
               }}
             />
           </div>
@@ -138,7 +127,7 @@ export default function BossCard() {
               {tt('bossHpShort')}: <strong className="font-bold text-pfg">{remainingHpPct}%</strong>
             </span>
             <span className="flex items-center gap-1 text-[10.5px] font-bold tabular-nums text-pfg">
-              <Flame size={12} strokeWidth={1.75} className="text-pwarning" />
+              <Flame size={12} strokeWidth={1.75} className="text-pmuted" />
               <span>{tt('bossMyDamage')}: {state.myDamage}</span>
             </span>
           </div>
@@ -147,7 +136,7 @@ export default function BossCard() {
 
       {/* Top-3 zarba beruvchilar — ixcham micro-avatarlar */}
       {state.top.length > 0 && (
-        <div className="mt-3 flex items-center justify-between border-t border-pline/70 pt-2.5">
+        <div className="mt-3 flex items-center justify-between border-t border-pline pt-2.5">
           <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-psubtle">
             <Trophy size={11} strokeWidth={1.75} className="text-pmuted" /> {tt('bossTopHitters')}
           </span>

@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Coins, Sparkles, Check } from 'lucide-react'
+import { Bookmark, Share2, Flag, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Sparkles, Check } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
@@ -681,7 +682,7 @@ export default function TestPage() {
       {coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
           <span className="inline-flex items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.14)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold">
-            <Coins size={13} strokeWidth={1.75} />
+            <CoinIcon size={14} />
             +1
           </span>
         </div>

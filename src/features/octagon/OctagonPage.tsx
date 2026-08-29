@@ -76,7 +76,7 @@ export default function OctagonPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-canvas relative pb-6">
+    <div className="flex flex-col min-h-screen bg-pcanvas text-pfg relative pb-6">
       <DuelHeader
         title={tt('octagonTitle')}
         inRound={s.phase === 'in_round'}

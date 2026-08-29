@@ -48,10 +48,10 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
 
       {/* Duel kutilmoqda — PIN va link ulashish */}
       {duelCode && (
-        <div className="w-full rounded-2xl bg-surface border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 flex flex-col items-center gap-3 shadow-sm">
+        <div className="w-full rounded-2xl bg-psurface border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 flex flex-col items-center gap-3 shadow-sm">
           {formattedPin && (
             <div className="w-full text-center space-y-1">
-              <span className="text-[10px] font-bold text-muted uppercase tracking-wider">{tt('yourRoomPin')}</span>
+              <span className="text-[10px] font-bold text-pmuted uppercase tracking-wider">{tt('yourRoomPin')}</span>
               <div className="text-2xl font-black font-mono tracking-widest text-pprimary">
                 {formattedPin}
               </div>
@@ -63,7 +63,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
               <button
                 type="button"
                 onClick={handleCopyPin}
-                className="flex-1 py-2 px-3 rounded-xl bg-card border border-line hover:border-ppurple text-fg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="flex-1 py-2 px-3 rounded-xl bg-pcard border border-pline hover:border-ppurple text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
@@ -84,7 +84,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
       )}
 
       <button onClick={onCancel}
-        className="text-xs text-muted border border-line px-5 py-2.5 rounded-xl hover:text-fg transition-colors active:scale-95">
+        className="text-xs text-pmuted border border-pline px-5 py-2.5 rounded-xl hover:text-pfg transition-colors active:scale-95">
         {tt('cancel')}
       </button>
     </div>

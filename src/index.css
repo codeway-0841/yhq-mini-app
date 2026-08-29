@@ -78,91 +78,31 @@ input, button, select, textarea {
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
 
-/* ── Dynamic Ambient Mesh Glow (Fintech / iOS aura) ─────────────────────────
-   Har bir tanlangan temaga (--p-primary) dinamik moslashadi.
-   Yuqori qismdan tabiiy yorug'lik tarqatadi. */
-.ambient-mesh-glow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 420px;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
 
-.ambient-mesh-glow::before {
-  content: '';
-  position: absolute;
-  top: -120px;
-  right: -60px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    color-mix(in srgb, var(--p-primary) 14%, transparent) 0%,
-    color-mix(in srgb, var(--p-primary) 6%, transparent) 45%,
-    color-mix(in srgb, var(--p-primary) 1.5%, transparent) 70%,
-    transparent 85%
-  );
-  filter: blur(72px);
-  transform: translateZ(0);
-}
-
-.ambient-mesh-glow::after {
-  content: '';
-  position: absolute;
-  top: -80px;
-  left: -80px;
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    color-mix(in srgb, var(--p-primary) 9%, transparent) 0%,
-    color-mix(in srgb, var(--p-primary) 4%, transparent) 50%,
-    transparent 75%
-  );
-  filter: blur(75px);
-  transform: translateZ(0);
-}
-
-body[data-theme='light'] .ambient-mesh-glow::before {
-  background: radial-gradient(
-    circle at center,
-    color-mix(in srgb, var(--p-primary) 15%, transparent) 0%,
-    color-mix(in srgb, var(--p-primary) 5%, transparent) 50%,
-    transparent 80%
-  );
-  filter: blur(60px);
-}
-
-body[data-theme='light'] .ambient-mesh-glow::after {
-  background: radial-gradient(
-    circle at center,
-    color-mix(in srgb, var(--p-primary) 10%, transparent) 0%,
-    transparent 75%
-  );
-  filter: blur(60px);
-}
 
 /* ── Fintech / iOS Hero Gradient Card ───────────────────────────────────────
-   Rasmda ko'rsatilganidek boy, yorqin va har bir temaga moslashuvchi gradient karta. */
+   Boy, yorqin va har bir temaga silliq moslashuvchi gradient karta. */
 .hero-gradient-card {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-sheet);
-  border: 1px solid color-mix(in srgb, var(--p-primary) 36%, rgba(255, 255, 255, 0.12));
-  background: 
-    radial-gradient(130% 140% at 95% 10%, color-mix(in srgb, var(--p-primary) 85%, #000) 0%, color-mix(in srgb, var(--p-primary) 42%, #080c16) 45%, color-mix(in srgb, var(--p-primary) 16%, #0d1117) 100%);
+  border: 1px solid color-mix(in srgb, var(--p-primary) 32%, rgba(255, 255, 255, 0.14));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--p-primary) 76%, #000000) 0%,
+    color-mix(in srgb, var(--p-primary) 48%, #081614) 52%,
+    color-mix(in srgb, var(--p-primary) 28%, #0c1215) 100%
+  );
 }
 
 body[data-theme='light'] .hero-gradient-card {
-  border: 1px solid color-mix(in srgb, var(--p-primary) 36%, rgba(0, 0, 0, 0.15));
-  background: 
-    radial-gradient(130% 140% at 95% 10%, color-mix(in srgb, var(--p-primary) 92%, #000) 0%, color-mix(in srgb, var(--p-primary) 55%, #0a101d) 45%, color-mix(in srgb, var(--p-primary) 22%, #0f172a) 100%);
+  border: 1px solid color-mix(in srgb, var(--p-primary) 32%, rgba(0, 0, 0, 0.12));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--p-primary) 88%, #000000) 0%,
+    color-mix(in srgb, var(--p-primary) 56%, #0a121d) 52%,
+    color-mix(in srgb, var(--p-primary) 30%, #0f172a) 100%
+  );
 }
 
 /* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */

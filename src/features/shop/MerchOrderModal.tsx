@@ -3,7 +3,8 @@
  * buyurtmani yuborish. Telefon user.phone'dan prefill (agar bo'lsa).
  */
 import { useState } from 'react'
-import { Coins, Loader2, Package } from 'lucide-react'
+import { Loader2, Package } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError } from '../../shared/api'
 import type { MerchItem } from '../../../shared/merch-items'
@@ -69,7 +70,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           <div className="flex-1 min-w-0">
             <p className="text-[13px] font-semibold truncate">{item.label[lang]}</p>
             <p className="text-[11px] text-pgold font-semibold flex items-center gap-1 mt-0.5">
-              <Coins size={11} strokeWidth={1.75} /> {item.price.toLocaleString('ru-RU')}
+              <CoinIcon size={13} /> {item.price.toLocaleString('ru-RU')}
             </p>
           </div>
         </div>
@@ -114,7 +115,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             onClick={submit}
             disabled={busy}
             className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
-            {busy ? <Loader2 size={15} className="animate-spin" /> : <Coins size={14} />}
+            {busy ? <Loader2 size={15} className="animate-spin" /> : <CoinIcon size={15} />}
             {tt('merchFormSubmit')}
           </button>
         </div>

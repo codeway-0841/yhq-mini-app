@@ -18,7 +18,6 @@ import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
 import { modules } from '../../../src/content/modules'
 import lessonMap from '../../../src/content/lessonMap.yhq.json'
-import { questionKey } from '../../../shared/subjects'
 
 const MAP = lessonMap as Record<string, number[]>
 /** Kamida 3 savoli bor (ya'ni ko'rinadigan) birinchi dars */
@@ -87,22 +86,5 @@ describe('TopicsPage', () => {
     fireEvent.click(locked)
 
     expect(mockNavigate).not.toHaveBeenCalled()
-  })
-
-  it('joriy fanda xato bo\'lsa "Xatolarni tuzatish" banneri chiqadi va /xatolar ochadi', () => {
-    useAppStore.setState({
-      wrongByTicket: { [questionKey('yhq', 1)]: 2, [questionKey('fizika', 9)]: 5 },
-    })
-    render(<TopicsPage />)
-
-    // Faqat joriy fan (yhq) xatolari sanaladi — 1 ta
-    expect(screen.getByText('1')).toBeInTheDocument()
-    fireEvent.click(screen.getByText(/Xatolar/i))
-    expect(mockNavigate).toHaveBeenCalledWith('/xatolar')
-  })
-
-  it('xato yo\'q bo\'lsa banner ko\'rsatilmaydi', () => {
-    render(<TopicsPage />)
-    expect(screen.queryByText(/Xatolarni tuzatish/i)).toBeNull()
   })
 })

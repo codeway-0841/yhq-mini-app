@@ -4,7 +4,8 @@
  * + buyurtma modali + buyurtma muvaffaqiyati.
  */
 import { useEffect, useState } from 'react'
-import { Coins, Check, Package, ShoppingBag } from 'lucide-react'
+import { Check, Package, ShoppingBag } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, type MerchCatalogItem } from '../../shared/api'
 import { MERCH_ITEMS, getMerchItem, type MerchItem } from '../../../shared/merch-items'
@@ -79,7 +80,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
                   <button
                     onClick={() => { playSound('click'); setOrderItem(item) }}
                     className="flex items-center gap-1.5 px-3 py-2 rounded-control border border-pline bg-psurface text-[11.5px] font-semibold text-pfg active:scale-[0.96] transition-transform">
-                    <Coins size={12} strokeWidth={1.75} className="text-pgold" />
+                    <CoinIcon size={14} className="text-pgold" />
                     {item.price.toLocaleString('ru-RU')}
                   </button>
                 )}

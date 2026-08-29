@@ -8,20 +8,22 @@
  * Mashq oqimi: umumiy TestPage engine'idagi `questionIds` mexanizmi —
  * to'g'ri javob berilgan savol ro'yxatdan tushib qoladi.
  */
-import { useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { HeartCrack, Play, ChevronRight, Flame, ChevronLeft } from 'lucide-react'
+import { HeartCrack, Play, ChevronRight, Flame, ChevronLeft, Sparkles } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
-import { openTelegramLink } from '../../platform/telegram'
-import { Sparkles } from 'lucide-react'
+import { Button } from '../../shared/components/ui/button'
+import { SubscriptionModal } from '../premium'
+import { haptics } from '../../platform/haptics'
 
 export default function XatolarPage() {
   const navigate = useNavigate()
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
   // Selector'li obuna — whole-store EMAS
   const settings      = useAppStore((s) => s.settings)
   const wrongByTicket = useAppStore((s) => s.wrongByTicket)
@@ -87,8 +89,8 @@ export default function XatolarPage() {
       {/* Bo'sh holat */}
       {total === 0 && (
         <div className="rounded-container border border-pline bg-pcard p-8 flex flex-col items-center text-center">
-          <div className="w-16 h-16 rounded-container bg-pprimary/15 border border-pprimary/40 flex items-center justify-center mb-4">
-            <HeartCrack size={30} className="text-pprimary" />
+          <div className="w-12 h-12 rounded-control bg-psurface flex items-center justify-center mb-4">
+            <HeartCrack size={24} className="text-pmuted" />
           </div>
           <p className="text-[17px] font-semibold text-pfg">{tt('mistakesEmptyTitle')}</p>
           <p className="text-[12px] text-psubtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
@@ -100,8 +102,8 @@ export default function XatolarPage() {
           {/* Umumiy holat + "Barchasini mashq qilish" */}
           <div className="rounded-container border border-pline bg-pcard p-4 mb-4">
             <div className="flex items-center gap-3 mb-3.5">
-              <div className="w-11 h-11 rounded-control bg-pdanger/15 border border-pdanger/40 flex items-center justify-center flex-shrink-0">
-                <HeartCrack size={20} className="text-pdanger" />
+              <div className="w-11 h-11 rounded-control bg-psurface flex items-center justify-center flex-shrink-0">
+                <HeartCrack size={20} className="text-pmuted" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[24px] font-semibold text-pfg leading-none">{total}</p>
@@ -117,19 +119,25 @@ export default function XatolarPage() {
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <button onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')}
-              className="rounded-container border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 text-left active:scale-[0.98] transition-transform">
-              <div className="w-11 h-11 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
-                <Sparkles size={20} className="text-pwarning" />
+            <div className="rounded-container border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3">
+              <div className="w-11 h-11 rounded-control bg-psurface flex items-center justify-center flex-shrink-0">
+                <Sparkles size={20} className="text-pmuted" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[14px] font-semibold text-pfg">{tt('premiumMistakesTitle')}</p>
                 <p className="text-[11px] text-psubtle mt-1 leading-snug">{tt('premiumMistakesDesc')}</p>
               </div>
-              <span className="bg-pwarning text-black text-[11px] font-semibold px-3 py-1.5 rounded-control flex-shrink-0">
-                ⭐250
-              </span>
-            </button>
+              <Button
+                size="sm"
+                className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+                onClick={() => {
+                  haptics.impact('light')
+                  setShowSubscriptionModal(true)
+                }}
+              >
+                {tt('subscribe')}
+              </Button>
+            </div>
           )}
           {isPremium && byTopic.length > 0 && (
             <>
@@ -138,9 +146,9 @@ export default function XatolarPage() {
                 {byTopic.map((g, i) => (
                   <button key={g.topicId} onClick={() => startPractice(g.ids, g.name)}
                     className={`w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors ${
-                      i > 0 ? 'border-t border-pline/50' : ''}`}>
+                      i > 0 ? 'border-t border-pline' : ''}`}>
                     <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
-                    <span className="bg-pdanger/15 border border-pdanger/40 text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-pdanger/15 border border-pdanger text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
                       {g.ids.length}
                     </span>
                     <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">{tt('practiceWord')} ›</span>
@@ -154,7 +162,7 @@ export default function XatolarPage() {
           {isPremium && topHard.length > 0 && (
             <>
               <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5 flex items-center gap-1.5">
-                <Flame size={11} className="text-pwarning" />
+                <Flame size={12} className="text-pmuted" />
                 {tt('topMistakes')}
               </p>
               <div className="flex flex-col gap-2">
@@ -168,7 +176,7 @@ export default function XatolarPage() {
                       style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                       {q.text}
                     </span>
-                    <span className="bg-pwarning/15 border border-pwarning/40 text-pwarning text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-pwarning/15 text-pwarning text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
                       {count} {tt('timesWord')}
                     </span>
                     <ChevronRight size={15} className="text-psubtle flex-shrink-0" />
@@ -178,6 +186,12 @@ export default function XatolarPage() {
             </>
           )}
         </>
+      )}
+
+      {showSubscriptionModal && (
+        <SubscriptionModal
+          onClose={() => setShowSubscriptionModal(false)}
+        />
       )}
     </div>
   )

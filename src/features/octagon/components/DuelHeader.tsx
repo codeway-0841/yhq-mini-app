@@ -12,14 +12,14 @@ export function DuelHeader({ title, inRound, yourScore, oppScore, onBack }: {
 }) {
   const navigate = useNavigate()
   return (
-    <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-      <button onClick={onBack ?? (() => goBack(navigate))} className="text-muted p-1"><X size={20} /></button>
+    <div className="flex items-center justify-between px-4 py-3 border-b border-pline bg-pcanvas">
+      <button onClick={onBack ?? (() => goBack(navigate))} className="text-pmuted p-1 hover:text-pfg transition-colors"><X size={20} /></button>
       <div className="flex items-center gap-2">
-        <Sword size={16} className="text-muted" />
-        <span className="text-sm font-bold">{title}</span>
+        <Sword size={16} className="text-pmuted" />
+        <span className="text-sm font-bold text-pfg">{title}</span>
       </div>
       {inRound ? (
-        <div className="flex gap-1 text-xs text-muted">
+        <div className="flex gap-1 text-xs text-pmuted">
           <span className="text-pprimary font-bold">{yourScore}</span>
           <span>:</span>
           <span className="text-pdanger font-bold">{oppScore}</span>

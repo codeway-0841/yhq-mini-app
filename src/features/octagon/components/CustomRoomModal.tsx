@@ -71,7 +71,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-surface border border-line p-5 shadow-2xl space-y-4 relative">
+      <div className="w-full max-w-sm rounded-3xl bg-psurface border border-pline p-5 shadow-2xl space-y-4 relative">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -79,28 +79,28 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               <Swords size={18} />
             </div>
             <div>
-              <h2 id="custom-room-title" className="text-sm font-black text-fg">{tt('customRoomTitle')}</h2>
-              <p className="text-[10px] text-muted">{tt('customRoomDesc')}</p>
+              <h2 id="custom-room-title" className="text-sm font-black text-pfg">{tt('customRoomTitle')}</h2>
+              <p className="text-[10px] text-pmuted">{tt('customRoomDesc')}</p>
             </div>
           </div>
           <button
             onClick={onClose}
             aria-label={tt('close')}
-            className="w-8 h-8 rounded-full bg-card hover:bg-elevated flex items-center justify-center text-muted hover:text-fg transition-colors"
+            className="w-8 h-8 rounded-full bg-pcard hover:bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
           >
             <X size={16} />
           </button>
         </div>
 
         {/* Tab switcher */}
-        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-card border border-line">
+        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard border border-pline">
           <button
             type="button"
             onClick={() => { setTab('create'); setErrorMsg(null) }}
             className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'create'
                 ? 'bg-ppurple text-ponprimary shadow-sm'
-                : 'text-muted hover:text-fg'
+                : 'text-pmuted hover:text-pfg'
             }`}
           >
             <Users size={14} />
@@ -123,19 +123,19 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         {/* TAB 1: Xona yaratish */}
         {tab === 'create' && (
           <div className="space-y-4 pt-1">
-            <div className="rounded-2xl bg-card border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 text-center space-y-2">
-              <span className="text-[11px] font-bold text-muted">{tt('yourRoomPin')}</span>
+            <div className="rounded-2xl bg-pcard border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 text-center space-y-2">
+              <span className="text-[11px] font-bold text-pmuted">{tt('yourRoomPin')}</span>
               <div className="text-3xl font-black font-mono tracking-widest text-pprimary select-all">
                 {formattedCreatedPin}
               </div>
-              <p className="text-[10.5px] text-muted">{tt('roomWaitingHint')}</p>
+              <p className="text-[10.5px] text-pmuted">{tt('roomWaitingHint')}</p>
             </div>
 
             <div className="grid grid-cols-2 gap-2">
               <button
                 type="button"
                 onClick={handleCopyPin}
-                className="py-2.5 px-3 rounded-xl bg-card border border-line hover:border-ppurple text-fg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="py-2.5 px-3 rounded-xl bg-pcard border border-pline hover:border-ppurple text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
@@ -165,7 +165,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         {tab === 'join' && (
           <div className="space-y-4 pt-1">
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-fg">{tt('enterPinPrompt')}</label>
+              <label className="text-xs font-bold text-pfg">{tt('enterPinPrompt')}</label>
               <input
                 type="text"
                 inputMode="numeric"
@@ -176,7 +176,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
                   setErrorMsg(null)
                 }}
                 placeholder={tt('pinInputPlaceholder')}
-                className="w-full px-4 py-3 rounded-2xl bg-card border border-line focus:border-ppurple text-center font-mono text-xl font-black text-fg placeholder:text-muted/40 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-2xl bg-pcard border border-pline focus:border-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-pmuted/40 focus:outline-none transition-colors"
                 autoFocus
               />
               {errorMsg && <p className="text-[11px] font-bold text-pdanger text-center">{errorMsg}</p>}

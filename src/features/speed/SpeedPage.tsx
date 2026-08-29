@@ -194,7 +194,7 @@ export default function SpeedPage() {
           const showResult = answered && !busy
           const style =
             !showResult && isChoice ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-pblue border-2 text-pfg motion-safe:animate-pulse' :
-            !showResult            ? 'bg-psurface border-pline text-pfg hover:border-pline/80 hover:bg-psurface/60 active:scale-[0.98]' :
+            !showResult            ? 'bg-psurface border-pline text-pfg hover:border-plineStrong hover:bg-psurface active:scale-[0.98]' :
             isRight                ? 'bg-pprimary/15 border-pprimary text-pfg' :
             isChoice               ? 'bg-pdanger/15 border-pdanger text-pdanger' :
                                      'bg-psurface border-pline text-pmuted'

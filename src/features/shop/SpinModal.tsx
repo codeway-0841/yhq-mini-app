@@ -9,7 +9,9 @@
  *    premium → syncFromServer (tariff/premium_until o'zgarishi).
  */
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { X, Coins, Crown, Loader2, Sparkles, Target } from 'lucide-react'
+import { X, Loader2, Sparkles, Target } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
+import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
@@ -362,9 +364,9 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
                   style={{ color: result.kind === 'coins' ? 'var(--p-gold)' : 'var(--p-purple)' }}
                 >
                   {result.kind === 'coins' ? (
-                    <Coins size={22} strokeWidth={2.2} />
+                    <CoinIcon size={24} />
                   ) : (
-                    <Crown size={22} strokeWidth={2.2} />
+                    <PremiumIcon size={24} />
                   )}
                   <span>{segLabel(result)}</span>
                 </div>

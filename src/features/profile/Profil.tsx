@@ -5,8 +5,10 @@ import {
   Copy, Phone, Lock, Globe, CreditCard,
   RotateCcw, Moon, Sun, Monitor, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, ChevronLeft, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, Coins, Crown, X,
+  BarChart2, CloudUpload, Ticket, Award, X,
 } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
+import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { api, avatarSrcFor } from '../../shared/api'
@@ -220,7 +222,7 @@ export default function Profil() {
       <Section title={tt('yourTariff').toUpperCase()}>
         {/* Tariff card */}
         <div className="px-4 py-3.5 flex items-center gap-3.5">
-          <Crown size={22} strokeWidth={1.75} className="shrink-0 text-pgold" />
+          <PremiumIcon size={22} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
             <p className="text-[14.5px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
             <p className="mt-0.5 text-[11px] leading-tight text-pmuted">
@@ -229,7 +231,6 @@ export default function Profil() {
           </div>
           {tariff === 'free' && (
             <Button
-              variant="gold"
               size="sm"
               className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
               onClick={() => {
@@ -303,30 +304,6 @@ export default function Profil() {
           onPress={() => openTelegramLink(BOT_URL)} />
       </Section>
 
-      {/* ── REFERAL: do'st taklif = +1 kun Premium ── */}
-      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard px-4 py-3.5">
-        <Share2 size={22} strokeWidth={1.75} className="shrink-0 text-pprimary" />
-        <div className="min-w-0 flex-1">
-          <p className="text-[13.5px] font-semibold text-pfg">{tt('refTitle')}</p>
-          <p className="mt-0.5 text-[10.5px] leading-snug text-pmuted">{tt('refDesc')}</p>
-          {refStats && refStats.invited > 0 && (
-            <p className="mt-1 text-[10.5px] font-semibold leading-snug text-pprimary">
-              {refStats.rewarded} {tt('refStatFriends')} · +{refStats.rewarded * refStats.rewardDays} {tt('refStatDays')}
-              {refStats.pending > 0 ? ` · ${refStats.pending} ${tt('refStatPending')}` : ''}
-            </p>
-          )}
-        </div>
-        <button type="button"
-          onClick={() => {
-            if (!user) return
-            shareUrl(`${BOT_URL}?start=ref_${user.id}`, tt('refShareText'))
-          }}
-          className="inline-flex h-[34px] flex-shrink-0 items-center gap-1.5 rounded-control bg-pprimary px-3 text-[12px] font-semibold text-ponprimary transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas">
-          <Share2 size={13} strokeWidth={1.75} />
-          {tt('refBtn')}
-        </button>
-      </div>
-
       {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
       <LinkAccountSection />
 
@@ -346,11 +323,11 @@ export default function Profil() {
       <Section title={tt('generalSection')}>
         {/* Do'kon (#40) — coin balansi + do'kon sahifasiga o'tish */}
         <Item
-          icon={Coins}
+          icon={CoinIcon}
           label={tt('shopMenuItem')}
           right={
             <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums text-pgold">
-              <Coins size={14} strokeWidth={1.75} />
+              <CoinIcon size={15} />
               {coins}
               <ChevronRight size={15} strokeWidth={1.75} className="text-psubtle" />
             </span>
@@ -410,6 +387,30 @@ export default function Profil() {
           onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Star}      label={tt('rateApp')}
           onPress={() => openTelegramLink(BOT_URL)} />
+        {/* Referal: do'st taklif qilish */}
+        <div className="px-4 py-3.5 flex items-center gap-3.5">
+          <Share2 size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+          <div className="min-w-0 flex-1">
+            <p className="text-[13.5px] font-semibold text-pfg">{tt('refTitle')}</p>
+            <p className="mt-0.5 text-[10.5px] leading-snug text-pmuted">{tt('refDesc')}</p>
+            {refStats && refStats.invited > 0 && (
+              <p className="mt-1 text-[10.5px] font-semibold leading-snug text-pprimary">
+                {refStats.rewarded} {tt('refStatFriends')} · +{refStats.rewarded * refStats.rewardDays} {tt('refStatDays')}
+                {refStats.pending > 0 ? ` · ${refStats.pending} ${tt('refStatPending')}` : ''}
+              </p>
+            )}
+          </div>
+          <Button
+            size="sm"
+            className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+            onClick={() => {
+              if (!user) return
+              shareUrl(`${BOT_URL}?start=ref_${user.id}`, tt('refShareText'))
+            }}
+          >
+            {tt('refBtn')}
+          </Button>
+        </div>
         <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(promptAddToHomeScreen()
             ? tt('installAppPrompt')
@@ -469,12 +470,12 @@ export default function Profil() {
       {showThemePicker && (
         <PickerSheet
           title={tt('themeLabel')}
-          titleIcon={<Sun size={18} className="text-ppurple" />}
+          titleIcon={<Sun size={18} className="text-pmuted" />}
           value={settings.theme}
           options={[
-            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-pwarning" /> },
-            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-ppurple" /> },
-            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-pblue" /> },
+            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-pmuted" /> },
+            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-pmuted" /> },
+            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-pmuted" /> },
           ]}
           onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
           onClose={() => setShowThemePicker(false)}

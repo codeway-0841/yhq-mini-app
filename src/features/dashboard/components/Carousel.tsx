@@ -1,6 +1,7 @@
 import { memo, useRef, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Crown, Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
+import { Swords, Trophy, GraduationCap, type LucideIcon } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { type Lang, useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
 
@@ -9,7 +10,7 @@ import { cn } from '../../../shared/lib/cn'
 // purple (Premium), blue (duel), gold (liga sovrini). Hex-alpha konkat YO'Q —
 // tokenlar color-mix bilan aralashadi.
 interface SlideConfig {
-  icon: LucideIcon
+  icon: LucideIcon | React.ComponentType<{ size?: number | string; className?: string; strokeWidth?: number }>
   color: string
   title: (lang: Lang) => string
   subtitle: (lang: Lang) => string
@@ -27,7 +28,7 @@ const SLIDES: SlideConfig[] = [
     useOnContinue: true,
   },
   {
-    icon: Crown,
+    icon: PremiumIcon,
     color: 'var(--p-purple)',
     title: (l) => l === 'ru' ? 'Попробуйте Premium' : 'Premium sinab ko\'ring',
     subtitle: (l) => l === 'ru' ? 'Без рекламы · Полный доступ' : 'Reklamasiz · To\'liq kirish',

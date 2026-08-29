@@ -4,7 +4,8 @@
  * Cancel → atomik coin refund (server coin_transactions 'merch_refund').
  */
 import { useCallback, useEffect, useState } from 'react'
-import { Package, Loader2, Phone, Check, Truck, XCircle, RefreshCw, User, Coins } from 'lucide-react'
+import { Package, Loader2, Phone, Check, Truck, XCircle, RefreshCw, User } from 'lucide-react'
+import { CoinIcon } from '../../../shared/components/CoinIcon'
 import { api, type AdminMerchOrderRow } from '../../../shared/api'
 import { getMerchItem } from '../../../../shared/merch-items'
 import { getMerchIcon } from '../../shop'
@@ -132,7 +133,7 @@ export default function AdminOrdersTab() {
                 </p>
                 <p className="flex items-center gap-1"><Phone size={10} strokeWidth={1.75} /> {o.phone} {o.note ? <span className="italic">· {o.note}</span> : null}</p>
                 <p className="flex items-center gap-1 opacity-70">
-                  <Coins size={10} strokeWidth={1.75} /> {o.price_paid.toLocaleString('ru-RU')} · {new Date(o.created_at).toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'uz-UZ', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
+                  <CoinIcon size={12} /> {o.price_paid.toLocaleString('ru-RU')} · {new Date(o.created_at).toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'uz-UZ', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}
                 </p>
               </div>
               {(o.status === 'new' || o.status === 'contacted') && (

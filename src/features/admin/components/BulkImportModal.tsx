@@ -488,8 +488,8 @@ export default function BulkImportModal({
                             onClick={() => updateQuestionAnswer(q.id_temp, optKey)}
                             className={`p-1.5 rounded-control border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
                               isCorrect
-                                ? 'bg-pprimary/20 border-pprimary/50 text-pfg font-semibold'
-                                : 'bg-psurface/60 border-pline/60 text-pmuted hover:text-pfg'
+                                ? 'bg-pprimary/20 border-pprimary text-pfg font-semibold'
+                                : 'bg-psurface border-pline text-pmuted hover:text-pfg'
                             }`}
                             title="To'g'ri javob qilish uchun bosing"
                           >

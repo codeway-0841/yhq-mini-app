@@ -7,7 +7,8 @@
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Crown, Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Star, Ticket } from 'lucide-react'
+import { Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Star, Ticket } from 'lucide-react'
+import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -84,7 +85,7 @@ export default function PremiumPage() {
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
         <div className="flex items-center gap-3.5">
-          <Crown size={24} strokeWidth={1.75} className="shrink-0 text-pgold" />
+          <PremiumIcon size={24} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
             <h2 className="text-[16px] font-semibold tracking-tight">KIWI Premium</h2>
             <p className="text-[12px] text-pmuted mt-0.5 leading-snug">

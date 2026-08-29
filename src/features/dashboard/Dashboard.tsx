@@ -4,8 +4,9 @@ import {
   Play, Swords, GraduationCap,
   Bookmark, Hash, Signpost,
   Ticket,
-  Bot, BookOpen, HeartCrack, Crown, NotebookText,
+  Bot, BookOpen, HeartCrack, NotebookText,
 } from 'lucide-react'
+import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -311,12 +312,12 @@ export default function Dashboard() {
 
           {/* 8. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
           <div className="mx-5 mb-6 mt-10 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
-            <Crown size={22} strokeWidth={1.75} className="shrink-0 text-pgold" />
+            <PremiumIcon size={22} className="shrink-0 text-pmuted" />
             <div className="min-w-0 flex-1">
               <p className="text-[13.5px] font-semibold text-pfg">Premium</p>
               <p className="mt-0.5 text-[11px] text-psubtle">{tt('premiumTagline')}</p>
             </div>
-            <Button variant="gold" size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>
+            <Button size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>
               {tt('tryWord')}
             </Button>
           </div>

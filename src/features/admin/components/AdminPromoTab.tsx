@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, X, Calendar, Users, Crown, Percent } from 'lucide-react'
+import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, X, Calendar, Users, Percent } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -213,7 +214,7 @@ export default function AdminPromoTab() {
                   {statusBadge}
                 </div>
 
-                <div className="grid grid-cols-3 gap-2 py-2 border-y border-pline/60 my-2 text-[11px]">
+                <div className="grid grid-cols-3 gap-2 py-2 border-y border-pline my-2 text-[11px]">
                   <div>
                     <span className="text-pmuted block">
                       {c.type === 'discount_percent' ? 'Chegirma:' : 'Muddat:'}
@@ -225,7 +226,7 @@ export default function AdminPromoTab() {
                         </>
                       ) : (
                         <>
-                          <Crown size={11} strokeWidth={1.75} className="text-pgold" /> {c.value} kun
+                          <PremiumIcon size={12} className="text-pgold" /> {c.value} kun
                         </>
                       )}
                     </span>
@@ -301,7 +302,7 @@ export default function AdminPromoTab() {
                         : 'bg-card border-pline text-pmuted'
                     }`}
                   >
-                    <Crown size={13} /> Premium kun
+                    <PremiumIcon size={14} /> Premium kun
                   </button>
                   <button
                     type="button"

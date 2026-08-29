@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { Search, Crown, User, Shield, Loader2, X, RotateCw, AlertCircle, Phone } from 'lucide-react'
+import { Search, User, Shield, Loader2, X, RotateCw, AlertCircle, Phone } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -165,7 +166,7 @@ export default function AdminUsersTab() {
                   <div className="flex-shrink-0">
                     {isPremium ? (
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-control text-[10px] font-semibold bg-ppurple/15 text-ppurple border border-ppurple/30">
-                        <Crown size={12} />
+                        <PremiumIcon size={12} />
                         Premium
                       </span>
                     ) : (
@@ -177,7 +178,7 @@ export default function AdminUsersTab() {
                 </div>
 
                 {/* Details info */}
-                <div className="grid grid-cols-3 gap-2 py-2 border-y border-pline/60 my-2 text-[11px]">
+                <div className="grid grid-cols-3 gap-2 py-2 border-y border-pline my-2 text-[11px]">
                   <div>
                     <span className="text-pmuted block">Savollar:</span>
                     <span className="font-semibold text-pfg">{u.answered} ta</span>
@@ -205,7 +206,7 @@ export default function AdminUsersTab() {
                     onClick={() => setSelectedUser(u)}
                     className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3 py-1.5 rounded-control text-xs font-semibold flex items-center gap-1"
                   >
-                    <Crown size={13} />
+                    <PremiumIcon size={13} />
                     Premium boshqarish
                   </button>
                 </div>
@@ -227,7 +228,7 @@ export default function AdminUsersTab() {
             </button>
 
             <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center gap-2">
-              <Crown size={18} className="text-ppurple" />
+              <PremiumIcon size={18} className="text-ppurple" />
               Premium berish
             </h3>
             <p className="text-xs text-pmuted mb-4 truncate">
@@ -247,7 +248,7 @@ export default function AdminUsersTab() {
                   className="rounded-container border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
                 >
                   <span className="flex items-center gap-1.5">
-                    <Crown size={13} strokeWidth={1.75} className="text-ppurple" />
+                    <PremiumIcon size={13} className="text-ppurple" />
                     7 kunlik Premium
                   </span>
                   <span className="text-pmuted text-[11px]">1 hafta</span>
@@ -259,7 +260,7 @@ export default function AdminUsersTab() {
                   className="rounded-container border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
                 >
                   <span className="flex items-center gap-1.5">
-                    <Crown size={13} strokeWidth={1.75} className="text-ppurple" />
+                    <PremiumIcon size={13} className="text-ppurple" />
                     30 kunlik Premium
                   </span>
                   <span className="text-pmuted text-[11px]">1 oy</span>
@@ -271,7 +272,7 @@ export default function AdminUsersTab() {
                   className="rounded-container border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
                 >
                   <span className="flex items-center gap-1.5">
-                    <Crown size={13} strokeWidth={1.75} className="text-ppurple" />
+                    <PremiumIcon size={13} className="text-ppurple" />
                     90 kunlik Premium
                   </span>
                   <span className="text-pmuted text-[11px]">3 oy</span>
@@ -283,7 +284,7 @@ export default function AdminUsersTab() {
                   className="rounded-container border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
                 >
                   <span className="flex items-center gap-1.5">
-                    <Crown size={13} strokeWidth={1.75} className="text-ppurple" />
+                    <PremiumIcon size={13} className="text-ppurple" />
                     365 kunlik Premium
                   </span>
                   <span className="text-pmuted text-[11px]">1 yil</span>

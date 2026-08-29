@@ -223,7 +223,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
                   {/* Darslik qoidasi / Nega shunday */}
                   {lessonInfo && (
-                    <div className="mt-2.5 pt-2.5 border-t border-pline/60 flex items-center justify-between gap-2">
+                    <div className="mt-2.5 pt-2.5 border-t border-pline flex items-center justify-between gap-2">
                       <div className="text-[11px] text-pmuted truncate">
                         <span className="font-semibold text-pfg">{tt('ruleExplanation')}: </span>
                         {language === 'ru' ? lessonInfo.lesson.titleRu : lessonInfo.lesson.titleUz}

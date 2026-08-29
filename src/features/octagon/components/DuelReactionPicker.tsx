@@ -89,8 +89,8 @@ export function DuelReactionPicker({
             setIsOpen(!isOpen)
           }}
           disabled={cooldown}
-          className={`w-11 h-11 rounded-2xl bg-card border border-line flex items-center justify-center text-fg shadow-lg active:scale-95 transition-all ${
-            isOpen ? 'border-ppurple bg-surface text-ppurple' : 'hover:bg-elevated'
+          className={`w-11 h-11 rounded-2xl bg-pcard border border-pline flex items-center justify-center text-pfg shadow-lg active:scale-95 transition-all ${
+            isOpen ? 'border-ppurple bg-psurface text-ppurple' : 'hover:bg-psurface'
           } ${cooldown ? 'opacity-50 cursor-not-allowed' : ''}`}
           title="Reaksiyalar"
         >
@@ -104,7 +104,7 @@ export function DuelReactionPicker({
             playSound('toggle')
             onToggleMute()
           }}
-          className="w-11 h-11 rounded-2xl bg-card border border-line flex items-center justify-center text-muted hover:text-fg shadow-lg active:scale-95 transition-all"
+          className="w-11 h-11 rounded-2xl bg-pcard border border-pline flex items-center justify-center text-pmuted hover:text-pfg shadow-lg active:scale-95 transition-all"
           title={isMuted ? 'Ovozni yoqish' : 'Ovozni o\'chirish'}
         >
           {isMuted ? <VolumeX size={18} className="text-pdanger" /> : <Volume2 size={18} />}
@@ -113,17 +113,17 @@ export function DuelReactionPicker({
 
       {/* Expanded Reactions Drawer */}
       {isOpen && (
-        <div className="absolute bottom-14 left-0 w-72 rounded-3xl bg-surface border border-line p-3.5 shadow-2xl space-y-3 z-50 animate-premiumIn">
+        <div className="absolute bottom-14 left-0 w-72 rounded-3xl bg-psurface border border-pline p-3.5 shadow-2xl space-y-3 z-50 animate-premiumIn">
           {/* Header & Tabs */}
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-1 bg-card p-0.5 rounded-xl border border-line">
+            <div className="flex items-center gap-1 bg-pcard p-0.5 rounded-xl border border-pline">
               <button
                 type="button"
                 onClick={() => setTab('emojis')}
                 className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'emojis'
                     ? 'bg-ppurple text-ponprimary shadow-xs'
-                    : 'text-muted hover:text-fg'
+                    : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 <Smile size={12} />
@@ -135,7 +135,7 @@ export function DuelReactionPicker({
                 className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'taunts'
                     ? 'bg-ppurple text-ponprimary shadow-xs'
-                    : 'text-muted hover:text-fg'
+                    : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 <MessageSquare size={12} />
@@ -146,7 +146,7 @@ export function DuelReactionPicker({
             <button
               type="button"
               onClick={() => setIsOpen(false)}
-              className="w-6 h-6 rounded-full bg-card hover:bg-elevated flex items-center justify-center text-muted hover:text-fg transition-colors"
+              className="w-6 h-6 rounded-full bg-pcard hover:bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
             >
               <X size={13} />
             </button>
@@ -160,7 +160,7 @@ export function DuelReactionPicker({
                   key={item.label}
                   type="button"
                   onClick={() => handleSendEmoji(item.emoji)}
-                  className="w-11 h-11 rounded-2xl bg-card hover:bg-elevated border border-line flex items-center justify-center text-2xl active:scale-90 transition-transform shadow-xs"
+                  className="w-11 h-11 rounded-2xl bg-pcard hover:bg-psurface border border-pline flex items-center justify-center text-2xl active:scale-90 transition-transform shadow-xs"
                 >
                   {item.emoji}
                 </button>
@@ -176,7 +176,7 @@ export function DuelReactionPicker({
                   key={idx}
                   type="button"
                   onClick={() => handleSendTaunt(item.text)}
-                  className="w-full text-left px-3 py-2 rounded-xl bg-card hover:bg-elevated border border-line text-xs font-bold text-fg flex items-center gap-2 active:scale-98 transition-all"
+                  className="w-full text-left px-3 py-2 rounded-xl bg-pcard hover:bg-psurface border border-pline text-xs font-bold text-pfg flex items-center gap-2 active:scale-98 transition-all"
                 >
                   <Zap size={13} className="text-ppurple shrink-0" />
                   <span className="truncate">{item.text}</span>

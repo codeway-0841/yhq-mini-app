@@ -23,7 +23,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
   return (
     <div className="w-full max-w-md">
       {deadline && (
-        <div className="w-full h-1.5 bg-line rounded-full overflow-hidden mb-2.5">
+        <div className="w-full h-1.5 bg-pline rounded-full overflow-hidden mb-2.5">
           <div
             className="h-full rounded-full transition-colors duration-300"
             style={{
@@ -33,7 +33,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           />
         </div>
       )}
-      <p className="text-xs text-muted mb-1 text-center">
+      <p className="text-xs text-pmuted mb-1 text-center">
         {tt('round')} {roundIndex + 1} / {roundCount}
         {timeLeft !== null && (
           <span className={`ml-2 font-bold ${timeLeft <= 5 ? 'text-pdanger animate-pulse' : 'text-pblue'}`}>
@@ -44,9 +44,9 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           <span className="ml-2 text-pwarning">• Raqib javob berdi</span>
         )}
       </p>
-      <p className="text-base font-semibold text-center mb-5 leading-snug">{q.text}</p>
+      <p className="text-base font-semibold text-center mb-5 leading-snug text-pfg">{q.text}</p>
       {q.image && (
-        <div className="rounded-xl overflow-hidden mb-4 border border-line flex items-center justify-center bg-elevated">
+        <div className="rounded-xl overflow-hidden mb-4 border border-pline flex items-center justify-center bg-pcard">
           <img src={q.image} alt="savol" loading="lazy"
             className="max-w-full max-h-[45vh] w-auto h-auto object-contain" />
         </div>
@@ -57,13 +57,13 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
         // To'g'ri variant FAQAT server ack/reveal'dan (lokal kalit yo'q)
         const showCorrect = answered && ackCorrectOptionId !== null && opt.id === ackCorrectOptionId
         const style =
-          !answered      ? 'bg-surface border-line text-fg' :
-          showCorrect    ? 'bg-psuccess/15 border-psuccess text-fg' :
-          isSelected && ackCorrect === true ? 'bg-psuccess/20 border-psuccess text-fg' :
+          !answered      ? 'bg-psurface border-pline text-pfg hover:bg-pcard' :
+          showCorrect    ? 'bg-psuccess/15 border-psuccess text-pfg' :
+          isSelected && ackCorrect === true ? 'bg-psuccess/20 border-psuccess text-pfg' :
           // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
-          isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-[rgb(var(--p-blue-rgb)/0.60)] text-fg' :
-          isSelected    ? 'bg-pdanger/15   border-pdanger   text-fg' :
-                          'bg-surface border-line text-muted'
+          isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-[rgb(var(--p-blue-rgb)/0.60)] text-pfg' :
+          isSelected    ? 'bg-pdanger/15   border-pdanger   text-pfg' :
+                          'bg-psurface border-pline text-pmuted'
         return (
           <button key={`${q.id}_${opt.id}`} type="button" disabled={answered} onClick={() => onAnswer(opt.id)}
             className={`w-full text-left rounded-xl border p-3.5 mb-2 transition-all focus:outline-none active:scale-[0.98] ${style}`}>

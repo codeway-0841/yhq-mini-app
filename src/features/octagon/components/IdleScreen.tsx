@@ -51,7 +51,7 @@ function UserAvatar({ name, src, frame }: {
   const inner = (
     <div className={cn(
       'size-8 text-[11px] rounded-full bg-psurface flex items-center justify-center text-pfg font-bold shrink-0 overflow-hidden',
-      !frameClass && 'border border-pline/40'
+      !frameClass && 'border border-pline'
     )}>
       {src ? (
         <img src={src} alt={name} className="size-full object-cover" loading="lazy" />
@@ -170,7 +170,7 @@ export function IdleScreen({
     return (
       <div className="w-full max-w-md mx-auto space-y-4 pt-1 animate-premiumIn">
         {/* Subview Nav Header */}
-        <div className="flex items-center justify-between pb-1 border-b border-pline/60">
+        <div className="flex items-center justify-between pb-2 border-b border-pline">
           <button
             type="button"
             onClick={() => { playSound('click'); haptics.impact('light'); setSubview(null) }}
@@ -241,7 +241,7 @@ export function IdleScreen({
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between pt-1 border-t border-pline/60">
+                      <div className="flex items-center justify-between pt-1 border-t border-pline">
                         <span className="font-display text-sm font-black text-pfg tracking-tight tabular-nums">
                           {h.yourScore} : {h.oppScore}
                         </span>
@@ -457,15 +457,15 @@ export function IdleScreen({
   return (
     <div className="w-full max-w-md mx-auto space-y-4 pt-1">
       {/* ── 1. Hero PvP Match Banner ── */}
-      <div className="relative overflow-hidden rounded-[26px] border border-ppurple/30 bg-gradient-to-b from-ppurple/15 via-pcard to-pcard p-5 text-center shadow-md">
-        <div className="pointer-events-none absolute -top-10 -right-10 size-32 rounded-full bg-ppurple/20 blur-2xl" />
-        <div className="pointer-events-none absolute -bottom-10 -left-10 size-32 rounded-full bg-pprimary/15 blur-2xl" />
+      <div className="relative overflow-hidden rounded-[26px] border border-pline bg-pcard p-5 text-center shadow-md">
+        <div className="pointer-events-none absolute -top-10 -right-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-purple)_15%,transparent)] blur-2xl" />
+        <div className="pointer-events-none absolute -bottom-10 -left-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-primary)_12%,transparent)] blur-2xl" />
 
         {/* Live Online Badge */}
         <div className={cn(
           "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-bold mb-3 transition-colors",
           onlineCount > 0
-            ? "border-psuccess/30 bg-psuccess/10 text-psuccess"
+            ? "border-[color-mix(in_srgb,var(--p-success)_30%,transparent)] bg-[color-mix(in_srgb,var(--p-success)_12%,transparent)] text-psuccess"
             : "border-pline bg-psurface text-psubtle"
         )}>
           <span className={cn(
@@ -519,7 +519,7 @@ export function IdleScreen({
                 title: language === 'ru' ? 'Мои бои' : 'Mening janglarim',
                 desc: `${totalWins} ${tt('duelWinsLabel').toLowerCase()}`,
                 icon: Swords,
-                color: 'text-pprimary bg-pprimary/10',
+                color: 'text-pprimary bg-[color-mix(in_srgb,var(--p-primary)_12%,transparent)]',
               } :
               tKey === 'leaderboard' ? {
                 title: tt('duelLeaderboardTab'),
@@ -531,12 +531,12 @@ export function IdleScreen({
                 title: 'Online',
                 desc: `${onlineCount} ${language === 'ru' ? 'онлайн' : 'faol'}`,
                 icon: Users,
-                color: 'text-psuccess bg-psuccess/10',
+                color: 'text-psuccess bg-[color-mix(in_srgb,var(--p-success)_12%,transparent)]',
               } : {
                 title: language === 'ru' ? 'С другом' : "Do'st bilan",
                 desc: 'PIN / Link',
                 icon: UserPlus,
-                color: 'text-ppurple bg-ppurple/10',
+                color: 'text-ppurple bg-[color-mix(in_srgb,var(--p-purple)_12%,transparent)]',
               }
             const Icon = meta.icon
 
@@ -545,7 +545,7 @@ export function IdleScreen({
                 key={tKey}
                 type="button"
                 onClick={() => { playSound('click'); haptics.impact('medium'); setSubview(tKey) }}
-                className="relative flex items-center justify-between p-3.5 rounded-[22px] border border-pline bg-pcard hover:border-pprimary/50 hover:bg-psurface/70 text-left transition-all duration-[120ms] ease-out active:scale-[0.97] shadow-xs group"
+                className="relative flex items-center justify-between p-3.5 rounded-[22px] border border-pline bg-pcard hover:border-plineStrong hover:bg-psurface text-left transition-all duration-[120ms] ease-out active:scale-[0.97] shadow-xs group"
               >
                 <div className="flex items-center gap-3 min-w-0 flex-1">
                   <div className={cn('size-10 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-105', meta.color)}>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Crown, Loader2, GraduationCap, Info, Volume2 } from 'lucide-react'
+import { Loader2, GraduationCap, Info, Volume2 } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { explainQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
 import { openTelegramLink } from '../../../platform/telegram'
 import { speak } from '../../../shared/lib/speech'
@@ -156,7 +157,7 @@ export default function AiTutorModal({
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex flex-col items-center text-center">
             <div className="w-14 h-14 rounded-container bg-ppurple/15 border border-ppurple/40 flex items-center justify-center mb-3">
-              <Crown size={26} strokeWidth={1.75} className="text-pwarning" />
+              <PremiumIcon size={28} className="text-pwarning" />
             </div>
             <p id="upsell-title" className="text-[17px] font-semibold text-pfg">{tt('premiumNeedTitle')}</p>
             <p className="text-[13px] text-pmuted mt-1.5 mb-4 leading-snug">
@@ -169,7 +170,7 @@ export default function AiTutorModal({
               }}
               className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 mb-2"
             >
-              <Crown size={16} strokeWidth={1.75} />
+              <PremiumIcon size={16} />
               {tt('buyPremium')}
             </button>
             <button
@@ -222,7 +223,7 @@ export default function AiTutorModal({
             }}
             className="mt-4 w-full py-2.5 rounded-container bg-ppurple/15 border border-ppurple/40 text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0"
           >
-            <Crown size={14} strokeWidth={1.75} />
+            <PremiumIcon size={14} />
             {tt('staticExplainAiHint')}
           </button>
         </div>

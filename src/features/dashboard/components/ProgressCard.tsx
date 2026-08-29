@@ -51,9 +51,9 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex items-center gap-2.5 rounded-control p-1.5 text-left',
+        'flex items-center gap-2 rounded-control bg-black/25 px-2.5 py-2 text-left border border-white/10',
         'transition-all duration-[120ms] ease-out active:scale-[0.97]',
-        'hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
+        'hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
       <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />
@@ -147,8 +147,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
           </span>
         </div>
 
-        {/* Pastki statistika: Seriya / XP / Reyting — Frosted sub-card pill container */}
-        <div className="mt-4 grid grid-cols-3 gap-2 rounded-[12px] border border-white/15 bg-black/35 p-2.5 backdrop-blur-md">
+        {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
+        <div className="mt-4 grid grid-cols-3 gap-2">
           {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
           <StatButton
             icon={Flame}

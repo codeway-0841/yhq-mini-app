@@ -10,7 +10,8 @@
  * Claim: api.claimCoinTask → store balansi SERVER javobidan.
  */
 import { useCallback, useEffect, useState } from 'react'
-import { Check, Coins, ClipboardCheck } from 'lucide-react'
+import { Check, ClipboardCheck } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError, type CoinTaskState } from '../../shared/api'
 import { DAILY_TASKS } from '../../../shared/daily-tasks'
@@ -138,11 +139,11 @@ export default function DailyTasksCard() {
                     )}>
                     {busy === task.id
                       ? <span aria-hidden="true" className="size-3 rounded-full border-2 border-current border-t-transparent motion-safe:animate-spin" />
-                      : <><Coins size={11} strokeWidth={1.75} /> {tt('taskClaim')} +{task.reward}</>}
+                      : <><CoinIcon size={12} /> {tt('taskClaim')} +{task.reward}</>}
                   </button>
                 ) : (
                   <span className="flex items-center justify-center gap-1 py-1.5 text-[11px] font-medium tabular-nums text-psubtle">
-                    <Coins size={11} strokeWidth={1.75} /> +{task.reward}
+                    <CoinIcon size={12} /> +{task.reward}
                   </span>
                 )}
               </div>

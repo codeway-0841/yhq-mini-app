@@ -49,6 +49,28 @@ const ClaudeTreeIcon = memo(function ClaudeTreeIcon({ className }: { className?:
     </svg>
   )
 })
+const ClickLogo = memo(function ClickLogo({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 157 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className || 'h-[18px] w-auto'}
+      aria-label="Click"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M39.3739 20.1572C39.3739 27.7941 27.2594 40.0006 19.6797 40.0006C12.1 40.0006 -0.0146637 27.7941 -0.0146637 20.1572C-0.0146637 12.5203 12.1 0.313477 19.6797 0.313477C27.2594 0.313477 39.3739 12.5203 39.3739 20.1572ZM27.5573 20.1572C27.5573 23.212 22.7113 28.0945 19.6797 28.0945C16.6477 28.0945 11.8019 23.212 11.8019 20.1572C11.8019 17.1025 16.6479 12.2197 19.6797 12.2197C22.7113 12.2197 27.5573 17.1025 27.5573 20.1572Z"
+        fill="#0065FF"
+      />
+      <path
+        d="M60.8212 39.9981C68.1709 39.9981 72.7769 35.3571 74.1744 29.2556H66.1004C65.1172 31.3415 63.5644 32.906 60.8212 32.906C57.5088 32.906 55.0764 30.5073 55.0764 26.3874C55.0764 22.2678 57.5088 19.8687 60.8212 19.8687C63.5644 19.8687 65.1172 21.4332 66.1004 23.5194H74.1744C72.7769 17.4179 68.1709 12.7766 60.8212 12.7766C52.9541 12.7766 47.2093 18.826 47.2093 26.3874C47.2093 33.9491 52.9541 39.9981 60.8212 39.9981ZM76.9305 39.4246H84.7459V0.313209H76.9305V39.4246ZM93.2986 9.80409C96.0417 9.80409 98.2155 7.61389 98.2155 4.90212C98.2155 2.19056 96.0417 0.000366211 93.2986 0.000366211C90.6592 0.000366211 88.4334 2.19056 88.4334 4.90212C88.4334 7.61389 90.6592 9.80409 93.2986 9.80409ZM89.4169 39.4246H97.2323V13.3504H89.4169V39.4246ZM113.963 39.9981C121.312 39.9981 125.918 35.3571 127.316 29.2556H119.242C118.258 31.3415 116.706 32.906 113.963 32.906C110.65 32.906 108.218 30.5073 108.218 26.3874C108.218 22.2678 110.65 19.8687 113.963 19.8687C116.706 19.8687 118.258 21.4332 119.242 23.5194H127.316C125.918 17.4179 121.312 12.7766 113.963 12.7766C106.096 12.7766 100.351 18.826 100.351 26.3874C100.351 33.9491 106.096 39.9981 113.963 39.9981ZM147.514 39.4246H156.985L145.185 25.136L154.708 13.3504H145.443L137.887 22.6849V0.313209H130.072V39.4246H137.887V27.7954L147.514 39.4246Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+})
 
 export default function SubscriptionModal({
   onClose,
@@ -215,34 +237,34 @@ export default function SubscriptionModal({
       position="bottom"
       labelId="subscription-modal-title"
       className="animate-fadeIn"
-      backdropClassName="bg-black/80 backdrop-blur-md"
+      backdropClassName="bg-black/60"
     >
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full max-w-lg mx-auto bg-[#131312] border-t border-[#262624] sm:border sm:border-[#262624] sm:rounded-t-3xl rounded-t-[28px] shadow-2xl relative animate-slideUp text-white select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
+        className="w-full max-w-lg mx-auto bg-pcard border-t border-pline sm:border sm:border-pline sm:rounded-t-3xl rounded-t-[28px] shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Yuqori surish tutqichi (Drag Handle) */}
         <div className="pt-3 pb-1 flex justify-center shrink-0">
-          <div className="w-10 h-1 rounded-full bg-white/20" />
+          <div className="w-10 h-1 rounded-full bg-plineStrong" />
         </div>
 
         {/* ── STEP 1: TARIFNI TANLANG (Claude Style Accordion) ── */}
         {step === 'choose_plan' && (
           <div className="flex flex-col flex-1 overflow-hidden">
             {/* Header: ← Upgrade */}
-            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-[#262624] shrink-0">
+            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-pline shrink-0">
               <div className="flex items-center gap-2">
                 <button
                   type="button"
                   onClick={onClose}
-                  className="size-8 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
+                  className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
                   aria-label="Orqaga"
                 >
                   <ChevronLeft size={20} />
                 </button>
-                <h2 id="subscription-modal-title" className="text-[17px] font-semibold text-white tracking-tight">
+                <h2 id="subscription-modal-title" className="text-[17px] font-semibold text-pfg tracking-tight">
                   {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
                 </h2>
               </div>
@@ -250,7 +272,7 @@ export default function SubscriptionModal({
                 type="button"
                 onClick={onClose}
                 aria-label="Yopish"
-                className="size-8 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
+                className="size-8 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
               >
                 <X size={17} />
               </button>
@@ -274,19 +296,19 @@ export default function SubscriptionModal({
                     className={cn(
                       'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden',
                       isSelected
-                        ? 'border-2 border-white bg-[#222220] ring-1 ring-white/20 shadow-lg'
-                        : 'border border-[#2B2B28] bg-[#1E1E1D] hover:border-[#383834] active:scale-[0.99]'
+                        ? 'border-2 border-pprimary bg-psurface shadow-lg ring-1 ring-pprimary/20'
+                        : 'border border-pline bg-psurface/40 hover:border-plineStrong active:scale-[0.99]'
                     )}
                   >
                     {/* Yuqori qator: Claude Geometrik Daraxt Ikonkasi + Nom + Tavsif + Narx */}
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex items-center gap-3.5 min-w-0">
-                        <ClaudeTreeIcon className={cn('size-10 shrink-0 transition-opacity', isSelected ? 'text-white' : 'text-white/60')} />
+                        <ClaudeTreeIcon className={cn('size-10 shrink-0 transition-opacity', isSelected ? 'text-pprimary' : 'text-pmuted')} />
                         <div className="min-w-0">
-                          <span className="text-[17px] font-bold text-white tracking-tight block">
+                          <span className="text-[17px] font-bold text-pfg tracking-tight block">
                             {tierName}
                           </span>
-                          <p className="text-[12.5px] text-white/60 mt-0.5 leading-snug font-normal">
+                          <p className="text-[12.5px] text-pmuted mt-0.5 leading-snug font-normal">
                             {badgeText}
                           </p>
                         </div>
@@ -294,23 +316,23 @@ export default function SubscriptionModal({
 
                       {/* Narx va Muddat */}
                       <div className="text-right flex flex-col items-end shrink-0">
-                        <div className="flex items-center gap-1 rounded-full bg-[#2A2A28] border border-[#383834] px-2.5 py-0.5 text-[10.5px]">
-                          <span className="font-semibold text-white/90">
+                        <div className="flex items-center gap-1 rounded-full bg-psurface border border-pline px-2.5 py-0.5 text-[10.5px]">
+                          <span className="font-semibold text-pfg">
                             {lang === 'ru' ? plan.periodRu : plan.periodUz}
                           </span>
                           {plan.discountPercent > 0 && (
-                            <span className="font-bold text-sky-400">
+                            <span className="font-bold text-pblue">
                               -{plan.discountPercent}%
                             </span>
                           )}
                         </div>
                         <div className="mt-1.5 flex items-baseline justify-end">
-                          <span className="text-[18px] font-extrabold text-white tabular-nums tracking-tight">
+                          <span className="text-[18px] font-extrabold text-pfg tabular-nums tracking-tight">
                             {formatUzs(plan.priceUzs, lang)}
                           </span>
                         </div>
                         {plan.originalPriceUzs > plan.priceUzs && (
-                          <span className="text-[11px] text-white/40 line-through tabular-nums -mt-0.5">
+                          <span className="text-[11px] text-psubtle line-through tabular-nums -mt-0.5">
                             {formatUzs(plan.originalPriceUzs, lang)}
                           </span>
                         )}
@@ -319,22 +341,22 @@ export default function SubscriptionModal({
 
                     {/* Ochiladigan Imkoniyatlar Ro'yxati (Expanded Checklist) */}
                     {isSelected && (
-                      <div className="mt-4 pt-3.5 border-t border-[#333330] space-y-2.5 animate-fadeIn">
-                        <p className="text-[12.5px] font-semibold text-white/70">
+                      <div className="mt-4 pt-3.5 border-t border-pline space-y-2.5 animate-fadeIn">
+                        <p className="text-[12.5px] font-semibold text-pfg">
                           {lang === 'ru' ? 'Все возможности тарифа:' : "Tarifdagi barcha imkoniyatlar:"}
                         </p>
                         {features.map((feat, idx) => (
                           <div key={idx} className="flex items-start gap-2.5">
                             {/* Claude uslubidagi oddiy, dumaloqsiz pitechka */}
-                            <Check size={15} strokeWidth={2.2} className="mt-0.5 shrink-0 text-white/75" />
-                            <span className="text-[13px] text-white/85 font-normal leading-relaxed">
+                            <Check size={15} strokeWidth={2.2} className="mt-0.5 shrink-0 text-pprimary" />
+                            <span className="text-[13px] text-pfg/90 font-normal leading-relaxed">
                               {feat}
                             </span>
                           </div>
                         ))}
 
                         {plan.key === 'lifetime' && (
-                          <div className="pt-1 flex items-center gap-1 text-[11.5px] font-semibold text-white/90">
+                          <div className="pt-1 flex items-center gap-1 text-[11.5px] font-semibold text-pprimary">
                             <Sparkles size={13} />
                             <span>{tt('specialOfferDetail')}</span>
                             <ChevronRight size={13} />
@@ -347,8 +369,8 @@ export default function SubscriptionModal({
               })}
             </div>
 
-            {/* Pastki Harakat Tugmasi: Davom etish (Oq Claude CTA) */}
-            <div className="p-4 sm:p-5 border-t border-[#262624] bg-[#131312] shrink-0">
+            {/* Pastki Harakat Tugmasi: Davom etish (Theme-adaptive CTA) */}
+            <div className="p-4 sm:p-5 border-t border-pline bg-pcard shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -356,7 +378,7 @@ export default function SubscriptionModal({
                   haptics.impact('medium')
                   setStep('payment_method')
                 }}
-                className="w-full py-4 px-6 rounded-2xl bg-white text-black hover:bg-slate-100 active:scale-[0.98] font-bold text-[15.5px] tracking-wide shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
+                className="w-full py-4 px-6 rounded-2xl bg-pprimary text-ponprimary hover:brightness-[1.06] active:scale-[0.98] font-bold text-[15.5px] tracking-wide shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
               >
                 <span>{tt('continueAction')}</span>
               </button>
@@ -368,17 +390,17 @@ export default function SubscriptionModal({
         {step === 'payment_method' && (
           <div className="flex flex-col flex-1 overflow-hidden">
             {/* Header with Back button & Help link */}
-            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-[#262624] shrink-0">
+            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-pline shrink-0">
               <div className="flex items-center gap-2">
                 <button
                   type="button"
                   onClick={() => setStep('choose_plan')}
-                  className="size-8 rounded-full hover:bg-white/10 text-white/70 hover:text-white transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
+                  className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
                   aria-label="Orqaga"
                 >
                   <ChevronLeft size={20} />
                 </button>
-                <h2 className="text-[17px] font-bold tracking-tight text-white">
+                <h2 className="text-[17px] font-bold tracking-tight text-pfg">
                   {tt('selectPaymentTitle')}
                 </h2>
               </div>
@@ -387,7 +409,7 @@ export default function SubscriptionModal({
                 <button
                   type="button"
                   onClick={handleGetHelp}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[#1E1E1D] hover:bg-[#2A2A28] border border-[#333330] px-3 py-1 text-[11px] font-semibold text-white/70 hover:text-white transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-psurface hover:bg-pcanvas border border-pline px-3 py-1 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer"
                 >
                   <Headphones size={12} />
                   <span>{tt('getHelp')}</span>
@@ -396,7 +418,7 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={onClose}
                   aria-label="Yopish"
-                  className="size-8 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
+                  className="size-8 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
                 >
                   <X size={18} />
                 </button>
@@ -408,14 +430,14 @@ export default function SubscriptionModal({
               {/* Success Screen */}
               {isSuccess ? (
                 <div className="py-8 text-center space-y-4">
-                  <div className="size-16 rounded-full border border-emerald-500/40 bg-emerald-500/15 text-emerald-400 mx-auto flex items-center justify-center animate-bounce shadow-md">
+                  <div className="size-16 rounded-full border border-psuccess/40 bg-psuccess/15 text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
                     <CheckCircle2 size={34} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">
+                    <h3 className="text-xl font-bold text-pfg">
                       {lang === 'ru' ? 'Оплата прошла успешно!' : "To'lov muvaffaqiyatli amalga oshirildi!"}
                     </h3>
-                    <p className="text-[13px] text-white/60 mt-1">
+                    <p className="text-[13px] text-pmuted mt-1">
                       {lang === 'ru'
                         ? 'Премиум подписка активирована. Приятного обучения!'
                         : "Premium obuna faollashdi. Unumli bilim olishingizni tilaymiz!"}
@@ -424,7 +446,7 @@ export default function SubscriptionModal({
                   <button
                     type="button"
                     onClick={onClose}
-                    className="w-full py-3.5 rounded-xl bg-white text-black font-bold text-sm hover:bg-slate-100 active:scale-98 transition-all cursor-pointer shadow-md"
+                    className="w-full py-3.5 rounded-xl bg-pprimary text-ponprimary font-bold text-sm hover:brightness-[1.06] active:scale-98 transition-all cursor-pointer shadow-md"
                   >
                     {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
                   </button>
@@ -432,26 +454,26 @@ export default function SubscriptionModal({
               ) : (
                 <>
                   {/* Tanlangan Tarif Kartasi */}
-                  <div className="rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] p-4 flex items-center justify-between gap-3 shadow-sm">
+                  <div className="rounded-2xl border border-pline bg-psurface p-4 flex items-center justify-between gap-3 shadow-sm">
                     <div className="flex items-center gap-3.5">
-                      <ClaudeTreeIcon className="size-8 text-white/90 shrink-0" />
+                      <ClaudeTreeIcon className="size-8 text-pprimary shrink-0" />
                       <div>
-                        <p className="text-[16px] font-bold text-white">
+                        <p className="text-[16px] font-bold text-pfg">
                           {lang === 'ru' ? selectedPlan.tierNameRu : selectedPlan.tierNameUz}
                         </p>
                         <div className="flex items-center gap-2 mt-0.5">
-                          <span className="text-[11px] text-white/55">
+                          <span className="text-[11px] text-pmuted">
                             {lang === 'ru' ? selectedPlan.periodRu : selectedPlan.periodUz} · {lang === 'ru' ? selectedPlan.badgeRu : selectedPlan.badgeUz}
                           </span>
                         </div>
                       </div>
                     </div>
                     <div className="text-right">
-                      <span className="text-[17px] font-bold text-white tabular-nums">
+                      <span className="text-[17px] font-bold text-pfg tabular-nums">
                         {formatUzs(finalPriceUzs, lang)}
                       </span>
                       {appliedPromo && (
-                        <span className="block text-[11px] text-white/40 line-through tabular-nums">
+                        <span className="block text-[11px] text-psubtle line-through tabular-nums">
                           {formatUzs(selectedPlan.priceUzs, lang)}
                         </span>
                       )}
@@ -460,13 +482,13 @@ export default function SubscriptionModal({
 
                   {/* Tasdiqlangan Raqam */}
                   <div className="space-y-1.5">
-                    <p className="text-[12px] font-semibold text-white/60">
+                    <p className="text-[12px] font-semibold text-pmuted">
                       {tt('verifiedPhone')}
                     </p>
-                    <div className="rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] p-3.5 flex items-center justify-between gap-2 shadow-sm">
+                    <div className="rounded-2xl border border-pline bg-psurface p-3.5 flex items-center justify-between gap-2 shadow-sm">
                       <div className="flex items-center gap-2.5">
-                        <ShieldCheck size={19} className="text-white/80" />
-                        <span className="text-[14px] font-semibold text-white tabular-nums tracking-wide">
+                        <ShieldCheck size={19} className="text-pmuted" />
+                        <span className="text-[14px] font-semibold text-pfg tabular-nums tracking-wide">
                           {user?.phone ? user.phone : tt('phoneNotSet')}
                         </span>
                       </div>
@@ -477,7 +499,7 @@ export default function SubscriptionModal({
                           onClose()
                         }}
                         aria-label="Tahrirlash"
-                        className="p-1.5 rounded-lg text-white/50 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                        className="p-1.5 rounded-lg text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
                       >
                         <Pencil size={13} />
                       </button>
@@ -486,8 +508,8 @@ export default function SubscriptionModal({
 
                   {/* To'lov Tizimlari Tanlovi */}
                   <div className="space-y-2 pt-1">
-                    <p className="text-[12px] font-semibold text-white/60">
-                      {tt('paymentMethodLabel')}: <span className="text-white capitalize font-bold">{selectedProvider}</span>
+                    <p className="text-[12px] font-semibold text-pmuted">
+                      {tt('paymentMethodLabel')}: <span className="text-pfg capitalize font-bold">{selectedProvider}</span>
                     </p>
                     <div className="grid grid-cols-3 gap-2.5">
                       {/* 1. Click */}
@@ -500,11 +522,11 @@ export default function SubscriptionModal({
                         className={cn(
                           'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
                           selectedProvider === 'click'
-                            ? 'border-white bg-white/15 text-white font-bold shadow-sm'
-                            : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
+                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
+                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
                         )}
                       >
-                        <img src="/click.svg" alt="Click" className="h-[18px] w-auto" />
+                        <ClickLogo className="h-[18px] w-auto" />
                       </button>
 
                       {/* 2. Payme */}
@@ -517,8 +539,8 @@ export default function SubscriptionModal({
                         className={cn(
                           'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
                           selectedProvider === 'payme'
-                            ? 'border-white bg-white/15 text-white font-bold shadow-sm'
-                            : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
+                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
+                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
                         )}
                       >
                         <img src="/payme.svg" alt="Payme" className="h-[18px] w-auto" />
@@ -534,8 +556,8 @@ export default function SubscriptionModal({
                         className={cn(
                           'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
                           selectedProvider === 'stars'
-                            ? 'border-white bg-white/15 text-white font-bold shadow-sm'
-                            : 'border-[#2B2B28] bg-[#1E1E1D] text-white/60 hover:border-white/30 hover:text-white'
+                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
+                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
                         )}
                       >
                         <div className="flex items-center gap-1.5">
@@ -550,10 +572,10 @@ export default function SubscriptionModal({
                       deb belgilanadi; bekor buyurtma kodni kuydirmaydi) */}
                   <div className="space-y-2 pt-1">
                     {appliedPromo ? (
-                      <div className="flex items-center justify-between rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-3.5">
+                      <div className="flex items-center justify-between rounded-2xl border border-psuccess/30 bg-psuccess/10 p-3.5">
                         <div className="flex items-center gap-2.5">
-                          <Ticket size={16} className="text-emerald-400" />
-                          <span className="text-[13px] font-bold text-emerald-400">
+                          <Ticket size={16} className="text-psuccess" />
+                          <span className="text-[13px] font-bold text-psuccess">
                             {appliedPromo.code} · −{appliedPromo.percent}%
                           </span>
                         </div>
@@ -561,48 +583,48 @@ export default function SubscriptionModal({
                           type="button"
                           onClick={clearPromo}
                           aria-label={tt('cancel')}
-                          className="p-1.5 rounded-lg text-emerald-400/60 hover:text-emerald-400 hover:bg-white/10 transition-colors cursor-pointer"
+                          className="p-1.5 rounded-lg text-psuccess/60 hover:text-psuccess hover:bg-psurface transition-colors cursor-pointer"
                         >
                           <X size={14} />
                         </button>
                       </div>
                     ) : (
                       <div className="flex gap-2.5">
-                        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] px-3.5">
-                          <Ticket size={14} className="text-white/50 shrink-0" />
+                        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-pline bg-psurface px-3.5">
+                          <Ticket size={14} className="text-pmuted shrink-0" />
                           <input
                             value={promoInput}
                             onChange={(e) => { setPromoInput(e.target.value.toUpperCase()); setPromoError(null) }}
                             placeholder={tt('promoInputPlaceholder')}
                             maxLength={30}
                             disabled={promoBusy || isWaitingPayment}
-                            className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[13px] font-semibold text-white placeholder:text-white/30 tracking-wider uppercase"
+                            className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[13px] font-semibold text-pfg placeholder:text-psubtle tracking-wider uppercase"
                           />
                         </div>
                         <button
                           type="button"
                           onClick={handleApplyPromo}
                           disabled={!promoInput.trim() || promoBusy || isWaitingPayment}
-                          className="px-4 py-3 rounded-2xl border border-[#2B2B28] bg-[#1E1E1D] text-[13px] font-bold text-white hover:bg-white/10 disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0"
+                          className="px-4 py-3 rounded-2xl border border-pline bg-psurface text-[13px] font-bold text-pfg hover:bg-pcanvas disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0"
                         >
                           {promoBusy ? <Loader2 size={15} className="animate-spin" /> : tt('promoApply')}
                         </button>
                       </div>
                     )}
                     {promoError && (
-                      <p className="text-[12px] text-red-400 px-1">{promoError}</p>
+                      <p className="text-[12px] text-pdanger px-1">{promoError}</p>
                     )}
                   </div>
 
                   {/* Polling / Waiting Indicator */}
                   {isWaitingPayment && (
-                    <div className="p-3.5 rounded-2xl bg-white/5 border border-white/15 flex items-center gap-3">
-                      <Loader2 size={19} className="text-white animate-spin shrink-0" />
+                    <div className="p-3.5 rounded-2xl bg-pblue/10 border border-pblue/30 flex items-center gap-3">
+                      <Loader2 size={19} className="text-pblue animate-spin shrink-0" />
                       <div className="text-xs">
-                        <p className="font-bold text-white">
+                        <p className="font-bold text-pfg">
                           {lang === 'ru' ? 'Ожидание подтверждения оплаты...' : "To'lov tasdiqlanishi kutilmoqda..."}
                         </p>
-                        <p className="text-[11.5px] text-white/60 mt-0.5">
+                        <p className="text-[11.5px] text-pmuted mt-0.5">
                           {lang === 'ru'
                             ? 'Оплатите через приложение, Premium включится автоматически'
                             : "Ilova orqali to'lang, Premium avtomatik yoqiladi"}
@@ -613,7 +635,7 @@ export default function SubscriptionModal({
 
                   {/* Error message */}
                   {errorMsg && (
-                    <div className="p-3.5 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs flex items-center gap-2">
+                    <div className="p-3.5 rounded-2xl bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
                       <AlertCircle size={15} className="shrink-0" />
                       <span>{errorMsg}</span>
                     </div>
@@ -622,17 +644,17 @@ export default function SubscriptionModal({
               )}
             </div>
 
-            {/* Pastki Harakat Tugmasi: To'lash (Oq CTA) */}
+            {/* Pastki Harakat Tugmasi: To'lash (Theme-adaptive CTA) */}
             {!isSuccess && (
-              <div className="p-4 sm:p-5 border-t border-[#262624] bg-[#131312] shrink-0">
+              <div className="p-4 sm:p-5 border-t border-pline bg-pcard shrink-0">
                 <button
                   type="button"
                   disabled={loadingProvider !== null || isWaitingPayment}
                   onClick={handleProceedToPayment}
-                  className="w-full py-4 px-6 rounded-2xl bg-white text-black hover:bg-slate-100 disabled:opacity-50 active:scale-[0.98] font-bold text-[15.5px] tracking-wide shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="w-full py-4 px-6 rounded-2xl bg-pprimary text-ponprimary hover:brightness-[1.06] disabled:opacity-50 active:scale-[0.98] font-bold text-[15.5px] tracking-wide shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
                   {loadingProvider !== null ? (
-                    <Loader2 size={19} className="animate-spin text-black" />
+                    <Loader2 size={19} className="animate-spin text-ponprimary" />
                   ) : (
                     <>
                       <span>

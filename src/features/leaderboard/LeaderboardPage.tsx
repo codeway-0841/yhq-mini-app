@@ -57,7 +57,7 @@ function UserAvatar({ name, src, frame, size = 'md' }: {
     <div className={cn(
       sizeClasses,
       'rounded-full bg-psurface flex items-center justify-center text-pfg font-bold shrink-0 overflow-hidden',
-      !frameClass && 'border border-pline/40'
+      !frameClass && 'border border-pline'
     )}>
       {src ? (
         <img src={src} alt={name} className="size-full object-cover" loading="lazy" />
@@ -374,9 +374,9 @@ export default function LeaderboardPage() {
           </button>
 
           {showHistory && (
-            <div className="mt-3.5 space-y-3 border-t border-pline/60 pt-3">
+            <div className="mt-3.5 space-y-3 border-t border-pline pt-3">
               {seasons.map((s, si) => (
-                <div key={s.periodKey} className={si > 0 ? 'border-t border-pline/40 pt-2.5' : ''}>
+                <div key={s.periodKey} className={si > 0 ? 'border-t border-pline pt-2.5' : ''}>
                   <p className="mb-2 text-[10.5px] font-bold text-psubtle">
                     {fmtWeekRange(s.periodKey)}
                   </p>

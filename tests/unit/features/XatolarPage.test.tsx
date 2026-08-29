@@ -87,7 +87,7 @@ describe('XatolarPage', () => {
     setWrong({ 1: 1, 3: 2 })
     render(<XatolarPage />)
 
-    expect(screen.getByText('⭐250')).toBeInTheDocument()
+    expect(screen.getByText(/Obuna bo'lish/i)).toBeInTheDocument()
     expect(screen.queryByText('Belgilar')).toBeNull()
   })
 

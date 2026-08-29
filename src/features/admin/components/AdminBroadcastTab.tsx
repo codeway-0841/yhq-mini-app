@@ -17,7 +17,6 @@ import {
   RotateCw,
   Users,
   CircleDollarSign,
-  Crown,
   Moon,
   Target,
   Lightbulb,
@@ -26,6 +25,7 @@ import {
   Ban,
   type LucideIcon,
 } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -39,7 +39,7 @@ interface AdminBroadcastTabProps {
 
 type BroadcastTarget = 'all' | 'free' | 'premium' | 'inactive_7d' | 'active_today'
 
-const TARGET_LABELS: Record<BroadcastTarget, { title: string; desc: string; icon: LucideIcon }> = {
+const TARGET_LABELS: Record<BroadcastTarget, { title: string; desc: string; icon: LucideIcon | React.ComponentType<{ size?: number | string; className?: string; strokeWidth?: number }> }> = {
   all: {
     title: 'Barcha foydalanuvchilar',
     desc: 'Barcha Telegram obunachilariga',
@@ -53,7 +53,7 @@ const TARGET_LABELS: Record<BroadcastTarget, { title: string; desc: string; icon
   premium: {
     title: 'Faqat Premium',
     desc: 'Eksklyuziv yangiliklar va minnatdorchilik',
-    icon: Crown,
+    icon: PremiumIcon,
   },
   inactive_7d: {
     title: 'Nofaollar (7+ kun)',

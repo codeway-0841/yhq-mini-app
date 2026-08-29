@@ -14,8 +14,10 @@
  */
 import { useMemo, useState } from 'react'
 import {
-  ChevronLeft, Coins, Crown, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift, Clock, Info,
+  ChevronLeft, Sparkles, Check, Loader2, Palette, History, Image as ImageIcon, Gift, Clock, Info,
 } from 'lucide-react'
+import { CoinIcon } from '../../shared/components/CoinIcon'
+import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError } from '../../shared/api'
@@ -191,7 +193,7 @@ export default function ShopPage() {
             className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
             {busy === item.id
               ? <Loader2 size={13} className="animate-spin" />
-              : <><Coins size={13} strokeWidth={1.75} className="text-pgold" /> {fmtCoins(item.price)}</>}
+              : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}
           </button>
         )}
       </div>
@@ -228,13 +230,13 @@ export default function ShopPage() {
           <div className="min-w-0">
             <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
             <p className="mt-1 flex items-center gap-1.5 text-[26px] font-semibold tracking-tight tabular-nums">
-              <Coins size={21} strokeWidth={1.75} className="flex-none text-pgold" />
+              <CoinIcon size={22} className="flex-none text-pgold" />
               {fmtCoins(coins)}
             </p>
           </div>
           {isPremium && (
             <span className="inline-flex flex-none items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] px-2.5 py-1 text-[10.5px] font-semibold text-pgold">
-              <Crown size={11} strokeWidth={1.75} /> Premium
+              <PremiumIcon size={12} /> Premium
             </span>
           )}
         </div>
@@ -290,7 +292,7 @@ export default function ShopPage() {
                   className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
                   {busy === item.id
                     ? <Loader2 size={13} className="animate-spin" />
-                    : <><Coins size={13} strokeWidth={1.75} className="text-pgold" /> {fmtCoins(item.price)}</>}
+                    : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}
                 </button>
               )}
             </div>
@@ -302,7 +304,7 @@ export default function ShopPage() {
       {premiumItem && (
         <>
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
-            <Crown size={11} /> Premium
+            <PremiumIcon size={12} /> Premium
           </p>
           <div className="mx-5 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
             <div className="flex size-11 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
@@ -320,7 +322,7 @@ export default function ShopPage() {
               disabled={busy !== null}
               onClick={() => buy(premiumItem.id)}
             >
-              <Coins size={13} strokeWidth={1.75} /> {fmtCoins(premiumItem.price)}
+              <CoinIcon size={14} /> {fmtCoins(premiumItem.price)}
             </Button>
           </div>
         </>

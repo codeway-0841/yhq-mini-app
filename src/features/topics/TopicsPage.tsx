@@ -1,15 +1,15 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
 import { lessons as lessonsData } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
 import { goBack } from '../../shared/lib/navigation'
-import { HeartCrack, Lock, Play, Check, ChevronLeft, ChevronDown } from 'lucide-react'
+import { Lock, Play, Check, ChevronLeft, ChevronDown } from 'lucide-react'
 import { getModuleIcon } from '../lessons'
+import { cn } from '../../shared/lib/cn'
 
 /** ── Dars-bobliq test (v1.1: CURATED mapping — runtime keyword emas!) ──────
  *
@@ -54,9 +54,8 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
     <div className="rounded-container border border-pline bg-pcard overflow-hidden">
       {/* Modul sarlavhasi — bosilganda ochiladi/yopiladi */}
       <button onClick={onToggle} className="w-full flex items-center gap-3 p-3.5 text-left active:opacity-80">
-        <div className="w-10 h-10 rounded-control flex items-center justify-center flex-shrink-0"
-          style={{ background: `color-mix(in srgb, ${mod.color} 12%, transparent)`, border: `1px solid color-mix(in srgb, ${mod.color} 24%, transparent)` }}>
-          {(() => { const ModIcon = getModuleIcon(mod.id); return <ModIcon size={18} strokeWidth={1.75} style={{ color: mod.color }} /> })()}
+        <div className="w-10 h-10 rounded-control bg-psurface flex items-center justify-center flex-shrink-0">
+          {(() => { const ModIcon = getModuleIcon(mod.id); return <ModIcon size={18} strokeWidth={1.75} className="text-pmuted" /> })()}
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-[15px] font-semibold text-pfg truncate">{name}</p>
@@ -75,7 +74,7 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
 
       {/* Modul ichidagi FAQAT ko'rinadigan darslar (real test bor) */}
       {open && (
-        <div className="border-t border-pline/50">
+        <div className="border-t border-pline">
           {total === 0 && (
             <p className="text-center text-pmuted text-xs py-4">{lang === 'ru' ? 'Уроки скоро' : 'Darslar tez kunda'}</p>
           )}
@@ -84,19 +83,21 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
             return (
               <button key={l.idx} onClick={() => st !== 'locked' && onLesson(l)} disabled={st === 'locked'}
                 className={`w-full flex items-center gap-3 px-3.5 py-3 text-left transition-colors ${
-                  st === 'locked' ? 'opacity-45 cursor-not-allowed' : 'hover:bg-psurface/50 active:opacity-80'}`}>
-                {/* Chap icon — holat bo'yicha */}
-                <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={st === 'done'
-                    ? { background: 'rgb(var(--p-primary-rgb) / 0.15)', border: '1.5px solid var(--p-primary)' }
+                  st === 'locked' ? 'opacity-45 cursor-not-allowed' : 'hover:bg-psurface active:opacity-80'}`}>
+                {/* Chap icon — holat bo'yicha (borderlarsiz, toza fonda) */}
+                <div className={cn(
+                  "w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0",
+                  st === 'done'
+                    ? "bg-[color-mix(in_srgb,var(--p-primary)_15%,transparent)] text-pprimary"
                     : st === 'active'
-                      ? { background: 'rgb(var(--p-blue-rgb) / 0.15)', border: '1.5px solid var(--p-blue)' }
-                      : { background: 'var(--theme-elevated)', border: '1.5px solid var(--theme-line)' }}>
+                      ? "bg-[color-mix(in_srgb,var(--p-blue)_15%,transparent)] text-pblue"
+                      : "bg-psurface text-pmuted"
+                )}>
                   {st === 'done'
-                    ? <Check size={16} strokeWidth={1.75} className="text-pprimary" />
+                    ? <Check size={16} strokeWidth={2} />
                     : st === 'active'
-                      ? <Play size={14} strokeWidth={1.75} className="text-pblue" />
-                      : <Lock size={13} strokeWidth={1.75} className="text-pmuted" />}
+                      ? <Play size={14} strokeWidth={2} />
+                      : <Lock size={13} strokeWidth={1.75} />}
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-[13px] font-semibold text-pfg truncate">
@@ -123,22 +124,14 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
 export default function TopicsPage() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS
-  const settings      = useAppStore((s) => s.settings)
-  const wrongByTicket = useAppStore((s) => s.wrongByTicket)
-  const user          = useAppStore((s) => s.user)
+  const settings    = useAppStore((s) => s.settings)
+  const user        = useAppStore((s) => s.user)
   const tt = useT(settings.language)
   const lang = settings.language
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
-  const subjectId   = useSubjectStore((s) => s.subjectId)
 
   const [openId, setOpenId] = useState<number>(1)   // birinchi modul default ochiq
-
-  // Composite kalitlar '<subjectId>:<qid>' — faqat joriy fan xatolari
-  const totalWrong = useMemo(
-    () => Object.entries(wrongByTicket).filter(([k, n]) => n > 0 && k.startsWith(`${subjectId}:`)).length,
-    [wrongByTicket, subjectId]
-  )
 
   /** Har modul uchun VISIBLE darslar: FAQAT curated mapping'da borlar (3+ savol) */
   const visibleByMod = useMemo(() => {
@@ -163,11 +156,6 @@ export default function TopicsPage() {
     })
   }
 
-  const startMistakes = () => {
-    if (totalWrong === 0) return
-    navigate('/xatolar')
-  }
-
   return (
     <div className="px-4 pt-4 pb-6">
       <div className="flex items-center gap-2 mb-4">
@@ -177,19 +165,6 @@ export default function TopicsPage() {
         </button>
         <h1 className="text-xl font-semibold">{tt('topics')}</h1>
       </div>
-
-      {totalWrong > 0 && (
-        <button onClick={startMistakes}
-          className="flex items-center justify-between w-full bg-pdanger/10 border border-pdanger/30 rounded-container px-4 py-3.5 mb-4 active:scale-[0.98] transition-transform">
-          <span className="flex items-center gap-2.5 text-sm font-semibold text-pfg">
-            <HeartCrack size={18} className="text-pdanger" />
-            {tt('fixMistakes')}
-          </span>
-          <span className="bg-pdanger text-white text-xs font-semibold px-2.5 py-0.5 rounded-full">
-            {totalWrong}
-          </span>
-        </button>
-      )}
 
       <div className="flex flex-col gap-2.5">
         {modules.map((mod) => {

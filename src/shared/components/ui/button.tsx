@@ -33,8 +33,8 @@ const buttonVariants = cva(
         // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind
         // opacity modifier (`bg-pdanger/10`) ISHLAMAYDI — rgb triplet ishlatiladi.
         destructive: 'bg-transparent text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] hover:bg-[rgb(var(--p-danger-rgb)/0.10)]',
-        /** Premium obuna CTA — oltin token, gradient/soya yo'q */
-        gold:        'bg-pgold text-pongold hover:brightness-[1.06]',
+        /** Premium obuna CTA — mavzu aksentiga (pprimary) moslashadi */
+        gold:        'bg-pprimary text-ponprimary hover:brightness-[1.06]',
         /** AI amallari — purple wash (aksentdan alohida signal) */
         ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)]',
         link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:scale-100',

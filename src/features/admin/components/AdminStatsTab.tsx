@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Users, Crown, Activity, HelpCircle, CheckCircle2, Ticket, RotateCw, Loader2, TrendingUp } from 'lucide-react'
+import { Users, Activity, HelpCircle, CheckCircle2, Ticket, RotateCw, Loader2, TrendingUp } from 'lucide-react'
+import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminStats } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
 
@@ -51,7 +52,7 @@ export default function AdminStatsTab() {
     {
       title: "Premium a'zolar",
       value: stats?.premiumUsers.toLocaleString() ?? '0',
-      icon: Crown,
+      icon: PremiumIcon,
       color: 'text-ppurple',
       bg: 'bg-ppurple/15 border-ppurple/30',
       desc: "Faol obunalar",

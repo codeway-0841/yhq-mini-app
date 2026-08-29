@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Crown, Check, Bell, Clock, Coins, Timer,
+  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer,
 } from 'lucide-react'
+import { CoinIcon } from './CoinIcon'
+import { PremiumIcon } from './PremiumIcon'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../../platform/telegram'
@@ -160,7 +162,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                 <span className="w-4 h-4 rounded-full border border-pline"
                   style={{ background: getAccentTheme(accent).color }} />
                 {getAccentTheme(accent).label[local.language]}
-                {!isPremium && <Crown size={12} className="text-pgold" />}
+                {!isPremium && <PremiumIcon size={12} className="text-pmuted" />}
                 <ChevronRight size={14} />
               </span>
             </Row>
@@ -302,14 +304,14 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       </p>
                       {premiumOnly && (
                         <p className="text-[11px] text-pwarning font-semibold mt-0.5 flex items-center gap-1">
-                          <Crown size={11} fill="currentColor" />
+                          <PremiumIcon size={12} />
                           {preview === theme.id ? tt('themePreviewing') : tt('premiumThemesHint')}
                         </p>
                       )}
                       {/* Coin-eksklyuziv / premium temaning coin yo'li — narx tegi */}
                       {!premiumOnly && coinItem && (
                         <p className="text-[11px] text-pgold font-semibold mt-0.5 flex items-center gap-1">
-                          <Coins size={11} fill="currentColor" />
+                          <CoinIcon size={12} />
                           {preview === theme.id ? tt('themePreviewing') : `${coinItem.price} ${tt('shopCoinThemeBadge')}`}
                         </p>
                       )}
