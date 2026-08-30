@@ -27,6 +27,17 @@ export default defineConfig({
   resolve: {
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
+  build: {
+    rollupOptions: {
+      input: {
+        // E'tibor: DIRECTORY INDEX = LANDING (kivvi.uz `/` filesystem'dan
+        // index.html oladi — Vercel rewrites'dan OLDIN). Ilova app.html'da:
+        // app.kivvi.uz `/` 307 redirect → /app.html, deep-link'lar rewrite.
+        landing: path.resolve(import.meta.dirname, 'index.html'),
+        app: path.resolve(import.meta.dirname, 'app.html'),
+      },
+    },
+  },
   server: {
     proxy: {
       '/api': { target: 'http://localhost:3001', changeOrigin: true },

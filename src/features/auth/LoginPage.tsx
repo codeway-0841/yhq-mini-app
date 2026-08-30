@@ -10,6 +10,7 @@ import { getTelegramUser, getTelegramWebApp } from '../../platform/telegram'
 import { isNativeApp } from '../../platform/native'
 import { flushOutbox } from '../../shared/lib/outbox'
 import { useT } from '../../shared/i18n'
+import { useToast } from '../../shared/components/ToastContainer'
 import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
 import PasswordInput from './components/PasswordInput'
@@ -17,7 +18,7 @@ import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import TelegramQrSheet from './components/TelegramQrSheet'
-import { QrCode } from 'lucide-react'
+import { Cloud, QrCode, Smartphone, Sparkles, Swords } from 'lucide-react'
 
 /** Mobil brauzer = Telegram app o'rnatilgan bo'lishi ehtimoli yuqori → to'g'ridan-to'g'ri ochamiz.
  *  Desktop = Telegram Desktop bo'lmasligi mumkin → QR kod variantini ko'rsatamiz. */
@@ -26,18 +27,15 @@ function isMobileBrowser() {
   return /Android|iPhone|iPad|iPod|Mobile|webOS/i.test(navigator.userAgent)
 }
 
-interface LoginPageProps {
-  onBackToLanding?: () => void
-}
-
 /**
  * LoginPage — mehmon rejim YO'Q: initData'siz (APK/brauzer) foydalanuvchi
  * shu sahifada telefon+parol yoki Telegram Login Widget orqali kiradi.
  * Muvaffaqiyat: sessionToken saqlanadi → profile store'ga hydrate → initialized.
  */
-export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
+export default function LoginPage() {
   const language = useAppStore((s) => s.settings.language)
   const tt = useT(language)
+  const { success } = useToast()
 
   const [method, setMethod] = useState<'phone' | 'email' | 'forgot'>('phone')
   const [mode, setMode] = useState<'login' | 'register'>('login')
@@ -60,6 +58,7 @@ export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
     ensureAccountOwner(data.user.id)
     setSessionToken(data.sessionToken)
     useAppStore.getState().hydrateFromProfile(data)
+    success(tt('authLoginSuccess'))
     void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
     void flushOutbox(data.user.id)
     if (typeof window !== 'undefined') {
@@ -167,12 +166,137 @@ export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
 
   const isWeb = !getTelegramWebApp() && !isNativeApp()
 
-  const handleBackToLanding = () => {
-    if (onBackToLanding) {
-      onBackToLanding()
-    } else {
-      window.location.hash = '#/landing'
-    }
+  /** Telegram login bloki — ikkala layout'da (welcome-card / forma kartasi) umumiy. */
+  const telegramBlock = showTelegramLogin ? (
+    <>
+      {/* Xato xabari — phone/email o'chirilganda Telegram oqimi xatolari shu yerda ko'rinadi
+          (flag yoqilganda phone formadagi joyida ko'rsatiladi — dublikat bo'lmasligi uchun) */}
+      {!config.phoneEmailAuthEnabled && error && (
+        <p className="text-[12px] font-semibold text-pdanger text-center mb-3 animate-fadeIn">{error}</p>
+      )}
+      {telegramLoginCode ? (
+        <div className="w-full flex flex-col items-center gap-2">
+          <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
+          <p className="text-[12px] text-pmuted text-center">
+            {tt('authTgSharePhone')}
+          </p>
+          {/* QR sheet bekor qilinsa ham client adashib qolmasligi uchun —
+              bot'ga o'tish / QR'ni qayta ochish doim ko'rinib turadi */}
+          <div className="w-full flex flex-col gap-2 mt-1">
+            <a
+              href={telegramLoginUrl!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2.5 px-4 py-3.5 bg-[#0088cc] rounded-control hover:bg-[#0077b5] active:scale-[0.98] transition-all"
+            >
+              <svg className="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              <span className="text-[14px] font-semibold text-white">{tt('authQrOpenBot')}</span>
+            </a>
+            {!isMobileBrowser() && (
+              <button
+                type="button"
+                onClick={() => setQrOpen(true)}
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-control border border-[#0088cc]/40 text-[#0088cc] hover:bg-[#0088cc]/10 active:scale-[0.98] transition-all"
+              >
+                <QrCode size={16} strokeWidth={2.5} />
+                <span className="text-[14px] font-semibold">{tt('authQrTitle')}</span>
+              </button>
+            )}
+          </div>
+        </div>
+      ) : (
+        <button
+          type="button"
+          onClick={startTelegramLogin}
+          disabled={busy}
+          className="w-full flex items-center justify-center gap-3 px-4 py-4 bg-[#0088cc] rounded-control hover:bg-[#0077b5] active:scale-[0.98] transition-all disabled:opacity-50 shadow-lg shadow-[#0088cc]/25"
+        >
+          {busy ? (
+            <span className="w-5 h-5 border-2 border-white/50 border-t-white rounded-full animate-spin" />
+          ) : (
+            <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          )}
+          <span className="text-[15px] font-semibold text-white">{tt('authTelegramLogin')}</span>
+        </button>
+      )}
+    </>
+  ) : null
+
+  /* ── Telegram-first WELCOME ekrani (phone/email o'chiq holat — prod) ───────
+     app.kivvi.uz'ga kiritgan mehmon ko'radigan birinchi ekran:
+     foyda ro'yxati + bitta katta Telegram CTA (raqibdagi kabi toza modal). */
+  if (!config.phoneEmailAuthEnabled) {
+    const benefits = [
+      { icon: Cloud,      cls: 'bg-psuccess/10 border-psuccess/25 text-psuccess', key: 'authBenefitCloud' as const },
+      { icon: Swords,     cls: 'bg-[#0088cc]/10 border-[#0088cc]/25 text-[#0088cc]', key: 'authBenefitDuel' as const },
+      { icon: Smartphone, cls: 'bg-pgold/10 border-pgold/25 text-pgold',           key: 'authBenefitSync' as const },
+    ]
+    return (
+      <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-5 py-10 relative overflow-hidden">
+        {/* Yumshoq aksent glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full bg-pprimary/10 blur-[130px] pointer-events-none" />
+
+        <div className="relative w-full max-w-[400px] animate-premiumIn">
+          {/* Brend */}
+          <div className="text-center mb-6 font-display text-[26px] font-bold tracking-tight text-pfg">
+            KI<span className="text-pprimary">WI</span>
+          </div>
+
+          <div className="rounded-sheet border border-pline bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">
+            {/* Telegram ikonka + star badge */}
+            <div className="relative mb-5">
+              <div className="w-[76px] h-[76px] rounded-[1.35rem] bg-[#0088cc]/12 border border-[#0088cc]/25 flex items-center justify-center">
+                <svg className="w-9 h-9 fill-[#0088cc]" viewBox="0 0 24 24">
+                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>
+              </div>
+              <span className="absolute -top-1.5 -right-1.5 w-7 h-7 rounded-full bg-[#0088cc] border-[3px] border-pcard flex items-center justify-center">
+                <Sparkles size={13} className="text-white" />
+              </span>
+            </div>
+
+            <h1 className="text-[20px] font-bold text-pfg leading-tight mb-2">
+              {tt('authTgWelcomeTitle')}
+            </h1>
+            <p className="text-[13px] text-pmuted leading-relaxed mb-6 max-w-[300px]">
+              {tt('authTgWelcomeSub')}
+            </p>
+
+            {/* Foydalar */}
+            <div className="w-full flex flex-col gap-2.5 mb-6">
+              {benefits.map(({ icon: Icon, cls, key }) => (
+                <div
+                  key={key}
+                  className={`flex items-center gap-3 rounded-container border px-3.5 py-3 text-left ${cls}`}
+                >
+                  <Icon size={18} strokeWidth={2} className="shrink-0" />
+                  <span className="text-[13px] font-semibold text-pfg">{tt(key)}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="w-full">{telegramBlock}</div>
+          </div>
+
+          {/* Landing'ga qaytish — faqat veb mehmon uchun */}
+          {isWeb && (
+            <div className="text-center mt-5">
+              <a href="https://kivvi.uz" className="text-[12px] text-pmuted hover:text-pfg transition-colors font-medium">
+                {language === 'ru' ? '← На главную' : '← Bosh sahifa'}
+              </a>
+            </div>
+          )}
+        </div>
+
+        {qrOpen && telegramLoginUrl && (
+          <TelegramQrSheet url={telegramLoginUrl} onClose={() => setQrOpen(false)} />
+        )}
+      </div>
+    )
   }
 
   return (
@@ -187,13 +311,12 @@ export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
               </div>
             </div>
-            <button
-              type="button"
-              onClick={handleBackToLanding}
+            <a
+              href="https://kivvi.uz"
               className="text-xs text-pprimary hover:underline font-medium"
             >
               {language === 'ru' ? 'Главная' : 'Bosh sahifa'}
-            </button>
+            </a>
           </div>
         ) : (
           <>
@@ -388,63 +511,12 @@ export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
           {method !== 'forgot' && step === 'form' && showTelegramLogin && (
             <>
               {/* "YOKI" ajratgichi — faqat yuqorida phone/email formalar ko'rinib turganda kerak */}
-              {config.phoneEmailAuthEnabled && (
               <div className="flex items-center gap-3 my-4">
                 <span className="flex-1 h-px bg-plineStrong" />
                 <span className="text-[11px] font-semibold text-pmuted uppercase">{tt('authOr')}</span>
                 <span className="flex-1 h-px bg-plineStrong" />
               </div>
-              )}
-              {/* Xato xabari — phone/email o'chirilganda Telegram oqimi xatolari shu yerda ko'rinadi
-                  (flag yoqilganda phone formadagi joyida ko'rsatiladi — dublikat bo'lmasligi uchun) */}
-              {!config.phoneEmailAuthEnabled && error && (
-                <p className="text-[12px] font-semibold text-pdanger text-center mb-2 animate-fadeIn">{error}</p>
-              )}
-              {telegramLoginCode ? (
-                <div className="flex flex-col items-center gap-2 py-3">
-                  <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
-                  <p className="text-[12px] text-pmuted text-center">
-                    {tt('authTgSharePhone')}
-                  </p>
-                  {/* QR sheet bekor qilinsa ham client adashib qolmasligi uchun —
-                      bot'ga o'tish / QR'ni qayta ochish doim ko'rinib turadi */}
-                  <div className="w-full flex flex-col gap-2 mt-1">
-                    <a
-                      href={telegramLoginUrl!}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 bg-[#0088cc] rounded-control hover:bg-[#0077b5] active:scale-[0.98] transition-all"
-                    >
-                      <svg className="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
-                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                      </svg>
-                      <span className="text-[14px] font-semibold text-white">{tt('authQrOpenBot')}</span>
-                    </a>
-                    {!isMobileBrowser() && (
-                      <button
-                        type="button"
-                        onClick={() => setQrOpen(true)}
-                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-control border border-[#0088cc]/40 text-[#0088cc] hover:bg-[#0088cc]/10 active:scale-[0.98] transition-all"
-                      >
-                        <QrCode size={16} strokeWidth={2.5} />
-                        <span className="text-[14px] font-semibold">{tt('authQrTitle')}</span>
-                      </button>
-                    )}
-                  </div>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onClick={startTelegramLogin}
-                  disabled={busy}
-                  className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-[#0088cc] rounded-control hover:bg-[#0077b5] transition-all disabled:opacity-50"
-                >
-                  <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
-                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                  </svg>
-                  <span className="text-[15px] font-semibold text-white">{tt('authTelegramLogin')}</span>
-                </button>
-              )}
+              {telegramBlock}
             </>
           )}
         </div>

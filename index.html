@@ -1,190 +1,36 @@
 <!DOCTYPE html>
 <html lang="uz">
-  <!--
-    Theme bootstrap: <body> chizilishidan oldin localStorage'dagi theme
-    ('yhq-app-store' → settings.theme) o'qilib data-theme qo'yiladi.
-    Bu FOUC'ning oldini oladi — splash birinchi kadrdayoq to'g'ri tema bilan chiqadi.
-  -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    <meta name="description" content="KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi. Testlar, biletlar va real vaqtli o'yinlar bitta ilovada." />
-    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="KIWI — imtihonlarga zamonaviy tayyorgarlik platformasi. YHQ biletlari, rus tili va boshqa fanlar: aqlli mashqlar, rasmiy imtihon simulyatori, jonli PvP duellar. Telegram'da va vebda." />
+    <meta name="theme-color" content="#06090a" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="KIWI" />
-    <meta property="og:description" content="Fanlar bo'yicha testler, biletlar va yo'l belgilari — hammasi bitta ilovada." />
-    <title>KIWI</title>
-    <!-- defer: HTML parse'ni bloklamaydi. `type="module"` (main.tsx) ham
-         defer semantikasida va HUJJAT TARTIBIDA keyin ishga tushadi — ya'ni
-         window.Telegram App mount'idan oldin mavjud bo'lishi kafolatlangan. -->
-    <script defer src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!-- DEV-MOCK-START (vite.config.ts faqat dev'da saqlaydi — prod build'dan o'chiriladi) -->
-    <!--
-      type="module" ATAYLAB: telegram-web-app.js `defer` bilan yuklanadi va
-      module skriptlar u bilan BIR RO'YXATDA, hujjat tartibida ishlaydi. Oddiy
-      inline skript esa parse paytida, ya'ni deferred skriptdan OLDIN ishlardi —
-      mock o'rnatilib, keyin haqiqiy telegram-web-app.js uni (initData'siz)
-      ustiga yozib yuborardi va localhost'da ilova LoginPage'da qolardi.
-    -->
-    <script type="module">
-      // Dev mock: inject fake Telegram user when not in real TG Mini App
-      ;(function() {
-        var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-        if (isLocal && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
-          var backButtonCallbacks = []
-          var mainButtonCallbacks = []
-
-          window.Telegram = window.Telegram || {}
-          window.Telegram.WebApp = {
-            ready: function() { console.log('[DEV] Telegram.WebApp.ready()') },
-            expand: function() { console.log('[DEV] Telegram.WebApp.expand()') },
-            close: function() { console.log('[DEV] Telegram.WebApp.close()') },
-            openLink: function(url) { window.open(url, '_blank') },
-            openTelegramLink: function(url) { console.log('[DEV] openTelegramLink:', url) },
-            shareURL: function(url, text) { console.log('[DEV] shareURL:', url, text) },
-            version: '6.0',
-            platform: 'web',
-            colorScheme: 'dark',
-            themeParams: {},
-            initData: 'query_id=DEV&user=%7B%22id%22%3A999999999%2C%22first_name%22%3A%22Dev%22%2C%22last_name%22%3A%22User%22%2C%22username%22%3A%22devuser%22%7D&auth_date=1723000000&hash=dev',
-            initDataUnsafe: {
-              user: {
-                id: 999999999,
-                first_name: 'Dev',
-                last_name: 'User',
-                username: 'devuser'
-              }
-            },
-            BackButton: {
-              isVisible: false,
-              show: function() { this.isVisible = true; console.log('[DEV] BackButton.show()') },
-              hide: function() { this.isVisible = false; console.log('[DEV] BackButton.hide()') },
-              onClick: function(cb) { if (typeof cb === 'function') backButtonCallbacks.push(cb) },
-              offClick: function(cb) {
-                var idx = backButtonCallbacks.indexOf(cb)
-                if (idx !== -1) backButtonCallbacks.splice(idx, 1)
-              }
-            },
-            MainButton: {
-              isVisible: false,
-              isActive: true,
-              text: '',
-              color: '#0fa47f',
-              textColor: '#ffffff',
-              show: function() { this.isVisible = true; console.log('[DEV] MainButton.show()') },
-              hide: function() { this.isVisible = false; console.log('[DEV] MainButton.hide()') },
-              enable: function() { this.isActive = true },
-              disable: function() { this.isActive = false },
-              showProgress: function() { console.log('[DEV] MainButton.showProgress()') },
-              hideProgress: function() { console.log('[DEV] MainButton.hideProgress()') },
-              setText: function(text) { this.text = text },
-              onClick: function(cb) { if (typeof cb === 'function') mainButtonCallbacks.push(cb) },
-              offClick: function(cb) {
-                var idx = mainButtonCallbacks.indexOf(cb)
-                if (idx !== -1) mainButtonCallbacks.splice(idx, 1)
-              }
-            },
-            onEvent: function() {},
-            offEvent: function() {}
-          }
-
-          // Dev keyboard shortcuts: Esc = BackButton, Ctrl+Enter = MainButton
-          document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && window.Telegram.WebApp.BackButton.isVisible) {
-              console.log('[DEV] BackButton triggered (Esc)')
-              backButtonCallbacks.forEach(function(cb) { cb() })
-            }
-            if (e.key === 'Enter' && (e.ctrlKey || e.metaKey) && window.Telegram.WebApp.MainButton.isVisible && window.Telegram.WebApp.MainButton.isActive) {
-              console.log('[DEV] MainButton triggered (Ctrl+Enter)')
-              mainButtonCallbacks.forEach(function(cb) { cb() })
-            }
-          })
-
-          console.log('[DEV] Mock Telegram user injected (id: 999999999). Shortcuts: Esc=Back, Ctrl+Enter=Main')
-        }
-      })()
-    </script>
-    <!-- DEV-MOCK-END -->
-    <script>
-      ;(function () {
-        try {
-          var raw = localStorage.getItem('yhq-app-store')
-          var mode = 'dark'
-          if (raw) {
-            var parsed = JSON.parse(raw)
-            var stored = parsed && parsed.state && parsed.state.settings && parsed.state.settings.theme
-            if (stored === 'light' || stored === 'dark' || stored === 'system') mode = stored
-          }
-          var resolved =
-            mode === 'system'
-              ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
-              : mode
-          document.body && (document.body.dataset.theme = resolved)
-          document.documentElement.dataset.theme = resolved
-        } catch (_) {
-          document.documentElement.dataset.theme = 'dark'
-        }
-      })()
-    </script>
-    <!-- Splash rasmi HTML parse paytidayoq yuklana boshlaydi — React mount
-         bo'lishini kutmaydi. type=image/webp: webp'ni qo'llamaydigan brauzer
-         preload'ni butunlay o'tkazib yuboradi (behuda trafik yo'q), rasmning
-         o'zi esa <picture> orqali png'ga tushadi. -->
-    <link rel="preload" as="image" type="image/webp" href="/images/splash-brand.webp" />
+    <meta property="og:title" content="KIWI — Imtihonlarga zamonaviy tayyorgarlik" />
+    <meta property="og:description" content="Aqlli mashqlar, rasmiy imtihon simulyatori va jonli PvP duellar — bitta ilovada. Bepul boshlang." />
+    <meta property="og:image" content="/images/logo.webp" />
+    <link rel="icon" type="image/webp" href="/images/logo.webp" />
+    <title>KIWI — Imtihonlarga zamonaviy tayyorgarlik</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--
-      Shriftlar ikkiga bo'lingan (boot perf):
-        1) DEFAULT (Inter Tight + Bricolage Grotesque) — har bir userga kerak.
-           media="print" + onload hiylasi: <link> render'ni BLOKLAMAYDI, lekin
-           darhol yuklanadi. font-display=swap tufayli matn system-font bilan
-           birinchi kadrdayoq chiqadi.
-        2) OPTIONAL (Jakarta/Outfit/Lora/JetBrains) — faqat user Sozlamalarda
-           o'sha shriftni tanlasa yuklanadi (src/shared/lib/fonts.ts).
-    -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      media="print"
-      onload="this.media='all';this.onload=null"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
     />
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    </noscript>
-    <style>
-      /* Splash — React yuklanguncha ko'rinadi; index.css tema tokenlari
-         hali yuklanmaganligi uchun ranglar shu yerda inline beriladi */
-      :root { color-scheme: dark; }
-      html[data-theme='light'] { color-scheme: light; }
-      html, body { margin: 0; background: #0d1117; }
-      html[data-theme='light'], html[data-theme='light'] body { background: #fafaf9; }
-      #app-loader {
-        min-height: 100dvh; display: flex; flex-direction: column;
-        align-items: center; justify-content: center; gap: 24px;
-        font-family: 'Inter Tight', system-ui, sans-serif;
-        color: #f5f5f4; background: #0d1117;
+    <script>
+      /* Landing'da ILOVA Service Worker'i kerak emas: ilova avval www.kivvi.uz'da
+         yashagan, userlarda eski app-SW qolgan bo'lishi mumkin — u eski shell'ni
+         keshdan ko'rsatib landing'ni bloklarardi. Bir marta unregister qilamiz.
+         (app.kivvi.uz'da bu sahifa hech qachon serve qilinmaydi — app app.html.) */
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (rs) {
+          rs.forEach(function (r) { r.unregister() })
+        })
       }
-      html[data-theme='light'] #app-loader { color: #1c1917; background: #fafaf9; }
-      #app-loader-title { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; font-family: 'Bricolage Grotesque', 'Inter Tight', system-ui, sans-serif; }
-      #app-loader-brand { font-weight: 700; }
-      #app-loader-brand em { font-style: normal; color: var(--p-primary, #0fa47f); }
-      #app-loader-spinner {
-        width: 36px; height: 36px; border-radius: 50%;
-        border: 3px solid #1c222b; border-top-color: var(--p-primary, #0fa47f);
-        animation: app-spin 0.8s linear infinite;
-      }
-      html[data-theme='light'] #app-loader-spinner { border-color: #d6d3d1; border-top-color: var(--p-primary, #0d8a6a); }
-      @keyframes app-spin { to { transform: rotate(360deg); } }
-    </style>
+    </script>
   </head>
   <body>
-    <div id="root">
-      <div id="app-loader">
-        <div id="app-loader-title"><span id="app-loader-brand">KI<em>WI</em></span></div>
-        <div id="app-loader-spinner"></div>
-      </div>
-    </div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root"></div>
+    <script type="module" src="/landing/main.tsx"></script>
   </body>
 </html>

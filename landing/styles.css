@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── KIWI Landing — dizayn tizimi (Linear × Termius, faqat dark) ─────────────
+   Alohida entry: app'dagi tema tokenlariga bog'liq EMAS. Jade-tomonga iliq
+   near-black, yashil aksent, nozik grid + glow + spotlight kartalar. */
+:root {
+  --l-bg: #06090a;
+  --l-panel: rgba(255, 255, 255, 0.028);
+  --l-line: rgba(255, 255, 255, 0.07);
+  --l-line-strong: rgba(255, 255, 255, 0.14);
+  --l-text: #eef2f0;
+  --l-muted: #9aa49f;
+  --l-faint: #68736e;
+  --l-green: #0fa47f;
+  --l-green-bright: #2ee6a8;
+  --l-green-deep: #0b7a5f;
+  --l-purple: #8b5cf6;
+  --l-gold: #f0b90b;
+  --l-red: #f45d5d;
+
+  /* tailwind.config fontFamily bog'lanadi */
+  --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Bricolage Grotesque', 'Inter Tight', -apple-system, system-ui, sans-serif;
+
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--l-bg);
+  color: var(--l-text);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(46, 230, 168, 0.25);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 8px; }
+
+/* ── Fon qatlamlari ────────────────────────────────────────────────────────── */
+
+/* Linear-uslub nozik grid — yuqoridan radial so'nadi */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.033) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.033) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 62% at 50% 0%, black 25%, transparent 78%);
+  mask-image: radial-gradient(ellipse 90% 62% at 50% 0%, black 25%, transparent 78%);
+}
+
+/* Film-noise teksturasi (SVG turbulence, ~1KB, inline) */
+.noise-layer {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+/* Yumshoq glow sharlar */
+.glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  pointer-events: none;
+}
+
+/* ── Tipografika ───────────────────────────────────────────────────────────── */
+.grad-text {
+  background: linear-gradient(100deg, var(--l-green-bright) 0%, var(--l-green) 55%, #0e8f6f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── Tugmalar ──────────────────────────────────────────────────────────────── */
+.btn-l {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.8rem 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-l:active { transform: scale(0.975); }
+
+.btn-l-primary {
+  color: #04120d;
+  background: linear-gradient(180deg, #35e9ae 0%, #14b789 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 10px 30px -8px rgba(20, 183, 137, 0.45);
+}
+.btn-l-primary:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 14px 40px -8px rgba(20, 183, 137, 0.6);
+  filter: brightness(1.05);
+}
+
+.btn-l-ghost {
+  color: var(--l-text);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--l-line);
+}
+.btn-l-ghost:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--l-line-strong);
+}
+
+/* ── Kartalar: spotlight hover ─────────────────────────────────────────────── */
+.spot {
+  position: relative;
+  background: var(--l-panel);
+  border: 1px solid var(--l-line);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+.spot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(46, 230, 168, 0.07),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.spot:hover {
+  border-color: rgba(46, 230, 168, 0.22);
+}
+.spot:hover::before {
+  opacity: 1;
+}
+
+/* Ikonka boksi — neytral, aksent faqat hover/active'da */
+.icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--l-line);
+  color: #94a3b8;
+}
+
+/* ── Scroll reveal ─────────────────────────────────────────────────────────── */
+.rv {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--d, 0ms);
+  will-change: opacity, transform;
+}
+.rv.on {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 3D tilt (hero telefon) ────────────────────────────────────────────────── */
+.tilt-scene {
+  perspective: 1600px;
+}
+.tilt-obj {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.chip-3d {
+  transform: translateZ(var(--z, 50px));
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) translateZ(var(--z, 50px)); }
+  50%      { transform: translateY(-12px) translateZ(var(--z, 50px)); }
+}
+.floaty {
+  animation: floaty 5.2s ease-in-out infinite;
+  animation-delay: var(--fd, 0s);
+}
+
+/* ── Hero telefon ichidagi interaktiv elementlar ───────────────────────────── */
+@keyframes xpFly {
+  0%   { opacity: 0; transform: translateY(6px) scale(0.8); }
+  20%  { opacity: 1; transform: translateY(-8px) scale(1.08); }
+  100% { opacity: 0; transform: translateY(-46px) scale(1); }
+}
+.xp-fly {
+  animation: xpFly 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+.pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+
+@keyframes shimmerLine {
+  0%   { transform: translateX(-120%) skewX(-18deg); }
+  100% { transform: translateX(340%) skewX(-18deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Duel vidjeti g'olib chirog'i */
+@keyframes winFlash {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+.win-flash { animation: winFlash 1s ease-in-out 3; }
+
+/* ── Bo'lim sarlavhalari ───────────────────────────────────────────────────── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--l-green-bright);
+}
+
+/* Harakatni kamaytirish — barcha dekorativ animatsiyalar o'chadi */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rv { opacity: 1; transform: none; transition: none; }
+  .floaty, .xp-fly, .pulse-dot, .win-flash { animation: none; }
+  .tilt-obj { transform: none !important; }
+}

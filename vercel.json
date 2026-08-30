@@ -35,6 +35,10 @@
       "headers": [{ "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }]
     },
     {
+      "source": "/app.html",
+      "headers": [{ "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }]
+    },
+    {
       "source": "/sw.js",
       "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
     },
@@ -43,9 +47,13 @@
       "headers": [{ "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }]
     }
   ],
+  "redirects": [
+    { "source": "/", "has": [{ "type": "host", "value": "app.kivvi.uz" }], "destination": "/app.html", "statusCode": 307 }
+  ],
   "rewrites": [
     { "source": "/api/bot", "destination": "/api/bot" },
     { "source": "/api/(.*)", "destination": "/api/index" },
+    { "source": "/((?!api/).*)", "has": [{ "type": "host", "value": "app.kivvi.uz" }], "destination": "/app.html" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }

@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "shared"],
+  "include": ["src", "shared", "landing"],
   "exclude": ["node_modules", "server"]
 }
