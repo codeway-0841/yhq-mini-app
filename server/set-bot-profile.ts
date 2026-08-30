@@ -44,5 +44,11 @@ await bot.api.setChatMenuButton({
   menu_button: { type: 'web_app', text: 'KIWI', web_app: { url: APP_URL } },
 })
 
+const webhookUrl = 'https://app.kivvi.uz/api/bot'
+if (config.telegram.webhookSecret) {
+  await bot.api.setWebhook(webhookUrl, { secret_token: config.telegram.webhookSecret })
+  console.log('✅ Webhook set →', webhookUrl)
+}
+
 console.log('✅ Bot profile set: commands, description, menu button →', APP_URL)
 process.exit(0)
