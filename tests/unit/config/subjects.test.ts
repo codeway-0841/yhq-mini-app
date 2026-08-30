@@ -6,7 +6,14 @@
  * yhq'ga fallback qilardi. Endi ixcham manba `shared/subjects.ts`.
  */
 import { describe, it, expect } from 'vitest'
-import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, questionKey, parseQuestionKey, type SubjectId } from '../../../shared/subjects'
+import {
+  SUBJECT_BASES,
+  DEFAULT_SUBJECT_ID,
+  questionKey,
+  parseQuestionKey,
+  getSubjectClosedGroupUrl,
+  type SubjectId,
+} from '../../../shared/subjects'
 import {
   SUBJECT_REGISTRY,
   SUBJECT_IDS,
@@ -134,5 +141,27 @@ describe('questionKey / parseQuestionKey — multi-fan identity', () => {
     expect(parseQuestionKey('yhq:abc')).toBeNull()
     expect(parseQuestionKey('yhq:0')).toBeNull()
     expect(parseQuestionKey('yhq:-5')).toBeNull()
+  })
+})
+
+describe('getSubjectClosedGroupUrl — yopiq guruh havolalari', () => {
+  it("har bir fanning closedGroupUrl mavjud va t.me havolasi", () => {
+    for (const s of SUBJECT_BASES) {
+      expect(s.closedGroupUrl).toBeDefined()
+      expect(s.closedGroupUrl).toMatch(/^https:\/\/t\.me\//)
+    }
+  })
+
+  it("getSubjectClosedGroupUrl to'g'ri fan guruhini qaytaradi", () => {
+    expect(getSubjectClosedGroupUrl('yhq')).toBe('https://t.me/kiwi_uz_bot?start=group_yhq')
+    expect(getSubjectClosedGroupUrl('rustili')).toBe('https://t.me/kiwi_uz_bot?start=group_rustili')
+    // Noma'lum fan default bot havolasiga tushadi
+    expect(getSubjectClosedGroupUrl('mavjud-emas')).toBe('https://t.me/kiwi_uz_bot')
+  })
+
+  it("getSubjectTelegramChatId to'g'ri telegramChatId ni qaytaradi", async () => {
+    const { getSubjectTelegramChatId } = await import('../../../shared/subjects')
+    expect(getSubjectTelegramChatId('rustili')).toBe('-1003975984861')
+    expect(getSubjectTelegramChatId('yhq')).toBeUndefined()
   })
 })

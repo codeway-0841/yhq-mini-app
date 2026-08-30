@@ -50,6 +50,7 @@ const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'
 const FormulasPage    = lazy(() => import('./features/formulas/FormulasPage'))
 const SearchPage      = lazy(() => import('./features/search/SearchPage'))
 const NotFound        = lazy(() => import('./shared/components/NotFound'))
+const LandingPage     = lazy(() => import('./features/landing/LandingPage'))
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
 // uchun har bir userning entry bundle'ida yotardi.
 const Onboarding      = lazy(() => import('./features/onboarding/Onboarding'))
@@ -112,9 +113,16 @@ function Layout() {
     el.classList.add('route-page')
   }, [location.pathname])
 
+  const isLanding = location.pathname === '/landing'
+
   return (
     <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-hidden">
-      <div ref={pageRef} className="route-page relative z-10 flex-1 overflow-y-auto pb-4 max-w-3xl mx-auto w-full">
+      <div
+        ref={pageRef}
+        className={`route-page relative z-10 flex-1 overflow-y-auto w-full mx-auto ${
+          isLanding ? 'max-w-full pb-0 px-0' : 'max-w-3xl pb-4 px-3 sm:px-4'
+        }`}
+      >
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/"           element={<Dashboard />} />
@@ -139,6 +147,7 @@ function Layout() {
             <Route path="/shpargalkalar" element={<FormulasPage />} />
             <Route path="/qidiruv"    element={<SearchPage />} />
             <Route path="/admin"      element={<AdminPage />} />
+            <Route path="/landing"    element={<LandingPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
         </Suspense>
@@ -435,6 +444,27 @@ export default function App() {
     }
   }, [])
 
+  // Unauthenticated web visitor: LandingPage vs LoginPage
+  const [showLogin, setShowLogin] = useState(() => {
+    if (typeof window === 'undefined') return false
+    const h = window.location.hash
+    const p = window.location.pathname
+    return h.startsWith('#/login') || p.startsWith('/login')
+  })
+
+  useEffect(() => {
+    const onHash = () => {
+      const h = window.location.hash
+      if (h.startsWith('#/login')) {
+        setShowLogin(true)
+      } else if (h.startsWith('#/landing') || h === '#/' || h === '') {
+        setShowLogin(false)
+      }
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
   // initData DEAD — reload Telegram'ni yangilamadi, yagona yechim: yopib-qayta ochish.
   // Bu ekran splash'dan ham OLDIN turadi (dead holatda boot'un davomi ma'nosiz).
   if (initDataDead) {
@@ -500,14 +530,18 @@ export default function App() {
   }
 
   // Auth gate: Mini App (initData) YOKI Bearer sessiya YOKI hydrate bo'lgan cache user.
-  // Uchtalasi ham yo'q bo'lsa — LoginPage (mehmon rejim yo'q).
+  // Uchtalasi ham yo'q bo'lsa — Veb mehmoni uchun LandingPage yoki LoginPage.
   const isAuthed = isTelegram || hasSession || Boolean(user?.id)
   if (!isAuthed) {
     return (
       <>
         <ThemeEffect />
         <Suspense fallback={<PageLoader />}>
-          <LoginPage />
+          {showLogin ? (
+            <LoginPage onBackToLanding={() => { setShowLogin(false); window.location.hash = '#/landing' }} />
+          ) : (
+            <LandingPage onOpenAuth={() => { setShowLogin(true); window.location.hash = '#/login' }} />
+          )}
         </Suspense>
       </>
     )

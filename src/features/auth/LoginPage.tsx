@@ -26,12 +26,16 @@ function isMobileBrowser() {
   return /Android|iPhone|iPad|iPod|Mobile|webOS/i.test(navigator.userAgent)
 }
 
+interface LoginPageProps {
+  onBackToLanding?: () => void
+}
+
 /**
  * LoginPage — mehmon rejim YO'Q: initData'siz (APK/brauzer) foydalanuvchi
  * shu sahifada telefon+parol yoki Telegram Login Widget orqali kiradi.
  * Muvaffaqiyat: sessionToken saqlanadi → profile store'ga hydrate → initialized.
  */
-export default function LoginPage() {
+export default function LoginPage({ onBackToLanding }: LoginPageProps = {}) {
   const language = useAppStore((s) => s.settings.language)
   const tt = useT(language)
 
@@ -53,10 +57,6 @@ export default function LoginPage() {
 
   /** Login/register/link muvaffaqiyatining YAGONA hydrate yo'li (App boot bilan bir xil). */
   const applyAuth = (data: AuthResponse) => {
-    // Adopt-merge yoki boshqa akkaunt cache'i bo'lsa — atomik reset.
-    // TARTIB MUHIM (audit H-7): owner-check AVVAL — reset 'yhq-session' kalitini
-    // ham o'chiradi; token avval yozilsa u darhol o'chirib yuborilardi
-    // (tokensiz "login" holati: keyingi so'rovlar auth'siz 401 olardi).
     ensureAccountOwner(data.user.id)
     setSessionToken(data.sessionToken)
     useAppStore.getState().hydrateFromProfile(data)
@@ -146,8 +146,6 @@ export default function LoginPage() {
       if (res.url) {
         setTelegramLoginUrl(res.url)
         setTelegramLoginCode(res.code)
-        // Desktop'da Telegram app bo'lmasligi mumkin — QR kodli variant ochamiz;
-        // mobilda Telegram app borligi deyarli kafolatlangan → to'g'ridan-to'g'ri ochamiz.
         if (isMobileBrowser()) {
           window.open(res.url, '_blank')
         } else {
@@ -169,6 +167,14 @@ export default function LoginPage() {
 
   const isWeb = !getTelegramWebApp() && !isNativeApp()
 
+  const handleBackToLanding = () => {
+    if (onBackToLanding) {
+      onBackToLanding()
+    } else {
+      window.location.hash = '#/landing'
+    }
+  }
+
   return (
     <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-6 py-10">
       <div className="w-full max-w-[380px] animate-premiumIn">
@@ -181,6 +187,13 @@ export default function LoginPage() {
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
               </div>
             </div>
+            <button
+              type="button"
+              onClick={handleBackToLanding}
+              className="text-xs text-pprimary hover:underline font-medium"
+            >
+              {language === 'ru' ? 'Главная' : 'Bosh sahifa'}
+            </button>
           </div>
         ) : (
           <>
@@ -191,8 +204,6 @@ export default function LoginPage() {
         )}
 
         <div className="rounded-container border border-pline bg-pcard p-4">
-          {/* Segment: Kirish | Ro'yxatdan o'tish — faqat phone/email auth yoqilganda
-              (Telegram login o'zi register/login'ni avtomatik hal qiladi) */}
           {config.phoneEmailAuthEnabled && (
           <div className="grid grid-cols-2 gap-1 p-1 rounded-control bg-psurface border border-pline mb-4">
             {(['login', 'register'] as const).map((m) => (
@@ -210,7 +221,6 @@ export default function LoginPage() {
           </div>
           )}
 
-          {/* Method switcher: Phone | Email */}
           {config.phoneEmailAuthEnabled && method !== 'forgot' && step === 'form' && (
             <div className="flex gap-2 mb-4">
               {(['phone', 'email'] as const).map((m) => (

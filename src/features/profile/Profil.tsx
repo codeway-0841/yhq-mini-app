@@ -302,10 +302,17 @@ export default function Profil() {
           </div>
         )}
 
-        {/* Yopiq guruh — premium bo'lsa botga, aks holda upsell sheet */}
-        <Item icon={Lock} label={tt('closedGroup')}
-          right={<span className="text-[12px] text-pmuted">{tt('joinWord')}</span>}
-          onPress={() => tariff === 'premium' ? openTelegramLink(BOT_URL) : setShowGroupSheet(true)} />
+        {/* Yopiq guruh — barcha userlar uchun sheet ochiladi (sheet ichida isSubscribed bo'yicha farqlanadi) */}
+        <Item
+          icon={Lock}
+          label={tt('closedGroup')}
+          right={
+            <span className={`text-[12px] ${tariff === 'premium' ? 'font-medium text-psuccess' : 'text-pmuted'}`}>
+              {tariff === 'premium' ? tt('openWord') : tt('joinWord')}
+            </span>
+          }
+          onPress={() => setShowGroupSheet(true)}
+        />
       </Section>
 
       {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
@@ -522,9 +529,10 @@ export default function Profil() {
         <PaymentHistorySheet onClose={() => setShowPayHistory(false)} />
       )}
 
-      {/* Yopiq guruh upsell sheet'i — tarif kartasi/CTA obuna modalini ochadi */}
+      {/* Yopiq guruh sheet'i — free userda upsell, premium userda fanlar guruhlariga kirish */}
       {showGroupSheet && (
         <ClosedGroupSheet
+          isSubscribed={tariff === 'premium'}
           onClose={() => setShowGroupSheet(false)}
           onGetPlan={(planKey) => {
             setShowGroupSheet(false)

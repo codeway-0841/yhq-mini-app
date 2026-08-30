@@ -71,6 +71,10 @@ const envSchema = z.object({
    *  Secret'siz webhook FAIL-CLOSED (Click bilan bir xil himoya modeli). */
   PAYME_MERCHANT_ID:      z.string().optional(),
   PAYME_SECRET_KEY:       z.string().optional(),
+
+  /** Telegram VIP Group Chat IDs (bot auto-invite link creation) */
+  TG_GROUP_RUSTILI:       z.string().optional(),
+  TG_GROUP_YHQ:           z.string().optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -233,6 +237,12 @@ export const config = {
   payme: {
     merchantId: env.PAYME_MERCHANT_ID ?? '',
     secretKey:  env.PAYME_SECRET_KEY ?? '',
+  },
+
+  /** VIP Telegram Group Chat IDs */
+  groups: {
+    rustili: env.TG_GROUP_RUSTILI,
+    yhq:     env.TG_GROUP_YHQ,
   },
 
   sentry: {

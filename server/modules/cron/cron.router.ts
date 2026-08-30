@@ -333,15 +333,100 @@ async function runCleanup(): Promise<CronRunResult> {
   }
 }
 
+/**
+ * Yopiq VIP guruhlardan obunasi tugagan foydalanuvchilarni chiqarish.
+ * Har kuni daily-suite tarkibida bajariladi.
+ * Obunasi tugaganlarni ban qilib darhol unban qiladi (kicked, lekin blacklist'siz — qayta obunada kira oladi).
+ */
+async function runVipExpiredCleanup(): Promise<CronRunResult> {
+  const token = config.telegram.botToken
+  if (!token) {
+    return { status: 500, body: { ok: false, error: 'BOT_TOKEN is unset' } }
+  }
+
+  const today = tashkentDate()
+  const started = await cronRepository.tryStart('vip-expired-cleanup', today)
+  if (!started) {
+    return { status: 200, body: { ok: true, skipped: 'already_running_or_done' } }
+  }
+
+  const bot = new Bot(token)
+  let kickedCount = 0
+
+  try {
+    const { SUBJECT_BASES, getSubjectTelegramChatId } = await import('../../../shared/subjects')
+    const { db } = await import('../../db/connection')
+    const { users } = await import('../../schema')
+    const { and, or, isNull, lt, ne } = await import('drizzle-orm')
+
+    // Barcha sozlangan yopiq guruhlar
+    const groupChatIds: string[] = []
+    for (const s of SUBJECT_BASES) {
+      const chatId = (config.groups as Record<string, string | undefined>)?.[s.id] || getSubjectTelegramChatId(s.id)
+      if (chatId && !groupChatIds.includes(chatId)) {
+        groupChatIds.push(chatId)
+      }
+    }
+
+    if (groupChatIds.length === 0) {
+      await cronRepository.complete('vip-expired-cleanup', today, { kicked: 0, reason: 'no_groups' })
+      return { status: 200, body: { ok: true, kicked: 0, reason: 'no_groups' } }
+    }
+
+    // Obunasi yo'q yoki tugagan foydalanuvchilar
+    const now = new Date()
+    const expiredUsers = await db
+      .select({ id: users.id })
+      .from(users)
+      .where(
+        and(
+          ne(users.tariff, 'premium'),
+          or(isNull(users.premiumUntil), lt(users.premiumUntil, now)),
+        )
+      )
+
+    for (const u of expiredUsers) {
+      const uidNum = Number(u.id)
+      if (isNaN(uidNum) || uidNum <= 0) continue
+
+      for (const chatId of groupChatIds) {
+        const chatIdNum = Number(chatId) || chatId
+        try {
+          const member = await bot.api.getChatMember(chatIdNum, uidNum)
+          if (member && member.status === 'member') {
+            // Guruhdan chiqarish: ban + darhol unban (blacklist qolmaydi)
+            await bot.api.banChatMember(chatIdNum, uidNum)
+            await bot.api.unbanChatMember(chatIdNum, uidNum)
+            kickedCount++
+          }
+        } catch {
+          // User bu guruhda yo'q yoki bot ruxsati cheklangan
+        }
+      }
+    }
+
+    await cronRepository.complete('vip-expired-cleanup', today, { kicked: kickedCount })
+    return { status: 200, body: { ok: true, kicked: kickedCount } }
+  } catch (err) {
+    await cronRepository.complete('vip-expired-cleanup', today, { error: String(err) }).catch(() => {})
+    Sentry.captureException(err, { tags: { cron: 'vip-expired-cleanup', period: today } })
+    return { status: 500, body: { ok: false, error: String(err) } }
+  }
+}
+
 // ── FANOUT SUITE'lar (Vercel Hobby: 2 cron slot) ────────────────────────────
 
 /**
  * /api/cron/daily-suite — har kuni 14:00 UTC (19:00 Toshkent).
- * cleanup (tez) → daily-reminder (uzun). Komponent xatosi keyingisini to'xtatmaydi.
+ * cleanup → vip-cleanup → daily-reminder. Komponent xatosi keyingisini to'xtatmaydi.
  */
 router.get('/cron/daily-suite', async (_req, res) => {
   const results: Record<string, unknown> = {}
-  for (const [name, run] of [['cleanup-answer-tokens', runCleanup], ['daily-reminder', runDailyReminder]] as const) {
+  for (const [name, run] of [
+    ['cleanup-answer-tokens', runCleanup],
+    ['vip-expired-cleanup', runVipExpiredCleanup],
+    ['daily-reminder', runDailyReminder],
+  ] as const) {
     try {
       results[name] = (await run()).body
     } catch (err) {
@@ -391,6 +476,11 @@ router.get('/cron/boss-rollover', async (_req, res) => {
 
 router.get('/cron/cleanup-answer-tokens', async (_req, res) => {
   const r = await runCleanup()
+  res.status(r.status).json(r.body)
+})
+
+router.get('/cron/vip-expired-cleanup', async (_req, res) => {
+  const r = await runVipExpiredCleanup()
   res.status(r.status).json(r.body)
 })
 

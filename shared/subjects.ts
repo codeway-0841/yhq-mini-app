@@ -26,6 +26,15 @@ export interface SubjectBase {
    * Desync — tests/unit/config/exam-presets.test.ts ushlaydi.
    */
   examPresets: readonly string[]
+  /**
+   * Telegram yopiq guruh havolasi (VIP / Premium obunachilar uchun).
+   * Har bir fan uchun alohida guruh havolasi.
+   */
+  closedGroupUrl?: string
+  /**
+   * Telegram yopiq guruh Chat ID (dinamik invite link yaratish uchun, masalan -100...).
+   */
+  telegramChatId?: string
 }
 
 /**
@@ -34,17 +43,17 @@ export interface SubjectBase {
  *   - Ro'yxat o'zgarmas (readonly) — runtime'da tasodifiy mutatsiya imkonsiz
  */
 export const SUBJECT_BASES = [
-  { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true,  demoData: false, examPresets: [] },
-  { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true,  demoData: false, examPresets: [],                                          closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_yhq' },
+  { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_rustili', telegramChatId: '-1003975984861' },
   // FIXPLAN 4-punkt (2026-08-23): quyidagi 6 fanda savol banki bo'sh (0 savol,
   // faqat dataSourceId band qilingan) — "tez kunda" holatida locked, tanlab
   // bo'lmaydi. Kontent kiritilgach `available: true`ga o'tkaziladi.
-  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'math_db',          available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'chemistry_db',     available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'english_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'history_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
-  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'biology_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'] },
+  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_fizika_group' },
+  { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'math_db',          available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_matematika_group' },
+  { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'chemistry_db',     available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_kimyo_group' },
+  { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'english_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_ingliz_group' },
+  { id: 'tarix',      name: 'Tarix',                   nameRu: 'История',                    icon: '📖', dataSourceId: 'history_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_tarix_group' },
+  { id: 'biologiya',  name: 'Biologiya',               nameRu: 'Биология',                   icon: '🧬', dataSourceId: 'biology_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_biologiya_group' },
 ] as const satisfies readonly SubjectBase[]
 
 /**
@@ -77,3 +86,16 @@ export function parseQuestionKey(key: string): { subjectId: string; questionId: 
   if (!Number.isInteger(questionId) || questionId < 1) return null
   return { subjectId: key.slice(0, i), questionId }
 }
+
+/** Fanga tegishli yopiq Telegram guruh havolasi */
+export function getSubjectClosedGroupUrl(subjectId: string): string {
+  const base = (SUBJECT_BASES as readonly SubjectBase[]).find((s) => s.id === subjectId)
+  return base?.closedGroupUrl ?? 'https://t.me/kiwi_uz_bot'
+}
+
+/** Fanga tegishli yopiq Telegram guruh Chat ID'si (agar sozlangan bo'lsa) */
+export function getSubjectTelegramChatId(subjectId: string): string | undefined {
+  const base = (SUBJECT_BASES as readonly SubjectBase[]).find((s) => s.id === subjectId)
+  return base?.telegramChatId
+}
+

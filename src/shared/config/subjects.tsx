@@ -11,7 +11,7 @@
  */
 import { Car, Zap, FlaskConical, Globe, BookOpen, Dna, Languages, type LucideIcon, type LucideProps } from 'lucide-react'
 import { forwardRef } from 'react'
-import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId } from '../../../shared/subjects'
+import { SUBJECT_BASES, DEFAULT_SUBJECT_ID, type SubjectId, type SubjectBase } from '../../../shared/subjects'
 
 export { DEFAULT_SUBJECT_ID }
 export type { SubjectId }
@@ -31,6 +31,10 @@ export interface SubjectConfig {
       "Vaqtinchalik demo ma'lumotlar" badge'i chiqadi */
   demoData: boolean
   available: boolean
+  /** Telegram yopiq guruh havolasi */
+  closedGroupUrl?: string
+  /** Telegram yopiq guruh Chat ID */
+  telegramChatId?: string
 }
 
 /** π belgisi — lucide'da yo'qligi uchun maxsus ikonka */
@@ -56,10 +60,10 @@ const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: st
   biologiya:  { icon: Dna,          color: '#5f7a3c', colorDark: '#4c6230' },
 }
 
-export const SUBJECTS: SubjectConfig[] = SUBJECT_BASES.map((s) => {
-  const ui = UI_MAP[s.id] // Record<SubjectId,...> — compile-time'da kafolatlangan
+export const SUBJECTS: SubjectConfig[] = (SUBJECT_BASES as readonly SubjectBase[]).map((s) => {
+  const ui = UI_MAP[s.id as SubjectId] // Record<SubjectId,...> — compile-time'da kafolatlangan
   return {
-    id: s.id,
+    id: s.id as SubjectId,
     name: s.name,
     nameRu: s.nameRu,
     icon: ui.icon,
@@ -68,6 +72,8 @@ export const SUBJECTS: SubjectConfig[] = SUBJECT_BASES.map((s) => {
     dataSourceId: s.dataSourceId,
     demoData: s.demoData,
     available: s.available,
+    closedGroupUrl: s.closedGroupUrl,
+    telegramChatId: s.telegramChatId,
   }
 })
 

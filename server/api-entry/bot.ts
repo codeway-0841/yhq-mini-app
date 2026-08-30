@@ -28,7 +28,106 @@ if (!token) throw new Error('BOT_TOKEN is unset')
 const BASE_URL = config.deploy.appUrl
 const APP_URL  = `${BASE_URL}?v=${config.deploy.buildId}`
 
-const bot = new Bot(token)
+export const bot = new Bot(token)
+
+/**
+ * Berilgan fan uchun Telegram Bot API orqali dinamik, yangi invite link yaratish.
+ * Guruhda bot admin bo'lsa va TG_GROUP_<SUBJECT> sozlangan bo'lsa ishlaydi.
+ */
+export async function createGroupInviteLinkForSubject(subjectId: string, userId: string): Promise<string | null> {
+  const { getSubjectTelegramChatId } = await import('../../shared/subjects')
+  const groupChatId = (config.groups as Record<string, string | undefined>)?.[subjectId] || getSubjectTelegramChatId(subjectId)
+  if (!groupChatId) return null
+
+  const chatIdNum = Number(groupChatId) || groupChatId
+  const userIdNum = Number(userId)
+
+  if (!isNaN(userIdNum) && userIdNum > 0) {
+    // 1. Agar foydalanuvchi ilgari chiqarib yuborilgan (kicked/restricted) bo'lsa — to'liq unban/unrestrict qilamiz
+    try {
+      await bot.api.unbanChatMember(chatIdNum, userIdNum)
+    } catch {
+      // unban fail bo'lsa ham davom etamiz
+    }
+
+    // 2. Agar user allaqachon guruh a'zosi/egasi bo'lsa — to'g'ridan-to'g'ri guruh chatini ochish havolasi
+    try {
+      const member = await bot.api.getChatMember(chatIdNum, userIdNum)
+      if (member && ['creator', 'administrator', 'member'].includes(member.status)) {
+        const internalId = String(groupChatId).replace(/^-100/, '')
+        return `https://t.me/c/${internalId}/1`
+      }
+    } catch {
+      // User hali guruhda yo'q — yangi invite yaratishga o'tamiz
+    }
+  }
+
+  // 3. Yangi obunachi uchun avtomatik tasdiqli yoki bir martalik taklif havolasi
+  try {
+    const invite = await bot.api.createChatInviteLink(chatIdNum, {
+      name: `User ${userId}`,
+      creates_join_request: true,
+    })
+    return invite.invite_link
+  } catch {
+    try {
+      const invite = await bot.api.createChatInviteLink(chatIdNum, {
+        name: `User ${userId}`,
+        member_limit: 1,
+      })
+      return invite.invite_link
+    } catch (err) {
+      console.error(`[bot] createChatInviteLink error for ${subjectId} (${groupChatId}):`, err)
+      return null
+    }
+  }
+}
+
+// ── /id /chatid — Guruh ID'sini aniqlash uchun admin buyrug'i ─────────────────
+bot.command(['id', 'chatid'], async (ctx) => {
+  const chat = ctx.chat
+  await ctx.reply(
+    `📌 <b>Chat ID:</b> <code>${chat.id}</code>\n` +
+    `🏷 <b>Nomi:</b> ${'title' in chat ? chat.title : (chat.first_name || 'Shaxsiy')}\n` +
+    `🔖 <b>Turi:</b> ${chat.type}`,
+    { parse_mode: 'HTML' }
+  )
+})
+
+// ── /unban — Foydalanuvchini blokdan chiqarish (Admin buyrug'i) ───────────────
+bot.command('unban', async (ctx) => {
+  const adminId = String(ctx.from?.id)
+  const { usersRepository } = await import('../modules/users/users.repository')
+  const admin = await usersRepository.findById(adminId)
+  if (!admin?.isAdmin) {
+    await ctx.reply("❌ Bu buyruq faqat bot adminlari uchun.")
+    return
+  }
+
+  const targetArg = ctx.match?.trim()
+  const replyTo = ctx.message?.reply_to_message?.from?.id
+  const targetId = replyTo ? String(replyTo) : targetArg
+
+  if (!targetId || !/^\d+$/.test(targetId)) {
+    await ctx.reply("ℹ️ Foydalanish: <code>/unban 123456789</code> yoki user xabariga reply qilib <code>/unban</code>", { parse_mode: 'HTML' })
+    return
+  }
+
+  const { SUBJECT_BASES, getSubjectTelegramChatId } = await import('../../shared/subjects')
+  let unbannedIn = 0
+
+  for (const s of SUBJECT_BASES) {
+    const chatId = (config.groups as Record<string, string | undefined>)?.[s.id] || getSubjectTelegramChatId(s.id)
+    if (chatId) {
+      try {
+        await bot.api.unbanChatMember(Number(chatId) || chatId, Number(targetId))
+        unbannedIn++
+      } catch {}
+    }
+  }
+
+  await ctx.reply(`✅ Foydalanuvchi (ID: <code>${targetId}</code>) ${unbannedIn} ta guruhda blokdan chiqarildi!`, { parse_mode: 'HTML' })
+})
 
 // Pending-login holati — telegram_login_codes DB ustunlarida (D1, 2026-08-26).
 // Ilgari in-memory Map'da edi: Vercel serverless webhook turli instance'larga
@@ -126,6 +225,45 @@ bot.command('start', async (ctx) => {
   }
   if (planParam) {
     await sendPremiumInvoice(ctx, planParam)
+    return
+  }
+  // Yopiq guruhga kirish: t.me/bot?start=group_<subjectId>
+  if (param && /^group_([a-z0-9_-]+)$/.test(param)) {
+    const subjectId = param.replace(/^group_/, '')
+    const from = ctx.from
+    if (!from) return
+
+    const { usersRepository } = await import('../modules/users/users.repository')
+    const user = await usersRepository.findById(String(from.id))
+    const isPremium = user != null && (
+      user.tariff === 'premium' ||
+      (user.premiumUntil != null && new Date(user.premiumUntil) > new Date())
+    )
+
+    if (!isPremium) {
+      await ctx.reply(
+        "🔒 <b>Yopiq guruh faqat KIWI Premium obunachilari uchun.</b>\n\n" +
+        "Guruhga kirish uchun avval ilovada Premium obunani faollashtiring:",
+        {
+          parse_mode: 'HTML',
+          reply_markup: new InlineKeyboard().webApp("👑 Obuna bo'lish", `${BASE_URL}?open=premium`),
+        }
+      )
+      return
+    }
+
+    const inviteLink = await createGroupInviteLinkForSubject(subjectId, String(from.id))
+    const { getSubjectClosedGroupUrl } = await import('../../shared/subjects')
+    const targetUrl = inviteLink || getSubjectClosedGroupUrl(subjectId)
+
+    await ctx.reply(
+      `🎉 <b>Yopiq guruhga taklif havolangiz:</b>\n\n` +
+      `Quyidagi tugmani bosib guruhga qo'shiling. Botingiz so'rovingizni avtomatik tasdiqlaydi:`,
+      {
+        parse_mode: 'HTML',
+        reply_markup: new InlineKeyboard().url("🚀 Guruhga kirish", targetUrl),
+      }
+    )
     return
   }
   // Telegram Login: t.me/bot?start=login_<code> — brauzerdan kirish uchun
@@ -375,6 +513,68 @@ bot.on('message:successful_payment', async (ctx) => {
     console.error('[bot] premium activation failed:', err)
     Sentry.captureException(err)
     await ctx.reply("To'lov qabul qilindi, lekin faollashtirishda xato. @kiwi_uz_bot'ga yozing — tezda yechamiz.")
+  }
+})
+
+// ── Yopiq guruhga kirish so'rovi (chat_join_request — 1-variant) ────────────
+// Guruhda "Approve new members" yoqilgan bo'lsa, Telegram so'rov yuboradi.
+// Bot foydalanuvchining Premium obunasi borligini tekshiradi:
+//  - Bor bo'lsa: darhol approveChatJoinRequest + tabrik xabari
+//  - Yo'q bo'lsa: declineChatJoinRequest + obuna bo'lish eslatmasi
+bot.on('chat_join_request', async (ctx) => {
+  const req = ctx.chatJoinRequest
+  if (!req) return
+
+  const from = req.from
+  const chatId = req.chat.id
+  const userId = String(from.id)
+  const chatTitle = req.chat.title || 'Yopiq guruh'
+
+  try {
+    const user = await usersRepository.findById(userId)
+    const isPremium = user != null && (
+      user.tariff === 'premium' ||
+      (user.premiumUntil != null && new Date(user.premiumUntil) > new Date())
+    )
+
+    if (isPremium) {
+      await ctx.api.approveChatJoinRequest(chatId, from.id)
+      try {
+        await ctx.api.sendMessage(
+          from.id,
+          `🎉 Tabriklaymiz, ${from.first_name}!\n\n` +
+          `«${chatTitle}» yopiq guruhiga qo'shilish so'rovingiz tasdiqlandi. Guruhga xush kelibsiz!`,
+        )
+      } catch {
+        // PM xabari yuborilmasa ham (masalan, bot bloklangan) ruxsat berish amalga oshgan
+      }
+    } else {
+      await ctx.api.declineChatJoinRequest(chatId, from.id)
+      try {
+        await ctx.api.sendMessage(
+          from.id,
+          `🔒 «${chatTitle}» faqat KIWI Premium obunachilari uchun mo'ljallangan.\n\n` +
+          `Guruhga kirish uchun avval ilovada obunani faollashtiring, so'ngra qayta so'rov yuboring.`,
+          {
+            reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL),
+          },
+        )
+      } catch {
+        // PM xabari yuborilmasa ham rad etish amalga oshgan
+      }
+    }
+  } catch (err) {
+    console.error('[bot] chat_join_request error:', err)
+    Sentry.captureException(err)
+  }
+})
+
+// ── Guruhdagi servis xabarlarini (qo'shildi / qabul qilindi / chiqdi) avtomatik tozalash ──
+bot.on(['message:new_chat_members', 'message:left_chat_member'], async (ctx) => {
+  try {
+    await ctx.deleteMessage()
+  } catch {
+    // Guruhda 'can_delete_messages' huquqi bo'lsa darhol o'chiriladi
   }
 })
 

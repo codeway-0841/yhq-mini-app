@@ -846,6 +846,10 @@ export const api = {
   /** To'lovlar tarixi (Profil sheet'i) — joriy user'ning buyurtmalari, 50 tagacha */
   getPaymentHistory: () =>
     request<{ ok: boolean; rows: PaymentHistoryRow[] }>('GET', '/payments/history'),
+
+  /** Yopiq guruhga taklif havolasi (dinamik bot invite link yoki fallback) */
+  getClosedGroupInvite: (subjectId: string) =>
+    request<{ ok: boolean; inviteLink: string }>('GET', `/payments/closed-group-invite?subjectId=${encodeURIComponent(subjectId)}`),
 }
 
 export interface PaymentHistoryRow {

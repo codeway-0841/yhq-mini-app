@@ -180,6 +180,40 @@ paymentRouter.get(
   })
 )
 
+/**
+ * 2.6. Yopiq guruh taklif havolasi (Profil → Yopiq guruh)
+ * Authenticated: joriy user'ning Premium obunasini tekshiradi va dinamik invite link qaytaradi.
+ */
+paymentRouter.get(
+  '/closed-group-invite',
+  requireAuth,
+  wrap(async (req: any, res) => {
+    const userId = req.userId
+    const subjectId = (req.query.subjectId as string) || 'yhq'
+
+    const { usersRepository } = await import('../users/users.repository')
+    const user = await usersRepository.findById(userId)
+    const isPremium = user != null && (
+      user.tariff === 'premium' ||
+      (user.premiumUntil != null && new Date(user.premiumUntil) > new Date())
+    )
+
+    if (!isPremium) {
+      throw new AppError(403, 'Yopiq guruhga kirish uchun Premium obuna talab qilinadi', 'PREMIUM_REQUIRED')
+    }
+
+    const { createGroupInviteLinkForSubject } = await import('../../api-entry/bot')
+    const inviteLink = await createGroupInviteLinkForSubject(subjectId, userId)
+    const { getSubjectClosedGroupUrl } = await import('../../../shared/subjects')
+
+    res.set('Cache-Control', 'private, no-store')
+    res.json({
+      ok: true,
+      inviteLink: inviteLink || getSubjectClosedGroupUrl(subjectId),
+    })
+  })
+)
+
 const ClickWebhookSchema = z.object({
   click_trans_id: z.union([z.string(), z.number()]),
   service_id: z.union([z.string(), z.number()]),
