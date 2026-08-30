@@ -362,6 +362,7 @@ export default function App() {
         resetAccountToLoggedOut()
         // Savollar public endpoint — LoginPage bilan parallel yuklanadi
         loadQuestions('uz').catch(() => {})
+        useAppStore.setState({ initialized: true })
       } else {
         // Optimistik warm start: token + cache birga yoziladi (localStorage),
         // shuning uchun cache'dagi user shu sessiyaga tegishli deb ishonamiz.

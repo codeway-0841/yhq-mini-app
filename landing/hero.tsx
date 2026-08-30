@@ -1,17 +1,16 @@
-import { useState, type CSSProperties } from 'react'
+import { useState, useRef, type CSSProperties } from 'react'
 import {
   ArrowRight,
   BatteryFull,
   CheckCircle2,
   Flame,
-  Play,
   RotateCcw,
   Signal,
   Swords,
   Wifi,
   XCircle,
 } from 'lucide-react'
-import { APP_URL } from './config'
+import { APP_URL, BOT_URL, PLAY_STORE_URL } from './config'
 import { copy, t, type Lang } from './copy'
 import { Reveal, useTilt } from './lib'
 import { BruteIcon } from './demo'
@@ -197,9 +196,21 @@ function FloatingChips({ lang }: { lang: Lang }) {
   )
 }
 
+
+
 export function Hero({ lang }: { lang: Lang }) {
   const h = copy.hero
   const { sceneRef, objRef } = useTilt(8)
+  const [iosToast, setIosToast] = useState(false)
+  const toastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const handleIosClick = () => {
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current)
+    setIosToast(true)
+    toastTimerRef.current = setTimeout(() => {
+      setIosToast(false)
+    }, 3200)
+  }
 
   return (
     <section className="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
@@ -234,19 +245,82 @@ export function Hero({ lang }: { lang: Lang }) {
             </Reveal>
 
             <Reveal delay={260}>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mb-5">
-                <a href={APP_URL} className="btn-l btn-l-primary w-full sm:w-auto !px-7 !py-3.5">
-                  {t(h.ctaPrimary, lang)}
-                  <ArrowRight size={16} />
-                </a>
-                <a href="#process" className="btn-l btn-l-ghost w-full sm:w-auto !px-6 !py-3.5">
-                  <Play size={15} className="text-[var(--l-muted)]" />
-                  {t(h.ctaSecondary, lang)}
-                </a>
+              <div className="flex flex-col items-center lg:items-start gap-3.5 mb-5">
+                {/* 1-qator: Asosiy yashil CTA */}
+                <div>
+                  <a
+                    href={APP_URL}
+                    className="btn-l btn-l-primary !px-8 !h-[46px] inline-flex items-center justify-center gap-2 text-[15px] font-semibold"
+                  >
+                    <span>{lang === 'ru' ? 'Перейти в приложение' : "Ilovaga o'tish"}</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+
+                {/* 2-qator: Google Play, App Store, Telegram nishonlari */}
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+                  {/* Google Play */}
+                  <a
+                    href={PLAY_STORE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <img
+                      src="/Google_Play_Store_badge_EN.svg"
+                      alt="Get it on Google Play"
+                      className="h-[46px] w-auto object-contain"
+                    />
+                  </a>
+
+                  {/* App Store */}
+                  <button
+                    type="button"
+                    onClick={handleIosClick}
+                    className="inline-flex transition-transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                  >
+                    <img
+                      src="/Download_on_the_App_Store_Badge.svg"
+                      alt="Download on the App Store"
+                      className="h-[46px] w-auto object-contain"
+                    />
+                  </button>
+
+                  {/* Telegram */}
+                  <a
+                    href={BOT_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <img
+                      src="/telegram-badge.svg"
+                      alt="Telegram"
+                      className="h-[46px] w-auto object-contain rounded-[8px]"
+                    />
+                  </a>
+                </div>
               </div>
               <p className="text-[12.5px] text-[var(--l-faint)]">{t(h.trust, lang)}</p>
             </Reveal>
           </div>
+
+          {/* iOS Tez Kunda Toast */}
+          {iosToast && (
+            <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] bg-[rgba(10,14,18,0.95)] border border-[rgba(24,184,255,0.35)] text-white px-5 py-3.5 rounded-2xl shadow-2xl backdrop-blur-xl flex items-center gap-3.5 animate-fadeIn max-w-[92vw]">
+              <div className="rounded-lg overflow-hidden flex items-center justify-center shrink-0 shadow-md">
+                <img src="/Download_on_the_App_Store_Badge.svg" alt="App Store" className="h-8 w-auto object-contain" />
+              </div>
+              <div className="text-left pr-1">
+                <div className="text-[13px] font-semibold text-white">App Store (iOS)</div>
+                <div className="text-[11.5px] text-[var(--l-muted)]">
+                  {lang === 'ru'
+                    ? 'iOS-приложение скоро будет доступно в App Store!'
+                    : 'iOS ilovasi tez orada App Store’da taqdim etiladi!'}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* O'ng: 3D tilt telefon + jonli mini-quiz */}
           <Reveal delay={200} className="relative">

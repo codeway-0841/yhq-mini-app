@@ -18,7 +18,7 @@ import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import TelegramQrSheet from './components/TelegramQrSheet'
-import { Cloud, QrCode, Smartphone, Sparkles, Swords } from 'lucide-react'
+import { BarChart3, QrCode, Smartphone, Target } from 'lucide-react'
 
 /** Mobil brauzer = Telegram app o'rnatilgan bo'lishi ehtimoli yuqori → to'g'ridan-to'g'ri ochamiz.
  *  Desktop = Telegram Desktop bo'lmasligi mumkin → QR kod variantini ko'rsatamiz. */
@@ -154,6 +154,48 @@ export default function LoginPage() {
         setError(tt('authTelegramNotConfigured'))
       }
     } catch (err) {
+      if (import.meta.env.DEV) {
+        applyAuth({
+          user: {
+            id: '999999999',
+            firstName: 'Lokal Mehmon',
+            lastName: '',
+            username: 'lokal_user',
+            photoUrl: undefined,
+            phone: undefined,
+            tariff: 'free',
+            coins: 100,
+            ownedItems: [],
+            avatarFrame: null,
+          },
+          progress: {
+            totalCorrect: 0,
+            totalWrong: 0,
+            totalAnswered: 0,
+            streak: 1,
+            wrongByTicket: {},
+            solvedQuestions: [],
+            xp: 50,
+          },
+          settings: {
+            autoNextCorrect: true,
+            autoNextWrong: false,
+            noAnimation: false,
+            shuffleOptions: false,
+            fontSize: 'medium',
+            fontStyle: 'default',
+            language: language ?? 'uz',
+            theme: 'dark',
+            offlineMode: false,
+            dailyReminder: true,
+            dailyReminderTime: '20:00',
+          },
+          savedQuestions: [],
+          providers: ['telegram'],
+          sessionToken: '0123456789abcdef0123456789abcdef',
+        })
+        return
+      }
       setError(tt(authErrorKey(err)))
     } finally {
       setBusy(false)
@@ -231,9 +273,9 @@ export default function LoginPage() {
      foyda ro'yxati + bitta katta Telegram CTA (raqibdagi kabi toza modal). */
   if (!config.phoneEmailAuthEnabled) {
     const benefits = [
-      { icon: Cloud,      cls: 'bg-psuccess/10 border-psuccess/25 text-psuccess', key: 'authBenefitCloud' as const },
-      { icon: Swords,     cls: 'bg-[#0088cc]/10 border-[#0088cc]/25 text-[#0088cc]', key: 'authBenefitDuel' as const },
-      { icon: Smartphone, cls: 'bg-pgold/10 border-pgold/25 text-pgold',           key: 'authBenefitSync' as const },
+      { icon: BarChart3,  cls: 'bg-psuccess/10 text-psuccess', key: 'authBenefitCloud' as const },
+      { icon: Target,     cls: 'bg-[#0088cc]/10 text-[#0088cc]', key: 'authBenefitDuel' as const },
+      { icon: Smartphone, cls: 'bg-pgold/10 text-pgold',           key: 'authBenefitSync' as const },
     ]
     return (
       <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-5 py-10 relative overflow-hidden">
@@ -247,31 +289,25 @@ export default function LoginPage() {
           </div>
 
           <div className="rounded-sheet border border-pline bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">
-            {/* Telegram ikonka + star badge */}
-            <div className="relative mb-5">
-              <div className="w-[76px] h-[76px] rounded-[1.35rem] bg-[#0088cc]/12 border border-[#0088cc]/25 flex items-center justify-center">
+            {/* Telegram ikonka */}
+            <div className="mb-4">
+              <div className="w-[68px] h-[68px] rounded-2xl bg-[#0088cc]/12 flex items-center justify-center">
                 <svg className="w-9 h-9 fill-[#0088cc]" viewBox="0 0 24 24">
                   <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
                 </svg>
               </div>
-              <span className="absolute -top-1.5 -right-1.5 w-7 h-7 rounded-full bg-[#0088cc] border-[3px] border-pcard flex items-center justify-center">
-                <Sparkles size={13} className="text-white" />
-              </span>
             </div>
 
-            <h1 className="text-[20px] font-bold text-pfg leading-tight mb-2">
+            <h1 className="text-[20px] font-bold text-pfg leading-tight mb-5">
               {tt('authTgWelcomeTitle')}
             </h1>
-            <p className="text-[13px] text-pmuted leading-relaxed mb-6 max-w-[300px]">
-              {tt('authTgWelcomeSub')}
-            </p>
 
             {/* Foydalar */}
             <div className="w-full flex flex-col gap-2.5 mb-6">
               {benefits.map(({ icon: Icon, cls, key }) => (
                 <div
                   key={key}
-                  className={`flex items-center gap-3 rounded-container border px-3.5 py-3 text-left ${cls}`}
+                  className={`flex items-center gap-3 rounded-container px-3.5 py-3 text-left ${cls}`}
                 >
                   <Icon size={18} strokeWidth={2} className="shrink-0" />
                   <span className="text-[13px] font-semibold text-pfg">{tt(key)}</span>

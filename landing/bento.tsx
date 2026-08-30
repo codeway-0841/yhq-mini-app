@@ -22,7 +22,7 @@ export function Bento({ lang }: { lang: Lang }) {
       icon: <Brain size={18} />,
       title: { uz: 'Adaptiv mashq', ru: 'Адаптивная тренировка' },
       body: {
-        uz: "Algoritm xatolaringizni tahlil qiladi va zaif mavzularni to‘g‘ri paytda qayta uchrataradi (interval takrorlash).",
+        uz: 'Algoritm xatolaringizni tahlil qiladi va zaif mavzularni o‘z vaqtida takrorlatadi (intervalli takrorlash usuli).',
         ru: 'Алгоритм анализирует ошибки и повторяет слабые темы в нужный момент (интервальные повторения).',
       },
     },
@@ -31,16 +31,16 @@ export function Bento({ lang }: { lang: Lang }) {
       icon: <Gamepad2 size={18} />,
       title: { uz: 'Belgilar o‘yini', ru: 'Игра знаков' },
       body: {
-        uz: "Yo‘l belgilarini tezkor o‘yin formatida yodlang — rekordlar va seriyalar.",
+        uz: 'Yo‘l belgilarini tezkor o‘yin formatida o‘rganing — rekordlar o‘rnating va bilimlaringizni mustahkamlang.',
         ru: 'Запоминайте дорожные знаки в быстрой игровой форме — рекорды и серии.',
       },
     },
     {
       key: 'speed',
       icon: <Timer size={18} />,
-      title: { uz: 'Speed rejimi va flashcards', ru: 'Режим Speed и флешкарты' },
+      title: { uz: 'Speed rejimi va fleshkartalar', ru: 'Режим Speed и флешкарты' },
       body: {
-        uz: "Vaqtga qarshi savol-javob va tezkor kartochkalar — reaksiyangizni imtihon tezligiga olib chiqadi.",
+        uz: 'Vaqtga qarshi savol-javoblar va tezkor kartochkalar reaksiyangizni imtihon tezligiga olib chiqadi.',
         ru: 'Вопросы на время и быстрые карточки — доводят реакцию до экзаменационной скорости.',
       },
     },
@@ -49,7 +49,7 @@ export function Bento({ lang }: { lang: Lang }) {
       icon: <BookMarked size={18} />,
       title: { uz: 'Xatolar daftari', ru: 'Дневник ошибок' },
       body: {
-        uz: "Barcha xatolar alohida daftarga yoziladi — har bir tuzatilgan savol coin bilan mukofotlanadi.",
+        uz: 'Barcha xatolar alohida daftarda saqlanadi — har bir to‘g‘ri tuzatilgan xato uchun coin beriladi.',
         ru: 'Все ошибки записываются в отдельный дневник — каждый исправленный вопрос награждается монетами.',
       },
     },

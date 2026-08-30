@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowRight, Menu, X } from 'lucide-react'
-import { APP_URL, BOT_URL, PRIVACY_URL } from './config'
+import { APP_URL, BOT_URL, PLAY_STORE_URL, PRIVACY_URL } from './config'
 import { copy, t, type Lang } from './copy'
 
 /** KIWI logotipi — app splash'dagi bilan bir xil brend yozuvi. */
@@ -75,9 +75,6 @@ export function Nav({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
               </button>
             ))}
           </div>
-          <a href={`${APP_URL}`} className="btn-l btn-l-ghost !py-2 !px-4 !text-sm">
-            {t(c.login, lang)}
-          </a>
           <a href={`${APP_URL}`} className="btn-l btn-l-primary !py-2 !px-4 !text-sm">
             {t(c.cta, lang)}
             <ArrowRight size={15} />
@@ -151,7 +148,6 @@ export function Footer({ lang }: { lang: Lang }) {
           </div>
           <ul className="space-y-2.5 text-sm">
             <li><a className="text-[var(--l-muted)] hover:text-[var(--l-text)] transition-colors" href={APP_URL}>{t(f.start, lang)}</a></li>
-            <li><a className="text-[var(--l-muted)] hover:text-[var(--l-text)] transition-colors" href={APP_URL}>{t(f.login, lang)}</a></li>
           </ul>
         </div>
         <div>
@@ -159,6 +155,7 @@ export function Footer({ lang }: { lang: Lang }) {
             {t(f.resources, lang)}
           </div>
           <ul className="space-y-2.5 text-sm">
+            <li><a className="text-[var(--l-muted)] hover:text-[var(--l-text)] transition-colors" href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">Google Play</a></li>
             <li><a className="text-[var(--l-muted)] hover:text-[var(--l-text)] transition-colors" href={BOT_URL} target="_blank" rel="noopener noreferrer">{t(f.tgBot, lang)}</a></li>
             <li><a className="text-[var(--l-muted)] hover:text-[var(--l-text)] transition-colors" href={PRIVACY_URL}>{t(f.privacy, lang)}</a></li>
           </ul>

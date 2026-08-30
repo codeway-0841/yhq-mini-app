@@ -28,12 +28,16 @@
       ustiga yozib yuborardi va localhost'da ilova LoginPage'da qolardi.
     -->
     <script type="module">
-      // Dev mock: inject fake Telegram user when not in real TG Mini App
+      // Dev mock: inject fake Telegram user when ?tg=1 query param is provided on localhost
       ;(function() {
         var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-        if (isLocal && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
+        var search = window.location.search || ''
+        var hash = window.location.hash || ''
+        var forceTg = search.includes('tg=1') || hash.includes('tg=1')
+        if (isLocal && forceTg && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
           var backButtonCallbacks = []
           var mainButtonCallbacks = []
+          var nowSec = Math.floor(Date.now() / 1000)
 
           window.Telegram = window.Telegram || {}
           window.Telegram.WebApp = {
@@ -47,8 +51,9 @@
             platform: 'web',
             colorScheme: 'dark',
             themeParams: {},
-            initData: 'query_id=DEV&user=%7B%22id%22%3A999999999%2C%22first_name%22%3A%22Dev%22%2C%22last_name%22%3A%22User%22%2C%22username%22%3A%22devuser%22%7D&auth_date=1723000000&hash=dev',
+            initData: 'query_id=DEV&user=%7B%22id%22%3A999999999%2C%22first_name%22%3A%22Dev%22%2C%22last_name%22%3A%22User%22%2C%22username%22%3A%22devuser%22%7D&auth_date=' + nowSec + '&hash=dev',
             initDataUnsafe: {
+              auth_date: nowSec,
               user: {
                 id: 999999999,
                 first_name: 'Dev',

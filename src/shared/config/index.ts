@@ -51,7 +51,7 @@ export const config = {
   apiBaseUrl: resolveApiBase(env),
   wsUrl: resolveWsUrl(env, typeof window === 'undefined' ? undefined : window.location),
   /** @ belgisisiz bot username — TG Login Widget + "Telegram ulash" deep-link uchun */
-  botUsername: BOT_USERNAME || undefined,
+  botUsername: BOT_USERNAME || 'kiwi_uz_bot',
   /**
    * Telefon (SMS OTP) + Email login UI — VAQTINCHA o'chiq (SMS xarajati).
    * Qayta yoqish: `true` qiling — LoginPage'dagi barcha forma/segment'lar tiklanadi.

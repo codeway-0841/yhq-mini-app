@@ -59,9 +59,9 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
     originalPriceUzs: 39_000,
     discountPercent: 25,
     featuresUz: [
-      "Barcha test savollari uchun mutaxassis yozgan ovozli sharh",
-      "Qoidasini ko'rish tugmasi — tegishli qonun bandi",
-      "Reklamasiz to'liq va tezkor ilova tajribasi",
+      "Barcha test savollari uchun mutaxassis ovozli sharhi",
+      "Qoidasini ko‘rish — tegishli qonun bandi sharhi",
+      "Reklamasiz to‘liq va tezkor ilova tajribasi",
     ],
     featuresRu: [
       'Аудиокомментарии специалистов к каждому вопросу теста',
@@ -86,7 +86,7 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
     discountPercent: 25,
     featuresUz: [
       "Plus tarifining barcha imkoniyatlari",
-      "Tajribali ustoz yozgan chuqur video darslar",
+      "Tajribali ustoz tomonidan tayyorlangan videodarslar",
       "Har bir video dars uchun mustahkamlovchi amaliy mashqlar",
       "Barcha eksklyuziv premium temalar va yutuqlar",
     ],
@@ -114,9 +114,9 @@ export const PREMIUM_PLANS: PremiumPlan[] = [
     discountPercent: 25,
     featuresUz: [
       "Pro tarifining barcha imkoniyatlari",
-      "Har bir test uchun video darsdan qisqa video javob",
+      "Har bir test savoliga qisqa video tushuntirish",
       "Haftada 6 kun (9:00–21:00) ustoz bilan jonli chatda yordam",
-      "Yopiq muhokama guruhi — boshqa o'quvchilar bilan muloqot",
+      "Yopiq muhokama guruhi — boshqa o‘quvchilar bilan muloqot",
     ],
     featuresRu: [
       'Все возможности тарифа Pro',

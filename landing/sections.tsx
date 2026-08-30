@@ -47,7 +47,7 @@ export function Process({ lang }: { lang: Lang }) {
       icon: <LogIn size={18} />,
       title: { uz: 'Kiring', ru: 'Войдите' },
       body: {
-        uz: "Telegram Mini App yoki app.kivvi.uz — 30 soniyada ro'yxatdan o'ting, karta kerak emas.",
+        uz: 'Telegram Mini App yoki app.kivvi.uz — tez va oson ro‘yxatdan o‘ting, karta talab qilinmaydi.',
         ru: 'Telegram Mini App или app.kivvi.uz — регистрация за 30 секунд, карта не нужна.',
       },
     },
@@ -56,7 +56,7 @@ export function Process({ lang }: { lang: Lang }) {
       icon: <PenLine size={18} />,
       title: { uz: 'Mashq qiling', ru: 'Тренируйтесь' },
       body: {
-        uz: "Testlar, biletlar, flashcards va adaptiv rejim — algoritm zaif mavzularingizni topib, ularni mustahkamlaydi.",
+        uz: 'Testlar, biletlar, fleshkartalar va adaptiv rejim — algoritm zaif mavzularingizni aniqlab, ularni mustahkamlaydi.',
         ru: 'Тесты, билеты, флешкарты и адаптивный режим — алгоритм находит и укрепляет слабые темы.',
       },
     },
@@ -65,7 +65,7 @@ export function Process({ lang }: { lang: Lang }) {
       icon: <Trophy size={18} />,
       title: { uz: 'O‘lchang va yuting', ru: 'Измеряйте и побеждайте' },
       body: {
-        uz: "Imtihon simulyatori, PvP reyting va batafsil statistika — natijangizni raqamlarda ko'rasiz.",
+        uz: 'Imtihon simulyatori, PvP reyting va batafsil statistika — natijangizni raqamlarda ko‘rasiz.',
         ru: 'Симулятор экзамена, PvP-рейтинг и подробная статистика — результат виден в цифрах.',
       },
     },
