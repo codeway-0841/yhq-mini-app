@@ -189,7 +189,7 @@ export const config = {
 
   /** Deploy URL + har deployda o'zgaradigan cache-bust build id (?v=<sha>) */
   deploy: {
-    appUrl:  env.APP_URL ?? 'https://yhq-mini-app.vercel.app',
+    appUrl:  env.APP_URL ?? 'https://app.kivvi.uz',
     buildId: (env.VERCEL_GIT_COMMIT_SHA ?? 'v1').slice(0, 8),
   },
 
