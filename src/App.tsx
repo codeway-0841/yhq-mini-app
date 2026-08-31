@@ -28,35 +28,84 @@ import { goBack, subscribeModalStack } from './shared/lib/navigation'
 const dashboardChunk = () => import('./features/dashboard/Dashboard')
 void dashboardChunk()
 const Dashboard       = lazy(dashboardChunk)
-const TestPage        = lazy(() => import('./features/test/TestPage'))
-const TestlarPage     = lazy(() => import('./features/testlar/TestlarPage'))
-const Darslik         = lazy(() => import('./features/lessons/Darslik'))
-const Biletlar        = lazy(() => import('./features/tickets/Biletlar'))
-const Belgilar        = lazy(() => import('./features/signs/Belgilar'))
-const SignsGamePage   = lazy(() => import('./features/signs-game/SignsGamePage'))
-const Profil          = lazy(() => import('./features/profile/Profil'))
-const TopicsPage      = lazy(() => import('./features/topics/TopicsPage'))
-const AdaptivePage    = lazy(() => import('./features/adaptive/AdaptivePage'))
-const OctagonPage    = lazy(() => import('./features/octagon/OctagonPage'))
-const AdminPage      = lazy(() => import('./features/admin/AdminPage'))
-const LeaderboardPage = lazy(() => import('./features/leaderboard/LeaderboardPage'))
-const XatolarPage     = lazy(() => import('./features/mistakes/XatolarPage'))
-const StreakPage      = lazy(() => import('./features/streak/StreakPage'))
-const PremiumPage     = lazy(() => import('./features/premium/PremiumPage'))
-const ShopPage        = lazy(() => import('./features/shop/ShopPage'))
-const StatistikaPage  = lazy(() => import('./features/stats/StatistikaPage'))
-const SpeedPage       = lazy(() => import('./features/speed/SpeedPage'))
-const FlashcardsPage  = lazy(() => import('./features/flashcards/FlashcardsPage'))
-const FormulasPage    = lazy(() => import('./features/formulas/FormulasPage'))
-const SearchPage      = lazy(() => import('./features/search/SearchPage'))
-const NotFound        = lazy(() => import('./shared/components/NotFound'))
+// Har sahifa chunk'i NOMLANGAN loader orqali — boot'dan keyin idle prefetch
+// (pastda) shu loader'larni qayta ishlatadi (import() modul keshi tufayli
+// ikki marta yuklanmaydi — lazy bilan bir xil modul).
+const testPageChunk        = () => import('./features/test/TestPage')
+const testlarChunk         = () => import('./features/testlar/TestlarPage')
+const darslikChunk         = () => import('./features/lessons/Darslik')
+const biletlarChunk        = () => import('./features/tickets/Biletlar')
+const belgilarChunk        = () => import('./features/signs/Belgilar')
+const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
+const profilChunk          = () => import('./features/profile/Profil')
+const topicsChunk          = () => import('./features/topics/TopicsPage')
+const adaptiveChunk        = () => import('./features/adaptive/AdaptivePage')
+const octagonChunk         = () => import('./features/octagon/OctagonPage')
+const adminChunk           = () => import('./features/admin/AdminPage')
+const leaderboardChunk     = () => import('./features/leaderboard/LeaderboardPage')
+const xatolarChunk         = () => import('./features/mistakes/XatolarPage')
+const streakChunk          = () => import('./features/streak/StreakPage')
+const premiumChunk         = () => import('./features/premium/PremiumPage')
+const shopChunk            = () => import('./features/shop/ShopPage')
+const statistikaChunk      = () => import('./features/stats/StatistikaPage')
+const speedChunk           = () => import('./features/speed/SpeedPage')
+const flashcardsChunk      = () => import('./features/flashcards/FlashcardsPage')
+const formulasChunk        = () => import('./features/formulas/FormulasPage')
+const searchChunk          = () => import('./features/search/SearchPage')
+const notFoundChunk        = () => import('./shared/components/NotFound')
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
 // uchun har bir userning entry bundle'ida yotardi.
-const Onboarding      = lazy(() => import('./features/onboarding/Onboarding'))
+const onboardingChunk      = () => import('./features/onboarding/Onboarding')
 // Auth (telefon+parol / TG Login Widget) — faqat initData'siz muhitda ko'rinadi
-const LoginPage       = lazy(() => import('./features/auth/LoginPage'))
-const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage'))
-const ResetPasswordPage = lazy(() => import('./features/auth/pages/ResetPasswordPage'))
+const loginChunk           = () => import('./features/auth/LoginPage')
+const verifyEmailChunk     = () => import('./features/auth/pages/VerifyEmailPage')
+const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPage')
+
+const TestPage        = lazy(testPageChunk)
+const TestlarPage     = lazy(testlarChunk)
+const Darslik         = lazy(darslikChunk)
+const Biletlar        = lazy(biletlarChunk)
+const Belgilar        = lazy(belgilarChunk)
+const SignsGamePage   = lazy(signsGameChunk)
+const Profil          = lazy(profilChunk)
+const TopicsPage      = lazy(topicsChunk)
+const AdaptivePage    = lazy(adaptiveChunk)
+const OctagonPage    = lazy(octagonChunk)
+const AdminPage      = lazy(adminChunk)
+const LeaderboardPage = lazy(leaderboardChunk)
+const XatolarPage     = lazy(xatolarChunk)
+const StreakPage      = lazy(streakChunk)
+const PremiumPage     = lazy(premiumChunk)
+const ShopPage        = lazy(shopChunk)
+const StatistikaPage  = lazy(statistikaChunk)
+const SpeedPage       = lazy(speedChunk)
+const FlashcardsPage  = lazy(flashcardsChunk)
+const FormulasPage    = lazy(formulasChunk)
+const SearchPage      = lazy(searchChunk)
+const NotFound        = lazy(notFoundChunk)
+const Onboarding      = lazy(onboardingChunk)
+const LoginPage       = lazy(loginChunk)
+const VerifyEmailPage = lazy(verifyEmailChunk)
+const ResetPasswordPage = lazy(resetPasswordChunk)
+
+// NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
+// yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
+// yuklanmagan bo'lsa Suspense fallback (PageLoader) EMAS, ESKI sahifa
+// (Dashboard) chunk kelguncha ekranda qolib ketardi ("rejimni tanlasam avval
+// dashboard ~2s ko'rinib, keyin sahifa sraz ochiladi" bug'i). Boot tugagach
+// IDLE vaqtda barcha sahifa chunk'larini oldindan yuklab qo'yamiz — har qanday
+// navigatsiya DARHOL ochiladi (tartib: eng ko'p ishlatiladiganlar birinchi).
+const routeChunkPrefetchers = [
+  testlarChunk, darslikChunk, biletlarChunk, topicsChunk, testPageChunk,
+  belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
+  octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
+  statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
+  notFoundChunk, adminChunk, onboardingChunk, loginChunk,
+  verifyEmailChunk, resetPasswordChunk,
+]
+function prefetchRouteChunks() {
+  for (const load of routeChunkPrefetchers) void load()
+}
 
 import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen, syncStatusBarStyle } from './platform/native'
@@ -243,6 +292,19 @@ export default function App() {
   // Web/Telegram'da no-op. Ilgarigi JSX splash'dan native splash'ga uzluksiz o'tish.
   useEffect(() => {
     if (initialized) hideSplashScreen()
+  }, [initialized])
+
+  // Splash yopilgach — sahifa chunk'larini IDLE vaqtda prefetch (yuqoridagi
+  // "NAVIGATSIYA FLASH FIX" izohiga qarang). Boot kritik yo'lidan tashqarida:
+  // faqat idle callback yoki kichik timeout, init so'rovlari bilan raqobat yo'q.
+  useEffect(() => {
+    if (!initialized) return
+    if (typeof window.requestIdleCallback === 'function') {
+      const id = window.requestIdleCallback(prefetchRouteChunks, { timeout: 4000 })
+      return () => window.cancelIdleCallback(id)
+    }
+    const t = setTimeout(prefetchRouteChunks, 1000)
+    return () => clearTimeout(t)
   }, [initialized])
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {

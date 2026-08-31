@@ -23,7 +23,12 @@ app.html           # ILOVA entry (eski index.html) — app.kivvi.uz `/` 307 redi
                    #   deep-link'lar rewrite (vercel.json `has:host`); SW-unregister snippet
                    #   landing'da (eski www-app SW'lari tozalanadi).
 src/
-  App.tsx          #   Router + providers (composition root)
+  App.tsx          #   Router + providers (composition root). Lazy sahifalar NOMLANGAN
+                   #   chunk loader orqali — `prefetchRouteChunks` boot'dan keyin IDLE'da
+                   #   HAMMASINI oldindan yuklaydi (2026-09-01 "navigatsiya flash" fix:
+                   #   RR v7 startTransition'da eski sahifa chunk kelguncha ekranda qolardi).
+                   #   Yangi lazy sahifa = loader + lazy + routeChunkPrefetchers'a QATOR —
+                   #   desync'ni tests/unit/config/route-prefetch.test.ts ushlaydi.
   features/<f>/    #   Feature modullar: Page + components/ + hooks/;
                    #   boshqa feature'ga eksport KERAK bo'lsa — index.ts barrel (public API)
   shared/          #   CANONICAL frontend shared qatlami (eski src/components|store|lib|hooks|config)
