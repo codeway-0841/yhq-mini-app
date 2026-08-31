@@ -34,7 +34,10 @@ services:
       - key: OTP_PEPPER
         sync: false
       # WS origin allowlist (octagon.ts) — sozlanmasa origin tekshiruvi O'CHIQ.
-      # Masalan: https://yhq-mini-app.vercel.app yoki prod domen.
+      # ILOVA domeni BIRINCHI bo'lsin: https://app.kivvi.uz,https://www.kivvi.uz,https://kivvi.uz
+      # KRITIK: bu env VERCEL'dagi ALLOWED_ORIGIN'dan ALOHIDA — domen o'zgarganda
+      # ikkalasini ham yangilang (2026-08-31 incident: bu yerda eski www.kivvi.uz
+      # qolib, app.kivvi.uz origin'li WS'lar rad etilib duel umuman ishlamagan).
       - key: ALLOWED_ORIGIN
         sync: false
       # Referral/deep-link'lar uchun (auth.service url'lari).

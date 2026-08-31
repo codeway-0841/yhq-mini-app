@@ -1048,6 +1048,10 @@ export function attachOctagon(
     if (config.isProd && config.server.allowedOriginExplicit) {
       const origin = req.headers.origin
       if (!origin || !config.server.allowedOrigins.includes(origin)) {
+        // Diagnostika: rad etish JIM bo'lmasligi kerak — 2026-08-31 incident'da
+        // Render ALLOWED_ORIGIN'eski domen bilan qolib, app.kivvi.uz'dagi BARCHA
+        // user "Aloqa uzildi" ko'rgan; log bo'lsa bir qarashda topilardi.
+        console.warn('[octagon] origin REJECTED', { origin: origin ?? null })
         ws.close(1008, 'origin_not_allowed')
         return
       }
