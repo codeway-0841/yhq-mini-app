@@ -54,3 +54,6 @@ walkthrough.md
 *.keystore
 **/key.properties
 **/keystore.properties
+
+# Sessiya rejasi — lokal fayl, ichida keystore paroli bor (repo'ga kirmasligi SHART)
+NEXT-SESSION-TASKS.md
