@@ -87,6 +87,10 @@ npx tsc -p tsconfig.json --noEmit        # frontend typecheck
 npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 npx cap sync android       # dist → android/ web asset yangilash (build DAN KEYIN)
 cd android && gradlew assembleDebug  # Debug APK → app/build/outputs/apk/debug/ (Android SDK + Java 17-21; JBR 25'da Gradle 8.14 xato)
+cd android && gradlew assembleRelease bundleRelease  # Release APK (kiwi-release.apk) + Play AAB (app-release.aab) —
+                          # imzo android/keystore.properties'dan (GITIGNORED: keystore app/kivvi-upload.keystore,
+                          # alias kivvi-upload — ZAXIRA qiling, yo'qolsa Play update bo'lmaydi!)
+                          # Windows bash: JAVA_HOME=C:\Users\PC\.jdks\jdk-21.0.6+7, ANDROID_HOME=%LOCALAPPDATA%\Android\Sdk
 ```
 
 APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
