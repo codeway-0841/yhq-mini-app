@@ -208,6 +208,21 @@ const matches:       Map<string, Match>  = new Map()  // matchId → Match
 const playerToMatch: Map<string, string> = new Map()  // userId → matchId
 const connsByUser = new Map<string, Set<WebSocket>>()
 
+/** Diagnostika counter'lari — /ws/stats endpoint'idan ko'rinadi (PII yo'q). */
+let totalConnections = 0
+let totalMessages = 0
+export function getOctagonStats(wssClients: number): Record<string, number> {
+  return {
+    clients: wssClients,
+    totalConnections,
+    totalMessages,
+    onlineUsers: connsByUser.size,
+    queue: queue.size,
+    duels: duels.size,
+    matches: matches.size,
+  }
+}
+
 // ── M-2 (audit): online ro'yxat yuklama himoyasi ────────────────────────────
 // Eski holat: har connect/disconnect (250ms debounce) TO'LIQ DB query + O(N)
 // payload BARCHA N socket'ga (flap = 4 query/s + O(N²) egress); har get_online
@@ -1059,6 +1074,7 @@ export function attachOctagon(
     // Diagnostika (Render log'larida WS transport muammolarini ko'rish uchun):
     // 'connection' otdi, lekin xabarlar kelyaptimi — close'dagi counts orqali bilinadi.
     console.log('[octagon] connection OPEN', { ip, origin: req.headers.origin ?? null, total: wss.clients.size })
+    totalConnections++
 
     const state: ConnState = {
       authed: false, userId: null, isAlive: true,
@@ -1101,6 +1117,7 @@ export function attachOctagon(
 
     ws.on('message', (raw) => {
       state.isAlive = true
+      totalMessages++
 
       // Per-connection message rate limit
       const now = Date.now()

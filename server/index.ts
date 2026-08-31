@@ -13,7 +13,7 @@ import http                from 'http'
 import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
-import { attachOctagon, loadOctagonPools } from './octagon'
+import { attachOctagon, loadOctagonPools, getOctagonStats } from './octagon'
 import { stopAllIntervals } from './utils/shutdown'
 
 const app    = createApp()
@@ -24,6 +24,11 @@ const server = http.createServer(app)
 // uzoq so'rovlar (~90s) sinib qolmasligi uchun.
 server.headersTimeout = 10_000
 const wss    = new WebSocketServer({ server, path: '/ws/octagon', maxPayload: 16 * 1024 })
+// Diagnostika (PII'siz counter'lar) — WS transport muammolarini Render log'siz
+// tashqi tomondan tekshirish uchun. Faqat son/qatorlar.
+app.get('/ws/stats', (_req, res) => {
+  res.json({ ok: true, ...getOctagonStats(wss.clients.size) })
+})
 
 /** Graceful shutdown — close listeners, finish in-flight requests, exit.
  *  (FIXPLAN #21): (a) modul interval'lari (join-sweep, bot login-cleanup,
