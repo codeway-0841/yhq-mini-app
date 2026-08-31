@@ -61,10 +61,20 @@ input, button, select, textarea {
   font-family: inherit;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--theme-line); border-radius: 4px; }
+/* Scrollbar — FAQAT desktop (hover+fine pointer): touch qurilmalarda
+   (Android WebView/TG/APK) custom 4px scrollbar har doim ko'rinib turardi
+   (2026-09-01 "scroll ko'rinadi" incident) — touch'da NATIVE auto-hide
+   overlay scrollbar ishlasin (barcha mobil ilovalar kabi). */
+@media (hover: hover) and (pointer: fine) {
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--theme-line); border-radius: 4px; }
+}
+/* Touch qurilmalar: Chromium auto-hide overlay'dan tashqari Firefox'ni ham
+   butunlay yashiramiz (scrollbar-width) */
+@media (hover: none), (pointer: coarse) {
+  * { scrollbar-width: none; }
+}
 
 /* ═══ SAFE-AREA TIZIMI — YAGONA MANBA (2026-09-01 TG fullscreen/APK audit) ═══
    UCH muhit qamrab olinadi (qaysi kattaroq bo'lsa o'sha g'alaba qozonadi):
@@ -93,6 +103,15 @@ input, button, select, textarea {
   --safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-content-safe-area-inset-bottom, 0px));
 }
 body { padding-top: var(--safe-top-body, 0px); }
+
+/* Native APK (Capacitor edge-to-edge): tepada TG floating tugmalari YO'Q —
+   faqat status bar. Shuning uchun nafas 16px EMAS, 8px: kontent status bar
+   ostida ZIXIROQ turadi (2026-09-01 osonprava-vs-biznik taqqoslash: APK'da
+   +16px ortiqcha bo'sh zolima ko'rinardi). body[data-platform=native]
+   marker'ini applyNativeChrome (platform/native.ts) yozadi. */
+body[data-platform='native'] {
+  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 8px));
+}
 
 /* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen, Darslik viewer —
    fixed inset-0 ICHIDA bo'lgani uchun body padding ularga TEGMAYDI):

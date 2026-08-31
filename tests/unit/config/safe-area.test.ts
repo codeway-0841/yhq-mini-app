@@ -107,4 +107,20 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     expect(ptr).toContain('window.scrollY')
     expect(ptr).not.toContain("querySelector('.route-page')")
   })
+
+  it('APK (native) tepa nafas ZIXIROQ: 8px override (2026-09-01 osonprava taqqoslash)', () => {
+    const css = fs.readFileSync(path.join(SRC, 'index.css'), 'utf8')
+    // Native APK'da TG floating tugmalari yo'q — status bar + 8px kifoya;
+    // 16px'lik ortiqcha bo'sh zolima bo'lardi. Override MAVJUD bo'lishi shart.
+    expect(css).toMatch(/body\[data-platform='native'\]\s*\{\s*--safe-top-body:\s*calc\(var\(--safe-top, 0px\) \+ min\(var\(--safe-top, 0px\), 8px\)\)/)
+  })
+
+  it('Custom scrollbar FAQAT desktop (touch\'da native auto-hide) — "scroll ko\'rinadi" regression', () => {
+    const css = fs.readFileSync(path.join(SRC, 'index.css'), 'utf8')
+    // ::-webkit-scrollbar qoidalari @media (hover: hover) and (pointer: fine)
+    // ICHIDA bo'lishi shart — touch WebView'da scrollbar har doim ko'rinardi
+    const m = css.match(/@media \(hover: hover\) and \(pointer: fine\)\s*\{[\s\S]*?::-webkit-scrollbar/)
+    expect(m, '::-webkit-scrollbar hover:hover media ichida emas!').not.toBeNull()
+    expect(css).toMatch(/@media \(hover: none\), \(pointer: coarse\)\s*\{\s*\*\s*\{\s*scrollbar-width: none/)
+  })
 })
