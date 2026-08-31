@@ -45,7 +45,12 @@ src/
   platform/        #   window.Telegram + Capacitor YAGONA kirish nuqtasi:
                    #     telegram.ts (WebApp), haptics.ts, native.ts (APK: yagona back, splash)
   content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs, formulas + lessonMap.yhq.json
-capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle), server.appStartPath='app.html' (dist/index.html = landing!)
+capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle), server.appStartPath='/app.html' (dist/index.html = landing!).
+                   #   LEADING SLASH SHART (2026-08-31 APK incident): Capacitor 8 Bridge.java https
+                   #   scheme'da "https://localhost" + startPath'ni slash'siz YOPISHTIRADI — 'app.html'
+                   #   bo'lsa WebView "https://localhostapp.html" ochib ERR_NAME_NOT_RESOLVED berardi;
+                   #   regression — tests/unit/config/capacitor-config.test.ts. Shuningdek: bu faylda
+                   #   massiv `]'sini yangi qatorga tashimang — esbuild 0.28 parser bug'i (vitest import sinadi).
 android/           #   Generate qilingan native loyiha — APK build uchun Android SDK kerak (gradlew)
 server/
   config/
