@@ -1,7 +1,21 @@
-import { useState, useMemo } from 'react'
-import { getSignByCode, type RoadSign } from '../../../content/signs'
+import { useState, useMemo, useEffect, useCallback } from 'react'
+import type { RoadSign } from '../../../content/signs'
 import { X, TrafficCone, ExternalLink } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+
+// ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
+// signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
+// hatto izohda hech bir belgi kodi bo'lmasa ham. Endi chunk FAQAT izoh matnida
+// belgi kodi/linki uchraganda dinamik yuklanadi; yuklanmaguncha kodlar oddiy
+// matn ko'rinishida turadi, kelgach tugmaga "yangilanadi" (useMemo qayta hisob).
+type SignsModule = typeof import('../../../content/signs')
+type GetSign = (code: string) => RoadSign | undefined
+
+let signsPromise: Promise<SignsModule> | null = null
+function loadSigns(): Promise<SignsModule> {
+  if (!signsPromise) signsPromise = import('../../../content/signs')
+  return signsPromise
+}
 
 function renderSimpleBold(str: string) {
   const parts = str.split(/(\*\*.*?\*\*)/g)
@@ -98,6 +112,30 @@ interface MarkdownExplanationProps {
 
 export default function MarkdownExplanation({ content }: MarkdownExplanationProps) {
   const [selectedSign, setSelectedSign] = useState<RoadSign | null>(null)
+  const [getSign, setGetSign] = useState<GetSign | null>(null)
+
+  // Belgilar chunk'i FAQAT izohda belgi kodi/linki bor bo'lsagina yuklanadi
+  const maybeHasSigns = useMemo(
+    () => !!content && (/signs\//.test(content) || /\b[1-7]\.\d{1,2}\b/.test(content)),
+    [content]
+  )
+
+  useEffect(() => {
+    if (!maybeHasSigns) return
+    let cancelled = false
+    void loadSigns().then((m) => { if (!cancelled) setGetSign(() => m.getSignByCode) })
+    return () => { cancelled = true }
+  }, [maybeHasSigns])
+
+  const handleSignClick = useCallback((code: string) => {
+    const cached = getSign?.(code)
+    if (cached) { setSelectedSign(cached); return }
+    // Chunk hali kelmagan bo'lsa (juda tez bosilgan) — yuklab, keyin ochamiz
+    void loadSigns().then((m) => {
+      const sign = m.getSignByCode(code)
+      if (sign) setSelectedSign(sign)
+    })
+  }, [getSign])
 
   // Parse markdown into structured segments with clickable sign links
   const parsedNodes = useMemo(() => {
@@ -121,10 +159,7 @@ export default function MarkdownExplanation({ content }: MarkdownExplanationProp
               const itemText = line.trim().replace(/^[-*]\s+/, '')
               return (
                 <li key={lIdx} className="pl-1">
-                  {renderInlineMarkdown(itemText, (code) => {
-                    const sign = getSignByCode(code)
-                    if (sign) setSelectedSign(sign)
-                  })}
+                  {renderInlineMarkdown(itemText, handleSignClick, getSign)}
                 </li>
               )
             })}
@@ -134,14 +169,11 @@ export default function MarkdownExplanation({ content }: MarkdownExplanationProp
 
       return (
         <p key={pIdx} className="text-[13.5px] text-pfg leading-relaxed mb-2.5 last:mb-0">
-          {renderInlineMarkdown(trimmed, (code) => {
-            const sign = getSignByCode(code)
-            if (sign) setSelectedSign(sign)
-          })}
+          {renderInlineMarkdown(trimmed, handleSignClick, getSign)}
         </p>
       )
     })
-  }, [content])
+  }, [content, handleSignClick, getSign])
 
   return (
     <>
@@ -158,7 +190,7 @@ export default function MarkdownExplanation({ content }: MarkdownExplanationProp
  * - **Bold Text** -> <strong>Bold Text</strong>
  * - Automatic detection of road signs (3.27, 5.33, etc.)
  */
-function renderInlineMarkdown(text: string, onSignClick: (code: string) => void) {
+function renderInlineMarkdown(text: string, onSignClick: (code: string) => void, getSign: GetSign | null) {
   // Regex to match links [label](url) and bold **text**
   const regex = /\[(.*?)\]\((.*?)\)|\*\*(.*?)\*\*/g
   const result: React.ReactNode[] = []
@@ -171,7 +203,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
     // Text before match
     if (matchIndex > lastIndex) {
       const beforeText = text.slice(lastIndex, matchIndex)
-      result.push(parsePlainRoadSigns(beforeText, onSignClick, `plain-${lastIndex}`))
+      result.push(parsePlainRoadSigns(beforeText, onSignClick, `plain-${lastIndex}`, getSign))
     }
 
     if (match[1] !== undefined && match[2] !== undefined) {
@@ -183,7 +215,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
       const signMatch = url.match(/^\/?signs\/([a-zA-Z0-9._-]+)$/)
       if (signMatch) {
         const code = signMatch[1]
-        const sign = getSignByCode(code)
+        const sign = getSign?.(code)
 
         result.push(
           <button
@@ -225,7 +257,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
       const boldContent = match[3]
       result.push(
         <strong key={`bold-${matchIndex}`} className="font-bold text-pfg">
-          {parsePlainRoadSigns(boldContent, onSignClick, `bold-${matchIndex}`)}
+          {parsePlainRoadSigns(boldContent, onSignClick, `bold-${matchIndex}`, getSign)}
         </strong>
       )
     }
@@ -235,7 +267,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
 
   if (lastIndex < text.length) {
     const afterText = text.slice(lastIndex)
-    result.push(parsePlainRoadSigns(afterText, onSignClick, `plain-end-${lastIndex}`))
+    result.push(parsePlainRoadSigns(afterText, onSignClick, `plain-end-${lastIndex}`, getSign))
   }
 
   return result
@@ -244,7 +276,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void)
 /**
  * Automatically detects road sign codes like 3.27, 5.33, 1.1 in text and turns them into blue buttons
  */
-function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, keyPrefix: string): React.ReactNode {
+function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, keyPrefix: string, getSign: GetSign | null): React.ReactNode {
   const signCodeRegex = /\b([1-7]\.\d{1,2}(?:\.\d{1,2})?)\b(?:\s*-\s*["«“]([^"»”]+)["»”])?/g
   const nodes: React.ReactNode[] = []
   let lastIdx = 0
@@ -252,7 +284,7 @@ function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, 
 
   while ((m = signCodeRegex.exec(text)) !== null) {
     const code = m[1]
-    const sign = getSignByCode(code)
+    const sign = getSign?.(code)
 
     if (sign) {
       if (m.index > lastIdx) {
