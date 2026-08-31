@@ -114,9 +114,9 @@ describe('Telegram ichida', () => {
     const rootStyle = document.documentElement.style
 
     const tg = webApp()
-    tg.contentSafeAreaInset = { top: 56, bottom: 34, left: 0, right: 0 }
+    tg.contentSafeAreaInset = { top: 96, bottom: 34, left: 0, right: 0 }
     syncTelegramSafeArea()
-    expect(rootStyle.getPropertyValue('--safe-top')).toBe('56px')
+    expect(rootStyle.getPropertyValue('--safe-top')).toBe('96px')
     expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
   })
 })

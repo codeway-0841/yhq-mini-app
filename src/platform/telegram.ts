@@ -69,22 +69,42 @@ export function syncTelegramSafeArea(): void {
   if (!tg || typeof document === 'undefined') return
 
   const apply = () => {
-    const top = tg.contentSafeAreaInset?.top ?? tg.safeAreaInset?.top ?? 0
-    const bottom = tg.contentSafeAreaInset?.bottom ?? tg.safeAreaInset?.bottom ?? 0
-    if (top > 0) {
-      document.documentElement.style.setProperty('--safe-top', `${top}px`)
-    }
-    if (bottom > 0) {
-      document.documentElement.style.setProperty('--safe-bottom', `${bottom}px`)
-    }
+    const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent) || tg.platform === 'ios')
+    const isAndroid = typeof navigator !== 'undefined' && (/Android/i.test(navigator.userAgent) || tg.platform === 'android')
+
+    const contentTop = tg.contentSafeAreaInset?.top ?? 0
+    const safeTop = tg.safeAreaInset?.top ?? 0
+
+    // Telegram fullscreen rejimida floating buttons / status bar ostida qolmasligi uchun:
+    // iOS (Dynamic Island / notch + floating buttons) = ~88px; Android = ~72px.
+    const fallbackTop = isIos ? 88 : isAndroid ? 72 : 0
+    const top = Math.max(contentTop, safeTop, fallbackTop)
+
+    const contentBottom = tg.contentSafeAreaInset?.bottom ?? 0
+    const safeBottom = tg.safeAreaInset?.bottom ?? 0
+    const fallbackBottom = isIos ? 34 : 0
+    const bottom = Math.max(contentBottom, safeBottom, fallbackBottom)
+
+    document.documentElement.style.setProperty('--safe-top', `${top}px`)
+    document.documentElement.style.setProperty('--safe-bottom', `${bottom}px`)
   }
 
   apply()
 
+  setTimeout(apply, 50)
+  setTimeout(apply, 150)
+  setTimeout(apply, 300)
+  setTimeout(apply, 600)
+
   tg.onEvent?.('fullscreen_changed', apply)
-  tg.onEvent?.('fullscreen_failed', apply)
+  tg.onEvent?.('fullscreenChanged', apply)
   tg.onEvent?.('safe_area_changed', apply)
+  tg.onEvent?.('safeAreaChanged', apply)
   tg.onEvent?.('content_safe_area_changed', apply)
+  tg.onEvent?.('contentSafeAreaChanged', apply)
+  if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+    window.addEventListener('resize', apply)
+  }
 }
 
 /** Telegram initData — har bir API so'rovi bilan server-side verification uchun yuboriladi. */
