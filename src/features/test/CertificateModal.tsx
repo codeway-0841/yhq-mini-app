@@ -48,7 +48,7 @@ export default function CertificateModal({ score, total, percent, sample = false
   const subject = SUBJECT_BASES.find((s) => s.id === subjectId)
   const subjectName = lang === 'ru' ? (subject?.nameRu ?? 'ПДД') : (subject?.name ?? 'Yo‘l Harakati Qoidalari')
 
-  const certIdRef = useRef(`KIWI-${(user?.id ?? 'GUEST').slice(-5).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`)
+  const certIdRef = useRef(`KIVVI-${(user?.id ?? 'GUEST').slice(-5).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`)
   const certId = sample ? 'NAMUNA' : certIdRef.current
 
   const formattedDate = new Intl.DateTimeFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ', {
@@ -57,7 +57,7 @@ export default function CertificateModal({ score, total, percent, sample = false
     year: 'numeric',
   }).format(new Date())
 
-  const fullName = [user?.firstName, user?.lastName].filter(Boolean).join(' ') || (lang === 'ru' ? 'Студент KIWI' : 'KIWI Tinglovchisi')
+  const fullName = [user?.firstName, user?.lastName].filter(Boolean).join(' ') || (lang === 'ru' ? 'Студент KIVVI' : 'KIVVI Tinglovchisi')
 
   useEffect(() => {
     if (!canvasRef.current) return
@@ -124,7 +124,7 @@ export default function CertificateModal({ score, total, percent, sample = false
           await navigator.share({
             files: [file],
             title: tt('certOfficialTitle'),
-            text: `KIWI · ${subjectName} (${certId})`,
+            text: `KIVVI · ${subjectName} (${certId})`,
           })
           setDownloading(false)
           return
@@ -160,8 +160,8 @@ export default function CertificateModal({ score, total, percent, sample = false
     const uid = user?.id ?? '0'
     const emoji = '🏆'
     const shareText = lang === 'ru'
-      ? `${emoji} Я успешно сдал(а) экзамен по ${subjectName} в KIWI с результатом ${percent}%!\nСертификат № ${certId}\nПроверь свои знания:`
-      : `${emoji} Men KIWI'da ${subjectName} bo‘yicha imtihonni ${percent}% bilan topshirdim!\nSertifikat № ${certId}\nO‘z bilimingni sinab ko‘r:`
+      ? `${emoji} Я успешно сдал(а) экзамен по ${subjectName} в KIVVI с результатом ${percent}%!\nСертификат № ${certId}\nПроверь свои знания:`
+      : `${emoji} Men KIVVI'da ${subjectName} bo‘yicha imtihonni ${percent}% bilan topshirdim!\nSertifikat № ${certId}\nO‘z bilimingni sinab ko‘r:`
     shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid}`, shareText)
   }
 

@@ -107,15 +107,15 @@ export function emailVerificationTemplate(verificationLink: string, firstName: s
 
   const text = language === 'ru' ? {
     greeting: `Здравствуйте, ${safeName}!`,
-    body: 'Спасибо за регистрацию в KIWI. Пожалуйста, подтвердите свой адрес электронной почты, нажав на кнопку ниже:',
+    body: 'Спасибо за регистрацию в KIVVI. Пожалуйста, подтвердите свой адрес электронной почты, нажав на кнопку ниже:',
     button: 'Подтвердить email',
-    footer: 'Если вы не регистрировались на KIWI, проигнорируйте это письмо.',
+    footer: 'Если вы не регистрировались на KIVVI, проигнорируйте это письмо.',
     expire: 'Эта ссылка действительна в течение 24 часов.',
   } : {
     greeting: `Salom, ${safeName}!`,
-    body: 'KIWI\'da ro\'yxatdan o\'tganingiz uchun rahmat. Email manzilingizni quyidagi tugmani bosib tasdiqlang:',
+    body: 'KIVVI\'da ro\'yxatdan o\'tganingiz uchun rahmat. Email manzilingizni quyidagi tugmani bosib tasdiqlang:',
     button: 'Emailni tasdiqlash',
-    footer: 'Agar siz KIWI\'da ro\'yxatdan o\'tmagan bo\'lsangiz, bu xatni e\'tiborsiz qoldiring.',
+    footer: 'Agar siz KIVVI\'da ro\'yxatdan o\'tmagan bo\'lsangiz, bu xatni e\'tiborsiz qoldiring.',
     expire: 'Bu havola 24 soat davomida amal qiladi.',
   }
 
@@ -135,7 +135,7 @@ export function emailVerificationTemplate(verificationLink: string, firstName: s
               <!-- Header -->
               <tr>
                 <td style="padding: 40px 40px 20px; text-align: center;">
-                  <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #1a1a1a;">KIWI</h1>
+                  <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #1a1a1a;">KIVVI</h1>
                 </td>
               </tr>
               <!-- Body -->
@@ -179,13 +179,13 @@ export function passwordResetTemplate(resetLink: string, firstName: string, lang
 
   const text = language === 'ru' ? {
     greeting: `Здравствуйте, ${safeName}!`,
-    body: 'Мы получили запрос на сброс пароля для вашего аккаунта KIWI. Нажмите кнопку ниже, чтобы создать новый пароль:',
+    body: 'Мы получили запрос на сброс пароля для вашего аккаунта KIVVI. Нажмите кнопку ниже, чтобы создать новый пароль:',
     button: 'Сбросить пароль',
     footer: 'Если вы не запрашивали сброс пароля, проигнорируйте это письмо. Ваш пароль останется без изменений.',
     expire: 'Эта ссылка действительна в течение 1 часа.',
   } : {
     greeting: `Salom, ${safeName}!`,
-    body: 'KIWI akkauntingiz uchun parol tiklash so\'rovi qabul qilindi. Yangi parol yaratish uchun quyidagi tugmani bosing:',
+    body: 'KIVVI akkauntingiz uchun parol tiklash so\'rovi qabul qilindi. Yangi parol yaratish uchun quyidagi tugmani bosing:',
     button: 'Parolni tiklash',
     footer: 'Agar siz parol tiklashni so\'ramagan bo\'lsangiz, bu xatni e\'tiborsiz qoldiring. Parolingiz o\'zgarmaydi.',
     expire: 'Bu havola 1 soat davomida amal qiladi.',
@@ -207,7 +207,7 @@ export function passwordResetTemplate(resetLink: string, firstName: string, lang
               <!-- Header -->
               <tr>
                 <td style="padding: 40px 40px 20px; text-align: center;">
-                  <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #1a1a1a;">KIWI</h1>
+                  <h1 style="margin: 0; font-size: 28px; font-weight: 800; color: #1a1a1a;">KIVVI</h1>
                 </td>
               </tr>
               <!-- Body -->

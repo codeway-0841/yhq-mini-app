@@ -71,12 +71,12 @@ export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData
   drawCorner(W - 46, H - 46, 180)
   drawCorner(46, H - 46, 270)
 
-  // 3. Top branding: KIWI Academy
+  // 3. Top branding: KIVVI
   ctx.textAlign = 'center'
   ctx.fillStyle = '#fbbf24'
   ctx.font = 'bold 15px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.letterSpacing = '4px'
-  ctx.fillText('★  KIWI O‘QUV PLATFORMASI  ★', W / 2, 90)
+  ctx.fillText('★  KIVVI O‘QUV PLATFORMASI  ★', W / 2, 90)
 
   // 4. Main Certificate Title
   ctx.letterSpacing = '2px'
@@ -195,7 +195,7 @@ export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData
   ctx.font = '900 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.fillText('TASDIQLANGAN', sealX, sealY + 6)
   ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText('KIWI VERIFIED', sealX, sealY + 22)
+  ctx.fillText('KIVVI VERIFIED', sealX, sealY + 22)
 
   // 10. Left: Date of issuance
   ctx.textAlign = 'left'
@@ -223,8 +223,8 @@ export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData
   ctx.font = '12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.fillText(
     isRu
-      ? 'Проверено цифровой системой KIWI · t.me/kiwi_uz_bot'
-      : 'KIWI raqamli o‘quv tizimi orqali tasdiqlangan · t.me/kiwi_uz_bot',
+      ? 'Проверено цифровой системой KIVVI · t.me/kiwi_uz_bot'
+      : 'KIVVI raqamli o‘quv tizimi orqali tasdiqlangan · t.me/kiwi_uz_bot',
     W / 2,
     785,
   )

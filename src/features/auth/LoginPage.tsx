@@ -341,7 +341,7 @@ export default function LoginPage() {
         {isWeb ? (
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <img src="/images/splash-brand.png" alt="KIWI" className="w-14 rounded-control" />
+              <img src="/images/splash-brand.png" alt="KIVVI" className="w-14 rounded-control" />
               <div>
                 <h1 className="text-[18px] font-semibold text-pfg leading-tight">{tt('authWelcome')}</h1>
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
@@ -356,7 +356,7 @@ export default function LoginPage() {
           </div>
         ) : (
           <>
-            <img src="/images/splash-brand.png" alt="KIWI" className="w-36 rounded-[1.75rem] mx-auto" />
+            <img src="/images/splash-brand.png" alt="KIVVI" className="w-36 rounded-[1.75rem] mx-auto" />
             <h1 className="text-[22px] font-semibold text-pfg text-center mt-5">{tt('authWelcome')}</h1>
             <p className="text-[13px] text-pmuted text-center mt-1 mb-6">{tt('authTagline')}</p>
           </>

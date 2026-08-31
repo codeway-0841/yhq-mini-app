@@ -71,8 +71,8 @@ export const copy = {
       eyebrow: { uz: 'Coinlar va merch', ru: 'Монеты и мерч' } as Pair,
       title: { uz: 'Coin evaziga HAQIQIY sovg‘alar', ru: 'РЕАЛЬНЫЕ подарки за монеты' } as Pair,
       body: {
-        uz: 'To‘g‘ri javoblar, kunlik vazifalar va boss mukofotlari coin keltiradi. Yig‘ilgan coinlarni KIWI merchiga almashtiring — futbolka, shopper sumka yoki stikerlar to‘plami.',
-        ru: 'Верные ответы, ежедневные задания и награды за боссов приносят монеты. Обменивайте их на мерч KIWI — футболку, шоппер или набор наклеек.',
+        uz: 'To‘g‘ri javoblar, kunlik vazifalar va boss mukofotlari coin keltiradi. Yig‘ilgan coinlarni KIVVI merchiga almashtiring — futbolka, shopper sumka yoki stikerlar to‘plami.',
+        ru: 'Верные ответы, ежедневные задания и награды за боссов приносят монеты. Обменивайте их на мерч KIVVI — футболку, шоппер или набор наклеек.',
       } as Pair,
       bullets: {
         uz: ['Har bir to‘g‘ri javob = 2 coin', 'Haqiqiy sovg‘alar: kiyim, sumka, stikerlar', 'Buyurtma ilovaning o‘zida rasmiylashtiriladi'],
@@ -129,7 +129,7 @@ export const copy = {
     title: { uz: 'Ko‘p so‘raladigan savollar', ru: 'Частые вопросы' } as Pair,
     items: [
       {
-        q: { uz: 'KIWI bepulmi?', ru: 'KIWI бесплатный?' },
+        q: { uz: 'KIVVI bepulmi?', ru: 'KIVVI бесплатный?' },
         a: {
           uz: 'Ha. Barcha testlar, biletlar, PvP duellar va belgilar o‘yini to‘liq bepul. Premium obuna ovozli sharhlar, video darslar va eksklyuziv temalarni ochadi.',
           ru: 'Да. Все тесты, билеты, PvP-дуэли и игра знаков полностью бесплатны. Подписка открывает аудиокомментарии, видеоуроки и эксклюзивные темы.',

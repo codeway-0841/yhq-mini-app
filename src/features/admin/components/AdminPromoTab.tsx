@@ -118,7 +118,7 @@ export default function AdminPromoTab() {
   }
 
   const generateRandomCode = () => {
-    const prefixes = ['AVTO', 'KIWI', 'DRIVE', 'SUPER', 'BONUS']
+    const prefixes = ['AVTO', 'KIVVI', 'DRIVE', 'SUPER', 'BONUS']
     const prefix = prefixes[Math.floor(Math.random() * prefixes.length)]
     const num = Math.floor(100 + Math.random() * 900)
     setNewCode(`${prefix}${num}`)

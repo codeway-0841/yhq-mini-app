@@ -6,7 +6,7 @@ describe('SplashScreen component', () => {
   it('renders branding image and loading indicator', () => {
     render(<SplashScreen />)
 
-    const img = screen.getByAltText('KIWI')
+    const img = screen.getByAltText('KIVVI')
     expect(img).toBeInTheDocument()
     expect(screen.getByText('Yuklanmoqda...')).toBeInTheDocument()
   })

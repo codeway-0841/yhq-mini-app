@@ -90,7 +90,7 @@ export default function ResultsModal({
       // 1) Haqiqiy Web Share (brauzer va ba'zi WebView'larda)
       if (file && navigator.canShare?.({ files: [file] })) {
         try {
-          await navigator.share({ files: [file], title: 'KIWI', text: `${shareText}\n${link}` })
+          await navigator.share({ files: [file], title: 'KIVVI', text: `${shareText}\n${link}` })
           return
         } catch (err) {
           if ((err as Error).name === 'AbortError') return // user bekor qildi

@@ -3,12 +3,14 @@ import { ArrowRight, Menu, X } from 'lucide-react'
 import { APP_URL, BOT_URL, PLAY_STORE_URL, PRIVACY_URL } from './config'
 import { copy, t, type Lang } from './copy'
 
-/** KIWI logotipi — app splash'dagi bilan bir xil brend yozuvi. */
+/** KIVVI logotipi — K badge + wordmark (favicon bilan bir xil brend assetlari). */
 function Brand({ size = 'md' }: { size?: 'md' | 'lg' }) {
-  const cls = size === 'lg' ? 'text-2xl' : 'text-xl'
+  const badgeCls = size === 'lg' ? 'size-9' : 'size-8'
+  const wordCls = size === 'lg' ? 'h-[22px]' : 'h-[18px]'
   return (
-    <a href="/" className={`font-display font-bold tracking-tight text-[color:var(--l-text)] ${cls}`}>
-      KI<span className="grad-text">WI</span>
+    <a href="/" className="flex items-center gap-2.5" aria-label="KIVVI — bosh sahifa">
+      <img src="/images/brand-badge.webp" alt="" width={36} height={36} className={badgeCls} />
+      <img src="/images/brand-wordmark.webp" alt="kivvi" width={96} height={28} className={`${wordCls} w-auto`} />
     </a>
   )
 }
@@ -163,7 +165,7 @@ export function Footer({ lang }: { lang: Lang }) {
       </div>
       <div className="border-t border-[var(--l-line)]">
         <div className="max-w-6xl mx-auto px-5 sm:px-8 py-5 flex items-center justify-between text-xs text-[var(--l-faint)]">
-          <span>© 2026 KIWI. {t(f.rights, lang)}</span>
+          <span>© 2026 KIVVI. {t(f.rights, lang)}</span>
           <span>kivvi.uz</span>
         </div>
       </div>

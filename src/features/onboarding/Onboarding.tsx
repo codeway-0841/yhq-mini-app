@@ -60,7 +60,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
       <div className="relative flex-1 flex items-center justify-center my-4">
         <img
           src="/images/splash-brand.png"
-          alt="KIWI"
+          alt="KIVVI"
           className="w-[290px] rounded-[2rem] animate-fadeIn"
         />
       </div>

@@ -108,7 +108,7 @@ export default function AdminSmsTab() {
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder={"SMS matni (min 10 belgi). Masalan: KIWI'da bugun Premium 20% chegirma! To'xtatish: Profil → SMS sozlamasi"}
+          placeholder={"SMS matni (min 10 belgi). Masalan: KIVVI'da bugun Premium 20% chegirma! To'xtatish: Profil → SMS sozlamasi"}
           maxLength={MAX_LEN}
           rows={4}
           className="w-full bg-psurface border border-pline rounded-control px-3 py-2.5 text-sm outline-none focus:border-ppurple/60 resize-none"

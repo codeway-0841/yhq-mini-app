@@ -14,7 +14,7 @@ export default function SplashScreen() {
           <source srcSet="/images/splash-brand.webp" type="image/webp" />
           <img
             src="/images/splash-brand.png"
-            alt="KIWI"
+            alt="KIVVI"
             width={260}
             height={260}
             decoding="async"

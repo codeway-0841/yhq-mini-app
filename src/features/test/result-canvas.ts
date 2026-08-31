@@ -26,8 +26,8 @@ export function buildResultShareText(d: Pick<ResultCardData, 'correct' | 'total'
   const isRu = d.lang === 'ru'
   const emoji = d.passed ? '🏆' : '💪'
   const base = isRu
-    ? `${emoji} Мой результат в KIWI: ${d.percent}% (правильно ${d.correct}/${d.total})`
-    : `${emoji} KIWI'dagi natijam: ${d.percent}% (to'g'ri ${d.correct}/${d.total})`
+    ? `${emoji} Мой результат в KIVVI: ${d.percent}% (правильно ${d.correct}/${d.total})`
+    : `${emoji} KIVVI'dagi natijam: ${d.percent}% (to'g'ri ${d.correct}/${d.total})`
   const streak = d.streak > 1
     ? (isRu ? `\n🔥 Серия: ${d.streak} дн. подряд!` : `\n🔥 Seriya: ${d.streak} kun ketma-ket!`)
     : ''
@@ -105,7 +105,7 @@ export function drawResultCard(canvas: HTMLCanvasElement, data: ResultCardData):
   // 6. Ism + fan
   ctx.fillStyle = '#ffffff'
   ctx.font = `bold 44px ${FONT}`
-  const name = data.userName.trim() || (isRu ? 'Пользователь KIWI' : 'KIWI foydalanuvchisi')
+  const name = data.userName.trim() || (isRu ? 'Пользователь KIVVI' : 'KIVVI foydalanuvchisi')
   ctx.fillText(name.length > 26 ? `${name.slice(0, 25)}…` : name, cx, 790)
 
   ctx.fillStyle = '#cbd5e1'

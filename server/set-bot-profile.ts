@@ -28,7 +28,7 @@ await bot.api.setMyCommands([
 ])
 
 await bot.api.setMyDescription(
-  "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
+  "KIVVI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
   "• Biletlar va mavzular bo'yicha testlar\n" +
   "• Xatolar ustida ishlash\n" +
   "• Oktagon — do'stlar bilan bellashuv\n\n" +
@@ -41,7 +41,7 @@ await bot.api.setMyShortDescription(
 
 // Persistent menu button (bottom-left of the chat) opening the Mini App
 await bot.api.setChatMenuButton({
-  menu_button: { type: 'web_app', text: 'KIWI', web_app: { url: APP_URL } },
+  menu_button: { type: 'web_app', text: 'KIVVI', web_app: { url: APP_URL } },
 })
 
 const webhookUrl = 'https://app.kivvi.uz/api/bot'

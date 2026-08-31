@@ -704,7 +704,7 @@ export const authService = {
     const verificationLink = `${config.deploy.appUrl}/#/verify-email?token=${token}`
     await sendEmail({
       to: input.email,
-      subject: 'Email tasdiqlang — KIWI',
+      subject: 'Email tasdiqlang — KIVVI',
       html: emailVerificationTemplate(verificationLink, input.firstName, 'uz'),
     }).catch(err => {
       console.error('[Email verification send failed]', err)
@@ -866,7 +866,7 @@ export const authService = {
     const verificationLink = `${config.deploy.appUrl}/#/verify-email?token=${token}`
     await sendEmail({
       to: user.email,
-      subject: 'Email tasdiqlang — KIWI',
+      subject: 'Email tasdiqlang — KIVVI',
       html: emailVerificationTemplate(verificationLink, user.firstName, 'uz'),
     })
 
@@ -903,7 +903,7 @@ export const authService = {
     const resetLink = `${config.deploy.appUrl}/#/reset-password?token=${token}`
     await sendEmail({
       to: email,
-      subject: 'Parolni tiklash — KIWI',
+      subject: 'Parolni tiklash — KIVVI',
       html: passwordResetTemplate(resetLink, user.firstName, 'uz'),
     }).catch(err => {
       console.error('[Password reset email send failed]', err)

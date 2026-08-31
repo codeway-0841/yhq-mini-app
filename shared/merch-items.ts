@@ -33,17 +33,17 @@ export interface MerchItem {
 export const MERCH_ITEMS = [
   {
     id: 'nakleyka', price: 5000, stock: 20, emoji: '🏷️',
-    label: { uz: 'KIWI nakleykalari to‘plami', ru: 'Набор наклеек KIWI' },
+    label: { uz: 'KIVVI nakleykalari to‘plami', ru: 'Набор наклеек KIVVI' },
     desc:  { uz: '10 ta premium nakleyka — noutbuk, telefon, avtoulovingiz uchun', ru: '10 премиум-наклеек — для ноутбука, телефона, авто' },
   },
   {
     id: 'sumka',    price: 7000, stock: 10, emoji: '👜',
-    label: { uz: 'KIWI shopper sumka', ru: 'Шоппер KIWI' },
+    label: { uz: 'KIVVI shopper sumka', ru: 'Шоппер KIVVI' },
     desc:  { uz: 'Mustahkam x/з sumka — kundalik foydalanish va kutubxonaga', ru: 'Прочный х/б шоппер — на каждый день и для учёбы' },
   },
   {
     id: 'kiyim',    price: 10000, stock: 10, emoji: '👕',
-    label: { uz: 'KIWI futbolka', ru: 'Футболка KIWI' },
+    label: { uz: 'KIVVI futbolka', ru: 'Футболка KIVVI' },
     desc:  { uz: '100% paxta, brend bosmasi — o‘lcham buyurtma tafsilotida', ru: '100% хлопок, фирменный принт — размер в деталях заказа' },
   },
 ] as const satisfies readonly MerchItem[]

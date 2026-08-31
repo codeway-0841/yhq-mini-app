@@ -149,7 +149,7 @@ const appKeyboard = () => new InlineKeyboard().webApp("📱 Ilovani ochish", APP
 
 // ── Premium — Telegram Stars to'lovi (tarif rejalari — shared/premium-plans) ─
 const PREMIUM_DESC =
-  "KIWI Premium obunasi:\n" +
+  "KIVVI Premium obunasi:\n" +
   "• Barcha funksiyalarga cheksiz kirish\n" +
   "• Eksklyuziv temalar (9 ta atmosfera)\n" +
   "• AI Tutor va xatolar tahlili\n" +
@@ -161,7 +161,7 @@ async function sendPremiumInvoice(ctx: Context, planKey: PlanKey) {
   const plan = getPlan(planKey)
   if (!plan) return
   await ctx.replyWithInvoice(
-    `⭐ KIWI Premium — ${plan.tierNameUz}`,
+    `⭐ KIVVI Premium — ${plan.tierNameUz}`,
     PREMIUM_DESC,
     `premium_${plan.key}_${ctx.from?.id}`,
     'XTR',
@@ -176,7 +176,7 @@ async function sendPremiumChooser(ctx: Context) {
     kb.text(`⭐ ${p.tierNameUz} — ${p.stars} Stars`, `buy_${p.key}`).row()
   }
   await ctx.reply(
-    "👑 KIWI Premium — o'z tarifingizni tanlang:\n\n" +
+    "👑 KIVVI Premium — o'z tarifingizni tanlang:\n\n" +
     PREMIUM_PLANS.map((p) => `• ${p.tierNameUz} — ${p.periodUz} — ${p.stars}⭐`).join('\n'),
     { reply_markup: kb }
   )
@@ -197,14 +197,14 @@ function ensureProfile(): Promise<unknown> {
       { command: 'privacy',     description: "Maxfiylik siyosati" },
     ]),
     bot.api.setMyDescription(
-      "KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
+      "KIVVI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
       "• Biletlar va mavzular bo'yicha testlar\n" +
       "• Xatolar ustida ishlash\n" +
       "• Oktagon — do'stlar bilan bellashuv\n\n" +
       "Boshlash uchun /start bosing!"
     ),
     bot.api.setChatMenuButton({
-      menu_button: { type: 'web_app', text: 'KIWI', web_app: { url: APP_URL } },
+      menu_button: { type: 'web_app', text: 'KIVVI', web_app: { url: APP_URL } },
     }),
   ]).catch((err) => {
     profileReady = null   // retry next time if it failed
@@ -250,7 +250,7 @@ bot.command('start', async (ctx) => {
 
     if (!isPremium) {
       await ctx.reply(
-        "🔒 <b>Yopiq guruh faqat KIWI Premium obunachilari uchun.</b>\n\n" +
+        "🔒 <b>Yopiq guruh faqat KIVVI Premium obunachilari uchun.</b>\n\n" +
         "Guruhga kirish uchun avval ilovada Premium obunani faollashtiring:",
         {
           parse_mode: 'HTML',
@@ -327,7 +327,7 @@ bot.command('start', async (ctx) => {
       console.warn(`[bot] ref start_param noto'g'ri id shaklida: ${param}`)
     } else {
       await ctx.reply(
-        "🚗 Do'stingiz sizni KIWI'ga taklif qildi!\n\n" +
+        "🚗 Do'stingiz sizni KIVVI'ga taklif qildi!\n\n" +
         "Ilovani oching va qulay tarzda o'rganishni boshlang!",
         { reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", `${BASE_URL}?ref=${refId}`) },
       )
@@ -347,7 +347,7 @@ bot.command('start', async (ctx) => {
   }
 
   await ctx.reply(
-    "Xush kelibsiz! 🎓\n\nKIWI — barcha fanlar uchun zamonaviy ta'lim platformasi: testlar, biletlar va real vaqtli o'yinlar — hammasi bitta ilovada.",
+    "Xush kelibsiz! 🎓\n\nKIVVI — barcha fanlar uchun zamonaviy ta'lim platformasi: testlar, biletlar va real vaqtli o'yinlar — hammasi bitta ilovada.",
     { reply_markup: appKeyboard() }
   )
 })
@@ -399,7 +399,7 @@ bot.on('message:contact', async (ctx) => {
     .text('✅ Ha, bu men — kirishni tasdiqlash', 'tglogin_ok').row()
     .text('❌ Bekor qilish', 'tglogin_no')
   await ctx.reply(
-    "🖥 *Brauzerdan KIWI hisobingizga kirish so'raldi\\.*\n\n" +
+    "🖥 *Brauzerdan KIVVI hisobingizga kirish so'raldi\\.*\n\n" +
     `📱 Raqam: \`${contact.phone_number}\`\n\n` +
     "Agar bu SIZ bo'lmasangiz — *Bekor qilish*ni bosing\\.",
     { parse_mode: 'MarkdownV2', reply_markup: kb },
@@ -568,7 +568,7 @@ bot.on('chat_join_request', async (ctx) => {
       try {
         await ctx.api.sendMessage(
           from.id,
-          `🔒 «${chatTitle}» faqat KIWI Premium obunachilari uchun mo'ljallangan.\n\n` +
+          `🔒 «${chatTitle}» faqat KIVVI Premium obunachilari uchun mo'ljallangan.\n\n` +
           `Guruhga kirish uchun avval ilovada obunani faollashtiring, so'ngra qayta so'rov yuboring.`,
           {
             reply_markup: new InlineKeyboard().webApp("📱 Ilovani ochish", APP_URL),
@@ -611,7 +611,7 @@ bot.command('help', async (ctx) => {
 // ── /about ──────────────────────────────────────────────────────────────────
 bot.command('about', async (ctx) => {
   await ctx.reply(
-    "ℹ️ KIWI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
+    "ℹ️ KIVVI — Barcha fanlar uchun zamonaviy ta'lim platformasi.\n\n" +
     "• Biletlar va mavzular bo'yicha testlar\n" +
     "• Xatolar ustida ishlash rejimi\n" +
     "• Oktagon — real vaqtli bellashuvlar\n\n" +

@@ -74,7 +74,7 @@ const TEMPLATES = [
     text:
       "🎁 KATTA AKSIYA!\n\n" +
       "Barcha yangi va faol o'quvchilarimiz uchun maxsus 7 kunlik bepul Premium taqdim etamiz!\n\n" +
-      "🎟 Promokod: KIWI2026\n\n" +
+      "🎟 Promokod: KIVVI2026\n\n" +
       "Profil bo'limiga kiring va promokodni faollashtirib, barcha imtihonlarni bepul yeching! ⚡",
     btnText: '🎟 Promokodni kiritish',
   },
@@ -599,7 +599,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               <div className="p-3.5 space-y-2">
                 <div className="flex items-center gap-1.5 mb-1 text-[11px] font-semibold text-pblue">
                   <Bot size={13} />
-                  <span>KIWI Bot</span>
+                  <span>KIVVI Bot</span>
                 </div>
                 <p className="text-xs text-white/90 whitespace-pre-wrap leading-relaxed">
                   {text || "Xabar matni kiritilmagan..."}

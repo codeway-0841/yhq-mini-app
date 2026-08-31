@@ -56,7 +56,7 @@ export default function AdminPage() {
           <div className="text-center">
             <h1 className="text-sm font-semibold text-pfg flex items-center justify-center gap-1.5">
               <ShieldCheck size={16} className="text-ppurple" />
-              KIWI Admin Panel
+              KIVVI Admin Panel
             </h1>
             <span className="text-[10px] text-pmuted font-semibold">
               {user.firstName} (Admin)

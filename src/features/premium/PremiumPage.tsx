@@ -87,7 +87,7 @@ export default function PremiumPage() {
         <div className="flex items-center gap-3.5">
           <PremiumIcon size={24} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
-            <h2 className="text-[16px] font-semibold tracking-tight">KIWI Premium</h2>
+            <h2 className="text-[16px] font-semibold tracking-tight">KIVVI Premium</h2>
             <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
               {lang === 'ru'
                 ? 'Все возможности без ограничений — в одной подписке'
