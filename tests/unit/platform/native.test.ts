@@ -4,17 +4,23 @@
  */
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 
-const { addListenerMock, splashHideMock, isNativeMock } = vi.hoisted(() => ({
+const { addListenerMock, splashHideMock, isNativeMock, setOverlaysMock, setStyleMock } = vi.hoisted(() => ({
   addListenerMock: vi.fn(),
   splashHideMock: vi.fn(),
   isNativeMock: vi.fn(),
+  setOverlaysMock: vi.fn(),
+  setStyleMock: vi.fn(),
 }))
 
 vi.mock('@capacitor/core', () => ({ Capacitor: { isNativePlatform: isNativeMock } }))
 vi.mock('@capacitor/app', () => ({ App: { addListener: addListenerMock } }))
 vi.mock('@capacitor/splash-screen', () => ({ SplashScreen: { hide: splashHideMock } }))
+vi.mock('@capacitor/status-bar', () => ({
+  StatusBar: { setOverlaysWebView: setOverlaysMock, setStyle: setStyleMock },
+  Style: { Dark: 'DARK', Light: 'LIGHT' },
+}))
 
-import { isNativeApp, bindAppBackButton, hideSplashScreen } from '../../../src/platform/native'
+import { isNativeApp, bindAppBackButton, hideSplashScreen, applyNativeChrome, syncStatusBarStyle } from '../../../src/platform/native'
 
 const win: Record<string, unknown> = {}
 
@@ -23,9 +29,13 @@ beforeEach(() => {
   vi.stubGlobal('window', win)
   addListenerMock.mockReset()
   splashHideMock.mockReset()
+  setOverlaysMock.mockReset().mockResolvedValue(undefined)
+  setStyleMock.mockReset().mockResolvedValue(undefined)
   isNativeMock.mockReset().mockReturnValue(false)
   splashHideMock.mockResolvedValue(undefined)
   addListenerMock.mockResolvedValue({ remove: vi.fn().mockResolvedValue(undefined) })
+  delete document.body.dataset.platform
+  delete document.body.dataset.theme
 })
 
 afterEach(() => {
@@ -112,5 +122,45 @@ describe('hideSplashScreen', () => {
   it('brauzer/Telegram\'da no-op', () => {
     hideSplashScreen()
     expect(splashHideMock).not.toHaveBeenCalled()
+  })
+})
+
+describe('applyNativeChrome — edge-to-edge safe-area (APK status bar)', () => {
+  it('native APK: body[data-platform=native] yoziladi + overlay yoqiladi + dark default style', () => {
+    isNativeMock.mockReturnValue(true)
+    applyNativeChrome()
+    expect(document.body.dataset.platform).toBe('native')
+    expect(setOverlaysMock).toHaveBeenCalledWith({ overlay: true })
+    // body[data-theme] yo'q (boot script yozmagan) → dark default
+    expect(setStyleMock).toHaveBeenCalledWith({ style: 'DARK' })
+  })
+
+  it('native APK + body[data-theme=light] (boot script) → LIGHT icon style', () => {
+    isNativeMock.mockReturnValue(true)
+    document.body.dataset.theme = 'light'
+    applyNativeChrome()
+    expect(setStyleMock).toHaveBeenCalledWith({ style: 'LIGHT' })
+  })
+
+  it('brauzer/Telegram: body TEGILMAYDI, StatusBar chaqirilmaydi (TG xatti-harakati o\'zgarmas)', () => {
+    applyNativeChrome()
+    expect(document.body.dataset.platform).toBeUndefined()
+    expect(setOverlaysMock).not.toHaveBeenCalled()
+    expect(setStyleMock).not.toHaveBeenCalled()
+  })
+})
+
+describe('syncStatusBarStyle — app temasi bilan sinxron', () => {
+  it('native: dark → DARK (oq iconlar), light → LIGHT (qora iconlar)', () => {
+    isNativeMock.mockReturnValue(true)
+    syncStatusBarStyle(true)
+    expect(setStyleMock).toHaveBeenLastCalledWith({ style: 'DARK' })
+    syncStatusBarStyle(false)
+    expect(setStyleMock).toHaveBeenLastCalledWith({ style: 'LIGHT' })
+  })
+
+  it('brauzer/Telegram: no-op', () => {
+    syncStatusBarStyle(true)
+    expect(setStyleMock).not.toHaveBeenCalled()
   })
 })

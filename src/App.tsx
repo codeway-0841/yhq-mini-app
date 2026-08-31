@@ -59,7 +59,7 @@ const VerifyEmailPage = lazy(() => import('./features/auth/pages/VerifyEmailPage
 const ResetPasswordPage = lazy(() => import('./features/auth/pages/ResetPasswordPage'))
 
 import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT } from './platform/telegram'
-import { bindAppBackButton, hideSplashScreen } from './platform/native'
+import { bindAppBackButton, hideSplashScreen, syncStatusBarStyle } from './platform/native'
 
 function Layout() {
   const location = useLocation()
@@ -168,12 +168,16 @@ function ThemeEffect() {
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
-      const apply = () => { document.body.dataset.theme = mq.matches ? 'light' : 'dark' }
+      const apply = () => {
+        document.body.dataset.theme = mq.matches ? 'light' : 'dark'
+        syncStatusBarStyle(!mq.matches)   // native APK status bar iconlari (no-op web/TG)
+      }
       apply()
       mq.addEventListener('change', apply)
       return () => mq.removeEventListener('change', apply)
     }
     document.body.dataset.theme = theme
+    syncStatusBarStyle(theme === 'dark')
   }, [theme])
   // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
   useEffect(() => {

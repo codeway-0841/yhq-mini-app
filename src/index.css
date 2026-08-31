@@ -69,6 +69,12 @@ input, button, select, textarea {
 /* Safe area for Telegram */
 .safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
 
+/* Native APK (Capacitor, body[data-platform='native'] — platform/native.ts
+   applyNativeChrome yozadi): edge-to-edge WebView'da kontent tizim status bar
+   ostida qolmasligi uchun (Android 15+ targetSdk 36'da e2e MAJBURIY).
+   Telegram/brauzer'da attribut yo'q → padding 0 (TG o'z chrome'ini boshqaradi). */
+body[data-platform='native'] { padding-top: env(safe-area-inset-top, 0px); }
+
 /* Route transition — sahifalar orasida silliq fade */
 .route-page { animation: routeIn 160ms ease-out both; }
 @keyframes routeIn {

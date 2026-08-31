@@ -6,7 +6,13 @@ import App from './App'
 import ErrorBoundary from './shared/components/ErrorBoundary'
 import { ToastProvider } from './shared/components/ToastContainer'
 import { stripAppHtmlFromAddressBar } from './shared/lib/clean-url'
+import { applyNativeChrome } from './platform/native'
 import './index.css'
+
+// Native APK (Capacitor): safe-area padding + StatusBar — render'dan OLDIN,
+// birinchi kadrda kontent status bar ostida miltillab qolmasligi uchun.
+// Brauzer/Telegram'da no-op.
+applyNativeChrome()
 
 // Address bar'dan /app.html'ni olib tashlash (faqat app.kivvi.uz'da — boshqa
 // hostlarda `/` landing'ni serve qiladi, strip reload'ni sindirardi).
