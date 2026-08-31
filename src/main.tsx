@@ -5,7 +5,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import ErrorBoundary from './shared/components/ErrorBoundary'
 import { ToastProvider } from './shared/components/ToastContainer'
+import { stripAppHtmlFromAddressBar } from './shared/lib/clean-url'
 import './index.css'
+
+// Address bar'dan /app.html'ni olib tashlash (faqat app.kivvi.uz'da — boshqa
+// hostlarda `/` landing'ni serve qiladi, strip reload'ni sindirardi).
+stripAppHtmlFromAddressBar()
 
 // Telegram WebView dastlabki yuklanishda #tgWebAppData=... hashini qo'shishi mumkin —
 // HashRouter uni noto'g'ri sahifa deb o'qiydi (404 flash). Routerdan oldin tozalaymiz.

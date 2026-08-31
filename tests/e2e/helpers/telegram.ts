@@ -50,6 +50,14 @@ const mockTopics = [
 ]
 
 export async function injectTelegramWebApp(page: Page, overrides: Record<string, any> = {}) {
+  // Haqiqiy telegram-web-app.js mock'ni SHARTSIZ ustiga yozadi
+  // (script oxirida `window.Telegram.WebApp = WebApp`) — addInitScript'dagi mock
+  // initData'siz real obyektga almashtirilardi va ilova LoginPage'ga tushardi
+  // (2026-08-30 split'dan keyin mehmon landing'i o'chirilgani uchun e2e qizil).
+  await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
+    route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
+  )
+
   // Mock API requests — strictly match /api/* routes and NOT /src/shared/api/* source files
   await page.route(
     (url) => url.pathname.startsWith('/api/') && !url.pathname.includes('/src/'),
@@ -127,6 +135,13 @@ export async function injectTelegramWebApp(page: Page, overrides: Record<string,
       // ignore
     }
 
+    // auth_date FRESH bo'lishi SHART: App.tsx'dagi initData freshness gate
+    // 55+ daqiqalik auth_date'da requestFreshInitData() chaqiradi — mock'da
+    // Telegram uni "yangilamaydi" → keyingi urinish INITDATA_DEAD (blokirovka
+    // ekrani). statik eski auth_date shu sabab hech qachon ishlamaydi.
+    const nowSec = Math.floor(Date.now() / 1000)
+    const mockUser = { id: 123456789, first_name: 'Test', username: 'testuser' }
+
     ;(window as any).Telegram = {
       WebApp: {
         ready: () => {},
@@ -135,10 +150,10 @@ export async function injectTelegramWebApp(page: Page, overrides: Record<string,
         openTelegramLink: () => {},
         shareURL: () => {},
         initData:
-          'query_id=mock&user=%7B%22id%22%3A123456789%2C%22first_name%22%3A%22Test%22%2C%22username%22%3A%22testuser%22%7D&auth_date=1700000000&hash=mockhash',
+          `query_id=mock&user=${encodeURIComponent(JSON.stringify(mockUser))}&auth_date=${nowSec}&hash=mockhash`,
         initDataUnsafe: {
-          user: { id: 123456789, first_name: 'Test', username: 'testuser' },
-          auth_date: 1700000000,
+          user: mockUser,
+          auth_date: nowSec,
           hash: 'mockhash',
         },
         colorScheme: 'dark',

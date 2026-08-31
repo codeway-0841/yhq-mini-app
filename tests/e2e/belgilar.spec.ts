@@ -7,13 +7,13 @@ test.describe('Yo‘l Belgilari E2E', () => {
   })
 
   test('yo‘l belgilari kategoriyalari yuklanadi', async ({ page }) => {
-    await page.goto('/#/belgilar')
+    await page.goto('/app.html#/belgilar')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
     await expect(page.getByPlaceholder(/Belgi qidirish/i)).toBeVisible()
   })
 
   test('qidiruv inputiga matn kiritganda filtrlanadi', async ({ page }) => {
-    await page.goto('/#/belgilar')
+    await page.goto('/app.html#/belgilar')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
     const searchInput = page.getByPlaceholder(/Belgi qidirish/i)
     await searchInput.fill('Stop')

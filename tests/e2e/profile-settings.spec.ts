@@ -7,13 +7,13 @@ test.describe('Profil & Sozlamalar E2E', () => {
   })
 
   test('profil sahifasi yuklanadi va asosiy bo‘limlar ko‘rinadi', async ({ page }) => {
-    await page.goto('/#/profil')
+    await page.goto('/app.html#/profil')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
     await expect(page.locator('body')).toBeVisible()
   })
 
   test('promokod modalini ochish va yopish mumkin', async ({ page }) => {
-    await page.goto('/#/profil')
+    await page.goto('/app.html#/profil')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
 
     const promoItem = page.locator('button', { hasText: /Promokod/i })

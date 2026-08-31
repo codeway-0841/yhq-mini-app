@@ -15,6 +15,26 @@
     <meta property="og:title" content="KIWI" />
     <meta property="og:description" content="Fanlar bo'yicha testler, biletlar va yo'l belgilari — hammasi bitta ilovada." />
     <title>KIWI</title>
+    <script>
+      /* Toza URL: app.kivvi.uz/app.html → app.kivvi.uz/ — bundle yuklanishini
+         kutmasdan, parse paytidayoq (address bar hech qachon app.html
+         ko'rsatmaydi). MANTIQ SSOT: src/shared/lib/clean-url.ts — o'zgarish
+         ikkalasiga kiritiladi. FAQAT app host: boshqa hostlarda `/` landing'ni
+         serve qiladi va strip reload'ni sindirardi. */
+      ;(function () {
+        try {
+          if (window.location.hostname !== 'app.kivvi.uz') return
+          var p = window.location.pathname
+          if (p.slice(-9) === '/app.html') {
+            window.history.replaceState(
+              null,
+              '',
+              (p.slice(0, -9) || '/') + window.location.search + window.location.hash
+            )
+          }
+        } catch (_) {}
+      })()
+    </script>
     <!-- defer: HTML parse'ni bloklamaydi. `type="module"` (main.tsx) ham
          defer semantikasida va HUJJAT TARTIBIDA keyin ishga tushadi — ya'ni
          window.Telegram App mount'idan oldin mavjud bo'lishi kafolatlangan. -->

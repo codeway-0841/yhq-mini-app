@@ -7,13 +7,13 @@ test.describe('Biletlar Sahifasi E2E', () => {
   })
 
   test('biletlar sahifasi yuklanadi va tablar ko‘rinadi', async ({ page }) => {
-    await page.goto('/#/biletlar')
+    await page.goto('/app.html#/biletlar')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
     await expect(page.locator('h1')).toBeVisible()
   })
 
   test('orqaga qaytish tugmasi mavjud', async ({ page }) => {
-    await page.goto('/#/biletlar')
+    await page.goto('/app.html#/biletlar')
     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
     // v3: orqaga strelkasi matn "←" o'rniga lucide ikonka + aria-label bilan
     // beriladi (KIWI redesign) — nomga emas, rolga qarab topamiz.

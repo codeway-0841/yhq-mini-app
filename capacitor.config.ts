@@ -28,6 +28,9 @@ const config: CapacitorConfig = {
   server: {
     // https scheme → WebView origin'i "https://localhost" (server CORS'da ruxsat etilgan)
     androidScheme: 'https',
+    // dist/index.html endi LANDING (web split, 2026-08-30) — default directory
+    // index'ni yuklasa APK landing'ni ochardi. Ilova entry'si app.html.
+    appStartPath: 'app.html',
     allowNavigation: navigableHosts,
   },
 }

@@ -2,6 +2,11 @@ import { test, expect } from '@playwright/test'
 
 test.describe('Onboarding (Yangi Foydalanuvchi) E2E', () => {
   test.beforeEach(async ({ page }) => {
+    // Haqiqiy telegram-web-app.js mock'ni shartsiz ustiga yozardi
+    // (helpers/telegram.ts'dagi izohga qarang) — bloklaymiz.
+    await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
+      route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
+    )
     await page.addInitScript(() => {
       try {
         localStorage.removeItem('yhq-onboarded')
@@ -27,7 +32,7 @@ test.describe('Onboarding (Yangi Foydalanuvchi) E2E', () => {
   })
 
   test('onboarding oqimini to‘liq yakunlash', async ({ page }) => {
-    await page.goto('/#/')
+    await page.goto('/app.html#/')
     await expect(page.locator('body')).toBeVisible()
 
     const startBtn = page.locator('button', { hasText: /Boshlash/i })
