@@ -179,3 +179,4 @@ src/shared/components/Confetti.tsx  # Nishonlash confetti; src/shared/hooks/useC
 10. **Premium gating:** tema tanlovini `resolveAccent(id, isPremium)` orqali qo'llang — free user HECH QACHON premium tema olib qolmasligi shart.
 11. **i18n:** yangi kalitlar FAQAT `src/shared/i18n/index.ts` ga — ham UZ, ham RU obyektiga (bittasi qolib ketsa tarjima tushib qoladi).
 12. **UI ovoz:** yangi tovush `src/shared/lib/sounds.ts` dagi `playSound` kind'iga qo'shiladi; juda past volume (premium ASMR), AudioContext faqat user-gesture'dan keyin.
+13. **Safe-area (tepa):** yangi `fixed`/`sticky` TEPA element yoki fullscreen overlay header'i — FAQAT `var(--safe-top)` / `var(--safe-top-body)` / `.safe-top` (index.css SSOT); literal `top-N` (top-0, top-4...) TAQIQLANADI — APK edge-to-edge (targetSdk 36) va TG fullscreen'da status bar/TG tugmalari ostida qoladi. Buzilishni `tests/unit/config/safe-area.test.ts` ushlaydi (2026-09-01: o'lik `.safe-top` class incident).

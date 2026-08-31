@@ -67,8 +67,8 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
 
   return (
     <div className="fixed inset-0 z-50 bg-pcanvas flex flex-col">
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-pline">
+      {/* Header — fixed inset-0 sahifa (body padding tegmaydi) → .safe-top SHART */}
+      <div className="flex items-center justify-between px-4 py-3 border-b border-pline safe-top">
         <button onClick={onClose} aria-label={ru ? 'Закрыть' : 'Yopish'}
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
