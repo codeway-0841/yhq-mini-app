@@ -79,7 +79,9 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         </span>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 py-4 pb-6">
+      {/* pb calc: fixed inset-0 sahifa (body padding tegmaydi) — scroll kontent
+          gesture bar/home indicator ostida qolmasligi uchun bazaviy 24px + inset */}
+      <div className="flex-1 overflow-y-auto px-4 py-4 pb-[calc(1.5rem+var(--safe-bottom,0px))]">
         {/* Video Player / HD Karta */}
         <div className="rounded-container bg-psurface border border-pline aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
           {videoInfo?.vimeoId && isPlaying ? (
@@ -387,7 +389,7 @@ export default function Darslik() {
       </div>
 
       {toast && (
-        <div role="status" className="fixed bottom-20 left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-container border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-4 py-3 text-center text-[13px] font-medium text-pfg">
+        <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-container border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-4 py-3 text-center text-[13px] font-medium text-pfg">
           <AlertTriangle size={15} strokeWidth={1.75} className="flex-none text-pwarning" />
           {toast}
         </div>

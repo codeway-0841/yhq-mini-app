@@ -22,8 +22,11 @@ export function usePullToRefresh(onRefresh: () => Promise<unknown>) {
   const setDist = (v: number) => { distRef.current = v; setDistState(v) }
 
   useEffect(() => {
-    const scrollerTop = () =>
-      (document.querySelector('.route-page') as HTMLElement | null)?.scrollTop ?? 0
+    // Haqiqiy scroller — DOCUMENT (html): .route-page overflow'siz, o'zi
+    // scroll QILMAYDI (2026-09-01 sticky incident; avval shu elementning
+    // doim 0 bo'lgan scrollTop'iga qaralardi — PTR har qanday scroll
+    // holatida "tepada" deb o'ylardi).
+    const scrollerTop = () => window.scrollY
 
     const onStart = (e: TouchEvent) => {
       if (scrollerTop() <= 0) startY.current = e.touches[0].clientY

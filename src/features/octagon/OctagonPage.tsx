@@ -136,7 +136,7 @@ export default function OctagonPage() {
 
       {/* Floating Reaction Picker in live match */}
       {isLiveMatch && (
-        <div className="fixed bottom-5 left-5 z-40">
+        <div className="fixed bottom-[calc(1.25rem+var(--safe-bottom,0px))] left-5 z-40">
           <DuelReactionPicker
             language={settings.language}
             isMuted={isMuted}

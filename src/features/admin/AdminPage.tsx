@@ -43,7 +43,10 @@ export default function AdminPage() {
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-20">
       {/* Top Header */}
-      <div className="sticky top-[var(--safe-top-body,0px)] bg-psurface/90 backdrop-blur-md border-b border-pline z-30 px-4 py-3">
+      {/* Sticky header — FAQAT bg'siz-shaffof EMAS (opaque): scroll'da ostidan
+          o'tayotgan kontent /90 fonda "qanab" ko'rinardi. top=--safe-top-body
+          endi VIEWPORT'ga nisbatan to'g'ri ishlaydi (App.tsx scrollport fix). */}
+      <div className="sticky top-[var(--safe-top-body,0px)] bg-psurface border-b border-pline z-30 px-4 py-3">
         <div className="flex items-center justify-between">
           <button
             onClick={() => goBack(navigate)}

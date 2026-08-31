@@ -66,32 +66,45 @@ input, button, select, textarea {
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--theme-line); border-radius: 4px; }
 
-/* Safe area for Telegram */
-.safe-bottom { padding-bottom: env(safe-area-inset-bottom, 16px); }
-
-/* Tepa xavfsiz zona — YAGONA manba (2026-09-01 TG fullscreen fix):
-   - Telegram Mini App FULLSCREEN: TG client o'zi inject qiladi
-     `--tg-content-safe-area-inset-top` (Bot API 8.0+) — tizim status bar +
-     TG floating tugmalar (✕ Close, ⌄, ⋮) umumiy balandligi.
-   - Native APK edge-to-edge (targetSdk 36): `env(safe-area-inset-top)`.
-   Qaysi kattaroq bo'lsa o'sha olinadi; eski TG / oddiy TG rejim / brauzerda
-   ikkalasi ham 0/yo'q → padding 0 (oldingi xatti-harakat saqlanadi). */
+/* ═══ SAFE-AREA TIZIMI — YAGONA MANBA (2026-09-01 TG fullscreen/APK audit) ═══
+   UCH muhit qamrab olinadi (qaysi kattaroq bo'lsa o'sha g'alaba qozonadi):
+   - Telegram Mini App FULLSCREEN (Bot API 8.0+): TG client CSS var inject
+     qiladi — `--tg-content-safe-area-inset-*` (status bar + TG floating
+     tugmalar ⌄ ⋮ UMUMIY balandligi). Android TG'da env() 0 qaytarishi mumkin
+     — shuning uchun TG var'i HAR DOIM max() ichida.
+   - iPhone Telegram: env() ham, TG var ham ishlaydi (viewport-fit=cover,
+     app.html'da mavjud) — max() ikkalasidan kattasini oladi.
+   - Native APK edge-to-edge (targetSdk 36, Capacitor): `env(safe-area-inset-*)`.
+   Oddiy TG rejim / brauzer: ikkala manba 0 → padding 0 (ko'rinish O'ZGARMAS). */
 :root {
   --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px));
-  /* Body kontenti: inset + (inset mavjud bo'lgandagina) 10px nafas —
-     min() "shartli" qo'shimcha: inset=0'da 0 qaytaradi (TG oddiy rejim/brauzer
-     OLDINGI ko'rinishda qoladi), inset>0'da +10px. Sticky header'lar ham
-     SHU o'zgaruvchiga teng bo'lsin (body content-top bilan bir chiziqqa). */
-  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 10px));
+  /* Body kontenti: inset + (inset mavjud bo'lgandagina) 16px nafas —
+     min() "shartli" qo'shimcha: inset=0'da 0 qaytaradi (oddiy rejim/brauzer
+     OLDINGI ko'rinishda qoladi), inset>0'da +16px. 16px sababi: TG floating
+     tugmalarning (⌄ ⋮) pill-foni/soyasi hisobga kiritilgan inset'dan BIROZ
+     PASTROQQA oqadi — +10px'da app tugmalari ularga "yopishib" ko'rinardi
+     (2026-09-01 fullscreen incident). Sticky header'lar ham SHU o'zgaruvchiga
+     teng bo'lsin (body content-top bilan bir chiziqqa). */
+  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 16px));
+  /* Pastki xavfsiz zona — Android gesture bar / iPhone home indicator.
+     E'tibor: Android TG fullscreen'da env(safe-area-inset-bottom)=0 bo'lishi
+     mumkin — TG var'i zaxira. Qo'llash: .safe-bottom class'i yoki
+     bottom-[calc(<bazaviy>+var(--safe-bottom,0px))] (fixed elementlar). */
+  --safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-content-safe-area-inset-bottom, 0px));
 }
 body { padding-top: var(--safe-top-body, 0px); }
 
-/* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen — DialogOverlay
+/* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen, Darslik viewer —
    fixed inset-0 ICHIDA bo'lgani uchun body padding ularga TEGMAYDI):
    inset + 1rem bazaviy nafas. Custom qoida @tailwind'dan KEYIN e'lon qilingani
    uchun bir xil specificity'da pt-4'ni yengadi → oddiy rejimda xuddi 16px
    (ko'rinish O'ZGARMAS), APK/TG fullscreen'da inset+16px. */
 .safe-top { padding-top: calc(var(--safe-top, 0px) + 1rem); }
+
+/* Pastki xavfsiz zona — SOF inset (bazaviy nafas elementlarning o'z pb-*'ida).
+   .pb-* utilitalaridan KEYIN e'lon qilingan (ularni yengadi). Fixed PASTKI
+   elementlar uchun esa bottom-[calc(<bazaviy>+var(--safe-bottom,0px))] yozing. */
+.safe-bottom { padding-bottom: var(--safe-bottom, 0px); }
 
 /* Route transition — sahifalar orasida silliq fade */
 .route-page { animation: routeIn 160ms ease-out both; }

@@ -485,7 +485,7 @@ export default function AdminPromoTab() {
 
       {/* Toast Notification */}
       {toast && (
-        <div className="fixed bottom-6 left-4 right-4 rounded-container border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-container text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-container border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-container text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}

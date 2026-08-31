@@ -147,8 +147,11 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
       className="select-none touch-none animate-fadeIn !p-0"
       backdropClassName="bg-black/95 backdrop-blur-md"
     >
+      {/* safe-top: yuqori bar (✕ yopish) TG floating tugmalar/status bar ostida
+          qolmasligi uchun (fixed overlay — body padding tegmaydi).
+          pb calc: pastki control bar gesture bar/home indicator ustida. */}
       <div
-        className="absolute inset-0 flex flex-col items-center justify-between p-4"
+        className="absolute inset-0 flex flex-col items-center justify-between p-4 safe-top pb-[calc(1rem+var(--safe-bottom,0px))]"
         onClick={onClose}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}

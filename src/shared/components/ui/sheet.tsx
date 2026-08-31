@@ -40,7 +40,9 @@ function Sheet({ open = true, onClose, children, className, zIndex }: SheetProps
           'shadow-[0_-8px_24px_-8px_rgba(0,0,0,0.45)]',
           'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
           'max-h-[88dvh] overflow-y-auto',
-          'pb-[env(safe-area-inset-bottom,16px)]',
+          // Pastki safe-area MARKAZIY: DialogOverlay (position='bottom')
+          // konteyneri --safe-bottom'ga ko'taradi (env+TG var max) — bu yerda
+          // qayta qo'shilsa inset IKKI marta chiqardi (2026-09-01 audit).
           className,
         )}
       >

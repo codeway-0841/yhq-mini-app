@@ -15,6 +15,12 @@
  *     ishlating (literal top-N env/TG inset'ni hisobga olmaydi).
  *  2. index.css'da `--safe-top`, `--safe-top-body` va `.safe-top` class'i
  *     MAVJUD bo'lishi shart (o'lik class regression himoyasi).
+ *  3. PASTKI TOMON (2026-09-01 audit): `fixed` bilan LITERAL `bottom-N`
+ *     (bottom-5, bottom-6, bottom-20...) TAQIQLANADI — TG fullscreen'da Android
+ *     gesture bar / iPhone home indicator (34px) ostida qoladi;
+ *     `bottom-[calc(<N>+var(--safe-bottom,0px))]` ishlating. index.css'da
+ *     `--safe-bottom` = max(env, --tg-content-safe-area-inset-bottom) SHART
+ *     (Android TG'da env()=0 qaytarishi mumkin — TG var zaxira).
  */
 import { describe, it, expect } from 'vitest'
 import fs from 'node:fs'
@@ -41,6 +47,12 @@ for (const f of walk(SRC)) {
     if (/\btop-\d+\b/.test(line) && !line.includes('safe-top')) {
       violations.push(`${path.relative(SRC, f)}:${i + 1}: ${line.trim().slice(0, 100)}`)
     }
+    // Literal bottom-N FAQAT fixed'da taqiqlangan (sticky pastki element
+    // scrollport'ga yopishadi — viewport inset'i tegmaydi); bottom-[...]
+    // (arbitrary, safe-bottom'li) va -bottom-N (dekorativ absolute) o'tadi
+    if (/\bfixed\b/.test(line) && /\bbottom-\d+\b/.test(line) && !line.includes('safe-bottom')) {
+      violations.push(`BOTTOM: ${path.relative(SRC, f)}:${i + 1}: ${line.trim().slice(0, 100)}`)
+    }
   })
 }
 
@@ -55,5 +67,44 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     expect(css).toContain('--safe-top-body:')
     expect(css).toMatch(/\.safe-top\s*\{/)
     expect(css).toContain('body { padding-top: var(--safe-top-body')
+  })
+
+  it('index.css\'da --safe-bottom tizimi MAVJUD (env + TG var max — Android TG fullscreen)', () => {
+    const css = fs.readFileSync(path.join(SRC, 'index.css'), 'utf8')
+    // max(env, --tg-content-safe-area-inset-bottom) — Android TG'da env()=0
+    // qaytarishi mumkin, TG inject qilgan var zaxira bo'lishi SHART
+    expect(css).toContain('--safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-content-safe-area-inset-bottom, 0px))')
+    expect(css).toMatch(/\.safe-bottom\s*\{\s*padding-bottom:\s*var\(--safe-bottom/)
+  })
+
+  it('DialogOverlay bottom-sheet\'lar MARKAZIY --safe-bottom lift\'ga ega', () => {
+    const overlay = fs.readFileSync(path.join(SRC, 'shared/components/DialogOverlay.tsx'), 'utf8')
+    expect(overlay).toContain("items-end pb-[var(--safe-bottom,0px)]")
+  })
+
+  /**
+   * STICKY VIEWPORT GUARD (2026-09-01 Admin panel incident): haqiqiy scroll'ni
+   * DOCUMENT bajaradi (html/body height:100% + kontent o'sadi). Layout
+   * konteynerlarida overflow-y:auto/hidden bo'lsa, u scroll bo'lmasa ham
+   * STICKY elementlar uchun scrollport (containing block) bo'lib qoladi —
+   * sticky header viewport'ga yopishmay, kontent ustidan "suzadi" (tasdiq:
+   * Playwright repro, stickyTop=-340). Ruxsat FAQAT overflow-x:clip
+   * (clip scrollport yaratmaydi).
+   */
+  it('App.tsx Layout konteynerlari scrollport EMAS (sticky viewport\'ga ishlashi shart)', () => {
+    const app = fs.readFileSync(path.join(SRC, 'App.tsx'), 'utf8')
+    const layoutRoot = app.match(/<div className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
+    expect(layoutRoot, 'Layout root topilmadi').not.toBe('')
+    expect(layoutRoot).toContain('overflow-x-clip')
+    expect(layoutRoot).not.toMatch(/overflow-hidden|overflow-y-auto|overflow-auto|overflow-scroll/)
+    const routePage = app.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
+    expect(routePage, 'route-page konteyneri topilmadi').not.toBe('')
+    expect(routePage).not.toMatch(/overflow-y-auto|overflow-hidden|overflow-auto|overflow-scroll/)
+  })
+
+  it('usePullToRefresh DOCUMENT scroll\'ini o\'qiydi (.route-page scrollTop har doim 0)', () => {
+    const ptr = fs.readFileSync(path.join(SRC, 'shared/hooks/usePullToRefresh.ts'), 'utf8')
+    expect(ptr).toContain('window.scrollY')
+    expect(ptr).not.toContain("querySelector('.route-page')")
   })
 })

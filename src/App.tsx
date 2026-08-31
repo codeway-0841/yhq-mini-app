@@ -155,17 +155,27 @@ function Layout() {
   useEffect(() => {
     const el = pageRef.current
     if (!el) return
-    el.scrollTop = 0
+    el.scrollTop = 0               // hozircha no-op (scroll'ni DOCUMENT qiladi), kelajak guard
     el.classList.remove('route-page')
     void el.offsetWidth            // reflow — CSS animatsiyani qayta boshlaydi
     el.classList.add('route-page')
   }, [location.pathname])
 
   return (
-    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-hidden">
+    // MUHIM (2026-09-01 sticky incident): bu konteynerlarda overflow-y:auto/hidden
+    // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
+    // kontent o'sadi), lekin overflow'li har qanday ajdod STICKY elementlar uchun
+    // scrollport (containing block) bo'lib qoladi → sticky VIEWPORT'ga emas,
+    // scroll bo'layotgan box'ga nisbatan ishlaydi: header kontent ustidan "suzib"
+    // o'tib, yopishib qolgandek ko'rinardi (Admin panel bug'i). overflow-x:clip —
+    // yagona ruxsat (clip scrollport YARATMAYDI, faqat gorizontal siljishni kesadi).
+    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip">
       <div
         ref={pageRef}
-        className="route-page relative z-10 flex-1 overflow-y-auto w-full mx-auto max-w-3xl pb-4 px-3 sm:px-4"
+        // pb: 1rem bazaviy + --safe-bottom (TG fullscreen/APK'da scroll oxiridagi
+        // kontent gesture bar/home indicator ostida qolmasin; oddiy rejimda 0 →
+        // ko'rinish O'ZGARMAS). MARKAZIY — barcha sahifalarni qoplaydi.
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-3xl pb-[calc(1rem+var(--safe-bottom,0px))] px-3 sm:px-4"
       >
         <Suspense fallback={<PageLoader />}>
           <Routes>
