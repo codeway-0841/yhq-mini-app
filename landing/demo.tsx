@@ -51,7 +51,7 @@ function StatusBar() {
 export function PhoneFrame({ children, label }: { children: ReactNode; label: string }) {
   return (
     <div className="relative w-[300px] sm:w-[330px] mx-auto">
-      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10 rounded-full border border-[rgba(46,230,168,0.3)] bg-[rgba(6,9,10,0.92)] px-3.5 py-1 text-[11px] font-semibold text-[var(--l-green-bright)] whitespace-nowrap">
+      <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10 rounded-full border border-[rgba(77,163,255,0.3)] bg-[rgba(6,9,10,0.92)] px-3.5 py-1 text-[11px] font-semibold text-[var(--l-blue-bright)] whitespace-nowrap">
         {label}
       </div>
       <div className="phone-glow rounded-[2.4rem] border border-[var(--l-line-strong)] bg-gradient-to-b from-[rgba(255,255,255,0.08)] to-[rgba(255,255,255,0.02)] p-2.5">
@@ -72,7 +72,7 @@ export function BrowserFrame({ children, url }: { children: ReactNode; url: stri
           <div className="flex gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-[rgba(244,93,93,0.7)]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[rgba(240,185,11,0.7)]" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[rgba(46,230,168,0.7)]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[rgba(77,163,255,0.7)]" />
           </div>
           <span className="flex-1 text-center text-[11px] font-mono text-[var(--l-faint)] bg-[rgba(255,255,255,0.04)] rounded-md py-1 px-3 truncate">
             {url}
@@ -200,7 +200,7 @@ export function DuelDemo({ lang, url }: { lang: Lang; url: string }) {
 
   const cur = DUEL_ROUNDS[round]
   const pct = (sec / 15) * 100
-  const barColor = pct > 50 ? 'var(--l-green-bright)' : pct > 25 ? 'var(--l-gold)' : 'var(--l-red)'
+  const barColor = pct > 50 ? 'var(--l-blue-bright)' : pct > 25 ? 'var(--l-gold)' : 'var(--l-red)'
 
   return (
     <div ref={ref}>
@@ -213,7 +213,7 @@ export function DuelDemo({ lang, url }: { lang: Lang; url: string }) {
             Duel
           </span>
           <span className="text-[12px] font-mono font-bold">
-            <span className="text-[var(--l-green-bright)]">{you}</span>
+            <span className="text-[var(--l-blue-bright)]">{you}</span>
             <span className="text-[var(--l-faint)]"> : </span>
             <span className="text-[var(--l-red)]">{foe}</span>
           </span>
@@ -250,7 +250,7 @@ export function DuelDemo({ lang, url }: { lang: Lang; url: string }) {
                   cls = 'border-[rgba(96,165,250,0.6)] bg-[rgba(96,165,250,0.1)] text-[var(--l-text)]'
                 }
                 if (revealed) {
-                  if (i === cur.correct) cls = 'border-[rgba(46,230,168,0.5)] bg-[rgba(46,230,168,0.1)] text-[var(--l-green-bright)]'
+                  if (i === cur.correct) cls = 'border-[rgba(46,230,168,0.5)] bg-[rgba(46,230,168,0.1)] text-[var(--l-success)]'
                   else if (isPicked) cls = 'border-[rgba(244,93,93,0.5)] bg-[rgba(244,93,93,0.1)] text-[var(--l-red)]'
                   else cls = 'border-[var(--l-line)] bg-transparent text-[var(--l-faint)]'
                 }
@@ -277,7 +277,7 @@ export function DuelDemo({ lang, url }: { lang: Lang; url: string }) {
                 {you > foe ? (lang === 'uz' ? 'G‘alaba!' : 'Победа!') : (lang === 'uz' ? 'Durangga yaqin!' : 'Почти ничья!')}
               </div>
               <div className="font-mono font-bold text-2xl mb-3">
-                <span className="text-[var(--l-green-bright)]">{you}</span>
+                <span className="text-[var(--l-blue-bright)]">{you}</span>
                 <span className="text-[var(--l-faint)]"> : </span>
                 <span className="text-[var(--l-red)]">{foe}</span>
               </div>
@@ -466,7 +466,7 @@ export function MerchDemo({ lang, label }: { lang: Lang; label: string }) {
                 key={item.id}
                 className={`rounded-xl border p-3 transition-all duration-500 ${
                   done
-                    ? 'border-[rgba(46,230,168,0.45)] bg-[rgba(46,230,168,0.06)]'
+                    ? 'border-[rgba(77,163,255,0.45)] bg-[rgba(77,163,255,0.06)]'
                     : isHero
                       ? 'border-[var(--l-line)] bg-[rgba(255,255,255,0.03)]'
                       : 'border-[var(--l-line)] bg-[rgba(255,255,255,0.02)] opacity-70'
@@ -495,7 +495,7 @@ export function MerchDemo({ lang, label }: { lang: Lang; label: string }) {
                   <div
                     className={`mt-2.5 w-full text-center rounded-lg py-2 text-[12px] font-bold transition-all duration-300 ${
                       done
-                        ? 'bg-[rgba(46,230,168,0.15)] text-[var(--l-green-bright)]'
+                        ? 'bg-[rgba(77,163,255,0.15)] text-[var(--l-blue-bright)]'
                         : 'bg-[rgba(255,255,255,0.06)] text-[var(--l-muted)]'
                     }`}
                   >

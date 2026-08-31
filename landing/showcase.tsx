@@ -37,8 +37,8 @@ function ShowRow({
         <ul className="space-y-3">
           {bullets.map((b) => (
             <li key={b} className="flex items-start gap-2.5 text-[14px] text-[var(--l-muted)]">
-              <span className="mt-0.5 w-5 h-5 rounded-md bg-[rgba(46,230,168,0.12)] flex items-center justify-center shrink-0">
-                <Check size={12} className="text-[var(--l-green-bright)]" />
+              <span className="mt-0.5 w-5 h-5 rounded-md bg-[rgba(77,163,255,0.12)] flex items-center justify-center shrink-0">
+                <Check size={12} className="text-[var(--l-blue-bright)]" />
               </span>
               {b}
             </li>
@@ -49,7 +49,7 @@ function ShowRow({
       {/* Jonli demo */}
       <Reveal delay={140} className={flip ? 'lg:order-1' : ''}>
         <div className="relative">
-          <div className="glow-orb w-[360px] h-[360px] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-[rgba(15,164,127,0.09)]" />
+          <div className="glow-orb w-[360px] h-[360px] left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-[rgba(26,129,252,0.09)]" />
           <div className="relative">{children}</div>
         </div>
       </Reveal>

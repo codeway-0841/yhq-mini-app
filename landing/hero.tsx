@@ -75,10 +75,10 @@ function MiniQuiz({ lang }: { lang: Lang }) {
             <Flame size={11} className="fill-[var(--l-gold)]" />
             x{streak}
           </span>
-          <span className="relative text-[11px] font-bold text-[var(--l-green-bright)] font-mono">
+          <span className="relative text-[11px] font-bold text-[var(--l-blue-bright)] font-mono">
             {xp.toLocaleString()} XP
             {xpBurst > 0 && (
-              <span key={xpBurst} className="xp-fly absolute -top-1 right-0 text-[var(--l-green-bright)]">
+              <span key={xpBurst} className="xp-fly absolute -top-1 right-0 text-[var(--l-blue-bright)]">
                 +50
               </span>
             )}
@@ -98,7 +98,7 @@ function MiniQuiz({ lang }: { lang: Lang }) {
             'border-[var(--l-line)] bg-[rgba(255,255,255,0.03)] text-[var(--l-text)] hover:bg-[rgba(255,255,255,0.06)]'
           if (selected !== null) {
             if (o.correct) {
-              cls = 'border-[rgba(46,230,168,0.5)] bg-[rgba(46,230,168,0.1)] text-[var(--l-green-bright)]'
+              cls = 'border-[rgba(46,230,168,0.5)] bg-[rgba(46,230,168,0.1)] text-[var(--l-success)]'
             } else if (i === selected) {
               cls = 'border-[rgba(244,93,93,0.5)] bg-[rgba(244,93,93,0.1)] text-[var(--l-red)]'
             } else {
@@ -123,7 +123,7 @@ function MiniQuiz({ lang }: { lang: Lang }) {
 
       {/* Izoh — javobdan keyin ochiladi (app'dagi post-answer reveal kabi) */}
       {selected !== null && (
-        <div className="rounded-xl border border-[rgba(46,230,168,0.2)] bg-[rgba(46,230,168,0.05)] px-3.5 py-2.5 mb-3">
+        <div className="rounded-xl border border-[rgba(77,163,255,0.2)] bg-[rgba(77,163,255,0.05)] px-3.5 py-2.5 mb-3">
           <p className="text-[11.5px] leading-relaxed text-[var(--l-muted)]">{t(DEMO.explanation, lang)}</p>
         </div>
       )}
@@ -140,7 +140,7 @@ function MiniQuiz({ lang }: { lang: Lang }) {
         </button>
         <a
           href={APP_URL}
-          className="text-[12px] font-bold text-[var(--l-green-bright)] hover:underline"
+          className="text-[12px] font-bold text-[var(--l-blue-bright)] hover:underline"
         >
           {t(DEMO.startCta, lang)} →
         </a>
@@ -170,12 +170,12 @@ function FloatingChips({ lang }: { lang: Lang }) {
         style={{ '--z': '70px', '--fd': '1.3s' } as CSSProperties}
         className="chip-3d floaty absolute -left-2 sm:-left-20 top-44 flex items-center gap-2 rounded-2xl border border-[rgba(46,230,168,0.25)] bg-[rgba(10,15,14,0.9)] backdrop-blur px-3.5 py-2.5 shadow-2xl"
       >
-        <span className="icon-box !w-8 !h-8 !rounded-lg !bg-[rgba(46,230,168,0.1)] !border-[rgba(46,230,168,0.3)] !text-[var(--l-green-bright)]">
+        <span className="icon-box !w-8 !h-8 !rounded-lg !bg-[rgba(46,230,168,0.1)] !border-[rgba(46,230,168,0.3)] !text-[var(--l-success)]">
           <Swords size={14} />
         </span>
         <div className="text-left">
           <div className="text-[13px] font-bold text-[var(--l-text)]">Duel 10:7</div>
-          <div className="text-[10px] text-[var(--l-green-bright)]">{lang === 'uz' ? 'G‘alaba!' : 'Победа!'}</div>
+          <div className="text-[10px] text-[var(--l-success)]">{lang === 'uz' ? 'G‘alaba!' : 'Победа!'}</div>
         </div>
       </div>
 
@@ -216,7 +216,7 @@ export function Hero({ lang }: { lang: Lang }) {
     <section className="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
       {/* Fon qatlamlari: grid + glow + noise */}
       <div className="bg-grid absolute inset-0 pointer-events-none" />
-      <div className="glow-orb w-[720px] h-[480px] left-1/2 -translate-x-1/2 -top-40 bg-[rgba(15,164,127,0.16)]" />
+      <div className="glow-orb w-[720px] h-[480px] left-1/2 -translate-x-1/2 -top-40 bg-[rgba(26,129,252,0.16)]" />
       <div className="glow-orb w-[420px] h-[420px] right-[-120px] top-1/3 bg-[rgba(139,92,246,0.07)]" />
 
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
@@ -225,7 +225,7 @@ export function Hero({ lang }: { lang: Lang }) {
           <div className="text-center lg:text-left">
             <Reveal>
               <div className="inline-flex items-center gap-2 rounded-full border border-[var(--l-line)] bg-[rgba(255,255,255,0.03)] px-3.5 py-1.5 mb-7">
-                <span className="pulse-dot inline-block w-1.5 h-1.5 rounded-full bg-[var(--l-green-bright)]" />
+                <span className="pulse-dot inline-block w-1.5 h-1.5 rounded-full bg-[var(--l-blue-bright)]" />
                 <span className="text-[12.5px] font-medium text-[var(--l-muted)]">{t(h.pill, lang)}</span>
               </div>
             </Reveal>
@@ -327,7 +327,7 @@ export function Hero({ lang }: { lang: Lang }) {
             <div ref={sceneRef} className="tilt-scene relative mx-auto w-fit">
               <div ref={objRef} className="tilt-obj relative">
                 {/* Demo yorlig'i */}
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 rounded-full border border-[rgba(46,230,168,0.3)] bg-[rgba(6,9,10,0.9)] px-3.5 py-1 text-[11px] font-semibold text-[var(--l-green-bright)] whitespace-nowrap">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10 rounded-full border border-[rgba(77,163,255,0.3)] bg-[rgba(6,9,10,0.9)] px-3.5 py-1 text-[11px] font-semibold text-[var(--l-blue-bright)] whitespace-nowrap">
                   {t(h.demoLabel, lang)}
                 </div>
 
@@ -339,7 +339,7 @@ export function Hero({ lang }: { lang: Lang }) {
                 </div>
 
                 {/* Telefon ostidagi glow */}
-                <div className="glow-orb w-[300px] h-[120px] left-1/2 -translate-x-1/2 -bottom-10 bg-[rgba(15,164,127,0.22)]" />
+                <div className="glow-orb w-[300px] h-[120px] left-1/2 -translate-x-1/2 -bottom-10 bg-[rgba(26,129,252,0.22)]" />
 
                 <FloatingChips lang={lang} />
               </div>

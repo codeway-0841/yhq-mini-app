@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── KIWI Landing — dizayn tizimi (Linear × Termius, faqat dark) ─────────────
-   Alohida entry: app'dagi tema tokenlariga bog'liq EMAS. Jade-tomonga iliq
-   near-black, yashil aksent, nozik grid + glow + spotlight kartalar. */
+/* ── KIVVI Landing — dizayn tizimi (Linear × Termius, faqat dark) ────────────
+   Alohida entry: app'dagi tema tokenlariga bog'liq EMAS. Sovuq near-black,
+   brend ko'k aksent (#1a81fc — logo'dan), nozik grid + glow + spotlight kartalar.
+   --l-success FAQAT semantik holatlar uchun (to'g'ri javob/g'alaba) — brend EMAS. */
 :root {
   --l-bg: #06090a;
   --l-panel: rgba(255, 255, 255, 0.028);
   --l-line: rgba(255, 255, 255, 0.07);
   --l-line-strong: rgba(255, 255, 255, 0.14);
-  --l-text: #eef2f0;
-  --l-muted: #9aa49f;
-  --l-faint: #68736e;
-  --l-green: #0fa47f;
-  --l-green-bright: #2ee6a8;
-  --l-green-deep: #0b7a5f;
+  --l-text: #eef2f7;
+  --l-muted: #9aa4b2;
+  --l-faint: #6a7382;
+  --l-blue: #1a81fc;
+  --l-blue-bright: #4da3ff;
+  --l-blue-deep: #0f5fc4;
+  --l-success: #2ee6a8;
   --l-purple: #8b5cf6;
   --l-gold: #f0b90b;
   --l-red: #f45d5d;
@@ -42,7 +44,7 @@ body {
 }
 
 ::selection {
-  background: rgba(46, 230, 168, 0.25);
+  background: rgba(77, 163, 255, 0.28);
   color: #fff;
 }
 
@@ -79,7 +81,7 @@ body {
 
 /* ── Tipografika ───────────────────────────────────────────────────────────── */
 .grad-text {
-  background: linear-gradient(100deg, var(--l-green-bright) 0%, var(--l-green) 55%, #0e8f6f 100%);
+  background: linear-gradient(100deg, var(--l-blue-bright) 0%, var(--l-blue) 55%, var(--l-blue-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -103,16 +105,16 @@ body {
 .btn-l:active { transform: scale(0.975); }
 
 .btn-l-primary {
-  color: #04120d;
-  background: linear-gradient(180deg, #35e9ae 0%, #14b789 100%);
+  color: #fff;
+  background: linear-gradient(180deg, #4da3ff 0%, #1a81fc 100%);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    0 10px 30px -8px rgba(20, 183, 137, 0.45);
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 10px 30px -8px rgba(26, 129, 252, 0.45);
 }
 .btn-l-primary:hover {
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    0 14px 40px -8px rgba(20, 183, 137, 0.6);
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 14px 40px -8px rgba(26, 129, 252, 0.6);
   filter: brightness(1.05);
 }
 
@@ -141,7 +143,7 @@ body {
   inset: 0;
   background: radial-gradient(
     340px circle at var(--mx, 50%) var(--my, 50%),
-    rgba(46, 230, 168, 0.07),
+    rgba(77, 163, 255, 0.08),
     transparent 65%
   );
   opacity: 0;
@@ -149,7 +151,7 @@ body {
   pointer-events: none;
 }
 .spot:hover {
-  border-color: rgba(46, 230, 168, 0.22);
+  border-color: rgba(77, 163, 255, 0.25);
 }
 .spot:hover::before {
   opacity: 1;
@@ -246,7 +248,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--l-green-bright);
+  color: var(--l-blue-bright);
 }
 
 /* Harakatni kamaytirish — barcha dekorativ animatsiyalar o'chadi */

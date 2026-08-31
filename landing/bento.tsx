@@ -57,7 +57,7 @@ export function Bento({ lang }: { lang: Lang }) {
 
   return (
     <section id="features" className="relative py-24 border-t border-[var(--l-line)]">
-      <div className="glow-orb w-[500px] h-[400px] left-[-160px] top-1/4 bg-[rgba(15,164,127,0.08)]" />
+      <div className="glow-orb w-[500px] h-[400px] left-[-160px] top-1/4 bg-[rgba(26,129,252,0.08)]" />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
         <Reveal className="text-center mb-14">
           <span className="eyebrow mb-4">{t(b.eyebrow, lang)}</span>

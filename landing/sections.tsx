@@ -145,7 +145,7 @@ export function Subjects({ lang }: { lang: Lang }) {
                     <span
                       className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full ${
                         subj.available
-                          ? 'bg-[rgba(46,230,168,0.12)] text-[var(--l-green-bright)]'
+                          ? 'bg-[rgba(77,163,255,0.12)] text-[var(--l-blue-bright)]'
                           : 'bg-[rgba(255,255,255,0.05)] text-[var(--l-faint)]'
                       }`}
                     >
@@ -173,7 +173,7 @@ export function Pricing({ lang }: { lang: Lang }) {
 
   return (
     <section id="pricing" className="py-24 border-t border-[var(--l-line)] relative">
-      <div className="glow-orb w-[460px] h-[400px] right-[-140px] top-0 bg-[rgba(15,164,127,0.07)]" />
+      <div className="glow-orb w-[460px] h-[400px] right-[-140px] top-0 bg-[rgba(26,129,252,0.07)]" />
       <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
         <Reveal className="text-center mb-14">
           <span className="eyebrow mb-4">{t(p.eyebrow, lang)}</span>
@@ -196,7 +196,7 @@ export function Pricing({ lang }: { lang: Lang }) {
               <ul className="space-y-2.5 mb-7 flex-1">
                 {freeFeatures.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-[13px] text-[var(--l-muted)]">
-                    <Check size={14} className="mt-0.5 shrink-0 text-[var(--l-green-bright)]" />
+                    <Check size={14} className="mt-0.5 shrink-0 text-[var(--l-blue-bright)]" />
                     {f}
                   </li>
                 ))}
@@ -216,7 +216,7 @@ export function Pricing({ lang }: { lang: Lang }) {
                 <div
                   onMouseMove={spot}
                   className={`spot h-full p-6 flex flex-col ${
-                    hot ? '!border-[rgba(46,230,168,0.4)] !bg-[rgba(46,230,168,0.04)]' : ''
+                    hot ? '!border-[rgba(77,163,255,0.4)] !bg-[rgba(77,163,255,0.04)]' : ''
                   }`}
                 >
                   <div className="flex items-center justify-between mb-1">
@@ -224,7 +224,7 @@ export function Pricing({ lang }: { lang: Lang }) {
                       {lang === 'uz' ? plan.tierNameUz : plan.tierNameRu}
                     </div>
                     {hot && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-[rgba(46,230,168,0.15)] text-[var(--l-green-bright)]">
+                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-[rgba(77,163,255,0.15)] text-[var(--l-blue-bright)]">
                         {t(p.popular, lang)}
                       </span>
                     )}
@@ -244,7 +244,7 @@ export function Pricing({ lang }: { lang: Lang }) {
                   <ul className="space-y-2.5 mb-7 flex-1">
                     {features.map((f) => (
                       <li key={f} className="flex items-start gap-2 text-[13px] text-[var(--l-muted)]">
-                        <Check size={14} className="mt-0.5 shrink-0 text-[var(--l-green-bright)]" />
+                        <Check size={14} className="mt-0.5 shrink-0 text-[var(--l-blue-bright)]" />
                         {f}
                       </li>
                     ))}
@@ -290,7 +290,7 @@ export function Faq({ lang }: { lang: Lang }) {
             const open = openIdx === i
             return (
               <Reveal key={i} delay={i * 50}>
-                <div className={`spot ${open ? '!border-[rgba(46,230,168,0.25)]' : ''}`}>
+                <div className={`spot ${open ? '!border-[rgba(77,163,255,0.25)]' : ''}`}>
                   <button
                     type="button"
                     onClick={() => setOpenIdx(open ? null : i)}
@@ -330,10 +330,10 @@ export function Cta({ lang }: { lang: Lang }) {
     <section className="py-24">
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[28px] border border-[rgba(46,230,168,0.25)] px-6 sm:px-14 py-16 sm:py-20 text-center">
+          <div className="relative overflow-hidden rounded-[28px] border border-[rgba(77,163,255,0.25)] px-6 sm:px-14 py-16 sm:py-20 text-center">
             {/* Ichki glow + grid */}
             <div className="bg-grid absolute inset-0 pointer-events-none" />
-            <div className="glow-orb w-[560px] h-[300px] left-1/2 -translate-x-1/2 -top-32 bg-[rgba(15,164,127,0.2)]" />
+            <div className="glow-orb w-[560px] h-[300px] left-1/2 -translate-x-1/2 -top-32 bg-[rgba(26,129,252,0.2)]" />
 
             <div className="relative">
               <h2 className="font-display font-bold tracking-[-0.02em] text-3xl sm:text-5xl text-[var(--l-text)] mb-4">

@@ -69,7 +69,7 @@ export function Nav({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
                 onClick={() => setLang(l)}
                 className={`px-2.5 py-1.5 uppercase transition-colors ${
                   lang === l
-                    ? 'bg-[rgba(46,230,168,0.14)] text-[var(--l-green-bright)]'
+                    ? 'bg-[rgba(77,163,255,0.14)] text-[var(--l-blue-bright)]'
                     : 'text-[var(--l-muted)] hover:text-[var(--l-text)]'
                 }`}
               >
@@ -116,7 +116,7 @@ export function Nav({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
                     type="button"
                     onClick={() => setLang(l)}
                     className={`px-2.5 py-1.5 uppercase ${
-                      lang === l ? 'bg-[rgba(46,230,168,0.14)] text-[var(--l-green-bright)]' : 'text-[var(--l-muted)]'
+                      lang === l ? 'bg-[rgba(77,163,255,0.14)] text-[var(--l-blue-bright)]' : 'text-[var(--l-muted)]'
                     }`}
                   >
                     {l}
