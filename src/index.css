@@ -79,7 +79,10 @@ input, button, select, textarea {
 :root {
   --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px));
 }
-body { padding-top: var(--safe-top, 0px); }
+/* Inset mavjud bo'lgandagina +10px nafas: min(--safe-top, 10px) inset=0'da 0
+   qaytaradi (TG oddiy rejim/brauzer OLDINGI ko'rinishda qoladi), inset>0'da
+   (TG fullscreen / APK edge-to-edge) 10px qo'shimcha bo'shliq beradi. */
+body { padding-top: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 10px)); }
 
 /* Route transition — sahifalar orasida silliq fade */
 .route-page { animation: routeIn 160ms ease-out both; }
