@@ -51,7 +51,12 @@ export function createApp() {
   app.use(cors({
     origin:         config.server.allowedOrigins,
     methods:        ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'x-telegram-init-data', 'X-Request-Id'],
+    // X-Login-Code — Telegram-login polling header'i (api.checkTelegramLogin).
+    // Ro'yxatda bo'lmasa preflight rad etiladi va WebView/brauzer so'rovni
+    // UMUMAN yubormaydi: APK'da login spinner'i cheksiz aylanardi (2026-08-31
+    // incident — bot sessiya chiqargan, lekin client buni hech qachon olmadi).
+    // Desync'ni tests/unit/middleware/cors-headers.test.ts ushlaydi.
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-telegram-init-data', 'X-Request-Id', 'X-Login-Code'],
     credentials:    true,
   }))
   // Body-parser limiti ROUTE bo'yicha (audit #11): oldin 10mb GLOBAL edi —
