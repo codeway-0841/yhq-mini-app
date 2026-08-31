@@ -43,7 +43,7 @@ export default function AdminPage() {
   return (
     <div className="font-display min-h-screen bg-pcanvas text-pfg pb-20">
       {/* Top Header */}
-      <div className="sticky top-[var(--safe-top,0px)] bg-psurface/90 backdrop-blur-md border-b border-pline z-30 px-4 py-3">
+      <div className="sticky top-[var(--safe-top-body,0px)] bg-psurface/90 backdrop-blur-md border-b border-pline z-30 px-4 py-3">
         <div className="flex items-center justify-between">
           <button
             onClick={() => goBack(navigate)}

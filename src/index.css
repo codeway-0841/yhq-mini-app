@@ -78,11 +78,20 @@ input, button, select, textarea {
    ikkalasi ham 0/yo'q → padding 0 (oldingi xatti-harakat saqlanadi). */
 :root {
   --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px));
+  /* Body kontenti: inset + (inset mavjud bo'lgandagina) 10px nafas —
+     min() "shartli" qo'shimcha: inset=0'da 0 qaytaradi (TG oddiy rejim/brauzer
+     OLDINGI ko'rinishda qoladi), inset>0'da +10px. Sticky header'lar ham
+     SHU o'zgaruvchiga teng bo'lsin (body content-top bilan bir chiziqqa). */
+  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 10px));
 }
-/* Inset mavjud bo'lgandagina +10px nafas: min(--safe-top, 10px) inset=0'da 0
-   qaytaradi (TG oddiy rejim/brauzer OLDINGI ko'rinishda qoladi), inset>0'da
-   (TG fullscreen / APK edge-to-edge) 10px qo'shimcha bo'shliq beradi. */
-body { padding-top: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 10px)); }
+body { padding-top: var(--safe-top-body, 0px); }
+
+/* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen — DialogOverlay
+   fixed inset-0 ICHIDA bo'lgani uchun body padding ularga TEGMAYDI):
+   inset + 1rem bazaviy nafas. Custom qoida @tailwind'dan KEYIN e'lon qilingani
+   uchun bir xil specificity'da pt-4'ni yengadi → oddiy rejimda xuddi 16px
+   (ko'rinish O'ZGARMAS), APK/TG fullscreen'da inset+16px. */
+.safe-top { padding-top: calc(var(--safe-top, 0px) + 1rem); }
 
 /* Route transition — sahifalar orasida silliq fade */
 .route-page { animation: routeIn 160ms ease-out both; }
