@@ -91,6 +91,18 @@ export function useTestSession(params: UseTestSessionParams) {
   // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: sahifaga har KIRISHDA yangi aralashtirish (re-shuffle) trigger'i; memo ichida o'qilmasa ham faqat identity o'zgarishi kerak.
   }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
 
+  // ── Retry startedAt reset (audit HIGH-1) ────────────────────────────────
+  // "Qayta urinish" sahifani REMOUNT qilmaydi — faqat navigate(replace) orqali
+  // location.key yangilanadi. startedAtRef eski qiymatda qolib, yangi urinish
+  // ESKI startedAt bilan saqlanardi → reload'da remainingSeconds=0 → instant
+  // "vaqt tugadi". Har yangi location.key'da ref'ni tozalaymiz — save effect
+  // (pastda) keyin resumed sessiyani o'zi tanlaydi yoki Date.now() yozadi.
+  // MUHIM: bu effect save effect'dan YUQORIDA bo'lishi SHART (React effect'lar
+  // e'lon tartibida ishlaydi) — reset avval, save keyin.
+  useEffect(() => {
+    startedAtRef.current = null
+  }, [locationKey])
+
   // ── Session save — snapshot persistence ──
   useEffect(() => {
     if (!activeQuestions.length) return
