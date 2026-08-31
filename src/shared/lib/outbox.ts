@@ -310,9 +310,13 @@ export async function flushOutbox(userId: string): Promise<void> {
           notify()
           continue
         }
-        if (err instanceof ApiError) {
+        if (err instanceof ApiError && err.code !== 'timeout') {
           // Server JAVOB BERDI (5xx/408/429, retryable) — bu real urinish,
-          // attempts shu yerda va FAQAT shu yerda sarflanadi (zombi himoyasi)
+          // attempts shu yerda va FAQAT shu yerda sarflanadi (zombi himoyasi).
+          // ISTISNO: code='timeout' — bu CLIENT-side abort (api/index.ts),
+          // server so'rovni umuman KO'RMADI → attempts kuydirilmasligi SHART,
+          // aks holda zaif tarmoqda 25 client-timeout yozuvni "zombi" qilib
+          // tashlab yuborardi (user progress yo'qolardi).
           if (head.attempts + 1 >= MAX_ATTEMPTS) {
             console.warn('[outbox] yozuv tashlab yuborildi (max attempts):', head.type, msg.slice(0, 200))
             await removeEntry(userId, head.id)

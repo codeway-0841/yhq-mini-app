@@ -69,6 +69,24 @@ describe('flushOutbox retry siyosati', () => {
     expect(entries[0].attempts).toBe(0)
   })
 
+  it("client-side timeout (ApiError 408 code='timeout') — attempts SARFLANMAYDI (server so'rovni ko'rmadi)", async () => {
+    // Audit HIGH-2 regression: api/index.ts client ABORT'i ham ApiError(408)
+    // tashlaydi — eski kod buni "server javob berdi" branch'iga tushirib
+    // attempts kuydirardi → zaif tarmoqda 25 flushdan keyin javob "zombi"
+    // deb tashlanardi (user progress yo'qolardi).
+    postResult.mockRejectedValue(new ApiError(408, "So'rov vaqti tugadi (8 soniya).", 'timeout'))
+    const { enqueueOutbox, getOutboxEntries, flushOutbox } = await freshOutbox()
+
+    enqueueOutbox('u1', 'result', { ...ENTRY })
+    for (let i = 0; i < 30; i++) await flushOutbox('u1')
+
+    const entries = getOutboxEntries('u1')
+    expect(entries).toHaveLength(1)          // zombi DROP bo'lmasligi shart
+    expect(entries[0].attempts).toBe(0)      // client abort = server ko'rmadi = bepul
+    expect(entries[0].lastError).toContain('vaqti tugadi')  // diagnostika saqlanadi
+    expect(postResult).toHaveBeenCalled()
+  })
+
   it('5xx (server javob berdi) — attempts bump, MAX_ATTEMPTSdan keyin drop', async () => {
     postResult.mockRejectedValue(new ApiError(500, 'POST /x → 500: Internal'))
     const { enqueueOutbox, getOutboxEntries, flushOutbox } = await freshOutbox()
