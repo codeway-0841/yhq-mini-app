@@ -119,6 +119,9 @@ export function assertProdConfig(): void {
     if (!config.cron.secret) missing.push('CRON_SECRET')
     if (!config.auth.otpPepper) missing.push('OTP_PEPPER')
     if ((env.CLICK_SERVICE_ID || env.CLICK_MERCHANT_ID) && !env.CLICK_SECRET_KEY) missing.push('CLICK_SECRET_KEY')
+    // L-4 (audit): Click yoqilgan (secret bor), lekin merchant ID'lar unutilgan —
+    // checkout havolasi yaratib bo'lmaydi (buildClickPaymentUrl fail-closed).
+    if (env.CLICK_SECRET_KEY && (!env.CLICK_SERVICE_ID || !env.CLICK_MERCHANT_ID)) missing.push('CLICK_SERVICE_ID/CLICK_MERCHANT_ID')
     if (env.PAYME_MERCHANT_ID && !env.PAYME_SECRET_KEY) missing.push('PAYME_SECRET_KEY')
     // WS origin allowlist + CORS prod domeni (audit A3): yo'q bo'lsa octagon
     // origin tekshiruvi FAIL-OPEN ishlaydi va CORS localhost:5173 default'ga

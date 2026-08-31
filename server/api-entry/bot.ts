@@ -84,7 +84,15 @@ export async function createGroupInviteLinkForSubject(subjectId: string, userId:
 }
 
 // ── /id /chatid — Guruh ID'sini aniqlash uchun admin buyrug'i ─────────────────
+// L-1 (audit): ichki guruh ID'lari oshkor bo'lmasligi uchun FAQAT bot adminlari
+// (avval istalgan user ichki chat ID'larini olib, invite-link sxemasini ochardi).
 bot.command(['id', 'chatid'], async (ctx) => {
+  const { usersRepository } = await import('../modules/users/users.repository')
+  const admin = await usersRepository.findById(String(ctx.from?.id))
+  if (!admin?.isAdmin) {
+    await ctx.reply("❌ Bu buyruq faqat bot adminlari uchun.")
+    return
+  }
   const chat = ctx.chat
   await ctx.reply(
     `📌 <b>Chat ID:</b> <code>${chat.id}</code>\n` +
@@ -476,13 +484,12 @@ bot.on('message:successful_payment', async (ctx) => {
 
   try {
     // Bot invoice Mini App birinchi ochilishidan oldin ham to'lanishi mumkin.
-    // Upsert payment ledger FK uchun user qatorini idempotent tayyorlaydi.
-    await usersRepository.upsert({
-      id: validation.userId,
+    // L-2 (audit): FAQAT FK-talqin uchun ensure — mavjud profilga TEGILMAYDI
+    // (avval upsert({photoUrl: null}) har xaridda TG avatar'ni o'chirardi).
+    await usersRepository.ensureExists(validation.userId, {
       firstName: ctx.from.first_name,
       lastName: ctx.from.last_name ?? null,
       username: ctx.from.username ?? null,
-      photoUrl: null,
     })
 
     const result = await paymentRepository.complete({
@@ -529,6 +536,14 @@ bot.on('chat_join_request', async (ctx) => {
   const chatId = req.chat.id
   const userId = String(from.id)
   const chatTitle = req.chat.title || 'Yopiq guruh'
+
+  // L-3 (audit) GURUH ALLOWLIST: bot admin bo'lgan HAR QANDAY guruhda
+  // approve/decline qilmasligi kerak — FAQAT sozlangan VIP guruhlar
+  // (TG_GROUP_RUSTILI / TG_GROUP_YHQ). Sozlanmagan bo'lsa fail-closed:
+  // hech qanday avtomatik harakat yo'q (qo'lda tasdiqlanadi).
+  const allowedChatIds = [config.groups.rustili, config.groups.yhq]
+    .filter((id): id is string => Boolean(id))
+  if (!allowedChatIds.includes(String(chatId))) return
 
   try {
     const user = await usersRepository.findById(userId)

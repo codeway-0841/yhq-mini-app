@@ -19,7 +19,7 @@
 import { sql } from 'drizzle-orm'
 import { executeRows } from '../../db/connection'
 import { InlineKeyboard } from 'grammy'
-import { sendTelegramMessage, isBlockedTelegramError } from '../../utils/tg-send'
+import { sendTelegramMessage, isBlockedTelegramError, TelegramThrottleError } from '../../utils/tg-send'
 import { config } from '../../config'
 
 /** Bir dispatch chaqiruvida yuboriladigan xabarlar (Telegram ~30 msg/s limiti) */
@@ -225,6 +225,17 @@ export const tgBroadcastService = {
         `)
         batchSent++
       } catch (err) {
+        // M-5 (audit): flood-wait juda uzun bo'lsa — xabar 'failed' BO'LMAYDI,
+        // qator 'pending'ga qaytadi (claimed_at tozalanadi) va KEYINGI chunk'da
+        // qayta uriniladi. Xabar hech qachon jimgina yo'qolmaydi.
+        if (err instanceof TelegramThrottleError) {
+          await executeRows(sql`
+            UPDATE tg_broadcast_recipients SET status = 'pending', claimed_at = NULL,
+              error = ${'throttled: retry_after=' + String(err.retryAfterSeconds) + 's'}
+            WHERE id = ${r.id}
+          `)
+          return
+        }
         const blocked = isBlockedTelegramError(err)
         await executeRows(sql`
           UPDATE tg_broadcast_recipients SET status = ${blocked ? 'blocked' : 'failed'},

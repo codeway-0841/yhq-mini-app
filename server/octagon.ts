@@ -3,6 +3,7 @@
  *
  * Protocol (server → client):
  *   matched        { matchId, opponentName, opponentAvatar, opponentFrame, roundCount }  ← no questionIds upfront
+ *   duel_created   { code }                                   ← M-6: server-generatsiya PIN (duelCode:'new' javobi)
  *   question       { index, questionId, timeLimit }           ← reveals one at a time
  *   answer_ack     { index, correct, correctOptionId }   ← post-answer reveal
  *   opp_answered   { index }
@@ -15,7 +16,8 @@
  *   error          { message }
  *
  * Protocol (client → server):
- *   join_queue     { userId, name, subjectId? }   (mid-match join = auto-rejoin)
+ *   join_queue     { userId, name, subjectId?, duelCode? }   (mid-match join = auto-rejoin;
+ *                    duelCode='new' → server PIN generatsiya qiladi, M-6)
  *   rejoin         { matchId, userId, name, initData? }
  *   answer         { matchId, index, optionId }
  *   leave_queue    { userId }
@@ -24,7 +26,7 @@
 
 import { WebSocket, WebSocketServer } from 'ws'
 import { IncomingMessage } from 'http'
-import { randomUUID } from 'crypto'
+import { randomUUID, randomInt } from 'crypto'
 import { inArray, sql, eq }   from 'drizzle-orm'
 import { config }         from './config'
 import { verifyInitData } from './utils/telegram'
@@ -44,6 +46,9 @@ import type { LeaderboardEntry } from './modules/leaderboard/leaderboard.reposit
 
 const ROUNDS              = 10
 const ROUND_TIMEOUT       = 15_000  // ms per question
+/** M-4 (audit): rejoin'dan keyingi MINIMAL javob oynasi — sarflangan grace
+ *  raund vaqtidan ayirilsa ham, legit qayta ulanuvchi javob bera olsin. */
+const REJOIN_MIN_ANSWER_MS = 3_000
 const QUEUE_TIMEOUT       = 60_000  // ms to find opponent before giving up
 const DUEL_TIMEOUT        = 5 * 60_000  // do'st linkni ochishi uchun uzoqroq — 5 daqiqa
 const MAX_MATCHES         = 500     // hard cap on concurrent matches — protects memory
@@ -121,6 +126,12 @@ export interface OctagonLimits {
   maxMsgsPerWindow: number
   /** Bir foydalanuvchiga parallel socketlar soni */
   maxConnsPerUser: number
+  /** Bir IP manzilga parallel socketlar (auth'dan OLDIN ham — connection
+   *  flooding himoyasi, M-1 audit; CGNAT sababli saxiy qiymat: mobil operator
+   *  shlyuzida ko'p legit user bitta public IP'da bo'ladi) */
+  maxConnsPerIp: number
+  /** Serverdagi JAMI parallel socketlar — xotira/fd himoyasi (M-1 audit) */
+  maxTotalConns: number
   /** Bir uzilish uchun grace oynasi (raqib shu kutadi — keyin forfeit) */
   reconnectWindowMs: number
   /** O'YINCHI BOSHI match'dagi jami pauza byudjeti (griefing himoyasi):
@@ -135,6 +146,8 @@ export const DEFAULT_OCTAGON_LIMITS: OctagonLimits = {
   msgWindowMs:      10_000,
   maxMsgsPerWindow: 50,
   maxConnsPerUser:  3,
+  maxConnsPerIp:    25,      // CGNAT headroom: 1 IP'da ~8 legit user (×3 conn)
+  maxTotalConns:    2500,    // MAX_MATCHES(500)×2 + queue/idle headroom
   reconnectWindowMs: 60_000,   // egy uzilish uchun raqib kutilishi (60s)
   pauseBudgetMs:    90_000,    // match boshina JAMI pauza (~1.5 grace) — keyin forfeit
 }
@@ -195,11 +208,35 @@ const matches:       Map<string, Match>  = new Map()  // matchId → Match
 const playerToMatch: Map<string, string> = new Map()  // userId → matchId
 const connsByUser = new Map<string, Set<WebSocket>>()
 
-/** Hozirgi jonli online foydalanuvchilar ro'yxati (faqat haqiqiy ulanganlar) */
-export async function getOnlineUsers(callerUserId: string | null): Promise<LeaderboardEntry[]> {
-  const onlineUserIds = Array.from(connsByUser.keys()).filter((id) => AVATAR_UID_RE.test(id))
-  if (onlineUserIds.length === 0) return []
+// ── M-2 (audit): online ro'yxat yuklama himoyasi ────────────────────────────
+// Eski holat: har connect/disconnect (250ms debounce) TO'LIQ DB query + O(N)
+// payload BARCHA N socket'ga (flap = 4 query/s + O(N²) egress); har get_online
+// esa alohida query edi. Endi:
+//  1) DB snapshot 5s KESHLANADI — broadcast va get_online bitta snapshot'ni
+//     baham ko'radi (flap'da ham ≤1 query/5s);
+//  2) broadcast debounce 1s — kir-chiq "flap"larida 4× kamroq tarqatish;
+//  3) broadcast payload 200 qatorga CHEKLANADI — egress O(N²) bo'ylamaydi.
+const ONLINE_CACHE_TTL_MS = 5_000
+const ONLINE_BROADCAST_DEBOUNCE_MS = 1_000
+const ONLINE_BROADCAST_MAX = 200
 
+let onlineRowsCache: { at: number; gen: number; rows: LeaderboardEntry[] } | null = null
+/** connsByUser a'zoligi o'zgarish GENERATION'i — kesh invalidatsiya kaliti.
+ *  (A'zolik o'zgarganda presence darhol yangilanadi; o'zgarmagan paytda esa
+ *  get_online/broadcast spam'i DB'ga tegmaydi — TTL kesh.) */
+let onlineGen = 0
+
+/** Online userlarning profil qatorlari — generation + 5s TTL keshli snapshot (isYou: false). */
+async function fetchOnlineRowsCached(): Promise<LeaderboardEntry[]> {
+  const c = onlineRowsCache
+  if (c && c.gen === onlineGen && Date.now() - c.at < ONLINE_CACHE_TTL_MS) {
+    return c.rows
+  }
+  const onlineUserIds = Array.from(connsByUser.keys()).filter((id) => AVATAR_UID_RE.test(id))
+  if (onlineUserIds.length === 0) {
+    onlineRowsCache = { at: Date.now(), gen: onlineGen, rows: [] }
+    return []
+  }
   try {
     const rows = await db
       .select({
@@ -216,21 +253,29 @@ export async function getOnlineUsers(callerUserId: string | null): Promise<Leade
       .leftJoin(progress, eq(progress.userId, users.id))
       .where(inArray(users.id, onlineUserIds))
 
-    return rows.map((r, i) => ({
+    const mapped = rows.map((r, i) => ({
       rank: i + 1,
       userId: r.id,
       name: `${r.firstName} ${r.lastName ?? ''}`.trim(),
       score: Number(r.score),
       streak: Number(r.streak),
-      isYou: callerUserId !== null && r.id === callerUserId,
+      isYou: false,
       photoUrl: r.photoUrl || null,
       hasCustomAvatar: !!r.hasCustomAvatar,
       avatarFrame: r.avatarFrame ?? null,
     }))
+    onlineRowsCache = { at: Date.now(), gen: onlineGen, rows: mapped }
+    return mapped
   } catch (err) {
-    console.error('[octagon] getOnlineUsers error:', err)
-    return []
+    console.error('[octagon] online rows error:', err)
+    return onlineRowsCache?.rows ?? []   // xatoda eski (stale) snapshot — jim yemas
   }
+}
+
+/** Hozirgi jonli online foydalanuvchilar ro'yxati (faqat haqiqiy ulanganlar) */
+export async function getOnlineUsers(callerUserId: string | null): Promise<LeaderboardEntry[]> {
+  const rows = await fetchOnlineRowsCached()
+  return rows.map((r) => ({ ...r, isYou: callerUserId !== null && r.userId === callerUserId }))
 }
 
 let onlineBroadcastTimer: NodeJS.Timeout | null = null
@@ -240,53 +285,20 @@ export function triggerOnlineBroadcast(): void {
   if (onlineBroadcastTimer) return
   onlineBroadcastTimer = setTimeout(async () => {
     onlineBroadcastTimer = null
-    const onlineUserIds = Array.from(connsByUser.keys()).filter((id) => AVATAR_UID_RE.test(id))
-    let playerRows: LeaderboardEntry[] = []
-
-    if (onlineUserIds.length > 0) {
-      try {
-        const rows = await db
-          .select({
-            id:              users.id,
-            firstName:       users.firstName,
-            lastName:        users.lastName,
-            photoUrl:        users.photoUrl,
-            hasCustomAvatar: sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
-            avatarFrame:     users.avatarFrame,
-            streak:          sql<number>`COALESCE(${progress.streak}, 0)`,
-            score:           sql<number>`COALESCE(${progress.octagonWins}, 0)`,
-          })
-          .from(users)
-          .leftJoin(progress, eq(progress.userId, users.id))
-          .where(inArray(users.id, onlineUserIds))
-
-        playerRows = rows.map((r, i) => ({
-          rank: i + 1,
-          userId: r.id,
-          name: `${r.firstName} ${r.lastName ?? ''}`.trim(),
-          score: Number(r.score),
-          streak: Number(r.streak),
-          isYou: false,
-          photoUrl: r.photoUrl || null,
-          hasCustomAvatar: !!r.hasCustomAvatar,
-          avatarFrame: r.avatarFrame ?? null,
-        }))
-      } catch (err) {
-        console.error('[octagon] online broadcast DB error:', err)
-      }
-    }
-
+    const all = await fetchOnlineRowsCached()
+    // Payload cap — to'liq onlayn SONI saqlanadi, ro'yxat kesiladi (M-2)
+    const playerRows = all.slice(0, ONLINE_BROADCAST_MAX)
     for (const [uid, sockets] of connsByUser) {
       const payload = {
         type: 'online_players',
-        count: playerRows.length,
+        count: all.length,
         players: playerRows.map((p) => ({ ...p, isYou: p.userId === uid })),
       }
       for (const ws of sockets) {
         send(ws, payload)
       }
     }
-  }, 250)
+  }, ONLINE_BROADCAST_DEBOUNCE_MS)
 }
 
 /** subjectId → savol havzasi (dataSourceId orqali); fallback — birinchi mavjud pool. */
@@ -301,6 +313,16 @@ function poolForSubject(subjectId: string): QuestionPoolItem[] {
 
 function send(ws: WebSocket, msg: object): void {
   if (ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify(msg))
+}
+
+/** Proxy (Render LB) ortida real client IP — XFF birinchi entry; yo'q bo'lsa socket.
+ *  M-1 (audit): per-IP connection cap kaliti. XFF soxtalash mumkin, lekin cap
+ *  faqat DoS yumshatish uchun (aniq identifikatsiya emas) — auth alohida qatlam. */
+function clientIp(req: IncomingMessage): string {
+  const xff = req.headers['x-forwarded-for']
+  const raw = Array.isArray(xff) ? xff[0] : xff
+  const ip = raw?.split(',')[0]?.trim()
+  return ip || req.socket.remoteAddress || 'unknown'
 }
 
 function pickQuestions(n: number, pool: QuestionPoolItem[]): number[] {
@@ -354,6 +376,23 @@ async function resolveAvatars(...ids: string[]): Promise<Map<string, { avatar: s
 // ── Match lifecycle ────────────────────────────────────────────────────────
 
 function startMatch(p1: Player, p2: Player): void {
+  // H-1 (audit): bitta user PARALLEL match'larga tushib ketmasligi SHART.
+  // Yuqori qatlam (joinQueue/joinDuel) queue/duel/match eksklyuzivligini
+  // kafolatlaydi — bu guard ikkinchi xavfsizlik chizig'i (defense-in-depth):
+  // qandaydir kelajakdagi yo'l bu yerga band o'yinchi keltirsa, yangi match
+  // YARATILMAYDI (state corruption o'rniga toza xato).
+  if (playerToMatch.has(p1.userId) || playerToMatch.has(p2.userId)) {
+    console.warn('[octagon] startMatch BLOKLANDI — o\'yinchi allaqachon match\'da', {
+      p1: p1.userId, p2: p2.userId,
+    })
+    Sentry.captureMessage('octagon_startmatch_blocked', {
+      level: 'warning',
+      extra: { p1: p1.userId, p2: p2.userId },
+    })
+    send(p1.ws, { type: 'error', message: 'match_start_failed' })
+    send(p2.ws, { type: 'error', message: 'match_start_failed' })
+    return
+  }
   if (p1.queueTimer) clearTimeout(p1.queueTimer)
   if (p2.queueTimer) clearTimeout(p2.queueTimer)
   queue.delete(p1.userId)
@@ -459,6 +498,29 @@ function resolveRound(match: Match, index: number): void {
   }, 1000)
 }
 
+// M-3 (audit) duel anti-farm: bir juftlik (userId, opponentId) oxirgi 24 soatda
+// shu sondan ortiq match o'ynasa — natija statistikaga YOZILMAYDI (o'yin oddiy
+// o'ynalaveradi, lekin reyting/yutuq/leaderboard hisoblanmaydi). Feeder-akkaunt
+// (o'ziga ataylab yutqazuvchi 2-akkaunt) bilan cheksiz win yig'ish yo'li yopiladi.
+const SAME_PAIR_24H_CAP = 5
+
+/** Juftlik farm cap'ga yetganmi? Mehmon ('0') ishtirokchili match'larda cap YO'Q
+ *  (dev artifact). Xatolikda FAIL-OPEN (yozuvga ruxsat) — reyting yozuvi
+ *  kritik emas, DB uzilishida o'yin natijalari yo'qolmasligi muhimroq. */
+async function pairFarmCapped(u1: string, u2: string): Promise<boolean> {
+  if (u1 === '0' || u2 === '0') return false
+  try {
+    const n = await progressRepository.duelPairCountLast24h(u1, u2)
+    if (n >= SAME_PAIR_24H_CAP) {
+      console.warn('[octagon] anti-farm: juftlik 24h cap\'ga yetdi — natija yozilmaydi', { u1, u2, n })
+      return true
+    }
+  } catch (err) {
+    console.error('[octagon] anti-farm cap check xatosi (fail-open):', err)
+  }
+  return false
+}
+
 function endMatch(match: Match): void {
   const [p1, p2] = match.players
   const s1 = match.scores.get(p1.userId) ?? 0
@@ -470,18 +532,23 @@ function endMatch(match: Match): void {
   send(p1.ws, { type: 'match_end', yourScore: s1, oppScore: s2, result: result(s1, s2) })
   send(p2.ws, { type: 'match_end', yourScore: s2, oppScore: s1, result: result(s2, s1) })
 
-  // G'alilgan — Yutuqlar uchun DB'ga yozamiz (fire-and-forget; draw da yo'q)
   const winnerId = s1 > s2 ? p1.userId : s1 < s2 ? p2.userId : null
-  if (winnerId && winnerId !== '0') {
-    void progressRepository.addOctagonWin(winnerId)
-      .catch((err) => console.error('[octagon] addOctagonWin failed:', err?.message ?? err))
-  }
-
-  // Davr reytingi (kunlik/haftalik/oylik) uchun timestamp'li natija — draw ham yoziladi
-  recordDuelResults(match, [
+  const outcomes: DuelOutcome[] = [
     { userId: p1.userId, opponentId: p2.userId, selfScore: s1, oppScore: s2, result: result(s1, s2) },
     { userId: p2.userId, opponentId: p1.userId, selfScore: s2, oppScore: s1, result: result(s2, s1) },
-  ], false)
+  ]
+
+  // M-3: anti-farm cap tekshiruvidan KEYIN yozuv (fire-and-forget).
+  // G'alilgan — Yutuqlar uchun DB'ga yozamiz (draw da yo'q); davr reytingi
+  // (kunlik/haftalik/oylik) uchun timestamp'li natija — draw ham yoziladi.
+  void (async () => {
+    if (await pairFarmCapped(p1.userId, p2.userId)) return
+    if (winnerId && winnerId !== '0') {
+      void progressRepository.addOctagonWin(winnerId)
+        .catch((err) => console.error('[octagon] addOctagonWin failed:', err?.message ?? err))
+    }
+    recordDuelResults(match, outcomes, false)
+  })()
 
   cleanupMatch(match)
 }
@@ -508,16 +575,22 @@ function forfeitDisconnected(match: Match, userId: string): void {
   const opp = match.players.find((p) => p.userId !== userId)
   if (opp) {
     send(opp.ws, { type: 'opp_disconnected' })
-    if (opp.userId !== '0') {
-      void progressRepository.addOctagonWin(opp.userId)
-        .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
-    }
     const oppScore  = match.scores.get(opp.userId) ?? 0
     const selfScore = match.scores.get(userId)     ?? 0
-    recordDuelResults(match, [
+    const outcomes: DuelOutcome[] = [
       { userId: opp.userId, opponentId: userId,     selfScore: oppScore,  oppScore: selfScore, result: 'win'  },
       { userId,             opponentId: opp.userId, selfScore,            oppScore,            result: 'lose' },
-    ], true)
+    ]
+    // M-3: anti-farm — forfeit ham juftlik cap'iga bo'ysunadi (feeder ataylab
+    // disconnect qilib "main"ga win yozdirish eng ommaviy farm usuli edi).
+    void (async () => {
+      if (await pairFarmCapped(opp.userId, userId)) return
+      if (opp.userId !== '0') {
+        void progressRepository.addOctagonWin(opp.userId)
+          .catch((err) => console.error('[octagon] forfeit win save failed:', err?.message ?? err))
+      }
+      recordDuelResults(match, outcomes, true)
+    })()
   }
   cleanupMatch(match)
 }
@@ -591,15 +664,22 @@ function rejoinMatch(ws: WebSocket, userId: string): boolean {
   }
   // Pauza byudjeti: sarflangan grace vaqtini ayiramiz (griefing cap) —
   // qaytkan o'yinchi "yangi" to'liq oynani OLMAYDI.
+  let graceConsumedMs = 0
   if (match.disconnectStartedAt != null) {
-    const consumed = Date.now() - match.disconnectStartedAt
-    match.pauseBudget.set(userId, Math.max(0, (match.pauseBudget.get(userId) ?? 0) - consumed))
+    graceConsumedMs = Date.now() - match.disconnectStartedAt
+    match.pauseBudget.set(userId, Math.max(0, (match.pauseBudget.get(userId) ?? 0) - graceConsumedMs))
     match.disconnectStartedAt = null
   }
 
   // RESUME: raund pauza'da bo'lgan bo'lsa — qolgan vaqtidan davom ettiriladi
   const rs = match.roundState
   if (rs && !rs.resolved && rs.paused) {
+    // M-4 (audit) PAUSE-ABUSE yumshatish: qiyin savolda qasddan uzilib,
+    // javobni internetdan topib qaytish "bepul o'ylash vaqti" edi. Endi
+    // sarflangan grace vaqti raundning qolgan vaqtidan AYIRILADI; legit qayta
+    // ulanuvchi uchun minimal javob oynasi (REJOIN_MIN_ANSWER_MS) kafolatlanadi.
+    // (Raqib pauza davomida savolni ko'rib turdi — qisqa vaqt unga zarar yetkazmaydi.)
+    rs.remainingMs = Math.max(REJOIN_MIN_ANSWER_MS, rs.remainingMs - graceConsumedMs)
     rs.startedAt = Date.now() - (ROUND_TIMEOUT - rs.remainingMs)
     rs.timer     = setTimeout(() => resolveRound(match, match.round), rs.remainingMs)
     rs.paused    = false
@@ -640,7 +720,9 @@ function handleDisconnect(userId: string, deadWs: WebSocket): void {
     return
   }
 
-  // Duel kutilishi — o'sha socketniki bo'lsa o'chiramiz
+  // Duel kutilishi — o'sha socketniki bo'lsa o'chiramiz.
+  // (H-2: birlamchi tozalash endi close handler'da — early-return'lardan OLDIN;
+  //  bu qator idempotent ikkinchi chiziq sifatida qoladi.)
   leaveDuelByUser(userId, deadWs)
 
   const matchId = playerToMatch.get(userId)
@@ -706,12 +788,66 @@ function leaveDuelByUser(userId: string, deadWs?: WebSocket): void {
   }
 }
 
+/**
+ * M-6 (audit): duel PIN'ini SERVER generatsiya qiladi. Eski oqimda kod client'da
+ * `Math.random()`'dan yaratilardi — bashorat qilinadigan, ikki yaratuvchi
+ * collision'ida noto'g'ri pairing (begona odam xonaga tushardi) va kutilayotgan
+ * xonalarni enumeration qilish mumkin edi. Endi:
+ *  - client `duelCode: 'new'` yuboradi → server `crypto.randomInt` bilan
+ *    6 xonali kod tanlaydi (collision retry) va `duel_created` bilan qaytaradi;
+ *  - ESKI client'lar (o'z PIN'ini yuboradigan) ham ishlayveradi — joinDuel
+ *    yo'li o'zgarishsiz (backward-compat, eski APK'lar uchun).
+ */
+function joinDuelCreate(ws: WebSocket, userId: string, name: string, subjectId: string): void {
+  if (rejoinIfInMatch(ws, userId)) return
+  if (!joinAttemptAllowed(userId)) {
+    send(ws, { type: 'error', message: 'duel_join_rate_limited' })
+    return
+  }
+  // H-1 eksklyuzivligi + avvalgi kutilayotgan duel(lar)ni almashtirish
+  removeFromQueue(userId, ws)
+  leaveDuelByUser(userId)
+
+  // Collision retry: 900k fazo — amalda birinchi urinishda bo'sh kod topiladi
+  let code = ''
+  for (let i = 0; i < 10; i++) {
+    code = String(randomInt(100_000, 1_000_000))
+    if (!duels.has(code)) break
+  }
+  if (duels.has(code)) {
+    send(ws, { type: 'error', message: 'server_full' })
+    return
+  }
+
+  const player: Player = { ws, userId, name, subjectId, queueTimer: null }
+  const timer = setTimeout(() => {
+    const cur = duels.get(code)
+    if (cur && cur.player.userId === userId) {
+      duels.delete(code)
+      send(ws, { type: 'error', message: 'duel_timeout' })
+    }
+  }, DUEL_TIMEOUT)
+  duels.set(code, { player, timer })
+  send(ws, { type: 'duel_created', code })
+}
+
 function joinDuel(ws: WebSocket, userId: string, name: string, rawCode: string, fallbackSubjectId: string): void {
+  // H-1 (audit): match'dagi o'yinchi duel kod yuborsa — bu REJOIN, yangi match
+  // EMAS. Aks holda u kutilayotgan duel orqali IKKINCHI parallel match'ga
+  // tushib ketardi. (Rejoin join-attempt limitini sarflamaydi.)
+  if (rejoinIfInMatch(ws, userId)) return
+
   // M-9: brute-force kod suratga tushirish limiti (60s'da 8 urinish)
   if (!joinAttemptAllowed(userId)) {
     send(ws, { type: 'error', message: 'duel_join_rate_limited' })
     return
   }
+
+  // H-1 (audit) EKSKLYUZIVLIK: random navbatdan duel rejimiga o'tish —
+  // navbat entry'si o'chiriladi (aks holda navbat orqali HAM, duel orqali HAM
+  // match'ga tushib PARALLEL 2 o'yin o'ynardi).
+  removeFromQueue(userId, ws)
+
   const code = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
   const existing = duels.get(code)
   if (existing) {
@@ -739,14 +875,40 @@ function joinDuel(ws: WebSocket, userId: string, name: string, rawCode: string, 
   duels.set(code, { player, timer })
 }
 
+/**
+ * H-1 (audit): match'dagi user uchun HAR QANDAY join yo'li REJOIN'ga tushadi
+ * (yangi match/duel YO'Q). true = so'rov handled (caller return qiladi).
+ */
+function rejoinIfInMatch(ws: WebSocket, userId: string): boolean {
+  if (!playerToMatch.has(userId)) return false
+  if (!rejoinMatch(ws, userId)) {
+    send(ws, { type: 'error', message: 'already_in_match' })
+  }
+  return true
+}
+
+/** H-1 (audit): user'ni random navbatdan chiqaradi (duel rejimiga o'tishda);
+ *  eski (boshqa tab) socket bo'lsa 'replaced_by_new_tab' bilan yopiladi. */
+function removeFromQueue(userId: string, ws: WebSocket): void {
+  const queued = queue.get(userId)
+  if (!queued) return
+  if (queued.queueTimer) clearTimeout(queued.queueTimer)
+  queue.delete(userId)
+  if (queued.ws !== ws && queued.ws.readyState === WebSocket.OPEN) {
+    queued.ws.close(1000, 'replaced_by_new_tab')
+  }
+}
+
 function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: string): void {
   // Coming back to a live match (app relaunch within grace window) — rejoin it
-  if (playerToMatch.has(userId)) {
-    if (!rejoinMatch(ws, userId)) {
-      send(ws, { type: 'error', message: 'already_in_match' })
-    }
-    return
-  }
+  if (rejoinIfInMatch(ws, userId)) return
+
+  // H-1 (audit) EKSKLYUZIVLIK: user queue/duel/match'dan FAQAT BIRINIDA bo'ladi.
+  // Random navbat tanlandi → o'zi yaratgan kutilayotgan duel(lar) BEKOR qilinadi.
+  // Aks holda do'st shu duel kodi bilan kirganda user ALLAQACHON random match'da
+  // bo'lib, startMatch uni IKKINCI parallel match'ga tushirardi (win-farm +
+  // state corruption).
+  leaveDuelByUser(userId)
 
   // Re-joining while already queued — cancel old timer + close old socket (tab duplication)
   const existing = queue.get(userId)
@@ -755,6 +917,9 @@ function joinQueue(ws: WebSocket, userId: string, name: string, subjectId: strin
     if (existing.ws !== ws && existing.ws.readyState === WebSocket.OPEN) {
       existing.ws.close(1000, 'replaced_by_new_tab')
     }
+    // Eski entry'ni DARHOL o'chiramiz (H-1): pastdagi juftlash `waiting`ni
+    // tanlaganda bu queueTimer'siz "arava" entry ko'rinmasligi kerak.
+    queue.delete(userId)
   }
 
   // Find a waiting opponent (not self) — FAQAT bir xil fan tanlaganlar
@@ -820,18 +985,27 @@ export function attachOctagon(
     msgCount:  number
   }
   const states = new WeakMap<WebSocket, ConnState>()
+  // M-1 (audit): per-IP connection counter — flooding himoyasi.
+  // Per-attach (test izolyatsiyasi); close handler'da decrement.
+  const connsByIp = new Map<string, number>()
 
   function trackConn(userId: string, ws: WebSocket): boolean {
     let set = connsByUser.get(userId)
     if (!set) { set = new Set(); connsByUser.set(userId, set) }
     if (!set.has(ws) && set.size >= L.maxConnsPerUser) return false
+    if (!set.has(ws)) onlineGen++   // M-2: a'zolik o'zgardi → kesh invalidate
     set.add(ws)
     return true
   }
   function untrackConn(ws: WebSocket): void {
+    let removed = false
     for (const [uid, set] of connsByUser) {
-      if (set.delete(ws) && set.size === 0) connsByUser.delete(uid)
+      if (set.delete(ws)) {
+        removed = true
+        if (set.size === 0) connsByUser.delete(uid)
+      }
     }
+    if (removed) onlineGen++        // M-2: faqat HAQIQIY o'zgarishda invalidate
     triggerOnlineBroadcast()
   }
 
@@ -863,6 +1037,25 @@ export function attachOctagon(
         return
       }
     }
+
+    // ── M-1 (audit): connection flooding himoyasi ─────────────────────────
+    // Auth deadline ulanish UMRINI cheklaydi, lekin parallel SONINI emas —
+    // bitta IP'dan minglab parallel upgrade fd/xotirani tugatishi mumkin edi.
+    // Cap'lar auth'dan OLDIN (eng arzon nuqta): global + per-IP.
+    // Eslatma: connsByIp increment FAQAT shu nuqtadan o'tgan socketlar uchun;
+    // ertaga qaytarilgan (close) socketlar hech qachon increment qilinmaydi —
+    // close handler'dagi decrement shunga mos (pastda guard'li).
+    if (wss.clients.size > L.maxTotalConns) {
+      ws.close(1008, 'server_full')
+      return
+    }
+    const ip = clientIp(req)
+    const ipCount = connsByIp.get(ip) ?? 0
+    if (ipCount >= L.maxConnsPerIp) {
+      ws.close(1008, 'too_many_connections_ip')
+      return
+    }
+    connsByIp.set(ip, ipCount + 1)
 
     const state: ConnState = {
       authed: false, userId: null, isAlive: true,
@@ -1012,6 +1205,11 @@ export function attachOctagon(
             : DEFAULT_SUBJECT_ID
           // Duel rejimi: kod bo'lsa — do'st kutishi/juftlashish (navbatdan tashqari)
           const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
+          // M-6: 'new' — SERVER yangi kod generatsiya qiladi (duel_created qaytadi)
+          if (rawCode === 'new') {
+            joinDuelCreate(ws, uid, name, subjectId)
+            return
+          }
           const cleanCode = rawCode.replace(/^(?:duel|room)-/, '')
           const duelCode = cleanCode && (DUEL_CODE_RE.test(cleanCode) || DUEL_CODE_RE.test(rawCode)) ? cleanCode : null
           if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
@@ -1089,10 +1287,23 @@ export function attachOctagon(
     })
 
     ws.on('close', () => {
+      // M-1: per-IP counter decrement — bu handler FAQAT cap tekshiruvidan
+      // o'tgan (increment qilingan) socketlar uchun biriktirilgan.
+      const n = (connsByIp.get(ip) ?? 1) - 1
+      if (n <= 0) connsByIp.delete(ip)
+      else connsByIp.set(ip, n)
+
       clearTimeout(authTimer)
       untrackConn(ws)
       const userId = state.userId
       if (!userId) return
+      // H-2 (audit) GHOST-DUEL himoyasi: kutilayotgan duel xonasini FAQAT shu
+      // o'layotgan socket'niki bo'lsa o'chiramiz VA buni har qanday early-return'dan
+      // OLDIN qilamiz — pastdagi match-slot stale-close return'i (yoki
+      // handleDisconnect'dagi queue return'i) tozalashni o'tkazib yubormasligi
+      // uchun. Yangi socket bilan qayta yaratilgan duel ws-mismatch tufayli
+      // saqlanadi (deadWs filtri).
+      leaveDuelByUser(userId, ws)
       // Stale socket closing after a rejoin replaced it — not a real disconnect
       const matchId = playerToMatch.get(userId)
       if (matchId) {

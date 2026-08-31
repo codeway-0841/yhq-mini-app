@@ -37,6 +37,21 @@ export const progressRepository = {
     await db.insert(progress).values({ userId }).onConflictDoNothing()
   },
 
+  /**
+   * M-3 (audit) duel anti-farm: bir juftlik oxirgi 24 soatda necha match
+   * o'ynagan (rolling window — yarim tunda "reset" bo'lib ketmasligi uchun
+   * kalendar kun emas). Feeder-akkaunt kolluziyasini cheklashda ishlatiladi:
+   * cap'dan keyingi match'lar statistikaga yozilmaydi.
+   */
+  async duelPairCountLast24h(userId: string, opponentId: string): Promise<number> {
+    const rows = await executeRows<{ n: number }>(sql`
+      SELECT COUNT(*)::int AS n FROM duel_results
+      WHERE user_id = ${userId} AND opponent_id = ${opponentId}
+        AND created_at > now() - interval '24 hours'
+    `)
+    return Number(rows[0]?.n ?? 0)
+  },
+
   async findByUserId(userId: string) {
     const [row] = await db.select().from(progress).where(eq(progress.userId, userId))
     return row ?? null

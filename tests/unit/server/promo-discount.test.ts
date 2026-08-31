@@ -63,6 +63,9 @@ const DISCOUNT_PROMO = {
 beforeEach(() => {
   vi.clearAllMocks()
   ;(config.payme as { merchantId: string }).merchantId = 'merchant_x'
+  // L-4 (audit): buildClickPaymentUrl endi fail-closed — test'da Click config shart
+  ;(config.click as { serviceId: string }).serviceId = 'svc_test'
+  ;(config.click as { merchantId: string }).merchantId = 'merch_test'
 })
 
 describe('POST /payments/create-order — promokod chegirmasi', () => {

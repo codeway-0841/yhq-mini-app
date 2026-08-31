@@ -107,8 +107,15 @@ export function buildClickPaymentUrl(params: {
   amount: number
   returnUrl?: string
 }): string {
-  const serviceId = config.click.serviceId || '32876'
-  const merchantId = config.click.merchantId || '24567'
+  // L-4 (audit): hardcode fallback O'CHIRILDI ('32876'/'24567') — env unutilsa
+  // checkout havolasi eski/default merchant'ga ishora qilib, pul noto'g'ri
+  // kabiynetga ketardi. Click sozlanmagan bo'lsa order yaratish FAIL qiladi
+  // (fail-closed) — jimgina noto'g'ri yo'naltirishdan yaxshi.
+  const serviceId = config.click.serviceId
+  const merchantId = config.click.merchantId
+  if (!serviceId || !merchantId) {
+    throw new Error('CLICK_SERVICE_ID / CLICK_MERCHANT_ID sozlanmagan — Click order yaratib bo\'lmaydi')
+  }
   const returnUrl = params.returnUrl || `${config.deploy.appUrl}/premium`
 
   return `https://my.click.uz/services/pay?service_id=${encodeURIComponent(serviceId)}&merchant_id=${encodeURIComponent(merchantId)}&amount=${params.amount}&transaction_param=${encodeURIComponent(params.orderId)}&return_url=${encodeURIComponent(returnUrl)}`

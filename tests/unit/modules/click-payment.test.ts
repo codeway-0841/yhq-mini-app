@@ -58,6 +58,11 @@ describe('Click Payment Gateway — Unit Tests', () => {
   })
 
   describe('buildClickPaymentUrl', () => {
+    beforeEach(() => {
+      ;(config.click as { serviceId: string }).serviceId = '32876'
+      ;(config.click as { merchantId: string }).merchantId = '24567'
+    })
+
     it('to\'g\'ri parametrlar bilan Click checkout URL hosil qiladi', () => {
       const url = buildClickPaymentUrl({
         orderId: 'ord_test_999',
@@ -66,9 +71,19 @@ describe('Click Payment Gateway — Unit Tests', () => {
       })
 
       expect(url).toContain('https://my.click.uz/services/pay')
+      expect(url).toContain('service_id=32876')
+      expect(url).toContain('merchant_id=24567')
       expect(url).toContain('amount=79000')
       expect(url).toContain('transaction_param=ord_test_999')
       expect(url).toContain('return_url=')
+    })
+
+    // L-4 (audit 2026-08-31): hardcode fallback O'CHIRILDI — env unutilsa pul
+    // eski/default merchant'ga ketardi. Endi fail-closed (throw).
+    it('merchant ID\'lar sozlanmagan bo\'lsa — THROW (fail-closed, hardcode fallback YO\'Q)', () => {
+      ;(config.click as { serviceId: string }).serviceId = ''
+      expect(() => buildClickPaymentUrl({ orderId: 'ord_x', amount: 1000 }))
+        .toThrow(/CLICK_SERVICE_ID/)
     })
   })
 

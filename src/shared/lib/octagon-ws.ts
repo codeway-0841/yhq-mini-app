@@ -4,6 +4,8 @@ export type OctagonMsg =
   /** opponentAvatar: '/api/avatar/:uid' (custom) | TG photo_url | null;
    *  opponentFrame: avatar-frames config id'si (do'kon kosmetikasi) | null */
   | { type: 'matched';      matchId: string; opponentName: string; opponentAvatar: string | null; opponentFrame: string | null; roundCount: number }
+  /** M-6: server-generatsiya duel PIN'i (duelCode:'new' so'rovining javobi) */
+  | { type: 'duel_created'; code: string }
   | { type: 'question';     index: number; questionId: number; timeLimit: number }
   | { type: 'answer_ack';   index: number; correct: boolean; correctOptionId: string }
   | { type: 'opp_answered'; index: number }

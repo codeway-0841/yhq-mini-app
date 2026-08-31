@@ -166,6 +166,33 @@ export const usersRepository = {
     `, txOrDb)
   },
 
+  /**
+   * L-2 (audit): FAQAT FK-talqin uchun minimal user qatorini yaratadi —
+   * MAVJUD qatorga HECH QACHON tegmaydi (photo_url/ism/username saqlanadi).
+   * To'lov webhook (`successful_payment`) kabi "user mavjud bo'lishi shart,
+   * lekin profil ma'lumotlari yangilanMASLIGI kerak" bo'lgan yo'llar uchun
+   * (avval `upsert({photoUrl: null})` har Stars xaridida TG avatar'ni o'chirardi).
+   */
+  async ensureExists(id: string, name: { firstName: string; lastName?: string | null; username?: string | null }): Promise<void> {
+    await executeRows(sql`
+      WITH u AS (
+        INSERT INTO users (id, first_name, last_name, username, photo_url)
+        VALUES (${id}, ${name.firstName}, ${name.lastName ?? ''}, ${name.username ?? ''}, '')
+        ON CONFLICT (id) DO NOTHING
+        RETURNING id
+      ), prog AS (
+        INSERT INTO progress (user_id)
+        SELECT id FROM u
+        ON CONFLICT DO NOTHING
+      ), sett AS (
+        INSERT INTO settings (user_id)
+        SELECT id FROM u
+        ON CONFLICT DO NOTHING
+      )
+      SELECT 1 AS ok
+    `)
+  },
+
   /** Upsert user and return the persisted row. */
   async upsert(input: CreateOrUpdateUserInput) {
     const [row] = await db.insert(users).values({

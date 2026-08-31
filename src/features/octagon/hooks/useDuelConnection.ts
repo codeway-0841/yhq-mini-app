@@ -62,6 +62,12 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
   const handleMsg = useCallback((msg: OctagonMsg) => {
     switch (msg.type) {
       case 'matched':          dispatch({ type: 'MATCHED',      matchId: msg.matchId, opponentName: msg.opponentName, opponentAvatar: msg.opponentAvatar, opponentFrame: msg.opponentFrame, roundCount: msg.roundCount }); break
+      case 'duel_created':
+        // M-6: server-generatsiya PIN keldi — kod endi UI'da ko'rinadi va
+        // reconnect'da shu ishlatiladi ('new' sentinel'ining o'rniga).
+        setDuelCode(msg.code)
+        duelCodeRef.current = msg.code
+        break
       case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit }); break
       case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct, correctOptionId: msg.correctOptionId }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break
@@ -277,11 +283,33 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
     }
   }, [showToast, lang])
 
-  /** Do'st uchun duel link yaratish */
+  /** Do'st uchun duel link yaratish — M-6 (audit): PIN endi SERVER generatsiya
+   *  qiladi (crypto.randomInt + collision retry; eski oqim client `Math.random()`
+   *  ishlatardi — bashorat qilinadigan + collision'da noto'g'ri pairing).
+   *  Oqim: duelCode:'new' yuboriladi → server `duel_created {code}` qaytaradi →
+   *  kod state/ref'ga yozilib UI'da ko'rinadi. Reconnect'da ref'dagi 'new'
+   *  sentinel qayta yuborilib yangi kod olinadi (eski kutilma almashtiriladi). */
   const startDuel = useCallback(() => {
-    const code = Math.floor(100000 + Math.random() * 900000).toString()
-    joinQueue(code)
-  }, [joinQueue])
+    const u = userRef.current
+    if (!u) return
+    setDuelCode(null)             // server kodi kelguncha eski kod ko'rinmasin
+    duelCodeRef.current = 'new'   // sentinel: duel_created kutilmoqda
+    track('duel_start', { subject: subjectRef.current, duel: true })
+    dispatch({ type: 'SEARCHING' })
+    try {
+      getOctagonSocket(config.wsUrl).send({
+        type: 'join_queue',
+        userId: u.id,
+        name: u.firstName,
+        subjectId: subjectRef.current,
+        duelCode: 'new',
+        ...wsAuthFields(),
+      })
+    } catch {
+      dispatch({ type: 'CANCEL' })
+      showToast(t(lang, 'duelConnectError'))
+    }
+  }, [showToast, lang])
 
   /** Invite link — bot /start deep-link: bot "⚔️ Duelga qo'shilish" tugmasi
       bilan ilovaga o'tkazadi (`#/octagon/duel-xxxx`). Webhook ulangan davrda ishlaydi. */
