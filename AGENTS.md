@@ -139,6 +139,10 @@ server/modules/payments/  # Click (click.service — PREPARE/COMPLETE webhook) +
                            #   FAQAT to'lov completion'da (bekor buyurtma kodni kuydirmaydi);
                            #   premium_days kodlari to'lovda ishlamaydi (400 PROMO_NOT_DISCOUNT — ular Profil'da).
                            #   Webhook URL'lar: /api/payments/click, /api/payments/payme (merchant kabiynetga yoziladi).
+                           #   Webhook'lar PUBLIC_PAYMENT_POST allowlist'da bo'lishi SHART (auth.ts) —
+                           #   2026-08-31 incident: 'payments/payme' qolib ketib prod'da har RPC 401 olgan
+                           #   (telegramAuth credentials talab qiladi, Payme faqat Basic auth yuboradi);
+                           #   desync'ni tests/unit/middleware/auth-public-routes.test.ts ushlaydi.
                            #   GET /api/payments/history (requireAuth, no-store) — user'ning buyurtmalari (50 tagacha,
                            #   yangisi birinchi); client: Profil → "To'lovlar tarixi" PaymentHistorySheet
                            #   (features/profile/components), api.getPaymentHistory

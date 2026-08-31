@@ -105,11 +105,16 @@ const PUBLIC_AUTH_GET_PREFIXES = [
   'auth/verify-email',
 ]
 
-/** Payment provider webhooks — credentials'siz keladi (imzo bilan himoyalangan) */
+/** Payment provider webhooks — credentials'siz keladi (imzo/Basic-auth bilan himoyalangan).
+ *  DIQQAT: bu ro'yxat payment.router.ts bilan sinxron saqlanadi — yangi provider
+ *  webhook'i shu yerga qo'shilmasa prod'da 401 oladi (2026-08-31 incident:
+ *  'payments/payme' qolib ketib Payme kanali butunlay o'lik edi). Desync'ni
+ *  tests/unit/middleware/auth-public-routes.test.ts ushlaydi. */
 const PUBLIC_PAYMENT_POST = new Set([
   'payments/click',
   'payments/click/prepare',
   'payments/click/complete',
+  'payments/payme',
 ])
 
 // `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
