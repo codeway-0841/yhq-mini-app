@@ -612,14 +612,14 @@ export default function TestPage() {
     }
     if (questionsLoading || !questionsLoaded) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-pmuted gap-3">
+        <div className="flex flex-col items-center justify-center min-h-[60vh] text-pmuted gap-3">
           <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
           <p className="text-sm font-semibold">{tt('loadingDots')}</p>
         </div>
       )
     }
     return (
-      <div className="flex items-center justify-center min-h-screen text-pmuted">{tt('notFoundQ')}</div>
+      <div className="flex items-center justify-center min-h-[60vh] text-pmuted">{tt('notFoundQ')}</div>
     )
   }
 
@@ -633,7 +633,7 @@ export default function TestPage() {
   })()
 
   return (
-    <div className="flex flex-col min-h-screen bg-pcanvas">
+    <div className="flex flex-col bg-pcanvas">
       {/* Kichik ekran (<380px, iPhone SE 320) sig'im: 6 tugmali header
           to'lib ketmasligi uchun px/gap/tugma o'lchamlari qisqaradi;
           380px+'dan eski hajm (Playwright-verified: 320px'da timer
