@@ -87,17 +87,20 @@ input, button, select, textarea {
    - Native APK edge-to-edge (targetSdk 36, Capacitor): `env(safe-area-inset-*)`.
    Oddiy TG rejim / brauzer: ikkala manba 0 → padding 0 (ko'rinish O'ZGARMAS). */
 :root {
-  --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px));
-  /* Body kontenti: sof inset (hardware status bar yoki TG header balandligi).
-     Sahifalar o'zining ichki pt-* (masalan pt-3) orqali tabiiy ixcham nafas oladi. */
+  /* Safe-area: Telegram Fullscreen floating tugmalar / status bar balandligi */
+  --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px), var(--tg-safe-area-inset-top, 0px));
   --safe-top-body: var(--safe-top, 0px);
-  /* Pastki xavfsiz zona — Android gesture bar / iPhone home indicator.
-     E'tibor: Android TG fullscreen'da env(safe-area-inset-bottom)=0 bo'lishi
-     mumkin — TG var'i zaxira. Qo'llash: App.tsx pb-[calc(1rem+var(--safe-bottom,0px))]
-     yoki fixed modallarda .safe-bottom. */
+  /* Pastki xavfsiz zona — Android gesture bar / iPhone home indicator */
   --safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-content-safe-area-inset-bottom, 0px));
 }
 body { padding-top: var(--safe-top-body, 0px); }
+
+/* Native APK (Capacitor edge-to-edge): status bar balandligi */
+body[data-platform='native'] {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-top-body: var(--safe-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
 
 /* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen, Darslik viewer —
    fixed inset-0 ICHIDA bo'lgani uchun body padding ularga TEGMAYDI):

@@ -108,4 +108,15 @@ describe('Telegram ichida', () => {
     expect(webApp().openTelegramLink).toHaveBeenCalledWith('https://t.me/x')
     expect(win.open).not.toHaveBeenCalled()
   })
+
+  it('syncTelegramSafeArea: insets mavjud bo\'lganda --safe-top va --safe-bottom o\'rnatadi', async () => {
+    const { syncTelegramSafeArea } = await import('../../../src/platform/telegram')
+    const rootStyle = document.documentElement.style
+
+    const tg = webApp()
+    tg.contentSafeAreaInset = { top: 56, bottom: 34, left: 0, right: 0 }
+    syncTelegramSafeArea()
+    expect(rootStyle.getPropertyValue('--safe-top')).toBe('56px')
+    expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
+  })
 })

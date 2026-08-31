@@ -28,7 +28,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
 
   if (loading) {
     return (
-      <div className="mb-6 px-5">
+      <div className="mb-5 px-4">
         <div className="mb-2.5 flex items-center justify-between">
           <Skeleton className="h-4 w-24" />
           <Skeleton className="h-3 w-16" />
@@ -50,7 +50,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
   if (entries.length === 0) return null
 
   return (
-    <div className="mb-6 px-5">
+    <div className="mb-5 px-4">
       <div className="mb-2.5 flex items-center justify-between">
         <h3 className="font-display text-[16px] font-semibold tracking-[-0.015em] text-pfg">{tt('leaderboard')}</h3>
         <button

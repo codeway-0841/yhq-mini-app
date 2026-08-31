@@ -89,7 +89,7 @@ function RejimlarCarousel({ title, items, allItems, lang }: {
 
   return (
     <div>
-      <div className="flex items-center justify-between px-5 mb-2.5">
+      <div className="flex items-center justify-between px-4 mb-2.5">
         <p className="font-display text-[19px] font-bold tracking-[-0.01em] text-pfg">{title}</p>
         <button onClick={() => setSheetOpen(true)} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
           {lang === 'ru' ? 'Ещё' : 'Yana'}
@@ -97,7 +97,7 @@ function RejimlarCarousel({ title, items, allItems, lang }: {
       </div>
       <div
         ref={ref}
-        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-5 px-5 pb-3 mb-2 touch-pan-x select-none"
+        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 px-4 pb-3 mb-2 touch-pan-x select-none"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' as const, WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' }}
       >
         {items.map((it) => (
@@ -217,7 +217,7 @@ export default function Dashboard() {
         <div key={subject.id} className="animate-premiumIn">
           {/* Demo ma'lumotlar badge */}
           {subject.demoData && (
-            <Alert variant="warning" className="mx-5 mb-4">
+            <Alert variant="warning" className="mx-4 mb-4">
               <AlertDescription>
                 {settings.language === 'ru'
                   ? 'Временные демо-данные — база этого предмета скоро будет подключена'
@@ -239,10 +239,8 @@ export default function Dashboard() {
           {/* 2. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
           <DailyTasksCard />
 
-          {/* 3. HERO CTA — sahifaning YAGONA aksentli amali (rang intizomi:
-              aksent faqat shu yerda). Asosiy harakat grid'dan chiqarildi —
-              bir ekranda bitta qahramon, qolganlari unga bo'ysunadi. */}
-          <div className="mb-5 px-5">
+          {/* 3. HERO CTA — sahifaning YAGONA aksentli amali */}
+          <div className="mb-4 px-4">
             <Button
               size="lg"
               block
@@ -253,9 +251,8 @@ export default function Dashboard() {
             </Button>
           </div>
 
-          {/* 5. Rejimlar — grouped list (uniform karta panjara O'RNIGA):
-              bitta sirt + hairline qatorlar, flat neytral ikonkalar */}
-          <div className="mb-6 px-5">
+          {/* 5. Rejimlar — grouped list */}
+          <div className="mb-5 px-4">
             <ModeList>
               <ModeRow icon={BookOpen} label={tt('topics')} onClick={goTopics} />
               <ModeRow icon={Ticket} label={tt('tickets')} onClick={() => navigate('/biletlar')} />
@@ -310,8 +307,8 @@ export default function Dashboard() {
             />
           </div>
 
-          {/* 8. Premium Banner — Shpargalkadan ajralishi uchun katta oraliq */}
-          <div className="mx-5 mb-6 mt-10 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
+          {/* 8. Premium Banner */}
+          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
             <PremiumIcon size={22} className="shrink-0 text-pmuted" />
             <div className="min-w-0 flex-1">
               <p className="text-[13.5px] font-semibold text-pfg">Premium</p>

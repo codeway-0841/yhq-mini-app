@@ -175,7 +175,7 @@ function Layout() {
         // pb: 1rem bazaviy + --safe-bottom (TG fullscreen/APK'da scroll oxiridagi
         // kontent gesture bar/home indicator ostida qolmasin; oddiy rejimda 0 →
         // ko'rinish O'ZGARMAS). MARKAZIY — barcha sahifalarni qoplaydi.
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-3xl pb-[calc(1rem+var(--safe-bottom,0px))] px-3 sm:px-4"
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(1rem+var(--safe-bottom,0px))] px-0"
       >
         <Suspense fallback={<PageLoader />}>
           <Routes>

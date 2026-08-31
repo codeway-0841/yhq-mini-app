@@ -20,6 +20,13 @@ interface BackButton {
   offClick(cb: () => void): void
 }
 
+interface SafeAreaInset {
+  top: number
+  bottom: number
+  left: number
+  right: number
+}
+
 interface TelegramWebApp {
   ready?(): void
   expand?(): void
@@ -37,10 +44,47 @@ interface TelegramWebApp {
   BackButton?: BackButton
   requestContact?(callback: (ok: boolean, data?: { contact?: { phone_number: string } }) => void): void
   addToHomeScreen?(): void
+  isFullscreen?: boolean
+  safeAreaInset?: SafeAreaInset
+  contentSafeAreaInset?: SafeAreaInset
+  onEvent?(eventType: string, eventHandler: () => void): void
+  offEvent?(eventType: string, eventHandler: () => void): void
+  requestFullscreen?(): void
+  exitFullscreen?(): void
 }
 
 export function getTelegramWebApp(): TelegramWebApp | undefined {
   return (window as { Telegram?: { WebApp?: TelegramWebApp } }).Telegram?.WebApp
+}
+
+/**
+ * Telegram Bot API 8.0 safe-area sinxronizatsiyasi:
+ * - Standart rejimda (isFullscreen=false) webview Telegram header'i ostida boshlanadi,
+ *   shuning uchun tepa safe-area 0px bo'lishi SHART (aks holda header ostida ulkan bo'shliq hosil bo'ladi).
+ * - Fullscreen rejimda (isFullscreen=true) webview to'liq ekranni qoplaydi va floating
+ *   tugmalar ostida qolmaslik uchun contentSafeAreaInset.top ishlatiladi.
+ */
+export function syncTelegramSafeArea(): void {
+  const tg = getTelegramWebApp()
+  if (!tg || typeof document === 'undefined') return
+
+  const apply = () => {
+    const top = tg.contentSafeAreaInset?.top ?? tg.safeAreaInset?.top ?? 0
+    const bottom = tg.contentSafeAreaInset?.bottom ?? tg.safeAreaInset?.bottom ?? 0
+    if (top > 0) {
+      document.documentElement.style.setProperty('--safe-top', `${top}px`)
+    }
+    if (bottom > 0) {
+      document.documentElement.style.setProperty('--safe-bottom', `${bottom}px`)
+    }
+  }
+
+  apply()
+
+  tg.onEvent?.('fullscreen_changed', apply)
+  tg.onEvent?.('fullscreen_failed', apply)
+  tg.onEvent?.('safe_area_changed', apply)
+  tg.onEvent?.('content_safe_area_changed', apply)
 }
 
 /** Telegram initData — har bir API so'rovi bilan server-side verification uchun yuboriladi. */
@@ -56,10 +100,17 @@ export function getStartParam(): string | undefined {
   return getTelegramWebApp()?.initDataUnsafe?.start_param
 }
 
-/** App bootstrap: Telegram'ga "tayyor" signalini berish + to'liq ekranga yoyish. */
+/** App bootstrap: Telegram'ga "tayyor" signalini berish + to'liq ekranga yoyish (fullscreen) + safe-area. */
 export function readyAndExpand(): void {
   const tg = getTelegramWebApp()
-  if (tg) { tg.ready?.(); tg.expand?.() }
+  if (tg) {
+    tg.ready?.()
+    tg.expand?.()
+    try {
+      tg.requestFullscreen?.()
+    } catch (_) {}
+    syncTelegramSafeArea()
+  }
 }
 
 /**

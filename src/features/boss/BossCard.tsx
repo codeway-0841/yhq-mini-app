@@ -78,7 +78,7 @@ export default function BossCard() {
     : { text: `${daysLeft} ${tt('bossDaysLeft')}`, color: 'var(--p-muted)' }
 
   return (
-    <div className="mx-5 mb-6 overflow-hidden rounded-container border border-pline bg-pcard p-4 transition-all">
+    <div className="mx-4 mb-5 overflow-hidden rounded-container border border-pline bg-pcard p-4 transition-all">
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-psubtle">

@@ -102,7 +102,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
 
   return (
     <>
-      <div className="hero-gradient-card mx-5 mb-6 p-5">
+      <div className="hero-gradient-card mx-4 mb-5 p-4 sm:p-5">
         {/* Sarlavha qatori: Bugungi progress (chapda) va Fan tanlash toggle (o'ngda) */}
         <div className="mb-2 flex items-center justify-between gap-2">
           <p className="text-[12.5px] font-medium text-white/80">{tt('todayProgress')}</p>
