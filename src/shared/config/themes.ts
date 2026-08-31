@@ -1,5 +1,5 @@
 /**
- * KIWI Premium TEMALAR (atmosfera) — YAGONA MANBA.
+ * KIVVI Premium TEMALAR (atmosfera) — YAGONA MANBA.
  *
  * Premium tema shunchaki aksent rang almashtirish EMAS — u butun atmosferani
  * o'zgartiradi: fon, karta, border, aksent, progress, glow, chart'lar.
@@ -11,7 +11,7 @@
  *   shart — u yerda --p-* VA --theme-* tokenlar birga override qilinadi
  *   (consistency test tekshiradi).
  * - `color` — CSS dagi --p-primary bilan bir xil bo'lishi kerak (swatch/preview).
- * - `glow` — v3 "Jade & Stone"da glow tizimdan chiqarildi; maydon interfeys
+ * - `glow` — v3'da glow tizimdan chiqarildi; maydon interfeys
  *   barqarorligi uchun qoldi va HAR DOIM false (swatch preview'da halqa yo'q).
  * - `premium: true` temalarni faqat obunachilar tanlaydi YOKI tangaga sotib oladi
  *   (App.tsx dagi resolveAccent free user'ni default'ga qaytaradi — egasiz bo'lsa).
@@ -43,7 +43,12 @@ export interface AccentTheme {
 export const DEFAULT_ACCENT = 'kiwi' as const
 
 export const ACCENT_THEMES: AccentTheme[] = [
-  { id: 'kiwi',     label: { uz: 'Jade & Stone (standart)', ru: 'Jade & Stone (стандарт)' }, color: '#0fa47f', bg: '#0d1117', card: '#161b22', glow: false, premium: false },
+  // DIQQAT: id 'kiwi' TARIXIY — persist settings, shop egaligi (user_items) va
+  // sounds THEME_FREQ shu id'ga bog'langan, SHUNING UCHUN O'ZGARMAYDI.
+  // Lekin RANGI 2026-08-31 rebrending bilan KIVVI Blue (#1a81fc) — eski yashil
+  // default'dan o'tildi; mavjud userlar (persist'da accent:'kiwi') avtomatik
+  // ko'k aksent oladi, migratsiya shart emas.
+  { id: 'kiwi',     label: { uz: 'KIVVI Blue (standart)', ru: 'KIVVI Blue (стандарт)' }, color: '#1a81fc', bg: '#0d1117', card: '#161b22', glow: false, premium: false },
   { id: 'obsidian', label: { uz: 'Linear Tech',             ru: 'Linear Tech'             }, color: '#3b82f6', bg: '#08090a', card: '#111215', glow: false, premium: true  },
   { id: 'neo',      label: { uz: 'Gamified Neo',            ru: 'Gamified Neo'            }, color: '#22c55e', bg: '#0f172a', card: '#1e293b', glow: false, premium: true  },
   { id: 'nordic',   label: { uz: 'Nordic Glass',            ru: 'Nordic Glass'            }, color: '#38bdf8', bg: '#0c1017', card: '#131924', glow: false, premium: true  },
@@ -78,7 +83,7 @@ export function getAccentTheme(id: string): AccentTheme {
  *  - Egalik (coin'ga sotib olingan) HAR QANDAY temani ochadi (premium ham).
  *  - Premium tema: isPremium YOKI egalik.
  *  - Coin-eksklyuziv (premium:false + shop'da bor): FAQAT egalik.
- *  - Oddiy free (shop'da yo'q, premium emas — faqat default kiwi): doim ochiq.
+ *  - Oddiy free (shop'da yo'q, premium emas — faqat default 'kiwi' id'li tema): doim ochiq.
  * `ownedIds` — user_items'dagi item id'lar (shared/shop-items id'lari = tema id).
  */
 export function isAccentUnlocked(

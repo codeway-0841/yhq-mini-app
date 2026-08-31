@@ -72,7 +72,7 @@ router.post(
     // 2. Base64 to Buffer
     const cleanBase64 = imageBase64.replace(/^data:image\/\w+;base64,/, '')
     const buffer = Buffer.from(cleanBase64, 'base64')
-    const fileName = `kiwi-certificate-${certId}.png`
+    const fileName = `kivvi-certificate-${certId}.png`
 
     // 3. Telegram Bot orqali to'g'ridan-to'g'ri yuborish
     try {

@@ -23,7 +23,7 @@
   --theme-shadow:      #000000;
 
   /* RGB triplet — Tailwind opacity modifier (bg-[rgb(var(--p-primary-rgb)/X)] ...) uchun */
-  --p-primary-rgb: 15 164 127;
+  --p-primary-rgb: 26 129 252;
 }
 
 body[data-theme='light'] {
@@ -127,7 +127,7 @@ body[data-theme='light'] .hero-gradient-card {
 
 /* Skeleton sweep (ui/skeleton.tsx) — `prefers-reduced-motion` da motion-safe:
    varianti orqali o'chadi, blok o'zi qoladi. */
-@keyframes kiwi-sweep {
+@keyframes brand-sweep {
   from { transform: translateX(-100%); }
   to   { transform: translateX(100%); }
 }
@@ -216,7 +216,7 @@ body[data-theme='light'] .hero-gradient-card {
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v3 "Jade & Stone" — sovuq-neytral grafit fon (#0d1117), jade yashil aksent (#0fa47f) */
+  /* v3 — sovuq-neytral grafit fon (#0d1117), KIVVI brend ko'k aksent (#1a81fc) */
   --p-canvas:      #0d1117;
   --p-card:        #161b22;
   --p-surface:     #1c222b;
@@ -227,11 +227,11 @@ body[data-theme='light'] .hero-gradient-card {
   --p-muted:       #a8a29e;   /* Secondary text */
   --p-subtle:      #78716c;   /* Tertiary text */
   --p-disabled:    #57534e;   /* Disabled text */
-  --p-link:        #0fa47f;   /* Link */
+  --p-link:        #4da3ff;   /* Link */
 
-  /* Aksent — Jade Green (data-accent bilan almashadi) */
-  --p-primary:     #0fa47f;
-  --p-on-primary:  #04140f;
+  /* Aksent — KIVVI Blue (data-accent bilan almashadi) */
+  --p-primary:     #1a81fc;
+  --p-on-primary:  #ffffff;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
   /* Semantik ranglar — AKSENTDAN ALOHIDA, faqat status uchun */
@@ -268,7 +268,7 @@ body[data-theme='light'] .hero-gradient-card {
    override qiladi (`body[data-accent='ocean']`). Custom property boshqa
    custom property'ga murojaat qilsa, u O'ZI E'LON QILINGAN elementda
    hisoblanadi — ko'prik `:root`da tursa, body'dagi override'ni ko'rmasdan
-   default jade'da qotib qolardi. */
+   default aksentda qotib qolardi. */
 body {
   --p-wash:             rgb(var(--p-primary-rgb) / 0.12);  /* tanlangan/active holat foni */
 
@@ -300,11 +300,11 @@ body[data-theme='light'] {
   --p-muted:       #475569;
   --p-subtle:      #64748b;
   --p-disabled:    #94a3b8;
-  --p-link:        #0d9488;
+  --p-link:        #1a81fc;
 
-  /* Aksent yorug' fonda to'yingan va yorqin Jade */
-  --p-primary:     #0d9488;
-  --p-primary-rgb: 13 148 136;
+  /* Aksent yorug' fonda to'yingan brend ko'ki */
+  --p-primary:     #1a81fc;
+  --p-primary-rgb: 26 129 252;
   --p-on-primary:  #ffffff;
   --p-glow:        transparent;
 

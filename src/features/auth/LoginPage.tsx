@@ -283,9 +283,10 @@ export default function LoginPage() {
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full bg-pprimary/10 blur-[130px] pointer-events-none" />
 
         <div className="relative w-full max-w-[400px] animate-premiumIn">
-          {/* Brend */}
-          <div className="text-center mb-6 font-display text-[26px] font-bold tracking-tight text-pfg">
-            KI<span className="text-pprimary">WI</span>
+          {/* Brend — K badge + wordmark (landing bilan bir xil assetlar) */}
+          <div className="flex items-center justify-center gap-2.5 mb-6">
+            <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
+            <img src="/images/brand-wordmark.webp" alt="kivvi" width={96} height={28} className="h-6 w-auto" />
           </div>
 
           <div className="rounded-sheet border border-pline bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">

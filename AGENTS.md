@@ -111,7 +111,7 @@ APK build uchun prod API'ni `npm run build` DAN OLDIN `.env.local`ga yozing
    - MCP mavjud bo'lmasa HTTP API fallback: search `https://context7.com/api/v1/search?query=<lib>`, docs `https://context7.com/<owner>/<repo>/llms.txt?topic=<mavzu>&tokens=<n>`
    - Bitta query = bitta mavzu (ko'p mavzuli savolni alohida query'larga bo'ling); versiya muhim bo'lsa ID'dagi versiyani tanlang.
 
-## Dizayn tizimi (v2 "KIWI Premium")
+## Dizayn tizimi (v2 "KIVVI Premium")
 
 ```
 src/index.css          # Tokenlar: --p-* (yangi) + --theme-* (legacy alias, ikkalasi sinxron)

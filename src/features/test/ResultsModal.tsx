@@ -85,7 +85,7 @@ export default function ResultsModal({
       })
 
       const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'))
-      const file = blob ? new File([blob], `kiwi-result-${percent}pct.png`, { type: 'image/png' }) : null
+      const file = blob ? new File([blob], `kivvi-result-${percent}pct.png`, { type: 'image/png' }) : null
 
       // 1) Haqiqiy Web Share (brauzer va ba'zi WebView'larda)
       if (file && navigator.canShare?.({ files: [file] })) {
@@ -103,7 +103,7 @@ export default function ResultsModal({
         const res = await api.sendShareImage({
           imageBase64: canvas.toDataURL('image/png'),
           caption:     `${shareText}\n${link}`,
-          fileName:    `kiwi-result-${percent}pct.png`,
+          fileName:    `kivvi-result-${percent}pct.png`,
         })
         if (res.sentToTelegram) {
           playSound('win')

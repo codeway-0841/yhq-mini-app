@@ -114,7 +114,7 @@ export default function CertificateModal({ score, total, percent, sample = false
 
     try {
       const dataUrl = canvasRef.current.toDataURL('image/png')
-      const fileName = `kiwi-certificate-${certId}.png`
+      const fileName = `kivvi-certificate-${certId}.png`
       const blob = dataUrlToBlob(dataUrl)
       const file = new File([blob], fileName, { type: 'image/png' })
 

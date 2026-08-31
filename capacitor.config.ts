@@ -22,8 +22,8 @@ const navigableHosts = Array.from(new Set([
 ].filter((h): h is string => Boolean(h)))
 
 const config: CapacitorConfig = {
-  appId: 'uz.kiwi.yhq',
-  appName: 'KIWI',
+  appId: 'uz.kiwi.yhq',   // Play Store identity — O'ZGARMAYDI (yangi app bo'lib qolardi)
+  appName: 'KIVVI',
   webDir: 'dist',
   server: {
     // https scheme → WebView origin'i "https://localhost" (server CORS'da ruxsat etilgan)

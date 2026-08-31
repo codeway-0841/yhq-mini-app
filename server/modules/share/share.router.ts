@@ -79,7 +79,7 @@ router.post(
 
     try {
       const bot = new Bot(token)
-      await bot.api.sendPhoto(tgId, new InputFile(buffer, fileName ?? 'kiwi-share.png'), { caption })
+      await bot.api.sendPhoto(tgId, new InputFile(buffer, fileName ?? 'kivvi-share.png'), { caption })
       res.json({ ok: true, sentToTelegram: true })
     } catch (err) {
       console.error('[share/image bot send error]', err)

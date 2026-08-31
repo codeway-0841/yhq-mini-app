@@ -12,9 +12,9 @@ function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>)
       className={cn(
         'relative overflow-hidden rounded-[7px] bg-pline',
         // `after:content-['']` SHART — busiz pseudo-element umuman chizilmaydi.
-        // Keyframes `kiwi-sweep` src/index.css da.
+        // Keyframes `brand-sweep` src/index.css da.
         "motion-safe:after:content-[''] motion-safe:after:absolute motion-safe:after:inset-0",
-        'motion-safe:after:animate-[kiwi-sweep_1.5s_cubic-bezier(0.2,0,0,1)_infinite]',
+        'motion-safe:after:animate-[brand-sweep_1.5s_cubic-bezier(0.2,0,0,1)_infinite]',
         'motion-safe:after:bg-gradient-to-r motion-safe:after:from-transparent motion-safe:after:via-plineStrong motion-safe:after:to-transparent',
         className,
       )}
