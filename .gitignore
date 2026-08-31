@@ -39,6 +39,10 @@ playwright-report/
 test-results/
 coverage/
 *.png
+# Lekin public/ dagi brand asset'lar (favicon, fan ikonkalari) TRACKED bo'lishi
+# SHART — aks holda Vercel deploy'da 404 bo'ladi (2026-08-31: favicon PNG'lar
+# jimgina ignore bo'lib qolgandi).
+!public/**/*.png
 .idea/
 .jdks/
 
