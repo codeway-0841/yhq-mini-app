@@ -492,6 +492,21 @@ export default function App() {
     }
   }, [syncFromServer])
 
+  // Boot'dan keyin IDLE vaqtda barcha route chunk'larini yuklab qo'yish (navigatsiya flash fix)
+  useEffect(() => {
+    if (!initialized) return
+    const id = 'requestIdleCallback' in window
+      ? (window as unknown as { requestIdleCallback: (cb: () => void) => number }).requestIdleCallback(prefetchRouteChunks)
+      : setTimeout(prefetchRouteChunks, 200)
+    return () => {
+      if ('cancelIdleCallback' in window && typeof id === 'number') {
+        (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(id)
+      } else {
+        clearTimeout(id as ReturnType<typeof setTimeout>)
+      }
+    }
+  }, [initialized])
+
   const finishOnboarding = () => {
     try { localStorage.setItem('yhq-onboarded', '1') } catch { /* ignore */ }
     setOnboarded(true)
