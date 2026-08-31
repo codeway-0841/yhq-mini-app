@@ -424,8 +424,6 @@ export const progressRepository = {
       totalAnswered:   0,
       streak:          0,
       wrongByTicket:   {},
-      solvedQuestions: [],
-      correctQuestions: [],
       updatedAt:       new Date(),
     }).where(eq(progress.userId, userId))
   },

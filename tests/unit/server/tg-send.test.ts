@@ -32,6 +32,7 @@ import {
   getRetryAfterSeconds,
   TelegramThrottleError,
 } from '../../../server/utils/tg-send'
+import { config } from '../../../server/config'
 
 /** GrammyError 429 imitatsiyasi (real xato shape'i) */
 function floodWait(retryAfter: number): GrammyError {
@@ -46,8 +47,10 @@ function floodWait(retryAfter: number): GrammyError {
 beforeEach(() => {
   h.sendMessage.mockReset().mockResolvedValue({ message_id: 1 })
   h.sendPhoto.mockReset().mockResolvedValue({ photo: [{ file_id: 'fid_1' }] })
-  // BOT_TOKEN kerak (getBot) — test config'i .env'dan o'qiydi, lekin kafolat uchun:
-  process.env['BOT_TOKEN'] ??= '123:test-token'
+  // BOT_TOKEN kerak (getBot) — config import-paytida parse qiladi; CI'da env
+  // BO'LMAYDI, shuning uchun runtime mutate (call-time o'qiladi). Mahalliy
+  // .env'ga bog'liq bo'lmaslik uchun HAR DOIM yozamiz (??= EMAS).
+  ;(config.telegram as { botToken?: string }).botToken = '123:test-token'
 })
 
 describe('getRetryAfterSeconds', () => {

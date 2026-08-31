@@ -7,7 +7,9 @@ import { Router } from 'express'
 import { z } from 'zod'
 import { wrap } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
-import { rateLimit } from '../../middleware/rate-limiter'
+// M-8 (audit): multi-instance umumiy limiter (prod'da Neon counter) — in-memory
+// per-instance limiter Vercel'da N replica × limit bergan edi.
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { analyticsRepository } from './analytics.repository'
 import { parseUserId } from '../../utils/parse'
 
@@ -21,10 +23,10 @@ const EventSchema = z.object({
   ),
 })
 
-// POST /api/analytics — rate limited, prod'da auth (dev'da ochiq)
+// POST /api/analytics — rate limited (prod'da DB counter), prod'da auth (dev'da ochiq)
 router.post(
   '/analytics',
-  rateLimit({ maxPerMinute: 60 }),
+  rateLimit({ maxPerMinute: 60, bucket: 'analytics' }),
   validate({ body: EventSchema }),
   wrap(async (req, res) => {
     const { event, props } = req.body as z.infer<typeof EventSchema>

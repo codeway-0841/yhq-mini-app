@@ -16,7 +16,7 @@ import { z } from 'zod'
 import { randomBytes, randomUUID } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
-import { executeRows, transaction, transactionHttp, neonRaw, type DB } from '../../db/connection'
+import { executeRows, transactionBestEffort, transactionHttp, neonRaw, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { issueSession } from './session-issuer'
@@ -259,7 +259,7 @@ async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?
     }
     return ok
   }
-  return txOrDb ? runInTx(txOrDb) : transaction(runInTx)
+  return txOrDb ? runInTx(txOrDb) : transactionBestEffort(runInTx)
 }
 
 /**
@@ -295,7 +295,7 @@ async function absorbEmptyAccount(cur: string, other: string, txOrDb?: DB): Prom
     `, tx)
     return Number(rows[0]?.idn) > 0 && Number(rows[0]?.del) > 0
   }
-  return txOrDb ? runInTx(txOrDb) : transaction(runInTx)
+  return txOrDb ? runInTx(txOrDb) : transactionBestEffort(runInTx)
 }
 
 // ── Service ──────────────────────────────────────────────────────────────────
@@ -531,7 +531,7 @@ export const authService = {
       throw new AppError(401, 'invalid_credentials')
     }
 
-    await transaction(async (tx) => {
+    await transactionBestEffort(async (tx) => {
       const stats = await accountStats([currentUserId, otherId], tx)
       const curEmpty   = isEmptyAccount(stats.get(currentUserId))
       const otherEmpty = isEmptyAccount(stats.get(otherId))
@@ -582,7 +582,7 @@ export const authService = {
    * Qaytaradi { status, message } — message UZ tilida bot reply sifatida yuboriladi.
    */
   async linkTelegramByCode(code: string, tg: { id: number }): Promise<{ status: 'linked' | 'conflict' | 'invalid'; message: string }> {
-    return transaction(async (tx) => {
+    return transactionBestEffort(async (tx) => {
       const userId = await authRepository.consumeLinkCode(code, tx)
       if (!userId) {
         return { status: 'invalid', message: '❌ Kod eskirgan yoki allaqachon ishlatilgan — APK/brauzerdan yangi kod oling.' }
@@ -670,7 +670,7 @@ export const authService = {
     const passwordHash = hashPassword(input.password)
 
     // Create user + identity atomically in transaction (prevents orphan users on race)
-    await transaction(async (tx) => {
+    await transactionBestEffort(async (tx) => {
       await usersRepository.initAtomic({
         id: userId,
         firstName: input.firstName.trim(),

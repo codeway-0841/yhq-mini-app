@@ -163,8 +163,11 @@ export class OctagonSocket {
       this.ws.send(JSON.stringify(msg))
       return
     }
-    // Ulanish jarayonida — navbatga qo'shib, onopen bo'lgach jo'natamiz
+    // Ulanish jarayonida — navbatga qo'shib, onopen bo'lgach jo'natamiz.
+    // L-7 (audit): cap 50 + drop-oldest — socket hech ochilmasa (offline
+    // deadlock) navbat cheksiz o'sib xotirani yemasligi uchun.
     this.sendQueue.push(msg)
+    if (this.sendQueue.length > 50) this.sendQueue.splice(0, this.sendQueue.length - 50)
     if (!this.ws || this.ws.readyState === WebSocket.CLOSED || this.ws.readyState === WebSocket.CLOSING) {
       this.connect()
     }

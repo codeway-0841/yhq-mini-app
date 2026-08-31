@@ -10,6 +10,13 @@ services:
     buildCommand: npm ci --include=dev && npm run build:server
     startCommand: node server/dist/index.js
     healthCheckPath: /health
+    # KRITIK (audit L-8): octagon matchmaking/duel holati FAQAT IN-MEMORY —
+    # bu servis HECH QACHON 1 instance'dan oshmasligi kerak (`numInstances: 1`).
+    # 2+ instance'da navbat/duel'lar instance'lar orasida JIMGINA bo'linib qoladi
+    # (bir instance'dagi o'yinchi ikkinchisidagini ko'rmaydi). Redeploy'da jonli
+    # match'lar uziladi (client'lar rejoin qiladi — grace window).
+    # Ko'p instance'ga o'tish kerak bo'lsa — avval Redis/DB-backed matchmaking.
+    numInstances: 1
     envVars:
       - key: NODE_ENV
         value: production

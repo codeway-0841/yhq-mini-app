@@ -18,6 +18,11 @@ import { stopAllIntervals } from './utils/shutdown'
 
 const app    = createApp()
 const server = http.createServer(app)
+// L-6 (audit): slow-loris himoyasi — header'lar 10s ichida to'liq kelishi SHART
+// (Node default 60s juda bo'sh; minglab yarim-ochiq socket fd'ni tugatardi).
+// requestTimeout'ga TEGILMAYDI (Node default 300s) — admin bulk-import kabi
+// uzoq so'rovlar (~90s) sinib qolmasligi uchun.
+server.headersTimeout = 10_000
 const wss    = new WebSocketServer({ server, path: '/ws/octagon', maxPayload: 16 * 1024 })
 
 /** Graceful shutdown — close listeners, finish in-flight requests, exit.

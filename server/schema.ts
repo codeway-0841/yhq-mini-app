@@ -330,16 +330,9 @@ export const progress = pgTable('progress', {
   totalAnswered: integer('total_answered').default(0).notNull(),
   streak:        integer('streak').default(0).notNull(),
   wrongByTicket: jsonb('wrong_by_ticket').$type<Record<string, number>>().default({}).notNull(),
-  /** @deprecated P2 (audit): jsonb massivlar quadratic rewrite edi — endi
-   *  `progress_questions` jadvalida (O(1) upsert). Ustunlar eski data uchun
-   *  saqlanadi, endi YOZILMAYDI (backfill: migration 0043). */
-  solvedQuestions: jsonb('solved_questions').$type<string[]>().default([]).notNull(),
-  /** @deprecated `progress_questions.correct = true` ishlatiladi (anti-farm gate) */
-  correctQuestions: jsonb('correct_questions').$type<string[]>().default([]).notNull(),
-  /** @deprecated Streak endi `daily_streaks` jadvalida (fan bo'yicha). Ustun eski migratsiyalar bilan moslik uchun saqlanadi. */
-  dailyStreak:   integer('daily_streak').default(0).notNull(),
-  /** @deprecated `daily_streaks.last_daily_date` ishlatiladi */
-  lastDailyDate: text('last_daily_date'),
+  // L-5 (audit 2026-08-31): deprecated ustunlar O'CHIRILDI (migration 0057):
+  //  - solved_questions / correct_questions → `progress_questions` jadvali (P2 backfill 0043)
+  //  - daily_streak / last_daily_date       → `daily_streaks` jadvali (fan bo'yicha)
   /** Oktagon (PvP) g'alabalar soni — WS server match yakunida yozadi (Yutuqlar) */
   octagonWins:  integer('octagon_wins').default(0).notNull(),
   /** Haftalik liga darajasi — cron har dushanba 30% otiradi/tushiradi */

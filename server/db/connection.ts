@@ -61,17 +61,23 @@ export async function executeRows<T = Record<string, unknown>>(query: SQL, txOrD
 }
 
 /**
- * Run callback in explicit transaction (isolated connection).
+ * M-7 (audit 2026-08-31): NOM O'ZGARTIRILDI (`transaction` → `transactionBestEffort`).
+ * Eski nom yolg'on ACID kafolati tuyg'usi berardi — kelajakdagi dasturchi
+ * multi-statement oqimni "xavfsiz" deb ishonib yozishi mumkin edi (Neon'da
+ * jimgina race condition).
  *
  * DRIVER BEHAVIOR:
- * - postgres-js: `client.begin()` → dedicated connection, haqiqiy ACID tx.
- * - neon-http: drizzle neon-http `db.transaction()` QO'LLAB-QUVVATLAMAYDI
+ * - postgres-js (lokal/CI): `client.begin()` → dedicated connection, HAQIQIY ACID tx.
+ * - neon-http (PROD): drizzle neon-http `db.transaction()` QO'LLAB-QUVVATLAMAYDI
  *   (stateless HTTP). Callback umumiy `db` ustida IZOLYATSIYASIZ yuradi —
  *   shu sababli barcha multi-step oqimlar BITTA atomik CTE bo'lishi SHART
  *   (guard'lar SQL ichida). 2+ statement'ga ajralib ketadigan atomik
  *   bloklar uchun `transactionHttp()` dan foydalaning.
+ *
+ * QOIDA: yangi kod FAQAT (a) bitta atomik CTE yoki (b) `transactionHttp`
+ * ishlatishi kerak. Bu funksiya faqat legacy call-site'lar uchun saqlanadi.
  */
-export async function transaction<T>(callback: (tx: DB) => Promise<T>): Promise<T> {
+export async function transactionBestEffort<T>(callback: (tx: DB) => Promise<T>): Promise<T> {
   if (!isNeon && instance && typeof (instance as any).transaction === 'function') {
     return (instance as any).transaction(callback)
   }
