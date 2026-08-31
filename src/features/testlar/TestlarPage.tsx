@@ -95,7 +95,7 @@ export default function TestlarPage() {
   }
 
   return (
-    <div className="px-4 pt-4 pb-8 min-h-screen">
+    <div className="px-4 pt-3">
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">

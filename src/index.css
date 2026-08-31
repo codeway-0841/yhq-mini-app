@@ -88,30 +88,16 @@ input, button, select, textarea {
    Oddiy TG rejim / brauzer: ikkala manba 0 → padding 0 (ko'rinish O'ZGARMAS). */
 :root {
   --safe-top: max(env(safe-area-inset-top, 0px), var(--tg-content-safe-area-inset-top, 0px));
-  /* Body kontenti: inset + (inset mavjud bo'lgandagina) 16px nafas —
-     min() "shartli" qo'shimcha: inset=0'da 0 qaytaradi (oddiy rejim/brauzer
-     OLDINGI ko'rinishda qoladi), inset>0'da +16px. 16px sababi: TG floating
-     tugmalarning (⌄ ⋮) pill-foni/soyasi hisobga kiritilgan inset'dan BIROZ
-     PASTROQQA oqadi — +10px'da app tugmalari ularga "yopishib" ko'rinardi
-     (2026-09-01 fullscreen incident). Sticky header'lar ham SHU o'zgaruvchiga
-     teng bo'lsin (body content-top bilan bir chiziqqa). */
-  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 16px));
+  /* Body kontenti: sof inset (hardware status bar yoki TG header balandligi).
+     Sahifalar o'zining ichki pt-* (masalan pt-3) orqali tabiiy ixcham nafas oladi. */
+  --safe-top-body: var(--safe-top, 0px);
   /* Pastki xavfsiz zona — Android gesture bar / iPhone home indicator.
      E'tibor: Android TG fullscreen'da env(safe-area-inset-bottom)=0 bo'lishi
-     mumkin — TG var'i zaxira. Qo'llash: .safe-bottom class'i yoki
-     bottom-[calc(<bazaviy>+var(--safe-bottom,0px))] (fixed elementlar). */
+     mumkin — TG var'i zaxira. Qo'llash: App.tsx pb-[calc(1rem+var(--safe-bottom,0px))]
+     yoki fixed modallarda .safe-bottom. */
   --safe-bottom: max(env(safe-area-inset-bottom, 0px), var(--tg-content-safe-area-inset-bottom, 0px));
 }
 body { padding-top: var(--safe-top-body, 0px); }
-
-/* Native APK (Capacitor edge-to-edge): tepada TG floating tugmalari YO'Q —
-   faqat status bar. Shuning uchun nafas 16px EMAS, 8px: kontent status bar
-   ostida ZIXIROQ turadi (2026-09-01 osonprava-vs-biznik taqqoslash: APK'da
-   +16px ortiqcha bo'sh zolima ko'rinardi). body[data-platform=native]
-   marker'ini applyNativeChrome (platform/native.ts) yozadi. */
-body[data-platform='native'] {
-  --safe-top-body: calc(var(--safe-top, 0px) + min(var(--safe-top, 0px), 8px));
-}
 
 /* Fullscreen overlay headerlari (ModesSheet, AchievementsScreen, Darslik viewer —
    fixed inset-0 ICHIDA bo'lgani uchun body padding ularga TEGMAYDI):

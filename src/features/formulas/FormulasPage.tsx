@@ -106,9 +106,9 @@ export default function FormulasPage() {
   const favItems = useMemo(() => ALL.filter((x) => favs.includes(x.id)), [favs])
 
   return (
-    <div className="font-display min-h-screen bg-pcanvas pb-6 safe-bottom">
+    <div className="font-display bg-pcanvas">
       {/* Header */}
-      <div className="flex items-center gap-3 px-5 pt-4 pb-3">
+      <div className="flex items-center gap-3 px-5 pt-3 pb-3">
         <button type="button" onClick={() => goBack(navigate)} aria-label="back"
           className="w-9 h-9 rounded-control rounded-container border border-pline bg-pcard flex items-center justify-center flex-shrink-0 cursor-pointer">
           <ChevronLeft size={18} className="text-pmuted" />

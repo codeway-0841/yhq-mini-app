@@ -131,7 +131,7 @@ export default function AdaptivePage() {
 
   if (!q) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen gap-4 text-pmuted px-4">
+      <div className="flex flex-col items-center justify-center min-h-[60vh] py-8 gap-4 text-pmuted px-4">
         <Brain size={40} className="text-pprimary" />
         <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
 
@@ -171,7 +171,7 @@ export default function AdaptivePage() {
   const answered = selectedOption !== null
 
   return (
-    <div className="flex flex-col min-h-screen bg-pcanvas">
+    <div className="flex flex-col bg-pcanvas">
       <div className="flex items-center justify-between px-4 py-3 border-b border-pline">
         <button onClick={() => goBack(navigate)} className="text-pmuted p-1"><X size={20} /></button>
         <div className="flex items-center gap-2">
@@ -181,7 +181,7 @@ export default function AdaptivePage() {
         <span className="text-xs text-pmuted">{sessionCount} {tt('qAnswered')}</span>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-4 pt-4 pb-24">
+      <div className="flex-1 overflow-y-auto px-4 pt-4 pb-6">
         <div className="flex items-center justify-between mb-3">
           <span className="text-xs text-pmuted">
             {(() => {

@@ -51,7 +51,7 @@ export default function SearchPage() {
   const isEmpty = results !== null && !hasAny
 
   return (
-    <div className="px-4 pt-4 pb-6 min-h-screen">
+    <div className="px-4 pt-3">
       {/* Header: back + input */}
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}

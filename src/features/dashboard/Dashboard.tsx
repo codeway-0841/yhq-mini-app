@@ -194,7 +194,7 @@ export default function Dashboard() {
   }, [savedQuestions, subject.id, settings.language, navigate, tt, showToast])
 
   return (
-    <div className="dashboard-page route-page min-h-screen bg-pcanvas pb-6 safe-bottom">
+    <div className="dashboard-page bg-pcanvas">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">

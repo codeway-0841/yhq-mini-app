@@ -92,9 +92,9 @@ export default function StatistikaPage() {
     navigate('/test/1', { state: { questionIds: ids, title } })
 
   return (
-    <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
+    <div className="font-display bg-pcanvas text-pfg">
       {/* Header */}
-      <div className="flex items-center gap-2 px-5 pt-5 pb-2">
+      <div className="flex items-center gap-2 px-5 pt-3 pb-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="text-psubtle hover:text-pfg px-1 transition-colors">
           <ChevronLeft size={24} />

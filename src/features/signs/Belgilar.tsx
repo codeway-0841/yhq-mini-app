@@ -348,7 +348,7 @@ export default function Belgilar() {
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
   return (
-    <div className="route-page px-5 pb-6 pt-4 min-h-screen">
+    <div className="px-5 pt-3">
       {!selectedCategory && (
         <>
           <div className="flex items-center gap-2 mb-4">

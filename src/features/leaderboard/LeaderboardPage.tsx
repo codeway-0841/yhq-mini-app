@@ -205,13 +205,13 @@ export default function LeaderboardPage() {
   const restEntries = hasTop3 ? entriesList.slice(3) : entriesList
 
   return (
-    <div className="min-h-screen pb-24">
+    <div>
       {/* ── Top Bar: Orqaga tugmasi & Markaziy "Leaderboard" sarlavhasi ── */}
-      <div className="relative flex items-center justify-center px-4 pt-5 pb-3">
+      <div className="relative flex items-center justify-center px-4 pt-3 pb-3">
         <button
           onClick={() => goBack(navigate)}
           aria-label={tt('backWord')}
-          className="absolute left-4 top-5 grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="absolute left-4 top-3 grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <ChevronLeft size={22} strokeWidth={2.2} />
         </button>

@@ -212,11 +212,11 @@ export default function ShopPage() {
   } as Record<string, string>)[reason] ?? reason
 
   return (
-    <div className="font-display min-h-screen bg-pcanvas text-pfg pb-10">
+    <div className="font-display bg-pcanvas text-pfg">
       {celebrate && <Confetti count={40} />}
 
       {/* Header */}
-      <div className="flex items-center gap-2 px-5 pt-5 pb-2">
+      <div className="flex items-center gap-2 px-5 pt-3 pb-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
           className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg">
           <ChevronLeft size={20} strokeWidth={1.75} />

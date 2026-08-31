@@ -150,7 +150,7 @@ export default function Profil() {
   }
 
   return (
-    <div className="pt-4 pb-8 safe-bottom">
+    <div className="pt-3">
       {/* ← Back */}
       <div className="mb-1 px-5">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}

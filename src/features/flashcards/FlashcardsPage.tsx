@@ -99,7 +99,7 @@ export default function FlashcardsPage() {
   // ── Kategoriya tanlash ──
   if (!cat) {
     return (
-      <div className="font-display min-h-screen bg-pcanvas text-pfg px-5 pt-5 pb-8">
+      <div className="font-display bg-pcanvas text-pfg px-5 pt-3">
         <div className="flex items-center gap-2 mb-5">
           <button onClick={() => goBack(navigate)} aria-label={isRu ? 'Назад' : 'Orqaga'}
             className="text-psubtle hover:text-pfg px-1 transition-colors">
@@ -151,7 +151,7 @@ export default function FlashcardsPage() {
   // ── Yakun ekrani ──
   if (done) {
     return (
-      <div className="font-display min-h-screen bg-pcanvas text-pfg flex flex-col items-center justify-center px-6 text-center">
+      <div className="font-display bg-pcanvas text-pfg flex flex-col items-center justify-center min-h-[60vh] px-6 text-center">
         <PartyPopper size={48} strokeWidth={1.5} className="mb-4 text-pprimary" />
         <h2 className="font-display text-[22px] font-semibold tracking-[-0.015em] mb-2">
           {isRu ? 'Дек пройден!' : 'Dek tugadi!'}
@@ -185,8 +185,8 @@ export default function FlashcardsPage() {
 
   // ── Karta ekrani ──
   return (
-    <div className="font-display min-h-screen bg-pcanvas text-pfg flex flex-col pb-6">
-      <div className="flex items-center justify-between px-5 pt-5">
+    <div className="font-display bg-pcanvas text-pfg flex flex-col pt-3">
+      <div className="flex items-center justify-between px-5">
         <button onClick={() => setCat(null)} aria-label={isRu ? 'Назад' : 'Orqaga'}
           className="grid size-11 place-items-center rounded-control text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />

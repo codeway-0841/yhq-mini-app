@@ -146,7 +146,7 @@ export default function SpeedPage() {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-pcanvas font-display text-pfg">
+    <div className="flex flex-col bg-pcanvas font-display text-pfg">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-pline">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1">
@@ -177,7 +177,7 @@ export default function SpeedPage() {
       </div>
 
       {/* Savol */}
-      <div className="flex-1 overflow-y-auto px-4 pt-2 pb-24">
+      <div className="flex-1 overflow-y-auto px-4 pt-2 pb-6">
         <p className="text-[11px] font-semibold text-psubtle text-center mb-2 uppercase tracking-wide">
           {lang === 'ru' ? `${idx + 1} из ${qs.length}` : `${idx + 1} / ${qs.length}`}
         </p>

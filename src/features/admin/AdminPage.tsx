@@ -41,7 +41,7 @@ export default function AdminPage() {
   ]
 
   return (
-    <div className="font-display min-h-screen bg-pcanvas text-pfg pb-20">
+    <div className="font-display bg-pcanvas text-pfg pb-6">
       {/* Top Header */}
       {/* Sticky header — FAQAT bg'siz-shaffof EMAS (opaque): scroll'da ostidan
           o'tayotgan kontent /90 fonda "qanab" ko'rinardi. top=--safe-top-body

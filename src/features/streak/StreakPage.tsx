@@ -92,7 +92,7 @@ export default function StreakPage() {
   const weeks  = tt('weekdaysList').split('|')
 
   return (
-    <div className="px-5 pt-4 pb-10">
+    <div className="px-5 pt-3">
       {/* Header */}
       <div className="flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}

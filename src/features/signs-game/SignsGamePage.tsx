@@ -276,7 +276,7 @@ export default function SignsGamePage() {
   const bestMatch = readBest(BEST_MATCH_KEY)
 
   return (
-    <div className="font-display min-h-screen bg-pcanvas text-pfg px-5 pt-5 pb-10">
+    <div className="font-display bg-pcanvas text-pfg px-5 pt-3">
       <div className="flex items-center gap-2 mb-5">
         <button onClick={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))} aria-label="Orqaga"
           className="text-psubtle hover:text-pfg px-1 transition-colors">
