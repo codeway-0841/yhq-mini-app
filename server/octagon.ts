@@ -1056,6 +1056,9 @@ export function attachOctagon(
       return
     }
     connsByIp.set(ip, ipCount + 1)
+    // Diagnostika (Render log'larida WS transport muammolarini ko'rish uchun):
+    // 'connection' otdi, lekin xabarlar kelyaptimi — close'dagi counts orqali bilinadi.
+    console.log('[octagon] connection OPEN', { ip, origin: req.headers.origin ?? null, total: wss.clients.size })
 
     const state: ConnState = {
       authed: false, userId: null, isAlive: true,
@@ -1286,12 +1289,13 @@ export function attachOctagon(
       }
     })
 
-    ws.on('close', () => {
+    ws.on('close', (code: number, reason: Buffer) => {
       // M-1: per-IP counter decrement — bu handler FAQAT cap tekshiruvidan
       // o'tgan (increment qilingan) socketlar uchun biriktirilgan.
       const n = (connsByIp.get(ip) ?? 1) - 1
       if (n <= 0) connsByIp.delete(ip)
       else connsByIp.set(ip, n)
+      console.log('[octagon] connection CLOSE', { ip, code, reason: reason.toString().slice(0, 60), msgs: state.msgCount, authed: state.authed })
 
       clearTimeout(authTimer)
       untrackConn(ws)
