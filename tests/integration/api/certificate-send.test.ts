@@ -132,7 +132,7 @@ describe('POST /api/certificate/send', () => {
 
     const [chatId, file, opts] = mockSendPhoto.mock.calls[0]!
     expect(chatId).toBe(Number(UID))
-    expect((file as { name?: string }).name).toBe(`kiwi-certificate-${validBody.certId}.png`)
+    expect((file as { name?: string }).name).toBe(`kivvi-certificate-${validBody.certId}.png`)
     expect(opts.parse_mode).toBe('Markdown')
     expect(opts.caption).toContain(validBody.certId)
     expect(opts.caption).toContain(validBody.subjectName)
