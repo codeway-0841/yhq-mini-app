@@ -33,6 +33,10 @@ src/
                    #     TestPage/SpeedPage MOUNT'da chaqiriladi, aks holda 1-javob Vercel fn +
                    #     Neon suspend uyg'onishiga (5-8s) urilib 8s timeout'dan "offline"ga tushardi
                    #     (AdaptivePage'da mount allaqachon serverga boradi — alohida ping shart emas);
+                   #     startKeepAlive() — TestPage'da warmUp + 4 daqiqalik interval ping
+                   #     (Neon autosuspend ~5 daq: uzoq o'qilgan savoldan keyingi javob ham
+                   #     cold-start yemasligi uchun, 2026-08-31); POST /result timeout 20s —
+                   #     cold start 8s default'dan oshib javob outbox'ga tushib qolmasligi uchun;
                    #     boot-path so'rovlar (POST /init, GET /auth/me, GET /profile) 20s timeout —
                    #     default 8s cold start'da yiqilib fallback zanjirini (~16s splash) keltirardi (2026-08-28)
     i18n/          #     Tarjimalar (index.ts) — useT / t

@@ -314,6 +314,20 @@ export const api = {
     fetch(`${config.apiBaseUrl}/ready`).catch(() => {})
   },
 
+  /**
+   * Test DAVOMIDA backend'ni issiq ushlab turish: Neon compute ~5 daqiqa
+   * so'rov kelmasa yana SUSPEND bo'ladi (Vercel fn ham soviydi) — marathon/
+   * imtihon'da savolni uzoq o'qib o'tirib, javob bosganda yana cold start
+   * (5-8s) yemaslik uchun 4 daqiqada bir `/ready` ping (warmUp).
+   * Chaqirganda darhol 1 ping ham yuboradi.
+   * RETURN: stop() — sahifa unmount'da chaqirilishi SHART (timer oqmasligi uchun).
+   */
+  startKeepAlive: (intervalMs = 4 * 60 * 1000): (() => void) => {
+    api.warmUp()
+    const timer = setInterval(() => api.warmUp(), intervalMs)
+    return () => clearInterval(timer)
+  },
+
   // ── Auth — SMS OTP ────────────────────────────────────────────────────────
   requestOTP: (data: { phone: string }) =>
     request<{ sent: boolean }>('POST', '/auth/otp/request', data),
@@ -425,8 +439,12 @@ export const api = {
     clientToken?: string
     /** Savol ko'rsatilgandan javobgacha ketgan vaqt (ms) — statistika uchun */
     elapsedMs?: number
+  // Timeout 20s (boot-path pattern'i): backend suspend'dan uyg'onayotgan
+  // 1-javob cold start'da 5-8s+ kutadi — default 8s'da timeout bo'lib javob
+  // outbox'ga ("offline saqlandi") tushardi; 20s'da cold start yutiladi
+  // (2026-08-31 "test boshida sekin + offline saqlandi" fix).
   }) => request<ResultResponse>(
-    'POST', `/progress/${uid(userId)}/result`, data,
+    'POST', `/progress/${uid(userId)}/result`, data, 20_000,
   ),
 
   /** Referal statistikasi (Profil kartasi).

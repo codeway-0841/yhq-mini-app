@@ -82,13 +82,13 @@ export default function TestPage() {
     }
   }, [questionsLoaded, questionsLoading, questionsError, settings?.language, subjectId])
 
-  // Serverless backend'ni OLDINDAN uyg'otish: boot'dan testgacha o'tgan
-  // vaqtda Vercel funksiyasi + Neon DB yana suspend bo'lgan bo'lishi mumkin —
-  // shunda 1-javob 5-8s cold start'ga urilib "offline"ga tushardi. Ping
-  // user 1-savolni o'qiyotganda backend'ni isitadi (fire-and-forget).
-  useEffect(() => {
-    api.warmUp()
-  }, [])
+  // Serverless backend'ni OLDINDAN uyg'otish + test davomida ISSIQ ushlab
+  // turish: boot'dan testgacha o'tgan vaqtda Vercel funksiyasi + Neon DB yana
+  // suspend bo'lgan bo'lishi mumkin — shunda 1-javob 5-8s cold start'ga
+  // urilib "offline"ga tushardi. Keep-alive har 4 daqiqada ping yuboradi
+  // (Neon autosuspend ~5 daq) — savolni uzoq o'qigandan keyingi javob ham
+  // cold-start yemaydi (2026-08-31).
+  useEffect(() => api.startKeepAlive(), [])
 
   // State initialization (needed before calling the hook)
   const [current, setCurrent]                 = useState(0)
