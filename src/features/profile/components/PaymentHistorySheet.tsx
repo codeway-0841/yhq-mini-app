@@ -41,7 +41,7 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="pay-history-title">
-      <div className="relative flex max-h-[80vh] w-full flex-col rounded-t-sheet border-t border-pline bg-psurface px-5 pt-3 pb-8">
+      <div className="relative flex max-h-[80vh] w-full flex-col rounded-t-sheet border-t border-pline bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <div className="mx-auto mb-4 h-1 w-10 flex-none rounded-full bg-plineStrong" />
 
         {/* Header — sarlavha + yopish */}

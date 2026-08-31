@@ -124,11 +124,6 @@ export default function DialogOverlay({ onClose, labelId, children, position = '
       aria-modal="true"
       aria-labelledby={labelId}
       style={{ zIndex }}
-      // position='bottom' sheet'lar: pb-[var(--safe-bottom)] — MARKAZIY himoya.
-      // TG fullscreen/APK edge-to-edge'da sheet karta tizim gesture bar /
-      // home indicator ostida qolmasdan uning USTIGA ko'tariladi
-      // (oddiy rejimda --safe-bottom=0 → ko'rinish O'ZGARMAS). ~20 ta
-      // hand-rolled sheet shu bitta qatordan qamrab olinadi.
       className={`fixed inset-0 flex ${position === 'center' ? 'items-center justify-center p-4' : 'items-end pb-[var(--safe-bottom,0px)]'} ${className ?? ''}`}
     >
       <div className={`absolute inset-0 ${backdropClassName}`} onClick={() => onCloseRef.current()} />

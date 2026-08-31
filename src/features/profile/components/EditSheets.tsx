@@ -17,7 +17,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
   const tt = useT(useAppStore((s) => s.settings.language))
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8">
+      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
         <p id="photo-edit-title" className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg">
           <Camera size={14} className="text-pprimary" />
@@ -70,7 +70,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
 
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="phone-edit-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8">
+      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
 
         <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-pprimary/10">

@@ -9,6 +9,12 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import TelegramQrSheet from '../../../src/features/auth/components/TelegramQrSheet'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
+vi.mock('qrcode', () => ({
+  default: {
+    toDataURL: vi.fn().mockResolvedValue('data:image/png;base64,mock-qr-code'),
+  },
+}))
+
 const URL = 'https://t.me/test_bot?start=login_abc123'
 
 beforeEach(() => {

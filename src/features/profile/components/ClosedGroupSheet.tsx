@@ -61,7 +61,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
 
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title">
-      <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet border-t border-pline bg-psurface px-5 pt-3 pb-8">
+      <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet border-t border-pline bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <div className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong" />
 
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
