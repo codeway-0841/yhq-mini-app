@@ -99,6 +99,10 @@ describe('resetAccountState', () => {
     localStorage.setItem('yhq-flash-known-7', '[1,2,3]')
     localStorage.setItem('yhq-flash-known-12', '[9]')
     localStorage.setItem('yhq-milestones-yhq', '{"m1":true}')
+    // Client-only o'yin rekordlari ham akkaunt-scoped (audit 2026-08-31 LOW:
+    // shared qurilmada oldingi akkaunt rekordlari ko'rinmasligi kerak)
+    localStorage.setItem('yhq-signs-best-speed', '11')
+    localStorage.setItem('yhq-signs-best-match-ms', '45000')
 
     resetAccountState()
 
@@ -109,12 +113,12 @@ describe('resetAccountState', () => {
     expect(localStorage.getItem('yhq-flash-known-7')).toBeNull()
     expect(localStorage.getItem('yhq-flash-known-12')).toBeNull()
     expect(localStorage.getItem('yhq-milestones-yhq')).toBeNull()
+    expect(localStorage.getItem('yhq-signs-best-speed')).toBeNull()
+    expect(localStorage.getItem('yhq-signs-best-match-ms')).toBeNull()
   })
 
-  it("by-design SAQLANADIGAN kalitlar reset'dan o'tib qoladi (signs-best, user-namespaced outbox)", () => {
+  it("by-design SAQLANADIGAN kalitlar reset'dan o'tib qoladi (user-namespaced outbox, fan tanlovi)", () => {
     localStorage.clear()
-    // Client-only o'yin rekordi (AGENTS 8e — server/iqtisod yo'q, qurilma rekordi)
-    localStorage.setItem('yhq-signs-best-yhq', '99')
     // Outbox user-id bilan namespaced — chalkashmaydi, o'chirilsa offline javoblar yo'qoladi
     localStorage.setItem('yhq-outbox:111', '[]')
     // Umumiy user-preference (fan tanlovi) — akkauntga bog'liq emas
@@ -122,7 +126,6 @@ describe('resetAccountState', () => {
 
     resetAccountState()
 
-    expect(localStorage.getItem('yhq-signs-best-yhq')).toBe('99')
     expect(localStorage.getItem('yhq-outbox:111')).toBe('[]')
     expect(localStorage.getItem('yhq-subject')).toBe('yhq')
   })

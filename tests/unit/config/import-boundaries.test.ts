@@ -26,16 +26,23 @@ function* walk(dir: string): Generator<string> {
   }
 }
 
-/** Import specifier → abs path (faqat relative; ext probing bilan) */
+/** Import specifier → abs path (relative YOKI `@/` alias — vite.config resolve.alias;
+ *  alias'siz tekshiruv `@/features/...` buzilishlarni jim o'tkazib yuborardi) */
 function resolveSpec(file: string, spec: string): string | null {
-  if (!spec.startsWith('.')) return null
-  const base = path.resolve(path.dirname(file), spec)
+  let base: string
+  if (spec.startsWith('@/')) {
+    base = path.resolve(SRC, spec.slice(2))
+  } else if (spec.startsWith('.')) {
+    base = path.resolve(path.dirname(file), spec)
+  } else {
+    return null
+  }
   for (const cand of [base, base + '.ts', base + '.tsx', base + '/index.ts', base + '/index.tsx'])
     if (fs.existsSync(cand) && fs.statSync(cand).isFile()) return cand
   return null
 }
 
-const specRe = /\b(?:from\s+|import\s*\(\s*|import\s+)(['"])(\.{1,2}\/[^'"]+)\1/g
+const specRe = /\b(?:from\s+|import\s*\(\s*|import\s+)(['"])((?:\.{1,2}|@)\/[^'"]+)\1/g
 
 function importsOf(file: string): { spec: string; abs: string | null }[] {
   const code = fs.readFileSync(file, 'utf8')

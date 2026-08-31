@@ -191,6 +191,22 @@ describe('usePhoneContact', () => {
     act(() => { result.current.cancelPhoneOtp() })
     expect(result.current.otpPhone).toBeNull()
   })
+
+  it('UNMOUNT boshlang\'ich poll paytida — SMS fallback ISHGA TUSHMAYDI (bekor SMS xarajati guard)', async () => {
+    mockRequestContact.mockImplementation((cb: (ok: boolean, data?: unknown) => void) => {
+      cb(true, { contact: { phone_number: '998901234567' } })
+      return true
+    })
+
+    // Sekin poll (15ms×5) — unmount uchun oyna; user allaqachon sahifadan chiqqan
+    const { result, unmount } = renderHook(() => usePhoneContact({ pollAttempts: 5, pollDelayMs: 15 }))
+    act(() => { result.current.handleAddPhone() })
+    unmount()   // poll sleep'da yotibdi — watchGenRef unmount'da o'sadi
+    await act(async () => { await new Promise((r) => setTimeout(r, 120)) })
+
+    expect(mockRequestOTP).not.toHaveBeenCalled()       // SMS yuborilmadi
+    expect(useAppStore.getState().user?.phone).toBeUndefined()  // store tegilmagan
+  })
 })
 
 describe('useAvatarUpload', () => {

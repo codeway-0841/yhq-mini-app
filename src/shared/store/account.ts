@@ -51,6 +51,9 @@ export const ACCOUNT_STORAGE_KEYS = [
 export const ACCOUNT_STORAGE_PREFIXES = [
   'yhq-flash-known-',
   'yhq-milestones-',
+  // Belgilar o'yini rekordlari (client-only, lekin shared qurilmada oldingi
+  // akkaunt rekordlari ko'rinmasligi uchun tozalanadi — audit 2026-08-31 LOW)
+  'yhq-signs-best-',
 ] as const
 
 /**

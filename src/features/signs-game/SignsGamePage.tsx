@@ -53,22 +53,23 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
 
   useEffect(() => {
     if (done) return
+    // Updater SOF bo'lishi shart (L11): StrictMode updater'ni 2× chaqiradi —
+    // yakun logikasi (rekord yozish/ovoz) shu yerda bo'lsa 2 marta ijro etilardi
     const iv = window.setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          window.clearInterval(iv)
-          setDone(true)
-          const s = stateRef.current.score
-          const best = readBest(BEST_SPEED_KEY)
-          if (best === null || s > best) writeBest(BEST_SPEED_KEY, s)
-          playSound('win')
-          return 0
-        }
-        return t - 1
-      })
+      setTimeLeft((t) => Math.max(0, t - 1))
     }, 1000)
     return () => window.clearInterval(iv)
   }, [done])
+
+  // Vaqt tugashi — side-effect'lar FAQAT effect'da (updater'dan tashqarida)
+  useEffect(() => {
+    if (done || timeLeft > 0) return
+    setDone(true)
+    const s = stateRef.current.score
+    const best = readBest(BEST_SPEED_KEY)
+    if (best === null || s > best) writeBest(BEST_SPEED_KEY, s)
+    playSound('win')
+  }, [timeLeft, done])
 
   const answer = (option: GameSign) => {
     if (flash) return   // animatsiya paytida double-tap blok

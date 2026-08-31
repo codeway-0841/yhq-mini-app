@@ -10,7 +10,7 @@ import { z } from 'zod'
 import { Bot, InputFile } from 'grammy'
 import { requireAuth } from '../../middleware/auth'
 import { validate } from '../../middleware/validate'
-import { rateLimit } from '../../middleware/rate-limiter'
+import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { config } from '../../config'
 import { executeRows } from '../../db/connection'
@@ -31,7 +31,7 @@ const SendCertificateSchema = z.object({
 router.post(
   '/certificate/send',
   requireAuth,
-  rateLimit({ maxPerMinute: 6 }),
+  rateLimit({ maxPerMinute: 6, bucket: 'certificate' }),
   validate({ body: SendCertificateSchema }),
   wrap(async (req, res) => {
     const userId = (req as { userId?: string }).userId

@@ -2,7 +2,9 @@ import animate from 'tailwindcss-animate'
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './app.html', './src/**/*.{js,ts,jsx,tsx}', './landing/**/*.{ts,tsx}'],
+  // Landing (index.html + landing/) endi landing/tailwind.config.js'da —
+  // app bundle'iga landing utilitalari, landing'ga app utilitalari kirmaydi.
+  content: ['./app.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: ['selector', "body[data-theme='dark']"],
   theme: {
     extend: {

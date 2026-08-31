@@ -237,8 +237,9 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void,
             <span className="underline underline-offset-2">{label}</span>
           </button>
         )
-      } else {
-        // External link
+      } else if (/^https?:\/\//i.test(url)) {
+        // External link — FAQAT http(s) protokol (audit L-fix: `javascript:`/`data:`
+        // href orqali XSS — React href'ni sanitize QILMAYDI)
         result.push(
           <a
             key={`link-${matchIndex}`}
@@ -251,6 +252,9 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void,
             <ExternalLink size={12} />
           </a>
         )
+      } else {
+        // Ruxsat etilmagan protokol — label oddiy matn sifatida (link emas)
+        result.push(<span key={`link-${matchIndex}`}>{label}</span>)
       }
     } else if (match[3] !== undefined) {
       // Bold match **text**

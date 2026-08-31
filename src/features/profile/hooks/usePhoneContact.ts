@@ -68,9 +68,13 @@ export function usePhoneContact(options?: PhoneContactOptions) {
     flashNotice('phoneLinkedOk')
   }
 
-  /** Bot contact-xabari users.phone'ni yozguncha poll; yozilganini ko'rsa true. */
-  const pollBotLinkedPhone = async (userId: string, phone: string): Promise<boolean> => {
+  /** Bot contact-xabari users.phone'ni yozguncha poll; yozilganini ko'rsa true.
+   *  `gen` — boshlang'ich kuzatuv generatsiyasi: unmount/cancel'da loop erta
+   *  to'xtaydi (audit LOW: poll guard'siz edi — unmount'dan keyin ham SMS
+   *  fallback ishga tushib, bekordan SMS xarajati yuzaga kelardi). */
+  const pollBotLinkedPhone = async (userId: string, phone: string, gen: number): Promise<boolean> => {
     for (let i = 0; i < pollAttempts; i++) {
+      if (watchGenRef.current !== gen) return false   // bekor qilingan / unmount
       try {
         const { phone: linked } = await api.getLinkedPhone(userId)
         if (linked === phone) return true
@@ -115,13 +119,18 @@ export function usePhoneContact(options?: PhoneContactOptions) {
       const userId = useAppStore.getState().user?.id
 
       const run = async () => {
+        const gen = watchGenRef.current
         // Fast-path: Telegram-imzolangan bot contact xabari raqamni yozdimi?
-        if (userId && await pollBotLinkedPhone(userId, phone)) {
+        if (userId && await pollBotLinkedPhone(userId, phone, gen)) {
+          if (watchGenRef.current !== gen) return
           applyBotLinkedPhone(phone)
           return
         }
+        // Unmount/cancel — SMS fallback'ga O'TMASLIK (bekor SMS xarajati)
+        if (watchGenRef.current !== gen) return
         // Fallback: SMS OTP egalik isboti (H-2)
         await api.requestOTP({ phone })
+        if (watchGenRef.current !== gen) return
         setOtpPhone(phone)
         if (userId) watchBotLinkDuringOtp(userId, phone)   // kech cold-start yozuvi
       }
