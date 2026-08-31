@@ -57,7 +57,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
       {/* Toast Container - top-center (mobile), top-right (desktop) */}
       <div
-        className="fixed top-[calc(1rem+env(safe-area-inset-top,0px))] left-1/2 -translate-x-1/2 sm:left-auto sm:right-4 sm:translate-x-0 z-50 flex flex-col gap-2 w-full max-w-md px-4 sm:px-0 pointer-events-none"
+        className="fixed top-[calc(1rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 sm:left-auto sm:right-4 sm:translate-x-0 z-50 flex flex-col gap-2 w-full max-w-md px-4 sm:px-0 pointer-events-none"
         aria-live="polite"
         aria-atomic="false"
       >

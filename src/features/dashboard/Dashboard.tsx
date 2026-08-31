@@ -197,7 +197,7 @@ export default function Dashboard() {
     <div className="dashboard-page route-page min-h-screen bg-pcanvas pb-6 safe-bottom">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
-        <div className="fixed top-[calc(0.75rem+env(safe-area-inset-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
+        <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
           <div className="flex size-10 items-center justify-center rounded-full border border-pline bg-pcard transition-transform"
             style={{ transform: `scale(${Math.min(1, ptr.dist / ptr.threshold)})` }}>
             <span className="block size-5 rounded-full border-2 border-pline motion-safe:animate-spin"

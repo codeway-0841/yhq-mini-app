@@ -25,10 +25,10 @@ export function isNativeApp(): boolean {
  * Native chrome (status bar + safe-area) bir martalik sozlash — main.tsx'dan
  * React render'dan OLDIN chaqiriladi (birinchi kadrda siljish bo'lmasligi uchun).
  *
- * 1. `body[data-platform='native']` — index.css shu attributga
- *    `padding-top: env(safe-area-inset-top)` qo'yadi (edge-to-edge WebView'da
- *    kontent tizim status bar ostida qolmasligi uchun). Telegram/brauzer'da
- *    HECH QANDAY o'zgarish yo'q (TG o'z safe-area'sini o'zi boshqaradi).
+ * 1. `body[data-platform='native']` — native muhit marker'i (kelajakdagi
+ *    native-only uslublar uchun). Tepa padding index.css'dagi UMUMIY
+ *    `--safe-top` orqali keladi (native'da env(safe-area-inset-top) g'alaba
+ *    qozonadi; Telegram/brauzer'da o'sha o'zgaruvchi TG/brauzer qiymatini oladi).
  * 2. StatusBar overlay: Android 15+ (targetSdk 36) edge-to-edge'ni MAJBURIY
  *    qiladi; `overlay: true` pre-15 qurilmalarda ham xuddi shu ko'rinishni
  *    beradi — platformalararo yagona xatti-harakat (canvas status bar ortida).

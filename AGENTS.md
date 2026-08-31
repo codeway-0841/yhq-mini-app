@@ -47,8 +47,10 @@ src/
     config/        #     subjects.tsx (UI_MAP), themes.ts, achievements.ts, index.ts (runtime env)
   platform/        #   window.Telegram + Capacitor YAGONA kirish nuqtasi:
                    #     telegram.ts (WebApp), haptics.ts, native.ts (APK: yagona back, splash,
-                   #     applyNativeChrome — body[data-platform=native] + StatusBar overlay/style;
-                   #     index.css shu attributga safe-area-inset-top padding qo'yadi — edge-to-edge)
+                   #     applyNativeChrome — body[data-platform=native] marker + StatusBar
+                   #     overlay/style). Tepa safe-area — index.css `--safe-top` YAGONA manba:
+                   #     max(env(safe-area-inset-top), TG inject --tg-content-safe-area-inset-top)
+                   #     → body padding-top (APK edge-to-edge VA TG fullscreen'ni qoplaydi)
   content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs, formulas + lessonMap.yhq.json
 capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle), server.appStartPath='/app.html' (dist/index.html = landing!).
                    #   LEADING SLASH SHART (2026-08-31 APK incident): Capacitor 8 Bridge.java https
