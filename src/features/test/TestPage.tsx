@@ -45,6 +45,9 @@ function formatImageSrc(src?: string | null): string | undefined {
   return `/${src}`
 }
 
+/** Preload sliding window radiusi — joriy savoldan oldin/orqadagi rasmlar soni */
+const PRELOAD_WINDOW = 10
+
 export default function TestPage() {
   const { id }   = useParams()
   const navigate = useNavigate()
@@ -247,13 +250,18 @@ export default function TestPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
 
-  // Bilet yoki test boshlanganda shu sessiyadagi barcha savollar rasmlarini
-  // oldindan yuklab olish (preload) — o'rtada internet uzilsa ham rasmlar ko'rinadi.
-  // Test yakunlanganda yoki sahifadan chiqilganda vaqtinchalik kesh avtomatik tozalanadi.
+  // Savollar rasmlarini oldindan yuklash (preload) — SLIDING WINDOW (audit M-9):
+  // marathonda BUTUN bank (~5-6MB) bir yo'la yuklanib zaif tarmoqda sahifa
+  // "qotardi". Endi faqat joriy savol atrofidagi ±PRELOAD_WINDOW rasmlar fon'da
+  // yuklanadi — oyna user bilan birga surilib boradi; user savolga yetib
+  // kelganda rasm allaqachon keshda bo'ladi (internet uzilsa ham ko'rinadi).
   useEffect(() => {
     if (!activeQuestions || activeQuestions.length === 0) return
 
+    const from = Math.max(0, current - PRELOAD_WINDOW)
+    const to = Math.min(activeQuestions.length, current + PRELOAD_WINDOW + 1)
     const imageSources = activeQuestions
+      .slice(from, to)
       .map((q) => formatImageSrc(q.image))
       .filter((src): src is string => Boolean(src))
 
@@ -276,13 +284,21 @@ export default function TestPage() {
       }).catch(() => {})
     }
 
+    // Faqat shu oynadagi JO'NATILMAGAN yuklanishlar bekor qilinadi —
+    // kesh TEGILMAYDI (oldingi oynalar rasmi keshda qoladi, tez ochiladi).
     return () => {
       preloadedImages.forEach((img) => { img.src = '' })
+    }
+  }, [activeQuestions, current])
+
+  // Test yakunlanganda yoki sahifadan chiqilganda vaqtinchalik kesh tozalanadi.
+  useEffect(() => {
+    return () => {
       if (typeof caches !== 'undefined') {
         caches.delete('yhq-test-images').catch(() => {})
       }
     }
-  }, [activeQuestions])
+  }, [])
 
   // ── Anti-Cheat: Rasmiy imtihonda tab switch / blur / background aniqlash ──
   const wasHiddenRef = useRef(false)
@@ -463,6 +479,11 @@ export default function TestPage() {
   // Offline holatda yuborilgan javoblar internet ulanganda darhol TestPage'da ham yangilansin
   useEffect(() => {
     return onResultSync((info) => {
+      // Duplicate replay (server token'ni avval qabul qilgan): javob allaqachon
+      // ekranda ko'rsatilgan — TEGMANG. duplicate'da res.correct null/false
+      // bo'lgani uchun eski kod savolni qizil "wrong" qilib bo'yardi
+      // (useAppStore'dagi guard bilan bir xil — useAppStore.ts:181).
+      if (info.duplicate) return
       const idx = activeQuestions.findIndex((x) => x.id === info.questionId)
       if (idx !== -1) {
         setAnswers((prev) => {

@@ -231,7 +231,12 @@ export const leaderboardRepository = {
       timeframe === 'daily'  ? todayTashkent()     :
       timeframe === 'weekly' ? weekStartTashkent() : monthStartTashkent()
 
-    const dateCond = sql`(${duelResults.createdAt} AT TIME ZONE 'Asia/Tashkent')::date >= ${periodStart}::date`
+    // SARGABLE filter (audit M-6): eski variant har qatorda `created_at AT TIME
+    // ZONE ...` hisoblardi — idx_duel_result_created ishlolmasdi (seq scan).
+    // Chegarani BIR MARTA UTC instantga o'giramiz: Tashkent yarim tuni =
+    // `periodStart::date::timestamp AT TIME ZONE 'Asia/Tashkent'` — ustun xom
+    // qolgani uchun index range scan ishlaydi.
+    const dateCond = sql`${duelResults.createdAt} >= (${periodStart}::date::timestamp AT TIME ZONE 'Asia/Tashkent')`
 
     const duelScores = db
       .select({
@@ -374,7 +379,10 @@ export const leaderboardRepository = {
       })
       .from(users)
       .leftJoin(progress, eq(progress.userId, users.id))
-      .leftJoin(weeklyScores, eq(weeklyScores.userId, users.id))
+      // innerJoin (dailyTop pattern'i, audit M-7): bu hafta javob YOZMAGAN
+      // user'lar reytingga kirmaydi — eski leftJoin dushanba ertalab BUTUN
+      // users jadvalini 0-ball bilan tortib saralardi.
+      .innerJoin(weeklyScores, eq(weeklyScores.userId, users.id))
       .orderBy(
         desc(sql`COALESCE(${weeklyScores.score}, 0)`),
         desc(sql`COALESCE(${progress.totalCorrect}, 0)`),

@@ -140,9 +140,11 @@ export const useAppStore = create<AppState>()(
   persist(
     (set, get) => {
       /** Server tasdiqlagan javobni lokal counterlarga qo'llash
-       *  (submitAnswer muvaffaqiyati VA outbox replay'da — bir xil yo'l). */
-      const applyAnswer = (input: { questionId: number; correct: boolean; subjectId: string; date: string; dailyStreak: number | null; coinSaved?: boolean }) => {
-        const { questionId, correct, subjectId, date, dailyStreak, coinSaved } = input
+       *  (submitAnswer muvaffaqiyati VA outbox replay'da — bir xil yo'l).
+       *  coinBalance/xp berilsa SHU set()'da birgalikda yoziladi (audit M-8:
+       *  avval 3 alohida set() = 3 persist serialize edi). */
+      const applyAnswer = (input: { questionId: number; correct: boolean; subjectId: string; date: string; dailyStreak: number | null; coinSaved?: boolean; coinBalance?: number; xp?: number }) => {
+        const { questionId, correct, subjectId, date, dailyStreak, coinSaved, coinBalance, xp } = input
         // Multi-fan identity: xato qaydlari fan bo'yicha composite kalitda
         const wKey = questionKey(subjectId, questionId)
         // Xato savol to'g'rilandimi? (Intizom sahifasidagi "TUZATILDI" hisoblagichi)
@@ -164,6 +166,8 @@ export const useAppStore = create<AppState>()(
                   return next
                 })()
               : { ...s.wrongByTicket, [wKey]: (s.wrongByTicket[wKey] ?? 0) + 1 },
+            ...(typeof coinBalance === 'number' ? { coins: coinBalance } : {}),
+            ...(typeof xp === 'number' ? { xp } : {}),
           }
         })
         if (dailyStreak !== null) useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak, coinSaved)
@@ -183,13 +187,9 @@ export const useAppStore = create<AppState>()(
           questionId: info.questionId, correct: info.correct,
           subjectId: info.subjectId, date: info.date, dailyStreak: info.dailyStreak,
           coinSaved: info.coinSaved,
+          ...(typeof info.coinBalance === 'number' ? { coinBalance: info.coinBalance } : {}),
+          ...(typeof info.xp === 'number' ? { xp: info.xp } : {}),
         })
-        if (typeof info.coinBalance === 'number') {
-          set({ coins: info.coinBalance })
-        }
-        if (typeof info.xp === 'number') {
-          set({ xp: info.xp })
-        }
       })
 
       return {
@@ -271,14 +271,23 @@ export const useAppStore = create<AppState>()(
         const clientToken = newId()
         try {
           const res = await api.postResult(userId, { questionId, selectedAnswer, subjectId, clientToken, ...(elapsedMs != null ? { elapsedMs } : {}) })
-          // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
-          if (!res.duplicate && res.correct !== null) applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak, coinSaved: res.coinSaved })
-          // #40: mint bo'lgan tanga — server balansi bilan sinxron (client o'zi mint qilmaydi)
-          if (!res.duplicate && (res.coinsEarned ?? 0) > 0 && typeof res.coinBalance === 'number') {
-            set({ coins: res.coinBalance })
+          if (!res.duplicate) {
+            // #40 coin (server balansi bilan sinxron — client o'zi mint qilmaydi)
+            // + XP (SERVER hisobidan) — applyAnswer'ning YAGONA set()'ida yoziladi
+            const extras = {
+              ...((res.coinsEarned ?? 0) > 0 && typeof res.coinBalance === 'number' ? { coinBalance: res.coinBalance } : {}),
+              ...(typeof res.xp === 'number' ? { xp: res.xp } : {}),
+            }
+            // duplicate'da correct null bo'ladi — applyAnswer counter'larni qayta yozmasligi shart
+            if (res.correct !== null) {
+              applyAnswer({ questionId, correct: res.correct, subjectId, date: todayStr(), dailyStreak: res.dailyStreak, coinSaved: res.coinSaved, ...extras })
+            } else if (extras.coinBalance !== undefined || extras.xp !== undefined) {
+              set({
+                ...(extras.coinBalance !== undefined ? { coins: extras.coinBalance! } : {}),
+                ...(extras.xp !== undefined ? { xp: extras.xp! } : {}),
+              })
+            }
           }
-          // XP ham SERVER hisobidan (kunlik shift tufayli 0 bo'lishi mumkin)
-          if (!res.duplicate && typeof res.xp === 'number') set({ xp: res.xp })
           return { correct: res.correct, correctAnswer: res.correctAnswer, duplicate: !!res.duplicate, coinsEarned: res.duplicate ? 0 : (res.coinsEarned ?? 0) }
         } catch (err) {
           // FATAL 4xx — server qat'iy rad etdi (validatsiya/auth/noto'g'ri so'rov):
@@ -446,7 +455,10 @@ export const useAppStore = create<AppState>()(
         totalAnswered:  s.totalAnswered,
         wrongByTicket:  s.wrongByTicket,
         savedQuestions: s.savedQuestions,
-        solvedQuestions: s.solvedQuestions ?? [],
+        // solvedQuestions PERSIST QILINMAYDI (audit M-8): server SSOT —
+        // hydrateFromProfile server ro'yxati bilan merge qiladi (bootstrap'da
+        // qayta to'ladi). Har javobda persist snapshot'ga minglab kalit
+        // yozilib localStorage shishardi.
         displayName:    s.displayName,
         // customAvatar PERSIST QILINMAYDI (audit C3): 256px WebP data URL
         // (~30-40KB) har set()'da butun snapshot'ni shishirardi. Server SSOT —
