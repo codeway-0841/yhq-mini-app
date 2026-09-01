@@ -14,6 +14,7 @@ import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
 import { attachOctagon, loadOctagonPools, getOctagonStats } from './octagon'
+import { startAiTestScheduler } from './modules/ai-tests/scheduler'
 import { stopAllIntervals } from './utils/shutdown'
 
 const app    = createApp()
@@ -78,6 +79,10 @@ loadOctagonPools()
     const total = [...pools.values()].reduce((s, p) => s + p.length, 0)
     server.listen(config.server.port, () => {
       console.log(`Server :${config.server.port} (HTTP + WS) — ${total} questions (${pools.size} banks)`)
+      // AI kunlik test generatsiyasi — soatlik ensure (bugun + ertaga).
+      // Vercel'da EMAS: bu faqat Render (24/7) entry'si; 45-topshiriqli 2
+      // variant generatsiyasi serverless 60s limitiga sig'maydi.
+      startAiTestScheduler()
     })
   })
   .catch((err) => {

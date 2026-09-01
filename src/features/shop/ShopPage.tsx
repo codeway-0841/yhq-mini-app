@@ -206,6 +206,7 @@ export default function ShopPage() {
     task_claim:   tt('coinReasonTask'),
     spin:         tt('coinReasonSpin'),
     boss_reward:  tt('coinReasonBoss'),
+    ai_test:      tt('coinReasonAiTest'),
     merch:        tt('coinReasonMerch'),
     merch_refund: tt('coinReasonRefund'),
     admin:        tt('coinReasonAdmin'),

@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft, Search } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft, Search, Sparkles } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -20,9 +20,11 @@ type TKey = Parameters<ReturnType<typeof useT>>[0]
 
 interface ModeCard {
   id: string
-  iconBox: 'zap' | 'cap' | 'num'
+  iconBox: 'zap' | 'cap' | 'num' | 'ai'
   numText?: string
   danger?: boolean
+  /** AI kunlik test — "YANGI" badge + binafsha (AI) aksent */
+  aiCard?: boolean
   titleKey: TKey
   meta: string
   diff: Diff
@@ -64,6 +66,11 @@ export default function TestlarPage() {
   })
 
   const cards: ModeCard[] = [
+    // AI Kunlik Test (rustili) — har kuni 2 ta yangi variant (SSOT: shared/ai-daily-test.ts)
+    ...(subjectId === 'rustili'
+      ? [{ id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
+           titleKey: 'aiTestTitle' as const, meta: tt('aiTestMeta'), diff: 'mid' as const }]
+      : []),
     ...(subjectId === 'yhq'
       ? [
           { id: 'mock',     iconBox: 'cap' as const, danger: true,
@@ -91,6 +98,7 @@ export default function TestlarPage() {
   const start = (m: ModeCard) => {
     track('test_start', { mode: m.id })
     if (m.id === 'speed') { navigate('/speed'); return }
+    if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }
 
@@ -119,15 +127,22 @@ export default function TestlarPage() {
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
           const d = DIFF[m.diff]
-          // Rang intizomi: tema aksent rangi default; qizil FAQAT xavf (mock 2 xato = yiqilishing)
-          const boxColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
-          const ringColor = m.danger ? 'var(--p-danger)' : 'var(--p-primary)'
+          // Rang intizomi: tema aksent rangi default; qizil FAQAT xavf (mock 2 xato = yiqilishing);
+          // binafsha FAQAT AI (dizayn qoidasi 8 — AI/Premium = purple)
+          const boxColor = m.danger ? 'var(--p-danger)' : m.aiCard ? 'var(--p-purple)' : 'var(--p-primary)'
+          const ringColor = m.danger ? 'var(--p-danger)' : m.aiCard ? 'var(--p-purple)' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R
           const off = C * (1 - accuracy / 100)
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
+              className="relative rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
+              {/* AI kunlik test — YANGI badge (yangi testlar ekanligi ko'rinib tursin) */}
+              {m.aiCard && (
+                <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">
+                  {tt('aiTestNew')}
+                </span>
+              )}
               {/* Icon box — neytral (yoki danger uchun qizil) */}
               <div className="relative flex-shrink-0">
                 <div className="w-14 h-14 rounded-container flex items-center justify-center"
@@ -140,6 +155,7 @@ export default function TestlarPage() {
                   )}
                   {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: boxColor }} />}
                   {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
+                  {m.iconBox === 'ai' && <Sparkles size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
                 </div>
               </div>
 

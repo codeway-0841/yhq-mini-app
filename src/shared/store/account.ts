@@ -28,6 +28,8 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-daily',
   'yhq-adaptive-store',
   'yhq-test-session',
+  // AI kunlik test sessiyasi (javoblar qoralamasi — features/ai-test)
+  'yhq-ai-test',
   // Bearer sessiya (shared/lib/session.ts) — akkaunt reset'da eski account
   // sessiyasi qolmasligi shart (shared qurilmada keyingi user begona token
   // bilan warm-start bo'lmasligi uchun). SESSION_CHANGED event BILOQSIZ

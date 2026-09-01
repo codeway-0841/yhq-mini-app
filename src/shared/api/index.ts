@@ -4,6 +4,9 @@ import { getSessionToken, setSessionToken, clearSessionToken, notifySessionExpir
 import {
   FullProfileSchema, AuthSessionSchema, AuthResponseSchema, LinkResponseSchema,
 } from '../../../shared/contracts/profile'
+import type {
+  AiTestAnswers, AiTestGrading, AiTestPublicPayload,
+} from '../../../shared/ai-daily-test'
 
 const TIMEOUT_MS = 8000
 
@@ -674,6 +677,36 @@ export const api = {
       top: { userId: string; firstName: string; photoUrl: string | null; hasCustomAvatar: boolean; damage: number }[]
     }>('GET', '/boss/state'),
 
+  // ── AI Kunlik Test (rustili) ─────────────────────────────────────────────
+  /** Bugungi variantlar + mening holatim (javob kalitlarisiz meta) */
+  getTodayAiTests: (subjectId: string) =>
+    request<{ ok: true; date: string; tests: AiTestTodayItem[] }>(
+      'GET', `/ai-tests/today?subject=${encodeURIComponent(subjectId)}`,
+    ),
+
+  /** To'liq test payload (javoblarisiz; 403 premium_required / 409 already_attempted) */
+  getAiTest: (testId: number) =>
+    request<{ ok: true; test: AiTestPublicPayload & { id: number; slot: number; date: string } }>(
+      'GET', `/ai-tests/${testId}`,
+    ),
+
+  /** Javoblarni topshirish — idempotent (clientToken); javob: grading + balance */
+  submitAiTest: (testId: number, data: { answers: AiTestAnswers; clientToken: string }) =>
+    request<{ ok: true; duplicate: boolean; grading: AiTestGrading; coinsAwarded: number; balance?: number }>(
+      'POST', `/ai-tests/${testId}/submit`, data, 90_000, // AI baholash (esse) 60s gacha olishi mumkin
+    ),
+
+  /** Mening baholangan urinishim (post-submit reveal; 404 ATTEMPT_NOT_FOUND) */
+  getAiTestResult: (testId: number) =>
+    request<{
+      ok: true
+      attempt: {
+        testId: number; title: string; grading: AiTestGrading; answers: AiTestAnswers
+        scoreCorrect: number; essayScore: number; coinsAwarded: number; createdAt: string
+      }
+      test: AiTestPublicPayload & { id: number; slot: number; date: string }
+    }>('GET', `/ai-tests/${testId}/result`),
+
   // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
   getMerchCatalog: () =>
     request<{ ok: true; items: MerchCatalogItem[] }>('GET', '/coins/merch'),
@@ -1043,6 +1076,19 @@ export interface DailyHistory {
   rows:        DailyHistoryRow[]
   dailyStreak: number
   bestStreak:  number
+}
+
+/** AI Kunlik Test — /today ro'yxat elementi (javob kalitlarisiz meta) */
+export interface AiTestTodayItem {
+  id: number
+  slot: number
+  title: string
+  taskCount: number
+  premiumRequired: boolean
+  attempted: boolean
+  scoreCorrect: number | null
+  essayScore: number | null
+  coinsAwarded: number | null
 }
 
 export interface AchievementStats {

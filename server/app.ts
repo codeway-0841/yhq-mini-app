@@ -39,6 +39,7 @@ import adminRouter        from './modules/admin/admin.router'
 import promoRouter        from './modules/promo/promo.router'
 import coinsRouter        from './modules/coins/coins.router'
 import bossRouter         from './modules/boss/boss.router'
+import aiTestsRouter      from './modules/ai-tests/ai-tests.router'
 import certificateRouter  from './modules/certificate/certificate.router'
 import shareRouter        from './modules/share/share.router'
 import { paymentRouter }  from './modules/payments/payment.router'
@@ -164,6 +165,9 @@ export function createApp() {
   app.use('/api', promoRouter)
   app.use('/api', coinsRouter)
   app.use('/api', bossRouter)
+  // DIQQAT: adminRouter'dan KEYIN — /api/admin/ai-tests/generate shu orqali
+  // requireAdmin'dan o'tadi (router.use('/admin', requireAdmin) prefix-match).
+  app.use('/api', aiTestsRouter)
   app.use('/api', certificateRouter)
   app.use('/api', shareRouter)
   app.use('/api/payments', paymentRouter)

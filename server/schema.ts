@@ -3,6 +3,7 @@ import {
   pgTable, pgEnum, serial, text,
   integer, boolean, jsonb, timestamp, unique, index, check, primaryKey, real,
 } from 'drizzle-orm/pg-core'
+import type { AiTestPayload, AiTestAnswers, AiTestGrading } from '../shared/ai-daily-test'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
 export const fontSizeEnum = pgEnum('font_size',  ['small', 'medium', 'large'])
@@ -938,4 +939,59 @@ export const duelResults = pgTable('duel_results', {
   index('idx_duel_result_user_created').on(t.userId, t.createdAt),
   check('chk_duel_result_kind', sql`${t.result} IN ('win','lose','draw')`),
   check('chk_duel_result_scores', sql`${t.selfScore} >= 0 AND ${t.oppScore} >= 0`),
+])
+
+// ─── AI KUNLIK TEST (rustili) ────────────────────────────────────────────────
+
+/**
+ * AI generatsiya qilgan kunlik test varianti — SSOT: shared/ai-daily-test.ts.
+ * (subject_id, date, slot) UNIQUE — har kunga 2 variant (1=free, 2=premium).
+ * `payload` jsonb'da javob kalitlari HAM bor — client'ga FAQAT
+ * toPublicAiTest() orqali javoblarsiz chiqadi (scoring trust boundary).
+ * Savollar asosiy `questions` bazasiga KIRMAYDI (alohida hayot sikli).
+ */
+export const aiDailyTests = pgTable('ai_daily_tests', {
+  id:        serial('id').primaryKey(),
+  /** shared/subjects.ts subject id (hozircha 'rustili') */
+  subjectId: text('subject_id').notNull(),
+  /** Tashkent kalendari 'YYYY-MM-DD' (tashkentDate) */
+  date:      text('date').notNull(),
+  /** 1 = free, 2 = premium (AI_TEST_PREMIUM_SLOT) */
+  slot:      integer('slot').notNull(),
+  /** Variant nomi, masalan 'Вариант №1' */
+  title:     text('title').notNull(),
+  payload:   jsonb('payload').$type<AiTestPayload>().notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_ai_daily_test').on(t.subjectId, t.date, t.slot),
+  check('chk_ai_daily_test_slot', sql`${t.slot} IN (1, 2)`),
+  check('chk_ai_daily_test_date_fmt', sql`${t.date} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
+  index('idx_ai_daily_tests_date').on(t.subjectId, t.date),
+])
+
+/**
+ * User urinishi — 1 test = 1 urinish (uq_ai_attempt_test_user).
+ * `grading` jsonb: AiTestGrading (to'g'ri javoblar reveal ham ichida —
+ * FAQAT post-submit, /result orqali o'z egasiga).
+ * client_token UNIQUE(user) — submit idempotency (retry = saqlangan natija).
+ * Coin mint submit CTE'da: ledger reason 'ai_test', ref 'ai_test:<testId>:<userId>'.
+ */
+export const aiDailyTestAttempts = pgTable('ai_daily_test_attempts', {
+  id:         serial('id').primaryKey(),
+  testId:     integer('test_id').notNull().references(() => aiDailyTests.id, { onDelete: 'cascade' }),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  answers:    jsonb('answers').$type<AiTestAnswers>().notNull(),
+  grading:    jsonb('grading').$type<AiTestGrading>().notNull(),
+  /** 1–3 bo'lim to'g'ri topshiriqlar soni */
+  scoreCorrect: integer('score_correct').notNull(),
+  /** Esse AI bahosi 0–10 (baholanmagan bo'lsa 0) */
+  essayScore: integer('essay_score').notNull().default(0),
+  coinsAwarded: integer('coins_awarded').notNull().default(0),
+  clientToken: text('client_token').notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_ai_attempt_test_user').on(t.testId, t.userId),
+  unique('uq_ai_attempt_token').on(t.userId, t.clientToken),
+  index('idx_ai_attempt_user').on(t.userId),
+  check('chk_ai_attempt_scores', sql`${t.scoreCorrect} >= 0 AND ${t.essayScore} BETWEEN 0 AND 10 AND ${t.coinsAwarded} >= 0`),
 ])

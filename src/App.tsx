@@ -51,7 +51,9 @@ const statistikaChunk      = () => import('./features/stats/StatistikaPage')
 const speedChunk           = () => import('./features/speed/SpeedPage')
 const flashcardsChunk      = () => import('./features/flashcards/FlashcardsPage')
 const formulasChunk        = () => import('./features/formulas/FormulasPage')
-const searchChunk          = () => import('./features/search/SearchPage')
+const searchChunk           = () => import('./features/search/SearchPage')
+const aiTestHubChunk        = () => import('./features/ai-test/AiTestHub')
+const aiTestSessionChunk    = () => import('./features/ai-test/AiTestSession')
 const notFoundChunk        = () => import('./shared/components/NotFound')
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
 // uchun har bir userning entry bundle'ida yotardi.
@@ -82,6 +84,8 @@ const SpeedPage       = lazy(speedChunk)
 const FlashcardsPage  = lazy(flashcardsChunk)
 const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
+const AiTestHub       = lazy(aiTestHubChunk)
+const AiTestSession   = lazy(aiTestSessionChunk)
 const NotFound        = lazy(notFoundChunk)
 const Onboarding      = lazy(onboardingChunk)
 const LoginPage       = lazy(loginChunk)
@@ -100,6 +104,7 @@ const routeChunkPrefetchers = [
   belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
+  aiTestHubChunk, aiTestSessionChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
 ]
@@ -200,6 +205,8 @@ function Layout() {
             <Route path="/flashcards" element={<FlashcardsPage />} />
             <Route path="/shpargalkalar" element={<FormulasPage />} />
             <Route path="/qidiruv"    element={<SearchPage />} />
+            <Route path="/ai-test"    element={<AiTestHub />} />
+            <Route path="/ai-test/:id" element={<AiTestSession />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
