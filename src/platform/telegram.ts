@@ -72,13 +72,15 @@ export function syncTelegramSafeArea(): void {
     const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent) || tg.platform === 'ios')
     const isAndroid = typeof navigator !== 'undefined' && (/Android/i.test(navigator.userAgent) || tg.platform === 'android')
 
+    const isFullscreen = tg.isFullscreen === true
     const contentTop = tg.contentSafeAreaInset?.top ?? 0
     const safeTop = tg.safeAreaInset?.top ?? 0
 
     // Telegram fullscreen rejimida floating buttons / status bar ostida qolmasligi uchun:
     // iOS (Dynamic Island / notch + floating buttons) = ~88px; Android = ~72px.
-    const fallbackTop = isIos ? 88 : isAndroid ? 72 : 0
-    const top = Math.max(contentTop, safeTop, fallbackTop)
+    // Standart (non-fullscreen) rejimda webview Telegram header'i ostida boshlanadi -> top = 0.
+    const fallbackTop = isFullscreen ? (isIos ? 88 : isAndroid ? 72 : 0) : 0
+    const top = isFullscreen ? Math.max(contentTop, safeTop, fallbackTop) : Math.max(contentTop, safeTop)
 
     const contentBottom = tg.contentSafeAreaInset?.bottom ?? 0
     const safeBottom = tg.safeAreaInset?.bottom ?? 0

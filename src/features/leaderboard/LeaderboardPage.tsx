@@ -206,46 +206,47 @@ export default function LeaderboardPage() {
 
   return (
     <div>
-      {/* ── Top Bar: Orqaga tugmasi & Markaziy "Leaderboard" sarlavhasi ── */}
-      <div className="relative flex items-center justify-center px-4 pt-3 pb-3">
-        <button
-          onClick={() => goBack(navigate)}
-          aria-label={tt('backWord')}
-          className="absolute left-4 top-3 grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <ChevronLeft size={22} strokeWidth={2.2} />
-        </button>
-        <h1 className="font-display text-[22px] font-extrabold tracking-tight text-pprimary">
-          {tt('leaderboard')}
-        </h1>
-      </div>
+      {/* ── Top Bar & Segmented Control Tabs (Sticky Header) ── */}
+      <div className="sticky top-[var(--safe-top,0px)] z-30 bg-pcanvas/85 backdrop-blur-md border-b border-pline pb-2.5 mb-3">
+        <div className="relative flex items-center justify-center px-4 py-2">
+          <button
+            onClick={() => goBack(navigate)}
+            aria-label={tt('backWord')}
+            className="absolute left-4 top-1.5 grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          >
+            <ChevronLeft size={22} strokeWidth={2.2} />
+          </button>
+          <h1 className="font-display text-[20px] font-extrabold tracking-tight text-pprimary">
+            {tt('leaderboard')}
+          </h1>
+        </div>
 
-      {/* ── Segmented Control Tabs (Global Button Style) ── */}
-      <div className="px-4 mb-3">
-        <div className="flex gap-1.5 bg-psurface p-1 rounded-control border border-pline">
-          {(['daily', 'weekly', 'monthly'] as const).map((t) => {
-            const label =
-              t === 'daily'   ? tt('dailyTab') :
-              t === 'weekly'  ? tt('weeklyTab') :
-              tt('monthlyTab')
-            const active = tab === t
+        <div className="px-4">
+          <div className="flex gap-1.5 bg-psurface p-1 rounded-control border border-pline">
+            {(['daily', 'weekly', 'monthly'] as const).map((t) => {
+              const label =
+                t === 'daily'   ? tt('dailyTab') :
+                t === 'weekly'  ? tt('weeklyTab') :
+                tt('monthlyTab')
+              const active = tab === t
 
-            return (
-              <button
-                key={t}
-                type="button"
-                onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
-                className={cn(
-                  'flex-1 py-2 rounded-lg text-sm font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
-                  active
-                    ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
-                    : 'text-pmuted hover:text-pfg'
-                )}
-              >
-                {label}
-              </button>
-            )
-          })}
+              return (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
+                  className={cn(
+                    'flex-1 py-1.5 rounded-lg text-sm font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
+                    active
+                      ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
+                      : 'text-pmuted hover:text-pfg'
+                  )}
+                >
+                  {label}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </div>
 

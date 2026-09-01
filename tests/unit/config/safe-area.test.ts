@@ -77,9 +77,9 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     expect(css).toMatch(/\.safe-bottom\s*\{\s*padding-bottom:\s*var\(--safe-bottom/)
   })
 
-  it('DialogOverlay bottom-sheet\'lar MARKAZIY --safe-bottom lift\'ga ega', () => {
+  it('DialogOverlay bottom-sheet\'lar to\'liq tubiga (items-end) yopishadi', () => {
     const overlay = fs.readFileSync(path.join(SRC, 'shared/components/DialogOverlay.tsx'), 'utf8')
-    expect(overlay).toContain("items-end pb-[var(--safe-bottom,0px)]")
+    expect(overlay).toContain("items-end")
   })
 
   /**

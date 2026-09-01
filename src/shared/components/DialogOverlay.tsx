@@ -124,7 +124,7 @@ export default function DialogOverlay({ onClose, labelId, children, position = '
       aria-modal="true"
       aria-labelledby={labelId}
       style={{ zIndex }}
-      className={`fixed inset-0 flex ${position === 'center' ? 'items-center justify-center p-4' : 'items-end pb-[var(--safe-bottom,0px)]'} ${className ?? ''}`}
+      className={`fixed inset-0 flex ${position === 'center' ? 'items-center justify-center p-4' : 'items-end justify-center'} ${className ?? ''}`}
     >
       <div className={`absolute inset-0 ${backdropClassName}`} onClick={() => onCloseRef.current()} />
       {children}

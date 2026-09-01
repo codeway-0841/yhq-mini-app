@@ -348,29 +348,29 @@ export default function Belgilar() {
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
   return (
-    <div className="px-5 pt-3">
+    <div className="px-4 pb-4">
       {!selectedCategory && (
         <>
-          <div className="flex items-center gap-2 mb-4">
+          <div className="sticky top-[var(--safe-top,0px)] z-30 -mx-4 px-4 py-2.5 mb-4 bg-pcanvas/85 backdrop-blur-md border-b border-pline flex items-center gap-2">
             <button
               onClick={() => goBack(navigate)}
               aria-label={isRu ? 'Назад' : 'Orqaga'}
-              className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <ChevronLeft size={20} strokeWidth={1.75} />
             </button>
-            <h1 className="flex-1 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">
+            <h1 className="flex-1 font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
               {isRu ? 'Правила и знаки' : "Yo'l qoidalari"}
             </h1>
             <button
               onClick={() => navigate('/belgilar-oyini')}
-              className="h-[34px] px-3 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1.5 text-[12px]"
+              className="h-[32px] px-2.5 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px]"
             >
               <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
             </button>
             <button
               onClick={() => navigate('/flashcards')}
-              className="h-[34px] px-3 rounded-control bg-psurface border border-pline text-pfg font-semibold hover:bg-plineStrong active:scale-[0.98] transition-all flex items-center gap-1.5 text-[12px]"
+              className="h-[32px] px-2.5 rounded-control bg-psurface border border-pline text-pfg font-semibold hover:bg-plineStrong active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px]"
             >
               <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
             </button>

@@ -150,18 +150,15 @@ export default function Profil() {
   }
 
   return (
-    <div className="pt-3">
-      {/* ← Back */}
-      <div className="mb-1 px-5">
+    <div className="pb-4">
+      {/* Sticky Header */}
+      <div className="sticky top-[var(--safe-top,0px)] z-30 mb-4 px-4 py-2.5 bg-pcanvas/85 backdrop-blur-md border-b border-pline flex items-center gap-2">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="flex h-11 items-center gap-1 rounded-control text-sm text-pmuted transition-opacity hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={18} strokeWidth={1.75} />
-          <span>{tt('backWord')}</span>
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
+        <h1 className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">{tt('profile')}</h1>
       </div>
-
-      {/* Page title */}
-      <h1 className="mb-4 px-5 font-display text-[22px] font-semibold tracking-[-0.02em] text-pfg">{tt('profile')}</h1>
 
       {/* ── Gorizontal Profil Kartasi ── */}
       <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4 transition-all duration-150">

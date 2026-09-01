@@ -92,12 +92,12 @@ export default function StatistikaPage() {
     navigate('/test/1', { state: { questionIds: ids, title } })
 
   return (
-    <div className="font-display bg-pcanvas text-pfg">
+    <div className="font-display bg-pcanvas text-pfg pb-4">
       {/* Header */}
-      <div className="flex items-center gap-2 px-5 pt-3 pb-2">
+      <div className="sticky top-[var(--safe-top,0px)] z-30 flex items-center gap-2 px-4 py-2.5 bg-pcanvas/85 backdrop-blur-md border-b border-pline">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="text-psubtle hover:text-pfg px-1 transition-colors">
-          <ChevronLeft size={24} />
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <BarChart2 size={18} className="text-pprimary" />
         <h1 className="text-lg font-semibold tracking-tight">

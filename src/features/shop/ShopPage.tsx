@@ -212,13 +212,13 @@ export default function ShopPage() {
   } as Record<string, string>)[reason] ?? reason
 
   return (
-    <div className="font-display bg-pcanvas text-pfg">
+    <div className="font-display bg-pcanvas text-pfg pb-4">
       {celebrate && <Confetti count={40} />}
 
       {/* Header */}
-      <div className="flex items-center gap-2 px-5 pt-3 pb-2">
+      <div className="sticky top-[var(--safe-top,0px)] z-30 flex items-center gap-2 px-4 py-2.5 bg-pcanvas/85 backdrop-blur-md border-b border-pline">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg">
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-lg font-semibold tracking-tight">{tt('shopTitle')}</h1>
