@@ -23,7 +23,15 @@ import {
   type AiTestTask,
 } from '../../../shared/ai-daily-test'
 
-const MODELS = ['gemini-flash-latest', 'gemini-2.0-flash-exp', 'gemini-pro-latest'] as const
+// Model fallback tartibi (2026-09-01): gemini-2.5-* Google'da O'CHIRILGAN (404),
+// gemini-flash-latest davriy 503/429 qaytaradi — ishlaydigan avlod 3.x birinchi.
+const MODELS = [
+  'gemini-3-flash-preview',
+  'gemini-3.1-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-flash-latest',
+  'gemini-pro-latest',
+] as const
 const TIMEOUT_MS = 75_000
 
 // ── Gemini JSON chaqiriq (model fallback bilan) ─────────────────────────────

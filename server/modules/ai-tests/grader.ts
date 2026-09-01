@@ -29,6 +29,15 @@ import {
 
 const GRADE_TIMEOUT_MS = 60_000
 
+// generator.ts dagi MODELS bilan bir xil tartib (3.x avlod — 2.5 o'chirilgan)
+const GRADE_MODELS = [
+  'gemini-3-flash-preview',
+  'gemini-3.1-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-flash-latest',
+  'gemini-pro-latest',
+] as const
+
 const AiGradeSchema = z.object({
   essay: z.object({
     score: z.number().min(0).max(10),
@@ -185,21 +194,32 @@ ${parts.join('\n\n')}
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), GRADE_TIMEOUT_MS)
   try {
-    const res = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-        signal: controller.signal,
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 2048, temperature: 0.2 },
-        }),
-      },
-    )
-    if (!res.ok) {
-      const text = await res.text().catch(() => '')
-      console.error('[ai-test-grade] Gemini error:', res.status, text.slice(0, 200))
+    // Model fallback: bitta model 404/429/503 qaytsa keyingisiga o'tiladi
+    let res: Response | null = null
+    let lastStatus = 0
+    for (const model of GRADE_MODELS) {
+      try {
+        const attempt = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+            signal: controller.signal,
+            body: JSON.stringify({
+              contents: [{ role: 'user', parts: [{ text: prompt }] }],
+              generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 2048, temperature: 0.2 },
+            }),
+          },
+        )
+        if (attempt.ok) { res = attempt; break }
+        lastStatus = attempt.status
+        console.warn(`[ai-test-grade] ${model}: HTTP ${attempt.status}`)
+      } catch (err) {
+        console.warn(`[ai-test-grade] ${model}:`, (err as Error)?.message ?? err)
+      }
+    }
+    if (!res) {
+      console.error('[ai-test-grade] barcha modellar yiqildi, oxirgi status:', lastStatus)
       throw new AppError(503, 'AI baholash vaqtincha ishlamayapti — birozdan so‘ng qayta yuboring')
     }
     const json = await res.json()
