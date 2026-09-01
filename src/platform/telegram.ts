@@ -45,6 +45,7 @@ interface TelegramWebApp {
   requestContact?(callback: (ok: boolean, data?: { contact?: { phone_number: string } }) => void): void
   addToHomeScreen?(): void
   isFullscreen?: boolean
+  platform?: string
   safeAreaInset?: SafeAreaInset
   contentSafeAreaInset?: SafeAreaInset
   onEvent?(eventType: string, eventHandler: () => void): void
