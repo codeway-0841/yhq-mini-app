@@ -348,10 +348,10 @@ export default function Belgilar() {
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
   return (
-    <div className="px-4 pb-4">
+    <div className="px-4 pt-3 pb-4">
       {!selectedCategory && (
         <>
-          <div className="sticky top-[var(--safe-top,0px)] z-30 -mx-4 px-4 py-2.5 mb-4 bg-pcanvas/85 backdrop-blur-md border-b border-pline flex items-center gap-2">
+          <div className="flex items-center gap-2 mb-4">
             <button
               onClick={() => goBack(navigate)}
               aria-label={isRu ? 'Назад' : 'Orqaga'}

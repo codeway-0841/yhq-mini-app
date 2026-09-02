@@ -65,7 +65,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
     (theme === 'system' && typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches)
 
   return (
-    <div className="sticky top-[var(--safe-top,0px)] z-30 flex items-center justify-between gap-3 px-4 pb-2 pt-2 bg-pcanvas/85 backdrop-blur-md border-b border-pline/50">
+    <div className="flex items-center justify-between gap-3 px-4 pb-2 pt-2">
       <button
         onClick={onProfile}
         className="flex min-w-0 items-center gap-3 rounded-control transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"

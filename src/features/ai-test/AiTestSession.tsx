@@ -235,9 +235,9 @@ export default function AiTestSession() {
   if (phase === 'result' && result) {
     const g = result.grading
     return (
-      <div className="px-4 pb-4">
+      <div className="px-4 pt-3 pb-4">
         {result.coinsAwarded > 0 && <Confetti />}
-        <div className="sticky top-[var(--safe-top,0px)] z-30 -mx-4 px-4 py-2.5 mb-4 bg-pcanvas/85 backdrop-blur-md border-b border-pline flex items-center gap-2">
+        <div className="flex items-center gap-2 mb-4">
           <button onClick={() => navigate('/ai-test')} aria-label={tt('backWord')}
             className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
@@ -275,8 +275,8 @@ export default function AiTestSession() {
 
   // ── SESSIYA ────────────────────────────────────────────────────────────────
   return (
-    <div className="px-4 pb-28">
-      <div className="sticky top-[var(--safe-top,0px)] z-30 -mx-4 px-4 py-2.5 mb-3 bg-pcanvas/85 backdrop-blur-md border-b border-pline">
+    <div className="px-4 pt-3 pb-28">
+      <div className="mb-3">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
             className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">

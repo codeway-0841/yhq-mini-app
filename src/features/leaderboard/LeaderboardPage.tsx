@@ -205,9 +205,9 @@ export default function LeaderboardPage() {
   const restEntries = hasTop3 ? entriesList.slice(3) : entriesList
 
   return (
-    <div>
-      {/* ── Top Bar & Segmented Control Tabs (Sticky Header) ── */}
-      <div className="sticky top-[var(--safe-top,0px)] z-30 bg-pcanvas/85 backdrop-blur-md border-b border-pline pb-2.5 mb-3">
+    <div className="pt-3">
+      {/* ── Top Bar & Segmented Control Tabs ── */}
+      <div className="mb-3">
         <div className="relative flex items-center justify-center px-4 py-2">
           <button
             onClick={() => goBack(navigate)}
