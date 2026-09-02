@@ -134,4 +134,12 @@ describe('Telegram ichida', () => {
     expect(tg.setHeaderColor).toHaveBeenCalledWith('#fafaf9')
     expect(tg.setBackgroundColor).toHaveBeenCalledWith('#fafaf9')
   })
+
+  it('readyAndExpand: disableVerticalSwipes chaqiriladi', async () => {
+    const { readyAndExpand } = await import('../../../src/platform/telegram')
+    const tg = webApp()
+    tg.disableVerticalSwipes = vi.fn()
+    readyAndExpand()
+    expect(tg.disableVerticalSwipes).toHaveBeenCalledOnce()
+  })
 })

@@ -54,6 +54,8 @@ interface TelegramWebApp {
   offEvent?(eventType: string, eventHandler: () => void): void
   requestFullscreen?(): void
   exitFullscreen?(): void
+  disableVerticalSwipes?(): void
+  enableVerticalSwipes?(): void
 }
 
 export function getTelegramWebApp(): TelegramWebApp | undefined {
@@ -147,6 +149,9 @@ export function readyAndExpand(): void {
     tg.expand?.()
     try {
       tg.requestFullscreen?.()
+    } catch (_) {}
+    try {
+      tg.disableVerticalSwipes?.()
     } catch (_) {}
     syncTelegramSafeArea()
     const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'

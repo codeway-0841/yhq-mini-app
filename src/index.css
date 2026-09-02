@@ -95,6 +95,13 @@ input, button, select, textarea {
 }
 body { padding-top: var(--safe-top-body, 0px); }
 
+/* Layout root balandligi: body padding-top bilan min-h-screen (100vh) qo'shilib
+   qisqa sahifalarda 88px ortiqcha scroll hosil qilmasligi uchun: */
+#root > div.relative {
+  min-height: calc(100vh - var(--safe-top-body, 0px));
+  min-height: calc(100dvh - var(--safe-top-body, 0px));
+}
+
 /* Native APK (Capacitor edge-to-edge): status bar balandligi */
 body[data-platform='native'] {
   --safe-top: env(safe-area-inset-top, 0px);
