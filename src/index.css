@@ -813,12 +813,16 @@ h1, h2, h3 {
 
 /* ── Karta va konteyner chuqurligi (Apple HIG micro-depth) ─────────────── */
 body[data-theme='light'] .rounded-container.bg-pcard,
-body[data-theme='light'] .rounded-container.bg-card {
+body[data-theme='light'] .rounded-2xl.bg-pcard,
+body[data-theme='light'] .rounded-container.bg-card,
+body[data-theme='light'] .rounded-2xl.bg-card {
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 4px 14px rgba(15, 23, 42, 0.03);
 }
 
 body[data-theme='dark'] .rounded-container.bg-pcard,
-body[data-theme='dark'] .rounded-container.bg-card {
+body[data-theme='dark'] .rounded-2xl.bg-pcard,
+body[data-theme='dark'] .rounded-container.bg-card,
+body[data-theme='dark'] .rounded-2xl.bg-card {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
