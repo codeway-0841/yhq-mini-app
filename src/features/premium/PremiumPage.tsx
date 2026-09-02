@@ -83,7 +83,7 @@ export default function PremiumPage() {
       </header>
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
-      <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
+      <div className="mx-5 mt-2 rounded-2xl border border-pline bg-pcard px-4 py-3.5 shadow-xs">
         <div className="flex items-center gap-3.5">
           <PremiumIcon size={24} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
@@ -118,7 +118,7 @@ export default function PremiumPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? 'Возможности' : 'Imkoniyatlar'}
       </p>
-      <div className="mx-5 rounded-container border border-pline bg-pcard divide-y divide-pline">
+      <div className="mx-5 rounded-2xl border border-pline bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
         {BENEFITS.map((b, i) => (
           <div key={i} className="flex items-center gap-3.5 px-4 py-3.5">
             <b.icon size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
@@ -134,7 +134,7 @@ export default function PremiumPage() {
       <div className="flex gap-3 px-5 overflow-x-auto pb-2 scroll-smooth-x">
         {premiumThemes.map((t) => (
           <div key={t.id} className="flex-none w-[104px]">
-            <div className="h-[64px] rounded-container overflow-hidden border border-pline relative"
+            <div className="h-[64px] rounded-xl overflow-hidden shadow-xs relative"
               style={{ background: t.bg }}>
               <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
                 style={{ background: t.card, border: `1px solid ${t.color}4d` }} />
@@ -164,7 +164,7 @@ export default function PremiumPage() {
         </div>
       )}
       {trialDone && (
-        <div className="mx-5 mt-4 rounded-container border border-[rgb(var(--p-success-rgb)/0.35)] bg-[rgb(var(--p-success-rgb)/0.09)] p-4 text-center">
+        <div className="mx-5 mt-4 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.09)] p-4 text-center shadow-xs">
           <p className="flex items-center justify-center gap-1.5 text-[14px] font-semibold text-psuccess">
             <CheckCircle2 size={16} strokeWidth={1.75} />
             {lang === 'ru' ? 'Пробный период активирован' : 'Sinov muddati faollashdi'}
@@ -186,11 +186,11 @@ export default function PremiumPage() {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (
                 <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
-                  className={`rounded-container border bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-transform ${
-                    highlight ? 'border-pprimary' : 'border-pline'
+                  className={`rounded-2xl border bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface ${
+                    highlight ? 'border-pprimary ring-1 ring-pprimary' : 'border-pline'
                   }`}>
                   {highlight && (
-                    <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full border border-[rgb(var(--p-primary-rgb)/0.35)] bg-pwash px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-pprimary">
+                    <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full bg-pwash px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-pprimary shadow-xs">
                       {lang === 'ru' ? 'Самый популярный' : 'Eng mashhur'}
                     </span>
                   )}

@@ -99,10 +99,10 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
           const Icon = s.icon
           return (
             <button key={s.id} onClick={() => toggle(s.id, s.available)}
-              className={`flex items-center gap-3.5 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+              className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
                 !s.available ? 'opacity-55' : ''
               } ${
-                active ? 'border-pprimary bg-pprimary/10' : 'border-pline bg-pcard'
+                active ? 'ring-2 ring-pprimary bg-pprimary/10' : 'bg-pcard hover:bg-psurface'
               }`}>
               <Icon size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
               <span className="flex-1 text-[15px] font-semibold text-pfg">
@@ -114,7 +114,7 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
                 </span>
               )}
               {active && s.available && (
-                <span className="w-7 h-7 rounded-lg border-2 bg-pprimary border-pprimary flex items-center justify-center flex-none">
+                <span className="size-7 rounded-xl bg-pprimary flex items-center justify-center flex-none shadow-xs">
                   <Check size={16} className="text-white" strokeWidth={3.2} />
                 </span>
               )}
@@ -157,8 +157,8 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
           const active = goal === g.id
           return (
             <button key={g.id} onClick={() => setGoal(g.id)}
-              className={`flex items-center gap-3.5 w-full rounded-container border-2 p-4 text-left transition-all active:scale-[0.98] ${
-                active ? 'border-pprimary bg-pprimary/10' : 'border-pline bg-pcard'
+              className={`flex items-center gap-3.5 w-full rounded-2xl p-4 text-left transition-all active:scale-[0.98] shadow-xs ${
+                active ? 'ring-2 ring-pprimary bg-pprimary/10' : 'bg-pcard hover:bg-psurface'
               }`}>
               <div className="w-11 h-11 rounded-full flex items-center justify-center flex-none"
                 style={{ background: `color-mix(in srgb, ${g.color} 15%, transparent)`, color: g.color }}>
@@ -168,10 +168,10 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
                 <p className="text-[15px] font-semibold text-pfg leading-tight">{g.label}</p>
                 <p className="text-[11px] font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>{g.desc}</p>
               </div>
-              <span className={`w-6 h-6 rounded-full border-2 flex items-center justify-center flex-none transition-all ${
-                active ? 'border-pprimary' : 'border-pline'
+              <span className={`size-6 rounded-full flex items-center justify-center flex-none transition-all ${
+                active ? 'ring-2 ring-pprimary bg-pprimary/15' : 'bg-psurface'
               }`}>
-                {active && <span className="w-3 h-3 rounded-full bg-pprimary" />}
+                {active && <span className="size-2.5 rounded-full bg-pprimary" />}
               </span>
             </button>
           )
@@ -179,9 +179,9 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
       </div>
 
       {/* Maqsad kartasi */}
-      <div className="mt-4 rounded-container border border-pline p-3.5 flex items-center gap-3"
+      <div className="mt-4 rounded-2xl p-3.5 flex items-center gap-3 shadow-xs"
         style={{ background: 'var(--p-card)' }}>
-        <div className="w-10 h-10 rounded-control flex items-center justify-center flex-none"
+        <div className="size-10 rounded-xl flex items-center justify-center flex-none shadow-2xs"
           style={{ background: 'color-mix(in srgb, var(--p-danger) 15%, transparent)' }}>
           <Rocket size={20} className="text-pdanger" />
         </div>

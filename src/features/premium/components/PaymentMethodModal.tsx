@@ -148,13 +148,13 @@ export default function PaymentMethodModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full sm:max-w-md bg-pcard border border-pline rounded-t-sheet sm:rounded-container p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
+        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-2xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-pline">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-control bg-psurface flex items-center justify-center text-pgold">
+            <div className="size-8 rounded-xl bg-psurface flex items-center justify-center text-pgold shadow-2xs">
               <Sparkles size={16} strokeWidth={1.75} />
             </div>
             <div>
@@ -193,7 +193,7 @@ export default function PaymentMethodModal({
             </div>
             <button
               onClick={onClose}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 w-full py-3 rounded-container text-sm"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 w-full py-3 rounded-2xl text-sm shadow-xs"
             >
               {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
             </button>
@@ -201,7 +201,7 @@ export default function PaymentMethodModal({
         ) : (
           <div className="py-4 space-y-4">
             {/* Price Badge */}
-            <div className="p-4 rounded-container bg-psurface border border-pline flex items-center justify-between">
+            <div className="p-4 rounded-2xl bg-psurface flex items-center justify-between shadow-xs">
               <span className="text-xs font-semibold text-pmuted">
                 {lang === 'ru' ? 'К оплате:' : "To'lov summasi:"}
               </span>
@@ -219,7 +219,7 @@ export default function PaymentMethodModal({
 
             {/* Waiting for payment indicator */}
             {isWaitingPayment && (
-              <div className="p-3.5 rounded-container bg-pblue/10 border border-pblue/30 flex items-center gap-3">
+              <div className="p-3.5 rounded-2xl bg-pblue/10 flex items-center gap-3 shadow-xs">
                 <Loader2 size={20} className="text-pblue animate-spin flex-shrink-0" />
                 <div className="text-xs leading-tight">
                   <p className="font-semibold text-pblue">

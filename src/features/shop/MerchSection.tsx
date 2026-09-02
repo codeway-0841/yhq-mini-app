@@ -49,9 +49,9 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
           const soldOut = remaining <= 0
           const owned = state?.alreadyOwned ?? false
           return (
-            <div key={item.id} className="rounded-container border border-pline bg-pcard p-4 flex items-center gap-3.5 relative overflow-hidden">
+            <div key={item.id} className="rounded-2xl border border-pline bg-pcard p-4 flex items-center gap-3.5 relative overflow-hidden shadow-xs">
               {/* v3: emoji tile O'RNIGA lucide ikonka (merch-icons.ts) — neytral chip */}
-              <div className="flex size-14 flex-none items-center justify-center rounded-[14px] border border-pline bg-psurface">
+              <div className="flex size-14 flex-none items-center justify-center rounded-xl bg-psurface shadow-2xs">
                 {(() => { const Icon = getMerchIcon(item.id); return <Icon size={22} strokeWidth={1.75} className="text-pmuted" /> })()}
               </div>
               <div className="flex-1 min-w-0">
@@ -64,16 +64,11 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
               </div>
               <div className="flex-none">
                 {owned ? (
-                  <span className="inline-flex items-center gap-1 px-3 py-2 rounded-control text-[11px] font-semibold"
-                    style={{
-                      background: 'rgb(var(--p-success-rgb) / 0.12)',
-                      border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
-                      color: 'var(--p-success)',
-                    }}>
+                  <span className="inline-flex items-center gap-1 px-3 py-2 rounded-xl text-[11px] font-semibold bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess shadow-xs">
                     <Check size={12} strokeWidth={1.75} /> {tt('merchOwned')}
                   </span>
                 ) : soldOut ? (
-                  <span className="inline-flex items-center gap-1 px-3 py-2 rounded-control text-[11px] font-semibold text-psubtle bg-psurface border border-pline">
+                  <span className="inline-flex items-center gap-1 px-3 py-2 rounded-xl text-[11px] font-semibold text-psubtle bg-psurface shadow-xs">
                     {tt('merchSoldOut')}
                   </span>
                 ) : (

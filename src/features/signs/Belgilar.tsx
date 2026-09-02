@@ -73,13 +73,13 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
           </span>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+            className="size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
             aria-label={isRu ? 'Закрыть' : 'Yopish'}
           >
             <X size={16} />
           </button>
         </div>
-        <div className="w-40 h-40 mx-auto rounded-container bg-white/95 border border-pline shadow-inner flex items-center justify-center mb-4 p-3">
+        <div className="size-40 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3">
           {sign.image ? (
             <img src={sign.image} alt={signName} className="w-full h-full object-contain" />
           ) : (
@@ -90,12 +90,12 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
           {signName}
         </h3>
         <p className="text-center text-xs text-pmuted mb-4 font-medium">{legalRef}</p>
-        <div className="bg-pcanvas/60 border border-pline p-4 rounded-container mb-5">
+        <div className="bg-pcard shadow-xs p-4 rounded-2xl mb-5">
           <FormattedDescription text={signDesc} lang={lang} />
         </div>
         <button
           onClick={onClose}
-          className="w-full py-3.5 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all"
+          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all shadow-xs"
         >
           {isRu ? 'Закрыть' : 'Yopish'}
         </button>
@@ -277,7 +277,7 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
         const isExpanded = expandedChapter === ch.chapter || query.trim().length > 0
         const isFines = ch.chapter === 30
         return (
-          <div key={ch.chapter} className="rounded-container border border-pline bg-psurface overflow-hidden shadow-xs">
+          <div key={ch.chapter} className="rounded-2xl border border-pline bg-psurface overflow-hidden shadow-xs">
             <button
               onClick={() => setExpandedChapter(isExpanded && !query.trim() ? null : ch.chapter)}
               className="w-full p-4 flex items-center justify-between text-left hover:bg-pcanvas/30 transition-colors"

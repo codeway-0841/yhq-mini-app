@@ -76,7 +76,7 @@ export default function DailyTasksCard() {
   // Yuklanmoqda/xato — sahifa paypoqni buzmaslik uchun ixcham qaytamiz
   if (tasks === null) {
     return error ? null : (
-      <div className="mx-4 mb-5 rounded-container border border-pline bg-pcard p-4">
+      <div className="mx-4 mb-5 rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
         <Skeleton className="mb-3 h-2.5 w-28" />
         <div className="space-y-3">
           <Skeleton className="h-3 w-full" />
@@ -95,7 +95,7 @@ export default function DailyTasksCard() {
   if (visible.length === 0) return null
 
   return (
-    <div className="mx-4 mb-5 rounded-container border border-pline bg-pcard p-4">
+    <div className="mx-4 mb-5 rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
       {celebrate && <Confetti count={32} />}
       <p className="mb-3 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">
         <ClipboardCheck size={11} strokeWidth={1.75} /> {tt('dailyTasksTitle')}

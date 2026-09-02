@@ -86,7 +86,7 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
         ) : (
           /* Buyurtmalar ro'yxati */
           <div className="mt-4 -mx-5 overflow-y-auto px-5">
-            <div className="rounded-container border border-pline bg-pcard divide-y divide-pline">
+            <div className="rounded-2xl border border-pline bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
               {rows.map((r) => {
                 const s = statusView(r.status, tt)
                 const plan = getPlan(r.plan)
@@ -105,11 +105,10 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
                     <div className="flex-none text-right">
                       <p className="text-[13px] font-semibold tabular-nums text-pfg">{formatUzs(r.amountUzs, lang)}</p>
                       <span
-                        className="mt-1 inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold"
+                        className="mt-1 inline-block rounded-full px-2.5 py-0.5 text-[10px] font-semibold shadow-2xs"
                         style={{
                           color: `rgb(${s.rgb})`,
-                          background: `rgb(${s.rgb} / 0.12)`,
-                          border: `1px solid rgb(${s.rgb} / 0.35)`,
+                          background: `rgb(${s.rgb} / 0.15)`,
                         }}
                       >
                         {s.label}

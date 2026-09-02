@@ -303,7 +303,7 @@ export default function ShopPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
             <PremiumIcon size={12} /> Premium
           </p>
-          <div className="mx-5 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
+          <div className="mx-5 rounded-2xl border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
             <div className="flex size-10 flex-none items-center justify-center text-pgold">
               <Sparkles size={22} strokeWidth={1.75} />
             </div>
@@ -326,7 +326,7 @@ export default function ShopPage() {
       )}
 
       {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
-      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
+      <div className="mx-5 mt-4 rounded-2xl border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
         <div className="flex size-10 flex-none items-center justify-center text-ppurple">
           <Gift size={22} strokeWidth={1.75} />
         </div>
@@ -373,13 +373,14 @@ export default function ShopPage() {
       {spinOpen && <SpinModal onClose={() => setSpinOpen(false)} />}
 
       {/* ── Tangalar tarixi ── */}
-      <div className="mx-5 mt-6">        <button onClick={toggleHistory}
-          className="w-full rounded-container border border-pline bg-pcard p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-semibold text-pmuted active:scale-[0.98] transition-transform">
+      <div className="mx-5 mt-6">
+        <button onClick={toggleHistory}
+          className="w-full rounded-2xl border border-pline bg-pcard p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-semibold text-pmuted active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
           {historyBusy ? <Loader2 size={14} className="animate-spin" /> : <History size={14} />}
           {history === null ? tt('shopHistoryTitle') : tt('shopHideHistory')}
         </button>
         {history !== null && (
-          <div className="rounded-container border border-pline bg-pcard mt-2 divide-y divide-pline animate-fadeIn">
+          <div className="rounded-2xl border border-pline bg-pcard mt-2 divide-y divide-pline animate-fadeIn shadow-xs overflow-hidden">
             {history.length === 0 && (
               <p className="text-center text-[12px] text-psubtle py-5">{tt('shopHistoryEmpty')}</p>
             )}
