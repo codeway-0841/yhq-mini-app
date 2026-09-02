@@ -46,7 +46,7 @@ export default function Toast({ id, type, message, duration = 3000, onClose }: T
       role={type === 'error' ? 'alert' : 'status'}
       aria-live={type === 'error' ? 'assertive' : 'polite'}
       className={cn(
-        'flex items-start gap-3 rounded-container border border-pline bg-pcard p-3.5',
+        'flex items-start gap-3 rounded-2xl bg-pcard p-3.5 shadow-xl',
         'shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]',
         'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:slide-in-from-top-2 motion-safe:duration-200',
       )}
@@ -56,7 +56,7 @@ export default function Toast({ id, type, message, duration = 3000, onClose }: T
       <button
         onClick={() => onClose(id)}
         className={cn(
-          'grid size-6 shrink-0 place-items-center rounded-[7px] text-psubtle',
+          'grid size-6 shrink-0 place-items-center rounded-lg text-psubtle',
           'transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
         )}

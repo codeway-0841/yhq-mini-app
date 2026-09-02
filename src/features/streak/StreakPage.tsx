@@ -161,7 +161,7 @@ export default function StreakPage() {
         <div className="grid grid-cols-3 gap-2.5 mb-4">
           {[0, 1, 2].map((i) => (
             <div key={i} className="rounded-2xl bg-pcard p-3 text-center animate-pulse shadow-xs">
-              <div className="h-6 w-8 mx-auto rounded-md bg-psurface" />
+              <div className="h-6 w-8 mx-auto rounded-xl bg-psurface" />
               <div className="h-2.5 w-14 mx-auto rounded bg-psurface mt-2" />
             </div>
           ))}

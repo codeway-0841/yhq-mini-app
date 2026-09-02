@@ -116,11 +116,11 @@ export function DuelReactionPicker({
         <div className="absolute bottom-14 left-0 w-72 rounded-3xl bg-psurface border border-pline p-3.5 shadow-2xl space-y-3 z-50 animate-premiumIn">
           {/* Header & Tabs */}
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-1 bg-pcard p-0.5 rounded-xl border border-pline">
+            <div className="flex items-center gap-1 bg-pcard p-1 rounded-2xl shadow-xs">
               <button
                 type="button"
                 onClick={() => setTab('emojis')}
-                className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
+                className={`px-2.5 py-1.5 rounded-xl text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'emojis'
                     ? 'bg-ppurple text-ponprimary shadow-xs'
                     : 'text-pmuted hover:text-pfg'
@@ -132,7 +132,7 @@ export function DuelReactionPicker({
               <button
                 type="button"
                 onClick={() => setTab('taunts')}
-                className={`px-2.5 py-1 rounded-lg text-[11px] font-black flex items-center gap-1 transition-all ${
+                className={`px-2.5 py-1.5 rounded-xl text-[11px] font-black flex items-center gap-1 transition-all ${
                   tab === 'taunts'
                     ? 'bg-ppurple text-ponprimary shadow-xs'
                     : 'text-pmuted hover:text-pfg'

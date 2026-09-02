@@ -74,7 +74,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <span className="text-base font-semibold">{idx + 1}-{ru ? 'урок' : 'dars'}</span>
-        <span className="text-xs font-semibold text-pmuted bg-psurface px-2.5 py-1 rounded-lg">
+        <span className="text-xs font-semibold text-pmuted bg-psurface px-2.5 py-1 rounded-xl shadow-2xs">
           {idx + 1}/{list.length}
         </span>
       </div>

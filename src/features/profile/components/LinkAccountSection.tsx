@@ -276,13 +276,13 @@ export function LinkAccountSection() {
         <div className="px-4 pb-3.5 border-t border-pline pt-3 flex flex-col gap-2">
           <p className="text-[11.5px] text-pmuted leading-snug">{tt('authLinkCodeHint')}</p>
           <div className="flex items-center gap-2">
-            <code className="flex-1 bg-pcanvas border border-pline rounded-lg px-2.5 py-2 text-[12px] text-pfg truncate">
+            <code className="flex-1 bg-pcanvas rounded-xl px-2.5 py-2 text-[12px] text-pfg truncate shadow-xs">
               {tgLink.url ?? tgLink.code}
             </code>
             <button
               type="button"
               onClick={copyCode}
-              className="w-9 h-9 rounded-lg bg-psurface border border-pline flex items-center justify-center active:scale-95 transition-transform"
+              className="w-9 h-9 rounded-xl bg-psurface shadow-xs flex items-center justify-center active:scale-95 transition-transform"
             >
               {copied ? <Check size={14} className="text-psuccess" /> : <Copy size={14} className="text-pmuted" />}
             </button>

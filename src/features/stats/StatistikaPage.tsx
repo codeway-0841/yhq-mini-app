@@ -138,8 +138,8 @@ export default function StatistikaPage() {
                 <span className="text-[9px] font-semibold text-psubtle tabular-nums">
                   {r.answered > 0 ? r.answered : ''}
                 </span>
-                <div className="w-full h-20 rounded-md flex items-end overflow-hidden" style={{ background: 'var(--p-surface)' }}>
-                  <div className="w-full rounded-md transition-all duration-500"
+                <div className="w-full h-20 rounded-xl flex items-end overflow-hidden" style={{ background: 'var(--p-surface)' }}>
+                  <div className="w-full rounded-t-lg transition-all duration-500"
                     style={{
                       height: `${Math.max(pct * 100, r.answered > 0 ? 6 : 0)}%`,
                       background: r.answered > 0 ? 'var(--p-primary)' : 'transparent',

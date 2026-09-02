@@ -84,7 +84,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
       )}
 
       <button onClick={onCancel}
-        className="text-xs text-pmuted border border-pline px-5 py-2.5 rounded-xl hover:text-pfg transition-colors active:scale-95">
+        className="text-xs text-pmuted bg-psurface px-5 py-2.5 rounded-xl hover:text-pfg transition-colors active:scale-95 shadow-xs">
         {tt('cancel')}
       </button>
     </div>

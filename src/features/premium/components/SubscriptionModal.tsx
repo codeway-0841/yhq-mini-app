@@ -304,7 +304,7 @@ export default function SubscriptionModal({
 
                       {/* Narx va Muddat */}
                       <div className="text-right flex flex-col items-end shrink-0">
-                        <div className="flex items-center gap-1 rounded-full bg-psurface border border-pline px-2.5 py-0.5 text-[10.5px]">
+                        <div className="flex items-center gap-1 rounded-full bg-psurface px-2.5 py-0.5 text-[10.5px] shadow-2xs">
                           <span className="font-semibold text-pfg">
                             {lang === 'ru' ? plan.periodRu : plan.periodUz}
                           </span>
@@ -397,7 +397,7 @@ export default function SubscriptionModal({
                 <button
                   type="button"
                   onClick={handleGetHelp}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-psurface hover:bg-pcanvas border border-pline px-3 py-1 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-psurface hover:bg-pcanvas px-3 py-1 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer shadow-xs"
                 >
                   <Headphones size={12} />
                   <span>{tt('getHelp')}</span>
@@ -442,7 +442,7 @@ export default function SubscriptionModal({
               ) : (
                 <>
                   {/* Tanlangan Tarif Kartasi */}
-                  <div className="rounded-2xl border border-pline bg-psurface p-4 flex items-center justify-between gap-3 shadow-sm">
+                  <div className="rounded-2xl bg-psurface p-4 flex items-center justify-between gap-3 shadow-xs">
                     <div className="flex items-center gap-3.5">
                       <ClaudeTreeIcon className="size-8 text-pprimary shrink-0" />
                       <div>
@@ -473,7 +473,7 @@ export default function SubscriptionModal({
                     <p className="text-[12px] font-semibold text-pmuted">
                       {tt('verifiedPhone')}
                     </p>
-                    <div className="rounded-2xl border border-pline bg-psurface p-3.5 flex items-center justify-between gap-2 shadow-sm">
+                    <div className="rounded-2xl bg-psurface p-3.5 flex items-center justify-between gap-2 shadow-xs">
                       <div className="flex items-center gap-2.5">
                         <ShieldCheck size={19} className="text-pmuted" />
                         <span className="text-[14px] font-semibold text-pfg tabular-nums tracking-wide">
@@ -487,7 +487,7 @@ export default function SubscriptionModal({
                           onClose()
                         }}
                         aria-label="Tahrirlash"
-                        className="p-1.5 rounded-lg text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
+                        className="p-1.5 rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
                       >
                         <Pencil size={13} />
                       </button>
@@ -571,7 +571,7 @@ export default function SubscriptionModal({
                           type="button"
                           onClick={clearPromo}
                           aria-label={tt('cancel')}
-                          className="p-1.5 rounded-lg text-psuccess/60 hover:text-psuccess hover:bg-psurface transition-colors cursor-pointer"
+                          className="p-1.5 rounded-xl text-psuccess/60 hover:text-psuccess hover:bg-psurface transition-colors cursor-pointer"
                         >
                           <X size={14} />
                         </button>

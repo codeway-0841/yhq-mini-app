@@ -140,7 +140,7 @@ export default function ResultsModal({
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title">
       {passed && !hideVerdict && !disqualifiedByCheat && <Confetti />}
-      <div className="relative w-full rounded-container border border-pline bg-pcard rounded-t-sheet border-t border-plineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+      <div className="relative w-full bg-pcard rounded-t-sheet border-t border-plineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
         <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors">
           <X size={16} />
         </button>

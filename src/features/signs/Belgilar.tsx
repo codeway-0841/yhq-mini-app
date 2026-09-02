@@ -307,7 +307,7 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
                 {ch.articles.map((art) => (
                   <div key={art.id} className="p-3.5 rounded-2xl bg-pcard shadow-xs">
                     <span
-                      className={`inline-block text-[11px] font-bold px-2 py-0.5 rounded-lg mb-1.5 shadow-2xs ${
+                      className={`inline-block text-[11px] font-bold px-2 py-0.5 rounded-xl mb-1.5 shadow-2xs ${
                         isFines ? 'bg-pwarning/20 text-pwarning' : 'bg-pprimary/15 text-pprimary'
                       }`}
                     >

@@ -147,7 +147,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       {item.status === 'unanswered' && <HelpCircle size={13} className="text-psubtle" />}
                     </span>
                     {item.topicName && (
-                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-lg truncate max-w-[200px] shadow-2xs">
+                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-xl truncate max-w-[200px] shadow-2xs">
                         {item.topicName}
                       </span>
                     )}

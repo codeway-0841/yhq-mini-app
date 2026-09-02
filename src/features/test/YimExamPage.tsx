@@ -182,7 +182,7 @@ export default function YimExamPage() {
                 goBack(navigate)
               }
             }}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+            className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
             title="Chiqish"
           >
             <ChevronLeft size={20} />
@@ -234,7 +234,7 @@ export default function YimExamPage() {
                   setCurrentIndex(idx)
                   haptics.impact('light')
                 }}
-                className={`relative w-8 h-8 min-[420px]:w-9 min-[420px]:h-9 rounded-lg font-mono text-xs font-black transition-all flex items-center justify-center ${
+                className={`relative w-8 h-8 min-[420px]:w-9 min-[420px]:h-9 rounded-xl font-mono text-xs font-black transition-all flex items-center justify-center ${
                   isCurrent
                     ? 'bg-sky-500 text-slate-950 shadow-md ring-2 ring-sky-300 scale-105'
                     : isAnswered
