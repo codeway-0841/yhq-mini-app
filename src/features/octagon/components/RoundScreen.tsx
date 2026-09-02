@@ -57,18 +57,18 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
         // To'g'ri variant FAQAT server ack/reveal'dan (lokal kalit yo'q)
         const showCorrect = answered && ackCorrectOptionId !== null && opt.id === ackCorrectOptionId
         const style =
-          !answered      ? 'bg-psurface border-pline text-pfg hover:bg-pcard' :
-          showCorrect    ? 'bg-psuccess/15 border-psuccess text-pfg' :
-          isSelected && ackCorrect === true ? 'bg-psuccess/20 border-psuccess text-pfg' :
+          !answered      ? 'bg-pcard text-pfg hover:bg-psurface shadow-xs' :
+          showCorrect    ? 'bg-psuccess/15 ring-2 ring-psuccess text-pfg shadow-xs' :
+          isSelected && ackCorrect === true ? 'bg-psuccess/20 ring-2 ring-psuccess text-pfg shadow-xs' :
           // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
-          isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-[rgb(var(--p-blue-rgb)/0.60)] text-pfg' :
-          isSelected    ? 'bg-pdanger/15   border-pdanger   text-pfg' :
-                          'bg-psurface border-pline text-pmuted'
+          isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] ring-2 ring-pblue text-pfg shadow-xs' :
+          isSelected    ? 'bg-pdanger/15 ring-2 ring-pdanger text-pfg shadow-xs' :
+                          'bg-psurface text-pmuted shadow-xs'
         return (
           <button key={`${q.id}_${opt.id}`} type="button" disabled={answered} onClick={() => onAnswer(opt.id)}
-            className={`w-full text-left rounded-xl border p-3.5 mb-2 transition-all focus:outline-none active:scale-[0.98] ${style}`}>
+            className={`w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all focus:outline-none active:scale-[0.98] ${style}`}>
             <div className="flex items-center gap-3">
-              <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-bold opacity-60 flex-shrink-0">
+              <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-2xs">
                 {opt.id}
               </span>
               <span className="text-sm">{opt.text}</span>

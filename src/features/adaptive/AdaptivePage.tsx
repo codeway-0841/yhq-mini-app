@@ -33,15 +33,15 @@ function Option({ id, text, state, onSelect, answered, label }: {
   onSelect: () => void; answered: boolean
   label?: string
 }) {
-  const base  = 'w-full text-left rounded-control border p-3.5 transition-all active:scale-[0.98]'
+  const base  = 'w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all active:scale-[0.98] shadow-xs focus:outline-none'
   const style =
-    state === 'correct' ? 'bg-psuccess/15 border-psuccess text-pfg' :
-    state === 'wrong'   ? 'bg-pdanger/15   border-pdanger   text-pfg' :
-                          'bg-psurface border-pline text-pfg'
+    state === 'correct' ? 'bg-psuccess/15 ring-2 ring-psuccess text-pfg' :
+    state === 'wrong'   ? 'bg-pdanger/15 ring-2 ring-pdanger text-pfg' :
+                          'bg-pcard text-pfg hover:bg-psurface'
   return (
-    <button className={`${base} ${style} mb-2`} onClick={onSelect} disabled={answered}>
+    <button className={`${base} ${style}`} onClick={onSelect} disabled={answered}>
       <div className="flex items-center gap-3">
-        <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-semibold opacity-60 flex-shrink-0">
+        <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-2xs">
           {label ?? id.toUpperCase()}
         </span>
         <span className="text-sm">{text}</span>
@@ -175,7 +175,7 @@ export default function AdaptivePage() {
             </div>
           )}
 
-          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] px-8 py-3.5 rounded-container text-base">
+          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] px-8 py-3.5 rounded-2xl text-base shadow-xs">
             {tt('adaptive')}
           </button>
         </div>

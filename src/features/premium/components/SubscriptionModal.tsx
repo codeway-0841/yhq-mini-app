@@ -282,10 +282,10 @@ export default function SubscriptionModal({
                       setSelectedPlanKey(plan.key)
                     }}
                     className={cn(
-                      'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden',
+                      'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden shadow-xs',
                       isSelected
-                        ? 'border-2 border-pprimary bg-psurface shadow-lg ring-1 ring-pprimary/20'
-                        : 'border border-pline bg-psurface/40 hover:border-plineStrong active:scale-[0.99]'
+                        ? 'ring-2 ring-pprimary bg-psurface shadow-md'
+                        : 'bg-psurface/40 hover:bg-psurface active:scale-[0.99]'
                     )}
                   >
                     {/* Yuqori qator: Claude Geometrik Daraxt Ikonkasi + Nom + Tavsif + Narx */}
@@ -508,10 +508,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('click')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
+                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'click'
-                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
-                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
+                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
                         <ClickLogo className="h-[18px] w-auto" />
@@ -525,10 +525,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('payme')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
+                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'payme'
-                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
-                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
+                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
                         <img src="/payme.svg" alt="Payme" className="h-[18px] w-auto" />
@@ -542,10 +542,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('stars')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl border transition-all active:scale-95 cursor-pointer',
+                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'stars'
-                            ? 'border-2 border-pprimary bg-pprimary/10 text-pfg font-bold shadow-sm'
-                            : 'border-pline bg-psurface text-pmuted hover:border-plineStrong hover:text-pfg'
+                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
                         <div className="flex items-center gap-1.5">
@@ -560,7 +560,7 @@ export default function SubscriptionModal({
                       deb belgilanadi; bekor buyurtma kodni kuydirmaydi) */}
                   <div className="space-y-2 pt-1">
                     {appliedPromo ? (
-                      <div className="flex items-center justify-between rounded-2xl border border-psuccess/30 bg-psuccess/10 p-3.5">
+                      <div className="flex items-center justify-between rounded-2xl bg-psuccess/10 p-3.5 shadow-xs">
                         <div className="flex items-center gap-2.5">
                           <Ticket size={16} className="text-psuccess" />
                           <span className="text-[13px] font-bold text-psuccess">
@@ -578,7 +578,7 @@ export default function SubscriptionModal({
                       </div>
                     ) : (
                       <div className="flex gap-2.5">
-                        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-pline bg-psurface px-3.5">
+                        <div className="flex-1 flex items-center gap-2 rounded-2xl bg-psurface px-3.5 shadow-xs">
                           <Ticket size={14} className="text-pmuted shrink-0" />
                           <input
                             value={promoInput}
@@ -593,7 +593,7 @@ export default function SubscriptionModal({
                           type="button"
                           onClick={handleApplyPromo}
                           disabled={!promoInput.trim() || promoBusy || isWaitingPayment}
-                          className="px-4 py-3 rounded-2xl border border-pline bg-psurface text-[13px] font-bold text-pfg hover:bg-pcanvas disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0"
+                          className="px-4 py-3 rounded-2xl bg-psurface text-[13px] font-bold text-pfg hover:bg-pcard disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0 shadow-xs"
                         >
                           {promoBusy ? <Loader2 size={15} className="animate-spin" /> : tt('promoApply')}
                         </button>
@@ -606,7 +606,7 @@ export default function SubscriptionModal({
 
                   {/* Polling / Waiting Indicator */}
                   {isWaitingPayment && (
-                    <div className="p-3.5 rounded-2xl bg-pblue/10 border border-pblue/30 flex items-center gap-3">
+                    <div className="p-3.5 rounded-2xl bg-pblue/10 flex items-center gap-3 shadow-xs">
                       <Loader2 size={19} className="text-pblue animate-spin shrink-0" />
                       <div className="text-xs">
                         <p className="font-bold text-pfg">
