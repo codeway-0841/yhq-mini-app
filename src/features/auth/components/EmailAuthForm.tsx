@@ -51,8 +51,8 @@ export default function EmailAuthForm({ mode, language, onSuccess, onToggleMode 
   }
 
   const inputCls =
-    'w-full bg-psurface border border-pline rounded-control px-3.5 py-3 text-[15px] text-pfg ' +
-    'placeholder:text-pmuted outline-none focus:border-pprimary transition-colors'
+    'w-full bg-psurface rounded-2xl px-3.5 py-3 text-[15px] text-pfg ' +
+    'placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all'
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3" noValidate>

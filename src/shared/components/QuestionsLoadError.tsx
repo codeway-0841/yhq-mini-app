@@ -32,7 +32,7 @@ export default function QuestionsLoadError({ error, lang }: { error: string; lan
         type="button"
         onClick={() => void retry()}
         disabled={loading}
-        className="mt-1 inline-flex h-11 items-center gap-2 rounded-control bg-pprimary px-5 text-[15px] font-semibold text-ponprimary transition-transform active:scale-[0.97] disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+        className="mt-1 inline-flex h-11 items-center gap-2 rounded-2xl bg-pprimary px-5 text-[15px] font-semibold text-ponprimary transition-transform active:scale-[0.97] disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas shadow-xs"
       >
         <RotateCw size={16} strokeWidth={2} className={loading ? 'animate-spin' : undefined} />
         {tt('qLoadRetry')}

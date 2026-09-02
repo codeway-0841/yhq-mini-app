@@ -158,7 +158,7 @@ function SignsGrid({
         <button
           onClick={onBack}
           aria-label={isRu ? 'Назад' : 'Orqaga'}
-          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
@@ -176,7 +176,7 @@ function SignsGrid({
               onClick={() => onSignSelect(sign)}
               className="flex flex-col items-center rounded-2xl bg-pcard p-2.5 active:scale-95 transition-all shadow-xs hover:bg-psurface text-center"
             >
-              <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
+              <div className="w-16 h-16 rounded-xl bg-white/95 shadow-2xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
                 {sign.image ? (
                   <img src={sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
                 ) : (
@@ -225,7 +225,7 @@ function SearchGrid({
             onClick={() => onSignSelect(sign)}
             className="flex flex-col items-center rounded-2xl bg-pcard p-2.5 active:scale-95 transition-all shadow-xs hover:bg-psurface text-center"
           >
-            <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
+            <div className="w-16 h-16 rounded-xl bg-white/95 shadow-2xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
               {sign.image ? (
                 <img src={sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
               ) : (
@@ -355,7 +355,7 @@ export default function Belgilar() {
             <button
               onClick={() => goBack(navigate)}
               aria-label={isRu ? 'Назад' : 'Orqaga'}
-              className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <ChevronLeft size={20} strokeWidth={1.75} />
             </button>
@@ -364,26 +364,26 @@ export default function Belgilar() {
             </h1>
             <button
               onClick={() => navigate('/belgilar-oyini')}
-              className="h-[32px] px-2.5 rounded-control bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px]"
+              className="h-[32px] px-2.5 rounded-xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
             >
               <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
             </button>
             <button
               onClick={() => navigate('/flashcards')}
-              className="h-[32px] px-2.5 rounded-control bg-psurface border border-pline text-pfg font-semibold hover:bg-plineStrong active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px]"
+              className="h-[32px] px-2.5 rounded-xl bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
             >
               <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
             </button>
           </header>
 
           {/* Tab switcher */}
-          <div className="flex gap-1.5 p-1 bg-psurface border border-pline rounded-control mb-4">
+          <div className="flex gap-1.5 p-1 bg-psurface rounded-2xl mb-4 shadow-xs">
             <button
               onClick={() => {
                 setActiveTab('signs')
                 setQuery('')
               }}
-              className={`flex-1 py-2 rounded-control text-xs font-semibold transition-all ${
+              className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'signs' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
@@ -394,7 +394,7 @@ export default function Belgilar() {
                 setActiveTab('rules')
                 setQuery('')
               }}
-              className={`flex-1 py-2 rounded-control text-xs font-semibold transition-all ${
+              className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'rules' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
@@ -403,7 +403,7 @@ export default function Belgilar() {
           </div>
 
           {/* Qidiruv */}
-          <div className="flex items-center gap-2 bg-psurface border border-pline rounded-control px-3 py-2.5 mb-4">
+          <div className="flex items-center gap-2 bg-psurface rounded-2xl px-3.5 py-2.5 mb-4 shadow-xs focus-within:ring-2 focus-within:ring-pprimary">
             <Search size={16} className="text-pmuted flex-none" />
             <input
               value={query}

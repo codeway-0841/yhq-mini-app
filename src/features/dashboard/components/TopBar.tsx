@@ -71,7 +71,7 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
       <div className="flex items-center justify-between gap-3 px-4 py-2">
         <button
           onClick={onProfile}
-          className="flex min-w-0 items-center gap-3 rounded-control transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+          className="flex min-w-0 items-center gap-3 rounded-xl transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
         >
           {/* avatarSrcFor — xom `photoUrl` EMAS: `hasCustomAvatar` persist
               qilingani uchun server avatar URL'i BIRINCHI KADRDA ma'lum bo'ladi.

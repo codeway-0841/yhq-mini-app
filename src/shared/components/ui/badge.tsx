@@ -8,7 +8,7 @@ import { cn } from '@/shared/lib/cn'
  * (Premium, joriy fan) uchun, `success/warning/danger` — javob/status uchun.
  */
 const badgeVariants = cva(
-  'inline-flex items-center gap-1.5 h-6 px-2.5 rounded-control text-[12px] font-semibold border whitespace-nowrap [&_svg]:size-3 [&_svg]:shrink-0',
+  'inline-flex items-center gap-1.5 h-6 px-2.5 rounded-xl text-[12px] font-semibold border whitespace-nowrap shadow-2xs [&_svg]:size-3 [&_svg]:shrink-0',
   {
     variants: {
       variant: {

@@ -102,7 +102,7 @@ export default function FlashcardsPage() {
       <div className="font-display bg-pcanvas text-pfg pb-6">
         <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
           <button onClick={() => goBack(navigate)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <Layers size={18} className="text-pprimary" />
@@ -157,7 +157,7 @@ export default function FlashcardsPage() {
             ? `${known.length} из ${cat.count} знаков изучено`
             : `${known.length} / ${cat.count} belgi o'zlashtirildi`}
         </p>
-        <button onClick={() => start(cat)} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control flex h-11 items-center gap-2 px-8 font-semibold mb-3">
+        <button onClick={() => start(cat)} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-2xl flex h-12 items-center gap-2 px-8 font-semibold mb-3 shadow-xs">
           <RotateCcw size={16} strokeWidth={1.75} />
           {isRu ? 'Ещё раз' : 'Yana bir bor'}
         </button>
@@ -185,7 +185,7 @@ export default function FlashcardsPage() {
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline pb-2 mb-2">
         <div className="flex items-center justify-between px-5 py-1">
           <button onClick={() => setCat(null)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-control text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <span className="text-[12px] font-semibold text-psubtle">{catName}</span>

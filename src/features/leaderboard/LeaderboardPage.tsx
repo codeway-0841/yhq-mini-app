@@ -212,7 +212,7 @@ export default function LeaderboardPage() {
           <button
             onClick={() => goBack(navigate)}
             aria-label={tt('backWord')}
-            className="absolute left-4 top-1.5 grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            className="absolute left-4 top-1.5 grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
           >
             <ChevronLeft size={22} strokeWidth={2.2} />
           </button>
@@ -222,7 +222,7 @@ export default function LeaderboardPage() {
         </div>
 
         <div className="px-4">
-          <div className="flex gap-1.5 bg-psurface p-1 rounded-control border border-pline">
+          <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs">
             {(['daily', 'weekly', 'monthly'] as const).map((t) => {
               const label =
                 t === 'daily'   ? tt('dailyTab') :
@@ -236,7 +236,7 @@ export default function LeaderboardPage() {
                   type="button"
                   onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
                   className={cn(
-                    'flex-1 py-1.5 rounded-lg text-sm font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
+                    'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
                     active
                       ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                       : 'text-pmuted hover:text-pfg'
@@ -363,7 +363,7 @@ export default function LeaderboardPage() {
             className="flex w-full items-center justify-between text-left"
           >
             <div className="flex items-center gap-2.5">
-              <div className="flex size-8 items-center justify-center rounded-control bg-psurface text-psubtle">
+              <div className="flex size-8 items-center justify-center rounded-xl bg-psurface text-psubtle shadow-2xs">
                 <History size={16} strokeWidth={1.8} />
               </div>
               <div>
@@ -386,7 +386,7 @@ export default function LeaderboardPage() {
                       <div
                         key={w.rank}
                         className={cn(
-                          'flex items-center gap-2.5 rounded-control p-1.5',
+                          'flex items-center gap-2.5 rounded-xl p-1.5',
                           w.isYou && 'bg-pprimary/10 ring-1 ring-pprimary/20'
                         )}
                       >

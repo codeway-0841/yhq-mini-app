@@ -159,15 +159,15 @@ export default function AdaptivePage() {
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-2 text-center">
-                <div className="rounded-control bg-psuccess/10 py-2">
+                <div className="rounded-xl bg-psuccess/10 py-2.5 shadow-2xs">
                   <p className="text-lg font-semibold text-psuccess tabular-nums">{summary.dueNow}</p>
                   <p className="text-[10px] font-semibold text-pmuted">{tt('srDueNow')}</p>
                 </div>
-                <div className="rounded-control bg-pwarning/10 py-2">
+                <div className="rounded-xl bg-pwarning/10 py-2.5 shadow-2xs">
                   <p className="text-lg font-semibold text-pwarning tabular-nums">{summary.dueNext24h}</p>
                   <p className="text-[10px] font-semibold text-pmuted">{tt('srNext24h')}</p>
                 </div>
-                <div className="rounded-control bg-psurface py-2">
+                <div className="rounded-xl bg-psurface py-2.5 shadow-2xs">
                   <p className="text-lg font-semibold text-pfg tabular-nums">{summary.dueNext7d}</p>
                   <p className="text-[10px] font-semibold text-pmuted">{tt('srNext7d')}</p>
                 </div>

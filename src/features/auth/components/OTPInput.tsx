@@ -127,10 +127,10 @@ export default function OTPInput({
           className={`
             w-12 h-14 sm:w-14 sm:h-16
             text-center text-2xl font-semibold
-            bg-psurface border-2 rounded-control
+            bg-psurface rounded-2xl shadow-xs
             outline-none transition-all
-            ${error ? 'border-red-500 animate-shake' :
-              focused === index ? 'border-pprimary bg-pprimary/5' : 'border-pline'}
+            ${error ? 'ring-2 ring-pdanger animate-shake' :
+              focused === index ? 'ring-2 ring-pprimary bg-pprimary/10' : 'ring-1 ring-pline/50'}
             ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
             ${digit !== ' ' ? 'text-pfg' : 'text-transparent'}
           `}

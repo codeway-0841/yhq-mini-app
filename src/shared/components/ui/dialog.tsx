@@ -79,7 +79,7 @@ function DialogClose({ onClose, label = 'Yopish' }: { onClose: () => void; label
       onClick={onClose}
       aria-label={label}
       className={cn(
-        'absolute right-2 top-2 grid size-11 place-items-center rounded-control text-pmuted',
+        'absolute right-2 top-2 grid size-11 place-items-center rounded-xl text-pmuted',
         'transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
       )}

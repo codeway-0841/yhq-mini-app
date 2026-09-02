@@ -378,7 +378,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
         {/* Harakat tugmasi */}
         <div className="mt-3">
           {phase === 'used' || phase === 'done' ? (
-            <div className="rounded-control bg-psurface py-3 text-center">
+            <div className="rounded-2xl bg-psurface py-3.5 text-center shadow-xs">
               <p className="text-[12px] font-semibold text-pmuted">{tt('spinUsed')}</p>
             </div>
           ) : (

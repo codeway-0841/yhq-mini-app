@@ -236,7 +236,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={() => setShowCertificate(true)}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-control mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
           >
             <Award size={17} strokeWidth={1.75} />
             {tt('viewCertificate')}
@@ -247,7 +247,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={onOpenReview}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-control mb-3 flex h-11 w-full items-center justify-center gap-2 text-sm font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
           >
             <BookOpen size={16} strokeWidth={1.75} />
             {tt('examReviewBtn')}

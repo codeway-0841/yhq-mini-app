@@ -110,7 +110,7 @@ export default function FormulasPage() {
       {/* Header */}
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-3 mb-3">
         <button type="button" onClick={() => goBack(navigate)} aria-label="back"
-          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <div className="flex-1 min-w-0">
@@ -126,7 +126,7 @@ export default function FormulasPage() {
 
       {/* Qidiruv */}
       <div className="px-5 mb-3">
-        <div className="rounded-2xl border border-pline bg-pcard flex items-center gap-2.5 px-4 py-3 shadow-xs">
+        <div className="rounded-2xl bg-pcard flex items-center gap-2.5 px-4 py-3 shadow-xs">
           <Search size={16} className="text-psubtle flex-shrink-0" />
           <input value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchFormula')}
@@ -146,10 +146,10 @@ export default function FormulasPage() {
             return (
               <button key={s.subjectId} type="button"
                 onClick={() => { setSubjectId(s.subjectId); setTopicId(null); playSound('click') }}
-                className="flex items-center gap-2 px-3.5 py-2.5 rounded-container flex-shrink-0 cursor-pointer transition-all"
+                className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl flex-shrink-0 cursor-pointer transition-all shadow-xs"
                 style={active
                   ? { background: `linear-gradient(145deg, ${cfg.color}, ${cfg.colorDark})`, boxShadow: `0 4px 14px ${cfg.color}40` }
-                  : { background: 'var(--p-card)', border: '1px solid var(--p-line)' }}>
+                  : { background: 'var(--p-card)' }}>
                 <Icon size={15} className={active ? 'text-white' : ''} style={active ? {} : { color: cfg.color }} />
                 <span className={`text-[12px] font-semibold whitespace-nowrap ${active ? 'text-white' : 'text-pfg'}`}>
                   {lang === 'ru' ? cfg.nameRu : cfg.name}
@@ -168,18 +168,18 @@ export default function FormulasPage() {
         <div className="flex gap-2 overflow-x-auto px-5 pb-3 scroll-smooth-x [&::-webkit-scrollbar]:hidden"
           style={{ scrollbarWidth: 'none' }}>
           <button type="button" onClick={() => setTopicId(null)}
-            className="px-3 py-1.5 rounded-control text-[11px] font-semibold flex-shrink-0 cursor-pointer"
+            className="px-3 py-1.5 rounded-xl text-[11px] font-semibold flex-shrink-0 cursor-pointer shadow-2xs transition-all"
             style={topicId === null
-              ? { background: `${subjectCfg.color}22`, color: subjectCfg.color, border: `1px solid ${subjectCfg.color}55` }
-              : { background: 'var(--p-card)', color: 'var(--p-muted)', border: '1px solid var(--p-line)' }}>
+              ? { background: `${subjectCfg.color}22`, color: subjectCfg.color }
+              : { background: 'var(--p-card)', color: 'var(--p-muted)' }}>
             {tt('seeAll')}
           </button>
           {subject.topics.map((t) => (
             <button key={t.id} type="button" onClick={() => setTopicId(t.id)}
-              className="px-3 py-1.5 rounded-control text-[11px] font-semibold flex-shrink-0 whitespace-nowrap cursor-pointer"
+              className="px-3 py-1.5 rounded-xl text-[11px] font-semibold flex-shrink-0 whitespace-nowrap cursor-pointer shadow-2xs transition-all"
               style={topicId === t.id
-                ? { background: `${subjectCfg.color}22`, color: subjectCfg.color, border: `1px solid ${subjectCfg.color}55` }
-                : { background: 'var(--p-card)', color: 'var(--p-muted)', border: '1px solid var(--p-line)' }}>
+                ? { background: `${subjectCfg.color}22`, color: subjectCfg.color }
+                : { background: 'var(--p-card)', color: 'var(--p-muted)' }}>
               {lang === 'ru' ? t.nameRu : t.name}
               <span className="text-psubtle font-normal ml-1 tabular-nums">{t.formulas.length}</span>
             </button>

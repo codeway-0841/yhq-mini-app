@@ -173,7 +173,7 @@ export default function BossCard() {
 
       {/* G'alaba holati eslatmasi */}
       {isDefeated && (
-        <div className="mt-3 rounded-control bg-psuccess/10 p-2.5 text-center motion-safe:animate-premiumIn">
+        <div className="mt-3 rounded-2xl bg-psuccess/10 p-3 text-center shadow-xs motion-safe:animate-premiumIn">
           <p className="text-[11.5px] font-bold text-psuccess">
             {tt('bossDefeatedHint')}
           </p>

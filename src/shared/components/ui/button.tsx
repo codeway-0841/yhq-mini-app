@@ -40,11 +40,11 @@ const buttonVariants = cva(
         link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:scale-100',
       },
       size: {
-        sm:      'h-[34px] rounded-control px-3 text-[13.5px] [&_svg]:size-4',
-        default: 'h-11 rounded-control px-[18px] text-[15px] [&_svg]:size-[18px]',
-        lg:      'h-[52px] rounded-control px-6 text-base [&_svg]:size-5',
-        icon:    'h-11 w-11 rounded-control [&_svg]:size-[18px]',
-        'icon-sm': 'h-[34px] w-[34px] rounded-control [&_svg]:size-4',
+        sm:      'h-[34px] rounded-xl px-3 text-[13.5px] [&_svg]:size-4 shadow-2xs',
+        default: 'h-11 rounded-2xl px-[18px] text-[15px] [&_svg]:size-[18px] shadow-xs',
+        lg:      'h-[52px] rounded-2xl px-6 text-base [&_svg]:size-5 shadow-xs',
+        icon:    'h-11 w-11 rounded-xl [&_svg]:size-[18px]',
+        'icon-sm': 'h-[34px] w-[34px] rounded-xl [&_svg]:size-4',
       },
       /** Blok tugma — sahifa pastidagi asosiy CTA uchun */
       block: { true: 'w-full', false: '' },

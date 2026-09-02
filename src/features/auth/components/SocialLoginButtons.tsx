@@ -9,7 +9,7 @@ export default function SocialLoginButtons({ disabled = true }: SocialLoginButto
       <button
         type="button"
         disabled={disabled}
-        className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-psurface border border-pline rounded-control transition-all opacity-40 cursor-not-allowed"
+        className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-psurface rounded-2xl transition-all opacity-40 cursor-not-allowed shadow-xs"
         aria-label="Google orqali kirish"
       >
         <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
@@ -26,7 +26,7 @@ export default function SocialLoginButtons({ disabled = true }: SocialLoginButto
       <button
         type="button"
         disabled={disabled}
-        className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-fg border border-pline rounded-control transition-all opacity-40 cursor-not-allowed"
+        className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-fg rounded-2xl transition-all opacity-40 cursor-not-allowed shadow-xs"
         aria-label="Apple bilan kirish"
       >
         <svg className="w-5 h-5 fill-canvas" viewBox="0 0 24 24" aria-hidden="true">

@@ -55,10 +55,10 @@ export default function SearchPage() {
       {/* Header: back + input */}
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          className="grid size-11 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
-        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-pline bg-psurface px-3.5 shadow-xs">
+        <div className="flex-1 flex items-center gap-2 rounded-2xl bg-psurface px-3.5 shadow-xs">
           <Search size={16} className="text-pprimary flex-shrink-0" />
           <input
             autoFocus

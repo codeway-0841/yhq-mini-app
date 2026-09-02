@@ -226,7 +226,7 @@ export function LinkAccountSection() {
       {/* Telefon ulash formasi (telefon provider hali bog'lanmagan) */}
       {phoneOpen && providers !== null && !providers.includes('phone') && (
         <div className="px-4 pb-3.5 flex flex-col gap-2 border-t border-pline pt-3">
-          <div className="w-full bg-pcanvas border border-pline rounded-control px-3.5 flex items-center gap-2">
+          <div className="w-full bg-pcanvas rounded-2xl px-3.5 flex items-center gap-2 shadow-xs focus-within:ring-2 focus-within:ring-pprimary">
             <span className="text-pmuted text-sm font-semibold select-none">+998</span>
             <input
               value={phone.digits}
@@ -247,7 +247,7 @@ export function LinkAccountSection() {
             maxLength={72}
             placeholder={`${tt('authPassword')} · ${tt('authPasswordHint')}`}
             disabled={busy}
-            className="w-full bg-pcanvas border border-pline rounded-control px-3.5 py-3 text-sm text-pfg placeholder:text-pmuted outline-none"
+            className="w-full bg-pcanvas rounded-2xl px-3.5 py-3 text-sm text-pfg placeholder:text-pmuted outline-none shadow-xs focus:ring-2 focus:ring-pprimary"
           />
           {otpStep && (
             <>
@@ -261,7 +261,7 @@ export function LinkAccountSection() {
             type="button"
             onClick={() => void submitPhoneLink()}
             disabled={busy || !phone.isValid || password.length < 8 || (otpStep && otpCode.length !== 6)}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 rounded-control text-[13px] flex items-center justify-center gap-2"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 rounded-2xl text-[13px] flex items-center justify-center gap-2 shadow-xs"
           >
             {busy && (
               <span className="w-3.5 h-3.5 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />

@@ -699,7 +699,7 @@ export default function TestPage() {
     </div>
 
       {toast && (
-        <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-center text-[12.5px] font-medium text-pfg">
+        <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-center text-[12.5px] font-medium text-pfg shadow-xs">
           <AlertTriangle size={14} strokeWidth={1.75} className="flex-none text-pwarning" aria-hidden="true" />
           {toast}
         </div>
@@ -708,7 +708,7 @@ export default function TestPage() {
       {/* #40: mint bo'lgan tanga — suzuvchi pop (CSS animatsiya, 1.2s) */}
       {coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
-          <span className="inline-flex items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.14)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold">
+          <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.18)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold shadow-xs">
             <CoinIcon size={14} />
             +1
           </span>

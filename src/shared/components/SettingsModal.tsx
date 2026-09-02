@@ -246,8 +246,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
             <p className="text-center text-[11px] text-pmuted mb-3 flex-none">{tt('accentThemeDesc')}</p>
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
-              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-control px-3.5 py-2 animate-fadeIn"
-                style={{ background: 'rgb(var(--p-warning-rgb) / 0.10)', border: '1px solid rgb(var(--p-warning-rgb) / 0.30)' }}>
+              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">
                 <span className="flex items-center gap-1.5 text-[11px] font-semibold text-pwarning">
                   <Timer size={12} strokeWidth={1.75} />
                   {tt('themePreviewing')}

@@ -55,7 +55,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
         <h3 className="font-display text-[16px] font-semibold tracking-[-0.015em] text-pfg">{tt('leaderboard')}</h3>
         <button
           onClick={onSeeAll}
-          className="flex items-center gap-0.5 rounded-control text-[13px] font-semibold text-pprimary transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="flex items-center gap-0.5 rounded-xl text-[13px] font-semibold text-pprimary transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           {tt('seeAll')} <ChevronRight size={14} strokeWidth={1.75} />
         </button>

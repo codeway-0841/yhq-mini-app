@@ -203,8 +203,8 @@ export default function LoginPage() {
   }
 
   const inputCls =
-    'w-full bg-psurface border border-pline rounded-control px-3.5 py-3 text-[15px] text-pfg ' +
-    'placeholder:text-pmuted outline-none focus:border-pprimary transition-colors'
+    'w-full bg-psurface rounded-2xl px-3.5 py-3 text-[15px] text-pfg ' +
+    'placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all'
 
   const isWeb = !getTelegramWebApp() && !isNativeApp()
 
@@ -229,7 +229,7 @@ export default function LoginPage() {
               href={telegramLoginUrl!}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2.5 px-4 py-3.5 bg-[#0088cc] rounded-control hover:bg-[#0077b5] active:scale-[0.98] transition-all"
+              className="w-full flex items-center justify-center gap-2.5 px-4 py-3.5 bg-[#0088cc] rounded-2xl hover:bg-[#0077b5] active:scale-[0.98] transition-all shadow-md"
             >
               <svg className="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -240,7 +240,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => setQrOpen(true)}
-                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-control border border-[#0088cc]/40 text-[#0088cc] hover:bg-[#0088cc]/10 active:scale-[0.98] transition-all"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#0088cc]/15 text-[#0088cc] hover:bg-[#0088cc]/25 active:scale-[0.98] transition-all shadow-xs"
               >
                 <QrCode size={16} strokeWidth={2.5} />
                 <span className="text-[14px] font-semibold">{tt('authQrTitle')}</span>
@@ -253,7 +253,7 @@ export default function LoginPage() {
           type="button"
           onClick={startTelegramLogin}
           disabled={busy}
-          className="w-full flex items-center justify-center gap-3 px-4 py-4 bg-[#0088cc] rounded-control hover:bg-[#0077b5] active:scale-[0.98] transition-all disabled:opacity-50 shadow-lg shadow-[#0088cc]/25"
+          className="w-full flex items-center justify-center gap-3 px-4 py-4 bg-[#0088cc] rounded-2xl hover:bg-[#0077b5] active:scale-[0.98] transition-all disabled:opacity-50 shadow-lg shadow-[#0088cc]/25"
         >
           {busy ? (
             <span className="w-5 h-5 border-2 border-white/50 border-t-white rounded-full animate-spin" />
@@ -342,7 +342,7 @@ export default function LoginPage() {
         {isWeb ? (
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <img src="/images/splash-brand.png" alt="KIVVI" className="w-14 rounded-control" />
+              <img src="/images/splash-brand.png" alt="KIVVI" className="w-14 rounded-2xl shadow-xs" />
               <div>
                 <h1 className="text-[18px] font-semibold text-pfg leading-tight">{tt('authWelcome')}</h1>
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
@@ -363,15 +363,15 @@ export default function LoginPage() {
           </>
         )}
 
-        <div className="rounded-container border border-pline bg-pcard p-4">
+        <div className="rounded-2xl bg-pcard p-4 shadow-xs">
           {config.phoneEmailAuthEnabled && (
-          <div className="grid grid-cols-2 gap-1 p-1 rounded-control bg-psurface border border-pline mb-4">
+          <div className="grid grid-cols-2 gap-1 p-1 rounded-2xl bg-psurface mb-4 shadow-xs">
             {(['login', 'register'] as const).map((m) => (
               <button
                 key={m}
                 type="button"
                 onClick={() => { setMode(m); setStep('form'); setMethod(method === 'forgot' ? 'phone' : method); setError(null) }}
-                className={`py-2 rounded-lg text-[13px] font-semibold transition-colors ${
+                className={`py-2 rounded-xl text-[13px] font-semibold transition-colors ${
                   mode === m ? 'bg-pprimary text-ponprimary' : 'text-pmuted'
                 }`}
               >

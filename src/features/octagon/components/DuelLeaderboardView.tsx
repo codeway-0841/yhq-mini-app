@@ -161,7 +161,7 @@ export function DuelLeaderboardView({
   return (
     <div className="space-y-4">
       {/* Segmented Control Tabs (Global Button Style) */}
-      <div className="flex gap-1.5 bg-psurface p-1 rounded-control border border-pline">
+      <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs">
         {RANK_TABS.map((t) => {
           const label =
             t === 'daily'   ? tt('dailyTab')   :
@@ -176,9 +176,9 @@ export function DuelLeaderboardView({
               type="button"
               onClick={() => { playSound('click'); haptics.select(); setRankTab(t) }}
               className={cn(
-                'flex-1 py-2 rounded-lg text-xs font-bold transition-all duration-[120ms] ease-out active:scale-[0.98]',
+                'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
                 active
-                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                   : 'text-pmuted hover:text-pfg'
               )}
             >
@@ -220,7 +220,7 @@ export function DuelLeaderboardView({
           <button
             type="button"
             onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-            className="mt-4 h-10 px-5 rounded-control bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all inline-flex items-center gap-2"
+            className="mt-4 h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all inline-flex items-center gap-2"
           >
             <Swords size={15} />
             <span>{tt('findOpponent')}</span>

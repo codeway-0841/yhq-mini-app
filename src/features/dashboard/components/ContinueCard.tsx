@@ -53,7 +53,7 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
                 style={{ width: `${Math.max(progressPct, 2)}%` }}
               />
             </div>
-            <span className="inline-flex h-[34px] shrink-0 items-center gap-1 rounded-control bg-pprimary px-3 text-[13.5px] font-semibold text-ponprimary">
+            <span className="inline-flex h-[34px] shrink-0 items-center gap-1 rounded-xl bg-pprimary px-3 text-[13.5px] font-semibold text-ponprimary shadow-xs">
               {tt('continueLearn')}
               <ChevronRight size={15} strokeWidth={1.75} />
             </span>

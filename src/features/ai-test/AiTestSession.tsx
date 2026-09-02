@@ -239,14 +239,14 @@ export default function AiTestSession() {
         {result.coinsAwarded > 0 && <Confetti />}
         <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
           <button onClick={() => navigate('/ai-test')} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <h1 className="text-xl font-semibold truncate">{tt('aiTestResultTitle')} · {test.title}</h1>
         </header>
 
         {/* Xulosa kartasi */}
-        <div className="rounded-container border border-pline bg-pcard p-5 mb-4 text-center">
+        <div className="rounded-2xl bg-pcard p-5 mb-4 text-center shadow-xs">
           <p className="text-[34px] font-bold leading-none"
             style={{ color: 'var(--p-purple)' }}>
             {g.correctCount}<span className="text-[18px] text-psubtle">/{AI_TEST_GRADED_TASKS}</span>
@@ -279,7 +279,7 @@ export default function AiTestSession() {
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline mb-3">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <div className="flex-1 min-w-0">
@@ -296,7 +296,7 @@ export default function AiTestSession() {
       </header>
 
       {submitError && (
-        <div role="status" className="mb-3 flex items-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-[12.5px] font-medium text-pfg">
+        <div role="status" className="mb-3 flex items-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-[12.5px] font-medium text-pfg shadow-xs">
           <AlertTriangle size={15} strokeWidth={2} className="text-pwarning flex-shrink-0" />
           {tt('authGenericError')}
         </div>

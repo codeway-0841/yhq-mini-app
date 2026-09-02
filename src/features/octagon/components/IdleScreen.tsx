@@ -174,7 +174,7 @@ export function IdleScreen({
           <button
             type="button"
             onClick={() => { playSound('click'); haptics.impact('light'); setSubview(null) }}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-control bg-psurface hover:bg-pcard border border-pline text-xs font-bold text-pfg active:scale-95 transition-all"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-psurface hover:bg-pcard text-xs font-bold text-pfg active:scale-95 transition-all shadow-xs"
           >
             <ChevronLeft size={16} />
             <span>{tt('backWord')}</span>
@@ -221,7 +221,7 @@ export function IdleScreen({
                   <button
                     type="button"
                     onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-                    className="h-10 px-5 rounded-control bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all"
+                    className="h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all"
                   >
                     {tt('findOpponent')}
                   </button>
@@ -284,7 +284,7 @@ export function IdleScreen({
                 <button
                   type="button"
                   onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-                  className="mt-4 h-10 px-5 rounded-control bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all"
+                  className="mt-4 h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all"
                 >
                   {tt('findOpponent')}
                 </button>
@@ -321,7 +321,7 @@ export function IdleScreen({
                       <button
                         type="button"
                         onClick={() => { playSound('click'); haptics.impact('medium'); onFind() }}
-                        className="h-8 px-3 rounded-control bg-pprimary text-ponprimary text-[11px] font-extrabold flex items-center justify-center gap-1.5 shadow-xs active:scale-95 transition-all shrink-0 hover:brightness-[1.06]"
+                        className="h-8 px-3 rounded-xl bg-pprimary text-ponprimary text-[11px] font-extrabold flex items-center justify-center gap-1.5 shadow-xs active:scale-95 transition-all shrink-0 hover:brightness-[1.06]"
                       >
                         <Swords size={13} />
                         <span>{tt('challengeBtn')}</span>
@@ -384,7 +384,7 @@ export function IdleScreen({
                   <button
                     type="button"
                     onClick={handleCopyPin}
-                    className="py-2.5 px-3 rounded-control bg-psurface border border-pline text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                    className="py-2.5 px-3 rounded-xl bg-psurface text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
                   >
                     {copiedPin ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                     <span>{copiedPin ? tt('pinCopied') : tt('copyPinBtn')}</span>
@@ -392,7 +392,7 @@ export function IdleScreen({
                   <button
                     type="button"
                     onClick={handleShareInvite}
-                    className="py-2.5 px-3 rounded-control bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shrink-0 hover:bg-[rgb(var(--p-blue-rgb)/0.25)]"
+                    className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shrink-0 hover:bg-[rgb(var(--p-blue-rgb)/0.25)] shadow-xs"
                   >
                     <Share2 size={14} />
                     <span>{language === 'ru' ? 'Отправить' : 'Ulashish'}</span>
@@ -404,7 +404,7 @@ export function IdleScreen({
                   <button
                     type="button"
                     onClick={() => { playSound('click'); haptics.impact('heavy'); onJoinWithPin(quickPin) }}
-                    className="w-full h-11 rounded-control bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all"
+                    className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all"
                   >
                     <Swords size={16} />
                     <span>{tt('startWaitingBtn')}</span>
@@ -494,7 +494,7 @@ export function IdleScreen({
           type="button"
           onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
           disabled={connFailed}
-          className="w-full h-12 rounded-control bg-pprimary text-ponprimary font-display text-sm font-extrabold flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98] hover:brightness-[1.06] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary font-display text-sm font-extrabold flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98] hover:brightness-[1.06] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Swords size={18} />
           <span>{tt('findOpponent')}</span>

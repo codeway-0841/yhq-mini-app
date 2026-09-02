@@ -100,7 +100,7 @@ export default function StreakPage() {
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-5 px-5 py-2.5 bg-pcanvas/95 backdrop-blur-md border-b border-pline flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <h1 className="text-lg font-bold text-pfg">{tt('intizomTitle')}</h1>
@@ -172,7 +172,7 @@ export default function StreakPage() {
       <div className="rounded-[24px] bg-pcard p-4.5 mb-4 shadow-xs">
         <div className="flex items-center justify-between mb-3 px-1">
           <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
-            className="grid size-8 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={16} strokeWidth={1.75} />
           </button>
           <p className="text-[14px] font-bold text-pfg capitalize">
@@ -180,7 +180,7 @@ export default function StreakPage() {
           </p>
           <button onClick={() => shiftMonth(1)} aria-label={lang === 'ru' ? 'Следующий месяц' : 'Keyingi oy'}
             disabled={month >= today.slice(0, 7)}
-            className="grid size-8 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
+            className="grid size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
             <ChevronRight size={16} strokeWidth={1.75} />
           </button>
         </div>
@@ -190,7 +190,7 @@ export default function StreakPage() {
           ))}
           {/* Yuklanish skeleti */}
           {!history && cells.map((date, i) =>
-            date ? <span key={`sk${date}`} className="aspect-square rounded-control bg-psurface animate-pulse" />
+            date ? <span key={`sk${date}`} className="aspect-square rounded-xl bg-psurface animate-pulse" />
                  : <span key={`e${i}`} />)}
           {history && cells.map((date, i) => {
             if (!date) return <span key={`e${i}`} />
@@ -203,7 +203,7 @@ export default function StreakPage() {
             return (
               <button key={date} disabled={future}
                 onClick={() => setSelected(date)}
-                className={`aspect-square rounded-control flex items-center justify-center text-[13px] font-semibold transition-all ${
+                className={`aspect-square rounded-xl flex items-center justify-center text-[13px] font-semibold transition-all ${
                   level > 0 ? 'text-ponprimary' : 'text-psubtle'} ${isSel ? 'ring-2 ring-pprimary scale-105' : ''
                 } ${isNow && !isSel ? 'ring-1 ring-pblue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
                 style={{ background: heatBg(level) }}>
@@ -272,7 +272,7 @@ export default function StreakPage() {
             <button
               type="button"
               onClick={() => setShowInfo(false)}
-              className="w-full h-11 rounded-control bg-pprimary text-ponprimary text-xs font-bold flex items-center justify-center active:scale-95 transition-transform"
+              className="w-full h-11 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold flex items-center justify-center active:scale-95 transition-transform shadow-xs"
             >
               {tt('gotItBtn')}
             </button>

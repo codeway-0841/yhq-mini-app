@@ -131,8 +131,8 @@ export default function DailyTasksCard() {
                     onClick={() => claim(task.id)}
                     disabled={busy !== null}
                     className={cn(
-                      'flex h-[34px] w-full items-center justify-center gap-1 rounded-control text-[11px] font-semibold text-pgold',
-                      'border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)]',
+                      'flex h-[34px] w-full items-center justify-center gap-1 rounded-xl text-[11px] font-semibold text-pgold shadow-2xs',
+                      'bg-[rgb(var(--p-gold-rgb)/0.18)]',
                       'transition-transform duration-[120ms] ease-out active:scale-[0.98]',
                       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
                       'disabled:pointer-events-none disabled:opacity-40',

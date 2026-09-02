@@ -18,9 +18,9 @@ function TaskShell({ num, topic, prompt, children }: {
   num: number; topic: string; prompt: string; children: React.ReactNode
 }) {
   return (
-    <div className="rounded-container border border-pline bg-pcard p-4">
+    <div className="rounded-2xl bg-pcard p-4 shadow-xs">
       <div className="flex items-start gap-2.5 mb-3">
-        <span className="flex-shrink-0 grid size-7 place-items-center rounded-control text-[13px] font-bold"
+        <span className="flex-shrink-0 grid size-7 place-items-center rounded-xl text-[13px] font-bold shadow-2xs"
           style={{ background: 'color-mix(in srgb, var(--p-purple) 14%, transparent)', color: 'var(--p-purple)' }}>
           {num}
         </span>

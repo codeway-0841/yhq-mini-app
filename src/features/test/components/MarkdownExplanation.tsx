@@ -97,7 +97,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
 
         <button
           onClick={onClose}
-          className="w-full py-3 rounded-control bg-pprimary text-ponprimary font-semibold text-sm hover:brightness-[1.06] active:scale-[0.98] transition-all"
+          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold text-sm hover:brightness-[1.06] active:scale-[0.98] transition-all shadow-xs"
         >
           Tushunarli
         </button>

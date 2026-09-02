@@ -65,7 +65,7 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
             <p className="text-[13px] text-pmuted">{tt('payHistoryError')}</p>
             <button
               onClick={load}
-              className="mt-4 rounded-control border border-pline bg-pcard px-4 py-2 text-[12.5px] font-semibold text-pfg transition-transform active:scale-[0.97]"
+              className="mt-4 rounded-xl bg-pcard px-4 py-2.5 text-[12.5px] font-semibold text-pfg shadow-xs transition-transform active:scale-[0.97]"
             >
               {tt('payHistoryRetry')}
             </button>

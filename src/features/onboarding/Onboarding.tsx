@@ -85,7 +85,7 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-control flex items-center justify-center text-pmuted active:opacity-60">
+        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">
@@ -145,7 +145,7 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
   return (
     <Screen>
       <button onClick={onBack} aria-label="Orqaga"
-        className="self-start w-9 h-9 rounded-control flex items-center justify-center text-pmuted active:opacity-60">
+        className="self-start w-9 h-9 rounded-xl flex items-center justify-center text-pmuted active:opacity-60">
         <ChevronLeft size={26} />
       </button>
       <div className="mt-1 mb-6">

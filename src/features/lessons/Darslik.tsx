@@ -70,7 +70,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
       {/* Header — fixed inset-0 sahifa (body padding tegmaydi) → .safe-top SHART */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-pline safe-top">
         <button onClick={onClose} aria-label={ru ? 'Закрыть' : 'Yopish'}
-          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          className="grid size-11 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <span className="text-base font-semibold">{idx + 1}-{ru ? 'урок' : 'dars'}</span>
@@ -158,12 +158,12 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
       {/* Pastki tugmalar */}
       <div className="flex gap-3 px-4 py-3 border-t border-pline">
         <button onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
-          className="flex-1 py-3.5 rounded-control bg-pprimary text-ponprimary font-semibold flex items-center justify-center gap-2">
+          className="flex-1 py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold flex items-center justify-center gap-2 shadow-xs">
           <MessageCircle size={16} />
           {ru ? 'Задать вопрос' : 'Savol berish'}
         </button>
         <button onClick={() => advance(idx)}
-          className="flex-[1.4] py-3.5 rounded-control text-ponprimary font-semibold flex items-center justify-center gap-2 bg-pprimary">
+          className="flex-[1.4] py-3.5 rounded-2xl text-ponprimary font-semibold flex items-center justify-center gap-2 bg-pprimary shadow-xs">
           <Check size={16} />
           {idx < list.length - 1
             ? (ru ? 'Прочитано — дальше' : "O'qib bo'ldim — keyingi")
@@ -171,7 +171,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
         </button>
         {idx < list.length - 1 && (
           <button onClick={() => advance(idx)}
-            className="w-12 py-3.5 rounded-control bg-psurface text-pfg flex items-center justify-center">
+            className="w-12 py-3.5 rounded-2xl bg-psurface text-pfg flex items-center justify-center shadow-xs">
             <ChevronLeft size={18} className="rotate-180" />
           </button>
         )}
@@ -261,7 +261,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
                   onClick={() => !locked && onOpenLesson(i)}
                   disabled={locked}
                   className={
-                    'flex w-full items-center gap-3 rounded-control px-2 py-1.5 text-left transition-colors duration-[120ms] ease-out ' +
+                    'flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors duration-[120ms] ease-out ' +
                     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ' +
                     (locked ? 'cursor-not-allowed opacity-50' : 'hover:bg-psurface active:bg-psurface')
                   }
@@ -284,7 +284,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
                       ? <Check size={16} strokeWidth={1.75} className="flex-none" style={{ color: mod.color }} />
                       : (
                         <span
-                          className="inline-flex h-[30px] flex-none items-center gap-1 rounded-control px-2.5 text-[12px] font-semibold"
+                          className="inline-flex h-[30px] flex-none items-center gap-1 rounded-xl px-2.5 text-[12px] font-semibold shadow-2xs"
                           style={{
                             background: `color-mix(in srgb, ${mod.color} 12%, transparent)`,
                             color: mod.color,
@@ -358,7 +358,7 @@ export default function Darslik() {
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <h1 className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">

@@ -8,7 +8,7 @@ import { cn } from '@/shared/lib/cn'
  * Chapdan rangli chiziq YO'Q — status rangi ikonka va hairline'da beriladi,
  * shuning uchun karta grammatikasi buzilmaydi.
  */
-const alertVariants = cva('flex gap-3 rounded-control border p-[13px_15px] text-sm', {
+const alertVariants = cva('flex gap-3 rounded-2xl border p-[13px_15px] text-sm shadow-xs', {
   variants: {
     variant: {
       default: 'bg-psurface border-plineStrong text-pfg',
