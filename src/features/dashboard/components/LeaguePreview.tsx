@@ -33,7 +33,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           <Skeleton className="h-4 w-24" />
           <Skeleton className="h-3 w-16" />
         </div>
-        <div className="divide-y divide-pline overflow-hidden rounded-container border border-pline bg-pcard">
+        <div className="divide-y divide-pline overflow-hidden rounded-2xl bg-pcard shadow-xs">
           {[0, 1, 2].map((i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-3">
               <Skeleton className="size-4 shrink-0" />

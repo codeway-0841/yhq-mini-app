@@ -49,7 +49,7 @@ export default function VerifyEmailPage() {
   return (
     <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
       <div className="w-full max-w-md">
-        <div className="rounded-container border border-pline bg-pcard p-8 text-center space-y-4">
+        <div className="rounded-2xl bg-pcard p-8 text-center space-y-4 shadow-xs">
           {status === 'verifying' && (
             <>
               <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto">

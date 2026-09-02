@@ -68,7 +68,7 @@ export default function AntiCheatModal({
         <button
           type="button"
           onClick={onDismiss}
-          className="w-full py-3.5 rounded-container bg-pdanger text-white font-semibold text-sm shadow-[0_4px_14px_rgba(239,68,68,0.4)] hover:bg-pdanger/90 active:scale-[0.98] transition-all"
+          className="w-full py-3.5 rounded-2xl bg-pdanger text-white font-semibold text-sm shadow-md hover:bg-pdanger/90 active:scale-[0.98] transition-all"
         >
           {tt('antiCheatUnderstood')}
         </button>

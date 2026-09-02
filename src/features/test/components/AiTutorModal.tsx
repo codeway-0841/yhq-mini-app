@@ -168,14 +168,14 @@ export default function AiTutorModal({
                 handleClose()
                 openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
               }}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 mb-2"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
             >
               <PremiumIcon size={16} />
               {tt('buyPremium')}
             </button>
             <button
               onClick={handleClose}
-              className="w-full py-3 rounded-container bg-psurface text-[13px] font-semibold text-pmuted active:scale-[0.98] transition-transform"
+              className="w-full py-3 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted active:scale-[0.98] transition-transform shadow-xs"
             >
               {tt('cancel')}
             </button>

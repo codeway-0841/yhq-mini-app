@@ -308,7 +308,7 @@ export default function LoginPage() {
               {benefits.map(({ icon: Icon, cls, key }) => (
                 <div
                   key={key}
-                  className={`flex items-center gap-3 rounded-container px-3.5 py-3 text-left ${cls}`}
+                  className={`flex items-center gap-3 rounded-2xl px-3.5 py-3 text-left shadow-xs ${cls}`}
                 >
                   <Icon size={18} strokeWidth={2} className="shrink-0" />
                   <span className="text-[13px] font-semibold text-pfg">{tt(key)}</span>
@@ -494,7 +494,7 @@ export default function LoginPage() {
                   (mode === 'register' && (!firstName.trim() || password.length < 8)) ||
                   busy
                 }
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-[15px] mt-1 flex items-center justify-center gap-2"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-[15px] mt-1 flex items-center justify-center gap-2 shadow-md"
               >
                 {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
@@ -528,7 +528,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={otpCode.length !== 6 || busy}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-[15px] flex items-center justify-center gap-2"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-[15px] flex items-center justify-center gap-2 shadow-md"
               >
                 {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}

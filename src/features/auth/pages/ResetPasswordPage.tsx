@@ -35,7 +35,7 @@ export default function ResetPasswordPage() {
   if (!token) {
     return (
       <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
-        <div className="rounded-container border border-pline bg-pcard p-8 text-center">
+        <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
           <h1 className="text-[18px] font-semibold text-pfg mb-2">
             {language === 'ru' ? 'Ссылка недействительна' : 'Havola yaroqsiz'}
           </h1>
@@ -81,7 +81,7 @@ export default function ResetPasswordPage() {
   if (success) {
     return (
       <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6">
-        <div className="rounded-container border border-pline bg-pcard p-8 text-center space-y-4 max-w-md animate-premiumIn">
+        <div className="rounded-2xl bg-pcard p-8 text-center space-y-4 max-w-md animate-premiumIn shadow-xs">
           <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto">
             <CheckCircle2 size={36} strokeWidth={1.75} className="text-pprimary" />
           </div>
@@ -101,7 +101,7 @@ export default function ResetPasswordPage() {
   return (
     <div className="min-h-screen bg-pcanvas flex items-center justify-center px-6 py-10">
       <div className="w-full max-w-md">
-        <div className="rounded-container border border-pline bg-pcard p-6">
+        <div className="rounded-2xl bg-pcard p-6 shadow-xs">
           <h1 className="text-[20px] font-semibold text-pfg text-center mb-2">
             {language === 'ru' ? 'Новый пароль' : 'Yangi parol'}
           </h1>

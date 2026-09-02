@@ -18,7 +18,7 @@ export default function SplashScreen() {
             width={260}
             height={260}
             decoding="async"
-            className="relative w-[260px] rounded-container"
+            className="relative w-[260px] rounded-3xl shadow-lg"
           />
         </picture>
       </div>

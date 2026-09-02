@@ -383,7 +383,7 @@ export default function Darslik() {
       </div>
 
       {toast && (
-        <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-container border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-4 py-3 text-center text-[13px] font-medium text-pfg">
+        <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-2xl bg-pwarning/15 px-4 py-3 text-center text-[13px] font-medium text-pfg shadow-lg">
           <AlertTriangle size={15} strokeWidth={1.75} className="flex-none text-pwarning" />
           {toast}
         </div>

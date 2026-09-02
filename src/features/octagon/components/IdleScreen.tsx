@@ -290,7 +290,7 @@ export function IdleScreen({
                 </button>
               </div>
             ) : (
-              <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
+              <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
                 {effectiveOnlineUsers.map((player) => (
                   <div
                     key={player.userId}
@@ -369,7 +369,7 @@ export function IdleScreen({
 
             {/* TAB 1: XONA YARATISH */}
             {inviteTab === 'create' && (
-              <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
+              <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
                 {/* PIN kodi */}
                 <div className="p-4 space-y-2 text-center">
                   <span className="text-xs font-bold text-psubtle">{tt('yourRoomPin')}</span>
@@ -415,7 +415,7 @@ export function IdleScreen({
 
             {/* TAB 2: XONAGA QO'SHILISH */}
             {inviteTab === 'join' && (
-              <div className="overflow-hidden rounded-container border border-pline bg-pcard p-4 space-y-4 shadow-xs">
+              <div className="overflow-hidden rounded-2xl bg-pcard p-4 space-y-4 shadow-xs">
                 <div className="space-y-1.5">
                   <label className="text-xs font-bold text-pfg block text-center">{tt('enterPinPrompt')}</label>
                   <input
@@ -545,7 +545,7 @@ export function IdleScreen({
                 key={tKey}
                 type="button"
                 onClick={() => { playSound('click'); haptics.impact('medium'); setSubview(tKey) }}
-                className="relative flex items-center justify-between p-3.5 rounded-[22px] border border-pline bg-pcard hover:border-plineStrong hover:bg-psurface text-left transition-all duration-[120ms] ease-out active:scale-[0.97] shadow-xs group"
+                className="relative flex items-center justify-between p-3.5 rounded-2xl bg-pcard hover:bg-psurface text-left transition-all duration-[120ms] ease-out active:scale-[0.97] shadow-xs group"
               >
                 <div className="flex items-center gap-3 min-w-0 flex-1">
                   <div className={cn('size-10 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-105', meta.color)}>

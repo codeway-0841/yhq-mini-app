@@ -47,7 +47,7 @@ const Scene = memo(function Scene({
       className="p-6"
     >
       <Confetti count={40} />
-      <div className="relative w-full max-w-[300px] rounded-container border border-pline bg-pcard p-8 text-center shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)] motion-safe:animate-premiumIn">
+      <div className="relative w-full max-w-[300px] rounded-3xl bg-pcard p-8 text-center shadow-2xl motion-safe:animate-premiumIn">
         <div
           className="mx-auto mb-4 flex size-14 items-center justify-center rounded-[16px]"
           style={{

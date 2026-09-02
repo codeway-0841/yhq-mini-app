@@ -40,7 +40,7 @@ function Sub({ children }: { children: React.ReactNode }) {
 function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
     <button onClick={onClick}
-      className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-4 rounded-container text-[16px] flex items-center justify-center gap-2">
+      className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-4 rounded-2xl text-[16px] flex items-center justify-center gap-2 shadow-md">
       {label}
       <ChevronRight size={20} strokeWidth={3} />
     </button>

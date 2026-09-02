@@ -69,9 +69,9 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       type="button"
       onClick={onOpen}
       className={cn(
-        'flex size-full items-center gap-3.5 rounded-container border border-pline bg-pcard p-4 text-left',
-        'select-none transition-[transform,border-color] duration-[120ms] ease-out',
-        'hover:border-plineStrong active:scale-[0.99]',
+        'flex size-full items-center gap-3.5 rounded-2xl bg-pcard p-4 text-left shadow-xs',
+        'select-none transition-transform duration-[120ms] ease-out',
+        'active:scale-[0.99] hover:bg-psurface/50',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
       )}
     >

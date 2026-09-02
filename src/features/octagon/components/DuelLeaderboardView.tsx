@@ -195,7 +195,7 @@ export function DuelLeaderboardView({
 
       {/* O'yinchilar Ro'yxati / Bo'sh holat / Skeleton */}
       {isLeaderboardLoading ? (
-        <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline animate-pulse shadow-xs">
+        <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline animate-pulse shadow-xs">
           {Array.from({ length: 6 }, (_, i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-3.5">
               <div className="w-5 h-3.5 bg-psurface rounded shrink-0" />
@@ -227,7 +227,7 @@ export function DuelLeaderboardView({
           </button>
         </div>
       ) : (
-        <div className="overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
+        <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
           {(currentLeaderList.length >= 3 ? currentLeaderList.slice(3) : currentLeaderList).map((entry) => {
             const isYou = entry.isYou
 

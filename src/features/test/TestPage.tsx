@@ -879,7 +879,7 @@ export default function TestPage() {
                   setShowExplain(false)
                   navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
                 }}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-4 py-3 rounded-container font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0">
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-4 py-3 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0 shadow-md">
                 <GraduationCap size={16} />
                 {tt('openModule')}
               </button>

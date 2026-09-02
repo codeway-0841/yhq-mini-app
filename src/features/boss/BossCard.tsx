@@ -50,7 +50,7 @@ export default function BossCard() {
   if (failed && !state) return null
   if (!state) {
     return (
-      <div className="mx-5 mb-6 rounded-container border border-pline bg-pcard p-4">
+      <div className="mx-5 mb-6 rounded-2xl bg-pcard p-4 shadow-xs">
         <Skeleton className="mb-3 h-2.5 w-24" />
         <div className="flex items-center gap-3">
           <Skeleton className="size-12 shrink-0 rounded-[14px]" />
@@ -78,7 +78,7 @@ export default function BossCard() {
     : { text: `${daysLeft} ${tt('bossDaysLeft')}`, color: 'var(--p-muted)' }
 
   return (
-    <div className="mx-4 mb-5 overflow-hidden rounded-container border border-pline bg-pcard p-4 transition-all">
+    <div className="mx-4 mb-5 overflow-hidden rounded-2xl bg-pcard p-4 transition-all shadow-xs">
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-psubtle">

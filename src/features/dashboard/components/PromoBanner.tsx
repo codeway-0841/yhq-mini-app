@@ -26,7 +26,7 @@ function useCountdown() {
 export const PromoBanner = memo(function PromoBanner({ text }: { text: string }) {
   const countdown = useCountdown()
   return (
-    <div className="relative mx-5 mb-6 overflow-hidden rounded-container border bg-pcard border-[rgb(var(--p-danger-rgb)/0.35)]">
+    <div className="relative mx-5 mb-6 overflow-hidden rounded-2xl bg-pcard shadow-xs">
       <div className="relative z-10 flex items-center justify-between gap-4 p-4">
         <p className="max-w-[55%] text-[13px] font-semibold leading-snug text-pfg">
           {text}

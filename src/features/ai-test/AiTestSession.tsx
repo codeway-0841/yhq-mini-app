@@ -200,7 +200,7 @@ export default function AiTestSession() {
             const ctx = test.contexts.find((c) => c.id === task.contextId)
             if (ctx) {
               out.push(
-                <div key={`ctx-${ctx.id}`} className="rounded-container border border-pline bg-pcanvas p-4">
+                <div key={`ctx-${ctx.id}`} className="rounded-2xl bg-psurface p-4 shadow-xs">
                   <p className="text-[14px] text-pmuted leading-relaxed whitespace-pre-wrap">{ctx.text}</p>
                 </div>,
               )

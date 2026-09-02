@@ -22,9 +22,9 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
       <button
         onClick={onContinue}
         className={cn(
-          'relative w-full overflow-hidden rounded-container border border-pline bg-pcard p-5 text-left',
-          'transition-[transform,border-color] duration-[120ms] ease-out',
-          'hover:border-plineStrong active:scale-[0.98]',
+          'relative w-full overflow-hidden rounded-2xl bg-pcard p-5 text-left shadow-xs',
+          'transition-transform duration-[120ms] ease-out',
+          'hover:bg-psurface/50 active:scale-[0.98]',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
         )}
       >

@@ -259,7 +259,7 @@ export default function LeaderboardPage() {
 
       {/* ── O'yinchilar Ro'yxati / Bo'sh holat / Skeleton ── */}
       {isLoading ? (
-        <div className="mx-4 overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline animate-pulse shadow-xs">
+        <div className="mx-4 overflow-hidden rounded-2xl bg-pcard divide-y divide-pline animate-pulse shadow-xs">
           {Array.from({ length: 6 }, (_, i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-3.5">
               <div className="w-5 h-3.5 bg-psurface rounded shrink-0" />
@@ -289,7 +289,7 @@ export default function LeaderboardPage() {
           </button>
         </div>
       ) : (
-        <div className="mx-4 overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline shadow-xs">
+        <div className="mx-4 overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
           {restEntries.map((entry) => {
             const isYou = entry.isYou
             const isPromote = tab === 'weekly' && promoteN > 0 && entry.rank <= promoteN
