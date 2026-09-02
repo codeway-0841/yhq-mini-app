@@ -133,7 +133,6 @@ export default function TestlarPage() {
           const d = DIFF[m.diff]
           // Rang intizomi: tema aksent rangi default; qizil FAQAT xavf (mock 2 xato = yiqilishing);
           // binafsha FAQAT AI (dizayn qoidasi 8 — AI/Premium = purple)
-          const boxColor = m.danger ? 'var(--p-danger)' : m.aiCard ? 'var(--p-purple)' : 'var(--p-primary)'
           const ringColor = m.danger ? 'var(--p-danger)' : m.aiCard ? 'var(--p-purple)' : 'var(--p-primary)'
           // Ring chart
           const R = 26, C = 2 * Math.PI * R
@@ -147,19 +146,14 @@ export default function TestlarPage() {
                   {tt('aiTestNew')}
                 </span>
               )}
-              {/* Icon box — silliq borderless pill */}
-              <div className="relative flex-shrink-0">
-                <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                  style={{
-                    background: `color-mix(in srgb, ${boxColor} 12%, transparent)`,
-                  }}>
-                  {m.iconBox === 'num' && (
-                    <span className="text-[17px] font-bold" style={{ color: boxColor }}>{m.numText}</span>
-                  )}
-                  {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: boxColor }} />}
-                  {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
-                  {m.iconBox === 'ai' && <Sparkles size={26} strokeWidth={2.2} style={{ color: boxColor }} />}
-                </div>
+              {/* Flat Icon — toza, fonsiz, grid uslubidagi neytral ikonka */}
+              <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
+                {m.iconBox === 'num' && (
+                  <span className="text-[17px] font-bold text-pmuted tracking-tight tabular-nums">{m.numText}</span>
+                )}
+                {m.iconBox === 'zap' && <Zap size={24} strokeWidth={1.75} />}
+                {m.iconBox === 'cap' && <ClipboardCheck size={24} strokeWidth={1.75} />}
+                {m.iconBox === 'ai' && <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
               </div>
 
               {/* Matn */}

@@ -75,14 +75,9 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
       )}
     >
-      {/* Icon tile */}
-      <div
-        className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px]"
-        style={{
-          background: `color-mix(in srgb, ${config.color} 12%, transparent)`,
-        }}
-      >
-        <Icon size={19} strokeWidth={1.75} style={{ color: config.color }} />
+      {/* Icon tile — flat, fonsiz, toza text-pmuted */}
+      <div className="flex size-10 flex-shrink-0 items-center justify-center text-pmuted">
+        <Icon size={22} strokeWidth={1.75} />
       </div>
 
       {/* Title + subtitle/progress */}

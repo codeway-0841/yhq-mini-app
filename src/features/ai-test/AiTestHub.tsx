@@ -78,15 +78,12 @@ export default function AiTestHub() {
                   {tt('aiTestNew')}
                 </span>
               )}
-              <div className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
-                style={{
-                  background: 'color-mix(in srgb, var(--p-purple) 12%, transparent)',
-                }}>
+              <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
                 {locked
-                  ? <Lock size={24} strokeWidth={2} style={{ color: 'var(--p-purple)' }} />
+                  ? <Lock size={24} strokeWidth={1.75} />
                   : t.attempted
-                    ? <CheckCircle2 size={26} strokeWidth={2} className="text-psuccess" />
-                    : <Sparkles size={26} strokeWidth={2} style={{ color: 'var(--p-purple)' }} />}
+                    ? <CheckCircle2 size={24} strokeWidth={1.75} className="text-psuccess" />
+                    : <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
               </div>
 
               <div className="flex-1 min-w-0">

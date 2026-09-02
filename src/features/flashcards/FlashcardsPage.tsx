@@ -120,13 +120,8 @@ export default function FlashcardsPage() {
             return (
               <button key={c.id} onClick={() => start(c)}
                 className="rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-transform">
-                <div
-                  className="flex size-10 flex-shrink-0 items-center justify-center rounded-[12px]"
-                  style={{
-                    background: `color-mix(in srgb, ${c.color} 12%, transparent)`,
-                  }}
-                >
-                  <Icon size={18} strokeWidth={1.75} style={{ color: c.color }} />
+                <div className="flex size-10 shrink-0 items-center justify-center text-pmuted">
+                  <Icon size={22} strokeWidth={1.75} />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-[14px] font-semibold truncate">{catName}</p>

@@ -114,9 +114,8 @@ export default function StatistikaPage() {
           { icon: Target,  color: 'var(--p-blue)', value: `${accuracy}%`,    label: lang === 'ru' ? 'точность' : 'aniqlik' },
         ].map((c, i) => (
           <div key={i} className="rounded-container border border-pline bg-pcard p-4 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"
-              style={{ background: `color-mix(in srgb, ${c.color} 12%, transparent)` }}>
-              <c.icon size={18} style={{ color: c.color }} />
+            <div className="flex size-9 shrink-0 items-center justify-center text-pmuted">
+              <c.icon size={20} strokeWidth={1.75} />
             </div>
             <div>
               <p className="text-[19px] font-semibold tracking-tight tabular-nums leading-none">{c.value}</p>

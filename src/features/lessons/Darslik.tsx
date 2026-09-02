@@ -211,13 +211,8 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
       {/* Modul sarlavhasi */}
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
-          <div
-            className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px]"
-            style={{
-              background: `color-mix(in srgb, ${mod.color} 12%, transparent)`,
-            }}
-          >
-            <ModIcon size={20} strokeWidth={1.75} style={{ color: mod.color }} />
+          <div className="flex size-10 flex-shrink-0 items-center justify-center text-pmuted">
+            <ModIcon size={22} strokeWidth={1.75} />
           </div>
           <div className="min-w-0">
             <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-psubtle">
