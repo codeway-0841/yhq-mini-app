@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft, Search, Sparkles } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -34,15 +34,9 @@ interface ModeCard {
 export default function TestlarPage() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS
-  const settings      = useAppStore((s) => s.settings)
-  const totalCorrect  = useAppStore((s) => s.totalCorrect)
-  const totalAnswered = useAppStore((s) => s.totalAnswered)
+  const settings  = useAppStore((s) => s.settings)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
-
-  const accuracy = totalAnswered > 0
-    ? Math.min(100, Math.round((totalCorrect / totalAnswered) * 100))
-    : 0
 
   const DIFF: Record<Diff, { label: string; color: string }> = {
     easy: { label: tt('diffEasy'), color: 'var(--p-success)' },
@@ -131,15 +125,9 @@ export default function TestlarPage() {
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
           const d = DIFF[m.diff]
-          // Rang intizomi: tema aksent rangi default; qizil FAQAT xavf (mock 2 xato = yiqilishing);
-          // binafsha FAQAT AI (dizayn qoidasi 8 — AI/Premium = purple)
-          const ringColor = m.danger ? 'var(--p-danger)' : m.aiCard ? 'var(--p-purple)' : 'var(--p-primary)'
-          // Ring chart
-          const R = 26, C = 2 * Math.PI * R
-          const off = C * (1 - accuracy / 100)
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="relative rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform">
+              className="group relative rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform text-left">
               {/* AI kunlik test — YANGI badge (yangi testlar ekanligi ko'rinib tursin) */}
               {m.aiCard && (
                 <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">
@@ -167,16 +155,8 @@ export default function TestlarPage() {
                 </span>
               </div>
 
-              {/* Ring — progress = aksent rang (tema bilan almashadi) */}
-              <svg width="62" height="62" viewBox="0 0 62 62" className="flex-shrink-0">
-                <circle cx="31" cy="31" r={R} fill="none" stroke="var(--p-line)" strokeWidth="5" />
-                <circle cx="31" cy="31" r={R} fill="none" stroke={ringColor} strokeWidth="5"
-                  strokeLinecap="round" strokeDasharray={C} strokeDashoffset={off}
-                  transform="rotate(-90 31 31)" />
-                <text x="31" y="35" textAnchor="middle" fill="var(--p-fg)" fontSize="12" fontWeight="600">
-                  {accuracy}%
-                </text>
-              </svg>
+              {/* O'tish ko'rsatkichi */}
+              <ChevronRight size={18} strokeWidth={2} className="flex-shrink-0 text-psubtle group-hover:text-pfg transition-colors" />
             </button>
           )
         })}
