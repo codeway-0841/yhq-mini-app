@@ -115,7 +115,7 @@ function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
 }
 
-import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT } from './platform/telegram'
+import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT, syncTelegramTheme } from './platform/telegram'
 import { bindAppBackButton, hideSplashScreen, syncStatusBarStyle } from './platform/native'
 
 function Layout() {
@@ -241,6 +241,7 @@ function ThemeEffect() {
       const apply = () => {
         document.body.dataset.theme = mq.matches ? 'light' : 'dark'
         syncStatusBarStyle(!mq.matches)   // native APK status bar iconlari (no-op web/TG)
+        syncTelegramTheme(!mq.matches)    // Telegram status bar & header rangi (no-op APK/web)
       }
       apply()
       mq.addEventListener('change', apply)
@@ -248,6 +249,7 @@ function ThemeEffect() {
     }
     document.body.dataset.theme = theme
     syncStatusBarStyle(theme === 'dark')
+    syncTelegramTheme(theme === 'dark')
   }, [theme])
   // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
   useEffect(() => {

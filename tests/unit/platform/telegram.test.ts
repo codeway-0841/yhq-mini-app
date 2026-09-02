@@ -119,4 +119,19 @@ describe('Telegram ichida', () => {
     expect(rootStyle.getPropertyValue('--safe-top')).toBe('96px')
     expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
   })
+
+  it('syncTelegramTheme: dark/light temalarda headerColor va backgroundColor sinxronlanadi', async () => {
+    const { syncTelegramTheme } = await import('../../../src/platform/telegram')
+    const tg = webApp()
+    tg.setHeaderColor = vi.fn()
+    tg.setBackgroundColor = vi.fn()
+
+    syncTelegramTheme(true)
+    expect(tg.setHeaderColor).toHaveBeenCalledWith('#0d1117')
+    expect(tg.setBackgroundColor).toHaveBeenCalledWith('#0d1117')
+
+    syncTelegramTheme(false)
+    expect(tg.setHeaderColor).toHaveBeenCalledWith('#fafaf9')
+    expect(tg.setBackgroundColor).toHaveBeenCalledWith('#fafaf9')
+  })
 })

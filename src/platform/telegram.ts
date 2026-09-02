@@ -48,6 +48,8 @@ interface TelegramWebApp {
   platform?: string
   safeAreaInset?: SafeAreaInset
   contentSafeAreaInset?: SafeAreaInset
+  setHeaderColor?(color: string): void
+  setBackgroundColor?(color: string): void
   onEvent?(eventType: string, eventHandler: () => void): void
   offEvent?(eventType: string, eventHandler: () => void): void
   requestFullscreen?(): void
@@ -60,10 +62,11 @@ export function getTelegramWebApp(): TelegramWebApp | undefined {
 
 /**
  * Telegram Bot API 8.0 safe-area sinxronizatsiyasi:
- * - Standart rejimda (isFullscreen=false) webview Telegram header'i ostida boshlanadi,
- *   shuning uchun tepa safe-area 0px bo'lishi SHART (aks holda header ostida ulkan bo'shliq hosil bo'ladi).
- * - Fullscreen rejimda (isFullscreen=true) webview to'liq ekranni qoplaydi va floating
- *   tugmalar ostida qolmaslik uchun contentSafeAreaInset.top ishlatiladi.
+ * - Mobile Telegram'da (Android ~64px, iOS ~88px) '✕ Close' va '∨ ⋮' floating tugmalari
+ *   har doim webview ustida suzib yuradi. Kontent ularning ostida qolmasligi uchun
+ *   fallbackTop ta'minlanadi.
+ * - Telegram o'z insets'ini (Bot API 8.0) bersa, Math.max() eng kattasini oladi.
+ * - Desktop Telegram / brauzerda fallbackTop = 0px (floating tugmalar yo'q).
  */
 export function syncTelegramSafeArea(): void {
   const tg = getTelegramWebApp()
@@ -73,15 +76,12 @@ export function syncTelegramSafeArea(): void {
     const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent) || tg.platform === 'ios')
     const isAndroid = typeof navigator !== 'undefined' && (/Android/i.test(navigator.userAgent) || tg.platform === 'android')
 
-    const isFullscreen = tg.isFullscreen === true
     const contentTop = tg.contentSafeAreaInset?.top ?? 0
     const safeTop = tg.safeAreaInset?.top ?? 0
 
-    // Telegram fullscreen rejimida floating buttons / status bar ostida qolmasligi uchun:
-    // iOS (Dynamic Island / notch + floating buttons) = ~88px; Android = ~72px.
-    // Standart (non-fullscreen) rejimda webview Telegram header'i ostida boshlanadi -> top = 0.
-    const fallbackTop = isFullscreen ? (isIos ? 88 : isAndroid ? 72 : 0) : 0
-    const top = isFullscreen ? Math.max(contentTop, safeTop, fallbackTop) : Math.max(contentTop, safeTop)
+    // Mobile Telegram (Android ~64px, iOS ~88px):
+    const fallbackTop = isIos ? 88 : isAndroid ? 64 : 0
+    const top = Math.max(contentTop, safeTop, fallbackTop)
 
     const contentBottom = tg.contentSafeAreaInset?.bottom ?? 0
     const safeBottom = tg.safeAreaInset?.bottom ?? 0
@@ -110,6 +110,20 @@ export function syncTelegramSafeArea(): void {
   }
 }
 
+/**
+ * Telegram status bar va header rangini app temasiga sinxronlash.
+ * Bu Telegram'dagi noo'rin oq status bar chizig'ini yo'qotadi va dark/light'ga moslaydi.
+ */
+export function syncTelegramTheme(isDark: boolean): void {
+  const tg = getTelegramWebApp()
+  if (!tg) return
+  const color = isDark ? '#0d1117' : '#fafaf9'
+  try {
+    tg.setHeaderColor?.(color)
+    tg.setBackgroundColor?.(color)
+  } catch {}
+}
+
 /** Telegram initData — har bir API so'rovi bilan server-side verification uchun yuboriladi. */
 export function getInitData(): string | undefined {
   return getTelegramWebApp()?.initData || undefined
@@ -123,7 +137,7 @@ export function getStartParam(): string | undefined {
   return getTelegramWebApp()?.initDataUnsafe?.start_param
 }
 
-/** App bootstrap: Telegram'ga "tayyor" signalini berish + to'liq ekranga yoyish (fullscreen) + safe-area. */
+/** App bootstrap: Telegram'ga "tayyor" signalini berish + to'liq ekranga yoyish (fullscreen) + safe-area va tema. */
 export function readyAndExpand(): void {
   const tg = getTelegramWebApp()
   if (tg) {
@@ -133,6 +147,8 @@ export function readyAndExpand(): void {
       tg.requestFullscreen?.()
     } catch (_) {}
     syncTelegramSafeArea()
+    const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
+    syncTelegramTheme(isDark)
   }
 }
 
