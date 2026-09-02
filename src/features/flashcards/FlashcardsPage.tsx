@@ -99,18 +99,19 @@ export default function FlashcardsPage() {
   // ── Kategoriya tanlash ──
   if (!cat) {
     return (
-      <div className="font-display bg-pcanvas text-pfg px-5 pt-3">
-        <div className="flex items-center gap-2 mb-5">
+      <div className="font-display bg-pcanvas text-pfg pb-6">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
           <button onClick={() => goBack(navigate)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-            className="text-psubtle hover:text-pfg px-1 transition-colors">
-            <ChevronLeft size={24} />
+            className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
           <Layers size={18} className="text-pprimary" />
           <h1 className="text-lg font-semibold tracking-tight">Flashcards</h1>
-        </div>
-        <p className="text-[12px] text-psubtle mb-4">
-          {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
-        </p>
+        </header>
+        <div className="px-5">
+          <p className="text-[12px] text-psubtle mb-4">
+            {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
+          </p>
         <div className="flex flex-col gap-2.5">
           {signCategories.map((c) => {
             const k = readKnown(c.id).length
@@ -143,6 +144,7 @@ export default function FlashcardsPage() {
               </button>
             )
           })}
+        </div>
         </div>
       </div>
     )
@@ -185,20 +187,22 @@ export default function FlashcardsPage() {
 
   // ── Karta ekrani ──
   return (
-    <div className="font-display bg-pcanvas text-pfg flex flex-col pt-3">
-      <div className="flex items-center justify-between px-5">
-        <button onClick={() => setCat(null)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-          className="grid size-11 place-items-center rounded-control text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <span className="text-[12px] font-semibold text-psubtle">{catName}</span>
-        <span className="text-[12px] font-semibold text-pmuted tabular-nums">{idx + 1}/{deck.length}</span>
-      </div>
+    <div className="font-display bg-pcanvas text-pfg flex flex-col pb-6">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline pb-2 mb-2">
+        <div className="flex items-center justify-between px-5 py-1">
+          <button onClick={() => setCat(null)} aria-label={isRu ? 'Назад' : 'Orqaga'}
+            className="grid size-10 place-items-center rounded-control text-psubtle transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            <ChevronLeft size={20} strokeWidth={1.75} />
+          </button>
+          <span className="text-[12px] font-semibold text-psubtle">{catName}</span>
+          <span className="text-[12px] font-semibold text-pmuted tabular-nums">{idx + 1}/{deck.length}</span>
+        </div>
 
-      {/* Progress */}
-      <div className="mx-5 mt-3 h-[3px] rounded-[2px] bg-plineStrong overflow-hidden">
-        <div className="h-full rounded-[2px] bg-pprimary transition-[width,background-color] duration-[400ms]" style={{ width: `${progress}%` }} />
-      </div>
+        {/* Progress */}
+        <div className="mx-5 mt-1 h-[3px] rounded-[2px] bg-plineStrong overflow-hidden">
+          <div className="h-full rounded-[2px] bg-pprimary transition-[width,background-color] duration-[400ms]" style={{ width: `${progress}%` }} />
+        </div>
+      </header>
 
       {/* FLIP karta */}
       <div className="flex-1 flex items-center justify-center px-6 py-5">

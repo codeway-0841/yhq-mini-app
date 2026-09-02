@@ -173,7 +173,7 @@ export default function YimExamPage() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 select-none pb-10">
       {/* ── Davlat Imtihon Markazi Yuqori Rasmiy Paneli (YIM Header) ── */}
-      <header className="sticky top-[var(--safe-top,0px)] z-30 bg-slate-900 border-b border-sky-500/30 px-3 py-2.5 min-[480px]:px-5 shadow-lg flex items-center justify-between">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-slate-900 border-b border-sky-500/30 px-3 py-2.5 min-[480px]:px-5 shadow-lg flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <button
             type="button"

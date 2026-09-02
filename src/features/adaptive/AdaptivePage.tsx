@@ -131,39 +131,54 @@ export default function AdaptivePage() {
 
   if (!q) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[60vh] py-8 gap-4 text-pmuted px-4">
-        <Brain size={40} className="text-pprimary" />
-        <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
-
-        {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
-        {summary && summary.total > 0 && (
-          <div className="rounded-container border border-pline bg-pcard rounded-container p-4 w-full max-w-xs">
-            <div className="flex items-center gap-2 mb-3">
-              <CalendarClock size={15} className="text-pprimary" />
-              <p className="text-xs font-semibold text-pfg">
-                {summary.total} {tt('srTotalCards').toLowerCase()}
-              </p>
+      <div className="flex flex-col min-h-screen bg-pcanvas">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+          <div className="flex items-center justify-between px-4 py-2.5">
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
+              <X size={20} />
+            </button>
+            <div className="flex items-center gap-2">
+              <Brain size={16} className="text-ppurple" />
+              <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
             </div>
-            <div className="grid grid-cols-3 gap-2 text-center">
-              <div className="rounded-control bg-psuccess/10 py-2">
-                <p className="text-lg font-semibold text-psuccess tabular-nums">{summary.dueNow}</p>
-                <p className="text-[10px] font-semibold text-pmuted">{tt('srDueNow')}</p>
-              </div>
-              <div className="rounded-control bg-pwarning/10 py-2">
-                <p className="text-lg font-semibold text-pwarning tabular-nums">{summary.dueNext24h}</p>
-                <p className="text-[10px] font-semibold text-pmuted">{tt('srNext24h')}</p>
-              </div>
-              <div className="rounded-control bg-psurface py-2">
-                <p className="text-lg font-semibold text-pfg tabular-nums">{summary.dueNext7d}</p>
-                <p className="text-[10px] font-semibold text-pmuted">{tt('srNext7d')}</p>
-              </div>
-            </div>
+            <div className="w-8" />
           </div>
-        )}
+        </header>
 
-        <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] px-8 py-3.5 rounded-container text-base">
-          {tt('adaptive')}
-        </button>
+        <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 text-pmuted px-4">
+          <Brain size={40} className="text-pprimary" />
+          <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
+
+          {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
+          {summary && summary.total > 0 && (
+            <div className="rounded-container border border-pline bg-pcard p-4 w-full max-w-xs">
+              <div className="flex items-center gap-2 mb-3">
+                <CalendarClock size={15} className="text-pprimary" />
+                <p className="text-xs font-semibold text-pfg">
+                  {summary.total} {tt('srTotalCards').toLowerCase()}
+                </p>
+              </div>
+              <div className="grid grid-cols-3 gap-2 text-center">
+                <div className="rounded-control bg-psuccess/10 py-2">
+                  <p className="text-lg font-semibold text-psuccess tabular-nums">{summary.dueNow}</p>
+                  <p className="text-[10px] font-semibold text-pmuted">{tt('srDueNow')}</p>
+                </div>
+                <div className="rounded-control bg-pwarning/10 py-2">
+                  <p className="text-lg font-semibold text-pwarning tabular-nums">{summary.dueNext24h}</p>
+                  <p className="text-[10px] font-semibold text-pmuted">{tt('srNext24h')}</p>
+                </div>
+                <div className="rounded-control bg-psurface py-2">
+                  <p className="text-lg font-semibold text-pfg tabular-nums">{summary.dueNext7d}</p>
+                  <p className="text-[10px] font-semibold text-pmuted">{tt('srNext7d')}</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] px-8 py-3.5 rounded-container text-base">
+            {tt('adaptive')}
+          </button>
+        </div>
       </div>
     )
   }
@@ -172,14 +187,16 @@ export default function AdaptivePage() {
 
   return (
     <div className="flex flex-col bg-pcanvas">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-pline">
-        <button onClick={() => goBack(navigate)} className="text-pmuted p-1"><X size={20} /></button>
-        <div className="flex items-center gap-2">
-          <Brain size={16} className="text-ppurple" />
-          <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+        <div className="flex items-center justify-between px-4 py-2.5">
+          <button onClick={() => goBack(navigate)} className="text-pmuted p-1 hover:text-pfg transition-colors"><X size={20} /></button>
+          <div className="flex items-center gap-2">
+            <Brain size={16} className="text-ppurple" />
+            <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
+          </div>
+          <span className="text-xs text-pmuted">{sessionCount} {tt('qAnswered')}</span>
         </div>
-        <span className="text-xs text-pmuted">{sessionCount} {tt('qAnswered')}</span>
-      </div>
+      </header>
 
       <div className="flex-1 overflow-y-auto px-4 pt-4 pb-6">
         <div className="flex items-center justify-between mb-3">

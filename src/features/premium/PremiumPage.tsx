@@ -71,16 +71,16 @@ export default function PremiumPage() {
   }
 
   return (
-    <div className="font-display bg-pcanvas text-pfg">
+    <div className="font-display bg-pcanvas text-pfg pb-8">
       {trialDone && <Confetti count={36} />}
       {/* Header */}
-      <div className="flex items-center gap-2 px-5 pt-3 pb-2">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2">
         <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="grid size-9 place-items-center rounded-control text-psubtle transition-colors hover:bg-psurface hover:text-pfg">
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-lg font-semibold tracking-tight">Premium</h1>
-      </div>
+      </header>
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">

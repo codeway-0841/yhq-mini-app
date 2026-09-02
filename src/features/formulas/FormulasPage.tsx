@@ -106,12 +106,12 @@ export default function FormulasPage() {
   const favItems = useMemo(() => ALL.filter((x) => favs.includes(x.id)), [favs])
 
   return (
-    <div className="font-display bg-pcanvas">
+    <div className="font-display bg-pcanvas pb-6">
       {/* Header */}
-      <div className="flex items-center gap-3 px-5 pt-3 pb-3">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-3 mb-3">
         <button type="button" onClick={() => goBack(navigate)} aria-label="back"
-          className="w-9 h-9 rounded-control rounded-container border border-pline bg-pcard flex items-center justify-center flex-shrink-0 cursor-pointer">
-          <ChevronLeft size={18} className="text-pmuted" />
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <div className="flex-1 min-w-0">
           <h1 className="text-[17px] font-semibold text-pfg leading-tight">{tt('cheatsheets')}</h1>
@@ -122,7 +122,7 @@ export default function FormulasPage() {
             <Star size={13} className="fill-pwarning" /> {favs.length}
           </span>
         )}
-      </div>
+      </header>
 
       {/* Qidiruv */}
       <div className="px-5 mb-3">

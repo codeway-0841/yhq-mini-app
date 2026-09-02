@@ -154,11 +154,11 @@ function SignsGrid({
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-4">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-3 mb-4">
         <button
           onClick={onBack}
           aria-label={isRu ? 'Назад' : 'Orqaga'}
-          className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
@@ -166,7 +166,7 @@ function SignsGrid({
         <span className="text-xs text-pmuted ml-auto bg-psurface border border-pline px-2.5 py-1 rounded-control flex-shrink-0">
           {category.count} {isRu ? 'знаков' : 'ta'}
         </span>
-      </div>
+      </header>
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
         {signs.map((sign) => {
           const signName = isRu ? (sign.nameRu || sign.name) : sign.name

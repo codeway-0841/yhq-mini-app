@@ -276,46 +276,48 @@ export default function SignsGamePage() {
   const bestMatch = readBest(BEST_MATCH_KEY)
 
   return (
-    <div className="font-display bg-pcanvas text-pfg px-5 pt-3">
-      <div className="flex items-center gap-2 mb-5">
+    <div className="font-display bg-pcanvas text-pfg pb-6">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-5">
         <button onClick={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))} aria-label="Orqaga"
-          className="text-psubtle hover:text-pfg px-1 transition-colors">
-          <ChevronLeft size={24} />
+          className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-lg font-bold tracking-tight">{tt('signsGameTitle')}</h1>
+      </header>
+
+      <div className="px-5">
+        {mode === 'hub' && (
+          <div className="grid gap-3.5 animate-premiumIn">
+            {([
+              { id: 'speed' as const, icon: Zap,        title: tt('signsGameSpeed'), desc: tt('signsGameSpeedDesc'),
+                best: bestSpeed !== null ? `${tt('signsGameBest')}: ${bestSpeed}` : null,
+                iconColor: 'var(--p-warning)' },
+              { id: 'match' as const, icon: LayoutGrid, title: tt('signsGameMatch'), desc: tt('signsGameMatchDesc'),
+                best: bestMatch !== null ? `${tt('signsGameBest')}: ${(bestMatch / 1000).toFixed(1)}s` : null,
+                iconColor: 'var(--p-blue)' },
+            ]).map((m) => (
+              <button key={m.id} onClick={() => { playSound('click'); setMode(m.id) }}
+                className="border border-pline bg-pcard rounded-container p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform">
+                <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
+                  style={m.id === 'speed'
+                    ? { background: 'rgb(var(--p-warning-rgb) / 0.14)', border: '1px solid rgb(var(--p-warning-rgb) / 0.4)' }
+                    : { background: 'color-mix(in srgb, var(--p-blue) 12%, transparent)', border: '1px solid color-mix(in srgb, var(--p-blue) 35%, transparent)' }}>
+                  <m.icon size={22} style={{ color: m.iconColor }} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[14.5px] font-black">{m.title}</p>
+                  <p className="text-[11.5px] text-pmuted mt-0.5 leading-snug">{m.desc}</p>
+                  {m.best && <p className="text-[10.5px] font-bold text-pgold mt-1">{m.best}</p>}
+                </div>
+                <ChevronLeft size={18} className="rotate-180 text-psubtle flex-none" />
+              </button>
+            ))}
+          </div>
+        )}
+
+        {mode === 'speed' && <SpeedGame onExit={() => setMode('hub')} />}
+        {mode === 'match' && <MatchGame onExit={() => setMode('hub')} />}
       </div>
-
-      {mode === 'hub' && (
-        <div className="grid gap-3.5 animate-premiumIn">
-          {([
-            { id: 'speed' as const, icon: Zap,        title: tt('signsGameSpeed'), desc: tt('signsGameSpeedDesc'),
-              best: bestSpeed !== null ? `${tt('signsGameBest')}: ${bestSpeed}` : null,
-              iconColor: 'var(--p-warning)' },
-            { id: 'match' as const, icon: LayoutGrid, title: tt('signsGameMatch'), desc: tt('signsGameMatchDesc'),
-              best: bestMatch !== null ? `${tt('signsGameBest')}: ${(bestMatch / 1000).toFixed(1)}s` : null,
-              iconColor: 'var(--p-blue)' },
-          ]).map((m) => (
-            <button key={m.id} onClick={() => { playSound('click'); setMode(m.id) }}
-              className="border border-pline bg-pcard rounded-container p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
-                style={m.id === 'speed'
-                  ? { background: 'rgb(var(--p-warning-rgb) / 0.14)', border: '1px solid rgb(var(--p-warning-rgb) / 0.4)' }
-                  : { background: 'color-mix(in srgb, var(--p-blue) 12%, transparent)', border: '1px solid color-mix(in srgb, var(--p-blue) 35%, transparent)' }}>
-                <m.icon size={22} style={{ color: m.iconColor }} />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-[14.5px] font-black">{m.title}</p>
-                <p className="text-[11.5px] text-pmuted mt-0.5 leading-snug">{m.desc}</p>
-                {m.best && <p className="text-[10.5px] font-bold text-pgold mt-1">{m.best}</p>}
-              </div>
-              <ChevronLeft size={18} className="rotate-180 text-psubtle flex-none" />
-            </button>
-          ))}
-        </div>
-      )}
-
-      {mode === 'speed' && <SpeedGame onExit={() => setMode('hub')} />}
-      {mode === 'match' && <MatchGame onExit={() => setMode('hub')} />}
     </div>
   )
 }
