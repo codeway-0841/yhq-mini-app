@@ -147,15 +147,14 @@ export default function TestlarPage() {
                   {tt('aiTestNew')}
                 </span>
               )}
-              {/* Icon box — neytral (yoki danger uchun qizil) */}
+              {/* Icon box — silliq borderless pill */}
               <div className="relative flex-shrink-0">
-                <div className="w-14 h-14 rounded-container flex items-center justify-center"
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
                   style={{
-                    background: `color-mix(in srgb, ${boxColor} 8%, transparent)`,
-                    border: `1.5px solid color-mix(in srgb, ${boxColor} 25%, transparent)`,
+                    background: `color-mix(in srgb, ${boxColor} 12%, transparent)`,
                   }}>
                   {m.iconBox === 'num' && (
-                    <span className="text-[17px] font-semibold" style={{ color: boxColor }}>{m.numText}</span>
+                    <span className="text-[17px] font-bold" style={{ color: boxColor }}>{m.numText}</span>
                   )}
                   {m.iconBox === 'zap' && <Zap size={26} strokeWidth={2.4} style={{ color: boxColor }} />}
                   {m.iconBox === 'cap' && <ClipboardCheck size={26} strokeWidth={2.2} style={{ color: boxColor }} />}

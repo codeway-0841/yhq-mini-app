@@ -214,8 +214,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
           <div
             className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px]"
             style={{
-              background: `color-mix(in srgb, ${mod.color} 10%, transparent)`,
-              border: `1px solid color-mix(in srgb, ${mod.color} 20%, transparent)`,
+              background: `color-mix(in srgb, ${mod.color} 12%, transparent)`,
             }}
           >
             <ModIcon size={20} strokeWidth={1.75} style={{ color: mod.color }} />

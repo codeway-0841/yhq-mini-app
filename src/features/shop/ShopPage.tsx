@@ -308,7 +308,7 @@ export default function ShopPage() {
             <PremiumIcon size={12} /> Premium
           </p>
           <div className="mx-5 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
-            <div className="flex size-11 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-gold-rgb)/0.30)] bg-[rgb(var(--p-gold-rgb)/0.12)]">
+            <div className="flex size-11 flex-none items-center justify-center rounded-[14px] bg-[rgb(var(--p-gold-rgb)/0.12)]">
               <Sparkles size={19} strokeWidth={1.75} className="text-pgold" />
             </div>
             <div className="flex-1 min-w-0">
@@ -331,7 +331,7 @@ export default function ShopPage() {
 
       {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
       <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3">
-        <div className="flex size-11 flex-none items-center justify-center rounded-[14px] border border-[rgb(var(--p-purple-rgb)/0.30)] bg-[rgb(var(--p-purple-rgb)/0.12)]">
+        <div className="flex size-11 flex-none items-center justify-center rounded-[14px] bg-[rgb(var(--p-purple-rgb)/0.12)]">
           <Gift size={19} strokeWidth={1.75} className="text-ppurple" />
         </div>
         <div className="flex-1 min-w-0">

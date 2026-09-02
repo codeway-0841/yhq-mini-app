@@ -156,7 +156,7 @@ export default function AiTutorModal({
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex flex-col items-center text-center">
-            <div className="w-14 h-14 rounded-container bg-ppurple/15 border border-ppurple/40 flex items-center justify-center mb-3">
+            <div className="w-14 h-14 rounded-2xl bg-ppurple/15 flex items-center justify-center mb-3">
               <PremiumIcon size={28} className="text-pwarning" />
             </div>
             <p id="upsell-title" className="text-[17px] font-semibold text-pfg">{tt('premiumNeedTitle')}</p>

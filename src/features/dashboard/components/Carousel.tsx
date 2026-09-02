@@ -79,8 +79,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       <div
         className="flex size-11 flex-shrink-0 items-center justify-center rounded-[14px]"
         style={{
-          background: `color-mix(in srgb, ${config.color} 10%, transparent)`,
-          border: `1px solid color-mix(in srgb, ${config.color} 20%, transparent)`,
+          background: `color-mix(in srgb, ${config.color} 12%, transparent)`,
         }}
       >
         <Icon size={19} strokeWidth={1.75} style={{ color: config.color }} />

@@ -78,10 +78,9 @@ export default function AiTestHub() {
                   {tt('aiTestNew')}
                 </span>
               )}
-              <div className="w-14 h-14 rounded-container flex items-center justify-center flex-shrink-0"
+              <div className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
                 style={{
-                  background: 'color-mix(in srgb, var(--p-purple) 10%, transparent)',
-                  border: '1.5px solid color-mix(in srgb, var(--p-purple) 30%, transparent)',
+                  background: 'color-mix(in srgb, var(--p-purple) 12%, transparent)',
                 }}>
                 {locked
                   ? <Lock size={24} strokeWidth={2} style={{ color: 'var(--p-purple)' }} />

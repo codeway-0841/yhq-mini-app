@@ -117,7 +117,7 @@ function CategoryGrid({ onSelect, lang }: { onSelect: (cat: SignCategory) => voi
             onClick={() => onSelect(cat)}
             className="flex items-center gap-3.5 rounded-container border border-pline bg-psurface p-3.5 active:scale-[0.98] transition-all text-left hover:border-plineStrong shadow-xs"
           >
-            <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-control border border-pline bg-pcard overflow-hidden">
+            <div className="flex size-11 flex-shrink-0 items-center justify-center rounded-xl bg-pcard overflow-hidden shadow-xs">
               {cat.image ? (
                 <img src={cat.image} alt={catName} className="w-7 h-7 object-contain" />
               ) : (

@@ -115,7 +115,7 @@ export default function StatistikaPage() {
         ].map((c, i) => (
           <div key={i} className="rounded-container border border-pline bg-pcard p-4 flex items-center gap-3">
             <div className="w-10 h-10 rounded-[12px] flex items-center justify-center flex-shrink-0"
-              style={{ background: `color-mix(in srgb, ${c.color} 12%, transparent)`, border: `1px solid color-mix(in srgb, ${c.color} 30%, transparent)` }}>
+              style={{ background: `color-mix(in srgb, ${c.color} 12%, transparent)` }}>
               <c.icon size={18} style={{ color: c.color }} />
             </div>
             <div>

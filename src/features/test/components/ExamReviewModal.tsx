@@ -112,7 +112,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {displayedItems.length === 0 ? (
             <div className="text-center py-12 px-4">
-              <div className="w-14 h-14 rounded-container bg-pprimary/15 border border-pprimary/40 flex items-center justify-center mx-auto mb-3 text-pprimary">
+              <div className="w-14 h-14 rounded-2xl bg-pprimary/15 flex items-center justify-center mx-auto mb-3 text-pprimary">
                 <CheckCircle2 size={30} />
               </div>
               <p className="text-sm font-semibold text-pfg">

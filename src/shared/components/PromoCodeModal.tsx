@@ -83,7 +83,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
 
         {successData ? (
           <div className="text-center py-4">
-            <div className="w-16 h-16 rounded-container bg-[rgb(var(--p-primary-rgb)/0.15)] border border-[rgb(var(--p-primary-rgb)/0.40)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
+            <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
               <CheckCircle2 size={36} />
             </div>
 
@@ -103,7 +103,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         ) : (
           <div>
-            <div className="w-12 h-12 rounded-container bg-[rgb(var(--p-purple-rgb)/0.15)] border border-[rgb(var(--p-purple-rgb)/0.40)] flex items-center justify-center mx-auto mb-3 text-ppurple">
+            <div className="w-12 h-12 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center mx-auto mb-3 text-ppurple">
               <Ticket size={24} />
             </div>
 

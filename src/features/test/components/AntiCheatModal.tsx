@@ -27,7 +27,7 @@ export default function AntiCheatModal({
         {/* Yuqori aksent nuri */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-36 h-36 bg-pdanger/25 rounded-full blur-2xl pointer-events-none" />
 
-        <div className="w-16 h-16 rounded-container border border-[rgb(var(--p-danger-rgb)/0.30)] bg-[rgb(var(--p-danger-rgb)/0.10)] flex items-center justify-center mx-auto mb-4 text-pdanger">
+        <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] flex items-center justify-center mx-auto mb-4 text-pdanger">
           {isFinalWarning ? <AlertOctagon size={34} /> : <ShieldAlert size={34} />}
         </div>
 

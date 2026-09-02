@@ -30,7 +30,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
     <div className="flex flex-col items-center gap-5 text-center max-w-xs w-full">
       <div className="relative">
         <div className="absolute inset-0 rounded-full bg-[rgb(var(--p-purple-rgb)/0.25)] animate-ping" />
-        <div className="relative w-16 h-16 rounded-full bg-[rgb(var(--p-purple-rgb)/0.10)] border border-[rgb(var(--p-purple-rgb)/0.40)] flex items-center justify-center">
+        <div className="relative w-16 h-16 rounded-full bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center">
           <Sword size={26} className="text-ppurple" />
         </div>
       </div>

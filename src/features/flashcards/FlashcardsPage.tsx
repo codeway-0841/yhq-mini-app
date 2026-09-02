@@ -123,8 +123,7 @@ export default function FlashcardsPage() {
                 <div
                   className="flex size-10 flex-shrink-0 items-center justify-center rounded-[12px]"
                   style={{
-                    background: `color-mix(in srgb, ${c.color} 10%, transparent)`,
-                    border: `1px solid color-mix(in srgb, ${c.color} 20%, transparent)`,
+                    background: `color-mix(in srgb, ${c.color} 12%, transparent)`,
                   }}
                 >
                   <Icon size={18} strokeWidth={1.75} style={{ color: c.color }} />
