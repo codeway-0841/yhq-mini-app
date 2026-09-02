@@ -463,10 +463,10 @@ export function IdleScreen({
 
         {/* Live Online Badge */}
         <div className={cn(
-          "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-bold mb-3 transition-colors",
+          "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-bold mb-3 transition-colors shadow-2xs",
           onlineCount > 0
-            ? "border-[color-mix(in_srgb,var(--p-success)_30%,transparent)] bg-[color-mix(in_srgb,var(--p-success)_12%,transparent)] text-psuccess"
-            : "border-pline bg-psurface text-psubtle"
+            ? "bg-[color-mix(in_srgb,var(--p-success)_15%,transparent)] text-psuccess"
+            : "bg-psurface text-psubtle"
         )}>
           <span className={cn(
             "size-2 rounded-full",

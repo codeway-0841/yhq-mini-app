@@ -230,7 +230,7 @@ export default function SubscriptionModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full max-w-lg mx-auto bg-pcard border-t border-pline sm:border sm:border-pline sm:rounded-t-3xl rounded-t-[28px] shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
+        className="w-full max-w-lg mx-auto bg-pcard rounded-t-3xl shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Yuqori surish tutqichi (Drag Handle) */}

@@ -151,7 +151,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="upsell-title">
         <div
-          className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
@@ -190,7 +190,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="static-title">
         <div
-          className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8 max-h-[75vh] flex flex-col"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
@@ -236,7 +236,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="ai-title">
         <div
-          className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8 max-h-[75vh] flex flex-col"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />

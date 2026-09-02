@@ -186,8 +186,8 @@ export default function PremiumPage() {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (
                 <button key={plan.key} onClick={() => setSelectedPlanForPayment(plan)}
-                  className={`rounded-2xl border bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface ${
-                    highlight ? 'border-pprimary ring-1 ring-pprimary' : 'border-pline'
+                  className={`rounded-2xl bg-pcard relative w-full p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface ${
+                    highlight ? 'ring-2 ring-pprimary' : ''
                   }`}>
                   {highlight && (
                     <span className="absolute -top-2.5 left-4 inline-flex items-center gap-1 rounded-full bg-pwash px-2.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-pprimary shadow-xs">

@@ -63,7 +63,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title">
       <div
-        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8 shadow-2xl"
+        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />

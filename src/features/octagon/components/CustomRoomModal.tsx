@@ -123,7 +123,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         {/* TAB 1: Xona yaratish */}
         {tab === 'create' && (
           <div className="space-y-4 pt-1">
-            <div className="rounded-2xl bg-pcard border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 text-center space-y-2">
+            <div className="rounded-2xl bg-pcard p-4 text-center space-y-2 shadow-xs">
               <span className="text-[11px] font-bold text-pmuted">{tt('yourRoomPin')}</span>
               <div className="text-3xl font-black font-mono tracking-widest text-pprimary select-all">
                 {formattedCreatedPin}

@@ -834,7 +834,7 @@ export default function TestPage() {
       {/* "Nega shunday?" — modda izohi (bottom sheet) */}
       {showExplain && (
         <DialogOverlay onClose={() => setShowExplain(false)} labelId="explain-title">
-          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8 max-h-[85vh] flex flex-col shadow-2xl"
+          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-5 pb-8 max-h-[85vh] flex flex-col shadow-2xl"
             onClick={(e) => e.stopPropagation()}>
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 flex-shrink-0" />
             <div className="flex items-center gap-2 mb-3 flex-shrink-0">

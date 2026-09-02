@@ -229,7 +229,7 @@ export default function StreakPage() {
       {/* Qanday ishlaydi? — Alohida zamonaviy BottomSheet */}
       {showInfo && (
         <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title">
-          <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-3xl border-t border-pline px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn">
+          <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-3xl px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn">
             <div className="w-10 h-1 bg-pline rounded-full mx-auto mb-4" />
 
             <div className="flex items-center justify-between mb-2">
