@@ -92,15 +92,15 @@ export default function StreakPage() {
   const weeks  = tt('weekdaysList').split('|')
 
   return (
-    <div className="px-5 pt-3">
+    <div className="px-5 pb-6">
       {/* Header */}
-      <div className="flex items-center gap-2 mb-4">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-5 px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-xl font-semibold">{tt('intizomTitle')}</h1>
-      </div>
+      </header>
 
       {/* Streak hero */}
       <div className="rounded-container border border-pline bg-pcard p-5 flex flex-col items-center text-center mb-4">

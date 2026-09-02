@@ -235,15 +235,15 @@ export default function AiTestSession() {
   if (phase === 'result' && result) {
     const g = result.grading
     return (
-      <div className="px-4 pt-3 pb-4">
+      <div className="px-4 pb-4">
         {result.coinsAwarded > 0 && <Confetti />}
-        <div className="flex items-center gap-2 mb-4">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
           <button onClick={() => navigate('/ai-test')} aria-label={tt('backWord')}
             className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
-          <h1 className="text-xl font-semibold">{tt('aiTestResultTitle')} · {test.title}</h1>
-        </div>
+          <h1 className="text-xl font-semibold truncate">{tt('aiTestResultTitle')} · {test.title}</h1>
+        </header>
 
         {/* Xulosa kartasi */}
         <div className="rounded-container border border-pline bg-pcard p-5 mb-4 text-center">
@@ -275,8 +275,8 @@ export default function AiTestSession() {
 
   // ── SESSIYA ────────────────────────────────────────────────────────────────
   return (
-    <div className="px-4 pt-3 pb-28">
-      <div className="mb-3">
+    <div className="px-4 pb-28">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline mb-3">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
             className="grid size-10 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
@@ -293,7 +293,7 @@ export default function AiTestSession() {
           <div className="h-full rounded-full transition-[width] duration-300"
             style={{ width: `${(answeredCount / AI_TEST_TOTAL_TASKS) * 100}%`, background: 'var(--p-purple)' }} />
         </div>
-      </div>
+      </header>
 
       {submitError && (
         <div role="status" className="mb-3 flex items-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-[12.5px] font-medium text-pfg">

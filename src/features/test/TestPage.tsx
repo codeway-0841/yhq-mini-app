@@ -638,7 +638,8 @@ export default function TestPage() {
           to'lib ketmasligi uchun px/gap/tugma o'lchamlari qisqaradi;
           380px+'dan eski hajm (Playwright-verified: 320px'da timer
           matni kesilmasligi shart) */}
-      <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-3 border-b border-pline">
+      <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+        <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-2.5">
         <div className="flex items-center gap-1 min-[380px]:gap-2">
           <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
             className={`grid size-8 min-[380px]:size-9 place-items-center rounded-control border border-plineStrong bg-psurface transition-colors duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
@@ -695,6 +696,7 @@ export default function TestPage() {
           </button>
         </div>
       </div>
+    </div>
 
       {toast && (
         <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.10)] px-3 py-2 text-center text-[12.5px] font-medium text-pfg">

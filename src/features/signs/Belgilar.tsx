@@ -348,10 +348,10 @@ export default function Belgilar() {
   const totalSignsCount = useMemo(() => signCategories.reduce((s, c) => s + c.count, 0), [])
 
   return (
-    <div className="px-4 pt-3 pb-4">
+    <div className="px-4 pb-4">
       {!selectedCategory && (
         <>
-          <div className="flex items-center gap-2 mb-4">
+          <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
             <button
               onClick={() => goBack(navigate)}
               aria-label={isRu ? 'Назад' : 'Orqaga'}
@@ -374,7 +374,7 @@ export default function Belgilar() {
             >
               <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
             </button>
-          </div>
+          </header>
 
           {/* Tab switcher */}
           <div className="flex gap-1.5 p-1 bg-psurface border border-pline rounded-control mb-4">

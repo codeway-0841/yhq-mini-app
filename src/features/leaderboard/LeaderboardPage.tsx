@@ -205,9 +205,9 @@ export default function LeaderboardPage() {
   const restEntries = hasTop3 ? entriesList.slice(3) : entriesList
 
   return (
-    <div className="pt-3">
+    <div className="pb-8">
       {/* ── Top Bar & Segmented Control Tabs ── */}
-      <div className="mb-3">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline pb-2.5 mb-3">
         <div className="relative flex items-center justify-center px-4 py-2">
           <button
             onClick={() => goBack(navigate)}
@@ -248,7 +248,7 @@ export default function LeaderboardPage() {
             })}
           </div>
         </div>
-      </div>
+      </header>
 
       {error && (
         <p className="text-center text-sm font-medium text-pmuted py-16">{tt('leaderboardError')}</p>
