@@ -28,7 +28,7 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
 
   return (
     <DialogOverlay onClose={onClose} labelId="tg-qr-title" position="center">
-      <div className="relative w-full max-w-[400px] max-h-[calc(100dvh-2rem)] overflow-y-auto bg-pcard border border-pline rounded-[1.5rem] p-6 animate-premiumIn">
+      <div className="relative w-full max-w-[400px] max-h-[calc(100dvh-2rem)] overflow-y-auto bg-pcard rounded-3xl p-6 animate-premiumIn shadow-2xl">
         <button
           type="button"
           onClick={onClose}

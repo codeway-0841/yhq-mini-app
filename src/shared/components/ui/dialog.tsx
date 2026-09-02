@@ -31,8 +31,7 @@ function Dialog({ open = true, onClose, children, className, zIndex }: DialogPro
       <div
         className={cn(
           'relative z-10 w-full max-w-sm',
-          'rounded-container border border-pline bg-pcard',
-          'shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]',
+          'rounded-3xl bg-pcard shadow-2xl',
           'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:zoom-in-95 motion-safe:duration-200',
           'max-h-[85dvh] overflow-y-auto',
           className,

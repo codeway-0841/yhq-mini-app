@@ -134,7 +134,7 @@ export default function AdminPromoTab() {
         </div>
         <button
           onClick={() => setCreating(true)}
-          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1.5 px-4 py-2.5 rounded-container text-xs font-semibold"
+          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1.5 px-4 py-2.5 rounded-2xl text-xs font-semibold"
         >
           <Plus size={15} />
           Yangi promokod
@@ -148,13 +148,13 @@ export default function AdminPromoTab() {
           <p className="text-xs">Yuklanmoqda...</p>
         </div>
       ) : codes.length === 0 ? (
-        <div className="rounded-container border border-pline bg-pcard p-8 text-center">
+        <div className="rounded-2xl border border-pline bg-pcard p-8 text-center">
           <Ticket size={36} className="mx-auto text-pmuted/50 mb-2" />
           <p className="text-sm font-semibold text-pfg">Promokodlar hali mavjud emas</p>
           <p className="text-xs text-psubtle mt-1 mb-4">Birinchi promokodni yarating</p>
           <button
             onClick={() => setCreating(true)}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-control text-xs font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-xl text-xs font-semibold"
           >
             Yaratish
           </button>
@@ -194,18 +194,18 @@ export default function AdminPromoTab() {
             return (
               <div
                 key={c.id}
-                className={`rounded-container border border-pline bg-pcard p-4 rounded-container border transition-all ${
+                className={`rounded-2xl border border-pline bg-pcard p-4 rounded-2xl border transition-all ${
                   !c.isActive ? 'opacity-60 bg-psurface/50' : 'bg-card'
                 }`}
               >
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono font-semibold text-base text-pfg tracking-wider bg-psurface px-2.5 py-1 rounded-control border border-pline">
+                    <span className="font-mono font-semibold text-base text-pfg tracking-wider bg-psurface px-2.5 py-1 rounded-xl border border-pline">
                       {c.code}
                     </span>
                     <button
                       onClick={() => handleCopy(c.code)}
-                      className="w-8 h-8 rounded-control bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-transform"
+                      className="w-8 h-8 rounded-xl bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-transform"
                       title="Nusxalash"
                     >
                       {copiedCode === c.code ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
@@ -248,7 +248,7 @@ export default function AdminPromoTab() {
                 <div className="flex items-center justify-end gap-2 pt-1">
                   <button
                     onClick={() => handleToggle(c)}
-                    className={`px-3 py-1.5 rounded-control text-xs font-semibold flex items-center gap-1 border transition-colors ${
+                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1 border transition-colors ${
                       c.isActive
                         ? 'border-pline text-pmuted hover:text-pfg'
                         : 'border-pprimary/40 text-pprimary bg-pprimary/10'
@@ -260,7 +260,7 @@ export default function AdminPromoTab() {
 
                   <button
                     onClick={() => handleDelete(c.id)}
-                    className="p-1.5 rounded-control border border-pline text-pmuted hover:text-pdanger hover:border-pdanger/40 transition-colors"
+                    className="p-1.5 rounded-xl border border-pline text-pmuted hover:text-pdanger hover:border-pdanger/40 transition-colors"
                     title="O'chirish"
                   >
                     <Trash2 size={14} />
@@ -275,7 +275,7 @@ export default function AdminPromoTab() {
       {/* Create Modal */}
       {creating && (
         <DialogOverlay onClose={() => setCreating(false)} position="center" labelId="promo-create-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-container bg-psurface border border-pline p-6 shadow-2xl overflow-hidden">
+          <div className="relative w-full max-w-sm rounded-2xl bg-psurface border border-pline p-6 shadow-2xl overflow-hidden">
             <button
               onClick={() => setCreating(false)}
               className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg"
@@ -296,7 +296,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('premium_days')}
-                    className={`py-2.5 rounded-control text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'premium_days'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -307,7 +307,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('discount_percent')}
-                    className={`py-2.5 rounded-control text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'discount_percent'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -340,7 +340,7 @@ export default function AdminPromoTab() {
                   onChange={(e) => setNewCode(e.target.value.toUpperCase())}
                   placeholder="Masalan: AVTO2026"
                   required
-                  className="w-full bg-card border border-pline rounded-container px-4 py-3 text-sm font-semibold tracking-wider text-pfg uppercase focus:outline-none focus:border-ppurple"
+                  className="w-full bg-card border border-pline rounded-2xl px-4 py-3 text-sm font-semibold tracking-wider text-pfg uppercase focus:outline-none focus:border-ppurple"
                 />
               </div>
 
@@ -356,7 +356,7 @@ export default function AdminPromoTab() {
                         key={p}
                         type="button"
                         onClick={() => setPercent(p)}
-                        className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                        className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
                           percent === p
                             ? 'bg-ppurple text-ponprimary border-ppurple'
                             : 'bg-card border-pline text-pmuted'
@@ -373,7 +373,7 @@ export default function AdminPromoTab() {
                     value={percent}
                     onChange={(e) => setPercent(Number(e.target.value))}
                     placeholder="Boshqa foiz (1-99)"
-                    className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
+                    className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
                   />
                 </div>
               ) : (
@@ -388,7 +388,7 @@ export default function AdminPromoTab() {
                         key={d}
                         type="button"
                         onClick={() => setDays(d)}
-                        className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                        className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
                           days === d
                             ? 'bg-ppurple text-ponprimary border-ppurple'
                             : 'bg-card border-pline text-pmuted'
@@ -402,7 +402,7 @@ export default function AdminPromoTab() {
                     <button
                       type="button"
                       onClick={() => setDays(365)}
-                      className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                      className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
                         days === 365
                           ? 'bg-ppurple text-ponprimary border-ppurple'
                           : 'bg-card border-pline text-pmuted'
@@ -417,7 +417,7 @@ export default function AdminPromoTab() {
                       value={days}
                       onChange={(e) => setDays(Number(e.target.value))}
                       placeholder="Boshqa kun"
-                      className="bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
+                      className="bg-card border border-pline rounded-xl px-3 py-2 text-xs font-semibold text-pfg text-center focus:outline-none focus:border-ppurple"
                     />
                   </div>
                 </div>
@@ -439,7 +439,7 @@ export default function AdminPromoTab() {
                       key={idx}
                       type="button"
                       onClick={() => setMaxUses(it.val)}
-                      className={`py-2 rounded-control text-xs font-semibold border transition-all ${
+                      className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
                         maxUses === it.val
                           ? 'bg-ppurple text-ponprimary border-ppurple'
                           : 'bg-card border-pline text-pmuted'
@@ -460,12 +460,12 @@ export default function AdminPromoTab() {
                   type="date"
                   value={expiresAt}
                   onChange={(e) => setExpiresAt(e.target.value)}
-                  className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple"
+                  className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple"
                 />
               </div>
 
               {formError && (
-                <div className="flex items-center gap-2 p-2.5 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs">
+                <div className="flex items-center gap-2 p-2.5 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs">
                   <AlertCircle size={14} className="flex-shrink-0" />
                   <span>{formError}</span>
                 </div>
@@ -474,7 +474,7 @@ export default function AdminPromoTab() {
               <button
                 type="submit"
                 disabled={formBusy || newCode.trim().length < 3}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container font-semibold text-sm flex items-center justify-center gap-2"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2"
               >
                 {formBusy ? <Loader2 size={16} className="motion-safe:animate-spin" /> : "Promokod yaratish"}
               </button>
@@ -485,7 +485,7 @@ export default function AdminPromoTab() {
 
       {/* Toast Notification */}
       {toast && (
-        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-container border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-container text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}

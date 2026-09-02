@@ -345,7 +345,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                   setTarget(key)
                   haptics.impact('light')
                 }}
-                className={`p-3 rounded-container border text-left transition-all flex items-start gap-2.5 ${
+                className={`p-3 rounded-2xl border text-left transition-all flex items-start gap-2.5 ${
                   isSelected
                     ? 'bg-ppurple/15 border-ppurple shadow-sm'
                     : 'bg-psurface border-pline hover:border-ppurple/40 text-pmuted'
@@ -377,7 +377,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               key={i}
               type="button"
               onClick={() => applyTemplate(tpl)}
-              className="px-3 py-1.5 rounded-control bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-all flex-shrink-0"
+              className="px-3 py-1.5 rounded-xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-all flex-shrink-0"
             >
               {tpl.icon}
               <span>{tpl.title}</span>
@@ -400,7 +400,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               onChange={(e) => setText(e.target.value)}
               rows={6}
               placeholder="Xabar matnini kiriting (masalan: 🎁 Katta aksiya boshlandi!)..."
-              className="w-full bg-card border border-pline rounded-container p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
             />
             {/* Emoji Toolbar */}
             <div className="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar">
@@ -424,7 +424,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 <ImageIcon size={14} className="text-pblue" />
                 <span>Rasm (ixtiyoriy)</span>
               </label>
-              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-control border border-pline text-[10px] font-semibold">
+              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl border border-pline text-[10px] font-semibold">
                 <button
                   type="button"
                   onClick={() => setImageMode('upload')}
@@ -457,12 +457,12 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 />
 
                 {imageData ? (
-                  <div className="flex items-center justify-between p-2.5 rounded-container bg-psurface border border-ppurple/40">
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-ppurple/40">
                     <div className="flex items-center gap-2.5 min-w-0">
                       <img
                         src={imageData}
                         alt="Selected preview"
-                        className="w-12 h-12 rounded-control object-cover border border-pline flex-shrink-0"
+                        className="w-12 h-12 rounded-xl object-cover border border-pline flex-shrink-0"
                       />
                       <div className="min-w-0">
                         <p className="text-xs font-semibold text-pfg truncate">
@@ -478,7 +478,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-control bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -486,7 +486,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -496,7 +496,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-container p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={20} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>
@@ -510,7 +510,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={imageUrl}
                 onChange={(e) => setImageUrl(e.target.value)}
                 placeholder="https://example.com/banner.jpg"
-                className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
               />
             )}
           </div>
@@ -525,7 +525,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={buttonText}
                 onChange={(e) => setButtonText(e.target.value)}
                 placeholder="📱 Ilovani ochish"
-                className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
               />
             </div>
 
@@ -539,13 +539,13 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={buttonUrl}
                 onChange={(e) => setButtonUrl(e.target.value)}
                 placeholder="Bo'sh qolsa ilova ochiladi"
-                className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
               />
             </div>
           </div>
 
           {/* Test Send Input */}
-          <div className="p-3 rounded-container bg-psurface border border-pline space-y-2">
+          <div className="p-3 rounded-2xl bg-psurface border border-pline space-y-2">
             <label className="text-[11px] font-semibold text-pmuted flex items-center gap-1.5">
               <FlaskConical size={12} strokeWidth={1.75} />
               Avval o'zingizga test qilib yuboring:
@@ -556,13 +556,13 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={testTgId}
                 onChange={(e) => setTestTgId(e.target.value)}
                 placeholder="Telegram ID raqamingiz (masalan: 123456789)"
-                className="flex-1 bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="flex-1 bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
               />
               <button
                 type="button"
                 disabled={sending || !text.trim() || !testTgId.trim()}
                 onClick={handleSendTest}
-                className="px-3 py-2 rounded-control bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 disabled:opacity-40 transition-all whitespace-nowrap flex items-center gap-1"
+                className="px-3 py-2 rounded-xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 disabled:opacity-40 transition-all whitespace-nowrap flex items-center gap-1"
               >
                 {sending ? <Loader2 size={13} className="motion-safe:animate-spin" /> : <Send size={13} />}
                 <span>Test</span>
@@ -578,9 +578,9 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
             <span>Telegram'dagi ko'rinishi (Jonli Preview):</span>
           </label>
 
-          <div className="rounded-container bg-pcanvas border border-pline p-4 shadow-xl">
+          <div className="rounded-2xl bg-pcanvas border border-pline p-4 shadow-xl">
             {/* Telegram Chat Message Bubble (telefon mockup — tema tokenlari bilan) */}
-            <div className="max-w-[320px] mx-auto bg-psurface rounded-container overflow-hidden border border-white/5 shadow-md">
+            <div className="max-w-[320px] mx-auto bg-psurface rounded-2xl overflow-hidden border border-white/5 shadow-md">
               {/* Optional Photo (uploaded file or URL) */}
               {imageData || imageUrl ? (
                 <div className="w-full h-36 bg-black/40 relative overflow-hidden flex items-center justify-center">
@@ -612,7 +612,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               {/* Inline CTA Button */}
               {buttonText ? (
                 <div className="p-2 pt-0">
-                  <div className="w-full py-2.5 rounded-control bg-ppurple/20 hover:bg-ppurple/30 border border-ppurple/40 text-ppurple font-semibold text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <div className="w-full py-2.5 rounded-xl bg-ppurple/20 hover:bg-ppurple/30 border border-ppurple/40 text-ppurple font-semibold text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
                     <span>{buttonText}</span>
                     <ExternalLink size={12} />
                   </div>
@@ -625,25 +625,25 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
 
       {/* Execution Results Summary */}
       {result && (
-        <div className="p-4 rounded-container bg-psurface border border-pline space-y-2 animate-premiumIn">
+        <div className="p-4 rounded-2xl bg-psurface border border-pline space-y-2 animate-premiumIn">
           <h4 className="text-xs font-semibold text-pfg flex items-center gap-2">
             <CheckCircle2 size={16} className="text-pprimary" />
             <span>Xabarnoma yuborildi!</span>
           </h4>
           <div className="grid grid-cols-4 gap-2 text-center text-xs">
-            <div className="p-2 rounded-control bg-card border border-pline">
+            <div className="p-2 rounded-xl bg-card border border-pline">
               <span className="text-[10px] text-pmuted block">Jami</span>
               <span className="font-semibold text-pfg">{result.total}</span>
             </div>
-            <div className="p-2 rounded-control bg-pprimary/10 border border-pprimary/30">
+            <div className="p-2 rounded-xl bg-pprimary/10 border border-pprimary/30">
               <span className="text-[10px] text-pprimary block">Yetib bordi</span>
               <span className="font-semibold text-pprimary">{result.sent}</span>
             </div>
-            <div className="p-2 rounded-control bg-pdanger/10 border border-pdanger/30">
+            <div className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30">
               <span className="text-[10px] text-pdanger block">Bloklangan</span>
               <span className="font-semibold text-pdanger">{result.blocked}</span>
             </div>
-            <div className="p-2 rounded-control bg-card border border-pline">
+            <div className="p-2 rounded-xl bg-card border border-pline">
               <span className="text-[10px] text-pmuted block">Vaqt</span>
               <span className="font-semibold text-pfg">{(result.durationMs / 1000).toFixed(1)}s</span>
             </div>
@@ -653,7 +653,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
 
       {/* Live progress (chunked kampaniya) */}
       {bulkProgress && (
-        <div className="rounded-container border border-pline bg-pcard p-3 space-y-2">
+        <div className="rounded-2xl border border-pline bg-pcard p-3 space-y-2">
           <div className="h-1.5 bg-psurface rounded-full overflow-hidden">
             <div
               className="h-full bg-ppurple rounded-full transition-all"
@@ -680,7 +680,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
         type="button"
         disabled={sending || !text.trim() || targetCount === 0}
         onClick={() => setConfirmOpen(true)}
-        className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3.5 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+        className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3.5 rounded-2xl text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
       >
         {sending ? (
           <>
@@ -698,8 +698,8 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       {/* Confirmation Modal */}
       {confirmOpen && (
         <DialogOverlay onClose={() => setConfirmOpen(false)} position="center" zIndex={60} labelId="broadcast-confirm-title" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-container bg-psurface border border-pline p-5 space-y-4 shadow-2xl text-center relative">
-            <div className="w-14 h-14 rounded-container bg-ppurple/20 border border-ppurple/40 flex items-center justify-center mx-auto text-ppurple">
+          <div className="w-full max-w-sm rounded-2xl bg-psurface border border-pline p-5 space-y-4 shadow-2xl text-center relative">
+            <div className="w-14 h-14 rounded-2xl bg-ppurple/20 border border-ppurple/40 flex items-center justify-center mx-auto text-ppurple">
               <Send size={26} />
             </div>
             <div>
@@ -713,7 +713,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               <button
                 type="button"
                 onClick={() => setConfirmOpen(false)}
-                className="flex-1 py-3 rounded-container bg-psurface text-xs font-semibold text-pmuted hover:text-pfg"
+                className="flex-1 py-3 rounded-2xl bg-psurface text-xs font-semibold text-pmuted hover:text-pfg"
               >
                 Bekor qilish
               </button>
@@ -721,7 +721,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 type="button"
                 disabled={sending}
                 onClick={handleSendAll}
-                className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-1.5"
+                className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-semibold flex items-center justify-center gap-1.5"
               >
                 {sending ? <Loader2 size={14} className="motion-safe:animate-spin" /> : <span>Ha, yuborilsin</span>}
               </button>

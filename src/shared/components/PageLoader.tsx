@@ -11,7 +11,7 @@ export default function PageLoader() {
   return (
     <div className="px-5 pt-6" role="status" aria-label="Yuklanmoqda">
       <div className="mb-6 flex items-center gap-3">
-        <Skeleton className="size-9 rounded-[12px]" />
+        <Skeleton className="size-9 rounded-xl" />
         <div className="flex-1 space-y-2">
           <Skeleton className="h-3 w-32" />
           <Skeleton className="h-2.5 w-20" />

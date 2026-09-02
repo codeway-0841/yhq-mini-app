@@ -206,7 +206,7 @@ export function DuelLeaderboardView({
           ))}
         </div>
       ) : currentLeaderList.length === 0 ? (
-        <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs">
+        <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
           <Trophy size={32} className="mx-auto text-psubtle mb-2" />
           <h4 className="text-sm font-bold text-pfg">
             {rankTab === 'daily'   ? tt('duelEmptyDaily')   :

@@ -49,7 +49,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
           const soldOut = remaining <= 0
           const owned = state?.alreadyOwned ?? false
           return (
-            <div key={item.id} className="rounded-2xl border border-pline bg-pcard p-4 flex items-center gap-3.5 relative overflow-hidden shadow-xs">
+            <div key={item.id} className="rounded-2xl bg-pcard p-4 flex items-center gap-3.5 relative overflow-hidden shadow-xs">
               {/* v3: emoji tile O'RNIGA lucide ikonka (merch-icons.ts) — neytral chip */}
               <div className="flex size-14 flex-none items-center justify-center rounded-xl bg-psurface shadow-2xs">
                 {(() => { const Icon = getMerchIcon(item.id); return <Icon size={22} strokeWidth={1.75} className="text-pmuted" /> })()}

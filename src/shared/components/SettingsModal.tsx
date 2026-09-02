@@ -288,7 +288,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                     {/* Mini atmosfera preview: fon + karta + aksent */}
                     <div className="relative w-14 h-11 rounded-xl overflow-hidden flex-none shadow-xs"
                       style={{ background: theme.bg }}>
-                      <div className="absolute left-1.5 right-1.5 top-1.5 h-4 rounded-[5px]"
+                      <div className="absolute left-1.5 right-1.5 top-1.5 h-4 rounded-md"
                         style={{ background: theme.card, border: `1px solid ${theme.color}40` }} />
                       <span className="absolute bottom-1.5 left-1.5 w-6 h-1.5 rounded-full"
                         style={{ background: theme.color, boxShadow: theme.glow ? `0 0 6px ${theme.color}` : undefined }} />

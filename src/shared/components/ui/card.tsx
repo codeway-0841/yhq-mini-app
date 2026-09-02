@@ -16,7 +16,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'rounded-container border border-pline bg-pcard',
+      'rounded-2xl bg-pcard shadow-xs',
       interactive && [
         'cursor-pointer transition-[border-color,transform,background-color] duration-[120ms] ease-out',
         'hover:border-plineStrong active:scale-[0.99]',

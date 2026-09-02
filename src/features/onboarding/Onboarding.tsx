@@ -61,7 +61,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
         <img
           src="/images/splash-brand.png"
           alt="KIVVI"
-          className="w-[290px] rounded-[2rem] animate-fadeIn"
+          className="w-[290px] rounded-3xl animate-fadeIn shadow-lg"
         />
       </div>
 

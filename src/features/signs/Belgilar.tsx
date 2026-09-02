@@ -277,7 +277,7 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
         const isExpanded = expandedChapter === ch.chapter || query.trim().length > 0
         const isFines = ch.chapter === 30
         return (
-          <div key={ch.chapter} className="rounded-2xl border border-pline bg-psurface overflow-hidden shadow-xs">
+          <div key={ch.chapter} className="rounded-2xl bg-psurface overflow-hidden shadow-xs">
             <button
               onClick={() => setExpandedChapter(isExpanded && !query.trim() ? null : ch.chapter)}
               className="w-full p-4 flex items-center justify-between text-left hover:bg-pcanvas/30 transition-colors"

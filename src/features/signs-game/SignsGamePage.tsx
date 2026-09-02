@@ -132,7 +132,7 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
       <div className="grid gap-2.5 mt-2">
         {round.options.map((o) => (
           <button key={o.id} onClick={() => answer(o)} disabled={flash !== null}
-            className="rounded-2xl border border-pline bg-pcard py-3.5 px-4 text-[13.5px] font-bold text-left active:scale-[0.98] transition-all disabled:opacity-90 shadow-xs hover:bg-psurface"
+            className="rounded-2xl bg-pcard py-3.5 px-4 text-[13.5px] font-bold text-left active:scale-[0.98] transition-all disabled:opacity-90 shadow-xs hover:bg-psurface"
             style={flash !== null && o.id === round.sign.id
               ? { border: '1px solid rgb(var(--p-success-rgb) / 0.6)', background: 'rgb(var(--p-success-rgb) / 0.12)' }
               : undefined}>
@@ -223,7 +223,7 @@ function MatchGame({ onExit }: { onExit: () => void }) {
           const isWrong = wrong?.includes(tile.uid) ?? false
           return (
             <button key={tile.uid} onClick={() => tap(tile)}
-              className={`rounded-2xl border border-pline bg-pcard aspect-square flex items-center justify-center p-2 text-center transition-all active:scale-[0.96] shadow-xs ${isMatched ? 'opacity-40' : ''} ${isWrong ? 'animate-shake' : ''}`}
+              className={`rounded-2xl bg-pcard aspect-square flex items-center justify-center p-2 text-center transition-all active:scale-[0.96] shadow-xs ${isMatched ? 'opacity-40' : ''} ${isWrong ? 'animate-shake' : ''}`}
               style={isSelected ? {
                 border: '1.5px solid rgb(var(--p-primary-rgb) / 0.7)',
                 boxShadow: '0 0 0 3px rgb(var(--p-primary-rgb) / 0.15)',
@@ -240,7 +240,7 @@ function MatchGame({ onExit }: { onExit: () => void }) {
 
       {doneMs !== null && (
         <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={onExit}>
-          <div className="bg-pcard border border-pline rounded-3xl p-6 mx-6 text-center animate-premiumIn shadow-2xl"
+          <div className="bg-pcard rounded-3xl p-6 mx-6 text-center animate-premiumIn shadow-2xl"
             onClick={(e) => e.stopPropagation()}>
             <Trophy size={40} className="text-pgold mx-auto" fill="currentColor" />
             <p className="text-[16px] font-black mt-3">{tt('signsGameWin')}</p>
@@ -297,7 +297,7 @@ export default function SignsGamePage() {
                 iconColor: 'var(--p-blue)' },
             ]).map((m) => (
               <button key={m.id} onClick={() => { playSound('click'); setMode(m.id) }}
-                className="border border-pline bg-pcard rounded-2xl p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform shadow-xs hover:bg-psurface">
+                className="bg-pcard rounded-2xl p-4 flex items-center gap-3.5 text-left active:scale-[0.98] transition-transform shadow-xs hover:bg-psurface">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-none"
                   style={m.id === 'speed'
                     ? { background: 'rgb(var(--p-warning-rgb) / 0.14)' }

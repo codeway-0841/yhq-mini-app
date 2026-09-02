@@ -148,7 +148,7 @@ export default function ShopPage() {
     const isOwned    = ownedSet.has(frame.id)
     const isEquipped = avatarFrame === frame.id
     return (
-      <div key={frame.id} className="rounded-2xl border border-pline bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative shadow-xs">
+      <div key={frame.id} className="rounded-2xl bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative shadow-xs">
         {countdownBadge && (
           <div className="w-full flex items-center justify-center -mt-0.5">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9.5px] font-medium"
@@ -223,7 +223,7 @@ export default function ShopPage() {
       </header>
 
       {/* Balans — ixcham karta (gradient border'siz); hint pastki qatorda */}
-      <div className="mx-5 mt-2 rounded-2xl border border-pline bg-pcard px-4 py-3.5 shadow-xs">
+      <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0">
             <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
@@ -261,11 +261,11 @@ export default function ShopPage() {
           const isOwned    = ownedSet.has(theme.id)
           const isActiveTheme = resolveAccent(accent, isPremium, ownedSet) === theme.id
           return (
-            <div key={theme.id} className="rounded-2xl border border-pline bg-pcard p-3 flex flex-col gap-2 relative overflow-hidden shadow-xs">
+            <div key={theme.id} className="rounded-2xl bg-pcard p-3 flex flex-col gap-2 relative overflow-hidden shadow-xs">
               {/* Mini atmosfera preview */}
               <div className="h-[52px] rounded-xl overflow-hidden relative shadow-inner"
                 style={{ background: theme.bg }}>
-                <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
+                <div className="absolute left-2 right-2 top-2 h-5 rounded-md"
                   style={{ background: theme.card, border: `1px solid ${theme.color}4d` }} />
                 <span className="absolute bottom-2 left-2 w-7 h-1.5 rounded-full"
                   style={{ background: theme.color }} />
@@ -303,7 +303,7 @@ export default function ShopPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
             <PremiumIcon size={12} /> Premium
           </p>
-          <div className="mx-5 rounded-2xl border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
+          <div className="mx-5 rounded-2xl bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
             <div className="flex size-10 flex-none items-center justify-center text-pgold">
               <Sparkles size={22} strokeWidth={1.75} />
             </div>
@@ -326,7 +326,7 @@ export default function ShopPage() {
       )}
 
       {/* ── Omad g'ildiragi (kunlik bepul spin) ── */}
-      <div className="mx-5 mt-4 rounded-2xl border border-pline bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
+      <div className="mx-5 mt-4 rounded-2xl bg-pcard px-4 py-3.5 flex items-center gap-3 shadow-xs">
         <div className="flex size-10 flex-none items-center justify-center text-ppurple">
           <Gift size={22} strokeWidth={1.75} />
         </div>
@@ -375,12 +375,12 @@ export default function ShopPage() {
       {/* ── Tangalar tarixi ── */}
       <div className="mx-5 mt-6">
         <button onClick={toggleHistory}
-          className="w-full rounded-2xl border border-pline bg-pcard p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-semibold text-pmuted active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
+          className="w-full rounded-2xl bg-pcard p-3.5 flex items-center justify-center gap-2 text-[12.5px] font-semibold text-pmuted active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
           {historyBusy ? <Loader2 size={14} className="animate-spin" /> : <History size={14} />}
           {history === null ? tt('shopHistoryTitle') : tt('shopHideHistory')}
         </button>
         {history !== null && (
-          <div className="rounded-2xl border border-pline bg-pcard mt-2 divide-y divide-pline animate-fadeIn shadow-xs overflow-hidden">
+          <div className="rounded-2xl bg-pcard mt-2 divide-y divide-pline animate-fadeIn shadow-xs overflow-hidden">
             {history.length === 0 && (
               <p className="text-center text-[12px] text-psubtle py-5">{tt('shopHistoryEmpty')}</p>
             )}

@@ -82,13 +82,13 @@ export default function AdminSmsTab() {
   return (
     <div className="flex flex-col gap-4">
       {toast && (
-        <div className="bg-psurface border border-pline text-pfg text-xs font-semibold px-3 py-2 rounded-control text-center">
+        <div className="bg-psurface text-pfg text-xs font-semibold px-3 py-2 rounded-xl text-center shadow-xs">
           {toast}
         </div>
       )}
 
       {/* Compose */}
-      <div className="rounded-container border border-pline bg-pcard p-4 flex flex-col gap-3">
+      <div className="rounded-2xl bg-pcard p-4 flex flex-col gap-3 shadow-xs">
         <div className="flex items-center justify-between">
           <p className="text-sm font-semibold flex items-center gap-2">
             <MessageSquare size={16} className="text-ppurple" /> Yangi kampaniya
@@ -103,7 +103,7 @@ export default function AdminSmsTab() {
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Nomi (masalan: Chegirma haftaligi)"
           maxLength={80}
-          className="w-full bg-psurface border border-pline rounded-control px-3 py-2.5 text-sm outline-none focus:border-ppurple/60"
+          className="w-full bg-psurface rounded-xl px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-ppurple shadow-xs"
         />
         <textarea
           value={message}
@@ -111,7 +111,7 @@ export default function AdminSmsTab() {
           placeholder={"SMS matni (min 10 belgi). Masalan: KIVVI'da bugun Premium 20% chegirma! To'xtatish: Profil → SMS sozlamasi"}
           maxLength={MAX_LEN}
           rows={4}
-          className="w-full bg-psurface border border-pline rounded-control px-3 py-2.5 text-sm outline-none focus:border-ppurple/60 resize-none"
+          className="w-full bg-psurface rounded-xl px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-ppurple shadow-xs resize-none"
         />
         <div className="flex items-center justify-between">
           <span className={`text-[11px] font-semibold ${message.length > MAX_LEN - 30 ? 'text-pwarning' : 'text-pmuted'}`}>
@@ -120,7 +120,7 @@ export default function AdminSmsTab() {
           <button
             onClick={handleCreate}
             disabled={creating || title.trim().length < 3 || message.trim().length < 10 || (audience ?? 0) === 0}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center gap-2 px-4 py-2 rounded-control text-[13px] font-semibold disabled:opacity-50"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
           >
             {creating ? <Loader2 size={14} className="motion-safe:animate-spin" /> : <Send size={14} />}
             Yaratish
@@ -144,7 +144,7 @@ export default function AdminSmsTab() {
           const pct = total > 0 ? Math.round(((c.sentCount + c.failedCount) / total) * 100) : 0
           const isSending = sendingId === c.id
           return (
-            <div key={c.id} className="rounded-container border border-pline bg-pcard p-4 flex flex-col gap-2">
+            <div key={c.id} className="rounded-2xl bg-pcard p-4 flex flex-col gap-2 shadow-xs">
               <div className="flex items-center justify-between gap-2">
                 <div className="min-w-0">
                   <p className="text-sm font-semibold truncate">#{c.id} {c.title}</p>
@@ -167,7 +167,7 @@ export default function AdminSmsTab() {
                   <button
                     onClick={() => handleSend(c.id)}
                     disabled={isSending}
-                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center justify-center gap-2 px-4 py-2 rounded-control text-[13px] font-semibold disabled:opacity-50"
+                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
                   >
                     {isSending
                       ? <><Loader2 size={14} className="motion-safe:animate-spin" /> Yuborilmoqda…

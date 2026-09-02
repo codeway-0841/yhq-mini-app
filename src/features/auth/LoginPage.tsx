@@ -357,7 +357,7 @@ export default function LoginPage() {
           </div>
         ) : (
           <>
-            <img src="/images/splash-brand.png" alt="KIVVI" className="w-36 rounded-[1.75rem] mx-auto" />
+            <img src="/images/splash-brand.png" alt="KIVVI" className="w-36 rounded-3xl mx-auto shadow-md" />
             <h1 className="text-[22px] font-semibold text-pfg text-center mt-5">{tt('authWelcome')}</h1>
             <p className="text-[13px] text-pmuted text-center mt-1 mb-6">{tt('authTagline')}</p>
           </>

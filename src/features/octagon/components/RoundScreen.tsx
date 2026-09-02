@@ -46,7 +46,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
       </p>
       <p className="text-base font-semibold text-center mb-5 leading-snug text-pfg">{q.text}</p>
       {q.image && (
-        <div className="rounded-xl overflow-hidden mb-4 border border-pline flex items-center justify-center bg-pcard">
+        <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-pcard shadow-xs">
           <img src={q.image} alt="savol" loading="lazy"
             className="max-w-full max-h-[45vh] w-auto h-auto object-contain" />
         </div>

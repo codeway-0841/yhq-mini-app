@@ -127,7 +127,7 @@ export default function TestlarPage() {
           const d = DIFF[m.diff]
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="group relative rounded-2xl border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface">
+              className="group relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface">
               {/* AI kunlik test — YANGI badge (yangi testlar ekanligi ko'rinib tursin) */}
               {m.aiCard && (
                 <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">

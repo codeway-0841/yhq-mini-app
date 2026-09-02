@@ -250,7 +250,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
                 <span
                   aria-hidden="true"
                   className={
-                    'absolute -left-[26px] top-[15px] size-2.5 rounded-[3px] border-2 ' +
+                    'absolute -left-[26px] top-[15px] size-2.5 rounded-full border-2 ' +
                     (done || active ? 'border-transparent' : 'border-plineStrong bg-pcard') +
                     (active ? ' lesson-glow' : '')
                   }

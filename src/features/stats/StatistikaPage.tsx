@@ -1,7 +1,7 @@
 /**
  * Shaxsiy statistika — katta raqamlar + haftalik faollik grafigi + zaif mavzular.
  * Ma'lumotlar: daily history API (server) + wrongByTicket (zaif savollar).
- * Dizayn: v2 premium (rounded-container border border-pline bg-pcard, aksent barlar, Inter).
+ * Dizayn: v3 borderless modern (rounded-2xl bg-pcard shadow-xs, aksent barlar, Inter).
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -113,7 +113,7 @@ export default function StatistikaPage() {
           { icon: TrendingUp, color: 'var(--p-primary)', value: `${level}`, label: 'Level' },
           { icon: Target,  color: 'var(--p-blue)', value: `${accuracy}%`,    label: lang === 'ru' ? 'точность' : 'aniqlik' },
         ].map((c, i) => (
-          <div key={i} className="rounded-2xl border border-pline bg-pcard p-4 flex items-center gap-3 shadow-xs">
+          <div key={i} className="rounded-2xl bg-pcard p-4 flex items-center gap-3 shadow-xs">
             <div className="flex size-9 shrink-0 items-center justify-center text-pmuted">
               <c.icon size={20} strokeWidth={1.75} />
             </div>
@@ -129,7 +129,7 @@ export default function StatistikaPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? `Неделя · ${weekTotal} вопросов` : `Hafta · ${weekTotal} savol`}
       </p>
-      <div className="mx-5 rounded-2xl border border-pline bg-pcard p-5 shadow-xs">
+      <div className="mx-5 rounded-2xl bg-pcard p-5 shadow-xs">
         <div className="flex items-end justify-between gap-2 h-28">
           {week.map((r) => {
             const pct = r.answered / maxAnswered
@@ -161,7 +161,7 @@ export default function StatistikaPage() {
             <HeartCrack size={11} className="text-pdanger" />
             {lang === 'ru' ? 'Слабые темы' : 'Zaif mavzular'}
           </p>
-          <div className="rounded-2xl border border-pline bg-pcard mx-5 divide-y divide-pline overflow-hidden">
+          <div className="rounded-2xl bg-pcard mx-5 divide-y divide-pline overflow-hidden shadow-xs">
             {weakTopics.map(({ topic, ids }) => (
               <button key={topic!.id} onClick={() => practiceWeak(ids, lang === 'ru' ? topic!.nameRu : topic!.nameUz)}
                 className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors">
@@ -181,7 +181,7 @@ export default function StatistikaPage() {
       )}
 
       {/* Umumiy */}
-      <div className="mx-5 mt-4 rounded-2xl border border-pline bg-pcard p-4 flex items-center justify-between text-[12px]">
+      <div className="mx-5 mt-4 rounded-2xl bg-pcard p-4 flex items-center justify-between text-[12px] shadow-xs">
         <span className="text-psubtle">{lang === 'ru' ? 'Всего ответов' : 'Jami javoblar'}</span>
         <span className="font-semibold tabular-nums">
           <span className="text-psuccess font-bold">{totalCorrect}</span>

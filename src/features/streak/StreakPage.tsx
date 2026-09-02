@@ -116,7 +116,7 @@ export default function StreakPage() {
       </header>
 
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
-      <div className="rounded-[24px] bg-pcard p-5 flex flex-col items-center text-center mb-4 shadow-xs">
+      <div className="rounded-3xl bg-pcard p-5 flex flex-col items-center text-center mb-4 shadow-xs">
         <div className="w-20 h-20 rounded-full bg-[rgb(var(--p-warning-rgb)/0.12)] flex items-center justify-center mb-3">
           <Flame size={38} strokeWidth={1.75} className={streak > 0 ? 'text-pwarning' : 'text-psubtle'} />
         </div>
@@ -169,7 +169,7 @@ export default function StreakPage() {
       )}
 
       {/* Kalendar — silliq rounded karta */}
-      <div className="rounded-[24px] bg-pcard p-4.5 mb-4 shadow-xs">
+      <div className="rounded-3xl bg-pcard p-4.5 mb-4 shadow-xs">
         <div className="flex items-center justify-between mb-3 px-1">
           <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
             className="grid size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">

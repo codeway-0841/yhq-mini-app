@@ -21,7 +21,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
         <p id="subject-title" className="text-center text-base font-semibold mb-5 text-pfg">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
-        <div className="overflow-hidden rounded-2xl border border-pline bg-psurface divide-y divide-pline shadow-xs">
+        <div className="overflow-hidden rounded-2xl bg-psurface divide-y divide-pline shadow-xs">
           {SUBJECTS.map((s) => {
             const active = s.id === subjectId
             const Icon = s.icon

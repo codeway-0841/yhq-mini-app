@@ -37,7 +37,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           {[0, 1, 2].map((i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-3">
               <Skeleton className="size-4 shrink-0" />
-              <Skeleton className="size-8 shrink-0 rounded-[10px]" />
+              <Skeleton className="size-8 shrink-0 rounded-xl" />
               <Skeleton className="h-3 flex-1" />
               <Skeleton className="h-3 w-8 shrink-0" />
             </div>

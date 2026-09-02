@@ -106,7 +106,7 @@ export default function AdminOrdersTab() {
       </div>
 
       {toast && (
-        <div className="rounded-control px-3 py-2 text-[12px] font-semibold text-pfg bg-psurface border border-pline animate-fadeIn">
+        <div className="rounded-xl px-3 py-2 text-[12px] font-semibold text-pfg bg-psurface shadow-xs animate-fadeIn">
           {toast}
         </div>
       )}
@@ -120,7 +120,7 @@ export default function AdminOrdersTab() {
           const merch = getMerchItem(o.item_id)
           const MerchIcon = getMerchIcon(o.item_id)
           return (
-            <div key={o.id} className="rounded-container border border-pline bg-pcard p-3.5">
+            <div key={o.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
               <div className="flex items-center justify-between gap-2">
                 <p className="flex items-center gap-1.5 text-[13px] font-semibold">
                   #{o.id} <MerchIcon size={13} strokeWidth={1.75} className="text-pgold" /> {merch?.label[lang] ?? o.item_id}

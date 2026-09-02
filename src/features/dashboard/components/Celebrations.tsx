@@ -49,10 +49,9 @@ const Scene = memo(function Scene({
       <Confetti count={40} />
       <div className="relative w-full max-w-[300px] rounded-3xl bg-pcard p-8 text-center shadow-2xl motion-safe:animate-premiumIn">
         <div
-          className="mx-auto mb-4 flex size-14 items-center justify-center rounded-[16px]"
+          className="mx-auto mb-4 flex size-14 items-center justify-center rounded-2xl shadow-xs"
           style={{
-            background: `color-mix(in srgb, var(${tone}) 12%, transparent)`,
-            border: `1px solid color-mix(in srgb, var(${tone}) 26%, transparent)`,
+            background: `color-mix(in srgb, var(${tone}) 14%, transparent)`,
           }}
         >
           <Icon size={26} strokeWidth={1.75} style={{ color: `var(${tone})` }} />

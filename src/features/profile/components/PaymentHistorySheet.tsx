@@ -86,7 +86,7 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
         ) : (
           /* Buyurtmalar ro'yxati */
           <div className="mt-4 -mx-5 overflow-y-auto px-5">
-            <div className="rounded-2xl border border-pline bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
+            <div className="rounded-2xl bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
               {rows.map((r) => {
                 const s = statusView(r.status, tt)
                 const plan = getPlan(r.plan)

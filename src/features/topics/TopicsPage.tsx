@@ -51,7 +51,7 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
     doneIdx.includes(idx) ? 'done' : idx === 0 || doneIdx.includes(idx - 1) ? 'active' : 'locked'
 
   return (
-    <div className="rounded-2xl border border-pline bg-pcard overflow-hidden shadow-xs">
+    <div className="rounded-2xl bg-pcard overflow-hidden shadow-xs">
       {/* Modul sarlavhasi — bosilganda ochiladi/yopiladi */}
       <button onClick={onToggle} className="w-full flex items-center gap-3 p-3.5 text-left active:opacity-80">
         <div className="size-10 rounded-xl bg-psurface flex items-center justify-center flex-shrink-0">

@@ -189,19 +189,19 @@ export function IdleScreen({
         {subview === 'battles' && (
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-2.5">
-              <div className="rounded-[20px] border border-pline bg-pcard p-3.5 text-center shadow-xs">
+              <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
                 <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelWinsLabel')}</span>
                 <span className="font-display text-2xl font-black text-pprimary">{totalWins}</span>
               </div>
-              <div className="rounded-[20px] border border-pline bg-pcard p-3.5 text-center shadow-xs">
+              <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
                 <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelTotalLabel')}</span>
                 <span className="font-display text-2xl font-black text-pfg">{totalMatches}</span>
               </div>
-              <div className="rounded-[20px] border border-pline bg-pcard p-3.5 text-center shadow-xs">
+              <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
                 <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelWinRateLabel')}</span>
                 <span className="font-display text-2xl font-black text-psuccess">{winRate}%</span>
               </div>
-              <div className="rounded-[20px] border border-pline bg-pcard p-3.5 text-center shadow-xs flex flex-col justify-center items-center">
+              <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs flex flex-col justify-center items-center">
                 <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{language === 'ru' ? 'Ранг' : 'Unvon'}</span>
                 <span className={cn('px-2.5 py-0.5 rounded-full text-[11px] font-extrabold truncate max-w-full', rankInfo.color)}>
                   {rankInfo.title}
@@ -212,7 +212,7 @@ export function IdleScreen({
             <div className="space-y-2 pt-1">
               <h3 className="text-xs font-bold text-pmuted px-1">{tt('duelRecentMatches')}</h3>
               {history.length === 0 ? (
-                <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs space-y-3">
+                <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs space-y-3">
                   <Trophy size={32} className="mx-auto text-psubtle" />
                   <div>
                     <h4 className="text-sm font-bold text-pfg">{tt('noBattlesYet')}</h4>
@@ -231,7 +231,7 @@ export function IdleScreen({
                   {history.map((h) => (
                     <div
                       key={h.id}
-                      className="flex flex-col justify-between rounded-[20px] border border-pline bg-pcard p-3.5 shadow-xs space-y-2.5"
+                      className="flex flex-col justify-between rounded-2xl bg-pcard p-3.5 shadow-xs space-y-2.5"
                     >
                       <div className="flex items-center gap-2 min-w-0">
                         <UserAvatar name={h.opponentName} src={h.opponentAvatar} />
@@ -275,7 +275,7 @@ export function IdleScreen({
         {subview === 'online' && (
           <div className="space-y-3">
             {effectiveOnlineUsers.length === 0 ? (
-              <div className="rounded-[22px] border border-pline bg-pcard p-8 text-center shadow-xs">
+              <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
                 <Users size={32} className="mx-auto text-psubtle mb-2" />
                 <h4 className="text-sm font-bold text-pfg">{tt('onlinePlayersTitle')}</h4>
                 <p className="text-xs text-psubtle mt-1">
@@ -284,9 +284,10 @@ export function IdleScreen({
                 <button
                   type="button"
                   onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-                  className="mt-4 h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all"
+                  className="mt-4 h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all inline-flex items-center gap-2"
                 >
-                  {tt('findOpponent')}
+                  <Swords size={15} />
+                  <span>{tt('findOpponent')}</span>
                 </button>
               </div>
             ) : (
@@ -299,7 +300,7 @@ export function IdleScreen({
                     <div className="flex items-center gap-3 min-w-0">
                       <div className="relative shrink-0">
                         <UserAvatar name={player.name} src={avatarSrcFor(player)} frame={player.avatarFrame} />
-                        <span className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full border-2 border-pcard bg-psuccess animate-pulse" />
+                        <span className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full bg-psuccess ring-2 ring-pcard" />
                       </div>
 
                       <div className="min-w-0">
@@ -321,9 +322,9 @@ export function IdleScreen({
                       <button
                         type="button"
                         onClick={() => { playSound('click'); haptics.impact('medium'); onFind() }}
-                        className="h-8 px-3 rounded-xl bg-pprimary text-ponprimary text-[11px] font-extrabold flex items-center justify-center gap-1.5 shadow-xs active:scale-95 transition-all shrink-0 hover:brightness-[1.06]"
+                        className="py-1.5 px-3 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary text-xs font-bold flex items-center gap-1.5 active:scale-95 transition-all shadow-xs shrink-0"
                       >
-                        <Swords size={13} />
+                        <Swords size={12} />
                         <span>{tt('challengeBtn')}</span>
                       </button>
                     )}
@@ -338,7 +339,7 @@ export function IdleScreen({
         {subview === 'invite' && (
           <div className="space-y-3">
             {/* Tab switcher */}
-            <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard border border-pline">
+            <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard shadow-xs">
               <button
                 type="button"
                 onClick={() => { setInviteTab('create'); setPinError(null); playSound('click'); haptics.impact('light') }}
@@ -428,8 +429,7 @@ export function IdleScreen({
                       setPinError(null)
                     }}
                     placeholder={tt('pinInputPlaceholder')}
-                    className="w-full h-12 px-4 rounded-2xl bg-psurface focus:ring-2 focus:ring-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-psubtle/40 focus:outline-none transition-colors shadow-xs"
-                    autoFocus
+                    className="w-full h-12 text-center font-mono font-black text-2xl tracking-widest rounded-2xl bg-psurface shadow-xs focus:ring-2 focus:ring-pprimary outline-none text-pfg"
                   />
                   {pinError && <p className="text-[11px] font-bold text-pdanger text-center">{pinError}</p>}
                 </div>
@@ -457,7 +457,7 @@ export function IdleScreen({
   return (
     <div className="w-full max-w-md mx-auto space-y-4 pt-1">
       {/* ── 1. Hero PvP Match Banner ── */}
-      <div className="relative overflow-hidden rounded-[26px] border border-pline bg-pcard p-5 text-center shadow-md">
+      <div className="relative overflow-hidden rounded-3xl bg-pcard p-5 text-center shadow-md">
         <div className="pointer-events-none absolute -top-10 -right-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-purple)_15%,transparent)] blur-2xl" />
         <div className="pointer-events-none absolute -bottom-10 -left-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-primary)_12%,transparent)] blur-2xl" />
 

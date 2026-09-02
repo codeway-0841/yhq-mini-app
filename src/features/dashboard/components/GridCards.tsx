@@ -27,7 +27,7 @@ function CountPill({ count }: { count: number }) {
 // ── ModeList — guruhlangan ro'yxat konteyneri (bitta sirt, hairline qatorlar) ─
 export const ModeList = memo(function ModeList({ children }: { children: React.ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-[16px] border border-pline bg-pcard [&>*:not(:first-child)]:border-t [&>*:not(:first-child)]:border-pline">
+    <div className="overflow-hidden rounded-2xl bg-pcard shadow-xs [&>*:not(:first-child)]:border-t [&>*:not(:first-child)]:border-pline">
       {children}
     </div>
   )
@@ -74,9 +74,9 @@ export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onCl
       aria-label={label}
       className={cn(
         'relative flex w-full aspect-square flex-col items-center justify-center gap-2.5 p-2.5',
-        'rounded-[16px] border border-pline bg-pcard',
+        'rounded-2xl bg-pcard shadow-xs',
         interactive,
-        'hover:border-plineStrong',
+        'hover:bg-psurface',
       )}
     >
       <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
@@ -100,9 +100,9 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
       aria-label={label}
       className={cn(
         'relative flex size-[96px] shrink-0 snap-start flex-col items-center justify-center gap-2.5 p-2.5 sm:size-[104px]',
-        'rounded-[16px] border border-pline bg-pcard',
+        'rounded-2xl bg-pcard shadow-xs',
         interactive,
-        'hover:border-plineStrong',
+        'hover:bg-psurface',
       )}
     >
       <Icon size={26} strokeWidth={1.75} className="text-pmuted" />

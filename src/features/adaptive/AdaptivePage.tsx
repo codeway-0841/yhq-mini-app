@@ -151,7 +151,7 @@ export default function AdaptivePage() {
 
           {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
           {summary && summary.total > 0 && (
-            <div className="rounded-2xl border border-pline bg-pcard p-4 w-full max-w-xs shadow-xs">
+            <div className="rounded-2xl bg-pcard p-4 w-full max-w-xs shadow-xs">
               <div className="flex items-center gap-2 mb-3">
                 <CalendarClock size={15} className="text-pprimary" />
                 <p className="text-xs font-semibold text-pfg">

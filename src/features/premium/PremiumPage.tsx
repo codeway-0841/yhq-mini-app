@@ -83,7 +83,7 @@ export default function PremiumPage() {
       </header>
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
-      <div className="mx-5 mt-2 rounded-2xl border border-pline bg-pcard px-4 py-3.5 shadow-xs">
+      <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
         <div className="flex items-center gap-3.5">
           <PremiumIcon size={24} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
@@ -118,7 +118,7 @@ export default function PremiumPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? 'Возможности' : 'Imkoniyatlar'}
       </p>
-      <div className="mx-5 rounded-2xl border border-pline bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
+      <div className="mx-5 rounded-2xl bg-pcard divide-y divide-pline shadow-xs overflow-hidden">
         {BENEFITS.map((b, i) => (
           <div key={i} className="flex items-center gap-3.5 px-4 py-3.5">
             <b.icon size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
@@ -136,7 +136,7 @@ export default function PremiumPage() {
           <div key={t.id} className="flex-none w-[104px]">
             <div className="h-[64px] rounded-xl overflow-hidden shadow-xs relative"
               style={{ background: t.bg }}>
-              <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
+              <div className="absolute left-2 right-2 top-2 h-5 rounded-md"
                 style={{ background: t.card, border: `1px solid ${t.color}4d` }} />
               <span className="absolute bottom-2 left-2 w-7 h-1.5 rounded-full"
                 style={{ background: t.color }} />

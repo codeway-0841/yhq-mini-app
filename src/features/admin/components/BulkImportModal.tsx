@@ -225,7 +225,7 @@ export default function BulkImportModal({
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-container bg-psurface border border-pline p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+      <div className="relative w-full max-w-lg rounded-2xl bg-psurface border border-pline p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-pline">
           <div>
@@ -248,7 +248,7 @@ export default function BulkImportModal({
         </div>
 
         {/* Download Template Bar */}
-        <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-container border border-pline text-xs">
+        <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-2xl border border-pline text-xs">
           <span className="font-semibold text-pmuted text-[11px] flex items-center gap-1.5">
             <Download size={14} className="text-pprimary" />
             Shablonlar:
@@ -256,14 +256,14 @@ export default function BulkImportModal({
           <div className="flex items-center gap-2">
             <button
               onClick={() => downloadTemplate('csv')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-control bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
             >
               <FileSpreadsheet size={12} strokeWidth={1.75} />
               CSV (.csv)
             </button>
             <button
               onClick={() => downloadTemplate('json')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-control bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
             >
               <FileCode size={12} strokeWidth={1.75} />
               JSON (.json)
@@ -272,11 +272,11 @@ export default function BulkImportModal({
         </div>
 
         {/* Tab Selector */}
-        <div className="grid grid-cols-3 gap-1 p-1 bg-psurface rounded-container border border-pline mb-3">
+        <div className="grid grid-cols-3 gap-1 p-1 bg-psurface rounded-2xl border border-pline mb-3">
           <button
             type="button"
             onClick={() => setActiveTab('csv')}
-            className={`py-2 rounded-control text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
               activeTab === 'csv' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -287,7 +287,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={() => setActiveTab('text')}
-            className={`py-2 rounded-control text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
               activeTab === 'text' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -298,7 +298,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={() => setActiveTab('json')}
-            className={`py-2 rounded-control text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
               activeTab === 'json' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -320,7 +320,7 @@ export default function BulkImportModal({
               />
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-container p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
+                className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
               >
                 <FileSpreadsheet size={28} className="mx-auto text-ppurple mb-1.5" />
                 <p className="text-xs font-semibold text-pfg">
@@ -343,7 +343,7 @@ export default function BulkImportModal({
                   }}
                   rows={4}
                   placeholder={`Savol,Variant A,Variant B,Variant C,To'g'ri\n"1-savol","A","B","C","A"`}
-                  className="w-full mt-1.5 bg-card border border-pline rounded-container p-2.5 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                  className="w-full mt-1.5 bg-card border border-pline rounded-2xl p-2.5 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
                 />
               </details>
             </div>
@@ -359,7 +359,7 @@ export default function BulkImportModal({
                 }}
                 rows={6}
                 placeholder={`1. Avtomobilning maksimal tezligi qancha?\nA) 70 km/soat\nB) 90 km/soat\nC) 110 km/soat\nTo'g'ri: B\n\n2. Keyingi savol matni...\nA) Variant 1\nB) Variant 2\nJavob: A`}
-                className="w-full bg-card border border-pline rounded-container p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
               />
               <p className="text-[10px] text-pmuted flex items-start gap-1">
                 <Lightbulb size={11} strokeWidth={1.75} className="mt-px flex-none" />
@@ -378,7 +378,7 @@ export default function BulkImportModal({
                 }}
                 rows={6}
                 placeholder={`[\n  {\n    "question": "Savol matni?",\n    "options": ["Variant A", "Variant B", "Variant C"],\n    "answer": "A"\n  }\n]`}
-                className="w-full bg-card border border-pline rounded-container p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
               />
             </div>
           )}
@@ -396,7 +396,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('all')}
-                    className={`px-2.5 py-1 rounded-control text-[11px] font-semibold transition-all ${
+                    className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold transition-all ${
                       filterTab === 'all'
                         ? 'bg-fg text-bg'
                         : 'bg-psurface border border-pline text-pmuted hover:text-pfg'
@@ -407,7 +407,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('valid')}
-                    className={`px-2.5 py-1 rounded-control text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                    className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                       filterTab === 'valid'
                         ? 'bg-pprimary text-ponprimary'
                         : 'bg-pprimary/10 border border-pprimary/30 text-pprimary'
@@ -419,7 +419,7 @@ export default function BulkImportModal({
                     <button
                       type="button"
                       onClick={() => setFilterTab('invalid')}
-                      className={`px-2.5 py-1 rounded-control text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                      className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                         filterTab === 'invalid'
                           ? 'bg-pdanger text-white'
                           : 'bg-pdanger/10 border border-pdanger/30 text-pdanger'
@@ -451,7 +451,7 @@ export default function BulkImportModal({
                 {displayList.map((q, idx) => (
                   <div
                     key={q.id_temp}
-                    className={`p-3 rounded-container border text-xs transition-all ${
+                    className={`p-3 rounded-2xl border text-xs transition-all ${
                       q.isValid ? 'bg-card border-pline' : 'bg-pdanger/10 border-pdanger/30'
                     }`}
                   >
@@ -486,7 +486,7 @@ export default function BulkImportModal({
                             key={optKey}
                             type="button"
                             onClick={() => updateQuestionAnswer(q.id_temp, optKey)}
-                            className={`p-1.5 rounded-control border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
+                            className={`p-1.5 rounded-xl border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
                               isCorrect
                                 ? 'bg-pprimary/20 border-pprimary text-pfg font-semibold'
                                 : 'bg-psurface border-pline text-pmuted hover:text-pfg'
@@ -523,7 +523,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={onClose}
-            className="flex-1 py-3 rounded-container bg-psurface text-xs font-semibold text-pmuted hover:text-pfg active:scale-95 transition-all"
+            className="flex-1 py-3 rounded-2xl bg-psurface text-xs font-semibold text-pmuted hover:text-pfg active:scale-95 transition-all"
           >
             Bekor qilish
           </button>
@@ -531,7 +531,7 @@ export default function BulkImportModal({
             type="button"
             disabled={validCount === 0 || importing}
             onClick={handleImport}
-            className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-1.5 disabled:opacity-40"
+            className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-semibold flex items-center justify-center gap-1.5 disabled:opacity-40"
           >
             {importing ? (
               <>
@@ -548,7 +548,7 @@ export default function BulkImportModal({
       {/* In-Modal Single Question Edit Popup (nested overlay: Escape faqat shuni yopadi) */}
       {editingItem && (
         <DialogOverlay onClose={() => setEditingItem(null)} position="center" zIndex={60} labelId="bulk-edit-title" backdropClassName="bg-black/85 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-container bg-psurface border border-pline p-5 space-y-3 shadow-2xl relative">
+          <div className="w-full max-w-sm rounded-2xl bg-psurface border border-pline p-5 space-y-3 shadow-2xl relative">
             <div className="flex items-center justify-between">
               <h3 id="bulk-edit-title" className="text-sm font-semibold text-pfg">Savolni tahrirlash</h3>
               <button onClick={() => setEditingItem(null)} aria-label="Yopish" className="p-1 text-pmuted">
@@ -568,7 +568,7 @@ export default function BulkImportModal({
                   })
                 }
                 rows={3}
-                className="w-full bg-psurface border border-pline rounded-control p-2 text-xs text-pfg"
+                className="w-full bg-psurface border border-pline rounded-xl p-2 text-xs text-pfg"
               />
             </div>
 
@@ -590,12 +590,12 @@ export default function BulkImportModal({
                       })
                     }}
                     placeholder={`Variant ${key}`}
-                    className="flex-1 bg-psurface border border-pline rounded-control px-2.5 py-1.5 text-xs text-pfg"
+                    className="flex-1 bg-psurface border border-pline rounded-xl px-2.5 py-1.5 text-xs text-pfg"
                   />
                   <button
                     type="button"
                     onClick={() => setEditingItem({ ...editingItem, correctAnswer: key })}
-                    className={`p-1.5 rounded-control border text-[10px] font-semibold ${
+                    className={`p-1.5 rounded-xl border text-[10px] font-semibold ${
                       editingItem.correctAnswer === key
                         ? 'bg-pprimary text-ponprimary border-pprimary'
                         : 'bg-psurface border-pline text-pmuted'
@@ -610,7 +610,7 @@ export default function BulkImportModal({
 
             <button
               onClick={() => saveEditedItem(editingItem)}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 rounded-control text-xs font-semibold"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 rounded-xl text-xs font-semibold"
             >
               Saqlash
             </button>

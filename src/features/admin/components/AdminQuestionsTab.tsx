@@ -115,14 +115,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           <button
             onClick={refresh}
             disabled={busy}
-            className="p-2.5 rounded-container bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-transform"
+            className="p-2.5 rounded-2xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-transform"
             title="Yangilash"
           >
             <RotateCw size={14} className={busy ? 'motion-safe:animate-spin text-ppurple' : ''} />
           </button>
           <button
             onClick={() => setBulkImporting(true)}
-            className="px-3 py-2.5 rounded-container bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all flex items-center gap-1"
+            className="px-3 py-2.5 rounded-2xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all flex items-center gap-1"
             title="Ommaviy yuklash"
           >
             <Upload size={14} className="text-ppurple" />
@@ -130,7 +130,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           </button>
           <button
             onClick={() => setCreating(true)}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1 px-3 py-2.5 rounded-container text-xs font-semibold"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-1 px-3 py-2.5 rounded-2xl text-xs font-semibold"
           >
             <Plus size={14} />
             <span>Yangi</span>
@@ -150,7 +150,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 setSelectedSubject(sub.id)
                 haptics.impact('light')
               }}
-              className={`px-3.5 py-2.5 rounded-container text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-all flex-shrink-0 ${
+              className={`px-3.5 py-2.5 rounded-2xl text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-all flex-shrink-0 ${
                 isSelected
                   ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
                   : 'bg-psurface border border-pline text-pmuted hover:text-pfg'
@@ -166,11 +166,11 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       {/* Meta counters */}
       {meta && (
         <div className="grid grid-cols-2 gap-3">
-          <div className="rounded-container border border-pline bg-pcard p-3.5">
+          <div className="rounded-2xl border border-pline bg-pcard p-3.5">
             <span className="text-[11px] text-pmuted block font-medium">Ushbu fanda jami</span>
             <span className="text-xl font-semibold text-pfg">{meta.total} ta savol</span>
           </div>
-          <div className="rounded-container border border-pline bg-pcard p-3.5">
+          <div className="rounded-2xl border border-pline bg-pcard p-3.5">
             <span className="text-[11px] text-pmuted block font-medium">Mavzuga bog'langan</span>
             <span className="text-xl font-semibold text-pprimary">{meta.withTopic} ta</span>
           </div>
@@ -184,7 +184,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder={`${currentSubjectObj.name} savollaridan qidirish...`}
-          className="w-full bg-card border border-pline rounded-container pl-10 pr-4 py-3 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
+          className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
         />
       </div>
 
@@ -197,7 +197,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       ) : (
         <div className="space-y-2">
           {filtered.map((q) => (
-            <div key={q.id} className="rounded-container border border-pline bg-pcard bg-card border border-pline rounded-container p-3.5">
+            <div key={q.id} className="rounded-2xl border border-pline bg-pcard bg-card border border-pline rounded-2xl p-3.5">
               <div className="flex gap-3 items-start justify-between">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -219,7 +219,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                       <img
                         src={q.image}
                         alt="Savol rasmi"
-                        className="w-12 h-12 object-cover rounded-control border border-pline bg-psurface"
+                        className="w-12 h-12 object-cover rounded-xl border border-pline bg-psurface"
                         onError={(e) => {
                           ;(e.target as HTMLElement).style.display = 'none'
                         }}
@@ -234,14 +234,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 <div className="flex flex-col gap-1.5 flex-shrink-0">
                   <button
                     onClick={() => setEditing(q)}
-                    className="p-2 bg-psurface rounded-control border border-pline active:scale-90 transition-transform"
+                    className="p-2 bg-psurface rounded-xl border border-pline active:scale-90 transition-transform"
                     title="Tahrirlash"
                   >
                     <Pencil size={13} className="text-pblue" />
                   </button>
                   <button
                     onClick={() => setConfirm(q)}
-                    className="p-2 bg-psurface rounded-control border border-pline active:scale-90 transition-transform"
+                    className="p-2 bg-psurface rounded-xl border border-pline active:scale-90 transition-transform"
                     title="O'chirish"
                   >
                     <Trash2 size={13} className="text-pdanger" />
@@ -252,14 +252,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           ))}
 
           {filtered.length === 0 && (
-            <div className="rounded-container border border-pline bg-pcard p-8 text-center">
+            <div className="rounded-2xl border border-pline bg-pcard p-8 text-center">
               <p className="text-sm font-semibold text-pfg">Savol topilmadi</p>
               <p className="text-xs text-pmuted mt-1">
                 {search ? "Boshqa so'z bilan qidiring" : "Ushbu fanga hali savollar qo'shilmagan"}
               </p>
               <button
                 onClick={() => setCreating(true)}
-                className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-control text-xs font-semibold"
+                className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-xl text-xs font-semibold"
               >
                 + Yangi savol qo'shish
               </button>
@@ -308,7 +308,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           >
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
             <div className="flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-container bg-pdanger/15 border border-pdanger/40 flex items-center justify-center mb-3">
+              <div className="w-14 h-14 rounded-2xl bg-pdanger/15 border border-pdanger/40 flex items-center justify-center mb-3">
                 <AlertTriangle size={28} className="text-pdanger" />
               </div>
               <p id="delete-question-title" className="text-[17px] font-semibold text-pfg mb-1">#{deleteConfirm.id} savolni o'chirish</p>
@@ -326,13 +326,13 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                     await useQuestionsStore.getState().reload().catch(() => {})
                   } finally { setBusy(false) }
                 }}
-                className="font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] bg-pdanger w-full py-3.5 rounded-container text-[14px] text-white mb-2 disabled:opacity-50"
+                className="font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] bg-pdanger w-full py-3.5 rounded-2xl text-[14px] text-white mb-2 disabled:opacity-50"
               >
                 {busy ? <Loader2 size={16} className="motion-safe:animate-spin inline" /> : "Ha, o'chirish"}
               </button>
               <button
                 onClick={() => setConfirm(null)}
-                className="w-full py-3 rounded-container bg-psurface text-[13px] font-semibold text-pmuted"
+                className="w-full py-3 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted"
               >
                 Bekor qilish
               </button>
@@ -358,7 +358,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
 
       {/* Toast Alert */}
       {toast && (
-        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-container border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-container text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}
@@ -490,37 +490,37 @@ function QuestionForm({
           <div>
             <label className="text-[11px] font-semibold text-pmuted uppercase">Savol matni (UZ)</label>
             <textarea required value={form.questionUz} onChange={(e) => setForm({ ...form, questionUz: e.target.value })}
-              rows={3} className="w-full bg-psurface rounded-control p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
+              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
           </div>
           <div>
             <label className="text-[11px] font-semibold text-pmuted uppercase">Savol matni (RU)</label>
             <textarea required value={form.questionRu} onChange={(e) => setForm({ ...form, questionRu: e.target.value })}
-              rows={3} className="w-full bg-psurface rounded-control p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
+              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Variantlar UZ (JSON)</label>
               <textarea required value={form.optionsUz} onChange={(e) => setForm({ ...form, optionsUz: e.target.value })}
-                rows={6} className="w-full bg-psurface rounded-control p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
+                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
             </div>
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Variantlar RU (JSON)</label>
               <textarea required value={form.optionsRu} onChange={(e) => setForm({ ...form, optionsRu: e.target.value })}
-                rows={6} className="w-full bg-psurface rounded-control p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
+                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">To'g'ri javob</label>
               <select value={form.correctAnswer} onChange={(e) => setForm({ ...form, correctAnswer: e.target.value })}
-                className="w-full bg-psurface rounded-control p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
                 <option>F1</option><option>F2</option><option>F3</option><option>F4</option>
               </select>
             </div>
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Mavzu</label>
               <select value={form.topicId ?? ''} onChange={(e) => setForm({ ...form, topicId: e.target.value ? Number(e.target.value) : null })}
-                className="w-full bg-psurface rounded-control p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
                 <option value="">——</option>
                 {topics.map((t) => (
                   <option key={t.id} value={t.id}>{lang === 'ru' ? t.nameRu : t.nameUz}</option>
@@ -569,12 +569,12 @@ function QuestionForm({
                 />
 
                 {form.image ? (
-                  <div className="flex items-center justify-between p-2.5 rounded-container bg-psurface border border-ppurple/40">
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-ppurple/40">
                     <div className="flex items-center gap-2.5 min-w-0">
                       <img
                         src={form.image}
                         alt="Question preview"
-                        className="w-12 h-12 rounded-control object-cover border border-pline flex-shrink-0"
+                        className="w-12 h-12 rounded-xl object-cover border border-pline flex-shrink-0"
                       />
                       <div className="min-w-0">
                         <p className="text-xs font-semibold text-pfg truncate">
@@ -590,7 +590,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-control bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -598,7 +598,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -608,7 +608,7 @@ function QuestionForm({
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-container p-3.5 text-center cursor-pointer bg-psurface transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-3.5 text-center cursor-pointer bg-psurface transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={18} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>
@@ -622,13 +622,13 @@ function QuestionForm({
                 value={form.image}
                 onChange={(e) => setForm({ ...form, image: e.target.value })}
                 placeholder="https://... yoki images/q001.jpg"
-                className="w-full bg-psurface rounded-control p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none"
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none"
               />
             )}
           </div>
 
           <button type="submit" disabled={busy}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-container text-[14px] disabled:opacity-50">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl text-[14px] disabled:opacity-50">
             {busy ? <Loader2 size={16} className="motion-safe:animate-spin inline" /> : 'Saqlash'}
           </button>
         </form>

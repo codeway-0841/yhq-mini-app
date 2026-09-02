@@ -299,11 +299,11 @@ export default function AdminAiStudioTab() {
       </div>
 
       {/* Mode Selector */}
-      <div className="grid grid-cols-2 gap-2 p-1 bg-psurface rounded-container border border-pline">
+      <div className="grid grid-cols-2 gap-2 p-1 bg-psurface rounded-2xl border border-pline">
         <button
           type="button"
           onClick={() => setMode('custom_text')}
-          className={`py-2.5 px-3 rounded-control text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
             mode === 'custom_text'
               ? 'bg-ppurple text-ponprimary shadow-md'
               : 'text-pmuted hover:text-pfg'
@@ -316,7 +316,7 @@ export default function AdminAiStudioTab() {
         <button
           type="button"
           onClick={() => setMode('topic')}
-          className={`py-2.5 px-3 rounded-control text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
             mode === 'topic'
               ? 'bg-ppurple text-ponprimary shadow-md'
               : 'text-pmuted hover:text-pfg'
@@ -338,7 +338,7 @@ export default function AdminAiStudioTab() {
                 key={s.id}
                 type="button"
                 onClick={() => setSelectedSubject(s.id)}
-                className={`px-3 py-1.5 rounded-control text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all border ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all border ${
                   isSelected
                     ? 'bg-psurface border-ppurple text-pfg shadow-sm'
                     : 'bg-card border-pline text-pmuted hover:text-pfg'
@@ -354,7 +354,7 @@ export default function AdminAiStudioTab() {
       </div>
 
       {/* Prompt Input Form */}
-      <div className="rounded-container bg-psurface border border-pline p-4 space-y-4 shadow-sm">
+      <div className="rounded-2xl bg-psurface border border-pline p-4 space-y-4 shadow-sm">
         {mode === 'custom_text' ? (
           <div>
             <div className="flex items-center justify-between mb-1">
@@ -366,7 +366,7 @@ export default function AdminAiStudioTab() {
               onChange={(e) => setPromptText(e.target.value)}
               rows={6}
               placeholder="O'zingiz yozgan qoidalar, darslikdan parcha yoki qonun moddalarini kiriting..."
-              className="w-full bg-card border border-pline rounded-container p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
             />
           </div>
         ) : (
@@ -379,7 +379,7 @@ export default function AdminAiStudioTab() {
               value={promptText}
               onChange={(e) => setPromptText(e.target.value)}
               placeholder="Masalan: Chorrahada burilish qoidalari..."
-              className="w-full bg-card border border-pline rounded-container px-3 py-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl px-3 py-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
             />
 
             {/* Sample Topics Suggestions */}
@@ -415,7 +415,7 @@ export default function AdminAiStudioTab() {
                   key={c}
                   type="button"
                   onClick={() => setCount(c)}
-                  className={`py-1.5 rounded-control text-xs font-semibold transition-all border ${
+                  className={`py-1.5 rounded-xl text-xs font-semibold transition-all border ${
                     count === c
                       ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
                       : 'bg-card border-pline text-pmuted hover:text-pfg'
@@ -436,7 +436,7 @@ export default function AdminAiStudioTab() {
                   key={d}
                   type="button"
                   onClick={() => setDifficulty(d)}
-                  className={`py-1.5 rounded-control text-[11px] font-semibold transition-all border ${
+                  className={`py-1.5 rounded-xl text-[11px] font-semibold transition-all border ${
                     difficulty === d
                       ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
                       : 'bg-card border-pline text-pmuted hover:text-pfg'
@@ -454,7 +454,7 @@ export default function AdminAiStudioTab() {
           type="button"
           disabled={loading || !promptText.trim()}
           onClick={handleGenerate}
-          className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+          className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
         >
           {loading ? (
             <>
@@ -471,7 +471,7 @@ export default function AdminAiStudioTab() {
       </div>
 
       {successMessage && (
-        <div className="p-3.5 rounded-container bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-semibold flex items-center gap-2 shadow-sm animate-premiumIn">
+        <div className="p-3.5 rounded-2xl bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-semibold flex items-center gap-2 shadow-sm animate-premiumIn">
           <CheckCircle2 size={18} className="flex-none" />
           <span>{successMessage}</span>
         </div>
@@ -486,7 +486,7 @@ export default function AdminAiStudioTab() {
             </div>
 
             {/* Language Switcher for Questions View */}
-            <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-control border border-pline text-[10px] font-semibold">
+            <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl border border-pline text-[10px] font-semibold">
               <button
                 type="button"
                 onClick={() => setActiveLangTab('uz')}
@@ -517,7 +517,7 @@ export default function AdminAiStudioTab() {
               return (
                 <div
                   key={q.id}
-                  className="rounded-container bg-psurface border border-pline p-4 space-y-3.5 shadow-sm relative group"
+                  className="rounded-2xl bg-psurface border border-pline p-4 space-y-3.5 shadow-sm relative group"
                 >
                   {/* Card Top */}
                   <div className="flex items-center justify-between border-b border-pline pb-2.5">
@@ -551,7 +551,7 @@ export default function AdminAiStudioTab() {
                         else updateQuestion(q.id, { questionRu: val })
                       }}
                       rows={2}
-                      className="w-full bg-card border border-pline rounded-control p-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                      className="w-full bg-card border border-pline rounded-xl p-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
                     />
                   </div>
 
@@ -566,7 +566,7 @@ export default function AdminAiStudioTab() {
                         return (
                           <div
                             key={opt.id}
-                            className={`flex items-center gap-2 p-2 rounded-control border transition-all ${
+                            className={`flex items-center gap-2 p-2 rounded-xl border transition-all ${
                               isCorrect ? 'bg-psuccess/10 border-psuccess/40' : 'bg-card border-pline'
                             }`}
                           >
@@ -608,7 +608,7 @@ export default function AdminAiStudioTab() {
                       value={q.explanation || ''}
                       onChange={(e) => updateQuestion(q.id, { explanation: e.target.value })}
                       placeholder="Nega aynan shu javob to'g'ri ekanligi tushuntirishi..."
-                      className="w-full bg-card border border-pline rounded-control px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                      className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
                     />
                   </div>
 
@@ -643,7 +643,7 @@ export default function AdminAiStudioTab() {
                         <img
                           src={q.image}
                           alt="Savol rasmi"
-                          className="h-24 w-auto rounded-control border border-pline object-cover"
+                          className="h-24 w-auto rounded-xl border border-pline object-cover"
                         />
                         <button
                           type="button"
@@ -666,7 +666,7 @@ export default function AdminAiStudioTab() {
             <button
               type="button"
               onClick={handleAddBlankQuestion}
-              className="py-3 px-4 rounded-container bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center justify-center gap-1.5 transition-all"
+              className="py-3 px-4 rounded-2xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center justify-center gap-1.5 transition-all"
             >
               <Plus size={16} />
               <span>Yangi bo'sh savol qo'shish</span>
@@ -676,7 +676,7 @@ export default function AdminAiStudioTab() {
               type="button"
               disabled={saving || questions.length === 0}
               onClick={handleSaveAll}
-              className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-container text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
+              className="flex-1 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-semibold flex items-center justify-center gap-2 shadow-lg disabled:opacity-40"
             >
               {saving ? (
                 <>

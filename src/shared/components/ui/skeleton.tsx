@@ -10,7 +10,7 @@ function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>)
     <div
       aria-hidden="true"
       className={cn(
-        'relative overflow-hidden rounded-[7px] bg-pline',
+        'relative overflow-hidden rounded-xl bg-pline',
         // `after:content-['']` SHART — busiz pseudo-element umuman chizilmaydi.
         // Keyframes `brand-sweep` src/index.css da.
         "motion-safe:after:content-[''] motion-safe:after:absolute motion-safe:after:inset-0",
@@ -27,7 +27,7 @@ function Skeleton({ className, ...props }: React.HTMLAttributes<HTMLDivElement>)
 function SkeletonRow({ className }: { className?: string }) {
   return (
     <div className={cn('flex items-center gap-3', className)}>
-      <Skeleton className="size-9 rounded-[12px]" />
+      <Skeleton className="size-9 rounded-xl" />
       <div className="flex-1 space-y-2">
         <Skeleton className="h-[11px] w-[58%]" />
         <Skeleton className="h-[9px] w-[38%]" />
@@ -38,7 +38,7 @@ function SkeletonRow({ className }: { className?: string }) {
 
 /** Karta o'lchamidagi skelet. */
 function SkeletonCard({ className }: { className?: string }) {
-  return <Skeleton className={cn('h-14 rounded-container', className)} />
+  return <Skeleton className={cn('h-14 rounded-2xl', className)} />
 }
 
 export { Skeleton, SkeletonRow, SkeletonCard }

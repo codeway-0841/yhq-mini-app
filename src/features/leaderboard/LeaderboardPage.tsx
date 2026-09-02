@@ -270,7 +270,7 @@ export default function LeaderboardPage() {
           ))}
         </div>
       ) : entriesList.length === 0 ? (
-        <div className="mx-4 mt-6 flex flex-col items-center justify-center rounded-[28px] border border-pline bg-pcard p-8 text-center shadow-xs">
+        <div className="mx-4 mt-6 flex flex-col items-center justify-center rounded-3xl bg-pcard p-8 text-center shadow-xs">
           <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-pprimary/10 text-pprimary">
             <Trophy size={28} />
           </div>
@@ -356,7 +356,7 @@ export default function LeaderboardPage() {
 
       {/* ── Chempionlar Tarixi (Accordion) ── */}
       {seasons && seasons.length > 0 && (
-        <div className="mx-4 mt-6 rounded-[24px] border border-pline bg-pcard p-4 shadow-xs">
+        <div className="mx-4 mt-6 rounded-2xl bg-pcard p-4 shadow-xs">
           <button
             type="button"
             onClick={() => setShowHistory((h) => !h)}

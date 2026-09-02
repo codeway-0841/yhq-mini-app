@@ -53,7 +53,7 @@ export default function BossCard() {
       <div className="mx-5 mb-6 rounded-2xl bg-pcard p-4 shadow-xs">
         <Skeleton className="mb-3 h-2.5 w-24" />
         <div className="flex items-center gap-3">
-          <Skeleton className="size-12 shrink-0 rounded-[14px]" />
+          <Skeleton className="size-12 shrink-0 rounded-2xl" />
           <div className="flex-1 space-y-2">
             <Skeleton className="h-3 w-32" />
             <Skeleton className="h-[4px] w-full" />
