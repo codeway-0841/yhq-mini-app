@@ -34,14 +34,14 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
               <button
                 key={opt.value}
                 onClick={() => { onSelect(opt.value); onClose() }}
-                className={`flex items-center gap-3 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
+                className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
                   selected
-                    ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]'
-                    : 'border-pline bg-pcanvas active:border-plineStrong'
+                    ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]'
+                    : 'bg-pcard hover:bg-psurface'
                 }`}
               >
                 {opt.icon && (
-                  <div className="w-10 h-10 rounded-full bg-pcard border border-pline flex items-center justify-center flex-none">
+                  <div className="size-10 rounded-full bg-psurface shadow-xs flex items-center justify-center flex-none">
                     {opt.icon}
                   </div>
                 )}

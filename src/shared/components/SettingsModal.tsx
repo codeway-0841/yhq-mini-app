@@ -281,13 +281,13 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
                       playSound('chime') // tema unlock — tema-mos chime
                       setPicker(null)
                     }}
-                    className={`flex items-center gap-3 w-full rounded-container border-2 p-3.5 text-left transition-all active:scale-[0.98] ${
-                      selected ? 'border-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' :
-                      preview === theme.id ? 'border-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'border-pline bg-pcanvas'
+                    className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
+                      selected ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' :
+                      preview === theme.id ? 'ring-2 ring-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'bg-pcard hover:bg-psurface'
                     }`}
                   >
                     {/* Mini atmosfera preview: fon + karta + aksent */}
-                    <div className="relative w-14 h-11 rounded-control overflow-hidden flex-none border border-pline"
+                    <div className="relative w-14 h-11 rounded-xl overflow-hidden flex-none shadow-xs"
                       style={{ background: theme.bg }}>
                       <div className="absolute left-1.5 right-1.5 top-1.5 h-4 rounded-[5px]"
                         style={{ background: theme.card, border: `1px solid ${theme.color}40` }} />

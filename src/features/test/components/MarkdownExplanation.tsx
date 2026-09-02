@@ -66,19 +66,19 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
       >
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3" />
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/10 rounded-control border border-pprimary/20">
+          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/10 rounded-full">
             {sign.code}
           </span>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+            className="size-8 rounded-full bg-pcard shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
             aria-label="Yopish"
           >
             <X size={16} />
           </button>
         </div>
 
-        <div className="w-36 h-36 mx-auto rounded-container bg-white/95 border border-pline shadow-inner flex items-center justify-center mb-4 p-3">
+        <div className="size-36 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3">
           {sign.image ? (
             <img src={sign.image} alt={sign.name} className="w-full h-full object-contain" />
           ) : (
@@ -91,7 +91,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
         </h3>
         <p className="text-center text-xs text-pmuted mb-4 font-medium">{sign.legalRef}</p>
 
-        <div className="bg-pcanvas/70 border border-pline p-3.5 rounded-container mb-4">
+        <div className="bg-pcard shadow-xs p-3.5 rounded-2xl mb-4">
           <FormattedSignDescription text={sign.description} />
         </div>
 

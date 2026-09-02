@@ -76,7 +76,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           <button
             onClick={onClose}
             aria-label={tt('closeResults')}
-            className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+            className="w-8 h-8 rounded-full bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
           >
             <X size={16} />
           </button>
@@ -139,7 +139,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                 >
                   {/* Top Bar */}
                   <div className="flex items-center justify-between gap-2 mb-2.5">
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-psurface border border-pline text-pfg">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-semibold bg-psurface text-pfg shadow-2xs">
                       #{item.index + 1}
                       {item.status === 'correct' && <CheckCircle2 size={13} className="text-pprimary" />}
                       {item.status === 'incorrect' && <XCircle size={13} className="text-pdanger" />}
@@ -147,7 +147,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       {item.status === 'unanswered' && <HelpCircle size={13} className="text-psubtle" />}
                     </span>
                     {item.topicName && (
-                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-md border border-pline truncate max-w-[200px]">
+                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-lg truncate max-w-[200px]">
                         {item.topicName}
                       </span>
                     )}
@@ -162,7 +162,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                   {q.image && (
                     <div
                       onClick={() => setZoomedImage(formatImageSrc(q.image) || null)}
-                      className="mb-3 rounded-control overflow-hidden border border-pline bg-black/40 flex justify-center relative group cursor-zoom-in active:scale-[0.99] transition-transform"
+                      className="mb-3 rounded-2xl overflow-hidden bg-black/40 flex justify-center relative group cursor-zoom-in active:scale-[0.99] transition-transform shadow-xs"
                     >
                       <img src={formatImageSrc(q.image)} alt={`Question ${item.index + 1}`} className="max-h-48 object-contain" />
                       <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
@@ -211,7 +211,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                           key={opt.id}
                           className={`p-2.5 rounded-control border text-xs flex items-center gap-2 ${borderStyle}`}
                         >
-                          <span className="w-5 h-5 rounded-md bg-psurface border border-pline flex items-center justify-center font-semibold text-[10px] flex-shrink-0">
+                          <span className="size-5 rounded-lg bg-psurface flex items-center justify-center font-semibold text-[10px] flex-shrink-0">
                             {String.fromCharCode(65 + i)}
                           </span>
                           <span className="flex-1 min-w-0">{opt.text}</span>
