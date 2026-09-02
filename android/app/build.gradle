@@ -11,10 +11,10 @@ if (keystorePropsFile.exists()) {
 }
 
 android {
-    namespace = "uz.kiwi.yhq"
+    namespace = "uz.kivvi.app"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "uz.kiwi.yhq"
+        applicationId "uz.kivvi.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
@@ -47,10 +47,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    // APK chiqish fayl nomi: kiwi-debug.apk / kiwi-release.apk
+    // APK chiqish fayl nomi: kivvi-debug.apk / kivvi-release.apk
     applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "kiwi-${variant.buildType.name}.apk"
+            outputFileName = "kivvi-${variant.buildType.name}.apk"
         }
     }
 }

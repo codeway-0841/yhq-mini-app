@@ -62,6 +62,7 @@ const onboardingChunk      = () => import('./features/onboarding/Onboarding')
 const loginChunk           = () => import('./features/auth/LoginPage')
 const verifyEmailChunk     = () => import('./features/auth/pages/VerifyEmailPage')
 const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPage')
+const yimExamChunk         = () => import('./features/test/YimExamPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -91,6 +92,7 @@ const Onboarding      = lazy(onboardingChunk)
 const LoginPage       = lazy(loginChunk)
 const VerifyEmailPage = lazy(verifyEmailChunk)
 const ResetPasswordPage = lazy(resetPasswordChunk)
+const YimExamPage      = lazy(yimExamChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -107,6 +109,7 @@ const routeChunkPrefetchers = [
   aiTestHubChunk, aiTestSessionChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
+  yimExamChunk,
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
@@ -186,6 +189,7 @@ function Layout() {
           <Routes>
             <Route path="/"           element={<Dashboard />} />
             <Route path="/testlar"    element={<TestlarPage />} />
+            <Route path="/test/yim"   element={<YimExamPage />} />
             <Route path="/test/:id"   element={<TestPage />} />
             <Route path="/darslik"    element={<Darslik />} />
             <Route path="/biletlar"   element={<Biletlar />} />

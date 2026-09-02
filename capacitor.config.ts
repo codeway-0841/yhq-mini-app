@@ -26,7 +26,7 @@ const hostCandidates = [
 const navigableHosts = Array.from(new Set(hostCandidates.filter((h): h is string => Boolean(h))))
 
 const config: CapacitorConfig = {
-  appId: 'uz.kiwi.yhq',   // Play Store identity — O'ZGARMAYDI (yangi app bo'lib qolardi)
+  appId: 'uz.kivvi.app',   // Play Store identity — O'ZGARMAYDI (yangi app bo'lib qolardi)
   appName: 'KIVVI',
   webDir: 'dist',
   server: {

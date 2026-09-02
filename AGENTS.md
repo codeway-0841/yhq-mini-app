@@ -57,7 +57,7 @@ src/
                    #     max(env(safe-area-inset-top), TG inject --tg-content-safe-area-inset-top)
                    #     → body padding-top (APK edge-to-edge VA TG fullscreen'ni qoplaydi)
   content/         #   Statik kontent (eski src/data): lessons, modules, questions, signs, formulas + lessonMap.yhq.json
-capacitor.config.ts # Android APK (Capacitor 8): appId uz.kiwi.yhq, webDir dist, server.url YO'Q (lokal bundle), server.appStartPath='/app.html' (dist/index.html = landing!).
+capacitor.config.ts # Android APK (Capacitor 8): appId uz.kivvi.app, webDir dist, server.url YO'Q (lokal bundle), server.appStartPath='/app.html' (dist/index.html = landing!).
                    #   LEADING SLASH SHART (2026-08-31 APK incident): Capacitor 8 Bridge.java https
                    #   scheme'da "https://localhost" + startPath'ni slash'siz YOPISHTIRADI — 'app.html'
                    #   bo'lsa WebView "https://localhostapp.html" ochib ERR_NAME_NOT_RESOLVED berardi;
@@ -99,7 +99,7 @@ npx tsc -p tsconfig.json --noEmit        # frontend typecheck
 npx tsc -p tsconfig.server.json --noEmit # backend typecheck
 npx cap sync android       # dist → android/ web asset yangilash (build DAN KEYIN)
 cd android && gradlew assembleDebug  # Debug APK → app/build/outputs/apk/debug/ (Android SDK + Java 17-21; JBR 25'da Gradle 8.14 xato)
-cd android && gradlew assembleRelease bundleRelease  # Release APK (kiwi-release.apk) + Play AAB (app-release.aab) —
+cd android && gradlew assembleRelease bundleRelease  # Release APK (kivvi-release.apk) + Play AAB (app-release.aab) —
                           # imzo android/keystore.properties'dan (GITIGNORED: keystore app/kivvi-upload.keystore,
                           # alias kivvi-upload — ZAXIRA qiling, yo'qolsa Play update bo'lmaydi!)
                           # Windows bash: JAVA_HOME=C:\Users\PC\.jdks\jdk-21.0.6+7, ANDROID_HOME=%LOCALAPPDATA%\Android\Sdk

@@ -1,4 +1,4 @@
-package uz.kiwi.yhq;
+package uz.kivvi.app;
 
 import com.getcapacitor.BridgeActivity;
 

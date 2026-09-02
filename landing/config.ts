@@ -10,7 +10,7 @@ export const APP_URL =
 export const BOT_URL = 'https://t.me/kiwi_uz_bot'
 
 /** Google Play ilovasi */
-export const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=uz.kiwi.yhq'
+export const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=uz.kivvi.app'
 
 /** Maxfiylik siyosati (public/privacy.html) */
 export const PRIVACY_URL = '/privacy.html'

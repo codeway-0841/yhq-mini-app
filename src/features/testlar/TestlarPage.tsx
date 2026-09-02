@@ -25,6 +25,7 @@ interface ModeCard {
   danger?: boolean
   /** AI kunlik test — "YANGI" badge + binafsha (AI) aksent */
   aiCard?: boolean
+  customTitle?: string
   titleKey: TKey
   meta: string
   diff: Diff
@@ -73,6 +74,8 @@ export default function TestlarPage() {
       : []),
     ...(subjectId === 'yhq'
       ? [
+          { id: 'yim',      iconBox: 'cap' as const, danger: true, customTitle: '🏛️ YIM Davlat Imtihoni (1:1)',
+            titleKey: 'mockExam' as const, meta: `20 savol · 25 daqiqa · 2 xatoda yiqilish`, diff: 'hard' as const },
           { id: 'mock',     iconBox: 'cap' as const, danger: true,
             titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const },
           { id: 'speed',    iconBox: 'zap' as const,
@@ -97,6 +100,7 @@ export default function TestlarPage() {
 
   const start = (m: ModeCard) => {
     track('test_start', { mode: m.id })
+    if (m.id === 'yim') { navigate('/test/yim'); return }
     if (m.id === 'speed') { navigate('/speed'); return }
     if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
@@ -161,7 +165,7 @@ export default function TestlarPage() {
 
               {/* Matn */}
               <div className="flex-1 min-w-0 text-left">
-                <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{tt(m.titleKey)}</p>
+                <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{m.customTitle ?? tt(m.titleKey)}</p>
                 <p className="text-[11.5px] text-psubtle mt-0.5 truncate">{m.meta}</p>
                 <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
                   style={{ color: d.color }}>
