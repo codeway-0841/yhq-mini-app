@@ -71,7 +71,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-psurface border border-pline p-5 shadow-2xl space-y-4 relative">
+      <div className="w-full max-w-sm rounded-3xl bg-psurface p-5 shadow-2xl space-y-4 relative">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -93,7 +93,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         </div>
 
         {/* Tab switcher */}
-        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard border border-pline">
+        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard shadow-xs">
           <button
             type="button"
             onClick={() => { setTab('create'); setErrorMsg(null) }}

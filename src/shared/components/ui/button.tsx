@@ -27,7 +27,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:     'bg-pprimary text-ponprimary hover:brightness-[1.06]',
-        secondary:   'bg-psurface text-pfg border border-plineStrong hover:bg-pcard',
+        secondary:   'bg-psurface text-pfg hover:bg-pcard',
         outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface',
         ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg',
         // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind

@@ -198,7 +198,7 @@ export default function Dashboard() {
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
-          <div className="flex size-10 items-center justify-center rounded-full border border-pline bg-pcard transition-transform"
+          <div className="flex size-10 items-center justify-center rounded-full bg-pcard shadow-md transition-transform"
             style={{ transform: `scale(${Math.min(1, ptr.dist / ptr.threshold)})` }}>
             <span className="block size-5 rounded-full border-2 border-pline motion-safe:animate-spin"
               style={{ borderTopColor: 'var(--p-primary)' }} />
@@ -308,7 +308,7 @@ export default function Dashboard() {
           </div>
 
           {/* 8. Premium Banner */}
-          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
+          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 shadow-xs">
             <PremiumIcon size={22} className="shrink-0 text-pmuted" />
             <div className="min-w-0 flex-1">
               <p className="text-[13.5px] font-semibold text-pfg">Premium</p>

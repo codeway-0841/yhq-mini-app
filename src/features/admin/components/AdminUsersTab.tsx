@@ -140,10 +140,10 @@ export default function AdminUsersTab() {
           {users.map((u) => {
             const isPremium = u.tariff === 'premium' || (u.premiumUntil && new Date(u.premiumUntil) > new Date())
             return (
-              <div key={u.id} className="rounded-2xl border border-pline bg-pcard p-4 rounded-2xl border border-pline bg-card">
+              <div key={u.id} className="rounded-2xl bg-pcard p-4 shadow-xs">
                 <div className="flex items-center justify-between gap-3 mb-2">
                   <div className="flex items-center gap-3 min-w-0">
-                    <div className="w-10 h-10 rounded-2xl bg-psurface border border-pline flex items-center justify-center text-pfg font-semibold text-sm flex-shrink-0">
+                    <div className="w-10 h-10 rounded-2xl bg-psurface flex items-center justify-center text-pfg font-semibold text-sm flex-shrink-0 shadow-xs">
                       {u.firstName?.[0] || 'U'}
                     </div>
                     <div className="min-w-0">

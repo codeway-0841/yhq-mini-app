@@ -289,7 +289,7 @@ export default function LoginPage() {
             <img src="/images/brand-wordmark.webp" alt="kivvi" width={96} height={28} className="h-6 w-auto" />
           </div>
 
-          <div className="rounded-sheet border border-pline bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">
+          <div className="rounded-sheet bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">
             {/* Telegram ikonka */}
             <div className="mb-4">
               <div className="w-[68px] h-[68px] rounded-2xl bg-[#0088cc]/12 flex items-center justify-center">

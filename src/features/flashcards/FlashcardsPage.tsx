@@ -119,7 +119,7 @@ export default function FlashcardsPage() {
             const catName = isRu ? (c.nameRu || c.name) : c.name
             return (
               <button key={c.id} onClick={() => start(c)}
-                className="rounded-2xl border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
+                className="rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
                 <div className="flex size-10 shrink-0 items-center justify-center text-pmuted">
                   <Icon size={22} strokeWidth={1.75} />
                 </div>
@@ -204,7 +204,7 @@ export default function FlashcardsPage() {
           className="flip-card w-full max-w-[320px] aspect-[3/4] text-left select-none">
           <div className={`flip-inner ${flipped ? 'flipped' : ''}`}>
             {/* OLD TOMON — belgi rasmi */}
-            <div className="flip-face rounded-3xl bg-pcard p-6 flex flex-col items-center justify-center gap-4 shadow-xl border border-pline/40">
+            <div className="flip-face rounded-3xl bg-pcard p-6 flex flex-col items-center justify-center gap-4 shadow-xl">
               <div className="w-40 h-40 rounded-2xl bg-white flex items-center justify-center shadow-xs">
                 {current.image
                   ? <img src={current.image} alt={currentName} className="w-32 h-32 object-contain" />

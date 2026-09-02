@@ -197,7 +197,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       ) : (
         <div className="space-y-2">
           {filtered.map((q) => (
-            <div key={q.id} className="rounded-2xl border border-pline bg-pcard bg-card border border-pline rounded-2xl p-3.5">
+            <div key={q.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
               <div className="flex gap-3 items-start justify-between">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">

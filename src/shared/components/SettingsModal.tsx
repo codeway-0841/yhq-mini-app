@@ -159,7 +159,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
           <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
             <Row icon={Palette} label={tt('accentThemeLabel')}>
               <span className={valueBtn}>
-                <span className="w-4 h-4 rounded-full border border-pline"
+                <span className="w-4 h-4 rounded-full shadow-2xs"
                   style={{ background: getAccentTheme(accent).color }} />
                 {getAccentTheme(accent).label[local.language]}
                 {!isPremium && <PremiumIcon size={12} className="text-pmuted" />}

@@ -40,7 +40,7 @@ function FormulaCard({ item, fav, onFav, lang }: {
   const note = isRu ? (item.noteRu ?? item.note) : item.note
 
   return (
-    <div className="rounded-2xl border border-pline bg-pcard p-3.5 relative shadow-xs">
+    <div className="rounded-2xl bg-pcard p-3.5 relative shadow-xs">
       <button type="button" onClick={(e) => { e.stopPropagation(); onFav() }}
         aria-label="favorite"
         className="absolute top-2.5 right-2.5 p-1 cursor-pointer">

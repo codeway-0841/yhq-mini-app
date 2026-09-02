@@ -33,7 +33,7 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
           type="button"
           onClick={onClose}
           aria-label={tt('close')}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors shadow-xs"
         >
           <X size={16} strokeWidth={2.5} />
         </button>

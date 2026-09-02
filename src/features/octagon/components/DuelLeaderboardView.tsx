@@ -35,7 +35,7 @@ function UserAvatar({ name, src, frame, size = 'sm' }: {
     <div className={cn(
       sizeClasses,
       'rounded-full bg-psurface flex items-center justify-center text-pfg font-bold shrink-0 overflow-hidden',
-      !frameClass && 'border border-pline'
+      !frameClass && 'shadow-2xs'
     )}>
       {src ? (
         <img src={src} alt={name} className="size-full object-cover" loading="lazy" />

@@ -20,9 +20,9 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
   const src = customAvatar ?? photoUrl
   const letter = name?.[0]?.toUpperCase() || 'F'
   const inner = src ? (
-    <img src={src} alt="" className="size-11 rounded-full border border-pline object-cover" />
+    <img src={src} alt="" className="size-11 rounded-full object-cover shadow-2xs" />
   ) : (
-    <div className="flex size-11 items-center justify-center rounded-full border border-pline bg-pwash text-lg font-bold text-pprimary">
+    <div className="flex size-11 items-center justify-center rounded-full bg-pwash text-lg font-bold text-pprimary shadow-2xs">
       {letter}
     </div>
   )

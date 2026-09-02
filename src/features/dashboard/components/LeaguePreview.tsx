@@ -60,7 +60,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           {tt('seeAll')} <ChevronRight size={14} strokeWidth={1.75} />
         </button>
       </div>
-      <div className="divide-y divide-pline overflow-hidden rounded-2xl border border-pline bg-pcard shadow-xs">
+      <div className="divide-y divide-pline overflow-hidden rounded-2xl bg-pcard shadow-xs">
         {entries.map((e) => (
           <div
             key={e.rank}

@@ -194,18 +194,18 @@ export default function AdminPromoTab() {
             return (
               <div
                 key={c.id}
-                className={`rounded-2xl border border-pline bg-pcard p-4 rounded-2xl border transition-all ${
-                  !c.isActive ? 'opacity-60 bg-psurface/50' : 'bg-card'
+                className={`rounded-2xl bg-pcard p-4 shadow-xs transition-all ${
+                  !c.isActive ? 'opacity-60 bg-psurface/50' : ''
                 }`}
               >
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono font-semibold text-base text-pfg tracking-wider bg-psurface px-2.5 py-1 rounded-xl border border-pline">
+                    <span className="font-mono font-semibold text-base text-pfg tracking-wider bg-psurface px-2.5 py-1 rounded-xl shadow-2xs">
                       {c.code}
                     </span>
                     <button
                       onClick={() => handleCopy(c.code)}
-                      className="w-8 h-8 rounded-xl bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-transform"
+                      className="w-8 h-8 rounded-xl bg-psurface flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-transform shadow-xs"
                       title="Nusxalash"
                     >
                       {copiedCode === c.code ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}

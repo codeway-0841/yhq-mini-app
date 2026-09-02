@@ -105,10 +105,10 @@ export default function AdminStatsTab() {
         <button
           onClick={handleRefresh}
           disabled={refreshing}
-          className="p-2.5 rounded-2xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-transform flex items-center justify-center"
-          title="Yangilash"
+          className="p-2.5 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-transform flex items-center justify-center shadow-xs"
+          aria-label="Yangilash"
         >
-          <RotateCw size={15} className={refreshing ? 'motion-safe:animate-spin text-ppurple' : ''} />
+          <RotateCw size={15} className={refreshing ? 'motion-safe:animate-spin text-pprimary' : ''} />
         </button>
       </div>
 
@@ -117,7 +117,7 @@ export default function AdminStatsTab() {
         {items.map((it, idx) => {
           const Icon = it.icon
           return (
-            <div key={idx} className="rounded-2xl border border-pline bg-pcard p-4 rounded-2xl border border-pline bg-card relative overflow-hidden">
+            <div key={idx} className="rounded-2xl bg-pcard p-4 shadow-xs relative overflow-hidden">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-[11px] font-semibold text-pmuted">{it.title}</span>
                 <div className={`w-8 h-8 rounded-xl flex items-center justify-center border ${it.bg} ${it.color}`}>

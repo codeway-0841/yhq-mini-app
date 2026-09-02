@@ -207,7 +207,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
   })()
 
   return (
-    <div className="rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
+    <div className="rounded-2xl bg-pcard p-4 shadow-xs">
       {/* Modul sarlavhasi */}
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">

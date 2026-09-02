@@ -88,7 +88,7 @@ export default function XatolarPage() {
 
       {/* Bo'sh holat */}
       {total === 0 && (
-        <div className="rounded-2xl border border-pline bg-pcard p-8 flex flex-col items-center text-center shadow-xs">
+        <div className="rounded-2xl bg-pcard p-8 flex flex-col items-center text-center shadow-xs">
           <div className="size-12 flex items-center justify-center mb-4">
             <HeartCrack size={26} className="text-pmuted" />
           </div>
@@ -100,7 +100,7 @@ export default function XatolarPage() {
       {total > 0 && (
         <>
           {/* Umumiy holat + "Barchasini mashq qilish" */}
-          <div className="rounded-2xl border border-pline bg-pcard p-4 mb-4 shadow-xs">
+          <div className="rounded-2xl bg-pcard p-4 mb-4 shadow-xs">
             <div className="flex items-center gap-3 mb-3.5">
               <div className="size-11 flex items-center justify-center flex-shrink-0">
                 <HeartCrack size={22} className="text-pmuted" />
@@ -119,7 +119,7 @@ export default function XatolarPage() {
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <div className="rounded-2xl border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-xs">
+            <div className="rounded-2xl bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-xs">
               <div className="size-11 flex items-center justify-center flex-shrink-0">
                 <Sparkles size={22} className="text-pmuted" />
               </div>
@@ -142,7 +142,7 @@ export default function XatolarPage() {
           {isPremium && byTopic.length > 0 && (
             <>
               <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
-              <div className="rounded-2xl border border-pline bg-pcard overflow-hidden mb-4 shadow-xs divide-y divide-pline">
+              <div className="rounded-2xl bg-pcard overflow-hidden mb-4 shadow-xs divide-y divide-pline">
                 {byTopic.map((g) => (
                   <button key={g.topicId} onClick={() => startPractice(g.ids, g.name)}
                     className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors">
@@ -167,7 +167,7 @@ export default function XatolarPage() {
               <div className="flex flex-col gap-2">
                 {topHard.map(({ q, count }, i) => (
                   <button key={q.id} onClick={() => startPractice([q.id], tt('topMistakes'))}
-                    className="rounded-2xl border border-pline bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform shadow-xs">
+                    className="rounded-2xl bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform shadow-xs hover:bg-psurface">
                     <span className="w-6 text-center text-[12px] font-semibold text-psubtle flex-shrink-0 tabular-nums">
                       {i + 1}
                     </span>
