@@ -58,7 +58,7 @@ export default function AiTestHub() {
       )}
 
       {(error || (tests !== null && tests.length === 0)) && (
-        <div className="rounded-container border border-pline bg-pcard p-6 text-center">
+        <div className="rounded-2xl border border-pline bg-pcard p-6 text-center shadow-xs">
           <Sparkles size={28} strokeWidth={1.75} className="mx-auto mb-2 text-ppurple" />
           <p className="text-[14px] text-pmuted">{tt('aiTestEmpty')}</p>
         </div>
@@ -71,7 +71,7 @@ export default function AiTestHub() {
             <button
               key={t.id}
               onClick={() => open(t)}
-              className="relative rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform text-left"
+              className="relative rounded-2xl border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface"
             >
               {!t.attempted && (
                 <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">

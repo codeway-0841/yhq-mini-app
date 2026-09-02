@@ -185,7 +185,7 @@ export default function SpeedPage() {
         </p>
         <p className="text-base font-semibold leading-snug mb-4 text-center">{q.text}</p>
         {q.image && (
-          <div className="rounded-control overflow-hidden mb-4 border border-pline flex items-center justify-center bg-psurface">
+          <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
             <img src={q.image} alt="savol" loading="lazy"
               className="max-w-full max-h-[40vh] w-auto h-auto object-contain" />
           </div>

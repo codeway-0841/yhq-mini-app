@@ -22,16 +22,16 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
         const isCurrent = i === current
         // Joriy savol HAR QANDAY holatda ko'k border bilan ajratiladi
         // (javoblangan: to'liq rang + ko'k border · javobsiz: kulrang + ko'k border)
-        let cls = 'bg-psurface border-2 border-pline text-pmuted'
-        if (ans === 'correct')      cls = 'bg-pprimary text-ponprimary' + (isCurrent ? ' border-2 border-pprimary ' : '')
-        else if (ans === 'wrong')   cls = 'bg-pdanger text-white' + (isCurrent ? ' border-2 border-pprimary ' : '')
+        let cls = 'bg-psurface text-pmuted'
+        if (ans === 'correct')      cls = 'bg-pprimary text-ponprimary shadow-xs' + (isCurrent ? ' ring-2 ring-offset-2 ring-offset-pcanvas ring-pprimary font-bold' : '')
+        else if (ans === 'wrong')   cls = 'bg-pdanger text-white shadow-xs' + (isCurrent ? ' ring-2 ring-offset-2 ring-offset-pcanvas ring-pprimary font-bold' : '')
         // pending: offline — server tasdig'ini kutmoqda (outbox'da navbatda)
-        else if (ans === 'pending') cls = 'bg-psurface border-2 border-pblue text-pblue'
-        else if (isCurrent)         cls = 'bg-psurface border-2 border-pprimary text-pfg '
+        else if (ans === 'pending') cls = 'bg-psurface text-pblue ring-2 ring-pblue'
+        else if (isCurrent)         cls = 'bg-psurface text-pprimary ring-2 ring-pprimary shadow-xs font-bold'
         return (
           <button key={i} onClick={() => onSelect(i)}
             aria-current={isCurrent ? 'true' : undefined}
-            className={`flex-none w-9 h-9 rounded-lg text-[13px] font-semibold transition-all ${cls}`}>
+            className={`flex-none w-9 h-9 rounded-xl text-[13px] font-semibold transition-all ${cls}`}>
             {i + 1}
           </button>
         )

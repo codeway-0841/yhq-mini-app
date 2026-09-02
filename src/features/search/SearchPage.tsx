@@ -58,7 +58,7 @@ export default function SearchPage() {
           className="grid size-11 place-items-center rounded-control text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
-        <div className="flex-1 flex items-center gap-2 rounded-container border border-pline bg-psurface px-3.5">
+        <div className="flex-1 flex items-center gap-2 rounded-2xl border border-pline bg-psurface px-3.5 shadow-xs">
           <Search size={16} className="text-pprimary flex-shrink-0" />
           <input
             autoFocus
@@ -96,7 +96,7 @@ export default function SearchPage() {
               <button
                 key={h.question.id}
                 onClick={() => openQuestion(h.question.id, h.question.text)}
-                className="w-full text-left rounded-container border border-pline bg-pcard rounded-container p-3.5 active:scale-[0.99] transition-transform"
+                className="w-full text-left rounded-2xl border border-pline bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
               >
                 <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
                   {h.question.text}
@@ -126,7 +126,7 @@ export default function SearchPage() {
               <button
                 key={`${h.moduleId}:${h.lessonIdx}`}
                 onClick={() => openLesson(h.moduleId, h.lessonIdx)}
-                className="w-full text-left rounded-container border border-pline bg-pcard rounded-container p-3.5 active:scale-[0.99] transition-transform"
+                className="w-full text-left rounded-2xl border border-pline bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
               >
                 <p className="text-sm font-semibold text-pfg mb-0.5">{h.title}</p>
                 <p className="text-[11px] font-semibold text-ppurple mb-1">{h.moduleTitle}</p>

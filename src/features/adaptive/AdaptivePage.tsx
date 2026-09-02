@@ -151,7 +151,7 @@ export default function AdaptivePage() {
 
           {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}
           {summary && summary.total > 0 && (
-            <div className="rounded-container border border-pline bg-pcard p-4 w-full max-w-xs">
+            <div className="rounded-2xl border border-pline bg-pcard p-4 w-full max-w-xs shadow-xs">
               <div className="flex items-center gap-2 mb-3">
                 <CalendarClock size={15} className="text-pprimary" />
                 <p className="text-xs font-semibold text-pfg">
@@ -210,7 +210,7 @@ export default function AdaptivePage() {
         </div>
         <p className="text-base font-semibold leading-snug mb-5">{q.text}</p>
         {q.image && (
-          <div className="rounded-control overflow-hidden mb-4 border border-pline flex items-center justify-center bg-psurface">
+          <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
             <img src={q.image} alt={q.text} loading="lazy"
               className="max-w-full max-h-[55vh] w-auto h-auto object-contain" />
           </div>

@@ -733,7 +733,7 @@ export default function TestPage() {
                   playSound('click')
                 }}
                 aria-label={settings?.language === 'ru' ? 'Озвучить вопрос' : "Savolni o'qib berish"}
-                className="grid size-7 place-items-center rounded-full border border-pline bg-psurface text-pmuted transition-colors duration-[120ms] ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                className="grid size-7 place-items-center rounded-full bg-psurface text-pmuted transition-colors duration-[120ms] ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary shadow-2xs"
               >
                 <Volume2 size={13} strokeWidth={1.75} />
               </button>
@@ -746,7 +746,7 @@ export default function TestPage() {
               {selected && (
                 <button onClick={handleOpenExplain}
                   aria-label={tt('whyThis')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-control border border-[rgb(var(--p-warning-rgb)/0.35)] bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-[120ms] ease-out active:scale-[0.98] shadow-xs">
                   <Info size={14} aria-hidden="true" />
                   {tt('whyThis')}
                 </button>
@@ -755,7 +755,7 @@ export default function TestPage() {
               {selected && (
                 <button onClick={() => setShowAiTutor(true)}
                   aria-label={tt('askAiExplain')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-control border border-[rgb(var(--p-purple-rgb)/0.30)] bg-[rgb(var(--p-purple-rgb)/0.12)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-[120ms] ease-out active:scale-[0.98] shadow-xs">
                   <Sparkles size={13} strokeWidth={1.75} aria-hidden="true" /> {tt('askAiExplain')}
                 </button>
               )}
@@ -765,7 +765,7 @@ export default function TestPage() {
             /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
                kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
                rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
-            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-container overflow-hidden mb-4 border border-pline cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform"
+            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
               onClick={() => {
                 setZoomed(true)
                 haptics.impact('light')

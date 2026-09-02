@@ -115,7 +115,7 @@ export default function TestlarPage() {
         <button
           type="button"
           onClick={() => navigate('/qidiruv')}
-          className="flex w-full items-center gap-2.5 rounded-control border border-plineStrong bg-psurface px-4 py-3 text-left transition-[transform,border-color] duration-[120ms] ease-out hover:border-pline active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+          className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-all active:scale-[0.99] shadow-xs hover:bg-psurface/80"
         >
           <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-pprimary" />
           <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
@@ -127,7 +127,7 @@ export default function TestlarPage() {
           const d = DIFF[m.diff]
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="group relative rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-transform text-left">
+              className="group relative rounded-2xl border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface">
               {/* AI kunlik test — YANGI badge (yangi testlar ekanligi ko'rinib tursin) */}
               {m.aiCard && (
                 <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">
