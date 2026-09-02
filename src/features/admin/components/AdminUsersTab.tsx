@@ -109,7 +109,7 @@ export default function AdminUsersTab() {
 
       {/* Error state */}
       {error && (
-        <div className="rounded-2xl border border-pline bg-pcard p-6 text-center border-pdanger/30 bg-pdanger/5">
+        <div className="rounded-2xl p-6 text-center border border-pdanger/30 bg-pdanger/5 shadow-xs">
           <AlertCircle size={28} className="mx-auto text-pdanger mb-2" />
           <p className="text-xs font-semibold text-pfg mb-1">{error}</p>
           <button
@@ -128,7 +128,7 @@ export default function AdminUsersTab() {
           <p className="text-xs">Foydalanuvchilar yuklanmoqda...</p>
         </div>
       ) : users.length === 0 && !error ? (
-        <div className="rounded-2xl border border-pline bg-pcard p-8 text-center">
+        <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
           <User size={36} className="mx-auto text-pmuted/50 mb-2" />
           <p className="text-sm font-semibold text-pfg">Foydalanuvchi topilmadi</p>
           <p className="text-xs text-psubtle mt-1">
@@ -245,7 +245,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 7)}
-                  className="rounded-2xl border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -257,7 +257,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 30)}
-                  className="rounded-2xl border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -269,7 +269,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 90)}
-                  className="rounded-2xl border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -281,7 +281,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 365)}
-                  className="rounded-2xl border border-pline bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:border-ppurple transition-all"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -293,7 +293,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', null)}
-                  className="rounded-2xl border border-pline bg-pcard w-full p-3 rounded-2xl border text-left flex items-center justify-between text-xs font-semibold border-pwarning/40 bg-pwarning/10 text-pfg hover:border-pwarning transition-all"
+                  className="rounded-2xl bg-pwarning/10 w-full p-3 text-left flex items-center justify-between text-xs font-semibold border border-pwarning/40 text-pfg hover:bg-pwarning/15 transition-all shadow-xs"
                 >
                   <span>⭐ Umrbod Premium (Lifetime)</span>
                   <span className="text-pwarning font-semibold text-[11px]">VIP</span>
@@ -314,7 +314,7 @@ export default function AdminUsersTab() {
 
       {/* Toast */}
       {toast && (
-        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl bg-pcard text-pfg text-xs font-semibold px-4 py-3 text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}

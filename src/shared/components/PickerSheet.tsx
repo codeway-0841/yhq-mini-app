@@ -19,7 +19,7 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
 }) {
   return (
     <DialogOverlay onClose={onClose} labelId="picker-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
+      <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
 
         <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-semibold mb-5 text-pfg">

@@ -148,7 +148,7 @@ export default function AdminPromoTab() {
           <p className="text-xs">Yuklanmoqda...</p>
         </div>
       ) : codes.length === 0 ? (
-        <div className="rounded-2xl border border-pline bg-pcard p-8 text-center">
+        <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
           <Ticket size={36} className="mx-auto text-pmuted/50 mb-2" />
           <p className="text-sm font-semibold text-pfg">Promokodlar hali mavjud emas</p>
           <p className="text-xs text-psubtle mt-1 mb-4">Birinchi promokodni yarating</p>
@@ -260,7 +260,7 @@ export default function AdminPromoTab() {
 
                   <button
                     onClick={() => handleDelete(c.id)}
-                    className="p-1.5 rounded-xl border border-pline text-pmuted hover:text-pdanger hover:border-pdanger/40 transition-colors"
+                    className="p-1.5 rounded-xl text-pmuted hover:text-pdanger transition-colors shadow-xs"
                     title="O'chirish"
                   >
                     <Trash2 size={14} />
@@ -485,7 +485,7 @@ export default function AdminPromoTab() {
 
       {/* Toast Notification */}
       {toast && (
-        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl bg-pcard text-pfg text-xs font-semibold px-4 py-3 text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}

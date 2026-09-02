@@ -166,11 +166,11 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       {/* Meta counters */}
       {meta && (
         <div className="grid grid-cols-2 gap-3">
-          <div className="rounded-2xl border border-pline bg-pcard p-3.5">
+          <div className="rounded-2xl bg-pcard p-3.5 shadow-xs">
             <span className="text-[11px] text-pmuted block font-medium">Ushbu fanda jami</span>
             <span className="text-xl font-semibold text-pfg">{meta.total} ta savol</span>
           </div>
-          <div className="rounded-2xl border border-pline bg-pcard p-3.5">
+          <div className="rounded-2xl bg-pcard p-3.5 shadow-xs">
             <span className="text-[11px] text-pmuted block font-medium">Mavzuga bog'langan</span>
             <span className="text-xl font-semibold text-pprimary">{meta.withTopic} ta</span>
           </div>
@@ -219,7 +219,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                       <img
                         src={q.image}
                         alt="Savol rasmi"
-                        className="w-12 h-12 object-cover rounded-xl border border-pline bg-psurface"
+                        className="w-12 h-12 object-cover rounded-xl bg-psurface shadow-2xs"
                         onError={(e) => {
                           ;(e.target as HTMLElement).style.display = 'none'
                         }}
@@ -234,14 +234,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 <div className="flex flex-col gap-1.5 flex-shrink-0">
                   <button
                     onClick={() => setEditing(q)}
-                    className="p-2 bg-psurface rounded-xl border border-pline active:scale-90 transition-transform"
+                    className="p-2 bg-psurface rounded-xl active:scale-90 transition-transform shadow-xs"
                     title="Tahrirlash"
                   >
                     <Pencil size={13} className="text-pblue" />
                   </button>
                   <button
                     onClick={() => setConfirm(q)}
-                    className="p-2 bg-psurface rounded-xl border border-pline active:scale-90 transition-transform"
+                    className="p-2 bg-psurface rounded-xl active:scale-90 transition-transform shadow-xs"
                     title="O'chirish"
                   >
                     <Trash2 size={13} className="text-pdanger" />
@@ -252,7 +252,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           ))}
 
           {filtered.length === 0 && (
-            <div className="rounded-2xl border border-pline bg-pcard p-8 text-center">
+            <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
               <p className="text-sm font-semibold text-pfg">Savol topilmadi</p>
               <p className="text-xs text-pmuted mt-1">
                 {search ? "Boshqa so'z bilan qidiring" : "Ushbu fanga hali savollar qo'shilmagan"}
@@ -358,7 +358,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
 
       {/* Toast Alert */}
       {toast && (
-        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl border border-pline bg-pcard text-pfg text-xs font-semibold px-4 py-3 rounded-2xl text-center z-50 shadow-2xl animate-fadeIn">
+        <div className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] left-4 right-4 rounded-2xl bg-pcard text-pfg text-xs font-semibold px-4 py-3 text-center z-50 shadow-2xl animate-fadeIn">
           {toast}
         </div>
       )}

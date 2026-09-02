@@ -16,7 +16,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} labelId="subject-title">
-      <div className="relative w-full bg-pcard rounded-t-sheet border-t border-pline px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[80vh] overflow-y-auto">
+      <div className="relative w-full bg-pcard rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[80vh] overflow-y-auto shadow-2xl">
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
         <p id="subject-title" className="text-center text-base font-semibold mb-5 text-pfg">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}

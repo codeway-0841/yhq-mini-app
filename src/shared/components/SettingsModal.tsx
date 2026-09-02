@@ -121,7 +121,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title">
-      <div className="relative w-full rounded-t-sheet border-t border-plineStrong bg-pcard max-h-[85vh] flex flex-col">
+      <div className="relative w-full rounded-t-sheet bg-pcard max-h-[85vh] flex flex-col shadow-2xl">
         <div className="p-5 pb-0">
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex items-center justify-between mb-2">
@@ -237,7 +237,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
       {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
-          <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-4 pb-8 max-h-[82vh] flex flex-col">
+          <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl">
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none" />
             <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-semibold text-pfg mb-1 flex-none">
               <Palette size={18} className="text-pprimary" />

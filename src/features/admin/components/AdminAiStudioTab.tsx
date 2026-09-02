@@ -299,7 +299,7 @@ export default function AdminAiStudioTab() {
       </div>
 
       {/* Mode Selector */}
-      <div className="grid grid-cols-2 gap-2 p-1 bg-psurface rounded-2xl border border-pline">
+      <div className="grid grid-cols-2 gap-2 p-1 bg-psurface rounded-2xl shadow-xs">
         <button
           type="button"
           onClick={() => setMode('custom_text')}
@@ -486,7 +486,7 @@ export default function AdminAiStudioTab() {
             </div>
 
             {/* Language Switcher for Questions View */}
-            <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl border border-pline text-[10px] font-semibold">
+            <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl text-[10px] font-semibold shadow-2xs">
               <button
                 type="button"
                 onClick={() => setActiveLangTab('uz')}
@@ -643,7 +643,7 @@ export default function AdminAiStudioTab() {
                         <img
                           src={q.image}
                           alt="Savol rasmi"
-                          className="h-24 w-auto rounded-xl border border-pline object-cover"
+                          className="h-24 w-auto rounded-xl shadow-xs object-cover"
                         />
                         <button
                           type="button"

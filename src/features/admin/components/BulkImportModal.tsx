@@ -248,7 +248,7 @@ export default function BulkImportModal({
         </div>
 
         {/* Download Template Bar */}
-        <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-2xl border border-pline text-xs">
+        <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-2xl text-xs shadow-xs">
           <span className="font-semibold text-pmuted text-[11px] flex items-center gap-1.5">
             <Download size={14} className="text-pprimary" />
             Shablonlar:
@@ -256,14 +256,14 @@ export default function BulkImportModal({
           <div className="flex items-center gap-2">
             <button
               onClick={() => downloadTemplate('csv')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-all shadow-xs"
             >
               <FileSpreadsheet size={12} strokeWidth={1.75} />
               CSV (.csv)
             </button>
             <button
               onClick={() => downloadTemplate('json')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface border border-pline text-[11px] font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-all shadow-xs"
             >
               <FileCode size={12} strokeWidth={1.75} />
               JSON (.json)
@@ -272,7 +272,7 @@ export default function BulkImportModal({
         </div>
 
         {/* Tab Selector */}
-        <div className="grid grid-cols-3 gap-1 p-1 bg-psurface rounded-2xl border border-pline mb-3">
+        <div className="grid grid-cols-3 gap-1 p-1 bg-psurface rounded-2xl mb-3 shadow-xs">
           <button
             type="button"
             onClick={() => setActiveTab('csv')}

@@ -193,7 +193,7 @@ export default function CertificateModal({ score, total, percent, sample = false
           <Award className="text-pgold" size={24} />
           <h3 id="certificate-title" className="text-base font-semibold text-pfg">{tt('certOfficialTitle')}</h3>
           {sample && (
-            <span className="rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold">
+            <span className="rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs">
               {tt('certSampleBadge')}
             </span>
           )}

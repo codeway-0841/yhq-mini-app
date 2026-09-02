@@ -36,8 +36,7 @@ function Sheet({ open = true, onClose, children, className, zIndex }: SheetProps
       <div
         className={cn(
           'relative z-10 w-full max-w-lg mx-auto',
-          'rounded-t-sheet border-t border-x border-pline bg-pcard',
-          'shadow-[0_-8px_24px_-8px_rgba(0,0,0,0.45)]',
+          'rounded-t-sheet bg-pcard shadow-2xl',
           'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
           'max-h-[88dvh] overflow-y-auto',
           // Pastki safe-area MARKAZIY: DialogOverlay (position='bottom')

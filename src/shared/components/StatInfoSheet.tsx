@@ -16,7 +16,7 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
 
   return (
     <DialogOverlay onClose={onClose} labelId="stat-info-title" zIndex={60}>
-      <div className="relative w-full bg-psurface rounded-t-sheet border-t border-pline px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))]">
+      <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <div className="w-10 h-1 bg-pline rounded-full mx-auto mb-5" />
 
         <p id="stat-info-title" className="flex items-center justify-center gap-2 text-base font-black mb-4 text-pfg">

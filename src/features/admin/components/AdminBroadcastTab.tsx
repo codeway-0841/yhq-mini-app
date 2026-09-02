@@ -424,7 +424,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 <ImageIcon size={14} className="text-pblue" />
                 <span>Rasm (ixtiyoriy)</span>
               </label>
-              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl border border-pline text-[10px] font-semibold">
+              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-xl text-[10px] font-semibold shadow-2xs">
                 <button
                   type="button"
                   onClick={() => setImageMode('upload')}
@@ -653,7 +653,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
 
       {/* Live progress (chunked kampaniya) */}
       {bulkProgress && (
-        <div className="rounded-2xl border border-pline bg-pcard p-3 space-y-2">
+        <div className="rounded-2xl bg-pcard p-3 space-y-2 shadow-xs">
           <div className="h-1.5 bg-psurface rounded-full overflow-hidden">
             <div
               className="h-full bg-ppurple rounded-full transition-all"
