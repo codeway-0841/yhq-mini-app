@@ -195,16 +195,16 @@ export default function SpeedPage() {
           const isChoice = selected === opt.id
           const showResult = answered && !busy
           const style =
-            !showResult && isChoice ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] border-pblue border-2 text-pfg motion-safe:animate-pulse' :
-            !showResult            ? 'bg-psurface border-pline text-pfg hover:border-plineStrong hover:bg-psurface active:scale-[0.98]' :
-            isRight                ? 'bg-pprimary/15 border-pprimary text-pfg' :
-            isChoice               ? 'bg-pdanger/15 border-pdanger text-pdanger' :
-                                     'bg-psurface border-pline text-pmuted'
+            !showResult && isChoice ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] ring-2 ring-pblue text-pfg motion-safe:animate-pulse' :
+            !showResult            ? 'bg-pcard text-pfg hover:bg-psurface active:scale-[0.98]' :
+            isRight                ? 'bg-pprimary/15 ring-2 ring-pprimary text-pfg' :
+            isChoice               ? 'bg-pdanger/15 ring-2 ring-pdanger text-pdanger' :
+                                     'bg-psurface text-pmuted'
           return (
             <button key={`${q.id}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}
-              className={`w-full text-left rounded-control border-2 p-3.5 mb-2 transition-all focus:outline-none ${style}`}>
+              className={`w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all focus:outline-none shadow-xs ${style}`}>
               <div className="flex items-center gap-3">
-                <span className="w-7 h-7 rounded-full border border-current/30 flex items-center justify-center text-xs font-semibold opacity-60 flex-shrink-0">
+                <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-2xs">
                   {String.fromCharCode(65 + i)}
                 </span>
                 <span className="text-sm">{opt.text}</span>

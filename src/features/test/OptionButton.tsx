@@ -28,27 +28,27 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
   }
 
   const base = cn(
-    'mb-2.5 w-full rounded-container border p-3 text-left',
+    'mb-2.5 w-full rounded-2xl border p-3.5 text-left shadow-xs',
     'transition-[transform,border-color,background-color] duration-[120ms] ease-out',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:cursor-not-allowed',
   )
-  let style = 'border-pline bg-pcard hover:border-plineStrong active:scale-[0.99]'
-  let chip  = 'border-plineStrong bg-psurface text-psubtle'
+  let style = 'border-pline bg-pcard hover:bg-psurface active:scale-[0.99]'
+  let chip  = 'bg-psurface text-psubtle'
   let icon  = null
 
   if (state === 'correct') {
     style = 'border-pprimary bg-pwash motion-safe:animate-correctPop'
-    chip  = 'border-pprimary bg-pprimary text-ponprimary'
+    chip  = 'bg-pprimary text-ponprimary'
     icon  = <Check size={18} strokeWidth={2} className="flex-none text-pprimary" />
   } else if (state === 'wrong') {
     style = 'border-pdanger bg-[rgb(var(--p-danger-rgb)/0.10)]'
-    chip  = 'border-pdanger bg-pdanger text-white'
+    chip  = 'bg-pdanger text-white'
     icon  = <X size={18} strokeWidth={2} className="flex-none text-pdanger" />
   } else if (state === 'pending') {
     // Server javobi kutilmoqda (yoki offline — keyin tasdiqlanadi)
     style = 'border-pblue bg-[rgb(var(--p-blue-rgb)/0.08)] motion-safe:animate-pulse'
-    chip  = 'border-pblue bg-[rgb(var(--p-blue-rgb)/0.16)] text-pblue'
+    chip  = 'bg-[rgb(var(--p-blue-rgb)/0.16)] text-pblue'
   }
 
   return (
@@ -60,7 +60,7 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
     >
       <div className="flex items-center justify-between gap-2">
         <div className="flex min-w-0 items-center gap-2.5">
-          <span className={cn('flex size-8 flex-none items-center justify-center rounded-control border text-xs font-semibold', chip)}>
+          <span className={cn('flex size-8 flex-none items-center justify-center rounded-xl text-xs font-semibold shadow-2xs', chip)}>
             {indexLabel ?? option.id.toUpperCase()}
           </span>
           <span className="text-base text-pfg">{option.text}</span>
