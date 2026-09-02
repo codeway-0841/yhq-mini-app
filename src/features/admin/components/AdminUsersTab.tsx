@@ -87,7 +87,7 @@ export default function AdminUsersTab() {
         <button
           onClick={handleRefresh}
           disabled={refreshing}
-          className="p-2.5 rounded-2xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-transform"
+          className="p-2.5 rounded-2xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-transform shadow-xs"
           title="Yangilash"
         >
           <RotateCw size={15} className={refreshing ? 'motion-safe:animate-spin text-ppurple' : ''} />
@@ -170,7 +170,7 @@ export default function AdminUsersTab() {
                         Premium
                       </span>
                     ) : (
-                      <span className="px-2 py-0.5 rounded-xl text-[10px] font-semibold bg-psurface border border-pline text-pmuted">
+                      <span className="px-2 py-0.5 rounded-xl text-[10px] font-semibold bg-psurface text-pmuted shadow-2xs">
                         Oddiy
                       </span>
                     )}
@@ -219,10 +219,10 @@ export default function AdminUsersTab() {
       {/* Grant Modal */}
       {selectedUser && (
         <DialogOverlay onClose={() => setSelectedUser(null)} position="center" labelId="grant-premium-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-2xl bg-psurface border border-pline p-6 shadow-2xl overflow-hidden">
+          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 shadow-2xl overflow-hidden">
             <button
               onClick={() => setSelectedUser(null)}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg"
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
             >
               <X size={16} />
             </button>

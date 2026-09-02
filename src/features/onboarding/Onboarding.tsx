@@ -102,10 +102,25 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
               className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
                 !s.available ? 'opacity-55' : ''
               } ${
-                active ? 'ring-2 ring-pprimary bg-pprimary/10' : 'bg-pcard hover:bg-psurface'
-              }`}>
-              <Icon size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
-              <span className="flex-1 text-[15px] font-semibold text-pfg">
+                active ? 'scale-[1.01]' : 'bg-pcard hover:bg-psurface'
+              }`}
+              style={active ? {
+                backgroundColor: `${s.color}16`,
+                boxShadow: `inset 0 0 0 1.5px ${s.color}60, 0 4px 14px ${s.color}20`
+              } : undefined}>
+              <div
+                className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
+                style={{
+                  backgroundColor: active ? s.color : `${s.color}18`,
+                  color: active ? '#ffffff' : s.color
+                }}
+              >
+                <Icon size={20} strokeWidth={active ? 2.5 : 2} />
+              </div>
+              <span
+                className={`flex-1 text-[15px] truncate ${active ? 'font-bold' : 'font-semibold text-pfg'}`}
+                style={active ? { color: s.color } : undefined}
+              >
                 {lang === 'ru' ? s.nameRu : s.name}
               </span>
               {!s.available && (
@@ -114,8 +129,11 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
                 </span>
               )}
               {active && s.available && (
-                <span className="size-7 rounded-xl bg-pprimary flex items-center justify-center flex-none shadow-xs">
-                  <Check size={16} className="text-white" strokeWidth={3.2} />
+                <span
+                  className="size-7 rounded-xl flex items-center justify-center flex-none shadow-xs text-white"
+                  style={{ backgroundColor: s.color }}
+                >
+                  <Check size={16} strokeWidth={3.2} />
                 </span>
               )}
             </button>

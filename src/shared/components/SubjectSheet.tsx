@@ -21,7 +21,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
         <p id="subject-title" className="text-center text-base font-semibold mb-5 text-pfg">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
-        <div className="overflow-hidden rounded-2xl bg-psurface divide-y divide-pline shadow-xs">
+        <div className="flex flex-col gap-2">
           {SUBJECTS.map((s) => {
             const active = s.id === subjectId
             const Icon = s.icon
@@ -30,16 +30,48 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 key={s.id}
                 onClick={() => pick(s.id, s.available)}
                 disabled={!s.available}
-                className={`flex items-center gap-3.5 w-full p-3.5 text-left transition-colors duration-[120ms] ease-out ${
-                  !s.available ? 'opacity-50 cursor-not-allowed' : 'hover:bg-pcard active:bg-pcard'
-                } ${
-                  active ? 'bg-pcard font-semibold' : ''
+                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-[120ms] ease-out shadow-xs ${
+                  !s.available
+                    ? 'opacity-50 cursor-not-allowed bg-psurface/60'
+                    : active
+                      ? 'scale-[1.01]'
+                      : 'bg-psurface hover:bg-pcard active:scale-[0.99]'
                 }`}
+                style={active ? {
+                  backgroundColor: `${s.color}16`,
+                  boxShadow: `inset 0 0 0 1.5px ${s.color}60, 0 4px 14px ${s.color}20`
+                } : undefined}
               >
-                <Icon size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
-                <span className="flex-1 text-[14.5px] font-medium text-pfg">
-                  {lang === 'ru' ? s.nameRu : s.name}
-                </span>
+                {/* Rangli ikonka konteyneri */}
+                <div
+                  className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
+                  style={{
+                    backgroundColor: active ? s.color : `${s.color}18`,
+                    color: active ? '#ffffff' : s.color
+                  }}
+                >
+                  <Icon size={20} strokeWidth={active ? 2.5 : 2} />
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span
+                      className={`text-[14.5px] truncate ${active ? 'font-bold' : 'font-medium text-pfg'}`}
+                      style={active ? { color: s.color } : undefined}
+                    >
+                      {lang === 'ru' ? s.nameRu : s.name}
+                    </span>
+                    {active && (
+                      <span
+                        className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full text-white shadow-2xs shrink-0"
+                        style={{ backgroundColor: s.color }}
+                      >
+                        {lang === 'ru' ? 'Активен' : 'Tanlangan'}
+                      </span>
+                    )}
+                  </div>
+                </div>
+
                 {s.demoData && (
                   <span className="text-[10px] font-bold uppercase tracking-wide text-pwarning flex-none">
                     demo
@@ -51,7 +83,12 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                   </span>
                 )}
                 {active && s.available && (
-                  <Check size={18} className="text-pprimary flex-none" strokeWidth={2.25} />
+                  <div
+                    className="size-6 rounded-full flex items-center justify-center text-white shrink-0 shadow-xs"
+                    style={{ backgroundColor: s.color }}
+                  >
+                    <Check size={14} strokeWidth={3} />
+                  </div>
                 )}
               </button>
             )

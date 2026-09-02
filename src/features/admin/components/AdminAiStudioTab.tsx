@@ -338,15 +338,16 @@ export default function AdminAiStudioTab() {
                 key={s.id}
                 type="button"
                 onClick={() => setSelectedSubject(s.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all border ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all shadow-xs ${
                   isSelected
-                    ? 'bg-psurface border-ppurple text-pfg shadow-sm'
-                    : 'bg-card border-pline text-pmuted hover:text-pfg'
+                    ? 'text-white shadow-sm scale-[1.02]'
+                    : 'bg-psurface text-pmuted hover:text-pfg'
                 }`}
+                style={isSelected ? { backgroundColor: s.color } : undefined}
               >
-                <s.icon size={13} style={{ color: s.color }} />
+                <s.icon size={13} style={{ color: isSelected ? '#ffffff' : s.color }} />
                 <span>{s.name}</span>
-                {isSelected && <Check size={12} className="text-ppurple" />}
+                {isSelected && <Check size={12} className="text-white" strokeWidth={2.5} />}
               </button>
             )
           })}
@@ -354,7 +355,7 @@ export default function AdminAiStudioTab() {
       </div>
 
       {/* Prompt Input Form */}
-      <div className="rounded-2xl bg-psurface border border-pline p-4 space-y-4 shadow-sm">
+      <div className="rounded-2xl bg-psurface p-4 space-y-4 shadow-xs">
         {mode === 'custom_text' ? (
           <div>
             <div className="flex items-center justify-between mb-1">
@@ -392,7 +393,7 @@ export default function AdminAiStudioTab() {
                       key={i}
                       type="button"
                       onClick={() => setPromptText(topic)}
-                      className="px-2 py-1 rounded-lg bg-psurface border border-pline text-[10px] text-pmuted hover:text-pfg active:scale-95 transition-all text-left"
+                      className="px-2 py-1 rounded-lg bg-psurface text-[10px] text-pmuted hover:text-pfg active:scale-95 transition-all text-left shadow-2xs"
                     >
                       <Lightbulb size={10} strokeWidth={1.75} className="inline mr-1" />
                       {topic}
@@ -517,7 +518,7 @@ export default function AdminAiStudioTab() {
               return (
                 <div
                   key={q.id}
-                  className="rounded-2xl bg-psurface border border-pline p-4 space-y-3.5 shadow-sm relative group"
+                  className="rounded-2xl bg-psurface p-4 space-y-3.5 shadow-xs relative group"
                 >
                   {/* Card Top */}
                   <div className="flex items-center justify-between border-b border-pline pb-2.5">
@@ -666,7 +667,7 @@ export default function AdminAiStudioTab() {
             <button
               type="button"
               onClick={handleAddBlankQuestion}
-              className="py-3 px-4 rounded-2xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center justify-center gap-1.5 transition-all"
+              className="py-3 px-4 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center justify-center gap-1.5 transition-all shadow-xs"
             >
               <Plus size={16} />
               <span>Yangi bo'sh savol qo'shish</span>

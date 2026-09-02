@@ -275,10 +275,10 @@ export default function AdminPromoTab() {
       {/* Create Modal */}
       {creating && (
         <DialogOverlay onClose={() => setCreating(false)} position="center" labelId="promo-create-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-2xl bg-psurface border border-pline p-6 shadow-2xl overflow-hidden">
+          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 shadow-2xl overflow-hidden">
             <button
               onClick={() => setCreating(false)}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg"
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
             >
               <X size={16} />
             </button>

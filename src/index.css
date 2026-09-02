@@ -976,3 +976,31 @@ body[data-no-animation='true'] .animate-scorePop {
 .animate-shake {
   animation: shake 0.4s ease-in-out 3;
 }
+
+/* ═══ GLOBAL DESIGN SYSTEM STANDARDS (Apple HIG / Borderless Modern) ═════════
+   Kelajakda har qanday yangi komponent, sahifa yoki modal qo'shilganda
+   faqat shu standart sinflardan yoki @/shared/components/ui primitivlaridan
+   foydalanilsin. Qattiq sim-ramka (border-pline) kartalar tashqarisida taqiqlangan!
+══════════════════════════════════════════════════════════════════════════════ */
+@layer components {
+  /* Standart kontent kartasi */
+  .app-card {
+    @apply rounded-2xl bg-pcard shadow-xs;
+  }
+  /* Bosiladigan interaktiv karta (hover/active silliq harakat bilan) */
+  .app-card-interactive {
+    @apply rounded-2xl bg-pcard shadow-xs transition-all duration-[120ms] ease-out hover:bg-psurface active:scale-[0.99] cursor-pointer;
+  }
+  /* Pastdan chiquvchi toza BottomSheet */
+  .app-sheet {
+    @apply rounded-t-sheet bg-pcard shadow-2xl;
+  }
+  /* Markaziy suzuvchi dialog/modal */
+  .app-modal {
+    @apply rounded-3xl bg-pcard shadow-2xl;
+  }
+  /* Kichik micro-chip / badge */
+  .app-chip {
+    @apply rounded-xl bg-psurface text-pfg shadow-2xs;
+  }
+}

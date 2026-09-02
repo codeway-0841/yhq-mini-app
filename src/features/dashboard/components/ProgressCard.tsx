@@ -116,15 +116,20 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
               setShowSubjects(true)
             }}
             className={cn(
-              'inline-flex h-7 items-center gap-1.5 rounded-xl bg-black/30 px-2.5 text-[11.5px] font-semibold text-white backdrop-blur-sm shadow-2xs',
-              'transition-[background-color,transform] duration-[120ms] ease-out hover:bg-black/45 active:scale-[0.97]',
+              'inline-flex h-8 items-center gap-1.5 rounded-xl bg-black/40 pl-1.5 pr-2.5 text-[12px] font-semibold text-white backdrop-blur-md shadow-2xs',
+              'transition-[background-color,transform] duration-[120ms] ease-out hover:bg-black/55 active:scale-[0.97]',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white'
             )}
             aria-label={tt('subjectSelect')}
           >
-            <subject.icon size={14} strokeWidth={1.75} className="shrink-0 text-white/90" />
-            <span className="max-w-[120px] truncate">{subject.name}</span>
-            <ChevronDown size={12} strokeWidth={1.75} className="text-white/70" />
+            <span
+              className="flex size-5 shrink-0 items-center justify-center rounded-lg text-white shadow-xs"
+              style={{ backgroundColor: subject.color }}
+            >
+              <subject.icon size={12} strokeWidth={2.5} />
+            </span>
+            <span className="max-w-[130px] truncate font-bold">{subject.name}</span>
+            <ChevronDown size={13} strokeWidth={2} className="text-white/80" />
           </button>
         </div>
 

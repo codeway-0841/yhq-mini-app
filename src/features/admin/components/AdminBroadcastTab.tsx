@@ -377,7 +377,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               key={i}
               type="button"
               onClick={() => applyTemplate(tpl)}
-              className="px-3 py-1.5 rounded-xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-all flex-shrink-0"
+              className="px-3 py-1.5 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-all flex-shrink-0 shadow-2xs"
             >
               {tpl.icon}
               <span>{tpl.title}</span>
@@ -409,7 +409,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                   key={em}
                   type="button"
                   onClick={() => insertEmoji(em)}
-                  className="px-2 py-1 rounded-lg bg-psurface border border-pline text-xs hover:scale-110 active:scale-95 transition-all"
+                  className="px-2 py-1 rounded-lg bg-psurface text-xs hover:scale-110 active:scale-95 transition-all shadow-2xs"
                 >
                   {em}
                 </button>
@@ -478,7 +478,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -545,7 +545,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
           </div>
 
           {/* Test Send Input */}
-          <div className="p-3 rounded-2xl bg-psurface border border-pline space-y-2">
+          <div className="p-3 rounded-2xl bg-psurface space-y-2 shadow-xs">
             <label className="text-[11px] font-semibold text-pmuted flex items-center gap-1.5">
               <FlaskConical size={12} strokeWidth={1.75} />
               Avval o'zingizga test qilib yuboring:
@@ -562,7 +562,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 type="button"
                 disabled={sending || !text.trim() || !testTgId.trim()}
                 onClick={handleSendTest}
-                className="px-3 py-2 rounded-xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 disabled:opacity-40 transition-all whitespace-nowrap flex items-center gap-1"
+                className="px-3 py-2 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 disabled:opacity-40 transition-all whitespace-nowrap flex items-center gap-1 shadow-2xs"
               >
                 {sending ? <Loader2 size={13} className="motion-safe:animate-spin" /> : <Send size={13} />}
                 <span>Test</span>
@@ -625,7 +625,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
 
       {/* Execution Results Summary */}
       {result && (
-        <div className="p-4 rounded-2xl bg-psurface border border-pline space-y-2 animate-premiumIn">
+        <div className="p-4 rounded-2xl bg-psurface space-y-2 animate-premiumIn shadow-xs">
           <h4 className="text-xs font-semibold text-pfg flex items-center gap-2">
             <CheckCircle2 size={16} className="text-pprimary" />
             <span>Xabarnoma yuborildi!</span>
@@ -698,7 +698,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       {/* Confirmation Modal */}
       {confirmOpen && (
         <DialogOverlay onClose={() => setConfirmOpen(false)} position="center" zIndex={60} labelId="broadcast-confirm-title" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-2xl bg-psurface border border-pline p-5 space-y-4 shadow-2xl text-center relative">
+          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 space-y-4 shadow-2xl text-center relative">
             <div className="w-14 h-14 rounded-2xl bg-ppurple/20 border border-ppurple/40 flex items-center justify-center mx-auto text-ppurple">
               <Send size={26} />
             </div>

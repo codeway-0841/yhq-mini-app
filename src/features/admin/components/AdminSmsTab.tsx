@@ -192,5 +192,5 @@ function StatusBadge({ status }: { status: AdminSmsCampaign['status'] }) {
   if (status === 'sending') {
     return <span className="text-[10px] font-semibold text-pwarning bg-pwarning/10 border border-pwarning/30 px-2 py-1 rounded-full flex items-center gap-1"><Clock size={10} /> Yuborilmoqda</span>
   }
-  return <span className="text-[10px] font-semibold text-pmuted bg-psurface border border-pline px-2 py-1 rounded-full">Draft</span>
+  return <span className="text-[10px] font-semibold text-pmuted bg-psurface px-2.5 py-1 rounded-full shadow-2xs">Draft</span>
 }

@@ -225,7 +225,7 @@ export default function BulkImportModal({
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-2xl bg-psurface border border-pline p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+      <div className="relative w-full max-w-lg rounded-3xl bg-pcard p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-pline">
           <div>
@@ -241,7 +241,7 @@ export default function BulkImportModal({
           <button
             onClick={onClose}
             aria-label="Yopish"
-            className="w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg"
+            className="w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
           >
             <X size={16} />
           </button>
@@ -399,7 +399,7 @@ export default function BulkImportModal({
                     className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold transition-all ${
                       filterTab === 'all'
                         ? 'bg-fg text-bg'
-                        : 'bg-psurface border border-pline text-pmuted hover:text-pfg'
+                        : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
                     }`}
                   >
                     Barchasi ({parsedList.length})
@@ -548,7 +548,7 @@ export default function BulkImportModal({
       {/* In-Modal Single Question Edit Popup (nested overlay: Escape faqat shuni yopadi) */}
       {editingItem && (
         <DialogOverlay onClose={() => setEditingItem(null)} position="center" zIndex={60} labelId="bulk-edit-title" backdropClassName="bg-black/85 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-2xl bg-psurface border border-pline p-5 space-y-3 shadow-2xl relative">
+          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 space-y-3 shadow-2xl relative">
             <div className="flex items-center justify-between">
               <h3 id="bulk-edit-title" className="text-sm font-semibold text-pfg">Savolni tahrirlash</h3>
               <button onClick={() => setEditingItem(null)} aria-label="Yopish" className="p-1 text-pmuted">
@@ -568,7 +568,7 @@ export default function BulkImportModal({
                   })
                 }
                 rows={3}
-                className="w-full bg-psurface border border-pline rounded-xl p-2 text-xs text-pfg"
+                className="w-full bg-psurface rounded-xl p-2 text-xs text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none"
               />
             </div>
 
@@ -590,7 +590,7 @@ export default function BulkImportModal({
                       })
                     }}
                     placeholder={`Variant ${key}`}
-                    className="flex-1 bg-psurface border border-pline rounded-xl px-2.5 py-1.5 text-xs text-pfg"
+                    className="flex-1 bg-psurface rounded-xl px-2.5 py-1.5 text-xs text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none"
                   />
                   <button
                     type="button"

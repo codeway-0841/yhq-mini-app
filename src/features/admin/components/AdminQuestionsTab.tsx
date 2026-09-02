@@ -115,14 +115,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           <button
             onClick={refresh}
             disabled={busy}
-            className="p-2.5 rounded-2xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-transform"
+            className="p-2.5 rounded-2xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-transform shadow-xs"
             title="Yangilash"
           >
             <RotateCw size={14} className={busy ? 'motion-safe:animate-spin text-ppurple' : ''} />
           </button>
           <button
             onClick={() => setBulkImporting(true)}
-            className="px-3 py-2.5 rounded-2xl bg-psurface border border-pline text-xs font-semibold text-pfg hover:border-ppurple active:scale-95 transition-all flex items-center gap-1"
+            className="px-3 py-2.5 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 transition-all flex items-center gap-1 shadow-xs"
             title="Ommaviy yuklash"
           >
             <Upload size={14} className="text-ppurple" />
@@ -152,11 +152,12 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               }}
               className={`px-3.5 py-2.5 rounded-2xl text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-all flex-shrink-0 ${
                 isSelected
-                  ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
-                  : 'bg-psurface border border-pline text-pmuted hover:text-pfg'
+                  ? 'text-white shadow-md scale-[1.02]'
+                  : 'bg-psurface text-pmuted hover:text-pfg shadow-xs'
               }`}
+              style={isSelected ? { backgroundColor: sub.color } : undefined}
             >
-              <sub.icon size={14} strokeWidth={1.75} style={{ color: isSelected ? undefined : sub.color }} />
+              <sub.icon size={14} strokeWidth={2} style={{ color: isSelected ? '#ffffff' : sub.color }} />
               <span>{lang === 'ru' ? sub.nameRu : sub.name}</span>
             </button>
           )
@@ -490,37 +491,37 @@ function QuestionForm({
           <div>
             <label className="text-[11px] font-semibold text-pmuted uppercase">Savol matni (UZ)</label>
             <textarea required value={form.questionUz} onChange={(e) => setForm({ ...form, questionUz: e.target.value })}
-              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
+              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none" />
           </div>
           <div>
             <label className="text-[11px] font-semibold text-pmuted uppercase">Savol matni (RU)</label>
             <textarea required value={form.questionRu} onChange={(e) => setForm({ ...form, questionRu: e.target.value })}
-              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none" />
+              rows={3} className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none" />
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Variantlar UZ (JSON)</label>
               <textarea required value={form.optionsUz} onChange={(e) => setForm({ ...form, optionsUz: e.target.value })}
-                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
+                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none" />
             </div>
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Variantlar RU (JSON)</label>
               <textarea required value={form.optionsRu} onChange={(e) => setForm({ ...form, optionsRu: e.target.value })}
-                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg border border-pline focus:border-ppurple outline-none" />
+                rows={6} className="w-full bg-psurface rounded-xl p-2 font-mono text-[11px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">To'g'ri javob</label>
               <select value={form.correctAnswer} onChange={(e) => setForm({ ...form, correctAnswer: e.target.value })}
-                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none">
                 <option>F1</option><option>F2</option><option>F3</option><option>F4</option>
               </select>
             </div>
             <div>
               <label className="text-[11px] font-semibold text-pmuted uppercase">Mavzu</label>
               <select value={form.topicId ?? ''} onChange={(e) => setForm({ ...form, topicId: e.target.value ? Number(e.target.value) : null })}
-                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none">
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none">
                 <option value="">——</option>
                 {topics.map((t) => (
                   <option key={t.id} value={t.id}>{lang === 'ru' ? t.nameRu : t.nameUz}</option>
@@ -536,7 +537,7 @@ function QuestionForm({
                 <ImageIcon size={13} className="text-pblue" />
                 <span>Savol rasmi (ixtiyoriy)</span>
               </label>
-              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-lg border border-pline text-[10px] font-semibold">
+              <div className="flex items-center gap-1 bg-psurface p-0.5 rounded-lg text-[10px] font-semibold shadow-2xs">
                 <button
                   type="button"
                   onClick={() => setImageMode('upload')}
@@ -590,7 +591,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-xl bg-psurface border border-pline text-pmuted hover:text-pfg active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -622,7 +623,7 @@ function QuestionForm({
                 value={form.image}
                 onChange={(e) => setForm({ ...form, image: e.target.value })}
                 placeholder="https://... yoki images/q001.jpg"
-                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg border border-pline focus:border-ppurple outline-none"
+                className="w-full bg-psurface rounded-xl p-2.5 text-[13px] text-pfg shadow-2xs focus:ring-1 focus:ring-ppurple outline-none"
               />
             )}
           </div>
