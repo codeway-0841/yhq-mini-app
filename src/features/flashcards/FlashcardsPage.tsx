@@ -119,7 +119,7 @@ export default function FlashcardsPage() {
             const catName = isRu ? (c.nameRu || c.name) : c.name
             return (
               <button key={c.id} onClick={() => start(c)}
-                className="rounded-container border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-transform">
+                className="rounded-2xl border border-pline bg-pcard w-full flex items-center gap-3.5 p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
                 <div className="flex size-10 shrink-0 items-center justify-center text-pmuted">
                   <Icon size={22} strokeWidth={1.75} />
                 </div>
@@ -204,8 +204,8 @@ export default function FlashcardsPage() {
           className="flip-card w-full max-w-[320px] aspect-[3/4] text-left select-none">
           <div className={`flip-inner ${flipped ? 'flipped' : ''}`}>
             {/* OLD TOMON — belgi rasmi */}
-            <div className="flip-face rounded-container border border-pline bg-pcard rounded-[28px] p-6 flex flex-col items-center justify-center gap-4">
-              <div className="w-40 h-40 rounded-container bg-white flex items-center justify-center">
+            <div className="flip-face rounded-3xl bg-pcard p-6 flex flex-col items-center justify-center gap-4 shadow-xl border border-pline/40">
+              <div className="w-40 h-40 rounded-2xl bg-white flex items-center justify-center shadow-xs">
                 {current.image
                   ? <img src={current.image} alt={currentName} className="w-32 h-32 object-contain" />
                   : <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />}
@@ -215,8 +215,7 @@ export default function FlashcardsPage() {
               </p>
             </div>
             {/* ORQA TOMON — nom + tavsif */}
-            <div className="flip-face flip-back rounded-container border border-pline bg-pcard rounded-[28px] p-6 flex flex-col justify-center"
-              style={{ borderColor: 'rgb(var(--p-primary-rgb) / 0.35)' }}>
+            <div className="flip-face flip-back rounded-3xl bg-pcard p-6 flex flex-col justify-center shadow-xl border border-pprimary/30">
               <p className="text-[17px] font-semibold text-pfg leading-snug mb-2">{currentName}</p>
               <p className="text-[11px] font-semibold text-ppurple mb-3">{currentLegalRef}</p>
               <p className="text-[12.5px] text-pmuted leading-relaxed">{currentDesc}</p>
@@ -228,13 +227,12 @@ export default function FlashcardsPage() {
       {/* Boshqaruv */}
       <div className="flex gap-3 px-6">
         <button onClick={() => mark(false)}
-          className="bg-psurface border border-plineStrong text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-[transform,border-color,background-color] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center gap-2.5 flex-1 h-[54px] rounded-container font-semibold text-[14px] justify-center text-pdanger"
-          style={{ borderColor: 'rgba(239, 68, 68, 0.4)' }}>
+          className="bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-2.5 flex-1 h-[54px] rounded-2xl font-semibold text-[14px] justify-center text-pdanger shadow-xs">
           <X size={17} />
           {isRu ? 'Не знал' : 'Bilmadim'}
         </button>
         <button onClick={() => mark(true)}
-          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex items-center justify-center gap-2 flex-[1.3] h-[54px] rounded-container font-semibold text-[14px]">
+          className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-all flex items-center justify-center gap-2 flex-[1.3] h-[54px] rounded-2xl font-semibold text-[14px] shadow-xs">
           <Check size={17} />
           {isRu ? 'Знаю' : 'Bilaman'}
         </button>

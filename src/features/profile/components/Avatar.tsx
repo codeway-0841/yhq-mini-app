@@ -38,7 +38,7 @@ export function Avatar({
     <div
       onClick={onEditPhoto}
       className={cn(
-        'relative flex items-center justify-center overflow-hidden rounded-full border border-pline bg-pwash font-display font-bold text-pprimary shrink-0 select-none transition-transform',
+        'relative flex items-center justify-center overflow-hidden rounded-full bg-pwash font-display font-bold text-pprimary shrink-0 select-none transition-transform shadow-xs',
         onEditPhoto && 'cursor-pointer active:scale-95',
         sizeClass,
         className,

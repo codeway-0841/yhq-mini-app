@@ -7,7 +7,7 @@ export function Section({ title, children }: { title: string; children: React.Re
   return (
     <div className="mb-6">
       <p className="mb-2 px-5 text-[10px] font-semibold uppercase tracking-[0.12em] text-psubtle">{title}</p>
-      <div className="mx-5 overflow-hidden rounded-container border border-pline bg-pcard divide-y divide-pline">
+      <div className="mx-5 overflow-hidden rounded-2xl border border-pline bg-pcard divide-y divide-pline shadow-xs">
         {children}
       </div>
     </div>

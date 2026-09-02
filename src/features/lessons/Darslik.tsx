@@ -83,7 +83,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
           gesture bar/home indicator ostida qolmasligi uchun bazaviy 24px + inset */}
       <div className="flex-1 overflow-y-auto px-4 py-4 pb-[calc(1.5rem+var(--safe-bottom,0px))]">
         {/* Video Player / HD Karta */}
-        <div className="rounded-container bg-psurface border border-pline aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
+        <div className="rounded-2xl bg-psurface aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
           {videoInfo?.vimeoId && isPlaying ? (
             <iframe
               src={`https://player.vimeo.com/video/${videoInfo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
@@ -144,7 +144,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
 
         {/* Mavzu bo'yicha mashq kartasi */}
         <button onClick={() => onPractice(idx)}
-          className="w-full rounded-container border border-pline bg-psurface p-4 text-left active:scale-[0.98] transition-transform">
+          className="w-full rounded-2xl bg-pcard p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
           <p className="text-sm font-semibold flex items-center gap-2 mb-1">
             <Dumbbell size={16} className="text-pprimary" />
             {ru ? 'Практика по теме' : "Mavzu bo'yicha mashq"}
@@ -207,7 +207,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
   })()
 
   return (
-    <div className="rounded-container border border-pline bg-pcard p-4">
+    <div className="rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
       {/* Modul sarlavhasi */}
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
@@ -223,7 +223,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
             </p>
           </div>
         </div>
-        <span className="flex-none rounded-control border border-plineStrong bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
+        <span className="flex-none rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
           {doneList.length}/{total}
         </span>
       </div>
@@ -365,7 +365,7 @@ export default function Darslik() {
             {ru ? 'Учебник' : 'Darslik'}
           </h1>
         </div>
-        <span className="flex items-center gap-1.5 rounded-control border border-plineStrong bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
+        <span className="flex items-center gap-1.5 rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
           <GraduationCap size={13} strokeWidth={1.75} className="text-psubtle" />
           {totalDone}/{TOTAL_LESSONS}
         </span>

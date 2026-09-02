@@ -60,7 +60,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           {tt('seeAll')} <ChevronRight size={14} strokeWidth={1.75} />
         </button>
       </div>
-      <div className="divide-y divide-pline overflow-hidden rounded-container border border-pline bg-pcard">
+      <div className="divide-y divide-pline overflow-hidden rounded-2xl border border-pline bg-pcard shadow-xs">
         {entries.map((e) => (
           <div
             key={e.rank}
@@ -71,7 +71,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
             <span className="w-5 shrink-0 text-center text-[13px] font-semibold tabular-nums text-psubtle">
               {e.rank}
             </span>
-            <div className="flex size-8 shrink-0 items-center justify-center rounded-[10px] border border-pline bg-psurface text-[11px] font-bold text-pmuted">
+            <div className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-psurface text-[11px] font-bold text-pmuted shadow-xs">
               {e.name[0]?.toUpperCase() ?? '?'}
             </div>
             <span className={cn('min-w-0 flex-1 truncate text-[13px] font-semibold', e.isYou ? 'text-pprimary' : 'text-pfg')}>

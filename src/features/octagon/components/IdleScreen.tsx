@@ -23,10 +23,10 @@ interface IdleScreenProps {
 }
 
 function getDuelRank(wins: number, tt: ReturnType<typeof import('../../../shared/i18n')['useT']>): { title: string; color: string } {
-  if (wins >= 30) return { title: tt('duelRankChampion'), color: 'text-amber-500 bg-amber-500/10 border-amber-500/30' }
-  if (wins >= 15) return { title: tt('duelRankGladiator'), color: 'text-purple-400 bg-purple-500/10 border-purple-500/30' }
-  if (wins >= 5)  return { title: tt('duelRankFighter'),   color: 'text-blue-400 bg-blue-500/10 border-blue-500/30' }
-  return { title: tt('duelRankNovice'), color: 'text-pmuted bg-psurface border-pline' }
+  if (wins >= 30) return { title: tt('duelRankChampion'), color: 'text-amber-500 bg-amber-500/15' }
+  if (wins >= 15) return { title: tt('duelRankGladiator'), color: 'text-purple-400 bg-purple-500/15' }
+  if (wins >= 5)  return { title: tt('duelRankFighter'),   color: 'text-blue-400 bg-blue-500/15' }
+  return { title: tt('duelRankNovice'), color: 'text-pmuted bg-psurface' }
 }
 
 function formatRelativeTime(ts: number, lang: 'uz' | 'ru'): string {
@@ -203,7 +203,7 @@ export function IdleScreen({
               </div>
               <div className="rounded-[20px] border border-pline bg-pcard p-3.5 text-center shadow-xs flex flex-col justify-center items-center">
                 <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{language === 'ru' ? 'Ранг' : 'Unvon'}</span>
-                <span className={cn('px-2.5 py-0.5 rounded-full border text-[11px] font-extrabold truncate max-w-full', rankInfo.color)}>
+                <span className={cn('px-2.5 py-0.5 rounded-full text-[11px] font-extrabold truncate max-w-full', rankInfo.color)}>
                   {rankInfo.title}
                 </span>
               </div>

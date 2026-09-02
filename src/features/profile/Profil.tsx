@@ -160,7 +160,7 @@ export default function Profil() {
       </header>
 
       {/* ── Gorizontal Profil Kartasi ── */}
-      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4 transition-all duration-150">
+      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-2xl border border-pline bg-pcard p-4 transition-all duration-150 shadow-xs">
         {/* Avatar (chapda) */}
         <Avatar
           name={name}

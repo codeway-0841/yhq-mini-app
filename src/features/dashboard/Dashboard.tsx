@@ -308,7 +308,7 @@ export default function Dashboard() {
           </div>
 
           {/* 8. Premium Banner */}
-          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-container border border-pline bg-pcard p-4">
+          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-2xl border border-pline bg-pcard p-4 shadow-xs">
             <PremiumIcon size={22} className="shrink-0 text-pmuted" />
             <div className="min-w-0 flex-1">
               <p className="text-[13.5px] font-semibold text-pfg">Premium</p>
