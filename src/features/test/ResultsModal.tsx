@@ -223,7 +223,7 @@ export default function ResultsModal({
               className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-semibold transition-all active:scale-90 ${
                 r.status === 'correct'   ? 'bg-pprimary text-ponprimary' :
                 r.status === 'incorrect' ? 'bg-pdanger text-white'   :
-                r.status === 'pending'   ? 'bg-pblue/20 border border-pblue text-pblue' :
+                r.status === 'pending'   ? 'bg-pblue/20 text-pblue ring-1 ring-pblue/50' :
                                            'bg-psurface text-pmuted'
               }`}>
               {i + 1}

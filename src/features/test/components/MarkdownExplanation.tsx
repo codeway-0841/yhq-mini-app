@@ -226,7 +226,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void,
               e.stopPropagation()
               onSignClick(code)
             }}
-            className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-control bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] border border-blue-500/35 hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-xs"
+            className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-xl bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-2xs"
             title={`${label} — ma'lumotlarini ko'rish`}
           >
             {sign?.image ? (
@@ -306,7 +306,7 @@ function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, 
             e.stopPropagation()
             onSignClick(code)
           }}
-          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-control bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] border border-blue-500/35 hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-xs"
+          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 mx-1 my-0.5 rounded-xl bg-blue-500/15 text-blue-500 dark:text-blue-400 font-semibold text-[13px] hover:bg-blue-500/25 active:scale-95 transition-all cursor-pointer align-baseline shadow-2xs"
           title={`${label} — ma'lumotlarini ko'rish`}
         >
           {sign.image ? (

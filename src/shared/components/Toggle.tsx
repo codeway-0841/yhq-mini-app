@@ -22,7 +22,7 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
       aria-label={label ?? 'Toggle'}
       onClick={() => { playSound('toggle'); onChange(!checked) }}
       className={`relative flex-none ${trackCls} rounded-full transition-colors duration-200 ${
-        checked ? 'bg-pprimary' : 'bg-elevated border border-line'
+        checked ? 'bg-pprimary' : 'bg-pline/80 dark:bg-psurface'
       }`}
     >
       <span

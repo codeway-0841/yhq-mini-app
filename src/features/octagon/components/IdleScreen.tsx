@@ -428,7 +428,7 @@ export function IdleScreen({
                       setPinError(null)
                     }}
                     placeholder={tt('pinInputPlaceholder')}
-                    className="w-full h-12 px-4 rounded-control bg-psurface border border-pline focus:border-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-psubtle/40 focus:outline-none transition-colors"
+                    className="w-full h-12 px-4 rounded-2xl bg-psurface focus:ring-2 focus:ring-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-psubtle/40 focus:outline-none transition-colors shadow-xs"
                     autoFocus
                   />
                   {pinError && <p className="text-[11px] font-bold text-pdanger text-center">{pinError}</p>}
@@ -438,7 +438,7 @@ export function IdleScreen({
                   type="button"
                   onClick={handleJoinPin}
                   disabled={!inputPin.trim()}
-                  className="w-full h-11 rounded-control bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
+                  className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
                 >
                   <KeyRound size={16} />
                   <span>{tt('joinRoomBtn')}</span>

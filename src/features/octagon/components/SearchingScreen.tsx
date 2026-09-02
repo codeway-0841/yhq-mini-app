@@ -48,7 +48,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
 
       {/* Duel kutilmoqda — PIN va link ulashish */}
       {duelCode && (
-        <div className="w-full rounded-2xl bg-psurface border border-[rgb(var(--p-purple-rgb)/0.30)] p-4 flex flex-col items-center gap-3 shadow-sm">
+        <div className="w-full rounded-2xl bg-psurface p-4 flex flex-col items-center gap-3 shadow-md">
           {formattedPin && (
             <div className="w-full text-center space-y-1">
               <span className="text-[10px] font-bold text-pmuted uppercase tracking-wider">{tt('yourRoomPin')}</span>
@@ -63,7 +63,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
               <button
                 type="button"
                 onClick={handleCopyPin}
-                className="flex-1 py-2 px-3 rounded-xl bg-pcard border border-pline hover:border-ppurple text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="flex-1 py-2 px-3 rounded-xl bg-pcard text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
@@ -73,7 +73,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel }: {
               <button
                 type="button"
                 onClick={() => shareUrl(duelLink, `Kel, bilimlar jangida bellashamiz! 🤺 PIN: ${cleanPin || duelCode}`)}
-                className="flex-1 py-2 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="flex-1 py-2 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
               >
                 <Share2 size={14} />
                 <span>{tt('shareInviteBtn')}</span>

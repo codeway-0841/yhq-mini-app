@@ -418,7 +418,7 @@ export default function SubscriptionModal({
               {/* Success Screen */}
               {isSuccess ? (
                 <div className="py-8 text-center space-y-4">
-                  <div className="size-16 rounded-full border border-psuccess/40 bg-psuccess/15 text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
+                  <div className="size-16 rounded-full bg-psuccess/15 text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
                     <CheckCircle2 size={34} />
                   </div>
                   <div>
@@ -623,7 +623,7 @@ export default function SubscriptionModal({
 
                   {/* Error message */}
                   {errorMsg && (
-                    <div className="p-3.5 rounded-2xl bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
+                    <div className="p-3.5 rounded-2xl bg-pdanger/10 text-pdanger text-xs flex items-center gap-2 shadow-xs">
                       <AlertCircle size={15} className="shrink-0" />
                       <span>{errorMsg}</span>
                     </div>

@@ -121,7 +121,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
             <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg mb-4">
               {tt('viaSms')}
             </p>
-            <div className="mb-4 flex items-center gap-2 rounded-control border border-pline bg-pcanvas px-3.5 focus-within:border-pprimary">
+            <div className="mb-4 flex items-center gap-2 rounded-2xl bg-pcard px-3.5 focus-within:ring-2 focus-within:ring-pprimary shadow-xs">
               <span className="text-pmuted font-semibold select-none">+998</span>
               <input
                 value={phone.digits}
@@ -172,7 +172,7 @@ export function NameEditSheet({ current, onClose, onSave }: {
           maxLength={32}
           placeholder={tt('yourNamePlaceholder')}
           autoFocus
-          className="w-full bg-pcanvas border border-pline rounded-control px-4 py-3 text-sm text-pfg outline-none mb-4 focus:border-pprimary"
+          className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-sm text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
         />
         <Button block onClick={() => { onSave(name); onClose() }}>
           {tt('saveBtn')}

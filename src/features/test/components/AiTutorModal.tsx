@@ -195,7 +195,7 @@ export default function AiTutorModal({
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-            <div className="w-9 h-9 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
+            <div className="size-9 rounded-xl bg-pwarning/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
               <Info size={17} className="text-pwarning" />
             </div>
             <p id="static-title" className="text-[15px] font-semibold text-pfg">{tt('staticExplainTitle')}</p>
@@ -241,7 +241,7 @@ export default function AiTutorModal({
         >
           <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-            <div className="w-9 h-9 rounded-control bg-ppurple/15 border border-ppurple/40 flex items-center justify-center flex-shrink-0">
+            <div className="size-9 rounded-xl bg-ppurple/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
               <GraduationCap size={17} className="text-ppurple" />
             </div>
             <p id="ai-title" className="text-[15px] font-semibold text-pfg">AI Tutor</p>

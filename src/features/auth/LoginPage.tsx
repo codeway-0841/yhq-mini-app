@@ -388,8 +388,8 @@ export default function LoginPage() {
                   key={m}
                   type="button"
                   onClick={() => { setMethod(m); setError(null); }}
-                  className={`flex-1 py-1.5 rounded-lg text-[12px] font-semibold transition-colors ${
-                    method === m ? 'bg-psurface border border-pprimary text-pprimary' : 'text-pmuted border border-pline'
+                  className={`flex-1 py-1.5 rounded-xl text-[12px] font-semibold transition-all shadow-xs ${
+                    method === m ? 'bg-pprimary/15 ring-1 ring-pprimary text-pprimary' : 'text-pmuted bg-psurface/40 hover:bg-psurface'
                   }`}
                 >
                   {m === 'phone' ? tt('authPhone') : 'Email'}

@@ -160,7 +160,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
       <span id="image-zoom-title" className="sr-only">{alt}</span>
       <div className="w-full flex items-center justify-between text-white z-10" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center gap-2">
-          <span className="text-xs font-bold bg-white/10 border border-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+          <span className="text-xs font-bold bg-white/15 px-3 py-1 rounded-full backdrop-blur-md shadow-xs">
             🔍 {Math.round(scale * 100)}%
           </span>
           <span className="text-[11px] text-white/60 hidden sm:inline">
@@ -170,7 +170,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
 
         <button
           onClick={onClose}
-          className="p-2.5 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 active:scale-95 transition-all shadow-lg"
+          className="p-2.5 rounded-full bg-white/15 text-white hover:bg-white/25 active:scale-95 transition-all shadow-lg"
           aria-label="Yopish"
         >
           <X size={20} />
@@ -202,7 +202,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
 
       {/* Bottom Floating Control Bar */}
       <div
-        className="flex items-center gap-2 bg-white/15 backdrop-blur-xl border border-white/25 px-4 py-2 rounded-2xl shadow-2xl z-10 mb-2"
+        className="flex items-center gap-2 bg-black/60 backdrop-blur-xl px-4 py-2 rounded-2xl shadow-2xl z-10 mb-2"
         onClick={(e) => e.stopPropagation()}
       >
         <button

@@ -109,14 +109,14 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
               ) : null}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
               <div className="relative z-10 flex flex-col items-center gap-2 px-4 text-center">
-                <div className="grid size-14 place-items-center rounded-full border border-white/30 bg-black/60 backdrop-blur-sm shadow-lg transition-transform group-hover:scale-110 group-active:scale-95">
+                <div className="grid size-14 place-items-center rounded-full bg-black/60 backdrop-blur-md shadow-xl transition-transform group-hover:scale-110 group-active:scale-95">
                   <Play size={24} strokeWidth={2} className="ml-0.5 text-white" />
                 </div>
                 <p className="text-sm font-semibold text-white/95 line-clamp-1 drop-shadow-sm">
                   {ru ? lesson.titleRu : lesson.titleUz}
                 </p>
                 {videoInfo?.vimeoId && (
-                  <span className="text-[11px] font-medium text-white/80 px-2.5 py-0.5 rounded-full bg-white/15 backdrop-blur-xs border border-white/20">
+                  <span className="text-[11px] font-medium text-white/90 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-xs shadow-2xs">
                     {ru ? 'Смотреть HD видеоурок' : 'HD video darsni ko‘rish'}
                   </span>
                 )}

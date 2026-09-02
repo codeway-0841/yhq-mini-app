@@ -215,7 +215,7 @@ export default function FlashcardsPage() {
               </p>
             </div>
             {/* ORQA TOMON — nom + tavsif */}
-            <div className="flip-face flip-back rounded-3xl bg-pcard p-6 flex flex-col justify-center shadow-xl border border-pprimary/30">
+            <div className="flip-face flip-back rounded-3xl bg-pcard p-6 flex flex-col justify-center shadow-xl">
               <p className="text-[17px] font-semibold text-pfg leading-snug mb-2">{currentName}</p>
               <p className="text-[11px] font-semibold text-ppurple mb-3">{currentLegalRef}</p>
               <p className="text-[12.5px] text-pmuted leading-relaxed">{currentDesc}</p>

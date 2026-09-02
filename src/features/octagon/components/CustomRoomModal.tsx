@@ -135,7 +135,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               <button
                 type="button"
                 onClick={handleCopyPin}
-                className="py-2.5 px-3 rounded-xl bg-pcard border border-pline hover:border-ppurple text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="py-2.5 px-3 rounded-xl bg-pcard text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
@@ -143,7 +143,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               <button
                 type="button"
                 onClick={handleShare}
-                className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue border border-[rgb(var(--p-blue-rgb)/0.30)] text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all"
+                className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
               >
                 <Share2 size={14} />
                 <span>{tt('shareInviteBtn')}</span>
@@ -176,7 +176,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
                   setErrorMsg(null)
                 }}
                 placeholder={tt('pinInputPlaceholder')}
-                className="w-full px-4 py-3 rounded-2xl bg-pcard border border-pline focus:border-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-pmuted/40 focus:outline-none transition-colors"
+                className="w-full px-4 py-3 rounded-2xl bg-pcard focus:ring-2 focus:ring-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-pmuted/40 focus:outline-none transition-colors shadow-xs"
                 autoFocus
               />
               {errorMsg && <p className="text-[11px] font-bold text-pdanger text-center">{errorMsg}</p>}

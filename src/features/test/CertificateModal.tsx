@@ -224,7 +224,7 @@ export default function CertificateModal({ score, total, percent, sample = false
 
         {/* Bot Sent Success Alert */}
         {botSentSuccess && (
-          <div className="w-full bg-pprimary/15 border border-pprimary/40 rounded-container p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn">
+          <div className="w-full bg-pprimary/15 rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn shadow-xs">
             <p className="text-xs font-semibold text-pprimary mb-1">
               {tt('certSentSuccess')}
             </p>

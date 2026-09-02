@@ -61,7 +61,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="exam-review-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-xl bg-psurface border border-pline rounded-container max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+      <div className="relative w-full max-w-xl bg-psurface rounded-2xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
         {/* Header */}
         <div className="p-4 border-b border-pline flex items-center justify-between bg-card/60">
           <div>
@@ -87,9 +87,9 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           <button
             type="button"
             onClick={() => setFilter('mistakes')}
-            className={`flex-1 py-2 rounded-control text-xs font-semibold transition-all ${
+            className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
               filter === 'mistakes'
-                ? 'bg-pdanger/15 text-pdanger border border-pdanger/40 shadow-sm'
+                ? 'bg-pdanger/15 text-pdanger shadow-xs'
                 : 'text-pmuted hover:bg-psurface'
             }`}
           >
@@ -98,9 +98,9 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           <button
             type="button"
             onClick={() => setFilter('all')}
-            className={`flex-1 py-2 rounded-control text-xs font-semibold transition-all ${
+            className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
               filter === 'all'
-                ? 'bg-pprimary/15 text-pprimary border border-pprimary/40 shadow-sm'
+                ? 'bg-pprimary/15 text-pprimary shadow-xs'
                 : 'text-pmuted hover:bg-psurface'
             }`}
           >
@@ -127,14 +127,14 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
               return (
                 <div
                   key={q.id}
-                  className={`rounded-container border p-4 bg-card transition-all ${
+                  className={`rounded-2xl p-4 bg-pcard shadow-xs transition-all ${
                     item.status === 'correct'
-                      ? 'border-pprimary/30'
+                      ? 'ring-1 ring-pprimary/30'
                       : item.status === 'incorrect'
-                      ? 'border-pdanger/40 bg-pdanger/[0.02]'
+                      ? 'ring-1 ring-pdanger/40 bg-pdanger/[0.02]'
                       : item.status === 'pending'
-                      ? 'border-pblue/40 bg-pblue/[0.02]'
-                      : 'border-pline'
+                      ? 'ring-1 ring-pblue/40 bg-pblue/[0.02]'
+                      : ''
                   }`}
                 >
                   {/* Top Bar */}
@@ -147,7 +147,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       {item.status === 'unanswered' && <HelpCircle size={13} className="text-psubtle" />}
                     </span>
                     {item.topicName && (
-                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-lg truncate max-w-[200px]">
+                      <span className="text-[11px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-lg truncate max-w-[200px] shadow-2xs">
                         {item.topicName}
                       </span>
                     )}
@@ -165,7 +165,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       className="mb-3 rounded-2xl overflow-hidden bg-black/40 flex justify-center relative group cursor-zoom-in active:scale-[0.99] transition-transform shadow-xs"
                     >
                       <img src={formatImageSrc(q.image)} alt={`Question ${item.index + 1}`} className="max-h-48 object-contain" />
-                      <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+                      <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
                         <ZoomIn size={10} className="text-ppurple" />
                         <span>Kattalashtirish</span>
                       </div>
@@ -173,43 +173,43 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                   )}
 
                   {/* Options List */}
-                  <div className="space-y-1.5 mb-3">
+                  <div className="space-y-1.5 mb-2">
                     {q.options.map((opt, i) => {
                       const isUserChoice = item.selectedOptionId === opt.id
                       const isCorrect = item.correctOptionId === opt.id
 
-                      let borderStyle = 'border-pline bg-psurface/40 text-pfg'
+                      let borderStyle = 'bg-psurface/40 text-pfg shadow-2xs'
                       let badge = null
 
                       if (isCorrect) {
-                        borderStyle = 'border-pprimary/60 bg-pprimary/15 text-pfg font-semibold'
+                        borderStyle = 'ring-1 ring-pprimary/60 bg-pprimary/15 text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pprimary flex items-center gap-1 ml-auto flex-shrink-0">
                             <Check size={12} /> {tt('correctAnswerLabel')}
                           </span>
                         )
                       } else if (isUserChoice && item.status === 'incorrect') {
-                        borderStyle = 'border-pdanger/60 bg-pdanger/15 text-pfg font-semibold'
+                        borderStyle = 'ring-1 ring-pdanger/60 bg-pdanger/15 text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pdanger flex items-center gap-1 ml-auto flex-shrink-0">
                             <X size={12} /> {tt('yourAnswer')}
                           </span>
                         )
                       } else if (isUserChoice && item.status === 'pending') {
-                        borderStyle = 'border-pblue/60 bg-pblue/15 text-pfg font-semibold'
+                        borderStyle = 'ring-1 ring-pblue/60 bg-pblue/15 text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pblue flex items-center gap-1 ml-auto flex-shrink-0">
                             <Clock size={12} /> {language === 'ru' ? 'Ожидает сети' : 'Tarmoq kutilmoqda'}
                           </span>
                         )
                       } else if (isUserChoice) {
-                        borderStyle = 'border-pprimary/40 bg-psurface text-pfg'
+                        borderStyle = 'ring-1 ring-pprimary/40 bg-psurface text-pfg shadow-2xs'
                       }
 
                       return (
                         <div
                           key={opt.id}
-                          className={`p-2.5 rounded-control border text-xs flex items-center gap-2 ${borderStyle}`}
+                          className={`p-2.5 rounded-xl text-xs flex items-center gap-2 ${borderStyle}`}
                         >
                           <span className="size-5 rounded-lg bg-psurface flex items-center justify-center font-semibold text-[10px] flex-shrink-0">
                             {String.fromCharCode(65 + i)}
@@ -254,7 +254,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           <button
             type="button"
             onClick={onClose}
-            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] px-6 py-2.5 rounded-control text-xs font-semibold"
+            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] px-6 py-2.5 rounded-xl text-xs font-semibold shadow-xs"
           >
             {tt('closeResults')}
           </button>

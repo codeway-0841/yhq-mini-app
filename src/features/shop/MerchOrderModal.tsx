@@ -60,12 +60,12 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
 
   return (
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title">
-      <div className="relative w-full max-w-sm bg-pcard rounded-container border border-pline p-5 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)] motion-safe:animate-premiumIn">
+      <div className="relative w-full max-w-sm bg-pcard rounded-2xl p-5 shadow-2xl motion-safe:animate-premiumIn">
         <p id="merch-order-title" className="text-[15px] font-semibold text-center flex items-center justify-center gap-2">
           <Package size={17} className="text-pgold" /> {tt('merchFormTitle')}
         </p>
         {/* Buyum sarlavhasi */}
-        <div className="mt-3 flex items-center gap-3 rounded-container bg-psurface border border-pline p-3">
+        <div className="mt-3 flex items-center gap-3 rounded-2xl bg-psurface p-3.5 shadow-xs">
           {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="shrink-0 text-pgold" /> })()}
           <div className="flex-1 min-w-0">
             <p className="text-[13px] font-semibold truncate">{item.label[lang]}</p>
@@ -75,13 +75,14 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           </div>
         </div>
 
-        <div className="mt-3 flex flex-col gap-2.5">
+        {/* Forma */}
+        <div className="mt-4 space-y-2.5">
           <input
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             placeholder={tt('merchFormName')}
             maxLength={80}
-            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
           />
           <input
             value={phone}
@@ -89,14 +90,14 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             placeholder={tt('merchFormPhone')}
             inputMode="tel"
             maxLength={20}
-            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
           />
           <input
             value={note}
             onChange={(e) => setNote(e.target.value)}
             placeholder={tt('merchFormNote')}
             maxLength={200}
-            className="w-full bg-psurface border border-pline rounded-control px-3.5 py-2.5 text-[13px] font-semibold outline-none focus:border-pprimary/60 transition-colors"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
           />
         </div>
 
@@ -108,13 +109,13 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           <button
             onClick={onClose}
             disabled={busy}
-            className="flex-1 py-2.5 rounded-control text-[13px] font-semibold text-pmuted bg-psurface border border-pline active:scale-[0.97] transition-transform disabled:opacity-50">
+            className="flex-1 py-2.5 rounded-xl text-[13px] font-semibold text-pmuted bg-psurface active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs">
             {tt('merchFormCancel')}
           </button>
           <button
             onClick={submit}
             disabled={busy}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] py-2.5 rounded-control text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60">
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] py-2.5 rounded-xl text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60 shadow-xs">
             {busy ? <Loader2 size={15} className="animate-spin" /> : <CoinIcon size={15} />}
             {tt('merchFormSubmit')}
           </button>

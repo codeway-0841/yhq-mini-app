@@ -12,31 +12,31 @@ export function DuelBanners({ toastMsg, conn, phase, oppWait, onRetry }: {
   return (
     <>
       {toastMsg && (
-        <div className="mx-4 mt-2 bg-pwarning/10 border border-pwarning/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl text-center">
+        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl text-center shadow-xs">
           {toastMsg}
         </div>
       )}
 
       {conn === 'reconnecting' && phase !== 'idle' && (
-        <div className="mx-4 mt-2 bg-pwarning/10 border border-pwarning/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           Aloqa uzildi — qayta ulanmoqda...
         </div>
       )}
 
       {oppWait !== null && phase === 'in_round' && (
-        <div className="mx-4 mt-2 bg-pwarning/10 border border-pwarning/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           Raqib uzildi — {oppWait} soniya kutilmoqda
         </div>
       )}
 
       {conn === 'failed' && (
-        <div className="mx-4 mt-2 bg-pdanger/10 border border-pdanger/40 text-fg text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2">
+        <div className="mx-4 mt-2 bg-pdanger/15 text-pdanger text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
           <WifiOff size={14} className="flex-shrink-0" />
           Serverga ulanib bo'lmadi
           <button onClick={onRetry}
-            className="flex items-center gap-1 underline underline-offset-2 hover:text-fg transition-colors">
+            className="flex items-center gap-1 underline underline-offset-2 hover:text-pfg transition-colors">
             <RefreshCw size={12} /> Qayta urinish
           </button>
         </div>

@@ -68,7 +68,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
       >
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
         <div className="flex items-center justify-between mb-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/10 rounded-control border border-pprimary/20">
+          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/15 rounded-xl shadow-2xs">
             {sign.code}
           </span>
           <button
@@ -305,10 +305,10 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
             {isExpanded && (
               <div className="border-t border-pline px-4 py-3 bg-pcanvas/40 flex flex-col gap-3">
                 {ch.articles.map((art) => (
-                  <div key={art.id} className="p-3 rounded-control bg-psurface border border-pline">
+                  <div key={art.id} className="p-3.5 rounded-2xl bg-pcard shadow-xs">
                     <span
-                      className={`inline-block text-[11px] font-bold px-2 py-0.5 rounded-control mb-1.5 ${
-                        isFines ? 'bg-pwarning/15 text-pwarning border border-pwarning/30' : 'bg-pprimary/10 text-pprimary'
+                      className={`inline-block text-[11px] font-bold px-2 py-0.5 rounded-lg mb-1.5 shadow-2xs ${
+                        isFines ? 'bg-pwarning/20 text-pwarning' : 'bg-pprimary/15 text-pprimary'
                       }`}
                     >
                       {art.id.startsWith('J-') ? art.id : (isRu ? `Пункт ${art.id}` : `${art.id}-band`)}

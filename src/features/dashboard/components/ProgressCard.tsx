@@ -51,7 +51,7 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex items-center gap-2 rounded-control bg-black/25 px-2.5 py-2 text-left border border-white/10',
+        'flex items-center gap-2 rounded-xl bg-black/25 px-2.5 py-2 text-left shadow-2xs',
         'transition-all duration-[120ms] ease-out active:scale-[0.97]',
         'hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
@@ -116,8 +116,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
               setShowSubjects(true)
             }}
             className={cn(
-              'inline-flex h-7 items-center gap-1.5 rounded-control border border-white/20 bg-black/30 px-2.5 text-[11.5px] font-semibold text-white backdrop-blur-sm',
-              'transition-[background-color,border-color,transform] duration-[120ms] ease-out hover:bg-black/45 active:scale-[0.97]',
+              'inline-flex h-7 items-center gap-1.5 rounded-xl bg-black/30 px-2.5 text-[11.5px] font-semibold text-white backdrop-blur-sm shadow-2xs',
+              'transition-[background-color,transform] duration-[120ms] ease-out hover:bg-black/45 active:scale-[0.97]',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white'
             )}
             aria-label={tt('subjectSelect')}
@@ -136,7 +136,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         </div>
 
         <div className="mt-4 flex items-center gap-3">
-          <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35 border border-white/10">
+          <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
             <div
               className="h-full rounded-full bg-white transition-[width] duration-[700ms] ease-out"
               style={{ width: `${shown}%` }}

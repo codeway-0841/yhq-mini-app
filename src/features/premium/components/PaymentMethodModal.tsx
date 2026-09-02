@@ -235,7 +235,7 @@ export default function PaymentMethodModal({
             )}
 
             {errorMsg && (
-              <div className="p-3 rounded-control bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs flex items-center gap-2">
+              <div className="p-3.5 rounded-2xl bg-pdanger/10 text-pdanger text-xs flex items-center gap-2 shadow-xs">
                 <AlertCircle size={16} className="flex-shrink-0" />
                 <span>{errorMsg}</span>
               </div>

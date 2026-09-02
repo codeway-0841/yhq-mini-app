@@ -292,16 +292,16 @@ export default function YimExamPage() {
                   key={opt.id}
                   type="button"
                   onClick={() => handleSelectOption(opt.id)}
-                  className={`w-full text-left p-3.5 min-[480px]:p-4 rounded-xl border transition-all flex items-center gap-3.5 active:scale-[0.99] ${
+                  className={`w-full text-left p-3.5 min-[480px]:p-4 rounded-2xl transition-all flex items-center gap-3.5 active:scale-[0.99] shadow-xs ${
                     isSelected
-                      ? 'bg-sky-500/20 border-sky-400 text-white shadow-md ring-1 ring-sky-400'
-                      : 'bg-slate-900/90 border-slate-800 text-slate-200 hover:border-slate-700 hover:bg-slate-850'
+                      ? 'bg-sky-500/20 text-white shadow-md ring-2 ring-sky-400'
+                      : 'bg-slate-900/90 text-slate-200 hover:bg-slate-800'
                   }`}
                 >
-                  <span className={`size-8 rounded-lg font-mono font-black text-xs flex items-center justify-center shrink-0 border ${
+                  <span className={`size-8 rounded-xl font-mono font-black text-xs flex items-center justify-center shrink-0 shadow-2xs ${
                     isSelected
-                      ? 'bg-sky-500 text-slate-950 border-sky-300'
-                      : 'bg-slate-800 text-slate-400 border-slate-700'
+                      ? 'bg-sky-500 text-slate-950'
+                      : 'bg-slate-800 text-slate-400'
                   }`}>
                     {optIdx + 1}
                   </span>
@@ -321,7 +321,7 @@ export default function YimExamPage() {
               type="button"
               onClick={() => setCurrentIndex((i) => Math.max(0, i - 1))}
               disabled={currentIndex === 0}
-              className="px-3.5 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs font-bold text-slate-200 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1 active:scale-95"
+              className="px-3.5 py-2 rounded-xl bg-slate-800 text-xs font-bold text-slate-200 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1 active:scale-95 shadow-xs"
             >
               <ChevronLeft size={16} />
               <span className="hidden min-[360px]:inline">Oldingi</span>
@@ -330,10 +330,10 @@ export default function YimExamPage() {
             <button
               type="button"
               onClick={toggleFlag}
-              className={`p-2 rounded-xl border text-xs font-bold flex items-center gap-1 active:scale-95 ${
+              className={`p-2 rounded-xl text-xs font-bold flex items-center gap-1 active:scale-95 shadow-xs ${
                 flaggedQuestions[currentIndex]
-                  ? 'bg-amber-400/20 text-amber-400 border-amber-400/40'
-                  : 'bg-slate-800 border-slate-700 text-slate-400'
+                  ? 'bg-amber-400/20 text-amber-400'
+                  : 'bg-slate-800 text-slate-400'
               }`}
               title="Keyinga qoldirish"
             >
@@ -367,7 +367,7 @@ export default function YimExamPage() {
             <button
               type="button"
               onClick={() => setShowConfirmFinish(true)}
-              className="px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs font-bold text-slate-300 hover:text-white"
+              className="px-3 py-2 rounded-xl bg-slate-800 text-xs font-bold text-slate-300 hover:text-white shadow-xs"
             >
               Tugatish
             </button>
@@ -378,8 +378,8 @@ export default function YimExamPage() {
       {/* ── Yakunlashni Tasdiqlash Modali ── */}
       {showConfirmFinish && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-xs animate-in fade-in">
-          <div className="w-full max-w-sm rounded-2xl bg-slate-900 border border-sky-400/30 p-5 shadow-2xl text-center flex flex-col gap-4">
-            <div className="size-12 rounded-full bg-sky-500/20 border border-sky-400/40 flex items-center justify-center mx-auto text-sky-400">
+          <div className="w-full max-w-sm rounded-2xl bg-slate-900 p-5 shadow-2xl text-center flex flex-col gap-4">
+            <div className="size-12 rounded-full bg-sky-500/20 flex items-center justify-center mx-auto text-sky-400">
               <AlertTriangle size={24} />
             </div>
             <div>
@@ -392,7 +392,7 @@ export default function YimExamPage() {
               <button
                 type="button"
                 onClick={() => setShowConfirmFinish(false)}
-                className="flex-1 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-xs font-bold text-slate-300"
+                className="flex-1 py-2.5 rounded-xl bg-slate-800 text-xs font-bold text-slate-300 shadow-xs"
               >
                 Qaytish
               </button>
@@ -413,7 +413,7 @@ export default function YimExamPage() {
       {results && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 p-4 backdrop-blur-sm animate-in zoom-in-95 duration-200">
           {results.passed && <Confetti />}
-          <div className="relative w-full max-w-md rounded-2xl bg-slate-900 border border-slate-700 p-6 shadow-2xl text-center flex flex-col items-center gap-4 overflow-hidden">
+          <div className="relative w-full max-w-md rounded-2xl bg-slate-900 p-6 shadow-2xl text-center flex flex-col items-center gap-4 overflow-hidden">
             
             {/* Fon gerbi */}
             <div className="absolute top-0 right-0 p-8 text-8xl opacity-5 pointer-events-none">🇺🇿</div>
@@ -448,7 +448,7 @@ export default function YimExamPage() {
             </div>
 
             {/* Tafsilotlar jadvali */}
-            <div className="w-full bg-slate-800/80 rounded-xl border border-slate-700/80 p-3.5 text-xs grid grid-cols-2 gap-3 text-left">
+            <div className="w-full bg-slate-800/80 rounded-2xl p-3.5 text-xs grid grid-cols-2 gap-3 text-left shadow-xs">
               <div>
                 <span className="text-[10px] text-slate-400 uppercase font-semibold">Nomzod:</span>
                 <p className="font-bold text-slate-100 truncate">{candidateName}</p>
@@ -487,7 +487,7 @@ export default function YimExamPage() {
                   setCurrentIndex(0)
                   setTimeLeft(YIM_TIME_SECONDS)
                 }}
-                className="flex-1 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-xs font-bold text-slate-200 flex items-center justify-center gap-1.5 active:scale-95"
+                className="flex-1 py-2.5 rounded-xl bg-slate-800 text-xs font-bold text-slate-200 flex items-center justify-center gap-1.5 active:scale-95 shadow-xs"
               >
                 <RotateCcw size={15} />
                 <span>Qayta topshirish</span>

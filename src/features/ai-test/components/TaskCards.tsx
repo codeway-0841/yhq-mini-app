@@ -56,13 +56,13 @@ export function McqTaskView({ task, num, value, onChange, review }: {
           const selected = value === opt.id
           const isCorrect = review?.correctOptionId === opt.id
           const isWrongPick = review && selected && !review.correct
-          let cls = 'border-plineStrong bg-psurface text-pfg'
+          let cls = 'bg-psurface text-pfg hover:bg-pcard'
           if (review) {
-            if (isCorrect) cls = 'border-psuccess bg-psuccess/10 text-pfg'
-            else if (isWrongPick) cls = 'border-pdanger bg-pdanger/10 text-pfg'
-            else cls = 'border-pline bg-psurface text-psubtle'
+            if (isCorrect) cls = 'ring-2 ring-psuccess bg-psuccess/10 text-pfg'
+            else if (isWrongPick) cls = 'ring-2 ring-pdanger bg-pdanger/10 text-pfg'
+            else cls = 'bg-psurface text-psubtle opacity-60'
           } else if (selected) {
-            cls = 'border-ppurple text-pfg'
+            cls = 'ring-2 ring-ppurple text-pfg'
           }
           return (
             <button
@@ -70,14 +70,14 @@ export function McqTaskView({ task, num, value, onChange, review }: {
               type="button"
               disabled={!!review || !onChange}
               onClick={() => onChange?.(opt.id)}
-              className={`w-full flex items-center gap-3 rounded-control border px-3.5 py-2.5 text-left transition-[background-color,border-color,transform] duration-[120ms] ease-out ${cls} ${!review ? 'active:scale-[0.99] hover:border-ppurple/60' : ''} disabled:cursor-default`}
+              className={`w-full flex items-center gap-3 rounded-2xl px-3.5 py-3 text-left transition-all shadow-xs ${cls} ${!review ? 'active:scale-[0.99]' : ''} disabled:cursor-default`}
               style={!review && selected ? { background: 'color-mix(in srgb, var(--p-purple) 12%, transparent)' } : undefined}
             >
-              <span className={`flex-shrink-0 grid size-7 place-items-center rounded-full border text-[12.5px] font-bold ${
-                isCorrect ? 'border-psuccess text-psuccess'
-                : isWrongPick ? 'border-pdanger text-pdanger'
-                : selected ? 'border-ppurple text-ppurple'
-                : 'border-plineStrong text-pmuted'
+              <span className={`flex-shrink-0 grid size-7 place-items-center rounded-xl text-[12.5px] font-bold shadow-2xs ${
+                isCorrect ? 'bg-psuccess text-ponprimary'
+                : isWrongPick ? 'bg-pdanger text-white'
+                : selected ? 'bg-ppurple text-ponprimary'
+                : 'bg-pcard text-pmuted'
               }`}>
                 {LETTERS[i]}
               </span>
@@ -111,7 +111,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
           const correctRight = review?.correctMapping[l.id]
           const rowCorrect = review ? chosen === correctRight : undefined
           return (
-            <div key={l.id} className="rounded-control border border-pline bg-psurface p-3">
+            <div key={l.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
               <div className="flex items-start gap-2 mb-2">
                 <span className="flex-shrink-0 text-[13px] font-bold text-ppurple">{li + 1}.</span>
                 <p className="flex-1 text-[14px] text-pfg leading-snug">{l.text}</p>
@@ -121,12 +121,12 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
                 {task.right.map((r, ri) => {
                   const isChosen = chosen === r.id
                   const isCorrectOpt = review && correctRight === r.id
-                  let cls = 'border-plineStrong text-pmuted'
+                  let cls = 'bg-psurface text-pmuted'
                   if (review) {
-                    if (isCorrectOpt) cls = 'border-psuccess text-psuccess'
-                    else if (isChosen) cls = 'border-pdanger text-pdanger line-through'
+                    if (isCorrectOpt) cls = 'bg-psuccess text-ponprimary'
+                    else if (isChosen) cls = 'bg-pdanger text-white line-through'
                   } else if (isChosen) {
-                    cls = 'border-ppurple text-ppurple font-bold'
+                    cls = 'ring-2 ring-ppurple bg-ppurple/15 text-ppurple font-bold'
                   }
                   return (
                     <button
@@ -135,7 +135,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
                       disabled={!!review || !onChange}
                       onClick={() => onChange?.(l.id, r.id)}
                       title={r.text}
-                      className={`grid size-9 place-items-center rounded-control border bg-pcard text-[13px] transition-[border-color,transform] duration-[120ms] ease-out ${cls} ${!review ? 'active:scale-[0.95]' : ''} disabled:cursor-default`}
+                      className={`grid size-9 place-items-center rounded-xl text-[13px] shadow-2xs transition-all ${cls} ${!review ? 'active:scale-[0.95] hover:bg-psurface' : ''} disabled:cursor-default`}
                     >
                       {LETTERS[ri]}
                     </button>
@@ -148,7 +148,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
         })}
       </div>
       {/* O'ng kolonka ro'yxati */}
-      <div className="mt-3 rounded-control border border-pline bg-pcanvas p-3">
+      <div className="mt-3 rounded-2xl bg-pcard p-3.5 shadow-xs">
         {task.right.map((r, ri) => (
           <p key={r.id} className="text-[13px] text-pmuted leading-relaxed">
             <span className="font-bold text-ppurple">{LETTERS[ri]}</span> — {r.text}
@@ -188,7 +188,7 @@ export function ShortTaskView({ task, num, value, onChange, review, yourAnswerLa
           value={value ?? ''}
           onChange={(e) => onChange?.(e.target.value)}
           maxLength={300}
-          className="w-full rounded-control border border-plineStrong bg-psurface px-3.5 py-2.5 text-[14px] text-pfg placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple"
+          className="w-full rounded-2xl bg-psurface px-3.5 py-2.5 text-[14px] text-pfg placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple shadow-xs"
           placeholder="…"
         />
       )}
@@ -232,7 +232,7 @@ export function EssayTaskView({ task, num, value, onChange, review, placeholder,
             onChange={(e) => onChange?.(e.target.value)}
             rows={9}
             maxLength={10_000}
-            className="w-full rounded-control border border-plineStrong bg-psurface px-3.5 py-3 text-[14px] text-pfg leading-relaxed placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple resize-y"
+            className="w-full rounded-2xl bg-psurface px-3.5 py-3 text-[14px] text-pfg leading-relaxed placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple resize-y shadow-xs"
             placeholder={placeholder}
           />
           <p className={`mt-1.5 text-right text-[12px] font-medium ${inRange ? 'text-psuccess' : 'text-psubtle'}`}>

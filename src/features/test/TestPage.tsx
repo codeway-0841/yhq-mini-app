@@ -776,7 +776,7 @@ export default function TestPage() {
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
                 className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
-              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full border border-white/20 bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white transition-colors group-hover:bg-black/85">
+              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-xs shadow-xs transition-colors group-hover:bg-black/85">
                 <ZoomIn size={11} strokeWidth={1.75} />
                 <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
               </div>
@@ -838,7 +838,7 @@ export default function TestPage() {
             onClick={(e) => e.stopPropagation()}>
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 flex-shrink-0" />
             <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-              <div className="w-9 h-9 rounded-control bg-pwarning/15 border border-pwarning/40 flex items-center justify-center flex-shrink-0">
+              <div className="size-9 rounded-xl bg-pwarning/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
                 <Info size={17} className="text-pwarning" />
               </div>
               <p id="explain-title" className="text-[15px] font-semibold text-pfg">
