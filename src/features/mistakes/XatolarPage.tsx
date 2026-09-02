@@ -88,9 +88,9 @@ export default function XatolarPage() {
 
       {/* Bo'sh holat */}
       {total === 0 && (
-        <div className="rounded-container border border-pline bg-pcard p-8 flex flex-col items-center text-center">
-          <div className="w-12 h-12 rounded-control bg-psurface flex items-center justify-center mb-4">
-            <HeartCrack size={24} className="text-pmuted" />
+        <div className="rounded-2xl border border-pline bg-pcard p-8 flex flex-col items-center text-center shadow-xs">
+          <div className="size-12 flex items-center justify-center mb-4">
+            <HeartCrack size={26} className="text-pmuted" />
           </div>
           <p className="text-[17px] font-semibold text-pfg">{tt('mistakesEmptyTitle')}</p>
           <p className="text-[12px] text-psubtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
@@ -100,10 +100,10 @@ export default function XatolarPage() {
       {total > 0 && (
         <>
           {/* Umumiy holat + "Barchasini mashq qilish" */}
-          <div className="rounded-container border border-pline bg-pcard p-4 mb-4">
+          <div className="rounded-2xl border border-pline bg-pcard p-4 mb-4 shadow-xs">
             <div className="flex items-center gap-3 mb-3.5">
-              <div className="w-11 h-11 rounded-control bg-psurface flex items-center justify-center flex-shrink-0">
-                <HeartCrack size={20} className="text-pmuted" />
+              <div className="size-11 flex items-center justify-center flex-shrink-0">
+                <HeartCrack size={22} className="text-pmuted" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[24px] font-semibold text-pfg leading-none">{total}</p>
@@ -111,7 +111,7 @@ export default function XatolarPage() {
               </div>
             </div>
             <button onClick={() => startPractice(wrongQuestions.map((q) => q.id), tt('fixMistakes'))}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-container text-[14px] flex items-center justify-center gap-2">
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
             </button>
@@ -119,9 +119,9 @@ export default function XatolarPage() {
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <div className="rounded-container border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3">
-              <div className="w-11 h-11 rounded-control bg-psurface flex items-center justify-center flex-shrink-0">
-                <Sparkles size={20} className="text-pmuted" />
+            <div className="rounded-2xl border border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-xs">
+              <div className="size-11 flex items-center justify-center flex-shrink-0">
+                <Sparkles size={22} className="text-pmuted" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[14px] font-semibold text-pfg">{tt('premiumMistakesTitle')}</p>
@@ -142,13 +142,12 @@ export default function XatolarPage() {
           {isPremium && byTopic.length > 0 && (
             <>
               <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
-              <div className="rounded-container border border-pline bg-pcard overflow-hidden mb-4">
-                {byTopic.map((g, i) => (
+              <div className="rounded-2xl border border-pline bg-pcard overflow-hidden mb-4 shadow-xs divide-y divide-pline">
+                {byTopic.map((g) => (
                   <button key={g.topicId} onClick={() => startPractice(g.ids, g.name)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors ${
-                      i > 0 ? 'border-t border-pline' : ''}`}>
+                    className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors">
                     <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
-                    <span className="bg-pdanger/15 border border-pdanger text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                       {g.ids.length}
                     </span>
                     <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">{tt('practiceWord')} ›</span>
@@ -168,7 +167,7 @@ export default function XatolarPage() {
               <div className="flex flex-col gap-2">
                 {topHard.map(({ q, count }, i) => (
                   <button key={q.id} onClick={() => startPractice([q.id], tt('topMistakes'))}
-                    className="rounded-container border border-pline bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform">
+                    className="rounded-2xl border border-pline bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform shadow-xs">
                     <span className="w-6 text-center text-[12px] font-semibold text-psubtle flex-shrink-0 tabular-nums">
                       {i + 1}
                     </span>
@@ -176,7 +175,7 @@ export default function XatolarPage() {
                       style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                       {q.text}
                     </span>
-                    <span className="bg-pwarning/15 text-pwarning text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-pwarning/15 text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                       {count} {tt('timesWord')}
                     </span>
                     <ChevronRight size={15} className="text-psubtle flex-shrink-0" />

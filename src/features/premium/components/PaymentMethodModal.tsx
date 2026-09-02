@@ -245,10 +245,10 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithClick}
               disabled={loadingProvider === 'click' || isWaitingPayment}
-              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-plineStrong active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left cursor-pointer"
+              className="w-full p-4 rounded-2xl bg-psurface border border-pline hover:border-plineStrong active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left cursor-pointer"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-control bg-psurface border border-pline flex items-center justify-center flex-shrink-0 px-1.5">
+                <div className="size-11 rounded-xl bg-pcard shadow-xs flex items-center justify-center flex-shrink-0 px-1.5">
                   <ClickLogo className="w-full h-auto" />
                 </div>
                 <div>
@@ -276,10 +276,10 @@ export default function PaymentMethodModal({
             <button
               onClick={handlePayWithStars}
               disabled={loadingProvider !== null || isWaitingPayment}
-              className="w-full p-4 rounded-container bg-psurface border border-pline hover:border-plineStrong active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left cursor-pointer"
+              className="w-full p-4 rounded-2xl bg-psurface border border-pline hover:border-plineStrong active:scale-[0.98] transition-all flex items-center justify-between group disabled:opacity-60 text-left cursor-pointer"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-control bg-psurface border border-pline flex items-center justify-center flex-shrink-0 p-2.5">
+                <div className="size-11 rounded-xl bg-pcard shadow-xs flex items-center justify-center flex-shrink-0 p-2.5">
                   <img src="/stars.svg" alt="" className="w-full h-full" />
                 </div>
                 <div>

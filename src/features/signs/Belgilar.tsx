@@ -115,7 +115,7 @@ function CategoryGrid({ onSelect, lang }: { onSelect: (cat: SignCategory) => voi
           <button
             key={cat.id}
             onClick={() => onSelect(cat)}
-            className="flex items-center gap-3.5 rounded-container border border-pline bg-psurface p-3.5 active:scale-[0.98] transition-all text-left hover:border-plineStrong shadow-xs"
+            className="flex items-center gap-3.5 rounded-2xl bg-pcard p-3.5 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface"
           >
             <div className="flex size-10 shrink-0 items-center justify-center">
               {cat.image ? (
@@ -163,7 +163,7 @@ function SignsGrid({
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h2 className="text-base font-semibold text-pfg truncate">{categoryName}</h2>
-        <span className="text-xs text-pmuted ml-auto bg-psurface border border-pline px-2.5 py-1 rounded-control flex-shrink-0">
+        <span className="text-xs text-pmuted ml-auto bg-psurface px-2.5 py-1 rounded-full flex-shrink-0">
           {category.count} {isRu ? 'знаков' : 'ta'}
         </span>
       </header>
@@ -174,7 +174,7 @@ function SignsGrid({
             <button
               key={sign.id}
               onClick={() => onSignSelect(sign)}
-              className="flex flex-col items-center rounded-container border border-pline bg-psurface p-2.5 active:scale-95 transition-transform hover:border-plineStrong shadow-xs text-center"
+              className="flex flex-col items-center rounded-2xl bg-pcard p-2.5 active:scale-95 transition-all shadow-xs hover:bg-psurface text-center"
             >
               <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
                 {sign.image ? (
@@ -223,7 +223,7 @@ function SearchGrid({
           <button
             key={sign.id}
             onClick={() => onSignSelect(sign)}
-            className="flex flex-col items-center rounded-container border border-pline bg-psurface p-2.5 active:scale-95 transition-transform hover:border-plineStrong shadow-xs text-center"
+            className="flex flex-col items-center rounded-2xl bg-pcard p-2.5 active:scale-95 transition-all shadow-xs hover:bg-psurface text-center"
           >
             <div className="w-16 h-16 rounded-control bg-white/95 shadow-xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
               {sign.image ? (

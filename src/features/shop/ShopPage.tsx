@@ -148,13 +148,12 @@ export default function ShopPage() {
     const isOwned    = ownedSet.has(frame.id)
     const isEquipped = avatarFrame === frame.id
     return (
-      <div key={frame.id} className="rounded-container border border-pline bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative">
+      <div key={frame.id} className="rounded-2xl border border-pline bg-pcard p-3.5 flex flex-col items-center gap-2.5 relative shadow-xs">
         {countdownBadge && (
           <div className="w-full flex items-center justify-center -mt-0.5">
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[9.5px] font-medium"
               style={{
-                background: 'rgb(var(--p-primary-rgb) / 0.10)',
-                border: '1px solid rgb(var(--p-primary-rgb) / 0.30)',
+                background: 'rgb(var(--p-primary-rgb) / 0.12)',
                 color: 'var(--p-primary)',
               }}>
               <Clock size={10} strokeWidth={2} className="flex-shrink-0" />
@@ -173,15 +172,13 @@ export default function ShopPage() {
           <button
             onClick={() => equip(isEquipped ? null : frame.id)}
             disabled={busy !== null}
-            className="w-full text-[11.5px] font-semibold py-1.5 rounded-control active:scale-[0.97] transition-transform disabled:opacity-50"
+            className="w-full text-[11.5px] font-semibold py-2 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs"
             style={isEquipped ? {
-              background: 'rgb(var(--p-success-rgb) / 0.12)',
+              background: 'rgb(var(--p-success-rgb) / 0.14)',
               color: 'var(--p-success)',
-              border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
             } : {
-              background: 'rgb(var(--p-primary-rgb) / 0.12)',
+              background: 'rgb(var(--p-primary-rgb) / 0.14)',
               color: 'var(--p-primary)',
-              border: '1px solid rgb(var(--p-primary-rgb) / 0.35)',
             }}>
             {busy === 'equip' ? <Loader2 size={13} className="animate-spin mx-auto" />
               : isEquipped ? tt('shopUnequip') : tt('shopEquip')}
@@ -190,7 +187,7 @@ export default function ShopPage() {
           <button
             onClick={() => buy(item.id)}
             disabled={busy !== null}
-            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
+            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
             {busy === item.id
               ? <Loader2 size={13} className="animate-spin" />
               : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}
@@ -226,7 +223,7 @@ export default function ShopPage() {
       </header>
 
       {/* Balans — ixcham karta (gradient border'siz); hint pastki qatorda */}
-      <div className="mx-5 mt-2 rounded-container border border-pline bg-pcard px-4 py-3.5">
+      <div className="mx-5 mt-2 rounded-2xl border border-pline bg-pcard px-4 py-3.5 shadow-xs">
         <div className="flex items-center justify-between gap-3">
           <div className="min-w-0">
             <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">{tt('shopBalance')}</p>
@@ -236,7 +233,7 @@ export default function ShopPage() {
             </p>
           </div>
           {isPremium && (
-            <span className="inline-flex flex-none items-center gap-1 rounded-full border border-[rgb(var(--p-gold-rgb)/0.35)] bg-[rgb(var(--p-gold-rgb)/0.12)] px-2.5 py-1 text-[10.5px] font-semibold text-pgold">
+            <span className="inline-flex flex-none items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.14)] px-2.5 py-1 text-[10.5px] font-semibold text-pgold shadow-xs">
               <PremiumIcon size={12} /> Premium
             </span>
           )}
@@ -248,8 +245,8 @@ export default function ShopPage() {
       </div>
 
       {error && (
-        <div className="mx-5 mt-3 rounded-container px-4 py-3 text-[12.5px] font-semibold text-pwarning animate-fadeIn"
-          style={{ background: 'rgb(var(--p-warning-rgb) / 0.10)', border: '1px solid rgb(var(--p-warning-rgb) / 0.35)' }}>
+        <div className="mx-5 mt-3 rounded-2xl px-4 py-3 text-[12.5px] font-semibold text-pwarning animate-fadeIn shadow-xs"
+          style={{ background: 'rgb(var(--p-warning-rgb) / 0.12)' }}>
           {error}
         </div>
       )}
@@ -264,9 +261,9 @@ export default function ShopPage() {
           const isOwned    = ownedSet.has(theme.id)
           const isActiveTheme = resolveAccent(accent, isPremium, ownedSet) === theme.id
           return (
-            <div key={theme.id} className="rounded-container border border-pline bg-pcard p-3 flex flex-col gap-2 relative overflow-hidden">
+            <div key={theme.id} className="rounded-2xl border border-pline bg-pcard p-3 flex flex-col gap-2 relative overflow-hidden shadow-xs">
               {/* Mini atmosfera preview */}
-              <div className="h-[52px] rounded-control overflow-hidden border border-pline relative"
+              <div className="h-[52px] rounded-xl overflow-hidden relative shadow-inner"
                 style={{ background: theme.bg }}>
                 <div className="absolute left-2 right-2 top-2 h-5 rounded-[6px]"
                   style={{ background: theme.card, border: `1px solid ${theme.color}4d` }} />
@@ -278,11 +275,10 @@ export default function ShopPage() {
                 {isActiveTheme && <Check size={14} className="text-psuccess flex-none" />}
               </div>
               {isOwned ? (
-                <span className="text-center text-[11px] font-semibold py-2 rounded-control"
+                <span className="text-center text-[11px] font-semibold py-2 rounded-xl"
                   style={{
-                    background: 'rgb(var(--p-success-rgb) / 0.12)',
+                    background: 'rgb(var(--p-success-rgb) / 0.14)',
                     color: 'var(--p-success)',
-                    border: '1px solid rgb(var(--p-success-rgb) / 0.35)',
                   }}>
                   {isActiveTheme ? tt('shopActive') : tt('shopOwned')}
                 </span>
@@ -290,7 +286,7 @@ export default function ShopPage() {
                 <button
                   onClick={() => buy(item.id)}
                   disabled={busy !== null}
-                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-control border border-pline bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50">
+                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
                   {busy === item.id
                     ? <Loader2 size={13} className="animate-spin" />
                     : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}

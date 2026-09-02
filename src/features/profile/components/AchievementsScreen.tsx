@@ -20,7 +20,7 @@ function AchievementTile({ a, stats, tt }: {
       <div className="relative mb-2">
         <div
           className={cn(
-            'flex size-[52px] items-center justify-center rounded-[16px] border border-pline bg-psurface transition-colors duration-[120ms] ease-out',
+            'flex size-[52px] items-center justify-center rounded-2xl bg-psurface transition-colors duration-[120ms] ease-out shadow-xs',
             !unlocked && 'opacity-40',
           )}
         >
@@ -78,7 +78,7 @@ export default function AchievementsScreen({ stats, tt, onClose }: {
         </div>
 
         {/* Umumiy progress */}
-        <div className="flex items-center gap-3 mx-4 mb-4 px-4 py-3 rounded-container border border-pline bg-pcard">
+        <div className="flex items-center gap-3 mx-4 mb-4 px-4 py-3 rounded-2xl bg-pcard shadow-xs">
           <span className="text-[12px] font-semibold tabular-nums text-pmuted">
             {unlockedCount} / {ACHIEVEMENTS.length}
           </span>

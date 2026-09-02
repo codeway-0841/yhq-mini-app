@@ -68,11 +68,11 @@ export default function Biletlar() {
         <h1 className="text-xl font-semibold">{tt('tickets')}</h1>
       </header>
 
-      <div className="flex gap-2 mb-4 bg-psurface p-1 rounded-control border border-pline">
+      <div className="flex gap-2 mb-4 bg-psurface p-1 rounded-2xl">
         {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)}
-            className={`flex-1 py-1.5 rounded-lg text-sm font-semibold transition-colors ${
-              tab === t.id ? 'bg-pprimary text-ponprimary' : 'text-pmuted hover:text-pfg'
+            className={`flex-1 py-2 rounded-xl text-sm font-semibold transition-colors ${
+              tab === t.id ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
             }`}>
             {t.label}
           </button>
@@ -85,15 +85,15 @@ export default function Biletlar() {
           const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[questionKey(subjectId, qid)] ?? 0) > 0).length
           return (
             <button key={ticket.id} onClick={() => handleTicket(ticket)}
-              className="relative flex flex-col items-center justify-center rounded-container border border-pline bg-psurface p-3 min-h-[72px] active:scale-95 transition-transform overflow-hidden">
+              className="relative flex flex-col items-center justify-center rounded-2xl bg-pcard shadow-xs hover:bg-psurface p-3 min-h-[72px] active:scale-95 transition-all overflow-hidden text-center">
               {/* Raqamli badge FAQAT "Xatolar" tabinda ko'rinadi (qizil) */}
               {tab === 'errors' && wrongCount > 0 && (
-                <span className="absolute top-1.5 right-1.5 bg-red-500 text-white text-[9px] font-semibold px-1.5 py-0.5 rounded-full min-w-[18px] text-center">
+                <span className="absolute top-1.5 right-1.5 bg-pdanger text-white text-[9.5px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center shadow-xs">
                   {wrongCount}
                 </span>
               )}
-              <span className="text-sm font-semibold">{ticket.title}</span>
-              <span className="text-[10px] text-pmuted mt-0.5">{ticket.questionCount} {tt('question')}</span>
+              <span className="text-sm font-bold text-pfg">{ticket.title}</span>
+              <span className="text-[10.5px] text-pmuted mt-0.5">{ticket.questionCount} {tt('question')}</span>
             </button>
           )
         })}

@@ -40,7 +40,7 @@ function FormulaCard({ item, fav, onFav, lang }: {
   const note = isRu ? (item.noteRu ?? item.note) : item.note
 
   return (
-    <div className="rounded-container border border-pline bg-pcard rounded-container p-3.5 relative">
+    <div className="rounded-2xl border border-pline bg-pcard p-3.5 relative shadow-xs">
       <button type="button" onClick={(e) => { e.stopPropagation(); onFav() }}
         aria-label="favorite"
         className="absolute top-2.5 right-2.5 p-1 cursor-pointer">
@@ -126,7 +126,7 @@ export default function FormulasPage() {
 
       {/* Qidiruv */}
       <div className="px-5 mb-3">
-        <div className="rounded-container border border-pline bg-pcard rounded-container flex items-center gap-2.5 px-4 py-3">
+        <div className="rounded-2xl border border-pline bg-pcard flex items-center gap-2.5 px-4 py-3 shadow-xs">
           <Search size={16} className="text-psubtle flex-shrink-0" />
           <input value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchFormula')}

@@ -107,7 +107,7 @@ function Top3ArcStage({ top3, tt }: {
         {second && (
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center">
-              <div className="rounded-full shadow-md overflow-hidden bg-pcard border-2 border-pline">
+              <div className="rounded-full shadow-md overflow-hidden bg-pcard ring-2 ring-psurface">
                 <UserAvatar name={second.name} src={avatarSrcFor(second)} frame={second.avatarFrame} size="top2" />
               </div>
               <div className="absolute -bottom-2.5 flex size-6 items-center justify-center rounded-full bg-gradient-to-b from-slate-200 via-slate-400 to-slate-500 text-white font-display text-xs font-black shadow-md border-2 border-pcanvas">
@@ -128,7 +128,7 @@ function Top3ArcStage({ top3, tt }: {
             <div className="-mb-0.5 z-20">
               <Crown size={25} className="fill-amber-400 stroke-amber-500 drop-shadow-[0_2px_8px_rgba(245,158,11,0.55)]" />
             </div>
-            <div className="relative z-10 rounded-full shadow-lg overflow-hidden bg-pcard border-2 border-pline">
+            <div className="relative z-10 rounded-full shadow-lg overflow-hidden bg-pcard ring-2 ring-psurface">
               <UserAvatar name={first.name} src={avatarSrcFor(first)} frame={first.avatarFrame} size="top1" />
             </div>
             <div className="absolute -bottom-3 z-20 flex size-7 items-center justify-center rounded-full bg-gradient-to-b from-yellow-300 via-amber-400 to-amber-600 text-amber-950 font-display text-sm font-black shadow-lg border-2 border-pcanvas">
@@ -145,7 +145,7 @@ function Top3ArcStage({ top3, tt }: {
         {third && (
           <div className="flex flex-col items-center">
             <div className="relative flex items-center justify-center">
-              <div className="rounded-full shadow-md overflow-hidden bg-pcard border-2 border-pline">
+              <div className="rounded-full shadow-md overflow-hidden bg-pcard ring-2 ring-psurface">
                 <UserAvatar name={third.name} src={avatarSrcFor(third)} frame={third.avatarFrame} size="top2" />
               </div>
               <div className="absolute -bottom-2.5 flex size-6 items-center justify-center rounded-full bg-gradient-to-b from-orange-300 via-amber-600 to-amber-800 text-white font-display text-xs font-black shadow-md border-2 border-pcanvas">
