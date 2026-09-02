@@ -69,10 +69,10 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
           <div>
             {/* Header */}
             <div className="relative mx-auto mb-3 w-fit">
-              <div className="grid size-14 place-items-center rounded-[18px] border border-pline bg-pcard">
+              <div className="grid size-14 place-items-center rounded-2xl bg-pcard shadow-xs">
                 <Users size={26} strokeWidth={1.75} className="text-pprimary" />
               </div>
-              <div className="absolute -bottom-1 -right-1 grid size-5 place-items-center rounded-full border border-pline bg-pcard">
+              <div className="absolute -bottom-1 -right-1 grid size-5 place-items-center rounded-full bg-pcard shadow-xs">
                 <Sparkles size={11} strokeWidth={2} className="text-pgold" />
               </div>
             </div>
@@ -87,7 +87,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </p>
 
             {/* Joriy faol fan kartasi (katta, markaziy karta) */}
-            <div className="mt-4 rounded-container border border-pprimary/30 bg-pwash/40 p-4">
+            <div className="mt-4 rounded-2xl bg-pwash/40 p-4">
               <div className="flex items-center gap-3.5">
                 <div
                   className="grid size-12 flex-none place-items-center rounded-xl text-white shadow-sm"
@@ -125,7 +125,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
               {FEATURES.map((f) => (
                 <div
                   key={f.key}
-                  className="flex items-center gap-3 rounded-container border border-pline bg-pcard px-3.5 py-2.5"
+                  className="flex items-center gap-3 rounded-2xl bg-pcard px-3.5 py-2.5 shadow-xs"
                 >
                   <f.icon size={16} strokeWidth={1.75} className="flex-none text-pmuted" />
                   <p className="text-[12.5px] font-semibold text-pfg">{tt(f.key)}</p>
@@ -143,10 +143,10 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
           <div>
             {/* Brend ikonkasi — neytral blok + qulf badge'i */}
             <div className="relative mx-auto mb-4 w-fit">
-              <div className="grid size-16 place-items-center rounded-[20px] border border-pline bg-pcard">
+              <div className="grid size-16 place-items-center rounded-2xl bg-pcard shadow-xs">
                 <Users size={30} strokeWidth={1.75} className="text-pmuted" />
               </div>
-              <div className="absolute -bottom-1.5 -right-1.5 grid size-6 place-items-center rounded-full border border-pline bg-pcard">
+              <div className="absolute -bottom-1.5 -right-1.5 grid size-6 place-items-center rounded-full bg-pcard shadow-xs">
                 <Lock size={12} strokeWidth={2} className="text-psubtle" />
               </div>
             </div>
@@ -160,7 +160,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
               {FEATURES.map((f) => (
                 <div
                   key={f.key}
-                  className="flex items-center gap-3 rounded-container border border-pline bg-pcard px-4 py-3"
+                  className="flex items-center gap-3 rounded-2xl bg-pcard px-4 py-3 shadow-xs"
                 >
                   <f.icon size={18} strokeWidth={1.75} className="flex-none text-pmuted" />
                   <p className="text-[13px] font-semibold text-pfg">{tt(f.key)}</p>
@@ -180,7 +180,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
                   <button
                     key={key}
                     onClick={() => onGetPlan(key)}
-                    className="flex items-center gap-2.5 rounded-container border border-pline bg-pcard p-3.5 text-left transition-transform active:scale-[0.97]"
+                    className="flex items-center gap-2.5 rounded-2xl bg-pcard p-3.5 text-left transition-transform active:scale-[0.97] shadow-xs"
                   >
                     {/* Obuna modalidagi tarif ikonkasi (YAGONA MANBA) — neytral rang */}
                     <ClaudeTreeIcon className="size-9 flex-none text-pmuted" />
@@ -198,7 +198,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </div>
 
             {/* CTA */}
-            <Button block size="lg" className="mt-5" onClick={() => onGetPlan()}>
+            <Button block size="lg" className="mt-5 shadow-sm font-bold" onClick={() => onGetPlan()}>
               {tt('closedGroupCta')}
             </Button>
           </div>

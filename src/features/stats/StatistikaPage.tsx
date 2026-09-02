@@ -161,14 +161,14 @@ export default function StatistikaPage() {
             <HeartCrack size={11} className="text-pdanger" />
             {lang === 'ru' ? 'Слабые темы' : 'Zaif mavzular'}
           </p>
-          <div className="rounded-container border border-pline bg-pcard mx-5 divide-y divide-pline">
+          <div className="rounded-2xl border border-pline bg-pcard mx-5 divide-y divide-pline overflow-hidden">
             {weakTopics.map(({ topic, ids }) => (
               <button key={topic!.id} onClick={() => practiceWeak(ids, lang === 'ru' ? topic!.nameRu : topic!.nameUz)}
                 className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors">
                 <span className="flex-1 text-[13px] font-semibold text-pfg truncate">
                   {lang === 'ru' ? topic!.nameRu : topic!.nameUz}
                 </span>
-                <span className="bg-pdanger/15 border border-pdanger/40 text-pdanger text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0">
+                <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                   {ids.length}
                 </span>
                 <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">
@@ -181,10 +181,12 @@ export default function StatistikaPage() {
       )}
 
       {/* Umumiy */}
-      <div className="mx-5 mt-4 rounded-container border border-pline bg-pcard p-4 flex items-center justify-between text-[12px]">
+      <div className="mx-5 mt-4 rounded-2xl border border-pline bg-pcard p-4 flex items-center justify-between text-[12px]">
         <span className="text-psubtle">{lang === 'ru' ? 'Всего ответов' : 'Jami javoblar'}</span>
         <span className="font-semibold tabular-nums">
-          <span className="text-psuccess">{totalCorrect}</span> / <span className="text-pdanger">{totalWrong}</span>
+          <span className="text-psuccess font-bold">{totalCorrect}</span>
+          <span className="text-psubtle mx-1 font-normal">/</span>
+          <span className="text-pdanger font-bold">{totalWrong}</span>
         </span>
       </div>
     </div>

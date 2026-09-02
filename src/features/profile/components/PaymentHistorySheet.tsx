@@ -78,8 +78,8 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
         ) : rows.length === 0 ? (
           /* Bo'sh holat */
           <div className="flex flex-col items-center py-14 text-center">
-            <div className="grid size-24 place-items-center rounded-full border border-pline bg-pcard">
-              <Receipt size={38} strokeWidth={1.5} className="text-psubtle" />
+            <div className="grid size-20 place-items-center rounded-full bg-pcard shadow-xs">
+              <Receipt size={36} strokeWidth={1.5} className="text-psubtle" />
             </div>
             <p className="mt-5 text-[15px] font-bold text-pfg">{tt('payHistoryEmptyTitle')}</p>
           </div>
