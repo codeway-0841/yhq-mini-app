@@ -205,7 +205,7 @@ export default function AiTutorModal({
                 speakExplanation(staticText)
               }}
               aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-              className="ml-auto w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
+              className="ml-auto size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
             >
               <Volume2 size={14} />
             </button>
@@ -221,7 +221,7 @@ export default function AiTutorModal({
               setShowStatic(false)
               setShowUpsell(true)
             }}
-            className="mt-4 w-full py-2.5 rounded-container bg-ppurple/15 border border-ppurple/40 text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0"
+            className="mt-4 w-full py-2.5 rounded-2xl bg-ppurple/15 text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs"
           >
             <PremiumIcon size={14} />
             {tt('staticExplainAiHint')}
@@ -253,7 +253,7 @@ export default function AiTutorModal({
                   speakExplanation(aiText)
                 }}
                 aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-                className="ml-auto w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
+                className="ml-auto size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
               >
                 <Volume2 size={14} />
               </button>

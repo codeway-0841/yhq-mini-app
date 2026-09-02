@@ -178,12 +178,12 @@ export default function CertificateModal({ score, total, percent, sample = false
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-container border border-plineStrong bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center">
+      <div className="relative w-full max-w-lg rounded-2xl bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl">
         {/* Close Button */}
         <button
           onClick={onClose}
           aria-label={tt('close')}
-          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
+          className="absolute top-4 right-4 size-9 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
         >
           <X size={18} />
         </button>
@@ -200,7 +200,7 @@ export default function CertificateModal({ score, total, percent, sample = false
         </div>
 
         {/* Direct High-Resolution Canvas Display */}
-        <div className="w-full rounded-container overflow-hidden shadow-2xl border border-pline mb-3 bg-black/40">
+        <div className="w-full rounded-2xl overflow-hidden shadow-2xl mb-3 bg-black/40">
           <canvas
             ref={canvasRef}
             className="w-full h-auto block object-contain select-none"
@@ -210,7 +210,7 @@ export default function CertificateModal({ score, total, percent, sample = false
 
         {/* Certificate Metadata Pill — namunada yashirin */}
         {!sample && (
-        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-container bg-psurface border border-pline mb-3 text-xs font-semibold text-pmuted">
+        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-psurface shadow-xs mb-3 text-xs font-semibold text-pmuted">
           <span className="truncate">ID: <span className="font-mono text-pfg">{certId}</span></span>
           <button
             onClick={handleCopyId}

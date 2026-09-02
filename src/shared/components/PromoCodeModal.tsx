@@ -69,14 +69,14 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
-      <div className="relative w-full max-w-sm rounded-container bg-pcard border border-plineStrong p-6 shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-sm rounded-2xl bg-pcard p-6 shadow-2xl overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-[rgb(var(--p-purple-rgb)/0.20)] rounded-full blur-2xl pointer-events-none" />
 
         <button
           onClick={onClose}
           aria-label={tt('cancelExit')}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+          className="absolute top-4 right-4 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
         >
           <X size={16} strokeWidth={1.75} />
         </button>
@@ -127,12 +127,12 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                   placeholder={tt('promoCodePlaceholder')}
                   autoFocus
                   maxLength={30}
-                  className="w-full bg-pcanvas border border-pline rounded-control px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:border-ppurple transition-colors"
+                  className="w-full bg-psurface rounded-2xl px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:ring-2 focus:ring-ppurple shadow-xs transition-all"
                 />
               </div>
 
               {error && (
-                <div className="flex items-center gap-2 p-3 rounded-control bg-[rgb(var(--p-danger-rgb)/0.10)] border border-[rgb(var(--p-danger-rgb)/0.30)] text-pdanger text-xs font-semibold">
+                <div className="flex items-center gap-2 p-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] text-pdanger text-xs font-semibold shadow-xs">
                   <AlertCircle size={15} className="flex-shrink-0" />
                   <span>{error}</span>
                 </div>

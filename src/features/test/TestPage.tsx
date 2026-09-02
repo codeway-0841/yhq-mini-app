@@ -642,35 +642,35 @@ export default function TestPage() {
         <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-2.5">
         <div className="flex items-center gap-1 min-[380px]:gap-2">
           <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
-            className={`grid size-8 min-[380px]:size-9 place-items-center rounded-control border border-plineStrong bg-psurface transition-colors duration-[120ms] ease-out active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
+            className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-[120ms] ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
             {confirmExit
               ? <X size={17} strokeWidth={1.75} />
               : <ChevronLeft size={18} strokeWidth={1.75} />}
           </button>
           <button onClick={() => toggleSaved(q.id)}
             aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-            className={`bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-control text-[13px] font-semibold ${isSaved ? 'text-pwarning' : ''}`}>
+            className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
             <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
             aria-label={tt('shareApp')}
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-control text-[13px] font-semibold">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
         </div>
 
-        <div className="flex min-w-0 items-center gap-1.5 rounded-control border border-plineStrong bg-psurface px-2.5 min-[380px]:px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+        <div className="flex min-w-0 items-center gap-1.5 rounded-xl bg-psurface px-2.5 min-[380px]:px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-xs" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
           <Timer size={14} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" aria-hidden="true" />
           <span className="whitespace-nowrap text-sm font-semibold tabular-nums text-pfg">{timer}</span>
         </div>
 
         {/* Mock imtihon: xatolar hisoblagichi (2 ta = yiqildingiz) */}
         {mode === 'mock' && (
-          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-control border ${
-            wrongCount > 0 ? 'border-pdanger/60 bg-pdanger/10 text-pdanger' : 'border-pline text-psubtle'
+          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl shadow-xs ${
+            wrongCount > 0 ? 'bg-pdanger/10 text-pdanger' : 'bg-psurface text-psubtle'
           }`}>
             <X size={12} strokeWidth={2} aria-hidden="true" />
             <span className="text-[12px] font-semibold tabular-nums">{wrongCount}/2</span>
@@ -680,18 +680,18 @@ export default function TestPage() {
         <div className="flex items-center gap-1 min-[380px]:gap-2">
           {isFinished && (
             <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] size-8 min-[380px]:size-9 rounded-control flex items-center justify-center">
+              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
               <BarChart2 size={17} />
             </button>
           )}
           <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] size-8 min-[380px]:size-9 rounded-control flex items-center justify-center">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
             <SettingsIcon className="size-[17px]" />
           </button>
           <button
             onClick={() => { setIsFinished(true); setShowResults(true) }}
             aria-label="Testni yakunlash"
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] size-8 min-[380px]:size-9 rounded-control flex items-center justify-center">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
             <Flag size={16} />
           </button>
         </div>
@@ -853,7 +853,7 @@ export default function TestPage() {
                   <span className="text-xs">{tt('loadingDots')}</span>
                 </div>
               ) : dbExplanation ? (
-                <div className="bg-pcanvas/50 p-3.5 rounded-container border border-pline">
+                <div className="bg-pcard p-3.5 rounded-2xl shadow-xs">
                   <MarkdownExplanation content={dbExplanation} />
                 </div>
               ) : explanation ? (

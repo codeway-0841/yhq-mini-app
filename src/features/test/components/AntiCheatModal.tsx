@@ -23,7 +23,7 @@ export default function AntiCheatModal({
     // (Escape/backdrop-yopish anti-cheat ogohlantirishini aylanib o'tishga yo'l qo'ymasligi shart)
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
-      <div className="w-full max-w-sm rounded-container bg-psurface border-2 border-pdanger/60 p-6 text-center shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-sm rounded-2xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden ring-2 ring-pdanger/50">
         {/* Yuqori aksent nuri */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-36 h-36 bg-pdanger/25 rounded-full blur-2xl pointer-events-none" />
 
@@ -40,7 +40,7 @@ export default function AntiCheatModal({
         </p>
 
         {/* Ogohlantirish indikatori */}
-        <div className="bg-psurface border border-pline rounded-container p-3.5 mb-5 flex items-center justify-between">
+        <div className="bg-pcard rounded-2xl p-3.5 mb-5 flex items-center justify-between shadow-xs">
           <span className="text-xs font-semibold text-pmuted flex items-center gap-1.5">
             <AlertTriangle size={14} className={isFinalWarning ? 'text-pdanger' : 'text-pwarning'} />
             {tt('antiCheatStrikeCount')}:

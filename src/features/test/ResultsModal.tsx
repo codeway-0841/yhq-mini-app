@@ -141,14 +141,14 @@ export default function ResultsModal({
     <DialogOverlay onClose={onFinish} labelId="results-title">
       {passed && !hideVerdict && !disqualifiedByCheat && <Confetti />}
       <div className="relative w-full rounded-container border border-pline bg-pcard rounded-t-sheet border-t border-plineStrong p-5 pb-8 max-h-[88vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-        <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 w-8 h-8 rounded-full bg-psurface border border-pline flex items-center justify-center text-pmuted hover:text-pfg transition-colors">
+        <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors">
           <X size={16} />
         </button>
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
         <h2 id="results-title" className="text-center text-lg font-semibold mb-1">{tt('results')}</h2>
 
         {disqualifiedByCheat && (
-          <div className="mb-4 bg-pdanger/15 border-2 border-pdanger/60 rounded-container p-4 text-center">
+          <div className="mb-4 bg-pdanger/15 rounded-2xl p-4 text-center shadow-xs">
             <p className="text-sm font-semibold text-pdanger mb-1">
               {tt('antiCheatDisqualifiedTitle')}
             </p>
@@ -159,7 +159,7 @@ export default function ResultsModal({
         )}
 
         {pending > 0 && (
-          <div className="mb-4 bg-pblue/15 border border-pblue/40 rounded-container p-3 flex items-center gap-2.5">
+          <div className="mb-4 bg-pblue/15 rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
             <div className="w-2 h-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
             <p className="text-xs text-pfg font-medium">
               {pending} {tt('pendingSyncNotice') || `${pending} ta javob oflayn saqlandi (internet ulanganda natija yangilanadi)`}
@@ -171,17 +171,17 @@ export default function ResultsModal({
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         <div className="grid grid-cols-3 gap-2 mb-5 animate-scorePop">
-          <div className="rounded-container border border-[rgb(var(--p-primary-rgb)/0.26)] bg-pwash p-3 text-center">
+          <div className="rounded-2xl bg-pwash p-3 text-center shadow-xs">
             <Check size={16} strokeWidth={2} className="mx-auto text-pprimary" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{correct}</p>
             <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
           </div>
-          <div className="rounded-container border border-[rgb(var(--p-danger-rgb)/0.26)] bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-center">
+          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-center shadow-xs">
             <X size={16} strokeWidth={2} className="mx-auto text-pdanger" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{wrong}</p>
             <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
           </div>
-          <div className="rounded-container border border-pline bg-psurface p-3 text-center">
+          <div className="rounded-2xl bg-psurface p-3 text-center shadow-xs">
             <Minus size={16} strokeWidth={2} className="mx-auto text-psubtle" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{unanswered}</p>
             <p className="mt-1.5 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
@@ -257,12 +257,12 @@ export default function ResultsModal({
         <div className="flex gap-3">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control flex h-11 flex-1 items-center justify-center gap-2 font-semibold">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-psurface/80">
             <RotateCcw size={16} strokeWidth={1.75} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] rounded-control h-11 flex-[2] font-semibold">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-[120ms] rounded-2xl h-11 flex-[2] font-semibold shadow-xs">
             {tt('finish')}
           </button>
         </div>
@@ -271,7 +271,7 @@ export default function ResultsModal({
         <button
           onClick={handleShareImage}
           disabled={sharingImage}
-          className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
           <ImageDown size={15} strokeWidth={1.75} />
           {sharingImage ? '...' : tt('shareResultImage')}
         </button>
@@ -290,7 +290,7 @@ export default function ResultsModal({
             const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
           }}
-          className="bg-psurface text-pfg border border-plineStrong active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,border-color,color,filter] duration-[120ms] rounded-control mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
           <Share2 size={15} strokeWidth={1.75} />
           {tt('shareResult')}
         </button>
