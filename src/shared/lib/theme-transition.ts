@@ -120,8 +120,6 @@ export async function transitionTheme(
     document.body.dataset.theme = themeStr
     document.documentElement.dataset.theme = themeStr
     document.documentElement.style.colorScheme = themeStr
-    syncStatusBarStyle(nextIsDark)
-    syncTelegramTheme(nextIsDark)
     store.updateSettings({ theme: nextTheme })
   }
 
@@ -144,6 +142,8 @@ export async function transitionTheme(
   // Instant fallback
   if (!canAnimate) {
     updateDOMAndState()
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
     return
   }
 
@@ -182,6 +182,8 @@ export async function transitionTheme(
     })
   } catch {
     updateDOMAndState()
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
     root.classList.remove('theme-to-dark', 'theme-to-light')
     root.style.removeProperty('--theme-origin-x')
     root.style.removeProperty('--theme-origin-y')
@@ -212,6 +214,9 @@ export async function transitionTheme(
     })
 
     await anim.finished.catch(() => {})
+    // Doira to'liq yoyilgandan KEYIN Telegram header va status barni sinxronlash
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
   } catch {
     // Graceful fallback for interrupted transitions
   } finally {
@@ -220,6 +225,8 @@ export async function transitionTheme(
       root.classList.remove('theme-to-dark', 'theme-to-light')
       root.style.removeProperty('--theme-origin-x')
       root.style.removeProperty('--theme-origin-y')
+      syncStatusBarStyle(nextIsDark)
+      syncTelegramTheme(nextIsDark)
     }
   }
 }

@@ -54,7 +54,6 @@ html, body, #root {
      raqam almashganda layout "sakrash"ini yo'q qiladi */
   font-variant-numeric: tabular-nums;
   overscroll-behavior: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 input, button, select, textarea {
@@ -131,9 +130,17 @@ body[data-platform='native'] {
 body[data-no-animation='true'] .route-page { animation: none; }
 
 /* ── Telegram-style Smooth Circular View Transition ─────────────────────────── */
+:root.theme-switching,
+:root.theme-switching *,
+:root.theme-switching *::before,
+:root.theme-switching *::after {
+  transition: none !important;
+}
+
 ::view-transition-group(root) {
   isolation: isolate;
   overflow: hidden;
+  animation: none;
 }
 ::view-transition-image-pair(root) {
   isolation: auto;
