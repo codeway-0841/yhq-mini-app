@@ -27,12 +27,9 @@ interface ViewTransition {
   skipTransition: () => void
 }
 
-let activeTransitionId = 0
-
 /**
  * Extract viewport coordinates (x, y) from event, HTMLElement, or coordinate pair.
- * Always returns viewport-relative coordinates so the origin remains pinned to
- * the switch even when the page is scrolled.
+ * Viewport-relative coordinates ensure origin stays at the toggle even when scrolled.
  */
 export function getOriginCoordinates(origin?: OriginInput): TransitionOrigin {
   if (!origin) {
@@ -47,7 +44,7 @@ export function getOriginCoordinates(origin?: OriginInput): TransitionOrigin {
     return origin
   }
 
-  // HTMLElement (e.g. event.currentTarget)
+  // HTMLElement
   if ('getBoundingClientRect' in origin && typeof origin.getBoundingClientRect === 'function') {
     const rect = origin.getBoundingClientRect()
     return {
@@ -75,7 +72,7 @@ export function getOriginCoordinates(origin?: OriginInput): TransitionOrigin {
 
 /**
  * Calculate the exact radius required to cover all four corners of the viewport
- * from the given origin point (x, y), with a small +2px safeguard.
+ * from the given origin point (x, y), with a +2px safety buffer.
  */
 export function calculateMaxRadius(x: number, y: number): number {
   if (typeof window === 'undefined') return 1000
@@ -85,7 +82,7 @@ export function calculateMaxRadius(x: number, y: number): number {
 }
 
 /**
- * Resolve theme option to boolean isDark based on current preference / system scheme.
+ * Resolve theme option to boolean isDark.
  */
 export function isThemeDark(theme: ThemeOption): boolean {
   if (theme === 'dark') return true
@@ -93,15 +90,16 @@ export function isThemeDark(theme: ThemeOption): boolean {
   if (typeof window !== 'undefined' && window.matchMedia) {
     return window.matchMedia('(prefers-color-scheme: dark)').matches
   }
-  return false
+  return true
 }
 
 /**
- * Executes a Telegram-style circular reveal theme transition matching the reference motion:
- * - Light -> Dark: Dark expands outwards from the switch button.
- * - Dark -> Light: Dark contracts back into the switch button, unveiling light mode.
- * - Easing: cubic-bezier(0.22, 1, 0.36, 1) over ~600ms.
- * - Supports prefers-reduced-motion and noAnimation settings with instantaneous fallback.
+ * Executes a Telegram-style circular reveal theme transition.
+ * - Origin: Exactly at the switch button (viewport x, y).
+ * - The new theme view (::view-transition-new) expands outward in a circle
+ *   covering all corners of the screen.
+ * - Easing: cubic-bezier(0.22, 1, 0.36, 1) over 600ms.
+ * - Instant fallback for prefers-reduced-motion, noAnimation, or unsupported browsers.
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -110,12 +108,15 @@ export async function transitionTheme(
   if (typeof document === 'undefined') return
 
   const store = useAppStore.getState()
-  const currentTheme = store.settings.theme
-  const currentIsDark = isThemeDark(currentTheme)
-  const nextIsDark = isThemeDark(nextTheme)
+  // Single source of truth for current displayed state
+  const currentIsDark = document.body.dataset.theme !== 'light'
+  const nextIsDark = nextTheme === 'light' ? false : (nextTheme === 'dark' ? true : isThemeDark('system'))
 
   const updateDOMAndState = () => {
-    document.body.dataset.theme = nextIsDark ? 'dark' : 'light'
+    const themeStr = nextIsDark ? 'dark' : 'light'
+    document.body.dataset.theme = themeStr
+    document.documentElement.dataset.theme = themeStr
+    document.documentElement.style.colorScheme = themeStr
     syncStatusBarStyle(nextIsDark)
     syncTelegramTheme(nextIsDark)
     store.updateSettings({ theme: nextTheme })
@@ -126,20 +127,19 @@ export async function transitionTheme(
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const noAnimation = store.settings.noAnimation || document.body.dataset.noAnimation === 'true'
 
-  const doc = document as unknown as {
-    startViewTransition?: (callback: () => void | Promise<void>) => ViewTransition
+  type DocumentWithTransition = Document & {
+    startViewTransition: (callback: () => void | Promise<void>) => ViewTransition
   }
-
-  const startViewTransition = doc.startViewTransition
+  const docWithTransition = document as DocumentWithTransition
 
   const canAnimate =
-    typeof startViewTransition === 'function' &&
+    typeof docWithTransition.startViewTransition === 'function' &&
     !reduceMotion &&
     !noAnimation &&
     currentIsDark !== nextIsDark
 
-  // Instant fallback for unsupported browsers, reduced-motion, or unchanged themes
-  if (!canAnimate || typeof startViewTransition !== 'function') {
+  // Instant update if animation cannot/should not run
+  if (!canAnimate) {
     updateDOMAndState()
     return
   }
@@ -147,90 +147,41 @@ export async function transitionTheme(
   const { x, y } = getOriginCoordinates(origin)
   const maxRadius = calculateMaxRadius(x, y)
 
-  const direction = nextIsDark ? 'to-dark' : 'to-light'
-  document.documentElement.dataset.themeTransition = direction
-  document.documentElement.style.setProperty('--theme-origin-x', `${x}px`)
-  document.documentElement.style.setProperty('--theme-origin-y', `${y}px`)
-  document.documentElement.style.setProperty('--theme-max-radius', `${maxRadius}px`)
-
-  const transitionId = ++activeTransitionId
   let transition: ViewTransition | undefined
 
   try {
-    // MUST call with this = document to prevent 'Illegal invocation' error on Document method
-    transition = doc.startViewTransition.call(document, () => {
+    transition = docWithTransition.startViewTransition(() => {
       try {
         flushSync(updateDOMAndState)
       } catch {
         updateDOMAndState()
       }
     })
-  } catch (err) {
-    // If startViewTransition threw immediately, guarantee theme update!
+  } catch {
+    // If startViewTransition threw, guarantee immediate DOM/state update
     updateDOMAndState()
-    if (activeTransitionId === transitionId) {
-      delete document.documentElement.dataset.themeTransition
-      document.documentElement.style.removeProperty('--theme-origin-x')
-      document.documentElement.style.removeProperty('--theme-origin-y')
-      document.documentElement.style.removeProperty('--theme-max-radius')
-    }
     return
   }
 
   try {
     await transition.ready
 
-    if (direction === 'to-dark') {
-      // Light -> Dark: Dark view expands outwards from switch
-      try {
-        document.documentElement.animate(
-          {
-            clipPath: [
-              `circle(0px at ${x}px ${y}px)`,
-              `circle(${maxRadius}px at ${x}px ${y}px)`,
-            ],
-          },
-          {
-            duration: 600,
-            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-            pseudoElement: '::view-transition-new(root)',
-            fill: 'forwards',
-          }
-        )
-      } catch {
-        // Fallback to CSS animation if pseudoElement in Element.animate is unsupported
+    const animation = document.documentElement.animate(
+      {
+        clipPath: [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${maxRadius}px at ${x}px ${y}px)`,
+        ],
+      },
+      {
+        duration: 600,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        pseudoElement: '::view-transition-new(root)',
       }
-    } else {
-      // Dark -> Light: Dark snapshot contracts into switch
-      try {
-        document.documentElement.animate(
-          {
-            clipPath: [
-              `circle(${maxRadius}px at ${x}px ${y}px)`,
-              `circle(0px at ${x}px ${y}px)`,
-            ],
-          },
-          {
-            duration: 600,
-            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-            pseudoElement: '::view-transition-old(root)',
-            fill: 'forwards',
-          }
-        )
-      } catch {
-        // Fallback to CSS animation if pseudoElement in Element.animate is unsupported
-      }
-    }
+    )
 
-    await transition.finished
+    await animation.finished.catch(() => {})
   } catch {
-    // Transition aborted or skipped
-  } finally {
-    if (activeTransitionId === transitionId) {
-      delete document.documentElement.dataset.themeTransition
-      document.documentElement.style.removeProperty('--theme-origin-x')
-      document.documentElement.style.removeProperty('--theme-origin-y')
-      document.documentElement.style.removeProperty('--theme-max-radius')
-    }
+    // Gracefully handle aborted or skipped transitions
   }
 }

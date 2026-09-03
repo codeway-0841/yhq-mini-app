@@ -60,16 +60,15 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
     const coords = rect
       ? { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 }
       : { x: e.clientX, y: e.clientY }
-    const currentIsDark =
-      theme === 'dark' ||
-      (theme === 'system' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    // Hozirgi ekrandagi haqiqiy holatdan kelib chiqib aniq almashtirish
+    const currentIsDark = typeof document !== 'undefined'
+      ? document.body.dataset.theme !== 'light'
+      : theme !== 'light'
     const next = currentIsDark ? 'light' : 'dark'
     void transitionTheme(next, coords)
   }
 
-  const isDark =
-    theme === 'dark' ||
-    (theme === 'system' && typeof window !== 'undefined' && window.matchMedia?.('(prefers-color-scheme: dark)').matches)
+  const isDark = theme === 'light' ? false : (theme === 'dark' ? true : (typeof document !== 'undefined' ? document.body.dataset.theme !== 'light' : true))
 
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline mb-3">

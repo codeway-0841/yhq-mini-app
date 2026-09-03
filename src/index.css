@@ -133,8 +133,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
 /* ── Telegram-style Circular View Transition (2026-09-03) ───────────────────
    Light ↔ Dark circular clip-path transition.
    - Disable default browser cross-fade and color blending.
-   - Light -> Dark: new view (dark) on top (z-index: 9999) expanding outward.
-   - Dark -> Light: old view (dark snapshot) on top (z-index: 9999) contracting inward.
+   - New view snapshot sits on top (z-index: 9999) and expands outward.
    - No opacity fade, no layout shift, zero duplication. */
 ::view-transition-old(root),
 ::view-transition-new(root) {
@@ -142,46 +141,12 @@ body[data-no-animation='true'] .route-page { animation: none; }
   mix-blend-mode: normal;
 }
 
-/* Light -> Dark default stacking: new dark view on top */
 ::view-transition-old(root) {
   z-index: 1;
 }
+
 ::view-transition-new(root) {
   z-index: 9999;
-}
-
-/* Dark -> Light: old dark view remains on top while contracting into the switch */
-html[data-theme-transition='to-light']::view-transition-old(root) {
-  z-index: 9999;
-}
-html[data-theme-transition='to-light']::view-transition-new(root) {
-  z-index: 1;
-}
-
-/* CSS keyframe animations for View Transitions */
-html[data-theme-transition='to-dark']::view-transition-new(root) {
-  animation: theme-reveal-expand 600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-html[data-theme-transition='to-light']::view-transition-old(root) {
-  animation: theme-reveal-contract 600ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-@keyframes theme-reveal-expand {
-  from {
-    clip-path: circle(0px at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
-  }
-  to {
-    clip-path: circle(var(--theme-max-radius, 150vmax) at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
-  }
-}
-
-@keyframes theme-reveal-contract {
-  from {
-    clip-path: circle(var(--theme-max-radius, 150vmax) at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
-  }
-  to {
-    clip-path: circle(0px at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
-  }
 }
 
 /* Accessibility & performance guards */

@@ -167,7 +167,7 @@ describe('theme-transition: transitionTheme', () => {
     expect(document.documentElement.dataset.themeTransition).toBeUndefined()
   })
 
-  it('executes Dark -> Light transition with contracting animation on ::view-transition-old', async () => {
+  it('executes Dark -> Light transition with expanding animation on ::view-transition-new', async () => {
     useAppStore.setState({
       settings: { ...useAppStore.getState().settings, theme: 'dark' },
     })
@@ -193,16 +193,17 @@ describe('theme-transition: transitionTheme', () => {
     expect(animateMock).toHaveBeenCalledWith(
       expect.objectContaining({
         clipPath: expect.arrayContaining([
-          expect.stringContaining('circle('),
           'circle(0px at 350px 60px)',
+          expect.stringContaining('circle('),
         ]),
       }),
       expect.objectContaining({
         duration: 600,
         easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-        pseudoElement: '::view-transition-old(root)',
+        pseudoElement: '::view-transition-new(root)',
       })
     )
+    expect(document.body.dataset.theme).toBe('light')
     expect(document.documentElement.dataset.themeTransition).toBeUndefined()
   })
 })
