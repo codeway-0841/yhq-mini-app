@@ -1,4 +1,5 @@
 import { ArrowLeft, Check } from 'lucide-react'
+import { createPortal } from 'react-dom'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { ACHIEVEMENTS, isUnlocked, type AchievementDef } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
@@ -61,21 +62,21 @@ export default function AchievementsScreen({ stats, tt, onClose }: {
   const sorted = [...ACHIEVEMENTS]
     .sort((a, b) => Number(isUnlocked(b, stats)) - Number(isUnlocked(a, stats)))
 
-  return (
-    <DialogOverlay onClose={onClose} labelId="ach-screen-title" position="center" className="!p-0" backdropClassName="hidden">
+  const content = (
+    <DialogOverlay onClose={onClose} labelId="ach-screen-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
       <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
-        {/* Header — ← back + sarlavha */}
-        <div className="flex items-center gap-3 px-4 pt-4 pb-3 safe-top">
+        {/* Header — SSOT safe-top header */}
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline flex items-center gap-3 px-4 py-2.5 mb-4">
           <button
             type="button"
             onClick={onClose}
             aria-label={tt('backWord')}
-            className="w-10 h-10 rounded-full flex items-center justify-center text-pfg hover:bg-psurface active:scale-95 transition-all"
+            className="size-9 rounded-xl bg-psurface flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all"
           >
-            <ArrowLeft size={22} strokeWidth={2} />
+            <ArrowLeft size={20} strokeWidth={2} />
           </button>
-          <p id="ach-screen-title" className="text-[18px] font-semibold text-pfg">{tt('achTitle')}</p>
-        </div>
+          <p id="ach-screen-title" className="text-[17px] font-bold text-pfg">{tt('achTitle')}</p>
+        </header>
 
         {/* Umumiy progress */}
         <div className="flex items-center gap-3 mx-4 mb-4 px-4 py-3 rounded-2xl bg-pcard shadow-xs">
@@ -99,4 +100,7 @@ export default function AchievementsScreen({ stats, tt, onClose }: {
       </div>
     </DialogOverlay>
   )
+
+  if (typeof document === 'undefined') return null
+  return createPortal(content, document.body)
 }

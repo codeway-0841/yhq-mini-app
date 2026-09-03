@@ -66,8 +66,8 @@ describe('bindAppBackButton — Telegram ichida (delegatsiya, xatti-harakat o\'z
 
   const bb = () => (win.Telegram as { WebApp: { BackButton: Record<string, ReturnType<typeof vi.fn>> } }).WebApp.BackButton
 
-  it('visible=true → TG BackButton; native listener QO\'SHILMAYDI (hatto APK uchun ham)', () => {
-    isNativeMock.mockReturnValue(true)
+  it('visible=true → TG BackButton', () => {
+    isNativeMock.mockReturnValue(false)
     const onBack = vi.fn()
     const cleanup = bindAppBackButton(true, onBack)
     expect(bb().show).toHaveBeenCalledOnce()
@@ -78,14 +78,23 @@ describe('bindAppBackButton — Telegram ichida (delegatsiya, xatti-harakat o\'z
   })
 
   it('visible=false → faqat TG hide, cleanup yo\'q', () => {
+    isNativeMock.mockReturnValue(false)
     expect(bindAppBackButton(false, () => {})).toBeUndefined()
     expect(bb().hide).toHaveBeenCalledOnce()
     expect(addListenerMock).not.toHaveBeenCalled()
   })
 })
 
-describe('bindAppBackButton — native APK (Telegram yo\'q)', () => {
-  it('visible=true → hardware back listener bog\'lanadi, cleanup remove() qiladi', async () => {
+describe('bindAppBackButton — native APK (hatto telegram-web-app.js yuklangan bo\'lsa ham)', () => {
+  beforeEach(() => {
+    win.Telegram = {
+      WebApp: {
+        BackButton: { show: vi.fn(), hide: vi.fn(), onClick: vi.fn(), offClick: vi.fn() },
+      },
+    }
+  })
+
+  it('visible=true → hardware back listener bog\'lanadi (TG BackButton emas), cleanup remove() qiladi', async () => {
     isNativeMock.mockReturnValue(true)
     const onBack = vi.fn()
     const cleanup = bindAppBackButton(true, onBack)

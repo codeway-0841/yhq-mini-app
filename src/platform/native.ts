@@ -58,16 +58,19 @@ export function syncStatusBarStyle(isDark: boolean): void {
  * Qaytarilgan cleanup useEffect'dan CHIQARILISHI shart.
  */
 export function bindAppBackButton(visible: boolean, onBack: () => void): (() => void) | undefined {
-  if (getTelegramWebApp()) return bindBackButton(visible, onBack)
-  if (!visible || !isNativeApp()) return undefined
-
-  const promise = App.addListener('backButton', onBack)
-  let removed = false
-  return () => {
-    if (removed) return
-    removed = true
-    promise.then((h) => h.remove()).catch(() => {})
+  if (isNativeApp()) {
+    if (!visible) return undefined
+    const promise = App.addListener('backButton', onBack)
+    let removed = false
+    return () => {
+      if (removed) return
+      removed = true
+      promise.then((h) => h.remove()).catch(() => {})
+    }
   }
+
+  if (getTelegramWebApp()) return bindBackButton(visible, onBack)
+  return undefined
 }
 
 /** Native splash'ni app init'dan keyin yashiradi. Brauzer/Telegram'da no-op. */
