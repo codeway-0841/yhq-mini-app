@@ -1,3 +1,4 @@
+import { flushSync } from 'react-dom'
 import { useAppStore } from '../store/useAppStore'
 import { syncStatusBarStyle } from '../../platform/native'
 import { syncTelegramTheme } from '../../platform/telegram'
@@ -18,6 +19,15 @@ export type OriginInput =
   | TouchEvent
   | null
   | undefined
+
+interface ViewTransition {
+  ready: Promise<void>
+  finished: Promise<void>
+  updateCallbackDone: Promise<void>
+  skipTransition: () => void
+}
+
+let activeVT: ViewTransition | null = null
 
 /**
  * Extract viewport coordinates (x, y) from event, HTMLElement, or coordinate pair.
@@ -88,15 +98,12 @@ export function isThemeDark(theme: ThemeOption): boolean {
   return true
 }
 
-let activeOverlay: HTMLElement | null = null
-let activeAnim: Animation | null = null
-
 /**
- * Executes a gentle, silky Telegram-style circular reveal theme transition:
- * - Mayin boshlanib, mayin tugaydi (cubic-bezier(0.35, 0, 0.25, 1), 480ms)
- * - 100% flicker-free: GPU-accelerated overlay yordamida har qanday mobil qurilma
- *   (Android Telegram WebView, iOS, Desktop) da 60/120 FPS da ishlaydi.
- * - Eski sahifa xotiradan yo'qolmaydi, qora freymlar va sakrashlar 0% ga tushiriladi.
+ * Option 1: Exact Telegram Ads Theme Transition
+ * - Eski qatlam (::view-transition-old) doim tepada (z-index: 9999) turadi
+ * - Dark -> Light: eski qorong'u qatlam tugmaga qarab qisqaradi (clipPath)
+ * - Light -> Dark: eski yorug' qatlamda tugmadan radial-gradient mask teshigi ochilib boradi (--theme-hole-radius)
+ * - Hech qachon oq sahifa birdan qorayib ketmaydi
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -121,74 +128,89 @@ export async function transitionTheme(
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const noAnimation = store.settings.noAnimation || document.body.dataset.noAnimation === 'true'
 
-  if (reduceMotion || noAnimation || currentIsDark === nextIsDark || !document.body) {
+  type DocumentWithTransition = Document & {
+    startViewTransition: (callback: () => void | Promise<void>) => ViewTransition
+  }
+  const docWithTransition = document as DocumentWithTransition
+
+  if (typeof docWithTransition.startViewTransition !== 'function' || reduceMotion || noAnimation || currentIsDark === nextIsDark) {
     updateDOMAndState()
     syncStatusBarStyle(nextIsDark)
     syncTelegramTheme(nextIsDark)
     return
   }
 
-  // Oldingi aktiv o'tish bo'lsa, uni to'xtatib tozalaymiz
-  if (activeOverlay) {
-    try { activeAnim?.cancel() } catch (_) {}
-    try { activeOverlay.remove() } catch (_) {}
-    activeOverlay = null
-    activeAnim = null
+  if (activeVT && typeof activeVT.skipTransition === 'function') {
+    try { activeVT.skipTransition() } catch (_) {}
   }
 
+  const vw = document.documentElement.clientWidth || window.innerWidth || 1
+  const vh = document.documentElement.clientHeight || window.innerHeight || 1
   const { x: cx, y: cy } = getOriginCoordinates(origin)
-  const vw = window.innerWidth || document.documentElement.clientWidth || 1
-  const vh = window.innerHeight || document.documentElement.clientHeight || 1
-  const maxRadius = Math.ceil(Math.hypot(Math.max(cx, vw - cx), Math.max(cy, vh - cy))) + 20
 
-  // Yangi temaning asosiy fon rangi
-  const targetBgColor = nextIsDark ? '#0d1117' : '#fafaf9'
+  const end = Math.hypot(Math.max(cx, vw - cx), Math.max(cy, vh - cy))
+  const ref = Math.hypot(vw, vh) / Math.SQRT2
+  const px = (cx / vw) * 100
+  const py = (cy / vh) * 100
+  const rpct = ref ? (end / ref) * 100 + 1 : 145
+  const collapsed = `circle(0% at ${px}% ${py}%)`
+  const covering = `circle(${rpct}% at ${px}% ${py}%)`
+  const holeRadius = Math.ceil(end * 1.05)
 
-  // GPU tezlatgichli toza doiraviy qatlam yaratish
-  const overlay = document.createElement('div')
-  overlay.className = 'theme-transition-overlay'
-  overlay.style.position = 'fixed'
-  overlay.style.top = '0'
-  overlay.style.left = '0'
-  overlay.style.width = '100vw'
-  overlay.style.height = '100vh'
-  overlay.style.zIndex = '999999'
-  overlay.style.pointerEvents = 'none'
-  overlay.style.backgroundColor = targetBgColor
-  overlay.style.clipPath = `circle(0px at ${cx}px ${cy}px)`
-  overlay.style.willChange = 'clip-path'
+  const root = document.documentElement
+  root.style.setProperty('--theme-origin-x', `${px}%`)
+  root.style.setProperty('--theme-origin-y', `${py}%`)
+  root.classList.toggle('theme-hole-reveal', nextIsDark)
 
-  document.body.appendChild(overlay)
-  activeOverlay = overlay
-
+  let vt: ViewTransition | undefined
   try {
-    const anim = overlay.animate(
-      [
-        { clipPath: `circle(0px at ${cx}px ${cy}px)` },
-        { clipPath: `circle(${maxRadius}px at ${cx}px ${cy}px)` }
-      ],
-      {
-        duration: 480,
-        easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
-        fill: 'forwards'
+    vt = docWithTransition.startViewTransition(() => {
+      try {
+        flushSync(updateDOMAndState)
+      } catch {
+        updateDOMAndState()
       }
-    )
-    activeAnim = anim
-
-    await anim.finished.catch(() => {})
-
-    // Ekran to'liq yoyilgan qatlam bilan qoplangach, orqadagi DOMni yangilaymiz
+    })
+  } catch {
     updateDOMAndState()
     syncStatusBarStyle(nextIsDark)
     syncTelegramTheme(nextIsDark)
+    root.classList.remove('theme-hole-reveal')
+    root.style.removeProperty('--theme-origin-x')
+    root.style.removeProperty('--theme-origin-y')
+    return
+  }
 
-    // Yangi tema render bo'lishi uchun 1 ta RAF kutamiz
-    await new Promise((resolve) => requestAnimationFrame(resolve))
+  activeVT = vt
+
+  try {
+    await vt.ready
+    if (activeVT !== vt) return
+
+    const animationKeyframes = nextIsDark
+      ? { '--theme-hole-radius': ['0px', `${holeRadius}px`] }
+      : { clipPath: [covering, collapsed] }
+
+    const anim = root.animate(animationKeyframes, {
+      duration: nextIsDark ? 650 : 550,
+      easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
+      fill: 'forwards',
+      pseudoElement: '::view-transition-old(root)',
+    })
+
+    await anim.finished.catch(() => {})
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
+  } catch {
+    // Graceful fallback
   } finally {
-    if (activeOverlay === overlay) {
-      activeOverlay = null
-      activeAnim = null
-      overlay.remove()
+    if (activeVT === vt) {
+      activeVT = null
+      root.classList.remove('theme-hole-reveal')
+      root.style.removeProperty('--theme-origin-x')
+      root.style.removeProperty('--theme-origin-y')
+      syncStatusBarStyle(nextIsDark)
+      syncTelegramTheme(nextIsDark)
     }
   }
 }

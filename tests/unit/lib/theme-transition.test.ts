@@ -104,82 +104,104 @@ describe('theme-transition: transitionTheme', () => {
     vi.restoreAllMocks()
   })
 
-  it('switches instantly when reduceMotion is active', async () => {
-    const originalMatchMedia = window.matchMedia
-    window.matchMedia = vi.fn().mockImplementation((query) => ({
-      matches: query.includes('prefers-reduced-motion'),
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn(),
-    }))
+  it('switches instantly without animation when document.startViewTransition is not supported', async () => {
+    const originalSVT = (document as any).startViewTransition
+    delete (document as any).startViewTransition
 
     await transitionTheme('dark')
 
     expect(document.body.dataset.theme).toBe('dark')
     expect(useAppStore.getState().settings.theme).toBe('dark')
 
-    window.matchMedia = originalMatchMedia
+    if (originalSVT) (document as any).startViewTransition = originalSVT
   })
 
   it('switches instantly when noAnimation setting is true', async () => {
+    const mockSVT = vi.fn()
+    ;(document as any).startViewTransition = mockSVT
     useAppStore.setState({
       settings: { ...useAppStore.getState().settings, noAnimation: true },
     })
 
     await transitionTheme('dark')
 
+    expect(mockSVT).not.toHaveBeenCalled()
     expect(document.body.dataset.theme).toBe('dark')
   })
 
-  it('executes Light -> Dark transition with expanding GPU circular overlay', async () => {
+  it('executes Light -> Dark transition with expanding hole mask on ::view-transition-old', async () => {
     const animateMock = vi.fn().mockReturnValue({ finished: Promise.resolve() })
-    const origAnimate = HTMLElement.prototype.animate
-    HTMLElement.prototype.animate = animateMock
+    document.documentElement.animate = animateMock
+
+    let callbackExecuted = false
+    const mockSVT = vi.fn((cb: () => void) => {
+      cb()
+      callbackExecuted = true
+      return {
+        ready: Promise.resolve(),
+        finished: Promise.resolve(),
+        updateCallbackDone: Promise.resolve(),
+        skipTransition: vi.fn(),
+      }
+    })
+    ;(document as any).startViewTransition = mockSVT
 
     await transitionTheme('dark', { x: 300, y: 50 })
 
+    expect(mockSVT).toHaveBeenCalled()
+    expect(callbackExecuted).toBe(true)
     expect(animateMock).toHaveBeenCalledWith(
-      expect.arrayContaining([
-        expect.objectContaining({ clipPath: expect.stringContaining('circle(0px at 300px 50px)') }),
-        expect.objectContaining({ clipPath: expect.stringContaining('circle(') }),
-      ]),
       expect.objectContaining({
-        duration: 480,
+        '--theme-hole-radius': expect.arrayContaining([
+          '0px',
+          expect.stringContaining('px'),
+        ]),
+      }),
+      expect.objectContaining({
+        duration: 650,
         easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
-        fill: 'forwards',
+        pseudoElement: '::view-transition-old(root)',
       })
     )
     expect(document.body.dataset.theme).toBe('dark')
-    expect(document.querySelector('.theme-transition-overlay')).toBeNull()
-
-    HTMLElement.prototype.animate = origAnimate
   })
 
-  it('executes Dark -> Light transition with expanding GPU circular overlay', async () => {
+  it('executes Dark -> Light transition with contracting clipPath on ::view-transition-old', async () => {
     useAppStore.setState({
       settings: { ...useAppStore.getState().settings, theme: 'dark' },
     })
     document.body.dataset.theme = 'dark'
 
     const animateMock = vi.fn().mockReturnValue({ finished: Promise.resolve() })
-    const origAnimate = HTMLElement.prototype.animate
-    HTMLElement.prototype.animate = animateMock
+    document.documentElement.animate = animateMock
+
+    const mockSVT = vi.fn((cb: () => void) => {
+      cb()
+      return {
+        ready: Promise.resolve(),
+        finished: Promise.resolve(),
+        updateCallbackDone: Promise.resolve(),
+        skipTransition: vi.fn(),
+      }
+    })
+    ;(document as any).startViewTransition = mockSVT
 
     await transitionTheme('light', { x: 350, y: 60 })
 
+    expect(mockSVT).toHaveBeenCalled()
     expect(animateMock).toHaveBeenCalledWith(
-      expect.arrayContaining([
-        expect.objectContaining({ clipPath: expect.stringContaining('circle(0px at 350px 60px)') }),
-        expect.objectContaining({ clipPath: expect.stringContaining('circle(') }),
-      ]),
       expect.objectContaining({
-        duration: 480,
+        clipPath: expect.arrayContaining([
+          expect.stringContaining('circle('),
+          expect.stringContaining('circle(0%'),
+        ]),
+      }),
+      expect.objectContaining({
+        duration: 550,
         easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
-        fill: 'forwards',
+        pseudoElement: '::view-transition-old(root)',
       })
     )
     expect(document.body.dataset.theme).toBe('light')
-    expect(document.querySelector('.theme-transition-overlay')).toBeNull()
-
-    HTMLElement.prototype.animate = origAnimate
   })
 })

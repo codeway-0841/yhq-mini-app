@@ -126,15 +126,58 @@ body[data-platform='native'] {
   from { opacity: 0.85; }
   to   { opacity: 1; }
 }
-/* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
-body[data-no-animation='true'] .route-page { animation: none; }
+@property --theme-hole-radius {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
 
-/* ── Telegram-style Smooth Circular Theme Overlay ─────────────────────────── */
-.theme-transition-overlay {
-  contain: strict;
+/* ── Telegram Ads Exact Circular Theme Transition ─────────────────────────── */
+::view-transition-group(root) {
+  isolation: isolate;
+  overflow: hidden;
+  animation: none;
+}
+::view-transition-image-pair(root) {
+  isolation: auto;
+  overflow: hidden;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 9999;
+  will-change: clip-path;
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+}
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+/* Light -> Dark: eski yorug' sahifa tepadaligicha qoladi va tugmadan teshik ochilib qora sahifani ko'rsatadi */
+:root.theme-hole-reveal::view-transition-old(root) {
+  z-index: 9999;
+  transform: none;
+  will-change: auto;
+  -webkit-mask-image: radial-gradient(
+    circle at var(--theme-origin-x) var(--theme-origin-y),
+    transparent 0,
+    transparent var(--theme-hole-radius),
+    #000 calc(var(--theme-hole-radius) + 1px)
+  );
+  mask-image: radial-gradient(
+    circle at var(--theme-origin-x) var(--theme-origin-y),
+    transparent 0,
+    transparent var(--theme-hole-radius),
+    #000 calc(var(--theme-hole-radius) + 1px)
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+:root.theme-hole-reveal::view-transition-new(root) {
+  z-index: 1;
 }
 
 
