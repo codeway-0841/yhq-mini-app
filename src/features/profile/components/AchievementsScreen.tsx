@@ -66,7 +66,7 @@ export default function AchievementsScreen({ stats, tt, onClose }: {
     <DialogOverlay onClose={onClose} labelId="ach-screen-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
       <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
         {/* Header — SSOT safe-top header */}
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline flex items-center gap-3 px-4 py-2.5 mb-4">
+        <header className="shrink-0 flex items-center gap-3 px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-pcanvas border-b border-pline mb-4">
           <button
             type="button"
             onClick={onClose}

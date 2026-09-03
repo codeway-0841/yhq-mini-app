@@ -96,8 +96,8 @@ export default function StreakPage() {
 
   return (
     <div className="px-5 pb-6">
-      {/* Header — silliq, qattiq oq chegarasiz, o'ng tomonda (?) info tugma */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-5 px-5 py-2.5 bg-pcanvas/95 backdrop-blur-md border-b border-pline flex items-center justify-between mb-4">
+      {/* Header — silliq, toza qattiq fon boshqa sahifalar kabi */}
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-5 px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
             className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">

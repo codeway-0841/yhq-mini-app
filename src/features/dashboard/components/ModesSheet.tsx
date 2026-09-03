@@ -30,8 +30,8 @@ export default function ModesSheet({ title, items, onClose }: {
   const content = (
     <DialogOverlay onClose={onClose} labelId="modes-sheet-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
       <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
-        {/* Header — SSOT safe-top header */}
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline flex items-center gap-3 px-4 py-2.5">
+        {/* Header — SSOT safe-top header (to'liq ekranda manfiy marginsiz) */}
+        <header className="shrink-0 flex items-center gap-3 px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-pcanvas border-b border-pline">
           <button
             type="button"
             onClick={onClose}
@@ -44,7 +44,7 @@ export default function ModesSheet({ title, items, onClose }: {
         </header>
 
         {/* 3-ustunli rejimlar panjarasi */}
-        <div className="flex-1 overflow-y-auto px-4 pt-3 pb-8 safe-bottom">
+        <div className="flex-1 overflow-y-auto px-4 py-4 safe-bottom">
           <div className="grid grid-cols-3 gap-3">
             {items.map((it) => (
               <ModeGridCard
