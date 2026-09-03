@@ -1,10 +1,9 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+﻿import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, BarChart2, Info, GraduationCap, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Sparkles, Check } from 'lucide-react'
+import { Bookmark, Share2, Flag, BarChart2, Info, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Sparkles, Check } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
-import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -16,9 +15,6 @@ import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
-import { onResultSync } from '../../shared/lib/outbox'
-import SettingsModal from '../../shared/components/SettingsModal'
-import DialogOverlay from '../../shared/components/DialogOverlay'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
@@ -27,107 +23,100 @@ import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
-import ResultsModal, { type QuestionResult } from './ResultsModal'
-import AiTutorModal from './components/AiTutorModal'
-import AntiCheatModal from './components/AntiCheatModal'
-import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
-import MarkdownExplanation from './components/MarkdownExplanation'
+import { type QuestionResult } from './ResultsModal'
+import { type ExamReviewItem } from './components/ExamReviewModal'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
 import { useTestSession } from './hooks/useTestSession'
-
-function formatImageSrc(src?: string | null): string | undefined {
-  if (!src) return undefined
-  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('/')) {
-    return src
-  }
-  return `/${src}`
-}
-
-/** Preload sliding window radiusi — joriy savoldan oldin/orqadagi rasmlar soni */
-const PRELOAD_WINDOW = 10
+import { useAntiCheat } from './hooks/useAntiCheat'
+import { useImagePreload, formatImageSrc } from './hooks/useImagePreload'
+import { useTestAnswerFlow } from './hooks/useTestAnswerFlow'
+import TestModals from './components/TestModals'
 
 export default function TestPage() {
   const { id }   = useParams()
   const navigate = useNavigate()
   const location = useLocation()
-  // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
+
   const settings       = useAppStore((s) => s.settings)
   const submitAnswer   = useAppStore((s) => s.submitAnswer)
   const toggleSaved    = useAppStore((s) => s.toggleSaved)
   const savedQuestions = useAppStore((s) => s.savedQuestions)
-  const tt          = useT(settings.language)
+  const tt             = useT(settings.language)
+
   const questions        = useQuestionsStore((s) => s.questions)
   const storeTopics      = useQuestionsStore((s) => s.topics)
   const questionsLoading = useQuestionsStore((s) => s.loading)
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
   const questionsError   = useQuestionsStore((s) => s.error)
 
-  const mode = (location.state?.mode as string | undefined) ?? null
-  /** Rasmiy imtihon preset'i ('exam:<presetId>') bo'lsa — shared/exam-presets'dan */
-  const examPreset = resolveExamMode(mode)
-  /** Rasmiy imtihon (YHQ 40 talik yoki milliy-sertifikat/attestatsiya) */
+  const mode           = (location.state?.mode as string | undefined) ?? null
+  const examPreset     = resolveExamMode(mode)
   const isOfficialExam = Boolean(examPreset) || mode === 'exam'
 
-  // ── Resumable session — Telegram WebView restart/reload'da test saqlanadi ──
   const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
 
-  // `questionsError` shartda BO'LISHI SHART: xatoda `loaded` ham, `loading` ham
-  // false qoladi, ya'ni effekt darhol qayta ishga tushib cheksiz sikl yasardi.
-  // Server butun bankni bir IP dan kuniga 20 marta beradi, shuning uchun sikl
-  // limitni bir necha soniyada yeb, 429 + 24 soatlik blokga olib kelardi va
-  // sahifa "Yuklanmoqda..."da muzlab qolardi. Qayta urinish endi qo'lda.
   useEffect(() => {
     if (!questionsLoaded && !questionsLoading && !questionsError) {
       void useQuestionsStore.getState().load(settings?.language || 'uz', subjectId)
     }
   }, [questionsLoaded, questionsLoading, questionsError, settings?.language, subjectId])
 
-  // Serverless backend'ni OLDINDAN uyg'otish + test davomida ISSIQ ushlab
-  // turish: boot'dan testgacha o'tgan vaqtda Vercel funksiyasi + Neon DB yana
-  // suspend bo'lgan bo'lishi mumkin — shunda 1-javob 5-8s cold start'ga
-  // urilib "offline"ga tushardi. Keep-alive har 4 daqiqada ping yuboradi
-  // (Neon autosuspend ~5 daq) — savolni uzoq o'qigandan keyingi javob ham
-  // cold-start yemaydi (2026-08-31).
+  // Serverless cold-start ping (har 4 daqiqada keep-alive)
   useEffect(() => api.startKeepAlive(), [])
 
-  // State initialization (needed before calling the hook)
-  const [current, setCurrent]                 = useState(0)
-  const [answers, setAnswers]                 = useState<(string | null)[]>([])
-  const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>([])
-  /** Server reveal qilgan to'g'ri variant id'lari (javobgacha null) */
-  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>([])
-  /** Server tekshiruvi kutilayotgan javob (double-submit himoyasi) */
-  const [submitting, setSubmitting]           = useState(false)
-  const [showSettings, setShowSettings]       = useState(false)
-  const [showResults, setShowResults]         = useState(false)
-  const [isFinished, setIsFinished]           = useState(false)
+  const [current, setCurrent]           = useState(0)
+  const [showSettings, setShowSettings] = useState(false)
+  const [showResults, setShowResults]   = useState(false)
+  const [isFinished, setIsFinished]     = useState(false)
+  const [showReview, setShowReview]     = useState(false)
+  const [toast, setToast]               = useState<string | null>(null)
+  const [zoomed, setZoomed]             = useState(false)
+  const [confirmExit, setConfirmExit]   = useState(false)
+  const [showExplain, setShowExplain]   = useState(false)
+  const [dbExplanation, setDbExplanation]     = useState<string | null>(null)
+  const [loadingDbExplain, setLoadingDbExplain] = useState(false)
+  const [showAiTutor, setShowAiTutor]   = useState(false)
 
-  // ── Anti-Cheat State ──
-  const [cheatViolations, setCheatViolations]         = useState(0)
-  /** Strike effektlari uchun: FAQAT o'SISHda ishga tushsin (restore/reset'da yo'q) */
-  const prevViolationsRef = useRef(0)
-  const [activeStrike, setActiveStrike]               = useState<number | null>(null)
-  const [disqualifiedByCheat, setDisqualifiedByCheat] = useState(false)
+  const handleToast = useCallback((msgKey: string) => {
+    setToast(tt(msgKey as any))
+    setTimeout(() => setToast(null), 3000)
+  }, [tt])
 
-  // ── Exam Review State ──
-  const [showReview, setShowReview] = useState(false)
+  // ── Anti-Cheat Hook ──
+  const handleDisqualify = useCallback(() => {
+    markAllUnanswered()
+    setIsFinished(true)
+    setShowResults(true)
+  }, [])
 
-  // ── useTestSession hook — manages activeQuestions and session persistence ──
+  const {
+    cheatViolations,
+    activeStrike,
+    disqualifiedByCheat,
+    dismissStrike,
+    resetViolations,
+  } = useAntiCheat({
+    isOfficialExam,
+    isFinished,
+    onDisqualify: handleDisqualify,
+  })
+
+  // ── useTestSession Hook ──
   const { activeQuestions, sessionKey } = useTestSession({
     mode,
     questionIds: location.state?.questionIds as number[] | undefined,
     questions,
     subjectId,
     stateTitle,
-    answers,
+    answers: [],
     current,
     isFinished,
     locationKey: location.key,
-    selectedHistory,
-    correctOpts,
+    selectedHistory: [],
+    correctOpts: [],
     cheatViolations,
     shuffleOptions: settings?.shuffleOptions,
   })
@@ -137,23 +126,46 @@ export default function TestPage() {
     Math.max(0, activeQuestions.length - 1)
   )
 
-  const [toast, setToast]                     = useState<string | null>(null)
-  // 🪙 #40: coin pop qayta-trigger — har mint'da +1 animatsiya (auto-hide CSS'da)
-  const [coinPop, setCoinPop]                 = useState(0)
-  const [zoomed, setZoomed]                   = useState(false)
-  const [confirmExit, setConfirmExit]         = useState(false)
-
-  const q         = activeQuestions[current]
-  // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
+  const q = activeQuestions[current]
   const answerTimer = useAnswerTimer(q?.id)
-  const selected  = selectedHistory[current] ?? null
-  const answeredStatus = answers[current]
-  // To'g'ri javob endi client'da saqlanMAYDI — faqat server javob bergach
-  // (post-answer reveal) shu massivga yoziladi.
-  const revealedId = correctOpts[current] ?? null
-  const [showExplain, setShowExplain] = useState(false)
-  const [dbExplanation, setDbExplanation] = useState<string | null>(null)
-  const [loadingDbExplain, setLoadingDbExplain] = useState(false)
+
+  const goTo = useCallback((i: number) => {
+    cancelAutoNext()
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur()
+    }
+    if (i >= 0 && i < activeQuestions.length) {
+      setCurrent(i)
+      setShowExplain(false)
+      setShowAiTutor(false)
+    }
+  }, [activeQuestions.length])
+
+  // ── useTestAnswerFlow Hook ──
+  const {
+    answers,
+    selectedHistory,
+    correctOpts,
+    submitting: _submitting,
+    coinPop,
+    selected,
+    getOptionState,
+    handleSelect,
+    cancelAutoNext,
+    restoreState,
+    markAllUnanswered,
+  } = useTestAnswerFlow({
+    activeQuestions,
+    current,
+    settings,
+    submitAnswer,
+    answerTimer,
+    goTo,
+    onToast: handleToast,
+  })
+
+  // ── Image Preload Hook ──
+  useImagePreload(activeQuestions, current)
 
   useEffect(() => {
     setDbExplanation(null)
@@ -173,11 +185,6 @@ export default function TestPage() {
     }
   }, [q?.id, dbExplanation, settings.language])
 
-  // ── AI Tutor modal state ──
-  const [showAiTutor, setShowAiTutor] = useState(false)
-
-  /** Joriy savolning modda (darslik darsi) — "Nega shunday?" izohi.
-      Mavzu → slug → MODULE_TOPICS orqali modul + lessonMap orqali aniq dars. */
   const explanation = useMemo(() => {
     if (!q?.topicId) return null
     const topic = storeTopics.find((t) => t.id === q.topicId)
@@ -199,14 +206,11 @@ export default function TestPage() {
   }, [q?.id, q?.topicId, storeTopics])
 
   const handleTimeUp = useCallback(() => {
-    setAnswers((prev) => prev.map((a) => a ?? 'unanswered'))
+    markAllUnanswered()
     setIsFinished(true)
     setShowResults(true)
-  }, [])
+  }, [markAllUnanswered])
 
-  // Exam mode: 40 questions / 30 minutes — like the real test.
-  // Rasmiy preset: muddat shared/exam-presets'dan (45sav/180daq, 50sav/120daq).
-  // Pause YO'Q — timer wall-clock (useTimer), background'da ham yuradi.
   const totalSeconds =
     examPreset            ? examPreset.durationMinutes * 60 :
     mode === 'marathon'    ? 300 * 60 :
@@ -214,32 +218,28 @@ export default function TestPage() {
     mode === 'mock'        ? 25 * 60 :
     mode === 'random100'   ? 120 * 60 :
     mode === 'random20'    ? 30 * 60 : 25 * 60
-  // Resume: timer wall-clock — sessiya boshlanganidan o'tgan vaqt ayiriladi
-  // (reload orqali imtihon vaqtini "yangilash" imkonsiz)
+
   const initialSeconds = useMemo(() => {
     const snap = useTestSessionStore.getState().session
     return isResumable(snap, sessionKey, subjectId)
       ? remainingSeconds(snap.startedAt, totalSeconds)
       : totalSeconds
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- location.key: yangi urinishda qayta hisoblash
   }, [location.key, sessionKey, subjectId, totalSeconds])
+
   const timer = useTimer(handleTimeUp, location.key, initialSeconds)
 
-  // Sessiya snapshot'ini persist'ga yozish — FAQAT hooks/useTestSession.ts'da
-  // (bu yerda dublikat effect bo'lgan — ikki manba, ikki startedAtRef: o'chirildi)
+  // Sessiyani restore qilish
   useEffect(() => {
     const snap = useTestSessionStore.getState().session
     const r = isResumable(snap, sessionKey, subjectId) ? snap : null
     const len = activeQuestions.length
     setCurrent(r ? clampIndex(r.current, len) : startIndex)
-    setAnswers(r && r.answers.length === len ? [...r.answers] : Array(len).fill(null))
-    setSelectedHistory(r && r.selected.length === len ? [...r.selected] : Array(len).fill(null))
-    setCorrectOpts(r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null))
-    setCheatViolations(r?.cheatViolations ?? 0)
-    prevViolationsRef.current = r?.cheatViolations ?? 0   // restore — strike effekti YO'Q
-    setActiveStrike(null)
-    setDisqualifiedByCheat(false)
-    setSubmitting(false)
+    restoreState(
+      r && r.answers.length === len ? [...r.answers] : Array(len).fill(null),
+      r && r.selected.length === len ? [...r.selected] : Array(len).fill(null),
+      r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null)
+    )
+    resetViolations(r?.cheatViolations ?? 0)
     setShowResults(false)
     setIsFinished(false)
     setToast(null)
@@ -247,260 +247,7 @@ export default function TestPage() {
       setToast(tt('sessionResumed'))
       setTimeout(() => setToast(null), 3000)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- tt startIndex/len o'zgarishlarida yetarli
   }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
-
-  // Savollar rasmlarini oldindan yuklash (preload) — SLIDING WINDOW (audit M-9):
-  // marathonda BUTUN bank (~5-6MB) bir yo'la yuklanib zaif tarmoqda sahifa
-  // "qotardi". Endi faqat joriy savol atrofidagi ±PRELOAD_WINDOW rasmlar fon'da
-  // yuklanadi — oyna user bilan birga surilib boradi; user savolga yetib
-  // kelganda rasm allaqachon keshda bo'ladi (internet uzilsa ham ko'rinadi).
-  useEffect(() => {
-    if (!activeQuestions || activeQuestions.length === 0) return
-
-    const from = Math.max(0, current - PRELOAD_WINDOW)
-    const to = Math.min(activeQuestions.length, current + PRELOAD_WINDOW + 1)
-    const imageSources = activeQuestions
-      .slice(from, to)
-      .map((q) => formatImageSrc(q.image))
-      .filter((src): src is string => Boolean(src))
-
-    if (imageSources.length === 0) return
-
-    const preloadedImages: HTMLImageElement[] = []
-    for (const src of imageSources) {
-      const img = new Image()
-      img.src = src
-      preloadedImages.push(img)
-    }
-
-    if (typeof caches !== 'undefined') {
-      caches.open('yhq-test-images').then((cache) => {
-        imageSources.forEach((src) => {
-          fetch(src, { mode: 'no-cors' }).then((res) => {
-            if (res.ok || res.type === 'opaque') void cache.put(src, res)
-          }).catch(() => {})
-        })
-      }).catch(() => {})
-    }
-
-    // Faqat shu oynadagi JO'NATILMAGAN yuklanishlar bekor qilinadi —
-    // kesh TEGILMAYDI (oldingi oynalar rasmi keshda qoladi, tez ochiladi).
-    return () => {
-      preloadedImages.forEach((img) => { img.src = '' })
-    }
-  }, [activeQuestions, current])
-
-  // Test yakunlanganda yoki sahifadan chiqilganda vaqtinchalik kesh tozalanadi.
-  useEffect(() => {
-    return () => {
-      if (typeof caches !== 'undefined') {
-        caches.delete('yhq-test-images').catch(() => {})
-      }
-    }
-  }, [])
-
-  // ── Anti-Cheat: Rasmiy imtihonda tab switch / blur / background aniqlash ──
-  const wasHiddenRef = useRef(false)
-  useEffect(() => {
-    if (!isOfficialExam || isFinished) return
-
-    const handleLeave = () => {
-      if (!isFinished) {
-        wasHiddenRef.current = true
-      }
-    }
-
-    const handleReturn = () => {
-      if (wasHiddenRef.current && !isFinished) {
-        wasHiddenRef.current = false
-        // L11 (audit): updater SOF — side-effect (tovush/setState) ichida YO'Q.
-        // Ta'sirlar alohida effect'da cheatViolations o'zgarishiga bog'langan
-        // (StrictMode'da updater double-fire tovush/toastni ikki marta o'ynatardi).
-        setCheatViolations((prev) => prev + 1)
-      }
-    }
-
-    const onVisibilityChange = () => {
-      if (document.hidden) handleLeave()
-      else handleReturn()
-    }
-
-    const onBlur = () => handleLeave()
-    const onFocus = () => handleReturn()
-
-    document.addEventListener('visibilitychange', onVisibilityChange)
-    window.addEventListener('blur', onBlur)
-    window.addEventListener('focus', onFocus)
-
-    return () => {
-      document.removeEventListener('visibilitychange', onVisibilityChange)
-      window.removeEventListener('blur', onBlur)
-      window.removeEventListener('focus', onFocus)
-    }
-  }, [isOfficialExam, isFinished])
-
-  // Strike effektlari — cheatViolations FAQAT o'shganda bir marta (L11; restore'da
-  // prevViolationsRef sync'langanligi sabab effekt otalmaydi; StrictMode-safe).
-  useEffect(() => {
-    const prev = prevViolationsRef.current
-    prevViolationsRef.current = cheatViolations
-    if (cheatViolations <= prev || cheatViolations === 0) return
-    if (cheatViolations >= 3) {
-      // 3-ogohlantirish: imtihon darhol to'xtatiladi
-      playSound('error')
-      haptics.notify('error')
-      setDisqualifiedByCheat(true)
-      setAnswers((a) => a.map((val) => val ?? 'unanswered'))
-      setIsFinished(true)
-      setShowResults(true)
-    } else {
-      // 1 yoki 2-ogohlantirish: ogohlantirish modalini ko'rsatish
-      playSound('error')
-      haptics.notify('warning')
-      setActiveStrike(cheatViolations)
-    }
-  }, [cheatViolations])
-
-  const autoNextTimerRef = useRef<number | null>(null)
-  const cancelAutoNext = useCallback(() => {
-    if (autoNextTimerRef.current !== null) {
-      window.clearTimeout(autoNextTimerRef.current)
-      autoNextTimerRef.current = null
-    }
-  }, [])
-  useEffect(() => cancelAutoNext, [current, cancelAutoNext])
-
-  const goTo = useCallback((i: number) => {
-    cancelAutoNext()
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur()
-    }
-    if (i >= 0 && i < activeQuestions.length) {
-      setCurrent(i)
-      setShowExplain(false)
-      setShowAiTutor(false)
-    }
-  }, [activeQuestions.length, cancelAutoNext])
-
-  const getOptionState = useCallback((optId: string) => {
-    if (!selected) return 'default'
-    // REVEAL faqat server'dan: javobgacha hech qaysi variant "to'g'ri" ko'rinmaydi
-    if (revealedId) {
-      if (optId === revealedId) return 'correct'
-      if (optId === selected && selected !== revealedId) return 'wrong'
-      return 'default'
-    }
-    // Reveal yo'q: yoki server javobi kutilmoqda, yoki offline (pending),
-    // yoki eski (reveal'siz) sessiya — o'z tanlovini status bo'yicha bo'yaymiz.
-    if (optId === selected) {
-      if (answeredStatus === 'correct') return 'correct'
-      if (answeredStatus === 'wrong')   return 'wrong'
-      return 'pending'   // submit kutilmoqda yoki offline navbatda
-    }
-    return 'default'
-  }, [selected, revealedId, answeredStatus])
-
-  const handleSelect = useCallback((optId: string) => {
-    if (selected || submitting || !q) return
-    const questionId = q.id
-    const answeredIndex = current
-    setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = optId; return next })
-    setSubmitting(true)
-
-    // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (javob kaliti client'da yo'q).
-    void (async () => {
-      const outcome = await submitAnswer(questionId, optId, answerTimer.elapsed())
-      setSubmitting(false)
-
-      // Fatal (4xx) — server QAT'IY rad etdi: javob SAQLANMADI (outbox'siz).
-      // "Offline"ga yutmaymiz: tanlovni rollback (qayta urinish mumkin) + xato toast.
-      if (outcome && 'fatal' in outcome) {
-        setSelectedHistory((prev) => { const next = [...prev]; next[answeredIndex] = null; return next })
-        setToast(tt('submitFailed'))
-        setTimeout(() => setToast(null), 3000)
-        return
-      }
-
-      // Find current index after async — activeQuestions may have changed
-      const idx = activeQuestions.findIndex(x => x.id === questionId)
-      if (idx === -1) {
-        setToast(tt('notFoundQ'))
-        setTimeout(() => setToast(null), 2500)
-        return
-      }
-
-      if (!outcome || outcome.correct === null || outcome.correctAnswer === null) {
-        // Offline — javob outbox'ga yozildi; internet qaytganda server
-        // tekshirib counterlarni yangilaydi. Indigo "pending" holat qoladi.
-        setAnswers((prev) => { const next = [...prev]; next[idx] = 'pending'; return next })
-        setToast(tt('offlineQueued'))
-        setTimeout(() => setToast(null), 2500)
-        if ((settings?.autoNextCorrect || settings?.autoNextWrong) && idx < activeQuestions.length - 1) {
-          cancelAutoNext()
-          autoNextTimerRef.current = window.setTimeout(() => {
-            autoNextTimerRef.current = null
-            goTo(idx + 1)
-          }, 800)
-        }
-        return
-      }
-
-      const isCorrect: boolean = outcome.correct
-      const revealed: string = outcome.correctAnswer
-      setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
-      setCorrectOpts((prev) => { const next = [...prev]; next[idx] = revealed; return next })
-      haptics.notify(isCorrect ? 'success' : 'error')
-      if (isCorrect) {
-        correctStreakRef.current += 1
-        // 🔥 combo: har 3 ta ketma-ket to'g'ri javobda ko'tariladigan ovoz
-        playSound(correctStreakRef.current % 3 === 0 ? 'combo' : 'success')
-        // 🪙 #40: server mint qilgan tangani vizual tasdiqlash (balans store'da yangilangan)
-        if ((outcome.coinsEarned ?? 0) > 0) {
-          setCoinPop((k) => k + 1)
-        }
-      } else {
-        correctStreakRef.current = 0
-        playSound('error')
-      }
-      const delay = isCorrect
-        ? (settings?.autoNextCorrect ? 800 : null)
-        : (settings?.autoNextWrong ? 1200 : null)
-      if (delay !== null) {
-        cancelAutoNext()
-        autoNextTimerRef.current = window.setTimeout(() => {
-          autoNextTimerRef.current = null
-          goTo(idx + 1)
-        }, delay)
-      }
-    })()
-  }, [selected, submitting, current, q, settings, submitAnswer, cancelAutoNext, goTo, tt, activeQuestions, answerTimer])
-
-  // Offline holatda yuborilgan javoblar internet ulanganda darhol TestPage'da ham yangilansin
-  useEffect(() => {
-    return onResultSync((info) => {
-      // Duplicate replay (server token'ni avval qabul qilgan): javob allaqachon
-      // ekranda ko'rsatilgan — TEGMANG. duplicate'da res.correct null/false
-      // bo'lgani uchun eski kod savolni qizil "wrong" qilib bo'yardi
-      // (useAppStore'dagi guard bilan bir xil — useAppStore.ts:181).
-      if (info.duplicate) return
-      const idx = activeQuestions.findIndex((x) => x.id === info.questionId)
-      if (idx !== -1) {
-        setAnswers((prev) => {
-          const next = [...prev]
-          next[idx] = info.correct ? 'correct' : 'wrong'
-          return next
-        })
-        if (info.correctAnswer) {
-          setCorrectOpts((prev) => {
-            const next = [...prev]
-            next[idx] = info.correctAnswer!
-            return next
-          })
-        }
-      }
-    })
-  }, [activeQuestions])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({
@@ -525,7 +272,6 @@ export default function TestPage() {
     [activeQuestions, answers, selectedHistory, correctOpts, storeTopics, settings.language],
   )
 
-  /** Rasmiy imtihon yakuni — mavzular kesimida diagnostika (eng zaif birinchi) */
   const topicBreakdown = useMemo(() =>
     buildTopicBreakdown(
       activeQuestions.map((q, i) => ({
@@ -536,11 +282,10 @@ export default function TestPage() {
       settings.language,
       tt('topicGeneral'),
     ),
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- tt til o'zgarishi bilan yangilanadi
-    [activeQuestions, answers, storeTopics, settings.language],
+    [activeQuestions, answers, storeTopics, settings.language]
   )
 
-  // Mock imtihon: 2+ xato — "yiqildingiz" (darhol yakunlanadi, bilet qoidasi)
+  // Mock imtihon: 2+ xato bo'lsa darhol yakunlash
   const wrongCount = answers.filter((a) => a === 'wrong').length
   useEffect(() => {
     if (mode !== 'mock' || isFinished || wrongCount < 2) return
@@ -560,26 +305,18 @@ export default function TestPage() {
     }
   }, [answers, tt])
 
-  // "Qayta" — shu rejimni 1-savoldan qayta boshlaydi (yangi aralashtirish:
-  // location.key o'zgarishi activeQuestions memo'sini ham yangilaydi)
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
-    // Yangi urinish: eski sessiyani tozalash — aks holda key === match bo'lib RESUME bo'lardi
     useTestSessionStore.getState().clear()
     navigate('/test/1', { replace: true, state: location.state })
   }, [navigate, activeQuestions.length, location.state])
 
-  // "Yakunlash" — dashboardga emas, test boshlangan sahifaga qaytaradi
   const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
-  // Savol almashganda / sahifadan chiqilganda ovoz to'xtatiladi (TTS)
   useEffect(() => { stopSpeaking() }, [current])
 
-  // Exit confirm: first tap shows the warning, second tap within 3 s really exits
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  // 🔥 Ketma-ket to'g'ri javoblar hisoblagichi (combo ovozi uchun)
-  const correctStreakRef = useRef(0)
 
   const handleBack = useCallback(() => {
     const answered = answers.filter((a) => a !== null && a !== 'unanswered').length
@@ -593,7 +330,6 @@ export default function TestPage() {
     exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 8000)
   }, [answers, isFinished, confirmExit, navigate, tt])
 
-  // Warn when closing/reloading the page mid-test
   useEffect(() => {
     const answeredCount = answers.filter((a) => a !== null && a !== 'unanswered').length
     if (answeredCount === 0 || isFinished) return
@@ -637,69 +373,64 @@ export default function TestPage() {
 
   return (
     <div className="flex flex-col bg-pcanvas">
-      {/* Kichik ekran (<380px, iPhone SE 320) sig'im: 6 tugmali header
-          to'lib ketmasligi uchun px/gap/tugma o'lchamlari qisqaradi;
-          380px+'dan eski hajm (Playwright-verified: 320px'da timer
-          matni kesilmasligi shart) */}
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
         <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-2.5">
-        <div className="flex items-center gap-1 min-[380px]:gap-2">
-          <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
-            className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-150 ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
-            {confirmExit
-              ? <X size={17} strokeWidth={1.75} />
-              : <ChevronLeft size={18} strokeWidth={1.75} />}
-          </button>
-          <button onClick={() => toggleSaved(q.id)}
-            aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-            className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
-            <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
-            <span className="hidden sm:inline">{tt('saveBtn')}</span>
-          </button>
-          <button
-            onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
-            aria-label={tt('shareApp')}
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
-            <Share2 size={16} />
-            <span className="hidden sm:inline">{tt('shareApp')}</span>
-          </button>
-        </div>
-
-        <div className="flex min-w-0 items-center gap-1.5 rounded-xl bg-psurface px-2.5 min-[380px]:px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-xs" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
-          <Timer size={14} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" aria-hidden="true" />
-          <span className="whitespace-nowrap text-sm font-semibold tabular-nums text-pfg">{timer}</span>
-        </div>
-
-        {/* Mock imtihon: xatolar hisoblagichi (2 ta = yiqildingiz) */}
-        {mode === 'mock' && (
-          <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl shadow-xs ${
-            wrongCount > 0 ? 'bg-pdanger/10 text-pdanger' : 'bg-psurface text-psubtle'
-          }`}>
-            <X size={12} strokeWidth={2} aria-hidden="true" />
-            <span className="text-[12px] font-semibold tabular-nums">{wrongCount}/2</span>
-          </div>
-        )}
-
-        <div className="flex items-center gap-1 min-[380px]:gap-2">
-          {isFinished && (
-            <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-              <BarChart2 size={17} />
+          <div className="flex items-center gap-1 min-[380px]:gap-2">
+            <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
+              className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-150 ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
+              {confirmExit
+                ? <X size={17} strokeWidth={1.75} />
+                : <ChevronLeft size={18} strokeWidth={1.75} />}
             </button>
+            <button onClick={() => toggleSaved(q.id)}
+              aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
+              className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
+              <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
+              <span className="hidden sm:inline">{tt('saveBtn')}</span>
+            </button>
+            <button
+              onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
+              aria-label={tt('shareApp')}
+              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
+              <Share2 size={16} />
+              <span className="hidden sm:inline">{tt('shareApp')}</span>
+            </button>
+          </div>
+
+          <div className="flex min-w-0 items-center gap-1.5 rounded-xl bg-psurface px-2.5 min-[380px]:px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-xs" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+            <Timer size={14} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" aria-hidden="true" />
+            <span className="whitespace-nowrap text-sm font-semibold tabular-nums text-pfg">{timer}</span>
+          </div>
+
+          {mode === 'mock' && (
+            <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl shadow-xs ${
+              wrongCount > 0 ? 'bg-pdanger/10 text-pdanger' : 'bg-psurface text-psubtle'
+            }`}>
+              <X size={12} strokeWidth={2} aria-hidden="true" />
+              <span className="text-[12px] font-semibold tabular-nums">{wrongCount}/2</span>
+            </div>
           )}
-          <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-            <SettingsIcon className="size-[17px]" />
-          </button>
-          <button
-            onClick={() => { setIsFinished(true); setShowResults(true) }}
-            aria-label="Testni yakunlash"
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-            <Flag size={16} />
-          </button>
+
+          <div className="flex items-center gap-1 min-[380px]:gap-2">
+            {isFinished && (
+              <button onClick={() => setShowResults(true)} aria-label="Natijalar"
+                className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+                <BarChart2 size={17} />
+              </button>
+            )}
+            <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
+              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+              <SettingsIcon className="size-[17px]" />
+            </button>
+            <button
+              onClick={() => { setIsFinished(true); setShowResults(true) }}
+              aria-label="Testni yakunlash"
+              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+              <Flag size={16} />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
       {toast && (
         <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-center text-[12.5px] font-medium text-pfg shadow-xs">
@@ -708,7 +439,6 @@ export default function TestPage() {
         </div>
       )}
 
-      {/* #40: mint bo'lgan tanga — suzuvchi pop (CSS animatsiya, 1.2s) */}
       {coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
           <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.18)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold shadow-xs">
@@ -728,7 +458,6 @@ export default function TestPage() {
                 {current + 1} / {activeQuestions.length}
                 {topicLabel ? ` · ${topicLabel}` : ''}
               </p>
-              {/* 🔊 Ovozli o'qish (TTS) */}
               <button
                 onClick={(e) => {
                   e.stopPropagation()
@@ -745,7 +474,6 @@ export default function TestPage() {
               {q.text}
             </p>
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
-              {/* "Nega shunday?" — javobdan keyin modda/izoh tugmasi */}
               {selected && (
                 <button onClick={handleOpenExplain}
                   aria-label={tt('whyThis')}
@@ -754,7 +482,6 @@ export default function TestPage() {
                   {tt('whyThis')}
                 </button>
               )}
-              {/* AI Tutor — HAMMA javobdan keyin */}
               {selected && (
                 <button onClick={() => setShowAiTutor(true)}
                   aria-label={tt('askAiExplain')}
@@ -765,9 +492,6 @@ export default function TestPage() {
             </div>
           </div>
           {q.image && (
-            /* Rasmlar PORTRAIT (juda baland, masalan 253x1179). Fixed px balandlik
-               kichraytirib tashlaydi — shuning uchun max-h viewportga nisbatan:
-               rasm natural o'lchamda, lekin ekrandan tashqariga chiqmaydi */
             <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
               onClick={() => {
                 setZoomed(true)
@@ -794,7 +518,6 @@ export default function TestPage() {
         </div>
       </div>
 
-      {/* Yakunlash tugmasi (faqat oxirgi savolga yetganda yoki barchasiga javob berilganda) */}
       {(isLast || allAnswered) && (
         <div className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40">
           <button onClick={handleYakunlash}
@@ -805,111 +528,51 @@ export default function TestPage() {
         </div>
       )}
 
-      {showResults && (
-        <ResultsModal results={buildResults()} onRetry={handleRetry}
-          threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
-          hideVerdict={!!examPreset}
-          topicBreakdown={(isOfficialExam || !!examPreset || mode === 'exam' || mode === 'mock') ? topicBreakdown : undefined}
-          disqualifiedByCheat={disqualifiedByCheat}
-          onOpenReview={() => setShowReview(true)}
-          onFinish={handleFinishFromModal} onGoToQuestion={handleGoToQuestion} />
-      )}
-      {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
+      {/* Composition Modals Container */}
+      <TestModals
+        showResults={showResults}
+        results={buildResults()}
+        onRetry={handleRetry}
+        threshold={mode === 'exam' ? 90 : mode === 'mock' ? 95 : 80}
+        hideVerdict={!!examPreset}
+        topicBreakdown={(isOfficialExam || !!examPreset || mode === 'exam' || mode === 'mock') ? topicBreakdown : undefined}
+        disqualifiedByCheat={disqualifiedByCheat}
+        onOpenReview={() => setShowReview(true)}
+        onFinishFromModal={handleFinishFromModal}
+        onGoToQuestion={handleGoToQuestion}
 
-      {/* Imtihon tahlili modali */}
-      {showReview && (
-        <ExamReviewModal
-          items={buildReviewItems()}
-          language={settings.language}
-          onClose={() => setShowReview(false)}
-        />
-      )}
+        showSettings={showSettings}
+        onCloseSettings={() => setShowSettings(false)}
 
-      {/* Anti-Cheat ogohlantirish modali */}
-      {activeStrike !== null && (
-        <AntiCheatModal
-          strike={activeStrike}
-          language={settings?.language ?? 'uz'}
-          onDismiss={() => setActiveStrike(null)}
-        />
-      )}
+        showReview={showReview}
+        reviewItems={buildReviewItems()}
+        language={settings.language}
+        onCloseReview={() => setShowReview(false)}
 
-      {/* "Nega shunday?" — modda izohi (bottom sheet) */}
-      {showExplain && (
-        <DialogOverlay onClose={() => setShowExplain(false)} labelId="explain-title">
-          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-5 pb-8 max-h-[85vh] flex flex-col shadow-2xl"
-            onClick={(e) => e.stopPropagation()}>
-            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 flex-shrink-0" />
-            <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-              <div className="size-9 rounded-xl bg-pwarning/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
-                <Info size={17} className="text-pwarning" />
-              </div>
-              <p id="explain-title" className="text-[15px] font-semibold text-pfg">
-                {tt('whyThis')}
-              </p>
-            </div>
+        activeStrike={activeStrike}
+        onDismissStrike={dismissStrike}
 
-            <div className="flex-1 overflow-y-auto pr-1">
-              {loadingDbExplain ? (
-                <div className="flex items-center justify-center py-8 gap-2 text-pmuted">
-                  <div className="w-5 h-5 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
-                  <span className="text-xs">{tt('loadingDots')}</span>
-                </div>
-              ) : dbExplanation ? (
-                <div className="bg-pcard p-3.5 rounded-2xl shadow-xs">
-                  <MarkdownExplanation content={dbExplanation} />
-                </div>
-              ) : explanation ? (
-                <div>
-                  <p className="text-xs font-semibold text-pprimary mb-1.5">
-                    {settings?.language === 'ru' ? explanation.lesson.titleRu : explanation.lesson.titleUz}
-                  </p>
-                  {(settings?.language === 'ru' ? explanation.lesson.bodyRu : explanation.lesson.bodyUz)
-                    .slice(0, 3).map((p, i) => (
-                      <p key={i} className="text-[13px] text-pmuted leading-relaxed mb-2">{p}</p>
-                    ))}
-                </div>
-              ) : (
-                <p className="text-xs text-pmuted py-4 text-center">
-                  {settings?.language === 'ru' ? 'Пояснение к этому вопросу скоро будет добавлено.' : "Ushbu savol uchun izoh tez kunda qo'shiladi."}
-                </p>
-              )}
-            </div>
+        showExplain={showExplain}
+        onCloseExplain={() => setShowExplain(false)}
+        loadingDbExplain={loadingDbExplain}
+        dbExplanation={dbExplanation}
+        lessonExplanation={explanation}
+        onOpenModuleLesson={(modId) => {
+          navigate('/darslik', { state: { moduleId: modId, lessonIdx: 0 } })
+        }}
+        tt={tt}
+        settings={settings}
 
-            {explanation && (
-              <button
-                onClick={() => {
-                  setShowExplain(false)
-                  navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
-                }}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full mt-4 py-3 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0 shadow-md">
-                <GraduationCap size={16} />
-                {tt('openModule')}
-              </button>
-            )}
-          </div>
-        </DialogOverlay>
-      )}
+        showAiTutor={showAiTutor}
+        onCloseAiTutor={() => setShowAiTutor(false)}
+        currentQuestion={q}
+        selectedOption={selected}
+        isAnswerCorrect={answers[current] === 'correct'}
 
-      {/* AI Tutor modal */}
-      {showAiTutor && q && selected && (
-        <AiTutorModal
-          questionId={q.id}
-          selectedOptionId={selected}
-          isCorrect={answers[current] === 'correct'}
-          onClose={() => setShowAiTutor(false)}
-          language={settings.language}
-        />
-      )}
-
-      {/* Interactive pinch & pan image zoom modal */}
-      {zoomed && q.image && (
-        <ImageZoomModal
-          src={formatImageSrc(q.image)!}
-          alt={`${tt('question')} ${current + 1}`}
-          onClose={() => setZoomed(false)}
-        />
-      )}
+        zoomed={zoomed}
+        onCloseZoom={() => setZoomed(false)}
+        currentIndex={current}
+      />
     </div>
   )
 }
