@@ -133,4 +133,29 @@ describe('test-session utils', () => {
       expect(remainingSeconds(startedAt, totalSeconds, nowMs)).toBe(0)
     })
   })
+
+  describe('allAnswered logic (Yakunlash tugmasi miltillashi regression himoyasi)', () => {
+    const isAllAnswered = (answers: (string | null)[], totalCount: number) =>
+      answers.length > 0 &&
+      answers.length === totalCount &&
+      answers.every((a) => a !== null && a !== 'unanswered')
+
+    it('boshlang\'ich bo\'sh answers massivida false qaytaradi (Yakunlash chiqib ketmaydi)', () => {
+      expect(isAllAnswered([], 20)).toBe(false)
+    })
+
+    it('null yoki unanswered elementlar bo\'lganda false qaytaradi', () => {
+      expect(isAllAnswered([null, null, null], 3)).toBe(false)
+      expect(isAllAnswered(['correct', null, 'wrong'], 3)).toBe(false)
+      expect(isAllAnswered(['correct', 'unanswered', 'correct'], 3)).toBe(false)
+    })
+
+    it('uzunlik savollar soniga teng bo\'lmaganda false qaytaradi', () => {
+      expect(isAllAnswered(['correct', 'wrong'], 3)).toBe(false)
+    })
+
+    it('barcha savollarga to\'liq javob berilganda true qaytaradi', () => {
+      expect(isAllAnswered(['correct', 'wrong', 'correct'], 3)).toBe(true)
+    })
+  })
 })

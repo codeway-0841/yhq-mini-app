@@ -624,8 +624,11 @@ export default function TestPage() {
   }
 
   const isSaved     = savedQuestions.includes(questionKey(subjectId, q.id))
-  const isLast      = current === activeQuestions.length - 1
-  const allAnswered = answers.every((a) => a !== null && a !== 'unanswered')
+  const isLast      = activeQuestions.length > 0 && current === activeQuestions.length - 1
+  const allAnswered =
+    answers.length > 0 &&
+    answers.length === activeQuestions.length &&
+    answers.every((a) => a !== null && a !== 'unanswered')
   const topicLabel  = (() => {
     if (location.state?.title) return location.state.title
     const topic = storeTopics.find(t => t.id === q.topicId)
