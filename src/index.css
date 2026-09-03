@@ -138,13 +138,7 @@ body[data-no-animation='true'] .route-page { animation: none; }
 }
 
 ::view-transition-group(root) {
-  isolation: isolate;
-  overflow: hidden;
   animation: none;
-}
-::view-transition-image-pair(root) {
-  isolation: auto;
-  overflow: hidden;
 }
 
 ::view-transition-old(root),

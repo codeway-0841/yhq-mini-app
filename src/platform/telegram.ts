@@ -121,19 +121,19 @@ export function syncTelegramSafeArea(): void {
 export function syncTelegramTheme(isDark: boolean): void {
   const color = isDark ? '#0d1117' : '#fafaf9'
   if (typeof document !== 'undefined') {
-    const metaTheme = document.querySelector('meta[name="theme-color"]')
-    if (metaTheme) metaTheme.setAttribute('content', color)
-    document.documentElement.style.backgroundColor = color
-    if (document.body) {
-      document.body.style.backgroundColor = color
+    let metaTheme = document.querySelector('meta[name="theme-color"]')
+    if (!metaTheme) {
+      metaTheme = document.createElement('meta')
+      metaTheme.setAttribute('name', 'theme-color')
+      document.head.appendChild(metaTheme)
     }
+    metaTheme.setAttribute('content', color)
   }
 
   const tg = getTelegramWebApp()
   if (!tg) return
   try {
     tg.setHeaderColor?.(color)
-    tg.setBackgroundColor?.(color)
   } catch {}
 }
 

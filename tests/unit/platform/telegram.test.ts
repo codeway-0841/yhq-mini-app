@@ -120,21 +120,18 @@ describe('Telegram ichida', () => {
     expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
   })
 
-  it('syncTelegramTheme: dark/light temalarda headerColor va backgroundColor sinxronlanadi', async () => {
+  it('syncTelegramTheme: dark/light temalarda headerColor va meta theme-color sinxronlanadi', async () => {
     const { syncTelegramTheme } = await import('../../../src/platform/telegram')
     const tg = webApp()
     tg.setHeaderColor = vi.fn()
-    tg.setBackgroundColor = vi.fn()
 
     syncTelegramTheme(true)
     expect(tg.setHeaderColor).toHaveBeenCalledWith('#0d1117')
-    expect(tg.setBackgroundColor).toHaveBeenCalledWith('#0d1117')
-    expect(document.documentElement.style.backgroundColor).toBe('rgb(13, 17, 23)')
+    expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#0d1117')
 
     syncTelegramTheme(false)
     expect(tg.setHeaderColor).toHaveBeenCalledWith('#fafaf9')
-    expect(tg.setBackgroundColor).toHaveBeenCalledWith('#fafaf9')
-    expect(document.documentElement.style.backgroundColor).toBe('rgb(250, 250, 249)')
+    expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#fafaf9')
   })
 
   it('bindBackButton: Telegram headerColor qayta mustahkamlanadi', async () => {
