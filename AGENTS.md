@@ -1,6 +1,6 @@
-# AGENTS.md — YHQ Mini App
+# AGENTS.md — KIVVI (Universal ta'lim platformasi)
 
-Telegram WebApp: Yo'l harakati qoidalari (+ kelajakda boshqa fanlar) uchun o'quv platformasi.
+Telegram WebApp va Android APK: Barcha fanlar bo'yicha zamonaviy ta'lim va imtihonlarga tayyorgarlik platformasi (Rus tili, Yo'l harakati qoidalari, Fizika, Matematika, Kimyo, Ingliz tili, Tarix, Biologiya, attestatsiya va milliy sertifikatlar).
 
 ## Stack
 

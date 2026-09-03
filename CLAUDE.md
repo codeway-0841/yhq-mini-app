@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-YHQ Mini App — Telegram WebApp for studying Yo'l harakati qoidalari (traffic rules) and other academic subjects. Deployed on Vercel (API + SPA) with a separate WebSocket server on Render for real-time PvP duels.
+KIVVI — Telegram WebApp & Android APK: Universal learning and exam preparation platform for multiple academic subjects, national certificates, teacher attestation, and tests (Russian language, Traffic Rules/YHQ, Mathematics, Physics, Chemistry, English, History, Biology, etc.). Deployed on Vercel (API + SPA) with a separate WebSocket server on Render for real-time PvP duels.
 
 ## Commands
 

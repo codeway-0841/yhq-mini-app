@@ -116,8 +116,8 @@ export const copy = {
     popular: { uz: 'Eng ommabop', ru: 'Самый популярный' } as Pair,
     cta: { uz: 'Boshlash', ru: 'Начать' } as Pair,
     freeFeatures: {
-      uz: ['1 000+ rasmiy YHQ savollari va biletlar', 'PvP duellar, reyting va boss janglari', 'Kunlik vazifalar, coinlar va merch', 'Belgilar o‘yini va flashcards'],
-      ru: ['1 000+ официальных вопросов и билетов ПДД', 'PvP-дуэли, рейтинг и битвы с боссом', 'Ежедневные задания, монеты и мерч', 'Игра знаков и флешкарты'],
+      uz: ['10 000+ rasmiy savollar va test biletlari', 'PvP duellar, reyting va boss janglari', 'Kunlik vazifalar, coinlar va merch', 'Interaktiv mashqlar va flashcards'],
+      ru: ['10 000+ официальных вопросов и тестовых билетов', 'PvP-дуэли, рейтинг и битвы с боссом', 'Ежедневные задания, монеты и мерч', 'Интерактивные упражнения и флешкарты'],
     },
     note: {
       uz: 'To‘lov Click yoki Payme orqali — xavfsiz. Promokod bilan chegirma mavjud. Obunani istalgan payt yangilamaslik mumkin — u o‘z-o‘zidan tugaydi.',

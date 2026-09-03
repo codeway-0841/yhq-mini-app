@@ -1,4 +1,4 @@
-# 🗺 YHQ Mini App — Qolgan ishlar (Roadmap)
+# 🗺 KIVVI — Qolgan ishlar (Roadmap)
 
 > 2026-08-26 holati. To'liq senior production audit yakunland: **4 CRITICAL + 13 HIGH + 12 MEDIUM/LOW** yopildi.
 > CI: ✅ 672 test · build yashil · prod sog'lom.
