@@ -1,24 +1,90 @@
-import { useMemo, useEffect, useRef } from 'react'
+﻿import { useMemo, useEffect, useRef } from 'react'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
 import { makeSessionKey, isResumable } from '../../../shared/lib/test-session'
 import { shuffleArray } from '../../../shared/lib/seeded'
 import { resolveExamMode } from '../../../../shared/exam-presets'
 import type { Question } from '../../../shared/api'
 
-interface UseTestSessionParams {
-  mode: string | null
-  questionIds?: number[]
-  questions: Question[]
-  subjectId: string
-  stateTitle?: string
-  answers: (string | null)[]
-  current: number
-  isFinished: boolean
-  locationKey: string
-  selectedHistory: (string | null)[]
-  correctOpts: (string | null)[]
+export interface UseTestSessionSaveParams {
+  sessionKey:       string
+  subjectId:        string
+  mode:             string | null
+  stateTitle?:      string
+  activeQuestions:  Question[]
+  current:          number
+  answers:          (string | null)[]
+  selectedHistory:  (string | null)[]
+  correctOpts:      (string | null)[]
   cheatViolations?: number
-  shuffleOptions?: boolean
+  isFinished:       boolean
+  locationKey:      string
+}
+
+/**
+ * Snapshot persistence hook: har javob yoki holat o'zgarganda
+ * useTestSessionStore ga saqlaydi.
+ */
+export function useTestSessionSave(params: UseTestSessionSaveParams) {
+  const {
+    sessionKey,
+    subjectId,
+    mode,
+    stateTitle,
+    activeQuestions,
+    current,
+    answers,
+    selectedHistory,
+    correctOpts,
+    cheatViolations,
+    isFinished,
+    locationKey,
+  } = params
+
+  const startedAtRef = useRef<number | null>(null)
+
+  // Retry startedAt reset (audit HIGH-1)
+  useEffect(() => {
+    startedAtRef.current = null
+  }, [locationKey])
+
+  useEffect(() => {
+    if (!activeQuestions.length) return
+    const store = useTestSessionStore.getState()
+    const existing = store.session
+    if (startedAtRef.current == null) {
+      startedAtRef.current = isResumable(existing, sessionKey, subjectId) ? existing.startedAt : Date.now()
+    }
+    store.save({
+      key:             sessionKey,
+      subjectId,
+      mode,
+      title:           stateTitle,
+      questionIds:     activeQuestions.map((x) => x.id),
+      current,
+      answers,
+      selected:        selectedHistory,
+      correctOptions:  correctOpts,
+      cheatViolations,
+      startedAt:       startedAtRef.current,
+      finished:        isFinished,
+    })
+  }, [activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
+}
+
+interface UseTestSessionParams {
+  mode:             string | null
+  questionIds?:     number[]
+  questions:        Question[]
+  subjectId:        string
+  stateTitle?:      string
+  answers?:         (string | null)[]
+  current?:         number
+  isFinished?:      boolean
+  locationKey:      string
+  selectedHistory?: (string | null)[]
+  correctOpts?:     (string | null)[]
+  cheatViolations?: number
+  shuffleOptions?:  boolean
 }
 
 export function useTestSession(params: UseTestSessionParams) {
@@ -29,8 +95,8 @@ export function useTestSession(params: UseTestSessionParams) {
     subjectId,
     stateTitle,
     answers,
-    current,
-    isFinished,
+    current = 0,
+    isFinished = false,
     locationKey,
     selectedHistory,
     correctOpts,
@@ -40,13 +106,10 @@ export function useTestSession(params: UseTestSessionParams) {
 
   const examPreset = resolveExamMode(mode)
   const sessionKey = makeSessionKey(mode, questionIds)
-  const startedAtRef = useRef<number | null>(null)
 
   // ── Resumable session — activeQuestions computation ──
   const activeQuestions = useMemo(() => {
     let result: Question[]
-    // RESUME: saqlangan sessiya savollarining ASL tartibi qayta yig'iladi
-    // (yangi shuffle EMAS — javoblar indeks bo'yicha bog'langan)
     const snap = useTestSessionStore.getState().session
     if (isResumable(snap, sessionKey, subjectId) && snap.questionIds.length) {
       const byId = new Map(questions.map((x) => [x.id, x]))
@@ -61,7 +124,6 @@ export function useTestSession(params: UseTestSessionParams) {
       result = questions.filter((q) => idSet.has(q.id))
     } else {
       const shuffled = () => [...questions].sort(() => Math.random() - 0.5)
-      // Rasmiy imtihon preset'i (milliy-sertifikat 45, attestatsiya 50)
       if (examPreset) {
         result = shuffled().slice(0, Math.min(examPreset.questionCount, questions.length))
       } else {
@@ -88,44 +150,26 @@ export function useTestSession(params: UseTestSessionParams) {
       ...q,
       options: shuffleArray(q.options),
     }))
-  // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: sahifaga har KIRISHDA yangi aralashtirish (re-shuffle) trigger'i; memo ichida o'qilmasa ham faqat identity o'zgarishi kerak.
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: yangi aralashtirish trigger'i
   }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
 
-  // ── Retry startedAt reset (audit HIGH-1) ────────────────────────────────
-  // "Qayta urinish" sahifani REMOUNT qilmaydi — faqat navigate(replace) orqali
-  // location.key yangilanadi. startedAtRef eski qiymatda qolib, yangi urinish
-  // ESKI startedAt bilan saqlanardi → reload'da remainingSeconds=0 → instant
-  // "vaqt tugadi". Har yangi location.key'da ref'ni tozalaymiz — save effect
-  // (pastda) keyin resumed sessiyani o'zi tanlaydi yoki Date.now() yozadi.
-  // MUHIM: bu effect save effect'dan YUQORIDA bo'lishi SHART (React effect'lar
-  // e'lon tartibida ishlaydi) — reset avval, save keyin.
-  useEffect(() => {
-    startedAtRef.current = null
-  }, [locationKey])
-
-  // ── Session save — snapshot persistence ──
-  useEffect(() => {
-    if (!activeQuestions.length) return
-    const store = useTestSessionStore.getState()
-    const existing = store.session
-    if (startedAtRef.current == null) {
-      startedAtRef.current = isResumable(existing, sessionKey, subjectId) ? existing.startedAt : Date.now()
-    }
-    store.save({
-      key:             sessionKey,
+  // Agar answers parametr sifatida berilgan bo'lsa (mavjud testlar bilan moslik uchun)
+  if (answers !== undefined && selectedHistory !== undefined && correctOpts !== undefined) {
+    useTestSessionSave({
+      sessionKey,
       subjectId,
       mode,
-      title:           stateTitle,
-      questionIds:     activeQuestions.map((x) => x.id),
+      stateTitle,
+      activeQuestions,
       current,
       answers,
-      selected:        selectedHistory,
-      correctOptions:  correctOpts,
+      selectedHistory,
+      correctOpts,
       cheatViolations,
-      startedAt:       startedAtRef.current,
-      finished:        isFinished,
+      isFinished,
+      locationKey,
     })
-  }, [activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
+  }
 
   return {
     activeQuestions,

@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { Bookmark, Share2, Flag, BarChart2, Info, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Sparkles, Check } from 'lucide-react'
@@ -28,7 +28,7 @@ import { type ExamReviewItem } from './components/ExamReviewModal'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
-import { useTestSession } from './hooks/useTestSession'
+import { useTestSession, useTestSessionSave } from './hooks/useTestSession'
 import { useAntiCheat } from './hooks/useAntiCheat'
 import { useImagePreload, formatImageSrc } from './hooks/useImagePreload'
 import { useTestAnswerFlow } from './hooks/useTestAnswerFlow'
@@ -104,20 +104,14 @@ export default function TestPage() {
     onDisqualify: handleDisqualify,
   })
 
-  // ── useTestSession Hook ──
+  // ── useTestSession Hook (activeQuestions & sessionKey) ──
   const { activeQuestions, sessionKey } = useTestSession({
     mode,
     questionIds: location.state?.questionIds as number[] | undefined,
     questions,
     subjectId,
     stateTitle,
-    answers: [],
-    current,
-    isFinished,
     locationKey: location.key,
-    selectedHistory: [],
-    correctOpts: [],
-    cheatViolations,
     shuffleOptions: settings?.shuffleOptions,
   })
 
@@ -162,6 +156,22 @@ export default function TestPage() {
     answerTimer,
     goTo,
     onToast: handleToast,
+  })
+
+  // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
+  useTestSessionSave({
+    sessionKey,
+    subjectId,
+    mode,
+    stateTitle,
+    activeQuestions,
+    current,
+    answers,
+    selectedHistory,
+    correctOpts,
+    cheatViolations,
+    isFinished,
+    locationKey: location.key,
   })
 
   // ── Image Preload Hook ──

@@ -1,143 +1,236 @@
-﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
+﻿import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import { useState, useCallback, useRef } from 'react'
-import type { SubmitResult } from '../../../src/shared/store/useAppStore'
+import { useTestAnswerFlow } from '../../../src/features/test/hooks/useTestAnswerFlow'
+import * as outbox from '../../../src/shared/lib/outbox'
+import type { Question, ApiSettings } from '../../../src/shared/api'
 
-// Characterization for answer submission flow logic
-function useAnswerFlowLogic(
-  submitAnswerMock: (qid: number, optId: string, elapsed?: number) => Promise<SubmitResult>,
-  autoNextCorrect = true,
-  autoNextWrong = false
-) {
-  const [answers, setAnswers] = useState<(string | null)[]>([null, null])
-  const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>([null, null])
-  const [correctOpts, setCorrectOpts] = useState<(string | null)[]>([null, null])
-  const [submitting, setSubmitting] = useState(false)
-  const [toast, setToast] = useState<string | null>(null)
-  const [coinPop, setCoinPop] = useState(0)
-  const correctStreakRef = useRef(0)
-  const [nextQuestionTriggered, setNextQuestionTriggered] = useState(false)
+const Q = (id: number) =>
+  ({
+    id,
+    text: `Savol ${id}`,
+    options: [{ id: 'opt-A', text: 'Opt A' }, { id: 'opt-B', text: 'Opt B' }],
+  }) as unknown as Question
 
-  const handleSelect = useCallback(async (currentIdx: number, qid: number, optId: string) => {
-    if (selectedHistory[currentIdx] || submitting) return
-    setSelectedHistory((prev) => { const n = [...prev]; n[currentIdx] = optId; return n })
-    setSubmitting(true)
-
-    const outcome = await submitAnswerMock(qid, optId, 1000)
-    setSubmitting(false)
-
-    if (outcome && 'fatal' in outcome) {
-      setSelectedHistory((prev) => { const n = [...prev]; n[currentIdx] = null; return n })
-      setToast('submitFailed')
-      return
-    }
-
-    if (!outcome || outcome.correct === null || outcome.correctAnswer === null) {
-      setAnswers((prev) => { const n = [...prev]; n[currentIdx] = 'pending'; return n })
-      setToast('offlineQueued')
-      return
-    }
-
-    const isCorrect = outcome.correct
-    setAnswers((prev) => { const n = [...prev]; n[currentIdx] = isCorrect ? 'correct' : 'wrong'; return n })
-    setCorrectOpts((prev) => { const n = [...prev]; n[currentIdx] = outcome.correctAnswer; return n })
-
-    if (isCorrect) {
-      correctStreakRef.current += 1
-      if ((outcome.coinsEarned ?? 0) > 0) {
-        setCoinPop((c) => c + 1)
-      }
-      if (autoNextCorrect) setNextQuestionTriggered(true)
-    } else {
-      correctStreakRef.current = 0
-      if (autoNextWrong) setNextQuestionTriggered(true)
-    }
-  }, [selectedHistory, submitting, submitAnswerMock, autoNextCorrect, autoNextWrong])
-
-  return {
-    answers,
-    selectedHistory,
-    correctOpts,
-    submitting,
-    toast,
-    coinPop,
-    correctStreak: correctStreakRef.current,
-    nextQuestionTriggered,
-    handleSelect,
-  }
-}
-
-describe('Answer Flow Characterization', () => {
+describe('useTestAnswerFlow (Production Hook Tests)', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    vi.useFakeTimers()
   })
 
-  it('handles correct answer and increments combo streak & coin pop', async () => {
+  afterEach(() => {
+    vi.useRealTimers()
+  })
+
+  it('handles correct answer and triggers 800ms auto-next when enabled', async () => {
+    const activeQuestions = [Q(101), Q(102)]
     const mockSubmit = vi.fn().mockResolvedValue({
       correct: true,
       correctAnswer: 'opt-A',
       duplicate: false,
       coinsEarned: 1,
     })
+    const goTo = vi.fn()
+    const onToast = vi.fn()
 
-    const { result } = renderHook(() => useAnswerFlowLogic(mockSubmit, true, false))
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        settings: { autoNextCorrect: true, autoNextWrong: false } as ApiSettings,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo,
+        onToast,
+      })
+    )
 
     await act(async () => {
-      await result.current.handleSelect(0, 101, 'opt-A')
+      result.current.handleSelect('opt-A')
     })
 
     expect(result.current.answers[0]).toBe('correct')
     expect(result.current.correctOpts[0]).toBe('opt-A')
     expect(result.current.selectedHistory[0]).toBe('opt-A')
-    expect(result.current.correctStreak).toBe(1)
     expect(result.current.coinPop).toBe(1)
-    expect(result.current.nextQuestionTriggered).toBe(true)
+
+    // 800ms timer o'tguncha goTo chaqirilmaydi
+    expect(goTo).not.toHaveBeenCalled()
+
+    act(() => {
+      vi.advanceTimersByTime(800)
+    })
+
+    expect(goTo).toHaveBeenCalledWith(1)
   })
 
-  it('handles wrong answer and resets combo streak', async () => {
+  it('handles wrong answer and triggers 1200ms auto-next when enabled', async () => {
+    const activeQuestions = [Q(101), Q(102)]
     const mockSubmit = vi.fn().mockResolvedValue({
       correct: false,
       correctAnswer: 'opt-B',
       duplicate: false,
       coinsEarned: 0,
     })
+    const goTo = vi.fn()
+    const onToast = vi.fn()
 
-    const { result } = renderHook(() => useAnswerFlowLogic(mockSubmit, true, false))
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        settings: { autoNextCorrect: false, autoNextWrong: true } as ApiSettings,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo,
+        onToast,
+      })
+    )
 
     await act(async () => {
-      await result.current.handleSelect(0, 101, 'opt-A')
+      result.current.handleSelect('opt-A')
     })
 
     expect(result.current.answers[0]).toBe('wrong')
     expect(result.current.correctOpts[0]).toBe('opt-B')
     expect(result.current.selectedHistory[0]).toBe('opt-A')
-    expect(result.current.correctStreak).toBe(0)
-    expect(result.current.coinPop).toBe(0)
+
+    act(() => {
+      vi.advanceTimersByTime(800)
+    })
+    expect(goTo).not.toHaveBeenCalled()
+
+    act(() => {
+      vi.advanceTimersByTime(400) // jami 1200ms
+    })
+    expect(goTo).toHaveBeenCalledWith(1)
   })
 
-  it('handles offline fallback by setting pending state and toast', async () => {
-    const mockSubmit = vi.fn().mockResolvedValue(null)
+  it('cancels auto-next timer on unmount or question change', async () => {
+    const activeQuestions = [Q(101), Q(102)]
+    const mockSubmit = vi.fn().mockResolvedValue({
+      correct: true,
+      correctAnswer: 'opt-A',
+      duplicate: false,
+      coinsEarned: 0,
+    })
+    const goTo = vi.fn()
+    const onToast = vi.fn()
 
-    const { result } = renderHook(() => useAnswerFlowLogic(mockSubmit))
+    let current = 0
+    const { result, rerender, unmount } = renderHook(
+      (props: { current: number }) =>
+        useTestAnswerFlow({
+          activeQuestions,
+          current: props.current,
+          settings: { autoNextCorrect: true } as ApiSettings,
+          submitAnswer: mockSubmit,
+          answerTimer: { elapsed: () => 1500 },
+          goTo,
+          onToast,
+        }),
+      { initialProps: { current: 0 } }
+    )
 
     await act(async () => {
-      await result.current.handleSelect(0, 101, 'opt-A')
+      result.current.handleSelect('opt-A')
     })
 
-    expect(result.current.answers[0]).toBe('pending')
-    expect(result.current.toast).toBe('offlineQueued')
+    // Question changed before 800ms
+    act(() => {
+      vi.advanceTimersByTime(400)
+    })
+    rerender({ current: 1 })
+
+    act(() => {
+      vi.advanceTimersByTime(1000)
+    })
+    // Auto-next cancelled, goTo chaqirilmaydi
+    expect(goTo).not.toHaveBeenCalled()
+
+    // Test unmount cleanup
+    unmount()
   })
 
-  it('handles fatal 4xx by rolling back selection and setting toast', async () => {
-    const mockSubmit = vi.fn().mockResolvedValue({ fatal: true, code: 'bad_request' })
+  it('rolls back selection on fatal 4xx error', async () => {
+    const activeQuestions = [Q(101)]
+    const mockSubmit = vi.fn().mockResolvedValue({ fatal: true, code: 'invalid_param' })
+    const onToast = vi.fn()
 
-    const { result } = renderHook(() => useAnswerFlowLogic(mockSubmit))
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast,
+      })
+    )
 
     await act(async () => {
-      await result.current.handleSelect(0, 101, 'opt-A')
+      result.current.handleSelect('opt-A')
     })
 
     expect(result.current.selectedHistory[0]).toBeNull()
-    expect(result.current.toast).toBe('submitFailed')
+    expect(onToast).toHaveBeenCalledWith('submitFailed')
+  })
+
+  it('sets pending state on offline failure', async () => {
+    const activeQuestions = [Q(101)]
+    const mockSubmit = vi.fn().mockResolvedValue(null)
+    const onToast = vi.fn()
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast,
+      })
+    )
+
+    await act(async () => {
+      result.current.handleSelect('opt-A')
+    })
+
+    expect(result.current.answers[0]).toBe('pending')
+    expect(onToast).toHaveBeenCalledWith('offlineQueued')
+  })
+
+  it('resolves pending answer when outbox result sync fires', async () => {
+    const activeQuestions = [Q(101)]
+    let syncListener: ((info: any) => void) | null = null
+    vi.spyOn(outbox, 'onResultSync').mockImplementation((cb) => {
+      syncListener = cb
+      return () => { syncListener = null }
+    })
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: vi.fn(),
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    expect(syncListener).not.toBeNull()
+
+    // Simulate result arriving via outbox
+    act(() => {
+      syncListener!({
+        questionId: 101,
+        correct: true,
+        correctAnswer: 'opt-B',
+        duplicate: false,
+      })
+    })
+
+    expect(result.current.answers[0]).toBe('correct')
+    expect(result.current.correctOpts[0]).toBe('opt-B')
   })
 })

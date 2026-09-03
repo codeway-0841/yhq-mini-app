@@ -1,74 +1,26 @@
-﻿import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import { useState, useEffect, useRef } from 'react'
+import { useAntiCheat } from '../../../src/features/test/hooks/useAntiCheat'
 
-// Characterization for anti-cheat logic in TestPage
-function useAntiCheatLogic(isOfficialExam: boolean, isFinished: boolean) {
-  const [cheatViolations, setCheatViolations] = useState(0)
-  const prevViolationsRef = useRef(0)
-  const [activeStrike, setActiveStrike] = useState<number | null>(null)
-  const [disqualifiedByCheat, setDisqualifiedByCheat] = useState(false)
-
-  const wasHiddenRef = useRef(false)
-  useEffect(() => {
-    if (!isOfficialExam || isFinished) return
-
-    const handleLeave = () => {
-      if (!isFinished) wasHiddenRef.current = true
-    }
-
-    const handleReturn = () => {
-      if (wasHiddenRef.current && !isFinished) {
-        wasHiddenRef.current = false
-        setCheatViolations((prev) => prev + 1)
-      }
-    }
-
-    const onVisibilityChange = () => {
-      if (document.hidden) handleLeave()
-      else handleReturn()
-    }
-
-    const onBlur = () => handleLeave()
-    const onFocus = () => handleReturn()
-
-    document.addEventListener('visibilitychange', onVisibilityChange)
-    window.addEventListener('blur', onBlur)
-    window.addEventListener('focus', onFocus)
-
-    return () => {
-      document.removeEventListener('visibilitychange', onVisibilityChange)
-      window.removeEventListener('blur', onBlur)
-      window.removeEventListener('focus', onFocus)
-    }
-  }, [isOfficialExam, isFinished])
-
-  useEffect(() => {
-    const prev = prevViolationsRef.current
-    prevViolationsRef.current = cheatViolations
-    if (cheatViolations <= prev || cheatViolations === 0) return
-    if (cheatViolations >= 3) {
-      setDisqualifiedByCheat(true)
-    } else {
-      setActiveStrike(cheatViolations)
-    }
-  }, [cheatViolations])
-
-  return { cheatViolations, activeStrike, disqualifiedByCheat, setActiveStrike }
-}
-
-describe('Anti-Cheat Characterization', () => {
+describe('useAntiCheat (Production Hook Tests)', () => {
   beforeEach(() => {
     vi.clearAllMocks()
   })
 
-  it('triggers strike 1 and strike 2 on leaving and returning', () => {
-    const { result } = renderHook(() => useAntiCheatLogic(true, false))
+  it('triggers strike 1 and strike 2 on leaving and returning in official exam', () => {
+    const onDisqualify = vi.fn()
+    const { result } = renderHook(() =>
+      useAntiCheat({
+        isOfficialExam: true,
+        isFinished: false,
+        onDisqualify,
+      })
+    )
 
     expect(result.current.cheatViolations).toBe(0)
     expect(result.current.activeStrike).toBeNull()
 
-    // 1-marta chiqib ketdi va qaytdi
+    // 1-marta chiqib qaytish
     act(() => {
       window.dispatchEvent(new Event('blur'))
       window.dispatchEvent(new Event('focus'))
@@ -77,8 +29,15 @@ describe('Anti-Cheat Characterization', () => {
     expect(result.current.cheatViolations).toBe(1)
     expect(result.current.activeStrike).toBe(1)
     expect(result.current.disqualifiedByCheat).toBe(false)
+    expect(onDisqualify).not.toHaveBeenCalled()
 
-    // 2-marta chiqib ketdi va qaytdi
+    // Dismiss strike
+    act(() => {
+      result.current.dismissStrike()
+    })
+    expect(result.current.activeStrike).toBeNull()
+
+    // 2-marta chiqib qaytish
     act(() => {
       window.dispatchEvent(new Event('blur'))
       window.dispatchEvent(new Event('focus'))
@@ -89,8 +48,15 @@ describe('Anti-Cheat Characterization', () => {
     expect(result.current.disqualifiedByCheat).toBe(false)
   })
 
-  it('disqualifies on 3rd violation', () => {
-    const { result } = renderHook(() => useAntiCheatLogic(true, false))
+  it('triggers strike 3 and disqualification on 3rd violation', () => {
+    const onDisqualify = vi.fn()
+    const { result } = renderHook(() =>
+      useAntiCheat({
+        isOfficialExam: true,
+        isFinished: false,
+        onDisqualify,
+      })
+    )
 
     act(() => {
       window.dispatchEvent(new Event('blur'))
@@ -107,10 +73,37 @@ describe('Anti-Cheat Characterization', () => {
 
     expect(result.current.cheatViolations).toBe(3)
     expect(result.current.disqualifiedByCheat).toBe(true)
+    expect(onDisqualify).toHaveBeenCalledTimes(1)
   })
 
-  it('does nothing if not official exam or finished', () => {
-    const { result } = renderHook(() => useAntiCheatLogic(false, false))
+  it('removes window and document event listeners on unmount (listener cleanup)', () => {
+    const removeWindowSpy = vi.spyOn(window, 'removeEventListener')
+    const removeDocSpy = vi.spyOn(document, 'removeEventListener')
+
+    const { unmount } = renderHook(() =>
+      useAntiCheat({
+        isOfficialExam: true,
+        isFinished: false,
+        onDisqualify: vi.fn(),
+      })
+    )
+
+    unmount()
+
+    expect(removeDocSpy).toHaveBeenCalledWith('visibilitychange', expect.any(Function))
+    expect(removeWindowSpy).toHaveBeenCalledWith('blur', expect.any(Function))
+    expect(removeWindowSpy).toHaveBeenCalledWith('focus', expect.any(Function))
+  })
+
+  it('does not track violations if not an official exam or already finished', () => {
+    const onDisqualify = vi.fn()
+    const { result } = renderHook(() =>
+      useAntiCheat({
+        isOfficialExam: false,
+        isFinished: false,
+        onDisqualify,
+      })
+    )
 
     act(() => {
       window.dispatchEvent(new Event('blur'))
@@ -118,6 +111,7 @@ describe('Anti-Cheat Characterization', () => {
     })
 
     expect(result.current.cheatViolations).toBe(0)
-    expect(result.current.disqualifiedByCheat).toBe(false)
+    expect(result.current.activeStrike).toBeNull()
+    expect(onDisqualify).not.toHaveBeenCalled()
   })
 })

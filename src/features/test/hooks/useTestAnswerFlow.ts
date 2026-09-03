@@ -1,4 +1,4 @@
-﻿import { useState, useCallback, useRef, useEffect } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import type { Question, ApiSettings } from '../../../shared/api'
 import type { SubmitResult } from '../../../shared/store/useAppStore'
 import { onResultSync } from '../../../shared/lib/outbox'
@@ -24,9 +24,9 @@ export function useTestAnswerFlow({
   goTo,
   onToast,
 }: UseTestAnswerFlowOptions) {
-  const [answers, setAnswers]                 = useState<(string | null)[]>([])
-  const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>([])
-  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>([])
+  const [answers, setAnswers]                 = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
+  const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
+  const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
   const [submitting, setSubmitting]           = useState(false)
   const [coinPop, setCoinPop]                 = useState(0)
 
