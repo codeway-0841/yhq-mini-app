@@ -63,6 +63,7 @@ const loginChunk           = () => import('./features/auth/LoginPage')
 const verifyEmailChunk     = () => import('./features/auth/pages/VerifyEmailPage')
 const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPage')
 const yimExamChunk         = () => import('./features/test/YimExamPage')
+const modesChunk           = () => import('./features/dashboard/ModesPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -93,6 +94,7 @@ const LoginPage       = lazy(loginChunk)
 const VerifyEmailPage = lazy(verifyEmailChunk)
 const ResetPasswordPage = lazy(resetPasswordChunk)
 const YimExamPage      = lazy(yimExamChunk)
+const ModesPage        = lazy(modesChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -106,7 +108,7 @@ const routeChunkPrefetchers = [
   belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
-  aiTestHubChunk, aiTestSessionChunk,
+  aiTestHubChunk, aiTestSessionChunk, modesChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
   yimExamChunk,
@@ -213,6 +215,7 @@ function Layout() {
             <Route path="/reyting"    element={<LeaderboardPage />} />
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />
+            <Route path="/rejimlar"   element={<ModesPage />} />
             <Route path="/premium"    element={<PremiumPage />} />
             <Route path="/shop"       element={<ShopPage />} />
             <Route path="/statistika" element={<StatistikaPage />} />
@@ -241,6 +244,42 @@ function ThemeEffect() {
   const tariff      = useAppStore((s) => s.tariff)
   const ownedItems  = useAppStore((s) => s.ownedItems)
   const fontStyle   = useAppStore((s) => s.settings.fontStyle)
+
+  // Light/Dark almashish animatsiyasi (2026-09-03): 'theme-transition' class
+  // FAQAT almashish vaqtida qo'yiladi (index.css 0.35s) va ~450ms keyin olib
+  // tashlanadi. Doimiy bo'lsa hover/active/focus ranglari ham kechikib ishlardi.
+  // Qoidalar:
+  //  - Birinchi qo'llash (mount/boot) ANIMATSIYASIZ — aks holda boot'da
+  //    default dark → tanlangan tema flash bo'lib ko'rinardi;
+  //  - noAnimation setting yoki OS prefers-reduced-motion — hurmat qilinadi;
+  //  - Telegram native header/status bar rangi ham shu bilan sinxronlanadi.
+  const prevThemeRef = useRef<string | null>(null)
+  const animTimerRef = useRef<number | null>(null)
+  useEffect(() => () => {
+    if (animTimerRef.current != null) window.clearTimeout(animTimerRef.current)
+  }, [])
+
+  const applyTheme = (next: 'light' | 'dark') => {
+    const prev = prevThemeRef.current
+    prevThemeRef.current = next
+    const reduceMotion = typeof window.matchMedia === 'function'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const animate = prev !== null && prev !== next
+      && document.body.dataset.noAnimation !== 'true'
+      && !reduceMotion
+    if (animate) {
+      document.body.classList.add('theme-transition')
+      if (animTimerRef.current != null) window.clearTimeout(animTimerRef.current)
+      animTimerRef.current = window.setTimeout(() => {
+        document.body.classList.remove('theme-transition')
+        animTimerRef.current = null
+      }, 450)
+    }
+    document.body.dataset.theme = next
+    syncStatusBarStyle(next === 'dark')   // native APK status bar iconlari (no-op web/TG)
+    syncTelegramTheme(next === 'dark')    // Telegram status bar & header rangi (no-op APK/web)
+  }
+
   useEffect(() => {
     // <html lang> — screen reader talaffuzi uchun; qattiq "uz" bilan boshlanadi (index.html),
     // foydalanuvchi tilni almashtirsa sinxronlanadi.
@@ -249,18 +288,13 @@ function ThemeEffect() {
   useEffect(() => {
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
-      const apply = () => {
-        document.body.dataset.theme = mq.matches ? 'light' : 'dark'
-        syncStatusBarStyle(!mq.matches)   // native APK status bar iconlari (no-op web/TG)
-        syncTelegramTheme(!mq.matches)    // Telegram status bar & header rangi (no-op APK/web)
-      }
+      const apply = () => applyTheme(mq.matches ? 'light' : 'dark')
       apply()
       mq.addEventListener('change', apply)
       return () => mq.removeEventListener('change', apply)
     }
-    document.body.dataset.theme = theme
-    syncStatusBarStyle(theme === 'dark')
-    syncTelegramTheme(theme === 'dark')
+    applyTheme(theme)
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- applyTheme refs/DOM orqali ishlaydi, identity o'zgarishi effektni qayta ishga tushirmasligi kerak
   }, [theme])
   // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
   useEffect(() => {

@@ -25,7 +25,6 @@ import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
 import { ProgressCard } from './components/ProgressCard'
 import { ServiceCard, ModeList, ModeRow } from './components/GridCards'
-import ModesSheet from './components/ModesSheet'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
@@ -37,16 +36,14 @@ import { useDashboardSync, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
-function RejimlarCarousel({ title, items, allItems, lang }: {
+function RejimlarCarousel({ title, items, lang }: {
   title: string
   items: { icon: React.ElementType; label: string; onClick: () => void }[]
-  /** "Yana" sheet'dagi TO'LIQ rejimlar ro'yxati (karuseldagi qismdan keng) */
-  allItems: { icon: React.ElementType; label: string; onClick: () => void }[]
   lang: 'uz' | 'ru'
 }) {
+  const navigate = useNavigate()
   const ref = useRef<HTMLDivElement>(null)
   const paused = useRef(false)
-  const [sheetOpen, setSheetOpen] = useState(false)
 
   useEffect(() => {
     const el = ref.current
@@ -91,7 +88,7 @@ function RejimlarCarousel({ title, items, allItems, lang }: {
     <div>
       <div className="flex items-center justify-between px-4 mb-2.5">
         <p className="font-display text-[19px] font-bold tracking-[-0.01em] text-pfg">{title}</p>
-        <button onClick={() => setSheetOpen(true)} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
+        <button onClick={() => navigate('/rejimlar')} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
           {lang === 'ru' ? 'Ещё' : 'Yana'}
         </button>
       </div>
@@ -104,9 +101,6 @@ function RejimlarCarousel({ title, items, allItems, lang }: {
           <ServiceCard key={it.label} icon={it.icon} label={it.label} onClick={it.onClick} />
         ))}
       </div>
-      {sheetOpen && (
-        <ModesSheet title={title} items={allItems} onClose={() => setSheetOpen(false)} />
-      )}
     </div>
   )
 }
@@ -276,21 +270,6 @@ export default function Dashboard() {
                 { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
                 { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
                 { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
-              ]}
-              allItems={[
-                { icon: BookOpen,      label: tt('topics'),      onClick: goTopics },
-                { icon: Ticket,        label: tt('tickets'),     onClick: () => navigate('/biletlar') },
-                { icon: Swords,        label: tt('duelTitle'),   onClick: goOctagon },
-                { icon: HeartCrack,    label: tt('mistakes'),    onClick: goMistakes },
-                { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
-                { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
-                ...(subject.id === 'yhq'
-                  ? [{ icon: Signpost, label: tt('roadSigns'),   onClick: () => navigate('/belgilar') }]
-                  : []),
-                { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
-                { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
-                { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
-                { icon: Bot,           label: tt('aiTutor'),     onClick: () => showToast(tt('comingSoonD')) },
               ]}
             />
           </div>
