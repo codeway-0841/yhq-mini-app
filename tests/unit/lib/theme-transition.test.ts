@@ -130,7 +130,7 @@ describe('theme-transition: transitionTheme', () => {
     expect(document.body.dataset.theme).toBe('dark')
   })
 
-  it('executes Light -> Dark transition with hole-radius animation on ::view-transition-old', async () => {
+  it('executes Light -> Dark transition with expanding clipPath on ::view-transition-new', async () => {
     const animateMock = vi.fn().mockReturnValue({ finished: Promise.resolve() })
     document.documentElement.animate = animateMock
 
@@ -153,15 +153,15 @@ describe('theme-transition: transitionTheme', () => {
     expect(callbackExecuted).toBe(true)
     expect(animateMock).toHaveBeenCalledWith(
       expect.objectContaining({
-        '--theme-hole-radius': expect.arrayContaining([
-          '0px',
-          expect.stringContaining('px'),
+        clipPath: expect.arrayContaining([
+          expect.stringContaining('circle(0%'),
+          expect.stringContaining('circle('),
         ]),
       }),
       expect.objectContaining({
-        duration: 500,
-        easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
-        pseudoElement: '::view-transition-old(root)',
+        duration: 600,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        pseudoElement: '::view-transition-new(root)',
       })
     )
     expect(document.body.dataset.theme).toBe('dark')
@@ -198,8 +198,8 @@ describe('theme-transition: transitionTheme', () => {
         ]),
       }),
       expect.objectContaining({
-        duration: 400,
-        easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+        duration: 600,
+        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
         pseudoElement: '::view-transition-old(root)',
       })
     )

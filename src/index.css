@@ -130,13 +130,7 @@ body[data-platform='native'] {
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
 
-/* ── Telegram Ads Official Theme Transition (promote-dark.css) ─────────────── */
-@property --theme-hole-radius {
-  syntax: '<length>';
-  inherits: false;
-  initial-value: 0px;
-}
-
+/* ── Telegram-style Smooth Circular View Transition ─────────────────────────── */
 .theme-toggle-btn {
   view-transition-name: theme-toggle;
 }
@@ -146,18 +140,18 @@ body[data-no-animation='true'] .route-page { animation: none; }
 }
 
 ::view-transition-old(theme-toggle) {
-  animation: 350ms cubic-bezier(0.16, 1, 0.3, 1) both theme-icon-out;
+  animation: 600ms cubic-bezier(0.4, 0, 0.2, 1) both theme-icon-out;
 }
 ::view-transition-new(theme-toggle) {
-  animation: 350ms cubic-bezier(0.16, 1, 0.3, 1) both theme-icon-in;
+  animation: 600ms cubic-bezier(0.4, 0, 0.2, 1) both theme-icon-in;
 }
 
 @keyframes theme-icon-out {
   from { transform: rotate(0deg) scale(1); opacity: 1; }
-  to { transform: rotate(-70deg) scale(0.6); opacity: 0; }
+  to { transform: rotate(-90deg) scale(0.6); opacity: 0; }
 }
 @keyframes theme-icon-in {
-  from { transform: rotate(70deg) scale(0.6); opacity: 0; }
+  from { transform: rotate(90deg) scale(0.6); opacity: 0; }
   to { transform: rotate(0deg) scale(1); opacity: 1; }
 }
 
@@ -176,36 +170,19 @@ body[data-no-animation='true'] .route-page { animation: none; }
   mix-blend-mode: normal;
 }
 
+/* Light -> Dark default: yangi qorong'u qatlam ustida kengayadi */
 ::view-transition-old(root) {
-  z-index: 9999;
-  will-change: clip-path;
-  transform: translateZ(0);
-}
-::view-transition-new(root) {
   z-index: 1;
 }
-
-:root.theme-reveal-mask::view-transition-old(root) {
+::view-transition-new(root) {
   z-index: 9999;
-  transform: none;
-  will-change: auto;
-  -webkit-mask-image: radial-gradient(
-    circle at var(--theme-origin-x) var(--theme-origin-y),
-    transparent 0,
-    transparent var(--theme-hole-radius),
-    #000 calc(var(--theme-hole-radius) + 1px)
-  );
-  mask-image: radial-gradient(
-    circle at var(--theme-origin-x) var(--theme-origin-y),
-    transparent 0,
-    transparent var(--theme-hole-radius),
-    #000 calc(var(--theme-hole-radius) + 1px)
-  );
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  mask-mode: alpha;
 }
-:root.theme-reveal-mask::view-transition-new(root) {
+
+/* Dark -> Light: eski qorong'u qatlam ustida qisqarib tugmaga kirib ketadi */
+:root.theme-to-light::view-transition-old(root) {
+  z-index: 9999;
+}
+:root.theme-to-light::view-transition-new(root) {
   z-index: 1;
 }
 

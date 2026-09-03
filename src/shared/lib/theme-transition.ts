@@ -99,11 +99,11 @@ export function isThemeDark(theme: ThemeOption): boolean {
 }
 
 /**
- * Executes the exact Telegram Ads circular theme transition (promote-theme.js):
- * - Light -> Dark: radial-gradient mask hole expands from switch over ::view-transition-old
- * - Dark -> Light: circular clip-path contracts into switch on ::view-transition-old
- * - Easing: cubic-bezier(0.23, 1, 0.32, 1)
- * - Timing: 500ms for dark, 400ms for light (snappy & fluid)
+ * Executes a gentle, silky Telegram-style circular reveal theme transition:
+ * - Mayin chiqib, mayin yopiladi (cubic-bezier(0.4, 0, 0.2, 1), 600ms)
+ * - Light -> Dark: yangi qorong'u qatlam tugmadan mayin yoyilib butun ekranni qoplaydi
+ * - Dark -> Light: eski qorong'u qatlam butun ekrandan mayin tortilib tugma ichiga kiradi
+ * - Tugma ikonkasi: alohida izolyatsiyada silliq aylanib almashadi
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -151,7 +151,7 @@ export async function transitionTheme(
     try { activeVT.skipTransition() } catch (_) {}
   }
 
-  // Telegram Ads viewport geometry
+  // Viewport va tugma markazining aniq nisbiy foizi
   const vw = document.documentElement.clientWidth || window.innerWidth || 1
   const vh = document.documentElement.clientHeight || window.innerHeight || 1
   const { x: cx, y: cy } = getOriginCoordinates(origin)
@@ -163,24 +163,10 @@ export async function transitionTheme(
   const rpct = ref ? (end / ref) * 100 + 1 : 145
   const collapsed = `circle(0% at ${px}% ${py}%)`
   const covering = `circle(${rpct}% at ${px}% ${py}%)`
-  const holeRadius = end * 1.02
-
-  let animationKeyframes: PropertyIndexedKeyframes
-  if (nextIsDark) {
-    animationKeyframes = {
-      '--theme-hole-radius': ['0px', `${holeRadius}px`],
-    } as unknown as PropertyIndexedKeyframes
-  } else {
-    animationKeyframes = {
-      clipPath: [covering, collapsed],
-    }
-  }
 
   const root = document.documentElement
   root.classList.add('theme-switching')
-  root.classList.toggle('theme-reveal-mask', nextIsDark)
-  root.style.setProperty('--theme-origin-x', `${px}%`)
-  root.style.setProperty('--theme-origin-y', `${py}%`)
+  root.classList.toggle('theme-to-light', !nextIsDark)
 
   let vt: ViewTransition | undefined
   try {
@@ -193,9 +179,7 @@ export async function transitionTheme(
     })
   } catch {
     updateDOMAndState()
-    root.classList.remove('theme-switching', 'theme-reveal-mask')
-    root.style.removeProperty('--theme-origin-x')
-    root.style.removeProperty('--theme-origin-y')
+    root.classList.remove('theme-switching', 'theme-to-light')
     return
   }
 
@@ -206,11 +190,20 @@ export async function transitionTheme(
 
     if (activeVT !== vt) return
 
+    // Mayin va silliq tezlanish hamda sekinlanish (ease-in-out)
+    const animationKeyframes = nextIsDark
+      ? { clipPath: [collapsed, covering] }
+      : { clipPath: [covering, collapsed] }
+
+    const targetPseudo = nextIsDark
+      ? '::view-transition-new(root)'
+      : '::view-transition-old(root)'
+
     const anim = root.animate(animationKeyframes, {
-      duration: nextIsDark ? 500 : 400,
-      easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+      duration: 600,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
       fill: 'forwards',
-      pseudoElement: '::view-transition-old(root)',
+      pseudoElement: targetPseudo,
     })
 
     await anim.finished.catch(() => {})
@@ -220,9 +213,7 @@ export async function transitionTheme(
     if (activeVT === vt) {
       activeVT = null
       root.classList.remove('theme-switching')
-      root.classList.remove('theme-reveal-mask')
-      root.style.removeProperty('--theme-origin-x')
-      root.style.removeProperty('--theme-origin-y')
+      root.classList.remove('theme-to-light')
     }
   }
 }
