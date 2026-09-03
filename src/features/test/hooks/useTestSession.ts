@@ -12,12 +12,13 @@ export interface UseTestSessionSaveParams {
   stateTitle?:      string
   activeQuestions:  Question[]
   current:          number
-  answers:          (string | null)[]
-  selectedHistory:  (string | null)[]
-  correctOpts:      (string | null)[]
+  answers?:         (string | null)[]
+  selectedHistory?: (string | null)[]
+  correctOpts?:     (string | null)[]
   cheatViolations?: number
   isFinished:       boolean
   locationKey:      string
+  enabled?:         boolean
 }
 
 /**
@@ -38,6 +39,7 @@ export function useTestSessionSave(params: UseTestSessionSaveParams) {
     cheatViolations,
     isFinished,
     locationKey,
+    enabled = true,
   } = params
 
   const startedAtRef = useRef<number | null>(null)
@@ -48,7 +50,16 @@ export function useTestSessionSave(params: UseTestSessionSaveParams) {
   }, [locationKey])
 
   useEffect(() => {
+    if (!enabled) return
+    if (
+      answers === undefined ||
+      selectedHistory === undefined ||
+      correctOpts === undefined
+    ) {
+      return
+    }
     if (!activeQuestions.length) return
+
     const store = useTestSessionStore.getState()
     const existing = store.session
     if (startedAtRef.current == null) {
@@ -68,7 +79,7 @@ export function useTestSessionSave(params: UseTestSessionSaveParams) {
       startedAt:       startedAtRef.current,
       finished:        isFinished,
     })
-  }, [activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
+  }, [enabled, activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
 }
 
 interface UseTestSessionParams {
@@ -153,23 +164,23 @@ export function useTestSession(params: UseTestSessionParams) {
   // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: yangi aralashtirish trigger'i
   }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
 
-  // Agar answers parametr sifatida berilgan bo'lsa (mavjud testlar bilan moslik uchun)
-  if (answers !== undefined && selectedHistory !== undefined && correctOpts !== undefined) {
-    useTestSessionSave({
-      sessionKey,
-      subjectId,
-      mode,
-      stateTitle,
-      activeQuestions,
-      current,
-      answers,
-      selectedHistory,
-      correctOpts,
-      cheatViolations,
-      isFinished,
-      locationKey,
-    })
-  }
+  // Backward compatibility: hook har doim unconditional chaqiriladi,
+  // guard mantiqi hook ichidagi effect'da bajariladi (Rules of Hooks).
+  useTestSessionSave({
+    sessionKey,
+    subjectId,
+    mode,
+    stateTitle,
+    activeQuestions,
+    current,
+    answers,
+    selectedHistory,
+    correctOpts,
+    cheatViolations,
+    isFinished,
+    locationKey,
+    enabled: answers !== undefined && selectedHistory !== undefined && correctOpts !== undefined,
+  })
 
   return {
     activeQuestions,
