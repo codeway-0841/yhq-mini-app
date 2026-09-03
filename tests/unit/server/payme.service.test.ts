@@ -146,14 +146,17 @@ describe('PerformTransaction — atomik claim + grant', () => {
 
   it('pending → completed, premium grant + promo redemption', async () => {
     h.selectWhere.mockResolvedValue([{ ...bound }])
-    h.updateReturning.mockResolvedValue([{ ...bound, status: 'completed', rawDetails: { paymeState: 2, performTime: 999 } }])
-    const completeSpy = vi.spyOn(paymentRepository, 'complete').mockResolvedValue('activated')
+    const completeSpy = vi.spyOn(paymentRepository, 'completeProviderOrder').mockResolvedValue({
+      status: 'activated',
+      order: { id: bound.id, orderId: bound.orderId, status: 'completed', providerTransId: 'ptx_1', rawDetails: { paymeState: 2, performTime: 999 } },
+    })
 
     const res = await rpc('PerformTransaction', { id: 'ptx_1' })
 
     expect(res.result).toMatchObject({ transaction: ORDER.orderId, state: 2 })
     expect(completeSpy).toHaveBeenCalledWith(expect.objectContaining({
       telegramChargeId: 'payme_ptx_1',
+      providerTransId: 'ptx_1',
       userId: 'u1',
       amount: 29_000,
       currency: 'UZS',
@@ -163,7 +166,10 @@ describe('PerformTransaction — atomik claim + grant', () => {
 
   it('REPLAY: allaqachon completed → idempotent SUCCESS, qayta grant YO`Q', async () => {
     h.selectWhere.mockResolvedValue([{ ...bound, status: 'completed', rawDetails: { paymeState: 2, performTime: 999 } }])
-    const completeSpy = vi.spyOn(paymentRepository, 'complete').mockResolvedValue('duplicate')
+    const completeSpy = vi.spyOn(paymentRepository, 'completeProviderOrder').mockResolvedValue({
+      status: 'duplicate',
+      order: { id: bound.id, orderId: bound.orderId, status: 'completed', providerTransId: 'ptx_1', rawDetails: { paymeState: 2, performTime: 999 } },
+    })
 
     const res = await rpc('PerformTransaction', { id: 'ptx_1' })
 

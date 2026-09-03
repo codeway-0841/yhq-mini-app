@@ -174,14 +174,9 @@ describe('Click Payment Gateway — Unit Tests', () => {
         amountUzs: 29000, provider: 'click', status: 'completed',
         providerTransId: 'old_trans_id', rawDetails: {},
       }
-      // 1-select: buyurtma lookup (completed, BOSHQA trans_id bilan yozilgan);
-      // 2-select: atomik claim (pending→completed) mos kelmagach — replay
-      // tekshiruvi uchun qayta o'qish (6-bosqich, mavjud "fresh" mantiqi).
       vi.spyOn(db, 'select').mockReturnValue({
         from: vi.fn().mockReturnValue({ where: vi.fn().mockResolvedValue([order]) }),
       } as any)
-      // Atomik claim: WHERE status='pending' — order 'completed' bo'lgani
-      // uchun HECH QANDAY qator mos kelmaydi (real DB xulqi bilan bir xil).
       const updateSpy = vi.spyOn(db, 'update').mockReturnValue({
         set: vi.fn().mockReturnValue({
           where: vi.fn().mockReturnValue({ returning: vi.fn().mockResolvedValue([]) }),
@@ -200,10 +195,7 @@ describe('Click Payment Gateway — Unit Tests', () => {
       })
 
       expect(res.error).toBe(CLICK_ERRORS.ALREADY_PAID)
-      // db.update FAQAT BITTA marta chaqirilishi shart — atomik claim (6-bosqich).
-      // Downgrade (status='cancelled'ga tushiruvchi qo'shimcha UPDATE) YO'Q —
-      // aks holda bu son 2 bo'lardi (avvalgi bug aynan shu edi).
-      expect(updateSpy).toHaveBeenCalledTimes(1)
+      expect(updateSpy).not.toHaveBeenCalled()
     })
   })
 

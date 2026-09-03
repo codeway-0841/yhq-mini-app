@@ -32,6 +32,10 @@ vi.mock('../../../server/db/connection', () => ({
 vi.mock('../../../server/modules/payments/payment.repository', () => ({
   paymentRepository: {
     complete: vi.fn().mockResolvedValue('activated'),
+    completeProviderOrder: vi.fn().mockResolvedValue({
+      status: 'activated',
+      order: { id: 80, orderId: 'ord_300', status: 'completed', providerTransId: '300', rawDetails: {} },
+    }),
   },
 }))
 
@@ -310,17 +314,9 @@ describe('Payment Protocol Security & State Machine', () => {
         sign_time: '2026-08-16 12:00:00',
       })
 
-      // 1-select: buyurtma lookup (completed); 2-select: claim yutqazgach —
-      // xuddi shu click_trans_id replay ekanini tekshirish uchun qayta o'qish
       mockSelect.mockResolvedValueOnce([
         { id: 66, orderId: 'ord_202', amountUzs: 29000, status: 'completed', providerTransId: '202' },
       ])
-      mockSelect.mockResolvedValueOnce([
-        { id: 66, orderId: 'ord_202', amountUzs: 29000, status: 'completed', providerTransId: '202' },
-      ])
-      // Atomik claim (pending→completed) 0 qator qaytaradi — allaqachon o'tgan
-      mockUpdate.mockResolvedValueOnce([])
-
       const result = await handleClickComplete({
         click_trans_id: 202,
         service_id: 32876,
@@ -335,8 +331,9 @@ describe('Payment Protocol Security & State Machine', () => {
 
       expect(result.error).toBe(CLICK_ERRORS.SUCCESS)
       expect(result.merchant_confirm_id).toBe(66)
-      // paymentRepository.complete chaqirilMASligi shart (replay — qayta grant yo'q)
+      // Entitlement metodi chaqirilMASligi shart (replay — qayta grant yo'q)
       expect(paymentRepository.complete).not.toHaveBeenCalled()
+      expect(paymentRepository.completeProviderOrder).not.toHaveBeenCalled()
     })
 
     it('BOSHQA click_trans_id bilan tugallangan buyurtmaga → ALREADY_PAID (grant yo\'q)', async () => {
@@ -354,11 +351,6 @@ describe('Payment Protocol Security & State Machine', () => {
       mockSelect.mockResolvedValueOnce([
         { id: 67, orderId: 'ord_203', amountUzs: 29000, status: 'completed', providerTransId: '202' },
       ])
-      mockSelect.mockResolvedValueOnce([
-        { id: 67, orderId: 'ord_203', amountUzs: 29000, status: 'completed', providerTransId: '202' },
-      ])
-      mockUpdate.mockResolvedValueOnce([])
-
       const result = await handleClickComplete({
         click_trans_id: 999,
         service_id: 32876,
@@ -373,6 +365,7 @@ describe('Payment Protocol Security & State Machine', () => {
 
       expect(result.error).toBe(CLICK_ERRORS.ALREADY_PAID)
       expect(paymentRepository.complete).not.toHaveBeenCalled()
+      expect(paymentRepository.completeProviderOrder).not.toHaveBeenCalled()
     })
 
     it('muvaffaqiyatli Complete: atomik claim yutadi → entitlement bir marta beriladi', async () => {
@@ -390,9 +383,10 @@ describe('Payment Protocol Security & State Machine', () => {
       mockSelect.mockResolvedValueOnce([
         { id: 80, orderId: 'ord_300', userId: '12345', plan: 'month', amountUzs: 29000, status: 'pending' },
       ])
-      mockUpdate.mockResolvedValueOnce([
-        { id: 80, orderId: 'ord_300', userId: '12345', plan: 'month', amountUzs: 29000, status: 'completed' },
-      ])
+      vi.mocked(paymentRepository.completeProviderOrder).mockResolvedValueOnce({
+        status: 'activated',
+        order: { id: 80, orderId: 'ord_300', status: 'completed', providerTransId: '300', rawDetails: {} },
+      })
 
       const result = await handleClickComplete({
         click_trans_id: 300,
@@ -408,7 +402,7 @@ describe('Payment Protocol Security & State Machine', () => {
 
       expect(result.error).toBe(CLICK_ERRORS.SUCCESS)
       expect(result.merchant_confirm_id).toBe(80)
-      expect(paymentRepository.complete).toHaveBeenCalledTimes(1)
+      expect(paymentRepository.completeProviderOrder).toHaveBeenCalledTimes(1)
     })
 
     it('Complete\'da amount NaN/noto\'g\'ri → INCORRECT_AMOUNT (audit P1-5: NaN guard)', async () => {
@@ -441,6 +435,7 @@ describe('Payment Protocol Security & State Machine', () => {
 
       expect(result.error).toBe(CLICK_ERRORS.INCORRECT_AMOUNT)
       expect(paymentRepository.complete).not.toHaveBeenCalled()
+      expect(paymentRepository.completeProviderOrder).not.toHaveBeenCalled()
     })
 
     it('cancelled buyurtmaga Complete → TRANSACTION_CANCELLED (qayta aktivatsiya yo\'q)', async () => {
@@ -473,6 +468,7 @@ describe('Payment Protocol Security & State Machine', () => {
 
       expect(result.error).toBe(CLICK_ERRORS.TRANSACTION_CANCELLED)
       expect(paymentRepository.complete).not.toHaveBeenCalled()
+      expect(paymentRepository.completeProviderOrder).not.toHaveBeenCalled()
     })
   })
 })

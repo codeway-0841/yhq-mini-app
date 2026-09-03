@@ -178,6 +178,19 @@ describe('ai-tests — GET /:id (trust boundary + premium gate)', () => {
     await request(app).get('/api/ai-tests/abc')
       .set('Authorization', `Bearer ${TOKENS[FREE]}`).expect(400)
   })
+
+  it('ertangi test ID orqali erta ochilmaydi va submit qilinmaydi', async () => {
+    const tomorrow = tashkentDate(new Date(Date.now() + 24 * 3600_000))
+    const futureId = await insertTest(FAKE_SUBJECT, tomorrow, 1)
+
+    await request(app).get(`/api/ai-tests/${futureId}`)
+      .set('Authorization', `Bearer ${TOKENS[FREE]}`).expect(404)
+
+    await request(app).post(`/api/ai-tests/${futureId}/submit`)
+      .set('Authorization', `Bearer ${TOKENS[FREE]}`)
+      .send({ answers: allCorrect(), clientToken: randomBytes(16).toString('hex') })
+      .expect(404)
+  })
 })
 
 describe('ai-tests — submit (baholash + coin + idempotency)', () => {

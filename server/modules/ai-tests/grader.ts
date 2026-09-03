@@ -27,7 +27,7 @@ import {
   type AiTestShortTask,
 } from '../../../shared/ai-daily-test'
 
-const GRADE_TIMEOUT_MS = 60_000
+export const GRADE_TIMEOUT_MS = 45_000
 
 // generator.ts dagi MODELS bilan bir xil tartib (3.x avlod — 2.5 o'chirilgan)
 const GRADE_MODELS = [

@@ -94,39 +94,46 @@ export const coinsRepository = {
           )
         ON CONFLICT DO NOTHING
         RETURNING item_id
-      ), ledger AS (
-        -- 2) UNIQUE (user_id, reason, ref_id): consumable'da unique insertion lock, durable'da faqat claim g'olibi.
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
-        WHERE EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          AND EXISTS (
-            SELECT 1 FROM user_coins
-            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
-          )
-          AND (SELECT CASE WHEN (SELECT dur FROM price)
-                           THEN EXISTS (SELECT 1 FROM claim)
-                           ELSE true END)
-        ON CONFLICT DO NOTHING
-        RETURNING id
       ), debit AS (
-        -- 3) Debit FAQAT ledger yozuvi muvaffaqiyatli kiritilganda bajariladi.
+        -- 2) Debit FAQAT durable claim g'olibi yoki consumable xaridga.
         UPDATE user_coins
         SET balance = balance - (SELECT p FROM price),
             updated_at = now()
         WHERE user_id = ${userId}
           AND balance >= (SELECT p FROM price)
-          AND EXISTS (SELECT 1 FROM ledger)
+          AND EXISTS (SELECT 1 FROM target_user)
+          AND NOT EXISTS (SELECT 1 FROM dup)
+          AND (SELECT CASE WHEN (SELECT dur FROM price)
+                           THEN EXISTS (SELECT 1 FROM claim)
+                           ELSE true END)
         RETURNING balance
+      ), ledger AS (
+        -- 3) Ledger FAQAT real debitdan keyin yoziladi; race mag'lubi manfiy
+        -- ledger/premium grant qoldirmaydi.
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
+        WHERE EXISTS (SELECT 1 FROM debit)
+        ON CONFLICT DO NOTHING
+        RETURNING id
+      ), revert_claim AS (
+        -- Durable claim balans snapshotida yutib, real debitda yutqazsa, bepul
+        -- egalik qolmasin.
+        DELETE FROM user_items
+        WHERE user_id = ${userId}
+          AND item_id = ${item.id}
+          AND (SELECT dur FROM price)
+          AND EXISTS (SELECT 1 FROM claim)
+          AND NOT EXISTS (SELECT 1 FROM debit)
+        RETURNING item_id
       ), grant_premium AS (
-        -- 4) Consumable: premium_until uzaytirish FAQAT ledger/debit g'olibiga.
+        -- 4) Consumable: premium_until uzaytirish FAQAT debit g'olibiga.
         UPDATE users SET
           premium_until = GREATEST(COALESCE(premium_until, now()), now())
             + make_interval(days => (SELECT days FROM price)),
           updated_at = now()
         WHERE id = ${userId}
           AND NOT (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM ledger)
+          AND EXISTS (SELECT 1 FROM debit)
         RETURNING premium_until
       )
       SELECT
@@ -262,22 +269,22 @@ export const coinsRepository = {
       ), claimed AS (
         SELECT 1 FROM coin_transactions
         WHERE user_id = ${userId} AND reason = 'task_claim' AND ref_id = ${refId}
-      ), award AS (
-        INSERT INTO user_coins (user_id, balance, updated_at)
-        SELECT ${userId}, ${task.reward}::int, now()
+      ), ledger AS (
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${userId}, ${task.reward}::int, 'task_claim', ${refId}
         WHERE EXISTS (SELECT 1 FROM target_user)
           AND (SELECT v FROM metric_value) >= ${task.target}::int
           AND NOT EXISTS (SELECT 1 FROM claimed)
+        ON CONFLICT DO NOTHING
+        RETURNING id
+      ), award AS (
+        INSERT INTO user_coins (user_id, balance, updated_at)
+        SELECT ${userId}, ${task.reward}::int, now()
+        WHERE EXISTS (SELECT 1 FROM ledger)
         ON CONFLICT (user_id) DO UPDATE SET
           balance = user_coins.balance + ${task.reward}::int,
           updated_at = now()
         RETURNING balance
-      ), ledger AS (
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${task.reward}, 'task_claim', ${refId}
-        WHERE EXISTS (SELECT 1 FROM award)
-        ON CONFLICT DO NOTHING
-        RETURNING id
       )
       SELECT
         (SELECT v FROM metric_value) AS progress,
@@ -290,7 +297,17 @@ export const coinsRepository = {
     const row = rows[0]
     if (!row?.user_exists) return { status: 'user_not_found' }
     if (row.was_claimed) return { status: 'already_claimed' }
-    if (row.balance === null) return { status: 'not_completed', progress: Number(row.progress ?? 0) }
+    if (row.balance === null) {
+      const progress = Number(row.progress ?? 0)
+      if (progress >= task.target) {
+        const current = await executeRows<{ id: number }>(sql`
+          SELECT id FROM coin_transactions
+          WHERE user_id = ${userId} AND reason = 'task_claim' AND ref_id = ${refId}
+        `)
+        if (current.length > 0) return { status: 'already_claimed' }
+      }
+      return { status: 'not_completed', progress }
+    }
     return { status: 'ok', balance: Number(row.balance), reward: task.reward }
   },
 

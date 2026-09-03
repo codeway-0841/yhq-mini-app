@@ -1,0 +1,4 @@
+
+> yhq-mini-app@1.1.0 build:api
+> node --input-type=module -e "import {build} from 'esbuild'; await build({entryPoints:['server/api-entry/index.ts','server/api-entry/bot.ts'],bundle:true,platform:'node',format:'esm',outdir:'api/dist',packages:'external'})"
+

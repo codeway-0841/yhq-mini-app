@@ -11,7 +11,7 @@ import {
   AI_TEST_COIN_PER_CORRECT,
   type AiTestAnswers,
 } from '../../../shared/ai-daily-test'
-import { gradeDeterministic, gradeAiDailyTest, needsAiReview } from '../../../server/modules/ai-tests/grader'
+import { gradeDeterministic, gradeAiDailyTest, needsAiReview, GRADE_TIMEOUT_MS } from '../../../server/modules/ai-tests/grader'
 import { buildValidPayload } from '../config/ai-daily-test.test'
 
 function emptyAnswers(): AiTestAnswers {
@@ -97,6 +97,10 @@ describe('ai-test grader — deterministik', () => {
 })
 
 describe('ai-test grader — gradeAiDailyTest (aiAllowed=false, AI chaqiriq YO\'Q)', () => {
+  it('Gemini timeout serverless 60s limitidan past reserve bilan turadi', () => {
+    expect(GRADE_TIMEOUT_MS).toBeLessThanOrEqual(45_000)
+  })
+
   it('esse yozilgan, lekin kvota yo\'q → essay=null, coin faqat deterministik', async () => {
     const p = buildValidPayload()
     const a = allCorrectAnswers()

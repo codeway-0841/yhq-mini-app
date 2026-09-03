@@ -54,6 +54,10 @@ function parseTestId(raw: unknown): number {
   return id
 }
 
+function rejectFutureTest(test: { date: string }): void {
+  if (test.date > tashkentDate()) throw new AppError(404, 'TEST_NOT_FOUND')
+}
+
 const SubmitSchema = z.object({
   answers: AiTestAnswersSchema,
   clientToken: z.string().min(8).max(64),
@@ -107,6 +111,7 @@ router.get(
     const id = parseTestId(req.params.id)
     const test = await aiTestsRepository.getTestById(id)
     if (!test) throw new AppError(404, 'TEST_NOT_FOUND')
+    rejectFutureTest(test)
 
     if (test.slot >= AI_TEST_PREMIUM_SLOT && !(await isPremiumUser(userId))) {
       throw new AppError(403, 'premium_required')
@@ -144,6 +149,7 @@ router.post(
 
     const test = await aiTestsRepository.getTestById(id)
     if (!test) throw new AppError(404, 'TEST_NOT_FOUND')
+    rejectFutureTest(test)
     if (test.slot >= AI_TEST_PREMIUM_SLOT && !(await isPremiumUser(userId))) {
       throw new AppError(403, 'premium_required')
     }

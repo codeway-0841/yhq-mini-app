@@ -64,7 +64,10 @@ const FixSchema = z.object({
   subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
 })
 
-// POST /api/daily/:userId/fix — eski xato to'g'rilandi, shu kunga fixed qo'shish
+// POST /api/daily/:userId/fix — legacy compatibility.
+// Verified fixed counter faqat progressRepository.recordAnswer ichida, server
+// javobni tekshirganidan keyin oshadi. Bu endpoint eski outbox/clientlarga ok
+// qaytaradi, lekin ishonchsiz client signalidan progress yozmaydi.
 router.post(
   '/daily/:userId/fix',
   rateLimit({ maxPerMinute: 120 }),
@@ -75,8 +78,7 @@ router.post(
 
     await progressRepository.ensureExists(uid)
 
-    const { subjectId } = req.body as z.infer<typeof FixSchema>
-    await dailyRepository.addFixed(uid, tashkentDate(), subjectId)
+    void (req.body as z.infer<typeof FixSchema>).subjectId
 
     res.json({ ok: true })
   }),

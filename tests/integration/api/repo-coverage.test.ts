@@ -7,7 +7,7 @@
 
 import { describe, it, expect, afterAll } from 'vitest'
 import { db } from '../../../server/db/connection'
-import { users, referrals, payments, promoCodes, otpCodes, sessions, authIdentities } from '../../../server/schema'
+import { users, referrals, payments, paymentOrders, promoCodes, otpCodes, sessions, authIdentities } from '../../../server/schema'
 import { eq, inArray } from 'drizzle-orm'
 import { referralsRepository, usersRepository } from '../../../server/modules/users/users.repository'
 import { paymentRepository } from '../../../server/modules/payments/payment.repository'
@@ -89,6 +89,48 @@ describe('repository coverage: payments ledger', () => {
     expect(result).toBe('user_not_found')
     const ledger = await db.select().from(payments).where(eq(payments.userId, `${PREFIX}does_not_exist`))
     expect(ledger).toHaveLength(0)
+  })
+
+  it('completeProviderOrder — order status, ledger va premium bitta atomik CTEda yoziladi', async () => {
+    const uid = mkId()
+    await mkUser(uid)
+    const orderId = `${PREFIX}order_${Date.now()}`
+    const [order] = await db.insert(paymentOrders).values({
+      orderId,
+      userId: uid,
+      plan: 'month',
+      amountUzs: 29_000,
+      provider: 'click',
+      status: 'pending',
+      rawDetails: {},
+    }).returning()
+
+    const result = await paymentRepository.completeProviderOrder({
+      orderPk: order.id,
+      orderId,
+      telegramChargeId: `${PREFIX}click_${Date.now()}`,
+      providerChargeId: 'click_tx_1',
+      providerTransId: 'click_tx_1',
+      userId: uid,
+      plan: 'month',
+      days: 30,
+      amount: 29_000,
+      currency: 'UZS',
+      payload: `click_order_${orderId}`,
+      rawUpdate: { integration: true },
+      orderRawDetails: { integration: true, status: 'complete' },
+    })
+
+    expect(result.status).toBe('activated')
+    const [freshOrder] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
+    expect(freshOrder.status).toBe('completed')
+    expect(freshOrder.providerTransId).toBe('click_tx_1')
+
+    const [user] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, uid))
+    expect(user.premiumUntil?.getTime()).toBeGreaterThan(Date.now() + 29 * 86_400_000)
+
+    const ledger = await db.select().from(payments).where(eq(payments.userId, uid))
+    expect(ledger).toHaveLength(1)
   })
 })
 

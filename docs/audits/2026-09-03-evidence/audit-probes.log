@@ -1,0 +1,5 @@
+{"probe":"parallel-daily-claim","expectedBalance":20,"actualBalance":160,"ledgerTotal":20,"statuses":["ok","ok","ok","ok","ok","ok","ok","ok"]}
+{"probe":"parallel-distinct-purchases","initialBalance":600,"expectedMaxPremiumDays":1,"actualPremiumDays":7.999920158356481,"actualBalance":0,"ledgerTotal":-4800,"statuses":["ok","duplicate","duplicate","duplicate","duplicate","duplicate","duplicate","duplicate"]}
+{"probe":"unverified-daily-fix","submittedAnswers":0,"claimStatus":"ok","actualBalance":20}
+{"probe":"parallel-same-correct-answer","expectedBalance":2,"actualBalance":16,"creditedRequests":8}
+Disposable audit users cleaned up

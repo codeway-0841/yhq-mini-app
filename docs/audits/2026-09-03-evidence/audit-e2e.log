@@ -1,0 +1,220 @@
+
+> yhq-mini-app@1.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:6328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 8 workers
+
+(node:10660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:16992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17988) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14700) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] warn - The class `duration-[120ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;120ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[160ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;160ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[400ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;400ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[600ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;600ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[700ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;700ms&rsqb;` to silence this warning.
+  ok  1 [telegram-webview-android] › tests\e2e\dashboard.spec.ts:9:3 › Dashboard (Bosh sahifa) E2E › sahifa yuklanadi va asosiy elementlar ko‘rinadi (14.0s)
+  ok  8 [telegram-webview-android] › tests\e2e\dashboard.spec.ts:15:3 › Dashboard (Bosh sahifa) E2E › navigatsiya orqali biletlar va belgilar sahifasiga o‘tish mumkin (14.1s)
+  ok  6 [telegram-webview-android] › tests\e2e\profile-settings.spec.ts:9:3 › Profil & Sozlamalar E2E › profil sahifasi yuklanadi va asosiy bo‘limlar ko‘rinadi (14.2s)
+  ok  7 [telegram-webview-android] › tests\e2e\onboarding.spec.ts:34:3 › Onboarding (Yangi Foydalanuvchi) E2E › onboarding oqimini to‘liq yakunlash (14.4s)
+(node:13008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [telegram-webview-android] › tests\e2e\biletlar.spec.ts:9:3 › Biletlar Sahifasi E2E › biletlar sahifasi yuklanadi va tablar ko‘rinadi (18.5s)
+  x   5 [telegram-webview-android] › tests\e2e\biletlar.spec.ts:15:3 › Biletlar Sahifasi E2E › orqaga qaytish tugmasi mavjud (19.2s)
+  x   2 [telegram-webview-android] › tests\e2e\belgilar.spec.ts:9:3 › Yo‘l Belgilari E2E › yo‘l belgilari kategoriyalari yuklanadi (19.1s)
+  ok  9 [telegram-webview-android] › tests\e2e\profile-settings.spec.ts:15:3 › Profil & Sozlamalar E2E › promokod modalini ochish va yopish mumkin (7.5s)
+(node:23156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23352) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 12 [desktop-chrome] › tests\e2e\biletlar.spec.ts:9:3 › Biletlar Sahifasi E2E › biletlar sahifasi yuklanadi va tablar ko‘rinadi (7.7s)
+(node:20460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [telegram-webview-android] › tests\e2e\belgilar.spec.ts:15:3 › Yo‘l Belgilari E2E › qidiruv inputiga matn kiritganda filtrlanadi (24.7s)
+  ok 11 [desktop-chrome] › tests\e2e\belgilar.spec.ts:15:3 › Yo‘l Belgilari E2E › qidiruv inputiga matn kiritganda filtrlanadi (9.4s)
+  ok 10 [desktop-chrome] › tests\e2e\belgilar.spec.ts:9:3 › Yo‘l Belgilari E2E › yo‘l belgilari kategoriyalari yuklanadi (9.6s)
+(node:11976) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 19:38:30 [vite] http proxy error: /api/analytics
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/questions?subject=yhq
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/topics?subject=yhq
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/init
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/analytics
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/init
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/profile/999999
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] http proxy error: /api/profile/999999
+[WebServer] AggregateError [ECONNREFUSED]: 
+[WebServer]     at internalConnectMultiple (node:net:1193:18)
+[WebServer]     at afterConnectMultiple (node:net:1783:7)
+[WebServer] 19:38:30 [vite] (client) [console.error] syncFromServer failed: ApiError: GET /profile/999999 → 502: 
+[WebServer]     at request (http://localhost:5173/src/shared/api/index.ts:91:9)
+[WebServer]     at async syncFromServer (http://localhost:5173/src/shared/store/useAppStore.ts:331:18)
+[WebServer]     at async http://localhost:5173/src/App.tsx:814:6
+[WebServer] 19:38:30 [vite] (client) [console.error] syncFromServer failed: ApiError: GET /profile/999999 → 502: 
+[WebServer]     at request (http://localhost:5173/src/shared/api/index.ts:91:9)
+[WebServer]     at async syncFromServer (http://localhost:5173/src/shared/store/useAppStore.ts:331:18)
+[WebServer]     at async http://localhost:5173/src/App.tsx:814:6
+  ok 16 [desktop-chrome] › tests\e2e\profile-settings.spec.ts:9:3 › Profil & Sozlamalar E2E › profil sahifasi yuklanadi va asosiy bo‘limlar ko‘rinadi (4.5s)
+  ok 14 [desktop-chrome] › tests\e2e\dashboard.spec.ts:9:3 › Dashboard (Bosh sahifa) E2E › sahifa yuklanadi va asosiy elementlar ko‘rinadi (5.3s)
+  ok 17 [desktop-chrome] › tests\e2e\onboarding.spec.ts:34:3 › Onboarding (Yangi Foydalanuvchi) E2E › onboarding oqimini to‘liq yakunlash (4.3s)
+  ok 15 [desktop-chrome] › tests\e2e\dashboard.spec.ts:15:3 › Dashboard (Bosh sahifa) E2E › navigatsiya orqali biletlar va belgilar sahifasiga o‘tish mumkin (6.1s)
+  ok 13 [desktop-chrome] › tests\e2e\biletlar.spec.ts:15:3 › Biletlar Sahifasi E2E › orqaga qaytish tugmasi mavjud (6.5s)
+  ok 18 [desktop-chrome] › tests\e2e\profile-settings.spec.ts:15:3 › Profil & Sozlamalar E2E › promokod modalini ochish va yopish mumkin (1.7s)
+
+
+  1) [telegram-webview-android] › tests\e2e\belgilar.spec.ts:9:3 › Yo‘l Belgilari E2E › yo‘l belgilari kategoriyalari yuklanadi 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByPlaceholder(/Belgi qidirish/i)
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByPlaceholder(/Belgi qidirish/i)
+
+
+      10 |     await page.goto('/app.html#/belgilar')
+      11 |     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
+    > 12 |     await expect(page.getByPlaceholder(/Belgi qidirish/i)).toBeVisible()
+         |                                                            ^
+      13 |   })
+      14 |
+      15 |   test('qidiruv inputiga matn kiritganda filtrlanadi', async ({ page }) => {
+        at C:\Users\PC\Desktop\Bot\tests\e2e\belgilar.spec.ts:12:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\belgilar-Yo‘l-Belgilari-E2-c109a-ri-kategoriyalari-yuklanadi-telegram-webview-android\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\belgilar-Yo‘l-Belgilari-E2-c109a-ri-kategoriyalari-yuklanadi-telegram-webview-android\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\belgilar-Yo‘l-Belgilari-E2-c109a-ri-kategoriyalari-yuklanadi-telegram-webview-android\error-context.md
+
+  2) [telegram-webview-android] › tests\e2e\biletlar.spec.ts:9:3 › Biletlar Sahifasi E2E › biletlar sahifasi yuklanadi va tablar ko‘rinadi 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('h1')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('h1')
+
+
+      10 |     await page.goto('/app.html#/biletlar')
+      11 |     await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
+    > 12 |     await expect(page.locator('h1')).toBeVisible()
+         |                                      ^
+      13 |   })
+      14 |
+      15 |   test('orqaga qaytish tugmasi mavjud', async ({ page }) => {
+        at C:\Users\PC\Desktop\Bot\tests\e2e\biletlar.spec.ts:12:38
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\biletlar-Biletlar-Sahifasi-9b411-klanadi-va-tablar-ko‘rinadi-telegram-webview-android\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\biletlar-Biletlar-Sahifasi-9b411-klanadi-va-tablar-ko‘rinadi-telegram-webview-android\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\biletlar-Biletlar-Sahifasi-9b411-klanadi-va-tablar-ko‘rinadi-telegram-webview-android\error-context.md
+
+  3) [telegram-webview-android] › tests\e2e\biletlar.spec.ts:15:3 › Biletlar Sahifasi E2E › orqaga qaytish tugmasi mavjud 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: /orqaga|назад/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /orqaga|назад/i })
+
+
+      19 |     // beriladi (KIWI redesign) — nomga emas, rolga qarab topamiz.
+      20 |     const backBtn = page.getByRole('button', { name: /orqaga|назад/i })
+    > 21 |     await expect(backBtn).toBeVisible()
+         |                           ^
+      22 |   })
+      23 | })
+      24 |
+        at C:\Users\PC\Desktop\Bot\tests\e2e\biletlar.spec.ts:21:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\biletlar-Biletlar-Sahifasi-E2E-orqaga-qaytish-tugmasi-mavjud-telegram-webview-android\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\biletlar-Biletlar-Sahifasi-E2E-orqaga-qaytish-tugmasi-mavjud-telegram-webview-android\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\biletlar-Biletlar-Sahifasi-E2E-orqaga-qaytish-tugmasi-mavjud-telegram-webview-android\error-context.md
+
+  3 failed
+    [telegram-webview-android] › tests\e2e\belgilar.spec.ts:9:3 › Yo‘l Belgilari E2E › yo‘l belgilari kategoriyalari yuklanadi 
+    [telegram-webview-android] › tests\e2e\biletlar.spec.ts:9:3 › Biletlar Sahifasi E2E › biletlar sahifasi yuklanadi va tablar ko‘rinadi 
+    [telegram-webview-android] › tests\e2e\biletlar.spec.ts:15:3 › Biletlar Sahifasi E2E › orqaga qaytish tugmasi mavjud 
+  15 passed (34.7s)

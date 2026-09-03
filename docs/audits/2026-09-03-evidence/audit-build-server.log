@@ -1,0 +1,4 @@
+
+> yhq-mini-app@1.1.0 build:server
+> node --input-type=module -e "import {build} from 'esbuild'; await build({entryPoints:['server/index.ts'],bundle:true,platform:'node',format:'esm',outdir:'server/dist',packages:'external'})"
+

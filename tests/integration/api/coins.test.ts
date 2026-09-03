@@ -10,6 +10,7 @@
  */
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import request from 'supertest'
+import postgres from 'postgres'
 import { randomBytes } from 'crypto'
 import { eq, sql } from 'drizzle-orm'
 import { createApp } from '../../../server/app'
@@ -18,6 +19,8 @@ import { questions, users } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 import { authRepository } from '../../../server/modules/auth/auth.repository'
 import { coinsRepository } from '../../../server/modules/coins/coins.repository'
+import { progressRepository } from '../../../server/modules/progress/progress.repository'
+import { config } from '../../../server/config'
 import {
   getShopItem, isShopItemAvailable,
   COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED,
@@ -41,7 +44,9 @@ const USER_D = '990000004004'
 // balansi qo'lda o'rnatiladi (setBalance), ya'ni javob mint'i bilan
 // bir foydalanuvchini bo'lishish ikkala testni ham buzadi.
 const USER_E = '990000004005'
-const IDS = [USER_A, USER_B, USER_C, USER_D, USER_E]
+const USER_F = '990000004006'
+const USER_G = '990000004007'
+const IDS = [USER_A, USER_B, USER_C, USER_D, USER_E, USER_F, USER_G]
 
 /** Per-10-fixes testi uchun test O'ZI yaratadigan savollar (CI bazasida
  *  yetarli savol yo'q). 'a' — to'g'ri, 'b' — xato. */
@@ -104,10 +109,26 @@ async function seedDaily(userId: string, answered: number, correct: number, fixe
   `)
 }
 
+async function withLockedCoinRow<T>(userId: string, body: () => Promise<T>): Promise<T> {
+  const client = postgres(config.db.url, { max: 1, connect_timeout: 10 })
+  let pending: Promise<T> | null = null
+  try {
+    await client.begin(async (tx) => {
+      await tx`SELECT user_id FROM user_coins WHERE user_id = ${userId} FOR UPDATE`
+      pending = body()
+      await new Promise((resolve) => setTimeout(resolve, 500))
+    })
+    return await pending!
+  } finally {
+    await client.end({ timeout: 5 })
+  }
+}
+
 let tokenA: string
 let tokenB: string
 let tokenC: string
 let tokenD: string
+let tokenF: string
 
 beforeAll(async () => {
   await cleanup()
@@ -117,7 +138,9 @@ beforeAll(async () => {
   tokenC = await createUserWithSession(USER_C)
   tokenD = await createUserWithSession(USER_D)
   await createUserWithSession(USER_E)
-})
+  tokenF = await createUserWithSession(USER_F)
+  await createUserWithSession(USER_G)
+}, 90_000)
 
 afterAll(cleanup)
 
@@ -211,6 +234,32 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
     // 20 ta ketma-ket so'rov (10 xato + 10 tuzatish) uzoq test bazasiga —
     // standart 15s yetmaydi.
   }, 90_000)
+
+  it('parallel yangi tokenlar bilan bitta savolga to\'g\'ri javob — faqat bitta mint/counter', async () => {
+    const [question] = await db.select().from(questions).limit(1)
+    const results = await Promise.all(Array.from({ length: 8 }, () =>
+      progressRepository.recordAnswer({
+        userId: USER_G,
+        correct: true,
+        questionId: question.id,
+        date: tashkentDate(),
+        subjectId: 'yhq',
+        clientToken: randomBytes(16).toString('hex'),
+      })))
+
+    expect(results.filter((r) => r.updated && !r.duplicate)).toHaveLength(1)
+    expect(results.filter((r) => r.duplicate && r.reason === 'gate')).toHaveLength(7)
+    expect(results.reduce((sum, r) => sum + r.coinsMinted, 0)).toBe(COINS_PER_CORRECT_ANSWER)
+    expect(await getBalance(USER_G)).toBe(COINS_PER_CORRECT_ANSWER)
+
+    const [prog] = await executeRows<{ total_answered: number; total_correct: number }>(sql`
+      SELECT total_answered::int, total_correct::int
+      FROM progress
+      WHERE user_id = ${USER_G}
+    `)
+    expect(prog.total_answered).toBe(1)
+    expect(prog.total_correct).toBe(1)
+  })
 })
 
 describe('coins purchase — atomiklik', () => {
@@ -262,6 +311,38 @@ describe('coins purchase — atomiklik', () => {
     expect(before - (await getBalance(USER_C))).toBe(price)
     const debits = (await coinsRepository.getHistory(USER_C)).filter((h) => h.reason === 'purchase' && h.refId === purchaseId)
     expect(debits.length).toBe(1)
+  })
+
+  it('parallel CONSUMABLE turli purchaseId — balans yetganicha bitta premium grant va bitta ledger', async () => {
+    const item = getShopItem('premium-days-1')!
+    await setBalance(USER_C, item.price)
+    await db.update(users).set({ premiumUntil: null }).where(eq(users.id, USER_C))
+    const beforeLedger = await executeRows<{ n: number; total: number }>(sql`
+      SELECT COUNT(*)::int AS n, COALESCE(SUM(delta), 0)::int AS total
+      FROM coin_transactions
+      WHERE user_id = ${USER_C} AND reason = 'purchase'
+    `)
+
+    const results = await withLockedCoinRow(USER_C, () => Promise.all(
+      Array.from({ length: 8 }, () =>
+        coinsRepository.purchase(USER_C, 'premium-days-1', randomBytes(16).toString('hex'))),
+    ))
+
+    expect(results.filter((r) => r.status === 'ok')).toHaveLength(1)
+    expect(results.filter((r) => r.status === 'insufficient')).toHaveLength(7)
+    expect(await getBalance(USER_C)).toBe(0)
+
+    const rows = await executeRows<{ n: number; total: number }>(sql`
+      SELECT COUNT(*)::int AS n, COALESCE(SUM(delta), 0)::int AS total
+      FROM coin_transactions
+      WHERE user_id = ${USER_C} AND reason = 'purchase'
+    `)
+    expect(rows[0].n - beforeLedger[0].n).toBe(1)
+    expect(rows[0].total - beforeLedger[0].total).toBe(-item.price)
+
+    const [u] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, USER_C))
+    expect(u.premiumUntil?.getTime()).toBeGreaterThan(Date.now() + 18 * 3600_000)
+    expect(u.premiumUntil?.getTime()).toBeLessThan(Date.now() + 36 * 3600_000)
   })
 
   it('xuddi shu purchaseId retry — idempotent duplicate (qayta debit yo\'q)', async () => {
@@ -545,6 +626,42 @@ describe('coins — kunlik vazifalar (#40 Faza 2)', () => {
     expect(hist.some((h) => h.reason === 'task_claim' && h.refId === `answers-20:${date}`)).toBe(true)
   })
 
+  it('parallel task claim — reward faqat bitta yoziladi', async () => {
+    await seedDaily(USER_F, 25, 16, 0)
+    await setBalance(USER_F, 0)
+    const task = getDailyTask('answers-20')!
+
+    const results = await withLockedCoinRow(USER_F, () => Promise.all(
+      Array.from({ length: 8 }, () => coinsRepository.claimTask(USER_F, task.id, date)),
+    ))
+
+    expect(results.filter((r) => r.status === 'ok')).toHaveLength(1)
+    expect(results.filter((r) => r.status === 'already_claimed')).toHaveLength(7)
+    expect(await getBalance(USER_F)).toBe(task.reward)
+
+    const hist = await coinsRepository.getHistory(USER_F)
+    expect(hist.filter((h) => h.reason === 'task_claim' && h.refId === `${task.id}:${date}`)).toHaveLength(1)
+  })
+
+  it('legacy /daily/fix progress bermaydi — fix-5 mukofotini soxta ochib bo\'lmaydi', async () => {
+    await seedDaily(USER_F, 0, 0, 0)
+    await setBalance(USER_F, 0)
+
+    for (let i = 0; i < 5; i++) {
+      await request(app).post(`/api/daily/${USER_F}/fix`)
+        .set('Authorization', `Bearer ${tokenF}`)
+        .send({ subjectId: 'yhq' })
+        .expect(200)
+    }
+
+    const claim = await request(app).post('/api/coins/claim-task')
+      .set('Authorization', `Bearer ${tokenF}`)
+      .send({ taskId: 'fix-5' })
+    expect(claim.status).toBe(409)
+    expect(claim.body.error).toBe('TASK_NOT_COMPLETED')
+    expect(await getBalance(USER_F)).toBe(0)
+  })
+
   it('noma\'lum taskId — 404; auth\'siz — 401', async () => {
     await request(app).post('/api/coins/claim-task')
       .set('Authorization', `Bearer ${tokenA}`)
@@ -638,7 +755,7 @@ describe('coins — MERCH buyurtmalari (#40 Faza 3)', () => {
       .send({ itemId: MERCH, purchaseId: randomBytes(16).toString('hex'), ...ORDER_INFO })
       .expect(200)
     expect(re.body.ok).toBe(true)
-  })
+  }, 90_000)
 
   it('merch RACE: parallel bir-odam-bir-item — FAQAT 1 buyurtma, 1 debit (claim-first)', async () => {
     await setBalance(USER_A, 20000)

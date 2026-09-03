@@ -149,25 +149,35 @@ export const progressRepository = {
             )
           )
         ) AS is_fix
+      ), answer_claim AS (
+        -- Bir savolga parallel FRESH to'g'ri javoblarda PK conflict serialize
+        -- qiladi: birinchisi insert/update qaytaradi, keyingilari correct=true
+        -- qatorni ko'rib RETURNINGsiz qoladi va gate'dan o'tmaydi.
+        INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at, first_ms, last_ms)
+        SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now(),
+               ${elapsedMs}::int, ${elapsedMs}::int
+        WHERE ${questionId}::int IS NOT NULL
+          AND EXISTS (SELECT 1 FROM users WHERE id = ${userId})
+          AND EXISTS (SELECT 1 FROM progress WHERE user_id = ${userId})
+          AND (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok))
+          AND (SELECT ok FROM credit)
+        ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
+          SET correct = (progress_questions.correct OR EXCLUDED.correct),
+              answered_at = now(),
+              first_ms = COALESCE(progress_questions.first_ms, EXCLUDED.first_ms),
+              last_ms = COALESCE(EXCLUDED.last_ms, progress_questions.last_ms)
+          WHERE NOT (
+            EXCLUDED.correct
+            AND NOT (SELECT is_fix FROM is_mistake_fixed)
+            AND progress_questions.correct
+          )
+        RETURNING user_id
       ), gate AS (
         SELECT (
           -- 1) clientToken replay YOKI token yo'q — o'tadi;
           (${token}::text IS NULL OR EXISTS (SELECT 1 FROM tok))
-          -- 2) ANTI-FARM: ilgari TO'G'RI javob berilgan va XATOSI YO'Q bo'lgan savolga takroriy
-          --    to'g'ri javob counterlarga YOZILMAYDI.
-          --    Agar savol xatoda bo'lsa (is_fix), bu xatoni tuzatish hisoblanadi va gate'dan O'TADI!
-          AND NOT (
-            ${correct}
-            AND ${questionId}::int IS NOT NULL
-            AND NOT (SELECT is_fix FROM is_mistake_fixed)
-            AND EXISTS (
-              SELECT 1 FROM progress_questions pq
-              WHERE pq.user_id = ${userId}
-                AND pq.subject_id = ${subjectId}
-                AND pq.question_id = ${questionId}::int
-                AND pq.correct
-            )
-          )
+          -- 2) ANTI-FARM: savol claim'i bo'lmasa counterlarga yozilmaydi.
+          AND (${questionId}::int IS NULL OR EXISTS (SELECT 1 FROM answer_claim))
           -- 3) H-3: kunlik kredit (DAILY_ANSWER_CREDIT) — farming kunlik chegarasi
           AND (SELECT ok FROM credit)
         ) AS proceed
@@ -219,24 +229,6 @@ export const progressRepository = {
           updated_at = now()
         WHERE user_id = ${userId} AND (SELECT proceed FROM gate)
         RETURNING id, xp
-      ), q_write AS (
-        -- P2: yechilgan savol qaydini jadvalga O(1) upsert (jsonb massiv o'rniga).
-        -- correct = "qachonlardir TO'G'RI yechilgan" MONOTON flag (schema izohi:
-        -- bir marta true → orqaga qaytmaydi). Aks holda xato qayta-javob avvalgi
-        -- true'ni false'ga tushirib, keyingi to'g'ri javob anti-farm gate'dan
-        -- qaytadan o'tib +1 coin mint qilardi (audit M).
-        INSERT INTO progress_questions (user_id, subject_id, question_id, correct, answered_at, first_ms, last_ms)
-        SELECT ${userId}, ${subjectId}, ${questionId}::int, ${correct}::boolean, now(),
-               ${elapsedMs}::int, ${elapsedMs}::int
-        WHERE ${questionId}::int IS NOT NULL
-          AND EXISTS (SELECT 1 FROM prog)
-        ON CONFLICT (user_id, subject_id, question_id) DO UPDATE
-          SET correct = (progress_questions.correct OR EXCLUDED.correct),
-              answered_at = now(),
-              -- first_ms FAQAT birinchi urinishda yoziladi (bo'sh bo'lsa to'ldiriladi)
-              first_ms = COALESCE(progress_questions.first_ms, EXCLUDED.first_ms),
-              last_ms = COALESCE(EXCLUDED.last_ms, progress_questions.last_ms)
-        RETURNING user_id
       ), record_upsert AS (
         -- Progress qatori (=> user) mavjud bo'lgandagina kunlik yozuv yoziladi:
         -- ro'yxatdan o'tmagan usulda FK violation o'rniga toza "not found" qaytadi.

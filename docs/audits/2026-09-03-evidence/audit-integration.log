@@ -1,0 +1,17 @@
+
+> yhq-mini-app@1.1.0 test:integration
+> tsx server/check-test-db.ts && vitest run tests/integration --config vitest.integration.config.ts
+
+Integration DB guard passed: ep-spring-wind-axy6ai31-pooler.c-4.us-east-2.aws.neon.tech
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - import "./vitest.config" without a file extension (vitest.integration.config.ts:9:24). Add the file extension
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v4.1.10 C:/Users/PC/Desktop/Bot
+
+
+ Test Files  35 passed (35)
+      Tests  266 passed (266)
+   Start at  19:39:10
+   Duration  90.62s (transform 16.95s, setup 26.14s, import 75.80s, tests 702.61s, environment 42.30s)
+

@@ -17,7 +17,7 @@
  */
 
 import crypto from 'crypto'
-import { eq, and } from 'drizzle-orm'
+import { eq, and, isNull } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { paymentRepository } from './payment.repository'
@@ -146,7 +146,11 @@ async function createTransaction(params: Record<string, unknown>): Promise<RpcOu
       rawDetails: { ...order.rawDetails, paymeState: 1, createTime: paymeTime },
     })
     // ATOMIK: parallel CreateTransaction'dan faqat biri o'tadi
-    .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, 'pending')))
+    .where(and(
+      eq(paymentOrders.id, order.id),
+      eq(paymentOrders.status, 'pending'),
+      isNull(paymentOrders.providerTransId),
+    ))
     .returning()
   if (!updated) {
     const fresh = await findOrder(orderId)
@@ -169,12 +173,50 @@ async function performTransaction(params: Record<string, unknown>): Promise<RpcO
   }
   if (order.status === 'cancelled') return err(PAYME_ERRORS.CANT_PERFORM, 'Tranzaksiya bekor qilingan')
 
-  // ATOMIK CLAIM — parallel Perform'dan faqat biri o'tadi
+  // ATOMIK COMPLETE: order claim + payment ledger + premium entitlement bitta
+  // statementda. Shu bilan completed-order/lekin-premium-yo'q crash oynasi yopiladi.
+  const performTime = Date.now()
+  const plan = getPlan(order.plan)
+  if (plan) {
+    const result = await paymentRepository.completeProviderOrder({
+      orderPk: order.id,
+      orderId: order.orderId,
+      telegramChargeId: `payme_${paymeTxId}`,
+      providerChargeId: paymeTxId,
+      providerTransId: paymeTxId,
+      userId: order.userId,
+      plan: plan.key as PlanKey,
+      days: plan.days,
+      amount: order.amountUzs,
+      currency: 'UZS',
+      payload: `payme_order_${order.orderId}`,
+      rawUpdate: { provider: 'payme', paymeTxId },
+      orderRawDetails: { ...order.rawDetails, paymeState: 2, performTime },
+    })
+    if (result.status === 'user_not_found') {
+      return err(PAYME_ERRORS.CANT_PERFORM, 'Foydalanuvchi topilmadi')
+    }
+    if (result.status === 'not_pending') {
+      const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
+      if (fresh?.status === 'completed') return ok(txView(fresh))
+      return err(PAYME_ERRORS.CANT_PERFORM, 'Tranzaksiya holati o‘zgargan')
+    }
+    if ('order' in result) {
+      await redeemOrderPromo(order)
+      return ok(txView({
+        ...order,
+        status: result.order.status as OrderRow['status'],
+        providerTransId: result.order.providerTransId,
+        rawDetails: result.order.rawDetails,
+      }))
+    }
+  }
+
   const [claimed] = await db
     .update(paymentOrders)
     .set({
       status: 'completed',
-      rawDetails: { ...order.rawDetails, paymeState: 2, performTime: Date.now() },
+      rawDetails: { ...order.rawDetails, paymeState: 2, performTime },
     })
     .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, 'pending')))
     .returning()
@@ -182,32 +224,6 @@ async function performTransaction(params: Record<string, unknown>): Promise<RpcO
     const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
     if (fresh?.status === 'completed') return ok(txView(fresh))
     return err(PAYME_ERRORS.CANT_PERFORM, 'Tranzaksiya holati o‘zgargan')
-  }
-
-  // Premium grant (ledger CTE idempotent) — Click'dagi bilan bir xil
-  const plan = getPlan(order.plan)
-  if (plan) {
-    try {
-      const result = await paymentRepository.complete({
-        telegramChargeId: `payme_${paymeTxId}`,
-        providerChargeId: paymeTxId,
-        userId: order.userId,
-        plan: plan.key as PlanKey,
-        days: plan.days,
-        amount: order.amountUzs,
-        currency: 'UZS',
-        payload: `payme_order_${order.orderId}`,
-        rawUpdate: { provider: 'payme', paymeTxId },
-      })
-      if (result === 'user_not_found') {
-        await db.update(paymentOrders).set({ status: 'cancelled' }).where(eq(paymentOrders.id, order.id)).returning({ id: paymentOrders.id })
-        return err(PAYME_ERRORS.CANT_PERFORM, 'Foydalanuvchi topilmadi')
-      }
-    } catch (e) {
-      // Grant xatosi — order'ni qayta 'pending'ga qaytaramiz, Payme retry qiladi
-      await db.update(paymentOrders).set({ status: 'pending' }).where(eq(paymentOrders.id, order.id)).returning({ id: paymentOrders.id })
-      throw e
-    }
   }
 
   // Promokod redemption — best-effort (premium allaqachon berilgan)

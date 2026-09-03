@@ -4,7 +4,7 @@
  */
 
 import crypto from 'crypto'
-import { eq, and } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { paymentRepository } from './payment.repository'
@@ -317,30 +317,12 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
       error_note: 'Transaction cancelled',
     }
   }
-
-  // 6. ATOMIK CLAIM (audit P1-5 replay/replay-race himoyasi): faqat bitta
-  //    Complete o'tadi — pending→completed conditional UPDATE. Parallel ikkita
-  //    turli click_trans_id'li Complete'dan faqat biri yutadi (qolganlari
-  //    ALREADY_PAID, premium IKKI marta berilmaydi); XUDDI SHU trans_id'ning
-  //    retry/replay'i idempotent SUCCESS qaytaradi (qayta grant Yo'Q).
-  const [claimed] = await db
-    .update(paymentOrders)
-    .set({
-      status: 'completed',
-      providerTransId: String(clickTransId),
-      rawDetails: input as unknown as Record<string, unknown>,
-    })
-    .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, 'pending')))
-    .returning()
-
-  if (!claimed) {
-    const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
-    if (fresh && fresh.providerTransId === String(clickTransId)) {
-      // Xuddi shu tranzaksiyaning replay'i — allaqachon muvaffaqiyatli o'tgan
+  if (order.status === 'completed') {
+    if (order.providerTransId === String(clickTransId)) {
       return {
         click_trans_id: clickTransId,
         merchant_trans_id: merchantTransId,
-        merchant_confirm_id: fresh.id,
+        merchant_confirm_id: order.id,
         error: CLICK_ERRORS.SUCCESS,
         error_note: 'Already confirmed',
       }
@@ -354,45 +336,55 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
     }
   }
 
-  // 7. Activate Premium entitlement (ledger CTE charge-id bo'yicha idempotent).
-  //    Grant xatosida buyurtmani qayta 'pending'ga qaytaramiz — Click retry'i
-  //    davom eta olsin (pull olingan, premium berilmagan holat qolmasin).
+  // 6. ATOMIK COMPLETE: order claim + payment ledger + premium entitlement bitta
+  //    statementda. Shu bilan completed-order/lekin-premium-yo'q crash oynasi yopiladi.
   const plan = getPlan(order.plan)
+  let confirmedId = order.id
   if (plan) {
     const chargeId = `click_${clickTransId}`
-    try {
-      const result = await paymentRepository.complete({
-        telegramChargeId: chargeId,
-        providerChargeId: String(clickTransId),
-        userId: order.userId,
-        plan: plan.key as PlanKey,
-        days: plan.days,
-        amount: order.amountUzs,
-        currency: 'UZS',
-        payload: `click_order_${order.orderId}`,
-        rawUpdate: input as unknown as Record<string, unknown>,
-      })
-      if (result === 'user_not_found') {
-        // User o'chirilgan — ledger CTE ham hech narsa yozmaydi (target_user
-        // bo'sh). Buyurtmani cancelled qilib Click'ga xato qaytaramiz.
-        await db.update(paymentOrders).set({ status: 'cancelled' })
-          .where(eq(paymentOrders.id, order.id))
-          .returning({ id: paymentOrders.id })
+    const result = await paymentRepository.completeProviderOrder({
+      orderPk: order.id,
+      orderId: order.orderId,
+      telegramChargeId: chargeId,
+      providerChargeId: String(clickTransId),
+      providerTransId: String(clickTransId),
+      userId: order.userId,
+      plan: plan.key as PlanKey,
+      days: plan.days,
+      amount: order.amountUzs,
+      currency: 'UZS',
+      payload: `click_order_${order.orderId}`,
+      rawUpdate: input as unknown as Record<string, unknown>,
+      orderRawDetails: input as unknown as Record<string, unknown>,
+    })
+    if (result.status === 'user_not_found') {
+      return {
+        click_trans_id: clickTransId,
+        merchant_trans_id: merchantTransId,
+        error: CLICK_ERRORS.ORDER_NOT_FOUND,
+        error_note: 'User not found',
+      }
+    }
+    if (result.status === 'not_pending') {
+      const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))
+      if (fresh && fresh.providerTransId === String(clickTransId)) {
         return {
           click_trans_id: clickTransId,
           merchant_trans_id: merchantTransId,
-          error: CLICK_ERRORS.ORDER_NOT_FOUND,
-          error_note: 'User not found',
+          merchant_confirm_id: fresh.id,
+          error: CLICK_ERRORS.SUCCESS,
+          error_note: 'Already confirmed',
         }
       }
-    } catch (err) {
-      await db
-        .update(paymentOrders)
-        .set({ status: 'pending', providerTransId: null, rawDetails: {} })
-        .where(eq(paymentOrders.id, order.id))
-        .returning({ id: paymentOrders.id })
-      throw err
+      return {
+        click_trans_id: clickTransId,
+        merchant_trans_id: merchantTransId,
+        merchant_confirm_id: order.id,
+        error: CLICK_ERRORS.ALREADY_PAID,
+        error_note: 'Already paid',
+      }
     }
+    if ('order' in result) confirmedId = result.order.id
   }
 
   // Promokod redemption — best-effort (premium allaqachon berilgan)
@@ -401,7 +393,7 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
   return {
     click_trans_id: clickTransId,
     merchant_trans_id: merchantTransId,
-    merchant_confirm_id: claimed.id,
+    merchant_confirm_id: confirmedId,
     error: CLICK_ERRORS.SUCCESS,
     error_note: 'Success',
   }

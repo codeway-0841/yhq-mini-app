@@ -1,0 +1,32 @@
+
+> yhq-mini-app@1.1.0 test:e2e
+> playwright test tests/e2e/biletlar.spec.ts tests/e2e/belgilar.spec.ts --project=telegram-webview-android --workers=1
+
+[WebServer] (node:15516) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:15916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] warn - The class `duration-[120ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;120ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[160ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;160ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[400ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;400ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[600ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;600ms&rsqb;` to silence this warning.
+[WebServer] 
+[WebServer] warn - The class `duration-[700ms]` is ambiguous and matches multiple utilities.
+[WebServer] warn - If this is content and not a class, replace it with `duration-&lsqb;700ms&rsqb;` to silence this warning.
+  ok 1 [telegram-webview-android] › tests\e2e\belgilar.spec.ts:9:3 › Yo‘l Belgilari E2E › yo‘l belgilari kategoriyalari yuklanadi (8.3s)
+  ok 2 [telegram-webview-android] › tests\e2e\belgilar.spec.ts:15:3 › Yo‘l Belgilari E2E › qidiruv inputiga matn kiritganda filtrlanadi (1.7s)
+  ok 3 [telegram-webview-android] › tests\e2e\biletlar.spec.ts:9:3 › Biletlar Sahifasi E2E › biletlar sahifasi yuklanadi va tablar ko‘rinadi (2.0s)
+  ok 4 [telegram-webview-android] › tests\e2e\biletlar.spec.ts:15:3 › Biletlar Sahifasi E2E › orqaga qaytish tugmasi mavjud (1.9s)
+
+  4 passed (16.9s)
