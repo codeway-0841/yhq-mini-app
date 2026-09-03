@@ -245,36 +245,7 @@ function ThemeEffect() {
   const ownedItems  = useAppStore((s) => s.ownedItems)
   const fontStyle   = useAppStore((s) => s.settings.fontStyle)
 
-  // Light/Dark almashish animatsiyasi (2026-09-03): 'theme-transition' class
-  // FAQAT almashish vaqtida qo'yiladi (index.css 0.35s) va ~450ms keyin olib
-  // tashlanadi. Doimiy bo'lsa hover/active/focus ranglari ham kechikib ishlardi.
-  // Qoidalar:
-  //  - Birinchi qo'llash (mount/boot) ANIMATSIYASIZ — aks holda boot'da
-  //    default dark → tanlangan tema flash bo'lib ko'rinardi;
-  //  - noAnimation setting yoki OS prefers-reduced-motion — hurmat qilinadi;
-  //  - Telegram native header/status bar rangi ham shu bilan sinxronlanadi.
-  const prevThemeRef = useRef<string | null>(null)
-  const animTimerRef = useRef<number | null>(null)
-  useEffect(() => () => {
-    if (animTimerRef.current != null) window.clearTimeout(animTimerRef.current)
-  }, [])
-
   const applyTheme = (next: 'light' | 'dark') => {
-    const prev = prevThemeRef.current
-    prevThemeRef.current = next
-    const reduceMotion = typeof window.matchMedia === 'function'
-      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const animate = prev !== null && prev !== next
-      && document.body.dataset.noAnimation !== 'true'
-      && !reduceMotion
-    if (animate) {
-      document.body.classList.add('theme-transition')
-      if (animTimerRef.current != null) window.clearTimeout(animTimerRef.current)
-      animTimerRef.current = window.setTimeout(() => {
-        document.body.classList.remove('theme-transition')
-        animTimerRef.current = null
-      }, 450)
-    }
     document.body.dataset.theme = next
     syncStatusBarStyle(next === 'dark')   // native APK status bar iconlari (no-op web/TG)
     syncTelegramTheme(next === 'dark')    // Telegram status bar & header rangi (no-op APK/web)

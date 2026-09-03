@@ -130,6 +130,48 @@ body[data-platform='native'] {
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
 
+/* ── Telegram-style Circular View Transition (2026-09-03) ───────────────────
+   Light ↔ Dark circular clip-path transition.
+   - Disable default browser cross-fade and color blending.
+   - Light -> Dark: new view (dark) on top (z-index: 9999) expanding outward.
+   - Dark -> Light: old view (dark snapshot) on top (z-index: 9999) contracting inward.
+   - No opacity fade, no layout shift, zero duplication. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Light -> Dark default stacking: new dark view on top */
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Dark -> Light: old dark view remains on top while contracting into the switch */
+html[data-theme-transition='to-light']::view-transition-old(root) {
+  z-index: 9999;
+}
+html[data-theme-transition='to-light']::view-transition-new(root) {
+  z-index: 1;
+}
+
+/* Accessibility & performance guards */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+body[data-no-animation='true']::view-transition-group(root),
+body[data-no-animation='true']::view-transition-old(root),
+body[data-no-animation='true']::view-transition-new(root) {
+  animation: none !important;
+}
+
 
 
 /* ── Fintech / iOS Hero Gradient Card ───────────────────────────────────────

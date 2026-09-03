@@ -6,6 +6,7 @@ import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
+import { transitionTheme } from '../../../shared/lib/theme-transition'
 import { Button } from '../../../shared/components/ui/button'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -49,17 +50,17 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const theme = useAppStore((s) => s.settings.theme)
-  const updateSettings = useAppStore((s) => s.updateSettings)
   const name = displayName ?? user?.firstName ?? tt('guestName')
 
-  // Dark / Light rejimini bir bosishda almashtirish
-  const toggleTheme = () => {
+  // Dark / Light rejimini bir bosishda silliq aylanma ochilish (circular reveal) bilan almashtirish
+  const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
     playSound('toggle')
     haptics.impact('light')
     const currentIsDark =
       theme === 'dark' ||
-      (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    updateSettings({ theme: currentIsDark ? 'light' : 'dark' })
+      (theme === 'system' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    const next = currentIsDark ? 'light' : 'dark'
+    void transitionTheme(next, e.currentTarget)
   }
 
   const isDark =

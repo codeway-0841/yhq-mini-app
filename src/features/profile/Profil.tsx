@@ -15,6 +15,7 @@ import { api, avatarSrcFor } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
+import { transitionTheme } from '../../shared/lib/theme-transition'
 import PickerSheet from '../../shared/components/PickerSheet'
 import { Button } from '../../shared/components/ui/button'
 import { useToast } from '../../shared/components/ToastContainer'
@@ -484,7 +485,7 @@ export default function Profil() {
             { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-pmuted" /> },
             { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-pmuted" /> },
           ]}
-          onSelect={(v) => updateSettings({ theme: v as 'dark' | 'light' | 'system' })}
+          onSelect={(v) => void transitionTheme(v as 'dark' | 'light' | 'system')}
           onClose={() => setShowThemePicker(false)}
         />
       )}
