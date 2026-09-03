@@ -1,0 +1,98 @@
+.learning-path {
+  --path-line: color-mix(in srgb, var(--p-purple) 35%, var(--p-canvas));
+  padding-top: 12px;
+  padding-bottom: 80px;
+}
+
+/* Each sticky banner belongs to its own section. Its bottom boundary lets
+   the next module physically push it away as the document scrolls. */
+.lesson-module-section { padding-bottom: 20px; }
+.lesson-module-sticky { position: sticky; top: calc(var(--lesson-header-height, 61px) + 8px); z-index: 20; }
+.lesson-module-banner {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+  min-height: 72px; color: white;
+  background: linear-gradient(115deg, var(--module-color), color-mix(in srgb, var(--module-color) 78%, #17202e));
+  box-shadow: inset 0 1px 0 #ffffff26, inset 0 -2px 0 #00000012, 0 3px 0 color-mix(in srgb, var(--module-color) 65%, #17202e);
+}
+.lesson-module-icon { display: grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: 12px; background: #ffffff20; }
+.lesson-module-progress {
+  flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;
+  background: conic-gradient(white var(--module-progress), #ffffff30 0);
+}
+.lesson-module-progress span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--module-color); font-size: 10px; font-weight: 800; }
+.lesson-module-section .learning-path { padding-top: 20px; padding-bottom: 0; }
+.lesson-module-section:last-of-type { padding-bottom: 100px; }
+
+.learning-tile {
+  --tile-color: #9463df;
+  --tile-light: #c2a0fa;
+  --tile-side: #593393;
+  --tile-edge: #432475;
+  position: relative;
+  display: block;
+  flex: none;
+  transition: transform 150ms ease-out;
+}
+
+.learning-tile[data-state='current'] {
+  --tile-color: #21b86a;
+  --tile-light: #71eaa4;
+  --tile-side: #147343;
+  --tile-edge: #105c36;
+}
+
+.learning-tile[data-state='locked'] {
+  --tile-color: color-mix(in srgb, var(--p-purple) 18%, var(--p-surface));
+  --tile-light: color-mix(in srgb, var(--p-purple) 10%, var(--p-card));
+  --tile-side: color-mix(in srgb, var(--p-purple) 22%, var(--p-surface));
+  --tile-edge: color-mix(in srgb, var(--p-purple) 28%, var(--p-surface));
+}
+
+.learning-tile-icon {
+  position: absolute;
+  left: 39px;
+  top: 53px;
+  color: white;
+  transform: scaleY(.8);
+}
+
+.learning-tile[data-state='locked'] .learning-tile-icon { color: var(--p-muted); }
+.learning-node:not(:disabled):active .learning-tile { transform: translateY(4px); }
+
+@media (hover: hover) and (pointer: fine) {
+  .learning-node:not(:disabled):hover .learning-tile { transform: translateY(-4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learning-tile { transition: none; }
+}
+
+.module-medal { position: relative; display: grid; place-items: center; width: 136px; height: 136px; }
+.module-medal-orbit { position: absolute; inset: 0; border-radius: 50%; border: 1px dashed color-mix(in srgb, var(--p-gold) 40%, transparent); }
+.module-medal-face {
+  display: grid; place-items: center; width: 104px; height: 104px; border-radius: 50%;
+  background: linear-gradient(145deg, #fff0aa, #f1c45e 50%, #c68b25);
+  color: #624211;
+  box-shadow: inset 0 0 0 6px #fff7d133, 0 7px 0 #aa771e, 0 16px 32px #c68b252b;
+}
+.module-medal-check { position: absolute; right: 13px; bottom: 12px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--p-success); color: white; }
+.module-medal-spark { position: absolute; top: 9px; right: 4px; color: var(--p-gold); }
+.module-auto-progress { position: absolute; inset: 0; background: #ffffff26; transform-origin: left; animation: module-auto-fill var(--module-delay) linear both; }
+@keyframes module-auto-fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes module-medal-arrive { from { opacity: 0; transform: translateY(18px) scale(.7) rotate(-15deg); } to { opacity: 1; transform: translateY(0) scale(1) rotate(0); } }
+@keyframes module-next-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: no-preference) {
+  body:not([data-no-animation='true']) .module-medal { animation: module-medal-arrive 650ms cubic-bezier(.16,1,.3,1) both; }
+  body:not([data-no-animation='true']) .module-next-preview { animation: module-next-arrive 500ms 300ms ease-out both; }
+}
+@media (prefers-reduced-motion: reduce) { .module-complete, .module-auto-progress { animation: none !important; } }
+body[data-no-animation='true'] .module-complete,
+body[data-no-animation='true'] .module-auto-progress { animation: none !important; }
+@media (max-height: 740px) {
+  .module-complete-header { padding-top: 20px; }
+  .module-medal { width: 96px; height: 96px; }
+  .module-medal-face { width: 76px; height: 76px; }
+  .module-medal-face svg { width: 32px; height: 32px; }
+  .module-medal-check { width: 26px; height: 26px; right: 3px; bottom: 3px; }
+  .module-next-preview { padding: 12px; }
+}

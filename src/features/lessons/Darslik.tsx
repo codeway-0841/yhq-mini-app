@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
-import { Lock, Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle } from 'lucide-react'
+import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle, ArrowDown } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../content/lessons'
@@ -13,6 +13,10 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../platform/telegram'
+import LearningPath from './LearningPath'
+import ModuleComplete, { type CompletedModule } from './ModuleComplete'
+import { useT } from '../../shared/i18n'
+import { Button } from '../../shared/components/ui/button'
 import { getModuleIcon } from './module-icons'
 
 type Mod = typeof modules[number]
@@ -185,125 +189,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
   )
 }
 
-// ── Dars ro'yxati — KIWI vertikal timeline rail ─────────────────────────────
-// v3: ilon-izi "winding path" + doira tugunlar + atrofdagi emoji bezaklar
-// (🌲🚦🌳🏠🏢) BUTUNLAY olib tashlandi — ular Duolingo dars xaritasining
-// o'zi edi. O'rniga chapdan o'tuvchi rail va chapga tekislangan bosqich
-// qatorlari: ro'yxat skanerlanadi, dars nomi to'liq o'qiladi (ilgari 2 ta
-// so'zga qirqilardi) va ekran kengligiga bog'liq emas.
-function ModulePath({ mod, doneList, onOpenLesson }: {
-  mod: Mod
-  doneList: number[]
-  onOpenLesson: (idx: number) => void
-}) {
-  const settings = useAppStore((s) => s.settings)
-  const ru = settings.language === 'ru'
-  const modTitle = ru ? mod.titleRu : mod.title
-  const total = mod.lessonCount
-  const ModIcon = getModuleIcon(mod.id)
-  const activeIdx = (() => {
-    for (let i = 0; i < total; i++) if (!doneList.includes(i)) return i
-    return -1   // hammasi tugallangan
-  })()
-
-  return (
-    <div className="rounded-2xl bg-pcard p-4 shadow-xs">
-      {/* Modul sarlavhasi */}
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <div className="flex min-w-0 items-center gap-3">
-          <div className="flex size-10 flex-shrink-0 items-center justify-center text-pmuted">
-            <ModIcon size={22} strokeWidth={1.75} />
-          </div>
-          <div className="min-w-0">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-psubtle">
-              {mod.id}-{ru ? 'МОДУЛЬ' : 'MODUL'} · {total} {ru ? 'УРОКОВ' : 'TA DARS'}
-            </p>
-            <p className="truncate font-display text-[16px] font-semibold tracking-[-0.015em] text-pfg">
-              {modTitle}
-            </p>
-          </div>
-        </div>
-        <span className="flex-none rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
-          {doneList.length}/{total}
-        </span>
-      </div>
-
-      {/* Timeline rail */}
-      <div className="relative pl-7">
-        {/* Vertikal chiziq — birinchi va oxirgi tugun markazlari orasida */}
-        <span
-          aria-hidden="true"
-          className="absolute left-[7px] top-3 bottom-3 w-0.5 rounded-full bg-plineStrong"
-        />
-        <ol className="flex flex-col">
-          {Array.from({ length: total }, (_, i) => {
-            const done   = doneList.includes(i)
-            const active = i === activeIdx
-            const locked = i > 0 && !doneList.includes(i - 1)
-            const lesson = lessons[mod.id]?.[i]
-            const title  = lesson
-              ? (ru ? lesson.titleRu : lesson.titleUz)
-              : `${i + 1}-${ru ? 'урок' : 'dars'}`
-            return (
-              <li key={i} className="relative py-2.5">
-                {/* Bosqich nuqtasi */}
-                <span
-                  aria-hidden="true"
-                  className={
-                    'absolute -left-[26px] top-[15px] size-2.5 rounded-full border-2 ' +
-                    (done || active ? 'border-transparent' : 'border-plineStrong bg-pcard') +
-                    (active ? ' lesson-glow' : '')
-                  }
-                  style={done || active ? { background: mod.color } : undefined}
-                />
-                <button
-                  type="button"
-                  onClick={() => !locked && onOpenLesson(i)}
-                  disabled={locked}
-                  className={
-                    'flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors duration-150 ease-out ' +
-                    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ' +
-                    (locked ? 'cursor-not-allowed opacity-50' : 'hover:bg-psurface active:bg-psurface')
-                  }
-                >
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-[14px] font-semibold text-pfg">{title}</span>
-                    <span className="mt-0.5 block text-[11.5px] text-psubtle">
-                      {locked
-                        ? (ru ? 'Ещё закрыт' : 'Hali ochilmagan')
-                        : done
-                          ? (ru ? 'Пройден' : 'Tugallandi')
-                          : active
-                            ? (ru ? 'Текущий урок' : 'Joriy dars')
-                            : (ru ? 'Доступен' : 'Ochiq')}
-                    </span>
-                  </span>
-                  {locked
-                    ? <Lock size={15} strokeWidth={1.75} className="flex-none text-psubtle" />
-                    : done
-                      ? <Check size={16} strokeWidth={1.75} className="flex-none" style={{ color: mod.color }} />
-                      : (
-                        <span
-                          className="inline-flex h-[30px] flex-none items-center gap-1 rounded-xl px-2.5 text-[12px] font-semibold shadow-2xs"
-                          style={{
-                            background: `color-mix(in srgb, ${mod.color} 12%, transparent)`,
-                            color: mod.color,
-                          }}
-                        >
-                          <Play size={11} strokeWidth={2} />
-                          {ru ? 'Открыть' : 'Ochish'}
-                        </span>
-                      )}
-                </button>
-              </li>
-            )
-          })}
-        </ol>
-      </div>
-    </div>
-  )
-}
-
 export default function Darslik() {
   const navigate = useNavigate()
   const location = useLocation()
@@ -321,10 +206,51 @@ export default function Darslik() {
     }
     return null
   })
+  const [moduleId, setModuleId] = useState(() => {
+    const st = location.state as { moduleId?: number } | null
+    return modules.find((m) => m.id === st?.moduleId)?.id
+      ?? modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))?.id
+      ?? modules[0].id
+  })
+  const [completion, setCompletion] = useState<CompletedModule | null>(null)
+  const headingRef = useRef<HTMLHeadingElement>(null)
+  const rootRef = useRef<HTMLDivElement>(null)
+  const headerRef = useRef<HTMLElement>(null)
+  const moduleRefs = useRef(new Map<number, HTMLElement>())
+  const resetPathScroll = useRef(moduleId !== modules[0].id)
+  useEffect(() => {
+    const header = headerRef.current
+    if (!header) return
+    const measure = () => rootRef.current?.style.setProperty('--lesson-header-height', `${header.getBoundingClientRect().height}px`)
+    measure()
+    if (typeof ResizeObserver === 'undefined') return
+    const observer = new ResizeObserver(measure)
+    observer.observe(header)
+    return () => observer.disconnect()
+  }, [])
+  const continueModule = useCallback(() => {
+    if (!completion?.next) return
+    resetPathScroll.current = true
+    setModuleId(completion.next.id)
+    setCompletion(null)
+  }, [completion])
+  useEffect(() => {
+    // Wait for the completion dialog's scroll lock to be released first.
+    if (completion || reader || !resetPathScroll.current) return
+    resetPathScroll.current = false
+    const section = moduleRefs.current.get(moduleId)
+    if (!section) return
+    const top = section.getBoundingClientRect().top + window.scrollY - (headerRef.current?.getBoundingClientRect().height ?? 0) - 8
+    const reduceMotion = settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    window.scrollTo({ top: Math.max(0, top), behavior: reduceMotion ? 'instant' : 'smooth' })
+    section.querySelector('h2')?.focus({ preventScroll: true })
+  }, [completion, moduleId, reader, settings.noAnimation])
+  const tt = useT(settings.language)
+  const currentModule = modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))
   const [toast, setToast] = useState<string | null>(null)
 
   const ru = settings.language === 'ru'
-  const totalDone = Object.values(doneFor).reduce((s, arr) => s + arr.length, 0)
+  const totalDone = modules.reduce((sum, m) => sum + (lessons[m.id] ?? []).filter((_, i) => doneFor[m.id]?.includes(i)).length, 0)
   const markDone = useLessonsStore((s) => s.markDone)
 
   const showToast = (msg: string) => { setToast(msg); setTimeout(() => setToast(null), 3000) }
@@ -354,14 +280,14 @@ export default function Darslik() {
   }
 
   return (
-    <div className="px-4 pb-4">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
+    <div ref={rootRef} className="lesson-course px-4 pb-4">
+      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
-          <h1 className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
+          <h1 ref={headingRef} tabIndex={-1} className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
             {ru ? 'Учебник' : 'Darslik'}
           </h1>
         </div>
@@ -371,16 +297,38 @@ export default function Darslik() {
         </span>
       </header>
 
-      <div className="flex flex-col gap-4">
-        {modules.map((mod) => (
-          <ModulePath
-            key={mod.id}
-            mod={mod}
-            doneList={doneFor[mod.id] ?? []}
-            onOpenLesson={(i) => setReader({ mod, idx: i })}
-          />
-        ))}
-      </div>
+      {modules.map((item) => {
+        const list = lessons[item.id] ?? []
+        const done = list.filter((_, i) => doneFor[item.id]?.includes(i)).length
+        const Icon = getModuleIcon(item.id)
+        const title = ru ? item.titleRu : item.title
+        return <section key={item.id} id={`lesson-module-${item.id}`} aria-labelledby={`lesson-module-title-${item.id}`}
+          ref={(node) => { if (node) moduleRefs.current.set(item.id, node); else moduleRefs.current.delete(item.id) }}
+          className="lesson-module-section mx-auto max-w-[440px]" style={{ '--module-color': item.color } as CSSProperties}>
+          <div className="lesson-module-sticky">
+            <div className="lesson-module-banner rounded-2xl">
+              <span className="lesson-module-icon"><Icon aria-hidden="true" size={21} strokeWidth={1.75} /></span>
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-[.1em] opacity-90">{item.id} · {tt('pathModule')} · {list.length} {tt('lessonWord')}</p>
+                <h2 id={`lesson-module-title-${item.id}`} tabIndex={-1} className="mt-0.5 break-words font-display text-[16px] font-bold leading-tight focus-visible:outline-none">{title}</h2>
+              </div>
+              <div role="progressbar" aria-label={`${title} — ${tt('pathProgress')}`} aria-valuenow={done} aria-valuemin={0} aria-valuemax={list.length}
+                className="lesson-module-progress" style={{ '--module-progress': `${list.length ? done / list.length * 100 : 0}%` } as CSSProperties}>
+                <span>{done}/{list.length}</span>
+              </div>
+            </div>
+          </div>
+          <LearningPath mod={item} doneList={doneFor[item.id] ?? []} lang={settings.language}
+            onOpenLesson={(idx) => setReader({ mod: item, idx })} onPractice={(idx) => practiceLesson(item, idx)} />
+        </section>
+      })}
+      {currentModule && <div className="pointer-events-none fixed bottom-[calc(2rem+var(--safe-bottom,0px))] left-0 right-0 z-20 flex justify-center">
+        <Button className="pointer-events-auto rounded-full bg-psuccess text-white shadow-lg" onClick={() => {
+          const node = moduleRefs.current.get(currentModule.id)?.querySelector<HTMLButtonElement>('[aria-current="step"]')
+          node?.scrollIntoView({ behavior: settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center' })
+          node?.focus({ preventScroll: true })
+        }}><ArrowDown size={17} />{tt('pathJump')}</Button>
+      </div>}
 
       {toast && (
         <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-2xl bg-pwarning/15 px-4 py-3 text-center text-[13px] font-medium text-pfg shadow-lg">
@@ -395,7 +343,17 @@ export default function Darslik() {
           lessonIdx={reader.idx}
           onClose={() => setReader(null)}
           onDone={(idx) => {
+            const finished = reader.mod
+            const list = lessons[finished.id] ?? []
+            const previous = useLessonsStore.getState().byUser[userId]?.[finished.id] ?? []
+            const wasDone = list.every((_, i) => previous.includes(i))
             markDone(userId, reader.mod.id, idx)
+            if (!wasDone && list.every((_, i) => i === idx || previous.includes(i))) {
+              const progress = useLessonsStore.getState().byUser[userId] ?? {}
+              const courseDone = modules.every((m) => (lessons[m.id] ?? []).every((_, i) => progress[m.id]?.includes(i)))
+              setReader(null)
+              setCompletion({ finished, next: courseDone ? undefined : modules[modules.findIndex((m) => m.id === finished.id) + 1], courseDone })
+            }
             // Dars bilan shug'ullanish ham kunlik faollik — streak yoziladi (kunda 1 marta)
             void useDailyStore.getState().touchActivity(
               userId, todayStr(), useSubjectStore.getState().subjectId,
@@ -404,6 +362,8 @@ export default function Darslik() {
           onPractice={(idx) => practiceLesson(reader.mod, idx)}
         />
       )}
+      {completion && <ModuleComplete completion={completion} lang={settings.language}
+        onContinue={continueModule} onStay={() => setCompletion(null)} />}
     </div>
   )
 }

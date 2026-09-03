@@ -1,6 +1,20 @@
 export type Lang = 'uz' | 'ru'
 
 const UZ = {
+  pathBravo: 'Barakalla!', pathCourseDone: 'Barcha modullar tugallandi!',
+  pathCourseDoneHint: 'Darslikni to‘liq o‘qib chiqdingiz. Endi mashqlar bilan bilimlaringizni mustahkamlang.',
+  pathMilestoneHint: 'Yana bir bosqich ortda qoldi. Bilimingizga yangi bilim qo‘shildi!',
+  pathNextModule: 'Keyingi modul', pathNextNow: 'Keyingi modulga o‘tish',
+  pathAutoNextHint: '5 soniyadan so‘ng avtomatik o‘tasiz.', pathStay: 'Shu modulda qolish', pathBackToPath: 'Darslikka qaytish',
+  pathLabel: "O‘rganish yo‘li", pathModule: 'Modul', pathChooseModule: 'Modulni tanlang',
+  pathCurrent: 'Siz shu yerdasiz', pathLocked: 'Hali ochilmagan', pathDone: 'Tugallandi',
+  pathPractice: 'Mashq', pathPracticeReady: 'Mashq ochiq', pathJump: 'Joriy darsga',
+  pathModuleDone: 'Modul tugallandi!', pathReviewHint: 'Bilimingizni mustahkamlash uchun istalgan payt qaytishingiz mumkin.',
+  pathPracticeHint: 'Shu darsga tegishli savollar bilan bilimingizni tekshiring.',
+  pathLessonHint: 'Darsni o‘qing va keyingi bosqichni oching.',
+  pathStartPractice: 'Mashqni boshlash', pathStartLesson: 'Darsni ochish', pathReview: 'Qayta o‘qish',
+  pathClose: 'Yopish', pathProgress: 'O‘qilgan darslar', pathCourse: 'Yo‘l harakati qoidalari',
+  pathIntro: 'Har bir dars — maqsad sari bir qadam.',
   // Nav
   home: "Bosh sahifa", lessons: "Darslik", tickets: "Biletlar",
   signs: "Belgilar", profile: "Profil", leaderboard: "Reyting",
@@ -505,6 +519,20 @@ const UZ = {
 type Keys = keyof typeof UZ
 
 const RU: Record<Keys, string> = {
+  pathBravo: 'Отличная работа!', pathCourseDone: 'Все модули пройдены!',
+  pathCourseDoneHint: 'Вы прочитали весь учебник. Закрепите знания с помощью практики.',
+  pathMilestoneHint: 'Ещё один этап позади. Ваши знания стали крепче!',
+  pathNextModule: 'Следующий модуль', pathNextNow: 'К следующему модулю',
+  pathAutoNextHint: 'Автоматический переход через 5 секунд.', pathStay: 'Остаться в этом модуле', pathBackToPath: 'Вернуться к учебнику',
+  pathLabel: 'Путь обучения', pathModule: 'Модуль', pathChooseModule: 'Выберите модуль',
+  pathCurrent: 'Вы здесь', pathLocked: 'Ещё закрыт', pathDone: 'Пройден',
+  pathPractice: 'Практика', pathPracticeReady: 'Практика доступна', pathJump: 'К текущему уроку',
+  pathModuleDone: 'Модуль пройден!', pathReviewHint: 'Возвращайтесь в любое время, чтобы закрепить знания.',
+  pathPracticeHint: 'Проверьте знания на вопросах по этому уроку.',
+  pathLessonHint: 'Прочитайте урок, чтобы открыть следующий шаг.',
+  pathStartPractice: 'Начать практику', pathStartLesson: 'Открыть урок', pathReview: 'Повторить урок',
+  pathClose: 'Закрыть', pathProgress: 'Прочитанные уроки', pathCourse: 'Правила дорожного движения',
+  pathIntro: 'Каждый урок — шаг к вашей цели.',
   home: "Главная", lessons: "Учебник", tickets: "Билеты",
   signs: "Знаки", profile: "Профиль", leaderboard: "Рейтинг",
   allTests: "Все тесты", fixMistakes: "Работа над ошибками",
