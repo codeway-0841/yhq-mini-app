@@ -1,25 +1,13 @@
-import { useEffect, lazy, Suspense, useRef, useState } from 'react'
-import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom'
-import { useAppStore } from './shared/store/useAppStore'
-import { useQuestionsStore } from './shared/store/useQuestionsStore'
-import { useSubjectStore } from './shared/store/useSubjectStore'
-import { ensureAccountOwner, resetAccountToLoggedOut } from './shared/store/account'
-import { api } from './shared/api'
-import { flushOutbox } from './shared/lib/outbox'
-import { prefetchLeaderboardPreview } from './shared/lib/leaderboard-cache'
-import { prefetchDashboardCards } from './shared/lib/dashboard-cache'
-import { track } from './shared/lib/analytics'
-import {
-  getSessionToken, SESSION_EXPIRED_EVENT, SESSION_CHANGED_EVENT,
-} from './shared/lib/session'
+﻿import { useEffect, lazy, Suspense, useState, type ReactNode } from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import PageLoader from './shared/components/PageLoader'
-import { resolveAccent } from './shared/config/themes'
-import { ensureFontLoaded } from './shared/lib/fonts'
 import SplashScreen from './features/onboarding/SplashScreen'
-import { useDailyStore } from './shared/store/useDailyStore'
-import { useToast } from './shared/components/ToastContainer'
-import { useT, t } from './shared/i18n'
-import { goBack, subscribeModalStack } from './shared/lib/navigation'
+import { t } from './shared/i18n'
+import { getStartParam, closeMiniApp } from './platform/telegram'
+import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
+import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
+import ThemeEffect from './features/app/components/ThemeEffect'
+import StreakSaveToast from './features/app/components/StreakSaveToast'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -28,6 +16,7 @@ import { goBack, subscribeModalStack } from './shared/lib/navigation'
 const dashboardChunk = () => import('./features/dashboard/Dashboard')
 void dashboardChunk()
 const Dashboard       = lazy(dashboardChunk)
+
 // Har sahifa chunk'i NOMLANGAN loader orqali — boot'dan keyin idle prefetch
 // (pastda) shu loader'larni qayta ishlatadi (import() modul keshi tufayli
 // ikki marta yuklanmaydi — lazy bilan bir xil modul).
@@ -99,10 +88,8 @@ const ModesPage        = lazy(modesChunk)
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
 // yuklanmagan bo'lsa Suspense fallback (PageLoader) EMAS, ESKI sahifa
-// (Dashboard) chunk kelguncha ekranda qolib ketardi ("rejimni tanlasam avval
-// dashboard ~2s ko'rinib, keyin sahifa sraz ochiladi" bug'i). Boot tugagach
-// IDLE vaqtda barcha sahifa chunk'larini oldindan yuklab qo'yamiz — har qanday
-// navigatsiya DARHOL ochiladi (tartib: eng ko'p ishlatiladiganlar birinchi).
+// (Dashboard) chunk kelguncha ekranda qolib ketardi. Boot tugagach
+// IDLE vaqtda barcha sahifa chunk'larini oldindan yuklab qo'yamiz.
 const routeChunkPrefetchers = [
   testlarChunk, darslikChunk, biletlarChunk, topicsChunk, testPageChunk,
   belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
@@ -117,35 +104,8 @@ function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
 }
 
-import { getStartParam, getTelegramUser, getTelegramWebApp, readyAndExpand, requestFreshInitData, closeMiniApp, INITDATA_DEAD_EVENT, syncTelegramTheme } from './platform/telegram'
-import { bindAppBackButton, hideSplashScreen, syncStatusBarStyle } from './platform/native'
-
-function Layout() {
-  const location = useLocation()
-  const navigate = useNavigate()
-  const atHome = location.pathname === '/'
-  const [modalCount, setModalCount] = useState(0)
-
-  // Modal stack holatini kuzatish — modal ochiq bo'lsa BackButton ko'rinadi va eng oxirgi modalni yopadi
-  useEffect(() => {
-    return subscribeModalStack((count) => setModalCount(count))
-  }, [])
-
-  // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
-  useEffect(() => {
-    window.scrollTo(0, 0)
-    // Telegram iOS fullscreen repaint fix (Issue #2061: orqaga qaytganda tepa soha repaintsiz oq/bo'sh qolmasligi uchun)
-    const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent))
-    if (isIos) {
-      requestAnimationFrame(() => {
-        window.scrollBy(0, 1)
-        window.scrollBy(0, -1)
-      })
-    }
-    // Har bir sahifa navigatsiyasida Telegram status bar & header rangini qayta mustahkamlash
-    const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
-    syncTelegramTheme(isDark)
-  }, [location.pathname])
+function Layout({ children }: { children: ReactNode }) {
+  const { pageRef, navigate } = usePlatformNavigation()
 
   // Duel invite-link (ikki manba):
   //  1) startapp deep-link: ?startapp=duel-xxxx yoki 6-digit PIN → start_param
@@ -159,182 +119,42 @@ function Layout() {
       const cleanCode = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
       navigate(`/octagon/${cleanCode}`)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  // Platforma "orqaga" tugmasi — Telegram'da TG BackButton, APK'da hardware back.
-  // visible: sub-sahifada bo'lsa YOKI biror modal/sheet ochiq bo'lsa (bosh sahifada ham).
-  const shouldShowBack = !atHome || modalCount > 0
-  useEffect(() => {
-    return bindAppBackButton(shouldShowBack, () => goBack(navigate))
-  }, [shouldShowBack, navigate])
-
-  // Sahifa o'tishida scroll reset + transition — key={pathname} EMAS (audit L11b):
-  // key har navigatsiyada BUTUN sahifani REMOUNT qilardi (komponent state'lari
-  // yo'qolardi); animation endi class restart bilan (remount'siz, perf saqlanadi).
-  const pageRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const el = pageRef.current
-    if (!el) return
-    el.scrollTop = 0               // hozircha no-op (scroll'ni DOCUMENT qiladi), kelajak guard
-    el.classList.remove('route-page')
-    void el.offsetWidth            // reflow — CSS animatsiyani qayta boshlaydi
-    el.classList.add('route-page')
-  }, [location.pathname])
+  }, [navigate])
 
   return (
     // MUHIM (2026-09-01 sticky incident): bu konteynerlarda overflow-y:auto/hidden
     // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
     // kontent o'sadi), lekin overflow'li har qanday ajdod STICKY elementlar uchun
-    // scrollport (containing block) bo'lib qoladi → sticky VIEWPORT'ga emas,
-    // scroll bo'layotgan box'ga nisbatan ishlaydi: header kontent ustidan "suzib"
-    // o'tib, yopishib qolgandek ko'rinardi (Admin panel bug'i). overflow-x:clip —
-    // yagona ruxsat (clip scrollport YARATMAYDI, faqat gorizontal siljishni kesadi).
+    // scrollport bo'lib qoladi. overflow-x:clip — yagona ruxsat.
     <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip">
       <div
         ref={pageRef}
-        // pb: 1rem bazaviy + --safe-bottom (TG fullscreen/APK'da scroll oxiridagi
-        // kontent gesture bar/home indicator ostida qolmasin; oddiy rejimda 0 →
-        // ko'rinish O'ZGARMAS). MARKAZIY — barcha sahifalarni qoplaydi.
+        // pb: 1rem bazaviy + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
         className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(1rem+var(--safe-bottom,0px))] px-0"
       >
         <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/"           element={<Dashboard />} />
-            <Route path="/testlar"    element={<TestlarPage />} />
-            <Route path="/test/yim"   element={<YimExamPage />} />
-            <Route path="/test/:id"   element={<TestPage />} />
-            <Route path="/darslik"    element={<Darslik />} />
-            <Route path="/biletlar"   element={<Biletlar />} />
-            <Route path="/belgilar"   element={<Belgilar />} />
-            <Route path="/belgilar-oyini" element={<SignsGamePage />} />
-            <Route path="/profil"     element={<Profil />} />
-            <Route path="/mavzular"   element={<TopicsPage />} />
-            <Route path="/adaptive"   element={<AdaptivePage />} />
-            <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
-            <Route path="/reyting"    element={<LeaderboardPage />} />
-            <Route path="/xatolar"    element={<XatolarPage />} />
-            <Route path="/streak"     element={<StreakPage />} />
-            <Route path="/rejimlar"   element={<ModesPage />} />
-            <Route path="/premium"    element={<PremiumPage />} />
-            <Route path="/shop"       element={<ShopPage />} />
-            <Route path="/statistika" element={<StatistikaPage />} />
-            <Route path="/speed"      element={<SpeedPage />} />
-            <Route path="/flashcards" element={<FlashcardsPage />} />
-            <Route path="/shpargalkalar" element={<FormulasPage />} />
-            <Route path="/qidiruv"    element={<SearchPage />} />
-            <Route path="/ai-test"    element={<AiTestHub />} />
-            <Route path="/ai-test/:id" element={<AiTestSession />} />
-            <Route path="/admin"      element={<AdminPage />} />
-            <Route path="*"           element={<NotFound />} />
-          </Routes>
+          {children}
         </Suspense>
       </div>
     </div>
   )
 }
 
-/** Light/Dark tema — settings.theme o'zgarishi bilan body ga qo'llanadi.
- * 'system' tanlansa, qurilma sozlamasiga ergashiladi (matchMedia). */
-function ThemeEffect() {
-  const theme       = useAppStore((s) => s.settings.theme)
-  const noAnimation = useAppStore((s) => s.settings.noAnimation)
-  const language    = useAppStore((s) => s.settings.language)
-  const accent      = useAppStore((s) => s.accent)
-  const tariff      = useAppStore((s) => s.tariff)
-  const ownedItems  = useAppStore((s) => s.ownedItems)
-  const fontStyle   = useAppStore((s) => s.settings.fontStyle)
-
-  const applyTheme = (next: 'light' | 'dark') => {
-    document.body.dataset.theme = next
-    syncStatusBarStyle(next === 'dark')
-    syncTelegramTheme(next === 'dark')
-  }
-
-  useEffect(() => {
-    // <html lang> — screen reader talaffuzi uchun; qattiq "uz" bilan boshlanadi (index.html),
-    // foydalanuvchi tilni almashtirsa sinxronlanadi.
-    document.documentElement.lang = language ?? 'uz'
-  }, [language])
-  useEffect(() => {
-    if (theme === 'system') {
-      const mq = window.matchMedia('(prefers-color-scheme: light)')
-      const apply = () => applyTheme(mq.matches ? 'light' : 'dark')
-      apply()
-      mq.addEventListener('change', apply)
-      return () => mq.removeEventListener('change', apply)
-    }
-    applyTheme(theme)
-  }, [theme])
-  // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
-  useEffect(() => {
-    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium', new Set(ownedItems))
-  }, [accent, tariff, ownedItems])
-  useEffect(() => {
-    // noAnimation setting — route transitionlar ham o'chadi (index.css)
-    document.body.dataset.noAnimation = String(noAnimation)
-  }, [noAnimation])
-  useEffect(() => {
-    // Ixtiyoriy oilalar boot'da emas, TANLANGANDA yuklanadi (shared/lib/fonts.ts)
-    ensureFontLoaded(fontStyle)
-    document.body.dataset.font = fontStyle || 'default'
-  }, [fontStyle])
-  return null
-}
-
-/** Streak coin-save bildirishnomasi — server uzilgan seriyani coin evaziga
- *  saqlaganda (`useDailyStore.coinSaved`) bir martalik toast ko'rsatadi. */
-function StreakSaveToast() {
-  const coinSaved      = useDailyStore((s) => s.coinSaved)
-  const clearCoinSaved = useDailyStore((s) => s.clearCoinSaved)
-  const language       = useAppStore((s) => s.settings.language)
-  const { info } = useToast()
-  const tt = useT(language)
-  useEffect(() => {
-    if (!coinSaved) return
-    info(tt('streakSavedToast'))
-    clearCoinSaved()
-  }, [coinSaved, clearCoinSaved, info, tt])
-  return null
-}
-
 export default function App() {
-  const syncFromServer = useAppStore((s) => s.syncFromServer)
-  const initialized    = useAppStore((s) => s.initialized)
-  const user           = useAppStore((s) => s.user)
-  // Telegram Mini App muhiti butun sessiya davomida o'zgarmaydi — bir marta tekshiramiz
-  const [isTelegram]   = useState(() => Boolean(getTelegramUser()?.id))
-  // Bearer sessiya holati — set/clear event'lari orqali kuzatiladi (LoginPage render qarori)
-  const [hasSession, setHasSession] = useState(() => Boolean(getSessionToken()))
-  // initData eskirgan va Telegram reload'da yangilamadi — faqat "yopib-qayta ochish"
-  // yechim (2026-08-27 incident: cheksiz reload sikli). Blokirovka ekrani.
-  const [initDataDead, setInitDataDead] = useState(false)
-  const lang = useAppStore((s) => s.settings.language)
+  const {
+    initialized,
+    initDataDead,
+    isAuthed,
+    lang,
+  } = useAppBootstrap()
 
-  // Session expire (401) → akkaunt reset + LoginPage; token set/clear → isAuthed yangilanadi
-  useEffect(() => {
-    const onExpired = () => { setHasSession(false); resetAccountToLoggedOut() }
-    const onChanged = () => setHasSession(Boolean(getSessionToken()))
-    const onInitDataDead = () => setInitDataDead(true)
-    window.addEventListener(SESSION_EXPIRED_EVENT, onExpired)
-    window.addEventListener(SESSION_CHANGED_EVENT, onChanged)
-    window.addEventListener(INITDATA_DEAD_EVENT, onInitDataDead)
-    return () => {
-      window.removeEventListener(SESSION_EXPIRED_EVENT, onExpired)
-      window.removeEventListener(SESSION_CHANGED_EVENT, onChanged)
-      window.removeEventListener(INITDATA_DEAD_EVENT, onInitDataDead)
-    }
-  }, [])
+  // Onboarding faqat birinchi kirishda ko'rsatiladi
+  const [onboarded, setOnboarded] = useState(() => {
+    try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }
+  })
 
-  // APK native splash — ilova o'z initini (initialized=true) bitkazgach yashiriladi.
-  // Web/Telegram'da no-op. Ilgarigi JSX splash'dan native splash'ga uzluksiz o'tish.
-  useEffect(() => {
-    if (initialized) hideSplashScreen()
-  }, [initialized])
-
-  // Splash yopilgach — sahifa chunk'larini IDLE vaqtda prefetch (yuqoridagi
-  // "NAVIGATSIYA FLASH FIX" izohiga qarang). Boot kritik yo'lidan tashqarida:
-  // faqat idle callback yoki kichik timeout, init so'rovlari bilan raqobat yo'q.
+  // Splash yopilgach — sahifa chunk'larini IDLE vaqtda prefetch.
+  // Boot kritik yo'lidan tashqarida: faqat idle callback yoki kichik timeout.
   useEffect(() => {
     if (!initialized) return
     if (typeof window.requestIdleCallback === 'function') {
@@ -343,196 +163,6 @@ export default function App() {
     }
     const t = setTimeout(prefetchRouteChunks, 1000)
     return () => clearTimeout(t)
-  }, [initialized])
-  // Onboarding faqat birinchi kirishda ko'rsatiladi
-  const [onboarded, setOnboarded] = useState(() => {
-    try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }
-  })
-
-  // Splash'dan chiqish GARANTIYASI — init 8s dan oshsa majburiy o'tish
-  useEffect(() => {
-    const t = setTimeout(() => {
-      if (!useAppStore.getState().initialized) {
-        useAppStore.setState({ initialized: true })
-      }
-    }, 8000)
-    return () => clearTimeout(t)
-  }, [])
-
-  useEffect(() => {
-    readyAndExpand()
-
-    track('app_open')
-
-    // Fan almashuvi — multi-fan platformaning asosiy KPI signali
-    let prevSubj = useSubjectStore.getState().subjectId
-    const unsubSubject = useSubjectStore.subscribe((s) => {
-      if (s.subjectId !== prevSubj) {
-        prevSubj = s.subjectId
-        track('subject_switch', { id: s.subjectId })
-        const lang = useAppStore.getState().settings?.language ?? 'uz'
-        void useQuestionsStore.getState().load(lang, s.subjectId)
-      }
-    })
-
-    const tgUser = getTelegramUser()
-
-    const loadQuestions = (lang: 'uz' | 'ru') =>
-      useQuestionsStore.getState().load(lang, useSubjectStore.getState().subjectId)
-
-    // /questions va /topics — PUBLIC endpoint'lar (questions.router.ts: auth
-    // middleware yo'q, CDN kesh bor). Ya'ni ular auth javobini kutishi SHART
-    // EMAS. Keshdagi til bilan DARHOL boshlaymiz — api.init()/getAuthMe() bilan
-    // parallel ketadi va bitta to'liq round-trip yo'qoladi.
-    // Profil kelgach loadQuestions(server tili) yana chaqiriladi: til bir xil
-    // bo'lsa store guard'i no-op qiladi (uchib ketayotgan so'rov ham hisobga
-    // olinadi — useQuestionsStore `inFlight`), boshqacha bo'lsa qayta yuklanadi.
-    void loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
-
-    if (tgUser?.id) {
-      // initData FRESHNESS GATE (regressiya fix): ilova Telegram fonda 1+ soat
-      // turganida auth_date eskirgan bo'ladi — server'ning qat'iy replay oynasi
-      // (INITDATA_MAX_AGE_SECONDS=3600) auth-only '/questions' uchun 401 qaytarib,
-      // sahifa "yuklanmoqda"da qolib ketardi (2026-08-26 content-protection yoqilgach).
-      // So'rov AVTASHISHdan OLDIN: initData 55+ daqiqalik bo'lsa ilovani BIR MARTA
-      // qayta yuklaymiz — Telegram yangi initData (fresh auth_date) beradi.
-      // Loop himoyasi requestFreshInitData'dagi 60s guard'da.
-      const authDate = getTelegramWebApp()?.initDataUnsafe?.auth_date
-      if (typeof authDate === 'number' && Date.now() - authDate * 1000 > 55 * 60_000) {
-        requestFreshInitData()
-        return
-      }
-
-      const verifiedId = String(tgUser.id)
-
-      // Warm start FAQAT ayni Telegram akkauntining cache'i bo'lsa xavfsiz.
-      // Account mismatch'da PII, progress va adaptive state atomik tozalanadi
-      // (ro'yxat — src/store/account.ts; yangi account-scoped store shu yerga
-      // qo'shilishi shart, bu yerda takrorlanmaydi).
-      const isOwner = ensureAccountOwner(verifiedId)
-      if (isOwner && useAppStore.getState().user?.id) {
-        useAppStore.setState({ initialized: true })
-      }
-
-      // Referal: ?ref=<id> query (bot tugmasidan) YOKI start_param (startapp link).
-      // Canonical id HAR QANDAY shaklda (TG raqam, p_<digits>, e_<hex>) — telefon
-      // akkauntli userlarning havolasi ham sanaladi.
-      const refQ = new URLSearchParams(window.location.search).get('ref')
-      const startParam =
-        getStartParam() ??
-        (refQ && /^[A-Za-z0-9_]{2,40}$/.test(refQ) ? `ref_${refQ}` : undefined)
-      api.init({
-        id:         String(tgUser.id),
-        first_name: tgUser.first_name,
-        last_name:  tgUser.last_name  ?? '',
-        username:   tgUser.username   ?? '',
-        photo_url:  tgUser.photo_url  ?? '',
-        ...(startParam ? { start_param: startParam } : {}),
-      })
-        .then(async (data) => {
-          try {
-            // Mapping auth (Bearer) yo'li bilan BIR XIL — hydrateFromProfile
-            useAppStore.getState().hydrateFromProfile(data)
-            // SAVOLLAR SPLASH'NI KUTIB TURMAYDI (boot perf): /questions + /topics
-            // eng og'ir payload, lekin Dashboard'ga faqat SON uchun kerak.
-            // `await` bo'lgani uchun splash shu ikki so'rov tugaguncha turardi.
-            void loadQuestions(data.settings.language).catch(() => {})
-            void flushOutbox(verifiedId)
-            // Dashboard kartalari skeletsiz ochilishi uchun keshlar oldindan
-            // isitiladi (fire-and-forget — boot'ni sekinlashtirmaydi). Aks holda
-            // bu so'rovlar Dashboard MOUNT bo'lgandan keyin, ya'ni splash
-            // tugagach boshlanardi — o'sha payt skeletlar ko'rinardi.
-            prefetchLeaderboardPreview(data.user.id)
-            prefetchDashboardCards()
-          } finally {
-            // Xato bo'lsa ham splash'dan chiqishi shart
-            useAppStore.setState({ initialized: true })
-          }
-        })
-        .catch(async () => {
-          try {
-            await syncFromServer(String(tgUser.id)).catch(() => {})
-            const lang = useAppStore.getState().settings?.language ?? 'uz'
-            void loadQuestions(lang).catch(() => {})
-          } finally {
-            useAppStore.setState({ initialized: true })
-          }
-        })
-    } else {
-      // MEHMON REJIM YO'Q: initData'siz muhitda (APK/brauzer) Bearer sessiya tekshiriladi.
-      const sessionToken = getSessionToken()
-      if (!sessionToken) {
-        // Sessiya yo'q — toza login holati (oldingi akkaunt cache'i ko'rinmaydi)
-        resetAccountToLoggedOut()
-        // Savollar public endpoint — LoginPage bilan parallel yuklanadi
-        loadQuestions('uz').catch(() => {})
-        useAppStore.setState({ initialized: true })
-      } else {
-        // Optimistik warm start: token + cache birga yoziladi (localStorage),
-        // shuning uchun cache'dagi user shu sessiyaga tegishli deb ishonamiz.
-        if (useAppStore.getState().user?.id) {
-          useAppStore.setState({ initialized: true })
-        }
-        api.getAuthMe()
-          .then(async (data) => {
-            try {
-              // Adopt-merge (p_ → telegram raqam id) almashinuvini ushlaymiz
-              ensureAccountOwner(data.user.id)
-              useAppStore.getState().hydrateFromProfile(data)
-              void loadQuestions(data.settings.language).catch(() => {})
-              void flushOutbox(data.user.id)
-              prefetchLeaderboardPreview(data.user.id)
-              prefetchDashboardCards()
-            } finally {
-              useAppStore.setState({ initialized: true })
-            }
-          })
-          .catch(() => {
-            // 401: request() qatlami allaqachon session-expired event'ini tarqatdi
-            // (akkaunt reset + LoginPage). Network xato: offline fallback —
-            // cache'dagi profil bilan davom (outbox pattern bilan uyg'un).
-          })
-          .finally(() => {
-            useAppStore.setState({ initialized: true })
-          })
-      }
-    }
-    // Internet qaytganda yoki ilovaga qaytilganda outbox navbatini yuborish va store'ni yangilash
-    const triggerSync = () => {
-      const id = useAppStore.getState().user?.id
-      if (id && id !== '0' && (typeof navigator === 'undefined' || navigator.onLine !== false)) {
-        void flushOutbox(id).then(() => {
-          void syncFromServer(id)
-        })
-      }
-    }
-    const onOnline = () => triggerSync()
-    const onVisibilityChange = () => {
-      if (document.visibilityState === 'visible') triggerSync()
-    }
-    window.addEventListener('online', onOnline)
-    document.addEventListener('visibilitychange', onVisibilityChange)
-
-    return () => {
-      window.removeEventListener('online', onOnline)
-      document.removeEventListener('visibilitychange', onVisibilityChange)
-      unsubSubject()
-    }
-  }, [syncFromServer])
-
-  // Boot'dan keyin IDLE vaqtda barcha route chunk'larini yuklab qo'yish (navigatsiya flash fix)
-  useEffect(() => {
-    if (!initialized) return
-    const id = 'requestIdleCallback' in window
-      ? (window as unknown as { requestIdleCallback: (cb: () => void) => number }).requestIdleCallback(prefetchRouteChunks)
-      : setTimeout(prefetchRouteChunks, 200)
-    return () => {
-      if ('cancelIdleCallback' in window && typeof id === 'number') {
-        (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(id)
-      } else {
-        clearTimeout(id as ReturnType<typeof setTimeout>)
-      }
-    }
   }, [initialized])
 
   const finishOnboarding = () => {
@@ -623,9 +253,6 @@ export default function App() {
   }
 
   // Auth gate: Mini App (initData) YOKI Bearer sessiya YOKI hydrate bo'lgan cache user.
-  // Uchtalasi ham yo'q bo'lsa — veb mehmoni LoginPage'ga tushadi
-  // (marketing landing endi alohida entry: kivvi.uz → landing.html, app.kivvi.uz → app).
-  const isAuthed = isTelegram || hasSession || Boolean(user?.id)
   if (!isAuthed) {
     return (
       <>
@@ -652,7 +279,37 @@ export default function App() {
     <HashRouter>
       <ThemeEffect />
       <StreakSaveToast />
-      <Layout />
+      <Layout>
+        <Routes>
+          <Route path="/"           element={<Dashboard />} />
+          <Route path="/testlar"    element={<TestlarPage />} />
+          <Route path="/test/yim"   element={<YimExamPage />} />
+          <Route path="/test/:id"   element={<TestPage />} />
+          <Route path="/darslik"    element={<Darslik />} />
+          <Route path="/biletlar"   element={<Biletlar />} />
+          <Route path="/belgilar"   element={<Belgilar />} />
+          <Route path="/belgilar-oyini" element={<SignsGamePage />} />
+          <Route path="/profil"     element={<Profil />} />
+          <Route path="/mavzular"   element={<TopicsPage />} />
+          <Route path="/adaptive"   element={<AdaptivePage />} />
+          <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
+          <Route path="/reyting"    element={<LeaderboardPage />} />
+          <Route path="/xatolar"    element={<XatolarPage />} />
+          <Route path="/streak"     element={<StreakPage />} />
+          <Route path="/rejimlar"   element={<ModesPage />} />
+          <Route path="/premium"    element={<PremiumPage />} />
+          <Route path="/shop"       element={<ShopPage />} />
+          <Route path="/statistika" element={<StatistikaPage />} />
+          <Route path="/speed"      element={<SpeedPage />} />
+          <Route path="/flashcards" element={<FlashcardsPage />} />
+          <Route path="/shpargalkalar" element={<FormulasPage />} />
+          <Route path="/qidiruv"    element={<SearchPage />} />
+          <Route path="/ai-test"    element={<AiTestHub />} />
+          <Route path="/ai-test/:id" element={<AiTestSession />} />
+          <Route path="/admin"      element={<AdminPage />} />
+          <Route path="*"           element={<NotFound />} />
+        </Routes>
+      </Layout>
     </HashRouter>
   )
 }
