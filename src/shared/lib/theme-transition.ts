@@ -100,10 +100,10 @@ export function isThemeDark(theme: ThemeOption): boolean {
 
 /**
  * Executes a gentle, silky Telegram-style circular reveal theme transition:
- * - Mayin chiqib, mayin yopiladi (cubic-bezier(0.4, 0, 0.2, 1), 600ms)
+ * - Mayin boshlanib, mayin tugaydi (cubic-bezier(0.35, 0, 0.25, 1), 550ms)
+ * - Zero flicker: `:root.theme-to-dark::view-transition-new` CSS'da circle(0%) qilib oldindan qotiriladi
  * - Light -> Dark: yangi qorong'u qatlam tugmadan mayin yoyilib butun ekranni qoplaydi
  * - Dark -> Light: eski qorong'u qatlam butun ekrandan mayin tortilib tugma ichiga kiradi
- * - Tugma ikonkasi: alohida izolyatsiyada silliq aylanib almashadi
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -151,7 +151,7 @@ export async function transitionTheme(
     try { activeVT.skipTransition() } catch (_) {}
   }
 
-  // Viewport va tugma markazining aniq nisbiy foizi
+  // Viewport va tugma markazining aniq nisbiy koordinatalari
   const vw = document.documentElement.clientWidth || window.innerWidth || 1
   const vh = document.documentElement.clientHeight || window.innerHeight || 1
   const { x: cx, y: cy } = getOriginCoordinates(origin)
@@ -165,8 +165,11 @@ export async function transitionTheme(
   const covering = `circle(${rpct}% at ${px}% ${py}%)`
 
   const root = document.documentElement
-  root.classList.add('theme-switching')
-  root.classList.toggle('theme-to-light', !nextIsDark)
+  // MUHIM: startViewTransition'dan OLDIN o'rnatiladi — yangi qatlam 1-freymdayoq 0% li bo'lib ochiladi
+  root.style.setProperty('--theme-origin-x', `${px}%`)
+  root.style.setProperty('--theme-origin-y', `${py}%`)
+  root.classList.remove('theme-to-dark', 'theme-to-light')
+  root.classList.add(nextIsDark ? 'theme-to-dark' : 'theme-to-light')
 
   let vt: ViewTransition | undefined
   try {
@@ -179,7 +182,9 @@ export async function transitionTheme(
     })
   } catch {
     updateDOMAndState()
-    root.classList.remove('theme-switching', 'theme-to-light')
+    root.classList.remove('theme-to-dark', 'theme-to-light')
+    root.style.removeProperty('--theme-origin-x')
+    root.style.removeProperty('--theme-origin-y')
     return
   }
 
@@ -190,7 +195,7 @@ export async function transitionTheme(
 
     if (activeVT !== vt) return
 
-    // Mayin va silliq tezlanish hamda sekinlanish (ease-in-out)
+    // Mayin boshlanuvchi va mayin to'xtovchi silliq egri chiziq
     const animationKeyframes = nextIsDark
       ? { clipPath: [collapsed, covering] }
       : { clipPath: [covering, collapsed] }
@@ -200,8 +205,8 @@ export async function transitionTheme(
       : '::view-transition-old(root)'
 
     const anim = root.animate(animationKeyframes, {
-      duration: 600,
-      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      duration: 550,
+      easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
       fill: 'forwards',
       pseudoElement: targetPseudo,
     })
@@ -212,8 +217,9 @@ export async function transitionTheme(
   } finally {
     if (activeVT === vt) {
       activeVT = null
-      root.classList.remove('theme-switching')
-      root.classList.remove('theme-to-light')
+      root.classList.remove('theme-to-dark', 'theme-to-light')
+      root.style.removeProperty('--theme-origin-x')
+      root.style.removeProperty('--theme-origin-y')
     }
   }
 }

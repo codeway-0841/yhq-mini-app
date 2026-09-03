@@ -131,30 +131,6 @@ body[data-platform='native'] {
 body[data-no-animation='true'] .route-page { animation: none; }
 
 /* ── Telegram-style Smooth Circular View Transition ─────────────────────────── */
-.theme-toggle-btn {
-  view-transition-name: theme-toggle;
-}
-
-::view-transition-group(theme-toggle) {
-  z-index: 10000;
-}
-
-::view-transition-old(theme-toggle) {
-  animation: 600ms cubic-bezier(0.4, 0, 0.2, 1) both theme-icon-out;
-}
-::view-transition-new(theme-toggle) {
-  animation: 600ms cubic-bezier(0.4, 0, 0.2, 1) both theme-icon-in;
-}
-
-@keyframes theme-icon-out {
-  from { transform: rotate(0deg) scale(1); opacity: 1; }
-  to { transform: rotate(-90deg) scale(0.6); opacity: 0; }
-}
-@keyframes theme-icon-in {
-  from { transform: rotate(90deg) scale(0.6); opacity: 0; }
-  to { transform: rotate(0deg) scale(1); opacity: 1; }
-}
-
 ::view-transition-group(root) {
   isolation: isolate;
   overflow: hidden;
@@ -170,15 +146,16 @@ body[data-no-animation='true'] .route-page { animation: none; }
   mix-blend-mode: normal;
 }
 
-/* Light -> Dark default: yangi qorong'u qatlam ustida kengayadi */
-::view-transition-old(root) {
+/* Light -> Dark: yangi qorong'u qatlam 0% doirada tug'iladi — hech qanday pirpirash yoki to'liq qora frame bo'lmaydi */
+:root.theme-to-dark::view-transition-new(root) {
+  z-index: 9999;
+  clip-path: circle(0% at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
+}
+:root.theme-to-dark::view-transition-old(root) {
   z-index: 1;
 }
-::view-transition-new(root) {
-  z-index: 9999;
-}
 
-/* Dark -> Light: eski qorong'u qatlam ustida qisqarib tugmaga kirib ketadi */
+/* Dark -> Light: eski qorong'u qatlam ustida turadi va tugmaga qarab qisqaradi */
 :root.theme-to-light::view-transition-old(root) {
   z-index: 9999;
 }

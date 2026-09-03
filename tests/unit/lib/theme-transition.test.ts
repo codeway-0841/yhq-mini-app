@@ -159,8 +159,8 @@ describe('theme-transition: transitionTheme', () => {
         ]),
       }),
       expect.objectContaining({
-        duration: 600,
-        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        duration: 550,
+        easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
         pseudoElement: '::view-transition-new(root)',
       })
     )
@@ -198,8 +198,8 @@ describe('theme-transition: transitionTheme', () => {
         ]),
       }),
       expect.objectContaining({
-        duration: 600,
-        easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+        duration: 550,
+        easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
         pseudoElement: '::view-transition-old(root)',
       })
     )
