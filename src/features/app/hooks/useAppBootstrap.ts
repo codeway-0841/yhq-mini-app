@@ -23,6 +23,7 @@ import {
 } from '../../../platform/telegram'
 import { hideSplashScreen } from '../../../platform/native'
 import type { Lang } from '../../../shared/i18n'
+import { answerService } from '../../../shared/services/answer-service'
 
 export interface AppBootstrapState {
   initialized:  boolean
@@ -213,7 +214,23 @@ export function useAppBootstrap(): AppBootstrapState {
     window.addEventListener('online', onOnline)
     document.addEventListener('visibilitychange', onVisibilityChange)
 
+    // Outbox'dan replay bo'lgan javoblar sinxronizatsiyasi (explicit lifecycle)
+    const unsubResultSync = answerService.subscribeResultSync((info) => {
+      if (info.duplicate) return
+      useAppStore.getState().applyAnswerMutation({
+        questionId:   info.questionId,
+        correct:      info.correct,
+        subjectId:    info.subjectId,
+        date:         info.date,
+        dailyStreak:  info.dailyStreak,
+        coinSaved:    info.coinSaved,
+        coinBalance:  info.coinBalance,
+        xp:           info.xp,
+      })
+    })
+
     return () => {
+      unsubResultSync()
       window.removeEventListener('online', onOnline)
       document.removeEventListener('visibilitychange', onVisibilityChange)
       unsubSubject()
