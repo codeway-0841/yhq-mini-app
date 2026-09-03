@@ -11,7 +11,7 @@
  *    sotib olishni oldini oladi.
  */
 import { sql } from 'drizzle-orm'
-import { executeRows } from '../../db/connection'
+import { executeRows, getSqlTx } from '../../db/connection'
 import { getShopItem, isDurableShopItem } from '../../../shared/shop-items'
 import { getMerchItem, MERCH_ITEMS } from '../../../shared/merch-items'
 import { DAILY_TASKS, getDailyTask, type DailyTaskMetric } from '../../../shared/daily-tasks'
@@ -46,14 +46,16 @@ export const coinsRepository = {
   },
 
   /**
-   * Buyum sotib olish — BITTA atomik CTE, **CLAIM-FIRST** tartib (anti-race):
-   *  durable item'da avval `user_items` PK orqali band qilinadi (unique
-   *  insertion lock parallel so'rovlarni SERIALIZE qiladi; mag'lubiyata ON
-   *  CONFLICT DO NOTHING) va debit FAQAT claim g'olibiga tegishli — parallel
-   *  xaridda double-charge strukturaviy imkonsiz (CI race testi kafili).
-   *  Consumable (premium-days) uchun claim yo'q — qayta xarid legít.
-   * Ledger-first idempotency: `'purchase'+purchaseId` UNIQUE — retry xavfsiz.
-   * Grant: durable → user_items (claim allaqachon); consumable → GREATEST premium_until (C-1).
+   * Buyum sotib olish — Haqiqiy PostgreSQL tranzaksiyasi (`sqlTx.begin`):
+   *  1. Foydalanuvchi mavjudligini tekshirish (user_not_found)
+   *  2. Missing user_coins qatorini ta'minlash (INSERT ... ON CONFLICT DO NOTHING)
+   *  3. user_coins qatorini SELECT ... FOR UPDATE bilan qulflash (parallel xaridlarni serializatsiya qilish)
+   *  4. Duplicate purchaseId tekshiruvi (uq_coin_tx_ref: coin_transactions)
+   *  5. Durable item bo'lsa: user_items egalik tekshiruvi (already_owned)
+   *  6. Balans tekshiruvi (insufficient)
+   *  7. Debit: UPDATE user_coins SET balance = balance - price
+   *  8. Ledger INSERT: coin_transactions (uq_coin_tx_ref defense-in-depth)
+   *  9. Entitlement grant: durable -> user_items; consumable -> users.premium_until
    */
   async purchase(userId: string, itemId: string, purchaseId: string): Promise<PurchaseResult> {
     const item = getShopItem(itemId)
@@ -61,114 +63,105 @@ export const coinsRepository = {
     const durable = isDurableShopItem(item)
     const days = item.days ?? null
 
-    const rows = await executeRows<{
-      user_exists: boolean; was_duplicate: boolean
-      balance: number | null; current_balance: number | null; premiumUntil: Date | null
-    }>(sql`
-      WITH lock AS (
-        -- (userId, purchaseId) bo'yicha per-statement serialize — durable
-        -- item'lar user_items UNIQUE orqali strukturaviy himoyalangan, lekin
-        -- consumable (premium-days)da bunday claim yo'q edi: ikkita parallel
-        -- so'rov XUDDI SHU purchaseId bilan kelsa ikkalasi ham dup CTE'ni
-        -- bo'sh ko'rib ikkalasi ham debit qilishi mumkin edi (audit #4 — double-charge).
-        SELECT pg_advisory_xact_lock(hashtext(${userId} || ':' || ${purchaseId})::bigint) AS locked
-      ), price AS (
-        SELECT ${item.price}::int AS p, ${durable}::boolean AS dur, ${days}::int AS days
-        FROM lock
-      ), target_user AS (
-        SELECT id FROM users WHERE id = ${userId}
-      ), dup AS (
-        SELECT 1 FROM coin_transactions
-        WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
-      ), claim AS (
-        -- 1) Durable: user_items PK ga band qilish. Parallel durable race'da faqat 1 ta so'rov claim oladi.
-        INSERT INTO user_items (user_id, item_id)
-        SELECT ${userId}, ${item.id}
-        WHERE (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          -- claim-only zoning ximoyasi: balans snapshot'da yetarli bo'lsin
-          AND EXISTS (
-            SELECT 1 FROM user_coins
-            WHERE user_id = ${userId} AND balance >= (SELECT p FROM price)
-          )
-        ON CONFLICT DO NOTHING
-        RETURNING item_id
-      ), debit AS (
-        -- 2) Debit FAQAT durable claim g'olibi yoki consumable xaridga.
-        UPDATE user_coins
-        SET balance = balance - (SELECT p FROM price),
-            updated_at = now()
-        WHERE user_id = ${userId}
-          AND balance >= (SELECT p FROM price)
-          AND EXISTS (SELECT 1 FROM target_user)
-          AND NOT EXISTS (SELECT 1 FROM dup)
-          AND (SELECT CASE WHEN (SELECT dur FROM price)
-                           THEN EXISTS (SELECT 1 FROM claim)
-                           ELSE true END)
-        RETURNING balance
-      ), ledger AS (
-        -- 3) Ledger FAQAT real debitdan keyin yoziladi; race mag'lubi manfiy
-        -- ledger/premium grant qoldirmaydi.
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, -(SELECT p FROM price), 'purchase', ${purchaseId}
-        WHERE EXISTS (SELECT 1 FROM debit)
-        ON CONFLICT DO NOTHING
-        RETURNING id
-      ), revert_claim AS (
-        -- Durable claim balans snapshotida yutib, real debitda yutqazsa, bepul
-        -- egalik qolmasin.
-        DELETE FROM user_items
-        WHERE user_id = ${userId}
-          AND item_id = ${item.id}
-          AND (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM claim)
-          AND NOT EXISTS (SELECT 1 FROM debit)
-        RETURNING item_id
-      ), grant_premium AS (
-        -- 4) Consumable: premium_until uzaytirish FAQAT debit g'olibiga.
-        UPDATE users SET
-          premium_until = GREATEST(COALESCE(premium_until, now()), now())
-            + make_interval(days => (SELECT days FROM price)),
-          updated_at = now()
-        WHERE id = ${userId}
-          AND NOT (SELECT dur FROM price)
-          AND EXISTS (SELECT 1 FROM debit)
-        RETURNING premium_until
-      )
-      SELECT
-        EXISTS (SELECT 1 FROM target_user) AS user_exists,
-        EXISTS (SELECT 1 FROM dup) AS was_duplicate,
-        (SELECT balance::int FROM debit) AS balance,
-        (SELECT balance::int FROM user_coins WHERE user_id = ${userId}) AS current_balance,
-        (SELECT premium_until FROM grant_premium) AS "premiumUntil"
-    `)
+    const sqlTx = getSqlTx()
 
-    const row = rows[0]
-    if (!row?.user_exists) return { status: 'user_not_found' }
-    if (row.was_duplicate) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
-    if (row.balance === null) {
-      // Debit bo'lmadi: durable claim ololmadi (allaqachon egasi) YOKI duplicate retry YOKI balans yetarli emas
-      if (durable) {
-        const owned = await executeRows<{ item_id: string }>(sql`
-          SELECT item_id FROM user_items WHERE user_id = ${userId} AND item_id = ${item.id}
-        `)
-        if (owned.length > 0) return { status: 'already_owned' }
-      } else {
-        // Consumable'da ledger insert bo'lmagan bo'lsa — parallel race mag'lubi (duplicate)
-        const dupCheck = await executeRows<{ id: number }>(sql`
-          SELECT id FROM coin_transactions
-          WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
-        `)
-        if (dupCheck.length > 0) return { status: 'duplicate', balance: Number(row.current_balance ?? 0) }
+    return await sqlTx.begin(async (tx) => {
+      // 1. Foydalanuvchi mavjudligini tekshirish
+      const userRows = await tx<{ id: string }[]>`
+        SELECT id FROM users WHERE id = ${userId}
+      `
+      if (userRows.length === 0) {
+        return { status: 'user_not_found' }
       }
-      return { status: 'insufficient', balance: Number(row.current_balance ?? 0) }
-    }
-    return {
-      status: 'ok',
-      balance: Number(row.balance),
-      premiumUntil: row.premiumUntil ? new Date(row.premiumUntil) : null,
-    }
+
+      // 2. Missing user_coins qatorini ta'minlash (mavjud bo'lsa hech narsa o'zgarmaydi)
+      await tx`
+        INSERT INTO user_coins (user_id, balance, updated_at)
+        VALUES (${userId}, 0, now())
+        ON CONFLICT (user_id) DO NOTHING
+      `
+
+      // 3. user_coins qatorini FOR UPDATE bilan qulflash
+      // Parallel so'rovlar ayni shu joyda navbatga turadi va seriallashadi!
+      const coinRows = await tx<{ balance: number }[]>`
+        SELECT balance FROM user_coins WHERE user_id = ${userId} FOR UPDATE
+      `
+      const currentBalance = Number(coinRows[0]?.balance ?? 0)
+
+      // 4. Duplicate purchaseId tekshiruvi
+      // 1-so'rovdan keyin lockdan chiqqan 2-so'rov bu yerda uning ledger yozuvini ko'radi
+      const dupRows = await tx<{ id: number }[]>`
+        SELECT id FROM coin_transactions
+        WHERE user_id = ${userId} AND reason = 'purchase' AND ref_id = ${purchaseId}
+      `
+      if (dupRows.length > 0) {
+        return { status: 'duplicate', balance: currentBalance }
+      }
+
+      // 5. Durable bo'lsa: user_items tekshiruvi (already owned)
+      if (durable) {
+        const ownedRows = await tx<{ item_id: string }[]>`
+          SELECT item_id FROM user_items WHERE user_id = ${userId} AND item_id = ${item.id}
+        `
+        if (ownedRows.length > 0) {
+          return { status: 'already_owned' }
+        }
+      }
+
+      // 6. Balans tekshiruvi
+      if (currentBalance < item.price) {
+        return { status: 'insufficient', balance: currentBalance }
+      }
+
+      // 7. Ledger claim (debitdan OLDIN!)
+      // Defense-in-depth: uq_coin_tx_ref ON CONFLICT DO NOTHING
+      // Agar kutilmaganda unique conflict bo'lsa (tashqi parallel jarayon), hali debit
+      // qilinmagani sababli toza duplicate qaytadi (balansga zarracha ham tegilmaydi).
+      const ledgerRows = await tx<{ id: number }[]>`
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        VALUES (${userId}, ${-item.price}::int, 'purchase', ${purchaseId})
+        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
+        RETURNING id
+      `
+      if (ledgerRows.length === 0) {
+        return { status: 'duplicate', balance: currentBalance }
+      }
+
+      // 8. Debit (faqat ledger muvaffaqiyatli claim qilingandan keyin)
+      const debitRows = await tx<{ balance: number }[]>`
+        UPDATE user_coins
+        SET balance = balance - ${item.price}::int, updated_at = now()
+        WHERE user_id = ${userId}
+        RETURNING balance
+      `
+      const newBalance = Number(debitRows[0]?.balance ?? (currentBalance - item.price))
+
+      // 9. Entitlement grant
+      let premiumUntil: Date | null = null
+      if (durable) {
+        await tx`
+          INSERT INTO user_items (user_id, item_id)
+          VALUES (${userId}, ${item.id})
+          ON CONFLICT (user_id, item_id) DO NOTHING
+        `
+      } else {
+        const grantRows = await tx<{ premium_until: Date | null }[]>`
+          UPDATE users SET
+            premium_until = GREATEST(COALESCE(premium_until, now()), now())
+              + make_interval(days => ${days}::int),
+            updated_at = now()
+          WHERE id = ${userId}
+          RETURNING premium_until
+        `
+        premiumUntil = grantRows[0]?.premium_until ? new Date(grantRows[0].premium_until) : null
+      }
+
+      return {
+        status: 'ok',
+        balance: newBalance,
+        premiumUntil,
+      }
+    })
   },
 
   /**

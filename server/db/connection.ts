@@ -30,6 +30,26 @@ const isNeon = isNeonUrl(config.db.url)
 const postgresClient = isNeon ? null : postgres(config.db.url)
 const neonClient = isNeon ? neon(config.db.url) : null
 
+let sqlTxInstance: postgres.Sql | null = null
+
+/**
+ * Interactive tranzaksiya talab qiladigan oqimlar (masalan, coins purchase row lock)
+ * uchun reusable postgres-js transactional client.
+ * Neon HTTP drayveri stateless bo'lgani sababli interaktiv tx va FOR UPDATE locklarni
+ * qo'llab-quvvatlamaydi; ushbu singleton client to'g'ridan-to'g'ri TCP/pooler orqali
+ * haqiqiy PostgreSQL tranzaksiyalarini (`sqlTx.begin`) ta'minlaydi.
+ */
+export function getSqlTx(): postgres.Sql {
+  if (!sqlTxInstance) {
+    sqlTxInstance = postgresClient ?? postgres(config.db.url, {
+      max: 3,
+      idle_timeout: 20,
+      connect_timeout: 10,
+    })
+  }
+  return sqlTxInstance
+}
+
 /**
  * Raw Neon HTTP driver — FAQAT `transactionHttp` kabi maxsus yo'llar uchun.
  * drizzle neon-http `db.transaction()` ni qo'llab-quvvatLAMAYDI (driver HTTP

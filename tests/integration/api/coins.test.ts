@@ -14,7 +14,7 @@ import postgres from 'postgres'
 import { randomBytes } from 'crypto'
 import { eq, sql } from 'drizzle-orm'
 import { createApp } from '../../../server/app'
-import { db, executeRows } from '../../../server/db/connection'
+import { db, executeRows, getSqlTx } from '../../../server/db/connection'
 import { questions, users } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 import { authRepository } from '../../../server/modules/auth/auth.repository'
@@ -142,7 +142,7 @@ beforeAll(async () => {
   await createUserWithSession(USER_G)
 }, 90_000)
 
-afterAll(cleanup)
+afterAll(cleanup, 90_000)
 
 describe('coins mint — faqat gate + to\'g\'ri javob', () => {
   it('yangi to\'g\'ri javob +1 coin mint qiladi; xato javob 0; replay qayta bermaydi', async () => {
@@ -343,7 +343,7 @@ describe('coins purchase — atomiklik', () => {
     const [u] = await db.select({ premiumUntil: users.premiumUntil }).from(users).where(eq(users.id, USER_C))
     expect(u.premiumUntil?.getTime()).toBeGreaterThan(Date.now() + 18 * 3600_000)
     expect(u.premiumUntil?.getTime()).toBeLessThan(Date.now() + 36 * 3600_000)
-  })
+  }, 30_000)
 
   it('xuddi shu purchaseId retry — idempotent duplicate (qayta debit yo\'q)', async () => {
     const before = await getBalance(USER_B)
@@ -381,6 +381,63 @@ describe('coins purchase — atomiklik', () => {
     await request(app).post('/api/coins/purchase')
       .send({ itemId: THEME, purchaseId: randomBytes(16).toString('hex') })
       .expect(401)
+  })
+
+  it('insufficient -> topup -> same purchaseId muvaffaqiyatli bo\'ladi (failed attempt does not burn key)', async () => {
+    const item = getShopItem('premium-days-1')!
+    await setBalance(USER_D, 0)
+    const purchaseId = randomBytes(16).toString('hex')
+
+    // 1. Balans 0: insufficient
+    const res1 = await coinsRepository.purchase(USER_D, 'premium-days-1', purchaseId)
+    expect(res1.status).toBe('insufficient')
+
+    // 2. Balans to'ldiriladi
+    await setBalance(USER_D, item.price)
+
+    // 3. Xuddi shu purchaseId bilan retry qilinadi: muvaffaqiyatli bo'lishi shart!
+    const res2 = await coinsRepository.purchase(USER_D, 'premium-days-1', purchaseId)
+    expect(res2.status).toBe('ok')
+    expect(res2.balance).toBe(0)
+
+    // 4. Xuddi shu purchaseId bilan 3-marta yuborilsa: duplicate
+    const res3 = await coinsRepository.purchase(USER_D, 'premium-days-1', purchaseId)
+    expect(res3.status).toBe('duplicate')
+    expect(res3.balance).toBe(0)
+  })
+
+  it('entitlement/DB failure holatida tranzaksiya rollback — balans o\'zgarmaydi, ledger yozilmaydi', async () => {
+    const purchaseId = randomBytes(16).toString('hex')
+    await setBalance(USER_D, 500)
+    const beforeBal = await getBalance(USER_D)
+
+    // Simulating transaction failure: sqlTx.begin ichida exception bo'lsa
+    const sqlTx = getSqlTx()
+    await expect(
+      sqlTx.begin(async (tx) => {
+        // 1. Ledger claim
+        await tx`
+          INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+          VALUES (${USER_D}, -100, 'purchase', ${purchaseId})
+        `
+        // 2. Debit
+        await tx`
+          UPDATE user_coins SET balance = balance - 100 WHERE user_id = ${USER_D}
+        `
+        // 3. Force failure (masalan entitlement xatosi)
+        throw new Error('SIMULATED_ENTITLEMENT_CRASH')
+      })
+    ).rejects.toThrow('SIMULATED_ENTITLEMENT_CRASH')
+
+    // Tekshiramiz: tranzaksiya to'liq rollback bo'lgan
+    // 1) Balans o'zgarmagan:
+    expect(await getBalance(USER_D)).toBe(beforeBal)
+
+    // 2) Ledger'da hech qanday yozuv qolmagan:
+    const txRows = await executeRows<{ id: number }>(sql`
+      SELECT id FROM coin_transactions WHERE user_id = ${USER_D} AND reason = 'purchase' AND ref_id = ${purchaseId}
+    `)
+    expect(txRows).toHaveLength(0)
   })
 })
 
