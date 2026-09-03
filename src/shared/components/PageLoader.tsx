@@ -9,7 +9,10 @@ import { Skeleton, SkeletonCard } from './ui/skeleton'
  */
 export default function PageLoader() {
   return (
-    <div className="px-5 pt-6" role="status" aria-label="Yuklanmoqda">
+    <div role="status" aria-label="Yuklanmoqda">
+      {/* Tepa safe-area bo'sh qolib miltillamasligi uchun soxta header qoplamasi */}
+      <div className="-mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas" />
+      <div className="px-5 pt-6">
       <div className="mb-6 flex items-center gap-3">
         <Skeleton className="size-9 rounded-xl" />
         <div className="flex-1 space-y-2">
@@ -27,6 +30,7 @@ export default function PageLoader() {
         <SkeletonCard className="h-[58px]" />
         <SkeletonCard className="h-[58px]" />
         <SkeletonCard className="h-[58px]" />
+      </div>
       </div>
     </div>
   )

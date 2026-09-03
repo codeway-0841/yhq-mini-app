@@ -129,10 +129,31 @@ describe('Telegram ichida', () => {
     syncTelegramTheme(true)
     expect(tg.setHeaderColor).toHaveBeenCalledWith('#0d1117')
     expect(tg.setBackgroundColor).toHaveBeenCalledWith('#0d1117')
+    expect(document.documentElement.style.backgroundColor).toBe('rgb(13, 17, 23)')
 
     syncTelegramTheme(false)
     expect(tg.setHeaderColor).toHaveBeenCalledWith('#fafaf9')
     expect(tg.setBackgroundColor).toHaveBeenCalledWith('#fafaf9')
+    expect(document.documentElement.style.backgroundColor).toBe('rgb(250, 250, 249)')
+  })
+
+  it('bindBackButton: Telegram headerColor qayta mustahkamlanadi', async () => {
+    const { bindBackButton } = await import('../../../src/platform/telegram')
+    const tg = webApp()
+    tg.setHeaderColor = vi.fn()
+    tg.BackButton = {
+      show: vi.fn(),
+      hide: vi.fn(),
+      onClick: vi.fn(),
+      offClick: vi.fn(),
+    }
+
+    bindBackButton(true, () => {})
+    expect(tg.setHeaderColor).toHaveBeenCalledWith('#0d1117')
+    expect(tg.BackButton.show).toHaveBeenCalledOnce()
+
+    bindBackButton(false, () => {})
+    expect(tg.BackButton.hide).toHaveBeenCalledOnce()
   })
 
   it('readyAndExpand: disableVerticalSwipes chaqiriladi', async () => {

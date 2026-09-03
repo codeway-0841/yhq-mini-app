@@ -132,6 +132,17 @@ function Layout() {
   // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
   useEffect(() => {
     window.scrollTo(0, 0)
+    // Telegram iOS fullscreen repaint fix (Issue #2061: orqaga qaytganda tepa soha repaintsiz oq/bo'sh qolmasligi uchun)
+    const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent))
+    if (isIos) {
+      requestAnimationFrame(() => {
+        window.scrollBy(0, 1)
+        window.scrollBy(0, -1)
+      })
+    }
+    // Har bir sahifa navigatsiyasida Telegram status bar & header rangini qayta mustahkamlash
+    const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
+    syncTelegramTheme(isDark)
   }, [location.pathname])
 
   // Duel invite-link (ikki manba):

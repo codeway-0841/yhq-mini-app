@@ -121,10 +121,10 @@ body[data-platform='native'] {
    elementlar uchun esa bottom-[calc(<bazaviy>+var(--safe-bottom,0px))] yozing. */
 .safe-bottom { padding-bottom: var(--safe-bottom, 0px); }
 
-/* Route transition — sahifalar orasida silliq fade */
-.route-page { animation: routeIn 160ms ease-out both; }
+/* Route transition — sahifalar orasida silliq o'tish (0 dan boshlash header'ni yo'qotib miltillatardi) */
+.route-page { animation: routeIn 140ms ease-out both; }
 @keyframes routeIn {
-  from { opacity: 0; }
+  from { opacity: 0.85; }
   to   { opacity: 1; }
 }
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */

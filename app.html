@@ -9,8 +9,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
     <meta name="description" content="KIVVI — Barcha fanlar uchun zamonaviy ta'lim platformasi. Testlar, biletlar va real vaqtli o'yinlar bitta ilovada." />
-    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" id="theme-color-meta" content="#0d1117" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <!-- Favicon: SVG (K lettermark, dark/light avtomatik) → ICO (badge fallback, eski brauzer) -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -152,8 +153,15 @@
               : mode
           document.body && (document.body.dataset.theme = resolved)
           document.documentElement.dataset.theme = resolved
+          var themeColor = resolved === 'light' ? '#fafaf9' : '#0d1117'
+          document.documentElement.style.backgroundColor = themeColor
+          var metaEl = document.getElementById('theme-color-meta')
+          if (metaEl) metaEl.setAttribute('content', themeColor)
         } catch (_) {
           document.documentElement.dataset.theme = 'dark'
+          document.documentElement.style.backgroundColor = '#0d1117'
+          var metaEl = document.getElementById('theme-color-meta')
+          if (metaEl) metaEl.setAttribute('content', '#0d1117')
         }
       })()
     </script>
