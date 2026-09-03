@@ -99,11 +99,10 @@ export function isThemeDark(theme: ThemeOption): boolean {
 }
 
 /**
- * Option 1: Exact Telegram Ads Theme Transition
- * - Eski qatlam (::view-transition-old) doim tepada (z-index: 9999) turadi
- * - Dark -> Light: eski qorong'u qatlam tugmaga qarab qisqaradi (clipPath)
- * - Light -> Dark: eski yorug' qatlamda tugmadan radial-gradient mask teshigi ochilib boradi (--theme-hole-radius)
- * - Hech qachon oq sahifa birdan qorayib ketmaydi
+ * Telegram-style Perfect Theme Transition:
+ * - Light -> Dark: Yangi qorong'u sahifa tugmadan (icondan) doira bo'lib kengayib oqlarni egallaydi
+ * - Dark -> Light: Eski qorong'u sahifa butun ekrandan tugmaga (iconga) qarab yig'ilib, oqlarni ochadi
+ * - 550ms mayin cubic-bezier(0.35, 0, 0.25, 1) harakati
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -155,12 +154,10 @@ export async function transitionTheme(
   const rpct = ref ? (end / ref) * 100 + 1 : 145
   const collapsed = `circle(0% at ${px}% ${py}%)`
   const covering = `circle(${rpct}% at ${px}% ${py}%)`
-  const holeRadius = Math.ceil(end * 1.05)
 
   const root = document.documentElement
-  root.style.setProperty('--theme-origin-x', `${px}%`)
-  root.style.setProperty('--theme-origin-y', `${py}%`)
-  root.classList.toggle('theme-hole-reveal', nextIsDark)
+  root.classList.remove('theme-to-dark', 'theme-to-light')
+  root.classList.add(nextIsDark ? 'theme-to-dark' : 'theme-to-light')
 
   let vt: ViewTransition | undefined
   try {
@@ -175,9 +172,7 @@ export async function transitionTheme(
     updateDOMAndState()
     syncStatusBarStyle(nextIsDark)
     syncTelegramTheme(nextIsDark)
-    root.classList.remove('theme-hole-reveal')
-    root.style.removeProperty('--theme-origin-x')
-    root.style.removeProperty('--theme-origin-y')
+    root.classList.remove('theme-to-dark', 'theme-to-light')
     return
   }
 
@@ -187,15 +182,21 @@ export async function transitionTheme(
     await vt.ready
     if (activeVT !== vt) return
 
+    // Light -> Dark: yangi qorong'u qatlam icondan kengayadi
+    // Dark -> Light: eski qorong'u qatlam iconga yig'iladi
     const animationKeyframes = nextIsDark
-      ? { '--theme-hole-radius': ['0px', `${holeRadius}px`] }
+      ? { clipPath: [collapsed, covering] }
       : { clipPath: [covering, collapsed] }
 
+    const targetPseudo = nextIsDark
+      ? '::view-transition-new(root)'
+      : '::view-transition-old(root)'
+
     const anim = root.animate(animationKeyframes, {
-      duration: nextIsDark ? 650 : 550,
+      duration: 550,
       easing: 'cubic-bezier(0.35, 0, 0.25, 1)',
       fill: 'forwards',
-      pseudoElement: '::view-transition-old(root)',
+      pseudoElement: targetPseudo,
     })
 
     await anim.finished.catch(() => {})
@@ -206,9 +207,7 @@ export async function transitionTheme(
   } finally {
     if (activeVT === vt) {
       activeVT = null
-      root.classList.remove('theme-hole-reveal')
-      root.style.removeProperty('--theme-origin-x')
-      root.style.removeProperty('--theme-origin-y')
+      root.classList.remove('theme-to-dark', 'theme-to-light')
       syncStatusBarStyle(nextIsDark)
       syncTelegramTheme(nextIsDark)
     }
