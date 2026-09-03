@@ -103,12 +103,13 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
           </Button>
 
           {/* Dark / Light rejim toggle tugmasi */}
+          {/* Dark / Light rejim toggle tugmasi */}
           <Button
             variant="ghost"
             size="icon-sm"
             onClick={toggleTheme}
             aria-label={isDark ? 'Light mode' : 'Dark mode'}
-            className="size-8 text-pmuted hover:text-pfg transition-transform active:scale-90"
+            className="theme-toggle-btn size-8 text-pmuted hover:text-pfg transition-colors"
           >
             {isDark ? (
               <Moon size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />

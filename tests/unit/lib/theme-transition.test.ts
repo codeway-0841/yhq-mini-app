@@ -130,7 +130,7 @@ describe('theme-transition: transitionTheme', () => {
     expect(document.body.dataset.theme).toBe('dark')
   })
 
-  it('executes Light -> Dark transition with expanding animation on ::view-transition-new', async () => {
+  it('executes Light -> Dark transition with hole-radius animation on ::view-transition-old', async () => {
     const animateMock = vi.fn().mockReturnValue({ finished: Promise.resolve() })
     document.documentElement.animate = animateMock
 
@@ -153,21 +153,21 @@ describe('theme-transition: transitionTheme', () => {
     expect(callbackExecuted).toBe(true)
     expect(animateMock).toHaveBeenCalledWith(
       expect.objectContaining({
-        clipPath: expect.arrayContaining([
-          'circle(0px at 300px 50px)',
-          expect.stringContaining('circle('),
+        '--theme-hole-radius': expect.arrayContaining([
+          '0px',
+          expect.stringContaining('px'),
         ]),
       }),
       expect.objectContaining({
-        duration: 600,
-        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-        pseudoElement: '::view-transition-new(root)',
+        duration: 500,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+        pseudoElement: '::view-transition-old(root)',
       })
     )
-    expect(document.documentElement.dataset.themeTransition).toBeUndefined()
+    expect(document.body.dataset.theme).toBe('dark')
   })
 
-  it('executes Dark -> Light transition with expanding animation on ::view-transition-new', async () => {
+  it('executes Dark -> Light transition with contracting clipPath on ::view-transition-old', async () => {
     useAppStore.setState({
       settings: { ...useAppStore.getState().settings, theme: 'dark' },
     })
@@ -193,17 +193,16 @@ describe('theme-transition: transitionTheme', () => {
     expect(animateMock).toHaveBeenCalledWith(
       expect.objectContaining({
         clipPath: expect.arrayContaining([
-          'circle(0px at 350px 60px)',
           expect.stringContaining('circle('),
+          expect.stringContaining('circle(0%'),
         ]),
       }),
       expect.objectContaining({
-        duration: 600,
-        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-        pseudoElement: '::view-transition-new(root)',
+        duration: 400,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+        pseudoElement: '::view-transition-old(root)',
       })
     )
     expect(document.body.dataset.theme).toBe('light')
-    expect(document.documentElement.dataset.themeTransition).toBeUndefined()
   })
 })

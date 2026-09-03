@@ -27,16 +27,22 @@ interface ViewTransition {
   skipTransition: () => void
 }
 
+let activeVT: ViewTransition | null = null
+
 /**
  * Extract viewport coordinates (x, y) from event, HTMLElement, or coordinate pair.
- * Viewport-relative coordinates ensure origin stays at the toggle even when scrolled.
  */
 export function getOriginCoordinates(origin?: OriginInput): TransitionOrigin {
   if (!origin) {
-    return {
-      x: typeof window !== 'undefined' ? window.innerWidth - 44 : 300,
-      y: 44,
+    if (typeof window !== 'undefined') {
+      const btn = document.querySelector('.theme-toggle-btn')
+      if (btn) {
+        const r = btn.getBoundingClientRect()
+        return { x: r.left + r.width / 2, y: r.top + r.height / 2 }
+      }
+      return { x: window.innerWidth - 44, y: 44 }
     }
+    return { x: 300, y: 44 }
   }
 
   // Direct coordinates
@@ -71,8 +77,7 @@ export function getOriginCoordinates(origin?: OriginInput): TransitionOrigin {
 }
 
 /**
- * Calculate the exact radius required to cover all four corners of the viewport
- * from the given origin point (x, y), with a +2px safety buffer.
+ * Calculate the exact radius required to cover all four corners of the viewport.
  */
 export function calculateMaxRadius(x: number, y: number): number {
   if (typeof window === 'undefined') return 1000
@@ -94,12 +99,11 @@ export function isThemeDark(theme: ThemeOption): boolean {
 }
 
 /**
- * Executes a Telegram-style circular reveal theme transition.
- * - Origin: Exactly at the switch button (viewport x, y).
- * - The new theme view (::view-transition-new) expands outward in a circle
- *   covering all corners of the screen.
- * - Easing: cubic-bezier(0.22, 1, 0.36, 1) over 600ms.
- * - Instant fallback for prefers-reduced-motion, noAnimation, or unsupported browsers.
+ * Executes the exact Telegram Ads circular theme transition (promote-theme.js):
+ * - Light -> Dark: radial-gradient mask hole expands from switch over ::view-transition-old
+ * - Dark -> Light: circular clip-path contracts into switch on ::view-transition-old
+ * - Easing: cubic-bezier(0.23, 1, 0.32, 1)
+ * - Timing: 500ms for dark, 400ms for light (snappy & fluid)
  */
 export async function transitionTheme(
   nextTheme: ThemeOption,
@@ -108,7 +112,6 @@ export async function transitionTheme(
   if (typeof document === 'undefined') return
 
   const store = useAppStore.getState()
-  // Single source of truth for current displayed state
   const currentIsDark = document.body.dataset.theme !== 'light'
   const nextIsDark = nextTheme === 'light' ? false : (nextTheme === 'dark' ? true : isThemeDark('system'))
 
@@ -138,19 +141,50 @@ export async function transitionTheme(
     !noAnimation &&
     currentIsDark !== nextIsDark
 
-  // Instant update if animation cannot/should not run
+  // Instant fallback
   if (!canAnimate) {
     updateDOMAndState()
     return
   }
 
-  const { x, y } = getOriginCoordinates(origin)
-  const maxRadius = calculateMaxRadius(x, y)
+  if (activeVT && typeof activeVT.skipTransition === 'function') {
+    try { activeVT.skipTransition() } catch (_) {}
+  }
 
-  let transition: ViewTransition | undefined
+  // Telegram Ads viewport geometry
+  const vw = document.documentElement.clientWidth || window.innerWidth || 1
+  const vh = document.documentElement.clientHeight || window.innerHeight || 1
+  const { x: cx, y: cy } = getOriginCoordinates(origin)
 
+  const end = Math.hypot(Math.max(cx, vw - cx), Math.max(cy, vh - cy))
+  const ref = Math.hypot(vw, vh) / Math.SQRT2
+  const px = (cx / vw) * 100
+  const py = (cy / vh) * 100
+  const rpct = ref ? (end / ref) * 100 + 1 : 145
+  const collapsed = `circle(0% at ${px}% ${py}%)`
+  const covering = `circle(${rpct}% at ${px}% ${py}%)`
+  const holeRadius = end * 1.02
+
+  let animationKeyframes: PropertyIndexedKeyframes
+  if (nextIsDark) {
+    animationKeyframes = {
+      '--theme-hole-radius': ['0px', `${holeRadius}px`],
+    } as unknown as PropertyIndexedKeyframes
+  } else {
+    animationKeyframes = {
+      clipPath: [covering, collapsed],
+    }
+  }
+
+  const root = document.documentElement
+  root.classList.add('theme-switching')
+  root.classList.toggle('theme-reveal-mask', nextIsDark)
+  root.style.setProperty('--theme-origin-x', `${px}%`)
+  root.style.setProperty('--theme-origin-y', `${py}%`)
+
+  let vt: ViewTransition | undefined
   try {
-    transition = docWithTransition.startViewTransition(() => {
+    vt = docWithTransition.startViewTransition(() => {
       try {
         flushSync(updateDOMAndState)
       } catch {
@@ -158,30 +192,37 @@ export async function transitionTheme(
       }
     })
   } catch {
-    // If startViewTransition threw, guarantee immediate DOM/state update
     updateDOMAndState()
+    root.classList.remove('theme-switching', 'theme-reveal-mask')
+    root.style.removeProperty('--theme-origin-x')
+    root.style.removeProperty('--theme-origin-y')
     return
   }
 
+  activeVT = vt
+
   try {
-    await transition.ready
+    await vt.ready
 
-    const animation = document.documentElement.animate(
-      {
-        clipPath: [
-          `circle(0px at ${x}px ${y}px)`,
-          `circle(${maxRadius}px at ${x}px ${y}px)`,
-        ],
-      },
-      {
-        duration: 600,
-        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-        pseudoElement: '::view-transition-new(root)',
-      }
-    )
+    if (activeVT !== vt) return
 
-    await animation.finished.catch(() => {})
+    const anim = root.animate(animationKeyframes, {
+      duration: nextIsDark ? 500 : 400,
+      easing: 'cubic-bezier(0.23, 1, 0.32, 1)',
+      fill: 'forwards',
+      pseudoElement: '::view-transition-old(root)',
+    })
+
+    await anim.finished.catch(() => {})
   } catch {
-    // Gracefully handle aborted or skipped transitions
+    // Graceful fallback for interrupted transitions
+  } finally {
+    if (activeVT === vt) {
+      activeVT = null
+      root.classList.remove('theme-switching')
+      root.classList.remove('theme-reveal-mask')
+      root.style.removeProperty('--theme-origin-x')
+      root.style.removeProperty('--theme-origin-y')
+    }
   }
 }
