@@ -129,65 +129,12 @@ body[data-platform='native'] {
 /* Animatsiya o'chirilgan foydalanuvchilar uchun (noAnimation setting) */
 body[data-no-animation='true'] .route-page { animation: none; }
 
-/* ── Telegram-style Smooth Circular View Transition ─────────────────────────── */
-:root.theme-switching,
-:root.theme-switching *,
-:root.theme-switching *::before,
-:root.theme-switching *::after {
-  transition: none !important;
-}
-
-::view-transition-group(root) {
-  animation: none;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-/* Light -> Dark: yangi qorong'u qatlam 0% doirada tug'iladi — hech qanday pirpirash yoki to'liq qora frame bo'lmaydi */
-:root.theme-to-dark::view-transition-new(root) {
-  z-index: 9999;
-  clip-path: circle(0% at var(--theme-origin-x, calc(100vw - 44px)) var(--theme-origin-y, 44px));
-}
-:root.theme-to-dark::view-transition-old(root) {
-  z-index: 1;
-}
-
-/* Dark -> Light: eski qorong'u qatlam ustida turadi va tugmaga qarab qisqaradi */
-:root.theme-to-light::view-transition-old(root) {
-  z-index: 9999;
-}
-:root.theme-to-light::view-transition-new(root) {
-  z-index: 1;
-}
-
-/* Accessibility & performance guards */
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(root),
-  ::view-transition-old(root),
-  ::view-transition-new(root),
-  ::view-transition-group(theme-toggle),
-  ::view-transition-old(theme-toggle),
-  ::view-transition-new(theme-toggle) {
-    animation: none !important;
-  }
-}
-html[data-no-animation='true']::view-transition-group(root),
-html[data-no-animation='true']::view-transition-old(root),
-html[data-no-animation='true']::view-transition-new(root),
-html[data-no-animation='true']::view-transition-group(theme-toggle),
-html[data-no-animation='true']::view-transition-old(theme-toggle),
-html[data-no-animation='true']::view-transition-new(theme-toggle),
-body[data-no-animation='true']::view-transition-group(root),
-body[data-no-animation='true']::view-transition-old(root),
-body[data-no-animation='true']::view-transition-new(root),
-body[data-no-animation='true']::view-transition-group(theme-toggle),
-body[data-no-animation='true']::view-transition-old(theme-toggle),
-body[data-no-animation='true']::view-transition-new(theme-toggle) {
-  animation: none !important;
+/* ── Telegram-style Smooth Circular Theme Overlay ─────────────────────────── */
+.theme-transition-overlay {
+  contain: strict;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 

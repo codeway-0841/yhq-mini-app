@@ -247,11 +247,8 @@ function ThemeEffect() {
 
   const applyTheme = (next: 'light' | 'dark') => {
     document.body.dataset.theme = next
-    // View Transition vaqtida status bar va Telegram header'ni transitionTheme animatsiya tugagach o'zi yangilaydi (pirpirashni oldini olish)
-    if (typeof document !== 'undefined' && !document.documentElement.classList.contains('theme-switching')) {
-      syncStatusBarStyle(next === 'dark')
-      syncTelegramTheme(next === 'dark')
-    }
+    syncStatusBarStyle(next === 'dark')
+    syncTelegramTheme(next === 'dark')
   }
 
   useEffect(() => {
