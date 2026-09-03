@@ -56,11 +56,15 @@ export const TopBar = memo(function TopBar({ user, displayName, level: _level, o
   const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
     playSound('toggle')
     haptics.impact('light')
+    const rect = e.currentTarget?.getBoundingClientRect()
+    const coords = rect
+      ? { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 }
+      : { x: e.clientX, y: e.clientY }
     const currentIsDark =
       theme === 'dark' ||
       (theme === 'system' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
     const next = currentIsDark ? 'light' : 'dark'
-    void transitionTheme(next, e.currentTarget)
+    void transitionTheme(next, coords)
   }
 
   const isDark =

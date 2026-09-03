@@ -114,13 +114,20 @@ export async function transitionTheme(
   const currentIsDark = isThemeDark(currentTheme)
   const nextIsDark = isThemeDark(nextTheme)
 
+  const updateDOMAndState = () => {
+    document.body.dataset.theme = nextIsDark ? 'dark' : 'light'
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
+    store.updateSettings({ theme: nextTheme })
+  }
+
   const reduceMotion =
     typeof window !== 'undefined' &&
     window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   const noAnimation = store.settings.noAnimation || document.body.dataset.noAnimation === 'true'
 
   const doc = document as unknown as {
-    startViewTransition?: (callback: () => void) => ViewTransition
+    startViewTransition?: (callback: () => void | Promise<void>) => ViewTransition
   }
 
   const startViewTransition = doc.startViewTransition
@@ -132,11 +139,8 @@ export async function transitionTheme(
     currentIsDark !== nextIsDark
 
   // Instant fallback for unsupported browsers, reduced-motion, or unchanged themes
-  if (!canAnimate || !startViewTransition) {
-    document.body.dataset.theme = nextIsDark ? 'dark' : 'light'
-    syncStatusBarStyle(nextIsDark)
-    syncTelegramTheme(nextIsDark)
-    store.updateSettings({ theme: nextTheme })
+  if (!canAnimate || typeof startViewTransition !== 'function') {
+    updateDOMAndState()
     return
   }
 
@@ -145,62 +149,88 @@ export async function transitionTheme(
 
   const direction = nextIsDark ? 'to-dark' : 'to-light'
   document.documentElement.dataset.themeTransition = direction
+  document.documentElement.style.setProperty('--theme-origin-x', `${x}px`)
+  document.documentElement.style.setProperty('--theme-origin-y', `${y}px`)
+  document.documentElement.style.setProperty('--theme-max-radius', `${maxRadius}px`)
 
   const transitionId = ++activeTransitionId
   let transition: ViewTransition | undefined
 
   try {
-    transition = startViewTransition(() => {
-      flushSync(() => {
-        document.body.dataset.theme = nextIsDark ? 'dark' : 'light'
-        syncStatusBarStyle(nextIsDark)
-        syncTelegramTheme(nextIsDark)
-        store.updateSettings({ theme: nextTheme })
-      })
+    // MUST call with this = document to prevent 'Illegal invocation' error on Document method
+    transition = doc.startViewTransition.call(document, () => {
+      try {
+        flushSync(updateDOMAndState)
+      } catch {
+        updateDOMAndState()
+      }
     })
+  } catch (err) {
+    // If startViewTransition threw immediately, guarantee theme update!
+    updateDOMAndState()
+    if (activeTransitionId === transitionId) {
+      delete document.documentElement.dataset.themeTransition
+      document.documentElement.style.removeProperty('--theme-origin-x')
+      document.documentElement.style.removeProperty('--theme-origin-y')
+      document.documentElement.style.removeProperty('--theme-max-radius')
+    }
+    return
+  }
 
+  try {
     await transition.ready
 
     if (direction === 'to-dark') {
       // Light -> Dark: Dark view expands outwards from switch
-      document.documentElement.animate(
-        {
-          clipPath: [
-            `circle(0px at ${x}px ${y}px)`,
-            `circle(${maxRadius}px at ${x}px ${y}px)`,
-          ],
-        },
-        {
-          duration: 600,
-          easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-          pseudoElement: '::view-transition-new(root)',
-          fill: 'forwards',
-        }
-      )
+      try {
+        document.documentElement.animate(
+          {
+            clipPath: [
+              `circle(0px at ${x}px ${y}px)`,
+              `circle(${maxRadius}px at ${x}px ${y}px)`,
+            ],
+          },
+          {
+            duration: 600,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            pseudoElement: '::view-transition-new(root)',
+            fill: 'forwards',
+          }
+        )
+      } catch {
+        // Fallback to CSS animation if pseudoElement in Element.animate is unsupported
+      }
     } else {
       // Dark -> Light: Dark snapshot contracts into switch
-      document.documentElement.animate(
-        {
-          clipPath: [
-            `circle(${maxRadius}px at ${x}px ${y}px)`,
-            `circle(0px at ${x}px ${y}px)`,
-          ],
-        },
-        {
-          duration: 600,
-          easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-          pseudoElement: '::view-transition-old(root)',
-          fill: 'forwards',
-        }
-      )
+      try {
+        document.documentElement.animate(
+          {
+            clipPath: [
+              `circle(${maxRadius}px at ${x}px ${y}px)`,
+              `circle(0px at ${x}px ${y}px)`,
+            ],
+          },
+          {
+            duration: 600,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            pseudoElement: '::view-transition-old(root)',
+            fill: 'forwards',
+          }
+        )
+      } catch {
+        // Fallback to CSS animation if pseudoElement in Element.animate is unsupported
+      }
     }
 
     await transition.finished
   } catch {
-    // Gracefully handle aborted or skipped transitions
+    // Transition aborted or skipped
   } finally {
     if (activeTransitionId === transitionId) {
       delete document.documentElement.dataset.themeTransition
+      document.documentElement.style.removeProperty('--theme-origin-x')
+      document.documentElement.style.removeProperty('--theme-origin-y')
+      document.documentElement.style.removeProperty('--theme-max-radius')
     }
   }
 }
