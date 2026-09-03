@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useCallback } from 'react'
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   ChevronLeft, ChevronRight, Flag,
@@ -44,13 +44,16 @@ export default function YimExamPage() {
   } | null>(null)
 
   // Ortga hisoblash taymeri (Wall-clock)
+  const handleFinishExamRef = useRef<((_forcedByTimeout?: boolean) => Promise<void>) | null>(null)
+  const handleSelectOptionRef = useRef<((optionId: string) => void) | null>(null)
+
   useEffect(() => {
     if (isFinished) return
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
           clearInterval(timer)
-          void handleFinishExam(true)
+          void handleFinishExamRef.current?.(true)
           return 0
         }
         return prev - 1
@@ -70,7 +73,7 @@ export default function YimExamPage() {
         const optIndex = parseInt(e.key, 10) - 1
         const opt = curQ.options[optIndex]
         if (opt) {
-          handleSelectOption(opt.id)
+          handleSelectOptionRef.current?.(opt.id)
         }
       } else if (e.key === 'ArrowRight' && currentIndex < examQuestions.length - 1) {
         setCurrentIndex((i) => i + 1)
@@ -93,6 +96,7 @@ export default function YimExamPage() {
       [currentIndex]: optionId,
     }))
   }
+  handleSelectOptionRef.current = handleSelectOption
 
   const toggleFlag = () => {
     haptics.impact('light')
@@ -150,6 +154,7 @@ export default function YimExamPage() {
       haptics.notify('error')
     }
   }, [examQuestions, isFinished, isSubmitting, selectedAnswers, submitAnswer, timeLeft])
+  handleFinishExamRef.current = handleFinishExam
 
   const formatTime = (secs: number) => {
     const m = Math.floor(secs / 60)

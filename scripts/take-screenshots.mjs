@@ -1,4 +1,4 @@
-import { chromium, devices } from 'playwright'
+import { chromium } from 'playwright'
 import fs from 'fs'
 import path from 'path'
 
@@ -22,13 +22,17 @@ async function run() {
     console.log('Saved screenshot_1.png (Hero)')
 
     // Scroll to features
-    await page.evaluate(() => window.scrollBy(0, 900))
+    await page.evaluate(() => {
+      globalThis.scrollBy(0, 900)
+    })
     await page.waitForTimeout(1000)
     await page.screenshot({ path: path.join(outDir, 'screenshot_2.png') })
     console.log('Saved screenshot_2.png (Features)')
 
     // Scroll further to stats / modes
-    await page.evaluate(() => window.scrollBy(0, 900))
+    await page.evaluate(() => {
+      globalThis.scrollBy(0, 900)
+    })
     await page.waitForTimeout(1000)
     await page.screenshot({ path: path.join(outDir, 'screenshot_3.png') })
     console.log('Saved screenshot_3.png (Modes & Stats)')
