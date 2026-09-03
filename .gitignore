@@ -31,6 +31,9 @@ mintty.*.html
 # Graphify local index artifact (rebuilt via: graphify update .)
 graphify-out/
 
+# Content-bank exportlari lokal/generated; master JSON template'lari esa tracked.
+content-banks/out*/
+
 .opencode/
 
 # Test ad-hoc skrinshotlar (Playwright/MCP sessiyalar — rootga tushadi)

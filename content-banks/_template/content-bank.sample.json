@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "subjectId": "fizika",
+  "bankId": "physics_db",
+  "bankName": "Fizika savollar bazasi",
+  "topics": [
+    {
+      "externalId": "mechanics",
+      "slug": "fizika-mechanics",
+      "nameUz": "Mexanika",
+      "nameRu": "Механика"
+    },
+    {
+      "externalId": "electricity",
+      "slug": "fizika-electricity",
+      "nameUz": "Elektr toki",
+      "nameRu": "Электрический ток"
+    }
+  ],
+  "items": [
+    {
+      "externalId": "physics_mechanics_001",
+      "topicExternalId": "mechanics",
+      "questionUz": "Jism 5 m/s tezlik bilan tekis harakatlanmoqda. 4 sekundda qancha masofa bosadi?",
+      "questionRu": "Тело равномерно движется со скоростью 5 м/с. Какое расстояние оно пройдет за 4 секунды?",
+      "optionsUz": {
+        "A1": "10 m",
+        "A2": "15 m",
+        "A3": "20 m",
+        "A4": "25 m"
+      },
+      "optionsRu": {
+        "A1": "10 м",
+        "A2": "15 м",
+        "A3": "20 м",
+        "A4": "25 м"
+      },
+      "correctAnswer": "A3",
+      "explanationUz": "Tekis harakatda masofa s = v × t. 5 × 4 = 20 m.",
+      "explanationRu": "При равномерном движении расстояние s = v × t. 5 × 4 = 20 м.",
+      "difficulty": "easy",
+      "source": "7-sinf fizika, mexanika",
+      "image": null
+    },
+    {
+      "externalId": "physics_electricity_001",
+      "topicExternalId": "electricity",
+      "questionUz": "Zanjirdagi tok kuchi 2 A, qarshilik 6 Ω. Kuchlanish necha volt?",
+      "questionRu": "Сила тока в цепи 2 А, сопротивление 6 Ω. Чему равно напряжение?",
+      "optionsUz": {
+        "A1": "3 V",
+        "A2": "8 V",
+        "A3": "12 V",
+        "A4": "24 V"
+      },
+      "optionsRu": {
+        "A1": "3 В",
+        "A2": "8 В",
+        "A3": "12 В",
+        "A4": "24 В"
+      },
+      "correctAnswer": "A3",
+      "explanationUz": "Om qonuniga ko‘ra U = I × R. 2 × 6 = 12 V.",
+      "explanationRu": "По закону Ома U = I × R. 2 × 6 = 12 В.",
+      "difficulty": "easy",
+      "source": "8-sinf fizika, elektr toki",
+      "image": null
+    }
+  ]
+}
