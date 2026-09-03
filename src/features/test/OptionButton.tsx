@@ -28,26 +28,26 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
   }
 
   const base = cn(
-    'mb-2.5 w-full rounded-2xl border p-3.5 text-left shadow-xs',
-    'transition-[transform,border-color,background-color] duration-[120ms] ease-out',
+    'mb-2.5 w-full rounded-2xl p-3.5 text-left shadow-xs',
+    'transition-[transform,background-color,box-shadow] duration-[120ms] ease-out',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:cursor-not-allowed',
   )
-  let style = 'border-pline bg-pcard hover:bg-psurface active:scale-[0.99]'
+  let style = 'bg-pcard hover:bg-psurface active:scale-[0.99]'
   let chip  = 'bg-psurface text-psubtle'
   let icon  = null
 
   if (state === 'correct') {
-    style = 'border-pprimary bg-pwash motion-safe:animate-correctPop'
+    style = 'ring-2 ring-pprimary bg-pwash motion-safe:animate-correctPop'
     chip  = 'bg-pprimary text-ponprimary'
     icon  = <Check size={18} strokeWidth={2} className="flex-none text-pprimary" />
   } else if (state === 'wrong') {
-    style = 'border-pdanger bg-[rgb(var(--p-danger-rgb)/0.10)]'
+    style = 'ring-2 ring-pdanger bg-[rgb(var(--p-danger-rgb)/0.10)]'
     chip  = 'bg-pdanger text-white'
     icon  = <X size={18} strokeWidth={2} className="flex-none text-pdanger" />
   } else if (state === 'pending') {
     // Server javobi kutilmoqda (yoki offline — keyin tasdiqlanadi)
-    style = 'border-pblue bg-[rgb(var(--p-blue-rgb)/0.08)] motion-safe:animate-pulse'
+    style = 'ring-2 ring-pblue bg-[rgb(var(--p-blue-rgb)/0.08)] motion-safe:animate-pulse'
     chip  = 'bg-[rgb(var(--p-blue-rgb)/0.16)] text-pblue'
   }
 
