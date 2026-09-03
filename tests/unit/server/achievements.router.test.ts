@@ -1,9 +1,9 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
 import express from 'express'
 import request from 'supertest'
 import achievementsRouter from '../../../server/modules/achievements/achievements.router'
+import { achievementsService } from '../../../server/modules/achievements/achievements.service'
 import { errorHandler } from '../../../server/middleware/error-handler'
-import { db } from '../../../server/db/connection'
 
 const app = express()
 app.use(express.json())
@@ -37,26 +37,27 @@ describe('achievements.router', () => {
     }
   })
 
-  it('returns default zero stats for new user with matching userId', async () => {
-    vi.spyOn(db, 'select').mockImplementation((() => {
-      const chain: any = {
-        from: () => chain,
-        where: () => chain,
-        groupBy: () => [],
-        then: (resolve: any) => Promise.resolve([]).then(resolve),
-      }
-      return chain
-    }) as any)
+  it('calls achievementsService and returns stats for matching userId', async () => {
+    vi.spyOn(achievementsService, 'getUserStats').mockResolvedValue({
+      totalCorrect: 10,
+      totalAnswered: 15,
+      octagonWins: 2,
+      bestStreak: 4,
+      totalFixed: 1,
+      subjectAccuracy: [{ subjectId: 'yhq', answered: 15, accuracy: 67 }],
+      allPassed80: false,
+    })
 
     const res = await request(app)
       .get('/api/achievements/12345')
       .set('x-test-user-id', '12345')
       .expect(200)
 
+    expect(achievementsService.getUserStats).toHaveBeenCalledWith('12345')
     expect(res.body.stats).toBeDefined()
-    expect(res.body.stats.totalCorrect).toBe(0)
-    expect(res.body.stats.totalAnswered).toBe(0)
-    expect(res.body.stats.bestStreak).toBe(0)
+    expect(res.body.stats.totalCorrect).toBe(10)
+    expect(res.body.stats.totalAnswered).toBe(15)
+    expect(res.body.stats.bestStreak).toBe(4)
     expect(res.body.stats.allPassed80).toBe(false)
   })
 })
