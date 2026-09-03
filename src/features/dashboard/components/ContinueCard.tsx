@@ -23,7 +23,7 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
         onClick={onContinue}
         className={cn(
           'relative w-full overflow-hidden rounded-2xl bg-pcard p-5 text-left shadow-xs',
-          'transition-transform duration-[120ms] ease-out',
+          'transition-transform duration-150 ease-out',
           'hover:bg-psurface/50 active:scale-[0.98]',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
         )}
@@ -49,7 +49,7 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
           <div className="mt-4 flex items-center gap-3">
             <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
               <div
-                className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
+                className="h-full rounded-[2px] bg-pprimary transition-[width] duration-500 ease-out"
                 style={{ width: `${Math.max(progressPct, 2)}%` }}
               />
             </div>

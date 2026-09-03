@@ -168,7 +168,7 @@ export default function AiTutorModal({
                 handleClose()
                 openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
               }}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
             >
               <PremiumIcon size={16} />
               {tt('buyPremium')}

@@ -21,7 +21,7 @@ function AchievementTile({ a, stats, tt }: {
       <div className="relative mb-2">
         <div
           className={cn(
-            'flex size-[52px] items-center justify-center rounded-2xl bg-psurface transition-colors duration-[120ms] ease-out shadow-xs',
+            'flex size-[52px] items-center justify-center rounded-2xl bg-psurface transition-colors duration-150 ease-out shadow-xs',
             !unlocked && 'opacity-40',
           )}
         >
@@ -37,7 +37,7 @@ function AchievementTile({ a, stats, tt }: {
         {tt(a.titleKey)}
       </p>
       <div className="mt-2 h-[2px] w-full max-w-[64px] overflow-hidden rounded-[1px] bg-plineStrong">
-        <div className="h-full rounded-[1px] transition-[width] duration-[400ms] ease-out"
+        <div className="h-full rounded-[1px] transition-[width] duration-500 ease-out"
           style={{ width: `${pct}%`, background: unlocked ? a.color : 'var(--p-subtle)' }} />
       </div>
       <p className="mt-1 text-[9.5px] font-semibold tabular-nums"
@@ -84,7 +84,7 @@ export default function AchievementsScreen({ stats, tt, onClose }: {
             {unlockedCount} / {ACHIEVEMENTS.length}
           </span>
           <div className="h-[3px] flex-1 overflow-hidden rounded-[2px] bg-plineStrong">
-            <div className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
+            <div className="h-full rounded-[2px] bg-pprimary transition-[width] duration-500 ease-out"
               style={{ width: `${(unlockedCount / ACHIEVEMENTS.length) * 100}%` }} />
           </div>
         </div>

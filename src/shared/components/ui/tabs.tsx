@@ -33,7 +33,7 @@ const TabsTrigger = React.forwardRef<
     className={cn(
       'inline-flex h-[34px] flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl px-3',
       'text-[13.5px] font-semibold text-pmuted',
-      'transition-[background-color,color] duration-[120ms] ease-out',
+      'transition-[background-color,color] duration-150 ease-out',
       'hover:text-pfg',
       'data-[state=active]:bg-pcard data-[state=active]:text-pfg',
       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-1 focus-visible:ring-offset-psurface',

@@ -254,7 +254,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           <button
             type="button"
             onClick={onClose}
-            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-[120ms] px-6 py-2.5 rounded-xl text-xs font-semibold shadow-xs"
+            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-150 px-6 py-2.5 rounded-xl text-xs font-semibold shadow-xs"
           >
             {tt('closeResults')}
           </button>

@@ -94,7 +94,7 @@ function SheetClose({ onClose, label = 'Yopish' }: { onClose: () => void; label?
       aria-label={label}
       className={cn(
         'absolute right-3 top-3 grid size-11 place-items-center rounded-xl text-pmuted',
-        'transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg',
+        'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
       )}
     >

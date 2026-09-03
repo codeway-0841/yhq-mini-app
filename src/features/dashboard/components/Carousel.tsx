@@ -70,7 +70,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       onClick={onOpen}
       className={cn(
         'flex size-full items-center gap-3.5 rounded-2xl bg-pcard p-4 text-left shadow-xs',
-        'select-none transition-transform duration-[120ms] ease-out',
+        'select-none transition-transform duration-150 ease-out',
         'active:scale-[0.99] hover:bg-psurface/50',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
       )}
@@ -90,7 +90,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
             </p>
             <div className="mt-2 h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
               <div
-                className="h-full rounded-[2px] transition-[width] duration-[400ms] ease-out"
+                className="h-full rounded-[2px] transition-[width] duration-500 ease-out"
                 style={{ width: `${Math.max(progressPct, 3)}%`, background: config.color }}
               />
             </div>

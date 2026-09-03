@@ -29,7 +29,7 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
 
   const base = cn(
     'mb-2.5 w-full rounded-2xl p-3.5 text-left shadow-xs',
-    'transition-[transform,background-color,box-shadow] duration-[120ms] ease-out',
+    'transition-[transform,background-color,box-shadow] duration-150 ease-out',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:cursor-not-allowed',
   )

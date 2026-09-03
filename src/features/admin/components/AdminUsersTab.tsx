@@ -114,7 +114,7 @@ export default function AdminUsersTab() {
           <p className="text-xs font-semibold text-pfg mb-1">{error}</p>
           <button
             onClick={() => loadUsers(search)}
-            className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-1.5 rounded-xl text-xs font-semibold"
+            className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-1.5 rounded-xl text-xs font-semibold"
           >
             Qayta urinish
           </button>
@@ -204,7 +204,7 @@ export default function AdminUsersTab() {
                   </span>
                   <button
                     onClick={() => setSelectedUser(u)}
-                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1"
+                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1"
                   >
                     <PremiumIcon size={13} />
                     Premium boshqarish

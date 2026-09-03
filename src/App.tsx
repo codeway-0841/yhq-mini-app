@@ -265,7 +265,6 @@ function ThemeEffect() {
       return () => mq.removeEventListener('change', apply)
     }
     applyTheme(theme)
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- applyTheme refs/DOM orqali ishlaydi, identity o'zgarishi effektni qayta ishga tushirmasligi kerak
   }, [theme])
   // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
   useEffect(() => {

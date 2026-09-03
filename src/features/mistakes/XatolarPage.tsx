@@ -80,7 +80,7 @@ export default function XatolarPage() {
     <div className="px-4 pb-4">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
         <h1 className="text-xl font-semibold">{tt('mistakesTitle')}</h1>
@@ -111,7 +111,7 @@ export default function XatolarPage() {
               </div>
             </div>
             <button onClick={() => startPractice(wrongQuestions.map((q) => q.id), tt('fixMistakes'))}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full py-3.5 rounded-xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
             </button>

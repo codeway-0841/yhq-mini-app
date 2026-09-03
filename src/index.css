@@ -1011,7 +1011,7 @@ body[data-no-animation='true'] .animate-scorePop {
   }
   /* Bosiladigan interaktiv karta (hover/active silliq harakat bilan) */
   .app-card-interactive {
-    @apply rounded-2xl bg-pcard shadow-xs transition-all duration-[120ms] ease-out hover:bg-psurface active:scale-[0.99] cursor-pointer;
+    @apply rounded-2xl bg-pcard shadow-xs transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.99] cursor-pointer;
   }
   /* Pastdan chiquvchi toza BottomSheet */
   .app-sheet {

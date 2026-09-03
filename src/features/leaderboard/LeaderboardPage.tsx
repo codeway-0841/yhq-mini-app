@@ -212,7 +212,7 @@ export default function LeaderboardPage() {
           <button
             onClick={() => goBack(navigate)}
             aria-label={tt('backWord')}
-            className="absolute left-4 top-1.5 grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            className="absolute left-4 top-1.5 grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
           >
             <ChevronLeft size={22} strokeWidth={2.2} />
           </button>
@@ -236,7 +236,7 @@ export default function LeaderboardPage() {
                   type="button"
                   onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
                   className={cn(
-                    'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
+                    'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
                     active
                       ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                       : 'text-pmuted hover:text-pfg'

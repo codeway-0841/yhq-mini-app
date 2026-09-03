@@ -545,7 +545,7 @@ export function IdleScreen({
                 key={tKey}
                 type="button"
                 onClick={() => { playSound('click'); haptics.impact('medium'); setSubview(tKey) }}
-                className="relative flex items-center justify-between p-3.5 rounded-2xl bg-pcard hover:bg-psurface text-left transition-all duration-[120ms] ease-out active:scale-[0.97] shadow-xs group"
+                className="relative flex items-center justify-between p-3.5 rounded-2xl bg-pcard hover:bg-psurface text-left transition-all duration-150 ease-out active:scale-[0.97] shadow-xs group"
               >
                 <div className="flex items-center gap-3 min-w-0 flex-1">
                   <div className={cn('size-10 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-105', meta.color)}>

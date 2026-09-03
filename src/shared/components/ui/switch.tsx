@@ -11,7 +11,7 @@ const Switch = React.forwardRef<
     ref={ref}
     className={cn(
       'peer inline-flex h-[26px] w-11 shrink-0 cursor-pointer items-center rounded-full border p-0.5',
-      'transition-colors duration-[120ms] ease-out',
+      'transition-colors duration-150 ease-out',
       'border-plineStrong bg-psurface',
       'data-[state=checked]:border-pprimary data-[state=checked]:bg-pprimary',
       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
@@ -23,7 +23,7 @@ const Switch = React.forwardRef<
     <SwitchPrimitive.Thumb
       className={cn(
         'pointer-events-none block size-5 rounded-full bg-pcard border border-plineStrong',
-        'transition-transform duration-[160ms] ease-out',
+        'transition-transform duration-150 ease-out',
         'data-[state=checked]:translate-x-[18px] data-[state=checked]:border-transparent',
         'data-[state=unchecked]:translate-x-0',
       )}

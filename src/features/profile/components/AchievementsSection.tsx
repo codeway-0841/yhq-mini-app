@@ -29,13 +29,13 @@ export function AchievementsItem({ lang, tt, userId }: {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="flex min-h-[50px] w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors duration-[120ms] ease-out hover:bg-psurface active:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary border-b border-pline last:border-0"
+        className="flex min-h-[50px] w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors duration-150 ease-out hover:bg-psurface active:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary border-b border-pline last:border-0"
       >
         <Trophy size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
         <div className="flex-1 min-w-0">
           <p className="text-[14.5px] font-medium text-pfg">{tt('achTitle')}</p>
           <div className="mt-1.5 h-[3px] w-full max-w-[140px] overflow-hidden rounded-[2px] bg-plineStrong">
-            <div className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
+            <div className="h-full rounded-[2px] bg-pprimary transition-[width] duration-500 ease-out"
               style={{ width: `${(unlockedCount / ACHIEVEMENTS.length) * 100}%` }} />
           </div>
         </div>

@@ -120,7 +120,7 @@ export default function AdminSmsTab() {
           <button
             onClick={handleCreate}
             disabled={creating || title.trim().length < 3 || message.trim().length < 10 || (audience ?? 0) === 0}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 flex items-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
           >
             {creating ? <Loader2 size={14} className="motion-safe:animate-spin" /> : <Send size={14} />}
             Yaratish
@@ -167,7 +167,7 @@ export default function AdminSmsTab() {
                   <button
                     onClick={() => handleSend(c.id)}
                     disabled={isSending}
-                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
+                    className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-[13px] font-semibold disabled:opacity-50 shadow-xs"
                   >
                     {isSending
                       ? <><Loader2 size={14} className="motion-safe:animate-spin" /> Yuborilmoqda…

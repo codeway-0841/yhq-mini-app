@@ -31,7 +31,7 @@ export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, 
           className="flex-1 py-3 rounded-xl bg-elevated text-sm font-semibold">
           Chiqish
         </button>
-        <button onClick={onRematch} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex-[2] py-3 rounded-xl font-bold">
+        <button onClick={onRematch} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 flex-[2] py-3 rounded-xl font-bold">
           Qayta o'ynash
         </button>
       </div>

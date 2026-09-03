@@ -52,7 +52,7 @@ const StatButton = memo(function StatButton({
       onPointerLeave={cancel}
       className={cn(
         'flex items-center gap-2 rounded-xl bg-black/25 px-2.5 py-2 text-left shadow-2xs',
-        'transition-all duration-[120ms] ease-out active:scale-[0.97]',
+        'transition-all duration-150 ease-out active:scale-[0.97]',
         'hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
@@ -117,7 +117,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             }}
             className={cn(
               'inline-flex h-8 items-center gap-1.5 rounded-xl bg-black/40 pl-1.5 pr-2.5 text-[12px] font-semibold text-white backdrop-blur-md shadow-2xs',
-              'transition-[background-color,transform] duration-[120ms] ease-out hover:bg-black/55 active:scale-[0.97]',
+              'transition-[background-color,transform] duration-150 ease-out hover:bg-black/55 active:scale-[0.97]',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white'
             )}
             aria-label={tt('subjectSelect')}
@@ -143,7 +143,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         <div className="mt-4 flex items-center gap-3">
           <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
             <div
-              className="h-full rounded-full bg-white transition-[width] duration-[700ms] ease-out"
+              className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
               style={{ width: `${shown}%` }}
             />
           </div>

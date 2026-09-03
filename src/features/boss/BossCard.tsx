@@ -115,7 +115,7 @@ export default function BossCard() {
           {/* HP Bar (Qolgan jon yoki jamoaviy zarar) */}
           <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-psurface">
             <div
-              className="h-full rounded-full bg-pprimary transition-[width] duration-[600ms] ease-out"
+              className="h-full rounded-full bg-pprimary transition-[width] duration-700 ease-out"
               style={{
                 width: `${damagePct}%`,
               }}

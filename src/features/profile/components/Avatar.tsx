@@ -54,7 +54,7 @@ export function Avatar({
 
   /** Avatar ustidagi kichik amal tugmasi */
   const editBtn = cn(
-    'absolute grid place-items-center rounded-full border-[2px] border-pcanvas transition-transform duration-[120ms] ease-out active:scale-90',
+    'absolute grid place-items-center rounded-full border-[2px] border-pcanvas transition-transform duration-150 ease-out active:scale-90',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     size === 'lg' ? 'size-7' : 'size-6',
   )

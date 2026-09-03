@@ -28,13 +28,26 @@ export default defineConfig({
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
   build: {
-    rollupOptions: {
+    // Og'ir bo'laklar lazy: HEIC konverter faqat avatar yuklashda,
+    // belgilar katalogi esa faqat belgilar/flashcard sahifalarida kerak.
+    // Vite default 500 kB threshold bu loyiha uchun shovqin beradi;
+    // 1.5 MB esa kutilmagan app-shell semirishini baribir ko'rsatadi.
+    chunkSizeWarningLimit: 1500,
+    rolldownOptions: {
       input: {
         // E'tibor: DIRECTORY INDEX = LANDING (kivvi.uz `/` filesystem'dan
         // index.html oladi — Vercel rewrites'dan OLDIN). Ilova app.html'da:
         // app.kivvi.uz `/` 307 redirect → /app.html, deep-link'lar rewrite.
         landing: path.resolve(import.meta.dirname, 'index.html'),
         app: path.resolve(import.meta.dirname, 'app.html'),
+      },
+      output: {
+        codeSplitting: {
+          groups: [
+            { name: 'content-signs', test: /src[\\/]content[\\/]signs\.ts$/ },
+            { name: 'vendor-heic', test: /node_modules[\\/]heic2any[\\/]/ },
+          ],
+        },
       },
     },
   },

@@ -57,7 +57,7 @@ export default function Toast({ id, type, message, duration = 3000, onClose }: T
         onClick={() => onClose(id)}
         className={cn(
           'grid size-6 shrink-0 place-items-center rounded-lg text-psubtle',
-          'transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg',
+          'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
         )}
         aria-label="Yopish"

@@ -23,7 +23,7 @@ const contentStyles = [
 const itemStyles = [
   'relative flex cursor-pointer select-none items-center gap-2.5 rounded-xl px-2.5 py-2',
   'text-[14px] text-pfg outline-none',
-  'transition-colors duration-[120ms] ease-out',
+  'transition-colors duration-150 ease-out',
   'focus:bg-psurface data-[highlighted]:bg-psurface',
   'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
   '[&_svg]:size-4 [&_svg]:shrink-0 [&_svg]:text-pmuted',

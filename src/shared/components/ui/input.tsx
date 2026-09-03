@@ -14,7 +14,7 @@ const Input = React.forwardRef<HTMLInputElement, React.InputHTMLAttributes<HTMLI
       type={type}
       className={cn(
         'flex h-11 w-full rounded-2xl border border-plineStrong bg-pcanvas px-[13px] text-[15px] text-pfg shadow-xs',
-        'transition-[border-color,box-shadow] duration-[120ms] ease-out',
+        'transition-[border-color,box-shadow] duration-150 ease-out',
         'placeholder:text-psubtle',
         'focus:outline-none focus:border-pprimary focus:shadow-[0_0_0_3px_var(--p-wash)]',
         'disabled:cursor-not-allowed disabled:opacity-50',

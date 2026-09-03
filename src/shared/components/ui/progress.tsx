@@ -24,7 +24,7 @@ const Progress = React.forwardRef<
         {...props}
       >
         <ProgressPrimitive.Indicator
-          className="h-full rounded-[2px] bg-pprimary transition-[width] duration-[400ms] ease-out"
+          className="h-full rounded-[2px] bg-pprimary transition-[width] duration-500 ease-out"
           style={{ width: `${pct}%` }}
         />
       </ProgressPrimitive.Root>

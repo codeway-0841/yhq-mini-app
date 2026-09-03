@@ -18,7 +18,7 @@ const Card = React.forwardRef<
     className={cn(
       'rounded-2xl bg-pcard shadow-xs',
       interactive && [
-        'cursor-pointer transition-[border-color,transform,background-color] duration-[120ms] ease-out',
+        'cursor-pointer transition-[border-color,transform,background-color] duration-150 ease-out',
         'hover:bg-psurface active:scale-[0.99]',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
       ],

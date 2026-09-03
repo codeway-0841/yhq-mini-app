@@ -17,7 +17,7 @@ const buttonVariants = cva(
   [
     'inline-flex items-center justify-center gap-2 whitespace-nowrap',
     'font-semibold select-none',
-    'transition-[transform,background-color,border-color,color,filter] duration-[120ms] ease-out',
+    'transition-[transform,background-color,border-color,color,filter] duration-150 ease-out',
     'active:scale-[0.98]',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:pointer-events-none disabled:opacity-40',

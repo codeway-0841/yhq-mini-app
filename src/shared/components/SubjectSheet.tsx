@@ -30,7 +30,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 key={s.id}
                 onClick={() => pick(s.id, s.available)}
                 disabled={!s.available}
-                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-[120ms] ease-out shadow-xs ${
+                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-150 ease-out shadow-xs ${
                   !s.available
                     ? 'opacity-50 cursor-not-allowed bg-psurface/60'
                     : active

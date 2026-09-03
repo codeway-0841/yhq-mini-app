@@ -175,7 +175,7 @@ export default function AdaptivePage() {
             </div>
           )}
 
-          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] px-8 py-3.5 rounded-2xl text-base shadow-xs">
+          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 px-8 py-3.5 rounded-2xl text-base shadow-xs">
             {tt('adaptive')}
           </button>
         </div>

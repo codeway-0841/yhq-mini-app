@@ -176,7 +176,7 @@ export function DuelLeaderboardView({
               type="button"
               onClick={() => { playSound('click'); haptics.select(); setRankTab(t) }}
               className={cn(
-                'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-[120ms] ease-out active:scale-[0.98]',
+                'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
                 active
                   ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                   : 'text-pmuted hover:text-pfg'

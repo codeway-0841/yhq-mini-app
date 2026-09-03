@@ -34,7 +34,7 @@ export function Item({ icon: Icon, iconColor, label, right, onPress, disabled }:
       className={cn(
         // 50px — touch target (ModeRow bilan bir xil ritm)
         'flex min-h-[50px] w-full items-center gap-3.5 px-4 py-3.5 text-left',
-        'transition-colors duration-[120ms] ease-out',
+        'transition-colors duration-150 ease-out',
         disabled && 'cursor-not-allowed opacity-50',
         !disabled && onPress && 'cursor-pointer hover:bg-psurface active:bg-psurface',
         onPress && 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-pprimary',

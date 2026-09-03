@@ -113,7 +113,7 @@ export default function DailyTasksCard() {
                 </div>
                 <div className="h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
                   <div
-                    className="h-full rounded-[2px] transition-[width] duration-[400ms] ease-out"
+                    className="h-full rounded-[2px] transition-[width] duration-500 ease-out"
                     style={{
                       width: `${pct}%`,
                       background: task.completed ? 'var(--p-success)' : 'var(--p-primary)',
@@ -133,7 +133,7 @@ export default function DailyTasksCard() {
                     className={cn(
                       'flex h-[34px] w-full items-center justify-center gap-1 rounded-xl text-[11px] font-semibold text-pgold shadow-2xs',
                       'bg-[rgb(var(--p-gold-rgb)/0.18)]',
-                      'transition-transform duration-[120ms] ease-out active:scale-[0.98]',
+                      'transition-transform duration-150 ease-out active:scale-[0.98]',
                       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
                       'disabled:pointer-events-none disabled:opacity-40',
                     )}>

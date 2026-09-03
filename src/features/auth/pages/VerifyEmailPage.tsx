@@ -100,7 +100,7 @@ export default function VerifyEmailPage() {
               </p>
               <button
                 onClick={() => navigate('/')}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl flex h-12 w-full items-center justify-center font-semibold text-[14px] mt-4 shadow-xs"
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl flex h-12 w-full items-center justify-center font-semibold text-[14px] mt-4 shadow-xs"
               >
                 {language === 'ru' ? 'На главную' : 'Bosh sahifaga'}
               </button>

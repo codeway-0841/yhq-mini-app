@@ -645,21 +645,21 @@ export default function TestPage() {
         <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-2.5">
         <div className="flex items-center gap-1 min-[380px]:gap-2">
           <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
-            className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-[120ms] ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
+            className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-150 ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
             {confirmExit
               ? <X size={17} strokeWidth={1.75} />
               : <ChevronLeft size={18} strokeWidth={1.75} />}
           </button>
           <button onClick={() => toggleSaved(q.id)}
             aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-            className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
+            className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
             <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             <span className="hidden sm:inline">{tt('saveBtn')}</span>
           </button>
           <button
             onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
             aria-label={tt('shareApp')}
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
             <Share2 size={16} />
             <span className="hidden sm:inline">{tt('shareApp')}</span>
           </button>
@@ -683,18 +683,18 @@ export default function TestPage() {
         <div className="flex items-center gap-1 min-[380px]:gap-2">
           {isFinished && (
             <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
               <BarChart2 size={17} />
             </button>
           )}
           <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
             <SettingsIcon className="size-[17px]" />
           </button>
           <button
             onClick={() => { setIsFinished(true); setShowResults(true) }}
             aria-label="Testni yakunlash"
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
             <Flag size={16} />
           </button>
         </div>
@@ -736,7 +736,7 @@ export default function TestPage() {
                   playSound('click')
                 }}
                 aria-label={settings?.language === 'ru' ? 'Озвучить вопрос' : "Savolni o'qib berish"}
-                className="grid size-7 place-items-center rounded-full bg-psurface text-pmuted transition-colors duration-[120ms] ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary shadow-2xs"
+                className="grid size-7 place-items-center rounded-full bg-psurface text-pmuted transition-colors duration-150 ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary shadow-2xs"
               >
                 <Volume2 size={13} strokeWidth={1.75} />
               </button>
@@ -749,7 +749,7 @@ export default function TestPage() {
               {selected && (
                 <button onClick={handleOpenExplain}
                   aria-label={tt('whyThis')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-[120ms] ease-out active:scale-[0.98] shadow-xs">
+                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-150 ease-out active:scale-[0.98] shadow-xs">
                   <Info size={14} aria-hidden="true" />
                   {tt('whyThis')}
                 </button>
@@ -758,7 +758,7 @@ export default function TestPage() {
               {selected && (
                 <button onClick={() => setShowAiTutor(true)}
                   aria-label={tt('askAiExplain')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-[120ms] ease-out active:scale-[0.98] shadow-xs">
+                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-150 ease-out active:scale-[0.98] shadow-xs">
                   <Sparkles size={13} strokeWidth={1.75} aria-hidden="true" /> {tt('askAiExplain')}
                 </button>
               )}
@@ -799,7 +799,7 @@ export default function TestPage() {
         <div className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40">
           <button onClick={handleYakunlash}
             aria-label={tt('finish')}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold shadow-lg">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold shadow-lg">
             <Check size={15} strokeWidth={2} aria-hidden="true" /> {tt('finish')}
           </button>
         </div>
@@ -882,7 +882,7 @@ export default function TestPage() {
                   setShowExplain(false)
                   navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } })
                 }}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-[120ms] w-full mt-4 py-3 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0 shadow-md">
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full mt-4 py-3 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 flex-shrink-0 shadow-md">
                 <GraduationCap size={16} />
                 {tt('openModule')}
               </button>

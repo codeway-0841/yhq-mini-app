@@ -158,7 +158,7 @@ function SignsGrid({
         <button
           onClick={onBack}
           aria-label={isRu ? 'Назад' : 'Orqaga'}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <ChevronLeft size={20} strokeWidth={1.75} />
         </button>
@@ -355,7 +355,7 @@ export default function Belgilar() {
             <button
               onClick={() => goBack(navigate)}
               aria-label={isRu ? 'Назад' : 'Orqaga'}
-              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-[120ms] ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <ChevronLeft size={20} strokeWidth={1.75} />
             </button>

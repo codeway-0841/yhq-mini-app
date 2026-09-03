@@ -261,7 +261,7 @@ function ModulePath({ mod, doneList, onOpenLesson }: {
                   onClick={() => !locked && onOpenLesson(i)}
                   disabled={locked}
                   className={
-                    'flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors duration-[120ms] ease-out ' +
+                    'flex w-full items-center gap-3 rounded-xl px-2.5 py-2 text-left transition-colors duration-150 ease-out ' +
                     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ' +
                     (locked ? 'cursor-not-allowed opacity-50' : 'hover:bg-psurface active:bg-psurface')
                   }

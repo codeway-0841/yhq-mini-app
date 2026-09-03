@@ -236,7 +236,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={() => setShowCertificate(true)}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
           >
             <Award size={17} strokeWidth={1.75} />
             {tt('viewCertificate')}
@@ -247,7 +247,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={onOpenReview}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-[120ms] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
           >
             <BookOpen size={16} strokeWidth={1.75} />
             {tt('examReviewBtn')}
@@ -257,12 +257,12 @@ export default function ResultsModal({
         <div className="flex gap-3">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-psurface/80">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-psurface/80">
             <RotateCcw size={16} strokeWidth={1.75} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-[120ms] rounded-2xl h-11 flex-[2] font-semibold shadow-xs">
+            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl h-11 flex-[2] font-semibold shadow-xs">
             {tt('finish')}
           </button>
         </div>
@@ -271,7 +271,7 @@ export default function ResultsModal({
         <button
           onClick={handleShareImage}
           disabled={sharingImage}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
           <ImageDown size={15} strokeWidth={1.75} />
           {sharingImage ? '...' : tt('shareResultImage')}
         </button>
@@ -290,7 +290,7 @@ export default function ResultsModal({
             const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
           }}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-[120ms] rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
           <Share2 size={15} strokeWidth={1.75} />
           {tt('shareResult')}
         </button>

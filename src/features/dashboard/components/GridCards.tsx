@@ -10,7 +10,7 @@ import { cn } from '../../../shared/lib/cn'
 
 /** Interaktiv holat klasslari — barcha bosiladigan elementlarga bir xil. */
 const interactive = cn(
-  'transition-[transform,background-color,border-color] duration-[120ms] ease-out',
+  'transition-[transform,background-color,border-color] duration-150 ease-out',
   'active:scale-[0.98]',
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
 )
