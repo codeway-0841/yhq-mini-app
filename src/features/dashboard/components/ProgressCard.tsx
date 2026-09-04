@@ -152,6 +152,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
           </span>
         </div>
 
+        <p className="mt-3 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
+
         {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
         <div className="mt-4 grid grid-cols-3 gap-2">
           {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}

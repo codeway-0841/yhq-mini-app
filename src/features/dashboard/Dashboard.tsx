@@ -1,11 +1,5 @@
-import { useState, useCallback, useEffect, useRef, useMemo } from 'react'
+import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {
-  Play, Swords, GraduationCap,
-  Bookmark, Hash, Signpost,
-  Ticket,
-  Bot, BookOpen, HeartCrack, NotebookText,
-} from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -13,18 +7,15 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore, cachedQuestionCount } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
-import { useToast } from '../../shared/components/ToastContainer'
 import { Button } from '../../shared/components/ui/button'
 import { Alert, AlertDescription } from '../../shared/components/ui/alert'
 import { track } from '../../shared/lib/analytics'
-import { playSound } from '../../shared/lib/sounds'
-import { haptics } from '../../platform/haptics'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import { TopBar } from './components/TopBar'
 import { ProgressCard } from './components/ProgressCard'
-import { ServiceCard, ModeList, ModeRow } from './components/GridCards'
+import { LearningGuide } from './components/LearningGuide'
 import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
@@ -35,97 +26,25 @@ import { useCelebrations } from './hooks/useCelebrations'
 import { useDashboardSync, useSubjectBadges } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
-// ── Auto-scroll Rejimlar carousel ───────────────────────────────────────────
-function RejimlarCarousel({ title, items, lang }: {
-  title: string
-  items: { icon: React.ElementType; label: string; onClick: () => void }[]
-  lang: 'uz' | 'ru'
-}) {
-  const navigate = useNavigate()
-  const ref = useRef<HTMLDivElement>(null)
-  const paused = useRef(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    let timer: ReturnType<typeof setInterval> | null = null
-    let resumeTimer: ReturnType<typeof setTimeout> | null = null
-    const step = () => {
-      if (paused.current || !el) return
-      const max = el.scrollWidth - el.clientWidth
-      if (max <= 0) return
-      const next = el.scrollLeft + 112 // ~1 kvadrat karta + gap
-      if (next >= max - 4) {
-        el.scrollTo({ left: 0, behavior: 'smooth' })
-      } else {
-        el.scrollBy({ left: 112, behavior: 'smooth' })
-      }
-    }
-    timer = setInterval(step, 2800)
-    const pause = () => {
-      paused.current = true
-      if (resumeTimer) clearTimeout(resumeTimer)
-      resumeTimer = setTimeout(() => { paused.current = false }, 3500)
-    }
-    const onEnter = () => { paused.current = true; if (resumeTimer) clearTimeout(resumeTimer) }
-    const onLeave = () => { paused.current = false }
-    const onScroll = () => pause() // qo'lda surilganda auto pauza
-    el.addEventListener('mouseenter', onEnter)
-    el.addEventListener('mouseleave', onLeave)
-    el.addEventListener('touchstart', pause, { passive: true })
-    el.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      if (timer) clearInterval(timer)
-      if (resumeTimer) clearTimeout(resumeTimer)
-      el.removeEventListener('mouseenter', onEnter)
-      el.removeEventListener('mouseleave', onLeave)
-      el.removeEventListener('touchstart', pause)
-      el.removeEventListener('scroll', onScroll)
-    }
-  }, [])
-
-  return (
-    <div>
-      <div className="flex items-center justify-between px-4 mb-2.5">
-        <p className="font-display text-[19px] font-bold tracking-[-0.01em] text-pfg">{title}</p>
-        <button onClick={() => navigate('/rejimlar')} className="text-[14px] font-semibold active:opacity-70 text-pprimary">
-          {lang === 'ru' ? 'Ещё' : 'Yana'}
-        </button>
-      </div>
-      <div
-        ref={ref}
-        className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 px-4 pb-3 mb-2 touch-pan-x select-none"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' as const, WebkitOverflowScrolling: 'touch' as const, touchAction: 'pan-x' }}
-      >
-        {items.map((it) => (
-          <ServiceCard key={it.label} icon={it.icon} label={it.label} onClick={it.onClick} />
-        ))}
-      </div>
-    </div>
-  )
-}
-
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
   const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
-  const { info } = useToast()
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
   const user            = useAppStore((s) => s.user)
   const displayName     = useAppStore((s) => s.displayName)
   const settings        = useAppStore((s) => s.settings)
   const xp              = useAppStore((s) => s.xp)
   const totalWrong      = useAppStore((s) => s.totalWrong)
-  const savedQuestions  = useAppStore((s) => s.savedQuestions)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
   const subject         = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
   const dailyStreak     = useDailyStore((s) => s.streaks[subject.id] ?? 0)
   // Savollar hali yuklanmagan bo'lsa oxirgi ma'lum SONdan foydalanamiz —
   // aks holda birinchi kadrda "0%" chizilib, keyin haqiqiy foizga sakrardi.
-  const loadedCount     = useQuestionsStore((s) => s.questions.length)
-  const questionsCount  = loadedCount || cachedQuestionCount(subject.id)
+  const loadedCount = useQuestionsStore((s) => s.questions.length)
+  const questionsCount = loadedCount || cachedQuestionCount(subject.id)
 
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {
@@ -157,35 +76,7 @@ export default function Dashboard() {
 
   const { mistakesCount } = useSubjectBadges(subject.id)
 
-  // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount).
-  const showToast = useCallback((msg: string) => info(msg), [info])
-
-  const goMistakes = useCallback(() => navigate('/xatolar'), [navigate])
-  const goTopics   = useCallback(() => navigate('/mavzular'), [navigate])
-  const goAdaptive = useCallback(() => navigate('/adaptive'), [navigate])
-  const goOctagon  = useCallback(() => navigate('/octagon'), [navigate])
-  const goProfile  = useCallback(() => navigate('/profil'), [navigate])
-  const goDarslik  = useCallback(() => navigate('/darslik'), [navigate])
-
-  /** Real test modes — TestPage builds the question set based on `mode` */
-  const goMode = useCallback((mode: 'numeric', title: string) => () =>
-    navigate('/test/1', { state: { mode, title } }), [navigate])
-
-  const goSaved = useCallback(() => {
-    // Composite kalitlardan FAQAT joriy fanga oid savol id'larini ajratamiz
-    const prefix = `${subject.id}:`
-    const ids = savedQuestions
-      .filter((k) => k.startsWith(prefix))
-      .map((k) => Number(k.slice(prefix.length)))
-      .filter((n) => Number.isInteger(n) && n > 0)
-    if (ids.length === 0) {
-      showToast(settings.language === 'ru'
-        ? "Нет сохранённых вопросов — используйте 📌 в тесте"
-        : "Hali saqlangan savollar yo'q — testda 📌 tugmasini bosing")
-      return
-    }
-    navigate('/test/1', { state: { questionIds: ids, title: tt('saved') } })
-  }, [savedQuestions, subject.id, settings.language, navigate, tt, showToast])
+  const goProfile = useCallback(() => navigate('/profil'), [navigate])
 
   return (
     <div className="dashboard-page bg-pcanvas">
@@ -220,7 +111,10 @@ export default function Dashboard() {
             </Alert>
           )}
 
-          {/* 1. Today's Progress */}
+          <LearningGuide mistakesCount={mistakesCount} />
+
+          <h2 className="mx-4 mb-3 font-display text-[18px] font-bold text-pfg">{tt('guideYourProgress')}</h2>
+          {/* 1. Fan bo‘yicha umumiy progress */}
           <ProgressCard
             totalWrong={totalWrong}
             totalAnswered={uniqueSolvedCount}
@@ -230,50 +124,9 @@ export default function Dashboard() {
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
 
-          {/* 2. Kunlik vazifalar (#40 Faza 2) — coin mukofotlari */}
-          <DailyTasksCard />
-
-          {/* 3. HERO CTA — sahifaning YAGONA aksentli amali */}
-          <div className="mb-4 px-4">
-            <Button
-              size="lg"
-              block
-              onClick={() => { playSound('click'); haptics.impact('medium'); navigate('/testlar') }}
-            >
-              <Play size={20} strokeWidth={2.25} fill="currentColor" />
-              {tt('startTestBtn')}
-            </Button>
-          </div>
-
-          {/* 5. Rejimlar — grouped list */}
-          <div className="mb-5 px-4">
-            <ModeList>
-              <ModeRow icon={BookOpen} label={tt('topics')} onClick={goTopics} />
-              <ModeRow icon={Ticket} label={tt('tickets')} onClick={() => navigate('/biletlar')} />
-              <ModeRow icon={Swords} label={tt('duelTitle')} onClick={goOctagon} />
-              <ModeRow icon={HeartCrack} label={tt('mistakes')} badge={mistakesCount || null} onClick={goMistakes} />
-              <ModeRow icon={Bot} label={tt('aiTutor')} comingSoon onClick={() => showToast(tt('comingSoonD'))} />
-            </ModeList>
-          </div>
-
-          {/* 6. Modes — auto carousel */}
-          <div className="mb-6">
-            <RejimlarCarousel
-              title={tt('modesTitle')}
-              lang={settings.language}
-              items={[
-                { icon: GraduationCap, label: tt('lessons'),     onClick: goDarslik },
-                { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
-                ...(subject.id === 'yhq'
-                  ? [{ icon: Signpost, label: tt('roadSigns'),   onClick: () => navigate('/belgilar') }]
-                  : []),
-                { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
-                { icon: Play,          label: tt('adaptive'),    onClick: goAdaptive },
-                { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
-              ]}
-            />
-          </div>
-
+          <details className="mb-5 group">
+            <summary className="mx-4 mb-3 cursor-pointer rounded-xl px-1 py-3 text-[14px] font-semibold text-pmuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">{tt('guideMotivation')}</summary>
+            <DailyTasksCard />
           {/* 6b. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
           <BossCard />
 
@@ -285,6 +138,8 @@ export default function Dashboard() {
               onSeeAll={() => navigate('/reyting')}
             />
           </div>
+
+          </details>
 
           {/* 8. Premium Banner */}
           <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 shadow-xs">
