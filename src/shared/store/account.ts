@@ -17,6 +17,7 @@ import { useDailyStore }       from './useDailyStore'
 import { useAdaptiveStore }    from './useAdaptiveStore'
 import { useTestSessionStore } from './useTestSessionStore'
 import { invalidateLeaderboardCache } from '../lib/leaderboard-cache'
+import { invalidateAchievementsCache } from '../lib/achievements-cache'
 
 /**
  * Account-scoped persist kalitlari — account switch'da disk'dan ham o'chiriladi.
@@ -69,6 +70,7 @@ export function resetAccountState(): void {
   useAdaptiveStore.getState().resetAll()
   useTestSessionStore.getState().clear()
   invalidateLeaderboardCache() // isYou bayroqlari yangi account'niki bo'lsin
+  invalidateAchievementsCache()
   if (typeof localStorage !== 'undefined') {
     try {
       for (const key of ACCOUNT_STORAGE_KEYS) {

@@ -42,7 +42,7 @@ function Row({ icon: Icon, iconColor, label, children }: {
   )
 }
 
-export default function SettingsModal({ onClose }: { onClose: () => void }) {
+export default function SettingsModal({ onClose, initialPicker = null }: { onClose: () => void; initialPicker?: PickerKey }) {
   // Selector'li obuna — whole-store EMAS
   const settings = useAppStore((s) => s.settings)
   const updateSettings = useAppStore((s) => s.updateSettings)
@@ -52,7 +52,7 @@ export default function SettingsModal({ onClose }: { onClose: () => void }) {
   const ownedItems = useAppStore((s) => s.ownedItems)
   const ownedSet   = useMemo(() => new Set(ownedItems), [ownedItems])
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
-  const [picker, setPicker] = useState<PickerKey>(null)
+  const [picker, setPicker] = useState<PickerKey>(initialPicker)
   const tt = useT(local.language)
 
   // 3 soniyalik SINOV (preview) — lock'langan temani sotib olmasdan ko'rish

@@ -854,6 +854,15 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
    sirt ierarxiyasi bilan beriladi. */
 .dashboard-page { background-color: var(--p-canvas); }
 
+.dashboard-menu-anchor { bottom: calc(1.25rem + var(--safe-bottom, 0px)); }
+@keyframes dashboard-menu-enter {
+  from { opacity: 0; transform: translateY(12px) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .dashboard-menu-action { animation: dashboard-menu-enter 220ms ease-out both; }
+}
+
 /* ── AVATAR RAMKALARI (do'kon kosmetikasi, #40) ──────────────────────────────
    CSS-only (rasm assetsiz): wrapper'ga gradient fon + padding, ichki element
    rounded-full. avatar-frames.ts config bilan sinxron (test tekshiradi). */
