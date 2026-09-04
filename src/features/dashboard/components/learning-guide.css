@@ -1,22 +1,13 @@
 .home-learning-hero { padding: 16px 0 8px; }
-.home-learning-hero-heading { padding: 8px 12px 0; text-align: center; }
-.home-learning-art { display: block; width: min(100%, 360px); height: clamp(220px, 32svh, 300px); margin: 16px auto 22px; overflow: visible; }
+.home-learning-hero-heading { padding: 8px 12px 20px; text-align: center; }
 .home-learning-step { padding: 16px; border: 2px solid var(--p-line); border-radius: 28px; background: var(--p-card); }
 .home-learning-path-row { display: flex; align-items: center; gap: 14px; width: 100%; position: relative; padding: 8px 0; }
 .home-learning-path-next { margin-top: 14px; margin-bottom: 20px; border-radius: 12px; }
 .home-learning-path-next::before { content: ''; position: absolute; left: 37px; width: 2px; height: 16px; top: -16px; background: var(--p-line); }
-.home-learning-start { width: 100%; min-height: 56px; padding: 12px 18px; border-radius: 20px; background: var(--p-primary); color: var(--p-on-primary, white); font-size: 20px; font-weight: 800; box-shadow: 0 6px 0 color-mix(in srgb, var(--p-primary) 70%, black); margin-bottom: 6px; transition: transform 140ms, box-shadow 140ms; }
-.home-learning-start:active { transform: translateY(4px); box-shadow: 0 2px 0 color-mix(in srgb, var(--p-primary) 70%, black); }
 .home-learning-shortcut { padding: 14px 16px; text-align: left; border: 1px solid var(--p-line); border-radius: 20px; background: var(--p-card); }
 .home-learning-shortcut:hover, .home-learning-path-next:hover { background: var(--p-surface); }
-.home-learning-art-main { transform-origin: center; animation: home-learning-float 4.8s ease-in-out; }
-.home-learning-art-satellite { transform-origin: center; animation: home-learning-orbit 4.8s ease-in-out; }
-.home-learning-art:hover .home-learning-art-main { transform: translateY(-5px); transition: transform 500ms; }
-@keyframes home-learning-float { 0%, 100% { transform: translateY(0) rotate(0); } 25%, 75% { transform: translateY(-10px) rotate(-3deg); } 50% { transform: translateY(2px) rotate(2deg); } }
-@keyframes home-learning-orbit { 0%, 100% { transform: translateY(0); } 25% { transform: translateY(10px) rotate(5deg); } 75% { transform: translateY(-8px) rotate(-4deg); } }
-@media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 28px; } .home-learning-art { height: 210px; margin: 10px auto 18px; } .home-learning-step { padding: 12px; } .home-learning-path-row { gap: 10px; } }
-@media (min-width: 600px) { .home-learning-hero { max-width: 480px; margin: 0 auto; } .home-learning-art { height: 290px; } }
-@media (prefers-reduced-motion: reduce) { .home-learning-art-main, .home-learning-art-satellite { animation: none; } .home-learning-art:hover .home-learning-art-main { transform: none; transition: none; } .home-learning-start { transition: none; } }
+@media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 28px; } .home-learning-step { padding: 12px; } .home-learning-path-row { gap: 10px; } }
+@media (min-width: 600px) { .home-learning-hero { max-width: 480px; margin: 0 auto; } }
 .home-learning-token { display: block; flex: 0 0 76px; width: 76px; height: 82px; }
 .home-learning-token .learning-tile { --token-size: 76px; }
 .home-learning-token .learning-tile[data-state='current'] .learning-orbit { opacity: 1; }
@@ -28,5 +19,3 @@
 .home-learning-path-row { gap: 10px; }
 .home-learning-path-next { margin-top: 0; margin-bottom: 12px; }
 .home-learning-path-next::before { display: none; }
-body[data-no-animation='true'] .home-learning-art-main,
-body[data-no-animation='true'] .home-learning-art-satellite { animation: none; }

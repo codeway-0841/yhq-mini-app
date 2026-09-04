@@ -1,37 +1,59 @@
-import { BookOpen, Play, ChevronRight, Circle } from 'lucide-react'
+import { BookOpen, Play, ChevronRight, Circle, CheckCircle2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
 import { useLessonsStore } from '../../../shared/store/useLessonsStore'
+import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
+import { Button } from '../../../shared/components/ui/button'
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState } from '../next-step'
-import { SubjectIllustration } from './SubjectIllustration'
 import { LessonToken } from '../../lessons'
 import './learning-guide.css'
 
 export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
+  const solvedQuestions = useAppStore((s) => s.solvedQuestions)
+  const answered = new Set(solvedQuestions ?? [])
   const userId = useAppStore((s) => s.user?.id)
   const subject = useSubjectStore((s) => s.subject)
   const session = useTestSessionStore((s) => s.session)
   const done = useLessonsStore((s) => userId ? s.byUser[userId] : undefined)
   const tt = useT(lang)
   const resume = resumeRouteState(session, subject.id)
-  const nextModule = subject.id === 'yhq' && modules.some((m) => (done?.[m.id]?.length ?? 0) > 0)
-    ? modules.find((m) => Array.from({ length: m.lessonCount }, (_, i) => i).some((i) => !done?.[m.id]?.includes(i)))
-    : undefined
-  const hasContinue = !!resume || !!nextModule
-  const title = resume ? tt('guideResumeTest') : nextModule
-    ? (lang === 'ru' ? nextModule.titleRu : nextModule.title)
-    : mistakesCount > 0 ? tt('guideReviewTitle') : tt('guideExploreTitle')
-  const description = resume ? tt('guideResumeHint') : nextModule ? tt('guideLessonHint')
-    : mistakesCount > 0 ? tt('guideReviewGentle') : tt('guideExploreHint')
+  const questions = useQuestionsStore((s) => s.questions)
+  const topics = useQuestionsStore((s) => s.topics)
+  const loadedSubject = useQuestionsStore((s) => s.subjectId)
+  const loaded = useQuestionsStore((s) => s.loaded)
+  const topicChoices = subject.id === 'yhq'
+    ? modules.map((m) => ({
+      id: m.id, title: lang === 'ru' ? m.titleRu : m.title,
+      state: { moduleId: m.id }, path: '/darslik',
+      complete: Array.from({ length: m.lessonCount }, (_, i) => i).every((i) => done?.[m.id]?.includes(i)),
+    }))
+    : loaded && loadedSubject === subject.id
+      ? topics.map((t) => ({
+        id: t.id, title: lang === 'ru' ? t.nameRu : t.nameUz,
+        state: { questionIds: questions.filter((q) => q.topicId === t.id).map((q) => q.id), title: lang === 'ru' ? t.nameRu : t.nameUz },
+        path: '/test/1', complete: questions.filter((q) => q.topicId === t.id).every((q) => answered.has(`${subject.id}:${q.id}`)),
+      })).filter((t) => t.state.questionIds.length > 0)
+      : []
+  const completedTopics = topicChoices.filter((t) => t.complete)
+  const allComplete = topicChoices.length > 0 && completedTopics.length === topicChoices.length
+  const currentIndex = topicChoices.findIndex((t) => !t.complete)
+  const currentTopic = topicChoices[currentIndex]
+  const followingTopic = currentIndex >= 0 ? topicChoices.slice(currentIndex + 1).find((t) => !t.complete) : undefined
+  const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
+  const title = resume ? (session?.title || tt('guideResumeTest')) : allComplete ? tt('guideTopicsDone') : currentTopic?.title
+    ?? (mistakesCount > 0 ? tt('guideReviewTitle') : tt('topics'))
+  const description = resume ? tt('guideResumeHint') : allComplete ? tt('guideTopicsDoneHint') : currentTopic ? null
+    : mistakesCount > 0 ? tt('guideReviewGentle') : tt('guideChooseTopic')
   const start = () => {
     if (resume) navigate('/test/1', { state: resume })
-    else if (nextModule) navigate('/darslik', { state: { moduleId: nextModule.id } })
+    else if (currentTopic) navigate(currentTopic.path, { state: currentTopic.state })
+    else if (allComplete) navigate(topicChoices[0].path, {state: topicChoices[0].state})
     else navigate(mistakesCount > 0 ? '/xatolar' : '/testlar')
   }
   const learnPath = subject.id === 'yhq' ? '/darslik' : '/mavzular'
@@ -44,25 +66,32 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           <h1 id="home-learning-subject" className="font-display text-[32px] font-extrabold leading-[1.15] tracking-[-0.025em] text-pfg">
             {lang === 'ru' ? subject.nameRu : subject.name}
           </h1>
-          <p className="mt-4 text-[12px] font-extrabold uppercase tracking-[0.1em] text-pprimary">{tt(hasContinue ? 'guideContinueLabel' : 'guideToday')}</p>
         </div>
-        <SubjectIllustration key={subject.id} subject={subject} />
         <div className="home-learning-step">
           <div className="home-learning-path-row">
-            <span className="home-learning-token" aria-hidden="true"><LessonToken done={false} current /></span>
+            <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
             <div className="min-w-0 flex-1">
               <h2 className="text-[17px] font-bold leading-snug text-pfg">{title}</h2>
-              <p className="mt-1 text-[12px] leading-relaxed text-pmuted">{description}</p>
+              {description && <p className="mt-1 text-[12px] leading-relaxed text-pmuted">{description}</p>}
             </div>
+            {allComplete && !resume ? <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} /> : <Circle size={18} className="shrink-0 text-psubtle" aria-hidden="true" />}
           </div>
-          <button onClick={() => navigate(learnPath)} className={`home-learning-path-row home-learning-path-next ${interactive}`}>
+          {followingTopic && <button onClick={() => navigate(followingTopic!.path, { state: followingTopic!.state })} className={`home-learning-path-row home-learning-path-next ${interactive}`}>
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={false} current={false} /></span>
-            <span className="flex-1 text-left"><span className="block text-[11px] text-pmuted">{tt('guideAlsoExplore')}</span><span className="text-[15px] font-semibold text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span></span>
+            <span className="flex-1 text-left"><span className="text-[15px] font-semibold text-pmuted">{followingTopic.title}</span></span>
             <Circle size={15} className="text-psubtle" aria-hidden="true" />
-          </button>
-          <button className={`home-learning-start ${interactive}`} onClick={start}>
-            {hasContinue ? tt('continueLearn') : tt('pathStart')}
-          </button>
+          </button>}
+          <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
+            {allComplete && !resume ? tt('guideReviewTopics') : hasContinue ? tt('continueLearn') : currentTopic ? tt('pathStart') : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')}
+          </Button>
+          {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
+            <summary className="cursor-pointer text-[13px] font-semibold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>
+            <div className="mt-2">
+              {completedTopics.map((topic) => <button key={topic.id} onClick={() => navigate(topic.path, {state: topic.state})} className={`flex min-h-11 w-full items-center gap-3 rounded-xl px-2 py-2 text-left text-[14px] text-pfg ${interactive}`}>
+                <CheckCircle2 size={18} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />{topic.title}
+              </button>)}
+            </div>
+          </details>}
         </div>
       </section>
 
