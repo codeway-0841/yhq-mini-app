@@ -63,22 +63,22 @@ describe('learning guide', () => {
     expect(screen.getByRole('button', { name: /O‘rganish/ })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
     expect(screen.queryByText('Chorrahalar')).not.toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
+    fireEvent.click(screen.getByRole('button', { name: /boshlash/i }))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path: '/darslik', state: {moduleId: 1}})
   })
 
   it('explains and opens the current-subject mistake recommendation', () => {
     useSubjectStore.getState().setSubject('rustili')
     guide(7)
-    expect(screen.getByText(/Oldingi xatolaringizni/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Xatolarni takrorlash' }))
+    expect(screen.getByText(/Xato qilgan savollaringizni/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Takrorlash/i }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/xatolar')
   })
 
   it('resumes the original session key even when the stored questions were shuffled', () => {
     useTestSessionStore.getState().save(snapshot)
     guide()
-    fireEvent.click(screen.getByRole('button', { name: /Davom/ }))
+    fireEvent.click(screen.getByRole('button', { name: /davom/i }))
     const target = JSON.parse(screen.getByTestId('destination').textContent!)
     expect(target.path).toBe('/test/1')
     expect(makeSessionKey(target.state.mode, target.state.questionIds)).toBe(snapshot.key)
@@ -87,15 +87,15 @@ describe('learning guide', () => {
   it('shows only one primary start action when a test and mistakes both exist', () => {
     useTestSessionStore.getState().save(snapshot)
     guide(7)
-    expect(screen.queryByRole('button', { name: 'Boshlash' })).not.toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: /Davom/ }))
+    expect(screen.queryByRole('button', { name: /boshlash/i })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /davom/i }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/test/1')
   })
 
   it('opens lesson path without bypassing its lesson access checks', () => {
     useLessonsStore.setState({ byUser: { learner: { 1: [0] } } })
     guide()
-    fireEvent.click(screen.getByRole('button', { name: /Davom/ }))
+    fireEvent.click(screen.getByRole('button', { name: /davom/i }))
     const target = JSON.parse(screen.getByTestId('destination').textContent!)
     expect(target).toEqual({ path: '/darslik', state: { moduleId: 1 } })
   })
@@ -121,7 +121,7 @@ describe('learning guide', () => {
     guide()
     expect(screen.getByRole('heading', {name: 'Fonetika'})).toBeInTheDocument()
     expect(screen.queryByText('Morfologiya')).not.toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', {name: 'Boshlash'}))
+    fireEvent.click(screen.getByRole('button', {name: /boshlash/i}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[101],title:'Fonetika'}})
   })
 
@@ -130,7 +130,7 @@ describe('learning guide', () => {
     useQuestionsStore.setState({loaded: true, subjectId: 'yhq', topics: [{id: 1, nameUz: 'Old topic', nameRu: 'Old topic', slug: 'old'}], questions: [{id: 1, topicId: 1, text: 'A', image: null, options: []}]})
     guide()
     expect(screen.queryByText('Old topic')).not.toBeInTheDocument()
-    expect(screen.queryByRole('button', {name: 'Boshlash'})).not.toBeInTheDocument()
+    expect(screen.queryByRole('button', {name: /boshlash/i})).not.toBeInTheDocument()
   })
 
   function twoTopics() {
@@ -155,7 +155,7 @@ describe('learning guide', () => {
     guide()
     expect(screen.getByRole('heading', {name: 'Morfologiya'})).toBeInTheDocument()
     expect(screen.getByText(/Tugallangan mavzular/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', {name: /Davom/}))
+    fireEvent.click(screen.getByRole('button', {name: /boshlash|davom/i}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[202],title:'Morfologiya'}})
   })
 
@@ -172,7 +172,7 @@ describe('learning guide', () => {
     appState.solvedQuestions = ['rustili:101', 'rustili:102', 'rustili:202']
     guide()
     expect(screen.getByRole('heading', {name: 'Barcha mavzular tugallandi!'})).toBeInTheDocument()
-    expect(screen.queryByRole('button', {name: 'Boshlash'})).not.toBeInTheDocument()
+    expect(screen.queryByRole('button', {name: /boshlash/i})).not.toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', {name: 'Qayta takrorlash'}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!).state.questionIds).toEqual([101,102])
   })
@@ -181,7 +181,7 @@ describe('learning guide', () => {
     useLessonsStore.setState({byUser: {learner: {1: [0,1,2,3,4,5,6]}}})
     guide()
     expect(screen.getByRole('heading', {name: 'Chorrahalar'})).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', {name: /Davom/}))
+    fireEvent.click(screen.getByRole('button', {name: /davom/i}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/darslik',state:{moduleId:2}})
   })
 

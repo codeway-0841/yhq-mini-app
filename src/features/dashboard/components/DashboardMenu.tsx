@@ -1,7 +1,7 @@
 import { useEffect, useId, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { useNavigate } from 'react-router-dom'
-import { BarChart3, LayoutGrid, Palette, ShoppingBag, Trophy, X } from 'lucide-react'
+import { BarChart3, Palette, ShoppingBag, Trophy, X } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -10,6 +10,8 @@ import { type AchievementStats } from '../../../shared/api'
 import { fetchAchievements, getAchievementsCache } from '../../../shared/lib/achievements-cache'
 import { AchievementsScreen } from '../../profile'
 import { subscribeModalStack } from '../../../shared/lib/navigation'
+import FloatingMenuButton from './FloatingMenuButton'
+import { useScrollAwareVisibility } from '../hooks/useScrollAwareVisibility'
 
 function DashboardAchievements({ onClose }: { onClose: () => void }) {
   const userId = useAppStore((s) => s.user?.id)
@@ -47,6 +49,7 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
 export default function DashboardMenu() {
   const [modalCount, setModalCount] = useState(0)
   useEffect(() => subscribeModalStack(setModalCount), [])
+  const isScrollVisible = useScrollAwareVisibility()
   const [panel, setPanel] = useState<'menu' | 'themes' | 'achievements' | null>(null)
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id)
@@ -69,11 +72,12 @@ export default function DashboardMenu() {
   // Portal keeps the fixed controls outside route transitions and their transforms.
   return createPortal(<>
     <div style={{ visibility: panel || modalCount > 0 ? 'hidden' : undefined }} className="dashboard-menu-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-2xl justify-end px-4">
-      <button type="button" aria-label={menuLabel} title={menuLabel} aria-haspopup="dialog" aria-expanded={panel === 'menu'}
+      <FloatingMenuButton
         onClick={() => setPanel('menu')}
-        className="pointer-events-auto grid size-14 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-4 focus-visible:ring-offset-pcanvas">
-        <LayoutGrid size={22} aria-hidden="true" />
-      </button>
+        open={panel === 'menu'}
+        hidden={!isScrollVisible}
+        label={menuLabel}
+      />
     </div>
     {panel === 'menu' && <DialogOverlay onClose={close} labelId={titleId} backdropClassName="bg-black/50">
       <div className="dashboard-menu-anchor pointer-events-none absolute inset-x-0 mx-auto flex max-w-2xl flex-col items-end gap-3 px-4">
@@ -87,7 +91,7 @@ export default function DashboardMenu() {
           </button>)}
         </div>
         <button type="button" aria-label={tt('close')} onClick={close}
-          className="pointer-events-auto grid size-14 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
+          className="floating-menu-btn pointer-events-auto grid size-14 place-items-center rounded-[18px] backdrop-blur-[18px] shadow-lg transition-all duration-150 motion-safe:active:scale-[0.94] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
           <X size={24} aria-hidden="true" />
         </button>
       </div>

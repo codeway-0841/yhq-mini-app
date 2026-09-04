@@ -854,7 +854,27 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
    sirt ierarxiyasi bilan beriladi. */
 .dashboard-page { background-color: var(--p-canvas); }
 
-.dashboard-menu-anchor { bottom: calc(1.25rem + var(--safe-bottom, 0px)); }
+.dashboard-menu-anchor { bottom: calc(var(--safe-bottom, 0px) + 16px); }
+.floating-menu-btn {
+  background-color: rgba(24, 30, 38, 0.90);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+body[data-theme='light'] .floating-menu-btn {
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  color: #1e293b;
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-menu-btn {
+    transition: none !important;
+    transform: none !important;
+  }
+}
 @keyframes dashboard-menu-enter {
   from { opacity: 0; transform: translateY(12px) scale(.96); }
   to { opacity: 1; transform: translateY(0) scale(1); }
