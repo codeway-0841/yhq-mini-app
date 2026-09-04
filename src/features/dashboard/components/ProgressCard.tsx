@@ -1,9 +1,7 @@
 import { memo, useRef, useState } from 'react'
-import { Flame, Star, Trophy, ChevronDown } from 'lucide-react'
+import { Flame, Star, Trophy } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
-import { useSubjectStore } from '../../../shared/store/useSubjectStore'
-import SubjectSheet from '../../../shared/components/SubjectSheet'
 import StatInfoSheet from '../../../shared/components/StatInfoSheet'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
@@ -80,8 +78,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
   const tt = useT(lang)
   const navigate = useNavigate()
   const total = totalPool > 0 ? totalPool : 0
-  const subject = useSubjectStore((s) => s.subject)
-  const [showSubjects, setShowSubjects] = useState(false)
   const [xpInfoOpen, setXpInfoOpen] = useState(false)
   const [leagueInfoOpen, setLeagueInfoOpen] = useState(false)
 
@@ -103,34 +99,9 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
   return (
     <>
       <div className="hero-gradient-card mx-4 mb-5 p-4 sm:p-5">
-        {/* Sarlavha qatori: Bugungi progress (chapda) va Fan tanlash toggle (o'ngda) */}
         <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
           <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
 
-          {/* Fan tanlash toggle chipi */}
-          <button
-            type="button"
-            onClick={() => {
-              playSound('click')
-              haptics.impact('light')
-              setShowSubjects(true)
-            }}
-            className={cn(
-              'inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-black/40 pl-1.5 pr-2.5 text-[12px] font-semibold text-white backdrop-blur-md shadow-2xs',
-              'transition-[background-color,transform] duration-150 ease-out hover:bg-black/55 active:scale-[0.97]',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white'
-            )}
-            aria-label={tt('subjectSelect')}
-          >
-            <span
-              className="flex size-5 shrink-0 items-center justify-center rounded-lg text-white shadow-xs"
-              style={{ backgroundColor: subject.color }}
-            >
-              <subject.icon size={12} strokeWidth={2.5} />
-            </span>
-            <span className="max-w-[130px] truncate font-bold">{lang === 'ru' ? subject.nameRu : subject.name}</span>
-            <ChevronDown size={13} strokeWidth={2} className="text-white/80" />
-          </button>
         </div>
 
         <div className="flex items-baseline gap-2">
@@ -186,7 +157,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
       </div>
 
       {/* Fan tanlash modal oynasi */}
-      {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
 
       {xpInfoOpen && (
         <StatInfoSheet

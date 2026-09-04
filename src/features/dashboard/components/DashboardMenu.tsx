@@ -9,6 +9,7 @@ import { useT } from '../../../shared/i18n'
 import { type AchievementStats } from '../../../shared/api'
 import { fetchAchievements, getAchievementsCache } from '../../../shared/lib/achievements-cache'
 import { AchievementsScreen } from '../../profile'
+import { subscribeModalStack } from '../../../shared/lib/navigation'
 
 function DashboardAchievements({ onClose }: { onClose: () => void }) {
   const userId = useAppStore((s) => s.user?.id)
@@ -44,6 +45,8 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
 }
 
 export default function DashboardMenu() {
+  const [modalCount, setModalCount] = useState(0)
+  useEffect(() => subscribeModalStack(setModalCount), [])
   const [panel, setPanel] = useState<'menu' | 'themes' | 'achievements' | null>(null)
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id)
@@ -65,7 +68,7 @@ export default function DashboardMenu() {
 
   // Portal keeps the fixed controls outside route transitions and their transforms.
   return createPortal(<>
-    <div style={{ visibility: panel ? 'hidden' : undefined }} className="dashboard-menu-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-2xl justify-end px-4">
+    <div style={{ visibility: panel || modalCount > 0 ? 'hidden' : undefined }} className="dashboard-menu-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-2xl justify-end px-4">
       <button type="button" aria-haspopup="dialog" aria-expanded={panel === 'menu'}
         onClick={() => setPanel('menu')}
         className="pointer-events-auto flex h-14 items-center gap-2.5 rounded-full bg-pprimary px-5 text-ponprimary shadow-lg transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-4 focus-visible:ring-offset-pcanvas">

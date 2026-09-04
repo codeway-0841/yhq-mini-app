@@ -11,8 +11,8 @@ import { Button } from '../../shared/components/ui/button'
 import { Alert, AlertDescription } from '../../shared/components/ui/alert'
 import { track } from '../../shared/lib/analytics'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
-import SettingsModal from '../../shared/components/SettingsModal'
 import SubjectSheet from '../../shared/components/SubjectSheet'
+import SettingsModal from '../../shared/components/SettingsModal'
 import { TopBar } from './components/TopBar'
 import DashboardMenu from './components/DashboardMenu'
 import { ProgressCard } from './components/ProgressCard'
@@ -30,8 +30,8 @@ import { todayStr } from '../../shared/store/useDailyStore'
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
-  const [showSettings, setShowSettings] = useState(false)
   const [showSubjects, setShowSubjects] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
   const user            = useAppStore((s) => s.user)
   const displayName     = useAppStore((s) => s.displayName)
@@ -94,7 +94,7 @@ export default function Dashboard() {
 
       {/* Top bar / Greeting Header */}
       <TopBar user={user} displayName={displayName}
-        level={level}
+        onSubjects={() => setShowSubjects(true)}
         onSettings={() => setShowSettings(true)} onProfile={goProfile} />
 
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.

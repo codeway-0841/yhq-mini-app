@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent, act } from '@testing-library/react'
 import { MemoryRouter, useLocation } from 'react-router-dom'
 import DashboardMenu from '../../../src/features/dashboard/components/DashboardMenu'
-import { closeTopModal, hasOpenModal } from '../../../src/shared/lib/navigation'
+import { closeTopModal, hasOpenModal, registerModal } from '../../../src/shared/lib/navigation'
 
 vi.mock('../../../src/shared/components/SettingsModal', () => ({
   default: ({ initialPicker }: { initialPicker: string }) => <div>Picker: {initialPicker}</div>,
@@ -18,6 +18,16 @@ function setup() {
 }
 
 describe('DashboardMenu', () => {
+  it('hides the floating trigger while another sheet is open and restores it on close', () => {
+    render(<MemoryRouter><DashboardMenu /></MemoryRouter>)
+    const trigger = screen.getByRole('button', { name: 'Menyu' })
+    let unregister: () => void
+    act(() => { unregister = registerModal(Symbol('subject-picker'), vi.fn()) })
+    expect(trigger.parentElement?.style.visibility).toBe('hidden')
+    expect(screen.queryByRole('button', { name: 'Menyu' })).toBeNull()
+    act(() => { unregister() })
+    expect(screen.getByRole('button', { name: 'Menyu' })).toBe(trigger)
+  })
   it('opens four actions and restores focus on Escape', () => {
     const trigger = setup()
     expect(screen.getByRole('dialog', { name: 'Menyu' })).toBeTruthy()

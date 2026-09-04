@@ -73,13 +73,8 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
   return (
-    <div className="home-learning-guide px-4 pb-6">
-      <section aria-labelledby="home-learning-subject" className="home-learning-hero">
-        <div className="home-learning-hero-heading">
-          <h1 id="home-learning-subject" className="font-display text-[32px] font-extrabold leading-[1.15] tracking-[-0.025em] text-pfg">
-            {lang === 'ru' ? subject.nameRu : subject.name}
-          </h1>
-        </div>
+    <div className="home-learning-guide px-4 pb-3">
+      <section className="home-learning-hero">
         <div className="home-learning-step">
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
@@ -111,12 +106,12 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
       <div className="mt-4 grid grid-cols-2 gap-3">
         <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
           <BookOpen size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-3 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
           <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
         </button>
         <button onClick={() => navigate('/testlar')} className={`home-learning-shortcut ${interactive}`}>
           <Play size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-3 block text-[16px] font-bold text-pfg">{tt('dashboardPractice')}</span>
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardPractice')}</span>
           <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guidePracticeShort')}</span>
         </button>
       </div>
