@@ -15,10 +15,10 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="subject-title">
+    <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss>
       <div className="relative w-full bg-pcard rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[80vh] overflow-y-auto shadow-2xl">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
-        <p id="subject-title" className="text-center text-base font-semibold mb-5 text-pfg">
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
+        <p id="subject-title" data-drag-handle className="text-center text-base font-semibold mb-5 text-pfg select-none">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
         <div className="flex flex-col gap-2">

@@ -27,6 +27,8 @@ export default function ResultsModal({
   hideVerdict = false,
   topicBreakdown,
   disqualifiedByCheat = false,
+  earnedXp,
+  earnedCoins,
 }: {
   results: QuestionResult[]
   onRetry: () => void
@@ -41,6 +43,10 @@ export default function ResultsModal({
   topicBreakdown?: TopicBreakdownItem[]
   /** Anti-Cheat qoidabuzarlik tufayli to'xtatilganmi */
   disqualifiedByCheat?: boolean
+  /** Olingan authoritative XP (serverdan) */
+  earnedXp?: number
+  /** Olingan authoritative tangalar (serverdan) */
+  earnedCoins?: number
 }) {
   const [showCertificate, setShowCertificate] = useState(false)
   const [sharingImage, setSharingImage] = useState(false)
@@ -124,28 +130,35 @@ export default function ResultsModal({
     }
   }
 
+  // Konfetti darajalari (Senior UX Tiers): <80% yo'q, 80-94% 20 dona, 95-99% 35 dona, 100% 50 dona
+  const confettiCount = percent === 100 ? 50 : percent >= 95 ? 35 : percent >= 80 ? 20 : 0
+
   // Natija ochildi — g'alaba fanfarasi + tangalar yomg'iri yoki xato tovush
   useEffect(() => {
     if (disqualifiedByCheat) {
       playSound('error')
-      haptics.notify('error')
+      haptics.error()
+    } else if (percent === 100) {
+      playSound('win')
+      haptics.achievement()
     } else if (passed) {
       playSound('win')
-      haptics.notify('success')
+      haptics.success()
     } else {
       playSound('click')
+      haptics.complete()
     }
-  }, [disqualifiedByCheat, passed])
+  }, [disqualifiedByCheat, passed, percent])
 
   return (
-    <DialogOverlay onClose={onFinish} labelId="results-title">
-      {passed && !hideVerdict && !disqualifiedByCheat && <Confetti />}
+    <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
+      {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
       <div className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
         <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors">
           <X size={16} />
         </button>
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <h2 id="results-title" className="text-center text-lg font-semibold mb-1">{tt('results')}</h2>
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
+        <h2 id="results-title" data-drag-handle className="text-center text-lg font-semibold mb-1 select-none">{tt('results')}</h2>
 
         {disqualifiedByCheat && (
           <div className="mb-4 bg-pdanger/15 rounded-2xl p-4 text-center shadow-xs">
@@ -170,18 +183,34 @@ export default function ResultsModal({
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
+        {/* Authoritative mukofotlar (XP & Tangalar) */}
+        {(Boolean(earnedXp) || Boolean(earnedCoins)) && (
+          <div className="mb-4 flex items-center justify-center gap-3 animate-scorePop">
+            {Boolean(earnedXp) && (
+              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pprimary/15 text-pprimary font-bold text-xs shadow-xs">
+                <span>+{earnedXp} XP</span>
+              </div>
+            )}
+            {Boolean(earnedCoins) && (
+              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pgold/15 text-pgold font-bold text-xs shadow-xs">
+                <span>+{earnedCoins} 🪙</span>
+              </div>
+            )}
+          </div>
+        )}
+
         <div className="grid grid-cols-3 gap-2 mb-5 animate-scorePop">
-          <div className="rounded-2xl bg-pwash p-3 text-center shadow-xs">
+          <div className="rounded-2xl bg-pwash p-3 text-center shadow-xs transition-all duration-300">
             <Check size={16} strokeWidth={2} className="mx-auto text-pprimary" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{correct}</p>
             <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
           </div>
-          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-center shadow-xs">
+          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-center shadow-xs transition-all duration-300">
             <X size={16} strokeWidth={2} className="mx-auto text-pdanger" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{wrong}</p>
             <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
           </div>
-          <div className="rounded-2xl bg-psurface p-3 text-center shadow-xs">
+          <div className="rounded-2xl bg-psurface p-3 text-center shadow-xs transition-all duration-300">
             <Minus size={16} strokeWidth={2} className="mx-auto text-psubtle" aria-hidden="true" />
             <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{unanswered}</p>
             <p className="mt-1.5 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
@@ -247,10 +276,12 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={onOpenReview}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
+            className={`font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm shadow-xs ${
+              wrong > 0 ? 'bg-pdanger text-white shadow-md' : 'bg-pprimary text-ponprimary'
+            }`}
           >
             <BookOpen size={16} strokeWidth={1.75} />
-            {tt('examReviewBtn')}
+            {wrong > 0 ? `${tt('examReviewBtn')} (${wrong})` : tt('examReviewBtn')}
           </button>
         )}
 

@@ -15,11 +15,11 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
   const tt = useT(lang)
 
   return (
-    <DialogOverlay onClose={onClose} labelId="stat-info-title" zIndex={60}>
+    <DialogOverlay onClose={onClose} labelId="stat-info-title" zIndex={60} swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="w-10 h-1 bg-pline rounded-full mx-auto mb-5" />
+        <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 
-        <p id="stat-info-title" className="flex items-center justify-center gap-2 text-base font-black mb-4 text-pfg">
+        <p id="stat-info-title" data-drag-handle className="flex items-center justify-center gap-2 text-base font-black mb-4 text-pfg select-none">
           <span className="text-pprimary">{icon}</span>
           {title}
         </p>

@@ -52,4 +52,34 @@ export const haptics = {
       }
     } catch { /* noop */ }
   },
+
+  // ── Domain ierarxiyasi (Senior UX Hierarchy) ──
+  /** BottomNav tablar va mayin selektorlar uchun (sezilar-sezilmas yengil chertish) */
+  selection(): void {
+    haptics.select()
+  },
+  /** To'g'ri javoblar va tasdiqlashlar uchun */
+  success(): void {
+    haptics.notify('success')
+  },
+  /** Noto'g'ri javoblar yoki xatoliklar uchun */
+  error(): void {
+    haptics.notify('error')
+  },
+  /** Ogohlantirishlar uchun */
+  warning(): void {
+    haptics.notify('warning')
+  },
+  /** Sheet yopilish chegarasi yoki snap nuqtasi */
+  threshold(): void {
+    haptics.impact('light')
+  },
+  /** Test yakunlanishi natijasi */
+  complete(): void {
+    haptics.impact('medium')
+  },
+  /** Yutuq, unvon yoki rekord ochilishi */
+  achievement(): void {
+    haptics.impact('heavy')
+  },
 }

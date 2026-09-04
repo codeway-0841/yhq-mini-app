@@ -40,9 +40,9 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
   useEffect(() => { load() }, [load])
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="pay-history-title">
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="pay-history-title" swipeToDismiss>
       <div className="relative flex max-h-[80vh] w-full flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="mx-auto mb-4 h-1 w-10 flex-none rounded-full bg-plineStrong" />
+        <div data-drag-handle className="mx-auto mb-4 h-1 w-10 flex-none rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none" />
 
         {/* Header — sarlavha + yopish */}
         <div className="flex flex-none items-start justify-between gap-3">

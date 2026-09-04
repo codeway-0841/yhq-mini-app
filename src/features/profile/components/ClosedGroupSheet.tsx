@@ -60,9 +60,9 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
   }
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title">
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title" swipeToDismiss>
       <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong" />
+        <div data-drag-handle className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none" />
 
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (

@@ -16,10 +16,10 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
 }) {
   const tt = useT(useAppStore((s) => s.settings.language))
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title">
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <p id="photo-edit-title" className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg">
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
+        <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg select-none">
           <Camera size={14} className="text-pprimary" />
           {tt('photoEditTitle')}
         </p>
@@ -69,9 +69,9 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
   const [step, setStep] = useState<'confirm' | 'method' | 'sms'>(currentPhone ? 'confirm' : 'method')
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="phone-edit-title">
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="phone-edit-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 
         <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-pprimary/10">
           <Phone size={28} strokeWidth={1.75} className="text-pprimary" />

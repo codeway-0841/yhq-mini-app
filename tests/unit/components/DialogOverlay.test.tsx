@@ -122,4 +122,128 @@ describe('DialogOverlay component', () => {
     render(<DialogOverlay onClose={() => {}} zIndex={70}><div>x</div></DialogOverlay>)
     expect(screen.getByRole('dialog')).toHaveStyle({ zIndex: 70 })
   })
+
+  describe('swipe-to-dismiss gesture behavior', () => {
+    function firePointer(type: string, target: HTMLElement, init: { clientY?: number; clientX?: number; pointerId?: number } = {}) {
+      const ev = new Event(type, { bubbles: true, cancelable: true }) as any
+      ev.clientY = init.clientY ?? 0
+      ev.clientX = init.clientX ?? 0
+      ev.pointerId = init.pointerId ?? 1
+      ev.pointerType = 'touch'
+      ev.button = 0
+      ev.isPrimary = true
+      target.dispatchEvent(ev)
+    }
+
+    it('swipeToDismiss=false (default): pointer events don\'t wrap sheet in draggable container', () => {
+      const { container } = render(
+        <DialogOverlay onClose={() => {}}>
+          <div data-testid="content">Modal Content</div>
+        </DialogOverlay>
+      )
+      expect(container.querySelector('.will-change-transform')).not.toBeInTheDocument()
+    })
+
+    it('swipeToDismiss=true: renders sheet wrapper with gesture handlers', () => {
+      const { container } = render(
+        <DialogOverlay onClose={() => {}} swipeToDismiss>
+          <div data-testid="content">
+            <div data-drag-handle data-testid="handle" />
+            <button>Option</button>
+          </div>
+        </DialogOverlay>
+      )
+      const wrapper = container.querySelector('.will-change-transform')
+      expect(wrapper).toBeInTheDocument()
+    })
+
+    it('dragHandleOnly=true: pointer down outside drag handle does not start drag', () => {
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss dragHandleOnly>
+          <div>
+            <div data-drag-handle data-testid="handle">Handle</div>
+            <div data-testid="content" style={{ marginTop: '100px' }}>Body content</div>
+          </div>
+        </DialogOverlay>
+      )
+      const content = screen.getByTestId('content')
+      // Simulate click far from top
+      firePointer('pointerdown', content, { clientY: 300, clientX: 100 })
+      firePointer('pointermove', content, { clientY: 450, clientX: 100 })
+      firePointer('pointerup', content, { clientY: 450, clientX: 100 })
+
+      expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('direction lock: horizontal swipe (dx > dy) is ignored by sheet drag', () => {
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 10 })
+      // Move 80px horizontally and only 10px vertically
+      firePointer('pointermove', handle, { clientY: 20, clientX: 90 })
+      firePointer('pointerup', handle, { clientY: 20, clientX: 90 })
+
+      expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('downward drag past threshold triggers onClose after animation timeout', async () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      // Drag down 180px (well past threshold)
+      firePointer('pointermove', handle, { clientY: 190, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 190, clientX: 100 })
+
+      // Should not call immediately before animation
+      expect(handleClose).not.toHaveBeenCalled()
+
+      // Advance timers for exit animation
+      vi.advanceTimersByTime(300)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
+    it('accidental click is suppressed after dragging gesture', () => {
+      const handleClick = vi.fn()
+      render(
+        <DialogOverlay onClose={() => {}} swipeToDismiss>
+          <div>
+            <div data-drag-handle data-testid="handle">Handle</div>
+            <button onClick={handleClick} data-testid="btn">Click me</button>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      const btn = screen.getByTestId('btn')
+
+      // Drag > 8px
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 25, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 25, clientX: 100 })
+
+      // Clicking immediately after drag should be suppressed
+      fireEvent.click(btn)
+      expect(handleClick).not.toHaveBeenCalled()
+
+      // Next genuine click should work normally
+      fireEvent.click(btn)
+      expect(handleClick).toHaveBeenCalledTimes(1)
+    })
+  })
 })

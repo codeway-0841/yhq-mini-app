@@ -18,11 +18,11 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
   onClose:  () => void
 }) {
   return (
-    <DialogOverlay onClose={onClose} labelId="picker-title">
+    <DialogOverlay onClose={onClose} labelId="picker-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 
-        <p id="picker-title" className="flex items-center justify-center gap-2 text-base font-semibold mb-5 text-pfg">
+        <p id="picker-title" data-drag-handle className="flex items-center justify-center gap-2 text-base font-semibold mb-5 text-pfg select-none">
           <span className="text-pprimary">{titleIcon}</span>
           {title}
         </p>
