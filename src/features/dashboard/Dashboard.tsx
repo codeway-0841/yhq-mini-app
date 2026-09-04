@@ -4,7 +4,7 @@ import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
-import { useQuestionsStore, cachedQuestionCount } from '../../shared/store/useQuestionsStore'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
 import { Button } from '../../shared/components/ui/button'
@@ -23,7 +23,7 @@ import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { DailyTasksCard } from '../shop'
 import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, useSubjectBadges } from './hooks/useDashboardData'
+import { useDashboardSync, useSubjectBadges, useDashboardQuestionCount } from './hooks/useDashboardData'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Main Dashboard ──────────────────────────────────────────────────────────
@@ -43,8 +43,7 @@ export default function Dashboard() {
   const dailyStreak     = useDailyStore((s) => s.streaks[subject.id] ?? 0)
   // Savollar hali yuklanmagan bo'lsa oxirgi ma'lum SONdan foydalanamiz —
   // aks holda birinchi kadrda "0%" chizilib, keyin haqiqiy foizga sakrardi.
-  const loadedCount = useQuestionsStore((s) => s.questions.length)
-  const questionsCount = loadedCount || cachedQuestionCount(subject.id)
+  const questionsCount = useDashboardQuestionCount(subject.id)
 
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {
@@ -70,7 +69,8 @@ export default function Dashboard() {
         useAppStore.getState().syncFromServer(uid),
       ])
     }
-    await useQuestionsStore.getState().load(settings.language, subject.id)
+    // Foydalanuvchi yangilayapti: failedKey guardidan chiqib, aynan tanlangan fanga qayta urinish.
+    await useQuestionsStore.getState().retry(settings.language, subject.id)
   })
   const tt = useT(settings.language)
 
@@ -146,7 +146,7 @@ export default function Dashboard() {
             <PremiumIcon size={22} className="shrink-0 text-pmuted" />
             <div className="min-w-0 flex-1">
               <p className="text-[13.5px] font-semibold text-pfg">Premium</p>
-              <p className="mt-0.5 text-[11px] text-psubtle">{tt('premiumTagline')}</p>
+              <p className="mt-0.5 text-[13px] leading-relaxed text-pmuted">{tt('premiumTagline')}</p>
             </div>
             <Button size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>
               {tt('tryWord')}

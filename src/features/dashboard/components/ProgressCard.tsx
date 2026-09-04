@@ -59,7 +59,7 @@ const StatButton = memo(function StatButton({
       <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />
       <div className="min-w-0">
         <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{value}</p>
-        <p className="truncate text-[10px] font-medium text-white/65">{label}</p>
+        <p className="truncate text-[12px] font-medium text-white/80">{label}</p>
       </div>
     </button>
   )
@@ -105,7 +105,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
       <div className="hero-gradient-card mx-4 mb-5 p-4 sm:p-5">
         {/* Sarlavha qatori: Bugungi progress (chapda) va Fan tanlash toggle (o'ngda) */}
         <div className="mb-2 flex items-center justify-between gap-2">
-          <p className="text-[12.5px] font-medium text-white/80">{tt('todayProgress')}</p>
+          <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
 
           {/* Fan tanlash toggle chipi */}
           <button
@@ -116,7 +116,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
               setShowSubjects(true)
             }}
             className={cn(
-              'inline-flex h-8 items-center gap-1.5 rounded-xl bg-black/40 pl-1.5 pr-2.5 text-[12px] font-semibold text-white backdrop-blur-md shadow-2xs',
+              'inline-flex min-h-11 items-center gap-1.5 rounded-xl bg-black/40 pl-1.5 pr-2.5 text-[12px] font-semibold text-white backdrop-blur-md shadow-2xs',
               'transition-[background-color,transform] duration-150 ease-out hover:bg-black/55 active:scale-[0.97]',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white'
             )}
@@ -128,16 +128,16 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
             >
               <subject.icon size={12} strokeWidth={2.5} />
             </span>
-            <span className="max-w-[130px] truncate font-bold">{subject.name}</span>
+            <span className="max-w-[130px] truncate font-bold">{lang === 'ru' ? subject.nameRu : subject.name}</span>
             <ChevronDown size={13} strokeWidth={2} className="text-white/80" />
           </button>
         </div>
 
         <div className="flex items-baseline gap-2">
           <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
-            {shown}
+            {total > 0 ? shown : '—'}
           </span>
-          <span className="font-display text-[22px] font-semibold text-white/75">%</span>
+          {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
         </div>
 
         <div className="mt-4 flex items-center gap-3">

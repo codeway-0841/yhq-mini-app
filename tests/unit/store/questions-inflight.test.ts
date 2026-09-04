@@ -57,7 +57,7 @@ beforeEach(() => {
   lsStore.clear()
   getQuestions.mockReset()
   getTopics.mockReset()
-  useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null, failedKey: null })
+  useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null, failedKey: null, subjectId: 'yhq', lang: 'uz' })
 })
 
 describe('useQuestionsStore.load() in-flight dedupe', () => {
@@ -164,6 +164,35 @@ describe("xato holati — cheksiz qayta urinish YO'Q", () => {
     expect(getQuestions).toHaveBeenCalledTimes(2)
     expect(useQuestionsStore.getState().loaded).toBe(true)
     expect(useQuestionsStore.getState().failedKey).toBeNull()
+  })
+
+  it('explicit retry targets the selected subject after its load fails', async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockResolvedValue([q(1)])
+    await useQuestionsStore.getState().load('uz', 'yhq')
+
+    getQuestions.mockRejectedValueOnce(new Error('offline'))
+    await useQuestionsStore.getState().load('ru', 'rustili')
+    expect(useQuestionsStore.getState().subjectId).toBe('yhq')
+    expect(useQuestionsStore.getState().failedKey).toBe('rustili::ru')
+
+    await useQuestionsStore.getState().retry('ru', 'rustili')
+    expect(getQuestions).toHaveBeenLastCalledWith('rustili')
+    expect(getQuestions).toHaveBeenCalledTimes(3)
+    expect(useQuestionsStore.getState().subjectId).toBe('rustili')
+    expect(useQuestionsStore.getState().lang).toBe('ru')
+    expect(useQuestionsStore.getState().error).toBeNull()
+  })
+
+  it('a failed explicit retry restores the automatic retry guard', async () => {
+    getTopics.mockResolvedValue([])
+    getQuestions.mockRejectedValue(new Error('offline'))
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    await useQuestionsStore.getState().retry('uz', 'yhq')
+    await useQuestionsStore.getState().load('uz', 'yhq')
+    expect(getQuestions).toHaveBeenCalledTimes(2)
+    expect(useQuestionsStore.getState().failedKey).toBe('yhq::uz')
+    expect(useQuestionsStore.getState().loading).toBe(false)
   })
 
   it('til almashsa butun bank QAYTA TORTILMAYDI — lokal remap', async () => {

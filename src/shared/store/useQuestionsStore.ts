@@ -25,7 +25,7 @@ interface QuestionsState {
   failedKey: string | null
   load:      (lang: 'uz' | 'ru', subjectId?: string) => Promise<void>
   /** Foydalanuvchi BOSGANDA qayta urinish — avtomatik takror emas. */
-  retry:     () => Promise<void>
+  retry:     (lang?: 'uz' | 'ru', subjectId?: string) => Promise<void>
   /** Admin CRUD'dan keyin cache'dan qat'iatan qayta yuklash (force) */
   reload:    () => Promise<void>
   /** Re-map already-fetched questions to another language — no network call. */
@@ -131,10 +131,11 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     return run
   },
 
-  async retry() {
+  async retry(lang, subjectId) {
+    const targetLang = lang ?? get().lang
+    const targetSubject = subjectId ?? get().subjectId
     set({ failedKey: null, error: null })
-    const { lang, subjectId } = get()
-    await get().load(lang, subjectId)
+    await get().load(targetLang, targetSubject)
   },
 
   async reload() {

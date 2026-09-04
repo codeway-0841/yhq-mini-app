@@ -3,9 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import { modules } from '../../../content/modules'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useLessonsStore } from '../../../shared/store/useLessonsStore'
-import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
+import { useQuestionsStore, cachedQuestionCount } from '../../../shared/store/useQuestionsStore'
 import { useDailyStore, todayStr } from '../../../shared/store/useDailyStore'
 import { type useT } from '../../../shared/i18n'
+
+/** Faqat joriy fan banki yoki shu fanning oxirgi ma’lum soni. */
+export function useDashboardQuestionCount(subjectId: string): number {
+  const count = useQuestionsStore((s) =>
+    s.subjectId === subjectId && s.loaded ? s.questions.length : null
+  )
+  return count ?? cachedQuestionCount(subjectId)
+}
 
 /** Serverdan bugungi holatni tortish + fan/til o'zgarganda savollarni qayta yuklash. */
 export function useDashboardSync(userId: string | undefined, subjectId: string, lang: 'uz' | 'ru') {

@@ -97,8 +97,8 @@ export default function DailyTasksCard() {
   return (
     <div className="mx-4 mb-5 rounded-2xl bg-pcard p-4 shadow-xs">
       {celebrate && <Confetti count={32} />}
-      <p className="mb-3 flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">
-        <ClipboardCheck size={11} strokeWidth={1.75} /> {tt('dailyTasksTitle')}
+      <p className="mb-3 flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-pmuted">
+        <ClipboardCheck size={14} strokeWidth={1.75} /> {tt('dailyTasksTitle')}
       </p>
       <div className="flex flex-col gap-2.5">
         {visible.map((task) => {
@@ -108,8 +108,8 @@ export default function DailyTasksCard() {
             <div key={task.id} className="flex items-center gap-3">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between gap-2 mb-1">
-                  <p className="truncate text-[12px] font-semibold text-pfg">{def.label[lang]}</p>
-                  <span className="flex-none text-[10.5px] font-semibold tabular-nums text-psubtle">{task.progress}/{task.target}</span>
+                  <p className="text-[14px] leading-snug font-semibold text-pfg">{def.label[lang]}</p>
+                  <span className="flex-none text-[12px] font-semibold tabular-nums text-pmuted">{task.progress}/{task.target}</span>
                 </div>
                 <div className="h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
                   <div
@@ -121,9 +121,9 @@ export default function DailyTasksCard() {
                   />
                 </div>
               </div>
-              <div className="flex-none w-[74px]">
+              <div className="flex-none w-[88px]">
                 {task.claimed ? (
-                  <span className="flex items-center justify-center gap-1 py-1.5 text-[11px] font-semibold text-psuccess">
+                  <span className="flex items-center justify-center gap-1 py-1.5 text-[12px] font-semibold text-psuccess">
                     <Check size={13} strokeWidth={1.75} /> {tt('taskClaimed')}
                   </span>
                 ) : task.completed ? (
@@ -131,7 +131,7 @@ export default function DailyTasksCard() {
                     onClick={() => claim(task.id)}
                     disabled={busy !== null}
                     className={cn(
-                      'flex h-[34px] w-full items-center justify-center gap-1 rounded-xl text-[11px] font-semibold text-pgold shadow-2xs',
+                      'flex min-h-11 w-full items-center justify-center gap-1 rounded-xl text-[12px] font-semibold text-pgold shadow-2xs',
                       'bg-[rgb(var(--p-gold-rgb)/0.18)]',
                       'transition-transform duration-150 ease-out active:scale-[0.98]',
                       'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
@@ -142,7 +142,7 @@ export default function DailyTasksCard() {
                       : <><CoinIcon size={12} /> {tt('taskClaim')} +{task.reward}</>}
                   </button>
                 ) : (
-                  <span className="flex items-center justify-center gap-1 py-1.5 text-[11px] font-medium tabular-nums text-psubtle">
+                  <span className="flex items-center justify-center gap-1 py-1.5 text-[12px] font-medium tabular-nums text-pmuted">
                     <CoinIcon size={12} /> +{task.reward}
                   </span>
                 )}

@@ -29,12 +29,13 @@ const UZ = {
   ticketTest: "Bilet test", realExam: "Real imtihon", fifty: "50/100 talik",
   distracting: "Chalg'ituvchi", saved: "Saqlanganlar",
   roadSigns: "Yo'l belgilari", numeric: "Raqamli savollar",
-  adaptive: "Test yechish",
+  adaptive: "Adaptiv test",
   // v1.1 Dashboard (Neon)
   greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
   continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
   streakConsec: "Ketma-ket", dailyTask: "Kunlik mashq", dailyTaskDesc: "10 ta maxsus savolni yeching",
   // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
+  subjectProgress: "Fan bo‘yicha progress",
   todayProgress: "Bugungi progress", switchSubject: "Fanlarni almashtirish",
   testsWord: "ta test", currentTopic: "Davom etayotgan mavzu",
   streakDays: "Seriya", totalXp: "Jami tajriba", ratingWord: "Reyting",
@@ -504,6 +505,7 @@ const UZ = {
   signsGameBack: "Orqaga", signsGamePairs: "Juftliklar",
   // ── Boss Battle (haftalik jamoaviy jang) ──
   bossTitle: "Haftalik jang",
+  bossTeamDamage: "Jamoaviy zarar", bossRemainingHp: "Qolgan HP",
   bossHpShort: "HP", bossMyDamage: "Mening zarbam",
   bossDaysLeft: "kun qoldi", bossStatusDefeated: "Yengildi! 🏆",
   bossTopHitters: "Top zarbalar", bossDefeatedHint: "Boss yengildi — hafta yakunida mukofotlar taqsimlanadi!",
@@ -568,6 +570,7 @@ const RU: Record<Keys, string> = {
   continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
   streakConsec: "Подряд", dailyTask: "Ежедневная тренировка", dailyTaskDesc: "Решите 10 специальных вопросов",
   // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
+  subjectProgress: "Прогресс по предмету",
   todayProgress: "Прогресс сегодня", switchSubject: "Сменить предмет",
   testsWord: "тестов", currentTopic: "Текущая тема",
   streakDays: "Серия", totalXp: "Всего опыта", ratingWord: "Рейтинг",
@@ -1028,6 +1031,7 @@ const RU: Record<Keys, string> = {
   signsGameBack: "Назад", signsGamePairs: "Пары",
   // ── Босс-баттл (еженедельный общий бой) ──
   bossTitle: "Битва недели",
+  bossTeamDamage: "Урон команды", bossRemainingHp: "Осталось HP",
   bossHpShort: "HP", bossMyDamage: "Мой урон",
   bossDaysLeft: "дн. осталось", bossStatusDefeated: "Побеждён! 🏆",
   bossTopHitters: "Топ ударов", bossDefeatedHint: "Босс побеждён — награды будут розданы в конце недели!",

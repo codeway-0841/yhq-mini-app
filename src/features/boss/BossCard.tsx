@@ -68,9 +68,9 @@ export default function BossCard() {
   const BossIcon = getBossIcon(state.bossKey)
   
   // Zarar foizi va qolgan HP
-  const damagePct = state.hpTotal > 0 ? Math.min(100, Math.round((state.totalDamage / state.hpTotal) * 100)) : 0
-  const remainingHpPct = Math.max(0, 100 - damagePct)
-  const isDefeated = state.status === 'defeated' || remainingHpPct === 0
+  const remainingHp = Math.max(0, state.hpTotal - state.totalDamage)
+  const remainingHpPct = state.hpTotal > 0 ? (remainingHp / state.hpTotal) * 100 : 0
+  const isDefeated = state.status === 'defeated' || (state.hpTotal > 0 && remainingHp === 0)
 
   const daysLeft = daysLeftOf(state.periodKey)
   const statusBadge = isDefeated
@@ -81,13 +81,13 @@ export default function BossCard() {
     <div className="mx-4 mb-5 overflow-hidden rounded-2xl bg-pcard p-4 transition-all shadow-xs">
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5 text-[10.5px] font-bold uppercase tracking-[0.14em] text-psubtle">
+        <div className="flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-[0.14em] text-psubtle">
           <Swords size={14} strokeWidth={1.75} className="text-pmuted" />
           <span>{tt('bossTitle')}</span>
         </div>
         <span
           className={cn(
-            'rounded-full px-2 py-0.5 text-[10.5px] font-bold tracking-tight',
+            'rounded-full px-2 py-0.5 text-[12px] font-bold tracking-tight',
             isDefeated ? 'bg-psuccess/15 text-psuccess' : 'bg-psurface text-pmuted'
           )}
           style={{ color: statusBadge.color }}
@@ -105,28 +105,27 @@ export default function BossCard() {
 
         {/* Boss nomi & Jon (HP) ko'rsatkichi */}
         <div className="min-w-0 flex-1">
-          <div className="flex items-baseline justify-between gap-2">
-            <p className="truncate text-[14px] font-bold tracking-tight text-pfg">{name}</p>
-            <span className="shrink-0 text-[10px] font-semibold text-psubtle">
-              {state.totalDamage.toLocaleString()} / {state.hpTotal.toLocaleString()} HP
-            </span>
-          </div>
+          <p className="text-[16px] font-bold tracking-tight text-pfg">{name}</p>
+          <p className="mt-1 text-[12px] font-medium tabular-nums text-pmuted">
+            {tt('bossTeamDamage')}: <strong className="text-pfg">{state.totalDamage.toLocaleString()}</strong>
+          </p>
 
-          {/* HP Bar (Qolgan jon yoki jamoaviy zarar) */}
-          <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-psurface">
+          {/* Qolgan HP: raqam va progress bar bir xil miqdorni ko‘rsatadi. */}
+          <div role="progressbar" aria-label={tt('bossRemainingHp')} aria-valuemin={0} aria-valuemax={state.hpTotal} aria-valuenow={remainingHp}
+            className="mt-2 h-2 w-full overflow-hidden rounded-full bg-psurface">
             <div
               className="h-full rounded-full bg-pprimary transition-[width] duration-700 ease-out"
               style={{
-                width: `${damagePct}%`,
+                width: `${remainingHpPct}%`,
               }}
             />
           </div>
 
-          <div className="mt-1.5 flex items-center justify-between gap-2">
-            <span className="text-[10.5px] font-medium tabular-nums text-pmuted">
-              {tt('bossHpShort')}: <strong className="font-bold text-pfg">{remainingHpPct}%</strong>
+          <div className="mt-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+            <span className="text-[12px] font-medium tabular-nums text-pmuted">
+              {tt('bossRemainingHp')}: <strong className="font-bold text-pfg">{remainingHp.toLocaleString()} / {state.hpTotal.toLocaleString()}</strong>
             </span>
-            <span className="flex items-center gap-1 text-[10.5px] font-bold tabular-nums text-pfg">
+            <span className="flex items-center gap-1 text-[12px] font-bold tabular-nums text-pfg">
               <Flame size={12} strokeWidth={1.75} className="text-pmuted" />
               <span>{tt('bossMyDamage')}: {state.myDamage}</span>
             </span>
@@ -137,7 +136,7 @@ export default function BossCard() {
       {/* Top-3 zarba beruvchilar — ixcham micro-avatarlar */}
       {state.top.length > 0 && (
         <div className="mt-3 flex items-center justify-between border-t border-pline pt-2.5">
-          <span className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wide text-psubtle">
+          <span className="flex items-center gap-1 text-[12px] font-bold uppercase tracking-wide text-psubtle">
             <Trophy size={11} strokeWidth={1.75} className="text-pmuted" /> {tt('bossTopHitters')}
           </span>
           <div className="flex items-center gap-2">
@@ -164,7 +163,7 @@ export default function BossCard() {
                 )
               })}
             </div>
-            <span className="max-w-[110px] truncate text-[10px] font-medium text-pmuted">
+            <span className="max-w-[110px] truncate text-[12px] font-medium text-pmuted">
               {state.top[0]?.firstName}{state.top.length > 1 ? ` +${state.top.length - 1}` : ''}
             </span>
           </div>
@@ -174,7 +173,7 @@ export default function BossCard() {
       {/* G'alaba holati eslatmasi */}
       {isDefeated && (
         <div className="mt-3 rounded-2xl bg-psuccess/10 p-3 text-center shadow-xs motion-safe:animate-premiumIn">
-          <p className="text-[11.5px] font-bold text-psuccess">
+          <p className="text-[13px] font-bold text-psuccess">
             {tt('bossDefeatedHint')}
           </p>
         </div>
