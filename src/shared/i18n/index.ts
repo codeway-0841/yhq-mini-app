@@ -1,6 +1,16 @@
 export type Lang = 'uz' | 'ru'
 
 const UZ = {
+  readQuestion: 'Savolni o‘qib berish', stopReading: 'Ovozni to‘xtatish',
+  testMenu: 'Test menyusi', testErrors: 'xato',
+  testFinishTitle: 'Testni yakunlaysizmi?',
+  testFinishUnanswered: '{count} ta savol javobsiz qoldi. Hozir yakunlaysizmi?',
+  testFinishReady: 'Natijalarni ko‘rish uchun testni yakunlang.',
+  testKeepSolving: 'Yechishni davom ettirish',
+  testExplanationSoon: 'Ushbu savol uchun izoh tez kunda qo‘shiladi.',
+  guideExpiredTest: 'Test vaqti tugagan',
+  guideExpiredHint: 'Ajratilgan vaqt tugagan. Saqlangan javoblaringiz natijasini ko‘ring.',
+  guideViewResults: 'Natijani ko‘rish',
   pathPremiumOpen: 'Premium bilan ochish', pathPremiumHint: 'Birinchi dars bepul. Qolgan darslar Premium bilan ochiladi.',
   pathLevelCheck: 'Modul sinovi', pathCheckHint: 'Shu moduldagi bilimlaringizni sinab ko‘ring.',
   pathUnread: 'Hali o‘qilmagan', pathStart: 'Boshlash', pathJumpAhead: 'Shu darsga o‘tish',
@@ -550,6 +560,16 @@ const UZ = {
 type Keys = keyof typeof UZ
 
 const RU: Record<Keys, string> = {
+  readQuestion: 'Озвучить вопрос', stopReading: 'Остановить озвучку',
+  testMenu: 'Меню теста', testErrors: 'ошибок',
+  testFinishTitle: 'Завершить тест?',
+  testFinishUnanswered: 'Без ответа осталось вопросов: {count}. Завершить сейчас?',
+  testFinishReady: 'Завершите тест, чтобы посмотреть результаты.',
+  testKeepSolving: 'Продолжить тест',
+  testExplanationSoon: 'Пояснение к этому вопросу скоро будет добавлено.',
+  guideExpiredTest: 'Время теста истекло',
+  guideExpiredHint: 'Отведённое время истекло. Посмотрите результаты сохранённых ответов.',
+  guideViewResults: 'Посмотреть результаты',
   pathPremiumOpen: 'Открыть с Premium', pathPremiumHint: 'Первый урок бесплатный. Остальные уроки доступны с Premium.',
   pathLevelCheck: 'Проверка модуля', pathCheckHint: 'Проверьте знания по этому модулю.',
   pathUnread: 'Ещё не прочитано', pathStart: 'Начать', pathJumpAhead: 'Перейти к уроку',

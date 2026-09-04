@@ -4,6 +4,19 @@
  * boshqa bo'lishi mumkin — bu normal).
  */
 
+let activeUtterance: SpeechSynthesisUtterance | null = null
+const listeners = new Set<() => void>()
+
+function setActive(utterance: SpeechSynthesisUtterance | null) {
+  activeUtterance = utterance
+  listeners.forEach((notify) => notify())
+}
+
+export function subscribeSpeaking(notify: () => void): () => void {
+  listeners.add(notify)
+  return () => { listeners.delete(notify) }
+}
+
 function voiceFor(lang: 'uz' | 'ru'): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices()
   if (voices.length === 0) return null
@@ -24,14 +37,23 @@ export function speak(text: string, lang: 'uz' | 'ru'): void {
     u.lang = v?.lang ?? (lang === 'ru' ? 'ru-RU' : 'uz-UZ')
     u.rate = 0.96
     u.pitch = 1
+    const finish = () => {
+      // A canceled utterance may finish after its replacement has started.
+      if (activeUtterance === u) setActive(null)
+    }
+    u.onend = finish
+    u.onerror = finish
+    setActive(u)
     window.speechSynthesis.speak(u)
-  } catch { /* eski webview — jim */ }
+  } catch { setActive(null) /* eski webview — jim */ }
 }
 
 export function stopSpeaking(): void {
+  setActive(null)
   try { window.speechSynthesis.cancel() } catch { /* jim */ }
 }
 
 export function isSpeaking(): boolean {
-  return typeof window !== 'undefined' && window.speechSynthesis.speaking
+  // Includes queued speech, so a second tap can cancel before audio starts.
+  return activeUtterance !== null
 }

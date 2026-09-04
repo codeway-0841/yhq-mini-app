@@ -34,6 +34,18 @@ beforeEach(() => {
 })
 
 describe('learning guide', () => {
+  it('offers results for an expired session while preserving its route and answers', () => {
+    const expired = { ...snapshot, startedAt: Date.now() - 26 * 60 * 1000 }
+    useTestSessionStore.getState().save(expired)
+    guide()
+    expect(screen.getByRole('heading', { name: 'Test vaqti tugagan' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Natijani ko‘rish' }))
+    const target = JSON.parse(screen.getByTestId('destination').textContent!)
+    expect(target.path).toBe('/test/1')
+    expect(makeSessionKey(target.state.mode, target.state.questionIds)).toBe(snapshot.key)
+    expect(useTestSessionStore.getState().session?.answers).toEqual(snapshot.answers)
+  })
+
   it('shows actual modules and starts the displayed module', () => {
     guide()
     expect(screen.queryByText('Testni davom ettiring')).not.toBeInTheDocument()

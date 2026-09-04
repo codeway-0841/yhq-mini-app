@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react'
 import { BookOpen, Play, ChevronRight, Circle, CheckCircle2 } from 'lucide-react'
+import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -23,6 +25,17 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const done = useLessonsStore((s) => userId ? s.byUser[userId] : undefined)
   const tt = useT(lang)
   const resume = resumeRouteState(session, subject.id)
+  const [now, setNow] = useState(Date.now)
+  const deadline = resume && session ? session.startedAt + testDurationSeconds(session.mode) * 1000 : null
+  useEffect(() => {
+    if (deadline === null) return
+    const refresh = () => setNow(Date.now())
+    refresh()
+    const timeout = window.setTimeout(refresh, Math.max(0, deadline - Date.now()) + 10)
+    window.addEventListener('focus', refresh)
+    return () => { window.clearTimeout(timeout); window.removeEventListener('focus', refresh) }
+  }, [deadline])
+  const expired = !!resume && !!session && remainingSeconds(session.startedAt, testDurationSeconds(session.mode), now) === 0
   const questions = useQuestionsStore((s) => s.questions)
   const topics = useQuestionsStore((s) => s.topics)
   const loadedSubject = useQuestionsStore((s) => s.subjectId)
@@ -46,9 +59,9 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const currentTopic = topicChoices[currentIndex]
   const followingTopic = currentIndex >= 0 ? topicChoices.slice(currentIndex + 1).find((t) => !t.complete) : undefined
   const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
-  const title = resume ? (session?.title || tt('guideResumeTest')) : allComplete ? tt('guideTopicsDone') : currentTopic?.title
+  const title = expired ? tt('guideExpiredTest') : resume ? (session?.title || tt('guideResumeTest')) : allComplete ? tt('guideTopicsDone') : currentTopic?.title
     ?? (mistakesCount > 0 ? tt('guideReviewTitle') : tt('topics'))
-  const description = resume ? tt('guideResumeHint') : allComplete ? tt('guideTopicsDoneHint') : currentTopic ? null
+  const description = expired ? tt('guideExpiredHint') : resume ? tt('guideResumeHint') : allComplete ? tt('guideTopicsDoneHint') : currentTopic ? null
     : mistakesCount > 0 ? tt('guideReviewGentle') : tt('guideChooseTopic')
   const start = () => {
     if (resume) navigate('/test/1', { state: resume })
@@ -82,7 +95,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
             <Circle size={15} className="text-psubtle" aria-hidden="true" />
           </button>}
           <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
-            {allComplete && !resume ? tt('guideReviewTopics') : hasContinue ? tt('continueLearn') : currentTopic ? tt('pathStart') : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')}
+            {expired ? tt('guideViewResults') : allComplete && !resume ? tt('guideReviewTopics') : hasContinue ? tt('continueLearn') : currentTopic ? tt('pathStart') : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')}
           </Button>
           {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
             <summary className="cursor-pointer text-[13px] font-semibold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>

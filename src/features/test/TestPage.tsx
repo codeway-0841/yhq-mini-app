@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo, useSyncExternalStore } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Share2, Flag, BarChart2, Info, X, Volume2, ZoomIn, ChevronLeft, Timer, AlertTriangle, Sparkles, Check } from 'lucide-react'
+import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
@@ -11,14 +11,18 @@ import { questionKey } from '../../../shared/subjects'
 import { resolveExamMode } from '../../../shared/exam-presets'
 import { buildTopicBreakdown } from './topic-diagnosis'
 import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
-import { isResumable, remainingSeconds, clampIndex } from '../../shared/lib/test-session'
+import { isResumable, remainingSeconds, clampIndex, testDurationSeconds } from '../../shared/lib/test-session'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
-import { speak, stopSpeaking } from '../../shared/lib/speech'
-import { shareUrl } from '../../platform/telegram'
+import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
+import { Button } from '../../shared/components/ui/button'
+import { ConfirmDialog } from '../../shared/components/ui/dialog'
+import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../shared/components/ui/sheet'
+import TestExplanation from './components/TestExplanation'
+import TestHelperAvatar from './components/TestHelperAvatar'
 import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
@@ -44,6 +48,7 @@ export default function TestPage() {
   const toggleSaved    = useAppStore((s) => s.toggleSaved)
   const savedQuestions = useAppStore((s) => s.savedQuestions)
   const tt             = useT(settings.language)
+  const speaking = useSyncExternalStore(subscribeSpeaking, isSpeaking, () => false)
 
   const questions        = useQuestionsStore((s) => s.questions)
   const storeTopics      = useQuestionsStore((s) => s.topics)
@@ -57,6 +62,9 @@ export default function TestPage() {
 
   const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
+  // Capture before save effects run, so mount cannot overwrite saved answers before restore.
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- Re-capture only when a new route/subject starts.
+  const entrySession = useMemo(() => useTestSessionStore.getState().session, [location.key, subjectId])
 
   useEffect(() => {
     if (!questionsLoaded && !questionsLoading && !questionsError) {
@@ -79,6 +87,8 @@ export default function TestPage() {
   const [dbExplanation, setDbExplanation]     = useState<string | null>(null)
   const [loadingDbExplain, setLoadingDbExplain] = useState(false)
   const [showAiTutor, setShowAiTutor]   = useState(false)
+  const [showMenu, setShowMenu] = useState(false)
+  const [confirmFinish, setConfirmFinish] = useState(false)
 
   const handleToast = useCallback((msgKey: string) => {
     setToast(tt(msgKey as any))
@@ -156,6 +166,7 @@ export default function TestPage() {
     answerTimer,
     goTo,
     onToast: handleToast,
+    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || isFinished,
   })
 
   // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
@@ -183,6 +194,7 @@ export default function TestPage() {
   }, [q?.id])
 
   const handleOpenExplain = useCallback(() => {
+    cancelAutoNext()
     setShowExplain(true)
     if (q?.id && !dbExplanation) {
       setLoadingDbExplain(true)
@@ -193,7 +205,7 @@ export default function TestPage() {
         .catch(() => {})
         .finally(() => setLoadingDbExplain(false))
     }
-  }, [q?.id, dbExplanation, settings.language])
+  }, [q?.id, dbExplanation, settings.language, cancelAutoNext])
 
   const explanation = useMemo(() => {
     if (!q?.topicId) return null
@@ -216,31 +228,29 @@ export default function TestPage() {
   }, [q?.id, q?.topicId, storeTopics])
 
   const handleTimeUp = useCallback(() => {
+    if (isFinished) return
+    cancelAutoNext()
+    setConfirmFinish(false)
+    setShowMenu(false)
     markAllUnanswered()
     setIsFinished(true)
     setShowResults(true)
-  }, [markAllUnanswered])
+  }, [isFinished, cancelAutoNext, markAllUnanswered])
 
-  const totalSeconds =
-    examPreset            ? examPreset.durationMinutes * 60 :
-    mode === 'marathon'    ? 300 * 60 :
-    mode === 'exam'        ? 30 * 60 :
-    mode === 'mock'        ? 25 * 60 :
-    mode === 'random100'   ? 120 * 60 :
-    mode === 'random20'    ? 30 * 60 : 25 * 60
+  const totalSeconds = testDurationSeconds(mode)
 
   const initialSeconds = useMemo(() => {
-    const snap = useTestSessionStore.getState().session
+    const snap = entrySession
     return isResumable(snap, sessionKey, subjectId)
       ? remainingSeconds(snap.startedAt, totalSeconds)
       : totalSeconds
-  }, [location.key, sessionKey, subjectId, totalSeconds])
+  }, [entrySession, sessionKey, subjectId, totalSeconds])
 
   const timer = useTimer(handleTimeUp, location.key, initialSeconds)
 
   // Sessiyani restore qilish
   useEffect(() => {
-    const snap = useTestSessionStore.getState().session
+    const snap = entrySession
     const r = isResumable(snap, sessionKey, subjectId) ? snap : null
     const len = activeQuestions.length
     setCurrent(r ? clampIndex(r.current, len) : startIndex)
@@ -250,14 +260,15 @@ export default function TestPage() {
       r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null)
     )
     resetViolations(r?.cheatViolations ?? 0)
-    setShowResults(false)
-    setIsFinished(false)
+    const expired = !!r && remainingSeconds(r.startedAt, totalSeconds) === 0
+    setShowResults(expired)
+    setIsFinished(expired)
     setToast(null)
-    if (r && len > 0 && r.answers.some((a) => a !== null)) {
+    if (r && !expired && len > 0 && r.answers.some((a) => a !== null)) {
       setToast(tt('sessionResumed'))
       setTimeout(() => setToast(null), 3000)
     }
-  }, [location.key, startIndex, activeQuestions.length, sessionKey, subjectId])
+  }, [entrySession, location.key, startIndex, activeQuestions.length, sessionKey, subjectId, totalSeconds])
 
   const buildResults = useCallback((): QuestionResult[] =>
     activeQuestions.map((q, i) => ({
@@ -304,16 +315,14 @@ export default function TestPage() {
   }, [mode, wrongCount, isFinished])
 
   const handleYakunlash = useCallback(() => {
-    const unansweredIdx = answers.map((a, i) => (a === null || a === 'unanswered' ? i : -1)).filter((i) => i >= 0)
-    if (unansweredIdx.length > 0) {
-      setCurrent(unansweredIdx[0])
-      setToast(`${unansweredIdx.length} ${tt('unansweredCount')}`)
-      setTimeout(() => setToast(null), 3000)
-    } else {
-      setIsFinished(true)
+    cancelAutoNext()
+    setShowMenu(false)
+    if (isFinished) {
       setShowResults(true)
+    } else {
+      setConfirmFinish(true)
     }
-  }, [answers, tt])
+  }, [cancelAutoNext, isFinished])
 
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
@@ -324,7 +333,10 @@ export default function TestPage() {
   const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
 
-  useEffect(() => { stopSpeaking() }, [current])
+  useEffect(() => {
+    stopSpeaking()
+    return stopSpeaking
+  }, [q?.id, settings.language])
 
   const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -384,61 +396,24 @@ export default function TestPage() {
   return (
     <div className="flex flex-col bg-pcanvas">
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
-        <div className="relative flex items-center justify-between px-3 min-[380px]:px-4 py-2.5">
-          <div className="flex items-center gap-1 min-[380px]:gap-2">
-            <button onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}
-              className={`grid size-8 min-[380px]:size-9 place-items-center rounded-xl bg-psurface transition-colors duration-150 ease-out active:scale-[0.98] shadow-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${confirmExit ? 'text-pdanger' : 'text-pmuted'}`}>
-              {confirmExit
-                ? <X size={17} strokeWidth={1.75} />
-                : <ChevronLeft size={18} strokeWidth={1.75} />}
-            </button>
-            <button onClick={() => toggleSaved(q.id)}
-              aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')}
-              className={`bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs ${isSaved ? 'text-pwarning' : ''}`}>
-              <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
-              <span className="hidden sm:inline">{tt('saveBtn')}</span>
-            </button>
-            <button
-              onClick={() => shareUrl('https://t.me/kiwi_uz_bot', 'YHQ imtihoniga tayyorlaning!')}
-              aria-label={tt('shareApp')}
-              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 flex items-center gap-1.5 px-2.5 min-[380px]:px-3 py-2 rounded-xl text-[13px] font-semibold shadow-xs">
-              <Share2 size={16} />
-              <span className="hidden sm:inline">{tt('shareApp')}</span>
-            </button>
-          </div>
-
-          <div className="flex min-w-0 items-center gap-1.5 rounded-xl bg-psurface px-2.5 min-[380px]:px-3 py-1.5 sm:absolute sm:left-1/2 sm:-translate-x-1/2 shadow-xs" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
-            <Timer size={14} strokeWidth={1.75} className="flex-shrink-0 text-psubtle" aria-hidden="true" />
-            <span className="whitespace-nowrap text-sm font-semibold tabular-nums text-pfg">{timer}</span>
-          </div>
-
-          {mode === 'mock' && (
-            <div className={`flex items-center gap-1 px-3 py-1.5 rounded-xl shadow-xs ${
-              wrongCount > 0 ? 'bg-pdanger/10 text-pdanger' : 'bg-psurface text-psubtle'
-            }`}>
-              <X size={12} strokeWidth={2} aria-hidden="true" />
-              <span className="text-[12px] font-semibold tabular-nums">{wrongCount}/2</span>
+        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2">
+          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}>
+            {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
+          </Button>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 text-pfg" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+              <Timer size={16} className="text-pmuted" aria-hidden="true" />
+              <span className="text-base font-semibold tabular-nums">{timer}</span>
             </div>
-          )}
-
-          <div className="flex items-center gap-1 min-[380px]:gap-2">
-            {isFinished && (
-              <button onClick={() => setShowResults(true)} aria-label="Natijalar"
-                className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-                <BarChart2 size={17} />
-              </button>
+            {mode === 'mock' && (
+              <span className={`text-xs font-medium tabular-nums ${wrongCount > 0 ? 'text-pdanger' : 'text-pmuted'}`}>
+                {wrongCount}/2 {tt('testErrors')}
+              </span>
             )}
-            <button onClick={() => setShowSettings(true)} aria-label="Sozlamalar"
-              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-              <SettingsIcon className="size-[17px]" />
-            </button>
-            <button
-              onClick={() => { setIsFinished(true); setShowResults(true) }}
-              aria-label="Testni yakunlash"
-              className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 size-8 min-[380px]:size-9 rounded-xl flex items-center justify-center shadow-xs">
-              <Flag size={16} />
-            </button>
           </div>
+          <Button variant="secondary" size="icon" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu}>
+            <MoreHorizontal />
+          </Button>
         </div>
       </div>
 
@@ -460,49 +435,38 @@ export default function TestPage() {
 
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
-      <div className="flex-1 overflow-y-auto px-4 pb-24">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-10 lg:max-w-6xl lg:mx-auto lg:pt-6">
+      <div className="flex-1 px-4 pb-24">
+        <div className={`mx-auto pt-3 ${q.image ? 'max-w-6xl lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-4' : 'max-w-2xl'}`}>
           <div className="lg:col-start-1 lg:row-start-1">
-            <div className="flex items-center justify-center lg:justify-start gap-2 mb-2">
-              <p className="text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
+            <div className="flex items-center gap-2 mb-2">
+              <p className="min-w-0 flex-1 text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
                 {current + 1} / {activeQuestions.length}
                 {topicLabel ? ` · ${topicLabel}` : ''}
               </p>
-              <button
+              <Button variant="secondary" size="icon"
                 onClick={(e) => {
                   e.stopPropagation()
-                  speak(q.text, settings?.language ?? 'uz')
+                  if (isSpeaking()) stopSpeaking()
+                  else speak(q.text, settings.language)
                   playSound('click')
                 }}
-                aria-label={settings?.language === 'ru' ? 'Озвучить вопрос' : "Savolni o'qib berish"}
-                className="grid size-7 place-items-center rounded-full bg-psurface text-pmuted transition-colors duration-150 ease-out hover:text-pfg active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary shadow-2xs"
+                aria-label={tt(speaking ? 'stopReading' : 'readQuestion')}
+                aria-pressed={speaking}
+                className={`flex-none ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
               >
-                <Volume2 size={13} strokeWidth={1.75} />
-              </button>
+                {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={16} strokeWidth={1.75} />}
+              </Button>
+              <Button variant="ghost" size="icon" onClick={() => toggleSaved(q.id)} aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')} aria-pressed={isSaved}>
+                <Bookmark fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
+              </Button>
             </div>
-            <p className="mb-4 text-center font-display font-semibold leading-snug tracking-[-0.015em] text-pfg lg:text-left text-[18px]">
+            <p className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px]">
               {q.text}
             </p>
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-4">
-              {selected && (
-                <button onClick={handleOpenExplain}
-                  aria-label={tt('whyThis')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-pwarning transition-transform duration-150 ease-out active:scale-[0.98] shadow-xs">
-                  <Info size={14} aria-hidden="true" />
-                  {tt('whyThis')}
-                </button>
-              )}
-              {selected && (
-                <button onClick={() => setShowAiTutor(true)}
-                  aria-label={tt('askAiExplain')}
-                  className="flex h-[34px] items-center gap-1.5 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] px-3 text-[12.5px] font-semibold text-ppurple transition-transform duration-150 ease-out active:scale-[0.98] shadow-xs">
-                  <Sparkles size={13} strokeWidth={1.75} aria-hidden="true" /> {tt('askAiExplain')}
-                </button>
-              )}
-            </div>
+
           </div>
           {q.image && (
-            <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
+            <div className="min-w-0 self-start lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
               onClick={() => {
                 setZoomed(true)
                 haptics.impact('light')
@@ -512,7 +476,7 @@ export default function TestPage() {
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
-                className="max-w-full max-h-[55vh] lg:max-h-[70vh] w-auto h-auto object-contain min-w-0 min-h-0" />
+                className="block h-auto w-auto max-w-full max-h-[min(30svh,240px)] lg:max-h-[min(40svh,320px)] shrink-0 object-contain" />
               <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-xs shadow-xs transition-colors group-hover:bg-black/85">
                 <ZoomIn size={11} strokeWidth={1.75} />
                 <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
@@ -528,15 +492,48 @@ export default function TestPage() {
         </div>
       </div>
 
-      {(isLast || allAnswered) && (
-        <div className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40">
-          <button onClick={handleYakunlash}
-            aria-label={tt('finish')}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 flex h-11 items-center gap-2 rounded-full pl-4 pr-5 text-[13px] font-semibold shadow-lg">
-            <Check size={15} strokeWidth={2} aria-hidden="true" /> {tt('finish')}
-          </button>
+      {(selected || isLast || allAnswered) && (
+        <div className="pointer-events-none fixed inset-x-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 mx-auto flex max-w-2xl items-end justify-between gap-4">
+          <div>
+            {(isLast || allAnswered) && <Button onClick={handleYakunlash} className="pointer-events-auto shadow-lg">
+              <Check size={15} aria-hidden="true" />{tt('finish')}
+            </Button>}
+          </div>
+          {selected && <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
+            aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
+            className="pointer-events-auto relative h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
+            <TestHelperAvatar />
+            <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
+          </Button>}
         </div>
       )}
+
+      {showExplain && (
+        <TestExplanation loading={loadingDbExplain} text={dbExplanation} lesson={explanation?.lesson}
+          language={settings.language} onClose={() => setShowExplain(false)}
+          onOpenAi={() => { cancelAutoNext(); setShowExplain(false); setShowAiTutor(true) }}
+          onOpenLesson={explanation ? () => navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } }) : undefined} />
+      )}
+
+      <Sheet open={showMenu} onClose={() => setShowMenu(false)}>
+        <SheetHeader><SheetTitle>{tt('testMenu')}</SheetTitle></SheetHeader>
+        <SheetClose onClose={() => setShowMenu(false)} label={tt('pathClose')} />
+        <SheetBody className="space-y-2">
+          <Button variant="secondary" block onClick={() => { setShowMenu(false); setShowSettings(true) }}>
+            <SettingsIcon className="size-[18px]" />{tt('settingsTitle')}
+          </Button>
+          <Button variant="secondary" block onClick={handleYakunlash}>
+            {isFinished ? <BarChart2 /> : <Flag />}{tt(isFinished ? 'results' : 'finish')}
+          </Button>
+        </SheetBody>
+      </Sheet>
+      <ConfirmDialog open={confirmFinish && !showResults} title={tt('testFinishTitle')}
+        description={answers.some((a) => a === null || a === 'unanswered')
+          ? tt('testFinishUnanswered').replace('{count}', String(answers.filter((a) => a === null || a === 'unanswered').length))
+          : tt('testFinishReady')}
+        confirmLabel={tt('finish')} cancelLabel={tt('testKeepSolving')}
+        onClose={() => setConfirmFinish(false)}
+        onConfirm={() => { cancelAutoNext(); setConfirmFinish(false); setIsFinished(true); setShowResults(true) }} />
 
       {/* Composition Modals Container */}
       <TestModals
@@ -561,17 +558,6 @@ export default function TestPage() {
 
         activeStrike={activeStrike}
         onDismissStrike={dismissStrike}
-
-        showExplain={showExplain}
-        onCloseExplain={() => setShowExplain(false)}
-        loadingDbExplain={loadingDbExplain}
-        dbExplanation={dbExplanation}
-        lessonExplanation={explanation}
-        onOpenModuleLesson={(modId) => {
-          navigate('/darslik', { state: { moduleId: modId, lessonIdx: 0 } })
-        }}
-        tt={tt}
-        settings={settings}
 
         showAiTutor={showAiTutor}
         onCloseAiTutor={() => setShowAiTutor(false)}

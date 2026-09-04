@@ -1,5 +1,5 @@
 ﻿import { useEffect, lazy, Suspense, useState, type ReactNode } from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import PageLoader from './shared/components/PageLoader'
 import SplashScreen from './features/onboarding/SplashScreen'
 import { t } from './shared/i18n'
@@ -51,7 +51,6 @@ const onboardingChunk      = () => import('./features/onboarding/Onboarding')
 const loginChunk           = () => import('./features/auth/LoginPage')
 const verifyEmailChunk     = () => import('./features/auth/pages/VerifyEmailPage')
 const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPage')
-const yimExamChunk         = () => import('./features/test/YimExamPage')
 const modesChunk           = () => import('./features/dashboard/ModesPage')
 
 const TestPage        = lazy(testPageChunk)
@@ -82,7 +81,6 @@ const Onboarding      = lazy(onboardingChunk)
 const LoginPage       = lazy(loginChunk)
 const VerifyEmailPage = lazy(verifyEmailChunk)
 const ResetPasswordPage = lazy(resetPasswordChunk)
-const YimExamPage      = lazy(yimExamChunk)
 const ModesPage        = lazy(modesChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
@@ -98,7 +96,6 @@ const routeChunkPrefetchers = [
   aiTestHubChunk, aiTestSessionChunk, modesChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
-  yimExamChunk,
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
@@ -283,7 +280,7 @@ export default function App() {
         <Routes>
           <Route path="/"           element={<Dashboard />} />
           <Route path="/testlar"    element={<TestlarPage />} />
-          <Route path="/test/yim"   element={<YimExamPage />} />
+          <Route path="/test/yim"   element={<Navigate to="/testlar" replace />} />
           <Route path="/test/:id"   element={<TestPage />} />
           <Route path="/darslik"    element={<Darslik />} />
           <Route path="/biletlar"   element={<Biletlar />} />

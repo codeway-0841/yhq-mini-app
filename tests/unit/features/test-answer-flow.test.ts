@@ -21,6 +21,40 @@ describe('useTestAnswerFlow (Production Hook Tests)', () => {
     vi.useRealTimers()
   })
 
+  it('cancels an already scheduled auto-next when the explanation opens', async () => {
+    const goTo = vi.fn()
+    const { result, rerender } = renderHook(({ paused }) => useTestAnswerFlow({
+      activeQuestions: [Q(101), Q(102)], current: 0,
+      settings: { autoNextCorrect: true } as ApiSettings,
+      submitAnswer: vi.fn().mockResolvedValue({ correct: true, correctAnswer: 'opt-A' }),
+      answerTimer: { elapsed: () => 100 }, goTo, onToast: vi.fn(), pauseAutoNext: paused,
+    }), { initialProps: { paused: false } })
+    await act(async () => result.current.handleSelect('opt-A'))
+    rerender({ paused: true })
+    act(() => vi.advanceTimersByTime(2000))
+    expect(goTo).not.toHaveBeenCalled()
+    rerender({ paused: false })
+    act(() => vi.advanceTimersByTime(2000))
+    expect(goTo).not.toHaveBeenCalled()
+  })
+
+  it.each([true, false])('does not schedule late %s online/offline answers while a panel is open', async (online) => {
+    const goTo = vi.fn()
+    let resolve!: (value: any) => void
+    const submitAnswer = vi.fn(() => new Promise<any>((done) => { resolve = done }))
+    const { result, rerender } = renderHook(({ paused }) => useTestAnswerFlow({
+      activeQuestions: [Q(101), Q(102)], current: 0,
+      settings: { autoNextCorrect: true } as ApiSettings,
+      submitAnswer, answerTimer: { elapsed: () => 100 }, goTo, onToast: vi.fn(), pauseAutoNext: paused,
+    }), { initialProps: { paused: false } })
+    act(() => result.current.handleSelect('opt-A'))
+    rerender({ paused: true })
+    await act(async () => resolve(online ? { correct: true, correctAnswer: 'opt-A' } : null))
+    act(() => vi.advanceTimersByTime(2000))
+    expect(goTo).not.toHaveBeenCalled()
+    expect(result.current.answers[0]).toBe(online ? 'correct' : 'pending')
+  })
+
   it('handles correct answer and triggers 800ms auto-next when enabled', async () => {
     const activeQuestions = [Q(101), Q(102)]
     const mockSubmit = vi.fn().mockResolvedValue({

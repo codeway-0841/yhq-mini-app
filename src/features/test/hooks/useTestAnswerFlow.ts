@@ -13,6 +13,7 @@ interface UseTestAnswerFlowOptions {
   answerTimer:     { elapsed: () => number }
   goTo:            (index: number) => void
   onToast:         (msg: string) => void
+  pauseAutoNext?:  boolean
 }
 
 export function useTestAnswerFlow({
@@ -23,6 +24,7 @@ export function useTestAnswerFlow({
   answerTimer,
   goTo,
   onToast,
+  pauseAutoNext = false,
 }: UseTestAnswerFlowOptions) {
   const [answers, setAnswers]                 = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
   const [selectedHistory, setSelectedHistory] = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
@@ -32,6 +34,7 @@ export function useTestAnswerFlow({
 
   const autoNextTimerRef = useRef<number | null>(null)
   const correctStreakRef = useRef(0)
+  const pausedRef = useRef(pauseAutoNext)
 
   const cancelAutoNext = useCallback(() => {
     if (autoNextTimerRef.current !== null) {
@@ -39,6 +42,11 @@ export function useTestAnswerFlow({
       autoNextTimerRef.current = null
     }
   }, [])
+
+  useEffect(() => {
+    pausedRef.current = pauseAutoNext
+    if (pauseAutoNext) cancelAutoNext()
+  }, [pauseAutoNext, cancelAutoNext])
 
   // Current savol o'zgarganda yoki unmount bo'lganda avtomatik o'tish taymerini tozalash (unmount-safe)
   useEffect(() => cancelAutoNext, [current, cancelAutoNext])
@@ -91,7 +99,7 @@ export function useTestAnswerFlow({
         // Offline — pending holat va outbox toasti
         setAnswers((prev) => { const next = [...prev]; next[idx] = 'pending'; return next })
         onToast('offlineQueued')
-        if ((settings?.autoNextCorrect || settings?.autoNextWrong) && idx < activeQuestions.length - 1) {
+        if (!pausedRef.current && (settings?.autoNextCorrect || settings?.autoNextWrong) && idx < activeQuestions.length - 1) {
           cancelAutoNext()
           autoNextTimerRef.current = window.setTimeout(() => {
             autoNextTimerRef.current = null
@@ -122,7 +130,7 @@ export function useTestAnswerFlow({
         ? (settings?.autoNextCorrect ? 800 : null)
         : (settings?.autoNextWrong ? 1200 : null)
 
-      if (delay !== null) {
+      if (delay !== null && !pausedRef.current) {
         cancelAutoNext()
         autoNextTimerRef.current = window.setTimeout(() => {
           autoNextTimerRef.current = null
