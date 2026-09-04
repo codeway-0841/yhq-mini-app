@@ -34,6 +34,17 @@ beforeEach(() => {
 })
 
 describe('learning guide', () => {
+  it('orders shortcuts, modes and continue block for the dashboard', () => {
+    guide()
+    const buttons = screen.getAllByRole('button')
+    expect(buttons[0]).toHaveTextContent('O‘rganish')
+    expect(buttons[1]).toHaveTextContent('Mashq qilish')
+    expect(buttons[2]).toHaveTextContent('Biletlar')
+    expect(buttons[3]).toHaveTextContent('Duel')
+    expect(buttons[4]).toHaveTextContent('Barcha rejimlar')
+    expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
+  })
+
   it('offers results for an expired session while preserving its route and answers', () => {
     const expired = { ...snapshot, startedAt: Date.now() - 26 * 60 * 1000 }
     useTestSessionStore.getState().save(expired)
@@ -54,6 +65,7 @@ describe('learning guide', () => {
     expect(screen.getByText('Chorrahalar')).toBeInTheDocument()
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path: '/darslik', state: {moduleId: 1}})
   })
+
   it('explains and opens the current-subject mistake recommendation', () => {
     useSubjectStore.getState().setSubject('rustili')
     guide(7)
@@ -61,6 +73,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Xatolarni takrorlash' }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/xatolar')
   })
+
   it('resumes the original session key even when the stored questions were shuffled', () => {
     useTestSessionStore.getState().save(snapshot)
     guide()
@@ -69,6 +82,7 @@ describe('learning guide', () => {
     expect(target.path).toBe('/test/1')
     expect(makeSessionKey(target.state.mode, target.state.questionIds)).toBe(snapshot.key)
   })
+
   it('shows only one primary start action when a test and mistakes both exist', () => {
     useTestSessionStore.getState().save(snapshot)
     guide(7)
@@ -76,6 +90,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', { name: /Davom/ }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/test/1')
   })
+
   it('opens lesson path without bypassing its lesson access checks', () => {
     useLessonsStore.setState({ byUser: { learner: { 1: [0] } } })
     guide()
@@ -83,6 +98,7 @@ describe('learning guide', () => {
     const target = JSON.parse(screen.getByTestId('destination').textContent!)
     expect(target).toEqual({ path: '/darslik', state: { moduleId: 1 } })
   })
+
   it('does not suggest YHQ lesson progress for another subject', () => {
     useSubjectStore.getState().setSubject('rustili')
     useLessonsStore.setState({ byUser: { learner: { 1: [0] } } })
@@ -91,6 +107,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', { name: /O‘rganish/ }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/mavzular')
   })
+
   it('starts only questions belonging to the displayed subject topic', () => {
     useSubjectStore.getState().setSubject('rustili')
     useQuestionsStore.setState({loaded: true, subjectId: 'rustili', topics: [
@@ -108,6 +125,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', {name: 'Morfologiya'}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[202],title:'Morfologiya'}})
   })
+
   it('never displays cached topics from another subject', () => {
     useSubjectStore.getState().setSubject('rustili')
     useQuestionsStore.setState({loaded: true, subjectId: 'yhq', topics: [{id: 1, nameUz: 'Old topic', nameRu: 'Old topic', slug: 'old'}], questions: [{id: 1, topicId: 1, text: 'A', image: null, options: []}]})
@@ -115,6 +133,7 @@ describe('learning guide', () => {
     expect(screen.queryByText('Old topic')).not.toBeInTheDocument()
     expect(screen.queryByRole('button', {name: 'Boshlash'})).not.toBeInTheDocument()
   })
+
   function twoTopics() {
     useSubjectStore.getState().setSubject('rustili')
     useQuestionsStore.setState({loaded: true, subjectId: 'rustili', topics: [
@@ -126,6 +145,7 @@ describe('learning guide', () => {
       {id: 202, topicId: 20, text: 'C', image: null, options: []},
     ]})
   }
+
   it('advances only after all topic questions have been answered and survives remount', () => {
     twoTopics()
     appState.solvedQuestions = ['rustili:101']
@@ -139,6 +159,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', {name: /Davom/}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[202],title:'Morfologiya'}})
   })
+
   it('does not count answers from a different subject', () => {
     twoTopics()
     appState.solvedQuestions = ['yhq:101', 'yhq:102']
@@ -146,6 +167,7 @@ describe('learning guide', () => {
     expect(screen.getByRole('heading', {name: 'Fonetika'})).toBeInTheDocument()
     expect(screen.queryByText(/Tugallangan mavzular/)).not.toBeInTheDocument()
   })
+
   it('shows a completed state rather than silently restarting the course', () => {
     twoTopics()
     appState.solvedQuestions = ['rustili:101', 'rustili:102', 'rustili:202']
@@ -155,6 +177,7 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', {name: 'Qayta takrorlash'}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!).state.questionIds).toEqual([101,102])
   })
+
   it('moves to the next YHQ module and preserves lesson access checks', () => {
     useLessonsStore.setState({byUser: {learner: {1: [0,1,2,3,4,5,6]}}})
     guide()
@@ -162,12 +185,20 @@ describe('learning guide', () => {
     fireEvent.click(screen.getByRole('button', {name: /Davom/}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/darslik',state:{moduleId:2}})
   })
+
   it('keeps every extra mode reachable', () => {
     guide()
     fireEvent.click(screen.getByRole('button', { name: 'Barcha rejimlar' }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/rejimlar')
   })
+
+  it.each([['Biletlar', '/biletlar'], ['Duel', '/octagon']])('opens %s from the dashboard', (label, path) => {
+    guide()
+    fireEvent.click(screen.getByRole('button', { name: new RegExp(label) }))
+    expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe(path)
+  })
 })
+
 describe('resume eligibility', () => {
   it('excludes finished, empty, mismatched-subject and invalid-key snapshots', () => {
     expect(resumeRouteState({ ...snapshot, finished: true }, 'yhq')).toBeNull()

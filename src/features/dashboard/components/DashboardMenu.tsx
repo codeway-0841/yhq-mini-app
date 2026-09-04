@@ -69,10 +69,10 @@ export default function DashboardMenu() {
   // Portal keeps the fixed controls outside route transitions and their transforms.
   return createPortal(<>
     <div style={{ visibility: panel || modalCount > 0 ? 'hidden' : undefined }} className="dashboard-menu-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-2xl justify-end px-4">
-      <button type="button" aria-haspopup="dialog" aria-expanded={panel === 'menu'}
+      <button type="button" aria-label={menuLabel} title={menuLabel} aria-haspopup="dialog" aria-expanded={panel === 'menu'}
         onClick={() => setPanel('menu')}
-        className="pointer-events-auto flex h-14 items-center gap-2.5 rounded-full bg-pprimary px-5 text-ponprimary shadow-lg transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-4 focus-visible:ring-offset-pcanvas">
-        <LayoutGrid size={22} aria-hidden="true" /><span className="text-sm font-semibold">{menuLabel}</span>
+        className="pointer-events-auto grid size-14 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-4 focus-visible:ring-offset-pcanvas">
+        <LayoutGrid size={22} aria-hidden="true" />
       </button>
     </div>
     {panel === 'menu' && <DialogOverlay onClose={close} labelId={titleId} backdropClassName="bg-black/50">

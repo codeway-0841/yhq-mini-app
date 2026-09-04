@@ -80,7 +80,7 @@ export default function Dashboard() {
   const goProfile = useCallback(() => navigate('/profil'), [navigate])
 
   return (
-    <div className="dashboard-page bg-pcanvas pb-24">
+    <div className="dashboard-page bg-pcanvas pb-[calc(6rem+var(--safe-bottom,0px))]">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
@@ -112,9 +112,6 @@ export default function Dashboard() {
             </Alert>
           )}
 
-          <LearningGuide mistakesCount={mistakesCount} />
-
-          <h2 className="mx-4 mb-3 font-display text-[18px] font-bold text-pfg">{tt('guideYourProgress')}</h2>
           {/* 1. Fan bo‘yicha umumiy progress */}
           <ProgressCard
             totalWrong={totalWrong}
@@ -124,6 +121,8 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
+
+          <LearningGuide mistakesCount={mistakesCount} />
 
           <details className="mb-5 group">
             <summary className="mx-4 mb-3 cursor-pointer rounded-xl px-1 py-3 text-[14px] font-semibold text-pmuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">{tt('guideMotivation')}</summary>

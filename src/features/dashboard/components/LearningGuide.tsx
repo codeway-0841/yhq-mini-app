@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, Play, ChevronRight, Circle, CheckCircle2 } from 'lucide-react'
+import { BookOpen, Play, Ticket, Swords, ChevronRight, Circle, CheckCircle2 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -74,6 +74,31 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
 
   return (
     <div className="home-learning-guide px-4 pb-3">
+      <div className="grid grid-cols-2 gap-3">
+        <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
+          <BookOpen size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
+        </button>
+        <button onClick={() => navigate('/testlar')} className={`home-learning-shortcut home-learning-shortcut-primary ${interactive}`}>
+          <Play size={23} strokeWidth={1.75} />
+          <span className="mt-2 block text-[16px] font-bold">{tt('dashboardPractice')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed">{tt('guidePracticeShort')}</span>
+        </button>
+        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
+          <Ticket size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('tickets')}</span>
+        </button>
+        <button type="button" onClick={() => navigate('/octagon')} className={`home-learning-shortcut ${interactive}`}>
+          <Swords size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('duelTitle')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('duelDesc')}</span>
+        </button>
+      </div>
+      <button onClick={() => navigate('/rejimlar')} className={`mt-2 flex min-h-11 w-full items-center justify-center gap-1 rounded-xl text-[13px] font-semibold text-pmuted ${interactive}`}>
+        {tt('guideAllModes')} <ChevronRight size={15} />
+      </button>
+
       <section className="home-learning-hero">
         <div className="home-learning-step">
           <div className="home-learning-path-row">
@@ -102,22 +127,6 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           </details>}
         </div>
       </section>
-
-      <div className="mt-4 grid grid-cols-2 gap-3">
-        <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
-          <BookOpen size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
-        </button>
-        <button onClick={() => navigate('/testlar')} className={`home-learning-shortcut ${interactive}`}>
-          <Play size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardPractice')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guidePracticeShort')}</span>
-        </button>
-      </div>
-      <button onClick={() => navigate('/rejimlar')} className={`mt-2 flex min-h-11 w-full items-center justify-center gap-1 rounded-xl text-[13px] font-semibold text-pmuted ${interactive}`}>
-        {tt('guideAllModes')} <ChevronRight size={15} />
-      </button>
     </div>
   )
 }

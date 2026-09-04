@@ -49,7 +49,7 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex items-center gap-2 rounded-xl bg-black/25 px-2.5 py-2 text-left shadow-2xs',
+        'flex min-w-0 items-center gap-1.5 rounded-xl bg-black/25 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
         'transition-all duration-150 ease-out active:scale-[0.97]',
         'hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
@@ -126,7 +126,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         <p className="mt-3 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
 
         {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
-        <div className="mt-4 grid grid-cols-1 gap-2 min-[400px]:grid-cols-3">
+        <div className="mt-3 grid grid-cols-3 gap-2">
           {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
           <StatButton
             icon={Flame}
