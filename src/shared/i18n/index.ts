@@ -1,6 +1,11 @@
 export type Lang = 'uz' | 'ru'
 
 const UZ = {
+  pathPremiumOpen: 'Premium bilan ochish', pathPremiumHint: 'Birinchi dars bepul. Qolgan darslar Premium bilan ochiladi.',
+  pathLevelCheck: 'Modul sinovi', pathCheckHint: 'Shu moduldagi bilimlaringizni sinab ko‘ring.',
+  pathUnread: 'Hali o‘qilmagan', pathStart: 'Boshlash', pathJumpAhead: 'Shu darsga o‘tish',
+  pathCheckStart: 'Sinovni boshlash',
+  pathLaunching: 'Dars ochilmoqda',
   pathBravo: 'Barakalla!', pathCourseDone: 'Barcha modullar tugallandi!',
   pathCourseDoneHint: 'Darslikni to‘liq o‘qib chiqdingiz. Endi mashqlar bilan bilimlaringizni mustahkamlang.',
   pathMilestoneHint: 'Yana bir bosqich ortda qoldi. Bilimingizga yangi bilim qo‘shildi!',
@@ -519,6 +524,11 @@ const UZ = {
 type Keys = keyof typeof UZ
 
 const RU: Record<Keys, string> = {
+  pathPremiumOpen: 'Открыть с Premium', pathPremiumHint: 'Первый урок бесплатный. Остальные уроки доступны с Premium.',
+  pathLevelCheck: 'Проверка модуля', pathCheckHint: 'Проверьте знания по этому модулю.',
+  pathUnread: 'Ещё не прочитано', pathStart: 'Начать', pathJumpAhead: 'Перейти к уроку',
+  pathCheckStart: 'Начать проверку',
+  pathLaunching: 'Открываем урок',
   pathBravo: 'Отличная работа!', pathCourseDone: 'Все модули пройдены!',
   pathCourseDoneHint: 'Вы прочитали весь учебник. Закрепите знания с помощью практики.',
   pathMilestoneHint: 'Ещё один этап позади. Ваши знания стали крепче!',

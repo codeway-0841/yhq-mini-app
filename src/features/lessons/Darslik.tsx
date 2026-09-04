@@ -13,7 +13,11 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../platform/telegram'
-import LearningPath from './LearningPath'
+import LearningPath, { type PathSelection } from './LearningPath'
+import LessonPreview from './LessonPreview'
+import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
+import { usePathFocus } from './usePathFocus'
+import { canReadLesson } from './lesson-access'
 import ModuleComplete, { type CompletedModule } from './ModuleComplete'
 import { useT } from '../../shared/i18n'
 import { Button } from '../../shared/components/ui/button'
@@ -29,22 +33,30 @@ interface VideoInfo {
 }
 
 // ── Lesson screen (telefon ilovasidagi dizayn kabi) ─────────────────────────
-function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
+function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }: {
   mod: Mod
   lessonIdx: number
   onClose: () => void
   onDone: (idx: number) => void
   onPractice: (idx: number) => void
+  onPremium: () => void
 }) {
   const [idx, setIdx] = useState(lessonIdx)
   const [isPlaying, setIsPlaying] = useState(false)
   const settings = useAppStore((s) => s.settings)
+  const isPremium = useAppStore((s) => s.tariff === 'premium')
   const list = lessons[mod.id] ?? []
   const lesson: Lesson | undefined = list[idx]
   const ru = settings.language === 'ru'
   const videoInfo: VideoInfo | undefined = (videosData as Record<string, VideoInfo | undefined>)[`${mod.id}:${idx}`]
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
+  const onPremiumRef = useRef(onPremium)
+  onPremiumRef.current = onPremium
+  const allowed = canReadLesson(isPremium, mod.id, idx)
+  useEffect(() => {
+    if (!allowed) onPremiumRef.current()
+  }, [allowed])
 
   // Android hardware/sensor orqaga surish va Telegram BackButton orqali darslikka qaytish
   useEffect(() => {
@@ -61,16 +73,19 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice }: {
     setIsPlaying(false)
   }, [idx])
 
-  if (!lesson) return null
+  if (!lesson || !allowed) return null
 
   const advance = (i: number) => {
     onDone(i)
-    if (i < list.length - 1) setIdx(i + 1)
+    if (i < list.length - 1) {
+      if (!canReadLesson(isPremium, mod.id, i + 1)) { onPremium(); return }
+      setIdx(i + 1)
+    }
     else onClose()
   }
 
   return (
-    <div className="fixed inset-0 z-50 bg-pcanvas flex flex-col">
+    <div className="lesson-reader fixed inset-0 z-50 bg-pcanvas flex flex-col">
       {/* Header — fixed inset-0 sahifa (body padding tegmaydi) → .safe-top SHART */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-pline safe-top">
         <button onClick={onClose} aria-label={ru ? 'Закрыть' : 'Yopish'}
@@ -193,6 +208,7 @@ export default function Darslik() {
   const navigate = useNavigate()
   const location = useLocation()
   const settings = useAppStore((s) => s.settings)
+  const isPremium = useAppStore((s) => s.tariff === 'premium')
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
   const questions = useQuestionsStore((s) => s.questions)
@@ -213,6 +229,12 @@ export default function Darslik() {
       ?? modules[0].id
   })
   const [completion, setCompletion] = useState<CompletedModule | null>(null)
+  const [selected, setSelected] = useState<PathSelection | null>(null)
+  const [collapsed, setCollapsed] = useState(false)
+  const [launch, setLaunch] = useState<{ mod: Mod; idx: number; origin: LaunchOrigin } | null>(null)
+  const [jumpDirection, setJumpDirection] = useState<'up' | 'down'>('down')
+  const selectedTrigger = useRef<HTMLButtonElement | null>(null)
+  const selectedLesson = selected ? lessons[selected.moduleId]?.[selected.idx] : undefined
   const headingRef = useRef<HTMLHeadingElement>(null)
   const rootRef = useRef<HTMLDivElement>(null)
   const headerRef = useRef<HTMLElement>(null)
@@ -247,15 +269,41 @@ export default function Darslik() {
   }, [completion, moduleId, reader, settings.noAnimation])
   const tt = useT(settings.language)
   const currentModule = modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))
+  const selectedMod = modules.find((m) => m.id === selected?.moduleId)
+  const SelectedIcon = getModuleIcon(selected?.moduleId ?? currentModule?.id ?? 1)
+  const isSelectedCurrent = !!selected && selected.moduleId === currentModule?.id
+    && selected.idx === (lessons[selected.moduleId] ?? []).findIndex((_, i) => !doneFor[selected.moduleId]?.includes(i))
+  const selectPathNode = useCallback((selection: PathSelection, trigger: HTMLButtonElement) => {
+    selectedTrigger.current = trigger
+    const current = rootRef.current?.querySelector('[aria-current="step"]')
+    if (current) setJumpDirection(current.getBoundingClientRect().top > trigger.getBoundingClientRect().top ? 'down' : 'up')
+    setSelected(previous => previous?.moduleId === selection.moduleId && previous.idx === selection.idx && previous.check === selection.check ? previous : selection)
+  }, [])
+  usePathFocus(rootRef, !!reader || !!completion || !!launch, selectPathNode)
   const [toast, setToast] = useState<string | null>(null)
 
   const ru = settings.language === 'ru'
   const totalDone = modules.reduce((sum, m) => sum + (lessons[m.id] ?? []).filter((_, i) => doneFor[m.id]?.includes(i)).length, 0)
   const markDone = useLessonsStore((s) => s.markDone)
+  const jumpToCurrent = () => {
+    if (!currentModule) return
+    const node = moduleRefs.current.get(currentModule.id)?.querySelector<HTMLButtonElement>('[aria-current="step"]')
+    if (!node) return
+    setCollapsed(false)
+    selectPathNode({ moduleId: currentModule.id, idx: Number(node.dataset.lesson), check: false }, node)
+    node.scrollIntoView({ behavior: settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center' })
+    node.focus({ preventScroll: true })
+  }
 
   const showToast = (msg: string) => { setToast(msg); setTimeout(() => setToast(null), 3000) }
+  const requestPremium = () => {
+    setReader(null)
+    setLaunch(null)
+    navigate('/premium')
+  }
 
   const practiceLesson = (mod: Mod, lessonIdx: number) => {
+    if (!canReadLesson(isPremium, mod.id, lessonIdx)) { requestPremium(); return }
     const map = lessonMap as Record<string, number[]>
     const lessonQuestionIds = map[`${mod.id}:${lessonIdx}`]
     if (lessonQuestionIds && lessonQuestionIds.length > 0) {
@@ -269,6 +317,13 @@ export default function Darslik() {
   }
 
   const practiceModule = (mod: Mod) => {
+    if (!isPremium) { requestPremium(); return }
+    const map = lessonMap as Record<string, number[]>
+    const curatedIds = [...new Set((lessons[mod.id] ?? []).flatMap((_, idx) => map[`${mod.id}:${idx}`] ?? []))]
+    if (curatedIds.length) {
+      navigate('/test/1', { state: { questionIds: curatedIds, title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}` } })
+      return
+    }
     const slugs = MODULE_TOPICS[mod.id] ?? []
     const topicIds = topics.filter((t) => slugs.includes(t.slug)).map((t) => t.id)
     const ids = questions.filter((q) => q.topicId != null && topicIds.includes(q.topicId)).map((q) => q.id)
@@ -280,13 +335,14 @@ export default function Darslik() {
   }
 
   return (
-    <div ref={rootRef} className="lesson-course px-4 pb-4">
+    <div ref={rootRef} className="lesson-course px-4 pb-4" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
       <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
+          <span className="lesson-toolbar-icon" aria-hidden="true"><SelectedIcon size={20} /></span>
           <h1 ref={headingRef} tabIndex={-1} className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
             {ru ? 'Учебник' : 'Darslik'}
           </h1>
@@ -304,7 +360,7 @@ export default function Darslik() {
         const title = ru ? item.titleRu : item.title
         return <section key={item.id} id={`lesson-module-${item.id}`} aria-labelledby={`lesson-module-title-${item.id}`}
           ref={(node) => { if (node) moduleRefs.current.set(item.id, node); else moduleRefs.current.delete(item.id) }}
-          className="lesson-module-section mx-auto max-w-[440px]" style={{ '--module-color': item.color } as CSSProperties}>
+          className="lesson-module-section mx-auto max-w-[440px]" data-module-state={done === list.length ? 'done' : item.id === currentModule?.id ? 'current' : 'upcoming'} style={{ '--module-color': item.color } as CSSProperties}>
           <div className="lesson-module-sticky">
             <div className="lesson-module-banner rounded-2xl">
               <span className="lesson-module-icon"><Icon aria-hidden="true" size={21} strokeWidth={1.75} /></span>
@@ -318,17 +374,37 @@ export default function Darslik() {
               </div>
             </div>
           </div>
-          <LearningPath mod={item} doneList={doneFor[item.id] ?? []} lang={settings.language}
-            onOpenLesson={(idx) => setReader({ mod: item, idx })} onPractice={(idx) => practiceLesson(item, idx)} />
+          <LearningPath mod={item} doneList={doneFor[item.id] ?? []} lang={settings.language} selected={selected} activeModuleId={currentModule?.id}
+            onSelect={(selection, trigger) => { selectPathNode(selection, trigger); setCollapsed(false) }} />
         </section>
       })}
-      {currentModule && <div className="pointer-events-none fixed bottom-[calc(2rem+var(--safe-bottom,0px))] left-0 right-0 z-20 flex justify-center">
-        <Button className="pointer-events-auto rounded-full bg-psuccess text-white shadow-lg" onClick={() => {
-          const node = moduleRefs.current.get(currentModule.id)?.querySelector<HTMLButtonElement>('[aria-current="step"]')
-          node?.scrollIntoView({ behavior: settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center' })
-          node?.focus({ preventScroll: true })
-        }}><ArrowDown size={17} />{tt('pathJump')}</Button>
+      {currentModule && !selected && <div className="pointer-events-none fixed bottom-[calc(2rem+var(--safe-bottom,0px))] left-0 right-0 z-20 flex justify-center">
+        <Button className="pointer-events-auto rounded-full bg-psuccess text-white shadow-lg" onClick={jumpToCurrent}><ArrowDown size={17} />{tt('pathJump')}</Button>
       </div>}
+
+      {selected && selectedMod && !reader && !completion && <LessonPreview
+        title={selected.check ? tt('pathLevelCheck') : selectedLesson ? (ru ? selectedLesson.titleRu : selectedLesson.titleUz) : ''}
+        selectionKey={`${selected.moduleId}:${selected.idx}`} check={selected.check} current={isSelectedCurrent}
+        premiumRequired={selected.check ? !isPremium : !canReadLesson(isPremium, selected.moduleId, selected.idx)}
+        done={!selected.check && !!doneFor[selected.moduleId]?.includes(selected.idx)} lang={settings.language} collapsed={collapsed}
+        onJump={currentModule ? jumpToCurrent : undefined} jumpDirection={jumpDirection}
+        onClose={() => { setCollapsed(true); selectedTrigger.current?.focus({ preventScroll: true }) }}
+        onPractice={() => selected.check ? practiceModule(selectedMod) : practiceLesson(selectedMod, selected.idx)}
+        onStart={() => {
+          if (launch) return
+          if (!canReadLesson(isPremium, selected.moduleId, selected.idx) || (selected.check && !isPremium)) { requestPremium(); return }
+          if (selected.check) { practiceModule(selectedMod); return }
+          const target = { mod: selectedMod, idx: selected.idx }
+          if (settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches) setReader(target)
+          else setLaunch({ ...target, origin: lessonLaunchOrigin(selectedTrigger.current) })
+        }} />}
+      {launch && <LessonLaunch origin={launch.origin} lang={settings.language}
+        onReveal={() => {
+          if (!canReadLesson(isPremium, launch.mod.id, launch.idx)) { requestPremium(); return }
+          setReader({ mod: launch.mod, idx: launch.idx })
+        }}
+        onFinish={() => setLaunch(null)}
+        onCancel={() => { setLaunch(null); setReader(null) }} />}
 
       {toast && (
         <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-2xl bg-pwarning/15 px-4 py-3 text-center text-[13px] font-medium text-pfg shadow-lg">
@@ -341,8 +417,10 @@ export default function Darslik() {
         <LessonScreen
           mod={reader.mod}
           lessonIdx={reader.idx}
-          onClose={() => setReader(null)}
+          onClose={() => { setReader(null); setLaunch(null) }}
+          onPremium={requestPremium}
           onDone={(idx) => {
+            if (!canReadLesson(useAppStore.getState().tariff === 'premium', reader.mod.id, idx)) { requestPremium(); return }
             const finished = reader.mod
             const list = lessons[finished.id] ?? []
             const previous = useLessonsStore.getState().byUser[userId]?.[finished.id] ?? []
