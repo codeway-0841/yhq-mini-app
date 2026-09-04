@@ -1,18 +1,31 @@
 import React from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { Bot } from 'lucide-react'
 import { ModeRow } from '../../../src/features/dashboard/components/GridCards'
-import { ProgressCard } from '../../../src/features/dashboard/components/ProgressCard'
+import { TopBar } from '../../../src/features/dashboard/components/TopBar'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
+import { useAppStore } from '../../../src/shared/store/useAppStore'
 
 describe('dashboard localized labels', () => {
   it('uses the selected language for the subject after a language change', () => {
     useSubjectStore.getState().setSubject('yhq')
-    const { rerender } = render(<MemoryRouter><ProgressCard totalWrong={0} totalAnswered={0} streak={0} totalPool={100} lang="uz" /></MemoryRouter>)
+    useAppStore.setState((s) => ({ ...s, settings: { ...s.settings, language: 'uz' } }))
+    const { rerender } = render(
+      <MemoryRouter>
+        <TopBar user={null} displayName="Ali" onSubjects={vi.fn()} onSettings={vi.fn()} onProfile={vi.fn()} />
+      </MemoryRouter>
+    )
     expect(screen.getByText("Yo'l harakati qoidalari")).toBeInTheDocument()
-    rerender(<MemoryRouter><ProgressCard totalWrong={0} totalAnswered={0} streak={0} totalPool={100} lang="ru" /></MemoryRouter>)
+    act(() => {
+      useAppStore.setState((s) => ({ ...s, settings: { ...s.settings, language: 'ru' } }))
+    })
+    rerender(
+      <MemoryRouter>
+        <TopBar user={null} displayName="Ali" onSubjects={vi.fn()} onSettings={vi.fn()} onProfile={vi.fn()} />
+      </MemoryRouter>
+    )
     expect(screen.getByText('Правила дорожного движения')).toBeInTheDocument()
     expect(screen.queryByText("Yo'l harakati qoidalari")).not.toBeInTheDocument()
   })

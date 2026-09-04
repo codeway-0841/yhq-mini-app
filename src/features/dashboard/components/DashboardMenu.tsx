@@ -83,7 +83,7 @@ export default function DashboardMenu() {
             style={{ animationDelay: `${index * 45}ms` }}
             className="dashboard-menu-action pointer-events-auto flex min-h-14 shrink-0 items-center justify-end gap-4 rounded-full pl-4 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
             <span className="text-[15px] font-semibold drop-shadow-md">{label}</span>
-            <span className="grid size-14 shrink-0 place-items-center rounded-full border border-pline bg-pcard text-pfg shadow-lg"><Icon size={23} strokeWidth={1.75} aria-hidden="true" /></span>
+            <span className="grid size-14 shrink-0 place-items-center rounded-full bg-pcard text-pfg shadow-lg"><Icon size={23} strokeWidth={1.75} aria-hidden="true" /></span>
           </button>)}
         </div>
         <button type="button" aria-label={tt('close')} onClick={close}
