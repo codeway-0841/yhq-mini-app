@@ -98,8 +98,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
 
   return (
     <>
-      <div className="hero-gradient-card mx-4 mb-5 p-4 sm:p-5">
-        <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+      <div className="hero-gradient-card mx-4 mb-4 px-4 py-3 sm:px-5 sm:py-4">
+        <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
           <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
 
         </div>
@@ -111,7 +111,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
           {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
         </div>
 
-        <div className="mt-4 flex items-center gap-3">
+        <div className="mt-3 flex items-center gap-3">
           <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
             <div
               className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
@@ -123,10 +123,10 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
           </span>
         </div>
 
-        <p className="mt-3 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
+        <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
 
         {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
-        <div className="mt-3 grid grid-cols-3 gap-2">
+        <div className="mt-2 grid grid-cols-3 gap-2">
           {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
           <StatButton
             icon={Flame}

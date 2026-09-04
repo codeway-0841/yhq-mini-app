@@ -121,8 +121,13 @@ export function syncTelegramSafeArea(): void {
  * Bu Telegram'dagi noo'rin oq status bar chizig'ini yo'qotadi va dark/light'ga moslaydi.
  */
 export function syncTelegramTheme(isDark: boolean): void {
-  const color = isDark ? '#0d1117' : '#fafaf9'
+  // Canvas tokens live on body (including accent overrides), not html.
+  const canvas = typeof document !== 'undefined'
+    ? getComputedStyle(document.body).getPropertyValue('--p-canvas').trim() : ''
+  const color = canvas || (isDark ? '#0d1117' : '#f0f3f6')
   if (typeof document !== 'undefined') {
+    // Replace the parse-time inline background from app.html on every switch.
+    document.documentElement.style.backgroundColor = color
     let metaTheme = document.querySelector('meta[name="theme-color"]')
     if (!metaTheme) {
       metaTheme = document.createElement('meta')
@@ -136,6 +141,9 @@ export function syncTelegramTheme(isDark: boolean): void {
   if (!tg) return
   try {
     tg.setHeaderColor?.(color)
+  } catch {}
+  try {
+    tg.setBackgroundColor?.(color)
   } catch {}
 }
 
@@ -184,10 +192,7 @@ export function bindBackButton(visible: boolean, onBack: () => void): (() => voi
   // Telegram iOS: BackButton ko'rsatilganda yoki yashirilganda Telegram native
   // header panelini qayta chizadi — rangni darhol qayta mustahkamlash oq chaqnashni to'xtatadi.
   const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
-  const color = isDark ? '#0d1117' : '#fafaf9'
-  try {
-    tg.setHeaderColor?.(color)
-  } catch {}
+  syncTelegramTheme(isDark)
 
   if (!visible) { bb.hide(); return undefined }
   bb.show()

@@ -129,6 +129,26 @@ describe('theme-transition: transitionTheme', () => {
     expect(document.body.dataset.theme).toBe('dark')
   })
 
+  it('does not restore obsolete chrome when an animation is interrupted by an instant switch', async () => {
+    let finishAnimation!: () => void
+    const finished = new Promise<void>((resolve) => { finishAnimation = resolve })
+    document.documentElement.animate = vi.fn().mockReturnValue({ finished })
+    const skipTransition = vi.fn()
+    ;(document as any).startViewTransition = (cb: () => void) => {
+      cb()
+      return { ready: Promise.resolve(), finished, updateCallbackDone: Promise.resolve(), skipTransition }
+    }
+    const pending = transitionTheme('dark')
+    await Promise.resolve()
+    useAppStore.setState({ settings: { ...useAppStore.getState().settings, noAnimation: true } })
+    await transitionTheme('light')
+    finishAnimation()
+    await pending
+    expect(skipTransition).toHaveBeenCalledOnce()
+    expect(document.documentElement.classList.contains('theme-to-dark')).toBe(false)
+    expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#f0f3f6')
+  })
+
   it('executes Light -> Dark transition with expanding clipPath on ::view-transition-new', async () => {
     const animateMock = vi.fn().mockReturnValue({ finished: Promise.resolve() })
     document.documentElement.animate = animateMock

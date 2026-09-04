@@ -16,6 +16,7 @@ vi.mock('../../../src/shared/lib/fonts', () => ({
 
 // Import or test ThemeEffect behavior directly
 import { resolveAccent } from '../../../src/shared/config/themes'
+import ThemeEffect from '../../../src/features/app/components/ThemeEffect'
 
 describe('Theme and DOM attribute synchronization (Characterization)', () => {
   beforeEach(() => {
@@ -30,6 +31,14 @@ describe('Theme and DOM attribute synchronization (Characterization)', () => {
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, language: 'ru' } })
     document.documentElement.lang = useAppStore.getState().settings.language
     expect(document.documentElement.lang).toBe('ru')
+  })
+
+  it('synchronizes html scheme with body on store-driven theme changes', () => {
+    useAppStore.setState({ settings: { ...useAppStore.getState().settings, theme: 'light' } })
+    render(<ThemeEffect />)
+    expect(document.body.dataset.theme).toBe('light')
+    expect(document.documentElement.dataset.theme).toBe('light')
+    expect(document.documentElement.style.colorScheme).toBe('light')
   })
 
   it('resolves accent color correctly for free vs premium', () => {

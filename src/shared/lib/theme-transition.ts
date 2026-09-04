@@ -119,6 +119,8 @@ export async function transitionTheme(
     document.body.dataset.theme = themeStr
     document.documentElement.dataset.theme = themeStr
     document.documentElement.style.colorScheme = themeStr
+    syncStatusBarStyle(nextIsDark)
+    syncTelegramTheme(nextIsDark)
     store.updateSettings({ theme: nextTheme })
   }
 
@@ -132,15 +134,18 @@ export async function transitionTheme(
   }
   const docWithTransition = document as DocumentWithTransition
 
+  // An interrupted animation must not restore its obsolete chrome colors.
+  if (activeVT) {
+    try { activeVT.skipTransition() } catch (_) {}
+    activeVT = null
+    document.documentElement.classList.remove('theme-to-dark', 'theme-to-light')
+  }
+
   if (typeof docWithTransition.startViewTransition !== 'function' || reduceMotion || noAnimation || currentIsDark === nextIsDark) {
     updateDOMAndState()
     syncStatusBarStyle(nextIsDark)
     syncTelegramTheme(nextIsDark)
     return
-  }
-
-  if (activeVT && typeof activeVT.skipTransition === 'function') {
-    try { activeVT.skipTransition() } catch (_) {}
   }
 
   const vw = document.documentElement.clientWidth || window.innerWidth || 1
@@ -200,8 +205,6 @@ export async function transitionTheme(
     })
 
     await anim.finished.catch(() => {})
-    syncStatusBarStyle(nextIsDark)
-    syncTelegramTheme(nextIsDark)
   } catch {
     // Graceful fallback
   } finally {

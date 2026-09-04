@@ -47,7 +47,7 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: var(--theme-canvas);
+  background: var(--p-canvas, var(--theme-canvas));
   color: var(--theme-fg);
   font-family: var(--font-sans);
   /* Ta'lim ilovasi = raqam ko'p (ball, foiz, taymer) — tabular figure

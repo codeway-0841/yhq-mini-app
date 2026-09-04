@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react'
+﻿import { useEffect, useLayoutEffect } from 'react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { resolveAccent } from '../../../shared/config/themes'
 import { ensureFontLoaded } from '../../../shared/lib/fonts'
@@ -21,6 +21,8 @@ export default function ThemeEffect() {
 
   const applyTheme = (next: 'light' | 'dark') => {
     document.body.dataset.theme = next
+    document.documentElement.dataset.theme = next
+    document.documentElement.style.colorScheme = next
     syncStatusBarStyle(next === 'dark')
     syncTelegramTheme(next === 'dark')
   }
@@ -31,7 +33,9 @@ export default function ThemeEffect() {
     document.documentElement.lang = language ?? 'uz'
   }, [language])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    // Apply accent before reading the resolved canvas; paint all chrome together.
+    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium', new Set(ownedItems))
     if (theme === 'system') {
       const mq = window.matchMedia('(prefers-color-scheme: light)')
       const apply = () => applyTheme(mq.matches ? 'light' : 'dark')
@@ -40,12 +44,7 @@ export default function ThemeEffect() {
       return () => mq.removeEventListener('change', apply)
     }
     applyTheme(theme)
-  }, [theme])
-
-  // Aksent temasi — yopiq temalar (premium/coin) egasiz foydalanuvchida default'ga tushadi
-  useEffect(() => {
-    document.body.dataset.accent = resolveAccent(accent, tariff === 'premium', new Set(ownedItems))
-  }, [accent, tariff, ownedItems])
+  }, [theme, accent, tariff, ownedItems])
 
   useEffect(() => {
     // noAnimation setting — route transitionlar ham o'chadi (index.css)

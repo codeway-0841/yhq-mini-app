@@ -68,6 +68,14 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
     else navigate(mistakesCount > 0 ? '/xatolar' : '/testlar')
   }
   const learnPath = subject.id === 'yhq' ? '/darslik' : '/mavzular'
+  const contextLabel = expired ? null : resume ? tt('guidePendingTest') : currentTopic
+    ? tt(hasContinue ? 'guideCurrentTopic' : 'guideNextTopic') : null
+  const actionLabel = expired ? tt('guideViewResults') : resume ? tt('guideContinueTest')
+    : allComplete ? tt('guideReviewTopics') : currentTopic
+      ? subject.id === 'yhq'
+        ? tt(hasContinue ? 'guideContinueLesson' : 'guideStartLesson')
+        : tt(hasContinue ? 'guideContinueTest' : 'guideStartTest')
+      : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
   return (
@@ -86,6 +94,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
           <Ticket size={23} strokeWidth={1.75} className="text-pmuted" />
           <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('tickets')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideTicketsShort')}</span>
         </button>
         <button type="button" onClick={() => navigate('/octagon')} className={`home-learning-shortcut ${interactive}`}>
           <Swords size={23} strokeWidth={1.75} className="text-pmuted" />
@@ -102,13 +111,14 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
             <div className="min-w-0 flex-1">
+              {contextLabel && <p className="text-[12px] leading-relaxed text-pmuted">{contextLabel}</p>}
               <h2 className="text-[17px] font-bold leading-snug text-pfg">{title}</h2>
               {description && <p className="mt-1 text-[12px] leading-relaxed text-pmuted">{description}</p>}
             </div>
             {allComplete && !resume ? <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} /> : <Circle size={18} className="shrink-0 text-psubtle" aria-hidden="true" />}
           </div>
           <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
-            {expired ? tt('guideViewResults') : allComplete && !resume ? tt('guideReviewTopics') : hasContinue ? tt('continueLearn') : currentTopic ? tt('pathStart') : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')}
+            {actionLabel}
           </Button>
           {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
             <summary className="cursor-pointer text-[13px] font-semibold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>

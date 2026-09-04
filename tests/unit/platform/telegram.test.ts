@@ -130,8 +130,8 @@ describe('Telegram ichida', () => {
     expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#0d1117')
 
     syncTelegramTheme(false)
-    expect(tg.setHeaderColor).toHaveBeenCalledWith('#fafaf9')
-    expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#fafaf9')
+    expect(tg.setHeaderColor).toHaveBeenCalledWith('#f0f3f6')
+    expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#f0f3f6')
   })
 
   it('bindBackButton: Telegram headerColor qayta mustahkamlanadi', async () => {
@@ -151,6 +151,25 @@ describe('Telegram ichida', () => {
 
     bindBackButton(false, () => {})
     expect(tg.BackButton.hide).toHaveBeenCalledOnce()
+  })
+
+  it('uses the resolved accent canvas for root, meta and both Telegram surfaces', async () => {
+    const { syncTelegramTheme } = await import('../../../src/platform/telegram')
+    const tg = webApp()
+    tg.setHeaderColor = vi.fn(() => { throw new Error('Old client') })
+    tg.setBackgroundColor = vi.fn()
+    document.body.style.setProperty('--p-canvas', '#081614')
+    document.documentElement.style.backgroundColor = '#fafaf9'
+    try {
+      syncTelegramTheme(true)
+      expect(document.documentElement.style.backgroundColor).toBe('rgb(8, 22, 20)')
+      expect(document.querySelector('meta[name="theme-color"]')?.getAttribute('content')).toBe('#081614')
+      expect(tg.setHeaderColor).toHaveBeenCalledWith('#081614')
+      expect(tg.setBackgroundColor).toHaveBeenCalledWith('#081614')
+    } finally {
+      document.body.style.removeProperty('--p-canvas')
+      document.documentElement.style.removeProperty('background-color')
+    }
   })
 
   it('readyAndExpand: disableVerticalSwipes chaqiriladi', async () => {
