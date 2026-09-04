@@ -1,5 +1,6 @@
 import { useId } from 'react'
 import { Check } from 'lucide-react'
+import './learning-path.css'
 
 export function PathMascot() {
   return <span className="learning-mascot" aria-hidden="true">

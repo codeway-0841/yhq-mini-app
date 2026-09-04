@@ -34,13 +34,13 @@ describe('learning guide', () => {
     guide()
     expect(screen.queryByText('Testni davom ettiring')).not.toBeInTheDocument()
     expect(screen.getByRole('button', { name: /O‘rganish/ })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Test ishlash' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/testlar')
   })
   it('explains and opens the current-subject mistake recommendation', () => {
     guide(7)
-    expect(screen.getByText(/7 ta xato/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Xatolarni takrorlash' }))
+    expect(screen.getByText(/Oldingi xatolaringizni/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/xatolar')
   })
   it('resumes the original session key even when the stored questions were shuffled', () => {
@@ -50,6 +50,13 @@ describe('learning guide', () => {
     const target = JSON.parse(screen.getByTestId('destination').textContent!)
     expect(target.path).toBe('/test/1')
     expect(makeSessionKey(target.state.mode, target.state.questionIds)).toBe(snapshot.key)
+  })
+  it('shows only one primary start action when a test and mistakes both exist', () => {
+    useTestSessionStore.getState().save(snapshot)
+    guide(7)
+    expect(screen.queryByRole('button', { name: 'Boshlash' })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /Davom/ }))
+    expect(screen.getByTestId('destination')).toHaveTextContent('/test/1')
   })
   it('opens lesson path without bypassing its lesson access checks', () => {
     useLessonsStore.setState({ byUser: { learner: { 1: [0] } } })
