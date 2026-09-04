@@ -1,10 +1,11 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Swords, UserPlus, Trophy, Users, Check, Copy, Share2, KeyRound, ChevronLeft, ArrowRight } from 'lucide-react'
+import { Swords, UserPlus, Trophy, Users, KeyRound, ChevronLeft, ArrowRight, Clock3, Layers } from 'lucide-react'
 import { api, type LeaderboardEntry, avatarSrcFor } from '../../../shared/api'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
-import { shareUrl } from '../../../platform/telegram'
+import { ArenaArtwork } from './ArenaArtwork'
+import type { ConnStatus } from '../../../shared/lib/octagon-ws'
 import { cn } from '../../../shared/lib/cn'
 import { registerModal } from '../../../shared/lib/navigation'
 import { getDuelHistory, type DuelHistoryRecord } from '../duel-history'
@@ -15,6 +16,8 @@ interface IdleScreenProps {
   user: { id: string; firstName: string; photoUrl?: string } | null | undefined
   language: 'uz' | 'ru'
   connFailed: boolean
+  connection?: ConnStatus
+  onCreateRoom: () => void
   onlinePlayers?: LeaderboardEntry[]
   onlineCount?: number
   onRefreshOnline?: () => void
@@ -69,6 +72,8 @@ export function IdleScreen({
   user,
   language,
   connFailed,
+  connection = 'open',
+  onCreateRoom,
   onlinePlayers = [],
   onlineCount: propOnlineCount,
   onRefreshOnline,
@@ -84,8 +89,6 @@ export function IdleScreen({
 
   // Quick invite tab state
   const [inviteTab, setInviteTab] = useState<'create' | 'join'>('create')
-  const [quickPin] = useState(() => Math.floor(100000 + Math.random() * 900000).toString())
-  const [copiedPin, setCopiedPin] = useState(false)
   const [inputPin, setInputPin] = useState('')
   const [pinError, setPinError] = useState<string | null>(null)
 
@@ -127,23 +130,6 @@ export function IdleScreen({
   const totalMatches = history.length > 0 ? history.length : totalWins
   const winRate = totalMatches > 0 ? Math.round((totalWins / totalMatches) * 100) : 0
   const rankInfo = getDuelRank(totalWins, tt)
-
-  const handleCopyPin = () => {
-    navigator.clipboard?.writeText(quickPin)
-    setCopiedPin(true)
-    haptics.impact('light')
-    playSound('click')
-    setTimeout(() => setCopiedPin(false), 2500)
-  }
-
-  const handleShareInvite = () => {
-    haptics.impact('medium')
-    playSound('click')
-    const inviteLink = `https://t.me/kiwi_uz_bot?start=duel-${quickPin}`
-    const shareText = `Kel, bilimlar jangida bellashamiz! 🤺\n\n📌 Xona PIN-kodi: ${quickPin}\n\nQuyidagi havola orqali kiring:`
-    shareUrl(inviteLink, shareText)
-    onJoinWithPin(quickPin)
-  }
 
   const handleJoinPin = () => {
     const clean = inputPin.replace(/\s+/g, '').trim()
@@ -344,9 +330,9 @@ export function IdleScreen({
                 type="button"
                 onClick={() => { setInviteTab('create'); setPinError(null); playSound('click'); haptics.impact('light') }}
                 className={cn(
-                  'py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all',
+                  'min-h-12 px-2 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 transition-all',
                   inviteTab === 'create'
-                    ? 'bg-ppurple text-ponprimary shadow-xs'
+                    ? 'bg-pprimary text-ponprimary shadow-xs'
                     : 'text-pmuted hover:text-pfg'
                 )}
               >
@@ -357,9 +343,9 @@ export function IdleScreen({
                 type="button"
                 onClick={() => { setInviteTab('join'); setPinError(null); playSound('click'); haptics.impact('light') }}
                 className={cn(
-                  'py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all',
+                  'min-h-12 px-2 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 transition-all',
                   inviteTab === 'join'
-                    ? 'bg-ppurple text-ponprimary shadow-xs'
+                    ? 'bg-pprimary text-ponprimary shadow-xs'
                     : 'text-pmuted hover:text-pfg'
                 )}
               >
@@ -370,47 +356,13 @@ export function IdleScreen({
 
             {/* TAB 1: XONA YARATISH */}
             {inviteTab === 'create' && (
-              <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
-                {/* PIN kodi */}
-                <div className="p-4 space-y-2 text-center">
-                  <span className="text-xs font-bold text-psubtle">{tt('yourRoomPin')}</span>
-                  <div className="text-3xl font-black font-mono tracking-widest text-pprimary select-all">
-                    {quickPin.slice(0, 3)} {quickPin.slice(3)}
-                  </div>
-                  <p className="text-[11px] text-psubtle">{tt('roomWaitingHint')}</p>
-                </div>
-
-                {/* Tugmalar: Nusxa olish & Telegram'da ulashish */}
-                <div className="p-4 grid grid-cols-2 gap-2">
-                  <button
-                    type="button"
-                    onClick={handleCopyPin}
-                    className="py-2.5 px-3 rounded-xl bg-psurface text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
-                  >
-                    {copiedPin ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
-                    <span>{copiedPin ? tt('pinCopied') : tt('copyPinBtn')}</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleShareInvite}
-                    className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shrink-0 hover:bg-[rgb(var(--p-blue-rgb)/0.25)] shadow-xs"
-                  >
-                    <Share2 size={14} />
-                    <span>{language === 'ru' ? 'Отправить' : 'Ulashish'}</span>
-                  </button>
-                </div>
-
-                {/* Xona yaratib kutish CTA */}
-                <div className="p-4">
-                  <button
-                    type="button"
-                    onClick={() => { playSound('click'); haptics.impact('heavy'); onJoinWithPin(quickPin) }}
-                    className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all"
-                  >
-                    <Swords size={16} />
-                    <span>{tt('startWaitingBtn')}</span>
-                  </button>
-                </div>
+              <div className="arena-room-card">
+                <div className="arena-room-art"><ArenaArtwork /></div>
+                <h3>{language === 'ru' ? 'Вызови друга.' : "Do‘stingni chorla."}</h3>
+                <p>{language === 'ru' ? 'Создайте комнату и отправьте другу код.' : 'Xona yarating va do‘stingizga kodni yuboring.'}</p>
+                <button type="button" disabled={connection !== 'open'} onClick={onCreateRoom} className="arena-primary">
+                  <UserPlus size={19} />{tt('tabCreateRoom')}<ArrowRight size={18} />
+                </button>
               </div>
             )}
 
@@ -418,11 +370,12 @@ export function IdleScreen({
             {inviteTab === 'join' && (
               <div className="overflow-hidden rounded-2xl bg-pcard p-4 space-y-4 shadow-xs">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-pfg block text-center">{tt('enterPinPrompt')}</label>
+                  <label htmlFor="arena-pin" className="text-sm font-bold text-pfg block text-center">{tt('enterPinPrompt')}</label>
                   <input
+                    id="arena-pin"
                     type="text"
-                    inputMode="numeric"
-                    maxLength={8}
+                    inputMode="text"
+                    maxLength={16}
                     value={inputPin}
                     onChange={(e) => {
                       setInputPin(e.target.value.replace(/[^0-9a-zA-Z-]/g, ''))
@@ -437,7 +390,7 @@ export function IdleScreen({
                 <button
                   type="button"
                   onClick={handleJoinPin}
-                  disabled={!inputPin.trim()}
+                  disabled={!inputPin.trim() || connection !== 'open'}
                   className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
                 >
                   <KeyRound size={16} />
@@ -451,121 +404,35 @@ export function IdleScreen({
     )
   }
 
-  // ── ASOSIY HUB KO'RINISHI (Hero Banner + 2x2 Grid Menyu) ──
-  const onlineCount = effectiveOnlineCount
+  const ru = language === 'ru'
+  const connected = connection === 'open'
+  const onlineLabel = !connected
+    ? (connection === 'failed' ? (ru ? 'Нет соединения' : 'Aloqa uzildi') : (ru ? 'Подключение…' : 'Ulanmoqda…'))
+    : effectiveOnlineCount > 0 ? `${effectiveOnlineCount} ${ru ? 'онлайн' : 'onlayn'}`
+    : (ru ? 'Пригласите друга' : 'Do‘stingizni taklif qiling')
 
   return (
-    <div className="w-full max-w-md mx-auto space-y-4 pt-1">
-      {/* ── 1. Hero PvP Match Banner ── */}
-      <div className="relative overflow-hidden rounded-3xl bg-pcard p-5 text-center shadow-md">
-        <div className="pointer-events-none absolute -top-10 -right-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-purple)_15%,transparent)] blur-2xl" />
-        <div className="pointer-events-none absolute -bottom-10 -left-10 size-32 rounded-full bg-[color-mix(in_srgb,var(--p-primary)_12%,transparent)] blur-2xl" />
-
-        {/* Live Online Badge */}
-        <div className={cn(
-          "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-bold mb-3 transition-colors shadow-2xs",
-          onlineCount > 0
-            ? "bg-[color-mix(in_srgb,var(--p-success)_15%,transparent)] text-psuccess"
-            : "bg-psurface text-psubtle"
-        )}>
-          <span className={cn(
-            "size-2 rounded-full",
-            onlineCount > 0 ? "bg-psuccess animate-pulse" : "bg-psubtle"
-          )} />
-          <span>
-            {`${onlineCount} ${tt('onlinePlayersCount')}`}
-          </span>
-        </div>
-
-        <div className="flex items-center justify-center gap-2 mb-1">
-          <Swords size={24} className="text-ppurple" />
-          <h2 className="font-display text-xl font-extrabold tracking-tight text-pfg">
-            {tt('octagonTitle')}
-          </h2>
-        </div>
-        <p className="text-xs text-psubtle max-w-xs mx-auto mb-4">
-          {language === 'ru'
-            ? 'Реальный бой 1 на 1: 10 вопросов, 15 секунд на каждый'
-            : "Haqiqiy 1 ga 1 jonli bellashuv: 10 ta savol, har biriga 15 soniya"}
-        </p>
-
-        {/* Action Button: Tezkor Raqib Topish */}
-        <button
-          type="button"
-          onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-          disabled={connFailed}
-          className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary font-display text-sm font-extrabold flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98] hover:brightness-[1.06] disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <Swords size={18} />
-          <span>{tt('findOpponent')}</span>
+    <div className="arena-hub">
+      <section className="arena-hero" aria-label={ru ? 'Быстрая дуэль' : 'Tezkor duel'}>
+        <div className="arena-hero-top"><span className="arena-mode">1 : 1</span>{connection !== 'failed' && <span className="arena-live" role="status"><i data-connected={connected && effectiveOnlineCount > 0} />{onlineLabel}</span>}</div>
+        <ArenaArtwork />
+        <div className="arena-hero-copy"><h2>{ru ? 'Готовы к дуэли?' : 'Duelga tayyormisiz?'}</h2></div>
+        <div className="arena-rules"><span><Layers size={15} />10 {ru ? 'вопросов' : 'savol'}</span><span><Clock3 size={15} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span></div>
+        <button type="button" onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }} disabled={connFailed || !connected} className="arena-primary">
+          <Swords size={20} /><span>{tt('findOpponent')}</span><ArrowRight size={20} />
         </button>
+      </section>
+      <button type="button" className="arena-friend" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('invite') }}>
+        <span className="arena-friend-icon"><UserPlus size={25} /></span>
+        <span><strong>{ru ? 'С другом' : 'Do‘st bilan'}</strong><small>{ru ? 'Пригласить или ввести код' : 'Taklif qiling yoki kod kiriting'}</small></span>
+        <ArrowRight size={20} />
+      </button>
+      <div className="arena-section-label"><h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2></div>
+      <div className="arena-nav">
+        <button type="button" onClick={() => setSubview('battles')}><span className="arena-nav-icon"><Swords size={22} /></span><strong>{ru ? 'Мои бои' : 'Janglarim'}</strong><small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small><ArrowRight size={16} /></button>
+        <button type="button" onClick={() => setSubview('leaderboard')}><span className="arena-nav-icon arena-gold"><Trophy size={22} /></span><strong>{tt('duelLeaderboardTab')}</strong><small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small><ArrowRight size={16} /></button>
       </div>
-
-      {/* ── 2. Asosiy 4 ta Bo'lim (Alohida 2x2 Grid Kartalar — Navigatsiya) ── */}
-      <div className="space-y-2 pt-1">
-        <div className="flex items-center justify-between px-1">
-          <span className="text-xs font-bold text-pmuted">
-            {language === 'ru' ? 'Разделы Арены' : "Arena bo'limlari"}
-          </span>
-          <span className="text-[11px] text-psubtle font-semibold">
-            {language === 'ru' ? 'Нажмите для перехода' : "Ochish uchun bosing"}
-          </span>
-        </div>
-
-        <div className="grid grid-cols-2 gap-2.5">
-          {(['battles', 'leaderboard', 'online', 'invite'] as const).map((tKey) => {
-            const meta =
-              tKey === 'battles' ? {
-                title: language === 'ru' ? 'Мои бои' : 'Mening janglarim',
-                desc: `${totalWins} ${tt('duelWinsLabel').toLowerCase()}`,
-                icon: Swords,
-                color: 'text-pprimary bg-[color-mix(in_srgb,var(--p-primary)_12%,transparent)]',
-              } :
-              tKey === 'leaderboard' ? {
-                title: tt('duelLeaderboardTab'),
-                desc: language === 'ru' ? 'Топ игроков' : 'Top duelchilar',
-                icon: Trophy,
-                color: 'text-amber-500 bg-amber-500/10',
-              } :
-              tKey === 'online' ? {
-                title: 'Online',
-                desc: `${onlineCount} ${language === 'ru' ? 'онлайн' : 'faol'}`,
-                icon: Users,
-                color: 'text-psuccess bg-[color-mix(in_srgb,var(--p-success)_12%,transparent)]',
-              } : {
-                title: language === 'ru' ? 'С другом' : "Do'st bilan",
-                desc: 'PIN / Link',
-                icon: UserPlus,
-                color: 'text-ppurple bg-[color-mix(in_srgb,var(--p-purple)_12%,transparent)]',
-              }
-            const Icon = meta.icon
-
-            return (
-              <button
-                key={tKey}
-                type="button"
-                onClick={() => { playSound('click'); haptics.impact('medium'); setSubview(tKey) }}
-                className="relative flex items-center justify-between p-3.5 rounded-2xl bg-pcard hover:bg-psurface text-left transition-all duration-150 ease-out active:scale-[0.97] shadow-xs group"
-              >
-                <div className="flex items-center gap-3 min-w-0 flex-1">
-                  <div className={cn('size-10 rounded-2xl flex items-center justify-center shrink-0 transition-transform group-hover:scale-105', meta.color)}>
-                    <Icon size={20} />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-xs font-black text-pfg truncate group-hover:text-pprimary transition-colors">
-                      {meta.title}
-                    </p>
-                    <p className="text-[10.5px] text-psubtle truncate mt-0.5 font-medium">
-                      {meta.desc}
-                    </p>
-                  </div>
-                </div>
-                <ArrowRight size={14} className="text-psubtle group-hover:text-pprimary transition-colors shrink-0 ml-1" />
-              </button>
-            )
-          })}
-        </div>
-      </div>
+      <button type="button" className="arena-online-row" onClick={() => setSubview('online')}><Users size={18} /><span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span><span>{connected ? effectiveOnlineCount : '—'}</span><ArrowRight size={16} /></button>
     </div>
   )
 }

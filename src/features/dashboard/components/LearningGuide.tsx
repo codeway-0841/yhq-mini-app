@@ -55,9 +55,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
       : []
   const completedTopics = topicChoices.filter((t) => t.complete)
   const allComplete = topicChoices.length > 0 && completedTopics.length === topicChoices.length
-  const currentIndex = topicChoices.findIndex((t) => !t.complete)
-  const currentTopic = topicChoices[currentIndex]
-  const followingTopic = currentIndex >= 0 ? topicChoices.slice(currentIndex + 1).find((t) => !t.complete) : undefined
+  const currentTopic = topicChoices.find((t) => !t.complete)
   const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
   const title = expired ? tt('guideExpiredTest') : resume ? (session?.title || tt('guideResumeTest')) : allComplete ? tt('guideTopicsDone') : currentTopic?.title
     ?? (mistakesCount > 0 ? tt('guideReviewTitle') : tt('topics'))
@@ -80,10 +78,10 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
           <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
         </button>
-        <button onClick={() => navigate('/testlar')} className={`home-learning-shortcut home-learning-shortcut-primary ${interactive}`}>
-          <Play size={23} strokeWidth={1.75} />
-          <span className="mt-2 block text-[16px] font-bold">{tt('dashboardPractice')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed">{tt('guidePracticeShort')}</span>
+        <button onClick={() => navigate('/testlar')} className={`home-learning-shortcut ${interactive}`}>
+          <Play size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardPractice')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guidePracticeShort')}</span>
         </button>
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
           <Ticket size={23} strokeWidth={1.75} className="text-pmuted" />
@@ -109,11 +107,6 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
             </div>
             {allComplete && !resume ? <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} /> : <Circle size={18} className="shrink-0 text-psubtle" aria-hidden="true" />}
           </div>
-          {followingTopic && <button onClick={() => navigate(followingTopic!.path, { state: followingTopic!.state })} className={`home-learning-path-row home-learning-path-next ${interactive}`}>
-            <span className="home-learning-token" aria-hidden="true"><LessonToken done={false} current={false} /></span>
-            <span className="flex-1 text-left"><span className="text-[15px] font-semibold text-pmuted">{followingTopic.title}</span></span>
-            <Circle size={15} className="text-psubtle" aria-hidden="true" />
-          </button>}
           <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
             {expired ? tt('guideViewResults') : allComplete && !resume ? tt('guideReviewTopics') : hasContinue ? tt('continueLearn') : currentTopic ? tt('pathStart') : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')}
           </Button>

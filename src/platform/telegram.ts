@@ -84,12 +84,14 @@ export function syncTelegramSafeArea(): void {
     // Mobile Telegram (Android ~88px, iOS ~104px):
     // Telegram Mini App'da '✕ Close' va '∨ ⋮' floating tugmalari ostida qolmasligi va
     // OsonPrava kabi tugmalar ostida qulay masofa (breathing room) bo'lishi uchun:
-    const fallbackTop = isIos ? 104 : isAndroid ? 88 : 0
+    // The SDK also exists in ordinary mobile browsers: UA alone is not a Mini App signal.
+    const isMiniApp = Boolean(tg.initData) || tg.platform === 'ios' || tg.platform === 'android'
+    const fallbackTop = isMiniApp ? (isIos ? 104 : isAndroid ? 88 : 0) : 0
     const top = Math.max(contentTop, safeTop, fallbackTop)
 
     const contentBottom = tg.contentSafeAreaInset?.bottom ?? 0
     const safeBottom = tg.safeAreaInset?.bottom ?? 0
-    const fallbackBottom = isIos ? 34 : 0
+    const fallbackBottom = isMiniApp && isIos ? 34 : 0
     const bottom = Math.max(contentBottom, safeBottom, fallbackBottom)
 
     document.documentElement.style.setProperty('--safe-top', `${top}px`)

@@ -1,4 +1,4 @@
-import { Loader2 } from 'lucide-react'
+import { Loader2, Check, X } from 'lucide-react'
 import type { Question } from '../../../shared/api'
 
 /** Raund ekrani — progress, savol va variantlar.
@@ -66,12 +66,13 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
                           'bg-psurface text-pmuted shadow-xs'
         return (
           <button key={`${q.id}_${opt.id}`} type="button" disabled={answered} onClick={() => onAnswer(opt.id)}
-            className={`w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all focus:outline-none active:scale-[0.98] ${style}`}>
+            className={`arena-answer w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all focus:outline-none active:scale-[0.98] ${style}`}>
             <div className="flex items-center gap-3">
               <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-2xs">
                 {opt.id}
               </span>
-              <span className="text-sm">{opt.text}</span>
+              <span className="text-sm flex-1">{opt.text}</span>
+              {showCorrect || (isSelected && ackCorrect === true) ? <Check size={20} aria-label={'To‘g‘ri javob'} className="text-psuccess shrink-0" /> : isSelected && ackCorrect === false ? <X size={20} aria-label={'Noto‘g‘ri javob'} className="text-pdanger shrink-0" /> : isSelected && ackCorrect === null ? <Loader2 size={18} className="animate-spin shrink-0" /> : null}
             </div>
           </button>
         )

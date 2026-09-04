@@ -61,8 +61,9 @@ describe('learning guide', () => {
     guide()
     expect(screen.queryByText('Testni davom ettiring')).not.toBeInTheDocument()
     expect(screen.getByRole('button', { name: /O‘rganish/ })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
+    expect(screen.queryByText('Chorrahalar')).not.toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
-    expect(screen.getByText('Chorrahalar')).toBeInTheDocument()
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path: '/darslik', state: {moduleId: 1}})
   })
 
@@ -119,11 +120,9 @@ describe('learning guide', () => {
     ]})
     guide()
     expect(screen.getByRole('heading', {name: 'Fonetika'})).toBeInTheDocument()
-    expect(screen.getByText('Morfologiya')).toBeInTheDocument()
+    expect(screen.queryByText('Morfologiya')).not.toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', {name: 'Boshlash'}))
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[101],title:'Fonetika'}})
-    fireEvent.click(screen.getByRole('button', {name: 'Morfologiya'}))
-    expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/test/1',state:{questionIds:[202],title:'Morfologiya'}})
   })
 
   it('never displays cached topics from another subject', () => {

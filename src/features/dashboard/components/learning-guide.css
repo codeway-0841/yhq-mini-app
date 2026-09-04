@@ -2,13 +2,8 @@
 .home-learning-hero-heading { padding: 4px 2px 14px; text-align: left; }
 .home-learning-step { padding: 16px; border: 1px solid var(--p-line); border-radius: 22px; background: var(--p-card); }
 .home-learning-path-row { display: flex; align-items: center; gap: 10px; width: 100%; position: relative; padding: 4px 0; }
-.home-learning-path-next { margin-top: 0; margin-bottom: 4px; border-radius: 12px; }
 .home-learning-shortcut { min-height: 112px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; text-align: center; border: 1px solid var(--p-line); border-radius: 18px; background: var(--p-card); }
-.home-learning-shortcut-primary { border-color: color-mix(in srgb, var(--p-primary) 60%, transparent); background: var(--p-primary); color: var(--p-onprimary); box-shadow: 0 12px 30px color-mix(in srgb, var(--p-primary) 22%, transparent); }
-.home-learning-shortcut-primary span, .home-learning-shortcut-primary svg { color: var(--p-onprimary); }
-.home-learning-shortcut-primary span:last-child { opacity: 0.82; }
-.home-learning-shortcut:hover, .home-learning-path-next:hover { background: var(--p-surface); }
-.home-learning-shortcut-primary:hover { background: color-mix(in srgb, var(--p-primary) 92%, black); }
+.home-learning-shortcut:hover { background: var(--p-surface); }
 @media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 22px; } .home-learning-step { padding: 12px; } }
 @media (min-width: 600px) { .home-learning-hero { max-width: 480px; margin: 0 auto; } }
 .home-learning-token { display: block; flex: 0 0 60px; width: 60px; height: 66px; }

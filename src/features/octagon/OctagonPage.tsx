@@ -1,3 +1,4 @@
+import './arena.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore }    from '../../shared/store/useAppStore'
@@ -26,12 +27,13 @@ export default function OctagonPage() {
   const questions = useQuestionsStore((s) => s.questions)
   const tt = useT(settings.language)
 
+  const [creatingRoom, setCreatingRoom] = useState(false)
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
 
   const { state: s, conn, duelCode, duelLink,
           onlinePlayers, onlineCount, refreshOnline,
           floatingReactions, opponentPhrase, yourPhrase, isMuted,
-          joinQueue, cancelSearch, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle } =
+          joinQueue, startDuel, cancelSearch, sendAnswer, sendReaction, toggleMute, retryConnect, exitToIdle } =
     useDuelConnection(user)
   const { timeLeft, roundPct } = useOctagonClock(s.deadline)
 
@@ -76,9 +78,9 @@ export default function OctagonPage() {
   }
 
   return (
-    <div className="flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
+    <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
       <DuelHeader
-        title={tt('octagonTitle')}
+        title={settings.language === 'ru' ? 'Дуэль' : 'Duel'}
         inRound={s.phase === 'in_round'}
         yourScore={s.yourScore}
         oppScore={s.oppScore}
@@ -86,7 +88,7 @@ export default function OctagonPage() {
       />
 
       <DuelBanners toastMsg={s.toastMsg} conn={conn} phase={s.phase}
-        oppWait={s.oppWait} onRetry={retryConnect} />
+        oppWait={s.oppWait} onRetry={retryConnect} language={settings.language} />
 
       {/* Floating live reactions and taunts overlay */}
       {isLiveMatch && (
@@ -104,16 +106,18 @@ export default function OctagonPage() {
             user={user}
             language={settings.language}
             connFailed={conn === 'failed'}
+            connection={conn}
+            onCreateRoom={() => { setCreatingRoom(true); startDuel() }}
             onlinePlayers={onlinePlayers}
             onlineCount={onlineCount}
             onRefreshOnline={refreshOnline}
-            onFind={() => joinQueue()}
-            onJoinWithPin={(pin) => joinQueue(pin)}
+            onFind={() => { setCreatingRoom(false); joinQueue('') }}
+            onJoinWithPin={(pin) => { setCreatingRoom(false); joinQueue(pin) }}
           />
         )}
 
         {s.phase === 'searching' && (
-          <SearchingScreen tt={tt} duelCode={duelCode} duelLink={duelLink} onCancel={cancelSearch} />
+          <SearchingScreen language={settings.language} roomPending={creatingRoom && !duelCode} tt={tt} duelCode={duelCode} duelLink={duelLink} onCancel={cancelSearch} />
         )}
 
         {s.phase === 'matched' && <MatchedScreen opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
@@ -130,7 +134,7 @@ export default function OctagonPage() {
         {s.phase === 'match_end' && (
           <MatchEndScreen tt={tt} result={s.result}
             yourScore={s.yourScore} oppScore={s.oppScore} opponentName={s.opponentName}
-            onExit={exitToIdle} onRematch={() => joinQueue()} />
+            language={settings.language} onExit={exitToIdle} onRematch={() => { setCreatingRoom(false); joinQueue('') }} />
         )}
       </div>
 
