@@ -104,7 +104,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
     <>
       <div className="hero-gradient-card mx-4 mb-5 p-4 sm:p-5">
         {/* Sarlavha qatori: Bugungi progress (chapda) va Fan tanlash toggle (o'ngda) */}
-        <div className="mb-2 flex items-center justify-between gap-2">
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
           <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
 
           {/* Fan tanlash toggle chipi */}
@@ -155,7 +155,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         <p className="mt-3 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
 
         {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
-        <div className="mt-4 grid grid-cols-3 gap-2">
+        <div className="mt-4 grid grid-cols-1 gap-2 min-[400px]:grid-cols-3">
           {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
           <StatButton
             icon={Flame}
