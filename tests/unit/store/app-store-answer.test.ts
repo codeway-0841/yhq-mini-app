@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { api, ApiError } from '../../../src/shared/api'
 import * as outbox from '../../../src/shared/lib/outbox'
@@ -28,6 +28,7 @@ describe('useAppStore.submitAnswer (Characterization)', () => {
       coinsEarned: 1,
       coinBalance: 11,
       xp: 110,
+      xpEarned: 10,
     } as any)
 
     const res = await useAppStore.getState().submitAnswer(101, 'A', 5000)
@@ -47,6 +48,7 @@ describe('useAppStore.submitAnswer (Characterization)', () => {
       correctAnswer: 'A',
       duplicate: false,
       coinsEarned: 1,
+      xpEarned: 10,
     })
 
     const state = useAppStore.getState()
@@ -84,5 +86,26 @@ describe('useAppStore.submitAnswer (Characterization)', () => {
 
     expect(res).toEqual({ fatal: true, code: 'invalid_answer' })
     expect(enqueueSpy).not.toHaveBeenCalled()
+  })
+
+  it('returns 0 for coinsEarned and xpEarned on duplicate submission', async () => {
+    vi.spyOn(api, 'postResult').mockResolvedValue({
+      correct: null,
+      correctAnswer: null,
+      duplicate: true,
+      dailyStreak: null,
+      coinsEarned: 5,
+      xpEarned: 50,
+    } as any)
+
+    const res = await useAppStore.getState().submitAnswer(104, 'D')
+
+    expect(res).toEqual({
+      correct: null,
+      correctAnswer: null,
+      duplicate: true,
+      coinsEarned: 0,
+      xpEarned: 0,
+    })
   })
 })

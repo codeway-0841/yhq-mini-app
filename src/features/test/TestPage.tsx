@@ -153,6 +153,9 @@ export default function TestPage() {
     submitting: _submitting,
     coinPop,
     selected,
+    earnedXpTotal,
+    earnedCoinsTotal,
+    resetRewards,
     getOptionState,
     handleSelect,
     cancelAutoNext,
@@ -326,9 +329,10 @@ export default function TestPage() {
 
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
+    resetRewards()
     useTestSessionStore.getState().clear()
     navigate('/test/1', { replace: true, state: location.state })
-  }, [navigate, activeQuestions.length, location.state])
+  }, [navigate, activeQuestions.length, location.state, resetRewards])
 
   const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
@@ -547,6 +551,8 @@ export default function TestPage() {
         onOpenReview={() => setShowReview(true)}
         onFinishFromModal={handleFinishFromModal}
         onGoToQuestion={handleGoToQuestion}
+        earnedXp={earnedXpTotal}
+        earnedCoins={earnedCoinsTotal}
 
         showSettings={showSettings}
         onCloseSettings={() => setShowSettings(false)}

@@ -67,7 +67,7 @@ export default function ResultsModal({
    *  3) shareUrl (matn) — oxirgi fallback */
   const handleShareImage = async () => {
     if (sharingImage) return
-    haptics.impact('light')
+    haptics.selection()
     setSharingImage(true)
     try {
       const state = useAppStore.getState()
@@ -184,7 +184,7 @@ export default function ResultsModal({
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
         {/* Authoritative mukofotlar (XP & Tangalar) */}
-        {(Boolean(earnedXp) || Boolean(earnedCoins)) && (
+        {(Boolean(earnedXp) || Boolean(earnedCoins)) ? (
           <div className="mb-4 flex items-center justify-center gap-3 animate-scorePop">
             {Boolean(earnedXp) && (
               <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pprimary/15 text-pprimary font-bold text-xs shadow-xs">
@@ -197,7 +197,13 @@ export default function ResultsModal({
               </div>
             )}
           </div>
-        )}
+        ) : pending > 0 ? (
+          <div className="mb-4 flex items-center justify-center animate-scorePop">
+            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-psubtle font-medium text-xs shadow-xs">
+              <span>⏳ {useAppStore.getState().settings.language === 'ru' ? 'Награды будут начислены при подключении к сети' : 'Mukofotlar internet tiklangach hisoblanadi'}</span>
+            </div>
+          </div>
+        ) : null}
 
         <div className="grid grid-cols-3 gap-2 mb-5 animate-scorePop">
           <div className="rounded-2xl bg-pwash p-3 text-center shadow-xs transition-all duration-300">

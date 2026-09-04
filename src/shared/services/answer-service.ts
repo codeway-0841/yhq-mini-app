@@ -15,6 +15,7 @@ export interface SubmitOutcome {
   correctAnswer: string | null
   duplicate:     boolean
   coinsEarned:   number
+  xpEarned:      number
 }
 
 export interface SubmitFatal {
@@ -74,6 +75,7 @@ export const answerService = {
         correctAnswer: res.correctAnswer,
         duplicate:     !!res.duplicate,
         coinsEarned:   res.duplicate ? 0 : (res.coinsEarned ?? 0),
+        xpEarned:      res.duplicate ? 0 : (res.xpEarned ?? 0),
       }
 
       return {

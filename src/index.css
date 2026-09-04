@@ -1055,3 +1055,12 @@ body[data-no-animation='true'] .animate-scorePop {
     @apply rounded-xl bg-psurface text-pfg shadow-2xs;
   }
 }
+
+/* BottomSheet drag handle va header gesture zonasi — touch va scroll ziddiyatlarini bartaraf qilish */
+[data-drag-handle],
+[data-sheet-handle],
+.sheet-drag-handle,
+.sheet-drag-zone {
+  touch-action: none;
+  user-select: none;
+}

@@ -67,9 +67,17 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
   const phone = usePhoneInput()
   // Change rejimida avval tasdiqlash; add rejimida to'g'ridan-to'g'ri usul
   const [step, setStep] = useState<'confirm' | 'method' | 'sms'>(currentPhone ? 'confirm' : 'method')
+  const isDirty = (step === 'sms' && phone.digits.length > 0) || busy
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="phone-edit-title" swipeToDismiss>
+    <DialogOverlay
+      onClose={onClose}
+      backdropClassName="bg-black/60"
+      labelId="phone-edit-title"
+      swipeToDismiss={!isDirty}
+      closeOnBackdrop={!isDirty}
+      canDismiss={(reason) => !isDirty || reason === 'button'}
+    >
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 

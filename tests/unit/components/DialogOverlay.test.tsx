@@ -219,6 +219,196 @@ describe('DialogOverlay component', () => {
       vi.useRealTimers()
     })
 
+    it('short drag snap-back does not trigger onClose', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      // Drag down only 15px (well below threshold)
+      firePointer('pointermove', handle, { clientY: 25, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 25, clientX: 100 })
+
+      vi.advanceTimersByTime(500)
+      expect(handleClose).not.toHaveBeenCalled()
+      vi.useRealTimers()
+    })
+
+    it('fast velocity flick (>0.75 px/ms) closes even with short displacement', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      vi.advanceTimersByTime(10)
+      // Move 40px down in 10ms (velocity = 4 px/ms > 0.75 px/ms)
+      firePointer('pointermove', handle, { clientY: 50, clientX: 100 })
+      vi.advanceTimersByTime(10)
+      firePointer('pointerup', handle, { clientY: 50, clientX: 100 })
+
+      vi.advanceTimersByTime(300)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
+    it('threshold haptic fires only once during a downward drag gesture', () => {
+      import('../../../src/platform/haptics').then(({ haptics }) => {
+        const thresholdSpy = vi.spyOn(haptics, 'threshold')
+        render(
+          <DialogOverlay onClose={() => {}} swipeToDismiss>
+            <div style={{ height: '300px' }}>
+              <div data-drag-handle data-testid="handle">Handle</div>
+            </div>
+          </DialogOverlay>
+        )
+        const handle = screen.getByTestId('handle')
+        firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+        // Cross threshold (threshold distance is ~75px)
+        firePointer('pointermove', handle, { clientY: 120, clientX: 100 })
+        firePointer('pointermove', handle, { clientY: 140, clientX: 100 })
+        firePointer('pointermove', handle, { clientY: 160, clientX: 100 })
+        firePointer('pointerup', handle, { clientY: 160, clientX: 100 })
+
+        expect(thresholdSpy).toHaveBeenCalledTimes(1)
+        thresholdSpy.mockRestore()
+      })
+    })
+
+    it('pointercancel does not close sheet and resets drag state', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 190, clientX: 100 })
+      // pointercancel fires instead of pointerup
+      firePointer('pointercancel', handle, { clientY: 190, clientX: 100 })
+
+      vi.advanceTimersByTime(500)
+      expect(handleClose).not.toHaveBeenCalled()
+      vi.useRealTimers()
+    })
+
+    it('interactive buttons in header do not initiate sheet drag', () => {
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss dragHandleOnly>
+          <div style={{ height: '300px' }}>
+            <button data-testid="close-btn" onClick={handleClose}>Close</button>
+          </div>
+        </DialogOverlay>
+      )
+      const btn = screen.getByTestId('close-btn')
+      firePointer('pointerdown', btn, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', btn, { clientY: 190, clientX: 100 })
+      firePointer('pointerup', btn, { clientY: 190, clientX: 100 })
+
+      // Drag should NOT have been started on the button
+      expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('backdrop and timeout together do not call onClose twice', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      const { container } = render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 190, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 190, clientX: 100 })
+
+      // User clicks backdrop during the 260ms exit animation
+      const backdrop = container.querySelector('.bg-black\\/70')
+      if (backdrop) fireEvent.click(backdrop)
+
+      vi.advanceTimersByTime(400)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
+    it('unmounting clears active exit animation timer', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      const { unmount } = render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 190, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 190, clientX: 100 })
+
+      // Unmount before exit timeout completes
+      unmount()
+      vi.advanceTimersByTime(500)
+      expect(handleClose).not.toHaveBeenCalled()
+      vi.useRealTimers()
+    })
+
+    it('closeOnBackdrop=false prevents backdrop click from calling onClose', () => {
+      const handleClose = vi.fn()
+      const { container } = render(
+        <DialogOverlay onClose={handleClose} closeOnBackdrop={false}>
+          <div>Modal Content</div>
+        </DialogOverlay>
+      )
+      const backdrop = container.querySelector('.bg-black\\/70')
+      expect(backdrop).toBeInTheDocument()
+      if (backdrop) fireEvent.click(backdrop)
+      expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('canDismiss callback can block specific close reasons', () => {
+      const handleClose = vi.fn()
+      const canDismiss = vi.fn((reason) => reason !== 'backdrop' && reason !== 'escape')
+      const { container } = render(
+        <DialogOverlay onClose={handleClose} canDismiss={canDismiss}>
+          <div>Modal Content</div>
+        </DialogOverlay>
+      )
+      const backdrop = container.querySelector('.bg-black\\/70')
+      if (backdrop) fireEvent.click(backdrop)
+      expect(handleClose).not.toHaveBeenCalled()
+
+      fireEvent.keyDown(document, { key: 'Escape' })
+      expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('swipeToDismiss does nothing when position="center"', () => {
+      const { container } = render(
+        <DialogOverlay onClose={() => {}} swipeToDismiss position="center">
+          <div data-testid="content">Centered Content</div>
+        </DialogOverlay>
+      )
+      expect(container.querySelector('.will-change-transform')).not.toBeInTheDocument()
+    })
+
     it('accidental click is suppressed after dragging gesture', () => {
       const handleClick = vi.fn()
       render(

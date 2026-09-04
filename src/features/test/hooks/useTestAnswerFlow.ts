@@ -31,10 +31,13 @@ export function useTestAnswerFlow({
   const [correctOpts, setCorrectOpts]         = useState<(string | null)[]>(() => Array(activeQuestions.length).fill(null))
   const [submitting, setSubmitting]           = useState(false)
   const [coinPop, setCoinPop]                 = useState(0)
+  const [earnedXpTotal, setEarnedXpTotal]     = useState(0)
+  const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
 
   const autoNextTimerRef = useRef<number | null>(null)
   const correctStreakRef = useRef(0)
   const pausedRef = useRef(pauseAutoNext)
+  const rewardedQuestionIdsRef = useRef<Set<number>>(new Set())
 
   const cancelAutoNext = useCallback(() => {
     if (autoNextTimerRef.current !== null) {
@@ -113,7 +116,22 @@ export function useTestAnswerFlow({
       const revealed = outcome.correctAnswer
       setAnswers((prev) => { const next = [...prev]; next[idx] = isCorrect ? 'correct' : 'wrong'; return next })
       setCorrectOpts((prev) => { const next = [...prev]; next[idx] = revealed; return next })
-      haptics.notify(isCorrect ? 'success' : 'error')
+      if (isCorrect) {
+        haptics.success()
+      } else {
+        haptics.error()
+      }
+
+      // Deduplicate authoritative rewards by questionId
+      if (!outcome.duplicate && !rewardedQuestionIdsRef.current.has(questionId)) {
+        rewardedQuestionIdsRef.current.add(questionId)
+        if (outcome.xpEarned) {
+          setEarnedXpTotal((prev) => prev + outcome.xpEarned!)
+        }
+        if (outcome.coinsEarned) {
+          setEarnedCoinsTotal((prev) => prev + outcome.coinsEarned!)
+        }
+      }
 
       if (isCorrect) {
         correctStreakRef.current += 1
@@ -140,7 +158,7 @@ export function useTestAnswerFlow({
     })()
   }, [selected, submitting, q, current, submitAnswer, answerTimer, activeQuestions, onToast, settings, cancelAutoNext, goTo])
 
-  // Offline paytida yuborilgan javob internet kelganda ekranda yangilanishi (faqat lokal UI yangilanish)
+  // Offline paytida yuborilgan javob internet kelganda ekranda yangilanishi (va rewardlarni hisobga olish)
   useEffect(() => {
     return onResultSync((info) => {
       if (info.duplicate) return
@@ -158,9 +176,24 @@ export function useTestAnswerFlow({
             return next
           })
         }
+        if (!rewardedQuestionIdsRef.current.has(info.questionId)) {
+          rewardedQuestionIdsRef.current.add(info.questionId)
+          if (info.xpEarned) {
+            setEarnedXpTotal((prev) => prev + info.xpEarned!)
+          }
+          if (info.coinsEarned) {
+            setEarnedCoinsTotal((prev) => prev + info.coinsEarned!)
+          }
+        }
       }
     })
   }, [activeQuestions])
+
+  const resetRewards = useCallback(() => {
+    rewardedQuestionIdsRef.current.clear()
+    setEarnedXpTotal(0)
+    setEarnedCoinsTotal(0)
+  }, [])
 
   const restoreState = (
     rAnswers: (string | null)[],
@@ -186,6 +219,9 @@ export function useTestAnswerFlow({
     selected,
     answeredStatus,
     revealedId,
+    earnedXpTotal,
+    earnedCoinsTotal,
+    resetRewards,
     getOptionState,
     handleSelect,
     cancelAutoNext,

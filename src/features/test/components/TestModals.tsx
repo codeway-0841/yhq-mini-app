@@ -20,6 +20,8 @@ interface TestModalsProps {
   onOpenReview:        () => void
   onFinishFromModal:   () => void
   onGoToQuestion:      (index: number) => void
+  earnedXp?:           number
+  earnedCoins?:        number
 
   // Settings
   showSettings:        boolean
@@ -59,6 +61,8 @@ export default function TestModals({
   onOpenReview,
   onFinishFromModal,
   onGoToQuestion,
+  earnedXp,
+  earnedCoins,
 
   showSettings,
   onCloseSettings,
@@ -95,6 +99,8 @@ export default function TestModals({
           onOpenReview={onOpenReview}
           onFinish={onFinishFromModal}
           onGoToQuestion={onGoToQuestion}
+          earnedXp={earnedXp}
+          earnedCoins={earnedCoins}
         />
       )}
 

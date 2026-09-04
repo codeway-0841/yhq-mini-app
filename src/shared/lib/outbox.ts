@@ -125,6 +125,7 @@ export interface ResultSyncInfo {
   coinsEarned?:   number
   coinBalance?:   number | null
   xp?:            number | null
+  xpEarned?:      number
 }
 
 const resultSyncListeners = new Set<(info: ResultSyncInfo) => void>()
@@ -165,6 +166,7 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         coinsEarned:    res.coinsEarned,
         coinBalance:    res.coinBalance,
         xp:             res.xp,
+        xpEarned:       res.xpEarned,
       }
       for (const listener of resultSyncListeners) {
         try {

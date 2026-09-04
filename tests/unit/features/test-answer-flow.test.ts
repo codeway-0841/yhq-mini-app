@@ -1,4 +1,4 @@
-﻿import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
 import { useTestAnswerFlow } from '../../../src/features/test/hooks/useTestAnswerFlow'
 import * as outbox from '../../../src/shared/lib/outbox'
@@ -266,5 +266,154 @@ describe('useTestAnswerFlow (Production Hook Tests)', () => {
 
     expect(result.current.answers[0]).toBe('correct')
     expect(result.current.correctOpts[0]).toBe('opt-B')
+  })
+
+  it('accumulates authoritative xpEarned and coinsEarned from server', async () => {
+    const activeQuestions = [Q(101), Q(102)]
+    const mockSubmit = vi.fn()
+      .mockResolvedValueOnce({
+        correct: true,
+        correctAnswer: 'opt-A',
+        duplicate: false,
+        coinsEarned: 1,
+        xpEarned: 10,
+      })
+      .mockResolvedValueOnce({
+        correct: true,
+        correctAnswer: 'opt-B',
+        duplicate: false,
+        coinsEarned: 2,
+        xpEarned: 15,
+      })
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    await act(async () => {
+      result.current.handleSelect('opt-A')
+    })
+
+    expect(result.current.earnedXpTotal).toBe(10)
+    expect(result.current.earnedCoinsTotal).toBe(1)
+  })
+
+  it('does not grant rewards on duplicate answers or duplicate question IDs', async () => {
+    const activeQuestions = [Q(101)]
+    const mockSubmit = vi.fn().mockResolvedValue({
+      correct: true,
+      correctAnswer: 'opt-A',
+      duplicate: true,
+      coinsEarned: 0,
+      xpEarned: 0,
+    })
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    await act(async () => {
+      result.current.handleSelect('opt-A')
+    })
+
+    expect(result.current.earnedXpTotal).toBe(0)
+    expect(result.current.earnedCoinsTotal).toBe(0)
+  })
+
+  it('does not grant rewards on offline responses until outbox sync occurs', async () => {
+    const activeQuestions = [Q(101)]
+    let syncListener: ((info: any) => void) | null = null
+    vi.spyOn(outbox, 'onResultSync').mockImplementation((cb) => {
+      syncListener = cb
+      return () => { syncListener = null }
+    })
+
+    const mockSubmit = vi.fn().mockResolvedValue(null) // offline
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    await act(async () => {
+      result.current.handleSelect('opt-A')
+    })
+
+    // Offline: 0 rewards
+    expect(result.current.answers[0]).toBe('pending')
+    expect(result.current.earnedXpTotal).toBe(0)
+    expect(result.current.earnedCoinsTotal).toBe(0)
+
+    // Online outbox sync arrives
+    act(() => {
+      syncListener!({
+        questionId: 101,
+        correct: true,
+        correctAnswer: 'opt-A',
+        duplicate: false,
+        xpEarned: 10,
+        coinsEarned: 1,
+      })
+    })
+
+    expect(result.current.answers[0]).toBe('correct')
+    expect(result.current.earnedXpTotal).toBe(10)
+    expect(result.current.earnedCoinsTotal).toBe(1)
+  })
+
+  it('resetRewards resets earnedXpTotal and earnedCoinsTotal to 0', async () => {
+    const activeQuestions = [Q(101)]
+    const mockSubmit = vi.fn().mockResolvedValue({
+      correct: true,
+      correctAnswer: 'opt-A',
+      duplicate: false,
+      coinsEarned: 2,
+      xpEarned: 20,
+    })
+
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions,
+        current: 0,
+        submitAnswer: mockSubmit,
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    await act(async () => {
+      result.current.handleSelect('opt-A')
+    })
+
+    expect(result.current.earnedXpTotal).toBe(20)
+    expect(result.current.earnedCoinsTotal).toBe(2)
+
+    act(() => {
+      result.current.resetRewards()
+    })
+
+    expect(result.current.earnedXpTotal).toBe(0)
+    expect(result.current.earnedCoinsTotal).toBe(0)
   })
 })

@@ -47,6 +47,9 @@ export default function SpeedPage() {
   const [busy, setBusy]         = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
   const [finished, setFinished] = useState(false)
+  const [earnedXpTotal, setEarnedXpTotal] = useState(0)
+  const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
+  const rewardedQuestionIdsRef = useRef<Set<number>>(new Set())
   const advanceTimerRef = useRef<number | null>(null)
 
   const q = qs[idx]
@@ -97,7 +100,7 @@ export default function SpeedPage() {
       setBusy(false)
       if (outcome && !('fatal' in outcome)) setRevealed(outcome.correctAnswer)
       playSound('error')
-      haptics.notify('error')
+      haptics.error()
       advanceTimerRef.current = window.setTimeout(() => advance(false), 700)
     })()
   }, [advance, busy, q, submitAnswer, answerTimer])
@@ -114,8 +117,19 @@ export default function SpeedPage() {
       const scored = outcome && !('fatal' in outcome) ? outcome : null
       if (scored) {
         setRevealed(scored.correctAnswer)
-        haptics.notify(scored.correct ? 'success' : 'error')
-        playSound(scored.correct ? 'success' : 'error')
+        if (scored.correct) {
+          haptics.success()
+          playSound('success')
+        } else {
+          haptics.error()
+          playSound('error')
+        }
+
+        if (!scored.duplicate && !rewardedQuestionIdsRef.current.has(q.id)) {
+          rewardedQuestionIdsRef.current.add(q.id)
+          if (scored.xpEarned) setEarnedXpTotal((prev) => prev + scored.xpEarned)
+          if (scored.coinsEarned) setEarnedCoinsTotal((prev) => prev + scored.coinsEarned)
+        }
       }
       // Offline/fatal: reveal yo'q — faqat tanlangan variant belgilanib qoladi
       advanceTimerRef.current = window.setTimeout(() => advance(scored?.correct ?? false), scored ? 800 : 400)
@@ -138,10 +152,24 @@ export default function SpeedPage() {
 
   if (finished) {
     return (
-      <ResultsModal results={results} threshold={80}
-        onRetry={() => { setIdx(0); setAnswers([]); setSelected(null); setTimeLeft(TIME_LIMIT); setFinished(false) }}
+      <ResultsModal
+        results={results}
+        threshold={80}
+        earnedXp={earnedXpTotal}
+        earnedCoins={earnedCoinsTotal}
+        onRetry={() => {
+          rewardedQuestionIdsRef.current.clear()
+          setEarnedXpTotal(0)
+          setEarnedCoinsTotal(0)
+          setIdx(0)
+          setAnswers([])
+          setSelected(null)
+          setTimeLeft(TIME_LIMIT)
+          setFinished(false)
+        }}
         onFinish={() => goBack(navigate)}
-        onGoToQuestion={() => goBack(navigate)} />
+        onGoToQuestion={() => goBack(navigate)}
+      />
     )
   }
 
