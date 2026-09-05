@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm'
-import { executeRows } from '../../db/connection'
+import { executeRows, transactionBestEffort } from '../../db/connection'
 import type { users } from '../../schema'
 
 export interface PromoCodeRow {
@@ -13,6 +13,19 @@ export interface PromoCodeRow {
   isActive: boolean
   createdAt: Date
 }
+
+export interface DiscountOrderInput {
+  orderId: string
+  userId: string
+  plan: string
+  amountUzs: number
+  provider: string
+  rawDetails: Record<string, unknown>
+}
+
+export type DiscountOrderResult =
+  | { status: 'created'; order: { id: number; orderId: string; userId: string; plan: string; amountUzs: number; provider: string; status: string; rawDetails: Record<string, unknown> } }
+  | { status: 'not_found' | 'inactive' | 'expired' | 'not_discount' | 'already_used' | 'user_pending' | 'limit_reached' }
 
 export const promoRepository = {
   async findByCode(code: string): Promise<PromoCodeRow | null> {
@@ -61,6 +74,75 @@ export const promoRepository = {
       userPending: Number(rows[0]?.user_pending ?? 0),
       totalPending: Number(rows[0]?.total_pending ?? 0),
     }
+  },
+
+  /**
+   * Atomically reserve a discount order. The advisory lock serializes creators
+   * for the same code; the row lock keeps used_count changes compatible with
+   * redemption. The check and payment_orders INSERT must stay in one tx.
+   */
+  async createDiscountPaymentOrder(code: string, input: DiscountOrderInput): Promise<DiscountOrderResult> {
+    return transactionBestEffort(async (tx) => {
+      await executeRows(sql`
+        SELECT pg_advisory_xact_lock(hashtextextended(UPPER(${code.trim()}), 0))
+      `, tx)
+
+      const promoRows = await executeRows<{
+        id: number
+        is_active: boolean
+        expires_at: Date | null
+        type: string
+        used_count: number
+        max_uses: number | null
+      }>(sql`
+        SELECT id, is_active, expires_at, type, used_count, max_uses
+        FROM promo_codes
+        WHERE UPPER(code) = UPPER(${code.trim()})
+        FOR UPDATE
+      `, tx)
+      const promo = promoRows[0]
+      if (!promo) return { status: 'not_found' as const }
+      if (!promo.is_active) return { status: 'inactive' as const }
+      if (promo.expires_at && new Date(promo.expires_at) < new Date()) return { status: 'expired' as const }
+      if (promo.type !== 'discount_percent') return { status: 'not_discount' as const }
+
+      const redeemed = await executeRows<{ exists: boolean }>(sql`
+        SELECT EXISTS (
+          SELECT 1 FROM promo_code_redemptions
+          WHERE promo_code_id = ${promo.id} AND user_id = ${input.userId}
+        ) AS exists
+      `, tx)
+      if (redeemed[0]?.exists) return { status: 'already_used' as const }
+
+      const pending = await executeRows<{ user_pending: number; total_pending: number }>(sql`
+        SELECT
+          COUNT(*) FILTER (WHERE user_id = ${input.userId})::int AS user_pending,
+          COUNT(*)::int AS total_pending
+        FROM payment_orders
+        WHERE status = 'pending'
+          AND created_at >= now() - interval '30 minutes'
+          AND UPPER(raw_details->>'promoCode') = UPPER(${code.trim()})
+      `, tx)
+      const userPending = Number(pending[0]?.user_pending ?? 0)
+      const totalPending = Number(pending[0]?.total_pending ?? 0)
+      if (userPending > 0) return { status: 'user_pending' as const }
+      if (promo.max_uses !== null && Number(promo.used_count) + totalPending >= Number(promo.max_uses)) {
+        return { status: 'limit_reached' as const }
+      }
+
+      const rows = await executeRows<DiscountOrderResult extends { status: 'created'; order: infer O } ? O : never>(sql`
+        INSERT INTO payment_orders (order_id, user_id, plan, amount_uzs, provider, status, raw_details)
+        VALUES (
+          ${input.orderId}, ${input.userId}, ${input.plan}, ${input.amountUzs},
+          ${input.provider}, 'pending', ${JSON.stringify(input.rawDetails)}::jsonb
+        )
+        RETURNING id, order_id AS "orderId", user_id AS "userId", plan,
+                  amount_uzs AS "amountUzs", provider, status, raw_details AS "rawDetails"
+      `, tx)
+      const order = rows[0]
+      if (!order) throw new Error('Discount order reservation insert returned no row')
+      return { status: 'created' as const, order }
+    })
   },
 
   /**

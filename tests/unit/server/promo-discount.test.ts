@@ -45,6 +45,8 @@ import { promoRepository } from '../../../server/modules/promo/promo.repository'
 import { errorHandler } from '../../../server/middleware/error-handler'
 import { config } from '../../../server/config'
 
+const reserveOrder = vi.spyOn(promoRepository, 'createDiscountPaymentOrder')
+
 function makeApp() {
   const app = express()
   app.use(express.json())
@@ -63,6 +65,19 @@ const DISCOUNT_PROMO = {
 
 beforeEach(() => {
   vi.clearAllMocks()
+  reserveOrder.mockResolvedValue({
+    status: 'created',
+    order: {
+      id: 1,
+      orderId: 'ord_test',
+      userId: 'u1',
+      plan: 'month',
+      amountUzs: 21_750,
+      provider: 'payme',
+      status: 'pending',
+      rawDetails: { promoCode: 'SALE25', discountPercent: 25 },
+    },
+  })
   ;(config.payme as { merchantId: string }).merchantId = 'merchant_x'
   // L-4 (audit): buildClickPaymentUrl endi fail-closed — test'da Click config shart
   ;(config.click as { serviceId: string }).serviceId = 'svc_test'
@@ -94,7 +109,7 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
     expect(res.body.amountUzs).toBe(21_750)                       // 29000 × 0.75
     expect(res.body.discountPercent).toBe(25)
     expect(res.body.paymentUrl).toContain('checkout.paycom.uz')
-    expect(h.insertValues).toHaveBeenCalledWith(expect.objectContaining({
+    expect(reserveOrder).toHaveBeenCalledWith('SALE25', expect.objectContaining({
       provider: 'payme',
       amountUzs: 21_750,
       rawDetails: { promoCode: 'SALE25', discountPercent: 25 },
@@ -115,13 +130,13 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
 
   it('avval ishlatilgan promokod → 400 PROMO_ALREADY_USED, order yaratilmaydi', async () => {
     vi.spyOn(promoRepository, 'findByCode').mockResolvedValue(DISCOUNT_PROMO)
-    vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(true)
+    reserveOrder.mockResolvedValue({ status: 'already_used' })
 
     await request(makeApp())
       .post('/api/payments/create-order')
       .send({ plan: 'month', promoCode: 'SALE25' })
       .expect(400)
-    expect(h.insertValues).not.toHaveBeenCalled()
+    expect(reserveOrder).toHaveBeenCalled()
   })
 
   it("mavjud bo'lmagan kod → 404", async () => {
@@ -135,18 +150,19 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
 
   it("limit tugagan kod → 400 PROMO_LIMIT_REACHED", async () => {
     vi.spyOn(promoRepository, 'findByCode').mockResolvedValue({ ...DISCOUNT_PROMO, maxUses: 3, usedCount: 3 })
+    reserveOrder.mockResolvedValue({ status: 'limit_reached' })
 
     await request(makeApp())
       .post('/api/payments/create-order')
       .send({ plan: 'month', promoCode: 'SALE25' })
       .expect(400)
-    expect(h.insertValues).not.toHaveBeenCalled()
+    expect(reserveOrder).toHaveBeenCalled()
   })
 
   it("foydalanuvchida allaqachon pending buyurtma bo'lsa → 400 PROMO_PENDING_EXISTS (ID 05)", async () => {
     vi.spyOn(promoRepository, 'findByCode').mockResolvedValue(DISCOUNT_PROMO)
     vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(false)
-    vi.spyOn(promoRepository, 'getActivePendingReservations').mockResolvedValue({ userPending: 1, totalPending: 1 })
+    reserveOrder.mockResolvedValue({ status: 'user_pending' })
 
     const res = await request(makeApp())
       .post('/api/payments/create-order')
@@ -154,13 +170,13 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
       .expect(400)
 
     expect(res.body.details).toBe('PROMO_PENDING_EXISTS')
-    expect(h.insertValues).not.toHaveBeenCalled()
+    expect(reserveOrder).toHaveBeenCalled()
   })
 
   it("umumiy pending buyurtmalar max_uses ga yetgan bo'lsa → 400 PROMO_LIMIT_REACHED (ID 05)", async () => {
     vi.spyOn(promoRepository, 'findByCode').mockResolvedValue({ ...DISCOUNT_PROMO, maxUses: 5, usedCount: 3 })
     vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(false)
-    vi.spyOn(promoRepository, 'getActivePendingReservations').mockResolvedValue({ userPending: 0, totalPending: 2 })
+    reserveOrder.mockResolvedValue({ status: 'limit_reached' })
 
     const res = await request(makeApp())
       .post('/api/payments/create-order')
@@ -168,7 +184,7 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
       .expect(400)
 
     expect(res.body.details).toBe('PROMO_LIMIT_REACHED')
-    expect(h.insertValues).not.toHaveBeenCalled()
+    expect(reserveOrder).toHaveBeenCalled()
   })
 })
 

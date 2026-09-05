@@ -72,19 +72,6 @@ paymentRouter.post(
       if (promo.type !== 'discount_percent') {
         throw new AppError(400, 'Bu promokod chegirma kodi emas', 'PROMO_NOT_DISCOUNT')
       }
-      if (await promoRepository.isRedeemedByUser(promo.id, userId)) {
-        throw new AppError(400, 'Siz ushbu promokodni avval ishlatgansiz', 'PROMO_ALREADY_USED')
-      }
-
-      // ID 05: Pending buyurtmalar rezervatsiyasini hisobga olish
-      const { userPending, totalPending } = await promoRepository.getActivePendingReservations(promo.code, userId)
-      if (userPending > 0) {
-        throw new AppError(400, 'Ushbu promokod bilan to\'lov kutilayotgan buyurtmangiz mavjud', 'PROMO_PENDING_EXISTS')
-      }
-      if (promo.maxUses !== null && (promo.usedCount + totalPending) >= promo.maxUses) {
-        throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
-      }
-
       discountPercent = promo.value
       finalAmount = applyDiscount(plan.priceUzs, discountPercent)
     }
@@ -93,18 +80,45 @@ paymentRouter.post(
     const randomSuffix = crypto.randomBytes(4).toString('hex')
     const orderId = `ord_${Date.now()}_${randomSuffix}`
 
-    const [order] = await db
-      .insert(paymentOrders)
-      .values({
+    const rawDetails = promoCode ? { promoCode: promoCode.toUpperCase(), discountPercent } : {}
+    let order: typeof paymentOrders.$inferSelect
+    if (promoCode) {
+      const reserved = await promoRepository.createDiscountPaymentOrder(promoCode, {
         orderId,
         userId,
         plan: planKey as PlanKey,
         amountUzs: finalAmount,
         provider,
-        status: 'pending',
-        rawDetails: promoCode ? { promoCode: promoCode.toUpperCase(), discountPercent } : {},
+        rawDetails,
       })
-      .returning()
+      if (reserved.status === 'created') {
+        order = reserved.order as typeof paymentOrders.$inferSelect
+      } else {
+        switch (reserved.status) {
+          case 'not_found': throw new AppError(404, 'Promokod topilmadi', 'PROMO_NOT_FOUND')
+          case 'inactive': throw new AppError(400, 'Promokod faol emas', 'PROMO_INACTIVE')
+          case 'expired': throw new AppError(400, 'Promokodning amal qilish muddati tugagan', 'PROMO_EXPIRED')
+          case 'not_discount': throw new AppError(400, 'Bu promokod chegirma kodi emas', 'PROMO_NOT_DISCOUNT')
+          case 'already_used': throw new AppError(400, 'Siz ushbu promokodni avval ishlatgansiz', 'PROMO_ALREADY_USED')
+          case 'user_pending': throw new AppError(400, 'Ushbu promokod bilan to\'lov kutilayotgan buyurtmangiz mavjud', 'PROMO_PENDING_EXISTS')
+          case 'limit_reached': throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
+        }
+      }
+    } else {
+      const [created] = await db
+        .insert(paymentOrders)
+        .values({
+          orderId,
+          userId,
+          plan: planKey as PlanKey,
+          amountUzs: finalAmount,
+          provider,
+          status: 'pending',
+          rawDetails,
+        })
+        .returning()
+      order = created
+    }
 
     const paymentUrl = provider === 'payme'
       ? buildPaymePaymentUrl({ orderId: order.orderId, amountUzs: order.amountUzs, returnUrl })

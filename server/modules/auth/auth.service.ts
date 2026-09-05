@@ -16,7 +16,7 @@ import { z } from 'zod'
 import { randomBytes, randomUUID } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
-import { executeRows, transactionBestEffort, type DB } from '../../db/connection'
+import { db, executeRows, isNeonUrl, transactionBestEffort, transactionHttp, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { issueSession } from './session-issuer'
@@ -205,7 +205,7 @@ const isEmptyAccount = (s: AccountStats | undefined) => !!s && s.answered === 0 
  * qoladi va `ON CONFLICT DO NOTHING` insert'ni no-op qiladi.
  */
 async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?: DB): Promise<boolean> {
-  const runInTx = async (tx: DB) => {
+  const rename = async (tx: DB) => {
     const rows = await executeRows<{ del: number; ren: number }>(sql`
       WITH del AS (
         DELETE FROM users
@@ -218,21 +218,67 @@ async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?
         UPDATE users SET id = ${tgId}
         WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
         RETURNING id
-      )
       SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
     `, tx)
-    const ok = Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
-    if (ok) {
-      // ensureIdentity must run in same transaction for atomicity
-      await executeRows(sql`
-        INSERT INTO auth_identities (provider, provider_uid, user_id)
-        VALUES ('telegram', ${tgId}, ${tgId})
-        ON CONFLICT (provider, provider_uid) DO NOTHING
-      `, tx)
-    }
-    return ok
+    return Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
   }
-  return txOrDb ? runInTx(txOrDb) : transactionBestEffort(runInTx)
+  const addTelegramIdentity = async (tx: DB) => {
+    await executeRows(sql`
+      INSERT INTO auth_identities (provider, provider_uid, user_id)
+      SELECT 'telegram', ${tgId}, ${tgId}
+      WHERE EXISTS (
+        SELECT 1 FROM auth_identities
+        WHERE provider = 'phone' AND user_id = ${tgId}
+      )
+      ON CONFLICT (provider, provider_uid) DO NOTHING
+    `, tx)
+  }
+
+  if (txOrDb) {
+    const renamed = await rename(txOrDb)
+    if (renamed) await addTelegramIdentity(txOrDb)
+    return renamed
+  }
+
+  if (isNeonUrl(config.db.url)) {
+    // FK ON UPDATE CASCADE can make an INSERT in the same data-modifying CTE
+    // conflict with the pre-update identity snapshot. Keep rename + identity
+    // recreation in one Neon HTTP transaction, but separate SQL statements.
+    const results = await transactionHttp((txSql) => [
+      txSql`
+        WITH del AS (
+          DELETE FROM users
+          WHERE id = ${tgId}
+            AND COALESCE((SELECT total_answered FROM progress WHERE user_id = ${tgId}), 0) = 0
+            AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${tgId})
+            AND id <> ${phoneUserId}
+          RETURNING id
+        ), ren AS (
+          UPDATE users SET id = ${tgId}
+          WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
+          RETURNING id
+        )
+        SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
+      `,
+      txSql`
+        INSERT INTO auth_identities (provider, provider_uid, user_id)
+        SELECT 'telegram', ${tgId}, ${tgId}
+        WHERE EXISTS (
+          SELECT 1 FROM auth_identities
+          WHERE provider = 'phone' AND user_id = ${tgId}
+        )
+        ON CONFLICT (provider, provider_uid) DO NOTHING
+      `,
+    ])
+    const rows = (results[0] ?? []) as Array<{ del: number; ren: number }>
+    return Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
+  }
+
+  return transactionBestEffort(async (tx) => {
+    const renamed = await rename(tx)
+    if (renamed) await addTelegramIdentity(tx)
+    return renamed
+  })
 }
 
 /**
@@ -268,6 +314,7 @@ async function absorbEmptyAccount(cur: string, other: string, txOrDb?: DB): Prom
     `, tx)
     return Number(rows[0]?.idn) > 0 && Number(rows[0]?.del) > 0
   }
+  if (!txOrDb && isNeonUrl(config.db.url)) return runInTx(db)
   return txOrDb ? runInTx(txOrDb) : transactionBestEffort(runInTx)
 }
 
@@ -507,7 +554,7 @@ export const authService = {
     const otherId = identity.userId
     await verifyAccountPasswordWithLockout(otherId, input.password, identity.passwordHash)
 
-    await transactionBestEffort(async (tx) => {
+    const mergeAccounts = async (tx?: DB) => {
       const stats = await accountStats([currentUserId, otherId], tx)
       const curEmpty   = isEmptyAccount(stats.get(currentUserId))
       const otherEmpty = isEmptyAccount(stats.get(otherId))
@@ -530,7 +577,9 @@ export const authService = {
         const ok = await absorbEmptyAccount(currentUserId, otherId, tx)
         if (!ok) throw new AppError(409, 'accounts_merge_required')
       }
-    })
+    }
+    if (isNeonUrl(config.db.url)) await mergeAccounts()
+    else await transactionBestEffort(mergeAccounts)
     // Denormalized phone field + session after transaction commits (retriable, idempotent)
     await usersRepository.updatePhone(currentUserId, input.phone).catch(() => false)
     return { status: 'adopted' as const, ...(await respondWithNewSession(currentUserId, 'phone')) }

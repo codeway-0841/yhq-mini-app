@@ -7,6 +7,7 @@ import { answerTokens, dailyRecords, payments, progress, questions, questionBank
 import { paymentRepository } from '../../../server/modules/payments/payment.repository'
 import { COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import { tashkentDate } from '../../../server/utils/date'
+import { resolveSubject } from '../../../server/config/subjects'
 
 const app = createApp()
 // user_id TEXT (0023+) — string id'lar shart (Postgres'ta text = bigint operatori yo'q)
@@ -14,6 +15,7 @@ const PROGRESS_ID = '998877660001'
 const TRIAL_ID = '998877660002'
 const PAYMENT_ID = '998877660003'
 const IDS = [PROGRESS_ID, TRIAL_ID, PAYMENT_ID]
+const YHQ_BANK_ID = resolveSubject('yhq').dataSourceId
 
 async function cleanup() {
   for (const id of IDS) {
@@ -41,7 +43,7 @@ afterAll(cleanup)
 
 describe('server-authoritative progress', () => {
   it('selectedAnswer asosida score va daily counterlarni server hisoblaydi', async () => {
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     expect(question).toBeDefined()
     const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
 
@@ -80,7 +82,7 @@ describe('server-authoritative progress', () => {
 
   it('avval to\'g\'ri yechilgan savolda keyin xato qilib qayta to\'g\'ri yechganda xato wrongByTicket dan o\'chadi', async () => {
     await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
 
     // 1) Dastlab to'g'ri yechildi
@@ -122,7 +124,7 @@ describe('server-authoritative progress', () => {
     // Anti-farm gate: oldingi test birinchi savolni TO'G'RI yechgan —
     // yangi (yechilmagan) savol uchun progressni reset qilamiz.
     await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const res = await request(app)
       .post(`/api/progress/${PROGRESS_ID}/result`)
       .send({ questionId: question.id, selectedAnswer: question.correctAnswer, subjectId: 'yhq' })
@@ -137,7 +139,7 @@ describe('server-authoritative progress', () => {
   it('clientToken idempotency: replay counterlarni ikki marta oshirmaydi', async () => {
     // Anti-farm gate: birinchi savol oldingi testlarda TO'G'RI yechilgan — reset.
     await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const [before] = await db.select().from(progress).where(eq(progress.userId, PROGRESS_ID))
     const token = `integration-token-${Date.now()}-uniq`
 
@@ -167,7 +169,7 @@ describe('server-authoritative progress', () => {
   })
 
   it('answer-key farming: bir token bilan qayta-qayta hisobsiz reveal olib bo\'lmaydi', async () => {
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const token = `farming-token-${Date.now()}-uniq`
 
     const first = await request(app)
@@ -190,7 +192,7 @@ describe('server-authoritative progress', () => {
   })
 
   it('clientToken boshqa user tokenini qayta ishlatolmaydi (user-scoped)', async () => {
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const token = `integration-cross-${Date.now()}-uniq`
     // PROGRESS_ID token yaratadi
     await request(app)
@@ -248,7 +250,7 @@ describe('public questions payload — correctAnswer yashiringan', () => {
   })
 
   it('topicId filtrli ham correctAnswer QAYTARMAYDI', async () => {
-    const [q] = await db.select().from(questions).where(and(eq(questions.bankId, 'yhq'), isNotNull(questions.topicId))).limit(1)
+    const [q] = await db.select().from(questions).where(and(eq(questions.bankId, YHQ_BANK_ID), isNotNull(questions.topicId))).limit(1)
     if (!q || !q.topicId) return
     const res = await request(app).get(`/api/questions?topicId=${q.topicId}`).expect(200)
     expect(res.body.length).toBeGreaterThan(0)
@@ -322,7 +324,7 @@ describe('progress anti-farm: post-answer reveal replay (audit fix)', () => {
     // qayta to\'g\'ri javob ber. Allaqachon yechilgan savol → idempotent "duplicate".
     await request(app).delete(`/api/progress/${PROGRESS_ID}`).expect(200)
 
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
 
     await request(app)
@@ -388,7 +390,7 @@ describe('H-3 anti-farm: kunlik javob krediti (DAILY_ANSWER_CREDIT)', () => {
     }).onConflictDoNothing()
 
     const [progBefore] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
 
     const res = await request(app)
       .post(`/api/progress/${H3_ID}/result`)
@@ -416,7 +418,7 @@ describe('H-3 anti-farm: kunlik javob krediti (DAILY_ANSWER_CREDIT)', () => {
       .where(and(eq(dailyRecords.userId, H3_ID), eq(dailyRecords.date, today)))
 
     const [progBefore] = await db.select().from(progress).where(eq(progress.userId, H3_ID))
-    const [question] = await db.select().from(questions).where(eq(questions.bankId, 'yhq')).limit(1)
+    const [question] = await db.select().from(questions).where(eq(questions.bankId, YHQ_BANK_ID)).limit(1)
     const wrongAnswer = Object.keys(question.optionsUz).find((key) => key !== question.correctAnswer) ?? '__wrong__'
     const res = await request(app)
       .post(`/api/progress/${H3_ID}/result`)
