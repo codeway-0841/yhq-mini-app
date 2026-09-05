@@ -69,20 +69,14 @@ export default function TestlarPage() {
       ? [
           { id: 'mock',     iconBox: 'cap' as const, danger: true,
             titleKey: 'mockExam' as const, meta: `20 ${tt('question').toLowerCase()} · 25 ${tt('minWord')} — ${tt('mockFailInfo')}`, diff: 'hard' as const },
-          { id: 'speed',    iconBox: 'zap' as const,
-            titleKey: 'speedTitle' as const, meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' as const },
           { id: 'marathon', iconBox: 'zap' as const,
             titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
         ]
       : [
-          { id: 'speed',     iconBox: 'zap' as const,
-            titleKey: 'speedTitle' as const, meta: `20 ${tt('question').toLowerCase()} × 10 ${tt('speedSec')}`, diff: 'mid' as const },
           { id: 'random50',  iconBox: 'num' as const, numText: '50',
             titleKey: 't50Test' as const, meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' as const },
           { id: 'random100', iconBox: 'num' as const, numText: '100',
             titleKey: 't100' as const,    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' as const },
-          { id: 'random20',  iconBox: 'zap' as const,
-            titleKey: 't20' as const,     meta: `20 ${tt('question').toLowerCase()} · 30 ${tt('minWord')}`, diff: 'easy' as const },
           { id: 'marathon',  iconBox: 'zap' as const,
             titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
           ...examPresetCards,
@@ -91,7 +85,6 @@ export default function TestlarPage() {
 
   const start = (m: ModeCard) => {
     track('test_start', { mode: m.id })
-    if (m.id === 'speed') { navigate('/speed'); return }
     if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }

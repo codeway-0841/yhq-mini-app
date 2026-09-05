@@ -9,7 +9,8 @@ import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
 import { seededShuffle } from '../../shared/lib/seeded'
 
-const TICKET_SIZE = 20
+const TICKET_SIZE_YHQ = 20
+const TICKET_SIZE_OTHER = 30
 
 export default function Biletlar() {
   const [tab, setTab] = useState('all')
@@ -38,14 +39,15 @@ export default function Biletlar() {
 
   const tickets = useMemo(() => {
     if (!questions.length) return []
-    // 300 savol RANDOM tartibda biletlarga taqsimlanadi (seed bilan barqaror)
+    // YHQ uchun 20 talik, qolgan barcha fanlar uchun 30 talik biletlar
+    const ticketSize = subjectId === 'yhq' ? TICKET_SIZE_YHQ : TICKET_SIZE_OTHER
     const shuffled = seededShuffle(questions, 42)
-    const count = Math.floor(shuffled.length / TICKET_SIZE)
+    const count = Math.floor(shuffled.length / ticketSize)
     return Array.from({ length: count }, (_, i) => {
-      const ids = shuffled.slice(i * TICKET_SIZE, (i + 1) * TICKET_SIZE).map((q) => q.id)
+      const ids = shuffled.slice(i * ticketSize, (i + 1) * ticketSize).map((q) => q.id)
       return { id: i + 1, title: `${i + 1} - ${tt('ticketWord')}`, questionCount: ids.length, questionIds: ids }
     })
-  }, [questions, tt])
+  }, [questions, subjectId, tt])
   const filtered = tickets.filter((t) => {
     if (tab === 'errors') return t.questionIds.some((id) => (wrongByTicket[questionKey(subjectId, id)] ?? 0) > 0)
     return true

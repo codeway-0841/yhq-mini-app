@@ -107,4 +107,30 @@ describe('Biletlar', () => {
 
     expect(second).toEqual(first)
   })
+
+  it('YHQ dan boshqa fanlarda (masalan fizika) biletlarni 30 talik qiladi', () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+    const sixtyQuestions = Array.from({ length: 60 }, (_, i) => ({
+      id: i + 1,
+      topicId: 1,
+      questionUz: `Savol ${i + 1}`,
+      questionRu: `Вопрос ${i + 1}`,
+      optionsUz: { F1: 'a', F2: 'b' },
+      optionsRu: { F1: 'а', F2: 'б' },
+      correctAnswer: 'F1',
+    })) as never[]
+    useQuestionsStore.setState({ questions: sixtyQuestions, topics: [], loaded: true, loading: false })
+
+    render(<Biletlar />)
+    expect(screen.getByText('1 - bilet')).toBeInTheDocument()
+    expect(screen.getByText('2 - bilet')).toBeInTheDocument()
+    expect(screen.queryByText('3 - bilet')).toBeNull()
+    expect(screen.getAllByText(/30 ta savol|30 savol|30/).length).toBeGreaterThan(0)
+
+    fireEvent.click(screen.getByText('1 - bilet'))
+    expect(mockNavigate).toHaveBeenCalledTimes(1)
+    const [path, opts] = mockNavigate.mock.calls[0]!
+    expect(path).toBe('/test/1')
+    expect(opts.state.questionIds).toHaveLength(30)
+  })
 })
