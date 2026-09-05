@@ -8,6 +8,7 @@ import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import MathText from '../../../shared/components/MathText'
 
 function formatImageSrc(src?: string | null): string | undefined {
   if (!src) return undefined
@@ -154,9 +155,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                   </div>
 
                   {/* Question Text */}
-                  <p className="text-sm font-semibold text-pfg mb-3 leading-snug">
-                    {q.text}
-                  </p>
+                  <MathText as="p" text={q.text} className="text-sm font-semibold text-pfg mb-3 leading-snug" />
 
                   {/* Image if available */}
                   {q.image && (
@@ -214,7 +213,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                           <span className="size-5 rounded-lg bg-psurface flex items-center justify-center font-semibold text-[10px] flex-shrink-0">
                             {String.fromCharCode(65 + i)}
                           </span>
-                          <span className="flex-1 min-w-0">{opt.text}</span>
+                          <MathText text={opt.text} className="flex-1 min-w-0" />
                           {badge}
                         </div>
                       )

@@ -27,6 +27,7 @@ import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
+import MathText from '../../shared/components/MathText'
 import { type QuestionResult } from './ResultsModal'
 import { type ExamReviewItem } from './components/ExamReviewModal'
 import { MODULE_TOPICS } from '../../content/modules'
@@ -471,9 +472,11 @@ export default function TestPage() {
                 <Bookmark fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
               </Button>
             </div>
-            <p className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px]">
-              {q.text}
-            </p>
+            <MathText
+              as="p"
+              text={q.text}
+              className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px]"
+            />
 
           </div>
           {q.image && (

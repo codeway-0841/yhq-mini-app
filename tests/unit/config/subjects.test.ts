@@ -49,12 +49,11 @@ describe('shared/subjects — data integrity', () => {
     expect(new Set(dataSourceIds).size).toBe(dataSourceIds.length)
   })
 
-  it("REGRESSIYA: kontenti yo'q fanlar available:false (FIXPLAN 4-punkt) — yangi " +
-    "foydalanuvchi bo'sh ekranga tushmasin, faqat haqiqiy baza bilan fanlar tanlanadi", () => {
+  it("kontenti bor fanlar available:true, qolgan fanlar locked", () => {
     const byId = Object.fromEntries(SUBJECT_BASES.map((s) => [s.id, s.available]))
     expect(byId['yhq']).toBe(true)       // 300 savol
     expect(byId['rustili']).toBe(true)   // 1000 savol
-    expect(byId['fizika']).toBe(false)
+    expect(byId['fizika']).toBe(true)    // Fizika Test Print banki
     expect(byId['matematika']).toBe(false)
     expect(byId['kimyo']).toBe(false)
     expect(byId['ingliz']).toBe(false)

@@ -71,7 +71,9 @@ export const questionsRepository = {
 
   findTopics(bankId = 'traffic_rules_db') {
     return cached(`topics:all:${bankId}`, () =>
-      db.select().from(topics).where(eq(topics.bankId, bankId)),
+      // Seed order is the printed bank order (topic serial id); keep it
+      // deterministic for the variant picker and topic navigation.
+      db.select().from(topics).where(eq(topics.bankId, bankId)).orderBy(asc(topics.id)),
     )
   },
 

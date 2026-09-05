@@ -45,10 +45,9 @@ export interface SubjectBase {
 export const SUBJECT_BASES = [
   { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true,  demoData: false, examPresets: [],                                          closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_yhq' },
   { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_rustili', telegramChatId: '-1003975984861' },
-  // FIXPLAN 4-punkt (2026-08-23): quyidagi 6 fanda savol banki bo'sh (0 savol,
-  // faqat dataSourceId band qilingan) — "tez kunda" holatida locked, tanlab
-  // bo'lmaydi. Kontent kiritilgach `available: true`ga o'tkaziladi.
-  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_fizika_group' },
+  // Physics Test Print banki qo'shilgan; qolgan fanlar kontent kiritilguncha
+  // `available: false` holatida qoladi.
+  { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_fizika_group' },
   { id: 'matematika', name: 'Matematika',              nameRu: 'Математика',                 icon: 'π',  dataSourceId: 'math_db',          available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_matematika_group' },
   { id: 'kimyo',      name: 'Kimyo',                   nameRu: 'Химия',                      icon: '🧪', dataSourceId: 'chemistry_db',     available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_kimyo_group' },
   { id: 'ingliz',     name: 'Ingliz tili',             nameRu: 'Английский язык',            icon: '🇬🇧', dataSourceId: 'english_db',       available: false, demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_ingliz_group' },

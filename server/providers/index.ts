@@ -1,6 +1,7 @@
 import type { QuestionBankProvider } from './QuestionBankProvider'
 import { DefaultQuestionBankProvider } from './default.provider'
 import { RussianQuestionBankProvider } from './russian.provider'
+import { PhysicsQuestionBankProvider } from './physics.provider'
 
 /**
  * dataSourceId → provider instance map.
@@ -9,6 +10,7 @@ import { RussianQuestionBankProvider } from './russian.provider'
 const PROVIDERS: Record<string, QuestionBankProvider> = {
   traffic_rules_db: new DefaultQuestionBankProvider('traffic_rules_db'),
   russian_db:       new RussianQuestionBankProvider(),
+  physics_db:       new PhysicsQuestionBankProvider(),
 }
 
 export function getProvider(dataSourceId: string): QuestionBankProvider {

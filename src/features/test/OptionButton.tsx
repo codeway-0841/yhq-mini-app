@@ -2,6 +2,7 @@ import { Check, X } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
+import MathText from '../../shared/components/MathText'
 
 export type Option = { id: string; text: string }
 
@@ -63,7 +64,7 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
           <span className={cn('flex size-8 flex-none items-center justify-center rounded-xl text-xs font-semibold shadow-2xs', chip)}>
             {indexLabel ?? option.id.toUpperCase()}
           </span>
-          <span className="text-base text-pfg">{option.text}</span>
+          <MathText text={option.text} className="text-base text-pfg" />
         </div>
         {icon}
       </div>
