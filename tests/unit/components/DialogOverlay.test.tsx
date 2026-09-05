@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import DialogOverlay from '../../../src/shared/components/DialogOverlay'
+import { haptics } from '../../../src/platform/haptics'
 
 afterEach(() => {
   document.body.style.overflow = ''
@@ -219,6 +220,29 @@ describe('DialogOverlay component', () => {
       vi.useRealTimers()
     })
 
+    it('commits an accepted swipe even if dismiss policy changes during exit animation', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      const sheet = (allowed: boolean) => (
+        <DialogOverlay onClose={handleClose} swipeToDismiss canDismiss={() => allowed}>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const { rerender } = render(sheet(true))
+      const handle = screen.getByTestId('handle')
+
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 190, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 190, clientX: 100 })
+      rerender(sheet(false))
+
+      vi.advanceTimersByTime(300)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
     it('short drag snap-back does not trigger onClose', () => {
       vi.useFakeTimers()
       const handleClose = vi.fn()
@@ -264,26 +288,24 @@ describe('DialogOverlay component', () => {
     })
 
     it('threshold haptic fires only once during a downward drag gesture', () => {
-      import('../../../src/platform/haptics').then(({ haptics }) => {
-        const thresholdSpy = vi.spyOn(haptics, 'threshold')
-        render(
-          <DialogOverlay onClose={() => {}} swipeToDismiss>
-            <div style={{ height: '300px' }}>
-              <div data-drag-handle data-testid="handle">Handle</div>
-            </div>
-          </DialogOverlay>
-        )
-        const handle = screen.getByTestId('handle')
-        firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
-        // Cross threshold (threshold distance is ~75px)
-        firePointer('pointermove', handle, { clientY: 120, clientX: 100 })
-        firePointer('pointermove', handle, { clientY: 140, clientX: 100 })
-        firePointer('pointermove', handle, { clientY: 160, clientX: 100 })
-        firePointer('pointerup', handle, { clientY: 160, clientX: 100 })
+      const thresholdSpy = vi.spyOn(haptics, 'threshold')
+      render(
+        <DialogOverlay onClose={() => {}} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-drag-handle data-testid="handle">Handle</div>
+          </div>
+        </DialogOverlay>
+      )
+      const handle = screen.getByTestId('handle')
+      firePointer('pointerdown', handle, { clientY: 10, clientX: 100 })
+      // Cross threshold (threshold distance is ~75px)
+      firePointer('pointermove', handle, { clientY: 120, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 140, clientX: 100 })
+      firePointer('pointermove', handle, { clientY: 160, clientX: 100 })
+      firePointer('pointerup', handle, { clientY: 160, clientX: 100 })
 
-        expect(thresholdSpy).toHaveBeenCalledTimes(1)
-        thresholdSpy.mockRestore()
-      })
+      expect(thresholdSpy).toHaveBeenCalledTimes(1)
+      thresholdSpy.mockRestore()
     })
 
     it('pointercancel does not close sheet and resets drag state', () => {
@@ -398,6 +420,29 @@ describe('DialogOverlay component', () => {
 
       fireEvent.keyDown(document, { key: 'Escape' })
       expect(handleClose).not.toHaveBeenCalled()
+    })
+
+    it('changing canDismiss identity does not re-register the modal or steal focus', () => {
+      const trigger = document.createElement('button')
+      document.body.appendChild(trigger)
+      trigger.focus()
+
+      const { rerender } = render(
+        <DialogOverlay onClose={() => {}} canDismiss={() => true}>
+          <input data-testid="stable-input" />
+        </DialogOverlay>
+      )
+      const input = screen.getByTestId('stable-input')
+      input.focus()
+
+      rerender(
+        <DialogOverlay onClose={() => {}} canDismiss={() => true}>
+          <input data-testid="stable-input" />
+        </DialogOverlay>
+      )
+
+      expect(document.activeElement).toBe(input)
+      trigger.remove()
     })
 
     it('swipeToDismiss does nothing when position="center"', () => {

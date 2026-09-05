@@ -113,7 +113,7 @@ export default function ResultsModal({
         })
         if (res.sentToTelegram) {
           playSound('win')
-          haptics.notify('success')
+          haptics.success()
           setImageSentToBot(true)
           return
         }

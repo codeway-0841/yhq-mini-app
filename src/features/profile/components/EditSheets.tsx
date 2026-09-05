@@ -74,9 +74,9 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
       onClose={onClose}
       backdropClassName="bg-black/60"
       labelId="phone-edit-title"
-      swipeToDismiss={!isDirty}
+      swipeToDismiss
       closeOnBackdrop={!isDirty}
-      canDismiss={(reason) => !isDirty || reason === 'button'}
+      canDismiss={() => !isDirty}
     >
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />

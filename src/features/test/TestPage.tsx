@@ -155,6 +155,7 @@ export default function TestPage() {
     selected,
     earnedXpTotal,
     earnedCoinsTotal,
+    rewardedQuestionIds,
     resetRewards,
     getOptionState,
     handleSelect,
@@ -183,6 +184,9 @@ export default function TestPage() {
     answers,
     selectedHistory,
     correctOpts,
+    earnedXp: earnedXpTotal,
+    earnedCoins: earnedCoinsTotal,
+    rewardedQuestionIds,
     cheatViolations,
     isFinished,
     locationKey: location.key,
@@ -260,7 +264,10 @@ export default function TestPage() {
     restoreState(
       r && r.answers.length === len ? [...r.answers] : Array(len).fill(null),
       r && r.selected.length === len ? [...r.selected] : Array(len).fill(null),
-      r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null)
+      r && r.correctOptions?.length === len ? [...r.correctOptions] : Array(len).fill(null),
+      r?.earnedXp ?? 0,
+      r?.earnedCoins ?? 0,
+      r?.rewardedQuestionIds ?? [],
     )
     resetViolations(r?.cheatViolations ?? 0)
     const expired = !!r && remainingSeconds(r.startedAt, totalSeconds) === 0

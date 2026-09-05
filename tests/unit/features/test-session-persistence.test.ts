@@ -31,6 +31,7 @@ describe('Test Session Persistence & Recovery (Regression Guard)', () => {
       correctAnswer: 'a',
       duplicate: false,
       coinsEarned: 1,
+      xpEarned: 10,
     })
 
     const { result: sessionResult } = renderHook(() =>
@@ -73,6 +74,9 @@ describe('Test Session Persistence & Recovery (Regression Guard)', () => {
           answers: flowResult.current.answers,
           selectedHistory: flowResult.current.selectedHistory,
           correctOpts: flowResult.current.correctOpts,
+          earnedXp: flowResult.current.earnedXpTotal,
+          earnedCoins: flowResult.current.earnedCoinsTotal,
+          rewardedQuestionIds: flowResult.current.rewardedQuestionIds,
           cheatViolations: 0,
           isFinished: false,
           locationKey,
@@ -95,6 +99,9 @@ describe('Test Session Persistence & Recovery (Regression Guard)', () => {
       answers: flowResult.current.answers,
       selectedHistory: flowResult.current.selectedHistory,
       correctOpts: flowResult.current.correctOpts,
+      earnedXp: flowResult.current.earnedXpTotal,
+      earnedCoins: flowResult.current.earnedCoinsTotal,
+      rewardedQuestionIds: flowResult.current.rewardedQuestionIds,
       cheatViolations: 0,
       isFinished: false,
       locationKey,
@@ -106,6 +113,9 @@ describe('Test Session Persistence & Recovery (Regression Guard)', () => {
     expect(savedSnap?.answers).toEqual(expect.arrayContaining(['correct']))
     expect(savedSnap?.selected).toEqual(expect.arrayContaining(['a']))
     expect(savedSnap?.correctOptions).toEqual(expect.arrayContaining(['a']))
+    expect(savedSnap?.earnedXp).toBe(10)
+    expect(savedSnap?.earnedCoins).toBe(1)
+    expect(savedSnap?.rewardedQuestionIds).toEqual([activeQuestions[0].id])
 
     // 4-bosqich: Sahifani qayta yuklash (Remount / Reload simulyatsiyasi)
     // Yangi mountda useTestSession snap'ni o'qiydi
@@ -134,5 +144,8 @@ describe('Test Session Persistence & Recovery (Regression Guard)', () => {
     expect(restoredAnswers[0]).toBe('correct')
     expect(restoredSelected[0]).toBe('a')
     expect(restoredCorrectOpts[0]).toBe('a')
+    expect(snap?.earnedXp).toBe(10)
+    expect(snap?.earnedCoins).toBe(1)
+    expect(snap?.rewardedQuestionIds).toEqual([activeQuestions[0].id])
   })
 })

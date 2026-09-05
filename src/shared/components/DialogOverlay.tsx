@@ -2,7 +2,7 @@ import { useEffect, useRef, useCallback, type ReactNode } from 'react'
 import { registerModal } from '../lib/navigation'
 import { haptics } from '../../platform/haptics'
 
-export type CloseReason = 'backdrop' | 'escape' | 'back' | 'swipe' | 'button'
+export type CloseReason = 'backdrop' | 'escape' | 'back' | 'swipe'
 
 interface Props {
   onClose: () => void
@@ -75,16 +75,25 @@ export default function DialogOverlay({
   const idRef = useRef<symbol>(Symbol('dialog'))
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
+  const canDismissRef = useRef(canDismiss)
+  canDismissRef.current = canDismiss
+  const closeOnBackdropRef = useRef(closeOnBackdrop)
+  closeOnBackdropRef.current = closeOnBackdrop
   const prevFocusRef = useRef<Element | null>(null)
 
-  // Barcha yopilish yo'llarini birlashtiruvchi markaziy yopilish mexanizmi
+  // Overlay boshqaradigan barcha yopilish yo'llari uchun yagona siyosat va commit nuqtasi.
   const closeOnceRef = useRef(false)
   const closeTimerRef = useRef<number | null>(null)
 
-  const requestClose = useCallback((reason: CloseReason) => {
+  const isDismissAllowed = useCallback((reason: CloseReason) => {
+    if (canDismissRef.current && !canDismissRef.current(reason)) return
+    if (closeOnBackdropRef.current === false && reason === 'backdrop') return
+
+    return true
+  }, [])
+
+  const commitClose = useCallback(() => {
     if (closeOnceRef.current) return
-    if (canDismiss && !canDismiss(reason)) return
-    if (closeOnBackdrop === false && reason === 'backdrop') return
 
     closeOnceRef.current = true
     if (closeTimerRef.current !== null) {
@@ -92,7 +101,12 @@ export default function DialogOverlay({
       closeTimerRef.current = null
     }
     onCloseRef.current()
-  }, [canDismiss, closeOnBackdrop])
+  }, [])
+
+  const requestClose = useCallback((reason: CloseReason) => {
+    if (!isDismissAllowed(reason)) return
+    commitClose()
+  }, [commitClose, isDismissAllowed])
 
   // Gesture refs (React re-render'siz direct DOM manipulyatsiyasi uchun)
   const isClosingRef = useRef(false)
@@ -349,8 +363,8 @@ export default function DialogOverlay({
     const sheetHeight = sheet?.clientHeight || 400
     const thresholdDistance = Math.min(sheetHeight * 0.25, 140)
 
-    const canSwipeDismiss = canDismiss ? canDismiss('swipe') : true
-    const shouldClose = canSwipeDismiss && (finalY > thresholdDistance || (finalVelocity > 0.75 && finalY > 20))
+    const shouldClose = isDismissAllowed('swipe')
+      && (finalY > thresholdDistance || (finalVelocity > 0.75 && finalY > 20))
     const prefersReduced = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
 
     if (shouldClose) {
@@ -368,11 +382,13 @@ export default function DialogOverlay({
       }
 
       if (exitDuration === 0) {
-        requestClose('swipe')
+        commitClose()
       } else {
         closeTimerRef.current = window.setTimeout(() => {
           closeTimerRef.current = null
-          requestClose('swipe')
+          // Gesture qabul qilingach siyosatni ikkinchi marta tekshirmaymiz:
+          // aks holda animatsiya paytidagi prop o'zgarishi sheetni yashirin qoldirishi mumkin.
+          commitClose()
         }, exitDuration)
       }
     } else {

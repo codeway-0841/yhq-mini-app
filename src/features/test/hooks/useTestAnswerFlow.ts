@@ -33,6 +33,7 @@ export function useTestAnswerFlow({
   const [coinPop, setCoinPop]                 = useState(0)
   const [earnedXpTotal, setEarnedXpTotal]     = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
+  const [rewardedQuestionIds, setRewardedQuestionIds] = useState<number[]>([])
 
   const autoNextTimerRef = useRef<number | null>(null)
   const correctStreakRef = useRef(0)
@@ -125,6 +126,7 @@ export function useTestAnswerFlow({
       // Deduplicate authoritative rewards by questionId
       if (!outcome.duplicate && !rewardedQuestionIdsRef.current.has(questionId)) {
         rewardedQuestionIdsRef.current.add(questionId)
+        setRewardedQuestionIds((prev) => [...prev, questionId])
         if (outcome.xpEarned) {
           setEarnedXpTotal((prev) => prev + outcome.xpEarned!)
         }
@@ -178,6 +180,7 @@ export function useTestAnswerFlow({
         }
         if (!rewardedQuestionIdsRef.current.has(info.questionId)) {
           rewardedQuestionIdsRef.current.add(info.questionId)
+          setRewardedQuestionIds((prev) => [...prev, info.questionId])
           if (info.xpEarned) {
             setEarnedXpTotal((prev) => prev + info.xpEarned!)
           }
@@ -191,6 +194,7 @@ export function useTestAnswerFlow({
 
   const resetRewards = useCallback(() => {
     rewardedQuestionIdsRef.current.clear()
+    setRewardedQuestionIds([])
     setEarnedXpTotal(0)
     setEarnedCoinsTotal(0)
   }, [])
@@ -199,10 +203,17 @@ export function useTestAnswerFlow({
     rAnswers: (string | null)[],
     rSelected: (string | null)[],
     rCorrectOpts: (string | null)[],
+    rEarnedXp = 0,
+    rEarnedCoins = 0,
+    rRewardedQuestionIds: number[] = [],
   ) => {
     setAnswers(rAnswers)
     setSelectedHistory(rSelected)
     setCorrectOpts(rCorrectOpts)
+    setEarnedXpTotal(rEarnedXp)
+    setEarnedCoinsTotal(rEarnedCoins)
+    rewardedQuestionIdsRef.current = new Set(rRewardedQuestionIds)
+    setRewardedQuestionIds([...rRewardedQuestionIds])
     setSubmitting(false)
   }
 
@@ -221,6 +232,7 @@ export function useTestAnswerFlow({
     revealedId,
     earnedXpTotal,
     earnedCoinsTotal,
+    rewardedQuestionIds,
     resetRewards,
     getOptionState,
     handleSelect,

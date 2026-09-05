@@ -1,6 +1,7 @@
 /**
  * ⚡ Speed Round — 20 tasodifiy savol × 10 SONIYA.
- * Vaqt tugasa — savol "xato" deb yozilib avtomatik keyingisiga o'tiladi.
+ * Vaqt tugasa — server natijasi yozilib avtomatik keyingisiga o'tiladi;
+ * offline javob esa sync bo'lguncha "pending" saqlanadi.
  * Halqa timer: aksent → sariq (≤5s) → qizil (≤3s).
  * Natija — umumiy ResultsModal'da (animatsiyali DonutChart bilan).
  */
@@ -16,9 +17,11 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { ResultsModal, type QuestionResult } from '../test'
 import { shuffleArray } from '../../shared/lib/seeded'
+import { onResultSync } from '../../shared/lib/outbox'
 
 const TIME_LIMIT = 10   // soniya / savol
 const QUESTIONS  = 20
+type SpeedAnswer = 'correct' | 'wrong' | 'pending'
 
 export default function SpeedPage() {
   const navigate = useNavigate()
@@ -40,7 +43,7 @@ export default function SpeedPage() {
   }, [questions, settings.shuffleOptions])
 
   const [idx, setIdx]           = useState(0)
-  const [answers, setAnswers]   = useState<('correct' | 'wrong')[]>([])
+  const [answers, setAnswers]   = useState<SpeedAnswer[]>([])
   const [selected, setSelected] = useState<string | null>(null)
   /** Server reveal: javobdan keyingina to'g'ri variant ko'rinadi */
   const [revealed, setRevealed] = useState<string | null>(null)
@@ -50,6 +53,8 @@ export default function SpeedPage() {
   const [earnedXpTotal, setEarnedXpTotal] = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
   const rewardedQuestionIdsRef = useRef<Set<number>>(new Set())
+  const pendingQuestionIdsRef = useRef<Set<number>>(new Set())
+  const pendingResolutionRef = useRef<Map<number, Exclude<SpeedAnswer, 'pending'>>>(new Map())
   const advanceTimerRef = useRef<number | null>(null)
 
   const q = qs[idx]
@@ -76,8 +81,19 @@ export default function SpeedPage() {
     if (advanceTimerRef.current !== null) clearTimeout(advanceTimerRef.current)
   }, [])
 
-  const advance = useCallback((isCorrect: boolean) => {
-    setAnswers((a) => [...a, isCorrect ? 'correct' : 'wrong'])
+  const addReward = useCallback((questionId: number, xpEarned = 0, coinsEarned = 0) => {
+    if (rewardedQuestionIdsRef.current.has(questionId)) return
+    rewardedQuestionIdsRef.current.add(questionId)
+    if (xpEarned) setEarnedXpTotal((prev) => prev + xpEarned)
+    if (coinsEarned) setEarnedCoinsTotal((prev) => prev + coinsEarned)
+  }, [])
+
+  const advance = useCallback((status: SpeedAnswer) => {
+    setAnswers((previous) => {
+      const next = [...previous]
+      next[idx] = status
+      return next
+    })
     setSelected(null)
     setRevealed(null)
     if (idx + 1 >= qs.length) {
@@ -98,12 +114,23 @@ export default function SpeedPage() {
       // (fatal rad etuvida reveal yo'q — jimgina keyingisiga o'tamiz)
       const outcome = q ? await submitAnswer(q.id, null, answerTimer.elapsed()) : null
       setBusy(false)
-      if (outcome && !('fatal' in outcome)) setRevealed(outcome.correctAnswer)
+      const scored = outcome && !('fatal' in outcome) ? outcome : null
+      if (scored) {
+        setRevealed(scored.correctAnswer)
+        if (!scored.duplicate) addReward(q.id, scored.xpEarned, scored.coinsEarned)
+      } else if (outcome === null && q) {
+        pendingQuestionIdsRef.current.add(q.id)
+      }
       playSound('error')
       haptics.error()
-      advanceTimerRef.current = window.setTimeout(() => advance(false), 700)
+      const questionId = q?.id
+      advanceTimerRef.current = window.setTimeout(() => {
+        const resolved = questionId == null ? undefined : pendingResolutionRef.current.get(questionId)
+        if (questionId != null) pendingResolutionRef.current.delete(questionId)
+        advance(resolved ?? (outcome === null ? 'pending' : 'wrong'))
+      }, 700)
     })()
-  }, [advance, busy, q, submitAnswer, answerTimer])
+  }, [advance, addReward, busy, q, submitAnswer, answerTimer])
 
   const handleSelect = useCallback((optId: string) => {
     if (answered || busy || !q) return
@@ -125,16 +152,38 @@ export default function SpeedPage() {
           playSound('error')
         }
 
-        if (!scored.duplicate && !rewardedQuestionIdsRef.current.has(q.id)) {
-          rewardedQuestionIdsRef.current.add(q.id)
-          if (scored.xpEarned) setEarnedXpTotal((prev) => prev + scored.xpEarned)
-          if (scored.coinsEarned) setEarnedCoinsTotal((prev) => prev + scored.coinsEarned)
-        }
+        if (!scored.duplicate) addReward(q.id, scored.xpEarned, scored.coinsEarned)
+      } else if (outcome === null) {
+        pendingQuestionIdsRef.current.add(q.id)
       }
       // Offline/fatal: reveal yo'q — faqat tanlangan variant belgilanib qoladi
-      advanceTimerRef.current = window.setTimeout(() => advance(scored?.correct ?? false), scored ? 800 : 400)
+      const questionId = q.id
+      advanceTimerRef.current = window.setTimeout(() => {
+        const resolved = pendingResolutionRef.current.get(questionId)
+        pendingResolutionRef.current.delete(questionId)
+        const fallback: SpeedAnswer = outcome === null ? 'pending' : scored?.correct ? 'correct' : 'wrong'
+        advance(resolved ?? fallback)
+      }, scored ? 800 : 400)
     })()
-  }, [answered, busy, q, submitAnswer, advance, answerTimer])
+  }, [answered, busy, q, submitAnswer, advance, addReward, answerTimer])
+
+  // Offline javob serverga yetgach natija va authoritative rewardni shu sessiyada yangilash.
+  useEffect(() => onResultSync((info) => {
+    if (info.duplicate || !pendingQuestionIdsRef.current.has(info.questionId)) return
+    const questionIndex = qs.findIndex((question) => question.id === info.questionId)
+    if (questionIndex === -1) return
+
+    const resolved: Exclude<SpeedAnswer, 'pending'> = info.correct ? 'correct' : 'wrong'
+    pendingQuestionIdsRef.current.delete(info.questionId)
+    pendingResolutionRef.current.set(info.questionId, resolved)
+    setAnswers((previous) => {
+      if (previous[questionIndex] !== 'pending') return previous
+      const next = [...previous]
+      next[questionIndex] = resolved
+      return next
+    })
+    addReward(info.questionId, info.xpEarned ?? 0, info.coinsEarned ?? 0)
+  }), [qs, addReward])
 
   if (!q) {
     return <div className="flex items-center justify-center min-h-screen text-pmuted">Yuklanmoqda...</div>
@@ -147,7 +196,7 @@ export default function SpeedPage() {
 
   const results: QuestionResult[] = qs.map((question, i) => ({
     questionId: question.id,
-    status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as QuestionResult['status'],
+    status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : answers[i] === 'pending' ? 'pending' : 'unanswered') as QuestionResult['status'],
   }))
 
   if (finished) {
@@ -159,6 +208,8 @@ export default function SpeedPage() {
         earnedCoins={earnedCoinsTotal}
         onRetry={() => {
           rewardedQuestionIdsRef.current.clear()
+          pendingQuestionIdsRef.current.clear()
+          pendingResolutionRef.current.clear()
           setEarnedXpTotal(0)
           setEarnedCoinsTotal(0)
           setIdx(0)

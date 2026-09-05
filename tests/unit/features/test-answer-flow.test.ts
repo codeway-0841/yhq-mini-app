@@ -150,7 +150,6 @@ describe('useTestAnswerFlow (Production Hook Tests)', () => {
     const goTo = vi.fn()
     const onToast = vi.fn()
 
-    let current = 0
     const { result, rerender, unmount } = renderHook(
       (props: { current: number }) =>
         useTestAnswerFlow({
@@ -286,23 +285,30 @@ describe('useTestAnswerFlow (Production Hook Tests)', () => {
         xpEarned: 15,
       })
 
-    const { result } = renderHook(() =>
+    const { result, rerender } = renderHook(({ current }: { current: number }) =>
       useTestAnswerFlow({
         activeQuestions,
-        current: 0,
+        current,
         submitAnswer: mockSubmit,
         answerTimer: { elapsed: () => 1500 },
         goTo: vi.fn(),
         onToast: vi.fn(),
-      })
+      }),
+      { initialProps: { current: 0 } },
     )
 
     await act(async () => {
       result.current.handleSelect('opt-A')
     })
 
-    expect(result.current.earnedXpTotal).toBe(10)
-    expect(result.current.earnedCoinsTotal).toBe(1)
+    rerender({ current: 1 })
+    await act(async () => {
+      result.current.handleSelect('opt-B')
+    })
+
+    expect(result.current.earnedXpTotal).toBe(25)
+    expect(result.current.earnedCoinsTotal).toBe(3)
+    expect(result.current.rewardedQuestionIds).toEqual([101, 102])
   })
 
   it('does not grant rewards on duplicate answers or duplicate question IDs', async () => {
@@ -332,6 +338,27 @@ describe('useTestAnswerFlow (Production Hook Tests)', () => {
 
     expect(result.current.earnedXpTotal).toBe(0)
     expect(result.current.earnedCoinsTotal).toBe(0)
+  })
+
+  it('restores authoritative reward totals and deduplication IDs', () => {
+    const { result } = renderHook(() =>
+      useTestAnswerFlow({
+        activeQuestions: [Q(101)],
+        current: 0,
+        submitAnswer: vi.fn(),
+        answerTimer: { elapsed: () => 1500 },
+        goTo: vi.fn(),
+        onToast: vi.fn(),
+      })
+    )
+
+    act(() => {
+      result.current.restoreState(['correct'], ['opt-A'], ['opt-A'], 25, 3, [101])
+    })
+
+    expect(result.current.earnedXpTotal).toBe(25)
+    expect(result.current.earnedCoinsTotal).toBe(3)
+    expect(result.current.rewardedQuestionIds).toEqual([101])
   })
 
   it('does not grant rewards on offline responses until outbox sync occurs', async () => {

@@ -39,6 +39,11 @@ export interface TestSessionSnapshot {
   /** Server'dan reveal qilingan TO'G'RI variant id'lari (javobgacha null).
    *  Reload'da xato javoblar uchun "to'g'ri javob highlight" qayta ko'rinadi. */
   correctOptions?: (string | null)[]
+  /** Shu sessiyada server tasdiqlagan mukofotlar (eski snapshotlarda yo'q). */
+  earnedXp?:        number
+  earnedCoins?:     number
+  /** Reward replay/resume'da ikki marta qo'shilmasligi uchun. */
+  rewardedQuestionIds?: number[]
   cheatViolations?: number
   startedAt:       number
   finished:        boolean

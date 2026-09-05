@@ -15,6 +15,9 @@ export interface UseTestSessionSaveParams {
   answers?:         (string | null)[]
   selectedHistory?: (string | null)[]
   correctOpts?:     (string | null)[]
+  earnedXp?:        number
+  earnedCoins?:     number
+  rewardedQuestionIds?: number[]
   cheatViolations?: number
   isFinished:       boolean
   locationKey:      string
@@ -36,6 +39,9 @@ export function useTestSessionSave(params: UseTestSessionSaveParams) {
     answers,
     selectedHistory,
     correctOpts,
+    earnedXp = 0,
+    earnedCoins = 0,
+    rewardedQuestionIds,
     cheatViolations,
     isFinished,
     locationKey,
@@ -75,11 +81,14 @@ export function useTestSessionSave(params: UseTestSessionSaveParams) {
       answers,
       selected:        selectedHistory,
       correctOptions:  correctOpts,
+      earnedXp,
+      earnedCoins,
+      rewardedQuestionIds: rewardedQuestionIds ?? [],
       cheatViolations,
       startedAt:       startedAtRef.current,
       finished:        isFinished,
     })
-  }, [enabled, activeQuestions, current, answers, selectedHistory, correctOpts, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
+  }, [enabled, activeQuestions, current, answers, selectedHistory, correctOpts, earnedXp, earnedCoins, rewardedQuestionIds, cheatViolations, isFinished, sessionKey, subjectId, mode, stateTitle])
 }
 
 interface UseTestSessionParams {
