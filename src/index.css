@@ -94,6 +94,27 @@ input, button, select, textarea {
 }
 body { padding-top: var(--safe-top-body, 0px); }
 
+/* Splash, login va onboarding document scroll yaratmasdan aynan ko'rinadigan
+   viewportni egallaydi. body safe-top padding olgani uchun 100vh/min-h-screen
+   bu ekranlarda safe-area miqdoricha ortiqcha balandlik hosil qilardi. */
+.first-launch-screen {
+  width: 100%;
+  height: 100%;
+  height: calc(100dvh - var(--safe-top-body, 0px));
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+/* Juda qisqa telefonlarda login mazmunini kesmasdan vertikal bo'shliqlarni
+   ixchamlaydi. Oddiy ekranlarda premium, nafasli kompozitsiya saqlanadi. */
+@media (max-height: 600px) {
+  .telegram-login-shell { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .telegram-login-brand { margin-bottom: 0.5rem; }
+  .telegram-login-benefits { margin-top: 0.75rem; margin-bottom: 0.75rem; }
+  .telegram-login-trust { margin-top: 0.5rem; }
+}
+
 /* Layout root balandligi: body padding-top bilan min-h-screen (100vh) qo'shilib
    qisqa sahifalarda 88px ortiqcha scroll hosil qilmasligi uchun: */
 #root > div.relative {
@@ -238,6 +259,13 @@ body[data-theme='light'] .hero-gradient-card {
   to   { width: 96%; }
 }
 .splash-progress { animation: splashProgress 6s ease-out forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-progress {
+    width: 72%;
+    animation: none;
+  }
+}
 
 @keyframes splashFloat {
   0%, 100% { transform: translateY(0) var(--deco-rotate, rotate(0deg)); }
@@ -1036,11 +1064,11 @@ body[data-no-animation='true'] .animate-scorePop {
 @layer components {
   /* Standart kontent kartasi */
   .app-card {
-    @apply rounded-2xl bg-pcard shadow-xs;
+    @apply rounded-2xl bg-pcard shadow-sm;
   }
   /* Bosiladigan interaktiv karta (hover/active silliq harakat bilan) */
   .app-card-interactive {
-    @apply rounded-2xl bg-pcard shadow-xs transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.99] cursor-pointer;
+    @apply rounded-2xl bg-pcard shadow-sm transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.99] cursor-pointer;
   }
   /* Pastdan chiquvchi toza BottomSheet */
   .app-sheet {
@@ -1052,7 +1080,7 @@ body[data-no-animation='true'] .animate-scorePop {
   }
   /* Kichik micro-chip / badge */
   .app-chip {
-    @apply rounded-xl bg-psurface text-pfg shadow-2xs;
+    @apply rounded-xl bg-psurface text-pfg shadow-sm;
   }
 }
 

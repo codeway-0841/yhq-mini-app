@@ -1,53 +1,83 @@
 import { test, expect } from '@playwright/test'
+import { injectTelegramWebApp } from './helpers/telegram'
+
+async function expectDocumentToFitViewport(page: import('@playwright/test').Page) {
+  const dimensions = await page.evaluate(() => ({
+    viewportHeight: document.documentElement.clientHeight,
+    documentHeight: document.documentElement.scrollHeight,
+    bodyHeight: document.body.scrollHeight,
+  }))
+  expect(dimensions.documentHeight).toBeLessThanOrEqual(dimensions.viewportHeight + 1)
+  expect(dimensions.bodyHeight).toBeLessThanOrEqual(dimensions.viewportHeight + 1)
+}
+
+async function expectControlInViewport(control: import('@playwright/test').Locator) {
+  const box = await control.boundingBox()
+  expect(box).not.toBeNull()
+  const viewport = control.page().viewportSize()
+  expect(viewport).not.toBeNull()
+  expect(box!.y).toBeGreaterThanOrEqual(0)
+  expect(box!.y + box!.height).toBeLessThanOrEqual(viewport!.height)
+}
 
 test.describe('Onboarding (Yangi Foydalanuvchi) E2E', () => {
+  test.use({ viewport: { width: 360, height: 640 } })
+
   test.beforeEach(async ({ page }) => {
-    // Haqiqiy telegram-web-app.js mock'ni shartsiz ustiga yozardi
-    // (helpers/telegram.ts'dagi izohga qarang) — bloklaymiz.
+    await injectTelegramWebApp(page, {}, { onboarded: false })
+  })
+
+  test('kichik ekranda document scrollsiz onboarding oqimini yakunlaydi', async ({ page }) => {
+    await page.goto('/app.html#/')
+    await expect(page.getByRole('heading', { name: /Xush kelibsiz/i })).toBeVisible()
+    await expectDocumentToFitViewport(page)
+
+    const start = page.getByRole('button', { name: /Boshlash/i })
+    await expectControlInViewport(start)
+    await start.click()
+    await expect(page.getByRole('heading', { name: /Qaysi fanni/i })).toBeVisible()
+    await expectDocumentToFitViewport(page)
+
+    const continueButton = page.getByRole('button', { name: /Davom etish/i })
+    await expectControlInViewport(continueButton)
+    await continueButton.click()
+    await expect(page.getByRole('heading', { name: /Kuniga qancha vaqt/i })).toBeVisible()
+    await expectDocumentToFitViewport(page)
+
+    const finish = page.getByRole('button', { name: /Boshlash/i })
+    await expectControlInViewport(finish)
+    await finish.click()
+    await expect(page.locator('main.first-launch-screen')).toHaveCount(0)
+  })
+})
+
+test.describe('Login first-launch layout', () => {
+  test.use({ viewport: { width: 360, height: 640 } })
+
+  test.beforeEach(async ({ page }) => {
     await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
       route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
     )
+    await page.route(
+      (url) => url.pathname.startsWith('/api/') && !url.pathname.includes('/src/'),
+      async (route) => {
+        const pathname = new URL(route.request().url()).pathname
+        const body = pathname.includes('/questions') || pathname.includes('/topics') ? [] : { ok: true }
+        await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(body) })
+      },
+    )
     await page.addInitScript(() => {
-      try {
-        localStorage.removeItem('yhq-onboarded')
-      } catch {
-        // ignore
-      }
-      ;(window as any).Telegram = {
-        WebApp: {
-          ready: () => {},
-          expand: () => {},
-          close: () => {},
-          initData:
-            'query_id=mock&user=%7B%22id%22%3A999999%2C%22first_name%22%3A%22NewUser%22%7D&auth_date=1700000000&hash=mockhash',
-          initDataUnsafe: { user: { id: 999999, first_name: 'NewUser' } },
-          themeParams: {},
-          BackButton: { show: () => {}, hide: () => {}, onClick: () => {}, offClick: () => {} },
-          HapticFeedback: { impactOccurred: () => {} },
-          version: '7.0',
-          platform: 'android',
-        },
-      }
+      localStorage.clear()
+      delete (window as { Telegram?: unknown }).Telegram
     })
   })
 
-  test('onboarding oqimini to‘liq yakunlash', async ({ page }) => {
+  test('kichik ekranda login document scroll yaratmaydi', async ({ page }) => {
     await page.goto('/app.html#/')
-    await expect(page.locator('body')).toBeVisible()
-
-    const startBtn = page.locator('button', { hasText: /Boshlash/i })
-    if (await startBtn.isVisible()) {
-      await startBtn.click()
-
-      const continueBtn = page.locator('button', { hasText: /Davom etish/i })
-      await expect(continueBtn).toBeVisible()
-      await continueBtn.click()
-
-      const finishBtn = page.locator('button', { hasText: /Boshlash/i })
-      await expect(finishBtn).toBeVisible()
-      await finishBtn.click()
-
-      await expect(page.locator('body')).toBeVisible()
-    }
+    await expect(page.getByRole('heading', { name: /KIVVI'ga xush kelibsiz/i })).toBeVisible()
+    await expect(page.getByText(/Progressingiz xavfsiz saqlanishi uchun/i)).toBeVisible()
+    await expect(page.getByText(/Xavfsiz kirish · parol talab qilinmaydi/i)).toBeVisible()
+    await expect(page.getByRole('button', { name: /Telegram orqali kirish/i })).toBeVisible()
+    await expectDocumentToFitViewport(page)
   })
 })

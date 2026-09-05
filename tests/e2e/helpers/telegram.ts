@@ -33,6 +33,10 @@ export const mockProfile = {
   providers: ['telegram'],
 }
 
+interface TelegramMockOptions {
+  onboarded?: boolean
+}
+
 const mockQuestions = Array.from({ length: 40 }, (_, i) => ({
   id: i + 1,
   bankId: 'traffic_rules_db',
@@ -49,7 +53,11 @@ const mockTopics = [
   { id: 1, nameUz: 'Umumiy qoidalar', nameRu: 'Общие правила', bankId: 'traffic_rules_db' },
 ]
 
-export async function injectTelegramWebApp(page: Page, overrides: Record<string, any> = {}) {
+export async function injectTelegramWebApp(
+  page: Page,
+  overrides: Record<string, any> = {},
+  options: TelegramMockOptions = {},
+) {
   // Haqiqiy telegram-web-app.js mock'ni SHARTSIZ ustiga yozadi
   // (script oxirida `window.Telegram.WebApp = WebApp`) — addInitScript'dagi mock
   // initData'siz real obyektga almashtirilardi va ilova LoginPage'ga tushardi
@@ -96,9 +104,10 @@ export async function injectTelegramWebApp(page: Page, overrides: Record<string,
     },
   )
 
-  await page.addInitScript((data) => {
+  await page.addInitScript(({ webAppOverrides, onboarded }) => {
     try {
-      localStorage.setItem('yhq-onboarded', '1')
+      if (onboarded) localStorage.setItem('yhq-onboarded', '1')
+      else localStorage.removeItem('yhq-onboarded')
       localStorage.setItem(
         'yhq-app-store',
         JSON.stringify({
@@ -209,8 +218,8 @@ export async function injectTelegramWebApp(page: Page, overrides: Record<string,
         showConfirm: (_msg: string, cb?: (ok: boolean) => void) => cb?.(true),
         version: '7.0',
         platform: 'android',
-        ...data,
+        ...webAppOverrides,
       },
     }
-  }, overrides)
+  }, { webAppOverrides: overrides, onboarded: options.onboarded ?? true })
 }

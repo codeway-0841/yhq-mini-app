@@ -18,7 +18,7 @@ import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import TelegramQrSheet from './components/TelegramQrSheet'
-import { BarChart3, QrCode, Smartphone, Target } from 'lucide-react'
+import { BarChart3, QrCode, ShieldCheck, Smartphone, Target } from 'lucide-react'
 
 /** Mobil brauzer = Telegram app o'rnatilgan bo'lishi ehtimoli yuqori → to'g'ridan-to'g'ri ochamiz.
  *  Desktop = Telegram Desktop bo'lmasligi mumkin → QR kod variantini ko'rsatamiz. */
@@ -217,9 +217,9 @@ export default function LoginPage() {
         <p className="text-[12px] font-semibold text-pdanger text-center mb-3 animate-fadeIn">{error}</p>
       )}
       {telegramLoginCode ? (
-        <div className="w-full flex flex-col items-center gap-2">
-          <span className="w-5 h-5 border-2 border-[#0088cc]/40 border-t-[#0088cc] rounded-full animate-spin" />
-          <p className="text-[12px] text-pmuted text-center">
+        <div className="flex w-full flex-col items-center gap-2" role="status" aria-live="polite">
+          <span aria-hidden="true" className="size-5 rounded-full border-2 border-pprimary/35 border-t-pprimary motion-safe:animate-spin" />
+          <p className="text-center text-sm leading-relaxed text-pmuted">
             {tt('authTgSharePhone')}
           </p>
           {/* QR sheet bekor qilinsa ham client adashib qolmasligi uchun —
@@ -229,9 +229,9 @@ export default function LoginPage() {
               href={telegramLoginUrl!}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2.5 px-4 py-3.5 bg-[#0088cc] rounded-2xl hover:bg-[#0077b5] active:scale-[0.98] transition-all shadow-md"
+              className="flex min-h-[52px] w-full cursor-pointer items-center justify-center gap-2.5 rounded-2xl bg-pprimary px-4 py-3 text-ponprimary shadow-md transition-[transform,filter] duration-150 hover:brightness-[1.06] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
             >
-              <svg className="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
+              <svg aria-hidden="true" className="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
               </svg>
               <span className="text-[14px] font-semibold text-white">{tt('authQrOpenBot')}</span>
@@ -240,7 +240,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => setQrOpen(true)}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#0088cc]/15 text-[#0088cc] hover:bg-[#0088cc]/25 active:scale-[0.98] transition-all shadow-xs"
+                className="app-card-interactive flex min-h-11 w-full items-center justify-center gap-2 px-4 py-2.5 text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
               >
                 <QrCode size={16} strokeWidth={2.5} />
                 <span className="text-[14px] font-semibold">{tt('authQrTitle')}</span>
@@ -253,12 +253,13 @@ export default function LoginPage() {
           type="button"
           onClick={startTelegramLogin}
           disabled={busy}
-          className="w-full flex items-center justify-center gap-3 px-4 py-4 bg-[#0088cc] rounded-2xl hover:bg-[#0077b5] active:scale-[0.98] transition-all disabled:opacity-50 shadow-lg shadow-[#0088cc]/25"
+          aria-busy={busy}
+          className="flex min-h-[52px] w-full cursor-pointer items-center justify-center gap-3 rounded-2xl bg-pprimary px-4 py-3 text-ponprimary shadow-md transition-[transform,filter] duration-150 hover:brightness-[1.06] active:scale-[0.98] disabled:cursor-wait disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
         >
           {busy ? (
-            <span className="w-5 h-5 border-2 border-white/50 border-t-white rounded-full animate-spin" />
+            <span aria-hidden="true" className="size-5 rounded-full border-2 border-white/50 border-t-white motion-safe:animate-spin" />
           ) : (
-            <svg className="w-5 h-5 fill-white" viewBox="0 0 24 24">
+            <svg aria-hidden="true" className="w-5 h-5 fill-white" viewBox="0 0 24 24">
               <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
             </svg>
           )}
@@ -273,60 +274,51 @@ export default function LoginPage() {
      foyda ro'yxati + bitta katta Telegram CTA (raqibdagi kabi toza modal). */
   if (!config.phoneEmailAuthEnabled) {
     const benefits = [
-      { icon: BarChart3,  cls: 'bg-psuccess/10 text-psuccess', key: 'authBenefitCloud' as const },
-      { icon: Target,     cls: 'bg-[#0088cc]/10 text-[#0088cc]', key: 'authBenefitDuel' as const },
-      { icon: Smartphone, cls: 'bg-pgold/10 text-pgold',           key: 'authBenefitSync' as const },
+      { icon: BarChart3, key: 'authBenefitCloud' as const },
+      { icon: Target, key: 'authBenefitDuel' as const },
+      { icon: Smartphone, key: 'authBenefitSync' as const },
     ]
     return (
-      <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-5 py-10 relative overflow-hidden">
-        {/* Yumshoq aksent glow */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] rounded-full bg-pprimary/10 blur-[130px] pointer-events-none" />
+      <div className="first-launch-screen isolate overflow-y-auto overscroll-contain bg-pcanvas">
+        <div className="telegram-login-shell flex min-h-full w-full flex-col items-center justify-center overflow-hidden px-5 py-[clamp(1rem,4dvh,2rem)]">
+          <main className="relative my-auto w-full max-w-[400px] motion-safe:animate-premiumIn">
+            <header className="telegram-login-brand mb-6 flex items-center justify-center gap-2.5">
+              <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
+              <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
+            </header>
 
-        <div className="relative w-full max-w-[400px] animate-premiumIn">
-          {/* Brend — K badge + wordmark (landing bilan bir xil assetlar) */}
-          <div className="flex items-center justify-center gap-2.5 mb-6">
-            <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
-            <img src="/images/brand-wordmark.webp" alt="kivvi" width={96} height={28} className="h-6 w-auto" />
-          </div>
+            <section aria-labelledby="telegram-login-title" className="text-center">
+              <h1 id="telegram-login-title" className="telegram-login-title text-[24px] font-bold leading-tight tracking-tight text-pfg">
+                {tt('authWelcome')}
+              </h1>
+              <p className="mx-auto mt-2 max-w-[320px] text-sm leading-relaxed text-pmuted">
+                {tt('authTgWelcomeSub')}
+              </p>
 
-          <div className="rounded-sheet bg-pcard px-6 py-8 flex flex-col items-center text-center shadow-2xl">
-            {/* Telegram ikonka */}
-            <div className="mb-4">
-              <div className="w-[68px] h-[68px] rounded-2xl bg-[#0088cc]/12 flex items-center justify-center">
-                <svg className="w-9 h-9 fill-[#0088cc]" viewBox="0 0 24 24">
-                  <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                </svg>
+              <ul className="telegram-login-benefits my-6 divide-y divide-pline overflow-hidden rounded-2xl bg-pcard text-left shadow-xs">
+                {benefits.map(({ icon: Icon, key }) => (
+                  <li key={key} className="flex min-h-[52px] items-center gap-3.5 px-4 py-3">
+                    <Icon aria-hidden="true" size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+                    <span className="text-[14.5px] font-medium leading-snug text-pfg">{tt(key)}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="w-full">{telegramBlock}</div>
+              <p className="telegram-login-trust mt-3 flex items-center justify-center gap-1.5 text-xs text-psubtle">
+                <ShieldCheck aria-hidden="true" size={15} strokeWidth={2.2} />
+                {tt('authTgSecure')}
+              </p>
+            </section>
+
+            {isWeb && (
+              <div className="mt-3 text-center">
+                <a href="https://kivvi.uz" className="inline-flex min-h-11 cursor-pointer items-center px-3 text-xs font-medium text-pmuted transition-colors hover:text-pfg focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+                  {language === 'ru' ? '← На главную' : '← Bosh sahifa'}
+                </a>
               </div>
-            </div>
-
-            <h1 className="text-[20px] font-bold text-pfg leading-tight mb-5">
-              {tt('authTgWelcomeTitle')}
-            </h1>
-
-            {/* Foydalar */}
-            <div className="w-full flex flex-col gap-2.5 mb-6">
-              {benefits.map(({ icon: Icon, cls, key }) => (
-                <div
-                  key={key}
-                  className={`flex items-center gap-3 rounded-2xl px-3.5 py-3 text-left shadow-xs ${cls}`}
-                >
-                  <Icon size={18} strokeWidth={2} className="shrink-0" />
-                  <span className="text-[13px] font-semibold text-pfg">{tt(key)}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="w-full">{telegramBlock}</div>
-          </div>
-
-          {/* Landing'ga qaytish — faqat veb mehmon uchun */}
-          {isWeb && (
-            <div className="text-center mt-5">
-              <a href="https://kivvi.uz" className="text-[12px] text-pmuted hover:text-pfg transition-colors font-medium">
-                {language === 'ru' ? '← На главную' : '← Bosh sahifa'}
-              </a>
-            </div>
-          )}
+            )}
+          </main>
         </div>
 
         {qrOpen && telegramLoginUrl && (
@@ -337,12 +329,16 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-pcanvas flex flex-col items-center justify-center px-6 py-10">
-      <div className="w-full max-w-[380px] animate-premiumIn">
+    <div className="first-launch-screen overflow-y-auto overscroll-contain bg-pcanvas">
+      <div className="flex min-h-full w-full px-5 py-[clamp(1rem,5dvh,2.5rem)] sm:px-6">
+      <div className="my-auto w-full max-w-[380px] animate-premiumIn mx-auto">
         {isWeb ? (
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <img src="/images/splash-brand.png" alt="KIVVI" className="w-14 rounded-2xl shadow-xs" />
+              <picture>
+                <source srcSet="/images/splash-brand.webp" type="image/webp" />
+                <img src="/images/splash-brand.png" alt="KIVVI" width={56} height={56} className="w-14 rounded-2xl shadow-xs" />
+              </picture>
               <div>
                 <h1 className="text-[18px] font-semibold text-pfg leading-tight">{tt('authWelcome')}</h1>
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
@@ -357,7 +353,10 @@ export default function LoginPage() {
           </div>
         ) : (
           <>
-            <img src="/images/splash-brand.png" alt="KIVVI" className="w-36 rounded-3xl mx-auto shadow-md" />
+            <picture className="block text-center">
+              <source srcSet="/images/splash-brand.webp" type="image/webp" />
+              <img src="/images/splash-brand.png" alt="KIVVI" width={144} height={144} className="w-36 rounded-3xl mx-auto shadow-md" />
+            </picture>
             <h1 className="text-[22px] font-semibold text-pfg text-center mt-5">{tt('authWelcome')}</h1>
             <p className="text-[13px] text-pmuted text-center mt-1 mb-6">{tt('authTagline')}</p>
           </>
@@ -562,6 +561,7 @@ export default function LoginPage() {
       {qrOpen && telegramLoginUrl && (
         <TelegramQrSheet url={telegramLoginUrl} onClose={() => setQrOpen(false)} />
       )}
+      </div>
     </div>
   )
 }

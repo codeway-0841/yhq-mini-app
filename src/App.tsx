@@ -191,7 +191,7 @@ export default function App() {
     return (
       <>
         <ThemeEffect />
-        <div className="min-h-screen bg-canvas text-fg flex items-center justify-center px-6">
+        <div className="first-launch-screen bg-canvas text-fg flex items-center justify-center overflow-y-auto overscroll-contain px-6 py-6">
           <div className="card-premium max-w-sm w-full text-center flex flex-col items-center gap-3">
             <div className="text-lg font-bold">{t(lang, 'sessionStaleTitle')}</div>
             <p className="text-sm text-pmuted leading-relaxed">{t(lang, 'sessionStaleBody')}</p>
@@ -254,7 +254,7 @@ export default function App() {
     return (
       <>
         <ThemeEffect />
-        <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<SplashScreen />}>
           <LoginPage />
         </Suspense>
       </>
@@ -265,7 +265,7 @@ export default function App() {
     return (
       <>
         <ThemeEffect />
-        <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<SplashScreen />}>
           <Onboarding onDone={finishOnboarding} />
         </Suspense>
       </>
