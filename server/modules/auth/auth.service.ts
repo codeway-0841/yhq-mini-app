@@ -218,6 +218,7 @@ async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?
         UPDATE users SET id = ${tgId}
         WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
         RETURNING id
+      )
       SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
     `, tx)
     return Number(rows[0]?.del) > 0 && Number(rows[0]?.ren) > 0
