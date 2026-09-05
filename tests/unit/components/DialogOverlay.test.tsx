@@ -130,7 +130,7 @@ describe('DialogOverlay component', () => {
       ev.clientY = init.clientY ?? 0
       ev.clientX = init.clientX ?? 0
       ev.pointerId = init.pointerId ?? 1
-      ev.pointerType = 'touch'
+      ev.pointerType = 'mouse'
       ev.button = 0
       ev.isPrimary = true
       target.dispatchEvent(ev)
@@ -543,4 +543,81 @@ describe('DialogOverlay component', () => {
       expect(handleClose).not.toHaveBeenCalled()
     })
   })
+  describe('native touch ownership regressions', () => {
+    const touch = (target: HTMLElement, type: string, y: number, cancelable = true) => {
+      const point = { identifier: 7, clientX: 100, clientY: y, target }
+      const event = new Event(type, { bubbles: true, cancelable })
+      Object.defineProperties(event, {
+        touches: { value: type === 'touchend' || type === 'touchcancel' ? [] : [point] },
+        changedTouches: { value: [point] },
+      })
+      fireEvent(target, event)
+      return event
+    }
+    const setup = () => {
+      const close = vi.fn()
+      const click = vi.fn()
+      render(<DialogOverlay onClose={close} swipeToDismiss>
+        <div data-testid="scroll" style={{ overflowY: 'auto' }}><button onClick={click}>Tap</button></div>
+      </DialogOverlay>)
+      const scroll = screen.getByTestId('scroll')
+      Object.defineProperties(scroll, { scrollHeight: { value: 800 }, clientHeight: { value: 300 } })
+      return { close, click, scroll, sheet: scroll.parentElement!, button: screen.getByText('Tap') }
+    }
+    it('owns full-surface downward touch and prevents browser cancellation', () => {
+      const { scroll, sheet } = setup()
+      touch(scroll, 'touchstart', 100)
+      expect(touch(scroll, 'touchmove', 130).defaultPrevented).toBe(true)
+      expect(sheet.style.transform).toBe('translate3d(0, 30px, 0)')
+      touch(scroll, 'touchcancel', 130)
+      expect(sheet.style.transform).toBe('translate3d(0, 0px, 0)')
+    })
+    it('preserves native scrolling and rebases the handoff distance', () => {
+      const { scroll, sheet } = setup()
+      scroll.scrollTop = 100
+      touch(scroll, 'touchstart', 100)
+      expect(touch(scroll, 'touchmove', 160).defaultPrevented).toBe(false)
+      scroll.scrollTop = 0
+      touch(scroll, 'touchmove', 170)
+      expect(sheet.style.transform).toBe('translate3d(0, 10px, 0)')
+    })
+    it('leaves browser-owned scrolling alone until the next gesture', () => {
+      const { scroll, sheet, close } = setup()
+      scroll.scrollTop = 100
+      touch(scroll, 'touchstart', 100)
+      touch(scroll, 'touchmove', 160, false)
+      scroll.scrollTop = 0
+      touch(scroll, 'touchmove', 260)
+      touch(scroll, 'touchend', 260)
+      expect(sheet.style.transform).toBe('')
+      expect(close).not.toHaveBeenCalled()
+      touch(scroll, 'touchstart', 100)
+      touch(scroll, 'touchmove', 130)
+      expect(sheet.style.transform).toBe('translate3d(0, 30px, 0)')
+    })
+    it('does not swallow the next real tap when drag generated no click', () => {
+      const { scroll, button, click } = setup()
+      touch(scroll, 'touchstart', 100)
+      touch(scroll, 'touchmove', 120)
+      touch(scroll, 'touchcancel', 120)
+      touch(button, 'touchstart', 100)
+      touch(button, 'touchend', 100)
+      fireEvent.click(button)
+      expect(click).toHaveBeenCalledTimes(1)
+    })
+    it('does not use stale flick velocity after holding the finger still', () => {
+      vi.useFakeTimers()
+      try {
+        const { scroll, close } = setup()
+        touch(scroll, 'touchstart', 100)
+        vi.advanceTimersByTime(20)
+        touch(scroll, 'touchmove', 125)
+        vi.advanceTimersByTime(200)
+        touch(scroll, 'touchend', 125)
+        vi.advanceTimersByTime(300)
+        expect(close).not.toHaveBeenCalled()
+      } finally { vi.useRealTimers() }
+    })
+  })
+
 })

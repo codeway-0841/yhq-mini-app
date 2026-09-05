@@ -2,6 +2,8 @@ import { useEffect, useRef, useCallback, type ReactNode } from 'react'
 import { registerModal } from '../lib/navigation'
 import { haptics } from '../../platform/haptics'
 
+type GestureEvent = Pick<React.PointerEvent<HTMLDivElement>, 'target' | 'pointerId' | 'clientX' | 'clientY'> & { pointerType?: string; button?: number; isPrimary?: boolean }
+
 export type CloseReason = 'backdrop' | 'escape' | 'back' | 'swipe'
 
 interface Props {
@@ -138,6 +140,7 @@ export default function DialogOverlay({
     axis: 'pending' | 'horizontal' | 'vertical'
     isDragging: boolean
     scrollContainer: HTMLElement | null
+    sheetHeight: number
   } | null>(null)
 
   // Stack ro'yxati + body scroll-lock + modal stack ro'yxati + focus restore
@@ -212,8 +215,9 @@ export default function DialogOverlay({
   }, [])
 
   // ── Swipe-to-Dismiss Pointer Event Handlers ──
-  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (!swipeToDismiss || position !== 'bottom' || isClosingRef.current) return
+  const handlePointerDown = (e: GestureEvent) => {
+    suppressNextClickRef.current = false
+    if (!swipeToDismiss || position !== 'bottom' || isClosingRef.current || !isTop(idRef.current)) return
     if (e.isPrimary === false) return
     if (e.button !== 0 && e.pointerType === 'mouse') return
 
@@ -221,12 +225,12 @@ export default function DialogOverlay({
     if (!target) return
 
     // Text inputs & editables himoyasi: matn kiritish / belgilash paytida drag qilinmasin
-    if (target.closest('input, textarea, select, [contenteditable="true"]')) {
+    if (target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) {
       return
     }
 
-    const clientY = e.clientY ?? (e.nativeEvent as MouseEvent)?.clientY ?? 0
-    const clientX = e.clientX ?? (e.nativeEvent as MouseEvent)?.clientX ?? 0
+    const clientY = e.clientY ?? 0
+    const clientX = e.clientX ?? 0
 
     // Explicit handle yoki header zonasi tekshiruvi:
     const isMarkedHandle = Boolean(
@@ -254,15 +258,16 @@ export default function DialogOverlay({
       axis: 'pending',
       isDragging: false,
       scrollContainer,
+      sheetHeight: sheetRef.current?.clientHeight || 400,
     }
   }
 
-  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+  const handlePointerMove = (e: GestureEvent) => {
     const state = dragStateRef.current
     if (!state || (e.pointerId !== undefined && state.pointerId !== e.pointerId) || isClosingRef.current) return
 
-    const clientY = e.clientY ?? (e.nativeEvent as MouseEvent)?.clientY ?? state.lastY
-    const clientX = e.clientX ?? (e.nativeEvent as MouseEvent)?.clientX ?? state.lastX
+    const clientY = e.clientY ?? state.lastY
+    const clientX = e.clientX ?? state.lastX
 
     const deltaX = clientX - state.startX
     const deltaY = clientY - state.startY
@@ -272,6 +277,7 @@ export default function DialogOverlay({
     state.samples = state.samples.filter((s) => now - s.time < 100)
     state.samples.push({ time: now, y: clientY })
 
+    state.velocityY = 0
     if (state.samples.length >= 2) {
       const first = state.samples[0]
       const last = state.samples[state.samples.length - 1]
@@ -279,8 +285,6 @@ export default function DialogOverlay({
       if (dt > 0) {
         state.velocityY = (last.y - first.y) / dt // px/ms
       }
-    } else {
-      state.velocityY = 0
     }
 
     state.lastY = clientY
@@ -290,11 +294,19 @@ export default function DialogOverlay({
     if (state.scrollContainer) {
       const currentScrollTop = state.scrollContainer.scrollTop
       // Ro'yxat o'rtasida/pastida bo'lsa, oddiy scroll ishlashiga imkon berish
-      if (currentScrollTop > 0) {
+      if (currentScrollTop > 0 && !state.isDragging) {
+        state.startY = clientY
+        state.startX = clientX
+        state.samples = [{ time: now, y: clientY }]
+        state.velocityY = 0
         return
       }
       // Ro'yxat eng tepada (scrollTop <= 0) bo'lib, foydalanuvchi tepaga itarsa, ro'yxat scroll bo'lsin
       if (deltaY < 0 && !state.isDragging) {
+        state.startY = clientY
+        state.startX = clientX
+        state.samples = [{ time: now, y: clientY }]
+        state.velocityY = 0
         return
       }
     }
@@ -324,7 +336,9 @@ export default function DialogOverlay({
     if (!state.isDragging) {
       state.isDragging = true
       try {
-        ;(e.target as HTMLElement).setPointerCapture?.(e.pointerId)
+        if (e.pointerType !== 'touch') {
+          (e.target as HTMLElement).setPointerCapture?.(e.pointerId)
+        }
       } catch {
         // pointer capture unsupported / already captured
       }
@@ -341,7 +355,7 @@ export default function DialogOverlay({
       currentY = deltaY * 0.12
     }
 
-    const sheetHeight = sheetRef.current?.clientHeight || 400
+    const sheetHeight = state.sheetHeight
     const thresholdDistance = Math.min(sheetHeight * 0.2, 75)
 
     // One-shot threshold haptic (domain method)
@@ -354,29 +368,31 @@ export default function DialogOverlay({
       thresholdCrossedRef.current = false
     }
 
-    // Direct DOM transform (React rerender'siz 120Hz/144Hz silliq)
+    // Transient drag position stays outside React state.
     if (sheetRef.current) {
       sheetRef.current.style.transition = 'none'
       sheetRef.current.style.transform = `translate3d(0, ${currentY}px, 0)`
     }
     if (backdropRef.current) {
       const opacity = Math.max(0, 1 - Math.max(0, currentY) / (sheetHeight * 1.2))
+      backdropRef.current.style.transition = 'none'
       backdropRef.current.style.opacity = `${opacity}`
     }
   }
 
-  const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+  const handlePointerUp = (e: GestureEvent) => {
     const state = dragStateRef.current
     if (!state || state.pointerId !== e.pointerId) return
 
     // Pointer koordinatalarini va tezligini pointerup vaqtida yakuniy hisoblash
-    const clientY = e.clientY ?? (e.nativeEvent as MouseEvent)?.clientY ?? state.lastY
-    const clientX = e.clientX ?? (e.nativeEvent as MouseEvent)?.clientX ?? state.lastX
+    const clientY = e.clientY ?? state.lastY
+    const clientX = e.clientX ?? state.lastX
     const now = performance.now()
 
     state.samples = state.samples.filter((s) => now - s.time < 100)
     state.samples.push({ time: now, y: clientY })
 
+    state.velocityY = 0
     if (state.samples.length >= 2) {
       const first = state.samples[0]
       const last = state.samples[state.samples.length - 1]
@@ -411,7 +427,7 @@ export default function DialogOverlay({
     const sheetHeight = sheet?.clientHeight || 400
     const thresholdDistance = Math.min(sheetHeight * 0.2, 75)
 
-    // Senior-level gesture trigger:
+    // Distance or recent downward flick can dismiss the sheet.
     // 1) Distance threshold: 75px yoki sheetHeight*0.2 dan ortiq tortilganda
     // 2) Flick threshold: velocity > 0.35 px/ms bo'lib, kamida 15px pastga harakat bo'lganda (chaqqon va yengil)
     const shouldClose =
@@ -430,7 +446,7 @@ export default function DialogOverlay({
         : Math.max(
             140,
             Math.min(
-              210,
+              200,
               Math.round(
                 (sheetHeight - Math.max(0, finalY)) / Math.max(0.6, finalVelocity || 0.6)
               )
@@ -474,7 +490,7 @@ export default function DialogOverlay({
     }
   }
 
-  const handlePointerCancel = (e: React.PointerEvent<HTMLDivElement>) => {
+  const handlePointerCancel = (e: GestureEvent) => {
     const state = dragStateRef.current
     if (!state || state.pointerId !== e.pointerId) return
 
@@ -512,6 +528,63 @@ export default function DialogOverlay({
     }
   }
 
+  // React delegates touchmove passively. A local non-passive listener can own a
+  // downward drag before the browser starts scrolling, without disabling native
+  // scrolling/zoom across the sheet. Once native scrolling owns a gesture, leave
+  // it alone until release; pointer capture cannot take it back from the browser.
+  const touchHandlersRef = useRef({ down: handlePointerDown, move: handlePointerMove, up: handlePointerUp, cancel: handlePointerCancel })
+  touchHandlersRef.current = { down: handlePointerDown, move: handlePointerMove, up: handlePointerUp, cancel: handlePointerCancel }
+  useEffect(() => {
+    const sheet = sheetRef.current
+    if (!sheet || !swipeToDismiss || position !== 'bottom') return
+    let activeTouch: number | null = null
+    let nativeScroll = false
+    const gesture = (touch: Touch, target: EventTarget | null): GestureEvent => ({
+      pointerId: touch.identifier, clientX: touch.clientX, clientY: touch.clientY,
+      target: target!, pointerType: 'touch',
+    })
+    const start = (event: TouchEvent) => {
+      if (event.touches.length !== 1) {
+        const state = dragStateRef.current
+        if (state) touchHandlersRef.current.cancel({ pointerId: state.pointerId, clientX: state.lastX, clientY: state.lastY, target: sheet })
+        activeTouch = null
+        return
+      }
+      const touch = event.touches[0]
+      activeTouch = touch.identifier
+      nativeScroll = false
+      touchHandlersRef.current.down(gesture(touch, event.target))
+    }
+    const move = (event: TouchEvent) => {
+      const touch = Array.from(event.touches).find(t => t.identifier === activeTouch)
+      if (!touch || nativeScroll) return
+      if (!event.cancelable) {
+        nativeScroll = true
+        touchHandlersRef.current.cancel(gesture(touch, event.target))
+        return
+      }
+      touchHandlersRef.current.move(gesture(touch, event.target))
+      if (dragStateRef.current?.isDragging) event.preventDefault()
+    }
+    const end = (event: TouchEvent) => {
+      const touch = Array.from(event.changedTouches).find(t => t.identifier === activeTouch)
+      if (!touch) return
+      if (event.type === 'touchcancel') touchHandlersRef.current.cancel(gesture(touch, event.target))
+      else touchHandlersRef.current.up(gesture(touch, event.target))
+      activeTouch = null
+    }
+    sheet.addEventListener('touchstart', start, { passive: true })
+    sheet.addEventListener('touchmove', move, { passive: false })
+    sheet.addEventListener('touchend', end)
+    sheet.addEventListener('touchcancel', end)
+    return () => {
+      sheet.removeEventListener('touchstart', start)
+      sheet.removeEventListener('touchmove', move)
+      sheet.removeEventListener('touchend', end)
+      sheet.removeEventListener('touchcancel', end)
+    }
+  }, [swipeToDismiss, position])
+
   const handleClickCapture = (e: React.MouseEvent) => {
     if (suppressNextClickRef.current) {
       suppressNextClickRef.current = false
@@ -537,11 +610,12 @@ export default function DialogOverlay({
       {swipeToDismiss && position === 'bottom' ? (
         <div
           ref={sheetRef}
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-          onPointerCancel={handlePointerCancel}
+          onPointerDown={e => { if (e.pointerType !== 'touch') handlePointerDown(e) }}
+          onPointerMove={e => { if (e.pointerType !== 'touch') handlePointerMove(e) }}
+          onPointerUp={e => { if (e.pointerType !== 'touch') handlePointerUp(e) }}
+          onPointerCancel={e => { if (e.pointerType !== 'touch') handlePointerCancel(e) }}
           onClickCapture={handleClickCapture}
+          onKeyDownCapture={() => { suppressNextClickRef.current = false }}
           className="relative z-10 w-full flex justify-center will-change-transform"
         >
           {children}
