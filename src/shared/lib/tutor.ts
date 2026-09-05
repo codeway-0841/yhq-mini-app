@@ -10,6 +10,22 @@ import { getSessionToken } from './session'
  */
 
 /**
+ * Helper to build auth headers, prioritizing Bearer session token over initData.
+ */
+function buildAuthHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {}
+  const token = getSessionToken()
+  if (token) {
+    headers['Authorization'] = `Bearer ${token}`
+  }
+  const initData = getInitData()
+  if (initData) {
+    headers['x-telegram-init-data'] = initData
+  }
+  return headers
+}
+
+/**
  * FREE foydalanuvchilar uchun statik tushuntirish (AI Tutor premium-only o'rniga).
  * 404 → null (ushbu savolga izoh yozilmagan).
  */
@@ -18,7 +34,10 @@ export async function fetchStaticExplanation(
   lang: 'uz' | 'ru',
 ): Promise<string | null> {
   try {
-    const res = await fetch(`${config.apiBaseUrl}/questions/${questionId}/explanation?lang=${lang}`)
+    const headers = buildAuthHeaders()
+    const res = await fetch(`${config.apiBaseUrl}/questions/${questionId}/explanation?lang=${lang}`, {
+      headers,
+    })
     if (res.status === 404) return null
     if (!res.ok) throw new TutorError('network', `HTTP ${res.status}`)
     const data = (await res.json()) as { text?: string }
@@ -44,20 +63,20 @@ export async function* explainQuestion(
   questionId: number,
   lang: 'uz' | 'ru',
   answeredCorrect = false,
+  signal?: AbortSignal,
 ): AsyncGenerator<string, void, void> {
-  const headers: Record<string, string> = { 'Content-Type': 'application/json' }
-  const initData = getInitData()
-  if (initData) {
-    headers['x-telegram-init-data'] = initData
-  } else {
-    const token = getSessionToken()
-    if (token) headers['Authorization'] = `Bearer ${token}`
+  if (signal?.aborted) return
+
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+    ...buildAuthHeaders(),
   }
 
   const res = await fetch(`${config.apiBaseUrl}/tutor/explain`, {
     method: 'POST',
     headers,
     body: JSON.stringify({ questionId, lang, answeredCorrect }),
+    signal,
   })
 
   if (!res.ok) {
@@ -69,23 +88,33 @@ export async function* explainQuestion(
   }
   if (!res.body) throw new TutorError('network', 'Stream yo\'q')
 
-  const reader  = res.body.getReader()
+  const reader = res.body.getReader()
   const decoder = new TextDecoder()
   let buffer = ''
 
-  for (;;) {
-    const { done, value } = await reader.read()
-    if (done) return
-    buffer += decoder.decode(value, { stream: true })
-    const lines = buffer.split('\n')
-    buffer = lines.pop() ?? ''
-    for (const line of lines) {
-      if (!line.startsWith('data:')) continue
-      const json = line.slice(5).trim()
-      if (json === '[DONE]') return
-      try {
-        yield (JSON.parse(json) as { text?: string }).text ?? ''
-      } catch { /* chunk chegarasida — o'tkazib yuboramiz */ }
+  try {
+    for (;;) {
+      if (signal?.aborted) return
+      const { done, value } = await reader.read()
+      if (done) return
+      buffer += decoder.decode(value, { stream: true })
+      const lines = buffer.split('\n')
+      buffer = lines.pop() ?? ''
+      for (const line of lines) {
+        if (!line.startsWith('data:')) continue
+        const json = line.slice(5).trim()
+        if (json === '[DONE]') return
+        try {
+          yield (JSON.parse(json) as { text?: string }).text ?? ''
+        } catch { /* chunk chegarasida — o'tkazib yuboramiz */ }
+      }
     }
+  } finally {
+    try {
+      await reader.cancel()
+    } catch { /* ignore */ }
+    try {
+      reader.releaseLock()
+    } catch { /* ignore */ }
   }
 }

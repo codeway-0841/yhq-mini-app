@@ -71,6 +71,43 @@ describe('cron fanout suite (Vercel Hobby 2-slot)', () => {
     expect(res.status).toBe(401)
   })
 
+  it("daily-suite bitta bosqich yiqilganda 500 va ok: false qaytaradi (ID 14)", async () => {
+    vi.spyOn(cronRepository, 'tryStart').mockImplementation(async (name) => {
+      if (name === 'daily-reminder') {
+        throw new Error('Telegram API connection timeout')
+      }
+      return false
+    })
+
+    const res = await request(app)
+      .get('/api/cron/daily-suite')
+      .set('Authorization', 'Bearer test-cron-secret')
+
+    expect(res.status).toBe(500)
+    expect(res.body.ok).toBe(false)
+    expect(res.body.suite).toBe('daily')
+    expect(res.body['daily-reminder']?.ok).toBe(false)
+    expect(res.body['daily-reminder']?.error).toContain('Telegram API connection timeout')
+  })
+
+  it("weekly-suite bitta bosqich yiqilganda 500 va ok: false qaytaradi (ID 14)", async () => {
+    vi.spyOn(cronRepository, 'tryStart').mockImplementation(async (name) => {
+      if (name === 'league-rollover') {
+        throw new Error('Database pooler connection lost')
+      }
+      return false
+    })
+
+    const res = await request(app)
+      .get('/api/cron/weekly-suite')
+      .set('Authorization', 'Bearer test-cron-secret')
+
+    expect(res.status).toBe(500)
+    expect(res.body.ok).toBe(false)
+    expect(res.body.suite).toBe('weekly')
+    expect(res.body['league-rollover']?.ok).toBe(false)
+  })
+
   it("alohida endpoint'lar saqlanib qolgan (manual trigger/instrumentatsiya)", async () => {
     vi.spyOn(cronRepository, 'tryStart').mockResolvedValue(false)
 

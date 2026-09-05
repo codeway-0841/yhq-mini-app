@@ -48,7 +48,7 @@ interface CronRunResult { status: number; body: Record<string, unknown> }
 async function runDailyReminder(): Promise<CronRunResult> {
   const token = config.telegram.botToken
   if (!token) {
-    return { status: 500, body: { error: 'BOT_TOKEN not set' } }
+    return { status: 500, body: { ok: false, error: 'BOT_TOKEN not set' } }
   }
 
   const today  = tashkentDate()
@@ -418,41 +418,55 @@ async function runVipExpiredCleanup(): Promise<CronRunResult> {
 
 /**
  * /api/cron/daily-suite — har kuni 14:00 UTC (19:00 Toshkent).
- * cleanup → vip-cleanup → daily-reminder. Komponent xatosi keyingisini to'xtatmaydi.
+ * cleanup → vip-cleanup → daily-reminder. Komponent xatosi keyingisini to'xtatmaydi,
+ * lekin biron komponent yiqilsa suite 500 va ok: false qaytaradi (ID 14).
  */
 router.get('/cron/daily-suite', async (_req, res) => {
   const results: Record<string, unknown> = {}
+  let hasFailure = false
   for (const [name, run] of [
     ['cleanup-answer-tokens', runCleanup],
     ['vip-expired-cleanup', runVipExpiredCleanup],
     ['daily-reminder', runDailyReminder],
   ] as const) {
     try {
-      results[name] = (await run()).body
+      const resRun = await run()
+      results[name] = resRun.body
+      if (resRun.status >= 400 || (resRun.body as { ok?: boolean })?.ok === false) {
+        hasFailure = true
+      }
     } catch (err) {
+      hasFailure = true
       Sentry.captureException(err, { tags: { cron: 'daily-suite', stage: name } })
       results[name] = { ok: false, error: String(err) }
     }
   }
-  res.json({ ok: true, suite: 'daily', ...results })
+  const statusCode = hasFailure ? 500 : 200
+  res.status(statusCode).json({ ok: !hasFailure, suite: 'daily', ...results })
 })
 
 /**
  * /api/cron/weekly-suite — dushanba 00:15 UTC.
- * league-rollover → boss-rollover (izchil — eski 00:35 alohida schedule
- * o'rniga; ketma-ketlik stampede'siz, boss liga bitgach darhol boshlanadi).
+ * league-rollover → boss-rollover. Biron komponent yiqilsa suite 500 va ok: false qaytaradi (ID 14).
  */
 router.get('/cron/weekly-suite', async (_req, res) => {
   const results: Record<string, unknown> = {}
+  let hasFailure = false
   for (const [name, run] of [['league-rollover', runLeagueRollover], ['boss-rollover', runBossRollover]] as const) {
     try {
-      results[name] = (await run()).body
+      const resRun = await run()
+      results[name] = resRun.body
+      if (resRun.status >= 400 || (resRun.body as { ok?: boolean })?.ok === false) {
+        hasFailure = true
+      }
     } catch (err) {
+      hasFailure = true
       Sentry.captureException(err, { tags: { cron: 'weekly-suite', stage: name } })
       results[name] = { ok: false, error: String(err) }
     }
   }
-  res.json({ ok: true, suite: 'weekly', ...results })
+  const statusCode = hasFailure ? 500 : 200
+  res.status(statusCode).json({ ok: !hasFailure, suite: 'weekly', ...results })
 })
 
 // ── Alohida endpoint'lar — manual trigger / admin / debug.

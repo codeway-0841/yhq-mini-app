@@ -44,6 +44,26 @@ export const promoRepository = {
   },
 
   /**
+   * Foydalanuvchi yoki global miqyosda bu promokod bilan aktiv pending order borligini tekshirish (ID 05).
+   * Pending buyurtmalar 30 daqiqa ichida yaratilgan bo'lsa hisobga olinadi.
+   */
+  async getActivePendingReservations(promoCode: string, userId?: string): Promise<{ userPending: number; totalPending: number }> {
+    const rows = await executeRows<{ user_pending: number; total_pending: number }>(sql`
+      SELECT
+        COUNT(CASE WHEN user_id = ${userId ?? ''} THEN 1 END)::int AS user_pending,
+        COUNT(*)::int AS total_pending
+      FROM payment_orders
+      WHERE status = 'pending'
+        AND created_at >= now() - interval '30 minutes'
+        AND UPPER(raw_details->>'promoCode') = UPPER(${promoCode.trim()})
+    `)
+    return {
+      userPending: Number(rows[0]?.user_pending ?? 0),
+      totalPending: Number(rows[0]?.total_pending ?? 0),
+    }
+  },
+
+  /**
    * Promokodni foydalanuvchiga qo'llash — atomik tranzaksiya / CTE:
    * 1. promo_code_redemptions ga yozish (agar avval ishlatilmagan bo'lsa)
    * 2. promo_codes used_count ni 1 ga oshirish (agar max_uses dan oshmasa)

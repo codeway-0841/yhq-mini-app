@@ -23,6 +23,7 @@ vi.mock('../../../server/middleware/db-rate-limiter', async (importOriginal) => 
   dbRateLimit: () => (_req: express.Request, _res: express.Response, next: express.NextFunction) => next(),
 }))
 vi.mock('../../../server/db/connection', () => ({
+  executeRows: vi.fn().mockResolvedValue([{ user_pending: 0, total_pending: 0 }]),
   db: {
     insert: vi.fn(() => ({
       values: vi.fn((v: Record<string, unknown>) => {
@@ -139,6 +140,34 @@ describe('POST /payments/create-order — promokod chegirmasi', () => {
       .post('/api/payments/create-order')
       .send({ plan: 'month', promoCode: 'SALE25' })
       .expect(400)
+    expect(h.insertValues).not.toHaveBeenCalled()
+  })
+
+  it("foydalanuvchida allaqachon pending buyurtma bo'lsa → 400 PROMO_PENDING_EXISTS (ID 05)", async () => {
+    vi.spyOn(promoRepository, 'findByCode').mockResolvedValue(DISCOUNT_PROMO)
+    vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(false)
+    vi.spyOn(promoRepository, 'getActivePendingReservations').mockResolvedValue({ userPending: 1, totalPending: 1 })
+
+    const res = await request(makeApp())
+      .post('/api/payments/create-order')
+      .send({ plan: 'month', promoCode: 'SALE25' })
+      .expect(400)
+
+    expect(res.body.details).toBe('PROMO_PENDING_EXISTS')
+    expect(h.insertValues).not.toHaveBeenCalled()
+  })
+
+  it("umumiy pending buyurtmalar max_uses ga yetgan bo'lsa → 400 PROMO_LIMIT_REACHED (ID 05)", async () => {
+    vi.spyOn(promoRepository, 'findByCode').mockResolvedValue({ ...DISCOUNT_PROMO, maxUses: 5, usedCount: 3 })
+    vi.spyOn(promoRepository, 'isRedeemedByUser').mockResolvedValue(false)
+    vi.spyOn(promoRepository, 'getActivePendingReservations').mockResolvedValue({ userPending: 0, totalPending: 2 })
+
+    const res = await request(makeApp())
+      .post('/api/payments/create-order')
+      .send({ plan: 'month', promoCode: 'SALE25' })
+      .expect(400)
+
+    expect(res.body.details).toBe('PROMO_LIMIT_REACHED')
     expect(h.insertValues).not.toHaveBeenCalled()
   })
 })

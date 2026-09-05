@@ -31,14 +31,31 @@ const isStaticAsset = (path) =>
 // va avatar sezilarli kech chiqardi.
 const isAvatar = (path) => path.startsWith('/api/avatar/')
 
-const isQuestionData = (path) =>
-  path.startsWith('/api/questions') || path.startsWith('/api/topics')
+// Savol va mavzular ma'lumotlari — faqat public ro'yxatlar (/api/questions, /api/topics).
+// Izohlar (/api/questions/:id/explanation) post-answer auth-gated va no-store bo'lgani uchun
+// SW tomonidan KESHLANMAYDI (ID 09).
+const isQuestionData = (path) => {
+  if (path.includes('/explanation')) return false
+  return path === '/api/questions' || path.startsWith('/api/questions?') ||
+         path === '/api/topics' || path.startsWith('/api/topics?')
+}
 
 // Vercel `/` va `/index.html` ni `Cache-Control: no-store` bilan beradi —
 // Cache API no-store javobni SAQLASHNI RAD ETADI (TypeError → shell hech qachon
-// cache'lanmardi → offline'da ilova umuman ochilmardi). Header'larni tozalaymiz.
+// cache'lanmardi → offline'da ilova umuman ochilmardi). Navigatsiya shell uchun header'larni tozalaymiz.
+// Lekin API/dinamik private/no-store javoblar (masalan /explanation) keshga SAQLANMAYDI (ID 09).
 function storable(request, response) {
   if (!response.ok) return null
+  const cc = (response.headers && typeof response.headers.get === 'function' ? response.headers.get('cache-control') : '') || ''
+  if (cc.includes('no-store') || cc.includes('private')) {
+    const url = typeof request === 'string' ? request : (request && request.url) || ''
+    let pathname = ''
+    try { pathname = new URL(url, self.location.origin).pathname } catch { pathname = url }
+    const isNavigationShell = pathname === '/' || pathname === '/index.html' || pathname === '/app.html'
+    if (!isNavigationShell) {
+      return null
+    }
+  }
   const headers = new Headers(response.headers)
   headers.delete('cache-control')
   return new Response(response.body, { status: response.status, headers })

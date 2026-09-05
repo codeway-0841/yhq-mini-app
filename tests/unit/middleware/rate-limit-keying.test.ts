@@ -105,3 +105,22 @@ describe('identityKey — platformadan mustaqil', () => {
     expect(fromTelegram).toBe(fromNativeApp)
   })
 })
+
+describe('getCanonicalRoute — raw path o\'rniga canonical route keying (ID 04)', () => {
+  it('parameterized route pattern baseUrl bilan birga canonical qilinadi', async () => {
+    const { getCanonicalRoute } = await import('../../../server/middleware/db-rate-limiter')
+    const req1 = { baseUrl: '/api', route: { path: '/progress/:userId/result' }, path: '/progress/123/result' } as express.Request
+    const req2 = { baseUrl: '/api', route: { path: '/progress/:userId/result' }, path: '/progress/999/result/' } as express.Request
+    expect(getCanonicalRoute(req1)).toBe('/api/progress/:userid/result')
+    expect(getCanonicalRoute(req2)).toBe('/api/progress/:userid/result')
+    expect(getCanonicalRoute(req1)).toBe(getCanonicalRoute(req2))
+  })
+
+  it('trailing slash va case farqlari bir xil canonical identifikatorga keladi', async () => {
+    const { getCanonicalRoute } = await import('../../../server/middleware/db-rate-limiter')
+    const req1 = { baseUrl: '/api/auth', route: { path: '/OTP/request' }, path: '/otp/request' } as express.Request
+    const req2 = { baseUrl: '/api/auth/', route: { path: '/otp/request/' }, path: '/otp/request/' } as express.Request
+    expect(getCanonicalRoute(req1)).toBe('/api/auth/otp/request')
+    expect(getCanonicalRoute(req2)).toBe('/api/auth/otp/request')
+  })
+})

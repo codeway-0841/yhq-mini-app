@@ -180,7 +180,7 @@ export default function Profil() {
             <button
               type="button"
               onClick={() => setShowNameEdit(true)}
-              className="rounded p-0.5 text-psubtle transition-colors hover:text-pfg active:scale-95"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center -my-2 -mx-1.5 rounded text-psubtle transition-colors hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
               aria-label={tt('editProfile')}
             >
               <Pencil size={12} strokeWidth={1.75} />

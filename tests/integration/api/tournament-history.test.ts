@@ -31,6 +31,7 @@ const P_OLD = '2026-07-27'
 const P_NEW = '2026-08-03'
 
 async function cleanup() {
+  await db.delete(tournamentPrizes).where(inArray(tournamentPrizes.periodKey, [P_OLD, P_NEW]))
   await db.delete(tournamentPrizes).where(inArray(tournamentPrizes.userId, IDS))
   for (const id of IDS) {
     await db.delete(users).where(eq(users.id, id)) // FK cascade

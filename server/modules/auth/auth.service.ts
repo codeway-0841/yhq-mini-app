@@ -16,7 +16,7 @@ import { z } from 'zod'
 import { randomBytes, randomUUID } from 'crypto'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
-import { executeRows, transactionBestEffort, transactionHttp, neonRaw, type DB } from '../../db/connection'
+import { executeRows, transactionBestEffort, type DB } from '../../db/connection'
 import { sql } from 'drizzle-orm'
 import { authRepository, type AuthProvider } from './auth.repository'
 import { issueSession } from './session-issuer'
@@ -205,33 +205,6 @@ const isEmptyAccount = (s: AccountStats | undefined) => !!s && s.answered === 0 
  * qoladi va `ON CONFLICT DO NOTHING` insert'ni no-op qiladi.
  */
 async function adoptPhoneIntoTelegram(tgId: string, phoneUserId: string, txOrDb?: DB): Promise<boolean> {
-  if (!txOrDb && neonRaw) {
-    const results = await transactionHttp((q) => [
-      q`
-        WITH del AS (
-          DELETE FROM users
-          WHERE id = ${tgId}
-            AND COALESCE((SELECT total_answered FROM progress WHERE user_id = ${tgId}), 0) = 0
-            AND NOT EXISTS (SELECT 1 FROM payments WHERE user_id = ${tgId})
-            AND id <> ${phoneUserId}
-          RETURNING id
-        ), ren AS (
-          UPDATE users SET id = ${tgId}
-          WHERE id = ${phoneUserId} AND EXISTS (SELECT 1 FROM del)
-          RETURNING id
-        )
-        SELECT (SELECT COUNT(*)::int FROM del) AS del, (SELECT COUNT(*)::int FROM ren) AS ren
-      `,
-      q`
-        INSERT INTO auth_identities (provider, provider_uid, user_id)
-        VALUES ('telegram', ${tgId}, ${tgId})
-        ON CONFLICT (provider, provider_uid) DO NOTHING
-      `,
-    ])
-    const first = (results[0] ?? []) as Array<{ del: number | string; ren: number | string }>
-    return Number(first[0]?.del) > 0 && Number(first[0]?.ren) > 0
-  }
-
   const runInTx = async (tx: DB) => {
     const rows = await executeRows<{ del: number; ren: number }>(sql`
       WITH del AS (
@@ -317,6 +290,27 @@ export interface LinkResponse extends AuthResponse {
 /** Bir telefon raqamga 24 soatda yuboriladigan MAKSIMAL SMS (audit H-3 —
  *  Eskiz har SMS uchun pul yechadi; IP aylanuvchi flood himoyasi). */
 const OTP_SMS_DAILY_CAP = 10
+
+/**
+ * Akkaunt parolini lockout bilan tekshirish (telefon login va linking uchun umumiy — ID 02).
+ * Target account lockout holati, failed-attempt increment va muvaffaqiyatli tekshiruvdagi reset.
+ */
+async function verifyAccountPasswordWithLockout(userId: string, password: string, passwordHash: string | null | undefined): Promise<void> {
+  if (await authRepository.isAccountLocked(userId)) {
+    throw new AppError(403, 'account_locked')
+  }
+
+  if (!passwordHash || !verifyPassword(password, passwordHash)) {
+    const attempts = await authRepository.incrementFailedLoginAttempts(userId)
+    if (attempts >= PHONE_LOGIN_MAX_ATTEMPTS) {
+      await authRepository.lockAccount(userId, new Date(Date.now() + PHONE_LOGIN_LOCK_MS))
+      throw new AppError(403, 'account_locked')
+    }
+    throw new AppError(401, 'invalid_credentials')
+  }
+
+  await authRepository.resetFailedLoginAttempts(userId)
+}
 
 export const authService = {
   // ── SMS OTP flow ─────────────────────────────────────────────────────────
@@ -434,21 +428,7 @@ export const authService = {
       throw new AppError(401, 'invalid_credentials')
     }
 
-    // Account lockout (brute-force himoyasi — IP limit yetarli emas, botnet aylanadi)
-    if (await authRepository.isAccountLocked(identity.userId)) {
-      throw new AppError(403, 'account_locked')
-    }
-
-    if (!verifyPassword(input.password, identity.passwordHash)) {
-      const attempts = await authRepository.incrementFailedLoginAttempts(identity.userId)
-      if (attempts >= PHONE_LOGIN_MAX_ATTEMPTS) {
-        await authRepository.lockAccount(identity.userId, new Date(Date.now() + PHONE_LOGIN_LOCK_MS))
-        throw new AppError(403, 'account_locked')
-      }
-      throw new AppError(401, 'invalid_credentials')
-    }
-
-    await authRepository.resetFailedLoginAttempts(identity.userId)
+    await verifyAccountPasswordWithLockout(identity.userId, input.password, identity.passwordHash)
     return respondWithNewSession(identity.userId, 'phone')
   },
 
@@ -519,17 +499,13 @@ export const authService = {
 
     // 2) Raqam shu user'niki — idempotent no-op (parol mosligi SHART)
     if (identity.userId === currentUserId) {
-      if (!identity.passwordHash || !verifyPassword(input.password, identity.passwordHash)) {
-        throw new AppError(401, 'invalid_credentials')
-      }
+      await verifyAccountPasswordWithLockout(currentUserId, input.password, identity.passwordHash)
       return { status: 'attached' as const, ...(await respondWithNewSession(currentUserId, 'phone')) }
     }
 
     // 3) Raqam boshqa akkauntniki — parol proof MAJBURIY (account takeover himoyasi)
     const otherId = identity.userId
-    if (!identity.passwordHash || !verifyPassword(input.password, identity.passwordHash)) {
-      throw new AppError(401, 'invalid_credentials')
-    }
+    await verifyAccountPasswordWithLockout(otherId, input.password, identity.passwordHash)
 
     await transactionBestEffort(async (tx) => {
       const stats = await accountStats([currentUserId, otherId], tx)

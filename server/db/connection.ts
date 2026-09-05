@@ -93,16 +93,26 @@ export async function executeRows<T = Record<string, unknown>>(query: SQL, txOrD
  *   shu sababli barcha multi-step oqimlar BITTA atomik CTE bo'lishi SHART
  *   (guard'lar SQL ichida). 2+ statement'ga ajralib ketadigan atomik
  *   bloklar uchun `transactionHttp()` dan foydalaning.
- *
- * QOIDA: yangi kod FAQAT (a) bitta atomik CTE yoki (b) `transactionHttp`
- * ishlatishi kerak. Bu funksiya faqat legacy call-site'lar uchun saqlanadi.
+ */
+
+let drizzleTxInstance: any = null
+
+function getDrizzleTxDb(): any {
+  if (!drizzleTxInstance) {
+    drizzleTxInstance = drizzlePg(getSqlTx(), { schema })
+  }
+  return drizzleTxInstance
+}
+
+/**
+ * Multi-statement tranzaksiyalar uchun haqiqiy ACID tranzaksiya (postgres-js / Neon TCP pooler — ID 03).
+ * Neon HTTP stateless bo'lgani sababli, interaktiv tranzaksiyalar (masalan account linking,
+ * email register va row locklar) `getSqlTx()` orqali haqiqiy PostgreSQL tranzaksiyasida (`BEGIN ... COMMIT/ROLLBACK`)
+ * izolyatsiyalangan holda bajariladi.
  */
 export async function transactionBestEffort<T>(callback: (tx: DB) => Promise<T>): Promise<T> {
-  if (!isNeon && instance && typeof (instance as any).transaction === 'function') {
-    return (instance as any).transaction(callback)
-  }
-  // neon-http: izolyatsiya yo'q — chaqiruvchi CTE atomikligiga tayanadi
-  return callback(db)
+  const txDb = getDrizzleTxDb()
+  return txDb.transaction((tx: DB) => callback(tx))
 }
 
 /**

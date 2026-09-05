@@ -131,7 +131,12 @@ export default function PremiumPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? 'Эксклюзивные темы' : 'Eksklyuziv temalar'}
       </p>
-      <div className="flex gap-3 px-5 overflow-x-auto pb-2 scroll-smooth-x">
+      <div
+        className="flex gap-3 px-5 overflow-x-auto pb-2 scroll-smooth-x focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary rounded-xl"
+        role="region"
+        tabIndex={0}
+        aria-label={lang === 'ru' ? 'Эксклюзивные темы' : 'Eksklyuziv temalar'}
+      >
         {premiumThemes.map((t) => (
           <div key={t.id} className="flex-none w-[104px]">
             <div className="h-[64px] rounded-xl overflow-hidden shadow-xs relative"

@@ -4,7 +4,7 @@
  */
 
 import crypto from 'crypto'
-import { eq } from 'drizzle-orm'
+import { and, eq } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { paymentOrders } from '../../schema'
 import { paymentRepository } from './payment.repository'
@@ -285,20 +285,25 @@ export async function handleClickComplete(input: ClickCompleteInput): Promise<Cl
   //    replay xato webhook (masalan Click'ning eskirgan qayta yuborishi)
   //    ALLAQACHON 'completed' buyurtmani jimgina 'cancelled'ga tushirib
   //    qo'yardi — premium berilgan holda qoladi, faqat order.status buziladi).
-  //    'completed' holat pastdagi ATOMIK CLAIM (6-bosqich) orqali o'z-o'zidan
-  //    to'g'ri javob beradi: XUDDI SHU click_trans_id → SUCCESS (replay),
-  //    BOSHQA click_trans_id → ALREADY_PAID — bu farqni bu yerda buzmaslik shart.
-  if (Number(input.error) < 0 && order.status === 'pending') {
-    await db
-      .update(paymentOrders)
-      .set({
-        status: 'cancelled',
-        providerTransId: String(clickTransId),
-        rawDetails: input as unknown as Record<string, unknown>,
-      })
-      .where(eq(paymentOrders.id, order.id))
-      .returning({ id: paymentOrders.id })
-
+  if (Number(input.error) < 0) {
+    if (order.status === 'completed') {
+      return {
+        click_trans_id: clickTransId,
+        merchant_trans_id: merchantTransId,
+        error: CLICK_ERRORS.ALREADY_PAID,
+        error_note: 'Already paid',
+      }
+    }
+    if (order.status === 'pending') {
+      await db
+        .update(paymentOrders)
+        .set({
+          status: 'cancelled',
+          providerTransId: String(clickTransId),
+          rawDetails: input as unknown as Record<string, unknown>,
+        })
+        .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, 'pending')))
+    }
     return {
       click_trans_id: clickTransId,
       merchant_trans_id: merchantTransId,

@@ -38,13 +38,18 @@ class FakeCache {
   }
 }
 
-function makeResponse(status = 200, body = '') {
+function makeResponse(status = 200, body = '', headersInit: Record<string, string> = {}) {
+  const headerMap = new Map<string, string>(Object.entries(headersInit).map(([k, v]) => [k.toLowerCase(), v]))
   return {
     ok: status >= 200 && status < 300,
     status,
     body,
-    headers: new Map<string, string>(),
-    clone() { return makeResponse(status, body) },
+    headers: {
+      get(k: string) { return headerMap.get(k.toLowerCase()) ?? null },
+      delete(k: string) { headerMap.delete(k.toLowerCase()) },
+      set(k: string, v: string) { headerMap.set(k.toLowerCase(), v) },
+    },
+    clone() { return makeResponse(status, body, headersInit) },
   }
 }
 
@@ -75,7 +80,12 @@ function loadWorker() {
     caches,
     fetch: (...args: unknown[]) => fetchMock(...(args as [])),
     URL,
-    Headers: Map,
+    Headers: class FakeHeaders {
+      map = new Map<string, string>()
+      delete(k: string) { this.map.delete(k.toLowerCase()) }
+      get(k: string) { return this.map.get(k.toLowerCase()) ?? null }
+      set(k: string, v: string) { this.map.set(k.toLowerCase(), v) }
+    },
     // storable() yangi Response yasaydi — sanoq uchun status yetarli
     Response: function (this: unknown, body: unknown, init?: { status?: number }) {
       return makeResponse(init?.status ?? 200, String(body ?? ''))
@@ -100,6 +110,20 @@ async function requestImage(path: string) {
     waitUntil: (p: Promise<unknown>) => { pending.push(p) },
   })
   await responded
+  await Promise.all(pending)
+}
+
+/** Umumiy GET so'rovini SW orqali o'tkazish */
+async function requestRoute(path: string) {
+  const url = `https://app.test${path}`
+  const pending: Promise<unknown>[] = []
+  let responded: Promise<unknown> | undefined
+  listeners.fetch({
+    request: { method: 'GET', url, mode: 'cors' },
+    respondWith: (p: Promise<unknown>) => { responded = p },
+    waitUntil: (p: Promise<unknown>) => { pending.push(p) },
+  })
+  if (responded) await responded
   await Promise.all(pending)
 }
 
@@ -140,5 +164,26 @@ describe('sw.js rasm keshi', () => {
     expect(img.entries.size).toBe(300)
     expect(img.entries.has('https://app.test/images/q0.jpg')).toBe(true)
     expect(img.entries.has('https://app.test/images/q1.jpg')).toBe(false)
+  })
+})
+
+describe('sw.js question vs explanation cache boundaries (ID 09)', () => {
+  it('/api/questions public ro\'yxati app keshiga tushadi', async () => {
+    await requestRoute('/api/questions?bank=yhq')
+    const appCache = caches.store.get('yhq-app-v3')
+    expect(appCache?.entries.has('https://app.test/api/questions?bank=yhq')).toBe(true)
+  })
+
+  it('/api/questions/:id/explanation post-answer endpointi HECH QACHON keshlanmaydi (bypass)', async () => {
+    await requestRoute('/api/questions/123/explanation')
+    const appCache = caches.store.get('yhq-app-v3')
+    expect(appCache?.entries.has('https://app.test/api/questions/123/explanation')).toBeFalsy()
+  })
+
+  it('Cache-Control: private, no-store javoblar storable orqali keshga saqlanmaydi', async () => {
+    fetchMock.mockResolvedValueOnce(makeResponse(200, '{"text":"explanation"}', { 'cache-control': 'private, no-store' }))
+    await requestRoute('/api/custom-data')
+    const appCache = caches.store.get('yhq-app-v3')
+    expect(appCache?.entries.size ?? 0).toBe(0)
   })
 })

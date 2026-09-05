@@ -69,15 +69,22 @@ paymentRouter.post(
       if (promo.expiresAt && new Date(promo.expiresAt) < new Date()) {
         throw new AppError(400, 'Promokodning amal qilish muddati tugagan', 'PROMO_EXPIRED')
       }
-      if (promo.maxUses !== null && promo.usedCount >= promo.maxUses) {
-        throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
-      }
       if (promo.type !== 'discount_percent') {
         throw new AppError(400, 'Bu promokod chegirma kodi emas', 'PROMO_NOT_DISCOUNT')
       }
       if (await promoRepository.isRedeemedByUser(promo.id, userId)) {
         throw new AppError(400, 'Siz ushbu promokodni avval ishlatgansiz', 'PROMO_ALREADY_USED')
       }
+
+      // ID 05: Pending buyurtmalar rezervatsiyasini hisobga olish
+      const { userPending, totalPending } = await promoRepository.getActivePendingReservations(promo.code, userId)
+      if (userPending > 0) {
+        throw new AppError(400, 'Ushbu promokod bilan to\'lov kutilayotgan buyurtmangiz mavjud', 'PROMO_PENDING_EXISTS')
+      }
+      if (promo.maxUses !== null && (promo.usedCount + totalPending) >= promo.maxUses) {
+        throw new AppError(400, 'Promokoddan foydalanish limiti tugagan', 'PROMO_LIMIT_REACHED')
+      }
+
       discountPercent = promo.value
       finalAmount = applyDiscount(plan.priceUzs, discountPercent)
     }

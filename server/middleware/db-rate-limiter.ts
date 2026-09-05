@@ -61,6 +61,21 @@ export async function dbRateConsumeWindow(bucketKey: string, max: number, window
   return { allowed: count <= max, count }
 }
 
+/**
+ * Canonical route identifier — route pattern'ga asoslangan barqaror identifikator (ID 04).
+ * Raw req.path o'rniga ishlatiladi: trailing slash, ikki slash '//' yoki URL
+ * parametri qiymati hisoblagichni bo'lib yubormaydi.
+ */
+export function getCanonicalRoute(req: Request): string {
+  const base = (req.baseUrl || '').replace(/\/+$/, '')
+  const routePath = req.route?.path
+  if (typeof routePath === 'string') {
+    const cleanRoute = (routePath.startsWith('/') ? routePath : `/${routePath}`).replace(/\/+$/, '')
+    return `${base}${cleanRoute}`.toLowerCase() || '/'
+  }
+  return (base + req.path).toLowerCase().replace(/\/+$/, '') || '/'
+}
+
 export function dbRateLimit(opts: DbRateLimitOptions) {
   const max = Math.max(1, Math.floor(opts.maxPerMinute ?? 10))
   // SINXRON SAQLANG: in-memory rate-limiter.ts dagi default keyFn bilan bir xil
@@ -79,10 +94,11 @@ export function dbRateLimit(opts: DbRateLimitOptions) {
     if (config.env !== 'production') { memoryFallback(req, res, next); return }
 
     try {
-      // Route bo'yicha ajratish: method+path bucket prefix'ga kiritiladi —
-      // /auth/otp/request va /auth/phone/login umumiy limitni BO'LISHMAYDI
-      // (in-memory nusxada har rateLimit() chaqiruvi alohida Map edi).
-      const { allowed, count } = await dbRateConsume(`${opts.bucket}:${req.method}:${req.path}:${key}`, max)
+      // Route bo'yicha ajratish: canonical route kiritiladi —
+      // /auth/otp/request va /auth/phone/login umumiy limitni BO'LISHMAYDI,
+      // lekin trailing slash yoki case farqlari bitta canonical limitdan foydalanadi (ID 04).
+      const canonical = getCanonicalRoute(req)
+      const { allowed, count } = await dbRateConsume(`${opts.bucket}:${req.method}:${canonical}:${key}`, max)
       if (!allowed) {
         // 429 SPIKE signal (FIXPLAN #49): har blokda emas — spike BOSHI
         // (count === max+1) va davomiy hujum (har max-karrali) da ogohlantirish.
@@ -90,7 +106,7 @@ export function dbRateLimit(opts: DbRateLimitOptions) {
         if (count === max + 1 || count % max === 0) {
           Sentry.captureMessage('rate_limit_spike', {
             level: 'warning',
-            tags:  { bucket: opts.bucket, method: req.method, path: req.path },
+            tags:  { bucket: opts.bucket, method: req.method, path: req.path, canonicalRoute: canonical },
             extra: { count, max },
           })
         }

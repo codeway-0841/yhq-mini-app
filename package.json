@@ -110,5 +110,9 @@
     "test:all": "npm run test:unit && npm run test:api && npm run test:e2e",
     "test:watch": "vitest"
   },
+  "overrides": {
+    "qs": "^6.16.0",
+    "@xmldom/xmldom": "^0.9.12"
+  },
   "type": "module"
 }

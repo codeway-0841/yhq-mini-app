@@ -31,8 +31,8 @@ body[data-theme='light'] {
   --theme-surface:     #e4e8ee;
   --theme-elevated:    #ffffff;
   --theme-fg:          #0f172a;
-  --theme-fg-muted:    #475569;
-  --theme-fg-subtle:   #64748b;
+  --theme-fg-muted:    #334155;
+  --theme-fg-subtle:   #4b5563;
   --theme-line:        rgba(0, 0, 0, 0.08);
   --theme-line-strong: rgba(0, 0, 0, 0.15);
   --theme-shadow:      rgba(0, 0, 0, 0.06);
@@ -399,9 +399,9 @@ body[data-theme='light'] {
   --p-line-strong: rgba(0, 0, 0, 0.15);
 
   --p-fg:          #0f172a;
-  --p-muted:       #475569;
-  --p-subtle:      #64748b;
-  --p-disabled:    #94a3b8;
+  --p-muted:       #334155;
+  --p-subtle:      #4b5563;
+  --p-disabled:    #6b7280;
   --p-link:        #1a81fc;
 
   /* Aksent yorug' fonda to'yingan brend ko'ki */

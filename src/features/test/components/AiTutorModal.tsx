@@ -18,7 +18,8 @@ interface AiTutorModalProps {
 }
 
 // Session-level AI explanation cache (re-opening modal for same question is free)
-const aiExplanationCache = new Map<number, string>()
+// ID 17: cacheKey til (language) ni o'z ichiga oladi, shunda til almashganda boshqa tildagi izoh keshi aralashib ketmaydi
+const aiExplanationCache = new Map<string, string>()
 
 export default function AiTutorModal({
   questionId,
@@ -52,8 +53,8 @@ export default function AiTutorModal({
     const abortController = new AbortController()
     abortControllerRef.current = abortController
 
-    // Cache key: questionId shifted left to avoid collisions, then add correctness bit
-    const cacheKey = (questionId << 1) | (isCorrect ? 1 : 0)
+    // Cache key: questionId + correctness + language (ID 17)
+    const cacheKey = `${questionId}:${isCorrect ? '1' : '0'}:${language}`
     const cached = aiExplanationCache.get(cacheKey)
     if (cached) {
       setAiText(cached)
@@ -65,7 +66,7 @@ export default function AiTutorModal({
 
     try {
       let acc = ''
-      for await (const chunk of explainQuestion(questionId, language, isCorrect)) {
+      for await (const chunk of explainQuestion(questionId, language, isCorrect, abortController.signal)) {
         if (abortController.signal.aborted) return
         acc += chunk
         setAiText(acc)

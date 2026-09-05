@@ -12,7 +12,7 @@ const envSchema = z.object({
 
   /** Neon PostgreSQL — majburiy */
   DATABASE_URL:      z.string().min(1, 'DATABASE_URL is required'),
-  TEST_DATABASE_URL: z.string().min(1).optional(),
+  TEST_DATABASE_URL: z.string().optional().transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined)),
 
   /** Server */
   PORT:           z.string().regex(/^\d+$/).optional(),
@@ -59,7 +59,7 @@ const envSchema = z.object({
 
   /** OTP hash server pepper — HMAC-SHA256 kalit (DB dump'da OTP brute-force
    *  himoyasi). Yo'q bo'lsa plain sha256 fallback (dev uchun; prod'da o'rnating). */
-  OTP_PEPPER: z.string().min(16).optional(),
+  OTP_PEPPER: z.string().optional().transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined)).pipe(z.string().min(16).optional()),
 
   /** Click Payment Gateway */
   CLICK_SERVICE_ID:       z.string().optional(),

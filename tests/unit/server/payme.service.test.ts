@@ -207,6 +207,21 @@ describe('CancelTransaction / CheckTransaction', () => {
     expect(vi.mocked(Sentry.captureMessage)).toHaveBeenCalled()
   })
 
+  it('RACE CONDITION (ID 06): pending tx cancel paytida boshqa worker completed qilsa → xavfsiz holatda qayta tekshirib -2 ga o\'tadi', async () => {
+    const bound = { ...ORDER, providerTransId: 'ptx_1', status: 'pending', rawDetails: { paymeState: 1 } }
+    // 1-o'qish: pending deb topadi
+    // update: status='pending' sharti bilan yangilamoqchi bo'ladi, lekin parallel worker completed qilgani uchun returning [] bo'sh qaytadi
+    // 2-o'qish (re-read): completed holatida topadi
+    h.selectWhere
+      .mockResolvedValueOnce([{ ...bound }])
+      .mockResolvedValueOnce([{ ...bound, status: 'completed', rawDetails: { paymeState: 2 } }])
+      .mockResolvedValue([{ ...bound, status: 'cancelled', rawDetails: { paymeState: -2, cancelTime: 10, cancelReason: 2 } }])
+    h.updateReturning.mockResolvedValueOnce([]) // concurrency miss
+
+    const res = await rpc('CancelTransaction', { id: 'ptx_1', reason: 2 })
+    expect(res.result).toMatchObject({ state: -2 })
+  })
+
   it('CheckTransaction — holatni qaytaradi', async () => {
     h.selectWhere.mockResolvedValue([{ ...ORDER, providerTransId: 'ptx_1', status: 'completed', rawDetails: { paymeState: 2, performTime: 42 } }])
     const res = await rpc('CheckTransaction', { id: 'ptx_1' })

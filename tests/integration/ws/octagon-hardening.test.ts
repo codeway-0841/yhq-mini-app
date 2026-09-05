@@ -125,6 +125,39 @@ describe('WS hardening', () => {
     ws1.terminate()
     ws2.terminate()
   })
+
+  it('malformed JSON yoki non-object envelope serverni qulatmaydi (ID 01)', async () => {
+    const ts = await withServer({ authDeadlineMs: 5_000, heartbeatMs: 60_000 })
+    const ws = await connect(ts)
+    const received: Record<string, unknown>[] = []
+    ws.on('message', (raw) => {
+      try { received.push(JSON.parse(raw.toString())) } catch { /* ignore */ }
+    })
+
+    // Valid JSON lekin non-object yoki malformed types
+    ws.send('null')
+    ws.send('123')
+    ws.send('true')
+    ws.send('"string"')
+    ws.send('[]')
+    ws.send(JSON.stringify({}))
+    ws.send(JSON.stringify({ type: 123 }))
+    ws.send('{ invalid json')
+
+    await new Promise((r) => setTimeout(r, 300))
+
+    // Socket tirik va format xatolarini olgan
+    expect(ws.readyState).toBe(WebSocket.OPEN)
+    const formatErrors = received.filter((m) => m['type'] === 'error' && m['message'] === 'invalid_message_format')
+    expect(formatErrors.length).toBeGreaterThanOrEqual(5)
+
+    // Keyingi sog'lom xabar ishlaydi
+    ws.send(JSON.stringify({ type: 'ping' }))
+    await new Promise((r) => setTimeout(r, 200))
+    expect(received.some((m) => m['type'] === 'pong')).toBe(true)
+
+    ws.terminate()
+  })
 })
 
 /**

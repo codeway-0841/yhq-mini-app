@@ -249,4 +249,46 @@ describe('server/modules/auth/auth.service.ts - Real Service Layer Tests', () =>
       }
     })
   })
+
+  describe('linkPhone lockout enforcement (ID 02)', () => {
+    it('throws 403 account_locked if target phone account is locked', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: hashPassword('targetPass'),
+        createdAt: new Date(),
+      })
+      vi.spyOn(authRepository, 'isAccountLocked').mockResolvedValue(true)
+
+      await expect(
+        authService.linkPhone('123456789', {
+          phone: '+998901234567',
+          password: 'targetPass',
+        }),
+      ).rejects.toThrowError(new AppError(403, 'account_locked'))
+    })
+
+    it('increments failed attempts on victim account and locks upon 5th failure during link', async () => {
+      vi.spyOn(authRepository, 'findIdentity').mockResolvedValue({
+        provider: 'phone',
+        providerUid: '+998901234567',
+        userId: 'p_998901234567',
+        passwordHash: hashPassword('realPass'),
+        createdAt: new Date(),
+      })
+      vi.spyOn(authRepository, 'isAccountLocked').mockResolvedValue(false)
+      vi.spyOn(authRepository, 'incrementFailedLoginAttempts').mockResolvedValue(5)
+      const lockSpy = vi.spyOn(authRepository, 'lockAccount').mockResolvedValue(undefined as any)
+
+      await expect(
+        authService.linkPhone('123456789', {
+          phone: '+998901234567',
+          password: 'wrongPass',
+        }),
+      ).rejects.toThrowError(new AppError(403, 'account_locked'))
+
+      expect(lockSpy).toHaveBeenCalledWith('p_998901234567', expect.any(Date))
+    })
+  })
 })

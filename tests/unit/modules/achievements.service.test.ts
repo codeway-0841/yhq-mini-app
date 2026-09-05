@@ -1,9 +1,8 @@
-﻿import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach } from 'vitest'
 import {
   calculateSubjectAccuracy,
   checkAllPassed80,
   achievementsService,
-  MIN_ANSWERED_PER_SUBJECT,
 } from '../../../server/modules/achievements/achievements.service'
 import { achievementsRepository } from '../../../server/modules/achievements/achievements.repository'
 

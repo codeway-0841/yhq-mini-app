@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Octagon PvP — WebSocket Gateway (Transport, Security & Dispatch).
  * WebSocket server, connection lifecycle, IP flood protection,
  * authentication orchestration, heartbeat va xabarlarni yo'naltirish shu yerda.
@@ -268,148 +268,194 @@ export function attachOctagon(
       return true
     }
 
+function parseWsMessage(raw: unknown): Record<string, unknown> | null {
+  try {
+    const text = typeof raw === 'string' ? raw : (raw as Buffer).toString('utf-8')
+    const parsed: unknown = JSON.parse(text)
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) {
+      return null
+    }
+    const type = (parsed as Record<string, unknown>)['type']
+    if (typeof type !== 'string' || type.length === 0 || type.length > 64) {
+      return null
+    }
+    return parsed as Record<string, unknown>
+  } catch {
+    return null
+  }
+}
+
     ws.on('message', (raw) => {
-      state.isAlive = true
-      totalMessages++
+      try {
+        state.isAlive = true
+        totalMessages++
 
-      const now = Date.now()
-      if (now - state.msgWindowStart >= L.msgWindowMs) {
-        state.msgWindowStart = now
-        state.msgCount = 0
-      }
-      if (++state.msgCount > L.maxMsgsPerWindow) {
-        ws.close(1008, 'rate_limited')
-        return
-      }
-      let msg: Record<string, unknown>
-      try { msg = JSON.parse(raw.toString()) } catch { return }
-
-      if (msg.type === 'ping') {
-        send(ws, { type: 'pong' })
-        return
-      }
-
-      if (msg.type === 'get_online') {
-        void (async () => {
-          const uid = state.userId
-          const onlineList = await getOnlineUsers(uid)
-          send(ws, {
-            type: 'online_players',
-            count: onlineList.length,
-            players: onlineList,
-          })
-        })()
-        return
-      }
-
-      if (msg.type === 'auth') {
-        void (async () => {
-          let uid = String(msg.userId ?? '')
-          if (isAuthEnforced()) {
-            const resolved = await resolveWsUserId(msg)
-            if (!resolved) {
-              send(ws, { type: 'error', message: 'auth_failed' })
-              ws.close(4001, 'Unauthorized')
-              return
-            }
-            uid = resolved
-          }
-          if (!WS_USER_ID_RE.test(uid)) {
-            send(ws, { type: 'error', message: 'invalid_user' })
-            return
-          }
-          markAuthed(uid)
-          send(ws, { type: 'auth_ok' })
-        })()
-        return
-      }
-
-      if (msg.type === 'rejoin') {
-        void (async () => {
-          let uid = String(msg.userId ?? '')
-          if (isAuthEnforced()) {
-            const resolved = await resolveWsUserId(msg)
-            if (!resolved) {
-              send(ws, { type: 'error', message: 'auth_failed' })
-              ws.close(4001, 'Unauthorized')
-              return
-            }
-            uid = resolved
-          }
-          if (!markAuthed(uid)) return
-          if (!rejoinMatch(ws, uid)) {
-            send(ws, { type: 'error', message: 'rejoin_failed' })
-          }
-        })()
-        return
-      }
-
-      if (msg.type === 'join_queue') {
-        void (async () => {
-          let uid = String(msg.userId ?? '')
-          const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
-
-          if (isAuthEnforced()) {
-            const resolved = await resolveWsUserId(msg)
-            if (!resolved) {
-              send(ws, { type: 'error', message: 'auth_failed' })
-              ws.close(4001, 'Unauthorized')
-              return
-            }
-            uid = resolved
-          }
-
-          if (!WS_USER_ID_RE.test(uid)) {
-            send(ws, { type: 'error', message: 'invalid_user' })
-            return
-          }
-
-          if (matches.size >= MAX_MATCHES) {
-            send(ws, { type: 'error', message: 'server_full' })
-            return
-          }
-
-          if (!markAuthed(uid)) return
-
-          const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
-            ? String(msg.subjectId)
-            : DEFAULT_SUBJECT_ID
-
-          const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
-          if (rawCode === 'new') {
-            joinDuelCreate(ws, uid, name, subjectId)
-            return
-          }
-          const cleanCode = rawCode.replace(/^(?:duel|room)-/, '')
-          const duelCode = cleanCode && (DUEL_CODE_RE.test(cleanCode) || DUEL_CODE_RE.test(rawCode)) ? cleanCode : null
-          if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
-          else joinQueue(ws, uid, name, subjectId)
+        const now = Date.now()
+        if (now - state.msgWindowStart >= L.msgWindowMs) {
+          state.msgWindowStart = now
+          state.msgCount = 0
+        }
+        if (++state.msgCount > L.maxMsgsPerWindow) {
+          ws.close(1008, 'rate_limited')
           return
-        })()
-        return
-      }
+        }
 
-      if (msg.type === 'answer' && state.userId) {
-        const userId = state.userId
-        const matchId = String(msg.matchId)
-        const index = Number(msg.index)
-        const optionId = String(msg.optionId)
-        handleAnswer(ws, userId, matchId, index, optionId)
-        return
-      }
+        const msg = parseWsMessage(raw)
+        if (!msg) {
+          send(ws, { type: 'error', message: 'invalid_message_format' })
+          return
+        }
 
-      if (msg.type === 'reaction' && state.userId) {
-        const userId = state.userId
-        const matchId = String(msg.matchId)
-        handleReaction(userId, matchId, msg.kind, msg.content)
-        return
-      }
+        if (msg.type === 'ping') {
+          send(ws, { type: 'pong' })
+          return
+        }
 
-      if (msg.type === 'leave_queue' && state.userId) {
-        handleLeaveQueue(state.userId)
-        return
+        if (msg.type === 'get_online') {
+          void (async () => {
+            try {
+              const uid = state.userId
+              const onlineList = await getOnlineUsers(uid)
+              send(ws, {
+                type: 'online_players',
+                count: onlineList.length,
+                players: onlineList,
+              })
+            } catch (err) {
+              Sentry.captureException(err, { tags: { ws: 'get_online' } })
+              send(ws, { type: 'error', message: 'internal_error' })
+            }
+          })()
+          return
+        }
+
+        if (msg.type === 'auth') {
+          void (async () => {
+            try {
+              let uid = String(msg.userId ?? '')
+              if (isAuthEnforced()) {
+                const resolved = await resolveWsUserId(msg)
+                if (!resolved) {
+                  send(ws, { type: 'error', message: 'auth_failed' })
+                  ws.close(4001, 'Unauthorized')
+                  return
+                }
+                uid = resolved
+              }
+              if (!WS_USER_ID_RE.test(uid)) {
+                send(ws, { type: 'error', message: 'invalid_user' })
+                return
+              }
+              markAuthed(uid)
+              send(ws, { type: 'auth_ok' })
+            } catch (err) {
+              Sentry.captureException(err, { tags: { ws: 'auth' } })
+              send(ws, { type: 'error', message: 'internal_error' })
+            }
+          })()
+          return
+        }
+
+        if (msg.type === 'rejoin') {
+          void (async () => {
+            try {
+              let uid = String(msg.userId ?? '')
+              if (isAuthEnforced()) {
+                const resolved = await resolveWsUserId(msg)
+                if (!resolved) {
+                  send(ws, { type: 'error', message: 'auth_failed' })
+                  ws.close(4001, 'Unauthorized')
+                  return
+                }
+                uid = resolved
+              }
+              if (!markAuthed(uid)) return
+              if (!rejoinMatch(ws, uid)) {
+                send(ws, { type: 'error', message: 'rejoin_failed' })
+              }
+            } catch (err) {
+              Sentry.captureException(err, { tags: { ws: 'rejoin' } })
+              send(ws, { type: 'error', message: 'internal_error' })
+            }
+          })()
+          return
+        }
+
+        if (msg.type === 'join_queue') {
+          void (async () => {
+            try {
+              let uid = String(msg.userId ?? '')
+              const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
+
+              if (isAuthEnforced()) {
+                const resolved = await resolveWsUserId(msg)
+                if (!resolved) {
+                  send(ws, { type: 'error', message: 'auth_failed' })
+                  ws.close(4001, 'Unauthorized')
+                  return
+                }
+                uid = resolved
+              }
+
+              if (!WS_USER_ID_RE.test(uid)) {
+                send(ws, { type: 'error', message: 'invalid_user' })
+                return
+              }
+
+              if (matches.size >= MAX_MATCHES) {
+                send(ws, { type: 'error', message: 'server_full' })
+                return
+              }
+
+              if (!markAuthed(uid)) return
+
+              const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
+                ? String(msg.subjectId)
+                : DEFAULT_SUBJECT_ID
+
+              const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
+              if (rawCode === 'new') {
+                joinDuelCreate(ws, uid, name, subjectId)
+                return
+              }
+              const cleanCode = rawCode.replace(/^(?:duel|room)-/, '')
+              const duelCode = cleanCode && (DUEL_CODE_RE.test(cleanCode) || DUEL_CODE_RE.test(rawCode)) ? cleanCode : null
+              if (duelCode) joinDuel(ws, uid, name, duelCode, subjectId)
+              else joinQueue(ws, uid, name, subjectId)
+            } catch (err) {
+              Sentry.captureException(err, { tags: { ws: 'join_queue' } })
+              send(ws, { type: 'error', message: 'internal_error' })
+            }
+          })()
+          return
+        }
+
+        if (msg.type === 'answer' && state.userId) {
+          const userId = state.userId
+          const matchId = String(msg.matchId ?? '')
+          const index = Number(msg.index)
+          const optionId = String(msg.optionId ?? '')
+          handleAnswer(ws, userId, matchId, index, optionId)
+          return
+        }
+
+        if (msg.type === 'reaction' && state.userId) {
+          const userId = state.userId
+          const matchId = String(msg.matchId ?? '')
+          handleReaction(userId, matchId, msg.kind, msg.content)
+          return
+        }
+
+        if (msg.type === 'leave_queue' && state.userId) {
+          handleLeaveQueue(state.userId)
+          return
+        }
+      } catch (err) {
+        console.error('[octagon.gateway] unhandled sync error in ws.on(message):', err)
+        Sentry.captureException(err, { tags: { ws: 'message_sync_error' } })
       }
     })
+
 
     ws.on('close', (code: number, reason: Buffer) => {
       const n = (connsByIp.get(ip) ?? 1) - 1

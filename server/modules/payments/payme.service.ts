@@ -252,14 +252,19 @@ async function cancelTransaction(params: Record<string, unknown>): Promise<RpcOu
         extra: { orderId: order.orderId, userId: order.userId, paymeTxId, reason },
       })
     }
-    await db
+    const [updated] = await db
       .update(paymentOrders)
       .set({
         status: 'cancelled',
         rawDetails: { ...order.rawDetails, paymeState: newState, cancelTime: Date.now(), cancelReason: reason },
       })
-      .where(eq(paymentOrders.id, order.id))
+      .where(and(eq(paymentOrders.id, order.id), eq(paymentOrders.status, order.status)))
       .returning({ id: paymentOrders.id })
+
+    if (!updated) {
+      // Race: status o'zgardi (masalan, pending bo'lib turib completed bo'ldi) — qayta chaqirib to'g'ri newState (-2) ni qo'llaymiz
+      return cancelTransaction(params)
+    }
   }
 
   const [fresh] = await db.select().from(paymentOrders).where(eq(paymentOrders.id, order.id))

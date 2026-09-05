@@ -195,6 +195,13 @@ describe("server/config ALLOWED_ORIGIN ro'yxati (domen ko'chirish)", () => {
     expect(config.server.allowedOriginExplicit).toBe(false)
     expect(config.server.allowedOrigin).toBe('http://localhost:5173')
   })
+
+  it("bo'sh TEST_DATABASE_URL yoki OTP_PEPPER config parsing'ni sindirmaydi (ID 18)", async () => {
+    process.env['TEST_DATABASE_URL'] = ''
+    process.env['OTP_PEPPER'] = ''
+    const config = await bootConfig()
+    expect(config.auth.otpPepper).toBeUndefined()
+  })
 })
 
 // config moduli env snapshot'ini import paytida oladi — reset shart (yuqorida chaqiriladi).
