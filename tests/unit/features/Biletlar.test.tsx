@@ -133,4 +133,71 @@ describe('Biletlar', () => {
     expect(path).toBe('/test/1')
     expect(opts.state.questionIds).toHaveLength(30)
   })
+
+  it('fizikada mavzular (topics) mavjud bo\'lsa, har bir mavzu bo\'yicha 30 talik bilet tuzadi va bo\'limlar filtrini ko\'rsatadi', () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+
+    const mockTopics = [
+      { id: 101, nameUz: 'Kinematika-1', nameRu: 'Кинематика-1', slug: 'physics_db-ftp-01-001' },
+      { id: 102, nameUz: 'Dinamika va Statika-1', nameRu: 'Динамика и статика-1', slug: 'physics_db-ftp-02-001' },
+    ]
+
+    const topicQuestions = [
+      ...Array.from({ length: 30 }, (_, i) => ({
+        id: i + 1,
+        topicId: 101,
+        questionUz: `Kinematika savoli ${i + 1}`,
+        questionRu: `Кинематика вопрос ${i + 1}`,
+        optionsUz: { F1: 'a', F2: 'b' },
+        optionsRu: { F1: 'а', F2: 'б' },
+        correctAnswer: 'F1',
+      })),
+      ...Array.from({ length: 30 }, (_, i) => ({
+        id: 31 + i,
+        topicId: 102,
+        questionUz: `Dinamika savoli ${i + 1}`,
+        questionRu: `Динамика вопрос ${i + 1}`,
+        optionsUz: { F1: 'a', F2: 'b' },
+        optionsRu: { F1: 'а', F2: 'б' },
+        correctAnswer: 'F1',
+      })),
+    ] as never[]
+
+    useQuestionsStore.setState({
+      questions: topicQuestions,
+      topics: mockTopics,
+      loaded: true,
+      loading: false,
+    })
+
+    render(<Biletlar />)
+
+    // Biletlar sarlavhalari va mavzu nomlari chiqadi
+    expect(screen.getByText('1 - bilet')).toBeInTheDocument()
+    expect(screen.getByText('Kinematika-1')).toBeInTheDocument()
+    expect(screen.getByText('2 - bilet')).toBeInTheDocument()
+    expect(screen.getByText('Dinamika va Statika-1')).toBeInTheDocument()
+
+    // Bo'lim filtrlari mavjud
+    const kinFilter = screen.getByRole('button', { name: /^Kinematika\s+\(/i })
+    const dinFilter = screen.getByRole('button', { name: /^Dinamika va Statika\s+\(/i })
+    expect(kinFilter).toBeInTheDocument()
+    expect(dinFilter).toBeInTheDocument()
+
+    // Kinematika bo'limini tanlaganda faqat 1-bilet qolishi kerak
+    fireEvent.click(kinFilter)
+    expect(screen.getByText('1 - bilet')).toBeInTheDocument()
+    expect(screen.getByText('Kinematika-1')).toBeInTheDocument()
+    expect(screen.queryByText('Dinamika va Statika-1')).toBeNull()
+
+    // Bilet bosilganda to'g'ri savol id'lari va title bilan navigatsiya bo'ladi
+    fireEvent.click(screen.getByText('1 - bilet'))
+    expect(mockNavigate).toHaveBeenCalledTimes(1)
+    const [path, opts] = mockNavigate.mock.calls[0]!
+    expect(path).toBe('/test/1')
+    expect(opts.state.title).toBe('1 - bilet (Kinematika-1)')
+    expect(opts.state.questionIds).toHaveLength(30)
+    expect(opts.state.questionIds[0]).toBe(1)
+    expect(opts.state.questionIds[29]).toBe(30)
+  })
 })
