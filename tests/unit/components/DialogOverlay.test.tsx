@@ -480,5 +480,67 @@ describe('DialogOverlay component', () => {
       fireEvent.click(btn)
       expect(handleClick).toHaveBeenCalledTimes(1)
     })
+
+    it('full-surface drag (default dragHandleOnly=false): dragging from body content dismisses sheet', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-testid="body-text" style={{ marginTop: '120px' }}>
+              Any paragraph in the modal
+            </div>
+          </div>
+        </DialogOverlay>
+      )
+      const bodyText = screen.getByTestId('body-text')
+      firePointer('pointerdown', bodyText, { clientY: 200, clientX: 100 })
+      firePointer('pointermove', bodyText, { clientY: 320, clientX: 100 })
+      firePointer('pointerup', bodyText, { clientY: 320, clientX: 100 })
+
+      vi.advanceTimersByTime(300)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
+    it('light responsive flick (>0.35 px/ms) closes sheet swiftly', () => {
+      vi.useFakeTimers()
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div style={{ height: '300px' }}>
+            <div data-testid="surface">Sheet surface</div>
+          </div>
+        </DialogOverlay>
+      )
+      const surface = screen.getByTestId('surface')
+      firePointer('pointerdown', surface, { clientY: 100, clientX: 100 })
+      vi.advanceTimersByTime(30)
+      // 20px in 30ms -> velocity = 0.67 px/ms > 0.35 px/ms
+      firePointer('pointermove', surface, { clientY: 120, clientX: 100 })
+      vi.advanceTimersByTime(10)
+      firePointer('pointerup', surface, { clientY: 120, clientX: 100 })
+
+      vi.advanceTimersByTime(300)
+      expect(handleClose).toHaveBeenCalledTimes(1)
+      vi.useRealTimers()
+    })
+
+    it('text input interaction does not initiate drag gesture', () => {
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div>
+            <input data-testid="text-input" placeholder="Type here" />
+          </div>
+        </DialogOverlay>
+      )
+      const input = screen.getByTestId('text-input')
+      firePointer('pointerdown', input, { clientY: 100, clientX: 100 })
+      firePointer('pointermove', input, { clientY: 250, clientX: 100 })
+      firePointer('pointerup', input, { clientY: 250, clientX: 100 })
+
+      expect(handleClose).not.toHaveBeenCalled()
+    })
   })
 })

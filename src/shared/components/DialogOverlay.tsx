@@ -17,7 +17,7 @@ interface Props {
   backdropClassName?: string
   /** Pastdan chiquvchi sheet'larda pastga surib yopish imkoniyati (opt-in, default: false) */
   swipeToDismiss?: boolean
-  /** Gesture faqat drag-handle yoki header zonasi orqali boshlanishi (default: true) */
+  /** Gesture faqat drag-handle yoki header zonasi orqali boshlanishi (default: false — full surface drag) */
   dragHandleOnly?: boolean
   /** Backdrop bosilganda modalni yopish (default: true) */
   closeOnBackdrop?: boolean
@@ -56,6 +56,21 @@ function unlockScroll() {
 
 const isTop = (id: symbol) => dialogStack[dialogStack.length - 1] === id
 
+function findScrollContainer(el: HTMLElement | null, stopEl: HTMLElement | null): HTMLElement | null {
+  let curr: HTMLElement | null = el
+  while (curr && curr !== stopEl) {
+    if (typeof window !== 'undefined') {
+      const style = window.getComputedStyle(curr)
+      const overflowY = style.overflowY
+      if ((overflowY === 'auto' || overflowY === 'scroll') && curr.scrollHeight > curr.clientHeight) {
+        return curr
+      }
+    }
+    curr = curr.parentElement
+  }
+  return null
+}
+
 export default function DialogOverlay({
   onClose,
   labelId,
@@ -65,7 +80,7 @@ export default function DialogOverlay({
   className,
   backdropClassName = 'bg-black/70 backdrop-blur-sm',
   swipeToDismiss = false,
-  dragHandleOnly = true,
+  dragHandleOnly = false,
   closeOnBackdrop = true,
   canDismiss,
 }: Props) {
@@ -118,10 +133,11 @@ export default function DialogOverlay({
     startX: number
     lastY: number
     lastX: number
-    lastTime: number
+    samples: { time: number; y: number }[]
     velocityY: number // in px/ms
     axis: 'pending' | 'horizontal' | 'vertical'
     isDragging: boolean
+    scrollContainer: HTMLElement | null
   } | null>(null)
 
   // Stack ro'yxati + body scroll-lock + modal stack ro'yxati + focus restore
@@ -204,17 +220,15 @@ export default function DialogOverlay({
     const target = e.target as HTMLElement | null
     if (!target) return
 
-    // Interactive element himoyasi: agar pointer tugma, havola yoki input ustida boshlansa drag qilinmasin
-    if (target.closest('button, a, input, select, textarea, [role="button"]')) {
+    // Text inputs & editables himoyasi: matn kiritish / belgilash paytida drag qilinmasin
+    if (target.closest('input, textarea, select, [contenteditable="true"]')) {
       return
     }
 
     const clientY = e.clientY ?? (e.nativeEvent as MouseEvent)?.clientY ?? 0
     const clientX = e.clientX ?? (e.nativeEvent as MouseEvent)?.clientX ?? 0
 
-    // Handle + Header zonasi tekshiruvi:
-    // 1) Explicit handle marker: [data-drag-handle], [data-sheet-handle], .sheet-drag-handle, .sheet-drag-zone
-    // 2) Yoki sheet tepasidan 56px gacha bo'lgan header zonasi (interactive elementlar bundan mustasno)
+    // Explicit handle yoki header zonasi tekshiruvi:
     const isMarkedHandle = Boolean(
       target.closest?.('[data-drag-handle], [data-sheet-handle], .sheet-drag-handle, .sheet-drag-zone')
     )
@@ -225,6 +239,8 @@ export default function DialogOverlay({
       return
     }
 
+    const scrollContainer = findScrollContainer(target, sheetRef.current)
+
     thresholdCrossedRef.current = false
 
     dragStateRef.current = {
@@ -233,10 +249,11 @@ export default function DialogOverlay({
       startX: clientX,
       lastY: clientY,
       lastX: clientX,
-      lastTime: performance.now(),
+      samples: [{ time: performance.now(), y: clientY }],
       velocityY: 0,
       axis: 'pending',
       isDragging: false,
+      scrollContainer,
     }
   }
 
@@ -250,14 +267,37 @@ export default function DialogOverlay({
     const deltaX = clientX - state.startX
     const deltaY = clientY - state.startY
     const now = performance.now()
-    const dt = now - state.lastTime
 
-    if (dt > 0) {
-      state.velocityY = (clientY - state.lastY) / dt // px/ms
+    // Rolling sample window (oxirgi 100ms ichidagi siljishlarni saqlash — yuqori aniqlikdagi tezlik hisobi)
+    state.samples = state.samples.filter((s) => now - s.time < 100)
+    state.samples.push({ time: now, y: clientY })
+
+    if (state.samples.length >= 2) {
+      const first = state.samples[0]
+      const last = state.samples[state.samples.length - 1]
+      const dt = last.time - first.time
+      if (dt > 0) {
+        state.velocityY = (last.y - first.y) / dt // px/ms
+      }
+    } else {
+      state.velocityY = 0
     }
+
     state.lastY = clientY
     state.lastX = clientX
-    state.lastTime = now
+
+    // Nested scroll koordinatsiyasi: agar element scroll ro'yxat ichida bo'lsa
+    if (state.scrollContainer) {
+      const currentScrollTop = state.scrollContainer.scrollTop
+      // Ro'yxat o'rtasida/pastida bo'lsa, oddiy scroll ishlashiga imkon berish
+      if (currentScrollTop > 0) {
+        return
+      }
+      // Ro'yxat eng tepada (scrollTop <= 0) bo'lib, foydalanuvchi tepaga itarsa, ro'yxat scroll bo'lsin
+      if (deltaY < 0 && !state.isDragging) {
+        return
+      }
+    }
 
     // State machine: yo'nalishni 6-8px slopdan keyin BIR MARTA aniqlash
     if (state.axis === 'pending') {
@@ -290,19 +330,19 @@ export default function DialogOverlay({
       }
     }
 
-    // Accidental click himoyasi: 8px dan ortiq harakat bo'lsa keyingi click'ni bloklash
-    if (Math.abs(deltaY) > 8) {
+    // Accidental click himoyasi: 6px dan ortiq harakat bo'lsa keyingi click'ni bloklash
+    if (Math.abs(deltaY) > 6) {
       suppressNextClickRef.current = true
     }
 
-    // Rubber banding: tepaga tortilsa 0.15 qarshilik
+    // Rubber banding: tepaga tortilsa 0.12 elastik qarshilik
     let currentY = deltaY
     if (currentY < 0) {
-      currentY = deltaY * 0.15
+      currentY = deltaY * 0.12
     }
 
     const sheetHeight = sheetRef.current?.clientHeight || 400
-    const thresholdDistance = Math.min(sheetHeight * 0.25, 140)
+    const thresholdDistance = Math.min(sheetHeight * 0.2, 75)
 
     // One-shot threshold haptic (domain method)
     if (currentY > thresholdDistance) {
@@ -310,17 +350,17 @@ export default function DialogOverlay({
         thresholdCrossedRef.current = true
         haptics.threshold()
       }
-    } else if (currentY < thresholdDistance - 30) {
+    } else if (currentY < thresholdDistance - 25) {
       thresholdCrossedRef.current = false
     }
 
-    // Direct DOM transform (React rerender'siz 120Hz silliq)
+    // Direct DOM transform (React rerender'siz 120Hz/144Hz silliq)
     if (sheetRef.current) {
       sheetRef.current.style.transition = 'none'
       sheetRef.current.style.transform = `translate3d(0, ${currentY}px, 0)`
     }
     if (backdropRef.current) {
-      const opacity = Math.max(0, 1 - Math.max(0, currentY) / (sheetHeight * 1.4))
+      const opacity = Math.max(0, 1 - Math.max(0, currentY) / (sheetHeight * 1.2))
       backdropRef.current.style.opacity = `${opacity}`
     }
   }
@@ -329,17 +369,25 @@ export default function DialogOverlay({
     const state = dragStateRef.current
     if (!state || state.pointerId !== e.pointerId) return
 
-    // Pointer koordinatalarini pointerup vaqtida ham yangilash
+    // Pointer koordinatalarini va tezligini pointerup vaqtida yakuniy hisoblash
     const clientY = e.clientY ?? (e.nativeEvent as MouseEvent)?.clientY ?? state.lastY
     const clientX = e.clientX ?? (e.nativeEvent as MouseEvent)?.clientX ?? state.lastX
     const now = performance.now()
-    const dt = now - state.lastTime
-    if (dt > 0 && clientY !== state.lastY) {
-      state.velocityY = (clientY - state.lastY) / dt
+
+    state.samples = state.samples.filter((s) => now - s.time < 100)
+    state.samples.push({ time: now, y: clientY })
+
+    if (state.samples.length >= 2) {
+      const first = state.samples[0]
+      const last = state.samples[state.samples.length - 1]
+      const dt = last.time - first.time
+      if (dt > 0) {
+        state.velocityY = (last.y - first.y) / dt // px/ms
+      }
     }
+
     state.lastY = clientY
     state.lastX = clientX
-    state.lastTime = now
 
     const wasDragging = state.isDragging
     const finalVelocity = state.velocityY // px/ms
@@ -361,15 +409,34 @@ export default function DialogOverlay({
     const sheet = sheetRef.current
     const backdrop = backdropRef.current
     const sheetHeight = sheet?.clientHeight || 400
-    const thresholdDistance = Math.min(sheetHeight * 0.25, 140)
+    const thresholdDistance = Math.min(sheetHeight * 0.2, 75)
 
-    const shouldClose = isDismissAllowed('swipe')
-      && (finalY > thresholdDistance || (finalVelocity > 0.75 && finalY > 20))
-    const prefersReduced = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+    // Senior-level gesture trigger:
+    // 1) Distance threshold: 75px yoki sheetHeight*0.2 dan ortiq tortilganda
+    // 2) Flick threshold: velocity > 0.35 px/ms bo'lib, kamida 15px pastga harakat bo'lganda (chaqqon va yengil)
+    const shouldClose =
+      isDismissAllowed('swipe') &&
+      (finalY > thresholdDistance || (finalVelocity > 0.35 && finalY > 15))
+
+    const prefersReduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
 
     if (shouldClose) {
       isClosingRef.current = true
-      const exitDuration = prefersReduced ? 0 : 260
+      // Chaqqon chiqish vaqti: tez flick'da 140ms gacha tushadi, sekin drag'da 200ms
+      const exitDuration = prefersReduced
+        ? 0
+        : Math.max(
+            140,
+            Math.min(
+              210,
+              Math.round(
+                (sheetHeight - Math.max(0, finalY)) / Math.max(0.6, finalVelocity || 0.6)
+              )
+            )
+          )
+
       if (sheet) {
         sheet.style.transition = prefersReduced
           ? 'none'
@@ -377,7 +444,9 @@ export default function DialogOverlay({
         sheet.style.transform = `translate3d(0, ${sheetHeight + 80}px, 0)`
       }
       if (backdrop) {
-        backdrop.style.transition = prefersReduced ? 'none' : 'opacity 240ms ease-out'
+        backdrop.style.transition = prefersReduced
+          ? 'none'
+          : `opacity ${Math.min(200, exitDuration)}ms ease-out`
         backdrop.style.opacity = '0'
       }
 
@@ -386,22 +455,20 @@ export default function DialogOverlay({
       } else {
         closeTimerRef.current = window.setTimeout(() => {
           closeTimerRef.current = null
-          // Gesture qabul qilingach siyosatni ikkinchi marta tekshirmaymiz:
-          // aks holda animatsiya paytidagi prop o'zgarishi sheetni yashirin qoldirishi mumkin.
           commitClose()
         }, exitDuration)
       }
     } else {
-      // Spring snap-back qaytishi
-      const snapDuration = prefersReduced ? 0 : 320
+      // Natural spring snap-back qaytishi (220ms silliq)
+      const snapDuration = prefersReduced ? 0 : 220
       if (sheet) {
         sheet.style.transition = prefersReduced
           ? 'none'
-          : `transform ${snapDuration}ms cubic-bezier(.22, 1.2, .36, 1)`
+          : `transform ${snapDuration}ms cubic-bezier(.2, .9, .3, 1)`
         sheet.style.transform = 'translate3d(0, 0px, 0)'
       }
       if (backdrop) {
-        backdrop.style.transition = prefersReduced ? 'none' : 'opacity 200ms ease-out'
+        backdrop.style.transition = prefersReduced ? 'none' : 'opacity 180ms ease-out'
         backdrop.style.opacity = '1'
       }
     }
@@ -428,17 +495,19 @@ export default function DialogOverlay({
     // pointercancel da HECH QACHON dismiss bo'lmaydi, faqat snap-back
     const sheet = sheetRef.current
     const backdrop = backdropRef.current
-    const prefersReduced = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+    const prefersReduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
 
-    const snapDuration = prefersReduced ? 0 : 320
+    const snapDuration = prefersReduced ? 0 : 220
     if (sheet) {
       sheet.style.transition = prefersReduced
         ? 'none'
-        : `transform ${snapDuration}ms cubic-bezier(.22, 1.2, .36, 1)`
+        : `transform ${snapDuration}ms cubic-bezier(.2, .9, .3, 1)`
       sheet.style.transform = 'translate3d(0, 0px, 0)'
     }
     if (backdrop) {
-      backdrop.style.transition = prefersReduced ? 'none' : 'opacity 200ms ease-out'
+      backdrop.style.transition = prefersReduced ? 'none' : 'opacity 180ms ease-out'
       backdrop.style.opacity = '1'
     }
   }
@@ -483,4 +552,3 @@ export default function DialogOverlay({
     </div>
   )
 }
-
