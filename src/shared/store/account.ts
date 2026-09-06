@@ -57,6 +57,8 @@ export const ACCOUNT_STORAGE_PREFIXES = [
   // Belgilar o'yini rekordlari (client-only, lekin shared qurilmada oldingi
   // akkaunt rekordlari ko'rinmasligi uchun tozalanadi — audit 2026-08-31 LOW)
   'yhq-signs-best-',
+  // Test chizmalari sessiya-key bilan saqlanadi; boshqa akkauntga sizmasin.
+  'yhq-test-drawing-v2:',
 ] as const
 
 /**

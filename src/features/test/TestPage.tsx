@@ -39,6 +39,7 @@ import { useImagePreload, formatImageSrc } from './hooks/useImagePreload'
 import { useTestAnswerFlow } from './hooks/useTestAnswerFlow'
 import TestModals from './components/TestModals'
 import TestDrawingLayer from './components/TestDrawingLayer'
+import { clearDrawingSession } from './components/drawing-model'
 
 export default function TestPage() {
   const { id }   = useParams()
@@ -204,8 +205,10 @@ export default function TestPage() {
   }, [q?.id])
 
   useEffect(() => {
-    if (isFinished || showResults) setDrawingOpen(false)
-  }, [isFinished, showResults])
+    if (!isFinished && !showResults) return
+    setDrawingOpen(false)
+    clearDrawingSession(sessionKey)
+  }, [isFinished, showResults, sessionKey])
 
   const handleOpenExplain = useCallback(() => {
     cancelAutoNext()
@@ -344,9 +347,10 @@ export default function TestPage() {
   const handleRetry = useCallback(() => {
     if (activeQuestions.length === 0) return
     resetRewards()
+    clearDrawingSession(sessionKey)
     useTestSessionStore.getState().clear()
     navigate('/test/1', { replace: true, state: location.state })
-  }, [navigate, activeQuestions.length, location.state, resetRewards])
+  }, [navigate, activeQuestions.length, location.state, resetRewards, sessionKey])
 
   const handleFinishFromModal = useCallback(() => { setShowResults(false); goBack(navigate) }, [navigate])
   const handleGoToQuestion    = useCallback((i: number) => { setShowResults(false); setCurrent(i) }, [])
@@ -533,6 +537,7 @@ export default function TestPage() {
           open={drawingOpen}
           onOpenChange={(nextOpen) => { cancelAutoNext(); setDrawingOpen(nextOpen) }}
           questionKey={String(q.id)}
+          sessionKey={sessionKey}
           language={settings.language}
           raised={Boolean(selected)}
         />

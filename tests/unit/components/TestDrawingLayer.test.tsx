@@ -5,17 +5,19 @@ import TestDrawingLayer from '../../../src/features/test/components/TestDrawingL
 
 const context = {
   save: vi.fn(), restore: vi.fn(), setTransform: vi.fn(), clearRect: vi.fn(),
-  beginPath: vi.fn(), arc: vi.fn(), fill: vi.fn(), moveTo: vi.fn(), lineTo: vi.fn(), stroke: vi.fn(),
-  globalCompositeOperation: 'source-over', strokeStyle: '', fillStyle: '', lineWidth: 1, lineCap: 'butt', lineJoin: 'miter',
+  beginPath: vi.fn(), arc: vi.fn(), ellipse: vi.fn(), rect: vi.fn(), fill: vi.fn(), moveTo: vi.fn(), lineTo: vi.fn(), stroke: vi.fn(),
+  globalCompositeOperation: 'source-over', globalAlpha: 1, strokeStyle: '', fillStyle: '', lineWidth: 1, lineCap: 'butt', lineJoin: 'miter',
 } as unknown as CanvasRenderingContext2D
 
 function Drawing({ questionKey = '1' }: { questionKey?: string }) {
   const [open, setOpen] = React.useState(false)
-  return <div style={{ width: 400, height: 800 }}><TestDrawingLayer open={open} onOpenChange={setOpen} questionKey={questionKey} language="uz" /></div>
+  return <div style={{ width: 400, height: 800 }}><TestDrawingLayer open={open} onOpenChange={setOpen} questionKey={questionKey} sessionKey="test-session" language="uz" /></div>
 }
 
 beforeEach(() => {
   vi.clearAllMocks()
+  localStorage.clear()
+  vi.stubGlobal('PointerEvent', MouseEvent)
   vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(context)
   vi.spyOn(HTMLCanvasElement.prototype, 'getBoundingClientRect').mockReturnValue({
     x: 0, y: 0, top: 0, left: 0, right: 400, bottom: 800, width: 400, height: 800, toJSON: () => ({}),
@@ -27,8 +29,10 @@ describe('TestDrawingLayer', () => {
     render(<Drawing />)
     fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
     expect(screen.getByRole('toolbar', { name: 'Chizish asboblari' })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Qizil qalam' }))
-    expect(screen.getByRole('button', { name: 'Qizil qalam' })).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByRole('button', { name: 'Qalam' }))
+    expect(screen.getByRole('button', { name: 'Qalam' })).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByRole('button', { name: 'Qizil rang' }))
+    expect(screen.getByRole('button', { name: 'Qizil rang' })).toHaveAttribute('aria-pressed', 'true')
     fireEvent.click(screen.getByRole('button', { name: 'Sahifani boshqarish' }))
     expect(screen.getByLabelText('Chizish maydoni')).toHaveClass('pointer-events-none')
   })
@@ -69,6 +73,42 @@ describe('TestDrawingLayer', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Chizmalarni tozalash' }))
     expect(screen.getByRole('button', { name: 'Chizmalarni tozalash' })).toBeDisabled()
     fireEvent.click(screen.getByRole('button', { name: 'Bekor qilish' }))
+    expect(screen.getByRole('button', { name: 'Chizmalarni tozalash' })).toBeEnabled()
+  })
+
+  it('draws geometric shapes with a live endpoint', () => {
+    render(<Drawing />)
+    fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
+    fireEvent.click(screen.getByRole('button', { name: 'To‘rtburchak' }))
+    const canvas = screen.getByLabelText('Chizish maydoni')
+    fireEvent.pointerDown(canvas, { pointerId: 2, pointerType: 'touch', clientX: 20, clientY: 30 })
+    fireEvent.pointerMove(canvas, { pointerId: 2, pointerType: 'touch', clientX: 160, clientY: 180 })
+    fireEvent.pointerUp(canvas, { pointerId: 2, pointerType: 'touch', clientX: 160, clientY: 180 })
+    expect(context.rect).toHaveBeenCalled()
+  })
+
+  it('opens a separate scratchpad with the same drawing tools', () => {
+    render(<Drawing />)
+    fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Qoralama' }))
+    expect(screen.getByRole('dialog', { name: 'Qoralama doskasi' })).toBeInTheDocument()
+    expect(screen.getByLabelText('Qoralama chizish maydoni')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Qoralamani yopish' }))
+    expect(screen.queryByRole('dialog', { name: 'Qoralama doskasi' })).not.toBeInTheDocument()
+  })
+
+  it('restores persisted drawings after remount', () => {
+    const view = render(<Drawing />)
+    fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
+    const canvas = screen.getByLabelText('Chizish maydoni')
+    fireEvent.pointerDown(canvas, { pointerId: 3, pointerType: 'touch', clientX: 10, clientY: 20 })
+    fireEvent.pointerUp(canvas, { pointerId: 3, pointerType: 'touch', clientX: 10, clientY: 20 })
+    expect(localStorage.getItem('yhq-test-drawing-v2:test-session')).toContain('question:1')
+    view.unmount()
+
+    render(<Drawing />)
+    fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
+    expect(screen.getByRole('button', { name: 'Bekor qilish' })).toBeDisabled()
     expect(screen.getByRole('button', { name: 'Chizmalarni tozalash' })).toBeEnabled()
   })
 })

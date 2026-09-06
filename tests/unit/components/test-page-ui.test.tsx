@@ -27,6 +27,7 @@ function page() {
 
 beforeEach(() => {
   vi.restoreAllMocks()
+  localStorage.clear()
   Element.prototype.scrollIntoView = vi.fn()
   vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(null)
   vi.spyOn(api, 'startKeepAlive').mockReturnValue(() => {})
@@ -86,6 +87,7 @@ describe('test solving controls', () => {
 
   it('requires confirmation and can keep solving without finishing', () => {
     page()
+    localStorage.setItem('yhq-test-drawing-v2:ids:1,2,3', '{"version":2,"surfaces":{}}')
     expect(screen.queryByRole('button', { name: 'Keyingi', exact: true })).not.toBeInTheDocument()
     expect(screen.queryByRole('button', { name: 'Ulashish', exact: true })).not.toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Test menyusi' }))
@@ -100,6 +102,7 @@ describe('test solving controls', () => {
     fireEvent.click(within(screen.getByRole('dialog')).getByRole('button', { name: 'Yakunlash', exact: true }))
     expect(screen.getByTestId('results')).toBeInTheDocument()
     expect(useTestSessionStore.getState().session?.finished).toBe(true)
+    expect(localStorage.getItem('yhq-test-drawing-v2:ids:1,2,3')).toBeNull()
   })
 
   it('opens explanation in a dismissible dialog and stays on the same answered question', async () => {
