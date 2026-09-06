@@ -17,6 +17,7 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { ResultsModal, type QuestionResult } from '../test'
 import { shuffleArray } from '../../shared/lib/seeded'
+import { deduplicateQuestions } from '../../shared/lib/test-session'
 import { onResultSync } from '../../shared/lib/outbox'
 
 const TIME_LIMIT = 10   // soniya / savol
@@ -33,7 +34,7 @@ export default function SpeedPage() {
 
   // 20 ta tasodifiy savol (sahifa ochilganda 1 marta tanlanadi)
   const qs = useMemo(() => {
-    const pool = shuffleArray(questions)
+    const pool = shuffleArray(deduplicateQuestions(questions))
     const list = pool.slice(0, QUESTIONS)
     if (!settings.shuffleOptions) return list
     return list.map((q) => ({

@@ -1092,3 +1092,22 @@ body[data-no-animation='true'] .animate-scorePop {
   touch-action: none;
   user-select: none;
 }
+
+/* ═══ KaTeX Formula Rendering & Mobile Responsiveness ═══ */
+.katex {
+  color: inherit !important;
+  font-size: 1.02em;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding: 0.25rem 0;
+  margin: 0.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+.katex-rendered-token {
+  vertical-align: middle;
+  line-height: normal;
+}
+

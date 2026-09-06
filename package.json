@@ -102,6 +102,7 @@
     "loadtest:octagon": "tsx server/load-test-octagon.ts",
     "content:validate": "tsx scripts/content-bank.ts validate",
     "content:export": "tsx scripts/content-bank.ts export",
+    "content:audit:physics": "tsx scripts/audit-physics-print.ts",
     "lint": "eslint .",
     "test": "npm run test:unit",
     "test:unit": "vitest run tests/unit",

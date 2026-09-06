@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest'
-import { makeSessionKey, isResumable, clampIndex, remainingSeconds, type TestSessionSnapshot } from '../../../src/shared/lib/test-session'
+import {
+  makeSessionKey,
+  isResumable,
+  clampIndex,
+  remainingSeconds,
+  deduplicateQuestions,
+  type TestSessionSnapshot,
+} from '../../../src/shared/lib/test-session'
 
 describe('test-session utils', () => {
   describe('makeSessionKey', () => {
@@ -156,6 +163,89 @@ describe('test-session utils', () => {
 
     it('barcha savollarga to\'liq javob berilganda true qaytaradi', () => {
       expect(isAllAnswered(['correct', 'wrong', 'correct'], 3)).toBe(true)
+    })
+  })
+
+  describe('deduplicateQuestions', () => {
+    it('bitta xil savollarni filtrlab noyoblarini qoldiradi', () => {
+      const items = [
+        { id: 1, text: 'Kuch formulasi qanday?', options: [{ id: 'A1', text: 'F=ma' }, { id: 'A2', text: 'E=mc^2' }], image: null },
+        { id: 2, text: 'Kuch formulasi qanday?', options: [{ id: 'A1', text: 'F=ma' }, { id: 'A2', text: 'E=mc^2' }], image: null },
+        { id: 3, text: 'Tezlik formulasi qanday?', options: [{ id: 'A1', text: 'v=s/t' }], image: null },
+      ]
+      const deduped = deduplicateQuestions(items)
+      expect(deduped).toHaveLength(2)
+      expect(deduped.map((q) => q.id)).toEqual([1, 3])
+    })
+
+    it('bo\'sh joylar farqi bo\'lsa ham bir xil deb hisoblaydi (normalizatsiya)', () => {
+      const items = [
+        { id: 1, text: "To'g'ri   tasdiqni  ko'rsating.", options: [{ id: 'A1', text: 'A  variant' }], image: null },
+        { id: 2, text: "To'g'ri tasdiqni ko'rsating.", options: [{ id: 'A1', text: 'A variant' }], image: null },
+      ]
+      const deduped = deduplicateQuestions(items)
+      expect(deduped).toHaveLength(1)
+      expect(deduped[0].id).toBe(1)
+    })
+
+    it('matni bir xil lekin rasmi har xil savollarni alohida saqlaydi (chizmalar)', () => {
+      const items = [
+        { id: 1, text: 'Sxemadagi umumiy qarshilikni toping', options: [{ id: 'A1', text: '10 Om' }], image: 'img1.png' },
+        { id: 2, text: 'Sxemadagi umumiy qarshilikni toping', options: [{ id: 'A1', text: '10 Om' }], image: 'img2.png' },
+      ]
+      const deduped = deduplicateQuestions(items)
+      expect(deduped).toHaveLength(2)
+    })
+
+    it('matni bir xil lekin variantlari har xil savollarni alohida saqlaydi', () => {
+      const items = [
+        { id: 1, text: "To'g'ri tasdiqni ko'rsating.", options: [{ id: 'A1', text: '1-qonun' }], image: null },
+        { id: 2, text: "To'g'ri tasdiqni ko'rsating.", options: [{ id: 'A1', text: '2-qonun' }], image: null },
+      ]
+      const deduped = deduplicateQuestions(items)
+      expect(deduped).toHaveLength(2)
+    })
+
+    it('qator ko\'chirish (\\n) farqlari bo\'lgan dublikatlarni ham bitta savol deb biladi', () => {
+      const q1 = {
+        id: 101,
+        text: 'Yerga nisbatan v_1=4 m/s, v_2=3 m/s tezliklar\nbilan harakatlanayotgan platformalar',
+        options: [{ id: 'A1', text: '1 m/s' }, { id: 'A2', text: '7 m/s' }],
+        image: null,
+      }
+      const q2 = {
+        id: 102,
+        text: 'Yerga nisbatan v_1=4 m/s, v_2=3 m/s tezliklar bilan\nharakatlanayotgan platformalar',
+        options: [{ id: 'A1', text: '1 m/s' }, { id: 'A2', text: '7 m/s' }],
+        image: null,
+      }
+      const deduped = deduplicateQuestions([q1, q2])
+      expect(deduped).toHaveLength(1)
+      expect(deduped[0].id).toBe(101)
+    })
+
+    it('variantlar o\'rni almashib kelgan bo\'lsa ham dublikatni ushlaydi', () => {
+      const q1 = {
+        id: 201,
+        text: 'Optik kuch qanday o\'lchanadi?',
+        options: [{ id: 'A1', text: 'Dpt' }, { id: 'A2', text: 'm' }],
+        image: null,
+      }
+      const q2 = {
+        id: 202,
+        text: 'Optik kuch qanday o\'lchanadi?',
+        options: [{ id: 'A1', text: 'm' }, { id: 'A2', text: 'Dpt' }],
+        image: null,
+      }
+      const deduped = deduplicateQuestions([q1, q2])
+      expect(deduped).toHaveLength(1)
+      expect(deduped[0].id).toBe(201)
+    })
+
+    it('bo\'sh massiv va bitta elementli massivda to\'g\'ri ishlaydi', () => {
+      expect(deduplicateQuestions([])).toEqual([])
+      const single = [{ id: 1, text: 'Test', options: [], image: null }]
+      expect(deduplicateQuestions(single)).toHaveLength(1)
     })
   })
 })

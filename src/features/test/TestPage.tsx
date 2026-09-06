@@ -38,6 +38,7 @@ import { useAntiCheat } from './hooks/useAntiCheat'
 import { useImagePreload, formatImageSrc } from './hooks/useImagePreload'
 import { useTestAnswerFlow } from './hooks/useTestAnswerFlow'
 import TestModals from './components/TestModals'
+import TestDrawingLayer from './components/TestDrawingLayer'
 
 export default function TestPage() {
   const { id }   = useParams()
@@ -90,6 +91,7 @@ export default function TestPage() {
   const [showAiTutor, setShowAiTutor]   = useState(false)
   const [showMenu, setShowMenu] = useState(false)
   const [confirmFinish, setConfirmFinish] = useState(false)
+  const [drawingOpen, setDrawingOpen] = useState(false)
 
   const handleToast = useCallback((msgKey: string) => {
     setToast(tt(msgKey as any))
@@ -171,7 +173,7 @@ export default function TestPage() {
     answerTimer,
     goTo,
     onToast: handleToast,
-    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || isFinished,
+    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || drawingOpen || isFinished,
   })
 
   // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
@@ -200,6 +202,10 @@ export default function TestPage() {
     setDbExplanation(null)
     setLoadingDbExplain(false)
   }, [q?.id])
+
+  useEffect(() => {
+    if (isFinished || showResults) setDrawingOpen(false)
+  }, [isFinished, showResults])
 
   const handleOpenExplain = useCallback(() => {
     cancelAutoNext()
@@ -406,7 +412,7 @@ export default function TestPage() {
   })()
 
   return (
-    <div className="flex flex-col bg-pcanvas">
+    <div className="relative flex min-h-[100svh] flex-col bg-pcanvas">
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2">
           <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}>
@@ -513,13 +519,23 @@ export default function TestPage() {
               <Check size={15} aria-hidden="true" />{tt('finish')}
             </Button>}
           </div>
-          {selected && <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
+          {selected && !drawingOpen && <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
             aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
             className="pointer-events-auto relative h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
             <TestHelperAvatar />
             <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
           </Button>}
         </div>
+      )}
+
+      {!isFinished && !showResults && (
+        <TestDrawingLayer
+          open={drawingOpen}
+          onOpenChange={(nextOpen) => { cancelAutoNext(); setDrawingOpen(nextOpen) }}
+          questionKey={String(q.id)}
+          language={settings.language}
+          raised={Boolean(selected)}
+        />
       )}
 
       {showExplain && (

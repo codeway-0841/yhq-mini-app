@@ -28,6 +28,7 @@ function page() {
 beforeEach(() => {
   vi.restoreAllMocks()
   Element.prototype.scrollIntoView = vi.fn()
+  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(null)
   vi.spyOn(api, 'startKeepAlive').mockReturnValue(() => {})
   vi.spyOn(api, 'getExplanation').mockResolvedValue({ text: 'Sinov uchun tushuntirish.' })
   useSubjectStore.getState().setSubject('yhq')
@@ -41,6 +42,16 @@ beforeEach(() => {
 })
 
 describe('test solving controls', () => {
+  it('opens and closes the drawing tools without leaving the test', () => {
+    page()
+    fireEvent.click(screen.getByRole('button', { name: 'Chizib yechish' }))
+    expect(screen.getByRole('toolbar', { name: 'Chizish asboblari' })).toBeInTheDocument()
+    expect(screen.getByText('Savol 1')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Chizishni yopish' }))
+    expect(screen.queryByRole('toolbar', { name: 'Chizish asboblari' })).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Chizib yechish' })).toBeInTheDocument()
+  })
+
   it('toggles speech, resets on natural completion and cancels on question change/unmount', () => {
     class Utterance { onend: (() => void) | null = null; onerror: (() => void) | null = null }
     const synth = { getVoices: () => [], speak: vi.fn(), cancel: vi.fn() }

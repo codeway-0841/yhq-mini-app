@@ -9,13 +9,16 @@ Addresses all user requirements:
 5. Roots: \sqrt{x} and repairing detached radical signs.
 6. Typography & Symbols: ×, ·, ±, ≤, ≥, ≈, °, Ω, μ, ν, λ, ρ, and normalized spacing.
 """
+import argparse
+import copy
 import json
 import re
 import sys
 from pathlib import Path
 
-ROOT = Path(r'C:\Users\PC\Desktop\Bot')
-sys.stdout.reconfigure(encoding='utf-8')
+ROOT = Path(__file__).resolve().parents[1]
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 
 def clean_leading_question_number(text: str) -> str:
@@ -364,9 +367,18 @@ def apply_manual_overrides(item: dict) -> bool:
     return False
 
 
-def clean_question(item: dict) -> dict:
-    """Clean a single question item."""
+def clean_question(item: dict, change_log: list | None = None) -> dict:
+    """Clean a single question item and optionally record changes."""
+    eid = item['externalId']
+    old_copy = copy.deepcopy(item) if change_log is not None else None
+
     if apply_manual_overrides(item):
+        if change_log is not None and old_copy != item:
+            change_log.append({
+                "externalId": eid,
+                "type": "manual_override",
+                "diff": {k: {"old": old_copy[k], "new": item[k]} for k in item if old_copy[k] != item[k]}
+            })
         return item
 
     q_uz = item['questionUz']
@@ -396,56 +408,97 @@ def clean_question(item: dict) -> dict:
     item['optionsUz'] = opts_uz
     item['optionsRu'] = opts_ru
 
+    if change_log is not None and old_copy != item:
+        diff = {}
+        for k in ['questionUz', 'questionRu', 'optionsUz', 'optionsRu']:
+            if old_copy[k] != item[k]:
+                diff[k] = {"old": old_copy[k], "new": item[k]}
+        if diff:
+            change_log.append({
+                "externalId": eid,
+                "type": "cleaning_rules",
+                "diff": diff
+            })
+
     return item
 
 
 def main():
-    json_path = ROOT / 'content-banks/fizika/physics-print.json'
-    audit_path = ROOT / 'content-banks/fizika/physics-print.audit.json'
-    print(f"Loading {json_path}...")
-    with open(json_path, 'r', encoding='utf-8') as f:
+    parser = argparse.ArgumentParser(description="Physics Test Print bank cleanup and normalization")
+    parser.add_argument("--input", default=str(ROOT / 'content-banks/fizika/physics-print.json'), help="Path to physics-print.json")
+    parser.add_argument("--output", default=None, help="Path to write cleaned json (defaults to --input)")
+    parser.add_argument("--audit-path", default=str(ROOT / 'content-banks/fizika/physics-print.audit.json'), help="Path to audit summary json")
+    parser.add_argument("--report", default=None, help="Path to write detailed change log json")
+    parser.add_argument("--dry-run", action="store_true", help="Perform cleanup without saving to disk")
+    parser.add_argument("--verbose", action="store_true", help="Print verbose output")
+
+    args = parser.parse_args()
+
+    input_path = Path(args.input)
+    output_path = Path(args.output) if args.output else input_path
+    audit_path = Path(args.audit_path)
+
+    print(f"Loading {input_path}...")
+    with open(input_path, 'r', encoding='utf-8') as f:
         bank = json.load(f)
 
     total_items = len(bank['items'])
-    print(f"Cleaning {total_items} items across {len(bank['topics'])} topics...")
+    print(f"Processing {total_items} items across {len(bank['topics'])} topics...")
 
-    cleaned_items = [clean_question(item) for item in bank['items']]
+    change_log = []
+    cleaned_items = [clean_question(item, change_log) for item in bank['items']]
     bank['items'] = cleaned_items
 
-    print(f"Saving updated {json_path}...")
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(bank, f, ensure_ascii=False, indent=2)
-        f.write('\n')
+    print(f"Processed: {len(change_log)} items had modifications.")
 
-    # Update audit report
-    audit_data = {
-        "status": "CLEANED_AND_VERIFIED",
-        "totalTopics": len(bank['topics']),
-        "totalQuestions": total_items,
-        "cleanupRulesApplied": [
-            "Leading printed question numbers stripped (re.sub(r'^\\s*\\d{1,2}\\.\\s+', '', text))",
-            "OCR font mapping normalized: Greek upsilon (υ) converted to standard physics velocity v (v_0, v_1, v_2)",
-            "Unicode increment ∆ (U+2206) and white triangle △ (U+25B3) normalized to LaTeX \\Delta",
-            "TeX combining arrows \\u20D7 and ⃗ converted to standard LaTeX \\vec{...}",
-            "Long vector arrows and transitions normalized to \\vec{v} = \\text{const} and \\to",
-            "Units and physical exponents normalized: m/s^2, kg/m^3, cm^2, mm^2, 10^{-3}, 10^6",
-            "Subscripts normalized: v_0, t_0, x_0, h_1, h_2, a_n, a_\\tau, m_1, m_2, F_1, F_2, R_1, R_2, a_1, a_2, l_1, l_2, n_1, n_2, g_1, g_2, B_1, B_2, i_1, i_2",
-            "Coefficient-attached subscripts repaired: 3R_1, 3v_1, 3a_1, 2h_1, 2k_1, 3s_1",
-            "Acceleration and sequence subscript comparisons repaired: a_2/a_1, a_1 = 3a_2, a_1 > a_2 > a_3, t_1, t_2, t_3",
-            "Multiline option fractions converted to \\frac{numerator}{denominator}",
-            "Radical symbols normalized to \\sqrt{...} with displaced roots re-attached",
-            "Degree bullets ◦ converted to degree signs ° with Uzbek typography normalized",
-            "Mathematical option choice power classifier distinguishing 10^N from 3-digit integers",
-            "Resolved all 4 rare TeX font/OCR symbol collisions (ftp-06-004-05, ftp-06-005-06, ftp-07-010-06, ftp-05-003-28)",
-        ],
-        "imageAssetsTotal": sum(1 for it in bank['items'] if it['image']),
-    }
-    with open(audit_path, 'w', encoding='utf-8') as f:
-        json.dump(audit_data, f, ensure_ascii=False, indent=2)
-        f.write('\n')
+    if args.report:
+        report_path = Path(args.report)
+        print(f"Saving change report to {report_path}...")
+        with open(report_path, 'w', encoding='utf-8') as f:
+            json.dump({
+                "totalItems": total_items,
+                "modifiedItemsCount": len(change_log),
+                "changes": change_log
+            }, f, ensure_ascii=False, indent=2)
 
-    print("Cleaning and audit update complete!")
+    if not args.dry_run:
+        print(f"Saving updated {output_path}...")
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(bank, f, ensure_ascii=False, indent=2)
+            f.write('\n')
+
+        # Update audit report
+        audit_data = {
+            "status": "CLEANED_AND_VERIFIED",
+            "totalTopics": len(bank['topics']),
+            "totalQuestions": total_items,
+            "cleanupRulesApplied": [
+                "Leading printed question numbers stripped (re.sub(r'^\\s*\\d{1,2}\\.\\s+', '', text))",
+                "OCR font mapping normalized: Greek upsilon (υ) converted to standard physics velocity v (v_0, v_1, v_2)",
+                "Unicode increment ∆ (U+2206) and white triangle △ (U+25B3) normalized to LaTeX \\Delta",
+                "TeX combining arrows \\u20D7 and ⃗ converted to standard LaTeX \\vec{...}",
+                "Long vector arrows and transitions normalized to \\vec{v} = \\text{const} and \\to",
+                "Units and physical exponents normalized: m/s^2, kg/m^3, cm^2, mm^2, 10^{-3}, 10^6",
+                "Subscripts normalized: v_0, t_0, x_0, h_1, h_2, a_n, a_\\tau, m_1, m_2, F_1, F_2, R_1, R_2, a_1, a_2, l_1, l_2, n_1, n_2, g_1, g_2, B_1, B_2, i_1, i_2",
+                "Coefficient-attached subscripts repaired: 3R_1, 3v_1, 3a_1, 2h_1, 2k_1, 3s_1",
+                "Acceleration and sequence subscript comparisons repaired: a_2/a_1, a_1 = 3a_2, a_1 > a_2 > a_3, t_1, t_2, t_3",
+                "Multiline option fractions converted to \\frac{numerator}{denominator}",
+                "Radical symbols normalized to \\sqrt{...} with displaced roots re-attached",
+                "Degree bullets ◦ converted to degree signs ° with Uzbek typography normalized",
+                "Mathematical option choice power classifier distinguishing 10^N from 3-digit integers",
+                "Resolved all 4 rare TeX font/OCR symbol collisions (ftp-06-004-05, ftp-06-005-06, ftp-07-010-06, ftp-05-003-28)",
+            ],
+            "imageAssetsTotal": sum(1 for it in bank['items'] if it['image']),
+        }
+        with open(audit_path, 'w', encoding='utf-8') as f:
+            json.dump(audit_data, f, ensure_ascii=False, indent=2)
+            f.write('\n')
+
+        print("Cleaning and audit update complete!")
+    else:
+        print("[DRY-RUN] No files were written to disk.")
 
 
 if __name__ == '__main__':
     main()
+
