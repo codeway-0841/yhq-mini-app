@@ -6,7 +6,7 @@
  */
 
 import { describe, it, expect, beforeEach } from 'vitest'
-import { ensureAccountOwner, resetAccountState, ACCOUNT_STORAGE_KEYS } from '../../../src/shared/store/account'
+import { ensureAccountOwner, resetAccountState, ACCOUNT_STORAGE_KEYS, ACCOUNT_STORAGE_PREFIXES } from '../../../src/shared/store/account'
 import { useAppStore }         from '../../../src/shared/store/useAppStore'
 import { useDailyStore }       from '../../../src/shared/store/useDailyStore'
 import { useAdaptiveStore }    from '../../../src/shared/store/useAdaptiveStore'
@@ -82,6 +82,13 @@ describe('resetAccountState', () => {
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-adaptive-store')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-session')   // Bearer sessiya ham reset'da o'chadi (MF-3)
+  })
+
+  it('test chizmalarini account switch paytida prefix bo‘yicha tozalaydi', () => {
+    expect(ACCOUNT_STORAGE_PREFIXES).toContain('yhq-test-drawing-v2:')
+    localStorage.setItem('yhq-test-drawing-v2:session-a', '{"version":2}')
+    resetAccountState()
+    expect(localStorage.getItem('yhq-test-drawing-v2:session-a')).toBeNull()
   })
 
   it('localStorage yo\'q muhitda (node) xatosiz ishlaydi', () => {
