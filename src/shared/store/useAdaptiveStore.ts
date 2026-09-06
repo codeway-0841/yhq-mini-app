@@ -9,6 +9,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { type SRCard, createCard, updateCard, pickNext } from '../lib/spaced-repetition'
+import { deduplicateQuestions } from '../lib/test-session'
 import { useQuestionsStore } from './useQuestionsStore'
 import { useSubjectStore } from './useSubjectStore'
 import { api } from '../api'
@@ -48,7 +49,7 @@ export const useAdaptiveStore = create<AdaptiveState>()(
       startSession: () => {
         const subjectId = useSubjectStore.getState().subjectId
         const cards     = mapOf(get().cardsBySubject[subjectId] ?? {})
-        const allIds    = useQuestionsStore.getState().questions.map(q => q.id)
+        const allIds    = deduplicateQuestions(useQuestionsStore.getState().questions).map((q) => q.id)
         const next      = pickNext(cards, allIds)
         set({ currentId: next ?? null, sessionCount: 0 })
       },

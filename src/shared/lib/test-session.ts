@@ -76,3 +76,38 @@ export function remainingSeconds(startedAt: number, totalSeconds: number, now = 
 export function clampIndex(i: number, length: number): number {
   return Math.min(Math.max(0, i), Math.max(0, length - 1))
 }
+
+export interface DedupableQuestion {
+  id: number
+  text: string
+  image?: string | null
+  options?: { id: string; text: string }[]
+  [key: string]: any
+}
+
+/**
+ * Savollar to'plamidan matn, rasm va variantlar bo'yicha takrorlarni filtrlaydi.
+ * Marafon va tasodifiy test rejimlarida foydalanuvchiga bir xil savol
+ * qayta tushmasligi uchun ishlatiladi.
+ */
+export function deduplicateQuestions<T extends DedupableQuestion>(list: T[]): T[] {
+  const seen = new Set<string>()
+  const result: T[] = []
+
+  for (const q of list) {
+    const normText = (q.text || '').trim().replace(/\s+/g, ' ')
+    const normOpts = (q.options || [])
+      .map((o) => (o.text || '').trim().replace(/\s+/g, ' '))
+      .sort()
+      .join('|||')
+    const imgKey = q.image ?? ''
+    const sig = `${normText}___${imgKey}___${normOpts}`
+
+    if (!seen.has(sig)) {
+      seen.add(sig)
+      result.push(q)
+    }
+  }
+
+  return result
+}

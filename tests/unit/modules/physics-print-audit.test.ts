@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import fs from 'node:fs'
 import path from 'node:path'
-import { renderMathToHtml } from '../../../src/shared/components/MathText'
+import { parseMathSegments, renderKaTeXToString } from '../../../src/shared/components/MathText'
 
 interface BankItem {
   externalId: string
@@ -24,19 +24,43 @@ interface BankData {
   items: BankItem[]
 }
 
-describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
+describe('Fizika Test Print — Comprehensive 88,800 Text & 8,880 Question Audit', () => {
   const jsonPath = path.resolve(process.cwd(), 'content-banks/fizika/physics-print.json')
   const raw = fs.readFileSync(jsonPath, 'utf8')
   const bank = JSON.parse(raw) as BankData
 
-  it('8,880 ta savol va 296 ta mavzu toliq mavjud', () => {
+  it('8,880 ta savol va 296 ta mavzu to\'liq mavjud', () => {
     expect(bank.bankId).toBe('physics_db')
     expect(bank.subjectId).toBe('fizika')
     expect(bank.topics.length).toBe(296)
     expect(bank.items.length).toBe(8880)
   })
 
-  it('Savol boshidagi bosma raqamlar (16., 24. kabi) toliq tozalangan (0 ta qoldiq)', () => {
+  it('Mavzu ID\'lari va savol externalId\'lari to\'liq noyob, har mavzuda aynan 30 ta savol mavjud', () => {
+    const topicIdSet = new Set<string>()
+    for (const t of bank.topics) {
+      expect(topicIdSet.has(t.externalId)).toBe(false)
+      topicIdSet.add(t.externalId)
+    }
+
+    const questionIdSet = new Set<string>()
+    const countPerTopic = new Map<string, number>()
+
+    for (const item of bank.items) {
+      expect(questionIdSet.has(item.externalId)).toBe(false)
+      questionIdSet.add(item.externalId)
+      expect(topicIdSet.has(item.topicExternalId)).toBe(true)
+
+      const current = countPerTopic.get(item.topicExternalId) || 0
+      countPerTopic.set(item.topicExternalId, current + 1)
+    }
+
+    for (const t of bank.topics) {
+      expect(countPerTopic.get(t.externalId)).toBe(30)
+    }
+  })
+
+  it('Savol boshidagi bosma raqamlar (16., 24. kabi) to\'liq tozalangan (0 ta qoldiq)', () => {
     const leadingNumberRegex = /^\s*\d{1,2}\.\s+/
     const violations: string[] = []
 
@@ -83,7 +107,7 @@ describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
     expect(violations).toEqual([])
   })
 
-  it('Buzilgan daraja va indekslar (m/s2, kg/m3, v0, t0, x0) toliq tuzatilgan', () => {
+  it('Buzilgan daraja va indekslar (m/s2, kg/m3, v0, t0, x0) to\'liq tuzatilgan', () => {
     const brokenUnitsRegex = /\b(m|km|cm|mm)\/s2\b|\bkg\/m3\b|\bg\/cm3\b/
     const brokenSubscriptsRegex = /\b([vVaAxtTShHpPRqQkKIUlgNdcBi])0\b/
     const violations: string[] = []
@@ -116,7 +140,7 @@ describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
     expect(violations).toEqual([])
   })
 
-  it('Har bir savolda aniq 4 ta variant (A1, A2, A3, A4) va togri correctAnswer mavjud', () => {
+  it('Har bir savolda aniq 4 ta bo\'sh bo\'lmagan variant va to\'g\'ri correctAnswer mavjud', () => {
     const validKeys = ['A1', 'A2', 'A3', 'A4']
     const violations: string[] = []
 
@@ -133,12 +157,21 @@ describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
       if (!validKeys.includes(item.correctAnswer)) {
         violations.push(`${item.externalId}: invalid correctAnswer ${item.correctAnswer}`)
       }
+
+      for (const k of validKeys) {
+        if (!item.optionsUz[k]?.trim()) {
+          violations.push(`${item.externalId}: empty optionUz[${k}]`)
+        }
+        if (!item.optionsRu[k]?.trim()) {
+          violations.push(`${item.externalId}: empty optionRu[${k}]`)
+        }
+      }
     }
 
     expect(violations).toEqual([])
   })
 
-  it('Savollarga biriktirilgan barcha rasm fayllari diskda mavjud', () => {
+  it('Savollarga biriktirilgan barcha rasm fayllari diskda mavjud va hajmi > 0', () => {
     const missingImages: string[] = []
 
     for (const item of bank.items) {
@@ -146,6 +179,11 @@ describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
         const fullPath = path.resolve(process.cwd(), 'public', item.image.replace(/^\/+/, ''))
         if (!fs.existsSync(fullPath)) {
           missingImages.push(`${item.externalId}: ${item.image}`)
+        } else {
+          const stat = fs.statSync(fullPath)
+          if (stat.size === 0) {
+            missingImages.push(`${item.externalId}: 0-byte image ${item.image}`)
+          }
         }
       }
     }
@@ -153,20 +191,39 @@ describe('Fizika Test Print — Comprehensive 8,880 Question Audit', () => {
     expect(missingImages).toEqual([])
   })
 
-  it('MathText barcha savol va variantlarni KaTeX xatolarisiz toza render qiladi', () => {
+  it('Barcha 88,800 ta UZ/RU savol va variant matnlari KaTeX xatolarisiz 100% toza render qilinadi', () => {
     let errorCount = 0
-    const sampleItems = bank.items.filter((_, idx) => idx % 5 === 0) // sample 1,776 questions
+    const errorDetails: string[] = []
 
-    for (const item of sampleItems) {
-      const texts = [item.questionUz, ...Object.values(item.optionsUz)]
+    for (const item of bank.items) {
+      const texts = [
+        item.questionUz,
+        item.questionRu,
+        ...Object.values(item.optionsUz),
+        ...Object.values(item.optionsRu),
+      ]
+
       for (const t of texts) {
-        const html = renderMathToHtml(t)
-        if (html.includes('class="katex-error"')) {
-          errorCount++
+        const segments = parseMathSegments(t)
+        for (const seg of segments) {
+          if (seg.type === 'math') {
+            const html = renderKaTeXToString(seg.content, seg.displayMode)
+            if (!html || html.includes('class="katex-error"')) {
+              errorCount++
+              if (errorDetails.length < 10) {
+                errorDetails.push(`${item.externalId}: "${seg.content}"`)
+              }
+            }
+          }
         }
       }
+    }
+
+    if (errorCount > 0) {
+      console.error('KaTeX errors found in 88,800 text audit:', errorDetails)
     }
 
     expect(errorCount).toBe(0)
   })
 })
+
