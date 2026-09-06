@@ -1,6 +1,6 @@
 import type { Question } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
-import ImageZoomModal from '../../../shared/components/ImageZoomModal'
+import TestImageAnnotatorModal from './TestImageAnnotatorModal'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import ResultsModal, { type QuestionResult } from '../ResultsModal'
 import AiTutorModal from './AiTutorModal'
@@ -48,6 +48,7 @@ interface TestModalsProps {
   zoomed:              boolean
   onCloseZoom:         () => void
   currentIndex:        number
+  sessionKey?:         string
 }
 
 export default function TestModals({
@@ -84,6 +85,7 @@ export default function TestModals({
   zoomed,
   onCloseZoom,
   currentIndex,
+  sessionKey = 'default',
 }: TestModalsProps) {
   const tt = useT(language)
   return (
@@ -133,9 +135,12 @@ export default function TestModals({
       )}
 
       {zoomed && currentQuestion?.image && (
-        <ImageZoomModal
+        <TestImageAnnotatorModal
           src={formatImageSrc(currentQuestion.image)!}
           alt={`${tt('question')} ${currentIndex + 1}`}
+          questionKey={String(currentQuestion.id)}
+          sessionKey={sessionKey}
+          language={language}
           onClose={onCloseZoom}
         />
       )}

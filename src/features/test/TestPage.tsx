@@ -39,6 +39,8 @@ import { useImagePreload, formatImageSrc } from './hooks/useImagePreload'
 import { useTestAnswerFlow } from './hooks/useTestAnswerFlow'
 import TestModals from './components/TestModals'
 import TestDrawingLayer from './components/TestDrawingLayer'
+import TestCalculatorSheet from './components/TestCalculatorSheet'
+import TestFormulasSheet from './components/TestFormulasSheet'
 import { clearDrawingSession } from './components/drawing-model'
 
 export default function TestPage() {
@@ -93,6 +95,10 @@ export default function TestPage() {
   const [showMenu, setShowMenu] = useState(false)
   const [confirmFinish, setConfirmFinish] = useState(false)
   const [drawingOpen, setDrawingOpen] = useState(false)
+  const [calculatorOpen, setCalculatorOpen] = useState(false)
+  const [formulasOpen, setFormulasOpen] = useState(false)
+  const [drawingsVisible, setDrawingsVisible] = useState(true)
+  const [scratchpadOpen, setScratchpadOpen] = useState(false)
 
   const handleToast = useCallback((msgKey: string) => {
     setToast(tt(msgKey as any))
@@ -540,8 +546,30 @@ export default function TestPage() {
           sessionKey={sessionKey}
           language={settings.language}
           raised={Boolean(selected)}
+          visible={drawingsVisible}
+          onVisibleChange={setDrawingsVisible}
+          onOpenCalculator={() => { cancelAutoNext(); setCalculatorOpen(true) }}
+          onOpenFormulas={() => { cancelAutoNext(); setFormulasOpen(true) }}
+          onToggleSave={() => toggleSaved(q.id)}
+          isSaved={isSaved}
+          scratchpadOpen={scratchpadOpen}
+          onScratchpadOpenChange={setScratchpadOpen}
         />
       )}
+
+      <TestCalculatorSheet
+        open={calculatorOpen}
+        onClose={() => setCalculatorOpen(false)}
+        language={settings.language}
+        disabledReason={isOfficialExam ? tt('calculatorDisabledExam') : null}
+      />
+
+      <TestFormulasSheet
+        open={formulasOpen}
+        onClose={() => setFormulasOpen(false)}
+        language={settings.language}
+        subjectId={subjectId}
+      />
 
       {showExplain && (
         <TestExplanation loading={loadingDbExplain} text={dbExplanation} lesson={explanation?.lesson}
@@ -605,6 +633,7 @@ export default function TestPage() {
         zoomed={zoomed}
         onCloseZoom={() => setZoomed(false)}
         currentIndex={current}
+        sessionKey={sessionKey}
       />
     </div>
   )

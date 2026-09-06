@@ -1,25 +1,34 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
-  ArrowUpRight, Circle, Eraser, Hand, Highlighter, Minus, NotebookPen,
-  PenLine, Redo2, Square, Trash2, Undo2, X,
+  ArrowUpRight, BookOpen, Calculator, Circle, Eraser, Eye, EyeOff, Hand,
+  Highlighter, Minus, NotebookPen, PenLine, Redo2, Square, Trash2, Undo2, X,
 } from 'lucide-react'
 import { Button } from '../../../shared/components/ui/button'
 import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
 import DrawingCanvas from './DrawingCanvas'
+import TestToolsHub from './TestToolsHub'
 import {
   SCRATCHPAD_SURFACE, clearStrokes, emptyDrawing, loadDrawingSession,
   redoDrawing, saveDrawingSession, undoDrawing,
   type DrawingHistory, type DrawingTool,
 } from './drawing-model'
 
-interface TestDrawingLayerProps {
+export interface TestDrawingLayerProps {
   open: boolean
   onOpenChange: (open: boolean) => void
   questionKey: string
   sessionKey: string
   language: Lang
   raised?: boolean
+  visible?: boolean
+  onVisibleChange?: (visible: boolean) => void
+  onOpenCalculator?: () => void
+  onOpenFormulas?: () => void
+  onToggleSave?: () => void
+  isSaved?: boolean
+  scratchpadOpen?: boolean
+  onScratchpadOpenChange?: (open: boolean) => void
 }
 
 interface DrawingToolbarProps {
@@ -28,13 +37,17 @@ interface DrawingToolbarProps {
   color: string
   width: number
   tt: ReturnType<typeof useT>
+  visible: boolean
   onToolChange: (tool: DrawingTool) => void
   onColorChange: (color: string) => void
   onWidthChange: (width: number) => void
   onUndo: () => void
   onRedo: () => void
   onClear: () => void
+  onToggleVisibility: () => void
   onScratchpad?: () => void
+  onCalculator?: () => void
+  onFormulas?: () => void
   onClose?: () => void
   compact?: boolean
 }
@@ -75,8 +88,8 @@ function ToolButton({ selected, label, onClick, children }: {
 }
 
 function DrawingToolbar({
-  drawing, tool, color, width, tt, onToolChange, onColorChange, onWidthChange,
-  onUndo, onRedo, onClear, onScratchpad, onClose, compact = false,
+  drawing, tool, color, width, tt, visible, onToolChange, onColorChange, onWidthChange,
+  onUndo, onRedo, onClear, onToggleVisibility, onScratchpad, onCalculator, onFormulas, onClose, compact = false,
 }: DrawingToolbarProps) {
   return (
     <div role="toolbar" aria-label={tt('drawingTools')} className="space-y-2.5">
@@ -122,24 +135,90 @@ function DrawingToolbar({
         </div>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 flex-wrap">
         <Button type="button" variant="ghost" size="icon" onClick={onUndo} disabled={drawing.undo.length === 0} aria-label={tt('drawingUndo')} title={tt('drawingUndo')} className="bg-psurface"><Undo2 /></Button>
         <Button type="button" variant="ghost" size="icon" onClick={onRedo} disabled={drawing.redo.length === 0} aria-label={tt('drawingRedo')} title={tt('drawingRedo')} className="bg-psurface"><Redo2 /></Button>
         <Button type="button" variant="ghost" size="icon" onClick={onClear} disabled={drawing.strokes.length === 0} aria-label={tt('drawingClear')} title={tt('drawingClear')} className="bg-psurface text-pdanger"><Trash2 /></Button>
-        <div className="flex-1" />
-        {!compact && onScratchpad && (
-          <Button type="button" variant="secondary" onClick={onScratchpad} aria-label={tt('drawingScratchpad')}>
-            <NotebookPen /> <span className="hidden min-[390px]:inline">{tt('drawingScratchpad')}</span>
+
+        {/* Ko'z tugmasi (yashirish / ko'rsatish) */}
+        {!compact && (
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onToggleVisibility}
+            aria-label={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
+            title={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
+            className={`bg-psurface ${!visible ? 'text-pwarning' : ''}`}
+          >
+            {visible ? <Eye /> : <EyeOff />}
           </Button>
         )}
-        {!compact && onClose && <Button type="button" variant="ghost" size="icon" onClick={onClose} aria-label={tt('drawingClose')} title={tt('drawingClose')} className="bg-psurface"><X /></Button>}
+
+        {/* Formulalar */}
+        {!compact && onFormulas && (
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onFormulas}
+            aria-label={tt('toolFormulas')}
+            title={tt('toolFormulas')}
+            className="bg-psurface text-pprimary"
+          >
+            <BookOpen />
+          </Button>
+        )}
+
+        {/* Kalkulyator */}
+        {!compact && onCalculator && (
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onCalculator}
+            aria-label={tt('toolCalculator')}
+            title={tt('toolCalculator')}
+            className="bg-psurface text-pprimary"
+          >
+            <Calculator />
+          </Button>
+        )}
+
+        <div className="flex-1 min-w-2" />
+
+        {/* Qoralama */}
+        {!compact && onScratchpad && (
+          <Button type="button" variant="secondary" onClick={onScratchpad} aria-label={tt('drawingScratchpad')}>
+            <NotebookPen /> <span className="hidden min-[410px]:inline">{tt('drawingScratchpad')}</span>
+          </Button>
+        )}
+
+        {!compact && onClose && (
+          <Button type="button" variant="ghost" size="icon" onClick={onClose} aria-label={tt('drawingClose')} title={tt('drawingClose')} className="bg-psurface">
+            <X />
+          </Button>
+        )}
       </div>
     </div>
   )
 }
 
 export default function TestDrawingLayer({
-  open, onOpenChange, questionKey, sessionKey, language, raised = false,
+  open,
+  onOpenChange,
+  questionKey,
+  sessionKey,
+  language,
+  raised = false,
+  visible: controlledVisible,
+  onVisibleChange,
+  onOpenCalculator,
+  onOpenFormulas,
+  onToggleSave,
+  isSaved = false,
+  scratchpadOpen: controlledScratchpadOpen,
+  onScratchpadOpenChange,
 }: TestDrawingLayerProps) {
   const tt = useT(language)
   // Lazy init: localStorage har renderda qayta o‘qilmaydi.
@@ -148,7 +227,23 @@ export default function TestDrawingLayer({
   const [tool, setTool] = useState<DrawingTool>('pen')
   const [color, setColor] = useState('#111827')
   const [width, setWidth] = useState(5)
-  const [scratchpadOpen, setScratchpadOpen] = useState(false)
+
+  // Ichki / Tashqi boshqariladigan holatlar
+  const [internalScratchpadOpen, setInternalScratchpadOpen] = useState(false)
+  const isScratchpadOpen = controlledScratchpadOpen ?? internalScratchpadOpen
+  const setScratchpadOpen = (val: boolean) => {
+    setInternalScratchpadOpen(val)
+    onScratchpadOpenChange?.(val)
+  }
+
+  const [internalVisible, setInternalVisible] = useState(true)
+  const isVisible = controlledVisible ?? internalVisible
+  const toggleVisibility = () => {
+    const next = !isVisible
+    setInternalVisible(next)
+    onVisibleChange?.(next)
+  }
+
   const [, setRevision] = useState(0)
   const surfaceKey = `question:${questionKey}`
 
@@ -164,12 +259,12 @@ export default function TestDrawingLayer({
       drawingsRef.current.set(key, drawing)
     }
     return drawing
-  }, [])
+  }, [drawingsRef])
 
   const persistAndRefresh = useCallback(() => {
     saveDrawingSession(sessionKey, drawingsRef.current)
     setRevision((value) => value + 1)
-  }, [sessionKey])
+  }, [sessionKey, drawingsRef])
 
   const mutate = (key: string, action: (drawing: DrawingHistory) => void) => {
     action(getDrawing(key))
@@ -178,57 +273,112 @@ export default function TestDrawingLayer({
 
   useEffect(() => { setRevision((value) => value + 1) }, [questionKey])
 
-  if (!open) {
-    return (
-      <Button
-        type="button"
-        size="icon"
-        variant="secondary"
-        onClick={() => onOpenChange(true)}
-        aria-label={tt('drawingOpen')}
-        className={`fixed right-4 z-40 size-14 rounded-[18px] bg-pcard shadow-xl transition-[bottom,transform,background-color] ${
-          raised ? 'bottom-[calc(6.5rem+var(--safe-bottom,0px))]' : 'bottom-[calc(1.5rem+var(--safe-bottom,0px))]'
-        }`}
-      >
-        <PenLine className="size-6" />
-      </Button>
-    )
-  }
-
   const pageDrawing = getDrawing(surfaceKey)
   const scratchpadDrawing = getDrawing(SCRATCHPAD_SURFACE)
+  const hasPageStrokes = pageDrawing.strokes.length > 0
 
   return (
     <>
-      {!scratchpadOpen && (
+      {/* 
+        Doimiy fon qatlami: Agar panel yopiq bo'lsa ham, chizmalar mavjud bo'lsa va isVisible bo'lsa,
+        variantlar ustida ko'rinib turadi, ammo pointer-events-none bo'ladi!
+      */}
+      {!open && isVisible && hasPageStrokes && (
+        <DrawingCanvas
+          drawing={pageDrawing}
+          tool="hand"
+          color={color}
+          width={width}
+          label={tt('drawingCanvas')}
+          className="pointer-events-none absolute inset-0 z-[15]"
+          onCommit={persistAndRefresh}
+        />
+      )}
+
+      {/* Agar panel yopiq bo'lsa: Suzuvchi Asboblar Markazi (FAB Hub) */}
+      {!open && (
+        <TestToolsHub
+          onOpenDrawing={() => onOpenChange(true)}
+          onOpenScratchpad={() => setScratchpadOpen(true)}
+          onOpenCalculator={() => onOpenCalculator?.()}
+          onOpenFormulas={() => onOpenFormulas?.()}
+          onToggleSave={() => onToggleSave?.()}
+          isSaved={isSaved}
+          hasStrokes={hasPageStrokes}
+          drawingsVisible={isVisible}
+          onToggleVisibility={toggleVisibility}
+          language={language}
+          raised={raised}
+        />
+      )}
+
+      {/* Agar panel ochiq bo'lsa: Faol chizish qatlami va toolbar */}
+      {open && !isScratchpadOpen && (
         <>
-          <DrawingCanvas drawing={pageDrawing} tool={tool} color={color} width={width} label={tt('drawingCanvas')}
-            className="absolute inset-0 z-[35]" onCommit={persistAndRefresh} />
+          <DrawingCanvas
+            drawing={pageDrawing}
+            tool={isVisible ? tool : 'hand'}
+            color={color}
+            width={width}
+            label={tt('drawingCanvas')}
+            className={`absolute inset-0 z-[35] ${!isVisible ? 'opacity-20' : ''}`}
+            onCommit={persistAndRefresh}
+          />
           <div className="fixed inset-x-3 bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-50 mx-auto max-w-md rounded-3xl bg-pcard p-3 shadow-2xl">
             <DrawingToolbar
-              drawing={pageDrawing} tool={tool} color={color} width={width} tt={tt}
-              onToolChange={setTool} onColorChange={setColor} onWidthChange={setWidth}
-              onUndo={() => mutate(surfaceKey, undoDrawing)} onRedo={() => mutate(surfaceKey, redoDrawing)}
-              onClear={() => mutate(surfaceKey, clearStrokes)} onScratchpad={() => setScratchpadOpen(true)}
+              drawing={pageDrawing}
+              tool={tool}
+              color={color}
+              width={width}
+              tt={tt}
+              visible={isVisible}
+              onToolChange={setTool}
+              onColorChange={setColor}
+              onWidthChange={setWidth}
+              onUndo={() => mutate(surfaceKey, undoDrawing)}
+              onRedo={() => mutate(surfaceKey, redoDrawing)}
+              onClear={() => mutate(surfaceKey, clearStrokes)}
+              onToggleVisibility={toggleVisibility}
+              onScratchpad={() => setScratchpadOpen(true)}
+              onCalculator={onOpenCalculator}
+              onFormulas={onOpenFormulas}
               onClose={() => onOpenChange(false)}
             />
           </div>
         </>
       )}
 
-      <Sheet open={scratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden">
+      {/* Qoralama doskasi (Sheet) */}
+      <Sheet open={isScratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden">
         <SheetHeader><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
         <SheetClose onClose={() => setScratchpadOpen(false)} label={tt('drawingScratchpadClose')} />
         <SheetBody className="space-y-3 px-3 pb-3">
           <div className="relative h-[52dvh] min-h-[300px] overflow-hidden rounded-2xl bg-white shadow-inner">
-            <DrawingCanvas drawing={scratchpadDrawing} tool={tool === 'hand' ? 'pen' : tool} color={color} width={width}
-              label={tt('drawingScratchpadCanvas')} className="absolute inset-0" onCommit={persistAndRefresh} />
+            <DrawingCanvas
+              drawing={scratchpadDrawing}
+              tool={tool === 'hand' ? 'pen' : tool}
+              color={color}
+              width={width}
+              label={tt('drawingScratchpadCanvas')}
+              className="absolute inset-0"
+              onCommit={persistAndRefresh}
+            />
           </div>
           <DrawingToolbar
-            drawing={scratchpadDrawing} tool={tool === 'hand' ? 'pen' : tool} color={color} width={width} tt={tt}
-            onToolChange={setTool} onColorChange={setColor} onWidthChange={setWidth}
-            onUndo={() => mutate(SCRATCHPAD_SURFACE, undoDrawing)} onRedo={() => mutate(SCRATCHPAD_SURFACE, redoDrawing)}
-            onClear={() => mutate(SCRATCHPAD_SURFACE, clearStrokes)} compact
+            drawing={scratchpadDrawing}
+            tool={tool === 'hand' ? 'pen' : tool}
+            color={color}
+            width={width}
+            tt={tt}
+            visible={true}
+            onToolChange={setTool}
+            onColorChange={setColor}
+            onWidthChange={setWidth}
+            onUndo={() => mutate(SCRATCHPAD_SURFACE, undoDrawing)}
+            onRedo={() => mutate(SCRATCHPAD_SURFACE, redoDrawing)}
+            onClear={() => mutate(SCRATCHPAD_SURFACE, clearStrokes)}
+            onToggleVisibility={() => {}}
+            compact
           />
         </SheetBody>
       </Sheet>
