@@ -75,38 +75,42 @@ export default function TestToolsHub({
           className="flex flex-col items-end gap-2 animate-in fade-in slide-in-from-bottom-3 duration-150 mb-1"
         >
           {/* Formulalar */}
-          <button
-            type="button"
-            role="menuitem"
-            onClick={() => {
-              haptics.impact('light')
-              setMenuOpen(false)
-              onOpenFormulas()
-            }}
-            className="flex items-center gap-2.5 rounded-full bg-pcard px-3.5 py-2 text-xs font-semibold text-pfg shadow-lg hover:bg-psurface active:scale-95 transition-transform"
-          >
-            <span>{tt('toolFormulas')}</span>
-            <span className="grid size-8 place-items-center rounded-full bg-pprimary/10 text-pprimary">
-              <BookOpen size={16} />
-            </span>
-          </button>
+          {onOpenFormulas && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                haptics.impact('light')
+                setMenuOpen(false)
+                onOpenFormulas()
+              }}
+              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+            >
+              <span>{tt('toolFormulas')}</span>
+              <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
+                <BookOpen size={16} />
+              </span>
+            </button>
+          )}
 
           {/* Kalkulyator */}
-          <button
-            type="button"
-            role="menuitem"
-            onClick={() => {
-              haptics.impact('light')
-              setMenuOpen(false)
-              onOpenCalculator()
-            }}
-            className="flex items-center gap-2.5 rounded-full bg-pcard px-3.5 py-2 text-xs font-semibold text-pfg shadow-lg hover:bg-psurface active:scale-95 transition-transform"
-          >
-            <span>{tt('toolCalculator')}</span>
-            <span className="grid size-8 place-items-center rounded-full bg-pprimary/10 text-pprimary">
-              <Calculator size={16} />
-            </span>
-          </button>
+          {onOpenCalculator && (
+            <button
+              type="button"
+              role="menuitem"
+              onClick={() => {
+                haptics.impact('light')
+                setMenuOpen(false)
+                onOpenCalculator()
+              }}
+              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+            >
+              <span>{tt('toolCalculator')}</span>
+              <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
+                <Calculator size={16} />
+              </span>
+            </button>
+          )}
 
           {/* Qoralama */}
           <button
@@ -117,10 +121,10 @@ export default function TestToolsHub({
               setMenuOpen(false)
               onOpenScratchpad()
             }}
-            className="flex items-center gap-2.5 rounded-full bg-pcard px-3.5 py-2 text-xs font-semibold text-pfg shadow-lg hover:bg-psurface active:scale-95 transition-transform"
+            className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
           >
             <span>{tt('toolScratchpad')}</span>
-            <span className="grid size-8 place-items-center rounded-full bg-pprimary/10 text-pprimary">
+            <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
               <NotebookPen size={16} />
             </span>
           </button>
@@ -134,10 +138,10 @@ export default function TestToolsHub({
                 haptics.impact('light')
                 onToggleVisibility()
               }}
-              className="flex items-center gap-2.5 rounded-full bg-pcard px-3.5 py-2 text-xs font-semibold text-pfg shadow-lg hover:bg-psurface active:scale-95 transition-transform"
+              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
             >
               <span>{tt(drawingsVisible ? 'toolEyeHide' : 'toolEyeShow')}</span>
-              <span className={`grid size-8 place-items-center rounded-full ${drawingsVisible ? 'bg-psurface text-pfg' : 'bg-pwarning/15 text-pwarning'}`}>
+              <span className={`grid size-8 place-items-center rounded-full ${drawingsVisible ? 'bg-white/10 text-white' : 'bg-amber-500/25 text-amber-400'}`}>
                 {drawingsVisible ? <Eye size={16} /> : <EyeOff size={16} />}
               </span>
             </button>
@@ -151,18 +155,18 @@ export default function TestToolsHub({
               haptics.impact('light')
               onToggleSave()
             }}
-            className="flex items-center gap-2.5 rounded-full bg-pcard px-3.5 py-2 text-xs font-semibold text-pfg shadow-lg hover:bg-psurface active:scale-95 transition-transform"
+            className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
           >
             <span>{isSaved ? tt('removeSaved') : tt('toolBookmark')}</span>
-            <span className={`grid size-8 place-items-center rounded-full ${isSaved ? 'bg-pwarning/15 text-pwarning' : 'bg-psurface text-pmuted'}`}>
+            <span className={`grid size-8 place-items-center rounded-full ${isSaved ? 'bg-amber-500/25 text-amber-400' : 'bg-white/10 text-white/70'}`}>
               <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             </span>
           </button>
         </div>
       )}
 
-      {/* Asosiy suzuvchi tugmalar paneli (Floating Dock) */}
-      <div className="flex items-center gap-2 rounded-2xl bg-pcard/95 backdrop-blur-md p-1.5 shadow-xl">
+      {/* Asosiy suzuvchi tugmalar paneli (Floating Dock — iPhone Dynamic Island uslubi) */}
+      <div className="flex items-center gap-1.5 rounded-2xl bg-slate-900/95 text-white backdrop-blur-xl p-1.5 shadow-2xl border border-white/15 ring-1 ring-black/40">
         {/* Yordamchilar menyusi tugmasi */}
         <button
           type="button"
@@ -173,11 +177,11 @@ export default function TestToolsHub({
           title={tt('testTools')}
           className={`grid size-11 place-items-center rounded-xl transition-all active:scale-95 ${
             menuOpen
-              ? 'bg-psurface text-pfg ring-2 ring-pprimary'
-              : 'bg-psurface text-pmuted hover:text-pfg'
+              ? 'bg-purple-600 text-white ring-2 ring-purple-400 ring-inset shadow-md shadow-purple-600/40'
+              : 'bg-white/10 text-purple-300 hover:bg-white/20 hover:text-white'
           }`}
         >
-          {menuOpen ? <X size={20} /> : <Sparkles size={20} className="text-pprimary" />}
+          {menuOpen ? <X size={20} /> : <Sparkles size={20} className="text-purple-300" />}
         </button>
 
         {/* Chizib yechish asosiy tugmasi */}
@@ -190,7 +194,7 @@ export default function TestToolsHub({
           }}
           aria-label={tt('drawingOpen')}
           title={tt('toolDrawing')}
-          className="grid size-11 place-items-center rounded-xl bg-pprimary text-white shadow-md hover:brightness-110 active:scale-95 transition-all"
+          className="grid size-11 place-items-center rounded-xl bg-purple-600 text-white shadow-lg shadow-purple-600/40 hover:bg-purple-500 active:scale-95 transition-all"
         >
           <PenLine size={20} />
         </button>
