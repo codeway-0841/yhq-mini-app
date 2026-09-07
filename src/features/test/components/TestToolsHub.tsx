@@ -166,7 +166,7 @@ export default function TestToolsHub({
       )}
 
       {/* Asosiy suzuvchi tugmalar paneli (Floating Dock — iPhone Dynamic Island uslubi) */}
-      <div className="flex items-center gap-1.5 rounded-2xl bg-slate-900/95 text-white backdrop-blur-xl p-1.5 shadow-2xl border border-white/15 ring-1 ring-black/40">
+      <div className="flex items-center gap-1.5 rounded-2xl bg-slate-900 text-white backdrop-blur-xl p-1.5 shadow-2xl border border-slate-700/80 ring-1 ring-black/40">
         {/* Yordamchilar menyusi tugmasi */}
         <button
           type="button"

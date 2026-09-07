@@ -242,7 +242,7 @@ export default function DynamicIsland() {
                   ⏱ {formattedTime}
                 </span>
               </div>
-              <div className="h-4 w-[1px] bg-white/20 dark:bg-white/20" />
+              <div className="h-4 w-[1px] bg-black/10 dark:bg-white/20" />
               <button
                 type="button"
                 aria-label={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
@@ -260,7 +260,7 @@ export default function DynamicIsland() {
                 aria-expanded={panel === 'menu'}
                 onClick={openMenu}
                 onPointerDown={() => haptics.selection()}
-                className="grid size-8 place-items-center rounded-full bg-white/10 dark:bg-white/10 hover:bg-white/20 active:scale-95 transition-all text-white/90"
+                className="grid size-8 place-items-center rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-95 transition-all text-slate-800 dark:text-white/90"
               >
                 <LayoutGrid size={15} />
               </button>
@@ -282,12 +282,12 @@ export default function DynamicIsland() {
                   title={tt('intizomTitle')}
                 >
                   <Flame size={17} className="text-amber-500 fill-amber-500/30" />
-                  <span className="text-[13px] font-bold tracking-tight text-white dark:text-white [body[data-theme='light']_&]:text-slate-800">
+                  <span className="text-[13px] font-bold tracking-tight text-slate-800 dark:text-white">
                     {dailyStreak} {tt('daysWord')}
                   </span>
                 </button>
               ) : (
-                <div className="flex items-center gap-1.5 select-none text-white/85 dark:text-white/85 [body[data-theme='light']_&]:text-slate-600">
+                <div className="flex items-center gap-1.5 select-none text-slate-700 dark:text-white/85">
                   <Sparkles size={15} className="text-pprimary" />
                   <span className="text-[12.5px] font-semibold">
                     {lang === 'ru' ? subject.nameRu : subject.name}
@@ -295,7 +295,7 @@ export default function DynamicIsland() {
                 </div>
               )}
 
-              <div className="h-4 w-[1px] bg-white/15 dark:bg-white/15 [body[data-theme='light']_&]:bg-black/10" />
+              <div className="h-4 w-[1px] bg-black/10 dark:bg-white/15" />
 
               <button
                 type="button"
@@ -304,7 +304,7 @@ export default function DynamicIsland() {
                 aria-expanded={panel === 'menu'}
                 onClick={openMenu}
                 onPointerDown={() => haptics.selection()}
-                className="flex items-center gap-1.5 py-1 px-3 rounded-full bg-white/10 dark:bg-white/10 [body[data-theme='light']_&]:bg-black/5 hover:opacity-85 active:scale-95 transition-all text-[13px] font-semibold text-white dark:text-white [body[data-theme='light']_&]:text-slate-800"
+                className="flex items-center gap-1.5 py-1 px-3 rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/15 active:scale-95 transition-all text-[13px] font-semibold text-slate-800 dark:text-white"
               >
                 <LayoutGrid size={15} strokeWidth={2} />
                 <span>{menuLabel}</span>
@@ -320,10 +320,10 @@ export default function DynamicIsland() {
           <div className="dynamic-island-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-sm justify-center px-4">
             <div className="dynamic-island-dock pointer-events-auto w-full rounded-3xl p-4 animate-dynamic-island-expand">
               {/* Dock Header */}
-              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-white/10 dark:border-white/10 [body[data-theme='light']_&]:border-black/10">
+              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10">
                 <div className="flex items-center gap-2">
                   <span className="size-2 rounded-full bg-pprimary animate-pulse" />
-                  <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-white dark:text-white [body[data-theme='light']_&]:text-slate-800">
+                  <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-slate-800 dark:text-white">
                     {menuLabel}
                   </h2>
                 </div>
@@ -332,7 +332,7 @@ export default function DynamicIsland() {
                   aria-label={tt('close')}
                   onClick={close}
                   onPointerDown={() => haptics.selection()}
-                  className="grid size-7 place-items-center rounded-full bg-white/10 dark:bg-white/10 [body[data-theme='light']_&]:bg-black/5 hover:opacity-80 active:scale-90 transition-transform text-white/80 dark:text-white/80 [body[data-theme='light']_&]:text-slate-600"
+                  className="grid size-7 place-items-center rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-90 transition-transform text-slate-600 dark:text-white/80"
                 >
                   <X size={15} />
                 </button>
@@ -348,7 +348,7 @@ export default function DynamicIsland() {
                       haptics.selection()
                       run()
                     }}
-                    className="flex items-center gap-3 p-2.5 rounded-2xl bg-white/[0.06] dark:bg-white/[0.06] [body[data-theme='light']_&]:bg-black/[0.04] hover:bg-white/12 active:scale-[0.96] transition-all text-left text-white dark:text-white [body[data-theme='light']_&]:text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                    className="flex items-center gap-3 p-2.5 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.08] dark:hover:bg-white/12 active:scale-[0.96] transition-all text-left text-slate-800 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                   >
                     <span className={`grid size-10 shrink-0 place-items-center rounded-xl ${color}`}>
                       <Icon size={19} strokeWidth={2} />

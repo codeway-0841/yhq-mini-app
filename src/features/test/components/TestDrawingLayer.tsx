@@ -3,7 +3,6 @@ import {
   ArrowUpRight, BookOpen, Calculator, Circle, Eraser, Eye, EyeOff, Hand,
   Highlighter, Minus, NotebookPen, PenLine, Redo2, Square, Trash2, Undo2, X,
 } from 'lucide-react'
-import { Button } from '../../../shared/components/ui/button'
 import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
 import DrawingCanvas from './DrawingCanvas'
@@ -65,29 +64,29 @@ const WIDTHS = [
   { value: 8, key: 'drawingWidthThick' as const },
 ]
 
-function ToolButton({ selected, label, onClick, children }: {
+function ToolButton({
+  selected, children, onClick, label,
+}: {
   selected: boolean
-  label: string
-  onClick: () => void
   children: React.ReactNode
+  onClick: () => void
+  label: string
 }) {
   return (
-    <Button
+    <button
       type="button"
-      variant="ghost"
-      size="icon"
       onClick={onClick}
       aria-label={label}
       title={label}
       aria-pressed={selected}
-      className={`size-10 rounded-xl transition-all active:scale-95 ${
+      className={`grid size-10 shrink-0 place-items-center rounded-xl transition-all active:scale-95 ${
         selected
           ? 'bg-purple-600 text-white shadow-md shadow-purple-600/40 ring-2 ring-purple-400 ring-inset'
-          : 'bg-white/10 hover:bg-white/15 text-white/80 hover:text-white'
+          : 'bg-white/10 hover:bg-white/20 text-white hover:text-white'
       }`}
     >
       {children}
-    </Button>
+    </button>
   )
 }
 
@@ -100,26 +99,24 @@ function DrawingToolbar({
       {/* Modal Header: Sarlavha, markaziy tortish dastagi va o'ng yuqori burchakda [X] yopish tugmasi */}
       {!compact && (
         <div className="relative flex items-center justify-between pb-1.5 border-b border-white/10">
-          <span className="text-xs font-semibold tracking-wide text-white/70">
+          <span className="text-xs font-semibold tracking-wide text-white/80">
             {tt('drawingTools')}
           </span>
 
           {/* Markaziy tortish dastagi (iOS sheet drag handle) */}
-          <div aria-hidden="true" className="absolute left-1/2 -translate-x-1/2 top-0.5 h-1 w-10 rounded-full bg-white/25" />
+          <div aria-hidden="true" className="absolute left-1/2 -translate-x-1/2 top-0.5 h-1 w-10 rounded-full bg-white/30" />
 
           {/* O'ng yuqori burchakdagi [X] yopish tugmasi */}
           {onClose && (
-            <Button
+            <button
               type="button"
-              variant="ghost"
-              size="icon"
               onClick={onClose}
               aria-label={tt('drawingClose')}
               title={tt('drawingClose')}
-              className="size-8 rounded-lg bg-white/10 hover:bg-white/20 text-white active:scale-95 transition-all ml-auto"
+              className="grid size-8 place-items-center rounded-lg bg-white/10 hover:bg-white/20 text-white active:scale-95 transition-all ml-auto"
             >
               <X size={16} />
-            </Button>
+            </button>
           )}
         </div>
       )}
@@ -178,56 +175,48 @@ function DrawingToolbar({
       {/* 3-qator: Tahrirlash amallari (Bekor qilish/Qaytarish/Tozalash/Ko'z) va qo'shimchalar (Formulalar/Kalkulyator/Qoralama) */}
       <div className="flex items-center justify-between gap-1.5 pt-0.5">
         <div className="flex items-center gap-1.5">
-          <Button
+          <button
             type="button"
-            variant="ghost"
-            size="icon"
             onClick={onUndo}
             disabled={drawing.undo.length === 0}
             aria-label={tt('drawingUndo')}
             title={tt('drawingUndo')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
+            className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
           >
             <Undo2 size={18} />
-          </Button>
-          <Button
+          </button>
+          <button
             type="button"
-            variant="ghost"
-            size="icon"
             onClick={onRedo}
             disabled={drawing.redo.length === 0}
             aria-label={tt('drawingRedo')}
             title={tt('drawingRedo')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
+            className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
           >
             <Redo2 size={18} />
-          </Button>
-          <Button
+          </button>
+          <button
             type="button"
-            variant="ghost"
-            size="icon"
             onClick={onClear}
             disabled={drawing.strokes.length === 0}
             aria-label={tt('drawingClear')}
             title={tt('drawingClear')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-red-500/20 text-red-400 disabled:opacity-25 disabled:hover:bg-white/10"
+            className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-red-500/25 text-red-400 disabled:opacity-25 active:scale-95 transition-all"
           >
             <Trash2 size={18} />
-          </Button>
+          </button>
 
           {/* Ko'z tugmasi (yashirish / ko'rsatish) */}
           {!compact && (
-            <Button
+            <button
               type="button"
-              variant="ghost"
-              size="icon"
               onClick={onToggleVisibility}
               aria-label={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
               title={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
-              className={`size-10 rounded-xl bg-white/10 hover:bg-white/15 ${!visible ? 'text-amber-400' : 'text-white/80 hover:text-white'}`}
+              className={`grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 transition-all ${!visible ? 'text-amber-400' : 'text-white'}`}
             >
               {visible ? <Eye size={18} /> : <EyeOff size={18} />}
-            </Button>
+            </button>
           )}
         </div>
 
@@ -235,42 +224,37 @@ function DrawingToolbar({
         {!compact && (
           <div className="flex items-center gap-1.5 ml-auto">
             {onFormulas && (
-              <Button
+              <button
                 type="button"
-                variant="ghost"
-                size="icon"
                 onClick={onFormulas}
                 aria-label={tt('toolFormulas')}
                 title={tt('toolFormulas')}
-                className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
+                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-purple-300 hover:text-white active:scale-95 transition-all"
               >
                 <BookOpen size={18} />
-              </Button>
+              </button>
             )}
             {onCalculator && (
-              <Button
+              <button
                 type="button"
-                variant="ghost"
-                size="icon"
                 onClick={onCalculator}
                 aria-label={tt('toolCalculator')}
                 title={tt('toolCalculator')}
-                className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
+                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-purple-300 hover:text-white active:scale-95 transition-all"
               >
                 <Calculator size={18} />
-              </Button>
+              </button>
             )}
             {onScratchpad && (
-              <Button
+              <button
                 type="button"
-                variant="ghost"
                 onClick={onScratchpad}
                 aria-label={tt('drawingScratchpad')}
-                className="h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3 active:scale-95 transition-all gap-1.5"
+                className="flex items-center h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3 active:scale-95 transition-all gap-1.5"
               >
                 <NotebookPen size={18} />
                 <span className="hidden min-[410px]:inline text-xs font-semibold">{tt('drawingScratchpad')}</span>
-              </Button>
+              </button>
             )}
           </div>
         )}
@@ -399,7 +383,7 @@ export default function TestDrawingLayer({
             className={`absolute inset-0 z-[35] ${!isVisible ? 'opacity-20' : ''}`}
             onCommit={persistAndRefresh}
           />
-          <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-lg rounded-t-[28px] bg-slate-900/98 text-white backdrop-blur-2xl px-4 pt-2.5 pb-[calc(1rem+var(--safe-bottom,0px))] shadow-2xl border-t border-white/15 ring-1 ring-black/40 motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200">
+          <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-lg rounded-t-[28px] bg-slate-900 text-white backdrop-blur-2xl px-4 pt-2.5 pb-[calc(1rem+var(--safe-bottom,0px))] shadow-[0_-16px_48px_rgba(0,0,0,0.5)] border-t border-slate-700/80 ring-1 ring-black/40 motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200">
             <DrawingToolbar
               drawing={pageDrawing}
               tool={tool}
