@@ -174,7 +174,7 @@ export default function DynamicIsland() {
       {
         label: tt('statsTitle'),
         Icon: BarChart3,
-        color: 'bg-blue-500/15 text-blue-400 dark:text-blue-300',
+        color: 'bg-blue-500/15 text-blue-500 dark:text-blue-300',
         run: () => {
           close()
           navigate('/statistika')
@@ -183,19 +183,19 @@ export default function DynamicIsland() {
       {
         label: tt('achTitle'),
         Icon: Trophy,
-        color: 'bg-amber-500/15 text-amber-400 dark:text-amber-300',
+        color: 'bg-amber-500/15 text-amber-500 dark:text-amber-300',
         run: () => setPanel('achievements'),
       },
       {
         label: tt('shopThemesTitle'),
         Icon: Palette,
-        color: 'bg-purple-500/15 text-purple-400 dark:text-purple-300',
+        color: 'bg-purple-500/15 text-purple-500 dark:text-purple-300',
         run: () => setPanel('themes'),
       },
       {
         label: tt('shopMenuItem'),
         Icon: ShoppingBag,
-        color: 'bg-emerald-500/15 text-emerald-400 dark:text-emerald-300',
+        color: 'bg-emerald-500/15 text-emerald-500 dark:text-emerald-300',
         run: () => {
           close()
           navigate('/shop')
@@ -338,7 +338,7 @@ export default function DynamicIsland() {
                 </button>
               </div>
 
-              {/* 2x2 Grid of Quick Actions */}
+              {/* 2x2 Icon Grid (iOS/Launchpad Style) */}
               <div className="grid grid-cols-2 gap-2.5">
                 {actions.map(({ label, Icon, color, run }) => (
                   <button
@@ -348,12 +348,14 @@ export default function DynamicIsland() {
                       haptics.selection()
                       run()
                     }}
-                    className="flex items-center gap-3 p-2.5 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.08] dark:hover:bg-white/12 active:scale-[0.96] transition-all text-left text-slate-800 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                    className="group flex flex-col items-center justify-center gap-2 py-3 px-2 rounded-2xl bg-black/[0.04] dark:bg-white/[0.06] hover:bg-black/[0.07] dark:hover:bg-white/12 active:scale-[0.95] transition-all text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                   >
-                    <span className={`grid size-10 shrink-0 place-items-center rounded-xl ${color}`}>
-                      <Icon size={19} strokeWidth={2} />
+                    <span className={`grid size-12 shrink-0 place-items-center rounded-2xl shadow-xs transition-transform group-active:scale-95 ${color}`}>
+                      <Icon size={22} strokeWidth={2} />
                     </span>
-                    <span className="text-[13px] font-semibold leading-tight">{label}</span>
+                    <span className="text-[12.5px] font-semibold tracking-tight text-slate-800 dark:text-white">
+                      {label}
+                    </span>
                   </button>
                 ))}
               </div>
