@@ -64,6 +64,26 @@ describe('TestToolsHub', () => {
     fireEvent.click(eyeBtn)
     expect(defaultProps.onToggleVisibility).toHaveBeenCalledTimes(1)
   })
+
+  it('applies dynamic theme accent styling to buttons and speed dial badges', () => {
+    render(<TestToolsHub {...defaultProps} />)
+    const drawBtn = screen.getByRole('button', { name: 'Chizib yechish' })
+    expect(drawBtn.className).toContain('bg-pprimary')
+    expect(drawBtn.className).toContain('text-ponprimary')
+
+    const menuTrigger = screen.getByRole('button', { name: 'Yordamchilar' })
+    expect(menuTrigger.className).toContain('text-pprimary')
+
+    // Menyu ochilganda
+    fireEvent.click(menuTrigger)
+    expect(menuTrigger.className).toContain('bg-pprimary')
+    expect(menuTrigger.className).toContain('text-ponprimary')
+
+    // Speed dial badgelarida ham pprimary ishlatiladi
+    const formulasItem = screen.getByRole('menuitem', { name: /Formulalar/ })
+    const badge = formulasItem.querySelector('span.text-pprimary')
+    expect(badge).not.toBeNull()
+  })
 })
 
 describe('TestCalculatorSheet', () => {

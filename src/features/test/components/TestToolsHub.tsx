@@ -87,7 +87,7 @@ export default function TestToolsHub({
               className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
             >
               <span>{tt('toolFormulas')}</span>
-              <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
+              <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
                 <BookOpen size={16} />
               </span>
             </button>
@@ -106,7 +106,7 @@ export default function TestToolsHub({
               className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
             >
               <span>{tt('toolCalculator')}</span>
-              <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
+              <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
                 <Calculator size={16} />
               </span>
             </button>
@@ -124,7 +124,7 @@ export default function TestToolsHub({
             className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
           >
             <span>{tt('toolScratchpad')}</span>
-            <span className="grid size-8 place-items-center rounded-full bg-purple-500/25 text-purple-300">
+            <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
               <NotebookPen size={16} />
             </span>
           </button>
@@ -177,11 +177,11 @@ export default function TestToolsHub({
           title={tt('testTools')}
           className={`grid size-11 place-items-center rounded-xl transition-all active:scale-95 ${
             menuOpen
-              ? 'bg-purple-600 text-white ring-2 ring-purple-400 ring-inset shadow-md shadow-purple-600/40'
-              : 'bg-white/10 text-purple-300 hover:bg-white/20 hover:text-white'
+              ? 'bg-pprimary text-ponprimary ring-2 ring-white/40 ring-inset shadow-md shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)]'
+              : 'bg-white/10 text-pprimary hover:bg-white/20 hover:text-white'
           }`}
         >
-          {menuOpen ? <X size={20} /> : <Sparkles size={20} className="text-purple-300" />}
+          {menuOpen ? <X size={20} /> : <Sparkles size={20} className="text-pprimary" />}
         </button>
 
         {/* Chizib yechish asosiy tugmasi */}
@@ -194,7 +194,7 @@ export default function TestToolsHub({
           }}
           aria-label={tt('drawingOpen')}
           title={tt('toolDrawing')}
-          className="grid size-11 place-items-center rounded-xl bg-purple-600 text-white shadow-lg shadow-purple-600/40 hover:bg-purple-500 active:scale-95 transition-all"
+          className="grid size-11 place-items-center rounded-xl bg-pprimary text-ponprimary shadow-lg shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)] hover:brightness-110 active:scale-95 transition-all"
         >
           <PenLine size={20} />
         </button>

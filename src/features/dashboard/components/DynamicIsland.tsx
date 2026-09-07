@@ -344,7 +344,7 @@ export default function DynamicIsland() {
                       haptics.selection()
                       run()
                     }}
-                    className="group flex flex-col items-center justify-center gap-2.5 py-4 px-2 rounded-2xl bg-pcard dark:bg-psurface/80 border border-pline shadow-xs hover:bg-psurface active:scale-[0.96] transition-all text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                    className="group flex flex-col items-center justify-center gap-2.5 py-4 px-2 rounded-2xl bg-pcard dark:bg-psurface/80 shadow-xs hover:bg-psurface active:scale-[0.96] transition-all text-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                   >
                     <Icon size={24} strokeWidth={1.75} className="text-pmuted group-hover:text-pfg group-active:scale-95 transition-all" />
                     <span className="text-[13px] font-bold tracking-tight text-pfg">

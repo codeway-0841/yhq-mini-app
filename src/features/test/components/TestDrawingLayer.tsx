@@ -81,7 +81,7 @@ function ToolButton({
       aria-pressed={selected}
       className={`grid size-10 shrink-0 place-items-center rounded-xl transition-all active:scale-95 ${
         selected
-          ? 'bg-purple-600 text-white shadow-md shadow-purple-600/40 ring-2 ring-purple-400 ring-inset'
+          ? 'bg-pprimary text-ponprimary shadow-md shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)] ring-2 ring-white/40 ring-inset'
           : 'bg-white/10 hover:bg-white/20 text-white hover:text-white'
       }`}
     >
@@ -143,8 +143,8 @@ function DrawingToolbar({
               onClick={() => onColorChange(item.value)}
               aria-label={tt(item.key)}
               aria-pressed={color === item.value}
-              className={`grid size-11 place-items-center rounded-xl bg-white/10 transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 ${
-                color === item.value ? 'ring-2 ring-purple-400 ring-offset-2 ring-offset-slate-900 bg-white/20' : ''
+              className={`grid size-11 place-items-center rounded-xl bg-white/10 transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+                color === item.value ? 'ring-2 ring-pprimary ring-offset-2 ring-offset-slate-900 bg-white/20' : ''
               }`}
             >
               <span
@@ -162,8 +162,8 @@ function DrawingToolbar({
               onClick={() => onWidthChange(item.value)}
               aria-label={tt(item.key)}
               aria-pressed={width === item.value}
-              className={`grid size-11 place-items-center rounded-xl bg-white/10 text-white transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-400 ${
-                width === item.value ? 'ring-2 ring-purple-400 ring-offset-2 ring-offset-slate-900 bg-white/20 text-purple-300' : 'text-white/80'
+              className={`grid size-11 place-items-center rounded-xl bg-white/10 text-white transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+                width === item.value ? 'ring-2 ring-pprimary ring-offset-2 ring-offset-slate-900 bg-white/20 text-pprimary' : 'text-white/80'
               }`}
             >
               <span className="block w-5 rounded-full bg-current" style={{ height: item.value }} />
@@ -229,7 +229,7 @@ function DrawingToolbar({
                 onClick={onFormulas}
                 aria-label={tt('toolFormulas')}
                 title={tt('toolFormulas')}
-                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-purple-300 hover:text-white active:scale-95 transition-all"
+                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
               >
                 <BookOpen size={18} />
               </button>
@@ -240,7 +240,7 @@ function DrawingToolbar({
                 onClick={onCalculator}
                 aria-label={tt('toolCalculator')}
                 title={tt('toolCalculator')}
-                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-purple-300 hover:text-white active:scale-95 transition-all"
+                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
               >
                 <Calculator size={18} />
               </button>
