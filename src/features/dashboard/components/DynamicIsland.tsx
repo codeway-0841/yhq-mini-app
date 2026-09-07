@@ -312,11 +312,11 @@ export default function DynamicIsland() {
 
       {/* Expanded State: Dynamic Island Command Dock */}
       {panel === 'menu' && (
-        <DialogOverlay onClose={close} labelId={titleId} position="bottom" backdropClassName="bg-black/50 backdrop-blur-xs">
+        <DialogOverlay onClose={close} labelId={titleId} position="bottom" swipeToDismiss backdropClassName="bg-black/50 backdrop-blur-xs">
           <div className="dynamic-island-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-sm justify-center px-4">
             <div className="dynamic-island-dock pointer-events-auto w-full rounded-3xl p-4 animate-dynamic-island-expand">
               {/* Dock Header */}
-              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10">
+              <div data-drag-handle className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10 select-none cursor-grab active:cursor-grabbing">
                 <div className="flex items-center gap-2">
                   <span className="size-2 rounded-full bg-pprimary animate-pulse" />
                   <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-slate-800 dark:text-white">

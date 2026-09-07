@@ -408,7 +408,7 @@ export default function TestDrawingLayer({
       )}
 
       {/* Qoralama doskasi (Sheet) */}
-      <Sheet open={isScratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden">
+      <Sheet open={isScratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden" dragHandleOnly>
         <SheetHeader><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
         <SheetClose onClose={() => setScratchpadOpen(false)} label={tt('drawingScratchpadClose')} />
         <SheetBody className="space-y-3 px-3 pb-3">

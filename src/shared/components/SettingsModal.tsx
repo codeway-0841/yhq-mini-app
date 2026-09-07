@@ -120,11 +120,11 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
   const valueBtn = 'flex items-center gap-1 text-[12px] text-pmuted active:text-pfg transition-colors'
 
   return (
-    <DialogOverlay onClose={onClose} labelId="settings-title">
+    <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
       <div className="relative w-full rounded-t-sheet bg-pcard max-h-[85vh] flex flex-col shadow-2xl">
         <div className="p-5 pb-0">
-          <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-          <div className="flex items-center justify-between mb-2">
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
+          <div data-drag-handle className="flex items-center justify-between mb-2 select-none">
             <h2 id="settings-title" className="text-base font-semibold text-pfg">{tt('settingsTitle')}</h2>
             <button onClick={onClose} aria-label={tt('close')} className="text-pmuted hover:text-pfg transition-colors">
               <X size={20} strokeWidth={1.75} />

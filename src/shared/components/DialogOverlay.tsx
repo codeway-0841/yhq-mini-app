@@ -224,8 +224,8 @@ export default function DialogOverlay({
     const target = e.target as HTMLElement | null
     if (!target) return
 
-    // Text inputs & editables himoyasi: matn kiritish / belgilash paytida drag qilinmasin
-    if (target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) {
+    // Text inputs, editables & canvas himoyasi: matn kiritish / belgilash / chizish paytida drag qilinmasin
+    if (target.closest('input, textarea, select, canvas, [data-no-swipe], [contenteditable]:not([contenteditable="false"])')) {
       return
     }
 

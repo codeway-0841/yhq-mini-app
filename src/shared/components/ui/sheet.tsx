@@ -21,18 +21,37 @@ interface SheetProps {
   className?: string
   /** Nested sheet uchun (default 50; ichki modallar 60, celebration 70) */
   zIndex?: number
+  /** Pastga surib yopish imkoniyati (default: true) */
+  swipeToDismiss?: boolean
+  /** Gesture faqat drag-handle yoki header zonasi orqali boshlanishi (default: false — full surface drag) */
+  dragHandleOnly?: boolean
 }
 
 /** Sarlavha id'si — HAR sheet uchun unikal (nested sheet'da aria-labelledby
  *  to'qnashmasligi kerak; DialogOverlay nested stack'ni qo'llab-quvvatlaydi). */
 const SheetTitleIdContext = React.createContext<string | undefined>(undefined)
 
-function Sheet({ open = true, onClose, children, className, zIndex }: SheetProps) {
+function Sheet({
+  open = true,
+  onClose,
+  children,
+  className,
+  zIndex,
+  swipeToDismiss = true,
+  dragHandleOnly = false,
+}: SheetProps) {
   const titleId = React.useId()
   if (!open) return null
   return (
     <SheetTitleIdContext.Provider value={titleId}>
-    <DialogOverlay onClose={onClose} labelId={titleId} position="bottom" zIndex={zIndex}>
+    <DialogOverlay
+      onClose={onClose}
+      labelId={titleId}
+      position="bottom"
+      zIndex={zIndex}
+      swipeToDismiss={swipeToDismiss}
+      dragHandleOnly={dragHandleOnly}
+    >
       <div
         className={cn(
           'relative z-10 w-full max-w-lg mx-auto',
@@ -46,7 +65,11 @@ function Sheet({ open = true, onClose, children, className, zIndex }: SheetProps
         )}
       >
         {/* Tortish dastagi — sheet ekanini bildiradi (affordance) */}
-        <div aria-hidden="true" className="mx-auto mt-3 h-1 w-9 rounded-full bg-plineStrong" />
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="mx-auto mt-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
         {children}
       </div>
     </DialogOverlay>
@@ -56,7 +79,7 @@ function Sheet({ open = true, onClose, children, className, zIndex }: SheetProps
 
 function SheetHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={cn('flex flex-col gap-1 px-5 pb-3 pt-4', className)} {...props}>
+    <div data-drag-handle className={cn('flex flex-col gap-1 px-5 pb-3 pt-4 select-none', className)} {...props}>
       {children}
     </div>
   )

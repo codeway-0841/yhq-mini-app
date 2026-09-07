@@ -180,6 +180,18 @@ describe('Sheet — a11y', () => {
     render(<Sheet open={false} onClose={() => {}}><SheetHeader><SheetTitle>Yopiq</SheetTitle></SheetHeader></Sheet>)
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
+
+  it('swipeToDismiss sukut bo\'yicha faol va data-drag-handle tutqichiga ega', () => {
+    render(<Sheet onClose={() => {}}><SheetHeader><SheetTitle>Suriladigan sheet</SheetTitle></SheetHeader></Sheet>)
+    const handles = screen.getAllByRole('dialog')[0].querySelectorAll('[data-drag-handle]')
+    expect(handles.length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('swipeToDismiss={false} orqali surishni o\'chirish mumkin', () => {
+    render(<Sheet swipeToDismiss={false} onClose={() => {}}><SheetHeader><SheetTitle>Statik sheet</SheetTitle></SheetHeader></Sheet>)
+    const dialog = screen.getByRole('dialog')
+    expect(dialog.querySelector('.will-change-transform')).toBeNull()
+  })
 })
 
 describe('ConfirmDialog', () => {

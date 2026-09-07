@@ -226,6 +226,7 @@ export default function SubscriptionModal({
       labelId="subscription-modal-title"
       className="animate-fadeIn"
       backdropClassName="bg-black/60"
+      swipeToDismiss
     >
       {isSuccess && <Confetti count={40} />}
 
@@ -234,8 +235,8 @@ export default function SubscriptionModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Yuqori surish tutqichi (Drag Handle) */}
-        <div className="pt-3 pb-1 flex justify-center shrink-0">
-          <div className="w-10 h-1 rounded-full bg-plineStrong" />
+        <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none">
+          <div data-drag-handle className="w-10 h-1 rounded-full bg-plineStrong" />
         </div>
 
         {/* ── STEP 1: TARIFNI TANLANG (Claude Style Accordion) ── */}

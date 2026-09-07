@@ -542,6 +542,23 @@ describe('DialogOverlay component', () => {
 
       expect(handleClose).not.toHaveBeenCalled()
     })
+
+    it('canvas interaction does not initiate drag gesture', () => {
+      const handleClose = vi.fn()
+      render(
+        <DialogOverlay onClose={handleClose} swipeToDismiss>
+          <div>
+            <canvas data-testid="drawing-canvas" width={300} height={300} />
+          </div>
+        </DialogOverlay>
+      )
+      const canvas = screen.getByTestId('drawing-canvas')
+      firePointer('pointerdown', canvas, { clientY: 100, clientX: 100 })
+      firePointer('pointermove', canvas, { clientY: 250, clientX: 100 })
+      firePointer('pointerup', canvas, { clientY: 250, clientX: 100 })
+
+      expect(handleClose).not.toHaveBeenCalled()
+    })
   })
   describe('native touch ownership regressions', () => {
     const touch = (target: HTMLElement, type: string, y: number, cancelable = true) => {

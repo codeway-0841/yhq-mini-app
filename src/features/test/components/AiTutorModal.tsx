@@ -150,12 +150,12 @@ export default function AiTutorModal({
   // Upsell modal
   if (showUpsell) {
     return (
-      <DialogOverlay onClose={handleClose} labelId="upsell-title">
+      <DialogOverlay onClose={handleClose} labelId="upsell-title" swipeToDismiss>
         <div
           className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex flex-col items-center text-center">
             <div className="w-14 h-14 rounded-2xl bg-ppurple/15 flex items-center justify-center mb-3">
               <PremiumIcon size={28} className="text-pwarning" />
@@ -189,12 +189,12 @@ export default function AiTutorModal({
   // Statik tushuntirish modal (FREE)
   if (showStatic && staticText) {
     return (
-      <DialogOverlay onClose={handleClose} labelId="static-title">
+      <DialogOverlay onClose={handleClose} labelId="static-title" swipeToDismiss>
         <div
           className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
             <div className="size-9 rounded-xl bg-pwarning/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
               <Info size={17} className="text-pwarning" />
@@ -235,12 +235,12 @@ export default function AiTutorModal({
   // AI streaming modal (PREMIUM)
   if (showAi) {
     return (
-      <DialogOverlay onClose={handleClose} labelId="ai-title">
+      <DialogOverlay onClose={handleClose} labelId="ai-title" swipeToDismiss>
         <div
           className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
             <div className="size-9 rounded-xl bg-ppurple/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
               <GraduationCap size={17} className="text-ppurple" />
