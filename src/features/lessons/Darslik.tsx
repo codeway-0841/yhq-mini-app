@@ -270,7 +270,6 @@ export default function Darslik() {
   const tt = useT(settings.language)
   const currentModule = modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))
   const selectedMod = modules.find((m) => m.id === selected?.moduleId)
-  const SelectedIcon = getModuleIcon(selected?.moduleId ?? currentModule?.id ?? 1)
   const isSelectedCurrent = !!selected && selected.moduleId === currentModule?.id
     && selected.idx === (lessons[selected.moduleId] ?? []).findIndex((_, i) => !doneFor[selected.moduleId]?.includes(i))
   const selectPathNode = useCallback((selection: PathSelection, trigger: HTMLButtonElement) => {
@@ -342,7 +341,6 @@ export default function Darslik() {
             className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
-          <span className="lesson-toolbar-icon" aria-hidden="true"><SelectedIcon size={20} /></span>
           <h1 ref={headingRef} tabIndex={-1} className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
             {ru ? 'Учебник' : 'Darslik'}
           </h1>

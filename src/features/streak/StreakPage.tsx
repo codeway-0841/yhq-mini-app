@@ -117,9 +117,11 @@ export default function StreakPage() {
 
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
       <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[rgb(var(--p-warning-rgb)/0.12)] flex items-center justify-center mb-2 sm:mb-3">
-          <Flame size={32} strokeWidth={1.75} className={streak > 0 ? 'text-pwarning' : 'text-psubtle'} />
-        </div>
+        <Flame
+          size={36}
+          strokeWidth={1.75}
+          className={`mb-2 sm:mb-3 ${streak > 0 ? 'text-pwarning' : 'text-psubtle'}`}
+        />
         <p className="font-display text-[36px] sm:text-[40px] font-bold leading-none tabular-nums text-pfg tracking-tight">
           {streak} <span className="text-base font-semibold text-psubtle">{tt('daysWord')}</span>
         </p>

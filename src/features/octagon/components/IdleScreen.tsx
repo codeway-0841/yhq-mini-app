@@ -423,16 +423,33 @@ export function IdleScreen({
         </button>
       </section>
       <button type="button" className="arena-friend" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('invite') }}>
-        <span className="arena-friend-icon"><UserPlus size={25} /></span>
+        <UserPlus size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
         <span><strong>{ru ? 'С другом' : 'Do‘st bilan'}</strong><small>{ru ? 'Пригласить или ввести код' : 'Taklif qiling yoki kod kiriting'}</small></span>
-        <ArrowRight size={20} />
+        <ArrowRight size={18} className="shrink-0 text-pmuted" />
       </button>
-      <div className="arena-section-label"><h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2></div>
-      <div className="arena-nav">
-        <button type="button" onClick={() => setSubview('battles')}><span className="arena-nav-icon"><Swords size={22} /></span><strong>{ru ? 'Мои бои' : 'Janglarim'}</strong><small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small><ArrowRight size={16} /></button>
-        <button type="button" onClick={() => setSubview('leaderboard')}><span className="arena-nav-icon arena-gold"><Trophy size={22} /></span><strong>{tt('duelLeaderboardTab')}</strong><small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small><ArrowRight size={16} /></button>
+      <div className="arena-section-group">
+        <div className="arena-section-label"><h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2></div>
+        <div className="arena-nav">
+          <button type="button" onClick={() => setSubview('battles')}>
+            <Swords size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+            <strong>{ru ? 'Мои бои' : 'Janglarim'}</strong>
+            <small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small>
+            <ArrowRight size={16} className="text-pmuted" />
+          </button>
+          <button type="button" onClick={() => setSubview('leaderboard')}>
+            <Trophy size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+            <strong>{tt('duelLeaderboardTab')}</strong>
+            <small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small>
+            <ArrowRight size={16} className="text-pmuted" />
+          </button>
+        </div>
       </div>
-      <button type="button" className="arena-online-row" onClick={() => setSubview('online')}><Users size={18} /><span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span><span>{connected ? effectiveOnlineCount : '—'}</span><ArrowRight size={16} /></button>
+      <button type="button" className="arena-online-row" onClick={() => setSubview('online')}>
+        <Users size={18} strokeWidth={1.75} className="text-pmuted" />
+        <span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span>
+        <span>{connected ? effectiveOnlineCount : '—'}</span>
+        <ArrowRight size={16} className="text-pmuted" />
+      </button>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 .learning-path { padding: 8px 0 24px; }
-.lesson-toolbar-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 12px; color: var(--p-primary); background: var(--p-surface); }
 /* Each section boundary pushes its own sticky module banner away. */
 .lesson-module-section { padding-bottom: 24px; }
 .lesson-module-sticky { position: sticky; top: calc(var(--lesson-header-height, 61px) + 8px); z-index: 20; }
