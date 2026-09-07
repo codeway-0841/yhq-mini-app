@@ -96,7 +96,35 @@ function DrawingToolbar({
   onUndo, onRedo, onClear, onToggleVisibility, onScratchpad, onCalculator, onFormulas, onClose, compact = false,
 }: DrawingToolbarProps) {
   return (
-    <div role="toolbar" aria-label={tt('drawingTools')} className="space-y-2.5 text-white">
+    <div role="toolbar" aria-label={tt('drawingTools')} className="space-y-3 text-white">
+      {/* Modal Header: Sarlavha, markaziy tortish dastagi va o'ng yuqori burchakda [X] yopish tugmasi */}
+      {!compact && (
+        <div className="relative flex items-center justify-between pb-1.5 border-b border-white/10">
+          <span className="text-xs font-semibold tracking-wide text-white/70">
+            {tt('drawingTools')}
+          </span>
+
+          {/* Markaziy tortish dastagi (iOS sheet drag handle) */}
+          <div aria-hidden="true" className="absolute left-1/2 -translate-x-1/2 top-0.5 h-1 w-10 rounded-full bg-white/25" />
+
+          {/* O'ng yuqori burchakdagi [X] yopish tugmasi */}
+          {onClose && (
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={onClose}
+              aria-label={tt('drawingClose')}
+              title={tt('drawingClose')}
+              className="size-8 rounded-lg bg-white/10 hover:bg-white/20 text-white active:scale-95 transition-all ml-auto"
+            >
+              <X size={16} />
+            </Button>
+          )}
+        </div>
+      )}
+
+      {/* 1-qator: Asboblar (Qalam, marker, chizg'ich, shakllar) */}
       <div className="flex gap-2 overflow-x-auto py-1 px-1 -mx-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <ToolButton selected={tool === 'hand'} label={tt('drawingHand')} onClick={() => onToolChange('hand')}><Hand /></ToolButton>
         <ToolButton selected={tool === 'pen'} label={tt('drawingPen')} onClick={() => onToolChange('pen')}><PenLine /></ToolButton>
@@ -108,6 +136,7 @@ function DrawingToolbar({
         <ToolButton selected={tool === 'ellipse'} label={tt('drawingEllipse')} onClick={() => onToolChange('ellipse')}><Circle /></ToolButton>
       </div>
 
+      {/* 2-qator: Ranglar va chiziq qalinligi */}
       <div className="flex flex-col gap-2 min-[430px]:flex-row min-[430px]:items-center min-[430px]:justify-between">
         <div role="group" aria-label={tt('drawingColors')} className="flex gap-2">
           {COLORS.map((item) => (
@@ -146,116 +175,104 @@ function DrawingToolbar({
         </div>
       </div>
 
-      <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          onClick={onUndo}
-          disabled={drawing.undo.length === 0}
-          aria-label={tt('drawingUndo')}
-          title={tt('drawingUndo')}
-          className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
-        >
-          <Undo2 size={18} />
-        </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          onClick={onRedo}
-          disabled={drawing.redo.length === 0}
-          aria-label={tt('drawingRedo')}
-          title={tt('drawingRedo')}
-          className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
-        >
-          <Redo2 size={18} />
-        </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon"
-          onClick={onClear}
-          disabled={drawing.strokes.length === 0}
-          aria-label={tt('drawingClear')}
-          title={tt('drawingClear')}
-          className="size-10 rounded-xl bg-white/10 hover:bg-red-500/20 text-red-400 disabled:opacity-25 disabled:hover:bg-white/10"
-        >
-          <Trash2 size={18} />
-        </Button>
+      {/* 3-qator: Tahrirlash amallari (Bekor qilish/Qaytarish/Tozalash/Ko'z) va qo'shimchalar (Formulalar/Kalkulyator/Qoralama) */}
+      <div className="flex items-center justify-between gap-1.5 pt-0.5">
+        <div className="flex items-center gap-1.5">
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onUndo}
+            disabled={drawing.undo.length === 0}
+            aria-label={tt('drawingUndo')}
+            title={tt('drawingUndo')}
+            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
+          >
+            <Undo2 size={18} />
+          </Button>
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onRedo}
+            disabled={drawing.redo.length === 0}
+            aria-label={tt('drawingRedo')}
+            title={tt('drawingRedo')}
+            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-white/80 hover:text-white disabled:opacity-25 disabled:hover:bg-white/10"
+          >
+            <Redo2 size={18} />
+          </Button>
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            onClick={onClear}
+            disabled={drawing.strokes.length === 0}
+            aria-label={tt('drawingClear')}
+            title={tt('drawingClear')}
+            className="size-10 rounded-xl bg-white/10 hover:bg-red-500/20 text-red-400 disabled:opacity-25 disabled:hover:bg-white/10"
+          >
+            <Trash2 size={18} />
+          </Button>
 
-        {/* Ko'z tugmasi (yashirish / ko'rsatish) */}
+          {/* Ko'z tugmasi (yashirish / ko'rsatish) */}
+          {!compact && (
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={onToggleVisibility}
+              aria-label={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
+              title={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
+              className={`size-10 rounded-xl bg-white/10 hover:bg-white/15 ${!visible ? 'text-amber-400' : 'text-white/80 hover:text-white'}`}
+            >
+              {visible ? <Eye size={18} /> : <EyeOff size={18} />}
+            </Button>
+          )}
+        </div>
+
+        {/* O'ng taraf: Formulalar, Kalkulyator, Qoralama */}
         {!compact && (
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            onClick={onToggleVisibility}
-            aria-label={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
-            title={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
-            className={`size-10 rounded-xl bg-white/10 hover:bg-white/15 ${!visible ? 'text-amber-400' : 'text-white/80 hover:text-white'}`}
-          >
-            {visible ? <Eye size={18} /> : <EyeOff size={18} />}
-          </Button>
-        )}
-
-        {/* Formulalar */}
-        {!compact && onFormulas && (
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            onClick={onFormulas}
-            aria-label={tt('toolFormulas')}
-            title={tt('toolFormulas')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
-          >
-            <BookOpen size={18} />
-          </Button>
-        )}
-
-        {/* Kalkulyator */}
-        {!compact && onCalculator && (
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            onClick={onCalculator}
-            aria-label={tt('toolCalculator')}
-            title={tt('toolCalculator')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
-          >
-            <Calculator size={18} />
-          </Button>
-        )}
-
-        <div className="flex-1 min-w-2" />
-
-        {/* Qoralama */}
-        {!compact && onScratchpad && (
-          <Button
-            type="button"
-            variant="ghost"
-            onClick={onScratchpad}
-            aria-label={tt('drawingScratchpad')}
-            className="h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3"
-          >
-            <NotebookPen size={18} /> <span className="hidden min-[410px]:inline text-xs font-semibold">{tt('drawingScratchpad')}</span>
-          </Button>
-        )}
-
-        {!compact && onClose && (
-          <Button
-            type="button"
-            variant="ghost"
-            size="icon"
-            onClick={onClose}
-            aria-label={tt('drawingClose')}
-            title={tt('drawingClose')}
-            className="size-10 rounded-xl bg-white/10 hover:bg-white/20 text-white/80 hover:text-white"
-          >
-            <X size={18} />
-          </Button>
+          <div className="flex items-center gap-1.5 ml-auto">
+            {onFormulas && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={onFormulas}
+                aria-label={tt('toolFormulas')}
+                title={tt('toolFormulas')}
+                className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
+              >
+                <BookOpen size={18} />
+              </Button>
+            )}
+            {onCalculator && (
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                onClick={onCalculator}
+                aria-label={tt('toolCalculator')}
+                title={tt('toolCalculator')}
+                className="size-10 rounded-xl bg-white/10 hover:bg-white/15 text-purple-300 hover:text-white"
+              >
+                <Calculator size={18} />
+              </Button>
+            )}
+            {onScratchpad && (
+              <Button
+                type="button"
+                variant="ghost"
+                onClick={onScratchpad}
+                aria-label={tt('drawingScratchpad')}
+                className="h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3 active:scale-95 transition-all gap-1.5"
+              >
+                <NotebookPen size={18} />
+                <span className="hidden min-[410px]:inline text-xs font-semibold">{tt('drawingScratchpad')}</span>
+              </Button>
+            )}
+          </div>
         )}
       </div>
     </div>
@@ -382,7 +399,7 @@ export default function TestDrawingLayer({
             className={`absolute inset-0 z-[35] ${!isVisible ? 'opacity-20' : ''}`}
             onCommit={persistAndRefresh}
           />
-          <div className="fixed inset-x-3 bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-50 mx-auto max-w-md rounded-3xl bg-slate-900/95 text-white backdrop-blur-2xl p-3.5 shadow-2xl border border-white/15 ring-1 ring-black/40">
+          <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-lg rounded-t-[28px] bg-slate-900/98 text-white backdrop-blur-2xl px-4 pt-2.5 pb-[calc(1rem+var(--safe-bottom,0px))] shadow-2xl border-t border-white/15 ring-1 ring-black/40 motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200">
             <DrawingToolbar
               drawing={pageDrawing}
               tool={tool}
