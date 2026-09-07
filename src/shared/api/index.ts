@@ -7,6 +7,13 @@ import {
 import type {
   AiTestAnswers, AiTestGrading, AiTestPublicPayload,
 } from '../../../shared/ai-daily-test'
+import type {
+  CreateTestSessionInput,
+  SubmitTestAnswerInput,
+  TestAnswerResponse,
+  TestSessionResponse,
+  TestSessionState,
+} from '../../../shared/test-session'
 
 const TIMEOUT_MS = 8000
 
@@ -220,6 +227,7 @@ export interface ApiSettings {
   offlineMode: boolean
   dailyReminder?: boolean
   dailyReminderTime?: string
+  swipeToNavigate?: boolean
 }
 
 export interface FullProfile {
@@ -450,6 +458,20 @@ export const api = {
     'POST', `/progress/${uid(userId)}/result`, data, 20_000,
   ),
 
+  // ── Server-authoritative test delivery v2 (dark rollout) ────────────────
+  createTestSession: (data: CreateTestSessionInput) =>
+    request<TestSessionResponse>('POST', '/test-sessions', data, 20_000),
+  resumeTestSession: (sessionId: string) =>
+    request<TestSessionResponse>('GET', `/test-sessions/${encodeURIComponent(sessionId)}`, undefined, 20_000),
+  submitTestSessionAnswer: (sessionId: string, data: SubmitTestAnswerInput) =>
+    request<TestAnswerResponse>(
+      'POST', `/test-sessions/${encodeURIComponent(sessionId)}/answers`, data, 20_000,
+    ),
+  finishTestSession: (sessionId: string, status: 'completed' | 'abandoned' = 'completed') =>
+    request<{ session: TestSessionState }>(
+      'POST', `/test-sessions/${encodeURIComponent(sessionId)}/finish`, { status }, 20_000,
+    ),
+
   /** Referal statistikasi (Profil kartasi).
    *  Server javobi: getStats + {rewardDays, cap} (users.router.ts) — kontrakt
    *  drift'ini olib tashladik (audit C5). */
@@ -466,6 +488,7 @@ export const api = {
     if (serverPatch.fontStyle && serverPatch.fontStyle !== 'serif' && serverPatch.fontStyle !== 'mono') {
       serverPatch.fontStyle = 'default'
     }
+    delete serverPatch.swipeToNavigate
     return request<{ ok: true }>('PATCH', `/settings/${uid(userId)}`, serverPatch)
   },
 

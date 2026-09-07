@@ -13,6 +13,7 @@ import { buildTopicBreakdown } from './topic-diagnosis'
 import { useTestSessionStore } from '../../shared/store/useTestSessionStore'
 import { isResumable, remainingSeconds, clampIndex, testDurationSeconds } from '../../shared/lib/test-session'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
+import { useSwipeNavigation } from '../../shared/hooks/useSwipeNavigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
 import { haptics } from '../../platform/haptics'
@@ -81,6 +82,7 @@ export default function TestPage() {
   useEffect(() => api.startKeepAlive(), [])
 
   const [current, setCurrent]           = useState(0)
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right' | null>(null)
   const [showSettings, setShowSettings] = useState(false)
   const [showResults, setShowResults]   = useState(false)
   const [isFinished, setIsFinished]     = useState(false)
@@ -143,17 +145,19 @@ export default function TestPage() {
   const q = activeQuestions[current]
   const answerTimer = useAnswerTimer(q?.id)
 
-  const goTo = useCallback((i: number) => {
+  const goTo = useCallback((i: number, direction?: 'left' | 'right') => {
     cancelAutoNext()
     if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur()
     }
     if (i >= 0 && i < activeQuestions.length) {
+      setSlideDirection(direction ?? (i > current ? 'left' : i < current ? 'right' : null))
       setCurrent(i)
       setShowExplain(false)
       setShowAiTutor(false)
     }
-  }, [activeQuestions.length])
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- cancelAutoNext is initialized by useTestAnswerFlow below
+  }, [activeQuestions.length, current])
 
   // ── useTestAnswerFlow Hook ──
   const {
@@ -249,6 +253,36 @@ export default function TestPage() {
     const lesson = lessons[modId]?.[targetLessonIdx] ?? lessons[modId]?.[0]
     return lesson ? { modId, lesson } : null
   }, [q?.id, q?.topicId, storeTopics])
+
+  const swipeEnabled =
+    settings?.swipeToNavigate !== false &&
+    !drawingOpen &&
+    !scratchpadOpen &&
+    !zoomed &&
+    !calculatorOpen &&
+    !formulasOpen &&
+    !showExplain &&
+    !showAiTutor &&
+    !showMenu &&
+    !confirmFinish &&
+    !isFinished &&
+    !showResults
+
+  const { touchHandlers, dragOffset, isSwiping } = useSwipeNavigation({
+    onSwipeLeft: () => {
+      if (current < activeQuestions.length - 1) {
+        goTo(current + 1, 'left')
+      }
+    },
+    onSwipeRight: () => {
+      if (current > 0) {
+        goTo(current - 1, 'right')
+      }
+    },
+    canSwipeLeft: current < activeQuestions.length - 1,
+    canSwipeRight: current > 0,
+    enabled: swipeEnabled,
+  })
 
   const handleTimeUp = useCallback(() => {
     if (isFinished) return
@@ -463,8 +497,19 @@ export default function TestPage() {
 
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
-      <div className="flex-1 px-4 pb-24">
-        <div className={`mx-auto pt-3 ${q.image ? 'max-w-6xl lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-4' : 'max-w-2xl'}`}>
+      <div
+        className="flex-1 px-4 pb-24 touch-pan-y overflow-x-hidden"
+        {...touchHandlers}
+      >
+        <div
+          key={q.id}
+          style={isSwiping ? { transform: `translate3d(${dragOffset}px, 0, 0)`, transition: 'none' } : undefined}
+          className={`mx-auto pt-3 ${
+            !settings?.noAnimation && !isSwiping
+              ? (slideDirection === 'left' ? 'animate-slide-in-right' : slideDirection === 'right' ? 'animate-slide-in-left' : '')
+              : ''
+          } ${q.image ? 'max-w-6xl lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-4' : 'max-w-2xl'}`}
+        >
           <div className="lg:col-start-1 lg:row-start-1">
             <div className="flex items-center gap-2 mb-2">
               <p className="min-w-0 flex-1 text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>

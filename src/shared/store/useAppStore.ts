@@ -40,6 +40,16 @@ export interface ApplyAnswerInput {
   xp?:          number | null
 }
 
+export interface ApplySessionAnswerInput {
+  correct: boolean
+  subjectId: string
+  date: string
+  dailyStreak: number | null
+  coinSaved?: boolean
+  coinBalance?: number | null
+  xp?: number | null
+}
+
 interface AppState {
   user:           ApiUser | null
   settings:       ApiSettings
@@ -84,6 +94,8 @@ interface AppState {
   submitAnswer:       (questionId: number, selectedAnswer: string | null, elapsedMs?: number) => Promise<SubmitResult>
   /** Server tasdiqlagan javobni sinxron holatga qo'llash (submit va outbox replay uchun yagona) */
   applyAnswerMutation:(input: ApplyAnswerInput) => void
+  /** v2 session ichki master ID'ni clientga bermaydi; aggregate cache update. */
+  applySessionAnswerMutation: (input: ApplySessionAnswerInput) => void
   resetProgress:      () => void
   toggleSaved:        (questionId: number) => void
   syncFromServer:     (userId: string) => Promise<void>
@@ -112,6 +124,7 @@ const DEFAULT_SETTINGS: ApiSettings = {
   offlineMode:       true,
   dailyReminder:     true,
   dailyReminderTime: '20:00',
+  swipeToNavigate:   true,
 }
 
 export const useAppStore = create<AppState>()(
@@ -184,6 +197,21 @@ export const useAppStore = create<AppState>()(
         setAvatarFrame: (frame) => set({ avatarFrame: frame }),
 
         applyAnswerMutation: applyAnswer,
+        applySessionAnswerMutation: (input) => {
+          set((s) => ({
+            totalCorrect: s.totalCorrect + (input.correct ? 1 : 0),
+            totalWrong: s.totalWrong + (input.correct ? 0 : 1),
+            totalAnswered: s.totalAnswered + 1,
+            streak: input.correct ? s.streak + 1 : 0,
+            ...(typeof input.coinBalance === 'number' ? { coins: input.coinBalance } : {}),
+            ...(typeof input.xp === 'number' ? { xp: input.xp } : {}),
+          }))
+          if (input.dailyStreak !== null) {
+            useDailyStore.getState().applyServerResult(
+              input.date, input.subjectId, input.dailyStreak, input.coinSaved,
+            )
+          }
+        },
 
         updatePhone: async (phone, otp) => {
           const userId = get().user?.id
