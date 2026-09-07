@@ -116,27 +116,27 @@ export default function StreakPage() {
       </header>
 
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
-      <div className="rounded-3xl bg-pcard p-5 flex flex-col items-center text-center mb-4 shadow-xs">
-        <div className="w-20 h-20 rounded-full bg-[rgb(var(--p-warning-rgb)/0.12)] flex items-center justify-center mb-3">
-          <Flame size={38} strokeWidth={1.75} className={streak > 0 ? 'text-pwarning' : 'text-psubtle'} />
+      <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[rgb(var(--p-warning-rgb)/0.12)] flex items-center justify-center mb-2 sm:mb-3">
+          <Flame size={32} strokeWidth={1.75} className={streak > 0 ? 'text-pwarning' : 'text-psubtle'} />
         </div>
-        <p className="font-display text-[40px] font-bold leading-none tabular-nums text-pfg tracking-tight">
+        <p className="font-display text-[36px] sm:text-[40px] font-bold leading-none tabular-nums text-pfg tracking-tight">
           {streak} <span className="text-base font-semibold text-psubtle">{tt('daysWord')}</span>
         </p>
-        <p className="text-[13px] text-psubtle mt-2 font-medium">
+        <p className="text-[12.5px] sm:text-[13px] text-psubtle mt-1.5 sm:mt-2 font-medium">
           {streak > 0 ? tt('intizomStreakGood') : tt('intizomStreakStart')}
         </p>
-        <div className="mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3.5 py-1.5">
+        <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5">
           <Trophy size={13} strokeWidth={1.75} className="text-pwarning" />
-          <span className="text-[12px] font-semibold text-psubtle">
+          <span className="text-[11.5px] sm:text-[12px] font-semibold text-psubtle">
             {tt('intizomBest')}: {history?.bestStreak ?? 0} {tt('daysWord')}
           </span>
         </div>
         {/* Streak Freeze — Premium himoya (1 kunlik chegara) */}
         {isPremium && (
-          <div className="mt-2.5 flex items-center gap-1.5 rounded-full px-3.5 py-1.5 bg-[rgb(var(--p-blue-rgb)/0.10)] text-pblue">
+          <div className="mt-2 flex items-center gap-1.5 rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 bg-[rgb(var(--p-blue-rgb)/0.10)] text-pblue">
             <Snowflake size={13} strokeWidth={1.75} />
-            <span className="text-[11.5px] font-semibold">
+            <span className="text-[11px] sm:text-[11.5px] font-semibold">
               {lang === 'ru' ? 'Заморозка серии активна (1 день)' : 'Streak Freeze faol (1 kun himoya)'}
             </span>
           </div>
@@ -145,72 +145,74 @@ export default function StreakPage() {
 
       {/* Tanlangan kun statistikasi — yumshoq borderless 3 ta blok */}
       {history ? (
-        <div className="grid grid-cols-3 gap-2.5 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-3 sm:gap-2.5 sm:mb-4">
           {[
             { v: sel.answered,               label: tt('solvedWord'), color: 'text-pprimary' },
             { v: sel.answered - sel.correct, label: tt('wrongUpper'),  color: 'text-pdanger' },
             { v: sel.fixed,                   label: tt('fixedUpper'),  color: 'text-pblue' },
           ].map((c) => (
-            <div key={c.label} className="rounded-2xl bg-pcard p-3 text-center shadow-xs">
-              <p className={`text-[24px] font-bold leading-none tabular-nums ${c.color}`}>{c.v}</p>
-              <p className="text-[10px] font-semibold text-psubtle mt-1.5 tracking-wide">{c.label}</p>
+            <div key={c.label} className="rounded-2xl bg-pcard py-2.5 px-2 sm:p-3 text-center shadow-xs">
+              <p className={`text-[20px] sm:text-[24px] font-bold leading-none tabular-nums ${c.color}`}>{c.v}</p>
+              <p className="text-[10px] font-semibold text-psubtle mt-1 tracking-wide">{c.label}</p>
             </div>
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-3 gap-2.5 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-3 sm:gap-2.5 sm:mb-4">
           {[0, 1, 2].map((i) => (
-            <div key={i} className="rounded-2xl bg-pcard p-3 text-center animate-pulse shadow-xs">
-              <div className="h-6 w-8 mx-auto rounded-xl bg-psurface" />
-              <div className="h-2.5 w-14 mx-auto rounded bg-psurface mt-2" />
+            <div key={i} className="rounded-2xl bg-pcard py-2.5 px-2 sm:p-3 text-center animate-pulse shadow-xs">
+              <div className="h-5 sm:h-6 w-8 mx-auto rounded-xl bg-psurface" />
+              <div className="h-2 sm:h-2.5 w-14 mx-auto rounded bg-psurface mt-1.5 sm:mt-2" />
             </div>
           ))}
         </div>
       )}
 
-      {/* Kalendar — silliq rounded karta */}
-      <div className="rounded-3xl bg-pcard p-4.5 mb-4 shadow-xs">
-        <div className="flex items-center justify-between mb-3 px-1">
-          <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
-            className="grid size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={16} strokeWidth={1.75} />
-          </button>
-          <p className="text-[14px] font-bold text-pfg capitalize">
-            {months[m - 1]} {y}
-          </p>
-          <button onClick={() => shiftMonth(1)} aria-label={lang === 'ru' ? 'Следующий месяц' : 'Keyingi oy'}
-            disabled={month >= today.slice(0, 7)}
-            className="grid size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
-            <ChevronRight size={16} strokeWidth={1.75} />
-          </button>
-        </div>
-        <div className="grid grid-cols-7 gap-1.5 text-center">
-          {weeks.map((w) => (
-            <p key={w} className="text-[10px] font-semibold text-psubtle uppercase py-1">{w}</p>
-          ))}
-          {/* Yuklanish skeleti */}
-          {!history && cells.map((date, i) =>
-            date ? <span key={`sk${date}`} className="aspect-square rounded-xl bg-psurface animate-pulse" />
-                 : <span key={`e${i}`} />)}
-          {history && cells.map((date, i) => {
-            if (!date) return <span key={`e${i}`} />
-            const future = date > today
-            // Har qanday faollik (test, xato tuzatish, dars) — kamida 1-daraja yashil
-            const rec    = byDate.get(date)
-            const level  = future || !rec ? 0 : Math.max(1, heatLevel(rec.answered))
-            const isSel  = date === selected
-            const isNow  = date === today
-            return (
-              <button key={date} disabled={future}
-                onClick={() => setSelected(date)}
-                className={`aspect-square rounded-xl flex items-center justify-center text-[13px] font-semibold transition-all ${
-                  level > 0 ? 'text-ponprimary' : 'text-psubtle'} ${isSel ? 'ring-2 ring-pprimary scale-105' : ''
-                } ${isNow && !isSel ? 'ring-1 ring-pblue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
-                style={{ background: heatBg(level) }}>
-                {Number(date.slice(8))}
-              </button>
-            )
-          })}
+      {/* Kalendar — qulay padding va ixcham o'lchamli silliq karta */}
+      <div className="rounded-3xl bg-pcard p-4 sm:p-5 mb-4 shadow-xs">
+        <div className="max-w-[300px] sm:max-w-[320px] mx-auto">
+          <div className="flex items-center justify-between mb-2.5 px-0.5">
+            <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
+              className="grid size-7 sm:size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+              <ChevronLeft size={16} strokeWidth={1.75} />
+            </button>
+            <p className="text-[13px] sm:text-[14px] font-bold text-pfg capitalize">
+              {months[m - 1]} {y}
+            </p>
+            <button onClick={() => shiftMonth(1)} aria-label={lang === 'ru' ? 'Следующий месяц' : 'Keyingi oy'}
+              disabled={month >= today.slice(0, 7)}
+              className="grid size-7 sm:size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
+              <ChevronRight size={16} strokeWidth={1.75} />
+            </button>
+          </div>
+          <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
+            {weeks.map((w) => (
+              <p key={w} className="text-[10px] font-semibold text-psubtle uppercase py-0.5">{w}</p>
+            ))}
+            {/* Yuklanish skeleti */}
+            {!history && cells.map((date, i) =>
+              date ? <span key={`sk${date}`} className="aspect-square rounded-lg sm:rounded-xl bg-psurface animate-pulse" />
+                   : <span key={`e${i}`} />)}
+            {history && cells.map((date, i) => {
+              if (!date) return <span key={`e${i}`} />
+              const future = date > today
+              // Har qanday faollik (test, xato tuzatish, dars) — kamida 1-daraja yashil
+              const rec    = byDate.get(date)
+              const level  = future || !rec ? 0 : Math.max(1, heatLevel(rec.answered))
+              const isSel  = date === selected
+              const isNow  = date === today
+              return (
+                <button key={date} disabled={future}
+                  onClick={() => setSelected(date)}
+                  className={`aspect-square rounded-lg sm:rounded-xl flex items-center justify-center text-[11.5px] sm:text-[12px] font-semibold transition-all ${
+                    level > 0 ? 'text-ponprimary' : 'text-psubtle'} ${isSel ? 'ring-2 ring-pprimary scale-105 relative z-10' : ''
+                  } ${isNow && !isSel ? 'ring-1 ring-pblue/60' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
+                  style={{ background: heatBg(level) }}>
+                  {Number(date.slice(8))}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </div>
 
@@ -228,9 +230,9 @@ export default function StreakPage() {
 
       {/* Qanday ishlaydi? — Alohida zamonaviy BottomSheet */}
       {showInfo && (
-        <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title">
+        <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title" swipeToDismiss>
           <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-3xl px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn">
-            <div className="w-10 h-1 bg-pline rounded-full mx-auto mb-4" />
+            <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
 
             <div className="flex items-center justify-between mb-2">
               <h2 id="streak-info-title" className="text-base font-bold text-pfg">
