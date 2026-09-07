@@ -20,6 +20,7 @@ import {
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import OptionButton from './OptionButton'
 import QuestionStrip from './QuestionStrip'
+import PinchableImage from '../../shared/components/PinchableImage'
 import { formatImageSrc } from './hooks/useImagePreload'
 import { useTimer } from './useTimer'
 import { useSwipeNavigation } from '../../shared/hooks/useSwipeNavigation'
@@ -396,7 +397,15 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         >
           <p className="mb-2 text-xs font-medium text-pmuted">{position + 1} / {snapshot.total}</p>
           <MathText as="p" text={question.text} className="mb-5 text-left font-display text-[18px] font-semibold leading-relaxed text-pfg" />
-          {question.media && <img src={formatImageSrc(question.media)} alt="" className="mb-5 max-h-72 w-full rounded-2xl bg-psurface object-contain" />}
+          {question.media && (
+            <div className="mb-5">
+              <PinchableImage
+                src={formatImageSrc(question.media) || ''}
+                alt=""
+                zoomLabel={isRu ? 'Увеличить' : 'Kattalashtirish'}
+              />
+            </div>
+          )}
           {question.options.map((option, index) => (
             <OptionButton
               key={`${position}:${option.id}`}

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo, useSyncExternalStore } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal } from 'lucide-react'
+import { Bookmark, Flag, BarChart2, X, Volume2, Square, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
@@ -28,6 +28,7 @@ import { useT } from '../../shared/i18n'
 import { useTimer } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
+import PinchableImage from '../../shared/components/PinchableImage'
 import MathText from '../../shared/components/MathText'
 import { type QuestionResult } from './ResultsModal'
 import { type ExamReviewItem } from './components/ExamReviewModal'
@@ -541,21 +542,16 @@ export default function TestPage() {
 
           </div>
           {q.image && (
-            <div className="min-w-0 self-start lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
-              onClick={() => {
-                setZoomed(true)
-                haptics.impact('light')
-              }}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
-              aria-label={tt('zoomImage')}>
-              <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
-                className="block h-auto w-auto max-w-full max-h-[min(30svh,240px)] lg:max-h-[min(40svh,320px)] shrink-0 object-contain" />
-              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-xs shadow-xs transition-colors group-hover:bg-black/85">
-                <ZoomIn size={11} strokeWidth={1.75} />
-                <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
-              </div>
+            <div className="min-w-0 self-start lg:col-start-2 lg:row-start-1 lg:row-span-2 mb-4">
+              <PinchableImage
+                src={formatImageSrc(q.image) || ''}
+                alt={`${tt('question')} ${current + 1}`}
+                zoomLabel={settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}
+                onOpenModal={() => {
+                  setZoomed(true)
+                  haptics.impact('light')
+                }}
+              />
             </div>
           )}
           <div className="lg:col-start-1 lg:row-start-2">

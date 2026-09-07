@@ -228,6 +228,7 @@ export interface ApiSettings {
   dailyReminder?: boolean
   dailyReminderTime?: string
   swipeToNavigate?: boolean
+  shakeToClear?: boolean
 }
 
 export interface FullProfile {
@@ -489,6 +490,7 @@ export const api = {
       serverPatch.fontStyle = 'default'
     }
     delete serverPatch.swipeToNavigate
+    delete serverPatch.shakeToClear
     return request<{ ok: true }>('PATCH', `/settings/${uid(userId)}`, serverPatch)
   },
 

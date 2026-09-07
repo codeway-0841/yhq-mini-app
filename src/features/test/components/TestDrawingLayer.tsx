@@ -5,6 +5,9 @@ import {
 } from 'lucide-react'
 import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
+import { useAppStore } from '../../../shared/store/useAppStore'
+import { useShakeGesture } from '../../../shared/hooks/useShakeGesture'
+import { haptics } from '../../../platform/haptics'
 import DrawingCanvas from './DrawingCanvas'
 import TestToolsHub from './TestToolsHub'
 import {
@@ -336,6 +339,42 @@ export default function TestDrawingLayer({
   const scratchpadDrawing = getDrawing(SCRATCHPAD_SURFACE)
   const hasPageStrokes = pageDrawing.strokes.length > 0
 
+  const shakeToClear = useAppStore((s) => s.settings?.shakeToClear !== false)
+  const [shakeFeedback, setShakeFeedback] = useState<string | null>(null)
+  const shakeFeedbackTimer = useRef<number | null>(null)
+
+  const triggerShakeFeedback = useCallback((msg: string) => {
+    if (shakeFeedbackTimer.current) window.clearTimeout(shakeFeedbackTimer.current)
+    setShakeFeedback(msg)
+    shakeFeedbackTimer.current = window.setTimeout(() => {
+      setShakeFeedback(null)
+      shakeFeedbackTimer.current = null
+    }, 1800)
+  }, [])
+
+  useEffect(() => () => {
+    if (shakeFeedbackTimer.current) window.clearTimeout(shakeFeedbackTimer.current)
+  }, [])
+
+  useShakeGesture({
+    enabled: shakeToClear && (isScratchpadOpen || open),
+    onShake: () => {
+      if (isScratchpadOpen) {
+        if (scratchpadDrawing.strokes.length > 0) {
+          mutate(SCRATCHPAD_SURFACE, clearStrokes)
+          haptics.notify('warning')
+          triggerShakeFeedback(tt('scratchpadCleared'))
+        }
+      } else if (open) {
+        if (hasPageStrokes) {
+          mutate(surfaceKey, clearStrokes)
+          haptics.notify('warning')
+          triggerShakeFeedback(tt('scratchpadCleared'))
+        }
+      }
+    },
+  })
+
   return (
     <>
       {/* 
@@ -374,6 +413,12 @@ export default function TestDrawingLayer({
       {/* Agar panel ochiq bo'lsa: Faol chizish qatlami va toolbar */}
       {open && !isScratchpadOpen && (
         <>
+          {shakeFeedback && (
+            <div className="pointer-events-none fixed top-[calc(4rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold shadow-xl backdrop-blur-md border border-slate-700/80 motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95">
+              <span>📳</span>
+              <span>{shakeFeedback}</span>
+            </div>
+          )}
           <DrawingCanvas
             drawing={pageDrawing}
             tool={isVisible ? tool : 'hand'}
@@ -411,12 +456,24 @@ export default function TestDrawingLayer({
       <Sheet open={isScratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden" dragHandleOnly>
         <SheetHeader><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
         <SheetClose onClose={() => setScratchpadOpen(false)} label={tt('drawingScratchpadClose')} />
-        <SheetBody className="space-y-3 px-3 pb-3">
+        <SheetBody className="relative space-y-3 px-3 pb-3">
+          {shakeFeedback && (
+            <div className="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/95 text-white text-xs font-semibold shadow-xl backdrop-blur-md border border-slate-700/80 motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95">
+              <span>📳</span>
+              <span>{shakeFeedback}</span>
+            </div>
+          )}
           <div className="scratchpad-canvas-paper relative h-[52dvh] min-h-[300px] overflow-hidden rounded-2xl border-2 border-slate-300/90 dark:border-slate-700/80 shadow-[0_4px_20px_rgba(0,0,0,0.07),inset_0_2px_6px_rgba(0,0,0,0.04)] ring-1 ring-black/5 dark:ring-white/10">
             {/* Vizual ajratuvchi qoralama nishoni */}
-            <div className="pointer-events-none absolute top-2.5 left-3 z-10 select-none flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-slate-200/80 dark:bg-slate-800/80 text-[11px] font-medium text-slate-600 dark:text-slate-300 shadow-2xs backdrop-blur-xs">
+            <div className="pointer-events-none absolute top-2.5 left-3 z-10 select-none flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-200/80 dark:bg-slate-800/80 text-[11px] font-medium text-slate-600 dark:text-slate-300 shadow-2xs backdrop-blur-xs">
               <span className="text-xs">📐</span>
               <span>{tt('drawingScratchpad')}</span>
+              {shakeToClear && (
+                <span className="hidden sm:inline-flex items-center gap-1 text-[10px] text-slate-500 dark:text-slate-400 border-l border-slate-300 dark:border-slate-700 pl-1.5 ml-0.5">
+                  <span>📳</span>
+                  <span>{tt('shakeHint')}</span>
+                </span>
+              )}
             </div>
             <DrawingCanvas
               drawing={scratchpadDrawing}

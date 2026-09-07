@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal,
+  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal, Smartphone,
 } from 'lucide-react'
 import { CoinIcon } from './CoinIcon'
 import { PremiumIcon } from './PremiumIcon'
@@ -142,6 +142,9 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
           </Row>
           <Row icon={MoveHorizontal} label={tt('swipeNavigation')}>
             <Toggle label={tt('swipeNavigation')} checked={local.swipeToNavigate !== false} onChange={(v) => set('swipeToNavigate', v)} />
+          </Row>
+          <Row icon={Smartphone} label={tt('shakeToClear')}>
+            <Toggle label={tt('shakeToClear')} checked={local.shakeToClear !== false} onChange={(v) => set('shakeToClear', v)} />
           </Row>
 
           {/* Shrift uslubi — picker */}
