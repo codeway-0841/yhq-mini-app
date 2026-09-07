@@ -11,6 +11,7 @@ import { useAppStore }         from '../../../src/shared/store/useAppStore'
 import { useDailyStore }       from '../../../src/shared/store/useDailyStore'
 import { useAdaptiveStore }    from '../../../src/shared/store/useAdaptiveStore'
 import { useTestSessionStore } from '../../../src/shared/store/useTestSessionStore'
+import { useServerTestSessionStore } from '../../../src/shared/store/useServerTestSessionStore'
 import type { ApiUser } from '../../../src/shared/api'
 
 const userA: ApiUser = {
@@ -35,6 +36,13 @@ function seedUserA(): void {
   useDailyStore.setState({ streaks: { yhq: 5 }, activityKey: '2026-08-07|yhq' })
   useAdaptiveStore.setState({ cardsBySubject: { yhq: { 1: {} as never } } })
   useTestSessionStore.getState().save({ mode: 'exam', index: 3 } as never)
+  useServerTestSessionStore.setState({ snapshot: {
+    sessionId: '4f491c27-ae03-42ae-9ce9-1b6f0eb75299', subjectId: 'yhq', mode: 'random20',
+    selectorKey: '{"type":"random","count":20}',
+    total: 20, expiresAt: '2026-09-08T12:00:00.000Z', current: 0, questions: [],
+    answers: Array(20).fill(null), selected: Array(20).fill(null),
+    correctOptions: Array(20).fill(null), pendingTokens: {},
+  } })
 }
 
 describe('ensureAccountOwner', () => {
@@ -65,6 +73,7 @@ describe('ensureAccountOwner', () => {
     expect(useDailyStore.getState().streaks).toEqual({})
     expect(useAdaptiveStore.getState().cardsBySubject).toEqual({})
     expect(useTestSessionStore.getState().session).toBeNull()
+    expect(useServerTestSessionStore.getState().snapshot).toBeNull()
   })
 
   it('mismatch keyingi chaqiruv — false qaytgach warm start yo\'q', () => {
@@ -81,6 +90,7 @@ describe('resetAccountState', () => {
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-daily')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-adaptive-store')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-test-session')
+    expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-server-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-session')   // Bearer sessiya ham reset'da o'chadi (MF-3)
   })
 

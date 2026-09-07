@@ -63,4 +63,22 @@ describe('ModesPage', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Mavzular' }))
     expect(mockNavigate).toHaveBeenCalledWith('/mavzular')
   })
+
+  it('saqlangan mashqni v2 uchun server selector bilan belgilaydi', () => {
+    useAppStore.setState({ savedQuestions: ['yhq:1'] })
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: 'Saqlanganlar' }))
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: {
+        questionIds: [1], mode: 'saved', serverSelector: 'saved', title: 'Saqlanganlar',
+      },
+    })
+  })
 })

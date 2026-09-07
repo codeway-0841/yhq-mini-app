@@ -1,6 +1,7 @@
 const API_BASE     = import.meta.env['VITE_API_BASE_URL'] as string | undefined
 const WS_ENV       = import.meta.env['VITE_WS_URL']       as string | undefined
 const BOT_USERNAME = import.meta.env['VITE_BOT_USERNAME'] as string | undefined
+const TEST_SESSIONS_V2 = import.meta.env['VITE_TEST_SESSIONS_V2'] as string | undefined
 
 /** Derivation uchun minimal env ko'rinishi — testlar to'g'ridan-to'g'ri chaqiradi. */
 export interface ClientEnv {
@@ -58,4 +59,6 @@ export const config = {
    * Backend endpoint'lar ochiq qoladi (faqat client UI yashirilgan).
    */
   phoneEmailAuthEnabled: false,
+  /** Server-authoritative bounded random/saved tests. Default off; rollback = env false. */
+  testSessionsV2Enabled: TEST_SESSIONS_V2 === 'true',
 } as const

@@ -1,0 +1,131 @@
+{
+  "name": "OOP — Informatika test savollari",
+  "about": "OOP",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/oop/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "OOP (Ob'ektga yo'naltirilgan dasturlash) nima?",
+      "options": [
+        "Faqat funksiyalar yordamida dasturlash uslubi",
+        "Dasturni ob'ektlar va ularning o'zaro ta'siri orqali tashkil etuvchi dasturlash paradigmasi",
+        "Faqat matematik hisob-kitoblar uchun dasturlash uslubi",
+        "Internet dasturlarini yaratish usuli"
+      ],
+      "correctAnswer": "Dasturni ob'ektlar va ularning o'zaro ta'siri orqali tashkil etuvchi dasturlash paradigmasi"
+    },
+    {
+      "question": "Klass (class) nima?",
+      "options": [
+        "Dasturning bajariluvchi qismi",
+        "Ob'ektlarni yaratish uchun qolip (shablon)",
+        "Ma'lumotlar bazasi jadvali",
+        "Funksiya turi"
+      ],
+      "correctAnswer": "Ob'ektlarni yaratish uchun qolip (shablon)"
+    },
+    {
+      "question": "Ob'ekt (object) nima?",
+      "options": [
+        "Klassning o'zi",
+        "Klassdan yaratilgan aniq nusxa (instance)",
+        "Funksiya natijasi",
+        "O'zgaruvchi turi"
+      ],
+      "correctAnswer": "Klassdan yaratilgan aniq nusxa (instance)"
+    },
+    {
+      "question": "Python da klass qanday e'lon qilinadi?",
+      "options": [
+        "function Mashina:",
+        "object Mashina:",
+        "class Mashina:",
+        "def Mashina:"
+      ],
+      "correctAnswer": "class Mashina:"
+    },
+    {
+      "question": "OOP ning to'rtta asosiy tamoyili qaysilar?",
+      "options": [
+        "Tsikl, shart, funksiya, massiv",
+        "Inkapsulyatsiya, meros, polimorfizm, abstraksiya",
+        "Kiritish, chiqarish, saqlash, qayta ishlash",
+        "Tezlik, xotira, aniqlik, cheklilik"
+      ],
+      "correctAnswer": "Inkapsulyatsiya, meros, polimorfizm, abstraksiya"
+    },
+    {
+      "question": "Python da __init__ metodi nima uchun ishlatiladi?",
+      "options": [
+        "Klassni o'chirish uchun",
+        "Ob'ekt yaratilganda avtomatik chaqiriladigan konstruktor metodi",
+        "Klassni chop etish uchun",
+        "Meros olish uchun"
+      ],
+      "correctAnswer": "Ob'ekt yaratilganda avtomatik chaqiriladigan konstruktor metodi"
+    },
+    {
+      "question": "Python da \"self\" parametri nima?",
+      "options": [
+        "Global o'zgaruvchi",
+        "Joriy ob'ektga ko'rsatuvchi havola — metod ob'ektning o'z atributlariga murojaat qilishi uchun",
+        "Klass nomi",
+        "Maxsus kalit so'z — faqat __init__ da ishlatiladi"
+      ],
+      "correctAnswer": "Joriy ob'ektga ko'rsatuvchi havola — metod ob'ektning o'z atributlariga murojaat qilishi uchun"
+    },
+    {
+      "question": "Inkapsulyatsiya (encapsulation) nima?",
+      "options": [
+        "Bir klassdan boshqa klass yaratish",
+        "Ma'lumot va metodlarni bir joyga to'plab, tashqaridan bevosita kirishni cheklash",
+        "Bir xil nomli metodlar yaratish",
+        "Kodni qismlarga bo'lish"
+      ],
+      "correctAnswer": "Ma'lumot va metodlarni bir joyga to'plab, tashqaridan bevosita kirishni cheklash"
+    },
+    {
+      "question": "Meros (inheritance) nima?",
+      "options": [
+        "Ob'ektni o'chirish",
+        "Bir klassning boshqa klassning xususiyat va metodlarini olishi",
+        "Metodlarni qayta nomash",
+        "Yangi o'zgaruvchi yaratish"
+      ],
+      "correctAnswer": "Bir klassning boshqa klassning xususiyat va metodlarini olishi"
+    },
+    {
+      "question": "Polimorfizm (polymorphism) nima?",
+      "options": [
+        "Bir klass bir nechta ob'ekt yaratishi",
+        "Turli klasslar bir xil nomdagi metodlarni o'zlariga xos tarzda amalga oshirishi",
+        "Klassni ikki marta e'lon qilish",
+        "Meros olmaslik"
+      ],
+      "correctAnswer": "Turli klasslar bir xil nomdagi metodlarni o'zlariga xos tarzda amalga oshirishi"
+    },
+    {
+      "question": "Python da ob'ekt atributiga qanday murojaat qilinadi?",
+      "options": [
+        "ob'ekt->atribut",
+        "ob'ekt::atribut",
+        "ob'ekt.atribut",
+        "ob'ekt[atribut]"
+      ],
+      "correctAnswer": "ob'ekt.atribut"
+    },
+    {
+      "question": "Quyidagi Python kodida nechta ob'ekt yaratilgan?\nclass Klass:\n    pass\na = Klass()\nb = Klass()\nc = Klass()",
+      "options": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "0 ta"
+      ],
+      "correctAnswer": "3 ta"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:40.012Z"
+}

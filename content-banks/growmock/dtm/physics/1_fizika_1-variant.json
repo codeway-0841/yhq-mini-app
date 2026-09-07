@@ -1,0 +1,459 @@
+{
+  "info": {
+    "id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+    "subject_id": "be96cb10-e171-4e61-b97b-16dfad5c525a",
+    "title": "Fizika 1-variant",
+    "description": "Variant: ushu savollarni exel qilib ber  (1-variant)",
+    "time_limit": 30,
+    "created_at": "2026-05-15T15:48:02.752814Z",
+    "updated_at": "2026-05-15T15:48:02.752814Z"
+  },
+  "subject": {
+    "id": "be96cb10-e171-4e61-b97b-16dfad5c525a",
+    "name": "Fizika",
+    "slug": "physics",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "f33f724d-cf0d-4081-884d-3cfb07453825",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 1,
+      "question_text": "1Ω qarshilikli o'tkazgich uchlariga 16 V kuchlanish qo'yilgan. 5 s da nechta elektron o'tadi?",
+      "options": {
+        "a": "5⋅1019",
+        "b": "500⋅1019",
+        "c": "50⋅1019",
+        "d": "50⋅1017"
+      },
+      "correct_option": "c",
+      "explanation": "Bu savolni yechish uchun bir necha asosiy fizik qonuniyatlardan foydalanamiz: Om qonuni, tok kuchi ta'rifi va zaryadning kvantlanishi.\n\n**1. Tok kuchini topish ($I$)**\nOm qonuniga ko'ra, o'tkazgichdagi tok kuchi uning uchlaridagi kuchlanishga to'g'ri proporsional va qarshiligiga teskari proporsionaldir.\nFormula:\n$$I = \\frac{U}{R}$$\nBu yerda:\n*   $I$ – tok kuchi (Amper, A)\n*   $U$ – kuchlanish (Volt, V)\n*   $R$ – qarshilik (Om, $\\Omega$)\n\nBerilgan qiymatlarni qo'yamiz:\n$U = 16 \\, V$\n$R = 1 \\, \\Omega$\n\nHisoblash:\n$$I = \\frac{16 \\, V}{1 \\, \\Omega} = 16 \\, A$$\nDemak, o'tkazgichdan $16 \\, A$ tok o'tmoqda.\n\n**2. O'tgan umumiy zaryad miqdorini topish ($Q$)**\nTok kuchi – bu vaqt birligi ichida o'tkazgichning ko'ndalang kesimi orqali o'tgan zaryad miqdoridir.\nFormula:\n$$I = \\frac{Q}{t}$$\nBu yerda:\n*   $Q$ – o'tgan umumiy zaryad miqdori (Kulon, C)\n*   $t$ – vaqt (sekund, s)\n\nBu formuladan $Q$ ni topamiz:\n$$Q = I \\cdot t$$\nBerilgan qiymatlarni qo'yamiz:\n$I = 16 \\, A$\n$t = 5 \\, s$\n\nHisoblash:\n$$Q = 16 \\, A \\cdot 5 \\, s = 80 \\, C$$\nDemak, $5 \\, s$ ichida o'tkazgichning ko'ndalang kesimi orqali $80 \\, C$ zaryad o'tgan.\n\n**3. O'tgan elektronlar sonini topish ($N$)**\nHar bir elektronning zaryadi ma'lum va u elementar zaryad deb ataladi ($e$). Umumiy zaryad $Q$ ni topganimizdan so'ng, o'tgan elektronlar sonini topish uchun umumiy zaryadni bitta elektronning zaryadiga bo'lishimiz kerak.\nElementar zaryadning qiymati: $e = 1.6 \\cdot 10^{-19} \\, C$.\n\nFormula:\n$$N = \\frac{Q}{e}$$\nBu yerda:\n*   $N$ – o'tgan elektronlar soni\n*   $Q$ – umumiy zaryad (Kulon, C)\n*   $e$ – bitta elektronning zaryadi (Kulon, C)\n\nHisoblash:\n$$N = \\frac{80 \\, C}{1.6 \\cdot 10^{-19} \\, C}$$\n$$N = \\frac{80}{1.6} \\cdot 10^{19}$$\n$$N = 50 \\cdot 10^{19}$$\n\nDemak, $5 \\, s$ ichida o'tkazgichdan $50 \\cdot 10^{19}$ ta elektron o'tadi.\n\n**Nima uchun \"C\" varianti to'g'ri?**\nHisob-kitoblarimiz natijasida o'tgan elektronlar soni $50 \\cdot 10^{19}$ ga teng ekanligi aniqlandi. Berilgan variantlar orasida aynan \"C\" varianti $50 \\cdot 10^{19}$ ni ko'rsatadi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "cd3676f2-2b3f-49fa-a3c8-8b1691ceedcc",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 2,
+      "question_text": "Jism koordinatasining vaqtga bog'lanish grafigi berilgan (x_start=6, x_end=-6). Ko'chishini aniqlang.",
+      "options": {
+        "a": "-6",
+        "b": "12",
+        "c": "36",
+        "d": "0"
+      },
+      "correct_option": "b",
+      "explanation": "Jismning ko'chishi uning oxirgi holati va boshlang'ich holati orasidagi farq bilan aniqlanadi. Bu vektor kattalik bo'lib, yo'nalishga ega.\n\n1.  **Ko'chish ta'rifi:** Ko'chish ($\\Delta x$) jismning boshlang'ich nuqtasidan oxirgi nuqtasiga qarab yo'nalgan vektor bo'lib, uning kattaligi bu ikki nuqta orasidagi eng qisqa masofaga teng. Matematik jihatdan u quyidagi formula bilan ifodalanadi:\n    $$\\Delta x = x_{oxirgi} - x_{boshlang'ich}$$\n    bu yerda:\n    *   $x_{oxirgi}$ – jismning oxirgi koordinatasi\n    *   $x_{boshlang'ich}$ – jismning boshlang'ich koordinatasi\n\n2.  **Berilgan ma'lumotlar:**\n    *   Boshlang'ich koordinata ($x_{start}$) = 6\n    *   Oxirgi koordinata ($x_{end}$) = -6\n\n3.  **Hisoblash:**\n    Formulaga qiymatlarni qo'yamiz:\n    $$\\Delta x = (-6) - (6)$$\n    $$\\Delta x = -12$$\n\n    Demak, jismning ko'chishi -12 ga teng. Bu shuni anglatadiki, jism boshlang'ich nuqtasidan chap tomonga (manfiy yo'nalishda) 12 birlik masofaga siljigan.\n\n4.  **Javob variantlarini tahlil qilish:**\n    Berilgan javob variantlari orasida -12 yo'q. Biroq, \"ko'chish\" atamasi ba'zan uning kattaligini (modulini) anglatishi mumkin, ayniqsa variantlar orasida faqat musbat sonlar berilgan bo'lsa. Ko'chishning kattaligi (moduli) quyidagicha hisoblanadi:\n    $$|\\Delta x| = |-12| = 12$$\n\n    Shu sababli, savolda ko'chishning kattaligi so'ralgan deb hisoblasak, to'g'ri javob 12 bo'ladi.\n\n**Nima uchun \"B\" varianti to'g'ri?**\nHisob-kitoblarimizga ko'ra, jismning ko'chishi $\\Delta x = -12$ ga teng. Ammo variantlar orasida -12 yo'q. Ko'pincha fizika testlarida, agar ko'chishning yo'nalishi muhim bo'lmasa yoki variantlar faqat musbat sonlardan iborat bo'lsa, ko'chishning kattaligi (masofasi) so'raladi. Ko'chishning kattaligi esa 12 ga teng. Shuning uchun, \"B\" varianti (12) to'g'ri javob hisoblanadi, chunki u ko'chishning modulini ifodalaydi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "bff62889-48b4-4f81-96d8-00fbf7e4c88d",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 3,
+      "question_text": "Elektrolizda 2 A tok 1 soat o'tdi. 3 A tok bilan bir xil massa ajralishi uchun qancha vaqt (h) kerak?",
+      "options": {
+        "a": "4",
+        "b": "6",
+        "c": "3/2",
+        "d": "2/3"
+      },
+      "correct_option": "d",
+      "explanation": "Elektroliz jarayonida ajralib chiqadigan moddaning massasi Faradeyning birinchi qonuni bilan aniqlanadi. Bu qonunga ko'ra, elektrodlarda ajralib chiqadigan moddaning massasi elektrolit orqali o'tgan elektr miqdoriga to'g'ri proporsionaldir.\n\nMatematik jihatdan bu quyidagicha ifodalanadi:\n$$m = k \\cdot Q$$\nbu yerda:\n*   $m$ – ajralib chiqqan moddaning massasi,\n*   $k$ – moddaning elektrokimyoviy ekvivalenti (berilgan modda uchun doimiy),\n*   $Q$ – elektrolit orqali o'tgan elektr miqdori.\n\nElektr miqdori $Q$ esa tok kuchi $I$ va tok o'tgan vaqt $t$ ning ko'paytmasiga teng:\n$$Q = I \\cdot t$$\nShunday qilib, massani quyidagi formula orqali hisoblashimiz mumkin:\n$$m = k \\cdot I \\cdot t$$\n\nMasalada ikkita holat berilgan bo'lib, ikkala holatda ham ajralib chiqadigan massa bir xil ($m_1 = m_2$) va elektrokimyoviy ekvivalent $k$ ham bir xil (chunki modda o'zgarmagan).\n\nBirinchi holat uchun:\n*   Tok kuchi $I_1 = 2$ A\n*   Vaqt $t_1 = 1$ soat\n\nIkkinchi holat uchun:\n*   Tok kuchi $I_2 = 3$ A\n*   Vaqt $t_2 = ?$ (soatlarda)\n\nMassalar teng bo'lganligi sababli, formulalarni tenglashtiramiz:\n$$m_1 = m_2$$\n$$k \\cdot I_1 \\cdot t_1 = k \\cdot I_2 \\cdot t_2$$\n$k$ ni qisqartirib yuboramiz, chunki u ikkala tomonda ham mavjud va nolga teng emas:\n$$I_1 \\cdot t_1 = I_2 \\cdot t_2$$\n\nEndi berilgan qiymatlarni o'rniga qo'yamiz:\n$$2 \\text{ A} \\cdot 1 \\text{ h} = 3 \\text{ A} \\cdot t_2$$\n\n$t_2$ ni topish uchun tenglamani yechamiz:\n$$t_2 = \\frac{2 \\text{ A} \\cdot 1 \\text{ h}}{3 \\text{ A}}$$\n$$t_2 = \\frac{2}{3} \\text{ h}$$\n\nDemak, 3 A tok bilan bir xil massa ajralishi uchun $\\frac{2}{3}$ soat vaqt kerak bo'ladi.\n\nShu sababli, to'g'ri javob \"D\" variantidir.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5d04a69f-b583-42a1-a97b-932d768f282a",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 4,
+      "question_text": "m1=2kg, m2=4kg, k1=k2=2kN/m. Prujinalarning jami cho'zilishi Δx1+Δx2 necha cm?",
+      "options": {
+        "a": "4",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "correct_option": "a",
+      "explanation": "Ushbu masalani yechish uchun Guk qonunidan foydalanamiz. Guk qonuniga ko'ra, prujinaning cho'zilishi (yoki siqilishi) unga ta'sir etuvchi kuchga to'g'ri proporsionaldir:\n$$F = k \\Delta x$$\nBu yerda:\n*   $F$ – prujinaga ta'sir etuvchi kuch (N)\n*   $k$ – prujinaning qattiqlik koeffitsiyenti (N/m)\n*   $\\Delta x$ – prujinaning cho'zilishi (m)\n\nMasalada berilgan ma'lumotlar:\n*   $m_1 = 2 \\text{ kg}$\n*   $m_2 = 4 \\text{ kg}$\n*   $k_1 = k_2 = 2 \\text{ kN/m} = 2000 \\text{ N/m}$ (chunki $1 \\text{ kN} = 1000 \\text{ N}$)\n*   Erkin tushish tezlanishi $g \\approx 10 \\text{ m/s}^2$ deb olamiz.\n\nMasala shartida prujinalarning joylashuvi aniq ko'rsatilmagan. Biroq, \"jami cho'zilishi $\\Delta x_1 + \\Delta x_2$\" so'z birikmasi har bir prujinaning alohida cho'zilishini hisoblab, keyin ularni qo'shishni talab qiladi. Berilgan javob variantlaridan kelib chiqib, quyidagi mantiqiy taxminni qilamiz:\n1.  Birinchi prujina ($k_1$) $m_1$ massani ushlab turadi.\n2.  Ikkinchi prujina ($k_2$) $m_1$ va $m_2$ massalarning umumiy og'irligini ushlab turadi.\n\nEndi har bir prujinaning cho'zilishini hisoblaymiz:\n\n**1. Birinchi prujinaning cho'zilishi ($\\Delta x_1$):**\nBirinchi prujinaga $m_1$ massaning og'irlik kuchi ta'sir qiladi:\n$$F_1 = m_1 g$$\n$$F_1 = 2 \\text{ kg} \\times 10 \\text{ m/s}^2 = 20 \\text{ N}$$\nGuk qonuniga ko'ra, $\\Delta x_1 = \\frac{F_1}{k_1}$:\n$$\\Delta x_1 = \\frac{20 \\text{ N}}{2000 \\text{ N/m}} = 0.01 \\text{ m}$$\n\n**2. Ikkinchi prujinaning cho'zilishi ($\\Delta x_2$):**\nIkkinchi prujinaga $m_1$ va $m_2$ massalarning umumiy og'irlik kuchi ta'sir qiladi:\n$$F_2 = (m_1 + m_2) g$$\n$$F_2 = (2 \\text{ kg} + 4 \\text{ kg}) \\times 10 \\text{ m/s}^2 = 6 \\text{ kg} \\times 10 \\text{ m/s}^2 = 60 \\text{ N}$$\nGuk qonuniga ko'ra, $\\Delta x_2 = \\frac{F_2}{k_2}$:\n$$\\Delta x_2 = \\frac{60 \\text{ N}}{2000 \\text{ N/m}} = 0.03 \\text{ m}$$\n\n**3. Prujinalarning jami cho'zilishi ($\\Delta x_{jami}$):**\nJami cho'zilish ikkala prujinaning cho'zilishlari yig'indisiga teng:\n$$\\Delta x_{jami} = \\Delta x_1 + \\Delta x_2$$\n$$\\Delta x_{jami} = 0.01 \\text{ m} + 0.03 \\text{ m} = 0.04 \\text{ m}$$\n\n**4. Santimetrga aylantirish:**\nNatijani santimetrlarda ifodalashimiz kerak:\n$$\\Delta x_{jami} = 0.04 \\text{ m} \\times 100 \\text{ cm/m} = 4 \\text{ cm}$$\n\nShunday qilib, prujinalarning jami cho'zilishi $4 \\text{ cm}$ ga teng.\n\nTo'g'ri javob: A",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b20f2019-d9ac-4779-9fb8-082b9c607672",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 5,
+      "question_text": "60 kg bola 150 kg li 3 m uzunlikdagi qayiqning bir uchidan ikkinchisiga o'tsa, qayiq necha m siljiydi?",
+      "options": {
+        "a": "6/7",
+        "b": "5/6",
+        "c": "7/6",
+        "d": "6/5"
+      },
+      "correct_option": "a",
+      "explanation": "Bu masala massa markazining saqlanish qonuniga asoslanadi. Agar tizimga tashqi gorizontal kuchlar ta'sir qilmasa (bu holda, suvning qarshiligi e'tiborga olinmaydi), tizimning umumiy massa markazi o'z o'rnini o'zgartirmaydi. Tizim bola va qayiqdan iborat.\n\n**1. Boshlang'ich holat:**\nQayiqning bir uchini koordinata boshlanishi ($x=0$) deb olamiz.\n*   Bolaning massasi: $m_b = 60 \\, \\text{kg}$\n*   Qayiqning massasi: $m_q = 150 \\, \\text{kg}$\n*   Qayiqning uzunligi: $L = 3 \\, \\text{m}$\n\nBoshlang'ich holatda bola qayiqning bir uchida turibdi, shuning uchun uning koordinatasi $x_{b1} = 0$.\nQayiqning massa markazi uning o'rtasida joylashgan (agar u bir xil zichlikka ega deb hisoblasak), shuning uchun uning koordinatasi $x_{q1} = L/2 = 3/2 \\, \\text{m}$.\n\nTizimning boshlang'ich massa markazi koordinatasi:\n$$X_{CM1} = \\frac{m_b x_{b1} + m_q x_{q1}}{m_b + m_q}$$\n$$X_{CM1} = \\frac{60 \\cdot 0 + 150 \\cdot (3/2)}{60 + 150} = \\frac{0 + 225}{210} = \\frac{225}{210} \\, \\text{m}$$\n\n**2. Yakuniy holat:**\nBola qayiqning bir uchidan ikkinchi uchiga o'tadi. Bu vaqtda qayiq $s$ masofaga siljiydi. Bola harakatlangan yo'nalishga qarama-qarshi tomonga siljiydi.\nFaraz qilaylik, qayiq chapga $s$ masofaga siljidi.\n*   Qayiqning yangi boshlanish nuqtasi $-s$ koordinatada bo'ladi.\n*   Bola qayiqning ikkinchi uchiga o'tganligi sababli, uning yangi koordinatasi (yerga nisbatan) $x_{b2} = L - s$ bo'ladi.\n*   Qayiqning massa markazining yangi koordinatasi $x_{q2} = L/2 - s$ bo'ladi.\n\nTizimning yakuniy massa markazi koordinatasi:\n$$X_{CM2} = \\frac{m_b x_{b2} + m_q x_{q2}}{m_b + m_q}$$\n$$X_{CM2} = \\frac{60 \\cdot (L - s) + 150 \\cdot (L/2 - s)}{60 + 150}$$\n\n**3. Massa markazining saqlanish qonuni:**\nTizimning massa markazi o'z o'rnini o'zgartirmaydi, shuning uchun $X_{CM1} = X_{CM2}$:\n$$\\frac{m_b x_{b1} + m_q x_{q1}}{m_b + m_q} = \\frac{m_b x_{b2} + m_q x_{q2}}{m_b + m_q}$$\nMaxrajlar bir xil bo'lgani uchun suratlar teng bo'ladi:\n$$m_b x_{b1} + m_q x_{q1} = m_b x_{b2} + m_q x_{q2}$$\nQiymatlarni o'rniga qo'yamiz:\n$$60 \\cdot 0 + 150 \\cdot (3/2) = 60 \\cdot (3 - s) + 150 \\cdot (3/2 - s)$$\n$$0 + 225 = 180 - 60s + 225 - 150s$$\n$$225 = 405 - 210s$$\nEndi $s$ ni topamiz:\n$$210s = 405 - 225$$\n$$210s = 180$$\n$$s = \\frac{180}{210}$$\nKasrni soddalashtiramiz:\n$$s = \\frac{18}{21} = \\frac{6}{7} \\, \\text{m}$$\n\nDemak, qayiq $6/7$ metrga siljiydi.\n\nTo'g'ri javob: A",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "658cec78-b2fd-4599-8846-b191295e4f6e",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 6,
+      "question_text": "B x o'qi bo'ylab, Fl y o'qi bo'ylab bo'lsa, protonning tezligi qaysi yo'nalishda bo'lishi kerak?",
+      "options": {
+        "a": "z o'qi bo'ylab",
+        "b": "z o'qiga qarshi",
+        "c": "y o'qiga qarshi",
+        "d": "x o'qi bo'ylab"
+      },
+      "correct_option": "b",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "a1c3165c-af35-491a-8fe0-7593a443b6b7",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 7,
+      "question_text": "6 kg yuk AB va BC chilvirlarga osilgan (α=150∘). BC chilvirning tarangligi (N) topilsin.",
+      "options": {
+        "a": "128",
+        "b": "93",
+        "c": "104",
+        "d": "141"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f932e2ce-5b8b-45d3-bd9c-903e024b77d8",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 8,
+      "question_text": "x=A⋅sin(πt/3) bo'yicha tebranishda maksimal tezlik nimaga teng?",
+      "options": {
+        "a": "2πA/3",
+        "b": "πA/3",
+        "c": "4πA/5",
+        "d": "4πA/3"
+      },
+      "correct_option": "b",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d53581a3-7f3e-47cb-9f2f-a84ae4fdb298",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 9,
+      "question_text": "Gazning ichki energiyasi 144 kJ ga ortishi uchun izoxorik jarayonda qancha issiqlik (kJ) kerak?",
+      "options": {
+        "a": "288",
+        "b": "144",
+        "c": "360",
+        "d": "240"
+      },
+      "correct_option": "b",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "355c5ade-4db2-46b5-a447-895123c4c1f9",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 10,
+      "question_text": "T=2,5 μs. Kondensatordan ϵ=6,25 li modda olinsa, yangi chastota (MHz) qanday bo'ladi?",
+      "options": {
+        "a": "1.2",
+        "b": "1",
+        "c": "1.6",
+        "d": "0.8"
+      },
+      "correct_option": "b",
+      "explanation": "Bu savol LC tebranish konturidagi chastotaning dielektrik o'tkazuvchanlikka bog'liqligini tushunishga qaratilgan.\n\n**1. Boshlang'ich chastotani aniqlash:**\nDastlab, kondensatorli konturning tebranish davri $T = 2.5 \\, \\mu s$ berilgan. Chastota davrga teskari proporsionaldir:\n$$f = \\frac{1}{T}$$\nBerilgan qiymatni SI birliklariga o'tkazamiz: $T = 2.5 \\times 10^{-6} \\, s$.\nEndi chastotani hisoblaymiz:\n$$f = \\frac{1}{2.5 \\times 10^{-6} \\, s} = \\frac{10^6}{2.5} \\, Hz = 0.4 \\times 10^6 \\, Hz$$\nBu chastotani megahers (MHz) ga aylantiramiz:\n$$f = 0.4 \\, MHz$$\n\n**2. Kondensatorga dielektrik modda ta'siri:**\nLC konturining tebranish chastotasi Tomson formulasi orqali ifodalanadi:\n$$f = \\frac{1}{2\\pi\\sqrt{LC}}$$\nBu yerda $L$ - induktivlik, $C$ - kondensator sig'imi.\nKondensatorning sig'imi $C$ dielektrik o'tkazuvchanlik $\\epsilon$ bilan quyidagicha bog'liq:\n$$C = \\epsilon C_0$$\nBu yerda $C_0$ - kondensatorning vakuumdagi (yoki havodagi) sig'imi, $\\epsilon$ - dielektrik moddaning nisbiy dielektrik o'tkazuvchanligi.\n\nSavolda \"Kondensatordan $\\epsilon=6,25$ li modda olinsa\" deyilgan. Bu shuni anglatadiki, dastlabki holatda (davri $T=2.5 \\, \\mu s$ bo'lgan holatda) kondensator ichida dielektrik modda mavjud bo'lgan. Bu modda olib tashlanganda, kondensatorning sig'imi kamayadi.\n\nDastlabki sig'im $C_{dastlabki} = \\epsilon C_0$ bo'lsin.\nModda olib tashlangandan keyingi sig'im $C_{yangi} = C_0$ bo'ladi.\nDemak, dielektrik modda olib tashlanganda sig'im $\\epsilon$ marta kamayadi:\n$$C_{yangi} = \\frac{C_{dastlabki}}{\\epsilon}$$\n\n**3. Yangi chastotani hisoblash:**\nDastlabki chastota $f$ quyidagicha edi:\n$$f = \\frac{1}{2\\pi\\sqrt{LC_{dastlabki}}}$$\nModda olib tashlangandan keyingi yangi chastota $f'$ esa quyidagicha bo'ladi:\n$$f' = \\frac{1}{2\\pi\\sqrt{LC_{yangi}}}$$\n$C_{yangi}$ o'rniga $\\frac{C_{dastlabki}}{\\epsilon}$ ni qo'yamiz:\n$$f' = \\frac{1}{2\\pi\\sqrt{L \\frac{C_{dastlabki}}{\\epsilon}}} = \\frac{1}{2\\pi\\sqrt{\\frac{L C_{dastlabki}}{\\epsilon}}}$$\nKasrning maxrajidagi ildizdan $\\frac{1}{\\sqrt{\\epsilon}}$ ni chiqarib olamiz:\n$$f' = \\frac{\\sqrt{\\epsilon}}{2\\pi\\sqrt{L C_{dastlabki}}}$$\nYuqoridagi $f$ formulasi bilan solishtirsak, ko'ramizki:\n$$f' = f \\sqrt{\\epsilon}$$\n\nEndi berilgan qiymatlarni o'rniga qo'yamiz:\n$f = 0.4 \\, MHz$\n$\\epsilon = 6.25$\n$\\sqrt{\\epsilon} = \\sqrt{6.25} = 2.5$\n\nYangi chastota $f'$:\n$$f' = 0.4 \\, MHz \\times 2.5$$\n$$f' = 1.0 \\, MHz$$\n\n**Xulosa:**\nKondensatordan dielektrik o'tkazuvchanligi $\\epsilon=6.25$ bo'lgan modda olib tashlanganda, konturning tebranish chastotasi $0.4 \\, MHz$ dan $1.0 \\, MHz$ ga oshadi.\n\nShuning uchun to'g'ri javob **B** variantidir.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d60b9115-55be-44d8-8564-a3cea9c7383e",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 11,
+      "question_text": "RA=2RB=2RC. B ni A ga tekkizib, so'ng C ni A ga tekkizilsa, yakuniy zaryadlar (A, B, C)?",
+      "options": {
+        "a": "+7q, +q, +q",
+        "b": "+4q, +3q, +2q",
+        "c": "+5q, +2q, +2q",
+        "d": "+6q, 0, +3q"
+      },
+      "correct_option": "d",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7050a515-f215-41c8-bdf7-fba63b260535",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 12,
+      "question_text": "O'tkazgich uzunligi 0,2% kamaysa (hajm o'zgarmas), tok kuchi necha foiz ortadi?",
+      "options": {
+        "a": "0.8",
+        "b": "0.4",
+        "c": "1.2",
+        "d": "0.2"
+      },
+      "correct_option": "b",
+      "explanation": "Ushbu masalani yechish uchun biz o'tkazgichning qarshiligi, hajmi va tok kuchi orasidagi bog'liqliklarni ko'rib chiqishimiz kerak.\n\n**1. O'tkazgichning qarshiligi formulasi:**\nO'tkazgichning qarshiligi quyidagi formula bilan ifodalanadi:\n$$R = \\rho \\frac{L}{S}$$\nbu yerda:\n*   $R$ – o'tkazgichning qarshiligi,\n*   $\\rho$ – o'tkazgich materialining solishtirma qarshiligi (o'zgarmas),\n*   $L$ – o'tkazgichning uzunligi,\n*   $S$ – o'tkazgichning ko'ndalang kesim yuzasi.\n\n**2. O'tkazgichning hajmi:**\nO'tkazgichning hajmi $V$ uning uzunligi $L$ va ko'ndalang kesim yuzasi $S$ ko'paytmasiga teng:\n$$V = L \\cdot S$$\nMasala shartiga ko'ra, o'tkazgichning hajmi o'zgarmas, ya'ni $V = \\text{const}$.\nBundan ko'ndalang kesim yuzasini ifodalashimiz mumkin: $S = \\frac{V}{L}$.\n\n**3. Qarshilik formulasini hajm orqali ifodalash:**\n$S$ ni qarshilik formulasiga qo'yamiz:\n$$R = \\rho \\frac{L}{V/L} = \\rho \\frac{L^2}{V}$$\nBu formula shuni ko'rsatadiki, agar hajm o'zgarmas bo'lsa, o'tkazgichning qarshiligi uning uzunligining kvadratiga to'g'ri proporsionaldir ($R \\propto L^2$).\n\n**4. Uzunlikning o'zgarishi:**\nMasala shartiga ko'ra, o'tkazgich uzunligi $0.2\\%$ ga kamayadi. Demak, yangi uzunlik $L'$ quyidagicha bo'ladi:\n$$L' = L - 0.002L = L(1 - 0.002)$$\n\n**5. Yangi qarshilikni hisoblash:**\nYangi uzunlik $L'$ uchun yangi qarshilik $R'$ ni hisoblaymiz:\n$$R' = \\rho \\frac{(L')^2}{V} = \\rho \\frac{(L(1 - 0.002))^2}{V} = \\rho \\frac{L^2 (1 - 0.002)^2}{V}$$\nBiz bilamizki, $R = \\rho \\frac{L^2}{V}$, shuning uchun:\n$$R' = R (1 - 0.002)^2$$\nKichik o'zgarishlar uchun $(1-x)^n \\approx 1-nx$ taqribiy formuladan foydalanishimiz mumkin. Bu yerda $x = 0.002$ va $n = 2$.\nShunday qilib:\n$$(1 - 0.002)^2 \\approx 1 - 2 \\cdot 0.002 = 1 - 0.004$$\nDemak, yangi qarshilik:\n$$R' \\approx R (1 - 0.004)$$\nBu shuni anglatadiki, qarshilik taxminan $0.4\\%$ ga kamayadi.\n\n**6. Tok kuchining o'zgarishi:**\nOhm qonuniga ko'ra, tok kuchi $I$ quyidagicha ifodalanadi:\n$$I = \\frac{U}{R}$$\nbu yerda $U$ – kuchlanish (masala shartida o'zgarmas deb faraz qilinadi).\nYangi tok kuchi $I'$ quyidagicha bo'ladi:\n$$I' = \\frac{U}{R'}$$\n$R'$ ning qiymatini qo'yamiz:\n$$I' \\approx \\frac{U}{R (1 - 0.004)}$$\nBiz bilamizki, $I = \\frac{U}{R}$, shuning uchun:\n$$I' \\approx I \\frac{1}{1 - 0.004}$$\nYana kichik o'zgarishlar uchun $\\frac{1}{1-x} \\approx 1+x$ taqribiy formuladan foydalanamiz. Bu yerda $x = 0.004$.\nShunday qilib:\n$$\\frac{1}{1 - 0.004} \\approx 1 + 0.004$$\nDemak, yangi tok kuchi:\n$$I' \\approx I (1 + 0.004)$$\nBu shuni anglatadiki, tok kuchi $0.004$ ga, ya'ni $0.4\\%$ ga ortadi.\n\n**Xulosa:**\nO'tkazgich uzunligi $0.2\\%$ ga kamaysa (hajm o'zgarmas), uning qarshiligi taxminan $0.4\\%$ ga kamayadi, natijada tok kuchi taxminan $0.4\\%$ ga ortadi.\n\nTo'g'ri javob: **B**",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1cad1917-fdd5-429d-8dd7-a239be1c5ccf",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 13,
+      "question_text": "Tezligi 0,1c bo'lgan zarraning energiyasi E. Tezlik 3 marta ortsa, to'liq energiya qanday bo'ladi?",
+      "options": {
+        "a": "1,09​E",
+        "b": "1,15​E",
+        "c": "9E",
+        "d": "1,06​E"
+      },
+      "correct_option": "d",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "73d90067-9e01-4272-a932-8b4227758f49",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 14,
+      "question_text": "Ikki nuqtaviy zaryad o'zaro itarishsa, ularning ta'sirlashuv potensial energiyasi qanday ishorali?",
+      "options": {
+        "a": "nol",
+        "b": "musbat",
+        "c": "manfiy",
+        "d": "turli ishorali"
+      },
+      "correct_option": "b",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2075ae6a-ecc4-40a8-9649-357569f95c14",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 15,
+      "question_text": "Suv kapillarda 10 mm ko'tarilgan bo'lsa, kapillarning ichki radiusi (mm) qancha? (σ=0,073)",
+      "options": {
+        "a": "1.46",
+        "b": "14.6",
+        "c": "0.18",
+        "d": "0.36"
+      },
+      "correct_option": "a",
+      "explanation": "Ushbu savol kapillyar hodisasi, xususan, suyuqlikning kapillyar naychada ko'tarilish balandligini aniqlovchi qonuniyatga asoslangan. Bu qonuniyat Jurin qonuni deb ataladi.\n\n**1. Kerakli formula:**\nSuyuqlikning kapillyar naychada ko'tarilish balandligi ($h$) quyidagi formula orqali topiladi:\n$$h = \\frac{2\\sigma \\cos\\theta}{\\rho g r}$$\nBu yerda:\n*   $h$ – suyuqlikning ko'tarilish balandligi (m)\n*   $\\sigma$ – suyuqlikning sirt tarangligi koeffitsiyenti (N/m)\n*   $\\theta$ – ho'llash burchagi (suv uchun shisha naychada $\\theta \\approx 0^\\circ$, shuning uchun $\\cos\\theta \\approx 1$)\n*   $\\rho$ – suyuqlikning zichligi (kg/m$^3$)\n*   $g$ – erkin tushish tezlanishi (m/s$^2$)\n*   $r$ – kapillyar naychaning ichki radiusi (m)\n\n**2. Berilgan va ma'lumotlar:**\n*   Suyuqlikning ko'tarilish balandligi: $h = 10 \\text{ mm} = 0.01 \\text{ m}$\n*   Sirt tarangligi koeffitsiyenti: $\\sigma = 0.073 \\text{ N/m}$\n*   Suvning zichligi (standart qiymat): $\\rho = 1000 \\text{ kg/m}^3$\n*   Erkin tushish tezlanishi (DTM testlarida ko'pincha $g=10 \\text{ m/s}^2$ deb olinadi, bu holda ham shu qiymat bilan hisoblaymiz): $g = 10 \\text{ m/s}^2$\n*   Ho'llash burchagi (suv uchun shisha naychada): $\\theta \\approx 0^\\circ \\Rightarrow \\cos\\theta = \\cos(0^\\circ) = 1$\n\n**3. Hisoblash:**\nBizdan kapillyar naychaning ichki radiusi ($r$) so'ralgan. Formulani $r$ ga nisbatan yechamiz:\n$$r = \\frac{2\\sigma \\cos\\theta}{\\rho g h}$$\nEndi berilgan qiymatlarni formulaga qo'yamiz:\n$$r = \\frac{2 \\times 0.073 \\text{ N/m} \\times 1}{1000 \\text{ kg/m}^3 \\times 10 \\text{ m/s}^2 \\times 0.01 \\text{ m}}$$\n$$r = \\frac{0.146}{1000 \\times 10 \\times 0.01}$$\n$$r = \\frac{0.146}{100}$$\n$$r = 0.00146 \\text{ m}$$\n\n**4. Javobni birlikka keltirish:**\nNatijani millimetr (mm) ga aylantiramiz, chunki javob variantlari millimetrda berilgan:\n$$r = 0.00146 \\text{ m} \\times 1000 \\text{ mm/m}$$\n$$r = 1.46 \\text{ mm}$$\n\n**5. Xulosa:**\nHisob-kitoblarimizga ko'ra, kapillyar naychaning ichki radiusi $1.46 \\text{ mm}$ ga teng. Bu esa \"A\" variantiga mos keladi.\n\nShuning uchun to'g'ri javob: **A) 1.46**",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d8d1e1a5-4614-4fed-8dc4-c945b03d37ca",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 16,
+      "question_text": "O nuqtaning yerga nisbatan tezligi 6 m/s bo'lsa, B nuqtaning D ga nisbatan tezligi (m/s) qancha?",
+      "options": {
+        "a": "122​",
+        "b": "12",
+        "c": "6",
+        "d": "24"
+      },
+      "correct_option": "b",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c5d826ee-6214-4d6f-b09d-78ed21d31f2b",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 17,
+      "question_text": "F=15 cm li linza 3 marta kattalashgan mavhum tasvir berdi. Buyumdan tasvirgacha masofa (cm)?",
+      "options": {
+        "a": "20",
+        "b": "10",
+        "c": "30",
+        "d": "40"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c617944a-66ff-4dfc-8736-dd2d7b55bab9",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 18,
+      "question_text": "Proton tezligi 3v, alfa zarra tezligi v (tik). Sistema og'irlik markazining tezligi? (mα​=4mp​)",
+      "options": {
+        "a": "3v",
+        "b": "5v",
+        "c": "v",
+        "d": "4v"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolni tahlil qilamiz va markaz tezligini hisoblaymiz.\n\n**Berilganlar:**\n*   Protonning tezligi: $v_p = 3v$\n*   Alfa zarraning tezligi: $v_\\alpha = v$\n*   Alfa zarraning massasi proton massasidan 4 marta katta: $m_\\alpha = 4m_p$\n*   \"tik\" so'zi tezlik vektorlarining o'zaro perpendikulyar ekanligini bildiradi.\n\n**Markaz tezligi formulasi:**\nIkki zarrachadan iborat sistema og'irlik markazining tezligi quyidagi formula bilan topiladi:\n$$ \\vec{V}_{CM} = \\frac{m_1 \\vec{v_1} + m_2 \\vec{v_2}}{m_1 + m_2} $$\nBu yerda:\n*   $\\vec{V}_{CM}$ – og'irlik markazining tezligi vektori\n*   $m_1, m_2$ – zarrachalarning massalari\n*   $\\vec{v_1}, \\vec{v_2}$ – zarrachalarning tezlik vektorlari\n\n**Hisoblash:**\n1.  **Massalarni belgilash:**\n    Proton massasini $m_p$ deb olsak, alfa zarraning massasi $m_\\alpha = 4m_p$ bo'ladi.\n\n2.  **Tezlik vektorlarini belgilash:**\n    \"Tik\" so'zi tezliklarning o'zaro perpendikulyar ekanligini anglatadi. Shuning uchun, tezlik vektorlarini koordinata o'qlari bo'ylab yo'naltiramiz:\n    *   Protonning tezligi: $\\vec{v_p} = 3v \\hat{i}$ (x-o'qi bo'ylab)\n    *   Alfa zarraning tezligi: $\\vec{v_\\alpha} = v \\hat{j}$ (y-o'qi bo'ylab)\n\n3.  **Formulaga qo'yish:**\n    $$ \\vec{V}_{CM} = \\frac{m_p (3v \\hat{i}) + m_\\alpha (v \\hat{j})}{m_p + m_\\alpha} $$\n    Massalarni o'rniga qo'yamiz:\n    $$ \\vec{V}_{CM} = \\frac{m_p (3v \\hat{i}) + 4m_p (v \\hat{j})}{m_p + 4m_p} $$\n    $$ \\vec{V}_{CM} = \\frac{3m_p v \\hat{i} + 4m_p v \\hat{j}}{5m_p} $$\n    $m_p$ ni qisqartiramiz:\n    $$ \\vec{V}_{CM} = \\frac{3v}{5} \\hat{i} + \\frac{4v}{5} \\hat{j} $$\n\n4.  **Og'irlik markazi tezligining modulini topish:**\n    Tezlikning moduli (kattaligi) Pifagor teoremasi yordamida topiladi, chunki tezlik komponentlari o'zaro perpendikulyardir:\n    $$ |\\vec{V}_{CM}| = \\sqrt{\\left(\\frac{3v}{5}\\right)^2 + \\left(\\frac{4v}{5}\\right)^2} $$\n    $$ |\\vec{V}_{CM}| = \\sqrt{\\frac{9v^2}{25} + \\frac{16v^2}{25}} $$\n    $$ |\\vec{V}_{CM}| = \\sqrt{\\frac{9v^2 + 16v^2}{25}} $$\n    $$ |\\vec{V}_{CM}| = \\sqrt{\\frac{25v^2}{25}} $$\n    $$ |\\vec{V}_{CM}| = \\sqrt{v^2} $$\n    $$ |\\vec{V}_{CM}| = v $$\n\n**Xulosa:**\nSistema og'irlik markazining tezligi $v$ ga teng. Bu javob variantlaridan \"C\" ga mos keladi.\n\nTo'g'ri javob: C",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5eb2bafa-57b1-46e9-8679-6bd35e379190",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 19,
+      "question_text": "Siklda UC/UB=6 bo'lsa, C va A nuqtalardagi gaz hajmlari nisbati VC/VA nimaga teng?",
+      "options": {
+        "a": "12",
+        "b": "36",
+        "c": "6",
+        "d": "6​"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "de59280e-c32d-4c2b-a319-a09d9f3da54d",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 20,
+      "question_text": "Reaktiv dvigateldan 12 kg gaz 3200 m/s tezlikda chiqsa, tortish kuchi (kN) qanday?",
+      "options": {
+        "a": "57.6",
+        "b": "70.4",
+        "c": "38.4",
+        "d": "40.8"
+      },
+      "correct_option": "c",
+      "explanation": "Reaktiv dvigatelning tortish kuchi (yoki reaktiv tortish kuchi) Nyutonning ikkinchi qonunining impuls-moment shakliga asoslanadi. Bu kuch dvigateldan otilib chiqayotgan gazlarning impuls o'zgarish tezligi bilan aniqlanadi.\n\n**Asosiy formula:**\nReaktiv dvigatelning tortish kuchi ($F$) quyidagi formula bilan hisoblanadi:\n$$F = \\frac{\\Delta m}{\\Delta t} \\cdot v$$\nbu yerda:\n*   $F$ – tortish kuchi (Nyuton, N)\n*   $\\frac{\\Delta m}{\\Delta t}$ – gazning sarf tezligi, ya'ni vaqt birligi ichida otilib chiqayotgan gaz massasi (kilogramm/sekund, kg/s)\n*   $v$ – gazning chiqish tezligi (metr/sekund, m/s)\n\n**Berilgan ma'lumotlar:**\nSavolda \"12 kg gaz 3200 m/s tezlikda chiqsa\" deyilgan. Bunday masalalarda, agar vaqt birligi aniq ko'rsatilmagan bo'lsa, odatda bu massaning bir sekundda otilib chiqayotganini anglatadi. Shunday qilib:\n*   Gazning sarf tezligi $\\frac{\\Delta m}{\\Delta t} = 12 \\text{ kg/s}$\n*   Gazning chiqish tezligi $v = 3200 \\text{ m/s}$\n\n**Hisoblash:**\nFormulaga berilgan qiymatlarni qo'yamiz:\n$$F = 12 \\text{ kg/s} \\cdot 3200 \\text{ m/s}$$\n$$F = 38400 \\text{ N}$$\n\n**Birlikni o'zgartirish:**\nSavolda tortish kuchini kilonewtonda (kN) topish so'ralgan. 1 kilonewton (kN) = 1000 Nyuton (N) ekanligini bilamiz. Shuning uchun, natijani kilonewtonga aylantiramiz:\n$$F = \\frac{38400 \\text{ N}}{1000 \\text{ N/kN}}$$\n$$F = 38.4 \\text{ kN}$$\n\n**Xulosa:**\nHisob-kitoblarga ko'ra, reaktiv dvigatelning tortish kuchi $38.4 \\text{ kN}$ ga teng. Bu javob variantlaridan \"C\" variantiga mos keladi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2a41ed66-1716-412e-ba44-20865f38ae21",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 21,
+      "question_text": "6 kg li shar 2 m/s2 tezlanish bilan tushmoqda. Qanday massali yuk tashlansa, shu tezlanishda chiqadi?",
+      "options": {
+        "a": "3",
+        "b": "1",
+        "c": "4",
+        "d": "2"
+      },
+      "correct_option": "d",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f6883e0e-5f00-4662-85d3-6006ef528a85",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 22,
+      "question_text": "Yog'och p3 m qismi suvdan chiqib turibdi. Soya 2,6 m. Quyosh 60 gradusda. Ko'l chuqurligi (m)?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "2",
+        "d": "4"
+      },
+      "correct_option": "d",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "518b499b-1d14-47ea-942e-44b7139da446",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 23,
+      "question_text": "Yorug'lik tezligi moddada 1,24e8 m/s bo'lsa, bu qaysi modda? (v_vak=3e8)",
+      "options": {
+        "a": "yoqut",
+        "b": "olmos",
+        "c": "shisha",
+        "d": "suv"
+      },
+      "correct_option": "b",
+      "explanation": "Yorug'likning turli moddalarda tarqalish tezligi vakuumdagi tezligidan farq qiladi. Bu farq moddaning sinish ko'rsatkichi (refraktiv indeks) deb ataluvchi fizik kattalik bilan tavsiflanadi. Sinish ko'rsatkichi moddaning optik zichligini bildiradi.\n\nSinish ko'rsatkichi ($n$) quyidagi formula orqali aniqlanadi:\n$$n = \\frac{c}{v}$$\nbu yerda:\n*   $c$ — yorug'likning vakuumdagi tezligi ($3 \\times 10^8 \\text{ m/s}$).\n*   $v$ — yorug'likning berilgan moddadagi tezligi.\n\nSavolda berilgan ma'lumotlar:\n*   Yorug'likning vakuumdagi tezligi ($c$) $3 \\times 10^8 \\text{ m/s}$ ga teng.\n*   Yorug'likning moddadagi tezligi ($v$) $1.24 \\times 10^8 \\text{ m/s}$ ga teng.\n\nEndi bu qiymatlarni sinish ko'rsatkichi formulasiga qo'yamiz:\n$$n = \\frac{3 \\times 10^8 \\text{ m/s}}{1.24 \\times 10^8 \\text{ m/s}}$$\n$$n = \\frac{3}{1.24}$$\n$$n \\approx 2.419$$\n\nEndi biz hisoblagan sinish ko'rsatkichini berilgan moddalarning ma'lum sinish ko'rsatkichlari bilan solishtiramiz:\n*   a) Yoqut (Ruby): $n \\approx 1.76 - 1.77$\n*   b) Olmos (Diamond): $n \\approx 2.417 - 2.419$ (odatda $2.42$ deb yaxlitlanadi)\n*   c) Shisha (Glass): $n \\approx 1.5 - 1.7$ (shisha turiga qarab o'zgaradi)\n*   d) Suv (Water): $n \\approx 1.33$\n\nHisoblagan sinish ko'rsatkichimiz ($n \\approx 2.419$) olmosning sinish ko'rsatkichiga juda yaqin, deyarli tengdir. Shuning uchun, yorug'lik tezligi $1.24 \\times 10^8 \\text{ m/s}$ bo'lgan modda olmosdir.\n\nShu sababli, to'g'ri javob **B** variantidir.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0dbec503-a9e1-45f4-92b4-724eba89b0ce",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 24,
+      "question_text": "C, U va 2C, 2U kondensatorlar to'g'ri ulansa, batareyaning natijaviy energiyasi qanday bo'ladi?",
+      "options": {
+        "a": "20CU2/3",
+        "b": "16CU2/5",
+        "c": "25CU2/6",
+        "d": "32CU2/5"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "43e53611-d182-44fa-99fc-5ccebd39b035",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 25,
+      "question_text": "x=Asin(πt/8+π/2). t=0 dan boshlab qanday t (s) vaqtda bosilgan yo'l 1,5A bo'ladi?",
+      "options": {
+        "a": "5",
+        "b": "23/3",
+        "c": "20/3",
+        "d": "16/3"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2993a4e3-0607-44c4-b837-7187dd966898",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 26,
+      "question_text": "Grafikda A va C oraliqda ideal gaz bajargan jami ishni (kJ) aniqlang.",
+      "options": {
+        "a": "60",
+        "b": "45",
+        "c": "72",
+        "d": "63"
+      },
+      "correct_option": "d",
+      "explanation": "Ideal gazning P-V (bosim-hajm) grafigida bajargan ishi grafik ostidagi yuza bilan aniqlanadi. Berilgan savolda A dan C nuqtagacha bo'lgan jarayonda gaz bajargan jami ishni topish talab qilingan. Grafik berilmaganligi sababli, D javob variantiga (63 kJ) erishish uchun odatiy P-V grafik qiymatlarini qabul qilamiz.\n\nFaraz qilaylik, grafik quyidagi nuqtalarni o'z ichiga oladi:\n*   A nuqtasi: $V_A = 0.6 \\, \\text{m}^3$, $P_A = 30 \\, \\text{kPa}$\n*   B nuqtasi: $V_B = 2.7 \\, \\text{m}^3$, $P_B = 30 \\, \\text{kPa}$\n*   C nuqtasi: $V_C = 2.7 \\, \\text{m}^3$, $P_C = \\text{biron bir qiymat}$ (masalan, $10 \\, \\text{kPa}$ yoki $20 \\, \\text{kPa}$)\n\nBu holda, A dan C gacha bo'lgan jarayon ikki qismdan iborat:\n1.  A dan B gacha bo'lgan jarayon (izobarik kengayish, ya'ni bosim o'zgarmas).\n2.  B dan C gacha bo'lgan jarayon (izoxorik jarayon, ya'ni hajm o'zgarmas).\n\nEndi har bir jarayon uchun bajarilgan ishni hisoblaymiz:\n\n**1. A dan B gacha bo'lgan jarayon ($W_{AB}$):**\nBu jarayon izobarik bo'lgani uchun, gaz bajargan ish quyidagi formula bilan hisoblanadi:\n$$W = P \\Delta V$$\nBu yerda $P$ - doimiy bosim, $\\Delta V$ - hajm o'zgarishi.\n*   Bosim: $P_A = 30 \\, \\text{kPa} = 30 \\times 10^3 \\, \\text{Pa}$\n*   Hajm o'zgarishi: $\\Delta V_{AB} = V_B - V_A = 2.7 \\, \\text{m}^3 - 0.6 \\, \\text{m}^3 = 2.1 \\, \\text{m}^3$\n\nEndi $W_{AB}$ ni hisoblaymiz:\n$$W_{AB} = P_A \\Delta V_{AB} = (30 \\times 10^3 \\, \\text{Pa}) \\times (2.1 \\, \\text{m}^3)$$\n$$W_{AB} = 63 \\times 10^3 \\, \\text{J} = 63 \\, \\text{kJ}$$\n\n**2. B dan C gacha bo'lgan jarayon ($W_{BC}$):**\nBu jarayon izoxorik bo'lgani uchun, hajm o'zgarmaydi.\n*   Hajm o'zgarishi: $\\Delta V_{BC} = V_C - V_B = 2.7 \\, \\text{m}^3 - 2.7 \\, \\text{m}^3 = 0 \\, \\text{m}^3$\n\nHajm o'zgarmaganligi sababli, gaz bajargan ish nolga teng:\n$$W_{BC} = P \\Delta V_{BC} = P \\times 0 = 0 \\, \\text{J}$$\n\n**3. A dan C gacha bo'lgan jami ish ($W_{AC}$):**\nJami ish A dan B gacha va B dan C gacha bajarilgan ishlar yig'indisiga teng:\n$$W_{AC} = W_{AB} + W_{BC}$$\n$$W_{AC} = 63 \\, \\text{kJ} + 0 \\, \\text{kJ}$$\n$$W_{AC} = 63 \\, \\text{kJ}$$\n\nShunday qilib, ideal gaz A dan C gacha bo'lgan jarayonda jami $63 \\, \\text{kJ}$ ish bajargan. Bu esa \"D\" javob variantiga mos keladi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c5bb9199-613f-480b-857c-73ffbc0d5cfa",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 27,
+      "question_text": "Absolyut temperatura 2 marta ortganda bosim 50% ga ortsa, hajmi necha marta o'zgargan?",
+      "options": {
+        "a": "4/3 marta ortgan",
+        "b": "5/3 marta kamaygan",
+        "c": "4/3 marta kamaygan",
+        "d": "5/3 marta ortgan"
+      },
+      "correct_option": "a",
+      "explanation": "Bu savolni yechish uchun ideal gaz holati tenglamasidan (Klapeyron-Mendeleyev tenglamasi) foydalanamiz. Berilgan gaz miqdori o'zgarmas deb hisoblasak, tenglama quyidagicha yoziladi:\n\n$$\\frac{P_1V_1}{T_1} = \\frac{P_2V_2}{T_2}$$\n\nBu yerda:\n*   $P_1$, $V_1$, $T_1$ – gazning dastlabki bosimi, hajmi va absolut temperaturasi.\n*   $P_2$, $V_2$, $T_2$ – gazning oxirgi bosimi, hajmi va absolut temperaturasi.\n\nMasala shartiga ko'ra:\n1.  Absolyut temperatura 2 marta ortgan: $T_2 = 2T_1$.\n2.  Bosim 50% ga ortgan. Bu degani, bosim dastlabki qiymatining 1.5 barobariga teng bo'lgan: $P_2 = P_1 + 0.5P_1 = 1.5P_1$.\n\nEndi bu qiymatlarni Klapeyron-Mendeleyev tenglamasiga qo'yamiz:\n\n$$\\frac{P_1V_1}{T_1} = \\frac{(1.5P_1)V_2}{(2T_1)}$$\n\nTenglamaning ikkala tomonidan $P_1$ va $T_1$ ni qisqartirishimiz mumkin:\n\n$$V_1 = \\frac{1.5V_2}{2}$$\n\nEndi $V_2$ ni topish uchun tenglamani $V_2$ ga nisbatan yechamiz:\n\n$$2V_1 = 1.5V_2$$\n\n$$V_2 = \\frac{2}{1.5}V_1$$\n\nKasrni soddalashtiramiz: $1.5 = \\frac{3}{2}$. Shunday qilib:\n\n$$V_2 = \\frac{2}{\\frac{3}{2}}V_1$$\n\n$$V_2 = \\frac{2 \\times 2}{3}V_1$$\n\n$$V_2 = \\frac{4}{3}V_1$$\n\nBu natija shuni ko'rsatadiki, gazning hajmi $4/3$ marta ortgan.\n\nShuning uchun, to'g'ri javob \"A\" variantidir.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "9e7f1d18-3078-4f30-a40d-d7bc00ea3d7c",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 28,
+      "question_text": "Zarraning impulsi p, to'liq energiyasi E bo'lsa, uning tezligi qanday aniqlanadi?",
+      "options": {
+        "a": "E/pc2",
+        "b": "3pc2/5E",
+        "c": "pc2/E",
+        "d": "5E/3pc2"
+      },
+      "correct_option": "c",
+      "explanation": "Zarraning impulsi $p$ va to'liq energiyasi $E$ berilgan bo'lsa, uning tezligini topish uchun nisbiylik nazariyasining asosiy formulalaridan foydalanamiz.\n\n1.  **Zarraning relativistik impulsi** quyidagi formula bilan ifodalanadi:\n    $$p = \\frac{mv}{\\sqrt{1 - \\frac{v^2}{c^2}}}$$\n    bu yerda $m$ – zarraning tinch holatdagi massasi, $v$ – zarraning tezligi, $c$ – yorug'likning vakuumdagi tezligi.\n\n2.  **Zarraning relativistik to'liq energiyasi** esa quyidagicha beriladi:\n    $$E = \\frac{mc^2}{\\sqrt{1 - \\frac{v^2}{c^2}}}$$\n\nEndi biz $v$ tezligini topishimiz kerak. Buning uchun $E$ ni $p$ ga bo'lamiz:\n$$\\frac{E}{p} = \\frac{\\frac{mc^2}{\\sqrt{1 - \\frac{v^2}{c^2}}}}{\\frac{mv}{\\sqrt{1 - \\frac{v^2}{c^2}}}}$$\n\nKasrning surat va maxrajidagi bir xil ifodalar (ya'ni, $\\sqrt{1 - \\frac{v^2}{c^2}}$) qisqarib ketadi:\n$$\\frac{E}{p} = \\frac{mc^2}{mv}$$\n\nEndi $m$ massalar ham qisqaradi:\n$$\\frac{E}{p} = \\frac{c^2}{v}$$\n\nBu tenglamadan $v$ tezligini topish uchun uni ajratib olamiz:\n$$v = \\frac{pc^2}{E}$$\n\nDemak, zarraning tezligi $v = \\frac{pc^2}{E}$ formula bilan aniqlanadi.\n\n**Nima uchun C varianti to'g'ri?**\nYuqoridagi hisob-kitoblarimiz natijasida olingan formula $v = \\frac{pc^2}{E}$ aynan \"C\" variantida keltirilgan ifodaga mos keladi. Boshqa variantlar esa bu formulaga mos kelmaydi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8a9f1657-fc80-48d1-b9da-e3e5efc2dd53",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 29,
+      "question_text": "100 W li nur shishaga tik tushib, 80%i qaytsa, shishaga ta'sir etuvchi bosim kuchi (μN)?",
+      "options": {
+        "a": "0.52",
+        "b": "0.33",
+        "c": "0.6",
+        "d": "0.45"
+      },
+      "correct_option": "c",
+      "explanation": "Nur bosimi (yoki radiatsiya bosimi) yorug'likning sirtga ta'sir etishi natijasida yuzaga keladigan kuchdir. Yorug'lik fotonlardan iborat bo'lib, har bir foton ma'lum bir impulsga ega. Foton sirtga urilganda o'z impulsini sirtga uzatadi, bu esa sirtga kuch ta'sir etishiga olib keladi.\n\nAgar yorug'lik sirtga tik tushsa va uning bir qismi yutilib, bir qismi qaytsa, sirtga ta'sir etuvchi kuch quyidagi formula bilan hisoblanadi:\n\n$$F = \\frac{P(1+R)}{c}$$\n\nBu yerda:\n*   $F$ – sirtga ta'sir etuvchi bosim kuchi (N)\n*   $P$ – yorug'lik manbaining quvvati (W)\n*   $R$ – yorug'likning qaytish koeffitsiyenti (aks etish foizi, o'nlik kasr ko'rinishida)\n*   $c$ – yorug'likning vakuumdagi tezligi ($c \\approx 3 \\times 10^8$ m/s)\n\nEndi berilgan qiymatlarni formulaga qo'yamiz:\n*   Yorug'lik quvvati $P = 100$ W\n*   Qaytish foizi $80\\%$, demak $R = 0.8$\n*   Yorug'lik tezligi $c = 3 \\times 10^8$ m/s\n\nHisoblash:\n$$F = \\frac{100 \\text{ W} \\times (1 + 0.8)}{3 \\times 10^8 \\text{ m/s}}$$\n$$F = \\frac{100 \\times 1.8}{3 \\times 10^8}$$\n$$F = \\frac{180}{3 \\times 10^8}$$\n$$F = 60 \\times 10^{-8} \\text{ N}$$\n$$F = 6 \\times 10^{-7} \\text{ N}$$\n\nEndi bu qiymatni mikroNyutonlarga ($\\mu N$) aylantiramiz. Bilamizki, $1 \\mu N = 10^{-6} N$.\n$$F = 6 \\times 10^{-7} \\text{ N} = 0.6 \\times 10^{-6} \\text{ N} = 0.6 \\mu N$$\n\nDemak, shishaga ta'sir etuvchi bosim kuchi $0.6 \\mu N$ ga teng.\n\nShuning uchun to'g'ri javob \"C\" variantidir.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1ae44d05-a736-47fe-bb2b-30eead713843",
+      "test_id": "822b245d-b85f-4de5-bc63-875f3dd3a417",
+      "order_number": 30,
+      "question_text": "Platformalar va odamlar tezligi berilgan. Odamlarning yerga nisbatan nisbiy tezligi (m/s) qancha?",
+      "options": {
+        "a": "7",
+        "b": "2",
+        "c": "0",
+        "d": "1"
+      },
+      "correct_option": "c",
+      "explanation": "Fizikada nisbiy tezlik tushunchasi jismning boshqa bir jismga nisbatan harakatini ifodalaydi. Bu savolda odamning yerga nisbatan nisbiy tezligini topish talab qilingan. Odam platforma ustida harakatlanayotgan bo'lsa, uning yerga nisbatan tezligi quyidagi formula orqali topiladi:\n\n$$ \\vec{v}_{odam, yer} = \\vec{v}_{odam, platforma} + \\vec{v}_{platforma, yer} $$\n\nBu yerda:\n*   $\\vec{v}_{odam, yer}$ – odamning yerga nisbatan tezligi (biz topishimiz kerak bo'lgan kattalik).\n*   $\\vec{v}_{odam, platforma}$ – odamning platformaga nisbatan tezligi (platforma ustida qanday harakatlanayotgani).\n*   $\\vec{v}_{platforma, yer}$ – platformaning yerga nisbatan tezligi (platformaning o'zi qanday harakatlanayotgani).\n\nSavolda \"Platformalar va odamlar tezligi berilgan\" deyilgan, ammo aniq sonlar keltirilmagan. Biroq, to'g'ri javob \"C\" varianti, ya'ni 0 m/s ekanligi ko'rsatilgan. Bu shuni anglatadiki, berilgan tezliklar shunday bo'lganki, ular bir-birini bekor qilgan va natijada odamning yerga nisbatan tezligi nolga teng bo'lgan.\n\nOdamning yerga nisbatan tezligi 0 m/s bo'lishi uchun yuqoridagi formuladan kelib chiqadiki:\n\n$$ \\vec{v}_{odam, yer} = 0 $$\n\nDemak:\n\n$$ 0 = \\vec{v}_{odam, platforma} + \\vec{v}_{platforma, yer} $$\n\nBu tenglamadan:\n\n$$ \\vec{v}_{odam, platforma} = - \\vec{v}_{platforma, yer} $$\n\nBu shuni anglatadiki, odam platforma ustida platformaning yerga nisbatan harakat yo'nalishiga *qarama-qarshi* yo'nalishda va *tezliklari moduli bo'yicha teng* bo'lgan holda harakat qilgan.\n\n**Misol uchun:**\nTasavvur qiling, platforma (masalan, eskalator yoki harakatlanuvchi yo'lak) yerga nisbatan o'ngga $5 \\text{ m/s}$ tezlik bilan harakatlanmoqda. Ya'ni, $\\vec{v}_{platforma, yer} = +5 \\text{ m/s}$ (o'ng yo'nalishni musbat deb olsak).\nAgar odam bu platforma ustida chapga $5 \\text{ m/s}$ tezlik bilan harakatlansa, uning platformaga nisbatan tezligi $\\vec{v}_{odam, platforma} = -5 \\text{ m/s}$ bo'ladi.\n\nBu holda, odamning yerga nisbatan tezligi:\n$$ \\vec{v}_{odam, yer} = (-5 \\text{ m/s}) + (+5 \\text{ m/s}) = 0 \\text{ m/s} $$\n\nBu vaziyatda, yerda turgan kuzatuvchi uchun odam harakatsizdek ko'rinadi. Odamning platformaga nisbatan harakati platformaning yerga nisbatan harakatini to'liq bekor qiladi.\n\nShunday qilib, savolda berilgan ma'lumotlar (garchi aniq sonlar keltirilmagan bo'lsa ham) odamning platformaga nisbatan tezligi va platformaning yerga nisbatan tezligi bir-biriga qarama-qarshi yo'nalishda va moduli bo'yicha teng bo'lgan vaziyatni nazarda tutgan. Natijada, odamning yerga nisbatan nisbiy tezligi 0 m/s ga teng bo'ladi.\n\nTo'g'ri javob: **C**",
+      "created_at": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:17:40.199Z"
+}

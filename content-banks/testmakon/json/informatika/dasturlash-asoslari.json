@@ -1,0 +1,131 @@
+{
+  "name": "Dasturlash asoslari — Informatika test savollari",
+  "about": "Dasturlash asoslari",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/dasturlash-asoslari/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "O'zgaruvchi (variable) nima?",
+      "options": [
+        "Faqat sonlarni saqlovchi konteyner",
+        "Dasturda ma'lumotni saqlash uchun ismlangan xotira joyi",
+        "Funksiya nomi",
+        "Kodning bir qismi"
+      ],
+      "correctAnswer": "Dasturda ma'lumotni saqlash uchun ismlangan xotira joyi"
+    },
+    {
+      "question": "Quyidagi ma'lumot turlaridan qaysi biri butun sonni ifodalaydi?",
+      "options": [
+        "float",
+        "string",
+        "int",
+        "bool"
+      ],
+      "correctAnswer": "int"
+    },
+    {
+      "question": "Boolean ma'lumot turi qanday qiymatlar qabul qiladi?",
+      "options": [
+        "0 dan 100 gacha",
+        "True yoki False",
+        "Faqat musbat sonlar",
+        "Harflar"
+      ],
+      "correctAnswer": "True yoki False"
+    },
+    {
+      "question": "Python da \"print('Salom')\" kodi nima qiladi?",
+      "options": [
+        "Salom so'zini o'chiradi",
+        "Salom so'zini ekranga chiqaradi",
+        "O'zgaruvchi yaratadi",
+        "Fayl saqlaydi"
+      ],
+      "correctAnswer": "Salom so'zini ekranga chiqaradi"
+    },
+    {
+      "question": "Shartli operator \"if\" nima uchun ishlatiladi?",
+      "options": [
+        "Tsikl yaratish uchun",
+        "Funksiya chaqirish uchun",
+        "Shart to'g'ri bo'lganda ma'lum kodni bajarish uchun",
+        "O'zgaruvchi e'lon qilish uchun"
+      ],
+      "correctAnswer": "Shart to'g'ri bo'lganda ma'lum kodni bajarish uchun"
+    },
+    {
+      "question": "Massiv (array) nima?",
+      "options": [
+        "Bitta qiymat saqlovchi o'zgaruvchi",
+        "Bir turdagi elementlar ketma-ket joylashgan ma'lumotlar to'plami",
+        "Faqat matnlarni saqlovchi tuzilma",
+        "Dasturlash tili nomi"
+      ],
+      "correctAnswer": "Bir turdagi elementlar ketma-ket joylashgan ma'lumotlar to'plami"
+    },
+    {
+      "question": "Funksiya (function) nima?",
+      "options": [
+        "Faqat bir marta bajariladigan kod",
+        "Nom berilgan, qayta-qayta chaqirish mumkin bo'lgan kod bloki",
+        "Shartli operator",
+        "Ma'lumot turi"
+      ],
+      "correctAnswer": "Nom berilgan, qayta-qayta chaqirish mumkin bo'lgan kod bloki"
+    },
+    {
+      "question": "Python da massivning birinchi elementining indeksi qanday?",
+      "options": [
+        "1",
+        "-1",
+        "0",
+        "2"
+      ],
+      "correctAnswer": "0"
+    },
+    {
+      "question": "\"else\" bloki qachon bajariladi?",
+      "options": [
+        "if sharti to'g'ri bo'lganda",
+        "if sharti noto'g'ri bo'lganda",
+        "Har doim bajariladi",
+        "Hech qachon bajarilmaydi"
+      ],
+      "correctAnswer": "if sharti noto'g'ri bo'lganda"
+    },
+    {
+      "question": "Python da \"for i in range(5)\" kodi necha marta takrorlanadi?",
+      "options": [
+        "4 marta",
+        "6 marta",
+        "5 marta",
+        "1 marta"
+      ],
+      "correctAnswer": "5 marta"
+    },
+    {
+      "question": "O'zgaruvchi nomida quyidagilardan qaysi biri ishlatilishi MUMKIN EMAS?",
+      "options": [
+        "Harflar (a-z)",
+        "Pastki chiziq (_)",
+        "Bo'shliq (space)",
+        "Raqamlar (son bilan boshlanmagan holda)"
+      ],
+      "correctAnswer": "Bo'shliq (space)"
+    },
+    {
+      "question": "Python da \"len([1, 2, 3, 4, 5])\" qanday natija qaytaradi?",
+      "options": [
+        "4",
+        "6",
+        "5",
+        "0"
+      ],
+      "correctAnswer": "5"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:38.396Z"
+}

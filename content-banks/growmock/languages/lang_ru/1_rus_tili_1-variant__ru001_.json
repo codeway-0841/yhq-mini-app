@@ -1,0 +1,491 @@
+{
+  "info": {
+    "id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+    "subject_id": "a41e9f1c-4f96-4d37-aefd-e2e294fa4c71",
+    "title": "Rus tili 1-variant (RU001)",
+    "description": "Variant: RU001",
+    "time_limit": 60,
+    "created_at": "2026-08-08T08:56:27.164454Z",
+    "updated_at": "2026-08-08T08:56:27.164454Z"
+  },
+  "subject": {
+    "name": "Rus tili",
+    "slug": "lang_ru",
+    "code": "ru"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "dbf04ec9-ce7f-4d3a-98e4-e20934a94380",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 1,
+      "question_text": "Я ___ студент.",
+      "options": {
+        "a": "есть",
+        "b": "–",
+        "c": "был",
+        "d": "буду"
+      },
+      "correct_option": "b",
+      "explanation": "Ushbu savol rus tilidagi \"быть\" (bo'lmoq) fe'lining hozirgi zamonda qo'llanilishi bilan bog'liq.\n\nRus tilida hozirgi zamonda \"быть\" fe'li (ya'ni, \"am\", \"is\", \"are\" ma'nosidagi fe'l) odatda tushirib qoldiriladi, ayniqsa gapning egasi ham, kesimi ham ot yoki olmosh bo'lganda. Bunday hollarda, tushirib qoldirilgan fe'l o'rniga tire (–) qo'yiladi.\n\nKeling, variantlarni ko'rib chiqamiz:\n\n*   **a) \"есть\"**: \"Есть\" so'zi \"быть\" fe'lining hozirgi zamon shakli bo'lib, \"bor\", \"mavjud\" degan ma'nolarni anglatadi. Biroq, rus tilida \"Men talabaman\" kabi oddiy tasdiq gaplarda \"Я есть студент\" deb aytilmaydi. Bu grammatik jihatdan noto'g'ri yoki juda eskirgan/falsafiy ohangda yangraydi. Masalan, \"У меня есть книга\" (Menda kitob bor) kabi gaplarda ishlatiladi, bu yerda \"есть\" mavjudlikni bildiradi.\n*   **b) \"–\" (tire)**: Bu to'g'ri javob. Rus tilida, agar gapning egasi (Я - Men) va kesimi (студент - talaba) ot yoki olmosh bilan ifodalangan bo'lsa va gap hozirgi zamonda bo'lsa, \"быть\" fe'li tushirib qoldiriladi va uning o'rniga tire (тире) qo'yiladi. Shunday qilib, \"Я – студент\" (Men talabaman) to'g'ri grammatik shakldir. Tire bu yerda \"am\" fe'lining o'rnini bosadi.\n*   **c) \"был\"**: Bu \"быть\" fe'lining o'tgan zamon shakli bo'lib, \"edi\" ma'nosini beradi. Agar \"Я был студент\" deb yozilsa, \"Men talaba edim\" degan ma'noni anglatadi, bu esa savoldagi hozirgi zamon ma'nosiga to'g'ri kelmaydi.\n*   **d) \"буду\"**: Bu \"быть\" fe'lining kelasi zamon shakli bo'lib, \"bo'laman\" ma'nosini beradi. Agar \"Я буду студент\" deb yozilsa, \"Men talaba bo'laman\" degan ma'noni anglatadi, bu ham hozirgi zamon ma'nosiga mos kelmaydi.\n\nShunday qilib, \"Я ___ студент\" gapida hozirgi zamonda \"Men talabaman\" ma'nosini ifodalash uchun \"быть\" fe'li tushirib qoldiriladi va uning o'rniga **tire (–)** qo'yiladi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "eef248ea-402e-4ea7-ba81-a87a0be5f88c",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 2,
+      "question_text": "Она ___ книгу.",
+      "options": {
+        "a": "читать",
+        "b": "читает",
+        "c": "читал",
+        "d": "читают"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol rus tilida fe'lning shaxs-son shaklini to'g'ri tanlashga qaratilgan. Keling, har bir variantni tahlil qilamiz:\n\n1.  **Savolning ma'nosi:** \"Она ___ книгу.\" (U kitob o'qiydi/o'qimoqda.) Bu yerda \"Она\" olmoshi uchinchi shaxs birlikda, ayol jinsida turibdi. Demak, fe'l ham uchinchi shaxs birlikda bo'lishi kerak.\n\n2.  **Variantlarni tahlil qilish:**\n    *   **a) читать:** Bu fe'lning noaniq shakli (infinitiv) bo'lib, \"o'qimoq\" degan ma'noni beradi. U shaxs-son bo'yicha tuslanmagan. \"Она читать книгу\" grammatik jihatdan noto'g'ri.\n    *   **b) читает:** Bu fe'l \"читать\" fe'lining hozirgi zamon, uchinchi shaxs birlik shakli. \"Она\" (u, ayol jinsi) olmoshi bilan to'liq mos keladi. \"Она читает книгу\" (U kitob o'qiydi/o'qimoqda) grammatik jihatdan to'g'ri va ma'nosi ham mos.\n    *   **c) читал:** Bu fe'l \"читать\" fe'lining o'tgan zamon, erkak jinsi, birlik shakli. \"Она\" (ayol jinsi) olmoshi bilan jinsi bo'yicha mos kelmaydi. Agar \"Она\" bo'lsa, \"читала\" bo'lishi kerak edi.\n    *   **d) читают:** Bu fe'l \"читать\" fe'lining hozirgi zamon, uchinchi shaxs ko'plik shakli. \"Она\" (birlik) olmoshi bilan soni bo'yicha mos kelmaydi. Bu shakl \"Они\" (ular) olmoshi bilan ishlatiladi.\n\n3.  **Xulosa:** \"Она\" olmoshi uchinchi shaxs birlikda bo'lganligi sababli, fe'l ham hozirgi zamon, uchinchi shaxs birlik shaklida bo'lishi kerak. Ushbu talabga faqat \"читает\" varianti javob beradi.\n\nShuning uchun, \"B\" varianti to'g'ri javobdir.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "47f36d90-2180-407c-92e6-8556625c391f",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 3,
+      "question_text": "Мы ___ в школе.",
+      "options": {
+        "a": "живём",
+        "b": "учимся",
+        "c": "работаю",
+        "d": "спишь"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "3d2d75ec-9f2a-40e4-bd02-7269f46f0532",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 4,
+      "question_text": "Сегодня ___ хорошая погода.",
+      "options": {
+        "a": "был",
+        "b": "будут",
+        "c": "–",
+        "d": "есть"
+      },
+      "correct_option": "c",
+      "explanation": "Rus tilida hozirgi zamonda \"быть\" (bo'lmoq) fe'lining uchinchi shaxs birlik shakli \"есть\" odatda tushirib qoldiriladi, ayniqsa gap holat, sifat yoki mavjudlikni ifodalaganda. Bu qoida rus tilining o'ziga xos xususiyatlaridan biridir.\n\nKeling, berilgan gapni ko'rib chiqaylik: \"Сегодня ___ хорошая погода.\" (Bugun ___ yaxshi ob-havo.)\n\n1.  **Gapning ma'nosi:** Bu gap bugungi ob-havoning holatini tasvirlaydi. \"Bugun yaxshi ob-havo\" degan ma'noni beradi.\n2.  **\"Быть\" fe'lining hozirgi zamondagi qo'llanilishi:** Rus tilida \"men talabaman\" (Я студент), \"bu kitob\" (Это книга) kabi gaplarda \"bo'lmoq\" fe'li (есть) ishlatilmaydi. Xuddi shunday, \"Ob-havo yaxshi\" (Погода хорошая) kabi gaplarda ham \"есть\" tushirib qoldiriladi. Gapning ma'nosi fe'lsiz ham to'liq tushunarli bo'ladi.\n3.  **Variantlarni tahlil qilish:**\n    *   **a) \"был\"** – Bu \"быть\" fe'lining o'tgan zamon birlik shakli (erkak jinsi uchun). \"Сегодня\" (bugun) so'zi bilan mos kelmaydi, chunki \"bugun\" hozirgi zamonni bildiradi. Agar \"kecha\" bo'lganda to'g'ri bo'lishi mumkin edi: \"Вчера была хорошая погода.\" (Kecha yaxshi ob-havo edi.)\n    *   **b) \"будут\"** – Bu \"быть\" fe'lining kelasi zamon ko'plik shakli. \"Сегодня\" (bugun) so'zi bilan mos kelmaydi va \"погода\" (ob-havo) so'zi birlikda bo'lgani uchun ham noto'g'ri.\n    *   **c) \"–\" (chiziqcha)** – Bu variant hech qanday so'z qo'yish shart emasligini bildiradi. Yuqorida aytib o'tilganidek, rus tilida hozirgi zamonda \"быть\" fe'li tushirib qoldiriladi. Shuning uchun \"Сегодня хорошая погода\" gapida hech qanday fe'lga ehtiyoj yo'q. Bu to'g'ri javob.\n    *   **d) \"есть\"** – Bu \"быть\" fe'lining hozirgi zamon birlik shakli. Garchi grammatik jihatdan \"bo'lmoq\" fe'lining hozirgi zamoni bo'lsa-da, zamonaviy rus tilida bu kabi gaplarda deyarli ishlatilmaydi. Uni ishlatish gapga eskirgan yoki juda rasmiy tus beradi, yoki mavjudlikni alohida ta'kidlash uchun ishlatiladi, bu esa bu gapning maqsadi emas.\n\n**Xulosa:** Rus tilining o'ziga xos qoidasiga ko'ra, hozirgi zamonda holatni ifodalovchi gaplarda \"быть\" fe'lining \"есть\" shakli tushirib qoldiriladi. Shuning uchun berilgan gapda hech qanday fe'lga ehtiyoj yo'q.\n\nTo'g'ri javob: **C** (hech qanday so'z qo'yilmaydi). Gap \"Сегодня хорошая погода\" shaklida bo'ladi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "0ddaf8bd-86c7-4069-a584-46f565f0b620",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 5,
+      "question_text": "У меня ___ брата.",
+      "options": {
+        "a": "два",
+        "b": "две",
+        "c": "двое",
+        "d": "второй"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "de084fd9-180f-4324-a898-ebff7a35db04",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 6,
+      "question_text": "Я живу ___ Ташкенте.",
+      "options": {
+        "a": "на",
+        "b": "в",
+        "c": "к",
+        "d": "из"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "f75a8cde-adbb-4edf-b207-56fd91c54649",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 7,
+      "question_text": "Вчера мы ___ фильм.",
+      "options": {
+        "a": "смотрим",
+        "b": "смотрели",
+        "c": "смотреть",
+        "d": "посмотрю"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol: \"Вчера мы ___ фильм.\" (Kecha biz film ___.)\n\nBu savolda gapning ma'nosi va grammatik zamoniga e'tibor berishimiz kerak.\n\n1.  **\"Вчера\" (vchera)** so'zi \"kecha\" degan ma'noni anglatadi va bu harakatning o'tmishda sodir bo'lganligini bildiradi. Demak, biz o'tmish zamondagi fe'lni tanlashimiz kerak.\n2.  **\"мы\" (my)** olmoshi \"biz\" degan ma'noni beradi. Bu ko'plikdagi shaxsni bildiradi.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) \"смотрим\" (smotrim)**: Bu fe'l \"смотреть\" (ko'rmoq, tomosha qilmoq) fe'lining hozirgi zamon, ko'plik, birinchi shaxs shakli. Ma'nosi \"biz ko'ryapmiz\" yoki \"biz ko'ramiz\" (odatda). \"Kecha\" so'zi bilan mos kelmaydi.\n*   **b) \"смотрели\" (smotreli)**: Bu fe'l \"смотреть\" fe'lining o'tgan zamon, ko'plik shakli. Ma'nosi \"biz ko'rdik\" yoki \"biz tomosha qildik\". Bu shakl \"вчера\" (kecha) so'zi va \"мы\" (biz) olmoshi bilan to'liq mos keladi.\n*   **c) \"смотреть\" (smotret')**: Bu fe'lning boshlang'ich shakli (infinitiv). Ma'nosi \"ko'rmoq\", \"tomosha qilmoq\". Gapda to'g'ridan-to'g'ri fe'l sifatida ishlatilmaydi, u tuslanishi kerak.\n*   **d) \"посмотрю\" (posmotryu)**: Bu fe'l \"посмотреть\" (ko'rib chiqmoq, bir qarab qo'ymoq) fe'lining kelasi zamon, birlik, birinchi shaxs shakli. Ma'nosi \"men ko'rib chiqaman\". Bu na zamon jihatidan (\"kecha\" emas, \"kelasi\"), na shaxs jihatidan (\"biz\" emas, \"men\") to'g'ri kelmaydi.\n\nShunday qilib, \"Вчера мы ___ фильм\" jumlasi uchun o'tgan zamon va ko'plik shaklidagi fe'l kerak. \"смотрели\" fe'li aynan shu talablarga javob beradi.\n\n**To'g'ri javob: B**\n\nJumlaning to'liq shakli: \"Вчера мы **смотрели** фильм.\" (Kecha biz film **ko'rdik**.)",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "dcefbaed-82e5-4c7f-b8c1-d64294bec227",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 8,
+      "question_text": "Это ___ машина.",
+      "options": {
+        "a": "мой",
+        "b": "моя",
+        "c": "моё",
+        "d": "мои"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "be8f4956-a2ce-42ca-80eb-87c0f71facf3",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 9,
+      "question_text": "Завтра я ___ домой.",
+      "options": {
+        "a": "ходил",
+        "b": "поеду",
+        "c": "еду вчера",
+        "d": "ездил"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol \"Завтра я ___ домой.\" bo'lib, unda bo'sh o'rinni to'g'ri fe'l bilan to'ldirish talab qilinadi. Gapda \"Завтра\" (ertaga) so'zi mavjud bo'lib, bu harakatning kelasi zamonda sodir bo'lishini bildiradi. Shuningdek, \"я\" (men) olmoshi birinchi shaxs birlikni ifodalaydi.\n\nKeling, variantlarni ko'rib chiqamiz:\n\n*   **a) ходил**\n    *   Bu \"ходить\" (yurmoq, bormoq) fe'lining o'tgan zamon, tugallanmagan nisbat shakli bo'lib, \"men bordim/yurdim\" degan ma'noni anglatadi.\n    *   \"Завтра\" (ertaga) so'zi bilan mos kelmaydi, chunki u kelasi zamonni bildiradi.\n\n*   **b) поеду**\n    *   Bu \"поехать\" (bormoq, jo'namoq, haydamoq) fe'lining kelasi zamon, tugallangan nisbat shakli bo'lib, \"men boraman/jo'nayman\" degan ma'noni anglatadi.\n    *   \"Завтра\" (ertaga) so'zi bilan to'liq mos keladi va \"я\" (men) olmoshi bilan ham shaxs-son jihatdan to'g'ri shakllangan.\n    *   \"Поехать\" fe'li bir martalik, aniq bir yo'nalishdagi harakatni bildiradi, bu \"uyga borish\" kontekstiga juda mos keladi.\n\n*   **c) еду вчера**\n    *   \"еду\" \"ехать\" (bormoq, haydamoq) fe'lining hozirgi zamon, tugallanmagan nisbat shakli bo'lib, \"men boryapman/haydayapman\" degan ma'noni anglatadi.\n    *   \"вчера\" (kecha) esa o'tgan zamonni bildiruvchi ravish.\n    *   Hozirgi zamon fe'lini o'tgan zamon ravishi bilan ishlatish grammatik va mantiqiy xato hisoblanadi.\n\n*   **d) ездил**\n    *   Bu \"ездить\" (bormoq, haydamoq, qatnamoq) fe'lining o'tgan zamon, tugallanmagan nisbat shakli bo'lib, \"men bordim/haydadim\" degan ma'noni anglatadi. Bu fe'l odatda bir necha marta takrorlangan harakatni yoki borib kelishni bildiradi.\n    *   \"Завтра\" (ertaga) so'zi bilan mos kelmaydi, chunki u kelasi zamonni bildiradi.\n\nYuqoridagi tahlillarga ko'ra, \"Завтра\" (ertaga) so'zi kelasi zamonni talab qiladi va \"поеду\" fe'li kelasi zamon, birinchi shaxs birlik shaklida bo'lib, gapning ma'nosiga va grammatik qoidalariga to'liq mos keladi.\n\nShuning uchun, to'g'ri javob **B) поеду** variantidir.\nTo'liq gap: \"Завтра я **поеду** домой.\" (Ertaga men uyga boraman.)",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "f8408c57-6344-4124-b743-5ee0bc96556e",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 10,
+      "question_text": "Где ___ книга?",
+      "options": {
+        "a": "ты",
+        "b": "моя",
+        "c": "идти",
+        "d": "большой"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "333b8398-8f0d-4871-8ac3-7b5c5d9e87ae",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 11,
+      "question_text": "Если бы у меня было время, я ___ тебе.",
+      "options": {
+        "a": "помогаю",
+        "b": "помог",
+        "c": "помог бы",
+        "d": "помогу"
+      },
+      "correct_option": "c",
+      "explanation": "Bu savol rus tilidagi shart mayli (сослагательное наклонение) va \"если бы\" (agar... bo'lganda) konstruksiyasiga oid.\n\nKeling, har bir variantni ko'rib chiqamiz:\n\n1.  **\"Если бы у меня было время\"** qismi shart maylini ifodalaydi. Bu yerda \"было\" fe'li o'tgan zamonda turibdi va \"бы\" yuklamasi bilan birgalikda amalga oshmagan yoki xayoliy shartni bildiradi (\"agar menda vaqt bo'lganda edi\").\n\n2.  **Shart mayli (сослагательное наклонение)** rus tilida quyidagicha yasaladi: fe'lning o'tgan zamon shakliga \"бы\" yuklamasi qo'shiladi. Bu harakatning shartga bog'liq ravishda amalga oshirilishi mumkinligini yoki amalga oshirilgan bo'lishini bildiradi.\n\nEndi variantlarni tahlil qilamiz:\n\n*   **a) \"помогаю\"**: Bu hozirgi zamon fe'li. \"Если бы...\" konstruksiyasi bilan hozirgi zamon fe'li ishlatilmaydi, chunki u xayoliy yoki amalga oshmagan shartni bildiradi, hozirgi aniq harakatni emas. Shuning uchun bu variant noto'g'ri.\n*   **b) \"помог\"**: Bu o'tgan zamon fe'li. \"Я помог тебе\" jumlasi \"Men senga yordam berdim\" degan ma'noni anglatadi, ya'ni bu amalga oshgan fakt. Lekin bizga xayoliy shart natijasida yuzaga keladigan harakat kerak. \"Бы\" yuklamasisiz bu shart maylini ifodalamaydi. Shuning uchun bu variant noto'g'ri.\n*   **c) \"помог бы\"**: Bu o'tgan zamon fe'li (\"помог\") va \"бы\" yuklamasining birikmasi. Aynan shu shakl rus tilida shart maylini hosil qiladi va \"agar shart bajarilganda edi, men shunday qilgan bo'lardim\" degan ma'noni beradi. \"Если бы у меня было время, я помог бы тебе\" jumlasi \"Agar menda vaqt bo'lganda edi, men senga yordam bergan bo'lardim\" degan ma'noni anglatadi. Bu xayoliy shartga mos keladigan to'g'ri javob.\n*   **d) \"помогу\"**: Bu kelasi zamon fe'li. \"Если бы...\" konstruksiyasi bilan kelasi zamon fe'li ishlatilmaydi. Bu variant ham noto'g'ri.\n\n**Xulosa:** \"Если бы\" bilan boshlangan shartli gaplarda, asosiy qismdagi fe'l o'tgan zamonda bo'lishi va \"бы\" yuklamasi bilan birga kelishi shart. Faqat \"помог бы\" varianti bu qoidaga to'liq mos keladi.",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "e14c7594-1881-40f8-8da9-906784013a65",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 12,
+      "question_text": "Когда он пришёл, мы уже ___.",
+      "options": {
+        "a": "едим",
+        "b": "поужинали",
+        "c": "ужинаем завтра",
+        "d": "будем есть"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "8e8a7ff3-e3c9-44a9-850d-9d96768499d5",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 13,
+      "question_text": "Я привык ___ рано вставать.",
+      "options": {
+        "a": "к",
+        "b": "на",
+        "c": "в",
+        "d": "из"
+      },
+      "correct_option": "a",
+      "explanation": "Berilgan savolda \"Я привык ___ рано вставать\" jumlasida to'g'ri predlogni (ko'makchini) tanlash talab qilinmoqda.\n\n1.  **Fe'lning ma'nosi va boshqaruvi:** Gapdagi asosiy fe'l \"привык\" bo'lib, bu \"привыкнуть\" (o'rganib qolmoq, ko'nikmoq) fe'lining o'tgan zamon shaklidir. Rus tilida \"привыкнуть\" fe'li har doim \"к\" predlogi bilan va undan keyin keladigan ot yoki olmoshni **Дательный падеж** (jo'nalish kelishigi) da talab qiladi.\n\n2.  **Qoidaning qo'llanilishi:**\n    *   \"Привыкнуть к чему?\" (Nimaga o'rganib qolmoq?)\n    *   Misollar:\n        *   Привыкнуть **к** холоду (sovukqa o'rganmoq)\n        *   Привыкнуть **к** работе (ishga o'rganmoq)\n        *   Привыкнуть **к** новому месту (yangi joyga o'rganmoq)\n\n3.  **Infinitive (harakat nomi) bilan ishlatilishi:** Agar \"привыкнуть\" fe'lidan keyin harakat nomi (infinitive) kelsa, u holda ham \"к\" predlogi ishlatiladi. Bu yerda \"рано вставать\" (ertalab turish) harakat nomi vazifasini bajarmoqda. Shuning uchun \"Я привык **к** рано вставать\" shaklida bo'ladi.\n\n4.  **Variantlarni tahlil qilish:**\n    *   **a) \"к\"**: Yuqoridagi qoidalarga ko'ra, bu to'g'ri javob. \"Привыкнуть к чему-либо\" (biror narsaga o'rganib qolmoq) barqaror ibora hisoblanadi.\n    *   **b) \"на\"**: Bu predlog odatda \"ustida\", \"ga\" (yo'nalish) ma'nolarida ishlatiladi va \"привыкнуть\" fe'li bilan ishlatilmaydi.\n    *   **c) \"в\"**: Bu predlog odatda \"ichida\", \"ga\" (yo'nalish) ma'nolarida ishlatiladi va \"привыкнуть\" fe'li bilan ishlatilmaydi.\n    *   **d) \"из\"**: Bu predlog odatda \"dan\" (chiqish, kelib chiqish) ma'nolarida ishlatiladi va \"привыкнуть\" fe'li bilan ishlatilmaydi.\n\nShunday qilib, \"привыкнуть\" fe'lining boshqaruvi talabiga ko'ra, to'g'ri predlog \"к\" bo'ladi.\n\n**To'g'ri javob: A**",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "a22c594f-54b4-4d7e-9112-40ed5a2500cc",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 14,
+      "question_text": "Он сказал, что ___ завтра.",
+      "options": {
+        "a": "приходит",
+        "b": "придёт",
+        "c": "пришёл вчера",
+        "d": "приходить"
+      },
+      "correct_option": "b",
+      "explanation": "Ushbu savolda to'g'ri javobni tanlash uchun gapning ma'nosiga va undagi vaqt ko'rsatkichiga e'tibor berishimiz kerak.\n\nBerilgan gap: \"Он сказал, что ___ завтра.\" (U aytdiki, u ___ ertaga.)\n\n1.  **Vaqt ko'rsatkichi:** Gapda \"завтра\" (ertaga) so'zi bor. Bu so'z harakatning kelasi zamonda sodir bo'lishini bildiradi. Demak, bo'sh joyga kelasi zamondagi fe'l qo'yilishi kerak.\n\n2.  **Variantlarni tahlil qilamiz:**\n\n    *   **a) приходит:** Bu fe'l hozirgi zamonda (nesovershennyy vid, 3-shaxs birlik) bo'lib, \"keladi\" (odatda keladi, hozir kelyapti) degan ma'noni beradi. \"Завтра\" (ertaga) so'zi bilan birgalikda ishlatilganda, odatiy, takrorlanuvchi harakatni bildirishi mumkin, lekin bu yerda aniq bir kelish harakati nazarda tutilgan. Shuning uchun bu variant mos kelmaydi.\n\n    *   **b) придёт:** Bu fe'l kelasi zamonda (sovershennyy vid, 3-shaxs birlik) bo'lib, \"keladi\" (kelib bo'ladi, yetib keladi) degan ma'noni beradi. Bu fe'l \"завтра\" (ertaga) so'zi bilan mukammal darajada mos keladi, chunki u kelasi zamonda sodir bo'ladigan yakunlangan, bir martalik harakatni ifodalaydi.\n\n    *   **c) пришёл вчера:** Bu fe'l o'tgan zamonda (sovershennyy vid, 3-shaxs birlik) bo'lib, \"keldi\" degan ma'noni beradi. Qolaversa, \"вчера\" (kecha) so'zi \"завтра\" (ertaga) so'ziga zid keladi. Shuning uchun bu variant mutlaqo noto'g'ri.\n\n    *   **d) приходить:** Bu fe'lning noaniq shakli (infinitive) bo'lib, \"kelmoq\" degan ma'noni beradi. Gapda fe'lning tuslangan shakli talab qilinadi, noaniq shakli emas. Shuning uchun bu variant ham noto'g'ri.\n\n3.  **Xulosa:** \"Завтра\" (ertaga) so'zi kelasi zamonni talab qiladi va \"придёт\" fe'li kelasi zamonda bo'lib, harakatning yakunlanganligini (sovershennyy vid) bildiradi, bu esa aniq bir voqea uchun to'g'ri tanlovdir.\n\nShuning uchun, \"Он сказал, что **придёт** завтра\" (U aytdiki, u ertaga keladi) gapida \"придёт\" fe'li to'g'ri javobdir.",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "3804c244-9b68-4621-92a6-8b96e2a32e0d",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 15,
+      "question_text": "Мы долго ждали, ___ автобус не приехал.",
+      "options": {
+        "a": "потому что",
+        "b": "но",
+        "c": "если",
+        "d": "когда"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolda ikki qismdan iborat qo‘shma gap berilgan: \"Мы долго ждали\" (Biz uzoq kutdik) va \"автобус не приехал\" (avtobus kelmadi). Bu ikki qism o‘rtasidagi munosabatni ifodalovchi bog‘lovchini topishimiz kerak.\n\nKeling, variantlarni ko‘rib chiqamiz:\n\n*   **a) потому что (chunki):** Bu bog‘lovchi sabab-oqibat munosabatini bildiradi. Agar biz uni qo‘ysak, \"Biz uzoq kutdik, chunki avtobus kelmadi\" ma’nosini beradi. Bu mantiqan noto‘g‘ri, chunki avtobusning kelmaganligi kutishning sababi emas, balki kutishning natijasi yoki kutilmagan holatidir.\n*   **b) но (lekin, ammo):** Bu bog‘lovchi zidlik, qarama-qarshilik yoki kutilmagan natijani ifodalaydi. \"Biz uzoq kutdik, **lekin** avtobus kelmadi\" jumlasi to‘g‘ri ma’no beradi. Ya’ni, kutish harakatiga qaramay, kutilgan natija (avtobusning kelishi) ro‘y bermadi. Bu ikki qism o‘rtasidagi zidlikni aniq ko‘rsatadi.\n*   **c) если (agar):** Bu bog‘lovchi shart munosabatini bildiradi. \"Biz uzoq kutdik, agar avtobus kelmadi\" jumlasi mantiqiy ma’noga ega emas. Bu yerda hech qanday shart yo‘q.\n*   **d) когда (qachonki, -ganda):** Bu bog‘lovchi vaqt munosabatini bildiradi. \"Biz uzoq kutdik, qachonki avtobus kelmadi\" jumlasi ham mantiqiy emas. Avtobusning kelmaganligi kutish vaqti bilan bog‘liq emas, balki kutishga zid bo‘lgan natijadir.\n\nShunday qilib, \"Мы долго ждали, **но** автобус не приехал\" jumlasi \"Biz uzoq kutdik, **lekin** avtobus kelmadi\" degan ma’noni beradi va bu ikki qism o‘rtasidagi zidlikni eng to‘g‘ri ifodalaydi. \"Но\" bog‘lovchisi kutish harakatiga qaramay, kutilgan natijaning ro‘y bermaganligini, ya’ni kutilmagan yoki qarama-qarshi holatni ko‘rsatadi.\n\n**To‘g‘ri javob: B**",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "e4f0a000-37eb-4b5f-8212-80ede1ceaebe",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 16,
+      "question_text": "Эта задача намного ___ предыдущей.",
+      "options": {
+        "a": "сложный",
+        "b": "сложнее",
+        "c": "сложно",
+        "d": "сложность"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolda ikki narsa (\"эта задача\" - bu vazifa va \"предыдущая\" - avvalgisi) o'rtasidagi taqqoslash ifodalangan. Bunday hollarda sifatning qiyosiy darajasi (сравнительная степень) ishlatiladi.\n\n1.  **Savol tahlili:** \"Эта задача намного ___ предыдущей.\"\n    *   \"Эта задача\" (bu vazifa) va \"предыдущей\" (avvalgisidan) o'rtasida taqqoslash mavjud.\n    *   \"Намного\" so'zi taqqoslash darajasini kuchaytiradi (\"ancha\", \"ko'p\").\n    *   Bo'sh joyga \"сложный\" (murakkab) sifatining qiyosiy darajasi qo'yilishi kerak.\n\n2.  **Variantlarni ko'rib chiqish:**\n    *   **a) сложный** – Bu sifatning oddiy shakli (положительная степень). Taqqoslash uchun mos emas. Masalan: \"Эта задача сложная.\" (Bu vazifa murakkab.)\n    *   **b) сложнее** – Bu \"сложный\" sifatining qiyosiy darajasi. Ma'nosi \"murakkabroq\". Aynan taqqoslash uchun ishlatiladi. Masalan: \"Эта задача сложнее предыдущей.\" (Bu vazifa avvalgisidan murakkabroq.) Bu bizning savolimizga mos keladi.\n    *   **c) сложно** – Bu sifatning qisqa shakli (краткое прилагательное) yoki ravish (наречие) bo'lishi mumkin. Ko'pincha holatni ifodalaydi. Masalan: \"Мне сложно решить эту задачу.\" (Bu vazifani yechish men uchun qiyin.) Yoki \"Это сложно.\" (Bu qiyin.) Taqqoslash uchun to'g'ri shakl emas.\n    *   **d) сложность** – Bu ot (существительное) bo'lib, \"murakkablik\" degan ma'noni bildiradi. Gapda sifat o'rniga ot ishlatilmaydi.\n\n3.  **Nima uchun \"B\" to'g'ri?**\n    Gapda \"Эта задача\" (bu vazifa) va \"предыдущей\" (avvalgisidan) o'rtasida \"murakkablik\" darajasini solishtirish talab qilinmoqda. Rus tilida sifatlarning qiyosiy darajasi odatda \"-ее\", \"-е\", \"-ше\" qo'shimchalari bilan yasaladi (masalan, \"красивый\" -> \"красивее\", \"молодой\" -> \"моложе\", \"далекий\" -> \"дальше\"). \"Сложный\" sifatining qiyosiy darajasi \"сложнее\" shaklida bo'ladi. Bu shakl gapning ma'nosini to'g'ri ifodalaydi va grammatik jihatdan to'g'ri keladi.\n\nShunday qilib, \"Эта задача намного **сложнее** предыдущей\" jumlasi \"Bu vazifa avvalgisidan ancha murakkabroq\" degan ma'noni beradi va grammatik jihatdan to'g'ri tuzilgan.",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "e8412b32-433d-431f-b9d0-479220cb90b6",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 17,
+      "question_text": "Я не уверен, что он ___ сегодня.",
+      "options": {
+        "a": "приходил",
+        "b": "придёт",
+        "c": "приходит вчера",
+        "d": "пришедший"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "0f9ea747-1b78-4dbb-8516-64dd214d5b07",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 18,
+      "question_text": "Какое слово является синонимом слова «смелый»?",
+      "options": {
+        "a": "трусливый",
+        "b": "храбрый",
+        "c": "ленивый",
+        "d": "тихий"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolda \"смелый\" so'zining sinonimini topish talab qilingan. Keling, har bir variantni ko'rib chiqamiz:\n\n1.  **\"Смелый\" so'zining ma'nosi:** Bu so'z \"qo'rqmas\", \"jasur\", \"mard\" degan ma'nolarni anglatadi. Xavf-xatardan qo'rqmaydigan, qat'iyatli shaxsni tasvirlash uchun ishlatiladi.\n\n2.  **Variantlarni tahlil qilish:**\n    *   **a) \"трусливый\"** – Bu \"qo'rqoq\", \"jur'atsiz\" degan ma'noni beradi. Bu \"смелый\" so'zining antonimi (qarama-qarshi ma'noli so'z) hisoblanadi. Shuning uchun bu to'g'ri javob emas.\n    *   **b) \"храбрый\"** – Bu \"jasur\", \"mard\", \"botir\" degan ma'nolarni anglatadi. Bu so'z \"смелый\" so'zi bilan ma'nodosh bo'lib, ikkalasi ham xavf-xatar oldida qo'rqmaslikni, qat'iyatni ifodalaydi.\n    *   **c) \"ленивый\"** – Bu \"dangasa\", \"yalqov\" degan ma'noni beradi. Bu so'z insonning mehnatga bo'lgan munosabatini bildiradi va \"смелый\" so'zining ma'nosiga aloqador emas. Shuning uchun bu to'g'ri javob emas.\n    *   **d) \"тихий\"** – Bu \"jim\", \"sokin\", \"past ovozli\" degan ma'nolarni anglatadi. Bu so'z tovush darajasi yoki xarakterning xotirjamligini bildiradi va \"смелый\" so'zining ma'nosiga aloqador emas. Shuning uchun bu to'g'ri javob emas.\n\n3.  **Xulosa:** \"Смелый\" va \"храбрый\" so'zlari bir-biriga ma'nodosh bo'lib, ikkalasi ham \"jasur\", \"mard\" degan umumiy ma'noni ifodalaydi. Shuning uchun \"храбрый\" so'zi \"смелый\" so'zining to'g'ri sinonimi hisoblanadi.\n\n**To'g'ri javob: B**",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "26e5a3a7-5c60-4199-9f5c-296bc8648cba",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 19,
+      "question_text": "Он интересуется ___ языками.",
+      "options": {
+        "a": "изучать",
+        "b": "иностранными",
+        "c": "иностранный",
+        "d": "иностранного"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "425255b5-03e7-48d1-8a65-35655ad0d5a4",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 20,
+      "question_text": "После работы я обычно ___ домой.",
+      "options": {
+        "a": "прихожу",
+        "b": "возвращаюсь",
+        "c": "возвращал",
+        "d": "вернусь вчера"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolda ishdan keyin odatda uyga qaytish harakati ifodalanishi kerak. Keling, har bir variantni ko'rib chiqaylik:\n\n*   **a) прихожу (prihozhu)**: Bu \"приходить\" (kelmoq, yetib kelmoq) fe'lining hozirgi zamon shakli. Garchi \"uyga kelmoq\" ma'nosida ishlatilishi mumkin bo'lsa-da, \"возвращаться\" (qaytmoq) fe'li ishdan keyin o'z uyiga qaytish ma'nosini aniqroq va tabiiyroq ifodalaydi. \"Приходить\" ko'proq biror joyga yangi kelish yoki shunchaki kelish harakatini bildiradi, qaytish ma'nosini esa kuchli bermaydi.\n\n*   **b) возвращаюсь (vozvrashchayus')**: Bu \"возвращаться\" (qaytmoq) fe'lining hozirgi zamon, tugallanmagan tur (несовершенный вид) shakli. \"После работы\" (ishdan keyin) va \"домой\" (uyga) so'zlari bilan birgalikda bu fe'l juda mos keladi, chunki u biror joydan ketib, yana o'sha joyga qaytish ma'nosini beradi. \"Обычно\" (odatda) so'zi odatiy, takrorlanuvchi harakatni bildiradi, buning uchun esa hozirgi zamon, tugallanmagan turdagi fe'l ishlatiladi. Bu variant grammatik va ma'noviy jihatdan eng to'g'ri keladi.\n\n*   **c) возвращал (vozvrashchal)**: Bu \"возвращать\" (qaytarmoq - biror narsani yoki kimnidir) fe'lining o'tgan zamon, tugallanmagan tur shakli. Birinchidan, bu fe'l o'timli (переходный) bo'lib, to'g'ridan-to'g'ri to'ldiruvchi talab qiladi (masalan, \"Я возвращал книгу\" - Men kitobni qaytaryapgan edim). Gapda esa sub'ektning o'zi qaytishi nazarda tutilgan, ya'ni qaytish harakati sub'ektning o'ziga qaratilgan (возвратный глагол - возвращаться). Ikkinchidan, \"обычно\" (odatda) so'zi hozirgi zamonni talab qiladi, bu yerda esa o'tgan zamon berilgan. Shuning uchun bu variant noto'g'ri.\n\n*   **d) вернусь вчера (vernus' vchera)**: Bu variant ikki sababga ko'ra noto'g'ri. \"Вернусь\" fe'li \"вернуться\" (qaytmoq) fe'lining kelasi zamon, tugallangan tur (совершенный вид) shakli bo'lib, \"men qaytaman\" degan ma'noni beradi. \"Вчера\" so'zi esa \"kecha\" degan ma'noni anglatadi. Kelasi zamon fe'li bilan o'tgan zamonni bildiruvchi \"вчера\" so'zini birga ishlatib bo'lmaydi (\"men kecha qaytaman\" mantiqsiz). Shuningdek, \"обычно\" (odatda) so'zi odatiy harakatni bildiradi, bu esa hozirgi zamonni talab qiladi.\n\n**Xulosa:**\n\"После работы я обычно ___ домой\" jumlasi ishdan keyin uyga odatiy qaytish harakatini ifodalaydi. \"Возвращаюсь\" fe'li \"qaytmoq\" ma'nosini beradi, hozirgi zamonda va odatiy harakatlar uchun ishlatiladigan tugallanmagan turda turibdi. Bu fe'l \"домой\" (uyga) so'zi bilan birgalikda eng tabiiy va grammatik jihatdan to'g'ri ma'noni beradi. Shuning uchun **B** varianti to'g'ri javobdir.",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "c114598a-4436-4202-8cd7-9f61adc950a5",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 21,
+      "question_text": "Какое предложение является безличным?",
+      "options": {
+        "a": "Я читаю книгу.",
+        "b": "Мы гуляем.",
+        "c": "Темнеет.",
+        "d": "Они работают."
+      },
+      "correct_option": "c",
+      "explanation": "Rus tilida \"безличное предложение\" (shaxssiz gap) deb, egasi bo'lmagan yoki egasi aniq bir shaxsni ifodalamaydigan gaplarga aytiladi. Bunday gaplarda harakat yoki holat o'z-o'zidan sodir bo'layotganini bildiradi va odatda fe'l uchinchi shaxs birlikda (ko'pincha o'tgan zamonda o'rta jinsda) turadi.\n\nKeling, berilgan variantlarni ko'rib chiqamiz:\n\n*   **a) \"Я читаю книгу.\"** Bu gapda \"Я\" (men) ega, \"читаю\" (o'qiyapman) kesim. Ega aniq ko'rsatilgan, shuning uchun bu shaxsli gap.\n*   **b) \"Мы гуляем.\"** Bu gapda \"Мы\" (biz) ega, \"гуляем\" (sayr qilyapmiz) kesim. Ega aniq ko'rsatilgan, shuning uchun bu shaxsli gap.\n*   **c) \"Темнеет.\"** Bu gap \"Qorong'u tushyapti\" yoki \"Qoraymoqda\" degan ma'noni beradi. Bu yerda harakatni bajaruvchi aniq bir ega yo'q. \"Темнеет\" fe'li o'zi harakatni ifodalaydi, lekin kim yoki nima qorayotgani emas, balki holatning o'zi muhim. Bu fe'l ko'pincha shaxssiz gaplarda ishlatiladi. Shuning uchun bu shaxssiz gapdir.\n*   **d) \"Они работают.\"** Bu gapda \"Они\" (ular) ega, \"работают\" (ishlayaptilar) kesim. Ega aniq ko'rsatilgan, shuning uchun bu shaxsli gap.\n\nXulosa qilib aytganda, \"Темнеет\" gapida harakatni bajaruvchi aniq bir ega mavjud emas, harakatning o'zi (qorong'u tushishi) ifodalangan. Shuning uchun \"C\" varianti shaxssiz gap hisoblanadi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "d957e7f9-a2b7-4c82-9d96-31552c68161b",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 22,
+      "question_text": "Выберите предложение без речевой ошибки.",
+      "options": {
+        "a": "Благодаря дождя...",
+        "b": "Благодаря дождю урожай вырос.",
+        "c": "Благодаря дождь...",
+        "d": "Благодаря дождём..."
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolda nutqiy xatosiz jumlani topish talab qilingan. Bu turdagi savollar ko'pincha rus tilidagi predloglar (ko'makchilar) va ulardan keyin keladigan otlarning kelishiklarini to'g'ri ishlatishga qaratilgan.\n\nKeling, har bir variantni ko'rib chiqamiz:\n\n1.  **\"Благодаря\" predlogining ishlatilishi:**\n    \"Благодаря\" (tufayli, sababli) predlogi har doim o'zidan keyin kelgan otni **Дательный падеж** (jo'nalish kelishigi)da talab qiladi. Bu qoida rus tilida qat'iy amal qiladi.\n\n2.  **\"Дождь\" (yomg'ir) otining kelishiklari:**\n    \"Дождь\" so'zi erkak jinsiga mansub ot bo'lib, uning Дательный падеж shakli **\"дождю\"** bo'ladi.\n    *   Именительный падеж (bosh kelishik): дождь\n    *   Родительный падеж (qaratqich kelishigi): дождя\n    *   Дательный падеж (jo'nalish kelishigi): дождю\n    *   Винительный падеж (tushum kelishigi): дождь\n    *   Творительный падеж (vosita kelishigi): дождём\n    *   Предложный падеж (o'rin-payt kelishigi): о дожде\n\n3.  **Variantlarni tahlil qilish:**\n\n    *   **a) \"Благодаря дождя...\"**: Bu yerda \"дождя\" so'zi Родительный падежда turibdi. \"Благодаря\" predlogi esa Дательный падеjni talab qilgani uchun bu variant xato.\n    *   **b) \"Благодаря дождю урожай вырос.\"**: Bu yerda \"дождю\" so'zi Дательный падежда turibdi, bu \"благодаря\" predlogining talabiga to'liq mos keladi. Shuning uchun bu jumla grammatik jihatdan to'g'ri.\n    *   **c) \"Благодаря дождь...\"**: Bu yerda \"дождь\" so'zi Именительный yoki Винительный падежда turibdi. Bu ham \"благодаря\" predlogining talabiga zid, shuning uchun xato.\n    *   **d) \"Благодаря дождём...\"**: Bu yerda \"дождём\" so'zi Творительный падежда turibdi. Bu ham \"благодаря\" predlogining talabiga zid, shuning uchun xato.\n\n**Xulosa:**\nFaqatgina **\"b\"** varianti \"Благодаря дождю урожай вырос\" jumlasi rus tilining grammatik qoidalariga to'liq mos keladi, chunki \"благодаря\" predlogidan keyin kelgan \"дождь\" oti to'g'ri kelishikda (Дательный падеж - дождю) ishlatilgan.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "44786d4c-b623-4b25-89b1-91a962f4db80",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 23,
+      "question_text": "Что означает выражение «спустя рукава»?",
+      "options": {
+        "a": "Быстро",
+        "b": "Медленно",
+        "c": "Небрежно",
+        "d": "Радостно"
+      },
+      "correct_option": "c",
+      "explanation": "\"Спустя рукава\" iborasi rus tilidagi frazeologizm bo'lib, biror ishni loqaydlik bilan, e'tiborsiz, pala-partish bajarish ma'nosini anglatadi.\n\nBu iboraning kelib chiqishi qadimiy davrlarga borib taqaladi. Ilgari odamlar ishlayotganda, ayniqsa jismoniy mehnatda, yenglarini shimarib olishgan. Yenglar shimarilgan bo'lsa, ishga jiddiy kirishilgani, harakatlarga hech narsa xalaqit bermasligi va ishga butun e'tibor qaratilgani anglashilgan. Aksincha, agar kishi yenglarini shimarib olmasdan, ya'ni \"спустя рукава\" (yenglarini tushirgan holda) ishlasa, bu uning ishga beparvo yondashayotganini, shoshilmayotganini, ishga unchalik ahamiyat bermayotganini yoki shunchaki ishni yuzaki bajarayotganini bildirgan. Bunday holatda ish sifatsiz, e'tiborsiz bajarilgan.\n\nShu sababli, \"спустя рукава\" iborasi \"небрежно\" (e'tiborsiz, pala-partish, loqayd) ma'nosini beradi.\n\nVariantlarni ko'rib chiqamiz:\n*   **a) Быстро (Tez)** – Bu ibora ishning tezligini emas, balki sifatini va unga bo'lgan munosabatni ifodalaydi. Shuning uchun noto'g'ri.\n*   **b) Медленно (Sekin)** – Garchi e'tiborsiz bajarilgan ish ba'zan sekin bo'lishi mumkin bo'lsa-da, iboraning asosiy ma'nosi tezlikka emas, balki sifatga va munosabatga qaratilgan. Shuning uchun noto'g'ri.\n*   **c) Небрежно (E'tiborsiz, pala-partish)** – Bu variant iboraning ma'nosini to'liq aks ettiradi. Ishga loqaydlik bilan, e'tiborsiz yondashish, uni pala-partish bajarish aynan \"небрежно\" so'zi bilan ifodalanadi. Bu to'g'ri javob.\n*   **d) Радостно (Xursandchilik bilan)** – Iboraning hissiyotlar bilan aloqasi yo'q. Shuning uchun noto'g'ri.\n\nDemak, \"спустя рукава\" iborasi biror ishni e'tiborsiz, loqayd va pala-partish bajarishni anglatadi, bu esa \"небрежно\" so'zining ma'nosiga to'liq mos keladi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "64e98156-a4df-4d93-8620-41609d6979f8",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 24,
+      "question_text": "Укажите предложение с причастным оборотом.",
+      "options": {
+        "a": "Я читаю книгу.",
+        "b": "Мальчик, читающий книгу, мой брат.",
+        "c": "Мы пошли домой.",
+        "d": "Они играют."
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "6fc3cc25-d201-498e-9918-8c8f6956d537",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 25,
+      "question_text": "Какое слово является антонимом слова «увеличить»?",
+      "options": {
+        "a": "Добавить",
+        "b": "Поднять",
+        "c": "Уменьшить",
+        "d": "Развить"
+      },
+      "correct_option": "c",
+      "explanation": "Savolda \"увеличить\" so'zining antonimini topish so'ralgan. Keling, har bir variantni ko'rib chiqamiz:\n\n1.  **\"Увеличить\"** so'zi \"kattalashtirmoq\", \"ko'paytirmoq\", \"oshirmoq\" degan ma'nolarni anglatadi. Ya'ni, biror narsaning hajmini, miqdorini, darajasini yoki intensivligini oshirish.\n\n2.  **Variantlarni tahlil qilamiz:**\n    *   **a) \"Добавить\"** (qo'shmoq) – Bu so'z biror narsaga yana biror narsa qo'shish orqali miqdorni oshirishni bildiradi. Bu \"увеличить\" so'ziga ma'no jihatdan yaqin, hatto ba'zi hollarda sinonim bo'lishi mumkin, lekin uning to'g'ridan-to'g'ri antonimi emas.\n    *   **b) \"Поднять\"** (ko'tarmoq) – Bu so'z biror narsani pastdan yuqoriga ko'tarish yoki darajasini oshirish (masalan, narxni ko'tarish) ma'nosini beradi. Bu ham \"увеличить\" bilan bog'liq bo'lishi mumkin, lekin uning asosiy ma'nosi boshqa va to'g'ridan-to'g'ri antonimi emas.\n    *   **c) \"Уменьшить\"** (kamaytirmoq, kichraytirmoq) – Bu so'z \"увеличить\" so'zining to'g'ridan-to'g'ri qarama-qarshi ma'nosini anglatadi. Ya'ni, biror narsaning hajmini, miqdorini, darajasini yoki intensivligini kamaytirish.\n    *   **d) \"Развить\"** (rivojlantirmoq) – Bu so'z biror narsani takomillashtirish, kengaytirish, o'stirish ma'nosini beradi. Bu ham ko'pincha miqdor yoki sifat jihatdan oshishni anglatadi, shuning uchun \"увеличить\" so'ziga antonim emas, balki ma'nodosh yoki yaqin ma'noli so'z hisoblanadi.\n\n3.  **Xulosa:** \"Увеличить\" (kattalashtirmoq, ko'paytirmoq) so'zining to'g'ridan-to'g'ri antonimi \"Уменьшить\" (kamaytirmoq, kichraytirmoq) so'zidir, chunki ular bir-biriga qarama-qarshi harakatni ifodalaydi.\n\nShuning uchun, to'g'ri javob **C) \"Уменьшить\"** variantidir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "b0fbaee6-bc44-4997-8403-210186941e09",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 26,
+      "question_text": "Выберите правильный вариант. «Несмотря ___ дождь, мы пошли гулять».",
+      "options": {
+        "a": "к",
+        "b": "на",
+        "c": "на",
+        "d": "из"
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savol rus tilidagi predloglarning to'g'ri qo'llanilishini tekshirishga qaratilgan. Berilgan gapda \"Несмотря ___ дождь, мы пошли гулять\" iborasini to'g'ri to'ldirish talab qilinadi.\n\n1.  **\"Несмотря на\" iborasining ma'nosi va tuzilishi:**\n    Rus tilida \"несмотря на\" (несмотря + на + tushum kelishigi) barqaror predlogli birikma bo'lib, \"ga qaramay\", \"ga qaramasdan\", \"zid ravishda\" degan ma'nolarni bildiradi. Bu ibora biror holatga yoki sharoitga zid ravishda sodir bo'lgan harakatni ifodalash uchun ishlatiladi.\n\n2.  **Grammatik qoida:**\n    \"Несмотря\" deesprichastiy (gerund) bo'lib, u \"на\" predlogi bilan birga kelganda, undan keyin keladigan ot (существительное) har doim **tushum kelishigida (винительный падеж)** bo'lishi shart.\n    Misol: \"Несмотря на трудности\" (qiyinchiliklarga qaramay), \"Несмотря на усталость\" (charchoqqa qaramay).\n\n3.  **Berilgan gapni tahlil qilish:**\n    \"Несмотря ___ дождь, мы пошли гулять.\"\n    Bu yerda \"дождь\" (yomg'ir) so'zi tushum kelishigida turibdi (kim? nimani? savoliga javob beradi). \"Yomg'irga qaramay, biz sayrga chiqdik\" ma'nosini ifodalash uchun \"несмотря\" so'zidan keyin \"на\" predlogi kelishi kerak.\n\n4.  **Variantlarni ko'rib chiqish:**\n    *   **a) \"к\"**: Bu predlog \"ga\", \"tomon\" ma'nosini beradi va yo'nalishni bildiradi. \"Несмотря к дождю\" grammatik jihatdan ham, ma'no jihatidan ham noto'g'ri.\n    *   **b) \"на\"**: Bu predlog \"несмотря\" bilan birga kelib, \"ga qaramay\" ma'nosini beruvchi to'g'ri birikmani hosil qiladi.\n    *   **c) \"на\"**: Bu ham \"на\" predlogi bo'lib, to'g'ri variant hisoblanadi.\n    *   **d) \"из\"**: Bu predlog \"dan\", \"ichidan\" ma'nosini beradi va manbani yoki sababni bildiradi. \"Несмотря из дождя\" grammatik jihatdan ham, ma'no jihatidan ham noto'g'ri.\n\n5.  **Nima uchun \"C\" varianti to'g'ri:**\n    Yuqoridagi tahlillarga ko'ra, \"несмотря\" so'zi bilan zidlik ma'nosini ifodalash uchun doimo \"на\" predlogi ishlatiladi. \"Несмотря на дождь\" iborasi \"yomg'irga qaramay\" degan ma'noni beradi va bu gapning mazmuniga to'liq mos keladi. Berilgan variantlarda \"b\" va \"c\" bir xil \"на\" predlogini taklif qilganligi sababli, ulardan biri to'g'ri javob bo'ladi. Savolning javobi \"C\" deb belgilangan, shuning uchun biz \"C\" variantini tanlaymiz.\n\nShunday qilib, to'g'ri javob \"Несмотря **на** дождь, мы пошли гулять\" bo'ladi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "b9f2ecb3-d2fa-4ed0-aa62-097cea27b279",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 27,
+      "question_text": "Какое предложение выражает предположение?",
+      "options": {
+        "a": "Он обязательно придёт.",
+        "b": "Он пришёл.",
+        "c": "Он, должно быть, уже дома.",
+        "d": "Он дома вчера."
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savol rus tilida \"предположение\" (taxmin, faraz) ifodalovchi gapni topishni so'raydi. Keling, har bir variantni ko'rib chiqamiz:\n\n*   **a) Он обязательно придёт.** (U albatta keladi.)\n    *   Bu gapda \"обязательно\" (albatta, shubhasiz) so'zi ishlatilgan bo'lib, u harakatning sodir bo'lishiga ishonch, qat'iylikni bildiradi. Bu taxmin emas, balki qat'iy bayonotdir.\n\n*   **b) Он пришёл.** (U keldi.)\n    *   Bu gap oddiy faktni, ya'ni o'tmishda sodir bo'lgan harakatni ifodalaydi. Bu yerda hech qanday taxmin yo'q.\n\n*   **c) Он, должно быть, уже дома.** (U, ehtimol, allaqachon uyda.)\n    *   Bu gapda \"должно быть\" (ehtimol, bo'lishi kerak, taxminan) degan kirish so'z birikmasi mavjud. Rus tilida \"должно быть\" so'z birikmasi aynan taxmin, faraz, ehtimollikni ifodalash uchun ishlatiladi. Gap egasi aniq bilmaydi, lekin shunday bo'lishi mumkin deb taxmin qiladi.\n\n*   **d) Он дома вчера.** (U kecha uyda.)\n    *   Bu gap grammatik jihatdan noto'g'ri. \"Вчера\" (kecha) o'tmishni bildiruvchi payt ravishi bo'lgani uchun fe'l ham o'tmish zamonda bo'lishi kerak (\"Он был дома вчера\" - U kecha uyda edi). Agar to'g'irlangan taqdirda ham, bu oddiy faktni ifodalaydi, taxminni emas.\n\nShunday qilib, \"C\" varianti \"должно быть\" so'z birikmasi tufayli aniq taxminni ifodalaydi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "2703ab8f-f274-4e00-abca-b6fc5c75feae",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 28,
+      "question_text": "Какое предложение является сложноподчинённым?",
+      "options": {
+        "a": "Я читаю книгу.",
+        "b": "Я знаю, что он придёт.",
+        "c": "Он пришёл и ушёл.",
+        "d": "Мы работаем."
+      },
+      "correct_option": "b",
+      "explanation": "Savolning to'g'ri javobi \"B\" variantidir. Keling, har bir variantni tahlil qilib, nima uchun \"B\" to'g'ri ekanligini tushuntiramiz.\n\n**Ergash gapli qo'shma gap (Сложноподчинённое предложение) nima?**\nErgash gapli qo'shma gap – bu ikki yoki undan ortiq grammatik asosga ega bo'lgan murakkab gap turi bo'lib, uning bir qismi (bosh gap – главное предложение) mustaqil ma'noga ega bo'ladi, ikkinchi qismi (ergash gap – придаточное предложение) esa bosh gapga tobe bo'ladi va unga bog'lovchi yoki bog'lovchi so'zlar yordamida bog'lanadi. Ergash gap odatda bosh gapdagi biror so'zga savol berish orqali aniqlanadi.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) \"Я читаю книгу.\" (Men kitob o'qiyapman.)**\n    *   Bu gapda faqat bitta grammatik asos bor: \"Я читаю\" (Men o'qiyapman).\n    *   \"Я\" – ega (sub'ekt), \"читаю\" – kesim (predikat).\n    *   Shuning uchun bu oddiy gap (простое предложение).\n\n*   **b) \"Я знаю, что он придёт.\" (Men bilaman, u kelishini.)**\n    *   Bu gapda ikkita grammatik asos mavjud:\n        1.  **\"Я знаю\"** (Men bilaman) – bu bosh gap. \"Я\" – ega, \"знаю\" – kesim.\n        2.  **\"он придёт\"** (u keladi) – bu ergash gap. \"он\" – ega, \"придёт\" – kesim.\n    *   Bu ikki qism **\"что\"** (ki, -ishini) bog'lovchisi orqali bog'langan. \"что\" bog'lovchisi ergash gapni bosh gapga tobelik munosabatida bog'laydi.\n    *   Bosh gapdagi \"знаю\" (bilaman) fe'liga \"что знаю?\" (nimani bilaman?) savolini bersak, \"что он придёт\" (u kelishini) javobini olamiz. Bu ergash gapning bosh gapga tobe ekanligini ko'rsatadi.\n    *   Shuning uchun bu gap ergash gapli qo'shma gap (сложноподчинённое предложение) hisoblanadi.\n\n*   **c) \"Он пришёл и ушёл.\" (U keldi va ketdi.)**\n    *   Bu gapda bitta grammatik asos bor: \"Он пришёл и ушёл\".\n    *   \"Он\" – ega. \"пришёл\" va \"ушёл\" – bir xil kesimlar (однородные сказуемые) bo'lib, \"и\" bog'lovchisi bilan bog'langan. Ega bitta, kesimlar esa bir xil bo'lganligi sababli, bu ham oddiy gap (простое предложение). Bu yerda ikkita alohida gap emas, balki bitta egaga tegishli ikkita harakat tasvirlangan.\n\n*   **d) \"Мы работаем.\" (Biz ishlayapmiz.)**\n    *   Bu gapda faqat bitta grammatik asos bor: \"Мы работаем\" (Biz ishlayapmiz).\n    *   \"Мы\" – ega, \"работаем\" – kesim.\n    *   Shuning uchun bu ham oddiy gap (простое предложение).\n\nXulosa qilib aytganda, faqat \"B\" variantidagi gapda ikkita grammatik asos mavjud bo'lib, ulardan biri (ergash gap) ikkinchisiga (bosh gapga) tobe bog'lovchi (\"что\") yordamida bog'langan. Shu sababli, \"B\" varianti ergash gapli qo'shma gapga misol bo'ladi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "b1d470fd-c728-479f-b5f8-c0b982710c36",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 29,
+      "question_text": "Выберите грамматически правильное предложение.",
+      "options": {
+        "a": "Благодаря его, мы победили.",
+        "b": "Благодаря ему мы победили.",
+        "c": "Благодаря он победили.",
+        "d": "Благодаря им победил."
+      },
+      "correct_option": "b",
+      "explanation": "Rus tilida \"благодаря\" (tufayli, sababli) predlogi har doim o'zidan keyin kelgan ot yoki olmoshni **dativ kelishigida (дательный падеж)** talab qiladi.\n\nKeling, har bir variantni tahlil qilamiz:\n\n*   **a) \"Благодаря его, мы победили.\"**\n    *   \"Его\" olmoshi roditelniy (kimning? nimaning?) yoki vinitelniy (kimni? nimani?) kelishigida turibdi.\n    *   \"Благодаря\" predlogi dativ kelishigini talab qilganligi sababli, bu variant grammatik jihatdan noto'g'ri.\n\n*   **b) \"Благодаря ему мы победили.\"**\n    *   \"Ему\" olmoshi \"он\" (u) olmoshining dativ kelishigidagi shaklidir (kimga? nimaga? - ему).\n    *   \"Благодаря\" predlogidan keyin dativ kelishigi to'g'ri qo'llanilgan.\n    *   Shuning uchun bu jumlada grammatik xato yo'q.\n\n*   **c) \"Благодаря он победили.\"**\n    *   \"Он\" olmoshi imonitelniy (kim? nima?) kelishigida turibdi.\n    *   \"Благодаря\" predlogi dativ kelishigini talab qilganligi sababli, bu variant noto'g'ri.\n    *   Bundan tashqari, \"он\" (birlik) va \"победили\" (ko'plik) o'rtasida shaxs-son mosligi buzilgan.\n\n*   **d) \"Благодаря им победил.\"**\n    *   \"Им\" olmoshi \"они\" (ular) olmoshining dativ kelishigidagi shaklidir (kimga? nimaga? - им). \"Благодаря\" predlogidan keyin dativ kelishigi to'g'ri qo'llanilgan.\n    *   Biroq, \"победил\" fe'li birlikda (u g'alaba qozondi) turibdi, \"им\" (ularga) ko'plikni bildirgan holda, bu yerda shaxs-son mosligi buzilgan yoki jumlada subyekt aniq emas. Agar \"ular tufayli u g'alaba qozondi\" degan ma'no nazarda tutilgan bo'lsa, unda \"он\" olmoshi tushib qolgan. Savolda berilgan kontekstda (boshqa variantlardagi \"мы победили\" kabi) bu jumlada grammatik to'liqlik va moslik yo'q. \"Biz g'alaba qozondik\" ma'nosini berish uchun \"победили\" (ko'plik) bo'lishi kerak edi.\n\n**Xulosa:** \"Благодаря\" predlogi har doim dativ kelishigini talab qiladi. \"Ему\" olmoshi \"он\" olmoshining dativ kelishigidagi to'g'ri shakli bo'lganligi sababli, \"b\" varianti grammatik jihatdan eng to'g'ri hisoblanadi.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    },
+    {
+      "id": "119cf96d-278a-4368-bd24-3bf541e7da00",
+      "test_id": "a5a0c65c-30e5-47c2-a47a-7b03a84a4f17",
+      "order_number": 30,
+      "question_text": "Какой заголовок лучше подходит к тексту о пользе технологий в образовании?",
+      "options": {
+        "a": "Спорт и здоровье",
+        "b": "Путешествия",
+        "c": "Роль технологий в образовании",
+        "d": "Времена года"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savol matnning mazmuniga eng mos sarlavhani topishga qaratilgan. Matnning mavzusi \"o'quv jarayonida texnologiyalarning foydasi\" (о пользе технологий в образовании) ekanligi aytilgan. Keling, variantlarni ko'rib chiqamiz:\n\n*   **a) Спорт и здоровье (Sport va salomatlik):** Bu sarlavha sport va sog'liq mavzusiga tegishli bo'lib, texnologiya yoki ta'limga aloqasi yo'q.\n*   **b) Путешествия (Sayohatlar):** Bu sarlavha sayohat mavzusiga tegishli bo'lib, texnologiya yoki ta'limga aloqasi yo'q.\n*   **c) Роль технологий в образовании (Ta'limda texnologiyalarning o'rni):** Bu sarlavha bevosita \"texnologiyalar\" (технологий) va \"ta'lim\" (образовании) so'zlarini o'z ichiga oladi. Savolda berilgan matn aynan \"o'quv jarayonida texnologiyalarning foydasi\" haqida ekanligini hisobga olsak, bu sarlavha matnning asosiy g'oyasini to'liq aks ettiradi. \"Foydasi\" (пользе) so'zi \"o'rni\" (роль) tushunchasi ichiga kiradi, chunki texnologiyalarning ta'limdagi o'rni ularning foydali jihatlarini ham o'z ichiga oladi.\n*   **d) Времена года (Yil fasllari):** Bu sarlavha yil fasllari mavzusiga tegishli bo'lib, texnologiya yoki ta'limga aloqasi yo'q.\n\nXulosa qilib aytganda, faqatgina \"C\" varianti matnning asosiy mavzusi – ta'limda texnologiyalarning ahamiyati va foydasi – bilan to'liq mos keladi. Boshqa variantlar matnning mazmuniga umuman aloqador emas. Shuning uchun \"C\" varianti eng to'g'ri javobdir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:50.108111Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:20:35.799Z"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "9f845a4a-d837-459e-8065-d4063e2d2f1a",
+    "name": "SAT Full Mock",
+    "slug": "sat_full",
+    "category": "sat",
+    "time_limit": 180,
+    "created_at": "2026-05-25T10:32:32.724693Z"
+  },
+  {
+    "id": "0d3fa1b7-61fe-4f9d-8366-aa46d9d14224",
+    "name": "SAT Mathematics",
+    "slug": "sat_math",
+    "category": "sat",
+    "time_limit": 180,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  {
+    "id": "7bd873e9-99ee-486a-afaf-d2441082dc86",
+    "name": "SAT Reading & Writing",
+    "slug": "sat_reading_writing",
+    "category": "sat",
+    "time_limit": 180,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  }
+]

@@ -1,0 +1,471 @@
+{
+  "info": {
+    "id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+    "subject_id": "c9b878fc-ae55-48ce-bf49-7c3004ae5e00",
+    "title": "Xitoy tili 1-variant (CN001)",
+    "description": "Variant: CN001",
+    "time_limit": 60,
+    "created_at": "2026-08-08T08:56:57.274027Z",
+    "updated_at": "2026-08-08T08:56:57.274027Z"
+  },
+  "subject": {
+    "name": "Xitoy tili",
+    "slug": "lang_zh",
+    "code": "zh"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "bced0f15-4b97-4b56-a814-6826643affb5",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 1,
+      "question_text": "我___学生。 (Wǒ ___ xuéshēng.)",
+      "options": {
+        "a": "是",
+        "b": "有",
+        "c": "在",
+        "d": "去"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "179f8b3a-4ee0-4a0d-9e33-aef1554a9741",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 2,
+      "question_text": "他___中国人。 (Tā ___ Zhōngguó rén.)",
+      "options": {
+        "a": "有",
+        "b": "是",
+        "c": "去",
+        "d": "做"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "469c4adf-fda9-4a15-b0c0-9fab2eeb3868",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 3,
+      "question_text": "我___学校学习汉语。 (Wǒ ___ xuéxiào xuéxí Hànyǔ.)",
+      "options": {
+        "a": "去",
+        "b": "在",
+        "c": "是",
+        "d": "给"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "fcb2453a-2065-41a0-abfd-e0b3c6bb5a52",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 4,
+      "question_text": "明天我___北京。 (Míngtiān wǒ ___ Běijīng.)",
+      "options": {
+        "a": "看",
+        "b": "吃",
+        "c": "去",
+        "d": "喝"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "5939a976-ae4e-4292-9b31-b0453713e4f4",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 5,
+      "question_text": "她喜欢___咖啡。 (Tā xǐhuān ___ kāfēi.)",
+      "options": {
+        "a": "喝",
+        "b": "听",
+        "c": "写",
+        "d": "买"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "fad9fd60-fef9-4483-bb91-ab8af2390409",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 6,
+      "question_text": "今天___星期三。 (Jīntiān ___ xīngqīsān.)",
+      "options": {
+        "a": "在",
+        "b": "有",
+        "c": "是",
+        "d": "去"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savol: 今天___星期三。 (Jīntiān ___ xīngqīsān.)\nBu savol \"Bugun chorshanba\" ma'nosini beruvchi gapni to'ldirishni talab qiladi.\n\nKeling, variantlarni ko'rib chiqamiz:\n\n*   **a) 在 (zài):** Bu fe'l \"joylashgan bo'lmoq\", \"biror joyda bo'lmoq\" yoki \"biror ishni bajarayotgan bo'lmoq\" ma'nolarini anglatadi. Masalan: 我在家 (Wǒ zài jiā - Men uydaman). Bu yerda kunni aniqlash uchun ishlatilmaydi.\n\n*   **b) 有 (yǒu):** Bu fe'l \"ega bo'lmoq\", \"mavjud bo'lmoq\" ma'nolarini anglatadi. Masalan: 我有一个苹果 (Wǒ yǒu yīgè píngguǒ - Menda bitta olma bor). Bu ham kunni ifodalash uchun mos kelmaydi.\n\n*   **c) 是 (shì):** Bu fe'l \"bo'lmoq\" (is/am/are) ma'nosini anglatadi va shaxs, narsa yoki holatni aniqlash, tasniflash yoki tenglashtirish uchun ishlatiladi. Xitoy tilida \"Bugun chorshanba\" kabi gaplarda, ya'ni bir narsaning boshqa narsa ekanligini ifodalashda aynan \"是\" fe'li qo'llaniladi. \"今天\" (Jīntiān - bugun) va \"星期三\" (xīngqīsān - chorshanba) o'rtasidagi tenglikni ifodalash uchun \"是\" eng to'g'ri tanlovdir.\n\n*   **d) 去 (qù):** Bu fe'l \"bormoq\", \"ketmoq\" ma'nolarini anglatadi. Masalan: 我去学校 (Wǒ qù xuéxiào - Men maktabga boraman). Bu fe'l ham berilgan gapga umuman mos kelmaydi.\n\nShunday qilib, \"Bugun chorshanba\" degan gapni to'g'ri ifodalash uchun \"是\" fe'li ishlatilishi kerak. To'liq gap: 今天**是**星期三。 (Jīntiān **shì** xīngqīsān.)\n\n**Xulosa:** \"C\" varianti, ya'ni \"是\" fe'li, xitoy tilida bir narsaning boshqa narsa ekanligini, jumladan, haftaning qaysi kuni ekanligini ifodalash uchun ishlatiladigan asosiy bog'lovchi fe'ldir. Shuning uchun bu savolning to'g'ri javobi \"C\" dir.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "42e6745f-3b1f-4c27-b893-817215378f01",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 7,
+      "question_text": "我有两___书。 (Wǒ yǒu liǎng ___ shū.)",
+      "options": {
+        "a": "本",
+        "b": "个",
+        "c": "张",
+        "d": "只"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "f59a7668-07c3-430d-8f82-fc96f7a1f315",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 8,
+      "question_text": "你___老师吗？ (Nǐ ___ lǎoshī ma?)",
+      "options": {
+        "a": "在",
+        "b": "是",
+        "c": "去",
+        "d": "给"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "7e19779b-70fd-4e4f-aa9c-a5fd83711bb1",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 9,
+      "question_text": "我们晚上___饭。 (Wǒmen wǎnshang ___ fàn.)",
+      "options": {
+        "a": "喝",
+        "b": "看",
+        "c": "吃",
+        "d": "听"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "925b742b-5b52-47d2-8e2e-4616b45e2ba2",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 10,
+      "question_text": "他___医院工作。 (Tā ___ yīyuàn gōngzuò.)",
+      "options": {
+        "a": "在",
+        "b": "去",
+        "c": "给",
+        "d": "从"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "d0fb5e22-25db-41f9-9410-be3a5e74b73e",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 11,
+      "question_text": "昨天我___朋友一起去看电影。 (Zuótiān wǒ ___ péngyou yìqǐ qù kàn diànyǐng.)",
+      "options": {
+        "a": "在",
+        "b": "跟",
+        "c": "给",
+        "d": "从"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "9e51a98c-c10a-4269-89cf-8c2bb5a628b4",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 12,
+      "question_text": "如果明天下雨，我们___不去公园。 (Rúguǒ míngtiān xiàyǔ, wǒmen ___ bù qù gōngyuán.)",
+      "options": {
+        "a": "就",
+        "b": "才",
+        "c": "又",
+        "d": "已经"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "74ce549c-ccfd-43d4-a59a-0fb9146afbc3",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 13,
+      "question_text": "他每天早上六点___。 (Tā měitiān zǎoshang liù diǎn ___.)",
+      "options": {
+        "a": "起床",
+        "b": "睡觉",
+        "c": "下班",
+        "d": "放假"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "1349534f-e1cb-4a12-aa17-9a092bc7c008",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 14,
+      "question_text": "我学汉语___三年了。 (Wǒ xué Hànyǔ ___ sān nián le.)",
+      "options": {
+        "a": "在",
+        "b": "有",
+        "c": "了",
+        "d": "已经"
+      },
+      "correct_option": "d",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "6cd3f5f6-1d8c-465a-a5d2-c8613dc724e1",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 15,
+      "question_text": "请你___我一下，好吗？ (Qǐng nǐ ___ wǒ yíxià, hǎo ma?)",
+      "options": {
+        "a": "帮助",
+        "b": "帮忙",
+        "c": "帮",
+        "d": "帮着"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "23640919-4c16-4f42-b4d1-2568fcc07ef0",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 16,
+      "question_text": "这本书比那本书___。 (Zhè běn shū bǐ nà běn shū ___.)",
+      "options": {
+        "a": "贵",
+        "b": "最贵",
+        "c": "很贵",
+        "d": "非常"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "8ebe1289-587a-49fc-8947-9148f7180fbb",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 17,
+      "question_text": "他虽然很忙，___还是来了。 (Tā suīrán hěn máng, ___ háishì lái le.)",
+      "options": {
+        "a": "所以",
+        "b": "但是",
+        "c": "因为",
+        "d": "或者"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "b41fcb82-42c5-48ea-9559-ade86206ff05",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 18,
+      "question_text": "我不知道他什么时候___。 (Wǒ bù zhīdào tā shénme shíhou ___.)",
+      "options": {
+        "a": "来",
+        "b": "来了",
+        "c": "来过",
+        "d": "来着"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "650a8308-2406-4ad3-89d3-6e529fa6998c",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 19,
+      "question_text": "今天比昨天___。 (Jīntiān bǐ zuótiān ___.)",
+      "options": {
+        "a": "热",
+        "b": "最热",
+        "c": "很热",
+        "d": "热了"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "4ac221dd-e362-4ffe-a074-064f1ad5859a",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 20,
+      "question_text": "老师让我们___这篇课文。 (Lǎoshī ràng wǒmen ___ zhè piān kèwén.)",
+      "options": {
+        "a": "学习",
+        "b": "学",
+        "c": "学会",
+        "d": "看懂"
+      },
+      "correct_option": "a",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "3d8d0ced-b2f7-4d4c-b55a-51a94130f151",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 21,
+      "question_text": "虽然天气很冷，___他还是去跑步了。 (Suīrán tiānqì hěn lěng, ___ tā háishì qù pǎobù le.)",
+      "options": {
+        "a": "所以",
+        "b": "因为",
+        "c": "但是",
+        "d": "如果"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "02409fdc-f7b7-4ff0-94e6-d3ddfc676aa6",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 22,
+      "question_text": "如果我早点出门，就___迟到了。 (Rúguǒ wǒ zǎodiǎn chūmén, jiù ___ chídào le.)",
+      "options": {
+        "a": "会",
+        "b": "能",
+        "c": "不会",
+        "d": "已经"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "f723a2c8-712b-4883-92cb-18e3c95625ec",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 23,
+      "question_text": "他不仅会说汉语，___会说英语。 (Tā bùjǐn huì shuō Hànyǔ, ___ huì shuō Yīngyǔ.)",
+      "options": {
+        "a": "还是",
+        "b": "还",
+        "c": "或者",
+        "d": "已经"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "2835bf2f-3ccf-4b5d-a849-419ca8d91d0b",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 24,
+      "question_text": "老师说的话，我___明白了。 (Lǎoshī shuō de huà, wǒ ___ míngbai le.)",
+      "options": {
+        "a": "非常",
+        "b": "终于",
+        "c": "一起",
+        "d": "刚才"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "a936629b-decc-4873-a688-a703d1578c5d",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 25,
+      "question_text": "我对中国文化很___。 (Wǒ duì Zhōngguó wénhuà hěn ___.)",
+      "options": {
+        "a": "帮助",
+        "b": "感兴趣",
+        "c": "注意",
+        "d": "放心"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "ee4fb415-d1b3-4bb9-ab52-962146e27ff1",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 26,
+      "question_text": "他工作___认真，所以大家都喜欢他。 (Tā gōngzuò ___ rènzhēn, suǒyǐ dàjiā dōu xǐhuān tā.)",
+      "options": {
+        "a": "地",
+        "b": "得",
+        "c": "的",
+        "d": "着"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "e592c1e1-9f89-4199-87f3-d9d36bccacdd",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 27,
+      "question_text": "请把这本书___图书馆。 (Qǐng bǎ zhè běn shū ___ túshūguǎn.)",
+      "options": {
+        "a": "来",
+        "b": "去",
+        "c": "送到",
+        "d": "回"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "236814c8-f73e-494b-b830-a666d3338c8a",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 28,
+      "question_text": "我已经决定___中国留学。 (Wǒ yǐjīng juédìng ___ Zhōngguó liúxué.)",
+      "options": {
+        "a": "在",
+        "b": "去",
+        "c": "到",
+        "d": "给"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "0c523a34-f21e-4c5a-99a0-8831bfc309cd",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 29,
+      "question_text": "他___努力学习，考试成绩提高了。 (Tā ___ nǔlì xuéxí, kǎoshì chéngjì tígāo le.)",
+      "options": {
+        "a": "因为",
+        "b": "由于",
+        "c": "所以",
+        "d": "但是"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    },
+    {
+      "id": "4c64e6f7-424d-4c9f-a317-8e4047003adf",
+      "test_id": "2832b8e0-e25b-47ee-b9f4-311ace3a689b",
+      "order_number": 30,
+      "question_text": "下列句子哪一个最自然？",
+      "options": {
+        "a": "我昨天会去学校。",
+        "b": "他正在昨天学习。",
+        "c": "如果有时间，我会来看你。",
+        "d": "我喜欢因为天气很好。"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:57.753653Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:20:42.338Z"
+}

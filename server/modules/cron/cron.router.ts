@@ -324,6 +324,7 @@ async function runCleanup(): Promise<CronRunResult> {
       pwdTokensDeleted: result.pwdTokensDeleted,
       loginHistoryDeleted: result.loginHistoryDeleted,
       auditLogsDeleted: result.auditLogsDeleted,
+      testSessionsDeleted: result.testSessionsDeleted,
     })
     return { status: 200, body: { ok: true, ...result } }
   } catch (err) {

@@ -1,0 +1,445 @@
+{
+  "info": {
+    "id": "49769844-0533-4dd3-b135-d2678fd758c5",
+    "subject_id": "8204a81b-10a6-420a-b014-aad719f2153a",
+    "title": "Ona tili 1-variant  ",
+    "description": "Variant: O'zbek tili va Adabiyot Milliy Sertifikat Variant 1 (Oliy Qiyinchilik)",
+    "time_limit": 30,
+    "created_at": "2026-08-31T15:40:23.747753Z",
+    "updated_at": "2026-08-31T15:40:23.747753Z"
+  },
+  "subject": {
+    "id": "8204a81b-10a6-420a-b014-aad719f2153a",
+    "name": "Ona tili",
+    "slug": "ona-tili",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "504f893e-bbb4-4aa0-a37a-1949b34dddc5",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 1,
+      "question_text": "Qaysi qatorda fonetik hodisalar (tovush tushishi, tovush almashinishi, tovush ortishi) bitta so'z birikmasi tarkibida mos ravishda to'liq uchraydi?",
+      "options": {
+        "a": "Sariq-yashil barkini bargi deb o'yladi (sarg'aydi, sarg'aygan, singlimga)",
+        "b": "Sarg'aygan yaproqning to'kilishi va singlimga aytilgan sirdan hayratlandim",
+        "c": "Kitobni o'qib bo'lgach, do'stiga minnatdorchilik bildirdi",
+        "d": "Baland binoning tomidan pastga qarab baland ovozda hayqirdi"
+      },
+      "correct_option": "a",
+      "explanation": "**A** javobida fonetik hodisalar quyidagicha to'liq namoyon bo'lgan:\n* **Tovush tushishi:** *singil + im $\\to$ singlim* yoki *sariq + ay $\\to$ sarg'aydi* ($i$ tovushi tushgan);\n* **Tovush almashinishi:** *bark + i $\\to$ bargi* ($k \\to g$) va *sariq $\\to$ sarg'aydi* ($q \\to g'$);\n* **Tovush ortishi:** so'zlar tarkibida talaffuz va yasalishda unli/undosh ortishi kuzatiladi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "74427998-f41c-4443-8cb5-3d733c8ac519",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 2,
+      "question_text": "Tarkibida ham imloviy, ham uslubiy xatoga yo'l qo'yilgan gap berilgan qatorni toping.",
+      "options": {
+        "a": "U barcha topshiriqlarni o'z vaqtida bajarishlik uchun bor imkoniyatini sarfladi va g'olib bo'ldi.",
+        "b": "U barcha topshiriqlarni o'z vaqtida bajarish uchun bor kuchini sarfladi.",
+        "c": "Talabalar imtihonga puxta tayyorgarlik ko'rishdi.",
+        "d": "Havo harorati keskin sovib ketganligi sababli tadbir qoldirildi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8e272289-c337-43a4-987e-c12dd0992e97",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 3,
+      "question_text": "Qaysi javobda paronimlarni qo'llash bilan bog'liq xatolikga yo'l qo me'yilgan?",
+      "options": {
+        "a": "Ushbu kashfiyot ilmiy jamoatchilik o'rtasida katta amaliy va nazariy ahmisiyatga ega.",
+        "b": "Ushbu kashfiyot ilmiy jamoatchilik o'rtasida katta amaliy va nazariy ahamiyatga ega.",
+        "c": "Bizning maqsadimiz — yosh avlodga yuksak ma'naviy tarbiya berishdir.",
+        "d": "Bugungi majlisda muhim tashkiliy masalalar ko'rib chiqildi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f551e1ea-2255-4b45-9470-2918017efd2f",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 4,
+      "question_text": "Qaysi gapda qo'shimcha qo'llash bilan bog'liq morfologik xatolik mavjud?",
+      "options": {
+        "a": "Majlisda so'zga chiqqan spiker xodimlarni intizomga rioya qilishliklarini so'radi.",
+        "b": "Majlisda so'zga chiqqan spiker xodimlardan intizomga rioya qilishlarini so'radi.",
+        "c": "Biz bugun yangi loyiha ustida ish boshladik va natijaga erishdik.",
+        "d": "Uka o'z xatosini tushunib yetdi va barchadan uzr so'radi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d308bbf2-07e6-408e-9803-2d94d1e9a903",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 5,
+      "question_text": "Qaysi gapda vositasiz to me'ldiruvchi umumlashtiruvchi so'z bilan uyushib kelgan?",
+      "options": {
+        "a": "U barcha narsani: kitoblarni, daftarlarni va qalamlarni bir joyga yig me'di.",
+        "b": "Barcha narsa: kitoblar, daftarlar va qalamlar bir joyda yig me'ilgan edi.",
+        "c": "U kitoblarni, daftarlarni va qalamlarni javonga tartib bilan joylashtirdi.",
+        "d": "Majlisda ustozlar ham, talabalar ham, o'quvchilar ham qatnashdi."
+      },
+      "correct_option": "a",
+      "explanation": "**A** javobida:\n* **kitoblarni, daftarlarni, qalamlarni** — tushum kelishigidagi uyushgan vositasiz to‘ldiruvchilar (*nimani yig‘di?*);\n* **barcha narsani** — ushbu vositasiz to‘ldiruvchilarning umumlashtiruvchi so‘zidir.\n\n*(B variantida esa ular ega vazifasida kelgan).*",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e9994263-9342-4f07-b8fa-1c56db84dcf5",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 6,
+      "question_text": "Berilgan murakkab qo'shma gapning turini va tarkibiy qismlari orasidagi bog'lanish usulini aniqlang: 'Kuz kelib, kunlar sovigan sari daraxt barglari sarg'ayib to'kila boshladi, lekin dehqonlar hosilni yig'ib olish ishlarini to'xtatmadilar.'",
+      "options": {
+        "a": "Aralash turdagi murakkab qo'shma gap; ketma-ketlik va zidlov munosabatli",
+        "b": "Faqat birga ergashgan qo'shma gap",
+        "c": "Bog'lanishsiz murakkab qo me'shma gap",
+        "d": "Faqat bog me'lovchili ergashgan qo'shma gap"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e0343922-1646-4ef5-ba9e-335551886ca5",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 7,
+      "question_text": "Qaysi qatorda berilgan so'zlarning barchasi o'zlashma so'zlar bo'lib, o'zbek tiliga arab va fors-tojik tillaridan kirib kelgan?",
+      "options": {
+        "a": "Ma'rifat, aljabr, madaniyat, maktab, qalam, dostor",
+        "b": "Kompyuter, telefon, avtomobil, samolyot",
+        "c": "Non, suv, yer, osmon, qosh, ko'z",
+        "d": "Tosh, temir, yog'och, o't, suv"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "424ac78d-edc5-4400-881c-2295c57f73a1",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 8,
+      "question_text": "Uyushiq bo me'lakli gaplarda umumlashtiruvchi so'z uyushiq bo'laklardan oldin kelsa, qanday tinish belgisi qo'yiladi?",
+      "options": {
+        "a": "Ikki nuqta (:)",
+        "b": "Tire (-)",
+        "c": "Nuqtali vergul (;)",
+        "d": "Vergul (,)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "fe3cc87e-1705-4146-9df0-d266bd0166a1",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 9,
+      "question_text": "Qaysi gapda fye'lning majhul nisbati qo'llangan?",
+      "options": {
+        "a": "Barcha topshirilgan hujjatlar maxsus komissiya tomonidan atroflicha ko'rib chiqildi.",
+        "b": "Talabalar yangi bino sari shiddat bilan yugurishdi.",
+        "c": "U barcha ma'lumotlarni daftarga yozib oldi.",
+        "d": "Uka akasiga yordamlashib, bog'ni tozaladi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f42063bb-a023-4520-b32f-27c3968fe0ef",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 10,
+      "question_text": "Qaysi gapda sifatdosh iborasi hol vazifasida kelgan?",
+      "options": {
+        "a": "Quyosh ufqqa botayotgan bir paytda, yo me me'lchilar manzilga yetib kelishdi.",
+        "b": "Ufqqa botgan quyosh atrofni oltin rangga bo'yadi.",
+        "c": "Keltirilgan ma'lumotlar barchani hayratda qoldirdi.",
+        "d": "O'qilgan kitoblar javonga tartib bilan terib qo'yildi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e71c655a-68a7-48ad-8319-ce299b109d93",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 11,
+      "question_text": "Alisher Navoiyning 'Xamsa' dostonlari tarkibi va ularning yozilish tartibini to me'g'ri ko'rsating.",
+      "options": {
+        "a": "'Hayrat ul-abror', 'Farhod va Shirin', 'Layli va Majnun', 'Sab'ai sayyor', 'Saddi Iskandariy'",
+        "b": "'Farhod va Shirin', 'Hayrat ul-abror', 'Sab'ai sayyor', 'Layli va Majnun', 'Saddi Iskandariy'",
+        "c": "'Layli va Majnun', 'Farhod va Shirin', 'Hayrat ul-abror', 'Saddi Iskandariy', 'Sab'ai sayyor'",
+        "d": "'Hayrat ul-abror', 'Sab'ai sayyor', 'Farhod va Shirin', 'Saddi Iskandariy', 'Layli va Majnun'"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "eb488baa-3a57-43c4-af08-b0e2372bf65d",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 12,
+      "question_text": "Zahiriddin Muhammad Boburning 'Boburnoma' asari qaysi janrga oid va unda qanday ma me'lumotlar aks etgan?",
+      "options": {
+        "a": "Memuar (tarixiy-biografik) janr; Markaziy Osiyo, Afg'oniston va Hindiston tarixi, geografiyasi va etnografiyasi",
+        "b": "Dasturiy romanchilik; Faqat xayoliy voqealar va afsonalar",
+        "c": "Faqat diniy-tasavvufiy she'rlar to'plami",
+        "d": "Faqat harbiy yurishlar va taktikalar qo'llanmasi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b665cb01-3613-4c7a-9a81-e290af0fc136",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 13,
+      "question_text": "O'zbek adabiyotida ilk dramatik asar va uning muallifini to'g'ri ko'rsating.",
+      "options": {
+        "a": "'Padarkush' — Mahmudxo'ja Behbudiy (1911-y. yozilgan, 1913-y. nashr etilgan)",
+        "b": "'O'tkan kunlar' — Abdulla Qodiriy",
+        "c": "'Miyrak' — Munavvarqori Abdurashidxonov",
+        "d": "'Lison ut-tayr' — Alisher Navoiy"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "54d5a47d-1d33-40cc-9667-0b1ab40de185",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 14,
+      "question_text": "Abdulla Qodiriyning 'O'tkan kunlar' romanidagi Otabek va Kumush obrazlari o'rtasidagi fojiaviy tugun va nizo nimadan iborat?",
+      "options": {
+        "a": "Zamonaning feodal urf-odatlari, kundoshlik (Zaynab) va ichki nizolar o'rtasidagi ziddiyat",
+        "b": "Faqat moddiy yetishmovchilik va qashshoqlik",
+        "c": "Xorijiy bosqinchilarga qarshi urush voqealari",
+        "d": "Faqat taxt uchun kure'sh va siyosiy fitnalar"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "474e2fc7-025e-499b-b805-43455342ccf0",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 15,
+      "question_text": "Cho'lponning 'Kecha va kunduz' romanidagi Zebi obraziga berilgan to'g'ri tavsifni aniqlang.",
+      "options": {
+        "a": "Soddadil, pokiza, san me me'atga va qo'shiqchilikka ishtiyoqi baland, ammo jamiyat javru sitamining qurboniga aylangan ayol",
+        "b": "Hokimiyatga intiluvchan va ayyor siyosatchi ayol",
+        "c": "Faqat o'z manfaatini o'ylaydigan va oilasini tashlab ketgan obraz",
+        "d": "G'arbiy ma'rifatni targ'ib qilgan jadid ayol"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0fa242db-386d-45b1-a415-b6643b07b2a8",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 16,
+      "question_text": "Qaysi qatorda o'zbek mumtoz she'riyatidagi 'tuyuq' janrining asosiy xususiyati to me'g'ri ko'rsatilgan?",
+      "options": {
+        "a": "Tayoq (to'rt misra) shaklida bo'lib, a-a-b-a qofiyalanadi va tajnis (tuyuk so'z o'yini)ga asoslanadi",
+        "b": "Besh misradan iborat bo'lib, har bir misrasi alohida qofiyalanadi",
+        "c": "Faqat aruzning 'xazaj' bahrida yozilishi shart bo'lgan g me'azal turi",
+        "d": "Qofiyasiz erkin vaznda yozilgan she'riy forma"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7c380d2b-d40d-4eac-b8b4-80d7c26d9bd4",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 17,
+      "question_text": "Aruz vaznida 'ruti-bahr' tushunchasi nimani anglatadi?",
+      "options": {
+        "a": "Turoq (rukun)larning qisqa va uzun bo me'g'inlar ketma-ketligidan hosil bo'ladigan ritmik o'lchovi",
+        "b": "Faqat qofiyadosh so'zlarning oxirgi harfi",
+        "c": "She'rning umumiy bandlar soni",
+        "d": "She'rdagi radif va tajnislar yig'indisi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "6237ab80-86aa-4a67-8da2-25bed1d1c485",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 18,
+      "question_text": "Qaysi ma'nodosh so'zlar me me'yori (sinonimik qator)da ma me'no kuchayishi (gradatsiya) to'g me'ri kuzatiladi?",
+      "options": {
+        "a": "Yig'ladi — o'kindi — ho'ngradi — faryod chekdi",
+        "b": "Yurdi — o me'tirdi — yotdi — turdi",
+        "c": "Kuldi — yig'ladi — gapirdi — sukut saqladi",
+        "d": "Kechindi — o me me'yladi — o'qidi — yozdi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "cd82f58f-d269-456b-a8d2-edda5429cd8c",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 19,
+      "question_text": "Ibora (frazeologizm) va uning ma'nosi to me me'ri moslashtirilgan javobni toping.",
+      "options": {
+        "a": "Tebsa tebranmas — O'ta kamsuxan yoki sustkash; Toblamoq — Pishitmoq, tobga keltirmoq",
+        "b": "Boshi ko'kka yetmoq — Juda xafa bo'lmoq",
+        "c": "Qo'li ochiq — Xasis va ziqna odam",
+        "d": "Yuzidan qon tommoq — O'ta kasal va nimjon bo'lmoq"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5501b32a-ddfa-49ad-9889-38e8aaa560b9",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 20,
+      "question_text": "Qaysi gapda ko'chma ma'no (metonimiya) shaklida qo'llangan so'z mavjud?",
+      "options": {
+        "a": "Butun zal ma'ruzachini tik turib olqishladi.",
+        "b": "Oltin uzuk barmog'iga juda yarashib turardi.",
+        "c": "Baland tog' cho'qqisida yangi qor yog'di.",
+        "d": "Kichik bola bog'da kapalak quvlab yurardi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "13c9110a-e3dc-4cb4-87b6-b881b2ceecb2",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 21,
+      "question_text": "O'zbek tili lug'at tarkibidagi so'zlarning shakl va ma'no munosabatiga ko'ra turlarini aniqlang: Omonim, Sinonim, Antonim, Paronim.",
+      "options": {
+        "a": "Omonim — Shakli bir xil, ma'nosi har xil; Antonim — Ma'nosi qarama-qarshi",
+        "b": "Omonim — Ma'nosi bir xil, shakli har xil",
+        "c": "Paronim — Ma'nosi va talaffuzi to'liq bir xil so'zlar",
+        "d": "Sinonim — Faqat qarama-qarshi ma me'noli so'zlar"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "163947f3-ca9b-4eac-afc7-43af0878607d",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 22,
+      "question_text": "Gapdagi ajratilgan bo'lak vazifasini aniqlang: 'Biz, o me'zbekistonliklar, o'z vatanimiz kelajagiga befarq emasmiz.'",
+      "options": {
+        "a": "Izohlovchi ajratilgan ega (aniqlovchi izohlovchisi)",
+        "b": "Ajratilgan hol",
+        "c": "Ajratilgan to'ldiruvchi",
+        "d": "Ajratilgan kesim"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "cb4c82f5-66df-476a-be19-c51d3cb1ccb8",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 23,
+      "question_text": "Qaysi gapda Ergash gapli qo'shma gapning 'Ega ergash gapli' turi berilgan?",
+      "options": {
+        "a": "Kimki bilimga intilsa, u kelajakda albatta muvaffaqiyatga erishadi.",
+        "b": "Kun issiq bo'lgani uchun biz sohilga bordik.",
+        "c": "U shunday tez yurdiki, ortidan yetib bo'lmas edi.",
+        "d": "Qachonki topshiriq bajarilsa, keyin javob beriladi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d86ada2c-c8c8-47c7-9e3e-388a83065334",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 24,
+      "question_text": "Alisher Navoiyning 'Lison ut-tayr' (Qushlar tili) dostonida Simurg'ni izlab yo'lga chiqqan qushlar va ularning ramziy ma me'nosi haqida to'g'ri fikrni aniqlang.",
+      "options": {
+        "a": "Qushlar — tasavvufiy yo'ldagi solihlar; Simurg' — Haq (Alloh) va komillik timsoli",
+        "b": "Qushlar — oddiy askarlar; Simurg' — zolim podsho timsoli",
+        "c": "Qushlar — savdogarlar; Simurg' — oltin xazina timsoli",
+        "d": "Doston faqat qushlar haqidagi sarguzasht ertakdir"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "efd22113-6b35-4d91-b2b7-9cc25ff84d7e",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 25,
+      "question_text": "Erkin Vohidov va Abdulla Oripov ijodiga oid to'g'ri ma me'lumotni ko'rsating.",
+      "options": {
+        "a": "Erkin Vohidov — 'O me'zbegim' qasidasi va 'Ruhlar isyoni' poemasining muallifi; Abdulla Oripov — O'zbekiston Respublikasi Davlat Madhiyasi matni muallifi",
+        "b": "Abdulla Oripov — 'O'zbegim' qasidasini yozgan",
+        "c": "Erkin Vohidov — Faqat bolalar uchun she'rlar yozgan",
+        "d": "Ikkalasi ham faqat dramatik asarlar yozgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "06650728-7caf-45de-9441-f9909030485b",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 26,
+      "question_text": "Muqimiy va Furqat ijodidagi yetakchi yo'nalish hamda ularning g me'azallaridagi asosiy mavzularni ko'rsating.",
+      "options": {
+        "a": "Demokratik va ma'rifatparvarlik yo me'nalishi; Vatan sog'inchi va ijtimoiy adolatsizlikka qarshi e'tiroz",
+        "b": "Faqat saroy madhiyalari va shohlarni ulug'lash",
+        "c": "Faqat diniy-tasavvufiy targ me me'ibot",
+        "d": "Faqat Yevropa adabiyotini tarjima qilish"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c34e15c1-8b67-4380-99db-d82b1e43a643",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 27,
+      "question_text": "Qaysi javobda imlo qoidalariga ko'ra tuturuq va ajratish belgisi (tuturuq/tutroq - ') to'g me'ri qo'llangan so'zlar berilgan?",
+      "options": {
+        "a": "A'lo, ma'nosiz, e'tibor, ma'muriyat, ta'kidlamoq",
+        "b": "Al'o, man'osiz, et'ibor, mam'uriyat",
+        "c": "A-lo, ma-nosiz, e-tibor, ma-muriyat",
+        "d": "Barcha so'zlarda tutroq belgisi tushirib qoldirilishi shart"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "254d3200-fc63-43c2-ae89-c6b8e2adf00e",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 28,
+      "question_text": "Qaysi qatorda berilgan so'zlar birikmasida uzviylik va sintaktik alaqadorlik to me'g'ri saqlangan?",
+      "options": {
+        "a": "Yuqori natijalarga erishgan talabalarga qimmatbaho sovg'alar topshirildi.",
+        "b": "Yuqori natijalarga erishgan talabalarga qimmatbaho sovg'alarni topshirildi.",
+        "c": "Yuqori natijalar erishgan talabalardan sovg'a topshirildi.",
+        "d": "Talabalar yuqori natija erishishdi sovg'a olishdi."
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "09ceb205-0c21-4941-83cf-e4ffcbfb0e69",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 29,
+      "question_text": "O'zbek tili leksikologiyasida 'tabu' va 'evfemizm' tushunchalari nimani anglatadi?",
+      "options": {
+        "a": "Tabu — Man qilingan (aytish nojoiz) so'zlar; Evfemizm — Man qilingan yoki qo'pol so'zlarni yumshatib, odob bilan ifodalash",
+        "b": "Tabu — Faqat yangi paydo bo'lgan neologizmlar",
+        "c": "Evfemizm — Faqat sheva so'zlar to me me me'plami",
+        "d": "Tabu va Evfemizm — Faqat iboralarga nisbatan qo'llaniladi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d0b2f39a-24ff-415a-81a0-63cef86724ff",
+      "test_id": "49769844-0533-4dd3-b135-d2678fd758c5",
+      "order_number": 30,
+      "question_text": "Qaysi adabiy tur va janr juftligi to'g me'ri ko'rsatilgan?",
+      "options": {
+        "a": "Epos (Nasr) — Roman, Qissa, Hikoya; Lirika (She'riyat) — Gazal, Qasida, Ruboiy; Drama — Tragediya, Komediya, Drama",
+        "b": "Epos — Faqat Ruboiy va Gazal",
+        "c": "Lirika — Faqat Roman va Qissa",
+        "d": "Drama — Faqat Doston va Hiko me'ya"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:18:57.089Z"
+}

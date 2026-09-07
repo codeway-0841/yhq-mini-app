@@ -1,0 +1,61 @@
+{
+  "name": "Funksiyalar va ularning grafiklari — Matematika test savollari",
+  "about": "Funksiyalar va ularning grafiklari",
+  "subject": "Matematika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/matematika/funksiyalar-va-ularning-grafiklari/savollar/",
+  "questionsCount": 5,
+  "questions": [
+    {
+      "question": "$2^{\\sin^2 x} + 2^{\\cos^2 x} = 2\\sqrt{2}$ tenglamaning $[0; 2\\pi]$ dagi ildizlari sonini toping.",
+      "options": [
+        "$2$",
+        "$4$",
+        "$6$",
+        "$8$"
+      ],
+      "correctAnswer": "$4$"
+    },
+    {
+      "question": "$4^{\\sin x} = 2^{1 + \\cos 2x}$ tenglamaning $[0; 2\\pi]$ dagi ildizlari sonini toping.",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "correctAnswer": "$2$"
+    },
+    {
+      "question": "$\\sin^2 x + \\sin^2 2x + \\sin^2 3x = \\frac{3}{2}$ tenglamaning $[0; \\pi)$ da nechta ildizi bor?",
+      "options": [
+        "$4$",
+        "$6$",
+        "$8$",
+        "$5$"
+      ],
+      "correctAnswer": "$6$"
+    },
+    {
+      "question": "$a \\in \\{-3, -2, -1, 0, 1, 2, 3, 4, 5\\}$ to'plamdan $ax^2 + (a+2)x > 0$ tengsizligi barcha $x > 0$ uchun o'rinli bo'ladigan $a$ ning nechta qiymati mavjud?",
+      "options": [
+        "$5$",
+        "$6$",
+        "$7$",
+        "$4$"
+      ],
+      "correctAnswer": "$6$"
+    },
+    {
+      "question": "$x^2 - 2|x| - 3 < 0$ tengsizligini qanoatlantiruvchi butun sonlar nechtasi?",
+      "options": [
+        "$4$",
+        "$5$",
+        "$6$",
+        "$3$"
+      ],
+      "correctAnswer": "$5$"
+    }
+  ],
+  "downloadedAt": "2026-09-07T19:00:18.102Z"
+}

@@ -1,0 +1,639 @@
+{
+  "info": {
+    "id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+    "subject_id": "0d3fa1b7-61fe-4f9d-8366-aa46d9d14224",
+    "title": "SAT Math - Variant 1",
+    "description": "SAT Mathematics Test (44 questions)",
+    "time_limit": 70,
+    "created_at": "2026-06-06T09:43:31.684518Z",
+    "updated_at": "2026-06-06T09:43:31.684518Z"
+  },
+  "subject": {
+    "id": "0d3fa1b7-61fe-4f9d-8366-aa46d9d14224",
+    "name": "SAT Mathematics",
+    "slug": "sat_math",
+    "category": "sat",
+    "time_limit": 180,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 44,
+  "questions": [
+    {
+      "id": "450ba530-98f2-438b-b291-428440872a21",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 1,
+      "question_text": "If x+5=12, what is the value of 3x?",
+      "options": {
+        "a": "7",
+        "b": "21",
+        "c": "36",
+        "d": "51"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "f1c376aa-326a-4f87-80b0-41d37237b570",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 2,
+      "question_text": "A taxi charges a flat fee of $3.00 plus $2.00 per mile. Which equation represents the total cost C for m miles?",
+      "options": {
+        "a": "C=3m+2",
+        "b": "C=2m+3",
+        "c": "C=5m",
+        "d": "C=6m"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "feaa4fc9-dff1-4b55-a946-b96681e06cb0",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 3,
+      "question_text": "What is the y-intercept of the graph of y=4x−9?",
+      "options": {
+        "a": "-0.4",
+        "b": "-4",
+        "c": "(0,−9)",
+        "d": "(−9,0)"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "af76bb75-9037-48f4-8913-a722b70c630e",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 4,
+      "question_text": "A rectangle has a length of 10 and a width of w. If the area is 60, what is the value of w?",
+      "options": {
+        "a": "6",
+        "b": "10",
+        "c": "50",
+        "d": "70"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "deee2034-bad4-493e-a866-5c5c4012f3cb",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 5,
+      "question_text": "Which value of x satisfies the inequality 2x−4>10?",
+      "options": {
+        "a": "5",
+        "b": "6",
+        "c": "7",
+        "d": "8"
+      },
+      "correct_option": "d",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "23d080b2-6337-4aac-9342-62cb999f68c9",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 6,
+      "question_text": "If f(x)=x2−3x, what is f(5)?",
+      "options": {
+        "a": "10",
+        "b": "15",
+        "c": "25",
+        "d": "40"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "f28f1bbb-0419-40e0-9d0b-f3f8993c7e0f",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 7,
+      "question_text": "A line passes through (0,0) and (2,6). What is its slope?",
+      "options": {
+        "a": "2",
+        "b": "3",
+        "c": "4",
+        "d": "6"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "54b30f74-4064-4036-818e-f975c37d40c4",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 8,
+      "question_text": "Solve for k: 4k​+1=5",
+      "options": {
+        "a": "12",
+        "b": "16",
+        "c": "20",
+        "d": "24"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "6b633d41-6636-406d-a4f9-4f10716549c6",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 9,
+      "question_text": "A bag contains 3 red balls and 7 blue balls. What is the probability of picking a red ball?",
+      "options": {
+        "a": "0.3",
+        "b": "0.7",
+        "c": "1.0",
+        "d": "0.21"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "2317043e-bf69-4709-b0c1-1226c1793523",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 10,
+      "question_text": "The expression (x2)(x5) is equivalent to:",
+      "options": {
+        "a": "x10",
+        "b": "x7",
+        "c": "2x7",
+        "d": "x3"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "cd66b0e2-8abd-4375-8a5f-cc5a350e1ef8",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 11,
+      "question_text": "If 2x+3y=12 and y=2, what is x?",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "6",
+        "d": "9"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "d33bc630-5d81-4236-b11f-35cb801ad6fe",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 12,
+      "question_text": "What is the positive solution to x2−16=0?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "8",
+        "d": "16"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "39f3908d-f92e-48fa-944c-ac7763c42fbc",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 13,
+      "question_text": "A store offers a 20% discount on a $50 shirt. What is the new price?",
+      "options": {
+        "a": "$10",
+        "b": "$30",
+        "c": "$40",
+        "d": "$45"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "a30bdc4f-782b-4137-80f5-a6f11cd1d6dc",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 14,
+      "question_text": "What is the sum of the angles in a triangle?",
+      "options": {
+        "a": "90∘",
+        "b": "180∘",
+        "c": "270∘",
+        "d": "360∘"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "889ae918-62db-4402-b38a-568c98d6ea1e",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 15,
+      "question_text": "If |x - 3| = 5, what is the set of all values of x?",
+      "options": {
+        "a": "{8, -2}",
+        "b": "{2, -8}",
+        "c": "{8, 2}",
+        "d": "{5, 3}"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "195aaf60-15a2-430c-931a-b28ebd9b0f3d",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 16,
+      "question_text": "A circle has a radius of 5. What is its circumference?",
+      "options": {
+        "a": "5π",
+        "b": "10π",
+        "c": "25π",
+        "d": "50π"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "9756d06f-1856-441f-a64d-b0424ce89cc8",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 17,
+      "question_text": "Find the value of x if 2(x+4)=20.",
+      "options": {
+        "a": "6",
+        "b": "8",
+        "c": "10",
+        "d": "12"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "45307926-7771-49fc-8ef9-30be6ea20cad",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 18,
+      "question_text": "Which of the following is equivalent to 3(x−2)+4x?",
+      "options": {
+        "a": "7x−2",
+        "b": "7x−6",
+        "c": "x−6",
+        "d": "x−2"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "0a25dee0-b2ea-42cc-8a6a-dbfee4a8a203",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 19,
+      "question_text": "A car travels 150 miles in 3 hours. What is its average speed?",
+      "options": {
+        "a": "45 mph",
+        "b": "50 mph",
+        "c": "55 mph",
+        "d": "60 mph"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "0078f738-a6f4-4dde-ad05-1a56d4373a72",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 20,
+      "question_text": "What is the value of 64​+36​?",
+      "options": {
+        "a": "10",
+        "b": "14",
+        "c": "48",
+        "d": "100"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "5e60bc9b-60ba-4348-83b1-c9d27d51bb45",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 21,
+      "question_text": "If a=2 and b=−3, what is a2−b?",
+      "options": {
+        "a": "1",
+        "b": "7",
+        "c": "-5",
+        "d": "13"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "795d4b8b-a8c9-4581-9e03-52da489dc300",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 22,
+      "question_text": "Solve the system: x+y=10 and x−y=2. What is x?",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "6",
+        "d": "8"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "75e47151-5c94-41c0-a38e-ce904e24a253",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 23,
+      "question_text": "If f(x)=3x2−5x+2, what is the value of f(−2)?",
+      "options": {
+        "a": "4",
+        "b": "12",
+        "c": "20",
+        "d": "24"
+      },
+      "correct_option": "d",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "f01cd888-d970-42ac-aa18-d9bb1039379a",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 24,
+      "question_text": "A line in the xy-plane passes through (−1,4) and (2,10). What is its equation?",
+      "options": {
+        "a": "y=2x+6",
+        "b": "y=3x+7",
+        "c": "y=2x+4",
+        "d": "y=6x+10"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "1da76138-adbe-4166-9075-1e67423a1cf0",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 25,
+      "question_text": "What is the solution to the system: 3x+2y=16 and x−y=2?",
+      "options": {
+        "a": "(4, 2)",
+        "b": "(2, 4)",
+        "c": "(6, -1)",
+        "d": "(4, -2)"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "8f275634-eac1-443b-bb5d-75246841773a",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 26,
+      "question_text": "If 23x−1=32, what is the value of x?",
+      "options": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "99194aaf-a866-453e-ac3f-28b9046153bd",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 27,
+      "question_text": "A circle has the equation (x−3)2+(y+2)2=25. What is its center and radius?",
+      "options": {
+        "a": "(3, -2), r=5",
+        "b": "(-3, 2), r=5",
+        "c": "(3, -2), r=25",
+        "d": "(-3, 2), r=25"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "47f1f4a7-8531-4d9a-ac7f-cea6ee347ef6",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 28,
+      "question_text": "Solve for x: x2−8x+15=0. What is the sum of the solutions?",
+      "options": {
+        "a": "3",
+        "b": "5",
+        "c": "8",
+        "d": "15"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "228dc26a-cf7f-406b-89db-9a668d969e24",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 29,
+      "question_text": "If tan(θ)=43​ in a right triangle, what is sin(θ)?",
+      "options": {
+        "a": "54​",
+        "b": "53​",
+        "c": "35​",
+        "d": "34​"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "5a52317e-4d17-4ac0-b640-542a398346e6",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 30,
+      "question_text": "A population of bacteria doubles every 4 hours. If it starts at 100, what is it after 12 hours?",
+      "options": {
+        "a": "300",
+        "b": "400",
+        "c": "800",
+        "d": "1200"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "867684bf-db95-47ce-aec8-418682bc08fc",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 31,
+      "question_text": "The expression x+3x2−9​ is equivalent to:",
+      "options": {
+        "a": "x+3",
+        "b": "x−3",
+        "c": "x2+3",
+        "d": "x−9"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "c572d4d8-a488-4c0c-a9f6-4704a5ea8910",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 32,
+      "question_text": "If a+b=10 and a2−b2=40, what is a−b?",
+      "options": {
+        "a": "2",
+        "b": "4",
+        "c": "10",
+        "d": "20"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "f632c839-2c25-432c-a77a-79f141ea36c9",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 33,
+      "question_text": "In the xy-plane, the graph of y=x2+4x+4 has how many x-intercepts?",
+      "options": {
+        "a": "0",
+        "b": "1",
+        "c": "2",
+        "d": "3"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "c847e897-d24b-4016-955f-6ea962a6afe2",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 34,
+      "question_text": "What is the area of a circle with a diameter of 12?",
+      "options": {
+        "a": "6π",
+        "b": "12π",
+        "c": "36π",
+        "d": "144π"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "1464067e-6108-445a-bc62-82083a24a196",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 35,
+      "question_text": "If 3(2x−1)=4(x+5), what is the value of x?",
+      "options": {
+        "a": "2026-05-08 00:00:00",
+        "b": "2026-05-11 00:00:00",
+        "c": "12",
+        "d": "23"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "44d4a9e1-661e-4895-848c-9d072a75002c",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 36,
+      "question_text": "What is the median of the data set: 5, 12, 7, 18, 9, 21, 10?",
+      "options": {
+        "a": "9",
+        "b": "10",
+        "c": "12",
+        "d": "18"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "4f8faa70-0b4a-4c0e-9781-02dbb4a16871",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 37,
+      "question_text": "A cylinder has a radius of 3 and height of 5. What is its volume?",
+      "options": {
+        "a": "15π",
+        "b": "30π",
+        "c": "45π",
+        "d": "75π"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "9dbf43d1-9630-4ded-87b3-0cc37b20297c",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 38,
+      "question_text": "If x>0 and x2=z, what is x6 in terms of z?",
+      "options": {
+        "a": "z2",
+        "b": "z3",
+        "c": "3z",
+        "d": "z​"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "8cb4f450-fe83-48a0-ac3d-5c57c94403d4",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 39,
+      "question_text": "What is the slope of a line perpendicular to y=−31​x+5?",
+      "options": {
+        "a": "-3",
+        "b": "31​",
+        "c": "3",
+        "d": "-5"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "43050660-b266-4804-bbdd-a09876515d29",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 40,
+      "question_text": "In a triangle, one angle is 40∘ and another is 60∘. What is the third angle?",
+      "options": {
+        "a": "60∘",
+        "b": "80∘",
+        "c": "100∘",
+        "d": "120∘"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "eebf601e-3f17-498a-b905-70d7d0b7d68c",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 41,
+      "question_text": "If |2x + 4| = 12, what is the value of x?",
+      "options": {
+        "a": "-4",
+        "b": "0",
+        "c": "4",
+        "d": "7"
+      },
+      "correct_option": "c",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "2b110d47-b1e5-4067-8bd7-4b1edcb20321",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 42,
+      "question_text": "A box contains 4 red, 5 blue, and 6 green marbles. What is the probability of NOT picking blue?",
+      "options": {
+        "a": "31​",
+        "b": "32​",
+        "c": "53​",
+        "d": "155​"
+      },
+      "correct_option": "b",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "f554c5cb-ba2f-4da6-8638-673805731f04",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 43,
+      "question_text": "If i=−1​, what is the value of i2+i4?",
+      "options": {
+        "a": "0",
+        "b": "-1",
+        "c": "1",
+        "d": "2i"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    },
+    {
+      "id": "188ef116-6494-488c-bd9b-669249705705",
+      "test_id": "ac18e5a4-5a90-4f02-8e65-1a6739496721",
+      "order_number": 44,
+      "question_text": "The vertex of the parabola y=(x−4)2+7 is located at:",
+      "options": {
+        "a": "(4, 7)",
+        "b": "(-4, 7)",
+        "c": "(4, -7)",
+        "d": "(7, 4)"
+      },
+      "correct_option": "a",
+      "created_at": "2026-06-06T09:43:33.750908Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:19:44.898Z"
+}

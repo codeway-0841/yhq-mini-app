@@ -62,9 +62,15 @@ export default function XatolarPage() {
       })
   }, [wrongQuestions, topics, lang])
 
-  const startPractice = (ids: number[], title: string) => {
+  const startPractice = (ids: number[], title: string, serverSelector?: 'mistakes') => {
     if (ids.length === 0) return
-    navigate('/test/1', { state: { questionIds: ids, title } })
+    navigate('/test/1', {
+      state: {
+        questionIds: ids,
+        title,
+        ...(serverSelector ? { mode: serverSelector, serverSelector } : {}),
+      },
+    })
   }
 
   /** Top-10 eng ko'p xato qilingan savollar (xato urinishlari soni badge) */
@@ -110,7 +116,9 @@ export default function XatolarPage() {
                 <p className="text-[11px] text-psubtle mt-1">{total} {tt('unansweredWord')}</p>
               </div>
             </div>
-            <button onClick={() => startPractice(wrongQuestions.map((q) => q.id), tt('fixMistakes'))}
+            <button onClick={() => startPractice(
+              wrongQuestions.map((q) => q.id), tt('fixMistakes'), 'mistakes',
+            )}
               className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}

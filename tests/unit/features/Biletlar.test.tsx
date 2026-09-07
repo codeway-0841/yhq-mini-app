@@ -199,5 +199,8 @@ describe('Biletlar', () => {
     expect(opts.state.questionIds).toHaveLength(30)
     expect(opts.state.questionIds[0]).toBe(1)
     expect(opts.state.questionIds[29]).toBe(30)
+    expect(opts.state).toMatchObject({
+      mode: 'topic', serverSelector: { type: 'topic', topicId: 101 },
+    })
   })
 })

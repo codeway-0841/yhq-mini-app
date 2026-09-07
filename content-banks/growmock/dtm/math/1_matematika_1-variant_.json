@@ -1,0 +1,446 @@
+{
+  "info": {
+    "id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+    "subject_id": "9990e1b4-6167-43f0-aa37-b7a8c3944c52",
+    "title": "Matematika 1-variant ",
+    "description": "Variant: Matematika Milliy Sertifikat Variant 1 (Oliy Qiyinchilik)",
+    "time_limit": 30,
+    "created_at": "2026-08-29T07:58:50.130827Z",
+    "updated_at": "2026-08-29T07:58:50.130827Z"
+  },
+  "subject": {
+    "id": "9990e1b4-6167-43f0-aa37-b7a8c3944c52",
+    "name": "Matematika",
+    "slug": "math",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "9a5bd0fb-a84e-4f5f-b45f-0fa479062ed0",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 1,
+      "question_text": "f(x) = x^3 - 3x^2 + 4x + 5 funksiyaning [0; 3] kesmadagi eng katta va eng kichik qiymatlari yig'indisini toping.",
+      "options": {
+        "a": "19",
+        "b": "21",
+        "c": "17",
+        "d": "15"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8f3ce186-6610-49c4-94e9-135e1d9f1aff",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 2,
+      "question_text": "Tenglamani yeching: log_2(x - 1) + log_2(x + 2) = 2.",
+      "options": {
+        "a": "x = 2",
+        "b": "x = -3",
+        "c": "x = 3",
+        "d": "x = 4"
+      },
+      "correct_option": "a",
+      "explanation": "Aniqlanish sohasi: $x - 1 > 0 \\implies x > 1$.\n\nLogarifm xossasidan foydalanamiz:\n$$\\log_2((x - 1)(x + 2)) = 2 \\implies (x - 1)(x + 2) = 2^2$$\n$$x^2 + x - 2 = 4 \\implies x^2 + x - 6 = 0$$\n$$(x + 3)(x - 2) = 0 \\implies x_1 = 2, \\quad x_2 = -3$$\n\n$x > 1$ shartiga faqat $x = 2$ mos keladi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "88023253-c82c-46a2-8108-dc70fea08bda",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 3,
+      "question_text": "Tengsizlikni yeching: (x - 3) / (x^2 - 5x + 6) >= 0.",
+      "options": {
+        "a": "(2; 3) U (3; +inf)",
+        "b": "(2; +inf)",
+        "c": "[3; +inf)",
+        "d": "(2; 3)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7d1495dc-642a-4be4-8fd5-6c8313960e1b",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 4,
+      "question_text": "Vektorlar a = (2; -1; 3) va b = (1; x; -2) berilgan. Agar a va b vektorlar skalar ko'paytmasi -5 ga teng bo'lsa, x ning qiymatini toping.",
+      "options": {
+        "a": "x = 1",
+        "b": "x = -1",
+        "c": "x = 2",
+        "d": "x = -2"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8c61a209-af3c-4a72-acfe-546c0d7e2959",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 5,
+      "question_text": "Aritmetik progressiyada a_3 + a_7 = 20 bo'lsa, ushbu progressiyaning dastlabki 9 ta hadi yig'indisi S_9 ni toping.",
+      "options": {
+        "a": "90",
+        "b": "180",
+        "c": "100",
+        "d": "81"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2b007a10-8ad7-4fcb-9ea1-155862b2b14c",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 6,
+      "question_text": "Uchburchakning ikkita tomoni 5 cm va 8 cm ga, ular orasidagi burchak 60° ga teng. Uchburchakning uchinchchi tomoni uzunligini toping.",
+      "options": {
+        "a": "7 cm",
+        "b": "Sqrt(39) cm",
+        "c": "Sqrt(129) cm",
+        "d": "9 cm"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "607e8280-c0dd-42a4-a7cc-17a63715980c",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 7,
+      "question_text": "Integralni hisoblang: Integral_0^1 (3x^2 + 2x + 1) dx.",
+      "options": {
+        "a": "3",
+        "b": "4",
+        "c": "2",
+        "d": "5"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "465d3275-b181-4fb0-a2f0-a753e44b7663",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 8,
+      "question_text": "Tenglamalar sistemasini yeching va x + y ning qiymatini toping: { 2x + y = 7 ; 3x - 2y = 7 }.",
+      "options": {
+        "a": "4",
+        "b": "5",
+        "c": "3",
+        "d": "6"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c7112b83-82b2-4723-aa82-8ee3726f5d8d",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 9,
+      "question_text": "Muntazam to'rtburchakli piramidaning asosining tomoni 6 cm, balandligi 4 cm. Piramidaning to'la sirti yuzini (cm^2) toping.",
+      "options": {
+        "a": "96",
+        "b": "84",
+        "c": "60",
+        "d": "108"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "55bbab1d-a569-45f3-bfcc-9588d31fb71d",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 10,
+      "question_text": "Agar sin(alpha) = 3/5 va alpha o'tkir burchak (0 < alpha < pi/2) bo'lsa, cos(2*alpha) ning qiymatini toping.",
+      "options": {
+        "a": "7/25",
+        "b": "24/25",
+        "c": "-7/25",
+        "d": "12/25"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e0d88d4d-0c9d-4949-9d31-0073754c6cdb",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 11,
+      "question_text": "Sferaga radiusi 3 cm va balandligi 4 cm bo'lgan to'g'ri doiraviy silindr ichki chizilgan. Sferaning radiusini (cm) toping.",
+      "options": {
+        "a": "Sqrt(13)",
+        "b": "5",
+        "c": "Sqrt(7)",
+        "d": "4"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e8d925dc-5f3b-4e25-b958-e8b556dd8ff9",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 12,
+      "question_text": "Cheksiz kamayuvchi geometrik progressiyaning birinchi hadi b_1 = 6 va maxraji q = 1/3 ga teng. Progressiya barcha hadlari yig'indisini toping.",
+      "options": {
+        "a": "9",
+        "b": "12",
+        "c": "8",
+        "d": "18"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5b329a95-cf96-484b-b82b-b3ca63aee83c",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 13,
+      "question_text": "Qaysi qiymatlarda k ning kx^2 - 4x + k = 0 kvadrat tenglama ikkita har xil haqiqiy ildizga ega bo'ladi?",
+      "options": {
+        "a": "(-2; 0) U (0; 2)",
+        "b": "(-2; 2)",
+        "c": "(-inf; -2) U (2; +inf)",
+        "d": "(0; 2)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "4f3fdf85-a15b-4111-9dab-fe64d600a650",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 14,
+      "question_text": "Trapetsiyaning asoslari 4 cm va 10 cm, balandligi 6 cm. Ushbu trapetsiyaning yuzini (cm^2) toping.",
+      "options": {
+        "a": "42",
+        "b": "84",
+        "c": "24",
+        "d": "60"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1cd80419-dfa1-4f42-ac0f-3fda9f64b520",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 15,
+      "question_text": "Tenglamani yeching: 3^(x + 1) - 3^x = 18.",
+      "options": {
+        "a": "x = 2",
+        "b": "x = 1",
+        "c": "x = 3",
+        "d": "x = 0"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "02a502dd-2c6e-4409-b69f-ae5f4ba002eb",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 16,
+      "question_text": "Qutida 4 ta oq va 6 ta qora shar bor. Tavakkaliga olingan 2 ta sharning ikkalasi ham oq bo'lishi ehtimolini toping.",
+      "options": {
+        "a": "2/15",
+        "b": "4/25",
+        "c": "1/5",
+        "d": "2/9"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "1ab5188e-8a2c-4039-bb19-3bf6ebd36d78",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 17,
+      "question_text": "f(x) = e^(2x) * cos(x) funksiyaning hosilasi f'(0) ning qiymatini toping.",
+      "options": {
+        "a": "2",
+        "b": "1",
+        "c": "0",
+        "d": "3"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0a8e4812-cd2c-446e-bfc7-82e114650a14",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 18,
+      "question_text": "A(1; 3) va B(5; 7) nuqta berilgan. AB kesma o'rtasining koordinatalarini toping.",
+      "options": {
+        "a": "(3; 5)",
+        "b": "(4; 5)",
+        "c": "(2; 4)",
+        "d": "(3; 4)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e9e3c475-fe7a-4750-8438-ca741c41924e",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 19,
+      "question_text": "C_n^2 = 21 tenglamani qanoatlantiruvchi natural n ning qiymatini toping.",
+      "options": {
+        "a": "n = 7",
+        "b": "n = 6",
+        "c": "n = 8",
+        "d": "n = 9"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "aa075a34-c74c-437b-beb4-a9853ce6ff2e",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 20,
+      "question_text": "Doiraning yuzi 36*pi cm^2 bo'lsa, shu doira chegaralovchi aylananing uzunligini (cm) toping.",
+      "options": {
+        "a": "12*pi",
+        "b": "6*pi",
+        "c": "18*pi",
+        "d": "24*pi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b77aebd2-4752-49c0-8d2d-9e26fda89360",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 21,
+      "question_text": "Tengsizlikni yeching: |2x - 5| <= 3.",
+      "options": {
+        "a": "[1; 4]",
+        "b": "(1; 4)",
+        "c": "[-1; 4]",
+        "d": "[1; 5]"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "68d6ec4d-6433-40c5-9875-72db3ff0598b",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 22,
+      "question_text": "Muntazam oltiburchakning ichki burchaklari yig'indisi necha gradusga teng?",
+      "options": {
+        "a": "720°",
+        "b": "540°",
+        "c": "360°",
+        "d": "900°"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "fc72d907-5803-4a4d-86dd-d1f48edbcd0a",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 23,
+      "question_text": "log_3(x^2 - 1) <= 1 tengsizlikning eng kichik va eng katta butun yechimlari ko'paytmasini toping.",
+      "options": {
+        "a": "-4",
+        "b": "-2",
+        "c": "4",
+        "d": "2"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "293d391e-6f42-423b-b602-a7d42801b71a",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 24,
+      "question_text": "Silindr yon sirtining yuzi 40*pi cm^2 va balandligi 5 cm. Silindr hajmini (cm^3) toping.",
+      "options": {
+        "a": "80*pi",
+        "b": "40*pi",
+        "c": "100*pi",
+        "d": "160*pi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "6a3369c9-c3f8-4ec8-afc9-0d9d5b5db0d4",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 25,
+      "question_text": "Agar lg 2 = a va lg 3 = b bo'lsa, lg 72 ni a va b orqali ifodalang.",
+      "options": {
+        "a": "3a + 2b",
+        "b": "2a + 3b",
+        "c": "a + 2b",
+        "d": "3a + b"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "378f7d3d-782a-4d85-bdd2-248c9cf78031",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 26,
+      "question_text": "y = x^2 - 4x + 3 parabola uchining koordinatalarini toping.",
+      "options": {
+        "a": "(2; -1)",
+        "b": "(-2; 1)",
+        "c": "(2; 1)",
+        "d": "(-2; -1)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3ef5abb9-ba1f-4f05-af43-bb65385cf53b",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 27,
+      "question_text": "Uchburchakning uchta tomoni 6 cm, 8 cm va 10 cm. Shu uchburchakka tashqi chizilgan aylana radiusini (cm) toping.",
+      "options": {
+        "a": "5 cm",
+        "b": "4 cm",
+        "c": "6 cm",
+        "d": "10 cm"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5838fdea-b9b6-4e59-864b-78ff314f2666",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 28,
+      "question_text": "Tenglamani yeching: cos(2x) = 0.",
+      "options": {
+        "a": "pi/4 + pi*k/2, k in Z",
+        "b": "pi/2 + pi*k, k in Z",
+        "c": "pi/4 + pi*k, k in Z",
+        "d": "pi*k, k in Z"
+      },
+      "correct_option": "a",
+      "explanation": "Ushbu trigonometrik tenglamani yechish uchun kosinus funksiyasining xususiy hollaridan foydalanamiz.\n\n**1-bosqich: Kosinus funksiyasining nollarini aniqlash.**\n\nUmumiy holda, $\\cos(\\alpha) = 0$ tenglamasining ildizlari birlik aylanada vertikal o'qda (ya'ni $\\frac{\\pi}{2}$ va $\\frac{3\\pi}{2}$ nuqtalarida) yotadi va quyidagi formula orqali ifodalanadi:\n$$\\alpha = \\frac{\\pi}{2} + \\pi k, \\quad k \\in \\mathbb{Z}$$\n\n**2-bosqich: Berilgan tenglamani yechish.**\n\nBizning tenglamamizda argument $\\alpha = 2x$ ga teng. Shuning uchun:\n$$2x = \\frac{\\pi}{2} + \\pi k, \\quad k \\in \\mathbb{Z}$$\n\n**3-bosqich: $x$ ning qiymatini topish.**\n\nTenglikning ikkala tomonini $2$ ga bo'lamiz:\n$$x = \\frac{\\frac{\\pi}{2} + \\pi k}{2}$$\n\n$$x = \\frac{\\pi}{4} + \\frac{\\pi k}{2}, \\quad k \\in \\mathbb{Z}$$\n\nDemak, tenglamaning yechimi $x = \\frac{\\pi}{4} + \\frac{\\pi k}{2}, \\quad k \\in \\mathbb{Z}$ bo'ladi.\n\nTo'g'ri javob: **A**",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "17a81bf9-ecb1-4092-af36-dc802af13c5e",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 29,
+      "question_text": "Konusning yasovchisi 10 cm va asosi radiusi 6 cm. Konusning hajmini (cm^3) toping.",
+      "options": {
+        "a": "96*pi",
+        "b": "288*pi",
+        "c": "120*pi",
+        "d": "144*pi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5a2fee0f-b3a5-49ad-9479-9f439a6aff6d",
+      "test_id": "d2a92667-73b2-40b5-a5b1-7357e72acf56",
+      "order_number": 30,
+      "question_text": "Limitni hisoblang: Lim (x -> 2) (x^2 - 4) / (x - 2).",
+      "options": {
+        "a": "4",
+        "b": "2",
+        "c": "0",
+        "d": "Mavjud emas"
+      },
+      "correct_option": "a",
+      "explanation": "Suratdagi qisqa ko'paytirish formulasidan foydalanib, ifodani ko'paytuvchilarga ajratamiz va qisqartiramiz:\n\n$$\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} = \\lim_{x \\to 2} \\frac{(x - 2)(x + 2)}{x - 2} = \\lim_{x \\to 2} (x + 2) = 2 + 2 = 4$$\n\nTo'g'ri javob: **A) 4**",
+      "created_at": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:18:33.177Z"
+}

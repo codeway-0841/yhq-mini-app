@@ -16,6 +16,7 @@ import { useAppStore }         from './useAppStore'
 import { useDailyStore }       from './useDailyStore'
 import { useAdaptiveStore }    from './useAdaptiveStore'
 import { useTestSessionStore } from './useTestSessionStore'
+import { useServerTestSessionStore } from './useServerTestSessionStore'
 import { invalidateLeaderboardCache } from '../lib/leaderboard-cache'
 import { invalidateAchievementsCache } from '../lib/achievements-cache'
 
@@ -29,6 +30,7 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-daily',
   'yhq-adaptive-store',
   'yhq-test-session',
+  'yhq-server-test-session',
   // AI kunlik test sessiyasi (javoblar qoralamasi — features/ai-test)
   'yhq-ai-test',
   // Bearer sessiya (shared/lib/session.ts) — akkaunt reset'da eski account
@@ -71,6 +73,7 @@ export function resetAccountState(): void {
   useDailyStore.getState().resetAccount()
   useAdaptiveStore.getState().resetAll()
   useTestSessionStore.getState().clear()
+  useServerTestSessionStore.getState().clear()
   invalidateLeaderboardCache() // isYou bayroqlari yangi account'niki bo'lsin
   invalidateAchievementsCache()
   if (typeof localStorage !== 'undefined') {

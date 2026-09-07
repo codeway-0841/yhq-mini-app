@@ -10,7 +10,9 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
 
   useEffect(() => {
     const el = stripRef.current?.children[current]
-    el?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+    if (el instanceof HTMLElement && typeof el.scrollIntoView === 'function') {
+      el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+    }
   }, [current])
 
   return (

@@ -18,6 +18,7 @@ interface TicketItem {
   title: string
   subtitle?: string
   chapterId?: string
+  topicId?: number
   questionCount: number
   questionIds: number[]
 }
@@ -137,6 +138,7 @@ export default function Biletlar() {
           title: `${ticketNum} - ${tt('ticketWord')}`,
           subtitle,
           chapterId,
+          topicId: topic.id,
           questionCount: ordered.length,
           questionIds: ordered.map((q) => q.id),
         })
@@ -188,6 +190,9 @@ export default function Biletlar() {
       state: {
         questionIds: ticket.questionIds,
         title: ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title,
+        ...(subjectId === 'fizika' && ticket.topicId
+          ? { mode: 'topic', serverSelector: { type: 'topic', topicId: ticket.topicId } }
+          : {}),
       },
     })
   }

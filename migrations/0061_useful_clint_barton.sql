@@ -1,0 +1,2 @@
+ALTER TABLE "question_banks" ADD COLUMN "content_version" integer DEFAULT 1 NOT NULL;--> statement-breakpoint
+ALTER TABLE "question_banks" ADD CONSTRAINT "chk_question_banks_version" CHECK ("question_banks"."content_version" > 0);

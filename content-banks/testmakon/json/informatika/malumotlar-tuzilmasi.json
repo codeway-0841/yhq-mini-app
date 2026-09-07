@@ -1,0 +1,131 @@
+{
+  "name": "Ma'lumotlar tuzilmasi — Informatika test savollari",
+  "about": "Ma'lumotlar tuzilmasi",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/malumotlar-tuzilmasi/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "Ma'lumotlar tuzilmasi (data structure) nima?",
+      "options": [
+        "Faqat sonlarni saqlash usuli",
+        "Ma'lumotlarni samarali saqlash, tashkil etish va ularga murojaat qilish usuli",
+        "Dasturlash tili",
+        "Internet protokoli"
+      ],
+      "correctAnswer": "Ma'lumotlarni samarali saqlash, tashkil etish va ularga murojaat qilish usuli"
+    },
+    {
+      "question": "Stek (stack) qanday ma'lumotlar tuzilmasi?",
+      "options": [
+        "Birinchi kirgan — birinchi chiqadi (FIFO)",
+        "Oxirgi kirgan — birinchi chiqadi (LIFO)",
+        "Tasodifiy tartibda chiqadi",
+        "Faqat o'rtadan element olinadi"
+      ],
+      "correctAnswer": "Oxirgi kirgan — birinchi chiqadi (LIFO)"
+    },
+    {
+      "question": "Navbat (queue) qanday ma'lumotlar tuzilmasi?",
+      "options": [
+        "Oxirgi kirgan — birinchi chiqadi (LIFO)",
+        "Birinchi kirgan — birinchi chiqadi (FIFO)",
+        "Faqat o'rtadan element olinadi",
+        "Tasodifiy tartibda chiqadi"
+      ],
+      "correctAnswer": "Birinchi kirgan — birinchi chiqadi (FIFO)"
+    },
+    {
+      "question": "Stekda element qo'shish operatsiyasi qanday nomlanadi?",
+      "options": [
+        "Enqueue",
+        "Dequeue",
+        "Push",
+        "Insert"
+      ],
+      "correctAnswer": "Push"
+    },
+    {
+      "question": "Stekdan element olish operatsiyasi qanday nomlanadi?",
+      "options": [
+        "Push",
+        "Pop",
+        "Enqueue",
+        "Delete"
+      ],
+      "correctAnswer": "Pop"
+    },
+    {
+      "question": "Ro'yxat (linked list) nima?",
+      "options": [
+        "Faqat sonlar saqlanadigan massiv",
+        "Har bir element (tugun) keyingi elementga ko'rsatgich (pointer) ushlaydigan chiziqli tuzilma",
+        "Ikki o'lchamli jadval",
+        "Tarmoqlanuvchi tuzilma"
+      ],
+      "correctAnswer": "Har bir element (tugun) keyingi elementga ko'rsatgich (pointer) ushlaydigan chiziqli tuzilma"
+    },
+    {
+      "question": "Daraxt (tree) tuzilmasida ildiz (root) nima?",
+      "options": [
+        "Eng pastdagi tugun",
+        "Daraxtning yuqorisidagi bosh tugun — ota-tugunsiz yagona tugun",
+        "Barg tugun",
+        "O'rtadagi tugun"
+      ],
+      "correctAnswer": "Daraxtning yuqorisidagi bosh tugun — ota-tugunsiz yagona tugun"
+    },
+    {
+      "question": "Lug'at (dictionary/hash map) nima?",
+      "options": [
+        "Faqat harflardan iborat tuzilma",
+        "Kalit-qiymat (key-value) juftlarini saqlovchi tuzilma",
+        "Faqat sonlar ro'yxati",
+        "Ikki o'lchamli massiv"
+      ],
+      "correctAnswer": "Kalit-qiymat (key-value) juftlarini saqlovchi tuzilma"
+    },
+    {
+      "question": "Daraxtdagi barg (leaf) tugun nima?",
+      "options": [
+        "Farzand tugunlari bo'lmagan tugun",
+        "Faqat bitta farzandi bor tugun",
+        "Ildiz tugun",
+        "Ikki farzandi bor tugun"
+      ],
+      "correctAnswer": "Farzand tugunlari bo'lmagan tugun"
+    },
+    {
+      "question": "Python da stek qanday amalga oshirilishi mumkin?",
+      "options": [
+        "Faqat maxsus kutubxona orqali",
+        "List yordamida — append() push, pop() esa pop uchun",
+        "Dictionary yordamida",
+        "Tuple yordamida"
+      ],
+      "correctAnswer": "List yordamida — append() push, pop() esa pop uchun"
+    },
+    {
+      "question": "Navbatga element qo'shish operatsiyasi qanday nomlanadi?",
+      "options": [
+        "Push",
+        "Pop",
+        "Enqueue",
+        "Peek"
+      ],
+      "correctAnswer": "Enqueue"
+    },
+    {
+      "question": "Navbatdan element olish operatsiyasi qanday nomlanadi?",
+      "options": [
+        "Push",
+        "Enqueue",
+        "Dequeue",
+        "Insert"
+      ],
+      "correctAnswer": "Dequeue"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:41.467Z"
+}

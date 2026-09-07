@@ -1,0 +1,201 @@
+{
+  "name": "Kompyuter tarmoqlari va Internet — Informatika test savollari",
+  "about": "Kompyuter tarmoqlari va Internet",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/kompyuter-tarmoqlari-va-internet/savollar/",
+  "questionsCount": 19,
+  "questions": [
+    {
+      "question": "OSI modelida qancha qatlam (layer) mavjud?",
+      "options": [
+        "5",
+        "4",
+        "7",
+        "6"
+      ],
+      "correctAnswer": "7"
+    },
+    {
+      "question": "TCP va UDP o'rtasidagi asosiy farq nima?",
+      "options": [
+        "TCP — ulanishsiz, tez; UDP — ulanishli, ishonchli",
+        "TCP — ulanishli, ishonchli, tartibli yetkazib berish; UDP — ulanishsiz, tez, lekin yo'qolgan paketlar qayta yuborilmaydi",
+        "TCP faqat video uchun, UDP faqat matn uchun",
+        "Ular bir xil — faqat nomi farqli"
+      ],
+      "correctAnswer": "TCP — ulanishli, ishonchli, tartibli yetkazib berish; UDP — ulanishsiz, tez, lekin yo'qolgan paketlar qayta yuborilmaydi"
+    },
+    {
+      "question": "IP manzil (IPv4) nechta bitdan iborat?",
+      "options": [
+        "64 bit",
+        "16 bit",
+        "128 bit",
+        "32 bit"
+      ],
+      "correctAnswer": "32 bit"
+    },
+    {
+      "question": "HTTP va HTTPS o'rtasidagi asosiy farq nima?",
+      "options": [
+        "HTTP tezroq ishlaydi",
+        "HTTPS TLS/SSL orqali shifrlangan — ma'lumotlar xavfsiz uzatiladi; HTTP ochiq (shifrsiz)",
+        "HTTPS faqat banklar uchun",
+        "HTTP va HTTPS bir xil — faqat port farqli"
+      ],
+      "correctAnswer": "HTTPS TLS/SSL orqali shifrlangan — ma'lumotlar xavfsiz uzatiladi; HTTP ochiq (shifrsiz)"
+    },
+    {
+      "question": "DNS (Domain Name System) nima uchun kerak?",
+      "options": [
+        "Internet tezligini oshirish uchun",
+        "Domen nomlarini (masalan google.com) IP manzillariga aylantirish uchun",
+        "Fayllarni yuklash uchun",
+        "Parollarni saqlash uchun"
+      ],
+      "correctAnswer": "Domen nomlarini (masalan google.com) IP manzillariga aylantirish uchun"
+    },
+    {
+      "question": "Router (yo'riqnoma) va Switch (kommutator) o'rtasidagi farq nima?",
+      "options": [
+        "Router — Layer 2 da ishlaydi; Switch — Layer 3 da",
+        "Router — turli tarmoqlar o'rtasida paketlarni yo'naltiradi (Layer 3); Switch — bir tarmoq ichida MAC manzil bo'yicha ramkalarni yo'naltiradi (Layer 2)",
+        "Ular bir xil qurilma — faqat nomi farqli",
+        "Switch faqat simsiz tarmoqlarda ishlatiladi"
+      ],
+      "correctAnswer": "Router — turli tarmoqlar o'rtasida paketlarni yo'naltiradi (Layer 3); Switch — bir tarmoq ichida MAC manzil bo'yicha ramkalarni yo'naltiradi (Layer 2)"
+    },
+    {
+      "question": "Subnet mask (quyi tarmoq niqobi) nima uchun ishlatiladi?",
+      "options": [
+        "Internet tezligini cheklash uchun",
+        "IP manzilning tarmoq qismi va host qismini ajratish uchun",
+        "Paketlarni shifrlash uchun",
+        "DNS manzillarini saqlash uchun"
+      ],
+      "correctAnswer": "IP manzilning tarmoq qismi va host qismini ajratish uchun"
+    },
+    {
+      "question": "FTP protokoli qanday port raqamlarida ishlaydi?",
+      "options": [
+        "80 va 443",
+        "20 va 21",
+        "22 va 23",
+        "25 va 110"
+      ],
+      "correctAnswer": "20 va 21"
+    },
+    {
+      "question": "MAC manzil nima va u qaysi OSI qatlamida ishlatiladi?",
+      "options": [
+        "48 bitli fizik manzil — Layer 2 (Data Link) da ishlatiladi",
+        "32 bitli mantiqiy manzil — Layer 3 (Network) da",
+        "128 bitli manzil — Layer 4 (Transport) da",
+        "64 bitli manzil — Layer 1 (Physical) da"
+      ],
+      "correctAnswer": "48 bitli fizik manzil — Layer 2 (Data Link) da ishlatiladi"
+    },
+    {
+      "question": "DHCP nima qiladi?",
+      "options": [
+        "Domen nomlarini tarjima qiladi",
+        "Tarmoqdagi qurilmalarga avtomatik IP manzil, subnet mask, gateway va DNS beradi",
+        "Trafikni shifrlaydi",
+        "Tarmoq xavfsizligini ta'minlaydi"
+      ],
+      "correctAnswer": "Tarmoqdagi qurilmalarga avtomatik IP manzil, subnet mask, gateway va DNS beradi"
+    },
+    {
+      "question": "OSI modelida Transport qatlami (Layer 4) qanday vazifa bajaradi?",
+      "options": [
+        "Fizik signal uzatadi",
+        "Uchdan-uchga ma'lumot uzatishni boshqaradi — port raqamlari, oqim nazorati, xato tekshiruvi (TCP/UDP)",
+        "Marshrutlash amalga oshiradi",
+        "Foydalanuvchi interfeysini boshqaradi"
+      ],
+      "correctAnswer": "Uchdan-uchga ma'lumot uzatishni boshqaradi — port raqamlari, oqim nazorati, xato tekshiruvi (TCP/UDP)"
+    },
+    {
+      "question": "Firewall (xavfsizlik devori) qanday ishlaydi?",
+      "options": [
+        "Trafikni tezlashtiradi",
+        "Belgilangan qoidalar asosida kiruvchi va chiquvchi tarmoq trafikini filtrlaydi",
+        "Faqat viruslarni bloklaydi",
+        "IP manzillarni tarjima qiladi"
+      ],
+      "correctAnswer": "Belgilangan qoidalar asosida kiruvchi va chiquvchi tarmoq trafikini filtrlaydi"
+    },
+    {
+      "question": "NAT (Network Address Translation) nima uchun kerak?",
+      "options": [
+        "Tarmoq tezligini oshirish uchun",
+        "Xususiy (private) IP manzillarni umumiy (public) IP manzilga aylantirish — IPv4 manzillar tanqisligini hal qiladi",
+        "DNS so'rovlarini boshqarish uchun",
+        "Trafikni shifrlash uchun"
+      ],
+      "correctAnswer": "Xususiy (private) IP manzillarni umumiy (public) IP manzilga aylantirish — IPv4 manzillar tanqisligini hal qiladi"
+    },
+    {
+      "question": "Ping buyrug'i qanday protokoldan foydalanadi?",
+      "options": [
+        "TCP",
+        "UDP",
+        "ICMP",
+        "HTTP"
+      ],
+      "correctAnswer": "ICMP"
+    },
+    {
+      "question": "VPN (Virtual Private Network) nima va u qanday ishlaydi?",
+      "options": [
+        "Tezroq internet ulanish usuli",
+        "Internet orqali xususiy va shifrlangan tunnel yaratib, xavfsiz uzoq tarmoqqa ulanish imkonini beradi",
+        "Faqat korporativ tarmoqlar uchun fizik kabel",
+        "DNS so'rovlarini tezlashtiruvchi xizmat"
+      ],
+      "correctAnswer": "Internet orqali xususiy va shifrlangan tunnel yaratib, xavfsiz uzoq tarmoqqa ulanish imkonini beradi"
+    },
+    {
+      "question": "IPv6 manzil IPv4 dan nima bilan farqlanadi?",
+      "options": [
+        "IPv6 — 32 bit, IPv4 — 128 bit",
+        "IPv6 — 128 bit, to'likroq manzillar maydoni; IPv4 — 32 bit; IPv6 ko'lon bilan ajratilib hex formatda yoziladi",
+        "IPv6 faqat Osiyo uchun, IPv4 butun dunyo uchun",
+        "IPv6 va IPv4 bir xil — faqat yozilishi farqli"
+      ],
+      "correctAnswer": "IPv6 — 128 bit, to'likroq manzillar maydoni; IPv4 — 32 bit; IPv6 ko'lon bilan ajratilib hex formatda yoziladi"
+    },
+    {
+      "question": "SMTP protokoli qanday maqsadda ishlatiladi?",
+      "options": [
+        "Veb-sahifalarni yuklash uchun",
+        "Elektron pochta xabarlarini jo'natish uchun (port 25, 587)",
+        "Fayllarni uzatish uchun",
+        "DNS so'rovlari uchun"
+      ],
+      "correctAnswer": "Elektron pochta xabarlarini jo'natish uchun (port 25, 587)"
+    },
+    {
+      "question": "Bandwidth va latency o'rtasidagi farq nima?",
+      "options": [
+        "Ular bir xil — ikkalasi ham tezlikni o'lchaydi",
+        "Bandwidth — vaqt birligida uzatiladigan maksimal ma'lumot miqdori (Mbps); latency — paketning manzilga yetib borish vaqti (ms)",
+        "Latency — miqdor, Bandwidth — vaqt",
+        "Bandwidth faqat simsiz tarmoqlarda o'lchanadi"
+      ],
+      "correctAnswer": "Bandwidth — vaqt birligida uzatiladigan maksimal ma'lumot miqdori (Mbps); latency — paketning manzilga yetib borish vaqti (ms)"
+    },
+    {
+      "question": "ARP (Address Resolution Protocol) nima qiladi?",
+      "options": [
+        "IP manzilni domen nomiga aylantiradi",
+        "IP manzildan MAC manzilni topadi — bir tarmoq ichida ishlaydi",
+        "Paketlarni marshrutlaydi",
+        "Tarmoq trafigini shifrlaydi"
+      ],
+      "correctAnswer": "IP manzildan MAC manzilni topadi — bir tarmoq ichida ishlaydi"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:46.788Z"
+}

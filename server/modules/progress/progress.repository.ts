@@ -3,7 +3,7 @@
  */
 
 import { eq, sql } from 'drizzle-orm'
-import { db, executeRows }     from '../../db/connection'
+import { db, executeRows, type DB } from '../../db/connection'
 import { progress, duelResults } from '../../schema'
 import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import {
@@ -52,8 +52,8 @@ export const progressRepository = {
     return Number(rows[0]?.n ?? 0)
   },
 
-  async findByUserId(userId: string) {
-    const [row] = await db.select().from(progress).where(eq(progress.userId, userId))
+  async findByUserId(userId: string, txOrDb: DB = db) {
+    const [row] = await txOrDb.select().from(progress).where(eq(progress.userId, userId))
     return row ?? null
   },
 
@@ -91,8 +91,12 @@ export const progressRepository = {
      *  Client yuboradi; qiyinlikni keyinchalik MA'LUMOTDAN chiqarish uchun
      *  yig'iladi (hech qanday ball/XP'ga hozir ta'sir qilmaydi). */
     elapsedMs?:   number | null
+    /** Test-session v2 progress va canonical attemptni bitta ACID
+     *  tranzaksiyada yozishi uchun optional transaction handle. */
+    txOrDb?:       DB
   }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean; xp: number | null; xpEarned: number; coinsMinted: number }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
+    const txOrDb = input.txOrDb ?? db
     // Ishonchsiz client qiymati: 0..10 daqiqa oralig'idan tashqarisi tashlanadi
     // (fon rejimida qolgan tab soatlab "javob berdi" bo'lib ko'rinmasin).
     const rawMs = input.elapsedMs
@@ -342,13 +346,13 @@ export const progressRepository = {
         (SELECT xp::int FROM prog) AS xp,
         (SELECT amount::int FROM xp_award) AS xp_earned,
         (SELECT amount::int FROM coin_mint) AS coins_minted
-    `)
+    `, txOrDb)
 
     const row = rows[0]
     const proceed = row?.proceed !== false
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
-      const existing = await this.findByUserId(userId)
+      const existing = await this.findByUserId(userId, txOrDb)
       if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null, coinSaved: false, xp: null, xpEarned: 0, coinsMinted: 0 }
       // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
       // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.

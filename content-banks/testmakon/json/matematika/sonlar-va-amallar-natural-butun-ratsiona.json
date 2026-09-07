@@ -1,0 +1,151 @@
+{
+  "name": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar) — Matematika test savollari",
+  "about": "Sonlar va amallar (natural, butun, ratsional, haqiqiy sonlar)",
+  "subject": "Matematika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/matematika/sonlar-va-amallar-natural-butun-ratsiona/savollar/",
+  "questionsCount": 14,
+  "questions": [
+    {
+      "question": "$99 \\cdot 101$ ni hisoblang.",
+      "options": [
+        "$9999$",
+        "$10000$",
+        "$9899$",
+        "$9900$"
+      ],
+      "correctAnswer": "$9999$"
+    },
+    {
+      "question": "$48 \\cdot 52$ ni hisoblang.",
+      "options": [
+        "$2496$",
+        "$2500$",
+        "$2504$",
+        "$2400$"
+      ],
+      "correctAnswer": "$2496$"
+    },
+    {
+      "question": "$998^2$ ni hisoblang.",
+      "options": [
+        "$996004$",
+        "$996000$",
+        "$996008$",
+        "$996100$"
+      ],
+      "correctAnswer": "$996004$"
+    },
+    {
+      "question": "$73^2 - 27^2$ ni hisoblang.",
+      "options": [
+        "$4600$",
+        "$5000$",
+        "$4000$",
+        "$5400$"
+      ],
+      "correctAnswer": "$4600$"
+    },
+    {
+      "question": "$n^4 + 4^n$ ($n$ - toq natural son) ni $5$ ga bo'linishini isbotlash uchun $n = 1$ da qiymatni toping.",
+      "options": [
+        "$3$",
+        "$5$",
+        "$7$",
+        "$17$"
+      ],
+      "correctAnswer": "$5$"
+    },
+    {
+      "question": "Ko'phad $P(x) = x^{100} + x^{99} + ... + x + 1$ ni $(x - 1)$ ga bo'lgandagi qoldiqni toping.",
+      "options": [
+        "$100$",
+        "$101$",
+        "$0$",
+        "$1$"
+      ],
+      "correctAnswer": "$101$"
+    },
+    {
+      "question": "$\\sqrt[3]{2 + \\sqrt{5}} \\cdot \\sqrt[3]{2 - \\sqrt{5}}$ ni hisoblang.",
+      "options": [
+        "$-1$",
+        "$1$",
+        "$\\sqrt[3]{-1}$",
+        "A va C bir xil"
+      ],
+      "correctAnswer": "A va C bir xil"
+    },
+    {
+      "question": "Agar $2^a = 3$ va $3^b = 5$ bo'lsa, $2^{ab}$ ni toping.",
+      "options": [
+        "$5$",
+        "$6$",
+        "$8$",
+        "$15$"
+      ],
+      "correctAnswer": "$5$"
+    },
+    {
+      "question": "Agar $3^x = 5^y = 15^z$ bo'lsa, $\\frac{1}{x} + \\frac{1}{y}$ ning $\\frac{1}{z}$ ga nisbati nechaga teng?",
+      "options": [
+        "$2$",
+        "$1$",
+        "$\\frac{1}{2}$",
+        "$3$"
+      ],
+      "correctAnswer": "$1$"
+    },
+    {
+      "question": "$\\frac{x}{6} = \\frac{10}{15}$ dan $x$ ni toping.",
+      "options": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$"
+      ],
+      "correctAnswer": "$4$"
+    },
+    {
+      "question": "$\\frac{a}{b} = \\frac{3}{4}$ bo'lsa, $\\frac{3a - 2b}{3a + 2b}$ ni toping.",
+      "options": [
+        "$\\frac{1}{17}$",
+        "$\\frac{1}{15}$",
+        "$-\\frac{1}{17}$",
+        "$\\frac{3}{17}$"
+      ],
+      "correctAnswer": "$\\frac{1}{17}$"
+    },
+    {
+      "question": "$\\frac{a}{b} = \\frac{b}{c} = \\frac{c}{d}$ va $a = 2$, $d = 54$ bo'lsa, $b + c$ ni toping.",
+      "options": [
+        "$18$",
+        "$24$",
+        "$30$",
+        "$36$"
+      ],
+      "correctAnswer": "$24$"
+    },
+    {
+      "question": "$x : y : z = 3 : 4 : 5$ va $x^2 + y^2 + z^2 = 200$ bo'lsa, $xyz$ ni toping.",
+      "options": [
+        "$120\\sqrt{2}$",
+        "$480$",
+        "$240\\sqrt{2}$",
+        "$960$"
+      ],
+      "correctAnswer": "$480$"
+    },
+    {
+      "question": "$\\frac{a + b}{c} = \\frac{b + c}{a} = \\frac{a + c}{b}$ bo'lsa, har bir nisbat nimaga teng? ($a + b + c \\neq 0$)",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$\\frac{1}{2}$"
+      ],
+      "correctAnswer": "$2$"
+    }
+  ],
+  "downloadedAt": "2026-09-07T19:00:07.873Z"
+}

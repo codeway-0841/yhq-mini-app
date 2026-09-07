@@ -1,0 +1,474 @@
+{
+  "info": {
+    "id": "f0dd34af-280b-4773-871a-39efece09eb2",
+    "subject_id": "78eacbe8-1298-4b4d-b694-018f08d765f4",
+    "title": "Koreys tili 1-variant (KR001)",
+    "description": "Variant: KR001",
+    "time_limit": 60,
+    "created_at": "2026-08-08T08:56:29.69801Z",
+    "updated_at": "2026-08-08T08:56:29.69801Z"
+  },
+  "subject": {
+    "name": "Koreys tili",
+    "slug": "lang_ko",
+    "code": "ko"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "d1997187-67f7-4638-a196-69d134aeff09",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 1,
+      "question_text": "저는 학생___ .",
+      "options": {
+        "a": "입니다",
+        "b": "입니다가",
+        "c": "있어요",
+        "d": "합니다"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "3fb26868-fb3a-4101-acfa-2f58ca8ba4be",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 2,
+      "question_text": "저는 학교___ 갑니다.",
+      "options": {
+        "a": "를",
+        "b": "에",
+        "c": "에서",
+        "d": "로"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "4ef141de-14af-4b98-8ae5-e0f431b1852e",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 3,
+      "question_text": "이것은 ___ 책입니다.",
+      "options": {
+        "a": "저",
+        "b": "나",
+        "c": "제",
+        "d": "우리가"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "8d3a08a1-d26e-415d-9e77-b60226ebff51",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 4,
+      "question_text": "어제 친구를 ___ .",
+      "options": {
+        "a": "만나요",
+        "b": "만났어요",
+        "c": "만날 거예요",
+        "d": "만나세요"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "7cf762ef-cdaf-4429-b661-8c034295cd73",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 5,
+      "question_text": "지금 무엇을 ___?",
+      "options": {
+        "a": "먹어요",
+        "b": "해요",
+        "c": "갔어요",
+        "d": "했어요"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol: \"지금 무엇을 ___?\"\nBu savol \"Hozir nima qilyapsiz?\" yoki \"Hozir nimani ___?\" degan ma'noni anglatadi. Savoldagi \"지금\" so'zi \"hozir\" degan ma'noni berib, harakatning hozirgi zamonda bo'lishini talab qiladi. \"무엇을\" esa \"nimani\" degan ma'noda, fe'lning to'ldiruvchisi bo'lib keladi.\n\nKeling, variantlarni birma-bir ko'rib chiqamiz:\n\n*   **a) 먹어요 (meogeoyo):** Bu \"먹다\" (yemoq) fe'lining hozirgi zamon, hurmatli-norasmiy shakli. Agar bu variantni qo'ysak, \"지금 무엇을 먹어요?\" (\"Hozir nima yeyapsiz?\") degan ma'no hosil bo'ladi. Grammatik jihatdan to'g'ri va ma'nosi ham bor.\n\n*   **b) 해요 (haeyo):** Bu \"하다\" (qilmoq) fe'lining hozirgi zamon, hurmatli-norasmiy shakli. Agar bu variantni qo'ysak, \"지금 무엇을 해요?\" (\"Hozir nima qilyapsiz?\") degan ma'no hosil bo'ladi. Bu koreys tilida kimningdir hozirgi faoliyati haqida so'rashning eng keng tarqalgan va tabiiy usuli hisoblanadi.\n\n*   **c) 갔어요 (gasseoyo):** Bu \"가다\" (bormoq) fe'lining o'tgan zamon, hurmatli-norasmiy shakli. \"지금\" (hozir) so'zi bilan o'tgan zamon fe'li ishlatilmaydi. Shuningdek, \"무엇을 가다\" (nimani bormoq) iborasi grammatik jihatdan noto'g'ri va ma'nosizdir. Odatda \"어디에 갔어요?\" (qayerga bordiz?) deb ishlatiladi.\n\n*   **d) 했어요 (haesseoyo):** Bu \"하다\" (qilmoq) fe'lining o'tgan zamon, hurmatli-norasmiy shakli. \"지금\" (hozir) so'zi bilan o'tgan zamon fe'li ishlatilmaydi. \"Hozir nima qildingiz?\" degan ma'no grammatik jihatdan xato bo'ladi, chunki \"hozir\" so'zi o'tgan zamon bilan mos kelmaydi.\n\n**Nima uchun \"B\" varianti to'g'ri?**\n\nSavol \"지금 무엇을 ___?\" umumiy tarzda \"Hozir nima qilyapsiz?\" deb so'rashni maqsad qilgan. Koreys tilida kimningdir hozirgi faoliyati haqida umumiy savol berish uchun \"하다\" (qilmoq) fe'li eng mos keladi. \"해요\" (qilyapsiz) shakli savolni to'g'ri va tabiiy ravishda to'ldiradi.\n\nGarchi \"a) 먹어요\" varianti grammatik jihatdan to'g'ri bo'lsa-da (\"Hozir nima yeyapsiz?\"), bu faqat ovqatlanish haqidagi aniq bir savol bo'ladi. \"해요\" esa har qanday faoliyatni qamrab oluvchi umumiy savol bo'lib, berilgan bo'shliqni to'ldirish uchun eng universal va to'g'ri tanlovdir. Shuning uchun, eng to'g'ri va tabiiy javob \"b) 해요\" hisoblanadi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "6ce09956-073b-4e0d-b20a-a29c258f9ba4",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 6,
+      "question_text": "저는 커피___ 좋아합니다.",
+      "options": {
+        "a": "가",
+        "b": "는",
+        "c": "를",
+        "d": "에"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "fa8cbd77-fb50-44bf-87d7-e63a15dae79a",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 7,
+      "question_text": "내일 서울___ 갈 거예요.",
+      "options": {
+        "a": "에",
+        "b": "에서",
+        "c": "로",
+        "d": "와"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savol \"내일 서울___ 갈 거예요.\" bo'lib, unda harakat yo'nalishini yoki boriladigan manzilni bildiruvchi koreys tilidagi kelishik qo'shimchasini topish talab qilinadi. \"갈 거예요\" fe'li \"boraman\" ma'nosini beradi va harakatni ifodalaydi.\n\nKoreys tilida harakat yo'nalishini yoki manzilni bildiruvchi bir nechta kelishik qo'shimchalari mavjud, ammo bu yerda eng mos keladigani \"로/으로\" qo'shimchasidir.\n\n1.  **\"로/으로\" qo'shimchasining vazifasi:**\n    *   Bu qo'shimcha harakatning yo'nalishini, boriladigan manzilni yoki vositani (qanday qilib) bildirish uchun ishlatiladi.\n    *   Manzilni bildirganida, u \"ga\", \"tomon\", \"sari\" kabi ma'nolarni beradi.\n\n2.  **\"로\" va \"으로\" o'rtasidagi farq:**\n    *   Agar ot unli harf yoki 'ㄹ' (l) undoshi bilan tugasa, \"로\" qo'shimchasi ishlatiladi.\n    *   Agar ot boshqa undosh harf bilan tugasa, \"으로\" qo'shimchasi ishlatiladi.\n\n3.  **Savoldagi so'zga qo'llash:**\n    *   \"서울\" (Seoul) so'zi 'ㄹ' undoshi bilan tugaydi. Shuning uchun unga \"로\" qo'shimchasi qo'shiladi.\n    *   Natijada \"서울로\" (Seulga/Seul tomon) shakli hosil bo'ladi.\n\n4.  **To'liq jumla:**\n    *   \"내일 서울로 갈 거예요.\" (Ertaga Seulga boraman/Seul tomon yo'l olaman.)\n\n5.  **Boshqa variantlarning noto'g'riligi:**\n    *   **a) 에:** \"에\" qo'shimchasi ham manzilni bildirish uchun ishlatiladi va ko'pincha \"로\" bilan o'zaro almashtirilishi mumkin. Masalan, \"서울에 갈 거예요\" ham grammatik jihatdan to'g'ri. Biroq, \"로\" ko'pincha harakatning yo'nalishini yoki \"tomon\" ma'nosini biroz ko'proq ta'kidlaydi. Agar savolda faqat bitta to'g'ri javob tanlash kerak bo'lsa va \"C\" varianti to'g'ri deb berilgan bo'lsa, demak bu yerda \"로\" ning yo'nalishni ifodalash xususiyati nazarda tutilgan.\n    *   **b) 에서:** Bu qo'shimcha biror harakat sodir bo'ladigan joyni (\"da\" ma'nosida) yoki harakatning boshlanish nuqtasini (\"dan\" ma'nosida) bildiradi. \"서울에서 갈 거예요\" (Seuldan boraman) yoki \"서울에서 공부할 거예요\" (Seulda o'qiyman) kabi jumlalarda ishlatiladi. \"Boriladigan manzil\" ma'nosiga to'g'ri kelmaydi.\n    *   **d) 와:** Bu qo'shimcha \"va\" yoki \"bilan\" ma'nosini beradi va otlarni bog'lash uchun ishlatiladi. \"서울과 부산\" (Seul va Pusan) kabi. Manzilni bildirish uchun mos emas.\n\nShunday qilib, \"내일 서울___ 갈 거예요\" jumlasida harakat yo'nalishini yoki boriladigan manzilni ifodalash uchun \"서울\" so'ziga 'ㄹ' undoshi bilan tugagani sababli \"로\" qo'shimchasi qo'shiladi. Shu sababli, \"C\" varianti to'g'ri javob hisoblanadi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "51c80015-7527-4092-b29d-19650e2d849c",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 8,
+      "question_text": "형은 회사___ 일합니다.",
+      "options": {
+        "a": "에",
+        "b": "에서",
+        "c": "로",
+        "d": "를"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "89f6786e-d79b-4c77-9a07-163f1fbb1724",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 9,
+      "question_text": "오늘은 날씨가 ___ .",
+      "options": {
+        "a": "예뻐요",
+        "b": "좋아요",
+        "c": "먹어요",
+        "d": "공부해요"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "affbdb1b-9a53-4460-bba0-9e73aa95b769",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 10,
+      "question_text": "저는 한국어를 ___ 있습니다.",
+      "options": {
+        "a": "공부하고",
+        "b": "공부한",
+        "c": "공부할",
+        "d": "공부해서"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "b167ccba-07a6-488e-b1dc-9cdbaaf13100",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 11,
+      "question_text": "저는 매일 아침 일찍 ___ .",
+      "options": {
+        "a": "일어나요",
+        "b": "일어났어요",
+        "c": "일어날 거예요",
+        "d": "일어나세요"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "fbb19f1a-b7a7-4579-a7aa-1ace82269ade",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 12,
+      "question_text": "지금 비가 ___ 있습니다.",
+      "options": {
+        "a": "오",
+        "b": "오고",
+        "c": "온",
+        "d": "와"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "31366205-7544-4849-b763-d1d3c4e51e6f",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 13,
+      "question_text": "이 가방은 저것___ 더 비쌉니다.",
+      "options": {
+        "a": "보다",
+        "b": "에",
+        "c": "에게",
+        "d": "와"
+      },
+      "correct_option": "a",
+      "explanation": "Berilgan savol \"이 가방은 저것___ 더 비쌉니다.\" jumlasi bo'lib, uning ma'nosi \"Bu sumka u narsadan ko'ra qimmatroqdir\" deganidir. Bu yerda ikki narsa (sumka va u narsa) o'rtasida taqqoslash (solishtirish) amalga oshirilmoqda.\n\nTo'g'ri javob: **A) 보다**\n\n**Nima uchun \"A) 보다\" to'g'ri?**\n\n1.  **\"보다\" ning ma'nosi va vazifasi:** Koreys tilida \"보다\" qo'shimchasi otlarga qo'shilib, \"dan ko'ra\", \"ga nisbatan\" ma'nosini beradi va taqqoslash (solishtirish) uchun ishlatiladi. U biror narsani boshqa narsadan ustunroq, kamroq, kattaroq, kichikroq va hokazo ekanligini ifodalashda qo'llaniladi.\n2.  **Jumlada qo'llanilishi:** \"저것보다\" birikmasi \"u narsadan ko'ra\" degan ma'noni beradi. Shunday qilib, \"이 가방은 저것보다 더 비쌉니다\" jumlasi \"Bu sumka u narsadan ko'ra qimmatroqdir\" degan to'liq va grammatik jihatdan to'g'ri ma'noni anglatadi. \"더\" so'zi \"ko'proq\" ma'nosini berib, \"보다\" bilan birga taqqoslashni kuchaytiradi.\n\n**Nima uchun boshqa variantlar noto'g'ri?**\n\n*   **B) 에 (e):** Bu qo'shimcha joy, vaqt, yo'nalish yoki holatni bildiradi (\"da\", \"ga\", \"da\"). Masalan, \"집에\" (uyda/uyga), \"오후에\" (tushdan keyin). \"저것에\" (u narsada/u narsaga) bu jumlada ma'no jihatidan mos kelmaydi.\n*   **C) 에게 (ege):** Bu qo'shimcha faqat odamlar yoki jonli mavjudotlarga nisbatan \"ga\", \"uchun\" ma'nosini beradi. Masalan, \"친구에게\" (do'stga). \"저것\" (u narsa) jonsiz predmet bo'lganligi sababli, \"저것에게\" ishlatilmaydi va grammatik jihatdan noto'g'ri.\n*   **D) 와 (wa):** Bu qo'shimcha \"va\", \"bilan\" ma'nosini beradi. Masalan, \"나와 너\" (men va sen), \"친구와 함께\" (do'st bilan birga). Garchi ba'zan taqqoslash jumlalarida \"와/과\" ishlatilsa-da (masalan, \"A와 B는 비슷하다\" - A va B o'xshash), \"dan ko'ra qimmatroq\" kabi aniq taqqoslashni ifodalashda \"보다\" qo'shimchasi ishlatiladi. \"저것와\" bu jumlada \"u narsa bilan\" yoki \"u narsa va\" degan ma'noni berib, jumlani mantiqsiz qiladi.\n\nShunday qilib, taqqoslashni ifodalash uchun faqat \"보다\" qo'shimchasi to'g'ri keladi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "ef09b838-ae21-4d07-afb8-65e0c4193a1e",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 14,
+      "question_text": "저는 주말마다 운동___ 합니다.",
+      "options": {
+        "a": "이",
+        "b": "가",
+        "c": "을",
+        "d": "에"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "dfc59142-f3d1-4f84-bebd-65e8b74feeb4",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 15,
+      "question_text": "시간이 없어서 숙제를 ___ .",
+      "options": {
+        "a": "했어요",
+        "b": "못 했어요",
+        "c": "할 거예요",
+        "d": "하고 있어요"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "1f17aa3d-ffba-4713-a38a-0a1a668172c6",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 16,
+      "question_text": "비가 많이 ___ 우산을 가져왔어요.",
+      "options": {
+        "a": "오지만",
+        "b": "와서",
+        "c": "오면",
+        "d": "오려고"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "92e014da-98ad-447b-b742-8371c093491a",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 17,
+      "question_text": "저는 한국에 ___ 한국어를 배웠습니다.",
+      "options": {
+        "a": "가기 전에",
+        "b": "간 후에",
+        "c": "가면서",
+        "d": "가려고"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "83a70488-49f2-463f-8148-dc19bc28e59c",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 18,
+      "question_text": "시간이 있으면 같이 ___ .",
+      "options": {
+        "a": "갑니다",
+        "b": "갈까요",
+        "c": "갔어요",
+        "d": "가세요"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "9d422cba-825b-40f8-91f1-dff31072b4b5",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 19,
+      "question_text": "그는 피곤한데도 끝까지 ___ .",
+      "options": {
+        "a": "쉬었어요",
+        "b": "일했어요",
+        "c": "자요",
+        "d": "먹어요"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "be26ff5c-f19a-490e-994e-4fbce7f3671d",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 20,
+      "question_text": "내일까지 보고서를 ___ 합니다.",
+      "options": {
+        "a": "쓰고",
+        "b": "써야",
+        "c": "쓸까",
+        "d": "썼으면"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "9f19791a-19de-4592-92bb-9e5d2589fd6b",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 21,
+      "question_text": "친구가 약속을 취소해서 조금 ___ .",
+      "options": {
+        "a": "기뻤어요",
+        "b": "실망했어요",
+        "c": "즐거웠어요",
+        "d": "행복했어요"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "b24cb8ed-3be6-4630-8c34-3e2674718fcb",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 22,
+      "question_text": "이 문제는 생각보다 ___ .",
+      "options": {
+        "a": "쉬웠습니다",
+        "b": "어려웠습니다",
+        "c": "짧았습니다",
+        "d": "작았습니다"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "8a85e7f4-b919-485e-895b-3ee33fdf84f9",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 23,
+      "question_text": "시간이 부족했지만 끝까지 ___ .",
+      "options": {
+        "a": "포기했습니다",
+        "b": "노력했습니다",
+        "c": "잤습니다",
+        "d": "놀았습니다"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "4db8de67-8b79-4389-9f0a-a4fce697e599",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 24,
+      "question_text": "환경을 보호하기 위해 우리는 ___ .",
+      "options": {
+        "a": "쓰레기를 버립니다",
+        "b": "재활용을 합니다",
+        "c": "전기를 낭비합니다",
+        "d": "나무를 자릅니다"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "b6fdfa25-db86-4c29-9580-7eca6c321a05",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 25,
+      "question_text": "이 책은 학생들이 읽기에 매우 ___ .",
+      "options": {
+        "a": "어렵습니다",
+        "b": "유익합니다",
+        "c": "비쌉니다",
+        "d": "조용합니다"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "4112f47f-fb38-4ad1-9fc4-fd340a9f91ef",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 26,
+      "question_text": "발표를 잘하려면 미리 충분히 ___ 합니다.",
+      "options": {
+        "a": "먹어야",
+        "b": "연습해야",
+        "c": "자야",
+        "d": "쉬어야"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "691c2d3d-2803-47df-844f-e2d5a98da6b4",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 27,
+      "question_text": "다음 문장에서 가장 자연스러운 표현은?",
+      "options": {
+        "a": "저는 어제 내일 갑니다.",
+        "b": "저는 어제 도서관에 갔습니다.",
+        "c": "저는 학교를 먹었습니다.",
+        "d": "저는 공부를 마십니다."
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "10693926-0007-45d0-ba8e-18cc0d97f406",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 28,
+      "question_text": "회사에서는 약속 시간을 반드시 ___ 합니다.",
+      "options": {
+        "a": "늦어야",
+        "b": "지켜야",
+        "c": "잊어야",
+        "d": "버려야"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "faa8d668-a362-49dc-8085-d81822572508",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 29,
+      "question_text": "한국 문화를 이해하려면 책뿐만 아니라 사람들과도 많이 ___ .",
+      "options": {
+        "a": "싸워야 합니다",
+        "b": "이야기해야 합니다",
+        "c": "울어야 합니다",
+        "d": "기다려야 합니다"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    },
+    {
+      "id": "6b2171ba-be7f-4f4e-b657-8e3da2dd5e6d",
+      "test_id": "f0dd34af-280b-4773-871a-39efece09eb2",
+      "order_number": 30,
+      "question_text": "다음 중 가장 자연스러운 문장은?",
+      "options": {
+        "a": "저는 비가 먹습니다.",
+        "b": "내일은 어제를 만났습니다.",
+        "c": "비가 와도 학교에 갈 것입니다.",
+        "d": "저는 학교를 입습니다."
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolda koreys tilida eng tabiiy (natural) jumlani topish talab qilingan. Keling, har bir variantni alohida ko'rib chiqamiz:\n\n*   **A) 저는 비가 먹습니다.**\n    *   \"저\" (jeo) – men (kamtarona shakli)\n    *   \"는\" (neun) – mavzu yuklamasi\n    *   \"비\" (bi) – yomg'ir\n    *   \"가\" (ga) – ega yuklamasi\n    *   \"먹습니다\" (meokseumnida) – yeyman (rasmiy-hurmatli shakli)\n    *   Bu jumla so'zma-so'z \"Men yomg'irni yeyman\" degan ma'noni beradi. Koreys tilida \"먹다\" (yemoq) fe'li ovqatlanish uchun ishlatiladi. Yomg'irni yeb bo'lmaydi, shuning uchun bu jumla ma'nosiz va noto'g'ri.\n\n*   **B) 내일은 어제를 만났습니다.**\n    *   \"내일\" (naeil) – ertaga\n    *   \"은\" (eun) – mavzu yuklamasi\n    *   \"어제\" (eoje) – kecha\n    *   \"를\" (reul) – tushum kelishigi yuklamasi\n    *   \"만났습니다\" (mannasseumnida) – uchrashdi (rasmiy-hurmatli shakli, o'tgan zamon)\n    *   Bu jumla so'zma-so'z \"Ertaga kecha bilan uchrashdi\" degan ma'noni beradi. \"Ertaga\" va \"kecha\" vaqt tushunchalari bo'lib, ular bir-biri bilan uchrasha olmaydi. Shuning uchun bu jumla ham ma'nosiz va noto'g'ri.\n\n*   **C) 비가 와도 학교에 갈 것입니다.**\n    *   \"비가 오다\" (bi-ga oda) – yomg'ir yog'moq (yomg'ir kelmoq) degan ma'noni beruvchi tabiiy ibora.\n    *   \"-아/어도\" (-a/eodo) – \"garchi...sa ham\", \"hatto...sa ham\" ma'nosini beruvchi bog'lovchi qo'shimcha. Demak, \"비가 와도\" – \"yomg'ir yog'sa ham\" degani.\n    *   \"학교\" (hakgyo) – maktab\n    *   \"에\" (e) – jo'nalish kelishigi yuklamasi (\"ga\" ma'nosida)\n    *   \"갈 것입니다\" (gal geosimnida) – \"boraman\" (kelasi zamon, rasmiy-hurmatli shakli). \"가다\" (gada) – bormoq fe'lidan yasalgan.\n    *   Bu jumla \"Yomg'ir yog'sa ham, maktabga boraman\" degan ma'noni beradi. Grammatik jihatdan ham, ma'no jihatdan ham to'g'ri va koreys tilida juda tabiiy ishlatiladigan ifodadir.\n\n*   **D) 저는 학교를 입습니다.**\n    *   \"저\" (jeo) – men (kamtarona shakli)\n    *   \"는\" (neun) – mavzu yuklamasi\n    *   \"학교\" (hakgyo) – maktab\n    *   \"를\" (reul) – tushum kelishigi yuklamasi\n    *   \"입습니다\" (ipseumnida) – kiyaman (rasmiy-hurmatli shakli)\n    *   Bu jumla so'zma-so'z \"Men maktabni kiyaman\" degan ma'noni beradi. \"입다\" (ipda) fe'li kiyim-kechak, poyabzal kabi narsalarni kiyish uchun ishlatiladi. Maktabni kiyib bo'lmaydi. Shuning uchun bu jumla ham ma'nosiz va noto'g'ri.\n\n**Xulosa:**\nYuqoridagi tahlillardan ko'rinib turibdiki, faqatgina **C) 비가 와도 학교에 갈 것입니다.** jumlasi grammatik jihatdan to'g'ri va ma'no jihatdan tabiiydir. Qolgan variantlar fe'llarning noto'g'ri qo'llanilishi yoki ma'nosiz birikmalar tufayli xatodir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:52.040209Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:20:39.048Z"
+}

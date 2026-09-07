@@ -1,0 +1,411 @@
+{
+  "name": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar) — Biologiya test savollari",
+  "about": "Molekulyar biologiya (oqsil, DNK, RNK, fermentlar)",
+  "subject": "Biologiya",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/biologiya/molekulyar-biologiya-oqsil-dnk-rnk-ferme/savollar/",
+  "questionsCount": 40,
+  "questions": [
+    {
+      "question": "DNK molekulasining tuzilishini kimlar kashf etgan?",
+      "options": [
+        "Darvin va Lamark",
+        "Mendel",
+        "Uotson va Krik",
+        "Pavlov"
+      ],
+      "correctAnswer": "Uotson va Krik"
+    },
+    {
+      "question": "Oqsil sintezi qaysi organoidda amalga oshadi?",
+      "options": [
+        "Mitoxondriya",
+        "Lizosoma",
+        "Ribosoma",
+        "Sentrosoma"
+      ],
+      "correctAnswer": "Ribosoma"
+    },
+    {
+      "question": "Golji apparatining asosiy vazifasi nima?",
+      "options": [
+        "ATF ishlab chiqarish",
+        "Oqsillarni qayta ishlash, modifikatsiya qilish va eksport qilish",
+        "DNK replikatsiyasi",
+        "Nafas olish"
+      ],
+      "correctAnswer": "Oqsillarni qayta ishlash, modifikatsiya qilish va eksport qilish"
+    },
+    {
+      "question": "Na⁺/K⁺-ATPaza nasosi bir sikl davomida qancha ion almashinadi va qancha ATF sarflaydi?",
+      "options": [
+        "2 Na⁺ chiqaradi, 3 K⁺ kiritadi, 1 ATF",
+        "3 Na⁺ chiqaradi, 2 K⁺ kiritadi, 1 ATF",
+        "3 Na⁺ chiqaradi, 3 K⁺ kiritadi, 2 ATF",
+        "2 Na⁺ chiqaradi, 2 K⁺ kiritadi, 1 ATF"
+      ],
+      "correctAnswer": "3 Na⁺ chiqaradi, 2 K⁺ kiritadi, 1 ATF"
+    },
+    {
+      "question": "Giston oqsillar va DNK ning birlashmasi nima deyiladi va u qanday tuzilishga ega?",
+      "options": [
+        "Ribonukleoprotein; to'g'ri zanjir",
+        "Nukleosoma; DNK H2A, H2B, H3, H4 — 8 ta giston oqsil atrofida 1,65 marta o'ralgan",
+        "Xromatin; DNK bitta H1 giston atrofida o'ralgan",
+        "Xromonema; DNK ferment atrofida o'ralgan"
+      ],
+      "correctAnswer": "Nukleosoma; DNK H2A, H2B, H3, H4 — 8 ta giston oqsil atrofida 1,65 marta o'ralgan"
+    },
+    {
+      "question": "Peroksisomalar qanday moddalarni qayta ishlaydi va qanday ferment hosil qiladi?",
+      "options": [
+        "Uglevodlar; amilaza",
+        "Yog' kislotalari va toksik moddalar (spirt, H₂O₂); katalaza",
+        "DNK; polimeraz",
+        "Ribosomalar; peptidaza"
+      ],
+      "correctAnswer": "Yog' kislotalari va toksik moddalar (spirt, H₂O₂); katalaza"
+    },
+    {
+      "question": "Kemiosmotik nazariyaga (Peter Mitchell, 1961) ko'ra mitoxondriyadagi ATF sintezi qanday mexanizm orqali amalga oshadi?",
+      "options": [
+        "Substrat darajasida fosforillanish orqali to'g'ridan-to'g'ri",
+        "Proton gradient (ΔμH⁺): elektron transport zanjiri H⁺ ni matriksdan intermembran bo'shliqqa pompalaydi; protonlar ATP sintaza (kompleks V) orqali matriksga qaytib ATF sintezlaydi",
+        "Ca²⁺ ionlari gradienti orqali",
+        "NADH to'g'ridan-to'g'ri ATF ni fosforillab hosil qiladi"
+      ],
+      "correctAnswer": "Proton gradient (ΔμH⁺): elektron transport zanjiri H⁺ ni matriksdan intermembran bo'shliqqa pompalaydi; protonlar ATP sintaza (kompleks V) orqali matriksga qaytib ATF sintezlaydi"
+    },
+    {
+      "question": "Hayot uchun zarur bo'lgan oqsillar qanday sintez qilinadi? mRNK kodoni AUG dan boshlanib, qaysi aminokislota birinchi o'rnashadi va bu jarayonda qancha ATF/GTF sarflanadi?",
+      "options": [
+        "Valin; 1 ATF har aminokislotaga",
+        "Metionin (eukariotda) yoki fMet (prokariotda); aminoasil-tRNK hosil bo'lishiga 2 ATF, har elongatsiya siklida 2 GTF — jami 4 yuqori energiyali bog' har aminokislotaga",
+        "Glisin; 3 ATF har aminokislotaga",
+        "Triptofan; 1 GTF har sikl uchun"
+      ],
+      "correctAnswer": "Metionin (eukariotda) yoki fMet (prokariotda); aminoasil-tRNK hosil bo'lishiga 2 ATF, har elongatsiya siklida 2 GTF — jami 4 yuqori energiyali bog' har aminokislotaga"
+    },
+    {
+      "question": "Telomer (xromosom uchi) nima uchun muhim va telomeraz fermenti qanday ishlaydi?",
+      "options": [
+        "Telomerlar gen ifodasini oshiradi; telomeraz oqsil sintezlaydi",
+        "Telomerlar xromosomlarni bir-biriga yopishmasdan saqlaydi; telomeraz o'z ichidagi RNK matritsasidan foydalanib TTAGGG takrorimlarini uzaytiradi (reverse transkriptaza)",
+        "Telomerlar energiya saqlaydi; telomeraz ATF hosil qiladi",
+        "Telomerlar hujayra membranasini mustahkamlaydi"
+      ],
+      "correctAnswer": "Telomerlar xromosomlarni bir-biriga yopishmasdan saqlaydi; telomeraz o'z ichidagi RNK matritsasidan foydalanib TTAGGG takrorimlarini uzaytiradi (reverse transkriptaza)"
+    },
+    {
+      "question": "UPR (unfolded protein response) — noto'g'ri katlanmagan oqsil javob nima va qaysi organoidda paydo bo'ladi?",
+      "options": [
+        "Mitoxondriyada; eski fermentlarni parchalash jarayoni",
+        "Endoplazmatik to'rda; noto'g'ri katlangan oqsillar to'planishi natijasida faollashadi, oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi va og'ir holda apoptoz qo'zg'atadi",
+        "Yadro teshikchalarida; DNK mutatsiyalariga javob",
+        "Lizosomalarda; autofagiya regulyatsiyasi"
+      ],
+      "correctAnswer": "Endoplazmatik to'rda; noto'g'ri katlangan oqsillar to'planishi natijasida faollashadi, oqsil sintezini kamaytiradi, shaperonlarni ko'paytiradi va og'ir holda apoptoz qo'zg'atadi"
+    },
+    {
+      "question": "Lyudvig Bichner (1903) va Hans Buchner tajribalaridan kelib chiqadigan muhim xulosa biologiyada qanday inqilob qildi?",
+      "options": [
+        "Hujayralar bo'linishi mikroskopda ko'rsatildi",
+        "Hujayrasiz ferment ekstrakti glyukozani bijg'ita olishi — fermentlar (biologik katalizatorlar) hujayra tashqarisida ham ishlashi isbotlandi — biokimyoning asosi",
+        "Prokariot va eukariot farqi aniqlandi",
+        "Hujayra nazariyasining to'rtinchi postulati qo'shildi"
+      ],
+      "correctAnswer": "Hujayrasiz ferment ekstrakti glyukozani bijg'ita olishi — fermentlar (biologik katalizatorlar) hujayra tashqarisida ham ishlashi isbotlandi — biokimyoning asosi"
+    },
+    {
+      "question": "Xromosomal kondensatsiya mitoz profazasida qanday molekulyar mexanizm bilan amalga oshadi?",
+      "options": [
+        "Giston sintezi to'xtaydi",
+        "Kondensin komplekslari (SMC oqsillar) ATF ni ishlatib xromatinni 10 000+ marta siqadi; Siklin B/CDK1 kondensinni fosforillab faollashtiradi",
+        "DNK replikatsiyasi xromatinni avtomatik siqadi",
+        "Mitoxondriya energiya to'plab xromosomalarni siqadi"
+      ],
+      "correctAnswer": "Kondensin komplekslari (SMC oqsillar) ATF ni ishlatib xromatinni 10 000+ marta siqadi; Siklin B/CDK1 kondensinni fosforillab faollashtiradi"
+    },
+    {
+      "question": "Signal transduksiya kaskadida RTK (reseptor tirosinkinaza) faollashganda qanday intrasellular ketma-ketlik bo'ladi?",
+      "options": [
+        "Ligand → RTK → cAMP → PKA → gen ifodasi",
+        "Ligand bog'lanishi → RTK dimerizatsiyasi → avtofosforillanish → Grb2/SOS → Ras-GTP → Raf → MEK → ERK → yadro → proliferatsiya genlari",
+        "Ligand → Ca²⁺ → kalmodulin → miosin",
+        "Ligand → G-oqsil → fosfolipaza C → IP₃"
+      ],
+      "correctAnswer": "Ligand bog'lanishi → RTK dimerizatsiyasi → avtofosforillanish → Grb2/SOS → Ras-GTP → Raf → MEK → ERK → yadro → proliferatsiya genlari"
+    },
+    {
+      "question": "Eukariot hujayraning transkripsiya faktori oqsili yadro ichiga qanday kiradi?",
+      "options": [
+        "Passiv diffuziya orqali — hamma narsa kirade oladi",
+        "Yadroga kirish signali (NLS) → importin-α/β ga bog'lanish → yadro teshikcha kompleksi (NPC) orqali Ran-GTP bilan birga o'tish → yadroda Ran-GAP GTF ni parchalab oqsilni ozod qiladi",
+        "Eksositoz orqali",
+        "DNK replikatsiyasi davomida avtomatik kiradi"
+      ],
+      "correctAnswer": "Yadroga kirish signali (NLS) → importin-α/β ga bog'lanish → yadro teshikcha kompleksi (NPC) orqali Ran-GTP bilan birga o'tish → yadroda Ran-GAP GTF ni parchalab oqsilni ozod qiladi"
+    },
+    {
+      "question": "Hujayra biomassasining ~50% ni tashkil etuvchi oqsillarning to'g'ri katlаnishini ta'minlovchi «molekulyar chaperonlar» qaysi sinfga kiradi va ular qanday ishlaydi?",
+      "options": [
+        "Lizosomalar; oqsilni degradatsiya qiladi",
+        "Hsp70, Hsp90, GroEL/GroES (Hsp60) kabi issiqlik zarba oqsillari; ATF sarflab gidrofob mintaqalarni yashirib to'g'ri katlanishga yordam beradi",
+        "Proteasomalar; ubikvitin bilan belgilangan oqsilni parchalaydi",
+        "Ferritinlar; oqsilni saqlaydi"
+      ],
+      "correctAnswer": "Hsp70, Hsp90, GroEL/GroES (Hsp60) kabi issiqlik zarba oqsillari; ATF sarflab gidrofob mintaqalarni yashirib to'g'ri katlanishga yordam beradi"
+    },
+    {
+      "question": "MASALA: Oqsil molekulasida 300 ta aminokislota bor. Bu oqsilning mRNK si nechta nukleotiddan iborat bo'ladi (start va stop kodonlar, 5' va 3' UTR ni hisobga olmasdan)?",
+      "options": [
+        "300 nukleotid",
+        "900 nukleotid",
+        "600 nukleotid",
+        "1200 nukleotid"
+      ],
+      "correctAnswer": "900 nukleotid"
+    },
+    {
+      "question": "Ubikvitin-proteasoma tizimi qanday ishlaydi va qaysi kasalliklar bilan bog'liq?",
+      "options": [
+        "Hujayra membranasini buzadi; saraton",
+        "E1-E2-E3 fermentlar ketma-ketligi buzilgan oqsillarni ubikvitin bilan belgilaydi → 26S proteasoma ATP sarflab oqsilni aminokislotalarga parchalaydi; Parkinson, saraton va immunitet kasalliklari bilan bog'liq",
+        "Lizosomada ishlaydi; qandli diabet",
+        "Autofagiya bilan bir xil; faqat ekstrasellyulyar oqsillar uchun"
+      ],
+      "correctAnswer": "E1-E2-E3 fermentlar ketma-ketligi buzilgan oqsillarni ubikvitin bilan belgilaydi → 26S proteasoma ATP sarflab oqsilni aminokislotalarga parchalaydi; Parkinson, saraton va immunitet kasalliklari bilan bog'liq"
+    },
+    {
+      "question": "Oqsillarning asosiy monomerlari nima deyiladi?",
+      "options": [
+        "Nukleotidlar",
+        "Aminokislotalar",
+        "Monosaxaridlar",
+        "Yog' kislotalari"
+      ],
+      "correctAnswer": "Aminokislotalar"
+    },
+    {
+      "question": "Tirik organizmlar uchun biologik jihatdan muhim aminokislotalar soni nechta?",
+      "options": [
+        "10 ta",
+        "64 ta",
+        "20 ta",
+        "4 ta"
+      ],
+      "correctAnswer": "20 ta"
+    },
+    {
+      "question": "Ikki aminokislota o'rtasida hosil bo'ladigan kimyoviy bog' nima deyiladi?",
+      "options": [
+        "Vodorod bog'i",
+        "Peptid bog'i",
+        "Disulfid bog'i",
+        "Ion bog'i"
+      ],
+      "correctAnswer": "Peptid bog'i"
+    },
+    {
+      "question": "Uglevodlarning eng oddiy shakli nima deyiladi?",
+      "options": [
+        "Polisaxarid",
+        "Disaxarid",
+        "Oligosaxarid",
+        "Monosaxarid"
+      ],
+      "correctAnswer": "Monosaxarid"
+    },
+    {
+      "question": "Yog'larning asosiy qurilish birliklari qaysilar?",
+      "options": [
+        "Aminokislotalar va glitserin",
+        "Glyukoza va fruktoza",
+        "Nuklein kislotalar va fosfat",
+        "Glitserin va yog' kislotalari"
+      ],
+      "correctAnswer": "Glitserin va yog' kislotalari"
+    },
+    {
+      "question": "Oqsil molekulasining birlamchi tuzilishi nima?",
+      "options": [
+        "Alfa-spiral shakl",
+        "Uch o'lchamli globulyar shakl",
+        "Aminokislotalarning peptid bog' orqali ketma-ket joylashish tartibi",
+        "Bir necha polipeptid zanjirlarning birlashishi"
+      ],
+      "correctAnswer": "Aminokislotalarning peptid bog' orqali ketma-ket joylashish tartibi"
+    },
+    {
+      "question": "Oqsillar tarkibida qaysi kimyoviy elementlar majburiy ravishda bo'ladi?",
+      "options": [
+        "Faqat C, H, O",
+        "C, H, O, N va ko'pincha S",
+        "C, H, O, N, P",
+        "Faqat N va S"
+      ],
+      "correctAnswer": "C, H, O, N va ko'pincha S"
+    },
+    {
+      "question": "Fermentlar biologik jihatdan qaysi moddalar guruhiga kiradi?",
+      "options": [
+        "Uglevodlar",
+        "Lipidlar",
+        "Minerallar",
+        "Oqsillar"
+      ],
+      "correctAnswer": "Oqsillar"
+    },
+    {
+      "question": "Saxaroza qanday monosaxaridlardan iborat?",
+      "options": [
+        "Glyukoza + Glyukoza",
+        "Glyukoza + Galaktoza",
+        "Glyukoza + Fruktoza",
+        "Fruktoza + Riboza"
+      ],
+      "correctAnswer": "Glyukoza + Fruktoza"
+    },
+    {
+      "question": "Laktoza — sut shakari qanday monosaxaridlardan tashkil topgan?",
+      "options": [
+        "Glyukoza + Fruktoza",
+        "Glyukoza + Galaktoza",
+        "Glyukoza + Glyukoza",
+        "Galaktoza + Fruktoza"
+      ],
+      "correctAnswer": "Glyukoza + Galaktoza"
+    },
+    {
+      "question": "Xolesterin qaysi lipid guruhiga kiradi?",
+      "options": [
+        "Triglitserid",
+        "Fosfolipid",
+        "Sterol (steroid)",
+        "Vosk"
+      ],
+      "correctAnswer": "Sterol (steroid)"
+    },
+    {
+      "question": "Oqsilning ikkilamchi tuzilishi (alfa-spiral va beta-varag') qanday bog' hisobiga barqarorlashadi?",
+      "options": [
+        "Peptid bog'lari",
+        "Disulfid ko'priklari",
+        "Vodorod bog'lari",
+        "Ion bog'lari"
+      ],
+      "correctAnswer": "Vodorod bog'lari"
+    },
+    {
+      "question": "Oqsilning uchinchi tuzilishi (tertsiar) hosil bo'lishida qaysi kuchlar ishtirok etadi?",
+      "options": [
+        "Faqat vodorod bog'lari",
+        "Faqat disulfid ko'priklari",
+        "Gidrofob ta'sirlashuvlar, vodorod bog'lari, ion bog'lari va disulfid ko'priklari (-S-S-)",
+        "Faqat elektrostatik ta'sirlashuvlar"
+      ],
+      "correctAnswer": "Gidrofob ta'sirlashuvlar, vodorod bog'lari, ion bog'lari va disulfid ko'priklari (-S-S-)"
+    },
+    {
+      "question": "To'yinmagan yog' kislotalarining to'yingan yog' kislotalaridan asosiy kimyoviy farqi nima?",
+      "options": [
+        "To'yinmagan kislotalar C atomlari orasida ikki yoki uch qo'shbog' tutadi va xona haroratida suyuq holda bo'ladi",
+        "To'yinmagan kislotalar qisqaroq bo'ladi",
+        "To'yinmagan kislotalar suv bilan aralashadi",
+        "To'yinmagan kislotalar glyukozadan hosil bo'ladi"
+      ],
+      "correctAnswer": "To'yinmagan kislotalar C atomlari orasida ikki yoki uch qo'shbog' tutadi va xona haroratida suyuq holda bo'ladi"
+    },
+    {
+      "question": "Sellyuloza va kraxmal ikkalasi ham glyukoza monomerlaridan iborat, lekin xossalari bilan keskin farq qiladi. Sababi nima?",
+      "options": [
+        "Kraxmalda ko'proq glyukoza monomeri bor",
+        "Sellyulozada $\\beta$-1,4-glikozid bog'i tufayli zanjirlar to'g'ri va mustahkam; kraxmalda $\\alpha$-1,4 va $\\alpha$-1,6 bog'lar spiralsimon tuzilish beradi",
+        "Kraxmal suvda eriydi, sellyuloza erimaydi — lekin kimyoviy tarkiblari butunlay boshqacha",
+        "Sellyulozada azot bor, kraxmalda yo'q"
+      ],
+      "correctAnswer": "Sellyulozada $\\beta$-1,4-glikozid bog'i tufayli zanjirlar to'g'ri va mustahkam; kraxmalda $\\alpha$-1,4 va $\\alpha$-1,6 bog'lar spiralsimon tuzilish beradi"
+    },
+    {
+      "question": "Denaturatsiya nima va uni qaysi omillar keltirib chiqaradi?",
+      "options": [
+        "Oqsilning yangi aminokislotalar qo'shib o'sishi; yorug'lik ta'sirida",
+        "Oqsilning birlamchi tuzilishining buzilishi; harorat ta'sirida",
+        "Oqsilning ikkilamchi, uchinchi va to'rtlamchi tuzilishlarining buzilishi; yuqori harorat, pH o'zgarishi, kimyoviy moddalar ta'sirida",
+        "Oqsilning aminokislotalarga parchalanishi; fermentlar ta'sirida"
+      ],
+      "correctAnswer": "Oqsilning ikkilamchi, uchinchi va to'rtlamchi tuzilishlarining buzilishi; yuqori harorat, pH o'zgarishi, kimyoviy moddalar ta'sirida"
+    },
+    {
+      "question": "Oqsilning to'rtlamchi tuzilishi nima va unga misol keltiring.",
+      "options": [
+        "Bitta polipeptid zanjirning spiral shaklga kirishidir; mioglobin",
+        "Ikki va undan ortiq polipeptid zanjirlarning bir-biri bilan birikishidan hosil bo'lgan tuzilish; gemoglobin (4 ta zanjir)",
+        "Polipeptid zanjirning uch o'lchamli shaklga kirishidir; ferment",
+        "Aminokislotalarning ketma-ket joylashishi; insulin"
+      ],
+      "correctAnswer": "Ikki va undan ortiq polipeptid zanjirlarning bir-biri bilan birikishidan hosil bo'lgan tuzilish; gemoglobin (4 ta zanjir)"
+    },
+    {
+      "question": "RNK ning tarkibiga kiruvchi pentoza (5 karbonli shakar) qaysi va DNK dan farqi nima?",
+      "options": [
+        "RNK da dezoksiriboza, DNK da riboza bor",
+        "RNK da riboza (2'-OH guruh bor), DNK da dezoksiriboza (2'-H) bor",
+        "Ikkalasida ham riboza bor, lekin bog'lanish usuli farq qiladi",
+        "RNK da fruktoza, DNK da glyukoza bor"
+      ],
+      "correctAnswer": "RNK da riboza (2'-OH guruh bor), DNK da dezoksiriboza (2'-H) bor"
+    },
+    {
+      "question": "Aminokislotaning umumiy tuzilishida qaysi guruhlar majburiy ravishda mavjud?",
+      "options": [
+        "Faqat karboksil guruhi (-COOH)",
+        "Faqat amin guruhi (-NH$_2$)",
+        "Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq",
+        "Fosfat guruhi va qand"
+      ],
+      "correctAnswer": "Amin guruhi (-NH$_2$), karboksil guruhi (-COOH), vodorod atomi va R-yon zanjir — barchasi bir alfa-uglerodga bog'liq"
+    },
+    {
+      "question": "\"Muhim\" (essential) aminokislotalar deb nimaga aytiladi?",
+      "options": [
+        "Oqsil sintezida ishlatilmaydigan aminokislotalar",
+        "Organizmda sintezlanmaydigan va faqat ovqat bilan olinishi kerak bo'lgan 8–10 ta aminokislota",
+        "Eng ko'p miqdorda uchraydigan aminokislotalar",
+        "Faqat o'simliklardan olinadigan aminokislotalar"
+      ],
+      "correctAnswer": "Organizmda sintezlanmaydigan va faqat ovqat bilan olinishi kerak bo'lgan 8–10 ta aminokislota"
+    },
+    {
+      "question": "Suv molekulasining qutbli (polyar) xususiyati biologik jihatdan nima uchun muhim?",
+      "options": [
+        "Suv faqat kislorod va vodoroddan iborat bo'lgani uchun",
+        "Qutblilik sababli suv universal erituvchi bo'lib, ionlar va qutbli molekulalar (shakarlar, aminokislotalar) ni eritadi; vodorod bog'lari tufayli yuqori issiqlik sig'imiga ega",
+        "Suv membranani o'tkazmasligi uchun",
+        "Qutblilik sababli suv ATF sintezlaydi"
+      ],
+      "correctAnswer": "Qutblilik sababli suv universal erituvchi bo'lib, ionlar va qutbli molekulalar (shakarlar, aminokislotalar) ni eritadi; vodorod bog'lari tufayli yuqori issiqlik sig'imiga ega"
+    },
+    {
+      "question": "Strukturaviy uglevodlar (sellyuloza, xitin) fermentlar tomonidan qiyin parchalanadi. Sababi nima?",
+      "options": [
+        "Ularning molekulyar massasi juda kichik",
+        "$\\beta$-glikozid bog'larini gidrolizlovchi maxsus fermentlar (sellulaza, xitinaza) ko'p organizmlarda yo'q",
+        "Ular suvda eriydi va osmotik bosimni oshiradi",
+        "Ular faqat o'simliklarning ildizida uchraydi"
+      ],
+      "correctAnswer": "$\\beta$-glikozid bog'larini gidrolizlovchi maxsus fermentlar (sellulaza, xitinaza) ko'p organizmlarda yo'q"
+    },
+    {
+      "question": "Sistein aminokislotasining o'ziga xos xususiyati nima va oqsil tuzilishiga ta'siri?",
+      "options": [
+        "U gidrofob va membranada joylashadi",
+        "Sisteinda sulfgidril guruhi (-SH) bor; ikki sistein o'rtasida disulfid ko'prigi (-S-S-) hosil bo'lib oqsilning uchinchi tuzilishini barqarorlashtiradi",
+        "U oqsilga neytral xususiyat beradi",
+        "Sistein faqat kollagen oqsilida uchraydi"
+      ],
+      "correctAnswer": "Sisteinda sulfgidril guruhi (-SH) bor; ikki sistein o'rtasida disulfid ko'prigi (-S-S-) hosil bo'lib oqsilning uchinchi tuzilishini barqarorlashtiradi"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:58:07.951Z"
+}

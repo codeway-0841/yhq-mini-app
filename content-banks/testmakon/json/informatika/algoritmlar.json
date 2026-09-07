@@ -1,0 +1,131 @@
+{
+  "name": "Algoritmlar — Informatika test savollari",
+  "about": "Algoritmlar",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/algoritmlar/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "Algoritm nima?",
+      "options": [
+        "Kompyuter o'yini",
+        "Muammoni hal qilish uchun aniq va tugallangan qadamlar ketma-ketligi",
+        "Dasturlash tili",
+        "Internet sahifasi"
+      ],
+      "correctAnswer": "Muammoni hal qilish uchun aniq va tugallangan qadamlar ketma-ketligi"
+    },
+    {
+      "question": "Chiziqli (linear) algoritm qanday algoritm?",
+      "options": [
+        "Shartga qarab turli yo'nalishda bajariluvchi algoritm",
+        "Ko'rsatmalar yuqoridan pastga, hech qanday shart va takrorlashsiz ketma-ket bajariluvchi algoritm",
+        "Muayyan shart bajarilguncha takrorlanuvchi algoritm",
+        "O'zini o'zi chaqiruvchi algoritm"
+      ],
+      "correctAnswer": "Ko'rsatmalar yuqoridan pastga, hech qanday shart va takrorlashsiz ketma-ket bajariluvchi algoritm"
+    },
+    {
+      "question": "Tarmoqlanuvchi algoritm qanday belgi bilan ifodalanadi?",
+      "options": [
+        "To'rtburchak blok",
+        "Ellips blok",
+        "Romb (olmos) blok",
+        "Doira blok"
+      ],
+      "correctAnswer": "Romb (olmos) blok"
+    },
+    {
+      "question": "Takrorlanuvchi algoritm (tsikl) nima uchun ishlatiladi?",
+      "options": [
+        "Bitta amalni bir marta bajarish uchun",
+        "Ma'lum bir shart bajarilguncha yoki belgilangan marta bir amallar guruhini qayta-qayta bajarish uchun",
+        "Dasturni to'xtatish uchun",
+        "Matnni o'qish uchun"
+      ],
+      "correctAnswer": "Ma'lum bir shart bajarilguncha yoki belgilangan marta bir amallar guruhini qayta-qayta bajarish uchun"
+    },
+    {
+      "question": "Algoritmning blok-sxemasida to'rtburchak blok nimani bildiradi?",
+      "options": [
+        "Shartni tekshirish",
+        "Boshlanish yoki tugash",
+        "Hisoblash yoki amal bajarish",
+        "Ma'lumot kiritish"
+      ],
+      "correctAnswer": "Hisoblash yoki amal bajarish"
+    },
+    {
+      "question": "Algoritmning blok-sxemasida parallelogram (qiyshiq to'rtburchak) blok nimani anglatadi?",
+      "options": [
+        "Hisoblash amali",
+        "Ma'lumot kiritish yoki chiqarish (I/O)",
+        "Shart tekshirish",
+        "Tsikl boshlanishi"
+      ],
+      "correctAnswer": "Ma'lumot kiritish yoki chiqarish (I/O)"
+    },
+    {
+      "question": "Quyidagi algoritmlardan qaysi biri chiziqli algoritm namunasidir?",
+      "options": [
+        "Agar son musbat bo'lsa, u holda chiqar",
+        "Son nolga teng bo'lguncha 1 ni ayir",
+        "Ikkita sonni qo'shib natijani ekranga chiqar",
+        "Massivni tartiblash"
+      ],
+      "correctAnswer": "Ikkita sonni qo'shib natijani ekranga chiqar"
+    },
+    {
+      "question": "\"Agar yomg'ir yog'sa, soyabon ol\" — bu qaysi turdagi algoritm?",
+      "options": [
+        "Chiziqli algoritm",
+        "Tarmoqlanuvchi algoritm",
+        "Takrorlanuvchi algoritm",
+        "Rekursiv algoritm"
+      ],
+      "correctAnswer": "Tarmoqlanuvchi algoritm"
+    },
+    {
+      "question": "Tsikl (takrorlanuvchi algoritm) qachon tugaydi?",
+      "options": [
+        "Kompyuter o'chganda",
+        "Beriladigan shart bajarilganda yoki belgilangan marta takrorlagandan so'ng",
+        "Foydalanuvchi klaviatura tugmasini bosganda",
+        "Internet uzilganda"
+      ],
+      "correctAnswer": "Beriladigan shart bajarilganda yoki belgilangan marta takrorlagandan so'ng"
+    },
+    {
+      "question": "Algoritmning qaysi xususiyati uning har doim tugashini kafolatlaydi?",
+      "options": [
+        "Aniqlik (determinism)",
+        "Cheklilik (finiteness)",
+        "Ommaviylik (generality)",
+        "Samaradorlik (efficiency)"
+      ],
+      "correctAnswer": "Cheklilik (finiteness)"
+    },
+    {
+      "question": "Blok-sxemada ellips (oval) blok nimani anglatadi?",
+      "options": [
+        "Hisoblash",
+        "Shart",
+        "Boshlanish yoki tugash (Start/End)",
+        "Kiritish"
+      ],
+      "correctAnswer": "Boshlanish yoki tugash (Start/End)"
+    },
+    {
+      "question": "\"Agar son juft bo'lsa, 2 ga bo'l, aks holda 3 ga ko'paytir\" — bu necha yo'nalishli tarmoqlanish?",
+      "options": [
+        "Bir yo'nalishli",
+        "Ikki yo'nalishli",
+        "Uch yo'nalishli",
+        "To'rt yo'nalishli"
+      ],
+      "correctAnswer": "Ikki yo'nalishli"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:36.595Z"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Statika, bosim va gidrostatika (Arximed, suyuqlik) — Fizika test savollari",
+  "about": "Statika, bosim va gidrostatika (Arximed, suyuqlik)",
+  "subject": "Fizika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/fizika/statika-bosim-va-gidrostatika-arximed-su/savollar/",
+  "questionsCount": 5,
+  "questions": [
+    {
+      "question": "Paskal qonuni nimani ifodalaydi?",
+      "options": [
+        "Suyuqlik bosimi chuqurlikka bog‘liq",
+        "Suyuqlik yoki gazga berilgan bosim hamma tomonga o‘zgarishsiz uzatiladi",
+        "Jismga ta’sir qiluvchi kuch massaga bog‘liq",
+        "Har qanday ta’sirga teng aks ta’sir bor"
+      ],
+      "correctAnswer": "Suyuqlik yoki gazga berilgan bosim hamma tomonga o‘zgarishsiz uzatiladi"
+    },
+    {
+      "question": "Arximed kuchi qaysi formula orqali topiladi?",
+      "options": [
+        "F = mg",
+        "F = ρgv",
+        "F = kx",
+        "F = ma"
+      ],
+      "correctAnswer": "F = ρgv"
+    },
+    {
+      "question": "Havo bosimini o‘lchaydigan asbob nima?",
+      "options": [
+        "Manometr",
+        "Barometr",
+        "Termometr",
+        "Dinamometr"
+      ],
+      "correctAnswer": "Barometr"
+    },
+    {
+      "question": "Suyuqlikda suzib yurgan jismga ta’sir qiluvchi kuch?",
+      "options": [
+        "Og‘irlik kuchi",
+        "Ishqalanish kuchi",
+        "Arximed kuchi",
+        "Kulon kuchi"
+      ],
+      "correctAnswer": "Ishqalanish kuchi"
+    },
+    {
+      "question": "Avtomobilning botiq va qavariq ko‘prik o‘rtasidagi bosim kuchlari o‘zaro qanday nisbatda bo‘ladi? Ikkala holda avtomobil tezligi 36 km/h , ko‘prikni egrilik radiusi 20 m . g=10 m/s2",
+      "options": [
+        "0,5",
+        "1,5",
+        "4",
+        "3"
+      ],
+      "correctAnswer": "3"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:58:25.908Z"
+}

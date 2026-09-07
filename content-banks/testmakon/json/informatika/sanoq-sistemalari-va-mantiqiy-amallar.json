@@ -1,0 +1,131 @@
+{
+  "name": "Sanoq sistemalari va mantiqiy amallar — Informatika test savollari",
+  "about": "Sanoq sistemalari va mantiqiy amallar",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/sanoq-sistemalari-va-mantiqiy-amallar/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "1010₂ sonini o'nlik (decimal) sistemaga o'tkazing.",
+      "options": [
+        "8",
+        "12",
+        "10",
+        "14"
+      ],
+      "correctAnswer": "10"
+    },
+    {
+      "question": "25₁₀ sonini ikkilik (binary) sistemaga o'tkazing.",
+      "options": [
+        "10111₂",
+        "11001₂",
+        "11010₂",
+        "10011₂"
+      ],
+      "correctAnswer": "11001₂"
+    },
+    {
+      "question": "A AND B mantiqiy ifodasi qachon TRUE bo'ladi?",
+      "options": [
+        "Faqat A TRUE bo'lganda",
+        "A va B ikkalasi ham TRUE bo'lganda",
+        "A yoki B kamida biri TRUE bo'lganda",
+        "A FALSE bo'lganda"
+      ],
+      "correctAnswer": "A va B ikkalasi ham TRUE bo'lganda"
+    },
+    {
+      "question": "NOT(TRUE) ifodasi qanday natija beradi?",
+      "options": [
+        "TRUE",
+        "1",
+        "FALSE",
+        "NULL"
+      ],
+      "correctAnswer": "FALSE"
+    },
+    {
+      "question": "O'n oltili (hexadecimal) sanoq sistemasida qanday raqam/belgilar ishlatiladi?",
+      "options": [
+        "0-7",
+        "0-9 va A-F",
+        "0-9 va a-z",
+        "Faqat 0 va 1"
+      ],
+      "correctAnswer": "0-9 va A-F"
+    },
+    {
+      "question": "1 Megabayt (MB) necha Kilobaytga (KB) teng?",
+      "options": [
+        "1000 KB",
+        "512 KB",
+        "1024 KB",
+        "2048 KB"
+      ],
+      "correctAnswer": "1024 KB"
+    },
+    {
+      "question": "A OR B mantiqiy ifodasi qachon FALSE bo'ladi?",
+      "options": [
+        "Faqat A FALSE bo'lganda",
+        "A va B ikkalasi ham FALSE bo'lganda",
+        "A TRUE bo'lganda",
+        "Hech qachon FALSE bo'lmaydi"
+      ],
+      "correctAnswer": "A va B ikkalasi ham FALSE bo'lganda"
+    },
+    {
+      "question": "FF₁₆ sonini o'nlik sistemaga o'tkazing.",
+      "options": [
+        "240",
+        "256",
+        "254",
+        "255"
+      ],
+      "correctAnswer": "255"
+    },
+    {
+      "question": "11011₂ + 00111₂ = ?",
+      "options": [
+        "100010₂",
+        "100011₂",
+        "100100₂",
+        "100001₂"
+      ],
+      "correctAnswer": "100010₂"
+    },
+    {
+      "question": "XOR (eksklyuziv OR) mantiqiy amali qachon TRUE qaytaradi?",
+      "options": [
+        "Ikkalasi ham TRUE bo'lganda",
+        "Ikkalasi ham FALSE bo'lganda",
+        "Faqat bitta operand TRUE, ikkinchisi FALSE bo'lganda",
+        "Har doim TRUE"
+      ],
+      "correctAnswer": "Faqat bitta operand TRUE, ikkinchisi FALSE bo'lganda"
+    },
+    {
+      "question": "8 bitli (1 baytli) o'zgaruvchida nechta turli qiymat ifodalash mumkin?",
+      "options": [
+        "128",
+        "512",
+        "256",
+        "64"
+      ],
+      "correctAnswer": "256"
+    },
+    {
+      "question": "Sakkizlik (octal) sanoq sistemasida qanday raqamlar ishlatiladi?",
+      "options": [
+        "0-9",
+        "0-6",
+        "0-7",
+        "0-8"
+      ],
+      "correctAnswer": "0-7"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:43.280Z"
+}

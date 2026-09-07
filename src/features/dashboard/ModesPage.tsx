@@ -43,7 +43,9 @@ export default function ModesPage() {
       )
       return
     }
-    navigate('/test/1', { state: { questionIds: ids, title: tt('saved') } })
+    navigate('/test/1', {
+      state: { questionIds: ids, mode: 'saved', serverSelector: 'saved', title: tt('saved') },
+    })
   }, [savedQuestions, subject.id, language, navigate, tt, showToast])
 
   const goMode = (m: string, title?: string) => () => {

@@ -428,10 +428,13 @@ export const userSettings = pgTable('settings', {
  * `questions.id` esa faqat qulay surrogate key (frontend/WS numeric id'da qoladi).
  */
 export const questionBanks = pgTable('question_banks', {
-  id:        text('id').primaryKey(),
-  name:      text('name').notNull(),
-  createdAt: timestamp('created_at').defaultNow().notNull(),
-})
+  id:             text('id').primaryKey(),
+  name:           text('name').notNull(),
+  contentVersion: integer('content_version').default(1).notNull(),
+  createdAt:      timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  check('chk_question_banks_version', sql`${t.contentVersion} > 0`),
+])
 
 export const topics = pgTable('topics', {
   id:     serial('id').primaryKey(),
@@ -461,6 +464,71 @@ export const questions = pgTable('questions', {
 }, (t) => [
   unique('uq_question_external').on(t.bankId, t.externalId),
   index('idx_questions_bank_topic').on(t.bankId, t.topicId),
+  ])
+
+/**
+ * Server-authoritative test manifesti (question delivery v2).
+ * `question_ids` clientga HECH QACHON chiqmaydi; bounded session davomida
+ * bank tahrirlangan taqdirda ham position -> question bog'lanishi o'zgarmaydi.
+ */
+export const testSessions = pgTable('test_sessions', {
+  id:             text('id').primaryKey(),
+  userId:         text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  subjectId:      text('subject_id').notNull(),
+  bankId:         text('bank_id').notNull().references(() => questionBanks.id, { onDelete: 'restrict' }),
+  mode:           text('mode').notNull(),
+  selector:       jsonb('selector').$type<Record<string, unknown>>().notNull(),
+  selectionSeed:  text('selection_seed').notNull(),
+  bankVersion:    integer('bank_version').default(1).notNull(),
+  questionIds:    jsonb('question_ids').$type<number[]>().notNull(),
+  totalQuestions: integer('total_questions').notNull(),
+  issuedThrough:  integer('issued_through').default(-1).notNull(),
+  answeredCount:  integer('answered_count').default(0).notNull(),
+  status:         text('status').default('active').notNull(),
+  expiresAt:      timestamp('expires_at', { withTimezone: true }).notNull(),
+  createdAt:      timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+  lastActiveAt:   timestamp('last_active_at', { withTimezone: true }).defaultNow().notNull(),
+}, (t) => [
+  index('idx_test_sessions_user_active').on(t.userId, t.status, t.lastActiveAt),
+  index('idx_test_sessions_expires').on(t.expiresAt),
+  check('chk_test_sessions_status', sql`${t.status} IN ('active', 'completed', 'abandoned', 'expired')`),
+  check('chk_test_sessions_counts', sql`
+    ${t.totalQuestions} > 0
+    AND ${t.issuedThrough} >= -1
+    AND ${t.issuedThrough} < ${t.totalQuestions}
+    AND ${t.answeredCount} >= 0
+    AND ${t.answeredCount} <= ${t.totalQuestions}
+  `),
+])
+
+/**
+ * Sessiondagi canonical javob. Ikki UNIQUE invariant parallel/retry so'rovda
+ * progress, XP va coin yon ta'sirlarini aynan bir marta saqlaydi.
+ */
+export const testAttempts = pgTable('test_attempts', {
+  id:               serial('id').primaryKey(),
+  sessionId:        text('session_id').notNull().references(() => testSessions.id, { onDelete: 'cascade' }),
+  userId:           text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  position:         integer('position').notNull(),
+  questionId:       integer('question_id').notNull().references(() => questions.id, { onDelete: 'restrict' }),
+  selectedOptionId: text('selected_option_id').notNull(),
+  correct:          boolean('correct').notNull(),
+  clientToken:      text('client_token').notNull(),
+  resultPayload:    jsonb('result_payload').$type<Record<string, unknown>>().default({}).notNull(),
+  elapsedMsClient:  integer('elapsed_ms_client'),
+  elapsedMsServer:  integer('elapsed_ms_server'),
+  answeredAt:       timestamp('answered_at', { withTimezone: true }).defaultNow().notNull(),
+  createdAt:        timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (t) => [
+  unique('uq_test_attempt_position').on(t.sessionId, t.position),
+  unique('uq_test_attempt_token').on(t.userId, t.clientToken),
+  index('idx_test_attempts_session').on(t.sessionId, t.position),
+  index('idx_test_attempts_created').on(t.createdAt),
+  check('chk_test_attempt_position', sql`${t.position} >= 0`),
+  check('chk_test_attempt_elapsed', sql`
+    (${t.elapsedMsClient} IS NULL OR (${t.elapsedMsClient} >= 0 AND ${t.elapsedMsClient} <= 600000))
+    AND (${t.elapsedMsServer} IS NULL OR ${t.elapsedMsServer} >= 0)
+  `),
 ])
 
 /**

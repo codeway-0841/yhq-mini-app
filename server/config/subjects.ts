@@ -28,6 +28,8 @@ export interface SubjectRegistryEntry {
   /** true — fan hozircha boshqa (YHQ) bazasidan ishlayapti;
       UI'da "Vaqtinchalik demo ma'lumotlar" badge'i chiqadi */
   demoData: boolean
+  /** Rasmiy imtihon selectorlari; shared/subjects.ts dan derive qilinadi. */
+  examPresets: readonly string[]
 }
 
 export const SUBJECT_REGISTRY: SubjectRegistryEntry[] = SUBJECT_BASES.map((s) => ({
@@ -38,6 +40,7 @@ export const SUBJECT_REGISTRY: SubjectRegistryEntry[] = SUBJECT_BASES.map((s) =>
   dataSourceId: s.dataSourceId,
   isActive: s.available,
   demoData: s.demoData,
+  examPresets: s.examPresets,
 }))
 
 export function resolveSubject(subjectId: string | undefined): SubjectRegistryEntry {

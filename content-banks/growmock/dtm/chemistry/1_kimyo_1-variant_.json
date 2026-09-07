@@ -1,0 +1,443 @@
+{
+  "info": {
+    "id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+    "subject_id": "629d6501-5bd3-4e4f-83b5-cdd6a4dcecc4",
+    "title": "Kimyo 1-variant ",
+    "description": "1-variant ",
+    "time_limit": 30,
+    "created_at": "2026-08-28T16:08:14.849911Z",
+    "updated_at": "2026-08-28T16:08:14.849911Z"
+  },
+  "subject": {
+    "id": "629d6501-5bd3-4e4f-83b5-cdd6a4dcecc4",
+    "name": "Kimyo",
+    "slug": "chemistry",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "782f5d66-0c6c-4a32-8d93-63174e281328",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 1,
+      "question_text": "Magniy va aluminiydan iborat 10.2 g aralashma yetarli miqdordagi xlorid kislotada eritilganda n.sh.da 11.2 l vodorod ajraldi. Dastlabki aralashmadagi aluminiyning massa ulushini (%) aniqlang. (Ar: Mg=24, Al=27)",
+      "options": {
+        "a": "52.9%",
+        "b": "47.1%",
+        "c": "63.5%",
+        "d": "36.5%"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "6daeae0f-3c96-4981-9971-14dafdf6e8a5",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 2,
+      "question_text": "H2 va CO dan iborat 20 l aralashmaga 20 l O2 qo'shib portlatildi. Suv bug'lari kondensatsiyalangandan so'ng va sistema dastlabki sharoitga keltirilganda umumiy gazlar hajmi 25 l ni tashkil etdi. Dastlabki aralashmadagi vodorodning hajm ulushini (%) aniqlang.",
+      "options": {
+        "a": "50%",
+        "b": "25%",
+        "c": "60%",
+        "d": "40%"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "9b3ff33a-7f81-45bb-a2ce-e2d52c45d7b1",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 3,
+      "question_text": "20 °C da to'yingan KNO3 eritmasining massasi 300 g va unda kislota tuzining massa ulushi 25% ga teng. Shu eritma 60 °C gacha qizdirilganda yana necha gramm KNO3 erishi mumkin? (60 °C da KNO3 ning eruvchanligi S=110 g/100 g H2O)",
+      "options": {
+        "a": "172.5 g",
+        "b": "247.5 g",
+        "c": "125.0 g",
+        "d": "82.5 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "cf82bf53-de37-491d-9e38-820b04b3349f",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 4,
+      "question_text": "Massasi 16.8 g bo'lgan bir valentli metall karbonati (M2CO3) termik parchalanganda 4.4 g CO2 ajraldi. Noma'lum metallni aniqlang. (Ar: C=12, O=16)",
+      "options": {
+        "a": "Kaliy (K)",
+        "b": "Natriy (Na)",
+        "c": "Litiy (Li)",
+        "d": "Rubidiy (Rb)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "61e69938-ef07-43a0-87d5-8a66260256e8",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 5,
+      "question_text": "N2 (g) + 3H2 (g) <=> 2NH3 (g) reaksiyasida N2 ning dastlabki konsentratsiyasi 2 mol/l, H2 niki 5 mol/l edi. Muvozanat qaror topganda N2 ning 25% i reaksiyaga kirishgani aniqlandi. Muvozanat konstantasini (Kc) hisoblang.",
+      "options": {
+        "a": "0.106",
+        "b": "0.250",
+        "c": "0.048",
+        "d": "0.500"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b6ceda7a-b319-4d43-80d9-6fa9bb7d8d5c",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 6,
+      "question_text": "Tarkibida 0.2 mol CuSO4 va 0.3 mol NaCl bo'lgan suvli eritma orqali 0.3 F (Faradey) elektr toki o'tkazilganda katod va anodda ajralgan moddalar kütlesi (g) yig'indisini toping. (Ar: Cu=64, Cl=35.5, O=16, H=1)",
+      "options": {
+        "a": "16.75 g",
+        "b": "20.25 g",
+        "c": "13.50 g",
+        "d": "18.20 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8a0c15e5-608b-40bc-a1e1-848758401722",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 7,
+      "question_text": "FeSO4 va Fe2(SO4)3 tuzlari aralashmasidagi temir atomlarining 40% i Fe(+2) ionlariga tegishli. Ushbu aralashmadagi sulfat ionlari (SO4^2-) va temir atomlari soni nisbatini (n(SO4^2-) : n(Fe)) toping.",
+      "options": {
+        "a": "1.3 : 1",
+        "b": "1.5 : 1",
+        "c": "1.8 : 1",
+        "d": "2.0 : 1"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "eabf8fc8-9b38-4d65-ae9f-d5fd7175ec88",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 8,
+      "question_text": "To'yingan bir atomli spirt mo'l miqdordagi natriy metalli bilan reaksiyaga kirishganda ajralgan H2 gazining hajmi xuddi shuncha miqdordagi spirt to'liq yonganda hosil bo'lgan CO2 hajmidan 4 marta kam. Spirtni aniqlang.",
+      "options": {
+        "a": "Propanol",
+        "b": "Etanol",
+        "c": "Butanol",
+        "d": "Metanol"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2affb422-8fd1-47ac-baf6-0ca36b9cad87",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 9,
+      "question_text": "Molar massasi 86 g/mol bo'lgan va optik izomeriyaga (xiral uglerod atomiga) ega bo'lgan eng sodda alkan formulasini ko'rsating.",
+      "options": {
+        "a": "3-metilgeksan",
+        "b": "2-metilpentan",
+        "c": "3-metilpentan",
+        "d": "2,3-dimetilbutan"
+      },
+      "correct_option": "c",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "83a1bddb-a764-4238-a5bf-5ab25a4c9f2d",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 10,
+      "question_text": "Tarkibida 12 g uglerod, 2 g vodorod va 16 g kislorod bo'lgan organik birikmaning bug'larining havo bo'yicha nisbiy zichligi 2.07 ga teng. Moddaning molekulyar formulasini aniqlang.",
+      "options": {
+        "a": "C2H4O2 (Sirka kislota / Metilformat)",
+        "b": "C3H6O",
+        "c": "CH2O",
+        "d": "C3H8O2"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2594fd34-4b55-45c3-b83b-dc06c29ef76f",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 11,
+      "question_text": "0.1 M li CH3COOH eritmasida kislotaning dissotsilanish darajasi 1.34% ga teng. Ushbu kislotaning dissotsilanish konstantasini (Ka) hisoblang.",
+      "options": {
+        "a": "1.8 * 10^-5",
+        "b": "1.8 * 10^-4",
+        "c": "2.5 * 10^-5",
+        "d": "1.34 * 10^-3"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "a08e2d4a-8fe1-463c-9efd-6d5236fbb19d",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 12,
+      "question_text": "Massasi 13.8 g bo'lgan etanol va fenol aralashmasiga Na metalli ta'sir ettirilganda n.sh.da 2.24 l H2 ajraldi. Dastlabki aralashmadagi fenolning massasini (g) hisoblang. (M: Etanol=46, Fenol=94)",
+      "options": {
+        "a": "9.4 g",
+        "b": "4.6 g",
+        "c": "6.2 g",
+        "d": "7.5 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "734a4d12-484d-413c-95bd-27a20297d25f",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 13,
+      "question_text": "K2Cr2O7 + 6FeSO4 + 7H2SO4 -> Cr2(SO4)3 + 3Fe2(SO4)3 + K2SO4 + 7H2O reaksiyasida Qaytaruvchi va Oksidlovchi koeffitsiyentlari nisbatini toping.",
+      "options": {
+        "a": "6 : 1",
+        "b": "1 : 6",
+        "c": "7 : 1",
+        "d": "3 : 1"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "81cadafc-daed-4dae-aedd-25998d5b41e3",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 14,
+      "question_text": "N2O4 (g) <=> 2NO2 (g) reaksiya aralashmasining o'rtacha molyar massasi 69 g/mol ga teng bo'lsa, N2O4 ning dissotsilanish darajasini (%) aniqlang. (M: N2O4=92, NO2=46)",
+      "options": {
+        "a": "33.3%",
+        "b": "50.0%",
+        "c": "25.0%",
+        "d": "66.7%"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "895b787a-e600-44f3-b907-e877463d3c36",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 15,
+      "question_text": "Zichligi 1.2 g/ml bo'lgan 40% li NaOH eritmasining molar konsentratsiyasini (mol/l) hisoblang. (M(NaOH)=40 g/mol)",
+      "options": {
+        "a": "12.0 M",
+        "b": "10.0 M",
+        "c": "8.0 M",
+        "d": "15.0 M"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "6f05f82a-d0a9-4ed4-b74b-55d48cf79cfc",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 16,
+      "question_text": "Sikloalkan va unga izomer bo'lgan alken aralashmasi to'liq yonganda 0.6 mol CO2 va 0.6 mol H2O hosil bo'ldi. Aralashmaning massasini (g) hisoblang.",
+      "options": {
+        "a": "8.4 g",
+        "b": "12.6 g",
+        "c": "16.8 g",
+        "d": "4.2 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "fa2ad672-2a7b-44fa-85ba-b4f5fd767e17",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 17,
+      "question_text": "Xlorid kislotaning pH qiymati 2 ga teng bo'lgan 900 ml eritmasiga necha ml suv qo'shilganda eritmaning pH qiymati 3 ga teng bo'lib qoladi?",
+      "options": {
+        "a": "8100 ml",
+        "b": "9000 ml",
+        "c": "1000 ml",
+        "d": "4500 ml"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "da8d2486-c0d4-40ab-868e-211cf22512f0",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 18,
+      "question_text": "Qaysi reagent yordamida bir idishdagi benzol, toluol va stirolni bir-biridan sifat jihatdan ajratib olish mumkin?",
+      "options": {
+        "a": "KMnO4 ning suvli eritmasi (xona harorati va qizdirilganda)",
+        "b": "Bromli suv",
+        "c": "AgNO3 ning ammiakli eritmasi",
+        "d": "FeCl3 eritmasi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8aba4257-7488-4fbd-aeca-13c5d428ebcf",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 19,
+      "question_text": "Glikol (etan-1,2-diol) va glitserin aralashmasi mo'l Cu(OH)2 bilan reaksiyaga kirishib kompleks hosil qildi. Agar 0.2 mol aralashma to'liq yonishi uchun 0.55 mol O2 sarflangan bo'lsa, glitserinning mol ulushini toping.",
+      "options": {
+        "a": "50%",
+        "b": "25%",
+        "c": "60%",
+        "d": "40%"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "bf103adb-d6a2-4fcd-b94f-444efbebc6ae",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 20,
+      "question_text": "Massasi 14.2 g bo'lgan R-COOH bir asosli karbon kislota 100 ml 2 M li NaOH eritmasi bilan neytrallandi. Kislotaning radikalidagi (R) uglerod atomlari sonini toping. (M(NaOH)=40)",
+      "options": {
+        "a": "4 ta (Valerian / Pentan kislota)",
+        "b": "3 ta (Butan kislota)",
+        "c": "2 ta (Propan kislota)",
+        "d": "5 ta (Geksan kislota)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3a93a25c-98b8-4147-ac88-56095f41c068",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 21,
+      "question_text": "4.48 l (n.sh.) asetilen va etilen aralashmasi mo'l bromli suvdan o'tkazilganda eritma massasi 4.0 g ga ortdi. Dastlabki aralashmadagi asetilening hajm ulushini (%) hisoblang.",
+      "options": {
+        "a": "25%",
+        "b": "75%",
+        "c": "50%",
+        "d": "33.3%"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "4921499a-bd28-4149-b3ce-adad825f82bc",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 22,
+      "question_text": "Fe va Fe2O3 dan iborat 24 g aralashmaga vodorod bilan ishlov berilganda 2.7 g H2O hosil bo'ldi. Dastlabki aralashmadagi temir (Fe) ning massasini (g) aniqlang.",
+      "options": {
+        "a": "16 g",
+        "b": "8 g",
+        "c": "12 g",
+        "d": "18 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c7eb122a-3a67-4f6e-89f1-5f4c738f6d2c",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 23,
+      "question_text": "0.1 mol glyukoza spirtli bijg'iganda ajralgan gaz to'liq baryum gidroksid [Ba(OH)2] eritmasidan o'tkazilganda necha gramm BaCO3 cho'kmasi tushadi? (M(BaCO3)=197)",
+      "options": {
+        "a": "39.4 g",
+        "b": "19.7 g",
+        "c": "59.1 g",
+        "d": "78.8 g"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "6e681576-4305-4e20-8b9a-c75e34d4ad32",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 24,
+      "question_text": "1-brombutan va 2-brombutandan iborat aralashmaga metallic natriy ta'sir ettirilganda (Vyurs reaksiyasi) eng ko'pi bilan nechta har xil qurilishli uglevodorod hosil bo'ladi?",
+      "options": {
+        "a": "3 ta (Oktan, 3,4-dimetilgeksan, 3-metilgeptan)",
+        "b": "2 ta",
+        "c": "4 ta",
+        "d": "1 ta"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "014b472b-c555-417a-8fe5-4e7102b6aa71",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 25,
+      "question_text": "Kaliy sulfat (K2SO4) tuzining suvli eritmasi 54 g suv sarflanmaguncha elektroliz qilindi. Anodda ajralgan gazning hajmini (l, n.sh.) aniqlang.",
+      "options": {
+        "a": "33.6 l",
+        "b": "16.8 l",
+        "c": "22.4 l",
+        "d": "67.2 l"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0948b138-a6bd-43b9-90ab-e9d31febfa01",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 26,
+      "question_text": "Oksidlanish-qaytarilish reaksiyasida: KClO3 + HCl -> KCl + Cl2 + H2O. Tenglamada barcha koeffitsiyentlar yig'indisini toping.",
+      "options": {
+        "a": "16",
+        "b": "18",
+        "c": "14",
+        "d": "12"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e620569c-aed2-4240-b524-4686ad722e0b",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 27,
+      "question_text": "Tarkibida 0.1 mol peptid bo'lgan modda to'liq gidrolizlanganda faqat 0.3 mol glitsin hosil bo'ldi. Ushbu peptidning nisbiy molekulyar massasini (Mr) aniqlang. (M(Glitsin)=75 g/mol)",
+      "options": {
+        "a": "189",
+        "b": "225",
+        "c": "207",
+        "d": "171"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "e9f5bcaa-1da8-422d-aacc-8b9c2a14f97e",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 28,
+      "question_text": "20 °C da reaksiya tezligi 0.02 mol/(l*s) ga teng. Reaksiya harorat koeffitsiyenti gamma=3 bo'lsa, 50 °C da reaksiya tezligini [mol/(l*s)] hisoblang.",
+      "options": {
+        "a": "0.54 mol/(l*s)",
+        "b": "0.18 mol/(l*s)",
+        "c": "1.62 mol/(l*s)",
+        "d": "0.27 mol/(l*s)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f4b79a05-79dd-4987-a93e-aa5c3d82fc5f",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 29,
+      "question_text": "3-metilbutin-1 birikmasining gidorotatsiyasi (Kucherov reaksiyasi) natijasida asosan qanday birikma hosil bo'ladi?",
+      "options": {
+        "a": "3-metilbutanon-2",
+        "b": "3-metilbutanal",
+        "c": "2-metilbutanal",
+        "d": "Pentanong-3"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b27b62aa-39e3-4574-8544-66df9ba949f2",
+      "test_id": "93a3ed4d-0707-46cc-9ea6-4abcbe1fbb3e",
+      "order_number": 30,
+      "question_text": "Platina va oltin metallari qaysi kislotalar aralashmasida ('Shoh aroq') eriydi va bunda qanday gaz ajralib chiqadi?",
+      "options": {
+        "a": "3 hajmi HCl + 1 hajmi HNO3 (NO gazi)",
+        "b": "1 hajmi HCl + 3 hajmi HNO3 (NO2 gazi)",
+        "c": "H2SO4 + HNO3 (SO2 gazi)",
+        "d": "HCl + H2SO4 (H2 gazi)"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:18:13.976Z"
+}

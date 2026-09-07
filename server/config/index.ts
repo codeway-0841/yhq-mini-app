@@ -61,6 +61,12 @@ const envSchema = z.object({
    *  himoyasi). Yo'q bo'lsa plain sha256 fallback (dev uchun; prod'da o'rnating). */
   OTP_PEPPER: z.string().optional().transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined)).pipe(z.string().min(16).optional()),
 
+  /** Test-session v2 delivery proof HMAC kaliti. Yangi API bu kalitsiz
+   *  production'da fail-closed (503); eski API migratsiya davrida ishlaydi. */
+  TEST_SESSION_PROOF_SECRET: z.string().optional()
+    .transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined))
+    .pipe(z.string().min(32).optional()),
+
   /** Click Payment Gateway */
   CLICK_SERVICE_ID:       z.string().optional(),
   CLICK_MERCHANT_ID:      z.string().optional(),
@@ -209,6 +215,17 @@ export const config = {
     otpPepper: env.OTP_PEPPER,
     /** initData auth_date replay oynasi (sekund) — default 1 soat */
     initDataMaxAgeSeconds: Math.max(60, Number(env.INITDATA_MAX_AGE_SECONDS ?? '3600')),
+  },
+
+  /** Server-authoritative test sessionlari. Production secret rollout
+   *  tugamaguncha route mavjud, lekin session yaratmaydi (fail-closed). */
+  testSessions: {
+    // Lokal/testda deterministik dev kalit endpoint va integration testlarni
+    // ishlatadi. Productionda fallback YO'Q — secret bo'lmasa service 503.
+    proofSecret: env.TEST_SESSION_PROOF_SECRET
+      ?? (env.NODE_ENV === 'production' ? undefined : 'kivvi-test-session-dev-only-secret'),
+    bufferSize: 6,
+    ttlMinutes: 180,
   },
 
   /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */

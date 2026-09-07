@@ -1,0 +1,61 @@
+{
+  "name": "Progressiyalar (arifmetik va geometrik) — Matematika test savollari",
+  "about": "Progressiyalar (arifmetik va geometrik)",
+  "subject": "Matematika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/matematika/progressiyalar-arifmetik-va-geometrik/savollar/",
+  "questionsCount": 5,
+  "questions": [
+    {
+      "question": "$1^3 + 2^3 + 3^3 + ... + n^3 = \\left(\\frac{n(n+1)}{2}\\right)^2$ formuladan $1^3 + 2^3 + ... + 10^3$ ni toping.",
+      "options": [
+        "$3025$",
+        "$2025$",
+        "$4025$",
+        "$5025$"
+      ],
+      "correctAnswer": "$3025$"
+    },
+    {
+      "question": "$\\sum_{k=0}^{\\infty} \\left(\\frac{1}{2}\\right)^k = ?$ (geometrik progressiya yig'indisi)",
+      "options": [
+        "$1$",
+        "$2$",
+        "$\\infty$",
+        "$\\frac{1}{2}$"
+      ],
+      "correctAnswer": "$2$"
+    },
+    {
+      "question": "$\\frac{x - 1}{3} = \\frac{y + 2}{5}$ va $x + y = 14$ bo'lsa, $x$ ni toping.",
+      "options": [
+        "$4$",
+        "$5$",
+        "$7$",
+        "$6$"
+      ],
+      "correctAnswer": "$7$"
+    },
+    {
+      "question": "$a$, $b$, $c$ arifmetik progressiyada, $a$, $d$, $b$ geometrik progressiyada, $b$, $e$, $c$ garmonik progressiyada. Agar $a = 1$, $c = 9$ bo'lsa, $d \\cdot e$ ni toping.",
+      "options": [
+        "$15$",
+        "$\\frac{45}{2}$",
+        "$\\frac{90}{7}$",
+        "$18$"
+      ],
+      "correctAnswer": "$\\frac{90}{7}$"
+    },
+    {
+      "question": "$\\sin^2 2x - \\sin^2 x = \\cos^2 x$ tenglamaning $[0; 2\\pi)$ da nechta ildizi bor?",
+      "options": [
+        "$2$",
+        "$4$",
+        "$6$",
+        "$8$"
+      ],
+      "correctAnswer": "$4$"
+    }
+  ],
+  "downloadedAt": "2026-09-07T19:00:19.144Z"
+}

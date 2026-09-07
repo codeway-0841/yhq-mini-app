@@ -1,0 +1,474 @@
+{
+  "info": {
+    "id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+    "subject_id": "5ca732d6-89aa-4a7b-8444-45c4bbf2ef2e",
+    "title": "Nemis tili 1-variant (DE001)",
+    "description": "Variant: DE001",
+    "time_limit": 60,
+    "created_at": "2026-08-08T08:56:24.737577Z",
+    "updated_at": "2026-08-08T08:56:24.737577Z"
+  },
+  "subject": {
+    "name": "Nemis tili",
+    "slug": "lang_de",
+    "code": "de"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "b7c019b9-b91a-4e12-85ce-a360b7aa1907",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 1,
+      "question_text": "Ich ___ Student.",
+      "options": {
+        "a": "bin",
+        "b": "bist",
+        "c": "ist",
+        "d": "seid"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "89e07604-370c-44e7-bc27-3fa802ee3429",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 2,
+      "question_text": "Wir ___ aus Usbekistan.",
+      "options": {
+        "a": "bist",
+        "b": "ist",
+        "c": "sind",
+        "d": "seid"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "e0d7a81c-b607-4433-a68a-9e9e3bdd85dd",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 3,
+      "question_text": "Er ___ jeden Tag Deutsch.",
+      "options": {
+        "a": "lernen",
+        "b": "lernt",
+        "c": "lernst",
+        "d": "gelernt"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol nemis tilidagi fe'lning hozirgi zamondagi tuslanishiga (Konjugation im Präsens) oid. Keling, savolni tahlil qilamiz:\n\n**Savol:** Er ___ jeden Tag Deutsch.\n\nBu yerda bizga \"o'rganmoq\" ma'nosini beruvchi \"lernen\" fe'lini to'g'ri tuslab qo'yish talab qilinadi.\n\n1.  **Egani aniqlash:** Gapning egasi \"Er\" olmoshi bo'lib, u \"u (o'g'il bola)\" degan ma'noni anglatadi va uchinchi shaxs birlikda turibdi.\n2.  **Zamonni aniqlash:** \"jeden Tag\" (har kuni) so'z birikmasi har doim takrorlanadigan, odatiy harakatni bildiradi. Bu esa hozirgi zamon (Präsens) ishlatilishini talab qiladi.\n3.  **\"lernen\" fe'lining hozirgi zamonda tuslanishi:** Nemis tilida fe'llar shaxs va songa qarab tuslanadi. \"lernen\" fe'lining hozirgi zamondagi tuslanishi quyidagicha:\n    *   ich lern**e** (men o'rganaman)\n    *   du lern**st** (sen o'rganasan)\n    *   er/sie/es lern**t** (u o'rganadi)\n    *   wir lern**en** (biz o'rganamiz)\n    *   ihr lern**t** (sizlar o'rganasizlar)\n    *   sie/Sie lern**en** (ular/Siz o'rganasizlar)\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) lernen:** Bu fe'lning boshlang'ich (infinitiv) shakli yoki \"wir\", \"sie\" (ko'plik) va \"Sie\" (rasmiy) olmoshlari uchun ishlatiladi. \"Er\" uchun to'g'ri emas.\n*   **b) lernt:** Bu \"er\", \"sie\" (qiz bola) va \"es\" (jinsiz) olmoshlari uchun hozirgi zamonda to'g'ri tuslangan shakl. Bizning egamiz \"Er\" bo'lgani uchun bu variant to'g'ri keladi.\n*   **c) lernst:** Bu \"du\" (sen) olmoshi uchun hozirgi zamonda to'g'ri tuslangan shakl. \"Er\" uchun to'g'ri emas.\n*   **d) gelernt:** Bu \"lernen\" fe'lining Partizip II (o'tgan zamon sifatdoshi) shakli. U o'tgan zamon (Perfekt) yoki majhul nisbat (Passiv) kabi murakkab zamonlarni yasashda yordamchi fe'l bilan birga ishlatiladi (masalan, \"Er hat gelernt\"). Oddiy hozirgi zamon uchun to'g'ri emas.\n\nShunday qilib, \"Er\" olmoshi uchinchi shaxs birlikda bo'lganligi sababli, \"lernen\" fe'lining to'g'ri tuslangan shakli \"lernt\" bo'ladi.\n\n**To'g'ri javob: B) lernt**",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "ebd76b79-c645-4b85-b172-58b61ea36c9e",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 4,
+      "question_text": "Ich wohne ___ Taschkent.",
+      "options": {
+        "a": "an",
+        "b": "auf",
+        "c": "in",
+        "d": "nach"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "c9d3e7d9-16fa-47a7-af38-5568916cc511",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 5,
+      "question_text": "Das Buch liegt ___ dem Tisch.",
+      "options": {
+        "a": "unter",
+        "b": "auf",
+        "c": "neben",
+        "d": "hinter"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "9aec52aa-1c50-4517-994a-b5cc88d27dd1",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 6,
+      "question_text": "Morgen ___ ich nach Berlin.",
+      "options": {
+        "a": "fahre",
+        "b": "fuhr",
+        "c": "gefahren",
+        "d": "fährt"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "2443f2e6-7700-42d2-b188-5f93443c8a0a",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 7,
+      "question_text": "Wie spät ___ es?",
+      "options": {
+        "a": "haben",
+        "b": "seid",
+        "c": "ist",
+        "d": "sind"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "0bf4174f-34d0-4be3-922f-f61235176d88",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 8,
+      "question_text": "Ich habe zwei ___.",
+      "options": {
+        "a": "Bruder",
+        "b": "Brüder",
+        "c": "Bruders",
+        "d": "Brüdern"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "5667f41b-3d9a-4605-8e11-c3a4de5acff9",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 9,
+      "question_text": "Sie ___ gern Musik.",
+      "options": {
+        "a": "hören",
+        "b": "hört",
+        "c": "hörst",
+        "d": "gehört"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "692d8ab4-fe1d-4933-acd4-d23f9dc4fe24",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 10,
+      "question_text": "Wir trinken ___ Kaffee.",
+      "options": {
+        "a": "ein",
+        "b": "eine",
+        "c": "einen",
+        "d": "einem"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "c987c91b-56f0-4731-b33f-25b5579927a8",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 11,
+      "question_text": "Kannst du mir bitte ___ helfen?",
+      "options": {
+        "a": "ich",
+        "b": "mich",
+        "c": "mir",
+        "d": "mein"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "e571ba8a-3eb3-4166-8177-8f38dd4388e3",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 12,
+      "question_text": "Am Wochenende ___ wir Fußball.",
+      "options": {
+        "a": "spielen",
+        "b": "spielt",
+        "c": "spielst",
+        "d": "gespielt"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "80d5633a-b1ef-44f6-a6bf-d8590cd25de7",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 13,
+      "question_text": "Meine Schwester ist ___ als ich.",
+      "options": {
+        "a": "groß",
+        "b": "größer",
+        "c": "größte",
+        "d": "am größten"
+      },
+      "correct_option": "b",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "b958c48f-72ad-45c4-98a8-5d07d4e86bab",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 14,
+      "question_text": "Gestern ___ ich einen Film gesehen.",
+      "options": {
+        "a": "habe",
+        "b": "bin",
+        "c": "werde",
+        "d": "hatte"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "9534906f-f6ff-4f12-a452-1583347afeeb",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 15,
+      "question_text": "Ich stehe jeden Morgen um sieben Uhr ___.",
+      "options": {
+        "a": "an",
+        "b": "ein",
+        "c": "auf",
+        "d": "aus"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "e06cf9b6-c31f-455c-ae04-4bb74d5717c8",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 16,
+      "question_text": "Wenn ich mehr Zeit hätte, ___ ich Deutsch lernen.",
+      "options": {
+        "a": "werde",
+        "b": "würde",
+        "c": "will",
+        "d": "muss"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "8ea9fa8d-ab56-44a2-aa6d-dbc9af823bbd",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 17,
+      "question_text": "Nachdem er gegessen hatte, ___ er spazieren.",
+      "options": {
+        "a": "geht",
+        "b": "ging",
+        "c": "gegangen",
+        "d": "gehte"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "39b065b0-e790-4215-8917-e66e38f6d74a",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 18,
+      "question_text": "Wir freuen uns ___ den Urlaub.",
+      "options": {
+        "a": "an",
+        "b": "über",
+        "c": "auf",
+        "d": "für"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "f4d8edb5-e750-4223-a145-684144572161",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 19,
+      "question_text": "Er interessiert sich ___ Geschichte.",
+      "options": {
+        "a": "auf",
+        "b": "mit",
+        "c": "für",
+        "d": "bei"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "07f0dbfa-7f84-4772-87ab-5a579dead87e",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 20,
+      "question_text": "Obwohl es regnete, ___ wir spazieren.",
+      "options": {
+        "a": "bleiben",
+        "b": "gingen",
+        "c": "gehen",
+        "d": "gegangen"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "66f2d340-0978-469e-8bf1-f239f4b6a30e",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 21,
+      "question_text": "Das ist der Mann, ___ Auto gestohlen wurde.",
+      "options": {
+        "a": "den",
+        "b": "dem",
+        "c": "dessen",
+        "d": "der"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "124f7b81-0b29-4c43-bf42-12f2f158313d",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 22,
+      "question_text": "Hätte ich das gewusst, ___ ich früher gekommen.",
+      "options": {
+        "a": "bin",
+        "b": "werde",
+        "c": "wäre",
+        "d": "habe"
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "804ad98c-b400-4ba1-bc68-35c012e67a0b",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 23,
+      "question_text": "Das Projekt muss bis Freitag ___ werden.",
+      "options": {
+        "a": "beendet",
+        "b": "abgeschlossen",
+        "c": "schließen",
+        "d": "schließenen"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "fcb7d037-2f48-4583-95db-219ffea0be36",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 24,
+      "question_text": "Welcher Satz ist grammatikalisch richtig?",
+      "options": {
+        "a": "Ich habe gegangen.",
+        "b": "Ich bin nach Hause gegangen.",
+        "c": "Ich bin gehen nach Hause.",
+        "d": "Ich habe nach Hause gehen."
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "d4d4778f-cba1-48b6-9078-d0895564ad40",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 25,
+      "question_text": "Er spricht Deutsch, ___ er nie in Deutschland war.",
+      "options": {
+        "a": "deshalb",
+        "b": "obwohl",
+        "c": "weil",
+        "d": "denn"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "ce99396a-cc04-4145-9c2d-8e67464f15a7",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 26,
+      "question_text": "Die Firma sucht Mitarbeiter, die selbstständig ___ können.",
+      "options": {
+        "a": "arbeitet",
+        "b": "arbeiten",
+        "c": "gearbeitet",
+        "d": "arbeitete"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "6ac03fca-a7a7-4e9c-a18a-51067d248c99",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 27,
+      "question_text": "Welches Wort passt? „Die Umwelt muss besser ___ werden.“",
+      "options": {
+        "a": "schützen",
+        "b": "geschützt",
+        "c": "schützte",
+        "d": "schützt"
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "cc0feff9-2d41-4cf9-969c-9e161fa0ddad",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 28,
+      "question_text": "Wenn das Wetter morgen schön ist, ___ wir wandern.",
+      "options": {
+        "a": "gingen",
+        "b": "werden",
+        "c": "waren",
+        "d": "hätten"
+      },
+      "correct_option": "b",
+      "explanation": "Ushbu savolda nemis tilidagi shart ergash gapli qo'shma gap (Konditionalsatz) va kelasi zamon (Futur I) ishlatilishi so'ralgan.\n\nKeling, savolni tahlil qilamiz:\n\"Wenn das Wetter morgen schön ist, ___ wir wandern.\"\nBu yerda \"Wenn das Wetter morgen schön ist\" qismi shart ergash gap bo'lib, \"agar ob-havo ertaga yaxshi bo'lsa\" degan ma'noni anglatadi. Bu gapda fe'l \"ist\" (sein fe'lining hozirgi zamon shakli) hozirgi zamonda (Präsens) turibdi va \"morgen\" (ertaga) so'zi kelasi zamonga ishora qilmoqda.\n\nNemis tilida kelajakdagi shartni ifodalash uchun odatda shart ergash gapda hozirgi zamon (Präsens) ishlatiladi, bosh gapda esa kelasi zamon (Futur I) qo'llaniladi.\n\n**Kelasi zamon (Futur I) qanday yasaladi?**\nFutur I yordamchi fe'l \"werden\" ning tegishli shaxs-sondagi shakli va asosiy fe'lning infinitiv (boshlang'ich) shakli yordamida yasaladi.\nFormulasi: Subjekt + werden (konjugiert) + ... + Infinitiv (am Satzende).\nMisol uchun: \"Ich werde lernen.\" (Men o'rganaman.)\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) gingen:** Bu \"gehen\" (bormoq) fe'lining o'tgan zamon (Präteritum) shakli. \"Wir gingen\" - \"Biz bordik\" degan ma'noni beradi. Bu kelasi zamonni ifodalamaydi va shart ergash gapning ma'nosiga mos kelmaydi.\n*   **b) werden:** Bu \"werden\" fe'lining \"wir\" olmoshiga mos keladigan shakli. Agar buni qo'ysak, \"Wenn das Wetter morgen schön ist, **werden** wir wandern\" jumlasi hosil bo'ladi. Bu \"Agar ertaga ob-havo yaxshi bo'lsa, biz sayr qilamiz/piyoda yuramiz\" degan ma'noni beradi. Bu kelasi zamonni (Futur I) to'g'ri ifodalaydi va shart ergash gap bilan mos keladi. \"wandern\" (sayr qilmoq/piyoda yurmoq) fe'li infinitiv shaklda gap oxirida turadi.\n*   **c) waren:** Bu \"sein\" (bo'lmoq) fe'lining o'tgan zamon (Präteritum) shakli. \"Wir waren\" - \"Biz edik\" degan ma'noni beradi. Bu ham kelasi zamonni ifodalamaydi va \"wandern\" fe'li bilan birga ishlatilmaydi.\n*   **d) hätten:** Bu \"haben\" (ega bo'lmoq) fe'lining Konjunktiv II (shart mayli) shakli. \"Wir hätten\" - \"Bizda bo'lar edi\" degan ma'noni beradi. Bu gipotetik (faraziy) yoki amalga oshmagan shartlarni ifodalashda ishlatiladi, masalan: \"Wenn ich Geld hätte, würde ich reisen.\" (Agar menda pul bo'lganida, sayohat qilardim.) Berilgan gapda esa kelajakdagi real shart nazarda tutilgan, shuning uchun Konjunktiv II mos kelmaydi.\n\nShunday qilib, \"werden\" fe'li kelasi zamonni yasash uchun to'g'ri yordamchi fe'l bo'lib, jumlaga grammatik va ma'noviy jihatdan eng mos keladi.\n\n**To'g'ri javob: B**",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "0c15cc97-7670-407d-8a30-edc1ae39e4d7",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 29,
+      "question_text": "Welcher Satz klingt am natürlichsten?",
+      "options": {
+        "a": "Ich freue mich auf dich zu sehen.",
+        "b": "Ich freue mich darauf, dich zu sehen.",
+        "c": "Ich freue dich sehen.",
+        "d": "Ich freue mich sehen dich."
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savol nemis tilida eng tabiiy va grammatik jihatdan to'g'ri bo'lgan jumlani topishga qaratilgan. Keling, har bir variantni tahlil qilamiz:\n\n**To'g'ri javob: B**\n\n**Tushuntirish:**\n\nNemis tilida \"biror narsani intiqlik bilan kutmoq\" yoki \"biror narsadan xursand bo'lmoq\" ma'nosini ifodalash uchun \"sich freuen\" fe'li ishlatiladi. Bu fe'l ikki xil predlog bilan ishlatilishi mumkin:\n\n1.  **\"sich freuen über + Akkusativ\"**: O'tmishda yoki hozirda sodir bo'lgan voqea/hodisadan xursand bo'lish.\n    *   Misol: *Ich freue mich über dein Geschenk.* (Men sening sovg'angdan xursandman.)\n\n2.  **\"sich freuen auf + Akkusativ\"**: Kelajakda sodir bo'ladigan voqea/hodisani intiqlik bilan kutish.\n    *   Misol: *Ich freue mich auf den Urlaub.* (Men ta'tilni intiqlik bilan kutyapman.)\n\nBizning savolimizda \"dich zu sehen\" (seni ko'rish) kelajakdagi harakatni bildiradi, shuning uchun \"sich freuen auf\" birikmasi ishlatilishi kerak.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) \"Ich freue mich auf dich zu sehen.\"**\n    *   Bu jumla grammatik jihatdan noto'g'ri. \"Auf dich\" (seni) predlogli obyekt bo'lib, shaxsga ishora qiladi. Lekin bu yerda intiqlik bilan kutilayotgan narsa shaxsning o'zi emas, balki \"uni ko'rish\" harakatidir (\"dich zu sehen\"). Predlog \"auf\" bevosita \"dich zu sehen\" infinitive birikmasiga bog'lana olmaydi. Bunday hollarda, predlogga bog'langan infinitive birikmani ifodalash uchun \"da-\" birikmasi (\"darauf\") ishlatiladi.\n\n*   **b) \"Ich freue mich darauf, dich zu sehen.\"**\n    *   Bu jumla grammatik jihatdan to'g'ri va eng tabiiy hisoblanadi.\n    *   **\"Ich freue mich\"**: \"sich freuen\" fe'lining to'g'ri tuslanishi (men xursandman/intiqlik bilan kutyapman).\n    *   **\"darauf\"**: Bu \"da-\" birikmasi \"auf\" predlogi va \"es\" (bu) olmoshining birikmasidir. U butun \"dich zu sehen\" (seni ko'rish) infinitive birikmasiga ishora qiladi. Ya'ni, \"men seni ko'rishni intiqlik bilan kutyapman\" ma'nosini beradi. \"Darauf\" bu yerda \"auf das, dich zu sehen\" (seni ko'rishga) ma'nosini anglatadi.\n    *   **\", dich zu sehen\"**: Bu \"zu + Infinitiv\" bilan tuzilgan to'g'ri infinitive birikma bo'lib, asosiy gapdan vergul bilan ajratiladi.\n    *   Shuning uchun, bu jumla nemis tilida \"Men seni ko'rishni intiqlik bilan kutyapman\" degan ma'noni ifodalovchi standart va to'g'ri shakldir.\n\n*   **c) \"Ich freue dich sehen.\"**\n    *   Bu jumla mutlaqo noto'g'ri. \"Sich freuen\" fe'li har doim o'zlik olmoshi (\"mich\", \"dich\", \"sich\" va hokazo) bilan ishlatilishi shart. Bu yerda \"mich\" yo'q. Shuningdek, \"dich sehen\" birikmasi ham grammatik jihatdan noto'g'ri, chunki \"zu\" predlogi yetishmayapti.\n\n*   **d) \"Ich freue mich sehen dich.\"**\n    *   Bu jumla ham grammatik jihatdan noto'g'ri. \"Sich freuen\" fe'li to'g'ri ishlatilgan (\"mich\" bor), lekin \"sehen dich\" so'z tartibi va \"zu\" predlogining yo'qligi jumlani xato qiladi. Nemis tilida \"ko'rmoq\" fe'li bilan bunday tuzilma mavjud emas.\n\nXulosa qilib aytganda, \"Ich freue mich darauf, dich zu sehen\" jumlasi nemis tilining grammatik qoidalariga to'liq mos keladi va kundalik nutqda eng ko'p ishlatiladigan, tabiiy ifodadir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    },
+    {
+      "id": "8c782f80-4313-4f66-a895-a24d21bdfc02",
+      "test_id": "457cb588-6960-47cc-9c81-e0d7c797c466",
+      "order_number": 30,
+      "question_text": "Welcher Satz ist korrekt?",
+      "options": {
+        "a": "Wegen dem Regen blieb ich zu Hause.",
+        "b": "Wegen Regen ich blieb zu Hause.",
+        "c": "Wegen des Regens blieb ich zu Hause.",
+        "d": "Wegen den Regen blieb ich zu Hause."
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savol nemis tilidagi \"wegen\" predlogining to'g'ri qo'llanilishini tekshiradi.\n\n**\"Wegen\" predlogi haqida:**\n\"Wegen\" (sababli, tufayli) predlogi odatda **genitiv (qaratqich kelishigi)** bilan ishlatiladi. Bu nemis tilining grammatik qoidalaridan biridir. Genitiv kelishigi otning qaysi jinsda ekanligiga qarab o'zgaradi.\n\nKeling, variantlarni ko'rib chiqamiz:\n\n*   **a) \"Wegen dem Regen blieb ich zu Hause.\"**\n    *   Bu yerda \"dem Regen\" shakli **dativ (jo'nalish kelishigi)** hisoblanadi. \"Der Regen\" (yomg'ir) otining dativ shakli \"dem Regen\" bo'ladi.\n    *   Garchi kundalik so'zlashuvda ba'zan \"wegen\" predlogi dativ bilan ishlatilsa-da, grammatik jihatdan bu noto'g'ri hisoblanadi. Rasmiy va yozma tilda genitiv talab qilinadi.\n\n*   **b) \"Wegen Regen ich blieb zu Hause.\"**\n    *   Bu variantda \"Regen\" otining oldida artikl yo'q va u genitiv shaklida emas.\n    *   Bundan tashqari, gapning tuzilishi ham noto'g'ri. Nemis tilida bosh gapda fe'l ikkinchi o'rinda turishi kerak. \"Wegen Regen\" birinchi o'rinda turgan bo'lsa, undan keyin fe'l kelishi shart (\"Wegen Regen blieb ich zu Hause.\" bo'lishi kerak edi, lekin bu ham genitiv qoidasiga to'g'ri kelmaydi).\n\n*   **c) \"Wegen des Regens blieb ich zu Hause.\"**\n    *   Bu variant grammatik jihatdan to'g'ri. \"Der Regen\" (erkak jinsidagi ot) otining **genitiv (qaratqich kelishigi)** shakli \"des Regens\" bo'ladi.\n        *   Nominativ: der Regen\n        *   Genitiv: des Regens\n    *   Gapning tuzilishi ham to'g'ri: predlogli birikma (\"Wegen des Regens\") birinchi o'rinda, undan keyin fe'l (\"blieb\"), so'ngra ega (\"ich\") va boshqa gap bo'laklari kelgan.\n\n*   **d) \"Wegen den Regen blieb ich zu Hause.\"**\n    *   Bu yerda \"den Regen\" shakli **akkuzativ (tushum kelishigi)** hisoblanadi. \"Der Regen\" otining akkuzativ shakli \"den Regen\" bo'ladi.\n    *   \"Wegen\" predlogi akkuzativ bilan ishlatilmaydi.\n\n**Xulosa:**\n\"Wegen\" predlogi genitiv kelishigini talab qiladi. \"Der Regen\" otining genitiv shakli \"des Regens\" bo'lgani uchun, \"Wegen des Regens\" birikmasi grammatik jihatdan to'g'ri hisoblanadi.\n\nShuning uchun, to'g'ri javob **C** variantidir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:48.130739Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:20:31.505Z"
+}

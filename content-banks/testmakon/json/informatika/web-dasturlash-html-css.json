@@ -1,0 +1,71 @@
+{
+  "name": "Web dasturlash (HTML, CSS) — Informatika test savollari",
+  "about": "Web dasturlash (HTML, CSS)",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/web-dasturlash-html-css/savollar/",
+  "questionsCount": 6,
+  "questions": [
+    {
+      "question": "HTML qisqartmasi nimani anglatadi?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Home Tool Markup Language",
+        "Hyperlink Text Making Language"
+      ],
+      "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "CSS qisqartmasi nimani anglatadi?",
+      "options": [
+        "Computer Style Sheets",
+        "Cascading Style Sheets",
+        "Creative Style System",
+        "Colorful Style Sheets"
+      ],
+      "correctAnswer": "Cascading Style Sheets"
+    },
+    {
+      "question": "HTML da sarlavha yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<p>",
+        "<h1>",
+        "<div>",
+        "<span>"
+      ],
+      "correctAnswer": "<h1>"
+    },
+    {
+      "question": "HTML da paragraf yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<paragraph>",
+        "<text>",
+        "<p>",
+        "<para>"
+      ],
+      "correctAnswer": "<p>"
+    },
+    {
+      "question": "HTML da rasm qo'yish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<picture>",
+        "<image>",
+        "<img>",
+        "<photo>"
+      ],
+      "correctAnswer": "<img>"
+    },
+    {
+      "question": "HTML da havola (link) yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<url>"
+      ],
+      "correctAnswer": "<a>"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:47.622Z"
+}

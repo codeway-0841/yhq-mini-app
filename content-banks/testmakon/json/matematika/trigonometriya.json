@@ -1,0 +1,141 @@
+{
+  "name": "Trigonometriya — Matematika test savollari",
+  "about": "Trigonometriya",
+  "subject": "Matematika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/matematika/trigonometriya/savollar/",
+  "questionsCount": 13,
+  "questions": [
+    {
+      "question": "Xaritaning masshtabi $1 : 250000$. Xaritadagi $3.5$ sm haqiqatda necha km?",
+      "options": [
+        "$7.5$ km",
+        "$8.75$ km",
+        "$10$ km",
+        "$12.5$ km"
+      ],
+      "correctAnswer": "$8.75$ km"
+    },
+    {
+      "question": "$a$, $b$, $c$ — proporsiyaning uzluksiz a'zolari: $\\frac{a}{b} = \\frac{b}{c}$. Agar $a = 4$, $c = 16$ bo'lsa, $b$ ni toping.",
+      "options": [
+        "$6$",
+        "$8$",
+        "$10$",
+        "$12$"
+      ],
+      "correctAnswer": "$8$"
+    },
+    {
+      "question": "$2\\sin x - \\sqrt{3} = 0$ tenglamaning $[0; 2\\pi]$ oraliqdagi ildizlari yig'indisini toping.",
+      "options": [
+        "$\\pi$",
+        "$2\\pi$",
+        "$\\frac{\\pi}{3}$",
+        "$\\frac{2\\pi}{3}$"
+      ],
+      "correctAnswer": "$2\\pi$"
+    },
+    {
+      "question": "$\\sqrt{3} \\tan x - 1 = 0$ tenglamaning umumiy yechimi qaysi?",
+      "options": [
+        "$x = \\frac{\\pi}{3} + \\pi n$",
+        "$x = \\frac{\\pi}{6} + \\pi n$",
+        "$x = \\frac{\\pi}{4} + \\pi n$",
+        "$x = \\frac{\\pi}{6} + 2\\pi n$"
+      ],
+      "correctAnswer": "$x = \\frac{\\pi}{6} + \\pi n$"
+    },
+    {
+      "question": "$\\cos x = \\sin x$ tenglamaning umumiy yechimini toping.",
+      "options": [
+        "$x = \\frac{\\pi}{4} + 2\\pi n$",
+        "$x = \\frac{\\pi}{4} + \\pi n$",
+        "$x = \\frac{\\pi}{2} + \\pi n$",
+        "$x = -\\frac{\\pi}{4} + \\pi n$"
+      ],
+      "correctAnswer": "$x = -\\frac{\\pi}{4} + \\pi n$"
+    },
+    {
+      "question": "$2\\cos^2 x - \\cos x = 0$ tenglamaning $[0; 2\\pi)$ oraliqdagi ildizlari yig'indisini toping.",
+      "options": [
+        "$2\\pi$",
+        "$3\\pi$",
+        "$4\\pi$",
+        "$\\frac{5\\pi}{3}$"
+      ],
+      "correctAnswer": "$4\\pi$"
+    },
+    {
+      "question": "$\\sin 3x = 0$ tenglamaning $(0; \\pi)$ oraliqda nechta ildizi bor?",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "correctAnswer": "$2$"
+    },
+    {
+      "question": "$4\\sin^2 x - 3 = 0$ tenglamaning umumiy yechimi qaysi?",
+      "options": [
+        "$x = \\pm \\frac{\\pi}{3} + \\pi n$",
+        "$x = \\pm \\frac{\\pi}{6} + \\pi n$",
+        "$x = \\frac{\\pi}{3} + 2\\pi n$",
+        "$x = (-1)^n \\frac{\\pi}{3} + \\pi n$"
+      ],
+      "correctAnswer": "$x = \\pm \\frac{\\pi}{3} + \\pi n$"
+    },
+    {
+      "question": "$\\cos^2 x - \\sin^2 x = \\frac{1}{2}$ tenglamaning umumiy yechimini toping.",
+      "options": [
+        "$x = \\pm \\frac{\\pi}{6} + \\pi n$",
+        "$x = \\pm \\frac{\\pi}{3} + \\pi n$",
+        "$x = \\frac{\\pi}{6} + 2\\pi n$",
+        "$x = \\frac{\\pi}{3} + 2\\pi n$"
+      ],
+      "correctAnswer": "$x = \\pm \\frac{\\pi}{6} + \\pi n$"
+    },
+    {
+      "question": "$2\\sin^2 x + \\sin x - 1 = 0$ tenglamaning $[0; 2\\pi)$ oraliqdagi eng kichik ildizini toping.",
+      "options": [
+        "$\\frac{\\pi}{6}$",
+        "$\\frac{\\pi}{3}$",
+        "$\\frac{\\pi}{4}$",
+        "$\\frac{5\\pi}{6}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{6}$"
+    },
+    {
+      "question": "$\\sin\\left(x + \\frac{\\pi}{6}\\right) = \\frac{1}{2}$ tenglamaning umumiy yechimini toping.",
+      "options": [
+        "$x = 2\\pi n$ yoki $x = \\frac{2\\pi}{3} + 2\\pi n$",
+        "$x = \\frac{\\pi}{6} + 2\\pi n$",
+        "$x = (-1)^n \\frac{\\pi}{6} + \\pi n$",
+        "$x = 2\\pi n$ yoki $x = \\frac{\\pi}{3} + 2\\pi n$"
+      ],
+      "correctAnswer": "$x = 2\\pi n$ yoki $x = \\frac{\\pi}{3} + 2\\pi n$"
+    },
+    {
+      "question": "$\\tan^2 x - 3 = 0$ tenglamaning $(0; \\pi)$ oraliqda nechta ildizi bor?",
+      "options": [
+        "$1$",
+        "$2$",
+        "$3$",
+        "$4$"
+      ],
+      "correctAnswer": "$2$"
+    },
+    {
+      "question": "$\\sin 2x = \\cos x$ tenglamaning $[0; 2\\pi)$ da nechta ildizi bor?",
+      "options": [
+        "$2$",
+        "$3$",
+        "$4$",
+        "$5$"
+      ],
+      "correctAnswer": "$4$"
+    }
+  ],
+  "downloadedAt": "2026-09-07T19:00:22.892Z"
+}

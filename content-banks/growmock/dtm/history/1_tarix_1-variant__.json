@@ -1,0 +1,445 @@
+{
+  "info": {
+    "id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+    "subject_id": "29dfbfe7-c98c-4de8-a8df-5f597f7a1b1f",
+    "title": "Tarix 1-variant  ",
+    "description": "Variant: Tarix Milliy Sertifikat Variant 1 (Oliy Qiyinchilik)",
+    "time_limit": 30,
+    "created_at": "2026-08-29T14:53:22.934709Z",
+    "updated_at": "2026-08-29T14:53:22.934709Z"
+  },
+  "subject": {
+    "id": "29dfbfe7-c98c-4de8-a8df-5f597f7a1b1f",
+    "name": "Tarix",
+    "slug": "history",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-05-10T14:32:23.303078Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "7d6478d5-463f-4501-8bb0-08b37e3bb865",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 1,
+      "question_text": "O'zbekiston hududidagi ilk sivilizatsiya o'choqlari va arxeologik yodgorliklarni to'g'ri moslashtirilgan javobni toping.",
+      "options": {
+        "a": "Zamonbobo - Ilk bronza davri; Sopollitepa - Bronza davri dehqonchilik madaniyati; Sarazm - Eneolit va bronza davri",
+        "b": "Zamonbobo - Paleolit davri; Sopollitepa - Temir davri",
+        "c": "Sarazm - Mushtye davri; Zamonbobo - So'nggi o'rta asrlar",
+        "d": "Sopollitepa - Neolit davri; Sarazm - Faqat chorvachilik madaniyati"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "f0f797e4-abfd-46e9-9b92-1ef602674d1a",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 2,
+      "question_text": "Ahamoniylar hukmdori Doro I ning Behistun qoya yozuvlarida O'zbekiston hududida yashagan qaysi qadimgi xalqlar va viloyatlar haqida ma'lumot berilgan?",
+      "options": {
+        "a": "Sug'diyona, Xorazm va Saklar (Saka-tigraxauda, Saka-paradraya)",
+        "b": "Faqat Baqtriya va Marg'iyona",
+        "c": "Davan (Farg'ona) va Qang' davlati",
+        "d": "Massagetlar va Kushonlar"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "25f7c7db-7413-4ff4-92aa-f50dc508f723",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 3,
+      "question_text": "Qadimgi Baqtriya va Kushon podsholigi davriga oid to'g'ri tarixiy voqeani aniqlang.",
+      "options": {
+        "a": "Kanishka I davrida buddaviylik davlat dini darajasiga ko'tarilgan va To'rtinchi Buddaviylik kengashi chaqirilgan",
+        "b": "Kanishka I davrida islom dini qabul qilingan",
+        "c": "Kushonlar davrida Yunon-Baqtriya davlati tomonidan batamom bosib olingan",
+        "d": "Kushon podsholigiga Aleksandr Makedonskiy asos solgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7f2d31e8-ac69-4e9a-a2de-b4f74abb4074",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 4,
+      "question_text": "G'arbiy Turk hoqonligi va Somoniylar davri boshqaruvi bo'yicha to'g'ri ma'lumotni ko'rsating.",
+      "options": {
+        "a": "Somoniylar davrida markaziy devonlar tizimi (Devoni vazir, Devoni mustavfiy va h.k.) yo'lga qo'yilgan",
+        "b": "G'arbiy Turk hoqonligida Oliy hukmdor 'Amir al-mo'minin' unvoniga ega bo'lgan",
+        "c": "Somoniylar davlatining poytaxti Samarqanddan Toshkentga ko'chirilgan",
+        "d": "G'arbiy Turk hoqonligi faqat Arab xifaligi tarkibida faoliyat yuritgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "d719b11f-20ab-4805-86ad-91dc27b045b5",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 5,
+      "question_text": "Amir Temur va Temuriylar davri harbiy va ma'muriy islohotlariga oid to'g'ri fikrni aniqlang.",
+      "options": {
+        "a": "Amir Temur tuzuklarida qo'shin tuzilishi tuman, minglik, yuzlik va o'nliklarga bo'lingan hamda soyurg'ol in'om etilgan",
+        "b": "Amir Temur faqat dengiz flotini rivojlantirishga e'tibor qaratgan",
+        "c": "Ulug'bek davrida sooriq tizimi batamom bekor qilingan",
+        "d": "Amir Temur davrida poytaxt faqat Hirot shahri bo'lgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "50dc60b5-1b55-4169-9ae5-873f5480144e",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 6,
+      "question_text": "Xiva xonligi, Qo'qon xonligi va Buxoro amirligi o'rtasidagi ma'muriy va yer-mulk munosabatlarini moslang.",
+      "options": {
+        "a": "Mulki devoniy - Davlat yeri; Mulki milq - Xususiy mulk; Vaqf - Diniy muassasalar mulki",
+        "b": "Vaqf - Faqat harbiy xizmatchilarga beriladigan yer; Mulki devoniy - Xususiy yer",
+        "c": "Mulki milq - Faqat xon qarindoshlariga tegishli yerlar",
+        "d": "Barcha yerlar faqat xorijiy davlatlarga tegishli bo'lgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "9af1991c-9a75-42a1-97cc-4eaccf5816b9",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 7,
+      "question_text": "Chor Rossiyasining Turkistonni bosib olish bosqichlari va sanalarini to'g'ri tartibda ko'rsating.",
+      "options": {
+        "a": "1865-y. Toshkent egallanishi -> 1868-y. Buxoro amirligi vassalga aylanishi -> 1873-y. Xiva xonligi bo'ysundirilishi -> 1876-y. Qo'qon xonligi tugatilishi",
+        "b": "1876-y. Qo'qon -> 1865-y. Toshkent -> 1873-y. Xiva -> 1868-y. Buxoro",
+        "c": "1873-y. Xiva -> 1865-y. Toshkent -> 1876-y. Qo'qon -> 1868-y. Buxoro",
+        "d": "1868-y. Buxoro -> 1876-y. Qo'qon -> 1865-y. Toshkent -> 1873-y. Xiva"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "78b05ed7-6ed4-4ae2-be58-208406b3ede5",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 8,
+      "question_text": "Turkistonda Jadidchilik harakati va uning namoyandalarining faoliyatiga oid to'g me'ri ma'lumotni aniqlang.",
+      "options": {
+        "a": "Munavvarqori Abdurashidxonov 'Usuli savtiya' maktablarini ochgan va 'Sadoi Turkiston' gazetasiga asos solgan",
+        "b": "Mahmudxo'ja Behbudiy faqat 'Qizil Bayroq' gazetasini chop etgan",
+        "c": "Jadidlar faqat qurolli qo'zg'olon yo'li bilan hokimiyatni egallashni targ'ib qilgan",
+        "d": "Abdurauf Fitrat usul-i qadim maktablarini qo'llab-quvvatlagan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3ce7c0ac-f94a-4d67-a1dc-cf8bb2254657",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 9,
+      "question_text": "1917-yil noyabrda Qo'qon shahrida e'lon qilingan Turkiston Muxtoriyati (Qo'qon muxtoriyati) hukumatiga boshchilik qilgan shaxslarni ko'rsating.",
+      "options": {
+        "a": "Mustafo Cho'qoy va Muhammadjon Tanishpayev",
+        "b": "Munavvarqori Abdurashidxonov va Fayzulla Xo'jayev",
+        "c": "Turar Risqulov va Abdulla Qodiriy",
+        "d": "Usmon Yoqubov va Akmal Ikromov"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c67d3d63-e1ee-4db2-969e-69ca27d3aad8",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 10,
+      "question_text": "Qadimgi Misrda Fir'avn Exnaton (Amenxotep IV) o'tkazgan diniy islohotning mohiyati nimadan iborat edi?",
+      "options": {
+        "a": "Ko'p xudolilikni taqiqlab, Quyosh xudosi Aton kultini yagona davlat dini deb e'lon qilish",
+        "b": "Zardashtiylik dinini rasmiy davlat dini deb tan olish",
+        "c": "Buddaviylik ibodatxonalarini barpo etish",
+        "d": "Xristianlikni davlat dini darajasiga ko'tarish"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "9bd779a9-3eed-43c4-8a8c-f11c17b0a1e5",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 11,
+      "question_text": "Peloponnes urushi (m.av. 431–404-yy.) qaysi grek polis xududlari o'rtasida bo'lib o'tgan va qanday natija bilan tugagan?",
+      "options": {
+        "a": "Atina va Sparta boshchiligidagi ittifoqlar o'rtasida; Sparta g'alaba qozongan",
+        "b": "Atina va Karfagen o'rtasida; Atina g'alaba qozongan",
+        "c": "Sparta va Rim o'rtasida; Rim g'alaba qozongan",
+        "d": "Fiva va Korinf o'rtasida; Sulh tuzilgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0e19af01-4317-4455-8327-d95e9032e695",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 12,
+      "question_text": "Qadimgi Rimda Puni urushlari (m.av. III–II asrlar) qaysi davlatga qarshi olib borilgan va natijada nima sodir bo'lgan?",
+      "options": {
+        "a": "Karfagen davlatiga qarshi; Karfagen batamom vakillarsiz va vayron qilingan, Rim O'rta yer dengizi xojasiga aylangan",
+        "b": "Fors imperiyasiga qarshi; Rim mag'lub bo'lgan",
+        "c": "Gretsiyaga qarshi; Rim parchalangan",
+        "d": "Makedoniyaga qarshi; Rim respublika tuzumidan voz kechgan"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8463de86-ec75-4bd9-80af-5ca0e58a0f38",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 13,
+      "question_text": "G'arbiy Rim imperiyasining qulashi (milodiy 476-yil) qaysi voqea bilan bog'liq va bu tarixda nimaning boshi hisoblanadi?",
+      "options": {
+        "a": "Odoakr tomonidan imperator Avgustulning taxtdan ag'darilishi; O'rta asrlar davrining boshlanishi",
+        "b": "Yuliy Sezarning o'ldirilishi; Antik davrning gullab-yashnashi",
+        "c": "Buyuk Karlning imperator deb e'lon qilinishi; Uyg'onish davrining boshlanishi",
+        "d": "Vizantiya imperiyasining barpo etilishi; Yangi davrning boshlanishi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3cd97c7d-1bcb-4680-8997-6de3f865e9c8",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 14,
+      "question_text": "Buyuk Karl imperiyasining parchalanishi haqidagi Verden shartnomasi (843-yil) natijasida qaysi zamonaviy Yevropa davlatlariga asos solindi?",
+      "options": {
+        "a": "Fransiya, Germaniya va Italiya",
+        "b": "Buyuk Britaniya, Ispaniya va Portugaliya",
+        "c": "Polsha, Chexiya va Vengriya",
+        "d": "Shvetsiya, Norvegiya va Daniya"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "c33292a7-f955-4e50-9658-3e5049a94746",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 15,
+      "question_text": "Yevropada Salib yurishlari (1096–1270-yy.) ning asosiy sababi va natijasi haqidagi to'g'ri hukmni aniqlang.",
+      "options": {
+        "a": "Quddus va Muqaddas yerlarni musulmonlardan tortib olish maqsadi; Sharq va G'arb o'rtasida savdo va madaniy aloqalar rivojlandi",
+        "b": "Yevropani Oltin O'rdadan himoya qilish; Sharq Yevropani bosib oldi",
+        "c": "Amerika qit'asini kashf etish; Yevropada katolisizm tugatildi",
+        "d": "Hindistonga dengiz yo'lini ochish; Salibchilar butun Osiyoni egalladi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7dbabc7e-6f28-4b7f-996a-ef72e38fdee4",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 16,
+      "question_text": "1215-yilda Angliyada qirol Ioann Yersiz tomonidan imzolangan 'Erkinliklarning Buyuk xartiyasi' (Magna Carta) ning tarixiy ahamiyati nimada?",
+      "options": {
+        "a": "Qirol hokimiyatini qonun va parlament (baronlar) foydasiga cheklagan ilk hujjat",
+        "b": "Angliyada absolyut monarxiyani o'rnatgan hujjat",
+        "c": "Dehqonlarni krepostnoylik qaramligidan to'liq ozod etgan qonun",
+        "d": "Angliya va Fransiya o'rtasidagi Yuz yillik urushni to'xtatgan shartnoma"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "a37033f2-b5fa-4c2f-974b-59447c2f101a",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 17,
+      "question_text": "Usmoniylar imperiyasi sultoni Mehmed II Fatih 1453-yilda qaysi muhim tarixiy voqeani amalga oshirdi?",
+      "options": {
+        "a": "Konstantinopolni egallab, Vizantiya imperiyasiga barham berdi va shaharni Istanbul deb atadi",
+        "b": "Vena shahrini batamom bosib oldi",
+        "c": "Misr Mamluklar davlatini Usmoniylar tarkibiga qo'shdi",
+        "d": "Lepanto dengiz jangida Yevropa flotini tor-mor etdi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "5e1c574c-969b-4626-a137-7734beddf8e5",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 18,
+      "question_text": "Buyuk Geografik kashfiyotlar davrida (XV-XVI asrlar) Xristofor Kolumb va Vasko da Gama tomonidan amalga oshirilgan kashfiyotlarni to'g'ri ko'rsating.",
+      "options": {
+        "a": "Kolumb 1492-y. Amerikani kashf etdi; Vasko da Gama 1498-y. Afrika atrofini aylanib Hindistonga dengiz yo'lini ochdi",
+        "b": "Kolumb Hindistonga yetib bordi; Vasko da Gama Avstraliyani kashf etdi",
+        "c": "Kolumb Yerni birinchi bo'lib aylanib chiqdi; Vasko da Gama Shimoliy qutbga bordi",
+        "d": "Ikkalasi ham faqat Tinch okeanini tadqiq qildi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "7e45e940-e628-40a1-b301-e74a21374a25",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 19,
+      "question_text": "Yevropada Reformatsiya harakati va uning asoschisi Martin Lyuterning '95 tezisi' (1517-y.) qaysi cherkovga qarshi qaratilgan edi?",
+      "options": {
+        "a": "Kattolik cherkovining indulgensiya (gunohlarni sotish) amaliyotiga qarshi",
+        "b": "Pravoslav cherkovining tartiblariga qarshi",
+        "c": "Protestant cherkovining tuzilishiga qarshi",
+        "d": "Anglikan cherkoviga qarshi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "01af0d01-08cf-439c-bab4-9e357ed76e75",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 20,
+      "question_text": "Fransiya Burbonlar sulolasi hukmdori Lyudovik XIV ning 'Davlat — bu men!' iborasi qaysi davlat boshqaruvi shaklini ifodalaydi?",
+      "options": {
+        "a": "Absolyut monarxiya",
+        "b": "Parlamentar respublika",
+        "c": "Konstitutsion monarxiya",
+        "d": "Teokratik respublika"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "00b46d65-79d0-4bcf-9e0f-551fe3eff69b",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 21,
+      "question_text": "AQSH Mustaqillik deklaratsiyasi (1776-yil 4-iyul) muallifi kim va hujjat nimani e'lon qildi?",
+      "options": {
+        "a": "Tomas Jefferson; 13 ta Britaniya koloniyasining Buyuk Britaniyadan ajralib mustaqil bo'lishini",
+        "b": "Jorj Vashington; AQSH va Fransiya o'rtasidagi harbiy ittifoqni",
+        "c": "Avraam Linkoln; Qullikning butunlay tugatilishini",
+        "d": "Benjamin Franklin; AQSH Konstitutsiyasini"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "9578ff5b-abf8-461b-846b-6792cee705dd",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 22,
+      "question_text": "Buyuk Fransuz Inqilobi (1789–1799-yy.) davridagi 'Inson va fuqaro huquqlari deklaratsiyasi' ning asosiy g'oyasi nima edi?",
+      "options": {
+        "a": "Erkinlik, tenglik, birodarlik va insonning tabiiy huquqlari daxlsizligi",
+        "b": "Qirol hokimiyatini ilohiylashtirish",
+        "c": "Faqat dvoryanlar sinfiga imtiyoz berish",
+        "d": "Monarxiyani saqlab qolgan holda feodal majburiyatlarni oshirish"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0b32becb-45df-4d06-9350-359e9d08011c",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 23,
+      "question_text": "XIX asrda Yevropada sodir bo'lgan Sanoat to'ntarishi (Industrializatsiya) birinchi bo'lib qaysi mamlakatda va qaysi sohada boshlandi?",
+      "options": {
+        "a": "Buyuk Britaniyada; To'qimachilik (yengil sanoat) sohasida (bug' dvigateli va charx yaratilishi)",
+        "b": "Fransiyada; Og'ir mashinasozlikda",
+        "c": "Germaniyada; Kimyo sanoatida",
+        "d": "AQSHda; Avtomobilsozlikda"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "0302cc6a-105a-4cf9-909c-d0d58e36adb1",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 24,
+      "question_text": "1861–1865-yillarda AQSHda fuqarolar urushi qaysi kuchlar o'rtasida sodir bo'ldi va uning asosiy natijasi nima bo'ldi?",
+      "options": {
+        "a": "Sanoatlashgan Shimol va quldorlik Janub o'rtasida; Shimol g'alaba qozondi va qullik tugatildi",
+        "b": "AQSH va Angliya o me'rtasida; AQSH mustaqillikni saqlab qoldi",
+        "c": "AQSH va Meksika o'rtasida; Texas qo'shib olindi",
+        "d": "AQSH va Rossiya o'rtasida; Alyaska sotib olindi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "495c6c59-2332-4094-85aa-e292bb2b9978",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 25,
+      "question_text": "Germaniyaning birlashtirilishi (1871-yil) jarayonida 'Temir va qon' siyosatini yurgizgan mashhur davlat arbobi kim edi?",
+      "options": {
+        "a": "Otto fon Bismark",
+        "b": "Vilgelm II",
+        "c": "Klement Metternix",
+        "d": "Napoleon Bonapart"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3e60b867-d264-4eb5-9e7e-a84d83130469",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 26,
+      "question_text": "Birinchi jahon urushiga (1914–1918-yy.) turtki bo'lgan bevosita voqea qaysi edi?",
+      "options": {
+        "a": "Sarayevoda Avstriya-Vengriya taxt vorisi Frans Ferdinandning o'ldirilishi",
+        "b": "Germaniyaning Polshaga bostirib kirishi",
+        "c": "Antanta harbiy bloki tuzilishi",
+        "d": "Versal tinchlik shartnomasining imzolanishi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "b33a0126-5cae-45c5-b139-998d34bca9cf",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 27,
+      "question_text": "1919-yilgi Parij tinchlik konferensiyasida Birinchi jahon urushi yakunlari bo me'yicha qabul qilingan va Germaniyaga og'ir shartlar yuklagan hujjat:",
+      "options": {
+        "a": "Versal tinchlik shartnomasi",
+        "b": "Vestfal tinchlik shartnomasi",
+        "c": "Utrext shartnomasi",
+        "d": "Potsdam bitimi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "2720b9f1-5408-4e0b-9492-75e61189df8f",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 28,
+      "question_text": "Ikkinchi jahon urushining (1939–1945-yy.) boshlanishi va yakunlanishi sanalari hamda voqealarini to'g me'ri aniqlang.",
+      "options": {
+        "a": "Boshlanishi: 1939-y. 1-sentyabr (Germaniya Polshaga bostirib kirdi); Yakunlanishi: 1945-y. 2-sentyabr (Yaponiya taslim bo'ldi)",
+        "b": "Boshlanishi: 1941-y. 22-iyun; Yakunlanishi: 1945-y. 9-may",
+        "c": "Boshlanishi: 1938-y. Myunxen kelishuvi; Yakunlanishi: 1945-y. Avgust (Atom bombasi)",
+        "d": "Boshlanishi: 1940-y. Fransiya bosib olinishi; Yakunlanishi: 1946-y. Nyurnberg sudi"
+      },
+      "correct_option": "a",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "8bb0b368-ee61-469f-a1d6-b4b7504e4025",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 29,
+      "question_text": "Ikkinchi jahon urushidan keyin tuzilgan va xalqaro xavfsizlikni ta'minlashga mas'ul bo'lgan eng yirik tashkilot hamda uning tashkil etilgan yili:",
+      "options": {
+        "a": "BMT (Birlashgan Millatlar Tashkiloti) - 1945-yil",
+        "b": "Milletlar Ligasi - 1919-yil",
+        "c": "Yevropa Ittifoqi - 1957-yil",
+        "d": "NATO - 1949-yil"
+      },
+      "correct_option": "a",
+      "explanation": "Ushbu savolga to'g'ri javob **A varianti: BMT (Birlashgan Millatlar Tashkiloti) - 1945-yil**.\n\n**Tarixiy asos va tahlil:**\n\n1. **BMTning tashkil etilishi:** Ikkinchi jahon urushidagi dahshatli yo'qotishlar va vayronagarchiliklardan so'ng, xalqaro hamjamiyat kelajakda bunday global to'qnashuvlarning oldini olish, dunyoda tinchlik va xavfsizlikni ta'minlash zarurligini anglab yetdi. Shu maqsadda 1945-yil 25-apreldan 26-iyungacha AQShning San-Fransisko shahrida konferensiya o'tkazilib, unda Birlashgan Millatlar Tashkilotining Nizomi imzolandi. Tashkilot rasman **1945-yil 24-oktabrda** o'z faoliyatini boshlagan. Bugungi kunda ham BMT dunyodagi eng nufuzli va eng yirik universal xalqaro tashkilot hisoblanadi.\n\n2. **Boshqa variantlarning tahlili:**\n* **B varianti (Millatlar Ligasi - 1919-yil):** Bu tashkilot Ikkinchi emas, balki *Birinchi jahon urushidan* so'ng Versal tinchlik shartnomasi asosida tashkil etilgan. U Ikkinchi jahon urushining oldini ololmagani sababli o'z faoliyatini to'xtatgan.\n* **C varianti (Yevropa Ittifoqi - 1957-yil):** 1957-yilda Rim shartnomasi bilan Yevropa Iqtisodiy Hamjamiyati (hozirgi Yevropa Ittifoqining asosi) tuzilgan bo'lib, u butun jahon xavfsizligini ta'minlovchi global tashkilot emas, balki mintaqaviy (Yevropa miqyosidagi) integratsion birlashmadir.\n* **D varianti (NATO - 1949-yil):** Shimoliy Atlantika Shartnomasi Tashkiloti (NATO) 1949-yilda tuzilgan bo'lsa-da, u universal global tashkilot emas, balki harbiy-siyosiy blok hisoblanadi.\n\nShunday qilib, Ikkinchi jahon urushidan keyin global xavfsizlikni ta'minlash maqsadida tuzilgan eng yirik tashkilot — **BMT (1945-yil)** hisoblanadi.",
+      "created_at": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "3c1a5b24-c30b-4f00-9beb-2f1293bce7bf",
+      "test_id": "7890ac71-3e79-48e3-b8b7-9efb89ef8171",
+      "order_number": 30,
+      "question_text": "XX asrning ikkinchi yarmidagi 'Muzdek urush' (Cold War) davri va uning barham topishi nimaga bog'liq?",
+      "options": {
+        "a": "AQSH va SSRI o'rtasidagi g'oyaviy-harbiy qarama-qarshilik; 1991-yilda SSRI parchalanishi bilan tugagan",
+        "b": "Buyuk Britaniya va Fransiya o'rtasidagi dengiz urushi; 1980-yilda tugagan",
+        "c": "Xitoy va Yaponiya o'rtasidagi chegara mojarosi; 2000-yilda tugagan",
+        "d": "Koreya urushi natijasida butunlay tugatilgan"
+      },
+      "correct_option": "a",
+      "explanation": "**Tahlil va tushuntirish:**\n\n1. **\"Muzdek urush\" (Sovuq urush) tushunchasi:**\n   Ikkinchi jahon urushidan so'ng (1946–1991-yillar) jahon siyosiy sahnasida ikkita qudratli superdavlat — kapitalistik blok yetakchisi bo'lgan **AQSH** hamda sotsialistik lager rahbari bo'lgan **SSSR (Sovet Ittifoqi)** o'rtasida global miqyosdagi g'oyaviy (mafkuranaviy), siyosiy, iqtisodiy va harbiy qarama-qarshilik yuzaga keldi. Bu davr to'g'ridan-to'g'ri ommaviy harbiy to'qnashuvlarsiz, asosan qurollanish poygasi va mintaqaviy proksi-urushlar orqali kechgani sababli \"Muzdek urush\" (Sovuq urush) deb atalgan.\n\n2. **Jarayonning yakunlanishi:**\n   1980-yillarning oxiriga kelib SSSRda boshlangan iqtisodiy va siyosiy inqirozlar natijasida sotsialistik tizim zaiflashdi. **1991-yil dekabr oyida SSSRning rasman parchalanishi** bilan ikki qutbli dunyo tizimi barham topdi va \"Muzdek urush\" davriga to'liq chek qo'yildi.\n\n3. **Boshqa variantlarning noto'g'riligi:**\n   * **B varianti:** Buyuk Britaniya va Fransiya \"Muzdek urush\" davrida bir-biriga qarshi urush olib bormagan, aksincha, NATO tarkibida ittifoqchi bo'lgan.\n   * **C varianti:** Xitoy va Yaponiya munosabatlari \"Muzdek urush\"ning asosiy mazmunini belgilab bermagan va u 2000-yilda yakunlanmagan.\n   * **D varianti:** Koreya urushi (1950–1953) \"Muzdek urush\" davridagi mahalliy mojarolardan biri bo'lgan, biroq u orqali global qarama-qarshilik tugatilmagan.\n\nDemak, to'g'ri javob: **A** varianti.",
+      "created_at": "0001-01-01T00:00:00Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:19:06.227Z"
+}

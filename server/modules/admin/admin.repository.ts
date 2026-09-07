@@ -4,8 +4,21 @@
  * orchestration qoladi.
  */
 import { asc, eq, sql } from 'drizzle-orm'
-import { db, executeRows } from '../../db/connection'
+import { db, executeRows, transactionBestEffort, type DB } from '../../db/connection'
 import { questionBanks, questions, topics } from '../../schema'
+
+async function lockBankForMutation(bankId: string, tx: DB): Promise<void> {
+  const rows = await executeRows<{ id: string }>(sql`
+    SELECT id FROM question_banks WHERE id = ${bankId} FOR UPDATE
+  `, tx)
+  if (rows.length === 0) throw new Error(`question_bank_not_found:${bankId}`)
+}
+
+async function bumpBankVersion(bankId: string, tx: DB): Promise<void> {
+  await tx.update(questionBanks).set({
+    contentVersion: sql`${questionBanks.contentVersion} + 1`,
+  }).where(eq(questionBanks.id, bankId))
+}
 
 export const adminRepository = {
   // ── Sorollar CRUD ──────────────────────────────────────────────────────
@@ -22,8 +35,12 @@ export const adminRepository = {
 
   async insertQuestion(row: typeof questions.$inferInsert): Promise<number | null> {
     try {
-      const [r] = await db.insert(questions).values(row).returning({ id: questions.id })
-      return r.id
+      return await transactionBestEffort(async (tx) => {
+        await lockBankForMutation(row.bankId ?? 'traffic_rules_db', tx)
+        const [r] = await tx.insert(questions).values(row).returning({ id: questions.id })
+        await bumpBankVersion(row.bankId ?? 'traffic_rules_db', tx)
+        return r.id
+      })
     } catch (err) {
       if ((err as { code?: string })?.code === '23505') return null   // unique_violation — caller qayta id bilan urinadi
       throw err
@@ -31,29 +48,50 @@ export const adminRepository = {
   },
 
   async bulkInsertQuestions(rows: Array<typeof questions.$inferInsert>, chunkSize = 100): Promise<void> {
-    for (let i = 0; i < rows.length; i += chunkSize) {
-      await db.insert(questions).values(rows.slice(i, i + chunkSize))
+    if (rows.length === 0) return
+    const bankId = rows[0]?.bankId ?? 'traffic_rules_db'
+    if (rows.some((row) => (row.bankId ?? 'traffic_rules_db') !== bankId)) {
+      throw new Error('bulk_questions_must_share_bank')
     }
+    await transactionBestEffort(async (tx) => {
+      await lockBankForMutation(bankId, tx)
+      for (let i = 0; i < rows.length; i += chunkSize) {
+        await tx.insert(questions).values(rows.slice(i, i + chunkSize))
+      }
+      await bumpBankVersion(bankId, tx)
+    })
   },
 
   /** Savol + bog'liq yozuvlar BITTA CTE'da (audit: avval 3 alohida DELETE — crash yarim holat qoldirardi) */
   async deleteQuestionCascade(id: number): Promise<boolean> {
-    const rows = await executeRows<{ id: number }>(sql`
-      WITH s AS (
-        DELETE FROM saved_questions WHERE question_id = ${id} RETURNING question_id
-      ), e AS (
-        DELETE FROM question_explanations WHERE question_id = ${id} RETURNING question_id
-      ), q AS (
-        DELETE FROM questions WHERE id = ${id} RETURNING id
-      )
-      SELECT id FROM q
-    `)
-    return rows.length > 0
+    return transactionBestEffort(async (tx) => {
+      const [existing] = await tx.select({ bankId: questions.bankId }).from(questions).where(eq(questions.id, id))
+      if (!existing) return false
+      await lockBankForMutation(existing.bankId, tx)
+      const rows = await executeRows<{ id: number }>(sql`
+        WITH s AS (
+          DELETE FROM saved_questions WHERE question_id = ${id} RETURNING question_id
+        ), e AS (
+          DELETE FROM question_explanations WHERE question_id = ${id} RETURNING question_id
+        ), q AS (
+          DELETE FROM questions WHERE id = ${id} RETURNING id
+        )
+        SELECT id FROM q
+      `, tx)
+      if (rows.length > 0) await bumpBankVersion(existing.bankId, tx)
+      return rows.length > 0
+    })
   },
 
   async updateQuestion(id: number, patch: Partial<typeof questions.$inferInsert>): Promise<boolean> {
-    const updated = await db.update(questions).set(patch).where(eq(questions.id, id)).returning({ id: questions.id })
-    return updated.length > 0
+    return transactionBestEffort(async (tx) => {
+      const [existing] = await tx.select({ bankId: questions.bankId }).from(questions).where(eq(questions.id, id))
+      if (!existing) return false
+      await lockBankForMutation(existing.bankId, tx)
+      const updated = await tx.update(questions).set(patch).where(eq(questions.id, id)).returning({ id: questions.id })
+      if (updated.length > 0) await bumpBankVersion(existing.bankId, tx)
+      return updated.length > 0
+    })
   },
 
   async listQuestionsByBank(bankId: string) {

@@ -4,6 +4,7 @@ import {
   analyticsEvents, answerTokens, auditLogs, dailyRecords, dailyStreaks, jobRuns,
   leagueRolloverLog, linkCodes, loginHistory, otpCodes, progress, rateLimits,
   sessions, telegramLoginCodes, users, userCoins,
+  testSessions,
 } from '../../schema'
 import { authRepository } from '../auth/auth.repository'
 
@@ -185,6 +186,7 @@ export const cronRepository = {
     pwdTokensDeleted: number
     loginHistoryDeleted: number
     auditLogsDeleted: number
+    testSessionsDeleted: number
     cutoff: string
   }> {
     const cutoff = new Date(Date.now() - 7 * 86_400_000)
@@ -217,6 +219,11 @@ export const cronRepository = {
     const loginHistoryResult = await db.delete(loginHistory).where(lt(loginHistory.createdAt, historyCutoff))
     const auditLogsResult = await db.delete(auditLogs).where(lt(auditLogs.createdAt, historyCutoff))
 
+    // Test-session v2: canonical retry/forensics uchun 30 kun saqlanadi.
+    // Parent o'chsa test_attempts FK CASCADE bilan birga tozalanadi.
+    const testSessionCutoff = new Date(Date.now() - 30 * 86_400_000)
+    const testSessionsResult = await db.delete(testSessions).where(lt(testSessions.expiresAt, testSessionCutoff))
+
     return {
       deleted: result.rowCount ?? 0,
       rateLimitsDeleted: rlResult.rowCount ?? 0,
@@ -229,6 +236,7 @@ export const cronRepository = {
       pwdTokensDeleted,
       loginHistoryDeleted: loginHistoryResult.rowCount ?? 0,
       auditLogsDeleted: auditLogsResult.rowCount ?? 0,
+      testSessionsDeleted: testSessionsResult.rowCount ?? 0,
       cutoff: cutoff.toISOString(),
     }
   },

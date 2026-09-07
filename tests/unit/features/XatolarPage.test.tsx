@@ -81,6 +81,7 @@ describe('XatolarPage', () => {
     const [path, opts] = mockNavigate.mock.calls[0]!
     expect(path).toBe('/test/1')
     expect([...opts.state.questionIds].sort()).toEqual([1, 2, 3])
+    expect(opts.state).toMatchObject({ mode: 'mistakes', serverSelector: 'mistakes' })
   })
 
   it('free foydalanuvchiga mavzular kesimi va Top-10 KO\'RSATILMAYDI (premium banner o\'rniga)', () => {

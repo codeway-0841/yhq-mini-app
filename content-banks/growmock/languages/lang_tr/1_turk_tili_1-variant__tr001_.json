@@ -1,0 +1,481 @@
+{
+  "info": {
+    "id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+    "subject_id": "8e3a2e2f-fdeb-47c3-b9e3-8e689b90de64",
+    "title": "Turk tili 1-variant (TR001)",
+    "description": "Variant: TR001",
+    "time_limit": 30,
+    "created_at": "2026-08-07T10:15:26.59473Z",
+    "updated_at": "2026-08-07T10:15:26.59473Z"
+  },
+  "subject": {
+    "name": "Turk tili",
+    "slug": "lang_tr",
+    "code": "tr"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "99d3e0b3-a677-4f14-af8f-a23984de63aa",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 1,
+      "question_text": "Ben ___ öğrenciyim.",
+      "options": {
+        "a": "bir",
+        "b": "birer",
+        "c": "bir",
+        "d": "biri"
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savolda turk tilidagi \"Ben ___ öğrenciyim\" jumlasi berilgan bo'lib, bo'sh o'rinni to'g'ri to'ldirish talab qilinadi. Keling, har bir variantni ko'rib chiqamiz va nima uchun \"C\" varianti to'g'ri ekanligini tushuntiramiz.\n\n**Jumlaning ma'nosi:**\n*   \"Ben\" - Men (birinchi shaxs birlik olmoshi)\n*   \"öğrenciyim\" - talabaman (öğrenci - talaba, -yim - \"bo'lmoq\" fe'lining birinchi shaxs birlik shakli)\nDemak, jumla \"Men ___ talabaman\" degan ma'noni anglatadi.\n\n**Variantlarni tahlil qilish:**\n\n*   **a) bir:** Bu so'z turk tilida ikki xil ma'noda ishlatilishi mumkin:\n    1.  **Son (raqam):** \"bir\" - \"bir\" soni. Masalan: \"Bir elma\" (Bir olma).\n    2.  **Noaniq artikl:** \"bir\" - \"biror\", \"bir dona\", \"birta\" ma'nosida, o'zbek tilidagi \"bir\" so'ziga o'xshash, ingliz tilidagi \"a/an\" artikliga teng keladi. Masalan: \"Bir kitap\" (Bir kitob / Biror kitob).\n    Ushbu kontekstda \"Ben bir öğrenciyim\" (Men bir talabaman) jumlasi grammatik jihatdan to'g'ri va mantiqan mos keladi. Bu yerda \"bir\" so'zi \"biror\" yoki \"bir dona\" ma'nosida kelib, shaxsning talaba ekanligini bildiradi.\n\n*   **b) birer:** Bu so'z \"har biriga bittadan\", \"bittadan\" ma'nosini beruvchi taqsimlovchi son hisoblanadi. Masalan: \"Herkes birer kalem aldı\" (Hamma bittadan qalam oldi). \"Ben birer öğrenciyim\" jumlasi \"Men har biriga bittadan talabaman\" yoki \"Men bittadan talabaman\" kabi g'alati va mantiqsiz ma'no beradi. Shuning uchun bu variant noto'g'ri.\n\n*   **c) bir:** Bu variant ham \"a\" varianti bilan bir xil \"bir\" so'zidir. Yuqorida tushuntirilganidek, \"bir\" so'zi \"biror\" yoki \"bir dona\" ma'nosida kelib, \"Ben bir öğrenciyim\" jumlasi \"Men bir talabaman\" degan ma'noni anglatadi. Bu grammatik jihatdan to'g'ri va ma'no jihatidan mos keladi.\n\n*   **d) biri:** Bu so'z \"biri\", \"kimdir\", \"ulardan biri\" ma'nolarini beruvchi olmoshdir. Masalan: \"Biri geldi\" (Kimdir keldi), \"Onlardan biri\" (Ulardan biri). \"Biri\" so'zi odatda mustaqil ravishda ishlatiladi yoki egalik qo'shimchasi bilan birga keladi. U to'g'ridan-to'g'ri \"öğrenci\" kabi otni aniqlab kela olmaydi. \"Ben biri öğrenciyim\" jumlasi grammatik jihatdan xato va ma'nosizdir.\n\n**Xulosa:**\nJumlaning ma'nosi va grammatik qoidalariga ko'ra, bo'sh o'rinni to'ldirish uchun \"bir\" so'zi eng mos keladi. Bu so'z \"biror\" yoki \"bir dona\" ma'nosida kelib, \"Men bir talabaman\" degan to'liq va to'g'ri jumlani hosil qiladi. \"A\" va \"C\" variantlari bir xil so'z bo'lgani uchun, agar testda \"C\" to'g'ri deb belgilangan bo'lsa, demak, bu variantni tanlash kerak.\n\nShunday qilib, to'g'ri javob **C) bir** variantidir.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "de6c5293-5336-4c9f-a3f8-54e0e30685d9",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 2,
+      "question_text": "Bu kitap ___ masanın üstünde.",
+      "options": {
+        "a": "altında",
+        "b": "içinde",
+        "c": "masanın üstünde",
+        "d": "yanında"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolda kitobning joylashuvi so'ralmoqda. Turk tilida narsalarning joylashuvini ifodalash uchun otlarga egalik qo'shimchalari va joy-holat qo'shimchalari (postpozitsiyalar) birgalikda ishlatiladi.\n\nSavol: \"Bu kitap ___ masanın üstünde.\"\nBu yerda bo'sh joyni to'ldirish va kitobning stol ustida ekanligini ifodalash talab qilinadi.\n\n**\"C\" varianti: \"masanın üstünde\"**\n\n1.  **Ma'nosi va tuzilishi:**\n    *   \"Masa\" so'zi \"stol\" degan ma'noni anglatadi.\n    *   \"-nın\" qo'shimchasi egalik (genitiv) kelishigi qo'shimchasi bo'lib, \"stolning\" degan ma'noni beradi.\n    *   \"üst\" so'zi \"ust\" (yuza) degan ma'noni bildiradi.\n    *   \"-ünde\" qo'shimchasi joy-holat (lokativ) kelishigi qo'shimchasi bo'lib, \"ustida\" degan ma'noni beradi.\n    *   Shunday qilib, \"masanın üstünde\" birgalikda \"stolning ustida\" yoki \"stol ustida\" degan ma'noni anglatadi. Bu, turk tilida biror narsaning stol ustida joylashganligini ifodalashning to'g'ri va to'liq shaklidir.\n\n2.  **Nima uchun to'g'ri?**\n    Agar savol \"Bu kitap ___.\" shaklida bo'lganda edi, \"masanın üstünde\" varianti \"Bu kitap masanın üstünde.\" (Bu kitob stol ustida.) degan grammatik jihatdan to'g'ri va ma'noli jumlani hosil qilardi. Berilgan savolda \"masanın üstünde\" iborasi allaqachon mavjud bo'lsa-da, test savollarida ba'zan shunday takrorlanishlar uchrab turadi va bu holatda bo'sh joyni to'ldirish uchun aynan shu iborani tanlash talab qilinadi. Ya'ni, savolning maqsadi \"stol ustida\" iborasini turk tilida to'g'ri ifodalashni bilishni tekshirishdir.\n\n3.  **Boshqa variantlar nima uchun noto'g'ri?**\n    *   **a) \"altında\"**: \"ostida\" degan ma'noni bildiradi. Bu so'z odatda biror ot bilan birga keladi, masalan, \"masanın altında\" (stol ostida). Agar yolg'iz ishlatilsa, \"uning ostida\" degan ma'noni beradi, ammo bu kontekstda aniq emas.\n    *   **b) \"içinde\"**: \"ichida\" degan ma'noni bildiradi. Bu ham biror ot bilan birga ishlatiladi, masalan, \"kutunun içinde\" (qutining ichida). Yolg'iz ishlatilganda \"uning ichida\" ma'nosini beradi.\n    *   **d) \"yanında\"**: \"yonida\" degan ma'noni bildiradi. Bu ham biror ot bilan birga ishlatiladi, masalan, \"masanın yanında\" (stolning yonida). Yolg'iz ishlatilganda \"uning yonida\" ma'nosini beradi.\n\nYuqoridagi \"altında\", \"içinde\", \"yanında\" variantlari o'z-o'zidan to'liq joylashuvni ifodalamaydi, ular odatda biror otning egalik kelishigi shaklidan keyin keladi. \"Masanın üstünde\" esa \"stol ustida\" degan aniq va to'liq joylashuvni ifodalovchi iboradir. Shuning uchun, berilgan savolda kitobning joylashuvini aniq ko'rsatish uchun \"C\" varianti eng to'g'ri javob hisoblanadi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "e4d54840-1623-46bc-927e-400345af600c",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 3,
+      "question_text": "Dün okula ___ gittim.",
+      "options": {
+        "a": "geç",
+        "b": "erken",
+        "c": "yarın",
+        "d": "şimdi"
+      },
+      "correct_option": "b",
+      "explanation": "Berilgan savolni tahlil qilaylik: \"Dün okula ___ gittim.\"\n\nBu yerda bizdan bo'sh joyga mos keladigan so'zni topish talab qilinmoqda. Gapning ma'nosini tushunish uchun uning tarkibiy qismlarini ko'rib chiqamiz:\n*   **\"Dün\"**: \"kecha\" degan ma'noni anglatadi. Bu o'tgan zamonni bildiruvchi vaqt ravishidir.\n*   **\"okula\"**: \"maktabga\" degan ma'noni anglatadi. Bu harakatning yo'nalishini ko'rsatadi.\n*   **\"gittim\"**: \"bordim\" degan ma'noni anglatadi. Bu o'tgan zamon, birinchi shaxs birlikdagi fe'l.\n\nDemak, gapning umumiy ma'nosi \"Men kecha maktabga ___ bordim\" bo'ladi. Bo'sh joyga o'tgan zamon bilan mos keladigan va mantiqiy ma'no beradigan so'z qo'yishimiz kerak.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) \"geç\"**: \"kech\" degan ma'noni anglatadi. \"Dün okula geç gittim\" (Men kecha maktabga kech bordim) gapi grammatik jihatdan ham, mantiqiy jihatdan ham to'g'ri.\n*   **b) \"erken\"**: \"erta\" degan ma'noni anglatadi. \"Dün okula erken gittim\" (Men kecha maktabga erta bordim) gapi ham grammatik jihatdan, ham mantiqiy jihatdan to'g'ri.\n*   **c) \"yarın\"**: \"ertaga\" degan ma'noni anglatadi. \"Dün okula yarın gittim\" (Men kecha maktabga ertaga bordim) gapi mantiqiy xatoga ega, chunki \"kecha\" va \"ertaga\" birgalikda ishlatilmaydi. O'tgan zamon harakati kelasi zamonni bildiruvchi so'z bilan birga kelishi mumkin emas.\n*   **d) \"şimdi\"**: \"hozir\" degan ma'noni anglatadi. \"Dün okula şimdi gittim\" (Men kecha maktabga hozir bordim) gapi ham mantiqiy xatoga ega. \"Kecha\" (o'tgan zamon) va \"hozir\" (hozirgi zamon) birgalikda ishlatilmaydi.\n\nSavolda \"B\" varianti to'g'ri deb berilganligi sababli, aynan shu variantni tanlaymiz va uning to'g'riligini isbotlaymiz.\n\n**Nima uchun \"B\" varianti to'g'ri?**\n\n\"B\" varianti **\"erken\"** so'zidir, bu \"erta\" degan ma'noni anglatadi.\n\"Dün okula **erken** gittim\" jumlasi quyidagicha tarjima qilinadi: \"Men kecha maktabga **erta** bordim.\"\n\n1.  **Grammatik moslik:** \"Erken\" so'zi turk tilida ravish (zarf) bo'lib, fe'lning bajarilish vaqtini (qachon?) ifodalaydi. \"Gittim\" (bordim) fe'li bilan to'liq grammatik moslikni tashkil etadi.\n2.  **Mantiqiy moslik:** \"Dün\" (kecha) so'zi o'tgan zamonni bildiradi. \"Erken\" (erta) so'zi esa o'tgan zamonda sodir bo'lgan harakatning odatdagidan oldinroq sodir bo'lganini ko'rsatadi. \"Kecha erta borish\" mantiqan to'g'ri va kundalik hayotda tez-tez uchraydigan holatdir.\n3.  **Vaqt birligi:** \"Dün\" (kecha) o'tgan zamonni bildirsa, \"erken\" (erta) ham o'tgan zamondagi biror voqeani tavsiflash uchun ishlatilishi mumkin. Bu ikkala so'z o'rtasida vaqt jihatidan hech qanday ziddiyat yo'q.\n\nXulosa qilib aytganda, \"erken\" so'zi berilgan gapning grammatik tuzilishiga ham, mantiqiy ma'nosiga ham to'liq mos keladi va o'tgan zamonni bildiruvchi \"dün\" va \"gittim\" so'zlari bilan uyg'unlikni ta'minlaydi. Shuning uchun \"B\" varianti to'g'ri javob hisoblanadi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "31de07a7-7868-462a-aede-0760e2036793",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 4,
+      "question_text": "Annem bana bir hediye ___.",
+      "options": {
+        "a": "verecek",
+        "b": "veriyor",
+        "c": "verdi",
+        "d": "vermek"
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savolda turk tilidagi \"Annem bana bir hediye ___.\" (Onam menga bir sovg'a ___) jumlasini to'g'ri fe'l shakli bilan to'ldirish talab qilinadi. Keling, har bir variantni ko'rib chiqamiz:\n\n1.  **a) verecek**: Bu \"vermek\" (bermoq) fe'lining kelasi zamon shakli bo'lib, \"beradi\" yoki \"bermoqchi\" degan ma'noni anglatadi. Agar jumlaga qo'ysak: \"Annem bana bir hediye verecek.\" (Onam menga bir sovg'a beradi/bermoqchi.) Bu grammatik jihatdan to'g'ri, lekin bu sovg'a hali berilmagan, balki kelajakda berilishi kutilayotganini bildiradi.\n\n2.  **b) veriyor**: Bu \"vermek\" fe'lining hozirgi davomli zamon shakli bo'lib, \"bermoqda\" yoki odat tusiga kirgan harakatni ifodalab \"beradi\" degan ma'noni anglatadi. Agar jumlaga qo'ysak: \"Annem bana bir hediye veriyor.\" (Onam menga bir sovg'a bermoqda/beradi.) Bu ham grammatik jihatdan to'g'ri bo'lishi mumkin, ammo sovg'a hozirgi paytda berilayotganini yoki doimiy ravishda berilishini anglatadi.\n\n3.  **c) verdi**: Bu \"vermek\" fe'lining o'tgan zamon (aniq o'tgan zamon) shakli bo'lib, \"berdi\" degan ma'noni anglatadi. Agar jumlaga qo'ysak: \"Annem bana bir hediye verdi.\" (Onam menga bir sovg'a berdi.) Bu sovg'aning o'tmishda berilganligini va harakat tugallanganligini bildiradi.\n\n4.  **d) vermek**: Bu \"vermek\" fe'lining harakat nomi (infinitiv) shakli bo'lib, \"bermoq\" degan ma'noni anglatadi. Bu shakl jumlada asosiy kesim vazifasini bajara olmaydi. Masalan, \"Annem bana bir hediye vermek.\" (Onam menga bir sovg'a bermoq.) Bu grammatik jihatdan noto'g'ri.\n\n**Nima uchun \"C\" varianti to'g'ri?**\n\nBerilgan \"Annem bana bir hediye ___.\" jumlasida hech qanday vaqt ko'rsatkichi (masalan, \"kecha\", \"ertaga\", \"har kuni\") yo'q. Bunday hollarda, odatda, gapiruvchi o'tmishda sodir bo'lgan va tugallangan bir voqeani ifodalashni maqsad qiladi. Ya'ni, onasi unga allaqachon sovg'a berganligini aytmoqchi. \"Verdi\" shakli aynan shu ma'noni, ya'ni o'tmishda sodir bo'lgan va tugallangan harakatni ifodalaydi. Bu jumlani tabiiy va to'g'ri yakunlaydi.\n\nShuning uchun, eng mantiqiy va grammatik jihatdan to'g'ri variant **c) verdi** hisoblanadi.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "27a60f5e-de26-478d-b6f9-00e617e1d6a9",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 5,
+      "question_text": "Biz her gün Türkçe ___.",
+      "options": {
+        "a": "konuşuyoruz",
+        "b": "konuşacağız",
+        "c": "konuştuk",
+        "d": "konuşmak"
+      },
+      "correct_option": "a",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "07bc7b49-deaf-4631-8c22-da7f8e55a876",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 6,
+      "question_text": "Saat üçte okuldan ___.",
+      "options": {
+        "a": "geleceğim",
+        "b": "geldim",
+        "c": "geliyorum",
+        "d": "gelmek"
+      },
+      "correct_option": "b",
+      "explanation": "Ushbu savolda turk tilidagi fe'l zamonlarini to'g'ri qo'llash talab etiladi. Keling, berilgan gapni va variantlarni tahlil qilamiz:\n\n**Savol:** \"Saat üçte okuldan ___.\"\nBu gap \"Soat uchda maktabdan ___.\" degan ma'noni anglatadi. Gapda aniq bir vaqt (\"Saat üçte\" - soat uchda) ko'rsatilgan bo'lib, bu odatda o'tmishda sodir bo'lgan yoki kelajakda sodir bo'ladigan aniq bir harakatni ifodalash uchun ishlatiladi.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) geleceğim:** Bu \"kelajak zamon\" (gelecek zaman) shakli bo'lib, \"men kelaman\" yoki \"men kelajakman\" degan ma'noni beradi. Agar gap \"Saat üçte okuldan geleceğim\" bo'lsa, \"Soat uchda maktabdan kelaman (kelajakda)\" degan ma'noni anglatadi. Grammatik jihatdan to'g'ri bo'lishi mumkin, ammo savolning umumiy konteksti (odatda bunday savollar o'tmishdagi yoki hozirgi holatni so'raydi) va boshqa variantlarning mavjudligi uni eng to'g'ri javob qilmaydi.\n\n*   **b) geldim:** Bu \"aniq o'tgan zamon\" (belirli geçmiş zaman yoki di'li geçmiş zaman) shakli bo'lib, \"men keldim\" degan ma'noni beradi. \"Saat üçte okuldan geldim\" jumlasi \"Soat uchda maktabdan keldim\" degan ma'noni anglatadi. Bu, aniq bir vaqtda (soat uchda) sodir bo'lgan tugallangan harakatni ifodalash uchun eng mos keladigan zamon shaklidir. Turk tilida aniq o'tgan zamon aniq bir vaqtda sodir bo'lgan va gapiruvchi guvoh bo'lgan voqealarni ifodalash uchun ishlatiladi.\n\n*   **c) geliyorum:** Bu \"hozirgi davomli zamon\" (şimdiki zaman) shakli bo'lib, \"men kelyapman\" yoki \"men kelaman (odatda)\" degan ma'noni beradi. Agar gap \"Saat üçte okuldan geliyorum\" bo'lsa, \"Soat uchda maktabdan kelyapman\" (aynan hozir) yoki \"Soat uchda maktabdan kelaman (har kuni, odatda)\" degan ma'noni beradi. \"Saat üçte\" iborasi aniq bir nuqtani bildirganligi sababli, bu zamon shakli odatda davomli harakat yoki odatiy harakatlar uchun ishlatiladi. Faqatgina \"Saat üçte\" bilan birga bu zamon kamdan-kam hollarda ishlatiladi, agar u odatiy harakatni ifodalamasa.\n\n*   **d) gelmek:** Bu fe'lning \"harakat nomi\" (infinitive) shakli bo'lib, \"kelmoq\" degan ma'noni beradi. Bu fe'lning tuslanmagan shakli bo'lib, gapni to'liq yakunlay olmaydi. Masalan, \"Saat üçte okuldan gelmek istiyorum\" (Soat uchda maktabdan kelmoqchiman) kabi boshqa fe'l bilan birga kelishi kerak. Shuning uchun bu variant gapni to'g'ri yakunlay olmaydi.\n\n**Xulosa:**\nGapda \"Saat üçte\" (soat uchda) aniq bir vaqt ko'rsatilganligi sababli, bu vaqtda sodir bo'lgan tugallangan harakatni ifodalash uchun \"aniq o'tgan zamon\" (belirli geçmiş zaman) eng mos keladi. \"Geldim\" (men keldim) aynan shu zamon shaklida bo'lib, gapni to'g'ri va mantiqiy jihatdan yakunlaydi. Shuning uchun **B** varianti to'g'ri javobdir.",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "7233fc75-9bcc-48fb-b5ec-746adeaffb7d",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 7,
+      "question_text": "Hangisi meyvedir?",
+      "options": {
+        "a": "Patates",
+        "b": "Soğan",
+        "c": "Havuç",
+        "d": "Elma"
+      },
+      "correct_option": "d",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "bc031f55-59b0-4361-a2e9-06d4ef60969a",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 8,
+      "question_text": "Benim iki ___ var.",
+      "options": {
+        "a": "kardeşler",
+        "b": "kardeşe",
+        "c": "kardeşim",
+        "d": "kardeşi"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "90701b10-017b-4efb-86ff-061a155aed50",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 9,
+      "question_text": "Yarın sinemaya ___?",
+      "options": {
+        "a": "gidiyor musun",
+        "b": "gittin mi",
+        "c": "gidecek misin",
+        "d": "gitmek"
+      },
+      "correct_option": "c",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "5224a208-2e14-4487-b8a9-4b38483ef294",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 10,
+      "question_text": "Bu kalem ___?",
+      "options": {
+        "a": "kim",
+        "b": "neden",
+        "c": "nerede",
+        "d": "kimin"
+      },
+      "correct_option": "d",
+      "level": "A2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "7063ca25-1838-4eff-a1da-5ce47ccba24d",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 11,
+      "question_text": "Eğer zamanım olsaydı sana ___.",
+      "options": {
+        "a": "yardım ederim",
+        "b": "yardım edeceğim",
+        "c": "yardım ederdim",
+        "d": "yardım ettim"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "6e12e1bd-3e52-4f41-a32c-87a81a28ace8",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 12,
+      "question_text": "Ahmet gelmeden önce ben evi ___.",
+      "options": {
+        "a": "temizliyorum",
+        "b": "temizlemiştim",
+        "c": "temizlerim",
+        "d": "temizleyeceğim"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "cb818e0e-416f-4f78-bc5a-3ad57c302cc3",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 13,
+      "question_text": "Bu işi bitirmek hiç de ___ değil.",
+      "options": {
+        "a": "zorluk",
+        "b": "zorca",
+        "c": "zor",
+        "d": "zorluk"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "ba962121-29b2-457f-a396-21c36d1bcf85",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 14,
+      "question_text": "Toplantıya katılanların hepsi raporu ___.",
+      "options": {
+        "a": "okuyor",
+        "b": "okumuştu",
+        "c": "okuyacak",
+        "d": "okuyordu"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "e23fb18e-a4bd-4b41-b150-fd1298fd6406",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 15,
+      "question_text": "Yağmur yağmasına rağmen dışarı ___.",
+      "options": {
+        "a": "çıkmadım",
+        "b": "çıktım",
+        "c": "çıkacağım",
+        "d": "çıkıyorum"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "c3ee06f6-d780-484b-8b94-6cbf45d290a4",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 16,
+      "question_text": "Kitabı bitirdikten sonra bana ___.",
+      "options": {
+        "a": "veriyor",
+        "b": "verirsin",
+        "c": "verdi",
+        "d": "verecek"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "aa337205-b168-4ea6-8916-84e1b2de5c4f",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 17,
+      "question_text": "Bu film beklediğimden daha ___.",
+      "options": {
+        "a": "kötü",
+        "b": "iyiydi",
+        "c": "kısa",
+        "d": "pahalı"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "1b7811ef-06dd-43dd-b463-f51fb1d7f257",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 18,
+      "question_text": "\"Mutlu\" kelimesinin eş anlamlısı hangisidir?",
+      "options": {
+        "a": "üzgün",
+        "b": "mesut",
+        "c": "yorgun",
+        "d": "sinirli"
+      },
+      "correct_option": "b",
+      "explanation": "\"Mutlu\" so'zi turk tilida \"baxtli\", \"xursand\", \"quvnoq\" degan ma'nolarni anglatadi. Savolda ushbu so'zning \"eş anlamlısı\" ya'ni \"sinonimi\" (ma'nodosh so'zi) topish so'ralgan. Keling, variantlarni ko'rib chiqamiz:\n\n*   **a) \"üzgün\"**: Bu so'z \"g'amgin\", \"xafa\" degan ma'nolarni bildiradi. Bu \"mutlu\" so'zining antonimi (qarama-qarshi ma'noli so'zi) hisoblanadi. Shuning uchun bu variant noto'g'ri.\n*   **b) \"mesut\"**: Bu so'z ham turk tilida \"baxtli\", \"saodatli\", \"xursand\" degan ma'nolarni anglatadi. \"Mutlu\" va \"mesut\" so'zlari bir-biriga juda yaqin ma'noga ega bo'lib, ko'pincha birining o'rniga ikkinchisi ishlatilishi mumkin. Ikkalasi ham insonning ijobiy hissiy holatini ifodalaydi. Shuning uchun bu variant to'g'ri.\n*   **c) \"yorgun\"**: Bu so'z \"charchagan\" degan ma'noni beradi. Bu \"mutlu\" so'ziga ma'no jihatdan aloqador emas. Shuning uchun bu variant noto'g'ri.\n*   **d) \"sinirli\"**: Bu so'z \"jahldor\", \"asabiy\" degan ma'nolarni bildiradi. Bu ham \"mutlu\" so'ziga ma'no jihatdan aloqador emas, balki salbiy hissiyotni ifodalaydi. Shuning uchun bu variant noto'g'ri.\n\nYuqoridagi tahlillardan ko'rinib turibdiki, \"mutlu\" so'zining ma'nodosh so'zi \"mesut\" hisoblanadi. Ikkala so'z ham bir xil hissiy holatni, ya'ni baxt va xursandchilikni ifodalaydi.",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "250efc88-d051-4e97-a382-3f08d420c2f2",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 19,
+      "question_text": "Dün seni aradım ama telefonun ___.",
+      "options": {
+        "a": "açtı",
+        "b": "açılıyor",
+        "c": "kapalıydı",
+        "d": "kapanacak"
+      },
+      "correct_option": "c",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "945ac4aa-ca6d-4b8e-baa1-42fcaf671a4b",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 20,
+      "question_text": "Türkiye'ye taşınmayı uzun zamandır ___.",
+      "options": {
+        "a": "unutuyorum",
+        "b": "düşünüyordum",
+        "c": "bırakıyorum",
+        "d": "istemeyeceğim"
+      },
+      "correct_option": "b",
+      "level": "B1",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "2f7d781e-504c-481a-a8b8-1f9839ef8baf",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 21,
+      "question_text": "\"Varsayalım ki...\" ifadesi aşağıdakilerden hangisini bildirir?",
+      "options": {
+        "a": "Olasılık",
+        "b": "Emir",
+        "c": "Kesinlik",
+        "d": "Zorunluluk"
+      },
+      "correct_option": "a",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "373fe7cb-870d-49a4-989f-bcee5a4586c3",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 22,
+      "question_text": "Aşağıdaki cümlelerden hangisi edilgen çatılıdır?",
+      "options": {
+        "a": "Ali kapıyı açtı.",
+        "b": "Çocuk camı kırdı.",
+        "c": "Kapı dikkatlice açıldı.",
+        "d": "Öğretmen ödevi kontrol etti."
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "21656a88-6c29-4666-b8ae-cbcc681e5c23",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 23,
+      "question_text": "\"Her şeye rağmen çalışmaya devam etti.\" cümlesinde anlatılmak istenen nedir?",
+      "options": {
+        "a": "Vazgeçti.",
+        "b": "Zorluklara rağmen sürdürdü.",
+        "c": "Hiç çalışmadı.",
+        "d": "Erken ayrıldı."
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "548d5116-bf33-4a03-9b71-f3dfde396421",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 24,
+      "question_text": "\"Ne kadar çalışırsan çalış, başarılı olamazsın.\" cümlesindeki anlam ilişkisi nedir?",
+      "options": {
+        "a": "Sebep-sonuç",
+        "b": "Amaç-sonuç",
+        "c": "Karşıtlık",
+        "d": "Koşulsuzluk"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolda \"Ne kadar çalışırsan çalış, başarılı olamazsın.\" jumlasi tahlil qilinishi kerak. Bu jumla ikki qismdan iborat: \"Ne kadar çalışırsan çalış\" va \"başarılı olamazsın\".\n\n1.  **\"Ne kadar çalışırsan çalış\" qismi:** Bu qism shart-sharoitni, ya'ni qancha harakat qilinishini ifodalaydi. Turk tilida \"-sa/-se de\", \"her ne kadar ... -sa da\" yoki \"ne kadar ... -san ... -san\" kabi tuzilmalar odatda \"hatto shunday bo'lsa ham\" ma'nosini beruvchi, ya'ni **taviz (concession)** bildiruvchi bog'lovchi vazifasini bajaradi. Bu yerda \"qancha ko'p ishlasang ham\" degan ma'no bor.\n\n2.  **\"başarılı olamazsın\" qismi:** Bu qism esa natijani, ya'ni muvaffaqiyatsizlikni ifodalaydi.\n\nEndi bu ikki qism orasidagi munosabatni ko'rib chiqamiz:\nOdatda, ko'p mehnat qilish (çalışmak) muvaffaqiyatga (başarılı olmak) olib kelishi kutiladi. Ammo berilgan jumla \"qancha ko'p ishlasang ham, muvaffaqiyatga erisha olmaysan\" deb, kutilgan natijaning teskarisini ifodalayapti. Bu esa ikki holat (mehnat qilish va muvaffaqiyatsizlik) o'rtasida ziddiyat yoki qarama-qarshilik borligini ko'rsatadi.\n\n**Variantlarni tahlil qilamiz:**\n\n*   **a) Sebep-sonuç (Sabab-natija):** Bu munosabatda bir hodisa ikkinchisining bevosita sababi bo'ladi. Masalan: \"Çok çalıştığı için başarılı oldu.\" (Ko'p ishlagani uchun muvaffaqiyatga erishdi.) Bizning jumlada esa mehnat qilish muvaffaqiyatsizlikka sabab bo'lmayapti, balki unga qaramay muvaffaqiyatsizlik yuz beryapti. Shuning uchun bu variant noto'g'ri.\n\n*   **b) Amaç-sonuç (Maqsad-natija):** Bu munosabatda biror harakatning maqsadi ko'rsatiladi. Masalan: \"Başarılı olmak için çok çalıştı.\" (Muvaffaqiyatga erishish uchun ko'p ishladi.) Berilgan jumlada esa maqsad emas, balki harakatga qaramay yuz beradigan natija ifodalangan. Shuning uchun bu variant noto'g'ri.\n\n*   **c) Karşıtlık (Qarama-qarshilik/Ziddiyat):** Bu munosabatda ikki fikr, harakat yoki holat bir-biriga zid ravishda, yoki birining mavjudligiga qaramay ikkinchisi sodir bo'lishi ifodalanadi. Bizning jumlada \"ko'p mehnat qilish\" va \"muvaffaqiyatsizlikka erishish\" o'rtasida aniq bir ziddiyat mavjud. Mehnatga qaramay, kutilgan natija (muvaffaqiyat) emas, balki uning aksi (muvaffaqiyatsizlik) yuz beryapti. Bu turdagi jumlalar turk tilida taviz (concession) jumlalari deb ataladi va ular aynan qarama-qarshilik ma'nosini ifodalaydi. Shuning uchun bu variant to'g'ri.\n\n*   **d) Koşulsuzluk (Shartsizlik):** Bu atama \"shartga bog'liq bo'lmagan holat\" degan ma'noni beradi. \"Ne kadar çalışırsan çalış\" qismi shartga o'xshasa-da, aslida u shartning natijaga ta'sir qilmasligini, ya'ni qanday shart bo'lishidan qat'i nazar natijaning o'zgarmasligini ifodalaydi. Ammo bu atama \"Karşıtlık\" kabi semantik munosabatni aniq ifodalamaydi. \"Qarama-qarshilik\" bu yerda harakat va natija o'rtasidagi ziddiyatni to'liqroq aks ettiradi.\n\n**Xulosa:** \"Ne kadar çalışırsan çalış, başarılı olamazsın.\" jumlasi mehnat qilish harakati va uning kutilmagan, zid natijasi (muvaffaqiyatsizlik) o'rtasidagi **qarama-qarshilikni** ifodalaydi. Shuning uchun to'g'ri javob **C - Karşıtlık** variantidir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "c4b5534b-ced1-4cbd-b898-ed32b34ba72d",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 25,
+      "question_text": "\"Eleştirmek\" kelimesine anlamca en yakın seçenek hangisidir?",
+      "options": {
+        "a": "Övmek",
+        "b": "Desteklemek",
+        "c": "Kınamak",
+        "d": "Beklemek"
+      },
+      "correct_option": "c",
+      "explanation": "\"Eleştirmek\" so'zi turk tilida \"tanqid qilish\", \"nuqsonlarini ko'rsatish\", \"baholash\" ma'nolarini anglatadi. Ko'pincha bu so'z biror narsaning salbiy tomonlarini, kamchiliklarini ko'rsatish yoki unga nisbatan norozilik bildirish ma'nosida ishlatiladi. Keling, variantlarni ko'rib chiqaylik:\n\n*   **a) Övmek:** Bu so'z \"maqtash\", \"olqishlash\" degan ma'nolarni beradi. Bu \"eleştirmek\" so'zining mutlaqo teskarisi bo'lib, ijobiy bahoni ifodalaydi. Shuning uchun bu variant noto'g'ri.\n*   **b) Desteklemek:** Bu so'z \"qo'llab-quvvatlash\", \"yordam berish\" ma'nolarini anglatadi. Bu ham tanqid qilishdan butunlay boshqa ma'noga ega. Shuning uchun bu variant ham noto'g'ri.\n*   **c) Kınamak:** Bu so'z \"qoralash\", \"ayblash\", \"norozilik bildirish\", \"keskin tanqid qilish\" ma'nolarini beradi. \"Eleştirmek\" so'zi ko'pincha aynan biror harakatni, fikrni yoki shaxsni qoralash, uning xatolarini ko'rsatish ma'nosida ishlatiladi. Masalan, \"Hükümetin bu kararını eleştiriyorum\" (Hukumatning bu qarorini tanqid qilyapman) jumlasi ko'pincha \"Hükümetin bu kararını kınıyorum\" (Hukumatning bu qarorini qoralayapman) ma'nosiga yaqin keladi. Ikkala so'z ham biror narsaga nisbatan salbiy munosabatni, norozilikni ifodalaydi va kamchiliklarni ko'rsatishga qaratilgan. Shuning uchun \"kınamak\" \"eleştirmek\" so'ziga ma'no jihatdan eng yaqin variant hisoblanadi.\n*   **d) Beklemek:** Bu so'z \"kutish\" ma'nosini anglatadi. Bu \"eleştirmek\" so'zi bilan hech qanday ma'noviy bog'liqlikka ega emas. Shuning uchun bu variant ham noto'g'ri.\n\nXulosa qilib aytganda, \"eleştirmek\" (tanqid qilish) so'zining asosiy ma'nolaridan biri, ayniqsa kundalik nutqda, biror narsaning kamchiliklarini ko'rsatish va unga nisbatan norozilik bildirishdir. \"Kınamak\" (qoralash) so'zi ham aynan shu norozilik va salbiy bahoni, ko'pincha yanada kuchliroq tarzda ifodalaydi. Shu sababli, \"C\" varianti to'g'ri javobdir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "f882320c-6949-499e-ac00-4e6b4c2a6288",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 26,
+      "question_text": "\"Kitabı okumuş olmalı.\" cümlesi hangi anlamı taşır?",
+      "options": {
+        "a": "Emir",
+        "b": "Kesin bilgi",
+        "c": "Tahmin",
+        "d": "Rica"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolning to'g'ri javobi \"C\" variantidir. Keling, buni batafsil ko'rib chiqamiz.\n\n**Savol: \"Kitabı okumuş olmalı.\" jumlasi qanday ma'noni tashır?**\n\nBu jumlani tahlil qilaylik:\n*   **\"Kitabı\"**: \"Kitobni\" degan ma'noni beradi.\n*   **\"okumuş\"**: \"O'qigan\" degan ma'noni beruvchi o'tgan zamon fe'l shakli. Turk tilida \"-mış/-miş/-muş/-müş\" qo'shimchasi bilan yasalgan o'tgan zamon fe'llari ko'pincha shaxsiy kuzatuvga asoslanmagan, ya'ni eshitish orqali bilgan yoki taxmin qilingan harakatni ifodalaydi.\n*   **\"olmalı\"**: Bu yerda \"bo'lishi kerak\" yoki \"bo'lishi lozim\" degan majburiyat ma'nosini beruvchi \"-malı/-meli\" qo'shimchasi \"ol-\" (bo'lmoq) fe'liga qo'shilgan. Biroq, \"okumuş olmalı\" kabi tuzilmalarda, ya'ni o'tgan zamon fe'li (okumuş) bilan birga kelganda, bu qo'shimcha majburiyatni emas, balki **kuchli ehtimollikni, taxminni yoki farazni** ifodalaydi.\n\nShunday qilib, \"Kitabı okumuş olmalı\" jumlasi \"Kitobni o'qigan bo'lishi kerak\" yoki \"Kitobni o'qigan bo'lsa kerak\" degan ma'noni beradi. Bu yerda gapiruvchi shaxs kitobni o'qiganiga amin emas, balki ba'zi dalillarga yoki vaziyatga asoslanib shunday taxmin qilmoqda.\n\nEndi variantlarni ko'rib chiqamiz:\n\n*   **a) Emir (Buyruq):** Buyruq fe'llari \"Oku!\" (O'qi!) yoki \"Okusun!\" (O'qisin!) kabi bo'ladi. Berilgan jumlada buyruq ma'nosi yo'q.\n*   **b) Kesin bilgi (Aniq ma'lumot):** Aniq ma'lumot \"Kitabı okudu.\" (Kitobni o'qidi.) yoki \"Kitabı okumuş.\" (Kitobni o'qigan ekan/o'qibdi.) kabi ifodalanadi. \"Olmalı\" qo'shimchasi aniqlik emas, balki noaniqlik va taxminni bildiradi.\n*   **c) Tahmin (Taxmin):** Yuqorida aytib o'tganimizdek, \"okumuş olmalı\" tuzilmasi aynan kuchli taxminni, farazni ifodalaydi. Gapiruvchi biror narsaning yuz berganiga ishonch hosil qilmaydi, lekin shunday bo'lishi ehtimolini yuqori deb hisoblaydi. Bu \"He must have read the book\" (U kitobni o'qigan bo'lishi kerak) degan inglizcha iboraga o'xshash.\n*   **d) Rica (Iltimos):** Iltimos fe'llari \"Okur musun?\" (O'qiysanmi?) yoki \"Okumanı rica ediyorum.\" (O'qishingni iltimos qilaman.) kabi bo'ladi. Berilgan jumlada iltimos ma'nosi yo'q.\n\n**Xulosa:** \"Kitabı okumuş olmalı\" jumlasi, fe'lning o'tgan zamon shakli (\"okumuş\") va \"olmalı\" modal fe'lining birikmasi tufayli, biror voqea yoki harakatning yuz berganligi haqida kuchli taxminni ifodalaydi. Shuning uchun to'g'ri javob **C - Tahmin** variantidir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "bdab501d-8065-4661-a3bd-c4b3d99e0c64",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 27,
+      "question_text": "Aşağıdaki cümlelerden hangisi yazım kurallarına uygundur?",
+      "options": {
+        "a": "herkes Ankara'ya gitti.",
+        "b": "Herkes Ankara'ya gitti.",
+        "c": "Herkes ankara'ya gitti.",
+        "d": "Herkes Ankara ya gitti."
+      },
+      "correct_option": "b",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "7800a7f2-cc39-4012-ab82-ba908be8220f",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 28,
+      "question_text": "\"Toplantı ertelendi çünkü müdür şehir dışındaydı.\" Bu cümlede \"çünkü\" hangi görevdedir?",
+      "options": {
+        "a": "Zamir",
+        "b": "Edat",
+        "c": "Bağlaç",
+        "d": "Sıfat"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan \"Toplantı ertelendi çünkü müdür şehir dışındaydı\" (Yig'ilish qoldirildi, chunki direktor shahar tashqarisida edi) jumlada \"çünkü\" so'zi ikki alohida gapni bir-biriga bog'lab kelgan.\n\nKeling, variantlarni ko'rib chiqaylik:\n\n*   **a) Zamir (Olmosh):** Olmoshlar otlarning o'rniga ishlatiladi (masalan: u, bu, kim). \"Çünkü\" so'zi otning o'rniga ishlatilmagan.\n*   **b) Edat (Ko'makchi):** Ko'makchilar otlar yoki olmoshlar bilan birga kelib, ular o'rtasidagi munosabatni bildiradi (masalan: bilan, uchun, kabi). \"Çünkü\" so'zi bunday vazifani bajarmaydi.\n*   **c) Bağlaç (Bog'lovchi):** Bog'lovchilar so'zlarni, iboralarni yoki gaplarni bir-biriga bog'laydigan so'zlardir. Ular bog'langan qismlar o'rtasidagi munosabatni (sabab, natija, qarama-qarshilik, qo'shimcha ma'lumot va hokazo) ko'rsatadi. Berilgan jumlada \"çünkü\" so'zi \"Toplantı ertelendi\" (Yig'ilish qoldirildi) gapini \"müdür şehir dışındaydı\" (direktor shahar tashqarisida edi) gapi bilan bog'lab, yig'ilishning qoldirilish sababini ifodalaydi. Aynan shu sababni bildiruvchi bog'lovchi vazifasini bajargani uchun \"çünkü\" bog'lovchi hisoblanadi.\n*   **d) Sıfat (Sifat):** Sifatlar otlarning belgisini (qanday? qanaqa?) bildiradi (masalan: chiroyli, katta, qizil). \"Çünkü\" so'zi hech qanday otning belgisini bildirmaydi.\n\nShuning uchun, \"çünkü\" so'zi ikki gapni sabab-natija munosabati bilan bog'lagani uchun **\"c) Bağlaç\"** to'g'ri javobdir.",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "1d331625-f382-4451-8f30-cb74b788cca4",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 29,
+      "question_text": "Aşağıdaki cümlelerden hangisi anlam bakımından tutarlıdır?",
+      "options": {
+        "a": "Kitabı okumadım, bu yüzden çok beğendim.",
+        "b": "Dün yarın geleceğim dedi.",
+        "c": "Çok çalıştı, sonunda başarılı oldu.",
+        "d": "Yağmur yağıyordu ama hava kupkuruydu."
+      },
+      "correct_option": "c",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    },
+    {
+      "id": "3372b202-e467-42b5-8f93-c1b9139fb9c0",
+      "test_id": "24ab17a9-aa88-426e-9965-8cf6e27f7324",
+      "order_number": 30,
+      "question_text": "Aşağıdaki paragraf için en uygun başlık hangisidir? Paragraf: \"Teknolojinin eğitimde kullanılması, öğrencilerin bilgiye daha hızlı ulaşmasını ve derslerin daha etkileşimli olmasını sağlamaktadır.\"",
+      "options": {
+        "a": "Sağlıklı Yaşam",
+        "b": "Sporun Faydaları",
+        "c": "Teknolojinin Eğitime Katkısı",
+        "d": "Turizmin Gelişimi"
+      },
+      "correct_option": "c",
+      "explanation": "Berilgan savolda paragraf uchun eng mos sarlavhani topish talab qilinmoqda. Keling, paragrafning mazmunini va variantlarni ko'rib chiqaylik.\n\n**Paragrafning mazmuni:**\n\"Teknolojinin eğitimde kullanılması, öğrencilerin bilgiye daha hızlı ulaşmasını ve derslerin daha etkileşimli olmasını sağlamaktadır.\"\nBu jumla o'zbek tiliga \"Texnologiyaning ta'limda qo'llanilishi o'quvchilarning ma'lumotga tezroq erishishini va darslarning yanada interaktiv bo'lishini ta'minlaydi\" deb tarjima qilinadi.\nParagrafning asosiy mavzusi texnologiyaning ta'lim sohasidagi foydalari va uning ta'limga qanday hissa qo'shishi haqida ekanligi aniq.\n\n**Variantlarni tahlil qilish:**\n\n*   **a) \"Sağlıklı Yaşam\" (Sog'lom Hayot):** Bu variant sog'liq va turmush tarzi haqida bo'lib, paragrafning mazmuniga umuman mos kelmaydi. Paragrafda sog'lom turmush tarzi haqida hech qanday ma'lumot yo'q.\n*   **b) \"Sporun Faydaları\" (Sportning Foydalari):** Bu variant sportning afzalliklari haqida bo'lib, paragrafda sport yoki jismoniy faoliyat haqida hech narsa aytilmagan.\n*   **c) \"Teknolojinin Eğitime Katkısı\" (Texnologiyaning Ta'limga Hissasi):** Bu variant to'g'ridan-to'g'ri paragrafning asosiy g'oyasini aks ettiradi. Paragrafda texnologiyaning ta'limda qo'llanilishi natijasida o'quvchilarning ma'lumotga tezroq erishishi va darslarning interaktiv bo'lishi ta'kidlangan, bu esa texnologiyaning ta'limga qo'shgan hissasidir.\n*   **d) \"Turizmin Gelişimi\" (Turizmning Rivojlanishi):** Bu variant turizm sohasi haqida bo'lib, paragrafda turizmga oid hech qanday ma'lumot yo'q.\n\n**Xulosa:**\nParagrafning asosiy mavzusi texnologiyaning ta'lim sohasidagi ijobiy ta'siri va uning ta'lim jarayoniga qo'shgan hissasidir. \"Teknolojinin Eğitime Katkısı\" sarlavhasi paragrafning mazmunini eng aniq va to'liq ifodalaydi. Shuning uchun **\"C\" varianti to'g'ri javobdir.**",
+      "level": "B2",
+      "created_at": "2026-08-08T08:56:55.814237Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:20:28.005Z"
+}

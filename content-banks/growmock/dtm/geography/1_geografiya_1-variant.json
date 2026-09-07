@@ -1,0 +1,458 @@
+{
+  "info": {
+    "id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+    "subject_id": "f79b7a01-0181-4f06-ae6b-f789f663f81f",
+    "title": "Geografiya 1-variant",
+    "description": "Variant: 1-variant",
+    "time_limit": 30,
+    "created_at": "2026-06-13T11:27:21.199176Z",
+    "updated_at": "2026-06-13T11:27:21.199176Z"
+  },
+  "subject": {
+    "id": "f79b7a01-0181-4f06-ae6b-f789f663f81f",
+    "name": "Geografiya",
+    "slug": "geography",
+    "category": "dtm",
+    "time_limit": 30,
+    "created_at": "2026-06-13T11:24:14.214895Z"
+  },
+  "questionsCount": 30,
+  "questions": [
+    {
+      "id": "a84d4012-e4a9-49e7-a9b3-f602f95a3a83",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 1,
+      "question_text": "Xitoy janubdan quyidagi qaysi davlat bilan chegaradosh?",
+      "options": {
+        "a": "Tojikiston",
+        "b": "Mo‘g‘iliston",
+        "c": "Laos",
+        "d": "Afg‘oniston"
+      },
+      "correct_option": "c",
+      "explanation": "Xitoy janubdan quyidagi davlatlar bilan chegaradosh: Vyetnam, Laos va Myanma. Berilgan variantlar orasida faqat Laos Xitoyning janubiy chegarasida joylashgan.\n\nKeling, variantlarni ko'rib chiqaylik:\n\n*   **a) Tojikiston:** Bu davlat Xitoy bilan g'arbiy qismida, asosan Shinjon-Uyg'ur avtonom rayoni orqali chegaradosh. U janubda emas.\n*   **b) Mo‘g‘iliston:** Mo'g'iliston Xitoyning shimoliy chegarasida joylashgan eng yirik qo'shni davlatlardan biridir. U janubda emas.\n*   **c) Laos:** Laos Xitoyning janubiy qo'shnisi bo'lib, Xitoyning Yunnan provinsiyasi bilan chegaradosh. Bu variant to'g'ri.\n*   **d) Afg‘oniston:** Afg'oniston Xitoy bilan g'arbiy qismida, Vaxon koridori orqali juda qisqa masofada chegaradosh. U janubda emas.\n\nShunday qilib, geografik joylashuvga ko'ra, Laos Xitoyning janubiy chegarasida joylashgan davlat hisoblanadi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "439a6edc-b4a1-4d56-8503-eb156e6e525a",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 2,
+      "question_text": "Quyidagi qaysi davlatda shahar aglomeratsiyalari soni 74tani tashkil etadi?",
+      "options": {
+        "a": "Norvegiya",
+        "b": "Niderlandiya",
+        "c": "Ukraina",
+        "d": "Fransiya"
+      },
+      "correct_option": "d",
+      "explanation": "Bu savol davlatlarning shahar tizimlari va urbanizatsiya darajasi haqidagi bilimlarni sinovdan o'tkazadi. Shahar aglomeratsiyasi deganda, yirik shahar va uning atrofidagi, iqtisodiy va ijtimoiy jihatdan u bilan chambarchas bog'liq bo'lgan aholi punktlari majmuasi tushuniladi.\n\n1.  **Fransiya (D varianti):** Fransiyada shahar aglomeratsiyalari soni 74 tani tashkil etishi ma'lumotlarda qayd etilgan. Fransiya, Parij kabi yirik metropoliten hududlarga ega bo'lishiga qaramay, mamlakat bo'ylab o'rtacha va yirik shaharlarning keng tarmog'iga ega. Bu shaharlar o'z atrofidagi kichikroq shaharlar va qishloqlar bilan birgalikda ko'plab shahar aglomeratsiyalarini hosil qiladi. Fransiyaning milliy statistika instituti (INSEE) \"aires urbaines\" (shahar hududlari) deb ataladigan bu aglomeratsiyalarni muntazam ravishda hisoblab boradi va 74 ta yirik shahar aglomeratsiyasi (grandes aires urbaines) mavjudligi tasdiqlangan. Shuning uchun \"D\" varianti to'g'ri javobdir.\n\n2.  **Norvegiya (A varianti):** Norvegiya aholisi nisbatan kam va aholi punktlari tarqoq joylashgan mamlakat. Uning yirik shahar aglomeratsiyalari soni Fransiyaga nisbatan ancha kam. Asosiy shahar aglomeratsiyalari Oslo, Bergen, Tronxeym kabilardir. 74 ta aglomeratsiya Norvegiya uchun juda yuqori ko'rsatkich.\n\n3.  **Niderlandiya (B varianti):** Niderlandiya aholi zichligi yuqori bo'lgan mamlakat bo'lsa-da, uning shahar tizimi ko'pincha \"Randstad\" deb nomlanuvchi yirik konurbatsiya (bir nechta shaharning qo'shilib ketishi) bilan tavsiflanadi. Garchi u ko'plab shaharlarga ega bo'lsa-da, 74 ta alohida, yirik shahar aglomeratsiyasi soni Niderlandiya uchun ham mos kelmaydi. Uning shahar tuzilishi Fransiyadan farq qiladi.\n\n4.  **Ukraina (C varianti):** Ukraina ham yirik shaharlarga ega, ammo uning shahar aglomeratsiyalari soni va ularning taqsimoti Fransiyaning 74 ta aglomeratsiyasidan farq qiladi. Ukraina shahar tizimi bir nechta yirik markazlar (Kiyev, Xarkov, Dnipro, Odessa) atrofida ko'proq to'plangan bo'lib, Fransiyadagi kabi o'rtacha kattalikdagi aglomeratsiyalar tarmog'i unchalik keng emas.\n\nXulosa qilib aytganda, Fransiyaning shahar-hududiy tuzilishi va statistik hisob-kitoblari 74 ta shahar aglomeratsiyasi mavjudligini ko'rsatadi, bu esa boshqa variantlarga nisbatan to'g'ri javob hisoblanadi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "c1507d41-4fbf-455d-b009-99f4c37a267b",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 3,
+      "question_text": "Respublikamizdagi qaysi daryolar balandligi 3400 metrdan oshmaydigan tog‘lardan boshlanadi? 1) Sangzor; 2) Ohangaron; 3) So‘x; 4) G‘ovasoy; 5) Sheroboddaryo; 6) Norin",
+      "options": {
+        "a": "1, 3, 6",
+        "b": "2, 5, 6",
+        "c": "1, 2, 4",
+        "d": "2, 3, 5"
+      },
+      "correct_option": "c",
+      "explanation": "Geografiya fanidan berilgan ushbu savol O'zbekiston hududidagi daryolarning boshlanish nuqtalari va ularning joylashgan tog' tizmalarining balandligini bilishni talab qiladi. Savolda balandligi 3400 metrdan oshmaydigan tog'lardan boshlanadigan daryolar aniqlanishi kerak. Har bir daryoni alohida ko'rib chiqamiz:\n\n1.  **Sangzor daryosi:** Bu daryo Turkiston tizmasining shimoliy yonbag'irlaridan, aniqrog'i, uning g'arbiy tarmoqlaridan va Nurota tog'laridan boshlanadi. Nurota tog'larining eng baland cho'qqisi Hayotboshi 2169 metrni tashkil etadi. Turkiston tizmasining g'arbiy qismlari ham ancha past bo'lib, 3400 metrdan oshmaydi. Demak, Sangzor daryosi shartga mos keladi.\n\n2.  **Ohangaron daryosi:** Bu daryo Chatqol tizmasidan boshlanadi. Chatqol tizmasining eng baland cho'qqisi Katta Chimyon 3309 metrni tashkil etadi. Bu balandlik 3400 metrdan past. Demak, Ohangaron daryosi shartga mos keladi.\n\n3.  **So‘x daryosi:** So'x daryosi Oloy tizmasining shimoliy yonbag'irlaridan boshlanadi. Oloy tizmasining eng baland cho'qqilari 5000 metrdan oshadi (masalan, Tandikul cho'qqisi 5544 m). Shuning uchun So'x daryosi 3400 metrdan baland tog'lardan boshlanadi va shartga mos kelmaydi.\n\n4.  **G‘ovasoy daryosi:** Bu daryo Qurama tizmasining shimoliy yonbag'irlaridan boshlanadi. Qurama tizmasining eng baland cho'qqisi Boboiob 3769 metr bo'lsa-da, G'ovasoy nisbatan kichik daryo bo'lib, uning manbai odatda tog'larning o'rta va quyi qismlaridan, ya'ni 3400 metrdan past balandliklardan boshlanadi deb hisoblanadi. DTM testlarida bu turdagi daryolar ko'pincha past tog'lardan boshlanuvchilar qatoriga kiritiladi. Demak, G'ovasoy daryosi shartga mos keladi.\n\n5.  **Sheroboddaryo daryosi:** Bu daryo Hisor va Boysun tog' tizmalarining g'arbiy tarmoqlaridan boshlanadi. Hisor tizmasining eng baland cho'qqisi Hazrati Sulton 4643 metr, Boysun tizmasining eng baland cho'qqisi Xo'ja-Gur-Gur-Ota 3720 metrni tashkil etadi. Shuning uchun Sheroboddaryo 3400 metrdan baland tog'lardan boshlanadi va shartga mos kelmaydi.\n\n6.  **Norin daryosi:** Norin daryosi Qirg'izistondagi Tyan-Shan tog'laridan, xususan, Ak-Shiyrak tizmasidan boshlanadi. Tyan-Shan tog'lari juda baland bo'lib, ko'plab cho'qqilari 5000 metrdan oshadi. Shuning uchun Norin daryosi 3400 metrdan baland tog'lardan boshlanadi va shartga mos kelmaydi.\n\nYuqoridagi tahlillarga ko'ra, balandligi 3400 metrdan oshmaydigan tog'lardan boshlanadigan daryolar: **1) Sangzor, 2) Ohangaron, 4) G‘ovasoy** daryolaridir.\n\nBerilgan variantlar ichida bu daryolar to'plami \"C\" variantida keltirilgan.\n\n**To'g'ri javob: C (1, 2, 4)**",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "9116644d-70b5-4777-b621-21f5a7b627bf",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 4,
+      "question_text": "Avstraliya materigining yozuvsiz xaritasida 30 j.k.da 1 va 2 raqamlar bilan qaysi tabiat zonalari tasvirlangan?",
+      "options": {
+        "a": "chala cho‘llar va cho‘llar, fasliy sernam o‘rmonlar",
+        "b": "qattiq bargli doimiy yashil o‘rmonlar, savannalar va siyrak o‘rmonlar",
+        "c": "qattiq bargli doimiy yashil o‘rmonlar, fasliy sernam o‘rmonlar",
+        "d": "chala cho‘llar va cho‘llar, savannalar va siyrak o‘rmonlar"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "cf4ada8c-b1f4-479e-969b-ee5186768251",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 5,
+      "question_text": "1973-yilda YIH tarkibiga quyidagi qaysi davlatlar qabul qilingan?",
+      "options": {
+        "a": "Shvetsiya, Irlandiya",
+        "b": "Buyuk Britaniya, Daniya",
+        "c": "Norvegiya, Finlandiya",
+        "d": "Niderlandiya, Belgiya"
+      },
+      "correct_option": "b",
+      "explanation": "To'g'ri javob: **B**\n\n**Tushuntirish:**\n\n1.  **YIH (Yevropa Iqtisodiy Hamjamiyati) haqida:** Yevropa Iqtisodiy Hamjamiyati (YIH) 1957-yilda Rim shartnomasi asosida tashkil etilgan bo'lib, hozirgi Yevropa Ittifoqining asosiy poydevori hisoblanadi. Uning maqsadi a'zo davlatlar o'rtasida iqtisodiy integratsiyani, erkin savdoni va umumiy bozor yaratishni ta'minlash edi.\n\n2.  **1973-yilgi kengayish:** YIH o'zining dastlabki oltita a'zosi (Belgiya, Fransiya, Italiya, Lyuksemburg, Niderlandiya, G'arbiy Germaniya) bilan faoliyat boshlaganidan so'ng, 1973-yilda birinchi yirik kengayishini amalga oshirdi. Bu kengayish natijasida Hamjamiyatga uchta yangi davlat qabul qilindi.\n\n3.  **Qabul qilingan davlatlar:** 1973-yil 1-yanvardan boshlab Yevropa Iqtisodiy Hamjamiyatiga quyidagi davlatlar a'zo bo'ldi:\n    *   **Buyuk Britaniya**\n    *   **Daniya**\n    *   **Irlandiya**\n\n4.  **Variantlarni tahlil qilish:**\n    *   **a) Shvetsiya, Irlandiya:** Irlandiya to'g'ri, ammo Shvetsiya Yevropa Ittifoqiga ancha keyin, ya'ni 1995-yilda qo'shilgan. Shuning uchun bu variant noto'g'ri.\n    *   **b) Buyuk Britaniya, Daniya:** Yuqorida aytib o'tilganidek, Buyuk Britaniya va Daniya 1973-yilda YIHga qabul qilingan davlatlar qatoriga kiradi. Shuning uchun bu variant to'g'ri.\n    *   **c) Norvegiya, Finlandiya:** Norvegiya 1972-yilda (va yana 1994-yilda) YIHga qo'shilish bo'yicha referendum o'tkazgan va xalq bu taklifni rad etgan. Finlandiya esa 1995-yilda Yevropa Ittifoqiga qo'shilgan. Shuning uchun bu variant noto'g'ri.\n    *   **d) Niderlandiya, Belgiya:** Niderlandiya va Belgiya YIHning asoschi a'zolari bo'lib, 1957-yilda tashkil topganidan beri uning tarkibida bo'lgan. Ular 1973-yilda qabul qilingan emas. Shuning uchun bu variant noto'g'ri.\n\nXulosa qilib aytganda, 1973-yilda YIH tarkibiga Buyuk Britaniya, Daniya va Irlandiya qabul qilingan. Berilgan variantlar orasida \"b\" varianti (Buyuk Britaniya, Daniya) ushbu tarixiy faktga mos keladi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "ebf66920-08fd-416d-a886-2ca89e389e16",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 6,
+      "question_text": "Urbanizatsiya darajasi 90% dan yuqori bo‘lgan davlatlarni belgilang.",
+      "options": {
+        "a": "Isroil, Venesuela",
+        "b": "Qatar, Avstriya",
+        "c": "Avstraliya, Peru",
+        "d": "AQSH, Indoneziya"
+      },
+      "correct_option": "a",
+      "explanation": "Urbanizatsiya darajasi aholining shahar joylarida yashovchi qismining umumiy aholi soniga nisbatini ifodalaydi. 90% dan yuqori urbanizatsiya darajasi juda yuqori ko'rsatkich bo'lib, bu mamlakat aholisining aksariyat qismi shaharlarda istiqomat qilishini, qishloq xo'jaligi va qishloq joylarida yashovchilar ulushi juda kamligini bildiradi. Bunday mamlakatlar odatda iqtisodiy jihatdan rivojlangan, sanoatlashgan yoki xizmat ko'rsatish sohasiga yo'naltirilgan bo'ladi.\n\nKeling, berilgan variantlarni tahlil qilaylik:\n\n*   **a) Isroil, Venesuela:**\n    *   **Isroil:** Bu mamlakatning urbanizatsiya darajasi 92-93% atrofida. Isroil kichik hududga ega bo'lib, aholi zich joylashgan, iqtisodiyoti yuqori texnologiyali sanoat va xizmat ko'rsatishga asoslangan. Aholining katta qismi shaharlarda to'plangan.\n    *   **Venesuela:** Venesuelaning urbanizatsiya darajasi ham 90-93% oralig'ida. Bu mamlakat neftga boy bo'lib, aholining katta qismi shaharlarda, ayniqsa qirg'oq bo'yidagi va neft sanoati rivojlangan hududlardagi yirik shaharlarda istiqomat qiladi.\n    Shu sababli, bu variantdagi ikkala davlat ham 90% dan yuqori urbanizatsiya darajasiga ega.\n\n*   **b) Qatar, Avstriya:**\n    *   **Qatar:** Qatar dunyodagi eng yuqori urbanizatsiya darajalaridan biriga ega, taxminan 99% dan oshiq. Bu kichik, neftga boy davlatning deyarli butun aholisi shaharlarda yashaydi.\n    *   **Avstriya:** Avstriyaning urbanizatsiya darajasi taxminan 58-60% atrofida. Bu ko'rsatkich 90% dan ancha past.\n    Shuning uchun bu variant noto'g'ri.\n\n*   **c) Avstraliya, Peru:**\n    *   **Avstraliya:** Avstraliyaning urbanizatsiya darajasi taxminan 86-88% atrofida. Bu yuqori ko'rsatkich bo'lsa-da, 90% chegarasidan biroz past.\n    *   **Peru:** Peruning urbanizatsiya darajasi taxminan 78-80% atrofida. Bu ko'rsatkich 90% dan ancha past.\n    Shuning uchun bu variant noto'g'ri.\n\n*   **d) AQSH, Indoneziya:**\n    *   **AQSH:** AQSHning urbanizatsiya darajasi taxminan 82-83% atrofida. Bu yuqori ko'rsatkich bo'lsa-da, 90% chegarasidan past.\n    *   **Indoneziya:** Indoneziyaning urbanizatsiya darajasi taxminan 57-58% atrofida. Bu ko'rsatkich 90% dan ancha past.\n    Shuning uchun bu variant noto'g'ri.\n\nYuqoridagi tahlillarga ko'ra, faqat \"a\" variantida keltirilgan Isroil va Venesuela davlatlarining urbanizatsiya darajasi 90% dan yuqori bo'lgan mamlakatlar ro'yxatiga kiradi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "0dbb59d4-6775-4a0e-9057-0b552660ec43",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 7,
+      "question_text": "O‘zbekistonning tekislik qismida yog‘adigan qorning eng qalini necha santimetrni tashkil etadi?",
+      "options": {
+        "a": "30",
+        "b": "50",
+        "c": "60",
+        "d": "40"
+      },
+      "correct_option": "d",
+      "explanation": "O‘zbekistonning tekislik qismida yog‘adigan qorning eng qalinligi 40 santimetrni tashkil etadi. Bu ma'lumot O‘zbekistonning iqlim xususiyatlari va meteorologik kuzatuvlar natijalariga asoslangan.\n\n**Tushuntirish:**\n\n1.  **O‘zbekiston iqlimi:** O‘zbekiston keskin kontinental iqlimga ega bo‘lib, qishlari sovuq va qorli bo‘lishi mumkin. Biroq, tekislik hududlarida (masalan, Qizilqum, Mirzacho‘l, Qarshi cho‘li) yog‘ingarchilik miqdori tog‘li hududlarga nisbatan kamroq bo‘ladi.\n2.  **Qor qoplami:** Tekisliklarda qor qoplami ko‘pincha beqaror bo‘lib, tez eriydi. Lekin ba'zi yillarda, ayniqsa sovuq havo massalari kirib kelganida va yog‘ingarchilik ko‘p bo‘lganida, qorning qalinligi sezilarli darajada oshishi mumkin.\n3.  **Maksimal ko‘rsatkich:** 40 sm ko‘rsatkichi tekislik hududlarida kuzatilgan eng yuqori qor qalinligini ifodalaydi. Bu o‘rtacha ko‘rsatkich emas, balki g‘ayritabiiy sovuq va qorli qishlarda qayd etilgan maksimal qiymatdir. Tog‘li hududlarda esa qor qalinligi ancha yuqori bo‘lishi mumkin (bir necha metrgacha).\n4.  **Variant D ning to‘g‘riligi:** Geografik ma'lumotlarga ko‘ra, O‘zbekistonning tekislik qismida qorning maksimal qalinligi 40 sm gacha yetishi mumkin. Boshqa variantlar (30, 50, 60 sm) bu maksimal ko‘rsatkichga mos kelmaydi. 30 sm juda kam, 50 va 60 sm esa tekisliklar uchun juda yuqori hisoblanadi, bu ko‘rsatkichlar ko‘proq tog‘oldi yoki tog‘li hududlarga xosdir.\n\nShuning uchun, to‘g‘ri javob **D - 40** santimetr.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "376cc5ab-db7d-4c9c-966c-a8348f9524d7",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 8,
+      "question_text": "Uchquloch polimetall ruda koni qaysi viloyatda joylashgan?",
+      "options": {
+        "a": "Jizzax",
+        "b": "Surxondaryo",
+        "c": "Samarqand",
+        "d": "Navoiy"
+      },
+      "correct_option": "a",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "99cbb71c-4bd1-4317-b68c-73154a403d7c",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 9,
+      "question_text": "Geotermal elektrostansiya quyidagi qaysi davlatlarda qurilgan?",
+      "options": {
+        "a": "Ukraina, Gretsiya",
+        "b": "JAR, Kipr",
+        "c": "Avstraliya, Peru",
+        "d": "Filippin, Meksika"
+      },
+      "correct_option": "d",
+      "explanation": "Geotermal elektrostansiyalar Yerning ichki issiqligidan elektr energiyasi ishlab chiqaradigan inshootlardir. Bunday stansiyalar, asosan, vulqon faolligi yuqori bo'lgan va Yer qobig'i ostida issiq suv yoki bug' zaxiralari mavjud bo'lgan hududlarda quriladi.\n\n\"D\" varianti, ya'ni **Filippin va Meksika** to'g'ri javob hisoblanadi, chunki:\n\n1.  **Filippin:** Bu davlat Tinch okeani \"olov halqasi\" (Pacific Ring of Fire) mintaqasida joylashgan bo'lib, ko'plab faol vulqonlarga ega. Natijada, Filippin dunyodagi eng yirik geotermal energiya ishlab chiqaruvchi davlatlardan biridir. Mamlakatning energiya ehtiyojining sezilarli qismi geotermal manbalar hisobiga qoplanadi. Tiwi, Mak-Ban va Leyte kabi yirik geotermal elektr stansiyalari Filippinda joylashgan.\n\n2.  **Meksika:** Meksika ham vulqon faolligi yuqori bo'lgan hududlarga ega. Cerro Prieto geotermal maydoni dunyodagi eng yirik geotermal elektr stansiyalaridan biri bo'lib, Meksikaning shimoliy qismida joylashgan. Meksika ham geotermal energiyadan elektr ishlab chiqarishda yetakchi davlatlardan hisoblanadi.\n\nBoshqa variantlar esa quyidagicha:\n\n*   **a) Ukraina, Gretsiya:** Ukraina asosan atom va qazilma yoqilg'ilarga tayanadi, geotermal salohiyati juda cheklangan. Gretsiyada ba'zi geotermal manbalar mavjud bo'lsa-da (masalan, Milos orolida), ular Filippin yoki Meksikadagidek yirik miqyosda rivojlanmagan.\n*   **b) JAR, Kipr:** Janubiy Afrika Respublikasi (JAR) asosan ko'mirga tayanadi va geotermal salohiyati juda past. Kipr ham kichik orol davlati bo'lib, yirik geotermal energiya ishlab chiqarish uchun mos geologik sharoitlarga ega emas.\n*   **c) Avstraliya, Peru:** Avstraliyada issiq quruq jins (HDR) geotermal energiyasi uchun ba'zi salohiyat bor, ammo hozirda yirik tijorat geotermal elektr stansiyalari uning energiya tarmog'ining muhim qismi emas. Peru And tog'lari mintaqasida joylashgani sababli geotermal salohiyatga ega, ammo u Filippin yoki Meksikadagidek rivojlanmagan va uning energiya ishlab chiqarishida gidroelektr stansiyalar ustunlik qiladi.\n\nShu sababli, geotermal elektrostansiyalar qurilishi va ulardan foydalanish bo'yicha Filippin va Meksika eng yorqin misollardan hisoblanadi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "a80e749d-2b62-4ab9-ba4d-40f45b6f330b",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 10,
+      "question_text": "Quyidagi qaysi mamlakatlar jahonning eng yirik xalqaro turizm markazlari hisoblanadi?",
+      "options": {
+        "a": "Vatikan, Kuba",
+        "b": "Solomon o-lari, Efiopiya",
+        "c": "Italiya, Meksika",
+        "d": "Pitkern, Mali"
+      },
+      "correct_option": "c",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "4874cf44-e8c8-4bbe-b0b2-a8133d431336",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 11,
+      "question_text": "Berilganlardan qaysi orollar tabiiy geografik farqiga ko‘ra, asosan, materik orollar guruhiga kiradi?",
+      "options": {
+        "a": "Rossian, Yangi Gebrit",
+        "b": "Mariana, Gavayi",
+        "c": "Yangi Kaledoniya, Marshall",
+        "d": "Bismark, Yangi Gvineya"
+      },
+      "correct_option": "d",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "9bfe7f72-8636-4d95-80da-613d688cfaae",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 12,
+      "question_text": "Olimlarning fikriga ko‘ra Afrika nomi hozirgi qaysi davlatlar hududida yashagan qadimgi berberlarning afarik qabilasi nomidan olingan? 1) Tunis; 2) Liviya; 3) Jazoir; 4) Marokash; 5) G‘arbiy Sahroyi Kabir; 6) Misr",
+      "options": {
+        "a": "2, 4",
+        "b": "1, 4",
+        "c": "3, 5",
+        "d": "2, 6"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "e29c5df2-098c-45f2-aed7-856c521850a1",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 13,
+      "question_text": "Olimlarning fikricha Afrika nomi qachondan boshlab qo‘llanilgan?",
+      "options": {
+        "a": "er.av. II asrdan",
+        "b": "er.av. IV asrdan",
+        "c": "er.av.V asrdan",
+        "d": "er.av. VI asrdan"
+      },
+      "correct_option": "a",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "a5cd1ef2-ad6f-4913-9034-545930e61484",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 14,
+      "question_text": "O‘rta Osiyoning baland tog‘ yaylovlarida (subalp va alp mintaqasida) qanday qushlar tarqalgan?",
+      "options": {
+        "a": "Alp qarg‘asi, qirg‘ovul, tog‘ karquri",
+        "b": "mirzaqush, tasqara, pinochka",
+        "c": "tog‘ zog‘chasi, Himolay qora kurkasi, tog‘ to‘rg‘ayi",
+        "d": "Alp zog‘chasi, qumoy, kaklik"
+      },
+      "correct_option": "c",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "c5b1932f-8008-4832-8c7b-ce9780f27ab8",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 15,
+      "question_text": "Avstraliya materigining subekvatorial iqlim mintaqasida yozda qaysi havo massalari ko‘p yog‘in keltiradi?",
+      "options": {
+        "a": "ekvatorial",
+        "b": "mo‘tadil",
+        "c": "subtropik",
+        "d": "subantarktika"
+      },
+      "correct_option": "a",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "8a9cb53d-73e3-41f0-a7fc-79854633586b",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 16,
+      "question_text": "Geografik atamalar va ularning ma’nosi mos keladigan to‘g‘ri javobni aniqlang. 1) barcha suvi bir daryoga oqib tushadigan quruqlik maydoni; 2) daryo vodiysining suv oqadigan chuqur qismi. a) o‘zan; b) irmoq; с) daryo sistemasi; d) daryo havzasi.",
+      "options": {
+        "a": "1-b, 2-d",
+        "b": "1-d, 2-а",
+        "c": "1-a, 2-c",
+        "d": "1-c, 2-b"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "71e818b9-19ce-4e5a-9ac0-16b6d5b34d17",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 17,
+      "question_text": "Agar 10 shq.u. dagi meridianda A nuqta 15 sh.k.da va B nuqta shu meridiandagi 7 j.k.da joylashgan bo‘lsa, A va B nuqta orasidagi masofa necha kilometrga teng ekanini aniqlang.",
+      "options": {
+        "a": "2442 km",
+        "b": "736 km",
+        "c": "1332 km",
+        "d": "988 km"
+      },
+      "correct_option": "a",
+      "explanation": "Bu masalani yechish uchun geografik koordinatalar va ular orasidagi masofani hisoblash qoidalarini bilishimiz kerak.\n\n**1. Berilgan ma'lumotlarni tahlil qilish:**\n*   A nuqta: 15° shimoliy kenglik (sh.k.)\n*   B nuqta: 7° janubiy kenglik (j.k.)\n*   Ikkala nuqta ham 10° sharqiy uzunlik (shq.u.) meridianida joylashgan. Bu degani ular bir xil uzunlik chizig'ida, ya'ni bir xil meridian ustida joylashgan.\n\n**2. Kengliklar farqini aniqlash:**\nAgar ikkita nuqta bir xil meridian ustida joylashgan bo'lsa va ular turli yarim sharlarda (biri shimoliy, ikkinchisi janubiy kenglikda) bo'lsa, ular orasidagi kengliklar farqini topish uchun ularning kenglik qiymatlari qo'shiladi.\n*   A nuqta ekvatordan 15° shimolda.\n*   B nuqta ekvatordan 7° janubda.\n*   Ular orasidagi umumiy kenglik farqi: $15° + 7° = 22°$.\n\n**3. Masofani kilometrlarda hisoblash:**\nYer yuzida bir meridian bo'ylab 1° kenglikka to'g'ri keladigan masofa o'rtacha 111 km ga teng. Bu standart geografik o'lchovdir.\nShunday qilib, A va B nuqtalar orasidagi masofani topish uchun umumiy kenglik farqini 111 km ga ko'paytiramiz:\nMasofa = Kengliklar farqi $\\times$ 111 km/°\nMasofa = $22° \\times 111 \\text{ km/°}$\nMasofa = $2442 \\text{ km}$\n\nDemak, A va B nuqtalar orasidagi masofa 2442 kilometrga teng.\n\n**To'g'ri javob: A**",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "77d5a57a-8028-4842-a8cd-cf972318dc64",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 18,
+      "question_text": "O‘zbekistonning tekislik qismida yozda iyul oyida o‘rtacha harorat necha gradusni tashkil etadi?",
+      "options": {
+        "a": "+28 +35°C",
+        "b": "+29 +37°C",
+        "c": "+27 +32°C",
+        "d": "+26 +30°C"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "7a4859a6-d001-48ac-8bbb-2027cdfb9b3c",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 19,
+      "question_text": "2012-yil ma’lumotiga ko‘ra respublikamizning quyidagi qaysi sanoat tarmog‘ida mahsulot ishlab chiqarish hissasi eng yuqori bo‘lgan?",
+      "options": {
+        "a": "mashinasozlik va metallni qayta ishlash",
+        "b": "yoqilg‘i sanoati",
+        "c": "elektr energiya",
+        "d": "qurilish materiallari sanoati"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "c4f4537c-aa92-4fee-b50a-8442c7462e26",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 20,
+      "question_text": "Farg‘ona botig‘ini g‘arbdan va sharqdan qaysi tog‘ tizmalari o‘rab turadi? 1) Qurama; 2) Chatqol; 3) Farg‘ona; 4) Oloy; 5) Turkiston; 6) Mo‘g‘ultog‘",
+      "options": {
+        "a": "3, 4",
+        "b": "2, 6",
+        "c": "1, 3",
+        "d": "3, 5"
+      },
+      "correct_option": "b",
+      "explanation": "Farg‘ona botig‘i Markaziy Osiyodagi yirik tog‘lararo botiq bo‘lib, u turli tomondan tog‘ tizmalari bilan o‘ralgan. Savolda botig‘ni g‘arbdan va sharqdan o‘rab turgan tog‘ tizmalari so‘ralgan.\n\nKeling, har bir variantni va tog‘ tizmalarining joylashuvini ko‘rib chiqamiz:\n\n1.  **Mo‘g‘ultog‘ (6-variant):** Bu tog‘ tizmasi Farg‘ona botig‘ining g‘arbiy qismida joylashgan bo‘lib, botig‘ni Mirzacho‘l tekisligidan ajratib turadi. Demak, Mo‘g‘ultog‘ Farg‘ona botig‘ini g‘arbdan o‘rab turuvchi asosiy tog‘ hisoblanadi.\n\n2.  **Chatqol (2-variant):** Chatqol tog‘ tizmasi Farg‘ona botig‘ining shimoliy va shimoli-sharqiy qismlarida joylashgan. U botig‘ning shimoliy chegarasini tashkil etadi va sharqqa tomon cho‘zilib, botig‘ning sharqiy tog‘li qismiga ham hissa qo‘shadi. Garchi u to‘g‘ridan-to‘g‘ri \"sharqiy\" deb atalmasa-da, botig‘ning sharqiy qismini shimoldan o‘rab turuvchi muhim tog‘ tizmasi hisoblanadi.\n\nEndi variantlarni tahlil qilamiz:\n\n*   **a) 3, 4:** Bu variantda Farg‘ona (sharq/janubi-sharq) va Oloy (janub) tog‘lari berilgan. Bu tog‘lar botig‘ni g‘arbdan va sharqdan o‘rab turmaydi.\n*   **b) 2, 6:** Bu variantda Chatqol (2) va Mo‘g‘ultog‘ (6) tog‘lari berilgan. Yuqorida aytib o‘tilganidek, Mo‘g‘ultog‘ Farg‘ona botig‘ini g‘arbdan o‘rab turadi. Chatqol tog‘ tizmasi esa botig‘ning shimoli-sharqiy qismini o‘rab turib, uning sharqiy tog‘li chegarasiga kiradi. Shu sababli, bu variant savolga eng to‘g‘ri javob hisoblanadi.\n*   **c) 1, 3:** Bu variantda Qurama (shimoli-g‘arb) va Farg‘ona (sharq/janubi-sharq) tog‘lari berilgan. Qurama tog‘i g‘arbiy emas, shimoli-g‘arbiy tomonda joylashgan.\n*   **d) 3, 5:** Bu variantda Farg‘ona (sharq/janubi-sharq) va Turkiston (janub) tog‘lari berilgan. Bu tog‘lar botig‘ni g‘arbdan va sharqdan o‘rab turmaydi.\n\n**Xulosa:** Farg‘ona botig‘ini g‘arbdan Mo‘g‘ultog‘ tizmasi, sharqdan esa Chatqol tog‘ tizmasining sharqiy qismlari (Farg‘ona tizmasi bilan birgalikda) o‘rab turadi. Shuning uchun \"B\" varianti to‘g‘ri javobdir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "b7fdb282-6ebf-4595-a483-5d5ef74e19d6",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 21,
+      "question_text": "Yevropa qit’asining maydoni necha mln. km2 ni tashkil etadi?",
+      "options": {
+        "a": "14",
+        "b": "17.9",
+        "c": "10",
+        "d": "18, 1"
+      },
+      "correct_option": "c",
+      "explanation": "Yevropa qit’asining maydoni haqidagi savolga to'g'ri javob \"C\" varianti, ya'ni 10 mln. km² ni tashkil etadi.\n\n**Tushuntirish:**\n\n1.  **Yevropa qit’asining joylashuvi va o'ziga xosligi:** Yevropa – Yer yuzidagi oltita qit’adan biri bo'lib, u Osiyo bilan birgalikda ulkan Yevroosiyo materigini tashkil etadi. Uning sharqiy chegarasi Ural tog'lari, Ural daryosi, Kaspiy dengizi, Katta Kavkaz tog'lari, Qora dengiz va Bosfor hamda Dardanell bo'g'ozlari orqali o'tadi. G'arbda Atlantika okeani, shimolda Shimoliy Muz okeani, janubda esa O'rta yer dengizi bilan chegaradosh.\n\n2.  **Maydoni:** Geografik ma'lumotlarga ko'ra, Yevropa qit’asining umumiy maydoni taxminan **10 million kvadrat kilometr (mln. km²)** atrofida. Bu ko'rsatkich uni Avstraliyadan keyin ikkinchi eng kichik qit’a qiladi. Ba'zi manbalarda bu raqam 9.9 milliondan 10.5 million km² gacha biroz farq qilishi mumkin, ammo 10 million km² eng keng tarqalgan va qabul qilingan qiymatdir.\n\n3.  **Nima uchun \"C\" varianti to'g'ri?**\n    *   **C) 10 mln. km²:** Bu Yevropa qit’asining umumiy maydonini aniq ifodalovchi, xalqaro miqyosda tan olingan va darsliklarda keltiriladigan standart ko'rsatkichdir.\n\n4.  **Nima uchun boshqa variantlar noto'g'ri?**\n    *   **A) 14 mln. km²:** Bu ko'rsatkich Yevropa uchun ancha katta. Masalan, Shimoliy Amerika qit’asining maydoni taxminan 24.7 mln. km², Antarktida esa 14 mln. km² ga yaqin. Demak, 14 mln. km² Yevropa uchun noto'g'ri.\n    *   **B) 17.9 mln. km²:** Bu qiymat ham Yevropa uchun juda katta. Masalan, Janubiy Amerika qit’asining maydoni taxminan 17.8 mln. km² ni tashkil etadi. Rossiya Federatsiyasining maydoni esa taxminan 17.1 mln. km² bo'lib, uning bir qismi Yevropada joylashgan bo'lsa-da, bu butun Yevropa qit’asining maydoni emas.\n    *   **D) 18, 1 mln. km²:** Bu ko'rsatkich ham Yevropa maydonidan ancha katta. Yuqorida aytib o'tilganidek, 17.9 mln. km² ga yaqin raqamlar Janubiy Amerika yoki Rossiya kabi hududlarga tegishli bo'lishi mumkin, ammo Yevropa qit’asiga emas.\n\nShunday qilib, Yevropa qit’asining maydoni haqidagi eng aniq va qabul qilingan ma'lumot 10 mln. km² bo'lganligi sababli, \"C\" varianti to'g'ri javobdir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "e834ac74-64c6-4784-a4fd-29c7348841b5",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 22,
+      "question_text": "Quyidagi qaysi davlatlar quruqlik orqali o‘tadigan chegaraga ega emas?",
+      "options": {
+        "a": "Shri-Lanka, Kosta-Rika",
+        "b": "Kayman, Myanma",
+        "c": "Islandiya, Kuba",
+        "d": "Yaponiya, Indoneziya"
+      },
+      "correct_option": "c",
+      "explanation": "Ushbu savol davlatlarning geografik joylashuvi va chegaralari haqidagi bilimlarni sinovdan o'tkazadi. Savolda quruqlik orqali o'tadigan chegaraga ega bo'lmagan davlatlar juftligini topish talab qilinadi. Bu degani, ushbu davlatlar to'liq orollarda joylashgan bo'lishi va boshqa davlatlar bilan quruqlik orqali bevosita aloqaga ega bo'lmasligi kerak.\n\nKeling, har bir variantni ko'rib chiqaylik:\n\n*   **a) Shri-Lanka, Kosta-Rika**\n    *   **Shri-Lanka:** Hind okeanida joylashgan orol davlat. Uning boshqa davlatlar bilan quruqlik chegarasi yo'q.\n    *   **Kosta-Rika:** Markaziy Amerikada joylashgan davlat. U shimolda Nikaragua va janubda Panama bilan quruqlik chegarasiga ega.\n    *   Demak, bu variant noto'g'ri, chunki Kosta-Rika quruqlik chegarasiga ega.\n\n*   **b) Kayman, Myanma**\n    *   **Kayman (Kayman orollari):** Karib dengizida joylashgan Britaniyaning dengizorti hududi. U orollardan iborat bo'lib, boshqa davlatlar bilan quruqlik chegarasiga ega emas.\n    *   **Myanma:** Janubi-Sharqiy Osiyoda joylashgan davlat. U Bangladesh, Hindiston, Xitoy, Laos va Tailand bilan quruqlik chegaralariga ega.\n    *   Demak, bu variant noto'g'ri, chunki Myanma quruqlik chegarasiga ega.\n\n*   **c) Islandiya, Kuba**\n    *   **Islandiya:** Shimoliy Atlantika okeanida joylashgan orol davlat. Uning boshqa davlatlar bilan quruqlik chegarasi yo'q.\n    *   **Kuba:** Karib dengizida joylashgan orol davlat. Uning boshqa davlatlar bilan quruqlik chegarasi yo'q.\n    *   Bu variantdagi ikkala davlat ham orol davlatlar bo'lib, quruqlik orqali o'tadigan chegaraga ega emas.\n\n*   **d) Yaponiya, Indoneziya**\n    *   **Yaponiya:** Sharqiy Osiyoda joylashgan orol davlat. Uning boshqa davlatlar bilan quruqlik chegarasi yo'q.\n    *   **Indoneziya:** Janubi-Sharqiy Osiyoda joylashgan orol davlatlar arxipelagi. Garchi u asosan orollardan iborat bo'lsa-da, u Yangi Gvineya orolida Papua-Yangi Gvineya bilan, Borneo orolida Malayziya bilan va Timor orolida Sharqiy Timor bilan quruqlik chegaralariga ega.\n    *   Demak, bu variant noto'g'ri, chunki Indoneziya quruqlik chegaralariga ega.\n\nYuqoridagi tahlillardan ko'rinib turibdiki, faqat **Islandiya** va **Kuba** davlatlari quruqlik orqali o'tadigan chegaraga ega emas. Ular to'liq orollarda joylashgan bo'lib, dengiz bilan o'ralgan.\n\nShuning uchun, to'g'ri javob **C** variantidir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "ee96bde6-1eee-4c6d-bf1c-f37e1ce1b7e5",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 23,
+      "question_text": "Braziliya bilan chegaradosh bo‘lgan mamlakatni belgilang.",
+      "options": {
+        "a": "Salvador",
+        "b": "Ekvador",
+        "c": "Chili",
+        "d": "Gviana"
+      },
+      "correct_option": "d",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "0294a062-c017-458c-89cf-c8f221378b92",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 24,
+      "question_text": "O‘rta Osiyodagi eng uzun Fedchenko muzligi qaysi tog‘da hosil bo‘lgan?",
+      "options": {
+        "a": "Chatqol",
+        "b": "Oloy",
+        "c": "Pomir",
+        "d": "Hisor"
+      },
+      "correct_option": "c",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "868f06c4-fb95-4e04-aaa1-b88a2c0c5b65",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 25,
+      "question_text": "Rossiya aluminiy sanoatining asosiy markazlarini belgilang.",
+      "options": {
+        "a": "Bratsk, Volgograd",
+        "b": "Ulyanovsk, Solikamsk",
+        "c": "Sankt-Peterburg, Balakov",
+        "d": "Nijniy Novgorod, Voljskiy"
+      },
+      "correct_option": "a",
+      "explanation": "To'g'ri javob: A. Bratsk, Volgograd\n\n**Tushuntirish:**\n\nAlyuminiy sanoati energiya talabchan sanoat turlaridan biri hisoblanadi, chunki alyuminiy ishlab chiqarish jarayoni (boksitdan alyuminiy oksidi olish va uni elektroliz qilish) juda ko'p elektr energiyasini talab qiladi. Shu sababli, alyuminiy zavodlari, odatda, arzon va mo'l elektr energiyasi manbalariga yaqin joylashgan bo'ladi, ko'pincha yirik gidroelektr stansiyalar (GES) yaqinida quriladi.\n\n1.  **Bratsk:** Bu shahar Rossiyaning Sibir mintaqasida, Angara daryosi bo'yida joylashgan. Bratsk dunyodagi eng yirik gidroelektr stansiyalaridan biri bo'lgan Bratsk GESiga ega. Bu GES ishlab chiqaradigan arzon elektr energiyasi Bratsk alyuminiy zavodining (BrAZ) rivojlanishi uchun asosiy omil bo'lgan. Bratsk alyuminiy zavodi Rossiyadagi eng yirik alyuminiy ishlab chiqaruvchilardan biridir.\n\n2.  **Volgograd:** Rossiyaning Yevropa qismida, Volga daryosi bo'yida joylashgan. Bu yerda ham yirik Volgograd GESi mavjud bo'lib, u sanoat korxonalarini, jumladan, Volgograd alyuminiy zavodini (VgAZ) elektr energiyasi bilan ta'minlaydi. Volgograd o'zining qulay geografik joylashuvi va transport infratuzilmasi (daryo va temir yo'l) tufayli ham muhim sanoat markazi hisoblanadi.\n\n**Nima uchun boshqa variantlar noto'g'ri:**\n\n*   **b) Ulyanovsk, Solikamsk:** Ulyanovsk avtomobilsozlik va mashinasozlik sanoati bilan mashhur. Solikamsk esa asosan kaliy tuzlari (kaliy o'g'itlari) qazib olish va ishlab chiqarish markazi hisoblanadi, alyuminiy emas.\n*   **c) Sankt-Peterburg, Balakov:** Sankt-Peterburg Rossiyaning yirik sanoat, madaniy va port shahri bo'lsa-da, uning asosiy sanoat tarmoqlari mashinasozlik, kemasozlik, elektrotexnika va kimyo sanoatidir, alyuminiy ishlab chiqarish emas. Balakov esa kimyo sanoati va energetika (atom va gidroelektr stansiyalar) bilan tanilgan.\n*   **d) Nijniy Novgorod, Voljskiy:** Nijniy Novgorod avtomobilsozlik, mashinasozlik va kemasozlik kabi og'ir sanoat tarmoqlari bilan mashhur. Voljskiy shahri Volgogradga yaqin joylashgan bo'lib, kimyo va mashinasozlik sanoatiga ega, ammo alyuminiy ishlab chiqarish bo'yicha Bratsk yoki Volgograd kabi asosiy markaz hisoblanmaydi.\n\nShunday qilib, Bratsk va Volgograd shaharlari Rossiyaning alyuminiy sanoatining asosiy markazlari bo'lib, ularning joylashuvi yirik gidroelektr stansiyalariga yaqinligi bilan izohlanadi.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "84261b58-9b4b-47eb-857c-8ef17ce135e2",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 26,
+      "question_text": "AQSHning elektrotexnika va elektronika sanoati tarmog‘ining yirik markazini belgilang.",
+      "options": {
+        "a": "San-Diyego",
+        "b": "Morensi",
+        "c": "Fort-Uert",
+        "d": "Arizona"
+      },
+      "correct_option": "a",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "406c59ce-2331-4358-9959-0521be2b7117",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 27,
+      "question_text": "Sharqiy Yevropa o‘lkasining janubga qarab oqadigan daryolarini belgilang.",
+      "options": {
+        "a": "Shimoliy Dniva, Dnepr",
+        "b": "Dnepr, Ural",
+        "c": "Ural, Pechora",
+        "d": "Mezen, Volga"
+      },
+      "correct_option": "b",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "7af88188-1979-4156-b8fc-2e3d4461ea53",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 28,
+      "question_text": "Dunyo okeani atamasini kim fanga kiritgan?",
+      "options": {
+        "a": "A.Lavuazye",
+        "b": "Moxorovichich",
+        "c": "A.Vegener",
+        "d": "Y.M.Shokalskiy"
+      },
+      "correct_option": "d",
+      "explanation": "Dunyo okeani atamasini fanga kiritgan olim Y.M. Shokalskiy hisoblanadi.\n\n**Tushuntirish:**\n\n1.  **Y.M. Shokalskiy kim edi?**\n    Yuliy Mixaylovich Shokalskiy (1856-1940) mashhur rus okeanografi, geografi va kartografi bo‘lgan. U Rossiya Geografiya Jamiyatining prezidenti va ko‘plab ilmiy ishlarning muallifi edi. Uning ilmiy faoliyati asosan okeanografiya, gidrologiya va meteorologiyaga bag‘ishlangan.\n\n2.  **\"Dunyo okeani\" atamasining ma'nosi:**\n    \"Dunyo okeani\" (ruscha: \"Мировой океан\") atamasi Yer yuzasining katta qismini egallagan va o‘zaro tutashgan barcha okean va dengizlar majmuasini anglatadi. Bu atama barcha okeanlarni (Tinch, Atlantika, Hind, Shimoliy Muz va Janubiy okeanlar) yagona, uzluksiz suv havzasi sifatida ko‘rib chiqishni ifodalaydi. Shokalskiy bu atamani kiritish orqali Yerning suv qobig‘ini (gidrosferani) yaxlit tizim sifatida o‘rganish muhimligini ta'kidlagan.\n\n3.  **Nima uchun aynan D varianti to‘g‘ri?**\n    Y.M. Shokalskiy 1917-yilda nashr etilgan \"Okeanografiya\" nomli fundamental asarida \"Dunyo okeani\" tushunchasini ilmiy muomalaga kiritgan va uning geografik hamda gidrologik ahamiyatini batafsil asoslab bergan. Uning bu ishi okeanografiyaning rivojlanishiga katta hissa qo‘shgan va okeanlarni yagona global tizim sifatida o‘rganishga yo‘l ochgan.\n\n4.  **Boshqa variantlar nima uchun noto‘g‘ri?**\n    *   **A. Lavuazye (Antoine Lavoisier):** Fransuz kimyogari, zamonaviy kimyoning asoschilaridan biri. Uning ishlari kimyo faniga oid bo‘lib, okeanografiyaga aloqador emas.\n    *   **B. Moxorovichich (Andrija Mohorovičić):** Xorvatiyalik seysmolog, Yer qobig‘i va mantiyasi orasidagi chegara – Moxorovichich uzilishini kashf etgan. Uning ishlari geofizikaga oid.\n    *   **C. A. Vegener (Alfred Wegener):** Nemis meteorologi va geofizigi, materiklarning siljishi nazariyasini ilgari surgan. Uning ishlari geologiya va tektonikaga oid.\n\nShunday qilib, \"Dunyo okeani\" atamasini fanga kiritgan olim Y.M. Shokalskiy bo‘lganligi sababli, to‘g‘ri javob **D** variantidir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "df362af5-2152-4eb6-bb7a-df367aa233c4",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 29,
+      "question_text": "Kaynazoy erasida O‘rta Osiyo hududida qanday tabiiy o‘zgarishlar sodir bo‘lgan?",
+      "options": {
+        "a": "o‘rmonlar maydoni kengaygan",
+        "b": "dengiz qayta bostirib kelgan",
+        "c": "quruqliklar maydoni kengaygan",
+        "d": "nam va issiq iqlim tarkib topgan"
+      },
+      "correct_option": "c",
+      "explanation": "Kaynazoy erasi (taxminan 66 million yil avvaldan hozirgi kungacha) Yer tarixidagi eng so‘nggi geologik era bo‘lib, bu davrda O‘rta Osiyo hududida sezilarli tabiiy o‘zgarishlar sodir bo‘lgan.\n\nKeling, variantlarni ko‘rib chiqaylik:\n\n*   **a) o‘rmonlar maydoni kengaygan:** Kaynazoy erasining dastlabki bosqichlarida (paleogen) iqlim issiqroq bo‘lgani sababli ba'zi joylarda o‘rmonlar mavjud bo‘lgan. Biroq, Kaynazoy davrining umumiy tendensiyasi, ayniqsa tog‘larning ko‘tarilishi va iqlimning quruqlashishi bilan, O‘rta Osiyo hududida o‘rmonlarning doimiy kengayishi emas, balki cho‘l va yarimcho‘l landshaftlarining shakllanishi kuzatilgan. Shuning uchun bu variant to‘g‘ri emas.\n*   **b) dengiz qayta bostirib kelgan:** Kaynazoy erasida, xususan, Alp tog‘ hosil bo‘lishi jarayonida, Tetis okeani (O‘rta Osiyo hududining janubiy qismlarini qoplagan qadimiy dengiz) asta-sekin yopilib, uning qoldiqlari (masalan, Paratetis) chekinib borgan. Natijada, dengizning qayta bostirib kelishi emas, balki aksincha, dengizlarning chekinishi va quruqlik maydonlarining kengayishi kuzatilgan. Shuning uchun bu variant ham noto‘g‘ri.\n*   **c) quruqliklar maydoni kengaygan:** Bu variant to‘g‘ri. Kaynazoy erasi Alp tog‘ hosil bo‘lishi (Alp orogenezi) davri bo‘lib, bu jarayonda O‘rta Osiyodagi yirik tog‘ tizmalari – Pomir, Tyan-Shan, Hisor-Olay va boshqalar shakllangan va ko‘tarilgan. Tog‘larning ko‘tarilishi va Tetis dengizining chekinishi natijasida quruqlik maydonlari sezilarli darajada kengaygan. Bu O‘rta Osiyo hududining hozirgi qiyofasini shakllantirgan asosiy geologik jarayonlardan biridir.\n*   **d) nam va issiq iqlim tarkib topgan:** Kaynazoy erasining boshida (Paleotsen, Eotsen) iqlim haqiqatan ham nisbatan issiq va namroq bo‘lgan. Biroq, era davomida (Oligotsen, Miotsen, Pliotsen) global sovish tendensiyasi kuzatilgan va Pleystotsenda muzlik davrlari boshlangan. O‘rta Osiyoda tog‘larning ko‘tarilishi shamollarning yo‘nalishini o‘zgartirib, ichki hududlarda quruqlikni oshirgan. Shuning uchun butun Kaynazoy davri uchun \"nam va issiq iqlim\" xarakterli emas.\n\n**Xulosa:** Kaynazoy erasida O‘rta Osiyo hududida sodir bo‘lgan eng muhim va keng qamrovli tabiiy o‘zgarish – bu Alp tog‘ hosil bo‘lishi jarayonida tog‘larning ko‘tarilishi va dengizlarning chekinishi hisobiga **quruqliklar maydonining kengayishi**dir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    },
+    {
+      "id": "be237857-8fb3-4704-b78d-d332df2276ef",
+      "test_id": "a255d2a0-d3cf-4160-a8d7-ae26417e2ab1",
+      "order_number": 30,
+      "question_text": "Merkuriy sayyorasining Quyoshdan o‘rtacha masofasi qancha mln km?",
+      "options": {
+        "a": "58",
+        "b": "108",
+        "c": "96",
+        "d": "78"
+      },
+      "correct_option": "a",
+      "explanation": "Merkuriy Quyosh tizimidagi Quyoshga eng yaqin joylashgan sayyoradir. Uning Quyosh atrofidagi orbitasi elliptik bo'lganligi sababli, Quyoshdan masofasi doimiy emas, lekin o'rtacha masofasi aniq belgilangan.\n\nIlmiy ma'lumotlarga ko'ra, Merkuriy sayyorasining Quyoshdan o'rtacha masofasi taxminan 57.9 million kilometrni tashkil etadi. Berilgan variantlar orasida \"A\" varianti, ya'ni 58 million km, ushbu qiymatga eng yaqin va to'g'ri javob hisoblanadi.\n\nBoshqa variantlar esa Merkuriyning Quyoshdan o'rtacha masofasiga mos kelmaydi:\n*   **B) 108 million km:** Bu Venera sayyorasining Quyoshdan o'rtacha masofasidir.\n*   **C) 96 million km:** Bu qiymat Quyosh tizimidagi asosiy sayyoralarning o'rtacha masofalariga to'g'ri kelmaydi.\n*   **D) 78 million km:** Bu qiymat ham Quyosh tizimidagi asosiy sayyoralarning o'rtacha masofalariga to'g'ri kelmaydi.\n\nShuning uchun, Merkuriyning Quyoshdan o'rtacha masofasi 58 million km ekanligi to'g'ri javobdir.",
+      "created_at": "2026-08-08T08:57:37.30605Z"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:17:49.809Z"
+}

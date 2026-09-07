@@ -28,6 +28,12 @@ export const EXAM_PRESETS = [
 
 export type ExamPresetId = (typeof EXAM_PRESETS)[number]['id']
 
+/** Runtime validation (zod/API) uchun ham ayni SSOT'dan hosil qilingan ID'lar. */
+export const EXAM_PRESET_IDS = EXAM_PRESETS.map((preset) => preset.id) as [
+  ExamPresetId,
+  ...ExamPresetId[],
+]
+
 export function getExamPreset(id: string): ExamPreset | null {
   return EXAM_PRESETS.find((p) => p.id === id) ?? null
 }

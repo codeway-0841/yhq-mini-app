@@ -1,0 +1,141 @@
+{
+  "name": "Genetika va irsiyat — Biologiya test savollari",
+  "about": "Genetika va irsiyat",
+  "subject": "Biologiya",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/biologiya/genetika-va-irsiyat/savollar/",
+  "questionsCount": 13,
+  "questions": [
+    {
+      "question": "Genetika fanining asoschisi kim?",
+      "options": [
+        "Ch. Darvin",
+        "G. Mendel",
+        "I. Pavlov",
+        "L. Paster"
+      ],
+      "correctAnswer": "G. Mendel"
+    },
+    {
+      "question": "Odam organizmida nechta juft xromosoma bor?",
+      "options": [
+        "23 juft",
+        "46 juft",
+        "20 juft",
+        "22 juft"
+      ],
+      "correctAnswer": "23 juft"
+    },
+    {
+      "question": "MASALA: Tajribada hujayra yadrosida 46 xromosoma aniqlandi, DNK miqdori 6 pg (pikogram). Agar bu hujayra S-fazaning oxirida bo'lsa, DNK miqdori qancha bo'ladi va xromosomalar soni o'zgarmaydi degan gipoteza to'g'rimi?",
+      "options": [
+        "12 pg, gipoteza noto'g'ri — xromosomalar 92 ga etadi",
+        "12 pg, gipoteza to'g'ri — S-fazada DNK ikki barobar ortadi, lekin xromatidalar hali ajralmagan, xromosomalar soni 46 qoladi",
+        "6 pg, hech narsa o'zgarmaydi",
+        "3 pg, S-fazada DNK yarmiga tushadi"
+      ],
+      "correctAnswer": "12 pg, gipoteza to'g'ri — S-fazada DNK ikki barobar ortadi, lekin xromatidalar hali ajralmagan, xromosomalar soni 46 qoladi"
+    },
+    {
+      "question": "Oqsilning birlamchi tuzilishidagi bitta aminokislota o'zgarishi (missens mutatsiya) kasallikka olib kelishi mumkin. Bunga klassik misol qaysi?",
+      "options": [
+        "Diabet — insulin oqsilida 10 ta aminokislota o'zgarishi",
+        "O'roqsimon hujayrali anemiya — gemoglobinning beta-zanjirida 6-o'rindagi glutamat valin bilan almashadi (Glu→Val)",
+        "Albinizm — melanin oqsilida 50 ta aminokislota o'zgarishi",
+        "Fenilketonuriya — ferment DNK sida o'zgarish"
+      ],
+      "correctAnswer": "O'roqsimon hujayrali anemiya — gemoglobinning beta-zanjirida 6-o'rindagi glutamat valin bilan almashadi (Glu→Val)"
+    },
+    {
+      "question": "Genetik kod degeneratsiyasi (zichligi) nima degani?",
+      "options": [
+        "Bir aminokislota faqat bitta kodon bilan kodlanadi",
+        "Genetik kod vaqt o'tishi bilan o'zgaradi",
+        "Ko'pchilik aminokislotalar bir nechta har xil kodon bilan kodlanishi mumkin (masalan, Leu — 6 ta kodon)",
+        "Kodonlar ma'nosini yo'qotadi"
+      ],
+      "correctAnswer": "Ko'pchilik aminokislotalar bir nechta har xil kodon bilan kodlanishi mumkin (masalan, Leu — 6 ta kodon)"
+    },
+    {
+      "question": "Promotor, operator va repressorning prokariot gen ifodasini (operon modeli) boshqarishdagi roli nima?",
+      "options": [
+        "Promotor — RNK sintezlaydi; operator — oqsil parchalaydi; repressor — DNK ikkilantiradi",
+        "Promotor — RNK polimeraza bog'lanadigan joy; operator — repressor bog'lanadigan joy (transkripsiyani bloklaydi); repressor — operator ga bog'lanib transkripsiyani o'chiruvchi oqsil (lac operon: laktoza yo'q → repressor aktiv → gen o'chiq)",
+        "Promotor — ribosomaning bog'lanish joyi; operator — splaysing signali",
+        "Promotor va operator bir xil — ikkalasi ham transkripsiyani faollashtiradi"
+      ],
+      "correctAnswer": "Promotor — RNK polimeraza bog'lanadigan joy; operator — repressor bog'lanadigan joy (transkripsiyani bloklaydi); repressor — operator ga bog'lanib transkripsiyani o'chiruvchi oqsil (lac operon: laktoza yo'q → repressor aktiv → gen o'chiq)"
+    },
+    {
+      "question": "Transpozonlar («sakrovchi genlar») nima va ular genomga qanday ta'sir qiladi?",
+      "options": [
+        "Tashqi DNK bo'laklari; genomni himoya qiladi",
+        "Genomdagi ko'chib yuruvchi DNK ketma-ketliklar; boshqa gen mintaqasiga kirib mutatsiya, gen ekspressiyasini o'zgartirish yoki yangi genetik kombinatsiyalar hosil qilishi mumkin. Inson genomining ~45% transpozon izlaridan iborat",
+        "Mitoxondrial DNK bo'laklari; energiya ishlab chiqaradi",
+        "Virus DNK si; faqat kasallik keltiradi"
+      ],
+      "correctAnswer": "Genomdagi ko'chib yuruvchi DNK ketma-ketliklar; boshqa gen mintaqasiga kirib mutatsiya, gen ekspressiyasini o'zgartirish yoki yangi genetik kombinatsiyalar hosil qilishi mumkin. Inson genomining ~45% transpozon izlaridan iborat"
+    },
+    {
+      "question": "MASALA: Bir gen 1200 juft nukleotiddan iborat (start va stop kodon bilan). Bu gendagi intron 300 juft nukleotid bo'lsa, sintezlanadigan oqsildagi aminokislotalar soni qancha?",
+      "options": [
+        "400 ta aminokislota",
+        "300 ta aminokislota",
+        "299 ta aminokislota",
+        "100 ta aminokislota"
+      ],
+      "correctAnswer": "299 ta aminokislota"
+    },
+    {
+      "question": "Genetik kodning universalligi nima degani va uning istisnoalari bormi?",
+      "options": [
+        "Genetik kod barcha organizmlarda bir xil va istisnolar yo'q",
+        "Deyarli barcha tirik organizmlarda kodonlar bir xil aminokislotalarni kodlaydi (universallik); lekin mitoxondrial genetik kodda, ba'zi siliatlarda kichik farqlar bor — masalan, mitoxondriada UGA stop o'rniga Trp kodlaydi",
+        "Genetik kod faqat eukariotlarda universal, prokariotlarda farq qiladi",
+        "Genetik kod har 100 yilda o'zgaradi"
+      ],
+      "correctAnswer": "Deyarli barcha tirik organizmlarda kodonlar bir xil aminokislotalarni kodlaydi (universallik); lekin mitoxondrial genetik kodda, ba'zi siliatlarda kichik farqlar bor — masalan, mitoxondriada UGA stop o'rniga Trp kodlaydi"
+    },
+    {
+      "question": "Humаn Genome Project (Inson genomi loyihasi) qanday natijalar berdi?",
+      "options": [
+        "Inson genomida 1 million gen aniqlandi",
+        "2003 yilda yakunlangan loyiha inson genomida ~3,2 milliard juft nukleotid va faqat ~20 000–25 000 ta protein-kodlovchi gen borligini aniqladi; genomning ~98% si oqsil kodlamaydi (transpozonlar, regulyator RNK lar va b.)",
+        "Inson genomida 100 000 ta gen bor va hammasi oqsil kodlaydi",
+        "Inson va maymun genomlari 50% ga mos keladi"
+      ],
+      "correctAnswer": "2003 yilda yakunlangan loyiha inson genomida ~3,2 milliard juft nukleotid va faqat ~20 000–25 000 ta protein-kodlovchi gen borligini aniqladi; genomning ~98% si oqsil kodlamaydi (transpozonlar, regulyator RNK lar va b.)"
+    },
+    {
+      "question": "Prokariotlarda ko'payish qanday usulda amalga oshadi?",
+      "options": [
+        "Mitoz orqali",
+        "Meoz orqali",
+        "Ikkilik bo'linish (binary fission) orqali",
+        "Tomurciqlanish orqali"
+      ],
+      "correctAnswer": "Ikkilik bo'linish (binary fission) orqali"
+    },
+    {
+      "question": "Prokariot va eukariot genlarining tuzilishi qanday farq qiladi?",
+      "options": [
+        "Prokariot genlari kattaroq va murakkab tuzilgan",
+        "Prokariot genlari: intron yo'q, polisistron mRNK (bir mRNK bir necha oqsil kodlaydi), operon tashkil etadi; eukariot genlari: intronlar bor, monosistron mRNK, splaysing kerak, regulyator elementlar murakkab (enhancer, silencer)",
+        "Eukariot genlari ham polisistron mRNK hosil qiladi",
+        "Ikkalasida ham intronlar bir xil miqdorda"
+      ],
+      "correctAnswer": "Prokariot genlari: intron yo'q, polisistron mRNK (bir mRNK bir necha oqsil kodlaydi), operon tashkil etadi; eukariot genlari: intronlar bor, monosistron mRNK, splaysing kerak, regulyator elementlar murakkab (enhancer, silencer)"
+    },
+    {
+      "question": "Inson jinsiy hujayralarida (spermatozoid va tuxum hujayra) nechta xromosoma bor?",
+      "options": [
+        "46 ta",
+        "48 ta",
+        "23 ta",
+        "92 ta"
+      ],
+      "correctAnswer": "23 ta"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:58:36.495Z"
+}

@@ -1,0 +1,131 @@
+{
+  "name": "Ma'lumotlar bazasi va SQL — Informatika test savollari",
+  "about": "Ma'lumotlar bazasi va SQL",
+  "subject": "Informatika",
+  "level": "Abituriyent",
+  "url": "https://testmakon.uz/tests/practice/informatika/malumotlar-bazasi-va-sql/savollar/",
+  "questionsCount": 12,
+  "questions": [
+    {
+      "question": "SQL da SELECT so'rovi qanday tartibda bajariladi?",
+      "options": [
+        "SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY",
+        "FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY",
+        "WHERE → FROM → SELECT → GROUP BY → ORDER BY → HAVING",
+        "SELECT → WHERE → FROM → ORDER BY → GROUP BY → HAVING"
+      ],
+      "correctAnswer": "FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY"
+    },
+    {
+      "question": "INNER JOIN va LEFT JOIN o'rtasidagi farq nima?",
+      "options": [
+        "INNER JOIN — faqat mos kelgan qatorlarni qaytaradi; LEFT JOIN — chap jadvalning barcha qatorlarini, mos kelmaganlarda NULL",
+        "LEFT JOIN — faqat mos kelgan qatorlarni; INNER JOIN — chap jadvalning barcha qatorlarini",
+        "Ular bir xil — faqat nomi farqli",
+        "INNER JOIN chap jadval uchun, LEFT JOIN o'ng jadval uchun"
+      ],
+      "correctAnswer": "INNER JOIN — faqat mos kelgan qatorlarni qaytaradi; LEFT JOIN — chap jadvalning barcha qatorlarini, mos kelmaganlarda NULL"
+    },
+    {
+      "question": "PRIMARY KEY cheklovi qanday xususiyatga ega?",
+      "options": [
+        "Faqat noyoblikni ta'minlaydi",
+        "Noyob va NULL bo'lmasligi kerak — jadvalda faqat bitta PRIMARY KEY bo'lishi mumkin",
+        "NULL qiymatga ruxsat beradi",
+        "Bir nechta jadvalda bir xil PRIMARY KEY bo'lishi mumkin"
+      ],
+      "correctAnswer": "Noyob va NULL bo'lmasligi kerak — jadvalda faqat bitta PRIMARY KEY bo'lishi mumkin"
+    },
+    {
+      "question": "SQL da GROUP BY va HAVING qanday birgalikda ishlatiladi?",
+      "options": [
+        "GROUP BY — qatorlarni guruhlaydi; HAVING — guruhlangan natijalarni filtrlaydi (WHERE agregat funksiyalar uchun ishlamaydi)",
+        "HAVING — qatorlarni guruhlaydi; GROUP BY — filtrlaydi",
+        "Ikkalasi ham bir xil — WHERE bilan almashtirilishi mumkin",
+        "GROUP BY faqat ORDER BY bilan ishlatiladi"
+      ],
+      "correctAnswer": "GROUP BY — qatorlarni guruhlaydi; HAVING — guruhlangan natijalarni filtrlaydi (WHERE agregat funksiyalar uchun ishlamaydi)"
+    },
+    {
+      "question": "FOREIGN KEY cheklovi nima uchun ishlatiladi?",
+      "options": [
+        "Jadvalning birlamchi kalitini belgilash uchun",
+        "Ikki jadval orasidagi referents yaxlitligini ta'minlash uchun — bola jadval qiymati ota jadvalda mavjud bo'lishi kerak",
+        "Ustundagi qiymatlarni noyob qilish uchun",
+        "NULL qiymatlarni taqiqlash uchun"
+      ],
+      "correctAnswer": "Ikki jadval orasidagi referents yaxlitligini ta'minlash uchun — bola jadval qiymati ota jadvalda mavjud bo'lishi kerak"
+    },
+    {
+      "question": "SQL da DISTINCT kalit so'zi nima qiladi?",
+      "options": [
+        "Qatorlarni tartiblaydi",
+        "Takroriy qatorlarni olib tashlab noyob natijalarni qaytaradi",
+        "NULL qiymatlarni olib tashlaydi",
+        "Eng katta qiymatni qaytaradi"
+      ],
+      "correctAnswer": "Takroriy qatorlarni olib tashlab noyob natijalarni qaytaradi"
+    },
+    {
+      "question": "Normalizatsiya (normalization) ma'lumotlar bazasida nima uchun kerak?",
+      "options": [
+        "Ma'lumotlar bazasini tezlashtirish uchun",
+        "Takroriy ma'lumotlarni kamaytirish, anomaliyalarning oldini olish va ma'lumot yaxlitligini ta'minlash uchun",
+        "Jadvallar sonini ko'paytirish uchun",
+        "Faqat katta ma'lumotlar bazalari uchun kerak"
+      ],
+      "correctAnswer": "Takroriy ma'lumotlarni kamaytirish, anomaliyalarning oldini olish va ma'lumot yaxlitligini ta'minlash uchun"
+    },
+    {
+      "question": "SQL da subquery (ichki so'rov) nima?",
+      "options": [
+        "Alohida ishga tushadigan mustaqil so'rov",
+        "Boshqa SQL so'rovi ichiga joylashtirilgan SELECT so'rovi",
+        "Bir nechta jadvallarni birlashtirish usuli",
+        "Saqlangan protsedura"
+      ],
+      "correctAnswer": "Boshqa SQL so'rovi ichiga joylashtirilgan SELECT so'rovi"
+    },
+    {
+      "question": "ACID xususiyatlarida 'Atomicity' nimani anglatadi?",
+      "options": [
+        "Tranzaksiya tezligi",
+        "Tranzaksiyaning barcha amallari ya to'liq bajariladi, yoki hech biri bajarilmaydi — ikki yarimlama holat yo'q",
+        "Ma'lumotlar har doim to'g'ri bo'lishi",
+        "Bir vaqtda bir nechta foydalanuvchi ishlashi"
+      ],
+      "correctAnswer": "Tranzaksiyaning barcha amallari ya to'liq bajariladi, yoki hech biri bajarilmaydi — ikki yarimlama holat yo'q"
+    },
+    {
+      "question": "INDEX (indeks) ma'lumotlar bazasida nima uchun kerak?",
+      "options": [
+        "Jadval hajmini kamaytirish uchun",
+        "Qidiruv operatsiyalarini tezlashtirish uchun — lekin yozish operatsiyalarini sekinlashtiradi",
+        "Tranzaksiyalarni boshqarish uchun",
+        "Jadvallarni birlashtirish uchun"
+      ],
+      "correctAnswer": "Qidiruv operatsiyalarini tezlashtirish uchun — lekin yozish operatsiyalarini sekinlashtiradi"
+    },
+    {
+      "question": "SQL da TRUNCATE va DELETE o'rtasidagi farq nima?",
+      "options": [
+        "Ular bir xil — faqat sintaksis farqli",
+        "TRUNCATE — barcha qatorlarni tez o'chiradi, rollback qilib bo'lmaydi (ko'pincha); DELETE — shartli o'chiradi, rollback imkoni bor, trigger ishga tushadi",
+        "DELETE — barcha qatorlarni o'chiradi; TRUNCATE — shartli o'chiradi",
+        "TRUNCATE faqat kichik jadvallar uchun"
+      ],
+      "correctAnswer": "TRUNCATE — barcha qatorlarni tez o'chiradi, rollback qilib bo'lmaydi (ko'pincha); DELETE — shartli o'chiradi, rollback imkoni bor, trigger ishga tushadi"
+    },
+    {
+      "question": "SQL da COUNT(*) va COUNT(ustun_nomi) o'rtasidagi farq nima?",
+      "options": [
+        "Ular bir xil natija beradi",
+        "COUNT(*) — barcha qatorlarni sanaydi (NULL ham); COUNT(ustun) — faqat NULL bo'lmagan qiymatlarni sanaydi",
+        "COUNT(*) faqat bir ustun uchun; COUNT(ustun) barcha ustunlar uchun",
+        "COUNT(ustun) NULL qiymatlarini ham sanaydi"
+      ],
+      "correctAnswer": "COUNT(*) — barcha qatorlarni sanaydi (NULL ham); COUNT(ustun) — faqat NULL bo'lmagan qiymatlarni sanaydi"
+    }
+  ],
+  "downloadedAt": "2026-09-07T18:57:44.876Z"
+}
