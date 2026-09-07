@@ -974,6 +974,23 @@ body[data-theme='light'] .dynamic-island-dock {
   }
 }
 
+/* ── QORALAMA DAFTARI (Scratchpad drafting paper grid) ─────────────────────── */
+.scratchpad-canvas-paper {
+  background-color: #f8fafc;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.28) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+body[data-theme='dark'] .scratchpad-canvas-paper {
+  background-color: #0b0f19;
+  background-image:
+    linear-gradient(to right, rgba(51, 65, 85, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(51, 65, 85, 0.35) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
 /* ── AVATAR RAMKALARI (do'kon kosmetikasi, #40) ──────────────────────────────
    CSS-only (rasm assetsiz): wrapper'ga gradient fon + padding, ichki element
    rounded-full. avatar-frames.ts config bilan sinxron (test tekshiradi). */

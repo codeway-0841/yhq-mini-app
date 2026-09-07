@@ -412,7 +412,12 @@ export default function TestDrawingLayer({
         <SheetHeader><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
         <SheetClose onClose={() => setScratchpadOpen(false)} label={tt('drawingScratchpadClose')} />
         <SheetBody className="space-y-3 px-3 pb-3">
-          <div className="relative h-[52dvh] min-h-[300px] overflow-hidden rounded-2xl bg-white shadow-inner">
+          <div className="scratchpad-canvas-paper relative h-[52dvh] min-h-[300px] overflow-hidden rounded-2xl border-2 border-slate-300/90 dark:border-slate-700/80 shadow-[0_4px_20px_rgba(0,0,0,0.07),inset_0_2px_6px_rgba(0,0,0,0.04)] ring-1 ring-black/5 dark:ring-white/10">
+            {/* Vizual ajratuvchi qoralama nishoni */}
+            <div className="pointer-events-none absolute top-2.5 left-3 z-10 select-none flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-slate-200/80 dark:bg-slate-800/80 text-[11px] font-medium text-slate-600 dark:text-slate-300 shadow-2xs backdrop-blur-xs">
+              <span className="text-xs">📐</span>
+              <span>{tt('drawingScratchpad')}</span>
+            </div>
             <DrawingCanvas
               drawing={scratchpadDrawing}
               tool={tool === 'hand' ? 'pen' : tool}
@@ -423,7 +428,7 @@ export default function TestDrawingLayer({
               onCommit={persistAndRefresh}
             />
           </div>
-          <div className="rounded-2xl bg-slate-900/95 text-white p-3 shadow-xl border border-white/10">
+          <div className="rounded-2xl bg-slate-900 text-white p-3 shadow-xl border border-slate-700/80">
             <DrawingToolbar
               drawing={scratchpadDrawing}
               tool={tool === 'hand' ? 'pen' : tool}
