@@ -961,22 +961,7 @@ body[data-theme='light'] .dynamic-island-dock {
 }
 
 .animate-dynamic-island-expand {
-  animation: dynamic-island-expand 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-@keyframes dynamic-island-dock-item {
-  0% {
-    opacity: 0;
-    transform: translateY(10px) scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.dynamic-island-dock-item {
-  animation: dynamic-island-dock-item 220ms ease-out both;
+  animation: dynamic-island-expand 240ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -984,8 +969,7 @@ body[data-theme='light'] .dynamic-island-dock {
     transition: none !important;
     transform: none !important;
   }
-  .animate-dynamic-island-expand,
-  .dynamic-island-dock-item {
+  .animate-dynamic-island-expand {
     animation: none !important;
   }
 }

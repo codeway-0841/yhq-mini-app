@@ -147,6 +147,11 @@ export default function DynamicIsland() {
   const formattedTime = useMemo(() => {
     const m = Math.floor(rem / 60)
     const s = rem % 60
+    if (m >= 60) {
+      const h = Math.floor(m / 60)
+      const min = m % 60
+      return `${h}:${min < 10 ? '0' : ''}${min}:${s < 10 ? '0' : ''}${s}`
+    }
     return `${m}:${s < 10 ? '0' : ''}${s}`
   }, [rem])
 
@@ -264,7 +269,7 @@ export default function DynamicIsland() {
             /* Idle State: Gamifikatsiya ko'rsatkichi + Menyu trigger */
             <div
               style={{ visibility: isSheetOpen ? 'hidden' : undefined }}
-              className="flex items-center gap-2.5 p-1.5 pl-3.5 pr-1.5"
+              className="flex items-center gap-2 p-1.5 pl-3 pr-1.5"
             >
               {dailyStreak > 0 ? (
                 <button
@@ -284,7 +289,7 @@ export default function DynamicIsland() {
               ) : (
                 <div className="flex items-center gap-1.5 select-none text-white/85 dark:text-white/85 [body[data-theme='light']_&]:text-slate-600">
                   <Sparkles size={15} className="text-pprimary" />
-                  <span className="max-w-[120px] truncate text-[12.5px] font-semibold">
+                  <span className="text-[12.5px] font-semibold">
                     {lang === 'ru' ? subject.nameRu : subject.name}
                   </span>
                 </div>
@@ -315,7 +320,7 @@ export default function DynamicIsland() {
           <div className="dynamic-island-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-sm justify-center px-4">
             <div className="dynamic-island-dock pointer-events-auto w-full rounded-3xl p-4 animate-dynamic-island-expand">
               {/* Dock Header */}
-              <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 dark:border-white/10 [body[data-theme='light']_&]:border-black/10">
+              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-white/10 dark:border-white/10 [body[data-theme='light']_&]:border-black/10">
                 <div className="flex items-center gap-2">
                   <span className="size-2 rounded-full bg-pprimary animate-pulse" />
                   <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-white dark:text-white [body[data-theme='light']_&]:text-slate-800">
@@ -335,7 +340,7 @@ export default function DynamicIsland() {
 
               {/* 2x2 Grid of Quick Actions */}
               <div className="grid grid-cols-2 gap-2.5">
-                {actions.map(({ label, Icon, color, run }, idx) => (
+                {actions.map(({ label, Icon, color, run }) => (
                   <button
                     key={label}
                     type="button"
@@ -343,8 +348,7 @@ export default function DynamicIsland() {
                       haptics.selection()
                       run()
                     }}
-                    style={{ animationDelay: `${idx * 40}ms` }}
-                    className="dynamic-island-dock-item flex items-center gap-3 p-2.5 rounded-2xl bg-white/[0.06] dark:bg-white/[0.06] [body[data-theme='light']_&]:bg-black/[0.03] hover:bg-white/12 active:scale-[0.96] transition-all text-left text-white dark:text-white [body[data-theme='light']_&]:text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                    className="flex items-center gap-3 p-2.5 rounded-2xl bg-white/[0.06] dark:bg-white/[0.06] [body[data-theme='light']_&]:bg-black/[0.04] hover:bg-white/12 active:scale-[0.96] transition-all text-left text-white dark:text-white [body[data-theme='light']_&]:text-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                   >
                     <span className={`grid size-10 shrink-0 place-items-center rounded-xl ${color}`}>
                       <Icon size={19} strokeWidth={2} />
@@ -357,6 +361,7 @@ export default function DynamicIsland() {
           </div>
         </DialogOverlay>
       )}
+
 
       {panel === 'themes' && <SettingsModal initialPicker="accent" onClose={close} />}
       {panel === 'achievements' && <DashboardAchievements key={userId} onClose={close} />}
