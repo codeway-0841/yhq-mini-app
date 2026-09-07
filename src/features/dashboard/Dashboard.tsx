@@ -14,7 +14,7 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { TopBar } from './components/TopBar'
-import DashboardMenu from './components/DashboardMenu'
+import DynamicIsland from './components/DynamicIsland'
 import { ProgressCard } from './components/ProgressCard'
 import { LearningGuide } from './components/LearningGuide'
 import { LeaguePreview } from './components/LeaguePreview'
@@ -80,7 +80,7 @@ export default function Dashboard() {
   const goProfile = useCallback(() => navigate('/profil'), [navigate])
 
   return (
-    <div className="dashboard-page bg-pcanvas pb-[calc(6rem+var(--safe-bottom,0px))]">
+    <div className="dashboard-page bg-pcanvas pb-[calc(6.5rem+var(--safe-bottom,0px))]">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">
@@ -160,7 +160,7 @@ export default function Dashboard() {
         <SubjectEmpty onSwitch={() => setShowSubjects(true)} />
       )}
 
-      <DashboardMenu />
+      <DynamicIsland />
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
       {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
       {milestone !== null && (
