@@ -1,6 +1,9 @@
-import { useEffect, useRef, useCallback, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useRef, useCallback, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
 import { registerModal } from '../lib/navigation'
 import { haptics } from '../../platform/haptics'
+
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect
 
 type GestureEvent = Pick<React.PointerEvent<HTMLDivElement>, 'target' | 'pointerId' | 'clientX' | 'clientY'> & { pointerType?: string; button?: number; isPrimary?: boolean }
 
@@ -25,6 +28,8 @@ interface Props {
   closeOnBackdrop?: boolean
   /** Har bir yopilish sababi bo'yicha ruxsatni tekshirish (masalan, dirty form himoyasi) */
   canDismiss?: (reason: CloseReason) => boolean
+  /** document.body ga portal qilish (default: true). CSS Stacking Context tuzoqlarini yo'qotadi */
+  portal?: boolean
 }
 
 /**
@@ -85,6 +90,7 @@ export default function DialogOverlay({
   dragHandleOnly = false,
   closeOnBackdrop = true,
   canDismiss,
+  portal = true,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -144,7 +150,10 @@ export default function DialogOverlay({
   } | null>(null)
 
   // Stack ro'yxati + body scroll-lock + modal stack ro'yxati + focus restore
-  useEffect(() => {
+  // useIsomorphicLayoutEffect orqali modalStack va body scroll-lock birinchi kadr
+  // chizilishidan (paint) OLDIN yangilanadi. Bu DynamicIsland va orqa fon elementlarining
+  // dastlabki 1-kadrda chaqnashini (flash) to'liq bartaraf qiladi.
+  useIsomorphicLayoutEffect(() => {
     const id = idRef.current
     dialogStack.push(id)
     lockScroll()
@@ -593,7 +602,7 @@ export default function DialogOverlay({
     }
   }
 
-  return (
+  const dialogElement = (
     <div
       ref={containerRef}
       role="dialog"
@@ -625,4 +634,10 @@ export default function DialogOverlay({
       )}
     </div>
   )
+
+  if (portal && typeof document !== 'undefined') {
+    return createPortal(dialogElement, document.body)
+  }
+
+  return dialogElement
 }

@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from 'react'
 import type { NavigateFunction } from 'react-router-dom'
 
 export interface ModalEntry {
@@ -18,6 +19,30 @@ function notifyModalListeners(): void {
       // no-op
     }
   })
+}
+
+/**
+ * Hozirgi ochiq modallar sonini qaytaradi (synchronous snapshot).
+ */
+export function getModalCount(): number {
+  return modalStack.length
+}
+
+/**
+ * React 18 useSyncExternalStore orqali modallar sonini 0-lag kuzatish hook'i.
+ */
+export function useModalCount(): number {
+  return useSyncExternalStore(
+    (onStoreChange) => {
+      const listener: ModalListener = () => onStoreChange()
+      modalListeners.add(listener)
+      return () => {
+        modalListeners.delete(listener)
+      }
+    },
+    getModalCount,
+    () => 0
+  )
 }
 
 /**

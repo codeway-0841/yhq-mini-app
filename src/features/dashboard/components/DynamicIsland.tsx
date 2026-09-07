@@ -22,7 +22,7 @@ import { useT } from '../../../shared/i18n'
 import { type AchievementStats } from '../../../shared/api'
 import { fetchAchievements, getAchievementsCache } from '../../../shared/lib/achievements-cache'
 import { AchievementsScreen } from '../../profile'
-import { subscribeModalStack } from '../../../shared/lib/navigation'
+import { useModalCount } from '../../../shared/lib/navigation'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { resumeRouteState } from '../next-step'
@@ -100,8 +100,7 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
  * - A11y (ARIA dialog, focus management, Escape va Android back navigation).
  */
 export default function DynamicIsland() {
-  const [modalCount, setModalCount] = useState(0)
-  useEffect(() => subscribeModalStack(setModalCount), [])
+  const modalCount = useModalCount()
   const isScrollVisible = useScrollAwareVisibility()
   const [panel, setPanel] = useState<'menu' | 'themes' | 'achievements' | null>(null)
 

@@ -28,13 +28,13 @@ describe('DialogOverlay component', () => {
 
   it('calls onClose when clicking backdrop overlay', () => {
     const handleClose = vi.fn()
-    const { container } = render(
+    const { baseElement } = render(
       <DialogOverlay onClose={handleClose}>
         <div>Modal Content</div>
       </DialogOverlay>
     )
 
-    const backdrop = container.querySelector('.bg-black\\/70')
+    const backdrop = baseElement.querySelector('.bg-black\\/70')
     expect(backdrop).toBeInTheDocument()
     if (backdrop) fireEvent.click(backdrop)
     expect(handleClose).toHaveBeenCalledTimes(1)
@@ -124,6 +124,29 @@ describe('DialogOverlay component', () => {
     expect(screen.getByRole('dialog')).toHaveStyle({ zIndex: 70 })
   })
 
+  it('portals to document.body by default to escape CSS stacking contexts', () => {
+    const { container } = render(
+      <div className="animate-premiumIn">
+        <DialogOverlay onClose={() => {}}>
+          <div>Portaled content</div>
+        </DialogOverlay>
+      </div>
+    )
+    const dialog = screen.getByRole('dialog')
+    expect(dialog.parentElement).toBe(document.body)
+    expect(container.querySelector('[role="dialog"]')).toBeNull()
+  })
+
+  it('supports opting out of portal with portal={false}', () => {
+    const { container } = render(
+      <DialogOverlay onClose={() => {}} portal={false}>
+        <div>Inline content</div>
+      </DialogOverlay>
+    )
+    const dialog = screen.getByRole('dialog')
+    expect(container.querySelector('[role="dialog"]')).toBe(dialog)
+  })
+
   describe('swipe-to-dismiss gesture behavior', () => {
     function firePointer(type: string, target: HTMLElement, init: { clientY?: number; clientX?: number; pointerId?: number } = {}) {
       const ev = new Event(type, { bubbles: true, cancelable: true }) as any
@@ -137,16 +160,16 @@ describe('DialogOverlay component', () => {
     }
 
     it('swipeToDismiss=false (default): pointer events don\'t wrap sheet in draggable container', () => {
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={() => {}}>
           <div data-testid="content">Modal Content</div>
         </DialogOverlay>
       )
-      expect(container.querySelector('.will-change-transform')).not.toBeInTheDocument()
+      expect(baseElement.querySelector('.will-change-transform')).not.toBeInTheDocument()
     })
 
     it('swipeToDismiss=true: renders sheet wrapper with gesture handlers', () => {
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={() => {}} swipeToDismiss>
           <div data-testid="content">
             <div data-drag-handle data-testid="handle" />
@@ -154,7 +177,7 @@ describe('DialogOverlay component', () => {
           </div>
         </DialogOverlay>
       )
-      const wrapper = container.querySelector('.will-change-transform')
+      const wrapper = baseElement.querySelector('.will-change-transform')
       expect(wrapper).toBeInTheDocument()
     })
 
@@ -350,7 +373,7 @@ describe('DialogOverlay component', () => {
     it('backdrop and timeout together do not call onClose twice', () => {
       vi.useFakeTimers()
       const handleClose = vi.fn()
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={handleClose} swipeToDismiss>
           <div style={{ height: '300px' }}>
             <div data-drag-handle data-testid="handle">Handle</div>
@@ -363,7 +386,7 @@ describe('DialogOverlay component', () => {
       firePointer('pointerup', handle, { clientY: 190, clientX: 100 })
 
       // User clicks backdrop during the 260ms exit animation
-      const backdrop = container.querySelector('.bg-black\\/70')
+      const backdrop = baseElement.querySelector('.bg-black\\/70')
       if (backdrop) fireEvent.click(backdrop)
 
       vi.advanceTimersByTime(400)
@@ -395,12 +418,12 @@ describe('DialogOverlay component', () => {
 
     it('closeOnBackdrop=false prevents backdrop click from calling onClose', () => {
       const handleClose = vi.fn()
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={handleClose} closeOnBackdrop={false}>
           <div>Modal Content</div>
         </DialogOverlay>
       )
-      const backdrop = container.querySelector('.bg-black\\/70')
+      const backdrop = baseElement.querySelector('.bg-black\\/70')
       expect(backdrop).toBeInTheDocument()
       if (backdrop) fireEvent.click(backdrop)
       expect(handleClose).not.toHaveBeenCalled()
@@ -409,12 +432,12 @@ describe('DialogOverlay component', () => {
     it('canDismiss callback can block specific close reasons', () => {
       const handleClose = vi.fn()
       const canDismiss = vi.fn((reason) => reason !== 'backdrop' && reason !== 'escape')
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={handleClose} canDismiss={canDismiss}>
           <div>Modal Content</div>
         </DialogOverlay>
       )
-      const backdrop = container.querySelector('.bg-black\\/70')
+      const backdrop = baseElement.querySelector('.bg-black\\/70')
       if (backdrop) fireEvent.click(backdrop)
       expect(handleClose).not.toHaveBeenCalled()
 
@@ -446,12 +469,12 @@ describe('DialogOverlay component', () => {
     })
 
     it('swipeToDismiss does nothing when position="center"', () => {
-      const { container } = render(
+      const { baseElement } = render(
         <DialogOverlay onClose={() => {}} swipeToDismiss position="center">
           <div data-testid="content">Centered Content</div>
         </DialogOverlay>
       )
-      expect(container.querySelector('.will-change-transform')).not.toBeInTheDocument()
+      expect(baseElement.querySelector('.will-change-transform')).not.toBeInTheDocument()
     })
 
     it('accidental click is suppressed after dragging gesture', () => {

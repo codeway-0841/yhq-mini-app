@@ -1,6 +1,6 @@
-﻿import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { goBack, subscribeModalStack } from '../../../shared/lib/navigation'
+import { goBack, useModalCount } from '../../../shared/lib/navigation'
 import { syncTelegramTheme } from '../../../platform/telegram'
 import { bindAppBackButton } from '../../../platform/native'
 
@@ -12,12 +12,7 @@ export function usePlatformNavigation() {
   const location = useLocation()
   const navigate = useNavigate()
   const atHome = location.pathname === '/'
-  const [modalCount, setModalCount] = useState(0)
-
-  // Modal stack holatini kuzatish — modal ochiq bo'lsa BackButton ko'rinadi va eng oxirgi modalni yopadi
-  useEffect(() => {
-    return subscribeModalStack((count) => setModalCount(count))
-  }, [])
+  const modalCount = useModalCount()
 
   // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
   useEffect(() => {
