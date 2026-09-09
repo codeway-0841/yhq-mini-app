@@ -81,6 +81,20 @@ describe('MathText Component & KaTeX Security', () => {
       expect(mathContents).toContain('10^{-3}')
       expect(mathContents).toContain('m/s^2')
     })
+
+    it('\\begin{cases} tizimli qavslarini displayMode bilan toza render qiladi', () => {
+      const text = 'Tengsizliklar sistemasi: \\begin{cases} x - 1 < 4 \\\\ x \\ge 3 \\end{cases} yechimini toping.'
+      const segments = parseMathSegments(text)
+
+      expect(segments.length).toBe(3)
+      expect(segments[1].type).toBe('math')
+      expect(segments[1].displayMode).toBe(true)
+      expect(segments[1].content).toContain('\\begin{cases}')
+
+      const { container } = render(<MathText text={text} />)
+      expect(container.querySelector('.katex-display')).not.toBeNull()
+      expect(container.querySelector('.overflow-x-auto')).not.toBeNull()
+    })
   })
 
   describe('Error Handling & Fallback', () => {

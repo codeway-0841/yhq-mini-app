@@ -80,10 +80,10 @@ export function parseMathSegments(text: string): MathSegment[] {
     text = text.slice(0, MAX_INPUT_LENGTH)
   }
 
-  // 1. Explicit LaTeX block or inline delimiters: $$, $, \[, \(
-  if (text.includes('$') || text.includes('\\(') || text.includes('\\[')) {
+  // 1. Explicit LaTeX block or inline delimiters: $$, $, \[, \(, \begin{cases}, \begin{matrix}
+  if (text.includes('$') || text.includes('\\(') || text.includes('\\[') || text.includes('\\begin{cases}') || text.includes('\\begin{matrix}')) {
     const segments: MathSegment[] = []
-    const regex = /(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\))/g
+    const regex = /(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\\begin\{cases\}[\s\S]+?\\end\{cases\}|\\begin\{matrix\}[\s\S]+?\\end\{matrix\})/g
     let lastIndex = 0
     let match: RegExpExecArray | null
 
@@ -101,6 +101,12 @@ export function parseMathSegments(text: string): MathSegment[] {
         displayMode = true
       } else if (raw.startsWith('\\[') && raw.endsWith('\\]')) {
         mathContent = raw.slice(2, -2).trim()
+        displayMode = true
+      } else if (raw.startsWith('\\begin{cases}') && raw.endsWith('\\end{cases}')) {
+        mathContent = raw.trim()
+        displayMode = true
+      } else if (raw.startsWith('\\begin{matrix}') && raw.endsWith('\\end{matrix}')) {
+        mathContent = raw.trim()
         displayMode = true
       } else if (raw.startsWith('\\(') && raw.endsWith('\\)')) {
         mathContent = raw.slice(2, -2).trim()
@@ -311,7 +317,7 @@ function MathSegmentNode({ math, displayMode }: { math: string; displayMode?: bo
 
   return (
     <span
-      className={displayMode ? 'block my-1 text-center' : 'inline-block'}
+      className={displayMode ? 'block my-1.5 text-center overflow-x-auto max-w-full py-0.5' : 'inline-block max-w-full overflow-x-auto align-middle'}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   )
