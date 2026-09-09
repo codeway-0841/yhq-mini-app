@@ -35,6 +35,8 @@ beforeEach(() => {
   useAppStore.setState({
     settings: { ...useAppStore.getState().settings, language: 'uz' },
     wrongByTicket: {},
+    tariff: 'free',
+    user: { id: 'user-1', firstName: 'Ali', tariff: 'free', lastName: undefined, username: undefined, photoUrl: undefined, phone: undefined },
   })
   useQuestionsStore.setState({ questions, topics: [], loaded: true, loading: false })
 })
@@ -93,6 +95,51 @@ describe('Biletlar', () => {
     expect(path).toBe('/test/1')
     expect(opts.state.title).toBe('1 - bilet')
     expect(opts.state.questionIds).toHaveLength(20)
+    expect(opts.state).toMatchObject({
+      mode: 'ticket',
+      serverSelector: { type: 'ticket', ticketNumber: 1 },
+    })
+  })
+
+  it('free userga faqat birinchi 3 ta bilet ochiq, 4-bilet Premiumga yuboradi', () => {
+    const eightyQuestions = Array.from({ length: 80 }, (_, i) => ({
+      id: i + 1,
+      topicId: 1,
+      questionUz: `Savol ${i + 1}`,
+      questionRu: `Вопрос ${i + 1}`,
+      optionsUz: { F1: 'a', F2: 'b' },
+      optionsRu: { F1: 'а', F2: 'б' },
+      correctAnswer: 'F1',
+    })) as never[]
+    useQuestionsStore.setState({ questions: eightyQuestions, topics: [], loaded: true, loading: false })
+
+    render(<Biletlar />)
+    fireEvent.click(screen.getByText('4 - bilet'))
+
+    expect(mockNavigate).toHaveBeenCalledWith('/premium')
+  })
+
+  it('premium user 4-biletni ham ochadi', () => {
+    const eightyQuestions = Array.from({ length: 80 }, (_, i) => ({
+      id: i + 1,
+      topicId: 1,
+      questionUz: `Savol ${i + 1}`,
+      questionRu: `Вопрос ${i + 1}`,
+      optionsUz: { F1: 'a', F2: 'b' },
+      optionsRu: { F1: 'а', F2: 'б' },
+      correctAnswer: 'F1',
+    })) as never[]
+    useQuestionsStore.setState({ questions: eightyQuestions, topics: [], loaded: true, loading: false })
+    useAppStore.setState({
+      tariff: 'premium',
+      user: { id: 'user-1', firstName: 'Ali', tariff: 'premium', lastName: undefined, username: undefined, photoUrl: undefined, phone: undefined },
+    })
+
+    render(<Biletlar />)
+    fireEvent.click(screen.getByText('4 - bilet'))
+
+    expect(mockNavigate).toHaveBeenCalledTimes(1)
+    expect(mockNavigate.mock.calls[0]?.[0]).toBe('/test/1')
   })
 
   it('biletlar barqaror (seed) tartibda — qayta chizishda o\'zgarmaydi', () => {
@@ -200,7 +247,7 @@ describe('Biletlar', () => {
     expect(opts.state.questionIds[0]).toBe(1)
     expect(opts.state.questionIds[29]).toBe(30)
     expect(opts.state).toMatchObject({
-      mode: 'topic', serverSelector: { type: 'topic', topicId: 101 },
+      mode: 'ticket', serverSelector: { type: 'ticket', ticketNumber: 1 },
     })
   })
 })

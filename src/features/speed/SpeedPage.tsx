@@ -13,6 +13,8 @@ import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { useT } from '../../shared/i18n'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { ResultsModal, type QuestionResult } from '../test'
@@ -30,7 +32,19 @@ export default function SpeedPage() {
   const settings = useAppStore((s) => s.settings)
   const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
+  const questionsLoaded = useQuestionsStore((s) => s.loaded)
+  const questionsLoading = useQuestionsStore((s) => s.loading)
+  const questionsError = useQuestionsStore((s) => s.error)
+  const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
+  const tt = useT(lang)
+
+  // Savollar hali yuklanmagan bo'lsa xavfsiz yuklab olish
+  useEffect(() => {
+    if (!questionsLoaded && !questionsLoading && !questionsError) {
+      void useQuestionsStore.getState().load(settings.language, subjectId)
+    }
+  }, [questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
 
   // 20 ta tasodifiy savol (sahifa ochilganda 1 marta tanlanadi)
   const qs = useMemo(() => {
@@ -187,7 +201,33 @@ export default function SpeedPage() {
   }), [qs, addReward])
 
   if (!q) {
-    return <div className="flex items-center justify-center min-h-screen text-pmuted">Yuklanmoqda...</div>
+    return (
+      <div className="flex flex-col min-h-screen bg-pcanvas font-display text-pfg">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+          <div className="flex items-center justify-between px-4 py-2.5">
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
+              <X size={20} />
+            </button>
+            <div className="flex items-center gap-2">
+              <Zap size={15} strokeWidth={1.75} className="text-pwarning" />
+              <span className="text-sm font-semibold">{tt('speedRound')}</span>
+            </div>
+            <div className="w-8" />
+          </div>
+        </header>
+        <div className="flex flex-col items-center justify-center flex-1 py-12 gap-3 px-4 text-center">
+          <Zap size={36} className="text-pmuted opacity-50" />
+          <p className="text-sm text-pmuted">{tt('speedQuestionsEmpty')}</p>
+          <button
+            type="button"
+            onClick={() => goBack(navigate)}
+            className="mt-2 bg-psurface text-pfg text-xs font-semibold px-4 py-2 rounded-xl hover:bg-pcard active:scale-95 transition-all cursor-pointer"
+          >
+            {tt('backWord')}
+          </button>
+        </div>
+      </div>
+    )
   }
 
   const R = 30, C = 2 * Math.PI * R
@@ -235,7 +275,7 @@ export default function SpeedPage() {
           </button>
           <div className="flex items-center gap-2">
             <Zap size={15} strokeWidth={1.75} className="text-pwarning" />
-            <span className="text-sm font-semibold">Speed Round</span>
+            <span className="text-sm font-semibold">{tt('speedRound')}</span>
           </div>
           <span className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums text-pmuted">
             <Check size={12} strokeWidth={2} />

@@ -11,6 +11,7 @@ import {
 } from '../../../shared/xp'
 import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
+import { issueLaunchToken } from '../test-sessions/launch-token'
 
 /**
  * H-3 (audit, TODO H4 variant 1 — kunlik kredit): bitta user kuniga shu
@@ -497,5 +498,73 @@ export const progressRepository = {
           updatedAt: new Date(),
         },
       })
+  },
+
+  async getMistakesOverview(
+    userId: string,
+    subjectId: string,
+    bankId: string,
+    secret: string,
+    language: 'uz' | 'ru' = 'uz',
+  ): Promise<{
+    total: number
+    byTopic: Array<{ topicId: number; count: number }>
+    top: Array<{ text: string; count: number; topicId: number | null; launchToken: string; expiresAt: string }>
+  }> {
+    const rows = await executeRows<{
+      id: number
+      count: number
+      topicId: number | null
+      questionUz: string
+      questionRu: string
+    }>(sql`
+      SELECT 
+        q.id::int AS id,
+        mistake.value::int AS count,
+        q.topic_id::int AS "topicId",
+        q.question_uz AS "questionUz",
+        q.question_ru AS "questionRu"
+      FROM progress p
+      CROSS JOIN LATERAL jsonb_each_text(COALESCE(p.wrong_by_ticket, '{}'::jsonb)) mistake
+      JOIN questions q
+        ON mistake.key = ${subjectId} || ':' || q.id::text
+       AND q.bank_id = ${bankId}
+      WHERE p.user_id = ${userId}
+        AND mistake.value::int > 0
+    `)
+
+    const total = rows.length
+    if (total === 0) {
+      return { total: 0, byTopic: [], top: [] }
+    }
+
+    const topicCounts = new Map<number, number>()
+    for (const r of rows) {
+      if (r.topicId !== null && r.topicId !== undefined) {
+        topicCounts.set(r.topicId, (topicCounts.get(r.topicId) ?? 0) + 1)
+      }
+    }
+
+    const byTopic = Array.from(topicCounts.entries())
+      .map(([topicId, count]) => ({ topicId, count }))
+      .sort((a, b) => b.count - a.count)
+
+    const sortedRows = [...rows].sort((a, b) => b.count - a.count).slice(0, 10)
+    const top = sortedRows.map((r) => {
+      const { launchToken, expiresAt } = issueLaunchToken(secret, {
+        userId,
+        subjectId,
+        questionId: r.id,
+      })
+      return {
+        text: language === 'ru' ? r.questionRu : r.questionUz,
+        count: r.count,
+        topicId: r.topicId,
+        launchToken,
+        expiresAt,
+      }
+    })
+
+    return { total, byTopic, top }
   },
 }

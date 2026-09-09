@@ -12,6 +12,11 @@ export const TopicTestSelectorSchema = z.object({
   topicId: z.number().int().positive(),
 })
 
+export const TicketTestSelectorSchema = z.object({
+  type: z.literal('ticket'),
+  ticketNumber: z.number().int().positive(),
+})
+
 export const ExamTestSelectorSchema = z.object({
   type: z.literal('exam'),
   presetId: z.enum(EXAM_PRESET_IDS),
@@ -27,15 +32,23 @@ export const SavedTestSelectorSchema = z.object({
 
 export const MistakesTestSelectorSchema = z.object({
   type: z.literal('mistakes'),
+  topicId: z.number().int().positive().optional(),
+})
+
+export const SingleTestSelectorSchema = z.object({
+  type: z.literal('single'),
+  launchToken: z.string().min(16),
 })
 
 export const TestSelectorSchema = z.discriminatedUnion('type', [
   RandomTestSelectorSchema,
   TopicTestSelectorSchema,
+  TicketTestSelectorSchema,
   ExamTestSelectorSchema,
   MockTestSelectorSchema,
   SavedTestSelectorSchema,
   MistakesTestSelectorSchema,
+  SingleTestSelectorSchema,
 ])
 
 export const CreateTestSessionSchema = z.object({
@@ -47,7 +60,7 @@ export const CreateTestSessionSchema = z.object({
 export const SubmitTestAnswerSchema = z.object({
   position: z.number().int().min(0),
   deliveryToken: z.string().min(16).max(256),
-  expiresAt: z.iso.datetime(),
+  expiresAt: z.string().datetime(),
   selectedOptionId: z.string().min(1).max(32),
   clientToken: z.string().min(8).max(64),
   elapsedMs: z.number().int().min(0).max(600_000).optional(),
@@ -73,13 +86,12 @@ export interface DeliveredTestQuestion {
 export interface TestSessionState {
   id: string
   subjectId: string
-  mode: 'random' | 'topic' | 'exam' | 'mock' | 'saved' | 'mistakes'
+  mode: 'random' | 'topic' | 'ticket' | 'exam' | 'mock' | 'saved' | 'mistakes' | 'single'
   status: 'active' | 'completed' | 'abandoned' | 'expired'
   answered: number
   total: number
   expiresAt: string
 }
-
 export interface TestSessionResponse {
   session: TestSessionState
   questions: DeliveredTestQuestion[]

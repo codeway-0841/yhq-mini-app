@@ -15,8 +15,16 @@ import { sql } from 'drizzle-orm'
 // bucket o'sha instansiya bilan birga yo'qoladi (no-op); DB counter umumiy.
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { identityKey } from '../../middleware/rate-limiter'
+import { config } from '../../config'
+import { issueLaunchToken } from '../test-sessions/launch-token'
 
 const router = Router()
+
+const SearchQuerySchema = z.object({
+  subjectId: z.string().min(1).max(32),
+  query: z.string().min(2).max(100),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
 
 /**
  * Kontent endpointlari og'ir (to'liq savollar to'plami) — 60/min.
@@ -133,6 +141,37 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   res.set('Cache-Control', CONTENT_CACHE)
   res.set('X-Data-Source', entry.dataSourceId)
   res.json(toPublic(rows))
+}))
+
+// GET /api/questions/search?subjectId=yhq&query=to'xtash&language=uz
+router.get('/questions/search', contentLimit, wrap(async (req, res) => {
+  const parsed = SearchQuerySchema.safeParse(req.query)
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
+    return
+  }
+  const { subjectId, query, language } = parsed.data
+  const entry = resolveSubject(subjectId)
+  const userId = (req as { userId?: string }).userId || 'anonymous'
+
+  const rows = await questionsRepository.search(entry.dataSourceId, query, language)
+  const secret = config.testSessions.proofSecret || 'fallback-search-proof-secret'
+  const hits = rows.map((r) => {
+    const { launchToken, expiresAt } = issueLaunchToken(secret, {
+      userId,
+      subjectId: entry.id,
+      questionId: r.id,
+    })
+    return {
+      text: r.text,
+      topicId: r.topicId,
+      launchToken,
+      expiresAt,
+    }
+  })
+
+  res.set('Cache-Control', 'private, no-store')
+  res.json({ hits })
 }))
 
 // GET /api/topics?subject=fizika

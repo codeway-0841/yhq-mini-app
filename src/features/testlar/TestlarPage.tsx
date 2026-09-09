@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles, Lock } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -14,6 +14,7 @@ import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
+import { isEffectivePremium, isTestModePremium } from '../../../shared/test-access'
 
 type Diff = 'easy' | 'mid' | 'hard'
 type TKey = Parameters<ReturnType<typeof useT>>[0]
@@ -34,8 +35,11 @@ export default function TestlarPage() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS
   const settings  = useAppStore((s) => s.settings)
+  const tariff    = useAppStore((s) => s.tariff)
+  const user      = useAppStore((s) => s.user)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
+  const isPremium = isEffectivePremium({ tariff, premiumUntil: user?.premiumUntil })
 
   const DIFF: Record<Diff, { label: string; color: string }> = {
     easy: { label: tt('diffEasy'), color: 'var(--p-success)' },
@@ -84,7 +88,9 @@ export default function TestlarPage() {
   ]
 
   const start = (m: ModeCard) => {
+    const locked = isTestModePremium(m.id) && !isPremium
     track('test_start', { mode: m.id })
+    if (locked) { navigate('/premium'); return }
     if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }
@@ -114,6 +120,7 @@ export default function TestlarPage() {
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
           const d = DIFF[m.diff]
+          const locked = isTestModePremium(m.id) && !isPremium
           return (
             <button key={m.id} onClick={() => start(m)}
               className="group relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface">
@@ -145,7 +152,9 @@ export default function TestlarPage() {
               </div>
 
               {/* O'tish ko'rsatkichi */}
-              <ChevronRight size={18} strokeWidth={2} className="flex-shrink-0 text-psubtle group-hover:text-pfg transition-colors" />
+              {locked
+                ? <Lock size={18} strokeWidth={2} className="flex-shrink-0 text-pwarning" />
+                : <ChevronRight size={18} strokeWidth={2} className="flex-shrink-0 text-psubtle group-hover:text-pfg transition-colors" />}
             </button>
           )
         })}

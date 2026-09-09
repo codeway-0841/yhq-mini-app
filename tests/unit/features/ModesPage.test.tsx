@@ -81,4 +81,48 @@ describe('ModesPage', () => {
       },
     })
   })
+
+  it('YHQ fanida Tezkor test va Aqlli takrorlash kartalari chiqadi va mos marshrutga olib boradi', () => {
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    const speedBtn = screen.getByRole('button', { name: 'Tezkor test' })
+    expect(speedBtn).toBeTruthy()
+    fireEvent.click(speedBtn)
+    expect(mockNavigate).toHaveBeenCalledWith('/speed')
+
+    const adaptiveBtn = screen.getByRole('button', { name: 'Aqlli takrorlash' })
+    expect(adaptiveBtn).toBeTruthy()
+    fireEvent.click(adaptiveBtn)
+    expect(mockNavigate).toHaveBeenCalledWith('/adaptive')
+  })
+
+  it('aniq fanlarda (fizika, matematika) Tezkor test kartasi ko\'rinmaydi', () => {
+    useSubjectStore.setState({
+      subject: {
+        id: 'fizika',
+        name: 'Fizika',
+        icon: vi.fn() as any,
+        color: '#3b82f6',
+        available: true,
+        examPresets: [],
+      },
+    })
+
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
+    expect(screen.getByRole('button', { name: 'Aqlli takrorlash' })).toBeTruthy()
+  })
 })

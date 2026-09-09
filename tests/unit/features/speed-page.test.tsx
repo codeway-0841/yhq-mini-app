@@ -96,4 +96,20 @@ describe('SpeedPage authoritative offline reconciliation', () => {
       vi.useRealTimers()
     }
   })
+
+  it('savollar ro\'yxati bo\'sh bo\'lsa xavfsiz bo\'sh holat va orqaga qaytishni ko\'rsatadi', () => {
+    useQuestionsStore.setState({
+      questions: [],
+      topics: [],
+      loaded: true,
+      loading: false,
+      error: null,
+      subjectId: 'yhq',
+    })
+
+    render(<MemoryRouter><SpeedPage /></MemoryRouter>)
+    expect(screen.getByText('Tezkor test')).toBeTruthy()
+    expect(screen.getByText('Savollar hali yuklanmagan yoki mavjud emas')).toBeTruthy()
+    expect(screen.getAllByRole('button', { name: 'Orqaga' }).length).toBe(2)
+  })
 })

@@ -93,4 +93,22 @@ export const questionsRepository = {
       return row ?? null
     })
   },
+
+  async search(bankId = 'traffic_rules_db', query: string, language: 'uz' | 'ru', limit = 30): Promise<Array<{ id: number; text: string; topicId: number | null }>> {
+    const column = language === 'ru' ? questions.questionRu : questions.questionUz
+    const searchPattern = `%${query}%`
+    const rows = await db
+      .select({
+        id: questions.id,
+        text: column,
+        topicId: questions.topicId,
+      })
+      .from(questions)
+      .where(and(
+        eq(questions.bankId, bankId),
+        sql`${column} ILIKE ${searchPattern}`,
+      ))
+      .limit(limit)
+    return rows
+  },
 }

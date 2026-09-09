@@ -8,18 +8,29 @@ import { useMemo, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { X, Search, BookOpen, ListChecks, ChevronLeft } from 'lucide-react'
+import { config } from '../../shared/config'
+import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { haptics } from '../../platform/haptics'
 import { lessons } from '../../content/lessons'
 import { modules } from '../../content/modules'
 import { searchContent, type SearchResults } from './search-index'
 
+interface ServerSearchHit {
+  text: string
+  topicId: number | null
+  launchToken: string
+  expiresAt: string
+}
+
 export default function SearchPage() {
   const navigate = useNavigate()
   const tt = useT(useAppStore((s) => s.settings.language))
   const lang = useAppStore((s) => s.settings.language)
+  const subjectId = useSubjectStore((s) => s.subjectId)
   const questions = useQuestionsStore((s) => s.questions)
   const topics = useQuestionsStore((s) => s.topics)
 
@@ -31,24 +42,71 @@ export default function SearchPage() {
     return () => clearTimeout(t)
   }, [query])
 
-  const results: SearchResults | null = useMemo(() => {
-    if (debounced.trim().length < 2) return null
-    return searchContent(debounced, { questions, topics, lessons, modules, lang })
-  }, [debounced, questions, topics, lang])
+  const isV2 = config.testSessionsV2Enabled
 
-  const openQuestion = (id: number, text: string) => {
+  // v2: Server search state
+  const [serverHits, setServerHits] = useState<ServerSearchHit[]>([])
+
+  useEffect(() => {
+    if (!isV2) return
+    const q = debounced.trim()
+    if (q.length < 2) {
+      setServerHits([])
+      return
+    }
+    let cancelled = false
+    api.searchQuestions(subjectId, q, lang)
+      .then((res) => {
+        if (!cancelled) setServerHits(res.hits || [])
+      })
+      .catch(() => {
+        if (!cancelled) setServerHits([])
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [isV2, debounced, subjectId, lang])
+
+  // v1: Client-side full search
+  const results: SearchResults | null = useMemo(() => {
+    if (isV2 || debounced.trim().length < 2) return null
+    return searchContent(debounced, { questions, topics, lessons, modules, lang })
+  }, [isV2, debounced, questions, topics, lang])
+
+  // Lessons search (v1 and v2)
+  const lessonHits = useMemo(() => {
+    if (!isV2 || debounced.trim().length < 2) return []
+    return searchContent(debounced, { questions: [], topics, lessons, modules, lang }).lessons
+  }, [isV2, debounced, topics, lang])
+
+  const openQuestionV1 = (id: number, text: string) => {
     haptics.impact('light')
     navigate('/test/1', {
       state: { questionIds: [id], title: text.length > 60 ? `${text.slice(0, 59)}…` : text },
     })
   }
+
+  const openQuestionV2 = (hit: ServerSearchHit) => {
+    haptics.impact('light')
+    const title = hit.text.length > 60 ? `${hit.text.slice(0, 59)}…` : hit.text
+    navigate('/test/1', {
+      state: {
+        mode: 'single',
+        serverSelector: { type: 'single', launchToken: hit.launchToken },
+        title,
+      },
+    })
+  }
+
   const openLesson = (moduleId: number, lessonIdx: number) => {
     haptics.impact('light')
     navigate('/darslik', { state: { moduleId, lessonIdx } })
   }
 
-  const hasAny = results !== null && (results.questions.length > 0 || results.lessons.length > 0)
-  const isEmpty = results !== null && !hasAny
+  const questionsCount = isV2 ? serverHits.length : (results?.questions.length ?? 0)
+  const lessonsCount = isV2 ? lessonHits.length : (results?.lessons.length ?? 0)
+  const hasAny = debounced.trim().length >= 2 && (questionsCount > 0 || lessonsCount > 0)
+  const isEmpty = debounced.trim().length >= 2 && !hasAny
 
   return (
     <div className="px-4 pb-4">
@@ -83,46 +141,69 @@ export default function SearchPage() {
       )}
 
       {/* Savollar bo'limi */}
-      {hasAny && results.questions.length > 0 && (
+      {hasAny && questionsCount > 0 && (
         <div className="mb-5">
           <div className="flex items-center gap-2 mb-2">
             <ListChecks size={15} className="text-pprimary" />
             <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
-              {tt('searchQuestionsSection')} · {results.questions.length}
+              {tt('searchQuestionsSection')} · {questionsCount}
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            {results.questions.map((h) => (
-              <button
-                key={h.question.id}
-                onClick={() => openQuestion(h.question.id, h.question.text)}
-                className="w-full text-left rounded-2xl bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
-              >
-                <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
-                  {h.question.text}
-                </p>
-                {h.topicName && (
-                  <span className="text-[10.5px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-full">
-                    {h.topicName}
-                  </span>
-                )}
-              </button>
-            ))}
+            {isV2 ? (
+              serverHits.map((h, i) => {
+                const topic = topics.find((t) => t.id === h.topicId)
+                const topicName = topic ? (lang === 'ru' ? topic.nameRu : topic.nameUz) : null
+                return (
+                  <button
+                    key={h.launchToken || i}
+                    onClick={() => openQuestionV2(h)}
+                    className="w-full text-left rounded-2xl bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
+                  >
+                    <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
+                      {h.text}
+                    </p>
+                    {topicName && (
+                      <span className="text-[10.5px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-full">
+                        {topicName}
+                      </span>
+                    )}
+                  </button>
+                )
+              })
+            ) : (
+              results?.questions.map((h) => (
+                <button
+                  key={h.question.id}
+                  onClick={() => openQuestionV1(h.question.id, h.question.text)}
+                  className="w-full text-left rounded-2xl bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
+                >
+                  <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
+                    {h.question.text}
+                  </p>
+                  {h.topicName && (
+                    <span className="text-[10.5px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-full">
+                      {h.topicName}
+                    </span>
+                  )}
+                </button>
+              ))
+            )}
           </div>
         </div>
       )}
 
       {/* Darslar bo'limi */}
-      {hasAny && results.lessons.length > 0 && (
+      {hasAny && lessonsCount > 0 && (
         <div>
           <div className="flex items-center gap-2 mb-2">
             <BookOpen size={15} className="text-pprimary" />
             <p className="text-xs font-semibold uppercase tracking-wide text-pmuted">
-              {tt('searchLessonsSection')} · {results.lessons.length}
+              {tt('searchLessonsSection')} · {lessonsCount}
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            {results.lessons.map((h) => (
+            {(isV2 ? lessonHits : results?.lessons || []).map((h) => (
               <button
                 key={`${h.moduleId}:${h.lessonIdx}`}
                 onClick={() => openLesson(h.moduleId, h.lessonIdx)}

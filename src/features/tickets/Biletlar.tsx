@@ -1,4 +1,4 @@
-import { ChevronLeft } from 'lucide-react'
+import { ChevronLeft, Lock } from 'lucide-react'
 import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
@@ -6,6 +6,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
+import { isEffectivePremium, isTicketPremium } from '../../../shared/test-access'
 import { useT } from '../../shared/i18n'
 import { seededShuffle } from '../../shared/lib/seeded'
 import type { Question } from '../../shared/api'
@@ -72,7 +73,10 @@ export default function Biletlar() {
   const navigate      = useNavigate()
   const wrongByTicket = useAppStore((s) => s.wrongByTicket)
   const settings      = useAppStore((s) => s.settings)
+  const tariff        = useAppStore((s) => s.tariff)
+  const user          = useAppStore((s) => s.user)
   const tt            = useT(settings.language)
+  const isPremium     = isEffectivePremium({ tariff, premiumUntil: user?.premiumUntil })
   const questions        = useQuestionsStore((s) => s.questions)
   const topics           = useQuestionsStore((s) => s.topics)
   const questionsLoading = useQuestionsStore((s) => s.loading)
@@ -185,14 +189,17 @@ export default function Biletlar() {
   }, [tabFiltered, subjectId, selectedChapter])
 
   const handleTicket = (ticket: TicketItem) => {
+    if (isTicketPremium(ticket.id) && !isPremium) {
+      navigate('/premium')
+      return
+    }
     // Har doim 1-savoldan boshlanadi (avval /test/:id noto'g'ri savolni ochardi)
     navigate('/test/1', {
       state: {
         questionIds: ticket.questionIds,
         title: ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title,
-        ...(subjectId === 'fizika' && ticket.topicId
-          ? { mode: 'topic', serverSelector: { type: 'topic', topicId: ticket.topicId } }
-          : {}),
+        mode: 'ticket',
+        serverSelector: { type: 'ticket', ticketNumber: ticket.id },
       },
     })
   }
@@ -246,9 +253,15 @@ export default function Biletlar() {
         {filtered.map((ticket) => {
           // Badge = bu biletdagi yechilmagan xato savollar soni (urinishlar yig'indisi emas)
           const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[questionKey(subjectId, qid)] ?? 0) > 0).length
+          const locked = isTicketPremium(ticket.id) && !isPremium
           return (
             <button key={ticket.id} onClick={() => handleTicket(ticket)}
               className="relative flex flex-col items-center justify-center rounded-2xl bg-pcard shadow-xs hover:bg-psurface p-2.5 min-h-[82px] active:scale-95 transition-all overflow-hidden text-center">
+              {locked && (
+                <span className="absolute top-1.5 left-1.5 text-pwarning" aria-label="Premium">
+                  <Lock size={13} strokeWidth={2} />
+                </span>
+              )}
               {/* Raqamli badge FAQAT "Xatolar" tabinda ko'rinadi (qizil) */}
               {tab === 'errors' && wrongCount > 0 && (
                 <span className="absolute top-1.5 right-1.5 bg-pdanger text-white text-[9.5px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center shadow-xs">

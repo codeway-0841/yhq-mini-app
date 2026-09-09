@@ -10,7 +10,8 @@ import {
   Bookmark,
   Signpost,
   Hash,
-  Play,
+  Brain,
+  Zap,
   NotebookText,
   Bot,
 } from 'lucide-react'
@@ -52,20 +53,26 @@ export default function ModesPage() {
     navigate('/test/1', { state: { mode: m, title } })
   }
 
+  // Aniq fanlar (hisob-kitob, formulali): 10 soniyalik speed test ularga mos emas
+  const isExactScience = ['matematika', 'fizika', 'kimyo'].includes(subject.id)
+
   const items = [
-    { icon: BookOpen,      label: tt('topics'),      onClick: () => navigate('/mavzular') },
-    { icon: Ticket,        label: tt('tickets'),     onClick: () => navigate('/biletlar') },
-    { icon: Swords,        label: tt('duelTitle'),   onClick: () => navigate('/octagon') },
-    { icon: HeartCrack,    label: tt('mistakes'),    onClick: () => navigate('/xatolar') },
-    { icon: GraduationCap, label: tt('lessons'),     onClick: () => navigate('/darslik') },
-    { icon: Bookmark,      label: tt('saved'),       onClick: goSaved },
+    { icon: BookOpen,      label: tt('topics'),        onClick: () => navigate('/mavzular') },
+    { icon: Ticket,        label: tt('tickets'),       onClick: () => navigate('/biletlar') },
+    { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
+    { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
+    { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate('/darslik') },
+    { icon: Bookmark,      label: tt('saved'),         onClick: goSaved },
     ...(subject.id === 'yhq'
-      ? [{ icon: Signpost, label: tt('roadSigns'),   onClick: () => navigate('/belgilar') }]
+      ? [{ icon: Signpost, label: tt('roadSigns'),     onClick: () => navigate('/belgilar') }]
       : []),
-    { icon: Hash,          label: tt('numeric'),     onClick: goMode('numeric', tt('numeric')) },
-    { icon: Play,          label: tt('adaptive'),    onClick: () => navigate('/adaptive') },
-    { icon: NotebookText,  label: tt('cheatsheets'), onClick: () => navigate('/shpargalkalar') },
-    { icon: Bot,           label: tt('aiTutor'),     onClick: () => showToast(tt('comingSoonD')) },
+    { icon: Hash,          label: tt('numeric'),       onClick: goMode('numeric', tt('numeric')) },
+    { icon: Brain,         label: tt('adaptiveTitle'), onClick: () => navigate('/adaptive') },
+    ...(!isExactScience
+      ? [{ icon: Zap,      label: tt('speedRound'),    onClick: () => navigate('/speed') }]
+      : []),
+    { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
+    { icon: Bot,           label: tt('aiTutor'),       onClick: () => showToast(tt('comingSoonD')) },
   ]
 
   return (

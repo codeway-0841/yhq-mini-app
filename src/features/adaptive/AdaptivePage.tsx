@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
-import { Brain, X, Check, CalendarClock } from 'lucide-react'
+import { Brain, X, Check, CalendarClock, Sparkles } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore }      from '../../shared/store/useAppStore'
@@ -13,9 +13,13 @@ import { useT }             from '../../shared/i18n'
 import { api }              from '../../shared/api'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
 import { shuffleArray }     from '../../shared/lib/seeded'
+import { isEffectivePremium } from '../../../shared/test-access'
+import { SubscriptionModal } from '../premium'
 
 /** SR dashboard xulosasi (#46) — server javob shakli */
 type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null }
+
+const ADAPTIVE_FREE_SESSION_LIMIT = 15
 
 function EFBadge({ card }: { card: SRCard | undefined }) {
   if (!card) return null
@@ -56,14 +60,28 @@ export default function AdaptivePage() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
   const user     = useAppStore((s) => s.user)
+  const tariff   = useAppStore((s) => s.tariff)
   const settings = useAppStore((s) => s.settings)
   const submitAnswer = useAppStore((s) => s.submitAnswer)
   const questions = useQuestionsStore((s) => s.questions)
   const topics    = useQuestionsStore((s) => s.topics)
+  const questionsLoaded = useQuestionsStore((s) => s.loaded)
+  const questionsLoading = useQuestionsStore((s) => s.loading)
+  const questionsError = useQuestionsStore((s) => s.error)
   const tt = useT(settings.language)
+
+  const isPremium = isEffectivePremium({ tariff, premiumUntil: user?.premiumUntil })
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
 
   const { currentId, sessionCount, startSession, recordAnswer, advanceNext } = useAdaptiveStore()
   const subjectId = useSubjectStore((s) => s.subjectId)
+
+  // Savollar yuklanmagan bo'lsa xavfsiz yuklab olish
+  useEffect(() => {
+    if (!questionsLoaded && !questionsLoading && !questionsError) {
+      void useQuestionsStore.getState().load(settings.language, subjectId)
+    }
+  }, [questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
 
   // SR dashboard xulosasi (#46) — "bugun tayyorlar" soni va prognoz
   const [summary, setSummary] = useState<CardsSummary | null>(null)
@@ -128,6 +146,56 @@ export default function AdaptivePage() {
     if (!q?.options) return []
     return settings?.shuffleOptions ? shuffleArray(q.options) : q.options
   }, [q?.options, settings?.shuffleOptions])
+
+  if (!isPremium && sessionCount >= ADAPTIVE_FREE_SESSION_LIMIT) {
+    return (
+      <div className="flex flex-col min-h-screen bg-pcanvas">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+          <div className="flex items-center justify-between px-4 py-2.5">
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
+              <X size={20} />
+            </button>
+            <div className="flex items-center gap-2">
+              <Brain size={16} className="text-ppurple" />
+              <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
+            </div>
+            <div className="w-8" />
+          </div>
+        </header>
+
+        <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 px-4 text-center max-w-sm mx-auto">
+          <div className="size-16 rounded-2xl bg-pwarning/15 text-pwarning flex items-center justify-center mb-1">
+            <Sparkles size={32} />
+          </div>
+          <h2 className="text-lg font-bold text-pfg">{tt('adaptiveTitle')}</h2>
+          <p className="text-sm text-pmuted leading-relaxed">
+            {tt('adaptiveFreeLimit')}
+          </p>
+
+          <div className="flex flex-col gap-2.5 w-full mt-4">
+            <button
+              type="button"
+              onClick={() => setShowSubscriptionModal(true)}
+              className="w-full bg-pprimary text-ponprimary font-semibold py-3.5 rounded-2xl text-sm shadow-xs hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer"
+            >
+              {tt('subscribe')}
+            </button>
+            <button
+              type="button"
+              onClick={() => goBack(navigate)}
+              className="w-full bg-psurface text-pfg font-semibold py-3 rounded-2xl text-sm hover:bg-pcard active:scale-[0.98] transition-all cursor-pointer"
+            >
+              {tt('backWord')}
+            </button>
+          </div>
+        </div>
+
+        {showSubscriptionModal && (
+          <SubscriptionModal onClose={() => setShowSubscriptionModal(false)} />
+        )}
+      </div>
+    )
+  }
 
   if (!q) {
     return (
@@ -227,6 +295,9 @@ export default function AdaptivePage() {
           )
         })}
       </div>
+      {showSubscriptionModal && (
+        <SubscriptionModal onClose={() => setShowSubscriptionModal(false)} />
+      )}
     </div>
   )
 }

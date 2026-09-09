@@ -20,7 +20,7 @@ const Dashboard       = lazy(dashboardChunk)
 // Har sahifa chunk'i NOMLANGAN loader orqali — boot'dan keyin idle prefetch
 // (pastda) shu loader'larni qayta ishlatadi (import() modul keshi tufayli
 // ikki marta yuklanmaydi — lazy bilan bir xil modul).
-const testPageChunk        = () => import('./features/test/TestPage')
+const testPageChunk        = () => import('./features/test/TestRoutePage')
 const testlarChunk         = () => import('./features/testlar/TestlarPage')
 const darslikChunk         = () => import('./features/lessons/Darslik')
 const biletlarChunk        = () => import('./features/tickets/Biletlar')

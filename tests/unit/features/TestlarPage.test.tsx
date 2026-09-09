@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 
 const { mockNavigate } = vi.hoisted(() => ({ mockNavigate: vi.fn() }))
 vi.mock('react-router-dom', async (importOriginal) => {
@@ -15,6 +15,8 @@ beforeEach(() => {
   mockNavigate.mockReset()
   useAppStore.setState({
     settings: { ...useAppStore.getState().settings, language: 'uz' },
+    tariff: 'free',
+    user: { id: 'user-1', firstName: 'Ali', tariff: 'free', lastName: undefined, username: undefined, photoUrl: undefined, phone: undefined },
   })
 })
 
@@ -46,5 +48,29 @@ describe('TestlarPage — Mode Card Availability', () => {
     expect(screen.getByText(/50 talik/i)).toBeInTheDocument()
     expect(screen.getByText(/100 talik/i)).toBeInTheDocument()
     expect(screen.getByText(/marafon/i)).toBeInTheDocument()
+  })
+
+  it('free user pullik testga bossa Premium sahifasiga yuboradi', () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+    render(<TestlarPage />)
+
+    fireEvent.click(screen.getByText(/50 talik/i))
+
+    expect(mockNavigate).toHaveBeenCalledWith('/premium')
+  })
+
+  it('premium user pullik testni ochadi', () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+    useAppStore.setState({
+      tariff: 'premium',
+      user: { id: 'user-1', firstName: 'Ali', tariff: 'premium', lastName: undefined, username: undefined, photoUrl: undefined, phone: undefined },
+    })
+    render(<TestlarPage />)
+
+    fireEvent.click(screen.getByText(/50 talik/i))
+
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: { mode: 'random50', title: '50 talik test' },
+    })
   })
 })

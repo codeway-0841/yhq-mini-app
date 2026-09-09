@@ -473,6 +473,22 @@ export const api = {
       'POST', `/test-sessions/${encodeURIComponent(sessionId)}/finish`, { status }, 20_000,
     ),
 
+  searchQuestions: (subjectId: string, query: string, language: 'uz' | 'ru' = 'uz') =>
+    request<{ hits: Array<{ text: string; topicId: number | null; launchToken: string; expiresAt: string }> }>(
+      'GET',
+      `/questions/search?subjectId=${encodeURIComponent(subjectId)}&query=${encodeURIComponent(query)}&language=${encodeURIComponent(language)}`,
+    ),
+
+  getTopMistakes: (subjectId: string, language: 'uz' | 'ru' = 'uz') =>
+    request<{
+      total: number
+      byTopic: Array<{ topicId: number; count: number }>
+      top: Array<{ text: string; count: number; topicId: number | null; launchToken: string; expiresAt: string }>
+    }>(
+      'GET',
+      `/progress/mistakes/overview?subjectId=${encodeURIComponent(subjectId)}&language=${encodeURIComponent(language)}`,
+    ),
+
   /** Referal statistikasi (Profil kartasi).
    *  Server javobi: getStats + {rewardDays, cap} (users.router.ts) — kontrakt
    *  drift'ini olib tashladik (audit C5). */

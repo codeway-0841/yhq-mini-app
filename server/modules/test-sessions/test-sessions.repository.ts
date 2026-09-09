@@ -106,7 +106,9 @@ export const testSessionsRepository = {
     subjectId: string,
     bankId: string,
     txOrDb: DB,
+    topicId?: number,
   ): Promise<number[]> {
+    const topicFilter = topicId !== undefined ? sql`AND q.topic_id = ${topicId}` : sql``
     const rows = await executeRows<{ id: number }>(sql`
       SELECT q.id::int AS id
       FROM progress p
@@ -114,6 +116,7 @@ export const testSessionsRepository = {
       JOIN questions q
         ON mistake.key = ${subjectId} || ':' || q.id::text
        AND q.bank_id = ${bankId}
+       ${topicFilter}
       WHERE p.user_id = ${userId}
         AND mistake.value::int > 0
       ORDER BY q.id

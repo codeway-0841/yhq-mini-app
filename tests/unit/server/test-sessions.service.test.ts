@@ -17,6 +17,7 @@ const repo = vi.hoisted(() => ({
   getQuestions: vi.fn(),
 }))
 const recordAnswer = vi.hoisted(() => vi.fn())
+const isPremiumUser = vi.hoisted(() => vi.fn())
 
 vi.mock('../../../server/config', () => ({
   config: {
@@ -39,6 +40,9 @@ vi.mock('../../../server/modules/progress/progress.repository', () => ({
 }))
 vi.mock('../../../server/modules/boss/boss.repository', () => ({
   bossRepository: { applyDamage: vi.fn().mockResolvedValue(undefined) },
+}))
+vi.mock('../../../server/utils/premium', () => ({
+  isPremiumUser,
 }))
 vi.mock('../../../server/config/subjects', () => ({
   resolveSubject: (id: string) => id === 'unknown'
@@ -128,6 +132,7 @@ describe('testSessionsService security invariants', () => {
       xpEarned: 10,
       coinsMinted: 1,
     })
+    isPremiumUser.mockResolvedValue(true)
   })
 
   it('never exposes master IDs or answers in an unanswered create payload', async () => {
@@ -160,7 +165,84 @@ describe('testSessionsService security invariants', () => {
     expect(testSessionInternals.sessionTtlMinutes({ type: 'mock' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'saved' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'mistakes' })).toBe(25)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'ticket', ticketNumber: 2 })).toBe(25)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'single', launchToken: 'lt1.dummy.token' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'exam', presetId: 'milliy-sertifikat' })).toBe(180)
+  })
+
+  it('requires effective premium before creating paid test modes', async () => {
+    isPremiumUser.mockResolvedValue(false)
+
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'random', count: 50 }, language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 403, message: 'premium_required' })
+    expect(repo.lockBankVersion).not.toHaveBeenCalled()
+  })
+
+  it('allows premium users to create paid test modes', async () => {
+    isPremiumUser.mockResolvedValue(true)
+    repo.listQuestionIds.mockResolvedValue(Array.from({ length: 50 }, (_, i) => i + 1))
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'random', count: 50 }, language: 'uz',
+    })
+    expect(result.session.mode).toBe('random')
+    expect(result.session.total).toBe(50)
+  })
+
+  it('limits free topic practice to the shared preview count', async () => {
+    isPremiumUser.mockResolvedValue(false)
+    repo.listQuestionIds.mockResolvedValue(Array.from({ length: 30 }, (_, i) => i + 1))
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'topic', topicId: 9 }, language: 'uz',
+    })
+    expect(result.session.total).toBe(10)
+  })
+
+  it('allows premium topic practice to use the full bounded topic set', async () => {
+    isPremiumUser.mockResolvedValue(true)
+    repo.listQuestionIds.mockResolvedValue(Array.from({ length: 30 }, (_, i) => i + 1))
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'topic', topicId: 9 }, language: 'uz',
+    })
+    expect(result.session.total).toBe(30)
+  })
+
+  it('opens the first three tickets for free and keeps ticket selection server-owned', async () => {
+    isPremiumUser.mockResolvedValue(false)
+    repo.listQuestionIds.mockResolvedValue(Array.from({ length: 60 }, (_, i) => i + 1))
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'ticket', ticketNumber: 2 }, language: 'uz',
+    })
+    expect(result.session.mode).toBe('ticket')
+    expect(result.session.total).toBe(20)
+    expect(repo.create.mock.calls[0]?.[0].questionIds).toEqual(
+      Array.from({ length: 20 }, (_, i) => i + 21),
+    )
+  })
+
+  it('requires premium for ticket four and later before reading the bank', async () => {
+    isPremiumUser.mockResolvedValue(false)
+
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'ticket', ticketNumber: 4 }, language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 403, message: 'premium_required' })
+    expect(repo.lockBankVersion).not.toHaveBeenCalled()
   })
 
   it('resolves a topic selector inside its subject bank without accepting master IDs', async () => {

@@ -86,7 +86,10 @@ function hydrate(
 function selectorForMode(mode: ServerPracticeMode): CreateTestSessionInput['selector'] {
   if (mode === 'saved') return { type: 'saved' }
   if (mode === 'mistakes') return { type: 'mistakes' }
+  if (mode === 'mock') return { type: 'mock' }
   if (mode === 'topic') throw new Error('topic_selector_required')
+  if (mode === 'ticket') throw new Error('ticket_selector_required')
+  if (mode === 'exam') throw new Error('exam_selector_required')
   return {
     type: 'random',
     count: mode === 'random20' ? 20 : mode === 'random50' ? 50 : 100,
@@ -171,14 +174,19 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         setFinished(next.answers.every(Boolean))
         setError(null)
       })
-      .catch(() => {
-        if (active) setError(isRu ? 'Тест не загрузился. Повторите попытку.' : 'Test yuklanmadi. Qayta urinib ko‘ring.')
+      .catch((cause) => {
+        if (!active) return
+        if (cause instanceof ApiError && cause.code === 'premium_required') {
+          navigate('/premium', { replace: true })
+          return
+        }
+        setError(isRu ? 'Тест не загрузился. Повторите попытку.' : 'Test yuklanmadi. Qayta urinib ko‘ring.')
       })
       .finally(() => {
         if (active) setLoading(false)
       })
     return () => { active = false }
-  }, [isRu, mode, persist, selector, selectorKey, settings.language, subjectId, userId])
+  }, [isRu, mode, navigate, persist, selector, selectorKey, settings.language, subjectId, userId])
 
   const question = useMemo(() =>
     snapshot?.questions.find((item) => item.position === snapshot.current),

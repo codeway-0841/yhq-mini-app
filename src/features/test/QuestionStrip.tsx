@@ -1,6 +1,9 @@
 import { useEffect, useRef } from 'react'
 
-/** Horizontal numbered strip showing per-question answer state. */
+const MAX_WINDOW_SIZE = 61
+const HALF_WINDOW = 30
+
+/** Horizontal numbered strip showing per-question answer state with windowing. */
 export default function QuestionStrip({ total, current, answers, onSelect }: {
   total: number; current: number
   answers: (string | null)[]
@@ -8,18 +11,26 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
 }) {
   const stripRef = useRef<HTMLDivElement>(null)
 
+  const windowSize = Math.min(total, MAX_WINDOW_SIZE)
+  const start = total <= MAX_WINDOW_SIZE
+    ? 0
+    : Math.max(0, Math.min(total - MAX_WINDOW_SIZE, current - HALF_WINDOW))
+  const end = Math.min(total, start + windowSize)
+
   useEffect(() => {
-    const el = stripRef.current?.children[current]
+    const localIndex = current - start
+    const el = stripRef.current?.children[localIndex]
     if (el instanceof HTMLElement && typeof el.scrollIntoView === 'function') {
       el.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
     }
-  }, [current])
+  }, [current, start])
 
   return (
     <div ref={stripRef}
       className="flex gap-1.5 overflow-x-auto px-4 py-2 [&::-webkit-scrollbar]:hidden"
       style={{ scrollbarWidth: 'none' }}>
-      {Array.from({ length: total }, (_: unknown, i: number) => {
+      {Array.from({ length: end - start }, (_: unknown, idx: number) => {
+        const i         = start + idx
         const ans       = answers[i]
         const isCurrent = i === current
         // Joriy savol HAR QANDAY holatda ko'k border bilan ajratiladi
@@ -41,3 +52,4 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
     </div>
   )
 }
+

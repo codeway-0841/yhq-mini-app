@@ -9,6 +9,8 @@ import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-bat
 import { tashkentDate } from '../../utils/date'
 import { Sentry } from '../../utils/sentry'
 import { getExamPreset } from '../../../shared/exam-presets'
+import { FREE_TOPIC_QUESTION_COUNT, isPremiumTest, ticketQuestionCount } from '../../../shared/test-access'
+import { isPremiumUser } from '../../utils/premium'
 import type {
   CreateTestSessionInput,
   DeliveredTestQuestion,
@@ -18,6 +20,7 @@ import type {
   TestSessionState,
 } from '../../../shared/test-session'
 import { createDeliveryToken, verifyDeliveryToken } from './delivery-proof'
+import { verifyLaunchToken } from './launch-token'
 import {
   testSessionsRepository,
   type SessionQuestionRow,
@@ -50,8 +53,8 @@ async function candidateQuestionIds(
 function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number {
   const productMinutes = selector.type === 'exam'
     ? getExamPreset(selector.presetId)?.durationMinutes ?? 25
-    : selector.type === 'mock' || selector.type === 'topic'
-      || selector.type === 'saved' || selector.type === 'mistakes'
+    : selector.type === 'mock' || selector.type === 'topic' || selector.type === 'ticket'
+      || selector.type === 'saved' || selector.type === 'mistakes' || selector.type === 'single'
       ? 25
       : selector.count === 20
         ? 30
@@ -93,6 +96,12 @@ function selectQuestionIds(ids: number[], seed: string, count: number): number[]
     .sort((a, b) => a.rank.localeCompare(b.rank) || a.id - b.id)
     .slice(0, count)
     .map((item) => item.id)
+}
+
+function ticketSlice(ids: number[], subjectId: string, ticketNumber: number): number[] {
+  const count = ticketQuestionCount(subjectId)
+  const start = (ticketNumber - 1) * count
+  return ids.slice(start, start + count)
 }
 
 function shuffledOptions(row: SessionQuestionRow, language: 'uz' | 'ru', seed: string, position: number) {
@@ -164,24 +173,41 @@ export const testSessionsService = {
     if (input.selector.type === 'exam' && !subject.examPresets.includes(input.selector.presetId)) {
       throw new AppError(400, 'exam_preset_not_supported')
     }
+    const needsPremiumLookup = isPremiumTest(input.selector) || input.selector.type === 'topic'
+    const premium = needsPremiumLookup ? await isPremiumUser(userId) : false
+    if (isPremiumTest(input.selector) && !premium) {
+      throw new AppError(403, 'premium_required')
+    }
     proofSecret()
     return transactionBestEffort(async (tx) => {
       const bankVersion = await testSessionsRepository.lockBankVersion(subject.dataSourceId, tx)
       if (bankVersion === null) throw new AppError(404, 'question_bank_not_found')
       const topicId = input.selector.type === 'topic' ? input.selector.topicId : undefined
-      const allQuestionIds = input.selector.type === 'saved'
+      const allQuestionIds = input.selector.type === 'single'
+        ? (() => {
+            const verified = verifyLaunchToken(proofSecret(), { userId, subjectId: input.subjectId }, input.selector.launchToken)
+            if (!verified) throw new AppError(403, 'invalid_launch_token')
+            return [verified.questionId]
+          })()
+        : input.selector.type === 'saved'
         ? await testSessionsRepository.listSavedQuestionIds(
             userId, input.subjectId, subject.dataSourceId, tx,
           )
         : input.selector.type === 'mistakes'
           ? await testSessionsRepository.listMistakeQuestionIds(
-              userId, input.subjectId, subject.dataSourceId, tx,
+              userId, input.subjectId, subject.dataSourceId, tx, ...(input.selector.topicId !== undefined ? [input.selector.topicId] : []),
             )
         : await candidateQuestionIds(
             subject.dataSourceId, bankVersion, topicId, input.language, tx,
           )
+      const candidateIds = input.selector.type === 'ticket'
+        ? ticketSlice(allQuestionIds, input.subjectId, input.selector.ticketNumber)
+        : allQuestionIds
       if (input.selector.type === 'topic' && allQuestionIds.length === 0) {
         throw new AppError(404, 'topic_not_found')
+      }
+      if (input.selector.type === 'ticket' && candidateIds.length === 0) {
+        throw new AppError(404, 'ticket_not_found')
       }
       if (input.selector.type === 'saved' && allQuestionIds.length === 0) {
         throw new AppError(404, 'saved_questions_empty')
@@ -189,25 +215,31 @@ export const testSessionsService = {
       if (input.selector.type === 'mistakes' && allQuestionIds.length === 0) {
         throw new AppError(404, 'mistakes_empty')
       }
-      if (input.selector.type === 'random' && allQuestionIds.length < input.selector.count) {
+      if (input.selector.type === 'random' && candidateIds.length < input.selector.count) {
         throw new AppError(409, 'not_enough_questions')
       }
 
       const requestedCount = input.selector.type === 'random'
         ? input.selector.count
         : input.selector.type === 'topic'
-          ? Math.min(allQuestionIds.length, MAX_TOPIC_QUESTIONS)
+          ? Math.min(candidateIds.length, premium ? MAX_TOPIC_QUESTIONS : FREE_TOPIC_QUESTION_COUNT)
+          : input.selector.type === 'ticket'
+            ? candidateIds.length
           : input.selector.type === 'saved' || input.selector.type === 'mistakes'
-            ? Math.min(allQuestionIds.length, MAX_TOPIC_QUESTIONS)
+            ? Math.min(candidateIds.length, MAX_TOPIC_QUESTIONS)
+            : input.selector.type === 'single'
+              ? 1
             : input.selector.type === 'mock'
               ? 20
               : getExamPreset(input.selector.presetId)!.questionCount
-      if (input.selector.type !== 'topic' && allQuestionIds.length < requestedCount) {
+      if (input.selector.type !== 'topic' && candidateIds.length < requestedCount) {
         throw new AppError(409, 'not_enough_questions')
       }
 
       const selectionSeed = randomBytes(32).toString('hex')
-      const questionIds = selectQuestionIds(allQuestionIds, selectionSeed, requestedCount)
+      const questionIds = input.selector.type === 'ticket' || input.selector.type === 'single'
+        ? candidateIds
+        : selectQuestionIds(candidateIds, selectionSeed, requestedCount)
       const initialIssued = Math.min(questionIds.length, config.testSessions.bufferSize) - 1
       const expiresAt = new Date(Date.now() + sessionTtlMinutes(input.selector) * 60_000)
       const row = await testSessionsRepository.create({

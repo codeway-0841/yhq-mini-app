@@ -17,8 +17,42 @@ import { Sentry }               from '../../utils/sentry'
 import { SUBJECT_IDS, resolveSubject } from '../../config/subjects'
 import { getProvider }          from '../../providers'
 import { tashkentDate }         from '../../utils/date'
+import { config }               from '../../config'
 
 const router = Router()
+
+const MistakesOverviewQuery = z.object({
+  subjectId: z.string().min(1).max(32),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
+
+router.get(
+  '/progress/mistakes/overview',
+  wrap(async (req, res) => {
+    const userId = (req as { userId?: string }).userId
+    if (!userId || userId === '0') {
+      res.status(401).json({ error: 'authentication_required' })
+      return
+    }
+    const parsed = MistakesOverviewQuery.safeParse(req.query)
+    if (!parsed.success) {
+      res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
+      return
+    }
+    const { subjectId, language } = parsed.data
+    const subject = resolveSubject(subjectId)
+    const secret = config.testSessions.proofSecret || 'fallback-proof-secret'
+    const overview = await progressRepository.getMistakesOverview(
+      userId,
+      subject.id,
+      subject.dataSourceId,
+      secret,
+      language,
+    )
+    res.set('Cache-Control', 'private, no-store')
+    res.json(overview)
+  }),
+)
 
 // Route-level guard (audit #17): global telegramAuth USER_SEGMENTS tekshiruvi
 // bilan bir xil natija, lekin daily/achievements'dagi patternga mos —
