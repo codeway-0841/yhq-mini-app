@@ -1,0 +1,50 @@
+{
+  "description": "Source-confirmed printer errata for Matematika Test Print PDFs",
+  "errata": [
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 11,
+      "variant": 6,
+      "question": 3,
+      "raw_text": "0,8. 0,1. 0,2. 0,4.",
+      "resolved_options": {
+        "A1": "0,8.",
+        "A2": "0,1.",
+        "A3": "0,2.",
+        "A4": "0,4."
+      },
+      "reason": "Source print omitted option letters A), B), C), D); answers positioned as 4 distinct coordinates",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 11,
+      "variant": 96,
+      "question": 3,
+      "raw_text": "0,8. 0,1. 0,2. 0,4.",
+      "resolved_options": {
+        "A1": "0,8.",
+        "A2": "0,1.",
+        "A3": "0,2.",
+        "A4": "0,4."
+      },
+      "reason": "Source print omitted option letters A), B), C), D); answers positioned as 4 distinct coordinates",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 15,
+      "variant": 8,
+      "question": 30,
+      "raw_text": "A) 1; 2; 3. B) 2; 3. C) 1; 2. D 1; 3. .",
+      "resolved_options": {
+        "A1": "1; 2; 3.",
+        "A2": "2; 3.",
+        "A3": "1; 2.",
+        "A4": "1; 3."
+      },
+      "reason": "Source print omitted closing parenthesis on option letter D (printed as 'D 1; 3.')",
+      "status": "confirmed"
+    }
+  ]
+}
