@@ -3,7 +3,7 @@ import { persist } from 'zustand/middleware'
 import type { DeliveredTestQuestion } from '../../../shared/test-session'
 
 export type ServerAnswerStatus = 'correct' | 'wrong' | null
-export type ServerPracticeMode = 'random20' | 'random50' | 'random100' | 'saved' | 'mistakes' | 'topic' | 'ticket' | 'mock' | 'exam' | 'single'
+export type ServerPracticeMode = 'random20' | 'random50' | 'random100' | 'saved' | 'mistakes' | 'topic' | 'ticket' | 'lesson' | 'module' | 'mock' | 'exam' | 'single'
 
 export interface ServerTestSnapshot {
   sessionId: string

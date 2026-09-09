@@ -89,6 +89,8 @@ function selectorForMode(mode: ServerPracticeMode): CreateTestSessionInput['sele
   if (mode === 'mock') return { type: 'mock' }
   if (mode === 'topic') throw new Error('topic_selector_required')
   if (mode === 'ticket') throw new Error('ticket_selector_required')
+  if (mode === 'lesson') throw new Error('lesson_selector_required')
+  if (mode === 'module') throw new Error('module_selector_required')
   if (mode === 'exam') throw new Error('exam_selector_required')
   return {
     type: 'random',

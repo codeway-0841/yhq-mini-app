@@ -73,4 +73,32 @@ describe('TestRoutePage', () => {
       title: '2 - bilet',
     }))
   })
+
+  it('passes lesson and module selectors without exposing question IDs to the server engine', () => {
+    routeConfig.testSessionsV2Enabled = true
+    renderRoute({
+      mode: 'lesson',
+      serverSelector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+      title: 'Dars mashqi',
+    })
+
+    expect(serverPracticeSpy).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'lesson',
+      selector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+      title: 'Dars mashqi',
+    }))
+
+    serverPracticeSpy.mockClear()
+    renderRoute({
+      mode: 'module',
+      serverSelector: { type: 'module', moduleId: 1 },
+      title: 'Modul sinovi',
+    })
+
+    expect(serverPracticeSpy).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'module',
+      selector: { type: 'module', moduleId: 1 },
+      title: 'Modul sinovi',
+    }))
+  })
 })

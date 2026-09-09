@@ -22,6 +22,23 @@ function ticketSelector(value: unknown): CreateTestSessionInput['selector'] | nu
   return { type: 'ticket', ticketNumber: candidate.ticketNumber }
 }
 
+function lessonSelector(value: unknown): CreateTestSessionInput['selector'] | null {
+  if (!value || typeof value !== 'object') return null
+  const candidate = value as { type?: unknown; moduleId?: unknown; lessonIndex?: unknown }
+  if (candidate.type !== 'lesson') return null
+  if (!Number.isInteger(candidate.moduleId) || (candidate.moduleId as number) <= 0) return null
+  if (!Number.isInteger(candidate.lessonIndex) || (candidate.lessonIndex as number) < 0) return null
+  return { type: 'lesson', moduleId: candidate.moduleId as number, lessonIndex: candidate.lessonIndex as number }
+}
+
+function moduleSelector(value: unknown): CreateTestSessionInput['selector'] | null {
+  if (!value || typeof value !== 'object') return null
+  const candidate = value as { type?: unknown; moduleId?: unknown }
+  if (candidate.type !== 'module') return null
+  if (!Number.isInteger(candidate.moduleId) || (candidate.moduleId as number) <= 0) return null
+  return { type: 'module', moduleId: candidate.moduleId as number }
+}
+
 function singleSelector(value: unknown): CreateTestSessionInput['selector'] | null {
   if (!value || typeof value !== 'object') return null
   const candidate = value as { type?: unknown; launchToken?: unknown }
@@ -64,6 +81,12 @@ function serverPracticeProps(state: unknown): {
 
   const ticket = ticketSelector(s.serverSelector)
   if (ticket) return { mode: 'ticket', selector: ticket, title }
+
+  const lesson = lessonSelector(s.serverSelector)
+  if (lesson) return { mode: 'lesson', selector: lesson, title }
+
+  const module = moduleSelector(s.serverSelector)
+  if (module) return { mode: 'module', selector: module, title }
 
   if (mode === 'random20' || mode === 'random50' || mode === 'random100') {
     return { mode, title }

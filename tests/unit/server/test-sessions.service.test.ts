@@ -58,6 +58,7 @@ vi.mock('../../../server/config/subjects', () => ({
 import { AppError } from '../../../server/middleware/error-handler'
 import { createDeliveryToken } from '../../../server/modules/test-sessions/delivery-proof'
 import { testSessionInternals, testSessionsService } from '../../../server/modules/test-sessions/test-sessions.service'
+import lessonMap from '../../../shared/lesson-map.yhq.json'
 
 const SESSION_ID = '7fb4fc6e-26a3-4d41-a6b4-21266ef5c9aa'
 const EXPIRES = new Date(Date.now() + 60 * 60_000)
@@ -166,6 +167,8 @@ describe('testSessionsService security invariants', () => {
     expect(testSessionInternals.sessionTtlMinutes({ type: 'saved' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'mistakes' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'ticket', ticketNumber: 2 })).toBe(25)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'lesson', moduleId: 1, lessonIndex: 0 })).toBe(25)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'module', moduleId: 1 })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'single', launchToken: 'lt1.dummy.token' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'exam', presetId: 'milliy-sertifikat' })).toBe(180)
   })
@@ -272,6 +275,71 @@ describe('testSessionsService security invariants', () => {
       subjectId: 'yhq', selector: { type: 'topic', topicId: 999 }, language: 'uz',
     })).rejects.toMatchObject<AppError>({ statusCode: 404, message: 'topic_not_found' })
     expect(repo.create).not.toHaveBeenCalled()
+  })
+
+  it('resolves a curated lesson from the shared server-owned map', async () => {
+    const expected = lessonMap['1:0']
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq',
+      selector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+      language: 'uz',
+    })
+
+    expect(repo.listQuestionIds).not.toHaveBeenCalled()
+    expect(repo.create).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'lesson',
+      selector: { type: 'lesson', moduleId: 1, lessonIndex: 0, language: 'uz' },
+      questionIds: expected,
+      totalQuestions: expected.length,
+    }), TX)
+    expect(result.session).toMatchObject({ mode: 'lesson', total: expected.length })
+  })
+
+  it('resolves a module as the unique union of its curated lessons', async () => {
+    const map = lessonMap as Record<string, number[]>
+    const expected = [...new Set(Object.entries(map)
+      .filter(([key]) => key.startsWith('1:'))
+      .sort(([left], [right]) => Number(left.slice(2)) - Number(right.slice(2)))
+      .flatMap(([, ids]) => ids))]
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'module', moduleId: 1 }, language: 'uz',
+    })
+
+    expect(repo.create).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'module',
+      questionIds: expected,
+      totalQuestions: expected.length,
+    }), TX)
+    expect(result.session.total).toBe(expected.length)
+  })
+
+  it('fails closed for missing or stale curated sets and non-YHQ subjects', async () => {
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'yhq',
+      selector: { type: 'lesson', moduleId: 999, lessonIndex: 0 },
+      language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 404, message: 'curated_test_not_found' })
+
+    repo.getQuestions.mockResolvedValue([])
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'yhq',
+      selector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+      language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 409, message: 'curated_test_stale' })
+
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'rustili',
+      selector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+      language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 400, message: 'selector_not_supported' })
   })
 
   it('derives exam count and duration only from a preset allowed for the subject', async () => {

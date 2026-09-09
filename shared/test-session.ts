@@ -17,6 +17,17 @@ export const TicketTestSelectorSchema = z.object({
   ticketNumber: z.number().int().positive(),
 })
 
+export const LessonTestSelectorSchema = z.object({
+  type: z.literal('lesson'),
+  moduleId: z.number().int().positive().max(10_000),
+  lessonIndex: z.number().int().min(0).max(1_000),
+})
+
+export const ModuleTestSelectorSchema = z.object({
+  type: z.literal('module'),
+  moduleId: z.number().int().positive().max(10_000),
+})
+
 export const ExamTestSelectorSchema = z.object({
   type: z.literal('exam'),
   presetId: z.enum(EXAM_PRESET_IDS),
@@ -44,6 +55,8 @@ export const TestSelectorSchema = z.discriminatedUnion('type', [
   RandomTestSelectorSchema,
   TopicTestSelectorSchema,
   TicketTestSelectorSchema,
+  LessonTestSelectorSchema,
+  ModuleTestSelectorSchema,
   ExamTestSelectorSchema,
   MockTestSelectorSchema,
   SavedTestSelectorSchema,
@@ -86,7 +99,7 @@ export interface DeliveredTestQuestion {
 export interface TestSessionState {
   id: string
   subjectId: string
-  mode: 'random' | 'topic' | 'ticket' | 'exam' | 'mock' | 'saved' | 'mistakes' | 'single'
+  mode: 'random' | 'topic' | 'ticket' | 'lesson' | 'module' | 'exam' | 'mock' | 'saved' | 'mistakes' | 'single'
   status: 'active' | 'completed' | 'abandoned' | 'expired'
   answered: number
   total: number

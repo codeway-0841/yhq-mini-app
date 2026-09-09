@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  FREE_LESSON,
   FREE_TOPIC_QUESTION_COUNT,
   decideTestAccess,
   isEffectivePremium,
@@ -14,12 +15,15 @@ describe('shared/test-access — free vs premium policy', () => {
     expect(isPremiumTest({ type: 'random', count: 20 })).toBe(false)
     expect(isPremiumTest({ type: 'topic', topicId: 1 })).toBe(false)
     expect(isPremiumTest({ type: 'ticket', ticketNumber: 1 })).toBe(false)
+    expect(isPremiumTest({ type: 'lesson', ...FREE_LESSON })).toBe(false)
     expect(isPremiumTest({ type: 'saved' })).toBe(false)
     expect(isPremiumTest({ type: 'mistakes' })).toBe(false)
 
     expect(isPremiumTest({ type: 'random', count: 50 })).toBe(true)
     expect(isPremiumTest({ type: 'random', count: 100 })).toBe(true)
     expect(isPremiumTest({ type: 'ticket', ticketNumber: 4 })).toBe(true)
+    expect(isPremiumTest({ type: 'lesson', moduleId: FREE_LESSON.moduleId, lessonIndex: FREE_LESSON.lessonIndex + 1 })).toBe(true)
+    expect(isPremiumTest({ type: 'module', moduleId: FREE_LESSON.moduleId })).toBe(true)
     expect(isPremiumTest({ type: 'mock' })).toBe(true)
     expect(isPremiumTest({ type: 'exam', presetId: 'attestatsiya' })).toBe(true)
   })

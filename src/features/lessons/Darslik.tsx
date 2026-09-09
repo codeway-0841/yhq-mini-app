@@ -5,7 +5,7 @@ import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, Alert
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../content/lessons'
-import lessonMap from '../../content/lessonMap.yhq.json'
+import lessonMap from '../../../shared/lesson-map.yhq.json'
 import videosData from '../../content/videos.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
@@ -309,7 +309,14 @@ export default function Darslik() {
       const lessonTitle = (lessons[mod.id] && lessons[mod.id][lessonIdx])
         ? (ru ? lessons[mod.id][lessonIdx].titleRu : lessons[mod.id][lessonIdx].titleUz)
         : `${lessonIdx + 1}-dars`
-      navigate('/test/1', { state: { questionIds: lessonQuestionIds, title: `${lessonTitle} — ${ru ? 'практика' : 'mashq'}` } })
+      navigate('/test/1', {
+        state: {
+          questionIds: lessonQuestionIds,
+          mode: 'lesson',
+          serverSelector: { type: 'lesson', moduleId: mod.id, lessonIndex: lessonIdx },
+          title: `${lessonTitle} — ${ru ? 'практика' : 'mashq'}`,
+        },
+      })
       return
     }
     practiceModule(mod)
@@ -320,7 +327,14 @@ export default function Darslik() {
     const map = lessonMap as Record<string, number[]>
     const curatedIds = [...new Set((lessons[mod.id] ?? []).flatMap((_, idx) => map[`${mod.id}:${idx}`] ?? []))]
     if (curatedIds.length) {
-      navigate('/test/1', { state: { questionIds: curatedIds, title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}` } })
+      navigate('/test/1', {
+        state: {
+          questionIds: curatedIds,
+          mode: 'module',
+          serverSelector: { type: 'module', moduleId: mod.id },
+          title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}`,
+        },
+      })
       return
     }
     const slugs = MODULE_TOPICS[mod.id] ?? []

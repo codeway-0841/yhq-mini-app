@@ -5,7 +5,7 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
 import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import { lessons } from '../../../src/content/lessons'
-import lessonMap from '../../../src/content/lessonMap.yhq.json'
+import lessonMap from '../../../shared/lesson-map.yhq.json'
 import { modules } from '../../../src/content/modules'
 import { MODULE_TRANSITION_MS } from '../../../src/features/lessons/ModuleComplete'
 import { LESSON_LAUNCH_MS, LESSON_LAUNCH_REVEAL_MS } from '../../../src/features/lessons/LessonLaunch'
@@ -193,7 +193,12 @@ describe('Darslik learning path', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Qayta o‘qish' }))
     fireEvent.click(screen.getByRole('button', { name: /Mavzu bo'yicha mashq/ }))
     expect(navigate).toHaveBeenCalledWith('/test/1', {
-      state: { questionIds: lessonMap['1:0'], title: `${lessons[1][0].titleUz} — mashq` },
+      state: {
+        questionIds: lessonMap['1:0'],
+        mode: 'lesson',
+        serverSelector: { type: 'lesson', moduleId: 1, lessonIndex: 0 },
+        title: `${lessons[1][0].titleUz} — mashq`,
+      },
     })
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
   })
@@ -245,7 +250,12 @@ describe('Darslik learning path', () => {
     const map = lessonMap as Record<string, number[]>
     const ids = [...new Set(lessons[1].flatMap((_, idx) => map[`1:${idx}`] ?? []))]
     expect(navigate).toHaveBeenCalledWith('/test/1', {
-      state: { questionIds: ids, title: "Yo'l belgilari — Modul sinovi" },
+      state: {
+        questionIds: ids,
+        mode: 'module',
+        serverSelector: { type: 'module', moduleId: 1 },
+        title: "Yo'l belgilari — Modul sinovi",
+      },
     })
     expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
   })

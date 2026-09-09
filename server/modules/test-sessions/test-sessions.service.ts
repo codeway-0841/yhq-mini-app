@@ -10,6 +10,7 @@ import { tashkentDate } from '../../utils/date'
 import { Sentry } from '../../utils/sentry'
 import { getExamPreset } from '../../../shared/exam-presets'
 import { FREE_TOPIC_QUESTION_COUNT, isPremiumTest, ticketQuestionCount } from '../../../shared/test-access'
+import lessonMap from '../../../shared/lesson-map.yhq.json'
 import { isPremiumUser } from '../../utils/premium'
 import type {
   CreateTestSessionInput,
@@ -30,6 +31,21 @@ import {
 const MAX_TOPIC_QUESTIONS = 100
 const MAX_CANDIDATE_CACHE_ENTRIES = 64
 const candidateCache = new Map<string, readonly number[]>()
+const CURATED_LESSON_MAP = lessonMap as Record<string, number[]>
+
+type CuratedSelector = Extract<CreateTestSessionInput['selector'], { type: 'lesson' | 'module' }>
+
+function curatedQuestionIds(selector: CuratedSelector): number[] {
+  if (selector.type === 'lesson') {
+    return [...(CURATED_LESSON_MAP[`${selector.moduleId}:${selector.lessonIndex}`] ?? [])]
+  }
+  const prefix = `${selector.moduleId}:`
+  const ids = Object.entries(CURATED_LESSON_MAP)
+    .filter(([key]) => key.startsWith(prefix))
+    .sort(([left], [right]) => Number(left.slice(prefix.length)) - Number(right.slice(prefix.length)))
+    .flatMap(([, questionIds]) => questionIds)
+  return [...new Set(ids)]
+}
 
 async function candidateQuestionIds(
   bankId: string,
@@ -54,6 +70,7 @@ function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number
   const productMinutes = selector.type === 'exam'
     ? getExamPreset(selector.presetId)?.durationMinutes ?? 25
     : selector.type === 'mock' || selector.type === 'topic' || selector.type === 'ticket'
+      || selector.type === 'lesson' || selector.type === 'module'
       || selector.type === 'saved' || selector.type === 'mistakes' || selector.type === 'single'
       ? 25
       : selector.count === 20
@@ -170,6 +187,9 @@ export const testSessionsService = {
     if (input.selector.type === 'mock' && input.subjectId !== 'yhq') {
       throw new AppError(400, 'selector_not_supported')
     }
+    if ((input.selector.type === 'lesson' || input.selector.type === 'module') && input.subjectId !== 'yhq') {
+      throw new AppError(400, 'selector_not_supported')
+    }
     if (input.selector.type === 'exam' && !subject.examPresets.includes(input.selector.presetId)) {
       throw new AppError(400, 'exam_preset_not_supported')
     }
@@ -183,12 +203,17 @@ export const testSessionsService = {
       const bankVersion = await testSessionsRepository.lockBankVersion(subject.dataSourceId, tx)
       if (bankVersion === null) throw new AppError(404, 'question_bank_not_found')
       const topicId = input.selector.type === 'topic' ? input.selector.topicId : undefined
+      const curatedIds = input.selector.type === 'lesson' || input.selector.type === 'module'
+        ? curatedQuestionIds(input.selector)
+        : null
       const allQuestionIds = input.selector.type === 'single'
         ? (() => {
             const verified = verifyLaunchToken(proofSecret(), { userId, subjectId: input.subjectId }, input.selector.launchToken)
             if (!verified) throw new AppError(403, 'invalid_launch_token')
             return [verified.questionId]
           })()
+        : curatedIds
+        ? curatedIds
         : input.selector.type === 'saved'
         ? await testSessionsRepository.listSavedQuestionIds(
             userId, input.subjectId, subject.dataSourceId, tx,
@@ -200,6 +225,14 @@ export const testSessionsService = {
         : await candidateQuestionIds(
             subject.dataSourceId, bankVersion, topicId, input.language, tx,
           )
+      if (curatedIds) {
+        if (curatedIds.length === 0) throw new AppError(404, 'curated_test_not_found')
+        const existing = await testSessionsRepository.getQuestions(curatedIds, subject.dataSourceId, tx)
+        const existingIds = new Set(existing.map((question) => question.id))
+        if (curatedIds.some((questionId) => !existingIds.has(questionId))) {
+          throw new AppError(409, 'curated_test_stale')
+        }
+      }
       const candidateIds = input.selector.type === 'ticket'
         ? ticketSlice(allQuestionIds, input.subjectId, input.selector.ticketNumber)
         : allQuestionIds
@@ -225,6 +258,8 @@ export const testSessionsService = {
           ? Math.min(candidateIds.length, premium ? MAX_TOPIC_QUESTIONS : FREE_TOPIC_QUESTION_COUNT)
           : input.selector.type === 'ticket'
             ? candidateIds.length
+          : input.selector.type === 'lesson' || input.selector.type === 'module'
+            ? candidateIds.length
           : input.selector.type === 'saved' || input.selector.type === 'mistakes'
             ? Math.min(candidateIds.length, MAX_TOPIC_QUESTIONS)
             : input.selector.type === 'single'
@@ -238,6 +273,7 @@ export const testSessionsService = {
 
       const selectionSeed = randomBytes(32).toString('hex')
       const questionIds = input.selector.type === 'ticket' || input.selector.type === 'single'
+        || input.selector.type === 'lesson' || input.selector.type === 'module'
         ? candidateIds
         : selectQuestionIds(candidateIds, selectionSeed, requestedCount)
       const initialIssued = Math.min(questionIds.length, config.testSessions.bufferSize) - 1

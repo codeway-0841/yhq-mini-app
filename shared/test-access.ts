@@ -6,6 +6,7 @@ export type TestAccessDecision = {
 }
 
 const FREE_TICKET_COUNT = 3
+export const FREE_LESSON = { moduleId: 1, lessonIndex: 0 } as const
 export const FREE_TOPIC_QUESTION_COUNT = 10
 export const YHQ_TICKET_QUESTION_COUNT = 20
 export const DEFAULT_TICKET_QUESTION_COUNT = 30
@@ -34,6 +35,14 @@ export function decideTestAccess(selector: CreateTestSessionInput['selector']): 
       : { premiumRequired: false, reason: 'free' }
   }
   if (selector.type === 'exam' || selector.type === 'mock') {
+    return { premiumRequired: true, reason: 'premium_mode' }
+  }
+  if (selector.type === 'lesson') {
+    return selector.moduleId === FREE_LESSON.moduleId && selector.lessonIndex === FREE_LESSON.lessonIndex
+      ? { premiumRequired: false, reason: 'free' }
+      : { premiumRequired: true, reason: 'premium_mode' }
+  }
+  if (selector.type === 'module') {
     return { premiumRequired: true, reason: 'premium_mode' }
   }
   return { premiumRequired: false, reason: 'free' }
