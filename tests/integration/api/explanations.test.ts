@@ -7,6 +7,7 @@
 
 import { describe, it, expect } from 'vitest'
 import request from 'supertest'
+import { eq } from 'drizzle-orm'
 import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
 import { questions } from '../../../server/schema'
@@ -15,7 +16,10 @@ const app = createApp()
 
 describe('GET /api/questions/:questionId/explanation', () => {
   it('uz tilda statik tushuntirish qaytaradi', async () => {
-    const [q] = await db.select({ id: questions.id }).from(questions).limit(1)
+    const [q] = await db.select({ id: questions.id }).from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(1)
     expect(q).toBeDefined()
 
     const res = await request(app).get(`/api/questions/${q.id}/explanation?lang=uz`)
@@ -29,14 +33,20 @@ describe('GET /api/questions/:questionId/explanation', () => {
   })
 
   it('ru tilda statik tushuntirish qaytaradi', async () => {
-    const [q] = await db.select({ id: questions.id }).from(questions).limit(1)
+    const [q] = await db.select({ id: questions.id }).from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(1)
     const res = await request(app).get(`/api/questions/${q.id}/explanation?lang=ru`)
     expect(res.status).toBe(200)
     expect(res.body.text).toBeTruthy()
   })
 
   it('lang default uz', async () => {
-    const [q] = await db.select({ id: questions.id }).from(questions).limit(1)
+    const [q] = await db.select({ id: questions.id }).from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(1)
     const res = await request(app).get(`/api/questions/${q.id}/explanation`)
     expect(res.status).toBe(200)
   })
@@ -52,7 +62,10 @@ describe('GET /api/questions/:questionId/explanation', () => {
   })
 
   it("noto'g'ri lang → 400", async () => {
-    const [q] = await db.select({ id: questions.id }).from(questions).limit(1)
+    const [q] = await db.select({ id: questions.id }).from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(1)
     const res = await request(app).get(`/api/questions/${q.id}/explanation?lang=en`)
     expect(res.status).toBe(400)
   })

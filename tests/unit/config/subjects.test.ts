@@ -54,7 +54,7 @@ describe('shared/subjects — data integrity', () => {
     expect(byId['yhq']).toBe(true)       // 300 savol
     expect(byId['rustili']).toBe(true)   // 1000 savol
     expect(byId['fizika']).toBe(true)    // Fizika Test Print banki
-    expect(byId['matematika']).toBe(false)
+    expect(byId['matematika']).toBe(true)  // Matematika Test Print banki (11,040 savol)
     expect(byId['kimyo']).toBe(false)
     expect(byId['ingliz']).toBe(false)
     expect(byId['tarix']).toBe(false)

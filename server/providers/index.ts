@@ -11,6 +11,7 @@ const PROVIDERS: Record<string, QuestionBankProvider> = {
   traffic_rules_db: new DefaultQuestionBankProvider('traffic_rules_db'),
   russian_db:       new RussianQuestionBankProvider(),
   physics_db:       new PhysicsQuestionBankProvider(),
+  math_db:          new DefaultQuestionBankProvider('math_db'),
 }
 
 export function getProvider(dataSourceId: string): QuestionBankProvider {

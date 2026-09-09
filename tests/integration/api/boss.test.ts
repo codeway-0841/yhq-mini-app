@@ -101,7 +101,12 @@ describe('boss — GET /api/boss/state', () => {
 describe('boss — damage hook (/result)', () => {
   it('fresh to\'g\'ri javob boss\'ga zarar beradi; xato javob bermaydi (delta-based)', async () => {
     const periodKey = bossPeriodKey()
-    const [q] = await db.select().from(questions).limit(1)
+    // Bank-filtr + ORDER BY SHART: math_db importidan (11k qator) keyin
+    // ORDER BY'siz LIMIT heap tartibida math savolini qaytaradi → /result 404.
+    const [q] = await db.select().from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(1)
     expect(q).toBeDefined()
     const wrongOpt = Object.keys(q.optionsUz).find((k) => k !== q.correctAnswer) ?? '__x__'
 

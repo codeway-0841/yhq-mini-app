@@ -98,7 +98,7 @@ export const ContentBankSchema = z
     bankId: BankIdSchema,
     bankName: z.string().trim().min(2).max(160),
     topics: z.array(ContentBankTopicSchema).min(1).max(500),
-    items: z.array(ContentBankItemSchema).min(1).max(10_000),
+    items: z.array(ContentBankItemSchema).min(1).max(15_000),
   })
   .superRefine((bank, ctx) => {
     const topicExternalIds = new Set<string>()

@@ -103,6 +103,7 @@
     "content:validate": "tsx scripts/content-bank.ts validate",
     "content:export": "tsx scripts/content-bank.ts export",
     "content:audit:physics": "tsx scripts/audit-physics-print.ts",
+    "content:audit:math": "tsx scripts/audit-math-print.ts",
     "lint": "eslint .",
     "test": "npm run test:unit",
     "test:unit": "vitest run tests/unit",

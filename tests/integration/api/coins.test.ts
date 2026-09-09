@@ -149,7 +149,12 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
     // IKKI xil savol kerak: mint qoidasi ularni FARQLI baholaydi — qFix xato
     // qilinib keyin tuzatiladi (is_fix yo'li), qNew esa birinchi urinishda
     // to'g'ri yechiladi (oddiy +1 coin yo'li).
-    const [qFix, qNew] = await db.select().from(questions).limit(2)
+    // Bank-filtr + ORDER BY SHART: math_db importidan (11k qator) keyin
+    // ORDER BY'siz LIMIT heap tartibida math savolini qaytaradi → /result 404.
+    const [qFix, qNew] = await db.select().from(questions)
+      .where(eq(questions.bankId, 'traffic_rules_db'))
+      .orderBy(questions.id)
+      .limit(2)
     expect(qFix).toBeDefined()
     expect(qNew).toBeDefined()
     const wrongOpt = Object.keys(qFix.optionsUz).find((k) => k !== qFix.correctAnswer) ?? '__x__'

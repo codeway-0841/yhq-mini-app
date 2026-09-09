@@ -48,8 +48,13 @@ beforeAll(async () => {
   await authRepository.createSession({ token: TOKEN,       userId: UID,   provider: 'phone', expiresAt })
   await authRepository.createSession({ token: OTHER_TOKEN, userId: OTHER, provider: 'phone', expiresAt })
 
-  // Mavjud savollardan birini olamiz (saved FK savollar jadvaliga bog'langan)
-  const [q] = await db.select({ id: questions.id }).from(questions).limit(1)
+  // Mavjud savollardan birini olamiz (saved FK savollar jadvaliga bog'langan).
+  // Bank-filtr + ORDER BY SHART: math_db (11k qator) importidan keyin ORDER BY'siz
+  // LIMIT heap tartibida math savolini qaytarishi mumkin.
+  const [q] = await db.select({ id: questions.id }).from(questions)
+    .where(eq(questions.bankId, 'traffic_rules_db'))
+    .orderBy(questions.id)
+    .limit(1)
   if (!q) throw new Error('Test DB da savol yo\'q — avval npm run db:seed')
   questionId = q.id
 

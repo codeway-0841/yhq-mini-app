@@ -98,8 +98,11 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
   }
   questionsRepository.invalidateCache()
   // Octagon PvP pool staleness himoyasi (o'zgargan/o'chgan savol eski ko'rinishda qolmasin);
-  // xatolik savol saqlanishini BEKOR QILMAYDI — savol allaqachon bazada
-  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  // xatolik savol saqlanishini BEKOR QILMAYDI — savol allaqachon bazada.
+  // AWAIT YO'Q (2026-09-08): reload BARCHA banklarni to'liq o'qiydi (math_db 11k+ qo'shilgach
+  // ~21k row / Neon) — await admin mutatsiyani 15s+ gacha sekinlashtirardi (integration timeout).
+  // HTTP API Vercel'da, duel pool'lari Render WS xotirasida — bu reload baribir best-effort.
+  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.status(201).json({ id: insertedId, created: true })
 }))
 
@@ -145,7 +148,7 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
   await adminRepository.bulkInsertQuestions(recordsToInsert)
 
   questionsRepository.invalidateCache()
-  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
 
   res.status(201).json({ success: true, count: recordsToInsert.length })
 }))
@@ -168,7 +171,7 @@ const handleQuestionUpdate = wrap(async (req, res) => {
 
   if (!updated) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
-  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.json({ id, updated: true })
 })
 
@@ -185,7 +188,7 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
 
   if (!deleted) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
-  await reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
   res.status(204).send()
 }))
 
