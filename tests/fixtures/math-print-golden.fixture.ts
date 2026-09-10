@@ -186,7 +186,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "y = sin x + \\frac{\\pi}{6} .",
-      A2: "y = sin x + \\frac{\\pi}{3} . \u0006 \u0007.",
+      A2: "y = sin x + \\frac{\\pi}{3} . .",
       A3: "y = sin x - \\pi .",
       A4: "y = sin x .",
     },
@@ -527,7 +527,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-trigonometriya-001-09': {
     externalId: 'mtp-algebra-trigonometriya-001-09',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\u0006 \u0007 \\frac{1}{a -ab} \\frac"],
+    requiredInQuestion: ["\\frac{1}{a -ab} \\frac"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1.",

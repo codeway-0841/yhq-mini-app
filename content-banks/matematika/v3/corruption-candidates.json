@@ -1,0 +1,35 @@
+{
+  "audited_items": 11040,
+  "audited_texts": 110400,
+  "categories": {
+    "raw_operatorname": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "pin_pik_spacing": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "suspicious_sqrt": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "raw_left_right": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "ascii_control_chars": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "variant_headers": {
+      "count": 0,
+      "status": "resolved"
+    },
+    "broken_sub_sup": {
+      "count": 0,
+      "status": "resolved"
+    }
+  },
+  "all_resolved": true
+}

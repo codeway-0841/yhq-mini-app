@@ -141,7 +141,14 @@ async function runImport(txOrDb?: any) {
   }
   console.log('')
 
-  // 4. Yakuniy tekshiruv
+  // 4. question_banks.content_version bump
+  await executeRows(sql`
+    UPDATE question_banks
+    SET content_version = content_version + 1
+    WHERE id = ${BANK_ID}
+  `, txOrDb)
+
+  // 5. Yakuniy tekshiruv
   const after = await executeRows<{ q: number; t: number }>(sql`
     SELECT (SELECT COUNT(*)::int FROM questions WHERE bank_id = ${BANK_ID}) AS q,
            (SELECT COUNT(*)::int FROM topics WHERE bank_id = ${BANK_ID}) AS t

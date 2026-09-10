@@ -123,11 +123,13 @@ def normalize_typography(text: str) -> str:
     text = re.sub(r"√\s*([A-Za-z0-9]+(?:\s*[+\-]\s*[A-Za-z0-9]+)?)", r"\\sqrt{\1}", text)
     text = text.replace("√", r"\sqrt{}")
 
-    # Large parentheses and brackets
-    text = re.sub(r"[⎛⎜⎝\x0c]+", r"\\left(", text)
-    text = re.sub(r"[⎞⎟⎠\r]+", r"\\right)", text)
-    text = re.sub(r"[\x10\x02]+", r"[", text)
-    text = re.sub(r"[\x11\x03]+", r"]", text)
+    # Large parentheses, brackets, and mathematical extension glyphs
+    text = re.sub(r"[\x18\x17]{2,}", "|", text)
+    text = re.sub(r"[⎛⎜⎝\x0c\x06\x17\x1a]+", r"\\left(", text)
+    text = re.sub(r"[⎞⎟⎠\r\x07\x18\x1b]+", r"\\right)", text)
+    text = re.sub(r"[\x10\x02\x08\x15]+", r"[", text)
+    text = re.sub(r"[\x11\x03\x09\x16]+", r"]", text)
+    text = re.sub(r"[\x13\x14\x19\x1f]+", r"\\cup ", text)
     text = text.replace("\x0f", "").replace("\x12", "").replace("\x04", "").replace("\x05", "")
     text = re.sub(r"(?:\\left\s*\(\s*){2,}", r"\\left(", text)
     text = re.sub(r"(?:\\right\s*\)\s*){2,}", r"\\right)", text)
@@ -135,6 +137,9 @@ def normalize_typography(text: str) -> str:
 
     # Remove residual system bracket chars from regular text
     text = re.sub(r"[⎧⎪⎨⎩⎫⎬⎭\x0e]+", "", text)
+
+    # Strip any remaining unmapped ASCII control characters (excluding newline and tab)
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", text)
 
     # SubSup ordering: a^2_1 or a^{2}_{1} -> a_{1}^{2}
     text = re.sub(r"([a-zA-Z])\^\{?(\d+)\}?\s*_\{?(\d+)\}?", r"\1_{\3}^{\2}", text)

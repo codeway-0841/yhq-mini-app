@@ -75,6 +75,11 @@ class TestMathFormulaParser(unittest.TestCase):
         normalized = normalize_typography(text)
         self.assertEqual(normalized, "a_{1}^{2} + a_{2}^{2} + a_{3}^{2} = 93")
 
+    def test_math_delimiter_glyphs_and_control_chars(self):
+        text = "\x06x + y\x07 \\in \x08a; b\x09 \x13 \x08c; d\x09 \x18\x18\x18"
+        normalized = normalize_typography(text)
+        self.assertEqual(normalized, r"\left(x + y\right) \in [a; b] \cup [c; d] |")
+
 
 if __name__ == "__main__":
     unittest.main()
