@@ -7,6 +7,8 @@ import unittest
 from scripts.math_pdf.option_parser import (
     find_option_markers_in_text,
     parse_question_options,
+    clean_option_text,
+    clean_question_body,
 )
 
 
@@ -53,6 +55,18 @@ class TestMathOptions(unittest.TestCase):
         self.assertEqual(opts["A2"], "0,1.")
         self.assertEqual(opts["A3"], "0,2.")
         self.assertEqual(opts["A4"], "0,4.")
+
+    def test_clean_option_trailing_noise(self):
+        self.assertEqual(clean_option_text("\\frac{x + 2}{x -1}\n+."), "\\frac{x + 2}{x -1}.")
+        self.assertEqual(clean_option_text("2x + 1 -."), "2x + 1.")
+        self.assertEqual(clean_option_text("5."), "5.")
+
+    def test_clean_question_body_variant_header(self):
+        text = "Variant-95 1. Natural n sonining kvadrati..."
+        cleaned = clean_question_body(text)
+        self.assertFalse(cleaned.startswith("Variant-95"))
+        self.assertFalse(cleaned.startswith("1."))
+        self.assertTrue(cleaned.startswith("Natural n"))
 
 
 if __name__ == "__main__":

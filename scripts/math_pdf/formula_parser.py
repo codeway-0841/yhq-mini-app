@@ -30,7 +30,7 @@ SYMBOL_MAP = {
     "∅": r"\emptyset ",
 }
 
-SYSTEM_CHARS = set("⎧⎪⎨⎩")
+SYSTEM_CHARS = set("⎧⎪⎨⎩\x0e")
 
 
 @dataclass
@@ -106,8 +106,13 @@ def normalize_typography(text: str) -> str:
 
     # Trig functions and powers
     text = re.sub(r"\b(sin|cos)\s*([2346])\b", r"\\\1^{\2}", text)
-    text = re.sub(r"\b(arcctg|arctg)\b", r"\\operatorname{\1}", text)
-    text = re.sub(r"\b(ctg|tg)\b", r"\\operatorname{\1}", text)
+    text = re.sub(r"(?<!\\operatorname\{)\b(arcctg|arctg)\b(?!\})", r"\\operatorname{\1}", text)
+    text = re.sub(r"(?<!\\operatorname\{)\b(ctg|tg)\b(?!\})", r"\\operatorname{\1}", text)
+    text = re.sub(r"(\\operatorname\{)+([a-zA-Z]+)\}+", r"\\operatorname{\2}", text)
+
+    # Greek / pi parameter spacing (e.g. \pin, \pik -> \pi n, \pi k)
+    text = re.sub(r"\\pi([a-zA-Z]+)", r"\\pi \1", text)
+    text = re.sub(r"π\s*([a-zA-Z])\b", r"\\pi \1", text)
 
     # Logarithms: log2 x -> \log_{2} x
     text = re.sub(r"\blog\s*([0-9]+)\b", r"\\log_{\1}", text)
@@ -124,9 +129,15 @@ def normalize_typography(text: str) -> str:
     text = re.sub(r"[\x10\x02]+", r"[", text)
     text = re.sub(r"[\x11\x03]+", r"]", text)
     text = text.replace("\x0f", "").replace("\x12", "").replace("\x04", "").replace("\x05", "")
+    text = re.sub(r"(?:\\left\s*\(\s*){2,}", r"\\left(", text)
+    text = re.sub(r"(?:\\right\s*\)\s*){2,}", r"\\right)", text)
+    text = re.sub(r"\\left\(\s*\\right\)", "", text)
 
     # Remove residual system bracket chars from regular text
-    text = re.sub(r"[⎧⎪⎨⎩⎫⎬⎭]+", "", text)
+    text = re.sub(r"[⎧⎪⎨⎩⎫⎬⎭\x0e]+", "", text)
+
+    # SubSup ordering: a^2_1 or a^{2}_{1} -> a_{1}^{2}
+    text = re.sub(r"([a-zA-Z])\^\{?(\d+)\}?\s*_\{?(\d+)\}?", r"\1_{\3}^{\2}", text)
 
     # Merge consecutive superscripts e.g. ^{2}^{x} -> ^{2x}
     for _ in range(5):
@@ -333,39 +344,80 @@ def reconstruct_fractions_with_drawings(
     return normalize_typography(full_text)
 
 
+def is_system_bracket_span(span: SpanAtom) -> bool:
+    if any(c in "⎧⎪⎨⎩" for c in span.text):
+        return True
+    if "\x0e" in span.text and "CMEX" in span.font.upper():
+        return True
+    return False
+
+
+def is_math_equation_candidate(text: str) -> bool:
+    t = normalize_typography(text).strip()
+    if re.match(r"^\s*\d{1,2}\.\s+", t):
+        return False
+    if any(rel in t for rel in ["=", "<", ">", "≤", "≥", r"\le", r"\ge", r"\ne"]):
+        return True
+    stripped = re.sub(r"[0-9a-zA-Z\+\-\*\/\^\_\{\}\(\)\[\]\s\\]", "", t)
+    if len(stripped) == 0 and len(t) > 0 and not any(w in t.lower() for w in ["bo", "dastlabki", "hadning", "toping", "agar"]):
+        return True
+    return False
+
+
 def reconstruct_system_cases(lines: list[LineAtom]) -> str:
+    r"""
+    Detects system of equation curly brackets and formats them as \begin{cases} ... \end{cases}.
     """
-    Detects system of equation curly brackets and formats them as \\begin{cases} ... \\end{cases}.
-    """
-    all_text = " ".join(l.text for l in lines)
-    if not any(c in all_text for c in SYSTEM_CHARS):
+    bracket_spans = [s for l in lines for s in l.spans if is_system_bracket_span(s)]
+    if not bracket_spans:
         return ""
 
-    # Find the curly bracket spans
-    bracket_lines = [l for l in lines if any(c in l.text for c in SYSTEM_CHARS)]
-    if not bracket_lines:
+    bracket_x1 = max(s.bbox.x1 for s in bracket_spans)
+    bracket_y1 = max(s.bbox.y1 for s in bracket_spans)
+
+    # First option marker y
+    first_opt_y = min((l.y0 for l in lines if re.search(r'(?<![a-zA-Zа-яА-Я0-9_\\\^∩∪])[ABCD]\s*\)', l.text)), default=9999.0)
+    max_allowed_y = min(first_opt_y, bracket_y1 + 30.0)
+
+    cand_lines: list[LineAtom] = []
+    for l in lines:
+        if l.y0 >= max_allowed_y:
+            continue
+        lt = l.text.strip()
+        if any(lt.startswith(p) for p in ["tengsizlik", "sistemasi"]):
+            continue
+        if re.search(r'(?<![a-zA-Zа-яА-Я0-9_\\\^∩∪])[ABCD]\s*\)', lt):
+            continue
+        if not is_math_equation_candidate(lt):
+            if not any(is_system_bracket_span(s) for s in l.spans):
+                continue
+
+        valid_spans = [
+            s for s in l.spans
+            if not is_system_bracket_span(s) and s.text.strip() and s.bbox.x0 >= bracket_x1 - 2.0
+            and s.bbox.y1 <= max_allowed_y
+        ]
+        if valid_spans:
+            spans_text = "".join(s.text for s in valid_spans)
+            if not is_math_equation_candidate(spans_text):
+                continue
+            r = pymupdf.Rect(
+                min(s.bbox.x0 for s in valid_spans),
+                min(s.bbox.y0 for s in valid_spans),
+                max(s.bbox.x1 for s in valid_spans),
+                max(s.bbox.y1 for s in valid_spans),
+            )
+            cand_lines.append(LineAtom(bbox=r, spans=valid_spans))
+
+    if not cand_lines:
         return ""
 
-    bracket_x1 = max(
-        s.bbox.x1 for l in bracket_lines for s in l.spans if any(c in s.text for c in SYSTEM_CHARS)
-    )
-
-    # Group lines to the right of the bracket into equation rows based on y-clustering
-    eq_lines = [
-        l for l in lines
-        if l.x0 >= bracket_x1 - 2.0 and not l.text.strip().startswith("tengsizlik") and not l.text.strip().startswith("sistemasi")
-        and not any(c in l.text for c in "ABCD)")
-    ]
-
-    if not eq_lines:
-        return ""
-
-    # Cluster equation lines into rows (row gap > 10pt)
-    eq_lines.sort(key=lambda l: (round(l.y0, 1), l.x0))
+    # Cluster equation lines into rows (row gap > 12pt)
+    cand_lines.sort(key=lambda l: (round(l.y0, 1), l.x0))
     rows: list[list[LineAtom]] = []
-    curr_row: list[LineAtom] = [eq_lines[0]]
+    curr_row: list[LineAtom] = [cand_lines[0]]
 
-    for l in eq_lines[1:]:
+    for l in cand_lines[1:]:
         if l.y0 - curr_row[-1].y0 > 12.0:
             rows.append(curr_row)
             curr_row = [l]
@@ -378,9 +430,12 @@ def reconstruct_system_cases(lines: list[LineAtom]) -> str:
         row_txt = " ".join(build_line_text_with_typography(l) for l in r)
         # Clean question anchor if it was next to row 1 or 2
         row_txt = re.sub(r"^\d{1,2}\.\s*", "", row_txt).strip()
+        row_txt = re.sub(r"([a-zA-Z])\^\{?(\d+)\}?\s*_\{?(\d+)\}?", r"\1_{\3}^{\2}", row_txt)
         if row_txt:
             eq_strings.append(row_txt)
 
     if len(eq_strings) >= 2:
         return CasesNode(equations=eq_strings).to_latex()
     return ""
+
+

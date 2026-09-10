@@ -112,6 +112,9 @@ def find_option_markers_in_text(text: str) -> list[OptionMarkerMatch]:
 def clean_option_text(text: str) -> str:
     """Cleans up individual option text, removing redundant markers, trailing labels, etc."""
     cleaned = normalize_typography(text).strip()
+    cleaned = re.sub(r"[\r\n]+", " ", cleaned).strip()
+    cleaned = re.sub(r"\s*[+\-*·/:]\s*([.;!])$", r"\1", cleaned)
+    cleaned = re.sub(r"\s*[+\-*·/:]\s*$", "", cleaned)
     # Normalize ending punctuation
     if not cleaned.endswith((".", ";", "!")):
         cleaned = cleaned + "."
@@ -133,6 +136,8 @@ def clean_question_body(text: str) -> str:
         return f"__CASES_{len(cases_blocks)-1}__"
 
     t = re.sub(r"\\begin\{cases\}.*?\\end\{cases\}", save_cases, text, flags=re.DOTALL)
+    # Strip any Variant-N header
+    t = re.sub(r"^\s*Variant\s*[-–—]?\s*\d+\s*", "", t, flags=re.IGNORECASE)
     # Strip any question number marker like '22. ' or '13. '
     t = re.sub(r"^\s*\d{1,2}\.\s*", "", t)
     t = re.sub(r"(?<=\n)\s*\d{1,2}\.\s*", "", t)

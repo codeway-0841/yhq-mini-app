@@ -47,6 +47,34 @@ class TestMathFormulaParser(unittest.TestCase):
         expected = "\\begin{cases}\n2x + y = 5 \\\\\nx - y = 1\n\\end{cases}"
         self.assertEqual(c.to_latex(), expected)
 
+    def test_operatorname_idempotency(self):
+        raw = "ctg x + tg y"
+        pass1 = normalize_typography(raw)
+        self.assertEqual(pass1, r"\operatorname{ctg} x + \operatorname{tg} y")
+        pass2 = normalize_typography(pass1)
+        self.assertEqual(pass2, r"\operatorname{ctg} x + \operatorname{tg} y")
+        # Collapses existing nested operatorname
+        nested = r"\operatorname{\operatorname{\operatorname{ctg}}} \alpha"
+        self.assertEqual(normalize_typography(nested), r"\operatorname{ctg} \alpha")
+
+    def test_pi_token_spacing(self):
+        text = r"x = \frac{\pi}{3} + \pin, n \in Z; y = \pik"
+        normalized = normalize_typography(text)
+        self.assertNotIn(r"\pin", normalized)
+        self.assertNotIn(r"\pik", normalized)
+        self.assertIn(r"\pi n", normalized)
+        self.assertIn(r"\pi k", normalized)
+
+    def test_repeated_parentheses_collapse(self):
+        text = r"\left(\left(\left(a + b\right) \right) \right) \left(\right)"
+        normalized = normalize_typography(text)
+        self.assertEqual(normalized, r"\left(a + b\right)")
+
+    def test_subsup_ordering(self):
+        text = "a^{2} _{1} + a^{2} _{2} + a^{2} _{3} = 93"
+        normalized = normalize_typography(text)
+        self.assertEqual(normalized, "a_{1}^{2} + a_{2}^{2} + a_{3}^{2} = 93")
+
 
 if __name__ == "__main__":
     unittest.main()
